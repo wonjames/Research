@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S9">
+<title>Calculus of a Complex Variable</title>          
+<subsection xml:id="C1.S9.SS1">
+<title>Complex Numbers</title>        
+ 
+<para xml:id="C1.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S9.SS1.p1.s1">
+ <Math equation-number="1.9.1" mode="display" xml:id="C1.S9.E1">z=x+iy, if x,y\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S9.Px1">
+<title>Real and Imaginary Parts</title>     
+<para xml:id="C1.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S9.Px1.p1.s1">
+ <Math equation-number="1.9.2" mode="display" xml:id="C1.S9.E2">\Re z=x,\Im z=y</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px2">
+<title>Polar Representation</title>     
+<para xml:id="C1.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C1.S9.Px2.p1.s1">
+ <Math equation-number="1.9.3" mode="display" xml:id="C1.S9.E3">x=r\cos\theta,y=r\sin\theta,</Math> where <Math equation-number="1.9.4" mode="display" xml:id="C1.S9.E4">r=(x^{2}+y^{2})^{1/2},</Math> and when <Math mode="inline" xml:id="C1.S9.Px2.p1.m1">z\neq 0</Math> , <Math equation-number="1.9.5" mode="display" xml:id="C1.S9.E5">\theta=\omega,\;\;\pi-\omega,\;\;-\pi+\omega,\mbox{ or }-\omega,</Math> according as <Math mode="inline" xml:id="C1.S9.Px2.p1.m2">z</Math> lies in the 1st, 2nd, 3rd, or 4th quadrants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C1.S9.Px2.p1.s2">
+Here <Math equation-number="1.9.6" mode="display" xml:id="C1.S9.E6">\omega=\operatorname{arctan}\left(|y/x|\right)\in\left[0,\tfrac{1}{2}\pi\right]</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px3">
+<title>Modulus and Phase</title>     
+<para xml:id="C1.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S9.Px3.p1.s1">
+ <Math equation-number="1.9.7" mode="display" xml:id="C1.S9.E7">|z|=r,\operatorname{ph}z=\theta+2n\pi, if n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C1.S9.Px3.p1.s2">
+The principal value of <Math mode="inline" xml:id="C1.S9.Px3.p1.m1">\operatorname{ph}z</Math> corresponds to <Math mode="inline" xml:id="C1.S9.Px3.p1.m2">n=0</Math> , that is, <Math mode="inline" xml:id="C1.S9.Px3.p1.m3">-\pi\leq\operatorname{ph}z\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C1.S9.Px3.p1.s3">
+It is single-valued on <Math mode="inline" xml:id="C1.S9.Px3.p1.m4">\mathbb{C}\setminus\{0\}</Math> , except on the interval <Math mode="inline" xml:id="C1.S9.Px3.p1.m5">(-\infty,0)</Math> where it is discontinuous and two-valued. Unless indicated otherwise, these principal values are assumed throughout the DLMF.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C1.S9.Px3.p1.s4">
+(However, if we require a principal value to be single-valued, then we can restrict <Math mode="inline" xml:id="C1.S9.Px3.p1.m6">-\pi&lt;\operatorname{ph}z\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C1.S9.Px3.p1.s5">
+) <Math equation-number="1.9.8" mode="display" xml:id="C1.S9.E8">|\Re z|\leq|z|,|\Im z|\leq|z|,</Math> <Math equation-number="1.9.9" mode="display" xml:id="C1.S9.E9">z=re^{i\theta},</Math> where <Math equation-number="1.9.10" mode="display" xml:id="C1.S9.E10">e^{i\theta}=\cos\theta+i\sin\theta;</Math> see §4.14.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px4">
+<title>Complex Conjugate</title>    
+<para xml:id="C1.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S9.Px4.p1.s1">
+ <Math equation-number="1.9.11" mode="display" xml:id="C1.S9.E11">\overline{z}=x-iy,</Math> , <Math equation-number="1.9.12" mode="display" xml:id="C1.S9.E12">|\overline{z}|=|z|,</Math> , <Math equation-number="1.9.13" mode="display" xml:id="C1.S9.E13">\operatorname{ph}\overline{z}=-\operatorname{ph}z</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px5">
+<title>Arithmetic Operations</title>    
+<para xml:id="C1.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S9.Px5.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px5.p1.m1">z_{1}=x_{1}+iy_{1}</Math> , <Math mode="inline" xml:id="C1.S9.Px5.p1.m2">z_{2}=x_{2}+iy_{2}</Math> , then <Math equation-number="1.9.14" mode="display" xml:id="C1.S9.E14">z_{1}\pm z_{2}=x_{1}\pm x_{2}+\mathrm{i}(y_{1}\pm y_{2}),</Math> <Math equation-number="1.9.15" mode="display" xml:id="C1.S9.E15">z_{1}z_{2}=x_{1}x_{2}-y_{1}y_{2}+i(x_{1}y_{2}+x_{2}y_{1}),</Math> <Math equation-number="1.9.16" mode="display" xml:id="C1.S9.E16">\frac{z_{1}}{z_{2}}=\frac{z_{1}\overline{z}_{2}}{|z_{2}|^{2}}=\frac{x_{1}x_{2} +y_{1}y_{2}+i(x_{2}y_{1}-x_{1}y_{2})}{x_{2}^{2}+y_{2}^{2}},</Math> provided that <Math mode="inline" xml:id="C1.S9.Px5.p1.m3">z_{2}\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C1.S9.Px5.p1.s2">
+Also, <Math equation-number="1.9.17" mode="display" xml:id="C1.S9.E17">|z_{1}z_{2}|=|z_{1}|\;|z_{2}|,</Math> <Math equation-number="1.9.18" mode="display" xml:id="C1.S9.E18">\operatorname{ph}\left(z_{1}z_{2}\right)=\operatorname{ph}z_{1}+\operatorname{ ph}z_{2},</Math> <Math equation-number="1.9.19" mode="display" xml:id="C1.S9.E19">\left|\frac{z_{1}}{z_{2}}\right|=\frac{|z_{1}|}{|z_{2}|},</Math> <Math equation-number="1.9.20" mode="display" xml:id="C1.S9.E20">\operatorname{ph}\frac{z_{1}}{z_{2}}=\operatorname{ph}z_{1}-\operatorname{ph}z _{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C1.S9.Px5.p1.s3">
+Equations (1.9.18) and (1.9.20) hold for general values of the phases, but not necessarily for the principal values.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px6">
+<title>Powers</title>    
+<para xml:id="C1.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C1.S9.Px6.p1.s1">
+ <Math equation-number="1.9.21" mode="display" xml:id="C1.S9.E21">z^{n}=\left(x^{n}-\genfrac{(}{)}{0.0pt}{}{n}{2}x^{n-2}y^{2}+\genfrac{(}{)}{0.0 pt}{}{n}{4}x^{n-4}y^{4}-\cdots\right)+i\left(\genfrac{(}{)}{0.0pt}{}{n}{1}x^{n -1}y-\genfrac{(}{)}{0.0pt}{}{n}{3}x^{n-3}y^{3}+\cdots\right), if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px7">
+<title>DeMoivre’s Theorem</title>    
+<para xml:id="C1.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S9.Px7.p1.s1">
+ <Math equation-number="1.9.22" mode="display" xml:id="C1.S9.E22">\cos n\theta+i\sin n\theta=(\cos\theta+i\sin\theta)^{n}, if n\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px8">
+<title>Triangle Inequality</title>     
+<para xml:id="C1.S9.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S9.Px8.p1.s1">
+ <Math equation-number="1.9.23" mode="display" xml:id="C1.S9.E23">\left|\left|z_{1}\right|-\left|z_{2}\right|\right|\leq\left|z_{1}+z_{2}\right| \leq\left|z_{1}\right|+\left|z_{2}\right|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS2">
+<title>Continuity, Point Sets, and Differentiation</title>         
+<paragraph xml:id="C1.S9.Px9">
+<title>Continuity</title>      
+ 
+<para xml:id="C1.S9.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S9.Px9.p1.s1">
+A function <Math mode="inline" xml:id="C1.S9.Px9.p1.m1">f(z)</Math> is continuous at a point <Math mode="inline" xml:id="C1.S9.Px9.p1.m2">z_{0}</Math> if <Math mode="inline" xml:id="C1.S9.Px9.p1.m3">\lim\limits_{z\to z_{0}}f(z)=f(z_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C1.S9.Px9.p1.s2">
+That is, given any positive number <Math mode="inline" xml:id="C1.S9.Px9.p1.m4">\epsilon</Math> , however small, we can find a positive number <Math mode="inline" xml:id="C1.S9.Px9.p1.m5">\delta</Math> such that <Math mode="inline" xml:id="C1.S9.Px9.p1.m6">|f(z)-f(z_{0})|&lt;\epsilon</Math> for all <Math mode="inline" xml:id="C1.S9.Px9.p1.m7">z</Math> in the open disk <Math mode="inline" xml:id="C1.S9.Px9.p1.m8">|z-z_{0}|&lt;\delta</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C1.S9.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C1.S9.Px9.p2.s1">
+A function of two complex variables <Math mode="inline" xml:id="C1.S9.Px9.p2.m1">f(z,w)</Math> is continuous at <Math mode="inline" xml:id="C1.S9.Px9.p2.m2">(z_{0},w_{0})</Math> if <Math mode="inline" xml:id="C1.S9.Px9.p2.m3">\lim\limits_{(z,w)\to(z_{0},w_{0})}f(z,w)=f(z_{0},w_{0})</Math> ; compare (1.5.1) and (1.5.2).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px10">
+<title>Point Sets in <Math mode="inline" xml:id="C1.S9.Px10.m1">\mathbb{C}</Math></title>       
+<para xml:id="C1.S9.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S9.Px10.p1.s1">
+A neighborhood of a point <Math mode="inline" xml:id="C1.S9.Px10.p1.m1">z_{0}</Math> is a disk <Math mode="inline" xml:id="C1.S9.Px10.p1.m2">\left|z-z_{0}\right|&lt;\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C1.S9.Px10.p1.s2">
+Anopen set in <Math mode="inline" xml:id="C1.S9.Px10.p1.m3">\mathbb{C}</Math> is one in which each point has a neighborhood that is contained in the set.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C1.S9.Px10.p2.s1">
+A point <Math mode="inline" xml:id="C1.S9.Px10.p2.m1">z_{0}</Math> is a limit point (limiting point oraccumulation point) of a set of points <Math mode="inline" xml:id="C1.S9.Px10.p2.m2">S</Math> in <Math mode="inline" xml:id="C1.S9.Px10.p2.m3">\mathbb{C}</Math> (or <Math mode="inline" xml:id="C1.S9.Px10.p2.m4">\mathbb{C}\cup\infty</Math> ) if every neighborhood of <Math mode="inline" xml:id="C1.S9.Px10.p2.m5">z_{0}</Math> contains a point of <Math mode="inline" xml:id="C1.S9.Px10.p2.m6">S</Math> distinct from <Math mode="inline" xml:id="C1.S9.Px10.p2.m7">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C1.S9.Px10.p2.s2">
+( <Math mode="inline" xml:id="C1.S9.Px10.p2.m8">z_{0}</Math> may or may not belong to <Math mode="inline" xml:id="C1.S9.Px10.p2.m9">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C1.S9.Px10.p2.s3">
+) As a consequence, every neighborhood of a limit point of <Math mode="inline" xml:id="C1.S9.Px10.p2.m10">S</Math> contains an infinite number of points of <Math mode="inline" xml:id="C1.S9.Px10.p2.m11">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C1.S9.Px10.p2.s4">
+Also, the union of <Math mode="inline" xml:id="C1.S9.Px10.p2.m12">S</Math> and its limit points is the closure of <Math mode="inline" xml:id="C1.S9.Px10.p2.m13">S</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C1.S9.Px10.p3.s1">
+A domain <Math mode="inline" xml:id="C1.S9.Px10.p3.m1">D</Math> , say, is an open set in <Math mode="inline" xml:id="C1.S9.Px10.p3.m2">\mathbb{C}</Math> that is connected, that is, any two points can be joined by a polygonal arc (a finite chain of straight-line segments) lying in the set.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C1.S9.Px10.p3.s2">
+Any point whose neighborhoods always contain members and nonmembers of <Math mode="inline" xml:id="C1.S9.Px10.p3.m3">D</Math> is a boundary point of <Math mode="inline" xml:id="C1.S9.Px10.p3.m4">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C1.S9.Px10.p3.s3">
+When its boundary points are added the domain is said to beclosed, but unless specified otherwise a domain is assumed to be open.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px10.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S9.Px10.p4.s1">
+A region is an open domain together with none, some, or all of its boundary points.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C1.S9.Px10.p4.s2">
+Points of a region that are not boundary points are calledinterior points.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px10.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C1.S9.Px10.p5.s1">
+A function <Math mode="inline" xml:id="C1.S9.Px10.p5.m1">f(z)</Math> is continuous on a region <Math mode="inline" xml:id="C1.S9.Px10.p5.m2">R</Math> if for each point <Math mode="inline" xml:id="C1.S9.Px10.p5.m3">z_{0}</Math> in <Math mode="inline" xml:id="C1.S9.Px10.p5.m4">R</Math> and any given number <Math mode="inline" xml:id="C1.S9.Px10.p5.m5">\epsilon</Math> ( <Math mode="inline" xml:id="C1.S9.Px10.p5.m6">&gt;0</Math> ) we can find a neighborhood of <Math mode="inline" xml:id="C1.S9.Px10.p5.m7">z_{0}</Math> such that <Math mode="inline" xml:id="C1.S9.Px10.p5.m8">\left|f(z)-f(z_{0})\right|&lt;\epsilon</Math> for all points <Math mode="inline" xml:id="C1.S9.Px10.p5.m9">z</Math> in the intersection of the neighborhood with <Math mode="inline" xml:id="C1.S9.Px10.p5.m10">R</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px11">
+<title>Differentiation</title>    
+<para xml:id="C1.S9.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C1.S9.Px11.p1.s1">
+A function <Math mode="inline" xml:id="C1.S9.Px11.p1.m1">f(z)</Math> is differentiable at a point <Math mode="inline" xml:id="C1.S9.Px11.p1.m2">z</Math> if the following limit exists: <Math equation-number="1.9.24" mode="display" xml:id="C1.S9.E24">f^{\prime}(z)=\frac{\mathrm{d}f}{\mathrm{d}z}=\lim_{h\to 0}\frac{f(z+h)-f(z)}{ h}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C1.S9.Px11.p2.s1">
+Differentiability automatically implies continuity.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px12">
+<title>Cauchy–Riemann Equations</title>     
+<para xml:id="C1.S9.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C1.S9.Px12.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px12.p1.m1">f^{\prime}(z)</Math> exists at <Math mode="inline" xml:id="C1.S9.Px12.p1.m2">z=x+iy</Math> and <Math mode="inline" xml:id="C1.S9.Px12.p1.m3">f(z)=u(x,y)+iv(x,y)</Math> , then <Math equation-number="1.9.25" mode="display" xml:id="C1.S9.E25">\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}</Math> at <Math mode="inline" xml:id="C1.S9.Px12.p1.m4">(x,y)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C1.S9.Px12.p2.s1">
+Conversely, if at a given point <Math mode="inline" xml:id="C1.S9.Px12.p2.m1">(x,y)</Math> the partial derivatives <Math mode="inline" xml:id="C1.S9.Px12.p2.m2">\ifrac{\partial u}{\partial x}</Math> , <Math mode="inline" xml:id="C1.S9.Px12.p2.m3">\ifrac{\partial u}{\partial y}</Math> , <Math mode="inline" xml:id="C1.S9.Px12.p2.m4">\ifrac{\partial v}{\partial x}</Math> , and <Math mode="inline" xml:id="C1.S9.Px12.p2.m5">\ifrac{\partial v}{\partial y}</Math> exist, are continuous, and satisfy (1.9.25), then <Math mode="inline" xml:id="C1.S9.Px12.p2.m6">f(z)</Math> is differentiable at <Math mode="inline" xml:id="C1.S9.Px12.p2.m7">z=x+iy</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px13">
+<title>Analyticity</title>        
+<para xml:id="C1.S9.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C1.S9.Px13.p1.s1">
+A function <Math mode="inline" xml:id="C1.S9.Px13.p1.m1">f(z)</Math> is said to be analytic (holomorphic) at <Math mode="inline" xml:id="C1.S9.Px13.p1.m2">z=z_{0}</Math> if it is differentiable in a neighborhood of <Math mode="inline" xml:id="C1.S9.Px13.p1.m3">z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C1.S9.Px13.p2.s1">
+A function <Math mode="inline" xml:id="C1.S9.Px13.p2.m1">f(z)</Math> is analytic in a domain <Math mode="inline" xml:id="C1.S9.Px13.p2.m2">D</Math> if it is analytic at each point of <Math mode="inline" xml:id="C1.S9.Px13.p2.m3">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C1.S9.Px13.p2.s2">
+A function analytic at every point of <Math mode="inline" xml:id="C1.S9.Px13.p2.m4">\mathbb{C}</Math> is said to be entire.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C1.S9.Px13.p3.s1">
+If <Math mode="inline" xml:id="C1.S9.Px13.p3.m1">f(z)</Math> is analytic in an open domain <Math mode="inline" xml:id="C1.S9.Px13.p3.m2">D</Math> , then each of its derivatives <Math mode="inline" xml:id="C1.S9.Px13.p3.m3">f^{\prime}(z)</Math> , <Math mode="inline" xml:id="C1.S9.Px13.p3.m4">f^{\prime\prime}(z)</Math> , <Math mode="inline" xml:id="C1.S9.Px13.p3.m5">\dots</Math> exists and is analytic in <Math mode="inline" xml:id="C1.S9.Px13.p3.m6">D</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px14">
+<title>Harmonic Functions</title>     
+<para xml:id="C1.S9.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C1.S9.Px14.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px14.p1.m1">f(z)=u(x,y)+iv(x,y)</Math> is analytic in an open domain <Math mode="inline" xml:id="C1.S9.Px14.p1.m2">D</Math> , then <Math mode="inline" xml:id="C1.S9.Px14.p1.m3">u</Math> and <Math mode="inline" xml:id="C1.S9.Px14.p1.m4">v</Math> are harmonic in <Math mode="inline" xml:id="C1.S9.Px14.p1.m5">D</Math> , that is, <Math equation-number="1.9.26" mode="display" xml:id="C1.S9.E26">\frac{{\partial}^{2}u}{{\partial x}^{2}}+\frac{{\partial}^{2}u}{{\partial y}^{ 2}}=\frac{{\partial}^{2}v}{{\partial x}^{2}}+\frac{{\partial}^{2}v}{{\partial y }^{2}}=0,</Math> or in polar form ((1.9.3))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C1.S9.Px14.p1.s2">
+<Math mode="inline" xml:id="C1.S9.Px14.p1.m6">u</Math> and <Math mode="inline" xml:id="C1.S9.Px14.p1.m7">v</Math> satisfy <Math equation-number="1.9.27" mode="display" xml:id="C1.S9.E27">\frac{{\partial}^{2}u}{{\partial r}^{2}}+\frac{1}{r}\frac{\partial u}{\partial r }+\frac{1}{r^{2}}\frac{{\partial}^{2}u}{{\partial\theta}^{2}}=0</Math> at all points of <Math mode="inline" xml:id="C1.S9.Px14.p1.m8">D</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS3">
+<title>Integration</title>            
+<para xml:id="C1.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C1.S9.SS3.p1.s1">
+An arc <Math mode="inline" xml:id="C1.S9.SS3.p1.m1">C</Math> is given by <Math mode="inline" xml:id="C1.S9.SS3.p1.m2">z(t)=x(t)+iy(t)</Math> , <Math mode="inline" xml:id="C1.S9.SS3.p1.m3">a\leq t\leq b</Math> , where <Math mode="inline" xml:id="C1.S9.SS3.p1.m4">x</Math> and <Math mode="inline" xml:id="C1.S9.SS3.p1.m5">y</Math> are continuously differentiable.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C1.S9.SS3.p1.s2">
+If <Math mode="inline" xml:id="C1.S9.SS3.p1.m6">x(t)</Math> and <Math mode="inline" xml:id="C1.S9.SS3.p1.m7">y(t)</Math> are continuous and <Math mode="inline" xml:id="C1.S9.SS3.p1.m8">x^{\prime}(t)</Math> and <Math mode="inline" xml:id="C1.S9.SS3.p1.m9">y^{\prime}(t)</Math> are piecewise continuous, then <Math mode="inline" xml:id="C1.S9.SS3.p1.m10">z(t)</Math> defines a contour.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C1.S9.SS3.p2.s1">
+A contour is simple if it contains no multiple points, that is, for every pair of distinct values <Math mode="inline" xml:id="C1.S9.SS3.p2.m1">t_{1},t_{2}</Math> of <Math mode="inline" xml:id="C1.S9.SS3.p2.m2">t</Math> , <Math mode="inline" xml:id="C1.S9.SS3.p2.m3">z(t_{1})\neq z(t_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C1.S9.SS3.p2.s2">
+Asimple closed contour is a simple contour, except that <Math mode="inline" xml:id="C1.S9.SS3.p2.m4">z(a)=z(b)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C1.S9.SS3.p3.s1">
+Next, <Math equation-number="1.9.28" mode="display" xml:id="C1.S9.E28">\int_{C}f(z)\mathrm{d}z=\int_{a}^{b}f(z(t))(x^{\prime}(t)+iy^{\prime}(t)) \mathrm{d}t,</Math> for a contour <Math mode="inline" xml:id="C1.S9.SS3.p3.m1">C</Math> and <Math mode="inline" xml:id="C1.S9.SS3.p3.m2">f(z(t))</Math> continuous, <Math mode="inline" xml:id="C1.S9.SS3.p3.m3">a\leq t\leq b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C1.S9.SS3.p3.s2">
+If <Math mode="inline" xml:id="C1.S9.SS3.p3.m4">f(z(t_{0}))=\infty</Math> , <Math mode="inline" xml:id="C1.S9.SS3.p3.m5">a\leq t_{0}\leq b</Math> , then the integral is defined analogously to the infinite integrals in §1.4(v).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C1.S9.SS3.p3.s3">
+Similarly when <Math mode="inline" xml:id="C1.S9.SS3.p3.m6">a=-\infty</Math> or <Math mode="inline" xml:id="C1.S9.SS3.p3.m7">b=+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S9.Px15">
+<title>Jordan Curve Theorem</title>   
+   
+<para xml:id="C1.S9.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C1.S9.Px15.p1.s1">
+Any simple closed contour <Math mode="inline" xml:id="C1.S9.Px15.p1.m1">C</Math> divides <Math mode="inline" xml:id="C1.S9.Px15.p1.m2">\mathbb{C}</Math> into two open domains that have <Math mode="inline" xml:id="C1.S9.Px15.p1.m3">C</Math> as common boundary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C1.S9.Px15.p1.s2">
+One of these domains is bounded and is called theinterior domain of <Math mode="inline" xml:id="C1.S9.Px15.p1.m4">C</Math> ; the other is unbounded and is called theexterior domain of <Math mode="inline" xml:id="C1.S9.Px15.p1.m5">C</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px16">
+<title>Cauchy’s Theorem</title>    
+<para xml:id="C1.S9.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C1.S9.Px16.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px16.p1.m1">f(z)</Math> is continuous within and on a simple closed contour <Math mode="inline" xml:id="C1.S9.Px16.p1.m2">C</Math> and analytic within <Math mode="inline" xml:id="C1.S9.Px16.p1.m3">C</Math> , then <Math equation-number="1.9.29" mode="display" xml:id="C1.S9.E29">\int_{C}f(z)\mathrm{d}z=0.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px17">
+<title>Cauchy’s Integral Formula</title>     
+<para xml:id="C1.S9.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C1.S9.Px17.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px17.p1.m1">f(z)</Math> is continuous within and on a simple closed contour <Math mode="inline" xml:id="C1.S9.Px17.p1.m2">C</Math> and analytic within <Math mode="inline" xml:id="C1.S9.Px17.p1.m3">C</Math> , and if <Math mode="inline" xml:id="C1.S9.Px17.p1.m4">z_{0}</Math> is a point within <Math mode="inline" xml:id="C1.S9.Px17.p1.m5">C</Math> , then <Math equation-number="1.9.30" mode="display" xml:id="C1.S9.E30">f(z_{0})=\frac{1}{2\pi i}\int_{C}\frac{f(z)}{z-z_{0}}\mathrm{d}z,</Math> and <Math equation-number="1.9.31" mode="display" xml:id="C1.S9.E31">f^{(n)}(z_{0})=\frac{n!}{2\pi i}\int_{C}\frac{f(z)}{(z-z_{0})^{n+1}}\mathrm{d}z, if n=1,2,3,\dots,</Math> provided that in both cases <Math mode="inline" xml:id="C1.S9.Px17.p1.m6">C</Math> is described in the positive rotational (anticlockwise) sense.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px18">
+<title>Liouville’s Theorem</title>     
+<para xml:id="C1.S9.Px18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C1.S9.Px18.p1.s1">
+Any bounded entire function is a constant.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px19">
+<title>Winding Number</title>   
+ 
+<para xml:id="C1.S9.Px19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C1.S9.Px19.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px19.p1.m1">C</Math> is a closed contour, and <Math mode="inline" xml:id="C1.S9.Px19.p1.m2">z_{0}\not\in C</Math> , then <Math equation-number="1.9.32" mode="display" xml:id="C1.S9.E32">\frac{1}{2\pi i}\int_{C}\frac{1}{z-z_{0}}\mathrm{d}z=\mathcal{N}(C,z_{0}),</Math> where <Math mode="inline" xml:id="C1.S9.Px19.p1.m3">\mathcal{N}(C,z_{0})</Math> is an integer called the winding number of <Math mode="inline" xml:id="C1.S9.Px19.p1.m4">C</Math> with respect to <Math mode="inline" xml:id="C1.S9.Px19.p1.m5">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C1.S9.Px19.p1.s2">
+If <Math mode="inline" xml:id="C1.S9.Px19.p1.m6">C</Math> is simple and oriented in the positive rotational sense, then <Math mode="inline" xml:id="C1.S9.Px19.p1.m7">\mathcal{N}(C,z_{0})</Math> is <Math mode="inline" xml:id="C1.S9.Px19.p1.m8">1</Math> or <Math mode="inline" xml:id="C1.S9.Px19.p1.m9">0</Math> depending whether <Math mode="inline" xml:id="C1.S9.Px19.p1.m10">z_{0}</Math> is inside or outside <Math mode="inline" xml:id="C1.S9.Px19.p1.m11">C</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px20">
+<title>Mean Value Property</title>     
+<para xml:id="C1.S9.Px20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C1.S9.Px20.p1.s1">
+For <Math mode="inline" xml:id="C1.S9.Px20.p1.m1">u(z)</Math> harmonic, <Math equation-number="1.9.33" mode="display" xml:id="C1.S9.E33">u(z)=\frac{1}{2\pi}\int^{2\pi}_{0}u(z+re^{i\phi})\mathrm{d}\phi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px21">
+<title>Poisson Integral</title>      
+<para xml:id="C1.S9.Px21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C1.S9.Px21.p1.s1">
+If <Math mode="inline" xml:id="C1.S9.Px21.p1.m1">h(w)</Math> is continuous on <Math mode="inline" xml:id="C1.S9.Px21.p1.m2">|w|=R</Math> , then with <Math mode="inline" xml:id="C1.S9.Px21.p1.m3">z=re^{i\theta}</Math> <Math equation-number="1.9.34" mode="display" xml:id="C1.S9.E34">u(re^{i\theta})=\frac{1}{2\pi}\int^{2\pi}_{0}\frac{(R^{2}-r^{2})h(Re^{i\phi}) \mathrm{d}\phi}{R^{2}-2Rr\cos\left(\phi-\theta\right)+r^{2}}</Math> is harmonic in <Math mode="inline" xml:id="C1.S9.Px21.p1.m4">|z|&lt;R</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C1.S9.Px21.p1.s2">
+Also with <Math mode="inline" xml:id="C1.S9.Px21.p1.m5">\left|w\right|=R</Math> , <Math mode="inline" xml:id="C1.S9.Px21.p1.m6">\lim\limits_{z\to w}u(z)=h(w)</Math> as <Math mode="inline" xml:id="C1.S9.Px21.p1.m7">z\to w</Math> within <Math mode="inline" xml:id="C1.S9.Px21.p1.m8">|z|&lt;R</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS4">
+<title>Conformal Mapping</title>        
+    
+<para xml:id="C1.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C1.S9.SS4.p1.s1">
+The extended complex plane, <Math mode="inline" xml:id="C1.S9.SS4.p1.m1">\mathbb{C}\,\cup\,\{\infty\}</Math> , consists of the points of the complex plane <Math mode="inline" xml:id="C1.S9.SS4.p1.m2">\mathbb{C}</Math> together with an ideal point <Math mode="inline" xml:id="C1.S9.SS4.p1.m3">\infty</Math> called the point at infinity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="60" xml:id="C1.S9.SS4.p1.s2">
+A system of open disks around infinity is given by <Math equation-number="1.9.35" mode="display" xml:id="C1.S9.E35">S_{r}=\{z\mid|z|&gt;1/r\}\cup\{\infty\}, if 0&lt;r&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="61" xml:id="C1.S9.SS4.p1.s3">
+Each <Math mode="inline" xml:id="C1.S9.SS4.p1.m4">S_{r}</Math> is a neighborhood of <Math mode="inline" xml:id="C1.S9.SS4.p1.m5">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="62" xml:id="C1.S9.SS4.p1.s4">
+Also, <Math equation-number="1.9.36" mode="display" xml:id="C1.S9.E36">\infty\pm z=z\pm\infty=\infty,</Math> <Math equation-number="1.9.37" mode="display" xml:id="C1.S9.E37">\infty\cdot z=z\cdot\infty=\infty, if z\not=0,</Math> <Math equation-number="1.9.38" mode="display" xml:id="C1.S9.E38">z/\infty=0,</Math> <Math equation-number="1.9.39" mode="display" xml:id="C1.S9.E39">z/0=\infty, if z\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="63" xml:id="C1.S9.SS4.p1.s5">
+A function <Math mode="inline" xml:id="C1.S9.SS4.p1.m6">f(z)</Math> is analytic at <Math mode="inline" xml:id="C1.S9.SS4.p1.m7">\infty</Math> if <Math mode="inline" xml:id="C1.S9.SS4.p1.m8">g(z)=f(1/z)</Math> is analytic at <Math mode="inline" xml:id="C1.S9.SS4.p1.m9">z=0</Math> , and we set <Math mode="inline" xml:id="C1.S9.SS4.p1.m10">f^{\prime}(\infty)=g^{\prime}(0)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S9.Px22">
+<title>Conformal Transformation</title>    
+ 
+<para xml:id="C1.S9.Px22.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C1.S9.Px22.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S9.Px22.p1.m1">f(z)</Math> is analytic in a domain <Math mode="inline" xml:id="C1.S9.Px22.p1.m2">D</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p1.m3">C_{1},C_{2}</Math> are two arcs in <Math mode="inline" xml:id="C1.S9.Px22.p1.m4">D</Math> passing through <Math mode="inline" xml:id="C1.S9.Px22.p1.m5">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C1.S9.Px22.p1.s2">
+Let <Math mode="inline" xml:id="C1.S9.Px22.p1.m6">C^{\prime}_{1},C^{\prime}_{2}</Math> be the images of <Math mode="inline" xml:id="C1.S9.Px22.p1.m7">C_{1}</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p1.m8">C_{2}</Math> under the mapping <Math mode="inline" xml:id="C1.S9.Px22.p1.m9">w=f(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C1.S9.Px22.p1.s3">
+The angle between <Math mode="inline" xml:id="C1.S9.Px22.p1.m10">C_{1}</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p1.m11">C_{2}</Math> at <Math mode="inline" xml:id="C1.S9.Px22.p1.m12">z_{0}</Math> is the angle between the tangents to the two arcs at <Math mode="inline" xml:id="C1.S9.Px22.p1.m13">z_{0}</Math> , that is, the difference of the signed angles that the tangents make with the positive direction of the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="67" xml:id="C1.S9.Px22.p1.s4">
+If <Math mode="inline" xml:id="C1.S9.Px22.p1.m14">f^{\prime}(z_{0})\not=0</Math> , then the angle between <Math mode="inline" xml:id="C1.S9.Px22.p1.m15">C_{1}</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p1.m16">C_{2}</Math> equals the angle between <Math mode="inline" xml:id="C1.S9.Px22.p1.m17">C^{\prime}_{1}</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p1.m18">C^{\prime}_{2}</Math> both in magnitude and sense.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="68" xml:id="C1.S9.Px22.p1.s5">
+We then say that the mapping <Math mode="inline" xml:id="C1.S9.Px22.p1.m19">w=f(z)</Math> is conformal (angle-preserving) at <Math mode="inline" xml:id="C1.S9.Px22.p1.m20">z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px22.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C1.S9.Px22.p2.s1">
+The linear transformation <Math mode="inline" xml:id="C1.S9.Px22.p2.m1">f(z)=az+b</Math> , <Math mode="inline" xml:id="C1.S9.Px22.p2.m2">a\not=0</Math> , has <Math mode="inline" xml:id="C1.S9.Px22.p2.m3">f^{\prime}(z)=a</Math> and <Math mode="inline" xml:id="C1.S9.Px22.p2.m4">w=f(z)</Math> maps <Math mode="inline" xml:id="C1.S9.Px22.p2.m5">\mathbb{C}</Math> conformally onto <Math mode="inline" xml:id="C1.S9.Px22.p2.m6">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px23">
+<title>Bilinear Transformation</title>       
+<para xml:id="C1.S9.Px23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C1.S9.Px23.p1.s1">
+ <Math equation-number="1.9.40" mode="display" xml:id="C1.S9.E40">w=f(z)=\frac{az+b}{cz+d}, if ad-bc\not=0, c\not=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C1.S9.Px23.p1.s2">
+<Math equation-number="1.9.41" mode="display" xml:id="C1.S9.E41">f(-d/c)=\infty,f(\infty)=a/c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="72" xml:id="C1.S9.Px23.p1.s3">
+<Math equation-number="1.9.42" mode="display" xml:id="C1.S9.E42">f^{\prime}(z)=\frac{ad-bc}{(cz+d)^{2}}, if z\not=-d/c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="73" xml:id="C1.S9.Px23.p1.s4">
+<Math equation-number="1.9.43" mode="display" xml:id="C1.S9.E43">f^{\prime}(\infty)=\frac{bc-ad}{c^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="74" xml:id="C1.S9.Px23.p1.s5">
+<Math equation-number="1.9.44" mode="display" xml:id="C1.S9.E44">z=\frac{dw-b}{-cw+a}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S9.Px23.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C1.S9.Px23.p2.s1">
+The transformation (1.9.40) is a one-to-one conformal mapping of <Math mode="inline" xml:id="C1.S9.Px23.p2.m1">\mathbb{C}\,\cup\,\{\infty\}</Math> onto itself.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px23.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C1.S9.Px23.p3.s1">
+The cross ratio of <Math mode="inline" xml:id="C1.S9.Px23.p3.m1">z_{1},z_{2},z_{3},z_{4}\in\mathbb{C}\cup\{\infty\}</Math> is defined by <Math equation-number="1.9.45" mode="display" xml:id="C1.S9.E45">\frac{(z_{1}-z_{2})(z_{3}-z_{4})}{(z_{1}-z_{4})(z_{3}-z_{2})},</Math> or its limiting form, and is invariant under bilinear transformations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px23.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C1.S9.Px23.p4.s1">
+Other names for the bilinear transformation are fractional linear transformation, homographic transformation, and Möbius transformation.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS5">
+<title>Infinite Sequences and Series</title>               
+<para xml:id="C1.S9.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C1.S9.SS5.p1.s1">
+A sequence <Math mode="inline" xml:id="C1.S9.SS5.p1.m1">\{z_{n}\}</Math> converges to <Math mode="inline" xml:id="C1.S9.SS5.p1.m2">z</Math> if <Math mode="inline" xml:id="C1.S9.SS5.p1.m3">\lim\limits_{n\to\infty}z_{n}=z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="79" xml:id="C1.S9.SS5.p1.s2">
+For <Math mode="inline" xml:id="C1.S9.SS5.p1.m4">z_{n}=x_{n}+iy_{n}</Math> , the sequence <Math mode="inline" xml:id="C1.S9.SS5.p1.m5">\{z_{n}\}</Math> converges iff the sequences <Math mode="inline" xml:id="C1.S9.SS5.p1.m6">\{x_{n}\}</Math> and <Math mode="inline" xml:id="C1.S9.SS5.p1.m7">\{y_{n}\}</Math> separately converge.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="80" xml:id="C1.S9.SS5.p1.s3">
+A series <Math mode="inline" xml:id="C1.S9.SS5.p1.m8">\sum^{\infty}_{n=0}z_{n}</Math> converges if the sequence <Math mode="inline" xml:id="C1.S9.SS5.p1.m9">s_{n}=\sum^{n}_{k=0}z_{k}</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="81" xml:id="C1.S9.SS5.p1.s4">
+The series is divergent if <Math mode="inline" xml:id="C1.S9.SS5.p1.m10">s_{n}</Math> does not converge.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="82" xml:id="C1.S9.SS5.p1.s5">
+The series convergesabsolutely if <Math mode="inline" xml:id="C1.S9.SS5.p1.m11">\sum^{\infty}_{n=0}|z_{n}|</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="83" xml:id="C1.S9.SS5.p1.s6">
+A series <Math mode="inline" xml:id="C1.S9.SS5.p1.m12">\sum^{\infty}_{n=0}z_{n}</Math> converges (diverges) absolutely when <Math mode="inline" xml:id="C1.S9.SS5.p1.m13">\lim\limits_{n\to\infty}|z_{n}|^{1/n}&lt;1</Math> ( <Math mode="inline" xml:id="C1.S9.SS5.p1.m14">&gt;1</Math> ), or when <Math mode="inline" xml:id="C1.S9.SS5.p1.m15">\lim\limits_{n\to\infty}\left|\ifrac{z_{n+1}}{z_{n}}\right|&lt;1</Math> ( <Math mode="inline" xml:id="C1.S9.SS5.p1.m16">&gt;1</Math> ). Absolutely convergent series are also convergent.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C1.S9.SS5.p2.s1">
+Let <Math mode="inline" xml:id="C1.S9.SS5.p2.m1">\{f_{n}(z)\}</Math> be a sequence of functions defined on a set <Math mode="inline" xml:id="C1.S9.SS5.p2.m2">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C1.S9.SS5.p2.s2">
+This sequence converges pointwise to a function <Math mode="inline" xml:id="C1.S9.SS5.p2.m3">f(z)</Math> if <Math equation-number="1.9.46" mode="display" xml:id="C1.S9.E46">f(z)=\lim_{n\to\infty}f_{n}(z)</Math> for each <Math mode="inline" xml:id="C1.S9.SS5.p2.m4">z\in S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="86" xml:id="C1.S9.SS5.p2.s3">
+The sequence converges uniformly on <Math mode="inline" xml:id="C1.S9.SS5.p2.m5">S</Math> , if for every <Math mode="inline" xml:id="C1.S9.SS5.p2.m6">\epsilon&gt;0</Math> there exists an integer <Math mode="inline" xml:id="C1.S9.SS5.p2.m7">N</Math> , independent of <Math mode="inline" xml:id="C1.S9.SS5.p2.m8">z</Math> , such that <Math equation-number="1.9.47" mode="display" xml:id="C1.S9.E47">|f_{n}(z)-f(z)|&lt;\epsilon</Math> for all <Math mode="inline" xml:id="C1.S9.SS5.p2.m9">z\in S</Math> and <Math mode="inline" xml:id="C1.S9.SS5.p2.m10">n\geq N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C1.S9.SS5.p3.s1">
+A series <Math mode="inline" xml:id="C1.S9.SS5.p3.m1">\sum^{\infty}_{n=0}f_{n}(z)</Math> converges uniformly on <Math mode="inline" xml:id="C1.S9.SS5.p3.m2">S</Math> , if the sequence <Math mode="inline" xml:id="C1.S9.SS5.p3.m3">s_{n}(z)=\sum^{n}_{k=0}f_{k}(z)</Math> converges uniformly on <Math mode="inline" xml:id="C1.S9.SS5.p3.m4">S</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S9.Px24">
+<title>Weierstrass <Math mode="inline" xml:id="C1.S9.Px24.m1">M</Math>-test</title>    
+    
+<para xml:id="C1.S9.Px24.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C1.S9.Px24.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S9.Px24.p1.m1">\{M_{n}\}</Math> is a sequence of real numbers such that <Math mode="inline" xml:id="C1.S9.Px24.p1.m2">\sum^{\infty}_{n=0}M_{n}</Math> converges and <Math mode="inline" xml:id="C1.S9.Px24.p1.m3">|f_{n}(z)|\leq M_{n}</Math> for all <Math mode="inline" xml:id="C1.S9.Px24.p1.m4">z\in S</Math> and all <Math mode="inline" xml:id="C1.S9.Px24.p1.m5">n\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="89" xml:id="C1.S9.Px24.p1.s2">
+Then the series <Math mode="inline" xml:id="C1.S9.Px24.p1.m6">\sum^{\infty}_{n=0}f_{n}(z)</Math> convergesuniformly on <Math mode="inline" xml:id="C1.S9.Px24.p1.m7">S</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px24.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C1.S9.Px24.p2.s1">
+A doubly-infinite series <Math mode="inline" xml:id="C1.S9.Px24.p2.m1">\sum^{\infty}_{n=-\infty}f_{n}(z)</Math> converges (uniformly) on <Math mode="inline" xml:id="C1.S9.Px24.p2.m2">S</Math> iff each of the series <Math mode="inline" xml:id="C1.S9.Px24.p2.m3">\sum^{\infty}_{n=0}f_{n}(z)</Math> and <Math mode="inline" xml:id="C1.S9.Px24.p2.m4">\sum^{\infty}_{n=1}f_{-n}(z)</Math> converges (uniformly) on <Math mode="inline" xml:id="C1.S9.Px24.p2.m5">S</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS6">
+<title>Power Series</title>           
+ 
+<para xml:id="C1.S9.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C1.S9.SS6.p1.s1">
+For a series <Math mode="inline" xml:id="C1.S9.SS6.p1.m1">\sum^{\infty}_{n=0}a_{n}(z-z_{0})^{n}</Math> there is a number <Math mode="inline" xml:id="C1.S9.SS6.p1.m2">R</Math> , <Math mode="inline" xml:id="C1.S9.SS6.p1.m3">0\leq R\leq\infty</Math> , such that the series converges for all <Math mode="inline" xml:id="C1.S9.SS6.p1.m4">z</Math> in <Math mode="inline" xml:id="C1.S9.SS6.p1.m5">|z-z_{0}|&lt;R</Math> and diverges for <Math mode="inline" xml:id="C1.S9.SS6.p1.m6">z</Math> in <Math mode="inline" xml:id="C1.S9.SS6.p1.m7">|z-z_{0}|&gt;R</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="92" xml:id="C1.S9.SS6.p1.s2">
+The circle <Math mode="inline" xml:id="C1.S9.SS6.p1.m8">|z-z_{0}|=R</Math> is called thecircle of convergence of the series, and <Math mode="inline" xml:id="C1.S9.SS6.p1.m9">R</Math> is the radius of convergence.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="93" xml:id="C1.S9.SS6.p1.s3">
+Inside the circle the sum of the series is an analytic function <Math mode="inline" xml:id="C1.S9.SS6.p1.m10">f(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="94" xml:id="C1.S9.SS6.p1.s4">
+For <Math mode="inline" xml:id="C1.S9.SS6.p1.m11">z</Math> in <Math mode="inline" xml:id="C1.S9.SS6.p1.m12">|z-z_{0}|\leq\rho</Math> ( <Math mode="inline" xml:id="C1.S9.SS6.p1.m13">&lt;R</Math> ), the convergence is absolute and uniform.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="95" xml:id="C1.S9.SS6.p1.s5">
+Moreover, <Math equation-number="1.9.48" mode="display" xml:id="C1.S9.E48">a_{n}=\frac{f^{(n)}(z_{0})}{n!}</Math> , and <Math equation-number="1.9.49" mode="display" xml:id="C1.S9.E49">R=\liminf_{n\to\infty}|a_{n}|^{-1/n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C1.S9.SS6.p2.s1">
+For the converse of this result see §1.10(i).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S9.Px25">
+<title>Operations</title>    
+ 
+ 
+<para xml:id="C1.S9.Px25.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C1.S9.Px25.p1.s1">
+When <Math mode="inline" xml:id="C1.S9.Px25.p1.m1">\sum a_{n}z^{n}</Math> and <Math mode="inline" xml:id="C1.S9.Px25.p1.m2">\sum b_{n}z^{n}</Math> both converge <Math equation-number="1.9.50" mode="display" xml:id="C1.S9.E50">\sum^{\infty}_{n=0}(a_{n}\pm b_{n})z^{n}=\sum^{\infty}_{n=0}a_{n}z^{n}\pm\sum^ {\infty}_{n=0}b_{n}z^{n},</Math> and <Math equation-number="1.9.51" mode="display" xml:id="C1.S9.E51">\left(\sum^{\infty}_{n=0}a_{n}z^{n}\right)\left(\sum^{\infty}_{n=0}b_{n}z^{n} \right)=\sum^{\infty}_{n=0}c_{n}z^{n},</Math> where <Math equation-number="1.9.52" mode="display" xml:id="C1.S9.E52">c_{n}=\sum^{n}_{k=0}a_{k}b_{n-k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px25.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C1.S9.Px25.p2.s1">
+Next, let <Math equation-number="1.9.53" mode="display" xml:id="C1.S9.E53">f(z)=a_{0}+a_{1}z+a_{2}z^{2}+\cdots, if a_{0}\not=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C1.S9.Px25.p2.s2">
+Then the expansions (1.9.54), (1.9.57), and (1.9.60) hold for all sufficiently small <Math mode="inline" xml:id="C1.S9.Px25.p2.m1">|z|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="100" xml:id="C1.S9.Px25.p2.s3">
+<Math equation-number="1.9.54" mode="display" xml:id="C1.S9.E54">\frac{1}{f(z)}=b_{0}+b_{1}z+b_{2}z^{2}+\cdots,</Math> where <Math equation-number="1.9.55" mode="display" xml:id="C1.S9.E55">b_{0}=1/a_{0},b_{1}=-a_{1}/a_{0}^{2},b_{2}=(a_{1}^{2}-a_{0}a_{2})/a_{0}^{3},</Math> <Math equation-number="1.9.56" mode="display" xml:id="C1.S9.E56">b_{n}=-(a_{1}b_{n-1}+a_{2}b_{n-2}+\dots+a_{n}b_{0})/a_{0}, if n\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px25.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C1.S9.Px25.p3.s1">
+With <Math mode="inline" xml:id="C1.S9.Px25.p3.m1">a_{0}=1</Math> , <Math equation-number="1.9.57" mode="display" xml:id="C1.S9.E57">\ln f(z)=q_{1}z+q_{2}z^{2}+q_{3}z^{3}+\cdots,</Math> (principal value), where <Math equation-number="1.9.58" mode="display" xml:id="C1.S9.E58">q_{1}=a_{1},q_{2}=(2a_{2}-a_{1}^{2})/2,q_{3}=(3a_{3}-3a_{1}a_{2}+a_{1}^{3})/3,</Math> and <Math equation-number="1.9.59" mode="display" xml:id="C1.S9.E59">q_{n}=(na_{n}-(n-1)a_{1}q_{n-1}-(n-2)a_{2}q_{n-2}-\cdots-a_{n-1}q_{1})/n, if n\geq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C1.S9.Px25.p3.s2">
+Also, <Math equation-number="1.9.60" mode="display" xml:id="C1.S9.E60">(f(z))^{\nu}=p_{0}+p_{1}z+p_{2}z^{2}+\cdots,</Math> (principal value), where <Math mode="inline" xml:id="C1.S9.Px25.p3.m2">\nu\in\mathbb{C}</Math> , <Math equation-number="1.9.61" mode="display" xml:id="C1.S9.E61">p_{0}=1,p_{1}=\nu a_{1},p_{2}=\nu((\nu-1)a_{1}^{2}+2a_{2})/2,</Math> and <Math equation-number="1.9.62" mode="display" xml:id="C1.S9.E62">p_{n}=((\nu-n+1)a_{1}p_{n-1}+(2\nu-n+2)a_{2}p_{n-2}+\dots+((n-1)\nu-1)a_{n-1}p _{1}+n\nu a_{n})/n, if n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="103" xml:id="C1.S9.Px25.p3.s3">
+For the definitions of the principal values of <Math mode="inline" xml:id="C1.S9.Px25.p3.m3">\ln f(z)</Math> and <Math mode="inline" xml:id="C1.S9.Px25.p3.m4">(f(z))^{\nu}</Math> see §§4.2(i) and 4.2(iv).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S9.Px25.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C1.S9.Px25.p4.s1">
+Lastly, a power series can be differentiated any number of times within its circle of convergence: <Math equation-number="1.9.63" mode="display" xml:id="C1.S9.E63">f^{(m)}(z)=\sum_{n=0}^{\infty}{\left(n+1\right)_{m}}a_{n+m}(z-z_{0})^{n}, if \left|z-z_{0}\right|&lt;R, m=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S9.SS7">
+<title>Inversion of Limits</title>            
+<paragraph xml:id="C1.S9.Px26">
+<title>Double Sequences and Series</title>   
+<para xml:id="C1.S9.Px26.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C1.S9.Px26.p1.s1">
+A set of complex numbers <Math mode="inline" xml:id="C1.S9.Px26.p1.m1">\{z_{m,n}\}</Math> where <Math mode="inline" xml:id="C1.S9.Px26.p1.m2">m</Math> and <Math mode="inline" xml:id="C1.S9.Px26.p1.m3">n</Math> take all positive integer values is called a double sequence.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C1.S9.Px26.p1.s2">
+It converges to <Math mode="inline" xml:id="C1.S9.Px26.p1.m4">z</Math> if for every <Math mode="inline" xml:id="C1.S9.Px26.p1.m5">\epsilon&gt;0</Math> , there is an integer <Math mode="inline" xml:id="C1.S9.Px26.p1.m6">N</Math> such that <Math equation-number="1.9.64" mode="display" xml:id="C1.S9.E64">|z_{m,n}-z|&lt;\epsilon</Math> for all <Math mode="inline" xml:id="C1.S9.Px26.p1.m7">m,n\geq N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="107" xml:id="C1.S9.Px26.p1.s3">
+Suppose <Math mode="inline" xml:id="C1.S9.Px26.p1.m8">\{z_{m,n}\}</Math> converges to <Math mode="inline" xml:id="C1.S9.Px26.p1.m9">z</Math> and the repeated limits <Math equation-number="1.9.65" mode="display" xml:id="C1.S9.E65">\lim_{m\to\infty}\left(\lim_{n\to\infty}z_{m,n}\right),\lim_{n\to\infty}\left(\lim_{m\to\infty}z_{m,n}\right)</Math> exist.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="108" xml:id="C1.S9.Px26.p1.s4">
+Then both repeated limits equal <Math mode="inline" xml:id="C1.S9.Px26.p1.m10">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px26.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C1.S9.Px26.p2.s1">
+A double series is the limit of the double sequence <Math equation-number="1.9.66" mode="display" xml:id="C1.S9.E66">z_{p,q}=\sum^{p}_{m=0}\sum^{q}_{n=0}\zeta_{m,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C1.S9.Px26.p2.s2">
+If the limit exists, then the double series is convergent; otherwise it is divergent.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C1.S9.Px26.p2.s3">
+The double series is absolutely convergent if it is convergent when <Math mode="inline" xml:id="C1.S9.Px26.p2.m1">\zeta_{m,n}</Math> is replaced by <Math mode="inline" xml:id="C1.S9.Px26.p2.m2">|\zeta_{m,n}|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S9.Px26.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C1.S9.Px26.p3.s1">
+If a double series is absolutely convergent, then it is also convergent and its sum is given by either of the repeated sums <Math equation-number="1.9.67" mode="display" xml:id="C1.S9.E67">\sum^{\infty}_{m=0}\left(\sum^{\infty}_{n=0}\zeta_{m,n}\right),\sum^{\infty}_{n=0}\left(\sum^{\infty}_{m=0}\zeta_{m,n}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px27">
+<title>Term-by-Term Integration</title>        
+<para xml:id="C1.S9.Px27.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C1.S9.Px27.p1.s1">
+Suppose the series <Math mode="inline" xml:id="C1.S9.Px27.p1.m1">\sum^{\infty}_{n=0}f_{n}(z)</Math> , where <Math mode="inline" xml:id="C1.S9.Px27.p1.m2">f_{n}(z)</Math> is continuous, converges uniformly on every compact set of a domain <Math mode="inline" xml:id="C1.S9.Px27.p1.m3">D</Math> , that is, every closed and bounded set in <Math mode="inline" xml:id="C1.S9.Px27.p1.m4">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C1.S9.Px27.p1.s2">
+Then <Math equation-number="1.9.68" mode="display" xml:id="C1.S9.E68">\int_{C}\sum^{\infty}_{n=0}f_{n}(z)\mathrm{d}z=\sum^{\infty}_{n=0}\int_{C}f_{n }(z)\mathrm{d}z</Math> for any finite contour <Math mode="inline" xml:id="C1.S9.Px27.p1.m5">C</Math> in <Math mode="inline" xml:id="C1.S9.Px27.p1.m6">D</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S9.Px28">
+<title>Dominated Convergence Theorem</title>    
+ 
+<para xml:id="C1.S9.Px28.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C1.S9.Px28.p1.s1">
+Let <Math mode="inline" xml:id="C1.S9.Px28.p1.m1">(a,b)</Math> be a finite or infinite interval, and <Math mode="inline" xml:id="C1.S9.Px28.p1.m2">f_{0}(t),f_{1}(t),\dots</Math> be real or complex continuous functions, <Math mode="inline" xml:id="C1.S9.Px28.p1.m3">t\in(a,b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C1.S9.Px28.p1.s2">
+Suppose <Math mode="inline" xml:id="C1.S9.Px28.p1.m4">\sum^{\infty}_{n=0}f_{n}(t)</Math> converges uniformly in any compact interval in <Math mode="inline" xml:id="C1.S9.Px28.p1.m5">(a,b)</Math> , and at least one of the following two conditions is satisfied: <Math equation-number="1.9.69" mode="display" xml:id="C1.S9.E69">\int^{b}_{a}\sum^{\infty}_{n=0}|f_{n}(t)|\mathrm{d}t&lt;\infty,</Math> <Math equation-number="1.9.70" mode="display" xml:id="C1.S9.E70">\sum^{\infty}_{n=0}\int^{b}_{a}|f_{n}(t)|\mathrm{d}t&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="117" xml:id="C1.S9.Px28.p1.s3">
+Then <Math equation-number="1.9.71" mode="display" xml:id="C1.S9.E71">\int^{b}_{a}\sum^{\infty}_{n=0}f_{n}(t)\mathrm{d}t=\sum^{\infty}_{n=0}\int^{b} _{a}f_{n}(t)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

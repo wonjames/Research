@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S11">
+<title>Zeros of Polynomials</title>          
+ 
+<subsection xml:id="C1.S11.SS1">
+<title>Division Algorithm</title>          
+<paragraph xml:id="C1.S11.Px1">
+<title>Horner’s Scheme</title>     
+<para xml:id="C1.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S11.Px1.p1.s1">
+Let <Math equation-number="1.11.1" mode="display" xml:id="C1.S11.E1">f(z)=a_{n}z^{n}+a_{n-1}z^{n-1}+\dots+a_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C1.S11.Px1.p1.s2">
+Then <Math equation-number="1.11.2" mode="display" xml:id="C1.S11.E2">f(z)=(z-\alpha)(b_{n}z^{n-1}+b_{n-1}z^{n-2}+\dots+b_{1})+b_{0},</Math> where <Math mode="inline" xml:id="C1.S11.Px1.p1.m1">b_{n}=a_{n}</Math> , <Math equation-number="1.11.3" mode="display" xml:id="C1.S11.E3">b_{k}=\alpha b_{k+1}+a_{k}, if k=n-1,n-2,\dots,0,</Math> <Math equation-number="1.11.4" mode="display" xml:id="C1.S11.E4">f(\alpha)=b_{0}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px2">
+<title>Extended Horner Scheme</title>    
+ 
+<para xml:id="C1.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C1.S11.Px2.p1.s1">
+With <Math mode="inline" xml:id="C1.S11.Px2.p1.m1">b_{k}</Math> as in (1.11.1)–(1.11.3) let <Math mode="inline" xml:id="C1.S11.Px2.p1.m2">c_{n}=a_{n}</Math> and <Math equation-number="1.11.5" mode="display" xml:id="C1.S11.E5">c_{k}=\alpha c_{k+1}+b_{k}, if k=n-1,n-2,\dots,1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C1.S11.Px2.p1.s2">
+Then <Math equation-number="1.11.6" mode="display" xml:id="C1.S11.E6">f^{\prime}(\alpha)=c_{1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S11.Px2.p2.s1">
+More generally, for polynomials <Math mode="inline" xml:id="C1.S11.Px2.p2.m1">f(z)</Math> and <Math mode="inline" xml:id="C1.S11.Px2.p2.m2">g(z)</Math> , there are polynomials <Math mode="inline" xml:id="C1.S11.Px2.p2.m3">q(z)</Math> and <Math mode="inline" xml:id="C1.S11.Px2.p2.m4">r(z)</Math> , found by equating coefficients, such that <Math equation-number="1.11.7" mode="display" xml:id="C1.S11.E7">f(z)=g(z)q(z)+r(z),</Math> where <Math mode="inline" xml:id="C1.S11.Px2.p2.m5">0\leq\deg r(z)&lt;\deg g(z)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S11.SS2">
+<title>Elementary Properties</title>            
+ 
+<para xml:id="C1.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C1.S11.SS2.p1.s1">
+A polynomial of degree <Math mode="inline" xml:id="C1.S11.SS2.p1.m1">n</Math> with real or complex coefficients has exactly <Math mode="inline" xml:id="C1.S11.SS2.p1.m2">n</Math> real or complex zeros counting multiplicity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C1.S11.SS2.p1.s2">
+Every monic (coefficient of highest power is one) polynomial of odd degree with real coefficients has at least one real zero with sign opposite to that of the constant term.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C1.S11.SS2.p1.s3">
+A monic polynomial of even degree with real coefficients has at least two zeros of opposite signs when the constant term is negative.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S11.Px3">
+<title>Descartes’ Rule of Signs</title>     
+<para xml:id="C1.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S11.Px3.p1.s1">
+The number of positive zeros of a polynomial with real coefficients cannot exceed the number of times the coefficients change sign, and the two numbers have same parity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C1.S11.Px3.p1.s2">
+A similar relation holds for the changes in sign of the coefficients of <Math mode="inline" xml:id="C1.S11.Px3.p1.m1">f(-z)</Math> , and hence for the number of negative zeros of <Math mode="inline" xml:id="C1.S11.Px3.p1.m2">f(z)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px4">
+<title>Example</title>   
+<para xml:id="C1.S11.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S11.Px4.p1.s1">
+ <Math equation-number="1.11.8" mode="display" xml:id="C1.S11.E8">f(z)=z^{8}+10z^{3}+z-4,f(-z)=z^{8}-10z^{3}-z-4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C1.S11.Px4.p1.s2">
+Both polynomials have one change of sign; hence for each polynomial there is one positive zero, one negative zero, and six complex zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C1.S11.Px4.p2.s1">
+Next, let <Math mode="inline" xml:id="C1.S11.Px4.p2.m1">f(z)=a_{n}z^{n}+a_{n-1}z^{n-1}+\dots+a_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C1.S11.Px4.p2.s2">
+The zeros of <Math mode="inline" xml:id="C1.S11.Px4.p2.m2">z^{n}f(1/z)=a_{0}z^{n}+a_{1}z^{n-1}+\dots+a_{n}</Math> are reciprocals of the zeros of <Math mode="inline" xml:id="C1.S11.Px4.p2.m3">f(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S11.Px4.p3.s1">
+The discriminant of <Math mode="inline" xml:id="C1.S11.Px4.p3.m1">f(z)</Math> is defined by <Math equation-number="1.11.9" mode="display" xml:id="C1.S11.E9">D=a_{n}^{2n-2}\prod_{j&lt;k}(z_{j}-z_{k})^{2},</Math> where <Math mode="inline" xml:id="C1.S11.Px4.p3.m2">z_{1},z_{2},\dots,z_{n}</Math> are the zeros of <Math mode="inline" xml:id="C1.S11.Px4.p3.m3">f(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C1.S11.Px4.p3.s2">
+The elementary symmetric functions of the zeros are (with <Math mode="inline" xml:id="C1.S11.Px4.p3.m4">a_{n}\not=0</Math> )
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S11.Px4.p4.s1">
+ <Math equation-number="1.11.10" mode="display" xml:id="C1.S11.E10">\displaystyle z_{1}+z_{2}+\dots+z_{n}=-a_{n-1}/a_{n},\displaystyle\sum_{1\leq j&lt;k\leq n}z_{j}z_{k}=a_{n-2}/a_{n},\displaystyle\mathrel{\vdots}\displaystyle z_{1}z_{2}\cdots z_{n}=(-1)^{n}a_{0}/a_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S11.SS3">
+<title>Polynomials of Degrees Two, Three, and Four</title>          
+<paragraph xml:id="C1.S11.Px5">
+<title>Quadratic Equations</title>    
+<para xml:id="C1.S11.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S11.Px5.p1.s1">
+The roots of <Math mode="inline" xml:id="C1.S11.Px5.p1.m1">az^{2}+bz+c=0</Math> are <Math equation-number="1.11.11" mode="display" xml:id="C1.S11.E11">\frac{-b\pm\sqrt{D}}{2a},D=b^{2}-4ac</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C1.S11.Px5.p1.s2">
+The sum and product of the roots are respectively <Math mode="inline" xml:id="C1.S11.Px5.p1.m2">-b/a</Math> and <Math mode="inline" xml:id="C1.S11.Px5.p1.m3">c/a</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px6">
+<title>Cubic Equations</title>    
+<para xml:id="C1.S11.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S11.Px6.p1.s1">
+Set <Math mode="inline" xml:id="C1.S11.Px6.p1.m1">z=w-\tfrac{1}{3}a</Math> to reduce <Math mode="inline" xml:id="C1.S11.Px6.p1.m2">f(z)=z^{3}+az^{2}+bz+c</Math> to <Math mode="inline" xml:id="C1.S11.Px6.p1.m3">g(w)=w^{3}+pw+q</Math> , with <Math mode="inline" xml:id="C1.S11.Px6.p1.m4">p=(3b-a^{2})/3</Math> , <Math mode="inline" xml:id="C1.S11.Px6.p1.m5">q=(2a^{3}-9ab+27c)/27</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C1.S11.Px6.p1.s2">
+The discriminant of <Math mode="inline" xml:id="C1.S11.Px6.p1.m6">g(w)</Math> is <Math equation-number="1.11.12" mode="display" xml:id="C1.S11.E12">D=-4p^{3}-27q^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C1.S11.Px6.p1.s3">
+Let <Math equation-number="1.11.13" mode="display" xml:id="C1.S11.E13">A=\sqrt[3]{-\tfrac{27}{2}q+\tfrac{3}{2}\sqrt{-3D}},B=-3p/A</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C1.S11.Px6.p2.s1">
+The roots of <Math mode="inline" xml:id="C1.S11.Px6.p2.m1">g(w)=0</Math> are <Math equation-number="1.11.14" mode="display" xml:id="C1.S11.E14">\tfrac{1}{3}(A+B),\tfrac{1}{3}(\rho A+\rho^{2}B),\tfrac{1}{3}(\rho^{2}A+\rho B),</Math> with <Math equation-number="1.11.15" mode="display" xml:id="C1.S11.E15">\rho=-\tfrac{1}{2}+\tfrac{1}{2}\sqrt{-3}=e^{2\pi i/3},\rho^{2}=e^{-2\pi i/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C1.S11.Px6.p2.s2">
+Addition of <Math mode="inline" xml:id="C1.S11.Px6.p2.m2">-\frac{1}{3}a</Math> to each of these roots gives the roots of <Math mode="inline" xml:id="C1.S11.Px6.p2.m3">f(z)=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px7">
+<title>Example</title>   
+<para xml:id="C1.S11.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C1.S11.Px7.p1.s1">
+ <Math mode="inline" xml:id="C1.S11.Px7.p1.m1">f(z)=z^{3}-6z^{2}+6z-2</Math> , <Math mode="inline" xml:id="C1.S11.Px7.p1.m2">g(w)=w^{3}-6w-6</Math> , <Math mode="inline" xml:id="C1.S11.Px7.p1.m3">A=3\sqrt[3]{4}</Math> , <Math mode="inline" xml:id="C1.S11.Px7.p1.m4">B=3\sqrt[3]{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C1.S11.Px7.p1.s2">
+Roots of <Math mode="inline" xml:id="C1.S11.Px7.p1.m5">f(z)=0</Math> are <Math mode="inline" xml:id="C1.S11.Px7.p1.m6">2+\sqrt[3]{4}+\sqrt[3]{2}</Math> , <Math mode="inline" xml:id="C1.S11.Px7.p1.m7">2+\sqrt[3]{4}\rho+\sqrt[3]{2}\rho^{2}</Math> , <Math mode="inline" xml:id="C1.S11.Px7.p1.m8">2+\sqrt[3]{4}\rho^{2}+\sqrt[3]{2}\rho</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S11.Px7.p2.s1">
+For another method see §4.43.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px8">
+<title>Quartic Equations</title>   
+ 
+<para xml:id="C1.S11.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S11.Px8.p1.s1">
+Set <Math mode="inline" xml:id="C1.S11.Px8.p1.m1">z=w-\tfrac{1}{4}a</Math> to reduce <Math mode="inline" xml:id="C1.S11.Px8.p1.m2">f(z)=z^{4}+az^{3}+bz^{2}+cz+d</Math> to <Math equation-number="1.11.16" mode="display" xml:id="C1.S11.E16">g(w)=w^{4}+pw^{2}+qw+r,p=(-3a^{2}+8b)/8,q=(a^{3}-4ab+8c)/8,r=(-3a^{4}+16a^{2}b-64ac+256d)/256</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S11.Px8.p2.s1">
+The discriminant of <Math mode="inline" xml:id="C1.S11.Px8.p2.m1">g(w)</Math> is <Math equation-number="1.11.17" mode="display" xml:id="C1.S11.E17">D=16p^{4}r-4p^{3}q^{2}-128p^{2}r^{2}+144pq^{2}r-27q^{4}+256r^{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C1.S11.Px8.p2.s2">
+For the roots <Math mode="inline" xml:id="C1.S11.Px8.p2.m2">\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4}</Math> of <Math mode="inline" xml:id="C1.S11.Px8.p2.m3">g(w)=0</Math> and the roots <Math mode="inline" xml:id="C1.S11.Px8.p2.m4">\theta_{1},\theta_{2},\theta_{3}</Math> of the resolvent cubic equation <Math equation-number="1.11.18" mode="display" xml:id="C1.S11.E18">z^{3}-2pz^{2}+(p^{2}-4r)z+q^{2}=0,</Math> we have <Math equation-number="1.11.19" mode="display" xml:id="C1.S11.E19">2\alpha_{1}=\phantom{+}\sqrt{-\theta_{1}}+\sqrt{-\theta_{2}}+\sqrt{-\theta_{3}},2\alpha_{2}=\phantom{+}\sqrt{-\theta_{1}}-\sqrt{-\theta_{2}}-\sqrt{-\theta_{3}},2\alpha_{3}=-\sqrt{-\theta_{1}}+\sqrt{-\theta_{2}}-\sqrt{-\theta_{3}},2\alpha_{4}=-\sqrt{-\theta_{1}}-\sqrt{-\theta_{2}}+\sqrt{-\theta_{3}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C1.S11.Px8.p2.s3">
+The square roots are chosen so that <Math equation-number="1.11.20" mode="display" xml:id="C1.S11.E20">\sqrt{-\theta_{1}}\;\sqrt{-\theta_{2}}\;\sqrt{-\theta_{3}}=-q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="32" xml:id="C1.S11.Px8.p2.s4">
+Add <Math mode="inline" xml:id="C1.S11.Px8.p2.m5">-\tfrac{1}{4}a</Math> to the roots of <Math mode="inline" xml:id="C1.S11.Px8.p2.m6">g(w)=0</Math> to get those of <Math mode="inline" xml:id="C1.S11.Px8.p2.m7">f(z)=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S11.Px9">
+<title>Example</title>   
+<para xml:id="C1.S11.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C1.S11.Px9.p1.s1">
+ <Math mode="inline" xml:id="C1.S11.Px9.p1.m1">f(z)=z^{4}-4z^{3}+5z+2</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m2">g(w)=w^{4}-6w^{2}-3w+4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C1.S11.Px9.p1.s2">
+Resolvent cubic is <Math mode="inline" xml:id="C1.S11.Px9.p1.m3">z^{3}+12z^{2}+20z+9=0</Math> with roots <Math mode="inline" xml:id="C1.S11.Px9.p1.m4">\theta_{1}=-1</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m5">\theta_{2}=-\tfrac{1}{2}(11+\sqrt{85})</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m6">\theta_{3}=-\tfrac{1}{2}(11-\sqrt{85})</Math> , and <Math mode="inline" xml:id="C1.S11.Px9.p1.m7">\sqrt{-\theta_{1}}=1</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m8">\sqrt{-\theta_{2}}=\tfrac{1}{2}(\sqrt{17}+\sqrt{5})</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m9">\sqrt{-\theta_{3}}=\tfrac{1}{2}(\sqrt{17}-\sqrt{5})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C1.S11.Px9.p1.s3">
+So <Math mode="inline" xml:id="C1.S11.Px9.p1.m10">2\alpha_{1}=1+\sqrt{17}</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m11">2\alpha_{2}=1-\sqrt{17}</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m12">2\alpha_{3}=-1+\sqrt{5}</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m13">2\alpha_{4}=-1-\sqrt{5}</Math> , and the roots of <Math mode="inline" xml:id="C1.S11.Px9.p1.m14">f(z)=0</Math> are <Math mode="inline" xml:id="C1.S11.Px9.p1.m15">\tfrac{1}{2}(3\pm\sqrt{17})</Math> , <Math mode="inline" xml:id="C1.S11.Px9.p1.m16">\tfrac{1}{2}(1\pm\sqrt{5})</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S11.SS4">
+<title>Roots of Unity and of Other Constants</title>             
+<para xml:id="C1.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C1.S11.SS4.p1.s1">
+The roots of <Math equation-number="1.11.21" mode="display" xml:id="C1.S11.E21">z^{n}-1=(z-1)(z^{n-1}+z^{n-2}+\dots+z+1)=0</Math> are <Math mode="inline" xml:id="C1.S11.SS4.p1.m1">1</Math> , <Math mode="inline" xml:id="C1.S11.SS4.p1.m2">e^{2\pi i/n}</Math> , <Math mode="inline" xml:id="C1.S11.SS4.p1.m3">e^{4\pi i/n},\dots,e^{(2n-2)\pi i/n}</Math> , and of <Math mode="inline" xml:id="C1.S11.SS4.p1.m4">z^{n}+1=0</Math> they are <Math mode="inline" xml:id="C1.S11.SS4.p1.m5">e^{\pi i/n},e^{3\pi i/n},\dots,e^{(2n-1)\pi i/n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C1.S11.SS4.p2.s1">
+The roots of <Math equation-number="1.11.22" mode="display" xml:id="C1.S11.E22">z^{n}=a+ib, if a,b real,</Math> are <Math equation-number="1.11.23" mode="display" xml:id="C1.S11.E23">\sqrt[n]{R}\left(\cos\left(\frac{\alpha+2k\pi}{n}\right)+i\sin\left(\frac{ \alpha+2k\pi}{n}\right)\right),</Math> where <Math mode="inline" xml:id="C1.S11.SS4.p2.m1">R=(a^{2}+b^{2})^{1/2}</Math> , <Math mode="inline" xml:id="C1.S11.SS4.p2.m2">\alpha=\operatorname{ph}\left(a+ib\right)</Math> , with the principal value of phase (§1.9(i)), and <Math mode="inline" xml:id="C1.S11.SS4.p2.m3">k=0,1,\dots,n-1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S11.SS5">
+<title>Stable Polynomials</title>           
+<para xml:id="C1.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C1.S11.SS5.p1.s1">
+ <Math equation-number="1.11.24" mode="display" xml:id="C1.S11.E24">f(z)=a_{0}+a_{1}z+\dots+a_{n}z^{n},</Math> with real coefficients, is called stable if the real parts of all thezeros are strictly negative.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S11.Px10">
+<title>Hurwitz Criterion</title>     
+<para xml:id="C1.S11.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C1.S11.Px10.p1.s1">
+Let <Math equation-number="1.11.25" mode="display" xml:id="C1.S11.E25">D_{1}=a_{1},D_{2}=\begin{vmatrix}a_{1}&amp;a_{3}\\ a_{0}&amp;a_{2}\end{vmatrix},D_{3}=\begin{vmatrix}a_{1}&amp;a_{3}&amp;a_{5}\\ a_{0}&amp;a_{2}&amp;a_{4}\\ 0&amp;a_{1}&amp;a_{3}\end{vmatrix},</Math> and <Math equation-number="1.11.26" mode="display" xml:id="C1.S11.E26">D_{k}=\det[h_{k}^{(1)},h_{k}^{(3)},\dots,h_{k}^{(2k-1)}],</Math> where the column vector <Math mode="inline" xml:id="C1.S11.Px10.p1.m1">h_{k}^{(m)}</Math> consists of the first <Math mode="inline" xml:id="C1.S11.Px10.p1.m2">k</Math> members of the sequence <Math mode="inline" xml:id="C1.S11.Px10.p1.m3">a_{m},a_{m-1},a_{m-2},\dots</Math> with <Math mode="inline" xml:id="C1.S11.Px10.p1.m4">a_{j}=0</Math> if <Math mode="inline" xml:id="C1.S11.Px10.p1.m5">j&lt;0</Math> or <Math mode="inline" xml:id="C1.S11.Px10.p1.m6">j&gt;n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S11.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C1.S11.Px10.p2.s1">
+Then <Math mode="inline" xml:id="C1.S11.Px10.p2.m1">f(z)</Math> , with <Math mode="inline" xml:id="C1.S11.Px10.p2.m2">a_{n}\not=0</Math> , is stable iff <Math mode="inline" xml:id="C1.S11.Px10.p2.m3">a_{0}\not=0</Math> ; <Math mode="inline" xml:id="C1.S11.Px10.p2.m4">D_{2k}&gt;0</Math> , <Math mode="inline" xml:id="C1.S11.Px10.p2.m5">k=1,\dots,\left\lfloor\frac{1}{2}n\right\rfloor</Math> ; <Math mode="inline" xml:id="C1.S11.Px10.p2.m6">\operatorname{sign}D_{2k+1}=\operatorname{sign}a_{0}</Math> , <Math mode="inline" xml:id="C1.S11.Px10.p2.m7">k=0,1,\dots,\left\lfloor\frac{1}{2}n-\frac{1}{2}\right\rfloor</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

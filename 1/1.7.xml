@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S7">
+<title>Inequalities</title>        
+ 
+<subsection xml:id="C1.S7.SS1">
+<title>Finite Sums</title>         
+<para xml:id="C1.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S7.SS1.p1.s1">
+In this subsection <Math mode="inline" xml:id="C1.S7.SS1.p1.m1">A</Math> and <Math mode="inline" xml:id="C1.S7.SS1.p1.m2">B</Math> are positive constants.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S7.Px1">
+<title>Cauchy–Schwarz Inequality</title>     
+<para xml:id="C1.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S7.Px1.p1.s1">
+ <Math equation-number="1.7.1" mode="display" xml:id="C1.S7.E1">\left(\sum^{n}_{j=1}a_{j}b_{j}\right)^{2}\leq\left(\sum^{n}_{j=1}a_{j}^{2} \right)\left(\sum^{n}_{j=1}b_{j}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C1.S7.Px1.p1.s2">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px1.p1.m1">a_{j}=cb_{j}</Math> , <Math mode="inline" xml:id="C1.S7.Px1.p1.m2">\forall j</Math> ; <Math mode="inline" xml:id="C1.S7.Px1.p1.m3">c=\text{ constant}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S7.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C1.S7.Px1.p2.s1">
+Conversely, if <Math mode="inline" xml:id="C1.S7.Px1.p2.m1">\left(\sum^{n}_{j=1}a_{j}b_{j}\right)^{2}\leq AB</Math> for all <Math mode="inline" xml:id="C1.S7.Px1.p2.m2">b_{j}</Math> such that <Math mode="inline" xml:id="C1.S7.Px1.p2.m3">\sum^{n}_{j=1}b_{j}^{2}\leq B</Math> , then <Math mode="inline" xml:id="C1.S7.Px1.p2.m4">\sum^{n}_{j=1}a_{j}^{2}\leq A</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S7.Px2">
+<title>Hölder’s Inequality</title>  
+   
+<para xml:id="C1.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S7.Px2.p1.s1">
+For <Math mode="inline" xml:id="C1.S7.Px2.p1.m1">p&gt;1</Math> , <Math mode="inline" xml:id="C1.S7.Px2.p1.m2">\dfrac{1}{p}+\dfrac{1}{q}=1</Math> , <Math mode="inline" xml:id="C1.S7.Px2.p1.m3">a_{j}\geq 0</Math> , <Math mode="inline" xml:id="C1.S7.Px2.p1.m4">b_{j}\geq 0</Math> , <Math equation-number="1.7.2" mode="display" xml:id="C1.S7.E2">\sum^{n}_{j=1}a_{j}b_{j}\leq\left(\sum^{n}_{j=1}a_{j}^{p}\right)^{1/p}\left( \sum^{n}_{j=1}b_{j}^{q}\right)^{1/q}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C1.S7.Px2.p1.s2">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px2.p1.m5">a_{j}^{p}=cb_{j}^{q}</Math> , <Math mode="inline" xml:id="C1.S7.Px2.p1.m6">\forall j</Math> ; <Math mode="inline" xml:id="C1.S7.Px2.p1.m7">c=\text{ constant}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S7.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C1.S7.Px2.p2.s1">
+Conversely, if <Math mode="inline" xml:id="C1.S7.Px2.p2.m1">\sum^{n}_{j=1}a_{j}b_{j}\leq A^{1/p}B^{1/q}</Math> for all <Math mode="inline" xml:id="C1.S7.Px2.p2.m2">b_{j}</Math> such that <Math mode="inline" xml:id="C1.S7.Px2.p2.m3">\sum^{n}_{j=1}b_{j}^{q}\leq B</Math> , then <Math mode="inline" xml:id="C1.S7.Px2.p2.m4">\sum^{n}_{j=1}a_{j}^{p}\leq A</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S7.Px3">
+<title>Minkowski’s Inequality</title>     
+<para xml:id="C1.S7.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S7.Px3.p1.s1">
+For <Math mode="inline" xml:id="C1.S7.Px3.p1.m1">p&gt;1</Math> , <Math mode="inline" xml:id="C1.S7.Px3.p1.m2">a_{j}\geq 0</Math> , <Math mode="inline" xml:id="C1.S7.Px3.p1.m3">b_{j}\geq 0</Math> , <Math equation-number="1.7.3" mode="display" xml:id="C1.S7.E3">\left(\sum^{n}_{j=1}(a_{j}+b_{j})^{p}\right)^{1/p}\leq\left(\sum^{n}_{j=1}a_{j }^{p}\right)^{1/p}+\left(\sum^{n}_{j=1}b_{j}^{p}\right)^{1/p}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C1.S7.Px3.p1.s2">
+The direction of the inequality is reversed, that is, <Math mode="inline" xml:id="C1.S7.Px3.p1.m4">\geq</Math> , when <Math mode="inline" xml:id="C1.S7.Px3.p1.m5">0&lt;p&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C1.S7.Px3.p1.s3">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px3.p1.m6">a_{j}=cb_{j}</Math> , <Math mode="inline" xml:id="C1.S7.Px3.p1.m7">\forall j</Math> ; <Math mode="inline" xml:id="C1.S7.Px3.p1.m8">c=\text{ constant}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S7.SS2">
+<title>Integrals</title>         
+<para xml:id="C1.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S7.SS2.p1.s1">
+In this subsection <Math mode="inline" xml:id="C1.S7.SS2.p1.m1">a</Math> and <Math mode="inline" xml:id="C1.S7.SS2.p1.m2">b</Math> ( <Math mode="inline" xml:id="C1.S7.SS2.p1.m3">&gt;a</Math> ) are real constants that can be <Math mode="inline" xml:id="C1.S7.SS2.p1.m4">\mp\infty</Math> , provided that the corresponding integrals converge.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C1.S7.SS2.p1.s2">
+Also <Math mode="inline" xml:id="C1.S7.SS2.p1.m5">A</Math> and <Math mode="inline" xml:id="C1.S7.SS2.p1.m6">B</Math> are constants that are not simultaneously zero.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S7.Px4">
+<title>Cauchy–Schwarz Inequality</title>    
+ 
+<para xml:id="C1.S7.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C1.S7.Px4.p1.s1">
+ <Math equation-number="1.7.4" mode="display" xml:id="C1.S7.E4">\left(\int_{a}^{b}f(x)g(x)\mathrm{d}x\right)^{2}\leq\int_{a}^{b}(f(x))^{2} \mathrm{d}x\int_{a}^{b}(g(x))^{2}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C1.S7.Px4.p1.s2">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px4.p1.m1">Af(x)=Bg(x)</Math> for all <Math mode="inline" xml:id="C1.S7.Px4.p1.m2">x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S7.Px5">
+<title>Hölder’s Inequality</title>     
+<para xml:id="C1.S7.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S7.Px5.p1.s1">
+For <Math mode="inline" xml:id="C1.S7.Px5.p1.m1">p&gt;1</Math> , <Math mode="inline" xml:id="C1.S7.Px5.p1.m2">\dfrac{1}{p}+\dfrac{1}{q}=1</Math> , <Math mode="inline" xml:id="C1.S7.Px5.p1.m3">f(x)\geq 0</Math> , <Math mode="inline" xml:id="C1.S7.Px5.p1.m4">g(x)\geq 0</Math> , <Math equation-number="1.7.5" mode="display" xml:id="C1.S7.E5">\int_{a}^{b}f(x)g(x)\mathrm{d}x\leq\left(\int_{a}^{b}(f(x))^{p}\mathrm{d}x \right)^{1/p}\left(\int_{a}^{b}(g(x))^{q}\mathrm{d}x\right)^{1/q}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C1.S7.Px5.p1.s2">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px5.p1.m5">A(f(x))^{p}=B(g(x))^{q}</Math> for all <Math mode="inline" xml:id="C1.S7.Px5.p1.m6">x</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S7.Px6">
+<title>Minkowski’s Inequality</title>     
+<para xml:id="C1.S7.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S7.Px6.p1.s1">
+For <Math mode="inline" xml:id="C1.S7.Px6.p1.m1">p&gt;1</Math> , <Math mode="inline" xml:id="C1.S7.Px6.p1.m2">f(x)\geq 0</Math> , <Math mode="inline" xml:id="C1.S7.Px6.p1.m3">g(x)\geq 0</Math> , <Math equation-number="1.7.6" mode="display" xml:id="C1.S7.E6">\left(\int_{a}^{b}(f(x)+g(x))^{p}\mathrm{d}x\right)^{1/p}\leq\left(\int_{a}^{b }(f(x))^{p}\mathrm{d}x\right)^{1/p}+\left(\int_{a}^{b}(g(x))^{p}\mathrm{d}x \right)^{1/p}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C1.S7.Px6.p1.s2">
+The direction of the inequality is reversed, that is, <Math mode="inline" xml:id="C1.S7.Px6.p1.m4">\geq</Math> , when <Math mode="inline" xml:id="C1.S7.Px6.p1.m5">0&lt;p&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C1.S7.Px6.p1.s3">
+Equality holds iff <Math mode="inline" xml:id="C1.S7.Px6.p1.m6">Af(x)=Bg(x)</Math> for all <Math mode="inline" xml:id="C1.S7.Px6.p1.m7">x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S7.SS3">
+<title>Means</title>            
+ 
+<para xml:id="C1.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S7.SS3.p1.s1">
+For the notation, see §1.2(iv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C1.S7.SS3.p1.s2">
+<Math equation-number="1.7.7" mode="display" xml:id="C1.S7.E7">H\leq G\leq A,</Math> with equality iff <Math mode="inline" xml:id="C1.S7.SS3.p1.m1">a_{1}=a_{2}=\dots=a_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C1.S7.SS3.p1.s3">
+<Math equation-number="1.7.8" mode="display" xml:id="C1.S7.E8">\min(a_{1},a_{2},\dots,a_{n})\leq M(r)\leq\max(a_{1},a_{2},\dots,a_{n}),</Math> with equality iff <Math mode="inline" xml:id="C1.S7.SS3.p1.m2">a_{1}=a_{2}=\dots=a_{n}</Math> , or <Math mode="inline" xml:id="C1.S7.SS3.p1.m3">r&lt;0</Math> and some <Math mode="inline" xml:id="C1.S7.SS3.p1.m4">a_{j}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C1.S7.SS3.p1.s4">
+<Math equation-number="1.7.9" mode="display" xml:id="C1.S7.E9">M(r)\leq M(s), if r&lt;s,</Math> with equality iff <Math mode="inline" xml:id="C1.S7.SS3.p1.m5">a_{1}=a_{2}=\dots=a_{n}</Math> , or <Math mode="inline" xml:id="C1.S7.SS3.p1.m6">s\leq 0</Math> and some <Math mode="inline" xml:id="C1.S7.SS3.p1.m7">a_{j}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S7.SS4">
+<title>Jensen’s Inequality</title>            
+<para xml:id="C1.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S7.SS4.p1.s1">
+For <Math mode="inline" xml:id="C1.S7.SS4.p1.m1">f</Math> integrable on <Math mode="inline" xml:id="C1.S7.SS4.p1.m2">[0,1]</Math> , <Math mode="inline" xml:id="C1.S7.SS4.p1.m3">a&lt;f(x)&lt;b</Math> , and <Math mode="inline" xml:id="C1.S7.SS4.p1.m4">\phi</Math> convex on <Math mode="inline" xml:id="C1.S7.SS4.p1.m5">(a,b)</Math> (§ 1.4(viii)),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S7.SS4.p1.s2">
+<Math equation-number="1.7.10" mode="display" xml:id="C1.S7.E10">\phi\left(\int^{1}_{0}f(x)\mathrm{d}x\right)\leq\int^{1}_{0}\phi(f(x))\mathrm{ d}x,</Math> <Math equation-number="1.7.11" mode="display" xml:id="C1.S7.E11">\exp\left(\int^{1}_{0}\ln\left(f(x)\right)\mathrm{d}x\right)&lt;\int^{1}_{0}f(x) \mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C1.S7.SS4.p1.s3">
+For <Math mode="inline" xml:id="C1.S7.SS4.p1.m6">\exp</Math> and <Math mode="inline" xml:id="C1.S7.SS4.p1.m7">\ln</Math> see §4.2.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

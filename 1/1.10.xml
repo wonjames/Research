@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S10">
+<title>Functions of a Complex Variable</title>          
+<subsection xml:id="C1.S10.SS1">
+<title>Taylor’s Theorem for Complex Variables</title>          
+<para xml:id="C1.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S10.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.SS1.p1.m1">f(z)</Math> be analytic on the disk <Math mode="inline" xml:id="C1.S10.SS1.p1.m2">|z-z_{0}|&lt;R</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C1.S10.SS1.p1.s2">
+Then <Math equation-number="1.10.1" mode="display" xml:id="C1.S10.E1">f(z)=\sum^{\infty}_{n=0}\frac{f^{(n)}(z_{0})}{n!}(z-z_{0})^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C1.S10.SS1.p1.s3">
+The right-hand side is the Taylor series for <Math mode="inline" xml:id="C1.S10.SS1.p1.m3">f(z)</Math> at <Math mode="inline" xml:id="C1.S10.SS1.p1.m4">z=z_{0}</Math> , and its radius of convergence is at least <Math mode="inline" xml:id="C1.S10.SS1.p1.m5">R</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px1">
+<title>Examples</title>   
+<para xml:id="C1.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C1.S10.Px1.p1.s1">
+ <Math equation-number="1.10.2" mode="display" xml:id="C1.S10.E2">e^{z}=1+\frac{z}{1!}+\frac{z^{2}}{2!}+\cdots, if |z|&lt;\infty,</Math> <Math equation-number="1.10.3" mode="display" xml:id="C1.S10.E3">\ln\left(1+z\right)=z-\frac{z^{2}}{2}+\frac{z^{3}}{3}-\cdots, if |z|&lt;1,</Math> <Math equation-number="1.10.4" mode="display" xml:id="C1.S10.E4">(1-z)^{-\alpha}=1+\alpha z+\frac{\alpha(\alpha+1)}{2!}z^{2}+\frac{\alpha( \alpha+1)(\alpha+2)}{3!}z^{3}+\cdots, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C1.S10.Px1.p1.s2">
+Note that (1.10.4) is a generalization of the binomial expansion (1.2.2) with the binomial coefficients defined in (1.2.6).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C1.S10.Px1.p1.s3">
+Again, in these examples <Math mode="inline" xml:id="C1.S10.Px1.p1.m1">\ln\left(1+z\right)</Math> and <Math mode="inline" xml:id="C1.S10.Px1.p1.m2">(1-z)^{-\alpha}</Math> have their principal values; see §§4.2(i) and 4.2(iv).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px2">
+<title>Zeros</title>   
+<para xml:id="C1.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C1.S10.Px2.p1.s1">
+An analytic function <Math mode="inline" xml:id="C1.S10.Px2.p1.m1">f(z)</Math> has a zero of order (or multiplicity) <Math mode="inline" xml:id="C1.S10.Px2.p1.m2">m</Math> ( <Math mode="inline" xml:id="C1.S10.Px2.p1.m3">\geq\!1</Math> ) at <Math mode="inline" xml:id="C1.S10.Px2.p1.m4">z_{0}</Math> if the first nonzero coefficient in its Taylor series at <Math mode="inline" xml:id="C1.S10.Px2.p1.m5">z_{0}</Math> is that of <Math mode="inline" xml:id="C1.S10.Px2.p1.m6">(z-z_{0})^{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C1.S10.Px2.p1.s2">
+When <Math mode="inline" xml:id="C1.S10.Px2.p1.m7">m=1</Math> the zero is simple.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS2">
+<title>Analytic Continuation</title>         
+ 
+<para xml:id="C1.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S10.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.SS2.p1.m1">f_{1}(z)</Math> be analytic in a domain <Math mode="inline" xml:id="C1.S10.SS2.p1.m2">D_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C1.S10.SS2.p1.s2">
+If <Math mode="inline" xml:id="C1.S10.SS2.p1.m3">f_{2}(z)</Math> , analytic in <Math mode="inline" xml:id="C1.S10.SS2.p1.m4">D_{2}</Math> , equals <Math mode="inline" xml:id="C1.S10.SS2.p1.m5">f_{1}(z)</Math> on an arc in <Math mode="inline" xml:id="C1.S10.SS2.p1.m6">D=D_{1}\cap D_{2}</Math> , or on just an infinite number of points with a limit point in <Math mode="inline" xml:id="C1.S10.SS2.p1.m7">D</Math> , then they are equal throughout <Math mode="inline" xml:id="C1.S10.SS2.p1.m8">D</Math> and <Math mode="inline" xml:id="C1.S10.SS2.p1.m9">f_{2}(z)</Math> is called an analytic continuation of <Math mode="inline" xml:id="C1.S10.SS2.p1.m10">f_{1}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C1.S10.SS2.p1.s3">
+We write <Math mode="inline" xml:id="C1.S10.SS2.p1.m11">(f_{1},D_{1})</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p1.m12">(f_{2},D_{2})</Math> to signify this continuation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S10.SS2.p2.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.SS2.p2.m1">z(t)=x(t)+iy(t)</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p2.m2">a\leq t\leq b</Math> , is an arc and <Math mode="inline" xml:id="C1.S10.SS2.p2.m3">a=t_{0}&lt;t_{1}&lt;\cdots&lt;t_{n}=b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S10.SS2.p2.s2">
+Suppose the subarc <Math mode="inline" xml:id="C1.S10.SS2.p2.m4">z(t)</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p2.m5">t\in[t_{j-1},t_{j}]</Math> is contained in a domain <Math mode="inline" xml:id="C1.S10.SS2.p2.m6">D_{j}</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p2.m7">j=1,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C1.S10.SS2.p2.s3">
+The function <Math mode="inline" xml:id="C1.S10.SS2.p2.m8">f_{1}(z)</Math> on <Math mode="inline" xml:id="C1.S10.SS2.p2.m9">D_{1}</Math> is said to be analytically continued along the path <Math mode="inline" xml:id="C1.S10.SS2.p2.m10">z(t)</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p2.m11">a\leq t\leq b</Math> , if there is a chain <Math mode="inline" xml:id="C1.S10.SS2.p2.m12">(f_{1},D_{1})</Math> , <Math mode="inline" xml:id="C1.S10.SS2.p2.m13">(f_{2},D_{2}),\dots,(f_{n},D_{n})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S10.SS2.p3.s1">
+Analytic continuation is a powerful aid in establishing transformations or functional equations for complex variables, because it enables the problem to be reduced to: (a) deriving the transformation (or functional equation) with real variables; followed by (b) finding the domain on which the transformedfunction is analytic.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px3">
+<title>Schwarz Reflection Principle</title>     
+<para xml:id="C1.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S10.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.Px3.p1.m1">C</Math> be a simple closed contour consisting of a segment <Math mode="inline" xml:id="C1.S10.Px3.p1.m2">\mathit{AB}</Math> of the real axis and a contour in the upper half-plane joining the ends of <Math mode="inline" xml:id="C1.S10.Px3.p1.m3">\mathit{AB}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C1.S10.Px3.p1.s2">
+Also, let <Math mode="inline" xml:id="C1.S10.Px3.p1.m4">f(z)</Math> be analytic within <Math mode="inline" xml:id="C1.S10.Px3.p1.m5">C</Math> , continuous within and on <Math mode="inline" xml:id="C1.S10.Px3.p1.m6">C</Math> , and real on <Math mode="inline" xml:id="C1.S10.Px3.p1.m7">\mathit{AB}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C1.S10.Px3.p1.s3">
+Then <Math mode="inline" xml:id="C1.S10.Px3.p1.m8">f(z)</Math> can be continued analytically across <Math mode="inline" xml:id="C1.S10.Px3.p1.m9">\mathit{AB}</Math> by reflection, that is, <Math equation-number="1.10.5" mode="display" xml:id="C1.S10.E5">f(\overline{z})=\overline{f(z)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS3">
+<title>Laurent Series</title>           
+<para xml:id="C1.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C1.S10.SS3.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.SS3.p1.m1">f(z)</Math> is analytic in the annulus <Math mode="inline" xml:id="C1.S10.SS3.p1.m2">r_{1}&lt;|z-z_{0}|&lt;r_{2}</Math> , <Math mode="inline" xml:id="C1.S10.SS3.p1.m3">0\leq r_{1}&lt;r_{2}\leq\infty</Math> , and <Math mode="inline" xml:id="C1.S10.SS3.p1.m4">r\in(r_{1},r_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C1.S10.SS3.p1.s2">
+Then <Math equation-number="1.10.6" mode="display" xml:id="C1.S10.E6">f(z)=\sum^{\infty}_{n=-\infty}a_{n}(z-z_{0})^{n},</Math> where <Math equation-number="1.10.7" mode="display" xml:id="C1.S10.E7">a_{n}=\frac{1}{2\pi i}\int_{|z-z_{0}|=r}\frac{f(z)}{(z-z_{0})^{n+1}}\mathrm{d}z,</Math> and the integration contour is described once in the positive sense.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C1.S10.SS3.p1.s3">
+The series (1.10.6)converges uniformly and absolutely on compact sets in the annulus.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C1.S10.SS3.p2.s1">
+Let <Math mode="inline" xml:id="C1.S10.SS3.p2.m1">r_{1}=0</Math> , so that the annulus becomes the punctured neighborhood <Math mode="inline" xml:id="C1.S10.SS3.p2.m2">N</Math> : <Math mode="inline" xml:id="C1.S10.SS3.p2.m3">0&lt;|z-z_{0}|&lt;r_{2}</Math> , and assume that <Math mode="inline" xml:id="C1.S10.SS3.p2.m4">f(z)</Math> is analytic in <Math mode="inline" xml:id="C1.S10.SS3.p2.m5">N</Math> , but not at <Math mode="inline" xml:id="C1.S10.SS3.p2.m6">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C1.S10.SS3.p2.s2">
+Then <Math mode="inline" xml:id="C1.S10.SS3.p2.m7">z=z_{0}</Math> is an isolated singularity of <Math mode="inline" xml:id="C1.S10.SS3.p2.m8">f(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C1.S10.SS3.p2.s3">
+This singularity is removable if <Math mode="inline" xml:id="C1.S10.SS3.p2.m9">a_{n}=0</Math> for all <Math mode="inline" xml:id="C1.S10.SS3.p2.m10">n&lt;0</Math> , and in this case the Laurent series becomes the Taylor series.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C1.S10.SS3.p2.s4">
+Next, <Math mode="inline" xml:id="C1.S10.SS3.p2.m11">z_{0}</Math> is a pole if <Math mode="inline" xml:id="C1.S10.SS3.p2.m12">a_{n}\not=0</Math> for at least one, but only finitely many, negative <Math mode="inline" xml:id="C1.S10.SS3.p2.m13">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C1.S10.SS3.p2.s5">
+If <Math mode="inline" xml:id="C1.S10.SS3.p2.m14">-n</Math> is the first negative integer (counting from <Math mode="inline" xml:id="C1.S10.SS3.p2.m15">-\infty</Math> ) with <Math mode="inline" xml:id="C1.S10.SS3.p2.m16">a_{-n}\not=0</Math> , then <Math mode="inline" xml:id="C1.S10.SS3.p2.m17">z_{0}</Math> is a pole of order (or multiplicity) <Math mode="inline" xml:id="C1.S10.SS3.p2.m18">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="27" xml:id="C1.S10.SS3.p2.s6">
+Lastly, if <Math mode="inline" xml:id="C1.S10.SS3.p2.m19">a_{n}\not=0</Math> for infinitely many negative <Math mode="inline" xml:id="C1.S10.SS3.p2.m20">n</Math> , then <Math mode="inline" xml:id="C1.S10.SS3.p2.m21">z_{0}</Math> is an isolated essential singularity.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S10.SS3.p3.s1">
+The singularities of <Math mode="inline" xml:id="C1.S10.SS3.p3.m1">f(z)</Math> at infinity are classified in the same way as the singularities of <Math mode="inline" xml:id="C1.S10.SS3.p3.m2">f(1/z)</Math> at <Math mode="inline" xml:id="C1.S10.SS3.p3.m3">z=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S10.SS3.p4.s1">
+An isolated singularity <Math mode="inline" xml:id="C1.S10.SS3.p4.m1">z_{0}</Math> is always removable when <Math mode="inline" xml:id="C1.S10.SS3.p4.m2">\lim_{z\to z_{0}}f(z)</Math> exists, for example <Math mode="inline" xml:id="C1.S10.SS3.p4.m3">(\sin z)/z</Math> at <Math mode="inline" xml:id="C1.S10.SS3.p4.m4">z=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S10.SS3.p5.s1">
+The coefficient <Math mode="inline" xml:id="C1.S10.SS3.p5.m1">a_{-1}</Math> of <Math mode="inline" xml:id="C1.S10.SS3.p5.m2">(z-z_{0})^{-1}</Math> in the Laurent series for <Math mode="inline" xml:id="C1.S10.SS3.p5.m3">f(z)</Math> is called the residue of <Math mode="inline" xml:id="C1.S10.SS3.p5.m5">f(z)</Math> at <Math mode="inline" xml:id="C1.S10.SS3.p5.m6">z_{0}</Math> , and denoted by <Math mode="inline" xml:id="C1.S10.SS3.p5.m7">\Residue_{z=z_{0}}[f(z)]</Math> , <Math mode="inline" xml:id="C1.S10.SS3.p5.m8">\Residue\limits_{z=z_{0}}[f(z)]</Math> , or (when there is no ambiguity) <Math mode="inline" xml:id="C1.S10.SS3.p5.m9">\Residue[f(z)]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C1.S10.SS3.p6.s1">
+A function whose only singularities, other than the point at infinity, are poles is called a meromorphic function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C1.S10.SS3.p6.s2">
+If the poles are infinite in number, then the point at infinity is called anessential singularity: it is the limit point of the poles.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C1.S10.Px4">
+<title>Picard’s Theorem</title>    
+<para xml:id="C1.S10.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C1.S10.Px4.p1.s1">
+In any neighborhood of an isolated essential singularity, however small, an analytic function assumes every value in <Math mode="inline" xml:id="C1.S10.Px4.p1.m1">\mathbb{C}</Math> with at most one exception.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS4">
+<title>Residue Theorem</title>          
+<para xml:id="C1.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C1.S10.SS4.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.SS4.p1.m1">f(z)</Math> is analytic within a simple closed contour <Math mode="inline" xml:id="C1.S10.SS4.p1.m2">C</Math> , and continuous within and on <Math mode="inline" xml:id="C1.S10.SS4.p1.m3">C</Math> —except in both instances for a finite number of singularities within <Math mode="inline" xml:id="C1.S10.SS4.p1.m4">C</Math> —then <Math equation-number="1.10.8" mode="display" xml:id="C1.S10.E8">\frac{1}{2\pi i}\int_{C}f(z)\mathrm{d}z=\mbox{sum of the residues of $f(z)$ within $C$}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C1.S10.SS4.p1.s2">
+Here and elsewhere in this subsection the path <Math mode="inline" xml:id="C1.S10.SS4.p1.m5">C</Math> is described in the positive sense.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px5">
+<title>Phase (or Argument) Principle</title>      
+<para xml:id="C1.S10.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C1.S10.Px5.p1.s1">
+If the singularities within <Math mode="inline" xml:id="C1.S10.Px5.p1.m1">C</Math> are poles and <Math mode="inline" xml:id="C1.S10.Px5.p1.m2">f(z)</Math> is analytic and nonvanishing on <Math mode="inline" xml:id="C1.S10.Px5.p1.m3">C</Math> , then <Math equation-number="1.10.9" mode="display" xml:id="C1.S10.E9">N-P=\frac{1}{2\pi i}\int_{C}\frac{f^{\prime}(z)}{f(z)}\mathrm{d}z=\frac{1}{2 \pi}\Delta_{C}(\operatorname{ph}f(z)),</Math> where <Math mode="inline" xml:id="C1.S10.Px5.p1.m4">N</Math> and <Math mode="inline" xml:id="C1.S10.Px5.p1.m5">P</Math> are respectively the numbers of zeros and poles, counting multiplicity, of <Math mode="inline" xml:id="C1.S10.Px5.p1.m6">f</Math> within <Math mode="inline" xml:id="C1.S10.Px5.p1.m7">C</Math> , and <Math mode="inline" xml:id="C1.S10.Px5.p1.m8">\Delta_{C}(\operatorname{ph}f(z))</Math> is the change in any continuous branch of <Math mode="inline" xml:id="C1.S10.Px5.p1.m9">\operatorname{ph}\left(f(z)\right)</Math> as <Math mode="inline" xml:id="C1.S10.Px5.p1.m10">z</Math> passes once around <Math mode="inline" xml:id="C1.S10.Px5.p1.m11">C</Math> in the positive sense.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C1.S10.Px5.p1.s2">
+For examples of applications seeOlver (1997b, pp. 252–254).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C1.S10.Px5.p2.s1">
+In addition, <Math equation-number="1.10.10" mode="display" xml:id="C1.S10.E10">\frac{1}{2\pi i}\int_{C}\frac{zf^{\prime}(z)}{f(z)}\mathrm{d}z=\mbox{(sum of locations of zeros)}-\mbox{(sum of locations of poles)},</Math> each location again being counted with multiplicity equal to that of the corresponding zero or pole.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px6">
+<title>Rouché’s Theorem</title>    
+<para xml:id="C1.S10.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C1.S10.Px6.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px6.p1.m1">f(z)</Math> and <Math mode="inline" xml:id="C1.S10.Px6.p1.m2">g(z)</Math> are analytic on and inside a simple closed contour <Math mode="inline" xml:id="C1.S10.Px6.p1.m3">C</Math> , and <Math mode="inline" xml:id="C1.S10.Px6.p1.m4">|g(z)|&lt;|f(z)|</Math> on <Math mode="inline" xml:id="C1.S10.Px6.p1.m5">C</Math> , then <Math mode="inline" xml:id="C1.S10.Px6.p1.m6">f(z)</Math> and <Math mode="inline" xml:id="C1.S10.Px6.p1.m7">f(z)+g(z)</Math> have the same number of zeros inside <Math mode="inline" xml:id="C1.S10.Px6.p1.m8">C</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS5">
+<title>Maximum-Modulus Principle</title>         
+<paragraph xml:id="C1.S10.Px7">
+<title>Analytic Functions</title>    
+<para xml:id="C1.S10.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C1.S10.Px7.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px7.p1.m1">f(z)</Math> is analytic in a domain <Math mode="inline" xml:id="C1.S10.Px7.p1.m2">D</Math> , <Math mode="inline" xml:id="C1.S10.Px7.p1.m3">z_{0}\in D</Math> and <Math mode="inline" xml:id="C1.S10.Px7.p1.m4">|f(z)|\leq|f(z_{0})|</Math> for all <Math mode="inline" xml:id="C1.S10.Px7.p1.m5">z\in D</Math> , then <Math mode="inline" xml:id="C1.S10.Px7.p1.m6">f(z)</Math> is a constant in <Math mode="inline" xml:id="C1.S10.Px7.p1.m7">D</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C1.S10.Px7.p2.s1">
+Let <Math mode="inline" xml:id="C1.S10.Px7.p2.m1">D</Math> be a bounded domain with boundary <Math mode="inline" xml:id="C1.S10.Px7.p2.m2">\partial D</Math> and let <Math mode="inline" xml:id="C1.S10.Px7.p2.m3">\overline{D}=D\cup\partial D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C1.S10.Px7.p2.s2">
+If <Math mode="inline" xml:id="C1.S10.Px7.p2.m4">f(z)</Math> is continuous on <Math mode="inline" xml:id="C1.S10.Px7.p2.m5">\overline{D}</Math> and analytic in <Math mode="inline" xml:id="C1.S10.Px7.p2.m6">D</Math> , then <Math mode="inline" xml:id="C1.S10.Px7.p2.m7">|f(z)|</Math> attains its maximum on <Math mode="inline" xml:id="C1.S10.Px7.p2.m8">\partial D</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px8">
+<title>Harmonic Functions</title>        
+<para xml:id="C1.S10.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C1.S10.Px8.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px8.p1.m1">u(z)</Math> is harmonic in <Math mode="inline" xml:id="C1.S10.Px8.p1.m2">D</Math> , <Math mode="inline" xml:id="C1.S10.Px8.p1.m3">z_{0}\in D</Math> , and <Math mode="inline" xml:id="C1.S10.Px8.p1.m4">u(z)\leq u(z_{0})</Math> for all <Math mode="inline" xml:id="C1.S10.Px8.p1.m5">z\in D</Math> , then <Math mode="inline" xml:id="C1.S10.Px8.p1.m6">u(z)</Math> is constant in <Math mode="inline" xml:id="C1.S10.Px8.p1.m7">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C1.S10.Px8.p1.s2">
+Moreover, if <Math mode="inline" xml:id="C1.S10.Px8.p1.m8">D</Math> is bounded and <Math mode="inline" xml:id="C1.S10.Px8.p1.m9">u(z)</Math> is continuous on <Math mode="inline" xml:id="C1.S10.Px8.p1.m10">\overline{D}</Math> and harmonic in <Math mode="inline" xml:id="C1.S10.Px8.p1.m11">D</Math> , then <Math mode="inline" xml:id="C1.S10.Px8.p1.m12">u(z)</Math> is maximum at some point on <Math mode="inline" xml:id="C1.S10.Px8.p1.m13">\partial D</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px9">
+<title>Schwarz’s Lemma</title>     
+<para xml:id="C1.S10.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C1.S10.Px9.p1.s1">
+In <Math mode="inline" xml:id="C1.S10.Px9.p1.m1">|z|&lt;R</Math> , if <Math mode="inline" xml:id="C1.S10.Px9.p1.m2">f(z)</Math> is analytic, <Math mode="inline" xml:id="C1.S10.Px9.p1.m3">|f(z)|\leq M</Math> , and <Math mode="inline" xml:id="C1.S10.Px9.p1.m4">f(0)=0</Math> , then <Math equation-number="1.10.11" mode="display" xml:id="C1.S10.E11">|f(z)|\leq\frac{M|z|}{R}\;\mbox{ and }\;|f^{\prime}(0)|\leq\frac{M}{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C1.S10.Px9.p1.s2">
+Equalities hold iff <Math mode="inline" xml:id="C1.S10.Px9.p1.m5">f(z)=Az</Math> , where <Math mode="inline" xml:id="C1.S10.Px9.p1.m6">A</Math> is a constant such that <Math mode="inline" xml:id="C1.S10.Px9.p1.m7">\left|A\right|=M/R</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS6">
+<title>Multivalued Functions</title>               
+<para xml:id="C1.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C1.S10.SS6.p1.s1">
+Functions which have more than one value at a given point <Math mode="inline" xml:id="C1.S10.SS6.p1.m1">z</Math> are calledmultivalued (or many-valued) functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C1.S10.SS6.p1.s2">
+Let <Math mode="inline" xml:id="C1.S10.SS6.p1.m2">F(z)</Math> be a multivalued function and <Math mode="inline" xml:id="C1.S10.SS6.p1.m3">D</Math> be a domain.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C1.S10.SS6.p1.s3">
+If we can assign a unique value <Math mode="inline" xml:id="C1.S10.SS6.p1.m4">f(z)</Math> to <Math mode="inline" xml:id="C1.S10.SS6.p1.m5">F(z)</Math> at each point of <Math mode="inline" xml:id="C1.S10.SS6.p1.m6">D</Math> , and <Math mode="inline" xml:id="C1.S10.SS6.p1.m7">f(z)</Math> is analytic on <Math mode="inline" xml:id="C1.S10.SS6.p1.m8">D</Math> , then <Math mode="inline" xml:id="C1.S10.SS6.p1.m9">f(z)</Math> is a branch of <Math mode="inline" xml:id="C1.S10.SS6.p1.m10">F(z)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px10">
+<title>Example</title>   
+<para xml:id="C1.S10.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C1.S10.Px10.p1.s1">
+ <Math mode="inline" xml:id="C1.S10.Px10.p1.m1">F(z)=\sqrt{z}</Math> is two-valued for <Math mode="inline" xml:id="C1.S10.Px10.p1.m2">z\not=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C1.S10.Px10.p1.s2">
+If <Math mode="inline" xml:id="C1.S10.Px10.p1.m3">D=\mathbb{C}\setminus(-\infty,0]</Math> and <Math mode="inline" xml:id="C1.S10.Px10.p1.m4">z=re^{i\theta}</Math> , then one branch is <Math mode="inline" xml:id="C1.S10.Px10.p1.m5">\sqrt{r}e^{i\theta/2}</Math> , the other branch is <Math mode="inline" xml:id="C1.S10.Px10.p1.m6">-\sqrt{r}e^{i\theta/2}</Math> , with <Math mode="inline" xml:id="C1.S10.Px10.p1.m7">-\pi&lt;\theta&lt;\pi</Math> in both cases.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C1.S10.Px10.p1.s3">
+Similarly if <Math mode="inline" xml:id="C1.S10.Px10.p1.m8">D=\mathbb{C}\setminus[0,\infty)</Math> , then one branch is <Math mode="inline" xml:id="C1.S10.Px10.p1.m9">\sqrt{r}e^{i\theta/2}</Math> , the other branch is <Math mode="inline" xml:id="C1.S10.Px10.p1.m10">-\sqrt{r}e^{i\theta/2}</Math> , with <Math mode="inline" xml:id="C1.S10.Px10.p1.m11">0&lt;\theta&lt;2\pi</Math> in both cases.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C1.S10.Px10.p2.s1">
+A cut domain is one from which the points on finitely many nonintersecting simple contours (§1.9(iii)) have been removed. Each contour is called a cut.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C1.S10.Px10.p2.s2">
+A cut neighborhood is formed by deleting a ray emanating from the center.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C1.S10.Px10.p2.s3">
+(Or more generally, a simple contour that starts at the center and terminates on the boundary.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C1.S10.Px10.p3.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.Px10.p3.m1">F(z)</Math> is multivalued and <Math mode="inline" xml:id="C1.S10.Px10.p3.m2">a</Math> is a point such that there exists a branch of <Math mode="inline" xml:id="C1.S10.Px10.p3.m3">F(z)</Math> in a cut neighborhood of <Math mode="inline" xml:id="C1.S10.Px10.p3.m4">a</Math> , but there does not exist a branch of <Math mode="inline" xml:id="C1.S10.Px10.p3.m5">F(z)</Math> in any punctured neighborhood of <Math mode="inline" xml:id="C1.S10.Px10.p3.m6">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C1.S10.Px10.p3.s2">
+Then <Math mode="inline" xml:id="C1.S10.Px10.p3.m7">a</Math> is abranch point of <Math mode="inline" xml:id="C1.S10.Px10.p3.m8">F(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="58" xml:id="C1.S10.Px10.p3.s3">
+For example, <Math mode="inline" xml:id="C1.S10.Px10.p3.m9">z=0</Math> is a branch point of <Math mode="inline" xml:id="C1.S10.Px10.p3.m10">\sqrt{z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C1.S10.Px10.p4.s1">
+Branches can be constructed in two ways:
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C1.S10.Px10.p5.s1">
+(a) By introducing appropriate cuts from the branch points and restricting <Math mode="inline" xml:id="C1.S10.Px10.p5.m1">F(z)</Math> to be single-valued in the cut plane (or domain).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C1.S10.Px10.p6.s1">
+(b) By specifying the value of <Math mode="inline" xml:id="C1.S10.Px10.p6.m1">F(z)</Math> at a point <Math mode="inline" xml:id="C1.S10.Px10.p6.m2">z_{0}</Math> (not a branch point), and requiring <Math mode="inline" xml:id="C1.S10.Px10.p6.m3">F(z)</Math> to be continuous on any path that begins at <Math mode="inline" xml:id="C1.S10.Px10.p6.m4">z_{0}</Math> and does not pass through any branch points or other singularities of <Math mode="inline" xml:id="C1.S10.Px10.p6.m5">F(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px10.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C1.S10.Px10.p7.s1">
+If the path circles a branch point at <Math mode="inline" xml:id="C1.S10.Px10.p7.m1">z=a</Math> , <Math mode="inline" xml:id="C1.S10.Px10.p7.m2">k</Math> times in the positive sense, and returns to <Math mode="inline" xml:id="C1.S10.Px10.p7.m3">z_{0}</Math> without encircling any other branch point, then its value is denoted conventionally as <Math mode="inline" xml:id="C1.S10.Px10.p7.m4">F((z_{0}-a)e^{2k\pi i}+a)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px11">
+<title>Example</title>    
+<para xml:id="C1.S10.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C1.S10.Px11.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.Px11.p1.m1">\alpha</Math> and <Math mode="inline" xml:id="C1.S10.Px11.p1.m2">\beta</Math> be real or complex numbers that are not integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C1.S10.Px11.p1.s2">
+The function <Math mode="inline" xml:id="C1.S10.Px11.p1.m3">F(z)=(1-z)^{\alpha}(1+z)^{\beta}</Math> is many-valued with branch points at <Math mode="inline" xml:id="C1.S10.Px11.p1.m4">\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C1.S10.Px11.p1.s3">
+Branches of <Math mode="inline" xml:id="C1.S10.Px11.p1.m5">F(z)</Math> can be defined, for example, in the cut plane <Math mode="inline" xml:id="C1.S10.Px11.p1.m6">D</Math> obtained from <Math mode="inline" xml:id="C1.S10.Px11.p1.m7">\mathbb{C}</Math> by removing the real axis from <Math mode="inline" xml:id="C1.S10.Px11.p1.m8">1</Math> to <Math mode="inline" xml:id="C1.S10.Px11.p1.m9">\infty</Math> and from <Math mode="inline" xml:id="C1.S10.Px11.p1.m10">-1</Math> to <Math mode="inline" xml:id="C1.S10.Px11.p1.m11">-\infty</Math> ; see Figure 1.10.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="66" xml:id="C1.S10.Px11.p1.s4">
+One such branch is obtained by assigning <Math mode="inline" xml:id="C1.S10.Px11.p1.m12">(1-z)^{\alpha}</Math> and <Math mode="inline" xml:id="C1.S10.Px11.p1.m13">(1+z)^{\beta}</Math> their principal values (§4.2(iv)).
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="67" xml:id="C1.S10.F1.s1">
+Figure 1.10.1: Domain <Math mode="inline" xml:id="C1.S10.F1.m2">D</Math> .
+</sentence>  
+<para xml:id="C1.S10.Px11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C1.S10.Px11.p2.s1">
+Alternatively, take <Math mode="inline" xml:id="C1.S10.Px11.p2.m1">z_{0}</Math> to be any point in <Math mode="inline" xml:id="C1.S10.Px11.p2.m2">D</Math> and set <Math mode="inline" xml:id="C1.S10.Px11.p2.m3">F(z_{0})=e^{\alpha\ln\left(1-z_{0}\right)}e^{\beta\ln\left(1+z_{0}\right)}</Math> where the logarithms assume their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C1.S10.Px11.p2.s2">
+(Thus if <Math mode="inline" xml:id="C1.S10.Px11.p2.m4">z_{0}</Math> is in the interval <Math mode="inline" xml:id="C1.S10.Px11.p2.m5">(-1,1)</Math> , then the logarithms are real.)Then the value of <Math mode="inline" xml:id="C1.S10.Px11.p2.m6">F(z)</Math> at any other point is obtained by analytic continuation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C1.S10.Px11.p3.s1">
+Thus if <Math mode="inline" xml:id="C1.S10.Px11.p3.m1">F(z)</Math> is continued along a path that circles <Math mode="inline" xml:id="C1.S10.Px11.p3.m2">z=1</Math> <Math mode="inline" xml:id="C1.S10.Px11.p3.m3">m</Math> times in the positive sense and returns to <Math mode="inline" xml:id="C1.S10.Px11.p3.m4">z_{0}</Math> without circling <Math mode="inline" xml:id="C1.S10.Px11.p3.m5">z=-1</Math> , then <Math mode="inline" xml:id="C1.S10.Px11.p3.m6">F((z_{0}-1)e^{2m\pi i}+1)=e^{\alpha\ln\left(1-z_{0}\right)}e^{\beta\ln\left(1+ z_{0}\right)}e^{2\pi im\alpha}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C1.S10.Px11.p3.s2">
+If the path also circles <Math mode="inline" xml:id="C1.S10.Px11.p3.m7">z=-1</Math> <Math mode="inline" xml:id="C1.S10.Px11.p3.m8">n</Math> times in the clockwise or negative sense before returning to <Math mode="inline" xml:id="C1.S10.Px11.p3.m9">z_{0}</Math> , then the value of <Math mode="inline" xml:id="C1.S10.Px11.p3.m10">F(z_{0})</Math> becomes <Math mode="inline" xml:id="C1.S10.Px11.p3.m11">e^{\alpha\ln\left(1-z_{0}\right)}e^{\beta\ln\left(1+z_{0}\right)}e^{2\pi im \alpha}e^{-2\pi in\beta}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS7">
+<title>Inverse Functions</title>           
+<paragraph xml:id="C1.S10.Px12">
+<title>Lagrange Inversion Theorem</title>     
+<para xml:id="C1.S10.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C1.S10.Px12.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.Px12.p1.m1">f(z)</Math> is analytic at <Math mode="inline" xml:id="C1.S10.Px12.p1.m2">z=z_{0}</Math> , <Math mode="inline" xml:id="C1.S10.Px12.p1.m3">f^{\prime}(z_{0})\not=0</Math> , and <Math mode="inline" xml:id="C1.S10.Px12.p1.m4">f(z_{0})=w_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="73" xml:id="C1.S10.Px12.p1.s2">
+Then the equation <Math equation-number="1.10.12" mode="display" xml:id="C1.S10.E12">f(z)=w</Math> has a unique solution <Math mode="inline" xml:id="C1.S10.Px12.p1.m5">z=F(w)</Math> analytic at <Math mode="inline" xml:id="C1.S10.Px12.p1.m6">w=w_{0}</Math> , and <Math equation-number="1.10.13" mode="display" xml:id="C1.S10.E13">F(w)=z_{0}+\sum^{\infty}_{n=1}F_{n}(w-w_{0})^{n}</Math> in a neighborhood of <Math mode="inline" xml:id="C1.S10.Px12.p1.m7">w_{0}</Math> , where <Math mode="inline" xml:id="C1.S10.Px12.p1.m8">nF_{n}</Math> is the residue of <Math mode="inline" xml:id="C1.S10.Px12.p1.m9">1/(f(z)-f(z_{0}))^{n}</Math> at <Math mode="inline" xml:id="C1.S10.Px12.p1.m10">z=z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="74" xml:id="C1.S10.Px12.p1.s3">
+(In other words <Math mode="inline" xml:id="C1.S10.Px12.p1.m11">nF_{n}</Math> is the coefficient of <Math mode="inline" xml:id="C1.S10.Px12.p1.m12">(z-z_{0})^{-1}</Math> in the Laurent expansion of <Math mode="inline" xml:id="C1.S10.Px12.p1.m13">1/(f(z)-f(z_{0}))^{n}</Math> in powers of <Math mode="inline" xml:id="C1.S10.Px12.p1.m14">(z-z_{0})</Math> ; compare §1.10(iii).)
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.Px12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C1.S10.Px12.p2.s1">
+Furthermore, if <Math mode="inline" xml:id="C1.S10.Px12.p2.m1">g(z)</Math> is analytic at <Math mode="inline" xml:id="C1.S10.Px12.p2.m2">z_{0}</Math> , then <Math equation-number="1.10.14" mode="display" xml:id="C1.S10.E14">g(F(w))=g(z_{0})+\sum^{\infty}_{n=1}G_{n}(w-w_{0})^{n},</Math> where <Math mode="inline" xml:id="C1.S10.Px12.p2.m3">nG_{n}</Math> is the residue of <Math mode="inline" xml:id="C1.S10.Px12.p2.m4">g^{\prime}(z)/(f(z)-f(z_{0}))^{n}</Math> at <Math mode="inline" xml:id="C1.S10.Px12.p2.m5">z=z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px13">
+<title>Extended Inversion Theorem</title>     
+<para xml:id="C1.S10.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C1.S10.Px13.p1.s1">
+Suppose that <Math equation-number="1.10.15" mode="display" xml:id="C1.S10.E15">f(z)=f(z_{0})+\sum^{\infty}_{n=0}f_{n}(z-z_{0})^{\mu+n},</Math> where <Math mode="inline" xml:id="C1.S10.Px13.p1.m1">\mu&gt;0</Math> , <Math mode="inline" xml:id="C1.S10.Px13.p1.m2">f_{0}\not=0</Math> , and the series converges in a neighborhood of <Math mode="inline" xml:id="C1.S10.Px13.p1.m3">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C1.S10.Px13.p1.s2">
+(For example, when <Math mode="inline" xml:id="C1.S10.Px13.p1.m4">\mu</Math> is an integer <Math mode="inline" xml:id="C1.S10.Px13.p1.m5">f(z)-f(z_{0})</Math> has a zero of order <Math mode="inline" xml:id="C1.S10.Px13.p1.m6">\mu</Math> at <Math mode="inline" xml:id="C1.S10.Px13.p1.m7">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="78" xml:id="C1.S10.Px13.p1.s3">
+) Let <Math mode="inline" xml:id="C1.S10.Px13.p1.m8">w_{0}=f(z_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="79" xml:id="C1.S10.Px13.p1.s4">
+Then (1.10.12) has a solution <Math mode="inline" xml:id="C1.S10.Px13.p1.m9">z=F(w)</Math> , where <Math equation-number="1.10.16" mode="display" xml:id="C1.S10.E16">F(w)=z_{0}+\sum^{\infty}_{n=1}F_{n}(w-w_{0})^{n/\mu}</Math> in a neighborhood of <Math mode="inline" xml:id="C1.S10.Px13.p1.m10">w_{0}</Math> , <Math mode="inline" xml:id="C1.S10.Px13.p1.m11">nF_{n}</Math> being the residue of <Math mode="inline" xml:id="C1.S10.Px13.p1.m12">1/(f(z)-f(z_{0}))^{n/\mu}</Math> at <Math mode="inline" xml:id="C1.S10.Px13.p1.m13">z=z_{0}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S10.Px13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C1.S10.Px13.p2.s1">
+It should be noted that different branches of <Math mode="inline" xml:id="C1.S10.Px13.p2.m1">(w-w_{0})^{1/\mu}</Math> used in forming <Math mode="inline" xml:id="C1.S10.Px13.p2.m2">(w-w_{0})^{n/\mu}</Math> in (1.10.16)give rise to different solutions of (1.10.12).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="81" xml:id="C1.S10.Px13.p2.s2">
+Also, if in addition <Math mode="inline" xml:id="C1.S10.Px13.p2.m3">g(z)</Math> is analytic at <Math mode="inline" xml:id="C1.S10.Px13.p2.m4">z_{0}</Math> , then <Math equation-number="1.10.17" mode="display" xml:id="C1.S10.E17">g(F(w))=g(z_{0})+\sum^{\infty}_{n=1}G_{n}(w-w_{0})^{n/\mu},</Math> where <Math mode="inline" xml:id="C1.S10.Px13.p2.m5">nG_{n}</Math> is the residue of <Math mode="inline" xml:id="C1.S10.Px13.p2.m6">g^{\prime}(z)/(f(z)-f(z_{0}))^{n/\mu}</Math> at <Math mode="inline" xml:id="C1.S10.Px13.p2.m7">z=z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS8">
+<title>Functions Defined by Contour Integrals</title>          
+<para xml:id="C1.S10.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C1.S10.SS8.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.SS8.p1.m1">D</Math> be a domain and <Math mode="inline" xml:id="C1.S10.SS8.p1.m2">[a,b]</Math> be a closed finite segment of the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="83" xml:id="C1.S10.SS8.p1.s2">
+Assume that for each <Math mode="inline" xml:id="C1.S10.SS8.p1.m3">t\in[a,b]</Math> , <Math mode="inline" xml:id="C1.S10.SS8.p1.m4">f(z,t)</Math> is an analytic function of <Math mode="inline" xml:id="C1.S10.SS8.p1.m5">z</Math> in <Math mode="inline" xml:id="C1.S10.SS8.p1.m6">D</Math> , and also that <Math mode="inline" xml:id="C1.S10.SS8.p1.m7">f(z,t)</Math> is a continuous function of both variables.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="84" xml:id="C1.S10.SS8.p1.s3">
+Then <Math equation-number="1.10.18" mode="display" xml:id="C1.S10.E18">F(z)=\int^{b}_{a}f(z,t)\mathrm{d}t</Math> is analytic in <Math mode="inline" xml:id="C1.S10.SS8.p1.m8">D</Math> and its derivatives of all orders can be found by differentiating under the sign of integration.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C1.S10.SS8.p2.s1">
+This result is also true when <Math mode="inline" xml:id="C1.S10.SS8.p2.m1">b=\infty</Math> , or when <Math mode="inline" xml:id="C1.S10.SS8.p2.m2">f(z,t)</Math> has a singularity at <Math mode="inline" xml:id="C1.S10.SS8.p2.m3">t=b</Math> , with the following conditions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="86" xml:id="C1.S10.SS8.p2.s2">
+For each <Math mode="inline" xml:id="C1.S10.SS8.p2.m4">t\in[a,b)</Math> , <Math mode="inline" xml:id="C1.S10.SS8.p2.m5">f(z,t)</Math> is analytic in <Math mode="inline" xml:id="C1.S10.SS8.p2.m6">D</Math> ; <Math mode="inline" xml:id="C1.S10.SS8.p2.m7">f(z,t)</Math> is a continuous function of both variables when <Math mode="inline" xml:id="C1.S10.SS8.p2.m8">z\in D</Math> and <Math mode="inline" xml:id="C1.S10.SS8.p2.m9">t\in[a,b)</Math> ; the integral (1.10.18)converges at <Math mode="inline" xml:id="C1.S10.SS8.p2.m10">b</Math> , and this convergence is uniform with respect to <Math mode="inline" xml:id="C1.S10.SS8.p2.m11">z</Math> in every compact subset <Math mode="inline" xml:id="C1.S10.SS8.p2.m12">S</Math> of <Math mode="inline" xml:id="C1.S10.SS8.p2.m13">D</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C1.S10.SS8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C1.S10.SS8.p3.s1">
+The last condition means that given <Math mode="inline" xml:id="C1.S10.SS8.p3.m1">\epsilon</Math> ( <Math mode="inline" xml:id="C1.S10.SS8.p3.m2">&gt;0</Math> ) there exists a number <Math mode="inline" xml:id="C1.S10.SS8.p3.m3">a_{0}\in[a,b)</Math> that is independent of <Math mode="inline" xml:id="C1.S10.SS8.p3.m4">z</Math> and is such that <Math equation-number="1.10.19" mode="display" xml:id="C1.S10.E19">\left|\int_{a_{1}}^{b}f(z,t)\mathrm{d}t\right|&lt;\epsilon,</Math> for all <Math mode="inline" xml:id="C1.S10.SS8.p3.m5">a_{1}\in[a_{0},b)</Math> and all <Math mode="inline" xml:id="C1.S10.SS8.p3.m6">z\in S</Math> ; compare §1.5(iv).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px14">
+<title><Math mode="inline" xml:id="C1.S10.Px14.m1">M</Math>-test</title>  
+ 
+<para xml:id="C1.S10.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C1.S10.Px14.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px14.p1.m1">|f(z,t)|\leq M(t)</Math> for <Math mode="inline" xml:id="C1.S10.Px14.p1.m2">z\in S</Math> and <Math mode="inline" xml:id="C1.S10.Px14.p1.m3">\int^{b}_{a}M(t)\mathrm{d}t</Math> converges, then the integral (1.10.18)converges uniformly and absolutely in <Math mode="inline" xml:id="C1.S10.Px14.p1.m4">S</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS9">
+<title>Infinite Products</title>           
+<para xml:id="C1.S10.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C1.S10.SS9.p1.s1">
+Let <Math mode="inline" xml:id="C1.S10.SS9.p1.m1">p_{k,m}=\prod_{n=k}^{m}(1+a_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="90" xml:id="C1.S10.SS9.p1.s2">
+If for some <Math mode="inline" xml:id="C1.S10.SS9.p1.m2">k\geq 1</Math> , <Math mode="inline" xml:id="C1.S10.SS9.p1.m3">p_{k,m}\to p_{k}\not=0</Math> as <Math mode="inline" xml:id="C1.S10.SS9.p1.m4">m\to\infty</Math> , then we say that the infinite product <Math mode="inline" xml:id="C1.S10.SS9.p1.m5">\prod^{\infty}_{n=1}(1+a_{n})</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="91" xml:id="C1.S10.SS9.p1.s3">
+(The integer <Math mode="inline" xml:id="C1.S10.SS9.p1.m6">k</Math> may be greater than one to allow for a finite number of zero factors.)The convergence of the product is absolute if <Math mode="inline" xml:id="C1.S10.SS9.p1.m7">\prod^{\infty}_{n=1}(1+|a_{n}|)</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="92" xml:id="C1.S10.SS9.p1.s4">
+The product <Math mode="inline" xml:id="C1.S10.SS9.p1.m8">\prod^{\infty}_{n=1}(1+a_{n})</Math> , with <Math mode="inline" xml:id="C1.S10.SS9.p1.m9">a_{n}\not=-1</Math> for all <Math mode="inline" xml:id="C1.S10.SS9.p1.m10">n</Math> , converges iff <Math mode="inline" xml:id="C1.S10.SS9.p1.m11">\sum^{\infty}_{n=1}\ln\left(1+a_{n}\right)</Math> converges; and it converges absolutely iff <Math mode="inline" xml:id="C1.S10.SS9.p1.m12">\sum^{\infty}_{n=1}|a_{n}|</Math> converges.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C1.S10.SS9.p2.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.SS9.p2.m1">a_{n}=a_{n}(z)</Math> , <Math mode="inline" xml:id="C1.S10.SS9.p2.m2">z\in D</Math> , a domain.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C1.S10.SS9.p2.s2">
+The convergence of the infinite product is uniform if the sequence of partial products converges uniformly.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px15">
+<title><Math mode="inline" xml:id="C1.S10.Px15.m1">M</Math>-test</title>      
+<para xml:id="C1.S10.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C1.S10.Px15.p1.s1">
+Suppose that <Math mode="inline" xml:id="C1.S10.Px15.p1.m1">a_{n}(z)</Math> are analytic functions in <Math mode="inline" xml:id="C1.S10.Px15.p1.m2">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C1.S10.Px15.p1.s2">
+If there is an <Math mode="inline" xml:id="C1.S10.Px15.p1.m3">N</Math> , independent of <Math mode="inline" xml:id="C1.S10.Px15.p1.m4">z\in D</Math> , such that <Math equation-number="1.10.20" mode="display" xml:id="C1.S10.E20">|\ln\left(1+a_{n}(z)\right)|\leq M_{n}, if n\geq N,</Math> and <Math equation-number="1.10.21" mode="display" xml:id="C1.S10.E21">\sum^{\infty}_{n=1}M_{n}&lt;\infty,</Math> then the product <Math mode="inline" xml:id="C1.S10.Px15.p1.m5">\prod^{\infty}_{n=1}(1+a_{n}(z))</Math> converges uniformly to an analytic function <Math mode="inline" xml:id="C1.S10.Px15.p1.m6">p(z)</Math> in <Math mode="inline" xml:id="C1.S10.Px15.p1.m7">D</Math> , and <Math mode="inline" xml:id="C1.S10.Px15.p1.m8">p(z)=0</Math> only when at least one of the factors <Math mode="inline" xml:id="C1.S10.Px15.p1.m9">1+a_{n}(z)</Math> is zero in <Math mode="inline" xml:id="C1.S10.Px15.p1.m10">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="97" xml:id="C1.S10.Px15.p1.s3">
+This conclusion remains true if, in place of (1.10.20),
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="98" xml:id="C1.S10.Px15.p1.s4">
+<Math mode="inline" xml:id="C1.S10.Px15.p1.m11">|a_{n}(z)|\leq M_{n}</Math> for all <Math mode="inline" xml:id="C1.S10.Px15.p1.m12">n</Math> , and again <Math mode="inline" xml:id="C1.S10.Px15.p1.m13">\sum^{\infty}_{n=1}M_{n}&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S10.Px16">
+<title>Weierstrass Product</title>     
+<para xml:id="C1.S10.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C1.S10.Px16.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px16.p1.m1">\{z_{n}\}</Math> is a sequence such that <Math mode="inline" xml:id="C1.S10.Px16.p1.m2">\sum^{\infty}_{n=1}|z_{n}^{-2}|</Math> is convergent, then <Math equation-number="1.10.22" mode="display" xml:id="C1.S10.E22">P(z)=\prod^{\infty}_{n=1}\left(1-\frac{z}{z_{n}}\right)e^{z/z_{n}}</Math> is an entire function with zeros at <Math mode="inline" xml:id="C1.S10.Px16.p1.m3">z_{n}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S10.SS10">
+<title>Infinite Partial Fractions</title>           
+<para xml:id="C1.S10.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C1.S10.SS10.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S10.SS10.p1.m1">D</Math> is a domain, and <Math equation-number="1.10.23" mode="display" xml:id="C1.S10.E23">F(z)=\prod^{\infty}_{n=1}a_{n}(z), if z\in D,</Math> where <Math mode="inline" xml:id="C1.S10.SS10.p1.m2">a_{n}(z)</Math> is analytic for all <Math mode="inline" xml:id="C1.S10.SS10.p1.m3">n\geq 1</Math> , and the convergence of the product is uniform in any compact subset of <Math mode="inline" xml:id="C1.S10.SS10.p1.m4">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="101" xml:id="C1.S10.SS10.p1.s2">
+Then <Math mode="inline" xml:id="C1.S10.SS10.p1.m5">F(z)</Math> is analytic in <Math mode="inline" xml:id="C1.S10.SS10.p1.m6">D</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S10.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C1.S10.SS10.p2.s1">
+If, also, <Math mode="inline" xml:id="C1.S10.SS10.p2.m1">a_{n}(z)\neq 0</Math> when <Math mode="inline" xml:id="C1.S10.SS10.p2.m2">n\geq 1</Math> and <Math mode="inline" xml:id="C1.S10.SS10.p2.m3">z\in D</Math> , then <Math mode="inline" xml:id="C1.S10.SS10.p2.m4">F(z)\neq 0</Math> on <Math mode="inline" xml:id="C1.S10.SS10.p2.m5">D</Math> and <Math equation-number="1.10.24" mode="display" xml:id="C1.S10.E24">\frac{F^{\prime}(z)}{F(z)}=\sum^{\infty}_{n=1}\frac{a_{n}^{\prime}(z)}{a_{n}(z )}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S10.Px17">
+<title>Mittag-Leffler’s Expansion</title>     
+<para xml:id="C1.S10.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C1.S10.Px17.p1.s1">
+If <Math mode="inline" xml:id="C1.S10.Px17.p1.m1">\{a_{n}\}</Math> and <Math mode="inline" xml:id="C1.S10.Px17.p1.m2">\{z_{n}\}</Math> are sequences such that <Math mode="inline" xml:id="C1.S10.Px17.p1.m3">z_{m}\neq z_{n}</Math> ( <Math mode="inline" xml:id="C1.S10.Px17.p1.m4">m\neq n</Math> ) and <Math mode="inline" xml:id="C1.S10.Px17.p1.m5">\sum^{\infty}_{n=1}|a_{n}z_{n}^{-2}|</Math> is convergent, then <Math equation-number="1.10.25" mode="display" xml:id="C1.S10.E25">f(z)=\sum^{\infty}_{n=1}a_{n}\left(\frac{1}{z-z_{n}}+\frac{1}{z_{n}}\right)</Math> is analytic in <Math mode="inline" xml:id="C1.S10.Px17.p1.m6">\mathbb{C}</Math> , except for simple poles at <Math mode="inline" xml:id="C1.S10.Px17.p1.m7">z=z_{n}</Math> of residue <Math mode="inline" xml:id="C1.S10.Px17.p1.m8">a_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

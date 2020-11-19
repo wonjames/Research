@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S17">
+<title>Integral and Series Representations of the Dirac Delta</title>        
+   
+<subsection xml:id="C1.S17.SS1">
+<title>Delta Sequences</title>           
+<para xml:id="C1.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S17.SS1.p1.s1">
+In applications in physics and engineering, the Dirac delta distribution (§1.16(iii)) is historically and customarily replaced by theDirac delta (or Dirac delta function) <Math mode="inline" xml:id="C1.S17.SS1.p1.m1">\delta\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C1.S17.SS1.p1.s2">
+This is an operator with the properties: <Math equation-number="1.17.1" mode="display" xml:id="C1.S17.E1">\delta\left(x\right)=0, if x\in\mathbb{R}, x\neq 0,</Math> and <Math equation-number="1.17.2" mode="display" xml:id="C1.S17.E2">\int_{-\infty}^{\infty}\delta\left(x-a\right)\phi(x)\mathrm{d}x=\phi(a), if a\in\mathbb{R},</Math> subject to certain conditions on the function <Math mode="inline" xml:id="C1.S17.SS1.p1.m3">\phi(x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C1.S17.SS1.p1.s3">
+From the mathematical standpoint the left-hand side of (1.17.2) can be interpreted as a generalized integral in the sense that <Math equation-number="1.17.3" mode="display" xml:id="C1.S17.E3">\lim_{n\to\infty}\int_{-\infty}^{\infty}\delta_{n}\left(x-a\right)\phi(x) \mathrm{d}x=\phi(a),</Math> for a suitably chosen sequence of functions <Math mode="inline" xml:id="C1.S17.SS1.p1.m4">\delta_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C1.S17.SS1.p1.m5">n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C1.S17.SS1.p1.s4">
+Such a sequence is called a delta sequence and we write, symbolically, <Math equation-number="1.17.4" mode="display" xml:id="C1.S17.E4">\lim_{n\to\infty}\delta_{n}\left(x\right)=\delta\left(x\right), if x\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S17.SS1.p2.s1">
+An example of a delta sequence is provided by <Math equation-number="1.17.5" mode="display" xml:id="C1.S17.E5">\delta_{n}\left(x-a\right)=\sqrt{\frac{n}{\pi}}e^{-n(x-a)^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C1.S17.SS1.p2.s2">
+In this case <Math equation-number="1.17.6" mode="display" xml:id="C1.S17.E6">\lim_{n\to\infty}\sqrt{\frac{n}{\pi}}\int_{-\infty}^{\infty}e^{-n(x-a)^{2}} \phi(x)\mathrm{d}x=\phi(a),</Math> for all functions <Math mode="inline" xml:id="C1.S17.SS1.p2.m1">\phi(x)</Math> that are continuous when <Math mode="inline" xml:id="C1.S17.SS1.p2.m2">x\in(-\infty,\infty)</Math> , and for each <Math mode="inline" xml:id="C1.S17.SS1.p2.m3">a</Math> , <Math mode="inline" xml:id="C1.S17.SS1.p2.m4">\int_{-\infty}^{\infty}e^{-n(x-a)^{2}}\phi(x)\mathrm{d}x</Math> converges absolutely for all sufficiently large values of <Math mode="inline" xml:id="C1.S17.SS1.p2.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C1.S17.SS1.p2.s3">
+The last condition is satisfied, for example, when <Math mode="inline" xml:id="C1.S17.SS1.p2.m6">\phi(x)=O\left(e^{\alpha x^{2}}\right)</Math> as <Math mode="inline" xml:id="C1.S17.SS1.p2.m7">x\to\pm\infty</Math> , where <Math mode="inline" xml:id="C1.S17.SS1.p2.m8">\alpha</Math> is a real constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S17.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S17.SS1.p3.s1">
+More generally, assume <Math mode="inline" xml:id="C1.S17.SS1.p3.m1">\phi(x)</Math> is piecewise continuous (§1.4(ii)) when <Math mode="inline" xml:id="C1.S17.SS1.p3.m2">x\in[-c,c]</Math> for any finite positive real value of <Math mode="inline" xml:id="C1.S17.SS1.p3.m3">c</Math> , and for each <Math mode="inline" xml:id="C1.S17.SS1.p3.m4">a</Math> , <Math mode="inline" xml:id="C1.S17.SS1.p3.m5">\int_{-\infty}^{\infty}e^{-n(x-a)^{2}}\phi(x)\mathrm{d}x</Math> converges absolutely for all sufficiently large values of <Math mode="inline" xml:id="C1.S17.SS1.p3.m6">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C1.S17.SS1.p3.s2">
+Then <Math equation-number="1.17.7" mode="display" xml:id="C1.S17.E7">\lim_{n\to\infty}\sqrt{\frac{n}{\pi}}\int_{-\infty}^{\infty}e^{-n(x-a)^{2}} \phi(x)\mathrm{d}x=\tfrac{1}{2}\phi(a-)+\tfrac{1}{2}\phi(a+)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S17.SS2">
+<title>Integral Representations</title>         
+ 
+<para xml:id="C1.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S17.SS2.p1.s1">
+Formal interchange of the order of integration in the Fourier integral formula ((1.14.1) and (1.14.4)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C1.S17.SS2.p1.s2">
+<Math equation-number="1.17.8" mode="display" xml:id="C1.S17.E8">\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-iat}\left(\int_{-\infty}^{\infty}\phi (x)e^{itx}\mathrm{d}x\right)\mathrm{d}t=\phi(a)</Math> yields <Math equation-number="1.17.9" mode="display" xml:id="C1.S17.E9">\int_{-\infty}^{\infty}\left(\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x-a)t} \mathrm{d}t\right)\phi(x)\mathrm{d}x=\phi(a)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C1.S17.SS2.p1.s3">
+The inner integral does not converge.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C1.S17.SS2.p1.s4">
+However, for <Math mode="inline" xml:id="C1.S17.SS2.p1.m1">n=1,2,\dots</Math> , <Math equation-number="1.17.10" mode="display" xml:id="C1.S17.E10">\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-t^{2}/(4n)}e^{i(x-a)t}\mathrm{d}t= \sqrt{\frac{n}{\pi}}e^{-n(x-a)^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C1.S17.SS2.p1.s5">
+Hence comparison with (1.17.5) shows that (1.17.9) can be interpreted as a generalized integral (1.17.3) with <Math equation-number="1.17.11" mode="display" xml:id="C1.S17.E11">\delta_{n}\left(x-a\right)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-t^{2}/(4n) }e^{i(x-a)t}\mathrm{d}t,</Math> provided that <Math mode="inline" xml:id="C1.S17.SS2.p1.m2">\phi(x)</Math> is continuous when <Math mode="inline" xml:id="C1.S17.SS2.p1.m3">x\in(-\infty,\infty)</Math> , and for each <Math mode="inline" xml:id="C1.S17.SS2.p1.m4">a</Math> , <Math mode="inline" xml:id="C1.S17.SS2.p1.m5">\int_{-\infty}^{\infty}e^{-n(x-a)^{2}}\phi(x)\mathrm{d}x</Math> convergesabsolutely for all sufficiently large values of <Math mode="inline" xml:id="C1.S17.SS2.p1.m6">n</Math> (as in the case of (1.17.6)).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="15" xml:id="C1.S17.SS2.p1.s6">
+Then comparison of (1.17.2) and (1.17.9) yields the formal integral representation <Math equation-number="1.17.12" mode="display" xml:id="C1.S17.E12">\delta\left(x-a\right)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i(x-a)t}\mathrm {d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S17.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S17.SS2.p2.s1">
+Other similar integral representations of the Dirac delta that appear in the physics literature include the following:
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S17.Px1">
+<title>Bessel Functions and Spherical Bessel Functions (§§10.2(ii), 10.47(ii))</title>       
+<para xml:id="C1.S17.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S17.Px1.p1.s1">
+ <Math equation-number="1.17.13" mode="display" xml:id="C1.S17.E13">\delta\left(x-a\right)=x\int_{0}^{\infty}tJ_{\nu}\left(xt\right)J_{\nu}\left( at\right)\mathrm{d}t, if \Re\nu&gt;-1, x&gt;0, a&gt;0,</Math> <Math equation-number="1.17.14" mode="display" xml:id="C1.S17.E14">\delta\left(x-a\right)=\frac{2xa}{\pi}\int_{0}^{\infty}t^{2}\mathsf{j}_{\ell} \left(xt\right)\mathsf{j}_{\ell}\left(at\right)\mathrm{d}t, if x&gt;0, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C1.S17.Px1.p1.s2">
+See Arfken and Weber (2005, Eq. (11.59))andKonopinski (1981, p. 242).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C1.S17.Px1.p1.s3">
+For a generalization of (1.17.14) see Maximon (1991).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S17.Px2">
+<title>Coulomb Functions (§33.14(iv))</title>     
+<para xml:id="C1.S17.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S17.Px2.p1.s1">
+ <Math equation-number="1.17.15" mode="display" xml:id="C1.S17.E15">\delta\left(x-a\right)=\int_{0}^{\infty}s\left(x,\ell;r\right)s\left(a,\ell;r \right)\mathrm{d}r, if a&gt;0, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C1.S17.Px2.p1.s2">
+See Seaton (2002a).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S17.Px3">
+<title>Airy Functions (§9.2)</title>     
+<para xml:id="C1.S17.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C1.S17.Px3.p1.s1">
+ <Math equation-number="1.17.16" mode="display" xml:id="C1.S17.E16">\delta\left(x-a\right)=\int_{-\infty}^{\infty}\mathrm{Ai}\left(t-x\right) \mathrm{Ai}\left(t-a\right)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C1.S17.Px3.p1.s2">
+See Vallée and Soares (2010, §3.5.3).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S17.SS3">
+<title>Series Representations</title>        
+ 
+<para xml:id="C1.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S17.SS3.p1.s1">
+Formal interchange of the order of summation and integration in the Fourier summation formula ((1.8.3) and (1.8.4)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S17.SS3.p1.s2">
+<Math equation-number="1.17.17" mode="display" xml:id="C1.S17.E17">\frac{1}{2\pi}\sum_{k=-\infty}^{\infty}e^{-ika}\left(\int_{-\pi}^{\pi}\phi(x)e ^{ikx}\mathrm{d}x\right)=\phi(a),</Math> yields <Math equation-number="1.17.18" mode="display" xml:id="C1.S17.E18">\int_{-\pi}^{\pi}\phi(x)\left(\frac{1}{2\pi}\sum_{k=-\infty}^{\infty}e^{ik(x-a )}\right)\mathrm{d}x=\phi(a)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C1.S17.SS3.p1.s3">
+The sum <Math mode="inline" xml:id="C1.S17.SS3.p1.m1">\sum_{k=-\infty}^{\infty}e^{ik(x-a)}</Math> does not converge, but (1.17.18) can be interpreted as a generalized integral in thesense that <Math equation-number="1.17.19" mode="display" xml:id="C1.S17.E19">\lim_{n\to\infty}\int_{-\pi}^{\pi}\delta_{n}\left(x-a\right)\phi(x)\mathrm{d}x =\phi(a),</Math> where <Math equation-number="1.17.20" mode="display" xml:id="C1.S17.E20">\delta_{n}\left(x-a\right)=\frac{1}{2\pi}\sum_{k=-n}^{n}e^{ik(x-a)}\left(= \frac{\sin\left((n+\frac{1}{2})(x-a)\right)}{2\pi\sin\left(\frac{1}{2}(x-a) \right)}\right),</Math> provided that <Math mode="inline" xml:id="C1.S17.SS3.p1.m2">\phi(x)</Math> is continuous and of period <Math mode="inline" xml:id="C1.S17.SS3.p1.m3">2\pi</Math> ; see §1.8(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S17.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S17.SS3.p2.s1">
+By analogy with §1.17(ii) we have the formal series representation <Math equation-number="1.17.21" mode="display" xml:id="C1.S17.E21">\delta\left(x-a\right)=\frac{1}{2\pi}\sum_{k=-\infty}^{\infty}e^{ik(x-a)}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S17.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S17.SS3.p3.s1">
+Other similar series representations of the Dirac delta that appear in the physics literature include the following:
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S17.Px4">
+<title>Legendre Polynomials (§§14.7(i) and 18.3)</title>     
+<para xml:id="C1.S17.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S17.Px4.p1.s1">
+ <Math equation-number="1.17.22" mode="display" xml:id="C1.S17.E22">\delta\left(x-a\right)=\sum_{k=0}^{\infty}(k+\tfrac{1}{2})P_{k}\left(x\right)P _{k}\left(a\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S17.Px5">
+<title>Laguerre Polynomials (§18.3)</title>     
+<para xml:id="C1.S17.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S17.Px5.p1.s1">
+ <Math equation-number="1.17.23" mode="display" xml:id="C1.S17.E23">\delta\left(x-a\right)=e^{-(x+a)/2}\sum_{k=0}^{\infty}L_{k}\left(x\right)L_{k} \left(a\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S17.Px6">
+<title>Hermite Polynomials (§18.3)</title>    
+ 
+<para xml:id="C1.S17.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C1.S17.Px6.p1.s1">
+ <Math equation-number="1.17.24" mode="display" xml:id="C1.S17.E24">\delta\left(x-a\right)=\frac{e^{-(x^{2}+a^{2})/2}}{\sqrt{\pi}}\sum_{k=0}^{ \infty}\frac{H_{k}\left(x\right)H_{k}\left(a\right)}{2^{k}k!}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S17.Px7">
+<title>Spherical Harmonics (§14.30)</title>     
+<para xml:id="C1.S17.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C1.S17.Px7.p1.s1">
+ <Math equation-number="1.17.25" mode="display" xml:id="C1.S17.E25">\delta\left(\cos\theta_{1}-\cos\theta_{2}\right)\delta\left(\phi_{1}-\phi_{2} \right)=\sum_{\ell=0}^{\infty}\sum_{m=-\ell}^{\ell}Y_{{\ell},{m}}\left(\theta_ {1},\phi_{1}\right)\overline{Y_{{\ell},{m}}\left(\theta_{2},\phi_{2}\right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S17.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C1.S17.Px7.p2.s1">
+(1.17.22)–(1.17.24) are special cases of Morse and Feshbach (1953a, Eq. (6.3.11)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C1.S17.Px7.p2.s2">
+For (1.17.25) see Arfken and Weber (2005, p. 792).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S17.SS4">
+<title>Mathematical Definitions</title>          
+<para xml:id="C1.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C1.S17.SS4.p1.s1">
+The references given in §§1.17(ii)–1.17(iii)are from the physics literature.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C1.S17.SS4.p1.s2">
+For mathematical interpretations of (1.17.13), (1.17.15), (1.17.16) and (1.17.22)–(1.17.25) that resemble those given in §§1.17(ii) and 1.17(iii) for (1.17.12) and (1.17.21), seeLi and Wong (2008).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C1.S17.SS4.p1.s3">
+For (1.17.14) combine (1.17.13) and (10.47.3).
+</sentence>
+
+</para>
+   
+ 
+</subsection>
+ 
+</section>

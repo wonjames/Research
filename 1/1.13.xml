@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S13">
+<title>Differential Equations</title>         
+<subsection xml:id="C1.S13.SS1">
+<title>Existence of Solutions</title>            
+<para xml:id="C1.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S13.SS1.p1.s1">
+A domain in the complex plane is simply-connected if it has no “holes”; more precisely, if its complement in the extended plane <Math mode="inline" xml:id="C1.S13.SS1.p1.m1">\mathbb{C}\cup\{\infty\}</Math> is connected.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S13.SS1.p2.s1">
+The equation <Math equation-number="1.13.1" mode="display" xml:id="C1.S13.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+f(z)\frac{\mathrm{d}w}{\mathrm{d}z }+g(z)w=0,</Math> where <Math mode="inline" xml:id="C1.S13.SS1.p2.m1">z\in D</Math> , a simply-connected domain, and <Math mode="inline" xml:id="C1.S13.SS1.p2.m2">f(z)</Math> , <Math mode="inline" xml:id="C1.S13.SS1.p2.m3">g(z)</Math> are analytic in <Math mode="inline" xml:id="C1.S13.SS1.p2.m4">D</Math> , has an infinite number of analytic solutions in <Math mode="inline" xml:id="C1.S13.SS1.p2.m5">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C1.S13.SS1.p2.s2">
+A solution becomes unique, for example, when <Math mode="inline" xml:id="C1.S13.SS1.p2.m6">w</Math> and <Math mode="inline" xml:id="C1.S13.SS1.p2.m7">\ifrac{\mathrm{d}w}{\mathrm{d}z}</Math> are prescribed at a point in <Math mode="inline" xml:id="C1.S13.SS1.p2.m8">D</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S13.Px1">
+<title>Fundamental Pair</title>    
+<para xml:id="C1.S13.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C1.S13.Px1.p1.s1">
+Two solutions <Math mode="inline" xml:id="C1.S13.Px1.p1.m1">w_{1}(z)</Math> and <Math mode="inline" xml:id="C1.S13.Px1.p1.m2">w_{2}(z)</Math> are called a fundamental pair if any other solution <Math mode="inline" xml:id="C1.S13.Px1.p1.m3">w(z)</Math> is expressible as <Math equation-number="1.13.2" mode="display" xml:id="C1.S13.E2">w(z)=Aw_{1}(z)+Bw_{2}(z),</Math> where <Math mode="inline" xml:id="C1.S13.Px1.p1.m4">A</Math> and <Math mode="inline" xml:id="C1.S13.Px1.p1.m5">B</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C1.S13.Px1.p1.s2">
+A fundamental pair can be obtained, for example, by taking any <Math mode="inline" xml:id="C1.S13.Px1.p1.m6">z_{0}\in D</Math> and requiring that <Math equation-number="1.13.3" mode="display" xml:id="C1.S13.E3">w_{1}(z_{0})=1,w_{1}^{\prime}(z_{0})=0,w_{2}(z_{0})=0,w_{2}^{\prime}(z_{0})=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S13.Px2">
+<title>Wronskian</title>     
+<para xml:id="C1.S13.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C1.S13.Px2.p1.s1">
+The Wronskian of <Math mode="inline" xml:id="C1.S13.Px2.p1.m1">w_{1}(z)</Math> and <Math mode="inline" xml:id="C1.S13.Px2.p1.m2">w_{2}(z)</Math> is defined by <Math equation-number="1.13.4" mode="display" xml:id="C1.S13.E4">\mathscr{W}\left\{w_{1}(z),w_{2}(z)\right\}=w_{1}(z)w_{2}^{\prime}(z)-w_{2}(z) w_{1}^{\prime}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C1.S13.Px2.p1.s2">
+Then <Math equation-number="1.13.5" mode="display" xml:id="C1.S13.E5">\mathscr{W}\left\{w_{1}(z),w_{2}(z)\right\}=ce^{-\int f(z)\mathrm{d}z},</Math> where <Math mode="inline" xml:id="C1.S13.Px2.p1.m3">c</Math> is independent of <Math mode="inline" xml:id="C1.S13.Px2.p1.m4">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C1.S13.Px2.p1.s3">
+If <Math mode="inline" xml:id="C1.S13.Px2.p1.m5">f(z)=0</Math> , then the Wronskian is constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S13.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S13.Px2.p2.s1">
+The following three statements are equivalent: <Math mode="inline" xml:id="C1.S13.Px2.p2.m1">w_{1}(z)</Math> and <Math mode="inline" xml:id="C1.S13.Px2.p2.m2">w_{2}(z)</Math> comprise a fundamental pair in <Math mode="inline" xml:id="C1.S13.Px2.p2.m3">D</Math> ; <Math mode="inline" xml:id="C1.S13.Px2.p2.m4">\mathscr{W}\left\{w_{1}(z),w_{2}(z)\right\}</Math> does not vanish in <Math mode="inline" xml:id="C1.S13.Px2.p2.m5">D</Math> ; <Math mode="inline" xml:id="C1.S13.Px2.p2.m6">w_{1}(z)</Math> and <Math mode="inline" xml:id="C1.S13.Px2.p2.m7">w_{2}(z)</Math> are linearly independent, that is, the only constants <Math mode="inline" xml:id="C1.S13.Px2.p2.m8">A</Math> and <Math mode="inline" xml:id="C1.S13.Px2.p2.m9">B</Math> such that <Math equation-number="1.13.6" mode="display" xml:id="C1.S13.E6">Aw_{1}(z)+Bw_{2}(z)=0, if \forall z\in D,</Math> are <Math mode="inline" xml:id="C1.S13.Px2.p2.m10">A=B=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS2">
+<title>Equations with a Parameter</title>         
+ 
+<para xml:id="C1.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S13.SS2.p1.s1">
+Assume that in the equation <Math equation-number="1.13.7" mode="display" xml:id="C1.S13.E7">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+f(u,z)\frac{\mathrm{d}w}{\mathrm{d }z}+g(u,z)w=0,</Math> <Math mode="inline" xml:id="C1.S13.SS2.p1.m1">u</Math> and <Math mode="inline" xml:id="C1.S13.SS2.p1.m2">z</Math> belong to domains <Math mode="inline" xml:id="C1.S13.SS2.p1.m3">U</Math> and <Math mode="inline" xml:id="C1.S13.SS2.p1.m4">D</Math> respectively, the coefficients <Math mode="inline" xml:id="C1.S13.SS2.p1.m5">f(u,z)</Math> and <Math mode="inline" xml:id="C1.S13.SS2.p1.m6">g(u,z)</Math> are continuous functions of both variables, and for each fixed <Math mode="inline" xml:id="C1.S13.SS2.p1.m7">u</Math> (fixed <Math mode="inline" xml:id="C1.S13.SS2.p1.m8">z</Math> ) the two functions are analytic in <Math mode="inline" xml:id="C1.S13.SS2.p1.m9">z</Math> (in <Math mode="inline" xml:id="C1.S13.SS2.p1.m10">u</Math> ). Suppose also that at (a fixed) <Math mode="inline" xml:id="C1.S13.SS2.p1.m11">z_{0}\in D</Math> , <Math mode="inline" xml:id="C1.S13.SS2.p1.m12">w</Math> and <Math mode="inline" xml:id="C1.S13.SS2.p1.m13">\ifrac{\partial w}{\partial z}</Math> are analytic functions of <Math mode="inline" xml:id="C1.S13.SS2.p1.m14">u</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C1.S13.SS2.p1.s2">
+Then at each <Math mode="inline" xml:id="C1.S13.SS2.p1.m15">z\in D</Math> , <Math mode="inline" xml:id="C1.S13.SS2.p1.m16">w</Math> , <Math mode="inline" xml:id="C1.S13.SS2.p1.m17">\ifrac{\partial w}{\partial z}</Math> and <Math mode="inline" xml:id="C1.S13.SS2.p1.m18">\ifrac{{\partial}^{2}w}{{\partial z}^{2}}</Math> are analytic functions of <Math mode="inline" xml:id="C1.S13.SS2.p1.m19">u</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS3">
+<title>Inhomogeneous Equations</title>           
+ 
+<para xml:id="C1.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S13.SS3.p1.s1">
+The inhomogeneous (or nonhomogeneous) equation <Math equation-number="1.13.8" mode="display" xml:id="C1.S13.E8">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+f(z)\frac{\mathrm{d}w}{\mathrm{d}z }+g(z)w=r(z)</Math> with <Math mode="inline" xml:id="C1.S13.SS3.p1.m1">f(z)</Math> , <Math mode="inline" xml:id="C1.S13.SS3.p1.m2">g(z)</Math> , and <Math mode="inline" xml:id="C1.S13.SS3.p1.m3">r(z)</Math> analytic in <Math mode="inline" xml:id="C1.S13.SS3.p1.m4">D</Math> has infinitely many analytic solutions in <Math mode="inline" xml:id="C1.S13.SS3.p1.m5">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S13.SS3.p1.s2">
+If <Math mode="inline" xml:id="C1.S13.SS3.p1.m6">w_{0}(z)</Math> is any one solution, and <Math mode="inline" xml:id="C1.S13.SS3.p1.m7">w_{1}(z)</Math> , <Math mode="inline" xml:id="C1.S13.SS3.p1.m8">w_{2}(z)</Math> are a fundamental pair of solutions of the corresponding homogeneous equation (1.13.1), then every solution of (1.13.8) can be expressed as <Math equation-number="1.13.9" mode="display" xml:id="C1.S13.E9">w(z)=w_{0}(z)+Aw_{1}(z)+Bw_{2}(z),</Math> where <Math mode="inline" xml:id="C1.S13.SS3.p1.m9">A</Math> and <Math mode="inline" xml:id="C1.S13.SS3.p1.m10">B</Math> are constants.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C1.S13.Px3">
+<title>Variation of Parameters</title>     
+<para xml:id="C1.S13.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C1.S13.Px3.p1.s1">
+With the notation of (1.13.8) and (1.13.9)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C1.S13.Px3.p1.s2">
+<Math equation-number="1.13.10" mode="display" xml:id="C1.S13.E10">w_{0}(z)=w_{2}(z)\int\frac{w_{1}(z)r(z)}{\mathscr{W}\left\{w_{1}(z),w_{2}(z) \right\}}\mathrm{d}z-w_{1}(z)\int\frac{w_{2}(z)r(z)}{\mathscr{W}\left\{w_{1}(z ),w_{2}(z)\right\}}\mathrm{d}z</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS4">
+<title>Change of Variables</title>         
+<paragraph xml:id="C1.S13.Px4">
+<title>Transformation of the Point at Infinity</title>    
+<para xml:id="C1.S13.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S13.Px4.p1.s1">
+The substitution <Math mode="inline" xml:id="C1.S13.Px4.p1.m1">\xi=1/z</Math> in (1.13.1) gives <Math equation-number="1.13.11" mode="display" xml:id="C1.S13.E11">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}+F(\xi)\frac{\mathrm{d}W}{\mathrm {d}\xi}+G(\xi)W=0,</Math> where <Math equation-number="1.13.12" mode="display" xml:id="C1.S13.E12">W(\xi)=w\left(\frac{1}{\xi}\right),F(\xi)=\frac{2}{\xi}-\frac{1}{\xi^{2}}f\left(\frac{1}{\xi}\right),G(\xi)=\frac{1}{\xi^{4}}g\left(\frac{1}{\xi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S13.Px5">
+<title>Elimination of First Derivative by Change of Dependent Variable</title>   
+ 
+<para xml:id="C1.S13.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S13.Px5.p1.s1">
+The substitution <Math equation-number="1.13.13" mode="display" xml:id="C1.S13.E13">w(z)=W(z)\exp\left(-\tfrac{1}{2}\int f(z)\mathrm{d}z\right)</Math> in (1.13.1) gives <Math equation-number="1.13.14" mode="display" xml:id="C1.S13.E14">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}-H(z)W=0,</Math> where <Math equation-number="1.13.15" mode="display" xml:id="C1.S13.E15">H(z)=\tfrac{1}{4}f^{2}(z)+\tfrac{1}{2}f^{\prime}(z)-g(z)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S13.Px6">
+<title>Elimination of First Derivative by Change of Independent Variable</title>   
+<para xml:id="C1.S13.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S13.Px6.p1.s1">
+In (1.13.1) substitute <Math equation-number="1.13.16" mode="display" xml:id="C1.S13.E16">\eta=\int\exp\left(-\int f(z)\mathrm{d}z\right)\mathrm{d}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C1.S13.Px6.p1.s2">
+Then <Math equation-number="1.13.17" mode="display" xml:id="C1.S13.E17">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\eta}^{2}}+g(z)\exp\left(2\int f(z)\mathrm {d}z\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S13.Px7">
+<title>Liouville Transformation</title>     
+<para xml:id="C1.S13.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S13.Px7.p1.s1">
+Let <Math mode="inline" xml:id="C1.S13.Px7.p1.m1">W(z)</Math> satisfy (1.13.14),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C1.S13.Px7.p1.s2">
+<Math mode="inline" xml:id="C1.S13.Px7.p1.m2">\zeta(z)</Math> be any thrice-differentiable function of <Math mode="inline" xml:id="C1.S13.Px7.p1.m3">z</Math> , and <Math equation-number="1.13.18" mode="display" xml:id="C1.S13.E18">U(z)=(\zeta^{\prime}(z))^{1/2}W(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C1.S13.Px7.p1.s3">
+Then <Math equation-number="1.13.19" mode="display" xml:id="C1.S13.E19">\frac{{\mathrm{d}}^{2}U}{{\mathrm{d}\zeta}^{2}}=\left(\dot{z}^{2}H(z)-\tfrac{1 }{2}\left\{z,\zeta\right\}\right)U</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C1.S13.Px7.p1.s4">
+Here dots denote differentiations with respect to <Math mode="inline" xml:id="C1.S13.Px7.p1.m4">\zeta</Math> , and <Math mode="inline" xml:id="C1.S13.Px7.p1.m5">\left\{z,\zeta\right\}</Math> is the Schwarzian derivative: <Math equation-number="1.13.20" mode="display" xml:id="C1.S13.E20">\left\{z,\zeta\right\}=-2\dot{z}^{\ifrac{1}{2}}\frac{{\mathrm{d}}^{2}}{{ \mathrm{d}\zeta}^{2}}(\dot{z}^{-\ifrac{1}{2}})=\frac{\dddot{z}}{\dot{z}}-\frac {3}{2}\left(\frac{\ddot{z}}{\dot{z}}\right)^{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S13.Px8">
+<title>Cayley’s Identity</title>    
+<para xml:id="C1.S13.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S13.Px8.p1.s1">
+For arbitrary <Math mode="inline" xml:id="C1.S13.Px8.p1.m1">\xi</Math> and <Math mode="inline" xml:id="C1.S13.Px8.p1.m2">\zeta</Math> , <Math equation-number="1.13.21" mode="display" xml:id="C1.S13.E21">\left\{z,\zeta\right\}=(\ifrac{\mathrm{d}\xi}{\mathrm{d}\zeta})^{2}\left\{z, \xi\right\}+\left\{\xi,\zeta\right\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S13.Px8.p1.s2">
+<Math equation-number="1.13.22" mode="display" xml:id="C1.S13.E22">\left\{z,\zeta\right\}=-(\ifrac{\mathrm{d}z}{\mathrm{d}\zeta})^{2}\left\{\zeta ,z\right\}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS5">
+<title>Products of Solutions</title>          
+<para xml:id="C1.S13.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C1.S13.SS5.p1.s1">
+The product of any two solutions of (1.13.1) satisfies <Math equation-number="1.13.23" mode="display" xml:id="C1.S13.E23">\frac{{\mathrm{d}}^{3}w}{{\mathrm{d}z}^{3}}+3f\frac{{\mathrm{d}}^{2}w}{{ \mathrm{d}z}^{2}}+(2f^{2}+f^{\prime}+4g)\frac{\mathrm{d}w}{\mathrm{d}z}+(4fg+2 g^{\prime})w=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S13.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S13.SS5.p2.s1">
+If <Math mode="inline" xml:id="C1.S13.SS5.p2.m1">U(z)</Math> and <Math mode="inline" xml:id="C1.S13.SS5.p2.m2">V(z)</Math> are respectively solutions of <Math equation-number="1.13.24" mode="display" xml:id="C1.S13.E24">\frac{{\mathrm{d}}^{2}U}{{\mathrm{d}z}^{2}}+IU=0,\frac{{\mathrm{d}}^{2}V}{{\mathrm{d}z}^{2}}+JV=0,</Math> then <Math mode="inline" xml:id="C1.S13.SS5.p2.m3">W=UV</Math> is a solution of <Math equation-number="1.13.25" mode="display" xml:id="C1.S13.E25">\frac{\mathrm{d}}{\mathrm{d}z}\left(\frac{W^{\prime\prime\prime}+2(I+J)W^{ \prime}+(I^{\prime}+J^{\prime})W}{I-J}\right)=-(I-J)W</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S13.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S13.SS5.p3.s1">
+For extensions of these results to linear homogeneous differential equations of arbitrary order see Spigler (1984).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS6">
+<title>Singularities</title>         
+<para xml:id="C1.S13.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S13.SS6.p1.s1">
+For classification of singularities of (1.13.1) and expansions of solutions in the neighborhoods of singularities, see §2.7.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S13.SS7">
+<title>Closed-Form Solutions</title>          
+<para xml:id="C1.S13.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S13.SS7.p1.s1">
+For an extensive collection of solutions of differential equations of the first, second, and higher orders see Kamke (1977).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

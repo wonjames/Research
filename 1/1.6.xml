@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S6">
+<title>Vectors and Vector-Valued Functions</title>              
+<subsection xml:id="C1.S6.SS1">
+<title>Vectors</title>        
+ 
+<para xml:id="C1.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S6.SS1.p1.s1">
+ <Math equation-number="1.6.1" mode="display" xml:id="C1.S6.E1">\mathbf{a}=(a_{1},a_{2},a_{3}),\mathbf{b}=(b_{1},b_{2},b_{3})</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S6.Px1">
+<title>Dot Product (or Scalar Product)</title>     
+<para xml:id="C1.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S6.Px1.p1.s1">
+ <Math equation-number="1.6.2" mode="display" xml:id="C1.S6.E2">\mathbf{a}\cdot\mathbf{b}=a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px2">
+<title>Magnitude and Angle of Vector <Math mode="inline" xml:id="C1.S6.Px2.m1">\mathbf{a}</Math></title>     
+<para xml:id="C1.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C1.S6.Px2.p1.s1">
+ <Math equation-number="1.6.3" mode="display" xml:id="C1.S6.E3">\|\mathbf{a}\|=\sqrt{\mathbf{a}\cdot\mathbf{a}},</Math> <Math equation-number="1.6.4" mode="display" xml:id="C1.S6.E4">\cos\theta=\frac{\mathbf{a}\cdot\mathbf{b}}{\|\mathbf{a}\|\;\|\mathbf{b}\|};</Math> <Math mode="inline" xml:id="C1.S6.Px2.p1.m1">\theta</Math> is the angle between <Math mode="inline" xml:id="C1.S6.Px2.p1.m2">\mathbf{a}</Math> and <Math mode="inline" xml:id="C1.S6.Px2.p1.m3">\mathbf{b}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px3">
+<title>Unit Vectors</title>    
+<para xml:id="C1.S6.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C1.S6.Px3.p1.s1">
+ <Math equation-number="1.6.5" mode="display" xml:id="C1.S6.E5">\mathbf{i}=(1,0,0),\mathbf{j}=(0,1,0),\mathbf{k}=(0,0,1),</Math> <Math equation-number="1.6.6" mode="display" xml:id="C1.S6.E6">\mathbf{a}=a_{1}\mathbf{i}+a_{2}\mathbf{j}+a_{3}\mathbf{k}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px4">
+<title>Cross Product (or Vector Product)</title>    
+ 
+<para xml:id="C1.S6.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S6.Px4.p1.s1">
+ <Math equation-number="1.6.7" mode="display" xml:id="C1.S6.E7">\mathbf{i}\times\mathbf{j}=\mathbf{k},\mathbf{j}\times\mathbf{k}=\mathbf{i},\mathbf{k}\times\mathbf{i}=\mathbf{j},</Math> <Math equation-number="1.6.8" mode="display" xml:id="C1.S6.E8">\mathbf{j}\times\mathbf{i}=-\mathbf{k},\mathbf{k}\times\mathbf{j}=-\mathbf{i},\mathbf{i}\times\mathbf{k}=-\mathbf{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C1.S6.Px4.p1.s2">
+<Math equation-number="1.6.9" mode="display" xml:id="C1.S6.E9">\mathbf{a}\times\mathbf{b}=\begin{vmatrix}\mathbf{i}&amp;\mathbf{j}&amp;\mathbf{k}\\ a_{1}&amp;a_{2}&amp;a_{3}\\ b_{1}&amp;b_{2}&amp;b_{3}\end{vmatrix}\\ =(a_{2}b_{3}-a_{3}b_{2})\mathbf{i}+(a_{3}b_{1}-a_{1}b_{3})\mathbf{j}+(a_{1}b_{ 2}-a_{2}b_{1})\mathbf{k}\\ =\|\mathbf{a}\|\|\mathbf{b}\|(\sin\theta)\mathbf{n},</Math> where <Math mode="inline" xml:id="C1.S6.Px4.p1.m1">\mathbf{n}</Math> is the unit vector normal to <Math mode="inline" xml:id="C1.S6.Px4.p1.m2">\mathbf{a}</Math> and <Math mode="inline" xml:id="C1.S6.Px4.p1.m3">\mathbf{b}</Math> whose direction is determined by the right-hand rule; see Figure 1.6.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="7" xml:id="C1.S6.F1.s1">
+Figure 1.6.1: Vector notation. Right-hand rule for cross products.
+</sentence>    
+<para xml:id="C1.S6.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S6.Px4.p2.s1">
+Area of parallelogram with vectors <Math mode="inline" xml:id="C1.S6.Px4.p2.m1">\mathbf{a}</Math> and <Math mode="inline" xml:id="C1.S6.Px4.p2.m2">\mathbf{b}</Math> as sides <Math mode="inline" xml:id="C1.S6.Px4.p2.m3">=\|\mathbf{a}\times\mathbf{b}\|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S6.Px4.p3.s1">
+Volume of a parallelepiped with vectors <Math mode="inline" xml:id="C1.S6.Px4.p3.m1">\mathbf{a}</Math> , <Math mode="inline" xml:id="C1.S6.Px4.p3.m2">\mathbf{b}</Math> , and <Math mode="inline" xml:id="C1.S6.Px4.p3.m3">\mathbf{c}</Math> as edges <Math mode="inline" xml:id="C1.S6.Px4.p3.m4">=\left|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C1.S6.Px4.p3.s2">
+<Math equation-number="1.6.10" mode="display" xml:id="C1.S6.E10">\mathbf{a}\times(\mathbf{b}\times\mathbf{c})=\mathbf{b}(\mathbf{a}\cdot\mathbf {c})-\mathbf{c}(\mathbf{a}\cdot\mathbf{b}),</Math> , <Math equation-number="1.6.11" mode="display" xml:id="C1.S6.E11">(\mathbf{a}\times\mathbf{b})\times\mathbf{c}=\mathbf{b}(\mathbf{a}\cdot\mathbf {c})-\mathbf{a}(\mathbf{b}\cdot\mathbf{c})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S6.SS2">
+<title>Vectors: Alternative Notations</title>          
+<para xml:id="C1.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S6.SS2.p1.s1">
+The following notations are often used in the physics literature; see for example Lorentz et al. (1923, pp. 122–123).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S6.Px5">
+<title>Einstein Summation Convention</title>     
+<para xml:id="C1.S6.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S6.Px5.p1.s1">
+Much vector algebra involves summation over suffices of products of vector components.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S6.Px5.p1.s2">
+In almost all cases of repeated suffices, we can suppress the summation notation entirely, if it is understood that an implicit sum is to be taken over any repeated suffix.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C1.S6.Px5.p1.s3">
+Thus pairs of indefinite suffices in an expression are resolved by being summed over (or “traced” over).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px6">
+<title>Example</title>   
+<para xml:id="C1.S6.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S6.Px6.p1.s1">
+ <Math equation-number="1.6.12" mode="display" xml:id="C1.S6.E12">a_{j}b_{j}=\sum_{j=1}^{3}a_{j}b_{j}=\mathbf{a}\cdot\mathbf{b}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S6.Px6.p2.s1">
+Next, <Math equation-number="1.6.13" mode="display" xml:id="C1.S6.E13">\mathbf{e}_{1}=(1,0,0),\mathbf{e}_{2}=(0,1,0),\mathbf{e}_{3}=(0,0,1);</Math> compare (1.6.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C1.S6.Px6.p2.s2">
+Thus <Math mode="inline" xml:id="C1.S6.Px6.p2.m1">a_{j}\mathbf{e}_{j}=\mathbf{a}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px7">
+<title>Levi-Civita Symbol</title>     
+<para xml:id="C1.S6.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S6.Px7.p1.s1">
+ <Math equation-number="1.6.14" mode="display" xml:id="C1.S6.E14">\epsilon_{jk\ell}=\begin{cases}+1,&amp;\text{if }j,k,\ell\text{ is even permutation of }1,2,3,\\ -1,&amp;\text{if }j,k,\ell\text{ is odd permutation of }1,2,3,\\ \phantom{-}0,&amp;\text{otherwise}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px8">
+<title>Examples</title>  
+ 
+<para xml:id="C1.S6.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C1.S6.Px8.p1.s1">
+ <Math equation-number="1.6.15" mode="display" xml:id="C1.S6.E15">\epsilon_{123}=\epsilon_{312}=1,\epsilon_{213}=\epsilon_{321}=-1,\epsilon_{221}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C1.S6.Px8.p1.s2">
+<Math equation-number="1.6.16" mode="display" xml:id="C1.S6.E16">\epsilon_{jk\ell}\epsilon_{\ell mn}=\delta_{j,m}\delta_{k,n}-\delta_{j,n} \delta_{k,m},</Math> where <Math mode="inline" xml:id="C1.S6.Px8.p1.m1">\delta_{j,k}</Math> is the Kronecker delta.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C1.S6.Px8.p1.s3">
+<Math equation-number="1.6.17" mode="display" xml:id="C1.S6.E17">\mathbf{e}_{j}\times\mathbf{e}_{k}=\epsilon_{jk\ell}\mathbf{e}_{\ell};</Math> compare (1.6.8).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C1.S6.Px8.p1.s4">
+<Math equation-number="1.6.18" mode="display" xml:id="C1.S6.E18">a_{j}\mathbf{e}_{j}\times b_{k}\mathbf{e}_{k}=\epsilon_{jk\ell}a_{j}b_{k} \mathbf{e}_{\ell};</Math> compare (1.6.7)–(1.6.8).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C1.S6.Px8.p2.s1">
+Lastly, the volume of a parallelepiped with vectors <Math mode="inline" xml:id="C1.S6.Px8.p2.m1">\mathbf{a}</Math> , <Math mode="inline" xml:id="C1.S6.Px8.p2.m2">\mathbf{b}</Math> , and <Math mode="inline" xml:id="C1.S6.Px8.p2.m3">\mathbf{c}</Math> as edges is <Math mode="inline" xml:id="C1.S6.Px8.p2.m4">|\epsilon_{jk\ell}a_{j}b_{k}c_{\ell}|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S6.SS3">
+<title>Vector-Valued Functions</title>          
+<paragraph xml:id="C1.S6.Px9">
+<title>Del Operator</title>  
+   
+<para xml:id="C1.S6.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S6.Px9.p1.s1">
+ <Math equation-number="1.6.19" mode="display" xml:id="C1.S6.E19">\nabla=\mathbf{i}\frac{\partial}{\partial x}+\mathbf{j}\frac{\partial}{ \partial y}+\mathbf{k}\frac{\partial}{\partial z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C1.S6.Px9.p2.s1">
+The gradient of a differentiable scalar function <Math mode="inline" xml:id="C1.S6.Px9.p2.m1">f(x,y,z)</Math> is <Math equation-number="1.6.20" mode="display" xml:id="C1.S6.E20">\operatorname{grad}f=\nabla f=\frac{\partial f}{\partial x}\mathbf{i}+\frac{ \partial f}{\partial y}\mathbf{j}+\frac{\partial f}{\partial z}\mathbf{k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C1.S6.Px9.p3.s1">
+The divergence of a differentiable vector-valued function <Math mode="inline" xml:id="C1.S6.Px9.p3.m1">\mathbf{F}=F_{1}\mathbf{i}+F_{2}\mathbf{j}+F_{3}\mathbf{k}</Math> is <Math equation-number="1.6.21" mode="display" xml:id="C1.S6.E21">\operatorname{div}\mathbf{F}=\nabla\cdot\mathbf{F}=\frac{\partial F_{1}}{ \partial x}+\frac{\partial F_{2}}{\partial y}+\frac{\partial F_{3}}{\partial z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S6.Px9.p4.s1">
+The curl of <Math mode="inline" xml:id="C1.S6.Px9.p4.m1">\mathbf{F}</Math> is <Math equation-number="1.6.22" mode="display" xml:id="C1.S6.E22">\operatorname{curl}\mathbf{F}=\nabla\times\mathbf{F}=\begin{vmatrix}\mathbf{i} &amp;\mathbf{j}&amp;\mathbf{k}\\ \displaystyle{\frac{\partial}{\partial x}}&amp;\displaystyle{\frac{\partial}{ \partial y}}&amp;\displaystyle{\frac{\partial}{\partial z}}\\ F_{1}&amp;F_{2}&amp;F_{3}\end{vmatrix}\\ =\left(\frac{\partial F_{3}}{\partial y}-\frac{\partial F_{2}}{\partial z} \right)\mathbf{i}+\left(\frac{\partial F_{1}}{\partial z}-\frac{\partial F_{3} }{\partial x}\right)\mathbf{j}+\left(\frac{\partial F_{2}}{\partial x}-\frac{ \partial F_{1}}{\partial y}\right)\mathbf{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C1.S6.Px9.p4.s2">
+<Math equation-number="1.6.23" mode="display" xml:id="C1.S6.E23">\nabla(fg)=f\nabla g+g\nabla f,</Math> <Math equation-number="1.6.24" mode="display" xml:id="C1.S6.E24">\nabla(f/g)=(g\nabla f-f\nabla g)/g^{2},</Math> <Math equation-number="1.6.25" mode="display" xml:id="C1.S6.E25">\nabla\cdot(f\mathbf{F})=f(\nabla\cdot\mathbf{F})+\mathbf{F}\cdot\nabla f,</Math> <Math equation-number="1.6.26" mode="display" xml:id="C1.S6.E26">\nabla\cdot(\mathbf{F}\times\mathbf{G})=\mathbf{G}\cdot(\nabla\times\mathbf{F} )-\mathbf{F}\cdot(\nabla\times\mathbf{G}),</Math> <Math equation-number="1.6.27" mode="display" xml:id="C1.S6.E27">\nabla\cdot(\nabla\times\mathbf{F})=\operatorname{div}\operatorname{curl} \mathbf{F}=0,</Math> <Math equation-number="1.6.28" mode="display" xml:id="C1.S6.E28">\nabla\times(f\mathbf{F})=f(\nabla\times\mathbf{F})+(\nabla f)\times\mathbf{F},</Math> <Math equation-number="1.6.29" mode="display" xml:id="C1.S6.E29">\nabla\times(\nabla f)=\operatorname{curl}\operatorname{grad}f=0,</Math> <Math equation-number="1.6.30" mode="display" xml:id="C1.S6.E30">\nabla^{2}f=\nabla\cdot(\nabla f),</Math> <Math equation-number="1.6.31" mode="display" xml:id="C1.S6.E31">\nabla^{2}(fg)=f\nabla^{2}g+g\nabla^{2}f+2(\nabla f\cdot\nabla g),</Math> <Math equation-number="1.6.32" mode="display" xml:id="C1.S6.E32">\nabla\cdot(\nabla f\times\nabla g)=0,</Math> <Math equation-number="1.6.33" mode="display" xml:id="C1.S6.E33">\nabla\cdot(f\nabla g-g\nabla f)=f\nabla^{2}g-g\nabla^{2}f,</Math> <Math equation-number="1.6.34" mode="display" xml:id="C1.S6.E34">\nabla\times(\nabla\times\mathbf{F})=\operatorname{curl}\operatorname{curl} \mathbf{F}=\nabla(\nabla\cdot\mathbf{F})-\nabla^{2}\mathbf{F}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S6.SS4">
+<title>Path and Line Integrals</title>        
+ 
+<para xml:id="C1.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C1.S6.SS4.p1.s1">
+Note: The terminology open and closed sets and boundary points in the <Math mode="inline" xml:id="C1.S6.SS4.p1.m1">(x,y)</Math> plane that is used in this subsection and §1.6(v) is analogous to that introduced for the complex plane in §1.9(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S6.SS4.p2.s1">
+ <Math mode="inline" xml:id="C1.S6.SS4.p2.m1">\mathbf{c}(t)=(x(t),y(t),z(t))</Math> , with <Math mode="inline" xml:id="C1.S6.SS4.p2.m2">t</Math> ranging over an interval and <Math mode="inline" xml:id="C1.S6.SS4.p2.m3">x(t),y(t),z(t)</Math> differentiable, defines a path.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C1.S6.SS4.p2.s2">
+<Math equation-number="1.6.35" mode="display" xml:id="C1.S6.E35">\mathbf{c}^{\prime}(t)=(x^{\prime}(t),y^{\prime}(t),z^{\prime}(t))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C1.S6.SS4.p2.s3">
+The length of a path for <Math mode="inline" xml:id="C1.S6.SS4.p2.m4">a\leq t\leq b</Math> is <Math equation-number="1.6.36" mode="display" xml:id="C1.S6.E36">\int_{a}^{b}\|\mathbf{c}^{\prime}(t)\|\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="33" xml:id="C1.S6.SS4.p2.s4">
+The path integral of a continuous function <Math mode="inline" xml:id="C1.S6.SS4.p2.m5">f(x,y,z)</Math> is <Math equation-number="1.6.37" mode="display" xml:id="C1.S6.E37">\int_{\mathbf{c}}f\mathrm{d}s=\int^{b}_{a}f(x(t),y(t),z(t))\|\mathbf{c}^{ \prime}(t)\|\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="34" xml:id="C1.S6.SS4.p2.s5">
+The line integral of a vector-valued function <Math mode="inline" xml:id="C1.S6.SS4.p2.m6">\mathbf{F}=F_{1}\mathbf{i}+F_{2}\mathbf{j}+F_{3}\mathbf{k}</Math> along <Math mode="inline" xml:id="C1.S6.SS4.p2.m7">\mathbf{c}</Math> is given by <Math equation-number="1.6.38" mode="display" xml:id="C1.S6.E38">\int_{\mathbf{c}}\mathbf{F}\cdot\mathrm{d}\mathbf{s}=\int^{b}_{a}\mathbf{F}( \mathbf{c}(t))\cdot\mathbf{c}^{\prime}(t)\mathrm{d}t=\int^{b}_{a}\left(F_{1} \frac{\mathrm{d}x}{\mathrm{d}t}+F_{2}\frac{\mathrm{d}y}{\mathrm{d}t}+F_{3} \frac{\mathrm{d}z}{\mathrm{d}t}\right)\mathrm{d}t=\int_{\mathbf{c}}F_{1} \mathrm{d}x+F_{2}\mathrm{d}y+F_{3}\mathrm{d}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="35" xml:id="C1.S6.SS4.p2.s6">
+A path <Math mode="inline" xml:id="C1.S6.SS4.p2.m8">\mathbf{c}_{1}(t)</Math> , <Math mode="inline" xml:id="C1.S6.SS4.p2.m9">t\in[a,b]</Math> , is a reparametrization of <Math mode="inline" xml:id="C1.S6.SS4.p2.m10">\mathbf{c}(t^{\prime})</Math> , <Math mode="inline" xml:id="C1.S6.SS4.p2.m11">t^{\prime}\in[a^{\prime},b^{\prime}]</Math> , if <Math mode="inline" xml:id="C1.S6.SS4.p2.m12">\mathbf{c}_{1}(t)=\mathbf{c}(t^{\prime})</Math> and <Math mode="inline" xml:id="C1.S6.SS4.p2.m13">t^{\prime}=h(t)</Math> with <Math mode="inline" xml:id="C1.S6.SS4.p2.m14">h(t)</Math> differentiable and monotonic.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="36" xml:id="C1.S6.SS4.p2.s7">
+If <Math mode="inline" xml:id="C1.S6.SS4.p2.m15">h(a)=a^{\prime}</Math> and <Math mode="inline" xml:id="C1.S6.SS4.p2.m16">h(b)=b^{\prime}</Math> , then the reparametrization is called orientation-preserving, and <Math equation-number="1.6.39" mode="display" xml:id="C1.S6.E39">\int_{\mathbf{c}}\mathbf{F}\cdot\mathrm{d}\mathbf{s}=\int_{\mathbf{c}_{1}} \mathbf{F}\cdot\mathrm{d}\mathbf{s}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="37" xml:id="C1.S6.SS4.p2.s8">
+If <Math mode="inline" xml:id="C1.S6.SS4.p2.m17">h(a)=b^{\prime}</Math> and <Math mode="inline" xml:id="C1.S6.SS4.p2.m18">h(b)=a^{\prime}</Math> , then the reparametrization isorientation-reversing and <Math equation-number="1.6.40" mode="display" xml:id="C1.S6.E40">\int_{\mathbf{c}}\mathbf{F}\cdot\mathrm{d}\mathbf{s}=-\int_{\mathbf{c}_{1}} \mathbf{F}\cdot\mathrm{d}\mathbf{s}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="38" xml:id="C1.S6.SS4.p2.s9">
+In either case <Math equation-number="1.6.41" mode="display" xml:id="C1.S6.E41">\int_{\mathbf{c}}f\mathrm{d}s=\int_{\mathbf{c}_{1}}f\mathrm{d}s,</Math> when <Math mode="inline" xml:id="C1.S6.SS4.p2.m19">f</Math> is continuous, and <Math equation-number="1.6.42" mode="display" xml:id="C1.S6.E42">\int_{\mathbf{c}}\nabla f\cdot\mathrm{d}\mathbf{s}=f(\mathbf{c}(b))-f(\mathbf{ c}(a)),</Math> when <Math mode="inline" xml:id="C1.S6.SS4.p2.m20">f</Math> is continuously differentiable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C1.S6.SS4.p3.s1">
+The geometrical image <Math mode="inline" xml:id="C1.S6.SS4.p3.m1">C</Math> of a path <Math mode="inline" xml:id="C1.S6.SS4.p3.m2">\mathbf{c}</Math> is called a simple closed curve if <Math mode="inline" xml:id="C1.S6.SS4.p3.m3">\mathbf{c}</Math> is one-to-one, with the exception <Math mode="inline" xml:id="C1.S6.SS4.p3.m4">\mathbf{c}(a)=\mathbf{c}(b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C1.S6.SS4.p3.s2">
+The curve <Math mode="inline" xml:id="C1.S6.SS4.p3.m5">C</Math> is piecewise differentiable if <Math mode="inline" xml:id="C1.S6.SS4.p3.m6">\mathbf{c}</Math> is piecewise differentiable.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C1.S6.SS4.p3.s3">
+Note that <Math mode="inline" xml:id="C1.S6.SS4.p3.m7">C</Math> can be given an orientation by means of <Math mode="inline" xml:id="C1.S6.SS4.p3.m8">\mathbf{c}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S6.Px10">
+<title>Green’s Theorem</title>     
+<para xml:id="C1.S6.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C1.S6.Px10.p1.s1">
+Let <Math equation-number="1.6.43" mode="display" xml:id="C1.S6.E43">\mathbf{F}(x,y)=F_{1}(x,y)\mathbf{i}+F_{2}(x,y)\mathbf{j}</Math> and <Math mode="inline" xml:id="C1.S6.Px10.p1.m1">S</Math> be the closed and bounded point set in the <Math mode="inline" xml:id="C1.S6.Px10.p1.m2">(x,y)</Math> plane having a simple closed curve <Math mode="inline" xml:id="C1.S6.Px10.p1.m3">C</Math> as boundary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C1.S6.Px10.p1.s2">
+If <Math mode="inline" xml:id="C1.S6.Px10.p1.m4">C</Math> is oriented in the positive (anticlockwise) sense, then <Math equation-number="1.6.44" mode="display" xml:id="C1.S6.E44">\iint_{S}\left(\frac{\partial F_{2}}{\partial x}-\frac{\partial F_{1}}{ \partial y}\right)\mathrm{d}A=\int_{C}\mathbf{F}\cdot\mathrm{d}\mathbf{s}=\int _{C}F_{1}\mathrm{d}x+F_{2}\mathrm{d}y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="44" xml:id="C1.S6.Px10.p1.s3">
+Sufficient conditions for this result to hold are that <Math mode="inline" xml:id="C1.S6.Px10.p1.m5">F_{1}(x,y)</Math> and <Math mode="inline" xml:id="C1.S6.Px10.p1.m6">F_{2}(x,y)</Math> are continuously differentiable on <Math mode="inline" xml:id="C1.S6.Px10.p1.m7">S</Math> , and <Math mode="inline" xml:id="C1.S6.Px10.p1.m8">C</Math> is piecewise differentiable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C1.S6.Px10.p2.s1">
+The area of <Math mode="inline" xml:id="C1.S6.Px10.p2.m1">S</Math> can be found from (1.6.44) by taking <Math mode="inline" xml:id="C1.S6.Px10.p2.m2">\mathbf{F}(x,y)=-y\mathbf{i}</Math> , <Math mode="inline" xml:id="C1.S6.Px10.p2.m3">x\mathbf{j}</Math> , or <Math mode="inline" xml:id="C1.S6.Px10.p2.m4">-\frac{1}{2}y\mathbf{i}+\frac{1}{2}x\mathbf{j}</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S6.SS5">
+<title>Surfaces and Integrals over Surfaces</title>          
+<para xml:id="C1.S6.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C1.S6.SS5.p1.s1">
+A parametrized surface <Math mode="inline" xml:id="C1.S6.SS5.p1.m1">S</Math> is defined by <Math equation-number="1.6.45" mode="display" xml:id="C1.S6.E45">\boldsymbol{{\Phi}}(u,v)=(x(u,v),y(u,v),z(u,v))</Math> with <Math mode="inline" xml:id="C1.S6.SS5.p1.m2">(u,v)\in D</Math> , an open set in the plane.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C1.S6.SS5.p2.s1">
+For <Math mode="inline" xml:id="C1.S6.SS5.p2.m1">x</Math> , <Math mode="inline" xml:id="C1.S6.SS5.p2.m2">y</Math> , and <Math mode="inline" xml:id="C1.S6.SS5.p2.m3">z</Math> continuously differentiable, the vectors <Math equation-number="1.6.46" mode="display" xml:id="C1.S6.E46">\mathbf{T}_{u}=\frac{\partial x}{\partial u}(u_{0},v_{0})\mathbf{i}+\frac{ \partial y}{\partial u}(u_{0},v_{0})\mathbf{j}+\frac{\partial z}{\partial u}(u _{0},v_{0})\mathbf{k}</Math> and <Math equation-number="1.6.47" mode="display" xml:id="C1.S6.E47">\mathbf{T}_{v}=\frac{\partial x}{\partial v}(u_{0},v_{0})\mathbf{i}+\frac{ \partial y}{\partial v}(u_{0},v_{0})\mathbf{j}+\frac{\partial z}{\partial v}(u _{0},v_{0})\mathbf{k}</Math> are tangent to the surface at <Math mode="inline" xml:id="C1.S6.SS5.p2.m4">\boldsymbol{{\Phi}}(u_{0},v_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C1.S6.SS5.p2.s2">
+The surface issmooth at this point if <Math mode="inline" xml:id="C1.S6.SS5.p2.m5">\mathbf{T}_{u}\times\mathbf{T}_{v}\not=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C1.S6.SS5.p2.s3">
+A surface issmooth if it is smooth at every point. The vector <Math mode="inline" xml:id="C1.S6.SS5.p2.m6">\mathbf{T}_{u}\times\mathbf{T}_{v}</Math> at <Math mode="inline" xml:id="C1.S6.SS5.p2.m7">(u_{0},v_{0})</Math> is normal to the surface at <Math mode="inline" xml:id="C1.S6.SS5.p2.m8">\boldsymbol{{\Phi}}(u_{0},v_{0})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C1.S6.SS5.p3.s1">
+The area <Math mode="inline" xml:id="C1.S6.SS5.p3.m1">A(S)</Math> of a parametrized smooth surface is given by <Math equation-number="1.6.48" mode="display" xml:id="C1.S6.E48">A(S)=\iint_{D}\|\mathbf{T}_{u}\times\mathbf{T}_{v}\|\mathrm{d}u\mathrm{d}v,</Math> and <Math equation-number="1.6.49" mode="display" xml:id="C1.S6.E49">\|\mathbf{T}_{u}\times\mathbf{T}_{v}\|=\sqrt{\left(\frac{\partial(x,y)}{ \partial(u,v)}\right)^{2}+\left(\frac{\partial(y,z)}{\partial(u,v)}\right)^{2} +\left(\frac{\partial(x,z)}{\partial(u,v)}\right)^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C1.S6.SS5.p3.s2">
+The area is independent of the parametrizations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C1.S6.SS5.p4.s1">
+For a sphere <Math mode="inline" xml:id="C1.S6.SS5.p4.m1">x=\rho\sin\theta\cos\phi</Math> , <Math mode="inline" xml:id="C1.S6.SS5.p4.m2">y=\rho\sin\theta\sin\phi</Math> , <Math mode="inline" xml:id="C1.S6.SS5.p4.m3">z=\rho\cos\theta</Math> , <Math equation-number="1.6.50" mode="display" xml:id="C1.S6.E50">\|\mathbf{T}_{\theta}\times\mathbf{T}_{\phi}\|=\rho^{2}\left|\sin\theta\right|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C1.S6.SS5.p5.s1">
+For a surface <Math mode="inline" xml:id="C1.S6.SS5.p5.m1">z=f(x,y)</Math> , <Math equation-number="1.6.51" mode="display" xml:id="C1.S6.E51">A(S)=\iint_{D}\sqrt{1+\left(\frac{\partial f}{\partial x}\right)^{2}+\left( \frac{\partial f}{\partial y}\right)^{2}}\mathrm{d}A</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C1.S6.SS5.p6.s1">
+For a surface of revolution, <Math mode="inline" xml:id="C1.S6.SS5.p6.m1">y=f(x)</Math> , <Math mode="inline" xml:id="C1.S6.SS5.p6.m2">x\in[a,b]</Math> , about the <Math mode="inline" xml:id="C1.S6.SS5.p6.m3">x</Math> -axis, <Math equation-number="1.6.52" mode="display" xml:id="C1.S6.E52">A(S)=2\pi\int^{b}_{a}|f(x)|\sqrt{1+(f^{\prime}(x))^{2}}\mathrm{d}x,</Math> and about the <Math mode="inline" xml:id="C1.S6.SS5.p6.m4">y</Math> -axis, <Math equation-number="1.6.53" mode="display" xml:id="C1.S6.E53">A(S)=2\pi\int^{b}_{a}|x|\sqrt{1+(f^{\prime}(x))^{2}}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C1.S6.SS5.p7.s1">
+The integral of a continuous function <Math mode="inline" xml:id="C1.S6.SS5.p7.m1">f(x,y,z)</Math> over a surface <Math mode="inline" xml:id="C1.S6.SS5.p7.m2">S</Math> is <Math equation-number="1.6.54" mode="display" xml:id="C1.S6.E54">\iint_{S}f(x,y,z)\mathrm{d}S=\iint_{D}f(\boldsymbol{{\Phi}}(u,v))\|\mathbf{T}_ {u}\times\mathbf{T}_{v}\|\mathrm{d}u\mathrm{d}v</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C1.S6.SS5.p7.s2">
+For a vector-valued function <Math mode="inline" xml:id="C1.S6.SS5.p7.m3">\mathbf{F}</Math> , <Math equation-number="1.6.55" mode="display" xml:id="C1.S6.E55">\iint_{S}\mathbf{F}\cdot\mathrm{d}\mathbf{S}=\iint_{D}\mathbf{F}\cdot(\mathbf{ T}_{u}\times\mathbf{T}_{v})\mathrm{d}u\mathrm{d}v,</Math> where <Math mode="inline" xml:id="C1.S6.SS5.p7.m4">\mathrm{d}\mathbf{S}</Math> is the surface element with an attached normal direction <Math mode="inline" xml:id="C1.S6.SS5.p7.m5">\mathbf{T}_{u}\times\mathbf{T}_{v}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C1.S6.SS5.p8.s1">
+A surface is orientable if a continuously varying normal can be defined at all points of the surface.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C1.S6.SS5.p8.s2">
+An orientable surface is oriented if suitable normals have been chosen.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C1.S6.SS5.p8.s3">
+A parametrization <Math mode="inline" xml:id="C1.S6.SS5.p8.m1">\boldsymbol{{\Phi}}(u,v)</Math> of an oriented surface <Math mode="inline" xml:id="C1.S6.SS5.p8.m2">S</Math> isorientation preserving if <Math mode="inline" xml:id="C1.S6.SS5.p8.m3">\mathbf{T}_{u}\times\mathbf{T}_{v}</Math> has the same direction as the chosen normal at each point of <Math mode="inline" xml:id="C1.S6.SS5.p8.m4">S</Math> , otherwise it isorientation reversing.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S6.SS5.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C1.S6.SS5.p9.s1">
+If <Math mode="inline" xml:id="C1.S6.SS5.p9.m1">\boldsymbol{{\Phi}}_{1}</Math> and <Math mode="inline" xml:id="C1.S6.SS5.p9.m2">\boldsymbol{{\Phi}}_{2}</Math> are both orientation preserving or both orientation reversing parametrizations of <Math mode="inline" xml:id="C1.S6.SS5.p9.m3">S</Math> defined on open sets <Math mode="inline" xml:id="C1.S6.SS5.p9.m4">D_{1}</Math> and <Math mode="inline" xml:id="C1.S6.SS5.p9.m5">D_{2}</Math> respectively, then <Math equation-number="1.6.56" mode="display" xml:id="C1.S6.E56">\iint_{\boldsymbol{{\Phi}}_{1}(D_{1})}\mathbf{F}\cdot\mathrm{d}\mathbf{S}= \iint_{\boldsymbol{{\Phi}}_{2}(D_{2})}\mathbf{F}\cdot\mathrm{d}\mathbf{S};</Math> otherwise, one is the negative of the other.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S6.Px11">
+<title>Stokes’s Theorem</title>     
+<para xml:id="C1.S6.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C1.S6.Px11.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S6.Px11.p1.m1">S</Math> is an oriented surface with boundary <Math mode="inline" xml:id="C1.S6.Px11.p1.m2">\partial S</Math> which is oriented so that its direction is clockwise relative to the normals of <Math mode="inline" xml:id="C1.S6.Px11.p1.m3">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="62" xml:id="C1.S6.Px11.p1.s2">
+Then <Math equation-number="1.6.57" mode="display" xml:id="C1.S6.E57">\iint_{S}(\nabla\times\mathbf{F})\cdot\mathrm{d}\mathbf{S}=\int_{\partial S} \mathbf{F}\cdot\mathrm{d}\mathbf{s},</Math> when <Math mode="inline" xml:id="C1.S6.Px11.p1.m4">\mathbf{F}</Math> is a continuously differentiable vector-valued function.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px12">
+<title>Gauss’s (or Divergence) Theorem</title>     
+ 
+<para xml:id="C1.S6.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C1.S6.Px12.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S6.Px12.p1.m1">S</Math> is a piecewise smooth surface which forms the complete boundary of a bounded closed point set <Math mode="inline" xml:id="C1.S6.Px12.p1.m2">V</Math> , and <Math mode="inline" xml:id="C1.S6.Px12.p1.m3">S</Math> is oriented by its normal being outwards from <Math mode="inline" xml:id="C1.S6.Px12.p1.m4">V</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C1.S6.Px12.p1.s2">
+Then <Math equation-number="1.6.58" mode="display" xml:id="C1.S6.E58">\iiint_{V}(\nabla\cdot\mathbf{F})\mathrm{d}V=\iint_{S}\mathbf{F}\cdot\mathrm{d }\mathbf{S},</Math> when <Math mode="inline" xml:id="C1.S6.Px12.p1.m5">\mathbf{F}</Math> is a continuously differentiable vector-valued function.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S6.Px13">
+<title>Green’s Theorem (for Volume)</title>     
+<para xml:id="C1.S6.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C1.S6.Px13.p1.s1">
+For <Math mode="inline" xml:id="C1.S6.Px13.p1.m1">f</Math> and <Math mode="inline" xml:id="C1.S6.Px13.p1.m2">g</Math> twice-continuously differentiable functions <Math equation-number="1.6.59" mode="display" xml:id="C1.S6.E59">\iiint_{V}(f\nabla^{2}g+\nabla f\cdot\nabla g)\mathrm{d}V=\iint_{S}f\frac{ \partial g}{\partial n}\mathrm{d}A,</Math> and <Math equation-number="1.6.60" mode="display" xml:id="C1.S6.E60">\iiint_{V}(f\nabla^{2}g-g\nabla^{2}f)\mathrm{d}V=\iint_{S}\left(f\frac{ \partial g}{\partial n}-g\frac{\partial f}{\partial n}\right)\mathrm{d}A,</Math> where <Math mode="inline" xml:id="C1.S6.Px13.p1.m3">\ifrac{\partial g}{\partial n}=\nabla g\cdot\mathbf{n}</Math> is the derivative of <Math mode="inline" xml:id="C1.S6.Px13.p1.m4">g</Math> normal to the surface outwards from <Math mode="inline" xml:id="C1.S6.Px13.p1.m5">V</Math> and <Math mode="inline" xml:id="C1.S6.Px13.p1.m6">\mathbf{n}</Math> is the unit outer normal vector.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

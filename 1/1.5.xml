@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S5">
+<title>Calculus of Two or More Variables</title>          
+<subsection xml:id="C1.S5.SS1">
+<title>Partial Derivatives</title>             
+<para xml:id="C1.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S5.SS1.p1.s1">
+A function <Math mode="inline" xml:id="C1.S5.SS1.p1.m1">f(x,y)</Math> is continuous at a point <Math mode="inline" xml:id="C1.S5.SS1.p1.m2">(a,b)</Math> if <Math equation-number="1.5.1" mode="display" xml:id="C1.S5.E1">\lim_{(x,y)\to(a,b)}f(x,y)=f(a,b),</Math> that is, for every arbitrarily small positive constant <Math mode="inline" xml:id="C1.S5.SS1.p1.m3">\epsilon</Math> there exists <Math mode="inline" xml:id="C1.S5.SS1.p1.m4">\delta</Math> ( <Math mode="inline" xml:id="C1.S5.SS1.p1.m5">&gt;0</Math> ) such that <Math equation-number="1.5.2" mode="display" xml:id="C1.S5.E2">|f(a+\alpha,b+\beta)-f(a,b)|&lt;\epsilon,</Math> for all <Math mode="inline" xml:id="C1.S5.SS1.p1.m6">\alpha</Math> and <Math mode="inline" xml:id="C1.S5.SS1.p1.m7">\beta</Math> that satisfy <Math mode="inline" xml:id="C1.S5.SS1.p1.m8">|\alpha|,|\beta|&lt;\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S5.SS1.p2.s1">
+A function is continuous on a point set <Math mode="inline" xml:id="C1.S5.SS1.p2.m1">D</Math> if it is continuous at all points of <Math mode="inline" xml:id="C1.S5.SS1.p2.m2">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C1.S5.SS1.p2.s2">
+A function <Math mode="inline" xml:id="C1.S5.SS1.p2.m3">f(x,y)</Math> is piecewise continuous on <Math mode="inline" xml:id="C1.S5.SS1.p2.m4">I_{1}\times I_{2}</Math> , where <Math mode="inline" xml:id="C1.S5.SS1.p2.m5">I_{1}</Math> and <Math mode="inline" xml:id="C1.S5.SS1.p2.m6">I_{2}</Math> are intervals, if it is piecewise continuous in <Math mode="inline" xml:id="C1.S5.SS1.p2.m7">x</Math> for each <Math mode="inline" xml:id="C1.S5.SS1.p2.m8">y\in I_{2}</Math> and piecewise continuous in <Math mode="inline" xml:id="C1.S5.SS1.p2.m9">y</Math> for each <Math mode="inline" xml:id="C1.S5.SS1.p2.m10">x\in I_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C1.S5.SS1.p2.s3">
+<Math equation-number="1.5.3" mode="display" xml:id="C1.S5.E3">\frac{\partial f}{\partial x}=D_{x}f=f_{x}=\lim_{h\to 0}\frac{f(x+h,y)-f(x,y)} {h},</Math> , <Math equation-number="1.5.4" mode="display" xml:id="C1.S5.E4">\frac{\partial f}{\partial y}=D_{y}f=f_{y}=\lim_{h\to 0}\frac{f(x,y+h)-f(x,y)} {h}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C1.S5.SS1.p2.s4">
+<Math equation-number="1.5.5" mode="display" xml:id="C1.S5.E5">\frac{{\partial}^{2}f}{\partial x\partial y}=\frac{\partial}{\partial x}\left( \frac{\partial f}{\partial y}\right),\frac{{\partial}^{2}f}{\partial y\partial x}=\frac{\partial}{\partial y}\left( \frac{\partial f}{\partial x}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C1.S5.SS1.p2.s5">
+The function <Math mode="inline" xml:id="C1.S5.SS1.p2.m11">f(x,y)</Math> is continuously differentiable if <Math mode="inline" xml:id="C1.S5.SS1.p2.m12">f</Math> , <Math mode="inline" xml:id="C1.S5.SS1.p2.m13">\ifrac{\partial f}{\partial x}</Math> , and <Math mode="inline" xml:id="C1.S5.SS1.p2.m14">\ifrac{\partial f}{\partial y}</Math> are continuous, and twice-continuously differentiable if also <Math mode="inline" xml:id="C1.S5.SS1.p2.m15">\ifrac{{\partial}^{2}f}{{\partial x}^{2}}</Math> , <Math mode="inline" xml:id="C1.S5.SS1.p2.m16">\ifrac{{\partial}^{2}f}{{\partial y}^{2}}</Math> , <Math mode="inline" xml:id="C1.S5.SS1.p2.m17">{\partial}^{2}f/\partial x\partial y</Math> , and <Math mode="inline" xml:id="C1.S5.SS1.p2.m18">{\partial}^{2}f/\partial y\partial x</Math> are continuous.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C1.S5.SS1.p2.s6">
+In the latter event <Math equation-number="1.5.6" mode="display" xml:id="C1.S5.E6">\frac{{\partial}^{2}f}{\partial x\partial y}=\frac{{\partial}^{2}f}{\partial y \partial x}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S5.Px1">
+<title>Chain Rule</title>     
+<para xml:id="C1.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S5.Px1.p1.s1">
+ <Math equation-number="1.5.7" mode="display" xml:id="C1.S5.E7">\frac{\mathrm{d}}{\mathrm{d}t}f(x(t),y(t))=\frac{\partial f}{\partial x}\frac{ \mathrm{d}x}{\mathrm{d}t}+\frac{\partial f}{\partial y}\frac{\mathrm{d}y}{ \mathrm{d}t},</Math> , <Math equation-number="1.5.8" mode="display" xml:id="C1.S5.E8">\frac{\partial}{\partial u}f(x(u,v),y(u,v))=\frac{\partial f}{\partial x}\frac {\partial x}{\partial u}+\frac{\partial f}{\partial y}\frac{\partial y}{ \partial u},</Math> , <Math equation-number="1.5.9" mode="display" xml:id="C1.S5.E9">\frac{\partial}{\partial v}f(x(u,v),y(u,v),z(u,v))=\frac{\partial f}{\partial x }\frac{\partial x}{\partial v}+\frac{\partial f}{\partial y}\frac{\partial y}{ \partial v}+\frac{\partial f}{\partial z}\frac{\partial z}{\partial v}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px2">
+<title>Implicit Function Theorem</title>     
+<para xml:id="C1.S5.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S5.Px2.p1.s1">
+If <Math mode="inline" xml:id="C1.S5.Px2.p1.m1">F(x,y)</Math> is continuously differentiable, <Math mode="inline" xml:id="C1.S5.Px2.p1.m2">F(a,b)=0</Math> , and <Math mode="inline" xml:id="C1.S5.Px2.p1.m3">\ifrac{\partial F}{\partial y}\not=0</Math> at <Math mode="inline" xml:id="C1.S5.Px2.p1.m4">(a,b)</Math> , then in a neighborhood of <Math mode="inline" xml:id="C1.S5.Px2.p1.m5">(a,b)</Math> , that is, an open disk centered at <Math mode="inline" xml:id="C1.S5.Px2.p1.m6">a,b</Math> , the equation <Math mode="inline" xml:id="C1.S5.Px2.p1.m7">F(x,y)=0</Math> defines a continuously differentiable function <Math mode="inline" xml:id="C1.S5.Px2.p1.m8">y=g(x)</Math> such that <Math mode="inline" xml:id="C1.S5.Px2.p1.m9">F(x,g(x))=0</Math> , <Math mode="inline" xml:id="C1.S5.Px2.p1.m10">b=g(a)</Math> , and <Math mode="inline" xml:id="C1.S5.Px2.p1.m11">g^{\prime}(x)=-F_{x}/F_{y}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S5.SS2">
+<title>Coordinate Systems</title>         
+<paragraph xml:id="C1.S5.Px3">
+<title>Notations</title>   
+<para xml:id="C1.S5.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S5.Px3.p1.s1">
+The notations given in this subsection, and also in other coordinate systems in the DLMF, are those generally used by physicists.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C1.S5.Px3.p1.s2">
+For mathematicians the symbols <Math mode="inline" xml:id="C1.S5.Px3.p1.m1">\theta</Math> and <Math mode="inline" xml:id="C1.S5.Px3.p1.m2">\phi</Math> now are usually interchanged.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px4">
+<title>Polar Coordinates</title>        
+<para xml:id="C1.S5.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S5.Px4.p1.s1">
+With <Math mode="inline" xml:id="C1.S5.Px4.p1.m1">0\leq r&lt;\infty</Math> , <Math mode="inline" xml:id="C1.S5.Px4.p1.m2">0\leq\phi\leq 2\pi</Math> , <Math equation-number="1.5.10" mode="display" xml:id="C1.S5.E10">x=r\cos\phi,y=r\sin\phi,</Math> <Math equation-number="1.5.11" mode="display" xml:id="C1.S5.E11">\frac{\partial}{\partial x}=\cos\phi\frac{\partial}{\partial r}-\frac{\sin\phi }{r}\frac{\partial}{\partial\phi},</Math> , <Math equation-number="1.5.12" mode="display" xml:id="C1.S5.E12">\frac{\partial}{\partial y}=\sin\phi\frac{\partial}{\partial r}+\frac{\cos\phi }{r}\frac{\partial}{\partial\phi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S5.Px4.p1.s2">
+The Laplacian is given by <Math equation-number="1.5.13" mode="display" xml:id="C1.S5.E13">\nabla^{2}f=\frac{{\partial}^{2}f}{{\partial x}^{2}}+\frac{{\partial}^{2}f}{{ \partial y}^{2}}=\frac{{\partial}^{2}f}{{\partial r}^{2}}+\frac{1}{r}\frac{ \partial f}{\partial r}+\frac{1}{r^{2}}\frac{{\partial}^{2}f}{{\partial\phi}^{ 2}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px5">
+<title>Cylindrical Coordinates</title>       
+<para xml:id="C1.S5.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C1.S5.Px5.p1.s1">
+With <Math mode="inline" xml:id="C1.S5.Px5.p1.m1">0\leq r&lt;\infty</Math> , <Math mode="inline" xml:id="C1.S5.Px5.p1.m2">0\leq\phi\leq 2\pi</Math> , <Math mode="inline" xml:id="C1.S5.Px5.p1.m3">-\infty&lt;z&lt;\infty</Math> , <Math equation-number="1.5.14" mode="display" xml:id="C1.S5.E14">x=r\cos\phi,y=r\sin\phi,z=z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C1.S5.Px5.p1.s2">
+Equations (1.5.11) and (1.5.12) still apply, but <Math equation-number="1.5.15" mode="display" xml:id="C1.S5.E15">\nabla^{2}f=\frac{{\partial}^{2}f}{{\partial x}^{2}}+\frac{{\partial}^{2}f}{{ \partial y}^{2}}+\frac{{\partial}^{2}f}{{\partial z}^{2}}=\frac{{\partial}^{2} f}{{\partial r}^{2}}+\frac{1}{r}\frac{\partial f}{\partial r}+\frac{1}{r^{2}} \frac{{\partial}^{2}f}{{\partial\phi}^{2}}+\frac{{\partial}^{2}f}{{\partial z} ^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px6">
+<title>Spherical Coordinates</title>       
+<para xml:id="C1.S5.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S5.Px6.p1.s1">
+With <Math mode="inline" xml:id="C1.S5.Px6.p1.m1">0\leq\rho&lt;\infty</Math> , <Math mode="inline" xml:id="C1.S5.Px6.p1.m2">0\leq\phi\leq 2\pi</Math> , <Math mode="inline" xml:id="C1.S5.Px6.p1.m3">0\leq\theta\leq\pi</Math> , <Math equation-number="1.5.16" mode="display" xml:id="C1.S5.E16">x=\rho\sin\theta\cos\phi,y=\rho\sin\theta\sin\phi,z=\rho\cos\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C1.S5.Px6.p1.s2">
+The Laplacian is given by <Math equation-number="1.5.17" mode="display" xml:id="C1.S5.E17">\nabla^{2}f=\frac{{\partial}^{2}f}{{\partial x}^{2}}+\frac{{\partial}^{2}f}{{ \partial y}^{2}}+\frac{{\partial}^{2}f}{{\partial z}^{2}}={\frac{1}{\rho^{2}} \frac{\partial}{\partial\rho}\left(\rho^{2}\frac{\partial f}{\partial\rho} \right)+\frac{1}{\rho^{2}{\sin^{2}}\theta}\frac{{\partial}^{2}f}{{\partial\phi }^{2}}}+\frac{1}{\rho^{2}\sin\theta}\frac{\partial}{\partial\theta}\left(\sin \theta\frac{\partial f}{\partial\theta}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S5.Px6.p2.s1">
+For applications and other coordinate systems see §§12.17,14.19(i),14.30(iv), 28.32,29.18,30.13, 30.14.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C1.S5.Px6.p2.s2">
+See alsoMorse and Feshbach (1953a, pp. 655-666).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S5.SS3">
+<title>Taylor’s Theorem; Maxima and Minima</title>          
+<para xml:id="C1.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S5.SS3.p1.s1">
+If <Math mode="inline" xml:id="C1.S5.SS3.p1.m1">f</Math> is <Math mode="inline" xml:id="C1.S5.SS3.p1.m2">n+1</Math> times continuously differentiable, then <Math equation-number="1.5.18" mode="display" xml:id="C1.S5.E18">f(a+\lambda,b+\mu)=f+\left(\lambda\frac{\partial}{\partial x}+\mu\frac{ \partial}{\partial y}\right)f+\dots+\frac{1}{n!}\left(\lambda\frac{\partial}{ \partial x}+\mu\frac{\partial}{\partial y}\right)^{n}f+R_{n},</Math> where <Math mode="inline" xml:id="C1.S5.SS3.p1.m3">f</Math> and its partial derivatives on the right-hand side are evaluated at <Math mode="inline" xml:id="C1.S5.SS3.p1.m4">(a,b)</Math> , and <Math mode="inline" xml:id="C1.S5.SS3.p1.m5">R_{n}/(\lambda^{2}+\mu^{2})^{n/2}\to 0</Math> as <Math mode="inline" xml:id="C1.S5.SS3.p1.m6">(\lambda,\mu)\to(0,0)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C1.S5.SS3.p2.s1">
+ <Math mode="inline" xml:id="C1.S5.SS3.p2.m1">f(x,y)</Math> has a local minimum (maximum) at <Math mode="inline" xml:id="C1.S5.SS3.p2.m2">(a,b)</Math> if <Math equation-number="1.5.19" mode="display" xml:id="C1.S5.E19">\frac{\partial f}{\partial x}=\frac{\partial f}{\partial y}=0\quad\mbox{ at $( a,b)$,}</Math> and the second-order term in (1.5.18) is positive definite (negative definite), that is, <Math equation-number="1.5.20" mode="display" xml:id="C1.S5.E20">\frac{{\partial}^{2}f}{{\partial x}^{2}}&gt;0\;\;\;\mbox{$(&lt;0)$}\quad\mbox{ at $( a,b)$,}</Math> and <Math equation-number="1.5.21" mode="display" xml:id="C1.S5.E21">\frac{{\partial}^{2}f}{{\partial x}^{2}}\frac{{\partial}^{2}f}{{\partial y}^{2 }}-\left(\frac{{\partial}^{2}f}{\partial x\partial y}\right)^{2}&gt;0\quad\mbox{ at $(a,b)$}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S5.SS4">
+<title>Leibniz’s Theorem for Differentiation of Integrals</title>          
+ 
+<paragraph xml:id="C1.S5.Px7">
+<title>Finite Integrals</title>  
+ 
+<para xml:id="C1.S5.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C1.S5.Px7.p1.s1">
+ <Math equation-number="1.5.22" mode="display" xml:id="C1.S5.E22">\frac{\mathrm{d}}{\mathrm{d}x}\int^{\beta(x)}_{\alpha(x)}f(x,y)\mathrm{d}y={f( x,\beta(x))\beta^{\prime}(x)-f(x,\alpha(x))\alpha^{\prime}(x)}+\int^{\beta(x)} _{\alpha(x)}\frac{\partial f}{\partial x}\mathrm{d}y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C1.S5.Px7.p1.s2">
+Sufficient conditions for validity are: (a) <Math mode="inline" xml:id="C1.S5.Px7.p1.m1">f</Math> and <Math mode="inline" xml:id="C1.S5.Px7.p1.m2">\ifrac{\partial f}{\partial x}</Math> are continuous on a rectangle <Math mode="inline" xml:id="C1.S5.Px7.p1.m3">a\leq x\leq b</Math> , <Math mode="inline" xml:id="C1.S5.Px7.p1.m4">c\leq y\leq d</Math> ; (b) when <Math mode="inline" xml:id="C1.S5.Px7.p1.m5">x\in[a,b]</Math> both <Math mode="inline" xml:id="C1.S5.Px7.p1.m6">\alpha(x)</Math> and <Math mode="inline" xml:id="C1.S5.Px7.p1.m7">\beta(x)</Math> are continuously differentiable and lie in <Math mode="inline" xml:id="C1.S5.Px7.p1.m8">[c,d]</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px8">
+<title>Infinite Integrals</title>   
+<para xml:id="C1.S5.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S5.Px8.p1.s1">
+Suppose that <Math mode="inline" xml:id="C1.S5.Px8.p1.m1">a,b,c</Math> are finite, <Math mode="inline" xml:id="C1.S5.Px8.p1.m2">d</Math> is finite or <Math mode="inline" xml:id="C1.S5.Px8.p1.m3">+\infty</Math> , and <Math mode="inline" xml:id="C1.S5.Px8.p1.m4">f(x,y)</Math> , <Math mode="inline" xml:id="C1.S5.Px8.p1.m5">\ifrac{\partial f}{\partial x}</Math> are continuous on the partly-closed rectangle or infinite strip <Math mode="inline" xml:id="C1.S5.Px8.p1.m6">[a,b]\times[c,d)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S5.Px8.p1.s2">
+Suppose also that <Math mode="inline" xml:id="C1.S5.Px8.p1.m7">\int^{d}_{c}f(x,y)\mathrm{d}y</Math> converges and <Math mode="inline" xml:id="C1.S5.Px8.p1.m8">\int^{d}_{c}(\ifrac{\partial f}{\partial x})\mathrm{d}y</Math> converges uniformly on <Math mode="inline" xml:id="C1.S5.Px8.p1.m9">a\leq x\leq b</Math> , that is, given any positive number <Math mode="inline" xml:id="C1.S5.Px8.p1.m10">\epsilon</Math> , however small, we can find a number <Math mode="inline" xml:id="C1.S5.Px8.p1.m11">c_{0}\in[c,d)</Math> that is independent of <Math mode="inline" xml:id="C1.S5.Px8.p1.m12">x</Math> and is such that <Math equation-number="1.5.23" mode="display" xml:id="C1.S5.E23">\left|\int_{c_{1}}^{d}(\ifrac{\partial f}{\partial x})\mathrm{d}y\right|&lt;\epsilon,</Math> for all <Math mode="inline" xml:id="C1.S5.Px8.p1.m13">c_{1}\in[c_{0},d)</Math> and all <Math mode="inline" xml:id="C1.S5.Px8.p1.m14">x\in[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C1.S5.Px8.p1.s3">
+Then <Math equation-number="1.5.24" mode="display" xml:id="C1.S5.E24">\frac{\mathrm{d}}{\mathrm{d}x}\int^{d}_{c}f(x,y)\mathrm{d}y=\int^{d}_{c}\frac{ \partial f}{\partial x}\mathrm{d}y, if a&lt;x&lt;b</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S5.SS5">
+<title>Multiple Integrals</title>           
+ 
+<paragraph xml:id="C1.S5.Px9">
+<title>Double Integrals</title>   
+<para xml:id="C1.S5.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S5.Px9.p1.s1">
+Let <Math mode="inline" xml:id="C1.S5.Px9.p1.m1">f(x,y)</Math> be defined on a closed rectangle <Math mode="inline" xml:id="C1.S5.Px9.p1.m2">R=[a,b]\times[c,d]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C1.S5.Px9.p1.s2">
+For <Math equation-number="1.5.25" mode="display" xml:id="C1.S5.E25">a=x_{0}&lt;x_{1}&lt;\cdots&lt;x_{n}=b,</Math> , <Math equation-number="1.5.26" mode="display" xml:id="C1.S5.E26">c=y_{0}&lt;y_{1}&lt;\cdots&lt;y_{m}=d,</Math> let <Math mode="inline" xml:id="C1.S5.Px9.p1.m3">(\xi_{j},\eta_{k})</Math> denote any point in the rectangle <Math mode="inline" xml:id="C1.S5.Px9.p1.m4">[x_{j},x_{j+1}]\times[y_{k},y_{k+1}]</Math> , <Math mode="inline" xml:id="C1.S5.Px9.p1.m5">j=0,\dots,n-1</Math> , <Math mode="inline" xml:id="C1.S5.Px9.p1.m6">k=0,\dots,m-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C1.S5.Px9.p1.s3">
+Thenthe double integral of <Math mode="inline" xml:id="C1.S5.Px9.p1.m7">f(x,y)</Math> over <Math mode="inline" xml:id="C1.S5.Px9.p1.m8">R</Math> is defined by <Math equation-number="1.5.27" mode="display" xml:id="C1.S5.E27">\iint_{R}f(x,y)\mathrm{d}A={\lim\sum_{j,k}f(\xi_{j},\eta_{k})(x_{j+1}-x_{j})(y _{k+1}-y_{k})}</Math> as <Math mode="inline" xml:id="C1.S5.Px9.p1.m9">\max((x_{j+1}-x_{j})+(y_{k+1}-y_{k}))\to 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="30" xml:id="C1.S5.Px9.p1.s4">
+Sufficient conditions for the limit to exist are that <Math mode="inline" xml:id="C1.S5.Px9.p1.m10">f(x,y)</Math> is continuous, or piecewise continuous, on <Math mode="inline" xml:id="C1.S5.Px9.p1.m11">R</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C1.S5.Px9.p2.s1">
+For <Math mode="inline" xml:id="C1.S5.Px9.p2.m1">f(x,y)</Math> defined on a point set <Math mode="inline" xml:id="C1.S5.Px9.p2.m2">D</Math> contained in a rectangle <Math mode="inline" xml:id="C1.S5.Px9.p2.m3">R</Math> , let <Math equation-number="1.5.28" mode="display" xml:id="C1.S5.E28">f^{*}(x,y)=\begin{cases}f(x,y),&amp;\mbox{if $(x,y)\in D$},\\ 0,&amp;\mbox{if $(x,y)\in R\setminus D$.}\end{cases</Math> } Then <Math equation-number="1.5.29" mode="display" xml:id="C1.S5.E29">\iint_{D}f(x,y)\mathrm{d}A=\iint_{R}f^{*}(x,y)\mathrm{d}A,</Math> provided the latter integral exists.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C1.S5.Px9.p3.s1">
+If <Math mode="inline" xml:id="C1.S5.Px9.p3.m1">f(x,y)</Math> is continuous, and <Math mode="inline" xml:id="C1.S5.Px9.p3.m2">D</Math> is the set <Math equation-number="1.5.30" mode="display" xml:id="C1.S5.E30">a\leq x\leq b,\phi_{1}(x)\leq y\leq\phi_{2}(x),</Math> with <Math mode="inline" xml:id="C1.S5.Px9.p3.m3">\phi_{1}(x)</Math> and <Math mode="inline" xml:id="C1.S5.Px9.p3.m4">\phi_{2}(x)</Math> continuous, then <Math equation-number="1.5.31" mode="display" xml:id="C1.S5.E31">\iint_{D}f(x,y)\mathrm{d}A=\int^{b}_{a}\int^{\phi_{2}(x)}_{\phi_{1}(x)}f(x,y) \mathrm{d}y\mathrm{d}x,</Math> where the right-hand side is interpreted as the repeated integral <Math equation-number="1.5.32" mode="display" xml:id="C1.S5.E32">\int^{b}_{a}\left(\int^{\phi_{2}(x)}_{\phi_{1}(x)}f(x,y)\mathrm{d}y\right) \mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C1.S5.Px9.p3.s2">
+In particular, <Math mode="inline" xml:id="C1.S5.Px9.p3.m5">\phi_{1}(x)</Math> and <Math mode="inline" xml:id="C1.S5.Px9.p3.m6">\phi_{2}(x)</Math> can be constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S5.Px9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C1.S5.Px9.p4.s1">
+Similarly, if <Math mode="inline" xml:id="C1.S5.Px9.p4.m1">D</Math> is the set <Math equation-number="1.5.33" mode="display" xml:id="C1.S5.E33">c\leq y\leq d,\psi_{1}(y)\leq x\leq\psi_{2}(y),</Math> with <Math mode="inline" xml:id="C1.S5.Px9.p4.m2">\psi_{1}(y)</Math> and <Math mode="inline" xml:id="C1.S5.Px9.p4.m3">\psi_{2}(y)</Math> continuous, then <Math equation-number="1.5.34" mode="display" xml:id="C1.S5.E34">\iint_{D}f(x,y)\mathrm{d}A=\int^{d}_{c}\int^{\psi_{2}(y)}_{\psi_{1}(y)}f(x,y) \mathrm{d}x\mathrm{d}y</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px10">
+<title>Change of Order of Integration</title>    
+<para xml:id="C1.S5.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C1.S5.Px10.p1.s1">
+If <Math mode="inline" xml:id="C1.S5.Px10.p1.m1">D</Math> can be represented in both forms (1.5.30) and (1.5.33), and <Math mode="inline" xml:id="C1.S5.Px10.p1.m2">f(x,y)</Math> is continuous on <Math mode="inline" xml:id="C1.S5.Px10.p1.m3">D</Math> , then <Math equation-number="1.5.35" mode="display" xml:id="C1.S5.E35">\int^{b}_{a}\int^{\phi_{2}(x)}_{\phi_{1}(x)}f(x,y)\mathrm{d}y\mathrm{d}x=\int^ {d}_{c}\int^{\psi_{2}(y)}_{\psi_{1}(y)}f(x,y)\mathrm{d}x\mathrm{d}y</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px11">
+<title>Infinite Double Integrals</title>     
+<para xml:id="C1.S5.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C1.S5.Px11.p1.s1">
+Infinite double integrals occur when <Math mode="inline" xml:id="C1.S5.Px11.p1.m1">f(x,y)</Math> becomes infinite at points in <Math mode="inline" xml:id="C1.S5.Px11.p1.m2">D</Math> or when <Math mode="inline" xml:id="C1.S5.Px11.p1.m3">D</Math> is unbounded. In the cases (1.5.30) and (1.5.33) they are defined by taking limits in the repeated integrals (1.5.32) and (1.5.34) in an analogous manner to (1.4.22)–(1.4.23).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C1.S5.Px11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C1.S5.Px11.p2.s1">
+Moreover, if <Math mode="inline" xml:id="C1.S5.Px11.p2.m1">a,b,c,d</Math> are finite or infinite constants and <Math mode="inline" xml:id="C1.S5.Px11.p2.m2">f(x,y)</Math> is piecewise continuous on the set <Math mode="inline" xml:id="C1.S5.Px11.p2.m3">(a,b)\times(c,d)</Math> , then <Math equation-number="1.5.36" mode="display" xml:id="C1.S5.E36">\int^{b}_{a}\int^{d}_{c}f(x,y)\mathrm{d}y\mathrm{d}x=\int^{d}_{c}\int^{b}_{a}f (x,y)\mathrm{d}x\mathrm{d}y,</Math> whenever both repeated integrals exist and at least one is absolutely convergent.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px12">
+<title>Triple Integrals</title>    
+<para xml:id="C1.S5.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C1.S5.Px12.p1.s1">
+Finite and infinite integrals can be defined in a similar way.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C1.S5.Px12.p1.s2">
+Often the <Math mode="inline" xml:id="C1.S5.Px12.p1.m1">(x,y,z)</Math> sets are of the form <Math equation-number="1.5.37" mode="display" xml:id="C1.S5.E37">a\leq x\leq b,\phi_{1}(x)\leq y\leq\phi_{2}(x),\psi_{1}(x,y)\leq z\leq\psi_{2}(x,y)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S5.SS6">
+<title>Jacobians and Change of Variables</title>           
+<paragraph xml:id="C1.S5.Px13">
+<title>Jacobian</title>   
+<para xml:id="C1.S5.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C1.S5.Px13.p1.s1">
+ <Math equation-number="1.5.38" mode="display" xml:id="C1.S5.E38">\frac{\partial(f,g)}{\partial(x,y)}=\begin{vmatrix}\ifrac{\partial f}{\partial x }&amp;\ifrac{\partial f}{\partial y}\\ \ifrac{\partial g}{\partial x}&amp;\ifrac{\partial g}{\partial y}\end{vmatrix},</Math> , <Math equation-number="1.5.39" mode="display" xml:id="C1.S5.E39">\frac{\partial(x,y)}{\partial(r,\phi)}=r\quad\text{(polar coordinates)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C1.S5.Px13.p1.s2">
+<Math equation-number="1.5.40" mode="display" xml:id="C1.S5.E40">\frac{\partial(f,g,h)}{\partial(x,y,z)}=\begin{vmatrix}\ifrac{\partial f}{ \partial x}&amp;\ifrac{\partial f}{\partial y}&amp;\ifrac{\partial f}{\partial z}\\ \ifrac{\partial g}{\partial x}&amp;\ifrac{\partial g}{\partial y}&amp;\ifrac{\partial g }{\partial z}\\ \ifrac{\partial h}{\partial x}&amp;\ifrac{\partial h}{\partial y}&amp;\ifrac{\partial h }{\partial z}\end{vmatrix},</Math> , <Math equation-number="1.5.41" mode="display" xml:id="C1.S5.E41">\frac{\partial(x,y,z)}{\partial(\rho,\theta,\phi)}=\rho^{2}\sin\theta\quad \text{(spherical coordinates)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S5.Px14">
+<title>Change of Variables</title>    
+<para xml:id="C1.S5.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C1.S5.Px14.p1.s1">
+ <Math equation-number="1.5.42" mode="display" xml:id="C1.S5.E42">\iint_{D}f(x,y)\mathrm{d}x\mathrm{d}y=\iint_{D^{*}}f(x(u,v),y(u,v))\left|\frac {\partial(x,y)}{\partial(u,v)}\right|\mathrm{d}u\mathrm{d}v,</Math> where <Math mode="inline" xml:id="C1.S5.Px14.p1.m1">D</Math> is the image of <Math mode="inline" xml:id="C1.S5.Px14.p1.m2">D^{*}</Math> under a mapping <Math mode="inline" xml:id="C1.S5.Px14.p1.m3">(u,v)\to(x(u,v),y(u,v))</Math> which is one-to-one except perhaps for a set of points of area zero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C1.S5.Px14.p1.s2">
+<Math equation-number="1.5.43" mode="display" xml:id="C1.S5.E43">\iiint_{D}f(x,y,z)\mathrm{d}x\mathrm{d}y\mathrm{d}z=\iiint_{D^{*}}f(x(u,v,w),y (u,v,w),z(u,v,w))\*\left|\frac{\partial(x,y,z)}{\partial(u,v,w)}\right|\mathrm {d}u\mathrm{d}v\mathrm{d}w</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="44" xml:id="C1.S5.Px14.p1.s3">
+Again the mapping is one-to-one except perhaps for a set of points of volume zero.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

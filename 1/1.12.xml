@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S12">
+<title>Continued Fractions</title>          
+<subsection xml:id="C1.S12.SS1">
+<title>Notation</title>        
+   
+<para xml:id="C1.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S12.SS1.p1.s1">
+The notation used throughout the DLMF for the continued fraction <Math equation-number="1.12.1" mode="display" xml:id="C1.S12.E1">\cfracstyle{d}b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\raisebox{-6.0pt}{ $\ddots$}}}</Math> is <Math equation-number="1.12.2" mode="display" xml:id="C1.S12.E2">b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+}}\cdots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S12.SS2">
+<title>Convergents</title>         
+ 
+<para xml:id="C1.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C1.S12.SS2.p1.s1">
+ <Math equation-number="1.12.3" mode="display" xml:id="C1.S12.E3">C=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}, if a_{n}\not=0,</Math> <Math equation-number="1.12.4" mode="display" xml:id="C1.S12.E4">C_{n}=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots\cfrac{a_{n}}{b_{n}} }}=\frac{A_{n}}{B_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C1.S12.SS2.p1.s2">
+<Math mode="inline" xml:id="C1.S12.SS2.p1.m1">C_{n}</Math> is called the <Math mode="inline" xml:id="C1.S12.SS2.p1.m2">n</Math> th approximant or convergent to <Math mode="inline" xml:id="C1.S12.SS2.p1.m3">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C1.S12.SS2.p1.s3">
+<Math mode="inline" xml:id="C1.S12.SS2.p1.m4">A_{n}</Math> and <Math mode="inline" xml:id="C1.S12.SS2.p1.m5">B_{n}</Math> are called the <Math mode="inline" xml:id="C1.S12.SS2.p1.m6">n</Math> th(canonical) numerator and denominator respectively.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S12.Px1">
+<title>Recurrence Relations</title>          
+<para xml:id="C1.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S12.Px1.p1.s1">
+ <Math equation-number="1.12.5" mode="display" xml:id="C1.S12.E5">A_{k}=b_{k}A_{k-1}+a_{k}A_{k-2}, ,B_{k}=b_{k}B_{k-1}+a_{k}B_{k-2}, , if k=1,2,3,\dots,</Math> <Math equation-number="1.12.6" mode="display" xml:id="C1.S12.E6">A_{-1}=1,A_{0}=b_{0},B_{-1}=0,B_{0}=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S12.Px2">
+<title>Determinant Formula</title>    
+<para xml:id="C1.S12.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C1.S12.Px2.p1.s1">
+ <Math equation-number="1.12.7" mode="display" xml:id="C1.S12.E7">A_{n}B_{n-1}-B_{n}A_{n-1}=(-1)^{n-1}\prod^{n}_{k=1}a_{k}, if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C1.S12.Px2.p1.s2">
+<Math equation-number="1.12.8" mode="display" xml:id="C1.S12.E8">C_{n}-C_{n-1}=\frac{(-1)^{n-1}\prod^{n}_{k=1}a_{k}}{B_{n-1}B_{n}}, if n=1,2,3,\dots,</Math> <Math equation-number="1.12.9" mode="display" xml:id="C1.S12.E9">C_{n}=b_{0}+\frac{a_{1}}{B_{0}B_{1}}-\dots+(-1)^{n-1}\frac{\prod^{n}_{k=1}a_{k }}{B_{n-1}B_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C1.S12.Px2.p1.s3">
+<Math equation-number="1.12.10" mode="display" xml:id="C1.S12.E10">a_{n}=\frac{A_{n-1}B_{n}-A_{n}B_{n-1}}{A_{n-1}B_{n-2}-A_{n-2}B_{n-1}}, if n=1,2,3,\dots,</Math> , <Math equation-number="1.12.11" mode="display" xml:id="C1.S12.E11">a_{n}=\frac{B_{n}}{B_{n-2}}\frac{C_{n-1}-C_{n}}{C_{n-1}-C_{n-2}}, if n=2,3,4,\dots,</Math> <Math equation-number="1.12.12" mode="display" xml:id="C1.S12.E12">b_{n}=\frac{A_{n}B_{n-2}-A_{n-2}B_{n}}{A_{n-1}B_{n-2}-A_{n-2}B_{n-1}}, if n=1,2,3,\dots,</Math> , <Math equation-number="1.12.13" mode="display" xml:id="C1.S12.E13">b_{n}=\frac{B_{n}}{B_{n-1}}\frac{C_{n}-C_{n-2}}{C_{n-1}-C_{n-2}}, if n=2,3,4,\dots,</Math> <Math equation-number="1.12.14" mode="display" xml:id="C1.S12.E14">b_{0}=A_{0}=C_{0},b_{1}=B_{1},a_{1}=A_{1}-A_{0}B_{1}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S12.Px3">
+<title>Equivalence</title>    
+<para xml:id="C1.S12.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S12.Px3.p1.s1">
+Two continued fractions are equivalent if they have the sameconvergents.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S12.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S12.Px3.p2.s1">
+ <Math mode="inline" xml:id="C1.S12.Px3.p2.m1">b_{0}+\displaystyle{\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}}</Math> is equivalent to <Math mode="inline" xml:id="C1.S12.Px3.p2.m2">b^{\prime}_{0}+\displaystyle{\cfrac{a^{\prime}_{1}}{b^{\prime}_{1}+\cfrac{a^{ \prime}_{2}}{b^{\prime}_{2}+\cdots}}}</Math> if there is a sequence <Math mode="inline" xml:id="C1.S12.Px3.p2.m3">\{d_{n}\}^{\infty}_{n=0}</Math> , <Math mode="inline" xml:id="C1.S12.Px3.p2.m4">d_{0}=1</Math> , <Math mode="inline" xml:id="C1.S12.Px3.p2.m5">d_{n}\neq 0</Math> , such that <Math equation-number="1.12.15" mode="display" xml:id="C1.S12.E15">a^{\prime}_{n}=d_{n}d_{n-1}a_{n}, if n=1,2,3,\dots,</Math> and <Math equation-number="1.12.16" mode="display" xml:id="C1.S12.E16">b^{\prime}_{n}=d_{n}b_{n}, if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C1.S12.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S12.Px3.p3.s1">
+Formally, <Math equation-number="1.12.17" mode="display" xml:id="C1.S12.E17">b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cfrac{a_{3}}{b_{3}+\cdots}}}={b _{0}+\cfrac{a_{1}/b_{1}}{1+\cfrac{a_{2}/(b_{1}b_{2})}{1+\cfrac{a_{3}/(b_{2}b_{ 3})}{1+\cdots\cfrac{a_{n}/(b_{n-1}b_{n})}{1+\cdots}}}}}={b_{0}+\cfrac{1}{( \ifrac{1}{a_{1}})b_{1}+\cfrac{1}{(\ifrac{a_{1}}{a_{2}})b_{2}+\cfrac{1}{(\ifrac {a_{2}}{(a_{1}a_{3})})b_{3}+\cfrac{1}{(\ifrac{a_{1}a_{3}}{(a_{2}a_{4})})b_{4}+ \cdots}}}}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S12.Px4">
+<title>Series</title>       
+<para xml:id="C1.S12.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S12.Px4.p1.s1">
+ <Math equation-number="1.12.18" mode="display" xml:id="C1.S12.E18">p_{0}+\sum^{n}_{k=1}p_{1}p_{2}\cdots p_{k}=p_{0}+\cfrac{p_{1}}{1-\cfrac{p_{2}} {1+p_{2}-\cfrac{p_{3}}{1+p_{3}-\cdots\cfrac{p_{n}}{1+p_{n}}}}}, if n=0,1,2,\dots,</Math> when <Math mode="inline" xml:id="C1.S12.Px4.p1.m1">p_{k}\not=0</Math> , <Math mode="inline" xml:id="C1.S12.Px4.p1.m2">k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S12.Px4.p1.s2">
+<Math equation-number="1.12.19" mode="display" xml:id="C1.S12.E19">\sum^{n}_{k=0}c_{k}x^{k}=c_{0}+\cfrac{c_{1}x}{1-\cfrac{(\ifrac{c_{2}}{c_{1}})x }{1+(\ifrac{c_{2}}{c_{1}})x-\cfrac{(\ifrac{c_{3}}{c_{2}})x}{1+(\ifrac{c_{3}}{c _{2}})x-\cdots\cfrac{(\ifrac{c_{n}}{c_{n-1}})x}{1+(\ifrac{c_{n}}{c_{n-1}})x}}}}, if n=0,1,2,\dots,</Math> when <Math mode="inline" xml:id="C1.S12.Px4.p1.m3">c_{k}\not=0</Math> , <Math mode="inline" xml:id="C1.S12.Px4.p1.m4">k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S12.Px5">
+<title>Fractional Transformations</title>   
+ 
+<para xml:id="C1.S12.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C1.S12.Px5.p1.s1">
+Define <Math equation-number="1.12.20" mode="display" xml:id="C1.S12.E20">C_{n}(w)=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots\frac{a_{n}}{b_{n }+w}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C1.S12.Px5.p1.s2">
+Then <Math equation-number="1.12.21" mode="display" xml:id="C1.S12.E21">C_{n}(w)=\frac{A_{n}+A_{n-1}w}{B_{n}+B_{n-1}w},C_{n}(0)=C_{n},C_{n}(\infty)=C_{n-1}=\frac{A_{n-1}}{B_{n-1}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S12.SS3">
+<title>Existence of Convergents</title>        
+  
+<para xml:id="C1.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C1.S12.SS3.p1.s1">
+A sequence <Math mode="inline" xml:id="C1.S12.SS3.p1.m1">\{C_{n}\}</Math> in the extended complex plane, <Math mode="inline" xml:id="C1.S12.SS3.p1.m2">\mathbb{C}\cup\{\infty\}</Math> , can be a sequence of convergents of the continued fraction (1.12.3) iff <Math equation-number="1.12.22" mode="display" xml:id="C1.S12.E22">C_{0}\not=\infty,C_{n}\not=C_{n-1}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S12.SS4">
+<title>Contraction and Extension</title>           
+ 
+<para xml:id="C1.S12.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S12.SS4.p1.s1">
+A contraction of a continued fraction <Math mode="inline" xml:id="C1.S12.SS4.p1.m1">C</Math> is a continued fraction <Math mode="inline" xml:id="C1.S12.SS4.p1.m2">C^{\prime}</Math> whose convergents <Math mode="inline" xml:id="C1.S12.SS4.p1.m3">\{C^{\prime}_{n}\}</Math> form a subsequence of the convergents <Math mode="inline" xml:id="C1.S12.SS4.p1.m4">\{C_{n}\}</Math> of <Math mode="inline" xml:id="C1.S12.SS4.p1.m5">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C1.S12.SS4.p1.s2">
+Conversely, <Math mode="inline" xml:id="C1.S12.SS4.p1.m6">C</Math> is called an extension of <Math mode="inline" xml:id="C1.S12.SS4.p1.m7">C^{\prime}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C1.S12.SS4.p1.s3">
+If <Math mode="inline" xml:id="C1.S12.SS4.p1.m8">C^{\prime}_{n}=C_{2n}</Math> , <Math mode="inline" xml:id="C1.S12.SS4.p1.m9">n=0,1,2,\dots</Math> , then <Math mode="inline" xml:id="C1.S12.SS4.p1.m10">C^{\prime}</Math> is called the even part of <Math mode="inline" xml:id="C1.S12.SS4.p1.m11">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C1.S12.SS4.p1.s4">
+The even part of <Math mode="inline" xml:id="C1.S12.SS4.p1.m12">C</Math> exists iff <Math mode="inline" xml:id="C1.S12.SS4.p1.m13">b_{2k}\not=0</Math> , <Math mode="inline" xml:id="C1.S12.SS4.p1.m14">k=1,2,\dots</Math> , and up to equivalence is given by <Math equation-number="1.12.23" mode="display" xml:id="C1.S12.E23">b_{0}+\cfrac{a_{1}b_{2}}{a_{2}+b_{1}b_{2}-\cfrac{a_{2}a_{3}b_{4}}{a_{3}b_{4}+b _{2}(a_{4}+b_{3}b_{4})-\cfrac{a_{4}a_{5}b_{2}b_{6}}{a_{5}b_{6}+b_{4}(a_{6}+b_{ 5}b_{6})-\cfrac{a_{6}a_{7}b_{4}b_{8}}{a_{7}b_{8}+b_{6}(a_{8}+b_{7}b_{8})- \cdots}}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C1.S12.SS4.p1.s5">
+If <Math mode="inline" xml:id="C1.S12.SS4.p1.m15">C^{\prime}_{n}=C_{2n+1}</Math> , <Math mode="inline" xml:id="C1.S12.SS4.p1.m16">n=0,1,2,\dots</Math> , then <Math mode="inline" xml:id="C1.S12.SS4.p1.m17">C^{\prime}</Math> is called the odd part of <Math mode="inline" xml:id="C1.S12.SS4.p1.m18">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="22" xml:id="C1.S12.SS4.p1.s6">
+The odd part of <Math mode="inline" xml:id="C1.S12.SS4.p1.m19">C</Math> exists iff <Math mode="inline" xml:id="C1.S12.SS4.p1.m20">b_{2k+1}\not=0</Math> , <Math mode="inline" xml:id="C1.S12.SS4.p1.m21">k=0,1,2,\dots</Math> , and up to equivalence is given by <Math equation-number="1.12.24" mode="display" xml:id="C1.S12.E24">\frac{a_{1}+b_{0}b_{1}}{b_{1}}-\cfrac{a_{1}a_{2}b_{3}/b_{1}}{a_{2}b_{3}+b_{1}( a_{3}+b_{2}b_{3})-\cfrac{a_{3}a_{4}b_{1}b_{5}}{a_{4}b_{5}+b_{3}(a_{5}+b_{4}b_{ 5})-\cfrac{a_{5}a_{6}b_{3}b_{7}}{a_{6}b_{7}+b_{5}(a_{7}+b_{6}b_{7})-\cdots}}}</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C1.S12.SS5">
+<title>Convergence</title>          
+<para xml:id="C1.S12.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C1.S12.SS5.p1.s1">
+A continued fraction converges if the convergents <Math mode="inline" xml:id="C1.S12.SS5.p1.m1">C_{n}</Math> tend to a finite limit as <Math mode="inline" xml:id="C1.S12.SS5.p1.m2">n\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S12.Px6">
+<title>Pringsheim’s Theorem</title>   
+  
+<para xml:id="C1.S12.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S12.Px6.p1.s1">
+The continued fraction <Math mode="inline" xml:id="C1.S12.Px6.p1.m1">\displaystyle{\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}}</Math> converges when <Math equation-number="1.12.25" mode="display" xml:id="C1.S12.E25">|b_{n}|\geq|a_{n}|+1, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S12.Px6.p1.s2">
+With these conditions the convergents <Math mode="inline" xml:id="C1.S12.Px6.p1.m2">C_{n}</Math> satisfy <Math mode="inline" xml:id="C1.S12.Px6.p1.m3">|C_{n}|&lt;1</Math> and <Math mode="inline" xml:id="C1.S12.Px6.p1.m4">C_{n}\to C</Math> with <Math mode="inline" xml:id="C1.S12.Px6.p1.m5">|C|\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S12.Px7">
+<title>Van Vleck’s Theorem</title>     
+<para xml:id="C1.S12.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C1.S12.Px7.p1.s1">
+Let the elements of the continued fraction <Math mode="inline" xml:id="C1.S12.Px7.p1.m1">\displaystyle{\cfrac{1}{b_{1}+\cfrac{1}{b_{2}+\cdots}}}</Math> satisfy <Math equation-number="1.12.26" mode="display" xml:id="C1.S12.E26">-\tfrac{1}{2}\pi+\delta&lt;\operatorname{ph}b_{n}&lt;\tfrac{1}{2}\pi-\delta, if n=1,2,3,\dots,</Math> where <Math mode="inline" xml:id="C1.S12.Px7.p1.m2">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C1.S12.Px7.p1.s2">
+Then the convergents <Math mode="inline" xml:id="C1.S12.Px7.p1.m3">C_{n}</Math> satisfy <Math equation-number="1.12.27" mode="display" xml:id="C1.S12.E27">-\tfrac{1}{2}\pi+\delta&lt;\operatorname{ph}C_{n}&lt;\tfrac{1}{2}\pi-\delta, if n=1,2,3,\dots,</Math> and the even and odd parts of the continued fraction converge to finite values.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C1.S12.Px7.p1.s3">
+The continued fraction converges iff, in addition, <Math equation-number="1.12.28" mode="display" xml:id="C1.S12.E28">\sum^{\infty}_{n=1}|b_{n}|=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C1.S12.Px7.p1.s4">
+In this case <Math mode="inline" xml:id="C1.S12.Px7.p1.m4">|\operatorname{ph}C|\leq\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S12.SS6">
+<title>Applications</title>          
+<para xml:id="C1.S12.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S12.SS6.p1.s1">
+For analytical and numerical applications of continued fractions to special functions see §3.10.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

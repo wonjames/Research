@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S8">
+<title>Fourier Series</title>          
+<subsection xml:id="C1.S8.SS1">
+<title>Definitions and Elementary Properties</title>           
+<para xml:id="C1.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S8.SS1.p1.s1">
+Formally, <Math equation-number="1.8.1" mode="display" xml:id="C1.S8.E1">f(x)=\tfrac{1}{2}a_{0}+\sum^{\infty}_{n=1}(a_{n}\cos\left(nx\right)+b_{n}\sin \left(nx\right)),</Math> <Math equation-number="1.8.2" mode="display" xml:id="C1.S8.E2">a_{n}=\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)\cos\left(nx\right)\mathrm{d}x, if n=0,1,2,\dots, //// b_{n}=\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)\sin\left(nx\right)\mathrm{d}x, if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C1.S8.SS1.p1.s2">
+The series (1.8.1) is called the Fourier series of <Math mode="inline" xml:id="C1.S8.SS1.p1.m1">f(x)</Math> , and <Math mode="inline" xml:id="C1.S8.SS1.p1.m2">a_{n},b_{n}</Math> are the Fourier coefficients of <Math mode="inline" xml:id="C1.S8.SS1.p1.m3">f(x)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C1.S8.SS1.p2.s1">
+If <Math mode="inline" xml:id="C1.S8.SS1.p2.m1">f(-x)=f(x)</Math> , then <Math mode="inline" xml:id="C1.S8.SS1.p2.m2">b_{n}=0</Math> for all <Math mode="inline" xml:id="C1.S8.SS1.p2.m3">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C1.S8.SS1.p3.s1">
+If <Math mode="inline" xml:id="C1.S8.SS1.p3.m1">f(-x)=-f(x)</Math> , then <Math mode="inline" xml:id="C1.S8.SS1.p3.m2">a_{n}=0</Math> for all <Math mode="inline" xml:id="C1.S8.SS1.p3.m3">n</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C1.S8.Px1">
+<title>Alternative Form</title>  
+ 
+<para xml:id="C1.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S8.Px1.p1.s1">
+ <Math equation-number="1.8.3" mode="display" xml:id="C1.S8.E3">f(x)=\sum^{\infty}_{n=-\infty}c_{n}e^{inx},</Math> <Math equation-number="1.8.4" mode="display" xml:id="C1.S8.E4">c_{n}=\frac{1}{2\pi}\int^{\pi}_{-\pi}f(x)e^{-inx}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px2">
+<title>Bessel’s Inequality</title>     
+<para xml:id="C1.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C1.S8.Px2.p1.s1">
+ <Math equation-number="1.8.5" mode="display" xml:id="C1.S8.E5">\tfrac{1}{2}a_{0}^{2}+\sum^{\infty}_{n=1}(a_{n}^{2}+b_{n}^{2})\leq\frac{1}{\pi }\int^{\pi}_{-\pi}(f(x))^{2}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C1.S8.Px2.p1.s2">
+<Math equation-number="1.8.6" mode="display" xml:id="C1.S8.E6">\sum^{\infty}_{n=-\infty}|c_{n}|^{2}\leq\frac{1}{2\pi}\int^{\pi}_{-\pi}|f(x)|^ {2}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px3">
+<title>Asymptotic Estimates of Coefficients</title>   
+<para xml:id="C1.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S8.Px3.p1.s1">
+If <Math mode="inline" xml:id="C1.S8.Px3.p1.m1">f(x)</Math> is of period <Math mode="inline" xml:id="C1.S8.Px3.p1.m2">2\pi</Math> , and <Math mode="inline" xml:id="C1.S8.Px3.p1.m3">f^{(m)}(x)</Math> is piecewise continuous, then <Math equation-number="1.8.7" mode="display" xml:id="C1.S8.E7">a_{n},b_{n},c_{n}=o\left(n^{-m}\right), if n\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px4">
+<title>Uniqueness of Fourier Series</title>    
+<para xml:id="C1.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C1.S8.Px4.p1.s1">
+If <Math mode="inline" xml:id="C1.S8.Px4.p1.m1">f(x)</Math> and <Math mode="inline" xml:id="C1.S8.Px4.p1.m2">g(x)</Math> are continuous, have the same period and same Fourier coefficients, then <Math mode="inline" xml:id="C1.S8.Px4.p1.m3">f(x)=g(x)</Math> for all <Math mode="inline" xml:id="C1.S8.Px4.p1.m4">x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px5">
+<title>Lebesgue Constants</title>    
+ 
+<para xml:id="C1.S8.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S8.Px5.p1.s1">
+ <Math equation-number="1.8.8" mode="display" xml:id="C1.S8.E8">L_{n}=\frac{1}{\pi}\int^{\pi}_{0}\frac{\left|\sin\left(n+\frac{1}{2}\right)t \right|}{\sin\left(\frac{1}{2}t\right)}\mathrm{d}t, if n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C1.S8.Px5.p2.s1">
+As <Math mode="inline" xml:id="C1.S8.Px5.p2.m1">n\to\infty</Math> <Math equation-number="1.8.9" mode="display" xml:id="C1.S8.E9">L_{n}\sim(4/\pi^{2})\ln n;</Math> see Frenzen and Wong (1986).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px6">
+<title>Riemann–Lebesgue Lemma</title>    
+<para xml:id="C1.S8.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C1.S8.Px6.p1.s1">
+For <Math mode="inline" xml:id="C1.S8.Px6.p1.m1">f(x)</Math> piecewise continuous on <Math mode="inline" xml:id="C1.S8.Px6.p1.m2">[a,b]</Math> and real <Math mode="inline" xml:id="C1.S8.Px6.p1.m3">\lambda</Math> , <Math equation-number="1.8.10" mode="display" xml:id="C1.S8.E10">\int^{b}_{a}f(x)e^{i\lambda x}\mathrm{d}x\to 0, if as \lambda\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C1.S8.Px6.p1.s2">
+(1.8.10) continues to apply if either <Math mode="inline" xml:id="C1.S8.Px6.p1.m4">a</Math> or <Math mode="inline" xml:id="C1.S8.Px6.p1.m5">b</Math> or both are infinite and/or <Math mode="inline" xml:id="C1.S8.Px6.p1.m6">f(x)</Math> has finitely many singularities in <Math mode="inline" xml:id="C1.S8.Px6.p1.m7">(a,b)</Math> , provided that the integral converges uniformly (§1.5(iv)) at <Math mode="inline" xml:id="C1.S8.Px6.p1.m8">a,b</Math> , and the singularities for all sufficiently large <Math mode="inline" xml:id="C1.S8.Px6.p1.m9">\lambda</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S8.SS2">
+<title>Convergence</title>          
+<para xml:id="C1.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C1.S8.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C1.S8.SS2.p1.m1">f(x)</Math> be an absolutely integrable function of period <Math mode="inline" xml:id="C1.S8.SS2.p1.m2">2\pi</Math> , and continuous except at a finite number of points in any bounded interval.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C1.S8.SS2.p1.s2">
+Then the series (1.8.1) converges to the sum <Math equation-number="1.8.11" mode="display" xml:id="C1.S8.E11">\tfrac{1}{2}f(x-)+\tfrac{1}{2}f(x+)</Math> at every point at which <Math mode="inline" xml:id="C1.S8.SS2.p1.m3">f(x)</Math> has both a left-hand derivative (that is, (1.4.4) applies when <Math mode="inline" xml:id="C1.S8.SS2.p1.m4">h\to 0-</Math> ) and a right-hand derivative (that is, (1.4.4) applies when <Math mode="inline" xml:id="C1.S8.SS2.p1.m5">h\to 0+</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C1.S8.SS2.p1.s3">
+The convergence is non-uniform, however, at points where <Math mode="inline" xml:id="C1.S8.SS2.p1.m6">f(x-)\neq f(x+)</Math> ; see §6.16(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C1.S8.SS2.p2.s1">
+For other tests for convergence see Titchmarsh (1962, pp. 405–410).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S8.SS3">
+<title>Integration and Differentiation</title>           
+<para xml:id="C1.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S8.SS3.p1.s1">
+If <Math mode="inline" xml:id="C1.S8.SS3.p1.m1">a_{n}</Math> and <Math mode="inline" xml:id="C1.S8.SS3.p1.m2">b_{n}</Math> are the Fourier coefficients of a piecewise continuous function <Math mode="inline" xml:id="C1.S8.SS3.p1.m3">f(x)</Math> on <Math mode="inline" xml:id="C1.S8.SS3.p1.m4">[0,2\pi]</Math> , then <Math equation-number="1.8.12" mode="display" xml:id="C1.S8.E12">\int^{x}_{0}(f(t)-\tfrac{1}{2}a_{0})\mathrm{d}t=\sum^{\infty}_{n=1}\frac{a_{n} \sin\left(nx\right)+b_{n}(1-\cos\left(nx\right))}{n}, if 0\leq x\leq 2\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C1.S8.SS3.p2.s1">
+If a function <Math mode="inline" xml:id="C1.S8.SS3.p2.m1">f(x)\in C^{2}[0,2\pi]</Math> is periodic, with period <Math mode="inline" xml:id="C1.S8.SS3.p2.m2">2\pi</Math> , then the series obtained by differentiating the Fourier series for <Math mode="inline" xml:id="C1.S8.SS3.p2.m3">f(x)</Math> term by term converges at every point to <Math mode="inline" xml:id="C1.S8.SS3.p2.m4">f^{\prime}(x)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S8.SS4">
+<title>Transformations</title>         
+<paragraph xml:id="C1.S8.Px7">
+<title>Parseval’s Formula</title>     
+<para xml:id="C1.S8.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C1.S8.Px7.p1.s1">
+ <Math equation-number="1.8.13" mode="display" xml:id="C1.S8.E13">\frac{1}{\pi}\int^{\pi}_{-\pi}f(x)g(x)\mathrm{d}x=\tfrac{1}{2}a_{0}a^{\prime}_ {0}+\sum^{\infty}_{n=1}(a_{n}a^{\prime}_{n}+b_{n}b^{\prime}_{n}),</Math> when <Math mode="inline" xml:id="C1.S8.Px7.p1.m1">f(x)</Math> and <Math mode="inline" xml:id="C1.S8.Px7.p1.m2">g(x)</Math> are square-integrable and <Math mode="inline" xml:id="C1.S8.Px7.p1.m3">a_{n},b_{n}</Math> and <Math mode="inline" xml:id="C1.S8.Px7.p1.m4">a^{\prime}_{n},b^{\prime}_{n}</Math> are their respective Fourier coefficients.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C1.S8.Px8">
+<title>Poisson’s Summation Formula</title>     
+<para xml:id="C1.S8.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C1.S8.Px8.p1.s1">
+Suppose that <Math mode="inline" xml:id="C1.S8.Px8.p1.m1">f(x)</Math> is twice continuously differentiable and <Math mode="inline" xml:id="C1.S8.Px8.p1.m2">f(x)</Math> and <Math mode="inline" xml:id="C1.S8.Px8.p1.m3">|f^{\prime\prime}(x)|</Math> are integrable over <Math mode="inline" xml:id="C1.S8.Px8.p1.m4">(-\infty,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C1.S8.Px8.p1.s2">
+Then <Math equation-number="1.8.14" mode="display" xml:id="C1.S8.E14">\sum^{\infty}_{n=-\infty}f(x+n)=\sum^{\infty}_{n=-\infty}e^{2\pi inx}\int^{ \infty}_{-\infty}f(t)e^{-2\pi int}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C1.S8.Px8.p2.s1">
+An alternative formulation is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C1.S8.Px8.p2.s2">
+Suppose that <Math mode="inline" xml:id="C1.S8.Px8.p2.m1">f(x)</Math> is continuous and of bounded variation on <Math mode="inline" xml:id="C1.S8.Px8.p2.m2">[0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C1.S8.Px8.p2.s3">
+Suppose also that <Math mode="inline" xml:id="C1.S8.Px8.p2.m3">f(x)</Math> is integrable on <Math mode="inline" xml:id="C1.S8.Px8.p2.m4">[0,\infty)</Math> and <Math mode="inline" xml:id="C1.S8.Px8.p2.m5">f(x)\to 0</Math> as <Math mode="inline" xml:id="C1.S8.Px8.p2.m6">x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C1.S8.Px8.p2.s4">
+Then <Math equation-number="1.8.15" mode="display" xml:id="C1.S8.E15">\tfrac{1}{2}f(0)+\sum^{\infty}_{n=1}f(n)=\int^{\infty}_{0}f(x)\mathrm{d}x+2 \sum^{\infty}_{n=1}\int^{\infty}_{0}f(x)\cos\left(2\pi nx\right)\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S8.Px8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S8.Px8.p3.s1">
+As a special case <Math equation-number="1.8.16" mode="display" xml:id="C1.S8.E16">\sum_{n=-\infty}^{\infty}e^{-(n+x)^{2}\omega}={\sqrt{\frac{\pi}{\omega}}\* \left(1+2\sum_{n=1}^{\infty}e^{-n^{2}\pi^{2}/\omega}\cos\left(2n\pi x\right) \right)}, if \Re\omega&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S8.SS5">
+<title>Examples</title>        
+  
+<para xml:id="C1.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S8.SS5.p1.s1">
+For collections of Fourier-series expansions seePrudnikov et al. (1986a, v. 1, pp. 725–740),Gradshteyn and Ryzhik (2000, pp. 45–49), and Oberhettinger (1973).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

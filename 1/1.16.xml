@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C1.S16">
+<title>Distributions</title>        
+ 
+<subsection xml:id="C1.S16.SS1">
+<title>Test Functions</title>               
+<para xml:id="C1.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C1.S16.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C1.S16.SS1.p1.m1">\phi</Math> be a function defined on an open interval <Math mode="inline" xml:id="C1.S16.SS1.p1.m2">I=(a,b)</Math> , which can be infinite.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C1.S16.SS1.p1.s2">
+The closure of the set of points where <Math mode="inline" xml:id="C1.S16.SS1.p1.m3">\phi\not=0</Math> is called thesupport of <Math mode="inline" xml:id="C1.S16.SS1.p1.m4">\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C1.S16.SS1.p1.s3">
+If the support of <Math mode="inline" xml:id="C1.S16.SS1.p1.m5">\phi</Math> is a compact set (§1.9(vii)), then <Math mode="inline" xml:id="C1.S16.SS1.p1.m6">\phi</Math> is called a function of compact support.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C1.S16.SS1.p1.s4">
+A test function is an infinitely differentiable function of compact support.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C1.S16.SS1.p2.s1">
+A sequence <Math mode="inline" xml:id="C1.S16.SS1.p2.m1">\{\phi_{n}\}</Math> of test functions converges to a test function <Math mode="inline" xml:id="C1.S16.SS1.p2.m2">\phi</Math> if the support of every <Math mode="inline" xml:id="C1.S16.SS1.p2.m3">\phi_{n}</Math> is contained in a fixed compact set <Math mode="inline" xml:id="C1.S16.SS1.p2.m4">K</Math> and as <Math mode="inline" xml:id="C1.S16.SS1.p2.m5">n\to\infty</Math> the sequence <Math mode="inline" xml:id="C1.S16.SS1.p2.m6">\{\phi_{n}^{(k)}\}</Math> converges uniformly on <Math mode="inline" xml:id="C1.S16.SS1.p2.m7">K</Math> to <Math mode="inline" xml:id="C1.S16.SS1.p2.m8">\phi^{(k)}</Math> for <Math mode="inline" xml:id="C1.S16.SS1.p2.m9">k=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C1.S16.SS1.p3.s1">
+The linear space of all test functions with the above definition of convergence is called a test function space.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C1.S16.SS1.p3.s2">
+We denote it by <Math mode="inline" xml:id="C1.S16.SS1.p3.m1">\mathcal{D}(I)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C1.S16.SS1.p4.s1">
+A mapping <Math mode="inline" xml:id="C1.S16.SS1.p4.m1">\Lambda</Math> on <Math mode="inline" xml:id="C1.S16.SS1.p4.m2">\mathcal{D}(I)</Math> is a linear functional if it takes complex values and <Math equation-number="1.16.1" mode="display" xml:id="C1.S16.E1">\Lambda(\alpha_{1}\phi_{1}+\alpha_{2}\phi_{2})=\alpha_{1}\Lambda(\phi_{1})+ \alpha_{2}\Lambda(\phi_{2}),</Math> where <Math mode="inline" xml:id="C1.S16.SS1.p4.m3">\alpha_{1}</Math> and <Math mode="inline" xml:id="C1.S16.SS1.p4.m4">\alpha_{2}</Math> are real or complex constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C1.S16.SS1.p4.s2">
+<Math mode="inline" xml:id="C1.S16.SS1.p4.m5">\Lambda:\mathcal{D}(I)\rightarrow\mathbb{C}</Math> is called a distribution if it is a continuous linear functional on <Math mode="inline" xml:id="C1.S16.SS1.p4.m6">\mathcal{D}(I)</Math> , that is, it is a linear functional and for every <Math mode="inline" xml:id="C1.S16.SS1.p4.m7">\phi_{n}\to\phi</Math> in <Math mode="inline" xml:id="C1.S16.SS1.p4.m8">\mathcal{D}(I)</Math> , <Math equation-number="1.16.2" mode="display" xml:id="C1.S16.E2">\lim_{n\to\infty}\Lambda(\phi_{n})=\Lambda(\phi)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C1.S16.SS1.p5.s1">
+From here on we write <Math mode="inline" xml:id="C1.S16.SS1.p5.m1">\left\langle\Lambda,\phi\right\rangle</Math> for <Math mode="inline" xml:id="C1.S16.SS1.p5.m2">\Lambda(\phi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C1.S16.SS1.p5.s2">
+The space of all distributions will be denoted by <Math mode="inline" xml:id="C1.S16.SS1.p5.m3">\mathcal{D}^{*}(I)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C1.S16.SS1.p5.s3">
+A distribution <Math mode="inline" xml:id="C1.S16.SS1.p5.m4">\Lambda</Math> is called regular if there is a function <Math mode="inline" xml:id="C1.S16.SS1.p5.m6">f</Math> on <Math mode="inline" xml:id="C1.S16.SS1.p5.m7">I</Math> , which is absolutely integrable on every compact subset of <Math mode="inline" xml:id="C1.S16.SS1.p5.m8">I</Math> , such that <Math equation-number="1.16.3" mode="display" xml:id="C1.S16.E3">\left\langle\Lambda,\phi\right\rangle=\int_{I}f(x)\phi(x)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C1.S16.SS1.p5.s4">
+We denote a regular distribution by <Math mode="inline" xml:id="C1.S16.SS1.p5.m9">\Lambda_{f}</Math> , or simply <Math mode="inline" xml:id="C1.S16.SS1.p5.m10">f</Math> , where <Math mode="inline" xml:id="C1.S16.SS1.p5.m11">f</Math> isthe function giving rise to the distribution.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C1.S16.SS1.p5.s5">
+(If a distribution is not regular, it is called singular.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C1.S16.SS1.p6.s1">
+Define <Math equation-number="1.16.4" mode="display" xml:id="C1.S16.E4">\left\langle\Lambda_{1}+\Lambda_{2},\phi\right\rangle=\left\langle\Lambda_{1}, \phi\right\rangle+\left\langle\Lambda_{2},\phi\right\rangle,</Math> <Math equation-number="1.16.5" mode="display" xml:id="C1.S16.E5">\left\langle c\Lambda,\phi\right\rangle=c\left\langle\Lambda,\phi\right\rangle =\left\langle\Lambda,c\phi\right\rangle,</Math> where <Math mode="inline" xml:id="C1.S16.SS1.p6.m1">c</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C1.S16.SS1.p6.s2">
+More generally, if <Math mode="inline" xml:id="C1.S16.SS1.p6.m2">\alpha(x)</Math> is an infinitely differentiable function, then <Math equation-number="1.16.6" mode="display" xml:id="C1.S16.E6">\left\langle\alpha\Lambda,\phi\right\rangle=\left\langle\Lambda,\alpha\phi \right\rangle</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C1.S16.SS1.p6.s3">
+We say that a sequence of distributions <Math mode="inline" xml:id="C1.S16.SS1.p6.m3">\{\Lambda_{n}\}</Math> converges to a distribution <Math mode="inline" xml:id="C1.S16.SS1.p6.m4">\Lambda</Math> in <Math mode="inline" xml:id="C1.S16.SS1.p6.m5">\mathcal{D}^{*}</Math> if <Math equation-number="1.16.7" mode="display" xml:id="C1.S16.E7">\lim_{n\to\infty}\left\langle\Lambda_{n},\phi\right\rangle=\left\langle\Lambda ,\phi\right\rangle</Math> for all <Math mode="inline" xml:id="C1.S16.SS1.p6.m6">\phi\in\mathcal{D}(I)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS2">
+<title>Derivatives of a Distribution</title>          
+ 
+<para xml:id="C1.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C1.S16.SS2.p1.s1">
+The derivative <Math mode="inline" xml:id="C1.S16.SS2.p1.m1">\Lambda^{\prime}</Math> of a distribution is defined by <Math equation-number="1.16.8" mode="display" xml:id="C1.S16.E8">\left\langle\Lambda^{\prime},\phi\right\rangle=-\left\langle\Lambda,\phi^{ \prime}\right\rangle, if \phi\in\mathcal{D}(I)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C1.S16.SS2.p1.s2">
+Similarly <Math equation-number="1.16.9" mode="display" xml:id="C1.S16.E9">\left\langle\Lambda^{(k)},\phi\right\rangle=(-1)^{k}\left\langle\Lambda,\phi^{ (k)}\right\rangle, if k=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C1.S16.SS2.p1.s3">
+For any locally integrable function <Math mode="inline" xml:id="C1.S16.SS2.p1.m2">f</Math> , its distributional derivative is <Math mode="inline" xml:id="C1.S16.SS2.p1.m3">Df=\Lambda^{\prime}_{f}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS3">
+<title>Dirac Delta Distribution</title>        
+ 
+   
+<para xml:id="C1.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C1.S16.SS3.p1.s1">
+ <Math equation-number="1.16.10" mode="display" xml:id="C1.S16.E10">\left\langle\delta,\phi\right\rangle=\phi(0), if \phi\in\mathcal{D}(I),</Math> , <Math equation-number="1.16.11" mode="display" xml:id="C1.S16.E11">\left\langle\delta_{x_{0}},\phi\right\rangle=\phi(x_{0}), if \phi\in\mathcal{D}(I),</Math> , <Math equation-number="1.16.12" mode="display" xml:id="C1.S16.E12">\left\langle{\delta_{x_{0}}^{(n)}},\phi\right\rangle=(-1)^{n}\phi^{(n)}(x_{0}), if \phi\in\mathcal{D}(I)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C1.S16.SS3.p1.s2">
+The Dirac delta distribution is singular.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS4">
+<title>Heaviside Function</title>            
+<para xml:id="C1.S16.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C1.S16.SS4.p1.s1">
+ <Math equation-number="1.16.13" mode="display" xml:id="C1.S16.E13">H\left(x\right)=\begin{cases}1,&amp;x&gt;0,\\ 0,&amp;x\leq 0.\end{cases}</Math> , <Math equation-number="1.16.14" mode="display" xml:id="C1.S16.E14">H\left(x-x_{0}\right)=\begin{cases}1,&amp;x&gt;x_{0},\\ 0,&amp;x\leq x_{0}.\end{cases</Math> }, <Math equation-number="1.16.15" mode="display" xml:id="C1.S16.E15">D\!H=\delta,</Math> , <Math equation-number="1.16.16" mode="display" xml:id="C1.S16.E16">D\!H\left(x-x_{0}\right)=\delta_{x_{0}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C1.S16.SS4.p2.s1">
+Suppose <Math mode="inline" xml:id="C1.S16.SS4.p2.m1">f(x)</Math> is infinitely differentiable except at <Math mode="inline" xml:id="C1.S16.SS4.p2.m2">x_{0}</Math> , where left and right derivatives of all orders exist, and <Math equation-number="1.16.17" mode="display" xml:id="C1.S16.E17">\sigma_{n}=f^{(n)}(x_{0}+)-f^{(n)}(x_{0}-)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C1.S16.SS4.p2.s2">
+Then <Math equation-number="1.16.18" mode="display" xml:id="C1.S16.E18">D^{m}f=f^{(m)}+\sigma_{0}{\delta_{x_{0}}^{(m-1)}}+\sigma_{1}{\delta_{x_{0}}^{( m-2)}}+\dots+\sigma_{m-1}\delta_{x_{0}}, if m=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C1.S16.SS4.p3.s1">
+For <Math mode="inline" xml:id="C1.S16.SS4.p3.m1">\alpha&gt;-1</Math> , <Math equation-number="1.16.19" mode="display" xml:id="C1.S16.E19">x^{\alpha}_{+}=x^{\alpha}H\left(x\right)=\begin{cases}x^{\alpha},&amp;x&gt;0,\\ 0,&amp;x\leq 0.\end{cases}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C1.S16.SS4.p4.s1">
+For <Math mode="inline" xml:id="C1.S16.SS4.p4.m1">\alpha&gt;0</Math> , <Math equation-number="1.16.20" mode="display" xml:id="C1.S16.E20">Dx^{\alpha}_{+}=\alpha x_{+}^{\alpha-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C1.S16.SS4.p5.s1">
+For <Math mode="inline" xml:id="C1.S16.SS4.p5.m1">\alpha&lt;-1</Math> and <Math mode="inline" xml:id="C1.S16.SS4.p5.m2">\alpha</Math> not an integer, define <Math equation-number="1.16.21" mode="display" xml:id="C1.S16.E21">x^{\alpha}_{+}=\frac{1}{(\alpha+1)_{n}}D^{n}x_{+}^{\alpha+n},</Math> where <Math mode="inline" xml:id="C1.S16.SS4.p5.m3">n</Math> is an integer such that <Math mode="inline" xml:id="C1.S16.SS4.p5.m4">\alpha+n&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C1.S16.SS4.p5.s2">
+Similarly, we write <Math equation-number="1.16.22" mode="display" xml:id="C1.S16.E22">\ln_{+}x=H\left(x\right)\ln x=\begin{cases}\ln x,&amp;x&gt;0,\\ 0,&amp;x\leq 0,\end{cases}</Math> and define <Math equation-number="1.16.23" mode="display" xml:id="C1.S16.E23">(-1)^{n}n!x_{+}^{-1-n}=D^{(n+1)}\ln_{+}x, if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS5">
+<title>Tempered Distributions</title>           
+<para xml:id="C1.S16.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C1.S16.SS5.p1.s1">
+The space <Math mode="inline" xml:id="C1.S16.SS5.p1.m1">\mathcal{T}(\mathbb{R})</Math> of test functions for tempered distributions consists of all infinitely-differentiable functions such that the function and all its derivatives are <Math mode="inline" xml:id="C1.S16.SS5.p1.m2">O\left(|x|^{-N}\right)</Math> as <Math mode="inline" xml:id="C1.S16.SS5.p1.m3">|x|\to\infty</Math> for all <Math mode="inline" xml:id="C1.S16.SS5.p1.m4">N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C1.S16.SS5.p2.s1">
+A sequence <Math mode="inline" xml:id="C1.S16.SS5.p2.m1">\{\phi_{n}\}</Math> of functions in <Math mode="inline" xml:id="C1.S16.SS5.p2.m2">\mathcal{T}</Math> is said toconverge to a function <Math mode="inline" xml:id="C1.S16.SS5.p2.m3">\phi\in\mathcal{T}</Math> as <Math mode="inline" xml:id="C1.S16.SS5.p2.m4">n\to\infty</Math> if the sequence <Math mode="inline" xml:id="C1.S16.SS5.p2.m5">\{\phi_{n}^{(k)}\}</Math> converges uniformly to <Math mode="inline" xml:id="C1.S16.SS5.p2.m6">\phi^{(k)}</Math> on every finite interval and if the constants <Math mode="inline" xml:id="C1.S16.SS5.p2.m7">c_{k,N}</Math> in the inequalities <Math equation-number="1.16.24" mode="display" xml:id="C1.S16.E24">|x^{N}\phi_{n}^{(k)}|\leq c_{k,N}</Math> do not depend on <Math mode="inline" xml:id="C1.S16.SS5.p2.m8">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C1.S16.SS5.p3.s1">
+A tempered distribution is a continuous linear functional <Math mode="inline" xml:id="C1.S16.SS5.p3.m1">\Lambda</Math> on <Math mode="inline" xml:id="C1.S16.SS5.p3.m2">\mathcal{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C1.S16.SS5.p3.s2">
+(See the definition of a distribution in §1.16(i).)The set of tempered distributions is denoted by <Math mode="inline" xml:id="C1.S16.SS5.p3.m3">\mathcal{T}^{*}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C1.S16.SS5.p4.s1">
+A sequence of tempered distributions <Math mode="inline" xml:id="C1.S16.SS5.p4.m1">\Lambda_{n}</Math> converges to <Math mode="inline" xml:id="C1.S16.SS5.p4.m2">\Lambda</Math> in <Math mode="inline" xml:id="C1.S16.SS5.p4.m3">\mathcal{T}^{*}</Math> if <Math equation-number="1.16.25" mode="display" xml:id="C1.S16.E25">\lim_{n\to\infty}\left\langle\Lambda_{n},\phi\right\rangle=\left\langle\Lambda ,\phi\right\rangle,</Math> for all <Math mode="inline" xml:id="C1.S16.SS5.p4.m4">\phi\in\mathcal{T}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C1.S16.SS5.p5.s1">
+The derivatives of tempered distributions are defined in the same way as derivatives of distributions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C1.S16.SS5.p6.s1">
+For a detailed discussion of tempered distributions seeLighthill (1958).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS6">
+<title>Distributions of Several Variables</title>           
+<para xml:id="C1.S16.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C1.S16.SS6.p1.s1">
+Let <Math mode="inline" xml:id="C1.S16.SS6.p1.m1">\mathcal{D}({\mathbb{R}^{n}})=\mathcal{D}_{n}</Math> be the set of all infinitely differentiable functions in <Math mode="inline" xml:id="C1.S16.SS6.p1.m2">n</Math> variables, <Math mode="inline" xml:id="C1.S16.SS6.p1.m3">\phi(x_{1},x_{2},\dots,x_{n})</Math> , with compact support in <Math mode="inline" xml:id="C1.S16.SS6.p1.m4">{\mathbb{R}^{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C1.S16.SS6.p1.s2">
+If <Math mode="inline" xml:id="C1.S16.SS6.p1.m5">k=(k_{1},\dots,k_{n})</Math> is a multi-index and <Math mode="inline" xml:id="C1.S16.SS6.p1.m6">x=(x_{1},\dots,x_{n})\in{\mathbb{R}^{n}}</Math> , then we write <Math mode="inline" xml:id="C1.S16.SS6.p1.m7">x^{k}=x_{1}^{k_{1}}\cdots x_{n}^{k_{n}}</Math> and <Math mode="inline" xml:id="C1.S16.SS6.p1.m8">\phi^{(k)}(x)={\partial}^{k}\phi/(\partial x_{1}^{k_{1}}\cdots\partial x_{n}^{ k_{n}})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C1.S16.SS6.p1.s3">
+A sequence <Math mode="inline" xml:id="C1.S16.SS6.p1.m9">\{\phi_{m}\}</Math> of functions in <Math mode="inline" xml:id="C1.S16.SS6.p1.m10">\mathcal{D}_{n}</Math> converges to a function <Math mode="inline" xml:id="C1.S16.SS6.p1.m11">\phi\in\mathcal{D}_{n}</Math> if the supports of <Math mode="inline" xml:id="C1.S16.SS6.p1.m12">\phi_{m}</Math> lie in a fixed compact subset <Math mode="inline" xml:id="C1.S16.SS6.p1.m13">K</Math> of <Math mode="inline" xml:id="C1.S16.SS6.p1.m14">{\mathbb{R}^{n}}</Math> and <Math mode="inline" xml:id="C1.S16.SS6.p1.m15">\phi_{m}^{(k)}</Math> converges uniformly to <Math mode="inline" xml:id="C1.S16.SS6.p1.m16">\phi^{(k)}</Math> in <Math mode="inline" xml:id="C1.S16.SS6.p1.m17">K</Math> for every multi-index <Math mode="inline" xml:id="C1.S16.SS6.p1.m18">k=(k_{1},k_{2},\dots,k_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="40" xml:id="C1.S16.SS6.p1.s4">
+A distribution in <Math mode="inline" xml:id="C1.S16.SS6.p1.m19">{\mathbb{R}^{n}}</Math> is a continuous linear functional on <Math mode="inline" xml:id="C1.S16.SS6.p1.m20">\mathcal{D}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C1.S16.SS6.p2.s1">
+The partial derivatives of distributions in <Math mode="inline" xml:id="C1.S16.SS6.p2.m1">{\mathbb{R}^{n}}</Math> can be defined as in §1.16(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C1.S16.SS6.p2.s2">
+A locally integrable function <Math mode="inline" xml:id="C1.S16.SS6.p2.m2">f(x)=f(x_{1},x_{2},\dots,x_{n})</Math> gives rise to a distribution <Math mode="inline" xml:id="C1.S16.SS6.p2.m3">\Lambda_{f}</Math> defined by <Math equation-number="1.16.26" mode="display" xml:id="C1.S16.E26">\left\langle\Lambda_{f},\phi\right\rangle=\int_{{\mathbb{R}^{n}}}f(x)\phi(x) \mathrm{d}x, if \phi\in\mathcal{D}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C1.S16.SS6.p3.s1">
+The distributional derivative <Math mode="inline" xml:id="C1.S16.SS6.p3.m1">D^{k}f</Math> of <Math mode="inline" xml:id="C1.S16.SS6.p3.m2">f</Math> is defined by <Math equation-number="1.16.27" mode="display" xml:id="C1.S16.E27">\left\langle D^{k}f,\phi\right\rangle=(-1)^{\left|k\right|}\int_{{\mathbb{R}^{ n}}}f(x)\phi^{(k)}(x)\mathrm{d}x, if \phi\in\mathcal{D}_{n},</Math> where <Math mode="inline" xml:id="C1.S16.SS6.p3.m3">k</Math> is a multi-index and <Math mode="inline" xml:id="C1.S16.SS6.p3.m4">\left|k\right|=k_{1}+k_{2}+\dots+k_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C1.S16.SS6.p4.s1">
+For tempered distributions the space of test functions <Math mode="inline" xml:id="C1.S16.SS6.p4.m1">\mathcal{T}_{n}</Math> is the set of all infinitely-differentiable functions <Math mode="inline" xml:id="C1.S16.SS6.p4.m2">\phi</Math> of <Math mode="inline" xml:id="C1.S16.SS6.p4.m3">n</Math> variables that satisfy <Math equation-number="1.16.28" mode="display" xml:id="C1.S16.E28">|x^{m}\phi^{(k)}(x)|\leq c_{m,k}, if x\in{\mathbb{R}^{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C1.S16.SS6.p4.s2">
+Here <Math mode="inline" xml:id="C1.S16.SS6.p4.m4">m=(m_{1},m_{2},\dots,m_{n})</Math> and <Math mode="inline" xml:id="C1.S16.SS6.p4.m5">k=(k_{1},k_{2},\dots,k_{n})</Math> are multi-indices, and <Math mode="inline" xml:id="C1.S16.SS6.p4.m6">c_{m,k}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="46" xml:id="C1.S16.SS6.p4.s3">
+Tempered distributions are continuous linear functionals on this space of test functions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="47" xml:id="C1.S16.SS6.p4.s4">
+The space of tempered distributions is denoted by <Math mode="inline" xml:id="C1.S16.SS6.p4.m7">\mathcal{T}^{*}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS7">
+<title>Fourier Transforms of Tempered Distributions</title>        
+    
+ 
+<para xml:id="C1.S16.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C1.S16.SS7.p1.s1">
+Suppose <Math mode="inline" xml:id="C1.S16.SS7.p1.m1">\phi</Math> is a test function in <Math mode="inline" xml:id="C1.S16.SS7.p1.m2">\mathcal{T}_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C1.S16.SS7.p1.s2">
+Then its Fourier transform is <Math equation-number="1.16.29" mode="display" xml:id="C1.S16.E29">\mathscr{F}(\phi)(\mathbf{x})=\mathscr{F}\phi(\mathbf{x})=\frac{1}{(2\pi)^{n/2 }}\int_{{\mathbb{R}^{n}}}\phi(\mathbf{t})e^{i\mathbf{x}\cdot\mathbf{t}}\mathrm {d}\mathbf{t},</Math> where <Math mode="inline" xml:id="C1.S16.SS7.p1.m3">\mathbf{x}=(x_{1},x_{2},\dots,x_{n})</Math> and <Math mode="inline" xml:id="C1.S16.SS7.p1.m4">\mathbf{x}\cdot\mathbf{t}=x_{1}t_{1}+\dots+x_{n}t_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C1.S16.SS7.p1.s3">
+<Math mode="inline" xml:id="C1.S16.SS7.p1.m5">\mathscr{F}\phi(\mathbf{x})</Math> is also in <Math mode="inline" xml:id="C1.S16.SS7.p1.m6">\mathcal{T}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C1.S16.SS7.p2.s1">
+Let <Math equation-number="1.16.30" mode="display" xml:id="C1.S16.E30">\mathbf{D}=\left(\frac{1}{\mathrm{i}}\frac{\partial}{\partial x_{1}},\frac{1}{ \mathrm{i}}\frac{\partial}{\partial x_{2}},\ldots,\frac{1}{\mathrm{i}}\frac{ \partial}{\partial x_{n}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C1.S16.SS7.p2.s2">
+For a multi-index <Math mode="inline" xml:id="C1.S16.SS7.p2.m1">\boldsymbol{{\alpha}}=(\alpha_{1},\alpha_{2},\dots,\alpha_{n})</Math> , define <Math equation-number="1.16.31" mode="display" xml:id="C1.S16.E31">P(\mathbf{x})=\sum_{\boldsymbol{{\alpha}}}c_{\boldsymbol{{\alpha}}}\mathbf{x}^ {\boldsymbol{{\alpha}}}=\sum_{\boldsymbol{{\alpha}}}c_{\boldsymbol{{\alpha}}}x _{1}^{\alpha_{1}}\cdots x_{n}^{\alpha_{n}},</Math> and <Math equation-number="1.16.32" mode="display" xml:id="C1.S16.E32">P(\mathbf{D})=\sum_{\boldsymbol{{\alpha}}}c_{\boldsymbol{{\alpha}}}\mathbf{D}^ {\alpha}=\sum_{\boldsymbol{{\alpha}}}c_{\boldsymbol{{\alpha}}}\left(\frac{1}{ \mathrm{i}}\frac{\partial}{\partial x_{1}}\right)^{\alpha_{1}}\dots\left(\frac {1}{\mathrm{i}}\frac{\partial}{\partial x_{n}}\right)^{\alpha_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="53" xml:id="C1.S16.SS7.p2.s3">
+Here <Math mode="inline" xml:id="C1.S16.SS7.p2.m2">\boldsymbol{{\alpha}}</Math> ranges over a finite set of multi-indices, <Math mode="inline" xml:id="C1.S16.SS7.p2.m3">P(\mathbf{x})</Math> is a multivariate polynomial, and <Math mode="inline" xml:id="C1.S16.SS7.p2.m4">P(\mathbf{D})</Math> is a partial differential operator.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="54" xml:id="C1.S16.SS7.p2.s4">
+Then <Math equation-number="1.16.33" mode="display" xml:id="C1.S16.E33">\mathscr{F}(P(\mathbf{D})\phi)(\mathbf{x})=P(-\mathbf{x})\mathscr{F}\phi( \mathbf{x}),</Math> and <Math equation-number="1.16.34" mode="display" xml:id="C1.S16.E34">\mathscr{F}(P\phi)(\mathbf{x})=P(\mathbf{D})\mathscr{F}\phi(\mathbf{x})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C1.S16.SS7.p3.s1">
+If <Math mode="inline" xml:id="C1.S16.SS7.p3.m1">u\in\mathcal{T}^{*}_{n}</Math> is a tempered distribution, then its Fourier transform <Math mode="inline" xml:id="C1.S16.SS7.p3.m2">\mathscr{F}\left(u\right)</Math> is defined by <Math equation-number="1.16.35" mode="display" xml:id="C1.S16.E35">\left\langle\mathscr{F}\left(u\right),\phi\right\rangle=\left\langle u, \mathscr{F}(\phi)\right\rangle, if \phi\in\mathcal{T}_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C1.S16.SS7.p3.s2">
+The Fourier transform <Math mode="inline" xml:id="C1.S16.SS7.p3.m3">\mathscr{F}\left(u\right)</Math> of a tempered distribution is again a tempered distribution, and <Math equation-number="1.16.36" mode="display" xml:id="C1.S16.E36">\left\langle\mathscr{F}\left(P(\mathbf{D})u\right),\phi\right\rangle=\left \langle P_{-}\mathscr{F}\left(u\right),\phi\right\rangle=\left\langle\mathscr{ F}\left(u\right),P_{-}\phi\right\rangle,</Math> <Math equation-number="1.16.37" mode="display" xml:id="C1.S16.E37">\left\langle\mathscr{F}\left(Pu\right),\phi\right\rangle=\left\langle P( \mathbf{D})\mathscr{F}\left(u\right),\phi\right\rangle,</Math> in which <Math mode="inline" xml:id="C1.S16.SS7.p3.m4">P_{-}(\mathbf{x})=P(-\mathbf{x})</Math> ; compare (1.16.33) and (1.16.34).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C1.S16.SS7.p3.s3">
+In (1.16.36) and (1.16.37) the derivatives in <Math mode="inline" xml:id="C1.S16.SS7.p3.m5">P(\mathbf{D})</Math> are understood to be in the sense of distributions, as defined in §1.16(ii) and we also use the convention (1.16.6).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C1.S16.SS8">
+<title>Fourier Transforms of Special Distributions</title>            
+<para xml:id="C1.S16.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C1.S16.SS8.p1.s1">
+We use the notation of the previous subsection and take <Math mode="inline" xml:id="C1.S16.SS8.p1.m1">n=1</Math> and <Math mode="inline" xml:id="C1.S16.SS8.p1.m2">u=\delta</Math> in (1.16.35).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C1.S16.SS8.p1.s2">
+We obtain <Math equation-number="1.16.38" mode="display" xml:id="C1.S16.E38">\left\langle\mathscr{F}\left(\delta\right),\phi\right\rangle=\left\langle \delta,\mathscr{F}(\phi)\right\rangle=\left\langle\delta,\frac{1}{\sqrt{2\pi}} \int^{\infty}_{-\infty}\phi(t){\mathrm{e}^{\mathrm{i}xt}}\mathrm{d}t\right \rangle=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\phi(t)\mathrm{d}t=\frac{1 }{\sqrt{2\pi}}\left\langle 1,\phi\right\rangle, if \phi\in\mathcal{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C1.S16.SS8.p1.s3">
+As distributions, the last equation reads <Math equation-number="1.16.39" mode="display" xml:id="C1.S16.E39">\mathscr{F}\left(\delta\right)=\frac{1}{\sqrt{2\pi}},</Math> which is often written conventionally as <Math equation-number="1.16.40" mode="display" xml:id="C1.S16.E40">\int^{\infty}_{-\infty}\delta\left(t\right){\mathrm{e}^{\mathrm{i}xt}}\mathrm{ d}t=1;</Math> see also (1.17.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C1.S16.SS8.p2.s1">
+Since <Math mode="inline" xml:id="C1.S16.SS8.p2.m1">\sqrt{2\pi}\mathscr{F}\left(\delta\right)=1</Math> , we have <Math equation-number="1.16.41" mode="display" xml:id="C1.S16.E41">\left\langle\mathscr{F}\left(1\right),\phi\right\rangle=\sqrt{2\pi}\left \langle\mathscr{F}\left(\mathscr{F}\left(\delta\right)\right),\phi\right \rangle=\sqrt{2\pi}\left\langle\mathscr{F}\left(\delta\right),\mathscr{F}(\phi )\right\rangle=\sqrt{2\pi}\left\langle\delta,\mathscr{F}(\mathscr{F}(\phi)) \right\rangle=\sqrt{2\pi}\left\langle\delta,\phi_{-}\right\rangle=\sqrt{2\pi} \phi(0),</Math> in which <Math mode="inline" xml:id="C1.S16.SS8.p2.m2">\phi_{-}(x)=\phi(-x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="62" xml:id="C1.S16.SS8.p2.s2">
+The second to last equality follows from the Fourier integral formula (1.17.8).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="63" xml:id="C1.S16.SS8.p2.s3">
+Since the quantity on the extreme right of (1.16.41) is equal to <Math mode="inline" xml:id="C1.S16.SS8.p2.m3">\sqrt{2\pi}\left\langle\delta,\phi\right\rangle</Math> , as distributions, the result in this equation can be stated as <Math equation-number="1.16.42" mode="display" xml:id="C1.S16.E42">\mathscr{F}\left(1\right)=\sqrt{2\pi}\delta,</Math> and conventionally it is expressed as <Math equation-number="1.16.43" mode="display" xml:id="C1.S16.E43">\frac{1}{2\pi}\int^{\infty}_{-\infty}{\mathrm{e}^{\mathrm{i}xt}}\mathrm{d}t= \delta\left(x\right);</Math> see also (1.17.12).
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C1.S16.SS8.p3.s1">
+It is easily verified that <Math equation-number="1.16.44" mode="display" xml:id="C1.S16.E44">\operatorname{sign}\left(x\right)=2H\left(x\right)-1, if x\neq 0,</Math> and from (1.16.15) we find <Math equation-number="1.16.45" mode="display" xml:id="C1.S16.E45">{\operatorname{sign}^{\prime}}=2H'=2\delta,</Math> where <Math mode="inline" xml:id="C1.S16.SS8.p3.m1">H\left(x\right)</Math> is the Heaviside function defined in (1.16.13), and the derivatives are to be understood in the sense of distributions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C1.S16.SS8.p3.s2">
+Then <Math equation-number="1.16.46" mode="display" xml:id="C1.S16.E46">\mathscr{F}\left({\operatorname{sign}^{\prime}}\right)=\mathscr{F}\left(2H' \right)=2\mathscr{F}\left(\delta\right)=\sqrt{\frac{2}{\pi}},</Math> and from (1.16.36) with <Math mode="inline" xml:id="C1.S16.SS8.p3.m2">u=\operatorname{sign}</Math> , <Math mode="inline" xml:id="C1.S16.SS8.p3.m3">P(\mathbf{D})=D</Math> , and <Math mode="inline" xml:id="C1.S16.SS8.p3.m4">P_{-}(x)=-ix</Math> , we have also <Math equation-number="1.16.47" mode="display" xml:id="C1.S16.E47">\mathscr{F}\left({\operatorname{sign}^{\prime}}\right)=\frac{x}{\mathrm{i}} \mathscr{F}\left(\operatorname{sign}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C1.S16.SS8.p3.s3">
+Coupling (1.16.46) and (1.16.47) gives <Math equation-number="1.16.48" mode="display" xml:id="C1.S16.E48">\mathscr{F}\left(\operatorname{sign}\right)=\sqrt{\frac{2}{\pi}}\,\frac{ \mathrm{i}}{x},</Math> that is <Math equation-number="1.16.49" mode="display" xml:id="C1.S16.E49">\left\langle\mathscr{F}\left(\operatorname{sign}\right),\phi\right\rangle= \mathrm{i}\sqrt{\frac{2}{\pi}}\pvint^{\infty}_{-\infty}\frac{\phi(x)}{x} \mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C1.S16.SS8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C1.S16.SS8.p4.s1">
+The Fourier transform of <Math mode="inline" xml:id="C1.S16.SS8.p4.m1">H\left(x\right)</Math> now follows from (1.16.42) and (1.16.48).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="68" xml:id="C1.S16.SS8.p4.s2">
+Indeed, we have <Math equation-number="1.16.50" mode="display" xml:id="C1.S16.E50">\mathscr{F}\left(H\right)=\frac{1}{2}\mathscr{F}\left(1+\operatorname{sign} \right)=\frac{1}{2}\left[\mathscr{F}\left(1\right)+\mathscr{F}\left( \operatorname{sign}\right)\right]=\sqrt{\frac{\pi}{2}}\left(\delta+\frac{ \mathrm{i}}{\pi x}\right),</Math> that is <Math equation-number="1.16.51" mode="display" xml:id="C1.S16.E51">\left\langle\mathscr{F}\left(H\right),\phi\right\rangle=\sqrt{\frac{\pi}{2}} \phi(0)+\frac{\mathrm{i}}{\sqrt{2\pi}}\pvint^{\infty}_{-\infty}\frac{\phi(x)}{ x}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="69" xml:id="C1.S16.SS8.p4.s3">
+For more detailed discussions of the formulas in this section, seeKanwal (1983) and Debnath and Bhatta (2015).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
