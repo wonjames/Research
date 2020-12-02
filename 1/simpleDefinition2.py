@@ -4,7 +4,7 @@ from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
 
 def parseXML():
-    root = ET.parse('1.14.xml').getroot()
+    root = ET.parse('1.tex.xml').getroot()
     count = 0
     for i, tag in enumerate(root.iter('sentence')):
         if i >= 0:
@@ -25,7 +25,7 @@ def parseXML():
 def finddef2(sentence, mathArr):
     
     matcher = Matcher(nlp.vocab)
-    pattern = [{'TEXT': {'REGEX': '(?i)^if\w*$'}}, {'IS_SENT_START': False, 'OP': '*'}, {'TEXT': {'REGEX': '(?i)^then\w*$'}}]
+    pattern = [{'TEXT': {'REGEX': '(?i)^let\w*$'}}, {'IS_SENT_START': False, 'OP': '*'}]
     
     matcher.add("FUNC", None, pattern)
     doc = nlp(sentence)
@@ -37,11 +37,27 @@ def finddef2(sentence, mathArr):
         matched_span = doc[start:end]
         x += 1
         if x == 1:
-            print(sentence)
-            print("Subject: ", doc[start+1:end-1])
-            print("Definition: ", doc[end:count])
+            arr = findMath(mathArr, doc, start, end, count)
+            print("Subject: ", arr[0])
+            print("Definition: ", doc[arr[1]:count])
 
         return True
     return False
+
+def findMath(mathArr, doc, start, end, count):
+    for math in mathArr:
+        sub_string = str(doc[start+1])
+        for n in range(count):
+            if sub_string in math:
+                if sub_string == math:
+                    return [sub_string,start+n+2]
+                else:
+                    sub_string = concat_math(sub_string, doc, start, (start+(n+2)))
+                    
+    return [sub_string, end+1]
+
+def concat_math(sub_string, doc, start, index):
+    sub_string = str(doc[start+1:index+1])
+    return sub_string
 
 parseXML()
