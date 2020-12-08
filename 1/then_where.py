@@ -22,11 +22,12 @@ def parseXML():
 def find_definition(sentence, mathArr, sentence_id):
     
     matcher = Matcher(nlp.vocab)
-    pattern = [{"LEMMA": "if"}, {"IS_ASCII": True, "OP": '*'}, {"LEMMA": "then"}]
-    
+    pattern = [{"LEMMA": "then"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "where"}]
     matcher.add("FUNC", None, pattern)
     doc = nlp(sentence)
-    count = len(doc)
+    count=0
+    for tok in doc:
+        count+=1
     x = 0
     for match_id, start, end in matcher(doc):
         matched_span = doc[start:end]

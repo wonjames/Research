@@ -18,15 +18,17 @@ def parseXML():
             
             val += find_definition(sentence, mathArr, i+1)
     print("Total Number of Definitions found: " ,val)
-
 def find_definition(sentence, mathArr, sentence_id):
     
     matcher = Matcher(nlp.vocab)
-    pattern = [{"LEMMA": "if"}, {"IS_ASCII": True, "OP": '*'}, {"LEMMA": "then"}]
-    
+    pattern = [{"LEMMA": "suppose"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "is"}]
+    pattern2 = [{"LEMMA": "suppose"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "then"}]
     matcher.add("FUNC", None, pattern)
+    matcher.add('FUNC2', None, pattern2)
     doc = nlp(sentence)
-    count = len(doc)
+    count=0
+    for tok in doc:
+        count+=1
     x = 0
     for match_id, start, end in matcher(doc):
         matched_span = doc[start:end]
