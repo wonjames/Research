@@ -2,6 +2,10 @@ import xml.etree.ElementTree as ET
 import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
+'''
+Gets the Defintion for phrases that contain the pattern Let 
+This is no longer used but was used in the beginning using REGEX
+'''
 
 def parseXML():
     root = ET.parse('1.tex.xml').getroot()

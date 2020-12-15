@@ -2,13 +2,10 @@ import xml.etree.ElementTree as ET
 import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
-
 '''
-Gets the Defintion for phrases that contain the pattern suppose ... is ...
-                                                        suppose ... are ... 
-                                                        suppose ... then ...
+Gets the Defintion for phrases that contain the pattern if ... then ...
 '''
-#parsing of the sentences
+# parsing of the xml file
 def parseXML():
     root = ET.parse('1.14.xml').getroot()
     count = 0
@@ -21,22 +18,17 @@ def parseXML():
                 sentence += math.text
                 mathArr.append(math.text)
                 sentence += math.tail
-            
+            # total defintions found
             count += find_definition(sentence, mathArr, i+1)
     print("Total Number of Definitions found: " ,count)
+
 def find_definition(sentence, mathArr, sentence_id):
     matcher = Matcher(nlp.vocab)
-    # adds the patterns to the matcher
-    pattern = [{"LEMMA": "suppose"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "is"}]
-    pattern2 = [{"LEMMA": "suppose"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "are"}]
-    pattern3 = [{"LEMMA": "suppose"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "then"}]
+    pattern = [{"LEMMA": "if"}, {"OP": '*'}, {"LEMMA": "then"}]
     matcher.add("FUNC", None, pattern)
-    matcher.add('FUNC2', None, pattern2)
-    matcher.add('FUNC3', None, pattern3)
-    # SpaCy tokenizer
     doc = nlp(sentence)
-    # length of the tokens in the sentence
     count = len(doc)
+
     for match_id, start, end in matcher(doc):
         matched_span = doc[start:end]
         print("Sentence id: ",sentence_id)

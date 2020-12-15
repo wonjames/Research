@@ -2,10 +2,13 @@ import xml.etree.ElementTree as ET
 import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
+'''
+Gets the Defintion for phrases that contain the pattern then ... where ...
+'''
 
 def parseXML():
-    root = ET.parse('1.14.xml').getroot()
-    val = 0
+    root = ET.parse('1.tex.xml').getroot()
+    count = 0
     for i, tag in enumerate(root.iter('sentence')):
         if i >= 0:
             sentence = ''
@@ -16,30 +19,25 @@ def parseXML():
                 mathArr.append(math.text)
                 sentence += math.tail
             
-            val += find_definition(sentence, mathArr, i+1)
-    print("Total Number of Definitions found: " ,val)
+            count += find_definition(sentence, mathArr, i+1)
+    print("Total Number of Definitions found: " ,count)
 
 def find_definition(sentence, mathArr, sentence_id):
-    
     matcher = Matcher(nlp.vocab)
-    pattern = [{"LEMMA": "then"}, {"IS_ASCII": True, "OP": '*'}, {"LOWER": "where"}]
+    pattern = [{"LEMMA": "then"}, {"OP": '*'}, {"LOWER": "where"}]
     matcher.add("FUNC", None, pattern)
+    # SpaCy tokenizer
     doc = nlp(sentence)
-    count=0
-    for tok in doc:
-        count+=1
-    x = 0
+    # length of tokens in sentence
+    count = len(doc)
     for match_id, start, end in matcher(doc):
         matched_span = doc[start:end]
-        x += 1
-        if x == 1:
-            print("Sentence id: ",sentence_id)
-            print(sentence)
-            print("Subject: ", doc[start+1:end-1])
-            print("Definition: ", doc[end:count])
-            print('**********************************************************************************')
-
-        return True
-    return False
+        print("Sentence id: ",sentence_id)
+        print(sentence)
+        print("Subject: ", doc[start+1:end-1])
+        print("Definition: ", doc[end:count])
+        print('**********************************************************************************')
+        return 1
+    return 0
 
 parseXML()

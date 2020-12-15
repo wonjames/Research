@@ -3,6 +3,11 @@ import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
 
+'''
+Gets the Defintion for phrases that contain the pattern Let ... 
+This is the simple version that get sreplaced by the file let_be_defintion.py
+'''
+
 def parseXML():
     root = ET.parse('1.tex.xml').getroot()
     val = 0
