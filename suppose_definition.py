@@ -10,7 +10,7 @@ Gets the Defintion for phrases that contain the pattern suppose ... is ...
 '''
 #parsing of the sentences
 def parseXML():
-    root = ET.parse('1/1.14.xml').getroot()
+    root = ET.parse('1/1.tex.xml').getroot()
     count = 0
     for i, tag in enumerate(root.iter('sentence')):
         if i >= 0:
