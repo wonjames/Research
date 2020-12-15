@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S74">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C10.S74.SS1">
+<title>Series Expansions</title>        
+ 
+<para xml:id="C10.S74.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S74.SS1.p1.s1">
+The power-series expansions given in §§10.2 and 10.8, together with the connection formulas of §10.4,can be used to compute the Bessel and Hankel functions when the argument <Math mode="inline" xml:id="C10.S74.SS1.p1.m1">x</Math> or <Math mode="inline" xml:id="C10.S74.SS1.p1.m2">z</Math> is sufficiently small in absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S74.SS1.p1.s2">
+In the case of the modified Bessel function <Math mode="inline" xml:id="C10.S74.SS1.p1.m3">K_{\nu}\left(z\right)</Math> see especially Temme (1975).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S74.SS1.p2.s1">
+In other circumstances the power series are prone to slow convergence and heavy numerical cancellation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S74.SS1.p3.s1">
+If <Math mode="inline" xml:id="C10.S74.SS1.p3.m1">x</Math> or <Math mode="inline" xml:id="C10.S74.SS1.p3.m2">|z|</Math> is large compared with <Math mode="inline" xml:id="C10.S74.SS1.p3.m3">|\nu|^{2}</Math> , then the asymptotic expansions of §§10.17(i)–10.17(iv)are available.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S74.SS1.p3.s2">
+Furthermore, the attainable accuracy can be increased substantially by use of the exponentially-improved expansions given in §10.17(v), even more so by application of the hyperasymptotic expansions to be found in the references in that subsection.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S74.SS1.p4.s1">
+For large positive real values of <Math mode="inline" xml:id="C10.S74.SS1.p4.m1">\nu</Math> the uniform asymptotic expansions of §§10.20(i) and 10.20(ii) can be used. Moreover, because of their double asymptotic properties (§10.41(v))these expansions can also be used for large <Math mode="inline" xml:id="C10.S74.SS1.p4.m2">x</Math> or <Math mode="inline" xml:id="C10.S74.SS1.p4.m3">|z|</Math> , whether or not <Math mode="inline" xml:id="C10.S74.SS1.p4.m4">\nu</Math> is large.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S74.SS1.p4.s2">
+It should be noted, however, that there is a difficulty in evaluating the coefficients <Math mode="inline" xml:id="C10.S74.SS1.p4.m5">A_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S74.SS1.p4.m6">B_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S74.SS1.p4.m7">C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S74.SS1.p4.m8">D_{k}(\zeta)</Math> , from the explicit expressions (10.20.10)–(10.20.13) when <Math mode="inline" xml:id="C10.S74.SS1.p4.m9">z</Math> is close to <Math mode="inline" xml:id="C10.S74.SS1.p4.m10">1</Math> owing to severe cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S74.SS1.p4.s3">
+Temme (1997) shows how to overcome this difficulty by use of the Maclaurin expansions for these coefficients or by use of auxiliary functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C10.S74.SS1.p5.s1">
+Similar observations apply to the computation of modified Bessel functions, spherical Bessel functions, and Kelvin functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C10.S74.SS1.p5.s2">
+In the case of the spherical Bessel functions the explicit formulas given in §§10.49(i)and10.49(ii)are terminating cases of the asymptotic expansions given in §§10.17(i) and 10.40(i) for the Bessel functions and modified Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C10.S74.SS1.p5.s3">
+And since there are no error terms they could, in theory, be used for all values of <Math mode="inline" xml:id="C10.S74.SS1.p5.m1">z</Math> ; however, there may be severe cancellation when <Math mode="inline" xml:id="C10.S74.SS1.p5.m2">|z|</Math> is not large compared with <Math mode="inline" xml:id="C10.S74.SS1.p5.m3">n^{2}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS2">
+<title>Differential Equations</title>        
+ 
+<para xml:id="C10.S74.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S74.SS2.p1.s1">
+A comprehensive and powerful approach is to integrate the differential equations (10.2.1) and (10.25.1) by direct numerical methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C10.S74.SS2.p1.s2">
+As described in §3.7(ii), to insure stability the integration path must be chosen in such a way that as we proceed along it the wanted solution grows in magnitude at least as fast as all other solutions of the differential equation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S74.SS2.p2.s1">
+In the interval <Math mode="inline" xml:id="C10.S74.SS2.p2.m1">0&lt;x&lt;\nu</Math> , <Math mode="inline" xml:id="C10.S74.SS2.p2.m2">J_{\nu}\left(x\right)</Math> needs to be integrated in the forward direction and <Math mode="inline" xml:id="C10.S74.SS2.p2.m3">Y_{\nu}\left(x\right)</Math> in the backward direction, with initial values for the former obtained from the power-series expansion (10.2.2) and for the latter from asymptotic expansions (§§10.17(i)and 10.20(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C10.S74.SS2.p2.s2">
+In the interval <Math mode="inline" xml:id="C10.S74.SS2.p2.m4">\nu&lt;x&lt;\infty</Math> either direction of integration can be used for both functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S74.SS2.p3.s1">
+Similarly, to maintain stability in the interval <Math mode="inline" xml:id="C10.S74.SS2.p3.m1">0&lt;x&lt;\infty</Math> the integration direction has to be forwards in the case of <Math mode="inline" xml:id="C10.S74.SS2.p3.m2">I_{\nu}\left(x\right)</Math> and backwards in the case of <Math mode="inline" xml:id="C10.S74.SS2.p3.m3">K_{\nu}\left(x\right)</Math> , with initial values obtained in an analogous manner to those for <Math mode="inline" xml:id="C10.S74.SS2.p3.m4">J_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S74.SS2.p3.m5">Y_{\nu}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C10.S74.SS2.p4.s1">
+For <Math mode="inline" xml:id="C10.S74.SS2.p4.m1">z\in\mathbb{C}</Math> the function <Math mode="inline" xml:id="C10.S74.SS2.p4.m2">{H^{(1)}_{\nu}}\left(z\right)</Math> , for example, can always be computed in a stable manner in the sector <Math mode="inline" xml:id="C10.S74.SS2.p4.m3">0\leq\operatorname{ph}z\leq\pi</Math> by integrating along rays towards the origin.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C10.S74.SS2.p5.s1">
+Similar considerations apply to the spherical Bessel functions and Kelvin functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C10.S74.SS2.p6.s1">
+For further information, including parallel methods for solving the differential equations, see Lozier and Olver (1993).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS3">
+<title>Integral Representations</title>        
+ 
+<para xml:id="C10.S74.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S74.SS3.p1.s1">
+For evaluation of the Hankel functions <Math mode="inline" xml:id="C10.S74.SS3.p1.m1">{H^{(1)}_{\nu}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S74.SS3.p1.m2">{H^{(2)}_{\nu}}\left(z\right)</Math> for complex values of <Math mode="inline" xml:id="C10.S74.SS3.p1.m3">\nu</Math> and <Math mode="inline" xml:id="C10.S74.SS3.p1.m4">z</Math> based on the integral representations (10.9.18) see Remenets (1973).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C10.S74.SS3.p2.s1">
+For applications of generalized Gauss–Laguerre quadrature (§3.5(v)) to the evaluation of the modified Bessel functions <Math mode="inline" xml:id="C10.S74.SS3.p2.m1">K_{\nu}\left(z\right)</Math> for <Math mode="inline" xml:id="C10.S74.SS3.p2.m2">0&lt;\nu&lt;1</Math> and <Math mode="inline" xml:id="C10.S74.SS3.p2.m3">0&lt;x&lt;\infty</Math> seeGautschi (2002a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C10.S74.SS3.p2.s2">
+The integral representation used is based on (10.32.8).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C10.S74.SS3.p3.s1">
+For evaluation of <Math mode="inline" xml:id="C10.S74.SS3.p3.m1">K_{\nu}\left(z\right)</Math> from (10.32.14) with <Math mode="inline" xml:id="C10.S74.SS3.p3.m2">\nu=n</Math> and <Math mode="inline" xml:id="C10.S74.SS3.p3.m3">z</Math> complex, see Mechel (1966).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS4">
+<title>Recurrence Relations</title>        
+ 
+<para xml:id="C10.S74.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C10.S74.SS4.p1.s1">
+If values of the Bessel functions <Math mode="inline" xml:id="C10.S74.SS4.p1.m1">J_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S74.SS4.p1.m2">Y_{\nu}\left(z\right)</Math> , or the other functions treated in this chapter, are needed for integer-spaced ranges of values of the order <Math mode="inline" xml:id="C10.S74.SS4.p1.m3">\nu</Math> , then a simple and powerful procedure is provided by recurrence relations typified by the first of (10.6.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C10.S74.SS4.p2.s1">
+Suppose, for example, <Math mode="inline" xml:id="C10.S74.SS4.p2.m1">\nu=n\in 0,1,2,\ldots</Math> , and <Math mode="inline" xml:id="C10.S74.SS4.p2.m2">x\in(0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C10.S74.SS4.p2.s2">
+Then <Math mode="inline" xml:id="C10.S74.SS4.p2.m3">J_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S74.SS4.p2.m4">Y_{n}\left(x\right)</Math> can be generated by either forward or backward recurrence on <Math mode="inline" xml:id="C10.S74.SS4.p2.m5">n</Math> when <Math mode="inline" xml:id="C10.S74.SS4.p2.m6">n&lt;x</Math> , but if <Math mode="inline" xml:id="C10.S74.SS4.p2.m7">n&gt;x</Math> then to maintain stability <Math mode="inline" xml:id="C10.S74.SS4.p2.m8">J_{n}\left(x\right)</Math> has to be generated by backward recurrence on <Math mode="inline" xml:id="C10.S74.SS4.p2.m9">n</Math> , and <Math mode="inline" xml:id="C10.S74.SS4.p2.m10">Y_{n}\left(x\right)</Math> has to be generated by forward recurrence on <Math mode="inline" xml:id="C10.S74.SS4.p2.m11">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C10.S74.SS4.p2.s3">
+In the case of <Math mode="inline" xml:id="C10.S74.SS4.p2.m12">J_{n}\left(x\right)</Math> , the need for initial values can be avoided by application of Olver’s algorithm (§3.6(v)) in conjunction with Equation (10.12.4) used as a normalizing condition, or in the case of noninteger orders, (10.23.15).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C10.S74.SS4.p3.s1">
+For further information see Gautschi (1967),Olver and Sookne (1972),Temme (1975), Campbell (1980), andKerimov and Skorokhodov (1984a).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS5">
+<title>Continued Fractions</title>        
+ 
+<para xml:id="C10.S74.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C10.S74.SS5.p1.s1">
+For applications of the continued-fraction expansions (10.10.1),(10.10.2),(10.33.1), and (10.33.2) to the computation of Bessel functions and modified Bessel functions seeGargantini and Henrici (1967), Amos (1974), Gautschi and Slavik (1978),Tretter and Walster (1980), Thompson and Barnett (1986), andCuyt et al. (2008).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS6">
+<title>Zeros and Associated Values</title>        
+   
+  
+<para xml:id="C10.S74.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C10.S74.SS6.p1.s1">
+Newton’s rule (§3.8(i)) or Halley’s rule (§3.8(v)) can be used to compute to arbitrarily high accuracy the real or complex zeros of all the functions treated in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C10.S74.SS6.p1.s2">
+Necessary values of the first derivatives of the functions are obtained by the use of (10.6.2), for example.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C10.S74.SS6.p1.s3">
+Newton’s rule is quadratically convergent and Halley’s rule is cubically convergent.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="33" xml:id="C10.S74.SS6.p1.s4">
+See alsoSegura (1998, 2001).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C10.S74.SS6.p2.s1">
+Methods for obtaining initial approximations to the zeros include asymptotic expansions (§§10.21(vi)-10.21(ix)),graphical intersection of <Math mode="inline" xml:id="C10.S74.SS6.p2.m1">2D</Math> graphs in <Math mode="inline" xml:id="C10.S74.SS6.p2.m2">\mathbb{R}</Math> (e.g., §10.3(i)) with the <Math mode="inline" xml:id="C10.S74.SS6.p2.m3">x</Math> -axis, or graphical intersection of <Math mode="inline" xml:id="C10.S74.SS6.p2.m4">3D</Math> complex-variable surfaces (e.g., §10.3(ii)) with the plane <Math mode="inline" xml:id="C10.S74.SS6.p2.m5">z=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C10.S74.SS6.p3.s1">
+To ensure that no zeros are overlooked, standard tools are the phase principle and Rouché’s theorem; see §1.10(iv).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S74.Px1">
+<title>Real Zeros</title>  
+ 
+<para xml:id="C10.S74.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C10.S74.Px1.p1.s1">
+See Olver (1960, pp. xvi–xxix), Grad and Zakrajšek (1973),Temme (1979a), Ikebe et al. (1991),Zafiropoulos et al. (1996), Vrahatis et al. (1997a),Ball (2000), and Gil and Segura (2003).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px2">
+<title>Complex Zeros</title>   
+<para xml:id="C10.S74.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C10.S74.Px2.p1.s1">
+See Leung and Ghaderpanah (1979),Kerimov and Skorokhodov (1984b, c, 1985a, 1985b),Skorokhodov (1985), Modenov and Filonov (1986),Vrahatis et al. (1997b), and Segura (2013).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px3">
+<title>Multiple Zeros</title>   
+<para xml:id="C10.S74.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C10.S74.Px3.p1.s1">
+See Kerimov and Skorokhodov (1985c, 1986, 1987, 1988).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS7">
+<title>Integrals</title>        
+   
+<paragraph xml:id="C10.S74.Px4">
+<title>Hankel Transform</title>    
+<para xml:id="C10.S74.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C10.S74.Px4.p1.s1">
+See Cornille (1972),Johansen and Sørensen (1979),Gabutti (1979),Gabutti and Minetti (1981),Candel (1981),Wong (1982),Lund (1985),Piessens and Branders (1985),Hansen (1985),Bezvoda et al. (1986),Puoskari (1988),Christensen (1990),Campos (1995),Lucas and Stone (1995),Barakat and Parshall (1996),Sidi (1997),Secada (1999).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px5">
+<title>Fourier–Bessel Expansion</title>    
+<para xml:id="C10.S74.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C10.S74.Px5.p1.s1">
+For the computation of the integral (10.23.19) seePiessens and Branders (1983, 1985), Lewanowicz (1991), andZhileĭkin and Kukarkin (1995).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px6">
+<title>Spherical Bessel Transform</title>      
+<para xml:id="C10.S74.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C10.S74.Px6.p1.s1">
+The spherical Bessel transform is the Hankel transform (10.22.76) in the case when <Math mode="inline" xml:id="C10.S74.Px6.p1.m1">\nu</Math> is half an odd positive integer.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S74.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C10.S74.Px6.p2.s1">
+See Lehman et al. (1981), Puoskari (1988), andSharafeddin et al. (1992).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px7">
+<title>Kontorovich–Lebedev Transform</title>    
+<para xml:id="C10.S74.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C10.S74.Px7.p1.s1">
+See Ehrenmark (1995).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S74.Px8">
+<title>Products</title>   
+<para xml:id="C10.S74.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C10.S74.Px8.p1.s1">
+For infinite integrals involving products of Bessel functions of the first kind, see Linz and Kropp (1973), Gabutti (1980),Ikonomou et al. (1995), Lucas (1995), and Van Deun and Cools (2008).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S74.SS8">
+<title>Functions of Imaginary Order</title>        
+  
+<para xml:id="C10.S74.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C10.S74.SS8.p1.s1">
+For the computation of the functions <Math mode="inline" xml:id="C10.S74.SS8.p1.m1">\widetilde{I}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S74.SS8.p1.m2">\widetilde{K}_{\nu}\left(x\right)</Math> defined by (10.45.2) seeTemme (1994c) and Gil et al. (2002d, 2003a, 2004b).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

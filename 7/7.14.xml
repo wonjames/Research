@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S14">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C7.S14.SS1">
+<title>Error Functions</title>        
+ 
+<paragraph xml:id="C7.S14.Px1">
+<title>Fourier Transform</title>    
+<para xml:id="C7.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S14.Px1.p1.s1">
+ <Math equation-number="7.14.1" mode="display" xml:id="C7.S14.E1">\int_{0}^{\infty}e^{2iat}\operatorname{erfc}\left(bt\right)\mathrm{d}t={\frac{ 1}{a\sqrt{\pi}}F\left(\frac{a}{b}\right)+\frac{i}{2a}\left(1-e^{-(a/b)^{2}} \right)}, if a\in\mathbb{C}, |\operatorname{ph}b|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C7.S14.Px1.p1.s2">
+When <Math mode="inline" xml:id="C7.S14.Px1.p1.m1">a=0</Math> the limit is taken.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S14.Px2">
+<title>Laplace Transforms</title>    
+<para xml:id="C7.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C7.S14.Px2.p1.s1">
+ <Math equation-number="7.14.2" mode="display" xml:id="C7.S14.E2">\int_{0}^{\infty}e^{-at}\operatorname{erf}\left(bt\right)\mathrm{d}t=\frac{1}{ a}e^{a^{2}/(4b^{2})}\operatorname{erfc}\left(\frac{a}{2b}\right), if \Re a&gt;0, |\operatorname{ph}b|&lt;\tfrac{1}{4}\pi,</Math> <Math equation-number="7.14.3" mode="display" xml:id="C7.S14.E3">\int_{0}^{\infty}e^{-at}\operatorname{erf}\sqrt{bt}\mathrm{d}t=\frac{1}{a} \sqrt{\frac{b}{a+b}}, if \Re a&gt;0, \Re b&gt;0,</Math> <Math equation-number="7.14.4" mode="display" xml:id="C7.S14.E4">\int_{0}^{\infty}e^{(a-b)t}\operatorname{erfc}\left(\sqrt{at}+\sqrt{\frac{c}{t }}\right)\mathrm{d}t=\frac{e^{-2(\sqrt{ac}+\sqrt{bc})}}{\sqrt{b}(\sqrt{a}+ \sqrt{b})}, if |\operatorname{ph}a|&lt;\frac{1}{2}\pi, \Re b&gt;0, \Re c\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S14.SS2">
+<title>Fresnel Integrals</title>         
+<paragraph xml:id="C7.S14.Px3">
+<title>Laplace Transforms</title>   
+ 
+<para xml:id="C7.S14.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C7.S14.Px3.p1.s1">
+ <Math equation-number="7.14.5" mode="display" xml:id="C7.S14.E5">\int_{0}^{\infty}e^{-at}C\left(t\right)\mathrm{d}t=\frac{1}{a}\mathrm{f}\left( \frac{a}{\pi}\right), if \Re a&gt;0,</Math> <Math equation-number="7.14.6" mode="display" xml:id="C7.S14.E6">\int_{0}^{\infty}e^{-at}S\left(t\right)\mathrm{d}t=\frac{1}{a}\mathrm{g}\left( \frac{a}{\pi}\right), if \Re a&gt;0,</Math> <Math equation-number="7.14.7" mode="display" xml:id="C7.S14.E7">\int_{0}^{\infty}e^{-at}C\left(\sqrt{\frac{2t}{\pi}}\right)\mathrm{d}t=\frac{( \sqrt{a^{2}+1}+a)^{\frac{1}{2}}}{2a\sqrt{a^{2}+1}}, if \Re a&gt;0,</Math> <Math equation-number="7.14.8" mode="display" xml:id="C7.S14.E8">\int_{0}^{\infty}e^{-at}S\left(\sqrt{\frac{2t}{\pi}}\right)\mathrm{d}t=\frac{( \sqrt{a^{2}+1}-a)^{\frac{1}{2}}}{2a\sqrt{a^{2}+1}}, if \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S14.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C7.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C7.S14.SS3.p1.s1">
+For collections of integrals see Apelblat (1983, pp. 131–146),Erdélyi et al. (1954a, vol. 1, pp. 40, 96, 176–177),Geller and Ng (1971), Gradshteyn and Ryzhik (2000, §§5.4 and 6.28–6.32),Marichev(1983, pp. 184–189),Ng and Geller (1969), Oberhettinger (1974, pp. 138–139, 142–143),Oberhettinger (1990, pp. 48–52, 155–158),Oberhettinger and Badii (1973, pp. 171–172, 179–181),Prudnikov et al. (1986b, vol. 2, pp. 30–36, 93–143),Prudnikov et al. (1992a, §§3.7–3.8),andPrudnikov et al. (1992b, §§3.7–3.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C7.S14.SS3.p1.s2">
+In a series of ten papersHadži (1968, 1969, 1970, 1972, 1973, 1975a, 1975b, 1976a, 1976b, 1978) gives many integrals containing error functions and Fresnel integrals, also in combination with the hypergeometric function, confluent hypergeometric functions, and generalized hypergeometric functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

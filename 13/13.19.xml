@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S19">
+<title>Asymptotic Expansions for Large Argument</title>          
+<para xml:id="C13.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S19.p1.s1">
+As <Math mode="inline" xml:id="C13.S19.p1.m1">x\to\infty</Math> <Math equation-number="13.19.1" mode="display" xml:id="C13.S19.E1">M_{\kappa,\mu}\left(x\right)\sim\frac{\Gamma\left(1+2\mu\right)}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)}e^{\frac{1}{2}x}x^{-\kappa}\*\sum_{s=0}^{\infty} \frac{{\left(\frac{1}{2}-\mu+\kappa\right)_{s}}{\left(\frac{1}{2}+\mu+\kappa \right)_{s}}}{s!}x^{-s}, if \mu-\kappa\neq-\tfrac{1}{2},-\tfrac{3}{2},\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S19.p2.s1">
+As <Math mode="inline" xml:id="C13.S19.p2.m1">z\to\infty</Math> <Math equation-number="13.19.2" mode="display" xml:id="C13.S19.E2">M_{\kappa,\mu}\left(z\right)\sim\frac{\Gamma\left(1+2\mu\right)}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)}e^{\frac{1}{2}z}z^{-\kappa}\*\sum_{s=0}^{\infty} \frac{{\left(\frac{1}{2}-\mu+\kappa\right)_{s}}{\left(\frac{1}{2}+\mu+\kappa \right)_{s}}}{s!}z^{-s}+\frac{\Gamma\left(1+2\mu\right)}{\Gamma\left(\frac{1}{ 2}+\mu+\kappa\right)}e^{-\frac{1}{2}z\pm(\frac{1}{2}+\mu-\kappa)\pi\mathrm{i}} z^{\kappa}\*\sum_{s=0}^{\infty}\frac{{\left(\frac{1}{2}+\mu-\kappa\right)_{s}} {\left(\frac{1}{2}-\mu-\kappa\right)_{s}}}{s!}(-z)^{-s}, if -\tfrac{1}{2}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{3}{2}\pi-\delta,</Math> provided that both <Math mode="inline" xml:id="C13.S19.p2.m2">\mu\mp\kappa\neq-\tfrac{1}{2},-\tfrac{3}{2},\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C13.S19.p2.s2">
+Again, <Math mode="inline" xml:id="C13.S19.p2.m3">\delta</Math> denotes an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C13.S19.p2.s3">
+Also, <Math equation-number="13.19.3" mode="display" xml:id="C13.S19.E3">W_{\kappa,\mu}\left(z\right)\sim e^{-\frac{1}{2}z}z^{\kappa}\sum_{s=0}^{\infty }\frac{{\left(\frac{1}{2}+\mu-\kappa\right)_{s}}{\left(\frac{1}{2}-\mu-\kappa \right)_{s}}}{s!}{(-z)^{-s}}, if |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S19.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C13.S19.p3.s1">
+Error bounds and exponentially-improved expansions are derivable by combining §§13.7(ii) and 13.7(iii) with (13.14.2) and (13.14.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C13.S19.p3.s2">
+See also Olver (1965).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S19.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S19.p4.s1">
+For an asymptotic expansion of <Math mode="inline" xml:id="C13.S19.p4.m1">W_{\kappa,\mu}\left(z\right)</Math> as <Math mode="inline" xml:id="C13.S19.p4.m2">z\to\infty</Math> that is valid in the sector <Math mode="inline" xml:id="C13.S19.p4.m3">|\operatorname{ph}z|\leq\pi-\delta</Math> and where the real parameters <Math mode="inline" xml:id="C13.S19.p4.m4">\kappa</Math> , <Math mode="inline" xml:id="C13.S19.p4.m5">\mu</Math> are subject to the growth conditions <Math mode="inline" xml:id="C13.S19.p4.m6">\kappa=o\left(z\right)</Math> , <Math mode="inline" xml:id="C13.S19.p4.m7">\mu=o\left(\sqrt{z}\right)</Math> , seeWong (1973a).
+</sentence>
+
+</para>
+ 
+</section>

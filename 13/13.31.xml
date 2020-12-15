@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S31">
+<title>Approximations</title>          
+<subsection xml:id="C13.S31.SS1">
+<title>Chebyshev-Series Expansions</title>          
+<para xml:id="C13.S31.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S31.SS1.p1.s1">
+Luke (1969b, pp. 35 and 25) provides Chebyshev-series expansions of <Math mode="inline" xml:id="C13.S31.SS1.p1.m1">M\left(a,b,x\right)</Math> and <Math mode="inline" xml:id="C13.S31.SS1.p1.m2">U\left(a,b,x\right)</Math> that include the intervals <Math mode="inline" xml:id="C13.S31.SS1.p1.m3">0\leq x\leq\alpha</Math> and <Math mode="inline" xml:id="C13.S31.SS1.p1.m4">\alpha\leq x&lt;\infty</Math> , respectively, where <Math mode="inline" xml:id="C13.S31.SS1.p1.m5">\alpha</Math> is an arbitrary positive constant.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S31.SS2">
+<title>Padé Approximations</title>         
+<para xml:id="C13.S31.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S31.SS2.p1.s1">
+For a discussion of the convergence of the Padé approximants that are related to the continued fraction (13.5.1) see Wimp (1985).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S31.SS3">
+<title>Rational Approximations</title>         
+<para xml:id="C13.S31.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C13.S31.SS3.p1.s1">
+In Luke (1977a) the following rational approximation is given, together with its rate of convergence.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C13.S31.SS3.p1.s2">
+For the notation see §16.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S31.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C13.S31.SS3.p2.s1">
+Let <Math mode="inline" xml:id="C13.S31.SS3.p2.m1">a,a+1-b\neq 0,-1,-2,\dots</Math> , <Math mode="inline" xml:id="C13.S31.SS3.p2.m2">|\operatorname{ph}z|&lt;\pi</Math> , <Math equation-number="13.31.1" mode="display" xml:id="C13.S31.E1">A_{n}(z)=\sum_{s=0}^{n}\frac{{\left(-n\right)_{s}}{\left(n+1\right)_{s}}{\left (a\right)_{s}}{\left(b\right)_{s}}}{{\left(a+1\right)_{s}}{\left(b+1\right)_{s }}(n!)^{2}}\*{{}_{3}F_{3}}\left({-n+s,n+1+s,1\atop 1+s,a+1+s,b+1+s};-z\right),</Math> and <Math equation-number="13.31.2" mode="display" xml:id="C13.S31.E2">B_{n}(z)={{}_{2}F_{2}}\left({-n,n+1\atop a+1,b+1};-z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C13.S31.SS3.p2.s2">
+Then <Math equation-number="13.31.3" mode="display" xml:id="C13.S31.E3">z^{a}U\left(a,1+a-b,z\right)=\lim_{n\to\infty}\frac{A_{n}(z)}{B_{n}(z)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

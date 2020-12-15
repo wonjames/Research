@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S3">
+<title>Recurrence Relations and Derivatives</title>         
+<subsection xml:id="C13.S3.SS1">
+<title>Recurrence Relations</title>        
+  
+<para xml:id="C13.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S3.SS1.p1.s1">
+ <Math equation-number="13.3.1" mode="display" xml:id="C13.S3.E1">(b-a)M\left(a-1,b,z\right)+(2a-b+z)M\left(a,b,z\right)-aM\left(a+1,b,z\right)=0,</Math> , <Math equation-number="13.3.2" mode="display" xml:id="C13.S3.E2">b(b-1)M\left(a,b-1,z\right)+b(1-b-z)M\left(a,b,z\right)+z(b-a)M\left(a,b+1,z \right)=0,</Math> , <Math equation-number="13.3.3" mode="display" xml:id="C13.S3.E3">(a-b+1)M\left(a,b,z\right)-aM\left(a+1,b,z\right)+(b-1)M\left(a,b-1,z\right)=0,</Math> , <Math equation-number="13.3.4" mode="display" xml:id="C13.S3.E4">bM\left(a,b,z\right)-bM\left(a-1,b,z\right)-zM\left(a,b+1,z\right)=0,</Math> , <Math equation-number="13.3.5" mode="display" xml:id="C13.S3.E5">b(a+z)M\left(a,b,z\right)+z(a-b)M\left(a,b+1,z\right)-abM\left(a+1,b,z\right)=0,</Math> , <Math equation-number="13.3.6" mode="display" xml:id="C13.S3.E6">(a-1+z)M\left(a,b,z\right)+(b-a)M\left(a-1,b,z\right)+(1-b)M\left(a,b-1,z \right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S3.SS1.p1.s2">
+<Math equation-number="13.3.7" mode="display" xml:id="C13.S3.E7">U\left(a-1,b,z\right)+(b-2a-z)U\left(a,b,z\right)+a(a-b+1)U\left(a+1,b,z\right )=0,</Math> , <Math equation-number="13.3.8" mode="display" xml:id="C13.S3.E8">(b-a-1)U\left(a,b-1,z\right)+(1-b-z)U\left(a,b,z\right)+zU\left(a,b+1,z\right) =0,</Math> , <Math equation-number="13.3.9" mode="display" xml:id="C13.S3.E9">U\left(a,b,z\right)-aU\left(a+1,b,z\right)-U\left(a,b-1,z\right)=0,</Math> , <Math equation-number="13.3.10" mode="display" xml:id="C13.S3.E10">(b-a)U\left(a,b,z\right)+U\left(a-1,b,z\right)-zU\left(a,b+1,z\right)=0,</Math> , <Math equation-number="13.3.11" mode="display" xml:id="C13.S3.E11">(a+z)U\left(a,b,z\right)-zU\left(a,b+1,z\right)+a(b-a-1)U\left(a+1,b,z\right)=0,</Math> , <Math equation-number="13.3.12" mode="display" xml:id="C13.S3.E12">(a-1+z)U\left(a,b,z\right)-U\left(a-1,b,z\right)+(a-b+1)U\left(a,b-1,z\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S3.SS1.p1.s3">
+Kummer’s differential equation (13.2.1) is equivalent to <Math equation-number="13.3.13" mode="display" xml:id="C13.S3.E13">(a+1)zM\left(a+2,b+2,z\right)+(b+1)(b-z)M\left(a+1,b+1,z\right)-b(b+1)M\left(a ,b,z\right)=0,</Math> and <Math equation-number="13.3.14" mode="display" xml:id="C13.S3.E14">(a+1)zU\left(a+2,b+2,z\right)+(z-b)U\left(a+1,b+1,z\right)-U\left(a,b,z\right) =0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C13.S3.SS2">
+<title>Differentiation Formulas</title>         
+ 
+<para xml:id="C13.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C13.S3.SS2.p1.s1">
+ <Math equation-number="13.3.15" mode="display" xml:id="C13.S3.E15">\frac{\mathrm{d}}{\mathrm{d}z}M\left(a,b,z\right)=\frac{a}{b}M\left(a+1,b+1,z \right),</Math> <Math equation-number="13.3.16" mode="display" xml:id="C13.S3.E16">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}M\left(a,b,z\right)=\frac{{\left(a \right)_{n}}}{{\left(b\right)_{n}}}M\left(a+n,b+n,z\right),</Math> <Math equation-number="13.3.17" mode="display" xml:id="C13.S3.E17">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{a-1}M\left(a,b,z \right)\right)={\left(a\right)_{n}}z^{a+n-1}M\left(a+n,b,z\right),</Math> <Math equation-number="13.3.18" mode="display" xml:id="C13.S3.E18">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{b-1}M\left(a,b,z\right) \right)={\left(b-n\right)_{n}}z^{b-n-1}M\left(a,b-n,z\right),</Math> <Math equation-number="13.3.19" mode="display" xml:id="C13.S3.E19">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{b-a-1}e^{-z}M\left(a ,b,z\right)\right)={\left(b-a\right)_{n}}z^{b-a+n-1}e^{-z}M\left(a-n,b,z\right),</Math> <Math equation-number="13.3.20" mode="display" xml:id="C13.S3.E20">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(e^{-z}M\left(a,b,z\right) \right)=(-1)^{n}\frac{{\left(b-a\right)_{n}}}{{\left(b\right)_{n}}}e^{-z}M \left(a,b+n,z\right),</Math> <Math equation-number="13.3.21" mode="display" xml:id="C13.S3.E21">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{b-1}e^{-z}M\left(a,b,z \right)\right)={\left(b-n\right)_{n}}z^{b-n-1}e^{-z}M\left(a-n,b-n,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C13.S3.SS2.p1.s2">
+<Math equation-number="13.3.22" mode="display" xml:id="C13.S3.E22">\frac{\mathrm{d}}{\mathrm{d}z}U\left(a,b,z\right)=-aU\left(a+1,b+1,z\right),</Math> <Math equation-number="13.3.23" mode="display" xml:id="C13.S3.E23">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}U\left(a,b,z\right)=(-1)^{n}{\left(a \right)_{n}}U\left(a+n,b+n,z\right),</Math> <Math equation-number="13.3.24" mode="display" xml:id="C13.S3.E24">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{a-1}U\left(a,b,z \right)\right)={\left(a\right)_{n}}{\left(a-b+1\right)_{n}}z^{a+n-1}U\left(a+n ,b,z\right),</Math> <Math equation-number="13.3.25" mode="display" xml:id="C13.S3.E25">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{b-1}U\left(a,b,z\right) \right)=(-1)^{n}{\left(a-b+1\right)_{n}}z^{b-n-1}U\left(a,b-n,z\right),</Math> <Math equation-number="13.3.26" mode="display" xml:id="C13.S3.E26">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{b-a-1}e^{-z}U\left(a ,b,z\right)\right)=(-1)^{n}z^{b-a+n-1}e^{-z}U\left(a-n,b,z\right),</Math> <Math equation-number="13.3.27" mode="display" xml:id="C13.S3.E27">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(e^{-z}U\left(a,b,z\right) \right)=(-1)^{n}e^{-z}U\left(a,b+n,z\right),</Math> <Math equation-number="13.3.28" mode="display" xml:id="C13.S3.E28">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{b-1}e^{-z}U\left(a,b,z \right)\right)=(-1)^{n}z^{b-n-1}e^{-z}U\left(a-n,b-n,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C13.S3.SS2.p2.s1">
+Other versions of several of the identities in this subsection can be constructed with the aid of the operator identity <Math equation-number="13.3.29" mode="display" xml:id="C13.S3.E29">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}=z^{n}\frac{{\mathrm{d}}^{n}} {{\mathrm{d}z}^{n}}z^{n}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

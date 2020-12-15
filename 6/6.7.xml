@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S7">
+<title>Integral Representations</title>        
+  
+<subsection xml:id="C6.S7.SS1">
+<title>Exponential Integrals</title>        
+ 
+<para xml:id="C6.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S7.SS1.p1.s1">
+ <Math equation-number="6.7.1" mode="display" xml:id="C6.S7.E1">\int_{0}^{\infty}\frac{e^{-at}}{t+b}\mathrm{d}t=\int_{0}^{\infty}\frac{e^{iat} }{t+ib}\mathrm{d}t=e^{ab}E_{1}\left(ab\right), if a&gt;0, b&gt;0,</Math> <Math equation-number="6.7.2" mode="display" xml:id="C6.S7.E2">e^{x}\int_{0}^{\alpha}\frac{e^{-xt}}{1-t}\mathrm{d}t=\mathrm{Ei}\left(x\right) -\mathrm{Ei}\left((1-\alpha)x\right), if 0\leq\alpha&lt;1, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C6.S7.SS1.p1.s2">
+<Math equation-number="6.7.3" mode="display" xml:id="C6.S7.E3">\int_{x}^{\infty}\frac{e^{it}}{a^{2}+t^{2}}\mathrm{d}t=\frac{i}{2a}\left(e^{a} E_{1}\left(a-ix\right)-e^{-a}E_{1}\left(-a-ix\right)\right), if a&gt;0, x&gt;0,</Math> <Math equation-number="6.7.4" mode="display" xml:id="C6.S7.E4">\int_{x}^{\infty}\frac{te^{it}}{a^{2}+t^{2}}\mathrm{d}t=\tfrac{1}{2}\left(e^{a }E_{1}\left(a-ix\right)+e^{-a}E_{1}\left(-a-ix\right)\right), if a&gt;0, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C6.S7.SS1.p1.s3">
+<Math equation-number="6.7.5" mode="display" xml:id="C6.S7.E5">\int_{x}^{\infty}\frac{e^{-t}}{a^{2}+t^{2}}\mathrm{d}t=-\frac{1}{2ai}\left(e^{ ia}E_{1}\left(x+ia\right)-e^{-ia}E_{1}\left(x-ia\right)\right), if a&gt;0, x\in\mathbb{R},</Math> <Math equation-number="6.7.6" mode="display" xml:id="C6.S7.E6">\int_{x}^{\infty}\frac{te^{-t}}{a^{2}+t^{2}}\mathrm{d}t=\tfrac{1}{2}\left(e^{ ia}E_{1}\left(x+ia\right)+e^{-ia}E_{1}\left(x-ia\right)\right), if a&gt;0, x\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C6.S7.SS1.p1.s4">
+<Math equation-number="6.7.7" mode="display" xml:id="C6.S7.E7">\int_{0}^{1}\frac{e^{-at}\sin\left(bt\right)}{t}\mathrm{d}t=\Im\mathrm{Ein} \left(a+ib\right), if a,b\in\mathbb{R},</Math> <Math equation-number="6.7.8" mode="display" xml:id="C6.S7.E8">\int_{0}^{1}\frac{e^{-at}(1-\cos\left(bt\right))}{t}\mathrm{d}t=\Re\mathrm{Ein }\left(a+ib\right)-\mathrm{Ein}\left(a\right), if a,b\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C6.S7.SS1.p2.s1">
+Many integrals with exponentials and rational functions, for example, integrals of the type <Math mode="inline" xml:id="C6.S7.SS1.p2.m1">\int e^{z}R(z)\mathrm{d}z</Math> , where <Math mode="inline" xml:id="C6.S7.SS1.p2.m2">R(z)</Math> is an arbitrary rationalfunction, can be represented in finite form in terms of the function <Math mode="inline" xml:id="C6.S7.SS1.p2.m3">E_{1}\left(z\right)</Math> and elementary functions; see Lebedev (1965, p. 42).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS2">
+<title>Sine and Cosine Integrals</title>        
+   
+<para xml:id="C6.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C6.S7.SS2.p1.s1">
+When <Math mode="inline" xml:id="C6.S7.SS2.p1.m1">z\in\mathbb{C}</Math> <Math equation-number="6.7.9" mode="display" xml:id="C6.S7.E9">\mathrm{si}\left(z\right)=-\int_{0}^{\pi/2}e^{-z\cos t}\cos\left(z\sin t\right )\mathrm{d}t,</Math> <Math equation-number="6.7.10" mode="display" xml:id="C6.S7.E10">\mathrm{Ein}\left(z\right)-\mathrm{Cin}\left(z\right)=\int_{0}^{\pi/2}e^{-z \cos t}\sin\left(z\sin t\right)\mathrm{d}t,</Math> <Math equation-number="6.7.11" mode="display" xml:id="C6.S7.E11">\int_{0}^{1}\frac{(1-e^{-at})\cos\left(bt\right)}{t}\mathrm{d}t=\Re\mathrm{Ein }\left(a+ib\right)-\mathrm{Cin}\left(b\right), if a,b\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS3">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C6.S7.SS3.p1.s1">
+ <Math equation-number="6.7.12" mode="display" xml:id="C6.S7.E12">\mathrm{g}\left(z\right)+i\mathrm{f}\left(z\right)=e^{-iz}\int_{z}^{\infty} \frac{e^{it}}{t}\mathrm{d}t, if |\operatorname{ph}z|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C6.S7.SS3.p1.s2">
+The path of integration does not cross the negative real axis or pass through the origin.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C6.S7.SS3.p1.s3">
+<Math equation-number="6.7.13" mode="display" xml:id="C6.S7.E13">\mathrm{f}\left(z\right)=\int_{0}^{\infty}\frac{\sin t}{t+z}\mathrm{d}t=\int_{ 0}^{\infty}\frac{e^{-zt}}{t^{2}+1}\mathrm{d}t,</Math> , <Math equation-number="6.7.14" mode="display" xml:id="C6.S7.E14">\mathrm{g}\left(z\right)=\int_{0}^{\infty}\frac{\cos t}{t+z}\mathrm{d}t=\int_{ 0}^{\infty}\frac{te^{-zt}}{t^{2}+1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C6.S7.SS3.p1.s4">
+The first integrals on the right-hand sides apply when <Math mode="inline" xml:id="C6.S7.SS3.p1.m1">|\operatorname{ph}z|&lt;\pi</Math> ; the second ones when <Math mode="inline" xml:id="C6.S7.SS3.p1.m2">\Re z\geq 0</Math> and (in the case of (6.7.14))
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C6.S7.SS3.p1.s5">
+<Math mode="inline" xml:id="C6.S7.SS3.p1.m3">z\neq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C6.S7.SS3.p2.s1">
+When <Math mode="inline" xml:id="C6.S7.SS3.p2.m1">|\operatorname{ph}z|&lt;\pi</Math> <Math equation-number="6.7.15" mode="display" xml:id="C6.S7.E15">\mathrm{f}\left(z\right)=2\int_{0}^{\infty}K_{0}\left(2\sqrt{zt}\right)\cos t \mathrm{d}t,</Math> , <Math equation-number="6.7.16" mode="display" xml:id="C6.S7.E16">\mathrm{g}\left(z\right)=2\int_{0}^{\infty}K_{0}\left(2\sqrt{zt}\right)\sin t \mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C6.S7.SS3.p2.s2">
+For <Math mode="inline" xml:id="C6.S7.SS3.p2.m2">K_{0}</Math> see §10.25(ii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS4">
+<title>Compendia</title>        
+ 
+<para xml:id="C6.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C6.S7.SS4.p1.s1">
+For collections of integral representations seeBierens de Haan (1939, pp. 56–59, 72–73, 82–84, 121, 133–136, 155, 179–181, 223, 225–227, 230, 259–260, 374, 377, 397–398, 408, 416, 424, 431, 438–439, 442–444, 488, 496–500, 567–571, 585, 602, 638, 675–677),Corrington (1961), Erdélyi et al. (1954a, vol. 1, pp. 267–270),Geller and Ng (1969), Nielsen (1906b),Oberhettinger (1974, pp. 244–246),Oberhettinger and Badii (1973, pp. 364–371), andWatrasiewicz (1967).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

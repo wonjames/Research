@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S13">
+<title>Functions</title>        
+ 
+<subsection xml:id="C27.S13.SS1">
+<title>Introduction</title>        
+  
+<para xml:id="C27.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S13.SS1.p1.s1">
+Whereas multiplicative number theory is concerned with functions arising from prime factorization, additive number theory treats functions related to addition of integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S13.SS1.p1.s2">
+The basic problem is that of expressing a given positive integer <Math mode="inline" xml:id="C27.S13.SS1.p1.m1">n</Math> as a sum of integers from some prescribed set <Math mode="inline" xml:id="C27.S13.SS1.p1.m2">S</Math> whose members are primes, squares, cubes, or other special integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C27.S13.SS1.p1.s3">
+Each representation of <Math mode="inline" xml:id="C27.S13.SS1.p1.m3">n</Math> as a sum of elements of <Math mode="inline" xml:id="C27.S13.SS1.p1.m4">S</Math> is called a partition of <Math mode="inline" xml:id="C27.S13.SS1.p1.m5">n</Math> , and the number <Math mode="inline" xml:id="C27.S13.SS1.p1.m6">S(n)</Math> of such partitions is often of great interest.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C27.S13.SS1.p1.s4">
+The subsections that follow describe problems from additive number theory.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C27.S13.SS1.p1.s5">
+See alsoApostol (1976, Chapter 14) and Apostol and Niven (1994, pp. 33–34).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS2">
+<title>Goldbach Conjecture</title>           
+<para xml:id="C27.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C27.S13.SS2.p1.s1">
+Every even integer <Math mode="inline" xml:id="C27.S13.SS2.p1.m1">n&gt;4</Math> is the sum of two odd primes.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C27.S13.SS2.p1.s2">
+In this case, <Math mode="inline" xml:id="C27.S13.SS2.p1.m2">S(n)</Math> is the number of solutions of the equation <Math mode="inline" xml:id="C27.S13.SS2.p1.m3">n=p+q</Math> , where <Math mode="inline" xml:id="C27.S13.SS2.p1.m4">p</Math> and <Math mode="inline" xml:id="C27.S13.SS2.p1.m5">q</Math> are odd primes.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C27.S13.SS2.p1.s3">
+Goldbach’s assertion is that <Math mode="inline" xml:id="C27.S13.SS2.p1.m6">S(n)\geq 1</Math> for all even <Math mode="inline" xml:id="C27.S13.SS2.p1.m7">n&gt;4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C27.S13.SS2.p1.s4">
+This conjecture dates back to 1742 and was undecided in 2009, although it has been confirmed numerically up to very large numbers.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C27.S13.SS2.p1.s5">
+Vinogradov (1937) proves that every sufficiently large odd integer is the sum of three odd primes, and Chen (1966) shows that every sufficiently large even integer is the sum of a prime and a number with no more than two prime factors.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS2.p2">
+
+</para>
+ 
+<para xml:id="C27.S13.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C27.S13.SS2.p3.s1">
+The current status of Goldbach’s conjecture is described in theWikipedia.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS3">
+<title>Waring’s Problem</title>           
+<para xml:id="C27.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C27.S13.SS3.p1.s1">
+This problem is named after Edward Waring who, in 1770, stated without proof and with limited numerical evidence, that every positive integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m1">n</Math> is the sum of four squares, of nine cubes, of nineteen fourth powers, and so on.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C27.S13.SS3.p1.s2">
+Waring’s problem is to find, for each positive integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m2">k</Math> , whether there is an integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m3">m</Math> (depending only on <Math mode="inline" xml:id="C27.S13.SS3.p1.m4">k</Math> ) such that the equation <Math equation-number="27.13.1" mode="display" xml:id="C27.S13.E1">n=x_{1}^{k}+x_{2}^{k}+\dots+x_{m}^{k}</Math> has nonnegative integer solutions for all <Math mode="inline" xml:id="C27.S13.SS3.p1.m7">n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C27.S13.SS3.p1.s3">
+The smallest <Math mode="inline" xml:id="C27.S13.SS3.p1.m8">m</Math> that exists for a given <Math mode="inline" xml:id="C27.S13.SS3.p1.m9">k</Math> is denoted by <Math mode="inline" xml:id="C27.S13.SS3.p1.m10">g\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C27.S13.SS3.p1.s4">
+Similarly, <Math mode="inline" xml:id="C27.S13.SS3.p1.m11">G\left(k\right)</Math> denotes the smallest <Math mode="inline" xml:id="C27.S13.SS3.p1.m12">m</Math> for which (27.13.1) has nonnegative integer solutions for all sufficiently large <Math mode="inline" xml:id="C27.S13.SS3.p1.m13">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C27.S13.SS3.p2.s1">
+Lagrange (1770) proves that <Math mode="inline" xml:id="C27.S13.SS3.p2.m1">g\left(2\right)=4</Math> , and during the next 139 years the existence of <Math mode="inline" xml:id="C27.S13.SS3.p2.m2">g\left(k\right)</Math> was shown for <Math mode="inline" xml:id="C27.S13.SS3.p2.m3">k=3,4,5,6,7,8,10</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C27.S13.SS3.p2.s2">
+Hilbert (1909) proves the existence of <Math mode="inline" xml:id="C27.S13.SS3.p2.m4">g\left(k\right)</Math> for every <Math mode="inline" xml:id="C27.S13.SS3.p2.m5">k</Math> but does not determine its corresponding numerical value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C27.S13.SS3.p2.s3">
+The exact value of <Math mode="inline" xml:id="C27.S13.SS3.p2.m6">g\left(k\right)</Math> is now known for every <Math mode="inline" xml:id="C27.S13.SS3.p2.m7">k\leq 200,000</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C27.S13.SS3.p2.s4">
+For example, <Math mode="inline" xml:id="C27.S13.SS3.p2.m8">g\left(3\right)=9</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m9">g\left(4\right)=19</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m10">g\left(5\right)=37</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m11">g\left(6\right)=73</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m12">g\left(7\right)=143</Math> , and <Math mode="inline" xml:id="C27.S13.SS3.p2.m13">g\left(8\right)=279</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="20" xml:id="C27.S13.SS3.p2.s5">
+A general formula states that <Math equation-number="27.13.2" mode="display" xml:id="C27.S13.E2">g\left(k\right)\geq 2^{k}+\left\lfloor\frac{3^{k}}{2^{k}}\right\rfloor-2,</Math> for all <Math mode="inline" xml:id="C27.S13.SS3.p2.m14">k\geq 2</Math> , with equality if <Math mode="inline" xml:id="C27.S13.SS3.p2.m15">4\leq k\leq 200,000</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="21" xml:id="C27.S13.SS3.p2.s6">
+If <Math mode="inline" xml:id="C27.S13.SS3.p2.m16">3^{k}=q2^{k}+r</Math> with <Math mode="inline" xml:id="C27.S13.SS3.p2.m17">0&lt;r&lt;2^{k}</Math> , then equality holds in(27.13.2) provided <Math mode="inline" xml:id="C27.S13.SS3.p2.m18">r+q\leq 2^{k}</Math> , a condition that is satisfied with at most a finite number of exceptions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C27.S13.SS3.p3.s1">
+The existence of <Math mode="inline" xml:id="C27.S13.SS3.p3.m1">G\left(k\right)</Math> follows from that of <Math mode="inline" xml:id="C27.S13.SS3.p3.m2">g\left(k\right)</Math> because <Math mode="inline" xml:id="C27.S13.SS3.p3.m3">G\left(k\right)\leq g\left(k\right)</Math> , but only the values <Math mode="inline" xml:id="C27.S13.SS3.p3.m4">G\left(2\right)=4</Math> and <Math mode="inline" xml:id="C27.S13.SS3.p3.m5">G\left(4\right)=16</Math> are known exactly.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C27.S13.SS3.p3.s2">
+Some upper bounds smaller than <Math mode="inline" xml:id="C27.S13.SS3.p3.m6">g\left(k\right)</Math> are known.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C27.S13.SS3.p3.s3">
+For example, <Math mode="inline" xml:id="C27.S13.SS3.p3.m7">G\left(3\right)\leq 7</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m8">G\left(5\right)\leq 23</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m9">G\left(6\right)\leq 36</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m10">G\left(7\right)\leq 53</Math> , and <Math mode="inline" xml:id="C27.S13.SS3.p3.m11">G\left(8\right)\leq 73</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C27.S13.SS3.p3.s4">
+Hardy and Littlewood (1925) conjectures that <Math mode="inline" xml:id="C27.S13.SS3.p3.m12">G\left(k\right)&lt;2k+1</Math> when <Math mode="inline" xml:id="C27.S13.SS3.p3.m13">k</Math> is not a power of 2, and that <Math mode="inline" xml:id="C27.S13.SS3.p3.m14">G\left(k\right)\leq 4k</Math> when <Math mode="inline" xml:id="C27.S13.SS3.p3.m15">k</Math> is a power of 2, but the most that is known (in 2009) is <Math mode="inline" xml:id="C27.S13.SS3.p3.m16">G\left(k\right)&lt;ck\ln k</Math> for some constant <Math mode="inline" xml:id="C27.S13.SS3.p3.m17">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C27.S13.SS3.p3.s5">
+A survey is given in Ellison (1971).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS4">
+<title>Representation by Squares</title>        
+  
+<para xml:id="C27.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C27.S13.SS4.p1.s1">
+For a given integer <Math mode="inline" xml:id="C27.S13.SS4.p1.m1">k\geq 2</Math> the function <Math mode="inline" xml:id="C27.S13.SS4.p1.m2">r_{k}\left(n\right)</Math> is defined as the number of solutions of the equation <Math equation-number="27.13.3" mode="display" xml:id="C27.S13.E3">n=x_{1}^{2}+x_{2}^{2}+\dots+x_{k}^{2},</Math> where the <Math mode="inline" xml:id="C27.S13.SS4.p1.m4">x_{j}</Math> are integers, positive, negative, or zero, and the order of the summands is taken into account.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C27.S13.SS4.p2.s1">
+Jacobi (1829) notes that <Math mode="inline" xml:id="C27.S13.SS4.p2.m1">r_{2}\left(n\right)</Math> is the coefficient of <Math mode="inline" xml:id="C27.S13.SS4.p2.m2">x^{n}</Math> in the square of the theta function <Math mode="inline" xml:id="C27.S13.SS4.p2.m3">\vartheta\left(x\right)</Math> : <Math equation-number="27.13.4" mode="display" xml:id="C27.S13.E4">\vartheta\left(x\right)=1+2\sum_{m=1}^{\infty}x^{m^{2}}, if |x|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C27.S13.SS4.p2.s2">
+(In §20.2(i),
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C27.S13.SS4.p2.s3">
+<Math mode="inline" xml:id="C27.S13.SS4.p2.m4">\vartheta\left(x\right)</Math> is denoted by <Math mode="inline" xml:id="C27.S13.SS4.p2.m5">\theta_{3}\left(0,x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C27.S13.SS4.p2.s4">
+) Thus, <Math equation-number="27.13.5" mode="display" xml:id="C27.S13.E5">(\vartheta\left(x\right))^{2}=1+\sum_{n=1}^{\infty}r_{2}\left(n\right)x^{n}</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S13.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C27.S13.SS4.p3.s1">
+One of Jacobi’s identities implies that <Math equation-number="27.13.6" mode="display" xml:id="C27.S13.E6">(\vartheta\left(x\right))^{2}=1+4\sum_{n=1}^{\infty}\left(\delta_{1}(n)-\delta _{3}(n)\right)x^{n},</Math> where <Math mode="inline" xml:id="C27.S13.SS4.p3.m1">\delta_{1}(n)</Math> and <Math mode="inline" xml:id="C27.S13.SS4.p3.m2">\delta_{3}(n)</Math> are the number of divisors of <Math mode="inline" xml:id="C27.S13.SS4.p3.m3">n</Math> congruent respectively to 1 and 3 (mod 4), and by equating coefficients in (27.13.5) and (27.13.6)Jacobi deduced that <Math equation-number="27.13.7" mode="display" xml:id="C27.S13.E7">r_{2}\left(n\right)=4\left(\delta_{1}(n)-\delta_{3}(n)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C27.S13.SS4.p3.s2">
+Hence <Math mode="inline" xml:id="C27.S13.SS4.p3.m4">r_{2}\left(5\right)=8</Math> because both divisors, <Math mode="inline" xml:id="C27.S13.SS4.p3.m5">1</Math> and <Math mode="inline" xml:id="C27.S13.SS4.p3.m6">5</Math> , are congruent to <Math mode="inline" xml:id="C27.S13.SS4.p3.m7">1\pmod{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C27.S13.SS4.p3.s3">
+In fact, there are four representations, given by <Math mode="inline" xml:id="C27.S13.SS4.p3.m8">5=2^{2}+1^{2}=2^{2}+(-1)^{2}=(-2)^{2}+1^{2}=(-2)^{2}+(-1)^{2}</Math> , and four more with the order of summands reversed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C27.S13.SS4.p4.s1">
+By similar methods Jacobi proved that <Math mode="inline" xml:id="C27.S13.SS4.p4.m1">r_{4}\left(n\right)=8\!\sigma_{1}\left(n\right)</Math> if <Math mode="inline" xml:id="C27.S13.SS4.p4.m2">n</Math> is odd, whereas, if <Math mode="inline" xml:id="C27.S13.SS4.p4.m3">n</Math> is even, <Math mode="inline" xml:id="C27.S13.SS4.p4.m4">r_{4}\left(n\right)=24</Math> times the sum of the odd divisors of <Math mode="inline" xml:id="C27.S13.SS4.p4.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C27.S13.SS4.p4.s2">
+Mordell (1917) notes that <Math mode="inline" xml:id="C27.S13.SS4.p4.m6">r_{k}\left(n\right)</Math> is the coefficient of <Math mode="inline" xml:id="C27.S13.SS4.p4.m7">x^{n}</Math> in the power-series expansion of the <Math mode="inline" xml:id="C27.S13.SS4.p4.m8">k</Math> th power of the series for <Math mode="inline" xml:id="C27.S13.SS4.p4.m9">\vartheta\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C27.S13.SS4.p4.s3">
+Explicit formulas for <Math mode="inline" xml:id="C27.S13.SS4.p4.m10">r_{k}\left(n\right)</Math> have been obtained by similar methods for <Math mode="inline" xml:id="C27.S13.SS4.p4.m11">k=6,8,10</Math> , and <Math mode="inline" xml:id="C27.S13.SS4.p4.m12">12</Math> , but they are more complicated. Exact formulas for <Math mode="inline" xml:id="C27.S13.SS4.p4.m13">r_{k}\left(n\right)</Math> have also been found for <Math mode="inline" xml:id="C27.S13.SS4.p4.m14">k=3,5</Math> , and <Math mode="inline" xml:id="C27.S13.SS4.p4.m15">7</Math> , and for all even <Math mode="inline" xml:id="C27.S13.SS4.p4.m16">k\leq 24</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="38" xml:id="C27.S13.SS4.p4.s4">
+For values of <Math mode="inline" xml:id="C27.S13.SS4.p4.m17">k&gt;24</Math> the analysis of <Math mode="inline" xml:id="C27.S13.SS4.p4.m18">r_{k}\left(n\right)</Math> is considerably more complicated (seeHardy (1940)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="39" xml:id="C27.S13.SS4.p4.s5">
+Also, Milne (1996, 2002) announce new infinite families of explicit formulas extending Jacobi’s identities.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="40" xml:id="C27.S13.SS4.p4.s6">
+For more than 8 squares, Milne’s identities are not the same as those obtained earlier by Mordell and others.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S30">
+<title>Associated OP’s</title>        
+  
+<para xml:id="C18.S30.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S30.p1.s1">
+In the recurrence relation (18.2.8) assume that the coefficients <Math mode="inline" xml:id="C18.S30.p1.m1">A_{n}</Math> , <Math mode="inline" xml:id="C18.S30.p1.m2">B_{n}</Math> , and <Math mode="inline" xml:id="C18.S30.p1.m3">C_{n+1}</Math> are defined when <Math mode="inline" xml:id="C18.S30.p1.m4">n</Math> is a continuous nonnegative real variable, and let <Math mode="inline" xml:id="C18.S30.p1.m5">c</Math> be an arbitrary positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S30.p1.s2">
+Assume also <Math equation-number="18.30.1" mode="display" xml:id="C18.S30.E1">A_{n}A_{n+1}C_{n+1}&gt;0, if n\geq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S30.p1.s3">
+Then the associated orthogonal polynomials <Math mode="inline" xml:id="C18.S30.p1.m6">p_{n}(x;c)</Math> are defined by <Math equation-number="18.30.2" mode="display" xml:id="C18.S30.E2">p_{-1}(x;c)=0,p_{0}(x;c)=1,</Math> and <Math equation-number="18.30.3" mode="display" xml:id="C18.S30.E3">p_{n+1}(x;c)=(A_{n+c}x+B_{n+c})p_{n}(x;c)-C_{n+c}p_{n-1}(x;c), if n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S30.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S30.p2.s1">
+Assume also that Eq. (18.30.3) continues to hold, except that when <Math mode="inline" xml:id="C18.S30.p2.m1">n=0</Math> , <Math mode="inline" xml:id="C18.S30.p2.m2">B_{c}</Math> is replaced by an arbitrary real constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C18.S30.p2.s2">
+Then the polynomials <Math mode="inline" xml:id="C18.S30.p2.m3">p_{n}(x,c)</Math> generated in this manner are called corecursive associated OP’s.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S30.Px1">
+<title>Associated Jacobi Polynomials</title>      
+<para xml:id="C18.S30.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S30.Px1.p1.s1">
+These are defined by <Math equation-number="18.30.4" mode="display" xml:id="C18.S30.E4">P^{(\alpha,\beta)}_{n}\left(x;c\right)=p_{n}(x;c), if n=0,1,\dots,</Math> where <Math mode="inline" xml:id="C18.S30.Px1.p1.m1">p_{n}(x;c)</Math> is given by (18.30.2) and (18.30.3), with <Math mode="inline" xml:id="C18.S30.Px1.p1.m2">A_{n}</Math> , <Math mode="inline" xml:id="C18.S30.Px1.p1.m3">B_{n}</Math> , and <Math mode="inline" xml:id="C18.S30.Px1.p1.m4">C_{n}</Math> as in (18.9.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C18.S30.Px1.p1.s2">
+Explicitly, <Math equation-number="18.30.5" mode="display" xml:id="C18.S30.E5">\frac{(-1)^{n}{\left(\alpha+\beta+c+1\right)_{n}}n!\,P^{(\alpha,\beta)}_{n} \left(x;c\right)}{{\left(\alpha+\beta+2c+1\right)_{n}}{\left(\beta+c+1\right)_ {n}}}=\sum_{\ell=0}^{n}\frac{{\left(-n\right)_{\ell}}{\left(n+\alpha+\beta+2c+ 1\right)_{\ell}}}{{\left(c+1\right)_{\ell}}{\left(\beta+c+1\right)_{\ell}}} \left(\tfrac{1}{2}x+\tfrac{1}{2}\right)^{\ell}\*{{}_{4}F_{3}}\left({\ell-n,n+ \ell+\alpha+\beta+2c+1,\beta+c,c\atop\beta+\ell+c+1,\ell+c+1,\alpha+\beta+2c}; 1\right),</Math> where the generalized hypergeometric function <Math mode="inline" xml:id="C18.S30.Px1.p1.m5">{{}_{4}F_{3}}</Math> is defined by (16.2.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S30.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S30.Px1.p2.s1">
+For corresponding corecursive associated Jacobi polynomials seeLetessier (1995).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S30.Px2">
+<title>Associated Legendre Polynomials</title>     
+<para xml:id="C18.S30.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S30.Px2.p1.s1">
+These are defined by <Math equation-number="18.30.6" mode="display" xml:id="C18.S30.E6">P_{n}\left(x;c\right)=P^{(0,0)}_{n}\left(x;c\right), if n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C18.S30.Px2.p1.s2">
+Explicitly, <Math equation-number="18.30.7" mode="display" xml:id="C18.S30.E7">P_{n}\left(x;c\right)=\sum_{\ell=0}^{n}\frac{c}{\ell+c}P_{\ell}\left(x\right)P _{n-\ell}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C18.S30.Px2.p1.s3">
+(These polynomials are not to be confused with associated Legendre functions §14.3(ii).)
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S30.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S30.Px2.p2.s1">
+For further results on associated Legendre polynomials seeChihara (1978, Chapter VI, §12); on associated Jacobi polynomials, see Wimp (1987) and Ismail and Masson (1991).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C18.S30.Px2.p2.s2">
+For associated Pollaczek polynomials (compare §18.35) seeErdélyi et al. (1953b, §10.21).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C18.S30.Px2.p2.s3">
+For associated Askey–Wilson polynomials seeRahman (2001).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</section>

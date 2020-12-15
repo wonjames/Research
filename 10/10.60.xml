@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S60">
+<title>Sums</title>         
+ 
+<subsection xml:id="C10.S60.SS1">
+<title>Addition Theorems</title>        
+   
+<para xml:id="C10.S60.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S60.SS1.p1.s1">
+Define <Math mode="inline" xml:id="C10.S60.SS1.p1.m1">u</Math> , <Math mode="inline" xml:id="C10.S60.SS1.p1.m2">v</Math> , <Math mode="inline" xml:id="C10.S60.SS1.p1.m3">w</Math> , and <Math mode="inline" xml:id="C10.S60.SS1.p1.m4">\alpha</Math> as in §10.23(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S60.SS1.p1.s2">
+Then with <Math mode="inline" xml:id="C10.S60.SS1.p1.m5">P_{n}</Math> again denoting the Legendre polynomial of degree <Math mode="inline" xml:id="C10.S60.SS1.p1.m6">n</Math> , <Math equation-number="10.60.1" mode="display" xml:id="C10.S60.E1">\frac{\cos w}{w}=-\sum_{n=0}^{\infty}(2n+1)\mathsf{j}_{n}\left(v\right)\mathsf {y}_{n}\left(u\right)P_{n}\left(\cos\alpha\right), if |ve^{\pm i\alpha}|&lt;|u|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S60.SS1.p1.s3">
+<Math equation-number="10.60.2" mode="display" xml:id="C10.S60.E2">\frac{\sin w}{w}=\sum_{n=0}^{\infty}(2n+1)\mathsf{j}_{n}\left(v\right)\mathsf{ j}_{n}\left(u\right)P_{n}\left(\cos\alpha\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S60.SS1.p1.s4">
+<Math equation-number="10.60.3" mode="display" xml:id="C10.S60.E3">\frac{e^{-w}}{w}=\frac{2}{\pi}\sum_{n=0}^{\infty}(2n+1){\mathsf{i}^{(1)}_{n}} \left(v\right)\mathsf{k}_{n}\left(u\right)P_{n}\left(\cos\alpha\right), if |ve^{\pm i\alpha}|&lt;|u|</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S60.SS2">
+<title>Duplication Formulas</title>        
+  
+ 
+<para xml:id="C10.S60.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S60.SS2.p1.s1">
+ <Math equation-number="10.60.4" mode="display" xml:id="C10.S60.E4">\mathsf{j}_{n}\left(2z\right)=-n!z^{n+1}\sum_{k=0}^{n}\frac{2n-2k+1}{k!(2n-k+1 )!}\mathsf{j}_{n-k}\left(z\right)\mathsf{y}_{n-k}\left(z\right)</Math> , <Math equation-number="10.60.5" mode="display" xml:id="C10.S60.E5">\mathsf{y}_{n}\left(2z\right)=n!z^{n+1}\sum_{k=0}^{n}\frac{n-k+\frac{1}{2}}{k! (2n-k+1)!}{\left({\mathsf{j}_{n-k}^{2}}\left(z\right)-{\mathsf{y}_{n-k}^{2}} \left(z\right)\right)},</Math> <Math equation-number="10.60.6" mode="display" xml:id="C10.S60.E6">\mathsf{k}_{n}\left(2z\right)=\frac{1}{\pi}n!z^{n+1}\sum_{k=0}^{n}(-1)^{k} \frac{2n-2k+1}{k!(2n-k+1)!}{\mathsf{k}_{n-k}^{2}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S60.SS3">
+<title>Other Series</title>         
+<para xml:id="C10.S60.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S60.SS3.p1.s1">
+ <Math equation-number="10.60.7" mode="display" xml:id="C10.S60.E7">e^{iz\cos\alpha}=\sum_{n=0}^{\infty}(2n+1)i^{n}\mathsf{j}_{n}\left(z\right)P_{ n}\left(\cos\alpha\right),</Math> , <Math equation-number="10.60.8" mode="display" xml:id="C10.S60.E8">e^{z\cos\alpha}=\sum_{n=0}^{\infty}(2n+1){\mathsf{i}^{(1)}_{n}}\left(z\right)P _{n}\left(\cos\alpha\right),</Math> <Math equation-number="10.60.9" mode="display" xml:id="C10.S60.E9">e^{-z\cos\alpha}=\sum_{n=0}^{\infty}(-1)^{n}(2n+1){\mathsf{i}^{(1)}_{n}}\left( z\right)P_{n}\left(\cos\alpha\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S60.SS3.p1.s2">
+<Math equation-number="10.60.10" mode="display" xml:id="C10.S60.E10">J_{0}\left(z\sin\alpha\right)=\sum_{n=0}^{\infty}(4n+1)\frac{(2n)!}{2^{2n}(n!) ^{2}}\mathsf{j}_{2n}\left(z\right)P_{2n}\left(\cos\alpha\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S60.SS3.p1.s3">
+<Math equation-number="10.60.11" mode="display" xml:id="C10.S60.E11">\sum_{n=0}^{\infty}{\mathsf{j}_{n}^{2}}\left(z\right)=\frac{\mathrm{Si}\left(2 z\right)}{2z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C10.S60.SS3.p1.s4">
+For <Math mode="inline" xml:id="C10.S60.SS3.p1.m1">\mathrm{Si}</Math> see §6.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C10.S60.SS3.p1.s5">
+<Math equation-number="10.60.12" mode="display" xml:id="C10.S60.E12">\sum_{n=0}^{\infty}(2n+1){\mathsf{j}_{n}^{2}}\left(z\right)=1,</Math> , <Math equation-number="10.60.13" mode="display" xml:id="C10.S60.E13">\sum_{n=0}^{\infty}(-1)^{n}(2n+1){\mathsf{j}_{n}^{2}}\left(z\right)=\frac{\sin \left(2z\right)}{2z},</Math> , <Math equation-number="10.60.14" mode="display" xml:id="C10.S60.E14">\sum_{n=0}^{\infty}(2n+1)(\mathsf{j}_{n}'\left(z\right))^{2}=\tfrac{1}{3}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S60.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S60.SS3.p2.s1">
+For further sums of series of spherical Bessel functions, or modified spherical Bessel functions, see §6.10(ii), Luke (1969b, pp. 55–58),Vavreck and Thompson (1984), Harris (2000), andRottbrand (2000).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S60.SS4">
+<title>Compendia</title>        
+ 
+ 
+<para xml:id="C10.S60.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S60.SS4.p1.s1">
+For collections of sums of series relevant to spherical Bessel functions or Bessel functions of half odd integer order seeErdélyi et al. (1953b, pp. 43–45 and 98–105),Gradshteyn and Ryzhik (2000, §§8.51, 8.53),Hansen (1975), Magnus et al. (1966, pp. 106–108 and 123–138), and Prudnikov et al. (1986b, pp. 635–637 and 651–700).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C10.S60.SS4.p1.s2">
+See alsoWatson (1944, Chapters 11 and 16).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

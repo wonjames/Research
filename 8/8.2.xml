@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S2">
+<title>Definitions and Basic Properties</title>          
+<subsection xml:id="C8.S2.SS1">
+<title>Definitions</title>         
+<para xml:id="C8.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S2.SS1.p1.s1">
+The general values of the incomplete gamma functions <Math mode="inline" xml:id="C8.S2.SS1.p1.m1">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S2.SS1.p1.m2">\Gamma\left(a,z\right)</Math> are defined by <Math equation-number="8.2.1" mode="display" xml:id="C8.S2.E1">\gamma\left(a,z\right)=\int_{0}^{z}t^{a-1}e^{-t}\mathrm{d}t, if \Re a&gt;0,</Math> , <Math equation-number="8.2.2" mode="display" xml:id="C8.S2.E2">\Gamma\left(a,z\right)=\int_{z}^{\infty}t^{a-1}e^{-t}\mathrm{d}t,</Math> without restrictions on the integration paths.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S2.SS1.p1.s2">
+However, when the integration paths do not cross the negative real axis, and in the case of (8.2.2) exclude the origin, <Math mode="inline" xml:id="C8.S2.SS1.p1.m3">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S2.SS1.p1.m4">\Gamma\left(a,z\right)</Math> take their principal values; compare §4.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S2.SS1.p1.s3">
+Except where indicated otherwise in the DLMF these principal values are assumed. For example, <Math equation-number="8.2.3" mode="display" xml:id="C8.S2.E3">\gamma\left(a,z\right)+\Gamma\left(a,z\right)=\Gamma\left(a\right), if a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C8.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C8.S2.SS1.p2.s1">
+Normalized functions are: <Math equation-number="8.2.4" mode="display" xml:id="C8.S2.E4">P\left(a,z\right)=\frac{\gamma\left(a,z\right)}{\Gamma\left(a\right)},Q\left(a,z\right)=\frac{\Gamma\left(a,z\right)}{\Gamma\left(a\right)},</Math> <Math equation-number="8.2.5" mode="display" xml:id="C8.S2.E5">P\left(a,z\right)+Q\left(a,z\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C8.S2.SS1.p2.s2">
+In addition, <Math equation-number="8.2.6" mode="display" xml:id="C8.S2.E6">\gamma^{*}\left(a,z\right)=z^{-a}P\left(a,z\right)=\frac{z^{-a}}{\Gamma\left(a \right)}\gamma\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C8.S2.SS1.p2.s3">
+<Math equation-number="8.2.7" mode="display" xml:id="C8.S2.E7">\gamma^{*}\left(a,z\right)=\frac{1}{\Gamma\left(a\right)}\int_{0}^{1}t^{a-1}e^ {-zt}\mathrm{d}t, if \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S2.SS2">
+<title>Analytic Continuation</title>          
+<para xml:id="C8.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C8.S2.SS2.p1.s1">
+In this subsection the functions <Math mode="inline" xml:id="C8.S2.SS2.p1.m1">\gamma</Math> and <Math mode="inline" xml:id="C8.S2.SS2.p1.m2">\Gamma</Math> have their general values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C8.S2.SS2.p2.s1">
+The function <Math mode="inline" xml:id="C8.S2.SS2.p2.m1">\gamma^{*}\left(a,z\right)</Math> is entire in <Math mode="inline" xml:id="C8.S2.SS2.p2.m2">z</Math> and <Math mode="inline" xml:id="C8.S2.SS2.p2.m3">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C8.S2.SS2.p2.s2">
+When <Math mode="inline" xml:id="C8.S2.SS2.p2.m4">z\neq 0</Math> , <Math mode="inline" xml:id="C8.S2.SS2.p2.m5">\Gamma\left(a,z\right)</Math> is an entire function of <Math mode="inline" xml:id="C8.S2.SS2.p2.m6">a</Math> , and <Math mode="inline" xml:id="C8.S2.SS2.p2.m7">\gamma\left(a,z\right)</Math> is meromorphic with simple poles at <Math mode="inline" xml:id="C8.S2.SS2.p2.m8">a=-n</Math> , <Math mode="inline" xml:id="C8.S2.SS2.p2.m9">n=0,1,2,\dots</Math> , with residue <Math mode="inline" xml:id="C8.S2.SS2.p2.m10">(-1)^{n}/n</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C8.S2.SS2.p2.s3">
+.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C8.S2.SS2.p3.s1">
+For <Math mode="inline" xml:id="C8.S2.SS2.p3.m1">m\in\mathbb{Z}</Math> , <Math equation-number="8.2.8" mode="display" xml:id="C8.S2.E8">\gamma\left(a,ze^{2\pi mi}\right)=e^{2\pi mia}\gamma\left(a,z\right), if a\neq 0,-1,-2,\dots,</Math> , <Math equation-number="8.2.9" mode="display" xml:id="C8.S2.E9">\Gamma\left(a,ze^{2\pi mi}\right)=e^{2\pi mia}\Gamma\left(a,z\right)+(1-e^{2 \pi mia})\Gamma\left(a\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C8.S2.SS2.p3.s2">
+(8.2.9) also holds when <Math mode="inline" xml:id="C8.S2.SS2.p3.m2">a</Math> is zero or a negative integer, provided that the right-hand side is replaced by its limiting value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C8.S2.SS2.p3.s3">
+For example, in the case <Math mode="inline" xml:id="C8.S2.SS2.p3.m3">m=-1</Math> we have <Math equation-number="8.2.10" mode="display" xml:id="C8.S2.E10">e^{-\pi ia}\Gamma\left(a,ze^{\pi i}\right)-e^{\pi ia}\Gamma\left(a,ze^{-\pi i} \right)=-\frac{2\pi i}{\Gamma\left(1-a\right)},</Math> without restriction on <Math mode="inline" xml:id="C8.S2.SS2.p3.m4">a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C8.S2.SS2.p4.s1">
+Lastly, <Math equation-number="8.2.11" mode="display" xml:id="C8.S2.E11">\Gamma\left(a,ze^{\pm\pi i}\right)=\Gamma\left(a\right)(1-z^{a}e^{\pm\pi ia} \gamma^{*}\left(a,-z\right))</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S2.SS3">
+<title>Differential Equations</title>          
+<para xml:id="C8.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C8.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C8.S2.SS3.p1.m1">w=\gamma\left(a,z\right)</Math> or <Math mode="inline" xml:id="C8.S2.SS3.p1.m2">\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.2.12" mode="display" xml:id="C8.S2.E12">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(1+\frac{1-a}{z}\right)\frac{ \mathrm{d}w}{\mathrm{d}z}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S2.SS3.p2.s1">
+If <Math mode="inline" xml:id="C8.S2.SS3.p2.m1">w=e^{z}z^{1-a}\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.2.13" mode="display" xml:id="C8.S2.E13">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-\left(1+\frac{1-a}{z}\right)\frac{ \mathrm{d}w}{\mathrm{d}z}+\frac{1-a}{z^{2}}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C8.S2.SS3.p2.s2">
+Also, <Math equation-number="8.2.14" mode="display" xml:id="C8.S2.E14">z\frac{{\mathrm{d}}^{2}\gamma^{*}}{{\mathrm{d}z}^{2}}+(a+1+z)\frac{\mathrm{d} \gamma^{*}}{\mathrm{d}z}+a\gamma^{*}=0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S35">
+<title>Pollaczek Polynomials</title>        
+  
+<subsection xml:id="C18.S35.SS1">
+<title>Definition and Hypergeometric Representation</title>           
+ 
+<para xml:id="C18.S35.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S35.SS1.p1.s1">
+ <Math equation-number="18.35.1" mode="display" xml:id="C18.S35.E1">P^{(\lambda)}_{-1}\left(x;a,b\right)=0,P^{(\lambda)}_{0}\left(x;a,b\right)=1,</Math> and <Math equation-number="18.35.2" mode="display" xml:id="C18.S35.E2">(n+1)P^{(\lambda)}_{n+1}\left(x;a,b\right)={2((n+\lambda+a)x+b)}P^{(\lambda)}_ {n}\left(x;a,b\right)-{(n+2\lambda-1)}P^{(\lambda)}_{n-1}\left(x;a,b\right), if n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S35.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S35.SS1.p2.s1">
+Next, let <Math equation-number="18.35.3" mode="display" xml:id="C18.S35.E3">\tau_{a,b}(\theta)=\frac{a\cos\theta+b}{\sin\theta}, if 0&lt;\theta&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S35.SS1.p2.s2">
+Then <Math equation-number="18.35.4" mode="display" xml:id="C18.S35.E4">P^{(\lambda)}_{n}\left(\cos\theta;a,b\right)=\frac{{\left(\lambda-\mathrm{i} \tau_{a,b}(\theta)\right)_{n}}}{n!}e^{\mathrm{i}n\theta}\*{{}_{2}F_{1}}\left({ -n,\lambda+\mathrm{i}\tau_{a,b}(\theta)\atop-n-\lambda+1+\mathrm{i}\tau_{a,b}( \theta)};e^{-2\mathrm{i}\theta}\right)=\sum_{\ell=0}^{n}\frac{{\left(\lambda+ \mathrm{i}\tau_{a,b}(\theta)\right)_{\ell}}}{\ell!}\frac{{\left(\lambda- \mathrm{i}\tau_{a,b}(\theta)\right)_{n-\ell}}}{(n-\ell)!}e^{\mathrm{i}(n-2\ell )\theta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C18.S35.SS1.p2.s3">
+For the hypergeometric function <Math mode="inline" xml:id="C18.S35.SS1.p2.m1">{{}_{2}F_{1}}</Math> see §§15.1,15.2(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S35.SS2">
+<title>Orthogonality</title>        
+  
+<para xml:id="C18.S35.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S35.SS2.p1.s1">
+ <Math equation-number="18.35.5" mode="display" xml:id="C18.S35.E5">{\int_{-1}^{1}P^{(\lambda)}_{n}\left(x;a,b\right)P^{(\lambda)}_{m}\left(x;a,b \right)w^{(\lambda)}(x;a,b)\mathrm{d}x=0}, if n\neq m,</Math> where <Math equation-number="18.35.6" mode="display" xml:id="C18.S35.E6">w^{(\lambda)}(\cos\theta;a,b)=\pi^{-1}\*2^{2\lambda-1}\*e^{(2\theta-\pi)\*\tau _{a,b}(\theta)}\*(\sin\theta)^{2\lambda-1}\*{\left|\Gamma\left(\lambda+\mathrm {i}\tau_{a,b}(\theta)\right)\right|^{2}}, if a\geq b\geq-a, \lambda&gt;-\frac{1}{2}, 0&lt;\theta&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S35.SS3">
+<title>Other Properties</title>        
+   
+<para xml:id="C18.S35.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S35.SS3.p1.s1">
+ <Math equation-number="18.35.7" mode="display" xml:id="C18.S35.E7">(1-ze^{\mathrm{i}\theta})^{-\lambda+\mathrm{i}\tau_{a,b}(\theta)}(1-ze^{- \mathrm{i}\theta})^{-\lambda-\mathrm{i}\tau_{a,b}(\theta)}=\sum_{n=0}^{\infty} P^{(\lambda)}_{n}\left(\cos\theta;a,b\right)z^{n}, if |z|&lt;1, 0&lt;\theta&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C18.S35.SS3.p1.s2">
+<Math equation-number="18.35.8" mode="display" xml:id="C18.S35.E8">P^{(\lambda)}_{n}\left(x;0,0\right)=C^{(\lambda)}_{n}\left(x\right),</Math> <Math equation-number="18.35.9" mode="display" xml:id="C18.S35.E9">P^{(\lambda)}_{n}\left(\cos\phi;0,x\sin\phi\right)=P^{(\lambda)}_{n}\left(x; \phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C18.S35.SS3.p1.s3">
+For the polynomials <Math mode="inline" xml:id="C18.S35.SS3.p1.m1">C^{(\lambda)}_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C18.S35.SS3.p1.m2">P^{(\lambda)}_{n}\left(x;\phi\right)</Math> see §§18.3 and18.19,respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S35.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S35.SS3.p2.s1">
+See Bo and Wong (1996) for an asymptotic expansion of <Math mode="inline" xml:id="C18.S35.SS3.p2.m1">P^{(\frac{1}{2})}_{n}\left(\cos\left(n^{-\frac{1}{2}}\theta\right);a,b\right)</Math> as <Math mode="inline" xml:id="C18.S35.SS3.p2.m2">n\to\infty</Math> , with <Math mode="inline" xml:id="C18.S35.SS3.p2.m3">a</Math> and <Math mode="inline" xml:id="C18.S35.SS3.p2.m4">b</Math> fixed. This expansion is in terms of the Airy function <Math mode="inline" xml:id="C18.S35.SS3.p2.m5">\mathrm{Ai}\left(x\right)</Math> and its derivative (§9.2), and is uniform in any compact <Math mode="inline" xml:id="C18.S35.SS3.p2.m6">\theta</Math> -interval in <Math mode="inline" xml:id="C18.S35.SS3.p2.m7">(0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C18.S35.SS3.p2.s2">
+Also included is an asymptotic approximation for the zeros of <Math mode="inline" xml:id="C18.S35.SS3.p2.m8">P^{(\frac{1}{2})}_{n}\left(\cos\left(n^{-\frac{1}{2}}\theta\right);a,b\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

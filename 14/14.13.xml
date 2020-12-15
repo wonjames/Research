@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S13">
+<title>Trigonometric Expansions</title>         
+ 
+<para xml:id="C14.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S13.p1.s1">
+When <Math mode="inline" xml:id="C14.S13.p1.m1">0&lt;\theta&lt;\pi</Math> , and <Math mode="inline" xml:id="C14.S13.p1.m2">\nu+\mu</Math> is not a negative integer, <Math equation-number="14.13.1" mode="display" xml:id="C14.S13.E1">\mathsf{P}^{\mu}_{\nu}\left(\cos\theta\right)=\frac{2^{\mu+1}(\sin\theta)^{\mu }}{\pi^{1/2}}\*\sum_{k=0}^{\infty}\frac{\Gamma\left(\nu+\mu+k+1\right)}{\Gamma \left(\nu+k+\frac{3}{2}\right)}\frac{{\left(\mu+\frac{1}{2}\right)_{k}}}{k!}\* \sin\left((\nu+\mu+2k+1)\theta\right),</Math> , <Math equation-number="14.13.2" mode="display" xml:id="C14.S13.E2">\mathsf{Q}^{\mu}_{\nu}\left(\cos\theta\right)=\pi^{1/2}2^{\mu}(\sin\theta)^{ \mu}\*\sum_{k=0}^{\infty}\frac{\Gamma\left(\nu+\mu+k+1\right)}{\Gamma\left(\nu +k+\frac{3}{2}\right)}\frac{{\left(\mu+\frac{1}{2}\right)_{k}}}{k!}\*\cos\left ((\nu+\mu+2k+1)\theta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S13.p1.s2">
+These Fourier series converge absolutely when <Math mode="inline" xml:id="C14.S13.p1.m3">\Re\mu&lt;0</Math> , and conditionally when <Math mode="inline" xml:id="C14.S13.p1.m4">\nu</Math> is real and <Math mode="inline" xml:id="C14.S13.p1.m5">0\leq\mu&lt;\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C14.S13.p2.s1">
+In particular, <Math equation-number="14.13.3" mode="display" xml:id="C14.S13.E3">\mathsf{P}_{n}\left(\cos\theta\right)=\frac{2^{2n+2}(n!)^{2}}{\pi(2n+1)!}\* \sum_{k=0}^{\infty}\frac{1\cdot 3\cdots(2k-1)}{k!}\*\frac{(n+1)(n+2)\cdots(n+k )}{(2n+3)(2n+5)\cdots(2n+2k+1)}\*\sin\left((n+2k+1)\theta\right),</Math> , <Math equation-number="14.13.4" mode="display" xml:id="C14.S13.E4">\mathsf{Q}_{n}\left(\cos\theta\right)=\frac{2^{2n+1}(n!)^{2}}{(2n+1)!}\*\sum_{ k=0}^{\infty}\frac{1\cdot 3\cdots(2k-1)}{k!}\*\frac{(n+1)(n+2)\cdots(n+k)}{(2n +3)(2n+5)\cdots(2n+2k+1)}\*\cos\left((n+2k+1)\theta\right),</Math> with conditional convergence for each.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C14.S13.p3.s1">
+For other trigonometric expansions see Erdélyi et al. (1953a, pp. 146–147).
+</sentence>
+
+</para>
+ 
+</section>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S7">
+<title>Set Partitions: Bell Numbers</title>        
+ 
+<subsection xml:id="C26.S7.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C26.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S7.SS1.p1.s1">
+ <Math mode="inline" xml:id="C26.S7.SS1.p1.m1">B\left(n\right)</Math> is the number of partitions of <Math mode="inline" xml:id="C26.S7.SS1.p1.m2">\{1,2,\ldots,n\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S7.SS1.p1.s2">
+For <Math mode="inline" xml:id="C26.S7.SS1.p1.m3">S\left(n,k\right)</Math> see §26.8(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S7.SS1.p1.s3">
+<Math equation-number="26.7.1" mode="display" xml:id="C26.S7.E1">B\left(0\right)=1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S7.SS1.p2.s1">
+ <Math equation-number="26.7.2" mode="display" xml:id="C26.S7.E2">B\left(n\right)=\sum_{k=0}^{n}S\left(n,k\right),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C26.S7.SS1.p3.s1">
+ <Math equation-number="26.7.3" mode="display" xml:id="C26.S7.E3">B\left(n\right)=\sum_{k=1}^{m}\frac{k^{n}}{k!}\sum_{j=0}^{m-k}\frac{(-1)^{j}}{ j!}, if m\geq n,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S7.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C26.S7.SS1.p4.s1">
+ <Math equation-number="26.7.4" mode="display" xml:id="C26.S7.E4">B\left(n\right)={\mathrm{e}^{-1}}\sum_{k=1}^{\infty}\frac{k^{n}}{k!}=1+\left \lfloor{\mathrm{e}^{-1}}\sum_{k=1}^{2n}\frac{k^{n}}{k!}\right\rfloor</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C26.S7.SS1.p4.s2">
+See Table 26.7.1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="8" xml:id="C26.S7.T1.s1">
+Table 26.7.1: Bell numbers.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="1" xml:id="C26.S7.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S7.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="2" xml:id="C26.S7.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S7.T1.t1.r1.m2">B\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="3" xml:id="C26.S7.T1.t1.s3">
+<Math mode="inline" xml:id="C26.S7.T1.t1.r1.m3">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="4" xml:id="C26.S7.T1.t1.s4">
+<Math mode="inline" xml:id="C26.S7.T1.t1.r1.m4">B\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="5" xml:id="C26.S7.T1.t1.s5">
+0
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="6" xml:id="C26.S7.T1.t1.s6">
+1
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="7" xml:id="C26.S7.T1.t1.s7">
+10
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="8" xml:id="C26.S7.T1.t1.s8">
+1 15975
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="9" xml:id="C26.S7.T1.t1.s9">
+1
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="10" xml:id="C26.S7.T1.t1.s10">
+1
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="11" xml:id="C26.S7.T1.t1.s11">
+11
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="12" xml:id="C26.S7.T1.t1.s12">
+6 78570
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="13" xml:id="C26.S7.T1.t1.s13">
+2
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="14" xml:id="C26.S7.T1.t1.s14">
+2
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="15" xml:id="C26.S7.T1.t1.s15">
+12
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="16" xml:id="C26.S7.T1.t1.s16">
+42 13597
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="17" xml:id="C26.S7.T1.t1.s17">
+3
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="18" xml:id="C26.S7.T1.t1.s18">
+5
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="19" xml:id="C26.S7.T1.t1.s19">
+13
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="20" xml:id="C26.S7.T1.t1.s20">
+276 44437
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="21" xml:id="C26.S7.T1.t1.s21">
+4
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="22" xml:id="C26.S7.T1.t1.s22">
+15
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="23" xml:id="C26.S7.T1.t1.s23">
+14
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="24" xml:id="C26.S7.T1.t1.s24">
+1908 99322
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="25" xml:id="C26.S7.T1.t1.s25">
+5
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="26" xml:id="C26.S7.T1.t1.s26">
+52
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="27" xml:id="C26.S7.T1.t1.s27">
+15
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="28" xml:id="C26.S7.T1.t1.s28">
+13829 58545
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="29" xml:id="C26.S7.T1.t1.s29">
+6
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="30" xml:id="C26.S7.T1.t1.s30">
+203
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="31" xml:id="C26.S7.T1.t1.s31">
+16
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="32" xml:id="C26.S7.T1.t1.s32">
+1 04801 42147
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="33" xml:id="C26.S7.T1.t1.s33">
+7
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="34" xml:id="C26.S7.T1.t1.s34">
+877
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="35" xml:id="C26.S7.T1.t1.s35">
+17
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="36" xml:id="C26.S7.T1.t1.s36">
+8 28648 69804
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="37" xml:id="C26.S7.T1.t1.s37">
+8
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="38" xml:id="C26.S7.T1.t1.s38">
+4140
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="39" xml:id="C26.S7.T1.t1.s39">
+18
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="40" xml:id="C26.S7.T1.t1.s40">
+68 20768 06159
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="41" xml:id="C26.S7.T1.t1.s41">
+9
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="42" xml:id="C26.S7.T1.t1.s42">
+21147
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="43" xml:id="C26.S7.T1.t1.s43">
+19
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="44" xml:id="C26.S7.T1.t1.s44">
+583 27422 05057
+</sentence>
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S7.SS2">
+<title>Generating Function</title>        
+  
+<para xml:id="C26.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C26.S7.SS2.p1.s1">
+ <Math equation-number="26.7.5" mode="display" xml:id="C26.S7.E5">\sum_{n=0}^{\infty}B\left(n\right)\frac{x^{n}}{n!}=\exp({\mathrm{e}^{x}}-1)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S7.SS3">
+<title>Recurrence Relation</title>        
+  
+<para xml:id="C26.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C26.S7.SS3.p1.s1">
+ <Math equation-number="26.7.6" mode="display" xml:id="C26.S7.E6">B\left(n+1\right)=\sum_{k=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{k}B\left(k\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S7.SS4">
+<title>Asymptotic Approximation</title>        
+  
+<para xml:id="C26.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C26.S7.SS4.p1.s1">
+ <Math equation-number="26.7.7" mode="display" xml:id="C26.S7.E7">B\left(n\right)=\frac{N^{n}{\mathrm{e}^{N-n-1}}}{(1+\ln N)^{1/2}}\left(1+O \left(\frac{(\ln n)^{1/2}}{n^{1/2}}\right)\right), if n\to\infty,</Math> where <Math equation-number="26.7.8" mode="display" xml:id="C26.S7.E8">N\ln N=n,</Math> or, equivalently, <Math mode="inline" xml:id="C26.S7.SS4.p1.m1">N={\mathrm{e}^{\mathrm{Wm}\left(n\right)}}</Math> , with properties of the Lambert function <Math mode="inline" xml:id="C26.S7.SS4.p1.m2">\mathrm{Wm}\left(n\right)</Math> given in §4.13.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C26.S7.SS4.p1.s2">
+For higher approximations to <Math mode="inline" xml:id="C26.S7.SS4.p1.m3">B\left(n\right)</Math> as <Math mode="inline" xml:id="C26.S7.SS4.p1.m4">n\to\infty</Math> see de Bruijn (1961, pp. 104–108).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

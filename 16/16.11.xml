@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S11">
+<title>Asymptotic Expansions</title>         
+<subsection xml:id="C16.S11.SS1">
+<title>Formal Series</title>         
+ 
+<para xml:id="C16.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S11.SS1.p1.s1">
+For subsequent use we define two formal infinite series, <Math mode="inline" xml:id="C16.S11.SS1.p1.m1">E_{p,q}(z)</Math> and <Math mode="inline" xml:id="C16.S11.SS1.p1.m2">H_{p,q}(z)</Math> , as follows: <Math equation-number="16.11.1" mode="display" xml:id="C16.S11.E1">E_{p,q}(z)=(2\pi)^{\ifrac{(p-q)}{2}}\kappa^{-\nu-(\ifrac{1}{2})}{\mathrm{e}^{ \kappa z^{\ifrac{1}{\kappa}}}}\sum_{k=0}^{\infty}c_{k}\left(\kappa z^{\ifrac{1 }{\kappa}}\right)^{\nu-k}, if p&lt;q+1,</Math> <Math equation-number="16.11.2" mode="display" xml:id="C16.S11.E2">H_{p,q}(z)=\sum_{m=1}^{p}\sum_{k=0}^{\infty}\frac{(-1)^{k}}{k!}\Gamma\left(a_{ m}+k\right)\left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}\ell=1\\ \ell\neq m\end{subarray}}^{p}\Gamma\left(a_{\ell}-a_{m}-k\right)}{\prod\limits _{\ell=1}^{q}\Gamma\left(b_{\ell}-a_{m}-k\right)}}\right)z^{-a_{m}-k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S11.SS1.p1.s2">
+In (16.11.1)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S11.SS1.p1.s3">
+<Math equation-number="16.11.3" mode="display" xml:id="C16.S11.E3">\kappa=q-p+1,\nu=a_{1}+\dots+a_{p}-b_{1}-\dots-b_{q}+\tfrac{1}{2}(q-p),</Math> and <Math equation-number="16.11.4" mode="display" xml:id="C16.S11.E4">c_{0}=1,c_{k}=-\frac{1}{k\kappa^{\kappa}}\sum_{m=0}^{k-1}c_{m}e_{k,m}, if k\geq 1,</Math> where <Math equation-number="16.11.5" mode="display" xml:id="C16.S11.E5">e_{k,m}=\sum_{j=1}^{q+1}{\left(1-\nu-\kappa b_{j}+m\right)_{\kappa+k-m}}\left( {\textstyle\ifrac{\prod\limits_{\ell=1}^{p}(a_{\ell}-b_{j})}{\prod\limits_{ \begin{subarray}{c}\ell=1\\ \ell\neq j\end{subarray}}^{q+1}(b_{\ell}-b_{j})}}\right),</Math> and <Math mode="inline" xml:id="C16.S11.SS1.p1.m3">b_{q+1}=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C16.S11.SS1.p2.s1">
+It may be observed that <Math mode="inline" xml:id="C16.S11.SS1.p2.m1">H_{p,q}(z)</Math> represents the sum of the residues of the poles of the integrand in (16.5.1) at <Math mode="inline" xml:id="C16.S11.SS1.p2.m2">s=-a_{j},-a_{j}-1,\dots</Math> , <Math mode="inline" xml:id="C16.S11.SS1.p2.m3">j=1,\dots,p</Math> , provided that these poles are all simple, that is, no two of the <Math mode="inline" xml:id="C16.S11.SS1.p2.m4">a_{j}</Math> differ by an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C16.S11.SS1.p2.s2">
+(Ifthis condition is violated, then the definition of <Math mode="inline" xml:id="C16.S11.SS1.p2.m5">H_{p,q}(z)</Math> has to be modified so that the residues are those associated with the multiple poles.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C16.S11.SS1.p2.s3">
+In consequence, logarithmic terms may appear.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C16.S11.SS1.p2.s4">
+See (15.8.8) for an example.)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S11.SS2">
+<title>Expansions for Large Variable</title>         
+ 
+<para xml:id="C16.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C16.S11.SS2.p1.s1">
+In this subsection we assume that none of <Math mode="inline" xml:id="C16.S11.SS2.p1.m1">a_{1},a_{2},\dots,a_{p}</Math> is a nonpositive integer.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C16.S11.Px1">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px1.m1">p=q+1</Math></title>   
+<para xml:id="C16.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C16.S11.Px1.p1.s1">
+The formal series (16.11.2) for <Math mode="inline" xml:id="C16.S11.Px1.p1.m1">H_{q+1,q}(z)</Math> converges if <Math mode="inline" xml:id="C16.S11.Px1.p1.m2">\left|z\right|&gt;1</Math> , and <Math equation-number="16.11.6" mode="display" xml:id="C16.S11.E6">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q+1}\Gamma\left(a_{\ell}\right) }{\prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q+1}F_{q}} \left({a_{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)=H_{q+1,q}(-z), if |\operatorname{ph}\left(-z\right)|\leq\pi;</Math> compare (16.8.8).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px2">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px2.m1">p=q</Math></title>   
+<para xml:id="C16.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C16.S11.Px2.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px2.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px2.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.7" mode="display" xml:id="C16.S11.E7">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q}\Gamma\left(a_{\ell}\right)}{ \prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q}F_{q}} \left({a_{1},\dots,a_{q}\atop b_{1},\dots,b_{q}};z\right)\sim H_{q,q}(z{ \mathrm{e}^{\mp\pi\mathrm{i}}})+E_{q,q}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C16.S11.Px2.p1.s2">
+Here the upper or lower signs are chosen according as <Math mode="inline" xml:id="C16.S11.Px2.p1.m3">z</Math> lies in the upper or lower half-plane; in consequence, in the fractional powers (§4.2(iv)) of <Math mode="inline" xml:id="C16.S11.Px2.p1.m4">ze^{\mp\pi i}</Math> its phases are <Math mode="inline" xml:id="C16.S11.Px2.p1.m5">\operatorname{ph}z\mp\pi</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C16.S11.Px2.p1.s3">
+(Either sign may be used when <Math mode="inline" xml:id="C16.S11.Px2.p1.m6">\operatorname{ph}z=0</Math> since the first term on the right-hand side becomes exponentially small compared with the second term.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C16.S11.Px2.p2.s1">
+Explicit representations for the coefficients <Math mode="inline" xml:id="C16.S11.Px2.p2.m1">c_{k}</Math> are given in Volkmer and Wood (2014).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C16.S11.Px2.p2.s2">
+The special case <Math mode="inline" xml:id="C16.S11.Px2.p2.m2">a_{1}=1</Math> , <Math mode="inline" xml:id="C16.S11.Px2.p2.m3">p=q=2</Math> is discussed in Kim (1972).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px3">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px3.m1">p=q-1</Math></title>   
+<para xml:id="C16.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C16.S11.Px3.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px3.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px3.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.8" mode="display" xml:id="C16.S11.E8">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q-1}\Gamma\left(a_{\ell}\right) }{\prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q-1}F_{q}} \left({a_{1},\dots,a_{q-1}\atop b_{1},\dots,b_{q}};-z\right)\sim H_{q-1,q}(z)+ E_{q-1,q}(ze^{-\pi\mathrm{i}})+E_{q-1,q}(ze^{\pi\mathrm{i}}),</Math> with the same conventions on the phases of <Math mode="inline" xml:id="C16.S11.Px3.p1.m3">ze^{\mp\pi i}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px4">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px4.m1">p\leq q-2</Math></title>   
+<para xml:id="C16.S11.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C16.S11.Px4.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px4.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px4.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.9" mode="display" xml:id="C16.S11.E9">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{p}\Gamma\left(a_{\ell}\right)}{ \prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{p}F_{q}} \left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};-z\right)\sim E_{p,q}(ze^{- \pi\mathrm{i}})+E_{p,q}(ze^{\pi\mathrm{i}}),</Math> with the same conventions on the phases of <Math mode="inline" xml:id="C16.S11.Px4.p1.m3">ze^{\mp\pi i}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S11.SS3">
+<title>Expansions for Large Parameters</title>          
+<para xml:id="C16.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C16.S11.SS3.p1.s1">
+If <Math mode="inline" xml:id="C16.S11.SS3.p1.m1">z</Math> is fixed and <Math mode="inline" xml:id="C16.S11.SS3.p1.m2">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , then for each nonnegative integer <Math mode="inline" xml:id="C16.S11.SS3.p1.m3">m</Math> <Math equation-number="16.11.10" mode="display" xml:id="C16.S11.E10">{{}_{p+1}F_{p}}\left({a_{1}+r,\dots,a_{k-1}+r,a_{k},\dots,a_{p+1}\atop b_{1}+r ,\dots,b_{k}+r,b_{k+1},\dots,b_{p}};z\right)=\sum_{n=0}^{m-1}\frac{{\left(a_{1 }+r\right)_{n}}\cdots{\left(a_{k-1}+r\right)_{n}}{\left(a_{k}\right)_{n}} \cdots{\left(a_{p+1}\right)_{n}}}{{\left(b_{1}+r\right)_{n}}\cdots{\left(b_{k} +r\right)_{n}}{\left(b_{k+1}\right)_{n}}\cdots{\left(b_{p}\right)_{n}}}\frac{z ^{n}}{n!}+O\left(\frac{1}{r^{m}}\right)</Math> , as <Math mode="inline" xml:id="C16.S11.SS3.p1.m4">r\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C16.S11.SS3.p1.s2">
+Here <Math mode="inline" xml:id="C16.S11.SS3.p1.m5">k</Math> can have any integer value from <Math mode="inline" xml:id="C16.S11.SS3.p1.m6">1</Math> to <Math mode="inline" xml:id="C16.S11.SS3.p1.m7">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C16.S11.SS3.p1.s3">
+Also if <Math mode="inline" xml:id="C16.S11.SS3.p1.m8">p&lt;q</Math> , then <Math equation-number="16.11.11" mode="display" xml:id="C16.S11.E11">{{}_{p}F_{q}}\left({a_{1}+r,\dots,a_{p}+r\atop b_{1}+r,\dots,b_{q}+r};z\right) =\sum_{n=0}^{m-1}\frac{{\left(a_{1}+r\right)_{n}}\cdots{\left(a_{p}+r\right)_{ n}}}{{\left(b_{1}+r\right)_{n}}\cdots{\left(b_{q}+r\right)_{n}}}\frac{z^{n}}{n !}+O\left(\frac{1}{r^{(q-p)m}}\right)</Math> , again as <Math mode="inline" xml:id="C16.S11.SS3.p1.m9">r\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C16.S11.SS3.p1.s4">
+For these and other results seeKnottnerus (1960).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C16.S11.SS3.p1.s5">
+See also Luke (1969a, §7.3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C16.S11.SS3.p2.s1">
+Asymptotic expansions for the polynomials <Math mode="inline" xml:id="C16.S11.SS3.p2.m1">{{}_{p+2}F_{q}}\left(-r,r+a_{0},\mathbf{a};\mathbf{b};z\right)</Math> as <Math mode="inline" xml:id="C16.S11.SS3.p2.m2">r\to\infty</Math> through integer values are given in Fields and Luke (1963b, a) and Fields (1965).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

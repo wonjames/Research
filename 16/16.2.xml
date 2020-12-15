@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S2">
+<title>Definition and Analytic Properties</title>        
+    
+<subsection xml:id="C16.S2.SS1">
+<title>Generalized Hypergeometric Series</title>             
+ 
+<para xml:id="C16.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S2.SS1.p1.s1">
+Throughout this chapter it is assumed that none of the bottom parameters <Math mode="inline" xml:id="C16.S2.SS1.p1.m1">b_{1}</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m2">b_{2}</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m3">\dots</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m4">b_{q}</Math> is a nonpositive integer, unless stated otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S2.SS1.p1.s2">
+Then formally <Math equation-number="16.2.1" mode="display" xml:id="C16.S2.E1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\sum_{k =0}^{\infty}\frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{{ \left(b_{1}\right)_{k}}\cdots{\left(b_{q}\right)_{k}}}\frac{z^{k}}{k!}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S2.SS1.p1.s3">
+Equivalently, the function is denoted by <Math mode="inline" xml:id="C16.S2.SS1.p1.m5">{{}_{p}F_{q}}\left({\mathbf{a}\atop\mathbf{b}};z\right)</Math> or <Math mode="inline" xml:id="C16.S2.SS1.p1.m6">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> , and sometimes, for brevity, by <Math mode="inline" xml:id="C16.S2.SS1.p1.m7">{{}_{p}F_{q}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS2">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS2.m1">p\leq q</Math></title>          
+<para xml:id="C16.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C16.S2.SS2.p1.s1">
+When <Math mode="inline" xml:id="C16.S2.SS2.p1.m1">p\leq q</Math> the series (16.2.1) converges for all finite values of <Math mode="inline" xml:id="C16.S2.SS2.p1.m2">z</Math> and defines an entire function.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS3">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS3.m1">p=q+1</Math></title>          
+<para xml:id="C16.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C16.S2.SS3.p1.s1">
+Suppose first one or more of the top parameters <Math mode="inline" xml:id="C16.S2.SS3.p1.m1">a_{j}</Math> is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C16.S2.SS3.p1.s2">
+Then the series (16.2.1) terminates and the generalized hypergeometric function is a polynomial in <Math mode="inline" xml:id="C16.S2.SS3.p1.m2">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C16.S2.SS3.p2.s1">
+If none of the <Math mode="inline" xml:id="C16.S2.SS3.p2.m1">a_{j}</Math> is a nonpositive integer, then the radius of convergence of the series (16.2.1) is <Math mode="inline" xml:id="C16.S2.SS3.p2.m2">1</Math> , and outside the open disk <Math mode="inline" xml:id="C16.S2.SS3.p2.m3">|z|&lt;1</Math> the generalized hypergeometric function is defined by analytic continuation with respect to <Math mode="inline" xml:id="C16.S2.SS3.p2.m4">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C16.S2.SS3.p2.s2">
+The branch obtained by introducing a cut from <Math mode="inline" xml:id="C16.S2.SS3.p2.m5">1</Math> to <Math mode="inline" xml:id="C16.S2.SS3.p2.m6">+\infty</Math> on the real axis, that is, the branch in the sector <Math mode="inline" xml:id="C16.S2.SS3.p2.m7">|\operatorname{ph}\left(1-z\right)|\leq\pi</Math> , is the principal branch (or principal value) of <Math mode="inline" xml:id="C16.S2.SS3.p2.m8">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> ; compare §4.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C16.S2.SS3.p2.s3">
+Elsewhere the generalized hypergeometric function is a multivalued function that is analytic except for possible branch points at <Math mode="inline" xml:id="C16.S2.SS3.p2.m9">z=0,1</Math> , and <Math mode="inline" xml:id="C16.S2.SS3.p2.m10">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C16.S2.SS3.p2.s4">
+Unless indicated otherwise it is assumed that in the DLMF generalized hypergeometric functions assume their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C16.S2.SS3.p3.s1">
+On the circle <Math mode="inline" xml:id="C16.S2.SS3.p3.m1">|z|=1</Math> the series (16.2.1) is absolutely convergent if <Math mode="inline" xml:id="C16.S2.SS3.p3.m2">\Re\gamma_{q}&gt;0</Math> , convergent except at <Math mode="inline" xml:id="C16.S2.SS3.p3.m3">z=1</Math> if <Math mode="inline" xml:id="C16.S2.SS3.p3.m4">-1&lt;\Re\gamma_{q}\leq 0</Math> , and divergent if <Math mode="inline" xml:id="C16.S2.SS3.p3.m5">\Re\gamma_{q}\leq-1</Math> , where <Math equation-number="16.2.2" mode="display" xml:id="C16.S2.E2">\gamma_{q}=(b_{1}+\dots+b_{q})-(a_{1}+\dots+a_{q+1})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS4">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS4.m1">p&amp;gt;q+1</Math></title>          
+<paragraph xml:id="C16.S2.Px1">
+<title>Polynomials</title>    
+<para xml:id="C16.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C16.S2.Px1.p1.s1">
+In general the series (16.2.1) diverges for all nonzero values of <Math mode="inline" xml:id="C16.S2.Px1.p1.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C16.S2.Px1.p1.s2">
+However, when one or more of the top parameters <Math mode="inline" xml:id="C16.S2.Px1.p1.m2">a_{j}</Math> is a nonpositive integer the series terminates and the generalized hypergeometric function is a polynomial in <Math mode="inline" xml:id="C16.S2.Px1.p1.m3">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C16.S2.Px1.p1.s3">
+Note that if <Math mode="inline" xml:id="C16.S2.Px1.p1.m4">-m</Math> is the value of the numerically largest <Math mode="inline" xml:id="C16.S2.Px1.p1.m5">a_{j}</Math> that is a nonpositive integer, then the identity <Math equation-number="16.2.3" mode="display" xml:id="C16.S2.E3">{{}_{p+1}F_{q}}\left({-m,\mathbf{a}\atop\mathbf{b}};z\right)=\frac{{\left( \mathbf{a}\right)_{m}}(-z)^{m}}{{\left(\mathbf{b}\right)_{m}}}{{}_{q+1}F_{p}} \left({-m,1-m-\mathbf{b}\atop 1-m-\mathbf{a}};\frac{(-1)^{p+q}}{z}\right)</Math> can be used to interchange <Math mode="inline" xml:id="C16.S2.Px1.p1.m6">p</Math> and <Math mode="inline" xml:id="C16.S2.Px1.p1.m7">q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C16.S2.Px1.p2.s1">
+Note also that any partial sum of the generalized hypergeometric series can be represented as a generalized hypergeometric function via <Math equation-number="16.2.4" mode="display" xml:id="C16.S2.E4">\sum_{k=0}^{m}\frac{{\left(\mathbf{a}\right)_{k}}}{{\left(\mathbf{b}\right)_{k }}}\frac{z^{k}}{k!}=\frac{{\left(\mathbf{a}\right)_{m}}z^{m}}{{\left(\mathbf{b }\right)_{m}}m!}{{}_{q+2}F_{p}}\left({-m,1,1-m-\mathbf{b}\atop 1-m-\mathbf{a}} ;\frac{(-1)^{p+q+1}}{z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S2.Px2">
+<title>Non-Polynomials</title>   
+<para xml:id="C16.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C16.S2.Px2.p1.s1">
+See §16.5 for the definition of <Math mode="inline" xml:id="C16.S2.Px2.p1.m1">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> as a contour integral when <Math mode="inline" xml:id="C16.S2.Px2.p1.m2">p&gt;q+1</Math> and none of the <Math mode="inline" xml:id="C16.S2.Px2.p1.m3">a_{k}</Math> is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C16.S2.Px2.p1.s2">
+(However, except where indicated otherwise in the DLMF we assume that when <Math mode="inline" xml:id="C16.S2.Px2.p1.m4">p&gt;q+1</Math> at least one of the <Math mode="inline" xml:id="C16.S2.Px2.p1.m5">a_{k}</Math> is a nonpositive integer.)
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS5">
+<title>Behavior with Respect to Parameters</title>           
+<para xml:id="C16.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C16.S2.SS5.p1.s1">
+Let <Math equation-number="16.2.5" mode="display" xml:id="C16.S2.E5">{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)=\ifrac{{{}_{p}F_{ q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)}{\left(\Gamma \left(b_{1}\right)\cdots\Gamma\left(b_{q}\right)\right)}=\sum_{k=0}^{\infty} \frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{\Gamma\left(b_{1 }+k\right)\cdots\Gamma\left(b_{q}+k\right)}\frac{z^{k}}{k!}</Math> ; compare (15.2.2) in the case <Math mode="inline" xml:id="C16.S2.SS5.p1.m1">p=2</Math> , <Math mode="inline" xml:id="C16.S2.SS5.p1.m2">q=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C16.S2.SS5.p1.s2">
+When <Math mode="inline" xml:id="C16.S2.SS5.p1.m3">p\leq q+1</Math> and <Math mode="inline" xml:id="C16.S2.SS5.p1.m4">z</Math> is fixed and not a branch point, any branch of <Math mode="inline" xml:id="C16.S2.SS5.p1.m5">{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> is an entire function of each of the parameters <Math mode="inline" xml:id="C16.S2.SS5.p1.m6">a_{1},\dots,a_{p},b_{1},\dots,b_{q}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

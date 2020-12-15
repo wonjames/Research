@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C34.S4">
+<title>Definition: <Math mode="inline" xml:id="C34.S4.m1">\mathit{6j}</Math> Symbol</title>           
+ 
+<para xml:id="C34.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C34.S4.p1.s1">
+The <Math mode="inline" xml:id="C34.S4.p1.m1">\mathit{6j}</Math> symbol is defined by the following double sum of products of <Math mode="inline" xml:id="C34.S4.p1.m2">\mathit{3j}</Math> symbols: <Math equation-number="34.4.1" mode="display" xml:id="C34.S4.E1">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\sum_{m_{r}m^{\prime}_{s}}(-1)^{l_{1}+m^{\prime }_{1}+l_{2}+m^{\prime}_{2}+l_{3}+m^{\prime}_{3}}\*\begin{pmatrix}j_{1}&amp;j_{2}&amp;j _{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{pmatrix}j_{1}&amp;l_{2}&amp;l_{3}\\ m_{1}&amp;m^{\prime}_{2}&amp;-m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;j_{2}&amp;l_ {3}\\ -m^{\prime}_{1}&amp;m_{2}&amp;m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;l_{2}&amp;j_ {3}\\ m^{\prime}_{1}&amp;-m^{\prime}_{2}&amp;m_{3}\end{pmatrix},</Math> where the summation is taken over all admissible values of the <Math mode="inline" xml:id="C34.S4.p1.m3">m</Math> ’s and <Math mode="inline" xml:id="C34.S4.p1.m4">m^{\prime}</Math> ’s for each of the four <Math mode="inline" xml:id="C34.S4.p1.m5">\mathit{3j}</Math> symbols; compare (34.2.2) and (34.2.3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C34.S4.p2.s1">
+Except in degenerate cases the combination of the triangle inequalities for the four <Math mode="inline" xml:id="C34.S4.p2.m1">\mathit{3j}</Math> symbols in (34.4.1) is equivalent to the existence of a tetrahedron (possibly degenerate) with edges of lengths <Math mode="inline" xml:id="C34.S4.p2.m2">j_{1},j_{2},j_{3},l_{1},l_{2},l_{3}</Math> ; see Figure 34.4.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="3" xml:id="C34.S4.F1.s1">
+Figure 34.4.1: Tetrahedron corresponding to <Math mode="inline" xml:id="C34.S4.F1.m2">\mathit{6j}</Math> symbol.
+</sentence>  
+<para xml:id="C34.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C34.S4.p3.s1">
+The <Math mode="inline" xml:id="C34.S4.p3.m1">\mathit{6j}</Math> symbol can be expressed as the finite sum <Math equation-number="34.4.2" mode="display" xml:id="C34.S4.E2">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\Delta(j_{1}j_{2}j_{3})\Delta(j_{1}l_{2}l_{3}) \Delta(l_{1}j_{2}l_{3})\Delta(l_{1}l_{2}j_{3})\*\sum_{s}\frac{(-1)^{s}(s+1)!}{ (s-j_{1}-j_{2}-j_{3})!(s-j_{1}-l_{2}-l_{3})!(s-l_{1}-j_{2}-l_{3})!(s-l_{1}-l_{ 2}-j_{3})!}\*\frac{1}{(j_{1}+j_{2}+l_{1}+l_{2}-s)!(j_{2}+j_{3}+l_{2}+l_{3}-s)! (j_{3}+j_{1}+l_{3}+l_{1}-s)!}</Math> , where the summation is over all nonnegative integers <Math mode="inline" xml:id="C34.S4.p3.m2">s</Math> such that the arguments in the factorials are nonnegative.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C34.S4.p4.s1">
+Equivalently, <Math equation-number="34.4.3" mode="display" xml:id="C34.S4.E3">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}={(-1)^{j_{1}+j_{3}+l_{1}+l_{3}}}\frac{\Delta(j_ {1}j_{2}j_{3})\Delta(j_{2}l_{1}l_{3})(j_{1}-j_{2}+l_{1}+l_{2})!(-j_{2}+j_{3}+l _{2}+l_{3})!(j_{1}+j_{3}+l_{1}+l_{3}+1)!}{\Delta(j_{1}l_{2}l_{3})\Delta(j_{3}l _{1}l_{2})(j_{1}-j_{2}+j_{3})!(-j_{2}+l_{1}+l_{3})!(j_{1}+l_{2}+l_{3}+1)!(j_{3 }+l_{1}+l_{2}+1)!}\*{{}_{4}F_{3}}\left({-j_{1}+j_{2}-j_{3},j_{2}-l_{1}-l_{3},- j_{1}-l_{2}-l_{3}-1,-j_{3}-l_{1}-l_{2}-1\atop-j_{1}+j_{2}-l_{1}-l_{2},j_{2}-j_ {3}-l_{2}-l_{3},-j_{1}-j_{3}-l_{1}-l_{3}-1};1\right),</Math> where <Math mode="inline" xml:id="C34.S4.p4.m1">{{}_{4}F_{3}}</Math> is defined as in §16.2.
+</sentence>
+
+</para>
+  
+<para xml:id="C34.S4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C34.S4.p5.s1">
+For alternative expressions for the <Math mode="inline" xml:id="C34.S4.p5.m1">\mathit{6j}</Math> symbol, written either as a finite sum or as other terminating generalized hypergeometric series <Math mode="inline" xml:id="C34.S4.p5.m2">{{}_{4}F_{3}}</Math> of unit argument, seeVarshalovich et al. (1988, §§9.2.1, 9.2.3).
+</sentence>
+
+</para>
+ 
+</section>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S6">
+<title>Confluent Hypergeometric Functions of Matrix Argument</title>        
+  
+<subsection xml:id="C35.S6.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S6.SS1.p1.s1">
+ <Math equation-number="35.6.1" mode="display" xml:id="C35.S6.E1">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\sum_{k=0}^{\infty}\frac{1}{k! }\sum_{|\kappa|=k}\frac{{\left[a\right]_{\kappa}}}{{\left[b\right]_{\kappa}}}Z _{\kappa}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C35.S6.SS1.p1.s2">
+<Math equation-number="35.6.2" mode="display" xml:id="C35.S6.E2">\Psi\left(a;b;\mathbf{T}\right)=\frac{1}{\Gamma_{m}\left(a\right)}\int_{ \boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)|\mathbf{X}| ^{a-\frac{1}{2}(m+1)}\*{|\mathbf{I}+\mathbf{X}|}^{b-a-\frac{1}{2}(m+1)}\mathrm {d}\mathbf{X}, if \Re(a)&gt;\frac{1}{2}(m-1), \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S6.Px1">
+<title>Laguerre Form</title>    
+<para xml:id="C35.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C35.S6.Px1.p1.s1">
+ <Math equation-number="35.6.3" mode="display" xml:id="C35.S6.E3">L^{(\gamma)}_{\nu}\left(\mathbf{T}\right)=\frac{\Gamma_{m}\left(\gamma+\nu+ \frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(\gamma+\frac{1}{2}(m+1)\right)}\*{{}_ {1}F_{1}}\left({-\nu\atop\gamma+\frac{1}{2}(m+1)};\mathbf{T}\right), if \Re(\gamma),\Re(\gamma+\nu)&gt;-1</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S6.SS2.p1.s1">
+ <Math equation-number="35.6.4" mode="display" xml:id="C35.S6.E4">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\frac{1}{\mathrm{B}_{m}\left(a ,b-a\right)}\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}\mathrm{etr} \left(\mathbf{T}\mathbf{X}\right)|\mathbf{X}|^{a-\frac{1}{2}(m+1)}|\mathbf{I}- \mathbf{X}|^{b-a-\frac{1}{2}(m+1)}\mathrm{d}\mathbf{X}, if \Re(a),\Re(b-a)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C35.S6.SS2.p1.s2">
+<Math equation-number="35.6.5" mode="display" xml:id="C35.S6.E5">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{b-\frac{1}{2}(m+1)}{{}_{1}F_{1}}\left({a\atop b};\mathbf{S} \mathbf{X}\right)\mathrm{d}\mathbf{X}=\Gamma_{m}\left(b\right)|\mathbf{I}- \mathbf{S}\mathbf{T}^{-1}|^{-a}|\mathbf{T}|^{-b}, if \mathbf{T}&gt;\mathbf{S}, \Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C35.S6.SS2.p1.s3">
+<Math equation-number="35.6.6" mode="display" xml:id="C35.S6.E6">\mathrm{B}_{m}\left(b_{1},b_{2}\right)|\mathbf{T}|^{b_{1}+b_{2}-\frac{1}{2}(m+ 1)}{{}_{1}F_{1}}\left({a_{1}+a_{2}\atop b_{1}+b_{2}};\mathbf{T}\right)=\int_{ \boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}|\mathbf{X}|^{b_{1}-\frac{1}{2}(m+1)}{{ }_{1}F_{1}}\left({a_{1}\atop b_{1}};\mathbf{X}\right){|\mathbf{T}-\mathbf{X}|} ^{b_{2}-\frac{1}{2}(m+1)}{{}_{1}F_{1}}\left({a_{2}\atop b_{2}};\mathbf{T}- \mathbf{X}\right)\mathrm{d}\mathbf{X}, if \Re(b_{1}),\Re(b_{2})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C35.S6.SS2.p1.s4">
+<Math equation-number="35.6.7" mode="display" xml:id="C35.S6.E7">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\mathrm{etr}\left(\mathbf{T} \right){{}_{1}F_{1}}\left({b-a\atop b};-\mathbf{T}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C35.S6.SS2.p1.s5">
+<Math equation-number="35.6.8" mode="display" xml:id="C35.S6.E8">\int_{\boldsymbol{\Omega}}|\mathbf{T}|^{c-\frac{1}{2}(m+1)}\Psi\left(a;b; \mathbf{T}\right)\mathrm{d}\mathbf{T}=\frac{\Gamma_{m}\left(c\right)\Gamma_{m} \left(a-c\right)\Gamma_{m}\left(c-b+\frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(a \right)\Gamma_{m}\left(a-b+\frac{1}{2}(m+1)\right)}, if \Re(a)&gt;\Re(c)+\frac{1}{2}(m-1)&gt;m-1, \Re(c-b)&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS3">
+<title>Relations to Bessel Functions of Matrix Argument</title>           
+<para xml:id="C35.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C35.S6.SS3.p1.s1">
+ <Math equation-number="35.6.9" mode="display" xml:id="C35.S6.E9">\lim_{a\to\infty}{{}_{1}F_{1}}\left({a\atop\nu+\frac{1}{2}(m+1)};-a^{-1} \mathbf{T}\right)=\frac{A_{\nu}\left(\mathbf{T}\right)}{A_{\nu}\left( \boldsymbol{{0}}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C35.S6.SS3.p1.s2">
+<Math equation-number="35.6.10" mode="display" xml:id="C35.S6.E10">\lim_{a\to\infty}\Gamma_{m}\left(a\right)\Psi\left(a+\nu;\nu+\tfrac{1}{2}(m+1) ;a^{-1}\mathbf{T}\right)=B_{\nu}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS4">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C35.S6.SS4.p1.s1">
+For asymptotic approximations for confluent hypergeometric functions of matrix argument, see Herz (1955) and Butler and Wood (2002).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

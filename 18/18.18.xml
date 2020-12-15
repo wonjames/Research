@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S18">
+<title>Sums</title>        
+    
+<subsection xml:id="C18.S18.SS1">
+<title>Series Expansions of Arbitrary Functions</title>         
+<paragraph xml:id="C18.S18.Px1">
+<title>Jacobi</title>   
+<para xml:id="C18.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S18.Px1.p1.s1">
+Let <Math mode="inline" xml:id="C18.S18.Px1.p1.m1">f(z)</Math> be analytic within an ellipse <Math mode="inline" xml:id="C18.S18.Px1.p1.m2">E</Math> with foci <Math mode="inline" xml:id="C18.S18.Px1.p1.m3">z=\pm 1</Math> , and <Math equation-number="18.18.1" mode="display" xml:id="C18.S18.E1">a_{n}=\frac{n!(2n+\alpha+\beta+1)\Gamma\left(n+\alpha+\beta+1\right)}{2^{ \alpha+\beta+1}\Gamma\left(n+\alpha+1\right)\Gamma\left(n+\beta+1\right)}\* \int_{-1}^{1}f(x)P^{(\alpha,\beta)}_{n}\left(x\right)(1-x)^{\alpha}(1+x)^{ \beta}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S18.Px1.p1.s2">
+Then <Math equation-number="18.18.2" mode="display" xml:id="C18.S18.E2">f(z)=\sum_{n=0}^{\infty}a_{n}P^{(\alpha,\beta)}_{n}\left(z\right),</Math> when <Math mode="inline" xml:id="C18.S18.Px1.p1.m4">z</Math> lies in the interior of <Math mode="inline" xml:id="C18.S18.Px1.p1.m5">E</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S18.Px1.p1.s3">
+Moreover, the series (18.18.2) converges uniformly on any compact domain within <Math mode="inline" xml:id="C18.S18.Px1.p1.m6">E</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S18.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S18.Px1.p2.s1">
+Alternatively, assume <Math mode="inline" xml:id="C18.S18.Px1.p2.m1">f(x)</Math> is real and continuous and <Math mode="inline" xml:id="C18.S18.Px1.p2.m2">f^{\prime}(x)</Math> is piecewise continuous on <Math mode="inline" xml:id="C18.S18.Px1.p2.m3">(-1,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C18.S18.Px1.p2.s2">
+Assume also the integrals <Math mode="inline" xml:id="C18.S18.Px1.p2.m4">\int_{-1}^{1}(f(x))^{2}(1-x)^{\alpha}(1+x)^{\beta}\mathrm{d}x</Math> and <Math mode="inline" xml:id="C18.S18.Px1.p2.m5">\int_{-1}^{1}(f^{\prime}(x))^{2}(1-x)^{\alpha+1}(1+x)^{\beta+1}\mathrm{d}x</Math> converge.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C18.S18.Px1.p2.s3">
+Then (18.18.2), with <Math mode="inline" xml:id="C18.S18.Px1.p2.m6">z</Math> replaced by <Math mode="inline" xml:id="C18.S18.Px1.p2.m7">x</Math> , applies when <Math mode="inline" xml:id="C18.S18.Px1.p2.m8">-1&lt;x&lt;1</Math> ; moreover, the convergence is uniform on any compact interval within <Math mode="inline" xml:id="C18.S18.Px1.p2.m9">(-1,1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px2">
+<title>Chebyshev</title>    
+<para xml:id="C18.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S18.Px2.p1.s1">
+See §3.11(ii), or set <Math mode="inline" xml:id="C18.S18.Px2.p1.m1">\alpha=\beta=\pm\tfrac{1}{2}</Math> in the above results for Jacobi and refer to (18.7.3)–(18.7.6).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px3">
+<title>Legendre</title>    
+<para xml:id="C18.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S18.Px3.p1.s1">
+This is the case <Math mode="inline" xml:id="C18.S18.Px3.p1.m1">\alpha=\beta=0</Math> of Jacobi.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C18.S18.Px3.p1.s2">
+Equation (18.18.1) becomes <Math equation-number="18.18.3" mode="display" xml:id="C18.S18.E3">a_{n}=\left(n+\tfrac{1}{2}\right)\int_{-1}^{1}f(x)P_{n}\left(x\right)\mathrm{d }x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px4">
+<title>Laguerre</title>   
+ 
+<para xml:id="C18.S18.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S18.Px4.p1.s1">
+Assume <Math mode="inline" xml:id="C18.S18.Px4.p1.m1">f(x)</Math> is real and continuous and <Math mode="inline" xml:id="C18.S18.Px4.p1.m2">f^{\prime}(x)</Math> is piecewise continuous on <Math mode="inline" xml:id="C18.S18.Px4.p1.m3">(0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C18.S18.Px4.p1.s2">
+Assume also <Math mode="inline" xml:id="C18.S18.Px4.p1.m4">\int_{0}^{\infty}(f(x))^{2}e^{-x}x^{\alpha}\mathrm{d}x</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C18.S18.Px4.p1.s3">
+Then <Math equation-number="18.18.4" mode="display" xml:id="C18.S18.E4">f(x)=\sum_{n=0}^{\infty}b_{n}L^{(\alpha)}_{n}\left(x\right), if 0&lt;x&lt;\infty,</Math> where <Math equation-number="18.18.5" mode="display" xml:id="C18.S18.E5">b_{n}=\frac{n!}{\Gamma\left(n+\alpha+1\right)}\int_{0}^{\infty}f(x)L^{(\alpha) }_{n}\left(x\right)e^{-x}x^{\alpha}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S18.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S18.Px4.p2.s1">
+The convergence of the series (18.18.4) is uniform on any compact interval in <Math mode="inline" xml:id="C18.S18.Px4.p2.m1">(0,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px5">
+<title>Hermite</title>    
+<para xml:id="C18.S18.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S18.Px5.p1.s1">
+Assume <Math mode="inline" xml:id="C18.S18.Px5.p1.m1">f(x)</Math> is real and continuous and <Math mode="inline" xml:id="C18.S18.Px5.p1.m2">f^{\prime}(x)</Math> is piecewise continuous on <Math mode="inline" xml:id="C18.S18.Px5.p1.m3">(-\infty,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C18.S18.Px5.p1.s2">
+Assume also <Math mode="inline" xml:id="C18.S18.Px5.p1.m4">\int_{-\infty}^{\infty}(f(x))^{2}e^{-x^{2}}\mathrm{d}x</Math> converges.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C18.S18.Px5.p1.s3">
+Then <Math equation-number="18.18.6" mode="display" xml:id="C18.S18.E6">f(x)=\sum_{n=0}^{\infty}d_{n}H_{n}\left(x\right), if -\infty&lt;x&lt;\infty,</Math> where <Math equation-number="18.18.7" mode="display" xml:id="C18.S18.E7">d_{n}=\frac{1}{\sqrt{\pi}2^{n}n!}\int_{-\infty}^{\infty}f(x)H_{n}\left(x\right )e^{-x^{2}}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S18.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S18.Px5.p2.s1">
+The convergence of the series (18.18.6) is uniform on any compact interval in <Math mode="inline" xml:id="C18.S18.Px5.p2.m1">(-\infty,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS2">
+<title>Addition Theorems</title>        
+ 
+  
+<paragraph xml:id="C18.S18.Px6">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S18.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C18.S18.Px6.p1.s1">
+ <Math equation-number="18.18.8" mode="display" xml:id="C18.S18.E8">C^{(\lambda)}_{n}\left(\cos\theta_{1}\cos\theta_{2}+\sin\theta_{1}\sin\theta_{ 2}\cos\phi\right)=\sum_{\ell=0}^{n}2^{2\ell}(n-\ell)!\frac{2\lambda+2\ell-1}{2 \lambda-1}\frac{({\left(\lambda\right)_{\ell}})^{2}}{{\left(2\lambda\right)_{n +\ell}}}(\sin\theta_{1})^{\ell}C^{(\lambda+\ell)}_{n-\ell}\left(\cos\theta_{1} \right)(\sin\theta_{2})^{\ell}C^{(\lambda+\ell)}_{n-\ell}\left(\cos\theta_{2} \right)C^{(\lambda-\frac{1}{2})}_{\ell}\left(\cos\phi\right), if \lambda&gt;0, \lambda\neq\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C18.S18.Px6.p1.s2">
+For the case <Math mode="inline" xml:id="C18.S18.Px6.p1.m1">\lambda=\frac{1}{2}</Math> use (18.18.9); compare (18.7.9).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px7">
+<title>Legendre</title>    
+<para xml:id="C18.S18.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C18.S18.Px7.p1.s1">
+ <Math equation-number="18.18.9" mode="display" xml:id="C18.S18.E9">P_{n}\left(\cos\theta_{1}\cos\theta_{2}+\sin\theta_{1}\sin\theta_{2}\cos\phi \right)={P_{n}\left(\cos\theta_{1}\right)P_{n}\left(\cos\theta_{2}\right)+2 \sum_{\ell=1}^{n}\frac{(n-\ell)!\;(n+\ell)!}{2^{2\ell}(n!)^{2}}(\sin\theta_{1} )^{\ell}P^{(\ell,\ell)}_{n-\ell}\left(\cos\theta_{1}\right)(\sin\theta_{2})^{ \ell}P^{(\ell,\ell)}_{n-\ell}\left(\cos\theta_{2}\right)\cos\left(\ell\phi \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C18.S18.Px7.p1.s2">
+For (18.18.8), (18.18.9), and the corresponding formula for Jacobi polynomials see Koornwinder (1975b).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C18.S18.Px7.p1.s3">
+See also (14.30.9).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px8">
+<title>Laguerre</title>     
+<para xml:id="C18.S18.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C18.S18.Px8.p1.s1">
+ <Math equation-number="18.18.10" mode="display" xml:id="C18.S18.E10">L^{(\alpha_{1}+\dots+\alpha_{r}+r-1)}_{n}\left(x_{1}+\dots+x_{r}\right)=\sum_{ m_{1}+\dots+m_{r}=n}L^{(\alpha_{1})}_{m_{1}}\left(x_{1}\right)\cdots L^{( \alpha_{r})}_{m_{r}}\left(x_{r}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px9">
+<title>Hermite</title>     
+<para xml:id="C18.S18.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C18.S18.Px9.p1.s1">
+ <Math equation-number="18.18.11" mode="display" xml:id="C18.S18.E11">\frac{(a_{1}^{2}+\dots+a_{r}^{2})^{\frac{1}{2}n}}{n!}H_{n}\left(\frac{a_{1}x_{ 1}+\cdots+a_{r}x_{r}}{(a_{1}^{2}+\cdots+a_{r}^{2})^{\frac{1}{2}}}\right)=\sum_ {m_{1}+\cdots+m_{r}=n}\frac{a_{1}^{m_{1}}\cdots a_{r}^{m_{r}}}{m_{1}!\cdots m_ {r}!}H_{m_{1}}\left(x_{1}\right)\cdots H_{m_{r}}\left(x_{r}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS3">
+<title>Multiplication Theorems</title>        
+  
+<paragraph xml:id="C18.S18.Px10">
+<title>Laguerre</title>  
+   
+<para xml:id="C18.S18.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C18.S18.Px10.p1.s1">
+ <Math equation-number="18.18.12" mode="display" xml:id="C18.S18.E12">\frac{L^{(\alpha)}_{n}\left(\lambda x\right)}{L^{(\alpha)}_{n}\left(0\right)}= \sum_{\ell=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{\ell}\lambda^{\ell}(1-\lambda)^{n- \ell}\frac{L^{(\alpha)}_{\ell}\left(x\right)}{L^{(\alpha)}_{\ell}\left(0\right )}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px11">
+<title>Hermite</title>     
+<para xml:id="C18.S18.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C18.S18.Px11.p1.s1">
+ <Math equation-number="18.18.13" mode="display" xml:id="C18.S18.E13">H_{n}\left(\lambda x\right)=\lambda^{n}\sum_{\ell=0}^{\left\lfloor n/2\right \rfloor}\frac{{\left(-n\right)_{2\ell}}}{\ell!}(1-\lambda^{-2})^{\ell}H_{n-2 \ell}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS4">
+<title>Connection Formulas</title>        
+ 
+ 
+<paragraph xml:id="C18.S18.Px12">
+<title>Jacobi</title>   
+<para xml:id="C18.S18.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C18.S18.Px12.p1.s1">
+ <Math equation-number="18.18.14" mode="display" xml:id="C18.S18.E14">P^{(\gamma,\beta)}_{n}\left(x\right)=\dfrac{{\left(\beta+1\right)_{n}}}{{\left (\alpha+\beta+2\right)_{n}}}\sum_{\ell=0}^{n}\dfrac{\alpha+\beta+2\ell+1}{ \alpha+\beta+1}\dfrac{{\left(\alpha+\beta+1\right)_{\ell}}{\left(n+\beta+ \gamma+1\right)_{\ell}}}{{\left(\beta+1\right)_{\ell}}{\left(n+\alpha+\beta+2 \right)_{\ell}}}\dfrac{{\left(\gamma-\alpha\right)_{n-\ell}}}{(n-\ell)!}P^{( \alpha,\beta)}_{\ell}\left(x\right),</Math> , <Math equation-number="18.18.15" mode="display" xml:id="C18.S18.E15">\left(\frac{1+x}{2}\right)^{n}=\frac{{\left(\beta+1\right)_{n}}}{{\left(\alpha +\beta+2\right)_{n}}}\sum_{\ell=0}^{n}\frac{\alpha+\beta+2\ell+1}{\alpha+\beta +1}\frac{{\left(\alpha+\beta+1\right)_{\ell}}{\left(n-\ell+1\right)_{\ell}}}{{ \left(\beta+1\right)_{\ell}}{\left(n+\alpha+\beta+2\right)_{\ell}}}P^{(\alpha, \beta)}_{\ell}\left(x\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C18.S18.Px12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C18.S18.Px12.p2.s1">
+and a similar pair of equations by symmetry; compare the second row in Table18.6.1.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px13">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S18.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C18.S18.Px13.p1.s1">
+ <Math equation-number="18.18.16" mode="display" xml:id="C18.S18.E16">C^{(\mu)}_{n}\left(x\right)=\sum_{\ell=0}^{\left\lfloor n/2\right\rfloor}\frac {\lambda+n-2\ell}{\lambda}\frac{{\left(\mu\right)_{n-\ell}}}{{\left(\lambda+1 \right)_{n-\ell}}}\frac{{\left(\mu-\lambda\right)_{\ell}}}{\ell!}C^{(\lambda)} _{n-2\ell}\left(x\right),</Math> , <Math equation-number="18.18.17" mode="display" xml:id="C18.S18.E17">(2x)^{n}=n!\sum_{\ell=0}^{\left\lfloor n/2\right\rfloor}\frac{\lambda+n-2\ell} {\lambda}\frac{1}{{\left(\lambda+1\right)_{n-\ell}}\,\ell!}C^{(\lambda)}_{n-2 \ell}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px14">
+<title>Laguerre</title>   
+<para xml:id="C18.S18.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C18.S18.Px14.p1.s1">
+ <Math equation-number="18.18.18" mode="display" xml:id="C18.S18.E18">L^{(\beta)}_{n}\left(x\right)=\sum_{\ell=0}^{n}\frac{{\left(\beta-\alpha\right )_{n-\ell}}}{(n-\ell)!}L^{(\alpha)}_{\ell}\left(x\right)</Math> ,, <Math equation-number="18.18.19" mode="display" xml:id="C18.S18.E19">x^{n}={\left(\alpha+1\right)_{n}}\sum_{\ell=0}^{n}\frac{{\left(-n\right)_{\ell }}}{{\left(\alpha+1\right)_{\ell}}}L^{(\alpha)}_{\ell}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px15">
+<title>Hermite</title>   
+ 
+<para xml:id="C18.S18.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C18.S18.Px15.p1.s1">
+ <Math equation-number="18.18.20" mode="display" xml:id="C18.S18.E20">(2x)^{n}=\sum_{\ell=0}^{\left\lfloor n/2\right\rfloor}\frac{{\left(-n\right)_{ 2\ell}}}{\ell!}H_{n-2\ell}\left(x\right)</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS5">
+<title>Linearization Formulas</title>        
+  
+<paragraph xml:id="C18.S18.Px16">
+<title>Chebyshev</title>    
+<para xml:id="C18.S18.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C18.S18.Px16.p1.s1">
+ <Math equation-number="18.18.21" mode="display" xml:id="C18.S18.E21">T_{m}\left(x\right)T_{n}\left(x\right)=\tfrac{1}{2}(T_{m+n}\left(x\right)+T_{m -n}\left(x\right))</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px17">
+<title>Ultraspherical</title>  
+   
+<para xml:id="C18.S18.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C18.S18.Px17.p1.s1">
+ <Math equation-number="18.18.22" mode="display" xml:id="C18.S18.E22">C^{(\lambda)}_{m}\left(x\right)C^{(\lambda)}_{n}\left(x\right)=\sum_{\ell=0}^{ \min(m,n)}\frac{(m+n+\lambda-2\ell)(m+n-2\ell)!}{(m+n+\lambda-\ell)\ell!\,(m- \ell)!\,(n-\ell)!}\*\frac{{\left(\lambda\right)_{\ell}}{\left(\lambda\right)_{ m-\ell}}{\left(\lambda\right)_{n-\ell}}{\left(2\lambda\right)_{m+n-\ell}}}{{ \left(\lambda\right)_{m+n-\ell}}{\left(2\lambda\right)_{m+n-2\ell}}}C^{( \lambda)}_{m+n-2\ell}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px18">
+<title>Hermite</title>     
+<para xml:id="C18.S18.Px18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C18.S18.Px18.p1.s1">
+ <Math equation-number="18.18.23" mode="display" xml:id="C18.S18.E23">H_{m}\left(x\right)H_{n}\left(x\right)=\sum_{\ell=0}^{\min(m,n)}\genfrac{(}{)} {0.0pt}{}{m}{\ell}\genfrac{(}{)}{0.0pt}{}{n}{\ell}2^{\ell}\ell!H_{m+n-2\ell} \left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S18.Px18.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C18.S18.Px18.p2.s1">
+The coefficients in the expansions (18.18.22) and (18.18.23) are positive, provided that in the former case <Math mode="inline" xml:id="C18.S18.Px18.p2.m1">\lambda&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS6">
+<title>Bateman-Type Sums</title>        
+  
+<paragraph xml:id="C18.S18.Px19">
+<title>Jacobi</title>    
+<para xml:id="C18.S18.Px19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C18.S18.Px19.p1.s1">
+With <Math equation-number="18.18.24" mode="display" xml:id="C18.S18.E24">b_{n,\ell}=\genfrac{(}{)}{0.0pt}{}{n}{\ell}\frac{{\left(n+\alpha+\beta+1\right )_{\ell}}{\left(-\beta-n\right)_{n-\ell}}}{2^{\ell}{\left(\alpha+1\right)_{n}}},</Math> <Math equation-number="18.18.25" mode="display" xml:id="C18.S18.E25">\frac{P^{(\alpha,\beta)}_{n}\left(x\right)}{P^{(\alpha,\beta)}_{n}\left(1 \right)}\frac{P^{(\alpha,\beta)}_{n}\left(y\right)}{P^{(\alpha,\beta)}_{n} \left(1\right)}=\sum_{\ell=0}^{n}b_{n,\ell}(x+y)^{\ell}\*\frac{P^{(\alpha, \beta)}_{\ell}\left(\ifrac{(1+xy)}{(x+y)}\right)}{P^{(\alpha,\beta)}_{\ell} \left(1\right)},</Math> <Math equation-number="18.18.26" mode="display" xml:id="C18.S18.E26">\frac{P^{(\alpha,\beta)}_{n}\left(x\right)}{P^{(\alpha,\beta)}_{n}\left(1 \right)}=\sum_{\ell=0}^{n}b_{n,\ell}(x+1)^{\ell}</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS7">
+<title>Poisson Kernels</title>        
+  
+<paragraph xml:id="C18.S18.Px20">
+<title>Laguerre</title>   
+ 
+<para xml:id="C18.S18.Px20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C18.S18.Px20.p1.s1">
+ <Math equation-number="18.18.27" mode="display" xml:id="C18.S18.E27">\sum_{n=0}^{\infty}\frac{n!\,L^{(\alpha)}_{n}\left(x\right)L^{(\alpha)}_{n} \left(y\right)}{{\left(\alpha+1\right)_{n}}}z^{n}=\frac{\Gamma\left(\alpha+1 \right)(xyz)^{-\frac{1}{2}\alpha}}{1-z}\*\exp\left(\frac{-(x+y)z}{1-z}\right)I _{\alpha}\left(\frac{2(xyz)^{\frac{1}{2}}}{1-z}\right), if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C18.S18.Px20.p1.s2">
+For the modified Bessel function <Math mode="inline" xml:id="C18.S18.Px20.p1.m1">I_{\nu}\left(z\right)</Math> see §10.25(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px21">
+<title>Hermite</title>     
+<para xml:id="C18.S18.Px21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C18.S18.Px21.p1.s1">
+ <Math equation-number="18.18.28" mode="display" xml:id="C18.S18.E28">\sum_{n=0}^{\infty}\frac{H_{n}\left(x\right)H_{n}\left(y\right)}{2^{n}n!}z^{n} =(1-z^{2})^{-\frac{1}{2}}\exp\left(\frac{2xyz-(x^{2}+y^{2})z^{2}}{1-z^{2}} \right), if |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S18.Px21.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C18.S18.Px21.p2.s1">
+These Poisson kernels are positive, provided that <Math mode="inline" xml:id="C18.S18.Px21.p2.m1">x,y</Math> are real, <Math mode="inline" xml:id="C18.S18.Px21.p2.m2">0\leq z&lt;1</Math> , and in the case of (18.18.27)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C18.S18.Px21.p2.s2">
+<Math mode="inline" xml:id="C18.S18.Px21.p2.m3">x,y\geq 0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS8">
+<title>Other Sums</title>        
+ 
+<para xml:id="C18.S18.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C18.S18.SS8.p1.s1">
+In this subsection the variables <Math mode="inline" xml:id="C18.S18.SS8.p1.m1">x</Math> and <Math mode="inline" xml:id="C18.S18.SS8.p1.m2">y</Math> are not confined to the closures of the intervals of orthogonality; compare §18.2(i).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S18.Px22">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S18.Px22.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C18.S18.Px22.p1.s1">
+ <Math equation-number="18.18.29" mode="display" xml:id="C18.S18.E29">\sum_{\ell=0}^{n}C^{(\lambda)}_{\ell}\left(x\right)C^{(\mu)}_{n-\ell}\left(x \right)=C^{(\lambda+\mu)}_{n}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C18.S18.Px22.p1.s2">
+<Math equation-number="18.18.30" mode="display" xml:id="C18.S18.E30">\sum_{\ell=0}^{n}\frac{\ell+2\lambda}{2\lambda}C^{(\lambda)}_{\ell}\left(x \right)x^{n-\ell}=C^{(\lambda+1)}_{n}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px23">
+<title>Chebyshev</title>    
+<para xml:id="C18.S18.Px23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C18.S18.Px23.p1.s1">
+ <Math equation-number="18.18.31" mode="display" xml:id="C18.S18.E31">\sum_{\ell=0}^{n}T_{\ell}\left(x\right)x^{n-\ell}=U_{n}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C18.S18.Px23.p1.s2">
+<Math equation-number="18.18.32" mode="display" xml:id="C18.S18.E32">2\sum_{\ell=0}^{n}T_{2\ell}\left(x\right)=1+U_{2n}\left(x\right),</Math> , <Math equation-number="18.18.33" mode="display" xml:id="C18.S18.E33">2\sum_{\ell=0}^{n}T_{2\ell+1}\left(x\right)=U_{2n+1}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="47" xml:id="C18.S18.Px23.p1.s3">
+<Math equation-number="18.18.34" mode="display" xml:id="C18.S18.E34">2(1-x^{2})\sum_{\ell=0}^{n}U_{2\ell}\left(x\right)=1-T_{2n+2}\left(x\right),</Math> , <Math equation-number="18.18.35" mode="display" xml:id="C18.S18.E35">2(1-x^{2})\sum_{\ell=0}^{n}U_{2\ell+1}\left(x\right)=x-T_{2n+3}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px24">
+<title>Legendre and Chebyshev</title>    
+<para xml:id="C18.S18.Px24.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C18.S18.Px24.p1.s1">
+ <Math equation-number="18.18.36" mode="display" xml:id="C18.S18.E36">\sum_{\ell=0}^{n}P_{\ell}\left(x\right)P_{n-\ell}\left(x\right)=U_{n}\left(x \right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px25">
+<title>Laguerre</title>   
+<para xml:id="C18.S18.Px25.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C18.S18.Px25.p1.s1">
+ <Math equation-number="18.18.37" mode="display" xml:id="C18.S18.E37">\sum_{\ell=0}^{n}L^{(\alpha)}_{\ell}\left(x\right)=L^{(\alpha+1)}_{n}\left(x \right),</Math> <Math equation-number="18.18.38" mode="display" xml:id="C18.S18.E38">\sum_{\ell=0}^{n}L^{(\alpha)}_{\ell}\left(x\right)L^{(\beta)}_{n-\ell}\left(y \right)=L^{(\alpha+\beta+1)}_{n}\left(x+y\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S18.Px26">
+<title>Hermite and Laguerre</title>    
+<para xml:id="C18.S18.Px26.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C18.S18.Px26.p1.s1">
+ <Math equation-number="18.18.39" mode="display" xml:id="C18.S18.E39">\sum_{\ell=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{\ell}H_{\ell}\left(2^{\frac{1}{2}} x\right)H_{n-\ell}\left(2^{\frac{1}{2}}y\right)=2^{\frac{1}{2}n}H_{n}\left(x+y \right),</Math> <Math equation-number="18.18.40" mode="display" xml:id="C18.S18.E40">\sum_{\ell=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{\ell}H_{2\ell}\left(x\right)H_{2n- 2\ell}\left(y\right)=(-1)^{n}2^{2n}n!L_{n}\left(x^{2}+y^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S18.SS9">
+<title>Compendia</title>        
+ 
+<para xml:id="C18.S18.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C18.S18.SS9.p1.s1">
+For further sums see Hansen (1975, pp. 292-330),Gradshteyn and Ryzhik (2000, pp. 978–993), andPrudnikov et al. (1986b, pp. 637-644 and 700-718).
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>

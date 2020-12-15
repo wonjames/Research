@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S12">
+<title>Plane Partitions</title>        
+ 
+<subsection xml:id="C26.S12.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C26.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S12.SS1.p1.s1">
+A plane partition, <Math mode="inline" xml:id="C26.S12.SS1.p1.m1">\pi</Math> , of a positive integer <Math mode="inline" xml:id="C26.S12.SS1.p1.m2">n</Math> , is a partition of <Math mode="inline" xml:id="C26.S12.SS1.p1.m4">n</Math> in which the parts have been arranged in a 2-dimensional array that is weakly decreasing (nonincreasing) across rows and down columns.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S12.SS1.p1.s2">
+Different configurations are counted as different plane partitions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S12.SS1.p1.s3">
+As an example, there are six plane partitions of 3: <Math equation-number="26.12.1" mode="display" xml:id="C26.S12.E1">3, ,\begin{array}[]{cc}2&amp;1\end{array}, ,\begin{array}[]{c}2\\ 1\end{array}, ,\begin{array}[]{ccc}1&amp;1&amp;1\end{array}, ,\begin{array}[]{cc}1&amp;1\\ 1\end{array}, ,\begin{array}[]{c}1\\ 1\\ 1\end{array}, </Math>.
+</sentence>
+
+</para>
+                   
+<para xml:id="C26.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S12.SS1.p2.s1">
+An equivalent definition is that a plane partition is a finite subset of <Math mode="inline" xml:id="C26.S12.SS1.p2.m1">\mathbb{N}\times\mathbb{N}\times\mathbb{N}</Math> with the property that if <Math mode="inline" xml:id="C26.S12.SS1.p2.m2">(r,s,t)\in\pi</Math> and <Math mode="inline" xml:id="C26.S12.SS1.p2.m3">(1,1,1)\leq(h,j,k)\leq(r,s,t)</Math> , then <Math mode="inline" xml:id="C26.S12.SS1.p2.m4">(h,j,k)</Math> must be an element of <Math mode="inline" xml:id="C26.S12.SS1.p2.m5">\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C26.S12.SS1.p2.s2">
+Here <Math mode="inline" xml:id="C26.S12.SS1.p2.m6">(h,j,k)\leq(r,s,t)</Math> means <Math mode="inline" xml:id="C26.S12.SS1.p2.m7">h\leq r</Math> , <Math mode="inline" xml:id="C26.S12.SS1.p2.m8">j\leq s</Math> , and <Math mode="inline" xml:id="C26.S12.SS1.p2.m9">k\leq t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C26.S12.SS1.p2.s3">
+It is useful to be able to visualize a plane partition as a pile of blocks, one block at each lattice point <Math mode="inline" xml:id="C26.S12.SS1.p2.m10">(h,j,k)\in\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C26.S12.SS1.p2.s4">
+For example, Figure 26.12.1 depicts the pile of blocks that represents the plane partition of 75 given by (26.12.2).
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="8" xml:id="C26.S12.F1.s1">
+Figure 26.12.1: A plane partition of 75.
+</sentence>
+ 
+ 
+<para xml:id="C26.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C26.S12.SS1.p3.s1">
+ <Math equation-number="26.12.2" mode="display" xml:id="C26.S12.E2">\begin{array}[]{cccccc}6&amp;5&amp;5&amp;4&amp;3&amp;3\\ 6&amp;4&amp;3&amp;3&amp;1\\ 6&amp;4&amp;3&amp;1&amp;1\\ 4&amp;2&amp;2&amp;1\\ 3&amp;1&amp;1\\ 1&amp;1&amp;1\end{array}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C26.S12.SS1.p4.s1">
+The number of plane partitions of <Math mode="inline" xml:id="C26.S12.SS1.p4.m1">n</Math> is denoted by <Math mode="inline" xml:id="C26.S12.SS1.p4.m2">\mathrm{pp}\left(n\right)</Math> , with <Math mode="inline" xml:id="C26.S12.SS1.p4.m3">\mathrm{pp}\left(0\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C26.S12.SS1.p4.s2">
+See Table 26.12.1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="12" xml:id="C26.S12.T1.s1">
+Table 26.12.1: Plane partitions.
+</sentence>  
+ 
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="1" xml:id="C26.S12.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="2" xml:id="C26.S12.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m2">\mathrm{pp}\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="3" xml:id="C26.S12.T1.t1.s3">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m3">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="4" xml:id="C26.S12.T1.t1.s4">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m4">\mathrm{pp}\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="5" xml:id="C26.S12.T1.t1.s5">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m5">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="6" xml:id="C26.S12.T1.t1.s6">
+<Math mode="inline" xml:id="C26.S12.T1.t1.r1.m6">\mathrm{pp}\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="7" xml:id="C26.S12.T1.t1.s7">
+0
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="8" xml:id="C26.S12.T1.t1.s8">
+1
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="9" xml:id="C26.S12.T1.t1.s9">
+17
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="10" xml:id="C26.S12.T1.t1.s10">
+18334
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="11" xml:id="C26.S12.T1.t1.s11">
+34
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="12" xml:id="C26.S12.T1.t1.s12">
+281 75955
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="13" xml:id="C26.S12.T1.t1.s13">
+1
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="14" xml:id="C26.S12.T1.t1.s14">
+1
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="15" xml:id="C26.S12.T1.t1.s15">
+18
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="16" xml:id="C26.S12.T1.t1.s16">
+29601
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="17" xml:id="C26.S12.T1.t1.s17">
+35
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="18" xml:id="C26.S12.T1.t1.s18">
+416 91046
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="19" xml:id="C26.S12.T1.t1.s19">
+2
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="20" xml:id="C26.S12.T1.t1.s20">
+3
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="21" xml:id="C26.S12.T1.t1.s21">
+19
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="22" xml:id="C26.S12.T1.t1.s22">
+47330
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="23" xml:id="C26.S12.T1.t1.s23">
+36
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="24" xml:id="C26.S12.T1.t1.s24">
+614 84961
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="25" xml:id="C26.S12.T1.t1.s25">
+3
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="26" xml:id="C26.S12.T1.t1.s26">
+6
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="27" xml:id="C26.S12.T1.t1.s27">
+20
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="28" xml:id="C26.S12.T1.t1.s28">
+75278
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="29" xml:id="C26.S12.T1.t1.s29">
+37
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="30" xml:id="C26.S12.T1.t1.s30">
+903 79784
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="31" xml:id="C26.S12.T1.t1.s31">
+4
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="32" xml:id="C26.S12.T1.t1.s32">
+13
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="33" xml:id="C26.S12.T1.t1.s33">
+21
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="34" xml:id="C26.S12.T1.t1.s34">
+1 18794
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="35" xml:id="C26.S12.T1.t1.s35">
+38
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="36" xml:id="C26.S12.T1.t1.s36">
+1324 41995
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="37" xml:id="C26.S12.T1.t1.s37">
+5
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="38" xml:id="C26.S12.T1.t1.s38">
+24
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="39" xml:id="C26.S12.T1.t1.s39">
+22
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="40" xml:id="C26.S12.T1.t1.s40">
+1 86475
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="41" xml:id="C26.S12.T1.t1.s41">
+39
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="42" xml:id="C26.S12.T1.t1.s42">
+1934 87501
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="43" xml:id="C26.S12.T1.t1.s43">
+6
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="44" xml:id="C26.S12.T1.t1.s44">
+48
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="45" xml:id="C26.S12.T1.t1.s45">
+23
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="46" xml:id="C26.S12.T1.t1.s46">
+2 90783
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="47" xml:id="C26.S12.T1.t1.s47">
+40
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="48" xml:id="C26.S12.T1.t1.s48">
+2818 46923
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="49" xml:id="C26.S12.T1.t1.s49">
+7
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="50" xml:id="C26.S12.T1.t1.s50">
+86
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="51" xml:id="C26.S12.T1.t1.s51">
+24
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="52" xml:id="C26.S12.T1.t1.s52">
+4 51194
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="53" xml:id="C26.S12.T1.t1.s53">
+41
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="54" xml:id="C26.S12.T1.t1.s54">
+4093 83981
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="55" xml:id="C26.S12.T1.t1.s55">
+8
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="56" xml:id="C26.S12.T1.t1.s56">
+160
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="57" xml:id="C26.S12.T1.t1.s57">
+25
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="58" xml:id="C26.S12.T1.t1.s58">
+6 96033
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="59" xml:id="C26.S12.T1.t1.s59">
+42
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="60" xml:id="C26.S12.T1.t1.s60">
+5930 01267
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="61" xml:id="C26.S12.T1.t1.s61">
+9
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="62" xml:id="C26.S12.T1.t1.s62">
+282
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="63" xml:id="C26.S12.T1.t1.s63">
+26
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="64" xml:id="C26.S12.T1.t1.s64">
+10 68745
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="65" xml:id="C26.S12.T1.t1.s65">
+43
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="66" xml:id="C26.S12.T1.t1.s66">
+8566 67495
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="67" xml:id="C26.S12.T1.t1.s67">
+10
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="68" xml:id="C26.S12.T1.t1.s68">
+500
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="69" xml:id="C26.S12.T1.t1.s69">
+27
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="70" xml:id="C26.S12.T1.t1.s70">
+16 32658
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="71" xml:id="C26.S12.T1.t1.s71">
+44
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="72" xml:id="C26.S12.T1.t1.s72">
+12343 63833
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="73" xml:id="C26.S12.T1.t1.s73">
+11
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="74" xml:id="C26.S12.T1.t1.s74">
+859
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="75" xml:id="C26.S12.T1.t1.s75">
+28
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="76" xml:id="C26.S12.T1.t1.s76">
+24 83234
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="77" xml:id="C26.S12.T1.t1.s77">
+45
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="78" xml:id="C26.S12.T1.t1.s78">
+17740 79109
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="79" xml:id="C26.S12.T1.t1.s79">
+12
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="80" xml:id="C26.S12.T1.t1.s80">
+1479
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="81" xml:id="C26.S12.T1.t1.s81">
+29
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="82" xml:id="C26.S12.T1.t1.s82">
+37 59612
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="83" xml:id="C26.S12.T1.t1.s83">
+46
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="84" xml:id="C26.S12.T1.t1.s84">
+25435 35902
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="85" xml:id="C26.S12.T1.t1.s85">
+13
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="86" xml:id="C26.S12.T1.t1.s86">
+2485
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="87" xml:id="C26.S12.T1.t1.s87">
+30
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="88" xml:id="C26.S12.T1.t1.s88">
+56 68963
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="89" xml:id="C26.S12.T1.t1.s89">
+47
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="90" xml:id="C26.S12.T1.t1.s90">
+36379 93036
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="91" xml:id="C26.S12.T1.t1.s91">
+14
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="92" xml:id="C26.S12.T1.t1.s92">
+4167
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="93" xml:id="C26.S12.T1.t1.s93">
+31
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="94" xml:id="C26.S12.T1.t1.s94">
+85 12309
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="95" xml:id="C26.S12.T1.t1.s95">
+48
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="96" xml:id="C26.S12.T1.t1.s96">
+51913 04973
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="97" xml:id="C26.S12.T1.t1.s97">
+15
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="98" xml:id="C26.S12.T1.t1.s98">
+6879
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="99" xml:id="C26.S12.T1.t1.s99">
+32
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="100" xml:id="C26.S12.T1.t1.s100">
+127 33429
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="101" xml:id="C26.S12.T1.t1.s101">
+49
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="102" xml:id="C26.S12.T1.t1.s102">
+73910 26522
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="103" xml:id="C26.S12.T1.t1.s103">
+16
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="104" xml:id="C26.S12.T1.t1.s104">
+11297
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="105" xml:id="C26.S12.T1.t1.s105">
+33
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="106" xml:id="C26.S12.T1.t1.s106">
+189 74973
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="107" xml:id="C26.S12.T1.t1.s107">
+50
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="108" xml:id="C26.S12.T1.t1.s108">
+1 04996 40707
+</sentence>
+  
+<para xml:id="C26.S12.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C26.S12.SS1.p5.s1">
+We define the <Math mode="inline" xml:id="C26.S12.SS1.p5.m1">r\times s\times t</Math> box <Math mode="inline" xml:id="C26.S12.SS1.p5.m2">B(r,s,t)</Math> as <Math equation-number="26.12.3" mode="display" xml:id="C26.S12.E3">B(r,s,t)=\{(h,j,k)\&gt;|\&gt;1\leq h\leq r,1\leq j\leq s,1\leq k\leq t\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="122" xml:id="C26.S12.SS1.p5.s2">
+Then the number of plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p5.m3">B(r,s,t)</Math> is <Math equation-number="26.12.4" mode="display" xml:id="C26.S12.E4">\prod_{(h,j,k)\in B(r,s,t)}\frac{h+j+k-1}{h+j+k-2}=\prod_{h=1}^{r}\prod_{j=1}^ {s}\frac{h+j+t-1}{h+j-1}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S12.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C26.S12.SS1.p6.s1">
+A plane partition is symmetric if <Math mode="inline" xml:id="C26.S12.SS1.p6.m1">(h,j,k)\in\pi</Math> implies that <Math mode="inline" xml:id="C26.S12.SS1.p6.m2">(j,h,k)\in\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C26.S12.SS1.p6.s2">
+The number of symmetric plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p6.m3">B(r,r,t)</Math> is <Math equation-number="26.12.5" mode="display" xml:id="C26.S12.E5">\prod_{h=1}^{r}\frac{2h+t-1}{2h-1}\prod_{1\leq h&lt;j\leq r}\frac{h+j+t-1}{h+j-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C26.S12.SS1.p7.s1">
+A plane partition is cyclically symmetric if <Math mode="inline" xml:id="C26.S12.SS1.p7.m1">(h,j,k)\in\pi</Math> implies <Math mode="inline" xml:id="C26.S12.SS1.p7.m2">(j,k,h)\in\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="126" xml:id="C26.S12.SS1.p7.s2">
+The plane partition in Figure 26.12.1 is an example of a cyclically symmetric plane partition.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="127" xml:id="C26.S12.SS1.p7.s3">
+The number of cyclically symmetric plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p7.m3">B(r,r,r)</Math> is
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C26.S12.SS1.p8.s1">
+ <Math equation-number="26.12.6" mode="display" xml:id="C26.S12.E6">\prod_{h=1}^{r}\frac{3h-1}{3h-2}\prod_{1\leq h&lt;j\leq r}\frac{h+2j-1}{h+j-1},</Math> or equivalently, <Math equation-number="26.12.7" mode="display" xml:id="C26.S12.E7">\prod_{h=1}^{r}\left(\frac{3h-1}{3h-2}\prod_{j=h}^{r}\frac{r+h+j-1}{2h+j-1} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C26.S12.SS1.p9.s1">
+A plane partition is totally symmetric if it is both symmetric and cyclically symmetric.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="130" xml:id="C26.S12.SS1.p9.s2">
+The number of totally symmetric plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p9.m1">B(r,r,r)</Math> is <Math equation-number="26.12.8" mode="display" xml:id="C26.S12.E8">\prod_{1\leq h\leq j\leq r}\frac{h+j+r-1}{h+2j-2}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S12.SS1.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C26.S12.SS1.p10.s1">
+The complement of <Math mode="inline" xml:id="C26.S12.SS1.p10.m1">\pi\subseteq B(r,s,t)</Math> is <Math mode="inline" xml:id="C26.S12.SS1.p10.m2">\pi^{c}=\{(h,j,k)\&gt;|\&gt;(r-h+1,s-j+1,t-k+1)\notin\pi\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="132" xml:id="C26.S12.SS1.p10.s2">
+A plane partition isself-complementary if it is equal to its complement.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="133" xml:id="C26.S12.SS1.p10.s3">
+The number of self-complementary plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p10.m3">B(2r,2s,2t)</Math> is <Math equation-number="26.12.9" mode="display" xml:id="C26.S12.E9">\left(\prod_{h=1}^{r}\prod_{j=1}^{s}\frac{h+j+t-1}{h+j-1}\right)^{2};</Math> in <Math mode="inline" xml:id="C26.S12.SS1.p10.m4">B(2r+1,2s,2t)</Math> it is <Math equation-number="26.12.10" mode="display" xml:id="C26.S12.E10">\left(\prod_{h=1}^{r}\prod_{j=1}^{s}\frac{h+j+t-1}{h+j-1}\right)\*\left(\prod_ {h=1}^{r+1}\prod_{j=1}^{s}\frac{h+j+t-1}{h+j-1}\right);</Math> in <Math mode="inline" xml:id="C26.S12.SS1.p10.m5">B(2r+1,2s+1,2t)</Math> it is <Math equation-number="26.12.11" mode="display" xml:id="C26.S12.E11">\left(\prod_{h=1}^{r+1}\prod_{j=1}^{s}\frac{h+j+t-1}{h+j-1}\right)\*\left( \prod_{h=1}^{r}\prod_{j=1}^{s+1}\frac{h+j+t-1}{h+j-1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p11">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C26.S12.SS1.p11.s1">
+A plane partition is transpose complement if it is equal to the reflection through the <Math mode="inline" xml:id="C26.S12.SS1.p11.m1">(x,y)</Math> -plane of its complement.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="135" xml:id="C26.S12.SS1.p11.s2">
+The number of transpose complement plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p11.m2">B(r,r,2t)</Math> is <Math equation-number="26.12.12" mode="display" xml:id="C26.S12.E12">\genfrac{(}{)}{0.0pt}{}{t+r-1}{r-1}\prod_{1\leq h\leq j\leq r-2}\frac{h+j+2t+1 }{h+j+1}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C26.S12.SS1.p12">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C26.S12.SS1.p12.s1">
+The number of symmetric self-complementary plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p12.m1">B(2r,2r,2t)</Math> is <Math equation-number="26.12.13" mode="display" xml:id="C26.S12.E13">\prod_{h=1}^{r}\prod_{j=1}^{r}\frac{h+j+t-1}{h+j-1};</Math> in <Math mode="inline" xml:id="C26.S12.SS1.p12.m2">B(2r+1,2r+1,2t)</Math> it is <Math equation-number="26.12.14" mode="display" xml:id="C26.S12.E14">\prod_{h=1}^{r}\prod_{j=1}^{r+1}\frac{h+j+t-1}{h+j-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p13">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C26.S12.SS1.p13.s1">
+The number of cyclically symmetric transpose complement plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p13.m1">B(2r,2r,2r)</Math> is <Math equation-number="26.12.15" mode="display" xml:id="C26.S12.E15">\prod_{h=0}^{r-1}\frac{(3h+1)\,(6h)!\,(2h)!}{(4h+1)!\,(4h)!}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p14">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C26.S12.SS1.p14.s1">
+The number of cyclically symmetric self-complementary plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p14.m1">B(2r,2r,2r)</Math> is <Math equation-number="26.12.16" mode="display" xml:id="C26.S12.E16">\left(\prod_{h=0}^{r-1}\frac{(3h+1)!}{(r+h)!}\right)^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p15">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="139" xml:id="C26.S12.SS1.p15.s1">
+The number of totally symmetric self-complementary plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p15.m1">B(2r,2r,2r)</Math> is <Math equation-number="26.12.17" mode="display" xml:id="C26.S12.E17">\prod_{h=0}^{r-1}\frac{(3h+1)!}{(r+h)!}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S12.SS1.p16">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C26.S12.SS1.p16.s1">
+A strict shifted plane partition is an arrangement of the parts in a partition so that each row is indented one space from the previous row and there is weak decrease across rows and strict decrease down columns.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="141" xml:id="C26.S12.SS1.p16.s2">
+An example is given by:
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS1.p17">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C26.S12.SS1.p17.s1">
+ <Math equation-number="26.12.18" mode="display" xml:id="C26.S12.E18">\begin{array}[]{ccccc}6&amp;6&amp;6&amp;4&amp;3\\ &amp;3&amp;3\\ &amp;&amp;2\end{array}</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S12.SS1.p18">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C26.S12.SS1.p18.s1">
+A descending plane partition is a strict shifted plane partition inwhich the number of parts in each row is strictly less than the largest part in that row and is greater than or equal to the largest part in the next row.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C26.S12.SS1.p18.s2">
+The example of a strict shifted plane partition also satisfies the conditions of a descending plane partition.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="145" xml:id="C26.S12.SS1.p18.s3">
+The number of descending plane partitions in <Math mode="inline" xml:id="C26.S12.SS1.p18.m1">B(r,r,r)</Math> is <Math equation-number="26.12.19" mode="display" xml:id="C26.S12.E19">\prod_{h=0}^{r-1}\frac{(3h+1)!}{(r+h)!}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S12.SS2">
+<title>Generating Functions</title>        
+  
+<para xml:id="C26.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C26.S12.SS2.p1.s1">
+The notation <Math mode="inline" xml:id="C26.S12.SS2.p1.m1">\sum_{\pi\subseteq B(r,s,t)}</Math> denotes the sum over all plane partitions contained in <Math mode="inline" xml:id="C26.S12.SS2.p1.m2">B(r,s,t)</Math> , and <Math mode="inline" xml:id="C26.S12.SS2.p1.m3">|\pi|</Math> denotes the number of elements in <Math mode="inline" xml:id="C26.S12.SS2.p1.m4">\pi</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C26.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C26.S12.SS2.p2.s1">
+ <Math equation-number="26.12.20" mode="display" xml:id="C26.S12.E20">\sum_{\pi\subseteq\mathbb{N}\times\mathbb{N}\times\mathbb{N}}q^{|\pi|}=\prod_{ k=1}^{\infty}\frac{1}{(1-q^{k})^{k}},</Math> <Math equation-number="26.12.21" mode="display" xml:id="C26.S12.E21">\sum_{\pi\subseteq B(r,s,t)}q^{|\pi|}=\prod_{(h,j,k)\in B(r,s,t)}\frac{1-q^{h+ j+k-1}}{1-q^{h+j+k-2}}=\prod_{h=1}^{r}\prod_{j=1}^{s}\frac{1-q^{h+j+t-1}}{1-q^ {h+j-1}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C26.S12.SS2.p3.s1">
+ <Math equation-number="26.12.22" mode="display" xml:id="C26.S12.E22">\sum_{\begin{subarray}{c}\pi\subseteq B(r,r,t)\\ \pi\mbox{\scriptsize\ symmetric}\end{subarray}}q^{|\pi|}=\prod_{h=1}^{r}\frac{ 1-q^{2h+t-1}}{1-q^{2h-1}}\prod_{1\leq h&lt;j\leq r}\frac{1-q^{2(h+j+t-1)}}{1-q^{2 (h+j-1)}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C26.S12.SS2.p4.s1">
+ <Math equation-number="26.12.23" mode="display" xml:id="C26.S12.E23">\sum_{\begin{subarray}{c}\pi\subseteq B(r,r,r)\\ \pi\mbox{\scriptsize\ cyclically symmetric}\end{subarray}}q^{\left|\pi\right|} =\prod_{h=1}^{r}\frac{1-q^{3h-1}}{1-q^{3h-2}}\prod_{1\leq h&lt;j\leq r}\frac{1-q^ {3(h+2j-1)}}{1-q^{3(h+j-1)}}=\prod_{h=1}^{r}\left(\frac{1-q^{3h-1}}{1-q^{3h-2} }\prod_{j=h}^{r}\frac{1-q^{3(r+h+j-1)}}{1-q^{3(2h+j-1)}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C26.S12.SS2.p5.s1">
+ <Math equation-number="26.12.24" mode="display" xml:id="C26.S12.E24">\sum_{\begin{subarray}{c}\pi\subseteq B(r,r,r)\\ \pi\mbox{\scriptsize\ descending plane partition}\end{subarray}}q^{|\pi|}= \prod_{1\leq h&lt;j\leq r}\frac{1-q^{r+h+j-1}}{1-q^{2h+j-1}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S12.SS3">
+<title>Recurrence Relation</title>        
+ 
+ 
+<para xml:id="C26.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C26.S12.SS3.p1.s1">
+ <Math equation-number="26.12.25" mode="display" xml:id="C26.S12.E25">\mathrm{pp}\left(n\right)=\frac{1}{n}\sum_{j=1}^{n}\mathrm{pp}\left(n-j\right) \sigma_{2}(j),</Math> where <Math mode="inline" xml:id="C26.S12.SS3.p1.m1">\sigma_{2}(j)</Math> is the sum of the squares of the divisors of <Math mode="inline" xml:id="C26.S12.SS3.p1.m2">j</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S12.SS4">
+<title>Limiting Form</title>        
+  
+<para xml:id="C26.S12.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C26.S12.SS4.p1.s1">
+As <Math mode="inline" xml:id="C26.S12.SS4.p1.m1">n\to\infty</Math> <Math equation-number="26.12.26" mode="display" xml:id="C26.S12.E26">\mathrm{pp}\left(n\right)\sim\frac{\left(\zeta\left(3\right)\right)^{7/36}}{2^ {11/36}(3\pi)^{1/2}n^{25/36}}\exp\left(3\left(\zeta\left(3\right)\right)^{1/3} \left(\tfrac{1}{2}n\right)^{2/3}+\zeta'\left(-1\right)\right),</Math> where <Math mode="inline" xml:id="C26.S12.SS4.p1.m2">\zeta</Math> is the Riemann <Math mode="inline" xml:id="C26.S12.SS4.p1.m3">\zeta</Math> -function (§25.2(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S12.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C26.S12.SS4.p2.s1">
+Addendum: To ten decimal places, <Math equation-number="26.12.27" mode="display" xml:id="C26.S12.E27">\zeta\left(3\right)=1.20205\;69032,\zeta'\left(-1\right)=-0.16542\;11437</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

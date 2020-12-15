@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C11.S2">
+<title>Definitions</title>        
+  
+<subsection xml:id="C11.S2.SS1">
+<title>Power-Series Expansions</title>        
+   
+<para xml:id="C11.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S2.SS1.p1.s1">
+ <Math equation-number="11.2.1" mode="display" xml:id="C11.S2.E1">\mathbf{H}_{\nu}\left(z\right)=(\tfrac{1}{2}z)^{\nu+1}\sum_{n=0}^{\infty}\frac {(-1)^{n}(\tfrac{1}{2}z)^{2n}}{\Gamma\left(n+\tfrac{3}{2}\right)\Gamma\left(n+ \nu+\tfrac{3}{2}\right)},</Math> , <Math equation-number="11.2.2" mode="display" xml:id="C11.S2.E2">\mathbf{L}_{\nu}\left(z\right)=-ie^{-\frac{1}{2}\pi i\nu}\mathbf{H}_{\nu}\left (iz\right)=(\tfrac{1}{2}z)^{\nu+1}\sum_{n=0}^{\infty}\frac{(\tfrac{1}{2}z)^{2n }}{\Gamma\left(n+\tfrac{3}{2}\right)\Gamma\left(n+\nu+\tfrac{3}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C11.S2.SS1.p1.s2">
+Principal values correspond to principal values of <Math mode="inline" xml:id="C11.S2.SS1.p1.m1">(\tfrac{1}{2}z)^{\nu+1}</Math> ; compare §4.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C11.S2.SS1.p2.s1">
+The expansions (11.2.1) and (11.2.2) are absolutely convergent for all finite values of <Math mode="inline" xml:id="C11.S2.SS1.p2.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C11.S2.SS1.p2.s2">
+The functions <Math mode="inline" xml:id="C11.S2.SS1.p2.m2">z^{-\nu-1}\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m3">z^{-\nu-1}\mathbf{L}_{\nu}\left(z\right)</Math> are entire functions of <Math mode="inline" xml:id="C11.S2.SS1.p2.m4">z</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m5">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C11.S2.SS1.p2.s3">
+<Math equation-number="11.2.3" mode="display" xml:id="C11.S2.E3">\mathbf{H}_{0}\left(z\right)=\frac{2}{\pi}\left(z-\frac{z^{3}}{1^{2}\cdot 3^{2 }}+\frac{z^{5}}{1^{2}\cdot 3^{2}\cdot 5^{2}}-\cdots\right),</Math> , <Math equation-number="11.2.4" mode="display" xml:id="C11.S2.E4">\mathbf{L}_{0}\left(z\right)=\frac{2}{\pi}\left(z+\frac{z^{3}}{1^{2}\cdot 3^{2 }}+\frac{z^{5}}{1^{2}\cdot 3^{2}\cdot 5^{2}}+\cdots\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C11.S2.SS1.p2.s4">
+<Math equation-number="11.2.5" mode="display" xml:id="C11.S2.E5">\mathbf{K}_{\nu}\left(z\right)=\mathbf{H}_{\nu}\left(z\right)-Y_{\nu}\left(z \right),</Math> , <Math equation-number="11.2.6" mode="display" xml:id="C11.S2.E6">\mathbf{M}_{\nu}\left(z\right)=\mathbf{L}_{\nu}\left(z\right)-I_{\nu}\left(z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C11.S2.SS1.p2.s5">
+Principal values of <Math mode="inline" xml:id="C11.S2.SS1.p2.m6">\mathbf{K}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m7">\mathbf{M}_{\nu}\left(z\right)</Math> correspond to principal values of the functions on the right-hand sides of (11.2.5) and (11.2.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C11.S2.SS1.p3.s1">
+Unless indicated otherwise, <Math mode="inline" xml:id="C11.S2.SS1.p3.m1">\mathbf{H}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S2.SS1.p3.m2">\mathbf{K}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S2.SS1.p3.m3">\mathbf{L}_{\nu}\left(z\right)</Math> , and <Math mode="inline" xml:id="C11.S2.SS1.p3.m4">\mathbf{M}_{\nu}\left(z\right)</Math> assume their principal values throughout the DLMF.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S2.SS2">
+<title>Differential Equations</title>        
+   
+<paragraph xml:id="C11.S2.Px1">
+<title>Struve’s Equation</title>   
+<para xml:id="C11.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C11.S2.Px1.p1.s1">
+ <Math equation-number="11.2.7" mode="display" xml:id="C11.S2.E7">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}+\left(1-\frac{\nu^{2}}{z^{2}}\right)w=\frac{(\tfrac{1}{2}z)^{\nu- 1}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C11.S2.Px1.p1.s2">
+Particular solutions: <Math equation-number="11.2.8" mode="display" xml:id="C11.S2.E8">w=\mathbf{H}_{\nu}\left(z\right),\mathbf{K}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C11.S2.Px2">
+<title>Modified Struve’s Equation</title>   
+ 
+<para xml:id="C11.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C11.S2.Px2.p1.s1">
+ <Math equation-number="11.2.9" mode="display" xml:id="C11.S2.E9">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}-\left(1+\frac{\nu^{2}}{z^{2}}\right)w=\frac{(\tfrac{1}{2}z)^{\nu- 1}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C11.S2.Px2.p1.s2">
+Particular solutions: <Math equation-number="11.2.10" mode="display" xml:id="C11.S2.E10">w=\mathbf{L}_{\nu}\left(z\right),\mathbf{M}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S2.SS3">
+<title>Numerically Satisfactory Solutions</title>        
+ 
+ 
+<para xml:id="C11.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C11.S2.SS3.p1.s1">
+In this subsection <Math mode="inline" xml:id="C11.S2.SS3.p1.m1">A</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p1.m2">B</Math> are arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C11.S2.SS3.p2.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p2.m1">z=x</Math> , <Math mode="inline" xml:id="C11.S2.SS3.p2.m2">0&lt;x&lt;\infty</Math> , and <Math mode="inline" xml:id="C11.S2.SS3.p2.m3">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (11.2.7) are given by <Math equation-number="11.2.11" mode="display" xml:id="C11.S2.E11">w=\mathbf{H}_{\nu}\left(x\right)+AJ_{\nu}\left(x\right)+BY_{\nu}\left(x\right),</Math> , <Math equation-number="11.2.12" mode="display" xml:id="C11.S2.E12">w=\mathbf{K}_{\nu}\left(x\right)+AJ_{\nu}\left(x\right)+BY_{\nu}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C11.S2.SS3.p2.s2">
+(11.2.11) applies when <Math mode="inline" xml:id="C11.S2.SS3.p2.m4">x</Math> is bounded, and (11.2.12) applies when <Math mode="inline" xml:id="C11.S2.SS3.p2.m5">x</Math> is bounded away from the origin.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C11.S2.SS3.p3.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p3.m1">z\in\mathbb{C}</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m2">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (11.2.7) are given by <Math equation-number="11.2.13" mode="display" xml:id="C11.S2.E13">w=\mathbf{H}_{\nu}\left(z\right)+AJ_{\nu}\left(z\right)+B{H^{(1)}_{\nu}}\left( z\right),</Math> , <Math equation-number="11.2.14" mode="display" xml:id="C11.S2.E14">w=\mathbf{H}_{\nu}\left(z\right)+AJ_{\nu}\left(z\right)+B{H^{(2)}_{\nu}}\left( z\right),</Math> , <Math equation-number="11.2.15" mode="display" xml:id="C11.S2.E15">w=\mathbf{K}_{\nu}\left(z\right)+A{H^{(1)}_{\nu}}\left(z\right)+B{H^{(2)}_{\nu }}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C11.S2.SS3.p3.s2">
+(11.2.13) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m3">0\leq\operatorname{ph}z\leq\pi</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m4">|z|</Math> is bounded. (11.2.14) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m5">-\pi\leq\operatorname{ph}z\leq 0</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m6">|z|</Math> is bounded. (11.2.15) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m7">\left|\operatorname{ph}z\right|\leq\pi</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m8">z</Math> is bounded away from the origin.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C11.S2.SS3.p4.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p4.m1">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (11.2.9) are given by <Math equation-number="11.2.16" mode="display" xml:id="C11.S2.E16">w=\mathbf{L}_{\nu}\left(z\right)+AK_{\nu}\left(z\right)+BI_{\nu}\left(z\right),</Math> , <Math equation-number="11.2.17" mode="display" xml:id="C11.S2.E17">w=\mathbf{M}_{\nu}\left(z\right)+AK_{\nu}\left(z\right)+BI_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C11.S2.SS3.p4.s2">
+(11.2.16) applies when <Math mode="inline" xml:id="C11.S2.SS3.p4.m2">|\operatorname{ph}z|\leq\tfrac{1}{2}\pi</Math> with <Math mode="inline" xml:id="C11.S2.SS3.p4.m3">|z|</Math> bounded. (11.2.17) applies when <Math mode="inline" xml:id="C11.S2.SS3.p4.m4">|\operatorname{ph}z|\leq\tfrac{1}{2}\pi</Math> with <Math mode="inline" xml:id="C11.S2.SS3.p4.m5">z</Math> bounded away from the origin.
+</sentence>
+
+</para>
+  
+  
+</subsection>
+ 
+</section>

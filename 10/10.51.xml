@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S51">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C10.S51.SS1">
+<title>Unmodified Functions</title>        
+ 
+<para xml:id="C10.S51.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S51.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C10.S51.SS1.p1.m1">f_{n}(z)</Math> denote any of <Math mode="inline" xml:id="C10.S51.SS1.p1.m2">\mathsf{j}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S51.SS1.p1.m3">\mathsf{y}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S51.SS1.p1.m4">{\mathsf{h}^{(1)}_{n}}\left(z\right)</Math> , or <Math mode="inline" xml:id="C10.S51.SS1.p1.m5">{\mathsf{h}^{(2)}_{n}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S51.SS1.p1.s2">
+Then <Math equation-number="10.51.1" mode="display" xml:id="C10.S51.E1">f_{n-1}(z)+f_{n+1}(z)=((2n+1)/z)f_{n}(z), //// nf_{n-1}(z)-(n+1)f_{n+1}(z)=(2n+1)f_{n}^{\prime}(z), if n=1,2,\dots,</Math> <Math equation-number="10.51.2" mode="display" xml:id="C10.S51.E2">f_{n}^{\prime}(z)=f_{n-1}(z)-((n+1)/z)f_{n}(z), if n=1,2,\dots, //// f_{n}^{\prime}(z)=-f_{n+1}(z)+(n/z)f_{n}(z), if n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S51.SS1.p1.s3">
+<Math equation-number="10.51.3" mode="display" xml:id="C10.S51.E3">\left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{m}(z^{n+1}f_{n}(z))=z^ {n-m+1}f_{n-m}(z), if m=0,1,\dots,n, //// \left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{m}(z^{-n}f_{n}(z))=(-1 )^{m}z^{-n-m}f_{n+m}(z), if m=0,1,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S51.SS2">
+<title>Modified Functions</title>        
+ 
+<para xml:id="C10.S51.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S51.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C10.S51.SS2.p1.m1">g_{n}(z)</Math> denote <Math mode="inline" xml:id="C10.S51.SS2.p1.m2">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S51.SS2.p1.m3">{\mathsf{i}^{(2)}_{n}}\left(z\right)</Math> , or <Math mode="inline" xml:id="C10.S51.SS2.p1.m4">(-1)^{n}</Math> <Math mode="inline" xml:id="C10.S51.SS2.p1.m5">\mathsf{k}_{n}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S51.SS2.p1.s2">
+Then <Math equation-number="10.51.4" mode="display" xml:id="C10.S51.E4">g_{n-1}(z)-g_{n+1}(z)=((2n+1)/z)g_{n}(z) //// ng_{n-1}(z)+(n+1)g_{n+1}(z)=(2n+1)g_{n}^{\prime}(z), if n=1,2,\ldots,</Math> <Math equation-number="10.51.5" mode="display" xml:id="C10.S51.E5">g_{n}^{\prime}(z)=g_{n-1}(z)-((n+1)/z)g_{n}(z), if n=1,2,\ldots, //// g_{n}^{\prime}(z)=g_{n+1}(z)+(n/z)g_{n}(z), if n=0,1,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C10.S51.SS2.p1.s3">
+<Math equation-number="10.51.6" mode="display" xml:id="C10.S51.E6">\left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{m}(z^{n+1}g_{n}(z))=z^ {n-m+1}g_{n-m}(z), if m=0,1,\ldots,n, //// \left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{m}(z^{-n}g_{n}(z))=z^{ -n-m}g_{n+m}(z), if m=0,1,\ldots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

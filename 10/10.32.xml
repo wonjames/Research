@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S32">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C10.S32.SS1">
+<title>Integrals along the Real Line</title>        
+  
+<para xml:id="C10.S32.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S32.SS1.p1.s1">
+ <Math equation-number="10.32.1" mode="display" xml:id="C10.S32.E1">I_{0}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}e^{\pm z\cos\theta}\mathrm{d} \theta=\frac{1}{\pi}\int_{0}^{\pi}\cosh\left(z\cos\theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S32.SS1.p1.s2">
+<Math equation-number="10.32.2" mode="display" xml:id="C10.S32.E2">I_{\nu}\left(z\right)=\frac{(\frac{1}{2}z)^{\nu}}{\pi^{\frac{1}{2}}\Gamma\left (\nu+\frac{1}{2}\right)}\int_{0}^{\pi}e^{\pm z\cos\theta}(\sin\theta)^{2\nu} \mathrm{d}\theta=\frac{(\frac{1}{2}z)^{\nu}}{\pi^{\frac{1}{2}}\Gamma\left(\nu+ \frac{1}{2}\right)}\int_{-1}^{1}(1-t^{2})^{\nu-\frac{1}{2}}e^{\pm zt}\mathrm{d }t, if \Re\nu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S32.SS1.p1.s3">
+<Math equation-number="10.32.3" mode="display" xml:id="C10.S32.E3">I_{n}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}e^{z\cos\theta}\cos\left(n \theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S32.SS1.p1.s4">
+<Math equation-number="10.32.4" mode="display" xml:id="C10.S32.E4">I_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}e^{z\cos\theta}\cos\left(\nu \theta\right)\mathrm{d}\theta-\frac{\sin\left(\nu\pi\right)}{\pi}\int_{0}^{ \infty}e^{-z\cosh t-\nu t}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C10.S32.SS1.p1.s5">
+<Math equation-number="10.32.5" mode="display" xml:id="C10.S32.E5">K_{0}\left(z\right)=-\frac{1}{\pi}\int_{0}^{\pi}e^{\pm z\cos\theta}\left( \gamma+\ln\left(2z(\sin\theta)^{2}\right)\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C10.S32.SS1.p1.s6">
+<Math equation-number="10.32.6" mode="display" xml:id="C10.S32.E6">K_{0}\left(x\right)=\int_{0}^{\infty}\cos\left(x\sinh t\right)\mathrm{d}t=\int _{0}^{\infty}\frac{\cos\left(xt\right)}{\sqrt{t^{2}+1}}\mathrm{d}t, if x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C10.S32.SS1.p1.s7">
+<Math equation-number="10.32.7" mode="display" xml:id="C10.S32.E7">K_{\nu}\left(x\right)=\sec\left(\tfrac{1}{2}\nu\pi\right)\int_{0}^{\infty}\cos \left(x\sinh t\right)\cosh\left(\nu t\right)\mathrm{d}t=\csc\left(\tfrac{1}{2} \nu\pi\right)\int_{0}^{\infty}\sin\left(x\sinh t\right)\sinh\left(\nu t\right) \mathrm{d}t, if |\Re\nu|&lt;1, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C10.S32.SS1.p1.s8">
+<Math equation-number="10.32.8" mode="display" xml:id="C10.S32.E8">K_{\nu}\left(z\right)=\frac{\pi^{\frac{1}{2}}(\frac{1}{2}z)^{\nu}}{\Gamma\left (\nu+\frac{1}{2}\right)}\int_{0}^{\infty}e^{-z\cosh t}(\sinh t)^{2\nu}\mathrm{ d}t=\frac{\pi^{\frac{1}{2}}(\frac{1}{2}z)^{\nu}}{\Gamma\left(\nu+\frac{1}{2} \right)}\int_{1}^{\infty}e^{-zt}(t^{2}-1)^{\nu-\frac{1}{2}}\mathrm{d}t, if \Re\nu&gt;-\tfrac{1}{2}, |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C10.S32.SS1.p1.s9">
+<Math equation-number="10.32.9" mode="display" xml:id="C10.S32.E9">K_{\nu}\left(z\right)=\int_{0}^{\infty}e^{-z\cosh t}\cosh\left(\nu t\right) \mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" xml:id="C10.S32.SS1.p1.s10">
+<Math equation-number="10.32.10" mode="display" xml:id="C10.S32.E10">K_{\nu}\left(z\right)=\tfrac{1}{2}(\tfrac{1}{2}z)^{\nu}\int_{0}^{\infty}\exp \left(-t-\frac{z^{2}}{4t}\right)\frac{\mathrm{d}t}{t^{\nu+1}}, if |\operatorname{ph}z|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S32.Px1">
+<title>Basset’s Integral</title>    
+<para xml:id="C10.S32.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S32.Px1.p1.s1">
+ <Math equation-number="10.32.11" mode="display" xml:id="C10.S32.E11">K_{\nu}\left(xz\right)=\frac{\Gamma\left(\nu+\frac{1}{2}\right)(2z)^{\nu}}{\pi ^{\frac{1}{2}}x^{\nu}}\int_{0}^{\infty}\frac{\cos\left(xt\right)\mathrm{d}t}{( t^{2}+z^{2})^{\nu+\frac{1}{2}}}, if \Re\nu&gt;-\tfrac{1}{2}, x&gt;0, |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S32.SS2">
+<title>Contour Integrals</title>        
+  
+<para xml:id="C10.S32.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S32.SS2.p1.s1">
+ <Math equation-number="10.32.12" mode="display" xml:id="C10.S32.E12">I_{\nu}\left(z\right)=\frac{1}{2\pi i}\int_{\infty-i\pi}^{\infty+i\pi}e^{z \cosh t-\nu t}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C10.S32.Px2">
+<title>Mellin–Barnes Type</title>    
+<para xml:id="C10.S32.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S32.Px2.p1.s1">
+ <Math equation-number="10.32.13" mode="display" xml:id="C10.S32.E13">K_{\nu}\left(z\right)=\frac{(\frac{1}{2}z)^{\nu}}{4\pi i}\int_{c-i\infty}^{c+i \infty}\Gamma\left(t\right)\Gamma\left(t-\nu\right)(\tfrac{1}{2}z)^{-2t} \mathrm{d}t, if c&gt;\max(\Re\nu,0),|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S32.Px2.p1.s2">
+<Math equation-number="10.32.14" mode="display" xml:id="C10.S32.E14">K_{\nu}\left(z\right)=\frac{1}{2\pi^{2}i}\left(\frac{\pi}{2z}\right)^{\frac{1} {2}}e^{-z}\cos\left(\nu\pi\right)\*\int_{-i\infty}^{i\infty}\Gamma\left(t \right)\Gamma\left(\tfrac{1}{2}-t-\nu\right)\Gamma\left(\tfrac{1}{2}-t+\nu \right)(2z)^{t}\mathrm{d}t, if \nu-\tfrac{1}{2}\notin\mathbb{Z},|\operatorname{ph}z|&lt;\tfrac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C10.S32.Px2.p1.s3">
+In (10.32.14) the integration contour separates the poles of <Math mode="inline" xml:id="C10.S32.Px2.p1.m1">\Gamma\left(t\right)</Math> from the poles of <Math mode="inline" xml:id="C10.S32.Px2.p1.m2">\Gamma\left(\frac{1}{2}-t-\nu\right)\Gamma\left(\frac{1}{2}-t+\nu\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S32.SS3">
+<title>Products</title>        
+  
+<para xml:id="C10.S32.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S32.SS3.p1.s1">
+ <Math equation-number="10.32.15" mode="display" xml:id="C10.S32.E15">I_{\mu}\left(z\right)I_{\nu}\left(z\right)=\frac{2}{\pi}\int_{0}^{\frac{1}{2} \pi}I_{\mu+\nu}\left(2z\cos\theta\right)\cos\left((\mu-\nu)\theta\right) \mathrm{d}\theta, if \Re(\mu+\nu)&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C10.S32.SS3.p1.s2">
+<Math equation-number="10.32.16" mode="display" xml:id="C10.S32.E16">I_{\mu}\left(x\right)K_{\nu}\left(x\right)=\int_{0}^{\infty}J_{\mu\pm\nu}\left (2x\sinh t\right)e^{(-\mu\pm\nu)t}\mathrm{d}t, if \Re(\mu\mp\nu)&gt;-\tfrac{1}{2}, \Re(\mu\pm\nu)&gt;-1, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C10.S32.SS3.p1.s3">
+<Math equation-number="10.32.17" mode="display" xml:id="C10.S32.E17">K_{\mu}\left(z\right)K_{\nu}\left(z\right)=2\int_{0}^{\infty}K_{\mu\pm\nu} \left(2z\cosh t\right)\cosh\left((\mu\mp\nu)t\right)\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C10.S32.SS3.p1.s4">
+<Math equation-number="10.32.18" mode="display" xml:id="C10.S32.E18">K_{\nu}\left(z\right)K_{\nu}\left(\zeta\right)=\frac{1}{2}\int_{0}^{\infty} \exp\left(-\frac{t}{2}-\frac{z^{2}+\zeta^{2}}{2t}\right)K_{\nu}\left(\frac{z \zeta}{t}\right)\frac{\mathrm{d}t}{t}, if |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\zeta|&lt;\pi, |\operatorname{ph}\left(z+\zeta\right)|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C10.S32.Px3">
+<title>Mellin–Barnes Type</title>   
+<para xml:id="C10.S32.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S32.Px3.p1.s1">
+ <Math equation-number="10.32.19" mode="display" xml:id="C10.S32.E19">K_{\mu}\left(z\right)K_{\nu}\left(z\right)=\frac{1}{8\pi i}\int_{c-i\infty}^{c +i\infty}\frac{\Gamma\left(t+\frac{1}{2}\mu+\frac{1}{2}\nu\right)\Gamma\left(t +\frac{1}{2}\mu-\frac{1}{2}\nu\right)\Gamma\left(t-\frac{1}{2}\mu+\frac{1}{2} \nu\right)\Gamma\left(t-\frac{1}{2}\mu-\frac{1}{2}\nu\right)}{\Gamma\left(2t \right)}(\tfrac{1}{2}z)^{-2t}\mathrm{d}t, if c&gt;\tfrac{1}{2}(|\Re\mu|+|\Re\nu|),|\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S32.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C10.S32.Px3.p2.s1">
+For similar integrals for <Math mode="inline" xml:id="C10.S32.Px3.p2.m1">J_{\nu}\left(z\right)K_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S32.Px3.p2.m2">I_{\nu}\left(z\right)K_{\nu}\left(z\right)</Math> see Paris and Kaminski (2001, p. 116).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S32.SS4">
+<title>Compendia</title>        
+  
+<para xml:id="C10.S32.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C10.S32.SS4.p1.s1">
+For collections of integral representations of modified Bessel functions, or products of modified Bessel functions, seeErdélyi et al. (1953b, §§7.3, 7.12, and 7.14.2),Erdélyiet al. (1954a, pp. 48–60, 105–115, 276–285, and 357–359),Gröbner and Hofreiter (1950, pp. 193–194), Magnus et al. (1966, §3.7),Marichev (1983, pp. 191–216), andWatson (1944, Chapters 6, 12, and 13).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

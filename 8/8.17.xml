@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S17">
+<title>Incomplete Beta Functions</title>          
+<subsection xml:id="C8.S17.SS1">
+<title>Definitions and Basic Properties</title>         
+ 
+<para xml:id="C8.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S17.SS1.p1.s1">
+Throughout §§8.17 and 8.18 we assume that <Math mode="inline" xml:id="C8.S17.SS1.p1.m1">a&gt;0</Math> , <Math mode="inline" xml:id="C8.S17.SS1.p1.m2">b&gt;0</Math> , and <Math mode="inline" xml:id="C8.S17.SS1.p1.m3">0\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S17.SS1.p1.s2">
+However, in the case of §8.17 it is straightforward to continue most results analytically to other real values of <Math mode="inline" xml:id="C8.S17.SS1.p1.m4">a</Math> , <Math mode="inline" xml:id="C8.S17.SS1.p1.m5">b</Math> , and <Math mode="inline" xml:id="C8.S17.SS1.p1.m6">x</Math> , and also to complex values.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S17.SS1.p1.s3">
+<Math equation-number="8.17.1" mode="display" xml:id="C8.S17.E1">\mathrm{B}_{x}\left(a,b\right)=\int_{0}^{x}t^{a-1}(1-t)^{b-1}\mathrm{d}t,</Math> <Math equation-number="8.17.2" mode="display" xml:id="C8.S17.E2">I_{x}\left(a,b\right)=\mathrm{B}_{x}\left(a,b\right)/\mathrm{B}\left(a,b\right),</Math> where, as in §5.12,
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S17.SS1.p1.s4">
+<Math mode="inline" xml:id="C8.S17.SS1.p1.m7">\mathrm{B}\left(a,b\right)</Math> denotes the Beta function: <Math equation-number="8.17.3" mode="display" xml:id="C8.S17.E3">\mathrm{B}\left(a,b\right)=\frac{\Gamma\left(a\right)\Gamma\left(b\right)}{ \Gamma\left(a+b\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C8.S17.SS1.p1.s5">
+<Math equation-number="8.17.4" mode="display" xml:id="C8.S17.E4">I_{x}\left(a,b\right)=1-I_{1-x}\left(b,a\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C8.S17.SS1.p2.s1">
+ <Math equation-number="8.17.5" mode="display" xml:id="C8.S17.E5">I_{x}\left(m,n-m+1\right)=\sum_{j=m}^{n}\genfrac{(}{)}{0.0pt}{}{n}{j}x^{j}(1-x )^{n-j}, if m,n positive integers; 0\leq x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C8.S17.SS1.p2.s2">
+Addendum: For a companion equation see (8.17.24).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C8.S17.SS1.p2.s3">
+<Math equation-number="8.17.6" mode="display" xml:id="C8.S17.E6">I_{x}\left(a,a\right)=\tfrac{1}{2}I_{4x(1-x)}\left(a,\tfrac{1}{2}\right), if 0\leq x\leq\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S17.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S17.SS1.p3.s1">
+For a historical profile of <Math mode="inline" xml:id="C8.S17.SS1.p3.m1">\mathrm{B}_{x}\left(a,b\right)</Math> see Dutka (1981).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS2">
+<title>Hypergeometric Representations</title>           
+<para xml:id="C8.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C8.S17.SS2.p1.s1">
+ <Math equation-number="8.17.7" mode="display" xml:id="C8.S17.E7">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}}{a}F\left(a,1-b;a+1;x\right),</Math> , <Math equation-number="8.17.8" mode="display" xml:id="C8.S17.E8">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{a}F\left(a+b,1;a+1;x \right),</Math> , <Math equation-number="8.17.9" mode="display" xml:id="C8.S17.E9">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b-1}}{a}F\left({1,1-b\atop a+ 1};\frac{x}{x-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C8.S17.SS2.p1.s2">
+For the hypergeometric function <Math mode="inline" xml:id="C8.S17.SS2.p1.m1">F\left(a,b;c;z\right)</Math> see §15.2(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS3">
+<title>Integral Representation</title>          
+<para xml:id="C8.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C8.S17.SS3.p1.s1">
+With <Math mode="inline" xml:id="C8.S17.SS3.p1.m1">a&gt;0</Math> , <Math mode="inline" xml:id="C8.S17.SS3.p1.m2">b&gt;0</Math> , and <Math mode="inline" xml:id="C8.S17.SS3.p1.m3">0&lt;x&lt;1</Math> , <Math equation-number="8.17.10" mode="display" xml:id="C8.S17.E10">I_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{2\pi i}\int_{c-i\infty}^{c+i\infty }s^{-a}(1-s)^{-b}\frac{\mathrm{d}s}{s-x},</Math> where <Math mode="inline" xml:id="C8.S17.SS3.p1.m4">x&lt;c&lt;1</Math> and the branches of <Math mode="inline" xml:id="C8.S17.SS3.p1.m5">s^{-a}</Math> and <Math mode="inline" xml:id="C8.S17.SS3.p1.m6">(1-s)^{-b}</Math> are continuous on the path and assume their principal values when <Math mode="inline" xml:id="C8.S17.SS3.p1.m7">s=c</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C8.S17.SS3.p2.s1">
+Further integral representations can be obtained by combining the results given in §8.17(ii) with §15.6.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS4">
+<title>Recurrence Relations</title>          
+<para xml:id="C8.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C8.S17.SS4.p1.s1">
+With <Math equation-number="8.17.11" mode="display" xml:id="C8.S17.E11">x^{\prime}=1-x,c=a+b-1,</Math> <Math equation-number="8.17.12" mode="display" xml:id="C8.S17.E12">I_{x}\left(a,b\right)=xI_{x}\left(a-1,b\right)+x^{\prime}I_{x}\left(a,b-1 \right),</Math> , <Math equation-number="8.17.13" mode="display" xml:id="C8.S17.E13">(a+b)I_{x}\left(a,b\right)=aI_{x}\left(a+1,b\right)+bI_{x}\left(a,b+1\right),</Math> <Math equation-number="8.17.14" mode="display" xml:id="C8.S17.E14">(a+bx)I_{x}\left(a,b\right)=xbI_{x}\left(a-1,b+1\right)+aI_{x}\left(a+1,b \right),</Math> <Math equation-number="8.17.15" mode="display" xml:id="C8.S17.E15">(b+ax^{\prime})I_{x}\left(a,b\right)=ax^{\prime}I_{x}\left(a+1,b-1\right)+bI_{ x}\left(a,b+1\right),</Math> <Math equation-number="8.17.16" mode="display" xml:id="C8.S17.E16">aI_{x}\left(a+1,b\right)=(a+cx)I_{x}\left(a,b\right)-cxI_{x}\left(a-1,b\right),</Math> , <Math equation-number="8.17.17" mode="display" xml:id="C8.S17.E17">bI_{x}\left(a,b+1\right)=(b+cx^{\prime})I_{x}\left(a,b\right)-cx^{\prime}I_{x} \left(a,b-1\right),</Math> <Math equation-number="8.17.18" mode="display" xml:id="C8.S17.E18">I_{x}\left(a,b\right)=I_{x}\left(a+1,b-1\right)+\frac{x^{a}(x^{\prime})^{b-1}} {a\mathrm{B}\left(a,b\right)},</Math> <Math equation-number="8.17.19" mode="display" xml:id="C8.S17.E19">I_{x}\left(a,b\right)=I_{x}\left(a-1,b+1\right)-\frac{x^{a-1}(x^{\prime})^{b}} {b\mathrm{B}\left(a,b\right)},</Math> <Math equation-number="8.17.20" mode="display" xml:id="C8.S17.E20">I_{x}\left(a,b\right)=I_{x}\left(a+1,b\right)+\frac{x^{a}(x^{\prime})^{b}}{a \mathrm{B}\left(a,b\right)},</Math> , <Math equation-number="8.17.21" mode="display" xml:id="C8.S17.E21">I_{x}\left(a,b\right)=I_{x}\left(a,b+1\right)-\frac{x^{a}(x^{\prime})^{b}}{b \mathrm{B}\left(a,b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS5">
+<title>Continued Fraction</title>         
+ 
+<para xml:id="C8.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C8.S17.SS5.p1.s1">
+ <Math equation-number="8.17.22" mode="display" xml:id="C8.S17.E22">I_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{a\mathrm{B}\left(a,b\right)}\left( \cfrac{1}{1+\cfrac{d_{1}}{1+\cfrac{d_{2}}{1+\cfrac{d_{3}}{1+}}}}\cdots\right),</Math> where <Math equation-number="8.17.23" mode="display" xml:id="C8.S17.E23">d_{2m}=\frac{m(b-m)x}{(a+2m-1)(a+2m)},d_{2m+1}=-\frac{(a+m)(a+b+m)x}{(a+2m)(a+2m+1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C8.S17.SS5.p1.s2">
+The <Math mode="inline" xml:id="C8.S17.SS5.p1.m1">4m</Math> and <Math mode="inline" xml:id="C8.S17.SS5.p1.m2">4m+1</Math> convergents are less than <Math mode="inline" xml:id="C8.S17.SS5.p1.m3">I_{x}\left(a,b\right)</Math> , and the <Math mode="inline" xml:id="C8.S17.SS5.p1.m4">4m+2</Math> and <Math mode="inline" xml:id="C8.S17.SS5.p1.m5">4m+3</Math> convergents are greater than <Math mode="inline" xml:id="C8.S17.SS5.p1.m6">I_{x}\left(a,b\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C8.S17.SS5.p2.s1">
+See also Cuyt et al. (2008, pp. 385–389).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C8.S17.SS5.p3.s1">
+The expansion (8.17.22) converges rapidly for <Math mode="inline" xml:id="C8.S17.SS5.p3.m1">x&lt;(a+1)/(a+b+2)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C8.S17.SS5.p3.s2">
+For <Math mode="inline" xml:id="C8.S17.SS5.p3.m2">x&gt;(a+1)/(a+b+2)</Math> or <Math mode="inline" xml:id="C8.S17.SS5.p3.m3">1-x&lt;(b+1)/(a+b+2)</Math> , more rapid convergence is obtained by computing <Math mode="inline" xml:id="C8.S17.SS5.p3.m4">I_{1-x}\left(b,a\right)</Math> and using (8.17.4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS6">
+<title>Sums</title>          
+<para xml:id="C8.S17.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C8.S17.SS6.p1.s1">
+For sums of infinite series whose terms involve the incomplete Beta function see Hansen (1975, §62).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS7">
+<title>Addendum to 8.17(i)</title>          
+<para xml:id="C8.S17.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C8.S17.SS7.p1.s1">
+ <Math equation-number="8.17.24" mode="display" xml:id="C8.S17.E24">I_{x}\left(m,n\right)=(1-x)^{n}\sum_{j=m}^{\infty}\genfrac{(}{)}{0.0pt}{}{n+j- 1}{j}x^{j}, if m,n positive integers; 0\leq x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C8.S17.SS7.p1.s2">
+Compare (8.17.5).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

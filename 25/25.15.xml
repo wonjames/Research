@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S15">
+<title>Dirichlet <Math mode="inline" xml:id="C25.S15.m1">L</Math>-functions</title>        
+ 
+<subsection xml:id="C25.S15.SS1">
+<title>Definitions and Basic Properties</title>        
+  
+<para xml:id="C25.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S15.SS1.p1.s1">
+The notation <Math mode="inline" xml:id="C25.S15.SS1.p1.m1">L\left(s,\chi\right)</Math> was introduced byDirichlet (1837) for the meromorphic continuation of the function defined by the series <Math equation-number="25.15.1" mode="display" xml:id="C25.S15.E1">L\left(s,\chi\right)=\sum_{n=1}^{\infty}\frac{\chi(n)}{n^{s}}, if \Re s&gt;1,</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p1.m3">\chi(n)</Math> is a Dirichlet character <Math mode="inline" xml:id="C25.S15.SS1.p1.m4">\pmod{k}</Math> (§27.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S15.SS1.p1.s2">
+For the principal character <Math mode="inline" xml:id="C25.S15.SS1.p1.m5">\chi_{1}\pmod{k}</Math> , <Math mode="inline" xml:id="C25.S15.SS1.p1.m6">L\left(s,\chi_{1}\right)</Math> is analytic everywhere except for a simple pole at <Math mode="inline" xml:id="C25.S15.SS1.p1.m7">s=1</Math> with residue <Math mode="inline" xml:id="C25.S15.SS1.p1.m8">\phi\left(k\right)/k</Math> , where <Math mode="inline" xml:id="C25.S15.SS1.p1.m9">\phi\left(k\right)</Math> is Euler’s totient function (§27.2).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S15.SS1.p1.s3">
+If <Math mode="inline" xml:id="C25.S15.SS1.p1.m10">\chi\neq\chi_{1}</Math> , then <Math mode="inline" xml:id="C25.S15.SS1.p1.m11">L\left(s,\chi\right)</Math> is an entire function of <Math mode="inline" xml:id="C25.S15.SS1.p1.m12">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C25.S15.SS1.p1.s4">
+<Math equation-number="25.15.2" mode="display" xml:id="C25.S15.E2">L\left(s,\chi\right)=\prod_{p}\left(1-\frac{\chi(p)}{p^{s}}\right)^{-1}, if \Re s&gt;1,</Math> with the product taken over all primes <Math mode="inline" xml:id="C25.S15.SS1.p1.m14">p</Math> , beginning with <Math mode="inline" xml:id="C25.S15.SS1.p1.m15">p=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C25.S15.SS1.p1.s5">
+This implies that <Math mode="inline" xml:id="C25.S15.SS1.p1.m16">L\left(s,\chi\right)\neq 0</Math> if <Math mode="inline" xml:id="C25.S15.SS1.p1.m17">\Re s&gt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C25.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C25.S15.SS1.p2.s1">
+Equations (25.15.3) and (25.15.4) hold for all <Math mode="inline" xml:id="C25.S15.SS1.p2.m1">s</Math> if <Math mode="inline" xml:id="C25.S15.SS1.p2.m2">\chi\neq\chi_{1}</Math> , and for all <Math mode="inline" xml:id="C25.S15.SS1.p2.m3">s</Math> ( <Math mode="inline" xml:id="C25.S15.SS1.p2.m4">\neq 1</Math> ) if <Math mode="inline" xml:id="C25.S15.SS1.p2.m5">\chi=\chi_{1}</Math> : <Math equation-number="25.15.3" mode="display" xml:id="C25.S15.E3">L\left(s,\chi\right)=k^{-s}\sum_{r=1}^{k-1}\chi(r)\zeta\left(s,\frac{r}{k} \right),</Math> , <Math equation-number="25.15.4" mode="display" xml:id="C25.S15.E4">L\left(s,\chi\right)=L\left(s,\chi_{0}\right)\prod_{p\mathbin{|}k}\left(1- \frac{\chi_{0}(p)}{p^{s}}\right),</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p2.m6">\chi_{0}</Math> is a primitive character (mod <Math mode="inline" xml:id="C25.S15.SS1.p2.m7">d</Math> ) for some positive divisor <Math mode="inline" xml:id="C25.S15.SS1.p2.m8">d</Math> of <Math mode="inline" xml:id="C25.S15.SS1.p2.m9">k</Math> (§27.8).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C25.S15.SS1.p3.s1">
+When <Math mode="inline" xml:id="C25.S15.SS1.p3.m1">\chi</Math> is a primitive character (mod <Math mode="inline" xml:id="C25.S15.SS1.p3.m2">k</Math> ) the <Math mode="inline" xml:id="C25.S15.SS1.p3.m3">L</Math> -functions satisfy the functional equation: <Math equation-number="25.15.5" mode="display" xml:id="C25.S15.E5">L\left(1-s,\chi\right)=\frac{k^{s-1}\Gamma\left(s\right)}{(2\pi)^{s}}\*{\left( e^{-\pi is/2}+\chi(-1)e^{\pi is/2}\right)}\*G(\chi)L\left(s,\overline{\chi} \right),</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p3.m5">\overline{\chi}</Math> is the complex conjugate of <Math mode="inline" xml:id="C25.S15.SS1.p3.m6">\chi</Math> , and <Math equation-number="25.15.6" mode="display" xml:id="C25.S15.E6">G(\chi)=\sum_{r=1}^{k}\chi(r)e^{2\pi ir/k}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S15.SS2">
+<title>Zeros</title>        
+ 
+ 
+<para xml:id="C25.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C25.S15.SS2.p1.s1">
+Since <Math mode="inline" xml:id="C25.S15.SS2.p1.m1">L\left(s,\chi\right)\neq 0</Math> if <Math mode="inline" xml:id="C25.S15.SS2.p1.m2">\Re s&gt;1</Math> , (25.15.5) shows that for a primitive character <Math mode="inline" xml:id="C25.S15.SS2.p1.m3">\chi</Math> the only zeros of <Math mode="inline" xml:id="C25.S15.SS2.p1.m4">L\left(s,\chi\right)</Math> for <Math mode="inline" xml:id="C25.S15.SS2.p1.m5">\Re s&lt;0</Math> (the so-called trivial zeros) are as follows: <Math equation-number="25.15.7" mode="display" xml:id="C25.S15.E7">L\left(-2n,\chi\right)=0\text{ if }\chi(-1)=1, if n=0,1,2,\dots,</Math> <Math equation-number="25.15.8" mode="display" xml:id="C25.S15.E8">L\left(-2n-1,\chi\right)=0\text{ if }\chi(-1)=-1, if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C25.S15.SS2.p2.s1">
+There are also infinitely many zeros in the critical strip <Math mode="inline" xml:id="C25.S15.SS2.p2.m1">0\leq\Re s\leq 1</Math> , located symmetrically about the critical line <Math mode="inline" xml:id="C25.S15.SS2.p2.m2">\Re s=\frac{1}{2}</Math> , but not necessarily symmetrically about the realaxis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C25.S15.SS2.p2.s2">
+<Math equation-number="25.15.9" mode="display" xml:id="C25.S15.E9">L\left(1,\chi\right)\neq 0\text{ if }\chi\neq\chi_{1},</Math> where <Math mode="inline" xml:id="C25.S15.SS2.p2.m3">\chi_{1}</Math> is the principal character <Math mode="inline" xml:id="C25.S15.SS2.p2.m4">\pmod{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C25.S15.SS2.p2.s3">
+This result plays an important role in the proof of Dirichlet’s theorem on primes in arithmetic progressions (§27.11).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C25.S15.SS2.p2.s4">
+Related results are: <Math equation-number="25.15.10" mode="display" xml:id="C25.S15.E10">L\left(0,\chi\right)=\begin{cases}\displaystyle-\frac{1}{k}\sum_{r=1}^{k}r\chi (r),&amp;\chi\neq\chi_{1},\\ 0,&amp;\chi=\chi_{1}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

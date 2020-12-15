@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S5">
+<title>Integral Representations and Integrals</title>            
+<para xml:id="C16.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S5.p1.s1">
+When <Math mode="inline" xml:id="C16.S5.p1.m1">z\neq 0</Math> and <Math mode="inline" xml:id="C16.S5.p1.m2">a_{k}\neq 0,-1,-2,\dots</Math> , <Math mode="inline" xml:id="C16.S5.p1.m3">k=1,2,\dots,p</Math> , <Math equation-number="16.5.1" mode="display" xml:id="C16.S5.E1">\left({\textstyle\ifrac{\prod\limits_{k=1}^{p}\Gamma\left(a_{k}\right)}{\prod \limits_{k=1}^{q}\Gamma\left(b_{k}\right)}}\right){{}_{p}F_{q}}\left({a_{1}, \dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\frac{1}{2\pi\mathrm{i}}\int_{L} \left({\textstyle\ifrac{\prod\limits_{k=1}^{p}\Gamma\left(a_{k}+s\right)}{ \prod\limits_{k=1}^{q}\Gamma\left(b_{k}+s\right)}}\right)\Gamma\left(-s\right) (-z)^{s}\mathrm{d}s,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C16.S5.p1.m4">\Gamma\left(a_{k}+s\right)</Math> , <Math mode="inline" xml:id="C16.S5.p1.m5">k=1,\dots,p</Math> , from those of <Math mode="inline" xml:id="C16.S5.p1.m6">\Gamma\left(-s\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C16.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C16.S5.p2.s1">
+Suppose first that <Math mode="inline" xml:id="C16.S5.p2.m1">L</Math> is a contour that starts at infinity on a line parallel to the positive real axis, encircles the nonnegative integers in the negative sense, and ends at infinity on another line parallel to the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C16.S5.p2.s2">
+Then the integral converges when <Math mode="inline" xml:id="C16.S5.p2.m2">p&lt;q+1</Math> provided that <Math mode="inline" xml:id="C16.S5.p2.m3">z\neq 0</Math> , or when <Math mode="inline" xml:id="C16.S5.p2.m4">p=q+1</Math> provided that <Math mode="inline" xml:id="C16.S5.p2.m5">0&lt;|z|&lt;1</Math> , and provides an integral representation of the left-hand side with these conditions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C16.S5.p3.s1">
+Secondly, suppose that <Math mode="inline" xml:id="C16.S5.p3.m1">L</Math> is a contour from <Math mode="inline" xml:id="C16.S5.p3.m2">-\mathrm{i}\infty</Math> to <Math mode="inline" xml:id="C16.S5.p3.m3">\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C16.S5.p3.s2">
+Then the integral converges when <Math mode="inline" xml:id="C16.S5.p3.m4">q&lt;p+1</Math> and <Math mode="inline" xml:id="C16.S5.p3.m5">|\operatorname{ph}\left(-z\right)|&lt;(p+1-q)\pi/2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C16.S5.p3.s3">
+In the case <Math mode="inline" xml:id="C16.S5.p3.m6">p=q</Math> the left-hand side of(16.5.1) is an entire function, and the right-hand side supplies an integral representation valid when <Math mode="inline" xml:id="C16.S5.p3.m7">|\operatorname{ph}\left(-z\right)|&lt;\pi/2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C16.S5.p3.s4">
+In the case <Math mode="inline" xml:id="C16.S5.p3.m8">p=q+1</Math> the right-hand side of (16.5.1) supplies the analytic continuation of the left-hand side from the open unit disk to the sector <Math mode="inline" xml:id="C16.S5.p3.m9">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> ; compare §16.2(iii).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C16.S5.p3.s5">
+Lastly, when <Math mode="inline" xml:id="C16.S5.p3.m10">p&gt;q+1</Math> the right-hand side of (16.5.1) can be regarded as the definition of the (customarily undefined) left-hand side.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C16.S5.p3.s6">
+In this event, the formal power-series expansion of the left-hand side (obtained from (16.2.1)) is the asymptotic expansion of the right-hand side as <Math mode="inline" xml:id="C16.S5.p3.m11">z\to 0</Math> in the sector <Math mode="inline" xml:id="C16.S5.p3.m12">|\operatorname{ph}\left(-z\right)|\leq(p+1-q-\delta)\pi/2</Math> , where <Math mode="inline" xml:id="C16.S5.p3.m13">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C16.S5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C16.S5.p4.s1">
+Next, when <Math mode="inline" xml:id="C16.S5.p4.m1">p\leq q</Math> , <Math equation-number="16.5.2" mode="display" xml:id="C16.S5.E2">{{}_{p+1}F_{q+1}}\left({a_{0},\dots,a_{p}\atop b_{0},\dots,b_{q}};z\right)= \frac{\Gamma\left(b_{0}\right)}{\Gamma\left(a_{0}\right)\Gamma\left(b_{0}-a_{0 }\right)}\int_{0}^{1}t^{a_{0}-1}(1-t)^{b_{0}-a_{0}-1}{{}_{p}F_{q}}\left({a_{1} ,\dots,a_{p}\atop b_{1},\dots,b_{q}};zt\right)\mathrm{d}t, if \Re b_{0}&gt;\Re a_{0}&gt;0,</Math> <Math equation-number="16.5.3" mode="display" xml:id="C16.S5.E3">{{}_{p+1}F_{q}}\left({a_{0},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\frac {1}{\Gamma\left(a_{0}\right)}\int_{0}^{\infty}{\mathrm{e}^{-t}}t^{a_{0}-1}{{}_ {p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\cdots,b_{q}};zt\right)\mathrm{d}t, if \Re z&lt;1, \Re a_{0}&gt;0,</Math> <Math equation-number="16.5.4" mode="display" xml:id="C16.S5.E4">{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{0},\dots,b_{q}};z\right)=\frac {\Gamma\left(b_{0}\right)}{2\pi\mathrm{i}}\int_{c-\mathrm{i}\infty}^{c+\mathrm {i}\infty}{\mathrm{e}^{t}}t^{-b_{0}}{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b _{1},\dots,b_{q}};\frac{z}{t}\right)\mathrm{d}t, if c&gt;0, \Re b_{0}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C16.S5.p4.s2">
+In (16.5.2)–(16.5.4) all many-valued functions in the integrands assume their principal values, and all integration paths are straight lines.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C16.S5.p5.s1">
+(16.5.2) also holds when <Math mode="inline" xml:id="C16.S5.p5.m1">p=q+1</Math> , provided that <Math mode="inline" xml:id="C16.S5.p5.m2">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C16.S5.p5.s2">
+In (16.5.3) the restriction <Math mode="inline" xml:id="C16.S5.p5.m3">\Re z&lt;1</Math> can be removed when <Math mode="inline" xml:id="C16.S5.p5.m4">p&lt;q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C16.S5.p5.s3">
+(16.5.4) also holds when <Math mode="inline" xml:id="C16.S5.p5.m5">p=q+1</Math> , provided that <Math mode="inline" xml:id="C16.S5.p5.m6">\max(0,\Re z)&lt;c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C16.S5.p5.s4">
+Lastly, the restrictions on the parameters can be eased by replacing the integration paths with loop contours; see Luke (1969a, §3.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C16.S5.p6.s1">
+Laplace transforms and inverse Laplace transforms of generalized hypergeometric functions are given in Prudnikov et al. (1992a, §3.38) andPrudnikov et al. (1992b, §3.36).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C16.S5.p6.s2">
+For further integral representations and integrals see Apelblat (1983, §16),Erdélyi et al. (1953a, §4.6), Erdélyi et al. (1954a, §§6.9 and 7.5),Luke (1969a, §3.6), andPrudnikov et al. (1990, §§2.22,4.2.4,and 4.3.1).
+</sentence>
+
+</para>
+ 
+</section>

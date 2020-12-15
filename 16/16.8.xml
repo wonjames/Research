@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S8">
+<title>Differential Equations</title>         
+ 
+<subsection xml:id="C16.S8.SS1">
+<title>Classification of Singularities</title>           
+ 
+<para xml:id="C16.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S8.SS1.p1.s1">
+An ordinary point of the differential equation <Math equation-number="16.8.1" mode="display" xml:id="C16.S8.E1">\frac{{\mathrm{d}}^{n}w}{{\mathrm{d}z}^{n}}+f_{n-1}(z)\frac{{\mathrm{d}}^{n-1} w}{{\mathrm{d}z}^{n-1}}+f_{n-2}(z)\frac{{\mathrm{d}}^{n-2}w}{{\mathrm{d}z}^{n- 2}}+\dots+f_{1}(z)\frac{\mathrm{d}w}{\mathrm{d}z}+f_{0}(z)w=0</Math> is a value <Math mode="inline" xml:id="C16.S8.SS1.p1.m1">z_{0}</Math> of <Math mode="inline" xml:id="C16.S8.SS1.p1.m2">z</Math> at which all the coefficients <Math mode="inline" xml:id="C16.S8.SS1.p1.m3">f_{j}(z)</Math> , <Math mode="inline" xml:id="C16.S8.SS1.p1.m4">j=0,1,\dots,n-1</Math> , are analytic.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S8.SS1.p1.s2">
+If <Math mode="inline" xml:id="C16.S8.SS1.p1.m5">z_{0}</Math> is not an ordinary point but <Math mode="inline" xml:id="C16.S8.SS1.p1.m6">(z-z_{0})^{n-j}f_{j}(z)</Math> , <Math mode="inline" xml:id="C16.S8.SS1.p1.m7">j=0,1,\dots,n-1</Math> , are analytic at <Math mode="inline" xml:id="C16.S8.SS1.p1.m8">z=z_{0}</Math> , then <Math mode="inline" xml:id="C16.S8.SS1.p1.m9">z_{0}</Math> is a regular singularity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S8.SS1.p1.s3">
+All other singularities areirregular.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C16.S8.SS1.p1.s4">
+Compare §2.7(i) in the case <Math mode="inline" xml:id="C16.S8.SS1.p1.m10">n=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C16.S8.SS1.p1.s5">
+Similar definitions apply in the case <Math mode="inline" xml:id="C16.S8.SS1.p1.m11">z_{0}=\infty</Math> : we transform <Math mode="inline" xml:id="C16.S8.SS1.p1.m12">\infty</Math> into the origin by replacing <Math mode="inline" xml:id="C16.S8.SS1.p1.m13">z</Math> in (16.8.1) by <Math mode="inline" xml:id="C16.S8.SS1.p1.m14">1/z</Math> ; again compare §2.7(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C16.S8.SS1.p2.s1">
+For further information see Hille (1976, pp. 360–370).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S8.SS2">
+<title>The Generalized Hypergeometric Differential Equation</title>           
+<para xml:id="C16.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C16.S8.SS2.p1.s1">
+With the notation <Math equation-number="16.8.2" mode="display" xml:id="C16.S8.E2">D=\frac{\mathrm{d}}{\mathrm{d}z},\vartheta=z\frac{\mathrm{d}}{\mathrm{d}z},</Math> the function <Math mode="inline" xml:id="C16.S8.SS2.p1.m1">w={{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> satisfies the differential equation <Math equation-number="16.8.3" mode="display" xml:id="C16.S8.E3">\left(\vartheta(\vartheta+b_{1}-1)\cdots(\vartheta+b_{q}-1)-z(\vartheta+a_{1}) \cdots(\vartheta+a_{p})\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C16.S8.SS2.p1.s2">
+Equivalently, <Math equation-number="16.8.4" mode="display" xml:id="C16.S8.E4">z^{q}D^{q+1}w+\sum_{j=1}^{q}z^{j-1}(\alpha_{j}z+\beta_{j})D^{j}w+\alpha_{0}w=0, if p\leq q,</Math> or <Math equation-number="16.8.5" mode="display" xml:id="C16.S8.E5">z^{q}(1-z)D^{q+1}w+\sum_{j=1}^{q}z^{j-1}(\alpha_{j}z+\beta_{j})D^{j}w+\alpha_{ 0}w=0, if p=q+1,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p1.m2">\alpha_{j}</Math> and <Math mode="inline" xml:id="C16.S8.SS2.p1.m3">\beta_{j}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C16.S8.SS2.p1.s3">
+Equation (16.8.4) has a regular singularity at <Math mode="inline" xml:id="C16.S8.SS2.p1.m4">z=0</Math> , and an irregular singularity at <Math mode="inline" xml:id="C16.S8.SS2.p1.m5">z=\infty</Math> , whereas (16.8.5) has regular singularities at <Math mode="inline" xml:id="C16.S8.SS2.p1.m6">z=0</Math> , <Math mode="inline" xml:id="C16.S8.SS2.p1.m7">1</Math> , and <Math mode="inline" xml:id="C16.S8.SS2.p1.m8">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C16.S8.SS2.p1.s4">
+In each case there are no other singularities.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C16.S8.SS2.p1.s5">
+Equation (16.8.3) is of order <Math mode="inline" xml:id="C16.S8.SS2.p1.m9">\max(p,q+1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C16.S8.SS2.p1.s6">
+InLetessier et al. (1994) examples are discussed in which the generalized hypergeometric function satisfies a differential equation that is of order 1 or even 2 less than might be expected.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C16.S8.SS2.p2.s1">
+When no <Math mode="inline" xml:id="C16.S8.SS2.p2.m1">b_{j}</Math> is an integer, and no two <Math mode="inline" xml:id="C16.S8.SS2.p2.m2">b_{j}</Math> differ by an integer, a fundamental set of solutions of (16.8.3) is given by <Math equation-number="16.8.6" mode="display" xml:id="C16.S8.E6">w_{0}(z)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right),{w_{j}(z)=z^{1-b_{j}}{{}_{p}F_{q}}\left({1+a_{1}-b_{j},\dots,1+a_{p}-b_{j} \atop 2-b_{j},1+b_{1}-b_{j},\ldots*\dots,1+b_{q}-b_{j}};z\right),} if j=1,\dots,q,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p2.m3">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S8.SS2.p2.m4">1+b_{j}-b_{j}</Math> is omitted. For other values of the <Math mode="inline" xml:id="C16.S8.SS2.p2.m5">b_{j}</Math> , series solutions in powers of <Math mode="inline" xml:id="C16.S8.SS2.p2.m6">z</Math> (possibly involving also <Math mode="inline" xml:id="C16.S8.SS2.p2.m7">\ln z</Math> ) can be constructed via a limiting process; compare §2.7(i) in the case of second-order differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C16.S8.SS2.p2.s2">
+For details see Smith (1939a, b), andNørlund (1955).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C16.S8.SS2.p3.s1">
+When <Math mode="inline" xml:id="C16.S8.SS2.p3.m1">p=q+1</Math> , and no two <Math mode="inline" xml:id="C16.S8.SS2.p3.m2">a_{j}</Math> differ by an integer, another fundamental set of solutions of (16.8.3) is given by <Math equation-number="16.8.7" mode="display" xml:id="C16.S8.E7">\widetilde{w}_{j}(z)=(-z)^{-a_{j}}{{}_{q+1}F_{q}}\left({a_{j},1-b_{1}+a_{j}, \dots,1-b_{q}+a_{j}\atop 1-a_{1}+a_{j},\ldots*\dots,1-a_{q+1}+a_{j}};\frac{1}{ z}\right), if j=1,\dots,q+1,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p3.m3">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S8.SS2.p3.m4">1-a_{j}+a_{j}</Math> is omitted. We have the connection formula <Math equation-number="16.8.8" mode="display" xml:id="C16.S8.E8">{{}_{q+1}F_{q}}\left({a_{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)= \sum_{j=1}^{q+1}\left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{q+1}\frac{\Gamma\left(a_{k}-a_{j}\right)}{\Gamma\left( a_{k}\right)}}{\prod\limits_{k=1}^{q}\frac{\Gamma\left(b_{k}-a_{j}\right)}{ \Gamma\left(b_{k}\right)}}}\right)\widetilde{w}_{j}(z), if |\operatorname{ph}\left(-z\right)|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C16.S8.SS2.p3.s2">
+More generally if <Math mode="inline" xml:id="C16.S8.SS2.p3.m5">z_{0}</Math> ( <Math mode="inline" xml:id="C16.S8.SS2.p3.m6">\in\mathbb{C}</Math> ) is an arbitrary constant, <Math mode="inline" xml:id="C16.S8.SS2.p3.m7">|z-z_{0}|&gt;\max{(|z_{0}|,|z_{0}-1|)}</Math> , and <Math mode="inline" xml:id="C16.S8.SS2.p3.m8">|\operatorname{ph}\left(z_{0}-z\right)|&lt;\pi</Math> , then <Math equation-number="16.8.9" mode="display" xml:id="C16.S8.E9">\left({\textstyle\ifrac{\prod\limits_{k=1}^{q+1}\Gamma\left(a_{k}\right)}{ \prod\limits_{k=1}^{q}\Gamma\left(b_{k}\right)}}\right){{}_{q+1}F_{q}}\left({a _{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)=\sum_{j=1}^{q+1}\left(z_{0 }-z\right)^{-a_{j}}\sum_{n=0}^{\infty}\frac{\Gamma\left(a_{j}+n\right)}{n!}\* \left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{q+1}\Gamma\left(a_{k}-a_{j}-n\right)}{\prod\limits_{k= 1}^{q}\Gamma\left(b_{k}-a_{j}-n\right)}}\right)\*{{}_{q+1}F_{q}}\left({a_{1}-a _{j}-n,\dots,a_{q+1}-a_{j}-n\atop b_{1}-a_{j}-n,\dots,b_{q}-a_{j}-n};z_{0} \right)\left(z-z_{0}\right)^{-n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C16.S8.SS2.p3.s3">
+(Note that the generalized hypergeometric functions on the right-hand side are polynomials in <Math mode="inline" xml:id="C16.S8.SS2.p3.m9">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C16.S8.SS2.p3.s4">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C16.S8.SS2.p4.s1">
+When <Math mode="inline" xml:id="C16.S8.SS2.p4.m1">p=q+1</Math> and some of the <Math mode="inline" xml:id="C16.S8.SS2.p4.m2">a_{j}</Math> differ by an integer a limiting process can again be applied. For details see Nørlund (1955).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C16.S8.SS2.p4.s2">
+In this reference it is also explained that in general when <Math mode="inline" xml:id="C16.S8.SS2.p4.m3">q&gt;1</Math> no simplerepresentations in terms of generalized hypergeometric functions are available for the fundamental solutions near <Math mode="inline" xml:id="C16.S8.SS2.p4.m4">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C16.S8.SS2.p4.s3">
+Analytical continuation formulas for <Math mode="inline" xml:id="C16.S8.SS2.p4.m5">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> near <Math mode="inline" xml:id="C16.S8.SS2.p4.m6">z=1</Math> are given inBühring (1987b) for the case <Math mode="inline" xml:id="C16.S8.SS2.p4.m7">q=2</Math> , and inBühring (1992) for the general case.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S8.SS3">
+<title>Confluence of Singularities</title>          
+<para xml:id="C16.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C16.S8.SS3.p1.s1">
+If <Math mode="inline" xml:id="C16.S8.SS3.p1.m1">p\leq q</Math> , then <Math equation-number="16.8.10" mode="display" xml:id="C16.S8.E10">\lim_{|\alpha|\to\infty}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{p},\alpha\atop b_ {1},\dots,b_{q}};\frac{z}{\alpha}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C16.S8.SS3.p1.s2">
+Thus in the case <Math mode="inline" xml:id="C16.S8.SS3.p1.m2">p=q</Math> the regular singularities of the function on theleft-hand side at <Math mode="inline" xml:id="C16.S8.SS3.p1.m3">\alpha</Math> and <Math mode="inline" xml:id="C16.S8.SS3.p1.m4">\infty</Math> coalesce into an irregular singularity at <Math mode="inline" xml:id="C16.S8.SS3.p1.m5">\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C16.S8.SS3.p2.s1">
+Next, if <Math mode="inline" xml:id="C16.S8.SS3.p2.m1">p\leq q+1</Math> and <Math mode="inline" xml:id="C16.S8.SS3.p2.m2">|\operatorname{ph}\beta|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C16.S8.SS3.p2.m3">&lt;\pi</Math> ), then <Math equation-number="16.8.11" mode="display" xml:id="C16.S8.E11">\lim_{|\beta|\to\infty}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{1}, \dots,b_{q},\beta};\beta z\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b _{1},\dots,b_{q}};z\right),</Math> provided that in the case <Math mode="inline" xml:id="C16.S8.SS3.p2.m4">p=q+1</Math> we have <Math mode="inline" xml:id="C16.S8.SS3.p2.m5">|z|&lt;1</Math> when <Math mode="inline" xml:id="C16.S8.SS3.p2.m6">|\operatorname{ph}\beta|\leq\frac{1}{2}\pi</Math> , and <Math mode="inline" xml:id="C16.S8.SS3.p2.m7">|z|&lt;|\sin\left(\operatorname{ph}\beta\right)|</Math> when <Math mode="inline" xml:id="C16.S8.SS3.p2.m8">\frac{1}{2}\pi\leq|\operatorname{ph}\beta|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C16.S8.SS3.p2.m9">&lt;\pi</Math> ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

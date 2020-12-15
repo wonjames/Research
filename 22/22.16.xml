@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S16">
+<title>Related Functions</title>        
+ 
+<subsection xml:id="C22.S16.SS1">
+<title>Jacobi’s Amplitude (<Math mode="inline" xml:id="C22.S16.SS1.m1">\operatorname{am}</Math>) Function</title>          
+<paragraph xml:id="C22.S16.Px1">
+<title>Definition</title>    
+<para xml:id="C22.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S16.Px1.p1.s1">
+ <Math equation-number="22.16.1" mode="display" xml:id="C22.S16.E1">\operatorname{am}\left(x,k\right)=\operatorname{Arcsin}\left(\operatorname{sn} \left(x,k\right)\right), if x\in\mathbb{R},</Math> where the inverse sine has its principal value when <Math mode="inline" xml:id="C22.S16.Px1.p1.m1">-K\leq x\leq K</Math> and isdefined by continuity elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C22.S16.Px1.p1.s2">
+See Figure 22.16.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C22.S16.Px1.p1.s3">
+<Math mode="inline" xml:id="C22.S16.Px1.p1.m2">\operatorname{am}\left(x,k\right)</Math> is an infinitely differentiable function of <Math mode="inline" xml:id="C22.S16.Px1.p1.m3">x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px2">
+<title>Quasi-Periodicity</title>    
+<para xml:id="C22.S16.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C22.S16.Px2.p1.s1">
+ <Math equation-number="22.16.2" mode="display" xml:id="C22.S16.E2">\operatorname{am}\left(x+2K,k\right)=\operatorname{am}\left(x,k\right)+\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px3">
+<title>Integral Representation</title>    
+<para xml:id="C22.S16.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C22.S16.Px3.p1.s1">
+ <Math equation-number="22.16.3" mode="display" xml:id="C22.S16.E3">\operatorname{am}\left(x,k\right)=\int_{0}^{x}\operatorname{dn}\left(t,k\right )\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px4">
+<title>Special Values</title>    
+<para xml:id="C22.S16.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C22.S16.Px4.p1.s1">
+ <Math equation-number="22.16.4" mode="display" xml:id="C22.S16.E4">\operatorname{am}\left(x,0\right)=x,</Math> , <Math equation-number="22.16.5" mode="display" xml:id="C22.S16.E5">\operatorname{am}\left(x,1\right)=\operatorname{gd}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C22.S16.Px4.p1.s2">
+For the Gudermannian function <Math mode="inline" xml:id="C22.S16.Px4.p1.m1">\operatorname{gd}\left(x\right)</Math> see §4.23(viii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px5">
+<title>Approximation for Small <Math mode="inline" xml:id="C22.S16.Px5.m1">x</Math></title>    
+<para xml:id="C22.S16.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C22.S16.Px5.p1.s1">
+ <Math equation-number="22.16.6" mode="display" xml:id="C22.S16.E6">\operatorname{am}\left(x,k\right)=x-k^{2}\frac{x^{3}}{3!}+k^{2}\left(4+k^{2} \right)\frac{x^{5}}{5!}+O\left(x^{7}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px6">
+<title>Approximations for Small <Math mode="inline" xml:id="C22.S16.Px6.m1">k</Math>, <Math mode="inline" xml:id="C22.S16.Px6.m2">k^{\prime}</Math></title>    
+<para xml:id="C22.S16.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C22.S16.Px6.p1.s1">
+ <Math equation-number="22.16.7" mode="display" xml:id="C22.S16.E7">\operatorname{am}\left(x,k\right)=x-\tfrac{1}{4}k^{2}(x-\sin x\cos x)+O\left(k ^{4}\right),</Math> <Math equation-number="22.16.8" mode="display" xml:id="C22.S16.E8">\operatorname{am}\left(x,k\right)=\operatorname{gd}x-\tfrac{1}{4}{k^{\prime}}^ {2}(x-\sinh x\cosh x)\operatorname{sech}x+O\left({k^{\prime}}^{4}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px7">
+<title>Fourier Series</title>    
+<para xml:id="C22.S16.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C22.S16.Px7.p1.s1">
+With <Math mode="inline" xml:id="C22.S16.Px7.p1.m1">q</Math> as in (22.2.1) and <Math mode="inline" xml:id="C22.S16.Px7.p1.m2">\zeta=\pi x/(2K)</Math> , <Math equation-number="22.16.9" mode="display" xml:id="C22.S16.E9">\operatorname{am}\left(x,k\right)=\frac{\pi}{2K}x+2\sum_{n=1}^{\infty}\frac{q^ {n}\sin\left(2n\zeta\right)}{n(1+q^{2n})}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px8">
+<title>Relation to Elliptic Integrals</title>     
+<para xml:id="C22.S16.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C22.S16.Px8.p1.s1">
+If <Math mode="inline" xml:id="C22.S16.Px8.p1.m1">-K\leq x\leq K</Math> , then the following four equations are equivalent: <Math equation-number="22.16.10" mode="display" xml:id="C22.S16.E10">x=F\left(\phi,k\right),</Math> <Math equation-number="22.16.11" mode="display" xml:id="C22.S16.E11">\operatorname{am}\left(x,k\right)=\phi,</Math> <Math equation-number="22.16.12" mode="display" xml:id="C22.S16.E12">\operatorname{sn}\left(x,k\right)=\sin\phi=\sin\left(\operatorname{am}\left(x, k\right)\right),</Math> <Math equation-number="22.16.13" mode="display" xml:id="C22.S16.E13">\operatorname{cn}\left(x,k\right)=\cos\phi=\cos\left(\operatorname{am}\left(x, k\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C22.S16.Px8.p1.s2">
+For <Math mode="inline" xml:id="C22.S16.Px8.p1.m2">F\left(\phi,k\right)</Math> see §19.2(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S16.SS2">
+<title>Jacobi’s Epsilon Function</title>        
+  
+<paragraph xml:id="C22.S16.Px9">
+<title>Integral Representations</title>    
+<para xml:id="C22.S16.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C22.S16.Px9.p1.s1">
+For <Math mode="inline" xml:id="C22.S16.Px9.p1.m1">-K&lt;x&lt;K</Math> , <Math equation-number="22.16.14" mode="display" xml:id="C22.S16.E14">\mathcal{E}\left(x,k\right)=\int_{0}^{\operatorname{sn}\left(x,k\right)}\sqrt{ \frac{1-k^{2}t^{2}}{1-t^{2}}}\mathrm{d}t;</Math> compare (19.2.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C22.S16.Px9.p1.s2">
+See Figure 22.16.2.
+</sentence>
+
+</para>
+   
+<para xml:id="C22.S16.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C22.S16.Px9.p2.s1">
+ <Math equation-number="22.16.15" mode="display" xml:id="C22.S16.E15">\mathcal{E}\left(x,k\right)=-k^{2}\int_{0}^{x}{\operatorname{sn}^{2}}\left(t,k \right)\mathrm{d}t+x,</Math> , <Math equation-number="22.16.16" mode="display" xml:id="C22.S16.E16">\mathcal{E}\left(x,k\right)=k^{2}\int_{0}^{x}{\operatorname{cn}^{2}}\left(t,k \right)\mathrm{d}t+{k^{\prime}}^{2}x,</Math> , <Math equation-number="22.16.17" mode="display" xml:id="C22.S16.E17">\mathcal{E}\left(x,k\right)=\int_{0}^{x}{\operatorname{dn}^{2}}\left(t,k\right )\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C22.S16.Px9.p3">
+
+</para>
+ 
+<para xml:id="C22.S16.Px9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C22.S16.Px9.p4.s1">
+ <Math equation-number="22.16.18" mode="display" xml:id="C22.S16.E18">\mathcal{E}\left(x,k\right)=-k^{2}\int_{0}^{x}{\operatorname{cd}^{2}}\left(t,k \right)\mathrm{d}t+x+k^{2}\operatorname{sn}\left(x,k\right)\operatorname{cd} \left(x,k\right),</Math> , <Math equation-number="22.16.19" mode="display" xml:id="C22.S16.E19">\mathcal{E}\left(x,k\right)=k^{2}{k^{\prime}}^{2}\int_{0}^{x}{\operatorname{sd }^{2}}\left(t,k\right)\mathrm{d}t+{k^{\prime}}^{2}x+k^{2}\operatorname{sn} \left(x,k\right)\operatorname{cd}\left(x,k\right),</Math> , <Math equation-number="22.16.20" mode="display" xml:id="C22.S16.E20">\mathcal{E}\left(x,k\right)={k^{\prime}}^{2}\int_{0}^{x}{\operatorname{nd}^{2} }\left(t,k\right)\mathrm{d}t+k^{2}\operatorname{sn}\left(x,k\right) \operatorname{cd}\left(x,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S16.Px9.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C22.S16.Px9.p5.s1">
+In Equations (22.16.21)–(22.16.23),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C22.S16.Px9.p5.s2">
+<Math mode="inline" xml:id="C22.S16.Px9.p5.m1">-K&lt;x&lt;K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C22.S16.Px9.p5.s3">
+<Math equation-number="22.16.21" mode="display" xml:id="C22.S16.E21">\mathcal{E}\left(x,k\right)=-\int_{0}^{x}{\operatorname{dc}^{2}}\left(t,k \right)\mathrm{d}t+x+\operatorname{sn}\left(x,k\right)\operatorname{dc}\left(x ,k\right),</Math> , <Math equation-number="22.16.22" mode="display" xml:id="C22.S16.E22">\mathcal{E}\left(x,k\right)=-{k^{\prime}}^{2}\int_{0}^{x}{\operatorname{nc}^{2 }}\left(t,k\right)\mathrm{d}t+{k^{\prime}}^{2}x+\operatorname{sn}\left(x,k \right)\operatorname{dc}\left(x,k\right),</Math> , <Math equation-number="22.16.23" mode="display" xml:id="C22.S16.E23">\mathcal{E}\left(x,k\right)=-{k^{\prime}}^{2}\int_{0}^{x}{\operatorname{sc}^{2 }}\left(t,k\right)\mathrm{d}t+\operatorname{sn}\left(x,k\right)\operatorname{ dc}\left(x,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S16.Px9.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C22.S16.Px9.p6.s1">
+In Equations (22.16.24)–(22.16.26),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C22.S16.Px9.p6.s2">
+<Math mode="inline" xml:id="C22.S16.Px9.p6.m1">-2K&lt;x&lt;2K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C22.S16.Px9.p6.s3">
+<Math equation-number="22.16.24" mode="display" xml:id="C22.S16.E24">\mathcal{E}\left(x,k\right)=-\int_{0}^{x}\left({\operatorname{ns}^{2}}\left(t, k\right)-t^{-2}\right)\mathrm{d}t+x^{-1}+x-\operatorname{cn}\left(x,k\right) \operatorname{ds}\left(x,k\right),</Math> , <Math equation-number="22.16.25" mode="display" xml:id="C22.S16.E25">\mathcal{E}\left(x,k\right)=-\int_{0}^{x}\left({\operatorname{ds}^{2}}\left(t, k\right)-t^{-2}\right)\mathrm{d}t+x^{-1}+{k^{\prime}}^{2}x-\operatorname{cn} \left(x,k\right)\operatorname{ds}\left(x,k\right),</Math> , <Math equation-number="22.16.26" mode="display" xml:id="C22.S16.E26">\mathcal{E}\left(x,k\right)=-\int_{0}^{x}\left({\operatorname{cs}^{2}}\left(t, k\right)-t^{-2}\right)\mathrm{d}t+x^{-1}-\operatorname{cn}\left(x,k\right) \operatorname{ds}\left(x,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px10">
+<title>Quasi-Addition and Quasi-Periodic Formulas</title>     
+<para xml:id="C22.S16.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C22.S16.Px10.p1.s1">
+ <Math equation-number="22.16.27" mode="display" xml:id="C22.S16.E27">\mathcal{E}\left(x_{1}+x_{2},k\right)=\mathcal{E}\left(x_{1},k\right)+\mathcal {E}\left(x_{2},k\right)-k^{2}\operatorname{sn}\left(x_{1},k\right) \operatorname{sn}\left(x_{2},k\right)\operatorname{sn}\left(x_{1}+x_{2},k \right),</Math> <Math equation-number="22.16.28" mode="display" xml:id="C22.S16.E28">\mathcal{E}\left(x+K,k\right)=\mathcal{E}\left(x,k\right)+E\left(k\right)-k^{2 }\operatorname{sn}\left(x,k\right)\operatorname{cd}\left(x,k\right),</Math> <Math equation-number="22.16.29" mode="display" xml:id="C22.S16.E29">\mathcal{E}\left(x+2K,k\right)=\mathcal{E}\left(x,k\right)+2\!E\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C22.S16.Px10.p1.s2">
+For <Math mode="inline" xml:id="C22.S16.Px10.p1.m1">E\left(k\right)</Math> see §19.2(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px11">
+<title>Relation to Theta Functions</title>     
+<para xml:id="C22.S16.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C22.S16.Px11.p1.s1">
+ <Math equation-number="22.16.30" mode="display" xml:id="C22.S16.E30">\mathcal{E}\left(x,k\right)=\frac{1}{{\theta_{3}^{2}}\left(0,q\right)\theta_{4 }\left(\xi,q\right)}\frac{\mathrm{d}}{\mathrm{d}\xi}\theta_{4}\left(\xi,q \right)+\frac{E\left(k\right)}{K\left(k\right)}x,</Math> where <Math mode="inline" xml:id="C22.S16.Px11.p1.m1">\xi=x/{\theta_{3}^{2}}\left(0,q\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C22.S16.Px11.p1.s2">
+For <Math mode="inline" xml:id="C22.S16.Px11.p1.m2">\theta_{j}</Math> see §20.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C22.S16.Px11.p1.s3">
+For <Math mode="inline" xml:id="C22.S16.Px11.p1.m3">E\left(k\right)</Math> see §19.2(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px12">
+<title>Relation to the Elliptic Integral <Math mode="inline" xml:id="C22.S16.Px12.m1">E\left(\phi,k\right)</Math></title>    
+<para xml:id="C22.S16.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C22.S16.Px12.p1.s1">
+ <Math equation-number="22.16.31" mode="display" xml:id="C22.S16.E31">E\left(\operatorname{am}\left(x,k\right),k\right)=\mathcal{E}\left(x,k\right), if -K\leq x\leq K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C22.S16.Px12.p1.s2">
+For <Math mode="inline" xml:id="C22.S16.Px12.p1.m1">E\left(\phi,k\right)</Math> see §19.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C22.S16.Px12.p1.s3">
+See also (22.16.14).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S16.SS3">
+<title>Jacobi’s Zeta Function</title>        
+ 
+ 
+<paragraph xml:id="C22.S16.Px13">
+<title>Definition</title>     
+<para xml:id="C22.S16.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C22.S16.Px13.p1.s1">
+With <Math mode="inline" xml:id="C22.S16.Px13.p1.m1">E\left(k\right)</Math> and <Math mode="inline" xml:id="C22.S16.Px13.p1.m2">K\left(k\right)</Math> as in §19.2(ii) and <Math mode="inline" xml:id="C22.S16.Px13.p1.m3">x\in\mathbb{R}</Math> , <Math equation-number="22.16.32" mode="display" xml:id="C22.S16.E32">\mathrm{Z}\left(x|k\right)=\mathcal{E}\left(x,k\right)-(E\left(k\right)/K\left (k\right))x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C22.S16.Px13.p1.s2">
+See Figure 22.16.3.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C22.S16.Px13.p1.s3">
+(Sometimes in the literature <Math mode="inline" xml:id="C22.S16.Px13.p1.m4">\mathrm{Z}\left(x|k\right)</Math> is denoted by <Math mode="inline" xml:id="C22.S16.Px13.p1.m5">\mathrm{Z}(\operatorname{am}\left(x,k\right),k^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="34" xml:id="C22.S16.Px13.p1.s4">
+)
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S16.Px14">
+<title>Properties</title>    
+<para xml:id="C22.S16.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C22.S16.Px14.p1.s1">
+ <Math mode="inline" xml:id="C22.S16.Px14.p1.m1">\mathrm{Z}\left(x|k\right)</Math> satisfies the same quasi-addition formula as the function <Math mode="inline" xml:id="C22.S16.Px14.p1.m2">\mathcal{E}\left(x,k\right)</Math> , given by (22.16.27).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C22.S16.Px14.p1.s2">
+Also, <Math equation-number="22.16.33" mode="display" xml:id="C22.S16.E33">\mathrm{Z}\left(x+K|k\right)=\mathrm{Z}\left(x|k\right)-k^{2}\operatorname{sn} \left(x,k\right)\operatorname{cd}\left(x,k\right),</Math> <Math equation-number="22.16.34" mode="display" xml:id="C22.S16.E34">\mathrm{Z}\left(x+2K|k\right)=\mathrm{Z}\left(x|k\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S16.SS4">
+<title>Graphs</title>        
+          
+<sentence sentence-num-in-section="37" xml:id="C22.S16.F1.s1">
+Figure 22.16.1: Jacobi’s amplitude function <Math mode="inline" xml:id="C22.S16.F1.m4">\operatorname{am}\left(x,k\right)</Math> for <Math mode="inline" xml:id="C22.S16.F1.m5">0\leq x\leq 10\pi</Math> and <Math mode="inline" xml:id="C22.S16.F1.m6">k=0.4,0.7,0.99,0.99999</Math>9 . Values of <Math mode="inline" xml:id="C22.S16.F1.m7">k</Math> greater than 1 are illustrated in Figure .
+</sentence>            
+<sentence sentence-num-in-section="38" xml:id="C22.S16.F2.s1">
+Figure 22.16.2: Jacobi’s epsilon function <Math mode="inline" xml:id="C22.S16.F2.m4">\mathcal{E}\left(x,k\right)</Math> for <Math mode="inline" xml:id="C22.S16.F2.m5">0\leq x\leq 10\pi</Math> and <Math mode="inline" xml:id="C22.S16.F2.m6">k=0.4,0.7,0.99,0.99999</Math>9 . (These graphs are similar to those in Figure ; compare ( ), ( ), and the graphs of <Math mode="inline" xml:id="C22.S16.F2.m7">\operatorname{dn}\left(x,k\right)</Math> in § .)
+</sentence> 
+           
+<sentence sentence-num-in-section="39" xml:id="C22.S16.F3.s1">
+Figure 22.16.3: Jacobi’s zeta function <Math mode="inline" xml:id="C22.S16.F3.m4">\mathrm{Z}\left(x|k\right)</Math> for <Math mode="inline" xml:id="C22.S16.F3.m5">0\leq x\leq 10\pi</Math> and <Math mode="inline" xml:id="C22.S16.F3.m6">k=0.4,0.7,0.99,0.99999</Math>9 .
+</sentence> 
+  
+</subsection>
+ 
+</section>

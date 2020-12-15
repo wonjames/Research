@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S15">
+<title>Permutations: Matrix Notation</title>        
+  
+<para xml:id="C26.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S15.p1.s1">
+The set <Math mode="inline" xml:id="C26.S15.p1.m1">\mathfrak{S}_{n}</Math> (§26.13) can be identified with the set of <Math mode="inline" xml:id="C26.S15.p1.m2">n\times n</Math> matrices of 0’s and 1’s with exactly one 1 in each row and column.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S15.p1.s2">
+The permutation <Math mode="inline" xml:id="C26.S15.p1.m3">\sigma</Math> corresponds to the matrix in which there is a 1 at the intersection of row <Math mode="inline" xml:id="C26.S15.p1.m4">j</Math> with column <Math mode="inline" xml:id="C26.S15.p1.m5">\sigma(j)</Math> , and 0’s in all other positions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S15.p1.s3">
+The permutation <Math mode="inline" xml:id="C26.S15.p1.m6">35247816</Math> corresponds to the matrix
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S15.p2.s1">
+ <Math equation-number="26.15.1" mode="display" xml:id="C26.S15.E1">\begin{bmatrix}0&amp;0&amp;1&amp;0&amp;0&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0\\ 0&amp;1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;1&amp;0&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;1&amp;0\\ 0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;1\\ 1&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;0\\ 0&amp;0&amp;0&amp;0&amp;0&amp;1&amp;0&amp;0\end{bmatrix}</Math> The sign of the permutation <Math mode="inline" xml:id="C26.S15.p2.m1">\sigma</Math> is the sign of the determinant of its matrix representation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C26.S15.p2.s2">
+The inversion number of <Math mode="inline" xml:id="C26.S15.p2.m2">\sigma</Math> is a sum of products of pairs of entries in the matrix representation of <Math mode="inline" xml:id="C26.S15.p2.m3">\sigma</Math> : <Math equation-number="26.15.2" mode="display" xml:id="C26.S15.E2">\mathop{\mathrm{inv}}(\sigma)=\sum a_{gh}a_{k\ell},</Math> where the sum is over <Math mode="inline" xml:id="C26.S15.p2.m4">1\leq g&lt;k\leq n</Math> and <Math mode="inline" xml:id="C26.S15.p2.m5">n\geq h&gt;\ell\geq 1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C26.S15.p3.s1">
+The matrix represents the placement of <Math mode="inline" xml:id="C26.S15.p3.m1">n</Math> nonattacking rooks on an <Math mode="inline" xml:id="C26.S15.p3.m2">n\times n</Math> chessboard, that is, rooks that share neither a row nor a column with any other rook.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C26.S15.p3.s2">
+A permutation with restricted position specifies a subset <Math mode="inline" xml:id="C26.S15.p3.m3">B\subseteq\{1,2,\ldots,n\}\times\{1,2,\ldots,n\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C26.S15.p3.s3">
+If <Math mode="inline" xml:id="C26.S15.p3.m4">(j,k)\in B</Math> , then <Math mode="inline" xml:id="C26.S15.p3.m5">\sigma(j)\neq k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C26.S15.p3.s4">
+The number of derangements of <Math mode="inline" xml:id="C26.S15.p3.m6">n</Math> is the number of permutations with forbidden positions <Math mode="inline" xml:id="C26.S15.p3.m7">B=\{(1,1),(2,2),\ldots,(n,n)\}</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C26.S15.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C26.S15.p4.s1">
+Let <Math mode="inline" xml:id="C26.S15.p4.m1">r_{j}(B)</Math> be the number of ways of placing <Math mode="inline" xml:id="C26.S15.p4.m2">j</Math> nonattacking rooks on the squares of <Math mode="inline" xml:id="C26.S15.p4.m3">B</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C26.S15.p4.s2">
+Define <Math mode="inline" xml:id="C26.S15.p4.m4">r_{0}(B)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C26.S15.p4.s3">
+For the problem of derangements, <Math mode="inline" xml:id="C26.S15.p4.m5">r_{j}(B)=\genfrac{(}{)}{0.0pt}{}{n}{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C26.S15.p4.s4">
+The rook polynomial is the generating function for <Math mode="inline" xml:id="C26.S15.p4.m6">r_{j}(B)</Math> : <Math equation-number="26.15.3" mode="display" xml:id="C26.S15.E3">R(x,B)=\sum_{j=0}^{n}r_{j}(B)\,x^{j}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S15.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C26.S15.p5.s1">
+If <Math mode="inline" xml:id="C26.S15.p5.m1">B=B_{1}\cup B_{2}</Math> , where no element of <Math mode="inline" xml:id="C26.S15.p5.m2">B_{1}</Math> is in the same row or column as any element of <Math mode="inline" xml:id="C26.S15.p5.m3">B_{2}</Math> , then <Math equation-number="26.15.4" mode="display" xml:id="C26.S15.E4">R(x,B)=R(x,B_{1})\,R(x,B_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C26.S15.p5.s2">
+For <Math mode="inline" xml:id="C26.S15.p5.m4">(j,k)\in B</Math> , <Math mode="inline" xml:id="C26.S15.p5.m5">B\setminus[j,k]</Math> denotes <Math mode="inline" xml:id="C26.S15.p5.m6">B</Math> after removal of all elements of the form <Math mode="inline" xml:id="C26.S15.p5.m7">(j,t)</Math> or <Math mode="inline" xml:id="C26.S15.p5.m8">(t,k)</Math> , <Math mode="inline" xml:id="C26.S15.p5.m9">t=1,2,\ldots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C26.S15.p5.s3">
+<Math mode="inline" xml:id="C26.S15.p5.m10">B\setminus(j,k)</Math> denotes <Math mode="inline" xml:id="C26.S15.p5.m11">B</Math> with the element <Math mode="inline" xml:id="C26.S15.p5.m12">(j,k)</Math> removed. <Math equation-number="26.15.5" mode="display" xml:id="C26.S15.E5">R(x,B)=x\,R(x,B\setminus[j,k])+R(x,B\setminus(j,k))</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C26.S15.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C26.S15.p6.s1">
+ <Math mode="inline" xml:id="C26.S15.p6.m1">N_{k}(B)</Math> is the number of permutations in <Math mode="inline" xml:id="C26.S15.p6.m2">\mathfrak{S}_{n}</Math> for which exactly <Math mode="inline" xml:id="C26.S15.p6.m3">k</Math> of the pairs <Math mode="inline" xml:id="C26.S15.p6.m4">(j,\sigma(j))</Math> are elements of <Math mode="inline" xml:id="C26.S15.p6.m5">B</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C26.S15.p6.s2">
+<Math mode="inline" xml:id="C26.S15.p6.m6">N(x,B)</Math> is the generating function: <Math equation-number="26.15.6" mode="display" xml:id="C26.S15.E6">N(x,B)=\sum_{k=0}^{n}N_{k}(B)\,x^{k},</Math> and <Math equation-number="26.15.7" mode="display" xml:id="C26.S15.E7">N(x,B)=\sum_{k=0}^{n}r_{k}(B)(n-k)!(x-1)^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C26.S15.p6.s3">
+The number of permutations that avoid <Math mode="inline" xml:id="C26.S15.p6.m7">B</Math> is <Math equation-number="26.15.8" mode="display" xml:id="C26.S15.E8">N_{0}(B)=N(0,B)=\sum_{k=0}^{n}(-1)^{k}r_{k}(B)(n-k)!</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C26.S15.Px1">
+<title>Example 1</title>    
+<para xml:id="C26.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C26.S15.Px1.p1.s1">
+The problème des ménages asks for the number of ways of seating <Math mode="inline" xml:id="C26.S15.Px1.p1.m1">n</Math> married couples around a circular table with labeled seats so that no men are adjacent, no women are adjacent, and no husband and wife are adjacent.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C26.S15.Px1.p1.s2">
+There are <Math mode="inline" xml:id="C26.S15.Px1.p1.m2">2(n!)</Math> ways to place the wives.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C26.S15.Px1.p1.s3">
+Let <Math mode="inline" xml:id="C26.S15.Px1.p1.m3">B=\{(j,j),(j,j+1)\&gt;|\&gt;1\leq j&lt;n\}\cup\{(n,n),(n,1)\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C26.S15.Px1.p1.s4">
+Then <Math equation-number="26.15.9" mode="display" xml:id="C26.S15.E9">r_{k}(B)=\frac{2n}{2n-k}\genfrac{(}{)}{0.0pt}{}{2n-k}{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="24" xml:id="C26.S15.Px1.p1.s5">
+The solution is <Math equation-number="26.15.10" mode="display" xml:id="C26.S15.E10">2(n!)N_{0}(B)=2(n!)\sum_{k=0}^{n}(-1)^{k}\frac{2n}{2n-k}\genfrac{(}{)}{0.0pt}{ }{2n-k}{k}{(n-k)!}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C26.S15.Px2">
+<title>Example 2</title>    
+<para xml:id="C26.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C26.S15.Px2.p1.s1">
+The Ferrers board of shape <Math mode="inline" xml:id="C26.S15.Px2.p1.m1">(b_{1},b_{2},\ldots,b_{n})</Math> , <Math mode="inline" xml:id="C26.S15.Px2.p1.m2">0\leq b_{1}\leq b_{2}\leq\cdots\leq b_{n}</Math> , is the set <Math mode="inline" xml:id="C26.S15.Px2.p1.m3">B=\{(j,k)\&gt;|\&gt;1\leq j\leq n,1\leq k\leq b_{j}\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C26.S15.Px2.p1.s2">
+For this set, <Math equation-number="26.15.11" mode="display" xml:id="C26.S15.E11">\sum_{k=0}^{n}r_{n-k}(B)(x-k+1)_{k}=\prod_{j=1}^{n}(x+b_{j}-j+1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C26.S15.Px2.p1.s3">
+If <Math mode="inline" xml:id="C26.S15.Px2.p1.m4">B</Math> is the Ferrers board of shape <Math mode="inline" xml:id="C26.S15.Px2.p1.m5">(0,1,2,\ldots,n-1)</Math> , then <Math equation-number="26.15.12" mode="display" xml:id="C26.S15.E12">\sum_{k=0}^{n}r_{n-k}(B)(x-k+1)_{k}=x^{n},</Math> and therefore by (26.8.10),
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C26.S15.Px2.p1.s4">
+<Math equation-number="26.15.13" mode="display" xml:id="C26.S15.E13">r_{n-k}(B)=S\left(n,k\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</section>

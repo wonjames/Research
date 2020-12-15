@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S12">
+<title>Polylogarithms</title>        
+ 
+<subsection xml:id="C25.S12.SS1">
+<title>Dilogarithms</title>        
+  
+<para xml:id="C25.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S12.SS1.p1.s1">
+The notation <Math mode="inline" xml:id="C25.S12.SS1.p1.m1">\mathrm{Li}_{2}\left(z\right)</Math> was introduced in Lewin (1981) for a function discussed in Euler (1768) and called the dilogarithm in Hill (1828): <Math equation-number="25.12.1" mode="display" xml:id="C25.S12.E1">\mathrm{Li}_{2}\left(z\right)=\sum_{n=1}^{\infty}\frac{z^{n}}{n^{2}}, if |z|\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S12.SS1.p1.s2">
+<Math equation-number="25.12.2" mode="display" xml:id="C25.S12.E2">\mathrm{Li}_{2}\left(z\right)=-\int_{0}^{z}t^{-1}\ln\left(1-t\right)\mathrm{d}t, if z\in\mathbb{C}\setminus(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C25.S12.SS1.p2.s1">
+Other notations and names for <Math mode="inline" xml:id="C25.S12.SS1.p2.m1">\mathrm{Li}_{2}\left(z\right)</Math> include <Math mode="inline" xml:id="C25.S12.SS1.p2.m2">S_{2}(z)</Math> (Kölbig et al. (1970)), Spence function <Math mode="inline" xml:id="C25.S12.SS1.p2.m3">\mathrm{Sp}(z)</Math> (’t Hooft and Veltman (1979)), and <Math mode="inline" xml:id="C25.S12.SS1.p2.m4">\mathrm{L}_{2}(z)</Math> (Maximon (2003)).
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C25.S12.SS1.p3.s1">
+In the complex plane <Math mode="inline" xml:id="C25.S12.SS1.p3.m1">\mathrm{Li}_{2}\left(z\right)</Math> has a branch point at <Math mode="inline" xml:id="C25.S12.SS1.p3.m2">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C25.S12.SS1.p3.s2">
+The principal branch has a cut along the interval <Math mode="inline" xml:id="C25.S12.SS1.p3.m3">[1,\infty)</Math> and agrees with(25.12.1) when <Math mode="inline" xml:id="C25.S12.SS1.p3.m4">|z|\leq 1</Math> ; see also §4.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C25.S12.SS1.p3.s3">
+The remainder of the equations in this subsection apply to principal branches.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C25.S12.SS1.p3.s4">
+<Math equation-number="25.12.3" mode="display" xml:id="C25.S12.E3">\mathrm{Li}_{2}\left(z\right)+\mathrm{Li}_{2}\left(\frac{z}{z-1}\right)=-\frac {1}{2}(\ln\left(1-z\right))^{2}, if z\in\mathbb{C}\setminus[1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C25.S12.SS1.p3.s5">
+<Math equation-number="25.12.4" mode="display" xml:id="C25.S12.E4">\mathrm{Li}_{2}\left(z\right)+\mathrm{Li}_{2}\left(\frac{1}{z}\right)=-\frac{1 }{6}\pi^{2}-\frac{1}{2}(\ln\left(-z\right))^{2}, if z\in\mathbb{C}\setminus[0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C25.S12.SS1.p3.s6">
+<Math equation-number="25.12.5" mode="display" xml:id="C25.S12.E5">\mathrm{Li}_{2}\left(z^{m}\right)=m\sum_{k=0}^{m-1}\mathrm{Li}_{2}\left(ze^{2 \pi ik/m}\right), if m=1,2,3,\dots, |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="10" xml:id="C25.S12.SS1.p3.s7">
+<Math equation-number="25.12.6" mode="display" xml:id="C25.S12.E6">\mathrm{Li}_{2}\left(x\right)+\mathrm{Li}_{2}\left(1-x\right)=\frac{1}{6}\pi^{ 2}-(\ln x)\ln\left(1-x\right), if 0&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C25.S12.SS1.p4.s1">
+When <Math mode="inline" xml:id="C25.S12.SS1.p4.m1">z=e^{i\theta}</Math> , <Math mode="inline" xml:id="C25.S12.SS1.p4.m2">0\leq\theta\leq 2\pi</Math> , (25.12.1) becomes <Math equation-number="25.12.7" mode="display" xml:id="C25.S12.E7">\mathrm{Li}_{2}\left(e^{i\theta}\right)=\sum_{n=1}^{\infty}\frac{\cos\left(n \theta\right)}{n^{2}}+i\sum_{n=1}^{\infty}\frac{\sin\left(n\theta\right)}{n^{2 }}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C25.S12.SS1.p4.s2">
+The cosine series in (25.12.7) has the elementary sum <Math equation-number="25.12.8" mode="display" xml:id="C25.S12.E8">\sum_{n=1}^{\infty}\frac{\cos\left(n\theta\right)}{n^{2}}=\frac{\pi^{2}}{6}- \frac{\pi\theta}{2}+\frac{\theta^{2}}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C25.S12.SS1.p4.s3">
+By (25.12.2) <Math equation-number="25.12.9" mode="display" xml:id="C25.S12.E9">\sum_{n=1}^{\infty}\frac{\sin\left(n\theta\right)}{n^{2}}=-\int_{0}^{\theta} \ln\left(2\sin\left(\tfrac{1}{2}x\right)\right)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C25.S12.SS1.p4.s4">
+The right-hand side is called Clausen’s integral.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C25.S12.SS1.p5.s1">
+For graphics see Figures 25.12.1 and 25.12.2, and for further properties see Maximon (2003), Kirillov (1995),Lewin (1981), Nielsen (1909), and Zagier (1989).
+</sentence>
+
+</para>
+             
+<sentence sentence-num-in-section="16" xml:id="C25.S12.F1.s1">
+Figure 25.12.1: Dilogarithm function <Math mode="inline" xml:id="C25.S12.F1.m3">\mathrm{Li}_{2}\left(x\right)</Math> , <Math mode="inline" xml:id="C25.S12.F1.m4">-20\leq x&amp;lt;1</Math>. 
+</sentence> 
+          
+<sentence sentence-num-in-section="17" xml:id="C25.S12.F2.s1">
+Figure 25.12.2: Absolute value of the dilogarithm function <Math mode="inline" xml:id="C25.S12.F2.m4">\left|\mathrm{Li}_{2}\left(x+iy\right)\right|</Math> , <Math mode="inline" xml:id="C25.S12.F2.m5">-20\leq x\leq 20</Math> , <Math mode="inline" xml:id="C25.S12.F2.m6">-20\leq y\leq 20</Math> . Principal value. There is a cut along the real axis from 1 to <Math mode="inline" xml:id="C25.S12.F2.m7">\infty</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C25.S12.SS2">
+<title>Polylogarithms</title>        
+ 
+  
+<para xml:id="C25.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C25.S12.SS2.p1.s1">
+For real or complex <Math mode="inline" xml:id="C25.S12.SS2.p1.m1">s</Math> and <Math mode="inline" xml:id="C25.S12.SS2.p1.m2">z</Math> the polylogarithm <Math mode="inline" xml:id="C25.S12.SS2.p1.m3">\mathrm{Li}_{s}\left(z\right)</Math> is defined by <Math equation-number="25.12.10" mode="display" xml:id="C25.S12.E10">\mathrm{Li}_{s}\left(z\right)=\sum_{n=1}^{\infty}\frac{z^{n}}{n^{s}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C25.S12.SS2.p2.s1">
+For each fixed complex <Math mode="inline" xml:id="C25.S12.SS2.p2.m1">s</Math> the series defines an analytic function of <Math mode="inline" xml:id="C25.S12.SS2.p2.m2">z</Math> for <Math mode="inline" xml:id="C25.S12.SS2.p2.m3">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C25.S12.SS2.p2.s2">
+The series also converges when <Math mode="inline" xml:id="C25.S12.SS2.p2.m4">|z|=1</Math> , provided that <Math mode="inline" xml:id="C25.S12.SS2.p2.m5">\Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C25.S12.SS2.p2.s3">
+For other values of <Math mode="inline" xml:id="C25.S12.SS2.p2.m6">z</Math> , <Math mode="inline" xml:id="C25.S12.SS2.p2.m7">\mathrm{Li}_{s}\left(z\right)</Math> is defined by analytic continuation.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C25.S12.SS2.p3.s1">
+The notation <Math mode="inline" xml:id="C25.S12.SS2.p3.m1">\phi\left(z,s\right)</Math> was used for <Math mode="inline" xml:id="C25.S12.SS2.p3.m2">\mathrm{Li}_{s}\left(z\right)</Math> inTruesdell (1945) for a series treated in Jonquière (1889), hence the alternative name Jonquière’s function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C25.S12.SS2.p3.s2">
+The special case <Math mode="inline" xml:id="C25.S12.SS2.p3.m3">z=1</Math> is the Riemann zeta function: <Math mode="inline" xml:id="C25.S12.SS2.p3.m4">\zeta\left(s\right)=\mathrm{Li}_{s}\left(1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C25.S12.Px1">
+<title>Integral Representation</title>    
+<para xml:id="C25.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C25.S12.Px1.p1.s1">
+ <Math equation-number="25.12.11" mode="display" xml:id="C25.S12.E11">\mathrm{Li}_{s}\left(z\right)=\frac{z}{\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{e^{x}-z}\mathrm{d}x,</Math> valid when <Math mode="inline" xml:id="C25.S12.Px1.p1.m1">\Re s&gt;0</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p1.m2">\left|\operatorname{ph}\left(1-z\right)\right|&lt;\pi</Math> , or <Math mode="inline" xml:id="C25.S12.Px1.p1.m3">\Re s&gt;1</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p1.m4">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C25.S12.Px1.p1.s2">
+(In the latter case (25.12.11) becomes (25.5.1)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C25.S12.Px1.p2.s1">
+Further properties include <Math equation-number="25.12.12" mode="display" xml:id="C25.S12.E12">\mathrm{Li}_{s}\left(z\right)=\Gamma\left(1-s\right)\left(\ln\frac{1}{z}\right )^{s-1}+\sum_{n=0}^{\infty}\zeta\left(s-n\right)\frac{(\ln z)^{n}}{n!}, if s\neq 1,2,3,\dots, |\ln z|&lt;2\pi,</Math> and <Math equation-number="25.12.13" mode="display" xml:id="C25.S12.E13">\mathrm{Li}_{s}\left(e^{2\pi ia}\right)+e^{\pi is}\mathrm{Li}_{s}\left(e^{-2 \pi ia}\right)=\frac{(2\pi)^{s}e^{\pi is/2}}{\Gamma\left(s\right)}\zeta\left(1 -s,a\right),</Math> valid when <Math mode="inline" xml:id="C25.S12.Px1.p2.m1">\Re s&gt;0</Math> , <Math mode="inline" xml:id="C25.S12.Px1.p2.m2">\Im a&gt;0</Math> or <Math mode="inline" xml:id="C25.S12.Px1.p2.m3">\Re s&gt;1</Math> , <Math mode="inline" xml:id="C25.S12.Px1.p2.m4">\Im a=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C25.S12.Px1.p2.s2">
+When <Math mode="inline" xml:id="C25.S12.Px1.p2.m5">s=2</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p2.m6">e^{2\pi ia}=z</Math> , (25.12.13) becomes (25.12.4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C25.S12.Px1.p3.s1">
+See also Lewin (1981), Kölbig (1986),Maximon (2003), Prudnikov et al. (1990, §§1.2 and 2.5),Prudnikov et al. (1992a, §3.3), and Prudnikov et al. (1992b, §3.3).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S12.SS3">
+<title>Fermi–Dirac and Bose–Einstein Integrals</title>         
+<para xml:id="C25.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C25.S12.SS3.p1.s1">
+The Fermi–Dirac and Bose–Einstein integrals are defined by <Math equation-number="25.12.14" mode="display" xml:id="C25.S12.E14">F_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x} +1}\mathrm{d}t, if s&gt;-1,</Math> , <Math equation-number="25.12.15" mode="display" xml:id="C25.S12.E15">G_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x} -1}\mathrm{d}t, if s&gt;-1, x&lt;0; or s&gt;0, x\leq 0,</Math> respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C25.S12.SS3.p1.s2">
+Sometimes the factor <Math mode="inline" xml:id="C25.S12.SS3.p1.m1">1/\Gamma\left(s+1\right)</Math> is omitted. SeeCloutman (1989) and Gautschi (1993).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C25.S12.SS3.p2.s1">
+In terms of polylogarithms <Math equation-number="25.12.16" mode="display" xml:id="C25.S12.E16">F_{s}(x)=-\mathrm{Li}_{s+1}\left(-e^{x}\right),G_{s}(x)=\mathrm{Li}_{s+1}\left(e^{x}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C25.S12.SS3.p3.s1">
+For a uniform asymptotic approximation for <Math mode="inline" xml:id="C25.S12.SS3.p3.m1">F_{s}(x)</Math> seeTemme and Olde Daalhuis (1990).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

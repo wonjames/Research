@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C11.S5">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C11.S5.SS1">
+<title>Integrals Along the Real Line</title>        
+ 
+ 
+<para xml:id="C11.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S5.SS1.p1.s1">
+ <Math equation-number="11.5.1" mode="display" xml:id="C11.S5.E1">\mathbf{H}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{1}(1-t^{2})^{\nu-\frac{1}{2}}\sin\left (zt\right)\mathrm{d}t=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma\left(\nu+ \tfrac{1}{2}\right)}\int_{0}^{\pi/2}\sin\left(z\cos\theta\right)(\sin\theta)^{ 2\nu}\mathrm{d}\theta, if \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.2" mode="display" xml:id="C11.S5.E2">\mathbf{K}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\infty}e^{-zt}(1+t^{2})^{\nu-\frac{1}{ 2}}\mathrm{d}t, if \Re z&gt;0,</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C11.S5.SS1.p2.s1">
+ <Math equation-number="11.5.3" mode="display" xml:id="C11.S5.E3">\mathbf{K}_{0}\left(z\right)=\frac{2}{\pi}\int_{0}^{\infty}e^{-z\sinh t} \mathrm{d}t, if \Re z&gt;0,</Math> <Math equation-number="11.5.4" mode="display" xml:id="C11.S5.E4">\mathbf{M}_{\nu}\left(z\right)=-\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{1}e^{-zt}(1-t^{2})^{\nu-\frac{1}{2}} \mathrm{d}t, if \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.5" mode="display" xml:id="C11.S5.E5">\mathbf{M}_{0}\left(z\right)=-\frac{2}{\pi}\int_{0}^{\pi/2}e^{-z\cos\theta} \mathrm{d}\theta,</Math> <Math equation-number="11.5.6" mode="display" xml:id="C11.S5.E6">\mathbf{L}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\pi/2}\sinh\left(z\cos\theta\right)( \sin\theta)^{2\nu}\mathrm{d}\theta, if \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.7" mode="display" xml:id="C11.S5.E7">I_{-\nu}\left(x\right)-\mathbf{L}_{\nu}\left(x\right)=\frac{2(\tfrac{1}{2}x)^{ \nu}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\infty}(1+t^{2}) ^{\nu-\frac{1}{2}}\sin\left(xt\right)\mathrm{d}t, if x&gt;0, \Re\nu&lt;\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S5.SS2">
+<title>Contour Integrals</title>          
+<para xml:id="C11.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C11.S5.SS2.p1.s1">
+For loop-integral versions of (11.5.1), (11.5.2), (11.5.4), and (11.5.7) seeBabister (1967, §§3.3 and 3.14).
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C11.S5.Px1">
+<title>Mellin–Barnes Integrals</title>    
+<para xml:id="C11.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C11.S5.Px1.p1.s1">
+ <Math equation-number="11.5.8" mode="display" xml:id="C11.S5.E8">(\tfrac{1}{2}x)^{-\nu-1}\mathbf{H}_{\nu}\left(x\right)=-\frac{1}{2\pi i}\int_{ -i\infty}^{i\infty}\frac{\pi\csc\left(\pi s\right)}{\Gamma\left(\tfrac{3}{2}+s \right)\Gamma\left(\tfrac{3}{2}+\nu+s\right)}(\tfrac{1}{4}x^{2})^{s}\mathrm{d}s, if x&gt;0, \Re\nu&gt;-1,</Math> <Math equation-number="11.5.9" mode="display" xml:id="C11.S5.E9">(\tfrac{1}{2}z)^{-\nu-1}\mathbf{L}_{\nu}\left(z\right)=\frac{1}{2\pi i}\int_{ \infty}^{(0+)}\frac{\pi\csc\left(\pi s\right)}{\Gamma\left(\tfrac{3}{2}+s \right)\Gamma\left(\tfrac{3}{2}+\nu+s\right)}(-\tfrac{1}{4}z^{2})^{s}\mathrm{d }s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C11.S5.Px1.p1.s2">
+In (11.5.8) and (11.5.9) the path of integration separates the poles of the integrand at <Math mode="inline" xml:id="C11.S5.Px1.p1.m1">s=0,1,2,\dots</Math> from those at <Math mode="inline" xml:id="C11.S5.Px1.p1.m2">s=-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S5.SS3">
+<title>Compendia</title>        
+  
+<para xml:id="C11.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C11.S5.SS3.p1.s1">
+For further integral representations seeBabister (1967, §§3.3, 3.14),Erdélyi et al. (1954a, §§5.17, 15.3), Magnus et al. (1966, p. 114),Oberhettinger (1972), Oberhettinger (1974, §2.7),Oberhettinger and Badii (1973, §2.14), andWatson (1944, pp. 330, 374, and 426).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

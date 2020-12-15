@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S12">
+<title>Expansions in Other Trigonometric Series and Doubly-Infinite Partial Fractions: Eisenstein Series</title>        
+    
+<para xml:id="C22.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S12.p1.s1">
+With <Math mode="inline" xml:id="C22.S12.p1.m1">t\in\mathbb{C}</Math> and <Math equation-number="22.12.1" mode="display" xml:id="C22.S12.E1">\tau=i{K^{\prime}}\left(k\right)/K\left(k\right),</Math> <Math equation-number="22.12.2" mode="display" xml:id="C22.S12.E2">2Kk\operatorname{sn}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{\pi}{ \sin\left(\pi(t-(n+\frac{1}{2})\tau)\right)}=\sum_{n=-\infty}^{\infty}\left( \sum_{m=-\infty}^{\infty}\frac{(-1)^{m}}{t-m-(n+\frac{1}{2})\tau}\right),</Math> <Math equation-number="22.12.3" mode="display" xml:id="C22.S12.E3">2iKk\operatorname{cn}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{(-1)^{n }\pi}{\sin\left(\pi(t-(n+\frac{1}{2})\tau)\right)}=\sum_{n=-\infty}^{\infty} \left(\sum_{m=-\infty}^{\infty}\frac{(-1)^{m+n}}{t-m-(n+\frac{1}{2})\tau} \right),</Math> <Math equation-number="22.12.4" mode="display" xml:id="C22.S12.E4">2iK\operatorname{dn}\left(2Kt,k\right)=\lim_{N\to\infty}\sum_{n=-N}^{N}(-1)^{n }\frac{\pi}{\tan\left(\pi(t-(n+\frac{1}{2})\tau)\right)}=\lim_{N\to\infty}\sum _{n=-N}^{N}(-1)^{n}\left(\lim_{M\to\infty}\sum_{m=-M}^{M}\frac{1}{t-m-(n+\frac {1}{2})\tau}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C22.S12.p1.s2">
+The double sums in (22.12.2)–(22.12.4) are convergent butnot absolutely convergent, hence the order of the summations is important.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C22.S12.p1.s3">
+Compare §20.5(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S12.p2">
+
+</para>
+ 
+<para xml:id="C22.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C22.S12.p3.s1">
+ <Math equation-number="22.12.5" mode="display" xml:id="C22.S12.E5">2Kk\operatorname{cd}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{\pi}{ \sin\left(\pi(t+\frac{1}{2}-(n+\frac{1}{2})\tau)\right)}=\sum_{n=-\infty}^{ \infty}\left(\sum_{m=-\infty}^{\infty}\frac{(-1)^{m}}{t+\frac{1}{2}-m-(n+\frac {1}{2})\tau}\right),</Math> , <Math equation-number="22.12.6" mode="display" xml:id="C22.S12.E6">-2iKkk^{\prime}\operatorname{sd}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty} \frac{(-1)^{n}\pi}{\sin\left(\pi(t+\frac{1}{2}-(n+\frac{1}{2})\tau)\right)}= \sum_{n=-\infty}^{\infty}\left(\sum_{m=-\infty}^{\infty}\frac{(-1)^{m+n}}{t+ \frac{1}{2}-m-(n+\frac{1}{2})\tau}\right),</Math> , <Math equation-number="22.12.7" mode="display" xml:id="C22.S12.E7">2iKk^{\prime}\operatorname{nd}\left(2Kt,k\right)=\lim_{N\to\infty}\sum_{n=-N}^ {N}(-1)^{n}\frac{\pi}{\tan\left(\pi(t+\frac{1}{2}-(n+\frac{1}{2})\tau)\right)} =\lim_{N\to\infty}\sum_{n=-N}^{N}(-1)^{n}\lim_{M\to\infty}\left(\sum_{m=-M}^{M }\frac{1}{t+\frac{1}{2}-m-(n+\frac{1}{2})\tau}\right),</Math> , <Math equation-number="22.12.8" mode="display" xml:id="C22.S12.E8">2K\operatorname{dc}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{\pi}{\sin \left(\pi(t+\frac{1}{2}-n\tau)\right)}=\sum_{n=-\infty}^{\infty}\left(\sum_{m= -\infty}^{\infty}\frac{(-1)^{m}}{t+\frac{1}{2}-m-n\tau}\right),</Math> , <Math equation-number="22.12.9" mode="display" xml:id="C22.S12.E9">2Kk^{\prime}\operatorname{nc}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac {(-1)^{n}\pi}{\sin\left(\pi(t+\frac{1}{2}-n\tau)\right)}=\sum_{n=-\infty}^{ \infty}\left(\sum_{m=-\infty}^{\infty}\frac{(-1)^{m+n}}{t+\frac{1}{2}-m-n\tau} \right),</Math> , <Math equation-number="22.12.10" mode="display" xml:id="C22.S12.E10">-2Kk^{\prime}\operatorname{sc}\left(2Kt,k\right)=\lim_{N\to\infty}\sum_{n=-N}^ {N}(-1)^{n}\frac{\pi}{\tan\left(\pi(t+\frac{1}{2}-n\tau)\right)}=\lim_{N\to \infty}\sum_{n=-N}^{N}(-1)^{n}\left(\lim_{M\to\infty}\sum_{m=-M}^{M}\frac{1}{t +\frac{1}{2}-m-n\tau}\right),</Math> , <Math equation-number="22.12.11" mode="display" xml:id="C22.S12.E11">2K\operatorname{ns}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{\pi}{\sin \left(\pi(t-n\tau)\right)}=\sum_{n=-\infty}^{\infty}\left(\sum_{m=-\infty}^{ \infty}\frac{(-1)^{m}}{t-m-n\tau}\right),</Math> , <Math equation-number="22.12.12" mode="display" xml:id="C22.S12.E12">2K\operatorname{ds}\left(2Kt,k\right)=\sum_{n=-\infty}^{\infty}\frac{(-1)^{n} \pi}{\sin\left(\pi(t-n\tau)\right)}=\sum_{n=-\infty}^{\infty}\left(\sum_{m=- \infty}^{\infty}\frac{(-1)^{m+n}}{t-m-n\tau}\right),</Math> , <Math equation-number="22.12.13" mode="display" xml:id="C22.S12.E13">2K\operatorname{cs}\left(2Kt,k\right)=\lim_{N\to\infty}\sum_{n=-N}^{N}(-1)^{n} \frac{\pi}{\tan\left(\pi(t-n\tau)\right)}=\lim_{N\to\infty}\sum_{n=-N}^{N}(-1) ^{n}\left(\lim_{M\to\infty}\sum_{m=-M}^{M}\frac{1}{t-m-n\tau}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>

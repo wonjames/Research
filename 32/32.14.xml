@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S14">
+<title>Combinatorics</title>          
+ 
+<para xml:id="C32.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S14.p1.s1">
+Let <Math mode="inline" xml:id="C32.S14.p1.m1">S_{N}</Math> be the group of permutations <Math mode="inline" xml:id="C32.S14.p1.m2">\boldsymbol{\pi}</Math> of the numbers <Math mode="inline" xml:id="C32.S14.p1.m3">1,2,\dots,N</Math> (§ 26.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C32.S14.p1.s2">
+With <Math mode="inline" xml:id="C32.S14.p1.m4">1\leq m_{1}&lt;\cdots&lt;m_{n}\leq N</Math> , <Math mode="inline" xml:id="C32.S14.p1.m5">\boldsymbol{\pi}(m_{1}),\boldsymbol{\pi}(m_{2}),\dots,\boldsymbol{\pi}(m_{n})</Math> is said to be an increasing subsequence of <Math mode="inline" xml:id="C32.S14.p1.m6">\boldsymbol{\pi}</Math> of length <Math mode="inline" xml:id="C32.S14.p1.m7">n</Math> when <Math mode="inline" xml:id="C32.S14.p1.m8">\boldsymbol{\pi}(m_{1})&lt;\boldsymbol{\pi}(m_{2})&lt;\cdots&lt;\boldsymbol{\pi}(m_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C32.S14.p1.s3">
+Let <Math mode="inline" xml:id="C32.S14.p1.m9">\ell_{N}(\boldsymbol{\pi})</Math> be the length of the longest increasing subsequence of <Math mode="inline" xml:id="C32.S14.p1.m10">\boldsymbol{\pi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C32.S14.p1.s4">
+Then <Math equation-number="32.14.1" mode="display" xml:id="C32.S14.E1">\lim_{N\to\infty}\mathrm{Prob}\left(\frac{\ell_{N}(\boldsymbol{\pi})-2\sqrt{N} }{N^{1/6}}\leq s\right)=F(s),</Math> where the distribution function <Math mode="inline" xml:id="C32.S14.p1.m11">F(s)</Math> is defined here by <Math equation-number="32.14.2" mode="display" xml:id="C32.S14.E2">F(s)=\exp\left(-\int_{s}^{\infty}(x-s)w^{2}(x)\mathrm{d}x\right),</Math> and <Math mode="inline" xml:id="C32.S14.p1.m12">w(x)</Math> satisfies <Math mode="inline" xml:id="C32.S14.p1.m13">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S14.p1.m14">\alpha=0</Math> and boundary conditions <Math equation-number="32.14.3" mode="display" xml:id="C32.S14.E3">w(x)\sim\mathrm{Ai}\left(x\right), if x\to+\infty,</Math> , <Math equation-number="32.14.4" mode="display" xml:id="C32.S14.E4">w(x)\sim\sqrt{-\tfrac{1}{2}x}, if x\to-\infty,</Math> where <Math mode="inline" xml:id="C32.S14.p1.m15">\mathrm{Ai}</Math> denotes the Airy function (§9.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C32.S14.p2.s1">
+The distribution function <Math mode="inline" xml:id="C32.S14.p2.m1">F(s)</Math> given by (32.14.2) arises in random matrix theory where it gives the limiting distribution for thenormalized largest eigenvalue in the Gaussian Unitary Ensemble of <Math mode="inline" xml:id="C32.S14.p2.m2">n\times n</Math> Hermitian matrices; see Tracy and Widom (1994).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S14.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C32.S14.p3.s1">
+See Forrester and Witte (2001, 2002) for other instances of Painlevé equations in random matrix theory.
+</sentence>
+
+</para>
+ 
+</section>

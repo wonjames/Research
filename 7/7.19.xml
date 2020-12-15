@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S19">
+<title>Voigt Functions</title>        
+ 
+<subsection xml:id="C7.S19.SS1">
+<title>Definitions</title>        
+ 
+ 
+<para xml:id="C7.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S19.SS1.p1.s1">
+For <Math mode="inline" xml:id="C7.S19.SS1.p1.m1">x\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C7.S19.SS1.p1.m2">t&gt;0</Math> , <Math equation-number="7.19.1" mode="display" xml:id="C7.S19.E1">\mathsf{U}\left(x,t\right)=\frac{1}{\sqrt{4\pi t}}\int_{-\infty}^{\infty}\frac {e^{-(x-y)^{2}/(4t)}}{1+y^{2}}\mathrm{d}y,</Math> <Math equation-number="7.19.2" mode="display" xml:id="C7.S19.E2">\mathsf{V}\left(x,t\right)=\frac{1}{\sqrt{4\pi t}}\int_{-\infty}^{\infty}\frac {ye^{-(x-y)^{2}/(4t)}}{1+y^{2}}\mathrm{d}y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C7.S19.SS1.p1.s2">
+<Math equation-number="7.19.3" mode="display" xml:id="C7.S19.E3">\mathsf{U}\left(x,t\right)+i\mathsf{V}\left(x,t\right)=\sqrt{\frac{\pi}{4t}}e^ {z^{2}}\operatorname{erfc}z, if z=(1-ix)/(2\sqrt{t})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C7.S19.SS1.p1.s3">
+<Math equation-number="7.19.4" mode="display" xml:id="C7.S19.E4">H\left(a,u\right)=\frac{a}{\pi}\int_{-\infty}^{\infty}\frac{e^{-t^{2}}\mathrm{ d}t}{(u-t)^{2}+a^{2}}=\frac{1}{a\sqrt{\pi}}\mathsf{U}\left(\frac{u}{a},\frac{1 }{4a^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C7.S19.SS1.p1.s4">
+<Math mode="inline" xml:id="C7.S19.SS1.p1.m3">H\left(a,u\right)</Math> is sometimes called the line broadening function; see, for example, Finn and Mugglestone (1965).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS2">
+<title>Graphics</title>        
+       
+   
+<sentence sentence-num-in-section="5" xml:id="C7.S19.F1.s1">
+Figure 7.19.1: Voigt function <Math mode="inline" xml:id="C7.S19.F1.m6">\mathsf{U}\left(x,t\right)</Math> , <Math mode="inline" xml:id="C7.S19.F1.m7">t=0.1</Math> , <Math mode="inline" xml:id="C7.S19.F1.m8">2.5</Math> , <Math mode="inline" xml:id="C7.S19.F1.m9">5</Math> , <Math mode="inline" xml:id="C7.S19.F1.m10">10</Math> .
+</sentence>         
+   
+<sentence sentence-num-in-section="6" xml:id="C7.S19.F2.s1">
+Figure 7.19.2: Voigt function <Math mode="inline" xml:id="C7.S19.F2.m6">\mathsf{V}\left(x,t\right)</Math> , <Math mode="inline" xml:id="C7.S19.F2.m7">t=0.1</Math> , <Math mode="inline" xml:id="C7.S19.F2.m8">2.5</Math> , <Math mode="inline" xml:id="C7.S19.F2.m9">5</Math> , <Math mode="inline" xml:id="C7.S19.F2.m10">10</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS3">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C7.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C7.S19.SS3.p1.s1">
+ <Math equation-number="7.19.5" mode="display" xml:id="C7.S19.E5">\lim_{t\to 0}\mathsf{U}\left(x,t\right)=\frac{1}{1+x^{2}},\lim_{t\to 0}\mathsf{V}\left(x,t\right)=\frac{x}{1+x^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C7.S19.SS3.p1.s2">
+<Math equation-number="7.19.6" mode="display" xml:id="C7.S19.E6">\mathsf{U}\left(-x,t\right)=\mathsf{U}\left(x,t\right),\mathsf{V}\left(-x,t\right)=-\mathsf{V}\left(x,t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C7.S19.SS3.p1.s3">
+<Math equation-number="7.19.7" mode="display" xml:id="C7.S19.E7">0&lt;\mathsf{U}\left(x,t\right)\leq 1,-1\leq\mathsf{V}\left(x,t\right)\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C7.S19.SS3.p1.s4">
+<Math equation-number="7.19.8" mode="display" xml:id="C7.S19.E8">\mathsf{V}\left(x,t\right)=x\mathsf{U}\left(x,t\right)+2t\frac{\partial\mathsf {U}\left(x,t\right)}{\partial x},</Math> , <Math equation-number="7.19.9" mode="display" xml:id="C7.S19.E9">\mathsf{U}\left(x,t\right)=1-x\mathsf{V}\left(x,t\right)-2t\frac{\partial \mathsf{V}\left(x,t\right)}{\partial x}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS4">
+<title>Other Integral Representations</title>        
+ 
+<para xml:id="C7.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C7.S19.SS4.p1.s1">
+ <Math equation-number="7.19.10" mode="display" xml:id="C7.S19.E10">\mathsf{U}\left(\frac{u}{a},\frac{1}{4a^{2}}\right)=a\int_{0}^{\infty}e^{-at- \frac{1}{4}t^{2}}\cos\left(ut\right)\mathrm{d}t,</Math> <Math equation-number="7.19.11" mode="display" xml:id="C7.S19.E11">\mathsf{V}\left(\frac{u}{a},\frac{1}{4a^{2}}\right)=a\int_{0}^{\infty}e^{-at- \frac{1}{4}t^{2}}\sin\left(ut\right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

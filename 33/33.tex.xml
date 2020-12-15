@@ -1,0 +1,1920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C33">
+<title>Coulomb Functions</title>               
+          
+<section xml:id="C33.S1">
+<title>Special Notation</title>         
+<para xml:id="C33.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C33.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r1.m1">k,\ell</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C33.S1.p1.t1.s2">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C33.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r2.m1">r,x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C33.S1.p1.t1.s4">
+real variables.    
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C33.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r3.m1">\rho</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C33.S1.p1.t1.s6">
+nonnegative real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C33.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r4.m1">\epsilon,\eta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C33.S1.p1.t1.s8">
+real parameters.    
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C33.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r5.m1">\psi\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C33.S1.p1.t1.s10">
+logarithmic derivative of <Math mode="inline" xml:id="C33.S1.p1.t1.r5.m2">\Gamma\left(x\right)</Math>; see §LABEL:sec:GA.Def.GP.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C33.S1.p1.t1.s11">
+<Math mode="inline" xml:id="C33.S1.p1.t1.r6.m1">\delta\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C33.S1.p1.t1.s12">
+Dirac delta; see §LABEL:sec:AL.RDF.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C33.S1.p1.t1.s13">
+primes
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C33.S1.p1.t1.s14">
+derivatives with respect to the variable.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C33.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C33.S1.p2.s1">
+The main functions treated in this chapter are first the Coulomb radial functions <Math mode="inline" xml:id="C33.S1.p2.m1">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S1.p2.m2">G_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S1.p2.m3">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> ( ( ) ), which are used in the case of repulsive Coulomb interactions, and secondly the functions <Math mode="inline" xml:id="C33.S1.p2.m4">f\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S1.p2.m5">h\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S1.p2.m6">s\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S1.p2.m7">c\left(\epsilon,\ell;r\right)</Math> ( ( ) ), which are used in the case of attractive Coulomb interactions.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C33.S1.Px1">
+<title>Alternative Notations</title>   
+<para xml:id="C33.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C33.S1.Px1.p1.s1">
+ <Math mode="inline" xml:id="C33.S1.I1.ix1.p1.m1">P_{\ell}(\epsilon,r)=(2\ell+1)!f\left(\epsilon,\ell;r\right)/2^{\ell+1}</Math> , <Math mode="inline" xml:id="C33.S1.I1.ix1.p1.m2">Q_{\ell}(\epsilon,r)=-(2\ell+1)!h\left(\epsilon,\ell;r\right)/(2^{\ell+1}A( \epsilon,\ell))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C33.S1.Px1.p1.s2">
+<Math mode="inline" xml:id="C33.S1.I1.ix2.p1.m1">f^{(0)}(\epsilon,\ell;r)=f\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S1.I1.ix2.p1.m2">f(\epsilon,\ell;r)=s\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S1.I1.ix2.p1.m3">g(\epsilon,\ell;r)=c\left(\epsilon,\ell;r\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+ 
+<section xml:id="C33.S2">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C33.S2.SS1">
+<title>Coulomb Wave Equation</title>        
+      
+<para xml:id="C33.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C33.S2.SS1.p1.s1">
+ <Math equation-number="33.2.1" mode="display" xml:id="C33.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\rho}^{2}}+\left(1-\frac{2\eta}{\rho}- \frac{\ell(\ell+1)}{\rho^{2}}\right)w=0, subject to \ell=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C33.S2.SS1.p1.s2">
+This differential equation has a regular singularity at <Math mode="inline" xml:id="C33.S2.SS1.p1.m1">\rho=0</Math> with indices <Math mode="inline" xml:id="C33.S2.SS1.p1.m2">\ell+1</Math> and <Math mode="inline" xml:id="C33.S2.SS1.p1.m3">-\ell</Math> , and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C33.S2.SS1.p1.m4">\rho=\infty</Math> (§§LABEL:sec:AS.DE.RS, LABEL:sec:AS.DE.IS).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C33.S2.SS1.p1.s3">
+There are two turning points, that is, points at which <Math mode="inline" xml:id="C33.S2.SS1.p1.m5">\ifrac{{\mathrm{d}}^{2}w}{{\mathrm{d}\rho}^{2}}=0</Math> (§LABEL:sec:AS.DEWP.CC).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C33.S2.SS1.p1.s4">
+The outer one is given by <Math equation-number="33.2.2" mode="display" xml:id="C33.S2.E2">\rho_{\mathrm{tp}}\left(\eta,\ell\right)=\eta+(\eta^{2}+\ell(\ell+1))^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS2">
+<title>Regular Solution <Math content-tex="\regCoulombF{\ell}@{\eta}{\rho}" mode="inline" xml:id="C33.S2.SS2.m1">F_{\ell}\left(\eta,\rho\right)</Math></title>            
+<para xml:id="C33.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C33.S2.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C33.S2.SS2.p1.m1">F_{\ell}\left(\eta,\rho\right)</Math> is recessive (§LABEL:sec:AS.DE.LGA) at <Math mode="inline" xml:id="C33.S2.SS2.p1.m2">\rho=0</Math> , and is defined by <Math equation-number="33.2.3" mode="display" xml:id="C33.S2.E3">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)2^{-\ell-1}(\mp\mathrm {i})^{\ell+1}M_{\pm\mathrm{i}\eta,\ell+\frac{1}{2}}\left(\pm 2\mathrm{i}\rho \right),</Math> or equivalently <Math equation-number="33.2.4" mode="display" xml:id="C33.S2.E4">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\rho^{\ell+1}e^{\mp \mathrm{i}\rho}M\left(\ell+1\mp\mathrm{i}\eta,2\ell+2,\pm 2\mathrm{i}\rho \right),</Math> where <Math mode="inline" xml:id="C33.S2.SS2.p1.m5">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS2.p1.m6">M\left(a,b,z\right)</Math> are defined in §§LABEL:sec:CH.KM.DE.WH and LABEL:sec:CH.MU.DE.KU, and <Math equation-number="33.2.5" mode="display" xml:id="C33.S2.E5">C_{\ell}\left(\eta\right)=\frac{2^{\ell}e^{-\pi\eta/2}|\Gamma\left(\ell+1+ \mathrm{i}\eta\right)|}{(2\ell+1)!}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C33.S2.SS2.p1.s2">
+The choice of ambiguous signs in (LABEL:eq:CW.SOL.REG1) and (LABEL:eq:CW.SOL.REG2) is immaterial, provided that either all upper signs are taken, or all lower signs are taken.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C33.S2.SS2.p1.s3">
+This is a consequence of Kummer’s transformation (§LABEL:sec:CH.MU.DF.CO).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C33.S2.SS2.p2.s1">
+ <Math mode="inline" xml:id="C33.S2.SS2.p2.m1">F_{\ell}\left(\eta,\rho\right)</Math> is a real and analytic function of <Math mode="inline" xml:id="C33.S2.SS2.p2.m2">\rho</Math> on the open interval <Math mode="inline" xml:id="C33.S2.SS2.p2.m3">0&lt;\rho&lt;\infty</Math> , and also an analytic function of <Math mode="inline" xml:id="C33.S2.SS2.p2.m4">\eta</Math> when <Math mode="inline" xml:id="C33.S2.SS2.p2.m5">-\infty&lt;\eta&lt;\infty</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C33.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C33.S2.SS2.p3.s1">
+The normalizing constant <Math mode="inline" xml:id="C33.S2.SS2.p3.m1">C_{\ell}\left(\eta\right)</Math> is always positive, and has the alternative form <Math equation-number="33.2.6" mode="display" xml:id="C33.S2.E6">C_{\ell}\left(\eta\right)=\dfrac{2^{\ell}\left((2\pi\eta/(e^{2\pi\eta}-1)) \prod_{k=1}^{\ell}(\eta^{2}+k^{2})\right)^{\ifrac{1}{2}}}{(2\ell+1)!}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS3">
+<title>Irregular Solutions <Math content-tex="\irregCoulombG{\ell}@{\eta}{\rho},\irregCoulombH{\pm}{\ell}@{\eta}{\rho}" mode="inline" xml:id="C33.S2.SS3.m1">G_{\ell}\left(\eta,\rho\right),{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math></title>            
+<para xml:id="C33.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C33.S2.SS3.p1.s1">
+The functions <Math mode="inline" xml:id="C33.S2.SS3.p1.m1">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> are defined by <Math equation-number="33.2.7" mode="display" xml:id="C33.S2.E7">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=(\mp\mathrm{i})^{\ell}e^{(\pi\eta/2)\pm \mathrm{i}{\sigma_{\ell}}\left(\eta\right)}W_{\mp\mathrm{i}\eta,\ell+\frac{1}{ 2}}\left(\mp 2\mathrm{i}\rho\right),</Math> or equivalently <Math equation-number="33.2.8" mode="display" xml:id="C33.S2.E8">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=e^{\pm\mathrm{i}{\theta_{\ell}}\left( \eta,\rho\right)}(\mp 2\mathrm{i}\rho)^{\ell+1\pm\mathrm{i}\eta}U\left(\ell+1 \pm\mathrm{i}\eta,2\ell+2,\mp 2\mathrm{i}\rho\right),</Math> where <Math mode="inline" xml:id="C33.S2.SS3.p1.m4">W_{\kappa,\mu}\left(z\right)</Math> , <Math mode="inline" xml:id="C33.S2.SS3.p1.m5">U\left(a,b,z\right)</Math> are defined in §§LABEL:sec:CH.KM.DE.WH and LABEL:sec:CH.MU.DE.KU, <Math equation-number="33.2.9" mode="display" xml:id="C33.S2.E9">{\theta_{\ell}}\left(\eta,\rho\right)=\rho-\eta\ln\left(2\rho\right)-\tfrac{1} {2}\ell\pi+{\sigma_{\ell}}\left(\eta\right),</Math> and <Math equation-number="33.2.10" mode="display" xml:id="C33.S2.E10">{\sigma_{\ell}}\left(\eta\right)=\operatorname{ph}\Gamma\left(\ell+1+\mathrm{i }\eta\right),</Math> the branch of the phase in (LABEL:eq:CW.SOL.SG2) being zero when <Math mode="inline" xml:id="C33.S2.SS3.p1.m6">\eta=0</Math> and continuous elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C33.S2.SS3.p1.s2">
+<Math mode="inline" xml:id="C33.S2.SS3.p1.m7">{\sigma_{\ell}}\left(\eta\right)</Math> is the Coulomb phase shift.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C33.S2.SS3.p2.s1">
+ <Math mode="inline" xml:id="C33.S2.SS3.p2.m1">{H^{+}_{\ell}}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS3.p2.m2">{H^{-}_{\ell}}\left(\eta,\rho\right)</Math> are complex conjugates, and their real and imaginary parts are given by <Math equation-number="33.2.11" mode="display" xml:id="C33.S2.E11">{H^{+}_{\ell}}\left(\eta,\rho\right)=G_{\ell}\left(\eta,\rho\right)+\mathrm{i} F_{\ell}\left(\eta,\rho\right), {H^{-}_{\ell}}\left(\eta,\rho\right)=G_{\ell}\left(\eta,\rho\right)-\mathrm{i} F_{\ell}\left(\eta,\rho\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C33.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C33.S2.SS3.p3.s1">
+As in the case of <Math mode="inline" xml:id="C33.S2.SS3.p3.m1">F_{\ell}\left(\eta,\rho\right)</Math> , the solutions <Math mode="inline" xml:id="C33.S2.SS3.p3.m2">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS3.p3.m3">G_{\ell}\left(\eta,\rho\right)</Math> are analytic functions of <Math mode="inline" xml:id="C33.S2.SS3.p3.m4">\rho</Math> when <Math mode="inline" xml:id="C33.S2.SS3.p3.m5">0&lt;\rho&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C33.S2.SS3.p3.s2">
+Also, <Math mode="inline" xml:id="C33.S2.SS3.p3.m6">e^{\mp\mathrm{i}{\sigma_{\ell}}\left(\eta\right)}{H^{\pm}_{\ell}}\left(\eta, \rho\right)</Math> are analytic functions of <Math mode="inline" xml:id="C33.S2.SS3.p3.m7">\eta</Math> when <Math mode="inline" xml:id="C33.S2.SS3.p3.m8">-\infty&lt;\eta&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS4">
+<title>Wronskians and Cross-Product</title>           
+<para xml:id="C33.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C33.S2.SS4.p1.s1">
+With arguments <Math mode="inline" xml:id="C33.S2.SS4.p1.m1">\eta,\rho</Math> suppressed, <Math equation-number="33.2.12" mode="display" xml:id="C33.S2.E12">\mathscr{W}\left\{G_{\ell},F_{\ell}\right\}=\mathscr{W}\left\{{H^{\pm}_{\ell}} ,F_{\ell}\right\}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C33.S2.SS4.p1.s2">
+<Math equation-number="33.2.13" mode="display" xml:id="C33.S2.E13">F_{\ell-1}G_{\ell}-F_{\ell}G_{\ell-1}=\ell/(\ell^{2}+\eta^{2})^{1/2}, subject to \ell\geq 1</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S3">
+<title>Graphics</title>          
+<subsection xml:id="C33.S3.SS1">
+<title>Line Graphs of the Coulomb Radial Functions <Math content-tex="\regCoulombF{\ell}@{\eta}{\rho}" mode="inline" xml:id="C33.S3.SS1.m1">F_{\ell}\left(\eta,\rho\right)</Math> and <Math content-tex="\irregCoulombG{\ell}@{\eta}{\rho}" mode="inline" xml:id="C33.S3.SS1.m2">G_{\ell}\left(\eta,\rho\right)</Math></title>                   
+<sentence sentence-num-in-section="35" xml:id="C33.S3.F1.s1">
+Figure 33.3.1: <Math mode="inline" xml:id="C33.S3.F1.m5">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F1.m6">G_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F1.m7">\ell=0</Math> , <Math mode="inline" xml:id="C33.S3.F1.m8">\eta=-2</Math> .
+</sentence>           
+<sentence sentence-num-in-section="36" xml:id="C33.S3.F2.s1">
+Figure 33.3.2: <Math mode="inline" xml:id="C33.S3.F2.m5">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F2.m6">G_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F2.m7">\ell=0</Math> , <Math mode="inline" xml:id="C33.S3.F2.m8">\eta=0</Math> .
+</sentence>             
+<sentence sentence-num-in-section="37" xml:id="C33.S3.F3.s1">
+Figure 33.3.3: <Math mode="inline" xml:id="C33.S3.F3.m5">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F3.m6">G_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F3.m7">\ell=0</Math> , <Math mode="inline" xml:id="C33.S3.F3.m8">\eta=2</Math> . The turning point is at <Math mode="inline" xml:id="C33.S3.F3.m9">\rho_{\mathrm{tp}}\left(2,0\right)=4</Math> .
+</sentence>         
+  
+<sentence sentence-num-in-section="38" xml:id="C33.S3.F4.s1">
+Figure 33.3.4: <Math mode="inline" xml:id="C33.S3.F4.m5">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F4.m6">G_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F4.m7">\ell=0</Math> , <Math mode="inline" xml:id="C33.S3.F4.m8">\eta=10</Math> . The turning point is at <Math mode="inline" xml:id="C33.S3.F4.m9">\rho_{\mathrm{tp}}\left(10,0\right)=20</Math> .
+</sentence>   
+<para xml:id="C33.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C33.S3.SS1.p1.s1">
+In Figures LABEL:fig:CW.GR.FGM and LABEL:fig:CW.GR.FGMa <Math equation-number="33.3.1" mode="display" xml:id="C33.S3.E1">M_{\ell}\left(\eta,\rho\right)=({F_{\ell}^{2}}\left(\eta,\rho\right)+{G_{\ell} ^{2}}\left(\eta,\rho\right))^{1/2}=\left|{H^{\pm}_{\ell}}\left(\eta,\rho\right )\right|</Math>.
+</sentence>
+
+</para>
+         
+  
+<sentence sentence-num-in-section="40" xml:id="C33.S3.F5.s1">
+Figure 33.3.5: <Math mode="inline" xml:id="C33.S3.F5.m6">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F5.m7">G_{\ell}\left(\eta,\rho\right)</Math> , and <Math mode="inline" xml:id="C33.S3.F5.m8">M_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F5.m9">\ell=0</Math> , <Math mode="inline" xml:id="C33.S3.F5.m10">\eta=\sqrt{15/2}</Math> . The turning point is at <Math mode="inline" xml:id="C33.S3.F5.m11">\rho_{\mathrm{tp}}\left(\sqrt{15/2},0\right)=\sqrt{30}=5.47\ldot</Math>s .
+</sentence>           
+<sentence sentence-num-in-section="41" xml:id="C33.S3.F6.s1">
+Figure 33.3.6: <Math mode="inline" xml:id="C33.S3.F6.m6">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F6.m7">G_{\ell}\left(\eta,\rho\right)</Math> , and <Math mode="inline" xml:id="C33.S3.F6.m8">M_{\ell}\left(\eta,\rho\right)</Math> with <Math mode="inline" xml:id="C33.S3.F6.m9">\ell=5</Math> , <Math mode="inline" xml:id="C33.S3.F6.m10">\eta=0</Math> . The turning point is at <Math mode="inline" xml:id="C33.S3.F6.m11">\rho_{\mathrm{tp}}\left(0,5\right)=\sqrt{30}</Math> (as in Figure ).
+</sentence>  
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S3.SS2">
+<title>Surfaces of the Coulomb Radial Functions <Math content-tex="\regCoulombF{0}@{\eta}{\rho}" mode="inline" xml:id="C33.S3.SS2.m1">F_{0}\left(\eta,\rho\right)</Math> and <Math content-tex="\irregCoulombG{0}@{\eta}{\rho}" mode="inline" xml:id="C33.S3.SS2.m2">G_{0}\left(\eta,\rho\right)</Math></title>                
+   
+<sentence sentence-num-in-section="42" xml:id="C33.S3.F7.s1">
+Figure 33.3.7: <Math mode="inline" xml:id="C33.S3.F7.m4">F_{0}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F7.m5">-2\leq\eta\leq 2</Math> , <Math mode="inline" xml:id="C33.S3.F7.m6">0\leq\rho\leq 5</Math> .
+</sentence>        
+ 
+  
+<sentence sentence-num-in-section="43" xml:id="C33.S3.F8.s1">
+Figure 33.3.8: <Math mode="inline" xml:id="C33.S3.F8.m4">G_{0}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S3.F8.m5">-2\leq\eta\leq 2</Math> , <Math mode="inline" xml:id="C33.S3.F8.m6">0&amp;lt;\rho\leq 5</Math> .
+</sentence>     
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S4">
+<title>Recurrence Relations and Derivatives</title>           
+<para xml:id="C33.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C33.S4.p1.s1">
+For <Math mode="inline" xml:id="C33.S4.p1.m1">\ell=1,2,3,\dots</Math> , let <Math equation-number="33.4.1" mode="display" xml:id="C33.S4.E1">R_{\ell}=\sqrt{1+\dfrac{\eta^{2}}{\ell^{2}}}, S_{\ell}=\dfrac{\ell}{\rho}+\dfrac{\eta}{\ell}, T_{\ell}=S_{\ell}+S_{\ell+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C33.S4.p1.s2">
+Then, with <Math mode="inline" xml:id="C33.S4.p1.m2">X_{\ell}</Math> denoting any of <Math mode="inline" xml:id="C33.S4.p1.m3">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S4.p1.m4">G_{\ell}\left(\eta,\rho\right)</Math> , or <Math mode="inline" xml:id="C33.S4.p1.m5">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> , <Math equation-number="33.4.2" mode="display" xml:id="C33.S4.E2">R_{\ell}X_{\ell-1}-T_{\ell}X_{\ell}+R_{\ell+1}X_{\ell+1}=0, subject to \ell\geq 1,</Math> <Math equation-number="33.4.3" mode="display" xml:id="C33.S4.E3">X_{\ell}^{\prime}=R_{\ell}X_{\ell-1}-S_{\ell}X_{\ell}, subject to \ell\geq 1,</Math> <Math equation-number="33.4.4" mode="display" xml:id="C33.S4.E4">X_{\ell}^{\prime}=S_{\ell+1}X_{\ell}-R_{\ell+1}X_{\ell+1}, subject to \ell\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S5">
+<title>Limiting Forms for Small <Math mode="inline" xml:id="C33.S5.m1">\rho</Math>, Small <Math mode="inline" xml:id="C33.S5.m2">|\eta|</Math>, or Large <Math mode="inline" xml:id="C33.S5.m3">\ell</Math></title>         
+<subsection xml:id="C33.S5.SS1">
+<title>Small <Math mode="inline" xml:id="C33.S5.SS1.m1">\rho</Math></title>          
+<para xml:id="C33.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C33.S5.SS1.p1.s1">
+As <Math mode="inline" xml:id="C33.S5.SS1.p1.m1">\rho\to 0</Math> with <Math mode="inline" xml:id="C33.S5.SS1.p1.m2">\eta</Math> fixed, <Math equation-number="33.5.1" mode="display" xml:id="C33.S5.E1">F_{\ell}\left(\eta,\rho\right)\sim C_{\ell}\left(\eta\right)\rho^{\ell+1}, F_{\ell}'\left(\eta,\rho\right)\sim(\ell+1)C_{\ell}\left(\eta\right)\rho^{\ell}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C33.S5.SS1.p1.s2">
+<Math equation-number="33.5.2" mode="display" xml:id="C33.S5.E2">G_{\ell}\left(\eta,\rho\right)\sim\frac{\rho^{-\ell}}{(2\ell+1)C_{\ell}\left( \eta\right)}, G_{\ell}'\left(\eta,\rho\right)\sim-\frac{\ell\rho^{-\ell-1}}{(2\ell+1)C_{\ell }\left(\eta\right)},</Math> 
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S5.SS2">
+<title><Math mode="inline" xml:id="C33.S5.SS2.m1">\eta=0</Math></title>        
+  
+<para xml:id="C33.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C33.S5.SS2.p1.s1">
+ <Math equation-number="33.5.3" mode="display" xml:id="C33.S5.E3">F_{\ell}\left(0,\rho\right)=\rho\mathsf{j}_{\ell}\left(\rho\right), G_{\ell}\left(0,\rho\right)=-\rho\mathsf{y}_{\ell}\left(\rho\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C33.S5.SS2.p1.s2">
+Equivalently, <Math equation-number="33.5.4" mode="display" xml:id="C33.S5.E4">F_{\ell}\left(0,\rho\right)=(\pi\rho/2)^{1/2}J_{\ell+\frac{1}{2}}\left(\rho \right), G_{\ell}\left(0,\rho\right)=-(\pi\rho/2)^{1/2}Y_{\ell+\frac{1}{2}}\left(\rho \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C33.S5.SS2.p1.s3">
+For the functions <Math mode="inline" xml:id="C33.S5.SS2.p1.m1">\mathsf{j}</Math> , <Math mode="inline" xml:id="C33.S5.SS2.p1.m2">\mathsf{y}</Math> , <Math mode="inline" xml:id="C33.S5.SS2.p1.m3">J</Math> , <Math mode="inline" xml:id="C33.S5.SS2.p1.m4">Y</Math> see §§LABEL:sec:BS.DBP.SS, LABEL:sec:BS.DEF.SS. <Math equation-number="33.5.5" mode="display" xml:id="C33.S5.E5">F_{0}\left(0,\rho\right)=\sin\rho, G_{0}\left(0,\rho\right)=\cos\rho, {H^{\pm}_{0}}\left(0,\rho\right)=e^{\pm\mathrm{i}\rho}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="51" xml:id="C33.S5.SS2.p1.s4">
+<Math equation-number="33.5.6" mode="display" xml:id="C33.S5.E6">C_{\ell}\left(0\right)=\frac{2^{\ell}\ell!}{(2\ell+1)!}=\frac{1}{(2\ell+1)!!}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S5.SS3">
+<title>Small <Math mode="inline" xml:id="C33.S5.SS3.m1">|\eta|</Math></title>        
+  
+<para xml:id="C33.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C33.S5.SS3.p1.s1">
+ <Math equation-number="33.5.7" mode="display" xml:id="C33.S5.E7">{\sigma_{0}}\left(\eta\right)\sim-\gamma\eta, subject to \eta\to 0,</Math> where <Math mode="inline" xml:id="C33.S5.SS3.p1.m1">\gamma</Math> is Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S5.SS4">
+<title>Large <Math mode="inline" xml:id="C33.S5.SS4.m1">\ell</Math></title>          
+<para xml:id="C33.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C33.S5.SS4.p1.s1">
+As <Math mode="inline" xml:id="C33.S5.SS4.p1.m1">\ell\to\infty</Math> with <Math mode="inline" xml:id="C33.S5.SS4.p1.m2">\eta</Math> and <Math mode="inline" xml:id="C33.S5.SS4.p1.m3">\rho</Math> ( <Math mode="inline" xml:id="C33.S5.SS4.p1.m4">\neq 0</Math> ) fixed, <Math equation-number="33.5.8" mode="display" xml:id="C33.S5.E8">F_{\ell}\left(\eta,\rho\right)\sim C_{\ell}\left(\eta\right)\rho^{\ell+1}, G_{\ell}\left(\eta,\rho\right)\sim\dfrac{\rho^{-\ell}}{(2\ell+1)C_{\ell}\left( \eta\right)},</Math> <Math equation-number="33.5.9" mode="display" xml:id="C33.S5.E9">C_{\ell}\left(\eta\right)\sim\dfrac{e^{-\pi\eta/2}}{(2\ell+1)!!}\sim e^{-\pi \eta/2}\dfrac{e^{\ell}}{\sqrt{2}(2\ell)^{\ell+1}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S6">
+<title>Power-Series Expansions in <Math mode="inline" xml:id="C33.S6.m1">\rho</Math></title>        
+  
+<para xml:id="C33.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C33.S6.p1.s1">
+ <Math equation-number="33.6.1" mode="display" xml:id="C33.S6.E1">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\sum_{k=\ell+1}^{ \infty}A_{k}^{\ell}(\eta)\rho^{k},</Math> <Math equation-number="33.6.2" mode="display" xml:id="C33.S6.E2">F_{\ell}'\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\sum_{k=\ell+1}^{ \infty}kA_{k}^{\ell}(\eta)\rho^{k-1},</Math> where <Math mode="inline" xml:id="C33.S6.p1.m1">A_{\ell+1}^{\ell}=1</Math> , <Math mode="inline" xml:id="C33.S6.p1.m2">A_{\ell+2}^{\ell}=\eta/(\ell+1)</Math> , and <Math equation-number="33.6.3" mode="display" xml:id="C33.S6.E3">(k+\ell)(k-\ell-1)A_{k}^{\ell}=2\eta A_{k-1}^{\ell}-A_{k-2}^{\ell}, subject to k=\ell+3,\ell+4,\dots,</Math> or in terms of the hypergeometric function (§§LABEL:sec:HY.RX,LABEL:sec:HY.GA.GS), <Math equation-number="33.6.4" mode="display" xml:id="C33.S6.E4">A_{k}^{\ell}(\eta)=\dfrac{(-\mathrm{i})^{k-\ell-1}}{(k-\ell-1)!}\*{{}_{2}F_{1} }\left(\ell+1-k,\ell+1-\mathrm{i}\eta;2\ell+2;2\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C33.S6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C33.S6.p2.s1">
+ <Math equation-number="33.6.5" mode="display" xml:id="C33.S6.E5">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=\frac{e^{\pm\mathrm{i}{\theta_{\ell}} \left(\eta,\rho\right)}}{(2\ell+1)!\Gamma\left(-\ell\pm\mathrm{i}\eta\right)} \left(\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k}}}{{\left(2\ell+2\right)_{k} }k!}(\mp 2\mathrm{i}\rho)^{a+k}\left(\ln\left(\mp 2\mathrm{i}\rho\right)+\psi \left(a+k\right)-\psi\left(1+k\right)-\psi\left(2\ell+2+k\right)\right)-\sum_{ k=1}^{2\ell+1}\frac{(2\ell+1)!(k-1)!}{(2\ell+1-k)!{\left(1-a\right)_{k}}}(\mp 2 \mathrm{i}\rho)^{a-k}\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C33.S6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C33.S6.p3.s1">
+where <Math mode="inline" xml:id="C33.S6.p3.m1">a=1+\ell\pm\mathrm{i}\eta</Math> and <Math mode="inline" xml:id="C33.S6.p3.m2">\psi\left(x\right)=\Gamma'\left(x\right)/\Gamma\left(x\right)</Math> (§LABEL:sec:GA.Def.GP).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C33.S6.p4.s1">
+The series (LABEL:eq:CW.PRHO.RS1), (LABEL:eq:CW.PRHO.RS2), and(LABEL:eq:CW.PRHO.IS1) converge for all finite values of <Math mode="inline" xml:id="C33.S6.p4.m1">\rho</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C33.S6.p4.s2">
+Corresponding expansions for <Math mode="inline" xml:id="C33.S6.p4.m2">{H^{\pm}_{\ell}}'\left(\eta,\rho\right)</Math> can be obtained by combining (LABEL:eq:CW.PRHO.IS1) with (LABEL:eq:CW.RR.RR3) or (LABEL:eq:CW.RR.RR4).
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S7">
+<title>Integral Representations</title>         
+ 
+<para xml:id="C33.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C33.S7.p1.s1">
+ <Math equation-number="33.7.1" mode="display" xml:id="C33.S7.E1">F_{\ell}\left(\eta,\rho\right)=\frac{\rho^{\ell+1}2^{\ell}e^{\mathrm{i}\rho-( \pi\eta/2)}}{|\Gamma\left(\ell+1+\mathrm{i}\eta\right)|}\int_{0}^{1}e^{-2 \mathrm{i}\rho t}t^{\ell+\mathrm{i}\eta}(1-t)^{\ell-\mathrm{i}\eta}\mathrm{d}t,</Math> <Math equation-number="33.7.2" mode="display" xml:id="C33.S7.E2">{H^{-}_{\ell}}\left(\eta,\rho\right)=\frac{e^{-\mathrm{i}\rho}\rho^{-\ell}}{(2 \ell+1)!C_{\ell}\left(\eta\right)}\int_{0}^{\infty}e^{-t}t^{\ell-\mathrm{i} \eta}(t+2\mathrm{i}\rho)^{\ell+\mathrm{i}\eta}\mathrm{d}t,</Math> <Math equation-number="33.7.3" mode="display" xml:id="C33.S7.E3">{H^{-}_{\ell}}\left(\eta,\rho\right)=\frac{-\mathrm{i}e^{-\pi\eta}\rho^{\ell+1 }}{(2\ell+1)!C_{\ell}\left(\eta\right)}\int_{0}^{\infty}\left(\frac{\exp\left( -\mathrm{i}(\rho\tanh t-2\eta t)\right)}{(\cosh t)^{2\ell+2}}+\mathrm{i}(1+t^{ 2})^{\ell}\exp\left(-\rho t+2\eta\operatorname{arctan}t\right)\right)\mathrm{d }t,</Math> <Math equation-number="33.7.4" mode="display" xml:id="C33.S7.E4">{H^{+}_{\ell}}\left(\eta,\rho\right)=\frac{\mathrm{i}e^{-\pi\eta}\rho^{\ell+1} }{(2\ell+1)!C_{\ell}\left(\eta\right)}\int_{-1}^{-\mathrm{i}\infty}e^{-\mathrm {i}\rho t}(1-t)^{\ell-\mathrm{i}\eta}(1+t)^{\ell+\mathrm{i}\eta}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C33.S7.p2.s1">
+Noninteger powers in (LABEL:eq:CW.INT.INTF)–(LABEL:eq:CW.INT.INT3) and the arctangent assume their principal values (§§LABEL:sec:EF.FN.LOG,LABEL:sec:EF.EXP.POW, LABEL:sec:EF.INV.PV).
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S8">
+<title>Continued Fractions</title>        
+  
+<para xml:id="C33.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C33.S8.p1.s1">
+With arguments <Math mode="inline" xml:id="C33.S8.p1.m1">\eta,\rho</Math> suppressed, <Math equation-number="33.8.1" mode="display" xml:id="C33.S8.E1">\frac{F_{\ell}'}{F_{\ell}}=S_{\ell+1}-\cfrac{R_{\ell+1}^{2}}{T_{\ell+1}-\cfrac {R_{\ell+2}^{2}}{T_{\ell+2}-\cdots}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="62" xml:id="C33.S8.p1.s2">
+For <Math mode="inline" xml:id="C33.S8.p1.m2">R</Math> , <Math mode="inline" xml:id="C33.S8.p1.m3">S</Math> , and <Math mode="inline" xml:id="C33.S8.p1.m4">T</Math> see (LABEL:eq:CW.RR.RR1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="63" xml:id="C33.S8.p1.s3">
+<Math equation-number="33.8.2" mode="display" xml:id="C33.S8.E2">\frac{{H^{\pm}_{\ell}}'}{{H^{\pm}_{\ell}}}=c\pm\frac{\mathrm{i}}{\rho}\cfrac{ ab}{2(\rho-\eta\pm\mathrm{i})+\cfrac{(a+1)(b+1)}{2(\rho-\eta\pm 2\mathrm{i})+ \cdots}},</Math> where <Math equation-number="33.8.3" mode="display" xml:id="C33.S8.E3">a=1+\ell\pm\mathrm{i}\eta, b=-\ell\pm\mathrm{i}\eta, c=\pm\mathrm{i}(1-(\eta/\rho))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="64" xml:id="C33.S8.p1.s4">
+The continued fraction (LABEL:eq:CW.CF.CF1) converges for all finite values of <Math mode="inline" xml:id="C33.S8.p1.m5">\rho</Math> , and (LABEL:eq:CW.CF.CF2) converges for all <Math mode="inline" xml:id="C33.S8.p1.m6">\rho\neq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C33.S8.p2.s1">
+If we denote <Math mode="inline" xml:id="C33.S8.p2.m1">u=\ifrac{F_{\ell}'}{F_{\ell}}</Math> and <Math mode="inline" xml:id="C33.S8.p2.m2">p+\mathrm{i}q=\ifrac{{H^{+}_{\ell}}'}{{H^{+}_{\ell}}}</Math> , then <Math equation-number="33.8.4" mode="display" xml:id="C33.S8.E4">F_{\ell}=\pm(q^{-1}(u-p)^{2}+q)^{-1/2}, F_{\ell}'=uF_{\ell},</Math> <Math equation-number="33.8.5" mode="display" xml:id="C33.S8.E5">G_{\ell}=q^{-1}(u-p)F_{\ell}, G_{\ell}'=q^{-1}(up-p^{2}-q^{2})F_{\ell}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C33.S8.p2.s2">
+The ambiguous sign in (LABEL:eq:CW.CF.ALL1) has to agree with that of the final denominator in (LABEL:eq:CW.CF.CF1) when the continued fraction has converged to the required precision.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C33.S8.p2.s3">
+For proofs and further information see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S9">
+<title>Expansions in Series of Bessel Functions</title>         
+<subsection xml:id="C33.S9.SS1">
+<title>Spherical Bessel Functions</title>        
+ 
+ 
+<para xml:id="C33.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C33.S9.SS1.p1.s1">
+ <Math equation-number="33.9.1" mode="display" xml:id="C33.S9.E1">F_{\ell}\left(\eta,\rho\right)=\rho\sum_{k=0}^{\infty}a_{k}\mathsf{j}_{\ell+k} \left(\rho\right),</Math> where the function <Math mode="inline" xml:id="C33.S9.SS1.p1.m1">\mathsf{j}</Math> is as in §LABEL:sec:BS.DBP.SS, <Math mode="inline" xml:id="C33.S9.SS1.p1.m2">a_{-1}=0</Math> , <Math mode="inline" xml:id="C33.S9.SS1.p1.m3">a_{0}=(2\ell+1)!!C_{\ell}\left(\eta\right)</Math> , and <Math equation-number="33.9.2" mode="display" xml:id="C33.S9.E2">\frac{k(k+2\ell+1)}{2k+2\ell+1}a_{k}-2\eta a_{k-1}+\frac{(k-2)(k+2\ell-1)}{2k+ 2\ell-3}a_{k-2}=0, subject to k=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C33.S9.SS1.p1.s2">
+The series (LABEL:eq:CW.AB.SBF1) converges for all finite values of <Math mode="inline" xml:id="C33.S9.SS1.p1.m4">\eta</Math> and <Math mode="inline" xml:id="C33.S9.SS1.p1.m5">\rho</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S9.SS2">
+<title>Bessel Functions and Modified Bessel Functions</title>           
+<para xml:id="C33.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C33.S9.SS2.p1.s1">
+In this subsection the functions <Math mode="inline" xml:id="C33.S9.SS2.p1.m1">J</Math> , <Math mode="inline" xml:id="C33.S9.SS2.p1.m2">I</Math> , and <Math mode="inline" xml:id="C33.S9.SS2.p1.m3">K</Math> are as in §§LABEL:sec:BS.DEF.SS and LABEL:sec:BS.MDEF.SS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C33.S9.SS2.p2.s1">
+With <Math mode="inline" xml:id="C33.S9.SS2.p2.m1">t=2\left|\eta\right|\rho</Math> , <Math equation-number="33.9.3" mode="display" xml:id="C33.S9.E3">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\frac{(2\ell+1)!}{(2 \eta)^{2\ell+1}}\rho^{-\ell}\*\sum_{k=2\ell+1}^{\infty}b_{k}t^{k/2}I_{k}\left( \textstyle 2\sqrt{t}\right), subject to \eta&gt;0,</Math> <Math equation-number="33.9.4" mode="display" xml:id="C33.S9.E4">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\frac{(2\ell+1)!}{(2 \left|\eta\right|)^{2\ell+1}}\rho^{-\ell}\*\sum_{k=2\ell+1}^{\infty}\!\!b_{k}t ^{k/2}J_{k}\left(\textstyle 2\sqrt{t}\right), subject to \eta&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C33.S9.SS2.p2.s2">
+Here <Math mode="inline" xml:id="C33.S9.SS2.p2.m2">b_{2\ell}=b_{2\ell+2}=0</Math> , <Math mode="inline" xml:id="C33.S9.SS2.p2.m3">b_{2\ell+1}=1</Math> , and <Math equation-number="33.9.5" mode="display" xml:id="C33.S9.E5">{4\eta^{2}(k-2\ell)b_{k+1}+kb_{k-1}+b_{k-2}=0}, subject to k=2\ell+2,2\ell+3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="73" xml:id="C33.S9.SS2.p2.s3">
+The series (LABEL:eq:CW.AB.MBF1) and (LABEL:eq:CW.AB.MBF1a) converge for allfinite positive values of <Math mode="inline" xml:id="C33.S9.SS2.p2.m4">\left|\eta\right|</Math> and <Math mode="inline" xml:id="C33.S9.SS2.p2.m5">\rho</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C33.S9.SS2.p3.s1">
+Next, as <Math mode="inline" xml:id="C33.S9.SS2.p3.m1">\eta\to+\infty</Math> with <Math mode="inline" xml:id="C33.S9.SS2.p3.m2">\rho</Math> ( <Math mode="inline" xml:id="C33.S9.SS2.p3.m3">&gt;0</Math> ) fixed, <Math equation-number="33.9.6" mode="display" xml:id="C33.S9.E6">G_{\ell}\left(\eta,\rho\right)\sim\frac{\rho^{-\ell}}{(\ell+\frac{1}{2}) \lambda_{\ell}(\eta)C_{\ell}\left(\eta\right)}\*\sum_{k=2\ell+1}^{\infty}(-1)^ {k}b_{k}t^{k/2}K_{k}\left(\textstyle 2\sqrt{t}\right),</Math> where <Math equation-number="33.9.7" mode="display" xml:id="C33.S9.E7">\lambda_{\ell}(\eta)\sim\sum_{k=2\ell+1}^{\infty}(-1)^{k}(k-1)!b_{k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C33.S9.SS2.p4.s1">
+For other asymptotic expansions of <Math mode="inline" xml:id="C33.S9.SS2.p4.m1">G_{\ell}\left(\eta,\rho\right)</Math> see ( , §8) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S10">
+<title>Limiting Forms for Large <Math mode="inline" xml:id="C33.S10.m1">\rho</Math> or Large <Math content-tex="\abs{\eta}" mode="inline" xml:id="C33.S10.m2">\left|\eta\right|</Math></title>         
+<subsection xml:id="C33.S10.SS1">
+<title>Large <Math mode="inline" xml:id="C33.S10.SS1.m1">\rho</Math></title>          
+<para xml:id="C33.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C33.S10.SS1.p1.s1">
+As <Math mode="inline" xml:id="C33.S10.SS1.p1.m1">\rho\to\infty</Math> with <Math mode="inline" xml:id="C33.S10.SS1.p1.m2">\eta</Math> fixed, <Math equation-number="33.10.1" mode="display" xml:id="C33.S10.E1">F_{\ell}\left(\eta,\rho\right)=\sin\left({\theta_{\ell}}\left(\eta,\rho\right) \right)+o\left(1\right), G_{\ell}\left(\eta,\rho\right)=\cos\left({\theta_{\ell}}\left(\eta,\rho\right) \right)+o\left(1\right),</Math> <Math equation-number="33.10.2" mode="display" xml:id="C33.S10.E2">{H^{\pm}_{\ell}}\left(\eta,\rho\right)\sim\exp\left(\pm\mathrm{i}{\theta_{\ell }}\left(\eta,\rho\right)\right),</Math> where <Math mode="inline" xml:id="C33.S10.SS1.p1.m3">{\theta_{\ell}}\left(\eta,\rho\right)</Math> is defined by (LABEL:eq:CW.SOL.TH).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S10.SS2">
+<title>Large Positive <Math mode="inline" xml:id="C33.S10.SS2.m1">\eta</Math></title>          
+<para xml:id="C33.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C33.S10.SS2.p1.s1">
+As <Math mode="inline" xml:id="C33.S10.SS2.p1.m1">\eta\to\infty</Math> with <Math mode="inline" xml:id="C33.S10.SS2.p1.m2">\eta\rho</Math> fixed, <Math equation-number="33.10.3" mode="display" xml:id="C33.S10.E3">F_{\ell}\left(\eta,\rho\right)\sim\dfrac{(2\ell+1)!C_{\ell}\left(\eta\right)}{ (2\eta)^{\ell+1}}(2\eta\rho)^{\ifrac{1}{2}}I_{2\ell+1}\left((8\eta\rho)^{ \ifrac{1}{2}}\right), G_{\ell}\left(\eta,\rho\right)\sim\dfrac{2(2\eta)^{\ell}}{(2\ell+1)!C_{\ell} \left(\eta\right)}(2\eta\rho)^{\ifrac{1}{2}}K_{2\ell+1}\left((8\eta\rho)^{ \ifrac{1}{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="78" xml:id="C33.S10.SS2.p1.s2">
+In particular, for <Math mode="inline" xml:id="C33.S10.SS2.p1.m3">\ell=0</Math> , <Math equation-number="33.10.4" mode="display" xml:id="C33.S10.E4">F_{0}\left(\eta,\rho\right)\sim e^{-\pi\eta}(\pi\rho)^{\ifrac{1}{2}}I_{1}\left ((8\eta\rho)^{\ifrac{1}{2}}\right), G_{0}\left(\eta,\rho\right)\sim 2e^{\pi\eta}\left(\ifrac{\rho}{\pi}\right)^{ \ifrac{1}{2}}K_{1}\left((8\eta\rho)^{\ifrac{1}{2}}\right),</Math> <Math equation-number="33.10.5" mode="display" xml:id="C33.S10.E5">F_{0}'\left(\eta,\rho\right)\sim e^{-\pi\eta}(2\pi\eta)^{\ifrac{1}{2}}I_{0} \left((8\eta\rho)^{\ifrac{1}{2}}\right), G_{0}'\left(\eta,\rho\right)\sim-2e^{\pi\eta}\left(\ifrac{2\eta}{\pi}\right)^{ \ifrac{1}{2}}K_{0}\left((8\eta\rho)^{\ifrac{1}{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C33.S10.SS2.p2.s1">
+Also, <Math equation-number="33.10.6" mode="display" xml:id="C33.S10.E6">{\sigma_{0}}\left(\eta\right)=\eta(\ln\eta-1)+\tfrac{1}{4}\pi+o\left(1\right), C_{0}\left(\eta\right)\sim(2\pi\eta)^{1/2}e^{-\pi\eta}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S10.SS3">
+<title>Large Negative <Math mode="inline" xml:id="C33.S10.SS3.m1">\eta</Math></title>        
+  
+<para xml:id="C33.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C33.S10.SS3.p1.s1">
+As <Math mode="inline" xml:id="C33.S10.SS3.p1.m1">\eta\to-\infty</Math> with <Math mode="inline" xml:id="C33.S10.SS3.p1.m2">\eta\rho</Math> fixed, <Math equation-number="33.10.7" mode="display" xml:id="C33.S10.E7">F_{\ell}\left(\eta,\rho\right)=\dfrac{(2\ell+1)!C_{\ell}\left(\eta\right)}{(-2 \eta)^{\ell+1}}\left((-2\eta\rho)^{\ifrac{1}{2}}\*J_{2\ell+1}\left((-8\eta\rho )^{\ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{\ifrac{1}{4}}}\right)\right), G_{\ell}\left(\eta,\rho\right)=-\dfrac{\pi(-2\eta)^{\ell}}{(2\ell+1)!C_{\ell} \left(\eta\right)}\left((-2\eta\rho)^{\ifrac{1}{2}}\*Y_{2\ell+1}\left((-8\eta \rho)^{\ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{\ifrac{1}{4}}}\right) \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="81" xml:id="C33.S10.SS3.p1.s2">
+In particular, for <Math mode="inline" xml:id="C33.S10.SS3.p1.m3">\ell=0</Math> , <Math equation-number="33.10.8" mode="display" xml:id="C33.S10.E8">F_{0}\left(\eta,\rho\right)=(\pi\rho)^{\ifrac{1}{2}}J_{1}\left((-8\eta\rho)^{ \ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{-\ifrac{1}{4}}}\right), G_{0}\left(\eta,\rho\right)=-(\pi\rho)^{\ifrac{1}{2}}Y_{1}\left((-8\eta\rho)^{ \ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{-\ifrac{1}{4}}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="82" xml:id="C33.S10.SS3.p1.s3">
+<Math equation-number="33.10.9" mode="display" xml:id="C33.S10.E9">F_{0}'\left(\eta,\rho\right)=(-2\pi\eta)^{\ifrac{1}{2}}J_{0}\left((-8\eta\rho) ^{\ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{\ifrac{1}{4}}}\right), G_{0}'\left(\eta,\rho\right)=-(-2\pi\eta)^{\ifrac{1}{2}}Y_{0}\left((-8\eta\rho )^{\ifrac{1}{2}}\right)+o\left({\left|\eta\right|^{\ifrac{1}{4}}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C33.S10.SS3.p2.s1">
+Also, <Math equation-number="33.10.10" mode="display" xml:id="C33.S10.E10">{\sigma_{0}}\left(\eta\right)=\eta(\ln\left(-\eta\right)-1)-\tfrac{1}{4}\pi+o \left(1\right), C_{0}\left(\eta\right)\sim(-2\pi\eta)^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S11">
+<title>Asymptotic Expansions for Large <Math mode="inline" xml:id="C33.S11.m1">\rho</Math></title>        
+   
+<para xml:id="C33.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C33.S11.p1.s1">
+For large <Math mode="inline" xml:id="C33.S11.p1.m1">\rho</Math> , with <Math mode="inline" xml:id="C33.S11.p1.m2">\ell</Math> and <Math mode="inline" xml:id="C33.S11.p1.m3">\eta</Math> fixed, <Math equation-number="33.11.1" mode="display" xml:id="C33.S11.E1">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=e^{\pm\mathrm{i}{\theta_{\ell}}\left( \eta,\rho\right)}\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k}}{\left(b\right)_ {k}}}{k!(\pm 2\mathrm{i}\rho)^{k}},</Math> where <Math mode="inline" xml:id="C33.S11.p1.m4">{\theta_{\ell}}\left(\eta,\rho\right)</Math> is defined by (LABEL:eq:CW.SOL.TH), and <Math mode="inline" xml:id="C33.S11.p1.m5">a</Math> and <Math mode="inline" xml:id="C33.S11.p1.m6">b</Math> are defined by (LABEL:eq:CW.CF.CF2C).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C33.S11.p2.s1">
+With arguments <Math mode="inline" xml:id="C33.S11.p2.m1">(\eta,\rho)</Math> suppressed, an equivalent formulation is given by <Math equation-number="33.11.2" mode="display" xml:id="C33.S11.E2">F_{\ell}=g\cos{\theta_{\ell}}+f\sin{\theta_{\ell}}, G_{\ell}=f\cos{\theta_{\ell}}-g\sin{\theta_{\ell}},</Math> <Math equation-number="33.11.3" mode="display" xml:id="C33.S11.E3">F_{\ell}'=\widehat{g}\cos{\theta_{\ell}}+\widehat{f}\sin{\theta_{\ell}}, G_{\ell}'=\widehat{f}\cos{\theta_{\ell}}-\widehat{g}\sin{\theta_{\ell}},</Math> <Math equation-number="33.11.4" mode="display" xml:id="C33.S11.E4">{H^{\pm}_{\ell}}=e^{\pm\mathrm{i}{\theta_{\ell}}}(f\pm\mathrm{i}g),</Math> where <Math equation-number="33.11.5" mode="display" xml:id="C33.S11.E5">f\sim\sum_{k=0}^{\infty}f_{k}, g\sim\sum_{k=0}^{\infty}g_{k},</Math> <Math equation-number="33.11.6" mode="display" xml:id="C33.S11.E6">\widehat{f}\sim\sum_{k=0}^{\infty}\widehat{f}_{k}, \widehat{g}\sim\sum_{k=0}^{\infty}\widehat{g}_{k},</Math> <Math equation-number="33.11.7" mode="display" xml:id="C33.S11.E7">g\widehat{f}-f\widehat{g}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="86" xml:id="C33.S11.p2.s2">
+Here <Math mode="inline" xml:id="C33.S11.p2.m2">f_{0}=1</Math> , <Math mode="inline" xml:id="C33.S11.p2.m3">g_{0}=0</Math> , <Math mode="inline" xml:id="C33.S11.p2.m4">\widehat{f}_{0}=0</Math> , <Math mode="inline" xml:id="C33.S11.p2.m5">\widehat{g}_{0}=1-(\eta/\rho)</Math> , and for <Math mode="inline" xml:id="C33.S11.p2.m6">k=0,1,2,\dots</Math> , <Math equation-number="33.11.8" mode="display" xml:id="C33.S11.E8">f_{k+1}=\lambda_{k}f_{k}-\mu_{k}g_{k}, g_{k+1}=\lambda_{k}g_{k}+\mu_{k}f_{k}, \widehat{f}_{k+1}=\lambda_{k}\widehat{f}_{k}-\mu_{k}\widehat{g}_{k}-(f_{k+1}/ \rho), \widehat{g}_{k+1}=\lambda_{k}\widehat{g}_{k}+\mu_{k}\widehat{f}_{k}-(g_{k+1}/ \rho),</Math> where <Math equation-number="33.11.9" mode="display" xml:id="C33.S11.E9">\lambda_{k}=\frac{(2k+1)\eta}{(2k+2)\rho}, \mu_{k}=\frac{\ell(\ell+1)-k(k+1)+\eta^{2}}{(2k+2)\rho}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S12">
+<title>Asymptotic Expansions for Large <Math mode="inline" xml:id="C33.S12.m1">\eta</Math></title>        
+  
+<subsection xml:id="C33.S12.SS1">
+<title>Transition Region</title>          
+<para xml:id="C33.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C33.S12.SS1.p1.s1">
+When <Math mode="inline" xml:id="C33.S12.SS1.p1.m1">\ell=0</Math> and <Math mode="inline" xml:id="C33.S12.SS1.p1.m2">\eta&gt;0</Math> , the outer turning point is given by <Math mode="inline" xml:id="C33.S12.SS1.p1.m3">\rho_{\mathrm{tp}}\left(\eta,0\right)=2\eta</Math> ; compare (LABEL:eq:CW.EQ.TP).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C33.S12.SS1.p1.s2">
+Define <Math equation-number="33.12.1" mode="display" xml:id="C33.S12.E1">x=(2\eta-\rho)/(2\eta)^{1/3}, \mu=(2\eta)^{2/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="89" xml:id="C33.S12.SS1.p1.s3">
+Then as <Math mode="inline" xml:id="C33.S12.SS1.p1.m4">\eta\to\infty</Math> ,
+</sentence>
+
+</para>
+ 
+  
+<para xml:id="C33.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C33.S12.SS1.p2.s1">
+ <Math equation-number="33.12.2" mode="display" xml:id="C33.S12.E2">{F_{0}\left(\eta,\rho\right)\atop G_{0}\left(\eta,\rho\right)}\sim\pi^{1/2}(2 \eta)^{1/6}\left\{{\mathrm{Ai}\left(x\right)\atop\mathrm{Bi}\left(x\right)} \left(1+\frac{B_{1}}{\mu}+\frac{B_{2}}{\mu^{2}}+\cdots\right)+{\mathrm{Ai}' \left(x\right)\atop\mathrm{Bi}'\left(x\right)}\left(\frac{A_{1}}{\mu}+\frac{A_ {2}}{\mu^{2}}+\cdots\right)\right\},</Math> <Math equation-number="33.12.3" mode="display" xml:id="C33.S12.E3">{F_{0}'\left(\eta,\rho\right)\atop G_{0}'\left(\eta,\rho\right)}\sim-\pi^{1/2} (2\eta)^{-1/6}\left\{{\mathrm{Ai}\left(x\right)\atop\mathrm{Bi}\left(x\right)} \left(\frac{B_{1}^{\prime}+xA_{1}}{\mu}+\frac{B_{2}^{\prime}+xA_{2}}{\mu^{2}}+ \cdots\right)+{\mathrm{Ai}'\left(x\right)\atop\mathrm{Bi}'\left(x\right)}\left (\frac{B_{1}+A_{1}^{\prime}}{\mu}+\frac{B_{2}+A_{2}^{\prime}}{\mu^{2}}+\cdots \right)\right\},</Math> uniformly for bounded values of <Math mode="inline" xml:id="C33.S12.SS1.p2.m1">\left|(\rho-2\eta)/\eta^{1/3}\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C33.S12.SS1.p2.s2">
+Here <Math mode="inline" xml:id="C33.S12.SS1.p2.m2">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C33.S12.SS1.p2.m3">\mathrm{Bi}</Math> are the Airy functions (§LABEL:sec:AI.DE), and <Math equation-number="33.12.4" mode="display" xml:id="C33.S12.E4">A_{1}=\tfrac{1}{5}x^{2}, A_{2}=\tfrac{1}{35}(2x^{3}+6), A_{3}=\tfrac{1}{15750}(21x^{7}+370x^{4}+580x),</Math> <Math equation-number="33.12.5" mode="display" xml:id="C33.S12.E5">B_{1}=-\tfrac{1}{5}x, B_{2}=\tfrac{1}{350}(7x^{5}-30x^{2}), B_{3}=\tfrac{1}{15750}(264x^{6}-290x^{3}-560)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C33.S12.SS1.p3.s1">
+In particular, <Math equation-number="33.12.6" mode="display" xml:id="C33.S12.E6">{F_{0}\left(\eta,2\eta\right)\atop{3^{-\ifrac{1}{2}}G_{0}\left(\eta,2\eta \right)}}\sim\frac{\Gamma\left(\frac{1}{3}\right)\omega^{1/2}}{2\sqrt{\pi}} \left(1\mp\frac{2}{35}\frac{\Gamma\left(\frac{2}{3}\right)}{\Gamma\left(\frac{ 1}{3}\right)}\frac{1}{\omega^{4}}-\frac{8}{2025}\frac{1}{\omega^{6}}\mp\frac{5 792}{46\,06875}\frac{\Gamma\left(\frac{2}{3}\right)}{\Gamma\left(\frac{1}{3} \right)}\frac{1}{\omega^{10}}-\cdots\right),</Math> <Math equation-number="33.12.7" mode="display" xml:id="C33.S12.E7">{F_{0}'\left(\eta,2\eta\right)\atop{3^{-\ifrac{1}{2}}G_{0}'\left(\eta,2\eta \right)}}\sim\frac{\Gamma\left(\frac{2}{3}\right)}{2\sqrt{\pi}\omega^{1/2}} \left(\pm 1+\frac{1}{15}\frac{\Gamma\left(\frac{1}{3}\right)}{\Gamma\left( \frac{2}{3}\right)}\frac{1}{\omega^{2}}\pm\frac{2}{14175}\frac{1}{\omega^{6}}+ \frac{1436}{23\,38875}\frac{\Gamma\left(\frac{1}{3}\right)}{\Gamma\left(\frac{ 2}{3}\right)}\frac{1}{\omega^{8}}\pm\cdots\right),</Math> where <Math mode="inline" xml:id="C33.S12.SS1.p3.m1">\omega=(\tfrac{2}{3}\eta)^{1/3}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C33.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C33.S12.SS1.p4.s1">
+For derivations and additional terms in the expansions in this subsection see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C33.S12.SS1.p4.s2">
+For asymptotic expansions of <Math mode="inline" xml:id="C33.S12.SS1.p4.m1">F_{\ell}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S12.SS1.p4.m2">G_{\ell}\left(\eta,\rho\right)</Math> when <Math mode="inline" xml:id="C33.S12.SS1.p4.m3">\eta\to\pm\infty</Math> see ( , Chapter 31) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S12.SS2">
+<title>Uniform Expansions</title>          
+<para xml:id="C33.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C33.S12.SS2.p1.s1">
+With the substitution <Math mode="inline" xml:id="C33.S12.SS2.p1.m1">\rho=2\eta z</Math> , Equation (LABEL:eq:CW.EQ.EQ) becomes <Math equation-number="33.12.8" mode="display" xml:id="C33.S12.E8">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\left(4\eta^{2}\left(\frac{1-z}{z} \right)+\frac{\ell(\ell+1)}{z^{2}}\right)w</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C33.S12.SS2.p1.s2">
+Then, by application of the results given in §§LABEL:sec:AS.DEWP.CII andLABEL:sec:AS.DEWP.CIII, two sets of asymptotic expansions can be constructed for <Math mode="inline" xml:id="C33.S12.SS2.p1.m2">F_{\ell}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S12.SS2.p1.m3">G_{\ell}\left(\eta,\rho\right)</Math> when <Math mode="inline" xml:id="C33.S12.SS2.p1.m4">\eta\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="97" xml:id="C33.S12.SS2.p1.s3">
+See ( , §31.7) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C33.S12.SS2.p2.s1">
+The first set is in terms of Airy functions and the expansions are uniform for fixed <Math mode="inline" xml:id="C33.S12.SS2.p2.m1">\ell</Math> and <Math mode="inline" xml:id="C33.S12.SS2.p2.m2">\delta\leq z&lt;\infty</Math> , where <Math mode="inline" xml:id="C33.S12.SS2.p2.m3">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C33.S12.SS2.p2.s2">
+They would include the results of §LABEL:sec:CW.AE.TP as a special case.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C33.S12.SS2.p3.s1">
+The second set is in terms of Bessel functions of orders <Math mode="inline" xml:id="C33.S12.SS2.p3.m1">2\ell+1</Math> and <Math mode="inline" xml:id="C33.S12.SS2.p3.m2">2\ell+2</Math> , and they are uniform for fixed <Math mode="inline" xml:id="C33.S12.SS2.p3.m3">\ell</Math> and <Math mode="inline" xml:id="C33.S12.SS2.p3.m4">0\leq z\leq 1-\delta</Math> , where <Math mode="inline" xml:id="C33.S12.SS2.p3.m5">\delta</Math> again denotes an arbitrary small positive constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S12.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C33.S12.SS2.p4.s1">
+Compare also §LABEL:sec:CW.AErep.UAE.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S13">
+<title>Complex Variable and Parameters</title>          
+<para xml:id="C33.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C33.S13.p1.s1">
+The functions <Math mode="inline" xml:id="C33.S13.p1.m1">F_{\ell}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S13.p1.m2">G_{\ell}\left(\eta,\rho\right)</Math> , and <Math mode="inline" xml:id="C33.S13.p1.m3">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> may be extended to noninteger values of <Math mode="inline" xml:id="C33.S13.p1.m4">\ell</Math> by generalizing <Math mode="inline" xml:id="C33.S13.p1.m5">(2\ell+1)!=\Gamma\left(2\ell+2\right</Math> ), and supplementing (LABEL:eq:CW.PRHO.IS1) by a formula derived from (LABEL:eq:CW.SOL.IR2) with <Math mode="inline" xml:id="C33.S13.p1.m6">U\left(a,b,z\right)</Math> expanded via (LABEL:eq:CH.MU.DF.C2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C33.S13.p2.s1">
+These functions may also be continued analytically to complex values of <Math mode="inline" xml:id="C33.S13.p2.m1">\rho</Math> , <Math mode="inline" xml:id="C33.S13.p2.m2">\eta</Math> , and <Math mode="inline" xml:id="C33.S13.p2.m3">\ell</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C33.S13.p2.s2">
+The quantities <Math mode="inline" xml:id="C33.S13.p2.m4">C_{\ell}\left(\eta\right)</Math> , <Math mode="inline" xml:id="C33.S13.p2.m5">{\sigma_{\ell}}\left(\eta\right)</Math> , and <Math mode="inline" xml:id="C33.S13.p2.m6">R_{\ell}</Math> , given by (LABEL:eq:CW.SOL.CA), (LABEL:eq:CW.SOL.SG2), and (LABEL:eq:CW.RR.RR1), respectively, must be defined consistently so that <Math equation-number="33.13.1" mode="display" xml:id="C33.S13.E1">C_{\ell}\left(\eta\right)=2^{\ell}e^{\mathrm{i}{\sigma_{\ell}}\left(\eta\right )-(\pi\eta/2)}\Gamma\left(\ell+1-\mathrm{i}\eta\right)/\Gamma\left(2\ell+2 \right),</Math> and <Math equation-number="33.13.2" mode="display" xml:id="C33.S13.E2">R_{\ell}=(2\ell+1)C_{\ell}\left(\eta\right)/C_{\ell-1}\left(\eta\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C33.S13.p3.s1">
+For further information see ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+            
+<section xml:id="C33.S14">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C33.S14.SS1">
+<title>Coulomb Wave Equation</title>              
+<para xml:id="C33.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C33.S14.SS1.p1.s1">
+Another parametrization of (LABEL:eq:CW.EQ.EQ) is given by <Math equation-number="33.14.1" mode="display" xml:id="C33.S14.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}r}^{2}}+\left(\epsilon+\frac{2}{r}-\frac{ \ell(\ell+1)}{r^{2}}\right)w=0,</Math> where <Math equation-number="33.14.2" mode="display" xml:id="C33.S14.E2">r=-\eta\rho, \epsilon=1/\eta^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C33.S14.SS1.p2.s1">
+Again, there is a regular singularity at <Math mode="inline" xml:id="C33.S14.SS1.p2.m1">r=0</Math> with indices <Math mode="inline" xml:id="C33.S14.SS1.p2.m2">\ell+1</Math> and <Math mode="inline" xml:id="C33.S14.SS1.p2.m3">-\ell</Math> , and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C33.S14.SS1.p2.m4">r=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C33.S14.SS1.p2.s2">
+When <Math mode="inline" xml:id="C33.S14.SS1.p2.m5">\epsilon&gt;0</Math> the outer turning point is given by <Math equation-number="33.14.3" mode="display" xml:id="C33.S14.E3">r_{\mathrm{tp}}\left(\epsilon,\ell\right)=\left(\sqrt{1+\epsilon\ell(\ell+1)}- 1\right)\Bigm{/}\epsilon;</Math> compare (LABEL:eq:CW.EQ.TP).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS2">
+<title>Regular Solution <Math content-tex="\regCoulombf@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S14.SS2.m1">f\left(\epsilon,\ell;r\right)</Math></title>           
+    
+<para xml:id="C33.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C33.S14.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C33.S14.SS2.p1.m1">f\left(\epsilon,\ell;r\right)</Math> is recessive (§LABEL:sec:AS.DE.LGA) at <Math mode="inline" xml:id="C33.S14.SS2.p1.m2">r=0</Math> , and is defined by <Math equation-number="33.14.4" mode="display" xml:id="C33.S14.E4">f\left(\epsilon,\ell;r\right)=\kappa^{\ell+1}M_{\kappa,\ell+\frac{1}{2}}\left( 2r/\kappa\right)/(2\ell+1)!,</Math> or equivalently <Math equation-number="33.14.5" mode="display" xml:id="C33.S14.E5">f\left(\epsilon,\ell;r\right)=(2r)^{\ell+1}e^{-r/\kappa}M\left(\ell+1-\kappa,2 \ell+2,2r/\kappa\right)/{(2\ell+1)!}</Math> , where <Math mode="inline" xml:id="C33.S14.SS2.p1.m3">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS2.p1.m4">M\left(a,b,z\right)</Math> are defined in§§LABEL:sec:CH.KM.DE.WH and LABEL:sec:CH.MU.DE.KU, and <Math equation-number="33.14.6" mode="display" xml:id="C33.S14.E6">\kappa=\begin{cases}(-\epsilon)^{-1/2},&amp;\epsilon&lt;0,r&gt;0,\\ -(-\epsilon)^{-1/2},&amp;\epsilon&lt;0,r&lt;0,\\ \pm\mathrm{i}\epsilon^{-1/2},&amp;\epsilon&gt;0.\end{cases</Math> } The choice of sign in the last line of (LABEL:eq:CW.SOLrep.KAP) is immaterial: the same function <Math mode="inline" xml:id="C33.S14.SS2.p1.m5">f\left(\epsilon,\ell;r\right)</Math> is obtained. This is a consequence of Kummer’s transformation (§LABEL:sec:CH.MU.DF.CO).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C33.S14.SS2.p2.s1">
+ <Math mode="inline" xml:id="C33.S14.SS2.p2.m1">f\left(\epsilon,\ell;r\right)</Math> is real and an analytic function of <Math mode="inline" xml:id="C33.S14.SS2.p2.m2">r</Math> in the interval <Math mode="inline" xml:id="C33.S14.SS2.p2.m3">-\infty&lt;r&lt;\infty</Math> , and it is also an analytic function of <Math mode="inline" xml:id="C33.S14.SS2.p2.m4">\epsilon</Math> when <Math mode="inline" xml:id="C33.S14.SS2.p2.m5">-\infty&lt;\epsilon&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="111" xml:id="C33.S14.SS2.p2.s2">
+This includes <Math mode="inline" xml:id="C33.S14.SS2.p2.m6">\epsilon=0</Math> , hence <Math mode="inline" xml:id="C33.S14.SS2.p2.m7">f\left(\epsilon,\ell;r\right)</Math> can be expanded in a convergent power series in <Math mode="inline" xml:id="C33.S14.SS2.p2.m8">\epsilon</Math> in a neighborhood of <Math mode="inline" xml:id="C33.S14.SS2.p2.m9">\epsilon=0</Math> (§LABEL:sec:CW.AErep.RS).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS3">
+<title>Irregular Solution <Math content-tex="\irregCoulombh@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S14.SS3.m1">h\left(\epsilon,\ell;r\right)</Math></title>        
+      
+<para xml:id="C33.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C33.S14.SS3.p1.s1">
+For nonzero values of <Math mode="inline" xml:id="C33.S14.SS3.p1.m1">\epsilon</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p1.m2">r</Math> the function <Math mode="inline" xml:id="C33.S14.SS3.p1.m3">h\left(\epsilon,\ell;r\right)</Math> is defined by <Math equation-number="33.14.7" mode="display" xml:id="C33.S14.E7">h\left(\epsilon,\ell;r\right)=\frac{\Gamma\left(\ell+1-\kappa\right)}{\pi \kappa^{\ell}}\left(W_{\kappa,\ell+\frac{1}{2}}\left(2r/\kappa\right)+(-1)^{ \ell}S(\epsilon,r)\frac{\Gamma\left(\ell+1+\kappa\right)}{2(2\ell+1)!}M_{ \kappa,\ell+\frac{1}{2}}\left(2r/\kappa\right)\right),</Math> where <Math mode="inline" xml:id="C33.S14.SS3.p1.m4">\kappa</Math> is given by (LABEL:eq:CW.SOLrep.KAP) and <Math equation-number="33.14.8" mode="display" xml:id="C33.S14.E8">S(\epsilon,r)=\begin{cases}2\cos\left(\pi|\epsilon|^{-1/2}\right),&amp;\epsilon&lt;0, r&gt;0,\\ 0,&amp;\epsilon&lt;0,r&lt;0,\\ e^{\pi\epsilon^{-1/2}},&amp;\epsilon&gt;0,r&gt;0,\\ e^{-\pi\epsilon^{-1/2}},&amp;\epsilon&gt;0,r&lt;0.\end{cases</Math> } (Again, the choice of the ambiguous sign in the last line of (LABEL:eq:CW.SOLrep.KAP) is immaterial.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C33.S14.SS3.p2.s1">
+ <Math mode="inline" xml:id="C33.S14.SS3.p2.m1">h\left(\epsilon,\ell;r\right)</Math> is real and an analytic function of each of <Math mode="inline" xml:id="C33.S14.SS3.p2.m2">r</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p2.m3">\epsilon</Math> in the intervals <Math mode="inline" xml:id="C33.S14.SS3.p2.m4">-\infty&lt;r&lt;\infty</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p2.m5">-\infty&lt;\epsilon&lt;\infty</Math> , except when <Math mode="inline" xml:id="C33.S14.SS3.p2.m6">r=0</Math> or <Math mode="inline" xml:id="C33.S14.SS3.p2.m7">\epsilon=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS4">
+<title>Solutions <Math content-tex="\regCoulombs@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S14.SS4.m1">s\left(\epsilon,\ell;r\right)</Math> and <Math content-tex="\irregCoulombc@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S14.SS4.m2">c\left(\epsilon,\ell;r\right)</Math></title>           
+<para xml:id="C33.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C33.S14.SS4.p1.s1">
+The functions <Math mode="inline" xml:id="C33.S14.SS4.p1.m1">s\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p1.m2">c\left(\epsilon,\ell;r\right)</Math> are defined by <Math equation-number="33.14.9" mode="display" xml:id="C33.S14.E9">s\left(\epsilon,\ell;r\right)=(B(\epsilon,\ell)/2)^{1/2}f\left(\epsilon,\ell;r \right), c\left(\epsilon,\ell;r\right)=(2B(\epsilon,\ell))^{-1/2}h\left(\epsilon,\ell;r \right),</Math> provided that <Math mode="inline" xml:id="C33.S14.SS4.p1.m3">\ell&lt;(-\epsilon)^{-1/2}</Math> when <Math mode="inline" xml:id="C33.S14.SS4.p1.m4">\epsilon&lt;0</Math> , where <Math equation-number="33.14.10" mode="display" xml:id="C33.S14.E10">B(\epsilon,\ell)=\begin{cases}A(\epsilon,\ell)\left(1-\exp\left(-2\pi/\epsilon ^{1/2}\right)\right)^{-1},&amp;\epsilon&gt;0,\\ A(\epsilon,\ell),&amp;\epsilon\leq 0,\end{cases}</Math> and <Math equation-number="33.14.11" mode="display" xml:id="C33.S14.E11">A(\epsilon,\ell)=\prod_{k=0}^{\ell}(1+\epsilon k^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="115" xml:id="C33.S14.SS4.p1.s2">
+An alternative formula for <Math mode="inline" xml:id="C33.S14.SS4.p1.m5">A(\epsilon,\ell)</Math> is <Math equation-number="33.14.12" mode="display" xml:id="C33.S14.E12">A(\epsilon,\ell)=\frac{\Gamma\left(1+\ell+\kappa\right)}{\Gamma\left(\kappa- \ell\right)}\kappa^{-2\ell-1},</Math> the choice of sign in the last line of (LABEL:eq:CW.SOLrep.KAP) again being immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C33.S14.SS4.p2.s1">
+When <Math mode="inline" xml:id="C33.S14.SS4.p2.m1">\epsilon&lt;0</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p2.m2">\ell&gt;(-\epsilon)^{-1/2}</Math> the quantity <Math mode="inline" xml:id="C33.S14.SS4.p2.m3">A(\epsilon,\ell)</Math> may be negative, causing <Math mode="inline" xml:id="C33.S14.SS4.p2.m4">s\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p2.m5">c\left(\epsilon,\ell;r\right)</Math> to become imaginary.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C33.S14.SS4.p3.s1">
+The function <Math mode="inline" xml:id="C33.S14.SS4.p3.m1">s\left(\epsilon,\ell;r\right)</Math> has the following properties: <Math equation-number="33.14.13" mode="display" xml:id="C33.S14.E13">\int_{0}^{\infty}s\left(\epsilon_{1},\ell;r\right)s\left(\epsilon_{2},\ell;r \right)\mathrm{d}r=\delta\left(\epsilon_{1}-\epsilon_{2}\right),</Math> where the right-hand side is the Dirac delta (§LABEL:sec:AL.RDF).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="118" xml:id="C33.S14.SS4.p3.s2">
+When <Math mode="inline" xml:id="C33.S14.SS4.p3.m3">\epsilon=-1/n^{2}</Math> , <Math mode="inline" xml:id="C33.S14.SS4.p3.m4">n=\ell+1,\ell+2,\dots</Math> , <Math mode="inline" xml:id="C33.S14.SS4.p3.m5">s\left(\epsilon,\ell;r\right)</Math> is <Math mode="inline" xml:id="C33.S14.SS4.p3.m6">\exp\left(-r/n\right)</Math> times a polynomial in <Math mode="inline" xml:id="C33.S14.SS4.p3.m7">r</Math> , and <Math equation-number="33.14.14" mode="display" xml:id="C33.S14.E14">\phi_{n,\ell}(r)=(-1)^{\ell+1+n}(2/n^{3})^{1/2}s\left(-1/n^{2},\ell;r\right)</Math> satisfies <Math equation-number="33.14.15" mode="display" xml:id="C33.S14.E15">\int_{0}^{\infty}\phi_{n,\ell}^{2}(r)\mathrm{d}r=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS5">
+<title>Wronskians</title>          
+<para xml:id="C33.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C33.S14.SS5.p1.s1">
+With arguments <Math mode="inline" xml:id="C33.S14.SS5.p1.m1">\epsilon,\ell,r</Math> suppressed, <Math equation-number="33.14.16" mode="display" xml:id="C33.S14.E16">\mathscr{W}\left\{h,f\right\}=2/\pi, \mathscr{W}\left\{c,s\right\}=1/\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S15">
+<title>Graphics</title>          
+<subsection xml:id="C33.S15.SS1">
+<title>Line Graphs of the Coulomb Functions <Math content-tex="\regCoulombf@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS1.m1">f\left(\epsilon,\ell;r\right)</Math> and <Math content-tex="\irregCoulombh@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS1.m2">h\left(\epsilon,\ell;r\right)</Math></title>                  
+<sentence sentence-num-in-section="120" xml:id="C33.S15.F1.s1">
+Figure 33.15.1: <Math mode="inline" xml:id="C33.S15.F1.m3">f\left(\epsilon,\ell;r\right),h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F1.m4">\ell=0,\epsilon=4</Math> .
+</sentence> 
+            
+<sentence sentence-num-in-section="121" xml:id="C33.S15.F2.s1">
+Figure 33.15.2: <Math mode="inline" xml:id="C33.S15.F2.m3">f\left(\epsilon,\ell;r\right),h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F2.m4">\ell=1,\epsilon=4</Math> .
+</sentence>           
+<sentence sentence-num-in-section="122" xml:id="C33.S15.F3.s1">
+Figure 33.15.3: <Math mode="inline" xml:id="C33.S15.F3.m3">f\left(\epsilon,\ell;r\right),h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F3.m4">\ell=0,\epsilon=-1/\nu^{2},\nu=1.5</Math> .
+</sentence>          
+   
+<sentence sentence-num-in-section="123" xml:id="C33.S15.F4.s1">
+Figure 33.15.4: <Math mode="inline" xml:id="C33.S15.F4.m3">f\left(\epsilon,\ell;r\right),h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F4.m4">\ell=0,\epsilon=-1/\nu^{2},\nu=2</Math> .
+</sentence>           
+<sentence sentence-num-in-section="124" xml:id="C33.S15.F5.s1">
+Figure 33.15.5: <Math mode="inline" xml:id="C33.S15.F5.m3">f\left(\epsilon,\ell;r\right),h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F5.m4">\ell=0,\epsilon=-1/\nu^{2},\nu=2.5</Math> .
+</sentence>  
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S15.SS2">
+<title>Surfaces of the Coulomb Functions <Math content-tex="\regCoulombf@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS2.m1">f\left(\epsilon,\ell;r\right)</Math>, <Math content-tex="\irregCoulombh@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS2.m2">h\left(\epsilon,\ell;r\right)</Math>, <Math content-tex="\regCoulombs@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS2.m3">s\left(\epsilon,\ell;r\right)</Math>, and <Math content-tex="\irregCoulombc@{\epsilon}{\ell}{r}" mode="inline" xml:id="C33.S15.SS2.m4">c\left(\epsilon,\ell;r\right)</Math></title>        
+           
+<sentence sentence-num-in-section="125" xml:id="C33.S15.F6.s1">
+Figure 33.15.6: <Math mode="inline" xml:id="C33.S15.F6.m3">f\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F6.m4">\ell=0,-2&amp;lt;\epsilon&amp;lt;2,-15&amp;lt;r&amp;lt;15</Math> .
+</sentence>           
+<sentence sentence-num-in-section="126" xml:id="C33.S15.F7.s1">
+Figure 33.15.7: <Math mode="inline" xml:id="C33.S15.F7.m3">h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F7.m4">\ell=0,-2&amp;lt;\epsilon&amp;lt;2,-15&amp;lt;r&amp;lt;15</Math> .
+</sentence>           
+  
+<sentence sentence-num-in-section="127" xml:id="C33.S15.F8.s1">
+Figure 33.15.8: <Math mode="inline" xml:id="C33.S15.F8.m3">f\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F8.m4">\ell=1,-2&amp;lt;\epsilon&amp;lt;2,-15&amp;lt;r&amp;lt;15</Math> .
+</sentence>        
+   
+<sentence sentence-num-in-section="128" xml:id="C33.S15.F9.s1">
+Figure 33.15.9: <Math mode="inline" xml:id="C33.S15.F9.m3">h\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F9.m4">\ell=1,-2&amp;lt;\epsilon&amp;lt;2,-15&amp;lt;r&amp;lt;15</Math> .
+</sentence>              
+<sentence sentence-num-in-section="129" xml:id="C33.S15.F10.s1">
+Figure 33.15.10: <Math mode="inline" xml:id="C33.S15.F10.m3">s\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F10.m4">\ell=0,-0.15&amp;lt;\epsilon&amp;lt;0.10,0&amp;lt;r&amp;lt;6</Math>5 .
+</sentence>        
+   
+<sentence sentence-num-in-section="130" xml:id="C33.S15.F11.s1">
+Figure 33.15.11: <Math mode="inline" xml:id="C33.S15.F11.m3">c\left(\epsilon,\ell;r\right)</Math> with <Math mode="inline" xml:id="C33.S15.F11.m4">\ell=0,-0.15&amp;lt;\epsilon&amp;lt;0.10,0&amp;lt;r&amp;lt;6</Math>5 .
+</sentence>  
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S16">
+<title>Connection Formulas</title>        
+ 
+<subsection xml:id="C33.S16.SS1">
+<title><Math content-tex="\regCoulombF{\ell}" mode="inline" xml:id="C33.S16.SS1.m1">F_{\ell}</Math> and <Math content-tex="\irregCoulombG{\ell}" mode="inline" xml:id="C33.S16.SS1.m2">G_{\ell}</Math> in Terms of <Math content-tex="\regCoulombf" mode="inline" xml:id="C33.S16.SS1.m3">f</Math> and <Math content-tex="\irregCoulombh" mode="inline" xml:id="C33.S16.SS1.m4">h</Math></title>          
+<para xml:id="C33.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C33.S16.SS1.p1.s1">
+ <Math equation-number="33.16.1" mode="display" xml:id="C33.S16.E1">F_{\ell}\left(\eta,\rho\right)=\dfrac{(2\ell+1)!C_{\ell}\left(\eta\right)}{(-2 \eta)^{\ell+1}}f\left(1/\eta^{2},\ell;-\eta\rho\right),</Math> <Math equation-number="33.16.2" mode="display" xml:id="C33.S16.E2">G_{\ell}\left(\eta,\rho\right)=\dfrac{\pi(-2\eta)^{\ell}}{(2\ell+1)!C_{\ell} \left(\eta\right)}h\left(1/\eta^{2},\ell;-\eta\rho\right),</Math> where <Math mode="inline" xml:id="C33.S16.SS1.p1.m1">C_{\ell}\left(\eta\right)</Math> is given by (LABEL:eq:CW.SOL.C) or (LABEL:eq:CW.SOL.CA).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS2">
+<title><Math content-tex="\regCoulombf" mode="inline" xml:id="C33.S16.SS2.m1">f</Math> and <Math content-tex="\irregCoulombh" mode="inline" xml:id="C33.S16.SS2.m2">h</Math> in Terms of <Math content-tex="\regCoulombF{\ell}" mode="inline" xml:id="C33.S16.SS2.m3">F_{\ell}</Math> and <Math content-tex="\irregCoulombG{\ell}" mode="inline" xml:id="C33.S16.SS2.m4">G_{\ell}</Math> when <Math mode="inline" xml:id="C33.S16.SS2.m5">\epsilon&gt;0</Math></title>          
+<para xml:id="C33.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C33.S16.SS2.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS2.p1.m1">\epsilon&gt;0</Math> denote <Math equation-number="33.16.3" mode="display" xml:id="C33.S16.E3">\tau=\epsilon^{1/2}(&gt;0),</Math> and again define <Math mode="inline" xml:id="C33.S16.SS2.p1.m2">A(\epsilon,\ell)</Math> by (LABEL:eq:CW.SOLrep.AEL) or (LABEL:eq:CW.SOLrep.AEL2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C33.S16.SS2.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS2.p1.m3">r&gt;0</Math> <Math equation-number="33.16.4" mode="display" xml:id="C33.S16.E4">f\left(\epsilon,\ell;r\right)=\left(\frac{2}{\pi\tau}\frac{1-e^{-2\pi/\tau}}{A (\epsilon,\ell)}\right)^{\ifrac{1}{2}}F_{\ell}\left(-1/\tau,\tau r\right),</Math> <Math equation-number="33.16.5" mode="display" xml:id="C33.S16.E5">h\left(\epsilon,\ell;r\right)=\left(\frac{2}{\pi\tau}\frac{A(\epsilon,\ell)}{1 -e^{-2\pi/\tau}}\right)^{\ifrac{1}{2}}G_{\ell}\left(-1/\tau,\tau r\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="134" xml:id="C33.S16.SS2.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS2.p1.m4">r&lt;0</Math> <Math equation-number="33.16.6" mode="display" xml:id="C33.S16.E6">f\left(\epsilon,\ell;r\right)=(-1)^{\ell+1}\left(\frac{2}{\pi\tau}\frac{e^{2 \pi/\tau}-1}{A(\epsilon,\ell)}\right)^{\ifrac{1}{2}}F_{\ell}\left(1/\tau,-\tau r \right),</Math> , <Math equation-number="33.16.7" mode="display" xml:id="C33.S16.E7">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\left(\frac{2}{\pi\tau}\frac{A( \epsilon,\ell)}{e^{2\pi/\tau}-1}\right)^{\ifrac{1}{2}}G_{\ell}\left(1/\tau,- \tau r\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS3">
+<title><Math content-tex="\regCoulombf" mode="inline" xml:id="C33.S16.SS3.m1">f</Math> and <Math content-tex="\irregCoulombh" mode="inline" xml:id="C33.S16.SS3.m2">h</Math> in Terms of <Math content-tex="\WhittakerconfhyperW{\kappa}{\mu}@{z}" mode="inline" xml:id="C33.S16.SS3.m3">W_{\kappa,\mu}\left(z\right)</Math> when <Math mode="inline" xml:id="C33.S16.SS3.m4">\epsilon&lt;0</Math></title>           
+<para xml:id="C33.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C33.S16.SS3.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS3.p1.m1">\epsilon&lt;0</Math> denote <Math equation-number="33.16.8" mode="display" xml:id="C33.S16.E8">\nu=1/(-\epsilon)^{1/2}(&gt;0),</Math> <Math equation-number="33.16.9" mode="display" xml:id="C33.S16.E9">\zeta_{\ell}(\nu,r)=W_{\nu,\ell+\frac{1}{2}}\left(2r/\nu\right), \xi_{\ell}(\nu,r)=\Re\left(e^{\mathrm{i}\pi\nu}W_{-\nu,\ell+\frac{1}{2}}\left( e^{\mathrm{i}\pi}2r/\nu\right)\right),</Math> and again define <Math mode="inline" xml:id="C33.S16.SS3.p1.m2">A(\epsilon,\ell)</Math> by (LABEL:eq:CW.SOLrep.AEL) or (LABEL:eq:CW.SOLrep.AEL2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="136" xml:id="C33.S16.SS3.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS3.p1.m3">r&gt;0</Math> <Math equation-number="33.16.10" mode="display" xml:id="C33.S16.E10">f\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}\left(-\frac{\cos\left( \pi\nu\right)\zeta_{\ell}(\nu,r)}{\Gamma\left(\ell+1+\nu\right)}+\frac{\sin \left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\xi_{\ell}(\nu,r)}{\pi}\right),</Math> , <Math equation-number="33.16.11" mode="display" xml:id="C33.S16.E11">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}A(\epsilon,\ell)\left( \frac{\sin\left(\pi\nu\right)\zeta_{\ell}(\nu,r)}{\Gamma\left(\ell+1+\nu\right )}+\frac{\cos\left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\xi_{\ell}(\nu,r)}{ \pi}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="137" xml:id="C33.S16.SS3.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS3.p1.m4">r&lt;0</Math> <Math equation-number="33.16.12" mode="display" xml:id="C33.S16.E12">f\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}\nu^{\ell+1}}{\pi}\left(-\frac{ \pi\xi_{\ell}(-\nu,r)}{\Gamma\left(\ell+1+\nu\right)}+\sin\left(\pi\nu\right) \cos\left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\zeta_{\ell}(-\nu,r)\right),</Math> <Math equation-number="33.16.13" mode="display" xml:id="C33.S16.E13">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}A(\epsilon,\ell)\Gamma \left(\nu-\ell\right)\zeta_{\ell}(-\nu,r)/\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS4">
+<title><Math content-tex="\regCoulombs" mode="inline" xml:id="C33.S16.SS4.m1">s</Math> and <Math content-tex="\irregCoulombc" mode="inline" xml:id="C33.S16.SS4.m2">c</Math> in Terms of <Math content-tex="\regCoulombF{\ell}" mode="inline" xml:id="C33.S16.SS4.m3">F_{\ell}</Math> and <Math content-tex="\irregCoulombG{\ell}" mode="inline" xml:id="C33.S16.SS4.m4">G_{\ell}</Math> when <Math mode="inline" xml:id="C33.S16.SS4.m5">\epsilon&gt;0</Math></title>        
+  
+<para xml:id="C33.S16.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C33.S16.SS4.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS4.p1.m1">\epsilon&gt;0</Math> , again denote <Math mode="inline" xml:id="C33.S16.SS4.p1.m2">\tau</Math> by (LABEL:eq:CW.REL.tau).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C33.S16.SS4.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS4.p1.m3">r&gt;0</Math> <Math equation-number="33.16.14" mode="display" xml:id="C33.S16.E14">s\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}F_{\ell}\left(-1/\tau,\tau r \right), c\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}G_{\ell}\left(-1/\tau,\tau r \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C33.S16.SS4.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS4.p1.m4">r&lt;0</Math> <Math equation-number="33.16.15" mode="display" xml:id="C33.S16.E15">s\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}F_{\ell}\left(1/\tau,-\tau r \right), c\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}G_{\ell}\left(1/\tau,-\tau r \right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS5">
+<title><Math content-tex="\regCoulombs" mode="inline" xml:id="C33.S16.SS5.m1">s</Math> and <Math content-tex="\irregCoulombc" mode="inline" xml:id="C33.S16.SS5.m2">c</Math> in Terms of <Math content-tex="\WhittakerconfhyperW{\kappa}{\mu}@{z}" mode="inline" xml:id="C33.S16.SS5.m3">W_{\kappa,\mu}\left(z\right)</Math> when <Math mode="inline" xml:id="C33.S16.SS5.m4">\epsilon&lt;0</Math></title>           
+<para xml:id="C33.S16.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C33.S16.SS5.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS5.p1.m1">\epsilon&lt;0</Math> denote <Math mode="inline" xml:id="C33.S16.SS5.p1.m2">\nu</Math> , <Math mode="inline" xml:id="C33.S16.SS5.p1.m3">\zeta_{\ell}(\nu,r)</Math> , and <Math mode="inline" xml:id="C33.S16.SS5.p1.m4">\xi_{\ell}(\nu,r)</Math> by (LABEL:eq:CW.REL.nu) and (LABEL:eq:CW.REL.ZX).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="142" xml:id="C33.S16.SS5.p1.s2">
+Also denote <Math equation-number="33.16.16" mode="display" xml:id="C33.S16.E16">K(\nu,\ell)=\left(\nu^{2}\Gamma\left(\nu+\ell+1\right)\Gamma\left(\nu-\ell \right)\right)^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="143" xml:id="C33.S16.SS5.p1.s3">
+Then for <Math mode="inline" xml:id="C33.S16.SS5.p1.m5">r&gt;0</Math> <Math equation-number="33.16.17" mode="display" xml:id="C33.S16.E17">s\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{2\nu^{1/2}}\left(\frac{\sin \left(\pi\nu\right)}{\pi K(\nu,\ell)}\xi_{\ell}(\nu,r)-\cos\left(\pi\nu\right) \nu^{2}K(\nu,\ell)\zeta_{\ell}(\nu,r)\right), c\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{2\nu^{1/2}}\left(\frac{\cos \left(\pi\nu\right)}{\pi K(\nu,\ell)}\xi_{\ell}(\nu,r)+\sin\left(\pi\nu\right) \nu^{2}K(\nu,\ell)\zeta_{\ell}(\nu,r)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="144" xml:id="C33.S16.SS5.p1.s4">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS5.p1.m6">r&lt;0</Math> <Math equation-number="33.16.18" mode="display" xml:id="C33.S16.E18">s\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell+1}}{2^{1/2}}\left(\frac{\nu^{3/ 2}}{K(\nu,\ell)}\xi_{\ell}(-\nu,r)-\frac{\sin\left(\pi\nu\right)\cos\left(\pi \nu\right)}{\pi\nu^{1/2}}K(\nu,\ell)\zeta_{\ell}(-\nu,r)\right), c\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{\pi(2\nu)^{1/2}}K(\nu,\ell) \zeta_{\ell}(-\nu,r)</Math>.
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S17">
+<title>Recurrence Relations and Derivatives</title>        
+  
+ 
+<para xml:id="C33.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C33.S17.p1.s1">
+ <Math equation-number="33.17.1" mode="display" xml:id="C33.S17.E1">(\ell+1)rf\left(\epsilon,\ell-1;r\right)-(2\ell+1)\left(\ell(\ell+1)-r\right)f \left(\epsilon,\ell;r\right)+\ell\left(1+(\ell+1)^{2}\epsilon\right)rf\left( \epsilon,\ell+1;r\right)=0,</Math> <Math equation-number="33.17.2" mode="display" xml:id="C33.S17.E2">(\ell+1)\left(1+\ell^{2}\epsilon\right)rh\left(\epsilon,\ell-1;r\right)-(2\ell +1)\left(\ell(\ell+1)-r\right)h\left(\epsilon,\ell;r\right)+\ell rh\left( \epsilon,\ell+1;r\right)=0,</Math> <Math equation-number="33.17.3" mode="display" xml:id="C33.S17.E3">(\ell+1)rf'\left(\epsilon,\ell;r\right)=\left((\ell+1)^{2}-r\right)f\left( \epsilon,\ell;r\right)-\left(1+(\ell+1)^{2}\epsilon\right)rf\left(\epsilon, \ell+1;r\right),</Math> , <Math equation-number="33.17.4" mode="display" xml:id="C33.S17.E4">(\ell+1)rh'\left(\epsilon,\ell;r\right)=\left((\ell+1)^{2}-r\right)h\left( \epsilon,\ell;r\right)-rh\left(\epsilon,\ell+1;r\right)</Math>.
+</sentence>
+
+</para>
+  
+</section>
+ 
+<section xml:id="C33.S18">
+<title>Limiting Forms for Large <Math mode="inline" xml:id="C33.S18.m1">\ell</Math></title>          
+<para xml:id="C33.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C33.S18.p1.s1">
+As <Math mode="inline" xml:id="C33.S18.p1.m1">\ell\to\infty</Math> with <Math mode="inline" xml:id="C33.S18.p1.m2">\epsilon</Math> and <Math mode="inline" xml:id="C33.S18.p1.m3">r</Math> ( <Math mode="inline" xml:id="C33.S18.p1.m4">\neq 0</Math> ) fixed, <Math equation-number="33.18.1" mode="display" xml:id="C33.S18.E1">f\left(\epsilon,\ell;r\right)\sim\frac{(2r)^{\ell+1}}{(2\ell+1)!}, h\left(\epsilon,\ell;r\right)\sim\frac{(2\ell)!}{\pi(2r)^{\ell}}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S19">
+<title>Power-Series Expansions in <Math mode="inline" xml:id="C33.S19.m1">r</Math></title>          
+<para xml:id="C33.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C33.S19.p1.s1">
+ <Math equation-number="33.19.1" mode="display" xml:id="C33.S19.E1">f\left(\epsilon,\ell;r\right)=r^{\ell+1}\sum_{k=0}^{\infty}\alpha_{k}r^{k},</Math> where <Math equation-number="33.19.2" mode="display" xml:id="C33.S19.E2">\alpha_{0}=2^{\ell+1}/(2\ell+1)!, \alpha_{1}=-\alpha_{0}/(\ell+1), k(k+2\ell+1)\alpha_{k}+2\alpha_{k-1}+\epsilon\alpha_{k-2}=0, subject to k=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C33.S19.p1.s2">
+<Math equation-number="33.19.3" mode="display" xml:id="C33.S19.E3">2\pi h\left(\epsilon,\ell;r\right)={\sum_{k=0}^{2\ell}\frac{(2\ell-k)!\gamma_{ k}}{k!}(2r)^{k-\ell}-\sum_{k=0}^{\infty}\delta_{k}r^{k+\ell+1}}-A(\epsilon, \ell)\left(2\ln|2r/\kappa|+\Re\psi\left(\ell+1+\kappa\right)+\Re\psi\left(- \ell+\kappa\right)\right){f\left(\epsilon,\ell;r\right),} subject to r\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="149" xml:id="C33.S19.p1.s3">
+Here <Math mode="inline" xml:id="C33.S19.p1.m1">\kappa</Math> is defined by (LABEL:eq:CW.SOLrep.KAP), <Math mode="inline" xml:id="C33.S19.p1.m2">A(\epsilon,\ell)</Math> is defined by (LABEL:eq:CW.SOLrep.AEL) or (LABEL:eq:CW.SOLrep.AEL2), <Math mode="inline" xml:id="C33.S19.p1.m3">\gamma_{0}=1</Math> , <Math mode="inline" xml:id="C33.S19.p1.m4">\gamma_{1}=1</Math> , and <Math equation-number="33.19.4" mode="display" xml:id="C33.S19.E4">\gamma_{k}-\gamma_{k-1}+\tfrac{1}{4}(k-1)(k-2\ell-2)\epsilon\gamma_{k-2}=0, subject to k=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="150" xml:id="C33.S19.p1.s4">
+Also, <Math equation-number="33.19.5" mode="display" xml:id="C33.S19.E5">\delta_{0}=\left(\beta_{2\ell+1}-2(\psi\left(2\ell+2\right)+\psi\left(1\right) )A(\epsilon,\ell)\right)\alpha_{0}, \delta_{1}=\left(\beta_{2\ell+2}-2(\psi\left(2\ell+3\right)+\psi\left(2\right) )A(\epsilon,\ell)\right)\alpha_{1},</Math> <Math equation-number="33.19.6" mode="display" xml:id="C33.S19.E6">k(k+2\ell+1)\delta_{k}+2\delta_{k-1}+\epsilon\delta_{k-2}+2(2k+2\ell+1)A( \epsilon,\ell)\alpha_{k}=0, subject to k=2,3,\dots,</Math> with <Math mode="inline" xml:id="C33.S19.p1.m5">\beta_{0}=\beta_{1}=0</Math> , and <Math equation-number="33.19.7" mode="display" xml:id="C33.S19.E7">\beta_{k}-\beta_{k-1}+\tfrac{1}{4}(k-1)(k-2\ell-2)\epsilon\beta_{k-2}+\tfrac{1 }{2}(k-1)\epsilon\gamma_{k-2}=0, subject to k=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="151" xml:id="C33.S19.p1.s5">
+The expansions (LABEL:eq:CW.SERrep.RS1) and (LABEL:eq:CW.SERrep.IS1) converge for all finite values of <Math mode="inline" xml:id="C33.S19.p1.m6">r</Math> , except <Math mode="inline" xml:id="C33.S19.p1.m7">r=0</Math> in the case of (LABEL:eq:CW.SERrep.IS1).
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S20">
+<title>Expansions for Small <Math mode="inline" xml:id="C33.S20.m1">|\epsilon|</Math></title>        
+ 
+<subsection xml:id="C33.S20.SS1">
+<title>Case <Math mode="inline" xml:id="C33.S20.SS1.m1">\epsilon=0</Math></title>        
+    
+<para xml:id="C33.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C33.S20.SS1.p1.s1">
+ <Math equation-number="33.20.1" mode="display" xml:id="C33.S20.E1">f\left(0,\ell;r\right)=(2r)^{1/2}J_{2\ell+1}\left(\sqrt{8r}\right), h\left(0,\ell;r\right)=-(2r)^{1/2}Y_{2\ell+1}\left(\sqrt{8r}\right) subject to r&gt;0,</Math> <Math equation-number="33.20.2" mode="display" xml:id="C33.S20.E2">f\left(0,\ell;r\right)=(-1)^{\ell+1}(2|r|)^{1/2}I_{2\ell+1}\left(\sqrt{8|r|} \right), h\left(0,\ell;r\right)=(-1)^{\ell}(2/\pi)(2|r|)^{1/2}K_{2\ell+1}\left(\sqrt{8| r|}\right) subject to r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="153" xml:id="C33.S20.SS1.p1.s2">
+For the functions <Math mode="inline" xml:id="C33.S20.SS1.p1.m1">J</Math> , <Math mode="inline" xml:id="C33.S20.SS1.p1.m2">Y</Math> , <Math mode="inline" xml:id="C33.S20.SS1.p1.m3">I</Math> , and <Math mode="inline" xml:id="C33.S20.SS1.p1.m4">K</Math> see §§LABEL:sec:BS.DEF.SS, LABEL:sec:BS.MDEF.SS.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS2">
+<title>Power-Series in <Math mode="inline" xml:id="C33.S20.SS2.m1">\epsilon</Math> for the Regular Solution</title>          
+<para xml:id="C33.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C33.S20.SS2.p1.s1">
+ <Math equation-number="33.20.3" mode="display" xml:id="C33.S20.E3">f\left(\epsilon,\ell;r\right)=\sum_{k=0}^{\infty}\epsilon^{k}{\sf F}_{k}(\ell; r),</Math> where <Math equation-number="33.20.4" mode="display" xml:id="C33.S20.E4">{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}J_{2\ell+1+p}\left( \sqrt{8r}\right), subject to r&gt;0,</Math> <Math equation-number="33.20.5" mode="display" xml:id="C33.S20.E5">{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(-1)^{\ell+1+p}(2|r|)^{(p+1)/2}C_{k,p}I_{2 \ell+1+p}\left(\sqrt{8|r|}\right), subject to r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C33.S20.SS2.p1.s2">
+The functions <Math mode="inline" xml:id="C33.S20.SS2.p1.m1">J</Math> and <Math mode="inline" xml:id="C33.S20.SS2.p1.m2">I</Math> are as in §§LABEL:sec:BS.DEF.SS,LABEL:sec:BS.MDEF.SS, and the coefficients <Math mode="inline" xml:id="C33.S20.SS2.p1.m3">C_{k,p}</Math> are given by <Math mode="inline" xml:id="C33.S20.SS2.p1.m4">C_{0,0}=1</Math> , <Math mode="inline" xml:id="C33.S20.SS2.p1.m5">C_{1,0}=0</Math> , and <Math equation-number="33.20.6" mode="display" xml:id="C33.S20.E6">C_{k,p}=0, C_{k,p}=\left(-(2\ell+p)C_{k-1,p-2}+C_{k-1,p-3}\right)/(4p),</Math> The series (LABEL:eq:CW.AErep.F1) converges for all <Math mode="inline" xml:id="C33.S20.SS2.p1.m6">r</Math> and <Math mode="inline" xml:id="C33.S20.SS2.p1.m7">\epsilon</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS3">
+<title>Asymptotic Expansion for the Irregular Solution</title>          
+<para xml:id="C33.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C33.S20.SS3.p1.s1">
+As <Math mode="inline" xml:id="C33.S20.SS3.p1.m1">\epsilon\to 0</Math> with <Math mode="inline" xml:id="C33.S20.SS3.p1.m2">\ell</Math> and <Math mode="inline" xml:id="C33.S20.SS3.p1.m3">r</Math> fixed, <Math equation-number="33.20.7" mode="display" xml:id="C33.S20.E7">h\left(\epsilon,\ell;r\right)\sim-A(\epsilon,\ell)\sum_{k=0}^{\infty}\epsilon^ {k}{\sf H}_{k}(\ell;r),</Math> where <Math mode="inline" xml:id="C33.S20.SS3.p1.m4">A(\epsilon,\ell)</Math> is given by (LABEL:eq:CW.SOLrep.AEL), (LABEL:eq:CW.SOLrep.AEL2), and <Math equation-number="33.20.8" mode="display" xml:id="C33.S20.E8">{\sf H}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}Y_{2\ell+1+p}\left( \sqrt{8r}\right), subject to r&gt;0,</Math> <Math equation-number="33.20.9" mode="display" xml:id="C33.S20.E9">{\sf H}_{k}(\ell;r)=(-1)^{\ell+1}\frac{2}{\pi}\sum_{p=2k}^{3k}(2|r|)^{(p+1)/2} C_{k,p}K_{2\ell+1+p}\left(\sqrt{8|r|}\right), subject to r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="157" xml:id="C33.S20.SS3.p1.s2">
+The functions <Math mode="inline" xml:id="C33.S20.SS3.p1.m7">Y</Math> and <Math mode="inline" xml:id="C33.S20.SS3.p1.m8">K</Math> are as in §§LABEL:sec:BS.DEF.SS,LABEL:sec:BS.MDEF.SS, and the coefficients <Math mode="inline" xml:id="C33.S20.SS3.p1.m9">C_{k,p}</Math> are given by (LABEL:eq:CW.AErep.C).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS4">
+<title>Uniform Asymptotic Expansions</title>           
+ 
+<para xml:id="C33.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C33.S20.SS4.p1.s1">
+For a comprehensive collection of asymptotic expansions that cover <Math mode="inline" xml:id="C33.S20.SS4.p1.m1">f\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S20.SS4.p1.m2">h\left(\epsilon,\ell;r\right)</Math> as <Math mode="inline" xml:id="C33.S20.SS4.p1.m3">\epsilon\to 0\pm</Math> and are uniform in <Math mode="inline" xml:id="C33.S20.SS4.p1.m4">r</Math> , including unbounded values, see ( , §7) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C33.S20.SS4.p1.s2">
+These expansions are in terms of elementary functions, Airy functions, and Bessel functions of orders <Math mode="inline" xml:id="C33.S20.SS4.p1.m5">2\ell+1</Math> and <Math mode="inline" xml:id="C33.S20.SS4.p1.m6">2\ell+2</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S21">
+<title>Asymptotic Approximations for Large <Math mode="inline" xml:id="C33.S21.m1">|r|</Math></title>         
+<subsection xml:id="C33.S21.SS1">
+<title>Limiting Forms</title>          
+<para xml:id="C33.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C33.S21.SS1.p1.s1">
+We indicate here how to obtain the limiting forms of <Math mode="inline" xml:id="C33.S21.SS1.p1.m1">f\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S21.SS1.p1.m2">h\left(\epsilon,\ell;r\right)</Math> , <Math mode="inline" xml:id="C33.S21.SS1.p1.m3">s\left(\epsilon,\ell;r\right)</Math> , and <Math mode="inline" xml:id="C33.S21.SS1.p1.m4">c\left(\epsilon,\ell;r\right)</Math> as <Math mode="inline" xml:id="C33.S21.SS1.p1.m5">r\to\pm\infty</Math> , with <Math mode="inline" xml:id="C33.S21.SS1.p1.m6">\epsilon</Math> and <Math mode="inline" xml:id="C33.S21.SS1.p1.m7">\ell</Math> fixed, in the following cases:
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S21.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="161" xml:id="C33.S21.SS1.p2.s1">
+When <Math mode="inline" xml:id="C33.S21.I1.i1.p1.m1">r\to\pm\infty</Math> with <Math mode="inline" xml:id="C33.S21.I1.i1.p1.m2">\epsilon&gt;0</Math> , Equations (LABEL:eq:CW.REL.fh1)–(LABEL:eq:CW.REL.fh4) are combined with (LABEL:eq:CW.LF2.RI1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="162" xml:id="C33.S21.SS1.p2.s2">
+When <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m1">r\to\pm\infty</Math> with <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m2">\epsilon&lt;0</Math> , Equations (LABEL:eq:CW.REL.fhW1)–(LABEL:eq:CW.REL.fhW4) are combined with <Math equation-number="33.21.1" mode="display" xml:id="C33.S21.E1">\zeta_{\ell}(\nu,r)\sim e^{-r/\nu}(2r/\nu)^{\nu}, \xi_{\ell}(\nu,r)\sim e^{r/\nu}(2r/\nu)^{-\nu} subject to r\to\infty,</Math> <Math equation-number="33.21.2" mode="display" xml:id="C33.S21.E2">\zeta_{\ell}(-\nu,r)\sim e^{r/\nu}(-2r/\nu)^{-\nu}, \xi_{\ell}(-\nu,r)\sim e^{-r/\nu}(-2r/\nu)^{\nu}, subject to r\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="163" xml:id="C33.S21.SS1.p2.s3">
+Corresponding approximations for <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m3">s\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m4">c\left(\epsilon,\ell;r\right)</Math> as <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m5">r\to\infty</Math> can be obtained via (LABEL:eq:CW.REL.scWp), and as <Math mode="inline" xml:id="C33.S21.I1.i2.p1.m6">r\to-\infty</Math> via (LABEL:eq:CW.REL.scWm).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="164" xml:id="C33.S21.SS1.p2.s4">
+When <Math mode="inline" xml:id="C33.S21.I1.i3.p1.m1">r\to\pm\infty</Math> with <Math mode="inline" xml:id="C33.S21.I1.i3.p1.m2">\epsilon=0</Math> , combine (LABEL:eq:CW.E0.RP), (LABEL:eq:CW.E0.RM) with §§LABEL:sec:BS.LF.ZI, LABEL:sec:BS.MLF.b.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S21.SS2">
+<title>Asymptotic Expansions</title>          
+<para xml:id="C33.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="165" xml:id="C33.S21.SS2.p1.s1">
+For asymptotic expansions of <Math mode="inline" xml:id="C33.S21.SS2.p1.m1">f\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S21.SS2.p1.m2">h\left(\epsilon,\ell;r\right)</Math> as <Math mode="inline" xml:id="C33.S21.SS2.p1.m3">r\to\pm\infty</Math> with <Math mode="inline" xml:id="C33.S21.SS2.p1.m4">\epsilon</Math> and <Math mode="inline" xml:id="C33.S21.SS2.p1.m5">\ell</Math> fixed, see ( , §6) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+             
+  
+<section xml:id="C33.S22">
+<title>Particle Scattering and Atomic and Molecular Spectra</title>         
+<subsection xml:id="C33.S22.SS1">
+<title>Schrödinger Equation</title>           
+<para xml:id="C33.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C33.S22.SS1.p1.s1">
+With <Math mode="inline" xml:id="C33.S22.SS1.p1.m1">e</Math> denoting here the elementary charge, the Coulomb potential between two point particles with charges <Math mode="inline" xml:id="C33.S22.SS1.p1.m2">Z_{1}e,Z_{2}e</Math> and masses <Math mode="inline" xml:id="C33.S22.SS1.p1.m3">m_{1},m_{2}</Math> separated by a distance <Math mode="inline" xml:id="C33.S22.SS1.p1.m4">s</Math> is <Math mode="inline" xml:id="C33.S22.SS1.p1.m5">V(s)=Z_{1}Z_{2}e^{2}/(4\pi\varepsilon_{0}s)=Z_{1}Z_{2}\alpha\hbar c/s</Math> , where <Math mode="inline" xml:id="C33.S22.SS1.p1.m6">Z_{j}</Math> are atomic numbers, <Math mode="inline" xml:id="C33.S22.SS1.p1.m7">\varepsilon_{0}</Math> is the electric constant, <Math mode="inline" xml:id="C33.S22.SS1.p1.m8">\alpha</Math> is the fine structure constant, and <Math mode="inline" xml:id="C33.S22.SS1.p1.m9">\hbar</Math> is the reduced Planck’s constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C33.S22.SS1.p1.s2">
+The reduced mass is <Math mode="inline" xml:id="C33.S22.SS1.p1.m10">m=m_{1}m_{2}/(m_{1}+m_{2})</Math> , and at energy of relative motion <Math mode="inline" xml:id="C33.S22.SS1.p1.m11">E</Math> with relative orbital angular momentum <Math mode="inline" xml:id="C33.S22.SS1.p1.m12">\ell\hbar</Math> , the Schrödinger equation for the radial wave function <Math mode="inline" xml:id="C33.S22.SS1.p1.m13">w(s)</Math> is given by <Math equation-number="33.22.1" mode="display" xml:id="C33.S22.E1">\left(-\frac{\hbar^{2}}{2m}\left(\frac{{\mathrm{d}}^{2}}{{\mathrm{d}s}^{2}}- \frac{\ell(\ell+1)}{s^{2}}\right)+\frac{Z_{1}Z_{2}\alpha\hbar c}{s}\right)w=Ew,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="168" xml:id="C33.S22.SS1.p2.s1">
+With the substitutions <Math equation-number="33.22.2" mode="display" xml:id="C33.S22.E2">{\sf k}=(2mE/\hbar^{2})^{1/2}, Z=mZ_{1}Z_{2}\alpha c/\hbar, x=s,</Math> (LABEL:eq:CW.APP.QM) becomes <Math equation-number="33.22.3" mode="display" xml:id="C33.S22.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}+\left({\sf k}^{2}-\frac{2Z}{x}- \frac{\ell(\ell+1)}{x^{2}}\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS2">
+<title>Definitions of Variables</title>         
+<paragraph xml:id="C33.S22.Px1">
+<title><Math mode="inline" xml:id="C33.S22.Px1.m1">{\sf k}</Math> Scaling</title>     
+<para xml:id="C33.S22.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C33.S22.Px1.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px1.p1.m1">{\sf k}</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px1.p1.m2">\rho</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p1.m3">\eta</Math> of §LABEL:sec:CW.EQ are given by <Math equation-number="33.22.4" mode="display" xml:id="C33.S22.E4">\rho=s(2mE/\hbar^{2})^{1/2}, \eta=Z_{1}Z_{2}\alpha c(m/(2E))^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C33.S22.Px1.p2.s1">
+At positive energies <Math mode="inline" xml:id="C33.S22.Px1.p2.m1">E&gt;0</Math> , <Math mode="inline" xml:id="C33.S22.Px1.p2.m2">\rho\geq 0</Math> , and:
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="1" xml:id="C33.S22.Px1.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="172" sentence-num-in-table="2" xml:id="C33.S22.Px1.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r1.m2">\eta&amp;lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="173" sentence-num-in-table="3" xml:id="C33.S22.Px1.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="174" sentence-num-in-table="4" xml:id="C33.S22.Px1.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m3">\eta=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="5" xml:id="C33.S22.Px1.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="6" xml:id="C33.S22.Px1.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r3.m2">\eta&amp;gt;0</Math>.
+</sentence>
+       
+<para xml:id="C33.S22.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C33.S22.Px1.p3.s1">
+Positive-energy functions correspond to processes such as Rutherford scatteringand Coulomb excitation of nuclei ( ( ) ), and atomic photo-ionization and electron-ion collisions ( ( ) ).
+</sentence>
+
+</para>
+   
+<para xml:id="C33.S22.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C33.S22.Px1.p4.s1">
+At negative energies <Math mode="inline" xml:id="C33.S22.Px1.p4.m1">E&lt;0</Math> and both <Math mode="inline" xml:id="C33.S22.Px1.p4.m2">\rho</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p4.m3">\eta</Math> are purely imaginary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="179" xml:id="C33.S22.Px1.p4.s2">
+The negative-energy functions are widely used in the description of atomic and molecular spectra; see ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="180" xml:id="C33.S22.Px1.p4.s3">
+In these applications, the <Math mode="inline" xml:id="C33.S22.Px1.p4.m4">Z</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px1.p4.m5">r</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p4.m6">\epsilon</Math> are more convenient.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C33.S22.Px2">
+<title><Math mode="inline" xml:id="C33.S22.Px2.m1">Z</Math> Scaling</title>     
+<para xml:id="C33.S22.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C33.S22.Px2.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px2.p1.m1">Z</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px2.p1.m2">r</Math> and <Math mode="inline" xml:id="C33.S22.Px2.p1.m3">\epsilon</Math> of §LABEL:sec:CW.EQrep are given by <Math equation-number="33.22.5" mode="display" xml:id="C33.S22.E5">r=-Z_{1}Z_{2}(mc\alpha/\hbar)s, \epsilon=E/(Z_{1}^{2}Z_{2}^{2}m{c^{2}}{\alpha^{2}}/2)</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C33.S22.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C33.S22.Px2.p2.s1">
+For <Math mode="inline" xml:id="C33.S22.Px2.p2.m1">Z_{1}Z_{2}=-1</Math> and <Math mode="inline" xml:id="C33.S22.Px2.p2.m2">m=m_{e}</Math> , the electron mass, the scaling factors in (LABEL:eq:CW.APP.PHYSB) reduce to the Bohr radius, <Math mode="inline" xml:id="C33.S22.Px2.p2.m3">a_{0}=\hbar/(m_{e}c\alpha)</Math> , and to a multiple of the Rydberg constant,
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C33.S22.Px2.p3.s1">
+ <Math mode="inline" xml:id="C33.S22.Px2.p3.m1">R_{\infty}=m_{e}c{\alpha^{2}}/(2\hbar)</Math>.
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="1" xml:id="C33.S22.Px2.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="2" xml:id="C33.S22.Px2.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r1.m2">r&amp;gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="3" xml:id="C33.S22.Px2.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="187" sentence-num-in-table="4" xml:id="C33.S22.Px2.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m3">r=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="188" sentence-num-in-table="5" xml:id="C33.S22.Px2.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="6" xml:id="C33.S22.Px2.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r3.m2">r&amp;lt;0</Math>.
+</sentence>
+  
+</paragraph>
+ 
+<paragraph xml:id="C33.S22.Px3">
+<title><Math content-tex="\iunit{\sf k}" mode="inline" xml:id="C33.S22.Px3.m1">\mathrm{i}{\sf k}</Math> Scaling</title>    
+ 
+<para xml:id="C33.S22.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="190" xml:id="C33.S22.Px3.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px3.p1.m1">\mathrm{i}{\sf k}</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px3.p1.m2">z</Math> and <Math mode="inline" xml:id="C33.S22.Px3.p1.m3">\kappa</Math> of §LABEL:sec:CH.MU.DF are given by <Math equation-number="33.22.6" mode="display" xml:id="C33.S22.E6">z=2\mathrm{i}s(2mE/\hbar^{2})^{1/2}, \kappa=\mathrm{i}Z_{1}Z_{2}\alpha c(m/(2E))^{1/2}</Math>.
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="1" xml:id="C33.S22.Px3.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="2" xml:id="C33.S22.Px3.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r1.m2">\Im\kappa&amp;lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="3" xml:id="C33.S22.Px3.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="4" xml:id="C33.S22.Px3.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m3">\kappa=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="5" xml:id="C33.S22.Px3.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="196" sentence-num-in-table="6" xml:id="C33.S22.Px3.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r3.m2">\Im\kappa&amp;gt;0</Math>.
+</sentence>
+ 
+   
+<para xml:id="C33.S22.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="197" xml:id="C33.S22.Px3.p2.s1">
+Customary variables are <Math mode="inline" xml:id="C33.S22.Px3.p2.m1">(\epsilon,r)</Math> in atomic physics and <Math mode="inline" xml:id="C33.S22.Px3.p2.m2">(\eta,\rho)</Math> in atomic and nuclear physics.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="198" xml:id="C33.S22.Px3.p2.s2">
+Both variable sets may be used for attractive and repulsive potentials: the <Math mode="inline" xml:id="C33.S22.Px3.p2.m3">(\epsilon,r)</Math> set cannot be used for a zero potential because this would imply <Math mode="inline" xml:id="C33.S22.Px3.p2.m4">r=0</Math> for all <Math mode="inline" xml:id="C33.S22.Px3.p2.m5">s</Math> , and the <Math mode="inline" xml:id="C33.S22.Px3.p2.m6">(\eta,\rho)</Math> set cannot be used for zero energy <Math mode="inline" xml:id="C33.S22.Px3.p2.m7">E</Math> because this would imply <Math mode="inline" xml:id="C33.S22.Px3.p2.m8">\rho=0</Math> always.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS3">
+<title>Conversions Between Variables</title>           
+<para xml:id="C33.S22.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="199" xml:id="C33.S22.SS3.p1.s1">
+ <Math equation-number="33.22.7" mode="display" xml:id="C33.S22.E7">r=-\eta\rho, \epsilon=1/\eta^{2}, subject to Z from {\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="200" xml:id="C33.S22.SS3.p1.s2">
+<Math equation-number="33.22.8" mode="display" xml:id="C33.S22.E8">z=2\mathrm{i}\rho, \kappa=\mathrm{i}\eta, subject to \mathrm{i}{\sf k} from {\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="201" xml:id="C33.S22.SS3.p1.s3">
+<Math equation-number="33.22.9" mode="display" xml:id="C33.S22.E9">\rho=z/(2\mathrm{i}), \eta=\kappa/\mathrm{i}, subject to {\sf k} from \mathrm{i}{\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="202" xml:id="C33.S22.SS3.p1.s4">
+<Math equation-number="33.22.10" mode="display" xml:id="C33.S22.E10">r=\kappa z/2, \epsilon=-1/\kappa^{2}, subject to Z from \mathrm{i}{\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="203" xml:id="C33.S22.SS3.p1.s5">
+<Math equation-number="33.22.11" mode="display" xml:id="C33.S22.E11">\eta=\pm\epsilon^{-1/2}, \rho=-r/\eta, subject to {\sf k} from Z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="204" xml:id="C33.S22.SS3.p1.s6">
+<Math equation-number="33.22.12" mode="display" xml:id="C33.S22.E12">\kappa=\pm(-\epsilon)^{-1/2}, z=2r/\kappa, subject to \mathrm{i}{\sf k} from Z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="205" xml:id="C33.S22.SS3.p1.s7">
+Resolution of the ambiguous signs in (LABEL:eq:CW.APP.rep2rhe),(LABEL:eq:CW.APP.rep2kaz)depends on the sign of <Math mode="inline" xml:id="C33.S22.SS3.p1.m1">Z/\mathsf{k}</Math> in (LABEL:eq:CW.APP.EQ).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="206" xml:id="C33.S22.SS3.p1.s8">
+See also §§LABEL:sec:CW.SOLrep.REG, LABEL:sec:CW.SOLrep.IR, LABEL:sec:CW.APP.QM, andLABEL:sec:CW.APP.DEF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS4">
+<title>Klein–Gordon and Dirac Equations</title>               
+<para xml:id="C33.S22.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C33.S22.SS4.p1.s1">
+The relativistic motion of spinless particles in a Coulomb field, as encountered in pionic atoms and pion-nucleon scattering ( ( ) ) is described by a Klein–Gordon equation equivalent to (LABEL:eq:CW.EQ.EQ); see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="208" xml:id="C33.S22.SS4.p1.s2">
+The motion of a relativistic electron in a Coulomb field, which arises in the theory of the electronic structure of heavy elements ( ( ) ), is described by a Dirac equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="209" xml:id="C33.S22.SS4.p1.s3">
+The solutions to this equation are closely related to the Coulomb functions; see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS5">
+<title>Asymptotic Solutions</title>         
+<para xml:id="C33.S22.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C33.S22.SS5.p1.s1">
+The Coulomb solutions of the Schrödinger and Klein–Gordon equations are almost always used in the external region, outside the range of any non-Coulomb forces or couplings.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="211" xml:id="C33.S22.SS5.p2.s1">
+For scattering problems, the interior solution is then matched to a linear combination of a pair of Coulomb functions, <Math mode="inline" xml:id="C33.S22.SS5.p2.m1">F_{\ell}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S22.SS5.p2.m2">G_{\ell}\left(\eta,\rho\right)</Math> , or <Math mode="inline" xml:id="C33.S22.SS5.p2.m3">f\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S22.SS5.p2.m4">h\left(\epsilon,\ell;r\right)</Math> , to determine the scattering <Math mode="inline" xml:id="C33.S22.SS5.p2.m5">S</Math> -matrix and also the correct normalization of the interior wave solutions; see ( ) .
+</sentence>
+
+</para>
+    
+<para xml:id="C33.S22.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C33.S22.SS5.p3.s1">
+For bound-state problems only the exponentially decaying solution is required, usually taken to be the Whittaker function <Math mode="inline" xml:id="C33.S22.SS5.p3.m1">W_{-\eta,\ell+\frac{1}{2}}\left(2\rho\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C33.S22.SS5.p3.s2">
+The functions <Math mode="inline" xml:id="C33.S22.SS5.p3.m2">\phi_{n,\ell}(r)</Math> defined by (LABEL:eq:CW.SOLrep.SP1) are the hydrogenic bound states in attractive Coulomb potentials; their polynomial components are often calledassociated Laguerre functions; see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS6">
+<title>Solutions Inside the Turning Point</title>           
+<para xml:id="C33.S22.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C33.S22.SS6.p1.s1">
+The penetrability of repulsive Coulomb potential barriers is normally expressed in terms of the quantity <Math mode="inline" xml:id="C33.S22.SS6.p1.m1">\rho/({F_{\ell}^{2}}\left(\eta,\rho\right)+{G_{\ell}^{2}}\left(\eta,\rho\right))</Math> ( ( , pp. 63–65) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="215" xml:id="C33.S22.SS6.p1.s2">
+The WKBJ approximations of §LABEL:sec:CW.METH.APP may also be used to estimate the penetrability.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS7">
+<title>Complex Variables and Parameters</title>           
+  
+<para xml:id="C33.S22.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C33.S22.SS7.p1.s1">
+The Coulomb functions given in this chapter are most commonly evaluated for real values of <Math mode="inline" xml:id="C33.S22.SS7.p1.m1">\rho</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m2">r</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m3">\eta</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m4">\epsilon</Math> and nonnegative integer values of <Math mode="inline" xml:id="C33.S22.SS7.p1.m5">\ell</Math> , but they may be continued analytically to complex arguments and order <Math mode="inline" xml:id="C33.S22.SS7.p1.m6">\ell</Math> as indicated in §LABEL:sec:CW.COM.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="217" xml:id="C33.S22.SS7.p2.s1">
+Examples of applications to noninteger and/or complex variables are as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="218" xml:id="C33.S22.SS7.p2.s2">
+Scattering at complex energies.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="219" xml:id="C33.S22.SS7.p2.s3">
+See for example ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="220" xml:id="C33.S22.SS7.p2.s4">
+Searches for resonances as poles of the <Math mode="inline" xml:id="C33.S22.I1.i2.p1.m1">S</Math> -matrix in the complex half-plane <Math mode="inline" xml:id="C33.S22.I1.i2.p1.m2">\Im\sf{k}&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="221" xml:id="C33.S22.SS7.p2.s5">
+See for example ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="222" xml:id="C33.S22.SS7.p2.s6">
+Regge poles at complex values of <Math mode="inline" xml:id="C33.S22.I1.i3.p1.m1">\ell</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="223" xml:id="C33.S22.SS7.p2.s7">
+See for example ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="224" xml:id="C33.S22.SS7.p2.s8">
+Eigenstates using complex-rotated coordinates <Math mode="inline" xml:id="C33.S22.I1.i4.p1.m1">r\to re^{\mathrm{i}\theta}</Math> , so that resonances have square-integrable eigenfunctions.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="225" xml:id="C33.S22.SS7.p2.s9">
+See for example ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="226" xml:id="C33.S22.SS7.p2.s10">
+Solution of relativistic Coulomb equations.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="227" xml:id="C33.S22.SS7.p2.s11">
+See for example ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="228" xml:id="C33.S22.SS7.p2.s12">
+Gravitational radiation.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="229" xml:id="C33.S22.SS7.p2.s13">
+See for example ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C33.S22.SS7.p3.s1">
+For further examples see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C33.S23">
+<title>Methods of Computation</title>           
+ 
+<subsection xml:id="C33.S23.SS1">
+<title>Methods for the Confluent Hypergeometric Functions</title>         
+<para xml:id="C33.S23.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="231" xml:id="C33.S23.SS1.p1.s1">
+The methods used for computing the Coulomb functions described below are similar to those in §LABEL:sec:CH.CO.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS2">
+<title>Series Solutions</title>         
+<para xml:id="C33.S23.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C33.S23.SS2.p1.s1">
+The power-series expansions of §§LABEL:sec:CW.PRHO and LABEL:sec:CW.SERrep converge for all finite values of the radii <Math mode="inline" xml:id="C33.S23.SS2.p1.m1">\rho</Math> and <Math mode="inline" xml:id="C33.S23.SS2.p1.m2">r</Math> , respectively, and may be used to compute the regular and irregular solutions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="233" xml:id="C33.S23.SS2.p1.s2">
+Cancellation errors increase with increases in <Math mode="inline" xml:id="C33.S23.SS2.p1.m3">\rho</Math> and <Math mode="inline" xml:id="C33.S23.SS2.p1.m4">|r|</Math> , and may be estimated by comparing the final sum of the series with the largest partial sum.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="234" xml:id="C33.S23.SS2.p1.s3">
+Use of extended-precision arithmetic increases the radial range that yields accurate results, but eventually other methods must be employed, for example, the asymptotic expansions of §§LABEL:sec:CW.ASY and LABEL:sec:CW.AFrep.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS3">
+<title>Integration of Defining Differential Equations</title>        
+ 
+<para xml:id="C33.S23.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="235" xml:id="C33.S23.SS3.p1.s1">
+When numerical values of the Coulomb functions are available for some radii, their values for other radii may be obtained by direct numerical integration of equations (LABEL:eq:CW.EQ.EQ) or (LABEL:eq:CW.EQrep.EQ), provided that the integration is carried out in a stable direction (§LABEL:sec:NM.ODE).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="236" xml:id="C33.S23.SS3.p1.s2">
+Thus the regular solutions can be computed from the power-series expansions (§§LABEL:sec:CW.PRHO, LABEL:sec:CW.SERrep) for small values of the radii and then integrated in the direction of increasing values of the radii.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="237" xml:id="C33.S23.SS3.p1.s3">
+On the other hand, the irregular solutions of §§LABEL:sec:CW.SOL.IR andLABEL:sec:CW.SOLrep.IR need to be integrated in the direction of decreasing radii beginning, for example, with values obtained from asymptotic expansions (§§LABEL:sec:CW.ASY and LABEL:sec:CW.AFrep).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS4">
+<title>Recurrence Relations</title>         
+<para xml:id="C33.S23.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="238" xml:id="C33.S23.SS4.p1.s1">
+In a similar manner to §LABEL:sec:CW.METH.RI the recurrence relations of §§LABEL:sec:CW.RR or LABEL:sec:CW.RRrep can be used for a range of values of the integer <Math mode="inline" xml:id="C33.S23.SS4.p1.m1">\ell</Math> , provided that the recurrence is carried out in a stable direction (§LABEL:sec:NM.LDE).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="239" xml:id="C33.S23.SS4.p1.s2">
+This implies decreasing <Math mode="inline" xml:id="C33.S23.SS4.p1.m2">\ell</Math> for the regular solutions and increasing <Math mode="inline" xml:id="C33.S23.SS4.p1.m3">\ell</Math> for the irregular solutions of §§LABEL:sec:CW.SOL.IR and LABEL:sec:CW.SOLrep.IR.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS5">
+<title>Continued Fractions</title>         
+<para xml:id="C33.S23.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C33.S23.SS5.p1.s1">
+§LABEL:sec:CW.CF supplies continued fractions for <Math mode="inline" xml:id="C33.S23.SS5.p1.m1">F_{\ell}'/F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S23.SS5.p1.m2">{H^{\pm}_{\ell}}'/{H^{\pm}_{\ell}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="241" xml:id="C33.S23.SS5.p1.s2">
+Combined with the Wronskians (LABEL:eq:CW.WRN.WR), the values of <Math mode="inline" xml:id="C33.S23.SS5.p1.m3">F_{\ell}</Math> , <Math mode="inline" xml:id="C33.S23.SS5.p1.m4">G_{\ell}</Math> , and their derivatives can be extracted. Inside the turning points, that is, when <Math mode="inline" xml:id="C33.S23.SS5.p1.m5">\rho&lt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math> , there can be a loss of precision by a factor of approximately <Math mode="inline" xml:id="C33.S23.SS5.p1.m6">|G_{\ell}|^{2}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS6">
+<title>Other Numerical Methods</title>         
+<para xml:id="C33.S23.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="242" xml:id="C33.S23.SS6.p1.s1">
+( , §10) describes the use of series, radial integration, and other methods to generate the tables listed in §LABEL:sec:CW.TAB.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="243" xml:id="C33.S23.SS6.p2.s1">
+( ) describes ten different methods for the calculation of <Math mode="inline" xml:id="C33.S23.SS6.p2.m1">F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S23.SS6.p2.m2">G_{\ell}</Math> , valid in different regions of the ( <Math mode="inline" xml:id="C33.S23.SS6.p2.m3">\eta,\rho</Math> )-plane.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="244" xml:id="C33.S23.SS6.p3.s1">
+( ) and ( ) use combinations of series, continued fractions, and Padé-accelerated asymptotic expansions (§LABEL:sec:NM.APT.PADE) for the analytic continuations of Coulomb functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="245" xml:id="C33.S23.SS6.p4.s1">
+( ) obtains double-precision accuracy for <Math mode="inline" xml:id="C33.S23.SS6.p4.m1">W_{-\eta,\mu}\left(2\rho\right)</Math> for a wide range of parameters using a combination of recurrence techniques, power-series expansions, and numerical quadrature; compare (LABEL:eq:CW.SOL.IR).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS7">
+<title>WKBJ Approximations</title>         
+ 
+<para xml:id="C33.S23.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="246" xml:id="C33.S23.SS7.p1.s1">
+WKBJ approximations (§LABEL:sec:AS.DE.LGA) for <Math mode="inline" xml:id="C33.S23.SS7.p1.m1">\rho&gt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math> are presented in ( ) and (: in Eq. (12) <Math mode="inline" xml:id="C33.S23.SS7.p1.m2">(\rho-c)/c</Math> should be <Math mode="inline" xml:id="C33.S23.SS7.p1.m3">(\rho-c)/\rho</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="247" xml:id="C33.S23.SS7.p1.s2">
+A set of consistent second-order WKBJ formulas is given by (: in Eq. (16) <Math mode="inline" xml:id="C33.S23.SS7.p1.m4">3\kappa^{2}+2</Math> should be <Math mode="inline" xml:id="C33.S23.SS7.p1.m5">3\kappa^{2}c+2</Math> ). ( ) estimates the accuracies of these approximations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C33.S23.SS7.p2.s1">
+( ) and ( ) give WKBJ approximations for <Math mode="inline" xml:id="C33.S23.SS7.p2.m1">F_{0}</Math> and <Math mode="inline" xml:id="C33.S23.SS7.p2.m2">G_{0}</Math> in the region inside the turning point: <Math mode="inline" xml:id="C33.S23.SS7.p2.m3">\rho&lt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C33.S24">
+<title>Tables</title>          
+ 
+<para xml:id="C33.S24.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="249" xml:id="C33.S24.p1.s1">
+( , Chapter 14) tabulates <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m1">F_{0}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m2">G_{0}\left(\eta,\rho\right)</Math> , <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m3">F_{0}'\left(\eta,\rho\right)</Math> , and <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m4">G_{0}'\left(\eta,\rho\right)</Math> for <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m5">\eta=0.5(.5)2</Math> 0 and <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m6">\rho=1(1)20</Math> , 5S; <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m7">C_{0}\left(\eta\right)</Math> for <Math mode="inline" xml:id="C33.S24.I1.i1.p1.m8">\eta=0(.05)</Math> 3, 6S. ( ) tabulates <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m1">P_{\ell}(\epsilon,r)</Math> , <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m2">Q_{\ell}(\epsilon,r)</Math> (§LABEL:sec:CW.Not), and related functions for <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m3">\ell=0,1,2</Math> and <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m4">\epsilon=-2(.2)</Math> 2, with <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m5">x=0(.1)</Math> 4 for <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m6">\epsilon&lt;0</Math> and <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m7">x=0(.1)1</Math> 0 for <Math mode="inline" xml:id="C33.S24.I1.i2.p1.m8">\epsilon\geq 0</Math> ; 6D.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S24.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="250" xml:id="C33.S24.p2.s1">
+For earlier tables see ( ) and ( , §22.59) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S25">
+<title>Approximations</title>        
+   
+<para xml:id="C33.S25.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="251" xml:id="C33.S25.p1.s1">
+( ) provides rational approximations of the phase shift <Math mode="inline" xml:id="C33.S25.p1.m1">{\sigma_{0}}\left(\eta\right)=\operatorname{ph}\Gamma\left(1+\mathrm{i}\eta\right)</Math> (see (LABEL:eq:CW.SOL.SG2)) for the ranges <Math mode="inline" xml:id="C33.S25.p1.m2">0\leq\eta\leq 2</Math> , <Math mode="inline" xml:id="C33.S25.p1.m3">2\leq\eta\leq 4</Math> , and <Math mode="inline" xml:id="C33.S25.p1.m4">4\leq\eta\leq\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="252" xml:id="C33.S25.p1.s2">
+Maximum relative errors range from1.09×10⁻²⁰ to 4.24×10⁻¹⁹.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C33.S26">
+<title>Software</title>         
+<para xml:id="C33.S26.p1">
+
+</para>
+ 
+<subsection xml:id="C33.S26.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C33.S26.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="253" xml:id="C33.S26.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="254" xml:id="C33.S26.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="255" xml:id="C33.S26.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S26.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="256" xml:id="C33.S26.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="257" xml:id="C33.S26.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S26.SS2">
+<title>Real Variable and Parameters</title>         
+<para xml:id="C33.S26.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="258" xml:id="C33.S26.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="259" xml:id="C33.S26.SS2.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="260" xml:id="C33.S26.SS2.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="261" xml:id="C33.S26.SS2.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="262" xml:id="C33.S26.SS2.p1.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="263" xml:id="C33.S26.SS2.p1.s6">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="264" xml:id="C33.S26.SS2.p1.s7">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="265" xml:id="C33.S26.SS2.p1.s8">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="266" xml:id="C33.S26.SS2.p1.s9">
+Fortran 90. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="267" xml:id="C33.S26.SS2.p1.s10">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="268" xml:id="C33.S26.SS2.p1.s11">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="269" xml:id="C33.S26.SS2.p1.s12">
+Fortran.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="270" xml:id="C33.S26.SS2.p1.s13">
+See also ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S26.SS3">
+<title>Complex Variable and/or Parameters</title>         
+<para xml:id="C33.S26.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="271" xml:id="C33.S26.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="272" xml:id="C33.S26.SS3.p1.s2">
+C++. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="273" xml:id="C33.S26.SS3.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="274" xml:id="C33.S26.SS3.p1.s4">
+Fortran.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="275" xml:id="C33.S26.SS3.p1.s5">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C34">
+<title><Math content-tex="3j,6j,9j" mode="inline" xml:id="C34.m1">\mathit{3j},\mathit{6j},\mathit{9j}</Math> Symbols</title>               
+          
+<section xml:id="C34.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C34.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C34.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C34.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C34.S1.p2.t1.r1.m1">2j_{1},2j_{2},2j_{3},2l_{1},2l_{2},2l_{3}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C34.S1.p2.t1.s2">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C34.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C34.S1.p2.t1.r2.m1">r,s,t</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C34.S1.p2.t1.s4">
+nonnegative integers.      
+</sentence>
+
+</para>
+
+    
+<para xml:id="C34.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C34.S1.p3.s1">
+The main functions treated in this chapter are the Wigner <Math mode="inline" xml:id="C34.S1.p3.m1">\mathit{3j},\mathit{6j},\mathit{9j}</Math> symbols, respectively, <Math mode="display" xml:id="C34.S1.EGx1">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}, \begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}, \begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{21}&amp;j_{22}&amp;j_{23}\\ j_{31}&amp;j_{32}&amp;j_{33}\end{Bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C34.S1.p4.s1">
+An often used alternative to the <Math mode="inline" xml:id="C34.S1.p4.m1">\mathit{3j}</Math> symbol is the Clebsch–Gordan coefficient <Math equation-number="34.1.1" mode="display" xml:id="C34.S1.E1">\left(j_{1}\;m_{1}\;j_{2}\;m_{2}|j_{1}\;j_{2}\;j_{3}\,\,m_{3}\right)=(-1)^{j_{ 1}-j_{2}+m_{3}}(2j_{3}+1)^{\frac{1}{2}}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;-m_{3}\end{pmatrix};</Math> see ( , p. 46, Eq. (3.7.3)) and ( , p. 1, Eq. (1.1a)) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C34.S1.p4.s2">
+For other notations for <Math mode="inline" xml:id="C34.S1.p4.m3">\mathit{3j}</Math> , <Math mode="inline" xml:id="C34.S1.p4.m4">\mathit{6j}</Math> , <Math mode="inline" xml:id="C34.S1.p4.m5">\mathit{9j}</Math> symbols, see ( , pp. 52, 97, 104–105) and ( , §§8.11, 9.10, 10.10) .
+</sentence>
+
+</para>
+    
+</section>
+           
+<section xml:id="C34.S2">
+<title>Definition: <Math content-tex="3j" mode="inline" xml:id="C34.S2.m1">\mathit{3j}</Math> Symbol</title>           
+<para xml:id="C34.S2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C34.S2.p1.s1">
+The quantities <Math mode="inline" xml:id="C34.S2.p1.m1">j_{1},j_{2},j_{3}</Math> in the <Math mode="inline" xml:id="C34.S2.p1.m2">\mathit{3j}</Math> symbol are calledangular momenta.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C34.S2.p1.s2">
+Either all of them are nonnegative integers, or one is a nonnegative integer and the other two are half-odd positive integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C34.S2.p1.s3">
+They must form the sides of a triangle (possibly degenerate).They therefore satisfy the triangle conditions <Math equation-number="34.2.1" mode="display" xml:id="C34.S2.E1">|j_{r}-j_{s}|\leq j_{t}\leq j_{r}+j_{s},</Math> where <Math mode="inline" xml:id="C34.S2.p1.m6">r,s,t</Math> is any permutation of <Math mode="inline" xml:id="C34.S2.p1.m7">1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C34.S2.p1.s4">
+The correspondingprojective quantum numbers <Math mode="inline" xml:id="C34.S2.p1.m8">m_{1},m_{2},m_{3}</Math> are given by <Math equation-number="34.2.2" mode="display" xml:id="C34.S2.E2">m_{r}=-j_{r},-j_{r}+1,\dots,j_{r}-1,j_{r}, subject to r=1,2,3,</Math> and satisfy <Math equation-number="34.2.3" mode="display" xml:id="C34.S2.E3">m_{1}+m_{2}+m_{3}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C34.S2.p1.s5">
+See Figure LABEL:fig:TJ.3j.triangle for a schematic representation.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="14" xml:id="C34.S2.F1.s1">
+Figure 34.2.1: Angular momenta <Math mode="inline" xml:id="C34.S2.F1.m2">j_{r}</Math> and projective quantum numbers <Math mode="inline" xml:id="C34.S2.F1.m3">m_{r}</Math> , <Math mode="inline" xml:id="C34.S2.F1.m4">r=1,2,3</Math> .
+</sentence>   
+<para xml:id="C34.S2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C34.S2.p2.s1">
+If either of the conditions (LABEL:eq:TJ3.DEF.TRI1) or (LABEL:eq:TJ3.DEF.Mi) is not satisfied, then the <Math mode="inline" xml:id="C34.S2.p2.m1">\mathit{3j}</Math> symbol is zero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C34.S2.p2.s2">
+When both conditions are satisfied the <Math mode="inline" xml:id="C34.S2.p2.m2">\mathit{3j}</Math> symbol can be expressed as the finite sum <Math equation-number="34.2.4" mode="display" xml:id="C34.S2.E4">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}={(-1)^{j_{1}-j_{2}-m_{3}}}\Delta(j_{1}j_{2}j_{3 })\left((j_{1}+m_{1})!(j_{1}-m_{1})!(j_{2}+m_{2})!(j_{2}-m_{2})!(j_{3}+m_{3})! (j_{3}-m_{3})!\right)^{\frac{1}{2}}\*\sum_{s}\frac{(-1)^{s}}{s!(j_{1}+j_{2}-j_ {3}-s)!(j_{1}-m_{1}-s)!(j_{2}+m_{2}-s)!(j_{3}-j_{2}+m_{1}+s)!(j_{3}-j_{1}-m_{2 }+s)!}</Math> , where <Math equation-number="34.2.5" mode="display" xml:id="C34.S2.E5">\Delta(j_{1}j_{2}j_{3})=\left(\frac{(j_{1}+j_{2}-j_{3})!(j_{1}-j_{2}+j_{3})!(- j_{1}+j_{2}+j_{3})!}{(j_{1}+j_{2}+j_{3}+1)!}\right)^{\frac{1}{2}}</Math> , and the summation is over all nonnegative integers <Math mode="inline" xml:id="C34.S2.p2.m3">s</Math> such that the arguments in the factorials are nonnegative.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C34.S2.p3.s1">
+Equivalently, <Math equation-number="34.2.6" mode="display" xml:id="C34.S2.E6">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}={(-1)^{j_{2}-m_{1}+m_{3}}}\frac{(j_{1}+j_{2}+m_ {3})!(j_{2}+j_{3}-m_{1})!}{\Delta(j_{1}j_{2}j_{3})(j_{1}+j_{2}+j_{3}+1)!}\left (\frac{(j_{1}+m_{1})!(j_{3}-m_{3})!}{(j_{1}-m_{1})!(j_{2}+m_{2})!(j_{2}-m_{2}) !(j_{3}+m_{3})!}\right)^{\frac{1}{2}}\*{{{}_{3}F_{2}}\left(-j_{1}-j_{2}-j_{3}- 1,-j_{1}+m_{1},-j_{3}-m_{3};-j_{1}-j_{2}-m_{3},-j_{2}-j_{3}+m_{1};1\right)},</Math> where <Math mode="inline" xml:id="C34.S2.p3.m1">{{}_{3}F_{2}}</Math> is defined as in §LABEL:sec:GH.DF.
+</sentence>
+
+</para>
+   
+<para xml:id="C34.S2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C34.S2.p4.s1">
+For alternative expressions for the <Math mode="inline" xml:id="C34.S2.p4.m1">\mathit{3j}</Math> symbol, written either as a finite sum or as other terminating generalized hypergeometric series <Math mode="inline" xml:id="C34.S2.p4.m2">{{}_{3}F_{2}}</Math> of unit argument, see ( , §§8.21, 8.24–8.26) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S3">
+<title>Basic Properties: <Math content-tex="3j" mode="inline" xml:id="C34.S3.m1">\mathit{3j}</Math> Symbol</title>         
+<subsection xml:id="C34.S3.SS1">
+<title>Special Cases</title>          
+<para xml:id="C34.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C34.S3.SS1.p1.s1">
+When any one of <Math mode="inline" xml:id="C34.S3.SS1.p1.m1">j_{1},j_{2},j_{3}</Math> is equal to <Math mode="inline" xml:id="C34.S3.SS1.p1.m2">0,\tfrac{1}{2}</Math> , or <Math mode="inline" xml:id="C34.S3.SS1.p1.m3">1</Math> , the <Math mode="inline" xml:id="C34.S3.SS1.p1.m4">\mathit{3j}</Math> symbol has a simple algebraic form.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C34.S3.SS1.p1.s2">
+Examples are provided by <Math equation-number="34.3.1" mode="display" xml:id="C34.S3.E1">\begin{pmatrix}j&amp;j&amp;0\\ m&amp;-m&amp;0\end{pmatrix}=\frac{(-1)^{j-m}}{(2j+1)^{\frac{1}{2}}},</Math> , <Math equation-number="34.3.2" mode="display" xml:id="C34.S3.E2">\begin{pmatrix}j&amp;j&amp;1\\ m&amp;-m&amp;0\end{pmatrix}=(-1)^{j-m}\frac{2m}{\left(2j(2j+1)(2j+2)\right)^{\frac{1}{ 2}}}, subject to j\geq\tfrac{1}{2},</Math> , <Math equation-number="34.3.3" mode="display" xml:id="C34.S3.E3">\begin{pmatrix}j&amp;j&amp;1\\ m&amp;-m-1&amp;1\end{pmatrix}=(-1)^{j-m}\left(\frac{2(j-m)(j+m+1)}{2j(2j+1)(2j+2)} \right)^{\frac{1}{2}}, subject to j\geq\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C34.S3.SS1.p1.s3">
+For these and other results, and also cases in which any one of <Math mode="inline" xml:id="C34.S3.SS1.p1.m5">j_{1},j_{2},j_{3}</Math> is <Math mode="inline" xml:id="C34.S3.SS1.p1.m6">\frac{3}{2}</Math> or <Math mode="inline" xml:id="C34.S3.SS1.p1.m7">2</Math> , see ( , pp. 125–127) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C34.S3.SS1.p2.s1">
+Next define <Math equation-number="34.3.4" mode="display" xml:id="C34.S3.E4">J=j_{1}+j_{2}+j_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C34.S3.SS1.p2.s2">
+Then assuming the triangle conditions are satisfied
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C34.S3.SS1.p3.s1">
+ <Math equation-number="34.3.5" mode="display" xml:id="C34.S3.E5">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 0&amp;0&amp;0\end{pmatrix}=\begin{cases}0,&amp;\mbox{$J$ odd},\\ (-1)^{\frac{1}{2}J}\left(\dfrac{(J-2j_{1})!(J-2j_{2})!(J-2j_{3})!}{(J+1)!} \right)^{\frac{1}{2}}\dfrac{(\frac{1}{2}J)!}{(\frac{1}{2}J-j_{1})!(\frac{1}{2} J-j_{2})!(\frac{1}{2}J-j_{3})!},&amp;\mbox{$J$ even}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S3.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C34.S3.SS1.p4.s1">
+Lastly,
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S3.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C34.S3.SS1.p5.s1">
+ <Math equation-number="34.3.6" mode="display" xml:id="C34.S3.E6">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{1}+j_{2}\\ m_{1}&amp;m_{2}&amp;-m_{1}-m_{2}\end{pmatrix}=(-1)^{j_{1}-j_{2}+m_{1}+m_{2}}\left( \frac{(2j_{1})!(2j_{2})!(j_{1}+j_{2}+m_{1}+m_{2})!(j_{1}+j_{2}-m_{1}-m_{2})!}{ (2j_{1}+2j_{2}+1)!(j_{1}+m_{1})!(j_{1}-m_{1})!(j_{2}+m_{2})!(j_{2}-m_{2})!} \right)^{\frac{1}{2}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S3.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C34.S3.SS1.p6.s1">
+ <Math equation-number="34.3.7" mode="display" xml:id="C34.S3.E7">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ j_{1}&amp;-j_{1}-m_{3}&amp;m_{3}\end{pmatrix}=(-1)^{j_{1}-j_{2}-m_{3}}\left(\frac{(2j_ {1})!(-j_{1}+j_{2}+j_{3})!(j_{1}+j_{2}+m_{3})!(j_{3}-m_{3})!}{(j_{1}+j_{2}+j_{ 3}+1)!(j_{1}-j_{2}+j_{3})!(j_{1}+j_{2}-j_{3})!(-j_{1}+j_{2}-m_{3})!(j_{3}+m_{3 })!}\right)^{\frac{1}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C34.S3.SS1.p6.s2">
+Again it is assumed that in (LABEL:eq:TJ3.SC7) the triangle conditions are satisfied.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS2">
+<title>Symmetry</title>         
+ 
+<para xml:id="C34.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C34.S3.SS2.p1.s1">
+Even permutations of columns of a <Math mode="inline" xml:id="C34.S3.SS2.p1.m1">\mathit{3j}</Math> symbol leave it unchanged; odd permutations of columns produce a phase factor <Math mode="inline" xml:id="C34.S3.SS2.p1.m2">(-1)^{j_{1}+j_{2}+j_{3}}</Math> , for example, <Math equation-number="34.3.8" mode="display" xml:id="C34.S3.E8">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=\begin{pmatrix}j_{2}&amp;j_{3}&amp;j_{1}\\ m_{2}&amp;m_{3}&amp;m_{1}\end{pmatrix}=\begin{pmatrix}j_{3}&amp;j_{1}&amp;j_{2}\\ m_{3}&amp;m_{1}&amp;m_{2}\end{pmatrix},</Math> , <Math equation-number="34.3.9" mode="display" xml:id="C34.S3.E9">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=(-1)^{j_{1}+j_{2}+j_{3}}\begin{pmatrix}j_{2}&amp;j_ {1}&amp;j_{3}\\ m_{2}&amp;m_{1}&amp;m_{3}\end{pmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C34.S3.SS2.p2.s1">
+Next, <Math equation-number="34.3.10" mode="display" xml:id="C34.S3.E10">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=(-1)^{j_{1}+j_{2}+j_{3}}\begin{pmatrix}j_{1}&amp;j_ {2}&amp;j_{3}\\ -m_{1}&amp;-m_{2}&amp;-m_{3}\end{pmatrix},</Math> , <Math equation-number="34.3.11" mode="display" xml:id="C34.S3.E11">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=\begin{pmatrix}j_{1}&amp;\frac{1}{2}(j_{2}+j_{3}+m_ {1})&amp;\frac{1}{2}(j_{2}+j_{3}-m_{1})\\ j_{2}-j_{3}&amp;\frac{1}{2}(j_{3}-j_{2}+m_{1})+m_{2}&amp;\frac{1}{2}(j_{3}-j_{2}+m_{1} )+m_{3}\end{pmatrix},</Math> , <Math equation-number="34.3.12" mode="display" xml:id="C34.S3.E12">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=\begin{pmatrix}\frac{1}{2}(j_{1}+j_{2}-m_{3})&amp; \frac{1}{2}(j_{2}+j_{3}-m_{1})&amp;\frac{1}{2}(j_{1}+j_{3}-m_{2})\\ j_{3}-\frac{1}{2}(j_{1}+j_{2}+m_{3})&amp;j_{1}-\frac{1}{2}(j_{2}+j_{3}+m_{1})&amp;j_{2 }-\frac{1}{2}(j_{1}+j_{3}+m_{2})\end{pmatrix}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S3.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C34.S3.SS2.p3.s1">
+Equations (LABEL:eq:TJ3.SYM.REG1) and (LABEL:eq:TJ3.SYM.REG2) are calledRegge symmetries.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C34.S3.SS2.p3.s2">
+Additional symmetries are obtained by applying (LABEL:eq:TJ3.SYM1.3j)–(LABEL:eq:TJ3.SYM3.3j) to (LABEL:eq:TJ3.SYM.REG1)) and (LABEL:eq:TJ3.SYM.REG2).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C34.S3.SS2.p3.s3">
+See ( , pp. 44–47) and references given there.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS3">
+<title>Recursion Relations</title>         
+ 
+<para xml:id="C34.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C34.S3.SS3.p1.s1">
+In the following three equations it is assumed that the triangle conditions are satisfied by each <Math mode="inline" xml:id="C34.S3.SS3.p1.m1">\mathit{3j}</Math> symbol.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C34.S3.SS3.p1.s2">
+<Math equation-number="34.3.13" mode="display" xml:id="C34.S3.E13">\left((j_{1}+j_{2}+j_{3}+1)(-j_{1}+j_{2}+j_{3})\right)^{\frac{1}{2}}\begin{ pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=\left((j_{2}+m_{2})(j_{3}-m_{3})\right)^{\frac{ 1}{2}}\begin{pmatrix}j_{1}&amp;j_{2}-\frac{1}{2}&amp;j_{3}-\frac{1}{2}\\ m_{1}&amp;m_{2}-\frac{1}{2}&amp;m_{3}+\frac{1}{2}\end{pmatrix}-\left((j_{2}-m_{2})(j_{ 3}+m_{3})\right)^{\frac{1}{2}}\begin{pmatrix}j_{1}&amp;j_{2}-\frac{1}{2}&amp;j_{3}- \frac{1}{2}\\ m_{1}&amp;m_{2}+\frac{1}{2}&amp;m_{3}-\frac{1}{2}\end{pmatrix},</Math> <Math equation-number="34.3.14" mode="display" xml:id="C34.S3.E14">\left(j_{1}(j_{1}+1)-j_{2}(j_{2}+1)-j_{3}(j_{3}+1)-2m_{2}m_{3}\right)\begin{ pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=\left((j_{2}-m_{2})(j_{2}+m_{2}+1)(j_{3}-m_{3}+ 1)(j_{3}+m_{3})\right)^{\frac{1}{2}}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}+1&amp;m_{3}-1\end{pmatrix}+\left((j_{2}-m_{2}+1)(j_{2}+m_{2})(j_{3}-m_ {3})(j_{3}+m_{3}+1)\right)^{\frac{1}{2}}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}-1&amp;m_{3}+1\end{pmatrix},</Math> <Math equation-number="34.3.15" mode="display" xml:id="C34.S3.E15">(2j_{1}+1)\left((j_{2}(j_{2}+1)-j_{3}(j_{3}+1))m_{1}-j_{1}(j_{1}+1)(m_{3}-m_{2 })\right)\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=(j_{1}+1)\left(j_{1}^{2}-(j_{2}-j_{3})^{2} \right)^{\frac{1}{2}}\left((j_{2}+j_{3}+1)^{2}-j_{1}^{2}\right)^{\frac{1}{2}} \left(j_{1}^{2}-m_{1}^{2}\right)^{\frac{1}{2}}\begin{pmatrix}j_{1}-1&amp;j_{2}&amp;j_{ 3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}+j_{1}\left((j_{1}+1)^{2}-(j_{2}-j_{3})^{2} \right)^{\frac{1}{2}}\left((j_{2}+j_{3}+1)^{2}-(j_{1}+1)^{2}\right)^{\frac{1}{ 2}}\left((j_{1}+1)^{2}-m_{1}^{2}\right)^{\frac{1}{2}}\begin{pmatrix}j_{1}+1&amp;j_ {2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C34.S3.SS3.p1.s3">
+For these and other recursion relations see ( , §8.6) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C34.S3.SS3.p1.s4">
+See also ( ) , ( ) , ( ) , ( , pp. 220–225) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS4">
+<title>Orthogonality</title>          
+<para xml:id="C34.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C34.S3.SS4.p1.s1">
+ <Math equation-number="34.3.16" mode="display" xml:id="C34.S3.E16">\sum_{m_{1}m_{2}}(2j_{3}+1)\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j^{\prime}_{3}\\ m_{1}&amp;m_{2}&amp;m^{\prime}_{3}\end{pmatrix}=\delta_{j_{3},j^{\prime}_{3}}\delta_{m _{3},m^{\prime}_{3}},</Math> , <Math equation-number="34.3.17" mode="display" xml:id="C34.S3.E17">\sum_{j_{3}m_{3}}(2j_{3}+1)\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m^{\prime}_{1}&amp;m^{\prime}_{2}&amp;m_{3}\end{pmatrix}=\delta_{m_{1},m^{\prime}_{1}} \delta_{m_{2},m^{\prime}_{2}},</Math> , <Math equation-number="34.3.18" mode="display" xml:id="C34.S3.E18">\sum_{m_{1}m_{2}m_{3}}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C34.S3.SS4.p1.s2">
+In the summations (LABEL:eq:TJ3.ORTH1.3j)–(LABEL:eq:TJ3.ORTH3.3j) the summation variables range over all values that satisfy the conditions given in (LABEL:eq:TJ3.DEF.TRI1)–(LABEL:eq:TJ3.DEF.Mi).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C34.S3.SS4.p1.s3">
+Similar conventions apply to all subsequent summations in this chapter.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS5">
+<title>Generating Functions</title>          
+<para xml:id="C34.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C34.S3.SS5.p1.s1">
+For generating functions for the <Math mode="inline" xml:id="C34.S3.SS5.p1.m1">\mathit{3j}</Math> symbol see ( , p. 245, Eq. (3.42) and p. 247, Eq. (3.55)) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS6">
+<title>Sums</title>        
+  
+<para xml:id="C34.S3.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C34.S3.SS6.p1.s1">
+For sums of products of <Math mode="inline" xml:id="C34.S3.SS6.p1.m1">\mathit{3j}</Math> symbols, see ( , pp. 259–262) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S3.SS7">
+<title>Relations to Legendre Polynomials and Spherical Harmonics</title>             
+<para xml:id="C34.S3.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C34.S3.SS7.p1.s1">
+For the polynomials <Math mode="inline" xml:id="C34.S3.SS7.p1.m1">P_{l}</Math> see §LABEL:sec:OP.CP.OR, and for the function <Math mode="inline" xml:id="C34.S3.SS7.p1.m2">Y_{{l},{m}}</Math> see §LABEL:sec:LE.SSH.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C34.S3.SS7.p1.s2">
+<Math equation-number="34.3.19" mode="display" xml:id="C34.S3.E19">P_{l_{1}}\left(\cos\theta\right)P_{l_{2}}\left(\cos\theta\right)=\sum_{l}(2l+1 )\begin{pmatrix}l_{1}&amp;l_{2}&amp;l\\ 0&amp;0&amp;0\end{pmatrix}^{2}P_{l}\left(\cos\theta\right),</Math> <Math equation-number="34.3.20" mode="display" xml:id="C34.S3.E20">Y_{{l_{1}},{m_{1}}}\left(\theta,\phi\right)Y_{{l_{2}},{m_{2}}}\left(\theta, \phi\right)=\sum_{l,m}\left(\frac{(2l_{1}+1)(2l_{2}+1)(2l+1)}{4\pi}\right)^{ \frac{1}{2}}\begin{pmatrix}l_{1}&amp;l_{2}&amp;l\\ m_{1}&amp;m_{2}&amp;m\end{pmatrix}\overline{Y_{{l},{m}}\left(\theta,\phi\right)}\begin {pmatrix}l_{1}&amp;l_{2}&amp;l\\ 0&amp;0&amp;0\end{pmatrix},</Math> <Math equation-number="34.3.21" mode="display" xml:id="C34.S3.E21">\int_{0}^{\pi}P_{l_{1}}\left(\cos\theta\right)P_{l_{2}}\left(\cos\theta\right) P_{l_{3}}\left(\cos\theta\right)\sin\theta\mathrm{d}\theta=2\begin{pmatrix}l_{ 1}&amp;l_{2}&amp;l_{3}\\ 0&amp;0&amp;0\end{pmatrix}^{2},</Math> <Math equation-number="34.3.22" mode="display" xml:id="C34.S3.E22">\int_{0}^{2\pi}\!\int_{0}^{\pi}Y_{{l_{1}},{m_{1}}}\left(\theta,\phi\right)Y_{{ l_{2}},{m_{2}}}\left(\theta,\phi\right)Y_{{l_{3}},{m_{3}}}\left(\theta,\phi \right)\sin\theta\mathrm{d}\theta\mathrm{d}\phi=\left(\frac{(2l_{1}+1)(2l_{2}+ 1)(2l_{3}+1)}{4\pi}\right)^{\frac{1}{2}}\begin{pmatrix}l_{1}&amp;l_{2}&amp;l_{3}\\ 0&amp;0&amp;0\end{pmatrix}\begin{pmatrix}l_{1}&amp;l_{2}&amp;l_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C34.S3.SS7.p1.s3">
+Equations (LABEL:eq:TJ3.SH3)–(LABEL:eq:TJ3.INT2) are particular cases of more general results that relate rotation matrices to <Math mode="inline" xml:id="C34.S3.SS7.p1.m3">\mathit{3j}</Math> symbols, for which see ( , Chapter 4) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="46" xml:id="C34.S3.SS7.p1.s4">
+The left- and right-hand sides of (LABEL:eq:TJ3.INT2) are known, respectively, as Gaunt’s integral and the Gaunt coefficient ( ( ) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C34.S4">
+<title>Definition: <Math content-tex="6j" mode="inline" xml:id="C34.S4.m1">\mathit{6j}</Math> Symbol</title>           
+ 
+<para xml:id="C34.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C34.S4.p1.s1">
+The <Math mode="inline" xml:id="C34.S4.p1.m1">\mathit{6j}</Math> symbol is defined by the following double sum of products of <Math mode="inline" xml:id="C34.S4.p1.m2">\mathit{3j}</Math> symbols: <Math equation-number="34.4.1" mode="display" xml:id="C34.S4.E1">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\sum_{m_{r}m^{\prime}_{s}}(-1)^{l_{1}+m^{\prime }_{1}+l_{2}+m^{\prime}_{2}+l_{3}+m^{\prime}_{3}}\*\begin{pmatrix}j_{1}&amp;j_{2}&amp;j _{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{pmatrix}j_{1}&amp;l_{2}&amp;l_{3}\\ m_{1}&amp;m^{\prime}_{2}&amp;-m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;j_{2}&amp;l_ {3}\\ -m^{\prime}_{1}&amp;m_{2}&amp;m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;l_{2}&amp;j_ {3}\\ m^{\prime}_{1}&amp;-m^{\prime}_{2}&amp;m_{3}\end{pmatrix},</Math> where the summation is taken over all admissible values of the <Math mode="inline" xml:id="C34.S4.p1.m3">m</Math> ’s and <Math mode="inline" xml:id="C34.S4.p1.m4">m^{\prime}</Math> ’s for each of the four <Math mode="inline" xml:id="C34.S4.p1.m5">\mathit{3j}</Math> symbols; compare (LABEL:eq:TJ3.DEF.M1) and (LABEL:eq:TJ3.DEF.Mi).
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C34.S4.p2.s1">
+Except in degenerate cases the combination of the triangle inequalities for the four <Math mode="inline" xml:id="C34.S4.p2.m1">\mathit{3j}</Math> symbols in (LABEL:eq:TJ6.DEF.D1) is equivalent to the existence of a tetrahedron (possibly degenerate) with edges of lengths <Math mode="inline" xml:id="C34.S4.p2.m2">j_{1},j_{2},j_{3},l_{1},l_{2},l_{3}</Math> ; see Figure LABEL:fig:TJ.6j.tetrahedron.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="49" xml:id="C34.S4.F1.s1">
+Figure 34.4.1: Tetrahedron corresponding to <Math mode="inline" xml:id="C34.S4.F1.m2">\mathit{6j}</Math> symbol.
+</sentence>  
+<para xml:id="C34.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C34.S4.p3.s1">
+The <Math mode="inline" xml:id="C34.S4.p3.m1">\mathit{6j}</Math> symbol can be expressed as the finite sum <Math equation-number="34.4.2" mode="display" xml:id="C34.S4.E2">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\Delta(j_{1}j_{2}j_{3})\Delta(j_{1}l_{2}l_{3}) \Delta(l_{1}j_{2}l_{3})\Delta(l_{1}l_{2}j_{3})\*\sum_{s}\frac{(-1)^{s}(s+1)!}{ (s-j_{1}-j_{2}-j_{3})!(s-j_{1}-l_{2}-l_{3})!(s-l_{1}-j_{2}-l_{3})!(s-l_{1}-l_{ 2}-j_{3})!}\*\frac{1}{(j_{1}+j_{2}+l_{1}+l_{2}-s)!(j_{2}+j_{3}+l_{2}+l_{3}-s)! (j_{3}+j_{1}+l_{3}+l_{1}-s)!}</Math> , where the summation is over all nonnegative integers <Math mode="inline" xml:id="C34.S4.p3.m2">s</Math> such that the arguments in the factorials are nonnegative.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C34.S4.p4.s1">
+Equivalently, <Math equation-number="34.4.3" mode="display" xml:id="C34.S4.E3">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}={(-1)^{j_{1}+j_{3}+l_{1}+l_{3}}}\frac{\Delta(j_ {1}j_{2}j_{3})\Delta(j_{2}l_{1}l_{3})(j_{1}-j_{2}+l_{1}+l_{2})!(-j_{2}+j_{3}+l _{2}+l_{3})!(j_{1}+j_{3}+l_{1}+l_{3}+1)!}{\Delta(j_{1}l_{2}l_{3})\Delta(j_{3}l _{1}l_{2})(j_{1}-j_{2}+j_{3})!(-j_{2}+l_{1}+l_{3})!(j_{1}+l_{2}+l_{3}+1)!(j_{3 }+l_{1}+l_{2}+1)!}\*{{}_{4}F_{3}}\left({-j_{1}+j_{2}-j_{3},j_{2}-l_{1}-l_{3},- j_{1}-l_{2}-l_{3}-1,-j_{3}-l_{1}-l_{2}-1\atop-j_{1}+j_{2}-l_{1}-l_{2},j_{2}-j_ {3}-l_{2}-l_{3},-j_{1}-j_{3}-l_{1}-l_{3}-1};1\right),</Math> where <Math mode="inline" xml:id="C34.S4.p4.m1">{{}_{4}F_{3}}</Math> is defined as in §LABEL:sec:GH.DF.
+</sentence>
+
+</para>
+  
+<para xml:id="C34.S4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C34.S4.p5.s1">
+For alternative expressions for the <Math mode="inline" xml:id="C34.S4.p5.m1">\mathit{6j}</Math> symbol, written either as a finite sum or as other terminating generalized hypergeometric series <Math mode="inline" xml:id="C34.S4.p5.m2">{{}_{4}F_{3}}</Math> of unit argument, see ( , §§9.2.1, 9.2.3) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S5">
+<title>Basic Properties: <Math content-tex="6j" mode="inline" xml:id="C34.S5.m1">\mathit{6j}</Math> Symbol</title>        
+ 
+<subsection xml:id="C34.S5.SS1">
+<title>Special Cases</title>          
+<para xml:id="C34.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C34.S5.SS1.p1.s1">
+In the following equations it is assumed that the triangle inequalities are satisfied and that <Math mode="inline" xml:id="C34.S5.SS1.p1.m1">J</Math> is again defined by (LABEL:eq:TJ3.SC4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C34.S5.SS1.p2.s1">
+If any lower argument in a <Math mode="inline" xml:id="C34.S5.SS1.p2.m1">\mathit{6j}</Math> symbol is <Math mode="inline" xml:id="C34.S5.SS1.p2.m2">0</Math> , <Math mode="inline" xml:id="C34.S5.SS1.p2.m3">\tfrac{1}{2}</Math> , or <Math mode="inline" xml:id="C34.S5.SS1.p2.m4">1</Math> , then the <Math mode="inline" xml:id="C34.S5.SS1.p2.m5">\mathit{6j}</Math> symbol has a simple algebraic form.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C34.S5.SS1.p2.s2">
+Examples are provided by: <Math equation-number="34.5.1" mode="display" xml:id="C34.S5.E1">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 0&amp;j_{3}&amp;j_{2}\end{Bmatrix}=\frac{(-1)^{J}}{\left((2j_{2}+1)(2j_{3}+1)\right)^{ \frac{1}{2}}},</Math> , <Math equation-number="34.5.2" mode="display" xml:id="C34.S5.E2">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ \frac{1}{2}&amp;j_{3}-\frac{1}{2}&amp;j_{2}+\frac{1}{2}\end{Bmatrix}=(-1)^{J}\left( \frac{(j_{1}+j_{3}-j_{2})(j_{1}+j_{2}-j_{3}+1)}{(2j_{2}+1)(2j_{2}+2)2j_{3}(2j_ {3}+1)}\right)^{\frac{1}{2}},</Math> , <Math equation-number="34.5.3" mode="display" xml:id="C34.S5.E3">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ \frac{1}{2}&amp;j_{3}-\frac{1}{2}&amp;j_{2}-\frac{1}{2}\end{Bmatrix}=(-1)^{J}\left( \frac{(j_{2}+j_{3}-j_{1})(j_{1}+j_{2}+j_{3}+1)}{2j_{2}(2j_{2}+1)2j_{3}(2j_{3}+ 1)}\right)^{\frac{1}{2}},</Math> , <Math equation-number="34.5.4" mode="display" xml:id="C34.S5.E4">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 1&amp;j_{3}-1&amp;j_{2}-1\end{Bmatrix}=(-1)^{J}\left(\frac{J(J+1)(J-2j_{1})(J-2j_{1}-1 )}{(2j_{2}-1)2j_{2}(2j_{2}+1)(2j_{3}-1)2j_{3}(2j_{3}+1)}\right)^{\frac{1}{2}},</Math> , <Math equation-number="34.5.5" mode="display" xml:id="C34.S5.E5">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 1&amp;j_{3}-1&amp;j_{2}\end{Bmatrix}=(-1)^{J}\left(\frac{2(J+1)(J-2j_{1})(J-2j_{2})(J- 2j_{3}+1)}{2j_{2}(2j_{2}+1)(2j_{2}+2)(2j_{3}-1)2j_{3}(2j_{3}+1)}\right)^{\frac {1}{2}},</Math> , <Math equation-number="34.5.6" mode="display" xml:id="C34.S5.E6">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 1&amp;j_{3}-1&amp;j_{2}+1\end{Bmatrix}=(-1)^{J}\left(\frac{(J-2j_{2}-1)(J-2j_{2})(J-2j _{3}+1)(J-2j_{3}+2)}{(2j_{2}+1)(2j_{2}+2)(2j_{2}+3)(2j_{3}-1)2j_{3}(2j_{3}+1)} \right)^{\frac{1}{2}},</Math> , <Math equation-number="34.5.7" mode="display" xml:id="C34.S5.E7">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ 1&amp;j_{3}&amp;j_{2}\end{Bmatrix}=(-1)^{J+1}\frac{2(j_{2}(j_{2}+1)+j_{3}(j_{3}+1)-j_{ 1}(j_{1}+1))}{\left(2j_{2}(2j_{2}+1)(2j_{2}+2)2j_{3}(2j_{3}+1)(2j_{3}+2)\right )^{\frac{1}{2}}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S5.SS2">
+<title>Symmetry</title>        
+  
+<para xml:id="C34.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C34.S5.SS2.p1.s1">
+The <Math mode="inline" xml:id="C34.S5.SS2.p1.m1">\mathit{6j}</Math> symbol is invariant under interchange of any two columns and also under interchange of the upper and lower arguments in each of any two columns, for example, <Math equation-number="34.5.8" mode="display" xml:id="C34.S5.E8">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\begin{Bmatrix}j_{2}&amp;j_{1}&amp;j_{3}\\ l_{2}&amp;l_{1}&amp;l_{3}\end{Bmatrix}=\begin{Bmatrix}j_{1}&amp;l_{2}&amp;l_{3}\\ l_{1}&amp;j_{2}&amp;j_{3}\end{Bmatrix}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C34.S5.SS2.p2.s1">
+Next, <Math equation-number="34.5.9" mode="display" xml:id="C34.S5.E9">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\begin{Bmatrix}j_{1}&amp;\frac{1}{2}(j_{2}+l_{2}+j_ {3}-l_{3})&amp;\frac{1}{2}(j_{2}-l_{2}+j_{3}+l_{3})\\ l_{1}&amp;\frac{1}{2}(j_{2}+l_{2}-j_{3}+l_{3})&amp;\frac{1}{2}(-j_{2}+l_{2}+j_{3}+l_{3 })\end{Bmatrix},</Math> , <Math equation-number="34.5.10" mode="display" xml:id="C34.S5.E10">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\begin{Bmatrix}\frac{1}{2}(j_{2}+l_{2}+j_{3}-l_ {3})&amp;\frac{1}{2}(j_{1}-l_{1}+j_{3}+l_{3})&amp;\frac{1}{2}(j_{1}+l_{1}+j_{2}-l_{2}) \\ \frac{1}{2}(j_{2}+l_{2}-j_{3}+l_{3})&amp;\frac{1}{2}(-j_{1}+l_{1}+j_{3}+l_{3})&amp; \frac{1}{2}(j_{1}+l_{1}-j_{2}+l_{2})\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C34.S5.SS2.p2.s2">
+Equations (LABEL:eq:TJ6.SYM.R1) and (LABEL:eq:TJ6.SYM.R2) are calledRegge symmetries.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C34.S5.SS2.p2.s3">
+Additional symmetries are obtained by applying (LABEL:eq:TJ6.SYM1.6j) to (LABEL:eq:TJ6.SYM.R1) and (LABEL:eq:TJ6.SYM.R2).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="60" xml:id="C34.S5.SS2.p2.s4">
+See ( , pp. 102–103) and references given there.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S5.SS3">
+<title>Recursion Relations</title>          
+<para xml:id="C34.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C34.S5.SS3.p1.s1">
+In the following equation it is assumed that the triangle conditions are satisfied. <Math equation-number="34.5.11" mode="display" xml:id="C34.S5.E11">{(2j_{1}+1)\left((J_{3}+J_{2}-J_{1})(L_{3}+L_{2}-J_{1})-2(J_{3}L_{3}+J_{2}L_{2 }-J_{1}L_{1})\right)\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}}\\ =j_{1}E(j_{1}+1)\begin{Bmatrix}j_{1}+1&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}+(j_{1}+1)E(j_{1})\begin{Bmatrix}j_{1}-1&amp;j_{2}&amp;j _{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix},</Math> where <Math equation-number="34.5.12" mode="display" xml:id="C34.S5.E12">J_{r}=j_{r}(j_{r}+1), L_{r}=l_{r}(l_{r}+1),</Math> <Math equation-number="34.5.13" mode="display" xml:id="C34.S5.E13">E(j)=\left((j^{2}-(j_{2}-j_{3})^{2})((j_{2}+j_{3}+1)^{2}-j^{2})(j^{2}-(l_{2}-l _{3})^{2})((l_{2}+l_{3}+1)^{2}-j^{2})\right)^{\frac{1}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C34.S5.SS3.p2.s1">
+For further recursion relations see ( , §9.6) and ( , pp. 98–99) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S5.SS4">
+<title>Orthogonality</title>          
+<para xml:id="C34.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C34.S5.SS4.p1.s1">
+ <Math equation-number="34.5.14" mode="display" xml:id="C34.S5.E14">\sum_{j_{3}}(2j_{3}+1)(2l_{3}+1)\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l^{\prime}_{3}\end{Bmatrix}=\delta_{l_{3},l^{\prime}_{3}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S5.SS5">
+<title>Generating Functions</title>          
+<para xml:id="C34.S5.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C34.S5.SS5.p1.s1">
+For generating functions for the <Math mode="inline" xml:id="C34.S5.SS5.p1.m1">\mathit{6j}</Math> symbol see ( , p. 255, eq.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C34.S5.SS5.p1.s2">
+(4.18)) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S5.SS6">
+<title>Sums</title>          
+<para xml:id="C34.S5.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C34.S5.SS6.p1.s1">
+ <Math equation-number="34.5.15" mode="display" xml:id="C34.S5.E15">\sum_{j}(-1)^{j+j^{\prime}+j^{\prime\prime}}(2j+1)\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j \\ j_{3}&amp;j_{4}&amp;j^{\prime}\end{Bmatrix}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j\\ j_{4}&amp;j_{3}&amp;j^{\prime\prime}\end{Bmatrix}=\begin{Bmatrix}j_{1}&amp;j_{4}&amp;j^{\prime }\\ j_{2}&amp;j_{3}&amp;j^{\prime\prime}\end{Bmatrix},</Math> <Math equation-number="34.5.16" mode="display" xml:id="C34.S5.E16">(-1)^{j_{1}+j_{2}+j_{3}+j_{1}^{\prime}+j_{2}^{\prime}+l_{1}+l_{2}}\begin{ Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}\begin{Bmatrix}j_{1}^{\prime}&amp;j_{2}^{\prime}&amp;j_{ 3}\\ l_{1}&amp;l_{2}&amp;l_{3}^{\prime}\end{Bmatrix}=\sum_{j}(-1)^{l_{3}+l_{3}^{\prime}+j}( 2j+1)\begin{Bmatrix}j_{1}&amp;j_{1}^{\prime}&amp;j\\ j_{2}^{\prime}&amp;j_{2}&amp;j_{3}\end{Bmatrix}\begin{Bmatrix}l_{3}&amp;l_{3}^{\prime}&amp;j\\ j_{1}^{\prime}&amp;j_{1}&amp;l_{2}\end{Bmatrix}\begin{Bmatrix}l_{3}&amp;l_{3}^{\prime}&amp;j\\ j_{2}^{\prime}&amp;j_{2}&amp;l_{1}\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="67" xml:id="C34.S5.SS6.p1.s2">
+Equations (LABEL:eq:TJ6.SUM3) and (LABEL:eq:TJ6.6j.6j) are the sum rules.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="68" xml:id="C34.S5.SS6.p1.s3">
+They constitute addition theorems for the <Math mode="inline" xml:id="C34.S5.SS6.p1.m2">\mathit{6j}</Math> symbol.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="69" xml:id="C34.S5.SS6.p1.s4">
+<Math equation-number="34.5.17" mode="display" xml:id="C34.S5.E17">\sum_{j}(2j+1)\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j\\ j_{1}&amp;j_{2}&amp;j^{\prime}\end{Bmatrix}=(-1)^{2(j_{1}+j_{2})},</Math> , <Math equation-number="34.5.18" mode="display" xml:id="C34.S5.E18">\sum_{j}(-1)^{j_{1}+j_{2}+j}(2j+1)\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j\\ j_{2}&amp;j_{1}&amp;j^{\prime}\end{Bmatrix}=\sqrt{(2j_{1}+1)(2j_{2}+1)}\,\delta_{j^{ \prime},0},</Math> , <Math equation-number="34.5.19" mode="display" xml:id="C34.S5.E19">\sum_{l}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;l\\ j_{2}&amp;j_{1}&amp;j\end{Bmatrix}=0, subject to 2\mu-j odd, \mu=\min(j_{1},j_{2}),</Math> , <Math equation-number="34.5.20" mode="display" xml:id="C34.S5.E20">\sum_{l}(-1)^{l+j}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;l\\ j_{1}&amp;j_{2}&amp;j\end{Bmatrix}=\frac{(-1)^{2\mu}}{2j+1}, subject to \mu=\min(j_{1},j_{2}),</Math> <Math equation-number="34.5.21" mode="display" xml:id="C34.S5.E21">\sum_{l}(-1)^{l+j+j_{1}+j_{2}}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;l\\ j_{2}&amp;j_{1}&amp;j\end{Bmatrix}=\frac{1}{2j+1}\left(\frac{(2j_{1}-j)!(2j_{2}+j+1)!} {(2j_{2}-j)!(2j_{1}+j+1)!}\right)^{\frac{1}{2}}, subject to j_{2}\leq j_{1},</Math> , <Math equation-number="34.5.22" mode="display" xml:id="C34.S5.E22">\sum_{l}(-1)^{l+j+j_{1}+j_{2}}\frac{1}{l(l+1)}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;l\\ j_{2}&amp;j_{1}&amp;j\end{Bmatrix}=\frac{1}{j_{1}(j_{1}+1)-j_{2}(j_{2}+1)}\left(\frac{ (2j_{1}-j)!(2j_{2}+j+1)!}{(2j_{2}-j)!(2j_{1}+j+1)!}\right)^{\frac{1}{2}}, subject to j_{2}&lt;j_{1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S5.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C34.S5.SS6.p2.s1">
+ <Math equation-number="34.5.23" mode="display" xml:id="C34.S5.E23">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ l_{1}&amp;l_{2}&amp;l_{3}\end{Bmatrix}=\sum_{m^{\prime}_{1}m^{\prime}_{2}m^{\prime}_{3 }}(-1)^{l_{1}+l_{2}+l_{3}+m^{\prime}_{1}+m^{\prime}_{2}+m^{\prime}_{3}}\begin{ pmatrix}j_{1}&amp;l_{2}&amp;l_{3}\\ m_{1}&amp;m^{\prime}_{2}&amp;-m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;j_{2}&amp;l_ {3}\\ -m^{\prime}_{1}&amp;m_{2}&amp;m^{\prime}_{3}\end{pmatrix}\begin{pmatrix}l_{1}&amp;l_{2}&amp;j_ {3}\\ m^{\prime}_{1}&amp;-m^{\prime}_{2}&amp;m_{3}\end{pmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C34.S5.SS6.p2.s2">
+Equation (LABEL:eq:TJ6.3j.6j) can be regarded as an alternative definition of the <Math mode="inline" xml:id="C34.S5.SS6.p2.m2">\mathit{6j}</Math> symbol.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S5.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C34.S5.SS6.p3.s1">
+For other sums see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C34.S6">
+<title>Definition: <Math content-tex="9j" mode="inline" xml:id="C34.S6.m1">\mathit{9j}</Math> Symbol</title>           
+<para xml:id="C34.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C34.S6.p1.s1">
+The <Math mode="inline" xml:id="C34.S6.p1.m1">\mathit{9j}</Math> symbol may be defined either in terms of <Math mode="inline" xml:id="C34.S6.p1.m2">\mathit{3j}</Math> symbols or equivalently in terms of <Math mode="inline" xml:id="C34.S6.p1.m3">\mathit{6j}</Math> symbols: <Math equation-number="34.6.1" mode="display" xml:id="C34.S6.E1">\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{21}&amp;j_{22}&amp;j_{23}\\ j_{31}&amp;j_{32}&amp;j_{33}\end{Bmatrix}=\sum_{\mbox{\scriptsize all }m_{rs}}\begin{ pmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ m_{11}&amp;m_{12}&amp;m_{13}\end{pmatrix}\begin{pmatrix}j_{21}&amp;j_{22}&amp;j_{23}\\ m_{21}&amp;m_{22}&amp;m_{23}\end{pmatrix}\begin{pmatrix}j_{31}&amp;j_{32}&amp;j_{33}\\ m_{31}&amp;m_{32}&amp;m_{33}\end{pmatrix}\*\begin{pmatrix}j_{11}&amp;j_{21}&amp;j_{31}\\ m_{11}&amp;m_{21}&amp;m_{31}\end{pmatrix}\begin{pmatrix}j_{12}&amp;j_{22}&amp;j_{32}\\ m_{12}&amp;m_{22}&amp;m_{32}\end{pmatrix}\begin{pmatrix}j_{13}&amp;j_{23}&amp;j_{33}\\ m_{13}&amp;m_{23}&amp;m_{33}\end{pmatrix},</Math> , <Math equation-number="34.6.2" mode="display" xml:id="C34.S6.E2">\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{21}&amp;j_{22}&amp;j_{23}\\ j_{31}&amp;j_{32}&amp;j_{33}\end{Bmatrix}=\sum_{j}(-1)^{2j}(2j+1)\begin{Bmatrix}j_{11} &amp;j_{21}&amp;j_{31}\\ j_{32}&amp;j_{33}&amp;j\end{Bmatrix}\begin{Bmatrix}j_{12}&amp;j_{22}&amp;j_{32}\\ j_{21}&amp;j&amp;j_{23}\end{Bmatrix}\begin{Bmatrix}j_{13}&amp;j_{23}&amp;j_{33}\\ j&amp;j_{11}&amp;j_{12}\end{Bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C34.S6.p2.s1">
+The <Math mode="inline" xml:id="C34.S6.p2.m1">\mathit{9j}</Math> symbol may also be written as a finite triple sum equivalent to a terminating generalized hypergeometric series of three variables with unit arguments.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="75" xml:id="C34.S6.p2.s2">
+See ( , pp. 7 and 125–132) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S7">
+<title>Basic Properties: <Math content-tex="9j" mode="inline" xml:id="C34.S7.m1">\mathit{9j}</Math> Symbol</title>        
+ 
+<subsection xml:id="C34.S7.SS1">
+<title>Special Case</title>          
+<para xml:id="C34.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C34.S7.SS1.p1.s1">
+ <Math equation-number="34.7.1" mode="display" xml:id="C34.S7.E1">\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{21}&amp;j_{22}&amp;j_{13}\\ j_{31}&amp;j_{31}&amp;0\end{Bmatrix}=\frac{(-1)^{j_{12}+j_{21}+j_{13}+j_{31}}}{((2j_{1 3}+1)(2j_{31}+1))^{\frac{1}{2}}}\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{22}&amp;j_{21}&amp;j_{31}\end{Bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S7.SS2">
+<title>Symmetry</title>         
+ 
+<para xml:id="C34.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C34.S7.SS2.p1.s1">
+The <Math mode="inline" xml:id="C34.S7.SS2.p1.m1">\mathit{9j}</Math> symbol has symmetry properties with respect to permutation of columns, permutation of rows, and transposition of rows and columns; these relate 72 independent <Math mode="inline" xml:id="C34.S7.SS2.p1.m2">\mathit{9j}</Math> symbols.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="78" xml:id="C34.S7.SS2.p1.s2">
+Even (cyclic) permutations of either columns or rows, as well as transpositions, leave the <Math mode="inline" xml:id="C34.S7.SS2.p1.m3">\mathit{9j}</Math> symbol unchanged. Odd permutations of columns or rows introduce a phase factor <Math mode="inline" xml:id="C34.S7.SS2.p1.m4">(-1)^{R}</Math> , where <Math mode="inline" xml:id="C34.S7.SS2.p1.m5">R</Math> is the sum of all arguments of the <Math mode="inline" xml:id="C34.S7.SS2.p1.m6">\mathit{9j}</Math> symbol.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C34.S7.SS2.p2.s1">
+For further symmetry properties of the <Math mode="inline" xml:id="C34.S7.SS2.p2.m1">\mathit{9j}</Math> symbol see ( , pp. 102–103) and ( , §10.4.1) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S7.SS3">
+<title>Recursion Relations</title>          
+<para xml:id="C34.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C34.S7.SS3.p1.s1">
+For recursion relations see ( , §10.5) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S7.SS4">
+<title>Orthogonality</title>          
+<para xml:id="C34.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C34.S7.SS4.p1.s1">
+ <Math equation-number="34.7.2" mode="display" xml:id="C34.S7.E2">\sum_{j_{12}\,j_{34}}(2j_{12}+1)(2j_{34}+1)(2j_{13}+1)(2j_{24}+1)\begin{ Bmatrix}j_{1}&amp;j_{2}&amp;j_{12}\\ j_{3}&amp;j_{4}&amp;j_{34}\\ j_{13}&amp;j_{24}&amp;j\end{Bmatrix}\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{12}\\ j_{3}&amp;j_{4}&amp;j_{34}\\ j^{\prime}_{13}&amp;j^{\prime}_{24}&amp;j\end{Bmatrix}=\delta_{j_{13},j^{\prime}_{13}} \delta_{j_{24},j^{\prime}_{24}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S7.SS5">
+<title>Generating Functions</title>          
+<para xml:id="C34.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C34.S7.SS5.p1.s1">
+For generating functions for the <Math mode="inline" xml:id="C34.S7.SS5.p1.m1">\mathit{9j}</Math> symbol see ( , p. 258, eq.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="83" xml:id="C34.S7.SS5.p1.s2">
+(4.37)) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C34.S7.SS6">
+<title>Sums</title>        
+  
+<para xml:id="C34.S7.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C34.S7.SS6.p1.s1">
+ <Math equation-number="34.7.3" mode="display" xml:id="C34.S7.E3">\sum_{j_{13}\,j_{24}}(-1)^{2j_{2}+j_{24}+j_{23}-j_{34}}(2j_{13}+1)(2j_{24}+1) \begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{12}\\ j_{3}&amp;j_{4}&amp;j_{34}\\ j_{13}&amp;j_{24}&amp;j\end{Bmatrix}\begin{Bmatrix}j_{1}&amp;j_{3}&amp;j_{13}\\ j_{4}&amp;j_{2}&amp;j_{24}\\ j_{14}&amp;j_{23}&amp;j\end{Bmatrix}=\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{12}\\ j_{4}&amp;j_{3}&amp;j_{34}\\ j_{14}&amp;j_{23}&amp;j\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C34.S7.SS6.p1.s2">
+This equation is the sum rule.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="86" xml:id="C34.S7.SS6.p1.s3">
+It constitutes an addition theorem for the <Math mode="inline" xml:id="C34.S7.SS6.p1.m3">\mathit{9j}</Math> symbol.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S7.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C34.S7.SS6.p2.s1">
+ <Math equation-number="34.7.4" mode="display" xml:id="C34.S7.E4">\begin{pmatrix}j_{13}&amp;j_{23}&amp;j_{33}\\ m_{13}&amp;m_{23}&amp;m_{33}\end{pmatrix}\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j_{13}\\ j_{21}&amp;j_{22}&amp;j_{23}\\ j_{31}&amp;j_{32}&amp;j_{33}\end{Bmatrix}=\sum_{m_{r1},m_{r2},r=1,2,3}\begin{pmatrix}j _{11}&amp;j_{12}&amp;j_{13}\\ m_{11}&amp;m_{12}&amp;m_{13}\end{pmatrix}\begin{pmatrix}j_{21}&amp;j_{22}&amp;j_{23}\\ m_{21}&amp;m_{22}&amp;m_{23}\end{pmatrix}\*\begin{pmatrix}j_{31}&amp;j_{32}&amp;j_{33}\\ m_{31}&amp;m_{32}&amp;m_{33}\end{pmatrix}\begin{pmatrix}j_{11}&amp;j_{21}&amp;j_{31}\\ m_{11}&amp;m_{21}&amp;m_{31}\end{pmatrix}\begin{pmatrix}j_{12}&amp;j_{22}&amp;j_{32}\\ m_{12}&amp;m_{22}&amp;m_{32}\end{pmatrix}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C34.S7.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C34.S7.SS6.p3.s1">
+ <Math equation-number="34.7.5" mode="display" xml:id="C34.S7.E5">\sum_{j^{\prime}}(2j^{\prime}+1)\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j^{\prime}\\ j_{21}&amp;j_{22}&amp;j_{23}\\ j_{31}&amp;j_{32}&amp;j_{33}\end{Bmatrix}\begin{Bmatrix}j_{11}&amp;j_{12}&amp;j^{\prime}\\ j_{23}&amp;j_{33}&amp;j\end{Bmatrix}={(-1)^{2j}}\begin{Bmatrix}j_{21}&amp;j_{22}&amp;j_{23}\\ j_{12}&amp;j&amp;j_{32}\end{Bmatrix}\begin{Bmatrix}j_{31}&amp;j_{32}&amp;j_{33}\\ j&amp;j_{11}&amp;j_{21}\end{Bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C34.S8">
+<title>Approximations for Large Parameters</title>            
+<para xml:id="C34.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C34.S8.p1.s1">
+For large values of the parameters in the <Math mode="inline" xml:id="C34.S8.p1.m1">\mathit{3j}</Math> , <Math mode="inline" xml:id="C34.S8.p1.m2">\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S8.p1.m3">\mathit{9j}</Math> symbols, different asymptotic forms are obtained depending on which parameters are large.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="90" xml:id="C34.S8.p1.s2">
+For example, <Math equation-number="34.8.1" mode="display" xml:id="C34.S8.E1">\begin{Bmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ j_{2}&amp;j_{1}&amp;l_{3}\end{Bmatrix}=(-1)^{j_{1}+j_{2}+j_{3}+l_{3}}\*\left(\frac{4}{ \pi(2j_{1}+1)(2j_{2}+1)(2l_{3}+1)\sin\theta}\right)^{\frac{1}{2}}\*\left(\cos \left((l_{3}+\tfrac{1}{2})\theta-\tfrac{1}{4}\pi\right)+o\left(1\right)\right), subject to j_{1},j_{2},j_{3}\gg l_{3}\gg 1,</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C34.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C34.S8.p2.s1">
+where <Math equation-number="34.8.2" mode="display" xml:id="C34.S8.E2">\cos\theta=\frac{j_{1}(j_{1}+1)+j_{2}(j_{2}+1)-j_{3}(j_{3}+1)}{2\sqrt{j_{1}(j_ {1}+1)j_{2}(j_{2}+1)}},</Math> and the symbol <Math mode="inline" xml:id="C34.S8.p2.m1">o\left(1\right)</Math> denotes a quantity that tends to zero as the parameters tend to infinity, as in §LABEL:sec:AS.DEP.AOS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C34.S8.p3.s1">
+Semiclassical (WKBJ) approximations in terms of trigonometric or exponential functions are given in ( , §§8.9, 9.9, 10.7) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="93" xml:id="C34.S8.p3.s2">
+Uniform approximations in terms of Airy functions for the <Math mode="inline" xml:id="C34.S8.p3.m1">\mathit{3j}</Math> and <Math mode="inline" xml:id="C34.S8.p3.m2">\mathit{6j}</Math> symbols are given in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="94" xml:id="C34.S8.p3.s3">
+For approximations for the <Math mode="inline" xml:id="C34.S8.p3.m3">\mathit{3j}</Math> , <Math mode="inline" xml:id="C34.S8.p3.m4">\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S8.p3.m5">\mathit{9j}</Math> symbols with error bounds see ( ) , ( ) , and ( ) : these references also cite earlier work.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S9">
+<title>Graphical Method</title>        
+   
+ 
+<para xml:id="C34.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C34.S9.p1.s1">
+The graphical method establishes a one-to-one correspondence between an analytic expression and a diagram by assigning a graphical symbol to each function and operation of the analytic expression.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C34.S9.p1.s2">
+Thus, any analytic expression in the theory, for example equations (LABEL:eq:TJ3.ORTH1.3j),(LABEL:eq:TJ6.DEF.D1), (LABEL:eq:TJ6.SUM3), and (LABEL:eq:TJ9.SUM.S1), may be represented by a diagram; conversely, any diagram represents an analytic equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="97" xml:id="C34.S9.p1.s3">
+For an account of this method see ( , Chapter VII) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="98" xml:id="C34.S9.p1.s4">
+For specific examples of the graphical method of representing sums involving the <Math mode="inline" xml:id="C34.S9.p1.m1">\mathit{3j},\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S9.p1.m2">\mathit{9j}</Math> symbols, see ( , Chapters 11, 12) and ( , §3.3) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S10">
+<title>Zeros</title>           
+<para xml:id="C34.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C34.S10.p1.s1">
+In a <Math mode="inline" xml:id="C34.S10.p1.m1">\mathit{3j}</Math> symbol, if the three angular momenta <Math mode="inline" xml:id="C34.S10.p1.m2">j_{1},j_{2},j_{3}</Math> do not satisfy the triangle conditions (LABEL:eq:TJ3.DEF.TRI1), or if the projective quantum numbers do not satisfy (LABEL:eq:TJ3.DEF.Mi), then the <Math mode="inline" xml:id="C34.S10.p1.m3">\mathit{3j}</Math> symbol is zero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="100" xml:id="C34.S10.p1.s2">
+Similarly the <Math mode="inline" xml:id="C34.S10.p1.m4">\mathit{6j}</Math> symbol (LABEL:eq:TJ6.DEF.D1) vanishes when thetriangle conditions are not satisfied by any of the four <Math mode="inline" xml:id="C34.S10.p1.m5">\mathit{3j}</Math> symbols in the summation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="101" xml:id="C34.S10.p1.s3">
+Such zeros are called trivial zeros.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="102" xml:id="C34.S10.p1.s4">
+However, the <Math mode="inline" xml:id="C34.S10.p1.m6">\mathit{3j}</Math> and <Math mode="inline" xml:id="C34.S10.p1.m7">\mathit{6j}</Math> symbols may vanish for certain combinations of the angular momenta and projective quantum numbers even when the triangle conditions are fulfilled. Such zeros are called nontrivial zeros.
+</sentence>
+
+</para>
+  
+<para xml:id="C34.S10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C34.S10.p2.s1">
+For further information, including examples of nontrivial zeros and extensions to <Math mode="inline" xml:id="C34.S10.p2.m1">\mathit{9j}</Math> symbols, see ( , pp. 133–215, 294–295, 299–310) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S11">
+<title>Higher-Order <Math mode="inline" xml:id="C34.S11.m1">3nj</Math> Symbols</title>          
+<para xml:id="C34.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C34.S11.p1.s1">
+For information on <Math mode="inline" xml:id="C34.S11.p1.m1">12j,15j</Math> ,…, symbols, see ( , §10.12) and ( , pp. 62–65 and 122–153) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C34.S12">
+<title>Physical Applications</title>         
+         
+<para xml:id="C34.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C34.S12.p1.s1">
+The angular momentum coupling coefficients ( <Math mode="inline" xml:id="C34.S12.p1.m1">\mathit{3j}</Math> , <Math mode="inline" xml:id="C34.S12.p1.m2">\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S12.p1.m3">\mathit{9j}</Math> symbols) are essential in the fields of nuclear, atomic, and molecular physics.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C34.S12.p1.s2">
+For applications in nuclear structure, see ( ) ; in atomic spectroscopy, see ( , pp. 134–200) , ( ) , ( , Chapter 4) , ( , pp. 268–303) , and ( ) ; in molecular spectroscopy and chemical reactions, see ( , Chapter 5) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="107" xml:id="C34.S12.p1.s3">
+<Math mode="inline" xml:id="C34.S12.p1.m4">\mathit{3j},\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S12.p1.m5">\mathit{9j}</Math> symbols are also found in multipole expansions of solutions of the Laplace and Helmholtz equations; see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C34.S13">
+<title>Methods of Computation</title>          
+ 
+<para xml:id="C34.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C34.S13.p1.s1">
+Methods of computation for <Math mode="inline" xml:id="C34.S13.p1.m1">\mathit{3j}</Math> and <Math mode="inline" xml:id="C34.S13.p1.m2">\mathit{6j}</Math> symbols include recursion relations, see ( ) , ( ) , and ( , pp. 42–45, 48–51, 97–99) ; summation of single-sum expressions for these symbols, see ( , §§8.2.6, 9.2.1) and ( ) ; evaluation of the generalized hypergeometric functions of unit argument that represent these symbols, see ( ) and ( ) .
+</sentence>
+
+</para>
+  
+<para xml:id="C34.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C34.S13.p2.s1">
+For <Math mode="inline" xml:id="C34.S13.p2.m1">\mathit{9j}</Math> symbols, methods include evaluation of the single-sum series (LABEL:eq:TJ9.DEF.6j),see ( ) ; evaluation of triple-sum series, see ( , §10.2.1) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C34.S13.p2.s2">
+A review of methods of computation is given in ( , Chapter VII, pp. 235–265) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C34.S13.p2.s3">
+See also ( ) and references given there.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S14">
+<title>Tables</title>            
+<para xml:id="C34.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C34.S14.p1.s1">
+Tables of exact values of the squares of the <Math mode="inline" xml:id="C34.S14.p1.m1">\mathit{3j}</Math> and <Math mode="inline" xml:id="C34.S14.p1.m2">\mathit{6j}</Math> symbols in which all parameters are <Math mode="inline" xml:id="C34.S14.p1.m3">\leq 8</Math> are given in ( ) , together witha bibliography of earlier tables of <Math mode="inline" xml:id="C34.S14.p1.m4">\mathit{3j},\mathit{6j}</Math> , and <Math mode="inline" xml:id="C34.S14.p1.m5">\mathit{9j}</Math> symbols on pp. 33–36.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C34.S14.p2.s1">
+Tables of <Math mode="inline" xml:id="C34.S14.p2.m1">\mathit{3j}</Math> and <Math mode="inline" xml:id="C34.S14.p2.m2">\mathit{6j}</Math> symbols in which all parameters are <Math mode="inline" xml:id="C34.S14.p2.m3">\leq 17/2</Math> are given in ( ) to 6D.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C34.S14.p2.s2">
+Some selected <Math mode="inline" xml:id="C34.S14.p2.m4">\mathit{9j}</Math> symbols are also given.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="115" xml:id="C34.S14.p2.s3">
+Other tabulations for <Math mode="inline" xml:id="C34.S14.p2.m5">\mathit{3j}</Math> symbols are listed on pp. 11-12; for <Math mode="inline" xml:id="C34.S14.p2.m6">\mathit{6j}</Math> symbols on pp. 16-17; for <Math mode="inline" xml:id="C34.S14.p2.m7">\mathit{9j}</Math> symbols on p. 21.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S14.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C34.S14.p3.s1">
+( ) give tables of algebraic expressions for Clebsch–Gordan coefficients and <Math mode="inline" xml:id="C34.S14.p3.m1">\mathit{6j}</Math> symbols, together with a bibliography of tables produced prior to 1975.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="117" xml:id="C34.S14.p3.s2">
+In ( ) algebraic expressions for the Clebsch–Gordan coefficients with all parameters <Math mode="inline" xml:id="C34.S14.p3.m2">\leq 5</Math> and numerical values for all parameters <Math mode="inline" xml:id="C34.S14.p3.m3">\leq 3</Math> are given on pp. 270–289; similar tables for the <Math mode="inline" xml:id="C34.S14.p3.m4">\mathit{6j}</Math> symbols are given on pp. 310–332, and for the <Math mode="inline" xml:id="C34.S14.p3.m5">\mathit{9j}</Math> symbols on pp. 359, 360, 372–411.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="118" xml:id="C34.S14.p3.s3">
+Earlier tables are listed on p. 513.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C34.S15">
+<title>Software</title>        
+ 
+<para xml:id="C34.S15.p1">
+
+</para>
+
+ 
+<para xml:id="C34.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C34.S15.p2.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="120" xml:id="C34.S15.p2.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="121" xml:id="C34.S15.p2.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C34.S15.p3.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S15.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C34.S15.p4.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C34.S15.p4.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="125" xml:id="C34.S15.p4.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="126" xml:id="C34.S15.p4.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="127" xml:id="C34.S15.p4.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="128" xml:id="C34.S15.p4.s6">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="129" xml:id="C34.S15.p4.s7">
+Pascal.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="130" xml:id="C34.S15.p4.s8">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="131" xml:id="C34.S15.p4.s9">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="132" xml:id="C34.S15.p4.s10">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="133" xml:id="C34.S15.p4.s11">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="134" xml:id="C34.S15.p4.s12">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="135" xml:id="C34.S15.p4.s13">
+Fortran.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="136" xml:id="C34.S15.p4.s14">
+See also ( ) and ( , Appendix C, pp. 266–292) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+
+</chapter>

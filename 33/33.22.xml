@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S22">
+<title>Particle Scattering and Atomic and Molecular Spectra</title>         
+<subsection xml:id="C33.S22.SS1">
+<title>Schrödinger Equation</title>           
+<para xml:id="C33.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S22.SS1.p1.s1">
+With <Math mode="inline" xml:id="C33.S22.SS1.p1.m1">e</Math> denoting here the elementary charge, the Coulomb potential between two point particles with charges <Math mode="inline" xml:id="C33.S22.SS1.p1.m2">Z_{1}e,Z_{2}e</Math> and masses <Math mode="inline" xml:id="C33.S22.SS1.p1.m3">m_{1},m_{2}</Math> separated by a distance <Math mode="inline" xml:id="C33.S22.SS1.p1.m4">s</Math> is <Math mode="inline" xml:id="C33.S22.SS1.p1.m5">V(s)=Z_{1}Z_{2}e^{2}/(4\pi\varepsilon_{0}s)=Z_{1}Z_{2}\alpha\hbar c/s</Math> , where <Math mode="inline" xml:id="C33.S22.SS1.p1.m6">Z_{j}</Math> are atomic numbers, <Math mode="inline" xml:id="C33.S22.SS1.p1.m7">\varepsilon_{0}</Math> is the electric constant, <Math mode="inline" xml:id="C33.S22.SS1.p1.m8">\alpha</Math> is the fine structure constant, and <Math mode="inline" xml:id="C33.S22.SS1.p1.m9">\hbar</Math> is the reduced Planck’s constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C33.S22.SS1.p1.s2">
+The reduced mass is <Math mode="inline" xml:id="C33.S22.SS1.p1.m10">m=m_{1}m_{2}/(m_{1}+m_{2})</Math> , and at energy of relative motion <Math mode="inline" xml:id="C33.S22.SS1.p1.m11">E</Math> with relative orbital angular momentum <Math mode="inline" xml:id="C33.S22.SS1.p1.m12">\ell\hbar</Math> , the Schrödinger equation for the radial wave function <Math mode="inline" xml:id="C33.S22.SS1.p1.m13">w(s)</Math> is given by <Math equation-number="33.22.1" mode="display" xml:id="C33.S22.E1">\left(-\frac{\hbar^{2}}{2m}\left(\frac{{\mathrm{d}}^{2}}{{\mathrm{d}s}^{2}}- \frac{\ell(\ell+1)}{s^{2}}\right)+\frac{Z_{1}Z_{2}\alpha\hbar c}{s}\right)w=Ew,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C33.S22.SS1.p2.s1">
+With the substitutions <Math equation-number="33.22.2" mode="display" xml:id="C33.S22.E2">{\sf k}=(2mE/\hbar^{2})^{1/2},Z=mZ_{1}Z_{2}\alpha c/\hbar,x=s,</Math> (33.22.1)becomes
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C33.S22.SS1.p2.s2">
+<Math equation-number="33.22.3" mode="display" xml:id="C33.S22.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}+\left({\sf k}^{2}-\frac{2Z}{x}- \frac{\ell(\ell+1)}{x^{2}}\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS2">
+<title>Definitions of Variables</title>         
+<paragraph xml:id="C33.S22.Px1">
+<title><Math mode="inline" xml:id="C33.S22.Px1.m1">{\sf k}</Math> Scaling</title>     
+<para xml:id="C33.S22.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S22.Px1.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px1.p1.m1">{\sf k}</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px1.p1.m2">\rho</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p1.m3">\eta</Math> of §33.2 are given by <Math equation-number="33.22.4" mode="display" xml:id="C33.S22.E4">\rho=s(2mE/\hbar^{2})^{1/2},\eta=Z_{1}Z_{2}\alpha c(m/(2E))^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C33.S22.Px1.p2.s1">
+At positive energies <Math mode="inline" xml:id="C33.S22.Px1.p2.m1">E&gt;0</Math> , <Math mode="inline" xml:id="C33.S22.Px1.p2.m2">\rho\geq 0</Math> , and:
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="7" sentence-num-in-table="1" xml:id="C33.S22.Px1.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="2" xml:id="C33.S22.Px1.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r1.m2">\eta&amp;lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="3" xml:id="C33.S22.Px1.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="4" xml:id="C33.S22.Px1.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r2.m3">\eta=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="5" xml:id="C33.S22.Px1.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="6" xml:id="C33.S22.Px1.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px1.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px1.t1.r3.m2">\eta&amp;gt;0</Math>.
+</sentence>
+       
+<para xml:id="C33.S22.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C33.S22.Px1.p3.s1">
+Positive-energy functions correspond to processes such as Rutherford scatteringand Coulomb excitation of nuclei (Alder et al. (1956)), and atomic photo-ionization and electron-ion collisions (Bethe and Salpeter (1977)).
+</sentence>
+
+</para>
+   
+<para xml:id="C33.S22.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C33.S22.Px1.p4.s1">
+At negative energies <Math mode="inline" xml:id="C33.S22.Px1.p4.m1">E&lt;0</Math> and both <Math mode="inline" xml:id="C33.S22.Px1.p4.m2">\rho</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p4.m3">\eta</Math> are purely imaginary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C33.S22.Px1.p4.s2">
+The negative-energy functions are widely used in the description of atomic and molecular spectra; see Bethe and Salpeter (1977), Seaton (1983), andAymar et al. (1996).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C33.S22.Px1.p4.s3">
+In these applications, the <Math mode="inline" xml:id="C33.S22.Px1.p4.m4">Z</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px1.p4.m5">r</Math> and <Math mode="inline" xml:id="C33.S22.Px1.p4.m6">\epsilon</Math> are more convenient.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C33.S22.Px2">
+<title><Math mode="inline" xml:id="C33.S22.Px2.m1">Z</Math> Scaling</title>     
+<para xml:id="C33.S22.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C33.S22.Px2.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px2.p1.m1">Z</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px2.p1.m2">r</Math> and <Math mode="inline" xml:id="C33.S22.Px2.p1.m3">\epsilon</Math> of §33.14 are given by <Math equation-number="33.22.5" mode="display" xml:id="C33.S22.E5">r=-Z_{1}Z_{2}(mc\alpha/\hbar)s,\epsilon=E/(Z_{1}^{2}Z_{2}^{2}m{c^{2}}{\alpha^{2}}/2)</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C33.S22.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C33.S22.Px2.p2.s1">
+For <Math mode="inline" xml:id="C33.S22.Px2.p2.m1">Z_{1}Z_{2}=-1</Math> and <Math mode="inline" xml:id="C33.S22.Px2.p2.m2">m=m_{e}</Math> , the electron mass, the scaling factors in (33.22.5)reduce to the Bohr radius, <Math mode="inline" xml:id="C33.S22.Px2.p2.m3">a_{0}=\hbar/(m_{e}c\alpha)</Math> , and to a multiple of the Rydberg constant,
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C33.S22.Px2.p3.s1">
+ <Math mode="inline" xml:id="C33.S22.Px2.p3.m1">R_{\infty}=m_{e}c{\alpha^{2}}/(2\hbar)</Math>.
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="1" xml:id="C33.S22.Px2.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="2" xml:id="C33.S22.Px2.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r1.m2">r&amp;gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="3" xml:id="C33.S22.Px2.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="4" xml:id="C33.S22.Px2.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r2.m3">r=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="5" xml:id="C33.S22.Px2.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="6" xml:id="C33.S22.Px2.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px2.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px2.t1.r3.m2">r&amp;lt;0</Math>.
+</sentence>
+  
+</paragraph>
+ 
+<paragraph xml:id="C33.S22.Px3">
+<title><Math mode="inline" xml:id="C33.S22.Px3.m1">\mathrm{i}{\sf k}</Math> Scaling</title>    
+ 
+<para xml:id="C33.S22.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C33.S22.Px3.p1.s1">
+The <Math mode="inline" xml:id="C33.S22.Px3.p1.m1">\mathrm{i}{\sf k}</Math> -scaled variables <Math mode="inline" xml:id="C33.S22.Px3.p1.m2">z</Math> and <Math mode="inline" xml:id="C33.S22.Px3.p1.m3">\kappa</Math> of §13.2 are given by <Math equation-number="33.22.6" mode="display" xml:id="C33.S22.E6">z=2\mathrm{i}s(2mE/\hbar^{2})^{1/2},\kappa=\mathrm{i}Z_{1}Z_{2}\alpha c(m/(2E))^{1/2}</Math>.
+</sentence>
+
+</para>
+     
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="1" xml:id="C33.S22.Px3.t1.s1">
+Attractive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="2" xml:id="C33.S22.Px3.t1.s2">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r1.m1">Z_{1}Z_{2}&amp;lt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r1.m2">\Im\kappa&amp;lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="3" xml:id="C33.S22.Px3.t1.s3">
+Zero potential (<Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m1">V=0</Math>):
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="4" xml:id="C33.S22.Px3.t1.s4">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m2">Z_{1}Z_{2}=0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r2.m3">\kappa=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="5" xml:id="C33.S22.Px3.t1.s5">
+Repulsive potentials:
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="6" xml:id="C33.S22.Px3.t1.s6">
+<Math mode="inline" xml:id="C33.S22.Px3.t1.r3.m1">Z_{1}Z_{2}&amp;gt;0</Math>, <Math mode="inline" xml:id="C33.S22.Px3.t1.r3.m2">\Im\kappa&amp;gt;0</Math>.
+</sentence>
+ 
+   
+<para xml:id="C33.S22.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C33.S22.Px3.p2.s1">
+Customary variables are <Math mode="inline" xml:id="C33.S22.Px3.p2.m1">(\epsilon,r)</Math> in atomic physics and <Math mode="inline" xml:id="C33.S22.Px3.p2.m2">(\eta,\rho)</Math> in atomic and nuclear physics.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C33.S22.Px3.p2.s2">
+Both variable sets may be used for attractive and repulsive potentials: the <Math mode="inline" xml:id="C33.S22.Px3.p2.m3">(\epsilon,r)</Math> set cannot be used for a zero potential because this would imply <Math mode="inline" xml:id="C33.S22.Px3.p2.m4">r=0</Math> for all <Math mode="inline" xml:id="C33.S22.Px3.p2.m5">s</Math> , and the <Math mode="inline" xml:id="C33.S22.Px3.p2.m6">(\eta,\rho)</Math> set cannot be used for zero energy <Math mode="inline" xml:id="C33.S22.Px3.p2.m7">E</Math> because this would imply <Math mode="inline" xml:id="C33.S22.Px3.p2.m8">\rho=0</Math> always.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS3">
+<title>Conversions Between Variables</title>           
+<para xml:id="C33.S22.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C33.S22.SS3.p1.s1">
+ <Math equation-number="33.22.7" mode="display" xml:id="C33.S22.E7">r=-\eta\rho,\epsilon=1/\eta^{2}, if Z from {\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C33.S22.SS3.p1.s2">
+<Math equation-number="33.22.8" mode="display" xml:id="C33.S22.E8">z=2\mathrm{i}\rho,\kappa=\mathrm{i}\eta, if \mathrm{i}{\sf k} from {\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C33.S22.SS3.p1.s3">
+<Math equation-number="33.22.9" mode="display" xml:id="C33.S22.E9">\rho=z/(2\mathrm{i}),\eta=\kappa/\mathrm{i}, if {\sf k} from \mathrm{i}{\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="38" xml:id="C33.S22.SS3.p1.s4">
+<Math equation-number="33.22.10" mode="display" xml:id="C33.S22.E10">r=\kappa z/2,\epsilon=-1/\kappa^{2}, if Z from \mathrm{i}{\sf k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="39" xml:id="C33.S22.SS3.p1.s5">
+<Math equation-number="33.22.11" mode="display" xml:id="C33.S22.E11">\eta=\pm\epsilon^{-1/2},\rho=-r/\eta, if {\sf k} from Z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="40" xml:id="C33.S22.SS3.p1.s6">
+<Math equation-number="33.22.12" mode="display" xml:id="C33.S22.E12">\kappa=\pm(-\epsilon)^{-1/2},z=2r/\kappa, if \mathrm{i}{\sf k} from Z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="41" xml:id="C33.S22.SS3.p1.s7">
+Resolution of the ambiguous signs in (33.22.11),(33.22.12)depends on the sign of <Math mode="inline" xml:id="C33.S22.SS3.p1.m1">Z/\mathsf{k}</Math> in (33.22.3).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="42" xml:id="C33.S22.SS3.p1.s8">
+See also §§33.14(ii),33.14(iii), 33.22(i), and33.22(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS4">
+<title>Klein–Gordon and Dirac Equations</title>               
+<para xml:id="C33.S22.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C33.S22.SS4.p1.s1">
+The relativistic motion of spinless particles in a Coulomb field, as encountered in pionic atoms and pion-nucleon scattering (Backenstoss (1970)) is described by a Klein–Gordon equation equivalent to (33.2.1); see Barnett (1981a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C33.S22.SS4.p1.s2">
+The motion of a relativistic electron in a Coulomb field, which arises in the theory of the electronic structure of heavy elements (Johnson (2007)), is described by a Dirac equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C33.S22.SS4.p1.s3">
+The solutions to this equation are closely related to the Coulomb functions; see Greiner et al. (1985).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS5">
+<title>Asymptotic Solutions</title>         
+<para xml:id="C33.S22.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C33.S22.SS5.p1.s1">
+The Coulomb solutions of the Schrödinger and Klein–Gordon equations are almost always used in the external region, outside the range of any non-Coulomb forces or couplings.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C33.S22.SS5.p2.s1">
+For scattering problems, the interior solution is then matched to a linear combination of a pair of Coulomb functions, <Math mode="inline" xml:id="C33.S22.SS5.p2.m1">F_{\ell}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S22.SS5.p2.m2">G_{\ell}\left(\eta,\rho\right)</Math> , or <Math mode="inline" xml:id="C33.S22.SS5.p2.m3">f\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S22.SS5.p2.m4">h\left(\epsilon,\ell;r\right)</Math> , to determine the scattering <Math mode="inline" xml:id="C33.S22.SS5.p2.m5">S</Math> -matrix and also the correct normalization of the interior wave solutions; seeBloch et al. (1951).
+</sentence>
+
+</para>
+    
+<para xml:id="C33.S22.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C33.S22.SS5.p3.s1">
+For bound-state problems only the exponentially decaying solution is required, usually taken to be the Whittaker function <Math mode="inline" xml:id="C33.S22.SS5.p3.m1">W_{-\eta,\ell+\frac{1}{2}}\left(2\rho\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C33.S22.SS5.p3.s2">
+The functions <Math mode="inline" xml:id="C33.S22.SS5.p3.m2">\phi_{n,\ell}(r)</Math> defined by (33.14.14) are the hydrogenic bound states in attractive Coulomb potentials; their polynomial components are often calledassociated Laguerre functions; see Christy and Duck (1961) andBethe and Salpeter (1977).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS6">
+<title>Solutions Inside the Turning Point</title>           
+<para xml:id="C33.S22.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C33.S22.SS6.p1.s1">
+The penetrability of repulsive Coulomb potential barriers is normally expressed in terms of the quantity <Math mode="inline" xml:id="C33.S22.SS6.p1.m1">\rho/({F_{\ell}^{2}}\left(\eta,\rho\right)+{G_{\ell}^{2}}\left(\eta,\rho\right))</Math> (Mott and Massey (1956, pp. 63–65)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C33.S22.SS6.p1.s2">
+The WKBJ approximations of §33.23(vii) may also be used to estimate the penetrability.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S22.SS7">
+<title>Complex Variables and Parameters</title>           
+  
+<para xml:id="C33.S22.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C33.S22.SS7.p1.s1">
+The Coulomb functions given in this chapter are most commonly evaluated for real values of <Math mode="inline" xml:id="C33.S22.SS7.p1.m1">\rho</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m2">r</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m3">\eta</Math> , <Math mode="inline" xml:id="C33.S22.SS7.p1.m4">\epsilon</Math> and nonnegative integer values of <Math mode="inline" xml:id="C33.S22.SS7.p1.m5">\ell</Math> , but they may be continued analytically to complex arguments and order <Math mode="inline" xml:id="C33.S22.SS7.p1.m6">\ell</Math> as indicated in §33.13.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C33.S22.SS7.p2.s1">
+Examples of applications to noninteger and/or complex variables are as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C33.S22.SS7.p2.s2">
+Scattering at complex energies.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C33.S22.SS7.p2.s3">
+See for exampleMcDonald and Nuttall (1969).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="56" xml:id="C33.S22.SS7.p2.s4">
+Searches for resonances as poles of the <Math mode="inline" xml:id="C33.S22.I1.i2.p1.m1">S</Math> -matrix in the complex half-plane <Math mode="inline" xml:id="C33.S22.I1.i2.p1.m2">\Im\sf{k}&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="57" xml:id="C33.S22.SS7.p2.s5">
+See for example Csótó and Hale (1997).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="58" xml:id="C33.S22.SS7.p2.s6">
+Regge poles at complex values of <Math mode="inline" xml:id="C33.S22.I1.i3.p1.m1">\ell</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="59" xml:id="C33.S22.SS7.p2.s7">
+See for exampleTakemasa et al. (1979).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="60" xml:id="C33.S22.SS7.p2.s8">
+Eigenstates using complex-rotated coordinates <Math mode="inline" xml:id="C33.S22.I1.i4.p1.m1">r\to re^{\mathrm{i}\theta}</Math> , so that resonances have square-integrable eigenfunctions.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="61" xml:id="C33.S22.SS7.p2.s9">
+See for exampleHalley et al. (1993).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="62" xml:id="C33.S22.SS7.p2.s10">
+Solution of relativistic Coulomb equations.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="63" xml:id="C33.S22.SS7.p2.s11">
+See for exampleCooper et al. (1979) and Barnett (1981b).
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="64" xml:id="C33.S22.SS7.p2.s12">
+Gravitational radiation.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="65" xml:id="C33.S22.SS7.p2.s13">
+See for example Berti and Cardoso (2006).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S22.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C33.S22.SS7.p3.s1">
+For further examples see Humblet (1984).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

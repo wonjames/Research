@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S14">
+<title>Multidimensional Integrals</title>        
+      
+<para xml:id="C5.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S14.p1.s1">
+Let <Math mode="inline" xml:id="C5.S14.p1.m1">V_{n}</Math> be the simplex: <Math mode="inline" xml:id="C5.S14.p1.m2">t_{1}+t_{2}+\dots+t_{n}\leq 1</Math> , <Math mode="inline" xml:id="C5.S14.p1.m3">t_{k}\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S14.p1.s2">
+Then for <Math mode="inline" xml:id="C5.S14.p1.m4">\Re z_{k}&gt;0</Math> , <Math mode="inline" xml:id="C5.S14.p1.m5">k=1,2,\dots,n+1</Math> , <Math equation-number="5.14.1" mode="display" xml:id="C5.S14.E1">\int_{V_{n}}t_{1}^{z_{1}-1}t_{2}^{z_{2}-1}\cdots t_{n}^{z_{n}-1}\mathrm{d}t_{1 }\mathrm{d}t_{2}\cdots\mathrm{d}t_{n}=\frac{\Gamma\left(z_{1}\right)\Gamma \left(z_{2}\right)\cdots\Gamma\left(z_{n}\right)}{\Gamma\left(1+z_{1}+z_{2}+ \dots+z_{n}\right)},</Math> <Math equation-number="5.14.2" mode="display" xml:id="C5.S14.E2">\int_{V_{n}}\left(1-\sum_{k=1}^{n}t_{k}\right)^{z_{n+1}-1}\prod_{k=1}^{n}t_{k} ^{z_{k}-1}\mathrm{d}t_{k}=\frac{\Gamma\left(z_{1}\right)\Gamma\left(z_{2} \right)\cdots\Gamma\left(z_{n+1}\right)}{\Gamma\left(z_{1}+z_{2}+\dots+z_{n+1} \right)}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C5.S14.Px1">
+<title>Selberg-type Integrals</title>    
+<para xml:id="C5.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C5.S14.Px1.p1.s1">
+Let <Math equation-number="5.14.3" mode="display" xml:id="C5.S14.E3">\Delta(t_{1},t_{2},\dots,t_{n})=\prod_{1\leq j&lt;k\leq n}(t_{j}-t_{k})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C5.S14.Px1.p1.s2">
+Then <Math equation-number="5.14.4" mode="display" xml:id="C5.S14.E4">\int_{[0,1]^{n}}t_{1}t_{2}\cdots t_{m}|\Delta(t_{1},\dots,t_{n})|^{2c}\prod_{k =1}^{n}t_{k}^{a-1}(1-t_{k})^{b-1}\mathrm{d}t_{k}=\frac{1}{(\Gamma\left(1+c \right))^{n}}\prod_{k=1}^{m}\frac{a+(n-k)c}{a+b+(2n-k-1)c}\*\prod_{k=1}^{n} \frac{\Gamma\left(a+(n-k)c\right)\Gamma\left(b+(n-k)c\right)\Gamma\left(1+kc \right)}{\Gamma\left(a+b+(2n-k-1)c\right)},</Math> provided that <Math mode="inline" xml:id="C5.S14.Px1.p1.m1">\Re a</Math> , <Math mode="inline" xml:id="C5.S14.Px1.p1.m2">\Re b&gt;0</Math> , <Math mode="inline" xml:id="C5.S14.Px1.p1.m3">\Re c&gt;-\min(1/n,\Re a/(n-1),\Re b/(n-1))</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S14.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C5.S14.Px1.p2.s1">
+Secondly, <Math equation-number="5.14.5" mode="display" xml:id="C5.S14.E5">\int_{[0,\infty)^{n}}t_{1}t_{2}\cdots t_{m}|\Delta(t_{1},\dots,t_{n})|^{2c} \prod_{k=1}^{n}t_{k}^{a-1}e^{-t_{k}}\mathrm{d}t_{k}=\prod_{k=1}^{m}(a+(n-k)c) \frac{\prod_{k=1}^{n}\Gamma\left(a+(n-k)c\right)\Gamma\left(1+kc\right)}{( \Gamma\left(1+c\right))^{n}},</Math> when <Math mode="inline" xml:id="C5.S14.Px1.p2.m1">\Re a&gt;0</Math> , <Math mode="inline" xml:id="C5.S14.Px1.p2.m2">\Re c&gt;-\min(1/n,\Re a/(n-1))</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S14.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C5.S14.Px1.p3.s1">
+Thirdly, <Math equation-number="5.14.6" mode="display" xml:id="C5.S14.E6">\frac{1}{(2\pi)^{n/2}}\int_{(-\infty,\infty)^{n}}|\Delta(t_{1},\dots,t_{n})|^{ 2c}\prod_{k=1}^{n}\exp\left(-\tfrac{1}{2}t_{k}^{2}\right)\mathrm{d}t_{k}=\frac {\prod_{k=1}^{n}\Gamma\left(1+kc\right)}{(\Gamma\left(1+c\right))^{n}}, if \Re c&gt;-1/n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C5.S14.Px2">
+<title>Dyson’s Integral</title>    
+<para xml:id="C5.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C5.S14.Px2.p1.s1">
+ <Math equation-number="5.14.7" mode="display" xml:id="C5.S14.E7">\frac{1}{(2\pi)^{n}}\int_{[-\pi,\pi]^{n}}\prod_{1\leq j&lt;k\leq n}|e^{i\theta_{j }}-e^{i\theta_{k}}|^{2b}\mathrm{d}\theta_{1}\cdots\mathrm{d}\theta_{n}=\frac{ \Gamma\left(1+bn\right)}{(\Gamma\left(1+b\right))^{n}}, if \Re b&gt;-1/n</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</section>

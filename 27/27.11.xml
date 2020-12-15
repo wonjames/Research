@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S11">
+<title>Asymptotic Formulas: Partial Sums</title>        
+  
+<para xml:id="C27.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S11.p1.s1">
+The behavior of a number-theoretic function <Math mode="inline" xml:id="C27.S11.p1.m1">f(n)</Math> for large <Math mode="inline" xml:id="C27.S11.p1.m2">n</Math> is often difficult to determine because the function values can fluctuate considerably as <Math mode="inline" xml:id="C27.S11.p1.m3">n</Math> increases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S11.p1.s2">
+It is more fruitful to study partial sums and seek asymptotic formulas of the form <Math equation-number="27.11.1" mode="display" xml:id="C27.S11.E1">\sum_{n\leq x}f(n)=F(x)+O\left(g(x)\right),</Math> where <Math mode="inline" xml:id="C27.S11.p1.m4">F(x)</Math> is a known function of <Math mode="inline" xml:id="C27.S11.p1.m5">x</Math> , and <Math mode="inline" xml:id="C27.S11.p1.m6">O\left(g(x)\right)</Math> represents the error, a function of smaller order than <Math mode="inline" xml:id="C27.S11.p1.m7">F(x)</Math> for all <Math mode="inline" xml:id="C27.S11.p1.m8">x</Math> in some prescribed range.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C27.S11.p1.s3">
+For example, Dirichlet (1849) proves that for all <Math mode="inline" xml:id="C27.S11.p1.m9">x\geq 1</Math> , <Math equation-number="27.11.2" mode="display" xml:id="C27.S11.E2">\sum_{n\leq x}d\left(n\right)=x\ln x+(2\gamma-1)x+O\left(\sqrt{x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p1.m10">\gamma</Math> is Euler’s constant (§5.2(ii)).Dirichlet’s divisor problem (unsolved in 2009) is to determine the least number <Math mode="inline" xml:id="C27.S11.p1.m11">\theta_{0}</Math> such that the error term in (27.11.2) is <Math mode="inline" xml:id="C27.S11.p1.m12">O\left(x^{\theta}\right)</Math> for all <Math mode="inline" xml:id="C27.S11.p1.m13">\theta&gt;\theta_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C27.S11.p1.s4">
+Kolesnik (1969) proves that <Math mode="inline" xml:id="C27.S11.p1.m14">\theta_{0}\leq\frac{12}{37}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C27.S11.p2.s1">
+Equations (27.11.3)–(27.11.11) list further asymptotic formulas related to some of the functions listed in §27.2.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C27.S11.p2.s2">
+They are valid for all <Math mode="inline" xml:id="C27.S11.p2.m1">x\geq 2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C27.S11.p2.s3">
+The error terms given here are not necessarily the best known.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C27.S11.p2.s4">
+<Math equation-number="27.11.3" mode="display" xml:id="C27.S11.E3">\sum_{n\leq x}\frac{d\left(n\right)}{n}=\frac{1}{2}(\ln x)^{2}+2\gamma\ln x+O \left(1\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m2">\gamma</Math> again is Euler’s constant.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C27.S11.p2.s5">
+<Math equation-number="27.11.4" mode="display" xml:id="C27.S11.E4">\sum_{n\leq x}\sigma_{1}\left(n\right)=\frac{{\pi^{2}}}{12}x^{2}+O\left(x\ln x \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C27.S11.p2.s6">
+<Math equation-number="27.11.5" mode="display" xml:id="C27.S11.E5">\sum_{n\leq x}\sigma_{\alpha}\left(n\right)=\frac{\zeta\left(\alpha+1\right)}{ \alpha+1}x^{\alpha+1}+O\left(x^{\beta}\right), if \alpha&gt;0, \alpha\neq 1, \beta=\max(1,\alpha)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C27.S11.p2.s7">
+<Math equation-number="27.11.6" mode="display" xml:id="C27.S11.E6">\sum_{n\leq x}\phi\left(n\right)=\frac{3}{{\pi^{2}}}x^{2}+O\left(x\ln x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" xml:id="C27.S11.p2.s8">
+<Math equation-number="27.11.7" mode="display" xml:id="C27.S11.E7">\sum_{n\leq x}\frac{\phi\left(n\right)}{n}=\frac{6}{{\pi^{2}}}x+O\left(\ln x \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="13" xml:id="C27.S11.p2.s9">
+<Math equation-number="27.11.8" mode="display" xml:id="C27.S11.E8">\sum_{p\leq x}\frac{1}{p}=\ln\ln x+A+O\left(\frac{1}{\ln x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m3">A</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="14" xml:id="C27.S11.p2.s10">
+<Math equation-number="27.11.9" mode="display" xml:id="C27.S11.E9">\sum_{\begin{subarray}{c}p\leq x\\ p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{1}{p}=\frac{1}{\phi\left(k \right)}\ln\ln x+B+O\left(\frac{1}{\ln x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m4">\left(h,k\right)=1</Math> , <Math mode="inline" xml:id="C27.S11.p2.m5">k&gt;0</Math> , and <Math mode="inline" xml:id="C27.S11.p2.m6">B</Math> is a constant depending on <Math mode="inline" xml:id="C27.S11.p2.m7">h</Math> and <Math mode="inline" xml:id="C27.S11.p2.m8">k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="15" xml:id="C27.S11.p2.s11">
+<Math equation-number="27.11.10" mode="display" xml:id="C27.S11.E10">\sum_{p\leq x}\frac{\ln p}{p}=\ln x+O\left(1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="16" xml:id="C27.S11.p2.s12">
+<Math equation-number="27.11.11" mode="display" xml:id="C27.S11.E11">\sum_{\begin{subarray}{c}p\leq x\\ p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{\ln p}{p}=\frac{1}{\phi\left(k \right)}\ln x+O\left(1\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m9">\left(h,k\right)=1</Math> , <Math mode="inline" xml:id="C27.S11.p2.m10">k&gt;0</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C27.S11.p3.s1">
+Letting <Math mode="inline" xml:id="C27.S11.p3.m1">x\to\infty</Math> in (27.11.9) or in (27.11.11) we see that there are infinitely many primes <Math mode="inline" xml:id="C27.S11.p3.m2">p\equiv h\pmod{k}</Math> if <Math mode="inline" xml:id="C27.S11.p3.m3">h,k</Math> are coprime; this is Dirichlet’s theorem on primes in arithmetic progressions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C27.S11.p3.s2">
+<Math equation-number="27.11.12" mode="display" xml:id="C27.S11.E12">\sum_{n\leq x}\mu\left(n\right)=O\left(xe^{-C\sqrt{\ln x}}\right), if x\to\infty,</Math> for some positive constant <Math mode="inline" xml:id="C27.S11.p3.m4">C</Math> , <Math equation-number="27.11.13" mode="display" xml:id="C27.S11.E13">\lim_{x\to\infty}\frac{1}{x}\sum_{n\leq x}\mu\left(n\right)=0,</Math> <Math equation-number="27.11.14" mode="display" xml:id="C27.S11.E14">\lim_{x\to\infty}\sum_{n\leq x}\frac{\mu\left(n\right)}{n}=0,</Math> <Math equation-number="27.11.15" mode="display" xml:id="C27.S11.E15">\lim_{x\to\infty}\sum_{n\leq x}\frac{\mu\left(n\right)\ln n}{n}=-1</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S11.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C27.S11.p4.s1">
+Each of (27.11.13)–(27.11.15) is equivalent to the prime number theorem (27.2.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C27.S11.p4.s2">
+The prime number theorem for arithmetic progressions—an extension of (27.2.3) and first proved in de la Vallée Poussin (1896a, b)—states that if <Math mode="inline" xml:id="C27.S11.p4.m1">\left(h,k\right)=1</Math> , then the number of primes <Math mode="inline" xml:id="C27.S11.p4.m2">p\leq x</Math> with <Math mode="inline" xml:id="C27.S11.p4.m3">p\equiv h\pmod{k}</Math> is asymptotic to <Math mode="inline" xml:id="C27.S11.p4.m4">x/(\phi\left(k\right)\ln x)</Math> as <Math mode="inline" xml:id="C27.S11.p4.m5">x\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</section>

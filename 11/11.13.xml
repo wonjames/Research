@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C11.S13">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C11.S13.SS1">
+<title>Introduction</title>        
+    
+<para xml:id="C11.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S13.SS1.p1.s1">
+Subsequent subsections treat the computation of Struve functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C11.S13.SS1.p1.s2">
+The treatment of Lommel and Anger–Weber functions is similar.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C11.S13.SS1.p1.s3">
+For a review of methods for the computation of <Math mode="inline" xml:id="C11.S13.SS1.p1.m1">\mathbf{H}_{\nu}\left(z\right)</Math> see Zanovello (1975).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C11.S13.SS1.p1.s4">
+For simple and effective approximations to <Math mode="inline" xml:id="C11.S13.SS1.p1.m2">\mathbf{H}_{0}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS1.p1.m3">\mathbf{H}_{1}\left(z\right)</Math> see Aarts and Janssen (2016).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS2">
+<title>Series Expansions</title>        
+ 
+<para xml:id="C11.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C11.S13.SS2.p1.s1">
+Although the power-series expansions (11.2.1) and (11.2.2), and the Bessel-function expansions of §11.4(iv) converge for all finite values of <Math mode="inline" xml:id="C11.S13.SS2.p1.m1">z</Math> , they are cumbersome to use when <Math mode="inline" xml:id="C11.S13.SS2.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C11.S13.SS2.p1.s2">
+For large <Math mode="inline" xml:id="C11.S13.SS2.p1.m3">|z|</Math> and/or <Math mode="inline" xml:id="C11.S13.SS2.p1.m4">|\nu|</Math> the asymptotic expansions given in §11.6 should be used instead.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS3">
+<title>Quadrature</title>        
+ 
+<para xml:id="C11.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C11.S13.SS3.p1.s1">
+For numerical purposes the most convenient of the representations given in §11.5, at least for real variables, include the integrals (11.5.2)–(11.5.5) for <Math mode="inline" xml:id="C11.S13.SS3.p1.m1">\mathbf{K}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS3.p1.m2">\mathbf{M}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C11.S13.SS3.p1.s2">
+Subsequently <Math mode="inline" xml:id="C11.S13.SS3.p1.m3">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS3.p1.m4">\mathbf{L}_{\nu}\left(z\right)</Math> are obtainable via (11.2.5) and (11.2.6).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C11.S13.SS3.p1.s3">
+Other integrals that appear in §11.5(i) have highly oscillatory integrands unless <Math mode="inline" xml:id="C11.S13.SS3.p1.m5">z</Math> is small.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S13.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C11.S13.SS3.p2.s1">
+For complex variables the methods described in §§3.5(viii) and3.5(ix) are available.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS4">
+<title>Differential Equations</title>        
+ 
+<para xml:id="C11.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C11.S13.SS4.p1.s1">
+A comprehensive approach is to integrate the defining inhomogeneous differential equations (11.2.7) and (11.2.9) numerically, using methods described in §3.7.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C11.S13.SS4.p1.s2">
+To insure stability the integration path must be chosen so that as we proceed along it the wanted solution grows in magnitude at least as rapidly as the complementary solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C11.S13.SS4.p2.s1">
+Suppose <Math mode="inline" xml:id="C11.S13.SS4.p2.m1">\nu\geq 0</Math> and <Math mode="inline" xml:id="C11.S13.SS4.p2.m2">x</Math> is real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C11.S13.SS4.p2.s2">
+Then from the limiting forms for small argument (§§11.2(i),10.7(i),10.30(i)),limiting forms for large argument (§§11.6(i),10.7(ii), 10.30(ii)), and the connection formulas (11.2.5) and (11.2.6), it is seen that <Math mode="inline" xml:id="C11.S13.SS4.p2.m3">\mathbf{H}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS4.p2.m4">\mathbf{L}_{\nu}\left(x\right)</Math> can be computed in a stable manner by integrating forwards, that is, from the origin toward infinity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C11.S13.SS4.p2.s3">
+The solution <Math mode="inline" xml:id="C11.S13.SS4.p2.m5">\mathbf{K}_{\nu}\left(x\right)</Math> needs to be integrated backwards for small <Math mode="inline" xml:id="C11.S13.SS4.p2.m6">x</Math> , and either forwards or backwards for large <Math mode="inline" xml:id="C11.S13.SS4.p2.m7">x</Math> depending whether or not <Math mode="inline" xml:id="C11.S13.SS4.p2.m8">\nu</Math> exceeds <Math mode="inline" xml:id="C11.S13.SS4.p2.m9">\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C11.S13.SS4.p2.s4">
+For <Math mode="inline" xml:id="C11.S13.SS4.p2.m10">\mathbf{M}_{\nu}\left(x\right)</Math> both forward and backward integration are unstable, and boundary-value methods are required (§3.7(iii)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS5">
+<title>Difference Equations</title>        
+ 
+<para xml:id="C11.S13.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C11.S13.SS5.p1.s1">
+Sequences of values of <Math mode="inline" xml:id="C11.S13.SS5.p1.m1">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS5.p1.m2">\mathbf{L}_{\nu}\left(z\right)</Math> , with <Math mode="inline" xml:id="C11.S13.SS5.p1.m3">z</Math> fixed, can be computed by application of the inhomogeneous difference equations (11.4.23) and (11.4.25).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C11.S13.SS5.p1.s2">
+There are similar problems to thosedescribed in §11.13(iv) concerning stability.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C11.S13.SS5.p1.s3">
+In consequence forward recurrence, backward recurrence, or boundary-value methods may be necessary.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C11.S13.SS5.p1.s4">
+See §3.6 for implementation of these methods, and with the Weber function <Math mode="inline" xml:id="C11.S13.SS5.p1.m4">\mathbf{E}_{n}\left(x\right)</Math> as an example.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

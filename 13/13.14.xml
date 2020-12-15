@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S14">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C13.S14.SS1">
+<title>Differential Equation</title>          
+<paragraph xml:id="C13.S14.Px1">
+<title>Whittaker’s Equation</title>      
+<para xml:id="C13.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S14.Px1.p1.s1">
+ <Math equation-number="13.14.1" mode="display" xml:id="C13.S14.E1">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}+\left(-\frac{1}{4}+\frac{\kappa}{z }+\frac{\frac{1}{4}-\mu^{2}}{z^{2}}\right)W=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S14.Px1.p1.s2">
+This equation is obtained from Kummer’s equation (13.2.1) via the substitutions <Math mode="inline" xml:id="C13.S14.Px1.p1.m1">W=e^{-\frac{1}{2}z}z^{\frac{1}{2}+\mu}w</Math> , <Math mode="inline" xml:id="C13.S14.Px1.p1.m2">\kappa=\tfrac{1}{2}b-a</Math> , and <Math mode="inline" xml:id="C13.S14.Px1.p1.m3">\mu=\tfrac{1}{2}b-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S14.Px1.p1.s3">
+It has a regular singularity at the origin with indices <Math mode="inline" xml:id="C13.S14.Px1.p1.m4">\tfrac{1}{2}\pm\mu</Math> , and an irregular singularity at infinity of rank one.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C13.S14.Px2">
+<title>Standard Solutions</title>   
+<para xml:id="C13.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C13.S14.Px2.p1.s1">
+Standard solutions are: <Math equation-number="13.14.2" mode="display" xml:id="C13.S14.E2">M_{\kappa,\mu}\left(z\right)=e^{-\frac{1}{2}z}z^{\frac{1}{2}+\mu}M\left(\tfrac {1}{2}+\mu-\kappa,1+2\mu,z\right),</Math> <Math equation-number="13.14.3" mode="display" xml:id="C13.S14.E3">W_{\kappa,\mu}\left(z\right)=e^{-\frac{1}{2}z}z^{\frac{1}{2}+\mu}U\left(\tfrac {1}{2}+\mu-\kappa,1+2\mu,z\right),</Math> except that <Math mode="inline" xml:id="C13.S14.Px2.p1.m1">M_{\kappa,\mu}\left(z\right)</Math> does not exist when <Math mode="inline" xml:id="C13.S14.Px2.p1.m2">2\mu=-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C13.S14.Px2.p2.s1">
+Conversely, <Math equation-number="13.14.4" mode="display" xml:id="C13.S14.E4">M\left(a,b,z\right)=e^{\frac{1}{2}z}z^{-\frac{1}{2}b}M_{\frac{1}{2}b-a,\frac{1 }{2}b-\frac{1}{2}}\left(z\right),</Math> <Math equation-number="13.14.5" mode="display" xml:id="C13.S14.E5">U\left(a,b,z\right)=e^{\frac{1}{2}z}z^{-\frac{1}{2}b}W_{\frac{1}{2}b-a,\frac{1 }{2}b-\frac{1}{2}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C13.S14.Px2.p3.s1">
+The series <Math equation-number="13.14.6" mode="display" xml:id="C13.S14.E6">M_{\kappa,\mu}\left(z\right)=e^{-\frac{1}{2}z}z^{\frac{1}{2}+\mu}\sum_{s=0}^{ \infty}\frac{{\left(\frac{1}{2}+\mu-\kappa\right)_{s}}}{{\left(1+2\mu\right)_{ s}}s!}z^{s}=z^{\frac{1}{2}+\mu}\sum_{n=0}^{\infty}{{}_{2}F_{1}}\left({-n, \tfrac{1}{2}+\mu-\kappa\atop 1+2\mu};2\right)\frac{\left(-\tfrac{1}{2}z\right) ^{n}}{n!}, if 2\mu\neq-1,-2,-3,\dots,</Math> converge for all <Math mode="inline" xml:id="C13.S14.Px2.p3.m1">z\in\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S14.Px2.p4.s1">
+In general <Math mode="inline" xml:id="C13.S14.Px2.p4.m1">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C13.S14.Px2.p4.m2">W_{\kappa,\mu}\left(z\right)</Math> are many-valued functions of <Math mode="inline" xml:id="C13.S14.Px2.p4.m3">z</Math> with branch points at <Math mode="inline" xml:id="C13.S14.Px2.p4.m4">z=0</Math> and <Math mode="inline" xml:id="C13.S14.Px2.p4.m5">z=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C13.S14.Px2.p4.s2">
+The principal branches correspond to the principal branches of the functions <Math mode="inline" xml:id="C13.S14.Px2.p4.m6">z^{\frac{1}{2}+\mu}</Math> and <Math mode="inline" xml:id="C13.S14.Px2.p4.m7">U\left(\tfrac{1}{2}+\mu-\kappa,1+2\mu,z\right)</Math> on the right-hand sides of the equations (13.14.2) and (13.14.3); compare §4.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.Px2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S14.Px2.p5.s1">
+Although <Math mode="inline" xml:id="C13.S14.Px2.p5.m1">M_{\kappa,\mu}\left(z\right)</Math> does not exist when <Math mode="inline" xml:id="C13.S14.Px2.p5.m2">2\mu=-1,-2,-3,\dots</Math> , many formulas containing <Math mode="inline" xml:id="C13.S14.Px2.p5.m3">M_{\kappa,\mu}\left(z\right)</Math> continue to apply in their limiting form.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C13.S14.Px2.p5.s2">
+For example, if <Math mode="inline" xml:id="C13.S14.Px2.p5.m4">n=0,1,2,\dots</Math> , then <Math equation-number="13.14.7" mode="display" xml:id="C13.S14.E7">\lim_{2\mu\to-n-1}\frac{M_{\kappa,\mu}\left(z\right)}{\Gamma\left(2\mu+1\right )}=\frac{{\left(-\frac{1}{2}n-\kappa\right)_{n+1}}}{(n+1)!}M_{\kappa,\frac{1}{ 2}(n+1)}\left(z\right)=e^{-\frac{1}{2}z}z^{-\frac{1}{2}n}\sum_{s=n+1}^{\infty} \frac{{\left(-\frac{1}{2}n-\kappa\right)_{s}}}{\Gamma\left(s-n\right)s!}z^{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.Px2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C13.S14.Px2.p6.s1">
+If <Math mode="inline" xml:id="C13.S14.Px2.p6.m1">2\mu=\pm n</Math> , where <Math mode="inline" xml:id="C13.S14.Px2.p6.m2">n=0,1,2,\dots</Math> , then
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S14.Px2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C13.S14.Px2.p7.s1">
+ <Math equation-number="13.14.8" mode="display" xml:id="C13.S14.E8">W_{\kappa,\pm\frac{1}{2}n}\left(z\right)=\frac{(-1)^{n}e^{-\frac{1}{2}z}z^{ \frac{1}{2}n+\frac{1}{2}}}{n!\Gamma\left(\frac{1}{2}-\frac{1}{2}n-\kappa\right )}\left(\sum_{k=1}^{n}\frac{n!(k-1)!}{(n-k)!{\left(\kappa+\frac{1}{2}-\frac{1} {2}n\right)_{k}}}z^{-k}-\sum_{k=0}^{\infty}\frac{{\left(\frac{1}{2}n+\frac{1}{ 2}-\kappa\right)_{k}}}{{\left(n+1\right)_{k}}k!}z^{k}\left(\ln z+\psi\left( \tfrac{1}{2}n+\tfrac{1}{2}-\kappa+k\right)-\psi\left(1+k\right)-\psi\left(n+1+ k\right)\right)\right), if \kappa-\frac{1}{2}n-\frac{1}{2}\neq 0,1,2,\dots,</Math> or <Math equation-number="13.14.9" mode="display" xml:id="C13.S14.E9">W_{\kappa,\pm\frac{1}{2}n}\left(z\right)=(-1)^{\kappa-\frac{1}{2}n-\frac{1}{2} }e^{-\frac{1}{2}z}z^{\frac{1}{2}n+\frac{1}{2}}\sum_{k=0}^{\kappa-\frac{1}{2}n- \frac{1}{2}}\genfrac{(}{)}{0.0pt}{}{\kappa-\frac{1}{2}n-\frac{1}{2}}{k}{\left( n+1+k\right)_{\kappa-k-\frac{1}{2}n-\frac{1}{2}}}(-z)^{k}, if \kappa-\frac{1}{2}n-\frac{1}{2}=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS2">
+<title>Analytic Continuation</title>         
+ 
+<para xml:id="C13.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C13.S14.SS2.p1.s1">
+ <Math equation-number="13.14.10" mode="display" xml:id="C13.S14.E10">M_{\kappa,\mu}\left(ze^{\pm\pi\mathrm{i}}\right)=\pm\mathrm{i}e^{\pm\mu\pi \mathrm{i}}M_{-\kappa,\mu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C13.S14.SS2.p2.s1">
+In (13.14.11)–(13.14.13)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C13.S14.SS2.p2.s2">
+<Math mode="inline" xml:id="C13.S14.SS2.p2.m1">m</Math> is any integer.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C13.S14.SS2.p2.s3">
+<Math equation-number="13.14.11" mode="display" xml:id="C13.S14.E11">M_{\kappa,\mu}\left(ze^{2m\pi\mathrm{i}}\right)=(-1)^{m}e^{2m\mu\pi\mathrm{i}} M_{\kappa,\mu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C13.S14.SS2.p2.s4">
+<Math equation-number="13.14.12" mode="display" xml:id="C13.S14.E12">W_{\kappa,\mu}\left(ze^{2m\pi\mathrm{i}}\right)=\frac{(-1)^{m+1}2\pi\mathrm{i} \sin\left(2\pi\mu m\right)}{\Gamma\left(\frac{1}{2}-\mu-\kappa\right)\Gamma \left(1+2\mu\right)\sin\left(2\pi\mu\right)}M_{\kappa,\mu}\left(z\right)+(-1)^ {m}e^{-2m\mu\pi\mathrm{i}}W_{\kappa,\mu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C13.S14.SS2.p2.s5">
+<Math equation-number="13.14.13" mode="display" xml:id="C13.S14.E13">(-1)^{m}W_{\kappa,\mu}\left(ze^{2m\pi\mathrm{i}}\right)=-\frac{e^{2\kappa\pi \mathrm{i}}\sin\left(2m\mu\pi\right)+\sin\left((2m-2)\mu\pi\right)}{\sin\left( 2\mu\pi\right)}W_{\kappa,\mu}\left(z\right)-\frac{\sin\left(2m\mu\pi\right)2 \pi\mathrm{i}e^{\kappa\pi\mathrm{i}}}{\sin\left(2\mu\pi\right)\Gamma\left( \frac{1}{2}+\mu-\kappa\right)\Gamma\left(\frac{1}{2}-\mu-\kappa\right)}W_{- \kappa,\mu}\left(ze^{\pi\mathrm{i}}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S14.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C13.S14.SS2.p3.s1">
+Except when <Math mode="inline" xml:id="C13.S14.SS2.p3.m1">z=0</Math> , each branch of the functions <Math mode="inline" xml:id="C13.S14.SS2.p3.m2">\ifrac{M_{\kappa,\mu}\left(z\right)}{\Gamma\left(2\mu+1\right)}</Math> and <Math mode="inline" xml:id="C13.S14.SS2.p3.m3">W_{\kappa,\mu}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C13.S14.SS2.p3.m4">\kappa</Math> and <Math mode="inline" xml:id="C13.S14.SS2.p3.m5">\mu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C13.S14.SS2.p3.s2">
+Also, unless specified otherwise <Math mode="inline" xml:id="C13.S14.SS2.p3.m6">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C13.S14.SS2.p3.m7">W_{\kappa,\mu}\left(z\right)</Math> are assumed to have their principal values.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS3">
+<title>Limiting Forms as <Math mode="inline" xml:id="C13.S14.SS3.m1">z\to 0</Math></title>         
+ 
+<para xml:id="C13.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C13.S14.SS3.p1.s1">
+ <Math equation-number="13.14.14" mode="display" xml:id="C13.S14.E14">M_{\kappa,\mu}\left(z\right)=z^{\mu+\frac{1}{2}}\left(1+O\left(z\right)\right), if 2\mu\neq-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C13.S14.SS3.p2.s1">
+In cases when <Math mode="inline" xml:id="C13.S14.SS3.p2.m1">\frac{1}{2}-\kappa\pm\mu=-n</Math> , where <Math mode="inline" xml:id="C13.S14.SS3.p2.m2">n</Math> is a nonnegative integer, <Math equation-number="13.14.15" mode="display" xml:id="C13.S14.E15">W_{\frac{1}{2}\pm\mu+n,\mu}\left(z\right)=(-1)^{n}{\left(1\pm 2\mu\right)_{n}} z^{\frac{1}{2}\pm\mu}+O\left(z^{\frac{3}{2}\pm\mu}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C13.S14.SS3.p2.s2">
+In all other cases <Math equation-number="13.14.16" mode="display" xml:id="C13.S14.E16">W_{\kappa,\mu}\left(z\right)=\frac{\Gamma\left(2\mu\right)}{\Gamma\left(\frac{ 1}{2}+\mu-\kappa\right)}z^{\frac{1}{2}-\mu}+O\left(z^{\frac{3}{2}-\Re\mu} \right), if \Re\mu\geq\frac{1}{2}, \mu\not=\frac{1}{2},</Math> <Math equation-number="13.14.17" mode="display" xml:id="C13.S14.E17">W_{\kappa,\frac{1}{2}}\left(z\right)=\frac{1}{\Gamma\left(1-\kappa\right)}+O \left(z\ln z\right),</Math> <Math equation-number="13.14.18" mode="display" xml:id="C13.S14.E18">W_{\kappa,\mu}\left(z\right)=\frac{\Gamma\left(2\mu\right)}{\Gamma\left(\frac{ 1}{2}+\mu-\kappa\right)}z^{\frac{1}{2}-\mu}+\frac{\Gamma\left(-2\mu\right)}{ \Gamma\left(\frac{1}{2}-\mu-\kappa\right)}z^{\frac{1}{2}+\mu}+O\left(z^{\frac{ 3}{2}-\Re\mu}\right), if 0\leq\Re\mu&lt;\tfrac{1}{2}, \mu\not=0,</Math> <Math equation-number="13.14.19" mode="display" xml:id="C13.S14.E19">W_{\kappa,0}\left(z\right)=-\frac{\sqrt{z}}{\Gamma\left(\frac{1}{2}-\kappa \right)}\left(\ln z+\psi\left(\tfrac{1}{2}-\kappa\right)+2\gamma\right)+O\left (z^{\ifrac{3}{2}}\ln z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C13.S14.SS3.p2.s3">
+For <Math mode="inline" xml:id="C13.S14.SS3.p2.m3">W_{\kappa,\mu}\left(z\right)</Math> with <Math mode="inline" xml:id="C13.S14.SS3.p2.m4">\Re\mu&lt;0</Math> use (13.14.31).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS4">
+<title>Limiting Forms as <Math mode="inline" xml:id="C13.S14.SS4.m1">z\to\infty</Math></title>          
+<para xml:id="C13.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C13.S14.SS4.p1.s1">
+Except when <Math mode="inline" xml:id="C13.S14.SS4.p1.m1">\mu-\kappa=-\frac{1}{2},-\frac{3}{2},\dots</Math> (polynomial cases), <Math equation-number="13.14.20" mode="display" xml:id="C13.S14.E20">M_{\kappa,\mu}\left(z\right)\sim\ifrac{\Gamma\left(1+2\mu\right)e^{\frac{1}{2} z}z^{-\kappa}}{\Gamma\left(\tfrac{1}{2}+\mu-\kappa\right)}, if \left|\operatorname{ph}z\right|\leq\frac{1}{2}\pi-\delta,</Math> where <Math mode="inline" xml:id="C13.S14.SS4.p1.m2">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C13.S14.SS4.p1.s2">
+Also, <Math equation-number="13.14.21" mode="display" xml:id="C13.S14.E21">W_{\kappa,\mu}\left(z\right)\sim e^{-\frac{1}{2}z}z^{\kappa}, if \left|\operatorname{ph}z\right|\leq\frac{3}{2}\pi-\delta</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS5">
+<title>Numerically Satisfactory Solutions</title>           
+<para xml:id="C13.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C13.S14.SS5.p1.s1">
+Fundamental pairs of solutions of (13.14.1) that are numerically satisfactory (§2.7(iv)) in the neighborhood of infinity are <Math equation-number="13.14.22" mode="display" xml:id="C13.S14.E22">W_{\kappa,\mu}\left(z\right),W_{-\kappa,\mu}\left(e^{-\pi\mathrm{i}}z\right), , if -\tfrac{1}{2}\pi\leq\operatorname{ph}{z}\leq\tfrac{3}{2}\pi,</Math> , <Math equation-number="13.14.23" mode="display" xml:id="C13.S14.E23">W_{\kappa,\mu}\left(z\right),W_{-\kappa,\mu}\left(e^{\pi\mathrm{i}}z\right), , if -\tfrac{3}{2}\pi\leq\operatorname{ph}{z}\leq\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C13.S14.SS5.p2.s1">
+A fundamental pair of solutions that is numerically satisfactory in the sector <Math mode="inline" xml:id="C13.S14.SS5.p2.m1">|\operatorname{ph}{z}|\leq\pi</Math> near the origin is <Math equation-number="13.14.24" mode="display" xml:id="C13.S14.E24">M_{\kappa,\mu}\left(z\right),M_{\kappa,-\mu}\left(z\right), , if 2\mu\not\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S14.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C13.S14.SS5.p3.s1">
+When <Math mode="inline" xml:id="C13.S14.SS5.p3.m1">2\mu</Math> is an integer we may use the results of §13.2(v) with the substitutions <Math mode="inline" xml:id="C13.S14.SS5.p3.m2">b=2\mu+1</Math> , <Math mode="inline" xml:id="C13.S14.SS5.p3.m3">a=\mu-\kappa+\tfrac{1}{2}</Math> , and <Math mode="inline" xml:id="C13.S14.SS5.p3.m4">W=e^{-\frac{1}{2}z}z^{\frac{1}{2}+\mu}w</Math> , where <Math mode="inline" xml:id="C13.S14.SS5.p3.m5">W</Math> is the solution of (13.14.1) corresponding to the solution <Math mode="inline" xml:id="C13.S14.SS5.p3.m6">w</Math> of (13.2.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS6">
+<title>Wronskians</title>         
+ 
+<para xml:id="C13.S14.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C13.S14.SS6.p1.s1">
+ <Math equation-number="13.14.25" mode="display" xml:id="C13.S14.E25">\mathscr{W}\left\{M_{\kappa,\mu}\left(z\right),M_{\kappa,-\mu}\left(z\right) \right\}=-2\mu,</Math> <Math equation-number="13.14.26" mode="display" xml:id="C13.S14.E26">\mathscr{W}\left\{M_{\kappa,\mu}\left(z\right),W_{\kappa,\mu}\left(z\right) \right\}=-\frac{\Gamma\left(1+2\mu\right)}{\Gamma\left(\frac{1}{2}+\mu-\kappa \right)},</Math> <Math equation-number="13.14.27" mode="display" xml:id="C13.S14.E27">\mathscr{W}\left\{M_{\kappa,\mu}\left(z\right),W_{-\kappa,\mu}\left(e^{\pm\pi \mathrm{i}}z\right)\right\}=\frac{\Gamma\left(1+2\mu\right)}{\Gamma\left(\frac {1}{2}+\mu+\kappa\right)}e^{\mp(\frac{1}{2}+\mu)\pi\mathrm{i}},</Math> <Math equation-number="13.14.28" mode="display" xml:id="C13.S14.E28">\mathscr{W}\left\{M_{\kappa,-\mu}\left(z\right),W_{\kappa,\mu}\left(z\right) \right\}=-\frac{\Gamma\left(1-2\mu\right)}{\Gamma\left(\frac{1}{2}-\mu-\kappa \right)},</Math> <Math equation-number="13.14.29" mode="display" xml:id="C13.S14.E29">\mathscr{W}\left\{M_{\kappa,-\mu}\left(z\right),W_{-\kappa,\mu}\left(e^{\pm\pi \mathrm{i}}z\right)\right\}=\frac{\Gamma\left(1-2\mu\right)}{\Gamma\left(\frac {1}{2}-\mu+\kappa\right)}e^{\mp(\frac{1}{2}-\mu)\pi\mathrm{i}},</Math> <Math equation-number="13.14.30" mode="display" xml:id="C13.S14.E30">\mathscr{W}\left\{W_{\kappa,\mu}\left(z\right),W_{-\kappa,\mu}\left(e^{\pm\pi \mathrm{i}}z\right)\right\}=e^{\mp\kappa\pi\mathrm{i}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S14.SS7">
+<title>Connection Formulas</title>           
+<para xml:id="C13.S14.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C13.S14.SS7.p1.s1">
+ <Math equation-number="13.14.31" mode="display" xml:id="C13.S14.E31">W_{\kappa,\mu}\left(z\right)=W_{\kappa,-\mu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C13.S14.SS7.p1.s2">
+<Math equation-number="13.14.32" mode="display" xml:id="C13.S14.E32">\frac{1}{\Gamma\left(1+2\mu\right)}M_{\kappa,\mu}\left(z\right)=\frac{e^{\pm( \kappa-\mu-\frac{1}{2})\pi\mathrm{i}}}{\Gamma\left(\frac{1}{2}+\mu+\kappa \right)}W_{\kappa,\mu}\left(z\right)+\frac{e^{\pm\kappa\pi\mathrm{i}}}{\Gamma \left(\frac{1}{2}+\mu-\kappa\right)}W_{-\kappa,\mu}\left(e^{\pm\pi\mathrm{i}}z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C13.S14.SS7.p1.s3">
+When <Math mode="inline" xml:id="C13.S14.SS7.p1.m1">2\mu</Math> is not an integer <Math equation-number="13.14.33" mode="display" xml:id="C13.S14.E33">W_{\kappa,\mu}\left(z\right)=\frac{\Gamma\left(-2\mu\right)}{\Gamma\left(\frac {1}{2}-\mu-\kappa\right)}M_{\kappa,\mu}\left(z\right)+\frac{\Gamma\left(2\mu \right)}{\Gamma\left(\frac{1}{2}+\mu-\kappa\right)}M_{\kappa,-\mu}\left(z \right)</Math>.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+</section>

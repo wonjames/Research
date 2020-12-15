@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S33">
+<title>Polynomials Orthogonal on the Unit Circle</title>        
+  
+<subsection xml:id="C18.S33.SS1">
+<title>Definition</title>        
+ 
+ 
+<para xml:id="C18.S33.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S33.SS1.p1.s1">
+A system of polynomials <Math mode="inline" xml:id="C18.S33.SS1.p1.m1">\{\phi_{n}(z)\}</Math> , <Math mode="inline" xml:id="C18.S33.SS1.p1.m2">n=0,1,\dots</Math> , where <Math mode="inline" xml:id="C18.S33.SS1.p1.m3">\phi_{n}(z)</Math> is of proper degree <Math mode="inline" xml:id="C18.S33.SS1.p1.m4">n</Math> , is orthonormal on the unit circle with respect to the weight function <Math mode="inline" xml:id="C18.S33.SS1.p1.m5">w(z)</Math> ( <Math mode="inline" xml:id="C18.S33.SS1.p1.m6">\geq 0</Math> ) if <Math equation-number="18.33.1" mode="display" xml:id="C18.S33.E1">\frac{1}{2\pi\mathrm{i}}\int_{|z|=1}\phi_{n}(z)\overline{\phi_{m}(z)}w(z)\frac {\mathrm{d}z}{z}=\delta_{n,m},</Math> where the bar signifies complex conjugate.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S33.SS1.p1.s2">
+See Simon (2005a, b) for general theory.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S33.SS2">
+<title>Recurrence Relations</title>        
+ 
+ 
+<para xml:id="C18.S33.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C18.S33.SS2.p1.s1">
+Denote <Math equation-number="18.33.2" mode="display" xml:id="C18.S33.E2">\phi_{n}(z)=\kappa_{n}z^{n}+\sum_{\ell=1}^{n}\kappa_{n,n-\ell}z^{n-\ell},</Math> where <Math mode="inline" xml:id="C18.S33.SS2.p1.m1">\kappa_{n}(&gt;0)</Math> , and <Math mode="inline" xml:id="C18.S33.SS2.p1.m2">\kappa_{n,n-\ell}(\in\mathbb{C})</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C18.S33.SS2.p1.s2">
+Also denote <Math equation-number="18.33.3" mode="display" xml:id="C18.S33.E3">\phi_{n}^{*}(z)=z^{n}\overline{\phi_{n}({\overline{z}^{-1}})}={\kappa_{n}}+ \sum_{\ell=1}^{n}\overline{\kappa}_{n,n-\ell}z^{\ell},</Math> where the bar again signifies compex conjugate.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C18.S33.SS2.p1.s3">
+Then <Math equation-number="18.33.4" mode="display" xml:id="C18.S33.E4">\kappa_{n}z\phi_{n}(z)=\kappa_{n+1}\phi_{n+1}(z)-\phi_{n+1}(0)\phi_{n+1}^{*}(z),</Math> , <Math equation-number="18.33.5" mode="display" xml:id="C18.S33.E5">\kappa_{n}\phi_{n+1}(z)=\kappa_{n+1}z\phi_{n}(z)+\phi_{n+1}(0)\phi_{n}^{*}(z),</Math> , <Math equation-number="18.33.6" mode="display" xml:id="C18.S33.E6">\kappa_{n}\phi_{n}(0)\phi_{n+1}(z)+\kappa_{n-1}\phi_{n+1}(0)z\phi_{n-1}(z)= \left(\kappa_{n}\phi_{n+1}(0)+\kappa_{n+1}\phi_{n}(0)z\right)\phi_{n}(z)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S33.SS3">
+<title>Connection with OP’s on the Line</title>        
+  
+<para xml:id="C18.S33.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S33.SS3.p1.s1">
+Assume that <Math mode="inline" xml:id="C18.S33.SS3.p1.m1">w(e^{\mathrm{i}\phi})=w(e^{-\mathrm{i}\phi})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C18.S33.SS3.p1.s2">
+Set <Math equation-number="18.33.7" mode="display" xml:id="C18.S33.E7">w_{1}(x)=(1-x^{2})^{-\frac{1}{2}}w\left(x+\mathrm{i}(1-x^{2})^{\frac{1}{2}} \right),w_{2}(x)=(1-x^{2})^{\frac{1}{2}}w\left(x+\mathrm{i}(1-x^{2})^{\frac{1}{2}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C18.S33.SS3.p1.s3">
+Let <Math mode="inline" xml:id="C18.S33.SS3.p1.m2">\{p_{n}(x)\}</Math> and <Math mode="inline" xml:id="C18.S33.SS3.p1.m3">\{q_{n}(x)\}</Math> , <Math mode="inline" xml:id="C18.S33.SS3.p1.m4">n=0,1,\dots</Math> , be OP’s with weight functions <Math mode="inline" xml:id="C18.S33.SS3.p1.m5">w_{1}(x)</Math> and <Math mode="inline" xml:id="C18.S33.SS3.p1.m6">w_{2}(x)</Math> , respectively, on <Math mode="inline" xml:id="C18.S33.SS3.p1.m7">(-1,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C18.S33.SS3.p1.s4">
+Then <Math equation-number="18.33.8" mode="display" xml:id="C18.S33.E8">p_{n}\left(\tfrac{1}{2}(z+z^{-1})\right)=\text{(const.)}\times{\left(z^{-n} \phi_{2n}(z)+z^{n}\phi_{2n}(z^{-1})\right)}=\text{(const.)}\times{\left(z^{-n+ 1}\phi_{2n-1}(z)+z^{n-1}\phi_{2n-1}(z^{-1})\right)},</Math> , <Math equation-number="18.33.9" mode="display" xml:id="C18.S33.E9">q_{n}\left(\tfrac{1}{2}(z+z^{-1})\right)={\text{(const.)}\times\frac{z^{-n-1} \phi_{2n+2}(z)-z^{n+1}\phi_{2n+2}(z^{-1})}{z-z^{-1}}}={\text{(const.)}\times \frac{z^{-n}\phi_{2n+1}(z)-z^{n}\phi_{2n+1}(z^{-1})}{z-z^{-1}}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S33.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S33.SS3.p2.s1">
+Conversely, <Math equation-number="18.33.10" mode="display" xml:id="C18.S33.E10">z^{-n}\phi_{2n}(z)={A_{n}p_{n}\left(\tfrac{1}{2}(z+z^{-1})\right)+B_{n}(z-z^{- 1})q_{n-1}\left(\tfrac{1}{2}(z+z^{-1})\right)},</Math> , <Math equation-number="18.33.11" mode="display" xml:id="C18.S33.E11">z^{-n+1}\phi_{2n-1}(z)={C_{n}p_{n}\left(\tfrac{1}{2}(z+z^{-1})\right)+D_{n}(z- z^{-1})q_{n-1}\left(\tfrac{1}{2}(z+z^{-1})\right)},</Math> where <Math mode="inline" xml:id="C18.S33.SS3.p2.m1">A_{n}</Math> , <Math mode="inline" xml:id="C18.S33.SS3.p2.m2">B_{n}</Math> , <Math mode="inline" xml:id="C18.S33.SS3.p2.m3">C_{n}</Math> , and <Math mode="inline" xml:id="C18.S33.SS3.p2.m4">D_{n}</Math> are independent of <Math mode="inline" xml:id="C18.S33.SS3.p2.m5">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S33.SS4">
+<title>Special Cases</title>        
+ 
+ 
+<paragraph xml:id="C18.S33.Px1">
+<title>Trivial</title>   
+<para xml:id="C18.S33.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C18.S33.Px1.p1.s1">
+ <Math equation-number="18.33.12" mode="display" xml:id="C18.S33.E12">\phi_{n}(z)=z^{n},w(z)=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S33.Px2">
+<title>Szegő–Askey</title>    
+<para xml:id="C18.S33.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S33.Px2.p1.s1">
+ <Math equation-number="18.33.13" mode="display" xml:id="C18.S33.E13">\phi_{n}(z)=\sum_{\ell=0}^{n}\frac{{\left(\lambda+1\right)_{\ell}}{\left( \lambda\right)_{n-\ell}}}{\ell!\,(n-\ell)!}\,z^{\ell}=\frac{{\left(\lambda \right)_{n}}}{n!}{{}_{2}F_{1}}\left({-n,\lambda+1\atop-\lambda-n+1};z\right)</Math> , with <Math equation-number="18.33.14" mode="display" xml:id="C18.S33.E14">w(z)=\left(1-\tfrac{1}{2}(z+z^{-1})\right)^{\lambda},w_{1}(x)=(1-x)^{\lambda-\frac{1}{2}}(1+x)^{-\frac{1}{2}},w_{2}(x)=(1-x)^{\lambda+\frac{1}{2}}(1+x)^{\frac{1}{2}}, if \lambda&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C18.S33.Px2.p1.s2">
+For the hypergeometric function <Math mode="inline" xml:id="C18.S33.Px2.p1.m1">{{}_{2}F_{1}}</Math> see §§15.1 and 15.2(i).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S33.Px3">
+<title>Askey</title>    
+<para xml:id="C18.S33.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S33.Px3.p1.s1">
+ <Math equation-number="18.33.15" mode="display" xml:id="C18.S33.E15">\phi_{n}(z)=\sum_{\ell=0}^{n}\frac{\left(aq^{2};q^{2}\right)_{\ell}\left(a;q^{ 2}\right)_{n-\ell}}{\left(q^{2};q^{2}\right)_{\ell}\left(q^{2};q^{2}\right)_{n -\ell}}(q^{-1}z)^{\ell}=\frac{\left(a;q^{2}\right)_{n}}{\left(q^{2};q^{2} \right)_{n}}{{}_{2}\phi_{1}}\left({aq^{2},q^{-2n}\atop a^{-1}q^{2-2n}};q^{2}, \frac{qz}{a}\right),</Math> with <Math equation-number="18.33.16" mode="display" xml:id="C18.S33.E16">w(z)={\left|\left(qz;q^{2}\right)_{\infty}\Bigm{/}\left(aqz;q^{2}\right)_{ \infty}\right|^{2}}, if a^{2}q^{2}&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C18.S33.Px3.p1.s2">
+For the notation, including the basic hypergeometric function <Math mode="inline" xml:id="C18.S33.Px3.p1.m1">{{}_{2}\phi_{1}}</Math> , see §§17.2 and 17.4(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S33.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C18.S33.Px3.p2.s1">
+When <Math mode="inline" xml:id="C18.S33.Px3.p2.m1">a=0</Math> the Askey case is also known as the Rogers–Szegő case.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S33.SS5">
+<title>Biorthogonal Polynomials on the Unit Circle</title>         
+ 
+<para xml:id="C18.S33.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S33.SS5.p1.s1">
+See Baxter (1961) for general theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S33.SS5.p1.s2">
+See Askey (1982) andPastro (1985) for special cases extending (18.33.13)–(18.33.14) and (18.33.15)–(18.33.16), respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C18.S33.SS5.p1.s3">
+See Gasper (1981) and Hendriksen and van Rossum (1986) for relations with Laurent polynomials orthogonal on the unit circle.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C18.S33.SS5.p1.s4">
+SeeAl-Salam and Ismail (1994) for special biorthogonal rational functions on the unit circle.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S16">
+<title>Multiset Permutations</title>        
+  
+<para xml:id="C26.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S16.p1.s1">
+Let <Math mode="inline" xml:id="C26.S16.p1.m1">S=\{1^{a_{1}},2^{a_{2}},\ldots,n^{a_{n}}\}</Math> be the multiset that has <Math mode="inline" xml:id="C26.S16.p1.m2">a_{j}</Math> copies of <Math mode="inline" xml:id="C26.S16.p1.m3">j</Math> , <Math mode="inline" xml:id="C26.S16.p1.m4">1\leq j\leq n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S16.p1.s2">
+<Math mode="inline" xml:id="C26.S16.p1.m5">\mathfrak{S}_{S}</Math> denotes the set of permutations of <Math mode="inline" xml:id="C26.S16.p1.m6">S</Math> for all distinct orderings of the <Math mode="inline" xml:id="C26.S16.p1.m7">a_{1}+a_{2}+\cdots+a_{n}</Math> integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S16.p1.s3">
+The number of elements in <Math mode="inline" xml:id="C26.S16.p1.m8">\mathfrak{S}_{S}</Math> is the multinomial coefficient(§26.4)
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C26.S16.p1.s4">
+<Math mode="inline" xml:id="C26.S16.p1.m9">\genfrac{(}{)}{0.0pt}{}{a_{1}+a_{2}+\cdots+a_{n}}{a_{1},a_{2},\ldots,a_{n}</Math> }.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C26.S16.p1.s5">
+Additional information can be found in Andrews (1976, pp. 39–45).
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C26.S16.p2.s1">
+The definitions of inversion number and major index can be extended to permutations of a multiset such as <Math mode="inline" xml:id="C26.S16.p2.m1">351322453154\in\mathfrak{S}_{\{1^{2},2^{2},3^{3},4^{2},5^{3}\}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C26.S16.p2.s2">
+Thus <Math mode="inline" xml:id="C26.S16.p2.m2">\mathop{\mathrm{inv}}(351322453154)=4+8+0+3+1+1+2+3+1+0+1=24</Math> , and <Math mode="inline" xml:id="C26.S16.p2.m3">\mathop{\mathrm{maj}}(351322453154)=2+4+8+9+11=34</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S16.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C26.S16.p3.s1">
+The <Math mode="inline" xml:id="C26.S16.p3.m1">q</Math> -multinomial coefficient is defined in terms of Gaussian polynomials (§26.9(ii)) by <Math equation-number="26.16.1" mode="display" xml:id="C26.S16.E1">\genfrac{[}{]}{0.0pt}{}{a_{1}+a_{2}+\cdots+a_{n}}{a_{1},a_{2},\ldots,a_{n}}_{q }=\prod_{k=1}^{n-1}\genfrac{[}{]}{0.0pt}{}{a_{k}+a_{k+1}+\cdots+a_{n}}{a_{k}}_ {q},</Math> and again with <Math mode="inline" xml:id="C26.S16.p3.m4">S=\{1^{a_{1}},2^{a_{2}},\ldots,n^{a_{n}}\}</Math> we have
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S16.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C26.S16.p4.s1">
+ <Math equation-number="26.16.2" mode="display" xml:id="C26.S16.E2">\sum_{\sigma\in\mathfrak{S}_{S}}q^{\mathop{\mathrm{inv}}(\sigma)}=\genfrac{[}{ ]}{0.0pt}{}{a_{1}+a_{2}+\cdots+a_{n}}{a_{1},a_{2},\ldots,a_{n}}_{q}</Math> ,, <Math equation-number="26.16.3" mode="display" xml:id="C26.S16.E3">\sum_{\sigma\in\mathfrak{S}_{S}}q^{\mathop{\mathrm{maj}}(\sigma)}=\genfrac{[}{ ]}{0.0pt}{}{a_{1}+a_{2}+\cdots+a_{n}}{a_{1},a_{2},\ldots,a_{n}}_{q}</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>

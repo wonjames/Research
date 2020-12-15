@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S3">
+<title>Interpolation</title>          
+ 
+<subsection xml:id="C3.S3.SS1">
+<title>Lagrange Interpolation</title>        
+      
+<para xml:id="C3.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S3.SS1.p1.s1">
+The nodes or abscissas <Math mode="inline" xml:id="C3.S3.SS1.p1.m1">z_{k}</Math> are real or complex; function values are <Math mode="inline" xml:id="C3.S3.SS1.p1.m2">f_{k}=f(z_{k})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S3.SS1.p1.s2">
+Given <Math mode="inline" xml:id="C3.S3.SS1.p1.m3">n+1</Math> distinct points <Math mode="inline" xml:id="C3.S3.SS1.p1.m4">z_{k}</Math> and <Math mode="inline" xml:id="C3.S3.SS1.p1.m5">n+1</Math> corresponding function values <Math mode="inline" xml:id="C3.S3.SS1.p1.m6">f_{k}</Math> , the Lagrange interpolation polynomial is the unique polynomial <Math mode="inline" xml:id="C3.S3.SS1.p1.m7">P_{n}(z)</Math> of degree not exceeding <Math mode="inline" xml:id="C3.S3.SS1.p1.m8">n</Math> such that <Math mode="inline" xml:id="C3.S3.SS1.p1.m9">P_{n}(z_{k})=f_{k}</Math> , <Math mode="inline" xml:id="C3.S3.SS1.p1.m10">k=0,1,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C3.S3.SS1.p1.s3">
+It is given by <Math equation-number="3.3.1" mode="display" xml:id="C3.S3.E1">P_{n}(z)=\sum_{k=0}^{n}\ell_{k}(z)f_{k}=\sum_{k=0}^{n}\frac{\omega_{n+1}(z)}{( z-z_{k})\omega_{n+1}^{\prime}(z_{k})}f_{k},</Math> where <Math equation-number="3.3.2" mode="display" xml:id="C3.S3.E2">\ell_{k}(z)={\sideset{}{{}^{\prime}}{\prod}_{j=0}^{n}}\frac{z-z_{j}}{z_{k}-z_{ j}},\ell_{k}(z_{j})=\delta_{k,j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C3.S3.SS1.p1.s4">
+Here the prime signifies that the factor for <Math mode="inline" xml:id="C3.S3.SS1.p1.m11">j=k</Math> is to be omitted, <Math mode="inline" xml:id="C3.S3.SS1.p1.m12">\delta_{k,j}</Math> is the Kronecker symbol, and <Math mode="inline" xml:id="C3.S3.SS1.p1.m13">\omega_{n+1}</Math> is the nodal polynomial <Math equation-number="3.3.3" mode="display" xml:id="C3.S3.E3">\omega_{n+1}(z)=\prod_{k=0}^{n}(z-z_{k})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C3.S3.SS1.p2.s1">
+With an error term the Lagrange interpolation formula for <Math mode="inline" xml:id="C3.S3.SS1.p2.m1">f</Math> is given by <Math equation-number="3.3.4" mode="display" xml:id="C3.S3.E4">f(z)=\sum_{k=0}^{n}\ell_{k}(z)f_{k}+R_{n}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C3.S3.SS1.p2.s2">
+If <Math mode="inline" xml:id="C3.S3.SS1.p2.m2">f</Math> , <Math mode="inline" xml:id="C3.S3.SS1.p2.m3">x</Math> ( <Math mode="inline" xml:id="C3.S3.SS1.p2.m4">=z</Math> ), and the nodes <Math mode="inline" xml:id="C3.S3.SS1.p2.m5">x_{k}</Math> are real, and <Math mode="inline" xml:id="C3.S3.SS1.p2.m6">f^{(n+1)}</Math> is continuous on the smallest closed interval <Math mode="inline" xml:id="C3.S3.SS1.p2.m7">I</Math> containing <Math mode="inline" xml:id="C3.S3.SS1.p2.m8">x,x_{0},x_{1},\dots,x_{n}</Math> , then the error can be expressed <Math equation-number="3.3.5" mode="display" xml:id="C3.S3.E5">R_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}\,\omega_{n+1}(x),</Math> for some <Math mode="inline" xml:id="C3.S3.SS1.p2.m9">\xi\in I</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C3.S3.SS1.p2.s3">
+If <Math mode="inline" xml:id="C3.S3.SS1.p2.m10">f</Math> is analytic in a simply-connected domain <Math mode="inline" xml:id="C3.S3.SS1.p2.m11">D</Math> (§ 1.13(i)), then for <Math mode="inline" xml:id="C3.S3.SS1.p2.m12">z\in D</Math> , <Math equation-number="3.3.6" mode="display" xml:id="C3.S3.E6">R_{n}(z)=\frac{\omega_{n+1}(z)}{2\pi\mathrm{i}}\int_{C}\frac{f(\zeta)}{(\zeta- z)\omega_{n+1}(\zeta)}\mathrm{d}\zeta,</Math> where <Math mode="inline" xml:id="C3.S3.SS1.p2.m13">C</Math> is a simple closed contour in <Math mode="inline" xml:id="C3.S3.SS1.p2.m14">D</Math> described in the positive rotational sense and enclosing the points <Math mode="inline" xml:id="C3.S3.SS1.p2.m15">z,z_{1},z_{2},\dots,z_{n}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S3.SS2">
+<title>Lagrange Interpolation with Equally-Spaced Nodes</title>          
+<para xml:id="C3.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C3.S3.SS2.p1.s1">
+The <Math mode="inline" xml:id="C3.S3.SS2.p1.m1">(n+1)</Math> -point formula (3.3.4) can be written in the form <Math equation-number="3.3.7" mode="display" xml:id="C3.S3.E7">f_{t}=f(x_{0}+th)=\sum_{k=n_{0}}^{n_{1}}A_{k}^{n}f_{k}+R_{n,t}, if n_{0}&lt;t&lt;n_{1},</Math> where the nodes <Math mode="inline" xml:id="C3.S3.SS2.p1.m2">x_{k}=x_{0}+kh</Math> ( <Math mode="inline" xml:id="C3.S3.SS2.p1.m3">h&gt;0</Math> ) and function <Math mode="inline" xml:id="C3.S3.SS2.p1.m4">f</Math> are real, <Math equation-number="3.3.8" mode="display" xml:id="C3.S3.E8">n_{0}=-\tfrac{1}{2}(n-\sigma),n_{1}=\tfrac{1}{2}(n+\sigma),</Math> <Math equation-number="3.3.9" mode="display" xml:id="C3.S3.E9">\sigma=\tfrac{1}{2}(1-(-1)^{n}),</Math> and <Math mode="inline" xml:id="C3.S3.SS2.p1.m5">A_{k}^{n}</Math> are the Lagrangian interpolation coefficients defined by <Math equation-number="3.3.10" mode="display" xml:id="C3.S3.E10">A_{k}^{n}=\frac{(-1)^{n_{1}+k}}{(k-n_{0})!\,(n_{1}-k)!(t-k)}\,\prod_{m=n_{0}}^ {n_{1}}(t-m)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C3.S3.SS2.p2.s1">
+The remainder is given by <Math equation-number="3.3.11" mode="display" xml:id="C3.S3.E11">R_{n,t}=R_{n}(x_{0}+th)=\frac{h^{n+1}}{(n+1)!}f^{(n+1)}(\xi)\prod_{k=n_{0}}^{n _{1}}(t-k),</Math> where <Math mode="inline" xml:id="C3.S3.SS2.p2.m1">\xi</Math> is as in §3.3(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C3.S3.SS2.p3.s1">
+Let <Math mode="inline" xml:id="C3.S3.SS2.p3.m1">c_{n}</Math> be defined by <Math equation-number="3.3.12" mode="display" xml:id="C3.S3.E12">c_{n}=\frac{1}{(n+1)!}\max\prod_{k=n_{0}}^{n_{1}}\left|t-k\right|,</Math> where the maximum is taken over <Math mode="inline" xml:id="C3.S3.SS2.p3.m2">t</Math> -intervals given in the formulas below.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C3.S3.SS2.p3.s2">
+Then for these <Math mode="inline" xml:id="C3.S3.SS2.p3.m3">t</Math> -intervals, <Math equation-number="3.3.13" mode="display" xml:id="C3.S3.E13">\left|R_{n,t}\right|\leq c_{n}h^{n+1}\left|f^{(n+1)}(\xi)\right|</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S3.Px1">
+<title>Linear Interpolation</title>  
+  
+<para xml:id="C3.S3.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S3.Px1.p1.s1">
+ <Math equation-number="3.3.14" mode="display" xml:id="C3.S3.E14">f_{t}=(1-t)f_{0}+tf_{1}+R_{1,t}, if 0&lt;t&lt;1,</Math> , <Math equation-number="3.3.15" mode="display" xml:id="C3.S3.E15">c_{1}=\tfrac{1}{8}, if 0&lt;t&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px2">
+<title>Three-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C3.S3.Px2.p1.s1">
+ <Math equation-number="3.3.16" mode="display" xml:id="C3.S3.E16">f_{t}=\sum_{k=-1}^{1}A_{k}^{2}f_{k}+R_{2,t}, if \left|t\right|&lt;1,</Math> <Math equation-number="3.3.17" mode="display" xml:id="C3.S3.E17">A_{-1}^{2}=\tfrac{1}{2}t(t-1),A_{0}^{2}=1-t^{2},A_{1}^{2}=\tfrac{1}{2}t(t+1),</Math> <Math equation-number="3.3.18" mode="display" xml:id="C3.S3.E18">c_{2}=1/(9\sqrt{3})=0.0641\ldots, if \left|t\right|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.Px2.p2">
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px3">
+<title>Four-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C3.S3.Px3.p1.s1">
+ <Math equation-number="3.3.19" mode="display" xml:id="C3.S3.E19">f_{t}=\sum_{k=-1}^{2}A_{k}^{3}f_{k}+R_{3,t}, if -1&lt;t&lt;2,</Math> <Math equation-number="3.3.20" mode="display" xml:id="C3.S3.E20">A_{-1}^{3}=-\tfrac{1}{6}t(t-1)(t-2),A_{0}^{3}=\tfrac{1}{2}(t^{2}-1)(t-2),A_{1}^{3}=-\tfrac{1}{2}t(t+1)(t-2),A_{2}^{3}=\tfrac{1}{6}t(t^{2}-1),</Math> <Math equation-number="3.3.21" mode="display" xml:id="C3.S3.E21">c_{3}=\begin{cases}\tfrac{3}{128}=0.0234\ldots,&amp;0&lt;t&lt;1,\\ \tfrac{1}{24}=0.0416\ldots,&amp;-1&lt;t&lt;0\mbox{ or }1&lt;t&lt;2.\\ \end{cases}</Math> 
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px4">
+<title>Five-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S3.Px4.p1.s1">
+ <Math equation-number="3.3.22" mode="display" xml:id="C3.S3.E22">f_{t}=\sum_{k=-2}^{2}A_{k}^{4}f_{k}+R_{4,t}, if \left|t\right|&lt;2,</Math> <Math equation-number="3.3.23" mode="display" xml:id="C3.S3.E23">A_{-2}^{4}=\tfrac{1}{24}t(t^{2}-1)(t-2),A_{-1}^{4}=-\tfrac{1}{6}t(t-1)(t^{2}-4),A_{0}^{4}=\tfrac{1}{4}(t^{2}-1)(t^{2}-4),A_{1}^{4}=-\tfrac{1}{6}t(t+1)(t^{2}-4),A_{2}^{4}=\tfrac{1}{24}t(t^{2}-1)(t+2),</Math> <Math equation-number="3.3.24" mode="display" xml:id="C3.S3.E24">c_{4}=\begin{cases}0.0118\ldots,&amp;\left|t\right|&lt;1,\\ 0.0302\ldots,&amp;1&lt;\left|t\right|&lt;2.\\ \end{cases}</Math> 
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px5">
+<title>Six-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C3.S3.Px5.p1.s1">
+ <Math equation-number="3.3.25" mode="display" xml:id="C3.S3.E25">f_{t}=\sum_{k=-2}^{3}A_{k}^{5}f_{k}+R_{5,t}, if -2&lt;t&lt;3,</Math> <Math equation-number="3.3.26" mode="display" xml:id="C3.S3.E26">A_{-2}^{5}=-\tfrac{1}{120}t(t^{2}-1)(t-2)(t-3),A_{-1}^{5}=\tfrac{1}{24}t(t-1)(t^{2}-4)(t-3),A_{0}^{5}=-\tfrac{1}{12}(t^{2}-1)(t^{2}-4)(t-3),A_{1}^{5}=\tfrac{1}{12}t(t+1)(t^{2}-4)(t-3),A_{2}^{5}=-\tfrac{1}{24}t(t^{2}-1)(t+2)(t-3),A_{3}^{5}=\tfrac{1}{120}t(t^{2}-1)(t^{2}-4),</Math> <Math equation-number="3.3.27" mode="display" xml:id="C3.S3.E27">c_{5}=\begin{cases}0.00488\ldots,&amp;0&lt;t&lt;1,\\ 0.00701\ldots,&amp;-1&lt;t&lt;0\mbox{ or }1&lt;t&lt;2,\\ 0.0234\ldots,&amp;-2&lt;t&lt;-1\mbox{ or }2&lt;t&lt;3.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px6">
+<title>Seven-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C3.S3.Px6.p1.s1">
+ <Math equation-number="3.3.28" mode="display" xml:id="C3.S3.E28">f_{t}=\sum_{k=-3}^{3}A_{k}^{6}f_{k}+R_{6,t}, if \left|t\right|&lt;3,</Math> <Math equation-number="3.3.29" mode="display" xml:id="C3.S3.E29">A_{-3}^{6}=\tfrac{1}{720}t(t^{2}-1)(t-3)(t^{2}-4),A_{-2}^{6}=-\tfrac{1}{120}t(t^{2}-1)(t-2)(t^{2}-9),A_{-1}^{6}=\tfrac{1}{48}t(t-1)(t^{2}-4)(t^{2}-9),A_{0}^{6}=-\tfrac{1}{36}(t^{2}-1)(t^{2}-4)(t^{2}-9),A_{1}^{6}=\tfrac{1}{48}t(t+1)(t^{2}-4)(t^{2}-9),A_{2}^{6}=-\tfrac{1}{120}t(t^{2}-1)(t+2)(t^{2}-9),A_{3}^{6}=\tfrac{1}{720}t(t^{2}-1)(t+3)(t^{2}-4),</Math> <Math equation-number="3.3.30" mode="display" xml:id="C3.S3.E30">c_{6}=\begin{cases}0.00245\ldots,&amp;\left|t\right|&lt;1,\\ 0.00459\ldots,&amp;1&lt;\left|t\right|&lt;2,\\ 0.0190\ldots,&amp;2&lt;\left|t\right|&lt;3.\\ \end{cases}</Math> 
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S3.Px7">
+<title>Eight-Point Formula</title>  
+ 
+<para xml:id="C3.S3.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C3.S3.Px7.p1.s1">
+ <Math equation-number="3.3.31" mode="display" xml:id="C3.S3.E31">f_{t}=\sum_{k=-3}^{4}A_{k}^{7}f_{k}+R_{7,t}, if -3&lt;t&lt;4,</Math> <Math equation-number="3.3.32" mode="display" xml:id="C3.S3.E32">A_{-3}^{7}=-\tfrac{1}{5040}t(t^{2}-1)(t-3)(t-4)(t^{2}-4),A_{-2}^{7}=\tfrac{1}{720}t(t^{2}-1)(t-2)(t-4)(t^{2}-9),A_{-1}^{7}=-\tfrac{1}{240}t(t-1)(t-4)(t^{2}-4)(t^{2}-9),A_{0}^{7}=\tfrac{1}{144}(t^{2}-1)(t-4)(t^{2}-4)(t^{2}-9),A_{1}^{7}=-\tfrac{1}{144}t(t+1)(t-4)(t^{2}-4)(t^{2}-9),A_{2}^{7}=\tfrac{1}{240}t(t^{2}-1)(t+2)(t-4)(t^{2}-9),A_{3}^{7}=-\tfrac{1}{720}t(t^{2}-1)(t+3)(t-4)(t^{2}-4),A_{4}^{7}=\tfrac{1}{5040}t(t^{2}-1)(t^{2}-4)(t^{2}-9),</Math> <Math equation-number="3.3.33" mode="display" xml:id="C3.S3.E33">c_{7}=\begin{cases}0.00106\ldots,&amp;0&lt;t&lt;1,\\ 0.00139\ldots,&amp;-1&lt;t&lt;0\mbox{ or }1&lt;t&lt;2,\\ 0.00321\ldots,&amp;-2&lt;t&lt;-1\mbox{ or }2&lt;t&lt;3,\\ 0.0158\ldots,&amp;-3&lt;t&lt;-2\mbox{ or }3&lt;t&lt;4.\\ \end{cases}</Math> 
+</sentence>
+
+</para>
+    
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S3.SS3">
+<title>Divided Differences</title>          
+ 
+<para xml:id="C3.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C3.S3.SS3.p1.s1">
+The divided differences of <Math mode="inline" xml:id="C3.S3.SS3.p1.m1">f</Math> relative to a sequence of distinct points <Math mode="inline" xml:id="C3.S3.SS3.p1.m2">z_{0},z_{1},z_{2},\dots</Math> are defined by <Math equation-number="3.3.34" mode="display" xml:id="C3.S3.E34">f=f_{0},f=({[z_{1}]}f-{[z_{0}]}f)/(z_{1}-z_{0}),f=({[z_{1},z_{2}]}f-{[z_{0},z_{1}]}f)/(z_{2}-z_{0}),</Math> and so on.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C3.S3.SS3.p1.s2">
+Explicitly, the divided difference of order <Math mode="inline" xml:id="C3.S3.SS3.p1.m4">n</Math> is given by <Math equation-number="3.3.35" mode="display" xml:id="C3.S3.E35">[z_{0},z_{1},\dots,z_{n}]f=\sum_{k=0}^{n}\left(\ifrac{f(z_{k})}{\prod_{ \begin{subarray}{c}0\leq j\leq n\\ j\neq k\end{subarray}}(z_{k}-z_{j})}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C3.S3.SS3.p1.s3">
+If <Math mode="inline" xml:id="C3.S3.SS3.p1.m5">f</Math> and the <Math mode="inline" xml:id="C3.S3.SS3.p1.m6">z_{k}</Math> ( <Math mode="inline" xml:id="C3.S3.SS3.p1.m7">=x_{k}</Math> ) are real, and <Math mode="inline" xml:id="C3.S3.SS3.p1.m8">f</Math> is <Math mode="inline" xml:id="C3.S3.SS3.p1.m9">n</Math> times continuously differentiable on a closed interval containing the <Math mode="inline" xml:id="C3.S3.SS3.p1.m10">x_{k}</Math> , then <Math equation-number="3.3.36" mode="display" xml:id="C3.S3.E36">[x_{0},x_{1},\dots,x_{n}]f=\frac{f^{(n)}(\xi)}{n!</Math> } and again <Math mode="inline" xml:id="C3.S3.SS3.p1.m11">\xi</Math> is as in §3.3(i).If <Math mode="inline" xml:id="C3.S3.SS3.p1.m12">f</Math> is analytic in a simply-connected domain <Math mode="inline" xml:id="C3.S3.SS3.p1.m13">D</Math> , then for <Math mode="inline" xml:id="C3.S3.SS3.p1.m14">z\in{D}</Math> , <Math equation-number="3.3.37" mode="display" xml:id="C3.S3.E37">[z_{0},z_{1},\dots,z_{n}]f=\frac{1}{2\pi\mathrm{i}}\int_{C}\frac{f(\zeta)}{ \omega_{n+1}(\zeta)}\mathrm{d}\zeta,</Math> where <Math mode="inline" xml:id="C3.S3.SS3.p1.m15">\omega_{n+1}(\zeta)</Math> is given by (3.3.3), and <Math mode="inline" xml:id="C3.S3.SS3.p1.m16">C</Math> is a simple closed contour in <Math mode="inline" xml:id="C3.S3.SS3.p1.m17">{D}</Math> described in the positive rotational sense and enclosing <Math mode="inline" xml:id="C3.S3.SS3.p1.m18">z_{0},z_{1},\dots,z_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S3.SS4">
+<title>Newton’s Interpolation Formula</title>           
+<para xml:id="C3.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C3.S3.SS4.p1.s1">
+This represents the Lagrange interpolation polynomial in terms of divided differences: <Math equation-number="3.3.38" mode="display" xml:id="C3.S3.E38">f(z)=[z_{0}]f+(z-z_{0})[z_{0},z_{1}]f+(z-z_{0})(z-z_{1})[z_{0},z_{1},z_{2}]f+ \cdots+(z-z_{0})(z-z_{1})\cdots(z-z_{n-1})[z_{0},z_{1},\dots,z_{n}]f+R_{n}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C3.S3.SS4.p1.s2">
+The interpolation error <Math mode="inline" xml:id="C3.S3.SS4.p1.m1">R_{n}(z)</Math> is as in §3.3(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C3.S3.SS4.p1.s3">
+Newton’s formula has the advantage of allowing easy updating: incorporation of a new point <Math mode="inline" xml:id="C3.S3.SS4.p1.m2">z_{n+1}</Math> requires only addition of the term with <Math mode="inline" xml:id="C3.S3.SS4.p1.m3">[z_{0},z_{1},\dots,z_{n+1}]f</Math> to (3.3.38),plus the computation of this divided difference.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C3.S3.SS4.p1.s4">
+Another advantage is its robustness with respect to confluence of the set of points <Math mode="inline" xml:id="C3.S3.SS4.p1.m4">z_{0},z_{1},\dots,z_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C3.S3.SS4.p1.s5">
+For example, for <Math mode="inline" xml:id="C3.S3.SS4.p1.m5">k+1</Math> coincident points the limiting form is given by <Math mode="inline" xml:id="C3.S3.SS4.p1.m6">[z_{0},z_{0},\dots,z_{0}]f=f^{(k)}(z_{0})/k</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="27" xml:id="C3.S3.SS4.p1.s6">
+.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S3.SS5">
+<title>Inverse Interpolation</title>          
+<para xml:id="C3.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C3.S3.SS5.p1.s1">
+In this method we interchange the roles of the points <Math mode="inline" xml:id="C3.S3.SS5.p1.m1">z_{k}</Math> and the function values <Math mode="inline" xml:id="C3.S3.SS5.p1.m2">f_{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C3.S3.SS5.p1.s2">
+It can be used for solving a nonlinear scalar equation <Math mode="inline" xml:id="C3.S3.SS5.p1.m3">f(z)=0</Math> approximately.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C3.S3.SS5.p1.s3">
+Another approach is to combine the methods of §3.8 with direct interpolation and §3.4.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S3.Px8">
+<title>Example</title>  
+  
+<para xml:id="C3.S3.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C3.S3.Px8.p1.s1">
+To compute the first negative zero <Math mode="inline" xml:id="C3.S3.Px8.p1.m1">a_{1}=-2.33810\;7410\ldot</Math> s of the Airy function <Math mode="inline" xml:id="C3.S3.Px8.p1.m2">f(x)=\mathrm{Ai}\left(x\right)</Math> (§9.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C3.S3.Px8.p1.s2">
+The inverse interpolation polynomial is given by <Math equation-number="3.3.39" mode="display" xml:id="C3.S3.E39">x(f)=[f_{0}]x+(f-f_{0})[f_{0},f_{1}]x+(f-f_{0})(f-f_{1})[f_{0},f_{1},f_{2}]x;</Math> compare (3.3.38).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C3.S3.Px8.p1.s3">
+With <Math mode="inline" xml:id="C3.S3.Px8.p1.m3">x_{0}=-2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="34" xml:id="C3.S3.Px8.p1.s4">
+2, <Math mode="inline" xml:id="C3.S3.Px8.p1.m4">x_{1}=-2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="35" xml:id="C3.S3.Px8.p1.s5">
+3, <Math mode="inline" xml:id="C3.S3.Px8.p1.m5">x_{2}=-2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="36" xml:id="C3.S3.Px8.p1.s6">
+4, we obtain <Math equation-number="3.3.40" mode="display" xml:id="C3.S3.E40">x=-2.2+1.44011\;1973(f-0.09614\;53780)+0.08865\;85832\*(f-0.09614\;53780)(f-0. 02670\;63331),</Math> and with <Math mode="inline" xml:id="C3.S3.Px8.p1.m6">f=0</Math> we find that <Math mode="inline" xml:id="C3.S3.Px8.p1.m7">x=-2.33823\;246</Math> 2, with 4 correct digits.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="37" xml:id="C3.S3.Px8.p1.s7">
+Byusing this approximation to <Math mode="inline" xml:id="C3.S3.Px8.p1.m8">x</Math> as a new point, <Math mode="inline" xml:id="C3.S3.Px8.p1.m9">x_{3}=x</Math> , and evaluating <Math mode="inline" xml:id="C3.S3.Px8.p1.m10">[f_{0},f_{1},f_{2},f_{3}]x=1.12388\;619</Math> 0, we find that <Math mode="inline" xml:id="C3.S3.Px8.p1.m11">x=-2.33810\;740</Math> 9, with 9 correct digits.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C3.S3.Px8.p2.s1">
+For comparison, we use Newton’s interpolation formula (3.3.38)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C3.S3.Px8.p2.s2">
+<Math equation-number="3.3.41" mode="display" xml:id="C3.S3.E41">f(x)=0.09614\;53780+0.69439\;04495(x+2.1)-0.03007\;14275(x+2.2)(x+2.3)</Math> , with the derivative <Math equation-number="3.3.42" mode="display" xml:id="C3.S3.E42">f^{\prime}(x)=0.55906\;90257-0.06014\;28550x</Math> , and compute an approximation to <Math mode="inline" xml:id="C3.S3.Px8.p2.m1">a_{1}</Math> by using Newton’s rule (§3.8(ii)) with starting value <Math mode="inline" xml:id="C3.S3.Px8.p2.m2">x=-2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C3.S3.Px8.p2.s3">
+5. This gives the new point <Math mode="inline" xml:id="C3.S3.Px8.p2.m3">x_{3}=-2.33934\;051</Math> 4. Then by using <Math mode="inline" xml:id="C3.S3.Px8.p2.m4">x_{3}</Math> in Newton’s interpolation formula, evaluating <Math mode="inline" xml:id="C3.S3.Px8.p2.m5">[x_{0},x_{1},x_{2},x_{3}]f=-0.26608\;2823</Math> 3 and recomputing <Math mode="inline" xml:id="C3.S3.Px8.p2.m6">f^{\prime}(x)</Math> , another application of Newton’s rule with starting value <Math mode="inline" xml:id="C3.S3.Px8.p2.m7">x_{3}</Math> gives the approximation <Math mode="inline" xml:id="C3.S3.Px8.p2.m8">x=2.33810\;737</Math> 3, with 8 correct digits.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S3.SS6">
+<title>Other Interpolation Methods</title>        
+        
+<para xml:id="C3.S3.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C3.S3.SS6.p1.s1">
+For Hermite interpolation, trigonometric interpolation, spline interpolation, rational interpolation (by using continued fractions), interpolation based on Chebyshev points, and bivariate interpolation, see Bulirsch and Rutishauser (1968),Davis (1975, pp. 27–31), and Mason and Handscomb (2003, Chapter 6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C3.S3.SS6.p1.s2">
+These references also describe convergence properties of the interpolation formulas.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S3.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C3.S3.SS6.p2.s1">
+For interpolation of a bounded function <Math mode="inline" xml:id="C3.S3.SS6.p2.m1">f</Math> on <Math mode="inline" xml:id="C3.S3.SS6.p2.m2">\mathbb{R}</Math> the cardinal function of <Math mode="inline" xml:id="C3.S3.SS6.p2.m3">f</Math> is defined by <Math equation-number="3.3.43" mode="display" xml:id="C3.S3.E43">C(f,h)(x)=\sum_{k=-\infty}^{\infty}f(kh)S(k,h)(x),</Math> where <Math equation-number="3.3.44" mode="display" xml:id="C3.S3.E44">S(k,h)(x)=\frac{\sin\left(\pi(x-kh)/h\right)}{\pi(x-kh)/h},</Math> is called the Sinc function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C3.S3.SS6.p2.s2">
+For theory and applications seeStenger (1993, Chapter 3).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+</section>

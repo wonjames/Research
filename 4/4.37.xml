@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S37">
+<title>Inverse Hyperbolic Functions</title>          
+<subsection xml:id="C4.S37.SS1">
+<title>General Definitions</title>           
+<para xml:id="C4.S37.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S37.SS1.p1.s1">
+The general values of the inverse hyperbolic functions are defined by <Math equation-number="4.37.1" mode="display" xml:id="C4.S37.E1">\operatorname{Arcsinh}z=\int_{0}^{z}\frac{\mathrm{d}t}{(1+t^{2})^{1/2}},</Math> , <Math equation-number="4.37.2" mode="display" xml:id="C4.S37.E2">\operatorname{Arccosh}z=\int_{1}^{z}\frac{\mathrm{d}t}{(t^{2}-1)^{1/2}},</Math> , <Math equation-number="4.37.3" mode="display" xml:id="C4.S37.E3">\operatorname{Arctanh}z=\int_{0}^{z}\frac{\mathrm{d}t}{1-t^{2}}, if z\neq\pm 1,</Math> , <Math equation-number="4.37.4" mode="display" xml:id="C4.S37.E4">\operatorname{Arccsch}z=\operatorname{Arcsinh}\left(1/z\right),</Math> , <Math equation-number="4.37.5" mode="display" xml:id="C4.S37.E5">\operatorname{Arcsech}z=\operatorname{Arccosh}\left(1/z\right),</Math> , <Math equation-number="4.37.6" mode="display" xml:id="C4.S37.E6">\operatorname{Arccoth}z=\operatorname{Arctanh}\left(1/z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S37.SS1.p1.s2">
+In (4.37.1) the integration path may not pass through either of the points <Math mode="inline" xml:id="C4.S37.SS1.p1.m1">t=\pm i</Math> , and the function <Math mode="inline" xml:id="C4.S37.SS1.p1.m2">(1+t^{2})^{1/2}</Math> assumes its principal value when <Math mode="inline" xml:id="C4.S37.SS1.p1.m3">t</Math> is real.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C4.S37.SS1.p1.s3">
+In (4.37.2) the integration path may not pass through either of the points <Math mode="inline" xml:id="C4.S37.SS1.p1.m4">\pm 1</Math> , and the function <Math mode="inline" xml:id="C4.S37.SS1.p1.m5">(t^{2}-1)^{1/2}</Math> assumes its principal value when <Math mode="inline" xml:id="C4.S37.SS1.p1.m6">t\in(1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C4.S37.SS1.p1.s4">
+Elsewhere on the integration paths in (4.37.1) and (4.37.2) the branches are determined by continuity.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C4.S37.SS1.p1.s5">
+In (4.37.3) the integration path may not intersect <Math mode="inline" xml:id="C4.S37.SS1.p1.m7">\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C4.S37.SS1.p1.s6">
+Each of the six functions is a multivalued function of <Math mode="inline" xml:id="C4.S37.SS1.p1.m8">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C4.S37.SS1.p1.s7">
+<Math mode="inline" xml:id="C4.S37.SS1.p1.m9">\operatorname{Arcsinh}z</Math> and <Math mode="inline" xml:id="C4.S37.SS1.p1.m10">\operatorname{Arccsch}z</Math> have branch points at <Math mode="inline" xml:id="C4.S37.SS1.p1.m11">z=\pm i</Math> ; the other four functions have branch points at <Math mode="inline" xml:id="C4.S37.SS1.p1.m12">z=\pm 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S37.SS2">
+<title>Principal Values</title>         
+  
+<para xml:id="C4.S37.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S37.SS2.p1.s1">
+The principal values (or principal branches) of the inverse <Math mode="inline" xml:id="C4.S37.SS2.p1.m1">\sinh</Math> , <Math mode="inline" xml:id="C4.S37.SS2.p1.m2">\cosh</Math> , and <Math mode="inline" xml:id="C4.S37.SS2.p1.m3">\tanh</Math> are obtained by introducing cuts in the <Math mode="inline" xml:id="C4.S37.SS2.p1.m4">z</Math> -plane as indicated in Figure 4.37.1(i)-(iii), and requiring the integration paths in (4.37.1)–(4.37.3) not to cross these cuts.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C4.S37.SS2.p1.s2">
+Compare the principal value of the logarithm (§4.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C4.S37.SS2.p1.s3">
+The principal branches are denoted by <Math mode="inline" xml:id="C4.S37.SS2.p1.m5">\operatorname{arcsinh}</Math> , <Math mode="inline" xml:id="C4.S37.SS2.p1.m6">\operatorname{arccosh}</Math> , <Math mode="inline" xml:id="C4.S37.SS2.p1.m7">\operatorname{arctanh}</Math> respectively.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C4.S37.SS2.p1.s4">
+Each is two-valued on the corresponding cut(s), and each is real on the part of the real axis that remains after deleting the intersections with the corresponding cuts.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S37.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C4.S37.SS2.p2.s1">
+The principal values of the inverse hyperbolic cosecant, hyperbolic secant, and hyperbolic tangent are given by <Math equation-number="4.37.7" mode="display" xml:id="C4.S37.E7">\operatorname{arccsch}z=\operatorname{arcsinh}\left(1/z\right),</Math> , <Math equation-number="4.37.8" mode="display" xml:id="C4.S37.E8">\operatorname{arcsech}z=\operatorname{arccosh}\left(1/z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C4.S37.SS2.p2.s2">
+<Math equation-number="4.37.9" mode="display" xml:id="C4.S37.E9">\operatorname{arccoth}z=\operatorname{arctanh}\left(1/z\right), if z\neq\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C4.S37.SS2.p2.s3">
+These functions are analytic in the cut plane depicted in Figure4.37.1(iv), (v), (vi), respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S37.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C4.S37.SS2.p3.s1">
+Except where indicated otherwise, it is assumed throughout the DLMF that the inverse hyperbolic functions assume their principal values.
+</sentence>
+
+</para>
+         
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="1" xml:id="C4.S37.F1.t1.s1">
+(i) <Math mode="inline" xml:id="C4.S37.F1.t1.r2.m1">\operatorname{arcsinh}z</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="2" xml:id="C4.S37.F1.t1.s2">
+(ii) <Math mode="inline" xml:id="C4.S37.F1.t1.r2.m2">\operatorname{arccosh}z</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="3" xml:id="C4.S37.F1.t1.s3">
+(iii) <Math mode="inline" xml:id="C4.S37.F1.t1.r2.m3">\operatorname{arctanh}z</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="4" xml:id="C4.S37.F1.t1.s4">
+(iv) <Math mode="inline" xml:id="C4.S37.F1.t1.r4.m1">\operatorname{arccsch}z</Math>
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="5" xml:id="C4.S37.F1.t1.s5">
+(v) <Math mode="inline" xml:id="C4.S37.F1.t1.r4.m2">\operatorname{arcsech}z</Math>
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="6" xml:id="C4.S37.F1.t1.s6">
+(vi) <Math mode="inline" xml:id="C4.S37.F1.t1.r4.m3">\operatorname{arccoth}z</Math>
+</sentence>
+  
+<sentence sentence-num-in-section="22" xml:id="C4.S37.F1.s1">
+Figure 4.37.1: <Math mode="inline" xml:id="C4.S37.F1.m1">z</Math> -plane. Branch cuts for the inverse hyperbolic functions.
+</sentence>   
+<para xml:id="C4.S37.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C4.S37.SS2.p4.s1">
+Graphs of the principal values for real arguments are given in §4.29.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C4.S37.SS2.p4.s2">
+This section also indicates conformal mappings, and surface plots for complex arguments.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+<subsection xml:id="C4.S37.SS3">
+<title>Reflection Formulas</title>          
+<para xml:id="C4.S37.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C4.S37.SS3.p1.s1">
+ <Math equation-number="4.37.10" mode="display" xml:id="C4.S37.E10">\operatorname{arcsinh}\left(-z\right)=-\operatorname{arcsinh}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C4.S37.SS3.p1.s2">
+<Math equation-number="4.37.11" mode="display" xml:id="C4.S37.E11">\operatorname{arccosh}\left(-z\right)=\pm\pi i+\operatorname{arccosh}z, if \Im z\gtrless 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C4.S37.SS3.p1.s3">
+<Math equation-number="4.37.12" mode="display" xml:id="C4.S37.E12">\operatorname{arctanh}\left(-z\right)=-\operatorname{arctanh}z, if z\neq\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C4.S37.SS3.p1.s4">
+<Math equation-number="4.37.13" mode="display" xml:id="C4.S37.E13">\operatorname{arccsch}\left(-z\right)=-\operatorname{arccsch}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C4.S37.SS3.p1.s5">
+<Math equation-number="4.37.14" mode="display" xml:id="C4.S37.E14">\operatorname{arcsech}\left(-z\right)=\mp\pi i+\operatorname{arcsech}z, if \Im z\gtrless 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="30" xml:id="C4.S37.SS3.p1.s6">
+<Math equation-number="4.37.15" mode="display" xml:id="C4.S37.E15">\operatorname{arccoth}\left(-z\right)=-\operatorname{arccoth}z, if z\neq\pm 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S37.SS4">
+<title>Logarithmic Forms</title>           
+<para xml:id="C4.S37.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C4.S37.SS4.p1.s1">
+Throughout this subsection all quantities assume their principal values.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C4.S37.Px1">
+<title>Inverse Hyperbolic Sine</title>   
+<para xml:id="C4.S37.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C4.S37.Px1.p1.s1">
+ <Math equation-number="4.37.16" mode="display" xml:id="C4.S37.E16">\operatorname{arcsinh}z=\ln\left((z^{2}+1)^{1/2}+z\right), if z/i\in\mathbb{C}\setminus(-\infty,-1)\cup(1,\infty);</Math> compare Figure 4.37.1(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C4.S37.Px1.p1.s2">
+On the cuts <Math equation-number="4.37.17" mode="display" xml:id="C4.S37.E17">\operatorname{arcsinh}\left(iy\right)=\tfrac{1}{2}\pi i\pm\ln\left((y^{2}-1)^{ 1/2}+y\right), if y\in[1,\infty),</Math> <Math equation-number="4.37.18" mode="display" xml:id="C4.S37.E18">\operatorname{arcsinh}\left(iy\right)=-\tfrac{1}{2}\pi i\pm\ln\left((y^{2}-1)^ {1/2}-y\right), if y\in(-\infty,-1],</Math> the upper/lower signs corresponding to the right/left sides.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S37.Px2">
+<title>Inverse Hyperbolic Cosine</title>   
+<para xml:id="C4.S37.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C4.S37.Px2.p1.s1">
+ <Math equation-number="4.37.19" mode="display" xml:id="C4.S37.E19">\operatorname{arccosh}z=\ln\left(\pm(z^{2}-1)^{1/2}+z\right), if z\in\mathbb{C}\setminus(-\infty,1),</Math> the upper or lower sign being taken according as <Math mode="inline" xml:id="C4.S37.Px2.p1.m1">\Re z\gtrless 0</Math> ; compare Figure 4.37.1(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C4.S37.Px2.p1.s2">
+Also, <Math equation-number="4.37.20" mode="display" xml:id="C4.S37.E20">\operatorname{arccosh}\left(\mathrm{i}y\right)=\pm\tfrac{1}{2}\pi\mathrm{i}+ \ln\left((y^{2}+1)^{1/2}\pm y\right), if y\gtrless 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C4.S37.Px2.p1.s3">
+It should be noted that the imaginary axis is not a cut; the function defined by (4.37.19) and (4.37.20) is analytic everywhere except on <Math mode="inline" xml:id="C4.S37.Px2.p1.m2">(-\infty,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C4.S37.Px2.p1.s4">
+Compare Figure 4.37.1(ii).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C4.S37.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C4.S37.Px2.p2.s1">
+An equivalent definition is <Math equation-number="4.37.21" mode="display" xml:id="C4.S37.E21">\operatorname{arccosh}z=2\ln\left(\left(\frac{z+1}{2}\right)^{1/2}+\left(\frac {z-1}{2}\right)^{1/2}\right), if z\in\mathbb{C}\setminus(-\infty,1);</Math> see Kahan (1987).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S37.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C4.S37.Px2.p3.s1">
+On the part of the cuts from <Math mode="inline" xml:id="C4.S37.Px2.p3.m1">-1</Math> to <Math mode="inline" xml:id="C4.S37.Px2.p3.m2">1</Math> <Math equation-number="4.37.22" mode="display" xml:id="C4.S37.E22">\operatorname{arccosh}x=\pm\ln\left(i(1-x^{2})^{1/2}+x\right), if x\in(-1,1],</Math> the upper/lower sign corresponding to the upper/lower side.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S37.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C4.S37.Px2.p4.s1">
+On the part of the cut from <Math mode="inline" xml:id="C4.S37.Px2.p4.m1">-\infty</Math> to <Math mode="inline" xml:id="C4.S37.Px2.p4.m2">-1</Math> <Math equation-number="4.37.23" mode="display" xml:id="C4.S37.E23">\operatorname{arccosh}x=\pm\pi i+\ln\left((x^{2}-1)^{1/2}-x\right), if x\in(-\infty,-1],</Math> the upper/lower sign corresponding to the upper/lower side.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S37.Px3">
+<title>Inverse Hyperbolic Tangent</title>   
+<para xml:id="C4.S37.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C4.S37.Px3.p1.s1">
+ <Math equation-number="4.37.24" mode="display" xml:id="C4.S37.E24">\operatorname{arctanh}z=\tfrac{1}{2}\ln\left(\frac{1+z}{1-z}\right), if z\in\mathbb{C}\setminus(-\infty,-1]\cup[1,\infty);</Math> compare Figure 4.37.1(iii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C4.S37.Px3.p1.s2">
+On the cuts <Math equation-number="4.37.25" mode="display" xml:id="C4.S37.E25">\operatorname{arctanh}x=\pm\tfrac{1}{2}\pi i+\tfrac{1}{2}\ln\left(\frac{x+1}{x -1}\right), if x\in(-\infty,-1)\cup(1,\infty),</Math> the upper/lower sign corresponding to the upper/lower sides.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S37.Px4">
+<title>Other Inverse Functions</title>   
+<para xml:id="C4.S37.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C4.S37.Px4.p1.s1">
+For the corresponding results for <Math mode="inline" xml:id="C4.S37.Px4.p1.m1">\operatorname{arccsch}z</Math> , <Math mode="inline" xml:id="C4.S37.Px4.p1.m2">\operatorname{arcsech}z</Math> , and <Math mode="inline" xml:id="C4.S37.Px4.p1.m3">\operatorname{arccoth}z</Math> , use (4.37.7)–(4.37.9);compare §4.23(iv).
+</sentence>
+
+</para>
+   
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S37.SS5">
+<title>Fundamental Property</title>          
+<para xml:id="C4.S37.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C4.S37.SS5.p1.s1">
+With <Math mode="inline" xml:id="C4.S37.SS5.p1.m1">k\in\mathbb{Z}</Math> , the general solutions of the equations <Math equation-number="4.37.26" mode="display" xml:id="C4.S37.E26">z=\sinh w,</Math> <Math equation-number="4.37.27" mode="display" xml:id="C4.S37.E27">z=\cosh w,</Math> <Math equation-number="4.37.28" mode="display" xml:id="C4.S37.E28">z=\tanh w,</Math> are respectively given by <Math equation-number="4.37.29" mode="display" xml:id="C4.S37.E29">w=\operatorname{Arcsinh}z=(-1)^{k}\operatorname{arcsinh}z+k\pi i,</Math> , <Math equation-number="4.37.30" mode="display" xml:id="C4.S37.E30">w=\operatorname{Arccosh}z=\pm\operatorname{arccosh}z+2k\pi i,</Math> , <Math equation-number="4.37.31" mode="display" xml:id="C4.S37.E31">w=\operatorname{Arctanh}z=\operatorname{arctanh}z+k\pi i, if z\neq\pm 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S37.SS6">
+<title>Interrelations</title>          
+<para xml:id="C4.S37.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C4.S37.SS6.p1.s1">
+Table 4.30.1 can also be used to find interrelations betweeninverse hyperbolic functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C4.S37.SS6.p1.s2">
+For example, <Math mode="inline" xml:id="C4.S37.SS6.p1.m1">\operatorname{arcsech}a=\operatorname{arccoth}\left((1-a^{2})^{-1/2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

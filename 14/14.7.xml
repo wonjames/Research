@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S7">
+<title>Integer Degree and Order</title>           
+<subsection xml:id="C14.S7.SS1">
+<title><Math mode="inline" xml:id="C14.S7.SS1.m1">\mu=0</Math></title>             
+<para xml:id="C14.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S7.SS1.p1.s1">
+For <Math mode="inline" xml:id="C14.S7.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="14.7.1" mode="display" xml:id="C14.S7.E1">\mathsf{P}^{0}_{n}\left(x\right)=\mathsf{P}_{n}\left(x\right)=P^{0}_{n}\left(x \right)=P_{n}\left(x\right), if x\in\mathbb{R},</Math> where <Math mode="inline" xml:id="C14.S7.SS1.p1.m2">P_{n}\left(x\right)</Math> is the Legendre polynomial of degree <Math mode="inline" xml:id="C14.S7.SS1.p1.m3">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S7.SS1.p1.s2">
+For additional properties of <Math mode="inline" xml:id="C14.S7.SS1.p1.m4">P_{n}\left(x\right)</Math> see Chapter 18.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S7.SS1.p1.s3">
+<Math equation-number="14.7.2" mode="display" xml:id="C14.S7.E2">\mathsf{Q}^{0}_{n}\left(x\right)=\mathsf{Q}_{n}\left(x\right)=\frac{1}{2}P_{n} \left(x\right)\ln\left(\frac{1+x}{1-x}\right)-W_{n-1}(x),</Math> where <Math mode="inline" xml:id="C14.S7.SS1.p1.m5">W_{-1}(x)=0</Math> , and for <Math mode="inline" xml:id="C14.S7.SS1.p1.m6">n\geq 1</Math> , <Math equation-number="14.7.3" mode="display" xml:id="C14.S7.E3">W_{n-1}(x)=\sum_{s=0}^{n-1}\frac{(n+s)!(\psi\left(n+1\right)-\psi\left(s+1 \right))}{2^{s}(n-s)!(s!)^{2}}{(x-1)^{s}}</Math> ; equivalently, <Math equation-number="14.7.4" mode="display" xml:id="C14.S7.E4">W_{n-1}(x)=\sum_{k=1}^{n}\frac{1}{k}P_{k-1}\left(x\right)P_{n-k}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C14.S7.SS1.p1.s4">
+<Math equation-number="14.7.5" mode="display" xml:id="C14.S7.E5">W_{0}(x)=1,W_{1}(x)=\tfrac{3}{2}x,W_{2}(x)=\tfrac{5}{2}x^{2}-\tfrac{2}{3}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S7.SS1.p2.s1">
+Next, <Math equation-number="14.7.6" mode="display" xml:id="C14.S7.E6">Q^{0}_{n}\left(x\right)=Q_{n}\left(x\right)=n!\boldsymbol{Q}^{0}_{n}\left(x \right)=n!\boldsymbol{Q}_{n}\left(x\right)</Math> , where <Math equation-number="14.7.7" mode="display" xml:id="C14.S7.E7">Q_{n}\left(x\right)=\frac{1}{2}P_{n}\left(x\right)\ln\left(\frac{x+1}{x-1} \right)-W_{n-1}(x), if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S7.SS2">
+<title>Rodrigues-Type Formulas</title>           
+<para xml:id="C14.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C14.S7.SS2.p1.s1">
+For <Math mode="inline" xml:id="C14.S7.SS2.p1.m1">m=0,1,2,\dots</Math> , and <Math mode="inline" xml:id="C14.S7.SS2.p1.m2">n=0,1,2,\dots</Math> , <Math equation-number="14.7.8" mode="display" xml:id="C14.S7.E8">\mathsf{P}^{m}_{n}\left(x\right)=(-1)^{m}\left(1-x^{2}\right)^{m/2}\frac{{ \mathrm{d}}^{m}}{{\mathrm{d}x}^{m}}\mathsf{P}_{n}\left(x\right),</Math> , <Math equation-number="14.7.9" mode="display" xml:id="C14.S7.E9">\mathsf{Q}^{m}_{n}\left(x\right)=(-1)^{m}\left(1-x^{2}\right)^{m/2}\frac{{ \mathrm{d}}^{m}}{{\mathrm{d}x}^{m}}\mathsf{Q}_{n}\left(x\right),</Math> <Math equation-number="14.7.10" mode="display" xml:id="C14.S7.E10">\mathsf{P}^{m}_{n}\left(x\right)=(-1)^{m+n}\frac{\left(1-x^{2}\right)^{m/2}}{2 ^{n}n!}\frac{{\mathrm{d}}^{m+n}}{{\mathrm{d}x}^{m+n}}\left(1-x^{2}\right)^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C14.S7.SS2.p1.s2">
+<Math equation-number="14.7.11" mode="display" xml:id="C14.S7.E11">P^{m}_{n}\left(x\right)=\left(x^{2}-1\right)^{m/2}\frac{{\mathrm{d}}^{m}}{{ \mathrm{d}x}^{m}}P_{n}\left(x\right),</Math> , <Math equation-number="14.7.12" mode="display" xml:id="C14.S7.E12">Q^{m}_{n}\left(x\right)=\left(x^{2}-1\right)^{m/2}\frac{{\mathrm{d}}^{m}}{{ \mathrm{d}x}^{m}}Q_{n}\left(x\right),</Math> , <Math equation-number="14.7.13" mode="display" xml:id="C14.S7.E13">P_{n}\left(x\right)=\frac{1}{2^{n}n!}\frac{{\mathrm{d}}^{n}}{{\mathrm{d}x}^{n} }\left(x^{2}-1\right)^{n},</Math> , <Math equation-number="14.7.14" mode="display" xml:id="C14.S7.E14">P^{m}_{n}\left(x\right)=\frac{\left(x^{2}-1\right)^{m/2}}{2^{n}n!}\frac{{ \mathrm{d}}^{m+n}}{{\mathrm{d}x}^{m+n}}\left(x^{2}-1\right)^{n},</Math> , <Math equation-number="14.7.15" mode="display" xml:id="C14.S7.E15">P^{m}_{m}\left(x\right)=\frac{(2m)!}{2^{m}m!}\left(x^{2}-1\right)^{m/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C14.S7.SS2.p2.s1">
+When <Math mode="inline" xml:id="C14.S7.SS2.p2.m1">m</Math> is even and <Math mode="inline" xml:id="C14.S7.SS2.p2.m2">m\leq n</Math> , <Math mode="inline" xml:id="C14.S7.SS2.p2.m3">\mathsf{P}^{m}_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S7.SS2.p2.m4">P^{m}_{n}\left(x\right)</Math> are polynomials of degree <Math mode="inline" xml:id="C14.S7.SS2.p2.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C14.S7.SS2.p2.s2">
+Also, <Math equation-number="14.7.16" mode="display" xml:id="C14.S7.E16">\mathsf{P}^{m}_{n}\left(x\right)=P^{m}_{n}\left(x\right)=0, if m&gt;n</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S7.SS3">
+<title>Reflection Formulas</title>          
+<para xml:id="C14.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C14.S7.SS3.p1.s1">
+ <Math equation-number="14.7.17" mode="display" xml:id="C14.S7.E17">\mathsf{P}^{m}_{n}\left(-x\right)=(-1)^{n-m}\mathsf{P}^{m}_{n}\left(x\right),</Math> , <Math equation-number="14.7.18" mode="display" xml:id="C14.S7.E18">\mathsf{Q}^{\pm m}_{n}\left(-x\right)=(-1)^{n-m-1}\mathsf{Q}^{\pm m}_{n}\left( x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S7.SS4">
+<title>Generating Functions</title>           
+<para xml:id="C14.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C14.S7.SS4.p1.s1">
+When <Math mode="inline" xml:id="C14.S7.SS4.p1.m1">-1&lt;x&lt;1</Math> and <Math mode="inline" xml:id="C14.S7.SS4.p1.m2">|h|&lt;1</Math> , <Math equation-number="14.7.19" mode="display" xml:id="C14.S7.E19">\sum_{n=0}^{\infty}\mathsf{P}_{n}\left(x\right)h^{n}=\left(1-2xh+h^{2}\right)^ {-1/2},</Math> <Math equation-number="14.7.20" mode="display" xml:id="C14.S7.E20">\sum_{n=0}^{\infty}\mathsf{Q}_{n}\left(x\right)h^{n}=\frac{1}{\left(1-2xh+h^{2 }\right)^{1/2}}\*\ln\left(\frac{x-h+\left(1-2xh+h^{2}\right)^{1/2}}{\left(1-x^ {2}\right)^{1/2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C14.S7.SS4.p2.s1">
+When <Math mode="inline" xml:id="C14.S7.SS4.p2.m1">-1&lt;x&lt;1</Math> and <Math mode="inline" xml:id="C14.S7.SS4.p2.m2">|h|&gt;1</Math> , <Math equation-number="14.7.21" mode="display" xml:id="C14.S7.E21">\sum_{n=0}^{\infty}\mathsf{P}_{n}\left(x\right)h^{-n-1}=\left(1-2xh+h^{2} \right)^{-1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C14.S7.SS4.p3.s1">
+When <Math mode="inline" xml:id="C14.S7.SS4.p3.m1">x&gt;1</Math> , (14.7.19) applies with <Math mode="inline" xml:id="C14.S7.SS4.p3.m2">|h|&lt;x-\left(x^{2}-1\right)^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C14.S7.SS4.p3.s2">
+Also, with the same conditions <Math equation-number="14.7.22" mode="display" xml:id="C14.S7.E22">\sum_{n=0}^{\infty}Q_{n}\left(x\right)h^{n}=\frac{1}{\left(1-2xh+h^{2}\right)^ {1/2}}\*\ln\left(\frac{x-h+\left(1-2xh+h^{2}\right)^{1/2}}{\left(x^{2}-1\right )^{1/2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C14.S7.SS4.p4.s1">
+Lastly, when <Math mode="inline" xml:id="C14.S7.SS4.p4.m1">x&gt;1</Math> , (14.7.21) applies with <Math mode="inline" xml:id="C14.S7.SS4.p4.m2">|h|&gt;x+\left(x^{2}-1\right)^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S7.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C14.S7.SS4.p5.s1">
+For other generating functions see Magnus et al. (1966, pp. 232–233) andRainville (1960, pp. 163–165, 168, 170–171, 184).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

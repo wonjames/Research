@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S18">
+<title>Mathematical Applications</title>         
+<subsection xml:id="C29.S18.SS1">
+<title>Sphero-Conal Coordinates</title>          
+   
+<para xml:id="C29.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S18.SS1.p1.s1">
+The wave equation <Math equation-number="29.18.1" mode="display" xml:id="C29.S18.E1">\nabla^{2}u+\omega^{2}u=0,</Math> when transformed to sphero-conal coordinates <Math mode="inline" xml:id="C29.S18.SS1.p1.m1">r,\beta,\gamma</Math> : <Math equation-number="29.18.2" mode="display" xml:id="C29.S18.E2">x=kr\operatorname{sn}\left(\beta,k\right)\operatorname{sn}\left(\gamma,k\right),y=\mathrm{i}\frac{k}{k^{\prime}}r\operatorname{cn}\left(\beta,k\right) \operatorname{cn}\left(\gamma,k\right),z=\frac{1}{k^{\prime}}r\operatorname{dn}\left(\beta,k\right)\operatorname{dn} \left(\gamma,k\right),</Math> with <Math equation-number="29.18.3" mode="display" xml:id="C29.S18.E3">r\geq 0,\beta=\!K\!+\mathrm{i}\beta^{\prime},0\leq\beta^{\prime}\leq 2\!{K^{\prime}}\!,0\leq\gamma\leq 4\!K\!,</Math> admits solutions <Math equation-number="29.18.4" mode="display" xml:id="C29.S18.E4">u(r,\beta,\gamma)=u_{1}(r)u_{2}(\beta)u_{3}(\gamma),</Math> where <Math mode="inline" xml:id="C29.S18.SS1.p1.m2">u_{1}</Math> , <Math mode="inline" xml:id="C29.S18.SS1.p1.m3">u_{2}</Math> , <Math mode="inline" xml:id="C29.S18.SS1.p1.m4">u_{3}</Math> satisfy the differential equations <Math equation-number="29.18.5" mode="display" xml:id="C29.S18.E5">\frac{\mathrm{d}}{\mathrm{d}r}\left(r^{2}\frac{\mathrm{d}u_{1}}{\mathrm{d}r} \right)+(\omega^{2}r^{2}-\nu(\nu+1))u_{1}=0,</Math> , <Math equation-number="29.18.6" mode="display" xml:id="C29.S18.E6">\frac{{\mathrm{d}}^{2}u_{2}}{{\mathrm{d}\beta}^{2}}+(h-\nu(\nu+1)k^{2}{ \operatorname{sn}^{2}}\left(\beta,k\right))u_{2}=0,</Math> , <Math equation-number="29.18.7" mode="display" xml:id="C29.S18.E7">\frac{{\mathrm{d}}^{2}u_{3}}{{\mathrm{d}\gamma}^{2}}+(h-\nu(\nu+1)k^{2}{ \operatorname{sn}^{2}}\left(\gamma,k\right))u_{3}=0,</Math> with separation constants <Math mode="inline" xml:id="C29.S18.SS1.p1.m5">h</Math> and <Math mode="inline" xml:id="C29.S18.SS1.p1.m6">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S18.SS1.p1.s2">
+(29.18.5) is the differential equation of spherical Bessel functions (§10.47(i)), and (29.18.6), (29.18.7) agree with the Lamé equation (29.2.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S18.SS2">
+<title>Ellipsoidal Coordinates</title>           
+<para xml:id="C29.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C29.S18.SS2.p1.s1">
+The wave equation (29.18.1), when transformed to ellipsoidal coordinates <Math mode="inline" xml:id="C29.S18.SS2.p1.m1">\alpha,\beta,\gamma</Math> : <Math equation-number="29.18.8" mode="display" xml:id="C29.S18.E8">x=k\operatorname{sn}\left(\alpha,k\right)\operatorname{sn}\left(\beta,k\right) \operatorname{sn}\left(\gamma,k\right),y=-\frac{k}{k^{\prime}}\operatorname{cn}\left(\alpha,k\right)\operatorname{cn} \left(\beta,k\right)\operatorname{cn}\left(\gamma,k\right),z=\frac{\mathrm{i}}{kk^{\prime}}\operatorname{dn}\left(\alpha,k\right) \operatorname{dn}\left(\beta,k\right)\operatorname{dn}\left(\gamma,k\right),</Math> with <Math equation-number="29.18.9" mode="display" xml:id="C29.S18.E9">\alpha=\!K\!+\mathrm{i}\!{K^{\prime}}\!-\alpha^{\prime}, if 0\leq\alpha^{\prime}&lt;\!K\!, //// \beta=\!K\!+\mathrm{i}\beta^{\prime}, if 0\leq\beta^{\prime}\leq 2\!{K^{\prime}}\!,0\leq\gamma\leq 4\!K\!,</Math> admits solutions <Math equation-number="29.18.10" mode="display" xml:id="C29.S18.E10">u(\alpha,\beta,\gamma)=u_{1}(\alpha)u_{2}(\beta)u_{3}(\gamma),</Math> where <Math mode="inline" xml:id="C29.S18.SS2.p1.m2">u_{1}</Math> , <Math mode="inline" xml:id="C29.S18.SS2.p1.m3">u_{2}</Math> , <Math mode="inline" xml:id="C29.S18.SS2.p1.m4">u_{3}</Math> each satisfy the Lamé wave equation (29.11.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S18.SS3">
+<title>Spherical and Ellipsoidal Harmonics</title>             
+<para xml:id="C29.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C29.S18.SS3.p1.s1">
+See Erdélyi et al. (1955, §15.7).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S18.SS4">
+<title>Other Applications</title>           
+<para xml:id="C29.S18.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C29.S18.SS4.p1.s1">
+Triebel (1965) gives applications of Lamé functions to the theory of conformal mappings.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C29.S18.SS4.p1.s2">
+Patera and Winternitz (1973) finds bases for the rotation group.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

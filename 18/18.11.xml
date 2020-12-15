@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S11">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C18.S11.SS1">
+<title>Explicit Formulas</title>        
+ 
+<para xml:id="C18.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S11.SS1.p1.s1">
+See §§18.5(i) and 18.5(iii) for relations to trigonometric functions, the hypergeometric function, and generalized hypergeometric functions.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S11.Px1">
+<title>Ultraspherical</title>      
+<para xml:id="C18.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S11.Px1.p1.s1">
+ <Math equation-number="18.11.1" mode="display" xml:id="C18.S11.E1">\mathsf{P}^{m}_{n}\left(x\right)={\left(\tfrac{1}{2}\right)_{m}}(-2)^{m}(1-x^{ 2})^{\frac{1}{2}m}C^{(m+\frac{1}{2})}_{n-m}\left(x\right)={\left(n+1\right)_{m }}(-2)^{-m}(1-x^{2})^{\frac{1}{2}m}P^{(m,m)}_{n-m}\left(x\right), if 0\leq m\leq n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S11.Px1.p1.s2">
+For the Ferrers function <Math mode="inline" xml:id="C18.S11.Px1.p1.m1">\mathsf{P}^{m}_{n}\left(x\right)</Math> , see §14.3(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S11.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S11.Px1.p2.s1">
+Compare also (14.3.21) and (14.3.22).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S11.Px2">
+<title>Laguerre</title>    
+<para xml:id="C18.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S11.Px2.p1.s1">
+ <Math equation-number="18.11.2" mode="display" xml:id="C18.S11.E2">L^{(\alpha)}_{n}\left(x\right)=\frac{{\left(\alpha+1\right)_{n}}}{n!}M\left(-n ,\alpha+1,x\right)=\frac{(-1)^{n}}{n!}U\left(-n,\alpha+1,x\right)=\frac{{\left (\alpha+1\right)_{n}}}{n!}x^{-\frac{1}{2}(\alpha+1)}e^{\frac{1}{2}x}M_{n+\frac {1}{2}(\alpha+1),\frac{1}{2}\alpha}\left(x\right)=\frac{(-1)^{n}}{n!}x^{-\frac {1}{2}(\alpha+1)}e^{\frac{1}{2}x}W_{n+\frac{1}{2}(\alpha+1),\frac{1}{2}\alpha} \left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C18.S11.Px2.p1.s2">
+For the confluent hypergeometric functions <Math mode="inline" xml:id="C18.S11.Px2.p1.m1">M\left(a,b,x\right)</Math> and <Math mode="inline" xml:id="C18.S11.Px2.p1.m2">U\left(a,b,x\right)</Math> , see §13.2(i), and for the Whittaker functions <Math mode="inline" xml:id="C18.S11.Px2.p1.m3">M_{\kappa,\mu}\left(x\right)</Math> and <Math mode="inline" xml:id="C18.S11.Px2.p1.m4">W_{\kappa,\mu}\left(x\right)</Math> see §13.14(i).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S11.Px3">
+<title>Hermite</title>    
+<para xml:id="C18.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S11.Px3.p1.s1">
+ <Math equation-number="18.11.3" mode="display" xml:id="C18.S11.E3">H_{n}\left(x\right)=2^{n}U\left(-\tfrac{1}{2}n,\tfrac{1}{2},x^{2}\right)=2^{n} xU\left(-\tfrac{1}{2}n+\tfrac{1}{2},\tfrac{3}{2},x^{2}\right)=2^{\frac{1}{2}n} e^{\frac{1}{2}x^{2}}U\left(-n-\tfrac{1}{2},2^{\frac{1}{2}}x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C18.S11.Px3.p1.s2">
+<Math equation-number="18.11.4" mode="display" xml:id="C18.S11.E4">\mathit{He}_{n}\left(x\right)=2^{\frac{1}{2}n}U\left(-\tfrac{1}{2}n,\tfrac{1}{ 2},\tfrac{1}{2}x^{2}\right)=2^{\frac{1}{2}(n-1)}xU\left(-\tfrac{1}{2}n+\tfrac{ 1}{2},\tfrac{3}{2},\tfrac{1}{2}x^{2}\right)=e^{\tfrac{1}{4}x^{2}}U\left(-n- \tfrac{1}{2},x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C18.S11.Px3.p1.s3">
+For the parabolic cylinder function <Math mode="inline" xml:id="C18.S11.Px3.p1.m1">U\left(a,z\right)</Math> , see §12.2.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S11.SS2">
+<title>Formulas of Mehler–Heine Type</title>        
+  
+<paragraph xml:id="C18.S11.Px4">
+<title>Jacobi</title>   
+ 
+<para xml:id="C18.S11.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S11.Px4.p1.s1">
+ <Math equation-number="18.11.5" mode="display" xml:id="C18.S11.E5">\lim_{n\to\infty}\frac{1}{n^{\alpha}}P^{(\alpha,\beta)}_{n}\left(1-\frac{z^{2} }{2n^{2}}\right)=\lim_{n\to\infty}\frac{1}{n^{\alpha}}P^{(\alpha,\beta)}_{n} \left(\cos\frac{z}{n}\right)=\frac{2^{\alpha}}{z^{\alpha}}J_{\alpha}\left(z \right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S11.Px5">
+<title>Laguerre</title>    
+<para xml:id="C18.S11.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C18.S11.Px5.p1.s1">
+ <Math equation-number="18.11.6" mode="display" xml:id="C18.S11.E6">\lim_{n\to\infty}\frac{1}{n^{\alpha}}L^{(\alpha)}_{n}\left(\frac{z}{n}\right)= \frac{1}{z^{\frac{1}{2}\alpha}}J_{\alpha}\left(2z^{\frac{1}{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S11.Px6">
+<title>Hermite</title>    
+<para xml:id="C18.S11.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S11.Px6.p1.s1">
+ <Math equation-number="18.11.7" mode="display" xml:id="C18.S11.E7">\lim_{n\to\infty}\frac{(-1)^{n}n^{\frac{1}{2}}}{2^{2n}n!}H_{2n}\left(\frac{z}{ 2n^{\frac{1}{2}}}\right)=\frac{1}{\pi^{\frac{1}{2}}}\cos z,</Math> , <Math equation-number="18.11.8" mode="display" xml:id="C18.S11.E8">\lim_{n\to\infty}\frac{(-1)^{n}}{2^{2n}n!}H_{2n+1}\left(\frac{z}{2n^{\frac{1}{ 2}}}\right)=\frac{2}{\pi^{\frac{1}{2}}}\sin z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S11.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S11.Px6.p2.s1">
+For the Bessel function <Math mode="inline" xml:id="C18.S11.Px6.p2.m1">J_{\nu}\left(z\right)</Math> , see §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C18.S11.Px6.p2.s2">
+The limits (18.11.5)–(18.11.8) hold uniformly for <Math mode="inline" xml:id="C18.S11.Px6.p2.m2">z</Math> in any bounded subset of <Math mode="inline" xml:id="C18.S11.Px6.p2.m3">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

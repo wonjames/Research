@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S11">
+<title>Hurwitz Zeta Function</title>        
+   
+<subsection xml:id="C25.S11.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C25.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S11.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C25.S11.SS1.p1.m1">\zeta\left(s,a\right)</Math> was introduced in Hurwitz (1882) and defined by the series expansion <Math equation-number="25.11.1" mode="display" xml:id="C25.S11.E1">\zeta\left(s,a\right)=\sum_{n=0}^{\infty}\frac{1}{(n+a)^{s}}, if \Re s&gt;1, a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C25.S11.SS1.p2.s1">
+ <Math mode="inline" xml:id="C25.S11.SS1.p2.m1">\zeta\left(s,a\right)</Math> has a meromorphic continuation in the <Math mode="inline" xml:id="C25.S11.SS1.p2.m2">s</Math> -plane, its only singularity in <Math mode="inline" xml:id="C25.S11.SS1.p2.m3">\mathbb{C}</Math> being a simple pole at <Math mode="inline" xml:id="C25.S11.SS1.p2.m4">s=1</Math> with residue <Math mode="inline" xml:id="C25.S11.SS1.p2.m5">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C25.S11.SS1.p2.s2">
+As a function of <Math mode="inline" xml:id="C25.S11.SS1.p2.m6">a</Math> , with <Math mode="inline" xml:id="C25.S11.SS1.p2.m7">s</Math> ( <Math mode="inline" xml:id="C25.S11.SS1.p2.m8">\neq 1</Math> ) fixed, <Math mode="inline" xml:id="C25.S11.SS1.p2.m9">\zeta\left(s,a\right)</Math> is analytic in the half-plane <Math mode="inline" xml:id="C25.S11.SS1.p2.m10">\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C25.S11.SS1.p2.s3">
+The Riemann zeta function is a special case: <Math equation-number="25.11.2" mode="display" xml:id="C25.S11.E2">\zeta\left(s,1\right)=\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C25.S11.SS1.p3.s1">
+For most purposes it suffices to restrict <Math mode="inline" xml:id="C25.S11.SS1.p3.m1">0&lt;\Re a\leq 1</Math> because of the following straightforward consequences of (25.11.1):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C25.S11.SS1.p3.s2">
+<Math equation-number="25.11.3" mode="display" xml:id="C25.S11.E3">\zeta\left(s,a\right)=\zeta\left(s,a+1\right)+a^{-s},</Math> <Math equation-number="25.11.4" mode="display" xml:id="C25.S11.E4">\zeta\left(s,a\right)=\zeta\left(s,a+m\right)+\sum_{n=0}^{m-1}\frac{1}{(n+a)^{ s}}, if m=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C25.S11.SS1.p3.s3">
+Most references treat real <Math mode="inline" xml:id="C25.S11.SS1.p3.m2">a</Math> with <Math mode="inline" xml:id="C25.S11.SS1.p3.m3">0&lt;a\leq 1</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS2">
+<title>Graphics</title>                  
+  
+<sentence sentence-num-in-section="8" xml:id="C25.S11.F1.s1">
+Figure 25.11.1: Hurwitz zeta function <Math mode="inline" xml:id="C25.S11.F1.m4">\zeta\left(x,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.F1.m5">a</Math> = 0.3, 0.5, 0.8, 1, <Math mode="inline" xml:id="C25.S11.F1.m6">-20\leq x\leq 10</Math> . The curves are almost indistinguishable for <Math mode="inline" xml:id="C25.S11.F1.m7">-14&amp;lt;x&amp;lt;-1</Math> , approximately.
+</sentence>           
+<sentence sentence-num-in-section="9" xml:id="C25.S11.F2.s1">
+Figure 25.11.2: Hurwitz zeta function <Math mode="inline" xml:id="C25.S11.F2.m4">\zeta\left(x,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.F2.m5">-19.5\leq x\leq 10</Math> , <Math mode="inline" xml:id="C25.S11.F2.m6">0.02\leq a\leq 1</Math> .
+</sentence>   
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS3">
+<title>Representations by the Euler–Maclaurin Formula</title>          
+<para xml:id="C25.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C25.S11.SS3.p1.s1">
+ <Math equation-number="25.11.5" mode="display" xml:id="C25.S11.E5">\zeta\left(s,a\right)=\sum_{n=0}^{N}\frac{1}{(n+a)^{s}}+\frac{(N+a)^{1-s}}{s-1 }-s\int_{N}^{\infty}\frac{x-\left\lfloor x\right\rfloor}{(x+a)^{s+1}}\mathrm{d }x, if s\neq 1, \Re s&gt;0, a&gt;0, N=0,1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C25.S11.SS3.p1.s2">
+<Math equation-number="25.11.6" mode="display" xml:id="C25.S11.E6">\zeta\left(s,a\right)=\frac{1}{a^{s}}\left(\frac{1}{2}+\frac{a}{s-1}\right)- \frac{s(s+1)}{2}\int_{0}^{\infty}\frac{\widetilde{B}_{2}\left(x\right)-B_{2}}{ (x+a)^{s+2}}\mathrm{d}x, if s\neq 1, \Re s&gt;-1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C25.S11.SS3.p1.s3">
+<Math equation-number="25.11.7" mode="display" xml:id="C25.S11.E7">\zeta\left(s,a\right)=\frac{1}{a^{s}}+\frac{1}{(1+a)^{s}}\left(\frac{1}{2}+ \frac{1+a}{s-1}\right)+\sum_{k=1}^{n}\genfrac{(}{)}{0.0pt}{}{s+2k-2}{2k-1} \frac{B_{2k}}{2k}\frac{1}{(1+a)^{s+2k-1}}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1} \int_{1}^{\infty}\frac{\widetilde{B}_{2n+1}\left(x\right)}{(x+a)^{s+2n+1}} \mathrm{d}x, if s\neq 1, a&gt;0, n=1,2,3,\dots, \Re s&gt;-2n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C25.S11.SS3.p1.s4">
+For <Math mode="inline" xml:id="C25.S11.SS3.p1.m1">\widetilde{B}_{n}\left(x\right)</Math> see §24.2(iii).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS4">
+<title>Series Representations</title>          
+<para xml:id="C25.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C25.S11.SS4.p1.s1">
+ <Math equation-number="25.11.8" mode="display" xml:id="C25.S11.E8">\zeta\left(s,\tfrac{1}{2}a\right)=\zeta\left(s,\tfrac{1}{2}a+\tfrac{1}{2} \right)+2^{s}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(n+a)^{s}}, if \Re s&gt;0, s\neq 1, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C25.S11.SS4.p1.s2">
+<Math equation-number="25.11.9" mode="display" xml:id="C25.S11.E9">\zeta\left(1-s,a\right)=\frac{2\Gamma\left(s\right)}{(2\pi)^{s}}\*\sum_{n=1}^{ \infty}\frac{1}{n^{s}}\cos\left(\tfrac{1}{2}\pi s-2n\pi a\right), if \Re s&gt;1, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C25.S11.SS4.p1.s3">
+<Math equation-number="25.11.10" mode="display" xml:id="C25.S11.E10">\zeta\left(s,a\right)=\sum_{n=0}^{\infty}\frac{{\left(s\right)_{n}}}{n!}\zeta \left(n+s\right)(1-a)^{n}, if s\neq 1, |a-1|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C25.S11.SS4.p1.s4">
+When <Math mode="inline" xml:id="C25.S11.SS4.p1.m1">a=\frac{1}{2}</Math> , (25.11.10) reduces to (25.8.3); compare (25.11.11).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C25.S11.SS4.p2.s1">
+For other series expansions similar to (25.11.10) see Coffey (2008).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS5">
+<title>Special Values</title>          
+<para xml:id="C25.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C25.S11.SS5.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C25.S11.SS5.p1.m1">\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C25.S11.SS5.p1.s2">
+<Math equation-number="25.11.11" mode="display" xml:id="C25.S11.E11">\zeta\left(s,\tfrac{1}{2}\right)=(2^{s}-1)\zeta\left(s\right), if s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C25.S11.SS5.p1.s3">
+<Math equation-number="25.11.12" mode="display" xml:id="C25.S11.E12">\zeta\left(n+1,a\right)=\frac{(-1)^{n+1}{\psi^{(n)}}\left(a\right)}{n!}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C25.S11.SS5.p1.s4">
+<Math equation-number="25.11.13" mode="display" xml:id="C25.S11.E13">\zeta\left(0,a\right)=\tfrac{1}{2}-a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="23" xml:id="C25.S11.SS5.p1.s5">
+<Math equation-number="25.11.14" mode="display" xml:id="C25.S11.E14">\zeta\left(-n,a\right)=-\frac{B_{n+1}\left(a\right)}{n+1}, if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="24" xml:id="C25.S11.SS5.p1.s6">
+<Math equation-number="25.11.15" mode="display" xml:id="C25.S11.E15">\zeta\left(s,ka\right)=k^{-s}\*\sum_{n=0}^{k-1}\zeta\left(s,a+\frac{n}{k} \right), if s\neq 1, k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="25" xml:id="C25.S11.SS5.p1.s7">
+<Math equation-number="25.11.16" mode="display" xml:id="C25.S11.E16">\zeta\left(1-s,\frac{h}{k}\right)=\frac{2\Gamma\left(s\right)}{(2\pi k)^{s}}\* \sum_{r=1}^{k}\cos\left(\frac{\pi s}{2}-\frac{2\pi rh}{k}\right)\zeta\left(s, \frac{r}{k}\right), if s\neq 0,1; h,k integers, 1\leq h\leq k</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS6">
+<title>Derivatives</title>         
+ 
+<paragraph xml:id="C25.S11.Px1">
+<title><Math mode="inline" xml:id="C25.S11.Px1.m1">a</Math>-Derivative</title>  
+ 
+<para xml:id="C25.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C25.S11.Px1.p1.s1">
+ <Math equation-number="25.11.17" mode="display" xml:id="C25.S11.E17">\frac{\partial}{\partial a}\zeta\left(s,a\right)=-s\zeta\left(s+1,a\right), if s\neq 0,1; \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C25.S11.Px2">
+<title><Math mode="inline" xml:id="C25.S11.Px2.m1">s</Math>-Derivatives</title>  
+ 
+<para xml:id="C25.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C25.S11.Px2.p1.s1">
+In (25.11.18)–(25.11.24) primes on <Math mode="inline" xml:id="C25.S11.Px2.p1.m1">\zeta</Math> denote derivatives with respect to <Math mode="inline" xml:id="C25.S11.Px2.p1.m2">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C25.S11.Px2.p1.s2">
+Similarly in §§25.11(viii) and 25.11(xii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C25.S11.Px2.p1.s3">
+<Math equation-number="25.11.18" mode="display" xml:id="C25.S11.E18">\zeta'\left(0,a\right)=\ln\Gamma\left(a\right)-\tfrac{1}{2}\ln\left(2\pi\right), if a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C25.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C25.S11.Px2.p2.s1">
+ <Math equation-number="25.11.19" mode="display" xml:id="C25.S11.E19">\zeta'\left(s,a\right)=-\frac{\ln a}{a^{s}}\left(\frac{1}{2}+\frac{a}{s-1} \right)-\frac{a^{1-s}}{(s-1)^{2}}+\frac{s(s+1)}{2}\int_{0}^{\infty}\frac{( \widetilde{B}_{2}\left(x\right)-B_{2})\ln\left(x+a\right)}{(x+a)^{s+2}}\mathrm {d}x-\frac{(2s+1)}{2}\int_{0}^{\infty}\frac{\widetilde{B}_{2}\left(x\right)-B_ {2}}{(x+a)^{s+2}}\mathrm{d}x, if \Re s&gt;-1, s\neq 1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C25.S11.Px2.p2.s2">
+<Math equation-number="25.11.20" mode="display" xml:id="C25.S11.E20">(-1)^{k}{\zeta^{(k)}}\left(s,a\right)=\frac{(\ln a)^{k}}{a^{s}}\left(\frac{1}{ 2}+\frac{a}{s-1}\right)+k!a^{1-s}\sum_{r=0}^{k-1}\frac{(\ln a)^{r}}{r!(s-1)^{k -r+1}}-\frac{s(s+1)}{2}\int_{0}^{\infty}\frac{(\widetilde{B}_{2}\left(x\right) -B_{2})(\ln\left(x+a\right))^{k}}{(x+a)^{s+2}}\mathrm{d}x+\frac{k(2s+1)}{2} \int_{0}^{\infty}\frac{(\widetilde{B}_{2}\left(x\right)-B_{2})(\ln\left(x+a \right))^{k-1}}{(x+a)^{s+2}}\mathrm{d}x-\frac{k(k-1)}{2}\int_{0}^{\infty}\frac {(\widetilde{B}_{2}\left(x\right)-B_{2})(\ln\left(x+a\right))^{k-2}}{(x+a)^{s+ 2}}\mathrm{d}x, if \Re s&gt;-1, s\neq 1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C25.S11.Px2.p2.s3">
+<Math equation-number="25.11.21" mode="display" xml:id="C25.S11.E21">\zeta'\left(1-2n,\frac{h}{k}\right)=\frac{(\psi\left(2n\right)-\ln\left(2\pi k \right))B_{2n}\left(h/k\right)}{2n}-\frac{(\psi\left(2n\right)-\ln\left(2\pi \right))B_{2n}}{2nk^{2n}}+\frac{(-1)^{n+1}\pi}{(2\pi k)^{2n}}\sum_{r=1}^{k-1} \sin\left(\frac{2\pi rh}{k}\right){\psi^{(2n-1)}}\left(\frac{r}{k}\right)+ \frac{(-1)^{n+1}2\cdot(2n-1)!}{(2\pi k)^{2n}}\sum_{r=1}^{k-1}\cos\left(\frac{2 \pi rh}{k}\right)\zeta'\left(2n,\frac{r}{k}\right)+\frac{\zeta'\left(1-2n \right)}{k^{2n}},</Math> where <Math mode="inline" xml:id="C25.S11.Px2.p2.m1">h,k</Math> are integers with <Math mode="inline" xml:id="C25.S11.Px2.p2.m2">1\leq h\leq k</Math> and <Math mode="inline" xml:id="C25.S11.Px2.p2.m3">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="33" xml:id="C25.S11.Px2.p2.s4">
+<Math equation-number="25.11.22" mode="display" xml:id="C25.S11.E22">\zeta'\left(1-2n,\tfrac{1}{2}\right)=-\frac{B_{2n}\ln 2}{n\cdot 4^{n}}-\frac{( 2^{2n-1}-1)\zeta'\left(1-2n\right)}{2^{2n-1}}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="34" xml:id="C25.S11.Px2.p2.s5">
+<Math equation-number="25.11.23" mode="display" xml:id="C25.S11.E23">\zeta'\left(1-2n,\tfrac{1}{3}\right)=-\frac{\pi(9^{n}-1)B_{2n}}{8n\sqrt{3}(3^{ 2n-1}-1)}-\frac{B_{2n}\ln 3}{4n\cdot 3^{2n-1}}-\frac{(-1)^{n}{\psi^{(2n-1)}} \left(\frac{1}{3}\right)}{2\sqrt{3}(6\pi)^{2n-1}}-\frac{\left(3^{2n-1}-1\right )\zeta'\left(1-2n\right)}{2\cdot 3^{2n-1}}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="35" xml:id="C25.S11.Px2.p2.s6">
+<Math equation-number="25.11.24" mode="display" xml:id="C25.S11.E24">\sum_{r=1}^{k-1}\zeta'\left(s,\frac{r}{k}\right)=(k^{s}-1)\zeta'\left(s\right) +k^{s}\zeta\left(s\right)\ln k, if s\neq 1, k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS7">
+<title>Integral Representations</title>        
+  
+<para xml:id="C25.S11.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C25.S11.SS7.p1.s1">
+ <Math equation-number="25.11.25" mode="display" xml:id="C25.S11.E25">\zeta\left(s,a\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{ s-1}e^{-ax}}{1-e^{-x}}\mathrm{d}x, if \Re s&gt;1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C25.S11.SS7.p1.s2">
+<Math equation-number="25.11.26" mode="display" xml:id="C25.S11.E26">\zeta\left(s,a\right)=-s\int_{-a}^{\infty}\frac{x-\left\lfloor x\right\rfloor- \frac{1}{2}}{(x+a)^{s+1}}\mathrm{d}x, if -1&lt;\Re s&lt;0, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C25.S11.SS7.p1.s3">
+<Math equation-number="25.11.27" mode="display" xml:id="C25.S11.E27">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+\frac{1}{\Gamma \left(s\right)}\int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2 }\right)\frac{x^{s-1}}{e^{ax}}\mathrm{d}x, if \Re s&gt;-1, s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C25.S11.SS7.p1.s4">
+<Math equation-number="25.11.28" mode="display" xml:id="C25.S11.E28">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+\sum_{k=1}^{n} \frac{B_{2k}}{(2k)!}{\left(s\right)_{2k-1}}a^{1-s-2k}+\frac{1}{\Gamma\left(s \right)}\int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}-\sum_ {k=1}^{n}\frac{B_{2k}}{(2k)!}x^{2k-1}\right)x^{s-1}e^{-ax}\mathrm{d}x, if \Re s&gt;-(2n+1), s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C25.S11.SS7.p2.s1">
+ <Math equation-number="25.11.29" mode="display" xml:id="C25.S11.E29">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+2\int_{0}^{\infty} \frac{\sin\left(s\operatorname{arctan}\left(x/a\right)\right)}{(a^{2}+x^{2})^{ s/2}(e^{2\pi x}-1)}\mathrm{d}x, if s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C25.S11.SS7.p2.s2">
+<Math equation-number="25.11.30" mode="display" xml:id="C25.S11.E30">\zeta\left(s,a\right)=\frac{\Gamma\left(1-s\right)}{2\pi i}\int_{-\infty}^{(0+ )}\frac{e^{az}z^{s-1}}{1-e^{z}}\mathrm{d}z, if s\neq 1, \Re a&gt;0,</Math> where the integration contour is a loop around the negative real axis as described for (25.5.20).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS8">
+<title>Further Integral Representations</title>        
+ 
+<para xml:id="C25.S11.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C25.S11.SS8.p1.s1">
+ <Math equation-number="25.11.31" mode="display" xml:id="C25.S11.E31">\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{s-1}e^{-ax}}{2\cosh x} \mathrm{d}x=4^{-s}\left(\zeta\left(s,\tfrac{1}{4}+\tfrac{1}{4}a\right)-\zeta \left(s,\tfrac{3}{4}+\tfrac{1}{4}a\right)\right), if \Re s&gt;0, \Re a&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C25.S11.SS8.p1.s2">
+<Math equation-number="25.11.32" mode="display" xml:id="C25.S11.E32">\int_{0}^{a}x^{n}\psi\left(x\right)\mathrm{d}x=(-1)^{n-1}\zeta'\left(-n\right) +(-1)^{n}h(n)\frac{B_{n+1}}{n+1}-\sum_{k=0}^{n}(-1)^{k}\genfrac{(}{)}{0.0pt}{} {n}{k}h(k)\frac{B_{k+1}(a)}{k+1}a^{n-k}+\sum_{k=0}^{n}(-1)^{k}\genfrac{(}{)}{0 .0pt}{}{n}{k}\zeta'\left(-k,a\right)a^{n-k}, if n=1,2,\dots, \Re a&gt;0,</Math> where <Math equation-number="25.11.33" mode="display" xml:id="C25.S11.E33">h(n)=\sum_{k=1}^{n}k^{-1}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="44" xml:id="C25.S11.SS8.p1.s3">
+ <Math equation-number="25.11.34" mode="display" xml:id="C25.S11.E34">n\int_{0}^{a}\zeta'\left(1-n,x\right)\mathrm{d}x=\zeta'\left(-n,a\right)-\zeta '\left(-n\right)+\frac{B_{n+1}-B_{n+1}\left(a\right)}{n(n+1)}, if n=1,2,\dots, \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS9">
+<title>Integrals</title>          
+<para xml:id="C25.S11.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C25.S11.SS9.p1.s1">
+See Prudnikov et al. (1990, §2.3), Prudnikov et al. (1992a, §3.2), andPrudnikov et al. (1992b, §3.2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS10">
+<title>Further Series Representations</title>          
+<para xml:id="C25.S11.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C25.S11.SS10.p1.s1">
+ <Math equation-number="25.11.35" mode="display" xml:id="C25.S11.E35">\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(n+a)^{s}}=\frac{1}{\Gamma\left(s\right)} \int_{0}^{\infty}\frac{x^{s-1}e^{-ax}}{1+e^{-x}}\mathrm{d}x=2^{-s}\left(\zeta \left(s,\tfrac{1}{2}a\right)-\zeta\left(s,\tfrac{1}{2}(1+a)\right)\right), if \Re a&gt;0, \Re s&gt;0; or \Re a=0, \Im a\neq 0, 0&lt;\Re s&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C25.S11.SS10.p2.s1">
+When <Math mode="inline" xml:id="C25.S11.SS10.p2.m1">a=1</Math> , (25.11.35) reduces to (25.2.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C25.S11.SS10.p2.s2">
+<Math equation-number="25.11.36" mode="display" xml:id="C25.S11.E36">\sum_{n=1}^{\infty}\frac{\chi(n)}{n^{s}}=k^{-s}\sum_{r=1}^{k}\chi(r)\zeta\left (s,\frac{r}{k}\right), if \Re s&gt;1,</Math> where <Math mode="inline" xml:id="C25.S11.SS10.p2.m2">\chi(n)</Math> is a Dirichlet character <Math mode="inline" xml:id="C25.S11.SS10.p2.m3">\pmod{k}</Math> (§27.8).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C25.S11.SS10.p3.s1">
+See also Srivastava and Choi (2001).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS11">
+<title>Sums</title>          
+<para xml:id="C25.S11.SS11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C25.S11.SS11.p1.s1">
+ <Math equation-number="25.11.37" mode="display" xml:id="C25.S11.E37">\sum_{k=1}^{\infty}\frac{(-1)^{k}}{k}\zeta\left(nk,a\right)=-n\ln\Gamma\left(a \right)+\ln\left(\prod_{j=0}^{n-1}\Gamma\left(a-e^{(2j+1)\pi i/n}\right)\right), if n=2,3,4,\dots, \Re a\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C25.S11.SS11.p1.s2">
+<Math equation-number="25.11.38" mode="display" xml:id="C25.S11.E38">\sum_{k=1}^{\infty}\genfrac{(}{)}{0.0pt}{}{n+k}{k}\zeta\left(n+k+1,a\right)z^{ k}=\frac{(-1)^{n}}{n!}\left({\psi^{(n)}}\left(a\right)-{\psi^{(n)}}\left(a-z \right)\right), if n=1,2,3,\dots, \Re a&gt;0, |z|&lt;|a|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C25.S11.SS11.p1.s3">
+<Math equation-number="25.11.39" mode="display" xml:id="C25.S11.E39">\sum_{k=2}^{\infty}\frac{k}{2^{k}}\zeta\left(k+1,\tfrac{3}{4}\right)=8G,</Math> where <Math mode="inline" xml:id="C25.S11.SS11.p1.m1">G</Math> is Catalan’s constant: <Math equation-number="25.11.40" mode="display" xml:id="C25.S11.E40">G=\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)^{2}}=0.91596\;55941\;772\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C25.S11.SS11.p2.s1">
+For further sums see Prudnikov et al. (1990, pp. 396–397) andHansen (1975, pp. 358–360).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS12">
+<title><Math mode="inline" xml:id="C25.S11.SS12.m1">a</Math>-Asymptotic Behavior</title>          
+<para xml:id="C25.S11.SS12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C25.S11.SS12.p1.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p1.m1">a\to 0</Math> with <Math mode="inline" xml:id="C25.S11.SS12.p1.m2">s</Math> <Math mode="inline" xml:id="C25.S11.SS12.p1.m3">(\neq 1)</Math> fixed, <Math equation-number="25.11.41" mode="display" xml:id="C25.S11.E41">\zeta\left(s,a+1\right)=\zeta\left(s\right)-s\zeta\left(s+1\right)a+O\left(a^{ 2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C25.S11.SS12.p2.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p2.m1">\beta\to\pm\infty</Math> with <Math mode="inline" xml:id="C25.S11.SS12.p2.m2">s</Math> fixed, <Math mode="inline" xml:id="C25.S11.SS12.p2.m3">\Re s&gt;1</Math> , <Math equation-number="25.11.42" mode="display" xml:id="C25.S11.E42">\zeta\left(s,\alpha+i\beta\right)\to 0,</Math> uniformly with respect to bounded nonnegative values of <Math mode="inline" xml:id="C25.S11.SS12.p2.m4">\alpha</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C25.S11.SS12.p3.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p3.m1">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C25.S11.SS12.p3.m2">|\operatorname{ph}a|\leq\pi-\delta(&lt;\pi)</Math> , with <Math mode="inline" xml:id="C25.S11.SS12.p3.m3">s(\neq 1)</Math> and <Math mode="inline" xml:id="C25.S11.SS12.p3.m4">\delta</Math> fixed, we have the asymptotic expansion <Math equation-number="25.11.43" mode="display" xml:id="C25.S11.E43">\zeta\left(s,a\right)-\frac{a^{1-s}}{s-1}-\frac{1}{2}a^{-s}\sim\sum_{k=1}^{ \infty}\frac{B_{2k}}{(2k)!}{\left(s\right)_{2k-1}}a^{1-s-2k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C25.S11.SS12.p4.s1">
+Similarly, as <Math mode="inline" xml:id="C25.S11.SS12.p4.m1">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C25.S11.SS12.p4.m2">|\operatorname{ph}a|\leq\frac{1}{2}\pi-\delta(&lt;\frac{1}{2}\pi)</Math> , <Math equation-number="25.11.44" mode="display" xml:id="C25.S11.E44">\zeta'\left(-1,a\right)-\frac{1}{12}+\frac{1}{4}a^{2}-\left(\frac{1}{12}-\frac {1}{2}a+\frac{1}{2}a^{2}\right)\ln a\sim-\sum_{k=1}^{\infty}\frac{B_{2k+2}}{(2 k+2)(2k+1)2k}a^{-2k},</Math> and <Math equation-number="25.11.45" mode="display" xml:id="C25.S11.E45">\zeta'\left(-2,a\right)-\frac{1}{12}a+\frac{1}{9}a^{3}-\left(\frac{1}{6}a- \frac{1}{2}a^{2}+\frac{1}{3}a^{3}\right)\ln a\sim\sum_{k=1}^{\infty}\frac{2\!B _{2k+2}}{(2k+2)(2k+1)2k(2k-1)}a^{-(2k-1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C25.S11.SS12.p4.s2">
+For the more general case <Math mode="inline" xml:id="C25.S11.SS12.p4.m3">\zeta'\left(-m,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.SS12.p4.m4">m=1,2,\dots</Math> , see Elizalde (1986).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C25.S11.SS12.p5.s1">
+For an exponentially-improved form of (25.11.43) seeParis (2005b).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

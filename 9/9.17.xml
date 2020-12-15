@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S17">
+<title>Methods of Computation</title>        
+  
+<subsection xml:id="C9.S17.SS1">
+<title>Maclaurin Expansions</title>        
+ 
+<para xml:id="C9.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S17.SS1.p1.s1">
+Although the Maclaurin-series expansions of §§9.4 and9.12(vi)converge for all finite values of <Math mode="inline" xml:id="C9.S17.SS1.p1.m1">z</Math> , they are cumbersome to use when <Math mode="inline" xml:id="C9.S17.SS1.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S17.SS1.p1.s2">
+For large <Math mode="inline" xml:id="C9.S17.SS1.p1.m3">|z|</Math> the asymptotic expansions of §§9.7 and9.12(viii)should be used instead.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C9.S17.SS1.p1.s3">
+Since these expansions diverge, the accuracy they yield is limited by the magnitude of <Math mode="inline" xml:id="C9.S17.SS1.p1.m4">|z|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C9.S17.SS1.p1.s4">
+However, in the case of <Math mode="inline" xml:id="C9.S17.SS1.p1.m5">\mathrm{Ai}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S17.SS1.p1.m6">\mathrm{Bi}\left(z\right)</Math> this accuracy can be increased considerably by use of the exponentially-improved forms of expansion supplied in §9.7(v).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S17.SS2">
+<title>Differential Equations</title>        
+ 
+<para xml:id="C9.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C9.S17.SS2.p1.s1">
+A comprehensive and powerful approach is to integrate the defining differential equation (9.2.1) by direct numerical methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C9.S17.SS2.p1.s2">
+As described in §3.7(ii), to ensure stability the integration path must be chosen in such a way that as we proceed along it the wanted solution grows at least as fast as all other solutions of the differential equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C9.S17.SS2.p1.s3">
+In the case of <Math mode="inline" xml:id="C9.S17.SS2.p1.m1">\mathrm{Ai}\left(z\right)</Math> , for example, this means that in the sectors <Math mode="inline" xml:id="C9.S17.SS2.p1.m2">\tfrac{1}{3}\pi&lt;|\operatorname{ph}z|&lt;\pi</Math> we may integrate along outward rays from the origin with initial values obtained from §9.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C9.S17.SS2.p1.s4">
+But when <Math mode="inline" xml:id="C9.S17.SS2.p1.m3">|\operatorname{ph}z|&lt;\tfrac{1}{3}\pi</Math> the integration has to be towards the origin, with starting values of <Math mode="inline" xml:id="C9.S17.SS2.p1.m4">\mathrm{Ai}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S17.SS2.p1.m5">\mathrm{Ai}'\left(z\right)</Math> computed from their asymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C9.S17.SS2.p1.s5">
+On the remaining rays, given by <Math mode="inline" xml:id="C9.S17.SS2.p1.m6">\operatorname{ph}z=\pm\tfrac{1}{3}\pi</Math> and <Math mode="inline" xml:id="C9.S17.SS2.p1.m7">\pi</Math> , integration can proceed in either direction.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S17.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C9.S17.SS2.p2.s1">
+For further information see Lozier and Olver (1993) andFabijonas et al. (2004).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C9.S17.SS2.p2.s2">
+The former reference includes a parallelized version of the method.
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S17.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C9.S17.SS2.p3.s1">
+In the case of the Scorer functions, integration of the differential equation (9.12.1) is more difficult than (9.2.1), because in some regions stable directions of integration do not exist.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C9.S17.SS2.p3.s2">
+An example is provided by <Math mode="inline" xml:id="C9.S17.SS2.p3.m1">\mathrm{Gi}\left(x\right)</Math> on the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C9.S17.SS2.p3.s3">
+In these cases boundary-value methods need to be used instead; see §3.7(iii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S17.SS3">
+<title>Integral Representations</title>        
+ 
+<para xml:id="C9.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C9.S17.SS3.p1.s1">
+Among the integral representations of the Airy functions the Stieltjes transform (9.10.18)furnishes a way of computing <Math mode="inline" xml:id="C9.S17.SS3.p1.m1">\mathrm{Ai}\left(z\right)</Math> in the complex plane, once values of this function can be generated on the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C9.S17.SS3.p1.s2">
+For details, including the application of a generalized form of Gaussian quadrature, see Gordon (1969, Appendix A) andSchulten et al. (1979).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S17.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C9.S17.SS3.p2.s1">
+Gil et al. (2002c) describes two methods for the computation of <Math mode="inline" xml:id="C9.S17.SS3.p2.m1">\mathrm{Ai}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S17.SS3.p2.m2">\mathrm{Ai}'\left(z\right)</Math> for <Math mode="inline" xml:id="C9.S17.SS3.p2.m3">z\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C9.S17.SS3.p2.s2">
+In the first method the integration path for the contour integral (9.5.4) is deformed to coincide with paths of steepest descent (§2.4(iv)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C9.S17.SS3.p2.s3">
+The trapezoidal rule (§3.5(i)) is then applied. The second method is to apply generalized Gauss–Laguerre quadrature (§3.5(v)) to the integral (9.5.8).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C9.S17.SS3.p2.s4">
+For the second method see also Gautschi (2002a).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C9.S17.SS3.p2.s5">
+The methods for <Math mode="inline" xml:id="C9.S17.SS3.p2.m4">\mathrm{Ai}'\left(z\right)</Math> are similar.
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S17.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C9.S17.SS3.p3.s1">
+For quadrature methods for Scorer functions see Gil et al. (2001),Lee (1980), and Gordon (1970, Appendix A); but see alsoGautschi (1983).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S17.SS4">
+<title>Via Bessel Functions</title>        
+ 
+<para xml:id="C9.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C9.S17.SS4.p1.s1">
+In consequence of §9.6(i), algorithms for generating Bessel functions, Hankel functions, and modified Bessel functions (§10.74)can also be applied to <Math mode="inline" xml:id="C9.S17.SS4.p1.m1">\mathrm{Ai}\left(z\right)</Math> , <Math mode="inline" xml:id="C9.S17.SS4.p1.m2">\mathrm{Bi}\left(z\right)</Math> , and their derivatives.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S17.SS5">
+<title>Zeros</title>        
+  
+<para xml:id="C9.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C9.S17.SS5.p1.s1">
+Zeros of the Airy functions, and their derivatives, can be computed to high precision via Newton’s rule (§3.8(ii)) or Halley’s rule (§3.8(v)), using values supplied by the asymptotic expansions of §9.9(iv) as initial approximations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C9.S17.SS5.p1.s2">
+This method was used in the computation of the tables in §9.9(v).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C9.S17.SS5.p1.s3">
+See alsoFabijonas et al. (2004).
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S17.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C9.S17.SS5.p2.s1">
+For the computation of the zeros of the Scorer functions and their derivatives see Gil et al. (2003c).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

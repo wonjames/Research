@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S8">
+<title>Asymptotic Expansions for Large <Math mode="inline" xml:id="C28.S8.m1">q</Math></title>          
+ 
+<subsection xml:id="C28.S8.SS1">
+<title>Eigenvalues</title>        
+ 
+<para xml:id="C28.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S8.SS1.p1.s1">
+Denote <Math mode="inline" xml:id="C28.S8.SS1.p1.m1">h=\sqrt{q}</Math> and <Math mode="inline" xml:id="C28.S8.SS1.p1.m2">s=2m+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S8.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C28.S8.SS1.p1.m3">h\to+\infty</Math> with <Math mode="inline" xml:id="C28.S8.SS1.p1.m4">m=0,1,2,\dots</Math> , <Math equation-number="28.8.1" mode="display" xml:id="C28.S8.E1">\rselection{a_{m}\left(h^{2}\right)\\ b_{m+1}\left(h^{2}\right)}\sim-2h^{2}+2sh-\frac{1}{8}(s^{2}+1)-\frac{1}{2^{7}h }(s^{3}+3s)-\frac{1}{2^{12}h^{2}}(5s^{4}+34s^{2}+9)-\frac{1}{2^{17}h^{3}}(33s^ {5}+410s^{3}+405s)-\frac{1}{2^{20}h^{4}}(63s^{6}+1260s^{4}+2943s^{2}+486)- \frac{1}{2^{25}h^{5}}(527s^{7}+15617s^{5}+69001s^{3}+41607s)+\cdots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S8.SS1.p1.s3">
+For error estimates see Kurz (1979), and for graphical interpretation see Figure 28.2.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C28.S8.SS1.p1.s4">
+Also, <Math equation-number="28.8.2" mode="display" xml:id="C28.S8.E2">b_{m+1}\left(h^{2}\right)-a_{m}\left(h^{2}\right)=\frac{2^{4m+5}}{m!}\left( \frac{2}{\pi}\right)^{\ifrac{1}{2}}h^{m+(\ifrac{3}{2})}e^{-4h}\*{\left(1-\frac {6m^{2}+14m+7}{32h}+O\left(\frac{1}{h^{2}}\right)\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S8.SS2">
+<title>Sips’ Expansions</title>        
+  
+<para xml:id="C28.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S8.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C28.S8.SS2.p1.m1">x=\tfrac{1}{2}\pi+\lambda h^{-\ifrac{1}{4}}</Math> , where <Math mode="inline" xml:id="C28.S8.SS2.p1.m2">\lambda</Math> is a realconstant such that <Math mode="inline" xml:id="C28.S8.SS2.p1.m3">|\lambda|&lt;2^{\ifrac{1}{4}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C28.S8.SS2.p1.s2">
+Also let <Math mode="inline" xml:id="C28.S8.SS2.p1.m4">\xi=2\sqrt{h}\cos x</Math> and <Math mode="inline" xml:id="C28.S8.SS2.p1.m5">D_{m}\left(\xi\right)=e^{-\ifrac{\xi^{2}}{4}}\mathit{He}_{m}\left(\xi\right)</Math> (§18.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C28.S8.SS2.p1.s3">
+Then as <Math mode="inline" xml:id="C28.S8.SS2.p1.m6">h\to+\infty</Math> <Math equation-number="28.8.3" mode="display" xml:id="C28.S8.E3">\mathrm{ce}_{m}\left(x,h^{2}\right)=\widehat{C}_{m}\left(U_{m}(\xi)+V_{m}(\xi) \right),\frac{\mathrm{se}_{m+1}\left(x,h^{2}\right)}{\sin x}=\widehat{S}_{m}\left(U_{m }(\xi)-V_{m}(\xi)\right),</Math> where
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C28.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C28.S8.SS2.p2.s1">
+ <Math equation-number="28.8.4" mode="display" xml:id="C28.S8.E4">U_{m}(\xi)\sim D_{m}\left(\xi\right)-\frac{1}{2^{6}h}\left(D_{m+4}\left(\xi \right)-4!\dbinom{m}{4}D_{m-4}\left(\xi\right)\right)+\frac{1}{2^{13}h^{2}} \left(D_{m+8}\left(\xi\right)-2^{5}(m+2)D_{m+4}\left(\xi\right)+4!\,2^{5}(m-1) \dbinom{m}{4}D_{m-4}\left(\xi\right)+8!\genfrac{(}{)}{0.0pt}{}{m}{8}D_{m-8} \left(\xi\right)\right)+\cdots,</Math> <Math equation-number="28.8.5" mode="display" xml:id="C28.S8.E5">V_{m}(\xi)\sim\frac{1}{2^{4}h}\bigg{(}-D_{m+2}\left(\xi\right)-m(m-1)D_{m-2} \left(\xi\right)\bigg{)}+\frac{1}{2^{10}h^{2}}\left(D_{m+6}\left(\xi\right)+(m ^{2}-25m-36)D_{m+2}\left(\xi\right)-m(m-1)(m^{2}+27m-10)D_{m-2}\left(\xi\right )-6!\genfrac{(}{)}{0.0pt}{}{m}{6}D_{m-6}\left(\xi\right)\right)+\cdots</Math> , and <Math equation-number="28.8.6" mode="display" xml:id="C28.S8.E6">\widehat{C}_{m}\sim\left(\frac{\pi h}{2(m!)^{2}}\right)^{\ifrac{1}{4}}\left(1+ \frac{2m+1}{8h}+\dfrac{m^{4}+2m^{3}+263m^{2}+262m+108}{2048h^{2}}+\cdots\right )^{-\ifrac{1}{2}},</Math> , <Math equation-number="28.8.7" mode="display" xml:id="C28.S8.E7">\widehat{S}_{m}\sim\left(\frac{\pi h}{2(m!)^{2}}\right)^{\ifrac{1}{4}}\left(1- \frac{2m+1}{8h}+\dfrac{m^{4}+2m^{3}-121m^{2}-122m-84}{2048h^{2}}+\cdots\right) ^{-\ifrac{1}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C28.S8.SS2.p3.s1">
+These results are derived formally inSips (1949, 1959, 1965).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C28.S8.SS2.p3.s2">
+See alsoMeixner and Schäfke (1954, §2.84).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S8.SS3">
+<title>Goldstein’s Expansions</title>        
+  
+<para xml:id="C28.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C28.S8.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C28.S8.SS3.p1.m1">x=\tfrac{1}{2}\pi-\mu h^{-\ifrac{1}{4}}</Math> , where <Math mode="inline" xml:id="C28.S8.SS3.p1.m2">\mu</Math> is a constantsuch that <Math mode="inline" xml:id="C28.S8.SS3.p1.m3">\mu\geq 1</Math> , and <Math mode="inline" xml:id="C28.S8.SS3.p1.m4">s=2m+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C28.S8.SS3.p1.s2">
+Then as <Math mode="inline" xml:id="C28.S8.SS3.p1.m5">h\to+\infty</Math> <Math equation-number="28.8.8" mode="display" xml:id="C28.S8.E8">\dfrac{\mathrm{ce}_{m}\left(x,h^{2}\right)}{\mathrm{ce}_{m}\left(0,h^{2}\right )}=\dfrac{2^{m-(\ifrac{1}{2})}}{\sigma_{m}}\left(W_{m}^{+}(x)(P_{m}(x)-Q_{m}(x ))+W_{m}^{-}(x)(P_{m}(x)+Q_{m}(x))\right),\dfrac{\mathrm{se}_{m+1}\left(x,h^{2}\right)}{\mathrm{se}_{m+1}'\left(0,h^{2} \right)}=\dfrac{2^{m-(\ifrac{1}{2})}}{\tau_{m+1}}\left(W_{m}^{+}(x)(P_{m}(x)-Q _{m}(x))-W_{m}^{-}(x)(P_{m}(x)+Q_{m}(x))\right),</Math> where <Math equation-number="28.8.9" mode="display" xml:id="C28.S8.E9">W_{m}^{\pm}(x)=\frac{e^{\pm 2h\sin x}}{(\cos x)^{m+1}}\begin{cases}\left(\cos \left(\frac{1}{2}x+\frac{1}{4}\pi\right)\right)^{2m+1},\\ \left(\sin\left(\frac{1}{2}x+\frac{1}{4}\pi\right)\right)^{2m+1},\end{cases}</Math> and <Math equation-number="28.8.10" mode="display" xml:id="C28.S8.E10">\sigma_{m}\sim 1+\dfrac{s}{2^{3}h}+\dfrac{4s^{2}+3}{2^{7}h^{2}}+\dfrac{19s^{3} +59s}{2^{11}h^{3}}+\cdots,\tau_{m+1}\sim 2h-\dfrac{1}{4}s-\dfrac{2s^{2}+3}{2^{6}h}-\frac{7s^{3}+47s}{2^{ 10}h^{2}}-\cdots,</Math> <Math equation-number="28.8.11" mode="display" xml:id="C28.S8.E11">P_{m}(x)\sim 1+\dfrac{s}{2^{3}h{\cos^{2}}x}+\dfrac{1}{h^{2}}\left(\dfrac{s^{4} +86s^{2}+105}{2^{11}{\cos^{4}}x}-\dfrac{s^{4}+22s^{2}+57}{2^{11}{\cos^{2}}x} \right)+\cdots,</Math> , <Math equation-number="28.8.12" mode="display" xml:id="C28.S8.E12">Q_{m}(x)\sim\dfrac{\sin x}{{\cos^{2}}x}\left(\dfrac{1}{2^{5}h}(s^{2}+3)+\dfrac {1}{2^{9}h^{2}}\left(s^{3}+3s+\dfrac{4s^{3}+44s}{{\cos^{2}}x}\right)\right)+\cdots</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C28.S8.SS4">
+<title>Uniform Approximations</title>        
+ 
+<paragraph xml:id="C28.S8.Px1">
+<title>Barrett’s Expansions</title>     
+<para xml:id="C28.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C28.S8.Px1.p1.s1">
+Barrett (1981) supplies asymptotic approximations for numerically satisfactory pairs of solutions of both Mathieu’s equation (28.2.1) and the modified Mathieu equation (28.20.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C28.S8.Px1.p1.s2">
+The approximations apply when the parameters <Math mode="inline" xml:id="C28.S8.Px1.p1.m1">a</Math> and <Math mode="inline" xml:id="C28.S8.Px1.p1.m2">q</Math> are real and large, and are uniform with respect to various regions in the <Math mode="inline" xml:id="C28.S8.Px1.p1.m3">z</Math> -plane.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C28.S8.Px1.p1.s3">
+The approximants are elementary functions, Airy functions, Bessel functions, and parabolic cylinder functions; compare §2.8.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C28.S8.Px1.p1.s4">
+It is stated that corresponding uniform approximations can be obtained for other solutions, including the eigensolutions, of the differential equations by application of the results,but these approximations are not included.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C28.S8.Px2">
+<title>Dunster’s Approximations</title>    
+<para xml:id="C28.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C28.S8.Px2.p1.s1">
+Dunster (1994a) supplies uniform asymptotic approximations for numerically satisfactory pairs of solutions of Mathieu’s equation (28.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C28.S8.Px2.p1.s2">
+These approximations apply when <Math mode="inline" xml:id="C28.S8.Px2.p1.m1">q</Math> and <Math mode="inline" xml:id="C28.S8.Px2.p1.m2">a</Math> are real and <Math mode="inline" xml:id="C28.S8.Px2.p1.m3">q\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C28.S8.Px2.p1.s3">
+They are uniform with respect to <Math mode="inline" xml:id="C28.S8.Px2.p1.m4">a</Math> when <Math mode="inline" xml:id="C28.S8.Px2.p1.m5">-2q\leq a\leq(2-\delta)q</Math> , where <Math mode="inline" xml:id="C28.S8.Px2.p1.m6">\delta</Math> is an arbitrary constant such that <Math mode="inline" xml:id="C28.S8.Px2.p1.m7">0&lt;\delta&lt;4</Math> , and also with respect to <Math mode="inline" xml:id="C28.S8.Px2.p1.m8">z</Math> in the semi-infinite strip given by <Math mode="inline" xml:id="C28.S8.Px2.p1.m9">0\leq\Re z\leq\pi</Math> and <Math mode="inline" xml:id="C28.S8.Px2.p1.m10">\Im z\geq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S8.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C28.S8.Px2.p2.s1">
+The approximations are expressed in terms of Whittaker functions <Math mode="inline" xml:id="C28.S8.Px2.p2.m1">W_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C28.S8.Px2.p2.m2">M_{\kappa,\mu}\left(z\right)</Math> with <Math mode="inline" xml:id="C28.S8.Px2.p2.m3">\mu=\tfrac{1}{4}</Math> ; compare §2.8(vi).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C28.S8.Px2.p2.s2">
+They are derived by rigorous analysis and accompanied by strict and realistic error bounds.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C28.S8.Px2.p2.s3">
+With additional restrictions on <Math mode="inline" xml:id="C28.S8.Px2.p2.m4">z</Math> , uniform asymptotic approximations for solutions of (28.2.1) and (28.20.1) are also obtained in terms of elementary functions by re-expansions of the Whittaker functions; compare §2.8(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S8.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C28.S8.Px2.p3.s1">
+Subsequently the asymptotic solutions involving either elementary or Whittaker functions are identified in terms of the Floquet solutions <Math mode="inline" xml:id="C28.S8.Px2.p3.m1">\mathrm{me}_{\nu}\left(z,q\right)</Math> (§28.12(ii)) and modified Mathieu functions <Math mode="inline" xml:id="C28.S8.Px2.p3.m2">{\mathrm{M}^{(j)}_{\nu}}\left(z,h\right)</Math> (§28.20(iii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S8.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C28.S8.Px2.p4.s1">
+For related results see Langer (1934) and Sharples (1967, 1971).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

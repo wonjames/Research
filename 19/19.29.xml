@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S29">
+<title>Reduction of General Elliptic Integrals</title>        
+  
+<subsection xml:id="C19.S29.SS1">
+<title>Reduction Theorems</title>         
+ 
+<para xml:id="C19.S29.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S29.SS1.p1.s1">
+These theorems reduce integrals over a real interval <Math mode="inline" xml:id="C19.S29.SS1.p1.m1">(y,x)</Math> of certain integrands containing the square root of a quartic or cubic polynomial to symmetric integrals over <Math mode="inline" xml:id="C19.S29.SS1.p1.m2">(0,\infty)</Math> containing the square root of a cubic polynomial (compare §19.16(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S29.SS1.p1.s2">
+Let <Math equation-number="19.29.1" mode="display" xml:id="C19.S29.E1">X_{\alpha}=\sqrt{a_{\alpha}+b_{\alpha}x},Y_{\alpha}=\sqrt{a_{\alpha}+b_{\alpha}y}, if x&gt;y, 1\leq\alpha\leq 5,</Math> <Math equation-number="19.29.2" mode="display" xml:id="C19.S29.E2">d_{\alpha\beta}=a_{\alpha}b_{\beta}-a_{\beta}b_{\alpha}, if d_{\alpha\beta}\neq 0 if \alpha\neq\beta,</Math> and assume that the line segment with endpoints <Math mode="inline" xml:id="C19.S29.SS1.p1.m3">a_{\alpha}+b_{\alpha}x</Math> and <Math mode="inline" xml:id="C19.S29.SS1.p1.m4">a_{\alpha}+b_{\alpha}y</Math> lies in <Math mode="inline" xml:id="C19.S29.SS1.p1.m5">\mathbb{C}\setminus(-\infty,0)</Math> for <Math mode="inline" xml:id="C19.S29.SS1.p1.m6">1\leq\alpha\leq 4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S29.SS1.p1.s3">
+If <Math equation-number="19.29.3" mode="display" xml:id="C19.S29.E3">s(t)=\prod_{\alpha=1}^{4}\sqrt{a_{\alpha}+b_{\alpha}t}</Math> and <Math mode="inline" xml:id="C19.S29.SS1.p1.m7">\alpha,\beta,\gamma,\delta</Math> is any permutation of the numbers <Math mode="inline" xml:id="C19.S29.SS1.p1.m8">1,2,3,4</Math> , then <Math equation-number="19.29.4" mode="display" xml:id="C19.S29.E4">\int_{y}^{x}\frac{\mathrm{d}t}{s(t)}=2\!R_{F}\left(U_{12}^{2},U_{13}^{2},U_{23 }^{2}\right),</Math> where <Math equation-number="19.29.5" mode="display" xml:id="C19.S29.E5">U_{\alpha\beta}=(X_{\alpha}X_{\beta}Y_{\gamma}Y_{\delta}+Y_{\alpha}Y_{\beta}X_ {\gamma}X_{\delta})/(x-y),U_{\alpha\beta}=U_{\beta\alpha}=U_{\gamma\delta}=U_{\delta\gamma},U_{\alpha\beta}^{2}-U_{\alpha\gamma}^{2}=d_{\alpha\delta}d_{\beta\gamma}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S29.SS1.p1.s4">
+There are only three distinct <Math mode="inline" xml:id="C19.S29.SS1.p1.m9">U</Math> ’s with subscripts <Math mode="inline" xml:id="C19.S29.SS1.p1.m10">\leq 4</Math> , and at most one of them can be 0 because the <Math mode="inline" xml:id="C19.S29.SS1.p1.m11">d</Math> ’s are nonzero.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C19.S29.SS1.p1.s5">
+Then <Math equation-number="19.29.6" mode="display" xml:id="C19.S29.E6">{U_{\alpha\beta}=\sqrt{b_{\alpha}}\sqrt{b_{\beta}}Y_{\gamma}Y_{\delta}+Y_{ \alpha}Y_{\beta}\sqrt{b_{\gamma}}\sqrt{b_{\delta}},} if x=\infty, //// U_{\alpha\beta}=X_{\alpha}X_{\beta}\sqrt{-b_{\gamma}}\sqrt{-b_{\delta}}+\sqrt{ -b_{\alpha}}\sqrt{-b_{\beta}}X_{\gamma}X_{\delta}, if y=-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C19.S29.SS1.p1.s6">
+<Math equation-number="19.29.7" mode="display" xml:id="C19.S29.E7">\int_{y}^{x}\frac{a_{\alpha}+b_{\alpha}t}{a_{\delta}+b_{\delta}t}\frac{\mathrm {d}t}{s(t)}=\tfrac{2}{3}d_{\alpha\beta}d_{\alpha\gamma}R_{D}\left(U_{\alpha \beta}^{2},U_{\alpha\gamma}^{2},U_{\alpha\delta}^{2}\right)+\frac{2X_{\alpha}Y _{\alpha}}{X_{\delta}Y_{\delta}U_{\alpha\delta}}, if U_{\alpha\delta}\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C19.S29.SS1.p1.s7">
+ <Math equation-number="19.29.8" mode="display" xml:id="C19.S29.E8">\int_{y}^{x}\frac{a_{\alpha}+b_{\alpha}t}{a_{5}+b_{5}t}\frac{\mathrm{d}t}{s(t) }=\frac{2}{3}\frac{d_{\alpha\beta}d_{\alpha\gamma}d_{\alpha\delta}}{d_{\alpha 5 }}R_{J}\left(U_{12}^{2},U_{13}^{2},U_{23}^{2},U_{\alpha 5}^{2}\right)+2\!R_{C} \left(S_{\alpha 5}^{2},Q_{\alpha 5}^{2}\right), if S_{\alpha 5}^{2}\in\mathbb{C}\setminus(-\infty,0),</Math> where <Math equation-number="19.29.9" mode="display" xml:id="C19.S29.E9">U_{\alpha 5}^{2}=U_{\alpha\beta}^{2}-\frac{d_{\alpha\gamma}d_{\alpha\delta}d_{ \beta 5}}{d_{\alpha 5}}=U_{\beta\gamma}^{2}-\frac{d_{\alpha\beta}d_{\alpha \gamma}d_{\delta 5}}{d_{\alpha 5}}\neq 0,S_{\alpha 5}=\frac{1}{x-y}\left(\frac{X_{\beta}X_{\gamma}X_{\delta}}{X_{\alpha }}Y_{5}^{2}+\frac{Y_{\beta}Y_{\gamma}Y_{\delta}}{Y_{\alpha}}X_{5}^{2}\right),Q_{\alpha 5}=\frac{X_{5}Y_{5}}{X_{\alpha}Y_{\alpha}}U_{\alpha 5}\neq 0,S_{\alpha 5}^{2}-Q_{\alpha 5}^{2}=\frac{d_{\beta 5}d_{\gamma 5}d_{\delta 5}}{d _{\alpha 5}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C19.S29.SS1.p1.s8">
+The Cauchy principal value is taken when <Math mode="inline" xml:id="C19.S29.SS1.p1.m12">U_{\alpha 5}^{2}</Math> or <Math mode="inline" xml:id="C19.S29.SS1.p1.m13">Q_{\alpha 5}^{2}</Math> is real and negative.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C19.S29.SS1.p1.s9">
+Cubic cases of these formulas are obtained by setting one of the factors in (19.29.3) equal to 1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C19.S29.SS1.p2.s1">
+The advantages of symmetric integrals for tables of integrals and symbolic integration are illustrated by (19.29.4) and its cubic case, which replace the <Math mode="inline" xml:id="C19.S29.SS1.p2.m1">8+8+12=28</Math> formulas inGradshteyn and Ryzhik (2000, 3.147, 3.131, 3.152) after taking <Math mode="inline" xml:id="C19.S29.SS1.p2.m2">x^{2}</Math> as the variable of integration in 3.152.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C19.S29.SS1.p2.s2">
+Moreover, the requirement that one limit of integration be a branch point of the integrand is eliminated without doubling the number of standard integrals in the result.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C19.S29.SS1.p2.s3">
+(19.29.7) subsumes all 72 formulas in Gradshteyn and Ryzhik (2000, 3.168), and its cubic cases similarly replace the <Math mode="inline" xml:id="C19.S29.SS1.p2.m3">18+36+18=72</Math> formulas inGradshteyn and Ryzhik (2000, 3.133, 3.142, and 3.141(1-18)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C19.S29.SS1.p2.s4">
+For example, 3.142(2) is included as <Math equation-number="19.29.10" mode="display" xml:id="C19.S29.E10">\int_{u}^{b}\sqrt{\frac{a-t}{(b-t)(t-c)^{3}}}\mathrm{d}t=-\tfrac{2}{3}{(a-b)}{ (b-u)}^{3/2}R_{D}+\frac{2}{b-c}\sqrt{\frac{(a-u)(b-u)}{u-c}}, if a&gt;b&gt;u&gt;c,</Math> where the arguments of the <Math mode="inline" xml:id="C19.S29.SS1.p2.m4">R_{D}</Math> function are, in order, <Math mode="inline" xml:id="C19.S29.SS1.p2.m5">(a-b)(u-c)</Math> , <Math mode="inline" xml:id="C19.S29.SS1.p2.m6">(b-c)(a-u)</Math> , <Math mode="inline" xml:id="C19.S29.SS1.p2.m7">(a-b)(b-c)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S29.SS2">
+<title>Reduction to Basic Integrals</title>          
+<para xml:id="C19.S29.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C19.S29.SS2.p1.s1">
+(19.2.3) can be written <Math equation-number="19.29.11" mode="display" xml:id="C19.S29.E11">I(\mathbf{m})=\int_{y}^{x}\prod_{\alpha=1}^{h}(a_{\alpha}+b_{\alpha}t)^{-1/2} \prod_{j=1}^{n}(a_{j}+b_{j}t)^{m_{j}}\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C19.S29.SS2.p1.m2">x&gt;y</Math> , <Math mode="inline" xml:id="C19.S29.SS2.p1.m3">h=3</Math> or 4, <Math mode="inline" xml:id="C19.S29.SS2.p1.m4">n\geq h</Math> , and <Math mode="inline" xml:id="C19.S29.SS2.p1.m5">m_{j}</Math> is an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C19.S29.SS2.p1.s2">
+Define <Math equation-number="19.29.12" mode="display" xml:id="C19.S29.E12">\mathbf{m}=(m_{1},\dots,m_{n})=\sum_{j=1}^{n}m_{j}\mathbf{e}_{j},</Math> where <Math mode="inline" xml:id="C19.S29.SS2.p1.m6">\mathbf{e}_{j}</Math> is an <Math mode="inline" xml:id="C19.S29.SS2.p1.m7">n</Math> -tuple with 1 in the <Math mode="inline" xml:id="C19.S29.SS2.p1.m8">j</Math> th position and 0’s elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C19.S29.SS2.p1.s3">
+Define also <Math mode="inline" xml:id="C19.S29.SS2.p1.m9">\boldsymbol{{0}}=(0,\dots,0)</Math> and retain the notation and conditions associated with (19.29.1) and (19.29.2).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C19.S29.SS2.p1.s4">
+The integrals in (19.29.4), (19.29.7), and (19.29.8) are <Math mode="inline" xml:id="C19.S29.SS2.p1.m10">I(\boldsymbol{{0}})</Math> , <Math mode="inline" xml:id="C19.S29.SS2.p1.m11">I(\mathbf{e}_{\alpha}-\mathbf{e}_{\delta})</Math> , and <Math mode="inline" xml:id="C19.S29.SS2.p1.m12">I(\mathbf{e}_{\alpha}-\mathbf{e}_{5})</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C19.S29.SS2.p2.s1">
+The only cases of <Math mode="inline" xml:id="C19.S29.SS2.p2.m1">I(\mathbf{m})</Math> that are integrals of the first kind are the two ( <Math mode="inline" xml:id="C19.S29.SS2.p2.m2">h=3</Math> or 4) with <Math mode="inline" xml:id="C19.S29.SS2.p2.m3">\mathbf{m}=\boldsymbol{{0}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C19.S29.SS2.p2.s2">
+The only cases that are integrals of the third kind are those in which at least one <Math mode="inline" xml:id="C19.S29.SS2.p2.m4">m_{j}</Math> with <Math mode="inline" xml:id="C19.S29.SS2.p2.m5">j&gt;h</Math> is a negative integer and those in which <Math mode="inline" xml:id="C19.S29.SS2.p2.m6">h=4</Math> and <Math mode="inline" xml:id="C19.S29.SS2.p2.m7">\sum_{j=1}^{n}m_{j}</Math> is a positive integer.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C19.S29.SS2.p2.s3">
+All other cases are integrals of thesecond kind.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S29.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C19.S29.SS2.p3.s1">
+ <Math mode="inline" xml:id="C19.S29.SS2.p3.m1">I(\mathbf{m})</Math> can be reduced to a linear combination of basic integrals and algebraic functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C19.S29.SS2.p3.s2">
+In the cubic case ( <Math mode="inline" xml:id="C19.S29.SS2.p3.m2">h=3</Math> ) the basic integrals are <Math equation-number="19.29.13" mode="display" xml:id="C19.S29.E13">I(\boldsymbol{{0}});I(-\mathbf{e}_{j}), if 1\leq j\leq n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C19.S29.SS2.p3.s3">
+In the quartic case ( <Math mode="inline" xml:id="C19.S29.SS2.p3.m3">h=4</Math> ) the basic integrals are <Math equation-number="19.29.14" mode="display" xml:id="C19.S29.E14">I(\boldsymbol{{0}}); //// I(-\mathbf{e}_{j}), if 1\leq j\leq n; //// I(\mathbf{e}_{\alpha}), if 1\leq\alpha\leq 4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="24" xml:id="C19.S29.SS2.p3.s4">
+Basic integrals of type <Math mode="inline" xml:id="C19.S29.SS2.p3.m4">I(-\mathbf{e}_{j})</Math> , <Math mode="inline" xml:id="C19.S29.SS2.p3.m5">1\leq j\leq h</Math> , are not linearly independent, nor are those of type <Math mode="inline" xml:id="C19.S29.SS2.p3.m6">I(\mathbf{e}_{j})</Math> , <Math mode="inline" xml:id="C19.S29.SS2.p3.m7">1\leq j\leq 4</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C19.S29.SS2.p4.s1">
+The reduction of <Math mode="inline" xml:id="C19.S29.SS2.p4.m1">I(\mathbf{m})</Math> is carried out by a relation derived from partial fractions and by use of two recurrence relations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C19.S29.SS2.p4.s2">
+These are given inCarlson (1999, (2.19), (3.5), (3.11)) and simplified inCarlson (2002, (1.10), (1.7), (1.8)) by means of modified definitions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C19.S29.SS2.p4.s3">
+Partial fractions provide a reduction to integrals in which <Math mode="inline" xml:id="C19.S29.SS2.p4.m2">\mathbf{m}</Math> has at most one nonzero component, and these are then reduced to basic integrals by the recurrence relations.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C19.S29.SS2.p4.s4">
+A special case ofCarlson (1999, (2.19)) is given by <Math equation-number="19.29.15" mode="display" xml:id="C19.S29.E15">b_{j}I(\mathbf{e}_{l}-\mathbf{e}_{j})=d_{lj}I(-\mathbf{e}_{j})+b_{l}I( \boldsymbol{{0}}), if j,l=1,2,\dots,n,</Math> which shows how to express the basic integral <Math mode="inline" xml:id="C19.S29.SS2.p4.m3">I(-\mathbf{e}_{j})</Math> in terms of symmetric integrals by using (19.29.4) and either (19.29.7)or (19.29.8).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C19.S29.SS2.p4.s5">
+The first choice gives a formula that includes the 18+9+18 = 45 formulas in Gradshteyn and Ryzhik (2000, 3.133, 3.156, 3.158), and the second choice includes the 8+8+8+12 = 36 formulas inGradshteyn and Ryzhik (2000, 3.151, 3.149, 3.137, 3.157) (after setting <Math mode="inline" xml:id="C19.S29.SS2.p4.m4">x^{2}=t</Math> in some cases).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C19.S29.SS2.p5.s1">
+If <Math mode="inline" xml:id="C19.S29.SS2.p5.m1">h=3</Math> , then the recurrence relation (Carlson (1999, (3.5))) has the special case <Math equation-number="19.29.16" mode="display" xml:id="C19.S29.E16">b_{\beta}b_{\gamma}I(\mathbf{e}_{\alpha})=d_{\alpha\beta}d_{\alpha\gamma}I(- \mathbf{e}_{\alpha})+2b_{\alpha}\left(\frac{s(x)}{a_{\alpha}+b_{\alpha}x}- \frac{s(y)}{a_{\alpha}+b_{\alpha}y}\right),</Math> where <Math mode="inline" xml:id="C19.S29.SS2.p5.m2">\alpha,\beta,\gamma</Math> is any permutation of the numbers <Math mode="inline" xml:id="C19.S29.SS2.p5.m3">1,2,3</Math> , and <Math equation-number="19.29.17" mode="display" xml:id="C19.S29.E17">s(t)=\prod_{\alpha=1}^{3}\sqrt{a_{\alpha}+b_{\alpha}t}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C19.S29.SS2.p5.s2">
+(This shows why <Math mode="inline" xml:id="C19.S29.SS2.p5.m4">I(\mathbf{e}_{\alpha})</Math> is not needed as a basic integral in thecubic case.)In the quartic case this recurrence relation has an extra term in <Math mode="inline" xml:id="C19.S29.SS2.p5.m5">I(2\mathbf{e}_{\alpha})</Math> , and hence <Math mode="inline" xml:id="C19.S29.SS2.p5.m6">I(\mathbf{e}_{\alpha})</Math> , <Math mode="inline" xml:id="C19.S29.SS2.p5.m7">1\leq\alpha\leq 4</Math> , is a basic integral.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C19.S29.SS2.p5.s3">
+It can be expressed in terms of symmetric integrals by setting <Math mode="inline" xml:id="C19.S29.SS2.p5.m8">a_{5}=1</Math> and <Math mode="inline" xml:id="C19.S29.SS2.p5.m9">b_{5}=0</Math> in (19.29.8).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C19.S29.SS2.p6.s1">
+The other recurrence relation is <Math equation-number="19.29.18" mode="display" xml:id="C19.S29.E18">b_{j}^{q}I(q\mathbf{e}_{l})=\sum_{r=0}^{q}\genfrac{(}{)}{0.0pt}{}{q}{r}b_{l}^{ r}d_{lj}^{q-r}I(r\mathbf{e}_{j}), if j,l=1,2,\dots,n;</Math> see Carlson (1999, (3.11)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C19.S29.SS2.p6.s2">
+An example that uses (19.29.15)–(19.29.18) is given in §19.34.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C19.S29.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C19.S29.SS2.p7.s1">
+For an implementation by James FitzSimons of the method for reducing <Math mode="inline" xml:id="C19.S29.SS2.p7.m1">I(\mathbf{m})</Math> to basic integrals and extensive tables of such reductions, see Carlson (1999) and Carlson and FitzSimons (2000).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C19.S29.SS2.p8.s1">
+Another method of reduction is given in Gray (2002).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C19.S29.SS2.p8.s2">
+It depends primarily on multivariate recurrence relations that replace one integral by two or more.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S29.SS3">
+<title>Examples</title>        
+ 
+<para xml:id="C19.S29.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C19.S29.SS3.p1.s1">
+The first formula replaces (19.14.4)–(19.14.10).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C19.S29.SS3.p1.s2">
+Define <Math mode="inline" xml:id="C19.S29.SS3.p1.m1">Q_{j}(t)=a_{j}+b_{j}t^{2}</Math> , <Math mode="inline" xml:id="C19.S29.SS3.p1.m2">j=1,2</Math> , and assume both <Math mode="inline" xml:id="C19.S29.SS3.p1.m3">Q</Math> ’s are positive for <Math mode="inline" xml:id="C19.S29.SS3.p1.m4">0\leq y&lt;t&lt;x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C19.S29.SS3.p1.s3">
+Then <Math equation-number="19.29.19" mode="display" xml:id="C19.S29.E19">\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{Q_{1}(t)Q_{2}(t)}}=R_{F}\left(U^{2}+a_{1} b_{2},U^{2}+a_{2}b_{1},U^{2}\right),</Math> <Math equation-number="19.29.20" mode="display" xml:id="C19.S29.E20">\int_{y}^{x}\frac{t^{2}\mathrm{d}t}{\sqrt{Q_{1}(t)Q_{2}(t)}}=\tfrac{1}{3}a_{1} a_{2}R_{D}\left(U^{2}+a_{1}b_{2},U^{2}+a_{2}b_{1},U^{2}\right)+(xy/U),</Math> and <Math equation-number="19.29.21" mode="display" xml:id="C19.S29.E21">\int_{y}^{x}\frac{\mathrm{d}t}{t^{2}\sqrt{Q_{1}(t)Q_{2}(t)}}=\tfrac{1}{3}b_{1} b_{2}R_{D}\left(U^{2}+a_{1}b_{2},U^{2}+a_{2}b_{1},U^{2}\right)+(xyU)^{-1},</Math> where <Math equation-number="19.29.22" mode="display" xml:id="C19.S29.E22">(x^{2}-y^{2})U=x\sqrt{Q_{1}(y)Q_{2}(y)}+y\sqrt{Q_{1}(x)Q_{2}(x)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="41" xml:id="C19.S29.SS3.p1.s4">
+If both square roots in (19.29.22) are 0, then the indeterminacy in the two preceding equations can be removed by using (19.27.8) to evaluate the integral as <Math mode="inline" xml:id="C19.S29.SS3.p1.m5">R_{G}\left(a_{1}b_{2},a_{2}b_{1},0\right)</Math> multiplied either by <Math mode="inline" xml:id="C19.S29.SS3.p1.m6">-2/(b_{1}b_{2})</Math> or by <Math mode="inline" xml:id="C19.S29.SS3.p1.m7">-2/(a_{1}a_{2})</Math> in the cases of (19.29.20) or (19.29.21), respectively.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="42" xml:id="C19.S29.SS3.p1.s5">
+If <Math mode="inline" xml:id="C19.S29.SS3.p1.m8">x=\infty</Math> , then <Math mode="inline" xml:id="C19.S29.SS3.p1.m9">U</Math> is found by taking the limit.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="43" xml:id="C19.S29.SS3.p1.s6">
+For example, <Math equation-number="19.29.23" mode="display" xml:id="C19.S29.E23">\int_{y}^{\infty}\frac{\mathrm{d}t}{\sqrt{(t^{2}+a^{2})(t^{2}-b^{2})}}=R_{F} \left(y^{2}+a^{2},y^{2}-b^{2},y^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C19.S29.SS3.p2.s1">
+Next, for <Math mode="inline" xml:id="C19.S29.SS3.p2.m1">j=1,2</Math> , define <Math mode="inline" xml:id="C19.S29.SS3.p2.m2">Q_{j}(t)=f_{j}+g_{j}t+h_{j}t^{2}</Math> , and assume both <Math mode="inline" xml:id="C19.S29.SS3.p2.m3">Q</Math> ’s are positive for <Math mode="inline" xml:id="C19.S29.SS3.p2.m4">y&lt;t&lt;x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C19.S29.SS3.p2.s2">
+If each has real zeros, then (19.29.4) may be simpler than <Math equation-number="19.29.24" mode="display" xml:id="C19.S29.E24">\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{Q_{1}(t)Q_{2}(t)}}=4\!R_{F}\left(U,U+D_{1 2}+V,U+D_{12}-V\right),</Math> where <Math equation-number="19.29.25" mode="display" xml:id="C19.S29.E25">(x-y)^{2}U=S_{1}S_{2},S_{j}=\left(\sqrt{Q_{j}(x)}+\sqrt{Q_{j}(y)}\right)^{2}-h_{j}(x-y)^{2},D_{jl}=2f_{j}h_{l}+2h_{j}f_{l}-g_{j}g_{l},V=\sqrt{D_{12}^{2}-D_{11}D_{22}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="46" xml:id="C19.S29.SS3.p2.s3">
+(The variables of <Math mode="inline" xml:id="C19.S29.SS3.p2.m5">R_{F}</Math> are real and nonnegative unless both <Math mode="inline" xml:id="C19.S29.SS3.p2.m6">Q</Math> ’s have real zeros and those of <Math mode="inline" xml:id="C19.S29.SS3.p2.m7">Q_{1}</Math> interlace those of <Math mode="inline" xml:id="C19.S29.SS3.p2.m8">Q_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="47" xml:id="C19.S29.SS3.p2.s4">
+) If <Math mode="inline" xml:id="C19.S29.SS3.p2.m9">Q_{1}(t)=(a_{1}+b_{1}t)(a_{2}+b_{2}t)</Math> , where both linear factors are positive for <Math mode="inline" xml:id="C19.S29.SS3.p2.m10">y&lt;t&lt;x</Math> , and <Math mode="inline" xml:id="C19.S29.SS3.p2.m11">Q_{2}(t)=f_{2}+g_{2}t+h_{2}t^{2}</Math> , then (19.29.25) is modified so that <Math equation-number="19.29.26" mode="display" xml:id="C19.S29.E26">S_{1}=(X_{1}Y_{2}+Y_{1}X_{2})^{2},X_{j}=\sqrt{a_{j}+b_{j}x},Y_{j}=\sqrt{a_{j}+b_{j}y},D_{12}=2a_{1}a_{2}h_{2}+2b_{1}b_{2}f_{2}-(a_{1}b_{2}+a_{2}b_{1})g_{2},D_{11}=-(a_{1}b_{2}-a_{2}b_{1})^{2}=-d_{12}^{2},</Math> with other quantities remaining as in (19.29.25).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="48" xml:id="C19.S29.SS3.p2.s5">
+In the cubic case, in which <Math mode="inline" xml:id="C19.S29.SS3.p2.m12">a_{2}=1</Math> , <Math mode="inline" xml:id="C19.S29.SS3.p2.m13">b_{2}=0</Math> , (19.29.26) reduces further to <Math equation-number="19.29.27" mode="display" xml:id="C19.S29.E27">S_{1}=(X_{1}+Y_{1})^{2},D_{12}=2a_{1}h_{2}-b_{1}g_{2},D_{11}=-b_{1}^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C19.S29.SS3.p3.s1">
+For example, because <Math mode="inline" xml:id="C19.S29.SS3.p3.m1">t^{3}-a^{3}=(t-a)(t^{2}+at+a^{2})</Math> , we find that when <Math mode="inline" xml:id="C19.S29.SS3.p3.m2">0\leq a\leq y&lt;x</Math> <Math equation-number="19.29.28" mode="display" xml:id="C19.S29.E28">\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{t^{3}-a^{3}}}=4\!R_{F}\left(U,U-3a+2\sqrt {3}a,U-3a-2\sqrt{3}a\right),</Math> where <Math equation-number="19.29.29" mode="display" xml:id="C19.S29.E29">(x-y)^{2}U=(\sqrt{x-a}+\sqrt{y-a})^{2}\left((\xi+\eta)^{2}-(x-y)^{2}\right),\xi=\sqrt{x^{2}+ax+a^{2}},\eta=\sqrt{y^{2}+ay+a^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S29.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C19.S29.SS3.p4.s1">
+Lastly, define <Math mode="inline" xml:id="C19.S29.SS3.p4.m1">Q(t^{2})=f+gt^{2}+ht^{4}</Math> and assume <Math mode="inline" xml:id="C19.S29.SS3.p4.m2">Q(t^{2})</Math> is positive and monotonic for <Math mode="inline" xml:id="C19.S29.SS3.p4.m3">y&lt;t&lt;x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C19.S29.SS3.p4.s2">
+Then <Math equation-number="19.29.30" mode="display" xml:id="C19.S29.E30">\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{Q(t^{2})}}=2\!R_{F}\left(U,U-g+2\sqrt{fh} ,U-g-2\sqrt{fh}\right),</Math> where <Math equation-number="19.29.31" mode="display" xml:id="C19.S29.E31">(x-y)^{2}U=\left(\sqrt{Q(x^{2})}+\sqrt{Q(y^{2})}\right)^{2}-h(x^{2}-y^{2})^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C19.S29.SS3.p4.s3">
+For example, if <Math mode="inline" xml:id="C19.S29.SS3.p4.m4">0\leq y\leq x</Math> and <Math mode="inline" xml:id="C19.S29.SS3.p4.m5">a^{4}\geq 0</Math> , then <Math equation-number="19.29.32" mode="display" xml:id="C19.S29.E32">\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{t^{4}+a^{4}}}=2\!R_{F}\left(U,U+2a^{2},U- 2a^{2}\right),</Math> where <Math equation-number="19.29.33" mode="display" xml:id="C19.S29.E33">(x-y)^{2}U=\left(\sqrt{x^{4}+a^{4}}+\sqrt{y^{4}+a^{4}}\right)^{2}-(x^{2}-y^{2} )^{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

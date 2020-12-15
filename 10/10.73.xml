@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S73">
+<title>Physical Applications</title>        
+ 
+<subsection xml:id="C10.S73.SS1">
+<title>Bessel and Modified Bessel Functions</title>        
+   
+<para xml:id="C10.S73.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S73.SS1.p1.s1">
+Bessel functions first appear in the investigation of a physical problem in Daniel Bernoulli’s analysis of the small oscillations of a uniform heavyflexible chain.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S73.SS1.p1.s2">
+For this problem and its further generalizations, seeKorenev (2002, Chapter 4, §37) andGray et al. (1922, Chapter I, §1, Chapter XVI, §4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S73.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S73.SS1.p2.s1">
+Bessel functions of the first kind, <Math mode="inline" xml:id="C10.S73.SS1.p2.m1">J_{n}\left(x\right)</Math> , arise naturally in applications having cylindrical symmetry in which the physics is described either by Laplace’s equation <Math mode="inline" xml:id="C10.S73.SS1.p2.m2">\nabla^{2}V=0</Math> , or by the Helmholtz equation <Math mode="inline" xml:id="C10.S73.SS1.p2.m3">(\nabla^{2}+k^{2})\psi=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S73.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S73.SS1.p3.s1">
+Laplace’s equation governs problems in heat conduction, in the distribution of potential in an electrostatic field, and in hydrodynamics in the irrotational motion of an incompressible fluid.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S73.SS1.p3.s2">
+SeeJackson (1999, Chapter 3, §§3.7, 3.8, 3.11, 3.13),Lamb (1932, Chapter V, §§100–102; Chapter VIII, §§186, 191–193; Chapter X, §§303, 304),Happel and Brenner (1973, Chapter 3, §3.3; Chapter 7, §7.3),Korenev (2002, Chapter 4, §43), andGray et al. (1922, Chapter XI).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C10.S73.SS1.p3.s3">
+In cylindrical coordinates <Math mode="inline" xml:id="C10.S73.SS1.p3.m1">r</Math> , <Math mode="inline" xml:id="C10.S73.SS1.p3.m2">\phi</Math> , <Math mode="inline" xml:id="C10.S73.SS1.p3.m3">z</Math> , (§1.5(ii) we have <Math equation-number="10.73.1" mode="display" xml:id="C10.S73.E1">\nabla^{2}V=\frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial V}{ \partial r}\right)+\frac{1}{r^{2}}\frac{{\partial}^{2}V}{{\partial\phi}^{2}}+ \frac{{\partial}^{2}V}{{\partial z}^{2}}=0,</Math> and on separation of variables we obtain solutions of the form <Math mode="inline" xml:id="C10.S73.SS1.p3.m4">e^{\pm in\phi}e^{\pm\kappa z}J_{n}\left(\kappa r\right)</Math> , from which a solution satisfying prescribed boundary conditions may be constructed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S73.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S73.SS1.p4.s1">
+The Helmholtz equation, <Math mode="inline" xml:id="C10.S73.SS1.p4.m1">(\nabla^{2}+k^{2})\psi=0</Math> , follows from the wave equation <Math equation-number="10.73.2" mode="display" xml:id="C10.S73.E2">\nabla^{2}\psi=\frac{1}{c^{2}}\frac{{\partial}^{2}\psi}{{\partial t}^{2}},</Math> on assuming a time dependence of the form <Math mode="inline" xml:id="C10.S73.SS1.p4.m2">e^{\pm ikt}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S73.SS1.p4.s2">
+This equation governs problems in acoustic and electromagnetic wave propagation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C10.S73.SS1.p4.s3">
+SeeJackson (1999, Chapter 9, §9.6),Jones (1986, Chapters 7, 8), andLord Rayleigh (1945, Vol. I, Chapter IX, §§200–211, 218, 219, 221a; Vol. II, Chapter XIII, §272a; Chapter XV, §302; Chapter XVIII; Chapter XIX, §350; Chapter XX, §357; Chapter XXI, §369).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C10.S73.SS1.p4.s4">
+It is fundamental in the study of electromagnetic wave transmission.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C10.S73.SS1.p4.s5">
+Consequently, Bessel functions <Math mode="inline" xml:id="C10.S73.SS1.p4.m3">J_{n}\left(x\right)</Math> , and modified Bessel functions <Math mode="inline" xml:id="C10.S73.SS1.p4.m4">I_{n}\left(x\right)</Math> , are central to the analysis of microwave and optical transmission in waveguides, including coaxial and fiber.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C10.S73.SS1.p4.s6">
+SeeKrivoshlykov (1994, Chapter 2, §2.2.10; Chapter 5, §5.2.2),Kapany and Burke (1972, Chapters 4–6; Chapter 7, §A.1), andSlater (1942, Chapter 4, §§20, 25).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S73.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S73.SS1.p5.s1">
+Bessel functions enter in the study of the scattering of light and other electromagnetic radiation, not only from cylindrical surfaces but also in the statistical analysis involved in scattering from rough surfaces.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S73.SS1.p5.s2">
+SeeSmith (1997, Chapter 3, §3.7; Chapter 6, §6.4), Beckmann and Spizzichino (1963, Chapter 4, §§4.2, 4.3; Chapter 5, §§5.2, 5.3; Chapter 6, §6.1; Chapter 7, §7.1.),Kerker(1969, Chapter 5, §5.6.4;Chapter 7, §7.5.6), andBayvel and Jones (1981, Chapter 1, §§1.6.5, 1.6.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S73.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S73.SS1.p6.s1">
+More recently, Bessel functions appear in the inverse problem in wave propagation, with applications in medicine, astronomy, and acoustic imaging.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C10.S73.SS1.p6.s2">
+SeeColton and Kress (1998, Chapter 2, §§2.4,2.5; Chapter 3, §3.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C10.S73.SS1.p6.s3">
+In the theory of plates and shells, the oscillations of a circular plate are determined by the differential equation <Math equation-number="10.73.3" mode="display" xml:id="C10.S73.E3">\nabla^{4}W+\lambda^{2}\frac{{\partial}^{2}W}{{\partial t}^{2}}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C10.S73.SS1.p6.s4">
+See Korenev (2002).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C10.S73.SS1.p6.s5">
+On separation of variables into cylindrical coordinates, the Bessel functions <Math mode="inline" xml:id="C10.S73.SS1.p6.m1">J_{n}\left(x\right)</Math> , and modified Bessel functions <Math mode="inline" xml:id="C10.S73.SS1.p6.m2">I_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S73.SS1.p6.m3">K_{n}\left(x\right)</Math> , all appear.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S73.SS2">
+<title>Spherical Bessel Functions</title>        
+     
+<para xml:id="C10.S73.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S73.SS2.p1.s1">
+The functions <Math mode="inline" xml:id="C10.S73.SS2.p1.m1">\mathsf{j}_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C10.S73.SS2.p1.m2">\mathsf{y}_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C10.S73.SS2.p1.m3">{\mathsf{h}^{(1)}_{n}}\left(x\right)</Math> , and <Math mode="inline" xml:id="C10.S73.SS2.p1.m4">{\mathsf{h}^{(2)}_{n}}\left(x\right)</Math> arise in the solution (again by separation of variables) of the Helmholtz equation in spherical coordinates <Math mode="inline" xml:id="C10.S73.SS2.p1.m5">\rho,\theta,\phi</Math> (§1.5(ii)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C10.S73.SS2.p1.s2">
+<Math equation-number="10.73.4" mode="display" xml:id="C10.S73.E4">(\nabla^{2}+k^{2})f=\frac{1}{\rho^{2}}\frac{\partial}{\partial\rho}\left(\rho^ {2}\frac{\partial f}{\partial\rho}\right)+\frac{1}{\rho^{2}\sin\theta}\frac{ \partial}{\partial\theta}\left(\sin\theta\frac{\partial f}{\partial\theta} \right)+\frac{1}{\rho^{2}{\sin^{2}}\theta}\frac{{\partial}^{2}f}{{\partial\phi }^{2}}+k^{2}f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C10.S73.SS2.p1.s3">
+With the spherical harmonic <Math mode="inline" xml:id="C10.S73.SS2.p1.m6">Y_{\ell,m}\left(\theta,\phi\right)</Math> defined as in §14.30(i), the solutions are of the form <Math mode="inline" xml:id="C10.S73.SS2.p1.m7">f=g_{\ell}(k\rho)Y_{\ell,m}\left(\theta,\phi\right)</Math> with <Math mode="inline" xml:id="C10.S73.SS2.p1.m8">g_{\ell}=\mathsf{j}_{\ell}</Math> , <Math mode="inline" xml:id="C10.S73.SS2.p1.m9">\mathsf{y}_{\ell}</Math> , <Math mode="inline" xml:id="C10.S73.SS2.p1.m10">{\mathsf{h}^{(1)}_{\ell}}</Math> , or <Math mode="inline" xml:id="C10.S73.SS2.p1.m11">{\mathsf{h}^{(2)}_{\ell}}</Math> , depending on the boundary conditions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C10.S73.SS2.p1.s4">
+Accordingly, the spherical Bessel functions appear in all problems in three dimensions with spherical symmetry involving the scattering of electromagnetic radiation.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="24" xml:id="C10.S73.SS2.p1.s5">
+SeeJackson (1999, Chapter 9, §9.6),Bayvel and Jones (1981, Chapter 1, §1.5.1), andKonopinski (1981, Chapter 9, §9.1).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="25" xml:id="C10.S73.SS2.p1.s6">
+In quantum mechanics the spherical Bessel functions arise in the solution of the Schrödinger wave equation for a particle in a central potential.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="26" xml:id="C10.S73.SS2.p1.s7">
+SeeMessiah (1961, Chapter IX, §§7–10).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S73.SS3">
+<title>Kelvin Functions</title>        
+  
+<para xml:id="C10.S73.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C10.S73.SS3.p1.s1">
+The analysis of the current distribution in circular conductors leads to the Kelvin functions <Math mode="inline" xml:id="C10.S73.SS3.p1.m1">\operatorname{ber}x</Math> , <Math mode="inline" xml:id="C10.S73.SS3.p1.m2">\operatorname{bei}x</Math> , <Math mode="inline" xml:id="C10.S73.SS3.p1.m3">\operatorname{ker}x</Math> , and <Math mode="inline" xml:id="C10.S73.SS3.p1.m4">\operatorname{kei}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C10.S73.SS3.p1.s2">
+SeeRelton (1965, Chapter X, §§10.2, 10.3),Bowman (1958, Chapter III, §§51–53),McLachlan (1961, Chapters VIII and IX), and Russell (1909).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C10.S73.SS3.p1.s3">
+The McLachlan reference also includes other applications of Kelvin functions.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S73.SS4">
+<title>Bickley Functions</title>        
+  
+<para xml:id="C10.S73.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C10.S73.SS4.p1.s1">
+See Bickley (1935) and Altaç (1996).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S73.SS5">
+<title>Rayleigh Function</title>           
+<para xml:id="C10.S73.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C10.S73.SS5.p1.s1">
+For applications of the Rayleigh function <Math mode="inline" xml:id="C10.S73.SS5.p1.m1">\sigma_{n}\left(\nu\right)</Math> (§10.21(xiii)) to problems of heat conduction and diffusion in liquids see Kapitsa (1951a).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

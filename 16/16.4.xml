@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S4">
+<title>Argument Unity</title>         
+ 
+<subsection xml:id="C16.S4.SS1">
+<title>Classification</title>         
+<para xml:id="C16.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S4.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C16.S4.SS1.p1.m1">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> iswell-poised if <Math equation-number="16.4.1" mode="display" xml:id="C16.S4.E1">a_{1}+b_{1}=\dots=a_{q}+b_{q}=a_{q+1}+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S4.SS1.p1.s2">
+It is very well-poised if it is well-poised and <Math mode="inline" xml:id="C16.S4.SS1.p1.m2">a_{1}=b_{1}+1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C16.S4.SS1.p2.s1">
+The special case <Math mode="inline" xml:id="C16.S4.SS1.p2.m1">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};1\right)</Math> is <Math mode="inline" xml:id="C16.S4.SS1.p2.m2">k</Math> -balanced if <Math mode="inline" xml:id="C16.S4.SS1.p2.m3">a_{q+1}</Math> is a nonpositive integer and <Math equation-number="16.4.2" mode="display" xml:id="C16.S4.E2">a_{1}+\dots+a_{q+1}+k=b_{1}+\dots+b_{q}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C16.S4.SS1.p2.s2">
+When <Math mode="inline" xml:id="C16.S4.SS1.p2.m5">k=1</Math> the function is said to be balanced orSaalschützian.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS2">
+<title>Examples</title>        
+ 
+<para xml:id="C16.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C16.S4.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C16.S4.SS2.p1.m1">{{}_{q+1}F_{q}}</Math> with argument unity and general values of the parameters is discussed in Bühring (1992).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C16.S4.SS2.p1.s2">
+Special cases are as follows:
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C16.S4.Px1">
+<title>Pfaff–Saalschütz Balanced Sum</title>    
+<para xml:id="C16.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C16.S4.Px1.p1.s1">
+ <Math equation-number="16.4.3" mode="display" xml:id="C16.S4.E3">{{}_{3}F_{2}}\left({-n,a,b\atop c,d};1\right)=\frac{{\left(c-a\right)_{n}}{ \left(c-b\right)_{n}}}{{\left(c\right)_{n}}{\left(c-a-b\right)_{n}}},</Math> when <Math mode="inline" xml:id="C16.S4.Px1.p1.m1">c+d=a+b+1-n</Math> , <Math mode="inline" xml:id="C16.S4.Px1.p1.m2">n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C16.S4.Px1.p1.s2">
+SeeErdélyi et al. (1953a, §4.4(4)) for a non-terminating balanced identity.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C16.S4.Px1.p2.s1">
+For generalizations involving <Math mode="inline" xml:id="C16.S4.Px1.p2.m1">{{}_{r+3}F_{r+2}}</Math> functions seeKim et al. (2013).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px2">
+<title>Dixon’s Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C16.S4.Px2.p1.s1">
+ <Math equation-number="16.4.4" mode="display" xml:id="C16.S4.E4">{{}_{3}F_{2}}\left({a,b,c\atop a-b+1,a-c+1};1\right)=\frac{\Gamma\left(\frac{1 }{2}a+1\right)\Gamma\left(a-b+1\right)\Gamma\left(a-c+1\right)\Gamma\left( \frac{1}{2}a-b-c+1\right)}{\Gamma\left(a+1\right)\Gamma\left(\frac{1}{2}a-b+1 \right)\Gamma\left(\frac{1}{2}a-c+1\right)\Gamma\left(a-b-c+1\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px2.p1.m1">\Re(a-2b-2c)&gt;-2</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px2.p1.m2">a=-n</Math> : <Math equation-number="16.4.5" mode="display" xml:id="C16.S4.E5">{{}_{3}F_{2}}\left({-n,b,c\atop 1-b-n,1-c-n};1\right)=\begin{cases}0,&amp;n=2k+1, \\ \dfrac{(2k)!\Gamma\left(b+k\right)\Gamma\left(c+k\right)\Gamma\left(b+c+2k \right)}{k!\Gamma\left(b+2k\right)\Gamma\left(c+2k\right)\Gamma\left(b+c+k \right)},&amp;n=2k,\\ \end{cases}</Math> where <Math mode="inline" xml:id="C16.S4.Px2.p1.m3">k=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px3">
+<title>Watson’s Sum</title>     
+<para xml:id="C16.S4.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C16.S4.Px3.p1.s1">
+ <Math equation-number="16.4.6" mode="display" xml:id="C16.S4.E6">{{}_{3}F_{2}}\left({a,b,c\atop\frac{1}{2}(a+b+1),2c};1\right)=\frac{\Gamma \left(\frac{1}{2}\right)\Gamma\left(c+\frac{1}{2}\right)\Gamma\left(\frac{1}{2 }(a+b+1)\right)\Gamma\left(c+\frac{1}{2}(1-a-b)\right)}{\Gamma\left(\frac{1}{2 }(a+1)\right)\Gamma\left(\frac{1}{2}(b+1)\right)\Gamma\left(c+\frac{1}{2}(1-a) \right)\Gamma\left(c+\frac{1}{2}(1-b)\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px3.p1.m1">\Re(2c-a-b)&gt;-1</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px3.p1.m2">a=-n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px4">
+<title>Whipple’s Sum</title>     
+<para xml:id="C16.S4.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C16.S4.Px4.p1.s1">
+ <Math equation-number="16.4.7" mode="display" xml:id="C16.S4.E7">{{}_{3}F_{2}}\left({a,1-a,c\atop d,2c-d+1};1\right)=\frac{\pi\Gamma\left(d \right)\Gamma\left(2c-d+1\right)2^{1-2c}}{\Gamma\left(c+\frac{1}{2}(a-d+1) \right)\Gamma\left(c+1-\frac{1}{2}(a+d)\right)\Gamma\left(\frac{1}{2}(a+d) \right)\Gamma\left(\frac{1}{2}(d-a+1)\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px4.p1.m1">\Re c&gt;0</Math> or when <Math mode="inline" xml:id="C16.S4.Px4.p1.m2">a</Math> is an integer.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px5">
+<title>Džrbasjan’s Sum</title>    
+<para xml:id="C16.S4.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C16.S4.Px5.p1.s1">
+This is (16.4.7) in the case <Math mode="inline" xml:id="C16.S4.Px5.p1.m1">c=-n</Math> : <Math equation-number="16.4.8" mode="display" xml:id="C16.S4.E8">{{}_{3}F_{2}}\left({-n,a,1-a\atop d,1-d-2n};1\right)=\frac{{\left(\frac{1}{2}( a+d)\right)_{n}}{\left(\frac{1}{2}(d-a+1)\right)_{n}}}{{\left(\frac{1}{2}d \right)_{n}}{\left(\frac{1}{2}(d+1)\right)_{n}}}, if n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px6">
+<title>Rogers–Dougall Very Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C16.S4.Px6.p1.s1">
+ <Math equation-number="16.4.9" mode="display" xml:id="C16.S4.E9">{{}_{5}F_{4}}\left({a,\frac{1}{2}a+1,b,c,d\atop\frac{1}{2}a,a-b+1,a-c+1,a-d+1} ;1\right)=\frac{\Gamma\left(a-b+1\right)\Gamma\left(a-c+1\right)\Gamma\left(a- d+1\right)\Gamma\left(a-b-c-d+1\right)}{\Gamma\left(a+1\right)\Gamma\left(a-b- c+1\right)\Gamma\left(a-b-d+1\right)\Gamma\left(a-c-d+1\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px6.p1.m1">\Re(b+c+d-a)&lt;1</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px6.p1.m2">d=-n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px7">
+<title>Dougall’s Very Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C16.S4.Px7.p1.s1">
+ <Math equation-number="16.4.10" mode="display" xml:id="C16.S4.E10">{{}_{7}F_{6}}\left({a,\frac{1}{2}a+1,b,c,d,f,-n\atop\frac{1}{2}a,a-b+1,a-c+1,a -d+1,a-f+1,a+n+1};1\right)=\frac{{\left(a+1\right)_{n}}{\left(a-b-c+1\right)_{ n}}{\left(a-b-d+1\right)_{n}}{\left(a-c-d+1\right)_{n}}}{{\left(a-b+1\right)_{ n}}{\left(a-c+1\right)_{n}}{\left(a-d+1\right)_{n}}{\left(a-b-c-d+1\right)_{n} }}, if n=0,1,\dots,</Math> when <Math mode="inline" xml:id="C16.S4.Px7.p1.m1">2a+1=b+c+d+f-n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C16.S4.Px7.p1.s2">
+The last condition is equivalent to the sum of the top parameters plus <Math mode="inline" xml:id="C16.S4.Px7.p1.m2">2</Math> equals the sum of the bottom parameters, that is, the series is 2-balanced.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS3">
+<title>Identities</title>        
+   
+<para xml:id="C16.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C16.S4.SS3.p1.s1">
+ <Math equation-number="16.4.11" mode="display" xml:id="C16.S4.E11">{{}_{3}F_{2}}\left({a,b,c\atop d,e};1\right)=\frac{\Gamma\left(e\right)\Gamma \left(d+e-a-b-c\right)}{\Gamma\left(e-a\right)\Gamma\left(d+e-b-c\right)}{{}_{ 3}F_{2}}\left({a,d-b,d-c\atop d,d+e-b-c};1\right),</Math> when <Math mode="inline" xml:id="C16.S4.SS3.p1.m1">\Re(d+e-a-b-c)&gt;0</Math> and <Math mode="inline" xml:id="C16.S4.SS3.p1.m2">\Re(e-a)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C16.S4.SS3.p1.s2">
+The function <Math mode="inline" xml:id="C16.S4.SS3.p1.m3">{{}_{3}F_{2}}\left(a,b,c;d,e;1\right)</Math> is analytic in the parameters <Math mode="inline" xml:id="C16.S4.SS3.p1.m4">a,b,c,d,e</Math> when its series expansion converges and the bottom parameters are not negative integers or zero.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C16.S4.SS3.p1.s3">
+(16.4.11) provides a partial analytic continuation to the region when the only restrictions on the parameters are <Math mode="inline" xml:id="C16.S4.SS3.p1.m5">\Re(e-a)&gt;0</Math> , and <Math mode="inline" xml:id="C16.S4.SS3.p1.m6">d,e</Math> , and <Math mode="inline" xml:id="C16.S4.SS3.p1.m7">d+e-b-c\neq 0,-1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C16.S4.SS3.p1.s4">
+A detailedtreatment of analytic continuation in (16.4.11) and asymptotic approximations as the variables <Math mode="inline" xml:id="C16.S4.SS3.p1.m8">a,b,c,d,e</Math> approach infinity is given byAomoto (1987).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C16.S4.SS3.p2.s1">
+There are two types of three-term identities for <Math mode="inline" xml:id="C16.S4.SS3.p2.m1">{{}_{3}F_{2}}</Math> ’s.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C16.S4.SS3.p2.s2">
+The first are recurrence relations that extend those for <Math mode="inline" xml:id="C16.S4.SS3.p2.m2">{{}_{2}F_{1}}</Math> ’s; see §15.5(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C16.S4.SS3.p2.s3">
+Examples are (16.3.7) with <Math mode="inline" xml:id="C16.S4.SS3.p2.m3">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="24" xml:id="C16.S4.SS3.p2.s4">
+Also, <Math equation-number="16.4.12" mode="display" xml:id="C16.S4.E12">(a-d)(b-d)(c-d)\left({{}_{3}F_{2}}\left({a,b,c\atop d+1,e};1\right)-{{}_{3}F_{ 2}}\left({a,b,c\atop d,e};1\right)\right)+abc{{}_{3}F_{2}}\left({a,b,c\atop d, e};1\right)=d(d-1)(a+b+c-d-e+1)\left({{}_{3}F_{2}}\left({a,b,c\atop d,e};1 \right)-{{}_{3}F_{2}}\left({a,b,c\atop d-1,e};1\right)\right),</Math> and <Math equation-number="16.4.13" mode="display" xml:id="C16.S4.E13">{{}_{3}F_{2}}\left({a,b,c\atop d,e};1\right)=\dfrac{c(e-a)}{de}{{}_{3}F_{2}} \left({a,b+1,c+1\atop d+1,e+1};1\right)+\dfrac{d-c}{d}{{}_{3}F_{2}}\left({a,b+ 1,c\atop d+1,e};1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="25" xml:id="C16.S4.SS3.p2.s5">
+Methods of deriving such identities are given by Bailey (1964),Rainville (1960), Raynal (1979), andWilson (1978).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="26" xml:id="C16.S4.SS3.p2.s6">
+Lists are given by Raynal (1979) andWilson (1978).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="27" xml:id="C16.S4.SS3.p2.s7">
+See Raynal (1979) for a statement in terms of <Math mode="inline" xml:id="C16.S4.SS3.p2.m6">\mathit{3j}</Math> symbols (Chapter 34).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="28" xml:id="C16.S4.SS3.p2.s8">
+Also see Wilf and Zeilberger (1992a, b) for information on the Wilf–Zeilberger algorithm which can be used to find such relations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C16.S4.SS3.p3.s1">
+The other three-term relations are extensions of Kummer’s relations for <Math mode="inline" xml:id="C16.S4.SS3.p3.m1">{{}_{2}F_{1}}</Math> ’s given in §15.10(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C16.S4.SS3.p3.s2">
+SeeBailey (1964, pp. 19–22).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C16.S4.SS3.p4.s1">
+Balanced <Math mode="inline" xml:id="C16.S4.SS3.p4.m1">{{}_{4}F_{3}}\left(1\right)</Math> series have transformation formulas and three-term relations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C16.S4.SS3.p4.s2">
+The basic transformation is given by <Math equation-number="16.4.14" mode="display" xml:id="C16.S4.E14">{{}_{4}F_{3}}\left({-n,a,b,c\atop d,e,f};1\right)=\frac{{\left(e-a\right)_{n}} {\left(f-a\right)_{n}}}{{\left(e\right)_{n}}{\left(f\right)_{n}}}{{}_{4}F_{3}} \left({-n,a,d-b,d-c\atop d,a-e-n+1,a-f-n+1};1\right),</Math> when <Math mode="inline" xml:id="C16.S4.SS3.p4.m2">a+b+c-n+1=d+e+f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C16.S4.SS3.p4.s3">
+These series contain <Math mode="inline" xml:id="C16.S4.SS3.p4.m3">\mathit{6j}</Math> symbols as special cases when the parameters are integers; compare §34.4.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C16.S4.SS3.p5.s1">
+The characterizing properties (18.22.2),(18.22.10),(18.22.19),(18.22.20), and (18.26.14) of the Hahn and Wilson class polynomials are examples of the contiguous relations mentioned in the previous three paragraphs.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C16.S4.SS3.p6.s1">
+Contiguous balanced series have parameters shifted by an integer but still balanced. One example of such a three-term relation is the recurrence relation (18.26.16) for Racah polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C16.S4.SS3.p6.s2">
+See Raynal (1979),Wilson (1978), and Bailey (1964).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C16.S4.SS3.p7.s1">
+A different type of transformation is that of Whipple: <Math equation-number="16.4.15" mode="display" xml:id="C16.S4.E15">{{}_{7}F_{6}}\left({a,\frac{1}{2}a+1,b,c,d,e,f\atop\frac{1}{2}a,a-b+1,a-c+1,a- d+1,a-e+1,a-f+1};1\right)=\frac{\Gamma\left(a-d+1\right)\Gamma\left(a-e+1 \right)\Gamma\left(a-f+1\right)\Gamma\left(a-d-e-f+1\right)}{\Gamma\left(a+1 \right)\Gamma\left(a-d-e+1\right)\Gamma\left(a-d-f+1\right)\Gamma\left(a-e-f+1 \right)}{{}_{4}F_{3}}\left({a-b-c+1,d,e,f\atop a-b+1,a-c+1,d+e+f-a};1\right),</Math> when the series on the right terminates and the series on the left converges.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C16.S4.SS3.p7.s2">
+When the series on the right does not terminate, a second term appears.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C16.S4.SS3.p7.s3">
+SeeBailey (1964, §4.4(4)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C16.S4.SS3.p8.s1">
+Transformations for both balanced <Math mode="inline" xml:id="C16.S4.SS3.p8.m1">{{}_{4}F_{3}}\left(1\right)</Math> and very well-poised <Math mode="inline" xml:id="C16.S4.SS3.p8.m2">{{}_{7}F_{6}}\left(1\right)</Math> are included in Bailey (1964, pp. 56–63).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C16.S4.SS3.p8.s2">
+A similar theory is available for very well-poised <Math mode="inline" xml:id="C16.S4.SS3.p8.m3">{{}_{9}F_{8}}\left(1\right)</Math> ’s which are 2-balanced. See Bailey (1964, §§4.3(7) and 7.6(1)) for the transformation formulas and Wilson (1978) for contiguous relations.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C16.S4.SS3.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C16.S4.SS3.p9.s1">
+Relations between three solutions of three-term recurrence relations are given by Masson (1991).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C16.S4.SS3.p9.s2">
+See also Lewanowicz (1985) (with corrections in Lewanowicz (1987)) for further examples of recurrence relations.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS4">
+<title>Continued Fractions</title>          
+<para xml:id="C16.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C16.S4.SS4.p1.s1">
+For continued fractions for ratios of <Math mode="inline" xml:id="C16.S4.SS4.p1.m1">{{}_{3}F_{2}}</Math> functions with argument unity, see Cuyt et al. (2008, pp. 315–317).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS5">
+<title>Bilateral Series</title>           
+<para xml:id="C16.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C16.S4.SS5.p1.s1">
+Denote, formally, thebilateral hypergeometric function <Math equation-number="16.4.16" mode="display" xml:id="C16.S4.E16">{{}_{p}H_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\sum_{k =-\infty}^{\infty}\frac{{\left(a_{1}\right)_{k}}\dots{\left(a_{p}\right)_{k}}} {{\left(b_{1}\right)_{k}}\dots{\left(b_{q}\right)_{k}}}z^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C16.S4.SS5.p1.s2">
+Then <Math equation-number="16.4.17" mode="display" xml:id="C16.S4.E17">{{}_{2}H_{2}}\left({a,b\atop c,d};1\right)=\frac{\Gamma\left(c\right)\Gamma \left(d\right)\Gamma\left(1-a\right)\Gamma\left(1-b\right)\Gamma\left(c+d-a-b- 1\right)}{\Gamma\left(c-a\right)\Gamma\left(d-a\right)\Gamma\left(c-b\right) \Gamma\left(d-b\right)}, if \Re(c+d-a-b)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="47" xml:id="C16.S4.SS5.p1.s3">
+This is Dougall’s bilateral sum; see Andrews et al. (1999, §2.8).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

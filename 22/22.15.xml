@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S15">
+<title>Inverse Functions</title>        
+   
+<subsection xml:id="C22.S15.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C22.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S15.SS1.p1.s1">
+The inverse Jacobian elliptic functions can be defined in an analogous manner to the inverse trigonometric functions (§4.23).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C22.S15.SS1.p1.s2">
+With real variables, the solutions of the equations <Math equation-number="22.15.1" mode="display" xml:id="C22.S15.E1">\operatorname{sn}\left(\xi,k\right)=x, if -1\leq x\leq 1,</Math> <Math equation-number="22.15.2" mode="display" xml:id="C22.S15.E2">\operatorname{cn}\left(\eta,k\right)=x, if -1\leq x\leq 1,</Math> <Math equation-number="22.15.3" mode="display" xml:id="C22.S15.E3">\operatorname{dn}\left(\zeta,k\right)=x, if k^{\prime}\leq x\leq 1,</Math> are denoted respectively by <Math equation-number="22.15.4" mode="display" xml:id="C22.S15.E4">\xi=\operatorname{arcsn}\left(x,k\right),\eta=\operatorname{arccn}\left(x,k\right),\zeta=\operatorname{arcdn}\left(x,k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C22.S15.SS1.p1.s3">
+Each of these inverse functions is multivalued. The principal values satisfy <Math equation-number="22.15.5" mode="display" xml:id="C22.S15.E5">-K\leq\operatorname{arcsn}\left(x,k\right)\leq K,</Math> , <Math equation-number="22.15.6" mode="display" xml:id="C22.S15.E6">0\leq\operatorname{arccn}\left(x,k\right)\leq 2K,</Math> , <Math equation-number="22.15.7" mode="display" xml:id="C22.S15.E7">0\leq\operatorname{arcdn}\left(x,k\right)\leq K,</Math> and unless stated otherwise it is assumed that the inverse functions assume their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C22.S15.SS1.p1.s4">
+The general solutions of (22.15.1), (22.15.2), (22.15.3) are, respectively, <Math equation-number="22.15.8" mode="display" xml:id="C22.S15.E8">\xi=(-1)^{m}\operatorname{arcsn}\left(x,k\right)+2mK,</Math> , <Math equation-number="22.15.9" mode="display" xml:id="C22.S15.E9">\eta=\pm\operatorname{arccn}\left(x,k\right)+4mK,</Math> , <Math equation-number="22.15.10" mode="display" xml:id="C22.S15.E10">\zeta=\pm\operatorname{arcdn}\left(x,k\right)+2mK,</Math> where <Math mode="inline" xml:id="C22.S15.SS1.p1.m13">m\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C22.S15.SS1.p2.s1">
+Equations (22.15.1) and (22.15.4), for <Math mode="inline" xml:id="C22.S15.SS1.p2.m1">\operatorname{arcsn}\left(x,k\right)</Math> , are equivalent to (22.15.12) and also to <Math equation-number="22.15.11" mode="display" xml:id="C22.S15.E11">x=\int_{0}^{\operatorname{sn}\left(x,k\right)}\frac{\mathrm{d}t}{\sqrt{(1-t^{2 })(1-k^{2}t^{2})}}, if -1\leq x\leq 1, 0\leq k\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C22.S15.SS1.p2.s2">
+Similarly with (22.15.13)–(22.15.23) and the other eleven Jacobian elliptic functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S15.SS2">
+<title>Representations as Elliptic Integrals</title>        
+    
+<para xml:id="C22.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C22.S15.SS2.p1.s1">
+ <Math equation-number="22.15.12" mode="display" xml:id="C22.S15.E12">\operatorname{arcsn}\left(x,k\right)=\int_{0}^{x}\frac{\mathrm{d}t}{\sqrt{(1-t ^{2})(1-k^{2}t^{2})}}, if -1\leq x\leq 1,</Math> <Math equation-number="22.15.13" mode="display" xml:id="C22.S15.E13">\operatorname{arccn}\left(x,k\right)=\int_{x}^{1}\frac{\mathrm{d}t}{\sqrt{(1-t ^{2})({k^{\prime}}^{2}+k^{2}t^{2})}}, if -1\leq x\leq 1,</Math> <Math equation-number="22.15.14" mode="display" xml:id="C22.S15.E14">\operatorname{arcdn}\left(x,k\right)=\int_{x}^{1}\frac{\mathrm{d}t}{\sqrt{(1-t ^{2})(t^{2}-{k^{\prime}}^{2})}}, if k^{\prime}\leq x\leq 1 </Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S15.SS2.p2">
+
+</para>
+ 
+<para xml:id="C22.S15.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C22.S15.SS2.p3.s1">
+ <Math equation-number="22.15.15" mode="display" xml:id="C22.S15.E15">\operatorname{arccd}\left(x,k\right)=\int_{x}^{1}\frac{\mathrm{d}t}{\sqrt{(1-t ^{2})(1-k^{2}t^{2})}}, if -1\leq x\leq 1,</Math> <Math equation-number="22.15.16" mode="display" xml:id="C22.S15.E16">\operatorname{arcsd}\left(x,k\right)=\int_{0}^{x}\frac{\mathrm{d}t}{\sqrt{(1-{ k^{\prime}}^{2}t^{2})(1+k^{2}t^{2})}}, if -1/k^{\prime}\leq x\leq 1/k^{\prime},</Math> <Math equation-number="22.15.17" mode="display" xml:id="C22.S15.E17">\operatorname{arcnd}\left(x,k\right)=\int_{1}^{x}\frac{\mathrm{d}t}{\sqrt{(t^{ 2}-1)(1-{k^{\prime}}^{2}t^{2})}}, if 1\leq x\leq 1/k^{\prime},</Math> <Math equation-number="22.15.18" mode="display" xml:id="C22.S15.E18">\operatorname{arcdc}\left(x,k\right)=\int_{1}^{x}\frac{\mathrm{d}t}{\sqrt{(t^{ 2}-1)(t^{2}-k^{2})}}, if 1\leq x&lt;\infty,</Math> <Math equation-number="22.15.19" mode="display" xml:id="C22.S15.E19">\operatorname{arcnc}\left(x,k\right)=\int_{1}^{x}\frac{\mathrm{d}t}{\sqrt{(t^{ 2}-1)(k^{2}+{k^{\prime}}^{2}t^{2})}}, if 1\leq x&lt;\infty,</Math> <Math equation-number="22.15.20" mode="display" xml:id="C22.S15.E20">\operatorname{arcsc}\left(x,k\right)=\int_{0}^{x}\frac{\mathrm{d}t}{\sqrt{(1+t ^{2})(1+{k^{\prime}}^{2}t^{2})}}, if -\infty&lt;x&lt;\infty,</Math> <Math equation-number="22.15.21" mode="display" xml:id="C22.S15.E21">\operatorname{arcns}\left(x,k\right)=\int_{x}^{\infty}\frac{\mathrm{d}t}{\sqrt {(t^{2}-1)(t^{2}-k^{2})}}, if 1\leq x&lt;\infty,</Math> <Math equation-number="22.15.22" mode="display" xml:id="C22.S15.E22">\operatorname{arcds}\left(x,k\right)=\int_{x}^{\infty}\frac{\mathrm{d}t}{\sqrt {(t^{2}+k^{2})(t^{2}-{k^{\prime}}^{2})}}, if k^{\prime}\leq x&lt;\infty,</Math> <Math equation-number="22.15.23" mode="display" xml:id="C22.S15.E23">\operatorname{arccs}\left(x,k\right)=\int_{x}^{\infty}\frac{\mathrm{d}t}{\sqrt {(1+t^{2})(t^{2}+{k^{\prime}}^{2})}}, if -\infty&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S15.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C22.S15.SS2.p4.s1">
+The integrals (22.15.12)–(22.15.14) can be regarded asnormal forms for representing the inverse functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C22.S15.SS2.p4.s2">
+Other integrals, for example, <Math mode="display" xml:id="C22.S15.Ex4">\int_{x}^{b}\frac{\mathrm{d}t}{\sqrt{(a^{2}+t^{2})(b^{2}-t^{2})}}</Math> can be transformed into normal form by elementary change of variables.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C22.S15.SS2.p4.s3">
+Comprehensive treatments are given by Carlson (2005),Lawden (1989, pp. 52–55),Bowman (1953, Chapter IX), andErdélyi et al. (1953b, pp. 296–301).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C22.S15.SS2.p4.s4">
+See alsoAbramowitz and Stegun (1964, p. 596).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S15.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C22.S15.SS2.p5.s1">
+For representations of the inverse functions as symmetric elliptic integrals see §19.25(v).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C22.S15.SS2.p5.s2">
+For power-series expansions see Carlson (2008).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

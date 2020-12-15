@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S15">
+<title>Signal Analysis</title>        
+    
+<subsection xml:id="C30.S15.SS1">
+<title>Scaled Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S15.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C30.S15.SS1.p1.m1">\tau</Math> <Math mode="inline" xml:id="C30.S15.SS1.p1.m2">(&gt;0)</Math> and <Math mode="inline" xml:id="C30.S15.SS1.p1.m3">\sigma</Math> <Math mode="inline" xml:id="C30.S15.SS1.p1.m4">(&gt;0)</Math> be given.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S15.SS1.p1.s2">
+Set <Math mode="inline" xml:id="C30.S15.SS1.p1.m5">\gamma=\tau\sigma</Math> and define <Math equation-number="30.15.1" mode="display" xml:id="C30.S15.E1">\phi_{n}(t)=\sqrt{\frac{2n+1}{2\tau}}\sqrt{\Lambda_{n}}\mathsf{Ps}^{0}_{n} \left(\frac{t}{\tau},\gamma^{2}\right), if n=0,1,2,\dots,</Math> <Math equation-number="30.15.2" mode="display" xml:id="C30.S15.E2">\Lambda_{n}=\frac{2\gamma}{\pi}\left(K_{n}^{0}(\gamma)A_{n}^{0}(\gamma^{2}) \right)^{2};</Math> see §30.11(v).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS2">
+<title>Integral Equation</title>        
+   
+<para xml:id="C30.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C30.S15.SS2.p1.s1">
+ <Math equation-number="30.15.3" mode="display" xml:id="C30.S15.E3">\int_{-\tau}^{\tau}\frac{\sin\sigma(t-s)}{\pi(t-s)}\phi_{n}(s)\mathrm{d}s= \Lambda_{n}\phi_{n}(t)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS3">
+<title>Fourier Transform</title>        
+  
+ 
+<para xml:id="C30.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C30.S15.SS3.p1.s1">
+ <Math equation-number="30.15.4" mode="display" xml:id="C30.S15.E4">\int_{-\infty}^{\infty}e^{-\mathrm{i}t\omega}\phi_{n}(t)\mathrm{d}t=(-\mathrm{ i})^{n}\sqrt{\frac{2\pi\tau}{\sigma\Lambda_{n}}}\phi_{n}\left(\frac{\tau}{ \sigma}\omega\right)\chi_{\sigma}(\omega),</Math> <Math equation-number="30.15.5" mode="display" xml:id="C30.S15.E5">\int_{-\tau}^{\tau}e^{-\mathrm{i}t\omega}\phi_{n}(t)\mathrm{d}t=(-\mathrm{i})^ {n}\sqrt{\frac{2\pi\tau\Lambda_{n}}{\sigma}}\phi_{n}\left(\frac{\tau}{\sigma} \omega\right),</Math> where <Math equation-number="30.15.6" mode="display" xml:id="C30.S15.E6">\chi_{\sigma}(\omega)=\begin{cases}1,&amp;\mbox{$|\omega|\leq\sigma$},\\ 0,&amp;\mbox{$|\omega|&gt;\sigma$}.\end{cases</Math> } Equations (30.15.4) and (30.15.6) show that the functions <Math mode="inline" xml:id="C30.S15.SS3.p1.m1">\phi_{n}</Math> are <Math mode="inline" xml:id="C30.S15.SS3.p1.m2">\sigma</Math> -bandlimited, that is, their Fourier transform vanishes outside the interval <Math mode="inline" xml:id="C30.S15.SS3.p1.m3">[-\sigma,\sigma]</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS4">
+<title>Orthogonality</title>        
+  
+<para xml:id="C30.S15.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C30.S15.SS4.p1.s1">
+ <Math equation-number="30.15.7" mode="display" xml:id="C30.S15.E7">\int_{-\tau}^{\tau}\phi_{k}(t)\phi_{n}(t)\mathrm{d}t=\Lambda_{n}\delta_{k,n},</Math> , <Math equation-number="30.15.8" mode="display" xml:id="C30.S15.E8">\int_{-\infty}^{\infty}\phi_{k}(t)\phi_{n}(t)\mathrm{d}t=\delta_{k,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C30.S15.SS4.p1.s2">
+The sequence <Math mode="inline" xml:id="C30.S15.SS4.p1.m1">\phi_{n}</Math> , <Math mode="inline" xml:id="C30.S15.SS4.p1.m2">n=0,1,2,\dots</Math> forms an orthonormal basis in the space of <Math mode="inline" xml:id="C30.S15.SS4.p1.m3">\sigma</Math> -bandlimited functions, and, after normalization, an orthonormal basis in <Math mode="inline" xml:id="C30.S15.SS4.p1.m4">L^{2}(-\tau,\tau)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS5">
+<title>Extremal Properties</title>        
+  
+<para xml:id="C30.S15.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C30.S15.SS5.p1.s1">
+The maximum (or least upper bound) <Math mode="inline" xml:id="C30.S15.SS5.p1.m1">\mathrm{B}</Math> of all numbers <Math equation-number="30.15.9" mode="display" xml:id="C30.S15.E9">\beta=\frac{1}{2\pi}\int_{-\sigma}^{\sigma}\left|\int_{-\infty}^{\infty}e^{- \mathrm{i}t\omega}f(t)\mathrm{d}t\right|^{2}\mathrm{d}\omega</Math> taken over all <Math mode="inline" xml:id="C30.S15.SS5.p1.m2">f\in L^{2}(-\infty,\infty)</Math> subject to <Math equation-number="30.15.10" mode="display" xml:id="C30.S15.E10">\int_{-\infty}^{\infty}|f(t)|^{2}\mathrm{d}t=1,\int_{-\tau}^{\tau}|f(t)|^{2}\mathrm{d}t=\alpha,</Math> for (fixed) <Math mode="inline" xml:id="C30.S15.SS5.p1.m3">\Lambda_{0}&lt;\alpha\leq 1</Math> , is given by <Math equation-number="30.15.11" mode="display" xml:id="C30.S15.E11">\operatorname{arccos}\sqrt{\mathrm{B}}+\operatorname{arccos}\sqrt{\alpha}= \operatorname{arccos}\sqrt{\Lambda_{0}},</Math> or equivalently, <Math equation-number="30.15.12" mode="display" xml:id="C30.S15.E12">\mathrm{B}=\left(\sqrt{\Lambda_{0}\alpha}+\sqrt{1-\Lambda_{0}}\sqrt{1-\alpha} \right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C30.S15.SS5.p1.s2">
+The corresponding function <Math mode="inline" xml:id="C30.S15.SS5.p1.m4">f</Math> is given by <Math equation-number="30.15.13" mode="display" xml:id="C30.S15.E13">f(t)=a\phi_{0}(t)\chi_{\tau}(t)+b\phi_{0}(t)(1-\chi_{\tau}(t)),a=\sqrt{\frac{\alpha}{\Lambda_{0}}},b=\sqrt{\frac{1-\alpha}{1-\Lambda_{0}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C30.S15.SS5.p1.s3">
+If <Math mode="inline" xml:id="C30.S15.SS5.p1.m5">0&lt;\alpha\leq\Lambda_{0}</Math> , then <Math mode="inline" xml:id="C30.S15.SS5.p1.m6">\mathrm{B}=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S15.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C30.S15.SS5.p2.s1">
+For further information see Frieden (1971), Lyman and Edmonson (2001),Papoulis (1977, Chapter 6), Slepian (1983), andSlepian and Pollak (1961).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

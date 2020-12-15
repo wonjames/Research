@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C17.S2">
+<title>Calculus</title>          
+<subsection xml:id="C17.S2.SS1">
+<title><Math mode="inline" xml:id="C17.S2.SS1.m1">q</Math>-Calculus</title>         
+<para xml:id="C17.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C17.S2.SS1.p1.s1">
+For <Math mode="inline" xml:id="C17.S2.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="17.2.1" mode="display" xml:id="C17.S2.E1">\left(a;q\right)_{n}=(1-a)(1-aq)\cdots(1-aq^{n-1}),</Math> <Math equation-number="17.2.2" mode="display" xml:id="C17.S2.E2">\left(a;q\right)_{-n}=\frac{1}{\left(aq^{-n};q\right)_{n}}=\frac{(-q/a)^{n}q^{ \genfrac{(}{)}{0.0pt}{}{n}{2}}}{\left(q/a;q\right)_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C17.S2.SS1.p1.s2">
+For <Math mode="inline" xml:id="C17.S2.SS1.p1.m5">\nu\in\mathbb{C}</Math> <Math equation-number="17.2.3" mode="display" xml:id="C17.S2.E3">\left(a;q\right)_{\nu}=\prod_{j=0}^{\infty}\left(\frac{1-aq^{j}}{1-aq^{\nu+j}} \right),</Math> when this product converges.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C17.S2.SS1.p1.s3">
+<Math equation-number="17.2.4" mode="display" xml:id="C17.S2.E4">\left(a;q\right)_{\infty}=\prod_{j=0}^{\infty}(1-aq^{j}),</Math> , <Math equation-number="17.2.5" mode="display" xml:id="C17.S2.E5">\left(a_{1},a_{2},\dots,a_{r};q\right)_{n}=\prod_{j=1}^{r}\left(a_{j};q\right) _{n},</Math> , <Math equation-number="17.2.6" mode="display" xml:id="C17.S2.E6">\left(a_{1},a_{2},\dots,a_{r};q\right)_{\infty}=\prod_{j=1}^{r}\left(a_{j};q \right)_{\infty}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C17.S2.SS1.p1.s4">
+<Math equation-number="17.2.7" mode="display" xml:id="C17.S2.E7">\left(a;q^{-1}\right)_{n}=\left(a^{-1};q\right)_{n}(-a)^{n}q^{-\genfrac{(}{)}{ 0.0pt}{}{n}{2}},</Math> <Math equation-number="17.2.8" mode="display" xml:id="C17.S2.E8">\frac{\left(a;q^{-1}\right)_{n}}{\left(b;q^{-1}\right)_{n}}=\frac{\left(a^{-1} ;q\right)_{n}}{\left(b^{-1};q\right)_{n}}\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.9" mode="display" xml:id="C17.S2.E9">\left(a;q\right)_{n}=\left(q^{1-n}/a;q\right)_{n}(-a)^{n}q^{\genfrac{(}{)}{0.0 pt}{}{n}{2}},</Math> <Math equation-number="17.2.10" mode="display" xml:id="C17.S2.E10">\frac{\left(a;q\right)_{n}}{\left(b;q\right)_{n}}=\frac{\left(q^{1-n}/a;q \right)_{n}}{\left(q^{1-n}/b;q\right)_{n}}\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.11" mode="display" xml:id="C17.S2.E11">\left(aq^{-n};q\right)_{n}=\left(q/a;q\right)_{n}\left(-\frac{a}{q}\right)^{n} q^{-\genfrac{(}{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.12" mode="display" xml:id="C17.S2.E12">\frac{\left(aq^{-n};q\right)_{n}}{\left(bq^{-n};q\right)_{n}}=\frac{\left(q/a; q\right)_{n}}{\left(q/b;q\right)_{n}}\left(\frac{a}{b}\right)^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C17.S2.SS1.p1.s5">
+<Math equation-number="17.2.13" mode="display" xml:id="C17.S2.E13">\left(a;q\right)_{n-k}=\frac{\left(a;q\right)_{n}}{\left(q^{1-n}/a;q\right)_{k }}\left(-\frac{q}{a}\right)^{k}q^{\genfrac{(}{)}{0.0pt}{}{k}{2}-nk}</Math> , <Math equation-number="17.2.14" mode="display" xml:id="C17.S2.E14">\frac{\left(a;q\right)_{n-k}}{\left(b;q\right)_{n-k}}=\frac{\left(a;q\right)_{ n}}{\left(b;q\right)_{n}}\frac{\left(q^{1-n}/b;q\right)_{k}}{\left(q^{1-n}/a;q \right)_{k}}\left(\frac{b}{a}\right)^{k},</Math> <Math equation-number="17.2.15" mode="display" xml:id="C17.S2.E15">\left(aq^{-n};q\right)_{k}=\frac{\left(a;q\right)_{k}\left(q/a;q\right)_{n}}{ \left(q^{1-k}/a;q\right)_{n}}q^{-nk},</Math> <Math equation-number="17.2.16" mode="display" xml:id="C17.S2.E16">\left(aq^{-n};q\right)_{n-k}=\frac{\left(q/a;q\right)_{n}}{\left(q/a;q\right)_ {k}}\left(-\frac{a}{q}\right)^{n-k}q^{\genfrac{(}{)}{0.0pt}{}{k}{2}-\genfrac{( }{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.17" mode="display" xml:id="C17.S2.E17">\left(aq^{n};q\right)_{k}=\frac{\left(a;q\right)_{k}\left(aq^{k};q\right)_{n}} {\left(a;q\right)_{n}},</Math> , <Math equation-number="17.2.18" mode="display" xml:id="C17.S2.E18">\left(aq^{k};q\right)_{n-k}=\frac{\left(a;q\right)_{n}}{\left(a;q\right)_{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C17.S2.SS1.p1.s6">
+<Math equation-number="17.2.19" mode="display" xml:id="C17.S2.E19">\left(a;q\right)_{2n}=\left(a,aq;q^{2}\right)_{n},</Math> more generally, <Math equation-number="17.2.20" mode="display" xml:id="C17.S2.E20">\left(a;q\right)_{kn}=\left(a,aq,\dots,aq^{k-1};q^{k}\right)_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C17.S2.SS1.p1.s7">
+<Math equation-number="17.2.21" mode="display" xml:id="C17.S2.E21">\left(a^{2};q^{2}\right)_{n}=\left(a;q\right)_{n}\left(-a;q\right)_{n},</Math> <Math equation-number="17.2.22" mode="display" xml:id="C17.S2.E22">\frac{\left(qa^{\frac{1}{2}},-qa^{\frac{1}{2}};q\right)_{n}}{\left(a^{\frac{1} {2}},-a^{\frac{1}{2}};q\right)_{n}}=\frac{\left(aq^{2};q^{2}\right)_{n}}{\left (a;q^{2}\right)_{n}}=\frac{1-aq^{2n}}{1-a},</Math> more generally, <Math equation-number="17.2.23" mode="display" xml:id="C17.S2.E23">\frac{\left(qa^{\frac{1}{k}},q\omega_{k}a^{\frac{1}{k}},\dots,q\omega_{k}^{k-1 }a^{\frac{1}{k}};q\right)_{n}}{\left(a^{\frac{1}{k}},\omega_{k}a^{\frac{1}{k}} ,\dots,\omega_{k}^{k-1}a^{\frac{1}{k}};q\right)_{n}}=\frac{\left(aq^{k};q^{k} \right)_{n}}{\left(a;q^{k}\right)_{n}}=\frac{1-aq^{kn}}{1-a},</Math> where <Math mode="inline" xml:id="C17.S2.SS1.p1.m8">\omega_{k}={\mathrm{e}^{2\pi i/k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C17.S2.SS1.p1.s8">
+<Math equation-number="17.2.24" mode="display" xml:id="C17.S2.E24">\lim_{\tau\to 0}\left(a/\tau;q\right)_{n}\tau^{n}=\lim_{\sigma\to\infty}\left( a\sigma;q\right)_{n}\sigma^{-n}=(-a)^{n}q^{\genfrac{(}{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.25" mode="display" xml:id="C17.S2.E25">\lim_{\tau\to 0}\frac{\left(a/\tau;q\right)_{n}}{\left(b/\tau;q\right)_{n}}= \lim_{\sigma\to\infty}\frac{\left(a\sigma;q\right)_{n}}{\left(b\sigma;q\right) _{n}}=\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.26" mode="display" xml:id="C17.S2.E26">\lim_{\tau\to 0}\frac{\left(a/\tau;q\right)_{n}\left(b/\tau;q\right)_{n}}{ \left(c/\tau^{2};q\right)_{n}}=(-1)^{n}\left(\frac{ab}{c}\right)^{n}q^{ \genfrac{(}{)}{0.0pt}{}{n}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS2">
+<title>Binomial Coefficients</title>          
+<para xml:id="C17.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C17.S2.SS2.p1.s1">
+ <Math equation-number="17.2.27" mode="display" xml:id="C17.S2.E27">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\frac{\left(q;q\right)_{n}}{\left(q;q\right) _{m}\left(q;q\right)_{n-m}}\\ =\frac{\left(q^{-n};q\right)_{m}(-1)^{m}q^{nm-\genfrac{(}{)}{0.0pt}{}{m}{2}}}{ \left(q;q\right)_{m}},</Math> <Math equation-number="17.2.28" mode="display" xml:id="C17.S2.E28">\lim_{q\to 1}\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{(}{)}{0.0pt}{}{n}{m}= \frac{n!}{m!(n-m)!}</Math> , <Math equation-number="17.2.29" mode="display" xml:id="C17.S2.E29">\genfrac{[}{]}{0.0pt}{}{m+n}{m}_{q}=\frac{\left(q^{n+1};q\right)_{m}}{\left(q; q\right)_{m}},</Math> <Math equation-number="17.2.30" mode="display" xml:id="C17.S2.E30">\genfrac{[}{]}{0.0pt}{}{-n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{m+n-1}{m}_{q}(-1)^{ m}q^{-mn-\genfrac{(}{)}{0.0pt}{}{m}{2}},</Math> <Math equation-number="17.2.31" mode="display" xml:id="C17.S2.E31">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{n-1}{m-1}_{q}+q^{m} \genfrac{[}{]}{0.0pt}{}{n-1}{m}_{q}</Math> , <Math equation-number="17.2.32" mode="display" xml:id="C17.S2.E32">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{n-1}{m}_{q}+q^{n-m} \genfrac{[}{]}{0.0pt}{}{n-1}{m-1}_{q}</Math> , <Math equation-number="17.2.33" mode="display" xml:id="C17.S2.E33">\lim_{n\to\infty}\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\frac{1}{\left(q;q\right)_{ m}}=\frac{1}{(1-q)(1-q^{2})\cdots(1-q^{m})},</Math> <Math equation-number="17.2.34" mode="display" xml:id="C17.S2.E34">\lim_{n\to\infty}\genfrac{[}{]}{0.0pt}{}{rn+u}{sn+t}_{q}=\frac{1}{\left(q;q \right)_{\infty}}=\prod_{j=1}^{\infty}\frac{1}{(1-q^{j})},</Math> provided that <Math mode="inline" xml:id="C17.S2.SS2.p1.m1">r&gt;s</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS3">
+<title>Binomial Theorem</title>          
+<para xml:id="C17.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C17.S2.SS3.p1.s1">
+ <Math equation-number="17.2.35" mode="display" xml:id="C17.S2.E35">\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q}(-z)^{j}q^{\genfrac{(}{)}{0.0pt }{}{j}{2}}=\left(z;q\right)_{n}={(1-z)(1-zq)\cdots(1-zq^{n-1})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C17.S2.SS3.p2.s1">
+In the limit as <Math mode="inline" xml:id="C17.S2.SS3.p2.m1">q\to 1</Math> , (17.2.35) reduces to the standard binomial theorem <Math equation-number="17.2.36" mode="display" xml:id="C17.S2.E36">\sum_{j=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{j}(-z)^{j}=(1-z)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C17.S2.SS3.p3.s1">
+Also, <Math equation-number="17.2.37" mode="display" xml:id="C17.S2.E37">\sum_{n=0}^{\infty}\frac{\left(a;q\right)_{n}}{\left(q;q\right)_{n}}z^{n}= \frac{\left(az;q\right)_{\infty}}{\left(z;q\right)_{\infty}},</Math> provided that <Math mode="inline" xml:id="C17.S2.SS3.p3.m1">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C17.S2.SS3.p3.s2">
+When <Math mode="inline" xml:id="C17.S2.SS3.p3.m2">a=q^{m+1}</Math> , where <Math mode="inline" xml:id="C17.S2.SS3.p3.m3">m</Math> is a nonnegative integer, (17.2.37) reduces to the <Math mode="inline" xml:id="C17.S2.SS3.p3.m4">q</Math> -binomial series <Math equation-number="17.2.38" mode="display" xml:id="C17.S2.E38">\sum_{n=0}^{\infty}\genfrac{[}{]}{0.0pt}{}{n+m}{n}_{q}z^{n}=\frac{1}{\left(z;q \right)_{m+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C17.S2.SS3.p3.s3">
+<Math equation-number="17.2.39" mode="display" xml:id="C17.S2.E39">\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q^{2}}q^{j}=\left(-q;q\right)_{n}</Math> ,, <Math equation-number="17.2.40" mode="display" xml:id="C17.S2.E40">\sum_{j=0}^{2n}(-1)^{j}\genfrac{[}{]}{0.0pt}{}{2n}{j}_{q}=\left(q;q^{2}\right) _{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C17.S2.SS3.p4.s1">
+When <Math mode="inline" xml:id="C17.S2.SS3.p4.m1">n\to\infty</Math> in (17.2.35), and when <Math mode="inline" xml:id="C17.S2.SS3.p4.m2">m\to\infty</Math> in (17.2.38), the results become convergent infinite series and infiniteproducts (see (17.5.1) and (17.5.4)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C17.S2.SS3.p5.s1">
+See also §26.9(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS4">
+<title>Derivatives</title>          
+<para xml:id="C17.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C17.S2.SS4.p1.s1">
+The <Math mode="inline" xml:id="C17.S2.SS4.p1.m1">q</Math> -derivatives of <Math mode="inline" xml:id="C17.S2.SS4.p1.m2">f(z)</Math> are defined by <Math equation-number="17.2.41" mode="display" xml:id="C17.S2.E41">\mathcal{D}_{q}f(z)=\begin{cases}\dfrac{f(z)-f(zq)}{(1-q)z},&amp;z\neq 0,\\ f^{\prime}(0),&amp;z=0,\end{cases}</Math> and
+</sentence>
+
+</para>
+   
+<para xml:id="C17.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C17.S2.SS4.p2.s1">
+ <Math equation-number="17.2.42" mode="display" xml:id="C17.S2.E42">f^{[n]}(z)=\mathcal{D}_{q}^{n}f(z)=\begin{cases}z^{-n}(1-q)^{-n}\sum_{j=0}^{n} q^{-nj+\genfrac{(}{)}{0.0pt}{}{j+1}{2}}(-1)^{j}\genfrac{[}{]}{0.0pt}{}{n}{j}_{ q}f(zq^{j}),&amp;z\neq 0,\\ \dfrac{f^{(n)}(0)\left(q;q\right)_{n}}{n!(1-q)^{n}},&amp;z=0.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C17.S2.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C17.S2.SS4.p3.s1">
+When <Math mode="inline" xml:id="C17.S2.SS4.p3.m1">q\to 1</Math> the <Math mode="inline" xml:id="C17.S2.SS4.p3.m2">q</Math> -derivatives converge to the corresponding ordinary derivatives.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C17.S2.Px1">
+<title>Product Rule</title>   
+<para xml:id="C17.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C17.S2.Px1.p1.s1">
+ <Math equation-number="17.2.43" mode="display" xml:id="C17.S2.E43">\mathcal{D}_{q}(f(z)g(z))=g(z)f^{[1]}(z)+f(zq)g^{[1]}(z)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S2.Px2">
+<title>Leibniz Rule</title>    
+<para xml:id="C17.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C17.S2.Px2.p1.s1">
+ <Math equation-number="17.2.44" mode="display" xml:id="C17.S2.E44">\mathcal{D}_{q}^{n}(f(z)g(z))=\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q}f ^{[n-j]}(zq^{j})g^{[j]}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C17.S2.Px2.p2.s1">
+ <Math mode="inline" xml:id="C17.S2.Px2.p2.m1">q</Math> -differential equations are considered in §17.6(iv).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS5">
+<title>Integrals</title>          
+<para xml:id="C17.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C17.S2.SS5.p1.s1">
+If <Math mode="inline" xml:id="C17.S2.SS5.p1.m1">f(x)</Math> is continuous at <Math mode="inline" xml:id="C17.S2.SS5.p1.m2">x=0</Math> , then <Math equation-number="17.2.45" mode="display" xml:id="C17.S2.E45">\int_{0}^{1}f(x){\mathrm{d}}_{q}x=(1-q)\sum_{j=0}^{\infty}f(q^{j})q^{j},</Math> and more generally, <Math equation-number="17.2.46" mode="display" xml:id="C17.S2.E46">\int_{0}^{a}f(x){\mathrm{d}}_{q}x=a(1-q)\sum_{j=0}^{\infty}f(aq^{j})q^{j}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C17.S2.SS5.p2.s1">
+If <Math mode="inline" xml:id="C17.S2.SS5.p2.m1">f(x)</Math> is continuous on <Math mode="inline" xml:id="C17.S2.SS5.p2.m2">[0,a]</Math> , then <Math equation-number="17.2.47" mode="display" xml:id="C17.S2.E47">\lim_{q\to 1-}\int_{0}^{a}f(x){\mathrm{d}}_{q}x=\int_{0}^{a}f(x)\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C17.S2.Px3">
+<title>Infinite Range</title>   
+<para xml:id="C17.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C17.S2.Px3.p1.s1">
+ <Math equation-number="17.2.48" mode="display" xml:id="C17.S2.E48">\int_{0}^{\infty}f(x){\mathrm{d}}_{q}x=\lim_{n\to\infty}\int_{0}^{q^{-n}}f(x){ \mathrm{d}}_{q}x=(1-q)\sum_{j=-\infty}^{\infty}f(q^{j})q^{j},</Math> provided that <Math mode="inline" xml:id="C17.S2.Px3.p1.m1">\sum_{j=-\infty}^{\infty}f(q^{j})q^{j}</Math> converges.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS6">
+<title>Rogers–Ramanujan Identities</title>          
+<para xml:id="C17.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C17.S2.SS6.p1.s1">
+ <Math equation-number="17.2.49" mode="display" xml:id="C17.S2.E49">1+\sum_{n=1}^{\infty}\frac{q^{n^{2}}}{(1-q)(1-q^{2})\cdots(1-q^{n})}=\prod_{n= 0}^{\infty}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})},</Math> <Math equation-number="17.2.50" mode="display" xml:id="C17.S2.E50">1+\sum_{n=1}^{\infty}\frac{q^{n^{2}+n}}{(1-q)(1-q^{2})\cdots(1-q^{n})}=\prod_{ n=0}^{\infty}\frac{1}{(1-q^{5n+2})(1-q^{5n+3})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C17.S2.SS6.p2.s1">
+These identities are the first in a large collection of similar results.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C17.S2.SS6.p2.s2">
+See §17.14.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

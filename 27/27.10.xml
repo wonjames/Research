@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S10">
+<title>Periodic Number-Theoretic Functions</title>        
+  
+<para xml:id="C27.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S10.p1.s1">
+If <Math mode="inline" xml:id="C27.S10.p1.m1">k</Math> is a fixed positive integer, then a number-theoretic function <Math mode="inline" xml:id="C27.S10.p1.m2">f</Math> isperiodic (mod <Math mode="inline" xml:id="C27.S10.p1.m3">k</Math> ) if <Math equation-number="27.10.1" mode="display" xml:id="C27.S10.E1">f(n+k)=f(n), if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S10.p1.s2">
+Examples are the Dirichlet characters (mod <Math mode="inline" xml:id="C27.S10.p1.m4">k</Math> ) and the greatest common divisor <Math mode="inline" xml:id="C27.S10.p1.m5">\left(n,k\right)</Math> regarded as a function of <Math mode="inline" xml:id="C27.S10.p1.m6">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C27.S10.p2.s1">
+Every function periodic (mod <Math mode="inline" xml:id="C27.S10.p2.m1">k</Math> ) can be expressed as a finite Fourier series of the form <Math equation-number="27.10.2" mode="display" xml:id="C27.S10.E2">f(n)=\sum_{m=1}^{k}g(m)e^{2\pi\mathrm{i}mn/k},</Math> where <Math mode="inline" xml:id="C27.S10.p2.m2">g(m)</Math> is also periodic (mod <Math mode="inline" xml:id="C27.S10.p2.m3">k</Math> ), and is given by <Math equation-number="27.10.3" mode="display" xml:id="C27.S10.E3">g(m)=\dfrac{1}{k}\sum_{n=1}^{k}f(n)e^{-2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C27.S10.p2.s2">
+An example is Ramanujan’s sum: <Math equation-number="27.10.4" mode="display" xml:id="C27.S10.E4">c_{k}\left(n\right)=\sum_{m=1}^{k}\chi_{1}\left(m\right)e^{2\pi\mathrm{i}mn/k},</Math> where <Math mode="inline" xml:id="C27.S10.p2.m4">\chi_{1}</Math> is the principal character (mod <Math mode="inline" xml:id="C27.S10.p2.m5">k</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C27.S10.p2.s3">
+This is the sum of the <Math mode="inline" xml:id="C27.S10.p2.m6">n</Math> th powers of the primitive <Math mode="inline" xml:id="C27.S10.p2.m7">k</Math> th roots of unity.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C27.S10.p2.s4">
+It can also be expressed in terms of the Möbius function as a divisor sum: <Math equation-number="27.10.5" mode="display" xml:id="C27.S10.E5">c_{k}\left(n\right)=\sum_{d\mathbin{|}\left(n,k\right)}d\mu\left(\frac{k}{d} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C27.S10.p3.s1">
+More generally, if <Math mode="inline" xml:id="C27.S10.p3.m1">f</Math> and <Math mode="inline" xml:id="C27.S10.p3.m2">g</Math> are arbitrary, then the sum <Math equation-number="27.10.6" mode="display" xml:id="C27.S10.E6">s_{k}(n)=\sum_{d\mathbin{|}\left(n,k\right)}f(d)g\left(\frac{k}{d}\right)</Math> is a periodic function of <Math mode="inline" xml:id="C27.S10.p3.m3">n\pmod{k}</Math> and has the finite Fourier-series expansion <Math equation-number="27.10.7" mode="display" xml:id="C27.S10.E7">s_{k}(n)=\sum_{m=1}^{k}a_{k}(m)e^{2\pi\mathrm{i}mn/k},</Math> where <Math equation-number="27.10.8" mode="display" xml:id="C27.S10.E8">a_{k}(m)=\sum_{d\mathbin{|}\left(m,k\right)}g(d)f\left(\frac{k}{d}\right)\frac {d}{k}</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S10.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C27.S10.p4.s1">
+Another generalization of Ramanujan’s sum is the Gauss sum <Math mode="inline" xml:id="C27.S10.p4.m1">G\left(n,\chi\right)</Math> associated with a Dirichlet character <Math mode="inline" xml:id="C27.S10.p4.m2">\chi\pmod{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C27.S10.p4.s2">
+It is defined by the relation <Math equation-number="27.10.9" mode="display" xml:id="C27.S10.E9">G\left(n,\chi\right)=\sum_{m=1}^{k}\chi\left(m\right)e^{2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C27.S10.p4.s3">
+In particular, <Math mode="inline" xml:id="C27.S10.p4.m3">G\left(n,\chi_{1}\right)=c_{k}\left(n\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C27.S10.p5.s1">
+ <Math mode="inline" xml:id="C27.S10.p5.m1">G\left(n,\chi\right)</Math> is separable for some <Math mode="inline" xml:id="C27.S10.p5.m2">n</Math> if <Math equation-number="27.10.10" mode="display" xml:id="C27.S10.E10">G\left(n,\chi\right)=\overline{\chi}(n)G\left(1,\chi\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C27.S10.p6.s1">
+For any Dirichlet character <Math mode="inline" xml:id="C27.S10.p6.m1">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S10.p6.m2">G\left(n,\chi\right)</Math> is separable for <Math mode="inline" xml:id="C27.S10.p6.m3">n</Math> if <Math mode="inline" xml:id="C27.S10.p6.m4">\left(n,k\right)=1</Math> , and is separable for every <Math mode="inline" xml:id="C27.S10.p6.m5">n</Math> if and only if <Math mode="inline" xml:id="C27.S10.p6.m6">G\left(n,\chi\right)=0</Math> whenever <Math mode="inline" xml:id="C27.S10.p6.m7">\left(n,k\right)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C27.S10.p6.s2">
+For a primitive character <Math mode="inline" xml:id="C27.S10.p6.m8">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S10.p6.m9">G\left(n,\chi\right)</Math> is separable for every <Math mode="inline" xml:id="C27.S10.p6.m10">n</Math> , and <Math equation-number="27.10.11" mode="display" xml:id="C27.S10.E11">|G\left(1,\chi\right)|^{2}=k</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C27.S10.p7.s1">
+Conversely, if <Math mode="inline" xml:id="C27.S10.p7.m1">G\left(n,\chi\right)</Math> is separable for every <Math mode="inline" xml:id="C27.S10.p7.m2">n</Math> , then <Math mode="inline" xml:id="C27.S10.p7.m3">\chi</Math> is primitive (mod <Math mode="inline" xml:id="C27.S10.p7.m4">k</Math> ).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S10.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C27.S10.p8.s1">
+The finite Fourier expansion of a primitive Dirichlet character <Math mode="inline" xml:id="C27.S10.p8.m1">\chi\pmod{k}</Math> has the form <Math equation-number="27.10.12" mode="display" xml:id="C27.S10.E12">\chi\left(n\right)=\frac{G\left(1,\chi\right)}{k}\sum_{m=1}^{k}\overline{\chi} (m)e^{-2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+</para>
+ 
+</section>

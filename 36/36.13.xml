@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C36.S13">
+<title>Kelvin’s Ship-Wave Pattern</title>        
+     
+<para xml:id="C36.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C36.S13.p1.s1">
+A ship moving with constant speed <Math mode="inline" xml:id="C36.S13.p1.m1">V</Math> on deep water generates a surface gravity wave. In a reference frame where the ship is at rest we use polar coordinates <Math mode="inline" xml:id="C36.S13.p1.m2">r</Math> and <Math mode="inline" xml:id="C36.S13.p1.m3">\phi</Math> with <Math mode="inline" xml:id="C36.S13.p1.m4">\phi=0</Math> in the direction of the velocity of the water relative to the ship.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C36.S13.p1.s2">
+Then with <Math mode="inline" xml:id="C36.S13.p1.m5">g</Math> denoting the acceleration due to gravity, the wave height is approximately given by <Math equation-number="36.13.1" mode="display" xml:id="C36.S13.E1">z(\phi,\rho)=\int_{-\pi/2}^{\pi/2}\cos\left(\rho\frac{\cos\left(\theta+\phi \right)}{{\cos^{2}}\theta}\right)\mathrm{d}\theta,</Math> where <Math equation-number="36.13.2" mode="display" xml:id="C36.S13.E2">\rho=\ifrac{gr}{V^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C36.S13.p1.s3">
+The integral is of the form of the real part of (36.12.1) with <Math mode="inline" xml:id="C36.S13.p1.m6">y=\phi</Math> , <Math mode="inline" xml:id="C36.S13.p1.m7">u=\theta</Math> , <Math mode="inline" xml:id="C36.S13.p1.m8">g=1</Math> , <Math mode="inline" xml:id="C36.S13.p1.m9">k=\rho</Math> , and <Math equation-number="36.13.3" mode="display" xml:id="C36.S13.E3">f(\theta,\phi)=-\frac{\cos\left(\theta+\phi\right)}{{\cos^{2}}\theta}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C36.S13.p2.s1">
+When <Math mode="inline" xml:id="C36.S13.p2.m1">\rho&gt;1</Math> , that is, everywhere except close to the ship, the integrand oscillates rapidly.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C36.S13.p2.s2">
+There are two stationary points, given by <Math equation-number="36.13.4" mode="display" xml:id="C36.S13.E4">\theta_{+}(\phi)=\tfrac{1}{2}(\operatorname{arcsin}\left(3\sin\phi\right)-\phi),\theta_{-}(\phi)=\tfrac{1}{2}(\pi-\phi-\operatorname{arcsin}\left(3\sin\phi \right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C36.S13.p2.s3">
+These coalesce when <Math equation-number="36.13.5" mode="display" xml:id="C36.S13.E5">|\phi|=\phi_{c}=\operatorname{arcsin}\left(\tfrac{1}{3}\right)=19^{\circ}.47122</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C36.S13.p2.s4">
+This is the angle of the familiar V-shaped wake.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C36.S13.p2.s5">
+The wake is a caustic of the “rays” defined by the dispersion relation (“Hamiltonian”) giving the frequency <Math mode="inline" xml:id="C36.S13.p2.m2">\omega</Math> as a function of wavevector <Math mode="inline" xml:id="C36.S13.p2.m3">\mathbf{k}</Math> : <Math equation-number="36.13.6" mode="display" xml:id="C36.S13.E6">\omega(\mathbf{k})=\sqrt{gk}+\mathbf{V}\cdot\mathbf{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C36.S13.p2.s6">
+Here <Math mode="inline" xml:id="C36.S13.p2.m4">k=|\mathbf{k}|</Math> , and <Math mode="inline" xml:id="C36.S13.p2.m5">\mathbf{V}</Math> is the ship velocity (so that <Math mode="inline" xml:id="C36.S13.p2.m6">\mathrm{V}=|\mathbf{V}|</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C36.S13.p3.s1">
+The disturbance <Math mode="inline" xml:id="C36.S13.p3.m1">z(\rho,\phi)</Math> can be approximated by the method of uniform asymptotic approximation for the case of two coalescing stationary points (36.12.11), using the fact that <Math mode="inline" xml:id="C36.S13.p3.m2">\theta_{\pm}(\phi)</Math> are real for <Math mode="inline" xml:id="C36.S13.p3.m3">|\phi|&lt;\phi_{c}</Math> and complex for <Math mode="inline" xml:id="C36.S13.p3.m4">|\phi|&gt;\phi_{c}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C36.S13.p3.s2">
+(See also §2.4(v).)Then with the definitions (36.12.12), and the real functions <Math equation-number="36.13.7" mode="display" xml:id="C36.S13.E7">u(\phi)=\sqrt{\dfrac{\Delta^{1/2}(\phi)}{2}}\left(\dfrac{1}{\sqrt{f_{+}^{ \prime\prime}(\phi)}}+\dfrac{1}{\sqrt{-f_{-}^{\prime\prime}(\phi)}}\right),v(\phi)=\sqrt{\dfrac{1}{2\Delta^{1/2}(\phi)}}\left(\dfrac{1}{\sqrt{f_{+}^{ \prime\prime}(\phi)}}-\dfrac{1}{\sqrt{-f_{-}^{\prime\prime}(\phi)}}\right),</Math> the disturbance is <Math equation-number="36.13.8" mode="display" xml:id="C36.S13.E8">z(\rho,\phi)=2\pi\left(\rho^{-1/3}u(\phi)\cos\left(\rho\widetilde{f}(\phi) \right)\mathrm{Ai}\left(-\rho^{2/3}\Delta(\phi)\right)\*(1+O\left(1/\rho\right ))+\rho^{-2/3}v(\phi)\sin\left(\rho\widetilde{f}(\phi)\right)\mathrm{Ai}'\left (-\rho^{2/3}\Delta(\phi)\right)\*(1+O\left(1/\rho\right))\right), if \rho\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C36.S13.p3.s3">
+See Figure 36.13.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="13" xml:id="C36.S13.F1.s1">
+Figure 36.13.1: Kelvin’s ship wave pattern, computed from the uniform asymptotic approximation ( ), as a function of <Math mode="inline" xml:id="C36.S13.F1.m1">x=\rho\cos\phi</Math> , <Math mode="inline" xml:id="C36.S13.F1.m2">y=\rho\sin\phi</Math> .
+</sentence>  
+<para xml:id="C36.S13.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C36.S13.p4.s1">
+For further information seeLord Kelvin (1891, 1905) andUrsell (1960, 1994).
+</sentence>
+
+</para>
+    
+</section>

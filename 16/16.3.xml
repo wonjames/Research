@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S3">
+<title>Derivatives and Contiguous Functions</title>         
+<subsection xml:id="C16.S3.SS1">
+<title>Differentiation Formulas</title>        
+ 
+ 
+<para xml:id="C16.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S3.SS1.p1.s1">
+ <Math equation-number="16.3.1" mode="display" xml:id="C16.S3.E1">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}{{}_{p}F_{q}}\left({a_{1},\dots,a_{p }\atop b_{1},\dots,b_{q}};z\right)=\frac{{\left(\mathbf{a}\right)_{n}}}{{\left (\mathbf{b}\right)_{n}}}{{}_{p}F_{q}}\left({a_{1}+n,\dots,a_{p}+n\atop b_{1}+n ,\dots,b_{q}+n};z\right),</Math> <Math equation-number="16.3.2" mode="display" xml:id="C16.S3.E2">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{\gamma}{{}_{p}F_{q}}\left({ a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)\right)={\left(\gamma-n+1 \right)_{n}}z^{\gamma-n}{{}_{p+1}F_{q+1}}\left({\gamma+1,a_{1},\dots,a_{p} \atop\gamma+1-n,b_{1},\dots,b_{q}};z\right),</Math> <Math equation-number="16.3.3" mode="display" xml:id="C16.S3.E3">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{\gamma-1}{{}_{p+1}F_ {q}}\left({\gamma,a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)\right)={ \left(\gamma\right)_{n}}z^{\gamma+n-1}{{}_{p+1}F_{q}}\left({\gamma+n,a_{1}, \dots,a_{p}\atop b_{1},\dots,b_{q}};z\right),</Math> <Math equation-number="16.3.4" mode="display" xml:id="C16.S3.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{\gamma-1}{{}_{p}F_{q+1}} \left({a_{1},\dots,a_{p}\atop\gamma,b_{1},\dots,b_{q}};z\right)\right)={\left( \gamma-n\right)_{n}}z^{\gamma-n-1}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop \gamma-n,b_{1},\dots,b_{q}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S3.SS1.p1.s2">
+Other versions of these identities can be constructed with the aid of the operator identity <Math equation-number="16.3.5" mode="display" xml:id="C16.S3.E5">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}=z^{n}\frac{{\mathrm{d}}^{n}} {{\mathrm{d}z}^{n}}z^{n}, if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S3.SS2">
+<title>Contiguous Functions</title>          
+<para xml:id="C16.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C16.S3.SS2.p1.s1">
+Two generalized hypergeometric functions <Math mode="inline" xml:id="C16.S3.SS2.p1.m1">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> are (generalized) contiguous if they have the same pair of values of <Math mode="inline" xml:id="C16.S3.SS2.p1.m2">p</Math> and <Math mode="inline" xml:id="C16.S3.SS2.p1.m3">q</Math> , and corresponding parameters differ by integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C16.S3.SS2.p1.s2">
+If <Math mode="inline" xml:id="C16.S3.SS2.p1.m4">p\leq q+1</Math> , then any <Math mode="inline" xml:id="C16.S3.SS2.p1.m5">q+2</Math> distinct contiguous functions are linearly related. Examples are provided by the following recurrence relations: <Math equation-number="16.3.6" mode="display" xml:id="C16.S3.E6">z{{}_{0}F_{1}}\left(-;b+1;z\right)+b(b-1){{}_{0}F_{1}}\left(-;b;z\right)-b(b-1 ){{}_{0}F_{1}}\left(-;b-1;z\right)=0,</Math> <Math equation-number="16.3.7" mode="display" xml:id="C16.S3.E7">{{}_{3}F_{2}}\left({a_{1}+2,a_{2},a_{3}\atop b_{1},b_{2}};z\right)a_{1}(a_{1}+ 1)(1-z)+{{}_{3}F_{2}}\left({a_{1}+1,a_{2},a_{3}\atop b_{1},b_{2}};z\right)a_{1 }\left(b_{1}+b_{2}-3a_{1}-2+z(2a_{1}-a_{2}-a_{3}+1)\right)+{{}_{3}F_{2}}\left( {a_{1},a_{2},a_{3}\atop b_{1},b_{2}};z\right)\left((2a_{1}-b_{1})(2a_{1}-b_{2} )+a_{1}-a_{1}^{2}-z(a_{1}-a_{2})(a_{1}-a_{3})\right)-{{}_{3}F_{2}}\left({a_{1} -1,a_{2},a_{3}\atop b_{1},b_{2}};z\right)(a_{1}-b_{1})(a_{1}-b_{2})=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C16.S3.SS2.p2.s1">
+For further examples see §§13.3(i), 15.5(ii), and the following references: Rainville (1960, §48),Wimp (1968), and Luke (1975, §5.13).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

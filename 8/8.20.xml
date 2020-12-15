@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S20">
+<title>Asymptotic Expansions of <Math mode="inline" xml:id="C8.S20.m1">E_{p}\left(z\right)</Math></title>         
+<subsection xml:id="C8.S20.SS1">
+<title>Large <Math mode="inline" xml:id="C8.S20.SS1.m1">z</Math></title>          
+<para xml:id="C8.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S20.SS1.p1.s1">
+ <Math equation-number="8.20.1" mode="display" xml:id="C8.S20.E1">E_{p}\left(z\right)=\frac{e^{-z}}{z}\left(\sum_{k=0}^{n-1}(-1)^{k}\frac{{\left (p\right)_{k}}}{z^{k}}+(-1)^{n}\frac{{\left(p\right)_{n}}e^{z}}{z^{n-1}}E_{n+p }\left(z\right)\right), if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S20.SS1.p1.s2">
+As <Math mode="inline" xml:id="C8.S20.SS1.p1.m1">z\to\infty</Math> <Math equation-number="8.20.2" mode="display" xml:id="C8.S20.E2">E_{p}\left(z\right)\sim\frac{e^{-z}}{z}\sum_{k=0}^{\infty}(-1)^{k}\frac{{\left (p\right)_{k}}}{z^{k}}, if |\operatorname{ph}z|\leq\frac{3}{2}\pi-\delta,</Math> and <Math equation-number="8.20.3" mode="display" xml:id="C8.S20.E3">E_{p}\left(z\right)\sim\pm\frac{2\pi i}{\Gamma\left(p\right)}e^{\mp p\pi i}z^{ p-1}+\frac{e^{-z}}{z}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(p\right)_{k}}}{z^ {k}}, if \tfrac{1}{2}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{7}{2}\pi-\delta,</Math> <Math mode="inline" xml:id="C8.S20.SS1.p1.m2">\delta</Math> again denoting an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S20.SS1.p1.s3">
+Where the sectors of validity of (8.20.2) and (8.20.3)overlap the contribution of the first term on the right-hand side of (8.20.3) is exponentially small compared to the other contribution; compare §2.11(ii).
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C8.S20.SS1.p2.s1">
+For an exponentially-improved asymptotic expansion of <Math mode="inline" xml:id="C8.S20.SS1.p2.m1">E_{p}\left(z\right)</Math> see §2.11(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S20.SS2">
+<title>Large <Math mode="inline" xml:id="C8.S20.SS2.m1">p</Math></title>          
+<para xml:id="C8.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S20.SS2.p1.s1">
+For <Math mode="inline" xml:id="C8.S20.SS2.p1.m1">x\geq 0</Math> and <Math mode="inline" xml:id="C8.S20.SS2.p1.m2">p&gt;1</Math> let <Math mode="inline" xml:id="C8.S20.SS2.p1.m3">x=\lambda p</Math> and define <Math mode="inline" xml:id="C8.S20.SS2.p1.m4">A_{0}(\lambda)=1</Math> , <Math equation-number="8.20.4" mode="display" xml:id="C8.S20.E4">A_{k+1}(\lambda)=(1-2k\lambda)A_{k}(\lambda)+\lambda(\lambda+1)\frac{\mathrm{d }A_{k}(\lambda)}{\mathrm{d}\lambda}, if k=0,1,2,\dots,</Math> so that <Math mode="inline" xml:id="C8.S20.SS2.p1.m5">A_{k}(\lambda)</Math> is a polynomial in <Math mode="inline" xml:id="C8.S20.SS2.p1.m6">\lambda</Math> of degree <Math mode="inline" xml:id="C8.S20.SS2.p1.m7">k-1</Math> when <Math mode="inline" xml:id="C8.S20.SS2.p1.m8">k\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C8.S20.SS2.p1.s2">
+In particular, <Math equation-number="8.20.5" mode="display" xml:id="C8.S20.E5">A_{1}(\lambda)=1,A_{2}(\lambda)=1-2\lambda,A_{3}(\lambda)=1-8\lambda+6\lambda^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C8.S20.SS2.p1.s3">
+Then as <Math mode="inline" xml:id="C8.S20.SS2.p1.m9">p\to\infty</Math> <Math equation-number="8.20.6" mode="display" xml:id="C8.S20.E6">E_{p}\left(\lambda p\right)\sim\frac{e^{-\lambda p}}{(\lambda+1)p}\sum_{k=0}^{ \infty}\frac{A_{k}(\lambda)}{(\lambda+1)^{2k}}\frac{1}{p^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S20.SS2.p1.m10">\lambda\in[0,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S20.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C8.S20.SS2.p2.s1">
+For further information, including extensions to complex values of <Math mode="inline" xml:id="C8.S20.SS2.p2.m1">x</Math> and <Math mode="inline" xml:id="C8.S20.SS2.p2.m2">p</Math> , see Temme (1994b, §4) and Dunster (1996b, 1997).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

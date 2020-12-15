@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C21.S2">
+<title>Definitions</title>        
+ 
+<subsection xml:id="C21.S2.SS1">
+<title>Riemann Theta Functions</title>        
+    
+<para xml:id="C21.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C21.S2.SS1.p1.s1">
+ <Math equation-number="21.2.1" mode="display" xml:id="C21.S2.E1">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\sum_{\mathbf{n}\in {\mathbb{Z}^{g}}}e^{2\pi i\left(\frac{1}{2}\mathbf{n}\cdot\boldsymbol{{\Omega} }\cdot\mathbf{n}+\mathbf{n}\cdot\mathbf{z}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C21.S2.SS1.p1.s2">
+This <Math mode="inline" xml:id="C21.S2.SS1.p1.m1">g</Math> -tuple Fourier series converges absolutely and uniformly on compact sets of the <Math mode="inline" xml:id="C21.S2.SS1.p1.m2">\mathbf{z}</Math> and <Math mode="inline" xml:id="C21.S2.SS1.p1.m3">\boldsymbol{{\Omega}}</Math> spaces; hence <Math mode="inline" xml:id="C21.S2.SS1.p1.m4">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is an analytic function of (each element of) <Math mode="inline" xml:id="C21.S2.SS1.p1.m5">\mathbf{z}</Math> and (each element of) <Math mode="inline" xml:id="C21.S2.SS1.p1.m6">\boldsymbol{{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C21.S2.SS1.p1.s3">
+<Math mode="inline" xml:id="C21.S2.SS1.p1.m7">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is also referred to as a thetafunction with <Math mode="inline" xml:id="C21.S2.SS1.p1.m8">g</Math> components, a <Math mode="inline" xml:id="C21.S2.SS1.p1.m9">g</Math> -dimensional theta function or as a genus <Math mode="inline" xml:id="C21.S2.SS1.p1.m10">g</Math> theta function.
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C21.S2.SS1.p2.s1">
+For numerical purposes we use the scaled Riemann theta function <Math mode="inline" xml:id="C21.S2.SS1.p2.m1">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> , defined by (Deconinck et al. (2004)), <Math equation-number="21.2.2" mode="display" xml:id="C21.S2.E2">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=e^{-\pi[\Im \mathbf{z}]\cdot[\Im\boldsymbol{{\Omega}}]^{-1}\cdot[\Im\mathbf{z}]}\theta \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C21.S2.SS1.p2.s2">
+<Math mode="inline" xml:id="C21.S2.SS1.p2.m2">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is a bounded nonanalytic function of <Math mode="inline" xml:id="C21.S2.SS1.p2.m3">\mathbf{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C21.S2.SS1.p2.s3">
+Many applications involve quotients of Riemann theta functions: the exponential factor then disappears.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C21.S2.SS1.p2.s4">
+See also §21.10(i).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C21.S2.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C21.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C21.S2.Px1.p1.s1">
+ <Math equation-number="21.2.3" mode="display" xml:id="C21.S2.E3">\theta\left(z_{1},z_{2}\middle|\begin{bmatrix}i&amp;-\tfrac{1}{2}\\ -\tfrac{1}{2}&amp;i\end{bmatrix}\right)=\sum_{n_{1}=-\infty}^{\infty}\sum_{n_{2}=- \infty}^{\infty}e^{-\pi(n_{1}^{2}+n_{2}^{2})}e^{-i\pi n_{1}n_{2}}e^{2\pi i(n_{ 1}z_{1}+n_{2}z_{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C21.S2.Px1.p1.s2">
+With <Math mode="inline" xml:id="C21.S2.Px1.p1.m1">z_{1}=x_{1}+iy_{1}</Math> , <Math mode="inline" xml:id="C21.S2.Px1.p1.m2">z_{2}=x_{2}+iy_{2}</Math> , <Math equation-number="21.2.4" mode="display" xml:id="C21.S2.E4">\hat{\theta}\left(x_{1}+iy_{1},x_{2}+iy_{2}\middle|\begin{bmatrix}i&amp;-\tfrac{1} {2}\\ -\tfrac{1}{2}&amp;i\end{bmatrix}\right)=\sum_{n_{1}=-\infty}^{\infty}\sum_{n_{2}=- \infty}^{\infty}e^{-\pi(n_{1}+y_{1})^{2}-\pi(n_{2}+y_{2})^{2}}\*e^{\pi i(2n_{1 }x_{1}+2n_{2}x_{2}-n_{1}n_{2})}</Math>.
+</sentence>
+
+</para>
+    
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S2.SS2">
+<title>Riemann Theta Functions with Characteristics</title>            
+<para xml:id="C21.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C21.S2.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C21.S2.SS2.p1.m1">\boldsymbol{{\alpha}},\boldsymbol{{\beta}}\in{\mathbb{R}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C21.S2.SS2.p1.s2">
+Define <Math equation-number="21.2.5" mode="display" xml:id="C21.S2.E5">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\sum_{\mathbf{n}\in{ \mathbb{Z}^{g}}}e^{2\pi i\left(\frac{1}{2}[\mathbf{n}+\boldsymbol{{\alpha}}] \cdot\boldsymbol{{\Omega}}\cdot[\mathbf{n}+\boldsymbol{{\alpha}}]+[\mathbf{n}+ \boldsymbol{{\alpha}}]\cdot[\mathbf{z}+\boldsymbol{{\beta}}]\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C21.S2.SS2.p1.s3">
+This function is referred to as a Riemann theta function with characteristics <Math mode="inline" xml:id="C21.S2.SS2.p1.m2">\begin{bmatrix}\boldsymbol{{\alpha}}\\ \boldsymbol{{\beta}}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C21.S2.SS2.p1.s4">
+It is a translation of the Riemann theta function (21.2.1), multiplied by an exponential factor: <Math equation-number="21.2.6" mode="display" xml:id="C21.S2.E6">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=e^{2\pi i\left(\frac{1}{2 }\boldsymbol{{\alpha}}\cdot\boldsymbol{{\Omega}}\cdot\boldsymbol{{\alpha}}+ \boldsymbol{{\alpha}}\cdot[\mathbf{z}+\boldsymbol{{\beta}}]\right)}\theta\left (\mathbf{z}+\boldsymbol{{\Omega}}\boldsymbol{{\alpha}}+\boldsymbol{{\beta}} \middle|\boldsymbol{{\Omega}}\right),</Math> and <Math equation-number="21.2.7" mode="display" xml:id="C21.S2.E7">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{0}}}{\boldsymbol{{0}}}\left(\mathbf {z}\middle|\boldsymbol{{\Omega}}\right)=\theta\left(\mathbf{z}\middle| \boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C21.S2.SS2.p1.s5">
+Characteristics whose elements are either <Math mode="inline" xml:id="C21.S2.SS2.p1.m3">0</Math> or <Math mode="inline" xml:id="C21.S2.SS2.p1.m4">\tfrac{1}{2}</Math> are calledhalf-period characteristics.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="15" xml:id="C21.S2.SS2.p1.s6">
+For given <Math mode="inline" xml:id="C21.S2.SS2.p1.m5">\boldsymbol{{\Omega}}</Math> , there are <Math mode="inline" xml:id="C21.S2.SS2.p1.m6">2^{2g}</Math> <Math mode="inline" xml:id="C21.S2.SS2.p1.m7">g</Math> -dimensional Riemann theta functions with half-period characteristics.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S2.SS3">
+<title>Relation to Classical Theta Functions</title>          
+<para xml:id="C21.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C21.S2.SS3.p1.s1">
+For <Math mode="inline" xml:id="C21.S2.SS3.p1.m1">g=1</Math> , and with the notation of §20.2(i),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C21.S2.SS3.p1.s2">
+<Math equation-number="21.2.8" mode="display" xml:id="C21.S2.E8">\theta\left(z\middle|\Omega\right)=\theta_{3}\left(\pi z\middle|\Omega\right),</Math> <Math equation-number="21.2.9" mode="display" xml:id="C21.S2.E9">\theta_{1}\left(\pi z\middle|\Omega\right)=-\theta\genfrac{[}{]}{0.0pt}{}{ \frac{1}{2}}{\frac{1}{2}}\left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.10" mode="display" xml:id="C21.S2.E10">\theta_{2}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{ \tfrac{1}{2}}{0}\left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.11" mode="display" xml:id="C21.S2.E11">\theta_{3}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{0}{0} \left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.12" mode="display" xml:id="C21.S2.E12">\theta_{4}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{0}{ \tfrac{1}{2}}\left(z\middle|\Omega\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

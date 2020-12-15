@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S28">
+<title>Integrals, Integral Representations, and Integral Equations</title>        
+ 
+<subsection xml:id="C28.S28.SS1">
+<title>Equations with Elementary Kernels</title>        
+      
+<para xml:id="C28.S28.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S28.SS1.p1.s1">
+Let <Math equation-number="28.28.1" mode="display" xml:id="C28.S28.E1">w=\cosh z\cos t\cos\alpha+\sinh z\sin t\sin\alpha</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S28.SS1.p1.s2">
+Then <Math equation-number="28.28.2" mode="display" xml:id="C28.S28.E2">\dfrac{1}{2\pi}\int_{0}^{2\pi}e^{2\mathrm{i}hw}\mathrm{ce}_{n}\left(t,h^{2} \right)\mathrm{d}t={\mathrm{i}^{n}}\mathrm{ce}_{n}\left(\alpha,h^{2}\right){ \mathrm{Mc}^{(1)}_{n}}\left(z,h\right),</Math> <Math equation-number="28.28.3" mode="display" xml:id="C28.S28.E3">\dfrac{1}{2\pi}\int_{0}^{2\pi}e^{2\mathrm{i}hw}\mathrm{se}_{n}\left(t,h^{2} \right)\mathrm{d}t={\mathrm{i}^{n}}\mathrm{se}_{n}\left(\alpha,h^{2}\right){ \mathrm{Ms}^{(1)}_{n}}\left(z,h\right),</Math> <Math equation-number="28.28.4" mode="display" xml:id="C28.S28.E4">\dfrac{\mathrm{i}h}{\pi}\int_{0}^{2\pi}\frac{\partial w}{\partial\alpha}e^{2 \mathrm{i}hw}\mathrm{ce}_{n}\left(t,h^{2}\right)\mathrm{d}t={\mathrm{i}^{n}} \mathrm{ce}_{n}'\left(\alpha,h^{2}\right){\mathrm{Mc}^{(1)}_{n}}\left(z,h \right),</Math> <Math equation-number="28.28.5" mode="display" xml:id="C28.S28.E5">\dfrac{\mathrm{i}h}{\pi}\int_{0}^{2\pi}\frac{\partial w}{\partial\alpha}e^{2 \mathrm{i}hw}\mathrm{se}_{n}\left(t,h^{2}\right)\mathrm{d}t={\mathrm{i}^{n}} \mathrm{se}_{n}'\left(\alpha,h^{2}\right){\mathrm{Ms}^{(1)}_{n}}\left(z,h \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C28.S28.SS1.p2.s1">
+In (28.28.7)–(28.28.9) the paths of integration <Math mode="inline" xml:id="C28.S28.SS1.p2.m1">\mathcal{L}_{j}</Math> are given by <Math equation-number="28.28.6" mode="display" xml:id="C28.S28.E6">\mathcal{L}_{1}\mbox{ : from }-\eta_{1}+\mathrm{i}\infty\mbox{ to }2\pi-\eta_{ 1}+\mathrm{i}\infty,\mathcal{L}_{3}\mbox{ : from }-\eta_{1}+\mathrm{i}\infty\mbox{ to }\eta_{2}- \mathrm{i}\infty,\mathcal{L}_{4}\mbox{ : from }\eta_{2}-\mathrm{i}\infty\mbox{ to }2\pi-\eta_{1 }+\mathrm{i}\infty, </Math> where <Math mode="inline" xml:id="C28.S28.SS1.p2.m2">\eta_{1}</Math> and <Math mode="inline" xml:id="C28.S28.SS1.p2.m3">\eta_{2}</Math> are real constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C28.S28.SS1.p2.s2">
+<Math equation-number="28.28.7" mode="display" xml:id="C28.S28.E7">\dfrac{1}{\pi}\int_{\mathcal{L}_{j}}e^{2\mathrm{i}hw}\mathrm{me}_{\nu}\left(t, h^{2}\right)\mathrm{d}t=e^{\mathrm{i}\nu\pi/{2}}\mathrm{me}_{\nu}\left(\alpha, h^{2}\right){\mathrm{M}^{(j)}_{\nu}}\left(z,h\right), if j=3,4,</Math> <Math equation-number="28.28.8" mode="display" xml:id="C28.S28.E8">\dfrac{1}{\pi}\int_{\mathcal{L}_{j}}2\mathrm{i}h\frac{\partial w}{\partial \alpha}e^{2\mathrm{i}hw}\mathrm{me}_{\nu}\left(t,h^{2}\right)\mathrm{d}t=e^{ \mathrm{i}\nu\pi/{2}}\mathrm{me}_{\nu}'\left(\alpha,h^{2}\right){\mathrm{M}^{( j)}_{\nu}}\left(z,h\right), if j=3,4,</Math> <Math equation-number="28.28.9" mode="display" xml:id="C28.S28.E9">\dfrac{1}{2\pi}\int_{\mathcal{L}_{1}}e^{2\mathrm{i}hw}\mathrm{me}_{\nu}\left(t ,h^{2}\right)\mathrm{d}t=e^{\mathrm{i}\nu\pi/{2}}\mathrm{me}_{\nu}\left(\alpha ,h^{2}\right){\mathrm{M}^{(1)}_{\nu}}\left(z,h\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S28.SS1.p3.s1">
+In (28.28.11)–(28.28.14)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C28.S28.SS1.p3.s2">
+<Math equation-number="28.28.10" mode="display" xml:id="C28.S28.E10">0&lt;\operatorname{ph}\left(h(\cosh z\pm 1)\right)&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C28.S28.SS1.p3.s3">
+<Math equation-number="28.28.11" mode="display" xml:id="C28.S28.E11">\int_{0}^{\infty}e^{2\mathrm{i}h\cosh z\cosh t}\mathrm{Ce}_{\nu}\left(t,h^{2} \right)\mathrm{d}t=\tfrac{1}{2}\pi\mathrm{i}e^{\mathrm{i}\nu\pi}\mathrm{ce}_{ \nu}\left(0,h^{2}\right){\mathrm{M}^{(3)}_{\nu}}\left(z,h\right),</Math> <Math equation-number="28.28.12" mode="display" xml:id="C28.S28.E12">\int_{0}^{\infty}e^{2\mathrm{i}h\cosh z\cosh t}\sinh z\sinh t\mathrm{Se}_{\nu} \left(t,h^{2}\right)\mathrm{d}t=-\dfrac{\pi}{4h}e^{\mathrm{i}\nu\pi/{2}} \mathrm{se}_{\nu}'\left(0,h^{2}\right){\mathrm{M}^{(3)}_{\nu}}\left(z,h\right),</Math> <Math equation-number="28.28.13" mode="display" xml:id="C28.S28.E13">\int_{0}^{\infty}e^{2\mathrm{i}h\cosh z\cosh t}\sinh z\sinh t\mathrm{Fe}_{m} \left(t,h^{2}\right)\mathrm{d}t=-\dfrac{\pi}{4h}{\mathrm{i}^{m}}\mathrm{fe}_{m }'\left(0,h^{2}\right){\mathrm{Mc}^{(3)}_{m}}\left(z,h\right),</Math> <Math equation-number="28.28.14" mode="display" xml:id="C28.S28.E14">\int_{0}^{\infty}e^{2\mathrm{i}h\cosh z\cosh t}\mathrm{Ge}_{m}\left(t,h^{2} \right)\mathrm{d}t=\tfrac{1}{2}\pi{\mathrm{i}^{m+1}}\mathrm{ge}_{m}\left(0,h^{ 2}\right){\mathrm{Ms}^{(3)}_{m}}\left(z,h\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C28.S28.SS1.p3.s4">
+In particular, when <Math mode="inline" xml:id="C28.S28.SS1.p3.m1">h&gt;0</Math> the integrals (28.28.11),(28.28.14) converge absolutely and uniformly in the half strip <Math mode="inline" xml:id="C28.S28.SS1.p3.m2">\Re z\geq 0</Math> , <Math mode="inline" xml:id="C28.S28.SS1.p3.m3">0\leq\Im z\leq\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C28.S28.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C28.S28.SS1.p4.s1">
+ <Math equation-number="28.28.15" mode="display" xml:id="C28.S28.E15">\int_{0}^{\infty}\cos\left(2h\cos y\cosh t\right)\mathrm{Ce}_{2n}\left(t,h^{2} \right)\mathrm{d}t=(-1)^{n+1}\tfrac{1}{2}\pi{\mathrm{Mc}^{(2)}_{2n}}\left(0,h \right)\mathrm{ce}_{2n}\left(y,h^{2}\right),</Math> <Math equation-number="28.28.16" mode="display" xml:id="C28.S28.E16">\int_{0}^{\infty}\sin\left(2h\cos y\cosh t\right)\mathrm{Ce}_{2n}\left(t,h^{2} \right)\mathrm{d}t=-\dfrac{\pi A_{0}^{2n}(h^{2})}{2\mathrm{ce}_{2n}\left(\frac {1}{2}\pi,h^{2}\right)}\*\left(\mathrm{ce}_{2n}\left(y,h^{2}\right)\mp\dfrac{2 }{\pi C_{2n}(h^{2})}\mathrm{fe}_{2n}\left(y,h^{2}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C28.S28.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C28.S28.SS1.p5.s1">
+where the upper or lower sign is taken according as <Math mode="inline" xml:id="C28.S28.SS1.p5.m1">0\leq y\leq\pi</Math> or <Math mode="inline" xml:id="C28.S28.SS1.p5.m2">\pi\leq y\leq 2\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C28.S28.SS1.p5.s2">
+For <Math mode="inline" xml:id="C28.S28.SS1.p5.m3">A_{0}^{2n}(q)</Math> and <Math mode="inline" xml:id="C28.S28.SS1.p5.m4">C_{2n}(q)</Math> see §§28.4 and28.5(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C28.S28.SS1.p6.s1">
+For details and further equations see Meixner et al. (1980, §2.1.1)andSips (1970).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S28.SS2">
+<title>Integrals of Products with Bessel Functions</title>         
+ 
+<para xml:id="C28.S28.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C28.S28.SS2.p1.s1">
+With the notations of §28.4 for <Math mode="inline" xml:id="C28.S28.SS2.p1.m1">A_{m}^{n}(q)</Math> and <Math mode="inline" xml:id="C28.S28.SS2.p1.m2">B_{m}^{n}(q)</Math> , §28.14 for <Math mode="inline" xml:id="C28.S28.SS2.p1.m3">c_{n}^{\nu}(q)</Math> , and (28.23.1) for <Math mode="inline" xml:id="C28.S28.SS2.p1.m4">\mathcal{C}_{\mu}^{(j)}</Math> , <Math mode="inline" xml:id="C28.S28.SS2.p1.m5">j=1,2,3,4</Math> , <Math equation-number="28.28.17" mode="display" xml:id="C28.S28.E17">\dfrac{1}{\pi}\int_{0}^{\pi}\mathcal{C}^{(j)}_{\nu+2s}(2hR)e^{-\mathrm{i}(\nu+ 2s)\phi}\mathrm{me}_{\nu}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{s}c^{\nu}_{2s}( h^{2}){\mathrm{M}^{(j)}_{\nu}}\left(z,h\right), if s\in\mathbb{Z},</Math> where <Math mode="inline" xml:id="C28.S28.SS2.p1.m6">R=R(z,t)</Math> and <Math mode="inline" xml:id="C28.S28.SS2.p1.m7">\phi=\phi(z,t)</Math> are analytic functions for <Math mode="inline" xml:id="C28.S28.SS2.p1.m8">\Re z&gt;0</Math> and real <Math mode="inline" xml:id="C28.S28.SS2.p1.m9">t</Math> with <Math equation-number="28.28.18" mode="display" xml:id="C28.S28.E18">R(z,t)=\left(\tfrac{1}{2}(\cosh\left(2z\right)+\cos\left(2t\right))\right)^{ \ifrac{1}{2}},R(z,0)=\cosh z,</Math> and <Math equation-number="28.28.19" mode="display" xml:id="C28.S28.E19">e^{2\mathrm{i}\phi}=\dfrac{\cosh\left(z+\mathrm{i}t\right)}{\cosh\left(z- \mathrm{i}t\right)},\phi(z,0)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C28.S28.SS2.p2.s1">
+In particular, for integer <Math mode="inline" xml:id="C28.S28.SS2.p2.m1">\nu</Math> and <Math mode="inline" xml:id="C28.S28.SS2.p2.m2">\ell=0,1,2,\dots</Math> , <Math equation-number="28.28.20" mode="display" xml:id="C28.S28.E20">\dfrac{2}{\pi}\int_{0}^{\pi}\mathcal{C}^{(j)}_{2\ell}(2hR)\cos\left(2\ell\phi \right)\mathrm{ce}_{2m}\left(t,h^{2}\right)\mathrm{d}t=\varepsilon_{\ell}(-1)^ {\ell+m}A^{2m}_{2\ell}(h^{2}){\mathrm{Mc}^{(j)}_{2m}}\left(z,h\right),</Math> where again <Math mode="inline" xml:id="C28.S28.SS2.p2.m3">\varepsilon_{0}=2</Math> and <Math mode="inline" xml:id="C28.S28.SS2.p2.m4">\varepsilon_{\ell}=1</Math> , <Math mode="inline" xml:id="C28.S28.SS2.p2.m5">\ell=1,2,3,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C28.S28.SS2.p2.s2">
+<Math equation-number="28.28.21" mode="display" xml:id="C28.S28.E21">\dfrac{4}{\pi}\int_{0}^{\pi/2}\mathcal{C}^{(j)}_{2\ell+1}(2hR)\cos\left((2\ell +1)\phi\right)\mathrm{ce}_{2m+1}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{\ell+m}A ^{2m+1}_{2\ell+1}(h^{2}){\mathrm{Mc}^{(j)}_{2m+1}}\left(z,h\right),</Math> <Math equation-number="28.28.22" mode="display" xml:id="C28.S28.E22">\dfrac{4}{\pi}\int_{0}^{\pi/2}\mathcal{C}^{(j)}_{2\ell+1}(2hR)\sin\left((2\ell +1)\phi\right)\mathrm{se}_{2m+1}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{\ell+m}B ^{2m+1}_{2\ell+1}(h^{2}){\mathrm{Ms}^{(j)}_{2m+1}}\left(z,h\right),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C28.S28.SS2.p3.s1">
+ <Math equation-number="28.28.23" mode="display" xml:id="C28.S28.E23">\dfrac{2}{\pi}\int_{0}^{\pi}\mathcal{C}^{(j)}_{2\ell+2}(2hR)\sin\left((2\ell+2 )\phi\right)\mathrm{se}_{2m+2}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{\ell+m}B^{ 2m+2}_{2\ell+2}(h^{2}){\mathrm{Ms}^{(j)}_{2m+2}}\left(z,h\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S28.SS3">
+<title>Integrals of Products of Mathieu Functions of Noninteger Order</title>        
+ 
+<para xml:id="C28.S28.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C28.S28.SS3.p1.s1">
+With the parameter <Math mode="inline" xml:id="C28.S28.SS3.p1.m1">h</Math> suppressed we use the notation <Math equation-number="28.28.24" mode="display" xml:id="C28.S28.E24">\mathrm{D}_{0}\left(\nu,\mu,z\right)={\mathrm{M}^{(3)}_{\nu}}\left(z\right){ \mathrm{M}^{(4)}_{\mu}}\left(z\right)-{\mathrm{M}^{(4)}_{\nu}}\left(z\right){ \mathrm{M}^{(3)}_{\mu}}\left(z\right),\mathrm{D}_{1}\left(\nu,\mu,z\right)={\mathrm{M}^{(3)}_{\nu}}'\left(z\right){ \mathrm{M}^{(4)}_{\mu}}\left(z\right)-{\mathrm{M}^{(4)}_{\nu}}'\left(z\right){ \mathrm{M}^{(3)}_{\mu}}\left(z\right),</Math> and assume <Math mode="inline" xml:id="C28.S28.SS3.p1.m2">\nu\notin\mathbb{Z}</Math> and <Math mode="inline" xml:id="C28.S28.SS3.p1.m3">m\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C28.S28.SS3.p1.s2">
+Then <Math equation-number="28.28.25" mode="display" xml:id="C28.S28.E25">\dfrac{\sinh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\mathrm{me}_{\nu}\left(t,h ^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2} }t}\mathrm{d}t=(-1)^{m+1}\mathrm{i}h\alpha^{(0)}_{\nu,m}\mathrm{D}_{0}\left( \nu,\nu+2m+1,z\right),</Math> <Math equation-number="28.28.26" mode="display" xml:id="C28.S28.E26">\dfrac{\cosh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin t\mathrm{me}_{\nu}\left(t,h ^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2} }t}\mathrm{d}t=(-1)^{m+1}\mathrm{i}h\alpha^{(1)}_{\nu,m}\mathrm{D}_{0}\left( \nu,\nu+2m+1,z\right),</Math> where <Math equation-number="28.28.27" mode="display" xml:id="C28.S28.E27">\alpha^{(0)}_{\nu,m}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\cos t\mathrm{me}_{\nu} \left(t,h^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)\mathrm{d}t=(-1 )^{m}\dfrac{2\mathrm{i}}{\pi}\dfrac{\mathrm{me}_{\nu}\left(0,h^{2}\right) \mathrm{me}_{-\nu-2m-1}\left(0,h^{2}\right)}{h\mathrm{D}_{0}\left(\nu,\nu+2m+1 ,0\right)},</Math> <Math equation-number="28.28.28" mode="display" xml:id="C28.S28.E28">\alpha^{(1)}_{\nu,m}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\sin t\mathrm{me}_{\nu} \left(t,h^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)\mathrm{d}t=(-1 )^{m+1}\dfrac{2\mathrm{i}}{\pi}\dfrac{\mathrm{me}_{\nu}'\left(0,h^{2}\right) \mathrm{me}_{-\nu-2m-1}\left(0,h^{2}\right)}{h\mathrm{D}_{1}\left(\nu,\nu+2m+1 ,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS3.p2">
+
+</para>
+ 
+<para xml:id="C28.S28.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C28.S28.SS3.p3.s1">
+ <Math equation-number="28.28.29" mode="display" xml:id="C28.S28.E29">\dfrac{\cosh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin t\mathrm{me}_{\nu}'\left(t, h^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2 }}t}\mathrm{d}t=(-1)^{m+1}\mathrm{i}h\alpha^{(0)}_{\nu,m}\mathrm{D}_{1}\left( \nu,\nu+2m+1,z\right),</Math> <Math equation-number="28.28.30" mode="display" xml:id="C28.S28.E30">\dfrac{\sinh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\mathrm{me}_{\nu}'\left(t, h^{2}\right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2 }}t}\mathrm{d}t=(-1)^{m}\mathrm{i}h\alpha^{(1)}_{\nu,m}\mathrm{D}_{1}\left(\nu ,\nu+2m+1,z\right),</Math> <Math equation-number="28.28.31" mode="display" xml:id="C28.S28.E31">\dfrac{2}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\sin t\mathrm{me}_{\nu}\left(t,h ^{2}\right)\mathrm{me}_{-\nu-2m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t }\mathrm{d}t=(-1)^{m}\mathrm{i}\gamma_{\nu,m}\mathrm{D}_{0}\left(\nu,\nu+2m,z \right),</Math> <Math equation-number="28.28.32" mode="display" xml:id="C28.S28.E32">\dfrac{\sinh\left(2z\right)}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\mathrm{me}_{\nu}' \left(t,h^{2}\right)\mathrm{me}_{-\nu-2m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{ \sin^{2}}t}\mathrm{d}t=(-1)^{m+1}\mathrm{i}\gamma_{\nu,m}\mathrm{D}_{1}\left( \nu,\nu+2m,z\right),</Math> where <Math equation-number="28.28.33" mode="display" xml:id="C28.S28.E33">\gamma_{\nu,m}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\mathrm{me}_{\nu}'\left(t\right) \mathrm{me}_{-\nu-2m}\left(t\right)\mathrm{d}t=(-1)^{m}\dfrac{4\mathrm{i}}{\pi }\frac{\mathrm{me}_{\nu}'\left(0\right)\mathrm{me}_{-\nu-2m}\left(0\right)}{ \mathrm{D}_{1}\left(\nu,\nu+2m,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C28.S28.SS3.p4.s1">
+Also, <Math equation-number="28.28.34" mode="display" xml:id="C28.S28.E34">\dfrac{1}{\pi^{2}}\pvint_{0}^{2\pi}\dfrac{\mathrm{me}_{\nu}'\left(t,h^{2} \right)\mathrm{me}_{-\nu-2m-1}\left(t,h^{2}\right)}{\sin t}\mathrm{d}t=(-1)^{m +1}\mathrm{i}h\alpha^{(0)}_{\nu,m}\mathrm{D}_{1}\left(\nu,\nu+2m+1,0\right),</Math> where the integral is a Cauchy principal value (§1.4(v)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S28.SS4">
+<title>Integrals of Products of Mathieu Functions of Integer Order</title>        
+    
+<para xml:id="C28.S28.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C28.S28.SS4.p1.s1">
+Again with the parameter <Math mode="inline" xml:id="C28.S28.SS4.p1.m1">h</Math> suppressed, let <Math equation-number="28.28.35" mode="display" xml:id="C28.S28.E35">\mathrm{Ds}_{0}\left(n,m,z\right)={\mathrm{Ms}^{(3)}_{n}}\left(z\right){ \mathrm{Ms}^{(4)}_{m}}\left(z\right)-{\mathrm{Ms}^{(4)}_{n}}\left(z\right){ \mathrm{Ms}^{(3)}_{m}}\left(z\right),\mathrm{Ds}_{1}\left(n,m,z\right)={\mathrm{Ms}^{(3)}_{n}}'\left(z\right){ \mathrm{Ms}^{(4)}_{m}}\left(z\right)-{\mathrm{Ms}^{(4)}_{n}}'\left(z\right){ \mathrm{Ms}^{(3)}_{m}}\left(z\right),\mathrm{Ds}_{2}\left(n,m,z\right)={\mathrm{Ms}^{(3)}_{n}}'\left(z\right){ \mathrm{Ms}^{(4)}_{m}}'\left(z\right)-{\mathrm{Ms}^{(4)}_{n}}'\left(z\right){ \mathrm{Ms}^{(3)}_{m}}'\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C28.S28.SS4.p1.s2">
+Then <Math equation-number="28.28.36" mode="display" xml:id="C28.S28.E36">\dfrac{\sinh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\mathrm{se}_{n}\left(t,h^{ 2}\right)\mathrm{se}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t}\mathrm {d}t=(-1)^{p+1}\mathrm{i}h\widehat{\alpha}_{n,m}^{(s)}\mathrm{Ds}_{0}\left(n,m ,z\right),</Math> <Math equation-number="28.28.37" mode="display" xml:id="C28.S28.E37">\dfrac{\cosh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin t\mathrm{se}_{n}'\left(t,h^ {2}\right)\mathrm{se}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t} \mathrm{d}t=(-1)^{p+1}\mathrm{i}h\widehat{\alpha}_{n,m}^{(s)}\mathrm{Ds}_{1} \left(n,m,z\right),</Math> where <Math mode="inline" xml:id="C28.S28.SS4.p1.m2">m-n=2p+1</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p1.m3">p\in\mathbb{Z}</Math> ; <Math mode="inline" xml:id="C28.S28.SS4.p1.m4">m,n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C28.S28.SS4.p1.s3">
+Also, <Math equation-number="28.28.38" mode="display" xml:id="C28.S28.E38">\widehat{\alpha}_{n,m}^{(s)}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\cos t\mathrm{se}_{ n}\left(t,h^{2}\right)\mathrm{se}_{m}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{p} \dfrac{2}{\mathrm{i}\pi}\dfrac{\mathrm{se}_{n}'\left(0,h^{2}\right)\mathrm{se} _{m}'\left(0,h^{2}\right)}{h\mathrm{Ds}_{2}\left(n,m,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS4.p2">
+
+</para>
+ 
+<para xml:id="C28.S28.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C28.S28.SS4.p3.s1">
+Let <Math equation-number="28.28.39" mode="display" xml:id="C28.S28.E39">\mathrm{Dc}_{0}\left(n,m,z\right)={\mathrm{Mc}^{(3)}_{n}}\left(z\right){ \mathrm{Mc}^{(4)}_{m}}\left(z\right)-{\mathrm{Mc}^{(4)}_{n}}\left(z\right){ \mathrm{Mc}^{(3)}_{m}}\left(z\right),\mathrm{Dc}_{1}\left(n,m,z\right)={\mathrm{Mc}^{(3)}_{n}}'\left(z\right){ \mathrm{Mc}^{(4)}_{m}}\left(z\right)-{\mathrm{Mc}^{(4)}_{n}}'\left(z\right){ \mathrm{Mc}^{(3)}_{m}}\left(z\right),</Math> <Math equation-number="28.28.40" mode="display" xml:id="C28.S28.E40">\mathrm{Dsc}_{0}\left(n,m,z\right)={\mathrm{Ms}^{(3)}_{n}}\left(z\right){ \mathrm{Mc}^{(4)}_{m}}\left(z\right)-{\mathrm{Ms}^{(4)}_{n}}\left(z\right){ \mathrm{Mc}^{(3)}_{m}}\left(z\right),\mathrm{Dsc}_{1}\left(n,m,z\right)={\mathrm{Ms}^{(3)}_{n}}'\left(z\right){ \mathrm{Mc}^{(4)}_{m}}\left(z\right)-{\mathrm{Ms}^{(4)}_{n}}'\left(z\right){ \mathrm{Mc}^{(3)}_{m}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C28.S28.SS4.p3.s2">
+Then <Math equation-number="28.28.41" mode="display" xml:id="C28.S28.E41">\dfrac{\cosh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin t\mathrm{se}_{n}\left(t,h^{ 2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t}\mathrm {d}t=(-1)^{p+1}\mathrm{i}h\widehat{\beta}_{n,m}\mathrm{Dsc}_{0}\left(n,m,z \right),</Math> <Math equation-number="28.28.42" mode="display" xml:id="C28.S28.E42">\dfrac{\sinh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\mathrm{se}_{n}'\left(t,h^ {2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t} \mathrm{d}t=(-1)^{p}\mathrm{i}h\widehat{\beta}_{n,m}\mathrm{Dsc}_{1}\left(n,m, z\right),</Math> where <Math mode="inline" xml:id="C28.S28.SS4.p3.m1">m-n=2p+1</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p3.m2">p\in\mathbb{Z}</Math> ; <Math mode="inline" xml:id="C28.S28.SS4.p3.m3">m=0,1,2,\dots</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p3.m4">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C28.S28.SS4.p3.s3">
+Also, <Math equation-number="28.28.43" mode="display" xml:id="C28.S28.E43">\widehat{\beta}_{n,m}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\sin t\mathrm{se}_{n}\left (t,h^{2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{p}\dfrac{2 }{\mathrm{i}\pi}\dfrac{\mathrm{se}_{n}'\left(0,h^{2}\right)\mathrm{ce}_{m} \left(0,h^{2}\right)}{h\mathrm{Dsc}_{1}\left(n,m,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C28.S28.SS4.p4.s1">
+Next, <Math equation-number="28.28.44" mode="display" xml:id="C28.S28.E44">\dfrac{1}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin\left(2t\right)\mathrm{se}_{n} \left(t,h^{2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2 }}t}\mathrm{d}t=(-1)^{p}\mathrm{i}\widehat{\gamma}_{n,m}\mathrm{Dsc}_{0}\left( n,m,z\right),</Math> <Math equation-number="28.28.45" mode="display" xml:id="C28.S28.E45">\dfrac{\sinh\left(2z\right)}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\mathrm{se}_{n}' \left(t,h^{2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2 }}t}\mathrm{d}t=(-1)^{p+1}\mathrm{i}\widehat{\gamma}_{n,m}\mathrm{Dsc}_{1} \left(n,m,z\right),</Math> where <Math mode="inline" xml:id="C28.S28.SS4.p4.m1">n-m=2p</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p4.m2">p\in\mathbb{Z}</Math> ; <Math mode="inline" xml:id="C28.S28.SS4.p4.m3">m=0,1,2,\dots</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p4.m4">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C28.S28.SS4.p4.s2">
+Also, <Math equation-number="28.28.46" mode="display" xml:id="C28.S28.E46">\widehat{\gamma}_{n,m}=\dfrac{1}{2\pi}\int_{0}^{2\pi}\mathrm{se}_{n}'\left(t,h ^{2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{p+1}\dfrac{4}{ \mathrm{i}\pi}\dfrac{\mathrm{se}_{n}'\left(0,h^{2}\right)\mathrm{ce}_{m}\left( 0,h^{2}\right)}{\mathrm{Dsc}_{1}\left(n,m,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S28.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C28.S28.SS4.p5.s1">
+Lastly, <Math equation-number="28.28.47" mode="display" xml:id="C28.S28.E47">\dfrac{\sinh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\cos t\mathrm{ce}_{n}\left(t,h^{ 2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t}\mathrm {d}t=(-1)^{p+1}\mathrm{i}h\widehat{\alpha}_{n,m}^{(c)}\mathrm{Dc}_{0}\left(n,m ,z\right),</Math> <Math equation-number="28.28.48" mode="display" xml:id="C28.S28.E48">\dfrac{\cosh z}{\pi^{2}}\int_{0}^{2\pi}\dfrac{\sin t\mathrm{ce}_{n}'\left(t,h^ {2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)}{{\sinh^{2}}z+{\sin^{2}}t} \mathrm{d}t=(-1)^{p+1}\mathrm{i}h\widehat{\alpha}_{n,m}^{(c)}\mathrm{Dc}_{1} \left(n,m,z\right),</Math> where <Math mode="inline" xml:id="C28.S28.SS4.p5.m1">m-n=2p+1</Math> , <Math mode="inline" xml:id="C28.S28.SS4.p5.m2">p\in\mathbb{Z}</Math> ; <Math mode="inline" xml:id="C28.S28.SS4.p5.m3">m,n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C28.S28.SS4.p5.s2">
+Also, <Math equation-number="28.28.49" mode="display" xml:id="C28.S28.E49">\widehat{\alpha}_{n,m}^{(c)}=\frac{1}{2\pi}\int_{0}^{2\pi}\cos t\mathrm{ce}_{n }\left(t,h^{2}\right)\mathrm{ce}_{m}\left(t,h^{2}\right)\mathrm{d}t=(-1)^{p+1} \dfrac{2}{\mathrm{i}\pi}\dfrac{\mathrm{ce}_{n}\left(0,h^{2}\right)\mathrm{ce}_ {m}\left(0,h^{2}\right)}{h\mathrm{Dc}_{0}\left(n,m,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S28.SS5">
+<title>Compendia</title>              
+<para xml:id="C28.S28.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C28.S28.SS5.p1.s1">
+See Prudnikov et al. (1990, pp. 359–368),Gradshteyn and Ryzhik (2000, pp. 755–759), Sips (1970), andMeixner et al. (1980, §2.1.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

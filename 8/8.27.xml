@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S27">
+<title>Approximations</title>         
+<subsection xml:id="C8.S27.SS1">
+<title>Incomplete Gamma Functions</title>          
+<para xml:id="C8.S27.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S27.SS1.p1.s1">
+DiDonato (1978) gives a simple approximation for the function <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m1">F(p,x)=x^{-p}e^{x^{2}/2}\int_{x}^{\infty}e^{-t^{2}/2}t^{p}\mathrm{d}t</Math> (which is related to the incomplete gamma function by a change of variables) for real <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m2">p</Math> and large positive <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m3">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S27.SS1.p1.s2">
+This takes the form <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m4">F(p,x)=4x/h(p,x)</Math> , approximately, where <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m5">h(p,x)=3(x^{2}-p)+\sqrt{(x^{2}-p)^{2}+8(x^{2}+p)}</Math> and is shown to produce an absolute error <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m6">O\left(x^{-7}\right)</Math> as <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m7">x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S27.SS1.p1.s3">
+Luke (1975, §4.3) gives Padé approximation methods, combined with a detailed analysis of the error terms, valid for real and complex variables except on the negative real <Math mode="inline" xml:id="C8.S27.I1.i2.p1.m1">z</Math> -axis.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S27.SS1.p1.s4">
+See alsoTemme (1994b, §3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C8.S27.SS1.p1.s5">
+Luke (1969b, pp. 25, 40–41) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m1">\Gamma\left(a,\omega z\right)</Math> (by specifying parameters) with <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m2">1\leq\omega&lt;\infty</Math> , and <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m3">\gamma\left(a,\omega z\right)</Math> with <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m4">0\leq\omega\leq 1</Math> ; see also Temme (1994b, §3).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C8.S27.SS1.p1.s6">
+Luke (1969b, p. 186) gives hypergeometric polynomial representations that converge uniformly on compact subsets of the <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m1">z</Math> -plane that exclude <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m2">z=0</Math> and are valid for <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m3">\left|\operatorname{ph}z\right|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S27.SS2">
+<title>Generalized Exponential Integral</title>          
+<para xml:id="C8.S27.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C8.S27.SS2.p1.s1">
+Luke (1975, p. 103) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C8.S27.I2.i1.p1.m1">E_{1}\left(x\right)</Math> and related functions for <Math mode="inline" xml:id="C8.S27.I2.i1.p1.m2">x\geq 5</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C8.S27.SS2.p1.s2">
+Luke (1975, p. 106) gives rational and Padé approximations, with remainders, for <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m1">E_{1}\left(z\right)</Math> and <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m2">z^{-1}\int_{0}^{z}t^{-1}(1-e^{-t})\mathrm{d}t</Math> for complex <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m3">z</Math> with <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m4">\left|\operatorname{ph}z\right|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C8.S27.SS2.p1.s3">
+Verbeeck (1970) gives polynomial and rational approximations for <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m1">E_{p}\left(x\right)=(e^{-x}/x)P(z)</Math> , approximately, where <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m2">P(z)</Math> denotes a quotient of polynomials of equal degree in <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m3">z=x^{-1}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

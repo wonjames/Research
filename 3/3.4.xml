@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S4">
+<title>Differentiation</title>         
+<subsection xml:id="C3.S4.SS1">
+<title>Equally-Spaced Nodes</title>          
+<para xml:id="C3.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S4.SS1.p1.s1">
+The Lagrange <Math mode="inline" xml:id="C3.S4.SS1.p1.m1">(n+1)</Math> -point formula is <Math equation-number="3.4.1" mode="display" xml:id="C3.S4.E1">hf^{\prime}_{t}=hf^{\prime}(x_{0}+th)=\sum_{k=n_{0}}^{n_{1}}B_{k}^{n}f_{k}+hR^ {\prime}_{n,t}, if n_{0}&lt;t&lt;n_{1},</Math> and follows from the differentiated form of (3.3.4).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S4.SS1.p1.s2">
+The <Math mode="inline" xml:id="C3.S4.SS1.p1.m2">B_{k}^{n}</Math> are the differentiated Lagrangian interpolation coefficients: <Math equation-number="3.4.2" mode="display" xml:id="C3.S4.E2">B_{k}^{n}=\ifrac{\mathrm{d}A_{k}^{n}}{\mathrm{d}t},</Math> where <Math mode="inline" xml:id="C3.S4.SS1.p1.m3">A_{k}^{n}</Math> is as in (3.3.10).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S4.SS1.p2.s1">
+If <Math mode="inline" xml:id="C3.S4.SS1.p2.m1">f^{(n+2)}(x)</Math> is continuous on the interval <Math mode="inline" xml:id="C3.S4.SS1.p2.m2">I</Math> defined in§3.3(i), then the remainder in (3.4.1) is given by <Math equation-number="3.4.3" mode="display" xml:id="C3.S4.E3">hR^{\prime}_{n,t}=\frac{h^{n+1}}{(n+1)!}\left(f^{(n+1)}(\xi_{0})\frac{\mathrm{ d}}{\mathrm{d}t}\prod_{k=n_{0}}^{n_{1}}(t-k)+f^{(n+2)}(\xi_{1})\prod_{k=n_{0}} ^{n_{1}}(t-k)\right),</Math> where <Math mode="inline" xml:id="C3.S4.SS1.p2.m3">\xi_{0}</Math> and <Math mode="inline" xml:id="C3.S4.SS1.p2.m4">\xi_{1}\in I</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S4.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C3.S4.SS1.p3.s1">
+For the values of <Math mode="inline" xml:id="C3.S4.SS1.p3.m1">n_{0}</Math> and <Math mode="inline" xml:id="C3.S4.SS1.p3.m2">n_{1}</Math> used in the formulas below <Math equation-number="3.4.4" mode="display" xml:id="C3.S4.E4">h\left|R^{\prime}_{n,t}\right|\leq h^{n+1}\left(c_{n}\left|f^{(n+2)}(\xi_{1}) \right|+\frac{1}{n+1}\left|f^{(n+1)}(\xi_{0})\right|\right), if n_{0}&lt;t&lt;n_{1},</Math> where <Math mode="inline" xml:id="C3.S4.SS1.p3.m3">c_{n}</Math> is defined by (3.3.12), with numerical values as in §3.3(ii).
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C3.S4.Px1">
+<title>Two-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C3.S4.Px1.p1.s1">
+ <Math equation-number="3.4.5" mode="display" xml:id="C3.S4.E5">hf^{\prime}_{t}=-f_{0}+f_{1}+hR^{\prime}_{1,t}, if 0&lt;t&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px2">
+<title>Three-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C3.S4.Px2.p1.s1">
+ <Math equation-number="3.4.6" mode="display" xml:id="C3.S4.E6">hf^{\prime}_{t}=-\tfrac{1}{2}(1-2t)f_{-1}-2tf_{0}+\tfrac{1}{2}(1+2t)f_{1}+hR^{ \prime}_{2,t}, if \left|t\right|&lt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S4.Px2.p2">
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px3">
+<title>Four-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C3.S4.Px3.p1.s1">
+ <Math equation-number="3.4.7" mode="display" xml:id="C3.S4.E7">hf^{\prime}_{t}=\sum_{k=-1}^{2}B_{k}^{3}f_{k}+hR^{\prime}_{3,t}, if -1&lt;t&lt;2,</Math> <Math equation-number="3.4.8" mode="display" xml:id="C3.S4.E8">B_{-1}^{3}=-\tfrac{1}{6}(2-6t+3t^{2}),B_{0}^{3}=-\tfrac{1}{2}(1+4t-3t^{2}),B_{1}^{3}=\tfrac{1}{2}(2+2t-3t^{2}),B_{2}^{3}=-\tfrac{1}{6}(1-3t^{2})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px4">
+<title>Five-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C3.S4.Px4.p1.s1">
+ <Math equation-number="3.4.9" mode="display" xml:id="C3.S4.E9">hf^{\prime}_{t}=\sum_{k=-2}^{2}B_{k}^{4}f_{k}+hR^{\prime}_{4,t}, if \left|t\right|&lt;2,</Math> <Math equation-number="3.4.10" mode="display" xml:id="C3.S4.E10">B_{-2}^{4}=\tfrac{1}{12}(1-t-3t^{2}+2t^{3}),B_{-1}^{4}=-\tfrac{1}{6}(4-8t-3t^{2}+4t^{3}),B_{0}^{4}=-\tfrac{1}{2}t(5-2t^{2}),B_{1}^{4}=\tfrac{1}{6}(4+8t-3t^{2}-4t^{3}),B_{2}^{4}=-\tfrac{1}{12}(1+t-3t^{2}-2t^{3})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px5">
+<title>Six-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C3.S4.Px5.p1.s1">
+ <Math equation-number="3.4.11" mode="display" xml:id="C3.S4.E11">hf^{\prime}_{t}=\sum_{k=-2}^{3}B_{k}^{5}f_{k}+hR^{\prime}_{5,t}, if -2&lt;t&lt;3,</Math> <Math equation-number="3.4.12" mode="display" xml:id="C3.S4.E12">B_{-2}^{5}=\tfrac{1}{120}(6-10t-15t^{2}+20t^{3}-5t^{4}),B_{-1}^{5}=-\tfrac{1}{24}(12-32t+3t^{2}+16t^{3}-5t^{4}),B_{0}^{5}=-\tfrac{1}{12}(4+30t-15t^{2}-12t^{3}+5t^{4}),B_{1}^{5}=\tfrac{1}{12}(12+16t-21t^{2}-8t^{3}+5t^{4}),B_{2}^{5}=-\tfrac{1}{24}(6+2t-21t^{2}-4t^{3}+5t^{4}),B_{3}^{5}=\tfrac{1}{120}(4-15t^{2}+5t^{4})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px6">
+<title>Seven-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C3.S4.Px6.p1.s1">
+ <Math equation-number="3.4.13" mode="display" xml:id="C3.S4.E13">hf^{\prime}_{t}=\sum_{k=-3}^{3}B_{k}^{6}f_{k}+hR^{\prime}_{6,t}, if \left|t\right|&lt;3,</Math> <Math equation-number="3.4.14" mode="display" xml:id="C3.S4.E14">B_{-3}^{6}=-\tfrac{1}{720}(12-8t-45t^{2}+20t^{3}+15t^{4}-6t^{5}),B_{-2}^{6}=\tfrac{1}{60}(9-9t-30t^{2}+20t^{3}+5t^{4}-3t^{5}),B_{-1}^{6}=-\tfrac{1}{48}(36-72t-39t^{2}+52t^{3}+5t^{4}-6t^{5}),B_{0}^{6}=-\tfrac{1}{18}t(49-28t^{2}+3t^{4}),B_{1}^{6}=\tfrac{1}{48}(36+72t-39t^{2}-52t^{3}+5t^{4}+6t^{5}),B_{2}^{6}=-\tfrac{1}{60}(9+9t-30t^{2}-20t^{3}+5t^{4}+3t^{5}),B_{3}^{6}=\tfrac{1}{720}(12+8t-45t^{2}-20t^{3}+15t^{4}+6t^{5})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px7">
+<title>Eight-Point Formula</title>  
+ 
+<para xml:id="C3.S4.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C3.S4.Px7.p1.s1">
+ <Math equation-number="3.4.15" mode="display" xml:id="C3.S4.E15">hf^{\prime}_{t}=\sum_{k=-3}^{4}B_{k}^{7}f_{k}+hR^{\prime}_{7,t}, if -3&lt;t&lt;4,</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C3.S4.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S4.Px7.p2.s1">
+ <Math equation-number="3.4.16" mode="display" xml:id="C3.S4.E16">B_{-3}^{7}=-\tfrac{1}{5040}(48-56t-168t^{2}+140t^{3}+35t^{4}-42t^{5}+7t^{6}),B_{-2}^{7}=\tfrac{1}{720}(72-108t-213t^{2}+240t^{3}-10t^{4}-36t^{5}+7t^{6}),B_{-1}^{7}=-\tfrac{1}{240}(144-360t-48t^{2}+260t^{3}-45t^{4}-30t^{5}+7t^{6}),B_{0}^{7}=-\tfrac{1}{144}(36+392t-147t^{2}-224t^{3}+70t^{4}+24t^{5}-7t^{6}),B_{1}^{7}=\tfrac{1}{144}(144+216t-264t^{2}-156t^{3}+85t^{4}+18t^{5}-7t^{6}),B_{2}^{7}=-\tfrac{1}{240}(72+36t-267t^{2}-80t^{3}+90t^{4}+12t^{5}-7t^{6}),B_{3}^{7}=\tfrac{1}{720}(48+8t-192t^{2}-20t^{3}+85t^{4}+6t^{5}-7t^{6}),B_{4}^{7}=-\tfrac{1}{5040}(36-147t^{2}+70t^{4}-7t^{6})</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C3.S4.Px7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C3.S4.Px7.p3.s1">
+For corresponding formulas for second, third, and fourth derivatives, with <Math mode="inline" xml:id="C3.S4.Px7.p3.m1">t=0</Math> , seeCollatz (1960, Table III, pp. 538–539).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C3.S4.Px7.p3.s2">
+For formulas for derivatives with equally-spaced real nodes and based on Sinc approximations (§3.3(vi)), see Stenger (1993, §3.5).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S4.SS2">
+<title>Analytic Functions</title>          
+<para xml:id="C3.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S4.SS2.p1.s1">
+If <Math mode="inline" xml:id="C3.S4.SS2.p1.m1">f</Math> can be extended analytically into the complex plane, then from Cauchy’s integral formula (§1.9(iii))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C3.S4.SS2.p1.s2">
+<Math equation-number="3.4.17" mode="display" xml:id="C3.S4.E17">\frac{1}{k!}\,f^{(k)}(x_{0})=\frac{1}{2\pi i}\int_{C}\frac{f(\zeta)}{(\zeta-x_ {0})^{k+1}}\,\mathrm{d}\zeta,</Math> where <Math mode="inline" xml:id="C3.S4.SS2.p1.m2">C</Math> is a simple closed contour described in the positive rotational sense such that <Math mode="inline" xml:id="C3.S4.SS2.p1.m3">C</Math> and its interior lie in the domain of analyticity of <Math mode="inline" xml:id="C3.S4.SS2.p1.m4">f</Math> , and <Math mode="inline" xml:id="C3.S4.SS2.p1.m5">x_{0}</Math> is interior to <Math mode="inline" xml:id="C3.S4.SS2.p1.m6">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C3.S4.SS2.p1.s3">
+Taking <Math mode="inline" xml:id="C3.S4.SS2.p1.m7">C</Math> to be a circle of radius <Math mode="inline" xml:id="C3.S4.SS2.p1.m8">r</Math> centered at <Math mode="inline" xml:id="C3.S4.SS2.p1.m9">x_{0}</Math> , we obtain <Math equation-number="3.4.18" mode="display" xml:id="C3.S4.E18">\frac{1}{k!}\,f^{(k)}(x_{0})=\frac{1}{2\pi r^{k}}\int_{0}^{2\pi}f(x_{0}+re^{i \theta})e^{-ik\theta}\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C3.S4.SS2.p1.s4">
+The integral on the right-hand side can be approximated by the composite trapezoidal rule (3.5.2).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S4.Px8">
+<title>Example</title>  
+ 
+<para xml:id="C3.S4.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C3.S4.Px8.p1.s1">
+ <Math mode="inline" xml:id="C3.S4.Px8.p1.m1">f(z)=e^{z}</Math> , <Math mode="inline" xml:id="C3.S4.Px8.p1.m2">x_{0}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C3.S4.Px8.p1.s2">
+The integral (3.4.18) becomes <Math equation-number="3.4.19" mode="display" xml:id="C3.S4.E19">\frac{1}{k!}=\frac{1}{2\pi r^{k}}\int_{0}^{2\pi}e^{r\cos\theta}\cos\left(r\sin \theta-k\theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C3.S4.Px8.p1.s3">
+With the choice <Math mode="inline" xml:id="C3.S4.Px8.p1.m3">r=k</Math> (which is crucial when <Math mode="inline" xml:id="C3.S4.Px8.p1.m4">k</Math> is large because of numerical cancellation) the integrand equals <Math mode="inline" xml:id="C3.S4.Px8.p1.m5">e^{k}</Math> at the dominant points <Math mode="inline" xml:id="C3.S4.Px8.p1.m6">\theta=0,2\pi</Math> , and in combination with the factor <Math mode="inline" xml:id="C3.S4.Px8.p1.m7">k^{-k}</Math> in front of the integral sign this gives a rough approximation to <Math mode="inline" xml:id="C3.S4.Px8.p1.m8">1/k</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C3.S4.Px8.p1.s4">
+.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="23" xml:id="C3.S4.Px8.p1.s5">
+The choice <Math mode="inline" xml:id="C3.S4.Px8.p1.m9">r=k</Math> is motivated by saddle-point analysis; see §2.4(iv) or examples in §3.5(ix).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="24" xml:id="C3.S4.Px8.p1.s6">
+As explained in §§3.5(i) and3.5(ix) the composite trapezoidal rule can be very efficient for computing integrals with analytic periodic integrands.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S4.SS3">
+<title>Partial Derivatives</title>          
+<paragraph xml:id="C3.S4.Px9">
+<title>First-Order</title>  
+ 
+<para xml:id="C3.S4.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C3.S4.Px9.p1.s1">
+For partial derivatives we use the notation <Math mode="inline" xml:id="C3.S4.Px9.p1.m1">u_{t,s}=u(x_{0}+th,y_{0}+sh)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C3.S4.Px9.p1.s2">
+<Math equation-number="3.4.20" mode="display" xml:id="C3.S4.E20">\frac{\partial u_{0,0}}{\partial x}=\frac{1}{2h}\,(u_{1,0}-u_{-1,0})+O\left(h^ {2}\right),</Math> <Math equation-number="3.4.21" mode="display" xml:id="C3.S4.E21">\frac{\partial u_{0,0}}{\partial x}=\frac{1}{4h}\,(u_{1,1}-u_{-1,1}+u_{1,-1}-u _{-1,-1})+O\left(h^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px10">
+<title>Second-Order</title>  
+ 
+<para xml:id="C3.S4.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C3.S4.Px10.p1.s1">
+ <Math equation-number="3.4.22" mode="display" xml:id="C3.S4.E22">\frac{{\partial}^{2}u_{0,0}}{{\partial x}^{2}}=\frac{1}{h^{2}}\,(u_{1,0}-2u_{0 ,0}+u_{-1,0})+O\left(h^{2}\right),</Math> <Math equation-number="3.4.23" mode="display" xml:id="C3.S4.E23">\frac{{\partial}^{2}u_{0,0}}{{\partial x}^{2}}=\frac{1}{12h^{2}}\,(-u_{2,0}+16 u_{1,0}-30u_{0,0}+16u_{-1,0}-u_{-2,0})+O\left(h^{4}\right),</Math> <Math equation-number="3.4.24" mode="display" xml:id="C3.S4.E24">\frac{{\partial}^{2}u_{0,0}}{{\partial x}^{2}}=\frac{1}{3h^{2}}\,(u_{1,1}-2u_{ 0,1}+u_{-1,1}+u_{1,0}-2u_{0,0}+u_{-1,0}+u_{1,-1}-2u_{0,-1}+u_{-1,-1})+O\left(h ^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C3.S4.Px10.p1.s2">
+<Math equation-number="3.4.25" mode="display" xml:id="C3.S4.E25">\frac{{\partial}^{2}u_{0,0}}{\partial x\partial y}=\frac{1}{4h^{2}}\,(u_{1,1}- u_{1,-1}-u_{-1,1}+u_{-1,-1})+O\left(h^{2}\right),</Math> <Math equation-number="3.4.26" mode="display" xml:id="C3.S4.E26">\frac{{\partial}^{2}u_{0,0}}{\partial x\partial y}=-\frac{1}{2h^{2}}\,(u_{1,0} +u_{-1,0}+u_{0,1}+u_{0,-1}-2u_{0,0}-u_{1,1}-u_{-1,-1})+O\left(h^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px11">
+<title>Laplacian</title>  
+  
+<para xml:id="C3.S4.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C3.S4.Px11.p1.s1">
+ <Math equation-number="3.4.27" mode="display" xml:id="C3.S4.E27">\nabla^{2}u=\frac{{\partial}^{2}u}{{\partial x}^{2}}+\frac{{\partial}^{2}u}{{ \partial y}^{2}}\,</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C3.S4.Px11.p1.s2">
+<Math equation-number="3.4.28" mode="display" xml:id="C3.S4.E28">\nabla^{2}u_{0,0}=\frac{1}{h^{2}}\,(u_{1,0}+u_{0,1}+u_{-1,0}+u_{0,-1}-4u_{0,0} )+O\left(h^{2}\right),</Math> <Math equation-number="3.4.29" mode="display" xml:id="C3.S4.E29">\nabla^{2}u_{0,0}=\frac{1}{12h^{2}}\left(-60u_{0,0}+16(u_{1,0}+u_{0,1}+u_{-1,0 }+u_{0,-1})-(u_{2,0}+u_{0,2}+u_{-2,0}+u_{0,-2})\right)+O\left(h^{4}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S4.Px11.p2">
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px12">
+<title>Fourth-Order</title>  
+ 
+<para xml:id="C3.S4.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C3.S4.Px12.p1.s1">
+ <Math equation-number="3.4.30" mode="display" xml:id="C3.S4.E30">\frac{{\partial}^{4}u_{0,0}}{{\partial x}^{4}}=\frac{1}{h^{4}}\,(u_{2,0}-4u_{1 ,0}+6u_{0,0}-4u_{-1,0}+u_{-2,0})+O\left(h^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C3.S4.Px12.p1.s2">
+<Math equation-number="3.4.31" mode="display" xml:id="C3.S4.E31">\frac{{\partial}^{4}u_{0,0}}{{\partial}^{2}x{\partial}^{2}y}=\frac{1}{h^{4}}\, (u_{1,1}+u_{-1,1}+u_{1,-1}+u_{-1,-1}-2u_{1,0}-2u_{-1,0}-2u_{0,1}-2u_{0,-1}+4u_ {0,0})+O\left(h^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S4.Px13">
+<title>Biharmonic Operator</title>  
+ 
+ 
+<para xml:id="C3.S4.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C3.S4.Px13.p1.s1">
+ <Math equation-number="3.4.32" mode="display" xml:id="C3.S4.E32">\nabla^{4}u=\frac{{\partial}^{4}u}{{\partial x}^{4}}+2\frac{{\partial}^{4}u}{{ \partial}^{2}x{\partial}^{2}y}+\frac{{\partial}^{4}u}{{\partial y}^{4}}\,</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C3.S4.Px13.p1.s2">
+<Math equation-number="3.4.33" mode="display" xml:id="C3.S4.E33">\nabla^{4}u_{0,0}=\frac{1}{h^{4}}\,(20u_{0,0}-8(u_{1,0}+u_{0,1}+u_{-1,0}+u_{0, -1})+2(u_{1,1}+u_{1,-1}+u_{-1,1}+u_{-1,-1})+(u_{0,2}+u_{2,0}+u_{-2,0}+u_{0,-2} ))+O\left(h^{2}\right),</Math> <Math equation-number="3.4.34" mode="display" xml:id="C3.S4.E34">\nabla^{4}u_{0,0}=\frac{1}{6h^{4}}\,(184u_{0,0}-(u_{0,3}+u_{0,-3}+u_{3,0}+u_{- 3,0})+14(u_{0,2}+u_{0,-2}+u_{2,0}+u_{-2,0})-77(u_{0,1}+u_{0,-1}+u_{1,0}+u_{-1, 0})+20(u_{1,1}+u_{1,-1}+u_{-1,1}+u_{-1,-1})-(u_{1,2}+u_{2,1}+u_{1,-2}+u_{2,-1} +u_{-1,2}+u_{-2,1}+u_{-1,-2}+u_{-2,-1}))+O\left(h^{4}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C3.S4.Px13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C3.S4.Px13.p2.s1">
+The results in this subsection for the partial derivatives follow fromPanow (1955, Table 10).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C3.S4.Px13.p2.s2">
+Those for the Laplacian and the biharmonic operator follow from the formulas for the partial derivatives.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S4.Px13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C3.S4.Px13.p3.s1">
+For additional formulas involving values of <Math mode="inline" xml:id="C3.S4.Px13.p3.m1">\nabla^{2}u</Math> and <Math mode="inline" xml:id="C3.S4.Px13.p3.m2">\nabla^{4}u</Math> onsquare, triangular, and cubic grids, seeCollatz (1960, Table VI, pp. 542–546).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S31">
+<title>Probability Distributions</title>        
+   
+<para xml:id="C19.S31.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S31.p1.s1">
+ <Math mode="inline" xml:id="C19.S31.p1.m1">R_{G}\left(x,y,z\right)</Math> and <Math mode="inline" xml:id="C19.S31.p1.m2">R_{F}\left(x,y,z\right)</Math> occur as the expectation values, relative to a normal probability distribution in <Math mode="inline" xml:id="C19.S31.p1.m3">{\mathbb{R}^{2}}</Math> or <Math mode="inline" xml:id="C19.S31.p1.m4">{\mathbb{R}^{3}}</Math> , of the square root or reciprocal square root of a quadratic form.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S31.p1.s2">
+More generally, let <Math mode="inline" xml:id="C19.S31.p1.m5">\mathbf{A}</Math> ( <Math mode="inline" xml:id="C19.S31.p1.m6">=[a_{r,s}]</Math> ) and <Math mode="inline" xml:id="C19.S31.p1.m7">\mathbf{B}</Math> ( <Math mode="inline" xml:id="C19.S31.p1.m8">=[b_{r,s}]</Math> ) be real positive-definite matrices with <Math mode="inline" xml:id="C19.S31.p1.m9">n</Math> rows and <Math mode="inline" xml:id="C19.S31.p1.m10">n</Math> columns, and let <Math mode="inline" xml:id="C19.S31.p1.m11">\lambda_{1},\dots,\lambda_{n}</Math> be the eigenvalues of <Math mode="inline" xml:id="C19.S31.p1.m12">\mathbf{A}\mathbf{B}^{-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S31.p1.s3">
+If <Math mode="inline" xml:id="C19.S31.p1.m13">\mathbf{x}</Math> is a column vector with elements <Math mode="inline" xml:id="C19.S31.p1.m14">x_{1},x_{2},\dots,x_{n}</Math> and transpose <Math mode="inline" xml:id="C19.S31.p1.m15">\mathbf{x}^{\mathrm{T}}</Math> , then <Math equation-number="19.31.1" mode="display" xml:id="C19.S31.E1">\mathbf{x}^{\mathrm{T}}\mathbf{A}\mathbf{x}=\sum_{r=1}^{n}\sum_{s=1}^{n}a_{r,s }x_{r}x_{s},</Math> and <Math equation-number="19.31.2" mode="display" xml:id="C19.S31.E2">\int_{{\mathbb{R}^{n}}}(\mathbf{x}^{\mathrm{T}}\mathbf{A}\mathbf{x})^{\mu}\exp \left(-\mathbf{x}^{\mathrm{T}}\mathbf{B}\mathbf{x}\right)\mathrm{d}x_{1}\cdots \mathrm{d}x_{n}=\frac{\pi^{n/2}\Gamma\left(\mu+\tfrac{1}{2}n\right)}{\sqrt{ \det\mathbf{B}}\Gamma\left(\tfrac{1}{2}n\right)}R_{\mu}\left(\tfrac{1}{2}, \dots,\tfrac{1}{2};\lambda_{1},\dots,\lambda_{n}\right), if \mu&gt;-\tfrac{1}{2}n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S31.p1.s4">
+§19.16(iii) shows that for <Math mode="inline" xml:id="C19.S31.p1.m16">n=3</Math> the incomplete cases of <Math mode="inline" xml:id="C19.S31.p1.m17">R_{F}</Math> and <Math mode="inline" xml:id="C19.S31.p1.m18">R_{G}</Math> occur when <Math mode="inline" xml:id="C19.S31.p1.m19">\mu=-1/2</Math> and <Math mode="inline" xml:id="C19.S31.p1.m20">\mu=1/2</Math> , respectively, while their complete cases occur when <Math mode="inline" xml:id="C19.S31.p1.m21">n=2</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S31.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S31.p2.s1">
+For (19.31.2) and generalizations see Carlson (1972b).
+</sentence>
+
+</para>
+ 
+</section>

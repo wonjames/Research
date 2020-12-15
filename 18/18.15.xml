@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S15">
+<title>Asymptotic Approximations</title>        
+  
+<subsection xml:id="C18.S15.SS1">
+<title>Jacobi</title>        
+  
+<para xml:id="C18.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S15.SS1.p1.s1">
+With the exception of the penultimate paragraph, we assume throughout this subsection that <Math mode="inline" xml:id="C18.S15.SS1.p1.m1">\alpha</Math> , <Math mode="inline" xml:id="C18.S15.SS1.p1.m2">\beta</Math> , and <Math mode="inline" xml:id="C18.S15.SS1.p1.m3">M</Math> ( <Math mode="inline" xml:id="C18.S15.SS1.p1.m4">=0,1,2,\ldots</Math> ) are all fixed. <Math equation-number="18.15.1" mode="display" xml:id="C18.S15.E1">\left(\sin\tfrac{1}{2}\theta\right)^{\alpha+\frac{1}{2}}\left(\cos\tfrac{1}{2} \theta\right)^{\beta+\frac{1}{2}}P^{(\alpha,\beta)}_{n}\left(\cos\theta\right) =\pi^{-1}2^{2n+\alpha+\beta+1}\mathrm{B}\left(n+\alpha+1,n+\beta+1\right)\* \left(\sum_{m=0}^{M-1}\frac{f_{m}(\theta)}{2^{m}{\left(2n+\alpha+\beta+2\right )_{m}}}+O\left(n^{-M}\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.SS1.p1.m5">n\to\infty</Math> , uniformly with respect to <Math mode="inline" xml:id="C18.S15.SS1.p1.m6">\theta\in[\delta,\pi-\delta]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S15.SS1.p1.s2">
+Here, and elsewhere in §18.15,
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S15.SS1.p1.s3">
+<Math mode="inline" xml:id="C18.S15.SS1.p1.m7">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C18.S15.SS1.p1.s4">
+Also, <Math mode="inline" xml:id="C18.S15.SS1.p1.m8">\mathrm{B}\left(a,b\right)</Math> is the beta function (§5.12) and <Math equation-number="18.15.2" mode="display" xml:id="C18.S15.E2">f_{m}(\theta)=\sum_{\ell=0}^{m}\frac{C_{m,\ell}(\alpha,\beta)}{\ell!(m-\ell)!} \frac{\cos\theta_{n,m,\ell}}{\left(\sin\frac{1}{2}\theta\right)^{\ell}\left( \cos\frac{1}{2}\theta\right)^{m-\ell}},</Math> where <Math equation-number="18.15.3" mode="display" xml:id="C18.S15.E3">C_{m,\ell}(\alpha,\beta)={\left(\tfrac{1}{2}+\alpha\right)_{\ell}}{\left( \tfrac{1}{2}-\alpha\right)_{\ell}}{\left(\tfrac{1}{2}+\beta\right)_{m-\ell}}{ \left(\tfrac{1}{2}-\beta\right)_{m-\ell}},</Math> and <Math equation-number="18.15.4" mode="display" xml:id="C18.S15.E4">\theta_{n,m,\ell}=\tfrac{1}{2}(2n+\alpha+\beta+m+1)\theta-\tfrac{1}{2}(\alpha+ \ell+\tfrac{1}{2})\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C18.S15.SS1.p1.s5">
+When <Math mode="inline" xml:id="C18.S15.SS1.p1.m9">\alpha,\beta\in(-\frac{1}{2},\frac{1}{2})</Math> , the error term in (18.15.1) is less than twice the first neglected term in absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C18.S15.SS1.p1.s6">
+See Hahn (1980), where corresponding results are given when <Math mode="inline" xml:id="C18.S15.SS1.p1.m10">x</Math> is replaced by a complex variable <Math mode="inline" xml:id="C18.S15.SS1.p1.m11">z</Math> that is bounded away from the orthogonality interval <Math mode="inline" xml:id="C18.S15.SS1.p1.m12">[-1,1]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S15.SS1.p2.s1">
+Next, let <Math equation-number="18.15.5" mode="display" xml:id="C18.S15.E5">\rho=n+\tfrac{1}{2}(\alpha+\beta+1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C18.S15.SS1.p2.s2">
+Then as <Math mode="inline" xml:id="C18.S15.SS1.p2.m1">n\rightarrow\infty</Math> , <Math equation-number="18.15.6" mode="display" xml:id="C18.S15.E6">(\sin\tfrac{1}{2}\theta)^{\alpha+\frac{1}{2}}(\cos\tfrac{1}{2}\theta)^{\beta+ \frac{1}{2}}P^{(\alpha,\beta)}_{n}\left(\cos\theta\right)=\frac{\Gamma\left(n+ \alpha+1\right)}{2^{\frac{1}{2}}\rho^{\alpha}n!}\*\left(\theta^{\frac{1}{2}}J_ {\alpha}\left(\rho\theta\right)\sum_{m=0}^{M}\dfrac{A_{m}(\theta)}{\rho^{2m}}+ \theta^{\frac{3}{2}}J_{\alpha+1}\left(\rho\theta\right)\sum_{m=0}^{M-1}\dfrac{ B_{m}(\theta)}{\rho^{2m+1}}+\varepsilon_{M}(\rho,\theta)\right),</Math> where <Math mode="inline" xml:id="C18.S15.SS1.p2.m2">J_{\nu}\left(z\right)</Math> is the Bessel function (§10.2(ii)), and <Math equation-number="18.15.7" mode="display" xml:id="C18.S15.E7">\varepsilon_{M}(\rho,\theta)=\begin{cases}\theta O\left(\rho^{-2M-(3/2)}\right ),&amp;c\rho^{-1}\leq\theta\leq\pi-\delta,\\ \theta^{\alpha+(5/2)}O\left(\rho^{-2M+\alpha}\right),&amp;0\leq\theta\leq c\rho^{- 1},\end{cases}</Math> with <Math mode="inline" xml:id="C18.S15.SS1.p2.m3">c</Math> denoting an arbitrary positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C18.S15.SS1.p2.s3">
+Also, <Math equation-number="18.15.8" mode="display" xml:id="C18.S15.E8">A_{0}(\theta)=1,\theta B_{0}(\theta)=\frac{1}{4}g(\theta),A_{1}(\theta)=\frac{1}{8}g^{\prime}(\theta)-\frac{1+2\alpha}{8}\frac{g(\theta) }{\theta}-\frac{1}{32}(g(\theta))^{2},</Math> where <Math equation-number="18.15.9" mode="display" xml:id="C18.S15.E9">g(\theta)=\left(\tfrac{1}{4}-\alpha^{2}\right)\left(\cot\left(\tfrac{1}{2} \theta\right)-\left(\tfrac{1}{2}\theta\right)^{-1}\right)-\left(\tfrac{1}{4}- \beta^{2}\right)\tan\left(\tfrac{1}{2}\theta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C18.S15.SS1.p2.s4">
+For higher coefficients see Baratella and Gatteschi (1988), and for another estimate of the error term in a related expansion see Wong and Zhao (2003).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C18.S15.SS1.p2.s5">
+For large <Math mode="inline" xml:id="C18.S15.SS1.p2.m4">\beta</Math> , fixed <Math mode="inline" xml:id="C18.S15.SS1.p2.m5">\alpha</Math> , and <Math mode="inline" xml:id="C18.S15.SS1.p2.m6">0\leq n/\beta\leq c</Math> ,Dunster (1999) gives asymptotic expansions of <Math mode="inline" xml:id="C18.S15.SS1.p2.m7">P^{(\alpha,\beta)}_{n}\left(z\right)</Math> that are uniform in unbounded complex <Math mode="inline" xml:id="C18.S15.SS1.p2.m8">z</Math> -domains containing <Math mode="inline" xml:id="C18.S15.SS1.p2.m9">z=\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C18.S15.SS1.p2.s6">
+These expansions are in terms of Whittaker functions (§13.14).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="13" xml:id="C18.S15.SS1.p2.s7">
+This reference also suppliesasymptotic expansions of <Math mode="inline" xml:id="C18.S15.SS1.p2.m10">P^{(\alpha,\beta)}_{n}\left(z\right)</Math> for large <Math mode="inline" xml:id="C18.S15.SS1.p2.m11">n</Math> , fixed <Math mode="inline" xml:id="C18.S15.SS1.p2.m12">\alpha</Math> , and <Math mode="inline" xml:id="C18.S15.SS1.p2.m13">0\leq\beta/n\leq c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="14" xml:id="C18.S15.SS1.p2.s8">
+The latter expansions are in terms of Bessel functions, and are uniform in complex <Math mode="inline" xml:id="C18.S15.SS1.p2.m14">z</Math> -domains not containing neighborhoods of 1.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="15" xml:id="C18.S15.SS1.p2.s9">
+For a complementary result, see Wong and Zhao (2004).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="16" xml:id="C18.S15.SS1.p2.s10">
+By using the symmetry property given in the second row of Table18.6.1, the roles of <Math mode="inline" xml:id="C18.S15.SS1.p2.m15">\alpha</Math> and <Math mode="inline" xml:id="C18.S15.SS1.p2.m16">\beta</Math> can be interchanged.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S15.SS1.p3.s1">
+For an asymptotic expansion of <Math mode="inline" xml:id="C18.S15.SS1.p3.m1">P^{(\alpha,\beta)}_{n}\left(z\right)</Math> as <Math mode="inline" xml:id="C18.S15.SS1.p3.m2">n\to\infty</Math> that holds uniformly for complex <Math mode="inline" xml:id="C18.S15.SS1.p3.m3">z</Math> bounded away from <Math mode="inline" xml:id="C18.S15.SS1.p3.m4">[-1,1]</Math> , see Elliott (1971).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S15.SS1.p3.s2">
+The first term of this expansion also appears inSzegő (1975, Theorem 8.21.7).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C18.S15.SS2">
+<title>Ultraspherical</title>        
+  
+<para xml:id="C18.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C18.S15.SS2.p1.s1">
+For fixed <Math mode="inline" xml:id="C18.S15.SS2.p1.m1">\lambda\in(0,1)</Math> and fixed <Math mode="inline" xml:id="C18.S15.SS2.p1.m2">M=0,1,2,\ldots</Math> , <Math equation-number="18.15.10" mode="display" xml:id="C18.S15.E10">C^{(\lambda)}_{n}\left(\cos\theta\right)=\frac{2^{2\lambda}\Gamma\left(\lambda +\frac{1}{2}\right)}{\pi^{\frac{1}{2}}\Gamma\left(\lambda+1\right)}\frac{{ \left(2\lambda\right)_{n}}}{{\left(\lambda+1\right)_{n}}}\*\left(\sum_{m=0}^{M -1}\dfrac{{\left(\lambda\right)_{m}}{\left(1-\lambda\right)_{m}}}{m!\,{\left(n +\lambda+1\right)_{m}}}\dfrac{\cos\theta_{n,m}}{(2\sin\theta)^{m+\lambda}}+O \left(\frac{1}{n^{M}}\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.SS2.p1.m3">n\to\infty</Math> uniformly with respect to <Math mode="inline" xml:id="C18.S15.SS2.p1.m4">\theta\in[\delta,\pi-\delta]</Math> , where <Math equation-number="18.15.11" mode="display" xml:id="C18.S15.E11">\theta_{n,m}=(n+m+\lambda)\theta-\tfrac{1}{2}(m+\lambda)\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C18.S15.SS2.p1.s2">
+For a bound on the error term in (18.15.10) seeSzegő (1975, Theorem 8.21.11).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C18.S15.SS2.p2.s1">
+Asymptotic expansions for <Math mode="inline" xml:id="C18.S15.SS2.p2.m1">C^{(\lambda)}_{n}\left(\cos\theta\right)</Math> can be obtained from the results given in §18.15(i) by setting <Math mode="inline" xml:id="C18.S15.SS2.p2.m2">\alpha=\beta=\lambda-\frac{1}{2}</Math> and referring to (18.7.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C18.S15.SS2.p2.s2">
+See also Szegő (1933) andSzegő (1975, Eq. (8.21.14)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S15.SS3">
+<title>Legendre</title>        
+  
+<para xml:id="C18.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C18.S15.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C18.S15.SS3.p1.m1">M=0,1,2,\dots</Math> , <Math equation-number="18.15.12" mode="display" xml:id="C18.S15.E12">P_{n}\left(\cos\theta\right)=\left(\frac{2}{\sin\theta}\right)^{\frac{1}{2}} \sum_{m=0}^{M-1}\genfrac{(}{)}{0.0pt}{}{-\tfrac{1}{2}}{m}\genfrac{(}{)}{0.0pt} {}{m-\frac{1}{2}}{n}\frac{\cos\alpha_{n,m}}{(2\sin\theta)^{m}}+O\left(\frac{1} {n^{M+\frac{1}{2}}}\right),</Math> as <Math mode="inline" xml:id="C18.S15.SS3.p1.m2">n\to\infty</Math> , uniformly with respect to <Math mode="inline" xml:id="C18.S15.SS3.p1.m3">\theta\in[\delta,\pi-\delta]</Math> , where <Math equation-number="18.15.13" mode="display" xml:id="C18.S15.E13">\alpha_{n,m}=(n-m+\tfrac{1}{2})\theta+(n-\tfrac{1}{2}m-\tfrac{1}{4})\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C18.S15.SS3.p2.s1">
+Also, when <Math mode="inline" xml:id="C18.S15.SS3.p2.m1">\tfrac{1}{6}\pi&lt;\theta&lt;\tfrac{5}{6}\pi</Math> , the right-hand side of (18.15.12) with <Math mode="inline" xml:id="C18.S15.SS3.p2.m2">M=\infty</Math> converges; paradoxically, however, the sum is <Math mode="inline" xml:id="C18.S15.SS3.p2.m3">2\!P_{n}\left(\cos\theta\right)</Math> and not <Math mode="inline" xml:id="C18.S15.SS3.p2.m4">P_{n}\left(\cos\theta\right)</Math> as stated erroneously inSzegő (1975, §8.4(3)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C18.S15.SS3.p3.s1">
+For these results and further information seeOlver (1997b, pp. 311–313).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C18.S15.SS3.p3.s2">
+Another expansion follows from (18.15.10) by taking <Math mode="inline" xml:id="C18.S15.SS3.p3.m1">\lambda=\tfrac{1}{2}</Math> ; see Szegő (1975, Theorem 8.21.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C18.S15.SS3.p4.s1">
+For asymptotic expansions of <Math mode="inline" xml:id="C18.S15.SS3.p4.m1">P_{n}\left(\cos\theta\right)</Math> and <Math mode="inline" xml:id="C18.S15.SS3.p4.m2">P_{n}\left(\cosh\xi\right)</Math> that are uniformly valid when <Math mode="inline" xml:id="C18.S15.SS3.p4.m3">0\leq\theta\leq\pi-\delta</Math> and <Math mode="inline" xml:id="C18.S15.SS3.p4.m4">0\leq\xi&lt;\infty</Math> see §14.15(iii) with <Math mode="inline" xml:id="C18.S15.SS3.p4.m5">\mu=0</Math> and <Math mode="inline" xml:id="C18.S15.SS3.p4.m6">\nu=n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C18.S15.SS3.p4.s2">
+These expansions are in terms of Bessel functions and modified Bessel functions, respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S15.SS4">
+<title>Laguerre</title>        
+  
+<paragraph xml:id="C18.S15.Px1">
+<title>In Terms of Elementary Functions</title>   
+<para xml:id="C18.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C18.S15.Px1.p1.s1">
+For fixed <Math mode="inline" xml:id="C18.S15.Px1.p1.m1">M=0,1,2,\dots</Math> , and fixed <Math mode="inline" xml:id="C18.S15.Px1.p1.m2">\alpha</Math> ,
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C18.S15.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C18.S15.Px1.p2.s1">
+ <Math equation-number="18.15.14" mode="display" xml:id="C18.S15.E14">L^{(\alpha)}_{n}\left(x\right)=\frac{n^{\frac{1}{2}\alpha-\frac{1}{4}}e^{\frac {1}{2}x}}{\pi^{\frac{1}{2}}x^{\frac{1}{2}\alpha+\frac{1}{4}}}\left(\cos\theta_ {n}^{(\alpha)}(x)\left(\sum_{m=0}^{M-1}\frac{a_{m}(x)}{n^{\frac{1}{2}m}}+O \left(\frac{1}{n^{\frac{1}{2}M}}\right)\right)+\sin\theta_{n}^{(\alpha)}(x) \left(\sum_{m=1}^{M-1}\frac{b_{m}(x)}{n^{\frac{1}{2}m}}+O\left(\frac{1}{n^{ \frac{1}{2}M}}\right)\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.Px1.p2.m1">n\to\infty</Math> , uniformly on compact <Math mode="inline" xml:id="C18.S15.Px1.p2.m2">x</Math> -intervals in <Math mode="inline" xml:id="C18.S15.Px1.p2.m3">(0,\infty)</Math> , where <Math equation-number="18.15.15" mode="display" xml:id="C18.S15.E15">\theta_{n}^{(\alpha)}(x)=2(nx)^{\frac{1}{2}}-\left(\tfrac{1}{2}\alpha+\tfrac{1 }{4}\right)\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C18.S15.Px1.p2.s2">
+The leading coefficients are given by <Math equation-number="18.15.16" mode="display" xml:id="C18.S15.E16">a_{0}(x)=1,a_{1}(x)=0,b_{1}(x)=\frac{1}{48x^{\frac{1}{2}}}\left(4x^{2}-12\alpha^{2}-24\alpha x-24x+3 \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C18.S15.Px1.p3.s1">
+See also Deaño et al. (2013).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S15.Px2">
+<title>In Terms of Bessel Functions</title>   
+<para xml:id="C18.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C18.S15.Px2.p1.s1">
+Define <Math equation-number="18.15.17" mode="display" xml:id="C18.S15.E17">\nu=4n+2\alpha+2,</Math> <Math equation-number="18.15.18" mode="display" xml:id="C18.S15.E18">\xi=\tfrac{1}{2}\left(\sqrt{x-x^{2}}+\operatorname{arcsin}(\sqrt{x})\right), if 0\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C18.S15.Px2.p1.s2">
+Then for fixed <Math mode="inline" xml:id="C18.S15.Px2.p1.m1">M=0,1,2,\dots</Math> , and fixed <Math mode="inline" xml:id="C18.S15.Px2.p1.m2">\alpha</Math> , <Math equation-number="18.15.19" mode="display" xml:id="C18.S15.E19">L^{(\alpha)}_{n}\left(\nu x\right)=\frac{e^{\frac{1}{2}\nu x}}{2^{\alpha}x^{ \frac{1}{2}\alpha+\frac{1}{4}}(1-x)^{\frac{1}{4}}}\left(\xi^{\frac{1}{2}}J_{ \alpha}\left(\nu\xi\right)\sum_{m=0}^{M-1}\frac{A_{m}(\xi)}{\nu^{2m}}+\xi^{- \frac{1}{2}}J_{\alpha+1}\left(\nu\xi\right)\sum_{m=0}^{M-1}\frac{B_{m}(\xi)}{ \nu^{2m+1}}+\xi^{\frac{1}{2}}\mathrm{env}\mskip-2.0mu J_{\alpha}\left(\nu\xi \right)O\left(\frac{1}{\nu^{2M-1}}\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.Px2.p1.m3">n\to\infty</Math> uniformly for <Math mode="inline" xml:id="C18.S15.Px2.p1.m4">0\leq x\leq 1-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C18.S15.Px2.p1.s3">
+Here <Math mode="inline" xml:id="C18.S15.Px2.p1.m5">J_{\nu}\left(z\right)</Math> denotes the Bessel function (§10.2(ii)),
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="36" xml:id="C18.S15.Px2.p1.s4">
+<Math mode="inline" xml:id="C18.S15.Px2.p1.m6">\mathrm{env}\mskip-2.0mu J_{\nu}\left(z\right)</Math> denotes its envelope (§2.8(iv)), and <Math mode="inline" xml:id="C18.S15.Px2.p1.m7">\delta</Math> is again an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="37" xml:id="C18.S15.Px2.p1.s5">
+The leading coefficients are given by <Math mode="inline" xml:id="C18.S15.Px2.p1.m8">A_{0}(\xi)=1</Math> and <Math equation-number="18.15.20" mode="display" xml:id="C18.S15.E20">B_{0}(\xi)=-\frac{1}{2}\left(\frac{1-4\alpha^{2}}{8}+\xi\left(\frac{1-x}{x} \right)^{\frac{1}{2}}\left(\frac{4\alpha^{2}-1}{8}+\frac{1}{4}\frac{x}{1-x}+ \frac{5}{24}\left(\frac{x}{1-x}\right)^{2}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S15.Px3">
+<title>In Terms of Airy Functions</title>   
+<para xml:id="C18.S15.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C18.S15.Px3.p1.s1">
+Again define <Math mode="inline" xml:id="C18.S15.Px3.p1.m1">\nu</Math> as in (18.15.17); also, <Math equation-number="18.15.21" mode="display" xml:id="C18.S15.E21">\zeta=-\left(\tfrac{3}{4}\left(\operatorname{arccos}\left(\sqrt{x}\right)- \sqrt{x-x^{2}}\right)\right)^{\frac{2}{3}}, if 0\leq x\leq 1, //// \zeta=\left(\tfrac{3}{4}\left(\sqrt{x^{2}-x}-\operatorname{arccosh}\left(\sqrt {x}\right)\right)\right)^{\frac{2}{3}}, if x\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C18.S15.Px3.p1.s2">
+Then for fixed <Math mode="inline" xml:id="C18.S15.Px3.p1.m2">M=0,1,2,\dots</Math> , and fixed <Math mode="inline" xml:id="C18.S15.Px3.p1.m3">\alpha</Math> , <Math equation-number="18.15.22" mode="display" xml:id="C18.S15.E22">L^{(\alpha)}_{n}\left(\nu x\right)=(-1)^{n}\frac{e^{\frac{1}{2}\nu x}}{2^{ \alpha-\frac{1}{2}}x^{\frac{1}{2}\alpha+\frac{1}{4}}}\*\left(\frac{\zeta}{x-1} \right)^{\frac{1}{4}}\left(\frac{\mathrm{Ai}\left(\nu^{\frac{2}{3}}\zeta\right )}{\nu^{\frac{1}{3}}}\sum_{m=0}^{M-1}\frac{E_{m}(\zeta)}{\nu^{2m}}+\frac{ \mathrm{Ai}'\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{5}{3}}}\sum_{m=0}^ {M-1}\frac{F_{m}(\zeta)}{\nu^{2m}}+\mathrm{envAi}\left(\nu^{\frac{2}{3}}\zeta \right)O\left(\frac{1}{\nu^{2M-\frac{2}{3}}}\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.Px3.p1.m4">n\to\infty</Math> uniformly for <Math mode="inline" xml:id="C18.S15.Px3.p1.m5">\delta\leq x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C18.S15.Px3.p1.s3">
+Here <Math mode="inline" xml:id="C18.S15.Px3.p1.m6">\mathrm{Ai}</Math> denotes the Airy function (§9.2),
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="41" xml:id="C18.S15.Px3.p1.s4">
+<Math mode="inline" xml:id="C18.S15.Px3.p1.m7">\mathrm{Ai}'</Math> denotes its derivative, and <Math mode="inline" xml:id="C18.S15.Px3.p1.m8">\mathrm{envAi}</Math> denotes its envelope (§2.8(iii)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="42" xml:id="C18.S15.Px3.p1.s5">
+The leading coefficients are given by <Math mode="inline" xml:id="C18.S15.Px3.p1.m9">E_{0}(\zeta)=1</Math> and <Math equation-number="18.15.23" mode="display" xml:id="C18.S15.E23">F_{0}(\zeta)=-\frac{5}{48\zeta^{2}}+\left(\frac{x-1}{x\zeta}\right)^{\frac{1}{ 2}}\left(\frac{1}{2}\alpha^{2}-\frac{1}{8}-\frac{1}{4}\frac{x}{x-1}+\frac{5}{2 4}\left(\frac{x}{x-1}\right)^{2}\right), if 0\leq x&lt;\infty</Math>.
+</sentence>
+
+</para>
+   
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S15.SS5">
+<title>Hermite</title>        
+  
+<para xml:id="C18.S15.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C18.S15.SS5.p1.s1">
+Define <Math equation-number="18.15.24" mode="display" xml:id="C18.S15.E24">\mu=2n+1,</Math> <Math equation-number="18.15.25" mode="display" xml:id="C18.S15.E25">\lambda_{n}=\begin{cases}\ifrac{\Gamma\left(n+1\right)}{\Gamma\left(\frac{1}{2 }n+1\right)},&amp;n\text{ even},\\ \ifrac{\Gamma\left(n+2\right)}{\left(\mu^{\frac{1}{2}}\Gamma\left(\frac{1}{2}n +\frac{3}{2}\right)\right)},&amp;n\text{ odd},\end{cases}</Math> and <Math equation-number="18.15.26" mode="display" xml:id="C18.S15.E26">\omega_{n,m}(x)=\mu^{\frac{1}{2}}x-\tfrac{1}{2}(m+n)\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C18.S15.SS5.p1.s2">
+Then for fixed <Math mode="inline" xml:id="C18.S15.SS5.p1.m1">M=0,1,2,\dots</Math> , <Math equation-number="18.15.27" mode="display" xml:id="C18.S15.E27">H_{n}\left(x\right)=\lambda_{n}e^{\frac{1}{2}x^{2}}\left(\sum_{m=0}^{M-1}\frac {u_{m}(x)\cos\omega_{n,m}(x)}{\mu^{\frac{1}{2}m}}+O\left(\frac{1}{\mu^{\frac{1 }{2}M}}\right)\right),</Math> as <Math mode="inline" xml:id="C18.S15.SS5.p1.m2">n\to\infty</Math> , uniformly on compact <Math mode="inline" xml:id="C18.S15.SS5.p1.m3">x</Math> -intervals on <Math mode="inline" xml:id="C18.S15.SS5.p1.m4">\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C18.S15.SS5.p1.s3">
+The coefficients <Math mode="inline" xml:id="C18.S15.SS5.p1.m5">u_{m}(x)</Math> are polynomials in <Math mode="inline" xml:id="C18.S15.SS5.p1.m6">x</Math> , and <Math mode="inline" xml:id="C18.S15.SS5.p1.m7">u_{0}(x)=1</Math> , <Math mode="inline" xml:id="C18.S15.SS5.p1.m8">u_{1}(x)=\frac{1}{6}x^{3}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C18.S15.SS5.p2.s1">
+For more powerful asymptotic expansions as <Math mode="inline" xml:id="C18.S15.SS5.p2.m1">n\to\infty</Math> in terms of elementary functions that apply uniformly when <Math mode="inline" xml:id="C18.S15.SS5.p2.m2">1+\delta\leq t&lt;\infty</Math> , <Math mode="inline" xml:id="C18.S15.SS5.p2.m3">-1+\delta\leq t\leq 1-\delta</Math> , or <Math mode="inline" xml:id="C18.S15.SS5.p2.m4">-\infty&lt;t\leq-1-\delta</Math> , where <Math mode="inline" xml:id="C18.S15.SS5.p2.m5">t=\ifrac{x}{\sqrt{2n+1}}</Math> and <Math mode="inline" xml:id="C18.S15.SS5.p2.m6">\delta</Math> is again an arbitrary small positive constant, see §§12.10(i)–12.10(iv)and 12.10(vi).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C18.S15.SS5.p2.s2">
+And for asymptotic expansions as <Math mode="inline" xml:id="C18.S15.SS5.p2.m7">n\to\infty</Math> in terms of Airy functions that applyuniformly when <Math mode="inline" xml:id="C18.S15.SS5.p2.m8">-1+\delta\leq t&lt;\infty</Math> or <Math mode="inline" xml:id="C18.S15.SS5.p2.m9">-\infty&lt;t\leq 1-\delta</Math> , see §§12.10(vii) and 12.10(viii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C18.S15.SS5.p2.s3">
+With <Math mode="inline" xml:id="C18.S15.SS5.p2.m10">\mu=\sqrt{2n+1}</Math> the expansions in Chapter 12 are for the parabolic cylinder function <Math mode="inline" xml:id="C18.S15.SS5.p2.m11">U\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)</Math> , which is related to the Hermite polynomials via <Math equation-number="18.15.28" mode="display" xml:id="C18.S15.E28">H_{n}\left(x\right)=2^{\frac{1}{4}(\mu^{2}-1)}e^{\frac{1}{2}\mu^{2}t^{2}}U \left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right);</Math> compare (18.11.3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C18.S15.SS5.p3.s1">
+For an error bound for the first term in the Airy-function expansions seeOlver (1997b, p. 403).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C18.S15.SS5.p4.s1">
+See also Geronimo et al. (2004).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S15.SS6">
+<title>Other Approximations</title>        
+ 
+<para xml:id="C18.S15.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C18.S15.SS6.p1.s1">
+The asymptotic behavior of the classical OP’s as <Math mode="inline" xml:id="C18.S15.SS6.p1.m1">x\to\pm\infty</Math> with the degree and parameters fixed is evident from their explicit polynomial forms; see, for example, (18.2.7) and the last two columns of Table 18.3.1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S15.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C18.S15.SS6.p2.s1">
+For asymptotic approximations of Jacobi, ultraspherical, and Laguerre polynomials in terms of Hermite polynomials, see López and Temme (1999a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C18.S15.SS6.p2.s2">
+These approximations apply when the parameters are large, namely <Math mode="inline" xml:id="C18.S15.SS6.p2.m1">\alpha</Math> and <Math mode="inline" xml:id="C18.S15.SS6.p2.m2">\beta</Math> (subject to restrictions) in the case of Jacobi polynomials, <Math mode="inline" xml:id="C18.S15.SS6.p2.m3">\lambda</Math> in the case of ultraspherical polynomials, and <Math mode="inline" xml:id="C18.S15.SS6.p2.m4">|\alpha|+|x|</Math> in the case of Laguerre polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="54" xml:id="C18.S15.SS6.p2.s3">
+See also Dunster (1999), Atia et al. (2014) and Temme (2015, Chapter 32).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

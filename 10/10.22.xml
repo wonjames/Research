@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S22">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C10.S22.SS1">
+<title>Indefinite Integrals</title>        
+   
+<para xml:id="C10.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S22.SS1.p1.s1">
+In this subsection <Math mode="inline" xml:id="C10.S22.SS1.p1.m1">\mathscr{C}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S22.SS1.p1.m2">\mathscr{D}_{\mu}(z)</Math> denote cylinder functions(§10.2(ii)) of orders <Math mode="inline" xml:id="C10.S22.SS1.p1.m3">\nu</Math> and <Math mode="inline" xml:id="C10.S22.SS1.p1.m4">\mu</Math> , respectively, not necessarily distinct.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S22.SS1.p1.s2">
+<Math equation-number="10.22.1" mode="display" xml:id="C10.S22.E1">\int z^{\nu+1}\mathscr{C}_{\nu}\left(z\right)\mathrm{d}z=z^{\nu+1}\mathscr{C}_ {\nu+1}\left(z\right),\int z^{-\nu+1}\mathscr{C}_{\nu}\left(z\right)\mathrm{d}z=-z^{-\nu+1}\mathscr{ C}_{\nu-1}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S22.SS1.p1.s3">
+<Math equation-number="10.22.2" mode="display" xml:id="C10.S22.E2">\int z^{\nu}\mathscr{C}_{\nu}\left(z\right)\mathrm{d}z=\pi^{\frac{1}{2}}2^{\nu -1}\Gamma\left(\nu+\tfrac{1}{2}\right)\*z\left(\mathscr{C}_{\nu}\left(z\right) \mathbf{H}_{\nu-1}\left(z\right)-\mathscr{C}_{\nu-1}\left(z\right)\mathbf{H}_{ \nu}\left(z\right)\right), if \nu\neq-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S22.SS1.p1.s4">
+For the Struve function <Math mode="inline" xml:id="C10.S22.SS1.p1.m5">\mathbf{H}_{\nu}\left(z\right)</Math> see §11.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C10.S22.SS1.p1.s5">
+<Math equation-number="10.22.3" mode="display" xml:id="C10.S22.E3">\int e^{iz}z^{\nu}\mathscr{C}_{\nu}\left(z\right)\mathrm{d}z=\frac{e^{iz}z^{ \nu+1}}{2\nu+1}(\mathscr{C}_{\nu}\left(z\right)-i\mathscr{C}_{\nu+1}\left(z \right)), if \nu\neq-\tfrac{1}{2}, //// \int e^{iz}z^{-\nu}\mathscr{C}_{\nu}\left(z\right)\mathrm{d}z=\frac{e^{iz}z^{- \nu+1}}{1-2\nu}(\mathscr{C}_{\nu}\left(z\right)+i\mathscr{C}_{\nu-1}\left(z \right)), if \nu\neq\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S22.Px1">
+<title>Products</title>    
+<para xml:id="C10.S22.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S22.Px1.p1.s1">
+ <Math equation-number="10.22.4" mode="display" xml:id="C10.S22.E4">\int z\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\mu}(bz)\mathrm{d}z=\frac{z \left(a\mathscr{C}_{\mu+1}\left(az\right)\mathscr{D}_{\mu}(bz)-b\mathscr{C}_{ \mu}\left(az\right)\mathscr{D}_{\mu+1}(bz)\right)}{a^{2}-b^{2}}, if a^{2}\neq b^{2},</Math> <Math equation-number="10.22.5" mode="display" xml:id="C10.S22.E5">\int z\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\mu}(az)\mathrm{d}z=\tfrac{ 1}{4}z^{2}\left(2\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\mu}(az)- \mathscr{C}_{\mu-1}\left(az\right)\mathscr{D}_{\mu+1}(az)-\mathscr{C}_{\mu+1} \left(az\right)\mathscr{D}_{\mu-1}(az)\right),</Math> , <Math equation-number="10.22.6" mode="display" xml:id="C10.S22.E6">\int\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\nu}(az)\frac{\mathrm{d}z}{z} =-\frac{az(\mathscr{C}_{\mu+1}\left(az\right)\mathscr{D}_{\nu}(az)-\mathscr{C} _{\mu}\left(az\right)\mathscr{D}_{\nu+1}(az))}{\mu^{2}-\nu^{2}}+\frac{\mathscr {C}_{\mu}\left(az\right)\mathscr{D}_{\nu}(az)}{\mu+\nu}, if \mu^{2}\neq\nu^{2},</Math> <Math equation-number="10.22.7" mode="display" xml:id="C10.S22.E7">\int z^{\mu+\nu+1}\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\nu}(az)\mathrm {d}z=\frac{z^{\mu+\nu+2}}{2(\mu+\nu+1)}\*\left(\mathscr{C}_{\mu}\left(az\right )\mathscr{D}_{\nu}(az)+\mathscr{C}_{\mu+1}\left(az\right)\mathscr{D}_{\nu+1}( az)\right), if \mu+\nu\neq-1, //// \int z^{-\mu-\nu+1}\mathscr{C}_{\mu}\left(az\right)\mathscr{D}_{\nu}(az) \mathrm{d}z=\frac{z^{-\mu-\nu+2}}{2(1-\mu-\nu)}\*\left(\mathscr{C}_{\mu}\left( az\right)\mathscr{D}_{\nu}(az)+\mathscr{C}_{\mu-1}\left(az\right)\mathscr{D}_{ \nu-1}(az)\right), if \mu+\nu\neq 1</Math>.
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S22.SS2">
+<title>Integrals over Finite Intervals</title>        
+  
+<para xml:id="C10.S22.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S22.SS2.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C10.S22.SS2.p1.m1">x&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S22.SS2.p2.s1">
+ <Math equation-number="10.22.8" mode="display" xml:id="C10.S22.E8">\int_{0}^{x}J_{\nu}\left(t\right)\mathrm{d}t=2\sum_{k=0}^{\infty}J_{\nu+2k+1} \left(x\right), if \Re\nu&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C10.S22.SS2.p2.s2">
+<Math equation-number="10.22.9" mode="display" xml:id="C10.S22.E9">\int_{0}^{x}J_{2n}\left(t\right)\mathrm{d}t=\int_{0}^{x}J_{0}\left(t\right) \mathrm{d}t-2\sum_{k=0}^{n-1}J_{2k+1}\left(x\right),\quad\int_{0}^{x}J_{2n+1} \left(t\right)\mathrm{d}t=1-J_{0}\left(x\right)-2\sum_{k=1}^{n}J_{2k}\left(x \right), if n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C10.S22.SS2.p2.s3">
+<Math equation-number="10.22.10" mode="display" xml:id="C10.S22.E10">\int_{0}^{x}t^{\mu}J_{\nu}\left(t\right)\mathrm{d}t=x^{\mu}\frac{\Gamma\left( \frac{1}{2}\nu+\frac{1}{2}\mu+\frac{1}{2}\right)}{\Gamma\left(\frac{1}{2}\nu- \frac{1}{2}\mu+\frac{1}{2}\right)}\*\sum_{k=0}^{\infty}\frac{(\nu+2k+1)\Gamma \left(\frac{1}{2}\nu-\frac{1}{2}\mu+\frac{1}{2}+k\right)}{\Gamma\left(\frac{1} {2}\nu+\frac{1}{2}\mu+\frac{3}{2}+k\right)}J_{\nu+2k+1}\left(x\right), if \Re(\mu+\nu+1)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C10.S22.SS2.p2.s4">
+<Math equation-number="10.22.11" mode="display" xml:id="C10.S22.E11">\int_{0}^{x}\frac{1-J_{0}\left(t\right)}{t}\mathrm{d}t=\frac{1}{2}\sum_{k=1}^{ \infty}\frac{\psi\left(k+1\right)-\psi\left(1\right)}{k!}(\tfrac{1}{2}x)^{k}J_ {k}\left(x\right),</Math> , <Math equation-number="10.22.12" mode="display" xml:id="C10.S22.E12">x\int_{0}^{x}\frac{1-J_{0}\left(t\right)}{t}\mathrm{d}t=2\sum_{k=0}^{\infty}(2 k+3)(\psi\left(k+2\right)-\psi\left(1\right))J_{2k+3}\left(x\right)=x-2\!J_{1} \left(x\right)+2\sum_{k=0}^{\infty}(2k+5)\*(\psi\left(k+3\right)-\psi\left(1 \right)-1)J_{2k+5}\left(x\right),</Math> where <Math mode="inline" xml:id="C10.S22.SS2.p2.m1">\psi\left(x\right)=\Gamma'\left(x\right)/\Gamma\left(x\right)</Math> (§5.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C10.S22.SS2.p2.s5">
+See also (10.22.39).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S22.Px2">
+<title>Trigonometric Arguments</title>    
+<para xml:id="C10.S22.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S22.Px2.p1.s1">
+ <Math equation-number="10.22.13" mode="display" xml:id="C10.S22.E13">\int_{0}^{\frac{1}{2}\pi}J_{2\nu}\left(2z\cos\theta\right)\cos\left(2\mu\theta \right)\mathrm{d}\theta=\tfrac{1}{2}\pi J_{\nu+\mu}\left(z\right)J_{\nu-\mu} \left(z\right), if \Re\nu&gt;-\tfrac{1}{2},</Math> , <Math equation-number="10.22.14" mode="display" xml:id="C10.S22.E14">\int_{0}^{\pi}J_{2\nu}\left(2z\sin\theta\right)\cos\left(2\mu\theta\right) \mathrm{d}\theta=\pi\cos\left(\mu\pi\right)J_{\nu+\mu}\left(z\right)J_{\nu-\mu }\left(z\right), if \Re\nu&gt;-\tfrac{1}{2},</Math> , <Math equation-number="10.22.15" mode="display" xml:id="C10.S22.E15">\int_{0}^{\pi}J_{2\nu}\left(2z\sin\theta\right)\sin\left(2\mu\theta\right) \mathrm{d}\theta=\pi\sin\left(\mu\pi\right)J_{\nu+\mu}\left(z\right)J_{\nu-\mu }\left(z\right), if \Re\nu&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S22.Px2.p1.s2">
+<Math equation-number="10.22.16" mode="display" xml:id="C10.S22.E16">\int_{0}^{\frac{1}{2}\pi}J_{0}\left(2z\sin\theta\right)\cos\left(2n\theta \right)\mathrm{d}\theta=\tfrac{1}{2}\pi{J_{n}^{2}}\left(z\right), if n=0,1,2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C10.S22.Px2.p1.s3">
+<Math equation-number="10.22.17" mode="display" xml:id="C10.S22.E17">\int_{0}^{\frac{1}{2}\pi}Y_{2\nu}\left(2z\cos\theta\right)\cos\left(2\mu\theta \right)\mathrm{d}\theta=\tfrac{1}{2}\pi\cot\left(2\nu\pi\right)J_{\nu+\mu} \left(z\right)J_{\nu-\mu}\left(z\right)-\tfrac{1}{2}\pi\csc\left(2\nu\pi\right )J_{\mu-\nu}\left(z\right)J_{-\mu-\nu}\left(z\right), if -\tfrac{1}{2}&lt;\Re\nu&lt;\tfrac{1}{2},</Math> <Math equation-number="10.22.18" mode="display" xml:id="C10.S22.E18">\int_{0}^{\frac{1}{2}\pi}Y_{0}\left(2z\sin\theta\right)\cos\left(2n\theta \right)\mathrm{d}\theta=\tfrac{1}{2}\pi J_{n}\left(z\right)Y_{n}\left(z\right), if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C10.S22.Px2.p1.s4">
+<Math equation-number="10.22.19" mode="display" xml:id="C10.S22.E19">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z\sin\theta\right)(\sin\theta)^{\mu+1}( \cos\theta)^{2\nu+1}\mathrm{d}\theta=2^{\nu}\Gamma\left(\nu+1\right)z^{-\nu-1} J_{\mu+\nu+1}\left(z\right), if \Re\mu&gt;-1, \Re\nu&gt;-1,</Math> <Math equation-number="10.22.20" mode="display" xml:id="C10.S22.E20">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z\sin\theta\right)(\sin\theta)^{\mu}( \cos\theta)^{2\mu}\mathrm{d}\theta=\pi^{\frac{1}{2}}2^{\mu-1}z^{-\mu}\*\Gamma \left(\mu+\tfrac{1}{2}\right){J_{\mu}^{2}}\left(\tfrac{1}{2}z\right), if \Re\mu&gt;-\tfrac{1}{2},</Math> , <Math equation-number="10.22.21" mode="display" xml:id="C10.S22.E21">\int_{0}^{\frac{1}{2}\pi}Y_{\mu}\left(z\sin\theta\right)(\sin\theta)^{\mu}( \cos\theta)^{2\mu}\mathrm{d}\theta=\pi^{\frac{1}{2}}2^{\mu-1}z^{-\mu}\*\Gamma \left(\mu+\tfrac{1}{2}\right)J_{\mu}\left(\tfrac{1}{2}z\right)Y_{\mu}\left( \tfrac{1}{2}z\right), if \Re\mu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C10.S22.Px2.p1.s5">
+<Math equation-number="10.22.22" mode="display" xml:id="C10.S22.E22">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z{\sin^{2}}\theta\right)J_{\nu}\left(z{ \cos^{2}}\theta\right)(\sin\theta)^{2\mu+1}(\cos\theta)^{2\nu+1}\mathrm{d} \theta=\frac{\Gamma\left(\mu+\tfrac{1}{2}\right)\Gamma\left(\nu+\tfrac{1}{2} \right)J_{\mu+\nu+\frac{1}{2}}\left(z\right)}{(8\pi z)^{\frac{1}{2}}\Gamma \left(\mu+\nu+1\right)}, if \Re\mu&gt;-\tfrac{1}{2},\Re\nu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="18" xml:id="C10.S22.Px2.p1.s6">
+<Math equation-number="10.22.23" mode="display" xml:id="C10.S22.E23">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z{\sin^{2}}\theta\right)J_{\nu}\left(z{ \cos^{2}}\theta\right)(\sin\theta)^{2\alpha-1}\sec\theta\mathrm{d}\theta=\frac {(\mu+\nu+\alpha)\Gamma\left(\mu+\alpha\right)2^{\alpha-1}}{\nu\Gamma\left(\mu +1\right)z^{\alpha}}J_{\mu+\nu+\alpha}\left(z\right), if \Re(\mu+\alpha)&gt;0, \Re\nu&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="19" xml:id="C10.S22.Px2.p1.s7">
+<Math equation-number="10.22.24" mode="display" xml:id="C10.S22.E24">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z{\sin^{2}}\theta\right)J_{\nu}\left(z{ \cos^{2}}\theta\right)\cot\theta\mathrm{d}\theta=\tfrac{1}{2}\mu^{-1}J_{\mu+ \nu}\left(z\right), if \Re\mu&gt;0,\Re\nu&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="20" xml:id="C10.S22.Px2.p1.s8">
+<Math equation-number="10.22.25" mode="display" xml:id="C10.S22.E25">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z\sin\theta\right)I_{\nu}\left(z\cos \theta\right)(\tan\theta)^{\mu+1}\mathrm{d}\theta=\frac{\Gamma\left(\tfrac{1}{ 2}\nu-\tfrac{1}{2}\mu\right)(\tfrac{1}{2}z)^{\mu}}{2\!\Gamma\left(\tfrac{1}{2} \nu+\tfrac{1}{2}\mu+1\right)}J_{\nu}\left(z\right), if \Re\nu&gt;\Re\mu&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="21" xml:id="C10.S22.Px2.p1.s9">
+For <Math mode="inline" xml:id="C10.S22.Px2.p1.m1">I_{\nu}</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="22" xml:id="C10.S22.Px2.p1.s10">
+<Math equation-number="10.22.26" mode="display" xml:id="C10.S22.E26">\int_{0}^{\frac{1}{2}\pi}J_{\mu}\left(z\sin\theta\right)J_{\nu}\left(\zeta\cos \theta\right)(\sin\theta)^{\mu+1}(\cos\theta)^{\nu+1}\mathrm{d}\theta=\frac{z^ {\mu}\zeta^{\nu}J_{\mu+\nu+1}\left(\sqrt{\zeta^{2}+z^{2}}\right)}{(\zeta^{2}+z ^{2})^{\frac{1}{2}(\mu+\nu+1)}}, if \Re\mu&gt;-1,\Re\nu&gt;-1.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px3">
+<title>Products</title>   
+<para xml:id="C10.S22.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C10.S22.Px3.p1.s1">
+ <Math equation-number="10.22.27" mode="display" xml:id="C10.S22.E27">\int_{0}^{x}t{J_{\nu-1}^{2}}\left(t\right)\mathrm{d}t=2\sum_{k=0}^{\infty}(\nu +2k){J_{\nu+2k}^{2}}\left(x\right), if \Re\nu&gt;0,</Math> , <Math equation-number="10.22.28" mode="display" xml:id="C10.S22.E28">\int_{0}^{x}t\left({J_{\nu-1}^{2}}\left(t\right)-{J_{\nu+1}^{2}}\left(t\right) \right)\mathrm{d}t=2\nu{J_{\nu}^{2}}\left(x\right), if \Re\nu&gt;0,</Math> , <Math equation-number="10.22.29" mode="display" xml:id="C10.S22.E29">\int_{0}^{x}t{J_{0}^{2}}\left(t\right)\mathrm{d}t=\tfrac{1}{2}x^{2}\left({J_{0 }^{2}}\left(x\right)+{J_{1}^{2}}\left(x\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C10.S22.Px3.p1.s2">
+<Math equation-number="10.22.30" mode="display" xml:id="C10.S22.E30">\int_{0}^{x}J_{n}\left(t\right)J_{n+1}\left(t\right)\mathrm{d}t=\tfrac{1}{2} \left(1-{J_{0}^{2}}\left(x\right)\right)-\sum_{k=1}^{n}{J_{k}^{2}}\left(x \right)=\sum_{k=n+1}^{\infty}{J_{k}^{2}}\left(x\right), if n=0,1,2,\ldots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px4">
+<title>Convolutions</title>    
+<para xml:id="C10.S22.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C10.S22.Px4.p1.s1">
+ <Math equation-number="10.22.31" mode="display" xml:id="C10.S22.E31">\int_{0}^{x}J_{\mu}\left(t\right)J_{\nu}\left(x-t\right)\mathrm{d}t=2\sum_{k=0 }^{\infty}(-1)^{k}J_{\mu+\nu+2k+1}\left(x\right), if \Re\mu&gt;-1,\Re\nu&gt;-1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C10.S22.Px4.p1.s2">
+ <Math equation-number="10.22.32" mode="display" xml:id="C10.S22.E32">\int_{0}^{x}J_{\nu}\left(t\right)J_{1-\nu}\left(x-t\right)\mathrm{d}t=J_{0} \left(x\right)-\cos x, if -1&lt;\Re\nu&lt;2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C10.S22.Px4.p1.s3">
+<Math equation-number="10.22.33" mode="display" xml:id="C10.S22.E33">\int_{0}^{x}J_{\nu}\left(t\right)J_{-\nu}\left(x-t\right)\mathrm{d}t=\sin x, if |\Re\nu|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C10.S22.Px4.p1.s4">
+<Math equation-number="10.22.34" mode="display" xml:id="C10.S22.E34">\int_{0}^{x}t^{-1}J_{\mu}\left(t\right)J_{\nu}\left(x-t\right)\mathrm{d}t= \frac{J_{\mu+\nu}\left(x\right)}{\mu}, if \Re\mu&gt;0,\Re\nu&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C10.S22.Px4.p1.s5">
+<Math equation-number="10.22.35" mode="display" xml:id="C10.S22.E35">\int_{0}^{x}\frac{J_{\mu}\left(t\right)J_{\nu}\left(x-t\right)\mathrm{d}t}{t(x -t)}=\frac{(\mu+\nu)J_{\mu+\nu}\left(x\right)}{\mu\nu x}, if \Re\mu&gt;0,\Re\nu&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px5">
+<title>Fractional Integral</title>    
+<para xml:id="C10.S22.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C10.S22.Px5.p1.s1">
+ <Math equation-number="10.22.36" mode="display" xml:id="C10.S22.E36">\frac{1}{\Gamma\left(\alpha\right)}\int_{0}^{x}(x-t)^{\alpha-1}J_{\nu}\left(t \right)\mathrm{d}t=2^{\alpha}\sum_{k=0}^{\infty}\frac{(\alpha)_{k}}{k!}J_{\nu+ \alpha+2k}\left(x\right), if \Re\alpha&gt;0,\Re\nu\geq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C10.S22.Px5.p1.s2">
+When <Math mode="inline" xml:id="C10.S22.Px5.p1.m1">\alpha=m=1,2,3,\ldots</Math> the left-hand side of (10.22.36) is the <Math mode="inline" xml:id="C10.S22.Px5.p1.m2">m</Math> th repeated integral of <Math mode="inline" xml:id="C10.S22.Px5.p1.m3">J_{\nu}\left(x\right)</Math> (§§1.4(v) and 1.15(vi)).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px6">
+<title>Orthogonality</title>     
+<para xml:id="C10.S22.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C10.S22.Px6.p1.s1">
+If <Math mode="inline" xml:id="C10.S22.Px6.p1.m1">\nu&gt;-1</Math> , then <Math equation-number="10.22.37" mode="display" xml:id="C10.S22.E37">\int_{0}^{1}tJ_{\nu}\left(j_{\nu,\ell}t\right)J_{\nu}\left(j_{\nu,m}t\right) \mathrm{d}t=\tfrac{1}{2}\left(J_{\nu}'\left(j_{\nu,\ell}\right)\right)^{2} \delta_{\ell,m},</Math> where <Math mode="inline" xml:id="C10.S22.Px6.p1.m2">j_{\nu,\ell}</Math> and <Math mode="inline" xml:id="C10.S22.Px6.p1.m3">j_{\nu,m}</Math> are zeros of <Math mode="inline" xml:id="C10.S22.Px6.p1.m4">J_{\nu}\left(x\right)</Math> (§10.21(i)), and <Math mode="inline" xml:id="C10.S22.Px6.p1.m5">\delta_{\ell,m}</Math> is Kronecker’s symbol.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C10.S22.Px6.p2.s1">
+Also, if <Math mode="inline" xml:id="C10.S22.Px6.p2.m1">a,b,\nu</Math> are real constants with <Math mode="inline" xml:id="C10.S22.Px6.p2.m2">b\neq 0</Math> and <Math mode="inline" xml:id="C10.S22.Px6.p2.m3">\nu&gt;-1</Math> , then <Math equation-number="10.22.38" mode="display" xml:id="C10.S22.E38">\int_{0}^{1}tJ_{\nu}\left(\alpha_{\ell}t\right)J_{\nu}\left(\alpha_{m}t\right) \mathrm{d}t=\left(\frac{a^{2}}{b^{2}}+\alpha_{\ell}^{2}-\nu^{2}\right)\frac{(J _{\nu}\left(\alpha_{\ell}\right))^{2}}{2\alpha_{\ell}^{2}}\delta_{\ell,m},</Math> where <Math mode="inline" xml:id="C10.S22.Px6.p2.m4">\alpha_{\ell}</Math> and <Math mode="inline" xml:id="C10.S22.Px6.p2.m5">\alpha_{m}</Math> are positive zeros of <Math mode="inline" xml:id="C10.S22.Px6.p2.m6">aJ_{\nu}\left(x\right)+bxJ_{\nu}'\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C10.S22.Px6.p2.s2">
+(Compare (10.22.55)).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S22.SS3">
+<title>Integrals over the Interval <Math mode="inline" xml:id="C10.S22.SS3.m1">(x,\infty)</Math></title>        
+ 
+ 
+<para xml:id="C10.S22.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C10.S22.SS3.p1.s1">
+When <Math mode="inline" xml:id="C10.S22.SS3.p1.m1">x&gt;0</Math> <Math equation-number="10.22.39" mode="display" xml:id="C10.S22.E39">\int_{x}^{\infty}\frac{J_{0}\left(t\right)}{t}\mathrm{d}t+\gamma+\ln\left( \tfrac{1}{2}x\right)=\int_{0}^{x}\frac{1-J_{0}\left(t\right)}{t}\mathrm{d}t= \sum_{k=1}^{\infty}(-1)^{k-1}\frac{(\frac{1}{2}x)^{2k}}{2k(k!)^{2}}</Math> , <Math equation-number="10.22.40" mode="display" xml:id="C10.S22.E40">\int_{x}^{\infty}\frac{Y_{0}\left(t\right)}{t}\mathrm{d}t=-\frac{1}{\pi}\left( \ln\left(\tfrac{1}{2}x\right)+\gamma\right)^{2}+\frac{\pi}{6}+\frac{2}{\pi} \sum_{k=1}^{\infty}(-1)^{k}\*\left(\psi\left(k+1\right)+\frac{1}{2k}-\ln\left( \tfrac{1}{2}x\right)\right)\frac{(\tfrac{1}{2}x)^{2k}}{2k(k!)^{2}}</Math> , where <Math mode="inline" xml:id="C10.S22.SS3.p1.m2">\gamma</Math> is Euler’s constant (§5.2(ii)).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S22.SS4">
+<title>Integrals over the Interval <Math mode="inline" xml:id="C10.S22.SS4.m1">(0,\infty)</Math></title>        
+ 
+<para xml:id="C10.S22.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C10.S22.SS4.p1.s1">
+ <Math equation-number="10.22.41" mode="display" xml:id="C10.S22.E41">\int_{0}^{\infty}J_{\nu}\left(t\right)\mathrm{d}t=1, if \Re\nu&gt;-1,</Math> , <Math equation-number="10.22.42" mode="display" xml:id="C10.S22.E42">\int_{0}^{\infty}Y_{\nu}\left(t\right)\mathrm{d}t=-\tan\left(\tfrac{1}{2}\nu \pi\right), if |\Re\nu|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C10.S22.SS4.p1.s2">
+<Math equation-number="10.22.43" mode="display" xml:id="C10.S22.E43">\int_{0}^{\infty}t^{\mu}J_{\nu}\left(t\right)\mathrm{d}t=2^{\mu}\frac{\Gamma \left(\tfrac{1}{2}\nu+\tfrac{1}{2}\mu+\tfrac{1}{2}\right)}{\Gamma\left(\tfrac{ 1}{2}\nu-\tfrac{1}{2}\mu+\tfrac{1}{2}\right)}, if \Re(\mu+\nu)&gt;-1, \Re\mu&lt;\tfrac{1}{2},</Math> , <Math equation-number="10.22.44" mode="display" xml:id="C10.S22.E44">\int_{0}^{\infty}t^{\mu}Y_{\nu}\left(t\right)\mathrm{d}t=\frac{2^{\mu}}{\pi} \Gamma\left(\tfrac{1}{2}\mu+\tfrac{1}{2}\nu+\tfrac{1}{2}\right)\Gamma\left( \tfrac{1}{2}\mu-\tfrac{1}{2}\nu+\tfrac{1}{2}\right)\sin\left(\tfrac{1}{2}\mu- \tfrac{1}{2}\nu\right)\pi, if \Re(\mu\pm\nu)&gt;-1, \Re\mu&lt;\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C10.S22.SS4.p1.s3">
+<Math equation-number="10.22.45" mode="display" xml:id="C10.S22.E45">\int_{0}^{\infty}\frac{1-J_{0}\left(t\right)}{t^{\mu}}\mathrm{d}t=-\frac{\pi \sec\left(\frac{1}{2}\mu\pi\right)}{2^{\mu}{\Gamma^{2}}\left(\frac{1}{2}\mu+ \frac{1}{2}\right)}, if 1&lt;\Re\mu&lt;3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C10.S22.SS4.p1.s4">
+<Math equation-number="10.22.46" mode="display" xml:id="C10.S22.E46">\int_{0}^{\infty}\frac{t^{\nu+1}J_{\nu}\left(at\right)}{(t^{2}+b^{2})^{\mu+1}} \mathrm{d}t=\frac{a^{\mu}b^{\nu-\mu}}{2^{\mu}\Gamma\left(\mu+1\right)}K_{\nu- \mu}\left(ab\right), if a&gt;0, \Re b&gt;0, -1&lt;\Re\nu&lt;2\Re\mu+\tfrac{3}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C10.S22.SS4.p1.s5">
+<Math equation-number="10.22.47" mode="display" xml:id="C10.S22.E47">\int_{0}^{\infty}\frac{t^{\nu}Y_{\nu}\left(at\right)}{t^{2}+b^{2}}\mathrm{d}t= -b^{\nu-1}K_{\nu}\left(ab\right), if a&gt;0,\Re b&gt;0,-\tfrac{1}{2}&lt;\Re\nu&lt;\tfrac{5}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="41" xml:id="C10.S22.SS4.p1.s6">
+For <Math mode="inline" xml:id="C10.S22.SS4.p1.m1">K_{\nu}</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="42" xml:id="C10.S22.SS4.p1.s7">
+<Math equation-number="10.22.48" mode="display" xml:id="C10.S22.E48">\int_{0}^{\infty}J_{\mu}\left(x\cosh\phi\right)(\cosh\phi)^{1-\mu}(\sinh\phi)^ {2\nu+1}\mathrm{d}\phi=2^{\nu}\Gamma\left(\nu+1\right)x^{-\nu-1}J_{\mu-\nu-1} \left(x\right), if x&gt;0,\Re\nu&gt;-1,\Re\mu&gt;2\Re\nu+\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="43" xml:id="C10.S22.SS4.p1.s8">
+<Math equation-number="10.22.49" mode="display" xml:id="C10.S22.E49">\int_{0}^{\infty}t^{\mu-1}e^{-at}J_{\nu}\left(bt\right)\mathrm{d}t=\frac{( \tfrac{1}{2}b)^{\nu}}{a^{\mu+\nu}}\Gamma\left(\mu+\nu\right)\*\mathbf{F}\left( \frac{\mu+\nu}{2},\frac{\mu+\nu+1}{2};\nu+1;-\frac{b^{2}}{a^{2}}\right), if \Re(\mu+\nu)&gt;0,\Re(a\pm ib)&gt;0,</Math> <Math equation-number="10.22.50" mode="display" xml:id="C10.S22.E50">\int_{0}^{\infty}t^{\mu-1}e^{-at}Y_{\nu}\left(bt\right)\mathrm{d}t=\cot\left( \nu\pi\right)\frac{(\tfrac{1}{2}b)^{\nu}\Gamma\left(\mu+\nu\right)}{(a^{2}+b^{ 2})^{\frac{1}{2}(\mu+\nu)}}\*\mathbf{F}\left(\frac{\mu+\nu}{2},\frac{1-\mu+\nu }{2};\nu+1;\frac{b^{2}}{a^{2}+b^{2}}\right)-\csc\left(\nu\pi\right)\frac{( \tfrac{1}{2}b)^{-\nu}\Gamma\left(\mu-\nu\right)}{(a^{2}+b^{2})^{\frac{1}{2}( \mu-\nu)}}\*\mathbf{F}\left(\frac{\mu-\nu}{2},\frac{1-\mu-\nu}{2};1-\nu;\frac{ b^{2}}{a^{2}+b^{2}}\right), if \Re\mu&gt;|\Re\nu|,\Re(a\pm ib)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="44" xml:id="C10.S22.SS4.p1.s9">
+For the hypergeometric function <Math mode="inline" xml:id="C10.S22.SS4.p1.m2">\mathbf{F}</Math> see §15.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="45" xml:id="C10.S22.SS4.p1.s10">
+<Math equation-number="10.22.51" mode="display" xml:id="C10.S22.E51">\int_{0}^{\infty}J_{\nu}\left(bt\right)\exp\left(-p^{2}t^{2}\right)t^{\nu+1} \mathrm{d}t=\frac{b^{\nu}}{(2p^{2})^{\nu+1}}\exp\left(-\frac{b^{2}}{4p^{2}} \right), if \Re\nu&gt;-1, \Re(p^{2})&gt;0,</Math> , <Math equation-number="10.22.52" mode="display" xml:id="C10.S22.E52">\int_{0}^{\infty}J_{\nu}\left(bt\right)\exp\left(-p^{2}t^{2}\right)\mathrm{d}t =\frac{\sqrt{\pi}}{2p}\exp\left(-\frac{b^{2}}{8p^{2}}\right)I_{\ifrac{\nu}{2}} \left(\frac{b^{2}}{8p^{2}}\right), if \Re\nu&gt;-1,\Re(p^{2})&gt;0,</Math> <Math equation-number="10.22.53" mode="display" xml:id="C10.S22.E53">\int_{0}^{\infty}Y_{2\nu}\left(bt\right)\exp\left(-p^{2}t^{2}\right)\mathrm{d} t=-\frac{\sqrt{\pi}}{2p}\exp\left(-\frac{b^{2}}{8p^{2}}\right)\left(I_{\nu} \left(\frac{b^{2}}{8p^{2}}\right)\tan\left(\nu\pi\right)+\frac{1}{\pi}K_{\nu} \left(\frac{b^{2}}{8p^{2}}\right)\sec\left(\nu\pi\right)\right), if |\Re\nu|&lt;\tfrac{1}{2}, \Re(p^{2})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="46" xml:id="C10.S22.SS4.p1.s11">
+For <Math mode="inline" xml:id="C10.S22.SS4.p1.m3">I</Math> and <Math mode="inline" xml:id="C10.S22.SS4.p1.m4">K</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="47" xml:id="C10.S22.SS4.p1.s12">
+<Math equation-number="10.22.54" mode="display" xml:id="C10.S22.E54">\int_{0}^{\infty}J_{\nu}\left(bt\right)\exp\left(-p^{2}t^{2}\right)t^{\mu-1} \mathrm{d}t=\frac{(\tfrac{1}{2}b/p)^{\nu}\Gamma\left(\tfrac{1}{2}\nu+\tfrac{1} {2}\mu\right)}{2p^{\mu}}\exp\left(-\frac{b^{2}}{4p^{2}}\right)\*{\mathbf{M}} \left(\tfrac{1}{2}\nu-\tfrac{1}{2}\mu+1,\nu+1,\frac{b^{2}}{4p^{2}}\right), if \Re(\mu+\nu)&gt;0, \Re(p^{2})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="48" xml:id="C10.S22.SS4.p1.s13">
+For the confluent hypergeometric function <Math mode="inline" xml:id="C10.S22.SS4.p1.m5">{\mathbf{M}}</Math> see §13.2(i).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S22.Px7">
+<title>Orthogonality</title>     
+<para xml:id="C10.S22.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C10.S22.Px7.p1.s1">
+ <Math equation-number="10.22.55" mode="display" xml:id="C10.S22.E55">\int_{0}^{\infty}t^{-1}J_{\nu+2\ell+1}\left(t\right)J_{\nu+2m+1}\left(t\right) \mathrm{d}t=\frac{\delta_{\ell,m}}{2(2\ell+\nu+1)}, if \nu+\ell+m&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px8">
+<title>Weber–Schafheitlin Discontinuous Integrals, including Special Cases</title>    
+<para xml:id="C10.S22.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C10.S22.Px8.p1.s1">
+ <Math equation-number="10.22.56" mode="display" xml:id="C10.S22.E56">\int_{0}^{\infty}\frac{J_{\mu}\left(at\right)J_{\nu}\left(bt\right)}{t^{ \lambda}}\mathrm{d}t=\frac{a^{\mu}\Gamma\left(\frac{1}{2}\nu+\frac{1}{2}\mu- \frac{1}{2}\lambda+\frac{1}{2}\right)}{2^{\lambda}b^{\mu-\lambda+1}\Gamma\left (\frac{1}{2}\nu-\frac{1}{2}\mu+\frac{1}{2}\lambda+\frac{1}{2}\right)}\*\mathbf {F}\left(\tfrac{1}{2}(\mu+\nu-\lambda+1),\tfrac{1}{2}(\mu-\nu-\lambda+1);\mu+1 ;\frac{a^{2}}{b^{2}}\right), if 0&lt;a&lt;b, \Re(\mu+\nu+1)&gt;\Re\lambda&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C10.S22.Px8.p1.s2">
+If <Math mode="inline" xml:id="C10.S22.Px8.p1.m1">0&lt;b&lt;a</Math> , then interchange <Math mode="inline" xml:id="C10.S22.Px8.p1.m2">a</Math> and <Math mode="inline" xml:id="C10.S22.Px8.p1.m3">b</Math> , and also <Math mode="inline" xml:id="C10.S22.Px8.p1.m4">\mu</Math> and <Math mode="inline" xml:id="C10.S22.Px8.p1.m5">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C10.S22.Px8.p1.s3">
+If <Math mode="inline" xml:id="C10.S22.Px8.p1.m6">b=a</Math> , then <Math equation-number="10.22.57" mode="display" xml:id="C10.S22.E57">\int_{0}^{\infty}\frac{J_{\mu}\left(at\right)J_{\nu}\left(at\right)}{t^{ \lambda}}\mathrm{d}t=\frac{(\frac{1}{2}a)^{\lambda-1}\Gamma\left(\frac{1}{2} \mu+\frac{1}{2}\nu-\frac{1}{2}\lambda+\frac{1}{2}\right)\Gamma\left(\lambda \right)}{2\Gamma\left(\frac{1}{2}\lambda+\frac{1}{2}\nu-\frac{1}{2}\mu+\frac{1 }{2}\right)\Gamma\left(\frac{1}{2}\lambda+\frac{1}{2}\mu-\frac{1}{2}\nu+\frac{ 1}{2}\right)\Gamma\left(\frac{1}{2}\lambda+\frac{1}{2}\mu+\frac{1}{2}\nu+\frac {1}{2}\right)}, if \Re(\mu+\nu+1)&gt;\Re\lambda&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="53" xml:id="C10.S22.Px8.p1.s4">
+<Math equation-number="10.22.58" mode="display" xml:id="C10.S22.E58">\int_{0}^{\infty}\frac{J_{\nu}\left(at\right)J_{\nu}\left(bt\right)}{t^{ \lambda}}\mathrm{d}t=\frac{(ab)^{\nu}\Gamma\left(\nu-\frac{1}{2}\lambda+\frac{ 1}{2}\right)}{2^{\lambda}(a^{2}+b^{2})^{\nu-\frac{1}{2}\lambda+\frac{1}{2}} \Gamma\left(\frac{1}{2}\lambda+\frac{1}{2}\right)}\mathbf{F}\left(\frac{2\nu+1 -\lambda}{4},\frac{2\nu+3-\lambda}{4};\nu+1;\frac{4a^{2}b^{2}}{(a^{2}+b^{2})^{ 2}}\right), if a\neq b, \Re(2\nu+1)&gt;\Re\lambda&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C10.S22.Px8.p2.s1">
+When <Math mode="inline" xml:id="C10.S22.Px8.p2.m1">\Re\mu&gt;-1</Math> <Math equation-number="10.22.59" mode="display" xml:id="C10.S22.E59">\int_{0}^{\infty}e^{ibt}J_{\mu}\left(at\right)\mathrm{d}t=\begin{cases}\dfrac{ \exp\left(i\mu\operatorname{arcsin}\left(b/a\right)\right)}{(a^{2}-b^{2})^{ \frac{1}{2}}},&amp;0\leq b&lt;a,\\ \dfrac{ia^{\mu}\exp\left(\frac{1}{2}\mu\pi i\right)}{(b^{2}-a^{2})^{\frac{1}{2 }}\left(b+(b^{2}-a^{2})^{\frac{1}{2}}\right)^{\mu}},&amp;0&lt;a&lt;b.\end{cases</Math> }
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S22.Px8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C10.S22.Px8.p3.s1">
+ <Math equation-number="10.22.60" mode="display" xml:id="C10.S22.E60">\int_{0}^{\infty}e^{ibt}Y_{0}\left(at\right)\mathrm{d}t=\begin{cases}(2i/\pi)( a^{2}-b^{2})^{-\frac{1}{2}}\operatorname{arcsin}\left(b/a\right),&amp;0\leq b&lt;a,\\ (b^{2}-a^{2})^{-\frac{1}{2}}\left(-1+\dfrac{2i}{\pi}\ln\left(\dfrac{a}{b+(b^{2 }-a^{2})^{\frac{1}{2}}}\right)\right),&amp;0&lt;a&lt;b.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C10.S22.Px8.p4.s1">
+When <Math mode="inline" xml:id="C10.S22.Px8.p4.m1">\Re\mu&gt;0</Math> , <Math equation-number="10.22.61" mode="display" xml:id="C10.S22.E61">\int_{0}^{\infty}t^{-1}e^{ibt}J_{\mu}\left(at\right)\mathrm{d}t=\begin{cases}( 1/\mu)\exp\left(i\mu\operatorname{arcsin}\left(b/a\right)\right),&amp;0\leq b\leq a ,\\ \dfrac{a^{\mu}\exp\left(\frac{1}{2}\mu\pi i\right)}{\mu\left(b+(b^{2}-a^{2})^{ \frac{1}{2}}\right)^{\mu}},&amp;0&lt;a\leq b.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px8.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C10.S22.Px8.p5.s1">
+When <Math mode="inline" xml:id="C10.S22.Px8.p5.m1">\Re\nu&gt;\Re\mu&gt;-1</Math> , <Math equation-number="10.22.62" mode="display" xml:id="C10.S22.E62">\int_{0}^{\infty}t^{\mu-\nu+1}J_{\mu}\left(at\right)J_{\nu}\left(bt\right) \mathrm{d}t=\begin{cases}0,&amp;0&lt;b&lt;a,\\ \dfrac{2^{\mu-\nu+1}a^{\mu}(b^{2}-a^{2})^{\nu-\mu-1}}{b^{\nu}\Gamma\left(\nu- \mu\right)},&amp;0&lt;a\leq b.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px8.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C10.S22.Px8.p6.s1">
+When <Math mode="inline" xml:id="C10.S22.Px8.p6.m1">\Re\mu&gt;0</Math> , <Math equation-number="10.22.63" mode="display" xml:id="C10.S22.E63">\int_{0}^{\infty}J_{\mu}\left(at\right)J_{\mu-1}\left(bt\right)\mathrm{d}t= \begin{cases}b^{\mu-1}a^{-\mu},&amp;0&lt;b&lt;a,\\ (2b)^{-1},&amp;b=a(&gt;0),\\ 0,&amp;0&lt;a&lt;b.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px8.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C10.S22.Px8.p7.s1">
+When <Math mode="inline" xml:id="C10.S22.Px8.p7.m1">n=0,1,2,\dots</Math> and <Math mode="inline" xml:id="C10.S22.Px8.p7.m2">\Re\mu&gt;-n-1</Math> , <Math equation-number="10.22.64" mode="display" xml:id="C10.S22.E64">\int_{0}^{\infty}J_{\mu+2n+1}\left(at\right)J_{\mu}\left(bt\right)\mathrm{d}t= \begin{cases}\dfrac{b^{\mu}\Gamma\left(\mu+n+1\right)}{a^{\mu+1}n!}\mathbf{F} \left(-n,\mu+n+1;\mu+1;\dfrac{b^{2}}{a^{2}}\right),&amp;0&lt;b&lt;a,\\ (-1)^{n}/(2a),&amp;b=a(&gt;0),\\ 0,&amp;0&lt;a&lt;b.\end{cases</Math> } <Math equation-number="10.22.65" mode="display" xml:id="C10.S22.E65">\int_{0}^{\infty}J_{0}\left(at\right)\left(J_{0}\left(bt\right)-J_{0}\left(ct \right)\right)\frac{\mathrm{d}t}{t}=\begin{cases}0,&amp;0\leq b&lt;a,0&lt;c\leq a,\\ \ln\left(c/a\right),&amp;0\leq b&lt;a\leq c.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px9">
+<title>Other Double Products</title>   
+<para xml:id="C10.S22.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C10.S22.Px9.p1.s1">
+In (10.22.66)–(10.22.70)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C10.S22.Px9.p1.s2">
+<Math mode="inline" xml:id="C10.S22.Px9.p1.m1">a,b,c</Math> are positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="62" xml:id="C10.S22.Px9.p1.s3">
+<Math equation-number="10.22.66" mode="display" xml:id="C10.S22.E66">\int_{0}^{\infty}e^{-at}J_{\nu}\left(bt\right)J_{\nu}\left(ct\right)\mathrm{d} t=\frac{1}{\pi(bc)^{\frac{1}{2}}}\*Q_{\nu-\frac{1}{2}}\left(\frac{a^{2}+b^{2}+ c^{2}}{2bc}\right), if \Re\nu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="63" xml:id="C10.S22.Px9.p1.s4">
+<Math equation-number="10.22.67" mode="display" xml:id="C10.S22.E67">\int_{0}^{\infty}t\exp\left(-p^{2}t^{2}\right)J_{\nu}\left(at\right)J_{\nu} \left(bt\right)\mathrm{d}t=\frac{1}{2p^{2}}\exp\left(-\frac{a^{2}+b^{2}}{4p^{2 }}\right)I_{\nu}\left(\frac{ab}{2p^{2}}\right), if \Re\nu&gt;-1,\Re(p^{2})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="64" xml:id="C10.S22.Px9.p1.s5">
+<Math equation-number="10.22.68" mode="display" xml:id="C10.S22.E68">\int_{0}^{\infty}t\exp\left(-p^{2}t^{2}\right)J_{0}\left(at\right)Y_{0}\left( at\right)\mathrm{d}t=-\frac{1}{2\pi p^{2}}\exp\left(-\frac{a^{2}}{2p^{2}} \right)K_{0}\left(\frac{a^{2}}{2p^{2}}\right), if \Re(p^{2})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="65" xml:id="C10.S22.Px9.p1.s6">
+For the associated Legendre function <Math mode="inline" xml:id="C10.S22.Px9.p1.m2">Q</Math> see §14.3(ii) with <Math mode="inline" xml:id="C10.S22.Px9.p1.m3">\mu=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="66" xml:id="C10.S22.Px9.p1.s7">
+For <Math mode="inline" xml:id="C10.S22.Px9.p1.m4">I</Math> and <Math mode="inline" xml:id="C10.S22.Px9.p1.m5">K</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="67" xml:id="C10.S22.Px9.p1.s8">
+<Math equation-number="10.22.69" mode="display" xml:id="C10.S22.E69">\int_{0}^{\infty}J_{\nu}\left(at\right)J_{\nu}\left(bt\right)\frac{t\mathrm{d} t}{t^{2}-z^{2}}=\left\{\begin{array}[]{ll}\frac{1}{2}\pi iJ_{\nu}\left(bz \right){H^{(1)}_{\nu}}\left(az\right),&amp;a&gt;b\\ \frac{1}{2}\pi iJ_{\nu}\left(az\right){H^{(1)}_{\nu}}\left(bz\right),&amp;b&gt;a\end{ array}\right\}, if \Re\nu&gt;-1,\Im z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="68" xml:id="C10.S22.Px9.p1.s9">
+<Math equation-number="10.22.70" mode="display" xml:id="C10.S22.E70">\int_{0}^{\infty}Y_{\nu}\left(at\right)J_{\nu+1}\left(bt\right)\frac{t\mathrm{ d}t}{t^{2}-z^{2}}=\frac{1}{2}\pi J_{\nu+1}\left(bz\right){H^{(1)}_{\nu}}\left( az\right), if a\geq b&gt;0, \Re\nu&gt;-\tfrac{3}{2},\Im z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="69" xml:id="C10.S22.Px9.p1.s10">
+Equation (10.22.70) also remains valid if the order <Math mode="inline" xml:id="C10.S22.Px9.p1.m6">\nu+1</Math> of the <Math mode="inline" xml:id="C10.S22.Px9.p1.m7">J</Math> functions on both sides is replaced by <Math mode="inline" xml:id="C10.S22.Px9.p1.m8">\nu+2n-3</Math> , <Math mode="inline" xml:id="C10.S22.Px9.p1.m9">n=1,2,\dots</Math> , and the constraint <Math mode="inline" xml:id="C10.S22.Px9.p1.m10">\Re\nu&gt;-\frac{3}{2}</Math> is replaced by <Math mode="inline" xml:id="C10.S22.Px9.p1.m11">\Re\nu&gt;-n+\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S22.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C10.S22.Px9.p2.s1">
+See also §1.17(ii) for an integral representation of the Dirac delta in terms of a product of Bessel functions.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S22.Px10">
+<title>Triple Products</title>    
+<para xml:id="C10.S22.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C10.S22.Px10.p1.s1">
+In (10.22.71) and (10.22.72)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C10.S22.Px10.p1.s2">
+<Math mode="inline" xml:id="C10.S22.Px10.p1.m1">a,b,c</Math> are positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="73" xml:id="C10.S22.Px10.p1.s3">
+<Math equation-number="10.22.71" mode="display" xml:id="C10.S22.E71">\int_{0}^{\infty}J_{\mu}\left(at\right)J_{\nu}\left(bt\right)J_{\nu}\left(ct \right)t^{1-\mu}\mathrm{d}t=\frac{(bc)^{\mu-1}(\sin\phi)^{\mu-\frac{1}{2}}}{(2 \pi)^{\frac{1}{2}}a^{\mu}}\mathsf{P}^{\frac{1}{2}-\mu}_{\nu-\frac{1}{2}}(\cos \phi), if \Re\mu&gt;-\tfrac{1}{2},\Re\nu&gt;-1,|b-c|&lt;a&lt;b+c,\cos\phi=(b^{2}+c^{2}-a^{2})/(2bc)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="74" xml:id="C10.S22.Px10.p1.s4">
+<Math equation-number="10.22.72" mode="display" xml:id="C10.S22.E72">\int_{0}^{\infty}J_{\mu}\left(at\right)J_{\nu}\left(bt\right)J_{\nu}\left(ct \right)t^{1-\mu}\mathrm{d}t=\frac{(bc)^{\mu-1}\cos\left(\nu\pi\right)(\sinh \chi)^{\mu-\frac{1}{2}}}{(\frac{1}{2}\pi^{3})^{\frac{1}{2}}a^{\mu}}Q^{\frac{1} {2}-\mu}_{\nu-\frac{1}{2}}\left(\cosh\chi\right), if \Re\mu&gt;-\tfrac{1}{2},\Re\nu&gt;-1,a&gt;b+c,\cosh\chi=(a^{2}-b^{2}-c^{2})/(2bc)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="75" xml:id="C10.S22.Px10.p1.s5">
+For the Ferrers function <Math mode="inline" xml:id="C10.S22.Px10.p1.m2">\mathsf{P}</Math> and the associated Legendre function <Math mode="inline" xml:id="C10.S22.Px10.p1.m3">Q</Math> , see §§14.3(i) and 14.3(ii), respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C10.S22.Px10.p2.s1">
+In (10.22.74) and (10.22.75),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C10.S22.Px10.p2.s2">
+<Math mode="inline" xml:id="C10.S22.Px10.p2.m1">a,b,c</Math> are positive constants and <Math equation-number="10.22.73" mode="display" xml:id="C10.S22.E73">A=s(s-a)(s-b)(s-c),s=\tfrac{1}{2}(a+b+c)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="78" xml:id="C10.S22.Px10.p2.s3">
+(Thus if <Math mode="inline" xml:id="C10.S22.Px10.p2.m2">a,b,c</Math> are the sides of a triangle, then <Math mode="inline" xml:id="C10.S22.Px10.p2.m3">A^{\frac{1}{2}}</Math> is the area of the triangle.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C10.S22.Px10.p3.s1">
+If <Math mode="inline" xml:id="C10.S22.Px10.p3.m1">\Re\nu&gt;-\tfrac{1}{2}</Math> , then <Math equation-number="10.22.74" mode="display" xml:id="C10.S22.E74">\int_{0}^{\infty}J_{\nu}\left(at\right)J_{\nu}\left(bt\right)J_{\nu}\left(ct \right)t^{1-\nu}\mathrm{d}t=\begin{cases}\dfrac{2^{\nu-1}A^{\nu-\frac{1}{2}}}{ \pi^{\frac{1}{2}}(abc)^{\nu}\Gamma\left(\nu+\frac{1}{2}\right)},&amp;A&gt;0,\\ 0,&amp;A\leq 0.\end{cases}</Math> , <Math equation-number="10.22.75" mode="display" xml:id="C10.S22.E75">\int_{0}^{\infty}Y_{\nu}\left(at\right)J_{\nu}\left(bt\right)J_{\nu}\left(ct \right)t^{1+\nu}\mathrm{d}t=\begin{cases}-\dfrac{(abc)^{\nu}(-A)^{-\nu-\frac{1 }{2}}}{\pi^{\frac{1}{2}}2^{\nu+1}\Gamma\left(\frac{1}{2}-\nu\right)},&amp;0&lt;a&lt;|b-c |,\\ 0,&amp;|b-c|&lt;a&lt;b+c,\\ \dfrac{(abc)^{\nu}(-A)^{-\nu-\frac{1}{2}}}{\pi^{\frac{1}{2}}2^{\nu+1}\Gamma \left(\frac{1}{2}-\nu\right)},&amp;a&gt;b+c.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.Px10.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C10.S22.Px10.p4.s1">
+Additional infinite integrals over the product of three Bessel functions (including modified Bessel functions) are given inGervois and Navelet (1984, 1985a, 1985b, 1986a, 1986b).
+</sentence>
+
+</para>
+   
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S22.SS5">
+<title>Hankel Transform</title>        
+ 
+  
+<para xml:id="C10.S22.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C10.S22.SS5.p1.s1">
+The Hankel transform (or Bessel transform) of a function <Math mode="inline" xml:id="C10.S22.SS5.p1.m1">f(x)</Math> is defined as <Math equation-number="10.22.76" mode="display" xml:id="C10.S22.E76">g(y)=\int_{0}^{\infty}f(x)J_{\nu}\left(xy\right)(xy)^{\frac{1}{2}}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C10.S22.SS5.p2.s1">
+Hankel’s inversion theorem is given by <Math equation-number="10.22.77" mode="display" xml:id="C10.S22.E77">f(y)=\int_{0}^{\infty}g(x)J_{\nu}\left(xy\right)(xy)^{\frac{1}{2}}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="83" xml:id="C10.S22.SS5.p2.s2">
+Sufficient conditions for the validity of (10.22.77) are that <Math mode="inline" xml:id="C10.S22.SS5.p2.m1">\int_{0}^{\infty}|f(x)|\mathrm{d}x&lt;\infty</Math> when <Math mode="inline" xml:id="C10.S22.SS5.p2.m2">\nu\geq-\tfrac{1}{2}</Math> , or that <Math mode="inline" xml:id="C10.S22.SS5.p2.m3">\int_{0}^{\infty}|f(x)|\mathrm{d}x&lt;\infty</Math> and <Math mode="inline" xml:id="C10.S22.SS5.p2.m4">\int_{0}^{1}x^{\nu+\frac{1}{2}}|f(x)|\mathrm{d}x&lt;\infty</Math> when <Math mode="inline" xml:id="C10.S22.SS5.p2.m5">-1&lt;\nu&lt;-\tfrac{1}{2}</Math> ; seeTitchmarsh (1986a, Theorem 135, Chapter 8) andAkhiezer (1988, p. 62).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C10.S22.SS5.p3.s1">
+For asymptotic expansions of Hankel transforms seeWong (1976, 1977), Frenzen and Wong (1985a) and Galapon and Martinez (2014).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S22.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C10.S22.SS5.p4.s1">
+For collections of Hankel transforms see Erdélyi et al. (1954b, Chapter 8) and Oberhettinger (1972).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S22.SS6">
+<title>Compendia</title>        
+  
+<para xml:id="C10.S22.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C10.S22.SS6.p1.s1">
+For collections of integrals of the functions <Math mode="inline" xml:id="C10.S22.SS6.p1.m1">J_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S22.SS6.p1.m2">Y_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S22.SS6.p1.m3">{H^{(1)}_{\nu}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C10.S22.SS6.p1.m4">{H^{(2)}_{\nu}}\left(z\right)</Math> , including integrals with respect to the order, seeAndrews et al. (1999, pp. 216–225), Apelblat (1983, §12),Erdélyi et al. (1953b, §§7.7.1–7.7.7 and 7.14–7.14.2),Erdélyi et al. (1954a, b),Gradshteyn and Ryzhik (2000, §§5.5 and 6.5–6.7),Gröbner and Hofreiter (1950, pp. 196–204), Luke (1962),Magnus et al. (1966, §3.8), Marichev (1983, pp. 191–216),Oberhettinger (1974, §§1.10 and 2.7),Oberhettinger (1990, §§1.13–1.16 and 2.13–2.16),Oberhettingerand Badii (1973, §§1.14 and 2.12),Okui (1974, 1975), Prudnikov et al. (1986b, §§1.8–1.10,2.12–2.14, 3.2.4–3.2.7, 3.3.2,and 3.4.1),Prudnikovet al. (1992a, §§3.12–3.14),Prudnikovet al. (1992b, §§3.12–3.14),Watson(1944, Chapters 5, 12, 13, and 14), andWheelon (1968).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

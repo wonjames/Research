@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S2">
+<title>Basic Definitions</title>        
+ 
+<paragraph xml:id="C26.S2.Px1">
+<title>Permutation</title>     
+<para xml:id="C26.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S2.Px1.p1.s1">
+A permutation is a one-to-one and onto function from a non-empty set to itself.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S2.Px1.p1.s2">
+If the set consists of the integers 1 through <Math mode="inline" xml:id="C26.S2.Px1.p1.m1">n</Math> , a permutation <Math mode="inline" xml:id="C26.S2.Px1.p1.m2">\sigma</Math> can be thought of as a rearrangement of these integers where the integer in position <Math mode="inline" xml:id="C26.S2.Px1.p1.m3">j</Math> is <Math mode="inline" xml:id="C26.S2.Px1.p1.m4">\sigma(j)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S2.Px1.p1.s3">
+Thus <Math mode="inline" xml:id="C26.S2.Px1.p1.m5">231</Math> is the permutation <Math mode="inline" xml:id="C26.S2.Px1.p1.m6">\sigma(1)=2</Math> , <Math mode="inline" xml:id="C26.S2.Px1.p1.m7">\sigma(2)=3</Math> , <Math mode="inline" xml:id="C26.S2.Px1.p1.m8">\sigma(3)=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C26.S2.Px2">
+<title>Cycle</title>    
+<para xml:id="C26.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S2.Px2.p1.s1">
+Given a finite set <Math mode="inline" xml:id="C26.S2.Px2.p1.m1">S</Math> with permutation <Math mode="inline" xml:id="C26.S2.Px2.p1.m2">\sigma</Math> , a cycle is an ordered equivalence class of elements of <Math mode="inline" xml:id="C26.S2.Px2.p1.m3">S</Math> where <Math mode="inline" xml:id="C26.S2.Px2.p1.m4">j</Math> is equivalent to <Math mode="inline" xml:id="C26.S2.Px2.p1.m5">k</Math> if there exists an <Math mode="inline" xml:id="C26.S2.Px2.p1.m6">\ell=\ell(j,k)</Math> such that <Math mode="inline" xml:id="C26.S2.Px2.p1.m7">j=\sigma^{\ell}(k)</Math> , where <Math mode="inline" xml:id="C26.S2.Px2.p1.m8">\sigma^{1}=\sigma</Math> and <Math mode="inline" xml:id="C26.S2.Px2.p1.m9">\sigma^{\ell}</Math> is the composition of <Math mode="inline" xml:id="C26.S2.Px2.p1.m10">\sigma</Math> with <Math mode="inline" xml:id="C26.S2.Px2.p1.m11">\sigma^{\ell-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C26.S2.Px2.p1.s2">
+It is ordered so that <Math mode="inline" xml:id="C26.S2.Px2.p1.m12">\sigma(j)</Math> follows <Math mode="inline" xml:id="C26.S2.Px2.p1.m13">j</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C26.S2.Px2.p1.s3">
+If, for example, a permutation of the integers 1 through 6 is denoted by <Math mode="inline" xml:id="C26.S2.Px2.p1.m14">256413</Math> , then the cycles are <Math mode="inline" xml:id="C26.S2.Px2.p1.m15">(1,2,5)</Math> , <Math mode="inline" xml:id="C26.S2.Px2.p1.m16">(3,6)</Math> , and <Math mode="inline" xml:id="C26.S2.Px2.p1.m17">(4)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C26.S2.Px2.p1.s4">
+Here <Math mode="inline" xml:id="C26.S2.Px2.p1.m18">\sigma(1)=2,\sigma(2)=5</Math> , and <Math mode="inline" xml:id="C26.S2.Px2.p1.m19">\sigma(5)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C26.S2.Px2.p1.s5">
+The function <Math mode="inline" xml:id="C26.S2.Px2.p1.m20">\sigma</Math> also interchanges 3 and 6, and sends 4 to itself.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C26.S2.Px3">
+<title>Lattice Path</title>     
+<para xml:id="C26.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C26.S2.Px3.p1.s1">
+A lattice path is a directed path on the plane integer lattice <Math mode="inline" xml:id="C26.S2.Px3.p1.m1">\{0,1,2,\ldots\}\times\{0,1,2,\ldots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C26.S2.Px3.p1.s2">
+Unless otherwise specified, it consists of horizontal segments corresponding to the vector <Math mode="inline" xml:id="C26.S2.Px3.p1.m2">(1,0)</Math> and vertical segments corresponding to the vector <Math mode="inline" xml:id="C26.S2.Px3.p1.m3">(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C26.S2.Px3.p1.s3">
+For an example see Figure 26.9.2.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S2.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C26.S2.Px3.p2.s1">
+A k-dimensional lattice path is a directed path composed of segments that connect vertices in <Math mode="inline" xml:id="C26.S2.Px3.p2.m1">\{0,1,2,\dots\}^{k}</Math> so that each segment increases one coordinate by exactly one unit.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C26.S2.Px4">
+<title>Partition</title>  
+    
+<para xml:id="C26.S2.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C26.S2.Px4.p1.s1">
+A partition of a set <Math mode="inline" xml:id="C26.S2.Px4.p1.m1">S</Math> is an unordered collection of pairwise disjoint nonempty sets whose union is <Math mode="inline" xml:id="C26.S2.Px4.p1.m2">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C26.S2.Px4.p1.s2">
+As an example, <Math mode="inline" xml:id="C26.S2.Px4.p1.m3">\{1,3,4\}</Math> , <Math mode="inline" xml:id="C26.S2.Px4.p1.m4">\{2,6\}</Math> , <Math mode="inline" xml:id="C26.S2.Px4.p1.m5">\{5\}</Math> is a partition of <Math mode="inline" xml:id="C26.S2.Px4.p1.m6">\{1,2,3,4,5,6\}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S2.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C26.S2.Px4.p2.s1">
+A partition of a nonnegative integer <Math mode="inline" xml:id="C26.S2.Px4.p2.m1">n</Math> is an unordered collection of positive integers whose sum is <Math mode="inline" xml:id="C26.S2.Px4.p2.m2">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C26.S2.Px4.p2.s2">
+As an example, <Math mode="inline" xml:id="C26.S2.Px4.p2.m3">\{1,1,1,2,4,4\}</Math> is a partition of 13.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C26.S2.Px4.p2.s3">
+The total number of partitions of <Math mode="inline" xml:id="C26.S2.Px4.p2.m4">n</Math> is denoted by <Math mode="inline" xml:id="C26.S2.Px4.p2.m7">p\left(n\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C26.S2.Px4.p2.s4">
+See Table 26.2.1 for <Math mode="inline" xml:id="C26.S2.Px4.p2.m8">n=0(1)50</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C26.S2.Px4.p2.s5">
+For the actual partitions ( <Math mode="inline" xml:id="C26.S2.Px4.p2.m9">\pi</Math> ) for <Math mode="inline" xml:id="C26.S2.Px4.p2.m10">n=1(1)5</Math> see Table 26.4.1.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S2.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C26.S2.Px4.p3.s1">
+The integers whose sum is <Math mode="inline" xml:id="C26.S2.Px4.p3.m1">n</Math> are referred to as the parts in the partition.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C26.S2.Px4.p3.s2">
+The example <Math mode="inline" xml:id="C26.S2.Px4.p3.m2">\{1,1,1,2,4,4\}</Math> has six parts, three of which equal 1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="22" xml:id="C26.S2.T1.s1">
+Table 26.2.1: Partitions <Math mode="inline" xml:id="C26.S2.T1.m2">p\left(n\right)</Math> .
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="1" xml:id="C26.S2.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="2" xml:id="C26.S2.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m2">p\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="3" xml:id="C26.S2.T1.t1.s3">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m3">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="4" xml:id="C26.S2.T1.t1.s4">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m4">p\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="5" xml:id="C26.S2.T1.t1.s5">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m5">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="6" xml:id="C26.S2.T1.t1.s6">
+<Math mode="inline" xml:id="C26.S2.T1.t1.r1.m6">p\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="7" xml:id="C26.S2.T1.t1.s7">
+0
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="8" xml:id="C26.S2.T1.t1.s8">
+1
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="9" xml:id="C26.S2.T1.t1.s9">
+17
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="10" xml:id="C26.S2.T1.t1.s10">
+297
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="11" xml:id="C26.S2.T1.t1.s11">
+34
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="12" xml:id="C26.S2.T1.t1.s12">
+12310
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="13" xml:id="C26.S2.T1.t1.s13">
+1
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="14" xml:id="C26.S2.T1.t1.s14">
+1
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="15" xml:id="C26.S2.T1.t1.s15">
+18
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="16" xml:id="C26.S2.T1.t1.s16">
+385
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="17" xml:id="C26.S2.T1.t1.s17">
+35
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="18" xml:id="C26.S2.T1.t1.s18">
+14883
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="19" xml:id="C26.S2.T1.t1.s19">
+2
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="20" xml:id="C26.S2.T1.t1.s20">
+2
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="21" xml:id="C26.S2.T1.t1.s21">
+19
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="22" xml:id="C26.S2.T1.t1.s22">
+490
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="23" xml:id="C26.S2.T1.t1.s23">
+36
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="24" xml:id="C26.S2.T1.t1.s24">
+17977
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="25" xml:id="C26.S2.T1.t1.s25">
+3
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="26" xml:id="C26.S2.T1.t1.s26">
+3
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="27" xml:id="C26.S2.T1.t1.s27">
+20
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="28" xml:id="C26.S2.T1.t1.s28">
+627
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="29" xml:id="C26.S2.T1.t1.s29">
+37
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="30" xml:id="C26.S2.T1.t1.s30">
+21637
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="31" xml:id="C26.S2.T1.t1.s31">
+4
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="32" xml:id="C26.S2.T1.t1.s32">
+5
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="33" xml:id="C26.S2.T1.t1.s33">
+21
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="34" xml:id="C26.S2.T1.t1.s34">
+792
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="35" xml:id="C26.S2.T1.t1.s35">
+38
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="36" xml:id="C26.S2.T1.t1.s36">
+26015
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="37" xml:id="C26.S2.T1.t1.s37">
+5
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="38" xml:id="C26.S2.T1.t1.s38">
+7
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="39" xml:id="C26.S2.T1.t1.s39">
+22
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="40" xml:id="C26.S2.T1.t1.s40">
+1002
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="41" xml:id="C26.S2.T1.t1.s41">
+39
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="42" xml:id="C26.S2.T1.t1.s42">
+31185
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="43" xml:id="C26.S2.T1.t1.s43">
+6
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="44" xml:id="C26.S2.T1.t1.s44">
+11
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="45" xml:id="C26.S2.T1.t1.s45">
+23
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="46" xml:id="C26.S2.T1.t1.s46">
+1255
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="47" xml:id="C26.S2.T1.t1.s47">
+40
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="48" xml:id="C26.S2.T1.t1.s48">
+37338
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="49" xml:id="C26.S2.T1.t1.s49">
+7
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="50" xml:id="C26.S2.T1.t1.s50">
+15
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="51" xml:id="C26.S2.T1.t1.s51">
+24
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="52" xml:id="C26.S2.T1.t1.s52">
+1575
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="53" xml:id="C26.S2.T1.t1.s53">
+41
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="54" xml:id="C26.S2.T1.t1.s54">
+44583
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="55" xml:id="C26.S2.T1.t1.s55">
+8
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="56" xml:id="C26.S2.T1.t1.s56">
+22
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="57" xml:id="C26.S2.T1.t1.s57">
+25
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="58" xml:id="C26.S2.T1.t1.s58">
+1958
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="59" xml:id="C26.S2.T1.t1.s59">
+42
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="60" xml:id="C26.S2.T1.t1.s60">
+53174
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="61" xml:id="C26.S2.T1.t1.s61">
+9
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="62" xml:id="C26.S2.T1.t1.s62">
+30
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="63" xml:id="C26.S2.T1.t1.s63">
+26
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="64" xml:id="C26.S2.T1.t1.s64">
+2436
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="65" xml:id="C26.S2.T1.t1.s65">
+43
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="66" xml:id="C26.S2.T1.t1.s66">
+63261
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="67" xml:id="C26.S2.T1.t1.s67">
+10
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="68" xml:id="C26.S2.T1.t1.s68">
+42
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="69" xml:id="C26.S2.T1.t1.s69">
+27
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="70" xml:id="C26.S2.T1.t1.s70">
+3010
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="71" xml:id="C26.S2.T1.t1.s71">
+44
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="72" xml:id="C26.S2.T1.t1.s72">
+75175
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="73" xml:id="C26.S2.T1.t1.s73">
+11
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="74" xml:id="C26.S2.T1.t1.s74">
+56
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="75" xml:id="C26.S2.T1.t1.s75">
+28
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="76" xml:id="C26.S2.T1.t1.s76">
+3718
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="77" xml:id="C26.S2.T1.t1.s77">
+45
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="78" xml:id="C26.S2.T1.t1.s78">
+89134
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="79" xml:id="C26.S2.T1.t1.s79">
+12
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="80" xml:id="C26.S2.T1.t1.s80">
+77
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="81" xml:id="C26.S2.T1.t1.s81">
+29
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="82" xml:id="C26.S2.T1.t1.s82">
+4565
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="83" xml:id="C26.S2.T1.t1.s83">
+46
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="84" xml:id="C26.S2.T1.t1.s84">
+1 05558
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="85" xml:id="C26.S2.T1.t1.s85">
+13
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="86" xml:id="C26.S2.T1.t1.s86">
+101
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="87" xml:id="C26.S2.T1.t1.s87">
+30
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="88" xml:id="C26.S2.T1.t1.s88">
+5604
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="89" xml:id="C26.S2.T1.t1.s89">
+47
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="90" xml:id="C26.S2.T1.t1.s90">
+1 24754
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="91" xml:id="C26.S2.T1.t1.s91">
+14
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="92" xml:id="C26.S2.T1.t1.s92">
+135
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="93" xml:id="C26.S2.T1.t1.s93">
+31
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="94" xml:id="C26.S2.T1.t1.s94">
+6842
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="95" xml:id="C26.S2.T1.t1.s95">
+48
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="96" xml:id="C26.S2.T1.t1.s96">
+1 47273
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="97" xml:id="C26.S2.T1.t1.s97">
+15
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="98" xml:id="C26.S2.T1.t1.s98">
+176
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="99" xml:id="C26.S2.T1.t1.s99">
+32
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="100" xml:id="C26.S2.T1.t1.s100">
+8349
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="101" xml:id="C26.S2.T1.t1.s101">
+49
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="102" xml:id="C26.S2.T1.t1.s102">
+1 73525
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="103" xml:id="C26.S2.T1.t1.s103">
+16
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="104" xml:id="C26.S2.T1.t1.s104">
+231
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="105" xml:id="C26.S2.T1.t1.s105">
+33
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="106" xml:id="C26.S2.T1.t1.s106">
+10143
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="107" xml:id="C26.S2.T1.t1.s107">
+50
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="108" xml:id="C26.S2.T1.t1.s108">
+2 04226
+</sentence>
+ 
+ 
+</paragraph>
+ 
+</section>

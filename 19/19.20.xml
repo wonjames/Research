@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S20">
+<title>Special Cases</title>          
+<subsection xml:id="C19.S20.SS1">
+<title><Math mode="inline" xml:id="C19.S20.SS1.m1">R_{F}\left(x,y,z\right)</Math></title>         
+<para xml:id="C19.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S20.SS1.p1.s1">
+In this subsection, and also §§19.20(ii)–19.20(v), the variables of all <Math mode="inline" xml:id="C19.S20.SS1.p1.m1">R</Math> -functions satisfy the constraints specified in§19.16(i)unless other conditions are stated. <Math equation-number="19.20.1" mode="display" xml:id="C19.S20.E1">R_{F}\left(x,x,x\right)=x^{-1/2},R_{F}\left(\lambda x,\lambda y,\lambda z\right)=\lambda^{-1/2}R_{F}\left(x,y,z \right),R_{F}\left(x,y,y\right)=R_{C}\left(x,y\right),R_{F}\left(0,y,y\right)=\tfrac{1}{2}\pi y^{-1/2},R_{F}\left(0,0,z\right)=\infty</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C19.S20.SS1.p2.s1">
+The first lemniscate constant is given by <Math equation-number="19.20.2" mode="display" xml:id="C19.S20.E2">\int_{0}^{1}\frac{\mathrm{d}t}{\sqrt{1-t^{4}}}=R_{F}\left(0,1,2\right)=\frac{ \left(\Gamma\left(\frac{1}{4}\right)\right)^{2}}{4(2\pi)^{1/2}}=1.31102\;87771 \;46059\;90523\;\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C19.S20.SS1.p2.s2">
+Todd (1975) refers to a proof by T. Schneider that this is a transcendental number.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C19.S20.SS1.p2.s3">
+The general lemniscatic case is <Math equation-number="19.20.3" mode="display" xml:id="C19.S20.E3">R_{F}\left(x,a,y\right)=R_{-\frac{1}{4}}\left(\tfrac{3}{4},\tfrac{1}{2};a^{2}, xy\right), if a=\frac{1}{2}(x+y)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S20.SS2">
+<title><Math mode="inline" xml:id="C19.S20.SS2.m1">R_{G}\left(x,y,z\right)</Math></title>        
+ 
+<para xml:id="C19.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S20.SS2.p1.s1">
+ <Math equation-number="19.20.4" mode="display" xml:id="C19.S20.E4">R_{G}\left(x,x,x\right)=x^{1/2},R_{G}\left(\lambda x,\lambda y,\lambda z\right)=\lambda^{1/2}R_{G}\left(x,y,z \right),R_{G}\left(0,y,y\right)=\tfrac{1}{4}\pi y^{1/2},R_{G}\left(0,0,z\right)=\tfrac{1}{2}z^{1/2},</Math> <Math equation-number="19.20.5" mode="display" xml:id="C19.S20.E5">2\!R_{G}\left(x,y,y\right)=yR_{C}\left(x,y\right)+\sqrt{x}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S20.SS3">
+<title><Math mode="inline" xml:id="C19.S20.SS3.m1">R_{J}\left(x,y,z,p\right)</Math></title>         
+<para xml:id="C19.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S20.SS3.p1.s1">
+ <Math equation-number="19.20.6" mode="display" xml:id="C19.S20.E6">R_{J}\left(x,x,x,x\right)=x^{-3/2},R_{J}\left(\lambda x,\lambda y,\lambda z,\lambda p\right)=\lambda^{-3/2}R_{J} \left(x,y,z,p\right),R_{J}\left(x,y,z,z\right)=R_{D}\left(x,y,z\right),R_{J}\left(0,0,z,p\right)=\infty,R_{J}\left(x,x,x,p\right)=R_{D}\left(p,p,x\right)=\frac{3}{x-p}\left(R_{C} \left(x,p\right)-\frac{1}{\sqrt{x}}\right), if x\neq p, xp\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C19.S20.SS3.p1.s2">
+ <Math equation-number="19.20.7" mode="display" xml:id="C19.S20.E7">R_{J}\left(x,y,z,p\right)\to+\infty, if p\to 0+ or 0-; x,y,z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C19.S20.SS3.p1.s3">
+<Math equation-number="19.20.8" mode="display" xml:id="C19.S20.E8">R_{J}\left(0,y,y,p\right)=\frac{3\pi}{2(y\sqrt{p}+p\sqrt{y})}, if p&gt;0, //// R_{J}\left(0,y,y,-q\right)=\frac{-3\pi}{2\sqrt{y}(y+q)}, if q&gt;0, //// R_{J}\left(x,y,y,p\right)=\frac{3}{p-y}(R_{C}\left(x,y\right)-R_{C}\left(x,p \right)), if p\neq y, //// R_{J}\left(x,y,y,y\right)=R_{D}\left(x,y,y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C19.S20.SS3.p1.s4">
+<Math equation-number="19.20.9" mode="display" xml:id="C19.S20.E9">R_{J}\left(0,y,z,\pm\sqrt{yz}\right)=\pm\frac{3}{2\sqrt{yz}}R_{F}\left(0,y,z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C19.S20.SS3.p1.s5">
+<Math equation-number="19.20.10" mode="display" xml:id="C19.S20.E10">\lim_{p\to 0+}\sqrt{p}R_{J}\left(0,y,z,p\right)=\frac{3\pi}{2\sqrt{yz}},\lim_{p\to 0-}R_{J}\left(0,y,z,p\right)={-R_{D}\left(0,y,z\right)-R_{D}\left(0 ,z,y\right)}=\frac{-6}{yz}R_{G}\left(0,y,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="11" xml:id="C19.S20.SS3.p1.s6">
+<Math equation-number="19.20.11" mode="display" xml:id="C19.S20.E11">R_{J}\left(0,y,z,p\right)\sim\frac{3}{2p\sqrt{z}}\ln\left(\frac{16z}{y}\right), if y\to 0+; p (\neq 0) real</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="12" xml:id="C19.S20.SS3.p1.s7">
+<Math equation-number="19.20.12" mode="display" xml:id="C19.S20.E12">\lim_{p\to\pm\infty}pR_{J}\left(x,y,z,p\right)=3\!R_{F}\left(x,y,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="13" xml:id="C19.S20.SS3.p1.s8">
+<Math equation-number="19.20.13" mode="display" xml:id="C19.S20.E13">2(p-x)R_{J}\left(x,y,z,p\right)=3\!R_{F}\left(x,y,z\right)-3\sqrt{x}R_{C}\left (yz,p^{2}\right), if p=x\pm\sqrt{(y-x)(z-x)},</Math> where <Math mode="inline" xml:id="C19.S20.SS3.p1.m1">x,y,z</Math> may be permuted.
+</sentence>
+
+</para>
+   
+<para xml:id="C19.S20.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C19.S20.SS3.p2.s1">
+When the variables are real and distinct, the various cases of <Math mode="inline" xml:id="C19.S20.SS3.p2.m1">R_{J}\left(x,y,z,p\right)</Math> are called circular (hyperbolic) cases if <Math mode="inline" xml:id="C19.S20.SS3.p2.m2">(p-x)(p-y)(p-z)</Math> is positive (negative), because they typically occur in conjunction with inverse circular (hyperbolic) functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C19.S20.SS3.p2.s2">
+Cases encountered in dynamical problems are usually circular; hyperbolic cases include Cauchy principal values.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C19.S20.SS3.p2.s3">
+If <Math mode="inline" xml:id="C19.S20.SS3.p2.m3">x,y,z</Math> are permuted so that <Math mode="inline" xml:id="C19.S20.SS3.p2.m4">0\leq x&lt;y&lt;z</Math> , then the Cauchy principal value of <Math mode="inline" xml:id="C19.S20.SS3.p2.m5">R_{J}</Math> is given by <Math equation-number="19.20.14" mode="display" xml:id="C19.S20.E14">(q+z)R_{J}\left(x,y,z,-q\right)=(p-z)R_{J}\left(x,y,z,p\right)-3\!R_{F}\left(x ,y,z\right)+3\left(\frac{xyz}{xy+pq}\right)^{1/2}R_{C}\left(xy+pq,pq\right),</Math> valid when <Math equation-number="19.20.15" mode="display" xml:id="C19.S20.E15">q&gt;0,p=\frac{z(x+y+q)-xy}{z+q},</Math> or <Math equation-number="19.20.16" mode="display" xml:id="C19.S20.E16">p=wy+(1-w)z,w=\frac{z-x}{z+q},0&lt;w&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C19.S20.SS3.p2.s4">
+Since <Math mode="inline" xml:id="C19.S20.SS3.p2.m6">x&lt;y&lt;p&lt;z</Math> , <Math mode="inline" xml:id="C19.S20.SS3.p2.m7">p</Math> is in a hyperbolic region.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C19.S20.SS3.p2.s5">
+In the complete case ( <Math mode="inline" xml:id="C19.S20.SS3.p2.m8">x=0</Math> ) (19.20.14)reduces to <Math equation-number="19.20.17" mode="display" xml:id="C19.S20.E17">(q+z)R_{J}\left(0,y,z,-q\right)=(p-z)R_{J}\left(0,y,z,p\right)-3\!R_{F}\left(0 ,y,z\right), if p=z(y+q)/(z+q), w=z/(z+q)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S20.SS4">
+<title><Math mode="inline" xml:id="C19.S20.SS4.m1">R_{D}\left(x,y,z\right)</Math></title>        
+ 
+<para xml:id="C19.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C19.S20.SS4.p1.s1">
+ <Math equation-number="19.20.18" mode="display" xml:id="C19.S20.E18">R_{D}\left(x,x,x\right)=x^{-3/2},R_{D}\left(\lambda x,\lambda y,\lambda z\right)=\lambda^{-3/2}R_{D}\left(x,y,z \right),R_{D}\left(0,y,y\right)=\tfrac{3}{4}\pi\,y^{-3/2},R_{D}\left(0,0,z\right)=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C19.S20.SS4.p1.s2">
+<Math equation-number="19.20.19" mode="display" xml:id="C19.S20.E19">R_{D}\left(x,y,z\right)\sim 3(xyz)^{-1/2}, if z/\sqrt{xy}\to 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C19.S20.SS4.p1.s3">
+ <Math equation-number="19.20.20" mode="display" xml:id="C19.S20.E20">R_{D}\left(x,y,y\right)=\frac{3}{2(y-x)}\left(R_{C}\left(x,y\right)-\frac{ \sqrt{x}}{y}\right), if x\neq y, y\neq 0,</Math> <Math equation-number="19.20.21" mode="display" xml:id="C19.S20.E21">R_{D}\left(x,x,z\right)=\frac{3}{z-x}\left(R_{C}\left(z,x\right)-\frac{1}{ \sqrt{z}}\right), if x\neq z, xz\neq 0.</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S20.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C19.S20.SS4.p2.s1">
+The second lemniscate constant is given by <Math equation-number="19.20.22" mode="display" xml:id="C19.S20.E22">\int_{0}^{1}\frac{t^{2}\mathrm{d}t}{\sqrt{1-t^{4}}}=\tfrac{1}{3}R_{D}\left(0,2 ,1\right)=\frac{\left(\Gamma\left(\frac{3}{4}\right)\right)^{2}}{(2\pi)^{1/2}} =0.59907\;01173\;67796\;10371\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C19.S20.SS4.p2.s2">
+Todd (1975) refers to a proof by T. Schneider that this is a transcendental number.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C19.S20.SS4.p2.s3">
+Compare (19.20.2).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C19.S20.SS4.p2.s4">
+The general lemniscatic case is <Math equation-number="19.20.23" mode="display" xml:id="C19.S20.E23">R_{D}\left(x,y,a\right)=R_{-\frac{3}{4}}\left(\tfrac{5}{4},\tfrac{1}{2};a^{2}, xy\right), if a=\tfrac{1}{2}x+\tfrac{1}{2}y</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S20.SS5">
+<title><Math mode="inline" xml:id="C19.S20.SS5.m1">R_{-a}\left(\mathbf{b};\mathbf{z}\right)</Math></title>         
+<para xml:id="C19.S20.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C19.S20.SS5.p1.s1">
+Define <Math mode="inline" xml:id="C19.S20.SS5.p1.m1">c=\sum_{j=1}^{n}b_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C19.S20.SS5.p1.s2">
+Then <Math equation-number="19.20.24" mode="display" xml:id="C19.S20.E24">R_{0}\left(\mathbf{b};\mathbf{z}\right)=1,R_{N}\left(\mathbf{b};\mathbf{z}\right)=\frac{N!}{{\left(c\right)_{N}}}T_{N}( \mathbf{b},\mathbf{z}), if N=0,1,2,\dots,</Math> where <Math mode="inline" xml:id="C19.S20.SS5.p1.m2">T_{N}</Math> is defined by (19.19.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C19.S20.SS5.p1.s3">
+Also, <Math equation-number="19.20.25" mode="display" xml:id="C19.S20.E25">R_{-c}\left(\mathbf{b};\mathbf{z}\right)=\prod_{j=1}^{n}z_{j}^{-b_{j}},</Math> <Math equation-number="19.20.26" mode="display" xml:id="C19.S20.E26">R_{-a}\left(\mathbf{b};\mathbf{z}\right)=\prod_{j=1}^{n}z_{j}^{-b_{j}}R_{-a^{ \prime}}\left(\mathbf{b};\boldsymbol{{z^{-1}}}\right), if a+a^{\prime}=c, \boldsymbol{{z^{-1}}}=(z_{1}^{-1},\dots,z_{n}^{-1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C19.S20.SS5.p1.s4">
+See also (19.16.11) and (19.16.19).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

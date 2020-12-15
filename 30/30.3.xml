@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S3">
+<title>Eigenvalues</title>        
+   
+<subsection xml:id="C30.S3.SS1">
+<title>Definition</title>        
+ 
+<para xml:id="C30.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S3.SS1.p1.s1">
+With <Math mode="inline" xml:id="C30.S3.SS1.p1.m1">\mu=m=0,1,2,\dots</Math> , the spheroidal wave functions <Math mode="inline" xml:id="C30.S3.SS1.p1.m3">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> are solutions of Equation (30.2.1) which are bounded on <Math mode="inline" xml:id="C30.S3.SS1.p1.m4">(-1,1)</Math> , or equivalently, which are of the form <Math mode="inline" xml:id="C30.S3.SS1.p1.m5">(1-x^{2})^{\frac{1}{2}m}g(x)</Math> where <Math mode="inline" xml:id="C30.S3.SS1.p1.m6">g(z)</Math> is an entire function of <Math mode="inline" xml:id="C30.S3.SS1.p1.m7">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S3.SS1.p1.s2">
+These solutions exist only for eigenvalues <Math mode="inline" xml:id="C30.S3.SS1.p1.m8">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS1.p1.m9">n=m,m+1,m+2,\dots</Math> , of the parameter <Math mode="inline" xml:id="C30.S3.SS1.p1.m10">\lambda</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS2">
+<title>Properties</title>        
+ 
+<para xml:id="C30.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C30.S3.SS2.p1.s1">
+The eigenvalues <Math mode="inline" xml:id="C30.S3.SS2.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are analytic functions of the real variable <Math mode="inline" xml:id="C30.S3.SS2.p1.m2">\gamma^{2}</Math> and satisfy <Math equation-number="30.3.1" mode="display" xml:id="C30.S3.E1">\lambda^{m}_{m}\left(\gamma^{2}\right)&lt;\lambda^{m}_{m+1}\left(\gamma^{2}\right )&lt;\lambda^{m}_{m+2}\left(\gamma^{2}\right)&lt;\cdots,</Math> <Math equation-number="30.3.2" mode="display" xml:id="C30.S3.E2">\lambda^{m}_{n}\left(\gamma^{2}\right)=n(n+1)-\tfrac{1}{2}\gamma^{2}+O\left(n^ {-2}\right), if n\to\infty,</Math> <Math equation-number="30.3.3" mode="display" xml:id="C30.S3.E3">\lambda^{m}_{n}\left(0\right)=n(n+1),</Math> <Math equation-number="30.3.4" mode="display" xml:id="C30.S3.E4">-1&lt;\frac{\mathrm{d}\lambda^{m}_{n}\left(\gamma^{2}\right)}{\mathrm{d}(\gamma^{ 2})}&lt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS3">
+<title>Transcendental Equation</title>        
+  
+<para xml:id="C30.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C30.S3.SS3.p1.s1">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m1">p</Math> is an even nonnegative integer, then the continued-fraction equation <Math equation-number="30.3.5" mode="display" xml:id="C30.S3.E5">\beta_{p}-\lambda-\cfrac{\alpha_{p-2}\gamma_{p}}{\beta_{p-2}-\lambda-\cfrac{ \alpha_{p-4}\gamma_{p-2}}{\beta_{p-4}-\lambda-\cdots}}=\cfrac{\alpha_{p}\gamma _{p+2}}{\beta_{p+2}-\lambda-\cfrac{\alpha_{p+2}\gamma_{p+4}}{\beta_{p+4}- \lambda-\cdots}},</Math> where <Math mode="inline" xml:id="C30.S3.SS3.p1.m2">\alpha_{k}</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m3">\beta_{k}</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m4">\gamma_{k}</Math> are defined by <Math equation-number="30.3.6" mode="display" xml:id="C30.S3.E6">\alpha_{k}=-(k+1)(k+2),\beta_{k}=(m+k)(m+k+1)-\gamma^{2},\gamma_{k}=\gamma^{2},</Math> has the solutions <Math mode="inline" xml:id="C30.S3.SS3.p1.m5">\lambda=\lambda^{m}_{m+2j}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m6">j=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C30.S3.SS3.p1.s2">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m7">p</Math> is an odd positive integer, then Equation (30.3.5) has the solutions <Math mode="inline" xml:id="C30.S3.SS3.p1.m8">\lambda=\lambda^{m}_{m+2j+1}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m9">j=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C30.S3.SS3.p1.s3">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m10">p=0</Math> or <Math mode="inline" xml:id="C30.S3.SS3.p1.m11">p=1</Math> , the finite continued-fraction on the left-hand side of (30.3.5)equals 0; if <Math mode="inline" xml:id="C30.S3.SS3.p1.m12">p&gt;1</Math> its last denominator is <Math mode="inline" xml:id="C30.S3.SS3.p1.m13">\beta_{0}-\lambda</Math> or <Math mode="inline" xml:id="C30.S3.SS3.p1.m14">\beta_{1}-\lambda</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S3.SS3.p2">
+
+</para>
+ 
+<para xml:id="C30.S3.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C30.S3.SS3.p3.s1">
+In equation (30.3.5)we can also use <Math equation-number="30.3.7" mode="display" xml:id="C30.S3.E7">\alpha_{k}=\gamma^{2}\frac{(k+2m+1)(k+2m+2)}{(2k+2m+3)(2k+2m+5)},\beta_{k}=(k+m)(k+m+1)-2\gamma^{2}\frac{(k+m)(k+m+1)-1+m^{2}}{(2k+2m-1)(2k+2m+ 3)},\gamma_{k}=\gamma^{2}\frac{(k-1)k}{(2k+2m-3)(2k+2m-1)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS4">
+<title>Power-Series Expansion</title>        
+   
+<para xml:id="C30.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C30.S3.SS4.p1.s1">
+ <Math equation-number="30.3.8" mode="display" xml:id="C30.S3.E8">\lambda^{m}_{n}\left(\gamma^{2}\right)=\sum_{k=0}^{\infty}\ell_{2k}\gamma^{2k}, if |\gamma^{2}|&lt;r_{n}^{m}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C30.S3.SS4.p1.s2">
+For values of <Math mode="inline" xml:id="C30.S3.SS4.p1.m1">r_{n}^{m}</Math> see Meixner et al. (1980, p. 109).
+</sentence>
+
+</para>
+     
+<para xml:id="C30.S3.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C30.S3.SS4.p2.s1">
+ <Math equation-number="30.3.9" mode="display" xml:id="C30.S3.E9">\ell_{0}=n(n+1),2\ell_{2}=-1-\frac{(2m-1)(2m+1)}{(2n-1)(2n+3)},2\ell_{4}=\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-3)(2n-1)^{3}(2n+1)}-\frac{(n-m+1 )(n-m+2)(n+m+1)(n+m+2)}{(2n+1)(2n+3)^{3}(2n+5)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S3.SS4.p3">
+
+</para>
+ 
+<para xml:id="C30.S3.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C30.S3.SS4.p4.s1">
+ <Math equation-number="30.3.10" mode="display" xml:id="C30.S3.E10">\ell_{6}=(4m^{2}-1)\left(\frac{(n-m+1)(n-m+2)(n+m+1)(n+m+2)}{(2n-1)(2n+1)(2n+3 )^{5}(2n+5)(2n+7)}-\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-5)(2n-3)(2n-1)^{5}(2n+1 )(2n+3)}\right),</Math> <Math equation-number="30.3.11" mode="display" xml:id="C30.S3.E11">\ell_{8}=2(4m^{2}-1)^{2}A+\frac{1}{16}B+\frac{1}{8}C+\frac{1}{2}D,</Math> <Math equation-number="30.3.12" mode="display" xml:id="C30.S3.E12">A=\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-5)^{2}(2n-3)(2n-1)^{7}(2n+1)(2n+3)^{2}}- \frac{(n-m+1)(n-m+2)(n+m+1)(n+m+2)}{(2n-1)^{2}(2n+1)(2n+3)^{7}(2n+5)(2n+7)^{2}},B=\frac{(n-m-3)(n-m-2)(n-m-1)(n-m)(n+m-3)(n+m-2)(n+m-1)(n+m)}{(2n-7)(2n-5)^{2} (2n-3)^{3}(2n-1)^{4}(2n+1)}-\frac{(n-m+1)(n-m+2)(n-m+3)(n-m+4)(n+m+1)(n+m+2)(n +m+3)(n+m+4)}{(2n+1)(2n+3)^{4}(2n+5)^{3}(2n+7)^{2}(2n+9)},C=\frac{(n-m+1)^{2}(n-m+2)^{2}(n+m+1)^{2}(n+m+2)^{2}}{(2n+1)^{2}(2n+3)^{7}(2n+ 5)^{2}}-\frac{(n-m-1)^{2}(n-m)^{2}(n+m-1)^{2}(n+m)^{2}}{(2n-3)^{2}(2n-1)^{7}(2 n+1)^{2}},D=\frac{(n-m-1)(n-m)(n-m+1)(n-m+2)(n+m-1)(n+m)(n+m+1)(n+m+2)}{(2n-3)(2n-1)^{4} (2n+1)^{2}(2n+3)^{4}(2n+5)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C30.S3.SS4.p4.s2">
+Further coefficients can be found with the Maple program SWF9; see §30.18(i).
+</sentence>
+
+</para>
+ 
+  
+</subsection>
+ 
+</section>

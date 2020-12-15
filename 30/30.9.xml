@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S9">
+<title>Asymptotic Approximations and Expansions</title>        
+  
+<subsection xml:id="C30.S9.SS1">
+<title>Prolate Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S9.SS1.p1.s1">
+As <Math mode="inline" xml:id="C30.S9.SS1.p1.m1">\gamma^{2}\to+\infty</Math> , with <Math mode="inline" xml:id="C30.S9.SS1.p1.m2">q=2(n-m)+1</Math> , <Math equation-number="30.9.1" mode="display" xml:id="C30.S9.E1">\lambda^{m}_{n}\left(\gamma^{2}\right)\sim-\gamma^{2}+\gamma q+\beta_{0}+\beta _{1}\gamma^{-1}+\beta_{2}\gamma^{-2}+\cdots,</Math> where <Math equation-number="30.9.2" mode="display" xml:id="C30.S9.E2">8\beta_{0}=8m^{2}-q^{2}-5,2^{6}\beta_{1}=-q^{3}-11q+32m^{2}q,2^{10}\beta_{2}=-5(q^{4}+26q^{2}+21)+384m^{2}(q^{2}+1),2^{14}\beta_{3}=-33q^{5}-1594q^{3}-5621q+128m^{2}(37q^{3}+167q)-2048m^{4}q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p2">
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C30.S9.SS1.p3.s1">
+ <Math equation-number="30.9.3" mode="display" xml:id="C30.S9.E3">2^{16}\beta_{4}=-63q^{6}-4940q^{4}-43327q^{2}-22470+128m^{2}(115q^{4}+1310q^{2 }+735)-24576m^{4}(q^{2}+1),2^{20}\beta_{5}=-527q^{7}-61529q^{5}-10\;43961q^{3}-22\;41599q+32m^{2}(5739q^{ 5}+1\;27550q^{3}+2\;98951q)-2048m^{4}(355q^{3}+1505q)+65536m^{6}q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C30.S9.SS1.p3.s2">
+Further coefficients can be found with the Maple program SWF7; see §30.18(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C30.S9.SS1.p4.s1">
+For the eigenfunctions see Meixner and Schäfke (1954, §3.251) andMüller (1963).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C30.S9.SS1.p5.s1">
+For uniform asymptotic expansions in terms of Airy or Bessel functions for real values of the parameters, complex values of the variable, and with explicit error bounds see Dunster (1986).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C30.S9.SS1.p5.s2">
+See alsoMiles (1975).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S9.SS2">
+<title>Oblate Spheroidal Wave Functions</title>        
+    
+<para xml:id="C30.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C30.S9.SS2.p1.s1">
+As <Math mode="inline" xml:id="C30.S9.SS2.p1.m1">\gamma^{2}\to-\infty</Math> , with <Math mode="inline" xml:id="C30.S9.SS2.p1.m2">q=n+1</Math> if <Math mode="inline" xml:id="C30.S9.SS2.p1.m3">n-m</Math> is even, or <Math mode="inline" xml:id="C30.S9.SS2.p1.m4">q=n</Math> if <Math mode="inline" xml:id="C30.S9.SS2.p1.m5">n-m</Math> is odd, we have <Math equation-number="30.9.4" mode="display" xml:id="C30.S9.E4">\lambda^{m}_{n}\left(\gamma^{2}\right)\sim 2q|\gamma|+c_{0}+c_{1}|\gamma|^{-1} +c_{2}|\gamma|^{-2}+\cdots,</Math> where <Math equation-number="30.9.5" mode="display" xml:id="C30.S9.E5">2c_{0}=-q^{2}-1+m^{2},8c_{1}=-q^{3}-q+m^{2}q,2^{6}c_{2}=-5q^{4}-10q^{2}-1+2m^{2}(3q^{2}+1)-m^{4},2^{9}c_{3}=-33q^{5}-114q^{3}-37q+2m^{2}(23q^{3}+25q)-13m^{4}q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p2">
+
+</para>
+
+ 
+<para xml:id="C30.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C30.S9.SS2.p3.s1">
+ <Math equation-number="30.9.6" mode="display" xml:id="C30.S9.E6">2^{10}c_{4}=-63q^{6}-340q^{4}-239q^{2}-14+10m^{2}(10q^{4}+23q^{2}+3)-3m^{4}(13 q^{2}+6)+2m^{6},2^{13}c_{5}=-527q^{7}-4139q^{5}-5221q^{3}-1009q+m^{2}(939q^{5}+3750q^{3}+1591q )-m^{4}(465q^{3}+635q)+53m^{6}q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C30.S9.SS2.p3.s2">
+Further coefficients can be found with the Maple program SWF8; see §30.18(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C30.S9.SS2.p4.s1">
+For the eigenfunctions see Meixner and Schäfke (1954, §3.252) andMüller (1962).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C30.S9.SS2.p5.s1">
+For uniform asymptotic expansions in terms of elementary, Airy, or Bessel functions for real values of the parameters, complex values of the variable,and with explicit error bounds see Dunster (1992, 1995).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C30.S9.SS2.p5.s2">
+See also Jorna and Springer (1971).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S9.SS3">
+<title>Other Approximations and Expansions</title>        
+  
+<para xml:id="C30.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C30.S9.SS3.p1.s1">
+The asymptotic behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S9.SS3.p1.m2">a^{m}_{n,k}(\gamma^{2})</Math> as <Math mode="inline" xml:id="C30.S9.SS3.p1.m3">n\to\infty</Math> in descending powers of <Math mode="inline" xml:id="C30.S9.SS3.p1.m4">2n+1</Math> is derived in Meixner (1944).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C30.S9.SS3.p1.s2">
+The cases of large <Math mode="inline" xml:id="C30.S9.SS3.p1.m5">m</Math> , and of large <Math mode="inline" xml:id="C30.S9.SS3.p1.m6">m</Math> and large <Math mode="inline" xml:id="C30.S9.SS3.p1.m7">|\gamma|</Math> , are studied in Abramowitz (1949).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C30.S9.SS3.p1.s3">
+The asymptotic behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m8">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S9.SS3.p1.m9">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math> as <Math mode="inline" xml:id="C30.S9.SS3.p1.m10">x\to\pm 1</Math> is given inErdélyi et al. (1955, p. 151).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C30.S9.SS3.p1.s4">
+The behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m11">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> for complex <Math mode="inline" xml:id="C30.S9.SS3.p1.m12">\gamma^{2}</Math> and large <Math mode="inline" xml:id="C30.S9.SS3.p1.m13">|\lambda^{m}_{n}\left(\gamma^{2}\right)|</Math> is investigated inHunter and Guerrieri (1982).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

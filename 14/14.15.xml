@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S15">
+<title>Uniform Asymptotic Approximations</title>           
+<subsection xml:id="C14.S15.SS1">
+<title>Large <Math mode="inline" xml:id="C14.S15.SS1.m1">\mu</Math>, Fixed <Math mode="inline" xml:id="C14.S15.SS1.m2">\nu</Math></title>         
+  
+<para xml:id="C14.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S15.SS1.p1.s1">
+For the interval <Math mode="inline" xml:id="C14.S15.SS1.p1.m1">-1&lt;x&lt;1</Math> with fixed <Math mode="inline" xml:id="C14.S15.SS1.p1.m2">\nu</Math> , real <Math mode="inline" xml:id="C14.S15.SS1.p1.m3">\mu</Math> , and arbitrary fixed values of the nonnegative integer <Math mode="inline" xml:id="C14.S15.SS1.p1.m4">J</Math> , <Math equation-number="14.15.1" mode="display" xml:id="C14.S15.E1">\mathsf{P}^{-\mu}_{\nu}\left(\pm x\right)=\left(\frac{1\mp x}{1\pm x}\right)^{ \mu/2}\left(\sum_{j=0}^{J-1}\frac{{\left(\nu+1\right)_{j}}{\left(-\nu\right)_{ j}}}{j!\Gamma\left(j+1+\mu\right)}\left(\frac{1\mp x}{2}\right)^{j}+O\left( \frac{1}{\Gamma\left(J+1+\mu\right)}\right)\right)</Math> as <Math mode="inline" xml:id="C14.S15.SS1.p1.m5">\mu\to\infty</Math> , uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS1.p1.m6">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S15.SS1.p1.s2">
+In other words, the convergent hypergeometric series expansions of <Math mode="inline" xml:id="C14.S15.SS1.p1.m7">\mathsf{P}^{-\mu}_{\nu}\left(\pm x\right)</Math> are also generalized (and uniform) asymptotic expansions as <Math mode="inline" xml:id="C14.S15.SS1.p1.m8">\mu\to\infty</Math> ,with scale <Math mode="inline" xml:id="C14.S15.SS1.p1.m9">\ifrac{1}{\Gamma\left(j+1+\mu\right)}</Math> , <Math mode="inline" xml:id="C14.S15.SS1.p1.m10">j=0,1,2,\dots</Math> ; compare §2.1(v).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C14.S15.SS1.p2.s1">
+Provided that <Math mode="inline" xml:id="C14.S15.SS1.p2.m1">\mu-\nu\notin\mathbb{Z}</Math> the corresponding expansions for <Math mode="inline" xml:id="C14.S15.SS1.p2.m2">\mathsf{P}^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S15.SS1.p2.m3">\mathsf{Q}^{\mp\mu}_{\nu}\left(x\right)</Math> can be obtained from the connection formulas (14.9.7), (14.9.9), and (14.9.10).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C14.S15.SS1.p3.s1">
+For the interval <Math mode="inline" xml:id="C14.S15.SS1.p3.m1">1&lt;x&lt;\infty</Math> the following asymptotic approximations hold when <Math mode="inline" xml:id="C14.S15.SS1.p3.m2">\mu\to\infty</Math> , with <Math mode="inline" xml:id="C14.S15.SS1.p3.m3">\nu</Math> ( <Math mode="inline" xml:id="C14.S15.SS1.p3.m4">\geq-\frac{1}{2}</Math> ) fixed, uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS1.p3.m5">x</Math> : <Math equation-number="14.15.2" mode="display" xml:id="C14.S15.E2">P^{-\mu}_{\nu}\left(x\right)=\frac{1}{\Gamma\left(\mu+1\right)}\left(\frac{2 \mu u}{\pi}\right)^{1/2}K_{\nu+\frac{1}{2}}\left(\mu u\right)\*\left(1+O\left( \frac{1}{\mu}\right)\right),</Math> <Math equation-number="14.15.3" mode="display" xml:id="C14.S15.E3">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)=\frac{1}{\mu^{\nu+(1/2)}}\left(\frac{ \pi u}{2}\right)^{1/2}I_{\nu+\frac{1}{2}}\left(\mu u\right)\left(1+O\left( \frac{1}{\mu}\right)\right),</Math> where <Math mode="inline" xml:id="C14.S15.SS1.p3.m6">u</Math> is given by (14.12.10).Here <Math mode="inline" xml:id="C14.S15.SS1.p3.m7">I</Math> and <Math mode="inline" xml:id="C14.S15.SS1.p3.m8">K</Math> are the modified Bessel functions (§10.25(ii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S15.SS1.p4.s1">
+For asymptotic expansions and explicit error bounds, seeDunster (2003b) and Gil et al. (2000).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C14.S15.SS1.p4.s2">
+See also Temme (2015, Chapter 29).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S15.SS2">
+<title>Large <Math mode="inline" xml:id="C14.S15.SS2.m1">\mu</Math>,<Math mode="inline" xml:id="C14.S15.SS2.m2">0\leq\nu+\frac{1}{2}\leq(1-\delta)\mu</Math></title>        
+ 
+<para xml:id="C14.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C14.S15.SS2.p1.s1">
+In this and subsequent subsections <Math mode="inline" xml:id="C14.S15.SS2.p1.m1">\delta</Math> denotes an arbitrary constant such that <Math mode="inline" xml:id="C14.S15.SS2.p1.m2">0&lt;\delta&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C14.S15.SS2.p2.s1">
+As <Math mode="inline" xml:id="C14.S15.SS2.p2.m1">\mu\to\infty</Math> , <Math equation-number="14.15.4" mode="display" xml:id="C14.S15.E4">\mathsf{P}^{-\mu}_{\nu}\left(x\right)=\frac{1}{\Gamma\left(\mu+1\right)}\left( 1-\alpha^{2}\right)^{-\mu/2}\left(\frac{1-\alpha}{1+\alpha}\right)^{(\nu/2)+(1 /4)}\*\left(\frac{p}{x}\right)^{1/2}e^{-\mu\rho}\left(1+O\left(\frac{1}{\mu} \right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS2.p2.m2">x\in(-1,1)</Math> and <Math mode="inline" xml:id="C14.S15.SS2.p2.m3">\nu+\tfrac{1}{2}\in[0,(1-\delta)\mu]</Math> , where <Math equation-number="14.15.5" mode="display" xml:id="C14.S15.E5">\alpha=\frac{\nu+\frac{1}{2}}{\mu}\,(&lt;1),</Math> <Math equation-number="14.15.6" mode="display" xml:id="C14.S15.E6">p=\frac{x}{\left(\alpha^{2}x^{2}+1-\alpha^{2}\right)^{1/2}},</Math> and <Math equation-number="14.15.7" mode="display" xml:id="C14.S15.E7">\rho=\frac{1}{2}\ln\left(\frac{1+p}{1-p}\right)+\frac{1}{2}\alpha\ln\left( \frac{1-\alpha p}{1+\alpha p}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C14.S15.SS2.p3.s1">
+With the same conditions, the corresponding approximation for <Math mode="inline" xml:id="C14.S15.SS2.p3.m1">\mathsf{P}^{-\mu}_{\nu}\left(-x\right)</Math> is obtained by replacing <Math mode="inline" xml:id="C14.S15.SS2.p3.m2">e^{-\mu\rho}</Math> by <Math mode="inline" xml:id="C14.S15.SS2.p3.m3">e^{\mu\rho}</Math> on the right-hand side of (14.15.4).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C14.S15.SS2.p3.s2">
+Approximations for <Math mode="inline" xml:id="C14.S15.SS2.p3.m4">\mathsf{P}^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S15.SS2.p3.m5">\mathsf{Q}^{\mp\mu}_{\nu}\left(x\right)</Math> can then be achieved via (14.9.7), (14.9.9), and (14.9.10).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C14.S15.SS2.p4.s1">
+Next, <Math equation-number="14.15.8" mode="display" xml:id="C14.S15.E8">P^{-\mu}_{\nu}\left(x\right)=\left(\frac{2\mu}{\pi}\right)^{1/2}\frac{1}{ \Gamma\left(\mu+1\right)}\left(\frac{1-\alpha}{1+\alpha}\right)^{(\nu/2)+(1/4) }\*\left(1-\alpha^{2}\right)^{-\mu/2}\left(\frac{\alpha^{2}+\eta^{2}}{\alpha^{ 2}\left(x^{2}-1\right)+1}\right)^{1/4}\*K_{\nu+\frac{1}{2}}\left(\mu\eta\right )\left(1+O\left(\frac{1}{\mu}\right)\right),</Math> <Math equation-number="14.15.9" mode="display" xml:id="C14.S15.E9">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)=\left(\frac{\pi}{2}\right)^{1/2}\left (\frac{e}{\mu}\right)^{\nu+(1/2)}\left(\frac{1-\alpha}{1+\alpha}\right)^{\mu/2 }\*\left(1-\alpha^{2}\right)^{-(\nu/2)-(1/4)}\left(\frac{\alpha^{2}+\eta^{2}}{ \alpha^{2}\left(x^{2}-1\right)+1}\right)^{1/4}\*I_{\nu+\frac{1}{2}}\left(\mu \eta\right)\left(1+O\left(\frac{1}{\mu}\right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS2.p4.m1">x\in(1,\infty)</Math> and <Math mode="inline" xml:id="C14.S15.SS2.p4.m2">\nu+\tfrac{1}{2}\in[0,(1-\delta)\mu]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C14.S15.SS2.p4.s2">
+Here <Math mode="inline" xml:id="C14.S15.SS2.p4.m3">\alpha</Math> is again given by (14.15.5), and <Math mode="inline" xml:id="C14.S15.SS2.p4.m4">\eta</Math> is defined implicitly by <Math equation-number="14.15.10" mode="display" xml:id="C14.S15.E10">\alpha\ln\left(\left(\alpha^{2}+\eta^{2}\right)^{1/2}+\alpha\right)-\alpha\ln \eta-\left(\alpha^{2}+\eta^{2}\right)^{1/2}=\frac{1}{2}\ln\left(\frac{\left(1+ \alpha^{2}\right)x^{2}+1-\alpha^{2}-2x\left(\alpha^{2}x^{2}-\alpha^{2}+1\right )^{1/2}}{\left(x^{2}-1\right)\left(1-\alpha^{2}\right)}\right)+\frac{1}{2} \alpha\ln\left(\frac{\alpha^{2}\left(2x^{2}-1\right)+1+2\alpha x\left(\alpha^{ 2}x^{2}-\alpha^{2}+1\right)^{1/2}}{1-\alpha^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C14.S15.SS2.p4.s3">
+The interval <Math mode="inline" xml:id="C14.S15.SS2.p4.m5">1&lt;x&lt;\infty</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S15.SS2.p4.m6">0&lt;\eta&lt;\infty</Math> , with the points <Math mode="inline" xml:id="C14.S15.SS2.p4.m7">x=1</Math> and <Math mode="inline" xml:id="C14.S15.SS2.p4.m8">x=\infty</Math> corresponding to <Math mode="inline" xml:id="C14.S15.SS2.p4.m9">\eta=\infty</Math> and <Math mode="inline" xml:id="C14.S15.SS2.p4.m10">\eta=0</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C14.S15.SS2.p4.s4">
+For asymptotic expansions and explicit error bounds, see Dunster (2003b).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+<subsection xml:id="C14.S15.SS3">
+<title>Large <Math mode="inline" xml:id="C14.S15.SS3.m1">\nu</Math>, Fixed <Math mode="inline" xml:id="C14.S15.SS3.m2">\mu</Math></title>           
+<para xml:id="C14.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C14.S15.SS3.p1.s1">
+For <Math mode="inline" xml:id="C14.S15.SS3.p1.m1">\nu\to\infty</Math> and fixed <Math mode="inline" xml:id="C14.S15.SS3.p1.m2">\mu</Math> ( <Math mode="inline" xml:id="C14.S15.SS3.p1.m3">\geq 0</Math> ), <Math equation-number="14.15.11" mode="display" xml:id="C14.S15.E11">\mathsf{P}^{-\mu}_{\nu}\left(\cos\theta\right)=\frac{1}{\nu^{\mu}}\left(\frac{ \theta}{\sin\theta}\right)^{1/2}\left(J_{\mu}\left(\left(\nu+\tfrac{1}{2} \right)\theta\right)+O\left(\frac{1}{\nu}\right)\mathrm{env}\mskip-2.0mu J_{ \mu}\left(\left(\nu+\tfrac{1}{2}\right)\theta\right)\right),</Math> , <Math equation-number="14.15.12" mode="display" xml:id="C14.S15.E12">\mathsf{Q}^{-\mu}_{\nu}\left(\cos\theta\right)=-\frac{\pi}{2\nu^{\mu}}\left( \frac{\theta}{\sin\theta}\right)^{1/2}\left(Y_{\mu}\left(\left(\nu+\tfrac{1}{2 }\right)\theta\right)+O\left(\frac{1}{\nu}\right)\mathrm{env}\mskip-2.0mu Y_{ \mu}\left(\left(\nu+\tfrac{1}{2}\right)\theta\right)\right),</Math> uniformly for <Math mode="inline" xml:id="C14.S15.SS3.p1.m4">\theta\in(0,\pi-\delta]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C14.S15.SS3.p1.s2">
+For the Bessel functions <Math mode="inline" xml:id="C14.S15.SS3.p1.m5">J</Math> and <Math mode="inline" xml:id="C14.S15.SS3.p1.m6">Y</Math> see §10.2(ii), and for the <Math mode="inline" xml:id="C14.S15.SS3.p1.m7">\operatorname{env}</Math> functions associated with <Math mode="inline" xml:id="C14.S15.SS3.p1.m8">J</Math> and <Math mode="inline" xml:id="C14.S15.SS3.p1.m9">Y</Math> see §2.8(iv).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C14.S15.SS3.p2.s1">
+Next, <Math equation-number="14.15.13" mode="display" xml:id="C14.S15.E13">P^{-\mu}_{\nu}\left(\cosh\xi\right)=\frac{1}{\nu^{\mu}}\left(\frac{\xi}{\sinh \xi}\right)^{1/2}I_{\mu}\left(\left(\nu+\tfrac{1}{2}\right)\xi\right)\*\left(1 +O\left(\frac{1}{\nu}\right)\right),</Math> , <Math equation-number="14.15.14" mode="display" xml:id="C14.S15.E14">\boldsymbol{Q}^{\mu}_{\nu}\left(\cosh\xi\right)=\frac{\nu^{\mu}}{\Gamma\left( \nu+\mu+1\right)}\left(\frac{\xi}{\sinh\xi}\right)^{1/2}\*K_{\mu}\left(\left( \nu+\tfrac{1}{2}\right)\xi\right)\*\left(1+O\left(\frac{1}{\nu}\right)\right),</Math> uniformly for <Math mode="inline" xml:id="C14.S15.SS3.p2.m1">\xi\in(0,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C14.S15.SS3.p3.s1">
+For asymptotic expansions and explicit error bounds, seeOlver (1997b, Chapter 12, §§12, 13) and Jones (2001).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C14.S15.SS3.p3.s2">
+For convergent series expansions see Dunster (2004).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C14.S15.SS3.p3.s3">
+See also Temme (2015, Chapter 29).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C14.S15.SS3.p4.s1">
+See also Olver (1997b, pp. 311–313) and §18.15(iii) for a generalized asymptotic expansion in terms of elementary functions for Legendre polynomials <Math mode="inline" xml:id="C14.S15.SS3.p4.m1">P_{n}\left(\cos\theta\right)</Math> as <Math mode="inline" xml:id="C14.S15.SS3.p4.m2">n\to\infty</Math> with <Math mode="inline" xml:id="C14.S15.SS3.p4.m3">\theta</Math> fixed.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S15.SS4">
+<title>Large <Math mode="inline" xml:id="C14.S15.SS4.m1">\nu</Math>,<Math mode="inline" xml:id="C14.S15.SS4.m2">0\leq\mu\leq(1-\delta)(\nu+\frac{1}{2})</Math></title>         
+<para xml:id="C14.S15.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C14.S15.SS4.p1.s1">
+As <Math mode="inline" xml:id="C14.S15.SS4.p1.m1">\nu\to\infty</Math> , <Math equation-number="14.15.15" mode="display" xml:id="C14.S15.E15">\mathsf{P}^{-\mu}_{\nu}\left(x\right)=\beta\left(\frac{y-\alpha^{2}}{1-\alpha^ {2}-x^{2}}\right)^{1/4}\*\left(J_{\mu}\left(\left(\nu+\tfrac{1}{2}\right)y^{1/ 2}\right)+O\left(\frac{1}{\nu}\right)\mathrm{env}\mskip-2.0mu J_{\mu}\left( \left(\nu+\tfrac{1}{2}\right)y^{1/2}\right)\right),</Math> <Math equation-number="14.15.16" mode="display" xml:id="C14.S15.E16">\mathsf{Q}^{-\mu}_{\nu}\left(x\right)=-\frac{\pi\beta}{2}\left(\frac{y-\alpha^ {2}}{1-\alpha^{2}-x^{2}}\right)^{1/4}\left(Y_{\mu}\left(\left(\nu+\tfrac{1}{2} \right)y^{1/2}\right)+O\left(\frac{1}{\nu}\right)\mathrm{env}\mskip-2.0mu Y_{ \mu}\left(\left(\nu+\tfrac{1}{2}\right)y^{1/2}\right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS4.p1.m2">x\in[0,1)</Math> and <Math mode="inline" xml:id="C14.S15.SS4.p1.m3">\mu\in[0,(1-\delta)(\nu+\frac{1}{2})]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C14.S15.SS4.p1.s2">
+For <Math mode="inline" xml:id="C14.S15.SS4.p1.m4">\alpha</Math> , <Math mode="inline" xml:id="C14.S15.SS4.p1.m5">\beta</Math> , and <Math mode="inline" xml:id="C14.S15.SS4.p1.m6">y</Math> see below.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C14.S15.SS4.p2.s1">
+Next, <Math equation-number="14.15.17" mode="display" xml:id="C14.S15.E17">P^{-\mu}_{\nu}\left(x\right)=\beta\left(\frac{\alpha^{2}-y}{x^{2}-1+\alpha^{2} }\right)^{1/4}I_{\mu}\left(\left(\nu+\tfrac{1}{2}\right)|y|^{1/2}\right)\* \left(1+O\left(\frac{1}{\nu}\right)\right),</Math> <Math equation-number="14.15.18" mode="display" xml:id="C14.S15.E18">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)=\frac{1}{\beta\Gamma\left(\nu+\mu+1 \right)}\left(\frac{\alpha^{2}-y}{x^{2}-1+\alpha^{2}}\right)^{1/4}\*K_{\mu} \left(\left(\nu+\tfrac{1}{2}\right)|y|^{1/2}\right)\left(1+O\left(\frac{1}{\nu }\right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS4.p2.m1">x\in(1,\infty)</Math> and <Math mode="inline" xml:id="C14.S15.SS4.p2.m2">\mu\in[0,(1-\delta)(\nu+\frac{1}{2})]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C14.S15.SS4.p2.s2">
+In (14.15.15)–(14.15.18)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C14.S15.SS4.p2.s3">
+<Math equation-number="14.15.19" mode="display" xml:id="C14.S15.E19">\alpha=\frac{\mu}{\nu+\frac{1}{2}}\,(&lt;1),</Math> <Math equation-number="14.15.20" mode="display" xml:id="C14.S15.E20">\beta=e^{\mu}\left(\frac{\nu-\mu+\frac{1}{2}}{\nu+\mu+\frac{1}{2}}\right)^{( \nu/2)+(1/4)}\left(\left(\nu+\tfrac{1}{2}\right)^{2}-\mu^{2}\right)^{-\mu/2},</Math> and the variable <Math mode="inline" xml:id="C14.S15.SS4.p2.m3">y</Math> is defined implicitly by <Math equation-number="14.15.21" mode="display" xml:id="C14.S15.E21">\left(y-\alpha^{2}\right)^{1/2}-\alpha\operatorname{arctan}\left(\frac{\left(y -\alpha^{2}\right)^{1/2}}{\alpha}\right)=\operatorname{arccos}\left(\frac{x}{ \left(1-\alpha^{2}\right)^{1/2}}\right)-\frac{\alpha}{2}\operatorname{arccos} \left(\frac{\left(1+\alpha^{2}\right)x^{2}-1+\alpha^{2}}{\left(1-\alpha^{2} \right)\left(1-x^{2}\right)}\right), if x\leq\left(1-\alpha^{2}\right)^{1/2}, y\geq\alpha^{2},</Math> and <Math equation-number="14.15.22" mode="display" xml:id="C14.S15.E22">{\left(\alpha^{2}-y\right)^{1/2}+\tfrac{1}{2}\alpha\ln|y|-\alpha\ln\left(\left (\alpha^{2}-y\right)^{1/2}+\alpha\right)}={\ln\left(\frac{x+\left(x^{2}-1+ \alpha^{2}\right)^{1/2}}{\left(1-\alpha^{2}\right)^{1/2}}\right)+\frac{\alpha} {2}\ln\left(\frac{\left(1-\alpha^{2}\right)\left|1-x^{2}\right|}{\left(1+ \alpha^{2}\right)x^{2}-1+\alpha^{2}+2\alpha x\left(x^{2}-1+\alpha^{2}\right)^{ 1/2}}\right)}, if x\geq\left(1-\alpha^{2}\right)^{1/2}, y\leq\alpha^{2},</Math> where the inverse trigonometric functions take their principal values (§4.23(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="27" xml:id="C14.S15.SS4.p2.s4">
+The points <Math mode="inline" xml:id="C14.S15.SS4.p2.m4">x=\left(1-\alpha^{2}\right)^{1/2}</Math> , <Math mode="inline" xml:id="C14.S15.SS4.p2.m5">x=1</Math> , and <Math mode="inline" xml:id="C14.S15.SS4.p2.m6">x=\infty</Math> are mapped to <Math mode="inline" xml:id="C14.S15.SS4.p2.m7">y=\alpha^{2}</Math> , <Math mode="inline" xml:id="C14.S15.SS4.p2.m8">y=0</Math> , and <Math mode="inline" xml:id="C14.S15.SS4.p2.m9">y=-\infty</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="28" xml:id="C14.S15.SS4.p2.s5">
+The interval <Math mode="inline" xml:id="C14.S15.SS4.p2.m10">0\leq x&lt;\infty</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S15.SS4.p2.m11">-\infty&lt;y\leq y_{0}</Math> , where <Math mode="inline" xml:id="C14.S15.SS4.p2.m12">y=y_{0}</Math> is the (positive) solution of (14.15.21) when <Math mode="inline" xml:id="C14.S15.SS4.p2.m13">x=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C14.S15.SS4.p3.s1">
+For asymptotic expansions and explicit error bounds, see Boyd and Dunster (1986).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S15.SS5">
+<title>Large <Math mode="inline" xml:id="C14.S15.SS5.m1">\nu</Math>,<Math mode="inline" xml:id="C14.S15.SS5.m2">(\nu+\frac{1}{2})\delta\leq\mu\leq(\nu+\frac{1}{2})/\delta</Math></title>        
+ 
+<para xml:id="C14.S15.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C14.S15.SS5.p1.s1">
+Here we introduce the envelopes of the parabolic cylinder functions <Math mode="inline" xml:id="C14.S15.SS5.p1.m1">U\left(-c,x\right)</Math> , <Math mode="inline" xml:id="C14.S15.SS5.p1.m2">\overline{U}\left(-c,x\right)</Math> , which are defined in §12.2.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C14.S15.SS5.p1.s2">
+For <Math mode="inline" xml:id="C14.S15.SS5.p1.m3">U\left(-c,x\right)</Math> or <Math mode="inline" xml:id="C14.S15.SS5.p1.m4">\overline{U}\left(-c,x\right)</Math> , with <Math mode="inline" xml:id="C14.S15.SS5.p1.m5">c</Math> and <Math mode="inline" xml:id="C14.S15.SS5.p1.m6">x</Math> nonnegative, <Math equation-number="14.15.23" mode="display" xml:id="C14.S15.E23">\mathrm{env}\mskip-1.0mu U\left(-c,x\right)=\begin{cases}\left({U^{2}}\left(-c ,x\right)+{\overline{U}^{2}}\left(-c,x\right)\right)^{1/2},&amp;0\leq x\leq X_{c}, \\ \sqrt{2}U\left(-c,x\right),&amp;X_{c}\leq x&lt;\infty,\end{cases}\mathrm{env}\mskip-1.0mu \overline{U}\left(-c,x\right)=\begin{cases}\left({U^{ 2}}\left(-c,x\right)+{\overline{U}^{2}}\left(-c,x\right)\right)^{1/2},&amp;0\leq x \leq X_{c},\\ \sqrt{2}\ \overline{U}\left(-c,x\right),&amp;X_{c}\leq x&lt;\infty,\end{cases}</Math> where <Math mode="inline" xml:id="C14.S15.SS5.p1.m11">x=X_{c}</Math> denotes the largest positive root of the equation <Math mode="inline" xml:id="C14.S15.SS5.p1.m12">U\left(-c,x\right)=\overline{U}\left(-c,x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C14.S15.SS5.p2.s1">
+As <Math mode="inline" xml:id="C14.S15.SS5.p2.m1">\nu\to\infty</Math> , <Math equation-number="14.15.24" mode="display" xml:id="C14.S15.E24">\mathsf{P}^{-\mu}_{\nu}\left(x\right)=\frac{1}{\left(\nu+\frac{1}{2}\right)^{1 /4}2^{(\nu+\mu)/2}\Gamma\left(\frac{1}{2}\nu+\frac{1}{2}\mu+\frac{3}{4}\right) }\left(\frac{\zeta^{2}-\alpha^{2}}{x^{2}-a^{2}}\right)^{1/4}\*\left(U\left(\mu -\nu-\tfrac{1}{2},\left(2\nu+1\right)^{1/2}\zeta\right)+O\left(\nu^{-2/3} \right)\mathrm{env}\mskip-1.0mu U\left(\mu-\nu-\tfrac{1}{2},\left(2\nu+1\right )^{1/2}\zeta\right)\right),</Math> <Math equation-number="14.15.25" mode="display" xml:id="C14.S15.E25">\mathsf{Q}^{-\mu}_{\nu}\left(x\right)=\frac{\pi}{\left(\nu+\frac{1}{2}\right)^ {1/4}2^{(\nu+\mu+2)/2}\Gamma\left(\frac{1}{2}\nu+\frac{1}{2}\mu+\frac{3}{4} \right)}\*\left(\frac{\zeta^{2}-\alpha^{2}}{x^{2}-a^{2}}\right)^{1/4}\*\left( \overline{U}\left(\mu-\nu-\tfrac{1}{2},\left(2\nu+1\right)^{1/2}\zeta\right)+O \left(\nu^{-2/3}\right)\mathrm{env}\mskip-1.0mu \overline{U}\left(\mu-\nu- \tfrac{1}{2},\left(2\nu+1\right)^{1/2}\zeta\right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS5.p2.m2">x\in[0,1)</Math> and <Math mode="inline" xml:id="C14.S15.SS5.p2.m3">\mu\in[\delta(\nu+\frac{1}{2}),\nu+\frac{1}{2}]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C14.S15.SS5.p2.s2">
+Here <Math equation-number="14.15.26" mode="display" xml:id="C14.S15.E26">a=\frac{\left(\left(\nu+\mu+\frac{1}{2}\right)\left|\nu-\mu+\frac{1}{2}\right| \right)^{1/2}}{\nu+\frac{1}{2}},\alpha=\left(\frac{2\left|\nu-\mu+\frac{1}{2}\right|}{\nu+\frac{1}{2}}\right)^ {1/2},</Math> and the variable <Math mode="inline" xml:id="C14.S15.SS5.p2.m4">\zeta</Math> is defined implicitly by <Math equation-number="14.15.27" mode="display" xml:id="C14.S15.E27">\frac{1}{2}\zeta\left(\zeta^{2}-\alpha^{2}\right)^{1/2}-\frac{1}{2}\alpha^{2} \operatorname{arccosh}\left(\frac{\zeta}{\alpha}\right)=\left(1-a^{2}\right)^{ 1/2}\operatorname{arctanh}\left(\frac{1}{x}\left(\frac{x^{2}-a^{2}}{1-a^{2}} \right)^{1/2}\right)-\operatorname{arccosh}\left(\frac{x}{a}\right), if a\leq x&lt;1, \alpha\leq\zeta&lt;\infty,</Math> and <Math equation-number="14.15.28" mode="display" xml:id="C14.S15.E28">\frac{1}{2}\alpha^{2}\operatorname{arcsin}\left(\frac{\zeta}{\alpha}\right)+ \frac{1}{2}\zeta\left(\alpha^{2}-\zeta^{2}\right)^{1/2}=\operatorname{arcsin} \left(\frac{x}{a}\right)-\left(1-a^{2}\right)^{1/2}\operatorname{arctan}\left( x\left(\frac{1-a^{2}}{a^{2}-x^{2}}\right)^{1/2}\right), if -a\leq x\leq a, -\alpha\leq\zeta\leq\alpha,</Math> when <Math mode="inline" xml:id="C14.S15.SS5.p2.m5">a&gt;0</Math> , and <Math equation-number="14.15.29" mode="display" xml:id="C14.S15.E29">\zeta^{2}=-\ln\left(1-x^{2}\right), if -1&lt;x&lt;1,</Math> when <Math mode="inline" xml:id="C14.S15.SS5.p2.m6">a=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C14.S15.SS5.p2.s3">
+The inverse hyperbolic and trigonometric functions take their principal values (§§4.23(ii),4.37(ii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C14.S15.SS5.p3.s1">
+When <Math mode="inline" xml:id="C14.S15.SS5.p3.m1">a&gt;0</Math> the interval <Math mode="inline" xml:id="C14.S15.SS5.p3.m2">-a\leq x&lt;1</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S15.SS5.p3.m3">-\alpha\leq\zeta&lt;\infty</Math> , with the points <Math mode="inline" xml:id="C14.S15.SS5.p3.m4">x=-a</Math> , <Math mode="inline" xml:id="C14.S15.SS5.p3.m5">x=a</Math> , and <Math mode="inline" xml:id="C14.S15.SS5.p3.m6">x=1</Math> corresponding to <Math mode="inline" xml:id="C14.S15.SS5.p3.m7">\zeta=-\alpha</Math> , <Math mode="inline" xml:id="C14.S15.SS5.p3.m8">\zeta=\alpha</Math> , and <Math mode="inline" xml:id="C14.S15.SS5.p3.m9">\zeta=\infty</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C14.S15.SS5.p3.s2">
+When <Math mode="inline" xml:id="C14.S15.SS5.p3.m10">a=0</Math> the interval <Math mode="inline" xml:id="C14.S15.SS5.p3.m11">-1&lt;x&lt;1</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S15.SS5.p3.m12">-\infty&lt;\zeta&lt;\infty</Math> , with the points <Math mode="inline" xml:id="C14.S15.SS5.p3.m13">x=-1</Math> , <Math mode="inline" xml:id="C14.S15.SS5.p3.m14">0</Math> , and <Math mode="inline" xml:id="C14.S15.SS5.p3.m15">1</Math> corresponding to <Math mode="inline" xml:id="C14.S15.SS5.p3.m16">\zeta=-\infty</Math> , <Math mode="inline" xml:id="C14.S15.SS5.p3.m17">0</Math> , and <Math mode="inline" xml:id="C14.S15.SS5.p3.m18">\infty</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C14.S15.SS5.p4.s1">
+Next, as <Math mode="inline" xml:id="C14.S15.SS5.p4.m1">\nu\to\infty</Math> , <Math equation-number="14.15.30" mode="display" xml:id="C14.S15.E30">\mathsf{P}^{-\mu}_{\nu}\left(x\right)=\frac{1}{\left(\nu+\frac{1}{2}\right)^{1 /4}2^{(\nu+\mu)/2}\Gamma\left(\frac{1}{2}\nu+\frac{1}{2}\mu+\frac{3}{4}\right) }\left(\frac{\zeta^{2}+\alpha^{2}}{x^{2}+a^{2}}\right)^{1/4}\*U\left(\mu-\nu- \tfrac{1}{2},\left(2\nu+1\right)^{1/2}\zeta\right)\left(1+O\left(\nu^{-1}\ln \nu\right)\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C14.S15.SS5.p4.m2">x\in(-1,1)</Math> and <Math mode="inline" xml:id="C14.S15.SS5.p4.m3">\mu\in[\nu+\frac{1}{2},(1/\delta)(\nu+\frac{1}{2})]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C14.S15.SS5.p4.s2">
+Here <Math mode="inline" xml:id="C14.S15.SS5.p4.m4">\zeta</Math> is defined implicitly by <Math equation-number="14.15.31" mode="display" xml:id="C14.S15.E31">\frac{1}{2}\zeta\left(\zeta^{2}+\alpha^{2}\right)^{1/2}+\frac{1}{2}\alpha^{2} \operatorname{arcsinh}\left(\frac{\zeta}{\alpha}\right)=\left(1+a^{2}\right)^{ 1/2}\operatorname{arctanh}\left(x\left(\frac{1+a^{2}}{x^{2}+a^{2}}\right)^{1/2 }\right)-\operatorname{arcsinh}\left(\frac{x}{a}\right), if -1&lt;x&lt;1, -\infty&lt;\zeta&lt;\infty,</Math> when <Math mode="inline" xml:id="C14.S15.SS5.p4.m5">a&gt;0</Math> , which maps the interval <Math mode="inline" xml:id="C14.S15.SS5.p4.m6">-1&lt;x&lt;1</Math> one-to-one to the interval <Math mode="inline" xml:id="C14.S15.SS5.p4.m7">-\infty&lt;\zeta&lt;\infty</Math> : the points <Math mode="inline" xml:id="C14.S15.SS5.p4.m8">x=-1</Math> and <Math mode="inline" xml:id="C14.S15.SS5.p4.m9">x=1</Math> correspond to <Math mode="inline" xml:id="C14.S15.SS5.p4.m10">\zeta=-\infty</Math> and <Math mode="inline" xml:id="C14.S15.SS5.p4.m11">\zeta=\infty</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C14.S15.SS5.p4.s3">
+When <Math mode="inline" xml:id="C14.S15.SS5.p4.m12">a=0</Math> (14.15.29) again applies.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="40" xml:id="C14.S15.SS5.p4.s4">
+(The inverse hyperbolic functions again take their principal values.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C14.S15.SS5.p5.s1">
+Since (14.15.30) holds for negative <Math mode="inline" xml:id="C14.S15.SS5.p5.m1">x</Math> , corresponding approximations for <Math mode="inline" xml:id="C14.S15.SS5.p5.m2">\mathsf{Q}^{\mp\mu}_{\nu}\left(x\right)</Math> , uniformly valid in the interval <Math mode="inline" xml:id="C14.S15.SS5.p5.m3">-1&lt;x&lt;1</Math> , can be obtained from (14.9.9) and (14.9.10).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S15.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C14.S15.SS5.p6.s1">
+For error bounds and other extensions see Olver (1975b).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

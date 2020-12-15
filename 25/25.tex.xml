@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C25">
+<title>Zeta and Related Functions</title>               
+          
+<section xml:id="C25.S1">
+<title>Special Notation</title>         
+<para xml:id="C25.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C25.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r1.m1">k,m,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C25.S1.p2.t1.s2">
+nonnegative integers.      
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C25.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r2.m1">p</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C25.S1.p2.t1.s4">
+prime number.  
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C25.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r3.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C25.S1.p2.t1.s6">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C25.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r4.m1">a</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C25.S1.p2.t1.s8">
+real or complex parameter.  
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C25.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r5.m1">s=\sigma+it</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C25.S1.p2.t1.s10">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C25.S1.p2.t1.s11">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r6.m1">z=x+iy</Math>
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C25.S1.p2.t1.s12">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C25.S1.p2.t1.s13">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r7.m1">\gamma</Math>
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C25.S1.p2.t1.s14">
+Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="16" sentence-num-in-table="15" xml:id="C25.S1.p2.t1.s15">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r8.m1">\psi\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="17" sentence-num-in-table="16" xml:id="C25.S1.p2.t1.s16">
+digamma function<Math mode="inline" xml:id="C25.S1.p2.t1.r8.m2">\Gamma'\left(x\right)/\Gamma\left(x\right)</Math> except in §LABEL:sec:ZE.APPL. See §LABEL:sec:GA.Def.GP.
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="18" sentence-num-in-table="17" xml:id="C25.S1.p2.t1.s17">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r9.m1">B_{n},B_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="19" sentence-num-in-table="18" xml:id="C25.S1.p2.t1.s18">
+Bernoulli number and polynomial (§LABEL:sec:BP.DE.BNP).
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="20" sentence-num-in-table="19" xml:id="C25.S1.p2.t1.s19">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r10.m1">\widetilde{B}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="21" sentence-num-in-table="20" xml:id="C25.S1.p2.t1.s20">
+periodic Bernoulli function<Math mode="inline" xml:id="C25.S1.p2.t1.r10.m2">B_{n}\left(x-\left\lfloor x\right\rfloor\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="22" sentence-num-in-table="21" xml:id="C25.S1.p2.t1.s21">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r11.m1">m\mathbin{|}n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="23" sentence-num-in-table="22" xml:id="C25.S1.p2.t1.s22">
+<Math mode="inline" xml:id="C25.S1.p2.t1.r11.m2">m</Math> divides <Math mode="inline" xml:id="C25.S1.p2.t1.r11.m3">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="24" sentence-num-in-table="23" xml:id="C25.S1.p2.t1.s23">
+primes
+</sentence>
+
+<sentence sentence-num-in-para="24" sentence-num-in-section="25" sentence-num-in-table="24" xml:id="C25.S1.p2.t1.s24">
+on function symbols: derivatives with respect to argument.
+</sentence>
+
+</para>
+   
+<para xml:id="C25.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C25.S1.p3.s1">
+The main function treated in this chapter is the Riemann zeta function <Math mode="inline" xml:id="C25.S1.p3.m1">\zeta\left(s\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C25.S1.p3.s2">
+This notation was introduced in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C25.S1.p4.s1">
+The main related functions are the Hurwitz zeta function <Math mode="inline" xml:id="C25.S1.p4.m1">\zeta\left(s,a\right)</Math> , the dilogarithm <Math mode="inline" xml:id="C25.S1.p4.m2">\mathrm{Li}_{2}\left(z\right)</Math> , the polylogarithm <Math mode="inline" xml:id="C25.S1.p4.m3">\mathrm{Li}_{s}\left(z\right)</Math> (also known as Jonquière’s function <Math mode="inline" xml:id="C25.S1.p4.m4">\phi\left(z,s\right)</Math> ), Lerch’s transcendent <Math mode="inline" xml:id="C25.S1.p4.m5">\Phi\left(z,s,a\right)</Math> , and the Dirichlet <Math mode="inline" xml:id="C25.S1.p4.m6">L</Math> -functions <Math mode="inline" xml:id="C25.S1.p4.m7">L\left(s,\chi\right)</Math>.
+</sentence>
+
+</para>
+ 
+  
+</section>
+           
+<section xml:id="C25.S2">
+<title>Definition and Expansions</title>          
+<subsection xml:id="C25.S2.SS1">
+<title>Definition</title>         
+<para xml:id="C25.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C25.S2.SS1.p1.s1">
+When <Math mode="inline" xml:id="C25.S2.SS1.p1.m1">\Re s&gt;1</Math> , <Math equation-number="25.2.1" mode="display" xml:id="C25.S2.E1">\zeta\left(s\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C25.S2.SS1.p1.s2">
+Elsewhere <Math mode="inline" xml:id="C25.S2.SS1.p1.m2">\zeta\left(s\right)</Math> is defined by analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C25.S2.SS1.p1.s3">
+It is a meromorphic function whose only singularity in <Math mode="inline" xml:id="C25.S2.SS1.p1.m3">\mathbb{C}</Math> is a simple pole at <Math mode="inline" xml:id="C25.S2.SS1.p1.m4">s=1</Math> , with residue 1.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS2">
+<title>Other Infinite Series</title>          
+<para xml:id="C25.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C25.S2.SS2.p1.s1">
+ <Math equation-number="25.2.2" mode="display" xml:id="C25.S2.E2">\zeta\left(s\right)=\frac{1}{1-2^{-s}}\sum_{n=0}^{\infty}\frac{1}{(2n+1)^{s}}, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C25.S2.SS2.p1.s2">
+<Math equation-number="25.2.3" mode="display" xml:id="C25.S2.E3">\zeta\left(s\right)=\frac{1}{1-2^{1-s}}\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^ {s}}, subject to \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C25.S2.SS2.p1.s3">
+<Math equation-number="25.2.4" mode="display" xml:id="C25.S2.E4">\zeta\left(s\right)=\frac{1}{s-1}+\sum_{n=0}^{\infty}\frac{(-1)^{n}}{n!}\gamma _{n}(s-1)^{n},</Math> where <Math equation-number="25.2.5" mode="display" xml:id="C25.S2.E5">\gamma_{n}=\lim_{m\to\infty}\left(\sum_{k=1}^{m}\frac{(\ln k)^{n}}{k}-\frac{( \ln m)^{n+1}}{n+1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="35" xml:id="C25.S2.SS2.p1.s4">
+<Math equation-number="25.2.6" mode="display" xml:id="C25.S2.E6">\zeta'\left(s\right)=-\sum_{n=2}^{\infty}(\ln n)n^{-s}, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="36" xml:id="C25.S2.SS2.p1.s5">
+<Math equation-number="25.2.7" mode="display" xml:id="C25.S2.E7">{\zeta^{(k)}}\left(s\right)=(-1)^{k}\sum_{n=2}^{\infty}(\ln n)^{k}n^{-s}, subject to \Re s&gt;1, k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C25.S2.SS2.p2.s1">
+For further expansions of functions similar to (LABEL:eq:ZE.EX.ZE1) (Dirichlet series) see §LABEL:sec:NT.EP.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C25.S2.SS2.p2.s2">
+This includes, for example, <Math mode="inline" xml:id="C25.S2.SS2.p2.m1">1/\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS3">
+<title>Representations by the Euler–Maclaurin Formula</title>         
+ 
+<para xml:id="C25.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C25.S2.SS3.p1.s1">
+ <Math equation-number="25.2.8" mode="display" xml:id="C25.S2.E8">\zeta\left(s\right)=\sum_{k=1}^{N}\frac{1}{k^{s}}+\frac{N^{1-s}}{s-1}-s\int_{N }^{\infty}\frac{x-\left\lfloor x\right\rfloor}{x^{s+1}}\mathrm{d}x, subject to \Re s&gt;0, N=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C25.S2.SS3.p1.s2">
+<Math equation-number="25.2.9" mode="display" xml:id="C25.S2.E9">\zeta\left(s\right)=\sum_{k=1}^{N}\frac{1}{k^{s}}+\frac{N^{1-s}}{s-1}-\frac{1} {2}N^{-s}+\sum_{k=1}^{n}\genfrac{(}{)}{0.0pt}{}{s+2k-2}{2k-1}\frac{B_{2k}}{2k} N^{1-s-2k}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1}\int_{N}^{\infty}\frac{ \widetilde{B}_{2n+1}\left(x\right)}{x^{s+2n+1}}\mathrm{d}x, subject to \Re s&gt;-2n; n,N=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C25.S2.SS3.p1.s3">
+<Math equation-number="25.2.10" mode="display" xml:id="C25.S2.E10">\zeta\left(s\right)=\frac{1}{s-1}+\frac{1}{2}+\sum_{k=1}^{n}\genfrac{(}{)}{0.0 pt}{}{s+2k-2}{2k-1}\frac{B_{2k}}{2k}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1}\int_{ 1}^{\infty}\frac{\widetilde{B}_{2n+1}\left(x\right)}{x^{s+2n+1}}\mathrm{d}x, subject to \Re s&gt;-2n, n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="42" xml:id="C25.S2.SS3.p1.s4">
+For <Math mode="inline" xml:id="C25.S2.SS3.p1.m1">B_{2k}</Math> see §LABEL:sec:BP.DE.BNP, and for <Math mode="inline" xml:id="C25.S2.SS3.p1.m2">\widetilde{B}_{n}\left(x\right)</Math> see §LABEL:sec:BP.DE.PBEF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS4">
+<title>Infinite Products</title>         
+ 
+<para xml:id="C25.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C25.S2.SS4.p1.s1">
+ <Math equation-number="25.2.11" mode="display" xml:id="C25.S2.E11">\zeta\left(s\right)=\prod_{p}(1-p^{-s})^{-1}, subject to \Re s&gt;1,</Math> product over all primes <Math mode="inline" xml:id="C25.S2.SS4.p1.m1">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C25.S2.SS4.p1.s2">
+<Math equation-number="25.2.12" mode="display" xml:id="C25.S2.E12">\zeta\left(s\right)=\frac{(2\pi)^{s}e^{-s-(\gamma s/2)}}{2(s-1)\Gamma\left( \tfrac{1}{2}s+1\right)}\prod_{\rho}\left(1-\frac{s}{\rho}\right)e^{s/\rho},</Math> product over zeros <Math mode="inline" xml:id="C25.S2.SS4.p1.m2">\rho</Math> of <Math mode="inline" xml:id="C25.S2.SS4.p1.m3">\zeta</Math> with <Math mode="inline" xml:id="C25.S2.SS4.p1.m4">\Re\rho&gt;0</Math> (see §LABEL:sec:ZE.ZERO.DIST); <Math mode="inline" xml:id="C25.S2.SS4.p1.m5">\gamma</Math> is Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S3">
+<title>Graphics</title>        
+ 
+          
+<sentence sentence-num-in-section="45" xml:id="C25.S3.F1.s1">
+Figure 25.3.1: Riemann zeta function <Math mode="inline" xml:id="C25.S3.F1.m4">\zeta\left(x\right)</Math> and its derivative <Math mode="inline" xml:id="C25.S3.F1.m5">\zeta'\left(x\right)</Math> , <Math mode="inline" xml:id="C25.S3.F1.m6">-20\leq x\leq 10</Math> .
+</sentence>           
+<sentence sentence-num-in-section="46" xml:id="C25.S3.F2.s1">
+Figure 25.3.2: Riemann zeta function <Math mode="inline" xml:id="C25.S3.F2.m4">\zeta\left(x\right)</Math> and its derivative <Math mode="inline" xml:id="C25.S3.F2.m5">\zeta'\left(x\right)</Math> , <Math mode="inline" xml:id="C25.S3.F2.m6">-12\leq x\leq-2</Math> .
+</sentence> 
+          
+<sentence sentence-num-in-section="47" xml:id="C25.S3.F3.s1">
+Figure 25.3.3: Modulus of the Riemann zeta function <Math mode="inline" xml:id="C25.S3.F3.m4">|\zeta\left(x+iy\right)|</Math> , <Math mode="inline" xml:id="C25.S3.F3.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C25.S3.F3.m6">-10\leq y\leq 40</Math> .
+</sentence>           
+<sentence sentence-num-in-section="48" xml:id="C25.S3.F4.s1">
+Figure 25.3.4: <Math mode="inline" xml:id="C25.S3.F4.m3">Z(t)</Math> , <Math mode="inline" xml:id="C25.S3.F4.m4">0\leq t\leq 50</Math> . <Math mode="inline" xml:id="C25.S3.F4.m5">Z(t)</Math> and <Math mode="inline" xml:id="C25.S3.F4.m6">\zeta\left(\tfrac{1}{2}+it\right)</Math> have the same zeros. See § .
+</sentence> 
+          
+<sentence sentence-num-in-section="49" xml:id="C25.S3.F5.s1">
+Figure 25.3.5: <Math mode="inline" xml:id="C25.S3.F5.m3">Z(t)</Math> , <Math mode="inline" xml:id="C25.S3.F5.m4">1000\leq t\leq 1050</Math> .
+</sentence>           
+<sentence sentence-num-in-section="50" xml:id="C25.S3.F6.s1">
+Figure 25.3.6: <Math mode="inline" xml:id="C25.S3.F6.m3">Z(t)</Math> , <Math mode="inline" xml:id="C25.S3.F6.m4">10000\leq t\leq 10050</Math> .
+</sentence> 
+  
+</section>
+ 
+<section xml:id="C25.S4">
+<title>Reflection Formulas</title>         
+ 
+<para xml:id="C25.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C25.S4.p1.s1">
+For <Math mode="inline" xml:id="C25.S4.p1.m1">s\neq 0,1</Math> , <Math equation-number="25.4.1" mode="display" xml:id="C25.S4.E1">\zeta\left(1-s\right)=2(2\pi)^{-s}\cos\left(\tfrac{1}{2}\pi s\right)\Gamma \left(s\right)\zeta\left(s\right),</Math> <Math equation-number="25.4.2" mode="display" xml:id="C25.S4.E2">\zeta\left(s\right)=2(2\pi)^{s-1}\sin\left(\tfrac{1}{2}\pi s\right)\Gamma\left (1-s\right)\zeta\left(1-s\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C25.S4.p1.s2">
+Equivalently, <Math equation-number="25.4.3" mode="display" xml:id="C25.S4.E3">\xi\left(s\right)=\xi\left(1-s\right),</Math> where <Math mode="inline" xml:id="C25.S4.p1.m3">\xi\left(s\right)</Math> is Riemann’s <Math mode="inline" xml:id="C25.S4.p1.m4">\xi</Math> -function, defined by: <Math equation-number="25.4.4" mode="display" xml:id="C25.S4.E4">\xi\left(s\right)=\tfrac{1}{2}s(s-1)\Gamma\left(\tfrac{1}{2}s\right)\pi^{-s/2} \zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C25.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C25.S4.p2.s1">
+For <Math mode="inline" xml:id="C25.S4.p2.m1">s\neq 0,1</Math> and <Math mode="inline" xml:id="C25.S4.p2.m2">k=1,2,3,\dots</Math> , <Math equation-number="25.4.5" mode="display" xml:id="C25.S4.E5">(-1)^{k}{\zeta^{(k)}}\left(1-s\right)=\frac{2}{(2\pi)^{s}}\sum_{m=0}^{k}\sum_{ r=0}^{m}\genfrac{(}{)}{0.0pt}{}{k}{m}\genfrac{(}{)}{0.0pt}{}{m}{r}\left(\Re(c^ {k-m})\cos\left(\tfrac{1}{2}\pi s\right)+\Im(c^{k-m})\sin\left(\tfrac{1}{2}\pi s \right)\right){\Gamma^{(r)}}\left(s\right){\zeta^{(m-r)}}\left(s\right),</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C25.S4.p2.s2">
+where <Math equation-number="25.4.6" mode="display" xml:id="C25.S4.E6">c=-\ln\left(2\pi\right)-\tfrac{1}{2}\pi\mathrm{i}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S5">
+<title>Integral Representations</title>          
+<subsection xml:id="C25.S5.SS1">
+<title>In Terms of Elementary Functions</title>        
+ 
+<para xml:id="C25.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C25.S5.SS1.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C25.S5.SS1.p1.m1">s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C25.S5.SS1.p1.s2">
+<Math equation-number="25.5.1" mode="display" xml:id="C25.S5.E1">\zeta\left(s\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{s- 1}}{e^{x}-1}\mathrm{d}x, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C25.S5.SS1.p1.s3">
+, <Math equation-number="25.5.2" mode="display" xml:id="C25.S5.E2">\zeta\left(s\right)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{e^{ x}x^{s}}{(e^{x}-1)^{2}}\mathrm{d}x, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="58" xml:id="C25.S5.SS1.p1.s4">
+<Math equation-number="25.5.3" mode="display" xml:id="C25.S5.E3">\zeta\left(s\right)=\frac{1}{(1-2^{1-s})\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{e^{x}+1}\mathrm{d}x, subject to \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="59" xml:id="C25.S5.SS1.p1.s5">
+, <Math equation-number="25.5.4" mode="display" xml:id="C25.S5.E4">\zeta\left(s\right)=\frac{1}{(1-2^{1-s})\Gamma\left(s+1\right)}\int_{0}^{ \infty}\frac{e^{x}x^{s}}{(e^{x}+1)^{2}}\mathrm{d}x, subject to \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="60" xml:id="C25.S5.SS1.p1.s6">
+<Math equation-number="25.5.5" mode="display" xml:id="C25.S5.E5">\zeta\left(s\right)=-s\int_{0}^{\infty}\frac{x-\left\lfloor x\right\rfloor- \frac{1}{2}}{x^{s+1}}\mathrm{d}x, subject to -1&lt;\Re s&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="61" xml:id="C25.S5.SS1.p1.s7">
+<Math equation-number="25.5.6" mode="display" xml:id="C25.S5.E6">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+\frac{1}{\Gamma\left(s\right)} \int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}\right)\frac{x ^{s-1}}{e^{x}}\mathrm{d}x, subject to \Re s&gt;-1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C25.S5.SS1.p2.s1">
+ <Math equation-number="25.5.7" mode="display" xml:id="C25.S5.E7">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+\sum_{m=1}^{n}\frac{B_{2m}}{(2m) !}{\left(s\right)_{2m-1}}+\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\left (\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}-\sum_{m=1}^{n}\frac{B_{2m}}{(2m)!}x ^{2m-1}\right)\frac{x^{s-1}}{e^{x}}\mathrm{d}x, subject to \Re s&gt;-(2n+1), n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C25.S5.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C25.S5.SS1.p3.s1">
+ <Math equation-number="25.5.8" mode="display" xml:id="C25.S5.E8">\zeta\left(s\right)=\frac{1}{2(1-2^{-s})\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{\sinh x}\mathrm{d}x, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C25.S5.SS1.p3.s2">
+, <Math equation-number="25.5.9" mode="display" xml:id="C25.S5.E9">\zeta\left(s\right)=\frac{2^{s-1}}{\Gamma\left(s+1\right)}\int_{0}^{\infty} \frac{x^{s}}{(\sinh x)^{2}}\mathrm{d}x, subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C25.S5.SS1.p3.s3">
+<Math equation-number="25.5.10" mode="display" xml:id="C25.S5.E10">\zeta\left(s\right)=\frac{2^{s-1}}{1-2^{1-s}}\int_{0}^{\infty}\frac{\cos\left( s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}\cosh\left(\frac{1}{2}\pi x \right)}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="66" xml:id="C25.S5.SS1.p3.s4">
+<Math equation-number="25.5.11" mode="display" xml:id="C25.S5.E11">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+2\int_{0}^{\infty}\frac{\sin \left(s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}(e^{2\pi x}-1)}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="67" xml:id="C25.S5.SS1.p3.s5">
+<Math equation-number="25.5.12" mode="display" xml:id="C25.S5.E12">\zeta\left(s\right)=\frac{2^{s-1}}{s-1}-2^{s}\int_{0}^{\infty}\frac{\sin\left( s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}(e^{\pi x}+1)}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S5.SS2">
+<title>In Terms of Other Functions</title>        
+ 
+<para xml:id="C25.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C25.S5.SS2.p1.s1">
+ <Math equation-number="25.5.13" mode="display" xml:id="C25.S5.E13">\zeta\left(s\right)=\frac{\pi^{s/2}}{s(s-1)\Gamma\left(\frac{1}{2}s\right)}+ \frac{\pi^{s/2}}{\Gamma\left(\frac{1}{2}s\right)}\*\int_{1}^{\infty}\left(x^{s /2}+x^{(1-s)/2}\right)\frac{\omega(x)}{x}\mathrm{d}x, subject to s\neq 1,</Math> where <Math equation-number="25.5.14" mode="display" xml:id="C25.S5.E14">\omega(x)=\sum_{n=1}^{\infty}e^{-n^{2}\pi x}=\frac{1}{2}\left(\theta_{3}\left( 0\middle|ix\right)-1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C25.S5.SS2.p1.s2">
+For <Math mode="inline" xml:id="C25.S5.SS2.p1.m1">\theta_{3}</Math> see §LABEL:sec:TH.def.fe.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="70" xml:id="C25.S5.SS2.p1.s3">
+For similar representations involving other theta functions see ( , p. 339) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C25.S5.SS2.p2.s1">
+In (LABEL:eq:ZE.INT.ADV2)–(LABEL:eq:ZE.INT.ADV6), <Math mode="inline" xml:id="C25.S5.SS2.p2.m1">0&lt;\Re s&lt;1</Math> , <Math mode="inline" xml:id="C25.S5.SS2.p2.m2">\psi\left(x\right)</Math> is the digamma function, and <Math mode="inline" xml:id="C25.S5.SS2.p2.m3">\gamma</Math> is Euler’s constant (§LABEL:sec:GA.Def).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C25.S5.SS2.p2.s2">
+(LABEL:eq:ZE.INT.ADV3) is also valid for <Math mode="inline" xml:id="C25.S5.SS2.p2.m4">0&lt;\Re s&lt;2</Math> , <Math mode="inline" xml:id="C25.S5.SS2.p2.m5">s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="73" xml:id="C25.S5.SS2.p2.s3">
+<Math equation-number="25.5.15" mode="display" xml:id="C25.S5.E15">\zeta\left(s\right)=\frac{1}{s-1}+\frac{\sin\left(\pi s\right)}{\pi}\*\int_{0} ^{\infty}(\ln\left(1+x\right)-\psi\left(1+x\right))x^{-s}\mathrm{d}x,</Math> <Math equation-number="25.5.16" mode="display" xml:id="C25.S5.E16">\zeta\left(s\right)=\frac{1}{s-1}+\frac{\sin\left(\pi s\right)}{\pi(s-1)}\* \int_{0}^{\infty}\left(\frac{1}{1+x}-\psi'\left(1+x\right)\right)x^{1-s} \mathrm{d}x,</Math> , <Math equation-number="25.5.17" mode="display" xml:id="C25.S5.E17">\zeta\left(1+s\right)=\frac{\sin\left(\pi s\right)}{\pi}\int_{0}^{\infty}\left (\gamma+\psi\left(1+x\right)\right)x^{-s-1}\mathrm{d}x,</Math> <Math equation-number="25.5.18" mode="display" xml:id="C25.S5.E18">\zeta\left(1+s\right)=\frac{\sin\left(\pi s\right)}{\pi s}\int_{0}^{\infty} \psi'\left(1+x\right)x^{-s}\mathrm{d}x,</Math> , <Math equation-number="25.5.19" mode="display" xml:id="C25.S5.E19">\zeta\left(m+s\right)=(-1)^{m-1}\frac{\Gamma\left(s\right)\sin\left(\pi s \right)}{\pi\Gamma\left(m+s\right)}\*\int_{0}^{\infty}{\psi^{(m)}}\left(1+x \right)x^{-s}\mathrm{d}x, subject to m=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S5.SS3">
+<title>Contour Integrals</title>          
+<para xml:id="C25.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C25.S5.SS3.p1.s1">
+ <Math equation-number="25.5.20" mode="display" xml:id="C25.S5.E20">\zeta\left(s\right)=\frac{\Gamma\left(1-s\right)}{2\pi i}\int_{-\infty}^{(0+)} \frac{z^{s-1}}{e^{-z}-1}\mathrm{d}z, subject to s\neq 1,2,\dots,</Math> where the integration contour is a loop around the negative real axis; it starts at <Math mode="inline" xml:id="C25.S5.SS3.p1.m1">-\infty</Math> , encircles the origin once in the positive direction withoutenclosing any of the points <Math mode="inline" xml:id="C25.S5.SS3.p1.m2">z=\pm 2\pi\mathrm{i}</Math> , <Math mode="inline" xml:id="C25.S5.SS3.p1.m3">\pm 4\pi\mathrm{i}</Math> , …, and returns to <Math mode="inline" xml:id="C25.S5.SS3.p1.m4">-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="75" xml:id="C25.S5.SS3.p1.s2">
+Equivalently, <Math equation-number="25.5.21" mode="display" xml:id="C25.S5.E21">\zeta\left(s\right)=\frac{\Gamma\left(1-s\right)}{2\pi i(1-2^{1-s})}\*\int_{- \infty}^{(0+)}\frac{z^{s-1}}{e^{-z}+1}\mathrm{d}z, subject to s\neq 1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="76" xml:id="C25.S5.SS3.p1.s3">
+The contour here is any loop that encircles the origin in the positive direction not enclosing any of the points <Math mode="inline" xml:id="C25.S5.SS3.p1.m5">\pm\pi\mathrm{i}</Math> , <Math mode="inline" xml:id="C25.S5.SS3.p1.m6">\pm 3\pi\mathrm{i}</Math> , ….
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S6">
+<title>Integer Arguments</title>         
+<subsection xml:id="C25.S6.SS1">
+<title>Function Values</title>           
+<para xml:id="C25.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C25.S6.SS1.p1.s1">
+ <Math equation-number="25.6.1" mode="display" xml:id="C25.S6.E1">\zeta\left(0\right)=-\frac{1}{2}, \zeta\left(2\right)=\frac{\pi^{2}}{6}, \zeta\left(4\right)=\frac{\pi^{4}}{90}, \zeta\left(6\right)=\frac{\pi^{6}}{945}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="78" xml:id="C25.S6.SS1.p1.s2">
+<Math equation-number="25.6.2" mode="display" xml:id="C25.S6.E2">\zeta\left(2n\right)=\frac{(2\pi)^{2n}}{2(2n)!}\left|B_{2n}\right|, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="79" xml:id="C25.S6.SS1.p1.s3">
+, <Math equation-number="25.6.3" mode="display" xml:id="C25.S6.E3">\zeta\left(-n\right)=-\frac{B_{n+1}}{n+1}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="80" xml:id="C25.S6.SS1.p1.s4">
+, <Math equation-number="25.6.4" mode="display" xml:id="C25.S6.E4">\zeta\left(-2n\right)=0, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="81" xml:id="C25.S6.SS1.p1.s5">
+<Math equation-number="25.6.5" mode="display" xml:id="C25.S6.E5">\zeta\left(k+1\right)=\frac{1}{k!}\sum_{n_{1}=1}^{\infty}\dots\sum_{n_{k}=1}^{ \infty}\frac{1}{n_{1}\cdots n_{k}(n_{1}+\dots+n_{k})}, subject to k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="82" xml:id="C25.S6.SS1.p1.s6">
+<Math equation-number="25.6.6" mode="display" xml:id="C25.S6.E6">\zeta\left(2k+1\right)=\frac{(-1)^{k+1}(2\pi)^{2k+1}}{2(2k+1)!}\int_{0}^{1}B_{ 2k+1}\left(t\right)\cot\left(\pi t\right)\mathrm{d}t, subject to k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="83" xml:id="C25.S6.SS1.p1.s7">
+<Math equation-number="25.6.7" mode="display" xml:id="C25.S6.E7">\zeta\left(2\right)=\int_{0}^{1}\int_{0}^{1}\frac{1}{1-xy}\mathrm{d}x\mathrm{d }y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="84" xml:id="C25.S6.SS1.p1.s8">
+, <Math equation-number="25.6.8" mode="display" xml:id="C25.S6.E8">\zeta\left(2\right)=3\sum_{k=1}^{\infty}\frac{1}{k^{2}\genfrac{(}{)}{0.0pt}{}{ 2k}{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="85" xml:id="C25.S6.SS1.p1.s9">
+, <Math equation-number="25.6.9" mode="display" xml:id="C25.S6.E9">\zeta\left(3\right)=\frac{5}{2}\sum_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^{3} \genfrac{(}{)}{0.0pt}{}{2k}{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="86" xml:id="C25.S6.SS1.p1.s10">
+, <Math equation-number="25.6.10" mode="display" xml:id="C25.S6.E10">\zeta\left(4\right)=\frac{36}{17}\sum_{k=1}^{\infty}\frac{1}{k^{4}\genfrac{(}{ )}{0.0pt}{}{2k}{k}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S6.SS2">
+<title>Derivative Values</title>          
+<para xml:id="C25.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C25.S6.SS2.p1.s1">
+ <Math equation-number="25.6.11" mode="display" xml:id="C25.S6.E11">\zeta'\left(0\right)=-\tfrac{1}{2}\ln\left(2\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C25.S6.SS2.p1.s2">
+<Math equation-number="25.6.12" mode="display" xml:id="C25.S6.E12">\zeta''\left(0\right)=-\tfrac{1}{2}(\ln\left(2\pi\right))^{2}+\tfrac{1}{2}{ \gamma^{2}}-\tfrac{1}{24}\pi^{2}+\gamma_{1},</Math> where <Math mode="inline" xml:id="C25.S6.SS2.p1.m1">\gamma_{1}</Math> is given by (LABEL:eq:ZE.EX.gamma).
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C25.S6.SS2.p2.s1">
+With <Math mode="inline" xml:id="C25.S6.SS2.p2.m1">c</Math> defined by (LABEL:eq:ZE.FE.Cdef) and <Math mode="inline" xml:id="C25.S6.SS2.p2.m2">n=1,2,3,\dots</Math> , <Math equation-number="25.6.13" mode="display" xml:id="C25.S6.E13">(-1)^{k}{\zeta^{(k)}}\left(-2n\right)=\frac{2(-1)^{n}}{(2\pi)^{2n+1}}\sum_{m=0 }^{k}\sum_{r=0}^{m}\genfrac{(}{)}{0.0pt}{}{k}{m}\genfrac{(}{)}{0.0pt}{}{m}{r} \Im(c^{k-m})\*{\Gamma^{(r)}}\left(2n+1\right){\zeta^{(m-r)}}\left(2n+1\right),</Math> , <Math equation-number="25.6.14" mode="display" xml:id="C25.S6.E14">(-1)^{k}{\zeta^{(k)}}\left(1-2n\right)=\frac{2(-1)^{n}}{(2\pi)^{2n}}\sum_{m=0} ^{k}\sum_{r=0}^{m}\genfrac{(}{)}{0.0pt}{}{k}{m}\genfrac{(}{)}{0.0pt}{}{m}{r} \Re(c^{k-m})\*{\Gamma^{(r)}}\left(2n\right){\zeta^{(m-r)}}\left(2n\right),</Math> , <Math equation-number="25.6.15" mode="display" xml:id="C25.S6.E15">\zeta'\left(2n\right)=\frac{(-1)^{n+1}(2\pi)^{2n}}{2(2n)!}\left(2n\zeta'\left( 1-2n\right)-(\psi\left(2n\right)-\ln\left(2\pi\right))B_{2n}\right)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S6.SS3">
+<title>Recursion Formulas</title>        
+  
+<para xml:id="C25.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C25.S6.SS3.p1.s1">
+ <Math equation-number="25.6.16" mode="display" xml:id="C25.S6.E16">\left(n+\tfrac{1}{2}\right)\zeta\left(2n\right)=\sum_{k=1}^{n-1}\zeta\left(2k \right)\zeta\left(2n-2k\right), subject to n\geq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C25.S6.SS3.p1.s2">
+ <Math equation-number="25.6.17" mode="display" xml:id="C25.S6.E17">\left(n+\tfrac{3}{4}\right)\zeta\left(4n+2\right)=\sum_{k=1}^{n}\zeta\left(2k \right)\zeta\left(4n+2-2k\right), subject to n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="92" xml:id="C25.S6.SS3.p1.s3">
+<Math equation-number="25.6.18" mode="display" xml:id="C25.S6.E18">{\left(n+\tfrac{1}{4}\right)\zeta\left(4n\right)+\tfrac{1}{2}(\zeta\left(2n \right))^{2}=\sum_{k=1}^{n}\zeta\left(2k\right)\zeta\left(4n-2k\right)}, subject to n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="93" xml:id="C25.S6.SS3.p1.s4">
+<Math equation-number="25.6.19" mode="display" xml:id="C25.S6.E19">\left(m+n+\tfrac{3}{2}\right)\zeta\left(2m+2n+2\right)=\left(\sum_{k=1}^{m}+ \sum_{k=1}^{n}\right)\zeta\left(2k\right)\zeta\left(2m+2n+2-2k\right), subject to m\geq 0, n\geq 0, m+n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="94" xml:id="C25.S6.SS3.p1.s5">
+<Math equation-number="25.6.20" mode="display" xml:id="C25.S6.E20">\tfrac{1}{2}(2^{2n}-1)\zeta\left(2n\right)=\sum_{k=1}^{n-1}(2^{2n-2k}-1)\zeta \left(2n-2k\right)\zeta\left(2k\right), subject to n\geq 2.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C25.S6.SS3.p2.s1">
+For related results see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S7">
+<title>Integrals</title>          
+<para xml:id="C25.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C25.S7.p1.s1">
+For definite integrals of the Riemann zeta function see ( , §2.4) , ( , §3.2) , and ( , §3.2) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C25.S8">
+<title>Sums</title>          
+<para xml:id="C25.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C25.S8.p1.s1">
+ <Math equation-number="25.8.1" mode="display" xml:id="C25.S8.E1">\sum_{k=2}^{\infty}\left(\zeta\left(k\right)-1\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="98" xml:id="C25.S8.p1.s2">
+<Math equation-number="25.8.2" mode="display" xml:id="C25.S8.E2">\sum_{k=0}^{\infty}\frac{\Gamma\left(s+k\right)}{(k+1)!}\left(\zeta\left(s+k \right)-1\right)=\Gamma\left(s-1\right), subject to s\neq 1,0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="99" xml:id="C25.S8.p1.s3">
+<Math equation-number="25.8.3" mode="display" xml:id="C25.S8.E3">\sum_{k=0}^{\infty}\frac{{\left(s\right)_{k}}\zeta\left(s+k\right)}{k!2^{s+k}} =(1-2^{-s})\zeta\left(s\right), subject to s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="100" xml:id="C25.S8.p1.s4">
+<Math equation-number="25.8.4" mode="display" xml:id="C25.S8.E4">\sum_{k=1}^{\infty}\frac{(-1)^{k}}{k}(\zeta\left(nk\right)-1)=\ln\left(\prod_{ j=0}^{n-1}\Gamma\left(2-e^{(2j+1)\pi i/n}\right)\right), subject to n=2,3,4,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="101" xml:id="C25.S8.p1.s5">
+<Math equation-number="25.8.5" mode="display" xml:id="C25.S8.E5">\sum_{k=2}^{\infty}\zeta\left(k\right)z^{k}=-\gamma z-z\psi\left(1-z\right), subject to |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="102" xml:id="C25.S8.p1.s6">
+, <Math equation-number="25.8.6" mode="display" xml:id="C25.S8.E6">\sum_{k=0}^{\infty}\zeta\left(2k\right)z^{2k}=-\tfrac{1}{2}\pi z\cot\left(\pi z \right), subject to |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="103" xml:id="C25.S8.p1.s7">
+, <Math equation-number="25.8.7" mode="display" xml:id="C25.S8.E7">\sum_{k=2}^{\infty}\frac{\zeta\left(k\right)}{k}z^{k}=-\gamma z+\ln\Gamma\left (1-z\right), subject to |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="104" xml:id="C25.S8.p1.s8">
+, <Math equation-number="25.8.8" mode="display" xml:id="C25.S8.E8">\sum_{k=1}^{\infty}\frac{\zeta\left(2k\right)}{k}z^{2k}=\ln\left(\frac{\pi z}{ \sin\left(\pi z\right)}\right), subject to |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="105" xml:id="C25.S8.p1.s9">
+<Math equation-number="25.8.9" mode="display" xml:id="C25.S8.E9">\sum_{k=1}^{\infty}\frac{\zeta\left(2k\right)}{(2k+1)2^{2k}}=\frac{1}{2}-\frac {1}{2}\ln 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="106" xml:id="C25.S8.p1.s10">
+ <Math equation-number="25.8.10" mode="display" xml:id="C25.S8.E10">\sum_{k=1}^{\infty}\frac{\zeta\left(2k\right)}{(2k+1)(2k+2)2^{2k}}=\frac{1}{4} -\frac{7}{4\pi^{2}}\zeta\left(3\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C25.S8.p2.s1">
+For other sums see ( , pp. 648–649) , ( , pp. 355–357) , ( ) , and ( , Chapter 3) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S9">
+<title>Asymptotic Approximations</title>        
+  
+<para xml:id="C25.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C25.S9.p1.s1">
+If <Math mode="inline" xml:id="C25.S9.p1.m1">x\geq 1</Math> , <Math mode="inline" xml:id="C25.S9.p1.m2">y\geq 1</Math> , <Math mode="inline" xml:id="C25.S9.p1.m3">2\pi xy=t</Math> , and <Math mode="inline" xml:id="C25.S9.p1.m4">0\leq\sigma\leq 1</Math> , then as <Math mode="inline" xml:id="C25.S9.p1.m5">t\to\infty</Math> with <Math mode="inline" xml:id="C25.S9.p1.m6">\sigma</Math> fixed, <Math equation-number="25.9.1" mode="display" xml:id="C25.S9.E1">\zeta\left(\sigma+it\right)=\sum_{1\leq n\leq x}\frac{1}{n^{s}}+\chi(s)\sum_{1 \leq n\leq y}\frac{1}{n^{1-s}}+O\left(x^{-\sigma}\right)+O\left(y^{\sigma-1}t^ {\frac{1}{2}-\sigma}\right),</Math> where <Math mode="inline" xml:id="C25.S9.p1.m7">s=\sigma+it</Math> and <Math equation-number="25.9.2" mode="display" xml:id="C25.S9.E2">\chi(s)=\pi^{s-\frac{1}{2}}\Gamma\left(\tfrac{1}{2}-\tfrac{1}{2}s\right)/ \Gamma\left(\tfrac{1}{2}s\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C25.S9.p2.s1">
+If <Math mode="inline" xml:id="C25.S9.p2.m1">\sigma=\frac{1}{2}</Math> , <Math mode="inline" xml:id="C25.S9.p2.m2">x=y=\sqrt{t/(2\pi)}</Math> , and <Math mode="inline" xml:id="C25.S9.p2.m3">m=\left\lfloor x\right\rfloor</Math> , then(LABEL:eq:ZE.APP.APP1) becomes <Math equation-number="25.9.3" mode="display" xml:id="C25.S9.E3">\zeta\left(\tfrac{1}{2}+it\right)=\sum_{n=1}^{m}\frac{1}{n^{\frac{1}{2}+it}}+ \chi\left(\tfrac{1}{2}+it\right)\sum_{n=1}^{m}\frac{1}{n^{\frac{1}{2}-it}}+O \left(t^{-1/4}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C25.S9.p3.s1">
+For other asymptotic approximations see ( ) , ( ) ; see also ( , pp. 380–389) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S10">
+<title>Zeros</title>         
+<subsection xml:id="C25.S10.SS1">
+<title>Distribution</title>             
+ 
+<para xml:id="C25.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C25.S10.SS1.p1.s1">
+The product representation (LABEL:eq:ZE.EX.PR1) implies <Math mode="inline" xml:id="C25.S10.SS1.p1.m1">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m2">\Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="112" xml:id="C25.S10.SS1.p1.s2">
+Also, <Math mode="inline" xml:id="C25.S10.SS1.p1.m3">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m4">\Re s=1</Math> , a property first established in ( ) and ( ) in the proof of the prime number theorem (LABEL:eq:ZE.PRIM.PRIM3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="113" xml:id="C25.S10.SS1.p1.s3">
+The functional equation (LABEL:eq:ZE.FE.FE1) implies <Math mode="inline" xml:id="C25.S10.SS1.p1.m5">\zeta\left(-2n\right)=0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m6">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="114" xml:id="C25.S10.SS1.p1.s4">
+These are called thetrivial zeros.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="115" xml:id="C25.S10.SS1.p1.s5">
+Except for the trivial zeros, <Math mode="inline" xml:id="C25.S10.SS1.p1.m7">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m8">\Re s\leq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="116" xml:id="C25.S10.SS1.p1.s6">
+In the region <Math mode="inline" xml:id="C25.S10.SS1.p1.m9">0&lt;\Re s&lt;1</Math> , called thecritical strip, <Math mode="inline" xml:id="C25.S10.SS1.p1.m10">\zeta\left(s\right)</Math> has infinitely many zeros, distributed symmetrically about the real axis and about the critical line <Math mode="inline" xml:id="C25.S10.SS1.p1.m11">\Re s=\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="117" xml:id="C25.S10.SS1.p1.s7">
+The Riemann hypothesis states that all nontrivial zeros lie on this line.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C25.S10.SS1.p2.s1">
+Calculations relating to the zeros on the critical line make use of the real-valued function <Math equation-number="25.10.1" mode="display" xml:id="C25.S10.E1">Z(t)=\exp\left(i\vartheta(t)\right)\zeta\left(\tfrac{1}{2}+it\right),</Math> where <Math equation-number="25.10.2" mode="display" xml:id="C25.S10.E2">\vartheta(t)=\operatorname{ph}\Gamma\left(\tfrac{1}{4}+\tfrac{1}{2}it\right)- \tfrac{1}{2}t\ln\pi</Math> is chosen to make <Math mode="inline" xml:id="C25.S10.SS1.p2.m1">Z(t)</Math> real, and <Math mode="inline" xml:id="C25.S10.SS1.p2.m2">\operatorname{ph}\Gamma\left(\frac{1}{4}+\frac{1}{2}it\right)</Math> assumes its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C25.S10.SS1.p2.s2">
+Because <Math mode="inline" xml:id="C25.S10.SS1.p2.m3">|Z(t)|=|\zeta\left(\frac{1}{2}+it\right)|</Math> , <Math mode="inline" xml:id="C25.S10.SS1.p2.m4">Z(t)</Math> vanishes at the zeros of <Math mode="inline" xml:id="C25.S10.SS1.p2.m5">\zeta\left(\frac{1}{2}+it\right)</Math> , which can be separated by observing sign changes of <Math mode="inline" xml:id="C25.S10.SS1.p2.m6">Z(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="120" xml:id="C25.S10.SS1.p2.s3">
+Because <Math mode="inline" xml:id="C25.S10.SS1.p2.m7">Z(t)</Math> changes sign infinitely often, <Math mode="inline" xml:id="C25.S10.SS1.p2.m8">\zeta\left(\frac{1}{2}+it\right)</Math> has infinitely many zeros with <Math mode="inline" xml:id="C25.S10.SS1.p2.m9">t</Math> real.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S10.SS2">
+<title>Riemann–Siegel Formula</title>          
+ 
+<para xml:id="C25.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C25.S10.SS2.p1.s1">
+Riemann developed a method for counting the total number <Math mode="inline" xml:id="C25.S10.SS2.p1.m1">N(T)</Math> of zeros of <Math mode="inline" xml:id="C25.S10.SS2.p1.m2">\zeta\left(s\right)</Math> in that portion of the critical strip with <Math mode="inline" xml:id="C25.S10.SS2.p1.m3">0&lt;t&lt;T</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="122" xml:id="C25.S10.SS2.p1.s2">
+By comparing <Math mode="inline" xml:id="C25.S10.SS2.p1.m4">N(T)</Math> with the number of sign changes of <Math mode="inline" xml:id="C25.S10.SS2.p1.m5">Z(t)</Math> we can decide whether <Math mode="inline" xml:id="C25.S10.SS2.p1.m6">\zeta\left(s\right)</Math> has any zeros off the line in this region.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="123" xml:id="C25.S10.SS2.p1.s3">
+Sign changes of <Math mode="inline" xml:id="C25.S10.SS2.p1.m7">Z(t)</Math> are determined by multiplying (LABEL:eq:ZE.APP.APP3) by <Math mode="inline" xml:id="C25.S10.SS2.p1.m8">\exp\left(i\vartheta(t)\right)</Math> to obtain theRiemann–Siegel formula: <Math equation-number="25.10.3" mode="display" xml:id="C25.S10.E3">Z(t)=2\sum_{n=1}^{m}\frac{\cos\left(\vartheta(t)-t\ln n\right)}{n^{1/2}}+R(t),</Math> where <Math mode="inline" xml:id="C25.S10.SS2.p1.m9">R(t)=O\left(t^{-1/4}\right)</Math> as <Math mode="inline" xml:id="C25.S10.SS2.p1.m10">t\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C25.S10.SS2.p2.s1">
+The error term <Math mode="inline" xml:id="C25.S10.SS2.p2.m1">R(t)</Math> can be expressed as an asymptotic series that begins <Math equation-number="25.10.4" mode="display" xml:id="C25.S10.E4">R(t)=(-1)^{m-1}\left(\frac{2\pi}{t}\right)^{1/4}\frac{\cos\left(t-(2m+1)\sqrt{ 2\pi t}-\frac{1}{8}\pi\right)}{\cos\left(\sqrt{2\pi t}\right)}+O\left(t^{-3/4} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C25.S10.SS2.p3.s1">
+Riemann also developed a technique for determining further terms.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="126" xml:id="C25.S10.SS2.p3.s2">
+Calculations based on the Riemann–Siegel formula reveal that the first ten billion zeros of <Math mode="inline" xml:id="C25.S10.SS2.p3.m1">\zeta\left(s\right)</Math> in the critical strip are on the critical line ( ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="127" xml:id="C25.S10.SS2.p3.s3">
+More than one-third of all the zeros in the critical strip lie on the critical line ( ( ) ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C25.S10.SS2.p4.s1">
+For further information on the Riemann–Siegel expansion see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C25.S11">
+<title>Hurwitz Zeta Function</title>        
+   
+<subsection xml:id="C25.S11.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C25.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C25.S11.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C25.S11.SS1.p1.m1">\zeta\left(s,a\right)</Math> was introduced in ( ) and defined by the series expansion <Math equation-number="25.11.1" mode="display" xml:id="C25.S11.E1">\zeta\left(s,a\right)=\sum_{n=0}^{\infty}\frac{1}{(n+a)^{s}}, subject to \Re s&gt;1, a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C25.S11.SS1.p2.s1">
+ <Math mode="inline" xml:id="C25.S11.SS1.p2.m1">\zeta\left(s,a\right)</Math> has a meromorphic continuation in the <Math mode="inline" xml:id="C25.S11.SS1.p2.m2">s</Math> -plane, its only singularity in <Math mode="inline" xml:id="C25.S11.SS1.p2.m3">\mathbb{C}</Math> being a simple pole at <Math mode="inline" xml:id="C25.S11.SS1.p2.m4">s=1</Math> with residue <Math mode="inline" xml:id="C25.S11.SS1.p2.m5">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="131" xml:id="C25.S11.SS1.p2.s2">
+As a function of <Math mode="inline" xml:id="C25.S11.SS1.p2.m6">a</Math> , with <Math mode="inline" xml:id="C25.S11.SS1.p2.m7">s</Math> ( <Math mode="inline" xml:id="C25.S11.SS1.p2.m8">\neq 1</Math> ) fixed, <Math mode="inline" xml:id="C25.S11.SS1.p2.m9">\zeta\left(s,a\right)</Math> is analytic in the half-plane <Math mode="inline" xml:id="C25.S11.SS1.p2.m10">\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="132" xml:id="C25.S11.SS1.p2.s3">
+The Riemann zeta function is a special case: <Math equation-number="25.11.2" mode="display" xml:id="C25.S11.E2">\zeta\left(s,1\right)=\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C25.S11.SS1.p3.s1">
+For most purposes it suffices to restrict <Math mode="inline" xml:id="C25.S11.SS1.p3.m1">0&lt;\Re a\leq 1</Math> because of the following straightforward consequences of (LABEL:eq:ZE.HZE.RX1): <Math equation-number="25.11.3" mode="display" xml:id="C25.S11.E3">\zeta\left(s,a\right)=\zeta\left(s,a+1\right)+a^{-s},</Math> <Math equation-number="25.11.4" mode="display" xml:id="C25.S11.E4">\zeta\left(s,a\right)=\zeta\left(s,a+m\right)+\sum_{n=0}^{m-1}\frac{1}{(n+a)^{ s}}, subject to m=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="134" xml:id="C25.S11.SS1.p3.s2">
+Most references treat real <Math mode="inline" xml:id="C25.S11.SS1.p3.m2">a</Math> with <Math mode="inline" xml:id="C25.S11.SS1.p3.m3">0&lt;a\leq 1</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS2">
+<title>Graphics</title>                  
+  
+<sentence sentence-num-in-section="135" xml:id="C25.S11.F1.s1">
+Figure 25.11.1: Hurwitz zeta function <Math mode="inline" xml:id="C25.S11.F1.m4">\zeta\left(x,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.F1.m5">a</Math> = 0.3, 0.5, 0.8, 1, <Math mode="inline" xml:id="C25.S11.F1.m6">-20\leq x\leq 10</Math> . The curves are almost indistinguishable for <Math mode="inline" xml:id="C25.S11.F1.m7">-14&amp;lt;x&amp;lt;-1</Math> , approximately.
+</sentence>           
+<sentence sentence-num-in-section="136" xml:id="C25.S11.F2.s1">
+Figure 25.11.2: Hurwitz zeta function <Math mode="inline" xml:id="C25.S11.F2.m4">\zeta\left(x,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.F2.m5">-19.5\leq x\leq 10</Math> , <Math mode="inline" xml:id="C25.S11.F2.m6">0.02\leq a\leq 1</Math> .
+</sentence>   
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS3">
+<title>Representations by the Euler–Maclaurin Formula</title>          
+<para xml:id="C25.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C25.S11.SS3.p1.s1">
+ <Math equation-number="25.11.5" mode="display" xml:id="C25.S11.E5">\zeta\left(s,a\right)=\sum_{n=0}^{N}\frac{1}{(n+a)^{s}}+\frac{(N+a)^{1-s}}{s-1 }-s\int_{N}^{\infty}\frac{x-\left\lfloor x\right\rfloor}{(x+a)^{s+1}}\mathrm{d }x, subject to s\neq 1, \Re s&gt;0, a&gt;0, N=0,1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="138" xml:id="C25.S11.SS3.p1.s2">
+<Math equation-number="25.11.6" mode="display" xml:id="C25.S11.E6">\zeta\left(s,a\right)=\frac{1}{a^{s}}\left(\frac{1}{2}+\frac{a}{s-1}\right)- \frac{s(s+1)}{2}\int_{0}^{\infty}\frac{\widetilde{B}_{2}\left(x\right)-B_{2}}{ (x+a)^{s+2}}\mathrm{d}x, subject to s\neq 1, \Re s&gt;-1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="139" xml:id="C25.S11.SS3.p1.s3">
+<Math equation-number="25.11.7" mode="display" xml:id="C25.S11.E7">\zeta\left(s,a\right)=\frac{1}{a^{s}}+\frac{1}{(1+a)^{s}}\left(\frac{1}{2}+ \frac{1+a}{s-1}\right)+\sum_{k=1}^{n}\genfrac{(}{)}{0.0pt}{}{s+2k-2}{2k-1} \frac{B_{2k}}{2k}\frac{1}{(1+a)^{s+2k-1}}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1} \int_{1}^{\infty}\frac{\widetilde{B}_{2n+1}\left(x\right)}{(x+a)^{s+2n+1}} \mathrm{d}x, subject to s\neq 1, a&gt;0, n=1,2,3,\dots, \Re s&gt;-2n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="140" xml:id="C25.S11.SS3.p1.s4">
+For <Math mode="inline" xml:id="C25.S11.SS3.p1.m1">\widetilde{B}_{n}\left(x\right)</Math> see §LABEL:sec:BP.DE.PBEF.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS4">
+<title>Series Representations</title>          
+<para xml:id="C25.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C25.S11.SS4.p1.s1">
+ <Math equation-number="25.11.8" mode="display" xml:id="C25.S11.E8">\zeta\left(s,\tfrac{1}{2}a\right)=\zeta\left(s,\tfrac{1}{2}a+\tfrac{1}{2} \right)+2^{s}\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(n+a)^{s}}, subject to \Re s&gt;0, s\neq 1, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="142" xml:id="C25.S11.SS4.p1.s2">
+<Math equation-number="25.11.9" mode="display" xml:id="C25.S11.E9">\zeta\left(1-s,a\right)=\frac{2\Gamma\left(s\right)}{(2\pi)^{s}}\*\sum_{n=1}^{ \infty}\frac{1}{n^{s}}\cos\left(\tfrac{1}{2}\pi s-2n\pi a\right), subject to \Re s&gt;1, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="143" xml:id="C25.S11.SS4.p1.s3">
+<Math equation-number="25.11.10" mode="display" xml:id="C25.S11.E10">\zeta\left(s,a\right)=\sum_{n=0}^{\infty}\frac{{\left(s\right)_{n}}}{n!}\zeta \left(n+s\right)(1-a)^{n}, subject to s\neq 1, |a-1|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="144" xml:id="C25.S11.SS4.p1.s4">
+When <Math mode="inline" xml:id="C25.S11.SS4.p1.m1">a=\frac{1}{2}</Math> , (LABEL:eq:ZE.HZE.SE3) reduces to (LABEL:eq:ZE.SUM.SUM3); compare (LABEL:eq:ZE.HZE.SP1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C25.S11.SS4.p2.s1">
+For other series expansions similar to (LABEL:eq:ZE.HZE.SE3) see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS5">
+<title>Special Values</title>          
+<para xml:id="C25.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C25.S11.SS5.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C25.S11.SS5.p1.m1">\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="147" xml:id="C25.S11.SS5.p1.s2">
+<Math equation-number="25.11.11" mode="display" xml:id="C25.S11.E11">\zeta\left(s,\tfrac{1}{2}\right)=(2^{s}-1)\zeta\left(s\right), subject to s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="148" xml:id="C25.S11.SS5.p1.s3">
+<Math equation-number="25.11.12" mode="display" xml:id="C25.S11.E12">\zeta\left(n+1,a\right)=\frac{(-1)^{n+1}{\psi^{(n)}}\left(a\right)}{n!}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="149" xml:id="C25.S11.SS5.p1.s4">
+<Math equation-number="25.11.13" mode="display" xml:id="C25.S11.E13">\zeta\left(0,a\right)=\tfrac{1}{2}-a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="150" xml:id="C25.S11.SS5.p1.s5">
+<Math equation-number="25.11.14" mode="display" xml:id="C25.S11.E14">\zeta\left(-n,a\right)=-\frac{B_{n+1}\left(a\right)}{n+1}, subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="151" xml:id="C25.S11.SS5.p1.s6">
+<Math equation-number="25.11.15" mode="display" xml:id="C25.S11.E15">\zeta\left(s,ka\right)=k^{-s}\*\sum_{n=0}^{k-1}\zeta\left(s,a+\frac{n}{k} \right), subject to s\neq 1, k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="152" xml:id="C25.S11.SS5.p1.s7">
+<Math equation-number="25.11.16" mode="display" xml:id="C25.S11.E16">\zeta\left(1-s,\frac{h}{k}\right)=\frac{2\Gamma\left(s\right)}{(2\pi k)^{s}}\* \sum_{r=1}^{k}\cos\left(\frac{\pi s}{2}-\frac{2\pi rh}{k}\right)\zeta\left(s, \frac{r}{k}\right), subject to s\neq 0,1; h,k integers, 1\leq h\leq k</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS6">
+<title>Derivatives</title>         
+ 
+<paragraph xml:id="C25.S11.Px1">
+<title><Math mode="inline" xml:id="C25.S11.Px1.m1">a</Math>-Derivative</title>  
+ 
+<para xml:id="C25.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C25.S11.Px1.p1.s1">
+ <Math equation-number="25.11.17" mode="display" xml:id="C25.S11.E17">\frac{\partial}{\partial a}\zeta\left(s,a\right)=-s\zeta\left(s+1,a\right), subject to s\neq 0,1; \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C25.S11.Px2">
+<title><Math mode="inline" xml:id="C25.S11.Px2.m1">s</Math>-Derivatives</title>  
+ 
+<para xml:id="C25.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C25.S11.Px2.p1.s1">
+In (LABEL:eq:ZE.HZE.DER2)–(LABEL:eq:ZE.HZE.DER8) primes on <Math mode="inline" xml:id="C25.S11.Px2.p1.m1">\zeta</Math> denote derivatives with respect to <Math mode="inline" xml:id="C25.S11.Px2.p1.m2">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C25.S11.Px2.p1.s2">
+Similarly in §§LABEL:sec:ZE.HZE.EI and LABEL:sec:ZE.HZE.ASY.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="156" xml:id="C25.S11.Px2.p1.s3">
+<Math equation-number="25.11.18" mode="display" xml:id="C25.S11.E18">\zeta'\left(0,a\right)=\ln\Gamma\left(a\right)-\tfrac{1}{2}\ln\left(2\pi\right), subject to a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C25.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C25.S11.Px2.p2.s1">
+ <Math equation-number="25.11.19" mode="display" xml:id="C25.S11.E19">\zeta'\left(s,a\right)=-\frac{\ln a}{a^{s}}\left(\frac{1}{2}+\frac{a}{s-1} \right)-\frac{a^{1-s}}{(s-1)^{2}}+\frac{s(s+1)}{2}\int_{0}^{\infty}\frac{( \widetilde{B}_{2}\left(x\right)-B_{2})\ln\left(x+a\right)}{(x+a)^{s+2}}\mathrm {d}x-\frac{(2s+1)}{2}\int_{0}^{\infty}\frac{\widetilde{B}_{2}\left(x\right)-B_ {2}}{(x+a)^{s+2}}\mathrm{d}x, subject to \Re s&gt;-1, s\neq 1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="158" xml:id="C25.S11.Px2.p2.s2">
+<Math equation-number="25.11.20" mode="display" xml:id="C25.S11.E20">(-1)^{k}{\zeta^{(k)}}\left(s,a\right)=\frac{(\ln a)^{k}}{a^{s}}\left(\frac{1}{ 2}+\frac{a}{s-1}\right)+k!a^{1-s}\sum_{r=0}^{k-1}\frac{(\ln a)^{r}}{r!(s-1)^{k -r+1}}-\frac{s(s+1)}{2}\int_{0}^{\infty}\frac{(\widetilde{B}_{2}\left(x\right) -B_{2})(\ln\left(x+a\right))^{k}}{(x+a)^{s+2}}\mathrm{d}x+\frac{k(2s+1)}{2} \int_{0}^{\infty}\frac{(\widetilde{B}_{2}\left(x\right)-B_{2})(\ln\left(x+a \right))^{k-1}}{(x+a)^{s+2}}\mathrm{d}x-\frac{k(k-1)}{2}\int_{0}^{\infty}\frac {(\widetilde{B}_{2}\left(x\right)-B_{2})(\ln\left(x+a\right))^{k-2}}{(x+a)^{s+ 2}}\mathrm{d}x, subject to \Re s&gt;-1, s\neq 1, a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="159" xml:id="C25.S11.Px2.p2.s3">
+<Math equation-number="25.11.21" mode="display" xml:id="C25.S11.E21">\zeta'\left(1-2n,\frac{h}{k}\right)=\frac{(\psi\left(2n\right)-\ln\left(2\pi k \right))B_{2n}\left(h/k\right)}{2n}-\frac{(\psi\left(2n\right)-\ln\left(2\pi \right))B_{2n}}{2nk^{2n}}+\frac{(-1)^{n+1}\pi}{(2\pi k)^{2n}}\sum_{r=1}^{k-1} \sin\left(\frac{2\pi rh}{k}\right){\psi^{(2n-1)}}\left(\frac{r}{k}\right)+ \frac{(-1)^{n+1}2\cdot(2n-1)!}{(2\pi k)^{2n}}\sum_{r=1}^{k-1}\cos\left(\frac{2 \pi rh}{k}\right)\zeta'\left(2n,\frac{r}{k}\right)+\frac{\zeta'\left(1-2n \right)}{k^{2n}},</Math> where <Math mode="inline" xml:id="C25.S11.Px2.p2.m1">h,k</Math> are integers with <Math mode="inline" xml:id="C25.S11.Px2.p2.m2">1\leq h\leq k</Math> and <Math mode="inline" xml:id="C25.S11.Px2.p2.m3">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="160" xml:id="C25.S11.Px2.p2.s4">
+<Math equation-number="25.11.22" mode="display" xml:id="C25.S11.E22">\zeta'\left(1-2n,\tfrac{1}{2}\right)=-\frac{B_{2n}\ln 2}{n\cdot 4^{n}}-\frac{( 2^{2n-1}-1)\zeta'\left(1-2n\right)}{2^{2n-1}}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="161" xml:id="C25.S11.Px2.p2.s5">
+<Math equation-number="25.11.23" mode="display" xml:id="C25.S11.E23">\zeta'\left(1-2n,\tfrac{1}{3}\right)=-\frac{\pi(9^{n}-1)B_{2n}}{8n\sqrt{3}(3^{ 2n-1}-1)}-\frac{B_{2n}\ln 3}{4n\cdot 3^{2n-1}}-\frac{(-1)^{n}{\psi^{(2n-1)}} \left(\frac{1}{3}\right)}{2\sqrt{3}(6\pi)^{2n-1}}-\frac{\left(3^{2n-1}-1\right )\zeta'\left(1-2n\right)}{2\cdot 3^{2n-1}}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="162" xml:id="C25.S11.Px2.p2.s6">
+<Math equation-number="25.11.24" mode="display" xml:id="C25.S11.E24">\sum_{r=1}^{k-1}\zeta'\left(s,\frac{r}{k}\right)=(k^{s}-1)\zeta'\left(s\right) +k^{s}\zeta\left(s\right)\ln k, subject to s\neq 1, k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS7">
+<title>Integral Representations</title>        
+  
+<para xml:id="C25.S11.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C25.S11.SS7.p1.s1">
+ <Math equation-number="25.11.25" mode="display" xml:id="C25.S11.E25">\zeta\left(s,a\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{ s-1}e^{-ax}}{1-e^{-x}}\mathrm{d}x, subject to \Re s&gt;1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="164" xml:id="C25.S11.SS7.p1.s2">
+, <Math equation-number="25.11.26" mode="display" xml:id="C25.S11.E26">\zeta\left(s,a\right)=-s\int_{-a}^{\infty}\frac{x-\left\lfloor x\right\rfloor- \frac{1}{2}}{(x+a)^{s+1}}\mathrm{d}x, subject to -1&lt;\Re s&lt;0, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="165" xml:id="C25.S11.SS7.p1.s3">
+<Math equation-number="25.11.27" mode="display" xml:id="C25.S11.E27">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+\frac{1}{\Gamma \left(s\right)}\int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2 }\right)\frac{x^{s-1}}{e^{ax}}\mathrm{d}x, subject to \Re s&gt;-1, s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="166" xml:id="C25.S11.SS7.p1.s4">
+<Math equation-number="25.11.28" mode="display" xml:id="C25.S11.E28">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+\sum_{k=1}^{n} \frac{B_{2k}}{(2k)!}{\left(s\right)_{2k-1}}a^{1-s-2k}+\frac{1}{\Gamma\left(s \right)}\int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}-\sum_ {k=1}^{n}\frac{B_{2k}}{(2k)!}x^{2k-1}\right)x^{s-1}e^{-ax}\mathrm{d}x, subject to \Re s&gt;-(2n+1), s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C25.S11.SS7.p2.s1">
+ <Math equation-number="25.11.29" mode="display" xml:id="C25.S11.E29">\zeta\left(s,a\right)=\frac{1}{2}a^{-s}+\frac{a^{1-s}}{s-1}+2\int_{0}^{\infty} \frac{\sin\left(s\operatorname{arctan}\left(x/a\right)\right)}{(a^{2}+x^{2})^{ s/2}(e^{2\pi x}-1)}\mathrm{d}x, subject to s\neq 1, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="168" xml:id="C25.S11.SS7.p2.s2">
+<Math equation-number="25.11.30" mode="display" xml:id="C25.S11.E30">\zeta\left(s,a\right)=\frac{\Gamma\left(1-s\right)}{2\pi i}\int_{-\infty}^{(0+ )}\frac{e^{az}z^{s-1}}{1-e^{z}}\mathrm{d}z, subject to s\neq 1, \Re a&gt;0,</Math> where the integration contour is a loop around the negative real axis as described for (LABEL:eq:ZE.INT.CI1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS8">
+<title>Further Integral Representations</title>        
+ 
+<para xml:id="C25.S11.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C25.S11.SS8.p1.s1">
+ <Math equation-number="25.11.31" mode="display" xml:id="C25.S11.E31">\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{s-1}e^{-ax}}{2\cosh x} \mathrm{d}x=4^{-s}\left(\zeta\left(s,\tfrac{1}{4}+\tfrac{1}{4}a\right)-\zeta \left(s,\tfrac{3}{4}+\tfrac{1}{4}a\right)\right), subject to \Re s&gt;0, \Re a&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="170" xml:id="C25.S11.SS8.p1.s2">
+<Math equation-number="25.11.32" mode="display" xml:id="C25.S11.E32">\int_{0}^{a}x^{n}\psi\left(x\right)\mathrm{d}x=(-1)^{n-1}\zeta'\left(-n\right) +(-1)^{n}h(n)\frac{B_{n+1}}{n+1}-\sum_{k=0}^{n}(-1)^{k}\genfrac{(}{)}{0.0pt}{} {n}{k}h(k)\frac{B_{k+1}(a)}{k+1}a^{n-k}+\sum_{k=0}^{n}(-1)^{k}\genfrac{(}{)}{0 .0pt}{}{n}{k}\zeta'\left(-k,a\right)a^{n-k}, subject to n=1,2,\dots, \Re a&gt;0,</Math> where <Math equation-number="25.11.33" mode="display" xml:id="C25.S11.E33">h(n)=\sum_{k=1}^{n}k^{-1}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="171" xml:id="C25.S11.SS8.p1.s3">
+ <Math equation-number="25.11.34" mode="display" xml:id="C25.S11.E34">n\int_{0}^{a}\zeta'\left(1-n,x\right)\mathrm{d}x=\zeta'\left(-n,a\right)-\zeta '\left(-n\right)+\frac{B_{n+1}-B_{n+1}\left(a\right)}{n(n+1)}, subject to n=1,2,\dots, \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS9">
+<title>Integrals</title>          
+<para xml:id="C25.S11.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C25.S11.SS9.p1.s1">
+See ( , §2.3) , ( , §3.2) , and ( , §3.2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS10">
+<title>Further Series Representations</title>          
+<para xml:id="C25.S11.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="173" xml:id="C25.S11.SS10.p1.s1">
+ <Math equation-number="25.11.35" mode="display" xml:id="C25.S11.E35">\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(n+a)^{s}}=\frac{1}{\Gamma\left(s\right)} \int_{0}^{\infty}\frac{x^{s-1}e^{-ax}}{1+e^{-x}}\mathrm{d}x=2^{-s}\left(\zeta \left(s,\tfrac{1}{2}a\right)-\zeta\left(s,\tfrac{1}{2}(1+a)\right)\right), subject to \Re a&gt;0, \Re s&gt;0; or \Re a=0, \Im a\neq 0, 0&lt;\Re s&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C25.S11.SS10.p2.s1">
+When <Math mode="inline" xml:id="C25.S11.SS10.p2.m1">a=1</Math> , (LABEL:eq:ZE.HZE.ES1) reduces to (LABEL:eq:ZE.EX.ZE3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="175" xml:id="C25.S11.SS10.p2.s2">
+<Math equation-number="25.11.36" mode="display" xml:id="C25.S11.E36">\sum_{n=1}^{\infty}\frac{\chi(n)}{n^{s}}=k^{-s}\sum_{r=1}^{k}\chi(r)\zeta\left (s,\frac{r}{k}\right), subject to \Re s&gt;1,</Math> where <Math mode="inline" xml:id="C25.S11.SS10.p2.m2">\chi(n)</Math> is a Dirichlet character <Math mode="inline" xml:id="C25.S11.SS10.p2.m3">\pmod{k}</Math> (§LABEL:sec:NT.DIR).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C25.S11.SS10.p3.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS11">
+<title>Sums</title>          
+<para xml:id="C25.S11.SS11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C25.S11.SS11.p1.s1">
+ <Math equation-number="25.11.37" mode="display" xml:id="C25.S11.E37">\sum_{k=1}^{\infty}\frac{(-1)^{k}}{k}\zeta\left(nk,a\right)=-n\ln\Gamma\left(a \right)+\ln\left(\prod_{j=0}^{n-1}\Gamma\left(a-e^{(2j+1)\pi i/n}\right)\right), subject to n=2,3,4,\dots, \Re a\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C25.S11.SS11.p1.s2">
+<Math equation-number="25.11.38" mode="display" xml:id="C25.S11.E38">\sum_{k=1}^{\infty}\genfrac{(}{)}{0.0pt}{}{n+k}{k}\zeta\left(n+k+1,a\right)z^{ k}=\frac{(-1)^{n}}{n!}\left({\psi^{(n)}}\left(a\right)-{\psi^{(n)}}\left(a-z \right)\right), subject to n=1,2,3,\dots, \Re a&gt;0, |z|&lt;|a|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="179" xml:id="C25.S11.SS11.p1.s3">
+<Math equation-number="25.11.39" mode="display" xml:id="C25.S11.E39">\sum_{k=2}^{\infty}\frac{k}{2^{k}}\zeta\left(k+1,\tfrac{3}{4}\right)=8G,</Math> where <Math mode="inline" xml:id="C25.S11.SS11.p1.m1">G</Math> is Catalan’s constant: <Math equation-number="25.11.40" mode="display" xml:id="C25.S11.E40">G=\sum_{n=0}^{\infty}\frac{(-1)^{n}}{(2n+1)^{2}}=0.91596\;55941\;772\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C25.S11.SS11.p2.s1">
+For further sums see ( , pp. 396–397) and ( , pp. 358–360) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S11.SS12">
+<title><Math mode="inline" xml:id="C25.S11.SS12.m1">a</Math>-Asymptotic Behavior</title>          
+<para xml:id="C25.S11.SS12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C25.S11.SS12.p1.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p1.m1">a\to 0</Math> with <Math mode="inline" xml:id="C25.S11.SS12.p1.m2">s</Math> <Math mode="inline" xml:id="C25.S11.SS12.p1.m3">(\neq 1)</Math> fixed, <Math equation-number="25.11.41" mode="display" xml:id="C25.S11.E41">\zeta\left(s,a+1\right)=\zeta\left(s\right)-s\zeta\left(s+1\right)a+O\left(a^{ 2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C25.S11.SS12.p2.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p2.m1">\beta\to\pm\infty</Math> with <Math mode="inline" xml:id="C25.S11.SS12.p2.m2">s</Math> fixed, <Math mode="inline" xml:id="C25.S11.SS12.p2.m3">\Re s&gt;1</Math> , <Math equation-number="25.11.42" mode="display" xml:id="C25.S11.E42">\zeta\left(s,\alpha+i\beta\right)\to 0,</Math> uniformly with respect to bounded nonnegative values of <Math mode="inline" xml:id="C25.S11.SS12.p2.m4">\alpha</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C25.S11.SS12.p3.s1">
+As <Math mode="inline" xml:id="C25.S11.SS12.p3.m1">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C25.S11.SS12.p3.m2">|\operatorname{ph}a|\leq\pi-\delta(&lt;\pi)</Math> , with <Math mode="inline" xml:id="C25.S11.SS12.p3.m3">s(\neq 1)</Math> and <Math mode="inline" xml:id="C25.S11.SS12.p3.m4">\delta</Math> fixed, we have the asymptotic expansion <Math equation-number="25.11.43" mode="display" xml:id="C25.S11.E43">\zeta\left(s,a\right)-\frac{a^{1-s}}{s-1}-\frac{1}{2}a^{-s}\sim\sum_{k=1}^{ \infty}\frac{B_{2k}}{(2k)!}{\left(s\right)_{2k-1}}a^{1-s-2k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C25.S11.SS12.p4.s1">
+Similarly, as <Math mode="inline" xml:id="C25.S11.SS12.p4.m1">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C25.S11.SS12.p4.m2">|\operatorname{ph}a|\leq\frac{1}{2}\pi-\delta(&lt;\frac{1}{2}\pi)</Math> , <Math equation-number="25.11.44" mode="display" xml:id="C25.S11.E44">\zeta'\left(-1,a\right)-\frac{1}{12}+\frac{1}{4}a^{2}-\left(\frac{1}{12}-\frac {1}{2}a+\frac{1}{2}a^{2}\right)\ln a\sim-\sum_{k=1}^{\infty}\frac{B_{2k+2}}{(2 k+2)(2k+1)2k}a^{-2k},</Math> and <Math equation-number="25.11.45" mode="display" xml:id="C25.S11.E45">\zeta'\left(-2,a\right)-\frac{1}{12}a+\frac{1}{9}a^{3}-\left(\frac{1}{6}a- \frac{1}{2}a^{2}+\frac{1}{3}a^{3}\right)\ln a\sim\sum_{k=1}^{\infty}\frac{2\!B _{2k+2}}{(2k+2)(2k+1)2k(2k-1)}a^{-(2k-1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="185" xml:id="C25.S11.SS12.p4.s2">
+For the more general case <Math mode="inline" xml:id="C25.S11.SS12.p4.m3">\zeta'\left(-m,a\right)</Math> , <Math mode="inline" xml:id="C25.S11.SS12.p4.m4">m=1,2,\dots</Math> , see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S11.SS12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C25.S11.SS12.p5.s1">
+For an exponentially-improved form of (LABEL:eq:ZE.HZE.ASY3) see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S12">
+<title>Polylogarithms</title>        
+ 
+<subsection xml:id="C25.S12.SS1">
+<title>Dilogarithms</title>        
+  
+<para xml:id="C25.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C25.S12.SS1.p1.s1">
+The notation <Math mode="inline" xml:id="C25.S12.SS1.p1.m1">\mathrm{Li}_{2}\left(z\right)</Math> was introduced in ( ) for a function discussed in ( ) and called the dilogarithm in ( ) : <Math equation-number="25.12.1" mode="display" xml:id="C25.S12.E1">\mathrm{Li}_{2}\left(z\right)=\sum_{n=1}^{\infty}\frac{z^{n}}{n^{2}}, subject to |z|\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="188" xml:id="C25.S12.SS1.p1.s2">
+<Math equation-number="25.12.2" mode="display" xml:id="C25.S12.E2">\mathrm{Li}_{2}\left(z\right)=-\int_{0}^{z}t^{-1}\ln\left(1-t\right)\mathrm{d}t, subject to z\in\mathbb{C}\setminus(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C25.S12.SS1.p2.s1">
+Other notations and names for <Math mode="inline" xml:id="C25.S12.SS1.p2.m1">\mathrm{Li}_{2}\left(z\right)</Math> include <Math mode="inline" xml:id="C25.S12.SS1.p2.m2">S_{2}(z)</Math> ( ( ) ), Spence function <Math mode="inline" xml:id="C25.S12.SS1.p2.m3">\mathrm{Sp}(z)</Math> ( ( ) ), and <Math mode="inline" xml:id="C25.S12.SS1.p2.m4">\mathrm{L}_{2}(z)</Math> ( ( ) ).
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="190" xml:id="C25.S12.SS1.p3.s1">
+In the complex plane <Math mode="inline" xml:id="C25.S12.SS1.p3.m1">\mathrm{Li}_{2}\left(z\right)</Math> has a branch point at <Math mode="inline" xml:id="C25.S12.SS1.p3.m2">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="191" xml:id="C25.S12.SS1.p3.s2">
+The principal branch has a cut along the interval <Math mode="inline" xml:id="C25.S12.SS1.p3.m3">[1,\infty)</Math> and agrees with(LABEL:eq:ZE.JON.DI1) when <Math mode="inline" xml:id="C25.S12.SS1.p3.m4">|z|\leq 1</Math> ; see also §LABEL:sec:EF.FN.LOG.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="192" xml:id="C25.S12.SS1.p3.s3">
+The remainder of the equations in this subsection apply to principal branches.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="193" xml:id="C25.S12.SS1.p3.s4">
+<Math equation-number="25.12.3" mode="display" xml:id="C25.S12.E3">\mathrm{Li}_{2}\left(z\right)+\mathrm{Li}_{2}\left(\frac{z}{z-1}\right)=-\frac {1}{2}(\ln\left(1-z\right))^{2}, subject to z\in\mathbb{C}\setminus[1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="194" xml:id="C25.S12.SS1.p3.s5">
+<Math equation-number="25.12.4" mode="display" xml:id="C25.S12.E4">\mathrm{Li}_{2}\left(z\right)+\mathrm{Li}_{2}\left(\frac{1}{z}\right)=-\frac{1 }{6}\pi^{2}-\frac{1}{2}(\ln\left(-z\right))^{2}, subject to z\in\mathbb{C}\setminus[0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="195" xml:id="C25.S12.SS1.p3.s6">
+<Math equation-number="25.12.5" mode="display" xml:id="C25.S12.E5">\mathrm{Li}_{2}\left(z^{m}\right)=m\sum_{k=0}^{m-1}\mathrm{Li}_{2}\left(ze^{2 \pi ik/m}\right), subject to m=1,2,3,\dots, |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="196" xml:id="C25.S12.SS1.p3.s7">
+<Math equation-number="25.12.6" mode="display" xml:id="C25.S12.E6">\mathrm{Li}_{2}\left(x\right)+\mathrm{Li}_{2}\left(1-x\right)=\frac{1}{6}\pi^{ 2}-(\ln x)\ln\left(1-x\right), subject to 0&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="197" xml:id="C25.S12.SS1.p4.s1">
+When <Math mode="inline" xml:id="C25.S12.SS1.p4.m1">z=e^{i\theta}</Math> , <Math mode="inline" xml:id="C25.S12.SS1.p4.m2">0\leq\theta\leq 2\pi</Math> , (LABEL:eq:ZE.JON.DI1) becomes <Math equation-number="25.12.7" mode="display" xml:id="C25.S12.E7">\mathrm{Li}_{2}\left(e^{i\theta}\right)=\sum_{n=1}^{\infty}\frac{\cos\left(n \theta\right)}{n^{2}}+i\sum_{n=1}^{\infty}\frac{\sin\left(n\theta\right)}{n^{2 }}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="198" xml:id="C25.S12.SS1.p4.s2">
+The cosine series in (LABEL:eq:ZE.JON.DI6) has the elementary sum <Math equation-number="25.12.8" mode="display" xml:id="C25.S12.E8">\sum_{n=1}^{\infty}\frac{\cos\left(n\theta\right)}{n^{2}}=\frac{\pi^{2}}{6}- \frac{\pi\theta}{2}+\frac{\theta^{2}}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="199" xml:id="C25.S12.SS1.p4.s3">
+By (LABEL:eq:ZE.JON.DI2) <Math equation-number="25.12.9" mode="display" xml:id="C25.S12.E9">\sum_{n=1}^{\infty}\frac{\sin\left(n\theta\right)}{n^{2}}=-\int_{0}^{\theta} \ln\left(2\sin\left(\tfrac{1}{2}x\right)\right)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="200" xml:id="C25.S12.SS1.p4.s4">
+The right-hand side is called Clausen’s integral.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C25.S12.SS1.p5.s1">
+For graphics see Figures LABEL:fig:ZE.GR.dilog and LABEL:fig:ZE.GR.dilog3D, and for further properties see ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+             
+<sentence sentence-num-in-section="202" xml:id="C25.S12.F1.s1">
+Figure 25.12.1: Dilogarithm function <Math mode="inline" xml:id="C25.S12.F1.m3">\mathrm{Li}_{2}\left(x\right)</Math> , <Math mode="inline" xml:id="C25.S12.F1.m4">-20\leq x&amp;lt;1</Math>. 
+</sentence> 
+          
+<sentence sentence-num-in-section="203" xml:id="C25.S12.F2.s1">
+Figure 25.12.2: Absolute value of the dilogarithm function <Math mode="inline" xml:id="C25.S12.F2.m4">\left|\mathrm{Li}_{2}\left(x+iy\right)\right|</Math> , <Math mode="inline" xml:id="C25.S12.F2.m5">-20\leq x\leq 20</Math> , <Math mode="inline" xml:id="C25.S12.F2.m6">-20\leq y\leq 20</Math> . Principal value. There is a cut along the real axis from 1 to <Math mode="inline" xml:id="C25.S12.F2.m7">\infty</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C25.S12.SS2">
+<title>Polylogarithms</title>        
+ 
+  
+<para xml:id="C25.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="204" xml:id="C25.S12.SS2.p1.s1">
+For real or complex <Math mode="inline" xml:id="C25.S12.SS2.p1.m1">s</Math> and <Math mode="inline" xml:id="C25.S12.SS2.p1.m2">z</Math> the polylogarithm <Math mode="inline" xml:id="C25.S12.SS2.p1.m3">\mathrm{Li}_{s}\left(z\right)</Math> is defined by <Math equation-number="25.12.10" mode="display" xml:id="C25.S12.E10">\mathrm{Li}_{s}\left(z\right)=\sum_{n=1}^{\infty}\frac{z^{n}}{n^{s}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C25.S12.SS2.p2.s1">
+For each fixed complex <Math mode="inline" xml:id="C25.S12.SS2.p2.m1">s</Math> the series defines an analytic function of <Math mode="inline" xml:id="C25.S12.SS2.p2.m2">z</Math> for <Math mode="inline" xml:id="C25.S12.SS2.p2.m3">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="206" xml:id="C25.S12.SS2.p2.s2">
+The series also converges when <Math mode="inline" xml:id="C25.S12.SS2.p2.m4">|z|=1</Math> , provided that <Math mode="inline" xml:id="C25.S12.SS2.p2.m5">\Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="207" xml:id="C25.S12.SS2.p2.s3">
+For other values of <Math mode="inline" xml:id="C25.S12.SS2.p2.m6">z</Math> , <Math mode="inline" xml:id="C25.S12.SS2.p2.m7">\mathrm{Li}_{s}\left(z\right)</Math> is defined by analytic continuation.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C25.S12.SS2.p3.s1">
+The notation <Math mode="inline" xml:id="C25.S12.SS2.p3.m1">\phi\left(z,s\right)</Math> was used for <Math mode="inline" xml:id="C25.S12.SS2.p3.m2">\mathrm{Li}_{s}\left(z\right)</Math> in ( ) for a series treated in ( ) , hence the alternative name Jonquière’s function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="209" xml:id="C25.S12.SS2.p3.s2">
+The special case <Math mode="inline" xml:id="C25.S12.SS2.p3.m3">z=1</Math> is the Riemann zeta function: <Math mode="inline" xml:id="C25.S12.SS2.p3.m4">\zeta\left(s\right)=\mathrm{Li}_{s}\left(1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C25.S12.Px1">
+<title>Integral Representation</title>    
+<para xml:id="C25.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C25.S12.Px1.p1.s1">
+ <Math equation-number="25.12.11" mode="display" xml:id="C25.S12.E11">\mathrm{Li}_{s}\left(z\right)=\frac{z}{\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{e^{x}-z}\mathrm{d}x,</Math> valid when <Math mode="inline" xml:id="C25.S12.Px1.p1.m1">\Re s&gt;0</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p1.m2">\left|\operatorname{ph}\left(1-z\right)\right|&lt;\pi</Math> , or <Math mode="inline" xml:id="C25.S12.Px1.p1.m3">\Re s&gt;1</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p1.m4">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="211" xml:id="C25.S12.Px1.p1.s2">
+(In the latter case (LABEL:eq:ZE.JON.GEN2) becomes (LABEL:eq:ZE.INT.EL1)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C25.S12.Px1.p2.s1">
+Further properties include <Math equation-number="25.12.12" mode="display" xml:id="C25.S12.E12">\mathrm{Li}_{s}\left(z\right)=\Gamma\left(1-s\right)\left(\ln\frac{1}{z}\right )^{s-1}+\sum_{n=0}^{\infty}\zeta\left(s-n\right)\frac{(\ln z)^{n}}{n!}, subject to s\neq 1,2,3,\dots, |\ln z|&lt;2\pi,</Math> and <Math equation-number="25.12.13" mode="display" xml:id="C25.S12.E13">\mathrm{Li}_{s}\left(e^{2\pi ia}\right)+e^{\pi is}\mathrm{Li}_{s}\left(e^{-2 \pi ia}\right)=\frac{(2\pi)^{s}e^{\pi is/2}}{\Gamma\left(s\right)}\zeta\left(1 -s,a\right),</Math> valid when <Math mode="inline" xml:id="C25.S12.Px1.p2.m1">\Re s&gt;0</Math> , <Math mode="inline" xml:id="C25.S12.Px1.p2.m2">\Im a&gt;0</Math> or <Math mode="inline" xml:id="C25.S12.Px1.p2.m3">\Re s&gt;1</Math> , <Math mode="inline" xml:id="C25.S12.Px1.p2.m4">\Im a=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C25.S12.Px1.p2.s2">
+When <Math mode="inline" xml:id="C25.S12.Px1.p2.m5">s=2</Math> and <Math mode="inline" xml:id="C25.S12.Px1.p2.m6">e^{2\pi ia}=z</Math> , (LABEL:eq:ZE.JON.GEN4) becomes (LABEL:eq:ZE.JON.DI4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C25.S12.Px1.p3.s1">
+See also ( ) , ( ) , ( ) , ( , §§1.2 and 2.5) , ( , §3.3) , and ( , §3.3) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S12.SS3">
+<title>Fermi–Dirac and Bose–Einstein Integrals</title>         
+<para xml:id="C25.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="215" xml:id="C25.S12.SS3.p1.s1">
+The Fermi–Dirac and Bose–Einstein integrals are defined by <Math equation-number="25.12.14" mode="display" xml:id="C25.S12.E14">F_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x} +1}\mathrm{d}t, subject to s&gt;-1,</Math> , <Math equation-number="25.12.15" mode="display" xml:id="C25.S12.E15">G_{s}(x)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{t^{s}}{e^{t-x} -1}\mathrm{d}t, subject to s&gt;-1, x&lt;0; or s&gt;0, x\leq 0,</Math> respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="216" xml:id="C25.S12.SS3.p1.s2">
+Sometimes the factor <Math mode="inline" xml:id="C25.S12.SS3.p1.m1">1/\Gamma\left(s+1\right)</Math> is omitted. See ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S12.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="217" xml:id="C25.S12.SS3.p2.s1">
+In terms of polylogarithms <Math equation-number="25.12.16" mode="display" xml:id="C25.S12.E16">F_{s}(x)=-\mathrm{Li}_{s+1}\left(-e^{x}\right), G_{s}(x)=\mathrm{Li}_{s+1}\left(e^{x}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S12.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C25.S12.SS3.p3.s1">
+For a uniform asymptotic approximation for <Math mode="inline" xml:id="C25.S12.SS3.p3.m1">F_{s}(x)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S13">
+<title>Periodic Zeta Function</title>        
+  
+<para xml:id="C25.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="219" xml:id="C25.S13.p1.s1">
+The notation <Math mode="inline" xml:id="C25.S13.p1.m1">F\left(x,s\right)</Math> is used for the polylogarithm <Math mode="inline" xml:id="C25.S13.p1.m2">\mathrm{Li}_{s}\left(e^{2\pi ix}\right)</Math> with <Math mode="inline" xml:id="C25.S13.p1.m3">x</Math> real: <Math equation-number="25.13.1" mode="display" xml:id="C25.S13.E1">F\left(x,s\right)=\sum_{n=1}^{\infty}\frac{e^{2\pi inx}}{n^{s}},</Math> where <Math mode="inline" xml:id="C25.S13.p1.m4">\Re s&gt;1</Math> if <Math mode="inline" xml:id="C25.S13.p1.m5">x</Math> is an integer, <Math mode="inline" xml:id="C25.S13.p1.m6">\Re s&gt;0</Math> otherwise.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="220" xml:id="C25.S13.p2.s1">
+ <Math mode="inline" xml:id="C25.S13.p2.m1">F\left(x,s\right)</Math> is periodic in <Math mode="inline" xml:id="C25.S13.p2.m2">x</Math> with period 1, and equals <Math mode="inline" xml:id="C25.S13.p2.m3">\zeta\left(s\right)</Math> when <Math mode="inline" xml:id="C25.S13.p2.m4">x</Math> is an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="221" xml:id="C25.S13.p2.s2">
+Also, <Math equation-number="25.13.2" mode="display" xml:id="C25.S13.E2">F\left(x,s\right)=\frac{\Gamma\left(1-s\right)}{(2\pi)^{1-s}}\*\left(e^{\pi i( 1-s)/2}\zeta\left(1-s,x\right)+e^{\pi i(s-1)/2}\zeta\left(1-s,1-x\right)\right), subject to 0&lt;x&lt;1, \Re s&gt;1,</Math> <Math equation-number="25.13.3" mode="display" xml:id="C25.S13.E3">\zeta\left(1-s,x\right)=\frac{\Gamma\left(s\right)}{(2\pi)^{s}}\left(e^{-\pi is /2}F\left(x,s\right)+e^{\pi is/2}F\left(-x,s\right)\right), subject to 0&lt;x&lt;1, \Re s&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S14">
+<title>Lerch’s Transcendent</title>        
+ 
+<subsection xml:id="C25.S14.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C25.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="222" xml:id="C25.S14.SS1.p1.s1">
+ <Math equation-number="25.14.1" mode="display" xml:id="C25.S14.E1">{\Phi\left(z,s,a\right)=\sum_{n=0}^{\infty}\frac{z^{n}}{(a+n)^{s}}}, subject to a\neq 0,-1,-2,\dots,|z|&lt;1; \Re s&gt;1,|z|=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="223" xml:id="C25.S14.SS1.p1.s2">
+For other values of <Math mode="inline" xml:id="C25.S14.SS1.p1.m1">z</Math> , <Math mode="inline" xml:id="C25.S14.SS1.p1.m2">\Phi\left(z,s,a\right)</Math> is defined by analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="224" xml:id="C25.S14.SS1.p1.s3">
+This is the notation used in ( , p. 27) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="225" xml:id="C25.S14.SS1.p1.s4">
+( ) used <Math mode="inline" xml:id="C25.S14.SS1.p1.m4">\mathfrak{K}(a,x,s)=\Phi\left(e^{2\pi ix},s,a\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="226" xml:id="C25.S14.SS1.p2.s1">
+The Hurwitz zeta function <Math mode="inline" xml:id="C25.S14.SS1.p2.m1">\zeta\left(s,a\right)</Math> (§LABEL:sec:ZE.HZE) and the polylogarithm <Math mode="inline" xml:id="C25.S14.SS1.p2.m2">\mathrm{Li}_{s}\left(z\right)</Math> (§LABEL:sec:ZE.JON.GEN) are special cases: <Math equation-number="25.14.2" mode="display" xml:id="C25.S14.E2">\zeta\left(s,a\right)=\Phi\left(1,s,a\right), subject to \Re s&gt;1, a\neq 0,-1,-2,\dots,</Math> <Math equation-number="25.14.3" mode="display" xml:id="C25.S14.E3">\mathrm{Li}_{s}\left(z\right)=z\Phi\left(z,s,1\right), subject to \Re s&gt;1, |z|\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S14.SS2">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C25.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C25.S14.SS2.p1.s1">
+With the conditions of (LABEL:eq:ZE.LER.LER2) and <Math mode="inline" xml:id="C25.S14.SS2.p1.m1">m=1,2,3,\dots</Math> , <Math equation-number="25.14.4" mode="display" xml:id="C25.S14.E4">\Phi\left(z,s,a\right)=z^{m}\Phi\left(z,s,a+m\right)+\sum_{n=0}^{m-1}\frac{z^{ n}}{(a+n)^{s}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="228" xml:id="C25.S14.SS2.p1.s2">
+<Math equation-number="25.14.5" mode="display" xml:id="C25.S14.E5">\Phi\left(z,s,a\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^ {s-1}e^{-ax}}{1-ze^{-x}}\mathrm{d}x, subject to \Re s&gt;0, \Re a&gt;0, z\in\mathbb{C}\setminus[1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="229" xml:id="C25.S14.SS2.p1.s3">
+<Math equation-number="25.14.6" mode="display" xml:id="C25.S14.E6">\Phi\left(z,s,a\right)=\frac{1}{2}a^{-s}+\int_{0}^{\infty}\frac{z^{x}}{(a+x)^{ s}}\mathrm{d}x-2\int_{0}^{\infty}\frac{\sin\left(x\ln z-s\operatorname{arctan} \left(x/a\right)\right)}{(a^{2}+x^{2})^{s/2}(e^{2\pi x}-1)}\mathrm{d}x, subject to \Re s&gt;0 if |z|&lt;1; \Re s&gt;1 if |z|=1,\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="230" xml:id="C25.S14.SS2.p1.s4">
+For these and further properties see ( , pp. 27–31) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S15">
+<title>Dirichlet <Math content-tex="\DirichletL" mode="inline" xml:id="C25.S15.m1">L</Math>-functions</title>        
+ 
+<subsection xml:id="C25.S15.SS1">
+<title>Definitions and Basic Properties</title>        
+  
+<para xml:id="C25.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="231" xml:id="C25.S15.SS1.p1.s1">
+The notation <Math mode="inline" xml:id="C25.S15.SS1.p1.m1">L\left(s,\chi\right)</Math> was introduced by ( ) for the meromorphic continuation of the function defined by the series <Math equation-number="25.15.1" mode="display" xml:id="C25.S15.E1">L\left(s,\chi\right)=\sum_{n=1}^{\infty}\frac{\chi(n)}{n^{s}}, subject to \Re s&gt;1,</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p1.m3">\chi(n)</Math> is a Dirichlet character <Math mode="inline" xml:id="C25.S15.SS1.p1.m4">\pmod{k}</Math> (§LABEL:sec:NT.DIR).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="232" xml:id="C25.S15.SS1.p1.s2">
+For the principal character <Math mode="inline" xml:id="C25.S15.SS1.p1.m5">\chi_{1}\pmod{k}</Math> , <Math mode="inline" xml:id="C25.S15.SS1.p1.m6">L\left(s,\chi_{1}\right)</Math> is analytic everywhere except for a simple pole at <Math mode="inline" xml:id="C25.S15.SS1.p1.m7">s=1</Math> with residue <Math mode="inline" xml:id="C25.S15.SS1.p1.m8">\phi\left(k\right)/k</Math> , where <Math mode="inline" xml:id="C25.S15.SS1.p1.m9">\phi\left(k\right)</Math> is Euler’s totient function (§LABEL:sec:NT.FU).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="233" xml:id="C25.S15.SS1.p1.s3">
+If <Math mode="inline" xml:id="C25.S15.SS1.p1.m10">\chi\neq\chi_{1}</Math> , then <Math mode="inline" xml:id="C25.S15.SS1.p1.m11">L\left(s,\chi\right)</Math> is an entire function of <Math mode="inline" xml:id="C25.S15.SS1.p1.m12">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="234" xml:id="C25.S15.SS1.p1.s4">
+<Math equation-number="25.15.2" mode="display" xml:id="C25.S15.E2">L\left(s,\chi\right)=\prod_{p}\left(1-\frac{\chi(p)}{p^{s}}\right)^{-1}, subject to \Re s&gt;1,</Math> with the product taken over all primes <Math mode="inline" xml:id="C25.S15.SS1.p1.m14">p</Math> , beginning with <Math mode="inline" xml:id="C25.S15.SS1.p1.m15">p=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="235" xml:id="C25.S15.SS1.p1.s5">
+This implies that <Math mode="inline" xml:id="C25.S15.SS1.p1.m16">L\left(s,\chi\right)\neq 0</Math> if <Math mode="inline" xml:id="C25.S15.SS1.p1.m17">\Re s&gt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C25.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C25.S15.SS1.p2.s1">
+Equations (LABEL:eq:ZE.DIR.DIR3) and (LABEL:eq:ZE.DIR.DIR4) hold for all <Math mode="inline" xml:id="C25.S15.SS1.p2.m1">s</Math> if <Math mode="inline" xml:id="C25.S15.SS1.p2.m2">\chi\neq\chi_{1}</Math> , and for all <Math mode="inline" xml:id="C25.S15.SS1.p2.m3">s</Math> ( <Math mode="inline" xml:id="C25.S15.SS1.p2.m4">\neq 1</Math> ) if <Math mode="inline" xml:id="C25.S15.SS1.p2.m5">\chi=\chi_{1}</Math> : <Math equation-number="25.15.3" mode="display" xml:id="C25.S15.E3">L\left(s,\chi\right)=k^{-s}\sum_{r=1}^{k-1}\chi(r)\zeta\left(s,\frac{r}{k} \right),</Math> , <Math equation-number="25.15.4" mode="display" xml:id="C25.S15.E4">L\left(s,\chi\right)=L\left(s,\chi_{0}\right)\prod_{p\mathbin{|}k}\left(1- \frac{\chi_{0}(p)}{p^{s}}\right),</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p2.m6">\chi_{0}</Math> is a primitive character (mod <Math mode="inline" xml:id="C25.S15.SS1.p2.m7">d</Math> ) for some positive divisor <Math mode="inline" xml:id="C25.S15.SS1.p2.m8">d</Math> of <Math mode="inline" xml:id="C25.S15.SS1.p2.m9">k</Math> (§LABEL:sec:NT.DIR).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="237" xml:id="C25.S15.SS1.p3.s1">
+When <Math mode="inline" xml:id="C25.S15.SS1.p3.m1">\chi</Math> is a primitive character (mod <Math mode="inline" xml:id="C25.S15.SS1.p3.m2">k</Math> ) the <Math mode="inline" xml:id="C25.S15.SS1.p3.m3">L</Math> -functions satisfy the functional equation: <Math equation-number="25.15.5" mode="display" xml:id="C25.S15.E5">L\left(1-s,\chi\right)=\frac{k^{s-1}\Gamma\left(s\right)}{(2\pi)^{s}}\*{\left( e^{-\pi is/2}+\chi(-1)e^{\pi is/2}\right)}\*G(\chi)L\left(s,\overline{\chi} \right),</Math> where <Math mode="inline" xml:id="C25.S15.SS1.p3.m5">\overline{\chi}</Math> is the complex conjugate of <Math mode="inline" xml:id="C25.S15.SS1.p3.m6">\chi</Math> , and <Math equation-number="25.15.6" mode="display" xml:id="C25.S15.E6">G(\chi)=\sum_{r=1}^{k}\chi(r)e^{2\pi ir/k}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S15.SS2">
+<title>Zeros</title>        
+ 
+ 
+<para xml:id="C25.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="238" xml:id="C25.S15.SS2.p1.s1">
+Since <Math mode="inline" xml:id="C25.S15.SS2.p1.m1">L\left(s,\chi\right)\neq 0</Math> if <Math mode="inline" xml:id="C25.S15.SS2.p1.m2">\Re s&gt;1</Math> , (LABEL:eq:ZE.DIR.DIR5) shows that for a primitive character <Math mode="inline" xml:id="C25.S15.SS2.p1.m3">\chi</Math> the only zeros of <Math mode="inline" xml:id="C25.S15.SS2.p1.m4">L\left(s,\chi\right)</Math> for <Math mode="inline" xml:id="C25.S15.SS2.p1.m5">\Re s&lt;0</Math> (the so-called trivial zeros) are as follows: <Math equation-number="25.15.7" mode="display" xml:id="C25.S15.E7">L\left(-2n,\chi\right)=0\text{ if }\chi(-1)=1, subject to n=0,1,2,\dots,</Math> <Math equation-number="25.15.8" mode="display" xml:id="C25.S15.E8">L\left(-2n-1,\chi\right)=0\text{ if }\chi(-1)=-1, subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="239" xml:id="C25.S15.SS2.p2.s1">
+There are also infinitely many zeros in the critical strip <Math mode="inline" xml:id="C25.S15.SS2.p2.m1">0\leq\Re s\leq 1</Math> , located symmetrically about the critical line <Math mode="inline" xml:id="C25.S15.SS2.p2.m2">\Re s=\frac{1}{2}</Math> , but not necessarily symmetrically about the realaxis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="240" xml:id="C25.S15.SS2.p2.s2">
+<Math equation-number="25.15.9" mode="display" xml:id="C25.S15.E9">L\left(1,\chi\right)\neq 0\text{ if }\chi\neq\chi_{1},</Math> where <Math mode="inline" xml:id="C25.S15.SS2.p2.m3">\chi_{1}</Math> is the principal character <Math mode="inline" xml:id="C25.S15.SS2.p2.m4">\pmod{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="241" xml:id="C25.S15.SS2.p2.s3">
+This result plays an important role in the proof of Dirichlet’s theorem on primes in arithmetic progressions (§LABEL:sec:NT.ASY).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="242" xml:id="C25.S15.SS2.p2.s4">
+Related results are: <Math equation-number="25.15.10" mode="display" xml:id="C25.S15.E10">L\left(0,\chi\right)=\begin{cases}\displaystyle-\frac{1}{k}\sum_{r=1}^{k}r\chi (r),&amp;\chi\neq\chi_{1},\\ 0,&amp;\chi=\chi_{1}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C25.S16">
+<title>Mathematical Applications</title>        
+  
+<subsection xml:id="C25.S16.SS1">
+<title>Distribution of Primes</title>        
+  
+<para xml:id="C25.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="243" xml:id="C25.S16.SS1.p1.s1">
+In studying the distribution of primes <Math mode="inline" xml:id="C25.S16.SS1.p1.m1">p\leq x</Math> , ( ) introduced a function <Math mode="inline" xml:id="C25.S16.SS1.p1.m2">\psi\left(x\right)</Math> (not to be confused with the digamma function used elsewhere in this chapter), given by <Math equation-number="25.16.1" mode="display" xml:id="C25.S16.E1">\psi\left(x\right)=\sum_{m=1}^{\infty}\sum_{p^{m}\leq x}\ln p,</Math> which is related to the Riemann zeta function by <Math equation-number="25.16.2" mode="display" xml:id="C25.S16.E2">\psi\left(x\right)=x-\frac{\zeta'\left(0\right)}{\zeta\left(0\right)}-\sum_{ \rho}\frac{x^{\rho}}{\rho}+o\left(1\right), subject to x\to\infty,</Math> where the sum is taken over the nontrivial zeros <Math mode="inline" xml:id="C25.S16.SS1.p1.m4">\rho</Math> of <Math mode="inline" xml:id="C25.S16.SS1.p1.m5">\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="244" xml:id="C25.S16.SS1.p2.s1">
+The prime number theorem (LABEL:eq:NT.FU.PNT) is equivalent to the statement <Math equation-number="25.16.3" mode="display" xml:id="C25.S16.E3">\psi\left(x\right)=x+o\left(x\right), subject to x\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="245" xml:id="C25.S16.SS1.p3.s1">
+The Riemann hypothesis is equivalent to the statement <Math equation-number="25.16.4" mode="display" xml:id="C25.S16.E4">\psi\left(x\right)=x+O\left(x^{\frac{1}{2}+\epsilon}\right), subject to x\to\infty,</Math> for every <Math mode="inline" xml:id="C25.S16.SS1.p3.m1">\epsilon&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S16.SS2">
+<title>Euler Sums</title>        
+  
+<para xml:id="C25.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="246" xml:id="C25.S16.SS2.p1.s1">
+Euler sums have the form <Math equation-number="25.16.5" mode="display" xml:id="C25.S16.E5">H\left(s\right)=\sum_{n=1}^{\infty}\frac{h(n)}{n^{s}},</Math> where <Math mode="inline" xml:id="C25.S16.SS2.p1.m2">h(n)</Math> is given by (LABEL:eq:ZE.HZE.EI5new).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="247" xml:id="C25.S16.SS2.p2.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p2.m1">H\left(s\right)</Math> is analytic for <Math mode="inline" xml:id="C25.S16.SS2.p2.m2">\Re s&gt;1</Math> , and can be extended meromorphically into the half-plane <Math mode="inline" xml:id="C25.S16.SS2.p2.m3">\Re s&gt;-2k</Math> for every positive integer <Math mode="inline" xml:id="C25.S16.SS2.p2.m4">k</Math> by use of the relations
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S16.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C25.S16.SS2.p3.s1">
+ <Math equation-number="25.16.6" mode="display" xml:id="C25.S16.E6">H\left(s\right)=-\zeta'\left(s\right)+\gamma\zeta\left(s\right)+\frac{1}{2} \zeta\left(s+1\right)+\sum_{r=1}^{k}\zeta\left(1-2r\right)\zeta\left(s+2r \right)+\sum_{n=1}^{\infty}\frac{1}{n^{s}}\int_{n}^{\infty}\frac{\widetilde{B} _{2k+1}\left(x\right)}{x^{2k+2}}\mathrm{d}x,</Math> <Math equation-number="25.16.7" mode="display" xml:id="C25.S16.E7">H\left(s\right)=\frac{1}{2}\zeta\left(s+1\right)+\frac{\zeta\left(s\right)}{s- 1}-\sum_{r=1}^{k}\genfrac{(}{)}{0.0pt}{}{s+2r-2}{2r-1}\zeta\left(1-2r\right) \zeta\left(s+2r\right)-\genfrac{(}{)}{0.0pt}{}{s+2k}{2k+1}\sum_{n=1}^{\infty} \frac{1}{n}\int_{n}^{\infty}\frac{\widetilde{B}_{2k+1}\left(x\right)}{x^{s+2k+ 1}}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S16.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="249" xml:id="C25.S16.SS2.p4.s1">
+For integer <Math mode="inline" xml:id="C25.S16.SS2.p4.m1">s</Math> ( <Math mode="inline" xml:id="C25.S16.SS2.p4.m2">\geq 2</Math> ), <Math mode="inline" xml:id="C25.S16.SS2.p4.m3">H\left(s\right)</Math> can be evaluated in terms of the zeta function: <Math equation-number="25.16.8" mode="display" xml:id="C25.S16.E8">H\left(2\right)=2\zeta\left(3\right), H\left(3\right)=\tfrac{5}{4}\zeta\left(4\right),</Math> <Math equation-number="25.16.9" mode="display" xml:id="C25.S16.E9">H\left(a\right)=\frac{a+2}{2}\zeta\left(a+1\right)-\frac{1}{2}\sum_{r=1}^{a-2} \zeta\left(r+1\right)\zeta\left(a-r\right), subject to a=2,3,4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="250" xml:id="C25.S16.SS2.p5.s1">
+Also, <Math equation-number="25.16.10" mode="display" xml:id="C25.S16.E10">H\left(-2a\right)=\frac{1}{2}\zeta\left(1-2a\right)=-\frac{B_{2a}}{4a}, subject to a=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="251" xml:id="C25.S16.SS2.p6.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p6.m1">H\left(s\right)</Math> has a simple pole with residue <Math mode="inline" xml:id="C25.S16.SS2.p6.m2">\zeta\left(1-2r\right)</Math> ( <Math mode="inline" xml:id="C25.S16.SS2.p6.m3">=-B_{2r}/(2r)</Math> ) at each odd negative integer <Math mode="inline" xml:id="C25.S16.SS2.p6.m4">s=1-2r</Math> , <Math mode="inline" xml:id="C25.S16.SS2.p6.m5">r=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="252" xml:id="C25.S16.SS2.p7.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p7.m1">H\left(s\right)</Math> is the special case <Math mode="inline" xml:id="C25.S16.SS2.p7.m2">H\left(s,1\right)</Math> of the function <Math equation-number="25.16.11" mode="display" xml:id="C25.S16.E11">H\left(s,z\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}\sum_{m=1}^{n}\frac{1}{m^{ z}}, subject to \Re(s+z)&gt;1,</Math> which satisfies the reciprocity law <Math equation-number="25.16.12" mode="display" xml:id="C25.S16.E12">H\left(s,z\right)+H\left(z,s\right)=\zeta\left(s\right)\zeta\left(z\right)+ \zeta\left(s+z\right),</Math> when both <Math mode="inline" xml:id="C25.S16.SS2.p7.m4">H\left(s,z\right)</Math> and <Math mode="inline" xml:id="C25.S16.SS2.p7.m5">H\left(z,s\right)</Math> are finite.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="253" xml:id="C25.S16.SS2.p8.s1">
+For further properties of <Math mode="inline" xml:id="C25.S16.SS2.p8.m1">H\left(s,z\right)</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="254" xml:id="C25.S16.SS2.p8.s2">
+Related results are: <Math equation-number="25.16.13" mode="display" xml:id="C25.S16.E13">\sum_{n=1}^{\infty}\left(\frac{h(n)}{n}\right)^{2}=\frac{17}{4}\zeta\left(4 \right),</Math> , <Math equation-number="25.16.14" mode="display" xml:id="C25.S16.E14">\sum_{r=1}^{\infty}\sum_{k=1}^{r}\frac{1}{rk(r+k)}=\frac{5}{4}\zeta\left(3 \right),</Math> , <Math equation-number="25.16.15" mode="display" xml:id="C25.S16.E15">\sum_{r=1}^{\infty}\sum_{k=1}^{r}\frac{1}{r^{2}(r+k)}=\frac{3}{4}\zeta\left(3 \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="255" xml:id="C25.S16.SS2.p9.s1">
+For further generalizations, see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S17">
+<title>Physical Applications</title>        
+   
+<para xml:id="C25.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="256" xml:id="C25.S17.p1.s1">
+Analogies exist between the distribution of the zeros of <Math mode="inline" xml:id="C25.S17.p1.m1">\zeta\left(s\right)</Math> on the critical line and of semiclassical quantum eigenvalues.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="257" xml:id="C25.S17.p1.s2">
+This relates to a suggestion of Hilbert and Pólya that the zeros are eigenvalues of some operator, and the Riemann hypothesis is true if that operator is Hermitian.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="258" xml:id="C25.S17.p1.s3">
+See ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+    
+<para xml:id="C25.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="259" xml:id="C25.S17.p2.s1">
+The zeta function arises in the calculation of the partition function of ideal quantum gases (both Bose–Einstein and Fermi–Dirac cases), and it determines the critical gas temperature and density for the Bose–Einstein condensation phase transition in a dilute gas ( ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="260" xml:id="C25.S17.p2.s2">
+Quantum field theory often encounters formally divergent sums that need to be evaluated by a process of regularization: for example, the energy of the electromagnetic vacuum in a confined space (Casimir–Polder effect).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="261" xml:id="C25.S17.p2.s3">
+It has been found possible to perform such regularizations by equating the divergent sums to zeta functions and associated functions ( ( ) ).
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C25.S18">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C25.S18.SS1">
+<title>Function Values and Derivatives</title>        
+    
+<para xml:id="C25.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C25.S18.SS1.p1.s1">
+The principal tools for computing <Math mode="inline" xml:id="C25.S18.SS1.p1.m1">\zeta\left(s\right)</Math> are the expansion (LABEL:eq:ZE.EX.EM2) for general values of <Math mode="inline" xml:id="C25.S18.SS1.p1.m2">s</Math> , and the Riemann–Siegel formula (LABEL:eq:ZE.ZERO.RS1) (extended to higher terms) for <Math mode="inline" xml:id="C25.S18.SS1.p1.m3">\zeta\left(\frac{1}{2}+it\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="263" xml:id="C25.S18.SS1.p1.s2">
+Details are provided in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="264" xml:id="C25.S18.SS1.p1.s3">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="265" xml:id="C25.S18.SS1.p1.s4">
+Calculations relating to derivatives of <Math mode="inline" xml:id="C25.S18.SS1.p1.m4">\zeta\left(s\right)</Math> and/or <Math mode="inline" xml:id="C25.S18.SS1.p1.m5">\zeta\left(s,a\right)</Math> can be found in ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="266" xml:id="C25.S18.SS1.p2.s1">
+For the Hurwitz zeta function <Math mode="inline" xml:id="C25.S18.SS1.p2.m1">\zeta\left(s,a\right)</Math> see ( , p. 653) and ( ) .
+</sentence>
+
+</para>
+ 
+  
+<para xml:id="C25.S18.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="267" xml:id="C25.S18.SS1.p3.s1">
+For dilogarithms and polylogarithms see ( ) , ( ) , ( , pp. 231–232) , and ( ) .
+</sentence>
+
+</para>
+   
+<para xml:id="C25.S18.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="268" xml:id="C25.S18.SS1.p4.s1">
+For Fermi–Dirac and Bose–Einstein integrals see ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S18.SS2">
+<title>Zeros</title>        
+   
+<para xml:id="C25.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C25.S18.SS2.p1.s1">
+Most numerical calculations of the Riemann zeta function are concerned with locating zeros of <Math mode="inline" xml:id="C25.S18.SS2.p1.m1">\zeta\left(\frac{1}{2}+it\right)</Math> in an effort to prove or disprove the Riemann hypothesis, which states that all nontrivial zeros of <Math mode="inline" xml:id="C25.S18.SS2.p1.m2">\zeta\left(s\right)</Math> lie on the critical line <Math mode="inline" xml:id="C25.S18.SS2.p1.m3">\Re s=\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="270" xml:id="C25.S18.SS2.p1.s2">
+Calculations to date (2008) have found no nontrivial zeros off the critical line.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="271" xml:id="C25.S18.SS2.p1.s3">
+For recent investigations see, for example, ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="272" xml:id="C25.S18.SS2.p1.s4">
+For earlier work see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C25.S19">
+<title>Tables</title>        
+ 
+<para xml:id="C25.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="273" xml:id="C25.S19.p1.s1">
+( ) tabulates: <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m1">\zeta\left(n\right)</Math> , <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m2">n=2,3,4,\dots</Math> , 20D (p.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="274" xml:id="C25.S19.p1.s2">
+811); <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m3">\mathrm{Li}_{2}\left(1-x\right)</Math> , <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m4">x=0(.01)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="275" xml:id="C25.S19.p1.s3">
+5, 9D (p.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="276" xml:id="C25.S19.p1.s4">
+1005); <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m5">f(\theta)</Math> , <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m6">\theta=15^{\circ}(1^{\circ})30^{\circ}(2^{\circ})90^{\circ}(5^{\circ})180^{\circ}</Math> , <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m7">f(\theta)+\theta\ln\theta</Math> , <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m8">\theta=0(1^{\circ})15^{\circ}</Math> , 6D (p.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="277" xml:id="C25.S19.p1.s5">
+1006).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="278" xml:id="C25.S19.p1.s6">
+Here <Math mode="inline" xml:id="C25.S19.I1.i1.p1.m9">f(\theta)</Math> denotes Clausen’s integral, given by the right-hand side of (LABEL:eq:ZE.JON.DI8).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="279" xml:id="C25.S19.p1.s7">
+( ) tabulates <Math mode="inline" xml:id="C25.S19.I1.i2.p1.m1">\mathrm{Li}_{2}\left(x\right)</Math> (§LABEL:sec:ZE.JON.DI) for <Math mode="inline" xml:id="C25.S19.I1.i2.p1.m2">\pm x=0.02(.02)1(.1)</Math> 6 to 30D. ( ) tabulates <Math mode="inline" xml:id="C25.S19.I1.i3.p1.m1">\Gamma\left(s+1\right)F_{s}(x)</Math> , where <Math mode="inline" xml:id="C25.S19.I1.i3.p1.m2">F_{s}(x)</Math> is the Fermi–Dirac integral (LABEL:eq:ZE.JON.FDI1), for <Math mode="inline" xml:id="C25.S19.I1.i3.p1.m3">s=-\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{5}{2}</Math> , <Math mode="inline" xml:id="C25.S19.I1.i3.p1.m4">x=-5(.05)2</Math> 5, to 12S. ( , §22.1) lists many sources for earlier tables of <Math mode="inline" xml:id="C25.S19.I1.i4.p1.m1">\zeta\left(s\right)</Math> for both real and complex <Math mode="inline" xml:id="C25.S19.I1.i4.p1.m2">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="280" xml:id="C25.S19.p1.s8">
+§22.133 gives sources for numerical values of coefficients in the Riemann–Siegel formula, §22.15 describes tables of values of <Math mode="inline" xml:id="C25.S19.I1.i4.p1.m3">\zeta\left(s,a\right)</Math> , and §22.17 lists tables for some Dirichlet <Math mode="inline" xml:id="C25.S19.I1.i4.p1.m4">L</Math> -functions for real characters.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="281" xml:id="C25.S19.p1.s9">
+For tables of dilogarithms, polylogarithms, and Clausen’s integral see §§22.84–22.858.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S20">
+<title>Approximations</title>        
+ 
+<para xml:id="C25.S20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="282" xml:id="C25.S20.p1.s1">
+( ) gives rational approximations for <Math mode="inline" xml:id="C25.S20.I1.i1.p1.m1">\zeta\left(s\right)</Math> in the form of quotients of polynomials or quotients of Chebyshev series.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="283" xml:id="C25.S20.p1.s2">
+The ranges covered are <Math mode="inline" xml:id="C25.S20.I1.i1.p1.m2">0.5\leq s\leq 5</Math> , <Math mode="inline" xml:id="C25.S20.I1.i1.p1.m3">5\leq s\leq 11</Math> , <Math mode="inline" xml:id="C25.S20.I1.i1.p1.m4">11\leq s\leq 25</Math> , <Math mode="inline" xml:id="C25.S20.I1.i1.p1.m5">25\leq s\leq 55</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="284" xml:id="C25.S20.p1.s3">
+Precision is varied, with a maximum of 20S. ( ) gives the coefficients of the Chebyshev-series expansions of <Math mode="inline" xml:id="C25.S20.I1.i2.p1.m1">s\zeta\left(s+1\right)</Math> and <Math mode="inline" xml:id="C25.S20.I1.i2.p1.m2">\zeta\left(s+k\right)</Math> , <Math mode="inline" xml:id="C25.S20.I1.i2.p1.m3">k=2,3,4,5,8</Math> , for <Math mode="inline" xml:id="C25.S20.I1.i2.p1.m4">0\leq s\leq 1</Math> (23D).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="285" xml:id="C25.S20.p1.s4">
+( , p. 306) gives coefficients in Chebyshev-series expansions that cover <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m1">\zeta\left(s\right)</Math> for <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m2">0\leq s\leq 1</Math> (15D), <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m3">\zeta\left(s+1\right)</Math> for <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m4">0\leq s\leq 1</Math> (20D), and <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m5">\ln\xi\left(\tfrac{1}{2}+ix\right)</Math> (§LABEL:sec:ZE.FE) for <Math mode="inline" xml:id="C25.S20.I1.i3.p1.m6">-1\leq x\leq 1</Math> (20D).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="286" xml:id="C25.S20.p1.s5">
+For errata see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="287" xml:id="C25.S20.p1.s6">
+( ) gives rational approximations for <Math mode="inline" xml:id="C25.S20.I1.i4.p1.m1">\mathrm{Li}_{2}\left(x\right)</Math> (§LABEL:sec:ZE.JON.DI) for <Math mode="inline" xml:id="C25.S20.I1.i4.p1.m2">0.5\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="288" xml:id="C25.S20.p1.s7">
+Precision is varied with a maximum of 24S. ( ) gives minimax rational approximations for <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m1">\Gamma\left(s+1\right)F_{s}(x)</Math> , where <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m2">F_{s}(x)</Math> is the Fermi–Dirac integral (LABEL:eq:ZE.JON.FDI1), for the intervals <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m3">-\infty&lt;x\leq 2</Math> and <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m4">2\leq x&lt;\infty</Math> , with <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m5">s=-\frac{1}{2},\frac{1}{2},\frac{3}{2},\frac{5}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="289" xml:id="C25.S20.p1.s8">
+For each <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m6">s</Math> there are three sets of approximations, with relative maximum errors <Math mode="inline" xml:id="C25.S20.I1.i5.p1.m7">10^{-4},10^{-8},10^{-12}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C25.S21">
+<title>Software</title>        
+ 
+<para xml:id="C25.S21.p1">
+
+</para>
+
+ 
+<subsection xml:id="C25.S21.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C25.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="290" xml:id="C25.S21.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="291" xml:id="C25.S21.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="292" xml:id="C25.S21.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S21.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="293" xml:id="C25.S21.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS2">
+<title>Zeta Functions for Real Arguments</title>         
+<para xml:id="C25.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="294" xml:id="C25.S21.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="295" xml:id="C25.S21.SS2.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S21.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="296" xml:id="C25.S21.SS2.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS3">
+<title>Zeta Functions for Complex Arguments</title>         
+<para xml:id="C25.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="297" xml:id="C25.S21.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="298" xml:id="C25.S21.SS3.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S21.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="299" xml:id="C25.S21.SS3.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS4">
+<title>Hurwitz Zeta Function</title>        
+ 
+<para xml:id="C25.S21.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="300" xml:id="C25.S21.SS4.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="301" xml:id="C25.S21.SS4.p1.s2">
+For other software see theLABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS5">
+<title>Dilogarithms, Polylogarithms</title>         
+<para xml:id="C25.S21.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="302" xml:id="C25.S21.SS5.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="303" xml:id="C25.S21.SS5.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="304" xml:id="C25.S21.SS5.p1.s3">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S21.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="305" xml:id="C25.S21.SS5.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS6">
+<title>Clausen’s Integral</title>         
+<para xml:id="C25.S21.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="306" xml:id="C25.S21.SS6.p1.s1">
+See §LABEL:sec:ZE.JON.DI.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="307" xml:id="C25.S21.SS6.p1.s2">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="308" xml:id="C25.S21.SS6.p1.s3">
+Fortran.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS7">
+<title>Fermi–Dirac and Bose–Einstein Integrals</title>         
+<para xml:id="C25.S21.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="309" xml:id="C25.S21.SS7.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="310" xml:id="C25.S21.SS7.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="311" xml:id="C25.S21.SS7.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="312" xml:id="C25.S21.SS7.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="313" xml:id="C25.S21.SS7.p1.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="314" xml:id="C25.S21.SS7.p1.s6">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="315" xml:id="C25.S21.SS7.p1.s7">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="316" xml:id="C25.S21.SS7.p1.s8">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="317" xml:id="C25.S21.SS7.p1.s9">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S21.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="318" xml:id="C25.S21.SS7.p2.s1">
+See also ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS8">
+<title>Lerch’s Transcendent</title>         
+<para xml:id="C25.S21.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="319" xml:id="C25.S21.SS8.p1.s1">
+( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S21.SS9">
+<title>Dirichlet <Math mode="inline" xml:id="C25.S21.SS9.m1">L</Math>-series</title>        
+ 
+<para xml:id="C25.S21.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="320" xml:id="C25.S21.SS9.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="321" xml:id="C25.S21.SS9.p1.s2">
+For other software see theLABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

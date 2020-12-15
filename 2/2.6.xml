@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S6">
+<title>Distributional Methods</title>          
+<subsection xml:id="C2.S6.SS1">
+<title>Divergent Integrals</title>        
+  
+<para xml:id="C2.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S6.SS1.p1.s1">
+Consider the integral <Math equation-number="2.6.1" mode="display" xml:id="C2.S6.E1">S(x)=\int_{0}^{\infty}\frac{1}{(1+t)^{1/3}(x+t)}\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C2.S6.SS1.p1.m1">x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S6.SS1.p1.s2">
+For <Math mode="inline" xml:id="C2.S6.SS1.p1.m2">t&gt;1</Math> , <Math equation-number="2.6.2" mode="display" xml:id="C2.S6.E2">(1+t)^{-1/3}=\sum_{s=0}^{\infty}\genfrac{(}{)}{0.0pt}{}{-\frac{1}{3}}{s}t^{-s- (1/3)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C2.S6.SS1.p1.s3">
+Motivated by Watson’s lemma (§2.3(ii)), we substitute (2.6.2) in (2.6.1), and integrate term by term.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C2.S6.SS1.p1.s4">
+This leads to integrals of the form <Math equation-number="2.6.3" mode="display" xml:id="C2.S6.E3">\int_{0}^{\infty}\frac{t^{-s-(1/3)}}{x+t}\mathrm{d}t, if s=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C2.S6.SS1.p1.s5">
+Although divergent, these integrals may be interpreted in a generalized sense.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C2.S6.SS1.p1.s6">
+For instance, we have <Math equation-number="2.6.4" mode="display" xml:id="C2.S6.E4">\int_{0}^{\infty}\frac{t^{\alpha-1}}{(x+t)^{\alpha+\beta}}\mathrm{d}t=\frac{ \Gamma\left(\alpha\right)\Gamma\left(\beta\right)}{\Gamma\left(\alpha+\beta \right)}\frac{1}{x^{\beta}}, if \Re\alpha&gt;0, \Re\beta&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C2.S6.SS1.p1.s7">
+But the right-hand side is meaningful for all values of <Math mode="inline" xml:id="C2.S6.SS1.p1.m3">\alpha</Math> and <Math mode="inline" xml:id="C2.S6.SS1.p1.m4">\beta</Math> , other than nonpositive integers.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C2.S6.SS1.p1.s8">
+We may therefore define the integral on the left-hand side of (2.6.4) by the value on the right-hand side, except when <Math mode="inline" xml:id="C2.S6.SS1.p1.m5">\alpha,\beta=0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C2.S6.SS1.p1.s9">
+With this interpretation <Math equation-number="2.6.5" mode="display" xml:id="C2.S6.E5">\int_{0}^{\infty}\frac{t^{-s-(1/3)}}{x+t}\mathrm{d}t=\frac{2\pi}{\sqrt{3}} \frac{(-1)^{s}}{x^{s+(1/3)}}, if s=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" xml:id="C2.S6.SS1.p1.s10">
+Inserting (2.6.2) into (2.6.1) and integrating formally term-by-term, we obtain <Math equation-number="2.6.6" mode="display" xml:id="C2.S6.E6">S(x)\sim\frac{2\pi}{\sqrt{3}}\sum_{s=0}^{\infty}(-1)^{s}{\genfrac{(}{)}{0.0pt} {}{-\frac{1}{3}}{s}}x^{-s-(1/3)}, if x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" xml:id="C2.S6.SS1.p1.s11">
+However this result is incorrect.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" xml:id="C2.S6.SS1.p1.s12">
+The correct result is given by <Math equation-number="2.6.7" mode="display" xml:id="C2.S6.E7">S(x)\sim\frac{2\pi}{\sqrt{3}}\sum_{s=0}^{\infty}(-1)^{s}{\genfrac{(}{)}{0.0pt} {}{-\frac{1}{3}}{s}}x^{-s-(1/3)}-\sum_{s=1}^{\infty}\frac{3^{s}(s-1)!}{2\cdot 5 \cdots(3s-1)}x^{-s};</Math> see §2.6(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S6.SS1.p2.s1">
+The fact that expansion (2.6.6)misses all the terms in the second series in (2.6.7)raises the question: what went wrong with our process of reaching (2.6.6)?
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C2.S6.SS1.p2.s2">
+In the following subsections, we usesome elementary facts of distribution theory (§1.16) to study the proper use of divergent integrals.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C2.S6.SS1.p2.s3">
+An important asset of the distribution method is that it gives explicit expressions for the remainder terms associated with the resulting asymptotic expansions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C2.S6.SS1.p3.s1">
+For an introduction to distribution theory, seeWong (1989, Chapter 5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C2.S6.SS1.p3.s2">
+For more advanced discussions, seeGel’fand and Shilov (1964) and Rudin (1973).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S6.SS2">
+<title>Stieltjes Transform</title>           
+<para xml:id="C2.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C2.S6.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C2.S6.SS2.p1.m1">f(t)</Math> be locally integrable on <Math mode="inline" xml:id="C2.S6.SS2.p1.m2">[0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C2.S6.SS2.p1.s2">
+The Stieltjes transform of <Math mode="inline" xml:id="C2.S6.SS2.p1.m3">f(t)</Math> is defined by <Math equation-number="2.6.8" mode="display" xml:id="C2.S6.E8">\mathcal{S}\mskip-3.0mu f\mskip 3.0mu \left(z\right)=\int_{0}^{\infty}\frac{f( t)}{t+z}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C2.S6.SS2.p1.s3">
+To derive an asymptotic expansion of <Math mode="inline" xml:id="C2.S6.SS2.p1.m4">\mathcal{S}\mskip-3.0mu f\mskip 3.0mu \left(z\right)</Math> for large values of <Math mode="inline" xml:id="C2.S6.SS2.p1.m5">|z|</Math> , with <Math mode="inline" xml:id="C2.S6.SS2.p1.m6">|\operatorname{ph}z|&lt;\pi</Math> , we assume that <Math mode="inline" xml:id="C2.S6.SS2.p1.m7">f(t)</Math> possesses an asymptotic expansion of the form <Math equation-number="2.6.9" mode="display" xml:id="C2.S6.E9">f(t)\sim\sum_{s=0}^{\infty}a_{s}t^{-s-\alpha}, if t\to+\infty,</Math> with <Math mode="inline" xml:id="C2.S6.SS2.p1.m8">0&lt;\alpha\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C2.S6.SS2.p1.s4">
+For each <Math mode="inline" xml:id="C2.S6.SS2.p1.m9">n=1,2,3,\dots</Math> , set <Math equation-number="2.6.10" mode="display" xml:id="C2.S6.E10">f(t)=\sum_{s=0}^{n-1}a_{s}t^{-s-\alpha}+f_{n}(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C2.S6.SS2.p1.s5">
+To each function in this equation, we shall assign a tempered distribution (i.e., a continuous linear functional) on the space <Math mode="inline" xml:id="C2.S6.SS2.p1.m10">\mathcal{T}</Math> of rapidly decreasing functions on <Math mode="inline" xml:id="C2.S6.SS2.p1.m11">\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="23" xml:id="C2.S6.SS2.p1.s6">
+Since <Math mode="inline" xml:id="C2.S6.SS2.p1.m12">f(t)</Math> is locally integrable on <Math mode="inline" xml:id="C2.S6.SS2.p1.m13">[0,\infty)</Math> , it defines a distribution by <Math equation-number="2.6.11" mode="display" xml:id="C2.S6.E11">\left\langle f,\phi\right\rangle=\int_{0}^{\infty}f(t)\phi(t)\mathrm{d}t, if \phi\in\mathcal{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="24" xml:id="C2.S6.SS2.p1.s7">
+In particular, <Math equation-number="2.6.12" mode="display" xml:id="C2.S6.E12">\left\langle t^{-\alpha},\phi\right\rangle=\int_{0}^{\infty}t^{-\alpha}\phi(t) \mathrm{d}t, if \phi\in\mathcal{T},</Math> when <Math mode="inline" xml:id="C2.S6.SS2.p1.m14">0&lt;\alpha&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="25" xml:id="C2.S6.SS2.p1.s8">
+Since the functions <Math mode="inline" xml:id="C2.S6.SS2.p1.m15">t^{-s-\alpha}</Math> , <Math mode="inline" xml:id="C2.S6.SS2.p1.m16">s=1,2,\dots</Math> , are not locally integrable on <Math mode="inline" xml:id="C2.S6.SS2.p1.m17">[0,\infty)</Math> , we cannot assign distributions to them in a similar manner.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="26" xml:id="C2.S6.SS2.p1.s9">
+However, they are multiples of the derivatives of <Math mode="inline" xml:id="C2.S6.SS2.p1.m18">t^{-\alpha}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="27" xml:id="C2.S6.SS2.p1.s10">
+Motivated by the definition of distributional derivatives, we can assign them the distributions defined by <Math equation-number="2.6.13" mode="display" xml:id="C2.S6.E13">\left\langle t^{-s-\alpha},\phi\right\rangle=\frac{1}{{\left(\alpha\right)_{s} }}\int_{0}^{\infty}t^{-\alpha}\phi^{(s)}(t)\mathrm{d}t, if \phi\in\mathcal{T},</Math> where <Math mode="inline" xml:id="C2.S6.SS2.p1.m19">{\left(\alpha\right)_{s}}=\alpha(\alpha+1)\cdots(\alpha+s-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="28" xml:id="C2.S6.SS2.p1.s11">
+Similarly, in the case <Math mode="inline" xml:id="C2.S6.SS2.p1.m20">\alpha=1</Math> , we define <Math equation-number="2.6.14" mode="display" xml:id="C2.S6.E14">\left\langle t^{-s-1},\phi\right\rangle=-\frac{1}{s!}\int_{0}^{\infty}(\ln t) \phi^{(s+1)}(t)\mathrm{d}t, if \phi\in\mathcal{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="29" xml:id="C2.S6.SS2.p1.s12">
+To assign a distribution to the function <Math mode="inline" xml:id="C2.S6.SS2.p1.m21">f_{n}(t)</Math> , we first let <Math mode="inline" xml:id="C2.S6.SS2.p1.m22">f_{n,n}(t)</Math> denote the <Math mode="inline" xml:id="C2.S6.SS2.p1.m23">n</Math> th repeated integral (§1.4(v)) of <Math mode="inline" xml:id="C2.S6.SS2.p1.m24">f_{n}</Math> : <Math equation-number="2.6.15" mode="display" xml:id="C2.S6.E15">f_{n,n}(t)=\frac{(-1)^{n}}{(n-1)!}\int_{t}^{\infty}(\tau-t)^{n-1}f_{n}(\tau) \mathrm{d}\tau</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="30" xml:id="C2.S6.SS2.p1.s13">
+For <Math mode="inline" xml:id="C2.S6.SS2.p1.m25">0&lt;\alpha&lt;1</Math> , it is easily seen that <Math mode="inline" xml:id="C2.S6.SS2.p1.m26">f_{n,n}(t)</Math> is bounded on <Math mode="inline" xml:id="C2.S6.SS2.p1.m27">[0,R]</Math> for any positive constant <Math mode="inline" xml:id="C2.S6.SS2.p1.m28">R</Math> , and is <Math mode="inline" xml:id="C2.S6.SS2.p1.m29">O\left(t^{-\alpha}\right)</Math> as <Math mode="inline" xml:id="C2.S6.SS2.p1.m30">t\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="31" xml:id="C2.S6.SS2.p1.s14">
+For <Math mode="inline" xml:id="C2.S6.SS2.p1.m31">\alpha=1</Math> , we have <Math mode="inline" xml:id="C2.S6.SS2.p1.m32">f_{n,n}(t)=O\left(t^{-1}\right)</Math> as <Math mode="inline" xml:id="C2.S6.SS2.p1.m33">t\to\infty</Math> and <Math mode="inline" xml:id="C2.S6.SS2.p1.m34">f_{n,n}(t)=O\left(\ln t\right)</Math> as <Math mode="inline" xml:id="C2.S6.SS2.p1.m35">t\to 0+</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="32" xml:id="C2.S6.SS2.p1.s15">
+In either case, we define the distribution associated with <Math mode="inline" xml:id="C2.S6.SS2.p1.m36">f_{n}(t)</Math> by <Math equation-number="2.6.16" mode="display" xml:id="C2.S6.E16">\left\langle f_{n},\phi\right\rangle=(-1)^{n}\int_{0}^{\infty}f_{n,n}(t)\phi^{ (n)}(t)\mathrm{d}t, if \phi\in\mathcal{T},</Math> since the <Math mode="inline" xml:id="C2.S6.SS2.p1.m37">n</Math> th derivative of <Math mode="inline" xml:id="C2.S6.SS2.p1.m38">f_{n,n}</Math> is <Math mode="inline" xml:id="C2.S6.SS2.p1.m39">f_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C2.S6.SS2.p2.s1">
+We have now assigned a distribution to each function in (2.6.10).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C2.S6.SS2.p2.s2">
+A natural question is: what is the exact relation between these distributions?
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C2.S6.SS2.p2.s3">
+The answer is provided by the identities (2.6.17) and (2.6.20)given below.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C2.S6.SS2.p3.s1">
+For <Math mode="inline" xml:id="C2.S6.SS2.p3.m1">0&lt;\alpha&lt;1</Math> and <Math mode="inline" xml:id="C2.S6.SS2.p3.m2">n\geq 1</Math> , we have <Math equation-number="2.6.17" mode="display" xml:id="C2.S6.E17">{\left\langle f,\phi\right\rangle}=\sum_{s=0}^{n-1}a_{s}\left\langle t^{-s- \alpha},\phi\right\rangle-\sum_{s=1}^{n}c_{s}\left\langle{\delta^{(s-1)}},\phi \right\rangle+\left\langle f_{n},\phi\right\rangle</Math> for any <Math mode="inline" xml:id="C2.S6.SS2.p3.m3">\phi\in\mathcal{T}</Math> , where <Math equation-number="2.6.18" mode="display" xml:id="C2.S6.E18">c_{s}=\frac{(-1)^{s}}{(s-1)!}\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(s \right),</Math> <Math mode="inline" xml:id="C2.S6.SS2.p3.m4">\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(z\right)</Math> being the Mellin transform of <Math mode="inline" xml:id="C2.S6.SS2.p3.m5">f(t)</Math> or its analytic continuation (§2.5(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C2.S6.SS2.p3.s2">
+The Dirac delta distribution in (2.6.17) is given by <Math equation-number="2.6.19" mode="display" xml:id="C2.S6.E19">\left\langle{\delta^{(s)}},\phi\right\rangle=(-1)^{s}\phi^{(s)}(0), if s=0,1,2,\dots;</Math> compare §1.16(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C2.S6.SS2.p4.s1">
+For <Math mode="inline" xml:id="C2.S6.SS2.p4.m1">\alpha=1</Math> <Math equation-number="2.6.20" mode="display" xml:id="C2.S6.E20">{\left\langle f,\phi\right\rangle}=\sum_{s=0}^{n-1}a_{s}\left\langle t^{-s-1}, \phi\right\rangle-\sum_{s=1}^{n}d_{s}\left\langle{\delta^{(s-1)}},\phi\right \rangle+\left\langle f_{n},\phi\right\rangle</Math> for any <Math mode="inline" xml:id="C2.S6.SS2.p4.m2">\phi\in\mathcal{T}</Math> , where <Math equation-number="2.6.21" mode="display" xml:id="C2.S6.E21">(-1)^{s+1}d_{s+1}=\frac{a_{s}}{s!}\sum_{k=1}^{s}\frac{1}{k}+\frac{1}{s!}\lim_{ z\to s+1}\left(\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(z\right)+\frac{a_{s }}{z-s-1}\right),</Math> for <Math mode="inline" xml:id="C2.S6.SS2.p4.m3">s=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C2.S6.SS2.p5.s1">
+To apply the results (2.6.17) and (2.6.20) to the Stieltjes transform (2.6.8),we take a specific function <Math mode="inline" xml:id="C2.S6.SS2.p5.m1">\phi\in\mathcal{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C2.S6.SS2.p5.s2">
+Let <Math mode="inline" xml:id="C2.S6.SS2.p5.m2">\varepsilon</Math> be a positive number, and <Math equation-number="2.6.22" mode="display" xml:id="C2.S6.E22">\phi_{\varepsilon}(t)=\frac{e^{-\varepsilon t}}{t+z}, if t\in(0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C2.S6.SS2.p5.s3">
+From (2.6.13) and (2.6.14)
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="42" xml:id="C2.S6.SS2.p5.s4">
+<Math equation-number="2.6.23" mode="display" xml:id="C2.S6.E23">\lim_{\varepsilon\to 0}\left\langle t^{-s-\alpha},\phi_{\varepsilon}\right \rangle=\frac{\pi}{\sin\left(\pi\alpha\right)}\frac{(-1)^{s}}{z^{s+\alpha}},</Math> <Math equation-number="2.6.24" mode="display" xml:id="C2.S6.E24">\lim_{\varepsilon\to 0}\left\langle t^{-s-1},\phi_{\varepsilon}\right\rangle= \frac{(-1)^{s+1}}{z^{s+1}}\sum_{k=1}^{s}\frac{1}{k}+\frac{(-1)^{s}}{z^{s+1}} \ln z,</Math> with <Math mode="inline" xml:id="C2.S6.SS2.p5.m3">s=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="43" xml:id="C2.S6.SS2.p5.s5">
+From (2.6.11) and (2.6.16),we also have <Math equation-number="2.6.25" mode="display" xml:id="C2.S6.E25">\lim_{\varepsilon\to 0}\left\langle f,\phi_{\varepsilon}\right\rangle=\mathcal {S}\mskip-3.0mu f\mskip 3.0mu \left(z\right),</Math> <Math equation-number="2.6.26" mode="display" xml:id="C2.S6.E26">\lim_{\varepsilon\to 0}\left\langle f_{n},\phi_{\varepsilon}\right\rangle=n! \int_{0}^{\infty}\frac{f_{n,n}(t)}{(t+z)^{n+1}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="44" xml:id="C2.S6.SS2.p5.s6">
+On substituting (2.6.15)into (2.6.26) and interchanging the order of integration, the right-hand side of (2.6.26)becomes
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="45" xml:id="C2.S6.SS2.p5.s7">
+<Math mode="display" xml:id="C2.S6.Ex1">\frac{(-1)^{n}}{z^{n}}\int_{0}^{\infty}\frac{\tau^{n}f_{n}(\tau)}{\tau+z} \mathrm{d}\tau</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C2.S6.SS2.p6.s1">
+To summarize, <Math equation-number="2.6.27" mode="display" xml:id="C2.S6.E27">\mathcal{S}\mskip-3.0mu f\mskip 3.0mu \left(z\right)=\frac{\pi}{\sin\left(\pi \alpha\right)}\sum_{s=0}^{n-1}(-1)^{s}\frac{a_{s}}{z^{s+\alpha}}-\sum_{s=1}^{n }(s-1)!\frac{c_{s}}{z^{s}}+R_{n}(z)</Math> , if <Math mode="inline" xml:id="C2.S6.SS2.p6.m1">\alpha\in(0,1)</Math> in (2.6.9), or <Math equation-number="2.6.28" mode="display" xml:id="C2.S6.E28">\mathcal{S}\mskip-3.0mu f\mskip 3.0mu \left(z\right)=\ln z\sum_{s=0}^{n-1}(-1) ^{s}\frac{a_{s}}{z^{s+1}}+\sum_{s=0}^{n-1}(-1)^{s}\frac{\widetilde{d}_{s}}{z^{ s+1}}+R_{n}(z),</Math> if <Math mode="inline" xml:id="C2.S6.SS2.p6.m2">\alpha=1</Math> in (2.6.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C2.S6.SS2.p6.s2">
+Here <Math mode="inline" xml:id="C2.S6.SS2.p6.m3">c_{s}</Math> is given by (2.6.18),
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C2.S6.SS2.p6.s3">
+<Math equation-number="2.6.29" mode="display" xml:id="C2.S6.E29">\widetilde{d}_{s}=\lim_{z\to s+1}\left(\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(z\right)+\frac{a_{s}}{z-s-1}\right),</Math> and <Math equation-number="2.6.30" mode="display" xml:id="C2.S6.E30">R_{n}(z)=\frac{(-1)^{n}}{z^{n}}\int_{0}^{\infty}\frac{\tau^{n}f_{n}(\tau)}{ \tau+z}\mathrm{d}\tau</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C2.S6.SS2.p7.s1">
+The expansion (2.6.7)follows immediately from (2.6.27)with
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C2.S6.SS2.p7.s2">
+<Math mode="inline" xml:id="C2.S6.SS2.p7.m1">z=x</Math> and <Math mode="inline" xml:id="C2.S6.SS2.p7.m2">f(t)=(1+t)^{-(1/3)}</Math> ; its region of validity is <Math mode="inline" xml:id="C2.S6.SS2.p7.m3">|\operatorname{ph}x|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C2.S6.SS2.p7.m4">&lt;\pi</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="51" xml:id="C2.S6.SS2.p7.s3">
+The distribution method outlined here can be extended readily to functions <Math mode="inline" xml:id="C2.S6.SS2.p7.m5">f(t)</Math> having an asymptotic expansion of the form <Math equation-number="2.6.31" mode="display" xml:id="C2.S6.E31">f(t)\sim e^{ict}\sum_{s=0}^{\infty}a_{s}t^{-s-\alpha}, if t\to+\infty,</Math> where <Math mode="inline" xml:id="C2.S6.SS2.p7.m6">c</Math> ( <Math mode="inline" xml:id="C2.S6.SS2.p7.m7">\neq 0</Math> ) is real, and <Math mode="inline" xml:id="C2.S6.SS2.p7.m8">0&lt;\alpha\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="52" xml:id="C2.S6.SS2.p7.s4">
+For a more detailed discussion of the derivation of asymptotic expansions of Stieltjes transforms by the distribution method, see McClure and Wong (1978) andWong (1989, Chapter 6).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="53" xml:id="C2.S6.SS2.p7.s5">
+Corresponding results for the generalized Stieltjes transform <Math equation-number="2.6.32" mode="display" xml:id="C2.S6.E32">\int_{0}^{\infty}\frac{f(t)}{(t+z)^{\rho}}\mathrm{d}t, if \rho&gt;0,</Math> can be found in Wong (1979).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="54" xml:id="C2.S6.SS2.p7.s6">
+An application has been given byLópez (2000) to derive asymptotic expansions of standard symmetric elliptic integrals, complete with error bounds; see §19.27(vi).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+<subsection xml:id="C2.S6.SS3">
+<title>Fractional Integrals</title>          
+<para xml:id="C2.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C2.S6.SS3.p1.s1">
+The Riemann–Liouville fractional integral of order <Math mode="inline" xml:id="C2.S6.SS3.p1.m1">\mu</Math> is defined by <Math equation-number="2.6.33" mode="display" xml:id="C2.S6.E33">I^{\mu}f(x)=\frac{1}{\Gamma\left(\mu\right)}\int_{0}^{x}(x-t)^{\mu-1}f(t) \mathrm{d}t, if \mu&gt;0;</Math> see §1.15(vi).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C2.S6.SS3.p1.s2">
+We again assume <Math mode="inline" xml:id="C2.S6.SS3.p1.m2">f(t)</Math> is locally integrable on <Math mode="inline" xml:id="C2.S6.SS3.p1.m3">[0,\infty)</Math> and satisfies (2.6.9).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C2.S6.SS3.p1.s3">
+We now derive an asymptotic expansion of <Math mode="inline" xml:id="C2.S6.SS3.p1.m4">I^{\mu}f(x)</Math> for large positive values of <Math mode="inline" xml:id="C2.S6.SS3.p1.m5">x</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C2.S6.SS3.p2.s1">
+In terms of the convolution product <Math equation-number="2.6.34" mode="display" xml:id="C2.S6.E34">(f\ast g)(x)=\int_{0}^{x}f(x-t)g(t)\mathrm{d}t</Math> of two locally integrable functions on <Math mode="inline" xml:id="C2.S6.SS3.p2.m1">[0,\infty)</Math> , (2.6.33) can be written <Math equation-number="2.6.35" mode="display" xml:id="C2.S6.E35">I^{\mu}f(x)=\frac{1}{\Gamma\left(\mu\right)}(t^{\mu-1}\ast f)(x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C2.S6.SS3.p2.s2">
+The replacement of <Math mode="inline" xml:id="C2.S6.SS3.p2.m2">f(t)</Math> by its asymptotic expansion (2.6.9),followed by term-by-term integration leads to convolution integrals of the form <Math equation-number="2.6.36" mode="display" xml:id="C2.S6.E36">(t^{\mu-1}\ast t^{-s-\alpha})(x)=\int_{0}^{x}(x-t)^{\mu-1}t^{-s-\alpha}\mathrm {d}t, if s=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C2.S6.SS3.p2.s3">
+Of course, except when <Math mode="inline" xml:id="C2.S6.SS3.p2.m3">s=0</Math> and <Math mode="inline" xml:id="C2.S6.SS3.p2.m4">0&lt;\alpha&lt;1</Math> , none of these integrals exists in the usual sense.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="61" xml:id="C2.S6.SS3.p2.s4">
+However, the left-hand side can be considered as the convolution of the two distributions associated with the functions <Math mode="inline" xml:id="C2.S6.SS3.p2.m5">t^{\mu-1}</Math> and <Math mode="inline" xml:id="C2.S6.SS3.p2.m6">t^{-s-\alpha}</Math> , given by (2.6.12) and (2.6.13).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S6.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C2.S6.SS3.p3.s1">
+To define convolutions of distributions, we first introduce the space <Math mode="inline" xml:id="C2.S6.SS3.p3.m1">K^{+}</Math> of all distributions of the form <Math mode="inline" xml:id="C2.S6.SS3.p3.m2">D^{n}f</Math> , where <Math mode="inline" xml:id="C2.S6.SS3.p3.m3">n</Math> is a nonnegative integer, <Math mode="inline" xml:id="C2.S6.SS3.p3.m4">f</Math> is a locally integrable function on <Math mode="inline" xml:id="C2.S6.SS3.p3.m5">\mathbb{R}</Math> which vanishes on <Math mode="inline" xml:id="C2.S6.SS3.p3.m6">(-\infty,0]</Math> , and <Math mode="inline" xml:id="C2.S6.SS3.p3.m7">D^{n}f</Math> denotes the <Math mode="inline" xml:id="C2.S6.SS3.p3.m8">n</Math> th derivative of the distribution associated with <Math mode="inline" xml:id="C2.S6.SS3.p3.m9">f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C2.S6.SS3.p3.s2">
+For <Math mode="inline" xml:id="C2.S6.SS3.p3.m10">F=D^{n}f</Math> and <Math mode="inline" xml:id="C2.S6.SS3.p3.m11">G=D^{m}g</Math> in <Math mode="inline" xml:id="C2.S6.SS3.p3.m12">K^{+}</Math> , we define <Math equation-number="2.6.37" mode="display" xml:id="C2.S6.E37">F\ast G=D^{n+m}(f\ast g)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="64" xml:id="C2.S6.SS3.p3.s3">
+It is easily seen that <Math mode="inline" xml:id="C2.S6.SS3.p3.m13">K^{+}</Math> forms a commutative, associative linear algebra.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="65" xml:id="C2.S6.SS3.p3.s4">
+Furthermore, <Math mode="inline" xml:id="C2.S6.SS3.p3.m14">K^{+}</Math> contains the distributions <Math mode="inline" xml:id="C2.S6.SS3.p3.m15">H</Math> , <Math mode="inline" xml:id="C2.S6.SS3.p3.m16">\delta</Math> , and <Math mode="inline" xml:id="C2.S6.SS3.p3.m17">t^{\lambda}</Math> , <Math mode="inline" xml:id="C2.S6.SS3.p3.m18">t&gt;0</Math> , for any real (or complex) number <Math mode="inline" xml:id="C2.S6.SS3.p3.m19">\lambda</Math> , where <Math mode="inline" xml:id="C2.S6.SS3.p3.m20">H</Math> is the distribution associated with the Heaviside function <Math mode="inline" xml:id="C2.S6.SS3.p3.m21">H\left(t\right)</Math> (§1.16(iv)), and <Math mode="inline" xml:id="C2.S6.SS3.p3.m22">t^{\lambda}</Math> is the distribution defined by (2.6.12)–(2.6.14),depending on the value of <Math mode="inline" xml:id="C2.S6.SS3.p3.m23">\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="66" xml:id="C2.S6.SS3.p3.s5">
+Since <Math mode="inline" xml:id="C2.S6.SS3.p3.m24">\delta=DH</Math> , it follows that for <Math mode="inline" xml:id="C2.S6.SS3.p3.m25">\mu\neq 1,2,\dots</Math> , <Math equation-number="2.6.38" mode="display" xml:id="C2.S6.E38">t^{\mu-1}\ast{\delta^{(s-1)}}=\frac{\Gamma\left(\mu\right)}{\Gamma\left(\mu+1- s\right)}t^{\mu-s}, if t&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="67" xml:id="C2.S6.SS3.p3.s6">
+Using (5.12.1), we can also show that when <Math mode="inline" xml:id="C2.S6.SS3.p3.m26">\mu\neq 1,2,\dots</Math> and <Math mode="inline" xml:id="C2.S6.SS3.p3.m27">\mu-\alpha</Math> is not a nonnegative integer, <Math equation-number="2.6.39" mode="display" xml:id="C2.S6.E39">t^{\mu-1}\ast t^{-s-\alpha}=\frac{\Gamma\left(\mu\right)\Gamma\left(1-s-\alpha \right)}{\Gamma\left(\mu+1-s-\alpha\right)}t^{\mu-s-\alpha}, if t&gt;0,</Math> and <Math equation-number="2.6.40" mode="display" xml:id="C2.S6.E40">t^{\mu-1}\ast t^{-s-1}=\frac{(-1)^{s}}{\mu\cdot s!}D^{s+1}\left(t^{\mu}\left( \ln t-\gamma-\psi\left(\mu+1\right)\right)\right), if t&gt;0,</Math> where <Math mode="inline" xml:id="C2.S6.SS3.p3.m28">\gamma</Math> is Euler’s constant (§5.2(ii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C2.S6.SS3.p4.s1">
+To derive the asymptotic expansion of <Math mode="inline" xml:id="C2.S6.SS3.p4.m1">I^{\mu}f(x)</Math> , we recall equations (2.6.17) and (2.6.20).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C2.S6.SS3.p4.s2">
+In the sense of distributions, they can be written <Math equation-number="2.6.41" mode="display" xml:id="C2.S6.E41">f=\sum_{s=0}^{n-1}a_{s}t^{-s-\alpha}-\sum_{s=1}^{n}c_{s}{\delta^{(s-1)}}+f_{n},</Math> and <Math equation-number="2.6.42" mode="display" xml:id="C2.S6.E42">f=\sum_{s=0}^{n-1}a_{s}t^{-s-1}-\sum_{s=1}^{n}d_{s}{\delta^{(s-1)}}+f_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="70" xml:id="C2.S6.SS3.p4.s3">
+Substituting into (2.6.35) and using (2.6.38)–(2.6.40),we obtain <Math equation-number="2.6.43" mode="display" xml:id="C2.S6.E43">t^{\mu-1}\ast f=\sum_{s=0}^{n-1}a_{s}\frac{\Gamma\left(\mu\right)\Gamma\left(1 -s-\alpha\right)}{\Gamma\left(\mu+1-s-\alpha\right)}t^{\mu-s-\alpha}-\sum_{s=1 }^{n}c_{s}\frac{\Gamma\left(\mu\right)}{\Gamma\left(\mu-s+1\right)}t^{\mu-s}+t ^{\mu-1}\ast f_{n}</Math> when <Math mode="inline" xml:id="C2.S6.SS3.p4.m2">0&lt;\alpha&lt;1</Math> , or <Math equation-number="2.6.44" mode="display" xml:id="C2.S6.E44">t^{\mu-1}\ast f=\sum_{s=0}^{n-1}\frac{(-1)^{s}a_{s}}{\mu\cdot s!}D^{s+1}\left( t^{\mu}\left(\ln t-\gamma-\psi\left(\mu+1\right)\right)\right)-\sum_{s=1}^{n}d _{s}\frac{\Gamma\left(\mu\right)}{\Gamma\left(\mu-s+1\right)}t^{\mu-s}+t^{\mu- 1}\ast f_{n}</Math> when <Math mode="inline" xml:id="C2.S6.SS3.p4.m3">\alpha=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="71" xml:id="C2.S6.SS3.p4.s4">
+These equations again hold only in the sense ofdistributions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="72" xml:id="C2.S6.SS3.p4.s5">
+Since the function <Math mode="inline" xml:id="C2.S6.SS3.p4.m4">t^{\mu}\left(\ln t-\gamma-\psi\left(\mu+1\right)\right)</Math> and all its derivatives are locally absolutely continuous in <Math mode="inline" xml:id="C2.S6.SS3.p4.m5">(0,\infty)</Math> , the distributional derivatives in the first sum in (2.6.44) can be replaced by the corresponding ordinary derivatives.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="73" xml:id="C2.S6.SS3.p4.s6">
+Furthermore, since <Math mode="inline" xml:id="C2.S6.SS3.p4.m6">f_{n,n}^{(n)}(t)=f_{n}(t)</Math> , it follows from (2.6.37) that the remainder terms <Math mode="inline" xml:id="C2.S6.SS3.p4.m7">t^{\mu-1}\ast f_{n}</Math> in the last two equations can be associated with a locally integrable function in <Math mode="inline" xml:id="C2.S6.SS3.p4.m8">(0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="74" xml:id="C2.S6.SS3.p4.s7">
+On replacing the distributions by their corresponding functions, (2.6.43) and (2.6.44)give
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="75" xml:id="C2.S6.SS3.p4.s8">
+<Math equation-number="2.6.45" mode="display" xml:id="C2.S6.E45">I^{\mu}f(x)=\sum_{s=0}^{n-1}a_{s}\frac{\Gamma\left(1-s-\alpha\right)}{\Gamma \left(\mu+1-s-\alpha\right)}x^{\mu-s-\alpha}-\sum_{s=1}^{n}\frac{c_{s}}{\Gamma \left(\mu+1-s\right)}x^{\mu-s}+\frac{1}{x^{n}}\delta_{n}(x),</Math> when <Math mode="inline" xml:id="C2.S6.SS3.p4.m9">0&lt;\alpha&lt;1</Math> , or <Math equation-number="2.6.46" mode="display" xml:id="C2.S6.E46">I^{\mu}f(x)=\sum_{s=0}^{n-1}\frac{(-1)^{s}a_{s}}{s!\Gamma\left(\mu+1\right)} \frac{{\mathrm{d}}^{s+1}}{{\mathrm{d}x}^{s+1}}\left(x^{\mu}\left(\ln x-\gamma- \psi\left(\mu+1\right)\right)\right)-\sum_{s=1}^{n}\frac{d_{s}}{\Gamma\left( \mu-s+1\right)}x^{\mu-s}+\frac{1}{x^{n}}\delta_{n}(x),</Math> when <Math mode="inline" xml:id="C2.S6.SS3.p4.m10">\alpha=1</Math> , where <Math equation-number="2.6.47" mode="display" xml:id="C2.S6.E47">\delta_{n}(x)=\sum_{j=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{j}\frac{\Gamma\left(\mu +1\right)}{\Gamma\left(\mu+1-j\right)}I^{\mu}\left(t^{n-j}f_{n,j}\right)(x),</Math> <Math mode="inline" xml:id="C2.S6.SS3.p4.m11">f_{n,j}(t)</Math> being the <Math mode="inline" xml:id="C2.S6.SS3.p4.m12">j</Math> th repeated integral of <Math mode="inline" xml:id="C2.S6.SS3.p4.m13">f_{n}</Math> ; compare(2.6.15).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S6.Px1">
+<title>Example</title>   
+<para xml:id="C2.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C2.S6.Px1.p1.s1">
+Let <Math mode="inline" xml:id="C2.S6.Px1.p1.m1">f(t)=t^{1-\alpha}/(1+t)</Math> , <Math mode="inline" xml:id="C2.S6.Px1.p1.m2">0&lt;\alpha&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C2.S6.Px1.p1.s2">
+Then <Math equation-number="2.6.48" mode="display" xml:id="C2.S6.E48">I^{\mu}f(x)=\frac{1}{\Gamma\left(\mu\right)}\int_{0}^{x}(x-t)^{\mu-1}t^{1- \alpha}(1+t)^{-1}\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C2.S6.Px1.p1.m3">\mu&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="78" xml:id="C2.S6.Px1.p1.s3">
+For <Math mode="inline" xml:id="C2.S6.Px1.p1.m4">0&lt;t&lt;\infty</Math> <Math equation-number="2.6.49" mode="display" xml:id="C2.S6.E49">f(t)=\sum_{s=0}^{n-1}(-1)^{s}t^{-s-\alpha}+(-1)^{n}\frac{t^{1-n-\alpha}}{1+t}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="79" xml:id="C2.S6.Px1.p1.s4">
+In the notation of (2.6.10),
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="80" xml:id="C2.S6.Px1.p1.s5">
+<Math mode="inline" xml:id="C2.S6.Px1.p1.m5">a_{s}=(-1)^{s}</Math> and <Math equation-number="2.6.50" mode="display" xml:id="C2.S6.E50">f_{n}(t)=(-1)^{n}\frac{t^{1-n-\alpha}}{1+t}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="81" xml:id="C2.S6.Px1.p1.s6">
+Since <Math equation-number="2.6.51" mode="display" xml:id="C2.S6.E51">\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(s\right)=(-1)^{s}\pi/\sin\left(\pi \alpha\right),</Math> from (2.6.45) it follows that <Math equation-number="2.6.52" mode="display" xml:id="C2.S6.E52">I^{\mu}f(x)=\sum_{s=0}^{n-1}(-1)^{s}\frac{\Gamma\left(1-s-\alpha\right)}{ \Gamma\left(\mu+1-s-\alpha\right)}x^{\mu-s-\alpha}-\frac{\pi}{\sin\left(\pi \alpha\right)}\sum_{s=1}^{n}\frac{1}{\Gamma\left(\mu+1-s\right)}\frac{x^{\mu-s }}{(s-1)!}+\frac{1}{x^{n}}\delta_{n}(x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="82" xml:id="C2.S6.Px1.p1.s7">
+Moreover, <Math equation-number="2.6.53" mode="display" xml:id="C2.S6.E53">{\left|\delta_{n}(x)\right|}\leq\frac{\Gamma\left(\mu+1\right)\Gamma\left(1- \alpha\right)}{\Gamma\left(\mu+1-\alpha\right)\Gamma\left(n+\alpha\right)}\* \sum_{j=0}^{n}\dbinom{n}{j}\frac{\Gamma\left(n+\alpha-j\right)}{\left|\Gamma \left(\mu+1-j\right)\right|}x^{\mu-\alpha}</Math> for <Math mode="inline" xml:id="C2.S6.Px1.p1.m6">x&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C2.S6.Px1.p2.s1">
+It may be noted that the integral (2.6.48) can be expressed in terms of the hypergeometric function <Math mode="inline" xml:id="C2.S6.Px1.p2.m1">{{}_{2}F_{1}}\left(1,2-\alpha;2-\alpha+\mu;-x\right)</Math> ; see §15.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S6.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C2.S6.Px1.p3.s1">
+For proofs and other examples, see McClure and Wong (1979) andWong (1989, Chapter 6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C2.S6.Px1.p3.s2">
+If both <Math mode="inline" xml:id="C2.S6.Px1.p3.m1">f</Math> and <Math mode="inline" xml:id="C2.S6.Px1.p3.m2">g</Math> in (2.6.34) have asymptotic expansions of the form (2.6.9), then the distribution method can also be used to derive an asymptotic expansion of theconvolution <Math mode="inline" xml:id="C2.S6.Px1.p3.m3">f\ast g</Math> ; see Li and Wong (1994).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S6.SS4">
+<title>Regularization</title>           
+<para xml:id="C2.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C2.S6.SS4.p1.s1">
+The method of distributions can be further extended to derive asymptotic expansions for convolution integrals: <Math equation-number="2.6.54" mode="display" xml:id="C2.S6.E54">I(x)=\int_{0}^{\infty}f(t)h(xt)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C2.S6.SS4.p1.s2">
+We assume that for each <Math mode="inline" xml:id="C2.S6.SS4.p1.m1">n=1,2,3,\dots</Math> , <Math equation-number="2.6.55" mode="display" xml:id="C2.S6.E55">f(t)=\sum_{s=0}^{n-1}a_{s}t^{s+\alpha-1}+f_{n}(t),</Math> where <Math mode="inline" xml:id="C2.S6.SS4.p1.m2">0&lt;\alpha\leq 1</Math> and <Math mode="inline" xml:id="C2.S6.SS4.p1.m3">f_{n}(t)=O\left(t^{n+\alpha-1}\right)</Math> as <Math mode="inline" xml:id="C2.S6.SS4.p1.m4">t\to 0+</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="88" xml:id="C2.S6.SS4.p1.s3">
+Also, <Math equation-number="2.6.56" mode="display" xml:id="C2.S6.E56">h(t)=\sum_{s=0}^{n-1}b_{s}t^{-s-\beta}+h_{n}(t),</Math> where <Math mode="inline" xml:id="C2.S6.SS4.p1.m5">0&lt;\beta\leq 1</Math> , and <Math mode="inline" xml:id="C2.S6.SS4.p1.m6">h_{n}(t)=O\left(t^{-n-\beta}\right)</Math> as <Math mode="inline" xml:id="C2.S6.SS4.p1.m7">t\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="89" xml:id="C2.S6.SS4.p1.s4">
+Multiplication of these expansions leads to <Math equation-number="2.6.57" mode="display" xml:id="C2.S6.E57">f(t)h(xt)=\sum_{j=0}^{n-1}\sum_{k=0}^{n-1}a_{j}b_{k}t^{j+\alpha-1-k-\beta}x^{- k-\beta}+\sum_{j=0}^{n-1}a_{j}t^{j+\alpha-1}h_{n}(xt)+\sum_{k=0}^{n-1}b_{k}x^{ -k-\beta}t^{-k-\beta}f_{n}(t)+f_{n}(t)h_{n}(xt)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="90" xml:id="C2.S6.SS4.p1.s5">
+On inserting this identity into (2.6.54),we immediately encounter divergent integrals of the form <Math equation-number="2.6.58" mode="display" xml:id="C2.S6.E58">\int_{0}^{\infty}t^{\lambda}\mathrm{d}t, if \lambda\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="91" xml:id="C2.S6.SS4.p1.s6">
+However, in the theory of generalized functions (distributions), there is a method, known as “regularization”, by which these integrals can be interpreted in a meaningful manner.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="92" xml:id="C2.S6.SS4.p1.s7">
+In this sense <Math equation-number="2.6.59" mode="display" xml:id="C2.S6.E59">\int_{0}^{\infty}t^{\lambda}\mathrm{d}t=0, if \lambda\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="93" xml:id="C2.S6.SS4.p1.s8">
+From (2.6.55) and (2.6.59)
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="94" xml:id="C2.S6.SS4.p1.s9">
+<Math equation-number="2.6.60" mode="display" xml:id="C2.S6.E60">\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(z\right)=\mathscr{M}\mskip-3.0mu f _{n}\mskip 3.0mu \left(z\right),</Math> where <Math mode="inline" xml:id="C2.S6.SS4.p1.m8">\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(z\right)</Math> is the Mellin transform of <Math mode="inline" xml:id="C2.S6.SS4.p1.m9">f</Math> or its analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="95" xml:id="C2.S6.SS4.p1.s10">
+Also, when <Math mode="inline" xml:id="C2.S6.SS4.p1.m10">\alpha\neq\beta</Math> , <Math equation-number="2.6.61" mode="display" xml:id="C2.S6.E61">\mathscr{M}\mskip-3.0mu h_{x}\mskip 3.0mu \left(j+\alpha\right)=x^{-j-\alpha} \mathscr{M}\mskip-3.0mu h\mskip 3.0mu \left(j+\alpha\right),</Math> where <Math mode="inline" xml:id="C2.S6.SS4.p1.m11">h_{x}(t)=h(xt)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="96" xml:id="C2.S6.SS4.p1.s11">
+Inserting (2.6.57)into (2.6.54),we obtain from (2.6.59)–(2.6.61)
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="97" xml:id="C2.S6.SS4.p1.s12">
+<Math equation-number="2.6.62" mode="display" xml:id="C2.S6.E62">I(x)=\sum_{j=0}^{n-1}a_{j}\mathscr{M}\mskip-3.0mu h\mskip 3.0mu \left(j+\alpha \right)x^{-j-\alpha}+\sum_{k=0}^{n-1}b_{k}\mathscr{M}\mskip-3.0mu f\mskip 3.0 mu \left(1-k-\beta\right)x^{-k-\beta}+\delta_{n}(x)</Math> when <Math mode="inline" xml:id="C2.S6.SS4.p1.m12">\alpha\neq\beta</Math> , where <Math mode="display" xml:id="C2.S6.Ex2">\delta_{n}(x)=\int_{0}^{\infty}f_{n}(t)h_{n}(xt)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="98" xml:id="C2.S6.SS4.p1.s13">
+There is a similar expansion, involving logarithmic terms, when <Math mode="inline" xml:id="C2.S6.SS4.p1.m13">\alpha=\beta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="99" xml:id="C2.S6.SS4.p1.s14">
+For rigorous derivations of these results and also order estimates for <Math mode="inline" xml:id="C2.S6.SS4.p1.m14">\delta_{n}(x)</Math> , see Wong (1979) andWong (1989, Chapter 6).
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>

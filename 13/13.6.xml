@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S6">
+<title>Relations to Other Functions</title>         
+<subsection xml:id="C13.S6.SS1">
+<title>Elementary Functions</title>          
+<para xml:id="C13.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S6.SS1.p1.s1">
+ <Math equation-number="13.6.1" mode="display" xml:id="C13.S6.E1">M\left(a,a,z\right)=e^{z},</Math> , <Math equation-number="13.6.2" mode="display" xml:id="C13.S6.E2">M\left(1,2,2z\right)=\frac{e^{z}}{z}\sinh z,</Math> , <Math equation-number="13.6.3" mode="display" xml:id="C13.S6.E3">M\left(0,b,z\right)=U\left(0,b,z\right)=1,</Math> , <Math equation-number="13.6.4" mode="display" xml:id="C13.S6.E4">U\left(a,a+1,z\right)=z^{-a}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS2">
+<title>Incomplete Gamma Functions</title>            
+ 
+<para xml:id="C13.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S6.SS2.p1.s1">
+For the notation see §§6.2(i), 7.2(i),8.2(i),and 8.19(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C13.S6.SS2.p1.s2">
+When <Math mode="inline" xml:id="C13.S6.SS2.p1.m1">a-b</Math> is an integer or <Math mode="inline" xml:id="C13.S6.SS2.p1.m2">a</Math> is a positive integer the Kummer functions can be expressed as incomplete gamma functions (or generalized exponential integrals).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C13.S6.SS2.p1.s3">
+For example, <Math equation-number="13.6.5" mode="display" xml:id="C13.S6.E5">M\left(a,a+1,-z\right)=e^{-z}M\left(1,a+1,z\right)=az^{-a}\gamma\left(a,z \right),</Math> <Math equation-number="13.6.6" mode="display" xml:id="C13.S6.E6">U\left(a,a,z\right)=z^{1-a}U\left(1,2-a,z\right)=z^{1-a}e^{z}E_{a}\left(z \right)=e^{z}\Gamma\left(1-a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C13.S6.SS2.p1.s4">
+Special cases are the error functions <Math equation-number="13.6.7" mode="display" xml:id="C13.S6.E7">M\left(\tfrac{1}{2},\tfrac{3}{2},-z^{2}\right)=\frac{\sqrt{\pi}}{2z} \operatorname{erf}\left(z\right),</Math> <Math equation-number="13.6.8" mode="display" xml:id="C13.S6.E8">U\left(\tfrac{1}{2},\tfrac{1}{2},z^{2}\right)=\sqrt{\pi}e^{z^{2}}\operatorname {erfc}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS3">
+<title>Modified Bessel Functions</title>             
+<para xml:id="C13.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C13.S6.SS3.p1.s1">
+When <Math mode="inline" xml:id="C13.S6.SS3.p1.m1">b=2a</Math> the Kummer functions can be expressed as modified Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C13.S6.SS3.p1.s2">
+For the notation see §§10.25(ii) and 9.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C13.S6.SS3.p1.s3">
+<Math equation-number="13.6.9" mode="display" xml:id="C13.S6.E9">M\left(\nu+\tfrac{1}{2},2\nu+1,2z\right)=\Gamma\left(1+\nu\right)e^{z}\left( \ifrac{z}{2}\right)^{-\nu}I_{\nu}\left(z\right),</Math> , <Math equation-number="13.6.10" mode="display" xml:id="C13.S6.E10">U\left(\nu+\tfrac{1}{2},2\nu+1,2z\right)=\frac{1}{\sqrt{\pi}}e^{z}\left(2z \right)^{-\nu}K_{\nu}\left(z\right),</Math> , <Math equation-number="13.6.11" mode="display" xml:id="C13.S6.E11">U\left(\tfrac{5}{6},\tfrac{5}{3},\tfrac{4}{3}z^{3/2}\right)=\sqrt{\pi}\frac{3^ {5/6}\exp\left(\tfrac{2}{3}z^{3/2}\right)}{2^{2/3}z}\mathrm{Ai}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS4">
+<title>Parabolic Cylinder Functions</title>           
+<para xml:id="C13.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S6.SS4.p1.s1">
+For the notation see §12.2.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C13.S6.SS4.p1.s2">
+<Math equation-number="13.6.12" mode="display" xml:id="C13.S6.E12">U\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=2^{ \frac{1}{2}a+\frac{1}{4}}e^{\frac{1}{4}z^{2}}U\left(a,z\right),</Math> <Math equation-number="13.6.13" mode="display" xml:id="C13.S6.E13">U\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1}{2}z^{2}\right)=2^{ \frac{1}{2}a+\frac{3}{4}}\frac{e^{\frac{1}{4}z^{2}}}{z}U\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C13.S6.SS4.p1.s3">
+<Math equation-number="13.6.14" mode="display" xml:id="C13.S6.E14">M\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=\frac{ 2^{\frac{1}{2}a-\frac{3}{4}}\Gamma\left(\tfrac{1}{2}a+\tfrac{3}{4}\right)e^{ \frac{1}{4}z^{2}}}{\sqrt{\pi}}\*\left(U\left(a,z\right)+U\left(a,-z\right) \right),</Math> <Math equation-number="13.6.15" mode="display" xml:id="C13.S6.E15">M\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{2},\tfrac{1}{2}z^{2}\right)=\frac{ 2^{\frac{1}{2}a-\frac{5}{4}}\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{4}\right)e^{ \frac{1}{4}z^{2}}}{z\sqrt{\pi}}\*\left(U\left(a,-z\right)-U\left(a,z\right) \right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS5">
+<title>Orthogonal Polynomials</title>          
+ 
+<para xml:id="C13.S6.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C13.S6.SS5.p1.s1">
+Special cases of §13.6(iv) are as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C13.S6.SS5.p1.s2">
+For the notation see §§18.3, 18.19.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C13.S6.Px1">
+<title>Hermite Polynomials</title>    
+<para xml:id="C13.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C13.S6.Px1.p1.s1">
+ <Math equation-number="13.6.16" mode="display" xml:id="C13.S6.E16">M\left(-n,\tfrac{1}{2},z^{2}\right)=(-1)^{n}\frac{n!}{(2n)!}H_{2n}\left(z \right),</Math> , <Math equation-number="13.6.17" mode="display" xml:id="C13.S6.E17">M\left(-n,\tfrac{3}{2},z^{2}\right)=(-1)^{n}\frac{n!}{(2n+1)!2z}H_{2n+1}\left( z\right),</Math> , <Math equation-number="13.6.18" mode="display" xml:id="C13.S6.E18">U\left(\tfrac{1}{2}-\tfrac{1}{2}n,\tfrac{3}{2},z^{2}\right)=2^{-n}z^{-1}H_{n} \left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C13.S6.Px2">
+<title>Laguerre Polynomials</title>    
+<para xml:id="C13.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C13.S6.Px2.p1.s1">
+ <Math equation-number="13.6.19" mode="display" xml:id="C13.S6.E19">U\left(-n,\alpha+1,z\right)=(-1)^{n}{\left(\alpha+1\right)_{n}}M\left(-n, \alpha+1,z\right)=(-1)^{n}n!L^{(\alpha)}_{n}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C13.S6.Px3">
+<title>Charlier Polynomials</title>  
+  
+<para xml:id="C13.S6.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C13.S6.Px3.p1.s1">
+ <Math equation-number="13.6.20" mode="display" xml:id="C13.S6.E20">U\left(-n,z-n+1,a\right)={\left(-z\right)_{n}}M\left(-n,z-n+1,a\right)=a^{n}C_ {n}\left(z;a\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS6">
+<title>Generalized Hypergeometric Functions</title>           
+<para xml:id="C13.S6.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C13.S6.SS6.p1.s1">
+ <Math equation-number="13.6.21" mode="display" xml:id="C13.S6.E21">U\left(a,b,z\right)=z^{-a}{{}_{2}F_{0}}\left(a,a-b+1;-;-z^{-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C13.S6.SS6.p1.s2">
+For the definition of <Math mode="inline" xml:id="C13.S6.SS6.p1.m1">{{}_{2}F_{0}}\left(a,a-b+1;-;-z^{-1}\right)</Math> when neither <Math mode="inline" xml:id="C13.S6.SS6.p1.m2">a</Math> nor <Math mode="inline" xml:id="C13.S6.SS6.p1.m3">a-b+1</Math> is a nonpositive integer see §16.5.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S6.SS7">
+<title>Coulomb Functions</title>        
+ 
+<para xml:id="C13.S6.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C13.S6.SS7.p1.s1">
+For representations of Coulomb functions in terms of Kummer functions see (33.2.4), (33.2.8) and (33.14.5).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S6">
+<title>Fourier Series</title>          
+<subsection xml:id="C29.S6.SS1">
+<title>Function <Math mode="inline" xml:id="C29.S6.SS1.m1">\mathit{Ec}^{2m}_{\nu}\left(z,k^{2}\right)</Math></title>         
+<para xml:id="C29.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S6.SS1.p1.s1">
+With <Math mode="inline" xml:id="C29.S6.SS1.p1.m1">\phi=\frac{1}{2}\pi-\operatorname{am}\left(z,k\right)</Math> , as in (29.2.5), we have <Math equation-number="29.6.1" mode="display" xml:id="C29.S6.E1">\mathit{Ec}^{2m}_{\nu}\left(z,k^{2}\right)=\tfrac{1}{2}A_{0}+\sum_{p=1}^{ \infty}A_{2p}\cos\left(2p\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S6.SS1.p1.s2">
+Here <Math equation-number="29.6.2" mode="display" xml:id="C29.S6.E2">H=2\!a^{2m}_{\nu}\left(k^{2}\right)-\nu(\nu+1)k^{2},</Math> <Math equation-number="29.6.3" mode="display" xml:id="C29.S6.E3">(\beta_{0}-H)A_{0}+\alpha_{0}A_{2}=0,</Math> <Math equation-number="29.6.4" mode="display" xml:id="C29.S6.E4">\gamma_{p}A_{2p-2}+(\beta_{p}-H)A_{2p}+\alpha_{p}A_{2p+2}=0, if p\geq 1,</Math> with <Math mode="inline" xml:id="C29.S6.SS1.p1.m2">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S6.SS1.p1.m3">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S6.SS1.p1.m4">\gamma_{p}</Math> as in (29.3.11)and(29.3.12), and <Math equation-number="29.6.5" mode="display" xml:id="C29.S6.E5">\tfrac{1}{2}A_{0}^{2}+\sum_{p=1}^{\infty}A_{2p}^{2}=1,</Math> <Math equation-number="29.6.6" mode="display" xml:id="C29.S6.E6">\tfrac{1}{2}A_{0}+\sum_{p=1}^{\infty}A_{2p}&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C29.S6.SS1.p2.s1">
+When <Math mode="inline" xml:id="C29.S6.SS1.p2.m1">\nu\neq 2n</Math> , where <Math mode="inline" xml:id="C29.S6.SS1.p2.m2">n</Math> is a nonnegative integer, it follows from §2.9(i) that for any value of <Math mode="inline" xml:id="C29.S6.SS1.p2.m3">H</Math> the system (29.6.4)–(29.6.6) has a unique recessive solution <Math mode="inline" xml:id="C29.S6.SS1.p2.m4">A_{0},A_{2},A_{4},\dots</Math> ; furthermore <Math equation-number="29.6.7" mode="display" xml:id="C29.S6.E7">\lim_{p\to\infty}\frac{A_{2p+2}}{A_{2p}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n, or \nu=2n and m&gt;n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C29.S6.SS1.p2.s2">
+In addition, if <Math mode="inline" xml:id="C29.S6.SS1.p2.m5">H</Math> satisfies (29.6.2), then (29.6.3)applies.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C29.S6.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C29.S6.SS1.p3.s1">
+In the special case <Math mode="inline" xml:id="C29.S6.SS1.p3.m1">\nu=2n</Math> , <Math mode="inline" xml:id="C29.S6.SS1.p3.m2">m=0,1,\dots,n</Math> , there is a unique nontrivial solution with the property <Math mode="inline" xml:id="C29.S6.SS1.p3.m3">A_{2p}=0</Math> , <Math mode="inline" xml:id="C29.S6.SS1.p3.m4">p=n+1,n+2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C29.S6.SS1.p3.s2">
+This solution can be constructed from (29.6.4) by backward recursion, starting with <Math mode="inline" xml:id="C29.S6.SS1.p3.m5">A_{2n+2}=0</Math> and an arbitrary nonzero value of <Math mode="inline" xml:id="C29.S6.SS1.p3.m6">A_{2n}</Math> , followed by normalization via (29.6.5) and (29.6.6).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C29.S6.SS1.p3.s3">
+Consequently, <Math mode="inline" xml:id="C29.S6.SS1.p3.m7">\mathit{Ec}^{2m}_{\nu}\left(z,k^{2}\right)</Math> reduces to a Lamé polynomial; compare §§29.12(i) and 29.15(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C29.S6.SS1.p4.s1">
+An alternative version of the Fourier series expansion (29.6.1) is given by <Math equation-number="29.6.8" mode="display" xml:id="C29.S6.E8">\mathit{Ec}^{2m}_{\nu}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \left(\tfrac{1}{2}C_{0}+\sum_{p=1}^{\infty}C_{2p}\cos\left(2p\phi\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C29.S6.SS1.p4.s2">
+Here <Math mode="inline" xml:id="C29.S6.SS1.p4.m1">\operatorname{dn}\left(z,k\right)</Math> is as in §22.2, and <Math equation-number="29.6.9" mode="display" xml:id="C29.S6.E9">(\beta_{0}-H)C_{0}+\alpha_{0}C_{2}=0,</Math> <Math equation-number="29.6.10" mode="display" xml:id="C29.S6.E10">\gamma_{p}C_{2p-2}+(\beta_{p}-H)C_{2p}+\alpha_{p}C_{2p+2}=0, if p\geq 1,</Math> with <Math mode="inline" xml:id="C29.S6.SS1.p4.m2">\alpha_{p},\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S6.SS1.p4.m3">\gamma_{p}</Math> now defined by <Math equation-number="29.6.11" mode="display" xml:id="C29.S6.E11">\alpha_{p}=\begin{cases}\nu(\nu+1)k^{2},&amp;p=0,\\ \frac{1}{2}(\nu-2p)(\nu+2p+1)k^{2},&amp;p\geq 1,\end{cases}\beta_{p}=4p^{2}(2-k^{2}),\gamma_{p}=\tfrac{1}{2}(\nu-2p+1)(\nu+2p)k^{2},</Math> and <Math equation-number="29.6.12" mode="display" xml:id="C29.S6.E12">\left(1-\tfrac{1}{2}k^{2}\right)\left(\tfrac{1}{2}C_{0}^{2}+\sum_{p=1}^{\infty }C_{2p}^{2}\right)-\tfrac{1}{2}k^{2}\sum_{p=0}^{\infty}C_{2p}C_{2p+2}=1,</Math> <Math equation-number="29.6.13" mode="display" xml:id="C29.S6.E13">\tfrac{1}{2}C_{0}+\sum_{p=1}^{\infty}C_{2p}&gt;0,</Math> <Math equation-number="29.6.14" mode="display" xml:id="C29.S6.E14">\lim_{p\to\infty}\frac{C_{2p+2}}{C_{2p}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+1, or \nu=2n+1 and m&gt;n,</Math> <Math equation-number="29.6.15" mode="display" xml:id="C29.S6.E15">\tfrac{1}{2}A_{0}C_{0}+\sum_{p=1}^{\infty}A_{2p}C_{2p}=\frac{4}{\pi}\int_{0}^{ \!K\!}\left(\mathit{Ec}^{2m}_{\nu}\left(x,k^{2}\right)\right)^{2}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS1.p5">
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S6.SS2">
+<title>Function <Math mode="inline" xml:id="C29.S6.SS2.m1">\mathit{Ec}^{2m+1}_{\nu}\left(z,k^{2}\right)</Math></title>         
+<para xml:id="C29.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C29.S6.SS2.p1.s1">
+ <Math equation-number="29.6.16" mode="display" xml:id="C29.S6.E16">\mathit{Ec}^{2m+1}_{\nu}\left(z,k^{2}\right)=\sum_{p=0}^{\infty}A_{2p+1}\cos \left((2p+1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C29.S6.SS2.p1.s2">
+Here <Math equation-number="29.6.17" mode="display" xml:id="C29.S6.E17">H=2\!a^{2m+1}_{\nu}\left(k^{2}\right)-\nu(\nu+1)k^{2},</Math> <Math equation-number="29.6.18" mode="display" xml:id="C29.S6.E18">(\beta_{0}-H)A_{1}+\alpha_{0}A_{3}=0,</Math> <Math equation-number="29.6.19" mode="display" xml:id="C29.S6.E19">\gamma_{p}A_{2p-1}+(\beta_{p}-H)A_{2p+1}+\alpha_{p}A_{2p+3}=0, if p\geq 1,</Math> with <Math mode="inline" xml:id="C29.S6.SS2.p1.m1">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S6.SS2.p1.m2">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S6.SS2.p1.m3">\gamma_{p}</Math> as in (29.3.13) and (29.3.14), and <Math equation-number="29.6.20" mode="display" xml:id="C29.S6.E20">\sum_{p=0}^{\infty}A_{2p+1}^{2}=1,</Math> <Math equation-number="29.6.21" mode="display" xml:id="C29.S6.E21">\sum_{p=0}^{\infty}A_{2p+1}&gt;0,</Math> <Math equation-number="29.6.22" mode="display" xml:id="C29.S6.E22">\lim_{p\to\infty}\frac{A_{2p+1}}{A_{2p-1}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+1, or \nu=2n+1 and m&gt;n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C29.S6.SS2.p2.s1">
+Also, <Math equation-number="29.6.23" mode="display" xml:id="C29.S6.E23">\mathit{Ec}^{2m+1}_{\nu}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{\infty}C_{2p+1}\cos\left((2p+1)\phi\right),</Math> where <Math equation-number="29.6.24" mode="display" xml:id="C29.S6.E24">(\beta_{0}-H)C_{1}+\alpha_{0}C_{3}=0,</Math> <Math equation-number="29.6.25" mode="display" xml:id="C29.S6.E25">\gamma_{p}C_{2p-1}+(\beta_{p}-H)C_{2p+1}+\alpha_{p}C_{2p+3}=0, if p\geq 1,</Math> with <Math equation-number="29.6.26" mode="display" xml:id="C29.S6.E26">\alpha_{p}=\tfrac{1}{2}(\nu-2p-1)(\nu+2p+2)k^{2},\beta_{p}=\begin{cases}2-k^{2}+\frac{1}{2}\nu(\nu+1)k^{2},&amp;p=0,\\ (2p+1)^{2}(2-k^{2}),&amp;p\geq 1,\end{cases}\gamma_{p}=\tfrac{1}{2}(\nu-2p)(\nu+2p+1)k^{2},</Math> and <Math equation-number="29.6.27" mode="display" xml:id="C29.S6.E27">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=0}^{\infty}C_{2p+1}^{2}-{\tfrac{1}{2}k ^{2}\left(\tfrac{1}{2}C_{1}^{2}+\sum_{p=0}^{\infty}C_{2p+1}C_{2p+3}\right)=1},</Math> <Math equation-number="29.6.28" mode="display" xml:id="C29.S6.E28">\sum_{p=0}^{\infty}C_{2p+1}&gt;0,</Math> <Math equation-number="29.6.29" mode="display" xml:id="C29.S6.E29">\lim_{p\to\infty}\frac{C_{2p+1}}{C_{2p-1}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+2, or \nu=2n+2 and m&gt;n,</Math> <Math equation-number="29.6.30" mode="display" xml:id="C29.S6.E30">\sum_{p=0}^{\infty}A_{2p+1}C_{2p+1}=\frac{4}{\pi}\int_{0}^{\!K\!}\left(\mathit {Ec}^{2m+1}_{\nu}\left(x,k^{2}\right)\right)^{2}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S6.SS3">
+<title>Function <Math mode="inline" xml:id="C29.S6.SS3.m1">\mathit{Es}^{2m+1}_{\nu}\left(z,k^{2}\right)</Math></title>        
+ 
+<para xml:id="C29.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C29.S6.SS3.p1.s1">
+ <Math equation-number="29.6.31" mode="display" xml:id="C29.S6.E31">\mathit{Es}^{2m+1}_{\nu}\left(z,k^{2}\right)=\sum_{p=0}^{\infty}B_{2p+1}\sin \left((2p+1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C29.S6.SS3.p1.s2">
+Here <Math equation-number="29.6.32" mode="display" xml:id="C29.S6.E32">H=2\!b^{2m+1}_{\nu}\left(k^{2}\right)-\nu(\nu+1)k^{2},</Math> <Math equation-number="29.6.33" mode="display" xml:id="C29.S6.E33">(\beta_{0}-H)B_{1}+\alpha_{0}B_{3}=0,</Math> <Math equation-number="29.6.34" mode="display" xml:id="C29.S6.E34">\gamma_{p}B_{2p-1}+(\beta_{p}-H)B_{2p+1}+\alpha_{p}B_{2p+3}=0, if p\geq 1,</Math> with <Math mode="inline" xml:id="C29.S6.SS3.p1.m1">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S6.SS3.p1.m2">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S6.SS3.p1.m3">\gamma_{p}</Math> as in (29.3.15),(29.3.16), and <Math equation-number="29.6.35" mode="display" xml:id="C29.S6.E35">\sum_{p=0}^{\infty}B_{2p+1}^{2}=1,</Math> <Math equation-number="29.6.36" mode="display" xml:id="C29.S6.E36">\sum_{p=0}^{\infty}(2p+1)B_{2p+1}&gt;0,</Math> <Math equation-number="29.6.37" mode="display" xml:id="C29.S6.E37">\lim_{p\to\infty}\frac{B_{2p+1}}{B_{2p-1}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+1, or \nu=2n+1 and m&gt;n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C29.S6.SS3.p2.s1">
+Also, <Math equation-number="29.6.38" mode="display" xml:id="C29.S6.E38">\mathit{Es}^{2m+1}_{\nu}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{\infty}D_{2p+1}\sin\left((2p+1)\phi\right),</Math> where <Math equation-number="29.6.39" mode="display" xml:id="C29.S6.E39">(\beta_{0}-H)D_{1}+\alpha_{0}D_{3}=0,</Math> <Math equation-number="29.6.40" mode="display" xml:id="C29.S6.E40">\gamma_{p}D_{2p-1}+(\beta_{p}-H)D_{2p+1}+\alpha_{p}D_{2p+3}=0, if p\geq 1,</Math> with <Math equation-number="29.6.41" mode="display" xml:id="C29.S6.E41">\alpha_{p}=\tfrac{1}{2}(\nu-2p-1)(\nu+2p+2)k^{2},\beta_{p}=\begin{cases}2-k^{2}-\frac{1}{2}\nu(\nu+1)k^{2},&amp;p=0,\\ (2p+1)^{2}(2-k^{2}),&amp;p\geq 1,\end{cases}\gamma_{p}=\tfrac{1}{2}(\nu-2p)(\nu+2p+1)k^{2},</Math> and <Math equation-number="29.6.42" mode="display" xml:id="C29.S6.E42">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=0}^{\infty}D_{2p+1}^{2}+{\tfrac{1}{2}k ^{2}\left(\tfrac{1}{2}D_{1}^{2}-\sum_{p=0}^{\infty}D_{2p+1}D_{2p+3}\right)=1},</Math> <Math equation-number="29.6.43" mode="display" xml:id="C29.S6.E43">\sum_{p=0}^{\infty}(2p+1)D_{2p+1}&gt;0,</Math> <Math equation-number="29.6.44" mode="display" xml:id="C29.S6.E44">\lim_{p\to\infty}\frac{D_{2p+1}}{D_{2p-1}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+2, or \nu=2n+2 and m&gt;n,</Math> <Math equation-number="29.6.45" mode="display" xml:id="C29.S6.E45">\sum_{p=0}^{\infty}B_{2p+1}D_{2p+1}=\frac{4}{\pi}\int_{0}^{\!K\!}\left(\mathit {Es}^{2m+1}_{\nu}\left(x,k^{2}\right)\right)^{2}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S6.SS4">
+<title>Function <Math mode="inline" xml:id="C29.S6.SS4.m1">\mathit{Es}^{2m+2}_{\nu}\left(z,k^{2}\right)</Math></title>        
+ 
+<para xml:id="C29.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C29.S6.SS4.p1.s1">
+ <Math equation-number="29.6.46" mode="display" xml:id="C29.S6.E46">\mathit{Es}^{2m+2}_{\nu}\left(z,k^{2}\right)=\sum_{p=1}^{\infty}B_{2p}\sin \left(2p\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C29.S6.SS4.p1.s2">
+Here <Math equation-number="29.6.47" mode="display" xml:id="C29.S6.E47">H=2\!b^{2m+2}_{\nu}\left(k^{2}\right)-\nu(\nu+1)k^{2},</Math> <Math equation-number="29.6.48" mode="display" xml:id="C29.S6.E48">(\beta_{0}-H)B_{2}+\alpha_{0}B_{4}=0,</Math> <Math equation-number="29.6.49" mode="display" xml:id="C29.S6.E49">\gamma_{p}B_{2p}+(\beta_{p}-H)B_{2p+2}+\alpha_{p}B_{2p+4}=0, if p\geq 1,</Math> with <Math mode="inline" xml:id="C29.S6.SS4.p1.m1">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S6.SS4.p1.m2">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S6.SS4.p1.m3">\gamma_{p}</Math> as in (29.3.17), and <Math equation-number="29.6.50" mode="display" xml:id="C29.S6.E50">\sum_{p=1}^{\infty}B_{2p}^{2}=1,</Math> <Math equation-number="29.6.51" mode="display" xml:id="C29.S6.E51">\sum_{p=0}^{\infty}(2p+2)B_{2p+2}&gt;0,</Math> <Math equation-number="29.6.52" mode="display" xml:id="C29.S6.E52">\lim_{p\to\infty}\frac{B_{2p+2}}{B_{2p}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+2, or \nu=2n+2 and m&gt;n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S6.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C29.S6.SS4.p2.s1">
+Also, <Math equation-number="29.6.53" mode="display" xml:id="C29.S6.E53">\mathit{Es}^{2m+2}_{\nu}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=1}^{\infty}D_{2p}\sin\left(2p\phi\right),</Math> where <Math equation-number="29.6.54" mode="display" xml:id="C29.S6.E54">(\beta_{0}-H)D_{2}+\alpha_{0}D_{4}=0,</Math> <Math equation-number="29.6.55" mode="display" xml:id="C29.S6.E55">\gamma_{p}D_{2p}+(\beta_{p}-H)D_{2p+2}+\alpha_{p}D_{2p+4}=0, if p\geq 1,</Math> with <Math equation-number="29.6.56" mode="display" xml:id="C29.S6.E56">\alpha_{p}=\tfrac{1}{2}(\nu-2p-2)(\nu+2p+3)k^{2},\beta_{p}=(2p+2)^{2}(2-k^{2}),\gamma_{p}=\tfrac{1}{2}(\nu-2p-1)(\nu+2p+2)k^{2},</Math> and <Math equation-number="29.6.57" mode="display" xml:id="C29.S6.E57">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=1}^{\infty}D_{2p}^{2}-\tfrac{1}{2}k^{2 }\sum_{p=1}^{\infty}D_{2p}D_{2p+2}=1,</Math> <Math equation-number="29.6.58" mode="display" xml:id="C29.S6.E58">\sum_{p=0}^{\infty}(2p+2)D_{2p+2}&gt;0,</Math> <Math equation-number="29.6.59" mode="display" xml:id="C29.S6.E59">\lim_{p\to\infty}\frac{D_{2p+2}}{D_{2p}}=\frac{k^{2}}{(1+k^{\prime})^{2}}, if \nu\neq 2n+3, or \nu=2n+3 and m&gt;n,</Math> <Math equation-number="29.6.60" mode="display" xml:id="C29.S6.E60">\sum_{p=1}^{\infty}B_{2p}D_{2p}=\frac{4}{\pi}\int_{0}^{\!K\!}\left(\mathit{Es} ^{2m+2}_{\nu}\left(x,k^{2}\right)\right)^{2}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

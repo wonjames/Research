@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S14">
+<title>Reduction of General Elliptic Integrals</title>           
+<subsection xml:id="C19.S14.SS1">
+<title>Examples</title>         
+<para xml:id="C19.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S14.SS1.p1.s1">
+In (19.14.1)–(19.14.3) both the integrand and <Math mode="inline" xml:id="C19.S14.SS1.p1.m1">\cos\phi</Math> are assumed to be nonnegative.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S14.SS1.p1.s2">
+Cases in which <Math mode="inline" xml:id="C19.S14.SS1.p1.m2">\cos\phi&lt;0</Math> can be included by application of (19.2.10).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S14.SS1.p1.s3">
+<Math equation-number="19.14.1" mode="display" xml:id="C19.S14.E1">\int_{1}^{x}\frac{\mathrm{d}t}{\sqrt{t^{3}-1}}=3^{-1/4}F\left(\phi,k\right), if \cos\phi=\dfrac{\sqrt{3}+1-x}{\sqrt{3}-1+x}, k^{2}=\dfrac{2-\sqrt{3}}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S14.SS1.p1.s4">
+<Math equation-number="19.14.2" mode="display" xml:id="C19.S14.E2">\int_{x}^{1}\frac{\mathrm{d}t}{\sqrt{1-t^{3}}}=3^{-1/4}F\left(\phi,k\right), if \cos\phi=\dfrac{\sqrt{3}-1+x}{\sqrt{3}+1-x}, k^{2}=\dfrac{2+\sqrt{3}}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C19.S14.SS1.p1.s5">
+<Math equation-number="19.14.3" mode="display" xml:id="C19.S14.E3">\int_{0}^{x}\frac{\mathrm{d}t}{\sqrt{1+t^{4}}}=\frac{\operatorname{sign}\left( x\right)}{2}F\left(\phi,k\right), if \cos\phi=\dfrac{1-x^{2}}{1+x^{2}}, k^{2}=\dfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C19.S14.SS1.p1.s6">
+<Math equation-number="19.14.4" mode="display" xml:id="C19.S14.E4">{\int_{y}^{x}\frac{\mathrm{d}t}{\sqrt{(a_{1}+b_{1}t^{2})(a_{2}+b_{2}t^{2})}}= \frac{1}{\sqrt{\gamma-\alpha}}F\left(\phi,k\right)}, if k^{2}=\ifrac{(\gamma-\beta)}{(\gamma-\alpha)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C19.S14.SS1.p1.s7">
+In (19.14.4)
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C19.S14.SS1.p1.s8">
+<Math mode="inline" xml:id="C19.S14.SS1.p1.m3">0\leq y&lt;x</Math> , each quadratic polynomial is positive on the interval <Math mode="inline" xml:id="C19.S14.SS1.p1.m4">(y,x)</Math> , and <Math mode="inline" xml:id="C19.S14.SS1.p1.m5">\alpha,\beta,\gamma</Math> is a permutation of <Math mode="inline" xml:id="C19.S14.SS1.p1.m6">0,a_{1}b_{2},a_{2}b_{1}</Math> (not all 0 by assumption) such that <Math mode="inline" xml:id="C19.S14.SS1.p1.m7">\alpha\leq\beta\leq\gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C19.S14.SS1.p1.s9">
+More generally in (19.14.4),
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" xml:id="C19.S14.SS1.p1.s10">
+<Math equation-number="19.14.5" mode="display" xml:id="C19.S14.E5">{\sin^{2}}\phi=\frac{\gamma-\alpha}{U^{2}+\gamma},</Math> where <Math equation-number="19.14.6" mode="display" xml:id="C19.S14.E6">(x^{2}-y^{2})U=x\sqrt{(a_{1}+b_{1}y^{2})(a_{2}+b_{2}y^{2})}+y\sqrt{(a_{1}+b_{1 }x^{2})(a_{2}+b_{2}x^{2})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C19.S14.SS1.p2.s1">
+There are four important special cases of (19.14.4)–(19.14.6), as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C19.S14.SS1.p2.s2">
+If <Math mode="inline" xml:id="C19.S14.SS1.p2.m1">y=0</Math> , then
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S14.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S14.SS1.p3.s1">
+ <Math equation-number="19.14.7" mode="display" xml:id="C19.S14.E7">{\sin^{2}}\phi=\frac{(\gamma-\alpha)x^{2}}{a_{1}a_{2}+\gamma x^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C19.S14.SS1.p3.s2">
+If <Math mode="inline" xml:id="C19.S14.SS1.p3.m1">x=\infty</Math> , then <Math equation-number="19.14.8" mode="display" xml:id="C19.S14.E8">{\sin^{2}}\phi=\frac{\gamma-\alpha}{b_{1}b_{2}y^{2}+\gamma}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C19.S14.SS1.p3.s3">
+If <Math mode="inline" xml:id="C19.S14.SS1.p3.m2">a_{1}+b_{1}y^{2}=0</Math> , then <Math equation-number="19.14.9" mode="display" xml:id="C19.S14.E9">{\sin^{2}}\phi=\frac{(\gamma-\alpha)(x^{2}-y^{2})}{\gamma(x^{2}-y^{2})-a_{1}(a _{2}+b_{2}x^{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C19.S14.SS1.p3.s4">
+If <Math mode="inline" xml:id="C19.S14.SS1.p3.m3">a_{1}+b_{1}x^{2}=0</Math> , then <Math equation-number="19.14.10" mode="display" xml:id="C19.S14.E10">{\sin^{2}}\phi=\frac{(\gamma-\alpha)(y^{2}-x^{2})}{\gamma(y^{2}-x^{2})-a_{1}(a _{2}+b_{2}y^{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C19.S14.SS1.p3.s5">
+(These four cases include 12 integrals in Abramowitz and Stegun (1964, p. 596).)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S14.SS2">
+<title>General Case</title>         
+<para xml:id="C19.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C19.S14.SS2.p1.s1">
+Legendre (1825–1832) showed that every elliptic integral can be expressed in terms of the three integrals in (19.1.2) supplemented by algebraic, logarithmic, and trigonometric functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C19.S14.SS2.p1.s2">
+The classical method of reducing (19.2.3) to Legendre’s integrals is described in many places, especially Erdélyi et al. (1953b, §13.5),Abramowitz and Stegun (1964, Chapter 17), and Labahn and Mutrie (1997, §3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C19.S14.SS2.p1.s3">
+The last reference gives a clear summary of the various steps involving linear fractional transformations, partial-fraction decomposition, and recurrence relations.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C19.S14.SS2.p1.s4">
+It then improves the classical method by first applying Hermite reduction to (19.2.3) to arrive at integrands without multiple poles and uses implicit full partial-fraction decomposition and implicit root finding to minimize computing with algebraic extensions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C19.S14.SS2.p1.s5">
+The choice among 21 transformations for final reduction to Legendre’s normal form depends on inequalities involving the limits of integration and the zeros of the cubic or quartic polynomial.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="23" xml:id="C19.S14.SS2.p1.s6">
+A similar remark applies to the transformations given inErdélyi et al. (1953b, §13.5) and to the choice among explicit reductions in the extensive table of Byrd and Friedman (1971), in which one limit of integration is assumed to be a branch point of the integrand at which the integral converges.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="24" xml:id="C19.S14.SS2.p1.s7">
+If no such branch point is accessible from the interval of integration (for example, if the integrand is <Math mode="inline" xml:id="C19.S14.SS2.p1.m1">(t(3-t)(4-t))^{-3/2}</Math> and the interval is [1,2]), then no method using this assumption succeeds.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

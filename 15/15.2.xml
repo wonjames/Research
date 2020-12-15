@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S2">
+<title>Definitions and Analytical Properties</title>         
+<subsection xml:id="C15.S2.SS1">
+<title>Gauss Series</title>             
+<para xml:id="C15.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S2.SS1.p1.s1">
+The hypergeometric function <Math mode="inline" xml:id="C15.S2.SS1.p1.m1">F\left(a,b;c;z\right)</Math> is defined by theGauss series <Math equation-number="15.2.1" mode="display" xml:id="C15.S2.E1">F\left(a,b;c;z\right)=\sum_{s=0}^{\infty}\frac{{\left(a\right)_{s}}{\left(b \right)_{s}}}{{\left(c\right)_{s}}s!}z^{s}=1+\frac{ab}{c}z+\frac{a(a+1)b(b+1)} {c(c+1)2!}z^{2}+\cdots=\frac{\Gamma\left(c\right)}{\Gamma\left(a\right)\Gamma \left(b\right)}\sum_{s=0}^{\infty}\frac{\Gamma\left(a+s\right)\Gamma\left(b+s \right)}{\Gamma\left(c+s\right)s!}z^{s}</Math> , on the disk <Math mode="inline" xml:id="C15.S2.SS1.p1.m2">|z|&lt;1</Math> , and by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S2.SS1.p1.s2">
+In general, <Math mode="inline" xml:id="C15.S2.SS1.p1.m3">F\left(a,b;c;z\right)</Math> does not exist when <Math mode="inline" xml:id="C15.S2.SS1.p1.m4">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C15.S2.SS1.p1.s3">
+The branch obtained by introducing a cut from <Math mode="inline" xml:id="C15.S2.SS1.p1.m5">1</Math> to <Math mode="inline" xml:id="C15.S2.SS1.p1.m6">+\infty</Math> on the real <Math mode="inline" xml:id="C15.S2.SS1.p1.m7">z</Math> -axis, that is, the branch in the sector <Math mode="inline" xml:id="C15.S2.SS1.p1.m8">|\operatorname{ph}\left(1-z\right)|\leq\pi</Math> , is the principal branch (or principal value) of <Math mode="inline" xml:id="C15.S2.SS1.p1.m9">F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C15.S2.SS1.p2.s1">
+For all values of <Math mode="inline" xml:id="C15.S2.SS1.p2.m1">c</Math> <Math equation-number="15.2.2" mode="display" xml:id="C15.S2.E2">\mathbf{F}\left(a,b;c;z\right)=\sum_{s=0}^{\infty}\frac{{\left(a\right)_{s}}{ \left(b\right)_{s}}}{\Gamma\left(c+s\right)s!}z^{s}, if |z|&lt;1,</Math> again with analytic continuation for other values of <Math mode="inline" xml:id="C15.S2.SS1.p2.m2">z</Math> , and with the principal branch defined in a similar way.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C15.S2.SS1.p3.s1">
+Except where indicated otherwise principal branches of <Math mode="inline" xml:id="C15.S2.SS1.p3.m1">F\left(a,b;c;z\right)</Math> and <Math mode="inline" xml:id="C15.S2.SS1.p3.m2">\mathbf{F}\left(a,b;c;z\right)</Math> are assumed throughout the DLMF.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C15.S2.SS1.p4.s1">
+The difference between the principal branches on the two sides of the branch cut (§4.2(i)) is given by <Math equation-number="15.2.3" mode="display" xml:id="C15.S2.E3">\mathbf{F}\left({a,b\atop c};x+\mathrm{i}0\right)-\mathbf{F}\left({a,b\atop c} ;x-\mathrm{i}0\right)=\frac{2\pi\mathrm{i}}{\Gamma\left(a\right)\Gamma\left(b \right)}(x-1)^{c-a-b}\mathbf{F}\left({c-a,c-b\atop c-a-b+1};1-x\right), if x&gt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C15.S2.SS1.p5.s1">
+On the circle of convergence, <Math mode="inline" xml:id="C15.S2.SS1.p5.m1">|z|=1</Math> , the Gauss series: Converges absolutely when <Math mode="inline" xml:id="C15.S2.I1.ix1.p1.m1">\Re(c-a-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C15.S2.SS1.p5.s2">
+Converges conditionally when <Math mode="inline" xml:id="C15.S2.I1.ix2.p1.m1">-1&lt;\Re(c-a-b)\leq 0</Math> and <Math mode="inline" xml:id="C15.S2.I1.ix2.p1.m2">z=1</Math> is excluded. Diverges when <Math mode="inline" xml:id="C15.S2.I1.ix3.p1.m1">\Re(c-a-b)\leq-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C15.S2.SS1.p5.s3">
+For the case <Math mode="inline" xml:id="C15.S2.SS1.p5.m2">z=1</Math> see also §15.4(ii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S2.SS2">
+<title>Analytic Properties</title>        
+    
+<para xml:id="C15.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S2.SS2.p1.s1">
+The principal branch of <Math mode="inline" xml:id="C15.S2.SS2.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> is an entire function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m2">a</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m3">b</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m4">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C15.S2.SS2.p1.s2">
+The same is true of other branches, provided that <Math mode="inline" xml:id="C15.S2.SS2.p1.m5">z=0</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m6">1</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m7">\infty</Math> are excluded. As a multivalued function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m8">z</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m9">\mathbf{F}\left(a,b;c;z\right)</Math> is analytic everywhere except for possible branch points at <Math mode="inline" xml:id="C15.S2.SS2.p1.m10">z=0</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m11">1</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m12">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C15.S2.SS2.p1.s3">
+The same properties hold for <Math mode="inline" xml:id="C15.S2.SS2.p1.m13">F\left(a,b;c;z\right)</Math> , except that as a function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m14">c</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m15">F\left(a,b;c;z\right)</Math> in general has poles at <Math mode="inline" xml:id="C15.S2.SS2.p1.m16">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S2.SS2.p2.s1">
+Because of the analytic properties with respect to <Math mode="inline" xml:id="C15.S2.SS2.p2.m1">a</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p2.m2">b</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p2.m3">c</Math> , it is usually legitimate to take limits in formulas involving functions that are undefined for certain values of the parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C15.S2.SS2.p2.s2">
+In particular <Math mode="display" xml:id="C15.S2.Ex1">\lim_{c\to-n}\frac{F\left(a,b;c;z\right)}{\Gamma\left(c\right)}=\mathbf{F} \left(a,b;-n;z\right)=\frac{{\left(a\right)_{n+1}}{\left(b\right)_{n+1}}}{(n+1 )!}z^{n+1}F\left(a+n+1,b+n+1;n+2;z\right), if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S2.SS2.p3.s1">
+For example, when <Math mode="inline" xml:id="C15.S2.SS2.p3.m1">a=-m</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m2">m=0,1,2,\dots</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p3.m3">c\neq 0,-1,-2,\dots</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m4">F\left(a,b;c;z\right)</Math> is a polynomial: <Math equation-number="15.2.4" mode="display" xml:id="C15.S2.E4">F\left(-m,b;c;z\right)=\sum_{n=0}^{m}\frac{{\left(-m\right)_{n}}{\left(b\right )_{n}}}{{\left(c\right)_{n}}{n!}}z^{n}=\sum_{n=0}^{m}(-1)^{n}\genfrac{(}{)}{0. 0pt}{}{m}{n}\frac{{\left(b\right)_{n}}}{{\left(c\right)_{n}}}z^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C15.S2.SS2.p3.s2">
+This formula is also valid when <Math mode="inline" xml:id="C15.S2.SS2.p3.m5">c=-m-\ell</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m6">\ell=0,1,2,\dots</Math> , provided that weuse the interpretation <Math equation-number="15.2.5" mode="display" xml:id="C15.S2.E5">F\left({-m,b\atop-m-\ell};z\right)=\lim_{c\to-m-\ell}\left(\lim_{a\to-m}F\left ({a,b\atop c};z\right)\right),</Math> and not <Math equation-number="15.2.6" mode="display" xml:id="C15.S2.E6">F\left({-m,b\atop-m-\ell};z\right)=\lim_{a\to-m}F\left({a,b\atop a-\ell};z \right),</Math> which sometimes needs to be used in §15.4.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C15.S2.SS2.p3.s3">
+(Both interpretations give solutions of the hypergeometric differential equation (15.10.1), as does <Math mode="inline" xml:id="C15.S2.SS2.p3.m7">\mathbf{F}\left(a,b;c;z\right)</Math> , which is analytic at <Math mode="inline" xml:id="C15.S2.SS2.p3.m8">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C15.S2.SS2.p3.s4">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C15.S2.SS2.p4.s1">
+For comparison of <Math mode="inline" xml:id="C15.S2.SS2.p4.m1">F\left(a,b;c;z\right)</Math> and <Math mode="inline" xml:id="C15.S2.SS2.p4.m2">\mathbf{F}\left(a,b;c;z\right)</Math> , with the former using the limit interpretation (15.2.5), see Figures 15.3.6 and 15.3.7.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C15.S2.SS2.p5.s1">
+Let <Math mode="inline" xml:id="C15.S2.SS2.p5.m1">m</Math> be a nonnegative integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C15.S2.SS2.p5.s2">
+Formula (15.4.6) reads <Math mode="inline" xml:id="C15.S2.SS2.p5.m2">F\left(a,b;a;z\right)=(1-z)^{-b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C15.S2.SS2.p5.s3">
+The right-hand side can be seen as an analytical continuation for the left-hand side when <Math mode="inline" xml:id="C15.S2.SS2.p5.m3">a</Math> approaches <Math mode="inline" xml:id="C15.S2.SS2.p5.m4">-m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C15.S2.SS2.p5.s4">
+In that case we are using interpretation (15.2.6) since with interpretation (15.2.5) we would obtain that <Math mode="inline" xml:id="C15.S2.SS2.p5.m5">F\left(-m,b;-m;z\right)</Math> is equal to the first <Math mode="inline" xml:id="C15.S2.SS2.p5.m6">m+1</Math> terms of the Maclaurin series for <Math mode="inline" xml:id="C15.S2.SS2.p5.m7">(1-z)^{-b}</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

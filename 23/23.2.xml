@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S2">
+<title>Definitions and Periodic Properties</title>         
+<subsection xml:id="C23.S2.SS1">
+<title>Lattices</title>             
+<para xml:id="C23.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S2.SS1.p1.s1">
+If <Math mode="inline" xml:id="C23.S2.SS1.p1.m1">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S2.SS1.p1.m2">\omega_{3}</Math> are nonzero real or complex numbers such that <Math mode="inline" xml:id="C23.S2.SS1.p1.m3">\Im(\omega_{3}/\omega_{1})&gt;0</Math> , then the set of points <Math mode="inline" xml:id="C23.S2.SS1.p1.m4">2m\omega_{1}+2n\omega_{3}</Math> , with <Math mode="inline" xml:id="C23.S2.SS1.p1.m5">m,n\in\mathbb{Z}</Math> , constitutes a lattice <Math mode="inline" xml:id="C23.S2.SS1.p1.m6">\mathbb{L}</Math> with <Math mode="inline" xml:id="C23.S2.SS1.p1.m7">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S2.SS1.p1.m8">2\omega_{3}</Math> lattice generators.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C23.S2.SS1.p2.s1">
+The generators of a given lattice <Math mode="inline" xml:id="C23.S2.SS1.p2.m1">\mathbb{L}</Math> are not unique.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C23.S2.SS1.p2.s2">
+For example, if <Math equation-number="23.2.1" mode="display" xml:id="C23.S2.E1">\omega_{1}+\omega_{2}+\omega_{3}=0,</Math> then <Math mode="inline" xml:id="C23.S2.SS1.p2.m2">2\omega_{2}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m3">2\omega_{3}</Math> are generators, as are <Math mode="inline" xml:id="C23.S2.SS1.p2.m4">2\omega_{2}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m5">2\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C23.S2.SS1.p2.s3">
+In general, if <Math equation-number="23.2.2" mode="display" xml:id="C23.S2.E2">\chi_{1}=a\omega_{1}+b\omega_{3},\chi_{3}=c\omega_{1}+d\omega_{3},</Math> where <Math mode="inline" xml:id="C23.S2.SS1.p2.m6">a,b,c,d</Math> are integers, then <Math mode="inline" xml:id="C23.S2.SS1.p2.m7">2\chi_{1}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m8">2\chi_{3}</Math> are generators of <Math mode="inline" xml:id="C23.S2.SS1.p2.m9">\mathbb{L}</Math> iff <Math equation-number="23.2.3" mode="display" xml:id="C23.S2.E3">ad-bc=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S2.SS2">
+<title>Weierstrass Elliptic Functions</title>              
+<para xml:id="C23.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C23.S2.SS2.p1.s1">
+ <Math equation-number="23.2.4" mode="display" xml:id="C23.S2.E4">\wp\left(z\right)=\frac{1}{z^{2}}+\sum_{w\in\mathbb{L}\setminus\{0\}}\left( \frac{1}{(z-w)^{2}}-\frac{1}{w^{2}}\right),</Math> <Math equation-number="23.2.5" mode="display" xml:id="C23.S2.E5">\zeta\left(z\right)=\frac{1}{z}+\sum_{w\in\mathbb{L}\setminus\{0\}}\left(\frac {1}{z-w}+\frac{1}{w}+\frac{z}{w^{2}}\right),</Math> <Math equation-number="23.2.6" mode="display" xml:id="C23.S2.E6">\sigma\left(z\right)=z\prod_{w\in\mathbb{L}\setminus\{0\}}\left(\left(1-\frac{ z}{w}\right)\exp\left(\frac{z}{w}+\frac{z^{2}}{2w^{2}}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C23.S2.SS2.p1.s2">
+The double series and double product are absolutely and uniformly convergent in compact sets in <Math mode="inline" xml:id="C23.S2.SS2.p1.m1">\mathbb{C}</Math> that do not include lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C23.S2.SS2.p1.s3">
+Hence the order of the terms or factors is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C23.S2.SS2.p2.s1">
+When <Math mode="inline" xml:id="C23.S2.SS2.p2.m1">z\notin\mathbb{L}</Math> the functions are related by <Math equation-number="23.2.7" mode="display" xml:id="C23.S2.E7">\wp\left(z\right)=-\zeta'\left(z\right),</Math> <Math equation-number="23.2.8" mode="display" xml:id="C23.S2.E8">\zeta\left(z\right)=\ifrac{\sigma'\left(z\right)}{\sigma\left(z\right)}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C23.S2.SS2.p3.s1">
+ <Math mode="inline" xml:id="C23.S2.SS2.p3.m1">\wp\left(z\right)</Math> and <Math mode="inline" xml:id="C23.S2.SS2.p3.m2">\zeta\left(z\right)</Math> are meromorphic functions with poles at the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C23.S2.SS2.p3.s2">
+<Math mode="inline" xml:id="C23.S2.SS2.p3.m3">\wp\left(z\right)</Math> is even and <Math mode="inline" xml:id="C23.S2.SS2.p3.m4">\zeta\left(z\right)</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C23.S2.SS2.p3.s3">
+The poles of <Math mode="inline" xml:id="C23.S2.SS2.p3.m5">\wp\left(z\right)</Math> are double with residue <Math mode="inline" xml:id="C23.S2.SS2.p3.m6">0</Math> ; the poles of <Math mode="inline" xml:id="C23.S2.SS2.p3.m7">\zeta\left(z\right)</Math> are simple with residue <Math mode="inline" xml:id="C23.S2.SS2.p3.m8">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C23.S2.SS2.p3.s4">
+The function <Math mode="inline" xml:id="C23.S2.SS2.p3.m9">\sigma\left(z\right)</Math> is entire and odd, with simple zeros at the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C23.S2.SS2.p3.s5">
+When it is important to display the lattice with the functionsthey are denoted by <Math mode="inline" xml:id="C23.S2.SS2.p3.m10">\wp\left(z|\mathbb{L}\right)</Math> , <Math mode="inline" xml:id="C23.S2.SS2.p3.m11">\zeta\left(z|\mathbb{L}\right)</Math> , and <Math mode="inline" xml:id="C23.S2.SS2.p3.m12">\sigma\left(z|\mathbb{L}\right)</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S2.SS3">
+<title>Periodicity</title>          
+<para xml:id="C23.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C23.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C23.S2.SS3.p1.m1">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p1.m2">2\omega_{3}</Math> is any pair of generators of <Math mode="inline" xml:id="C23.S2.SS3.p1.m3">\mathbb{L}</Math> , and <Math mode="inline" xml:id="C23.S2.SS3.p1.m4">\omega_{2}</Math> is defined by (23.2.1), then <Math equation-number="23.2.9" mode="display" xml:id="C23.S2.E9">\wp\left(z+2\omega_{j}\right)=\wp\left(z\right), if j=1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C23.S2.SS3.p1.s2">
+Hence <Math mode="inline" xml:id="C23.S2.SS3.p1.m5">\wp\left(z\right)</Math> is an elliptic function, that is, <Math mode="inline" xml:id="C23.S2.SS3.p1.m6">\wp\left(z\right)</Math> is meromorphic and periodic on a lattice; equivalently, <Math mode="inline" xml:id="C23.S2.SS3.p1.m7">\wp\left(z\right)</Math> is meromorphic and has two periods whose ratio is not real.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C23.S2.SS3.p1.s3">
+We also have <Math equation-number="23.2.10" mode="display" xml:id="C23.S2.E10">\wp'\left(\omega_{j}\right)=0, if j=1,2,3</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C23.S2.SS3.p2.s1">
+The function <Math mode="inline" xml:id="C23.S2.SS3.p2.m1">\zeta\left(z\right)</Math> is quasi-periodic: for <Math mode="inline" xml:id="C23.S2.SS3.p2.m2">j=1,2,3</Math> , <Math equation-number="23.2.11" mode="display" xml:id="C23.S2.E11">\zeta\left(z+2\omega_{j}\right)=\zeta\left(z\right)+2\eta_{j},</Math> where <Math equation-number="23.2.12" mode="display" xml:id="C23.S2.E12">\eta_{j}=\zeta\left(\omega_{j}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C23.S2.SS3.p2.s2">
+Also, <Math equation-number="23.2.13" mode="display" xml:id="C23.S2.E13">\eta_{1}+\eta_{2}+\eta_{3}=0,</Math> <Math equation-number="23.2.14" mode="display" xml:id="C23.S2.E14">\eta_{3}\omega_{2}-\eta_{2}\omega_{3}=\eta_{2}\omega_{1}-\eta_{1}\omega_{2}= \eta_{1}\omega_{3}-\eta_{3}\omega_{1}=\tfrac{1}{2}\pi i</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C23.S2.SS3.p3.s1">
+For <Math mode="inline" xml:id="C23.S2.SS3.p3.m1">j=1,2,3</Math> , the function <Math mode="inline" xml:id="C23.S2.SS3.p3.m2">\sigma\left(z\right)</Math> satisfies <Math equation-number="23.2.15" mode="display" xml:id="C23.S2.E15">\sigma\left(z+2\omega_{j}\right)=-e^{2\eta_{j}(z+\omega_{j})}\sigma\left(z \right),</Math> <Math equation-number="23.2.16" mode="display" xml:id="C23.S2.E16">\sigma'\left(2\omega_{j}\right)=-e^{2\eta_{j}\omega_{j}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C23.S2.SS3.p3.s2">
+More generally, if <Math mode="inline" xml:id="C23.S2.SS3.p3.m3">j=1,2,3</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p3.m4">k=1,2,3</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p3.m5">j\neq k</Math> , and <Math mode="inline" xml:id="C23.S2.SS3.p3.m6">m,n\in\mathbb{Z}</Math> , then <Math equation-number="23.2.17" mode="display" xml:id="C23.S2.E17">\ifrac{\sigma\left(z+2m\omega_{j}+2n\omega_{k}\right)}{\sigma\left(z\right)}=( -1)^{m+n+mn}\exp\left((2m\eta_{j}+2n\eta_{k})(m\omega_{j}+n\omega_{k}+z)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C23.S2.SS3.p4.s1">
+For further quasi-periodic properties of the <Math mode="inline" xml:id="C23.S2.SS3.p4.m1">\sigma</Math> -function seeLawden (1989, §6.2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

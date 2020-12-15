@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S20">
+<title>Methods of Computation</title>        
+  
+<subsection xml:id="C22.S20.SS1">
+<title>Via Theta Functions</title>        
+ 
+<para xml:id="C22.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S20.SS1.p1.s1">
+A powerful way of computing the twelve Jacobian elliptic functions for real or complex values of both the argument <Math mode="inline" xml:id="C22.S20.SS1.p1.m1">z</Math> and the modulus <Math mode="inline" xml:id="C22.S20.SS1.p1.m2">k</Math> is to use the definitions in terms of theta functions given in §22.2, obtaining the theta functions via methods described in §20.14.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS2">
+<title>Arithmetic-Geometric Mean</title>        
+ 
+ 
+<para xml:id="C22.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C22.S20.SS2.p1.s1">
+Given real or complex numbers <Math mode="inline" xml:id="C22.S20.SS2.p1.m1">a_{0},b_{0}</Math> , with <Math mode="inline" xml:id="C22.S20.SS2.p1.m2">b_{0}/a_{0}</Math> not real and negative, define <Math equation-number="22.20.1" mode="display" xml:id="C22.S20.E1">a_{n}=\tfrac{1}{2}\left(a_{n-1}+b_{n-1}\right),b_{n}=\left(a_{n-1}b_{n-1}\right)^{1/2},c_{n}=\tfrac{1}{2}\left(a_{n-1}-b_{n-1}\right),</Math> for <Math mode="inline" xml:id="C22.S20.SS2.p1.m3">n\geq 1</Math> , where the square root is chosenso that <Math mode="inline" xml:id="C22.S20.SS2.p1.m4">\operatorname{ph}b_{n}=\tfrac{1}{2}(\operatorname{ph}a_{n-1}+\operatorname{ph} b_{n-1})</Math> , where <Math mode="inline" xml:id="C22.S20.SS2.p1.m5">\operatorname{ph}a_{n-1}</Math> and <Math mode="inline" xml:id="C22.S20.SS2.p1.m6">\operatorname{ph}b_{n-1}</Math> are chosen so that their difference is numerically less than <Math mode="inline" xml:id="C22.S20.SS2.p1.m7">\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C22.S20.SS2.p1.s2">
+Then as <Math mode="inline" xml:id="C22.S20.SS2.p1.m8">n\to\infty</Math> sequences <Math mode="inline" xml:id="C22.S20.SS2.p1.m9">\{a_{n}\}</Math> , <Math mode="inline" xml:id="C22.S20.SS2.p1.m10">\{b_{n}\}</Math> converge to a common limit <Math mode="inline" xml:id="C22.S20.SS2.p1.m11">M=M(a_{0},b_{0})</Math> , the arithmetic-geometric mean of <Math mode="inline" xml:id="C22.S20.SS2.p1.m12">a_{0},b_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C22.S20.SS2.p1.s3">
+And since <Math equation-number="22.20.2" mode="display" xml:id="C22.S20.E2">\max\left(\left|a_{n}-M\right|,\left|b_{n}-M\right|,\left|c_{n}\right|\right) \leq\text{(const.)}\times 2^{-2^{n}},</Math> convergence is very rapid.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C22.S20.SS2.p2.s1">
+For <Math mode="inline" xml:id="C22.S20.SS2.p2.m1">x</Math> real and <Math mode="inline" xml:id="C22.S20.SS2.p2.m2">k\in(0,1)</Math> , use (22.20.1) with <Math mode="inline" xml:id="C22.S20.SS2.p2.m3">a_{0}=1</Math> , <Math mode="inline" xml:id="C22.S20.SS2.p2.m4">b_{0}=k^{\prime}\in(0,1)</Math> , <Math mode="inline" xml:id="C22.S20.SS2.p2.m5">c_{0}=k</Math> , and continue until <Math mode="inline" xml:id="C22.S20.SS2.p2.m6">c_{N}</Math> is zero to the required accuracy.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C22.S20.SS2.p2.s2">
+Next, compute <Math mode="inline" xml:id="C22.S20.SS2.p2.m7">\phi_{N},\phi_{N-1},\dots,\phi_{0}</Math> , where <Math equation-number="22.20.3" mode="display" xml:id="C22.S20.E3">\phi_{N}=2^{N}a_{N}x,</Math> <Math equation-number="22.20.4" mode="display" xml:id="C22.S20.E4">\phi_{n-1}=\frac{1}{2}\left(\phi_{n}+\operatorname{arcsin}\left(\frac{c_{n}}{a _{n}}\sin\phi_{n}\right)\right),</Math> and the inverse sine has its principal value (§4.23(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C22.S20.SS2.p2.s3">
+Then <Math equation-number="22.20.5" mode="display" xml:id="C22.S20.E5">\operatorname{sn}\left(x,k\right)=\sin\phi_{0},\operatorname{cn}\left(x,k\right)=\cos\phi_{0},\operatorname{dn}\left(x,k\right)=\frac{\cos\phi_{0}}{\cos\left(\phi_{1}-\phi_ {0}\right)},</Math> and the subsidiary functions can be found using (22.2.10).This formula for <Math mode="inline" xml:id="C22.S20.SS2.p2.m8">\operatorname{dn}</Math> becomes unstable near <Math mode="inline" xml:id="C22.S20.SS2.p2.m9">x=K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C22.S20.SS2.p2.s4">
+If only the value of <Math mode="inline" xml:id="C22.S20.SS2.p2.m10">\operatorname{dn}\left(x,k\right)</Math> at <Math mode="inline" xml:id="C22.S20.SS2.p2.m11">x=K</Math> is required then the exact value is in the table 22.5.1.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C22.S20.SS2.p2.s5">
+If both <Math mode="inline" xml:id="C22.S20.SS2.p2.m12">k</Math> and <Math mode="inline" xml:id="C22.S20.SS2.p2.m13">x</Math> are real then <Math mode="inline" xml:id="C22.S20.SS2.p2.m14">\operatorname{dn}</Math> is strictly positive and <Math mode="inline" xml:id="C22.S20.SS2.p2.m15">\operatorname{dn}\left(x,k\right)=\sqrt{1-k^{2}{\operatorname{sn}^{2}}\left(x, k\right)}</Math> which follows from (22.6.1).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C22.S20.SS2.p2.s6">
+If either <Math mode="inline" xml:id="C22.S20.SS2.p2.m16">k</Math> or <Math mode="inline" xml:id="C22.S20.SS2.p2.m17">x</Math> is complex then (22.2.6) gives the definition of <Math mode="inline" xml:id="C22.S20.SS2.p2.m18">\operatorname{dn}\left(x,k\right)</Math> as a quotient of theta functions.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C22.S20.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C22.S20.SS2.p3.s1">
+See also Wachspress (2000).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C22.S20.Px1">
+<title>Example</title>   
+<para xml:id="C22.S20.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C22.S20.Px1.p1.s1">
+To compute <Math mode="inline" xml:id="C22.S20.Px1.p1.m1">\operatorname{sn}</Math> , <Math mode="inline" xml:id="C22.S20.Px1.p1.m2">\operatorname{cn}</Math> , <Math mode="inline" xml:id="C22.S20.Px1.p1.m3">\operatorname{dn}</Math> to 10D when <Math mode="inline" xml:id="C22.S20.Px1.p1.m4">x=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C22.S20.Px1.p1.s2">
+8, <Math mode="inline" xml:id="C22.S20.Px1.p1.m5">k=0.65</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C22.S20.Px1.p2.s1">
+Four iterations of (22.20.1)lead to <Math mode="inline" xml:id="C22.S20.Px1.p2.m1">c_{4}=\Sci{6.5}{-12</Math> }. From(22.20.3) and (22.20.4) we obtain <Math mode="inline" xml:id="C22.S20.Px1.p2.m2">\phi_{1}=1.40213\;9182</Math> 7 and <Math mode="inline" xml:id="C22.S20.Px1.p2.m3">\phi_{0}=0.76850\;9217</Math> 0. Then from (22.20.5),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C22.S20.Px1.p2.s2">
+<Math mode="inline" xml:id="C22.S20.Px1.p2.m4">\operatorname{sn}\left(0.8,0.65\right)=0.69506\;4216</Math> 5, <Math mode="inline" xml:id="C22.S20.Px1.p2.m5">\operatorname{cn}\left(0.8,0.65\right)=0.71894\;7658</Math> 0, <Math mode="inline" xml:id="C22.S20.Px1.p2.m6">\operatorname{dn}\left(0.8,0.65\right)=0.89212\;3434</Math> 9.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS3">
+<title>Landen Transformations</title>        
+    
+<para xml:id="C22.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C22.S20.SS3.p1.s1">
+By application of the transformations given in §§22.7(i)and22.7(ii),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C22.S20.SS3.p1.s2">
+<Math mode="inline" xml:id="C22.S20.SS3.p1.m1">k</Math> or <Math mode="inline" xml:id="C22.S20.SS3.p1.m2">k^{\prime}</Math> can always be made sufficently small to enable the approximations given in §22.10(ii) to be applied. The rate of convergence is similar to that for the arithmetic-geometric mean.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C22.S20.Px2">
+<title>Example</title>   
+<para xml:id="C22.S20.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C22.S20.Px2.p1.s1">
+To compute <Math mode="inline" xml:id="C22.S20.Px2.p1.m1">\operatorname{dn}\left(x,k\right)</Math> to 6D for <Math mode="inline" xml:id="C22.S20.Px2.p1.m2">x=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C22.S20.Px2.p1.s2">
+2, <Math mode="inline" xml:id="C22.S20.Px2.p1.m3">k^{2}=0.1</Math> 9, <Math mode="inline" xml:id="C22.S20.Px2.p1.m4">k^{\prime}=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C22.S20.Px2.p1.s3">
+9.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C22.S20.Px2.p2.s1">
+From (22.7.1),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C22.S20.Px2.p2.s2">
+<Math mode="inline" xml:id="C22.S20.Px2.p2.m1">k_{1}=\tfrac{1}{19}</Math> and <Math mode="inline" xml:id="C22.S20.Px2.p2.m2">x/(1+k_{1})=0.1</Math> 9. From the first two terms in (22.10.6)we find <Math mode="inline" xml:id="C22.S20.Px2.p2.m3">\operatorname{dn}\left(0.19,\tfrac{1}{19}\right)=0.99995</Math> 1. Then by using(22.7.4) we have <Math mode="inline" xml:id="C22.S20.Px2.p2.m4">\operatorname{dn}\left(0.2,\sqrt{0.19}\right)=0.99625</Math> 3.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C22.S20.Px2.p3.s1">
+If needed, the corresponding values of <Math mode="inline" xml:id="C22.S20.Px2.p3.m1">\operatorname{sn}</Math> and <Math mode="inline" xml:id="C22.S20.Px2.p3.m2">\operatorname{cn}</Math> can be found subsequently by applying (22.10.4) and (22.7.2), followed by (22.10.5) and (22.7.3).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS4">
+<title>Lattice Calculations</title>        
+  
+<para xml:id="C22.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C22.S20.SS4.p1.s1">
+If either <Math mode="inline" xml:id="C22.S20.SS4.p1.m1">\tau</Math> or <Math mode="inline" xml:id="C22.S20.SS4.p1.m2">q=e^{i\pi\tau}</Math> is given, then we use <Math mode="inline" xml:id="C22.S20.SS4.p1.m3">k={\theta_{2}^{2}}\left(0,q\right)/{\theta_{3}^{2}}\left(0,q\right)</Math> , <Math mode="inline" xml:id="C22.S20.SS4.p1.m4">k^{\prime}={\theta_{4}^{2}}\left(0,q\right)/{\theta_{3}^{2}}\left(0,q\right)</Math> , <Math mode="inline" xml:id="C22.S20.SS4.p1.m5">K=\frac{1}{2}\pi{\theta_{3}^{2}}\left(0,q\right)</Math> , and <Math mode="inline" xml:id="C22.S20.SS4.p1.m6">K^{\prime}=-i\tau K</Math> , obtaining the values of the theta functions as in §20.14.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C22.S20.SS4.p2.s1">
+If <Math mode="inline" xml:id="C22.S20.SS4.p2.m1">k,k^{\prime}</Math> are given with <Math mode="inline" xml:id="C22.S20.SS4.p2.m2">k^{2}+{k^{\prime}}^{2}=1</Math> and <Math mode="inline" xml:id="C22.S20.SS4.p2.m3">\Im k^{\prime}/\Im k&lt;0</Math> , then <Math mode="inline" xml:id="C22.S20.SS4.p2.m4">K,K^{\prime}</Math> can be found from <Math equation-number="22.20.6" mode="display" xml:id="C22.S20.E6">K=\frac{\pi}{2M(1,k^{\prime})},K^{\prime}=\frac{\pi}{2M(1,k)},</Math> using the arithmetic-geometric mean.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C22.S20.Px3">
+<title>Example 1</title>   
+<para xml:id="C22.S20.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C22.S20.Px3.p1.s1">
+If <Math mode="inline" xml:id="C22.S20.Px3.p1.m1">k=k^{\prime}=1/\sqrt{2}</Math> , then three iterations of (22.20.1)give
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C22.S20.Px3.p1.s2">
+<Math mode="inline" xml:id="C22.S20.Px3.p1.m2">M=0.84721\;3084</Math> 8, and from (22.20.6)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C22.S20.Px3.p1.s3">
+<Math mode="inline" xml:id="C22.S20.Px3.p1.m3">K=\pi/(2M)=1.85407\;4677</Math> 3 — in agreement with the value of <Math mode="inline" xml:id="C22.S20.Px3.p1.m4">\left(\Gamma\left(\tfrac{1}{4}\right)\right)^{2}/\left(4\sqrt{\pi}\right)</Math> ; compare (23.17.3) and (23.22.2).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S20.Px4">
+<title>Example 2</title>   
+<para xml:id="C22.S20.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C22.S20.Px4.p1.s1">
+If <Math mode="inline" xml:id="C22.S20.Px4.p1.m1">k^{\prime}=1-i</Math> , then four iterations of (22.20.1)give
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C22.S20.Px4.p1.s2">
+<Math mode="inline" xml:id="C22.S20.Px4.p1.m2">K=1.23969\;74481+i0.56499\;3098</Math> 8.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS5">
+<title>Inverse Functions</title>        
+  
+<para xml:id="C22.S20.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C22.S20.SS5.p1.s1">
+See Wachspress (2000).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS6">
+<title>Related Functions</title>        
+  
+<para xml:id="C22.S20.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C22.S20.SS6.p1.s1">
+ <Math mode="inline" xml:id="C22.S20.SS6.p1.m1">\operatorname{am}\left(x,k\right)</Math> can be computed from its definition (22.16.1) or from its Fourier series (22.16.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C22.S20.SS6.p1.s2">
+Alternatively,Sala (1989) shows how to apply the arithmetic-geometric mean to compute <Math mode="inline" xml:id="C22.S20.SS6.p1.m2">\operatorname{am}\left(x,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S20.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C22.S20.SS6.p2.s1">
+Jacobi’s epsilon function can be computed from its representation (22.16.30) in terms of theta functions and complete elliptic integrals; compare §20.14.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C22.S20.SS6.p2.s2">
+Jacobi’s zeta function can then be found by use of (22.16.32).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S20.SS7">
+<title>Further References</title>        
+ 
+<para xml:id="C22.S20.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C22.S20.SS7.p1.s1">
+For additional information on methods of computation for the Jacobi and related functions, see the introductory sections in the following books:Lawden (1989), Curtis (1964b),Milne-Thomson (1950), and Spenceley and Spenceley (1947).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C17.S3">
+<title><Math mode="inline" xml:id="C17.S3.m1">q</Math>-Elementary and <Math mode="inline" xml:id="C17.S3.m2">q</Math>-Special Functions</title>         
+<subsection xml:id="C17.S3.SS1">
+<title>Elementary Functions</title>          
+<paragraph xml:id="C17.S3.Px1">
+<title><Math mode="inline" xml:id="C17.S3.Px1.m1">q</Math>-Exponential Functions</title>    
+<para xml:id="C17.S3.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C17.S3.Px1.p1.s1">
+ <Math equation-number="17.3.1" mode="display" xml:id="C17.S3.E1">e_{q}\left(x\right)=\sum_{n=0}^{\infty}\frac{(1-q)^{n}x^{n}}{\left(q;q\right)_ {n}}=\frac{1}{\left((1-q)x;q\right)_{\infty}},</Math> <Math equation-number="17.3.2" mode="display" xml:id="C17.S3.E2">E_{q}\left(x\right)=\sum_{n=0}^{\infty}\frac{(1-q)^{n}q^{\genfrac{(}{)}{0.0pt} {}{n}{2}}x^{n}}{\left(q;q\right)_{n}}=\left(-(1-q)x;q\right)_{\infty}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px2">
+<title><Math mode="inline" xml:id="C17.S3.Px2.m1">q</Math>-Sine Functions</title>    
+<para xml:id="C17.S3.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C17.S3.Px2.p1.s1">
+ <Math equation-number="17.3.3" mode="display" xml:id="C17.S3.E3">\mathrm{sin}_{q}\left(x\right)=\frac{1}{2i}(e_{q}\left(ix\right)-e_{q}\left(- ix\right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n+1}(-1)^{n}x^{2n+1}}{\left(q;q \right)_{2n+1}},</Math> <Math equation-number="17.3.4" mode="display" xml:id="C17.S3.E4">\mathrm{Sin}_{q}\left(x\right)=\frac{1}{2i}(E_{q}\left(ix\right)-E_{q}\left(- ix\right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n+1}q^{n(2n+1)}(-1)^{n}x^{2n+1}}{ \left(q;q\right)_{2n+1}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px3">
+<title><Math mode="inline" xml:id="C17.S3.Px3.m1">q</Math>-Cosine Functions</title>    
+<para xml:id="C17.S3.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C17.S3.Px3.p1.s1">
+ <Math equation-number="17.3.5" mode="display" xml:id="C17.S3.E5">\mathrm{cos}_{q}\left(x\right)=\frac{1}{2}(e_{q}\left(ix\right)+e_{q}\left(-ix \right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n}(-1)^{n}x^{2n}}{\left(q;q\right)_{ 2n}},</Math> <Math equation-number="17.3.6" mode="display" xml:id="C17.S3.E6">\mathrm{Cos}_{q}\left(x\right)=\frac{1}{2}(E_{q}\left(ix\right)+E_{q}\left(-ix \right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n}q^{n(2n-1)}(-1)^{n}x^{2n}}{\left(q ;q\right)_{2n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S3.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C17.S3.Px3.p2.s1">
+See also Suslov (2003).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS2">
+<title>Gamma and Beta Functions</title>         
+<para xml:id="C17.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C17.S3.SS2.p1.s1">
+See §5.18.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS3">
+<title>Bernoulli Polynomials; Euler and Stirling Numbers</title>        
+ 
+<paragraph xml:id="C17.S3.Px4">
+<title><Math mode="inline" xml:id="C17.S3.Px4.m1">q</Math>-Bernoulli Polynomials</title>    
+<para xml:id="C17.S3.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C17.S3.Px4.p1.s1">
+ <Math equation-number="17.3.7" mode="display" xml:id="C17.S3.E7">\beta_{n}\left(x,q\right)=(1-q)^{1-n}\sum_{r=0}^{n}(-1)^{r}\genfrac{(}{)}{0.0 pt}{}{n}{r}\frac{r+1}{(1-q^{r+1})}q^{rx}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px5">
+<title><Math mode="inline" xml:id="C17.S3.Px5.m1">q</Math>-Euler Numbers</title>    
+<para xml:id="C17.S3.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C17.S3.Px5.p1.s1">
+ <Math equation-number="17.3.8" mode="display" xml:id="C17.S3.E8">A_{m,s}\left(q\right)=q^{\genfrac{(}{)}{0.0pt}{}{s-m}{2}+\genfrac{(}{)}{0.0pt} {}{s}{2}}\sum_{j=0}^{s}(-1)^{j}q^{\genfrac{(}{)}{0.0pt}{}{j}{2}}\genfrac{[}{]} {0.0pt}{}{m+1}{j}_{q}\frac{(1-q^{s-j})^{m}}{(1-q)^{m}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px6">
+<title><Math mode="inline" xml:id="C17.S3.Px6.m1">q</Math>-Stirling Numbers</title>    
+<para xml:id="C17.S3.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C17.S3.Px6.p1.s1">
+ <Math equation-number="17.3.9" mode="display" xml:id="C17.S3.E9">a_{m,s}\left(q\right)=\frac{q^{-\genfrac{(}{)}{0.0pt}{}{s}{2}}(1-q)^{s}}{\left (q;q\right)_{s}}\sum_{j=0}^{s}(-1)^{j}q^{\genfrac{(}{)}{0.0pt}{}{j}{2}} \genfrac{[}{]}{0.0pt}{}{s}{j}_{q}\frac{(1-q^{s-j})^{m}}{(1-q)^{m}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S3.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C17.S3.Px6.p2.s1">
+These were introduced in Carlitz (1954a, 1958).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C17.S3.Px6.p2.s2">
+The <Math mode="inline" xml:id="C17.S3.Px6.p2.m1">\beta_{n}\left(x,q\right)</Math> are, in fact, rational functions of <Math mode="inline" xml:id="C17.S3.Px6.p2.m2">q</Math> , and not necessarily polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C17.S3.Px6.p2.s3">
+The <Math mode="inline" xml:id="C17.S3.Px6.p2.m3">A_{m,s}\left(q\right)</Math> are always polynomials in <Math mode="inline" xml:id="C17.S3.Px6.p2.m4">q</Math> , and the <Math mode="inline" xml:id="C17.S3.Px6.p2.m5">a_{m,s}\left(q\right)</Math> are polynomials in <Math mode="inline" xml:id="C17.S3.Px6.p2.m6">q</Math> for <Math mode="inline" xml:id="C17.S3.Px6.p2.m7">0\leq s\leq m</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS4">
+<title>Theta Functions</title>         
+<para xml:id="C17.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C17.S3.SS4.p1.s1">
+See §§17.8 and 20.5.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS5">
+<title>Orthogonal Polynomials</title>         
+<para xml:id="C17.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C17.S3.SS5.p1.s1">
+See §§18.27–18.29.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

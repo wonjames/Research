@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S6">
+<title>Integral Representations</title>          
+ 
+<para xml:id="C15.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S6.p1.s1">
+The function <Math mode="inline" xml:id="C15.S6.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> (not <Math mode="inline" xml:id="C15.S6.p1.m2">F\left(a,b;c;z\right)</Math> ) has the following integral representations: <Math equation-number="15.6.1" mode="display" xml:id="C15.S6.E1">\frac{1}{\Gamma\left(b\right)\Gamma\left(c-b\right)}\int_{0}^{1}\frac{t^{b-1}( 1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, if \Re c&gt;\Re b&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S6.p1.s2">
+<Math equation-number="15.6.2" mode="display" xml:id="C15.S6.E2">\frac{\Gamma\left(1+b-c\right)}{2\pi\mathrm{i}\Gamma\left(b\right)}\int_{0}^{( 1+)}\frac{t^{b-1}(t-1)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, if c-b\neq 1,2,3,\dots, \Re b&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C15.S6.p1.s3">
+<Math equation-number="15.6.3" mode="display" xml:id="C15.S6.E3">e^{-b\pi\mathrm{i}}\frac{\Gamma\left(1-b\right)}{2\pi\mathrm{i}\Gamma\left(c-b \right)}\int_{\infty}^{(0+)}\frac{t^{b-1}(t+1)^{a-c}}{(t-zt+1)^{a}}\mathrm{d}t, if b\neq 1,2,3,\dots, \Re(c-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C15.S6.p1.s4">
+<Math equation-number="15.6.4" mode="display" xml:id="C15.S6.E4">e^{-b\pi\mathrm{i}}\frac{\Gamma\left(1-b\right)}{2\pi\mathrm{i}\Gamma\left(c-b \right)}\int_{1}^{(0+)}\frac{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, if b\neq 1,2,3,\dots, \Re(c-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C15.S6.p1.s5">
+<Math equation-number="15.6.5" mode="display" xml:id="C15.S6.E5">e^{-c\pi\mathrm{i}}\Gamma\left(1-b\right)\Gamma\left(1+b-c\right)\*\frac{1}{4 \pi^{2}}\int_{A}^{(0+,1+,0-,1-)}\frac{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm {d}t, if b,c-b\neq 1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C15.S6.p1.s6">
+<Math equation-number="15.6.6" mode="display" xml:id="C15.S6.E6">\frac{1}{2\pi\mathrm{i}\Gamma\left(a\right)\Gamma\left(b\right)}\int_{-\mathrm {i}\infty}^{\mathrm{i}\infty}\frac{\Gamma\left(a+t\right)\Gamma\left(b+t\right )\Gamma\left(-t\right)}{\Gamma\left(c+t\right)}(-z)^{t}\mathrm{d}t, if a,b\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C15.S6.p2.s1">
+ <Math equation-number="15.6.7" mode="display" xml:id="C15.S6.E7">\frac{1}{2\pi\mathrm{i}\Gamma\left(a\right)\Gamma\left(b\right)\Gamma\left(c-a \right)\Gamma\left(c-b\right)}\int_{-\mathrm{i}\infty}^{\mathrm{i}\infty} \Gamma\left(a+t\right)\Gamma\left(b+t\right)\Gamma\left(c-a-b-t\right)\Gamma \left(-t\right)(1-z)^{t}\mathrm{d}t, if a,b,c-a,c-b\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C15.S6.p2.s2">
+<Math equation-number="15.6.8" mode="display" xml:id="C15.S6.E8">\frac{1}{\Gamma\left(c-d\right)}\int_{0}^{1}\mathbf{F}\left(a,b;d;zt\right)t^{ d-1}(1-t)^{c-d-1}\mathrm{d}t, if \Re c&gt;\Re d&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C15.S6.p2.s3">
+<Math equation-number="15.6.9" mode="display" xml:id="C15.S6.E9">\int_{0}^{1}\frac{t^{d-1}(1-t)^{c-d-1}}{(1-zt)^{a+b-\lambda}}\mathbf{F}\left({ \lambda-a,\lambda-b\atop d};zt\right)\mathbf{F}\left({a+b-\lambda,\lambda-d \atop c-d};\frac{(1-t)z}{1-zt}\right)\mathrm{d}t, if \lambda\in\mathbb{C}, \Re c&gt;\Re d&gt;0</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S6.p3.s1">
+These representations are valid when <Math mode="inline" xml:id="C15.S6.p3.m1">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , except (15.6.6) which holds for <Math mode="inline" xml:id="C15.S6.p3.m2">|\operatorname{ph}\left(-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C15.S6.p3.s2">
+In all cases the integrands are continuous functions of <Math mode="inline" xml:id="C15.S6.p3.m3">t</Math> on the integration paths, except possibly at the endpoints.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C15.S6.p3.s3">
+Note that (15.6.8) can be rewritten as a fractional integral.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C15.S6.p3.s4">
+In addition:
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C15.S6.p4.s1">
+In (15.6.1)all functions in the integrand assume their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S6.p5.s1">
+In (15.6.2) the point <Math mode="inline" xml:id="C15.S6.p5.m1">\ifrac{1}{z}</Math> lies outside the integration contour, <Math mode="inline" xml:id="C15.S6.p5.m2">t^{b-1}</Math> and <Math mode="inline" xml:id="C15.S6.p5.m3">(t-1)^{c-b-1}</Math> assume their principal values where the contour cuts the interval <Math mode="inline" xml:id="C15.S6.p5.m4">(1,\infty)</Math> , and <Math mode="inline" xml:id="C15.S6.p5.m5">(1-zt)^{a}=1</Math> at <Math mode="inline" xml:id="C15.S6.p5.m6">t=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C15.S6.p6.s1">
+In (15.6.3) the point <Math mode="inline" xml:id="C15.S6.p6.m1">\ifrac{1}{(z-1)}</Math> lies outside the integration contour, the contour cuts the real axis between <Math mode="inline" xml:id="C15.S6.p6.m2">t=-1</Math> and <Math mode="inline" xml:id="C15.S6.p6.m3">0</Math> , at which point <Math mode="inline" xml:id="C15.S6.p6.m4">\operatorname{ph}t=\pi</Math> and <Math mode="inline" xml:id="C15.S6.p6.m5">\operatorname{ph}\left(1+t\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C15.S6.p7.s1">
+In (15.6.4) the point <Math mode="inline" xml:id="C15.S6.p7.m1">\ifrac{1}{z}</Math> lies outside the integration contour, and at the point where the contour cuts the negative real axis <Math mode="inline" xml:id="C15.S6.p7.m2">\operatorname{ph}t=\pi</Math> and <Math mode="inline" xml:id="C15.S6.p7.m3">\operatorname{ph}\left(1-t\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C15.S6.p8.s1">
+In (15.6.5) the integration contour starts and terminates at a point <Math mode="inline" xml:id="C15.S6.p8.m1">A</Math> on the real axis between <Math mode="inline" xml:id="C15.S6.p8.m2">0</Math> and <Math mode="inline" xml:id="C15.S6.p8.m3">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C15.S6.p8.s2">
+It encircles <Math mode="inline" xml:id="C15.S6.p8.m4">t=0</Math> and <Math mode="inline" xml:id="C15.S6.p8.m5">t=1</Math> once in the positive direction, and then once in the negative direction.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C15.S6.p8.s3">
+See Figure15.6.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C15.S6.p8.s4">
+At the starting point <Math mode="inline" xml:id="C15.S6.p8.m6">\operatorname{ph}t</Math> and <Math mode="inline" xml:id="C15.S6.p8.m7">\operatorname{ph}\left(1-t\right)</Math> are zero.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C15.S6.p8.s5">
+If desired, and as in Figure 5.12.3, the upper integration limit in (15.6.5) can be replaced by <Math mode="inline" xml:id="C15.S6.p8.m8">(1+,0+,1-,0-)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="23" xml:id="C15.S6.p8.s6">
+However, this reverses the direction of the integration contour, and in consequence (15.6.5) would need to be multiplied by <Math mode="inline" xml:id="C15.S6.p8.m9">-1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C15.S6.p9.s1">
+In (15.6.6) the integration contour separates the poles of <Math mode="inline" xml:id="C15.S6.p9.m1">\Gamma\left(a+t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p9.m2">\Gamma\left(b+t\right)</Math> from those of <Math mode="inline" xml:id="C15.S6.p9.m3">\Gamma\left(-t\right)</Math> , and <Math mode="inline" xml:id="C15.S6.p9.m4">(-z)^{t}</Math> has its principal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C15.S6.p10.s1">
+In (15.6.7) the integration contour separates the poles of <Math mode="inline" xml:id="C15.S6.p10.m1">\Gamma\left(a+t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p10.m2">\Gamma\left(b+t\right)</Math> from those of <Math mode="inline" xml:id="C15.S6.p10.m3">\Gamma\left(c-a-b-t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p10.m4">\Gamma\left(-t\right)</Math> , and <Math mode="inline" xml:id="C15.S6.p10.m5">(1-z)^{t}</Math> has itsprincipal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p11">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C15.S6.p11.s1">
+In each of (15.6.8) and (15.6.9)all functions in the integrand assume their principal values.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="27" xml:id="C15.S6.F1.s1">
+Figure 15.6.1: <Math mode="inline" xml:id="C15.S6.F1.m1">t</Math> -plane. Contour of integration in ( ).
+</sentence>    
+</section>

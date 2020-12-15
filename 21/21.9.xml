@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C21.S9">
+<title>Integrable Equations</title>        
+ 
+     
+<para xml:id="C21.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C21.S9.p1.s1">
+Riemann theta functions arise in the study of integrable differential equations that have applications in many areas, including fluid mechanics (Ablowitz and Segur (1981, Chapter 4)), magnetic monopoles (Ercolani and Sinha (1989)), and string theory (Deligne et al. (1999, Part 3)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C21.S9.p1.s2">
+Typical examples of such equations are the Korteweg–de Vries equation <Math equation-number="21.9.1" mode="display" xml:id="C21.S9.E1">4u_{t}=6uu_{x}+u_{xxx},</Math> and the nonlinear Schrödinger equations <Math equation-number="21.9.2" mode="display" xml:id="C21.S9.E2">iu_{t}=-\tfrac{1}{2}u_{xx}\pm|u|^{2}u</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C21.S9.p1.s3">
+Here, and in what follows, <Math mode="inline" xml:id="C21.S9.p1.m1">x,y</Math> , and <Math mode="inline" xml:id="C21.S9.p1.m2">t</Math> suffixes indicate partial derivatives.
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C21.S9.p2.s1">
+Particularly important for the use of Riemann theta functions is the Kadomtsev–Petviashvili (KP) equation, which describes the propagation of two-dimensional, long-wave length surface waves in shallow water (Ablowitz and Segur (1981, Chapter 4)): <Math equation-number="21.9.3" mode="display" xml:id="C21.S9.E3">(-4u_{t}+6uu_{x}+u_{xxx})_{x}+3u_{yy}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C21.S9.p2.s2">
+Here <Math mode="inline" xml:id="C21.S9.p2.m1">x</Math> and <Math mode="inline" xml:id="C21.S9.p2.m2">y</Math> are spatial variables, <Math mode="inline" xml:id="C21.S9.p2.m3">t</Math> is time, and <Math mode="inline" xml:id="C21.S9.p2.m4">u(x,y,t)</Math> is the elevation of the surface wave. All quantities are made dimensionless by a suitable scaling transformation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C21.S9.p2.s3">
+The KP equation has a class of quasi-periodic solutions described by Riemann theta functions, given by <Math equation-number="21.9.4" mode="display" xml:id="C21.S9.E4">u(x,y,t)=c+2\frac{{\partial}^{2}}{{\partial x}^{2}}\ln\left(\theta\left( \mathbf{k}x+\mathbf{l}y+\boldsymbol{{\omega}}t+\boldsymbol{{\phi}}\middle| \boldsymbol{{\Omega}}\right)\right),</Math> where <Math mode="inline" xml:id="C21.S9.p2.m5">c</Math> is a complex constant and <Math mode="inline" xml:id="C21.S9.p2.m6">\mathbf{k}</Math> , <Math mode="inline" xml:id="C21.S9.p2.m7">\mathbf{l}</Math> , <Math mode="inline" xml:id="C21.S9.p2.m8">\boldsymbol{{\omega}}</Math> , and <Math mode="inline" xml:id="C21.S9.p2.m9">\boldsymbol{{\phi}}</Math> are <Math mode="inline" xml:id="C21.S9.p2.m10">g</Math> -dimensional complex vectors; seeKrichever (1976).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C21.S9.p2.s4">
+These parameters, including <Math mode="inline" xml:id="C21.S9.p2.m11">\boldsymbol{{\Omega}}</Math> , are not free: they are determined by a compact, connected Riemann surface (Krichever (1976)), or alternatively by an appropriate initial condition <Math mode="inline" xml:id="C21.S9.p2.m12">u(x,y,0)</Math> (Deconinck and Segur (1998)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C21.S9.p2.s5">
+These solutions have been compared successfully with physical experiments for <Math mode="inline" xml:id="C21.S9.p2.m13">g=1,2</Math> (Wiegel (1960), Hammack et al. (1989), andHammack et al. (1995)).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C21.S9.p2.s6">
+See Figures 21.9.1 and21.9.2.
+</sentence>
+
+</para>
+
+          
+<sentence sentence-num-in-section="10" xml:id="C21.S9.F1.s1">
+Figure 21.9.1: Two-dimensional periodic waves in a shallow water wave tank, taken from by permission of Cambridge University Press. The original caption reads “Mosaic of two overhead photographs, showing surface patterns of waves in shallow water.”
+</sentence>           
+<sentence sentence-num-in-section="11" xml:id="C21.S9.F2.s1">
+Figure 21.9.2: Contour plot of a two-phase solution of Equation ( ). Such a solution is given in terms of a Riemann theta function with two phases; see , , and . 
+</sentence> 
+   
+<para xml:id="C21.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C21.S9.p3.s1">
+Furthermore, the solutions of the KP equation solve the Schottky problem: this is the question concerning conditions that a Riemann matrix needs to satisfy in order to be associated with a Riemann surface (Schottky (1903)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C21.S9.p3.s2">
+Following the work of Krichever (1976), Novikov conjectured that the Riemann theta function in (21.9.4) gives rise to a solution of the KP equation (21.9.3) if, and only if, the theta function originates from a Riemann surface; seeDubrovin (1981, §IV.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C21.S9.p3.s3">
+The first part of this conjecture was established in Krichever (1976); the second part was proved inShiota (1986).
+</sentence>
+
+</para>
+  
+</section>

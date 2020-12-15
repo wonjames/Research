@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C11.S11">
+<title>Asymptotic Expansions of Anger–Weber Functions</title>        
+ 
+<subsection xml:id="C11.S11.SS1">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS1.m1">|z|</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS1.m2">\nu</Math></title>         
+ 
+<para xml:id="C11.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S11.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C11.S11.SS1.p1.m1">F_{0}(\nu)=G_{0}(\nu)=1</Math> , and for <Math mode="inline" xml:id="C11.S11.SS1.p1.m2">k=1,2,3,\dots</Math> , <Math equation-number="11.11.1" mode="display" xml:id="C11.S11.E1">\displaystyle F_{k}(\nu)=(\nu^{2}-1^{2})(\nu^{2}-3^{2})\cdots(\nu^{2}-(2k-1)^{ 2}),\displaystyle G_{k}(\nu)=(\nu^{2}-2^{2})(\nu^{2}-4^{2})\cdots(\nu^{2}-(2k)^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C11.S11.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C11.S11.SS1.p1.m3">z\to\infty</Math> in <Math mode="inline" xml:id="C11.S11.SS1.p1.m4">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C11.S11.SS1.p1.m5">&lt;\pi</Math> ) <Math equation-number="11.11.2" mode="display" xml:id="C11.S11.E2">\mathbf{J}_{\nu}\left(z\right)\sim J_{\nu}\left(z\right)\\ +\frac{\sin\left(\pi\nu\right)}{\pi z}\left(\sum_{k=0}^{\infty}\frac{F_{k}(\nu )}{z^{2k}}-\frac{\nu}{z}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2k}}\right),</Math> <Math equation-number="11.11.3" mode="display" xml:id="C11.S11.E3">\mathbf{E}_{\nu}\left(z\right)\sim-Y_{\nu}\left(z\right)-\frac{1+\cos\left(\pi \nu\right)}{\pi z}\sum_{k=0}^{\infty}\frac{F_{k}(\nu)}{z^{2k}}-\frac{\nu(1- \cos\left(\pi\nu\right))}{\pi z^{2}}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2k }},</Math> <Math equation-number="11.11.4" mode="display" xml:id="C11.S11.E4">\mathbf{A}_{\nu}\left(z\right)\sim\frac{1}{\pi z}\sum_{k=0}^{\infty}\frac{F_{k }(\nu)}{z^{2k}}-\frac{\nu}{\pi z^{2}}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2 k}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S11.SS2">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS2.m1">|\nu|</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS2.m2">z</Math></title>          
+<para xml:id="C11.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C11.S11.SS2.p1.s1">
+If <Math mode="inline" xml:id="C11.S11.SS2.p1.m1">z</Math> is fixed, and <Math mode="inline" xml:id="C11.S11.SS2.p1.m2">\nu\to\infty</Math> in <Math mode="inline" xml:id="C11.S11.SS2.p1.m3">|\operatorname{ph}\nu|\leq\pi</Math> in such a way that <Math mode="inline" xml:id="C11.S11.SS2.p1.m4">\nu</Math> is bounded away from the set of all integers, then <Math equation-number="11.11.5" mode="display" xml:id="C11.S11.E5">\mathbf{J}_{\nu}\left(z\right)=\frac{\sin\left(\pi\nu\right)}{\pi\nu}\left(1- \frac{\nu z}{\nu^{2}-1}+O\left(\frac{1}{\nu^{2}}\right)\right),</Math> <Math equation-number="11.11.6" mode="display" xml:id="C11.S11.E6">\mathbf{E}_{\nu}\left(z\right)=\frac{2}{\pi\nu}\left({\sin^{2}}\left(\tfrac{1} {2}\pi\nu\right)+\frac{\nu z}{\nu^{2}-1}{\cos^{2}}\left(\tfrac{1}{2}\pi\nu \right)+O\left(\frac{1}{\nu^{2}}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C11.S11.SS2.p2.s1">
+If <Math mode="inline" xml:id="C11.S11.SS2.p2.m1">\nu=n(\in\mathbb{Z})</Math> , then (11.10.29)applies for <Math mode="inline" xml:id="C11.S11.SS2.p2.m2">\mathbf{J}_{n}\left(z\right)</Math> , and
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C11.S11.SS2.p3.s1">
+ <Math equation-number="11.11.7" mode="display" xml:id="C11.S11.E7">\displaystyle\mathbf{E}_{2n}\left(z\right)\sim\frac{2z}{(4n^{2}-1)\pi},\displaystyle\mathbf{E}_{2n+1}\left(z\right)\sim\frac{2}{(2n+1)\pi},</Math> 
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S11.SS3">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS3.m1">\nu</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS3.m2">z/\nu</Math></title>        
+ 
+<para xml:id="C11.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C11.S11.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p1.m1">\lambda</Math> <Math mode="inline" xml:id="C11.S11.SS3.p1.m2">(&gt;0)</Math> , <Math equation-number="11.11.8" mode="display" xml:id="C11.S11.E8">\mathbf{A}_{\nu}\left(\lambda\nu\right)\sim\frac{1}{\pi}\sum_{k=0}^{\infty} \frac{(2k)!\,a_{k}(\lambda)}{\nu^{2k+1}}, if \nu\to\infty, |\operatorname{ph}\nu|\leq\pi-\delta (&lt;\pi),</Math> where <Math equation-number="11.11.9" mode="display" xml:id="C11.S11.E9">a_{0}(\lambda)=\frac{1}{1+\lambda},a_{1}(\lambda)=-\frac{\lambda}{2(1+\lambda)^{4}},a_{2}(\lambda)=\frac{9\lambda^{2}-\lambda}{24(1+\lambda)^{7}},a_{3}(\lambda)=-\frac{225\lambda^{3}-54\lambda^{2}+\lambda}{720(1+\lambda)^{10 }}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C11.S11.SS3.p2.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p2.m1">\lambda(&gt;1)</Math> ,
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C11.S11.SS3.p3.s1">
+ <Math equation-number="11.11.10" mode="display" xml:id="C11.S11.E10">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim-\frac{1}{\pi}\sum_{k=0}^{\infty} \frac{(2k)!\,a_{k}(-\lambda)}{\nu^{2k+1}}, if \nu\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C11.S11.SS3.p4.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p4.m1">\lambda</Math> , <Math mode="inline" xml:id="C11.S11.SS3.p4.m2">0&lt;\lambda&lt;1</Math> , <Math equation-number="11.11.11" mode="display" xml:id="C11.S11.E11">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\left(\frac{2}{\pi\nu}\right)^{1/2 }e^{-\nu\mu}\sum_{k=0}^{\infty}\frac{(\tfrac{1}{2})_{k}b_{k}(\lambda)}{\nu^{k}}, if \nu\to+\infty,</Math> where <Math equation-number="11.11.12" mode="display" xml:id="C11.S11.E12">\mu=\sqrt{1-\lambda^{2}}-\ln\left(\frac{1+\sqrt{1-\lambda^{2}}}{\lambda}\right),</Math> and <Math equation-number="11.11.13" mode="display" xml:id="C11.S11.E13">b_{0}(\lambda)=\frac{1}{(1-\lambda^{2})^{1/4}}, ,b_{1}(\lambda)=\frac{2+3\lambda^{2}}{12(1-\lambda^{2})^{7/4}},b_{2}(\lambda)=\frac{4+300\lambda^{2}+81\lambda^{4}}{864(1-\lambda^{2})^{13/4}}, </Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C11.S11.SS3.p5.s1">
+In particular, as <Math mode="inline" xml:id="C11.S11.SS3.p5.m1">\nu\to+\infty</Math> , <Math equation-number="11.11.14" mode="display" xml:id="C11.S11.E14">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\frac{1}{\pi\nu(\lambda-1)}, if \lambda&gt;1,</Math> <Math equation-number="11.11.15" mode="display" xml:id="C11.S11.E15">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\left(\frac{2}{\pi\nu}\right)^{1/2 }\left(\frac{1+\sqrt{1-\lambda^{2}}}{\lambda}\right)^{\nu}\frac{e^{-\nu\sqrt{1 -\lambda^{2}}}}{(1-\lambda^{2})^{1/4}}, if 0&lt;\lambda&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C11.S11.SS3.p6.s1">
+Also, as <Math mode="inline" xml:id="C11.S11.SS3.p6.m1">\nu\to+\infty</Math> , <Math equation-number="11.11.16" mode="display" xml:id="C11.S11.E16">\mathbf{A}_{-\nu}\left(\nu\right)\sim\frac{2^{4/3}}{3^{7/6}\Gamma\left(\tfrac{ 2}{3}\right)\nu^{1/3}},</Math> and <Math equation-number="11.11.17" mode="display" xml:id="C11.S11.E17">\mathbf{A}_{-\nu}\left(\nu+a\nu^{1/3}\right)=2^{1/3}\nu^{-1/3}\mathrm{Hi}\left (-2^{1/3}a\right)+O\left(\nu^{-1}\right),</Math> uniformly for bounded real values of <Math mode="inline" xml:id="C11.S11.SS3.p6.m2">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C11.S11.SS3.p6.s2">
+For the Scorer function <Math mode="inline" xml:id="C11.S11.SS3.p6.m3">\mathrm{Hi}</Math> see §9.12(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C11.S11.SS3.p7.s1">
+All of (11.11.10)–(11.11.17) can be regarded as special cases of two asymptotic expansions given inOlver (1997b, pp. 352–357) for <Math mode="inline" xml:id="C11.S11.SS3.p7.m1">\mathbf{A}_{-\nu}\left(\lambda\nu\right)</Math> as <Math mode="inline" xml:id="C11.S11.SS3.p7.m2">\nu\to+\infty</Math> , one being uniform for <Math mode="inline" xml:id="C11.S11.SS3.p7.m3">\delta\leq\lambda\leq 1</Math> , where <Math mode="inline" xml:id="C11.S11.SS3.p7.m4">\delta</Math> again denotes an arbitrary small positive constant, and the other being uniform for <Math mode="inline" xml:id="C11.S11.SS3.p7.m5">1\leq\lambda&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C11.S11.SS3.p7.s2">
+(Note that Olver’s definition of <Math mode="inline" xml:id="C11.S11.SS3.p7.m6">\mathbf{A}_{\nu}\left(z\right)</Math> omits the factor <Math mode="inline" xml:id="C11.S11.SS3.p7.m7">1/\pi</Math> in (11.10.4).)See alsoWatson (1944, §10.15).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C11.S11.SS3.p8.s1">
+Lastly, corresponding asymptotic approximations and expansions for <Math mode="inline" xml:id="C11.S11.SS3.p8.m1">\mathbf{J}_{\nu}\left(\lambda\nu\right)</Math> and <Math mode="inline" xml:id="C11.S11.SS3.p8.m2">\mathbf{E}_{\nu}\left(\lambda\nu\right)</Math> follow from (11.10.15) and (11.10.16) and the corresponding asymptotic expansions for the Bessel functions <Math mode="inline" xml:id="C11.S11.SS3.p8.m3">J_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S11.SS3.p8.m4">Y_{\nu}\left(z\right)</Math> ; see §10.19(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C11.S11.SS3.p8.s2">
+In particular,
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS3.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C11.S11.SS3.p9.s1">
+ <Math equation-number="11.11.18" mode="display" xml:id="C11.S11.E18">\mathbf{J}_{\nu}\left(\nu\right)\sim\frac{2^{1/3}}{3^{2/3}\Gamma\left(\tfrac{2 }{3}\right)\nu^{1/3}}, if \nu\to+\infty,</Math> <Math equation-number="11.11.19" mode="display" xml:id="C11.S11.E19">\mathbf{E}_{\nu}\left(\nu\right)\sim\frac{2^{1/3}}{3^{7/6}\Gamma\left(\tfrac{2 }{3}\right)\nu^{1/3}}, if \nu\to+\infty</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

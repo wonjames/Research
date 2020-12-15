@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C24.S5">
+<title>Recurrence Relations</title>        
+     
+<subsection xml:id="C24.S5.SS1">
+<title>Basic Relations</title>        
+ 
+<para xml:id="C24.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C24.S5.SS1.p1.s1">
+ <Math equation-number="24.5.1" mode="display" xml:id="C24.S5.E1">\sum_{k=0}^{n-1}{n\choose k}B_{k}\left(x\right)=nx^{n-1}, if n=2,3,\dots,</Math> <Math equation-number="24.5.2" mode="display" xml:id="C24.S5.E2">\sum_{k=0}^{n}{n\choose k}E_{k}\left(x\right)+E_{n}\left(x\right)=2x^{n}, if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C24.S5.SS1.p1.s2">
+<Math equation-number="24.5.3" mode="display" xml:id="C24.S5.E3">\sum_{k=0}^{n-1}{n\choose k}B_{k}=0, if n=2,3,\dots,</Math> <Math equation-number="24.5.4" mode="display" xml:id="C24.S5.E4">\sum_{k=0}^{n}{2n\choose 2k}E_{2k}=0, if n=1,2,\dots,</Math> <Math equation-number="24.5.5" mode="display" xml:id="C24.S5.E5">\sum_{k=0}^{n}{n\choose k}2^{k}E_{n-k}+E_{n}=2</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S5.SS2">
+<title>Other Identities</title>          
+<para xml:id="C24.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C24.S5.SS2.p1.s1">
+ <Math equation-number="24.5.6" mode="display" xml:id="C24.S5.E6">\sum_{k=2}^{n}{n\choose k-2}\frac{B_{k}}{k}=\frac{1}{(n+1)(n+2)}-B_{n+1}, if n=2,3,\dots,</Math> <Math equation-number="24.5.7" mode="display" xml:id="C24.S5.E7">\sum_{k=0}^{n}{n\choose k}\frac{B_{k}}{n+2-k}=\frac{B_{n+1}}{n+1}, if n=1,2,\dots,</Math> <Math equation-number="24.5.8" mode="display" xml:id="C24.S5.E8">\sum_{k=0}^{n}\frac{2^{2k}B_{2k}}{(2k)!(2n+1-2k)!}=\frac{1}{(2n)!}, if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S5.SS3">
+<title>Inversion Formulas</title>        
+     
+<para xml:id="C24.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C24.S5.SS3.p1.s1">
+In each of (24.5.9) and (24.5.10) the first identity implies the second one and vice-versa.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C24.S5.SS3.p1.s2">
+<Math equation-number="24.5.9" mode="display" xml:id="C24.S5.E9">a_{n}=\sum_{k=0}^{n}{n\choose k}\frac{b_{n-k}}{k+1},b_{n}=\sum_{k=0}^{n}{n\choose k}B_{k}a_{n-k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C24.S5.SS3.p1.s3">
+<Math equation-number="24.5.10" mode="display" xml:id="C24.S5.E10">a_{n}=\sum_{k=0}^{\left\lfloor\ifrac{n}{2}\right\rfloor}{n\choose 2k}b_{n-2k},b_{n}=\sum_{k=0}^{\left\lfloor\ifrac{n}{2}\right\rfloor}{n\choose 2k}E_{2k}a_{ n-2k}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

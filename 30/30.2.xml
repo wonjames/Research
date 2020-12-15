@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S2">
+<title>Differential Equations</title>         
+<subsection xml:id="C30.S2.SS1">
+<title>Spheroidal Differential Equation</title>          
+    
+<para xml:id="C30.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S2.SS1.p1.s1">
+ <Math equation-number="30.2.1" mode="display" xml:id="C30.S2.E1">\frac{\mathrm{d}}{\mathrm{d}z}\left((1-z^{2})\frac{\mathrm{d}w}{\mathrm{d}z} \right)+\left(\lambda+\gamma^{2}(1-z^{2})-\frac{\mu^{2}}{1-z^{2}}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S2.SS1.p1.s2">
+This equation has regular singularities at <Math mode="inline" xml:id="C30.S2.SS1.p1.m1">z=\pm 1</Math> with exponents <Math mode="inline" xml:id="C30.S2.SS1.p1.m2">\pm\frac{1}{2}\mu</Math> and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C30.S2.SS1.p1.m3">z=\infty</Math> (if <Math mode="inline" xml:id="C30.S2.SS1.p1.m4">\gamma\neq 0</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C30.S2.SS1.p1.s3">
+The equation contains three real parameters <Math mode="inline" xml:id="C30.S2.SS1.p1.m5">\lambda</Math> , <Math mode="inline" xml:id="C30.S2.SS1.p1.m6">\gamma^{2}</Math> , and <Math mode="inline" xml:id="C30.S2.SS1.p1.m7">\mu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C30.S2.SS1.p1.s4">
+In applications involving prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S2.SS1.p1.m8">\gamma^{2}</Math> is positive, in applications involving oblate spheroidal coordinates <Math mode="inline" xml:id="C30.S2.SS1.p1.m9">\gamma^{2}</Math> is negative; see §§30.13, 30.14.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S2.SS2">
+<title>Other Forms</title>        
+ 
+<para xml:id="C30.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C30.S2.SS2.p1.s1">
+The Liouville normal form of equation (30.2.1) is <Math equation-number="30.2.2" mode="display" xml:id="C30.S2.E2">\frac{{\mathrm{d}}^{2}g}{{\mathrm{d}t}^{2}}+\left(\lambda+\frac{1}{4}+\gamma^{ 2}{\sin^{2}}t-\frac{\mu^{2}-\frac{1}{4}}{{\sin^{2}}t}\right)g=0,</Math> <Math equation-number="30.2.3" mode="display" xml:id="C30.S2.E3">z=\cos t,w(z)=(1-z^{2})^{-\frac{1}{4}}g(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C30.S2.SS2.p1.s2">
+With <Math mode="inline" xml:id="C30.S2.SS2.p1.m1">\zeta=\gamma z</Math> Equation (30.2.1) changes to <Math equation-number="30.2.4" mode="display" xml:id="C30.S2.E4">(\zeta^{2}-\gamma^{2})\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\zeta}^{2}}+2\zeta \frac{\mathrm{d}w}{\mathrm{d}\zeta}+\left(\zeta^{2}-\lambda-\gamma^{2}-\frac{ \gamma^{2}\mu^{2}}{\zeta^{2}-\gamma^{2}}\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S2.SS3">
+<title>Special Cases</title>        
+  
+<para xml:id="C30.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C30.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m1">\gamma=0</Math> , Equation (30.2.1) is the associated Legendre differential equation; see (14.2.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C30.S2.SS3.p1.s2">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m2">\mu^{2}=\frac{1}{4}</Math> , Equation (30.2.2) reduces to the Mathieu equation; see (28.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C30.S2.SS3.p1.s3">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m3">\gamma=0</Math> , Equation (30.2.4) is satisfied by spherical Bessel functions; see (10.47.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

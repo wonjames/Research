@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S7">
+<title>Connection Formulas</title>        
+  
+<subsection xml:id="C19.S7.SS1">
+<title>Complete Integrals of the First and Second Kinds</title>         
+<paragraph xml:id="C19.S7.Px1">
+<title>Legendre’s Relation</title>   
+<para xml:id="C19.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S7.Px1.p1.s1">
+ <Math equation-number="19.7.1" mode="display" xml:id="C19.S7.E1">E\left(k\right){K^{\prime}}\left(k\right)+{E^{\prime}}\left(k\right)K\left(k \right)-K\left(k\right){K^{\prime}}\left(k\right)=\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S7.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C19.S7.Px1.p2.s1">
+Also, <Math equation-number="19.7.2" mode="display" xml:id="C19.S7.E2">K\left(ik/k^{\prime}\right)=k^{\prime}K\left(k\right),K\left(-ik^{\prime}/k\right)=kK\left(k^{\prime}\right),E\left(ik/k^{\prime}\right)=(1/k^{\prime})E\left(k\right),E\left(-ik^{\prime}/k\right)=(1/k)E\left(k^{\prime}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C19.S7.Px1.p2.s2">
+<Math equation-number="19.7.3" mode="display" xml:id="C19.S7.E3">K\left(1/k\right)=k(K\left(k\right)\mp\mathrm{i}K\left(k^{\prime}\right)),K\left(1/k^{\prime}\right)=k^{\prime}(K\left(k^{\prime}\right)\pm\mathrm{i}K \left(k\right)),E\left(1/k\right)=(1/k)\left(E\left(k\right)\pm\mathrm{i}E\left(k^{\prime} \right)-{k^{\prime}}^{2}K\left(k\right)\mp\mathrm{i}k^{2}K\left(k^{\prime} \right)\right),E\left(1/k^{\prime}\right)=(1/k^{\prime})\left(E\left(k^{\prime}\right)\mp \mathrm{i}E\left(k\right)-k^{2}K\left(k^{\prime}\right)\pm\mathrm{i}{k^{\prime }}^{2}K\left(k\right)\right),</Math> where upper signs apply if <Math mode="inline" xml:id="C19.S7.Px1.p2.m1">\Im k^{2}&gt;0</Math> and lower signs if <Math mode="inline" xml:id="C19.S7.Px1.p2.m2">\Im k^{2}&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C19.S7.Px1.p2.s3">
+This dichotomy of signs (missing in several references) is due to Fettis (1970).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S7.SS2">
+<title>Change of Modulus and Amplitude</title>        
+  
+ 
+<paragraph xml:id="C19.S7.Px2">
+<title>Reciprocal-Modulus Transformation</title>    
+<para xml:id="C19.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S7.Px2.p1.s1">
+ <Math equation-number="19.7.4" mode="display" xml:id="C19.S7.E4">F\left(\phi,k_{1}\right)=kF\left(\beta,k\right),E\left(\phi,k_{1}\right)=(E\left(\beta,k\right)-{k^{\prime}}^{2}F\left(\beta,k \right))/k,\Pi\left(\phi,\alpha^{2},k_{1}\right)=k\Pi\left(\beta,k^{2}\alpha^{2},k\right), if k_{1}=1/k, \sin\beta=k_{1}\sin\phi\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S7.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S7.Px2.p2.s1">
+Provided the functions in these identities are correctly analytically continued in the complex <Math mode="inline" xml:id="C19.S7.Px2.p2.m1">\beta</Math> -plane, then the identities will also hold in the complex <Math mode="inline" xml:id="C19.S7.Px2.p2.m2">\beta</Math> -plane.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C19.S7.Px3">
+<title>Imaginary-Modulus Transformation</title>    
+<para xml:id="C19.S7.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S7.Px3.p1.s1">
+ <Math equation-number="19.7.5" mode="display" xml:id="C19.S7.E5">F\left(\phi,ik\right)=\kappa^{\prime}F\left(\theta,\kappa\right),E\left(\phi,ik\right)=(1/\kappa^{\prime})\left(E\left(\theta,\kappa\right)- \kappa^{2}\*(\sin\theta\cos\theta)\*(1-\kappa^{2}{\sin^{2}}\theta)^{-\ifrac{1} {2}}\right),\Pi\left(\phi,\alpha^{2},ik\right)=(\kappa^{\prime}/\alpha_{1}^{2})\left( \kappa^{2}F\left(\theta,\kappa\right)+{\kappa^{\prime}}^{2}\alpha^{2}\Pi\left( \theta,\alpha_{1}^{2},\kappa\right)\right),</Math> where <Math equation-number="19.7.6" mode="display" xml:id="C19.S7.E6">\kappa=\frac{k}{\sqrt{1+k^{2}}},\kappa^{\prime}=\frac{1}{\sqrt{1+k^{2}}},\sin\theta=\frac{\sqrt{1+k^{2}}\sin\phi}{\sqrt{1+k^{2}{\sin^{2}}\phi}},\alpha_{1}^{2}=\frac{\alpha^{2}+k^{2}}{1+k^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C19.S7.Px4">
+<title>Imaginary-Argument Transformation</title>    
+<para xml:id="C19.S7.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C19.S7.Px4.p1.s1">
+With <Math mode="inline" xml:id="C19.S7.Px4.p1.m1">\sinh\phi=\tan\psi</Math> , <Math equation-number="19.7.7" mode="display" xml:id="C19.S7.E7">F\left(i\phi,k\right)=iF\left(\psi,k^{\prime}\right),E\left(i\phi,k\right)=i\left(F\left(\psi,k^{\prime}\right)-E\left(\psi,k^{ \prime}\right)+(\tan\psi)\sqrt{1-{k^{\prime}}^{2}{\sin^{2}}\psi}\right),\Pi\left(i\phi,\alpha^{2},k\right)=i\left(F\left(\psi,k^{\prime}\right)-\alpha ^{2}\Pi\left(\psi,1-\alpha^{2},k^{\prime}\right)\right)/{(1-\alpha^{2})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S7.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C19.S7.Px4.p2.s1">
+For two further transformations of this type seeErdélyi et al. (1953b, p. 316).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S7.SS3">
+<title>Change of Parameter of <Math mode="inline" xml:id="C19.S7.SS3.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math></title>            
+ 
+<para xml:id="C19.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C19.S7.SS3.p1.s1">
+There are three relations connecting <Math mode="inline" xml:id="C19.S7.SS3.p1.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math> and <Math mode="inline" xml:id="C19.S7.SS3.p1.m2">\Pi\left(\phi,\omega^{2},k\right)</Math> , where <Math mode="inline" xml:id="C19.S7.SS3.p1.m3">\omega^{2}</Math> is a rational function of <Math mode="inline" xml:id="C19.S7.SS3.p1.m4">\alpha^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C19.S7.SS3.p1.s2">
+If <Math mode="inline" xml:id="C19.S7.SS3.p1.m5">k^{2}</Math> and <Math mode="inline" xml:id="C19.S7.SS3.p1.m6">\alpha^{2}</Math> are real, then both integrals are circular cases or both are hyperbolic cases (see §19.2(ii)).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C19.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C19.S7.SS3.p2.s1">
+The first of the three relations maps each circular region onto itself and each hyperbolic region onto the other; in particular, it gives the Cauchy principal value of <Math mode="inline" xml:id="C19.S7.SS3.p2.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math> when <Math mode="inline" xml:id="C19.S7.SS3.p2.m2">\alpha^{2}&gt;{\csc^{2}}\phi</Math> (see (19.6.5) for the complete case).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C19.S7.SS3.p2.s2">
+Let <Math mode="inline" xml:id="C19.S7.SS3.p2.m3">c={\csc^{2}}\phi\neq\alpha^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C19.S7.SS3.p2.s3">
+Then <Math equation-number="19.7.8" mode="display" xml:id="C19.S7.E8">\Pi\left(\phi,\alpha^{2},k\right)+\Pi\left(\phi,\omega^{2},k\right)=F\left( \phi,k\right)+\sqrt{c}R_{C}\left((c-1)(c-k^{2}),(c-\alpha^{2})(c-\omega^{2}) \right), if \alpha^{2}\omega^{2}=k^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C19.S7.SS3.p2.s4">
+Since <Math mode="inline" xml:id="C19.S7.SS3.p2.m4">k^{2}\leq c</Math> we have <Math mode="inline" xml:id="C19.S7.SS3.p2.m5">\alpha^{2}\omega^{2}\leq c</Math> ; hence <Math mode="inline" xml:id="C19.S7.SS3.p2.m6">\alpha^{2}&gt;c</Math> implies <Math mode="inline" xml:id="C19.S7.SS3.p2.m7">\omega^{2}&lt;1\leq c</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S7.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C19.S7.SS3.p3.s1">
+The second relation maps each hyperbolic region onto itself and each circular region onto the other: <Math equation-number="19.7.9" mode="display" xml:id="C19.S7.E9">(k^{2}-\alpha^{2})\Pi\left(\phi,\alpha^{2},k\right)+(k^{2}-\omega^{2})\Pi\left (\phi,\omega^{2},k\right)=k^{2}F\left(\phi,k\right)-\alpha^{2}\omega^{2}\sqrt{ c-1}R_{C}\left(c(c-k^{2}),(c-\alpha^{2})(c-\omega^{2})\right), if (1-\alpha^{2})(1-\omega^{2})=1-k^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S7.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C19.S7.SS3.p4.s1">
+The third relation (missing from the literature of Legendre’s integrals) maps each circular region onto the other and each hyperbolic region onto the other: <Math equation-number="19.7.10" mode="display" xml:id="C19.S7.E10">(1-\alpha^{2})\Pi\left(\phi,\alpha^{2},k\right)+(1-\omega^{2})\Pi\left(\phi, \omega^{2},k\right)=F\left(\phi,k\right)+(1-\alpha^{2}-\omega^{2})\sqrt{c-k^{2 }}\*R_{C}\left(c(c-1),(c-\alpha^{2})(c-\omega^{2})\right), if (k^{2}-\alpha^{2})(k^{2}-\omega^{2})=k^{2}(k^{2}-1)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

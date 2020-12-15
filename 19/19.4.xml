@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S4">
+<title>Derivatives and Differential Equations</title>         
+<subsection xml:id="C19.S4.SS1">
+<title>Derivatives</title>          
+<para xml:id="C19.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S4.SS1.p1.s1">
+ <Math equation-number="19.4.1" mode="display" xml:id="C19.S4.E1">\frac{\mathrm{d}K\left(k\right)}{\mathrm{d}k}=\frac{E\left(k\right)-{k^{\prime }}^{2}K\left(k\right)}{k{k^{\prime}}^{2}},\frac{\mathrm{d}(E\left(k\right)-{k^{\prime}}^{2}K\left(k\right))}{\mathrm{d}k }=kK\left(k\right),</Math> <Math equation-number="19.4.2" mode="display" xml:id="C19.S4.E2">\frac{\mathrm{d}E\left(k\right)}{\mathrm{d}k}=\frac{E\left(k\right)-K\left(k \right)}{k},\frac{\mathrm{d}(E\left(k\right)-K\left(k\right))}{\mathrm{d}k}=-\frac{kE\left (k\right)}{{k^{\prime}}^{2}},</Math> <Math equation-number="19.4.3" mode="display" xml:id="C19.S4.E3">\frac{{\mathrm{d}}^{2}E\left(k\right)}{{\mathrm{d}k}^{2}}=-\frac{1}{k}\frac{ \mathrm{d}K\left(k\right)}{\mathrm{d}k}=\frac{{k^{\prime}}^{2}K\left(k\right)- E\left(k\right)}{k^{2}{k^{\prime}}^{2}},</Math> <Math equation-number="19.4.4" mode="display" xml:id="C19.S4.E4">\frac{\partial\Pi\left(\alpha^{2},k\right)}{\partial k}=\frac{k}{{k^{\prime}}^ {2}(k^{2}-\alpha^{2})}(E\left(k\right)-{k^{\prime}}^{2}\Pi\left(\alpha^{2},k \right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S4.SS1.p1.s2">
+<Math equation-number="19.4.5" mode="display" xml:id="C19.S4.E5">\frac{\partial F\left(\phi,k\right)}{\partial k}={\frac{E\left(\phi,k\right)-{ k^{\prime}}^{2}F\left(\phi,k\right)}{k{k^{\prime}}^{2}}-\frac{k\sin\phi\cos \phi}{{k^{\prime}}^{2}\sqrt{1-k^{2}{\sin^{2}}\phi}}},</Math> <Math equation-number="19.4.6" mode="display" xml:id="C19.S4.E6">\frac{\partial E\left(\phi,k\right)}{\partial k}=\frac{E\left(\phi,k\right)-F \left(\phi,k\right)}{k},</Math> <Math equation-number="19.4.7" mode="display" xml:id="C19.S4.E7">\frac{\partial\Pi\left(\phi,\alpha^{2},k\right)}{\partial k}=\frac{k}{{k^{ \prime}}^{2}(k^{2}-\alpha^{2})}\left({E\left(\phi,k\right)-{k^{\prime}}^{2}\Pi \left(\phi,\alpha^{2},k\right)}-\frac{k^{2}\sin\phi\cos\phi}{\sqrt{1-k^{2}{ \sin^{2}}\phi}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S4.SS2">
+<title>Differential Equations</title>         
+ 
+<para xml:id="C19.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C19.S4.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C19.S4.SS2.p1.m1">D_{k}=\ifrac{\partial}{\partial k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C19.S4.SS2.p1.s2">
+Then <Math equation-number="19.4.8" mode="display" xml:id="C19.S4.E8">(k{k^{\prime}}^{2}D_{k}^{2}+(1-3k^{2})D_{k}-k)F\left(\phi,k\right)=\frac{-k \sin\phi\cos\phi}{(1-k^{2}{\sin^{2}}\phi)^{3/2}},</Math> <Math equation-number="19.4.9" mode="display" xml:id="C19.S4.E9">(k{k^{\prime}}^{2}D_{k}^{2}+{k^{\prime}}^{2}D_{k}+k)E\left(\phi,k\right)=\frac {k\sin\phi\cos\phi}{\sqrt{1-k^{2}{\sin^{2}}\phi}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C19.S4.SS2.p1.s3">
+If <Math mode="inline" xml:id="C19.S4.SS2.p1.m2">\phi=\pi/2</Math> , then these two equations become hypergeometric differential equations (15.10.1) for <Math mode="inline" xml:id="C19.S4.SS2.p1.m3">K\left(k\right)</Math> and <Math mode="inline" xml:id="C19.S4.SS2.p1.m4">E\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C19.S4.SS2.p1.s4">
+An analogous differential equation of third order for <Math mode="inline" xml:id="C19.S4.SS2.p1.m5">\Pi\left(\phi,\alpha^{2},k\right)</Math> is given in Byrd and Friedman (1971, 118.03).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

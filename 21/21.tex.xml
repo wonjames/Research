@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C21">
+<title>Multidimensional Theta Functions</title>               
+ 
+<sidebar xml:id="C21.SB1">
+<title>Periodic Surface Waves</title>           
+<para xml:id="C21.SB1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C21.SB1.p1.s1">
+Two-dimensional periodic waves in a shallow water wave tank.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C21.SB1.p1.s2">
+Taken from Joe Hammack, Daryl McCallister, Norman Scheffner and Harvey Segur, “Two-dimensional periodic waves in shallow water.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C21.SB1.p1.s3">
+Part 2. Asymmetric waves”, J. Fluid Mech. (1995), Vol. 285, pp. 95-122 ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C21.SB1.p1.s4">
+The caption reads “Mosaic of two overhead photographs, showing surface patterns of waves in shallow water”.
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.SB1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C21.SB1.p2.s1">
+©Cambridge University Press
+</sentence>
+
+</para>
+ 
+</sidebar>
+
+ 
+<sidebar xml:id="C21.SB2">
+<title>A two-phase solution of the Kadomtsev–Petviashvili equation ()</title>           
+<para xml:id="C21.SB2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C21.SB2.p1.s1">
+A two-phase solution of the Kadomtsev–Petviashvili equation (LABEL:eq:MT.9.kp).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C21.SB2.p1.s2">
+Such a solution is given in terms of a Riemann theta function with two phases.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C21.SB2.p1.s3">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C21.SB2.p1.s4">
+The agreement of these solutions with two-dimensional surface water waves in shallow water was considered in ( ) .
+</sentence>
+
+</para>
+ 
+</sidebar>
+          
+<section xml:id="C21.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C21.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C21.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C21.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" sentence-num-in-table="1" xml:id="C21.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r1.m1">g,h</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" sentence-num-in-table="2" xml:id="C21.S1.p2.t1.s2">
+positive integers.  
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" sentence-num-in-table="3" xml:id="C21.S1.p2.t1.s3">
+  <Math mode="inline" xml:id="C21.S1.p2.t1.r2.m1">{\mathbb{Z}^{g}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" sentence-num-in-table="4" xml:id="C21.S1.p2.t1.s4">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r2.m2">\mathbb{Z}\times\mathbb{Z}\times\cdots\times\mathbb{Z}</Math> (<Math mode="inline" xml:id="C21.S1.p2.t1.r2.m3">g</Math> times).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" sentence-num-in-table="5" xml:id="C21.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r3.m1">{\mathbb{R}^{g}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="16" sentence-num-in-table="6" xml:id="C21.S1.p2.t1.s6">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r3.m2">\mathbb{R}\times\mathbb{R}\times\cdots\times\mathbb{R}</Math> (<Math mode="inline" xml:id="C21.S1.p2.t1.r3.m3">g</Math> times).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="17" sentence-num-in-table="7" xml:id="C21.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r4.m1">{\mathbb{Z}^{g\times h}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="18" sentence-num-in-table="8" xml:id="C21.S1.p2.t1.s8">
+set of all <Math mode="inline" xml:id="C21.S1.p2.t1.r4.m2">g\times h</Math> matrices with integer elements.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="19" sentence-num-in-table="9" xml:id="C21.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r5.m1">\boldsymbol{{\Omega}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="20" sentence-num-in-table="10" xml:id="C21.S1.p2.t1.s10">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r5.m2">g\times g</Math> complex, symmetric matrix with<Math mode="inline" xml:id="C21.S1.p2.t1.r5.m3">\Im\boldsymbol{{\Omega}}</Math> strictly positive definite, i.e., a Riemann matrix.  
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="21" sentence-num-in-table="11" xml:id="C21.S1.p2.t1.s11">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r6.m1">\boldsymbol{{\alpha}},\boldsymbol{{\beta}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="22" sentence-num-in-table="12" xml:id="C21.S1.p2.t1.s12">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r6.m2">g</Math>-dimensional vectors, with all elements in<Math mode="inline" xml:id="C21.S1.p2.t1.r6.m3">[0,1)</Math>, unless stated otherwise.    
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="23" sentence-num-in-table="13" xml:id="C21.S1.p2.t1.s13">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r7.m1">a_{j}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="24" sentence-num-in-table="14" xml:id="C21.S1.p2.t1.s14">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r7.m2">j</Math>th element of vector <Math mode="inline" xml:id="C21.S1.p2.t1.r7.m3">\mathbf{a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="25" sentence-num-in-table="15" xml:id="C21.S1.p2.t1.s15">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r8.m1">A_{jk}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="26" sentence-num-in-table="16" xml:id="C21.S1.p2.t1.s16">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r8.m2">(j,k)</Math>th element of matrix <Math mode="inline" xml:id="C21.S1.p2.t1.r8.m3">\mathbf{A}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="27" sentence-num-in-table="17" xml:id="C21.S1.p2.t1.s17">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r9.m1">\mathbf{a}\cdot\mathbf{b}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="28" sentence-num-in-table="18" xml:id="C21.S1.p2.t1.s18">
+scalar product of the vectors <Math mode="inline" xml:id="C21.S1.p2.t1.r9.m2">\mathbf{a}</Math> and <Math mode="inline" xml:id="C21.S1.p2.t1.r9.m3">\mathbf{b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="29" sentence-num-in-table="19" xml:id="C21.S1.p2.t1.s19">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r10.m1">\mathbf{a}\cdot\boldsymbol{{\Omega}}\cdot\mathbf{b}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="30" sentence-num-in-table="20" xml:id="C21.S1.p2.t1.s20">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r10.m2">[\boldsymbol{{\Omega}}\mathbf{a}]\cdot\mathbf{b}=[\boldsymbol{{\Omega}}\mathbf {b}]\cdot\mathbf{a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="31" sentence-num-in-table="21" xml:id="C21.S1.p2.t1.s21">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r11.m1">\operatorname{diag}\mathbf{A}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="32" sentence-num-in-table="22" xml:id="C21.S1.p2.t1.s22">
+Transpose of <Math mode="inline" xml:id="C21.S1.p2.t1.r11.m2">[A_{11},A_{22},\dots,A_{gg}]</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="33" sentence-num-in-table="23" xml:id="C21.S1.p2.t1.s23">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r12.m1">\boldsymbol{{0}}_{g}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="24" sentence-num-in-section="34" sentence-num-in-table="24" xml:id="C21.S1.p2.t1.s24">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r12.m2">g\times g</Math> zero matrix.
+</sentence>
+
+<sentence sentence-num-in-para="25" sentence-num-in-section="35" sentence-num-in-table="25" xml:id="C21.S1.p2.t1.s25">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r13.m1">\mathbf{I}_{g}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="26" sentence-num-in-section="36" sentence-num-in-table="26" xml:id="C21.S1.p2.t1.s26">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r13.m2">g\times g</Math> identity matrix.
+</sentence>
+
+<sentence sentence-num-in-para="27" sentence-num-in-section="37" sentence-num-in-table="27" xml:id="C21.S1.p2.t1.s27">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r14.m1">\mathbf{J}_{2g}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="28" sentence-num-in-section="38" sentence-num-in-table="28" xml:id="C21.S1.p2.t1.s28">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r14.m2">\begin{bmatrix}\boldsymbol{{0}}_{g}&amp;\mathbf{I}_{g}\\ -\mathbf{I}_{g}&amp;\boldsymbol{{0}}_{g}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="29" sentence-num-in-section="39" sentence-num-in-table="29" xml:id="C21.S1.p2.t1.s29">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r15.m1">S^{g}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="30" sentence-num-in-section="40" sentence-num-in-table="30" xml:id="C21.S1.p2.t1.s30">
+set of <Math mode="inline" xml:id="C21.S1.p2.t1.r15.m2">g</Math>-dimensional vectors with elements in <Math mode="inline" xml:id="C21.S1.p2.t1.r15.m3">S</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="31" sentence-num-in-section="41" sentence-num-in-table="31" xml:id="C21.S1.p2.t1.s31">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r16.m1">|S|</Math>
+</sentence>
+
+<sentence sentence-num-in-para="32" sentence-num-in-section="42" sentence-num-in-table="32" xml:id="C21.S1.p2.t1.s32">
+number of elements of the set <Math mode="inline" xml:id="C21.S1.p2.t1.r16.m2">S</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="33" sentence-num-in-section="43" sentence-num-in-table="33" xml:id="C21.S1.p2.t1.s33">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r17.m1">S_{1}S_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="34" sentence-num-in-section="44" sentence-num-in-table="34" xml:id="C21.S1.p2.t1.s34">
+set of all elements of the form “<Math mode="inline" xml:id="C21.S1.p2.t1.r17.m2">\mbox{element of $S_{1}$}\times\mbox{element of $S_{2}$}</Math>”.
+</sentence>
+
+<sentence sentence-num-in-para="35" sentence-num-in-section="45" sentence-num-in-table="35" xml:id="C21.S1.p2.t1.s35">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r18.m5">S_{1}/S_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="36" sentence-num-in-section="46" sentence-num-in-table="36" xml:id="C21.S1.p2.t1.s36">
+set of all elements of <Math mode="inline" xml:id="C21.S1.p2.t1.r18.m6">S_{1}</Math>, modulo elements of <Math mode="inline" xml:id="C21.S1.p2.t1.r18.m7">S_{2}</Math>. Thus two elements of <Math mode="inline" xml:id="C21.S1.p2.t1.r18.m8">S_{1}/S_{2}</Math> are equivalent if they are both in<Math mode="inline" xml:id="C21.S1.p2.t1.r18.m9">S_{1}</Math> and their difference is in <Math mode="inline" xml:id="C21.S1.p2.t1.r18.m10">S_{2}</Math>. (For an example see §LABEL:sec:TH.of.et.)
+</sentence>
+
+<sentence sentence-num-in-para="37" sentence-num-in-section="47" sentence-num-in-table="37" xml:id="C21.S1.p2.t1.s37">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r19.m1">a\circ b</Math>
+</sentence>
+
+<sentence sentence-num-in-para="38" sentence-num-in-section="48" sentence-num-in-table="38" xml:id="C21.S1.p2.t1.s38">
+intersection index of <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m2">a</Math> and <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m3">b</Math>, two cycles lying on a closed surface. <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m4">a\circ b=0</Math> if <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m5">a</Math> and <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m6">b</Math> do not intersect.Otherwise <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m7">a\circ b</Math> gets an additive contribution from every intersection point. This contribution is <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m8">1</Math> if the basis of the tangent vectors of the <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m9">a</Math> and <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m10">b</Math> cycles (§LABEL:sec:MT.7.surfaces) at the point of intersection is positively oriented; otherwise it is <Math mode="inline" xml:id="C21.S1.p2.t1.r19.m11">-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="39" sentence-num-in-section="49" sentence-num-in-table="39" xml:id="C21.S1.p2.t1.s39">
+<Math mode="inline" xml:id="C21.S1.p2.t1.r20.m1">\oint_{a}\omega</Math>
+</sentence>
+
+<sentence sentence-num-in-para="40" sentence-num-in-section="50" sentence-num-in-table="40" xml:id="C21.S1.p2.t1.s40">
+line integral of the differential <Math mode="inline" xml:id="C21.S1.p2.t1.r20.m2">\omega</Math> over the cycle <Math mode="inline" xml:id="C21.S1.p2.t1.r20.m3">a</Math>.  
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C21.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C21.S1.p3.s1">
+Lowercase boldface letters or numbers are <Math mode="inline" xml:id="C21.S1.p3.m1">g</Math> -dimensional real or complex vectors, either row or column depending on the context.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C21.S1.p3.s2">
+Uppercase boldface letters are <Math mode="inline" xml:id="C21.S1.p3.m2">g\times g</Math> real or complex matrices.
+</sentence>
+
+</para>
+
+   
+<para xml:id="C21.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C21.S1.p4.s1">
+The main functions treated in this chapter are the Riemann theta functions <Math mode="inline" xml:id="C21.S1.p4.m1">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> , and the Riemann theta functions with characteristics <Math mode="inline" xml:id="C21.S1.p4.m2">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C21.S1.p5.s1">
+The function <Math mode="inline" xml:id="C21.S1.p5.m1">\Theta(\boldsymbol{{\phi}}|\mathbf{B})=\theta\left(\boldsymbol{{\phi}}/(2\pi i )\middle|\mathbf{B}/(2\pi i)\right)</Math> is also commonly used; see, for example, ( , §2.5) , ( ) , and ( , Chapter 1) .
+</sentence>
+
+</para>
+ 
+ 
+</section>
+          
+ 
+<section xml:id="C21.S2">
+<title>Definitions</title>        
+ 
+<subsection xml:id="C21.S2.SS1">
+<title>Riemann Theta Functions</title>        
+    
+<para xml:id="C21.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C21.S2.SS1.p1.s1">
+ <Math equation-number="21.2.1" mode="display" xml:id="C21.S2.E1">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\sum_{\mathbf{n}\in {\mathbb{Z}^{g}}}e^{2\pi i\left(\frac{1}{2}\mathbf{n}\cdot\boldsymbol{{\Omega} }\cdot\mathbf{n}+\mathbf{n}\cdot\mathbf{z}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C21.S2.SS1.p1.s2">
+This <Math mode="inline" xml:id="C21.S2.SS1.p1.m1">g</Math> -tuple Fourier series converges absolutely and uniformly on compact sets of the <Math mode="inline" xml:id="C21.S2.SS1.p1.m2">\mathbf{z}</Math> and <Math mode="inline" xml:id="C21.S2.SS1.p1.m3">\boldsymbol{{\Omega}}</Math> spaces; hence <Math mode="inline" xml:id="C21.S2.SS1.p1.m4">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is an analytic function of (each element of) <Math mode="inline" xml:id="C21.S2.SS1.p1.m5">\mathbf{z}</Math> and (each element of) <Math mode="inline" xml:id="C21.S2.SS1.p1.m6">\boldsymbol{{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C21.S2.SS1.p1.s3">
+<Math mode="inline" xml:id="C21.S2.SS1.p1.m7">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is also referred to as a thetafunction with <Math mode="inline" xml:id="C21.S2.SS1.p1.m8">g</Math> components, a <Math mode="inline" xml:id="C21.S2.SS1.p1.m9">g</Math> -dimensional theta function or as a genus <Math mode="inline" xml:id="C21.S2.SS1.p1.m10">g</Math> theta function.
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C21.S2.SS1.p2.s1">
+For numerical purposes we use the scaled Riemann theta function <Math mode="inline" xml:id="C21.S2.SS1.p2.m1">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> , defined by ( ( ) ), <Math equation-number="21.2.2" mode="display" xml:id="C21.S2.E2">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=e^{-\pi[\Im \mathbf{z}]\cdot[\Im\boldsymbol{{\Omega}}]^{-1}\cdot[\Im\mathbf{z}]}\theta \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C21.S2.SS1.p2.s2">
+<Math mode="inline" xml:id="C21.S2.SS1.p2.m2">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is a bounded nonanalytic function of <Math mode="inline" xml:id="C21.S2.SS1.p2.m3">\mathbf{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C21.S2.SS1.p2.s3">
+Many applications involve quotients of Riemann theta functions: the exponential factor then disappears.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="61" xml:id="C21.S2.SS1.p2.s4">
+See also §LABEL:sec:MT.generalcomp.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C21.S2.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C21.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C21.S2.Px1.p1.s1">
+ <Math equation-number="21.2.3" mode="display" xml:id="C21.S2.E3">\theta\left(z_{1},z_{2}\middle|\begin{bmatrix}i&amp;-\tfrac{1}{2}\\ -\tfrac{1}{2}&amp;i\end{bmatrix}\right)=\sum_{n_{1}=-\infty}^{\infty}\sum_{n_{2}=- \infty}^{\infty}e^{-\pi(n_{1}^{2}+n_{2}^{2})}e^{-i\pi n_{1}n_{2}}e^{2\pi i(n_{ 1}z_{1}+n_{2}z_{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C21.S2.Px1.p1.s2">
+With <Math mode="inline" xml:id="C21.S2.Px1.p1.m1">z_{1}=x_{1}+iy_{1}</Math> , <Math mode="inline" xml:id="C21.S2.Px1.p1.m2">z_{2}=x_{2}+iy_{2}</Math> , <Math equation-number="21.2.4" mode="display" xml:id="C21.S2.E4">\hat{\theta}\left(x_{1}+iy_{1},x_{2}+iy_{2}\middle|\begin{bmatrix}i&amp;-\tfrac{1} {2}\\ -\tfrac{1}{2}&amp;i\end{bmatrix}\right)=\sum_{n_{1}=-\infty}^{\infty}\sum_{n_{2}=- \infty}^{\infty}e^{-\pi(n_{1}+y_{1})^{2}-\pi(n_{2}+y_{2})^{2}}\*e^{\pi i(2n_{1 }x_{1}+2n_{2}x_{2}-n_{1}n_{2})}</Math>.
+</sentence>
+
+</para>
+    
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S2.SS2">
+<title>Riemann Theta Functions with Characteristics</title>            
+<para xml:id="C21.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C21.S2.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C21.S2.SS2.p1.m1">\boldsymbol{{\alpha}},\boldsymbol{{\beta}}\in{\mathbb{R}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C21.S2.SS2.p1.s2">
+Define <Math equation-number="21.2.5" mode="display" xml:id="C21.S2.E5">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\sum_{\mathbf{n}\in{ \mathbb{Z}^{g}}}e^{2\pi i\left(\frac{1}{2}[\mathbf{n}+\boldsymbol{{\alpha}}] \cdot\boldsymbol{{\Omega}}\cdot[\mathbf{n}+\boldsymbol{{\alpha}}]+[\mathbf{n}+ \boldsymbol{{\alpha}}]\cdot[\mathbf{z}+\boldsymbol{{\beta}}]\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C21.S2.SS2.p1.s3">
+This function is referred to as a Riemann theta function with characteristics <Math mode="inline" xml:id="C21.S2.SS2.p1.m2">\begin{bmatrix}\boldsymbol{{\alpha}}\\ \boldsymbol{{\beta}}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="67" xml:id="C21.S2.SS2.p1.s4">
+It is a translation of the Riemann theta function (LABEL:eq:MT.2.theta), multiplied by an exponential factor: <Math equation-number="21.2.6" mode="display" xml:id="C21.S2.E6">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=e^{2\pi i\left(\frac{1}{2 }\boldsymbol{{\alpha}}\cdot\boldsymbol{{\Omega}}\cdot\boldsymbol{{\alpha}}+ \boldsymbol{{\alpha}}\cdot[\mathbf{z}+\boldsymbol{{\beta}}]\right)}\theta\left (\mathbf{z}+\boldsymbol{{\Omega}}\boldsymbol{{\alpha}}+\boldsymbol{{\beta}} \middle|\boldsymbol{{\Omega}}\right),</Math> and <Math equation-number="21.2.7" mode="display" xml:id="C21.S2.E7">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{0}}}{\boldsymbol{{0}}}\left(\mathbf {z}\middle|\boldsymbol{{\Omega}}\right)=\theta\left(\mathbf{z}\middle| \boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="68" xml:id="C21.S2.SS2.p1.s5">
+Characteristics whose elements are either <Math mode="inline" xml:id="C21.S2.SS2.p1.m3">0</Math> or <Math mode="inline" xml:id="C21.S2.SS2.p1.m4">\tfrac{1}{2}</Math> are calledhalf-period characteristics.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="69" xml:id="C21.S2.SS2.p1.s6">
+For given <Math mode="inline" xml:id="C21.S2.SS2.p1.m5">\boldsymbol{{\Omega}}</Math> , there are <Math mode="inline" xml:id="C21.S2.SS2.p1.m6">2^{2g}</Math> <Math mode="inline" xml:id="C21.S2.SS2.p1.m7">g</Math> -dimensional Riemann theta functions with half-period characteristics.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S2.SS3">
+<title>Relation to Classical Theta Functions</title>          
+<para xml:id="C21.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C21.S2.SS3.p1.s1">
+For <Math mode="inline" xml:id="C21.S2.SS3.p1.m1">g=1</Math> , and with the notation of §LABEL:sec:TH.def.fe,
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C21.S2.SS3.p1.s2">
+<Math equation-number="21.2.8" mode="display" xml:id="C21.S2.E8">\theta\left(z\middle|\Omega\right)=\theta_{3}\left(\pi z\middle|\Omega\right),</Math> <Math equation-number="21.2.9" mode="display" xml:id="C21.S2.E9">\theta_{1}\left(\pi z\middle|\Omega\right)=-\theta\genfrac{[}{]}{0.0pt}{}{ \frac{1}{2}}{\frac{1}{2}}\left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.10" mode="display" xml:id="C21.S2.E10">\theta_{2}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{ \tfrac{1}{2}}{0}\left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.11" mode="display" xml:id="C21.S2.E11">\theta_{3}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{0}{0} \left(z\middle|\Omega\right),</Math> , <Math equation-number="21.2.12" mode="display" xml:id="C21.S2.E12">\theta_{4}\left(\pi z\middle|\Omega\right)=\theta\genfrac{[}{]}{0.0pt}{}{0}{ \tfrac{1}{2}}\left(z\middle|\Omega\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C21.S3">
+<title>Symmetry and Quasi-Periodicity</title>        
+ 
+<subsection xml:id="C21.S3.SS1">
+<title>Riemann Theta Functions</title>        
+  
+<para xml:id="C21.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C21.S3.SS1.p1.s1">
+ <Math equation-number="21.3.1" mode="display" xml:id="C21.S3.E1">\theta\left(-\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\theta\left( \mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> <Math equation-number="21.3.2" mode="display" xml:id="C21.S3.E2">\theta\left(\mathbf{z}+\mathbf{m}_{1}\middle|\boldsymbol{{\Omega}}\right)= \theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> when <Math mode="inline" xml:id="C21.S3.SS1.p1.m1">\mathbf{m}_{1}\in{\mathbb{Z}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="73" xml:id="C21.S3.SS1.p1.s2">
+Thus <Math mode="inline" xml:id="C21.S3.SS1.p1.m2">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is periodic, with period <Math mode="inline" xml:id="C21.S3.SS1.p1.m3">1</Math> , in each element of <Math mode="inline" xml:id="C21.S3.SS1.p1.m4">\mathbf{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="74" xml:id="C21.S3.SS1.p1.s3">
+More generally, <Math equation-number="21.3.3" mode="display" xml:id="C21.S3.E3">\theta\left(\mathbf{z}+\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2} \middle|\boldsymbol{{\Omega}}\right)=e^{-2\pi i\left(\frac{1}{2}\mathbf{m}_{2} \cdot\boldsymbol{{\Omega}}\cdot\mathbf{m}_{2}+\mathbf{m}_{2}\cdot\mathbf{z} \right)}\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> with <Math mode="inline" xml:id="C21.S3.SS1.p1.m5">\mathbf{m}_{1}</Math> , <Math mode="inline" xml:id="C21.S3.SS1.p1.m6">\mathbf{m}_{2}</Math> <Math mode="inline" xml:id="C21.S3.SS1.p1.m7">\in{\mathbb{Z}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="75" xml:id="C21.S3.SS1.p1.s4">
+This is thequasi-periodicity property of the Riemann theta function.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="76" xml:id="C21.S3.SS1.p1.s5">
+It determines the Riemann theta function up to a constant factor.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="77" xml:id="C21.S3.SS1.p1.s6">
+The set of points <Math mode="inline" xml:id="C21.S3.SS1.p1.m8">\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2}</Math> form a <Math mode="inline" xml:id="C21.S3.SS1.p1.m9">g</Math> -dimensional lattice, the period lattice of the Riemann theta function.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S3.SS2">
+<title>Riemann Theta Functions with Characteristics</title>        
+  
+<para xml:id="C21.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C21.S3.SS2.p1.s1">
+Again, with <Math mode="inline" xml:id="C21.S3.SS2.p1.m1">\mathbf{m}_{1}</Math> , <Math mode="inline" xml:id="C21.S3.SS2.p1.m2">\mathbf{m}_{2}</Math> <Math mode="inline" xml:id="C21.S3.SS2.p1.m3">\in{\mathbb{Z}^{g}}</Math> <Math equation-number="21.3.4" mode="display" xml:id="C21.S3.E4">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}+\mathbf{m}_{1}}{ \boldsymbol{{\beta}}+\mathbf{m}_{2}}\left(\mathbf{z}\middle|\boldsymbol{{ \Omega}}\right)=e^{2\pi i\boldsymbol{{\alpha}}\cdot\mathbf{m}_{2}}\theta \genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}\left( \mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="79" xml:id="C21.S3.SS2.p1.s2">
+Because of this property, the elements of <Math mode="inline" xml:id="C21.S3.SS2.p1.m4">\boldsymbol{{\alpha}}</Math> and <Math mode="inline" xml:id="C21.S3.SS2.p1.m5">\boldsymbol{{\beta}}</Math> are usually restricted to <Math mode="inline" xml:id="C21.S3.SS2.p1.m6">[0,1)</Math> , without loss of generality.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="80" xml:id="C21.S3.SS2.p1.s3">
+<Math equation-number="21.3.5" mode="display" xml:id="C21.S3.E5">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}+\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2}\middle| \boldsymbol{{\Omega}}\right)=e^{2\pi i\left(\boldsymbol{{\alpha}}\cdot\mathbf{ m}_{1}-\boldsymbol{{\beta}}\cdot\mathbf{m}_{2}-\frac{1}{2}\mathbf{m}_{2}\cdot \boldsymbol{{\Omega}}\cdot\mathbf{m}_{2}-\mathbf{m}_{2}\cdot\mathbf{z}\right)} \theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="81" xml:id="C21.S3.SS2.p1.s4">
+For Riemann theta functions with half-period characteristics, <Math equation-number="21.3.6" mode="display" xml:id="C21.S3.E6">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(-\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=(-1)^{4\boldsymbol{{ \alpha}}\cdot\boldsymbol{{\beta}}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{ \alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="82" xml:id="C21.S3.SS2.p1.s5">
+See also §LABEL:sec:TH.def.hp for the case <Math mode="inline" xml:id="C21.S3.SS2.p1.m7">g=1</Math> and classical theta functions.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C21.S4">
+<title>Graphics</title>        
+ 
+ 
+<para xml:id="C21.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C21.S4.p1.s1">
+Figure LABEL:fig:MT.4.plots provides surfaces of the scaled Riemann theta function <Math mode="inline" xml:id="C21.S4.p1.m1">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> , with <Math equation-number="21.4.1" mode="display" xml:id="C21.S4.E1">\boldsymbol{{\Omega}}=\begin{bmatrix}1.69098\;3006+0.95105\;6516\,i&amp;1.5+0.3632 7\;1264\,i\\ 1.5+0.36327\;1264\,i&amp;1.30901\;6994+0.95105\;6516\,i\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="84" xml:id="C21.S4.p1.s2">
+This Riemann matrix originates from the Riemann surface represented by the algebraic curve <Math mode="inline" xml:id="C21.S4.p1.m2">\mu^{3}-\lambda^{7}+2\lambda^{3}\mu=0</Math> ; compare §LABEL:sec:MT.7.surfaces.
+</sentence>
+
+</para>
+         
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="1" xml:id="C21.S4.F1.t1.s1">
+ (a<Math mode="inline" xml:id="C21.S4.F1.t1.r2.m1">{}_{1}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="2" xml:id="C21.S4.F1.t1.s2">
+(b<Math mode="inline" xml:id="C21.S4.F1.t1.r2.m2">{}_{1}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="3" xml:id="C21.S4.F1.t1.s3">
+(c<Math mode="inline" xml:id="C21.S4.F1.t1.r2.m3">{}_{1}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="4" xml:id="C21.S4.F1.t1.s4">
+ (a<Math mode="inline" xml:id="C21.S4.F1.t1.r4.m1">{}_{2}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="5" xml:id="C21.S4.F1.t1.s5">
+(b<Math mode="inline" xml:id="C21.S4.F1.t1.r4.m2">{}_{2}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="6" xml:id="C21.S4.F1.t1.s6">
+(c<Math mode="inline" xml:id="C21.S4.F1.t1.r4.m3">{}_{2}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="7" xml:id="C21.S4.F1.t1.s7">
+ (a<Math mode="inline" xml:id="C21.S4.F1.t1.r6.m1">{}_{3}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="8" xml:id="C21.S4.F1.t1.s8">
+(b<Math mode="inline" xml:id="C21.S4.F1.t1.r6.m2">{}_{3}</Math>)
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="9" xml:id="C21.S4.F1.t1.s9">
+(c<Math mode="inline" xml:id="C21.S4.F1.t1.r6.m3">{}_{3}</Math>)
+</sentence>
+  
+<sentence sentence-num-in-section="94" xml:id="C21.S4.F1.s1">
+Figure 21.4.1: <Math mode="inline" xml:id="C21.S4.F1.m2">\hat{\theta}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> parametrized by ( ). The surface plots are of <Math mode="inline" xml:id="C21.S4.F1.m3">\hat{\theta}\left(x+iy,0\middle|\boldsymbol{{\Omega}}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F1.m4">0\leq x\leq 1</Math> , <Math mode="inline" xml:id="C21.S4.F1.m5">0\leq y\leq 5</Math> (suffix 1); <Math mode="inline" xml:id="C21.S4.F1.m6">\hat{\theta}\left(x,y\middle|\boldsymbol{{\Omega}}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F1.m7">0\leq x\leq 1</Math> , <Math mode="inline" xml:id="C21.S4.F1.m8">0\leq y\leq 1</Math> (suffix 2); <Math mode="inline" xml:id="C21.S4.F1.m9">\hat{\theta}\left(ix,iy\middle|\boldsymbol{{\Omega}}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F1.m10">0\leq x\leq 5</Math> , <Math mode="inline" xml:id="C21.S4.F1.m11">0\leq y\leq 5</Math> (suffix 3). Shown are the real part (a), the imaginary part (b), and the modulus (c).
+</sentence>  
+<para xml:id="C21.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C21.S4.p2.s1">
+For the scaled Riemann theta functions depicted in Figures LABEL:fig:MT.4.theta1–LABEL:fig:MT.4.theta4
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C21.S4.p2.s2">
+<Math equation-number="21.4.2" mode="display" xml:id="C21.S4.E2">\boldsymbol{{\Omega}}_{1}=\begin{bmatrix}i&amp;-\tfrac{1}{2}\\ -\tfrac{1}{2}&amp;i\end{bmatrix},</Math> and <Math equation-number="21.4.3" mode="display" xml:id="C21.S4.E3">\boldsymbol{{\Omega}}_{2}=\begin{bmatrix}-\tfrac{1}{2}+i&amp;\tfrac{1}{2}-\tfrac{1 }{2}i&amp;-\tfrac{1}{2}-\tfrac{1}{2}i\\ \tfrac{1}{2}-\tfrac{1}{2}i&amp;i&amp;0\\ -\tfrac{1}{2}-\tfrac{1}{2}i&amp;0&amp;i\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+            
+<sentence sentence-num-in-section="97" xml:id="C21.S4.F2.s1">
+Figure 21.4.2: <Math mode="inline" xml:id="C21.S4.F2.m4">\Re\hat{\theta}\left(x+iy,0\middle|\boldsymbol{{\Omega}}_{1}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F2.m5">0\leq x\leq 1</Math> , <Math mode="inline" xml:id="C21.S4.F2.m6">0\leq y\leq 5</Math> . (The imaginary part looks very similar.)
+</sentence>           
+<sentence sentence-num-in-section="98" xml:id="C21.S4.F3.s1">
+Figure 21.4.3: <Math mode="inline" xml:id="C21.S4.F3.m4">\left|\hat{\theta}\left(x+iy,0\middle|\boldsymbol{{\Omega}}_{1}\right)\right|</Math> , <Math mode="inline" xml:id="C21.S4.F3.m5">0\leq x\leq 1</Math> , <Math mode="inline" xml:id="C21.S4.F3.m6">0\leq y\leq 2</Math> .
+</sentence>             
+<sentence sentence-num-in-section="99" xml:id="C21.S4.F4.s1">
+Figure 21.4.4: A real-valued scaled Riemann theta function: <Math mode="inline" xml:id="C21.S4.F4.m4">\hat{\theta}\left(ix,iy\middle|\boldsymbol{{\Omega}}_{1}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F4.m5">0\leq x\leq 4</Math> , <Math mode="inline" xml:id="C21.S4.F4.m6">0\leq y\leq 4</Math> . In this case, the quasi-periods are commensurable, resulting in a doubly-periodic configuration.
+</sentence>           
+<sentence sentence-num-in-section="100" xml:id="C21.S4.F5.s1">
+Figure 21.4.5: The real part of a genus 3 scaled Riemann theta function: <Math mode="inline" xml:id="C21.S4.F5.m4">\Re\hat{\theta}\left(x+iy,0,0\middle|\boldsymbol{{\Omega}}_{2}\right)</Math> , <Math mode="inline" xml:id="C21.S4.F5.m5">0\leq x\leq 1</Math> , <Math mode="inline" xml:id="C21.S4.F5.m6">0\leq y\leq 3</Math> . This Riemann matrix originates from the genus 3 Riemann surface represented by the algebraic curve <Math mode="inline" xml:id="C21.S4.F5.m7">\mu^{3}+2\mu-\lambda^{4}=0</Math> ; compare § .
+</sentence>   
+  
+</section>
+ 
+<section xml:id="C21.S5">
+<title>Modular Transformations</title>        
+ 
+<subsection xml:id="C21.S5.SS1">
+<title>Riemann Theta Functions</title>        
+  
+<para xml:id="C21.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C21.S5.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C21.S5.SS1.p1.m1">\mathbf{A}</Math> , <Math mode="inline" xml:id="C21.S5.SS1.p1.m2">\mathbf{B}</Math> , <Math mode="inline" xml:id="C21.S5.SS1.p1.m3">\mathbf{C}</Math> , and <Math mode="inline" xml:id="C21.S5.SS1.p1.m4">\mathbf{D}</Math> be <Math mode="inline" xml:id="C21.S5.SS1.p1.m5">g\times g</Math> matrices with integer elements such that <Math equation-number="21.5.1" mode="display" xml:id="C21.S5.E1">\boldsymbol{{\Gamma}}=\begin{bmatrix}\mathbf{A}&amp;\mathbf{B}\\ \mathbf{C}&amp;\mathbf{D}\end{bmatrix}</Math> is a symplectic matrix, that is, <Math equation-number="21.5.2" mode="display" xml:id="C21.S5.E2">\boldsymbol{{\Gamma}}\mathbf{J}_{2g}\boldsymbol{{\Gamma}}^{\mathrm{T}}=\mathbf {J}_{2g}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C21.S5.SS1.p1.s2">
+Then <Math equation-number="21.5.3" mode="display" xml:id="C21.S5.E3">\det\boldsymbol{{\Gamma}}=1,</Math> and <Math equation-number="21.5.4" mode="display" xml:id="C21.S5.E4">\theta\left(\left[[\mathbf{C}\boldsymbol{{\Omega}}+\mathbf{D}]^{-1}\right]^{ \mathrm{T}}\mathbf{z}\middle|[\mathbf{A}\boldsymbol{{\Omega}}+\mathbf{B}][ \mathbf{C}\boldsymbol{{\Omega}}+\mathbf{D}]^{-1}\right)=\xi(\boldsymbol{{ \Gamma}})\sqrt{\det[\mathbf{C}\boldsymbol{{\Omega}}+\mathbf{D}]}e^{\pi i \mathbf{z}\cdot\left[[\mathbf{C}\boldsymbol{{\Omega}}+\mathbf{D}]^{-1}\mathbf{ C}\right]\cdot\mathbf{z}}\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="103" xml:id="C21.S5.SS1.p1.s3">
+Here <Math mode="inline" xml:id="C21.S5.SS1.p1.m6">\xi(\boldsymbol{{\Gamma}})</Math> is an eighth root of unity, that is, <Math mode="inline" xml:id="C21.S5.SS1.p1.m7">(\xi(\boldsymbol{{\Gamma}}))^{8}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="104" xml:id="C21.S5.SS1.p1.s4">
+For general <Math mode="inline" xml:id="C21.S5.SS1.p1.m8">\boldsymbol{{\Gamma}}</Math> , it is difficult to decide which root needs to be used. The choice depends on <Math mode="inline" xml:id="C21.S5.SS1.p1.m9">\boldsymbol{{\Gamma}}</Math> , but is independent of <Math mode="inline" xml:id="C21.S5.SS1.p1.m10">\mathbf{z}</Math> and <Math mode="inline" xml:id="C21.S5.SS1.p1.m11">\boldsymbol{{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="105" xml:id="C21.S5.SS1.p1.s5">
+Equation (LABEL:eq:MT.5.modular) is the modular transformation property for Riemann theta functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C21.S5.SS1.p2.s1">
+The modular transformations form a group under the composition of such transformations, the modular group, which is generated by simpler transformations, for which <Math mode="inline" xml:id="C21.S5.SS1.p2.m1">\xi(\boldsymbol{{\Gamma}})</Math> is determinate: <Math equation-number="21.5.5" mode="display" xml:id="C21.S5.E5">\boldsymbol{{\Gamma}}=\begin{bmatrix}\mathbf{A}&amp;\boldsymbol{{0}}_{g}\\ \boldsymbol{{0}}_{g}&amp;[\mathbf{A}^{-1}]^{\mathrm{T}}\end{bmatrix}\Rightarrow \theta\left(\mathbf{A}\mathbf{z}\middle|\mathbf{A}\boldsymbol{{\Omega}}\mathbf {A}^{\mathrm{T}}\right)=\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="107" xml:id="C21.S5.SS1.p2.s2">
+( <Math mode="inline" xml:id="C21.S5.SS1.p2.m2">\mathbf{A}</Math> invertible with integer elements.)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="108" xml:id="C21.S5.SS1.p2.s3">
+<Math equation-number="21.5.6" mode="display" xml:id="C21.S5.E6">\boldsymbol{{\Gamma}}=\begin{bmatrix}\mathbf{I}_{g}&amp;\mathbf{B}\\ \boldsymbol{{0}}_{g}&amp;\mathbf{I}_{g}\end{bmatrix}\Rightarrow\theta\left(\mathbf {z}\middle|\boldsymbol{{\Omega}}+\mathbf{B}\right)=\theta\left(\mathbf{z} \middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="109" xml:id="C21.S5.SS1.p2.s4">
+( <Math mode="inline" xml:id="C21.S5.SS1.p2.m3">\mathbf{B}</Math> symmetric with integer elements and even diagonal elements.)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="110" xml:id="C21.S5.SS1.p2.s5">
+<Math equation-number="21.5.7" mode="display" xml:id="C21.S5.E7">\boldsymbol{{\Gamma}}=\begin{bmatrix}\mathbf{I}_{g}&amp;\mathbf{B}\\ \boldsymbol{{0}}_{g}&amp;\mathbf{I}_{g}\end{bmatrix}\Rightarrow\theta\left(\mathbf {z}\middle|\boldsymbol{{\Omega}}+\mathbf{B}\right)=\theta\left(\mathbf{z}+ \tfrac{1}{2}\operatorname{diag}\mathbf{B}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="111" xml:id="C21.S5.SS1.p2.s6">
+( <Math mode="inline" xml:id="C21.S5.SS1.p2.m4">\mathbf{B}</Math> symmetric with integer elements.)See ( , p. 24) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="112" xml:id="C21.S5.SS1.p2.s7">
+For a <Math mode="inline" xml:id="C21.S5.SS1.p2.m5">g\times g</Math> matrix <Math mode="inline" xml:id="C21.S5.SS1.p2.m6">{\bf A}</Math> we define <Math mode="inline" xml:id="C21.S5.SS1.p2.m7">\operatorname{diag}\mathbf{A}</Math> , as a column vector with the diagonal entries as elements.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="113" xml:id="C21.S5.SS1.p2.s8">
+<Math equation-number="21.5.8" mode="display" xml:id="C21.S5.E8">\boldsymbol{{\Gamma}}=\begin{bmatrix}\boldsymbol{{0}}_{g}&amp;-\mathbf{I}_{g}\\ \mathbf{I}_{g}&amp;\boldsymbol{{0}}_{g}\end{bmatrix}, \theta\left(\boldsymbol{{\Omega}}^{-1}\mathbf{z}\middle|-\boldsymbol{{\Omega}} ^{-1}\right)=\sqrt{\det\left[-i\boldsymbol{{\Omega}}\right]}e^{\pi i\mathbf{z} \cdot\boldsymbol{{\Omega}}^{-1}\cdot\mathbf{z}}\theta\left(\mathbf{z}\middle| \boldsymbol{{\Omega}}\right),</Math> where the square root assumes its principal value.
+</sentence>
+
+</para>
+
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S5.SS2">
+<title>Riemann Theta Functions with Characteristics</title>          
+<para xml:id="C21.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C21.S5.SS2.p1.s1">
+ <Math equation-number="21.5.9" mode="display" xml:id="C21.S5.E9">\theta\genfrac{[}{]}{0.0pt}{}{\mathbf{D}\boldsymbol{{\alpha}}-\mathbf{C} \boldsymbol{{\beta}}+\tfrac{1}{2}\operatorname{diag}[\mathbf{C}\mathbf{D}^{ \mathrm{T}}]}{-\mathbf{B}\boldsymbol{{\alpha}}+\mathbf{A}\boldsymbol{{\beta}}+ \tfrac{1}{2}\operatorname{diag}[\mathbf{A}\mathbf{B}^{\mathrm{T}}]}\left(\left [[\mathbf{C}\boldsymbol{{\Omega}}+\mathbf{D}]^{-1}\right]^{\mathrm{T}}\mathbf{ z}\middle|[\mathbf{A}\boldsymbol{{\Omega}}+\mathbf{B}][\mathbf{C}\boldsymbol{{ \Omega}}+\mathbf{D}]^{-1}\right)=\kappa(\boldsymbol{{\alpha}},\boldsymbol{{ \beta}},\boldsymbol{{\Gamma}})\sqrt{\det[\mathbf{C}\boldsymbol{{\Omega}}+ \mathbf{D}]}e^{\pi i\mathbf{z}\cdot\left[[\mathbf{C}\boldsymbol{{\Omega}}+ \mathbf{D}]^{-1}\mathbf{C}\right]\cdot\mathbf{z}}\theta\genfrac{[}{]}{0.0pt}{} {\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}\middle| \boldsymbol{{\Omega}}\right),</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C21.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C21.S5.SS2.p2.s1">
+where <Math mode="inline" xml:id="C21.S5.SS2.p2.m1">\kappa(\boldsymbol{{\alpha}},\boldsymbol{{\beta}},\boldsymbol{{\Gamma}})</Math> is a complex number that depends on <Math mode="inline" xml:id="C21.S5.SS2.p2.m2">\boldsymbol{{\alpha}}</Math> , <Math mode="inline" xml:id="C21.S5.SS2.p2.m3">\boldsymbol{{\beta}}</Math> , and <Math mode="inline" xml:id="C21.S5.SS2.p2.m4">\boldsymbol{{\Gamma}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C21.S5.SS2.p2.s2">
+However, <Math mode="inline" xml:id="C21.S5.SS2.p2.m5">\kappa(\boldsymbol{{\alpha}},\boldsymbol{{\beta}},\boldsymbol{{\Gamma}})</Math> is independent of <Math mode="inline" xml:id="C21.S5.SS2.p2.m6">\mathbf{z}</Math> and <Math mode="inline" xml:id="C21.S5.SS2.p2.m7">\boldsymbol{{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="117" xml:id="C21.S5.SS2.p2.s3">
+For explicit results in the case <Math mode="inline" xml:id="C21.S5.SS2.p2.m8">g=1</Math> , see §LABEL:sec:TH.id.mt.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C21.S6">
+<title>Products</title>        
+  
+<subsection xml:id="C21.S6.SS1">
+<title>Riemann Identity</title>        
+    
+<para xml:id="C21.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C21.S6.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C21.S6.SS1.p1.m1">\mathbf{T}=[T_{jk}]</Math> be an arbitrary <Math mode="inline" xml:id="C21.S6.SS1.p1.m2">h\times h</Math> orthogonal matrix (that is, <Math mode="inline" xml:id="C21.S6.SS1.p1.m3">\mathbf{T}\mathbf{T}^{\mathrm{T}}=\mathbf{I}</Math> ) with rational elements.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C21.S6.SS1.p1.s2">
+Also, let <Math mode="inline" xml:id="C21.S6.SS1.p1.m4">\mathbf{Z}</Math> be an arbitrary <Math mode="inline" xml:id="C21.S6.SS1.p1.m5">g\times h</Math> matrix.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="120" xml:id="C21.S6.SS1.p1.s3">
+Define <Math equation-number="21.6.1" mode="display" xml:id="C21.S6.E1">\mathcal{K}={\mathbb{Z}^{g\times h}}\mathbf{T}/({\mathbb{Z}^{g\times h}} \mathbf{T}\cap{\mathbb{Z}^{g\times h}}),</Math> that is, <Math mode="inline" xml:id="C21.S6.SS1.p1.m6">\mathcal{K}</Math> is the set of all <Math mode="inline" xml:id="C21.S6.SS1.p1.m7">g\times h</Math> matrices that are obtained by premultiplying <Math mode="inline" xml:id="C21.S6.SS1.p1.m8">\mathbf{T}</Math> by any <Math mode="inline" xml:id="C21.S6.SS1.p1.m9">g\times h</Math> matrix with integer elements; two such matrices in <Math mode="inline" xml:id="C21.S6.SS1.p1.m10">\mathcal{K}</Math> are considered equivalent if their difference is a matrix with integer elements.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="121" xml:id="C21.S6.SS1.p1.s4">
+Also, let <Math equation-number="21.6.2" mode="display" xml:id="C21.S6.E2">\mathcal{D}=|\mathbf{T}^{\mathrm{T}}{\mathbb{Z}^{h}}/(\mathbf{T}^{\mathrm{T}}{ \mathbb{Z}^{h}}\cap{\mathbb{Z}^{h}})|,</Math> that is, <Math mode="inline" xml:id="C21.S6.SS1.p1.m11">\mathcal{D}</Math> is the number of elements in the set containing all <Math mode="inline" xml:id="C21.S6.SS1.p1.m12">h</Math> -dimensional vectors obtained by multiplying <Math mode="inline" xml:id="C21.S6.SS1.p1.m13">\mathbf{T}^{\mathrm{T}}</Math> on the right by a vector with integer elements.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="122" xml:id="C21.S6.SS1.p1.s5">
+Two such vectors are consideredequivalent if their difference is a vector with integer elements.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="123" xml:id="C21.S6.SS1.p1.s6">
+Then <Math equation-number="21.6.3" mode="display" xml:id="C21.S6.E3">\prod_{j=1}^{h}\theta\left(\sum_{k=1}^{h}T_{jk}\mathbf{z}_{k}\middle| \boldsymbol{{\Omega}}\right)=\frac{1}{\mathcal{D}^{g}}\sum_{\mathbf{A}\in \mathcal{K}}\sum_{\mathbf{B}\in\mathcal{K}}e^{2\pi i\operatorname{tr}\left[ \frac{1}{2}\mathbf{A}^{\mathrm{T}}\boldsymbol{{\Omega}}\mathbf{A}+\mathbf{A}^{ \mathrm{T}}[\mathbf{Z}+\mathbf{B}]\right]}\*\prod_{j=1}^{h}\theta\left(\mathbf {z}_{j}+\boldsymbol{{\Omega}}\mathbf{a}_{j}+\mathbf{b}_{j}\middle|\boldsymbol{ {\Omega}}\right),</Math> where <Math mode="inline" xml:id="C21.S6.SS1.p1.m14">\mathbf{z}_{j}</Math> , <Math mode="inline" xml:id="C21.S6.SS1.p1.m15">\mathbf{a}_{j}</Math> , <Math mode="inline" xml:id="C21.S6.SS1.p1.m16">\mathbf{b}_{j}</Math> denote respectively the <Math mode="inline" xml:id="C21.S6.SS1.p1.m17">j</Math> th columns of <Math mode="inline" xml:id="C21.S6.SS1.p1.m18">\mathbf{Z}</Math> , <Math mode="inline" xml:id="C21.S6.SS1.p1.m19">\mathbf{A}</Math> , <Math mode="inline" xml:id="C21.S6.SS1.p1.m20">\mathbf{B}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="124" xml:id="C21.S6.SS1.p1.s7">
+This is theRiemann identity.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="125" xml:id="C21.S6.SS1.p1.s8">
+On using theta functions with characteristics, it becomes <Math equation-number="21.6.4" mode="display" xml:id="C21.S6.E4">\prod_{j=1}^{h}\theta\genfrac{[}{]}{0.0pt}{}{\sum_{k=1}^{h}T_{jk}\mathbf{c}_{k }}{\sum_{k=1}^{h}T_{jk}\mathbf{d}_{k}}\left(\sum_{k=1}^{h}T_{jk}\mathbf{z}_{k} \middle|\boldsymbol{{\Omega}}\right)=\frac{1}{\mathcal{D}^{g}}\sum_{\mathbf{A} \in\mathcal{K}}\sum_{\mathbf{B}\in\mathcal{K}}e^{-2\pi i\sum_{j=1}^{h}\mathbf{ b}_{j}\cdot\mathbf{c}_{j}}\prod_{j=1}^{h}\theta\genfrac{[}{]}{0.0pt}{}{\mathbf {a}_{j}+\mathbf{c}_{j}}{\mathbf{b}_{j}+\mathbf{d}_{j}}\left(\mathbf{z}_{j} \middle|\boldsymbol{{\Omega}}\right),</Math> where <Math mode="inline" xml:id="C21.S6.SS1.p1.m21">\mathbf{c}_{j}</Math> and <Math mode="inline" xml:id="C21.S6.SS1.p1.m22">\mathbf{d}_{j}</Math> are arbitrary <Math mode="inline" xml:id="C21.S6.SS1.p1.m23">h</Math> -dimensional vectors.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="126" xml:id="C21.S6.SS1.p1.s9">
+Many identities involving products of theta functions can be established using these formulas.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C21.S6.Px1">
+<title>Example</title>   
+<para xml:id="C21.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C21.S6.Px1.p1.s1">
+Let <Math mode="inline" xml:id="C21.S6.Px1.p1.m1">h=4</Math> and <Math equation-number="21.6.5" mode="display" xml:id="C21.S6.E5">\mathbf{T}=\frac{1}{2}\begin{bmatrix}1&amp;1&amp;1&amp;1\\ 1&amp;1&amp;-1&amp;-1\\ 1&amp;-1&amp;1&amp;-1\\ 1&amp;-1&amp;-1&amp;1\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="128" xml:id="C21.S6.Px1.p1.s2">
+Then
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S6.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C21.S6.Px1.p2.s1">
+ <Math equation-number="21.6.6" mode="display" xml:id="C21.S6.E6">\theta\left(\frac{\mathbf{x}+\mathbf{y}+\mathbf{u}+\mathbf{v}}{2}\middle| \boldsymbol{{\Omega}}\right)\theta\left(\frac{\mathbf{x}+\mathbf{y}-\mathbf{u} -\mathbf{v}}{2}\middle|\boldsymbol{{\Omega}}\right)\theta\left(\frac{\mathbf{x }-\mathbf{y}+\mathbf{u}-\mathbf{v}}{2}\middle|\boldsymbol{{\Omega}}\right) \theta\left(\frac{\mathbf{x}-\mathbf{y}-\mathbf{u}+\mathbf{v}}{2}\middle| \boldsymbol{{\Omega}}\right)=\frac{1}{2^{g}}\sum_{\boldsymbol{{\alpha}}\in \frac{1}{2}{\mathbb{Z}^{g}}/{\mathbb{Z}^{g}}}\,\sum_{\boldsymbol{{\beta}}\in \frac{1}{2}{\mathbb{Z}^{g}}/{\mathbb{Z}^{g}}}e^{2\pi i\left(2\boldsymbol{{ \alpha}}\cdot\boldsymbol{{\Omega}}\cdot\boldsymbol{{\alpha}}+\boldsymbol{{ \alpha}}\cdot[\mathbf{x}+\mathbf{y}+\mathbf{u}+\mathbf{v}]\right)}\*\theta \left(\mathbf{x}+\boldsymbol{{\Omega}}\boldsymbol{{\alpha}}+\boldsymbol{{\beta }}\middle|\boldsymbol{{\Omega}}\right)\theta\left(\mathbf{y}+\boldsymbol{{ \Omega}}\boldsymbol{{\alpha}}+\boldsymbol{{\beta}}\middle|\boldsymbol{{\Omega} }\right)\theta\left(\mathbf{u}+\boldsymbol{{\Omega}}\boldsymbol{{\alpha}}+ \boldsymbol{{\beta}}\middle|\boldsymbol{{\Omega}}\right)\theta\left(\mathbf{v} +\boldsymbol{{\Omega}}\boldsymbol{{\alpha}}+\boldsymbol{{\beta}}\middle| \boldsymbol{{\Omega}}\right),</Math> and <Math equation-number="21.6.7" mode="display" xml:id="C21.S6.E7">\theta\genfrac{[}{]}{0.0pt}{}{\tfrac{1}{2}[\mathbf{c}_{1}+\mathbf{c}_{2}+ \mathbf{c}_{3}+\mathbf{c}_{4}]}{\tfrac{1}{2}[\mathbf{d}_{1}+\mathbf{d}_{2}+ \mathbf{d}_{3}+\mathbf{d}_{4}]}\left(\frac{\mathbf{x}+\mathbf{y}+\mathbf{u}+ \mathbf{v}}{2}\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{[}{]}{0.0pt}{ }{\tfrac{1}{2}[\mathbf{c}_{1}+\mathbf{c}_{2}-\mathbf{c}_{3}-\mathbf{c}_{4}]}{ \tfrac{1}{2}[\mathbf{d}_{1}+\mathbf{d}_{2}-\mathbf{d}_{3}-\mathbf{d}_{4}]} \left(\frac{\mathbf{x}+\mathbf{y}-\mathbf{u}-\mathbf{v}}{2}\middle|\boldsymbol {{\Omega}}\right)\*\theta\genfrac{[}{]}{0.0pt}{}{\tfrac{1}{2}[\mathbf{c}_{1}- \mathbf{c}_{2}+\mathbf{c}_{3}-\mathbf{c}_{4}]}{\tfrac{1}{2}[\mathbf{d}_{1}- \mathbf{d}_{2}+\mathbf{d}_{3}-\mathbf{d}_{4}]}\left(\frac{\mathbf{x}-\mathbf{y }+\mathbf{u}-\mathbf{v}}{2}\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{ [}{]}{0.0pt}{}{\tfrac{1}{2}[\mathbf{c}_{1}-\mathbf{c}_{2}-\mathbf{c}_{3}+ \mathbf{c}_{4}]}{\tfrac{1}{2}[\mathbf{d}_{1}-\mathbf{d}_{2}-\mathbf{d}_{3}+ \mathbf{d}_{4}]}\left(\frac{\mathbf{x}-\mathbf{y}-\mathbf{u}+\mathbf{v}}{2} \middle|\boldsymbol{{\Omega}}\right)\\ =\frac{1}{2^{g}}\sum_{\boldsymbol{{\alpha}}\in\frac{1}{2}{\mathbb{Z}^{g}}/{ \mathbb{Z}^{g}}}\,\sum_{\boldsymbol{{\beta}}\in\frac{1}{2}{\mathbb{Z}^{g}}/{ \mathbb{Z}^{g}}}e^{-2\pi i\boldsymbol{{\beta}}\cdot[\mathbf{c}_{1}+\mathbf{c}_ {2}+\mathbf{c}_{3}+\mathbf{c}_{4}]}\*\theta\genfrac{[}{]}{0.0pt}{}{\mathbf{c}_ {1}+\boldsymbol{{\alpha}}}{\mathbf{d}_{1}+\boldsymbol{{\beta}}}\left(\mathbf{x }\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{[}{]}{0.0pt}{}{\mathbf{c}_ {2}+\boldsymbol{{\alpha}}}{\mathbf{d}_{2}+\boldsymbol{{\beta}}}\left(\mathbf{y }\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{[}{]}{0.0pt}{}{\mathbf{c}_ {3}+\boldsymbol{{\alpha}}}{\mathbf{d}_{3}+\boldsymbol{{\beta}}}\left(\mathbf{u }\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{[}{]}{0.0pt}{}{\mathbf{c}_ {4}+\boldsymbol{{\alpha}}}{\mathbf{d}_{4}+\boldsymbol{{\beta}}}\left(\mathbf{v }\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S6.SS2">
+<title>Addition Formulas</title>        
+  
+<para xml:id="C21.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C21.S6.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C21.S6.SS2.p1.m1">\boldsymbol{{\alpha}}</Math> , <Math mode="inline" xml:id="C21.S6.SS2.p1.m2">\boldsymbol{{\beta}}</Math> , <Math mode="inline" xml:id="C21.S6.SS2.p1.m3">\boldsymbol{{\gamma}}</Math> , <Math mode="inline" xml:id="C21.S6.SS2.p1.m4">\boldsymbol{{\delta}}\in{\mathbb{R}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="131" xml:id="C21.S6.SS2.p1.s2">
+Then <Math equation-number="21.6.8" mode="display" xml:id="C21.S6.E8">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\gamma}}} \left(\mathbf{z}_{1}\middle|\boldsymbol{{\Omega}}\right)\theta\genfrac{[}{]}{0 .0pt}{}{\boldsymbol{{\beta}}}{\boldsymbol{{\delta}}}\left(\mathbf{z}_{2} \middle|\boldsymbol{{\Omega}}\right)=\sum_{\boldsymbol{{\nu}}\in{\mathbb{Z}^{g }}/\left(2{\mathbb{Z}^{g}}\right)}\theta\genfrac{[}{]}{0.0pt}{}{\frac{1}{2}[ \boldsymbol{{\alpha}}+\boldsymbol{{\beta}}+\boldsymbol{{\nu}}]}{\boldsymbol{{ \gamma}}+\boldsymbol{{\delta}}}\left(\mathbf{z}_{1}+\mathbf{z}_{2}\middle|2 \boldsymbol{{\Omega}}\right)\*\theta\genfrac{[}{]}{0.0pt}{}{\frac{1}{2}[ \boldsymbol{{\alpha}}-\boldsymbol{{\beta}}+\boldsymbol{{\nu}}]}{\boldsymbol{{ \gamma}}-\boldsymbol{{\delta}}}\left(\mathbf{z}_{1}-\mathbf{z}_{2}\middle|2 \boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="132" xml:id="C21.S6.SS2.p1.s3">
+Thus <Math mode="inline" xml:id="C21.S6.SS2.p1.m5">\boldsymbol{{\nu}}</Math> is a <Math mode="inline" xml:id="C21.S6.SS2.p1.m6">g</Math> -dimensional vector whose entries are either <Math mode="inline" xml:id="C21.S6.SS2.p1.m7">0</Math> or <Math mode="inline" xml:id="C21.S6.SS2.p1.m8">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="133" xml:id="C21.S6.SS2.p1.s4">
+For this result and a generalization see ( ) and ( , pp. 38–41) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="134" xml:id="C21.S6.SS2.p1.s5">
+For addition formulas for classicaltheta functions see §LABEL:sec:TH.id.af.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+            
+<section xml:id="C21.S7">
+<title>Riemann Surfaces</title>        
+  
+<subsection xml:id="C21.S7.SS1">
+<title>Connection of Riemann Theta Functions to Riemann Surfaces</title>        
+    
+<para xml:id="C21.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C21.S7.SS1.p1.s1">
+In almost all applications, a Riemann theta function is associated with acompact Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="136" xml:id="C21.S7.SS1.p1.s2">
+Although there are other ways to represent Riemann surfaces (see e.g. ( , §2.1) ), they are obtainable from plane algebraic curves ( ( ) , or ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="137" xml:id="C21.S7.SS1.p1.s3">
+Consider the set of points in <Math mode="inline" xml:id="C21.S7.SS1.p1.m1">{\mathbb{C}^{2}}</Math> that satisfy the equation <Math equation-number="21.7.1" mode="display" xml:id="C21.S7.E1">P(\lambda,\mu)=0,</Math> where <Math mode="inline" xml:id="C21.S7.SS1.p1.m2">P(\lambda,\mu)</Math> is a polynomial in <Math mode="inline" xml:id="C21.S7.SS1.p1.m3">\lambda</Math> and <Math mode="inline" xml:id="C21.S7.SS1.p1.m4">\mu</Math> that does not factor over <Math mode="inline" xml:id="C21.S7.SS1.p1.m5">{\mathbb{C}^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="138" xml:id="C21.S7.SS1.p1.s4">
+Equation (LABEL:eq:MT.7.algcurve) determines a plane algebraic curve in <Math mode="inline" xml:id="C21.S7.SS1.p1.m6">{\mathbb{C}^{2}}</Math> , which is made compact by adding its points at infinity.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="139" xml:id="C21.S7.SS1.p1.s5">
+To accomplish this we write (LABEL:eq:MT.7.algcurve) in terms of homogeneous coordinates: <Math equation-number="21.7.2" mode="display" xml:id="C21.S7.E2">\tilde{P}(\tilde{\lambda},\tilde{\mu},\tilde{\eta})=0,</Math> by setting <Math mode="inline" xml:id="C21.S7.SS1.p1.m7">\lambda=\tilde{\lambda}/\tilde{\eta}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p1.m8">\mu=\tilde{\mu}/\tilde{\eta}</Math> , and then clearing fractions.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="140" xml:id="C21.S7.SS1.p1.s6">
+This compact curve may have singular points, that is, points at which the gradient of <Math mode="inline" xml:id="C21.S7.SS1.p1.m9">\tilde{P}</Math> vanishes.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="141" xml:id="C21.S7.SS1.p1.s7">
+Removing the singularities of this curve gives rise to a two-dimensional connected manifold with a complex-analytic structure, that is, a Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="142" xml:id="C21.S7.SS1.p1.s8">
+All compact Riemann surfaces can be obtained this way.
+</sentence>
+
+</para>
+        
+<para xml:id="C21.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C21.S7.SS1.p2.s1">
+Since a Riemann surface <Math mode="inline" xml:id="C21.S7.SS1.p2.m1">\Gamma</Math> is a two-dimensional manifold that is orientable (owing to its analytic structure), its only topological invariant is its genus <Math mode="inline" xml:id="C21.S7.SS1.p2.m2">g</Math> (the number of handles in the surface).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C21.S7.SS1.p2.s2">
+On this surface, we choose <Math mode="inline" xml:id="C21.S7.SS1.p2.m3">2g</Math> cycles (that is, closed oriented curves, each with at most a finite number of singular points) <Math mode="inline" xml:id="C21.S7.SS1.p2.m4">a_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p2.m5">b_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p2.m6">j=1,2,\dots,g</Math> , such that theirintersection indices satisfy <Math equation-number="21.7.3" mode="display" xml:id="C21.S7.E3">a_{j}\circ a_{k}=0, b_{j}\circ b_{k}=0, a_{j}\circ b_{k}=\delta_{j,k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="145" xml:id="C21.S7.SS1.p2.s3">
+For example, Figure LABEL:fig:MT.surfacedepicts a genus 2 surface.
+</sentence>
+
+</para>
+        
+  
+<sentence sentence-num-in-section="146" xml:id="C21.S7.F1.s1">
+Figure 21.7.1: A basis of cycles for a genus 2 surface.
+</sentence>   
+ 
+<para xml:id="C21.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C21.S7.SS1.p3.s1">
+On a Riemann surface of genus <Math mode="inline" xml:id="C21.S7.SS1.p3.m1">g</Math> , there are <Math mode="inline" xml:id="C21.S7.SS1.p3.m2">g</Math> linearly independentholomorphic differentials <Math mode="inline" xml:id="C21.S7.SS1.p3.m3">\omega_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p3.m4">j=1,2,\dots,g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C21.S7.SS1.p3.s2">
+If a local coordinate <Math mode="inline" xml:id="C21.S7.SS1.p3.m5">z</Math> is chosen on the Riemann surface, then the local coordinate representation of these holomorphic differentials is given by <Math equation-number="21.7.4" mode="display" xml:id="C21.S7.E4">\omega_{j}=f_{j}(z)\mathrm{d}z, subject to j=1,2,\dots,g,</Math> where <Math mode="inline" xml:id="C21.S7.SS1.p3.m6">f_{j}(z)</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p3.m7">j=1,2,\dots,g</Math> are analytic functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="149" xml:id="C21.S7.SS1.p3.s3">
+Thus the differentials <Math mode="inline" xml:id="C21.S7.SS1.p3.m8">\omega_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p3.m9">j=1,2,\dots,g</Math> have no singularities on <Math mode="inline" xml:id="C21.S7.SS1.p3.m10">\Gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="150" xml:id="C21.S7.SS1.p3.s4">
+Note that for the purposes of integrating these holomorphic differentials, all cycles on the surface are a linear combination of the cycles <Math mode="inline" xml:id="C21.S7.SS1.p3.m11">a_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p3.m12">b_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS1.p3.m13">j=1,2,\dots,g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="151" xml:id="C21.S7.SS1.p3.s5">
+The <Math mode="inline" xml:id="C21.S7.SS1.p3.m14">\omega_{j}</Math> are normalized so that <Math equation-number="21.7.5" mode="display" xml:id="C21.S7.E5">\oint_{a_{k}}\omega_{j}=\delta_{j,k}, subject to j,k=1,2,\dots,g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="152" xml:id="C21.S7.SS1.p3.s6">
+Then the matrix defined by <Math equation-number="21.7.6" mode="display" xml:id="C21.S7.E6">\Omega_{jk}=\oint_{b_{k}}\omega_{j}, subject to j,k=1,2,\dots,g,</Math> is a Riemann matrix and it is used to define the corresponding Riemann theta function.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="153" xml:id="C21.S7.SS1.p3.s7">
+In this way, we associate a Riemann theta function with every compact Riemann surface <Math mode="inline" xml:id="C21.S7.SS1.p3.m15">\Gamma</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.S7.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C21.S7.SS1.p4.s1">
+Riemann theta functions originating from Riemann surfaces are special in the sense that a general <Math mode="inline" xml:id="C21.S7.SS1.p4.m1">g</Math> -dimensional Riemann theta function depends on <Math mode="inline" xml:id="C21.S7.SS1.p4.m2">g(g+1)/2</Math> complex parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C21.S7.SS1.p4.s2">
+In contrast, a <Math mode="inline" xml:id="C21.S7.SS1.p4.m3">g</Math> -dimensional Riemann theta function arising from a compact Riemann surface of genus <Math mode="inline" xml:id="C21.S7.SS1.p4.m4">g</Math> ( <Math mode="inline" xml:id="C21.S7.SS1.p4.m5">&gt;1</Math> ) depends on at most <Math mode="inline" xml:id="C21.S7.SS1.p4.m6">3g-3</Math> complex parameters (one complex parameter for the case <Math mode="inline" xml:id="C21.S7.SS1.p4.m7">g=1</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="156" xml:id="C21.S7.SS1.p4.s3">
+These special Riemann theta functions satisfy many special identities, two of which appear in the following subsections.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="157" xml:id="C21.S7.SS1.p4.s4">
+For more information, see ( ) , ( , §9.3) , ( , Chapter 2) , and ( , §2.2–2.3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S7.SS2">
+<title>Fay’s Trisecant Identity</title>        
+  
+<para xml:id="C21.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C21.S7.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C21.S7.SS2.p1.m1">\boldsymbol{{\alpha}}</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p1.m2">\boldsymbol{{\beta}}</Math> be such that
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="159" xml:id="C21.S7.SS2.p2.s1">
+ <Math equation-number="21.7.7" mode="display" xml:id="C21.S7.E7">\left(\frac{\partial}{\partial z_{1}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol {{\alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}} \right)\Big{|}_{\mathbf{z}=\boldsymbol{{0}}},\dots,\frac{\partial}{\partial z_ {g}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)\Big{|}_{\mathbf{z}= \boldsymbol{{0}}}\right)\neq\boldsymbol{{0}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="160" xml:id="C21.S7.SS2.p2.s2">
+Define the holomorphic differential <Math equation-number="21.7.8" mode="display" xml:id="C21.S7.E8">\zeta=\sum_{j=1}^{g}\omega_{j}\frac{\partial}{\partial z_{j}}\theta\genfrac{[} {]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z} \middle|\boldsymbol{{\Omega}}\right)\Big{|}_{\mathbf{z}=\boldsymbol{{0}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="161" xml:id="C21.S7.SS2.p2.s3">
+Then the prime form on the corresponding compact Riemann surface <Math mode="inline" xml:id="C21.S7.SS2.p2.m1">\Gamma</Math> is defined by <Math equation-number="21.7.9" mode="display" xml:id="C21.S7.E9">E(P_{1},P_{2})=\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{ \boldsymbol{{\beta}}}\left(\int_{P_{1}}^{P_{2}}\boldsymbol{{\omega}}\middle| \boldsymbol{{\Omega}}\right)\Bigg{/}\left(\sqrt{\zeta(P_{1})}\sqrt{\zeta(P_{2} )}\right),</Math> where <Math mode="inline" xml:id="C21.S7.SS2.p2.m2">P_{1}</Math> and <Math mode="inline" xml:id="C21.S7.SS2.p2.m3">P_{2}</Math> are points on <Math mode="inline" xml:id="C21.S7.SS2.p2.m4">\Gamma</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p2.m5">\boldsymbol{{\omega}}=(\omega_{1},\omega_{2},\dots,\omega_{g})</Math> , and the path of integration on <Math mode="inline" xml:id="C21.S7.SS2.p2.m6">\Gamma</Math> from <Math mode="inline" xml:id="C21.S7.SS2.p2.m7">P_{1}</Math> to <Math mode="inline" xml:id="C21.S7.SS2.p2.m8">P_{2}</Math> is identical for all components.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="162" xml:id="C21.S7.SS2.p2.s4">
+Here <Math mode="inline" xml:id="C21.S7.SS2.p2.m9">\sqrt{\zeta(P)}</Math> is such that <Math mode="inline" xml:id="C21.S7.SS2.p2.m10">\sqrt{\zeta(P)}^{2}=\zeta(P)</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p2.m11">P\in\Gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="163" xml:id="C21.S7.SS2.p2.s5">
+Either branch of the square roots may be chosen, as long as the branch is consistent across <Math mode="inline" xml:id="C21.S7.SS2.p2.m12">\Gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="164" xml:id="C21.S7.SS2.p2.s6">
+For all <Math mode="inline" xml:id="C21.S7.SS2.p2.m13">\mathbf{z}\in{\mathbb{C}^{g}}</Math> , and all <Math mode="inline" xml:id="C21.S7.SS2.p2.m14">P_{1}</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p2.m15">P_{2}</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p2.m16">P_{3}</Math> , <Math mode="inline" xml:id="C21.S7.SS2.p2.m17">P_{4}</Math> on <Math mode="inline" xml:id="C21.S7.SS2.p2.m18">\Gamma</Math> , Fay’s identity is given by
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S7.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="165" xml:id="C21.S7.SS2.p3.s1">
+ <Math equation-number="21.7.10" mode="display" xml:id="C21.S7.E10">\theta\left(\mathbf{z}+\int_{P_{1}}^{P_{3}}\boldsymbol{{\omega}}\middle| \boldsymbol{{\Omega}}\right)\theta\left(\mathbf{z}+\int_{P_{2}}^{P_{4}} \boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{3},P_{2})E(P_{1} ,P_{4})+\theta\left(\mathbf{z}+\int_{P_{2}}^{P_{3}}\boldsymbol{{\omega}} \middle|\boldsymbol{{\Omega}}\right)\theta\left(\mathbf{z}+\int_{P_{1}}^{P_{4} }\boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{3},P_{1})E(P_{4 },P_{2})=\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)\theta\left (\mathbf{z}+\int_{P_{1}}^{P_{3}}\boldsymbol{{\omega}}+\int_{P_{2}}^{P_{4}} \boldsymbol{{\omega}}\middle|\boldsymbol{{\Omega}}\right)E(P_{1},P_{2})E(P_{3} ,P_{4}),</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C21.S7.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C21.S7.SS2.p4.s1">
+where again all integration paths are identical for all components.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C21.S7.SS2.p4.s2">
+Generalizations of this identity are given in ( , Chapter 2) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="168" xml:id="C21.S7.SS2.p4.s3">
+Fay derives (LABEL:eq:MT.7.fay) as a special case of a more general class ofaddition theorems for Riemann theta functions on Riemann surfaces.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S7.SS3">
+<title>Frobenius’ Identity</title>        
+    
+<para xml:id="C21.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C21.S7.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C21.S7.SS3.p1.m1">\Gamma</Math> be a hyperelliptic Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="170" xml:id="C21.S7.SS3.p1.s2">
+These are Riemann surfaces that may be obtained from algebraic curves of the form <Math equation-number="21.7.11" mode="display" xml:id="C21.S7.E11">\mu^{2}=Q(\lambda),</Math> where <Math mode="inline" xml:id="C21.S7.SS3.p1.m2">Q(\lambda)</Math> is a polynomial in <Math mode="inline" xml:id="C21.S7.SS3.p1.m3">\lambda</Math> of odd degree <Math mode="inline" xml:id="C21.S7.SS3.p1.m4">2g+1</Math> <Math mode="inline" xml:id="C21.S7.SS3.p1.m5">(\geq 5)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="171" xml:id="C21.S7.SS3.p1.s3">
+The genus of this surface is <Math mode="inline" xml:id="C21.S7.SS3.p1.m6">g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="172" xml:id="C21.S7.SS3.p1.s4">
+The zeros <Math mode="inline" xml:id="C21.S7.SS3.p1.m7">\lambda_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS3.p1.m8">j=1,2,\dots,2g+1</Math> of <Math mode="inline" xml:id="C21.S7.SS3.p1.m9">Q(\lambda)</Math> specify the finite branch points <Math mode="inline" xml:id="C21.S7.SS3.p1.m10">P_{j}</Math> , that is, points at which <Math mode="inline" xml:id="C21.S7.SS3.p1.m11">\mu_{j}=0</Math> , on the Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="173" xml:id="C21.S7.SS3.p1.s5">
+Denote the set of all branch points by <Math mode="inline" xml:id="C21.S7.SS3.p1.m12">B=\{P_{1},P_{2},\dots,P_{2g+1},P_{\infty}\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="174" xml:id="C21.S7.SS3.p1.s6">
+Consider a fixed subset <Math mode="inline" xml:id="C21.S7.SS3.p1.m13">U</Math> of <Math mode="inline" xml:id="C21.S7.SS3.p1.m14">B</Math> , such that the number of elements <Math mode="inline" xml:id="C21.S7.SS3.p1.m15">|U|</Math> in the set <Math mode="inline" xml:id="C21.S7.SS3.p1.m16">U</Math> is <Math mode="inline" xml:id="C21.S7.SS3.p1.m17">g+1</Math> , and <Math mode="inline" xml:id="C21.S7.SS3.p1.m18">P_{\infty}\notin U</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="175" xml:id="C21.S7.SS3.p1.s7">
+Next, define an isomorphism <Math mode="inline" xml:id="C21.S7.SS3.p1.m19">\boldsymbol{{\eta}}</Math> which maps every subset <Math mode="inline" xml:id="C21.S7.SS3.p1.m20">T</Math> of <Math mode="inline" xml:id="C21.S7.SS3.p1.m21">B</Math> with an even number of elements to a <Math mode="inline" xml:id="C21.S7.SS3.p1.m22">2g</Math> -dimensional vector <Math mode="inline" xml:id="C21.S7.SS3.p1.m23">\boldsymbol{{\eta}}(T)</Math> with elements either <Math mode="inline" xml:id="C21.S7.SS3.p1.m24">0</Math> or <Math mode="inline" xml:id="C21.S7.SS3.p1.m25">\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="176" xml:id="C21.S7.SS3.p1.s8">
+Define the operation <Math equation-number="21.7.12" mode="display" xml:id="C21.S7.E12">T_{1}\ominus T_{2}=(T_{1}\cup T_{2})\setminus(T_{1}\cap T_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="177" xml:id="C21.S7.SS3.p1.s9">
+Also, <Math mode="inline" xml:id="C21.S7.SS3.p1.m26">T^{c}=B\setminus T</Math> , <Math mode="inline" xml:id="C21.S7.SS3.p1.m27">\boldsymbol{{\eta}}^{1}(T)=(\eta_{1}(T),\eta_{2}(T),\dots,\eta_{g}(T))</Math> , and <Math mode="inline" xml:id="C21.S7.SS3.p1.m28">\boldsymbol{{\eta}}^{2}(T)=(\eta_{g+1}(T),\eta_{g+2}(T),\dots,\eta_{2g}(T))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="178" xml:id="C21.S7.SS3.p1.s10">
+Then the isomorphism is determined completely by: <Math equation-number="21.7.13" mode="display" xml:id="C21.S7.E13">\boldsymbol{{\eta}}(T)=\boldsymbol{{\eta}}(T^{c}),</Math> <Math equation-number="21.7.14" mode="display" xml:id="C21.S7.E14">\boldsymbol{{\eta}}(T_{1}\ominus T_{2})=\boldsymbol{{\eta}}(T_{1})+\boldsymbol {{\eta}}(T_{2}),</Math> <Math equation-number="21.7.15" mode="display" xml:id="C21.S7.E15">4\boldsymbol{{\eta}}^{1}(T)\cdot\boldsymbol{{\eta}}^{2}(T)=\tfrac{1}{2}\left(| T\ominus U|-g-1\right)\pmod{2},</Math> <Math equation-number="21.7.16" mode="display" xml:id="C21.S7.E16">4(\boldsymbol{{\eta}}^{1}(T_{1})\cdot\boldsymbol{{\eta}}^{2}(T_{2})- \boldsymbol{{\eta}}^{2}(T_{1})\cdot\boldsymbol{{\eta}}^{1}(T_{2}))=|T_{1}\cap T _{2}|\pmod{2}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C21.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C21.S7.SS3.p2.s1">
+Furthermore, let <Math mode="inline" xml:id="C21.S7.SS3.p2.m1">\boldsymbol{{\eta}}(P_{\infty})=\boldsymbol{{0}}</Math> and <Math mode="inline" xml:id="C21.S7.SS3.p2.m2">\boldsymbol{{\eta}}(P_{j})=\boldsymbol{{\eta}}(\{P_{j},P_{\infty}\})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="180" xml:id="C21.S7.SS3.p2.s2">
+Then for all <Math mode="inline" xml:id="C21.S7.SS3.p2.m3">\mathbf{z}_{j}\in{\mathbb{C}^{g}}</Math> , <Math mode="inline" xml:id="C21.S7.SS3.p2.m4">j=1,2,3,4</Math> , such that <Math mode="inline" xml:id="C21.S7.SS3.p2.m5">\mathbf{z}_{1}+\mathbf{z}_{2}+\mathbf{z}_{3}+\mathbf{z}_{4}=0</Math> , and for all <Math mode="inline" xml:id="C21.S7.SS3.p2.m6">\boldsymbol{{\alpha}}_{j}</Math> , <Math mode="inline" xml:id="C21.S7.SS3.p2.m7">\boldsymbol{{\beta}}_{j}</Math> <Math mode="inline" xml:id="C21.S7.SS3.p2.m8">\in{\mathbb{R}^{g}}</Math> , such that <Math mode="inline" xml:id="C21.S7.SS3.p2.m9">\boldsymbol{{\alpha}}_{1}+\boldsymbol{{\alpha}}_{2}+\boldsymbol{{\alpha}}_{3}+ \boldsymbol{{\alpha}}_{4}=0</Math> and <Math mode="inline" xml:id="C21.S7.SS3.p2.m10">\boldsymbol{{\beta}}_{1}+\boldsymbol{{\beta}}_{2}+\boldsymbol{{\beta}}_{3}+ \boldsymbol{{\beta}}_{4}=0</Math> , we have Frobenius’ identity: <Math equation-number="21.7.17" mode="display" xml:id="C21.S7.E17">\sum_{P_{j}\in U}\prod_{k=1}^{4}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{ \alpha}}_{k}+\boldsymbol{{\eta}}^{1}(P_{j})}{\boldsymbol{{\beta}}_{k}+ \boldsymbol{{\eta}}^{2}(P_{j})}\left(\mathbf{z}_{k}\middle|\boldsymbol{{\Omega }}\right)=\sum_{P_{j}\in U^{c}}\prod_{k=1}^{4}\theta\genfrac{[}{]}{0.0pt}{}{ \boldsymbol{{\alpha}}_{k}+\boldsymbol{{\eta}}^{1}(P_{j})}{\boldsymbol{{\beta}} _{k}+\boldsymbol{{\eta}}^{2}(P_{j})}\left(\mathbf{z}_{k}\middle|\boldsymbol{{ \Omega}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C21.S8">
+<title>Abelian Functions</title>        
+   
+<para xml:id="C21.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C21.S8.p1.s1">
+An Abelian function is a <Math mode="inline" xml:id="C21.S8.p1.m1">2g</Math> -fold periodic, meromorphic function of <Math mode="inline" xml:id="C21.S8.p1.m2">g</Math> complex variables.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="182" xml:id="C21.S8.p1.s2">
+In consequence, Abelian functions are generalizations of elliptic functions (§LABEL:sec:WE.2(iii))to more than one complex variable.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="183" xml:id="C21.S8.p1.s3">
+For every Abelian function, there is a positive integer <Math mode="inline" xml:id="C21.S8.p1.m3">n</Math> , such that the Abelian function can be expressed as a ratio of linear combinations of products with <Math mode="inline" xml:id="C21.S8.p1.m4">n</Math> factors of Riemann theta functions with characteristics that share a common period lattice.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="184" xml:id="C21.S8.p1.s4">
+For further information see ( , pp. 132–135) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C21.S9">
+<title>Integrable Equations</title>        
+ 
+     
+<para xml:id="C21.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C21.S9.p1.s1">
+Riemann theta functions arise in the study of integrable differential equations that have applications in many areas, including fluid mechanics ( ( , Chapter 4) ), magnetic monopoles ( ( ) ), and string theory ( ( , Part 3) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="186" xml:id="C21.S9.p1.s2">
+Typical examples of such equations are the Korteweg–de Vries equation <Math equation-number="21.9.1" mode="display" xml:id="C21.S9.E1">4u_{t}=6uu_{x}+u_{xxx},</Math> and the nonlinear Schrödinger equations <Math equation-number="21.9.2" mode="display" xml:id="C21.S9.E2">iu_{t}=-\tfrac{1}{2}u_{xx}\pm|u|^{2}u</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="187" xml:id="C21.S9.p1.s3">
+Here, and in what follows, <Math mode="inline" xml:id="C21.S9.p1.m1">x,y</Math> , and <Math mode="inline" xml:id="C21.S9.p1.m2">t</Math> suffixes indicate partial derivatives.
+</sentence>
+
+</para>
+  
+<para xml:id="C21.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C21.S9.p2.s1">
+Particularly important for the use of Riemann theta functions is the Kadomtsev–Petviashvili (KP) equation, which describes the propagation of two-dimensional, long-wave length surface waves in shallow water ( ( , Chapter 4) ): <Math equation-number="21.9.3" mode="display" xml:id="C21.S9.E3">(-4u_{t}+6uu_{x}+u_{xxx})_{x}+3u_{yy}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="189" xml:id="C21.S9.p2.s2">
+Here <Math mode="inline" xml:id="C21.S9.p2.m1">x</Math> and <Math mode="inline" xml:id="C21.S9.p2.m2">y</Math> are spatial variables, <Math mode="inline" xml:id="C21.S9.p2.m3">t</Math> is time, and <Math mode="inline" xml:id="C21.S9.p2.m4">u(x,y,t)</Math> is the elevation of the surface wave. All quantities are made dimensionless by a suitable scaling transformation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="190" xml:id="C21.S9.p2.s3">
+The KP equation has a class of quasi-periodic solutions described by Riemann theta functions, given by <Math equation-number="21.9.4" mode="display" xml:id="C21.S9.E4">u(x,y,t)=c+2\frac{{\partial}^{2}}{{\partial x}^{2}}\ln\left(\theta\left( \mathbf{k}x+\mathbf{l}y+\boldsymbol{{\omega}}t+\boldsymbol{{\phi}}\middle| \boldsymbol{{\Omega}}\right)\right),</Math> where <Math mode="inline" xml:id="C21.S9.p2.m5">c</Math> is a complex constant and <Math mode="inline" xml:id="C21.S9.p2.m6">\mathbf{k}</Math> , <Math mode="inline" xml:id="C21.S9.p2.m7">\mathbf{l}</Math> , <Math mode="inline" xml:id="C21.S9.p2.m8">\boldsymbol{{\omega}}</Math> , and <Math mode="inline" xml:id="C21.S9.p2.m9">\boldsymbol{{\phi}}</Math> are <Math mode="inline" xml:id="C21.S9.p2.m10">g</Math> -dimensional complex vectors; see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="191" xml:id="C21.S9.p2.s4">
+These parameters, including <Math mode="inline" xml:id="C21.S9.p2.m11">\boldsymbol{{\Omega}}</Math> , are not free: they are determined by a compact, connected Riemann surface ( ( ) ), or alternatively by an appropriate initial condition <Math mode="inline" xml:id="C21.S9.p2.m12">u(x,y,0)</Math> ( ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="192" xml:id="C21.S9.p2.s5">
+These solutions have been compared successfully with physical experiments for <Math mode="inline" xml:id="C21.S9.p2.m13">g=1,2</Math> ( ( ) , ( ) , and ( ) ). See Figures LABEL:fig:MT.9.theta1 andLABEL:fig:MT.9.theta1a.
+</sentence>
+
+</para>
+
+          
+<sentence sentence-num-in-section="193" xml:id="C21.S9.F1.s1">
+Figure 21.9.1: Two-dimensional periodic waves in a shallow water wave tank, taken from by permission of Cambridge University Press. The original caption reads “Mosaic of two overhead photographs, showing surface patterns of waves in shallow water.”
+</sentence>           
+<sentence sentence-num-in-section="194" xml:id="C21.S9.F2.s1">
+Figure 21.9.2: Contour plot of a two-phase solution of Equation ( ). Such a solution is given in terms of a Riemann theta function with two phases; see , , and . 
+</sentence> 
+   
+<para xml:id="C21.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C21.S9.p3.s1">
+Furthermore, the solutions of the KP equation solve the Schottky problem: this is the question concerning conditions that a Riemann matrix needs to satisfy in order to be associated with a Riemann surface ( ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="196" xml:id="C21.S9.p3.s2">
+Following the work of ( ) , Novikov conjectured that the Riemann theta function in (LABEL:eq:MT.9.kpsol) gives rise to a solution of the KP equation (LABEL:eq:MT.9.kp) if, and only if, the theta function originates from a Riemann surface; see ( , §IV.4) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="197" xml:id="C21.S9.p3.s3">
+The first part of this conjecture was established in ( ) ; the second part was proved in ( ) .
+</sentence>
+
+</para>
+  
+</section>
+          
+ 
+<section xml:id="C21.S10">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C21.S10.SS1">
+<title>General Riemann Theta Functions</title>        
+ 
+<para xml:id="C21.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="198" xml:id="C21.S10.SS1.p1.s1">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S10.SS2">
+<title>Riemann Theta Functions Associated with a Riemann Surface</title>          
+ 
+<para xml:id="C21.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="199" xml:id="C21.S10.SS2.p1.s1">
+In addition to evaluating the Fourier series, the main problem here is to compute a Riemann matrix originating from a Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="200" xml:id="C21.S10.SS2.p1.s2">
+Various approaches are considered in the following references: ( , Chapter 5) and references therein.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="201" xml:id="C21.S10.SS2.p1.s3">
+Here the Riemann surface is represented by the action of a Schottky group on a region of the complex plane.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="202" xml:id="C21.S10.SS2.p1.s4">
+The same representation is used in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="203" xml:id="C21.S10.SS2.p1.s5">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="204" xml:id="C21.S10.SS2.p1.s6">
+Here a Hurwitz system is chosen to represent the Riemann surface.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="205" xml:id="C21.S10.SS2.p1.s7">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="206" xml:id="C21.S10.SS2.p1.s8">
+Here a plane algebraic curve representation of the Riemann surface is used.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C21.S11">
+<title>Software</title>        
+ 
+<para xml:id="C21.S11.p1">
+
+</para>
+ 
+<para xml:id="C21.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C21.S11.p2.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="208" xml:id="C21.S11.p2.s2">
+Citations in the bulleted list refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.S11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="209" xml:id="C21.S11.p3.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+</para>
+ 
+<para xml:id="C21.S11.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C21.S11.p4.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="211" xml:id="C21.S11.p4.s2">
+Maple.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C17.S4">
+<title>Basic Hypergeometric Functions</title>           
+<subsection xml:id="C17.S4.SS1">
+<title><Math mode="inline" xml:id="C17.S4.SS1.m1">{{}_{r}\phi_{s}}</Math> Functions</title>         
+<para xml:id="C17.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C17.S4.SS1.p1.s1">
+ <Math equation-number="17.4.1" mode="display" xml:id="C17.S4.E1">{{}_{r+1}\phi_{s}}\left({a_{0},a_{1},a_{2},\dots,a_{r}\atop b_{1},b_{2},\dots, b_{s}};q,z\right)={{}_{r+1}\phi_{s}}\left(a_{0},a_{1},\dots,a_{r};b_{1},b_{2}, \dots,b_{s};q,z\right)=\sum_{n=0}^{\infty}\frac{\left(a_{0};q\right)_{n}\left( a_{1};q\right)_{n}\cdots\left(a_{r};q\right)_{n}}{\left(q;q\right)_{n}\left(b_ {1};q\right)_{n}\cdots\left(b_{s};q\right)_{n}}\*\left((-1)^{n}q^{\genfrac{(}{ )}{0.0pt}{}{n}{2}}\right)^{s-r}z^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C17.S4.SS1.p1.s2">
+Here and elsewhere it is assumed that the <Math mode="inline" xml:id="C17.S4.SS1.p1.m1">b_{j}</Math> do not take any of the values <Math mode="inline" xml:id="C17.S4.SS1.p1.m2">q^{-n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C17.S4.SS1.p1.s3">
+The infinite series converges for all <Math mode="inline" xml:id="C17.S4.SS1.p1.m3">z</Math> when <Math mode="inline" xml:id="C17.S4.SS1.p1.m4">s&gt;r</Math> , and for <Math mode="inline" xml:id="C17.S4.SS1.p1.m5">|z|&lt;1</Math> when <Math mode="inline" xml:id="C17.S4.SS1.p1.m6">s=r</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C17.S4.SS1.p1.s4">
+<Math equation-number="17.4.2" mode="display" xml:id="C17.S4.E2">\lim_{q\to 1-}{{}_{r+1}\phi_{r}}\left({q^{a_{0}},q^{a_{1}},\dots,q^{a_{r}} \atop q^{b_{1}},\dots,q^{b_{r}}};q,z\right)={{}_{r+1}F_{r}}\left({a_{0},a_{1}, \dots,a_{r}\atop b_{1},\dots,b_{r}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C17.S4.SS1.p1.s5">
+For the function on the right-hand side see §16.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C17.S4.SS1.p2.s1">
+This notation is from Gasper and Rahman (2004).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C17.S4.SS1.p2.s2">
+It is slightly at variance with the notation in Bailey (1964) and Slater (1966).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C17.S4.SS1.p2.s3">
+In these references the factor <Math mode="inline" xml:id="C17.S4.SS1.p2.m1">\left((-1)^{n}q^{\genfrac{(}{)}{0.0pt}{}{n}{2}}\right)^{s-r</Math> } is not included in the sum.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C17.S4.SS1.p2.s4">
+In practice this discrepancy does not usually cause serious problems because the case most often considered is <Math mode="inline" xml:id="C17.S4.SS1.p2.m2">r=s</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS2">
+<title><Math mode="inline" xml:id="C17.S4.SS2.m1">{{}_{r}\psi_{s}}</Math> Functions</title>         
+  
+<para xml:id="C17.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C17.S4.SS2.p1.s1">
+ <Math equation-number="17.4.3" mode="display" xml:id="C17.S4.E3">{{}_{r}\psi_{s}}\left({a_{1},a_{2},\dots,a_{r}\atop b_{1},b_{2},\dots,b_{s}};q ,z\right)={{}_{r}\psi_{s}}\left(a_{1},a_{2},\dots,a_{r};b_{1},b_{2},\dots,b_{s };q,z\right)=\sum_{n=-\infty}^{\infty}\frac{\left(a_{1},a_{2},\dots,a_{r};q \right)_{n}(-1)^{(s-r)n}q^{(s-r)\genfrac{(}{)}{0.0pt}{}{n}{2}}z^{n}}{\left(b_{ 1},b_{2},\dots,b_{s};q\right)_{n}}=\sum_{n=0}^{\infty}\frac{\left(a_{1},a_{2}, \dots,a_{r};q\right)_{n}(-1)^{(s-r)n}q^{(s-r)\genfrac{(}{)}{0.0pt}{}{n}{2}}z^{ n}}{\left(b_{1},b_{2},\dots,b_{s};q\right)_{n}}+\sum_{n=1}^{\infty}\frac{\left (q/b_{1},q/b_{2},\dots,q/b_{s};q\right)_{n}}{\left(q/a_{1},q/a_{2},\dots,q/a_{ r};q\right)_{n}}\left(\frac{b_{1}b_{2}\cdots b_{s}}{a_{1}a_{2}\cdots a_{r}z} \right)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C17.S4.SS2.p2.s1">
+Here and elsewhere the <Math mode="inline" xml:id="C17.S4.SS2.p2.m1">b_{j}</Math> must not take any of the values <Math mode="inline" xml:id="C17.S4.SS2.p2.m2">q^{-n}</Math> , and the <Math mode="inline" xml:id="C17.S4.SS2.p2.m3">a_{j}</Math> must not take any of the values <Math mode="inline" xml:id="C17.S4.SS2.p2.m4">q^{n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C17.S4.SS2.p2.s2">
+The infinite series converge when <Math mode="inline" xml:id="C17.S4.SS2.p2.m5">s\geq r</Math> provided that <Math mode="inline" xml:id="C17.S4.SS2.p2.m6">|(b_{1}\cdots b_{s})/(a_{1}\cdots a_{r}z)|&lt;1</Math> and also, in the case <Math mode="inline" xml:id="C17.S4.SS2.p2.m7">s=r</Math> , <Math mode="inline" xml:id="C17.S4.SS2.p2.m8">|z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C17.S4.SS2.p3.s1">
+ <Math equation-number="17.4.4" mode="display" xml:id="C17.S4.E4">\lim_{q\to 1-}{{}_{r}\psi_{r}}\left({q^{a_{1}},q^{a_{2}},\dots,q^{a_{r}}\atop q ^{b_{1}},q^{b_{2}},\dots,q^{b_{r}}};q,z\right)={{}_{r}H_{r}}\left({a_{1},a_{2} ,\dots,a_{r}\atop b_{1},b_{2},\dots,b_{r}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C17.S4.SS2.p3.s2">
+For the function <Math mode="inline" xml:id="C17.S4.SS2.p3.m1">{{}_{r}H_{r}}</Math> see §16.4(v).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS3">
+<title><Math mode="inline" xml:id="C17.S4.SS3.m1">q</Math>-Appell Functions</title>          
+<para xml:id="C17.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C17.S4.SS3.p1.s1">
+The following definitions apply when <Math mode="inline" xml:id="C17.S4.SS3.p1.m1">|x|&lt;1</Math> and <Math mode="inline" xml:id="C17.S4.SS3.p1.m2">|y|&lt;1</Math> : <Math equation-number="17.4.5" mode="display" xml:id="C17.S4.E5">\Phi^{(1)}\left(a;b,b^{\prime};c;q;x,y\right)=\sum_{m,n\geq 0}\frac{\left(a;q \right)_{m+n}\left(b;q\right)_{m}\left(b^{\prime};q\right)_{n}x^{m}y^{n}}{ \left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m+n}},</Math> , <Math equation-number="17.4.6" mode="display" xml:id="C17.S4.E6">\Phi^{(2)}\left(a;b,b^{\prime};c,c^{\prime};q;x,y\right)=\sum_{m,n\geq 0}\frac {\left(a;q\right)_{m+n}\left(b;q\right)_{m}\left(b^{\prime};q\right)_{n}x^{m}y ^{n}}{\left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m}\left(c^{ \prime};q\right)_{n}},</Math> , <Math equation-number="17.4.7" mode="display" xml:id="C17.S4.E7">\Phi^{(3)}\left(a,a^{\prime};b,b^{\prime};c;q;x,y\right)=\sum_{m,n\geq 0}\frac {\left(a,b;q\right)_{m}\left(a^{\prime},b^{\prime};q\right)_{n}x^{m}y^{n}}{ \left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m+n}},</Math> , <Math equation-number="17.4.8" mode="display" xml:id="C17.S4.E8">\Phi^{(4)}\left(a,b;c,c^{\prime};q;x,y\right)=\sum_{m,n\geq 0}\frac{\left(a,b; q\right)_{m+n}x^{m}y^{n}}{\left(q,c;q\right)_{m}\left(q,c^{\prime};q\right)_{n }}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS4">
+<title>Classification</title>          
+<para xml:id="C17.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C17.S4.SS4.p1.s1">
+The series (17.4.1) is said to be balanced orSaalschützian when it terminates, <Math mode="inline" xml:id="C17.S4.SS4.p1.m1">r=s</Math> , <Math mode="inline" xml:id="C17.S4.SS4.p1.m2">z=q</Math> , and <Math equation-number="17.4.9" mode="display" xml:id="C17.S4.E9">qa_{0}a_{1}\cdots a_{s}=b_{1}b_{2}\cdots b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C17.S4.SS4.p2.s1">
+The series (17.4.1) is said to be k-balanced when <Math mode="inline" xml:id="C17.S4.SS4.p2.m1">r=s</Math> and <Math equation-number="17.4.10" mode="display" xml:id="C17.S4.E10">q^{k}a_{0}a_{1}\cdots a_{s}=b_{1}b_{2}\cdots b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C17.S4.SS4.p3.s1">
+The series (17.4.1) is said to be well-poised when <Math mode="inline" xml:id="C17.S4.SS4.p3.m1">r=s</Math> and <Math equation-number="17.4.11" mode="display" xml:id="C17.S4.E11">a_{0}q=a_{1}b_{1}=a_{2}b_{2}=\dots=a_{s}b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C17.S4.SS4.p4.s1">
+The series (17.4.1) is said to be very-well-poised when <Math mode="inline" xml:id="C17.S4.SS4.p4.m1">r=s</Math> , (17.4.11) is satisfied, and <Math equation-number="17.4.12" mode="display" xml:id="C17.S4.E12">b_{1}=-b_{2}=\sqrt{a_{0}}.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C17.S4.SS4.p5.s1">
+The series (17.4.1) is said to be nearly-poised when <Math mode="inline" xml:id="C17.S4.SS4.p5.m1">r=s</Math> and <Math equation-number="17.4.13" mode="display" xml:id="C17.S4.E13">a_{0}q=a_{1}b_{1}=a_{2}b_{2}=\dots=a_{s-1}b_{s-1}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

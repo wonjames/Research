@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S19">
+<title>Generalized Exponential Integral</title>          
+ 
+<subsection xml:id="C8.S19.SS1">
+<title>Definition and Integral Representations</title>        
+     
+<para xml:id="C8.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S19.SS1.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS1.p1.m1">p,z\in\mathbb{C}</Math> <Math equation-number="8.19.1" mode="display" xml:id="C8.S19.E1">E_{p}\left(z\right)=z^{p-1}\Gamma\left(1-p,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S19.SS1.p1.s2">
+Most properties of <Math mode="inline" xml:id="C8.S19.SS1.p1.m2">E_{p}\left(z\right)</Math> follow straightforwardly from those of <Math mode="inline" xml:id="C8.S19.SS1.p1.m3">\Gamma\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S19.SS1.p1.s3">
+For an extensive treatment of <Math mode="inline" xml:id="C8.S19.SS1.p1.m4">E_{1}\left(z\right)</Math> see Chapter 6.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S19.SS1.p1.s4">
+<Math equation-number="8.19.2" mode="display" xml:id="C8.S19.E2">E_{p}\left(z\right)=z^{p-1}\int_{z}^{\infty}\frac{e^{-t}}{t^{p}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C8.S19.SS1.p1.s5">
+When the path of integration excludes the origin and does not cross thenegative real axis (8.19.2) defines the principal value of <Math mode="inline" xml:id="C8.S19.SS1.p1.m5">E_{p}\left(z\right)</Math> , and unless indicated otherwise in the DLMF principal values are assumed.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S19.Px1">
+<title>Other Integral Representations</title>   
+<para xml:id="C8.S19.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C8.S19.Px1.p1.s1">
+ <Math equation-number="8.19.3" mode="display" xml:id="C8.S19.E3">E_{p}\left(z\right)=\int_{1}^{\infty}\frac{e^{-zt}}{t^{p}}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi,</Math> , <Math equation-number="8.19.4" mode="display" xml:id="C8.S19.E4">E_{p}\left(z\right)=\frac{z^{p-1}e^{-z}}{\Gamma\left(p\right)}\int_{0}^{\infty }\frac{t^{p-1}e^{-zt}}{1+t}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re p&gt;0</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S19.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C8.S19.Px1.p2.s1">
+Integral representations of Mellin–Barnes type for <Math mode="inline" xml:id="C8.S19.Px1.p2.m1">E_{p}\left(z\right)</Math> follow immediately from (8.6.11),(8.6.12), and (8.19.1).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS2">
+<title>Graphics</title>                
+   
+<sentence sentence-num-in-section="8" xml:id="C8.S19.F1.s1">
+Figure 8.19.1: <Math mode="inline" xml:id="C8.S19.F1.m4">E_{p}\left(x\right)</Math> , <Math mode="inline" xml:id="C8.S19.F1.m5">0\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F1.m6">0\leq p\leq 8</Math> .
+</sentence>  
+<para xml:id="C8.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S19.SS2.p1.s1">
+In Figures 8.19.2–8.19.5, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S19.SS2.p1.s2">
+See About Color Map.
+</sentence>
+
+</para>
+            
+<sentence sentence-num-in-section="11" xml:id="C8.S19.F2.s1">
+Figure 8.19.2: <Math mode="inline" xml:id="C8.S19.F2.m4">E_{\frac{1}{2}}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F2.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S19.F2.m6">-4\leq y\leq 4</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>        
+   
+<sentence sentence-num-in-section="12" xml:id="C8.S19.F3.s1">
+Figure 8.19.3: <Math mode="inline" xml:id="C8.S19.F3.m4">E_{1}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F3.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S19.F3.m6">-4\leq y\leq 4</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>   
+<para xml:id="C8.S19.SS2.p2">
+
+</para>
+
+           
+<sentence sentence-num-in-section="13" xml:id="C8.S19.F4.s1">
+Figure 8.19.4: <Math mode="inline" xml:id="C8.S19.F4.m4">E_{\frac{3}{2}}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F4.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F4.m6">-3\leq y\leq 3</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>           
+<sentence sentence-num-in-section="14" xml:id="C8.S19.F5.s1">
+Figure 8.19.5: <Math mode="inline" xml:id="C8.S19.F5.m4">E_{2}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F5.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F5.m6">-3\leq y\leq 3</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>  
+   
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS3">
+<title>Special Values</title>          
+<para xml:id="C8.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C8.S19.SS3.p1.s1">
+ <Math equation-number="8.19.5" mode="display" xml:id="C8.S19.E5">E_{0}\left(z\right)=z^{-1}e^{-z}, if z\neq 0,</Math> <Math equation-number="8.19.6" mode="display" xml:id="C8.S19.E6">E_{p}\left(0\right)=\frac{1}{p-1}, if \Re p&gt;1,</Math> <Math equation-number="8.19.7" mode="display" xml:id="C8.S19.E7">E_{n}\left(z\right)=\frac{(-z)^{n-1}}{(n-1)!}E_{1}\left(z\right)+\frac{e^{-z}} {(n-1)!}\sum_{k=0}^{n-2}(n-k-2)!(-z)^{k}, if n=2,3,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS4">
+<title>Series Expansions</title>          
+<para xml:id="C8.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S19.SS4.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS4.p1.m1">n=1,2,3,\dots</Math> , <Math equation-number="8.19.8" mode="display" xml:id="C8.S19.E8">E_{n}\left(z\right)=\frac{(-z)^{n-1}}{(n-1)!}(\psi\left(n\right)-\ln z)-\sum_{ \begin{subarray}{c}k=0\\ k\neq n-1\end{subarray}}^{\infty}\frac{(-z)^{k}}{k!(1-n+k)}</Math> , and <Math equation-number="8.19.9" mode="display" xml:id="C8.S19.E9">E_{n}\left(z\right)=\frac{(-1)^{n}z^{n-1}}{(n-1)!}\ln z+\frac{e^{-z}}{(n-1)!} \sum_{k=1}^{n-1}(-z)^{k-1}\Gamma\left(n-k\right)+\frac{e^{-z}(-z)^{n-1}}{(n-1) !}\sum_{k=0}^{\infty}\frac{z^{k}}{k!}\psi\left(k+1\right)</Math> , with <Math mode="inline" xml:id="C8.S19.SS4.p1.m2">|\operatorname{ph}z|\leq\pi</Math> in both equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C8.S19.SS4.p1.s2">
+For <Math mode="inline" xml:id="C8.S19.SS4.p1.m3">\psi\left(x\right)</Math> see §5.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C8.S19.SS4.p2.s1">
+When <Math mode="inline" xml:id="C8.S19.SS4.p2.m1">p\in\mathbb{C}</Math> <Math equation-number="8.19.10" mode="display" xml:id="C8.S19.E10">E_{p}\left(z\right)=z^{p-1}\Gamma\left(1-p\right)-\sum_{k=0}^{\infty}\frac{(-z )^{k}}{k!(1-p+k)}</Math> , <Math equation-number="8.19.11" mode="display" xml:id="C8.S19.E11">E_{p}\left(z\right)=\Gamma\left(1-p\right)\left(z^{p-1}-e^{-z}\sum_{k=0}^{ \infty}\frac{z^{k}}{\Gamma\left(2-p+k\right)}\right),</Math> again with <Math mode="inline" xml:id="C8.S19.SS4.p2.m2">|\operatorname{ph}z|\leq\pi</Math> in both equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C8.S19.SS4.p2.s2">
+The right-hand sides are replaced by their limiting forms when <Math mode="inline" xml:id="C8.S19.SS4.p2.m3">p=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS5">
+<title>Recurrence Relation and Derivatives</title>        
+   
+<para xml:id="C8.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C8.S19.SS5.p1.s1">
+ <Math equation-number="8.19.12" mode="display" xml:id="C8.S19.E12">pE_{p+1}\left(z\right)+zE_{p}\left(z\right)=e^{-z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C8.S19.SS5.p1.s2">
+<Math equation-number="8.19.13" mode="display" xml:id="C8.S19.E13">\frac{\mathrm{d}}{\mathrm{d}z}E_{p}\left(z\right)=-E_{p-1}\left(z\right),</Math> , <Math equation-number="8.19.14" mode="display" xml:id="C8.S19.E14">\frac{\mathrm{d}}{\mathrm{d}z}(e^{z}E_{p}\left(z\right))=e^{z}E_{p}\left(z \right)\left(1+\frac{p-1}{z}\right)-\frac{1}{z}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S19.Px2">
+<title><Math mode="inline" xml:id="C8.S19.Px2.m1">p</Math>-Derivatives</title>   
+<para xml:id="C8.S19.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C8.S19.Px2.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.Px2.p1.m1">j=1,2,3,\dots</Math> , <Math equation-number="8.19.15" mode="display" xml:id="C8.S19.E15">\frac{{\partial}^{j}E_{p}\left(z\right)}{{\partial p}^{j}}=(-1)^{j}\int_{1}^{ \infty}(\ln t)^{j}t^{-p}e^{-zt}\mathrm{d}t, if \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C8.S19.Px2.p1.s2">
+For properties and numerical tables see Milgram (1985), and also(when <Math mode="inline" xml:id="C8.S19.Px2.p1.m2">p=1</Math> ) MacLeod (2002b).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS6">
+<title>Relation to Confluent Hypergeometric Function</title>           
+<para xml:id="C8.S19.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C8.S19.SS6.p1.s1">
+ <Math equation-number="8.19.16" mode="display" xml:id="C8.S19.E16">E_{p}\left(z\right)=z^{p-1}e^{-z}U\left(p,p,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C8.S19.SS6.p1.s2">
+For <Math mode="inline" xml:id="C8.S19.SS6.p1.m1">U\left(a,b,z\right)</Math> see §13.2(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS7">
+<title>Continued Fraction</title>         
+ 
+<para xml:id="C8.S19.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C8.S19.SS7.p1.s1">
+ <Math equation-number="8.19.17" mode="display" xml:id="C8.S19.E17">E_{p}\left(z\right)=e^{-z}\left(\cfrac{1}{z+\cfrac{p}{1+\cfrac{1}{z+\cfrac{p+1 }{1+\cfrac{2}{z+\cdots}}}}}\right), if |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C8.S19.SS7.p2.s1">
+See also Cuyt et al. (2008, pp. 277–285).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS8">
+<title>Analytic Continuation</title>          
+<para xml:id="C8.S19.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C8.S19.SS8.p1.s1">
+The general function <Math mode="inline" xml:id="C8.S19.SS8.p1.m1">E_{p}\left(z\right)</Math> is attained by extending the path in (8.19.2) across the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C8.S19.SS8.p1.s2">
+Unless <Math mode="inline" xml:id="C8.S19.SS8.p1.m2">p</Math> is a nonpositive integer, <Math mode="inline" xml:id="C8.S19.SS8.p1.m3">E_{p}\left(z\right)</Math> has a branch point at <Math mode="inline" xml:id="C8.S19.SS8.p1.m4">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C8.S19.SS8.p1.s3">
+For <Math mode="inline" xml:id="C8.S19.SS8.p1.m5">z\neq 0</Math> eachbranch of <Math mode="inline" xml:id="C8.S19.SS8.p1.m6">E_{p}\left(z\right)</Math> is an entire function of <Math mode="inline" xml:id="C8.S19.SS8.p1.m7">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C8.S19.SS8.p1.s4">
+<Math equation-number="8.19.18" mode="display" xml:id="C8.S19.E18">E_{p}\left(ze^{2m\pi i}\right)=\frac{2\pi ie^{mp\pi i}}{\Gamma\left(p\right)} \frac{\sin\left(mp\pi\right)}{\sin\left(p\pi\right)}z^{p-1}+E_{p}\left(z\right), if m\in\mathbb{Z}, z\neq 0.</Math>
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS9">
+<title>Inequalities</title>          
+<para xml:id="C8.S19.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C8.S19.SS9.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS9.p1.m1">n=1,2,3,\dots</Math> and <Math mode="inline" xml:id="C8.S19.SS9.p1.m2">x&gt;0</Math> , <Math equation-number="8.19.19" mode="display" xml:id="C8.S19.E19">\frac{n-1}{n}E_{n}\left(x\right)&lt;E_{n+1}\left(x\right)&lt;E_{n}\left(x\right),</Math> <Math equation-number="8.19.20" mode="display" xml:id="C8.S19.E20">\left(E_{n}\left(x\right)\right)^{2}&lt;E_{n-1}\left(x\right)E_{n+1}\left(x\right),</Math> <Math equation-number="8.19.21" mode="display" xml:id="C8.S19.E21">\frac{1}{x+n}&lt;e^{x}E_{n}\left(x\right)\leq\frac{1}{x+n-1},</Math> <Math equation-number="8.19.22" mode="display" xml:id="C8.S19.E22">\frac{\mathrm{d}}{\mathrm{d}x}\frac{E_{n}\left(x\right)}{E_{n-1}\left(x\right) }&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS10">
+<title>Integrals</title>          
+<para xml:id="C8.S19.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C8.S19.SS10.p1.s1">
+ <Math equation-number="8.19.23" mode="display" xml:id="C8.S19.E23">\int_{z}^{\infty}E_{p-1}\left(t\right)\mathrm{d}t=E_{p}\left(z\right), if |\operatorname{ph}z|&lt;\pi,</Math> <Math equation-number="8.19.24" mode="display" xml:id="C8.S19.E24">\int_{0}^{\infty}e^{-at}E_{n}\left(t\right)\mathrm{d}t=\frac{(-1)^{n-1}}{a^{n} }\left(\ln\left(1+a\right)+\sum_{k=1}^{n-1}\frac{(-1)^{k}a^{k}}{k}\right), if n=1,2,\dots, \Re a&gt;-1,</Math> <Math equation-number="8.19.25" mode="display" xml:id="C8.S19.E25">\int_{0}^{\infty}e^{-at}t^{b-1}E_{p}\left(t\right)\mathrm{d}t=\frac{\Gamma \left(b\right)(1+a)^{-b}}{p+b-1}\*F\left(1,b;p+b;a/(1+a)\right), if \Re a&gt;-1, \Re(p+b)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C8.S19.SS10.p1.s2">
+<Math equation-number="8.19.26" mode="display" xml:id="C8.S19.E26">\int_{0}^{\infty}E_{p}\left(t\right)E_{q}\left(t\right)\mathrm{d}t=\frac{L(p)+ L(q)}{p+q-1}, if p&gt;0, q&gt;0, p+q&gt;1,</Math> where <Math equation-number="8.19.27" mode="display" xml:id="C8.S19.E27">L(p)=\int_{0}^{\infty}e^{-t}E_{p}\left(t\right)\mathrm{d}t=\frac{1}{2p}F\left( 1,1;1+p;\tfrac{1}{2}\right), if p&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C8.S19.SS10.p1.s3">
+For the hypergeometric function <Math mode="inline" xml:id="C8.S19.SS10.p1.m1">F\left(a,b;c;z\right)</Math> see §15.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="36" xml:id="C8.S19.SS10.p1.s4">
+When <Math mode="inline" xml:id="C8.S19.SS10.p1.m2">p=1,2,3,\dots</Math> , <Math mode="inline" xml:id="C8.S19.SS10.p1.m3">L(p)</Math> can also be evaluated via (8.19.24).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C8.S19.SS10.p2.s1">
+For collections of integrals involving <Math mode="inline" xml:id="C8.S19.SS10.p2.m1">E_{p}\left(z\right)</Math> , especially for integer <Math mode="inline" xml:id="C8.S19.SS10.p2.m2">p</Math> , see Apelblat (1983, §§7.1–7.2) andLeCaine (1945).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS11">
+<title>Further Generalizations</title>          
+<para xml:id="C8.S19.SS11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C8.S19.SS11.p1.s1">
+For higher-order generalized exponential integrals seeMeijer and Baken (1987) and Milgram (1985).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S8">
+<title>Expansions in Series of Ferrers Functions</title>        
+  
+<subsection xml:id="C30.S8.SS1">
+<title>Functions of the First Kind</title>        
+ 
+<para xml:id="C30.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S8.SS1.p1.s1">
+ <Math equation-number="30.8.1" mode="display" xml:id="C30.S8.E1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=\sum_{k=-R}^{\infty}(-1)^{k}a^{m} _{n,k}(\gamma^{2})\mathsf{P}^{m}_{n+2k}\left(x\right),</Math> where <Math mode="inline" xml:id="C30.S8.SS1.p1.m1">\mathsf{P}^{m}_{n+2k}\left(x\right)</Math> is the Ferrers function of the first kind (§14.3(i)),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S8.SS1.p1.s2">
+<Math mode="inline" xml:id="C30.S8.SS1.p1.m2">R=\left\lfloor\frac{1}{2}(n-m)\right\rfloor</Math> , and the coefficients <Math mode="inline" xml:id="C30.S8.SS1.p1.m3">a^{m}_{n,k}(\gamma^{2})</Math> are given by <Math equation-number="30.8.2" mode="display" xml:id="C30.S8.E2">a^{m}_{n,k}(\gamma^{2})=(-1)^{k}\left(n+2k+\tfrac{1}{2}\right)\frac{(n-m+2k)!} {(n+m+2k)!}\*\int_{-1}^{1}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)\mathsf{ P}^{m}_{n+2k}\left(x\right)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C30.S8.SS1.p1.s3">
+Let <Math equation-number="30.8.3" mode="display" xml:id="C30.S8.E3">A_{k}=-\gamma^{2}\frac{(n-m+2k-1)(n-m+2k)}{(2n+4k-3)(2n+4k-1)},B_{k}=(n+2k)(n+2k+1)-2\gamma^{2}\frac{(n+2k)(n+2k+1)-1+m^{2}}{(2n+4k-1)(2n+4k+ 3)},C_{k}=-\gamma^{2}\frac{(n+m+2k+1)(n+m+2k+2)}{(2n+4k+3)(2n+4k+5)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C30.S8.SS1.p1.s4">
+Then the set of coefficients <Math mode="inline" xml:id="C30.S8.SS1.p1.m4">a^{m}_{n,k}(\gamma^{2})</Math> , <Math mode="inline" xml:id="C30.S8.SS1.p1.m5">k=-R,-R+1,-R+2,\dots</Math> is the solution of the difference equation <Math equation-number="30.8.4" mode="display" xml:id="C30.S8.E4">A_{k}f_{k-1}+\left(B_{k}-\lambda^{m}_{n}\left(\gamma^{2}\right)\right)f_{k}+C_ {k}f_{k+1}=0,</Math> (note that <Math mode="inline" xml:id="C30.S8.SS1.p1.m6">A_{-R}=0</Math> ) that satisfies the normalizing condition <Math equation-number="30.8.5" mode="display" xml:id="C30.S8.E5">\sum_{k=-R}^{\infty}a_{n,k}^{m}(\gamma^{2})a_{n,k}^{-m}(\gamma^{2})\frac{1}{2n +4k+1}=\frac{1}{2n+1},</Math> with <Math equation-number="30.8.6" mode="display" xml:id="C30.S8.E6">a_{n,k}^{-m}(\gamma^{2})=\frac{(n-m)!(n+m+2k)!}{(n+m)!(n-m+2k)!}a_{n,k}^{m}( \gamma^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C30.S8.SS1.p1.s5">
+Also, as <Math mode="inline" xml:id="C30.S8.SS1.p1.m7">k\to\infty</Math> , <Math equation-number="30.8.7" mode="display" xml:id="C30.S8.E7">\frac{k^{2}a^{m}_{n,k}(\gamma^{2})}{a^{m}_{n,k-1}(\gamma^{2})}=\frac{\gamma^{2 }}{16}+O\left(\frac{1}{k}\right),</Math> and <Math equation-number="30.8.8" mode="display" xml:id="C30.S8.E8">\frac{\lambda^{m}_{n}\left(\gamma^{2}\right)-B_{k}}{A_{k}}\frac{a^{m}_{n,k}( \gamma^{2})}{a^{m}_{n,k-1}(\gamma^{2})}=1+O\left(\frac{1}{k^{4}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S8.SS2">
+<title>Functions of the Second Kind</title>        
+ 
+<para xml:id="C30.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C30.S8.SS2.p1.s1">
+ <Math equation-number="30.8.9" mode="display" xml:id="C30.S8.E9">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)=\sum_{k=-\infty}^{-N-1}(-1)^{k}{a ^{\prime}}^{m}_{n,k}(\gamma^{2})\mathsf{P}^{m}_{n+2k}\left(x\right)+\sum_{k=-N }^{\infty}(-1)^{k}a^{m}_{n,k}(\gamma^{2})\mathsf{Q}^{m}_{n+2k}\left(x\right),</Math> where <Math mode="inline" xml:id="C30.S8.SS2.p1.m1">\mathsf{P}^{m}_{n}</Math> and <Math mode="inline" xml:id="C30.S8.SS2.p1.m2">\mathsf{Q}^{m}_{n}</Math> are again the Ferrers functions and <Math mode="inline" xml:id="C30.S8.SS2.p1.m3">N=\left\lfloor\frac{1}{2}(n+m)\right\rfloor</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C30.S8.SS2.p1.s2">
+The coefficients <Math mode="inline" xml:id="C30.S8.SS2.p1.m4">a^{m}_{n,k}(\gamma^{2})</Math> satisfy (30.8.4) for all <Math mode="inline" xml:id="C30.S8.SS2.p1.m5">k</Math> when we set <Math mode="inline" xml:id="C30.S8.SS2.p1.m6">a^{m}_{n,k}(\gamma^{2})=0</Math> for <Math mode="inline" xml:id="C30.S8.SS2.p1.m7">k&lt;-N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C30.S8.SS2.p1.s3">
+For <Math mode="inline" xml:id="C30.S8.SS2.p1.m8">k\geq-R</Math> they agree with the coefficients defined in §30.8(i).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C30.S8.SS2.p1.s4">
+For <Math mode="inline" xml:id="C30.S8.SS2.p1.m9">k=-N,-N+1,\dots,-R-1</Math> they are determined from (30.8.4) by forward recursion using <Math mode="inline" xml:id="C30.S8.SS2.p1.m10">a^{m}_{n,-N-1}(\gamma^{2})=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C30.S8.SS2.p1.s5">
+The set of coefficients <Math mode="inline" xml:id="C30.S8.SS2.p1.m11">{a^{\prime}}^{m}_{n,k}(\gamma^{2})</Math> , <Math mode="inline" xml:id="C30.S8.SS2.p1.m12">k=-N-1,-N-2,\dots</Math> , is the recessive solution of (30.8.4) as <Math mode="inline" xml:id="C30.S8.SS2.p1.m13">k\to-\infty</Math> that is normalized by <Math equation-number="30.8.10" mode="display" xml:id="C30.S8.E10">A_{-N-1}{a^{\prime}}^{m}_{n,-N-2}(\gamma^{2})+{\left(B_{-N-1}-\lambda^{m}_{n} \left(\gamma^{2}\right)\right){a^{\prime}}^{m}_{n,-N-1}(\gamma^{2})}+C^{\prime }a^{m}_{n,-N}(\gamma^{2})=0,</Math> with <Math equation-number="30.8.11" mode="display" xml:id="C30.S8.E11">C^{\prime}=\begin{cases}\dfrac{\gamma^{2}}{4m^{2}-1},&amp;\mbox{$n-m$ even},\\ -\dfrac{\gamma^{2}}{(2m-1)(2m-3)},&amp;\mbox{$n-m$ odd}.\end{cases</Math> } It should be noted that if the forward recursion (30.8.4) beginning with <Math mode="inline" xml:id="C30.S8.SS2.p1.m14">f_{-N-1}=0</Math> , <Math mode="inline" xml:id="C30.S8.SS2.p1.m15">f_{-N}=1</Math> leads to <Math mode="inline" xml:id="C30.S8.SS2.p1.m16">f_{-R}=0</Math> , then <Math mode="inline" xml:id="C30.S8.SS2.p1.m17">a^{m}_{n,k}(\gamma^{2})</Math> is undefined for <Math mode="inline" xml:id="C30.S8.SS2.p1.m18">n&lt;-R</Math> and <Math mode="inline" xml:id="C30.S8.SS2.p1.m19">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math> does not exist.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

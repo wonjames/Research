@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S7">
+<title>Asymptotic Expansions</title>          
+<subsection xml:id="C9.S7.SS1">
+<title>Notation</title>        
+ 
+<para xml:id="C9.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S7.SS1.p1.s1">
+Here <Math mode="inline" xml:id="C9.S7.SS1.p1.m1">\delta</Math> denotes an arbitrary small positive constant and <Math equation-number="9.7.1" mode="display" xml:id="C9.S7.E1">\zeta=\tfrac{2}{3}z^{\ifrac{3}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S7.SS1.p1.s2">
+Also <Math mode="inline" xml:id="C9.S7.SS1.p1.m2">u_{0}=v_{0}=1</Math> and for <Math mode="inline" xml:id="C9.S7.SS1.p1.m3">k=1,2,\ldots</Math> , <Math equation-number="9.7.2" mode="display" xml:id="C9.S7.E2">u_{k}=\frac{(2k+1)(2k+3)(2k+5)\cdots(6k-1)}{216^{k}k!}=\frac{(6k-5)(6k-3)(6k-1 )}{(2k-1)216k}u_{k-1},v_{k}=\frac{6k+1}{1-6k}u_{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C9.S7.SS1.p1.s3">
+Lastly, for <Math mode="inline" xml:id="C9.S7.SS1.p1.m4">x&gt;0</Math> we define <Math equation-number="9.7.3" mode="display" xml:id="C9.S7.E3">\chi(x)={\pi^{\ifrac{1}{2}}}\Gamma\left(\tfrac{1}{2}x+1\right)/\Gamma\left( \tfrac{1}{2}x+\tfrac{1}{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C9.S7.SS1.p1.s4">
+For large <Math mode="inline" xml:id="C9.S7.SS1.p1.m6">x</Math> , <Math equation-number="9.7.4" mode="display" xml:id="C9.S7.E4">\chi(x)\sim(\tfrac{1}{2}\pi x)^{\ifrac{1}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C9.S7.SS1.p2.s1">
+Numerical values of <Math mode="inline" xml:id="C9.S7.SS1.p2.m1">\chi(n)</Math> are given in Table 9.7.1 for <Math mode="inline" xml:id="C9.S7.SS1.p2.m2">n=1(1)20</Math> to 2D.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="6" xml:id="C9.S7.T1.s1">
+Table 9.7.1: <Math mode="inline" xml:id="C9.S7.T1.m2">\chi(n)</Math> .
+</sentence> 
+
+<sentence sentence-num-in-section="7" sentence-num-in-table="1" xml:id="C9.S7.T1.t1.s1">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="2" xml:id="C9.S7.T1.t1.s2">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m2">\chi(n)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="3" xml:id="C9.S7.T1.t1.s3">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m3">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="4" xml:id="C9.S7.T1.t1.s4">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m4">\chi(n)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="5" xml:id="C9.S7.T1.t1.s5">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m5">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="6" xml:id="C9.S7.T1.t1.s6">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m6">\chi(n)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="7" xml:id="C9.S7.T1.t1.s7">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m7">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="8" xml:id="C9.S7.T1.t1.s8">
+<Math mode="inline" xml:id="C9.S7.T1.t1.r1.m8">\chi(n)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="9" xml:id="C9.S7.T1.t1.s9">
+1
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="10" xml:id="C9.S7.T1.t1.s10">
+1.57
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="11" xml:id="C9.S7.T1.t1.s11">
+6
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="12" xml:id="C9.S7.T1.t1.s12">
+3.20
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="13" xml:id="C9.S7.T1.t1.s13">
+11
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="14" xml:id="C9.S7.T1.t1.s14">
+4.25
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="15" xml:id="C9.S7.T1.t1.s15">
+16
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="16" xml:id="C9.S7.T1.t1.s16">
+5.09
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="17" xml:id="C9.S7.T1.t1.s17">
+2
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="18" xml:id="C9.S7.T1.t1.s18">
+2.00
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="19" xml:id="C9.S7.T1.t1.s19">
+7
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="20" xml:id="C9.S7.T1.t1.s20">
+3.44
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="21" xml:id="C9.S7.T1.t1.s21">
+12
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="22" xml:id="C9.S7.T1.t1.s22">
+4.43
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="23" xml:id="C9.S7.T1.t1.s23">
+17
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="24" xml:id="C9.S7.T1.t1.s24">
+5.24
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="25" xml:id="C9.S7.T1.t1.s25">
+3
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="26" xml:id="C9.S7.T1.t1.s26">
+2.36
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="27" xml:id="C9.S7.T1.t1.s27">
+8
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="28" xml:id="C9.S7.T1.t1.s28">
+3.66
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="29" xml:id="C9.S7.T1.t1.s29">
+13
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="30" xml:id="C9.S7.T1.t1.s30">
+4.61
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="31" xml:id="C9.S7.T1.t1.s31">
+18
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="32" xml:id="C9.S7.T1.t1.s32">
+5.39
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="33" xml:id="C9.S7.T1.t1.s33">
+4
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="34" xml:id="C9.S7.T1.t1.s34">
+2.67
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="35" xml:id="C9.S7.T1.t1.s35">
+9
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="36" xml:id="C9.S7.T1.t1.s36">
+3.87
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="37" xml:id="C9.S7.T1.t1.s37">
+14
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="38" xml:id="C9.S7.T1.t1.s38">
+4.77
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="39" xml:id="C9.S7.T1.t1.s39">
+19
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="40" xml:id="C9.S7.T1.t1.s40">
+5.54
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="41" xml:id="C9.S7.T1.t1.s41">
+5
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="42" xml:id="C9.S7.T1.t1.s42">
+2.95
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="43" xml:id="C9.S7.T1.t1.s43">
+10
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="44" xml:id="C9.S7.T1.t1.s44">
+4.06
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="45" xml:id="C9.S7.T1.t1.s45">
+15
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="46" xml:id="C9.S7.T1.t1.s46">
+4.94
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="47" xml:id="C9.S7.T1.t1.s47">
+20
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="48" xml:id="C9.S7.T1.t1.s48">
+5.68
+</sentence>
+  
+</subsection>
+ 
+<subsection xml:id="C9.S7.SS2">
+<title>Poincaré-Type Expansions</title>        
+ 
+<para xml:id="C9.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C9.S7.SS2.p1.s1">
+As <Math mode="inline" xml:id="C9.S7.SS2.p1.m1">z\to\infty</Math> the following asymptotic expansions are valid uniformly in the stated sectors.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C9.S7.SS2.p1.s2">
+<Math equation-number="9.7.5" mode="display" xml:id="C9.S7.E5">\mathrm{Ai}\left(z\right)\sim\frac{e^{-\zeta}}{2\sqrt{\pi}z^{1/4}}\sum_{k=0}^{ \infty}(-1)^{k}\frac{u_{k}}{\zeta^{k}}, if |\operatorname{ph}z|\leq\pi-\delta,</Math> , <Math equation-number="9.7.6" mode="display" xml:id="C9.S7.E6">\mathrm{Ai}'\left(z\right)\sim-\frac{z^{1/4}e^{-\zeta}}{2\sqrt{\pi}}\sum_{k=0} ^{\infty}(-1)^{k}\frac{v_{k}}{\zeta^{k}}, if |\operatorname{ph}z|\leq\pi-\delta,</Math> <Math equation-number="9.7.7" mode="display" xml:id="C9.S7.E7">\mathrm{Bi}\left(z\right)\sim\frac{e^{\zeta}}{\sqrt{\pi}z^{1/4}}\sum_{k=0}^{ \infty}\frac{u_{k}}{\zeta^{k}}, if |\operatorname{ph}z|\leq\tfrac{1}{3}\pi-\delta,</Math> , <Math equation-number="9.7.8" mode="display" xml:id="C9.S7.E8">\mathrm{Bi}'\left(z\right)\sim\frac{z^{1/4}e^{\zeta}}{\sqrt{\pi}}\sum_{k=0}^{ \infty}\frac{v_{k}}{\zeta^{k}}, if |\operatorname{ph}z|\leq\tfrac{1}{3}\pi-\delta</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C9.S7.SS2.p2.s1">
+ <Math equation-number="9.7.9" mode="display" xml:id="C9.S7.E9">\mathrm{Ai}\left(-z\right)\sim\frac{1}{\sqrt{\pi}z^{1/4}}\left(\cos\left(\zeta -\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{u_{2k}}{\zeta^{2k}}+ \sin\left(\zeta-\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{u_{2k+1 }}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta,</Math> , <Math equation-number="9.7.10" mode="display" xml:id="C9.S7.E10">\mathrm{Ai}'\left(-z\right)\sim\frac{z^{1/4}}{\sqrt{\pi}}\left(\sin\left(\zeta -\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{v_{2k}}{\zeta^{2k}}- \cos\left(\zeta-\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{v_{2k+1 }}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta,</Math> <Math equation-number="9.7.11" mode="display" xml:id="C9.S7.E11">\mathrm{Bi}\left(-z\right)\sim\frac{1}{\sqrt{\pi}z^{1/4}}\left(-\sin\left( \zeta-\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{u_{2k}}{\zeta^{2k }}+\cos\left(\zeta-\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{u_{2 k+1}}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta,</Math> , <Math equation-number="9.7.12" mode="display" xml:id="C9.S7.E12">\mathrm{Bi}'\left(-z\right)\sim\frac{z^{1/4}}{\sqrt{\pi}}\left(\cos\left(\zeta -\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{v_{2k}}{\zeta^{2k}}+ \sin\left(\zeta-\tfrac{1}{4}\pi\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{v_{2k+1 }}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C9.S7.SS2.p2.s2">
+<Math equation-number="9.7.13" mode="display" xml:id="C9.S7.E13">\mathrm{Bi}\left(ze^{\pm\pi i/3}\right)\mathrel{\sim}\sqrt{\frac{2}{\pi}}\frac {e^{\pm\pi i/6}}{z^{1/4}}\*\left(\cos\left(\zeta-\tfrac{1}{4}\pi\mp\tfrac{1}{2 }\mathrm{i}\ln 2\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{u_{2k}}{\zeta^{2k}}+ \sin\left(\zeta-\tfrac{1}{4}\pi\mp\tfrac{1}{2}\mathrm{i}\ln 2\right)\sum_{k=0} ^{\infty}(-1)^{k}\frac{u_{2k+1}}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta,</Math> <Math equation-number="9.7.14" mode="display" xml:id="C9.S7.E14">\mathrm{Bi}'\left(ze^{\pm\pi i/3}\right)\mathrel{\sim}\sqrt{\frac{2}{\pi}}e^{ \mp\pi i/6}z^{1/4}\*\left(-\sin\left(\zeta-\tfrac{1}{4}\pi\mp\tfrac{1}{2} \mathrm{i}\ln 2\right)\sum_{k=0}^{\infty}(-1)^{k}\frac{v_{2k}}{\zeta^{2k}}+ \cos\left(\zeta-\tfrac{1}{4}\pi\mp\tfrac{1}{2}\mathrm{i}\ln 2\right)\sum_{k=0} ^{\infty}(-1)^{k}\frac{v_{2k+1}}{\zeta^{2k+1}}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi-\delta</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C9.S7.SS3">
+<title>Error Bounds for Real Variables</title>        
+  
+<para xml:id="C9.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C9.S7.SS3.p1.s1">
+In (9.7.5) and (9.7.6) the <Math mode="inline" xml:id="C9.S7.SS3.p1.m1">n</Math> th error term, that is, the error on truncating the expansion at <Math mode="inline" xml:id="C9.S7.SS3.p1.m2">n</Math> terms, is bounded in magnitude by the first neglected term and has the same sign, provided that the following term is of opposite sign, that is, if <Math mode="inline" xml:id="C9.S7.SS3.p1.m3">n\geq 0</Math> for (9.7.5) and <Math mode="inline" xml:id="C9.S7.SS3.p1.m4">n\geq 1</Math> for (9.7.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C9.S7.SS3.p2.s1">
+In (9.7.7) and (9.7.8) the <Math mode="inline" xml:id="C9.S7.SS3.p2.m1">n</Math> th error term is bounded in magnitude by the first neglected term multiplied by <Math mode="inline" xml:id="C9.S7.SS3.p2.m2">\chi(n+\sigma)+1</Math> where <Math mode="inline" xml:id="C9.S7.SS3.p2.m3">\sigma=\frac{1}{6}</Math> for (9.7.7) and <Math mode="inline" xml:id="C9.S7.SS3.p2.m4">\sigma=0</Math> for (9.7.8), provided that <Math mode="inline" xml:id="C9.S7.SS3.p2.m5">n\geq 0</Math> in the first case and <Math mode="inline" xml:id="C9.S7.SS3.p2.m6">n\geq 1</Math> in the second case.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C9.S7.SS3.p3.s1">
+In (9.7.9)–(9.7.12) the <Math mode="inline" xml:id="C9.S7.SS3.p3.m1">n</Math> th error term in each infinite series is bounded in magnitude by the first neglected term and has the same sign, provided that the following term in the series is of opposite sign.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C9.S7.SS3.p4.s1">
+As special cases, when <Math mode="inline" xml:id="C9.S7.SS3.p4.m1">0&lt;x&lt;\infty</Math> <Math equation-number="9.7.15" mode="display" xml:id="C9.S7.E15">\mathrm{Ai}\left(x\right)\leq\frac{e^{-\xi}}{2\sqrt{\pi}x^{1/4}}, ,|\mathrm{Ai}'\left(x\right)|\leq\frac{x^{1/4}e^{-\xi}}{2\sqrt{\pi}}\left(1+ \frac{7}{72\xi}\right), ,</Math> <Math equation-number="9.7.16" mode="display" xml:id="C9.S7.E16">\mathrm{Bi}\left(x\right)\leq\frac{{\mathrm{e}^{\xi}}}{\sqrt{\pi}x^{1/4}}\left (1+\left(\chi(\tfrac{7}{6})+1\right)\frac{5}{72\xi}\right),\mathrm{Bi}'\left(x\right)\leq\frac{x^{1/4}e^{\xi}}{\sqrt{\pi}}\left(1+\left( \frac{\pi}{2}+1\right)\frac{7}{72\xi}\right),</Math> where <Math mode="inline" xml:id="C9.S7.SS3.p4.m2">\xi=\tfrac{2}{3}x^{3/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S7.SS4">
+<title>Error Bounds for Complex Variables</title>        
+  
+<para xml:id="C9.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C9.S7.SS4.p1.s1">
+The <Math mode="inline" xml:id="C9.S7.SS4.p1.m1">n</Math> th error term in ( 9.7.5) and (9.7.6) is bounded in magnitude by the first neglected term multiplied by <Math equation-number="9.7.17" mode="display" xml:id="C9.S7.E17">\begin{cases}1,&amp;|\operatorname{ph}z|\leq\tfrac{1}{3}\pi,\\ \min\left(|\csc\left(\operatorname{ph}\zeta\right)|,\chi(n+\sigma)+1\right),&amp; \tfrac{1}{3}\pi\leq|\operatorname{ph}z|\leq\tfrac{2}{3}\pi,\\ \frac{\sqrt{2\pi(n+\sigma)}}{|\cos\left(\operatorname{ph}\zeta\right)|^{n+ \sigma}}+\chi(n+\sigma)+1,&amp;\tfrac{2}{3}\pi\leq|\operatorname{ph}z|&lt;\pi,\end{cases}</Math> provided that <Math mode="inline" xml:id="C9.S7.SS4.p1.m2">n\geq 0</Math> , <Math mode="inline" xml:id="C9.S7.SS4.p1.m3">\sigma=\tfrac{1}{6}</Math> for ( 9.7.5) and <Math mode="inline" xml:id="C9.S7.SS4.p1.m4">n\geq 1</Math> , <Math mode="inline" xml:id="C9.S7.SS4.p1.m5">\sigma=0</Math> for (9.7.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C9.S7.SS4.p2.s1">
+Corresponding bounds for the errors in (9.7.7) to (9.7.14) may be obtained by use of these results and those of §9.2(v) and their differentiated forms.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S7.SS5">
+<title>Exponentially-Improved Expansions</title>        
+    
+ 
+<para xml:id="C9.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C9.S7.SS5.p1.s1">
+In (9.7.5) and (9.7.6) let <Math equation-number="9.7.18" mode="display" xml:id="C9.S7.E18">\mathrm{Ai}\left(z\right)=\frac{e^{-\zeta}}{2\sqrt{\pi}z^{1/4}}\left(\sum_{k=0 }^{n-1}(-1)^{k}\frac{u_{k}}{\zeta^{k}}+R_{n}(z)\right),</Math> , <Math equation-number="9.7.19" mode="display" xml:id="C9.S7.E19">\mathrm{Ai}'\left(z\right)=-\frac{z^{1/4}e^{-\zeta}}{2\sqrt{\pi}}\left(\sum_{k =0}^{n-1}(-1)^{k}\frac{v_{k}}{\zeta^{k}}+S_{n}(z)\right),</Math> with <Math mode="inline" xml:id="C9.S7.SS5.p1.m1">n=\left\lfloor 2|\zeta|\right\rfloor</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C9.S7.SS5.p1.s2">
+Then <Math equation-number="9.7.20" mode="display" xml:id="C9.S7.E20">R_{n}(z)=(-1)^{n}\sum_{k=0}^{m-1}(-1)^{k}u_{k}\frac{G_{n-k}\left(2\zeta\right) }{\zeta^{k}}+R_{m,n}(z),</Math> , <Math equation-number="9.7.21" mode="display" xml:id="C9.S7.E21">S_{n}(z)=(-1)^{n-1}\sum_{k=0}^{m-1}(-1)^{k}v_{k}\frac{G_{n-k}\left(2\zeta \right)}{\zeta^{k}}+S_{m,n}(z),</Math> where <Math equation-number="9.7.22" mode="display" xml:id="C9.S7.E22">G_{p}\left(z\right)=\frac{e^{z}}{2\pi}\Gamma\left(p\right)\Gamma\left(1-p,z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C9.S7.SS5.p1.s3">
+(For the notation see §8.2(i).)And as <Math mode="inline" xml:id="C9.S7.SS5.p1.m2">z\rightarrow\infty</Math> with <Math mode="inline" xml:id="C9.S7.SS5.p1.m3">m</Math> fixed <Math equation-number="9.7.23" mode="display" xml:id="C9.S7.E23">R_{m,n}(z),S_{m,n}(z)=O\left(e^{-2|\zeta|}\zeta^{-m}\right), if |\operatorname{ph}z|\leq\tfrac{2}{3}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C9.S7.SS5.p2.s1">
+For re-expansions of the remainder terms in (9.7.7)–(9.7.14) combine the results of this section with those of §9.2(v) and their differentiated forms, as in §9.7(iv).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S7.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C9.S7.SS5.p3.s1">
+For higher re-expansions of the remainder terms seeOlde Daalhuis (1995, 1996), and Olde Daalhuis and Olver (1995a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

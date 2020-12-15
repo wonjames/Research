@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C20.S5">
+<title>Infinite Products and Related Results</title>          
+<subsection xml:id="C20.S5.SS1">
+<title>Single Products</title>        
+ 
+<para xml:id="C20.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C20.S5.SS1.p1.s1">
+ <Math equation-number="20.5.1" mode="display" xml:id="C20.S5.E1">\theta_{1}\left(z,q\right)=2q^{1/4}\sin z\prod\limits_{n=1}^{\infty}{\left(1-q ^{2n}\right)}{\left(1-2q^{2n}\cos\left(2z\right)+q^{4n}\right)},</Math> <Math equation-number="20.5.2" mode="display" xml:id="C20.S5.E2">\theta_{2}\left(z,q\right)=2q^{1/4}\cos z\prod\limits_{n=1}^{\infty}{\left(1-q ^{2n}\right)}{\left(1+2q^{2n}\cos\left(2z\right)+q^{4n}\right)},</Math> <Math equation-number="20.5.3" mode="display" xml:id="C20.S5.E3">\theta_{3}\left(z,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1+2q^{2n-1}\cos\left(2z\right)+q^{4n-2}\right),</Math> <Math equation-number="20.5.4" mode="display" xml:id="C20.S5.E4">\theta_{4}\left(z,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1-2q^{2n-1}\cos\left(2z\right)+q^{4n-2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C20.S5.SS1.p2.s1">
+ <Math equation-number="20.5.5" mode="display" xml:id="C20.S5.E5">\theta_{1}\left(z\middle|\tau\right)=\theta_{1}'\left(0\middle|\tau\right)\sin z \prod_{n=1}^{\infty}\frac{\sin\left(n\pi\tau+z\right)\sin\left(n\pi\tau-z \right)}{{\sin^{2}}\left(n\pi\tau\right)},</Math> <Math equation-number="20.5.6" mode="display" xml:id="C20.S5.E6">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right)\cos z \prod_{n=1}^{\infty}\frac{\cos\left(n\pi\tau+z\right)\cos\left(n\pi\tau-z \right)}{{\cos^{2}}\left(n\pi\tau\right)},</Math> <Math equation-number="20.5.7" mode="display" xml:id="C20.S5.E7">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right)\prod _{n=1}^{\infty}\frac{\cos\left((n-\tfrac{1}{2})\pi\tau+z\right)\cos\left((n- \tfrac{1}{2})\pi\tau-z\right)}{{\cos^{2}}\left((n-\tfrac{1}{2})\pi\tau\right)},</Math> <Math equation-number="20.5.8" mode="display" xml:id="C20.S5.E8">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right)\prod _{n=1}^{\infty}\frac{\sin\left((n-\tfrac{1}{2})\pi\tau+z\right)\sin\left((n- \tfrac{1}{2})\pi\tau-z\right)}{{\sin^{2}}\left((n-\tfrac{1}{2})\pi\tau\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C20.S5.Px1">
+<title>Jacobi’s Triple Product</title>    
+<para xml:id="C20.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C20.S5.Px1.p1.s1">
+ <Math equation-number="20.5.9" mode="display" xml:id="C20.S5.E9">\theta_{3}\left(\pi z\middle|\tau\right)=\sum_{n=-\infty}^{\infty}p^{2n}q^{n^{ 2}}\\ =\prod_{n=1}^{\infty}\left(1-q^{2n}\right)\left(1+q^{2n-1}p^{2}\right)\left(1+ q^{2n-1}p^{-2}\right),</Math> where <Math mode="inline" xml:id="C20.S5.Px1.p1.m1">p=e^{i\pi z}</Math> , <Math mode="inline" xml:id="C20.S5.Px1.p1.m2">q=e^{i\pi\tau}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S5.SS2">
+<title>Logarithmic Derivatives</title>         
+<para xml:id="C20.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C20.S5.SS2.p1.s1">
+When <Math mode="inline" xml:id="C20.S5.SS2.p1.m1">\left|\Im z\right|&lt;\pi\Im\tau</Math> , <Math equation-number="20.5.10" mode="display" xml:id="C20.S5.E10">\frac{\theta_{1}'\left(z,q\right)}{\theta_{1}\left(z,q\right)}-\cot z=4\sin \left(2z\right)\sum_{n=1}^{\infty}\frac{q^{2n}}{1-2q^{2n}\cos\left(2z\right)+q ^{4n}}=4\sum_{n=1}^{\infty}\frac{q^{2n}}{1-q^{2n}}\sin\left(2nz\right),</Math> <Math equation-number="20.5.11" mode="display" xml:id="C20.S5.E11">\frac{\theta_{2}'\left(z,q\right)}{\theta_{2}\left(z,q\right)}+\tan z=-4\sin \left(2z\right)\sum_{n=1}^{\infty}\frac{q^{2n}}{1+2q^{2n}\cos\left(2z\right)+q ^{4n}}=4\sum_{n=1}^{\infty}(-1)^{n}\frac{q^{2n}}{1-q^{2n}}\sin\left(2nz\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C20.S5.SS2.p1.s2">
+The left-hand sides of (20.5.10) and (20.5.11) are replaced by their limiting values when <Math mode="inline" xml:id="C20.S5.SS2.p1.m2">\cot z</Math> or <Math mode="inline" xml:id="C20.S5.SS2.p1.m3">\tan z</Math> are undefined.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C20.S5.SS2.p2.s1">
+When <Math mode="inline" xml:id="C20.S5.SS2.p2.m1">\left|\Im z\right|&lt;\tfrac{1}{2}\pi\Im\tau</Math> , <Math equation-number="20.5.12" mode="display" xml:id="C20.S5.E12">\frac{\theta_{3}'\left(z,q\right)}{\theta_{3}\left(z,q\right)}=-4\sin\left(2z \right)\sum_{n=1}^{\infty}\frac{q^{2n-1}}{1+2q^{2n-1}\cos\left(2z\right)+q^{4n -2}}=4\sum_{n=1}^{\infty}(-1)^{n}\frac{q^{n}}{1-q^{2n}}\sin\left(2nz\right),</Math> <Math equation-number="20.5.13" mode="display" xml:id="C20.S5.E13">\frac{\theta_{4}'\left(z,q\right)}{\theta_{4}\left(z,q\right)}=4\sin\left(2z \right)\sum_{n=1}^{\infty}\frac{q^{2n-1}}{1-2q^{2n-1}\cos\left(2z\right)+q^{4n -2}}=4\sum_{n=1}^{\infty}\frac{q^{n}}{1-q^{2n}}\sin\left(2nz\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C20.S5.SS2.p3.s1">
+With the given conditions the infinite series in (20.5.10)–(20.5.13) converge absolutely and uniformly in compact sets in the <Math mode="inline" xml:id="C20.S5.SS2.p3.m1">z</Math> -plane.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S5.SS3">
+<title>Double Products</title>           
+<para xml:id="C20.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C20.S5.SS3.p1.s1">
+ <Math equation-number="20.5.14" mode="display" xml:id="C20.S5.E14">\theta_{1}\left(z\middle|\tau\right)=z\theta_{1}'\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=-N}^{N}\lim_{M\to\infty}\prod_{\begin{subarray}{c}m= -M\\ \left|m\right|+\left|n\right|\neq 0\end{subarray}}^{M}\left(1+\frac{z}{(m+n \tau)\pi}\right),</Math> , <Math equation-number="20.5.15" mode="display" xml:id="C20.S5.E15">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=-N}^{N}\lim_{M\to\infty}\prod_{m=1-M}^{M}\left(1+ \frac{z}{(m-\tfrac{1}{2}+n\tau)\pi}\right),</Math> , <Math equation-number="20.5.16" mode="display" xml:id="C20.S5.E16">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=1-N}^{N}\lim_{M\to\infty}\prod_{m=1-M}^{M}\left(1+ \frac{z}{(m-\tfrac{1}{2}+(n-\tfrac{1}{2})\tau)\pi}\right),</Math> , <Math equation-number="20.5.17" mode="display" xml:id="C20.S5.E17">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=1-N}^{N}\lim_{M\to\infty}\prod_{m=-M}^{M}\left(1+ \frac{z}{(m+(n-\tfrac{1}{2})\tau)\pi}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C20.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C20.S5.SS3.p2.s1">
+These double products are not absolutely convergent; hence the order of the limits is important.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C20.S5.SS3.p2.s2">
+The order shown is in accordance with the Eisenstein convention (Walker (1996, §0.3)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

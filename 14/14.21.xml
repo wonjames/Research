@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S21">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C14.S21.SS1">
+<title>Associated Legendre Equation</title>          
+<para xml:id="C14.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S21.SS1.p1.s1">
+ <Math equation-number="14.21.1" mode="display" xml:id="C14.S21.E1">\left(1-z^{2}\right)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-2z\frac{ \mathrm{d}w}{\mathrm{d}z}+\left(\nu(\nu+1)-\frac{\mu^{2}}{1-z^{2}}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S21.SS1.p1.s2">
+Standard solutions: the associated Legendre functions <Math mode="inline" xml:id="C14.S21.SS1.p1.m4">P^{\mu}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C14.S21.SS1.p1.m5">P^{-\mu}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C14.S21.SS1.p1.m6">\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)</Math> , and <Math mode="inline" xml:id="C14.S21.SS1.p1.m7">\boldsymbol{Q}^{\mu}_{-\nu-1}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S21.SS1.p1.s3">
+<Math mode="inline" xml:id="C14.S21.SS1.p1.m8">P^{\pm\mu}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C14.S21.SS1.p1.m9">\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)</Math> exist for all values of <Math mode="inline" xml:id="C14.S21.SS1.p1.m10">\nu</Math> , <Math mode="inline" xml:id="C14.S21.SS1.p1.m11">\mu</Math> , and <Math mode="inline" xml:id="C14.S21.SS1.p1.m12">z</Math> , except possibly <Math mode="inline" xml:id="C14.S21.SS1.p1.m13">z=\pm 1</Math> and <Math mode="inline" xml:id="C14.S21.SS1.p1.m14">\infty</Math> , which are branch points (or poles) of the functions, in general.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C14.S21.SS1.p1.s4">
+When <Math mode="inline" xml:id="C14.S21.SS1.p1.m15">z</Math> is complex <Math mode="inline" xml:id="C14.S21.SS1.p1.m16">P^{\pm\mu}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C14.S21.SS1.p1.m17">Q^{\mu}_{\nu}\left(z\right)</Math> , and <Math mode="inline" xml:id="C14.S21.SS1.p1.m18">\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)</Math> are defined by (14.3.6)–(14.3.10) with <Math mode="inline" xml:id="C14.S21.SS1.p1.m19">x</Math> replaced by <Math mode="inline" xml:id="C14.S21.SS1.p1.m20">z</Math> : the principalbranches are obtained by taking the principal values of all the multivalued functions appearing in these representations when <Math mode="inline" xml:id="C14.S21.SS1.p1.m21">z\in(1,\infty)</Math> , and by continuity elsewhere in the <Math mode="inline" xml:id="C14.S21.SS1.p1.m22">z</Math> -plane with a cut along the interval <Math mode="inline" xml:id="C14.S21.SS1.p1.m23">(-\infty,1]</Math> ; compare §4.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C14.S21.SS1.p1.s5">
+The principal branches of <Math mode="inline" xml:id="C14.S21.SS1.p1.m24">P^{\pm\mu}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C14.S21.SS1.p1.m25">\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)</Math> are real when <Math mode="inline" xml:id="C14.S21.SS1.p1.m26">\nu</Math> , <Math mode="inline" xml:id="C14.S21.SS1.p1.m27">\mu\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C14.S21.SS1.p1.m28">z\in(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S21.SS2">
+<title>Numerically Satisfactory Solutions</title>          
+<para xml:id="C14.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C14.S21.SS2.p1.s1">
+When <Math mode="inline" xml:id="C14.S21.SS2.p1.m1">\Re\nu\geq-\frac{1}{2}</Math> and <Math mode="inline" xml:id="C14.S21.SS2.p1.m2">\Re\mu\geq 0</Math> , a numerically satisfactory pair of solutions of (14.21.1) in the half-plane <Math mode="inline" xml:id="C14.S21.SS2.p1.m3">|\operatorname{ph}z|\leq\frac{1}{2}\pi</Math> is given by <Math mode="inline" xml:id="C14.S21.SS2.p1.m4">P^{-\mu}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C14.S21.SS2.p1.m5">\boldsymbol{Q}^{\mu}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S21.SS3">
+<title>Properties</title>        
+        
+<para xml:id="C14.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C14.S21.SS3.p1.s1">
+Many of the properties stated in preceding sections extend immediately from the <Math mode="inline" xml:id="C14.S21.SS3.p1.m1">x</Math> -interval <Math mode="inline" xml:id="C14.S21.SS3.p1.m2">(1,\infty)</Math> to the cut <Math mode="inline" xml:id="C14.S21.SS3.p1.m3">z</Math> -plane <Math mode="inline" xml:id="C14.S21.SS3.p1.m4">\mathbb{C}\backslash(-\infty,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C14.S21.SS3.p1.s2">
+This includes, for example, the Wronskian relations (14.2.7)–(14.2.11); hypergeometric representations (14.3.6)–(14.3.10) and (14.3.15)–(14.3.20);results for integer orders (14.6.3)–(14.6.5),(14.6.7),(14.6.8),(14.7.6), (14.7.7), and (14.7.11)–(14.7.16); behavior at singularities (14.8.7)–(14.8.16); connection formulas (14.9.11)–(14.9.16); recurrence relations (14.10.3)–(14.10.7).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C14.S21.SS3.p1.s3">
+The generating function expansions (14.7.19) (with <Math mode="inline" xml:id="C14.S21.SS3.p1.m5">\mathsf{P}</Math> replaced by <Math mode="inline" xml:id="C14.S21.SS3.p1.m6">P</Math> ) and(14.7.22) apply when <Math mode="inline" xml:id="C14.S21.SS3.p1.m7">|h|&lt;\min\left|z\pm\left(z^{2}-1\right)^{1/2}\right|</Math> ; (14.7.21) (with <Math mode="inline" xml:id="C14.S21.SS3.p1.m8">\mathsf{P}</Math> replaced by <Math mode="inline" xml:id="C14.S21.SS3.p1.m9">P</Math> ) applies when <Math mode="inline" xml:id="C14.S21.SS3.p1.m10">|h|&gt;\max\left|z\pm\left(z^{2}-1\right)^{1/2}\right|</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

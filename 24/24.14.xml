@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C24.S14">
+<title>Sums</title>             
+<subsection xml:id="C24.S14.SS1">
+<title>Quadratic Recurrence Relations</title>        
+  
+   
+<para xml:id="C24.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C24.S14.SS1.p1.s1">
+ <Math equation-number="24.14.1" mode="display" xml:id="C24.S14.E1">\sum_{k=0}^{n}{n\choose k}B_{k}\left(x\right)B_{n-k}\left(y\right)=n(x+y-1)B_{ n-1}\left(x+y\right)-(n-1)B_{n}\left(x+y\right),</Math> , <Math equation-number="24.14.2" mode="display" xml:id="C24.S14.E2">\sum_{k=0}^{n}{n\choose k}B_{k}B_{n-k}=(1-n)B_{n}-nB_{n-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C24.S14.SS1.p1.s2">
+<Math equation-number="24.14.3" mode="display" xml:id="C24.S14.E3">\sum_{k=0}^{n}{n\choose k}E_{k}\left(h\right)E_{n-k}\left(x\right)=2(E_{n+1} \left(x+h\right)-(x+h-1)E_{n}\left(x+h\right)),</Math> , <Math equation-number="24.14.4" mode="display" xml:id="C24.S14.E4">\sum_{k=0}^{n}{n\choose k}E_{k}E_{n-k}=-2^{n+1}E_{n+1}\left(0\right)=-2^{n+2}( 1-2^{n+2})\frac{B_{n+2}}{n+2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C24.S14.SS1.p1.s3">
+<Math equation-number="24.14.5" mode="display" xml:id="C24.S14.E5">\sum_{k=0}^{n}{n\choose k}E_{k}\left(h\right)B_{n-k}\left(x\right)=2^{n}B_{n} \left(\tfrac{1}{2}(x+h)\right),</Math> , <Math equation-number="24.14.6" mode="display" xml:id="C24.S14.E6">\sum_{k=0}^{n}{n\choose k}2^{k}B_{k}E_{n-k}=2(1-2^{n-1})B_{n}-nE_{n-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C24.S14.SS1.p2.s1">
+Let <Math mode="inline" xml:id="C24.S14.SS1.p2.m1">m+n</Math> be even with <Math mode="inline" xml:id="C24.S14.SS1.p2.m2">m</Math> and <Math mode="inline" xml:id="C24.S14.SS1.p2.m3">n</Math> nonzero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C24.S14.SS1.p2.s2">
+Then <Math equation-number="24.14.7" mode="display" xml:id="C24.S14.E7">\sum_{j=0}^{m}\sum_{k=0}^{n}\genfrac{(}{)}{0.0pt}{}{m}{j}\genfrac{(}{)}{0.0pt} {}{n}{k}\frac{B_{j}B_{k}}{m+n-j-k+1}=(-1)^{m-1}\frac{m!n!}{(m+n)!}B_{m+n}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S14.SS2">
+<title>Higher-Order Recurrence Relations</title>        
+   
+<para xml:id="C24.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C24.S14.SS2.p1.s1">
+In the following two identities, valid for <Math mode="inline" xml:id="C24.S14.SS2.p1.m1">n\geq 2</Math> , the sums are taken over all nonnegative integers <Math mode="inline" xml:id="C24.S14.SS2.p1.m2">j,k,\ell</Math> with <Math mode="inline" xml:id="C24.S14.SS2.p1.m3">j+k+\ell=n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C24.S14.SS2.p1.s2">
+<Math equation-number="24.14.8" mode="display" xml:id="C24.S14.E8">\sum\frac{(2n)!}{(2j)!(2k)!(2\ell)!}B_{2j}B_{2k}B_{2\ell}=(n-1)(2n-1)B_{2n}+n( n-\tfrac{1}{2})B_{2n-2},</Math> , <Math equation-number="24.14.9" mode="display" xml:id="C24.S14.E9">\sum\frac{(2n)!}{(2j)!(2k)!(2\ell)!}E_{2j}E_{2k}E_{2\ell}=\tfrac{1}{2}\left(E_ {2n}-E_{2n+2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C24.S14.SS2.p2.s1">
+In the next identity, valid for <Math mode="inline" xml:id="C24.S14.SS2.p2.m1">n\geq 4</Math> , the sum is taken over all positive integers <Math mode="inline" xml:id="C24.S14.SS2.p2.m2">j,k,\ell,m</Math> with <Math mode="inline" xml:id="C24.S14.SS2.p2.m3">j+k+\ell+m=n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C24.S14.SS2.p2.s2">
+<Math equation-number="24.14.10" mode="display" xml:id="C24.S14.E10">\sum\frac{(2n)!}{(2j)!(2k)!(2\ell)!(2m)!}B_{2j}B_{2k}B_{2\ell}B_{2m}=-{2n+3 \choose 3}B_{2n}-\frac{4}{3}n^{2}(2n-1)B_{2n-2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S14.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C24.S14.SS2.p3.s1">
+For (24.14.11) and (24.14.12), seeAl-Salam and Carlitz (1959).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C24.S14.SS2.p3.s2">
+These identities can be regarded as higher-order recurrences.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C24.S14.SS2.p3.s3">
+Let <Math mode="inline" xml:id="C24.S14.SS2.p3.m1">\det[a_{r+s}]</Math> denote a Hankel (orpersymmetric) determinant, that is, an <Math mode="inline" xml:id="C24.S14.SS2.p3.m2">(n+1)\times(n+1)</Math> determinant with element <Math mode="inline" xml:id="C24.S14.SS2.p3.m3">a_{r+s}</Math> in row <Math mode="inline" xml:id="C24.S14.SS2.p3.m4">r</Math> and column <Math mode="inline" xml:id="C24.S14.SS2.p3.m5">s</Math> for <Math mode="inline" xml:id="C24.S14.SS2.p3.m6">r,s=0,1,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C24.S14.SS2.p3.s4">
+Then <Math equation-number="24.14.11" mode="display" xml:id="C24.S14.E11">\det[B_{r+s}]=(-1)^{n(n+1)/2}\left(\prod_{k=1}^{n}k!\right)^{6}\Bigg{/}\left( \prod_{k=1}^{2n+1}k!\right),</Math> , <Math equation-number="24.14.12" mode="display" xml:id="C24.S14.E12">\det[E_{r+s}]=(-1)^{n(n+1)/2}\left(\prod_{k=1}^{n}k!\right)^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S14.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C24.S14.SS2.p4.s1">
+See also Sachse (1882).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S14.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C24.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C24.S14.SS3.p1.s1">
+For other sums involving Bernoulli and Euler numbers and polynomials seeHansen (1975, pp. 331–347) andPrudnikov et al. (1990, pp. 383–386).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

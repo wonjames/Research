@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S9">
+<title>Asymptotic Expansions for Large Variable</title>        
+  
+<subsection xml:id="C12.S9.SS1">
+<title>Poincaré-Type Expansions</title>        
+ 
+<para xml:id="C12.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S9.SS1.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C12.S9.SS1.p1.m1">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C12.S9.SS1.p2.s1">
+As <Math mode="inline" xml:id="C12.S9.SS1.p2.m1">z\to\infty</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C12.S9.SS1.p3.s1">
+ <Math equation-number="12.9.1" mode="display" xml:id="C12.S9.E1">U\left(a,z\right)\sim e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\left(\frac{1}{2}+a\right)_{2s}}}{s!(2z^{2})^{s}}, if |\operatorname{ph}z|\leq\tfrac{3}{4}\pi-\delta(&lt;\tfrac{3}{4}\pi) ,</Math> <Math equation-number="12.9.2" mode="display" xml:id="C12.S9.E2">V\left(a,z\right)\sim\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{2}} \sum_{s=0}^{\infty}\frac{{\left(\frac{1}{2}-a\right)_{2s}}}{s!(2z^{2})^{s}}, if |\operatorname{ph}z|\leq\tfrac{1}{4}\pi-\delta(&lt;\tfrac{1}{4}\pi) </Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C12.S9.SS1.p3.s2">
+<Math equation-number="12.9.3" mode="display" xml:id="C12.S9.E3">U\left(a,z\right)\sim e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\left(\frac{1}{2}+a\right)_{2s}}}{s!(2z^{2})^{s}}\pm i \frac{\sqrt{2\pi}}{\Gamma\left(\tfrac{1}{2}+a\right)}e^{\mp i\pi a}e^{\frac{1} {4}z^{2}}z^{a-\frac{1}{2}}\sum_{s=0}^{\infty}\frac{{\left(\tfrac{1}{2}-a\right )_{2s}}}{s!(2z^{2})^{s}}, if \tfrac{1}{4}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{5}{4}\pi-\delta ,</Math> <Math equation-number="12.9.4" mode="display" xml:id="C12.S9.E4">V\left(a,z\right)\sim\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{2}} \sum_{s=0}^{\infty}\frac{{\left(\tfrac{1}{2}-a\right)_{2s}}}{s!(2z^{2})^{s}} \pm\frac{i}{\Gamma\left(\tfrac{1}{2}-a\right)}e^{-\frac{1}{4}z^{2}}z^{-a-\frac {1}{2}}\sum_{s=0}^{\infty}(-1)^{s}\frac{{\left(\tfrac{1}{2}+a\right)_{2s}}}{s! (2z^{2})^{s}}, if -\tfrac{1}{4}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{3}{4}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C12.S9.SS1.p3.s3">
+To obtain approximations for <Math mode="inline" xml:id="C12.S9.SS1.p3.m1">U\left(a,-z\right)</Math> and <Math mode="inline" xml:id="C12.S9.SS1.p3.m2">V\left(a,-z\right)</Math> as <Math mode="inline" xml:id="C12.S9.SS1.p3.m3">z\to\infty</Math> combine the results above with (12.2.15) and (12.2.16).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C12.S9.SS1.p3.s4">
+See also Temme (2015, Chapter 11).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S9.SS2">
+<title>Bounds and Re-Expansions for the Remainder Terms</title>          
+<para xml:id="C12.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C12.S9.SS2.p1.s1">
+Bounds and re-expansions for the error term in (12.9.1) can be obtained by use of (12.7.14) and §§13.7(ii),13.7(iii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C12.S9.SS2.p1.s2">
+Corresponding results for (12.9.2) can be obtained via (12.2.20).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S25">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C8.S25.SS1">
+<title>Series Expansions</title>         
+<para xml:id="C8.S25.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S25.SS1.p1.s1">
+Although the series expansions in §§8.7, 8.19(iv), and 8.21(vi) converge for all finite values of <Math mode="inline" xml:id="C8.S25.SS1.p1.m1">z</Math> , they are cumbersome to use when <Math mode="inline" xml:id="C8.S25.SS1.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S25.SS1.p1.s2">
+For large <Math mode="inline" xml:id="C8.S25.SS1.p1.m3">|z|</Math> the corresponding asymptotic expansions (generally divergent) are used instead.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S25.SS1.p1.s3">
+See alsoLuke (1975, pp. 101–102) and Temme (1994b).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS2">
+<title>Quadrature</title>         
+<para xml:id="C8.S25.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C8.S25.SS2.p1.s1">
+See Allasia and Besenghi (1987b) for the numerical computation of <Math mode="inline" xml:id="C8.S25.SS2.p1.m1">\Gamma\left(a,z\right)</Math> from (8.6.4) by means of the trapezoidal rule.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS3">
+<title>Asymptotic Expansions</title>         
+<para xml:id="C8.S25.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S25.SS3.p1.s1">
+DiDonato and Morris (1986) describes an algorithm for computing <Math mode="inline" xml:id="C8.S25.SS3.p1.m1">P\left(a,x\right)</Math> and <Math mode="inline" xml:id="C8.S25.SS3.p1.m2">Q\left(a,x\right)</Math> for <Math mode="inline" xml:id="C8.S25.SS3.p1.m3">a\geq 0</Math> , <Math mode="inline" xml:id="C8.S25.SS3.p1.m4">x\geq 0</Math> , and <Math mode="inline" xml:id="C8.S25.SS3.p1.m5">a+x\neq 0</Math> from the uniform expansions in §8.12.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C8.S25.SS3.p1.s2">
+The algorithm supplies 14S accuracy.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C8.S25.SS3.p1.s3">
+A numerical inversion procedure is also given for calculating the value of <Math mode="inline" xml:id="C8.S25.SS3.p1.m6">x</Math> (with 10S accuracy), when <Math mode="inline" xml:id="C8.S25.SS3.p1.m7">a</Math> and <Math mode="inline" xml:id="C8.S25.SS3.p1.m8">P\left(a,x\right)</Math> are specified, based on Newton’s rule (§3.8(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C8.S25.SS3.p1.s4">
+See also Temme (1987, 1994b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS4">
+<title>Continued Fractions</title>         
+<para xml:id="C8.S25.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S25.SS4.p1.s1">
+The computation of <Math mode="inline" xml:id="C8.S25.SS4.p1.m1">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S25.SS4.p1.m2">\Gamma\left(a,z\right)</Math> by means of continued fractions is described in Jones and Thron (1985) andGautschi (1979b, §§4.3, 5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S25.SS4.p1.s2">
+See also Jacobsen et al. (1986) andTemme (1996b, p. 280).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS5">
+<title>Recurrence Relations</title>         
+<para xml:id="C8.S25.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C8.S25.SS5.p1.s1">
+Expansions involving incomplete gamma functions often require the generation of sequences <Math mode="inline" xml:id="C8.S25.SS5.p1.m1">P\left(a+n,x\right)</Math> , <Math mode="inline" xml:id="C8.S25.SS5.p1.m2">Q\left(a+n,x\right)</Math> , or <Math mode="inline" xml:id="C8.S25.SS5.p1.m3">\gamma^{*}\left(a+n,x\right)</Math> for fixed <Math mode="inline" xml:id="C8.S25.SS5.p1.m4">a</Math> and <Math mode="inline" xml:id="C8.S25.SS5.p1.m5">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C8.S25.SS5.p1.s2">
+An efficient procedure, based partly on the recurrence relations (8.8.5) and (8.8.6), is described in Gautschi (1979b, 1999).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S25.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C8.S25.SS5.p2.s1">
+Stable recursive schemes for the computation of <Math mode="inline" xml:id="C8.S25.SS5.p2.m1">E_{p}\left(x\right)</Math> are described in Miller (1960) for <Math mode="inline" xml:id="C8.S25.SS5.p2.m2">x&gt;0</Math> and integer <Math mode="inline" xml:id="C8.S25.SS5.p2.m3">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C8.S25.SS5.p2.s2">
+For <Math mode="inline" xml:id="C8.S25.SS5.p2.m4">x&gt;0</Math> and real <Math mode="inline" xml:id="C8.S25.SS5.p2.m5">p</Math> see Amos (1980b) and Chiccoli et al. (1987, 1988).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C8.S25.SS5.p2.s3">
+See also Chiccoli et al. (1990a) and Stegun and Zucker (1974).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

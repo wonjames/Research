@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S4">
+<title>Isomonodromy Problems</title>         
+<subsection xml:id="C32.S4.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C32.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S4.SS1.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S4.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> can be expressed as the compatibility condition of a linear system, called an isomonodromy problem or Lax pair.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C32.S4.SS1.p1.s2">
+Suppose <Math equation-number="32.4.1" mode="display" xml:id="C32.S4.E1">\frac{\partial\boldsymbol{{\Psi}}}{\partial\lambda}=\mathbf{A}(z,\lambda) \boldsymbol{{\Psi}},\frac{\partial\boldsymbol{{\Psi}}}{\partial z}=\mathbf{B}(z,\lambda) \boldsymbol{{\Psi}},</Math> is a linear system in which <Math mode="inline" xml:id="C32.S4.SS1.p1.m3">\mathbf{A}</Math> and <Math mode="inline" xml:id="C32.S4.SS1.p1.m4">\mathbf{B}</Math> are matrices and <Math mode="inline" xml:id="C32.S4.SS1.p1.m5">\lambda</Math> is independent of <Math mode="inline" xml:id="C32.S4.SS1.p1.m6">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C32.S4.SS1.p1.s3">
+Then the equation <Math equation-number="32.4.2" mode="display" xml:id="C32.S4.E2">\frac{{\partial}^{2}\boldsymbol{{\Psi}}}{\partial z\partial\lambda}=\frac{{ \partial}^{2}\boldsymbol{{\Psi}}}{\partial\lambda\partial z},</Math> is satisfied provided that <Math equation-number="32.4.3" mode="display" xml:id="C32.S4.E3">\frac{\partial\mathbf{A}}{\partial z}-\frac{\partial\mathbf{B}}{\partial \lambda}+\mathbf{A}\mathbf{B}-\mathbf{B}\mathbf{A}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C32.S4.SS1.p1.s4">
+(32.4.3) is the compatibility condition of (32.4.1).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C32.S4.SS1.p1.s5">
+Isomonodromy problems for Painlevé equations are not unique.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS2">
+<title>First Painlevé Equation</title>         
+<para xml:id="C32.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C32.S4.SS2.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> is the compatibility condition of (32.4.1) with <Math equation-number="32.4.4" mode="display" xml:id="C32.S4.E4">\mathbf{A}(z,\lambda)=(4\lambda^{4}+2w^{2}+z)\begin{bmatrix}1&amp;0\\ 0&amp;-1\end{bmatrix}-i(4\lambda^{2}w+2w^{2}+z)\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}-\left(2\lambda w^{\prime}+\frac{1}{2\lambda}\right)\begin{ bmatrix}0&amp;1\\ 1&amp;0\end{bmatrix},</Math> <Math equation-number="32.4.5" mode="display" xml:id="C32.S4.E5">\mathbf{B}(z,\lambda)=\left(\lambda+\dfrac{w}{\lambda}\right)\begin{bmatrix}1&amp; 0\\ 0&amp;-1\end{bmatrix}-\dfrac{iw}{\lambda}\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS3">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C32.S4.SS3.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> is the compatibility condition of (32.4.1) with <Math equation-number="32.4.6" mode="display" xml:id="C32.S4.E6">\mathbf{A}(z,\lambda)=-i(4\lambda^{2}+2w^{2}+z)\begin{bmatrix}1&amp;0\\ 0&amp;-1\end{bmatrix}-2w^{\prime}\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}+\left(4\lambda w-\frac{\alpha}{\lambda}\right)\begin{bmatrix} 0&amp;1\\ 1&amp;0\end{bmatrix},</Math> <Math equation-number="32.4.7" mode="display" xml:id="C32.S4.E7">\mathbf{B}(z,\lambda)=\begin{bmatrix}-i\lambda&amp;w\\ w&amp;i\lambda\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C32.S4.SS3.p1.s2">
+See Flaschka and Newell (1980).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS4">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C32.S4.SS4.p1.s1">
+The compatibility condition of (32.4.1) with <Math equation-number="32.4.8" mode="display" xml:id="C32.S4.E8">\mathbf{A}(z,\lambda)=\begin{bmatrix}\tfrac{1}{4}z&amp;0\\ 0&amp;-\tfrac{1}{4}z\end{bmatrix}+\begin{bmatrix}-\tfrac{1}{2}\theta_{\infty}&amp;u_{0 }\\ u_{1}&amp;\tfrac{1}{2}\theta_{\infty}\end{bmatrix}\dfrac{1}{\lambda}+\begin{ bmatrix}v_{0}-\tfrac{1}{4}z&amp;-v_{1}v_{0}\\ \ifrac{(v_{0}-\tfrac{1}{2}z)}{v_{1}}&amp;\tfrac{1}{4}z-v_{0}\end{bmatrix}\frac{1}{ \lambda^{2}},</Math> <Math equation-number="32.4.9" mode="display" xml:id="C32.S4.E9">\mathbf{B}(z,\lambda)=\begin{bmatrix}\tfrac{1}{4}&amp;0\\ 0&amp;-\tfrac{1}{4}\end{bmatrix}\lambda+\begin{bmatrix}0&amp;u_{0}\\ u_{1}&amp;0\end{bmatrix}\dfrac{1}{z}-\begin{bmatrix}v_{0}-\tfrac{1}{4}z&amp;-v_{1}v_{0 }\\ \ifrac{(v_{0}-\tfrac{1}{2}z)}{v_{1}}&amp;\tfrac{1}{4}z-v_{0}\end{bmatrix}\frac{1}{ z\lambda},</Math> where <Math mode="inline" xml:id="C32.S4.SS4.p1.m1">\theta_{\infty}</Math> is an arbitrary constant, is <Math equation-number="32.4.10" mode="display" xml:id="C32.S4.E10">zu_{0}^{\prime}=\theta_{\infty}u_{0}-zv_{0}v_{1},</Math> <Math equation-number="32.4.11" mode="display" xml:id="C32.S4.E11">zu_{1}^{\prime}=-\theta_{\infty}u_{1}-(\ifrac{z(2v_{0}-z)}{(2v_{1})}),</Math> <Math equation-number="32.4.12" mode="display" xml:id="C32.S4.E12">zv_{0}^{\prime}=2v_{0}u_{1}v_{1}+v_{0}+(u_{0}(2v_{0}-z)/v_{1}),</Math> <Math equation-number="32.4.13" mode="display" xml:id="C32.S4.E13">zv_{1}^{\prime}=2u_{0}-2u_{1}v_{1}^{2}-\theta_{\infty}v_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C32.S4.SS4.p1.s2">
+If <Math mode="inline" xml:id="C32.S4.SS4.p1.m2">w=-u_{0}/(v_{0}v_{1})</Math> , then <Math equation-number="32.4.14" mode="display" xml:id="C32.S4.E14">zw^{\prime}=(4v_{0}-z)w^{2}+(2\theta_{\infty}-1)w+z,</Math> and <Math mode="inline" xml:id="C32.S4.SS4.p1.m3">w</Math> satisfies <Math mode="inline" xml:id="C32.S4.SS4.p1.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.4.15" mode="display" xml:id="C32.S4.E15">(\alpha,\beta,\gamma,\delta)=\left(2\theta_{0},2(1-\theta_{\infty}),1,-1\right),</Math> where <Math equation-number="32.4.16" mode="display" xml:id="C32.S4.E16">\theta_{0}=\frac{4v_{0}}{z}\left(\theta_{\infty}\left(1-\frac{z}{4v_{0}}\right )+\frac{z-2v_{0}}{2v_{0}v_{1}}u_{0}+u_{1}v_{1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C32.S4.SS4.p1.s3">
+Note that the right-hand side of the last equation is a first integral of the system (32.4.10)–(32.4.13).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS5">
+<title>Other Painlevé Equations</title>         
+<para xml:id="C32.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C32.S4.SS5.p1.s1">
+For isomonodromy problems for <Math mode="inline" xml:id="C32.S4.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> , <Math mode="inline" xml:id="C32.S4.SS5.p1.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> , and <Math mode="inline" xml:id="C32.S4.SS5.p1.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> see Jimbo and Miwa (1981).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

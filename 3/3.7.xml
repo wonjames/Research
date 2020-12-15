@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S7">
+<title>Ordinary Differential Equations</title>        
+ 
+<subsection xml:id="C3.S7.SS1">
+<title>Introduction</title>         
+<para xml:id="C3.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S7.SS1.p1.s1">
+Consideration will be limited to ordinary linear second-order differential equations <Math equation-number="3.7.1" mode="display" xml:id="C3.S7.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+f(z)\frac{\mathrm{d}w}{\mathrm{d}z }+g(z)w=h(z),</Math> where <Math mode="inline" xml:id="C3.S7.SS1.p1.m1">f</Math> , <Math mode="inline" xml:id="C3.S7.SS1.p1.m2">g</Math> , and <Math mode="inline" xml:id="C3.S7.SS1.p1.m3">h</Math> are analytic functions in a domain <Math mode="inline" xml:id="C3.S7.SS1.p1.m4">D\subset\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S7.SS1.p1.s2">
+If <Math mode="inline" xml:id="C3.S7.SS1.p1.m5">h=0</Math> the differential equation ishomogeneous, otherwise it is inhomogeneous.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C3.S7.SS1.p1.s3">
+For applications to special functions <Math mode="inline" xml:id="C3.S7.SS1.p1.m6">f</Math> , <Math mode="inline" xml:id="C3.S7.SS1.p1.m7">g</Math> , and <Math mode="inline" xml:id="C3.S7.SS1.p1.m8">h</Math> are often simple rational functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C3.S7.SS1.p2.s1">
+For general information on solutions of equation (3.7.1) see §1.13.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C3.S7.SS1.p2.s2">
+For classification of singularities of (3.7.1) and expansions of solutions in the neighborhoods ofsingularities, see §2.7.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C3.S7.SS1.p2.s3">
+For an introduction to numerical methods for ordinary differential equations, see Ascher and Petzold (1998), Hairer et al. (1993), andIserles (1996).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S7.SS2">
+<title>Taylor-Series Method: Initial-Value Problems</title>          
+ 
+<para xml:id="C3.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C3.S7.SS2.p1.s1">
+Assume that we wish to integrate (3.7.1) along a finite path <Math mode="inline" xml:id="C3.S7.SS2.p1.m1">\mathscr{P}</Math> from <Math mode="inline" xml:id="C3.S7.SS2.p1.m2">z=a</Math> to <Math mode="inline" xml:id="C3.S7.SS2.p1.m3">z=b</Math> in a domain <Math mode="inline" xml:id="C3.S7.SS2.p1.m4">D</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C3.S7.SS2.p1.s2">
+The path is partitioned at <Math mode="inline" xml:id="C3.S7.SS2.p1.m5">P+1</Math> points labeled successively <Math mode="inline" xml:id="C3.S7.SS2.p1.m6">z_{0},z_{1},\dots,z_{P}</Math> , with <Math mode="inline" xml:id="C3.S7.SS2.p1.m7">z_{0}=a</Math> , <Math mode="inline" xml:id="C3.S7.SS2.p1.m8">z_{P}=b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C3.S7.SS2.p2.s1">
+By repeated differentiation of (3.7.1) all derivatives of <Math mode="inline" xml:id="C3.S7.SS2.p2.m1">w(z)</Math> can be expressed in terms of <Math mode="inline" xml:id="C3.S7.SS2.p2.m2">w(z)</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p2.m3">w^{\prime}(z)</Math> as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C3.S7.SS2.p2.s2">
+Write <Math equation-number="3.7.2" mode="display" xml:id="C3.S7.E2">w^{(s)}(z)=f_{s}(z)w(z)+g_{s}(z)w^{\prime}(z)+h_{s}(z), if s=0,1,2,\dots,</Math> with <Math equation-number="3.7.3" mode="display" xml:id="C3.S7.E3">f_{0}(z)=1,g_{0}(z)=0,h_{0}(z)=0,f_{1}(z)=0,g_{1}(z)=1,h_{1}(z)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C3.S7.SS2.p2.s3">
+Then for <Math mode="inline" xml:id="C3.S7.SS2.p2.m4">s=2,3,\dots</Math> , <Math equation-number="3.7.4" mode="display" xml:id="C3.S7.E4">f_{s}(z)=f^{\prime}_{s-1}(z)-g(z)g_{s-1}(z),g_{s}(z)=f_{s-1}(z)-f(z)g_{s-1}(z)+g^{\prime}_{s-1}(z),h_{s}(z)=h(z)g_{s-1}(z)+h^{\prime}_{s-1}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S7.SS2.p3.s1">
+Write <Math mode="inline" xml:id="C3.S7.SS2.p3.m1">\tau_{j}=z_{j+1}-z_{j}</Math> , <Math mode="inline" xml:id="C3.S7.SS2.p3.m2">j=0,1,\dots,P</Math> , expand <Math mode="inline" xml:id="C3.S7.SS2.p3.m3">w(z)</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p3.m4">w^{\prime}(z)</Math> in Taylor series (§ 1.10(i)) centered at <Math mode="inline" xml:id="C3.S7.SS2.p3.m5">z=z_{j}</Math> , and apply (3.7.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C3.S7.SS2.p3.s2">
+Then <Math equation-number="3.7.5" mode="display" xml:id="C3.S7.E5">\begin{bmatrix}w(z_{j+1})\\ w^{\prime}(z_{j+1})\end{bmatrix}=\mathbf{A}(\tau_{j},z_{j})\begin{bmatrix}w(z_ {j})\\ w^{\prime}(z_{j})\end{bmatrix}+\mathbf{b}(\tau_{j},z_{j}),</Math> where <Math mode="inline" xml:id="C3.S7.SS2.p3.m6">\mathbf{A}(\tau,z)</Math> is the matrix <Math equation-number="3.7.6" mode="display" xml:id="C3.S7.E6">\mathbf{A}(\tau,z)=\begin{bmatrix}A_{11}(\tau,z)&amp;A_{12}(\tau,z)\\ A_{21}(\tau,z)&amp;A_{22}(\tau,z)\end{bmatrix},</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p3.m7">\mathbf{b}(\tau,z)</Math> is the vector <Math equation-number="3.7.7" mode="display" xml:id="C3.S7.E7">\mathbf{b}(\tau,z)=\begin{bmatrix}b_{1}(\tau,z)\\ b_{2}(\tau,z)\end{bmatrix},</Math> with <Math equation-number="3.7.8" mode="display" xml:id="C3.S7.E8">A_{11}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}f_{s}(z),A_{12}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}g_{s}(z),A_{21}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}f_{s+1}(z),A_{22}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}g_{s+1}(z)</Math> ,
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C3.S7.SS2.p4.s1">
+ <Math equation-number="3.7.9" mode="display" xml:id="C3.S7.E9">b_{1}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}h_{s}(z),b_{2}(\tau,z)=\sum_{s=0}^{\infty}\frac{\tau^{s}}{s!}h_{s+1}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S7.SS2.p5.s1">
+If the solution <Math mode="inline" xml:id="C3.S7.SS2.p5.m1">w(z)</Math> that we are seeking grows in magnitude at least as fast as all other solutions of (3.7.1) as we pass along <Math mode="inline" xml:id="C3.S7.SS2.p5.m2">\mathscr{P}</Math> from <Math mode="inline" xml:id="C3.S7.SS2.p5.m3">a</Math> to <Math mode="inline" xml:id="C3.S7.SS2.p5.m4">b</Math> , then <Math mode="inline" xml:id="C3.S7.SS2.p5.m5">w(z)</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p5.m6">w^{\prime}(z)</Math> may be computed in a stable manner for <Math mode="inline" xml:id="C3.S7.SS2.p5.m7">z=z_{0},z_{1},\dots,z_{P}</Math> by successive application of (3.7.5) for <Math mode="inline" xml:id="C3.S7.SS2.p5.m8">j=0,1,\dots,P-1</Math> , beginning with initial values <Math mode="inline" xml:id="C3.S7.SS2.p5.m9">w(a)</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p5.m10">w^{\prime}(a)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C3.S7.SS2.p6.s1">
+Similarly, if <Math mode="inline" xml:id="C3.S7.SS2.p6.m1">w(z)</Math> is decaying at least as fast as all other solutions along <Math mode="inline" xml:id="C3.S7.SS2.p6.m2">\mathscr{P}</Math> , then we may reverse the labeling of the <Math mode="inline" xml:id="C3.S7.SS2.p6.m3">z_{j}</Math> along <Math mode="inline" xml:id="C3.S7.SS2.p6.m4">\mathscr{P}</Math> and begin with initial values <Math mode="inline" xml:id="C3.S7.SS2.p6.m5">w(b)</Math> and <Math mode="inline" xml:id="C3.S7.SS2.p6.m6">w^{\prime}(b)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S7.SS3">
+<title>Taylor-Series Method: Boundary-Value Problems</title>           
+<para xml:id="C3.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C3.S7.SS3.p1.s1">
+Now suppose the path <Math mode="inline" xml:id="C3.S7.SS3.p1.m1">\mathscr{P}</Math> is such that the rate of growth of <Math mode="inline" xml:id="C3.S7.SS3.p1.m2">w(z)</Math> along <Math mode="inline" xml:id="C3.S7.SS3.p1.m3">\mathscr{P}</Math> is intermediate to that of two other solutions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C3.S7.SS3.p1.s2">
+(This can happen only forinhomogeneous equations.)Then to compute <Math mode="inline" xml:id="C3.S7.SS3.p1.m4">w(z)</Math> in a stable manner we solve the set of equations (3.7.5) simultaneously for <Math mode="inline" xml:id="C3.S7.SS3.p1.m5">j=0,1,\dots,P</Math> , as follows.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C3.S7.SS3.p1.s3">
+Let <Math mode="inline" xml:id="C3.S7.SS3.p1.m6">\mathbf{A}</Math> be the <Math mode="inline" xml:id="C3.S7.SS3.p1.m7">(2P)\times(2P+2)</Math> band matrix
+</sentence>
+
+</para>
+  
+<para xml:id="C3.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C3.S7.SS3.p2.s1">
+ <Math equation-number="3.7.10" mode="display" xml:id="C3.S7.E10">\mathbf{A}=\begin{bmatrix}-\mathbf{A}(\tau_{0},z_{0})&amp;\mathbf{I}&amp;\boldsymbol{{ 0}}&amp;\cdots&amp;\boldsymbol{{0}}&amp;\boldsymbol{{0}}\\ \boldsymbol{{0}}&amp;-\mathbf{A}(\tau_{1},z_{1})&amp;\mathbf{I}&amp;\cdots&amp;\boldsymbol{{0} }&amp;\boldsymbol{{0}}\\ \vdots&amp;\vdots&amp;\ddots&amp;\ddots&amp;\vdots&amp;\vdots\\ \boldsymbol{{0}}&amp;\boldsymbol{{0}}&amp;\cdots&amp;-\mathbf{A}(\tau_{P-2},z_{P-2})&amp; \mathbf{I}&amp;\boldsymbol{{0}}\\ \boldsymbol{{0}}&amp;\boldsymbol{{0}}&amp;\cdots&amp;\boldsymbol{{0}}&amp;-\mathbf{A}(\tau_{P- 1},z_{P-1})&amp;\mathbf{I}\end{bmatrix}</Math> ( <Math mode="inline" xml:id="C3.S7.SS3.p2.m1">\mathbf{I}</Math> and <Math mode="inline" xml:id="C3.S7.SS3.p2.m2">\boldsymbol{{0}}</Math> being the identity and zero matrices of order <Math mode="inline" xml:id="C3.S7.SS3.p2.m3">2\times 2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C3.S7.SS3.p2.s2">
+) Also let <Math mode="inline" xml:id="C3.S7.SS3.p2.m4">\mathbf{w}</Math> denote the <Math mode="inline" xml:id="C3.S7.SS3.p2.m5">(2P+2)\times 1</Math> vector <Math equation-number="3.7.11" mode="display" xml:id="C3.S7.E11">\mathbf{w}=\left[w(z_{0}),w^{\prime}(z_{0}),w(z_{1}),w^{\prime}(z_{1}),\dots,w (z_{P}),w^{\prime}(z_{P})\right]^{\rm T},</Math> and <Math mode="inline" xml:id="C3.S7.SS3.p2.m6">\mathbf{b}</Math> the <Math mode="inline" xml:id="C3.S7.SS3.p2.m7">(2P)\times 1</Math> vector <Math equation-number="3.7.12" mode="display" xml:id="C3.S7.E12">\mathbf{b}=\left[b_{1}(\tau_{0},z_{0}),b_{2}(\tau_{0},z_{0}),b_{1}(\tau_{1},z_ {1}),b_{2}(\tau_{1},z_{1}),\ldots,b_{1}(\tau_{P-1},z_{P-1}),b_{2}(\tau_{P-1},z _{P-1})\right]^{\rm T}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C3.S7.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C3.S7.SS3.p3.s1">
+Then <Math equation-number="3.7.13" mode="display" xml:id="C3.S7.E13">\mathbf{A}\mathbf{w}=\mathbf{b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C3.S7.SS3.p3.s2">
+This is a set of <Math mode="inline" xml:id="C3.S7.SS3.p3.m1">2P</Math> equations for the <Math mode="inline" xml:id="C3.S7.SS3.p3.m2">2P+2</Math> unknowns, <Math mode="inline" xml:id="C3.S7.SS3.p3.m3">w(z_{j})</Math> and <Math mode="inline" xml:id="C3.S7.SS3.p3.m4">w^{\prime}(z_{j})</Math> , <Math mode="inline" xml:id="C3.S7.SS3.p3.m5">j=0,1,\dots,P</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C3.S7.SS3.p3.s3">
+The remaining two equations are supplied by boundary conditions of the form <Math equation-number="3.7.14" mode="display" xml:id="C3.S7.E14">\alpha_{0}w(z_{0})+\beta_{0}w^{\prime}(z_{0})=\gamma_{0},\alpha_{1}w(z_{P})+\beta_{1}w^{\prime}(z_{P})=\gamma_{1},</Math> where the <Math mode="inline" xml:id="C3.S7.SS3.p3.m6">\alpha</Math> ’s, <Math mode="inline" xml:id="C3.S7.SS3.p3.m7">\beta</Math> ’s, and <Math mode="inline" xml:id="C3.S7.SS3.p3.m8">\gamma</Math> ’s are constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C3.S7.SS3.p4.s1">
+If, for example, <Math mode="inline" xml:id="C3.S7.SS3.p4.m1">\beta_{0}=\beta_{1}=0</Math> , then on moving the contributions of <Math mode="inline" xml:id="C3.S7.SS3.p4.m2">w(z_{0})</Math> and <Math mode="inline" xml:id="C3.S7.SS3.p4.m3">w(z_{P})</Math> to the right-hand side of (3.7.13) the resulting system of equations is not tridiagonal, but can readily be made tridiagonal by annihilating the elements of <Math mode="inline" xml:id="C3.S7.SS3.p4.m4">\mathbf{A}</Math> that lie below the main diagonal and its two adjacent diagonals.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C3.S7.SS3.p4.s2">
+The equations can then be solved by the method of §3.2(ii), if the differential equation is homogeneous, or by Olver’s algorithm (§3.6(v)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C3.S7.SS3.p4.s3">
+The latter is especially useful if the endpoint <Math mode="inline" xml:id="C3.S7.SS3.p4.m5">b</Math> of <Math mode="inline" xml:id="C3.S7.SS3.p4.m6">\mathscr{P}</Math> is at <Math mode="inline" xml:id="C3.S7.SS3.p4.m7">\infty</Math> , or if the differential equation is inhomogeneous.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C3.S7.SS3.p5.s1">
+It will be observed that the present formulation of the Taylor-series methodpermits considerable parallelism in the computation, both for initial-value and boundary-value problems.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C3.S7.SS3.p6.s1">
+For further information and examples, see Olde Daalhuis and Olver (1998, §7) and Lozier and Olver (1993).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C3.S7.SS3.p6.s2">
+General methods for boundary-value problems for ordinary differential equations are given in Ascher et al. (1995).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C3.S7.SS4">
+<title>Sturm–Liouville Eigenvalue Problems</title>           
+<para xml:id="C3.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C3.S7.SS4.p1.s1">
+Let <Math mode="inline" xml:id="C3.S7.SS4.p1.m1">(a,b)</Math> be a finite or infinite interval and <Math mode="inline" xml:id="C3.S7.SS4.p1.m2">q(x)</Math> be a real-valued continuous (or piecewise continuous) function on the closure of <Math mode="inline" xml:id="C3.S7.SS4.p1.m3">(a,b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C3.S7.SS4.p1.s2">
+TheSturm–Liouville eigenvalue problem is the construction of a nontrivial solution of the system <Math equation-number="3.7.15" mode="display" xml:id="C3.S7.E15">\frac{{\mathrm{d}}^{2}w_{k}}{{\mathrm{d}x}^{2}}+(\lambda_{k}-q(x))w_{k}=0,</Math> <Math equation-number="3.7.16" mode="display" xml:id="C3.S7.E16">w_{k}(a)=w_{k}(b)=0,</Math> with limits taken in (3.7.16) when <Math mode="inline" xml:id="C3.S7.SS4.p1.m4">a</Math> or <Math mode="inline" xml:id="C3.S7.SS4.p1.m5">b</Math> , or both, are infinite.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C3.S7.SS4.p1.s3">
+The values <Math mode="inline" xml:id="C3.S7.SS4.p1.m6">\lambda_{k}</Math> are the eigenvalues and the corresponding solutions <Math mode="inline" xml:id="C3.S7.SS4.p1.m7">w_{k}</Math> of the differential equation are theeigenfunctions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="34" xml:id="C3.S7.SS4.p1.s4">
+The eigenvalues <Math mode="inline" xml:id="C3.S7.SS4.p1.m8">\lambda_{k}</Math> are simple, that is, there is only one corresponding eigenfunction (apart from a normalization factor), and when ordered increasingly the eigenvalues satisfy <Math equation-number="3.7.17" mode="display" xml:id="C3.S7.E17">\lambda_{1}&lt;\lambda_{2}&lt;\lambda_{3}&lt;\cdots, if \lim_{k\to\infty}\lambda_{k}=\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C3.S7.SS4.p2.s1">
+If <Math mode="inline" xml:id="C3.S7.SS4.p2.m1">q(x)</Math> is <Math mode="inline" xml:id="C3.S7.SS4.p2.m2">C^{\infty}</Math> on the closure of <Math mode="inline" xml:id="C3.S7.SS4.p2.m3">(a,b)</Math> , then the discretized form (3.7.13) of the differential equation can be used. This converts the problem into a tridiagonal matrix problem in which the elements of the matrix are polynomials in <Math mode="inline" xml:id="C3.S7.SS4.p2.m4">\lambda</Math> ; compare §3.2(vi).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C3.S7.SS4.p2.s2">
+The larger the absolute values of the eigenvalues <Math mode="inline" xml:id="C3.S7.SS4.p2.m5">\lambda_{k}</Math> that are beingsought, the smaller the integration steps <Math mode="inline" xml:id="C3.S7.SS4.p2.m6">\left|\tau_{j}\right|</Math> need to be.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C3.S7.SS4.p3.s1">
+For further information, including other methods and examples, seePryce (1993, §2.5.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S7.SS5">
+<title>Runge–Kutta Method</title>           
+<para xml:id="C3.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C3.S7.SS5.p1.s1">
+The Runge–Kutta method applies to linear or nonlinear differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C3.S7.SS5.p1.s2">
+The method consists of a set of rules each of which is equivalent to a truncated Taylor-series expansion, but the rules avoid the need for analytic differentiations of the differential equation.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S7.Px1">
+<title>First-Order Equations</title>  
+ 
+<para xml:id="C3.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C3.S7.Px1.p1.s1">
+For <Math mode="inline" xml:id="C3.S7.Px1.p1.m1">w^{\prime}=f(z,w)</Math> the standard fourth-order rule reads <Math equation-number="3.7.18" mode="display" xml:id="C3.S7.E18">w_{n+1}=w_{n}+\tfrac{1}{6}(k_{1}+2k_{2}+2k_{3}+k_{4})+O\left(h^{5}\right),</Math> where <Math mode="inline" xml:id="C3.S7.Px1.p1.m2">h=z_{n+1}-z_{n}</Math> and <Math equation-number="3.7.19" mode="display" xml:id="C3.S7.E19">k_{1}=hf(z_{n},w_{n}),k_{2}=hf(z_{n}+\tfrac{1}{2}h,w_{n}+\tfrac{1}{2}k_{1}),k_{3}=hf(z_{n}+\tfrac{1}{2}h,w_{n}+\tfrac{1}{2}k_{2}),k_{4}=hf(z_{n}+h,w_{n}+k_{3})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C3.S7.Px1.p1.s2">
+The order estimate <Math mode="inline" xml:id="C3.S7.Px1.p1.m3">O\left(h^{5}\right)</Math> holds if the solution <Math mode="inline" xml:id="C3.S7.Px1.p1.m4">w(z)</Math> has five continuous derivatives.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S7.Px2">
+<title>Second-Order Equations</title>  
+ 
+<para xml:id="C3.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C3.S7.Px2.p1.s1">
+For <Math mode="inline" xml:id="C3.S7.Px2.p1.m1">w^{\prime\prime}=f(z,w,w^{\prime})</Math> the standard fourth-order rule reads <Math equation-number="3.7.20" mode="display" xml:id="C3.S7.E20">w_{n+1}=w_{n}+\tfrac{1}{6}h(6w^{\prime}_{n}+k_{1}+k_{2}+k_{3})+O\left(h^{5} \right),w^{\prime}_{n+1}=w^{\prime}_{n}+\tfrac{1}{6}(k_{1}+2k_{2}+2k_{3}+k_{4})+O\left (h^{5}\right),</Math> where <Math equation-number="3.7.21" mode="display" xml:id="C3.S7.E21">k_{1}=hf(z_{n},w_{n},w^{\prime}_{n}),k_{2}=hf(z_{n}+\tfrac{1}{2}h,w_{n}+\tfrac{1}{2}hw^{\prime}_{n}+\tfrac{1}{8}hk_ {1},w^{\prime}_{n}+\tfrac{1}{2}k_{1}),k_{3}=hf(z_{n}+\tfrac{1}{2}h,w_{n}+\tfrac{1}{2}hw^{\prime}_{n}+\tfrac{1}{8}hk_ {2},w^{\prime}_{n}+\tfrac{1}{2}k_{2}),k_{4}=hf(z_{n}+h,w_{n}+hw^{\prime}_{n}+\tfrac{1}{2}hk_{3},w^{\prime}_{n}+k_{3})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C3.S7.Px2.p1.s2">
+The order estimates <Math mode="inline" xml:id="C3.S7.Px2.p1.m2">O\left(h^{5}\right)</Math> hold if the solution <Math mode="inline" xml:id="C3.S7.Px2.p1.m3">w(z)</Math> has five continuous derivatives.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S7.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C3.S7.Px2.p2.s1">
+An extensive literature exists on the numerical solution of ordinary differential equations by Runge–Kutta, multistep, or other methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C3.S7.Px2.p2.s2">
+See, for example, Butcher (1987), Dekker and Verwer (1984, Chapter 3),Hairer et al. (1993, Chapter 2), and Hairer and Wanner (1996, Chapter 4).
+</sentence>
+
+</para>
+   
+</paragraph>
+ 
+</subsection>
+ 
+</section>

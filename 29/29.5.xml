@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S5">
+<title>Special Cases and Limiting Forms</title>        
+     
+<para xml:id="C29.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S5.p1.s1">
+ <Math equation-number="29.5.1" mode="display" xml:id="C29.S5.E1">a^{m}_{\nu}\left(0\right)=b^{m}_{\nu}\left(0\right)=m^{2},</Math> <Math equation-number="29.5.2" mode="display" xml:id="C29.S5.E2">\mathit{Ec}^{0}_{\nu}\left(z,0\right)=2^{-\frac{1}{2}},</Math> <Math equation-number="29.5.3" mode="display" xml:id="C29.S5.E3">\mathit{Ec}^{m}_{\nu}\left(z,0\right)=\cos\left(m(\tfrac{1}{2}\pi-z)\right), if m\geq 1, //// \mathit{Es}^{m}_{\nu}\left(z,0\right)=\sin\left(m(\tfrac{1}{2}\pi-z)\right), if m\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S5.p1.s2">
+Let <Math mode="inline" xml:id="C29.S5.p1.m1">\mu=\max{(\nu-m,0)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C29.S5.p1.s3">
+Then <Math equation-number="29.5.4" mode="display" xml:id="C29.S5.E4">\lim_{k\to 1-}a^{m}_{\nu}\left(k^{2}\right)=\lim_{k\to 1-}b^{m+1}_{\nu}\left(k ^{2}\right)=\nu(\nu+1)-\mu^{2},</Math> <Math equation-number="29.5.5" mode="display" xml:id="C29.S5.E5">{\lim_{k\to 1-}\frac{\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)}{\mathit{Ec}^{m }_{\nu}\left(0,k^{2}\right)}=\lim_{k\to 1-}\frac{\mathit{Es}^{m+1}_{\nu}\left( z,k^{2}\right)}{\mathit{Es}^{m+1}_{\nu}\left(0,k^{2}\right)}}=\frac{1}{(\cosh z )^{\mu}}F\left({\tfrac{1}{2}\mu-\tfrac{1}{2}\nu,\tfrac{1}{2}\mu+\tfrac{1}{2} \nu+\tfrac{1}{2}\atop\tfrac{1}{2}};{\tanh^{2}}z\right), if m even,</Math> <Math equation-number="29.5.6" mode="display" xml:id="C29.S5.E6">\lim_{k\to 1-}\frac{\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)}{\left.\ifrac{ \mathrm{d}\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)}{\mathrm{d}z}\right|_{z=0} }=\lim_{k\to 1-}\frac{\mathit{Es}^{m+1}_{\nu}\left(z,k^{2}\right)}{\left. \ifrac{\mathrm{d}\mathit{Es}^{m+1}_{\nu}\left(z,k^{2}\right)}{\mathrm{d}z} \right|_{z=0}}=\frac{\tanh z}{(\cosh z)^{\mu}}F\left({\tfrac{1}{2}\mu-\tfrac{1 }{2}\nu+\tfrac{1}{2},\tfrac{1}{2}\mu+\tfrac{1}{2}\nu+1\atop\tfrac{3}{2}};{ \tanh^{2}}z\right), if m odd,</Math> where <Math mode="inline" xml:id="C29.S5.p1.m2">F</Math> is the hypergeometric function; see §15.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C29.S5.p2.s1">
+If <Math mode="inline" xml:id="C29.S5.p2.m1">k\to 0+</Math> and <Math mode="inline" xml:id="C29.S5.p2.m2">\nu\to\infty</Math> in such a way that <Math mode="inline" xml:id="C29.S5.p2.m3">k^{2}\nu(\nu+1)=4\theta</Math> (a positive constant), then <Math equation-number="29.5.7" mode="display" xml:id="C29.S5.E7">\lim\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)=\mathrm{ce}_{m}\left(\tfrac{1}{2 }\pi-z,\theta\right),\lim\mathit{Es}^{m}_{\nu}\left(z,k^{2}\right)=\mathrm{se}_{m}\left(\tfrac{1}{2 }\pi-z,\theta\right),</Math> where <Math mode="inline" xml:id="C29.S5.p2.m4">\mathrm{ce}_{m}\left(z,\theta\right)</Math> and <Math mode="inline" xml:id="C29.S5.p2.m5">\mathrm{se}_{m}\left(z,\theta\right)</Math> are Mathieu functions; see §28.2(vi).
+</sentence>
+
+</para>
+ 
+</section>

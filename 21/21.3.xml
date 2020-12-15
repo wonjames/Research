@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C21.S3">
+<title>Symmetry and Quasi-Periodicity</title>        
+ 
+<subsection xml:id="C21.S3.SS1">
+<title>Riemann Theta Functions</title>        
+  
+<para xml:id="C21.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C21.S3.SS1.p1.s1">
+ <Math equation-number="21.3.1" mode="display" xml:id="C21.S3.E1">\theta\left(-\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=\theta\left( \mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> <Math equation-number="21.3.2" mode="display" xml:id="C21.S3.E2">\theta\left(\mathbf{z}+\mathbf{m}_{1}\middle|\boldsymbol{{\Omega}}\right)= \theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> when <Math mode="inline" xml:id="C21.S3.SS1.p1.m1">\mathbf{m}_{1}\in{\mathbb{Z}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C21.S3.SS1.p1.s2">
+Thus <Math mode="inline" xml:id="C21.S3.SS1.p1.m2">\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math> is periodic, with period <Math mode="inline" xml:id="C21.S3.SS1.p1.m3">1</Math> , in each element of <Math mode="inline" xml:id="C21.S3.SS1.p1.m4">\mathbf{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C21.S3.SS1.p1.s3">
+More generally, <Math equation-number="21.3.3" mode="display" xml:id="C21.S3.E3">\theta\left(\mathbf{z}+\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2} \middle|\boldsymbol{{\Omega}}\right)=e^{-2\pi i\left(\frac{1}{2}\mathbf{m}_{2} \cdot\boldsymbol{{\Omega}}\cdot\mathbf{m}_{2}+\mathbf{m}_{2}\cdot\mathbf{z} \right)}\theta\left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right),</Math> with <Math mode="inline" xml:id="C21.S3.SS1.p1.m5">\mathbf{m}_{1}</Math> , <Math mode="inline" xml:id="C21.S3.SS1.p1.m6">\mathbf{m}_{2}</Math> <Math mode="inline" xml:id="C21.S3.SS1.p1.m7">\in{\mathbb{Z}^{g}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C21.S3.SS1.p1.s4">
+This is thequasi-periodicity property of the Riemann theta function.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C21.S3.SS1.p1.s5">
+It determines the Riemann theta function up to a constant factor.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C21.S3.SS1.p1.s6">
+The set of points <Math mode="inline" xml:id="C21.S3.SS1.p1.m8">\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2}</Math> form a <Math mode="inline" xml:id="C21.S3.SS1.p1.m9">g</Math> -dimensional lattice, the period lattice of the Riemann theta function.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C21.S3.SS2">
+<title>Riemann Theta Functions with Characteristics</title>        
+  
+<para xml:id="C21.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C21.S3.SS2.p1.s1">
+Again, with <Math mode="inline" xml:id="C21.S3.SS2.p1.m1">\mathbf{m}_{1}</Math> , <Math mode="inline" xml:id="C21.S3.SS2.p1.m2">\mathbf{m}_{2}</Math> <Math mode="inline" xml:id="C21.S3.SS2.p1.m3">\in{\mathbb{Z}^{g}}</Math> <Math equation-number="21.3.4" mode="display" xml:id="C21.S3.E4">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}+\mathbf{m}_{1}}{ \boldsymbol{{\beta}}+\mathbf{m}_{2}}\left(\mathbf{z}\middle|\boldsymbol{{ \Omega}}\right)=e^{2\pi i\boldsymbol{{\alpha}}\cdot\mathbf{m}_{2}}\theta \genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}}\left( \mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C21.S3.SS2.p1.s2">
+Because of this property, the elements of <Math mode="inline" xml:id="C21.S3.SS2.p1.m4">\boldsymbol{{\alpha}}</Math> and <Math mode="inline" xml:id="C21.S3.SS2.p1.m5">\boldsymbol{{\beta}}</Math> are usually restricted to <Math mode="inline" xml:id="C21.S3.SS2.p1.m6">[0,1)</Math> , without loss of generality.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C21.S3.SS2.p1.s3">
+<Math equation-number="21.3.5" mode="display" xml:id="C21.S3.E5">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}+\mathbf{m}_{1}+\boldsymbol{{\Omega}}\mathbf{m}_{2}\middle| \boldsymbol{{\Omega}}\right)=e^{2\pi i\left(\boldsymbol{{\alpha}}\cdot\mathbf{ m}_{1}-\boldsymbol{{\beta}}\cdot\mathbf{m}_{2}-\frac{1}{2}\mathbf{m}_{2}\cdot \boldsymbol{{\Omega}}\cdot\mathbf{m}_{2}-\mathbf{m}_{2}\cdot\mathbf{z}\right)} \theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C21.S3.SS2.p1.s4">
+For Riemann theta functions with half-period characteristics, <Math equation-number="21.3.6" mode="display" xml:id="C21.S3.E6">\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{\alpha}}}{\boldsymbol{{\beta}}} \left(-\mathbf{z}\middle|\boldsymbol{{\Omega}}\right)=(-1)^{4\boldsymbol{{ \alpha}}\cdot\boldsymbol{{\beta}}}\theta\genfrac{[}{]}{0.0pt}{}{\boldsymbol{{ \alpha}}}{\boldsymbol{{\beta}}}\left(\mathbf{z}\middle|\boldsymbol{{\Omega}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C21.S3.SS2.p1.s5">
+See also §20.2(iii) for the case <Math mode="inline" xml:id="C21.S3.SS2.p1.m7">g=1</Math> and classical theta functions.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

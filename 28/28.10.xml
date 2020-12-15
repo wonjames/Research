@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S10">
+<title>Integral Equations</title>        
+ 
+<subsection xml:id="C28.S10.SS1">
+<title>Equations with Elementary Kernels</title>        
+  
+<para xml:id="C28.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S10.SS1.p1.s1">
+With the notation of §28.4 for Fourier coefficients, <Math equation-number="28.10.1" mode="display" xml:id="C28.S10.E1">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\cos\left(2h\cos z\cos t\right)\mathrm{ ce}_{2n}\left(t,h^{2}\right)\mathrm{d}t=\frac{A_{0}^{2n}(h^{2})}{\mathrm{ce}_{ 2n}\left(\frac{1}{2}\pi,h^{2}\right)}\mathrm{ce}_{2n}\left(z,h^{2}\right),</Math> , <Math equation-number="28.10.2" mode="display" xml:id="C28.S10.E2">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\cosh\left(2h\sin z\sin t\right)\mathrm{ ce}_{2n}\left(t,h^{2}\right)\mathrm{d}t=\frac{A_{0}^{2n}(h^{2})}{\mathrm{ce}_{ 2n}\left(0,h^{2}\right)}\mathrm{ce}_{2n}\left(z,h^{2}\right),</Math> , <Math equation-number="28.10.3" mode="display" xml:id="C28.S10.E3">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\sin\left(2h\cos z\cos t\right)\mathrm{ ce}_{2n+1}\left(t,h^{2}\right)\mathrm{d}t=-\frac{hA_{1}^{2n+1}(h^{2})}{\mathrm {ce}_{2n+1}'\left(\frac{1}{2}\pi,h^{2}\right)}\mathrm{ce}_{2n+1}\left(z,h^{2} \right),</Math> <Math equation-number="28.10.4" mode="display" xml:id="C28.S10.E4">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\cos z\cos t\cosh\left(2h\sin z\sin t \right)\mathrm{ce}_{2n+1}\left(t,h^{2}\right)\mathrm{d}t=\frac{A_{1}^{2n+1}(h^ {2})}{2\mathrm{ce}_{2n+1}\left(0,h^{2}\right)}\mathrm{ce}_{2n+1}\left(z,h^{2} \right),</Math> <Math equation-number="28.10.5" mode="display" xml:id="C28.S10.E5">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\sinh\left(2h\sin z\sin t\right)\mathrm{ se}_{2n+1}\left(t,h^{2}\right)\mathrm{d}t=\frac{hB_{1}^{2n+1}(h^{2})}{\mathrm{ se}_{2n+1}'\left(0,h^{2}\right)}\mathrm{se}_{2n+1}\left(z,h^{2}\right),</Math> <Math equation-number="28.10.6" mode="display" xml:id="C28.S10.E6">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\sin z\sin t\cos\left(2h\cos z\cos t \right)\mathrm{se}_{2n+1}\left(t,h^{2}\right)\mathrm{d}t=\frac{B_{1}^{2n+1}(h^ {2})}{2\mathrm{se}_{2n+1}\left(\frac{1}{2}\pi,h^{2}\right)}\mathrm{se}_{2n+1} \left(z,h^{2}\right),</Math> <Math equation-number="28.10.7" mode="display" xml:id="C28.S10.E7">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\sin z\sin t\sin\left(2h\cos z\cos t \right)\mathrm{se}_{2n+2}\left(t,h^{2}\right)\mathrm{d}t=-\frac{hB_{2}^{2n+2}( h^{2})}{2\mathrm{se}_{2n+2}'\left(\frac{1}{2}\pi,h^{2}\right)}\mathrm{se}_{2n+ 2}\left(z,h^{2}\right),</Math> <Math equation-number="28.10.8" mode="display" xml:id="C28.S10.E8">\frac{2}{\pi}\int_{0}^{\ifrac{\pi}{2}}\cos z\cos t\sinh\left(2h\sin z\sin t \right)\mathrm{se}_{2n+2}\left(t,h^{2}\right)\mathrm{d}t=\frac{hB_{2}^{2n+2}(h ^{2})}{2\mathrm{se}_{2n+2}'\left(0,h^{2}\right)}\mathrm{se}_{2n+2}\left(z,h^{2 }\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S10.SS2">
+<title>Equations with Bessel-Function Kernels</title>        
+  
+<para xml:id="C28.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C28.S10.SS2.p1.s1">
+ <Math equation-number="28.10.9" mode="display" xml:id="C28.S10.E9">\int_{0}^{\ifrac{\pi}{2}}J_{0}\left(2\sqrt{q({\cos^{2}}\tau-{\sin^{2}}\zeta)} \right)\mathrm{ce}_{2n}\left(\tau,q\right)\mathrm{d}\tau=w_{\mbox{\tiny II}}( \tfrac{1}{2}\pi;a_{2n}\left(q\right),q)\mathrm{ce}_{2n}\left(\zeta,q\right),</Math> , <Math equation-number="28.10.10" mode="display" xml:id="C28.S10.E10">\int_{0}^{\pi}J_{0}\left(2\sqrt{q}(\cos\tau+\cos\zeta)\right)\mathrm{ce}_{n} \left(\tau,q\right)\mathrm{d}\tau=w_{\mbox{\tiny II}}(\pi;a_{n}\left(q\right), q)\mathrm{ce}_{n}\left(\zeta,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S10.SS3">
+<title>Further Equations</title>        
+   
+<para xml:id="C28.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C28.S10.SS3.p1.s1">
+See §28.28.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C28.S10.SS3.p1.s2">
+See also Prudnikov et al. (1990, pp. 359–368),Erdélyi et al. (1955, p. 115), andGradshteyn and Ryzhik (2000, pp. 755–759).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C28.S10.SS3.p1.s3">
+For relations with variable boundaries see Volkmer (1983).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

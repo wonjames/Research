@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S12">
+<title>Asymptotic Approximations</title>        
+ 
+<subsection xml:id="C15.S12.SS1">
+<title>Large Variable</title>          
+<para xml:id="C15.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S12.SS1.p1.s1">
+For the asymptotic behavior of <Math mode="inline" xml:id="C15.S12.SS1.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> as <Math mode="inline" xml:id="C15.S12.SS1.p1.m2">z\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS1.p1.m3">a</Math> , <Math mode="inline" xml:id="C15.S12.SS1.p1.m4">b</Math> , <Math mode="inline" xml:id="C15.S12.SS1.p1.m5">c</Math> fixed, combine (15.2.2) with (15.8.2) or (15.8.8).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S12.SS2">
+<title>Large <Math mode="inline" xml:id="C15.S12.SS2.m1">c</Math></title>         
+ 
+<para xml:id="C15.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C15.S12.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C15.S12.SS2.p1.m1">\delta</Math> denote an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C15.S12.SS2.p1.s2">
+Also let <Math mode="inline" xml:id="C15.S12.SS2.p1.m2">a,b,z</Math> be real or complex and fixed, and at least one of the following conditions be satisfied: <Math mode="inline" xml:id="C15.S12.I1.ix4.p1.m1">a</Math> and/or <Math mode="inline" xml:id="C15.S12.I1.ix4.p1.m2">b\in\{0,-1,-2,\dots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C15.S12.SS2.p1.s3">
+<Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m1">\Re z&lt;\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m2">|c+n|\geq\delta</Math> for all <Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m3">n\in\{0,1,2,\dots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C15.S12.SS2.p1.s4">
+<Math mode="inline" xml:id="C15.S12.I1.ix6.p1.m1">\Re z=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix6.p1.m2">\left|\operatorname{ph}c\right|\leq\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C15.S12.SS2.p1.s5">
+<Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m1">\Re z&gt;\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m2">\alpha_{-}-\tfrac{1}{2}\pi+\delta\leq\operatorname{ph}c\leq\alpha_{+}+\tfrac{1 }{2}\pi-\delta</Math> , where <Math equation-number="15.12.1" mode="display" xml:id="C15.S12.E1">\alpha_{\pm}=\operatorname{arctan}\left(\frac{\operatorname{ph}z-\operatorname {ph}\left(1-z\right)\mp\pi}{\ln|1-z^{-1}|}\right),</Math> with <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m3">z</Math> restricted so that <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m4">\pm\alpha_{\pm}\in[0,\tfrac{1}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C15.S12.SS2.p1.s6">
+Then for fixed <Math mode="inline" xml:id="C15.S12.SS2.p1.m3">m\in\{0,1,2,\dots\}</Math> , <Math equation-number="15.12.2" mode="display" xml:id="C15.S12.E2">F\left(a,b;c;z\right)=\sum_{s=0}^{m-1}\frac{{\left(a\right)_{s}}{\left(b\right )_{s}}}{{\left(c\right)_{s}}s!}z^{s}+O\left(c^{-m}\right), if |c|\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C15.S12.SS2.p2.s1">
+Similar results for other sectors are given in Wagner (1988).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C15.S12.SS2.p2.s2">
+For the more general case in which <Math mode="inline" xml:id="C15.S12.SS2.p2.m1">a^{2}=o\left(c\right)</Math> and <Math mode="inline" xml:id="C15.S12.SS2.p2.m2">b^{2}=o\left(c\right)</Math> seeWagner (1990).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S12.SS2.p3.s1">
+For large <Math mode="inline" xml:id="C15.S12.SS2.p3.m1">b</Math> and <Math mode="inline" xml:id="C15.S12.SS2.p3.m2">c</Math> with <Math mode="inline" xml:id="C15.S12.SS2.p3.m3">c&gt;b+1</Math> see López and Pagola (2011).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S12.SS3">
+<title>Other Large Parameters</title>        
+ 
+<para xml:id="C15.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C15.S12.SS3.p1.s1">
+Again, throughout this subsection <Math mode="inline" xml:id="C15.S12.SS3.p1.m1">\delta</Math> denotes an arbitrary small positive constant, and <Math mode="inline" xml:id="C15.S12.SS3.p1.m2">a,b,c,z</Math> are real or complex and fixed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C15.S12.SS3.p2.s1">
+As <Math mode="inline" xml:id="C15.S12.SS3.p2.m1">\lambda\to\infty</Math> , <Math equation-number="15.12.3" mode="display" xml:id="C15.S12.E3">F\left({a,b\atop c+\lambda};z\right)\sim\frac{\Gamma\left(c+\lambda\right)}{ \Gamma\left(c-b+\lambda\right)}\sum_{s=0}^{\infty}q_{s}(z){\left(b\right)_{s}} \lambda^{-s-b},</Math> where <Math mode="inline" xml:id="C15.S12.SS3.p2.m3">q_{0}(z)=1</Math> and <Math mode="inline" xml:id="C15.S12.SS3.p2.m4">q_{s}(z)</Math> , <Math mode="inline" xml:id="C15.S12.SS3.p2.m5">s=1,2,\dots</Math> , are defined by the generating function <Math equation-number="15.12.4" mode="display" xml:id="C15.S12.E4">\left(\frac{e^{t}-1}{t}\right)^{b-1}e^{t(1-c)}\left(1-z+ze^{-t}\right)^{-a}= \sum_{s=0}^{\infty}q_{s}(z)t^{s}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C15.S12.SS3.p2.s2">
+If <Math mode="inline" xml:id="C15.S12.SS3.p2.m6">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , then (15.12.3) applies when <Math mode="inline" xml:id="C15.S12.SS3.p2.m7">|\operatorname{ph}\lambda|\leq\tfrac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C15.S12.SS3.p2.s3">
+If <Math mode="inline" xml:id="C15.S12.SS3.p2.m8">\Re z\leq\tfrac{1}{2}</Math> , then (15.12.3) applies when <Math mode="inline" xml:id="C15.S12.SS3.p2.m9">|\operatorname{ph}\lambda|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S12.SS3.p3.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p3.m1">|\operatorname{ph}\left(z-1\right)|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p3.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p3.m3">|\operatorname{ph}\lambda|\leq\pi-\delta</Math> ,
+</sentence>
+
+</para>
+   
+<para xml:id="C15.S12.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C15.S12.SS3.p4.s1">
+ <Math equation-number="15.12.5" mode="display" xml:id="C15.S12.E5">\mathbf{F}\left({a+\lambda,b-\lambda\atop c};\tfrac{1}{2}-\tfrac{1}{2}z\right) =2^{(a+b-1)/2}\frac{(z+1)^{(c-a-b-1)/2}}{(z-1)^{c/2}}\sqrt{\zeta\sinh\zeta} \left(\lambda+\tfrac{1}{2}a-\tfrac{1}{2}b\right)^{1-c}\left(I_{c-1}\left(( \lambda+\tfrac{1}{2}a-\tfrac{1}{2}b)\zeta\right)(1+O(\lambda^{-2}))+\frac{I_{c -2}\left((\lambda+\tfrac{1}{2}a-\tfrac{1}{2}b)\zeta\right)}{2\lambda+a-b}\left (\left(c-\tfrac{1}{2}\right)\left(c-\tfrac{3}{2}\right)\left(\frac{1}{\zeta}- \coth\zeta\right)+\tfrac{1}{2}(2c-a-b-1)(a+b-1)\tanh\left(\tfrac{1}{2}\zeta \right)+O(\lambda^{-2})\right)\right),</Math> where <Math equation-number="15.12.6" mode="display" xml:id="C15.S12.E6">\zeta=\operatorname{arccosh}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C15.S12.SS3.p4.s2">
+For <Math mode="inline" xml:id="C15.S12.SS3.p4.m1">I_{\nu}\left(z\right)</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C15.S12.SS3.p4.s3">
+For this result and an extension to an asymptotic expansion with error bounds seeJones (2001).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C15.S12.SS3.p5.s1">
+See also Dunster (1999) where the asymptotics of Jacobi polynomials is described; compare (15.9.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C15.S12.SS3.p6.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p6.m1">|\operatorname{ph}z|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p6.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p6.m3">|\operatorname{ph}\lambda|\leq\pi-\delta</Math> , <Math equation-number="15.12.7" mode="display" xml:id="C15.S12.E7">F\left({a,b-\lambda\atop c+\lambda};-z\right)=2^{b-c+(1/2)}\left(\frac{z+1}{2 \sqrt{z}}\right)^{\lambda}\left(\lambda^{a/2}U\left(a-\tfrac{1}{2},-\alpha \sqrt{\lambda}\right)\left((1+z)^{c-a-b}z^{1-c}\left(\frac{\alpha}{z-1}\right) ^{1-a}+O(\lambda^{-1})\right)+\frac{\lambda^{\ifrac{(a-1)}{2}}}{\alpha}U\left( a-\tfrac{3}{2},-\alpha\sqrt{\lambda}\right)\left((1+z)^{c-a-b}z^{1-c}\left( \frac{\alpha}{z-1}\right)^{1-a}-2^{c-b-(\ifrac{1}{2})}\left(\frac{\alpha}{z-1} \right)^{a}+O(\lambda^{-1})\right)\right),</Math> where <Math equation-number="15.12.8" mode="display" xml:id="C15.S12.E8">\alpha=\left(-2\ln\left(1-\left(\frac{z-1}{z+1}\right)^{2}\right)\right)^{1/2},</Math> with the branch chosen to be continuous and <Math mode="inline" xml:id="C15.S12.SS3.p6.m7">\Re\alpha&gt;0</Math> when <Math mode="inline" xml:id="C15.S12.SS3.p6.m8">\Re(\ifrac{(z-1)}{(z+1)})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C15.S12.SS3.p6.s2">
+For <Math mode="inline" xml:id="C15.S12.SS3.p6.m9">U\left(a,z\right)</Math> see §12.2, and for an extension to an asymptotic expansion seeOlde Daalhuis (2003a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C15.S12.SS3.p7.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p7.m1">|\operatorname{ph}z|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p7.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p7.m3">|\operatorname{ph}\lambda|\leq\tfrac{1}{2}\pi-\delta</Math> , <Math equation-number="15.12.9" mode="display" xml:id="C15.S12.E9">(z+1)^{3\lambda/2}(2\lambda)^{c-1}\mathbf{F}\left({a+\lambda,b+2\lambda\atop c };-z\right)={\lambda^{-1/3}\left(e^{\pi\mathrm{i}(a-c+\lambda+(1/3))}\mathrm{ Ai}\left(e^{-\ifrac{2\pi\mathrm{i}}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)+ e^{\pi\mathrm{i}(c-a-\lambda-(1/3))}\mathrm{Ai}\left(e^{\ifrac{2\pi\mathrm{i}} {3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)\right)\left(a_{0}(\zeta)+O(\lambda^ {-1})\right)}+\lambda^{-2/3}\left(e^{\pi\mathrm{i}(a-c+\lambda+(2/3))}\mathrm{ Ai}'\left(e^{-\ifrac{2\pi\mathrm{i}}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right) +e^{\pi\mathrm{i}(c-a-\lambda-(2/3))}\mathrm{Ai}'\left(e^{\ifrac{2\pi\mathrm{i }}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)\right)\left(a_{1}(\zeta)+O( \lambda^{-1})\right),</Math> where <Math equation-number="15.12.10" mode="display" xml:id="C15.S12.E10">\zeta=\operatorname{arccosh}\left(\tfrac{1}{4}z-1\right),</Math> , <Math equation-number="15.12.11" mode="display" xml:id="C15.S12.E11">\beta=\left(-\frac{3}{2}\zeta+\frac{9}{4}\ln\left(\frac{2+e^{\zeta}}{2+e^{- \zeta}}\right)\right)^{1/3},</Math> with the branch chosen to be continuous and <Math mode="inline" xml:id="C15.S12.SS3.p7.m6">\beta&gt;0</Math> when <Math mode="inline" xml:id="C15.S12.SS3.p7.m7">\zeta&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C15.S12.SS3.p7.s2">
+Also, <Math equation-number="15.12.12" mode="display" xml:id="C15.S12.E12">a_{0}(\zeta)=\tfrac{1}{2}G_{0}(\beta)+\tfrac{1}{2}G_{0}(-\beta),a_{1}(\zeta)=\left(\tfrac{1}{2}G_{0}(\beta)-\tfrac{1}{2}G_{0}(-\beta)\right)/\beta,</Math> where <Math equation-number="15.12.13" mode="display" xml:id="C15.S12.E13">G_{0}(\pm\beta)=\left(2+e^{\pm\zeta}\right)^{c-b-(\ifrac{1}{2})}\left(1+e^{\pm \zeta}\right)^{a-c+(\ifrac{1}{2})}\left(z-1-e^{\pm\zeta}\right)^{-a+(\ifrac{1} {2})}\sqrt{\frac{\beta}{e^{\zeta}-e^{-\zeta}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C15.S12.SS3.p7.s3">
+For <Math mode="inline" xml:id="C15.S12.SS3.p7.m8">\mathrm{Ai}\left(z\right)</Math> see §9.2, and for further information and an extension to an asymptotic expansion see Olde Daalhuis (2003b).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C15.S12.SS3.p7.s4">
+(Two errors in this reference are corrected in (15.12.9).)
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C15.S12.SS3.p8.s1">
+By combination of the foregoing results of this subsection with the linear transformations of §15.8(i) and the connection formulas of §15.10(ii), similar asymptotic approximations for <Math mode="inline" xml:id="C15.S12.SS3.p8.m1">F\left(a+e_{1}\lambda,b+e_{2}\lambda;c+e_{3}\lambda;z\right)</Math> can be obtained with <Math mode="inline" xml:id="C15.S12.SS3.p8.m2">e_{j}=\pm 1</Math> or <Math mode="inline" xml:id="C15.S12.SS3.p8.m3">0</Math> , <Math mode="inline" xml:id="C15.S12.SS3.p8.m4">j=1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C15.S12.SS3.p8.s2">
+For more details see Farid Khwaja and Olde Daalhuis (2014).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C15.S12.SS3.p8.s3">
+For other extensions, seeWagner (1986), Temme (2003) and Temme (2015, Chapters 12 and 28).
+</sentence>
+
+</para>
+      
+</subsection>
+ 
+</section>

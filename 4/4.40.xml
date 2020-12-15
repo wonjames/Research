@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S40">
+<title>Integrals</title>          
+<subsection xml:id="C4.S40.SS1">
+<title>Introduction</title>         
+<para xml:id="C4.S40.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S40.SS1.p1.s1">
+Throughout this section the variables are assumed to be real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S40.SS1.p1.s2">
+The results in §§4.40(ii) and 4.40(iv) can be extended to the complex plane by using continuous branches and avoiding singularities.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S40.SS2">
+<title>Indefinite Integrals</title>          
+<para xml:id="C4.S40.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C4.S40.SS2.p1.s1">
+ <Math equation-number="4.40.1" mode="display" xml:id="C4.S40.E1">\int\sinh x\mathrm{d}x=\cosh x,</Math> , <Math equation-number="4.40.2" mode="display" xml:id="C4.S40.E2">\int\cosh x\mathrm{d}x=\sinh x,</Math> , <Math equation-number="4.40.3" mode="display" xml:id="C4.S40.E3">\int\tanh x\mathrm{d}x=\ln\left(\cosh x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C4.S40.SS2.p1.s2">
+<Math equation-number="4.40.4" mode="display" xml:id="C4.S40.E4">\int\operatorname{csch}x\mathrm{d}x=\ln\left(\tanh\left(\tfrac{1}{2}x\right) \right), if 0&lt;x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C4.S40.SS2.p1.s3">
+<Math equation-number="4.40.5" mode="display" xml:id="C4.S40.E5">\int\operatorname{sech}x\mathrm{d}x=\operatorname{gd}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C4.S40.SS2.p1.s4">
+For the right-hand side see (4.23.39) and (4.23.40).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C4.S40.SS2.p1.s5">
+<Math equation-number="4.40.6" mode="display" xml:id="C4.S40.E6">\int\coth x\mathrm{d}x=\ln\left(\sinh x\right), if 0&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S40.SS3">
+<title>Definite Integrals</title>         
+ 
+<para xml:id="C4.S40.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S40.SS3.p1.s1">
+ <Math equation-number="4.40.7" mode="display" xml:id="C4.S40.E7">\int_{0}^{\infty}e^{-x}\frac{\sin\left(ax\right)}{\sinh x}\mathrm{d}x=\tfrac{1 }{2}\pi\coth\left(\tfrac{1}{2}\pi a\right)-\frac{1}{a}, if a\neq 0,</Math> <Math equation-number="4.40.8" mode="display" xml:id="C4.S40.E8">\int_{0}^{\infty}\frac{\sinh\left(ax\right)}{\sinh\left(\pi x\right)}\mathrm{d }x=\tfrac{1}{2}\tan\left(\tfrac{1}{2}a\right), if -\pi&lt;a&lt;\pi,</Math> <Math equation-number="4.40.9" mode="display" xml:id="C4.S40.E9">\int_{-\infty}^{\infty}\frac{e^{ax}}{\left(\cosh\left(\tfrac{1}{2}x\right) \right)^{2}}\mathrm{d}x=\frac{4\pi a}{\sin\left(\pi a\right)}, if -1&lt;a&lt;1,</Math> <Math equation-number="4.40.10" mode="display" xml:id="C4.S40.E10">{\int_{0}^{\infty}\frac{\tanh\left(ax\right)-\tanh\left(bx\right)}{x}\mathrm{d }x=\ln\left(\frac{a}{b}\right)}, if a&gt;0, b&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S40.SS4">
+<title>Inverse Hyperbolic Functions</title>        
+ 
+<para xml:id="C4.S40.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C4.S40.SS4.p1.s1">
+ <Math equation-number="4.40.11" mode="display" xml:id="C4.S40.E11">\int\operatorname{arcsinh}x\mathrm{d}x=x\operatorname{arcsinh}x-(1+x^{2})^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C4.S40.SS4.p1.s2">
+<Math equation-number="4.40.12" mode="display" xml:id="C4.S40.E12">\int\operatorname{arccosh}x\mathrm{d}x=x\operatorname{arccosh}x-(x^{2}-1)^{1/2}, if 1&lt;x&lt;\infty,</Math> <Math equation-number="4.40.13" mode="display" xml:id="C4.S40.E13">\int\operatorname{arctanh}x\mathrm{d}x=x\operatorname{arctanh}x+\tfrac{1}{2} \ln\left(1-x^{2}\right), if -1&lt;x&lt;1,</Math> <Math equation-number="4.40.14" mode="display" xml:id="C4.S40.E14">\int\operatorname{arccsch}x\mathrm{d}x=x\operatorname{arccsch}x+\operatorname{ arcsinh}x, if 0&lt;x&lt;\infty,</Math> <Math equation-number="4.40.15" mode="display" xml:id="C4.S40.E15">\int\operatorname{arcsech}x\mathrm{d}x=x\operatorname{arcsech}x+\operatorname{ arcsin}x, if 0&lt;x&lt;1,</Math> <Math equation-number="4.40.16" mode="display" xml:id="C4.S40.E16">\int\operatorname{arccoth}x\mathrm{d}x=x\operatorname{arccoth}x+\tfrac{1}{2} \ln\left(x^{2}-1\right), if 1&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S40.SS5">
+<title>Compendia</title>         
+<para xml:id="C4.S40.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C4.S40.SS5.p1.s1">
+Extensive compendia of indefinite and definite integrals of hyperbolic functions include Apelblat (1983, pp. 96–109),Bierens de Haan (1939),Gröbner and Hofreiter (1949, pp. 139–160),Gröbner and Hofreiter (1950, pp. 160–167),Gradshteyn and Ryzhik (2000, Chapters 2–4), andPrudnikov et al. (1986a, §§1.4,1.8, 2.4, 2.8).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

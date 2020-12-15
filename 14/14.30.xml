@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S30">
+<title>Spherical and Spheroidal Harmonics</title>           
+<subsection xml:id="C14.S30.SS1">
+<title>Definitions</title>          
+<para xml:id="C14.S30.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S30.SS1.p1.s1">
+With <Math mode="inline" xml:id="C14.S30.SS1.p1.m1">l</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p1.m2">m</Math> integers such that <Math mode="inline" xml:id="C14.S30.SS1.p1.m3">0\leq m\leq l</Math> , and <Math mode="inline" xml:id="C14.S30.SS1.p1.m4">\theta</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p1.m5">\phi</Math> angles such that <Math mode="inline" xml:id="C14.S30.SS1.p1.m6">0\leq\theta\leq\pi</Math> , <Math mode="inline" xml:id="C14.S30.SS1.p1.m7">0\leq\phi\leq 2\pi</Math> , <Math equation-number="14.30.1" mode="display" xml:id="C14.S30.E1">Y_{{l},{m}}\left(\theta,\phi\right)=\left(\frac{(l-m)!(2l+1)}{4\pi(l+m)!} \right)^{1/2}e^{im\phi}\mathsf{P}^{m}_{l}\left(\cos\theta\right),</Math> <Math equation-number="14.30.2" mode="display" xml:id="C14.S30.E2">Y_{l}^{m}\left(\theta,\phi\right)=\cos\left(m\phi\right)\mathsf{P}^{m}_{l} \left(\cos\theta\right)\text{ or }\sin\left(m\phi\right)\mathsf{P}^{m}_{l} \left(\cos\theta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S30.SS1.p1.s2">
+<Math mode="inline" xml:id="C14.S30.SS1.p1.m8">Y_{{l},{m}}\left(\theta,\phi\right)</Math> are known as spherical harmonics.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S30.SS1.p1.s3">
+<Math mode="inline" xml:id="C14.S30.SS1.p1.m9">Y_{l}^{m}\left(\theta,\phi\right)</Math> are known as surface harmonics of the first kind: tesseral for <Math mode="inline" xml:id="C14.S30.SS1.p1.m10">m&lt;l</Math> and sectorial for <Math mode="inline" xml:id="C14.S30.SS1.p1.m11">m=l</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C14.S30.SS1.p1.s4">
+Sometimes <Math mode="inline" xml:id="C14.S30.SS1.p1.m12">Y_{{l},{m}}\left(\theta,\phi\right)</Math> is denoted by <Math mode="inline" xml:id="C14.S30.SS1.p1.m14">i^{-l}\mathfrak{D}_{lm}(\theta,\phi)</Math> ; also the definition of <Math mode="inline" xml:id="C14.S30.SS1.p1.m15">Y_{{l},{m}}\left(\theta,\phi\right)</Math> can differ from (14.30.1), for example, by inclusion of a factor <Math mode="inline" xml:id="C14.S30.SS1.p1.m16">(-1)^{m}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S30.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S30.SS1.p2.s1">
+ <Math mode="inline" xml:id="C14.S30.SS1.p2.m1">P^{m}_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p2.m2">Q^{m}_{n}\left(x\right)</Math> ( <Math mode="inline" xml:id="C14.S30.SS1.p2.m3">x&gt;1</Math> ) are often referred to as the prolate spheroidal harmonics of the first and second kinds, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C14.S30.SS1.p2.s2">
+<Math mode="inline" xml:id="C14.S30.SS1.p2.m4">P^{m}_{n}\left(ix\right)</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p2.m5">Q^{m}_{n}\left(ix\right)</Math> ( <Math mode="inline" xml:id="C14.S30.SS1.p2.m6">x&gt;0</Math> ) are known as oblate spheroidal harmonics of the first and second kinds, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C14.S30.SS1.p2.s3">
+Segura and Gil (1999) introduced the scaled oblate spheroidal harmonics <Math mode="inline" xml:id="C14.S30.SS1.p2.m7">R_{n}^{m}(x)=e^{-i\pi n/2}P^{m}_{n}\left(ix\right)</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p2.m8">T_{n}^{m}(x)=ie^{i\pi n/2}Q^{m}_{n}\left(ix\right)</Math> which are real when <Math mode="inline" xml:id="C14.S30.SS1.p2.m9">x&gt;0</Math> and <Math mode="inline" xml:id="C14.S30.SS1.p2.m10">n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S30.SS2">
+<title>Basic Properties</title>         
+ 
+<para xml:id="C14.S30.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C14.S30.SS2.p1.s1">
+Most mathematical properties of <Math mode="inline" xml:id="C14.S30.SS2.p1.m1">Y_{{l},{m}}\left(\theta,\phi\right)</Math> can be derived directly from (14.30.1) and the properties of the Ferrers function of the first kind given earlier in this chapter.
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C14.S30.Px1">
+<title>Explicit Representation</title>   
+<para xml:id="C14.S30.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C14.S30.Px1.p1.s1">
+ <Math equation-number="14.30.3" mode="display" xml:id="C14.S30.E3">Y_{{l},{m}}\left(\theta,\phi\right)=\frac{(-1)^{l+m}}{2^{l}l!}\left(\frac{(l-m )!(2l+1)}{4\pi(l+m)!}\right)^{1/2}e^{im\phi}\left(\sin\theta\right)^{m}\*\left (\frac{\mathrm{d}}{\mathrm{d}(\cos\theta)}\right)^{l+m}\left(\sin\theta\right) ^{2l}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C14.S30.Px2">
+<title>Special Values</title>   
+<para xml:id="C14.S30.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C14.S30.Px2.p1.s1">
+ <Math equation-number="14.30.4" mode="display" xml:id="C14.S30.E4">Y_{{l},{m}}\left(0,\phi\right)=\begin{cases}\left(\dfrac{2l+1}{4\pi}\right)^{1 /2},&amp;m=0,\\ 0,&amp;m=1,2,3,\dots,\end{cases}</Math> <Math equation-number="14.30.5" mode="display" xml:id="C14.S30.E5">Y_{{l},{m}}\left(\tfrac{1}{2}\pi,\phi\right)=\begin{cases}\dfrac{(-1)^{(l+m)/2 }e^{im\phi}}{2^{l}\left(\frac{1}{2}l-\frac{1}{2}m\right)!\left(\frac{1}{2}l+ \frac{1}{2}m\right)!}\left(\dfrac{(l-m)!(l+m)!(2l+1)}{4\pi}\right)^{1/2},&amp; \frac{1}{2}l+\frac{1}{2}m\in\mathbb{Z},\\ 0,&amp;\frac{1}{2}l+\frac{1}{2}m\notin\mathbb{Z}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C14.S30.Px3">
+<title>Symmetry</title>   
+<para xml:id="C14.S30.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C14.S30.Px3.p1.s1">
+ <Math equation-number="14.30.6" mode="display" xml:id="C14.S30.E6">Y_{{l},{-m}}\left(\theta,\phi\right)=(-1)^{m}\overline{Y_{{l},{m}}\left(\theta ,\phi\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C14.S30.Px4">
+<title>Parity Operation</title>   
+<para xml:id="C14.S30.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C14.S30.Px4.p1.s1">
+ <Math equation-number="14.30.7" mode="display" xml:id="C14.S30.E7">Y_{{l},{m}}\left(\pi-\theta,\phi+\pi\right)=(-1)^{l}Y_{{l},{m}}\left(\theta, \phi\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C14.S30.Px5">
+<title>Orthogonality</title>   
+<para xml:id="C14.S30.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C14.S30.Px5.p1.s1">
+ <Math equation-number="14.30.8" mode="display" xml:id="C14.S30.E8">\int_{0}^{2\pi}\!\!\int_{0}^{\pi}\overline{Y_{{l_{1}},{m_{1}}}\left(\theta, \phi\right)}Y_{{l_{2}},{m_{2}}}\left(\theta,\phi\right)\sin\theta\mathrm{d} \theta\mathrm{d}\phi=\delta_{l_{1},l_{2}}\delta_{m_{1},m_{2}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C14.S30.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C14.S30.Px5.p2.s1">
+See also (34.3.22), and for further related integrals seeAskey et al. (1986).
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S30.SS3">
+<title>Sums</title>          
+<paragraph xml:id="C14.S30.Px6">
+<title>Distributional Completeness</title>    
+<para xml:id="C14.S30.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C14.S30.Px6.p1.s1">
+For a series representation of the product of two Dirac deltas in terms of products of spherical harmonics see §1.17(iii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C14.S30.Px7">
+<title>Addition Theorem</title>   
+ 
+<para xml:id="C14.S30.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C14.S30.Px7.p1.s1">
+ <Math equation-number="14.30.9" mode="display" xml:id="C14.S30.E9">\mathsf{P}_{l}\left(\cos\theta_{1}\cos\theta_{2}+\sin\theta_{1}\sin\theta_{2} \cos\left(\phi_{1}-\phi_{2}\right)\right)=\frac{4\pi}{2l+1}\sum_{m=-l}^{l} \overline{Y_{{l},{m}}\left(\theta_{1},\phi_{1}\right)}Y_{{l},{m}}\left(\theta_ {2},\phi_{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S30.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C14.S30.Px7.p2.s1">
+See also (18.18.9) and (34.3.19).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S30.SS4">
+<title>Applications</title>        
+  
+<para xml:id="C14.S30.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C14.S30.SS4.p1.s1">
+In general, spherical harmonics are defined as the class of homogeneous harmonic polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C14.S30.SS4.p1.s2">
+See Andrews et al. (1999, Chapter 9).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C14.S30.SS4.p1.s3">
+The specialclass of spherical harmonics <Math mode="inline" xml:id="C14.S30.SS4.p1.m1">Y_{{l},{m}}\left(\theta,\phi\right)</Math> , defined by (14.30.1), appear in many physical applications.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C14.S30.SS4.p1.s4">
+As an example, Laplace’s equation <Math mode="inline" xml:id="C14.S30.SS4.p1.m2">\nabla^{2}W=0</Math> in spherical coordinates (§1.5(ii)):
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C14.S30.SS4.p1.s5">
+<Math equation-number="14.30.10" mode="display" xml:id="C14.S30.E10">{\frac{1}{\rho^{2}}\frac{\partial}{\partial\rho}\left(\rho^{2}\frac{\partial W }{\partial\rho}\right)+\frac{1}{\rho^{2}\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial W}{\partial\theta}\right)}+\frac{1}{\rho ^{2}{\sin^{2}}\theta}\frac{{\partial}^{2}W}{{\partial\phi}^{2}}=0,</Math> has solutions <Math mode="inline" xml:id="C14.S30.SS4.p1.m3">W(\rho,\theta,\phi)=\rho^{l}Y_{{l},{m}}\left(\theta,\phi\right)</Math> , which are everywhere one-valued and continuous.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S30.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C14.S30.SS4.p2.s1">
+In the quantization of angular momentum the spherical harmonics <Math mode="inline" xml:id="C14.S30.SS4.p2.m1">Y_{{l},{m}}\left(\theta,\phi\right)</Math> are normalized solutions of the eigenvalue equation <Math equation-number="14.30.11" mode="display" xml:id="C14.S30.E11">\mathrm{L}^{2}Y_{{l},{m}}=\hbar^{2}l(l+1)Y_{{l},{m}},</Math> where <Math mode="inline" xml:id="C14.S30.SS4.p2.m2">\hbar</Math> is the reduced Planck’s constant, and <Math mode="inline" xml:id="C14.S30.SS4.p2.m3">\mathrm{L}^{2}</Math> is the angular momentum operator in spherical coordinates: <Math equation-number="14.30.12" mode="display" xml:id="C14.S30.E12">\mathrm{L}^{2}=-\hbar^{2}\left(\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial\theta}\right)+\frac{1}{{\sin^{ 2}}\theta}\frac{{\partial}^{2}}{{\partial\phi}^{2}}\right);</Math> see Edmonds (1974, §2.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S30.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C14.S30.SS4.p3.s1">
+For applications in geophysics seeStacey (1977, §§4.2, 6.3, and 8.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

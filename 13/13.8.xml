@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S8">
+<title>Asymptotic Approximations for Large Parameters</title>        
+ 
+<subsection xml:id="C13.S8.SS1">
+<title>Large <Math mode="inline" xml:id="C13.S8.SS1.m1">|b|</Math>, Fixed <Math mode="inline" xml:id="C13.S8.SS1.m2">a</Math> and <Math mode="inline" xml:id="C13.S8.SS1.m3">z</Math></title>          
+<para xml:id="C13.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S8.SS1.p1.s1">
+If <Math mode="inline" xml:id="C13.S8.SS1.p1.m1">b\to\infty</Math> in <Math mode="inline" xml:id="C13.S8.SS1.p1.m2">\mathbb{C}</Math> in such a way that <Math mode="inline" xml:id="C13.S8.SS1.p1.m3">\left|b+n\right|\geq\delta&gt;0</Math> for all <Math mode="inline" xml:id="C13.S8.SS1.p1.m4">n=0,1,2,\dots</Math> , then <Math equation-number="13.8.1" mode="display" xml:id="C13.S8.E1">M\left(a,b,z\right)=\sum_{s=0}^{n-1}\frac{{\left(a\right)_{s}}}{{\left(b\right )_{s}}s!}z^{s}+O\left(|b|^{-n}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S8.SS1.p2.s1">
+For fixed <Math mode="inline" xml:id="C13.S8.SS1.p2.m1">a</Math> and <Math mode="inline" xml:id="C13.S8.SS1.p2.m2">z</Math> in <Math mode="inline" xml:id="C13.S8.SS1.p2.m3">\mathbb{C}</Math> <Math equation-number="13.8.2" mode="display" xml:id="C13.S8.E2">M\left(a,b,z\right)\sim\frac{\Gamma\left(b\right)}{\Gamma\left(b-a\right)}\sum _{s=0}^{\infty}{\left(a\right)_{s}}q_{s}(z,a)b^{-s-a},</Math> as <Math mode="inline" xml:id="C13.S8.SS1.p2.m4">b\to\infty</Math> in <Math mode="inline" xml:id="C13.S8.SS1.p2.m5">|\operatorname{ph}b|\leq\pi-\delta</Math> , where <Math mode="inline" xml:id="C13.S8.SS1.p2.m6">q_{0}(z,a)=1</Math> and <Math equation-number="13.8.3" mode="display" xml:id="C13.S8.E3">\left(e^{t}-1\right)^{a-1}\exp\left(t+z(1-e^{-t})\right)=\sum_{s=0}^{\infty}q_ {s}(z,a)t^{s+a-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C13.S8.SS1.p3.s1">
+When the foregoing results are combined with Kummer’s transformation (13.2.39), an approximation is obtained for the case when <Math mode="inline" xml:id="C13.S8.SS1.p3.m1">|b|</Math> is large, and <Math mode="inline" xml:id="C13.S8.SS1.p3.m2">|b-a|</Math> and <Math mode="inline" xml:id="C13.S8.SS1.p3.m3">|z|</Math> are bounded.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S8.SS2">
+<title>Large <Math mode="inline" xml:id="C13.S8.SS2.m1">b</Math> and <Math mode="inline" xml:id="C13.S8.SS2.m2">z</Math>, Fixed <Math mode="inline" xml:id="C13.S8.SS2.m3">a</Math> and <Math mode="inline" xml:id="C13.S8.SS2.m4">b/z</Math></title>           
+<para xml:id="C13.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C13.S8.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C13.S8.SS2.p1.m1">\lambda=z/b&gt;0</Math> and <Math mode="inline" xml:id="C13.S8.SS2.p1.m2">\zeta=\sqrt{2(\lambda-1-\ln\lambda)}</Math> with <Math mode="inline" xml:id="C13.S8.SS2.p1.m3">\operatorname{sign}\left(\zeta\right)=\operatorname{sign}\left(\lambda-1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C13.S8.SS2.p1.s2">
+Then
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C13.S8.SS2.p2.s1">
+ <Math equation-number="13.8.4" mode="display" xml:id="C13.S8.E4">M\left(a,b,z\right)\sim b^{\frac{1}{2}a}e^{\frac{1}{4}\zeta^{2}b}\left(\lambda \left(\frac{\lambda-1}{\zeta}\right)^{a-1}U\left(a-\tfrac{1}{2},-\zeta\sqrt{b} \right)+\left(\lambda\left(\frac{\lambda-1}{\zeta}\right)^{a-1}-\left(\frac{ \zeta}{\lambda-1}\right)^{a}\right)\frac{U\left(a-\tfrac{3}{2},-\zeta\sqrt{b} \right)}{\zeta\sqrt{b}}\right)</Math> and <Math equation-number="13.8.5" mode="display" xml:id="C13.S8.E5">U\left(a,b,z\right)\sim b^{-\frac{1}{2}a}e^{\frac{1}{4}\zeta^{2}b}\left( \lambda\left(\frac{\lambda-1}{\zeta}\right)^{a-1}U\left(a-\tfrac{1}{2},\zeta \sqrt{b}\right)-\left(\lambda\left(\frac{\lambda-1}{\zeta}\right)^{a-1}-\left( \frac{\zeta}{\lambda-1}\right)^{a}\right)\frac{U\left(a-\tfrac{3}{2},\zeta \sqrt{b}\right)}{\zeta\sqrt{b}}\right)</Math> as <Math mode="inline" xml:id="C13.S8.SS2.p2.m1">b\to\infty</Math> , uniformly in compact <Math mode="inline" xml:id="C13.S8.SS2.p2.m2">\lambda</Math> -intervals of <Math mode="inline" xml:id="C13.S8.SS2.p2.m3">(0,\infty)</Math> and compact real <Math mode="inline" xml:id="C13.S8.SS2.p2.m4">a</Math> -intervals.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C13.S8.SS2.p2.s2">
+For the parabolic cylinder function <Math mode="inline" xml:id="C13.S8.SS2.p2.m5">U</Math> see §12.2, and for an extension to an asymptotic expansion see Temme (1978).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C13.S8.SS2.p3.s1">
+Special cases are <Math equation-number="13.8.6" mode="display" xml:id="C13.S8.E6">M\left(a,b,b\right)=\sqrt{\pi}\left(\frac{b}{2}\right)^{\frac{1}{2}a}\left( \frac{1}{\Gamma\left(\frac{1}{2}(a+1)\right)}+\frac{(a+1)\sqrt{8/b}}{3\Gamma \left(\frac{1}{2}a\right)}+O\left(\frac{1}{b}\right)\right),</Math> and <Math equation-number="13.8.7" mode="display" xml:id="C13.S8.E7">U\left(a,b,b\right)=\sqrt{\pi}\left(2b\right)^{-\frac{1}{2}a}\left(\frac{1}{ \Gamma\left(\frac{1}{2}(a+1)\right)}-\frac{(a+1)\sqrt{8/b}}{3\Gamma\left(\frac {1}{2}a\right)}+O\left(\frac{1}{b}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S8.SS2.p4.s1">
+To obtain approximations for <Math mode="inline" xml:id="C13.S8.SS2.p4.m1">M\left(a,b,z\right)</Math> and <Math mode="inline" xml:id="C13.S8.SS2.p4.m2">U\left(a,b,z\right)</Math> that hold as <Math mode="inline" xml:id="C13.S8.SS2.p4.m3">b\to\infty</Math> , with <Math mode="inline" xml:id="C13.S8.SS2.p4.m4">a&gt;\tfrac{1}{2}-b</Math> and <Math mode="inline" xml:id="C13.S8.SS2.p4.m5">z&gt;0</Math> combine (13.14.4), (13.14.5) with §13.20(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C13.S8.SS2.p5.s1">
+Also, more complicated—but more powerful—uniform asymptotic approximations can be obtained by combining (13.14.4), (13.14.5) with §§13.20(iii)and13.20(iv).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C13.S8.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C13.S8.SS2.p6.s1">
+For other asymptotic expansions for large <Math mode="inline" xml:id="C13.S8.SS2.p6.m1">b</Math> and <Math mode="inline" xml:id="C13.S8.SS2.p6.m2">z</Math> see López and Pagola (2010).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C13.S8.SS2.p7.s1">
+For more asymptotic expansions for the cases <Math mode="inline" xml:id="C13.S8.SS2.p7.m1">b\to\pm\infty</Math> see Temme (2015, §§10.4 and 22.5)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S8.SS3">
+<title>Large <Math mode="inline" xml:id="C13.S8.SS3.m1">a</Math></title>         
+ 
+<para xml:id="C13.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C13.S8.SS3.p1.s1">
+For the notation see §§10.2(ii), 10.25(ii), and2.8(iv).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C13.S8.SS3.p2.s1">
+When <Math mode="inline" xml:id="C13.S8.SS3.p2.m1">a\to+\infty</Math> with <Math mode="inline" xml:id="C13.S8.SS3.p2.m2">b</Math> ( <Math mode="inline" xml:id="C13.S8.SS3.p2.m3">\leq 1</Math> ) fixed, <Math equation-number="13.8.8" mode="display" xml:id="C13.S8.E8">U\left(a,b,x\right)=\frac{2e^{\frac{1}{2}x}}{\Gamma\left(a\right)}\left(\sqrt{ \frac{2}{\beta}\tanh\left(\frac{w}{2}\right)}\left(\frac{1-e^{-w}}{\beta} \right)^{-b}\beta^{1-b}K_{1-b}\left(2\beta a\right)+a^{-1}\left(\frac{a^{-1}+ \beta}{1+\beta}\right)^{1-b}e^{-2\beta a}O\left(1\right)\right),</Math> where <Math mode="inline" xml:id="C13.S8.SS3.p2.m4">w=\operatorname{arccosh}\left(1+(2a)^{-1}x\right)</Math> , and <Math mode="inline" xml:id="C13.S8.SS3.p2.m5">\beta=\ifrac{(w+\sinh w)}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C13.S8.SS3.p2.s2">
+(13.8.8) holds uniformly with respect to <Math mode="inline" xml:id="C13.S8.SS3.p2.m6">x\in[0,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C13.S8.SS3.p2.s3">
+For the case <Math mode="inline" xml:id="C13.S8.SS3.p2.m7">b&gt;1</Math> the transformation (13.2.40) can be used.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C13.S8.SS3.p3.s1">
+For an extension to an asymptotic expansion complete with error bounds seeTemme (1990b), and for related results see §13.21(i).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C13.S8.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C13.S8.SS3.p4.s1">
+When <Math mode="inline" xml:id="C13.S8.SS3.p4.m1">a\to-\infty</Math> with <Math mode="inline" xml:id="C13.S8.SS3.p4.m2">b</Math> ( <Math mode="inline" xml:id="C13.S8.SS3.p4.m3">\geq 1</Math> ) fixed, <Math equation-number="13.8.9" mode="display" xml:id="C13.S8.E9">M\left(a,b,x\right)=\Gamma\left(b\right)e^{\frac{1}{2}x}\left((\tfrac{1}{2}b-a )x\right)^{\frac{1}{2}-\frac{1}{2}b}\*\left(J_{b-1}\left(\sqrt{2x(b-2a)}\right )+\mathrm{env}\mskip-2.0mu J_{b-1}\left(\sqrt{2x(b-2a)}\right)O\left({\left|a \right|^{-\frac{1}{2}}}\right)\right),</Math> and <Math equation-number="13.8.10" mode="display" xml:id="C13.S8.E10">U\left(a,b,x\right)=\Gamma\left(\tfrac{1}{2}b-a+\tfrac{1}{2}\right)e^{\frac{1} {2}x}x^{\frac{1}{2}-\frac{1}{2}b}\*\left(\cos\left(a\pi\right)J_{b-1}\left( \sqrt{2x(b-2a)}\right)-\sin\left(a\pi\right)Y_{b-1}\left(\sqrt{2x(b-2a)}\right )+\mathrm{env}\mskip-2.0mu Y_{b-1}\left(\sqrt{2x(b-2a)}\right)O\left({\left|a \right|^{-\frac{1}{2}}}\right)\right),</Math> uniformly with respect to bounded positive values of <Math mode="inline" xml:id="C13.S8.SS3.p4.m4">x</Math> in each case.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C13.S8.SS3.p5.s1">
+For asymptotic approximations to <Math mode="inline" xml:id="C13.S8.SS3.p5.m1">M\left(a,b,x\right)</Math> and <Math mode="inline" xml:id="C13.S8.SS3.p5.m2">U\left(a,b,x\right)</Math> as <Math mode="inline" xml:id="C13.S8.SS3.p5.m3">a\to-\infty</Math> that hold uniformly with respect to <Math mode="inline" xml:id="C13.S8.SS3.p5.m4">x\in(0,\infty)</Math> and bounded positive values of <Math mode="inline" xml:id="C13.S8.SS3.p5.m5">(b-1)/\left|a\right|</Math> , combine (13.14.4), (13.14.5) with §§13.21(ii),13.21(iii).
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C13.S8.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C13.S8.SS3.p6.s1">
+When <Math mode="inline" xml:id="C13.S8.SS3.p6.m1">a\to\infty</Math> in <Math mode="inline" xml:id="C13.S8.SS3.p6.m2">\left|\operatorname{ph}a\right|\leq\pi-\delta</Math> and <Math mode="inline" xml:id="C13.S8.SS3.p6.m3">b</Math> and <Math mode="inline" xml:id="C13.S8.SS3.p6.m4">z</Math> fixed, <Math equation-number="13.8.11" mode="display" xml:id="C13.S8.E11">U\left(a,b,z\right)\sim 2\left(z/a\right)^{(1-b)/2}\frac{e^{z/2}}{\Gamma\left( a\right)}\*\left(K_{b-1}\left(2\sqrt{az}\right)\sum_{s=0}^{\infty}\frac{p_{s}( z)}{a^{s}}+\sqrt{z/a}K_{b}\left(2\sqrt{az}\right)\sum_{s=0}^{\infty}\frac{q_{s }(z)}{a^{s}}\right),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C13.S8.SS3.p7.s1">
+ <Math equation-number="13.8.12" mode="display" xml:id="C13.S8.E12">{\mathbf{M}}\left(a,b,z\right)\sim\left(z/a\right)^{(1-b)/2}\frac{e^{z/2} \Gamma\left(1+a-b\right)}{\Gamma\left(a\right)}\*\left(I_{b-1}\left(2\sqrt{az} \right)\sum_{s=0}^{\infty}\frac{p_{s}(z)}{a^{s}}-\sqrt{z/a}I_{b}\left(2\sqrt{ az}\right)\sum_{s=0}^{\infty}\frac{q_{s}(z)}{a^{s}}\right),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S8.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C13.S8.SS3.p8.s1">
+ <Math equation-number="13.8.13" mode="display" xml:id="C13.S8.E13">{\mathbf{M}}\left(-a,b,z\right)\sim\left(z/a\right)^{(1-b)/2}\frac{e^{z/2} \Gamma\left(1+a\right)}{\Gamma\left(a+b\right)}\*\left(J_{b-1}\left(2\sqrt{az} \right)\sum_{s=0}^{\infty}\frac{p_{s}(z)}{(-a)^{s}}-\sqrt{z/a}J_{b}\left(2 \sqrt{az}\right)\sum_{s=0}^{\infty}\frac{q_{s}(z)}{(-a)^{s}}\right),</Math> <Math equation-number="13.8.14" mode="display" xml:id="C13.S8.E14">U\left(-a,b,z\right)\sim\left(z/a\right)^{(1-b)/2}e^{z/2}\Gamma\left(1+a\right )\*\left(C_{b-1}(a,2\sqrt{az})\sum_{s=0}^{\infty}\frac{p_{s}(z)}{(-a)^{s}}- \sqrt{z/a}C_{b}(a,2\sqrt{az})\sum_{s=0}^{\infty}\frac{q_{s}(z)}{(-a)^{s}} \right),</Math> where <Math mode="inline" xml:id="C13.S8.SS3.p8.m1">C_{\nu}\left(a,\zeta\right)=\cos\left(\pi a\right)J_{\nu}\left(\zeta\right)+ \sin\left(\pi a\right)Y_{\nu}\left(\zeta\right)</Math> and <Math equation-number="13.8.15" mode="display" xml:id="C13.S8.E15">p_{k}(z)=\sum_{s=0}^{k}\genfrac{(}{)}{0.0pt}{}{k}{s}{\left(1-b+s\right)_{k-s}} z^{s}c_{k+s}(z),q_{k}(z)=\sum_{s=0}^{k}\genfrac{(}{)}{0.0pt}{}{k}{s}{\left(2-b+s\right)_{k-s}} z^{s}c_{k+s+1}(z)</Math> where <Math mode="inline" xml:id="C13.S8.SS3.p8.m2">c_{0}(z)=1</Math> and <Math equation-number="13.8.16" mode="display" xml:id="C13.S8.E16">(k+1)c_{k+1}(z)+\sum_{s=0}^{k}\left(\frac{bB_{s+1}}{(s+1)!}+\frac{z(s+1)B_{s+2 }}{(s+2)!}\right)c_{k-s}(z)=0, if k=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C13.S8.SS3.p8.s2">
+For the Bernoulli numbers <Math mode="inline" xml:id="C13.S8.SS3.p8.m3">B_{k}</Math> see §24.2(i) and for proofs and similar results in which <Math mode="inline" xml:id="C13.S8.SS3.p8.m4">z</Math> can also be unbounded see Temme (2015, Chapters 10 and 27)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

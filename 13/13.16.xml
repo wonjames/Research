@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S16">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C13.S16.SS1">
+<title>Integrals Along the Real Line</title>         
+ 
+<para xml:id="C13.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S16.SS1.p1.s1">
+In this subsection see §§10.2(ii), 10.25(ii) for the functions <Math mode="inline" xml:id="C13.S16.SS1.p1.m1">J_{2\mu}</Math> , <Math mode="inline" xml:id="C13.S16.SS1.p1.m2">I_{2\mu}</Math> , and <Math mode="inline" xml:id="C13.S16.SS1.p1.m3">K_{2\mu}</Math> , and §§15.1, 15.2(i) for <Math mode="inline" xml:id="C13.S16.SS1.p1.m4">{{}_{2}{\mathbf{F}}_{1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S16.SS1.p1.s2">
+<Math equation-number="13.16.1" mode="display" xml:id="C13.S16.E1">M_{\kappa,\mu}\left(z\right)=\frac{\Gamma\left(1+2\mu\right)z^{\mu+\frac{1}{2} }2^{-2\mu}}{\Gamma\left(\frac{1}{2}+\mu-\kappa\right)\Gamma\left(\frac{1}{2}+ \mu+\kappa\right)}\*\int_{-1}^{1}e^{\frac{1}{2}zt}(1+t)^{\mu-\frac{1}{2}- \kappa}(1-t)^{\mu-\frac{1}{2}+\kappa}\mathrm{d}t, if \Re\mu+\tfrac{1}{2}&gt;\left|\Re\kappa\right|,</Math> , <Math equation-number="13.16.2" mode="display" xml:id="C13.S16.E2">M_{\kappa,\mu}\left(z\right)=\frac{\Gamma\left(1+2\mu\right)z^{\lambda}}{ \Gamma\left(1+2\mu-2\lambda\right)\Gamma\left(2\lambda\right)}\*\int_{0}^{1}M_ {\kappa-\lambda,\mu-\lambda}\left(zt\right)e^{\frac{1}{2}z(t-1)}t^{\mu-\lambda -\frac{1}{2}}{(1-t)^{2\lambda-1}}\mathrm{d}t, if \Re\mu+\tfrac{1}{2}&gt;\Re\lambda&gt;0,</Math> <Math equation-number="13.16.3" mode="display" xml:id="C13.S16.E3">\frac{1}{\Gamma\left(1+2\mu\right)}M_{\kappa,\mu}\left(z\right)=\frac{\sqrt{z} e^{\frac{1}{2}z}}{\Gamma\left(\frac{1}{2}+\mu+\kappa\right)}\int_{0}^{\infty}e ^{-t}t^{\kappa-\frac{1}{2}}J_{2\mu}\left(2\sqrt{zt}\right)\mathrm{d}t, if \Re(\kappa+\mu)+\tfrac{1}{2}&gt;0,</Math> , <Math equation-number="13.16.4" mode="display" xml:id="C13.S16.E4">\frac{1}{\Gamma\left(1+2\mu\right)}M_{\kappa,\mu}\left(z\right)=\frac{\sqrt{z} e^{-\frac{1}{2}z}}{\Gamma\left(\frac{1}{2}+\mu-\kappa\right)}\*\int_{0}^{ \infty}e^{-t}t^{-\kappa-\frac{1}{2}}I_{2\mu}\left(2\sqrt{zt}\right)\mathrm{d}t, if \Re(\kappa-\mu)-\tfrac{1}{2}&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S16.SS1.p1.s3">
+<Math equation-number="13.16.5" mode="display" xml:id="C13.S16.E5">W_{\kappa,\mu}\left(z\right)=\frac{z^{\mu+\frac{1}{2}}2^{-2\mu}}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)}\*\int_{1}^{\infty}e^{-\frac{1}{2}zt}(t-1)^{\mu- \frac{1}{2}-\kappa}(t+1)^{\mu-\frac{1}{2}+\kappa}\mathrm{d}t, if \Re\mu+\tfrac{1}{2}&gt;\Re\kappa, |\operatorname{ph}{z}|&lt;\frac{1}{2}\pi,</Math> <Math equation-number="13.16.6" mode="display" xml:id="C13.S16.E6">W_{\kappa,\mu}\left(z\right)=\frac{e^{-\frac{1}{2}z}z^{\kappa+1}}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)\Gamma\left(\frac{1}{2}-\mu-\kappa\right)}\*\int_ {0}^{\infty}\frac{W_{-\kappa,\mu}\left(t\right)e^{-\frac{1}{2}t}t^{-\kappa-1}} {t+z}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\pi, \Re(\frac{1}{2}+\mu-\kappa)&gt;\max\left(2\Re\mu,0\right),</Math> <Math equation-number="13.16.7" mode="display" xml:id="C13.S16.E7">W_{\kappa,\mu}\left(z\right)=\frac{(-1)^{n}e^{-\frac{1}{2}z}z^{\frac{1}{2}-\mu -n}}{\Gamma\left(1+2\mu\right)\Gamma\left(\frac{1}{2}-\mu-\kappa\right)}\*\int _{0}^{\infty}\frac{M_{-\kappa,\mu}\left(t\right)e^{-\frac{1}{2}t}t^{n+\mu- \frac{1}{2}}}{t+z}\mathrm{d}t, if |\operatorname{ph}z|&lt;\pi, n=0,1,2,\dots, -\Re(1+2\mu)&lt;n&lt;\left|\Re\mu\right|+\Re\kappa&lt;\tfrac{1}{2},</Math> <Math equation-number="13.16.8" mode="display" xml:id="C13.S16.E8">W_{\kappa,\mu}\left(z\right)=\frac{2\sqrt{z}e^{-\frac{1}{2}z}}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)\Gamma\left(\frac{1}{2}-\mu-\kappa\right)}\*\int_ {0}^{\infty}e^{-t}t^{-\kappa-\frac{1}{2}}K_{2\mu}\left(2\sqrt{zt}\right) \mathrm{d}t, if \Re(\mu-\kappa)+\tfrac{1}{2}&gt;0,</Math> <Math equation-number="13.16.9" mode="display" xml:id="C13.S16.E9">W_{\kappa,\mu}\left(z\right)=e^{-\frac{1}{2}z}z^{\kappa+c}\*\int_{0}^{\infty}e ^{-zt}t^{c-1}{{}_{2}{\mathbf{F}}_{1}}\left({\tfrac{1}{2}+\mu-\kappa,\tfrac{1}{ 2}-\mu-\kappa\atop c};-t\right)\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\frac{1}{2}\pi,</Math> where <Math mode="inline" xml:id="C13.S16.SS1.p1.m5">c</Math> is arbitrary, <Math mode="inline" xml:id="C13.S16.SS1.p1.m6">\Re c&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S16.SS2">
+<title>Contour Integrals</title>         
+ 
+<para xml:id="C13.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C13.S16.SS2.p1.s1">
+For contour integral representations combine (13.14.2) and (13.14.3) with §13.4(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C13.S16.SS2.p1.s2">
+SeeBuchholz (1969, §2.3), Erdélyi et al. (1953a, §6.11.3), andSlater (1960, Chapter 3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C13.S16.SS2.p1.s3">
+See also §13.16(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S16.SS3">
+<title>Mellin–Barnes Integrals</title>          
+<para xml:id="C13.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S16.SS3.p1.s1">
+If <Math mode="inline" xml:id="C13.S16.SS3.p1.m1">\tfrac{1}{2}+\mu-\kappa\neq 0,-1,-2,\dots</Math> , then <Math equation-number="13.16.10" mode="display" xml:id="C13.S16.E10">\frac{1}{\Gamma\left(1+2\mu\right)}M_{\kappa,\mu}\left(e^{\pm\pi\mathrm{i}}z \right)=\frac{e^{\frac{1}{2}z\pm(\frac{1}{2}+\mu)\pi\mathrm{i}}}{2\pi\mathrm{i }\Gamma\left(\frac{1}{2}+\mu-\kappa\right)}\*\int_{-\mathrm{i}\infty}^{\mathrm {i}\infty}\frac{\Gamma\left(t-\kappa\right)\Gamma\left(\frac{1}{2}+\mu-t\right )}{\Gamma\left(\frac{1}{2}+\mu+t\right)}z^{t}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{1}{2}\pi,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C13.S16.SS3.p1.m2">\Gamma\left(t-\kappa\right)</Math> from those of <Math mode="inline" xml:id="C13.S16.SS3.p1.m3">\Gamma\left(\frac{1}{2}+\mu-t\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S16.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C13.S16.SS3.p2.s1">
+If <Math mode="inline" xml:id="C13.S16.SS3.p2.m1">\tfrac{1}{2}\pm\mu-\kappa\neq 0,-1,-2,\dots</Math> , then <Math equation-number="13.16.11" mode="display" xml:id="C13.S16.E11">W_{\kappa,\mu}\left(z\right)=\frac{e^{-\frac{1}{2}z}}{2\pi\mathrm{i}}\*\int_{- \mathrm{i}\infty}^{\mathrm{i}\infty}\frac{\Gamma\left(\frac{1}{2}+\mu+t\right) \Gamma\left(\frac{1}{2}-\mu+t\right)\Gamma\left(-\kappa-t\right)}{\Gamma\left( \frac{1}{2}+\mu-\kappa\right)\Gamma\left(\frac{1}{2}-\mu-\kappa\right)}z^{-t} \mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{3}{2}\pi,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C13.S16.SS3.p2.m2">\Gamma\left(\frac{1}{2}+\mu+t\right)\Gamma\left(\frac{1}{2}-\mu+t\right)</Math> from those of <Math mode="inline" xml:id="C13.S16.SS3.p2.m3">\Gamma\left(-\kappa-t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C13.S16.SS3.p2.s2">
+<Math equation-number="13.16.12" mode="display" xml:id="C13.S16.E12">W_{\kappa,\mu}\left(z\right)=\frac{e^{\frac{1}{2}z}}{2\pi\mathrm{i}}\int_{- \mathrm{i}\infty}^{\mathrm{i}\infty}\frac{\Gamma\left(\frac{1}{2}+\mu+t\right) \Gamma\left(\frac{1}{2}-\mu+t\right)}{\Gamma\left(1-\kappa+t\right)}z^{-t} \mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{1}{2}\pi,</Math> where the contour of integration passes all the poles of <Math mode="inline" xml:id="C13.S16.SS3.p2.m4">\Gamma\left(\frac{1}{2}+\mu+t\right)\Gamma\left(\frac{1}{2}-\mu+t\right)</Math> on the right-hand side.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

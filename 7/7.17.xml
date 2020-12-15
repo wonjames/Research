@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S17">
+<title>Inverse Error Functions</title>        
+ 
+<subsection xml:id="C7.S17.SS1">
+<title>Notation</title>        
+  
+<para xml:id="C7.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S17.SS1.p1.s1">
+The inverses of the functions <Math mode="inline" xml:id="C7.S17.SS1.p1.m1">x=\operatorname{erf}y</Math> , <Math mode="inline" xml:id="C7.S17.SS1.p1.m2">x=\operatorname{erfc}y</Math> , <Math mode="inline" xml:id="C7.S17.SS1.p1.m3">y\in\mathbb{R}</Math> , are denoted by <Math equation-number="7.17.1" mode="display" xml:id="C7.S17.E1">y=\operatorname{inverf}x,y=\operatorname{inverfc}x,</Math> respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S17.SS2">
+<title>Power Series</title>          
+<para xml:id="C7.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C7.S17.SS2.p1.s1">
+With <Math mode="inline" xml:id="C7.S17.SS2.p1.m1">t=\frac{1}{2}\sqrt{\pi}x</Math> , <Math equation-number="7.17.2" mode="display" xml:id="C7.S17.E2">\operatorname{inverf}x=t+\tfrac{1}{3}t^{3}+\tfrac{7}{30}t^{5}+\tfrac{127}{630} t^{7}+\cdots, if |x|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C7.S17.SS2.p1.s2">
+For 25S values of the first 200 coefficients see Strecok (1968).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S17.SS3">
+<title>Asymptotic Expansion of <Math mode="inline" xml:id="C7.S17.SS3.m1">\operatorname{inverfc}x</Math> for Small <Math mode="inline" xml:id="C7.S17.SS3.m2">x</Math></title>        
+  
+<para xml:id="C7.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C7.S17.SS3.p1.s1">
+As <Math mode="inline" xml:id="C7.S17.SS3.p1.m1">x\to 0</Math> <Math equation-number="7.17.3" mode="display" xml:id="C7.S17.E3">\operatorname{inverfc}x\sim u^{-1/2}+a_{2}u^{3/2}+a_{3}u^{5/2}+a_{4}u^{7/2}+\cdots,</Math> where <Math equation-number="7.17.4" mode="display" xml:id="C7.S17.E4">a_{2}=\tfrac{1}{8}v,a_{3}=-\tfrac{1}{32}(v^{2}+6v-6),a_{4}=\tfrac{1}{384}(4v^{3}+27v^{2}+108v-300),</Math> <Math equation-number="7.17.5" mode="display" xml:id="C7.S17.E5">u=-2/\ln\left(\pi x^{2}\ln\left(1/x\right)\right),</Math> and <Math equation-number="7.17.6" mode="display" xml:id="C7.S17.E6">v=\ln\left(\ln\left(1/x\right)\right)-2+\ln\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

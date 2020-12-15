@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S16">
+<title>Zeros</title>        
+ 
+<subsection xml:id="C18.S16.SS1">
+<title>Distribution</title>        
+ 
+<para xml:id="C18.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S16.SS1.p1.s1">
+See §18.2(vi).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S16.SS2">
+<title>Jacobi</title>        
+  
+<para xml:id="C18.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S16.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C18.S16.SS2.p1.m1">\theta_{n,m}</Math> , <Math mode="inline" xml:id="C18.S16.SS2.p1.m2">m=1,2,\dots,n</Math> , denote the zeros of <Math mode="inline" xml:id="C18.S16.SS2.p1.m3">P^{(\alpha,\beta)}_{n}\left(\cos\theta\right)</Math> with <Math equation-number="18.16.1" mode="display" xml:id="C18.S16.E1">0&lt;\theta_{n,1}&lt;\theta_{n,2}&lt;\cdots&lt;\theta_{n,n}&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S16.SS2.p1.s2">
+Then <Math mode="inline" xml:id="C18.S16.SS2.p1.m4">\theta_{n,m}</Math> is strictly increasing in <Math mode="inline" xml:id="C18.S16.SS2.p1.m5">\alpha</Math> and strictly decreasing in <Math mode="inline" xml:id="C18.S16.SS2.p1.m6">\beta</Math> ; furthermore, if <Math mode="inline" xml:id="C18.S16.SS2.p1.m7">\alpha=\beta</Math> , then <Math mode="inline" xml:id="C18.S16.SS2.p1.m8">\theta_{n,m}</Math> is strictly increasing in <Math mode="inline" xml:id="C18.S16.SS2.p1.m9">\alpha</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S16.Px1">
+<title>Inequalities</title>    
+<para xml:id="C18.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S16.Px1.p1.s1">
+ <Math equation-number="18.16.2" mode="display" xml:id="C18.S16.E2">\frac{(m-\tfrac{1}{2})\pi}{n+\tfrac{1}{2}}\leq\theta_{n,m}\leq\frac{m\pi}{n+ \tfrac{1}{2}}, if \alpha,\beta\in[-\tfrac{1}{2},\tfrac{1}{2}],</Math> <Math equation-number="18.16.3" mode="display" xml:id="C18.S16.E3">\frac{(m-\tfrac{1}{2})\pi}{n}\leq\theta_{n,m}\leq\frac{m\pi}{n+1}, if \alpha=\beta, \alpha\in[-\tfrac{1}{2},\tfrac{1}{2}], m=1,2,\dots,\left\lfloor\frac{1}{2}n\right\rfloor</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S16.Px1.p2.s1">
+Also, with <Math mode="inline" xml:id="C18.S16.Px1.p2.m1">\rho</Math> defined as in (18.15.5)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C18.S16.Px1.p2.s2">
+<Math equation-number="18.16.4" mode="display" xml:id="C18.S16.E4">{\frac{\left(m+\tfrac{1}{2}(\alpha+\beta-1)\right)\pi}{\rho}&lt;\theta_{n,m}&lt; \frac{m\pi}{\rho}}, if \alpha,\beta\in[-\tfrac{1}{2},\tfrac{1}{2}],</Math> except when <Math mode="inline" xml:id="C18.S16.Px1.p2.m2">\alpha^{2}=\beta^{2}=\tfrac{1}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C18.S16.Px1.p2.s3">
+<Math equation-number="18.16.5" mode="display" xml:id="C18.S16.E5">\theta_{n,m}&gt;\frac{\left(m+\tfrac{1}{2}\alpha-\tfrac{1}{4}\right){\pi}}{n+ \alpha+\tfrac{1}{2}}, if \alpha=\beta, \alpha\in(-\tfrac{1}{2},\tfrac{1}{2}), m=1,2,\dots,\left\lfloor\tfrac{1}{2}n\right\rfloor</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S16.Px1.p3.s1">
+Let <Math mode="inline" xml:id="C18.S16.Px1.p3.m1">j_{\alpha,m}</Math> be the <Math mode="inline" xml:id="C18.S16.Px1.p3.m2">m</Math> th positive zero of the Bessel function <Math mode="inline" xml:id="C18.S16.Px1.p3.m3">J_{\alpha}\left(x\right)</Math> (§10.21(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C18.S16.Px1.p3.s2">
+Then <Math equation-number="18.16.6" mode="display" xml:id="C18.S16.E6">\theta_{n,m}\leq\frac{j_{\alpha,m}}{\left(\rho^{2}+\tfrac{1}{12}\left(1-\alpha ^{2}-3\beta^{2}\right)\right)^{\frac{1}{2}}}, if \alpha,\beta\in[-\tfrac{1}{2},\tfrac{1}{2}],</Math> , <Math equation-number="18.16.7" mode="display" xml:id="C18.S16.E7">\theta_{n,m}\geq\frac{j_{\alpha,m}}{\left(\rho^{2}+\tfrac{1}{4}-\tfrac{1}{2}( \alpha^{2}+\beta^{2})-\pi^{-2}(1-4\alpha^{2})\right)^{\frac{1}{2}}}, if \alpha,\beta\in[-\tfrac{1}{2},\tfrac{1}{2}], m=1,2,\dots,\left\lfloor\tfrac{1}{2}n\right\rfloor</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S16.Px2">
+<title>Asymptotic Behavior</title>     
+<para xml:id="C18.S16.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S16.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C18.S16.Px2.p1.m1">\phi_{m}=\ifrac{j_{\alpha,m}}{\rho}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C18.S16.Px2.p1.s2">
+Then as <Math mode="inline" xml:id="C18.S16.Px2.p1.m2">n\to\infty</Math> , with <Math mode="inline" xml:id="C18.S16.Px2.p1.m3">\alpha</Math> ( <Math mode="inline" xml:id="C18.S16.Px2.p1.m4">&gt;-\tfrac{1}{2}</Math> ) and <Math mode="inline" xml:id="C18.S16.Px2.p1.m5">\beta</Math> ( <Math mode="inline" xml:id="C18.S16.Px2.p1.m6">\geq-1-\alpha</Math> ) fixed, <Math equation-number="18.16.8" mode="display" xml:id="C18.S16.E8">\theta_{n,m}=\phi_{m}+\left(\left(\alpha^{2}-\tfrac{1}{4}\right)\frac{1-\phi_{ m}\cot\phi_{m}}{2\phi_{m}}-\tfrac{1}{4}(\alpha^{2}-\beta^{2})\tan\left(\tfrac{ 1}{2}\phi_{m}\right)\right)\frac{1}{\rho^{2}}+\phi_{m}^{2}O\left(\frac{1}{\rho ^{3}}\right),</Math> uniformly for <Math mode="inline" xml:id="C18.S16.Px2.p1.m7">m=1,2,\dots,\left\lfloor cn\right\rfloor</Math> , where <Math mode="inline" xml:id="C18.S16.Px2.p1.m8">c</Math> is an arbitrary constant such that <Math mode="inline" xml:id="C18.S16.Px2.p1.m9">0&lt;c&lt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S16.Px3">
+<title>Other Bounds</title>   
+<para xml:id="C18.S16.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S16.Px3.p1.s1">
+See Dimitrov and Nikolov (2010), and Driver and Jordaan (2013).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S16.SS3">
+<title>Ultraspherical and Legendre</title>        
+   
+<para xml:id="C18.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S16.SS3.p1.s1">
+For ultraspherical and Legendre polynomials, set <Math mode="inline" xml:id="C18.S16.SS3.p1.m1">\alpha=\beta</Math> and <Math mode="inline" xml:id="C18.S16.SS3.p1.m2">\alpha=\beta=0</Math> , respectively, in the results given in §18.16(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S16.SS4">
+<title>Laguerre</title>        
+  
+<para xml:id="C18.S16.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S16.SS4.p1.s1">
+The zeros of <Math mode="inline" xml:id="C18.S16.SS4.p1.m1">L^{(\alpha)}_{n}\left(x\right)</Math> are denoted by <Math mode="inline" xml:id="C18.S16.SS4.p1.m2">x_{n,m}</Math> , <Math mode="inline" xml:id="C18.S16.SS4.p1.m3">m=1,2,\dots,n</Math> , with <Math equation-number="18.16.9" mode="display" xml:id="C18.S16.E9">0&lt;x_{n,1}&lt;x_{n,2}&lt;\cdots&lt;x_{n,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C18.S16.SS4.p1.s2">
+Also, <Math mode="inline" xml:id="C18.S16.SS4.p1.m4">\nu</Math> is again defined by (18.15.17).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S16.Px4">
+<title>Inequalities</title>   
+<para xml:id="C18.S16.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C18.S16.Px4.p1.s1">
+For <Math mode="inline" xml:id="C18.S16.Px4.p1.m1">m=1,2,\dots,n</Math> , and with <Math mode="inline" xml:id="C18.S16.Px4.p1.m2">j_{\alpha,m}</Math> as in §18.16(ii),
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S16.Px4.p2.s1">
+ <Math equation-number="18.16.10" mode="display" xml:id="C18.S16.E10">x_{n,m}&gt;\ifrac{j_{\alpha,m}^{2}}{\nu},</Math> <Math equation-number="18.16.11" mode="display" xml:id="C18.S16.E11">x_{n,m}&lt;(4m+2\alpha+2)\left(2m+\alpha+1+\left((2m+\alpha+1)^{2}+\tfrac{1}{4}- \alpha^{2}\right)^{\frac{1}{2}}\right)\Big{/}\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S16.Px4.p2.s2">
+The constant <Math mode="inline" xml:id="C18.S16.Px4.p2.m1">j_{\alpha,m}^{2}</Math> in (18.16.10) is the best possible since the ratio of the two sides of this inequality tends to 1 as <Math mode="inline" xml:id="C18.S16.Px4.p2.m2">n\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C18.S16.Px4.p3.s1">
+For the smallest and largest zeros we have <Math equation-number="18.16.12" mode="display" xml:id="C18.S16.E12">x_{n,1}\geq\frac{2n^{2}+\alpha n-n+2\alpha+2-2(n-1)\sqrt{n^{2}+(n+2)(\alpha+1) }}{n+2},</Math> <Math equation-number="18.16.13" mode="display" xml:id="C18.S16.E13">x_{n,n}\leq\frac{2n^{2}+\alpha n-n+2\alpha+2+2(n-1)\sqrt{n^{2}+(n+2)(\alpha+1) }}{n+2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C18.S16.Px4.p3.s2">
+See Driver and Jordaan (2013).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S16.Px5">
+<title>Asymptotic Behavior</title>    
+<para xml:id="C18.S16.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C18.S16.Px5.p1.s1">
+As <Math mode="inline" xml:id="C18.S16.Px5.p1.m1">n\to\infty</Math> , with <Math mode="inline" xml:id="C18.S16.Px5.p1.m2">\alpha</Math> and <Math mode="inline" xml:id="C18.S16.Px5.p1.m3">m</Math> fixed, <Math equation-number="18.16.14" mode="display" xml:id="C18.S16.E14">x_{n,n-m+1}=\nu+2^{\frac{2}{3}}a_{m}\nu^{\frac{1}{3}}+\tfrac{1}{5}2^{\frac{4}{ 3}}{a_{m}^{2}}\nu^{-\frac{1}{3}}+O\left(n^{-1}\right),</Math> where <Math mode="inline" xml:id="C18.S16.Px5.p1.m4">a_{m}</Math> is the <Math mode="inline" xml:id="C18.S16.Px5.p1.m5">m</Math> th negative zero of <Math mode="inline" xml:id="C18.S16.Px5.p1.m6">\mathrm{Ai}\left(x\right)</Math> (§9.9(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C18.S16.Px5.p1.s2">
+For three additional terms in this expansion see Gatteschi (2002).Also, <Math equation-number="18.16.15" mode="display" xml:id="C18.S16.E15">x_{n,m}&lt;\nu+2^{\frac{2}{3}}a_{m}\nu^{\frac{1}{3}}+2^{-\frac{2}{3}}{a_{m}^{2}} \nu^{-\frac{1}{3}},</Math> when <Math mode="inline" xml:id="C18.S16.Px5.p1.m7">\alpha\notin(-\frac{1}{2},\frac{1}{2})</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S16.SS5">
+<title>Hermite</title>        
+  
+<para xml:id="C18.S16.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C18.S16.SS5.p1.s1">
+All zeros of <Math mode="inline" xml:id="C18.S16.SS5.p1.m1">H_{n}\left(x\right)</Math> lie in the open interval <Math mode="inline" xml:id="C18.S16.SS5.p1.m2">(-\sqrt{2n+1},\sqrt{2n+1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C18.S16.SS5.p1.s2">
+In view of the reflection formula, given in Table 18.6.1,we may consider just the positive zeros <Math mode="inline" xml:id="C18.S16.SS5.p1.m3">x_{n,m}</Math> , <Math mode="inline" xml:id="C18.S16.SS5.p1.m4">m=1,2,\dots,\left\lfloor\tfrac{1}{2}n\right\rfloor</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C18.S16.SS5.p1.s3">
+Arrange them in decreasing order: <Math equation-number="18.16.16" mode="display" xml:id="C18.S16.E16">(2n+1)^{\frac{1}{2}}&gt;x_{n,1}&gt;x_{n,2}&gt;\cdots&gt;x_{n,\left\lfloor n/2\right\rfloor }&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C18.S16.SS5.p1.s4">
+Then <Math equation-number="18.16.17" mode="display" xml:id="C18.S16.E17">x_{n,m}=(2n+1)^{\frac{1}{2}}+2^{-\frac{1}{3}}(2n+1)^{-\frac{1}{6}}a_{m}+ \epsilon_{n,m},</Math> where <Math mode="inline" xml:id="C18.S16.SS5.p1.m5">a_{m}</Math> is the <Math mode="inline" xml:id="C18.S16.SS5.p1.m6">m</Math> th negative zero of <Math mode="inline" xml:id="C18.S16.SS5.p1.m7">\mathrm{Ai}\left(x\right)</Math> (§9.9(i)),
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="27" xml:id="C18.S16.SS5.p1.s5">
+<Math mode="inline" xml:id="C18.S16.SS5.p1.m8">\epsilon_{n,m}&lt;0</Math> , and as <Math mode="inline" xml:id="C18.S16.SS5.p1.m9">n\to\infty</Math> with <Math mode="inline" xml:id="C18.S16.SS5.p1.m10">m</Math> fixed <Math equation-number="18.16.18" mode="display" xml:id="C18.S16.E18">\epsilon_{n,m}=O\left(n^{-\frac{5}{6}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C18.S16.SS5.p2.s1">
+For an asymptotic expansion of <Math mode="inline" xml:id="C18.S16.SS5.p2.m1">x_{n,m}</Math> as <Math mode="inline" xml:id="C18.S16.SS5.p2.m2">n\to\infty</Math> that applies uniformly for <Math mode="inline" xml:id="C18.S16.SS5.p2.m3">m=1,2,\dots,\left\lfloor\tfrac{1}{2}n\right\rfloor</Math> , seeOlver (1959, §14(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C18.S16.SS5.p2.s2">
+In the notation of this reference <Math mode="inline" xml:id="C18.S16.SS5.p2.m4">x_{n,m}=u_{a,m}</Math> , <Math mode="inline" xml:id="C18.S16.SS5.p2.m5">\mu=\sqrt{2n+1}</Math> , and <Math mode="inline" xml:id="C18.S16.SS5.p2.m6">\alpha=\mu^{-\frac{4}{3}}a_{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C18.S16.SS5.p2.s3">
+For an error bound for the first approximation yielded by this expansion see Olver (1997b, p. 408).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S16.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C18.S16.SS5.p3.s1">
+Lastly, in view of (18.7.19) and (18.7.20), results for the zeros of <Math mode="inline" xml:id="C18.S16.SS5.p3.m1">L^{(\pm\frac{1}{2})}_{n}\left(x\right)</Math> lead immediately to results for the zeros of <Math mode="inline" xml:id="C18.S16.SS5.p3.m2">H_{n}\left(x\right)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C18.S16.SS6">
+<title>Additional References</title>        
+ 
+<para xml:id="C18.S16.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C18.S16.SS6.p1.s1">
+For further information on the zeros of the classical orthogonal polynomials, see Szegő (1975, Chapter VI),Erdélyi et al. (1953b, §§10.16 and 10.17),Gatteschi (1987, 2002), López and Temme (1999a), andTemme (1990a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

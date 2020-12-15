@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S8">
+<title>Recurrence Relations and Derivatives</title>          
+<para xml:id="C8.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S8.p1.s1">
+ <Math equation-number="8.8.1" mode="display" xml:id="C8.S8.E1">\gamma\left(a+1,z\right)=a\gamma\left(a,z\right)-z^{a}e^{-z},</Math> <Math equation-number="8.8.2" mode="display" xml:id="C8.S8.E2">\Gamma\left(a+1,z\right)=a\Gamma\left(a,z\right)+z^{a}e^{-z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C8.S8.p2.s1">
+If <Math mode="inline" xml:id="C8.S8.p2.m1">w(a,z)=\gamma\left(a,z\right)</Math> or <Math mode="inline" xml:id="C8.S8.p2.m2">\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.8.3" mode="display" xml:id="C8.S8.E3">w(a+2,z)-(a+1+z)w(a+1,z)+azw(a,z)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C8.S8.p2.s2">
+<Math equation-number="8.8.4" mode="display" xml:id="C8.S8.E4">z\gamma^{*}\left(a+1,z\right)=\gamma^{*}\left(a,z\right)-\frac{e^{-z}}{\Gamma \left(a+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C8.S8.p2.s3">
+<Math equation-number="8.8.5" mode="display" xml:id="C8.S8.E5">P\left(a+1,z\right)=P\left(a,z\right)-\frac{z^{a}e^{-z}}{\Gamma\left(a+1\right )},</Math> <Math equation-number="8.8.6" mode="display" xml:id="C8.S8.E6">Q\left(a+1,z\right)=Q\left(a,z\right)+\frac{z^{a}e^{-z}}{\Gamma\left(a+1\right )}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S8.p3.s1">
+For <Math mode="inline" xml:id="C8.S8.p3.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.8.7" mode="display" xml:id="C8.S8.E7">\gamma\left(a+n,z\right)={\left(a\right)_{n}}\gamma\left(a,z\right)-z^{a}e^{-z }\sum_{k=0}^{n-1}\frac{\Gamma\left(a+n\right)}{\Gamma\left(a+k+1\right)}z^{k},</Math> <Math equation-number="8.8.8" mode="display" xml:id="C8.S8.E8">\gamma\left(a,z\right)=\frac{\Gamma\left(a\right)}{\Gamma\left(a-n\right)} \gamma\left(a-n,z\right)-z^{a-1}e^{-z}\sum_{k=0}^{n-1}\frac{\Gamma\left(a \right)}{\Gamma\left(a-k\right)}z^{-k},</Math> <Math equation-number="8.8.9" mode="display" xml:id="C8.S8.E9">\Gamma\left(a+n,z\right)={\left(a\right)_{n}}\Gamma\left(a,z\right)+z^{a}e^{-z }\sum_{k=0}^{n-1}\frac{\Gamma\left(a+n\right)}{\Gamma\left(a+k+1\right)}z^{k},</Math> <Math equation-number="8.8.10" mode="display" xml:id="C8.S8.E10">\Gamma\left(a,z\right)=\frac{\Gamma\left(a\right)}{\Gamma\left(a-n\right)} \Gamma\left(a-n,z\right)+z^{a-1}e^{-z}\sum_{k=0}^{n-1}\frac{\Gamma\left(a \right)}{\Gamma\left(a-k\right)}z^{-k},</Math> <Math equation-number="8.8.11" mode="display" xml:id="C8.S8.E11">P\left(a+n,z\right)=P\left(a,z\right)-z^{a}e^{-z}\sum_{k=0}^{n-1}\frac{z^{k}}{ \Gamma\left(a+k+1\right)},</Math> <Math equation-number="8.8.12" mode="display" xml:id="C8.S8.E12">Q\left(a+n,z\right)=Q\left(a,z\right)+z^{a}e^{-z}\sum_{k=0}^{n-1}\frac{z^{k}}{ \Gamma\left(a+k+1\right)}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C8.S8.p3.s2">
+ <Math equation-number="8.8.13" mode="display" xml:id="C8.S8.E13">\frac{\mathrm{d}}{\mathrm{d}z}\gamma\left(a,z\right)=-\frac{\mathrm{d}}{ \mathrm{d}z}\Gamma\left(a,z\right)=z^{a-1}e^{-z},</Math> <Math equation-number="8.8.14" mode="display" xml:id="C8.S8.E14">\left.\frac{\partial}{\partial a}\gamma^{*}\left(a,z\right)\right|_{a=0}=-E_{1 }\left(z\right)-\ln z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C8.S8.p3.s3">
+For <Math mode="inline" xml:id="C8.S8.p3.m2">E_{1}\left(z\right)</Math> see §8.19(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C8.S8.p4.s1">
+For <Math mode="inline" xml:id="C8.S8.p4.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.8.15" mode="display" xml:id="C8.S8.E15">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{-a}\gamma\left(a,z\right))=(-1)^ {n}z^{-a-n}\gamma\left(a+n,z\right),</Math> <Math equation-number="8.8.16" mode="display" xml:id="C8.S8.E16">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{-a}\Gamma\left(a,z\right))=(-1)^ {n}z^{-a-n}\Gamma\left(a+n,z\right),</Math> <Math equation-number="8.8.17" mode="display" xml:id="C8.S8.E17">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(e^{z}\gamma\left(a,z\right))=(-1)^{ n}{\left(1-a\right)_{n}}e^{z}\gamma\left(a-n,z\right),</Math> <Math equation-number="8.8.18" mode="display" xml:id="C8.S8.E18">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{a}e^{z}\gamma^{*}\left(a,z\right ))=z^{a-n}e^{z}\gamma^{*}\left(a-n,z\right),</Math> <Math equation-number="8.8.19" mode="display" xml:id="C8.S8.E19">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(e^{z}\Gamma\left(a,z\right))=(-1)^{ n}{\left(1-a\right)_{n}}e^{z}\Gamma\left(a-n,z\right)</Math>.
+</sentence>
+
+</para>
+  
+</section>

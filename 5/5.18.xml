@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S18">
+<title><Math mode="inline" xml:id="C5.S18.m1">q</Math>-Gamma and <Math mode="inline" xml:id="C5.S18.m2">q</Math>-Beta Functions</title>        
+ 
+<subsection xml:id="C5.S18.SS1">
+<title><Math mode="inline" xml:id="C5.S18.SS1.m1">q</Math>-Factorials</title>         
+ 
+<para xml:id="C5.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S18.SS1.p1.s1">
+ <Math equation-number="5.18.1" mode="display" xml:id="C5.S18.E1">\left(a;q\right)_{n}=\prod_{k=0}^{n-1}(1-aq^{k}), if n=0,1,2,\dots,</Math> <Math equation-number="5.18.2" mode="display" xml:id="C5.S18.E2">n!_{q}=1(1+q)\cdots(1+q+\dots+q^{n-1})=\left(q;q\right)_{n}(1-q)^{-n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C5.S18.SS1.p2.s1">
+When <Math mode="inline" xml:id="C5.S18.SS1.p2.m1">|q|&lt;1</Math> , <Math equation-number="5.18.3" mode="display" xml:id="C5.S18.E3">\left(a;q\right)_{\infty}=\prod_{k=0}^{\infty}(1-aq^{k})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C5.S18.SS1.p2.s2">
+See also §17.2(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S18.SS2">
+<title><Math mode="inline" xml:id="C5.S18.SS2.m1">q</Math>-Gamma Function</title>          
+<para xml:id="C5.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C5.S18.SS2.p1.s1">
+When <Math mode="inline" xml:id="C5.S18.SS2.p1.m1">0&lt;q&lt;1</Math> , <Math equation-number="5.18.4" mode="display" xml:id="C5.S18.E4">\Gamma_{q}\left(z\right)=\left(q;q\right)_{\infty}(1-q)^{1-z}/\left(q^{z};q \right)_{\infty},</Math> <Math equation-number="5.18.5" mode="display" xml:id="C5.S18.E5">\Gamma_{q}\left(1\right)=\Gamma_{q}\left(2\right)=1,</Math> <Math equation-number="5.18.6" mode="display" xml:id="C5.S18.E6">n!_{q}=\Gamma_{q}\left(n+1\right),</Math> <Math equation-number="5.18.7" mode="display" xml:id="C5.S18.E7">\Gamma_{q}\left(z+1\right)=\frac{1-q^{z}}{1-q}\Gamma_{q}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C5.S18.SS2.p1.s2">
+Also, <Math mode="inline" xml:id="C5.S18.SS2.p1.m2">\ln\Gamma_{q}\left(x\right)</Math> is convex for <Math mode="inline" xml:id="C5.S18.SS2.p1.m3">x&gt;0</Math> , and the analog of the Bohr-Mollerup theorem (§5.5(iv)) holds.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S18.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C5.S18.SS2.p2.s1">
+If <Math mode="inline" xml:id="C5.S18.SS2.p2.m1">0&lt;q&lt;r&lt;1</Math> , then <Math equation-number="5.18.8" mode="display" xml:id="C5.S18.E8">\Gamma_{q}\left(x\right)&lt;\Gamma_{r}\left(x\right),</Math> when <Math mode="inline" xml:id="C5.S18.SS2.p2.m2">0&lt;x&lt;1</Math> or when <Math mode="inline" xml:id="C5.S18.SS2.p2.m3">x&gt;2</Math> , and <Math equation-number="5.18.9" mode="display" xml:id="C5.S18.E9">\Gamma_{q}\left(x\right)&gt;\Gamma_{r}\left(x\right),</Math> when <Math mode="inline" xml:id="C5.S18.SS2.p2.m4">1&lt;x&lt;2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C5.S18.SS2.p2.s2">
+<Math equation-number="5.18.10" mode="display" xml:id="C5.S18.E10">\lim_{q\to 1-}\Gamma_{q}\left(z\right)=\Gamma\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S18.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C5.S18.SS2.p3.s1">
+For generalized asymptotic expansions of <Math mode="inline" xml:id="C5.S18.SS2.p3.m1">\ln\Gamma_{q}\left(z\right)</Math> as <Math mode="inline" xml:id="C5.S18.SS2.p3.m2">|z|\to\infty</Math> see Olde Daalhuis (1994) and Moak (1984).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C5.S18.SS2.p3.s2">
+For the <Math mode="inline" xml:id="C5.S18.SS2.p3.m3">q</Math> -digamma or <Math mode="inline" xml:id="C5.S18.SS2.p3.m4">q</Math> -psi function <Math mode="inline" xml:id="C5.S18.SS2.p3.m5">\psi_{q}(z)=\Gamma_{q}'\left(z\right)/\Gamma_{q}\left(z\right)</Math> see Salem (2013).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S18.SS3">
+<title><Math mode="inline" xml:id="C5.S18.SS3.m1">q</Math>-Beta Function</title>          
+<para xml:id="C5.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C5.S18.SS3.p1.s1">
+ <Math equation-number="5.18.11" mode="display" xml:id="C5.S18.E11">\mathrm{B}_{q}\left(a,b\right)=\frac{\Gamma_{q}\left(a\right)\Gamma_{q}\left(b \right)}{\Gamma_{q}\left(a+b\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C5.S18.SS3.p1.s2">
+<Math equation-number="5.18.12" mode="display" xml:id="C5.S18.E12">\mathrm{B}_{q}\left(a,b\right)=\int_{0}^{1}\frac{t^{a-1}\left(tq;q\right)_{ \infty}}{\left(tq^{b};q\right)_{\infty}}{\mathrm{d}}_{q}t, if 0&lt;q&lt;1, \Re a&gt;0, \Re b&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C5.S18.SS3.p1.s3">
+For <Math mode="inline" xml:id="C5.S18.SS3.p1.m1">q</Math> -integrals see §17.2(v).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

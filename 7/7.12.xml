@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S12">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C7.S12.SS1">
+<title>Complementary Error Function</title>        
+  
+<para xml:id="C7.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S12.SS1.p1.s1">
+As <Math mode="inline" xml:id="C7.S12.SS1.p1.m1">z\to\infty</Math> <Math equation-number="7.12.1" mode="display" xml:id="C7.S12.E1">\operatorname{erfc}z\sim\frac{e^{-z^{2}}}{\sqrt{\pi}}\sum_{m=0}^{\infty}(-1)^{ m}\frac{{\left(\tfrac{1}{2}\right)_{m}}}{z^{2m+1}},\operatorname{erfc}\left(-z\right)\sim 2-\frac{e^{-z^{2}}}{\sqrt{\pi}}\sum_{m= 0}^{\infty}(-1)^{m}\frac{{\left(\tfrac{1}{2}\right)_{m}}}{z^{2m+1}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C7.S12.SS1.p2.s1">
+both expansions being valid when <Math mode="inline" xml:id="C7.S12.SS1.p2.m1">|\operatorname{ph}z|\leq\frac{3}{4}\pi-\delta</Math> ( <Math mode="inline" xml:id="C7.S12.SS1.p2.m2">&lt;\frac{3}{4}\pi</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C7.S12.SS1.p3.s1">
+When <Math mode="inline" xml:id="C7.S12.SS1.p3.m1">|\operatorname{ph}z|\leq\frac{1}{4}\pi</Math> the remainder terms are bounded in magnitude by the first neglected terms, and have the same sign as these termswhen <Math mode="inline" xml:id="C7.S12.SS1.p3.m2">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C7.S12.SS1.p3.s2">
+When <Math mode="inline" xml:id="C7.S12.SS1.p3.m3">\frac{1}{4}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> the remainder terms are bounded in magnitude by <Math mode="inline" xml:id="C7.S12.SS1.p3.m4">\csc\left(2|\operatorname{ph}z|\right)</Math> times the first neglected terms.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C7.S12.SS1.p3.s3">
+For these and other error bounds seeOlver (1997b, pp. 109–112), with <Math mode="inline" xml:id="C7.S12.SS1.p3.m5">\alpha=\frac{1}{2}</Math> and <Math mode="inline" xml:id="C7.S12.SS1.p3.m6">z</Math> replaced by <Math mode="inline" xml:id="C7.S12.SS1.p3.m7">z^{2}</Math> ; compare (7.11.2).
+</sentence>
+
+</para>
+   
+<para xml:id="C7.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C7.S12.SS1.p4.s1">
+For re-expansions of the remainder terms leading to larger sectors of validity, exponential improvement, and a smooth interpretation of the Stokes phenomenon, see §§2.11(ii)–2.11(iv)and use (7.11.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C7.S12.SS1.p4.s2">
+(Note that some of these re-expansions themselves involve the complementary error function.)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S12.SS2">
+<title>Fresnel Integrals</title>        
+   
+<para xml:id="C7.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C7.S12.SS2.p1.s1">
+The asymptotic expansions of <Math mode="inline" xml:id="C7.S12.SS2.p1.m1">C\left(z\right)</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p1.m2">S\left(z\right)</Math> are given by (7.5.3), (7.5.4), and <Math equation-number="7.12.2" mode="display" xml:id="C7.S12.E2">\mathrm{f}\left(z\right)\sim\frac{1}{\pi z}\sum_{m=0}^{\infty}(-1)^{m}\frac{{ \left(\tfrac{1}{2}\right)_{2m}}}{(\pi z^{2}/2)^{2m}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C7.S12.SS2.p2.s1">
+ <Math equation-number="7.12.3" mode="display" xml:id="C7.S12.E3">\mathrm{g}\left(z\right)\sim\frac{1}{\pi z}\sum_{m=0}^{\infty}(-1)^{m}\frac{{ \left(\tfrac{1}{2}\right)_{2m+1}}}{(\pi z^{2}/2)^{2m+1}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C7.S12.SS2.p3.s1">
+as <Math mode="inline" xml:id="C7.S12.SS2.p3.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C7.S12.SS2.p3.m2">|\operatorname{ph}z|\leq\frac{1}{2}\pi-\delta(&lt;\frac{1}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C7.S12.SS2.p3.s2">
+The remainder terms are given by <Math equation-number="7.12.4" mode="display" xml:id="C7.S12.E4">\mathrm{f}\left(z\right)=\frac{1}{\pi z}\sum_{m=0}^{n-1}(-1)^{m}\frac{{\left( \tfrac{1}{2}\right)_{2m}}}{(\pi z^{2}/2)^{2m}}+R_{n}^{(\mathrm{f})}(z),</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C7.S12.SS2.p4.s1">
+ <Math equation-number="7.12.5" mode="display" xml:id="C7.S12.E5">\mathrm{g}\left(z\right)=\frac{1}{\pi z}\sum_{m=0}^{n-1}(-1)^{m}\frac{{\left( \tfrac{1}{2}\right)_{2m+1}}}{(\pi z^{2}/2)^{2m+1}},+R_{n}^{(\mathrm{g})}(z),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C7.S12.SS2.p5.s1">
+where, for <Math mode="inline" xml:id="C7.S12.SS2.p5.m1">n=0,1,2,\dots</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p5.m2">|\operatorname{ph}z|&lt;\tfrac{1}{4}\pi</Math> , <Math equation-number="7.12.6" mode="display" xml:id="C7.S12.E6">R_{n}^{(\mathrm{f})}(z)=\frac{(-1)^{n}}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{e^{ -\pi z^{2}t/2}t^{2n-(1/2)}}{t^{2}+1}\mathrm{d}t,</Math> <Math equation-number="7.12.7" mode="display" xml:id="C7.S12.E7">R_{n}^{(\mathrm{g})}(z)=\frac{(-1)^{n}}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{e^{ -\pi z^{2}t/2}t^{2n+(1/2)}}{t^{2}+1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C7.S12.SS2.p5.s2">
+When <Math mode="inline" xml:id="C7.S12.SS2.p5.m3">|\operatorname{ph}z|\leq\frac{1}{8}\pi</Math> , <Math mode="inline" xml:id="C7.S12.SS2.p5.m4">R_{n}^{(\mathrm{f})}(z)</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p5.m5">R_{n}^{(\mathrm{g})}(z)</Math> are bounded in magnitude by the first neglected terms in (7.12.2) and (7.12.3), respectively, and have the same signs as these terms when <Math mode="inline" xml:id="C7.S12.SS2.p5.m6">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C7.S12.SS2.p5.s3">
+They are bounded by <Math mode="inline" xml:id="C7.S12.SS2.p5.m7">|\csc\left(4\operatorname{ph}z\right)|</Math> times the first neglected terms when <Math mode="inline" xml:id="C7.S12.SS2.p5.m8">\frac{1}{8}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{4}\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C7.S12.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C7.S12.SS2.p6.s1">
+For other phase ranges use (7.4.7) and (7.4.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C7.S12.SS2.p6.s2">
+For exponentially-improved expansions use (7.5.7), (7.5.10), and §7.12(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S12.SS3">
+<title>Goodwin–Staton Integral</title>        
+  
+<para xml:id="C7.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C7.S12.SS3.p1.s1">
+See Olver (1997b, p. 115) for an expansion of <Math mode="inline" xml:id="C7.S12.SS3.p1.m1">G\left(z\right)</Math> with bounds for the remainder for real and complex values of <Math mode="inline" xml:id="C7.S12.SS3.p1.m2">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

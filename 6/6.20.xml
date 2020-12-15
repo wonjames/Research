@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S20">
+<title>Approximations</title>        
+ 
+<subsection xml:id="C6.S20.SS1">
+<title>Approximations in Terms of Elementary Functions</title>        
+ 
+<para xml:id="C6.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S20.SS1.p1.s1">
+Hastings (1955) gives several minimax polynomial and rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m1">E_{1}\left(x\right)+\ln x</Math> , <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m2">xe^{x}E_{1}\left(x\right)</Math> , and the auxiliary functions <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m3">\mathrm{f}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m4">\mathrm{g}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C6.S20.SS1.p1.s2">
+These are included in Abramowitz and Stegun (1964, Ch. 5).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C6.S20.SS1.p1.s3">
+Cody and Thacher (1968) provides minimax rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i2.p1.m1">E_{1}\left(x\right)</Math> , with accuracies up to 20S. Cody and Thacher (1969) provides minimax rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i3.p1.m1">\mathrm{Ei}\left(x\right)</Math> , with accuracies up to 20S. MacLeod (1996b) provides rational approximations for the sine and cosine integrals and for the auxiliary functions <Math mode="inline" xml:id="C6.S20.I1.i4.p1.m1">\mathrm{f}</Math> and <Math mode="inline" xml:id="C6.S20.I1.i4.p1.m2">\mathrm{g}</Math> , with accuracies up to 20S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S20.SS2">
+<title>Expansions in Chebyshev Series</title>        
+ 
+<para xml:id="C6.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C6.S20.SS2.p1.s1">
+Clenshaw (1962) gives Chebyshev coefficients for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m1">-E_{1}\left(x\right)-\ln|x|</Math> for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m2">-4\leq x\leq 4</Math> and <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m3">e^{x}E_{1}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m4">x\geq 4</Math> (20D).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C6.S20.SS2.p1.s2">
+Luke and Wimp (1963) covers <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m1">\mathrm{Ei}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m2">x\leq-4</Math> (20D), and <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m3">\mathrm{Si}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m4">\mathrm{Ci}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m5">x\geq 4</Math> (20D).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C6.S20.SS2.p1.s3">
+Luke (1969b, pp. 41–42) gives Chebyshev expansions of <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m1">\mathrm{Ein}\left(ax\right)</Math> , <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m2">\mathrm{Si}\left(ax\right)</Math> , and <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m3">\mathrm{Cin}\left(ax\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m4">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m5">a\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C6.S20.SS2.p1.s4">
+The coefficients are given in terms of series of Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C6.S20.SS2.p1.s5">
+Luke (1969b, pp. 321–322) covers <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m1">\mathrm{Ein}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m2">-\mathrm{Ein}\left(-x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m3">0\leq x\leq 8</Math> (the Chebyshev coefficients are given to 20D); <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m4">E_{1}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m5">x\geq 5</Math> (20D), and <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m6">\mathrm{Ei}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m7">x\geq 8</Math> (15D).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C6.S20.SS2.p1.s6">
+Coefficients for the sine and cosine integrals are given on pp. 325–327.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="10" xml:id="C6.S20.SS2.p1.s7">
+Luke (1969b, p. 25) gives a Chebyshev expansion near infinity for the confluent hypergeometric <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m1">U</Math> -function (§13.2(i))from which Chebyshev expansions near infinity for <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m2">E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m3">\mathrm{f}\left(z\right)</Math> ,and <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m4">\mathrm{g}\left(z\right)</Math> follow by using (6.11.2) and (6.11.3).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="11" xml:id="C6.S20.SS2.p1.s8">
+Luke also includes a recursion scheme for computing the coefficients in the expansions of the <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m5">U</Math> functions.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="12" xml:id="C6.S20.SS2.p1.s9">
+If <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m6">|\operatorname{ph}z|&lt;\pi</Math> the scheme can be used in backward direction.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S20.SS3">
+<title>Padé-Type and Rational Expansions</title>        
+ 
+<para xml:id="C6.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C6.S20.SS3.p1.s1">
+Luke (1969b, pp. 402, 410, and 415–421) gives main diagonal Padé approximations for <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m1">\mathrm{Ein}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m2">\mathrm{Si}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m3">\mathrm{Cin}\left(z\right)</Math> (valid near the origin), and <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m4">E_{1}\left(z\right)</Math> (valid for large <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m5">|z|</Math> ); approximate errors are given for a selection of <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m6">z</Math> -values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C6.S20.SS3.p1.s2">
+Luke (1969b, pp. 411–414) gives rational approximations for <Math mode="inline" xml:id="C6.S20.I3.i2.p1.m1">\mathrm{Ein}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S15">
+<title>Derivatives with Respect to Order</title>        
+ 
+ 
+<paragraph xml:id="C10.S15.Px1">
+<title>Noninteger Values of <Math mode="inline" xml:id="C10.S15.Px1.m1">\nu</Math></title>   
+<para xml:id="C10.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S15.Px1.p1.s1">
+ <Math equation-number="10.15.1" mode="display" xml:id="C10.S15.E1">\frac{\partial J_{\pm\nu}\left(z\right)}{\partial\nu}=\pm J_{\pm\nu}\left(z \right)\ln\left(\tfrac{1}{2}z\right)\mp(\tfrac{1}{2}z)^{\pm\nu}\sum_{k=0}^{ \infty}(-1)^{k}\frac{\psi\left(k+1\pm\nu\right)}{\Gamma\left(k+1\pm\nu\right)} \frac{(\tfrac{1}{4}z^{2})^{k}}{k!}</Math> , <Math equation-number="10.15.2" mode="display" xml:id="C10.S15.E2">\frac{\partial Y_{\nu}\left(z\right)}{\partial\nu}=\cot\left(\nu\pi\right) \left(\frac{\partial J_{\nu}\left(z\right)}{\partial\nu}-\pi Y_{\nu}\left(z \right)\right)-\csc\left(\nu\pi\right)\frac{\partial J_{-\nu}\left(z\right)}{ \partial\nu}-\pi J_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S15.Px2">
+<title>Integer Values of <Math mode="inline" xml:id="C10.S15.Px2.m1">\nu</Math></title>   
+<para xml:id="C10.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C10.S15.Px2.p1.s1">
+ <Math equation-number="10.15.3" mode="display" xml:id="C10.S15.E3">\left.\frac{\partial J_{\nu}\left(z\right)}{\partial\nu}\right|_{\nu=n}=\frac{ \pi}{2}Y_{n}\left(z\right)+\frac{n!}{2(\tfrac{1}{2}z)^{n}}\sum_{k=0}^{n-1} \frac{(\tfrac{1}{2}z)^{k}J_{k}\left(z\right)}{k!(n-k)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C10.S15.Px2.p1.s2">
+For <Math mode="inline" xml:id="C10.S15.Px2.p1.m1">\ifrac{\partial J_{\nu}\left(z\right)}{\partial\nu}</Math> at <Math mode="inline" xml:id="C10.S15.Px2.p1.m2">\nu=-n</Math> combine (10.2.4) and (10.15.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C10.S15.Px2.p1.s3">
+<Math equation-number="10.15.4" mode="display" xml:id="C10.S15.E4">\left.\frac{\partial Y_{\nu}\left(z\right)}{\partial\nu}\right|_{\nu=n}=-\frac {\pi}{2}J_{n}\left(z\right)+\frac{n!}{2(\tfrac{1}{2}z)^{n}}\sum_{k=0}^{n-1} \frac{(\tfrac{1}{2}z)^{k}Y_{k}\left(z\right)}{k!(n-k)}</Math> ,, <Math equation-number="10.15.5" mode="display" xml:id="C10.S15.E5">\left.\frac{\partial J_{\nu}\left(z\right)}{\partial\nu}\right|_{\nu=0}=\frac{ \pi}{2}Y_{0}\left(z\right),\quad\left.\frac{\partial Y_{\nu}\left(z\right)}{ \partial\nu}\right|_{\nu=0}=-\frac{\pi}{2}J_{0}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S15.Px3">
+<title>Half-Integer Values of <Math mode="inline" xml:id="C10.S15.Px3.m1">\nu</Math></title>   
+<para xml:id="C10.S15.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S15.Px3.p1.s1">
+For the notations <Math mode="inline" xml:id="C10.S15.Px3.p1.m1">\mathrm{Ci}</Math> and <Math mode="inline" xml:id="C10.S15.Px3.p1.m2">\mathrm{Si}</Math> see §6.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C10.S15.Px3.p1.s2">
+When <Math mode="inline" xml:id="C10.S15.Px3.p1.m3">x&gt;0</Math> , <Math equation-number="10.15.6" mode="display" xml:id="C10.S15.E6">\left.\frac{\partial J_{\nu}\left(x\right)}{\partial\nu}\right|_{\nu=\frac{1}{ 2}}=\sqrt{\frac{2}{\pi x}}\left(\mathrm{Ci}\left(2x\right)\sin x-\mathrm{Si} \left(2x\right)\cos x\right),</Math> , <Math equation-number="10.15.7" mode="display" xml:id="C10.S15.E7">\left.\frac{\partial J_{\nu}\left(x\right)}{\partial\nu}\right|_{\nu=-\frac{1} {2}}=\sqrt{\frac{2}{\pi x}}\left(\mathrm{Ci}\left(2x\right)\cos x+\mathrm{Si} \left(2x\right)\sin x\right),</Math> , <Math equation-number="10.15.8" mode="display" xml:id="C10.S15.E8">\left.\frac{\partial Y_{\nu}\left(x\right)}{\partial\nu}\right|_{\nu=\frac{1}{ 2}}=\sqrt{\frac{2}{\pi x}}\left(\mathrm{Ci}\left(2x\right)\cos x+\left(\mathrm {Si}\left(2x\right)-\pi\right)\sin x\right),</Math> , <Math equation-number="10.15.9" mode="display" xml:id="C10.S15.E9">\left.\frac{\partial Y_{\nu}\left(x\right)}{\partial\nu}\right|_{\nu=-\frac{1} {2}}=-\sqrt{\frac{2}{\pi x}}\left(\mathrm{Ci}\left(2x\right)\sin x-\left( \mathrm{Si}\left(2x\right)-\pi\right)\cos x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S15.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S15.Px3.p2.s1">
+For further results see Brychkov and Geddes (2005) andLandau (1999, 2000).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</section>

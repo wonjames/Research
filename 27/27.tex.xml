@@ -1,0 +1,3437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C27">
+<title>Functions of Number Theory</title>               
+          
+<section xml:id="C27.S1">
+<title>Special Notation</title>           
+<para xml:id="C27.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C27.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r1.m1">d,k,m,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C27.S1.p2.t1.s2">
+positive integers (unlessotherwise indicated).        
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C27.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r2.m1">d\mathbin{|}n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C27.S1.p2.t1.s4">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r2.m2">d</Math> divides <Math mode="inline" xml:id="C27.S1.p2.t1.r2.m3">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C27.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r3.m1">\left(m,n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C27.S1.p2.t1.s6">
+greatest common divisor of <Math mode="inline" xml:id="C27.S1.p2.t1.r3.m2">m,n</Math>. If <Math mode="inline" xml:id="C27.S1.p2.t1.r3.m3">\left(m,n\right)=1</Math>,<Math mode="inline" xml:id="C27.S1.p2.t1.r3.m4">m</Math> and <Math mode="inline" xml:id="C27.S1.p2.t1.r3.m5">n</Math> are called relatively prime, or coprime.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C27.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r4.m1">\left(d_{1},\dots,d_{n}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C27.S1.p2.t1.s8">
+greatest common divisor of<Math mode="inline" xml:id="C27.S1.p2.t1.r4.m2">d_{1},\dots,d_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C27.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r5.m1">\sum_{d\mathbin{|}n}</Math>, <Math mode="inline" xml:id="C27.S1.p2.t1.r5.m2">\prod_{d\mathbin{|}n}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C27.S1.p2.t1.s10">
+sum, product taken over divisors of <Math mode="inline" xml:id="C27.S1.p2.t1.r5.m3">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C27.S1.p2.t1.s11">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r6.m1">\sum_{\left(m,n\right)=1}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C27.S1.p2.t1.s12">
+sum taken over <Math mode="inline" xml:id="C27.S1.p2.t1.r6.m2">m</Math>, <Math mode="inline" xml:id="C27.S1.p2.t1.r6.m3">1\leq m\leq n</Math> and<Math mode="inline" xml:id="C27.S1.p2.t1.r6.m4">m</Math> relatively prime to <Math mode="inline" xml:id="C27.S1.p2.t1.r6.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C27.S1.p2.t1.s13">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r7.m1">p,p_{1},p_{2},\dots</Math>
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C27.S1.p2.t1.s14">
+prime numbers (or primes): integers (<Math mode="inline" xml:id="C27.S1.p2.t1.r7.m2">&gt;1</Math>) with only two positive integer divisors, <Math mode="inline" xml:id="C27.S1.p2.t1.r7.m3">1</Math> and the number itself.  
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="16" sentence-num-in-table="15" xml:id="C27.S1.p2.t1.s15">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r8.m1">\sum_{p}</Math>, <Math mode="inline" xml:id="C27.S1.p2.t1.r8.m2">\prod_{p}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="17" sentence-num-in-table="16" xml:id="C27.S1.p2.t1.s16">
+sum, product extended over all primes.
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="18" sentence-num-in-table="17" xml:id="C27.S1.p2.t1.s17">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r9.m1">x,y</Math>
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="19" sentence-num-in-table="18" xml:id="C27.S1.p2.t1.s18">
+real numbers.    
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="20" sentence-num-in-table="19" xml:id="C27.S1.p2.t1.s19">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r10.m1">\sum_{n\leq x}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="21" sentence-num-in-table="20" xml:id="C27.S1.p2.t1.s20">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r10.m2">\sum_{n=1}^{\left\lfloor x\right\rfloor}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="22" sentence-num-in-table="21" xml:id="C27.S1.p2.t1.s21">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r11.m1">\zeta\left(s\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="23" sentence-num-in-table="22" xml:id="C27.S1.p2.t1.s22">
+Riemann zeta function; see §LABEL:sec:ZE.Def.Def.
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="24" sentence-num-in-table="23" xml:id="C27.S1.p2.t1.s23">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r12.m1">(n|P)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="24" sentence-num-in-section="25" sentence-num-in-table="24" xml:id="C27.S1.p2.t1.s24">
+Jacobi symbol; see §LABEL:sec:NT.QUAD.
+</sentence>
+
+<sentence sentence-num-in-para="25" sentence-num-in-section="26" sentence-num-in-table="25" xml:id="C27.S1.p2.t1.s25">
+<Math mode="inline" xml:id="C27.S1.p2.t1.r13.m1">(n|p)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="26" sentence-num-in-section="27" sentence-num-in-table="26" xml:id="C27.S1.p2.t1.s26">
+Legendre symbol; see §LABEL:sec:NT.QUAD.
+</sentence>
+
+</para>
+
+    
+</section>
+             
+<section xml:id="C27.S2">
+<title>Functions</title>         
+<subsection xml:id="C27.S2.SS1">
+<title>Definitions</title>           
+<para xml:id="C27.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C27.S2.SS1.p1.s1">
+Functions in this section derive their properties from the fundamental theorem of arithmetic, which states that every integer <Math mode="inline" xml:id="C27.S2.SS1.p1.m1">n&gt;1</Math> can be represented uniquely as a product of prime powers, <Math equation-number="27.2.1" mode="display" xml:id="C27.S2.E1">n=\prod_{r=1}^{\nu\left(n\right)}p^{a_{r}}_{r},</Math> where <Math mode="inline" xml:id="C27.S2.SS1.p1.m2">p_{1},p_{2},\dots,p_{\nu\left(n\right)}</Math> are the distinct prime factors of <Math mode="inline" xml:id="C27.S2.SS1.p1.m3">n</Math> , each exponent <Math mode="inline" xml:id="C27.S2.SS1.p1.m4">a_{r}</Math> is positive, and <Math mode="inline" xml:id="C27.S2.SS1.p1.m5">\nu\left(n\right)</Math> is the number of distinct primes dividing <Math mode="inline" xml:id="C27.S2.SS1.p1.m8">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C27.S2.SS1.p1.s2">
+( <Math mode="inline" xml:id="C27.S2.SS1.p1.m9">\nu\left(1\right)</Math> is defined to be 0.) Euclid’s Elements ( ( , Book IX, Proposition 20) ) gives an elegant proof that there are infinitely many primes.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C27.S2.SS1.p1.s3">
+Tables of primes (§LABEL:sec:NT.TB) reveal great irregularity in their distribution.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C27.S2.SS1.p1.s4">
+They tend to thin out among the large integers, but this thinning out is not completely regular.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="32" xml:id="C27.S2.SS1.p1.s5">
+There is great interest in the function <Math mode="inline" xml:id="C27.S2.SS1.p1.m10">\pi\left(x\right)</Math> that counts the number of primes not exceeding <Math mode="inline" xml:id="C27.S2.SS1.p1.m11">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="33" xml:id="C27.S2.SS1.p1.s6">
+It can be expressed as a sum over all primes <Math mode="inline" xml:id="C27.S2.SS1.p1.m12">p\leq x</Math> : <Math equation-number="27.2.2" mode="display" xml:id="C27.S2.E2">\pi\left(x\right)=\sum_{p\leq x}1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C27.S2.SS1.p2.s1">
+Gauss and Legendre conjectured that <Math mode="inline" xml:id="C27.S2.SS1.p2.m1">\pi\left(x\right)</Math> is asymptotic to <Math mode="inline" xml:id="C27.S2.SS1.p2.m2">x/\ln x</Math> as <Math mode="inline" xml:id="C27.S2.SS1.p2.m3">x\to\infty</Math> : <Math equation-number="27.2.3" mode="display" xml:id="C27.S2.E3">\pi\left(x\right)\sim\frac{x}{\ln x}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C27.S2.SS1.p2.s2">
+(See ( , Band II, pp. 437–477) and ( , p. 394) .)
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C27.S2.SS1.p3.s1">
+This result, first proved in ( ) and ( ) , is known as the prime number theorem.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C27.S2.SS1.p3.s2">
+An equivalent form states that the <Math mode="inline" xml:id="C27.S2.SS1.p3.m1">n</Math> th prime <Math mode="inline" xml:id="C27.S2.SS1.p3.m2">p_{n}</Math> (when the primes are listed in increasing order) is asymptotic to <Math mode="inline" xml:id="C27.S2.SS1.p3.m3">n\ln n</Math> as <Math mode="inline" xml:id="C27.S2.SS1.p3.m4">n\to\infty</Math> : <Math equation-number="27.2.4" mode="display" xml:id="C27.S2.E4">p_{n}\sim n\ln n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C27.S2.SS1.p3.s3">
+(See also §LABEL:sec:NT.PF.)Other examples of number-theoretic functions treated in this chapter are as follows.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C27.S2.SS1.p3.s4">
+<Math equation-number="27.2.5" mode="display" xml:id="C27.S2.E5">\left\lfloor\frac{1}{n}\right\rfloor=\begin{cases}1,&amp;n=1,\\ 0,&amp;n&gt;1.\end{cases</Math> } <Math equation-number="27.2.6" mode="display" xml:id="C27.S2.E6">\phi_{k}\left(n\right)=\sum_{\left(m,n\right)=1}m^{k},</Math> the sum of the <Math mode="inline" xml:id="C27.S2.SS1.p3.m5">k</Math> th powers of the positive integers <Math mode="inline" xml:id="C27.S2.SS1.p3.m6">m\leq n</Math> that are relatively prime to <Math mode="inline" xml:id="C27.S2.SS1.p3.m7">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C27.S2.SS1.p3.s5">
+<Math equation-number="27.2.7" mode="display" xml:id="C27.S2.E7">\phi\left(n\right)=\phi_{0}\left(n\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="41" xml:id="C27.S2.SS1.p3.s6">
+This is the number of positive integers <Math mode="inline" xml:id="C27.S2.SS1.p3.m8">\leq n</Math> that are relatively prime to <Math mode="inline" xml:id="C27.S2.SS1.p3.m9">n</Math> ; <Math mode="inline" xml:id="C27.S2.SS1.p3.m10">\phi\left(n\right)</Math> is Euler’s totient.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C27.S2.SS1.p4.s1">
+If <Math mode="inline" xml:id="C27.S2.SS1.p4.m1">\left(a,n\right)=1</Math> , then the Euler–Fermat theorem states that <Math equation-number="27.2.8" mode="display" xml:id="C27.S2.E8">a^{\phi\left(n\right)}\equiv 1\pmod{n},</Math> and if <Math mode="inline" xml:id="C27.S2.SS1.p4.m2">\phi\left(n\right)</Math> is the smallest positive integer <Math mode="inline" xml:id="C27.S2.SS1.p4.m3">f</Math> such that <Math mode="inline" xml:id="C27.S2.SS1.p4.m4">a^{f}\equiv 1\pmod{n}</Math> , then <Math mode="inline" xml:id="C27.S2.SS1.p4.m5">a</Math> is a primitive root mod <Math mode="inline" xml:id="C27.S2.SS1.p4.m6">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C27.S2.SS1.p4.s2">
+The <Math mode="inline" xml:id="C27.S2.SS1.p4.m7">\phi\left(n\right)</Math> numbers <Math mode="inline" xml:id="C27.S2.SS1.p4.m8">a,a^{2},\dots,a^{\phi\left(n\right)}</Math> arerelatively prime to <Math mode="inline" xml:id="C27.S2.SS1.p4.m9">n</Math> and distinct (mod <Math mode="inline" xml:id="C27.S2.SS1.p4.m10">n</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="44" xml:id="C27.S2.SS1.p4.s3">
+Such a set is a reduced residue system modulo <Math mode="inline" xml:id="C27.S2.SS1.p4.m11">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="45" xml:id="C27.S2.SS1.p4.s4">
+<Math equation-number="27.2.9" mode="display" xml:id="C27.S2.E9">d\left(n\right)=\sum_{d\mathbin{|}n}1</Math> is the number of divisors of <Math mode="inline" xml:id="C27.S2.SS1.p4.m13">n</Math> and is the divisor function.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="46" xml:id="C27.S2.SS1.p4.s5">
+It is the special case <Math mode="inline" xml:id="C27.S2.SS1.p4.m14">k=2</Math> of the function <Math mode="inline" xml:id="C27.S2.SS1.p4.m15">d_{k}\left(n\right)</Math> that counts the number of ways of expressing <Math mode="inline" xml:id="C27.S2.SS1.p4.m16">n</Math> as the product of <Math mode="inline" xml:id="C27.S2.SS1.p4.m17">k</Math> factors, with the order of factors taken into account.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="47" xml:id="C27.S2.SS1.p4.s6">
+<Math equation-number="27.2.10" mode="display" xml:id="C27.S2.E10">\sigma_{\alpha}\left(n\right)=\sum_{d\mathbin{|}n}d^{\alpha},</Math> is the sum of the <Math mode="inline" xml:id="C27.S2.SS1.p4.m18">\alpha</Math> th powers of the divisors of <Math mode="inline" xml:id="C27.S2.SS1.p4.m19">n</Math> , where the exponent <Math mode="inline" xml:id="C27.S2.SS1.p4.m20">\alpha</Math> can be real or complex.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="48" xml:id="C27.S2.SS1.p4.s7">
+Note that <Math mode="inline" xml:id="C27.S2.SS1.p4.m21">\sigma_{0}\left(n\right)=d\left(n\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="49" xml:id="C27.S2.SS1.p4.s8">
+<Math equation-number="27.2.11" mode="display" xml:id="C27.S2.E11">J_{k}\left(n\right)=\sum_{\left(\left(d_{1},\dots,d_{k}\right),n\right)=1}1,</Math> is the number of <Math mode="inline" xml:id="C27.S2.SS1.p4.m22">k</Math> -tuples of integers <Math mode="inline" xml:id="C27.S2.SS1.p4.m23">\leq n</Math> whose greatest common divisor is relatively prime to <Math mode="inline" xml:id="C27.S2.SS1.p4.m24">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="50" xml:id="C27.S2.SS1.p4.s9">
+This is Jordan’s function.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="51" xml:id="C27.S2.SS1.p4.s10">
+Note that <Math mode="inline" xml:id="C27.S2.SS1.p4.m25">J_{1}\left(n\right)=\phi\left(n\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C27.S2.SS1.p5.s1">
+In the following examples, <Math mode="inline" xml:id="C27.S2.SS1.p5.m1">a_{1},\dots,a_{\nu\left(n\right)}</Math> are the exponents in the factorization of <Math mode="inline" xml:id="C27.S2.SS1.p5.m2">n</Math> in (LABEL:eq:NT.FU.FT).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S2.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C27.S2.SS1.p6.s1">
+ <Math equation-number="27.2.12" mode="display" xml:id="C27.S2.E12">\mu\left(n\right)=\begin{cases}1,&amp;n=1,\\ (-1)^{\nu\left(n\right)},&amp;a_{1}=a_{2}=\dots=a_{\nu\left(n\right)}=1,\\ 0,&amp;\mbox{otherwise}.\end{cases</Math> } This is the Möbius function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S2.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C27.S2.SS1.p7.s1">
+ <Math equation-number="27.2.13" mode="display" xml:id="C27.S2.E13">\lambda\left(n\right)=\begin{cases}1,&amp;n=1,\\ (-1)^{a_{1}+\dots+a_{\nu\left(n\right)}},&amp;n&gt;1.\end{cases</Math> } This is Liouville’s function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S2.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C27.S2.SS1.p8.s1">
+ <Math equation-number="27.2.14" mode="display" xml:id="C27.S2.E14">\Lambda\left(n\right)=\ln p, subject to n=p^{a},</Math> where <Math mode="inline" xml:id="C27.S2.SS1.p8.m1">p^{a}</Math> is a prime power with <Math mode="inline" xml:id="C27.S2.SS1.p8.m2">a\geq 1</Math> ; otherwise <Math mode="inline" xml:id="C27.S2.SS1.p8.m3">\Lambda\left(n\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C27.S2.SS1.p8.s2">
+This is Mangoldt’s function.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S2.SS2">
+<title>Tables</title>          
+<para xml:id="C27.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C27.S2.SS2.p1.s1">
+Table LABEL:tab:NT.TA.pr lists the first 100 prime numbers <Math mode="inline" xml:id="C27.S2.SS2.p1.m1">p_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C27.S2.SS2.p1.s2">
+Table LABEL:tab:NT.TA.epndsd tabulates the Euler totient function <Math mode="inline" xml:id="C27.S2.SS2.p1.m2">\phi\left(n\right)</Math> , the divisor function <Math mode="inline" xml:id="C27.S2.SS2.p1.m3">d\left(n\right)</Math> ( <Math mode="inline" xml:id="C27.S2.SS2.p1.m4">=\sigma_{0}(n)</Math> ), and the sum of the divisors <Math mode="inline" xml:id="C27.S2.SS2.p1.m5">\sigma(n)</Math> ( <Math mode="inline" xml:id="C27.S2.SS2.p1.m6">=\sigma_{1}(n)</Math> ), for <Math mode="inline" xml:id="C27.S2.SS2.p1.m7">n=1(1)52</Math>.
+</sentence>
+
+</para>
+
+          
+<sentence sentence-num-in-section="59" xml:id="C27.S2.T1.s1">
+Table 27.2.1: Primes.
+</sentence> 
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="1" xml:id="C27.S2.T1.t1.s1">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="2" xml:id="C27.S2.T1.t1.s2">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m2">p_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="3" xml:id="C27.S2.T1.t1.s3">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m3">p_{n+10}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="4" xml:id="C27.S2.T1.t1.s4">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m4">p_{n+20}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="5" xml:id="C27.S2.T1.t1.s5">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m5">p_{n+30}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="6" xml:id="C27.S2.T1.t1.s6">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m6">p_{n+40}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="7" xml:id="C27.S2.T1.t1.s7">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m7">p_{n+50}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="8" xml:id="C27.S2.T1.t1.s8">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m8">p_{n+60}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="9" xml:id="C27.S2.T1.t1.s9">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m9">p_{n+70}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="10" xml:id="C27.S2.T1.t1.s10">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m10">p_{n+80}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="11" xml:id="C27.S2.T1.t1.s11">
+<Math mode="inline" xml:id="C27.S2.T1.t1.r1.m11">p_{n+90}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="12" xml:id="C27.S2.T1.t1.s12">
+1
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="13" xml:id="C27.S2.T1.t1.s13">
+2
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="14" xml:id="C27.S2.T1.t1.s14">
+31
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="15" xml:id="C27.S2.T1.t1.s15">
+73
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="16" xml:id="C27.S2.T1.t1.s16">
+127
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="17" xml:id="C27.S2.T1.t1.s17">
+179
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="18" xml:id="C27.S2.T1.t1.s18">
+233
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="19" xml:id="C27.S2.T1.t1.s19">
+283
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="20" xml:id="C27.S2.T1.t1.s20">
+353
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="21" xml:id="C27.S2.T1.t1.s21">
+419
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="22" xml:id="C27.S2.T1.t1.s22">
+467
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="23" xml:id="C27.S2.T1.t1.s23">
+2
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="24" xml:id="C27.S2.T1.t1.s24">
+3
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="25" xml:id="C27.S2.T1.t1.s25">
+37
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="26" xml:id="C27.S2.T1.t1.s26">
+79
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="27" xml:id="C27.S2.T1.t1.s27">
+131
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="28" xml:id="C27.S2.T1.t1.s28">
+181
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="29" xml:id="C27.S2.T1.t1.s29">
+239
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="30" xml:id="C27.S2.T1.t1.s30">
+293
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="31" xml:id="C27.S2.T1.t1.s31">
+359
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="32" xml:id="C27.S2.T1.t1.s32">
+421
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="33" xml:id="C27.S2.T1.t1.s33">
+479
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="34" xml:id="C27.S2.T1.t1.s34">
+3
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="35" xml:id="C27.S2.T1.t1.s35">
+5
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="36" xml:id="C27.S2.T1.t1.s36">
+41
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="37" xml:id="C27.S2.T1.t1.s37">
+83
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="38" xml:id="C27.S2.T1.t1.s38">
+137
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="39" xml:id="C27.S2.T1.t1.s39">
+191
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="40" xml:id="C27.S2.T1.t1.s40">
+241
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="41" xml:id="C27.S2.T1.t1.s41">
+307
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="42" xml:id="C27.S2.T1.t1.s42">
+367
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="43" xml:id="C27.S2.T1.t1.s43">
+431
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="44" xml:id="C27.S2.T1.t1.s44">
+487
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="45" xml:id="C27.S2.T1.t1.s45">
+4
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="46" xml:id="C27.S2.T1.t1.s46">
+7
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="47" xml:id="C27.S2.T1.t1.s47">
+43
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="48" xml:id="C27.S2.T1.t1.s48">
+89
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="49" xml:id="C27.S2.T1.t1.s49">
+139
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="50" xml:id="C27.S2.T1.t1.s50">
+193
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="51" xml:id="C27.S2.T1.t1.s51">
+251
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="52" xml:id="C27.S2.T1.t1.s52">
+311
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="53" xml:id="C27.S2.T1.t1.s53">
+373
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="54" xml:id="C27.S2.T1.t1.s54">
+433
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="55" xml:id="C27.S2.T1.t1.s55">
+491
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="56" xml:id="C27.S2.T1.t1.s56">
+5
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="57" xml:id="C27.S2.T1.t1.s57">
+11
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="58" xml:id="C27.S2.T1.t1.s58">
+47
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="59" xml:id="C27.S2.T1.t1.s59">
+97
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="60" xml:id="C27.S2.T1.t1.s60">
+149
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="61" xml:id="C27.S2.T1.t1.s61">
+197
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="62" xml:id="C27.S2.T1.t1.s62">
+257
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="63" xml:id="C27.S2.T1.t1.s63">
+313
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="64" xml:id="C27.S2.T1.t1.s64">
+379
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="65" xml:id="C27.S2.T1.t1.s65">
+439
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="66" xml:id="C27.S2.T1.t1.s66">
+499
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="67" xml:id="C27.S2.T1.t1.s67">
+6
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="68" xml:id="C27.S2.T1.t1.s68">
+13
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="69" xml:id="C27.S2.T1.t1.s69">
+53
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="70" xml:id="C27.S2.T1.t1.s70">
+101
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="71" xml:id="C27.S2.T1.t1.s71">
+151
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="72" xml:id="C27.S2.T1.t1.s72">
+199
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="73" xml:id="C27.S2.T1.t1.s73">
+263
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="74" xml:id="C27.S2.T1.t1.s74">
+317
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="75" xml:id="C27.S2.T1.t1.s75">
+383
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="76" xml:id="C27.S2.T1.t1.s76">
+443
+</sentence>
+
+<sentence sentence-num-in-section="136" sentence-num-in-table="77" xml:id="C27.S2.T1.t1.s77">
+503
+</sentence>
+
+<sentence sentence-num-in-section="137" sentence-num-in-table="78" xml:id="C27.S2.T1.t1.s78">
+7
+</sentence>
+
+<sentence sentence-num-in-section="138" sentence-num-in-table="79" xml:id="C27.S2.T1.t1.s79">
+17
+</sentence>
+
+<sentence sentence-num-in-section="139" sentence-num-in-table="80" xml:id="C27.S2.T1.t1.s80">
+59
+</sentence>
+
+<sentence sentence-num-in-section="140" sentence-num-in-table="81" xml:id="C27.S2.T1.t1.s81">
+103
+</sentence>
+
+<sentence sentence-num-in-section="141" sentence-num-in-table="82" xml:id="C27.S2.T1.t1.s82">
+157
+</sentence>
+
+<sentence sentence-num-in-section="142" sentence-num-in-table="83" xml:id="C27.S2.T1.t1.s83">
+211
+</sentence>
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="84" xml:id="C27.S2.T1.t1.s84">
+269
+</sentence>
+
+<sentence sentence-num-in-section="144" sentence-num-in-table="85" xml:id="C27.S2.T1.t1.s85">
+331
+</sentence>
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="86" xml:id="C27.S2.T1.t1.s86">
+389
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="87" xml:id="C27.S2.T1.t1.s87">
+449
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="88" xml:id="C27.S2.T1.t1.s88">
+509
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="89" xml:id="C27.S2.T1.t1.s89">
+8
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="90" xml:id="C27.S2.T1.t1.s90">
+19
+</sentence>
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="91" xml:id="C27.S2.T1.t1.s91">
+61
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="92" xml:id="C27.S2.T1.t1.s92">
+107
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="93" xml:id="C27.S2.T1.t1.s93">
+163
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="94" xml:id="C27.S2.T1.t1.s94">
+223
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="95" xml:id="C27.S2.T1.t1.s95">
+271
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="96" xml:id="C27.S2.T1.t1.s96">
+337
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="97" xml:id="C27.S2.T1.t1.s97">
+397
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="98" xml:id="C27.S2.T1.t1.s98">
+457
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="99" xml:id="C27.S2.T1.t1.s99">
+521
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="100" xml:id="C27.S2.T1.t1.s100">
+9
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="101" xml:id="C27.S2.T1.t1.s101">
+23
+</sentence>
+
+<sentence sentence-num-in-section="161" sentence-num-in-table="102" xml:id="C27.S2.T1.t1.s102">
+67
+</sentence>
+
+<sentence sentence-num-in-section="162" sentence-num-in-table="103" xml:id="C27.S2.T1.t1.s103">
+109
+</sentence>
+
+<sentence sentence-num-in-section="163" sentence-num-in-table="104" xml:id="C27.S2.T1.t1.s104">
+167
+</sentence>
+
+<sentence sentence-num-in-section="164" sentence-num-in-table="105" xml:id="C27.S2.T1.t1.s105">
+227
+</sentence>
+
+<sentence sentence-num-in-section="165" sentence-num-in-table="106" xml:id="C27.S2.T1.t1.s106">
+277
+</sentence>
+
+<sentence sentence-num-in-section="166" sentence-num-in-table="107" xml:id="C27.S2.T1.t1.s107">
+347
+</sentence>
+
+<sentence sentence-num-in-section="167" sentence-num-in-table="108" xml:id="C27.S2.T1.t1.s108">
+401
+</sentence>
+
+<sentence sentence-num-in-section="168" sentence-num-in-table="109" xml:id="C27.S2.T1.t1.s109">
+461
+</sentence>
+
+<sentence sentence-num-in-section="169" sentence-num-in-table="110" xml:id="C27.S2.T1.t1.s110">
+523
+</sentence>
+
+<sentence sentence-num-in-section="170" sentence-num-in-table="111" xml:id="C27.S2.T1.t1.s111">
+10
+</sentence>
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="112" xml:id="C27.S2.T1.t1.s112">
+29
+</sentence>
+
+<sentence sentence-num-in-section="172" sentence-num-in-table="113" xml:id="C27.S2.T1.t1.s113">
+71
+</sentence>
+
+<sentence sentence-num-in-section="173" sentence-num-in-table="114" xml:id="C27.S2.T1.t1.s114">
+113
+</sentence>
+
+<sentence sentence-num-in-section="174" sentence-num-in-table="115" xml:id="C27.S2.T1.t1.s115">
+173
+</sentence>
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="116" xml:id="C27.S2.T1.t1.s116">
+229
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="117" xml:id="C27.S2.T1.t1.s117">
+281
+</sentence>
+
+<sentence sentence-num-in-section="177" sentence-num-in-table="118" xml:id="C27.S2.T1.t1.s118">
+349
+</sentence>
+
+<sentence sentence-num-in-section="178" sentence-num-in-table="119" xml:id="C27.S2.T1.t1.s119">
+409
+</sentence>
+
+<sentence sentence-num-in-section="179" sentence-num-in-table="120" xml:id="C27.S2.T1.t1.s120">
+463
+</sentence>
+
+<sentence sentence-num-in-section="180" sentence-num-in-table="121" xml:id="C27.S2.T1.t1.s121">
+541
+</sentence>
+ 
+       
+  
+<sentence sentence-num-in-section="181" xml:id="C27.S2.T2.s1">
+Table 27.2.2: Functions related to division.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="182" sentence-num-in-table="1" xml:id="C27.S2.T2.t1.s1">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="183" sentence-num-in-table="2" xml:id="C27.S2.T2.t1.s2">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m2">\phi\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="3" xml:id="C27.S2.T2.t1.s3">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m3">d\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="4" xml:id="C27.S2.T2.t1.s4">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m4">\sigma\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="5" xml:id="C27.S2.T2.t1.s5">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m5">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="187" sentence-num-in-table="6" xml:id="C27.S2.T2.t1.s6">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m6">\phi\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="188" sentence-num-in-table="7" xml:id="C27.S2.T2.t1.s7">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m7">d\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="8" xml:id="C27.S2.T2.t1.s8">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m8">\sigma\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="190" sentence-num-in-table="9" xml:id="C27.S2.T2.t1.s9">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m9">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="10" xml:id="C27.S2.T2.t1.s10">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m10">\phi\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="11" xml:id="C27.S2.T2.t1.s11">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m11">d\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="12" xml:id="C27.S2.T2.t1.s12">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m12">\sigma\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="13" xml:id="C27.S2.T2.t1.s13">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m13">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="14" xml:id="C27.S2.T2.t1.s14">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m14">\phi\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="196" sentence-num-in-table="15" xml:id="C27.S2.T2.t1.s15">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m15">d\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="197" sentence-num-in-table="16" xml:id="C27.S2.T2.t1.s16">
+<Math mode="inline" xml:id="C27.S2.T2.t1.r1.m16">\sigma\left(n\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="198" sentence-num-in-table="17" xml:id="C27.S2.T2.t1.s17">
+1
+</sentence>
+
+<sentence sentence-num-in-section="199" sentence-num-in-table="18" xml:id="C27.S2.T2.t1.s18">
+1
+</sentence>
+
+<sentence sentence-num-in-section="200" sentence-num-in-table="19" xml:id="C27.S2.T2.t1.s19">
+1
+</sentence>
+
+<sentence sentence-num-in-section="201" sentence-num-in-table="20" xml:id="C27.S2.T2.t1.s20">
+1
+</sentence>
+
+<sentence sentence-num-in-section="202" sentence-num-in-table="21" xml:id="C27.S2.T2.t1.s21">
+14
+</sentence>
+
+<sentence sentence-num-in-section="203" sentence-num-in-table="22" xml:id="C27.S2.T2.t1.s22">
+6
+</sentence>
+
+<sentence sentence-num-in-section="204" sentence-num-in-table="23" xml:id="C27.S2.T2.t1.s23">
+4
+</sentence>
+
+<sentence sentence-num-in-section="205" sentence-num-in-table="24" xml:id="C27.S2.T2.t1.s24">
+24
+</sentence>
+
+<sentence sentence-num-in-section="206" sentence-num-in-table="25" xml:id="C27.S2.T2.t1.s25">
+27
+</sentence>
+
+<sentence sentence-num-in-section="207" sentence-num-in-table="26" xml:id="C27.S2.T2.t1.s26">
+18
+</sentence>
+
+<sentence sentence-num-in-section="208" sentence-num-in-table="27" xml:id="C27.S2.T2.t1.s27">
+4
+</sentence>
+
+<sentence sentence-num-in-section="209" sentence-num-in-table="28" xml:id="C27.S2.T2.t1.s28">
+40
+</sentence>
+
+<sentence sentence-num-in-section="210" sentence-num-in-table="29" xml:id="C27.S2.T2.t1.s29">
+40
+</sentence>
+
+<sentence sentence-num-in-section="211" sentence-num-in-table="30" xml:id="C27.S2.T2.t1.s30">
+16
+</sentence>
+
+<sentence sentence-num-in-section="212" sentence-num-in-table="31" xml:id="C27.S2.T2.t1.s31">
+8
+</sentence>
+
+<sentence sentence-num-in-section="213" sentence-num-in-table="32" xml:id="C27.S2.T2.t1.s32">
+90
+</sentence>
+
+<sentence sentence-num-in-section="214" sentence-num-in-table="33" xml:id="C27.S2.T2.t1.s33">
+2
+</sentence>
+
+<sentence sentence-num-in-section="215" sentence-num-in-table="34" xml:id="C27.S2.T2.t1.s34">
+1
+</sentence>
+
+<sentence sentence-num-in-section="216" sentence-num-in-table="35" xml:id="C27.S2.T2.t1.s35">
+2
+</sentence>
+
+<sentence sentence-num-in-section="217" sentence-num-in-table="36" xml:id="C27.S2.T2.t1.s36">
+3
+</sentence>
+
+<sentence sentence-num-in-section="218" sentence-num-in-table="37" xml:id="C27.S2.T2.t1.s37">
+15
+</sentence>
+
+<sentence sentence-num-in-section="219" sentence-num-in-table="38" xml:id="C27.S2.T2.t1.s38">
+8
+</sentence>
+
+<sentence sentence-num-in-section="220" sentence-num-in-table="39" xml:id="C27.S2.T2.t1.s39">
+4
+</sentence>
+
+<sentence sentence-num-in-section="221" sentence-num-in-table="40" xml:id="C27.S2.T2.t1.s40">
+24
+</sentence>
+
+<sentence sentence-num-in-section="222" sentence-num-in-table="41" xml:id="C27.S2.T2.t1.s41">
+28
+</sentence>
+
+<sentence sentence-num-in-section="223" sentence-num-in-table="42" xml:id="C27.S2.T2.t1.s42">
+12
+</sentence>
+
+<sentence sentence-num-in-section="224" sentence-num-in-table="43" xml:id="C27.S2.T2.t1.s43">
+6
+</sentence>
+
+<sentence sentence-num-in-section="225" sentence-num-in-table="44" xml:id="C27.S2.T2.t1.s44">
+56
+</sentence>
+
+<sentence sentence-num-in-section="226" sentence-num-in-table="45" xml:id="C27.S2.T2.t1.s45">
+41
+</sentence>
+
+<sentence sentence-num-in-section="227" sentence-num-in-table="46" xml:id="C27.S2.T2.t1.s46">
+40
+</sentence>
+
+<sentence sentence-num-in-section="228" sentence-num-in-table="47" xml:id="C27.S2.T2.t1.s47">
+2
+</sentence>
+
+<sentence sentence-num-in-section="229" sentence-num-in-table="48" xml:id="C27.S2.T2.t1.s48">
+42
+</sentence>
+
+<sentence sentence-num-in-section="230" sentence-num-in-table="49" xml:id="C27.S2.T2.t1.s49">
+3
+</sentence>
+
+<sentence sentence-num-in-section="231" sentence-num-in-table="50" xml:id="C27.S2.T2.t1.s50">
+2
+</sentence>
+
+<sentence sentence-num-in-section="232" sentence-num-in-table="51" xml:id="C27.S2.T2.t1.s51">
+2
+</sentence>
+
+<sentence sentence-num-in-section="233" sentence-num-in-table="52" xml:id="C27.S2.T2.t1.s52">
+4
+</sentence>
+
+<sentence sentence-num-in-section="234" sentence-num-in-table="53" xml:id="C27.S2.T2.t1.s53">
+16
+</sentence>
+
+<sentence sentence-num-in-section="235" sentence-num-in-table="54" xml:id="C27.S2.T2.t1.s54">
+8
+</sentence>
+
+<sentence sentence-num-in-section="236" sentence-num-in-table="55" xml:id="C27.S2.T2.t1.s55">
+5
+</sentence>
+
+<sentence sentence-num-in-section="237" sentence-num-in-table="56" xml:id="C27.S2.T2.t1.s56">
+31
+</sentence>
+
+<sentence sentence-num-in-section="238" sentence-num-in-table="57" xml:id="C27.S2.T2.t1.s57">
+29
+</sentence>
+
+<sentence sentence-num-in-section="239" sentence-num-in-table="58" xml:id="C27.S2.T2.t1.s58">
+28
+</sentence>
+
+<sentence sentence-num-in-section="240" sentence-num-in-table="59" xml:id="C27.S2.T2.t1.s59">
+2
+</sentence>
+
+<sentence sentence-num-in-section="241" sentence-num-in-table="60" xml:id="C27.S2.T2.t1.s60">
+30
+</sentence>
+
+<sentence sentence-num-in-section="242" sentence-num-in-table="61" xml:id="C27.S2.T2.t1.s61">
+42
+</sentence>
+
+<sentence sentence-num-in-section="243" sentence-num-in-table="62" xml:id="C27.S2.T2.t1.s62">
+12
+</sentence>
+
+<sentence sentence-num-in-section="244" sentence-num-in-table="63" xml:id="C27.S2.T2.t1.s63">
+8
+</sentence>
+
+<sentence sentence-num-in-section="245" sentence-num-in-table="64" xml:id="C27.S2.T2.t1.s64">
+96
+</sentence>
+
+<sentence sentence-num-in-section="246" sentence-num-in-table="65" xml:id="C27.S2.T2.t1.s65">
+4
+</sentence>
+
+<sentence sentence-num-in-section="247" sentence-num-in-table="66" xml:id="C27.S2.T2.t1.s66">
+2
+</sentence>
+
+<sentence sentence-num-in-section="248" sentence-num-in-table="67" xml:id="C27.S2.T2.t1.s67">
+3
+</sentence>
+
+<sentence sentence-num-in-section="249" sentence-num-in-table="68" xml:id="C27.S2.T2.t1.s68">
+7
+</sentence>
+
+<sentence sentence-num-in-section="250" sentence-num-in-table="69" xml:id="C27.S2.T2.t1.s69">
+17
+</sentence>
+
+<sentence sentence-num-in-section="251" sentence-num-in-table="70" xml:id="C27.S2.T2.t1.s70">
+16
+</sentence>
+
+<sentence sentence-num-in-section="252" sentence-num-in-table="71" xml:id="C27.S2.T2.t1.s71">
+2
+</sentence>
+
+<sentence sentence-num-in-section="253" sentence-num-in-table="72" xml:id="C27.S2.T2.t1.s72">
+18
+</sentence>
+
+<sentence sentence-num-in-section="254" sentence-num-in-table="73" xml:id="C27.S2.T2.t1.s73">
+30
+</sentence>
+
+<sentence sentence-num-in-section="255" sentence-num-in-table="74" xml:id="C27.S2.T2.t1.s74">
+8
+</sentence>
+
+<sentence sentence-num-in-section="256" sentence-num-in-table="75" xml:id="C27.S2.T2.t1.s75">
+8
+</sentence>
+
+<sentence sentence-num-in-section="257" sentence-num-in-table="76" xml:id="C27.S2.T2.t1.s76">
+72
+</sentence>
+
+<sentence sentence-num-in-section="258" sentence-num-in-table="77" xml:id="C27.S2.T2.t1.s77">
+43
+</sentence>
+
+<sentence sentence-num-in-section="259" sentence-num-in-table="78" xml:id="C27.S2.T2.t1.s78">
+42
+</sentence>
+
+<sentence sentence-num-in-section="260" sentence-num-in-table="79" xml:id="C27.S2.T2.t1.s79">
+2
+</sentence>
+
+<sentence sentence-num-in-section="261" sentence-num-in-table="80" xml:id="C27.S2.T2.t1.s80">
+44
+</sentence>
+
+<sentence sentence-num-in-section="262" sentence-num-in-table="81" xml:id="C27.S2.T2.t1.s81">
+5
+</sentence>
+
+<sentence sentence-num-in-section="263" sentence-num-in-table="82" xml:id="C27.S2.T2.t1.s82">
+4
+</sentence>
+
+<sentence sentence-num-in-section="264" sentence-num-in-table="83" xml:id="C27.S2.T2.t1.s83">
+2
+</sentence>
+
+<sentence sentence-num-in-section="265" sentence-num-in-table="84" xml:id="C27.S2.T2.t1.s84">
+6
+</sentence>
+
+<sentence sentence-num-in-section="266" sentence-num-in-table="85" xml:id="C27.S2.T2.t1.s85">
+18
+</sentence>
+
+<sentence sentence-num-in-section="267" sentence-num-in-table="86" xml:id="C27.S2.T2.t1.s86">
+6
+</sentence>
+
+<sentence sentence-num-in-section="268" sentence-num-in-table="87" xml:id="C27.S2.T2.t1.s87">
+6
+</sentence>
+
+<sentence sentence-num-in-section="269" sentence-num-in-table="88" xml:id="C27.S2.T2.t1.s88">
+39
+</sentence>
+
+<sentence sentence-num-in-section="270" sentence-num-in-table="89" xml:id="C27.S2.T2.t1.s89">
+31
+</sentence>
+
+<sentence sentence-num-in-section="271" sentence-num-in-table="90" xml:id="C27.S2.T2.t1.s90">
+30
+</sentence>
+
+<sentence sentence-num-in-section="272" sentence-num-in-table="91" xml:id="C27.S2.T2.t1.s91">
+2
+</sentence>
+
+<sentence sentence-num-in-section="273" sentence-num-in-table="92" xml:id="C27.S2.T2.t1.s92">
+32
+</sentence>
+
+<sentence sentence-num-in-section="274" sentence-num-in-table="93" xml:id="C27.S2.T2.t1.s93">
+44
+</sentence>
+
+<sentence sentence-num-in-section="275" sentence-num-in-table="94" xml:id="C27.S2.T2.t1.s94">
+20
+</sentence>
+
+<sentence sentence-num-in-section="276" sentence-num-in-table="95" xml:id="C27.S2.T2.t1.s95">
+6
+</sentence>
+
+<sentence sentence-num-in-section="277" sentence-num-in-table="96" xml:id="C27.S2.T2.t1.s96">
+84
+</sentence>
+
+<sentence sentence-num-in-section="278" sentence-num-in-table="97" xml:id="C27.S2.T2.t1.s97">
+6
+</sentence>
+
+<sentence sentence-num-in-section="279" sentence-num-in-table="98" xml:id="C27.S2.T2.t1.s98">
+2
+</sentence>
+
+<sentence sentence-num-in-section="280" sentence-num-in-table="99" xml:id="C27.S2.T2.t1.s99">
+4
+</sentence>
+
+<sentence sentence-num-in-section="281" sentence-num-in-table="100" xml:id="C27.S2.T2.t1.s100">
+12
+</sentence>
+
+<sentence sentence-num-in-section="282" sentence-num-in-table="101" xml:id="C27.S2.T2.t1.s101">
+19
+</sentence>
+
+<sentence sentence-num-in-section="283" sentence-num-in-table="102" xml:id="C27.S2.T2.t1.s102">
+18
+</sentence>
+
+<sentence sentence-num-in-section="284" sentence-num-in-table="103" xml:id="C27.S2.T2.t1.s103">
+2
+</sentence>
+
+<sentence sentence-num-in-section="285" sentence-num-in-table="104" xml:id="C27.S2.T2.t1.s104">
+20
+</sentence>
+
+<sentence sentence-num-in-section="286" sentence-num-in-table="105" xml:id="C27.S2.T2.t1.s105">
+32
+</sentence>
+
+<sentence sentence-num-in-section="287" sentence-num-in-table="106" xml:id="C27.S2.T2.t1.s106">
+16
+</sentence>
+
+<sentence sentence-num-in-section="288" sentence-num-in-table="107" xml:id="C27.S2.T2.t1.s107">
+6
+</sentence>
+
+<sentence sentence-num-in-section="289" sentence-num-in-table="108" xml:id="C27.S2.T2.t1.s108">
+63
+</sentence>
+
+<sentence sentence-num-in-section="290" sentence-num-in-table="109" xml:id="C27.S2.T2.t1.s109">
+45
+</sentence>
+
+<sentence sentence-num-in-section="291" sentence-num-in-table="110" xml:id="C27.S2.T2.t1.s110">
+24
+</sentence>
+
+<sentence sentence-num-in-section="292" sentence-num-in-table="111" xml:id="C27.S2.T2.t1.s111">
+6
+</sentence>
+
+<sentence sentence-num-in-section="293" sentence-num-in-table="112" xml:id="C27.S2.T2.t1.s112">
+78
+</sentence>
+
+<sentence sentence-num-in-section="294" sentence-num-in-table="113" xml:id="C27.S2.T2.t1.s113">
+7
+</sentence>
+
+<sentence sentence-num-in-section="295" sentence-num-in-table="114" xml:id="C27.S2.T2.t1.s114">
+6
+</sentence>
+
+<sentence sentence-num-in-section="296" sentence-num-in-table="115" xml:id="C27.S2.T2.t1.s115">
+2
+</sentence>
+
+<sentence sentence-num-in-section="297" sentence-num-in-table="116" xml:id="C27.S2.T2.t1.s116">
+8
+</sentence>
+
+<sentence sentence-num-in-section="298" sentence-num-in-table="117" xml:id="C27.S2.T2.t1.s117">
+20
+</sentence>
+
+<sentence sentence-num-in-section="299" sentence-num-in-table="118" xml:id="C27.S2.T2.t1.s118">
+8
+</sentence>
+
+<sentence sentence-num-in-section="300" sentence-num-in-table="119" xml:id="C27.S2.T2.t1.s119">
+6
+</sentence>
+
+<sentence sentence-num-in-section="301" sentence-num-in-table="120" xml:id="C27.S2.T2.t1.s120">
+42
+</sentence>
+
+<sentence sentence-num-in-section="302" sentence-num-in-table="121" xml:id="C27.S2.T2.t1.s121">
+33
+</sentence>
+
+<sentence sentence-num-in-section="303" sentence-num-in-table="122" xml:id="C27.S2.T2.t1.s122">
+20
+</sentence>
+
+<sentence sentence-num-in-section="304" sentence-num-in-table="123" xml:id="C27.S2.T2.t1.s123">
+4
+</sentence>
+
+<sentence sentence-num-in-section="305" sentence-num-in-table="124" xml:id="C27.S2.T2.t1.s124">
+48
+</sentence>
+
+<sentence sentence-num-in-section="306" sentence-num-in-table="125" xml:id="C27.S2.T2.t1.s125">
+46
+</sentence>
+
+<sentence sentence-num-in-section="307" sentence-num-in-table="126" xml:id="C27.S2.T2.t1.s126">
+22
+</sentence>
+
+<sentence sentence-num-in-section="308" sentence-num-in-table="127" xml:id="C27.S2.T2.t1.s127">
+4
+</sentence>
+
+<sentence sentence-num-in-section="309" sentence-num-in-table="128" xml:id="C27.S2.T2.t1.s128">
+72
+</sentence>
+
+<sentence sentence-num-in-section="310" sentence-num-in-table="129" xml:id="C27.S2.T2.t1.s129">
+8
+</sentence>
+
+<sentence sentence-num-in-section="311" sentence-num-in-table="130" xml:id="C27.S2.T2.t1.s130">
+4
+</sentence>
+
+<sentence sentence-num-in-section="312" sentence-num-in-table="131" xml:id="C27.S2.T2.t1.s131">
+4
+</sentence>
+
+<sentence sentence-num-in-section="313" sentence-num-in-table="132" xml:id="C27.S2.T2.t1.s132">
+15
+</sentence>
+
+<sentence sentence-num-in-section="314" sentence-num-in-table="133" xml:id="C27.S2.T2.t1.s133">
+21
+</sentence>
+
+<sentence sentence-num-in-section="315" sentence-num-in-table="134" xml:id="C27.S2.T2.t1.s134">
+12
+</sentence>
+
+<sentence sentence-num-in-section="316" sentence-num-in-table="135" xml:id="C27.S2.T2.t1.s135">
+4
+</sentence>
+
+<sentence sentence-num-in-section="317" sentence-num-in-table="136" xml:id="C27.S2.T2.t1.s136">
+32
+</sentence>
+
+<sentence sentence-num-in-section="318" sentence-num-in-table="137" xml:id="C27.S2.T2.t1.s137">
+34
+</sentence>
+
+<sentence sentence-num-in-section="319" sentence-num-in-table="138" xml:id="C27.S2.T2.t1.s138">
+16
+</sentence>
+
+<sentence sentence-num-in-section="320" sentence-num-in-table="139" xml:id="C27.S2.T2.t1.s139">
+4
+</sentence>
+
+<sentence sentence-num-in-section="321" sentence-num-in-table="140" xml:id="C27.S2.T2.t1.s140">
+54
+</sentence>
+
+<sentence sentence-num-in-section="322" sentence-num-in-table="141" xml:id="C27.S2.T2.t1.s141">
+47
+</sentence>
+
+<sentence sentence-num-in-section="323" sentence-num-in-table="142" xml:id="C27.S2.T2.t1.s142">
+46
+</sentence>
+
+<sentence sentence-num-in-section="324" sentence-num-in-table="143" xml:id="C27.S2.T2.t1.s143">
+2
+</sentence>
+
+<sentence sentence-num-in-section="325" sentence-num-in-table="144" xml:id="C27.S2.T2.t1.s144">
+48
+</sentence>
+
+<sentence sentence-num-in-section="326" sentence-num-in-table="145" xml:id="C27.S2.T2.t1.s145">
+9
+</sentence>
+
+<sentence sentence-num-in-section="327" sentence-num-in-table="146" xml:id="C27.S2.T2.t1.s146">
+6
+</sentence>
+
+<sentence sentence-num-in-section="328" sentence-num-in-table="147" xml:id="C27.S2.T2.t1.s147">
+3
+</sentence>
+
+<sentence sentence-num-in-section="329" sentence-num-in-table="148" xml:id="C27.S2.T2.t1.s148">
+13
+</sentence>
+
+<sentence sentence-num-in-section="330" sentence-num-in-table="149" xml:id="C27.S2.T2.t1.s149">
+22
+</sentence>
+
+<sentence sentence-num-in-section="331" sentence-num-in-table="150" xml:id="C27.S2.T2.t1.s150">
+10
+</sentence>
+
+<sentence sentence-num-in-section="332" sentence-num-in-table="151" xml:id="C27.S2.T2.t1.s151">
+4
+</sentence>
+
+<sentence sentence-num-in-section="333" sentence-num-in-table="152" xml:id="C27.S2.T2.t1.s152">
+36
+</sentence>
+
+<sentence sentence-num-in-section="334" sentence-num-in-table="153" xml:id="C27.S2.T2.t1.s153">
+35
+</sentence>
+
+<sentence sentence-num-in-section="335" sentence-num-in-table="154" xml:id="C27.S2.T2.t1.s154">
+24
+</sentence>
+
+<sentence sentence-num-in-section="336" sentence-num-in-table="155" xml:id="C27.S2.T2.t1.s155">
+4
+</sentence>
+
+<sentence sentence-num-in-section="337" sentence-num-in-table="156" xml:id="C27.S2.T2.t1.s156">
+48
+</sentence>
+
+<sentence sentence-num-in-section="338" sentence-num-in-table="157" xml:id="C27.S2.T2.t1.s157">
+48
+</sentence>
+
+<sentence sentence-num-in-section="339" sentence-num-in-table="158" xml:id="C27.S2.T2.t1.s158">
+16
+</sentence>
+
+<sentence sentence-num-in-section="340" sentence-num-in-table="159" xml:id="C27.S2.T2.t1.s159">
+10
+</sentence>
+
+<sentence sentence-num-in-section="341" sentence-num-in-table="160" xml:id="C27.S2.T2.t1.s160">
+124
+</sentence>
+
+<sentence sentence-num-in-section="342" sentence-num-in-table="161" xml:id="C27.S2.T2.t1.s161">
+10
+</sentence>
+
+<sentence sentence-num-in-section="343" sentence-num-in-table="162" xml:id="C27.S2.T2.t1.s162">
+4
+</sentence>
+
+<sentence sentence-num-in-section="344" sentence-num-in-table="163" xml:id="C27.S2.T2.t1.s163">
+4
+</sentence>
+
+<sentence sentence-num-in-section="345" sentence-num-in-table="164" xml:id="C27.S2.T2.t1.s164">
+18
+</sentence>
+
+<sentence sentence-num-in-section="346" sentence-num-in-table="165" xml:id="C27.S2.T2.t1.s165">
+23
+</sentence>
+
+<sentence sentence-num-in-section="347" sentence-num-in-table="166" xml:id="C27.S2.T2.t1.s166">
+22
+</sentence>
+
+<sentence sentence-num-in-section="348" sentence-num-in-table="167" xml:id="C27.S2.T2.t1.s167">
+2
+</sentence>
+
+<sentence sentence-num-in-section="349" sentence-num-in-table="168" xml:id="C27.S2.T2.t1.s168">
+24
+</sentence>
+
+<sentence sentence-num-in-section="350" sentence-num-in-table="169" xml:id="C27.S2.T2.t1.s169">
+36
+</sentence>
+
+<sentence sentence-num-in-section="351" sentence-num-in-table="170" xml:id="C27.S2.T2.t1.s170">
+12
+</sentence>
+
+<sentence sentence-num-in-section="352" sentence-num-in-table="171" xml:id="C27.S2.T2.t1.s171">
+9
+</sentence>
+
+<sentence sentence-num-in-section="353" sentence-num-in-table="172" xml:id="C27.S2.T2.t1.s172">
+91
+</sentence>
+
+<sentence sentence-num-in-section="354" sentence-num-in-table="173" xml:id="C27.S2.T2.t1.s173">
+49
+</sentence>
+
+<sentence sentence-num-in-section="355" sentence-num-in-table="174" xml:id="C27.S2.T2.t1.s174">
+42
+</sentence>
+
+<sentence sentence-num-in-section="356" sentence-num-in-table="175" xml:id="C27.S2.T2.t1.s175">
+3
+</sentence>
+
+<sentence sentence-num-in-section="357" sentence-num-in-table="176" xml:id="C27.S2.T2.t1.s176">
+57
+</sentence>
+
+<sentence sentence-num-in-section="358" sentence-num-in-table="177" xml:id="C27.S2.T2.t1.s177">
+11
+</sentence>
+
+<sentence sentence-num-in-section="359" sentence-num-in-table="178" xml:id="C27.S2.T2.t1.s178">
+10
+</sentence>
+
+<sentence sentence-num-in-section="360" sentence-num-in-table="179" xml:id="C27.S2.T2.t1.s179">
+2
+</sentence>
+
+<sentence sentence-num-in-section="361" sentence-num-in-table="180" xml:id="C27.S2.T2.t1.s180">
+12
+</sentence>
+
+<sentence sentence-num-in-section="362" sentence-num-in-table="181" xml:id="C27.S2.T2.t1.s181">
+24
+</sentence>
+
+<sentence sentence-num-in-section="363" sentence-num-in-table="182" xml:id="C27.S2.T2.t1.s182">
+8
+</sentence>
+
+<sentence sentence-num-in-section="364" sentence-num-in-table="183" xml:id="C27.S2.T2.t1.s183">
+8
+</sentence>
+
+<sentence sentence-num-in-section="365" sentence-num-in-table="184" xml:id="C27.S2.T2.t1.s184">
+60
+</sentence>
+
+<sentence sentence-num-in-section="366" sentence-num-in-table="185" xml:id="C27.S2.T2.t1.s185">
+37
+</sentence>
+
+<sentence sentence-num-in-section="367" sentence-num-in-table="186" xml:id="C27.S2.T2.t1.s186">
+36
+</sentence>
+
+<sentence sentence-num-in-section="368" sentence-num-in-table="187" xml:id="C27.S2.T2.t1.s187">
+2
+</sentence>
+
+<sentence sentence-num-in-section="369" sentence-num-in-table="188" xml:id="C27.S2.T2.t1.s188">
+38
+</sentence>
+
+<sentence sentence-num-in-section="370" sentence-num-in-table="189" xml:id="C27.S2.T2.t1.s189">
+50
+</sentence>
+
+<sentence sentence-num-in-section="371" sentence-num-in-table="190" xml:id="C27.S2.T2.t1.s190">
+20
+</sentence>
+
+<sentence sentence-num-in-section="372" sentence-num-in-table="191" xml:id="C27.S2.T2.t1.s191">
+6
+</sentence>
+
+<sentence sentence-num-in-section="373" sentence-num-in-table="192" xml:id="C27.S2.T2.t1.s192">
+93
+</sentence>
+
+<sentence sentence-num-in-section="374" sentence-num-in-table="193" xml:id="C27.S2.T2.t1.s193">
+12
+</sentence>
+
+<sentence sentence-num-in-section="375" sentence-num-in-table="194" xml:id="C27.S2.T2.t1.s194">
+4
+</sentence>
+
+<sentence sentence-num-in-section="376" sentence-num-in-table="195" xml:id="C27.S2.T2.t1.s195">
+6
+</sentence>
+
+<sentence sentence-num-in-section="377" sentence-num-in-table="196" xml:id="C27.S2.T2.t1.s196">
+28
+</sentence>
+
+<sentence sentence-num-in-section="378" sentence-num-in-table="197" xml:id="C27.S2.T2.t1.s197">
+25
+</sentence>
+
+<sentence sentence-num-in-section="379" sentence-num-in-table="198" xml:id="C27.S2.T2.t1.s198">
+20
+</sentence>
+
+<sentence sentence-num-in-section="380" sentence-num-in-table="199" xml:id="C27.S2.T2.t1.s199">
+3
+</sentence>
+
+<sentence sentence-num-in-section="381" sentence-num-in-table="200" xml:id="C27.S2.T2.t1.s200">
+31
+</sentence>
+
+<sentence sentence-num-in-section="382" sentence-num-in-table="201" xml:id="C27.S2.T2.t1.s201">
+38
+</sentence>
+
+<sentence sentence-num-in-section="383" sentence-num-in-table="202" xml:id="C27.S2.T2.t1.s202">
+18
+</sentence>
+
+<sentence sentence-num-in-section="384" sentence-num-in-table="203" xml:id="C27.S2.T2.t1.s203">
+4
+</sentence>
+
+<sentence sentence-num-in-section="385" sentence-num-in-table="204" xml:id="C27.S2.T2.t1.s204">
+60
+</sentence>
+
+<sentence sentence-num-in-section="386" sentence-num-in-table="205" xml:id="C27.S2.T2.t1.s205">
+51
+</sentence>
+
+<sentence sentence-num-in-section="387" sentence-num-in-table="206" xml:id="C27.S2.T2.t1.s206">
+32
+</sentence>
+
+<sentence sentence-num-in-section="388" sentence-num-in-table="207" xml:id="C27.S2.T2.t1.s207">
+4
+</sentence>
+
+<sentence sentence-num-in-section="389" sentence-num-in-table="208" xml:id="C27.S2.T2.t1.s208">
+72
+</sentence>
+
+<sentence sentence-num-in-section="390" sentence-num-in-table="209" xml:id="C27.S2.T2.t1.s209">
+13
+</sentence>
+
+<sentence sentence-num-in-section="391" sentence-num-in-table="210" xml:id="C27.S2.T2.t1.s210">
+12
+</sentence>
+
+<sentence sentence-num-in-section="392" sentence-num-in-table="211" xml:id="C27.S2.T2.t1.s211">
+2
+</sentence>
+
+<sentence sentence-num-in-section="393" sentence-num-in-table="212" xml:id="C27.S2.T2.t1.s212">
+14
+</sentence>
+
+<sentence sentence-num-in-section="394" sentence-num-in-table="213" xml:id="C27.S2.T2.t1.s213">
+26
+</sentence>
+
+<sentence sentence-num-in-section="395" sentence-num-in-table="214" xml:id="C27.S2.T2.t1.s214">
+12
+</sentence>
+
+<sentence sentence-num-in-section="396" sentence-num-in-table="215" xml:id="C27.S2.T2.t1.s215">
+4
+</sentence>
+
+<sentence sentence-num-in-section="397" sentence-num-in-table="216" xml:id="C27.S2.T2.t1.s216">
+42
+</sentence>
+
+<sentence sentence-num-in-section="398" sentence-num-in-table="217" xml:id="C27.S2.T2.t1.s217">
+39
+</sentence>
+
+<sentence sentence-num-in-section="399" sentence-num-in-table="218" xml:id="C27.S2.T2.t1.s218">
+24
+</sentence>
+
+<sentence sentence-num-in-section="400" sentence-num-in-table="219" xml:id="C27.S2.T2.t1.s219">
+4
+</sentence>
+
+<sentence sentence-num-in-section="401" sentence-num-in-table="220" xml:id="C27.S2.T2.t1.s220">
+56
+</sentence>
+
+<sentence sentence-num-in-section="402" sentence-num-in-table="221" xml:id="C27.S2.T2.t1.s221">
+52
+</sentence>
+
+<sentence sentence-num-in-section="403" sentence-num-in-table="222" xml:id="C27.S2.T2.t1.s222">
+24
+</sentence>
+
+<sentence sentence-num-in-section="404" sentence-num-in-table="223" xml:id="C27.S2.T2.t1.s223">
+6
+</sentence>
+
+<sentence sentence-num-in-section="405" sentence-num-in-table="224" xml:id="C27.S2.T2.t1.s224">
+98
+</sentence>
+   
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C27.S3">
+<title>Multiplicative Properties</title>        
+    
+<para xml:id="C27.S3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="406" xml:id="C27.S3.p1.s1">
+Except for <Math mode="inline" xml:id="C27.S3.p1.m1">\nu\left(n\right)</Math> , <Math mode="inline" xml:id="C27.S3.p1.m2">\Lambda\left(n\right)</Math> , <Math mode="inline" xml:id="C27.S3.p1.m3">p_{n}</Math> , and <Math mode="inline" xml:id="C27.S3.p1.m4">\pi\left(x\right)</Math> , the functions in §LABEL:sec:NT.FU aremultiplicative, which means <Math mode="inline" xml:id="C27.S3.p1.m5">f(1)=1</Math> and <Math equation-number="27.3.1" mode="display" xml:id="C27.S3.E1">f(mn)=f(m)f(n), subject to \left(m,n\right)=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="407" xml:id="C27.S3.p2.s1">
+If <Math mode="inline" xml:id="C27.S3.p2.m1">f</Math> is multiplicative, then the values <Math mode="inline" xml:id="C27.S3.p2.m2">f(n)</Math> for <Math mode="inline" xml:id="C27.S3.p2.m3">n&gt;1</Math> are determined by the values at the prime powers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="408" xml:id="C27.S3.p2.s2">
+Specifically, if <Math mode="inline" xml:id="C27.S3.p2.m4">n</Math> is factored as in (LABEL:eq:NT.FU.FT), then <Math equation-number="27.3.2" mode="display" xml:id="C27.S3.E2">f(n)=\prod_{r=1}^{\nu\left(n\right)}f(p^{a_{r}}_{r})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="409" xml:id="C27.S3.p2.s3">
+In particular, <Math equation-number="27.3.3" mode="display" xml:id="C27.S3.E3">\phi\left(n\right)=n\prod_{p\mathbin{|}n}(1-p^{-1}),</Math> , <Math equation-number="27.3.4" mode="display" xml:id="C27.S3.E4">J_{k}\left(n\right)=n^{k}\prod_{p\mathbin{|}n}(1-p^{-k}),</Math> , <Math equation-number="27.3.5" mode="display" xml:id="C27.S3.E5">d\left(n\right)=\prod_{r=1}^{\nu\left(n\right)}(1+a_{r}),</Math> , <Math equation-number="27.3.6" mode="display" xml:id="C27.S3.E6">\sigma_{\alpha}\left(n\right)=\prod_{r=1}^{\nu\left(n\right)}\frac{p^{\alpha(1 +a_{r})}_{r}-1}{p^{\alpha}_{r}-1}, subject to \alpha\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="410" xml:id="C27.S3.p2.s4">
+Related multiplicative properties are <Math equation-number="27.3.7" mode="display" xml:id="C27.S3.E7">\sigma_{\alpha}\left(m\right)\sigma_{\alpha}\left(n\right)=\sum_{d\mathbin{|} \left(m,n\right)}d^{\alpha}\sigma_{\alpha}\left(\frac{mn}{d^{2}}\right),</Math> <Math equation-number="27.3.8" mode="display" xml:id="C27.S3.E8">\phi\left(m\right)\phi\left(n\right)=\phi\left(mn\right)\phi\left(\left(m,n \right)\right)/\left(m,n\right)</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C27.S3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="411" xml:id="C27.S3.p3.s1">
+A function <Math mode="inline" xml:id="C27.S3.p3.m1">f</Math> is completely multiplicative if <Math mode="inline" xml:id="C27.S3.p3.m2">f(1)=1</Math> and <Math equation-number="27.3.9" mode="display" xml:id="C27.S3.E9">f(mn)=f(m)f(n), subject to m,n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="412" xml:id="C27.S3.p3.s2">
+Examples are <Math mode="inline" xml:id="C27.S3.p3.m3">\left\lfloor 1/n\right\rfloor</Math> and <Math mode="inline" xml:id="C27.S3.p3.m4">\lambda\left(n\right)</Math> , and the Dirichletcharacters, defined in §LABEL:sec:NT.DIR.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="413" xml:id="C27.S3.p4.s1">
+If <Math mode="inline" xml:id="C27.S3.p4.m1">f</Math> is completely multiplicative, then (LABEL:eq:NT.MUL.PROD) becomes <Math equation-number="27.3.10" mode="display" xml:id="C27.S3.E10">f(n)=\prod_{r=1}^{\nu\left(n\right)}\left(f(p_{r})\right)^{a_{r}}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S4">
+<title>Euler Products and Dirichlet Series</title>        
+ 
+<para xml:id="C27.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="414" xml:id="C27.S4.p1.s1">
+The fundamental theorem of arithmetic is linked to analysis through the concept of the Euler product.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="415" xml:id="C27.S4.p1.s2">
+Every multiplicative <Math mode="inline" xml:id="C27.S4.p1.m1">f</Math> satisfies the identity <Math equation-number="27.4.1" mode="display" xml:id="C27.S4.E1">\sum_{n=1}^{\infty}f(n)=\prod_{p}\left(1+\sum_{r=1}^{\infty}f(p^{r})\right),</Math> if the series on the left is absolutely convergent.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="416" xml:id="C27.S4.p1.s3">
+In this case the infinite product on the right (extended over all primes <Math mode="inline" xml:id="C27.S4.p1.m2">p</Math> ) is also absolutely convergent and is called the Euler product of the series.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="417" xml:id="C27.S4.p1.s4">
+If <Math mode="inline" xml:id="C27.S4.p1.m3">f(n)</Math> is completely multiplicative, then each factor in the product is a geometric series and the Euler product becomes <Math equation-number="27.4.2" mode="display" xml:id="C27.S4.E2">\sum_{n=1}^{\infty}f(n)=\prod_{p}(1-f(p))^{-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="418" xml:id="C27.S4.p2.s1">
+Euler products are used to find series that generate many functions of multiplicative number theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="419" xml:id="C27.S4.p2.s2">
+The completely multiplicative function <Math mode="inline" xml:id="C27.S4.p2.m1">f(n)=n^{-s}</Math> gives the Euler product representation of theRiemann zeta function <Math mode="inline" xml:id="C27.S4.p2.m2">\zeta\left(s\right)</Math> (§LABEL:sec:ZE.Def.Def): <Math equation-number="27.4.3" mode="display" xml:id="C27.S4.E3">\zeta\left(s\right)=\sum_{n=1}^{\infty}n^{-s}=\prod_{p}(1-p^{-s})^{-1}, subject to \Re s&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="420" xml:id="C27.S4.p3.s1">
+The Riemann zeta function is the prototype of series of the form <Math equation-number="27.4.4" mode="display" xml:id="C27.S4.E4">F(s)=\sum_{n=1}^{\infty}f(n)n^{-s},</Math> called Dirichlet series with coefficients <Math mode="inline" xml:id="C27.S4.p3.m1">f(n)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="421" xml:id="C27.S4.p3.s2">
+The function <Math mode="inline" xml:id="C27.S4.p3.m2">F(s)</Math> is a generating function, or more precisely, a Dirichlet generating function, for the coefficients.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="422" xml:id="C27.S4.p3.s3">
+The following examples have generating functions related to the zeta function: <Math equation-number="27.4.5" mode="display" xml:id="C27.S4.E5">\sum_{n=1}^{\infty}\mu\left(n\right)n^{-s}=\frac{1}{\zeta\left(s\right)}, subject to \Re s&gt;1,</Math> , <Math equation-number="27.4.6" mode="display" xml:id="C27.S4.E6">\sum_{n=1}^{\infty}\phi\left(n\right)n^{-s}=\frac{\zeta\left(s-1\right)}{\zeta \left(s\right)}, subject to \Re s&gt;2,</Math> , <Math equation-number="27.4.7" mode="display" xml:id="C27.S4.E7">\sum_{n=1}^{\infty}\lambda\left(n\right)n^{-s}=\frac{\zeta\left(2s\right)}{ \zeta\left(s\right)}, subject to \Re s&gt;1,</Math> , <Math equation-number="27.4.8" mode="display" xml:id="C27.S4.E8">\sum_{n=1}^{\infty}|\mu\left(n\right)|n^{-s}=\frac{\zeta\left(s\right)}{\zeta \left(2s\right)}, subject to \Re s&gt;1,</Math> , <Math equation-number="27.4.9" mode="display" xml:id="C27.S4.E9">\sum_{n=1}^{\infty}2^{\nu\left(n\right)}n^{-s}=\frac{(\zeta\left(s\right))^{2} }{\zeta\left(2s\right)}, subject to \Re s&gt;1,</Math> , <Math equation-number="27.4.10" mode="display" xml:id="C27.S4.E10">\sum_{n=1}^{\infty}d_{k}\left(n\right)n^{-s}=(\zeta\left(s\right))^{k}, subject to \Re s&gt;1,</Math> <Math equation-number="27.4.11" mode="display" xml:id="C27.S4.E11">\sum_{n=1}^{\infty}\sigma_{\alpha}\left(n\right)n^{-s}=\zeta\left(s\right) \zeta\left(s-\alpha\right), subject to \Re s&gt;\max(1,1+\Re\alpha),</Math> <Math equation-number="27.4.12" mode="display" xml:id="C27.S4.E12">\sum_{n=1}^{\infty}\Lambda\left(n\right)n^{-s}=-\frac{\zeta'\left(s\right)}{ \zeta\left(s\right)}, subject to \Re s&gt;1,</Math> , <Math equation-number="27.4.13" mode="display" xml:id="C27.S4.E13">\sum_{n=2}^{\infty}(\ln n)n^{-s}=-\zeta'\left(s\right), subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="423" xml:id="C27.S4.p3.s4">
+In (LABEL:eq:NT.EP.MAN) and (LABEL:eq:NT.EP.LN) <Math mode="inline" xml:id="C27.S4.p3.m3">\zeta'\left(s\right)</Math> is the derivative of <Math mode="inline" xml:id="C27.S4.p3.m4">\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S5">
+<title>Inversion Formulas</title>        
+          
+   
+   
+ 
+<para xml:id="C27.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="424" xml:id="C27.S5.p1.s1">
+If a Dirichlet series <Math mode="inline" xml:id="C27.S5.p1.m1">F(s)</Math> generates <Math mode="inline" xml:id="C27.S5.p1.m2">f(n)</Math> , and <Math mode="inline" xml:id="C27.S5.p1.m3">G(s)</Math> generates <Math mode="inline" xml:id="C27.S5.p1.m4">g(n)</Math> , then the product <Math mode="inline" xml:id="C27.S5.p1.m5">F(s)G(s)</Math> generates <Math equation-number="27.5.1" mode="display" xml:id="C27.S5.E1">h(n)=\sum_{d\mathbin{|}n}f(d)g\left(\frac{n}{d}\right),</Math> called the Dirichlet product (or convolution) of <Math mode="inline" xml:id="C27.S5.p1.m6">f</Math> and <Math mode="inline" xml:id="C27.S5.p1.m7">g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="425" xml:id="C27.S5.p1.s2">
+The set of all number-theoretic functions <Math mode="inline" xml:id="C27.S5.p1.m8">f</Math> with <Math mode="inline" xml:id="C27.S5.p1.m9">f(1)\neq 0</Math> forms an abelian group under Dirichlet multiplication, with the function <Math mode="inline" xml:id="C27.S5.p1.m10">\left\lfloor 1/n\right\rfloor</Math> in (LABEL:eq:NT.FU.ID) as identity element; see ( , p. 129) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="426" xml:id="C27.S5.p1.s3">
+The multiplicative functions are a subgroup of this group.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="427" xml:id="C27.S5.p1.s4">
+Generating functions yield many relations connecting number-theoretic functions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="428" xml:id="C27.S5.p1.s5">
+For example, the equation <Math mode="inline" xml:id="C27.S5.p1.m11">\zeta\left(s\right)\cdot(\ifrac{1}{\zeta\left(s\right)})=1</Math> is equivalent to the identity <Math equation-number="27.5.2" mode="display" xml:id="C27.S5.E2">\sum_{d\mathbin{|}n}\mu\left(d\right)=\left\lfloor\frac{1}{n}\right\rfloor,</Math> which, in turn, is the basis for the Möbius inversion formula relating sums over divisors: <Math equation-number="27.5.3" mode="display" xml:id="C27.S5.E3">g(n)=\sum_{d\mathbin{|}n}f(d)\Longleftrightarrow f(n)=\sum_{d\mathbin{|}n}g(d) \mu\left(\frac{n}{d}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="429" xml:id="C27.S5.p2.s1">
+Special cases of Möbius inversion pairs are: <Math equation-number="27.5.4" mode="display" xml:id="C27.S5.E4">n=\sum_{d\mathbin{|}n}\phi\left(d\right)\Longleftrightarrow\phi\left(n\right)= \sum_{d\mathbin{|}n}d\mu\left(\frac{n}{d}\right),</Math> <Math equation-number="27.5.5" mode="display" xml:id="C27.S5.E5">\ln n=\sum_{d\mathbin{|}n}\Lambda\left(d\right)\Longleftrightarrow\Lambda\left (n\right)=\sum_{d\mathbin{|}n}(\ln d)\mu\left(\frac{n}{d}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="430" xml:id="C27.S5.p3.s1">
+Other types of Möbius inversion formulas include: <Math equation-number="27.5.6" mode="display" xml:id="C27.S5.E6">G(x)=\sum_{n\leq x}F\left(\frac{x}{n}\right)\Longleftrightarrow F(x)=\sum_{n \leq x}\mu\left(n\right)G\left(\frac{x}{n}\right),</Math> <Math equation-number="27.5.7" mode="display" xml:id="C27.S5.E7">G(x)=\sum_{m=1}^{\infty}\frac{F(mx)}{m^{s}}\Longleftrightarrow F(x)=\sum_{m=1} ^{\infty}\mu\left(m\right)\frac{G(mx)}{m^{s}},</Math> <Math equation-number="27.5.8" mode="display" xml:id="C27.S5.E8">g(n)=\prod_{d\mathbin{|}n}f(d)\Longleftrightarrow f(n)=\prod_{d\mathbin{|}n} \left(g\left(\frac{n}{d}\right)\right)^{\mu\left(d\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="431" xml:id="C27.S5.p4.s1">
+For a general theory of Möbius inversion with applications to combinatorial theory see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S6">
+<title>Divisor Sums</title>        
+  
+<para xml:id="C27.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="432" xml:id="C27.S6.p1.s1">
+Sums of number-theoretic functions extended over divisors are of special interest.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="433" xml:id="C27.S6.p1.s2">
+For example, <Math equation-number="27.6.1" mode="display" xml:id="C27.S6.E1">\sum_{d\mathbin{|}n}\lambda\left(d\right)=\begin{cases}1,&amp;n\mbox{ is a square} ,\\ 0,&amp;\mbox{otherwise}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="434" xml:id="C27.S6.p2.s1">
+If <Math mode="inline" xml:id="C27.S6.p2.m1">f</Math> is multiplicative, then <Math equation-number="27.6.2" mode="display" xml:id="C27.S6.E2">\sum_{d\mathbin{|}n}\mu\left(d\right)f(d)=\prod_{p\mathbin{|}n}(1-f(p)), subject to n&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="435" xml:id="C27.S6.p3.s1">
+Generating functions, Euler products, and Möbius inversion are used to evaluate many sums extended over divisors.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="436" xml:id="C27.S6.p3.s2">
+Examples include: <Math equation-number="27.6.3" mode="display" xml:id="C27.S6.E3">\sum_{d\mathbin{|}n}|\mu\left(d\right)|=2^{\nu\left(n\right)},</Math> , <Math equation-number="27.6.4" mode="display" xml:id="C27.S6.E4">\sum_{d^{2}\mathbin{|}n}\mu\left(d\right)=|\mu\left(n\right)|,</Math> , <Math equation-number="27.6.5" mode="display" xml:id="C27.S6.E5">\sum_{d\mathbin{|}n}\frac{|\mu\left(d\right)|}{\phi\left(d\right)}=\frac{n}{ \phi\left(n\right)},</Math> <Math equation-number="27.6.6" mode="display" xml:id="C27.S6.E6">\sum_{d\mathbin{|}n}\phi_{k}\left(d\right)\left(\frac{n}{d}\right)^{k}=1^{k}+2 ^{k}+\dots+n^{k},</Math> <Math equation-number="27.6.7" mode="display" xml:id="C27.S6.E7">\sum_{d\mathbin{|}n}\mu\left(d\right)\left(\frac{n}{d}\right)^{k}=J_{k}\left(n \right),</Math> <Math equation-number="27.6.8" mode="display" xml:id="C27.S6.E8">\sum_{d\mathbin{|}n}J_{k}\left(d\right)=n^{k}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S7">
+<title>Lambert Series as Generating Functions</title>        
+ 
+ 
+<para xml:id="C27.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="437" xml:id="C27.S7.p1.s1">
+Lambert series have the form <Math equation-number="27.7.1" mode="display" xml:id="C27.S7.E1">\sum_{n=1}^{\infty}f(n)\frac{x^{n}}{1-x^{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="438" xml:id="C27.S7.p1.s2">
+If <Math mode="inline" xml:id="C27.S7.p1.m1">|x|&lt;1</Math> , then the quotient <Math mode="inline" xml:id="C27.S7.p1.m2">x^{n}/(1-x^{n})</Math> is the sum of a geometric series, and when the series (LABEL:eq:NT.LAM.DEF) converges absolutely it can be rearranged as a power series: <Math equation-number="27.7.2" mode="display" xml:id="C27.S7.E2">\sum_{n=1}^{\infty}f(n)\frac{x^{n}}{1-x^{n}}=\sum_{n=1}^{\infty}\sum_{d \mathbin{|}n}f(d)x^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="439" xml:id="C27.S7.p2.s1">
+Again with <Math mode="inline" xml:id="C27.S7.p2.m1">|x|&lt;1</Math> , special cases of (LABEL:eq:NT.LAM.GEN) include: <Math equation-number="27.7.3" mode="display" xml:id="C27.S7.E3">\sum_{n=1}^{\infty}\mu\left(n\right)\frac{x^{n}}{1-x^{n}}=x,</Math> , <Math equation-number="27.7.4" mode="display" xml:id="C27.S7.E4">\sum_{n=1}^{\infty}\phi\left(n\right)\frac{x^{n}}{1-x^{n}}=\frac{x}{(1-x)^{2}},</Math> , <Math equation-number="27.7.5" mode="display" xml:id="C27.S7.E5">\sum_{n=1}^{\infty}n^{\alpha}\frac{x^{n}}{1-x^{n}}=\sum_{n=1}^{\infty}\sigma_{ \alpha}\left(n\right)x^{n},</Math> , <Math equation-number="27.7.6" mode="display" xml:id="C27.S7.E6">\sum_{n=1}^{\infty}\lambda\left(n\right)\frac{x^{n}}{1-x^{n}}=\sum_{n=1}^{ \infty}x^{n^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S8">
+<title>Dirichlet Characters</title>        
+   
+  
+<para xml:id="C27.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="440" xml:id="C27.S8.p1.s1">
+If <Math mode="inline" xml:id="C27.S8.p1.m1">k</Math> <Math mode="inline" xml:id="C27.S8.p1.m2">(&gt;1)</Math> is a given integer, then a function <Math mode="inline" xml:id="C27.S8.p1.m3">\chi\left(n\right)</Math> is called a Dirichlet character (mod <Math mode="inline" xml:id="C27.S8.p1.m4">k</Math> ) if it is completely multiplicative, periodic with period <Math mode="inline" xml:id="C27.S8.p1.m5">k</Math> , and vanishes when <Math mode="inline" xml:id="C27.S8.p1.m6">\left(n,k\right)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="441" xml:id="C27.S8.p1.s2">
+In other words, Dirichlet characters (mod <Math mode="inline" xml:id="C27.S8.p1.m7">k</Math> ) satisfy the four conditions: <Math equation-number="27.8.1" mode="display" xml:id="C27.S8.E1">\chi\left(1\right)=1,</Math> , <Math equation-number="27.8.2" mode="display" xml:id="C27.S8.E2">\chi\left(mn\right)=\chi\left(m\right)\chi\left(n\right), subject to m,n=1,2,\dots,</Math> , <Math equation-number="27.8.3" mode="display" xml:id="C27.S8.E3">\chi\left(n+k\right)=\chi\left(n\right), subject to n=1,2,\dots,</Math> , <Math equation-number="27.8.4" mode="display" xml:id="C27.S8.E4">\chi\left(n\right)=0, subject to \left(n,k\right)&gt;1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="442" xml:id="C27.S8.p2.s1">
+An example is the principal character (mod <Math mode="inline" xml:id="C27.S8.p2.m1">k</Math> ): <Math equation-number="27.8.5" mode="display" xml:id="C27.S8.E5">\chi_{1}\left(n\right)=\begin{cases}1,&amp;\left(n,k\right)=1,\\ 0,&amp;\left(n,k\right)&gt;1.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="443" xml:id="C27.S8.p3.s1">
+For any character <Math mode="inline" xml:id="C27.S8.p3.m1">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S8.p3.m2">\chi\left(n\right)\neq 0</Math> if and only if <Math mode="inline" xml:id="C27.S8.p3.m3">\left(n,k\right)=1</Math> , in which case the Euler–Fermat theorem (LABEL:eq:NT.FU.EF)implies <Math mode="inline" xml:id="C27.S8.p3.m4">\left(\chi\left(n\right)\right)^{\phi\left(k\right)}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="444" xml:id="C27.S8.p3.s2">
+There are exactly <Math mode="inline" xml:id="C27.S8.p3.m5">\phi\left(k\right)</Math> different characters (mod <Math mode="inline" xml:id="C27.S8.p3.m6">k</Math> ), which can be labeled as <Math mode="inline" xml:id="C27.S8.p3.m7">\chi_{1},\dots,\chi_{\phi\left(k\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="445" xml:id="C27.S8.p3.s3">
+If <Math mode="inline" xml:id="C27.S8.p3.m8">\chi</Math> is a character (mod <Math mode="inline" xml:id="C27.S8.p3.m9">k</Math> ), so is its complex conjugate <Math mode="inline" xml:id="C27.S8.p3.m10">\overline{\chi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="446" xml:id="C27.S8.p3.s4">
+If <Math mode="inline" xml:id="C27.S8.p3.m11">\left(n,k\right)=1</Math> , then the characters satisfy the orthogonality relation <Math equation-number="27.8.6" mode="display" xml:id="C27.S8.E6">\sum_{r=1}^{\phi\left(k\right)}\chi_{r}\left(m\right)\overline{\chi}_{r}(n)= \begin{cases}\phi\left(k\right),&amp;m\equiv n\pmod{k},\\ 0,&amp;\mbox{otherwise}.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="447" xml:id="C27.S8.p4.s1">
+A Dirichlet character <Math mode="inline" xml:id="C27.S8.p4.m1">\chi\pmod{k}</Math> is called primitive (mod <Math mode="inline" xml:id="C27.S8.p4.m2">k</Math> ) if for every proper divisor <Math mode="inline" xml:id="C27.S8.p4.m3">d</Math> of <Math mode="inline" xml:id="C27.S8.p4.m4">k</Math> (that is, a divisor <Math mode="inline" xml:id="C27.S8.p4.m5">d&lt;k</Math> ), there exists an integer <Math mode="inline" xml:id="C27.S8.p4.m6">a\equiv 1\pmod{d}</Math> , with <Math mode="inline" xml:id="C27.S8.p4.m7">\left(a,k\right)=1</Math> and <Math mode="inline" xml:id="C27.S8.p4.m8">\chi\left(a\right)\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="448" xml:id="C27.S8.p4.s2">
+If <Math mode="inline" xml:id="C27.S8.p4.m9">k</Math> is prime, then every nonprincipal character <Math mode="inline" xml:id="C27.S8.p4.m10">\chi\pmod{k}</Math> is primitive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="449" xml:id="C27.S8.p4.s3">
+A divisor <Math mode="inline" xml:id="C27.S8.p4.m11">d</Math> of <Math mode="inline" xml:id="C27.S8.p4.m12">k</Math> is called an induced modulus for <Math mode="inline" xml:id="C27.S8.p4.m13">\chi</Math> if <Math equation-number="27.8.7" mode="display" xml:id="C27.S8.E7">\chi\left(a\right)=1\text{ for all $a\equiv 1$ (mod $d$)},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S8.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="450" xml:id="C27.S8.p5.s1">
+Every Dirichlet character <Math mode="inline" xml:id="C27.S8.p5.m1">\chi</Math> (mod <Math mode="inline" xml:id="C27.S8.p5.m2">k</Math> ) is a product <Math equation-number="27.8.8" mode="display" xml:id="C27.S8.E8">\chi\left(n\right)=\chi_{0}\left(n\right)\chi_{1}\left(n\right),</Math> where <Math mode="inline" xml:id="C27.S8.p5.m3">\chi_{0}</Math> is a character (mod <Math mode="inline" xml:id="C27.S8.p5.m4">d</Math> ) for some induced modulus <Math mode="inline" xml:id="C27.S8.p5.m5">d</Math> for <Math mode="inline" xml:id="C27.S8.p5.m6">\chi</Math> , and <Math mode="inline" xml:id="C27.S8.p5.m7">\chi_{1}</Math> is the principal character (mod <Math mode="inline" xml:id="C27.S8.p5.m8">k</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="451" xml:id="C27.S8.p5.s2">
+A character isreal if all its values are real.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="452" xml:id="C27.S8.p5.s3">
+If <Math mode="inline" xml:id="C27.S8.p5.m9">k</Math> is odd, then the real characters (mod <Math mode="inline" xml:id="C27.S8.p5.m10">k</Math> ) are the principal characterand the quadratic characters described in the next section.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S9">
+<title>Quadratic Characters</title>        
+      
+<para xml:id="C27.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="453" xml:id="C27.S9.p1.s1">
+For an odd prime <Math mode="inline" xml:id="C27.S9.p1.m1">p</Math> , the Legendre symbol <Math mode="inline" xml:id="C27.S9.p1.m2">(n|p)</Math> is defined as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="454" xml:id="C27.S9.p1.s2">
+If <Math mode="inline" xml:id="C27.S9.p1.m3">p</Math> divides <Math mode="inline" xml:id="C27.S9.p1.m4">n</Math> , then the value of <Math mode="inline" xml:id="C27.S9.p1.m5">(n|p)</Math> is <Math mode="inline" xml:id="C27.S9.p1.m6">0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="455" xml:id="C27.S9.p1.s3">
+If <Math mode="inline" xml:id="C27.S9.p1.m7">p</Math> does not divide <Math mode="inline" xml:id="C27.S9.p1.m8">n</Math> , then <Math mode="inline" xml:id="C27.S9.p1.m9">(n|p)</Math> has the value <Math mode="inline" xml:id="C27.S9.p1.m10">1</Math> when the quadratic congruence <Math mode="inline" xml:id="C27.S9.p1.m11">x^{2}\equiv n\pmod{p}</Math> has a solution, and the value <Math mode="inline" xml:id="C27.S9.p1.m12">-1</Math> when this congruence has no solution.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="456" xml:id="C27.S9.p1.s4">
+The Legendre symbol <Math mode="inline" xml:id="C27.S9.p1.m13">(n|p)</Math> , as a function of <Math mode="inline" xml:id="C27.S9.p1.m14">n</Math> , is a Dirichlet character (mod <Math mode="inline" xml:id="C27.S9.p1.m15">p</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="457" xml:id="C27.S9.p1.s5">
+It is sometimes written as <Math mode="inline" xml:id="C27.S9.p1.m16">(\frac{n}{p})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="458" xml:id="C27.S9.p1.s6">
+Special values include: <Math equation-number="27.9.1" mode="display" xml:id="C27.S9.E1">(-1|p)=(-1)^{(p-1)/2},</Math> , <Math equation-number="27.9.2" mode="display" xml:id="C27.S9.E2">(2|p)=(-1)^{(p^{2}-1)/8}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="459" xml:id="C27.S9.p2.s1">
+If <Math mode="inline" xml:id="C27.S9.p2.m1">p,q</Math> are distinct odd primes, then the quadratic reciprocity law states that <Math equation-number="27.9.3" mode="display" xml:id="C27.S9.E3">(p|q)(q|p)=(-1)^{(p-1)(q-1)/4}</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C27.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="460" xml:id="C27.S9.p3.s1">
+If an odd integer <Math mode="inline" xml:id="C27.S9.p3.m1">P</Math> has prime factorization <Math mode="inline" xml:id="C27.S9.p3.m3">P=\prod_{r=1}^{\nu\left(n\right)}p^{a_{r}}_{r}</Math> , then the Jacobi symbol <Math mode="inline" xml:id="C27.S9.p3.m4">(n|P)</Math> is defined by <Math mode="inline" xml:id="C27.S9.p3.m5">(n|P)=\prod_{r=1}^{\nu\left(n\right)}{(n|p_{r})^{a_{r}}}</Math> , with <Math mode="inline" xml:id="C27.S9.p3.m6">(n|1)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="461" xml:id="C27.S9.p3.s2">
+The Jacobi symbol <Math mode="inline" xml:id="C27.S9.p3.m7">(n|P)</Math> is a Dirichlet character (mod <Math mode="inline" xml:id="C27.S9.p3.m8">P</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="462" xml:id="C27.S9.p3.s3">
+Both (LABEL:eq:NT.QUAD.NEG1) and (LABEL:eq:NT.QUAD.TWO) are valid with <Math mode="inline" xml:id="C27.S9.p3.m9">p</Math> replaced by <Math mode="inline" xml:id="C27.S9.p3.m10">P</Math> ; the reciprocity law (LABEL:eq:NT.QUAD.REC) holds if <Math mode="inline" xml:id="C27.S9.p3.m11">p,q</Math> are replaced by any two relatively prime odd integers <Math mode="inline" xml:id="C27.S9.p3.m12">P,Q</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S10">
+<title>Periodic Number-Theoretic Functions</title>        
+  
+<para xml:id="C27.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="463" xml:id="C27.S10.p1.s1">
+If <Math mode="inline" xml:id="C27.S10.p1.m1">k</Math> is a fixed positive integer, then a number-theoretic function <Math mode="inline" xml:id="C27.S10.p1.m2">f</Math> isperiodic (mod <Math mode="inline" xml:id="C27.S10.p1.m3">k</Math> ) if <Math equation-number="27.10.1" mode="display" xml:id="C27.S10.E1">f(n+k)=f(n), subject to n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="464" xml:id="C27.S10.p1.s2">
+Examples are the Dirichlet characters (mod <Math mode="inline" xml:id="C27.S10.p1.m4">k</Math> ) and the greatest common divisor <Math mode="inline" xml:id="C27.S10.p1.m5">\left(n,k\right)</Math> regarded as a function of <Math mode="inline" xml:id="C27.S10.p1.m6">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="465" xml:id="C27.S10.p2.s1">
+Every function periodic (mod <Math mode="inline" xml:id="C27.S10.p2.m1">k</Math> ) can be expressed as a finite Fourier series of the form <Math equation-number="27.10.2" mode="display" xml:id="C27.S10.E2">f(n)=\sum_{m=1}^{k}g(m)e^{2\pi\mathrm{i}mn/k},</Math> where <Math mode="inline" xml:id="C27.S10.p2.m2">g(m)</Math> is also periodic (mod <Math mode="inline" xml:id="C27.S10.p2.m3">k</Math> ), and is given by <Math equation-number="27.10.3" mode="display" xml:id="C27.S10.E3">g(m)=\dfrac{1}{k}\sum_{n=1}^{k}f(n)e^{-2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="466" xml:id="C27.S10.p2.s2">
+An example is Ramanujan’s sum: <Math equation-number="27.10.4" mode="display" xml:id="C27.S10.E4">c_{k}\left(n\right)=\sum_{m=1}^{k}\chi_{1}\left(m\right)e^{2\pi\mathrm{i}mn/k},</Math> where <Math mode="inline" xml:id="C27.S10.p2.m4">\chi_{1}</Math> is the principal character (mod <Math mode="inline" xml:id="C27.S10.p2.m5">k</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="467" xml:id="C27.S10.p2.s3">
+This is the sum of the <Math mode="inline" xml:id="C27.S10.p2.m6">n</Math> th powers of the primitive <Math mode="inline" xml:id="C27.S10.p2.m7">k</Math> th roots of unity.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="468" xml:id="C27.S10.p2.s4">
+It can also be expressed in terms of the Möbius function as a divisor sum: <Math equation-number="27.10.5" mode="display" xml:id="C27.S10.E5">c_{k}\left(n\right)=\sum_{d\mathbin{|}\left(n,k\right)}d\mu\left(\frac{k}{d} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="469" xml:id="C27.S10.p3.s1">
+More generally, if <Math mode="inline" xml:id="C27.S10.p3.m1">f</Math> and <Math mode="inline" xml:id="C27.S10.p3.m2">g</Math> are arbitrary, then the sum <Math equation-number="27.10.6" mode="display" xml:id="C27.S10.E6">s_{k}(n)=\sum_{d\mathbin{|}\left(n,k\right)}f(d)g\left(\frac{k}{d}\right)</Math> is a periodic function of <Math mode="inline" xml:id="C27.S10.p3.m3">n\pmod{k}</Math> and has the finite Fourier-series expansion <Math equation-number="27.10.7" mode="display" xml:id="C27.S10.E7">s_{k}(n)=\sum_{m=1}^{k}a_{k}(m)e^{2\pi\mathrm{i}mn/k},</Math> where <Math equation-number="27.10.8" mode="display" xml:id="C27.S10.E8">a_{k}(m)=\sum_{d\mathbin{|}\left(m,k\right)}g(d)f\left(\frac{k}{d}\right)\frac {d}{k}</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S10.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="470" xml:id="C27.S10.p4.s1">
+Another generalization of Ramanujan’s sum is the Gauss sum <Math mode="inline" xml:id="C27.S10.p4.m1">G\left(n,\chi\right)</Math> associated with a Dirichlet character <Math mode="inline" xml:id="C27.S10.p4.m2">\chi\pmod{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="471" xml:id="C27.S10.p4.s2">
+It is defined by the relation <Math equation-number="27.10.9" mode="display" xml:id="C27.S10.E9">G\left(n,\chi\right)=\sum_{m=1}^{k}\chi\left(m\right)e^{2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="472" xml:id="C27.S10.p4.s3">
+In particular, <Math mode="inline" xml:id="C27.S10.p4.m3">G\left(n,\chi_{1}\right)=c_{k}\left(n\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="473" xml:id="C27.S10.p5.s1">
+ <Math mode="inline" xml:id="C27.S10.p5.m1">G\left(n,\chi\right)</Math> is separable for some <Math mode="inline" xml:id="C27.S10.p5.m2">n</Math> if <Math equation-number="27.10.10" mode="display" xml:id="C27.S10.E10">G\left(n,\chi\right)=\overline{\chi}(n)G\left(1,\chi\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="474" xml:id="C27.S10.p6.s1">
+For any Dirichlet character <Math mode="inline" xml:id="C27.S10.p6.m1">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S10.p6.m2">G\left(n,\chi\right)</Math> is separable for <Math mode="inline" xml:id="C27.S10.p6.m3">n</Math> if <Math mode="inline" xml:id="C27.S10.p6.m4">\left(n,k\right)=1</Math> , and is separable for every <Math mode="inline" xml:id="C27.S10.p6.m5">n</Math> if and only if <Math mode="inline" xml:id="C27.S10.p6.m6">G\left(n,\chi\right)=0</Math> whenever <Math mode="inline" xml:id="C27.S10.p6.m7">\left(n,k\right)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="475" xml:id="C27.S10.p6.s2">
+For a primitive character <Math mode="inline" xml:id="C27.S10.p6.m8">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S10.p6.m9">G\left(n,\chi\right)</Math> is separable for every <Math mode="inline" xml:id="C27.S10.p6.m10">n</Math> , and <Math equation-number="27.10.11" mode="display" xml:id="C27.S10.E11">|G\left(1,\chi\right)|^{2}=k</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S10.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="476" xml:id="C27.S10.p7.s1">
+Conversely, if <Math mode="inline" xml:id="C27.S10.p7.m1">G\left(n,\chi\right)</Math> is separable for every <Math mode="inline" xml:id="C27.S10.p7.m2">n</Math> , then <Math mode="inline" xml:id="C27.S10.p7.m3">\chi</Math> is primitive (mod <Math mode="inline" xml:id="C27.S10.p7.m4">k</Math> ).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S10.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="477" xml:id="C27.S10.p8.s1">
+The finite Fourier expansion of a primitive Dirichlet character <Math mode="inline" xml:id="C27.S10.p8.m1">\chi\pmod{k}</Math> has the form <Math equation-number="27.10.12" mode="display" xml:id="C27.S10.E12">\chi\left(n\right)=\frac{G\left(1,\chi\right)}{k}\sum_{m=1}^{k}\overline{\chi} (m)e^{-2\pi\mathrm{i}mn/k}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S11">
+<title>Asymptotic Formulas: Partial Sums</title>        
+  
+<para xml:id="C27.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="478" xml:id="C27.S11.p1.s1">
+The behavior of a number-theoretic function <Math mode="inline" xml:id="C27.S11.p1.m1">f(n)</Math> for large <Math mode="inline" xml:id="C27.S11.p1.m2">n</Math> is often difficult to determine because the function values can fluctuate considerably as <Math mode="inline" xml:id="C27.S11.p1.m3">n</Math> increases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="479" xml:id="C27.S11.p1.s2">
+It is more fruitful to study partial sums and seek asymptotic formulas of the form <Math equation-number="27.11.1" mode="display" xml:id="C27.S11.E1">\sum_{n\leq x}f(n)=F(x)+O\left(g(x)\right),</Math> where <Math mode="inline" xml:id="C27.S11.p1.m4">F(x)</Math> is a known function of <Math mode="inline" xml:id="C27.S11.p1.m5">x</Math> , and <Math mode="inline" xml:id="C27.S11.p1.m6">O\left(g(x)\right)</Math> represents the error, a function of smaller order than <Math mode="inline" xml:id="C27.S11.p1.m7">F(x)</Math> for all <Math mode="inline" xml:id="C27.S11.p1.m8">x</Math> in some prescribed range.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="480" xml:id="C27.S11.p1.s3">
+For example, ( ) proves that for all <Math mode="inline" xml:id="C27.S11.p1.m9">x\geq 1</Math> , <Math equation-number="27.11.2" mode="display" xml:id="C27.S11.E2">\sum_{n\leq x}d\left(n\right)=x\ln x+(2\gamma-1)x+O\left(\sqrt{x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p1.m10">\gamma</Math> is Euler’s constant (§LABEL:sec:GA.Def.EC).Dirichlet’s divisor problem (unsolved in 2009) is to determine the least number <Math mode="inline" xml:id="C27.S11.p1.m11">\theta_{0}</Math> such that the error term in (LABEL:eq:NT.ASY.DIV) is <Math mode="inline" xml:id="C27.S11.p1.m12">O\left(x^{\theta}\right)</Math> for all <Math mode="inline" xml:id="C27.S11.p1.m13">\theta&gt;\theta_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="481" xml:id="C27.S11.p1.s4">
+( ) proves that <Math mode="inline" xml:id="C27.S11.p1.m14">\theta_{0}\leq\frac{12}{37}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="482" xml:id="C27.S11.p2.s1">
+Equations (LABEL:eq:NT.ASY.DIV1)–(LABEL:eq:NT.ASY.LOGPAP) list further asymptotic formulas related to some of the functions listed in §LABEL:sec:NT.FU.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="483" xml:id="C27.S11.p2.s2">
+They are valid for all <Math mode="inline" xml:id="C27.S11.p2.m1">x\geq 2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="484" xml:id="C27.S11.p2.s3">
+The error terms given here are not necessarily the best known.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="485" xml:id="C27.S11.p2.s4">
+<Math equation-number="27.11.3" mode="display" xml:id="C27.S11.E3">\sum_{n\leq x}\frac{d\left(n\right)}{n}=\frac{1}{2}(\ln x)^{2}+2\gamma\ln x+O \left(1\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m2">\gamma</Math> again is Euler’s constant.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="486" xml:id="C27.S11.p2.s5">
+<Math equation-number="27.11.4" mode="display" xml:id="C27.S11.E4">\sum_{n\leq x}\sigma_{1}\left(n\right)=\frac{{\pi^{2}}}{12}x^{2}+O\left(x\ln x \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="487" xml:id="C27.S11.p2.s6">
+, <Math equation-number="27.11.5" mode="display" xml:id="C27.S11.E5">\sum_{n\leq x}\sigma_{\alpha}\left(n\right)=\frac{\zeta\left(\alpha+1\right)}{ \alpha+1}x^{\alpha+1}+O\left(x^{\beta}\right), subject to \alpha&gt;0, \alpha\neq 1, \beta=\max(1,\alpha)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="488" xml:id="C27.S11.p2.s7">
+<Math equation-number="27.11.6" mode="display" xml:id="C27.S11.E6">\sum_{n\leq x}\phi\left(n\right)=\frac{3}{{\pi^{2}}}x^{2}+O\left(x\ln x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="489" xml:id="C27.S11.p2.s8">
+, <Math equation-number="27.11.7" mode="display" xml:id="C27.S11.E7">\sum_{n\leq x}\frac{\phi\left(n\right)}{n}=\frac{6}{{\pi^{2}}}x+O\left(\ln x \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="490" xml:id="C27.S11.p2.s9">
+<Math equation-number="27.11.8" mode="display" xml:id="C27.S11.E8">\sum_{p\leq x}\frac{1}{p}=\ln\ln x+A+O\left(\frac{1}{\ln x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m3">A</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="491" xml:id="C27.S11.p2.s10">
+<Math equation-number="27.11.9" mode="display" xml:id="C27.S11.E9">\sum_{\begin{subarray}{c}p\leq x\\ p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{1}{p}=\frac{1}{\phi\left(k \right)}\ln\ln x+B+O\left(\frac{1}{\ln x}\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m4">\left(h,k\right)=1</Math> , <Math mode="inline" xml:id="C27.S11.p2.m5">k&gt;0</Math> , and <Math mode="inline" xml:id="C27.S11.p2.m6">B</Math> is a constant depending on <Math mode="inline" xml:id="C27.S11.p2.m7">h</Math> and <Math mode="inline" xml:id="C27.S11.p2.m8">k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="492" xml:id="C27.S11.p2.s11">
+<Math equation-number="27.11.10" mode="display" xml:id="C27.S11.E10">\sum_{p\leq x}\frac{\ln p}{p}=\ln x+O\left(1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="493" xml:id="C27.S11.p2.s12">
+<Math equation-number="27.11.11" mode="display" xml:id="C27.S11.E11">\sum_{\begin{subarray}{c}p\leq x\\ p\equiv h\!\!\!\!\!\pmod{k}\end{subarray}}\frac{\ln p}{p}=\frac{1}{\phi\left(k \right)}\ln x+O\left(1\right),</Math> where <Math mode="inline" xml:id="C27.S11.p2.m9">\left(h,k\right)=1</Math> , <Math mode="inline" xml:id="C27.S11.p2.m10">k&gt;0</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="494" xml:id="C27.S11.p3.s1">
+Letting <Math mode="inline" xml:id="C27.S11.p3.m1">x\to\infty</Math> in (LABEL:eq:NT.ASY.RECPAP) or in (LABEL:eq:NT.ASY.LOGPAP) we see that there are infinitely many primes <Math mode="inline" xml:id="C27.S11.p3.m2">p\equiv h\pmod{k}</Math> if <Math mode="inline" xml:id="C27.S11.p3.m3">h,k</Math> are coprime; this is Dirichlet’s theorem on primes in arithmetic progressions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="495" xml:id="C27.S11.p3.s2">
+<Math equation-number="27.11.12" mode="display" xml:id="C27.S11.E12">\sum_{n\leq x}\mu\left(n\right)=O\left(xe^{-C\sqrt{\ln x}}\right), subject to x\to\infty,</Math> for some positive constant <Math mode="inline" xml:id="C27.S11.p3.m4">C</Math> , <Math equation-number="27.11.13" mode="display" xml:id="C27.S11.E13">\lim_{x\to\infty}\frac{1}{x}\sum_{n\leq x}\mu\left(n\right)=0,</Math> <Math equation-number="27.11.14" mode="display" xml:id="C27.S11.E14">\lim_{x\to\infty}\sum_{n\leq x}\frac{\mu\left(n\right)}{n}=0,</Math> <Math equation-number="27.11.15" mode="display" xml:id="C27.S11.E15">\lim_{x\to\infty}\sum_{n\leq x}\frac{\mu\left(n\right)\ln n}{n}=-1</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S11.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="496" xml:id="C27.S11.p4.s1">
+Each of (LABEL:eq:NT.ASY.MOB1)–(LABEL:eq:NT.ASY.MOB3) is equivalent to the prime number theorem (LABEL:eq:NT.FU.PNT).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="497" xml:id="C27.S11.p4.s2">
+The prime number theorem for arithmetic progressions—an extension of (LABEL:eq:NT.FU.PNT) and first proved in ( ) —states that if <Math mode="inline" xml:id="C27.S11.p4.m1">\left(h,k\right)=1</Math> , then the number of primes <Math mode="inline" xml:id="C27.S11.p4.m2">p\leq x</Math> with <Math mode="inline" xml:id="C27.S11.p4.m3">p\equiv h\pmod{k}</Math> is asymptotic to <Math mode="inline" xml:id="C27.S11.p4.m4">x/(\phi\left(k\right)\ln x)</Math> as <Math mode="inline" xml:id="C27.S11.p4.m5">x\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S12">
+<title>Asymptotic Formulas: Primes</title>        
+  
+<para xml:id="C27.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="498" xml:id="C27.S12.p1.s1">
+ <Math mode="inline" xml:id="C27.S12.p1.m1">p_{n}</Math> is the <Math mode="inline" xml:id="C27.S12.p1.m2">n</Math> th prime, beginning with <Math mode="inline" xml:id="C27.S12.p1.m3">p_{1}=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="499" xml:id="C27.S12.p1.s2">
+<Math mode="inline" xml:id="C27.S12.p1.m4">\pi\left(x\right)</Math> is the number of primes less than or equal to <Math mode="inline" xml:id="C27.S12.p1.m5">x</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="500" xml:id="C27.S12.p2.s1">
+ <Math equation-number="27.12.1" mode="display" xml:id="C27.S12.E1">\lim_{n\to\infty}\frac{p_{n}}{n\ln n}=1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="501" xml:id="C27.S12.p3.s1">
+ <Math equation-number="27.12.2" mode="display" xml:id="C27.S12.E2">p_{n}&gt;n\ln n, subject to n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="502" xml:id="C27.S12.p4.s1">
+ <Math equation-number="27.12.3" mode="display" xml:id="C27.S12.E3">\pi\left(x\right)=\left\lfloor x\right\rfloor-1-\sum_{p_{j}\leq\sqrt{x}}\left \lfloor\frac{x}{p_{j}}\right\rfloor+\sum_{r\geq 2}(-1)^{r}\*\sum_{p_{j_{1}}&lt;p_ {j_{2}}&lt;\cdots&lt;p_{j_{r}}\leq\sqrt{x}}\left\lfloor\frac{x}{p_{j_{1}}p_{j_{2}} \cdots p_{j_{r}}}\right\rfloor, subject to x\geq 1,</Math> where the series terminates when the product of the first <Math mode="inline" xml:id="C27.S12.p4.m1">r</Math> primes exceeds <Math mode="inline" xml:id="C27.S12.p4.m2">x</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="503" xml:id="C27.S12.p5.s1">
+As <Math mode="inline" xml:id="C27.S12.p5.m1">x\to\infty</Math> <Math equation-number="27.12.4" mode="display" xml:id="C27.S12.E4">\pi\left(x\right)\sim\sum_{k=1}^{\infty}\frac{(k-1)!\,x}{(\ln x)^{k}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C27.S12.Px1">
+<title>Prime Number Theorem</title>     
+<para xml:id="C27.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="504" xml:id="C27.S12.Px1.p1.s1">
+There exists a positive constant <Math mode="inline" xml:id="C27.S12.Px1.p1.m1">c</Math> such that <Math equation-number="27.12.5" mode="display" xml:id="C27.S12.E5">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|=O\left(x\exp\left(-c( \ln x)^{1/2}\right)\right), subject to x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="505" xml:id="C27.S12.Px1.p1.s2">
+For the logarithmic integral <Math mode="inline" xml:id="C27.S12.Px1.p1.m2">\mathrm{li}\left(x\right)</Math> see (LABEL:eq:EX.DF.E8).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="506" xml:id="C27.S12.Px1.p1.s3">
+The best available asymptotic error estimate (2009) appears in ( ) and ( ) : there exists a positive constant <Math mode="inline" xml:id="C27.S12.Px1.p1.m3">d</Math> such that <Math equation-number="27.12.6" mode="display" xml:id="C27.S12.E6">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|=O\left(x\exp\left(-d( \ln x)^{3/5}\,(\ln\ln x)^{-1/5}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="507" xml:id="C27.S12.Px1.p2.s1">
+ <Math mode="inline" xml:id="C27.S12.Px1.p2.m1">\pi\left(x\right)-\mathrm{li}\left(x\right)</Math> changes sign infinitely often as <Math mode="inline" xml:id="C27.S12.Px1.p2.m2">x\to\infty</Math> ; see ( ) , ( ) .
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C27.S12.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="508" xml:id="C27.S12.Px1.p3.s1">
+The Riemann hypothesis (§LABEL:sec:ZE.ZERO.DIST) is equivalent to the statement that for every <Math mode="inline" xml:id="C27.S12.Px1.p3.m1">x\geq 2657</Math> , <Math equation-number="27.12.7" mode="display" xml:id="C27.S12.E7">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|&lt;\frac{1}{8\pi}\sqrt{x }\,\ln x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="509" xml:id="C27.S12.Px1.p4.s1">
+If <Math mode="inline" xml:id="C27.S12.Px1.p4.m1">a</Math> is relatively prime to the modulus <Math mode="inline" xml:id="C27.S12.Px1.p4.m2">m</Math> , then there are infinitely many primes congruent to <Math mode="inline" xml:id="C27.S12.Px1.p4.m3">a\pmod{m}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="510" xml:id="C27.S12.Px1.p5.s1">
+The number of such primes not exceeding <Math mode="inline" xml:id="C27.S12.Px1.p5.m1">x</Math> is <Math equation-number="27.12.8" mode="display" xml:id="C27.S12.E8">\frac{\mathrm{li}\left(x\right)}{\phi\left(m\right)}+O\left(x\exp\left(- \lambda(\alpha)(\ln x)^{1/2}\right)\right), subject to m\leq(\ln x)^{\alpha}, \alpha&gt;0,</Math> where <Math mode="inline" xml:id="C27.S12.Px1.p5.m2">\lambda(\alpha)</Math> depends only on <Math mode="inline" xml:id="C27.S12.Px1.p5.m3">\alpha</Math> , and <Math mode="inline" xml:id="C27.S12.Px1.p5.m4">\phi\left(m\right)</Math> is the Euler totient function (§LABEL:sec:NT.FU).
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S12.Px1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="511" xml:id="C27.S12.Px1.p6.s1">
+A Mersenne prime is a prime of the form <Math mode="inline" xml:id="C27.S12.Px1.p6.m1">2^{p}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="512" xml:id="C27.S12.Px1.p6.s2">
+The largest known prime (2009) is the Mersenne prime <Math mode="inline" xml:id="C27.S12.Px1.p6.m2">2^{43,112,609}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="513" xml:id="C27.S12.Px1.p6.s3">
+For current records seeThe Great Internet Mersenne Prime Search.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S12.Px1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="514" xml:id="C27.S12.Px1.p7.s1">
+A pseudoprime test is a test that correctly identifies most composite numbers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="515" xml:id="C27.S12.Px1.p7.s2">
+For example, if <Math mode="inline" xml:id="C27.S12.Px1.p7.m1">2^{n}\not\equiv 2\pmod{n}</Math> , then <Math mode="inline" xml:id="C27.S12.Px1.p7.m2">n</Math> is composite.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="516" xml:id="C27.S12.Px1.p7.s3">
+Descriptions and comparisons of pseudoprime tests are given in ( , §§2.4,4.2, and 8.2) and ( , §§3.4–3.6) .
+</sentence>
+
+</para>
+
+  
+<para xml:id="C27.S12.Px1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="517" xml:id="C27.S12.Px1.p8.s1">
+A Carmichael number is a composite number <Math mode="inline" xml:id="C27.S12.Px1.p8.m1">n</Math> for which <Math mode="inline" xml:id="C27.S12.Px1.p8.m2">b^{n}\equiv b\pmod{n}</Math> for all <Math mode="inline" xml:id="C27.S12.Px1.p8.m3">b\in\mathbb{N}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="518" xml:id="C27.S12.Px1.p8.s2">
+There are infinitely many Carmichael numbers.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+            
+<section xml:id="C27.S13">
+<title>Functions</title>        
+ 
+<subsection xml:id="C27.S13.SS1">
+<title>Introduction</title>        
+  
+<para xml:id="C27.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="519" xml:id="C27.S13.SS1.p1.s1">
+Whereas multiplicative number theory is concerned with functions arising from prime factorization, additive number theory treats functions related to addition of integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="520" xml:id="C27.S13.SS1.p1.s2">
+The basic problem is that of expressing a given positive integer <Math mode="inline" xml:id="C27.S13.SS1.p1.m1">n</Math> as a sum of integers from some prescribed set <Math mode="inline" xml:id="C27.S13.SS1.p1.m2">S</Math> whose members are primes, squares, cubes, or other special integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="521" xml:id="C27.S13.SS1.p1.s3">
+Each representation of <Math mode="inline" xml:id="C27.S13.SS1.p1.m3">n</Math> as a sum of elements of <Math mode="inline" xml:id="C27.S13.SS1.p1.m4">S</Math> is called a partition of <Math mode="inline" xml:id="C27.S13.SS1.p1.m5">n</Math> , and the number <Math mode="inline" xml:id="C27.S13.SS1.p1.m6">S(n)</Math> of such partitions is often of great interest.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="522" xml:id="C27.S13.SS1.p1.s4">
+The subsections that follow describe problems from additive number theory.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="523" xml:id="C27.S13.SS1.p1.s5">
+See also ( , Chapter 14) and ( , pp. 33–34) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS2">
+<title>Goldbach Conjecture</title>           
+<para xml:id="C27.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="524" xml:id="C27.S13.SS2.p1.s1">
+Every even integer <Math mode="inline" xml:id="C27.S13.SS2.p1.m1">n&gt;4</Math> is the sum of two odd primes.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="525" xml:id="C27.S13.SS2.p1.s2">
+In this case, <Math mode="inline" xml:id="C27.S13.SS2.p1.m2">S(n)</Math> is the number of solutions of the equation <Math mode="inline" xml:id="C27.S13.SS2.p1.m3">n=p+q</Math> , where <Math mode="inline" xml:id="C27.S13.SS2.p1.m4">p</Math> and <Math mode="inline" xml:id="C27.S13.SS2.p1.m5">q</Math> are odd primes.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="526" xml:id="C27.S13.SS2.p1.s3">
+Goldbach’s assertion is that <Math mode="inline" xml:id="C27.S13.SS2.p1.m6">S(n)\geq 1</Math> for all even <Math mode="inline" xml:id="C27.S13.SS2.p1.m7">n&gt;4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="527" xml:id="C27.S13.SS2.p1.s4">
+This conjecture dates back to 1742 and was undecided in 2009, although it has been confirmed numerically up to very large numbers.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="528" xml:id="C27.S13.SS2.p1.s5">
+( ) proves that every sufficiently large odd integer is the sum of three odd primes, and ( ) shows that every sufficiently large even integer is the sum of a prime and a number with no more than two prime factors.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS2.p2">
+
+</para>
+ 
+<para xml:id="C27.S13.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="529" xml:id="C27.S13.SS2.p3.s1">
+The current status of Goldbach’s conjecture is described in theWikipedia.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS3">
+<title>Waring’s Problem</title>           
+<para xml:id="C27.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="530" xml:id="C27.S13.SS3.p1.s1">
+This problem is named after Edward Waring who, in 1770, stated without proof and with limited numerical evidence, that every positive integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m1">n</Math> is the sum of four squares, of nine cubes, of nineteen fourth powers, and so on.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="531" xml:id="C27.S13.SS3.p1.s2">
+Waring’s problem is to find, for each positive integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m2">k</Math> , whether there is an integer <Math mode="inline" xml:id="C27.S13.SS3.p1.m3">m</Math> (depending only on <Math mode="inline" xml:id="C27.S13.SS3.p1.m4">k</Math> ) such that the equation <Math equation-number="27.13.1" mode="display" xml:id="C27.S13.E1">n=x_{1}^{k}+x_{2}^{k}+\dots+x_{m}^{k}</Math> has nonnegative integer solutions for all <Math mode="inline" xml:id="C27.S13.SS3.p1.m7">n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="532" xml:id="C27.S13.SS3.p1.s3">
+The smallest <Math mode="inline" xml:id="C27.S13.SS3.p1.m8">m</Math> that exists for a given <Math mode="inline" xml:id="C27.S13.SS3.p1.m9">k</Math> is denoted by <Math mode="inline" xml:id="C27.S13.SS3.p1.m10">g\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="533" xml:id="C27.S13.SS3.p1.s4">
+Similarly, <Math mode="inline" xml:id="C27.S13.SS3.p1.m11">G\left(k\right)</Math> denotes the smallest <Math mode="inline" xml:id="C27.S13.SS3.p1.m12">m</Math> for which (LABEL:eq:NT.FNS.WAR1) has nonnegative integer solutions for all sufficiently large <Math mode="inline" xml:id="C27.S13.SS3.p1.m13">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="534" xml:id="C27.S13.SS3.p2.s1">
+( ) proves that <Math mode="inline" xml:id="C27.S13.SS3.p2.m1">g\left(2\right)=4</Math> , and during the next 139 years the existence of <Math mode="inline" xml:id="C27.S13.SS3.p2.m2">g\left(k\right)</Math> was shown for <Math mode="inline" xml:id="C27.S13.SS3.p2.m3">k=3,4,5,6,7,8,10</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="535" xml:id="C27.S13.SS3.p2.s2">
+( ) proves the existence of <Math mode="inline" xml:id="C27.S13.SS3.p2.m4">g\left(k\right)</Math> for every <Math mode="inline" xml:id="C27.S13.SS3.p2.m5">k</Math> but does not determine its corresponding numerical value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="536" xml:id="C27.S13.SS3.p2.s3">
+The exact value of <Math mode="inline" xml:id="C27.S13.SS3.p2.m6">g\left(k\right)</Math> is now known for every <Math mode="inline" xml:id="C27.S13.SS3.p2.m7">k\leq 200,000</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="537" xml:id="C27.S13.SS3.p2.s4">
+For example, <Math mode="inline" xml:id="C27.S13.SS3.p2.m8">g\left(3\right)=9</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m9">g\left(4\right)=19</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m10">g\left(5\right)=37</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m11">g\left(6\right)=73</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p2.m12">g\left(7\right)=143</Math> , and <Math mode="inline" xml:id="C27.S13.SS3.p2.m13">g\left(8\right)=279</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="538" xml:id="C27.S13.SS3.p2.s5">
+A general formula states that <Math equation-number="27.13.2" mode="display" xml:id="C27.S13.E2">g\left(k\right)\geq 2^{k}+\left\lfloor\frac{3^{k}}{2^{k}}\right\rfloor-2,</Math> for all <Math mode="inline" xml:id="C27.S13.SS3.p2.m14">k\geq 2</Math> , with equality if <Math mode="inline" xml:id="C27.S13.SS3.p2.m15">4\leq k\leq 200,000</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="539" xml:id="C27.S13.SS3.p2.s6">
+If <Math mode="inline" xml:id="C27.S13.SS3.p2.m16">3^{k}=q2^{k}+r</Math> with <Math mode="inline" xml:id="C27.S13.SS3.p2.m17">0&lt;r&lt;2^{k}</Math> , then equality holds in(LABEL:eq:NT.FNS.WAR2) provided <Math mode="inline" xml:id="C27.S13.SS3.p2.m18">r+q\leq 2^{k}</Math> , a condition that is satisfied with at most a finite number of exceptions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="540" xml:id="C27.S13.SS3.p3.s1">
+The existence of <Math mode="inline" xml:id="C27.S13.SS3.p3.m1">G\left(k\right)</Math> follows from that of <Math mode="inline" xml:id="C27.S13.SS3.p3.m2">g\left(k\right)</Math> because <Math mode="inline" xml:id="C27.S13.SS3.p3.m3">G\left(k\right)\leq g\left(k\right)</Math> , but only the values <Math mode="inline" xml:id="C27.S13.SS3.p3.m4">G\left(2\right)=4</Math> and <Math mode="inline" xml:id="C27.S13.SS3.p3.m5">G\left(4\right)=16</Math> are known exactly.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="541" xml:id="C27.S13.SS3.p3.s2">
+Some upper bounds smaller than <Math mode="inline" xml:id="C27.S13.SS3.p3.m6">g\left(k\right)</Math> are known.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="542" xml:id="C27.S13.SS3.p3.s3">
+For example, <Math mode="inline" xml:id="C27.S13.SS3.p3.m7">G\left(3\right)\leq 7</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m8">G\left(5\right)\leq 23</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m9">G\left(6\right)\leq 36</Math> , <Math mode="inline" xml:id="C27.S13.SS3.p3.m10">G\left(7\right)\leq 53</Math> , and <Math mode="inline" xml:id="C27.S13.SS3.p3.m11">G\left(8\right)\leq 73</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="543" xml:id="C27.S13.SS3.p3.s4">
+( ) conjectures that <Math mode="inline" xml:id="C27.S13.SS3.p3.m12">G\left(k\right)&lt;2k+1</Math> when <Math mode="inline" xml:id="C27.S13.SS3.p3.m13">k</Math> is not a power of 2, and that <Math mode="inline" xml:id="C27.S13.SS3.p3.m14">G\left(k\right)\leq 4k</Math> when <Math mode="inline" xml:id="C27.S13.SS3.p3.m15">k</Math> is a power of 2, but the most that is known (in 2009) is <Math mode="inline" xml:id="C27.S13.SS3.p3.m16">G\left(k\right)&lt;ck\ln k</Math> for some constant <Math mode="inline" xml:id="C27.S13.SS3.p3.m17">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="544" xml:id="C27.S13.SS3.p3.s5">
+A survey is given in ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S13.SS4">
+<title>Representation by Squares</title>        
+  
+<para xml:id="C27.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="545" xml:id="C27.S13.SS4.p1.s1">
+For a given integer <Math mode="inline" xml:id="C27.S13.SS4.p1.m1">k\geq 2</Math> the function <Math mode="inline" xml:id="C27.S13.SS4.p1.m2">r_{k}\left(n\right)</Math> is defined as the number of solutions of the equation <Math equation-number="27.13.3" mode="display" xml:id="C27.S13.E3">n=x_{1}^{2}+x_{2}^{2}+\dots+x_{k}^{2},</Math> where the <Math mode="inline" xml:id="C27.S13.SS4.p1.m4">x_{j}</Math> are integers, positive, negative, or zero, and the order of the summands is taken into account.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="546" xml:id="C27.S13.SS4.p2.s1">
+( ) notes that <Math mode="inline" xml:id="C27.S13.SS4.p2.m1">r_{2}\left(n\right)</Math> is the coefficient of <Math mode="inline" xml:id="C27.S13.SS4.p2.m2">x^{n}</Math> in the square of the theta function <Math mode="inline" xml:id="C27.S13.SS4.p2.m3">\vartheta\left(x\right)</Math> : <Math equation-number="27.13.4" mode="display" xml:id="C27.S13.E4">\vartheta\left(x\right)=1+2\sum_{m=1}^{\infty}x^{m^{2}}, subject to |x|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="547" xml:id="C27.S13.SS4.p2.s2">
+(In §LABEL:sec:TH.def.fe,
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="548" xml:id="C27.S13.SS4.p2.s3">
+<Math mode="inline" xml:id="C27.S13.SS4.p2.m4">\vartheta\left(x\right)</Math> is denoted by <Math mode="inline" xml:id="C27.S13.SS4.p2.m5">\theta_{3}\left(0,x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="549" xml:id="C27.S13.SS4.p2.s4">
+) Thus, <Math equation-number="27.13.5" mode="display" xml:id="C27.S13.E5">(\vartheta\left(x\right))^{2}=1+\sum_{n=1}^{\infty}r_{2}\left(n\right)x^{n}</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S13.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="550" xml:id="C27.S13.SS4.p3.s1">
+One of Jacobi’s identities implies that <Math equation-number="27.13.6" mode="display" xml:id="C27.S13.E6">(\vartheta\left(x\right))^{2}=1+4\sum_{n=1}^{\infty}\left(\delta_{1}(n)-\delta _{3}(n)\right)x^{n},</Math> where <Math mode="inline" xml:id="C27.S13.SS4.p3.m1">\delta_{1}(n)</Math> and <Math mode="inline" xml:id="C27.S13.SS4.p3.m2">\delta_{3}(n)</Math> are the number of divisors of <Math mode="inline" xml:id="C27.S13.SS4.p3.m3">n</Math> congruent respectively to 1 and 3 (mod 4), and by equating coefficients in (LABEL:eq:NT.FNS.TH1) and (LABEL:eq:NT.FNS.TH2) Jacobi deduced that <Math equation-number="27.13.7" mode="display" xml:id="C27.S13.E7">r_{2}\left(n\right)=4\left(\delta_{1}(n)-\delta_{3}(n)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="551" xml:id="C27.S13.SS4.p3.s2">
+Hence <Math mode="inline" xml:id="C27.S13.SS4.p3.m4">r_{2}\left(5\right)=8</Math> because both divisors, <Math mode="inline" xml:id="C27.S13.SS4.p3.m5">1</Math> and <Math mode="inline" xml:id="C27.S13.SS4.p3.m6">5</Math> , are congruent to <Math mode="inline" xml:id="C27.S13.SS4.p3.m7">1\pmod{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="552" xml:id="C27.S13.SS4.p3.s3">
+In fact, there are four representations, given by <Math mode="inline" xml:id="C27.S13.SS4.p3.m8">5=2^{2}+1^{2}=2^{2}+(-1)^{2}=(-2)^{2}+1^{2}=(-2)^{2}+(-1)^{2}</Math> , and four more with the order of summands reversed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S13.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="553" xml:id="C27.S13.SS4.p4.s1">
+By similar methods Jacobi proved that <Math mode="inline" xml:id="C27.S13.SS4.p4.m1">r_{4}\left(n\right)=8\!\sigma_{1}\left(n\right)</Math> if <Math mode="inline" xml:id="C27.S13.SS4.p4.m2">n</Math> is odd, whereas, if <Math mode="inline" xml:id="C27.S13.SS4.p4.m3">n</Math> is even, <Math mode="inline" xml:id="C27.S13.SS4.p4.m4">r_{4}\left(n\right)=24</Math> times the sum of the odd divisors of <Math mode="inline" xml:id="C27.S13.SS4.p4.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="554" xml:id="C27.S13.SS4.p4.s2">
+( ) notes that <Math mode="inline" xml:id="C27.S13.SS4.p4.m6">r_{k}\left(n\right)</Math> is the coefficient of <Math mode="inline" xml:id="C27.S13.SS4.p4.m7">x^{n}</Math> in the power-series expansion of the <Math mode="inline" xml:id="C27.S13.SS4.p4.m8">k</Math> th power of the series for <Math mode="inline" xml:id="C27.S13.SS4.p4.m9">\vartheta\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="555" xml:id="C27.S13.SS4.p4.s3">
+Explicit formulas for <Math mode="inline" xml:id="C27.S13.SS4.p4.m10">r_{k}\left(n\right)</Math> have been obtained by similar methods for <Math mode="inline" xml:id="C27.S13.SS4.p4.m11">k=6,8,10</Math> , and <Math mode="inline" xml:id="C27.S13.SS4.p4.m12">12</Math> , but they are more complicated. Exact formulas for <Math mode="inline" xml:id="C27.S13.SS4.p4.m13">r_{k}\left(n\right)</Math> have also been found for <Math mode="inline" xml:id="C27.S13.SS4.p4.m14">k=3,5</Math> , and <Math mode="inline" xml:id="C27.S13.SS4.p4.m15">7</Math> , and for all even <Math mode="inline" xml:id="C27.S13.SS4.p4.m16">k\leq 24</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="556" xml:id="C27.S13.SS4.p4.s4">
+For values of <Math mode="inline" xml:id="C27.S13.SS4.p4.m17">k&gt;24</Math> the analysis of <Math mode="inline" xml:id="C27.S13.SS4.p4.m18">r_{k}\left(n\right)</Math> is considerably more complicated (see ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="557" xml:id="C27.S13.SS4.p4.s5">
+Also, ( ) announce new infinite families of explicit formulas extending Jacobi’s identities.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="558" xml:id="C27.S13.SS4.p4.s6">
+For more than 8 squares, Milne’s identities are not the same as those obtained earlier by Mordell and others.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C27.S14">
+<title>Unrestricted Partitions</title>        
+ 
+<subsection xml:id="C27.S14.SS1">
+<title>Partition Functions</title>        
+ 
+<para xml:id="C27.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="559" xml:id="C27.S14.SS1.p1.s1">
+A fundamental problem studies the number of ways <Math mode="inline" xml:id="C27.S14.SS1.p1.m1">n</Math> can be written as a sum of positive integers <Math mode="inline" xml:id="C27.S14.SS1.p1.m2">\leq n</Math> , that is, the number of solutions of <Math equation-number="27.14.1" mode="display" xml:id="C27.S14.E1">n=a_{1}+a_{2}+\cdots, subject to a_{1}\geq a_{2}\geq\cdots\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="560" xml:id="C27.S14.SS1.p1.s2">
+The number of summands is unrestricted, repetition is allowed, and the order of the summands is not taken into account.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="561" xml:id="C27.S14.SS1.p1.s3">
+The corresponding unrestricted partition function is denoted by <Math mode="inline" xml:id="C27.S14.SS1.p1.m3">p\left(n\right)</Math> , and the summands are called parts; see §LABEL:sec:CM.RNP.def. For example, <Math mode="inline" xml:id="C27.S14.SS1.p1.m4">p\left(5\right)=7</Math> because there are exactly seven partitions of <Math mode="inline" xml:id="C27.S14.SS1.p1.m5">5</Math> : <Math mode="inline" xml:id="C27.S14.SS1.p1.m6">5=4+1=3+2=3+1+1=2+2+1=2+1+1+1=1+1+1+1+1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="562" xml:id="C27.S14.SS1.p2.s1">
+The number of partitions of <Math mode="inline" xml:id="C27.S14.SS1.p2.m1">n</Math> into at most <Math mode="inline" xml:id="C27.S14.SS1.p2.m2">k</Math> parts is denoted by <Math mode="inline" xml:id="C27.S14.SS1.p2.m3">p_{k}\left(n\right)</Math> ; again see §LABEL:sec:CM.RNP.def.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S14.SS2">
+<title>Generating Functions and Recursions</title>        
+ 
+<para xml:id="C27.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="563" xml:id="C27.S14.SS2.p1.s1">
+Euler introduced the reciprocal of the infinite product <Math equation-number="27.14.2" mode="display" xml:id="C27.S14.E2">\mathit{f}\left(x\right)=\prod_{m=1}^{\infty}(1-x^{m}), subject to |x|&lt;1,</Math> as a generating function for the function <Math mode="inline" xml:id="C27.S14.SS2.p1.m1">p\left(n\right)</Math> defined in §LABEL:sec:NT.FNS.PTa: <Math equation-number="27.14.3" mode="display" xml:id="C27.S14.E3">\frac{1}{\mathit{f}\left(x\right)}=\sum_{n=0}^{\infty}p\left(n\right)x^{n},</Math> with <Math mode="inline" xml:id="C27.S14.SS2.p1.m2">p\left(0\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="564" xml:id="C27.S14.SS2.p1.s2">
+Euler’s pentagonal number theorem states that <Math equation-number="27.14.4" mode="display" xml:id="C27.S14.E4">\mathit{f}\left(x\right)=1-x-x^{2}+x^{5}+x^{7}-x^{12}-x^{15}+\dots=1+\sum_{k=1 }^{\infty}(-1)^{k}\left(x^{\omega(k)}+x^{\omega(-k)}\right),</Math> where the exponents <Math mode="inline" xml:id="C27.S14.SS2.p1.m3">1</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m4">2</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m5">5</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m6">7</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m7">12</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m8">15</Math> , <Math mode="inline" xml:id="C27.S14.SS2.p1.m9">\dots</Math> are thepentagonal numbers, defined by <Math equation-number="27.14.5" mode="display" xml:id="C27.S14.E5">\omega(\pm k)=(3k^{2}\mp k)/2, subject to k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="565" xml:id="C27.S14.SS2.p2.s1">
+Multiplying the power series for <Math mode="inline" xml:id="C27.S14.SS2.p2.m1">\mathit{f}\left(x\right)</Math> with that for <Math mode="inline" xml:id="C27.S14.SS2.p2.m2">1/\mathit{f}\left(x\right)</Math> and equating coefficients, we obtain the recursion formula <Math equation-number="27.14.6" mode="display" xml:id="C27.S14.E6">p\left(n\right)=\sum_{k=1}^{\infty}(-1)^{k+1}\left(p\left(n-\omega(k)\right)+p \left(n-\omega(-k)\right)\right)=p\left(n-1\right)+p\left(n-2\right)-p\left(n- 5\right)-p\left(n-7\right)+\cdots,</Math> where <Math mode="inline" xml:id="C27.S14.SS2.p2.m3">p\left(k\right)</Math> is defined to be <Math mode="inline" xml:id="C27.S14.SS2.p2.m4">0</Math> if <Math mode="inline" xml:id="C27.S14.SS2.p2.m5">k&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="566" xml:id="C27.S14.SS2.p2.s2">
+Logarithmic differentiation of the generating function <Math mode="inline" xml:id="C27.S14.SS2.p2.m6">1/\mathit{f}\left(x\right)</Math> leads to another recursion: <Math equation-number="27.14.7" mode="display" xml:id="C27.S14.E7">np\left(n\right)=\sum_{k=1}^{n}\sigma_{1}\left(k\right)p\left(n-k\right),</Math> where <Math mode="inline" xml:id="C27.S14.SS2.p2.m7">\sigma_{1}\left(k\right)</Math> is defined by (LABEL:eq:NT.FU.SIG) with <Math mode="inline" xml:id="C27.S14.SS2.p2.m8">\alpha=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S14.SS3">
+<title>Asymptotic Formulas</title>          
+<para xml:id="C27.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="567" xml:id="C27.S14.SS3.p1.s1">
+These recursions can be used to calculate <Math mode="inline" xml:id="C27.S14.SS3.p1.m1">p\left(n\right)</Math> , which grows very rapidly.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="568" xml:id="C27.S14.SS3.p1.s2">
+For example, <Math mode="inline" xml:id="C27.S14.SS3.p1.m2">p\left(10\right)=42,p\left(100\right)</Math> = <Math mode="inline" xml:id="C27.S14.SS3.p1.m3">1905\;69292</Math> , and <Math mode="inline" xml:id="C27.S14.SS3.p1.m4">p\left(200\right)=397\;29990\;29388</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="569" xml:id="C27.S14.SS3.p1.s3">
+For large <Math mode="inline" xml:id="C27.S14.SS3.p1.m5">n</Math> <Math equation-number="27.14.8" mode="display" xml:id="C27.S14.E8">p\left(n\right)\sim e^{K\sqrt{n}}/(4n\sqrt{3}),</Math> where <Math mode="inline" xml:id="C27.S14.SS3.p1.m6">K=\pi\sqrt{2/3}</Math> ( ( ) ). ( ) derives a convergent series that also provides an asymptotic expansion for <Math mode="inline" xml:id="C27.S14.SS3.p1.m7">p\left(n\right)</Math> : <Math equation-number="27.14.9" mode="display" xml:id="C27.S14.E9">p\left(n\right)=\frac{1}{\pi\sqrt{2}}\sum_{k=1}^{\infty}\sqrt{k}A_{k}(n)\* \left[\frac{\mathrm{d}}{\mathrm{d}t}\frac{\sinh\left(\ifrac{K\sqrt{t}}{k} \right)}{\sqrt{t}}\right]_{t=n-(1/24)},</Math> where <Math equation-number="27.14.10" mode="display" xml:id="C27.S14.E10">A_{k}(n)=\sum_{\begin{subarray}{c}h=1\\ \left(h,k\right)=1\end{subarray}}^{k}\exp\left(\pi\mathrm{i}s(h,k)-2\pi\mathrm {i}n\frac{h}{k}\right),</Math> and <Math mode="inline" xml:id="C27.S14.SS3.p1.m8">s(h,k)</Math> is a Dedekind sum given by <Math equation-number="27.14.11" mode="display" xml:id="C27.S14.E11">s(h,k)=\sum_{r=1}^{k-1}\frac{r}{k}\left(\frac{hr}{k}-\left\lfloor\frac{hr}{k} \right\rfloor-\frac{1}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S14.SS4">
+<title>Relation to Modular Functions</title>            
+<para xml:id="C27.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="570" xml:id="C27.S14.SS4.p1.s1">
+Dedekind sums occur in the transformation theory of the Dedekind modular function <Math mode="inline" xml:id="C27.S14.SS4.p1.m1">\eta\left(\tau\right)</Math> , defined by <Math equation-number="27.14.12" mode="display" xml:id="C27.S14.E12">\eta\left(\tau\right)=e^{\pi\mathrm{i}\tau/12}\prod_{n=1}^{\infty}(1-e^{2\pi \mathrm{i}n\tau}), subject to \Im\tau&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="571" xml:id="C27.S14.SS4.p1.s2">
+This is related to the function <Math mode="inline" xml:id="C27.S14.SS4.p1.m2">\mathit{f}\left(x\right)</Math> in (LABEL:eq:NT.GF.EP) by <Math equation-number="27.14.13" mode="display" xml:id="C27.S14.E13">\eta\left(\tau\right)=e^{\pi\mathrm{i}\tau/12}\mathit{f}\left(e^{2\pi\mathrm{i }\tau}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="572" xml:id="C27.S14.SS4.p1.s3">
+<Math mode="inline" xml:id="C27.S14.SS4.p1.m3">\eta\left(\tau\right)</Math> satisfies the following functional equation: if <Math mode="inline" xml:id="C27.S14.SS4.p1.m4">a,b,c,d</Math> are integers with <Math mode="inline" xml:id="C27.S14.SS4.p1.m5">ad-bc=1</Math> and <Math mode="inline" xml:id="C27.S14.SS4.p1.m6">c&gt;0</Math> , then <Math equation-number="27.14.14" mode="display" xml:id="C27.S14.E14">\eta\left(\frac{a\tau+b}{c\tau+d}\right)=\varepsilon(-\mathrm{i}(c\tau+d))^{ \frac{1}{2}}\eta\left(\tau\right),</Math> where <Math mode="inline" xml:id="C27.S14.SS4.p1.m7">\varepsilon=\exp\left(\pi\mathrm{i}(((a+d)/(12c))-s(d,c))\right)</Math> and <Math mode="inline" xml:id="C27.S14.SS4.p1.m8">s(d,c)</Math> is given by (LABEL:eq:NT.GF.DSUM).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="573" xml:id="C27.S14.SS4.p2.s1">
+For further properties of the function <Math mode="inline" xml:id="C27.S14.SS4.p2.m1">\eta\left(\tau\right)</Math> see §§LABEL:sec:WE.15–LABEL:sec:WE.19.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S14.SS5">
+<title>Divisibility Properties</title>            
+<para xml:id="C27.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="574" xml:id="C27.S14.SS5.p1.s1">
+( ) gives identities that imply divisibility properties of the partition function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="575" xml:id="C27.S14.SS5.p1.s2">
+For example, the Ramanujan identity <Math equation-number="27.14.15" mode="display" xml:id="C27.S14.E15">5\frac{(\mathit{f}\left(x^{5}\right))^{5}}{(\mathit{f}\left(x\right))^{6}}= \sum_{n=0}^{\infty}p\left(5n+4\right)x^{n}</Math> implies <Math mode="inline" xml:id="C27.S14.SS5.p1.m1">p\left(5n+4\right)\equiv 0\pmod{5}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="576" xml:id="C27.S14.SS5.p1.s3">
+Ramanujan also found that <Math mode="inline" xml:id="C27.S14.SS5.p1.m2">p\left(7n+5\right)\equiv 0\pmod{7}</Math> and <Math mode="inline" xml:id="C27.S14.SS5.p1.m3">p\left(11n+6\right)\equiv 0\pmod{11}</Math> for all <Math mode="inline" xml:id="C27.S14.SS5.p1.m4">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="577" xml:id="C27.S14.SS5.p1.s4">
+After decades of nearly fruitless searching for further congruences of this type, it was believed that no others existed, until it was shown in ( ) that there are infinitely many.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="578" xml:id="C27.S14.SS5.p1.s5">
+Ono proved that for every prime <Math mode="inline" xml:id="C27.S14.SS5.p1.m5">q&gt;3</Math> there are integers <Math mode="inline" xml:id="C27.S14.SS5.p1.m6">a</Math> and <Math mode="inline" xml:id="C27.S14.SS5.p1.m7">b</Math> such that <Math mode="inline" xml:id="C27.S14.SS5.p1.m8">p\left(an+b\right)\equiv 0\pmod{q}</Math> for all <Math mode="inline" xml:id="C27.S14.SS5.p1.m9">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="579" xml:id="C27.S14.SS5.p1.s6">
+For example, <Math mode="inline" xml:id="C27.S14.SS5.p1.m10">p\left(1575\;25693n+1\;11247\right)\equiv 0\pmod{13}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C27.S14.SS6">
+<title>Ramanujan’s Tau Function</title>             
+ 
+<para xml:id="C27.S14.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="580" xml:id="C27.S14.SS6.p1.s1">
+The discriminant function <Math mode="inline" xml:id="C27.S14.SS6.p1.m1">\Delta\left(\tau\right)</Math> is defined by <Math equation-number="27.14.16" mode="display" xml:id="C27.S14.E16">\Delta\left(\tau\right)=(2\pi)^{12}(\eta\left(\tau\right))^{24}, subject to \Im\tau&gt;0,</Math> and satisfies the functional equation <Math equation-number="27.14.17" mode="display" xml:id="C27.S14.E17">\Delta\left(\frac{a\tau+b}{c\tau+d}\right)=(c\tau+d)^{12}\Delta\left(\tau \right),</Math> if <Math mode="inline" xml:id="C27.S14.SS6.p1.m2">a,b,c,d</Math> are integers with <Math mode="inline" xml:id="C27.S14.SS6.p1.m3">ad-bc=1</Math> and <Math mode="inline" xml:id="C27.S14.SS6.p1.m4">c&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S14.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="581" xml:id="C27.S14.SS6.p2.s1">
+The 24th power of <Math mode="inline" xml:id="C27.S14.SS6.p2.m1">\eta\left(\tau\right)</Math> in (LABEL:eq:NT.GF.ETA) with <Math mode="inline" xml:id="C27.S14.SS6.p2.m2">e^{2\pi\mathrm{i}\tau}=x</Math> is an infinite product that generates a power series in <Math mode="inline" xml:id="C27.S14.SS6.p2.m3">x</Math> with integer coefficients called Ramanujan’s tau function <Math mode="inline" xml:id="C27.S14.SS6.p2.m4">\tau\left(n\right)</Math> : <Math equation-number="27.14.18" mode="display" xml:id="C27.S14.E18">x\prod_{n=1}^{\infty}(1-x^{n})^{24}=\sum_{n=1}^{\infty}\tau\left(n\right)x^{n}, subject to |x|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="582" xml:id="C27.S14.SS6.p2.s2">
+The tau function is multiplicative and satisfies the more general relation: <Math equation-number="27.14.19" mode="display" xml:id="C27.S14.E19">\tau\left(m\right)\tau\left(n\right)=\sum_{d\mathbin{|}\left(m,n\right)}d^{11} \tau\left(\frac{mn}{d^{2}}\right), subject to m,n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="583" xml:id="C27.S14.SS6.p2.s3">
+( ) conjectures that <Math mode="inline" xml:id="C27.S14.SS6.p2.m5">\tau\left(n\right)</Math> is never 0 and verifies this for all <Math mode="inline" xml:id="C27.S14.SS6.p2.m6">n&lt;21\;49286\;39999</Math> by studying various congruences satisfied by <Math mode="inline" xml:id="C27.S14.SS6.p2.m7">\tau\left(n\right)</Math> , for example: <Math equation-number="27.14.20" mode="display" xml:id="C27.S14.E20">\tau\left(n\right)\equiv\sigma_{11}\left(n\right)\pmod{691}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S14.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="584" xml:id="C27.S14.SS6.p3.s1">
+For further information on partitions and generating functions see ( ) ; also §§LABEL:sec:QH.2–LABEL:sec:QH.15,and §§LABEL:sec:CM.RNP–LABEL:sec:CM.OR.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C27.S15">
+<title>Chinese Remainder Theorem</title>        
+  
+<para xml:id="C27.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="585" xml:id="C27.S15.p1.s1">
+The Chinese remainder theorem states that a system of congruences <Math mode="inline" xml:id="C27.S15.p1.m1">x\equiv a_{1}\pmod{m_{1}},\dots,x\equiv a_{k}\pmod{m_{k}}</Math> , always has a solution if the moduli are relatively prime in pairs; the solution is unique (mod <Math mode="inline" xml:id="C27.S15.p1.m2">m</Math> ), where <Math mode="inline" xml:id="C27.S15.p1.m3">m</Math> is the product of the moduli.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="586" xml:id="C27.S15.p2.s1">
+This theorem is employed to increase efficiency in calculating with large numbers by making use of smaller numbers in most of the calculation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="587" xml:id="C27.S15.p2.s2">
+For example, suppose a lengthy calculation involves many 10-digit integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="588" xml:id="C27.S15.p2.s3">
+Most of the calculation can be done with five-digit integers as follows.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="589" xml:id="C27.S15.p2.s4">
+Choose fourrelatively prime moduli <Math mode="inline" xml:id="C27.S15.p2.m1">m_{1},m_{2},m_{3}</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m2">m_{4}</Math> of five digits each, for example <Math mode="inline" xml:id="C27.S15.p2.m3">2^{16}-3</Math> , <Math mode="inline" xml:id="C27.S15.p2.m4">2^{16}-1</Math> , <Math mode="inline" xml:id="C27.S15.p2.m5">2^{16}+1</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m6">2^{16}+3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="590" xml:id="C27.S15.p2.s5">
+Their product <Math mode="inline" xml:id="C27.S15.p2.m7">m</Math> has 20 digits, twice the number of digits in the data.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="591" xml:id="C27.S15.p2.s6">
+By the Chinese remainder theorem each integer in the data can be uniquely represented by its residues (mod <Math mode="inline" xml:id="C27.S15.p2.m8">m_{1}</Math> ), (mod <Math mode="inline" xml:id="C27.S15.p2.m9">m_{2}</Math> ), (mod <Math mode="inline" xml:id="C27.S15.p2.m10">m_{3}</Math> ), and (mod <Math mode="inline" xml:id="C27.S15.p2.m11">m_{4}</Math> ), respectively.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="592" xml:id="C27.S15.p2.s7">
+Because each residue has no more than five digits, the arithmetic can be performed efficiently on these residues with respect to each of the moduli, yielding answers <Math mode="inline" xml:id="C27.S15.p2.m12">a_{1}\pmod{m_{1}}</Math> , <Math mode="inline" xml:id="C27.S15.p2.m13">a_{2}\pmod{m_{2}}</Math> , <Math mode="inline" xml:id="C27.S15.p2.m14">a_{3}\pmod{m_{3}}</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m15">a_{4}\pmod{m_{4}}</Math> , where each <Math mode="inline" xml:id="C27.S15.p2.m16">a_{j}</Math> has no more than five digits.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="593" xml:id="C27.S15.p2.s8">
+These numbers, in turn, are combined by the Chinese remainder theorem to obtain the final result <Math mode="inline" xml:id="C27.S15.p2.m17">\pmod{m}</Math> , which is correct to 20 digits.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="594" xml:id="C27.S15.p3.s1">
+Even though the lengthy calculation is repeated four times, once for each modulus, most of it only uses five-digit integers and is accomplished quickly without overwhelming the machine’s memory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="595" xml:id="C27.S15.p3.s2">
+Details of a machine program describing the method together with typical numerical results can be found in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="596" xml:id="C27.S15.p3.s3">
+See also ( , pp. 18–19) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S16">
+<title>Cryptography</title>        
+ 
+   
+<para xml:id="C27.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="597" xml:id="C27.S16.p1.s1">
+Applications to cryptography rely on the disparity in computer time required to find large primes and to factor large integers.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="598" xml:id="C27.S16.p2.s1">
+For example, a code maker chooses two large primes <Math mode="inline" xml:id="C27.S16.p2.m1">p</Math> and <Math mode="inline" xml:id="C27.S16.p2.m2">q</Math> of about 400 decimal digits each.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="599" xml:id="C27.S16.p2.s2">
+Procedures for finding such primes require very little computer time.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="600" xml:id="C27.S16.p2.s3">
+The primes are kept secret but their product <Math mode="inline" xml:id="C27.S16.p2.m3">n=pq</Math> , an 800-digit number, is made public.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="601" xml:id="C27.S16.p2.s4">
+For this reason, these are often called public key codes.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="602" xml:id="C27.S16.p2.s5">
+Messages are coded by a method (described below) that requires only the knowledge of <Math mode="inline" xml:id="C27.S16.p2.m4">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="603" xml:id="C27.S16.p2.s6">
+But to decode, both factors <Math mode="inline" xml:id="C27.S16.p2.m5">p</Math> and <Math mode="inline" xml:id="C27.S16.p2.m6">q</Math> must be known.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="604" xml:id="C27.S16.p2.s7">
+With the most efficient computer techniques devised to date (2010), factoring an 800-digit number may require billions of years on a single computer.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="605" xml:id="C27.S16.p2.s8">
+For this reason, the codes are considered unbreakable, at least with the current state of knowledge on factoring large numbers.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S16.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="606" xml:id="C27.S16.p3.s1">
+To code a message by this method, we replace each letter by two digits, say <Math mode="inline" xml:id="C27.S16.p3.m1">A=01</Math> , <Math mode="inline" xml:id="C27.S16.p3.m2">B=02</Math> , <Math mode="inline" xml:id="C27.S16.p3.m3">\dots</Math> , <Math mode="inline" xml:id="C27.S16.p3.m4">Z=26</Math> , and divide the message into pieces of convenient length smaller than the public value <Math mode="inline" xml:id="C27.S16.p3.m5">n=pq</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="607" xml:id="C27.S16.p3.s2">
+Choose a prime <Math mode="inline" xml:id="C27.S16.p3.m6">r</Math> that does not divide either <Math mode="inline" xml:id="C27.S16.p3.m7">p-1</Math> or <Math mode="inline" xml:id="C27.S16.p3.m8">q-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="608" xml:id="C27.S16.p3.s3">
+Like <Math mode="inline" xml:id="C27.S16.p3.m9">n</Math> , the prime <Math mode="inline" xml:id="C27.S16.p3.m10">r</Math> is made public.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="609" xml:id="C27.S16.p3.s4">
+To code a piece <Math mode="inline" xml:id="C27.S16.p3.m11">x</Math> , raise <Math mode="inline" xml:id="C27.S16.p3.m12">x</Math> to the power <Math mode="inline" xml:id="C27.S16.p3.m13">r</Math> and reduce <Math mode="inline" xml:id="C27.S16.p3.m14">x^{r}</Math> modulo <Math mode="inline" xml:id="C27.S16.p3.m15">n</Math> to obtain an integer <Math mode="inline" xml:id="C27.S16.p3.m16">y</Math> (the coded form of <Math mode="inline" xml:id="C27.S16.p3.m17">x</Math> ) between <Math mode="inline" xml:id="C27.S16.p3.m18">1</Math> and <Math mode="inline" xml:id="C27.S16.p3.m19">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="610" xml:id="C27.S16.p3.s5">
+Thus, <Math mode="inline" xml:id="C27.S16.p3.m20">y\equiv x^{r}\pmod{n}</Math> and <Math mode="inline" xml:id="C27.S16.p3.m21">1\leq y&lt;n</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S16.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="611" xml:id="C27.S16.p4.s1">
+To decode, we must recover <Math mode="inline" xml:id="C27.S16.p4.m1">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m2">y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="612" xml:id="C27.S16.p4.s2">
+To do this, let <Math mode="inline" xml:id="C27.S16.p4.m3">s</Math> denote the reciprocal of <Math mode="inline" xml:id="C27.S16.p4.m4">r</Math> modulo <Math mode="inline" xml:id="C27.S16.p4.m5">\phi\left(n\right)</Math> , so that <Math mode="inline" xml:id="C27.S16.p4.m6">rs=1+t\phi\left(n\right)</Math> for some integer <Math mode="inline" xml:id="C27.S16.p4.m7">t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="613" xml:id="C27.S16.p4.s3">
+(Here <Math mode="inline" xml:id="C27.S16.p4.m8">\phi\left(n\right)</Math> is Euler’s totient (§LABEL:sec:NT.FU).)By the Euler–Fermat theorem (LABEL:eq:NT.FU.EF), <Math mode="inline" xml:id="C27.S16.p4.m9">x^{\phi\left(n\right)}\equiv 1\pmod{n}</Math> ; hence <Math mode="inline" xml:id="C27.S16.p4.m10">x^{t\phi\left(n\right)}\equiv 1\pmod{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="614" xml:id="C27.S16.p4.s4">
+But <Math mode="inline" xml:id="C27.S16.p4.m11">y^{s}\equiv x^{rs}\equiv x^{1+t\phi\left(n\right)}\equiv x\pmod{n}</Math> , so <Math mode="inline" xml:id="C27.S16.p4.m12">y^{s}</Math> is the same as <Math mode="inline" xml:id="C27.S16.p4.m13">x</Math> modulo <Math mode="inline" xml:id="C27.S16.p4.m14">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="615" xml:id="C27.S16.p4.s5">
+In other words, to recover <Math mode="inline" xml:id="C27.S16.p4.m15">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m16">y</Math> we simply raise <Math mode="inline" xml:id="C27.S16.p4.m17">y</Math> to the power <Math mode="inline" xml:id="C27.S16.p4.m18">s</Math> and reduce modulo <Math mode="inline" xml:id="C27.S16.p4.m19">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="616" xml:id="C27.S16.p4.s6">
+If <Math mode="inline" xml:id="C27.S16.p4.m20">p</Math> and <Math mode="inline" xml:id="C27.S16.p4.m21">q</Math> are known, <Math mode="inline" xml:id="C27.S16.p4.m22">s</Math> and <Math mode="inline" xml:id="C27.S16.p4.m23">y^{s}</Math> can be determined (mod <Math mode="inline" xml:id="C27.S16.p4.m24">n</Math> ) by straightforward calculations that require only a few minutes of machine time.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="617" xml:id="C27.S16.p4.s7">
+But if <Math mode="inline" xml:id="C27.S16.p4.m25">p</Math> and <Math mode="inline" xml:id="C27.S16.p4.m26">q</Math> are not known, the problem of recovering <Math mode="inline" xml:id="C27.S16.p4.m27">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m28">y</Math> seems insurmountable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S16.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="618" xml:id="C27.S16.p5.s1">
+For further information see ( , p. 24) , and for other applications to cryptography see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S17">
+<title>Other Applications</title>        
+   
+<para xml:id="C27.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="619" xml:id="C27.S17.p1.s1">
+( , pp. 458–470) describes a number-theoretic approach to Fourier analysis (called the arithmetic Fourier transform) that uses the Möbius inversion (LABEL:eq:NT.INV.ALT2) to increase efficiency in computing coefficients of Fourier series.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="620" xml:id="C27.S17.p2.s1">
+Congruences are used in constructing perpetual calendars, splicing telephone cables, scheduling round-robin tournaments, devising systematic methods for storing computer files, and generating pseudorandom numbers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="621" xml:id="C27.S17.p2.s2">
+( , Chapters 5 and 10) describes many of these applications.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="622" xml:id="C27.S17.p2.s3">
+( ) uses congruences to construct magic squares.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="623" xml:id="C27.S17.p3.s1">
+There are also applications of number theory in many diverse areas, including physics, biology, chemistry, communications, and art.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="624" xml:id="C27.S17.p3.s2">
+( ) describes many of these applications, including the design of concert hall ceilings to scatter sound into broad lateral patterns for improved acoustic quality, precise measurements of delays of radar echoes from Venus and Mercury to confirm one of the relativistic effects predicted by Einstein’s theory of general relativity, and the use of primes in creating artistic graphical designs.
+</sentence>
+
+</para>
+ 
+</section>
+            
+<section xml:id="C27.S18">
+<title>Methods of Computation: Primes</title>        
+  
+<para xml:id="C27.S18.p1">
+
+</para>
+ 
+<para xml:id="C27.S18.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="625" xml:id="C27.S18.p2.s1">
+An overview of methods for precise counting of the number of primes not exceeding an arbitrary integer <Math mode="inline" xml:id="C27.S18.p2.m1">x</Math> is given in ( , §3.7) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="626" xml:id="C27.S18.p2.s2">
+T. Oliveira e Silva has calculated <Math mode="inline" xml:id="C27.S18.p2.m2">\pi\left(x\right)</Math> for <Math mode="inline" xml:id="C27.S18.p2.m3">x=10^{23}</Math> , using the combinatorial methods of ( ) and ( ) ; see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="627" xml:id="C27.S18.p2.s3">
+An analytic approach using a contour integral of the Riemann zeta function (§LABEL:sec:ZE.Def.Def) is discussed in ( ) .
+</sentence>
+
+</para>
+
+   
+<para xml:id="C27.S18.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="628" xml:id="C27.S18.p3.s1">
+The Sieve of Eratosthenes ( ( , §3.2) ) generates a list of all primes below a given bound.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="629" xml:id="C27.S18.p3.s2">
+An alternative procedure is thebinary quadratic sieve of Atkin and Bernstein ( ( , p. 170) ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="630" xml:id="C27.S18.p4.s1">
+For small values of <Math mode="inline" xml:id="C27.S18.p4.m1">n</Math> , primality is proven by showing that <Math mode="inline" xml:id="C27.S18.p4.m2">n</Math> is not divisible by any prime not exceeding <Math mode="inline" xml:id="C27.S18.p4.m3">\sqrt{n}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S18.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="631" xml:id="C27.S18.p5.s1">
+Two simple algorithms for proving primality require a knowledge of all or part of the factorization of <Math mode="inline" xml:id="C27.S18.p5.m1">n-1,n+1</Math> , or both; see ( , §§4.1–4.2) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="632" xml:id="C27.S18.p5.s2">
+These algorithms are used for testing primality of Mersenne numbers, <Math mode="inline" xml:id="C27.S18.p5.m2">2^{n}-1</Math> , and Fermat numbers, <Math mode="inline" xml:id="C27.S18.p5.m3">2^{2^{n}}+1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="633" xml:id="C27.S18.p6.s1">
+The APR (Adleman–Pomerance–Rumely) algorithm for primality testing is based on Jacobi sums.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="634" xml:id="C27.S18.p6.s2">
+It runs in time <Math mode="inline" xml:id="C27.S18.p6.m1">O\left((\ln n)^{c\ln\ln\ln n}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="635" xml:id="C27.S18.p6.s3">
+Explanations are given in ( , §9.1) and ( , §4.4) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="636" xml:id="C27.S18.p6.s4">
+A practical version is described in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="637" xml:id="C27.S18.p7.s1">
+The AKS (Agrawal–Kayal–Saxena) algorithm is the first deterministic, polynomial-time, primality test.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="638" xml:id="C27.S18.p7.s2">
+That is to say, it runs in time <Math mode="inline" xml:id="C27.S18.p7.m1">O\left((\ln n)^{c}\right)</Math> for some constant <Math mode="inline" xml:id="C27.S18.p7.m2">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="639" xml:id="C27.S18.p7.s3">
+An explanation is given in ( , §4.5) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="640" xml:id="C27.S18.p8.s1">
+The ECPP (Elliptic Curve Primality Proving) algorithm handles primes with over 20,000 digits.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="641" xml:id="C27.S18.p8.s2">
+Explanations are given in ( , §9.2) and ( , §7.6) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S19">
+<title>Methods of Computation: Factorization</title>        
+  
+<para xml:id="C27.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="642" xml:id="C27.S19.p1.s1">
+Techniques for factorization of integers fall into three general classes:Deterministic algorithms, Type I probabilistic algorithms whose expected running time depends on the size of the smallest prime factor, andType II probabilistic algorithms whose expected running time depends on the size of the number to be factored.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="643" xml:id="C27.S19.p2.s1">
+Deterministic algorithms are slow but are guaranteed to find the factorizationwithin a known period of time.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="644" xml:id="C27.S19.p2.s2">
+Trial division is one example.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="645" xml:id="C27.S19.p2.s3">
+Fermat’s algorithm is another; see ( , §5.1) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="646" xml:id="C27.S19.p3.s1">
+Type I probabilistic algorithms include the Brent–Pollard rho algorithm (also called Monte Carlo method), the Pollard <Math mode="inline" xml:id="C27.S19.p3.m1">p-1</Math> algorithm, and the Elliptic Curve Method (ecm).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="647" xml:id="C27.S19.p3.s2">
+Descriptions of these algorithms are given in ( , §§5.2, 5.4, and 7.4) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="648" xml:id="C27.S19.p3.s3">
+As of January 2009 the largest prime factors found by these methods are a 19-digit prime for Brent–Pollard rho, a 58-digit prime for Pollard <Math mode="inline" xml:id="C27.S19.p3.m2">p-1</Math> , and a 67-digit prime for ecm.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S19.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="649" xml:id="C27.S19.p4.s1">
+Type II probabilistic algorithms for factoring <Math mode="inline" xml:id="C27.S19.p4.m1">n</Math> rely on finding a pseudo-random pair of integers <Math mode="inline" xml:id="C27.S19.p4.m2">(x,y)</Math> that satisfy <Math mode="inline" xml:id="C27.S19.p4.m3">x^{2}\equiv y^{2}\pmod{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="650" xml:id="C27.S19.p4.s2">
+These algorithms include the Continued Fraction Algorithm (cfrac), the Multiple Polynomial Quadratic Sieve (mpqs), the General Number Field Sieve (gnfs), and the Special Number Field Sieve (snfs).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="651" xml:id="C27.S19.p4.s3">
+A description of cfrac is given in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="652" xml:id="C27.S19.p4.s4">
+Descriptions of mpqs, gnfs, and snfs are given in ( , §§6.1 and 6.2) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="653" xml:id="C27.S19.p4.s5">
+As of January 2009 the snfs holds the record for the largest integer that has been factored by a Type II probabilistic algorithm, a 307-digit composite integer.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="654" xml:id="C27.S19.p4.s6">
+The snfs can be applied only to numbers that are very close to a power of a very small base.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="655" xml:id="C27.S19.p4.s7">
+The largest composite numbers that have been factored by other Type II probabilistic algorithms are a 63-digit integer bycfrac, a 135-digit integer by mpqs, and a 182-digit integer bygnfs.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="656" xml:id="C27.S19.p5.s1">
+For further information see ( ) and §LABEL:sec:CM.SW.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p6">
+
+</para>
+ 
+<para xml:id="C27.S19.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="657" xml:id="C27.S19.p7.s1">
+For current records see Cunningham Project.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S20">
+<title>Methods of Computation: Other Number-Theoretic Functions</title>          
+<para xml:id="C27.S20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="658" xml:id="C27.S20.p1.s1">
+To calculate a multiplicative function it suffices to determine its values at the prime powers and then use (LABEL:eq:NT.MUL.PROD).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="659" xml:id="C27.S20.p1.s2">
+For a completely multiplicative function we use the values at the primes together with (LABEL:eq:NT.MUL.CMPROD).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S20.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="660" xml:id="C27.S20.p2.s1">
+The recursion formulas (LABEL:eq:NT.GF.REC) and (LABEL:eq:NT.GF.REC1) can be used tocalculate the partition function <Math mode="inline" xml:id="C27.S20.p2.m1">p\left(n\right)</Math> for <Math mode="inline" xml:id="C27.S20.p2.m2">n&lt;N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="661" xml:id="C27.S20.p2.s2">
+See ( ) , and ( , pp. 5–83) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="662" xml:id="C27.S20.p2.s3">
+To compute a particular value <Math mode="inline" xml:id="C27.S20.p2.m3">p\left(n\right)</Math> it is better to use the Hardy-Ramanujan-Radematcher series (LABEL:eq:NT.GF.RAD).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="663" xml:id="C27.S20.p2.s4">
+See ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S20.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="664" xml:id="C27.S20.p3.s1">
+A recursion formula obtained by differentiating (LABEL:eq:NT.GF.TAU) can be used to calculate Ramanujan’s function <Math mode="inline" xml:id="C27.S20.p3.m1">\tau\left(n\right)</Math> , and the values can be checked by the congruence (LABEL:eq:NT.GF.TAU2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="665" xml:id="C27.S20.p3.s2">
+See ( , pp. 483–492) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S21">
+<title>Tables</title>        
+   
+<para xml:id="C27.S21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="666" xml:id="C27.S21.p1.s1">
+( ) lists all primes up to 100 06721.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="667" xml:id="C27.S21.p1.s2">
+( , pp. 103–104) supplies tables and graphs that compare <Math mode="inline" xml:id="C27.S21.p1.m1">\pi\left(x\right),\ifrac{x}{\ln x}</Math> , and <Math mode="inline" xml:id="C27.S21.p1.m2">\mathrm{li}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="668" xml:id="C27.S21.p1.s3">
+( ) contains four tables: Table I tabulates, for all <Math mode="inline" xml:id="C27.S21.p1.m3">n\leq 10^{4}</Math> : (a) the canonical factorization of <Math mode="inline" xml:id="C27.S21.p1.m4">n</Math> into powers of primes; (b) the Euler totient <Math mode="inline" xml:id="C27.S21.p1.m5">\phi\left(n\right)</Math> ; (c) the divisor function <Math mode="inline" xml:id="C27.S21.p1.m6">d\left(n\right)</Math> ; (d) the sum <Math mode="inline" xml:id="C27.S21.p1.m7">\sigma(n)</Math> of these divisors.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="669" xml:id="C27.S21.p1.s4">
+Table II lists all solutions <Math mode="inline" xml:id="C27.S21.p1.m8">n</Math> of the equation <Math mode="inline" xml:id="C27.S21.p1.m9">\mathit{f}\left(n\right)=m</Math> for all <Math mode="inline" xml:id="C27.S21.p1.m10">m\leq 2500</Math> , where <Math mode="inline" xml:id="C27.S21.p1.m11">\mathit{f}\left(n\right)</Math> is defined by (LABEL:eq:NT.GF.EP).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="670" xml:id="C27.S21.p1.s5">
+Table III lists all solutions <Math mode="inline" xml:id="C27.S21.p1.m12">n\leq 10^{4}</Math> of the equation <Math mode="inline" xml:id="C27.S21.p1.m13">d\left(n\right)=m</Math> , and Table IV lists all solutions <Math mode="inline" xml:id="C27.S21.p1.m14">n</Math> of the equation <Math mode="inline" xml:id="C27.S21.p1.m15">\sigma(n)=m</Math> for all <Math mode="inline" xml:id="C27.S21.p1.m16">m\leq 10^{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="671" xml:id="C27.S21.p1.s6">
+Table 24.7 of ( ) also lists the factorizations in Glaisher’s Table I(a); Table 24.6 lists <Math mode="inline" xml:id="C27.S21.p1.m17">\phi\left(n\right),d\left(n\right)</Math> , and <Math mode="inline" xml:id="C27.S21.p1.m18">\sigma(n)</Math> for <Math mode="inline" xml:id="C27.S21.p1.m19">n\leq 1000</Math> ; Table 24.8gives examples of primitive rootsof all primes <Math mode="inline" xml:id="C27.S21.p1.m20">\leq 9973</Math> ; Table 24.9 lists all primes that are less than 1 00000.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S21.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="672" xml:id="C27.S21.p2.s1">
+The partition function <Math mode="inline" xml:id="C27.S21.p2.m1">p\left(n\right)</Math> is tabulated in ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="673" xml:id="C27.S21.p2.s2">
+Tables of the Ramanujan function <Math mode="inline" xml:id="C27.S21.p2.m2">\tau\left(n\right)</Math> are published in ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="674" xml:id="C27.S21.p2.s3">
+( ) gives a comprehensive account of tables in the theory of numbers, including virtually every table published from 1918 to 1941.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="675" xml:id="C27.S21.p2.s4">
+Those published prior to 1918 are mentioned in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="676" xml:id="C27.S21.p2.s5">
+The bibliography in ( ) gives references to the places in Dickson’s History where the older tables are cited. ( ) also has a section that supplies errata and corrections to all tables cited.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S21.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="677" xml:id="C27.S21.p3.s1">
+No sequel to ( ) exists to date, but many tables of functions of number theory are included in ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C27.S22">
+<title>Software</title>         
+<para xml:id="C27.S22.p1">
+
+</para>
+
+ 
+<para xml:id="C27.S22.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="678" xml:id="C27.S22.p2.s1">
+In this section we provide links to the known sources of software for factorization and primality testing, as well as additional Web-based resources for information on these topics.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S22.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="679" xml:id="C27.S22.p3.s1">
+.isprime combines a strong pseudoprime test and a Lucas pseudoprime test.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="680" xml:id="C27.S22.p3.s2">
+ifactor usescfrac (§LABEL:sec:NT.FA) after exhausting trial division.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="681" xml:id="C27.S22.p3.s3">
+Brent–Pollard rho, Square Forms Factorization, and ecm are available also; see §LABEL:sec:NT.FA.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="682" xml:id="C27.S22.p3.s4">
+.PrimeQ combines strong pseudoprime tests for the bases 2 and 3 and a Lucas pseudoprime test.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="683" xml:id="C27.S22.p3.s5">
+No known composite numbers pass these three tests, and ( ) has shown that this combination of tests proves primality for integers below <Math mode="inline" xml:id="C27.S22.I1.i2.p1.m1">10^{16}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="684" xml:id="C27.S22.p3.s6">
+Provable PrimeQ uses the Atkin–Goldwasser–Kilian–Morain Elliptic Curve Method to prove primality.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="685" xml:id="C27.S22.p3.s7">
+FactorInteger tries Brent–Pollard rho, Pollard <Math mode="inline" xml:id="C27.S22.I1.i2.p1.m2">p-1</Math> , and then cfrac after trial division.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="686" xml:id="C27.S22.p3.s8">
+See §LABEL:sec:NT.FA.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="687" xml:id="C27.S22.p3.s9">
+ecm is available also, and the Multiple Polynomial Quadratic sieve is expected in a future release.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="688" xml:id="C27.S22.p3.s10">
+For additional Mathematica routines for factorization and primality testing, including several different pseudoprime tests, see ( ) . .
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="689" xml:id="C27.S22.p3.s11">
+This includes updates of factorization records. .
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="690" xml:id="C27.S22.p3.s12">
+Links to software for elliptic curve methods of factorization and primalitytesting. .
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="691" xml:id="C27.S22.p3.s13">
+This includes updates of the largest known Mersenne prime. .
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="692" xml:id="C27.S22.p3.s14">
+References and links to software for factorization and primality testing. .
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="693" xml:id="C27.S22.p3.s15">
+Information on primes, primality testing, and factorization including links to programs and lists of primes. .
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="694" xml:id="C27.S22.p3.s16">
+Descriptions, references, andMathematica algorithms for factorization and primality testing.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

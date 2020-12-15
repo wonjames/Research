@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S19">
+<title>Taylor and Related Series</title>          
+<para xml:id="C19.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S19.p1.s1">
+For <Math mode="inline" xml:id="C19.S19.p1.m1">N=0,1,2,\dots</Math> define the homogeneous hypergeometric polynomial <Math equation-number="19.19.1" mode="display" xml:id="C19.S19.E1">T_{N}(\mathbf{b},\mathbf{z})=\sum\frac{{\left(b_{1}\right)_{m_{1}}}\cdots{ \left(b_{n}\right)_{m_{n}}}}{m_{1}!\cdots m_{n}!}z_{1}^{m_{1}}\cdots z_{n}^{m_ {n}},</Math> where the summation extends over all nonnegative integers <Math mode="inline" xml:id="C19.S19.p1.m2">m_{1},\dots,m_{n}</Math> whose sum is <Math mode="inline" xml:id="C19.S19.p1.m3">N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S19.p1.s2">
+The following two multivariate hypergeometric series apply to each of the integrals (19.16.14)–(19.16.18) and (19.16.20)–(19.16.23):
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S19.p1.s3">
+<Math equation-number="19.19.2" mode="display" xml:id="C19.S19.E2">R_{-a}\left(\mathbf{b};\mathbf{z}\right)=\sum_{N=0}^{\infty}\frac{{\left(a \right)_{N}}}{{\left(c\right)_{N}}}T_{N}(\mathbf{b},\boldsymbol{{1}}-\mathbf{z }), if c=\sum_{j=1}^{n}b_{j}, |1-z_{j}|&lt;1,</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C19.S19.p2.s1">
+ <Math equation-number="19.19.3" mode="display" xml:id="C19.S19.E3">R_{-a}\left(\mathbf{b};\mathbf{z}\right)=z_{n}^{-a}\sum_{N=0}^{\infty}\frac{{ \left(a\right)_{N}}}{{\left(c\right)_{N}}}\*{T_{N}(b_{1},\dots,b_{n-1};1-(z_{1 }/z_{n}),\dots,1-(z_{n-1}/z_{n}))}, if c=\sum_{j=1}^{n}b_{j}, |1-(z_{j}/z_{n})|&lt;1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S19.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S19.p3.s1">
+If <Math mode="inline" xml:id="C19.S19.p3.m1">n=2</Math> , then (19.19.3) is a Gauss hypergeometric series (see (19.25.43) and (15.2.1)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S19.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S19.p4.s1">
+Define the elementary symmetric function <Math mode="inline" xml:id="C19.S19.p4.m1">E_{s}(\mathbf{z})</Math> by <Math equation-number="19.19.4" mode="display" xml:id="C19.S19.E4">\prod_{j=1}^{n}(1+tz_{j})=\sum_{s=0}^{n}t^{s}E_{s}(\mathbf{z}),</Math> and define the <Math mode="inline" xml:id="C19.S19.p4.m2">n</Math> -tuple <Math mode="inline" xml:id="C19.S19.p4.m3">\mathbf{\tfrac{1}{2}}=(\tfrac{1}{2},\dots,\tfrac{1}{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C19.S19.p4.s2">
+Then <Math equation-number="19.19.5" mode="display" xml:id="C19.S19.E5">T_{N}(\mathbf{\tfrac{1}{2}},\mathbf{z})=\sum(-1)^{M+N}{\left(\tfrac{1}{2} \right)_{M}}\frac{E_{1}^{m_{1}}(\mathbf{z})\cdots E_{n}^{m_{n}}(\mathbf{z})}{m _{1}!\cdots m_{n}!}</Math> , where <Math mode="inline" xml:id="C19.S19.p4.m4">M=\sum_{j=1}^{n}m_{j}</Math> and the summation extends over all nonnegative integers <Math mode="inline" xml:id="C19.S19.p4.m5">m_{1},\dots,m_{n}</Math> such that <Math mode="inline" xml:id="C19.S19.p4.m6">\sum_{j=1}^{n}jm_{j}=N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S19.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C19.S19.p5.s1">
+This form of <Math mode="inline" xml:id="C19.S19.p5.m1">T_{N}</Math> can be applied to (19.16.14)–(19.16.18) and (19.16.20)–(19.16.23) if we use <Math equation-number="19.19.6" mode="display" xml:id="C19.S19.E6">R_{J}\left(x,y,z,p\right)=R_{-\frac{3}{2}}\left(\tfrac{1}{2},\tfrac{1}{2}, \tfrac{1}{2},\tfrac{1}{2},\tfrac{1}{2};x,y,z,p,p\right)</Math> as well as (19.16.5) and (19.16.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C19.S19.p5.s2">
+The number of terms in <Math mode="inline" xml:id="C19.S19.p5.m2">T_{N}</Math> can be greatly reduced by using variables <Math mode="inline" xml:id="C19.S19.p5.m3">\mathbf{Z}=\boldsymbol{{1}}-(\mathbf{z}/A)</Math> with <Math mode="inline" xml:id="C19.S19.p5.m4">A</Math> chosen to make <Math mode="inline" xml:id="C19.S19.p5.m5">E_{1}(\mathbf{Z})=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C19.S19.p5.s3">
+Then <Math mode="inline" xml:id="C19.S19.p5.m6">T_{N}</Math> has at most one term if <Math mode="inline" xml:id="C19.S19.p5.m7">N\leq 5</Math> in the series for <Math mode="inline" xml:id="C19.S19.p5.m8">R_{F}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C19.S19.p5.s4">
+For <Math mode="inline" xml:id="C19.S19.p5.m9">R_{J}</Math> and <Math mode="inline" xml:id="C19.S19.p5.m10">R_{D}</Math> , <Math mode="inline" xml:id="C19.S19.p5.m11">T_{N}</Math> has at most one term if <Math mode="inline" xml:id="C19.S19.p5.m12">N\leq 3</Math> , and two terms if <Math mode="inline" xml:id="C19.S19.p5.m13">N=4</Math> or 5.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C19.S19.p5.s5">
+<Math equation-number="19.19.7" mode="display" xml:id="C19.S19.E7">R_{-a}\left(\boldsymbol{{\tfrac{1}{2}}};\mathbf{z}\right)=A^{-a}\sum_{N=0}^{ \infty}\frac{{\left(a\right)_{N}}}{{\left(\tfrac{1}{2}n\right)_{N}}}T_{N}( \boldsymbol{{\tfrac{1}{2}}},\mathbf{Z}),</Math> where <Math equation-number="19.19.8" mode="display" xml:id="C19.S19.E8">A=\frac{1}{n}\sum_{j=1}^{n}z_{j},Z_{j}=1-(z_{j}/A),E_{1}(\mathbf{Z})=0, , if |Z_{j}|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S19.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S19.p6.s1">
+Special cases are given in (19.36.1) and (19.36.2).
+</sentence>
+
+</para>
+ 
+</section>

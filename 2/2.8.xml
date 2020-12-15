@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S8">
+<title>Differential Equations with a Parameter</title>          
+<subsection xml:id="C2.S8.SS1">
+<title>Classification of Cases</title>        
+  
+<para xml:id="C2.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S8.SS1.p1.s1">
+Many special functions satisfy an equation of the form <Math equation-number="2.8.1" mode="display" xml:id="C2.S8.E1">\ifrac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\left(u^{2}f(z)+g(z)\right)w,</Math> in which <Math mode="inline" xml:id="C2.S8.SS1.p1.m1">u</Math> is a real or complex parameter, and asymptotic solutions are needed for large <Math mode="inline" xml:id="C2.S8.SS1.p1.m2">|u|</Math> that are uniform with respect to <Math mode="inline" xml:id="C2.S8.SS1.p1.m3">z</Math> in a point set <Math mode="inline" xml:id="C2.S8.SS1.p1.m4">\mathbf{D}</Math> in <Math mode="inline" xml:id="C2.S8.SS1.p1.m5">\mathbb{R}</Math> or <Math mode="inline" xml:id="C2.S8.SS1.p1.m6">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S8.SS1.p1.s2">
+For example, <Math mode="inline" xml:id="C2.S8.SS1.p1.m7">u</Math> can be the order of a Bessel function or degree of an orthogonal polynomial.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C2.S8.SS1.p1.s3">
+The form of the asymptotic expansion depends on the nature of the transition points in <Math mode="inline" xml:id="C2.S8.SS1.p1.m8">\mathbf{D}</Math> , that is, points at which <Math mode="inline" xml:id="C2.S8.SS1.p1.m9">f(z)</Math> has a zero or singularity.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C2.S8.SS1.p1.s4">
+Zeros of <Math mode="inline" xml:id="C2.S8.SS1.p1.m10">f(z)</Math> are alsocalled turning points.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C2.S8.SS1.p2.s1">
+There are three main cases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C2.S8.SS1.p2.s2">
+In Case I there are no transition points in <Math mode="inline" xml:id="C2.S8.SS1.p2.m1">\mathbf{D}</Math> and <Math mode="inline" xml:id="C2.S8.SS1.p2.m2">g(z)</Math> is analytic.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C2.S8.SS1.p2.s3">
+In Case II <Math mode="inline" xml:id="C2.S8.SS1.p2.m3">f(z)</Math> has a simple zero at <Math mode="inline" xml:id="C2.S8.SS1.p2.m4">z_{0}</Math> and <Math mode="inline" xml:id="C2.S8.SS1.p2.m5">g(z)</Math> is analytic at <Math mode="inline" xml:id="C2.S8.SS1.p2.m6">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C2.S8.SS1.p2.s4">
+In Case III <Math mode="inline" xml:id="C2.S8.SS1.p2.m7">f(z)</Math> has a simple pole at <Math mode="inline" xml:id="C2.S8.SS1.p2.m8">z_{0}</Math> and <Math mode="inline" xml:id="C2.S8.SS1.p2.m9">(z-z_{0})^{2}g(z)</Math> is analytic at <Math mode="inline" xml:id="C2.S8.SS1.p2.m10">z_{0}</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C2.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S8.SS1.p3.s1">
+The same approach is used in all three cases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S8.SS1.p3.s2">
+First we apply theLiouville transformation (§1.13(iv)) to (2.8.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S8.SS1.p3.s3">
+This introduces new variables <Math mode="inline" xml:id="C2.S8.SS1.p3.m1">W</Math> and <Math mode="inline" xml:id="C2.S8.SS1.p3.m2">\xi</Math> , related by <Math equation-number="2.8.2" mode="display" xml:id="C2.S8.E2">W=\dot{z}^{-1/2}w,</Math> dots denoting differentiations with respect to <Math mode="inline" xml:id="C2.S8.SS1.p3.m3">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C2.S8.SS1.p3.s4">
+Then <Math equation-number="2.8.3" mode="display" xml:id="C2.S8.E3">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=\left(u^{2}\dot{z}^{2}f(z)+\psi( \xi)\right)W,</Math> where <Math equation-number="2.8.4" mode="display" xml:id="C2.S8.E4">\psi(\xi)=\dot{z}^{2}g(z)+\dot{z}^{1/2}\frac{{\mathrm{d}}^{2}}{{\mathrm{d}\xi} ^{2}}(\dot{z}^{-1/2})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S8.SS1.p4.s1">
+The transformation is now specialized in such a way that: (a) <Math mode="inline" xml:id="C2.S8.SS1.p4.m1">\xi</Math> and <Math mode="inline" xml:id="C2.S8.SS1.p4.m2">z</Math> are analytic functions of each other at the transition point (if any); (b) the approximating differential equation obtained by neglecting <Math mode="inline" xml:id="C2.S8.SS1.p4.m3">\psi(\xi)</Math> (or part of <Math mode="inline" xml:id="C2.S8.SS1.p4.m4">\psi(\xi)</Math> ) has solutions that are functions of a single variable.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C2.S8.SS1.p4.s2">
+The actual choices are as follows: <Math equation-number="2.8.5" mode="display" xml:id="C2.S8.E5">\dot{z}^{2}f(z)=1,\xi=\int f^{1/2}(z)\mathrm{d}z,</Math> for Case I, <Math equation-number="2.8.6" mode="display" xml:id="C2.S8.E6">\dot{z}^{2}f(z)=\xi,\tfrac{2}{3}\xi^{3/2}=\int_{z_{0}}^{z}f^{1/2}(t)\mathrm{d}t,</Math> for Case II, <Math equation-number="2.8.7" mode="display" xml:id="C2.S8.E7">\dot{z}^{2}f(z)=1/\xi,2\xi^{1/2}=\int_{z_{0}}^{z}f^{1/2}(t)\mathrm{d}t,</Math> for Case III.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C2.S8.SS1.p5.s1">
+The transformed equation has the form <Math equation-number="2.8.8" mode="display" xml:id="C2.S8.E8">\ifrac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=\left(u^{2}\xi^{m}+\psi(\xi) \right)W,</Math> with <Math mode="inline" xml:id="C2.S8.SS1.p5.m1">m=0</Math> (Case I), <Math mode="inline" xml:id="C2.S8.SS1.p5.m2">m=1</Math> (Case II), <Math mode="inline" xml:id="C2.S8.SS1.p5.m3">m=-1</Math> (Case III).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C2.S8.SS1.p5.s2">
+In Cases I and II the asymptotic solutions are in terms of the functions that satisfy(2.8.8) with <Math mode="inline" xml:id="C2.S8.SS1.p5.m4">\psi(\xi)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C2.S8.SS1.p5.s3">
+These are elementary functions in Case I, and Airy functions (§9.2) in Case II.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C2.S8.SS1.p5.s4">
+In Case III the approximating equation is <Math equation-number="2.8.9" mode="display" xml:id="C2.S8.E9">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=\left(\frac{u^{2}}{\xi}+\frac{ \rho}{\xi^{2}}\right)W,</Math> where <Math mode="inline" xml:id="C2.S8.SS1.p5.m5">\rho=\lim(\xi^{2}\psi(\xi))</Math> as <Math mode="inline" xml:id="C2.S8.SS1.p5.m6">\xi\to 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C2.S8.SS1.p5.s5">
+Solutions are Bessel functions, or modified Bessel functions, of order <Math mode="inline" xml:id="C2.S8.SS1.p5.m7">\pm(1+4\rho)^{1/2}</Math> (§§10.2, 10.25).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C2.S8.SS1.p6.s1">
+For another approach to these problems based on convergent inverse factorial series expansions see Dunster et al. (1993) andDunster (2001a, 2004).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S8.SS2">
+<title>Case I: No Transition Points</title>         
+<para xml:id="C2.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C2.S8.SS2.p1.s1">
+The transformed differential equation is <Math equation-number="2.8.10" mode="display" xml:id="C2.S8.E10">\ifrac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=(u^{2}+\psi(\xi))W,</Math> in which <Math mode="inline" xml:id="C2.S8.SS2.p1.m1">\xi</Math> ranges over a bounded or unbounded interval or domain <Math mode="inline" xml:id="C2.S8.SS2.p1.m2">\mathbf{\Delta}</Math> , and <Math mode="inline" xml:id="C2.S8.SS2.p1.m3">\psi(\xi)</Math> is <Math mode="inline" xml:id="C2.S8.SS2.p1.m4">C^{\infty}</Math> or analytic on <Math mode="inline" xml:id="C2.S8.SS2.p1.m5">\mathbf{\Delta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C2.S8.SS2.p1.s2">
+The parameter <Math mode="inline" xml:id="C2.S8.SS2.p1.m6">u</Math> is assumed to be real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C2.S8.SS2.p1.s3">
+Corresponding to each positive integer <Math mode="inline" xml:id="C2.S8.SS2.p1.m7">n</Math> there are solutions <Math mode="inline" xml:id="C2.S8.SS2.p1.m8">W_{n,j}(u,\xi)</Math> , <Math mode="inline" xml:id="C2.S8.SS2.p1.m9">j=1,2</Math> , that depend on arbitrarily chosen reference points <Math mode="inline" xml:id="C2.S8.SS2.p1.m10">\alpha_{j}</Math> , are <Math mode="inline" xml:id="C2.S8.SS2.p1.m11">C^{\infty}</Math> or analytic on <Math mode="inline" xml:id="C2.S8.SS2.p1.m12">\mathbf{\Delta}</Math> , and as <Math mode="inline" xml:id="C2.S8.SS2.p1.m13">u\to\infty</Math> <Math equation-number="2.8.11" mode="display" xml:id="C2.S8.E11">W_{n,1}(u,\xi)=e^{u\xi}\left(\sum_{s=0}^{n-1}\frac{A_{s}(\xi)}{u^{s}}+O\left( \frac{1}{u^{n}}\right)\right), if \xi\in\mathbf{\Delta}_{1}(\alpha_{1}),</Math> , <Math equation-number="2.8.12" mode="display" xml:id="C2.S8.E12">W_{n,2}(u,\xi)=e^{-u\xi}\left(\sum_{s=0}^{n-1}(-1)^{s}\frac{A_{s}(\xi)}{u^{s}} +O\left(\frac{1}{u^{n}}\right)\right), if \xi\in\mathbf{\Delta}_{2}(\alpha_{2}),</Math> with <Math mode="inline" xml:id="C2.S8.SS2.p1.m14">A_{0}(\xi)=1</Math> and <Math equation-number="2.8.13" mode="display" xml:id="C2.S8.E13">A_{s+1}(\xi)=-\tfrac{1}{2}A_{s}^{\prime}(\xi)+\tfrac{1}{2}\int\psi(\xi)A_{s}( \xi)\mathrm{d}\xi, if s=0,1,2,\dots,</Math> (the constants of integration being arbitrary).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="24" xml:id="C2.S8.SS2.p1.s4">
+The expansions (2.8.11) and (2.8.12) are both uniform and differentiable with respect to <Math mode="inline" xml:id="C2.S8.SS2.p1.m15">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="25" xml:id="C2.S8.SS2.p1.s5">
+The regions of validity <Math mode="inline" xml:id="C2.S8.SS2.p1.m16">\mathbf{\Delta}_{j}(\alpha_{j})</Math> comprise those points <Math mode="inline" xml:id="C2.S8.SS2.p1.m17">\xi</Math> that can be joined to <Math mode="inline" xml:id="C2.S8.SS2.p1.m18">\alpha_{j}</Math> in <Math mode="inline" xml:id="C2.S8.SS2.p1.m19">\mathbf{\Delta}</Math> by a path <Math mode="inline" xml:id="C2.S8.SS2.p1.m20">\mathscr{Q}_{j}</Math> along which <Math mode="inline" xml:id="C2.S8.SS2.p1.m21">\Re v</Math> is nondecreasing <Math mode="inline" xml:id="C2.S8.SS2.p1.m22">(j=1)</Math> or nonincreasing <Math mode="inline" xml:id="C2.S8.SS2.p1.m23">(j=2)</Math> as <Math mode="inline" xml:id="C2.S8.SS2.p1.m24">v</Math> passes from <Math mode="inline" xml:id="C2.S8.SS2.p1.m25">\alpha_{j}</Math> to <Math mode="inline" xml:id="C2.S8.SS2.p1.m26">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="26" xml:id="C2.S8.SS2.p1.s6">
+In addition, <Math mode="inline" xml:id="C2.S8.SS2.p1.m27">\mathcal{V}_{\mathscr{Q}_{j}}\left(A_{1}\right)</Math> and <Math mode="inline" xml:id="C2.S8.SS2.p1.m28">\mathcal{V}_{\mathscr{Q}_{j}}\left(A_{n}\right)</Math> must be bounded on <Math mode="inline" xml:id="C2.S8.SS2.p1.m29">\mathbf{\Delta}_{j}(\alpha_{j})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C2.S8.SS2.p2.s1">
+For error bounds, extensions to pure imaginary or complex <Math mode="inline" xml:id="C2.S8.SS2.p2.m1">u</Math> , an extension to inhomogeneous differential equations, and examples, seeOlver (1997b, Chapter 10).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C2.S8.SS2.p2.s2">
+This reference also supplies sufficient conditions to ensure that the solutions <Math mode="inline" xml:id="C2.S8.SS2.p2.m2">W_{n,1}(u,\xi)</Math> and <Math mode="inline" xml:id="C2.S8.SS2.p2.m3">W_{n,2}(u,\xi)</Math> having the properties (2.8.11) and (2.8.12) are independent of <Math mode="inline" xml:id="C2.S8.SS2.p2.m4">n</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S8.SS3">
+<title>Case II: Simple Turning Point</title>         
+<para xml:id="C2.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C2.S8.SS3.p1.s1">
+The transformed differential equation is <Math equation-number="2.8.14" mode="display" xml:id="C2.S8.E14">\ifrac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=(u^{2}\xi+\psi(\xi))W,</Math> and for simplicity <Math mode="inline" xml:id="C2.S8.SS3.p1.m1">\xi</Math> is assumed to range over a finite or infinite interval <Math mode="inline" xml:id="C2.S8.SS3.p1.m2">(\alpha_{1},\alpha_{2})</Math> with <Math mode="inline" xml:id="C2.S8.SS3.p1.m3">\alpha_{1}&lt;0</Math> , <Math mode="inline" xml:id="C2.S8.SS3.p1.m4">\alpha_{2}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C2.S8.SS3.p1.s2">
+Again, <Math mode="inline" xml:id="C2.S8.SS3.p1.m5">u&gt;0</Math> and <Math mode="inline" xml:id="C2.S8.SS3.p1.m6">\psi(\xi)</Math> is <Math mode="inline" xml:id="C2.S8.SS3.p1.m7">C^{\infty}</Math> on <Math mode="inline" xml:id="C2.S8.SS3.p1.m8">(\alpha_{1},\alpha_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C2.S8.SS3.p1.s3">
+Corresponding to each positive integer <Math mode="inline" xml:id="C2.S8.SS3.p1.m9">n</Math> there are solutions <Math mode="inline" xml:id="C2.S8.SS3.p1.m10">W_{n,j}(u,\xi)</Math> , <Math mode="inline" xml:id="C2.S8.SS3.p1.m11">j=1,2</Math> , that are <Math mode="inline" xml:id="C2.S8.SS3.p1.m12">C^{\infty}</Math> on <Math mode="inline" xml:id="C2.S8.SS3.p1.m13">(\alpha_{1},\alpha_{2})</Math> , and as <Math mode="inline" xml:id="C2.S8.SS3.p1.m14">u\to\infty</Math>
+</sentence>
+
+</para>
+   
+<para xml:id="C2.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C2.S8.SS3.p2.s1">
+ <Math equation-number="2.8.15" mode="display" xml:id="C2.S8.E15">W_{n,1}(u,\xi)=\mathrm{Ai}\left(u^{2/3}\xi\right)\left(\sum_{s=0}^{n-1}\frac{A _{s}(\xi)}{u^{2s}}+O\left(\frac{1}{u^{2n-1}}\right)\right)+\mathrm{Ai}'\left(u ^{2/3}\xi\right)\left(\sum_{s=0}^{n-2}\frac{B_{s}(\xi)}{u^{2s+(4/3)}}+O\left( \frac{1}{u^{2n-1}}\right)\right),</Math> , <Math equation-number="2.8.16" mode="display" xml:id="C2.S8.E16">W_{n,2}(u,\xi)=\mathrm{Bi}\left(u^{2/3}\xi\right)\left(\sum_{s=0}^{n-1}\frac{A _{s}(\xi)}{u^{2s}}+O\left(\frac{1}{u^{2n-1}}\right)\right)+\mathrm{Bi}'\left(u ^{2/3}\xi\right)\left(\sum_{s=0}^{n-2}\frac{B_{s}(\xi)}{u^{2s+(4/3)}}+O\left( \frac{1}{u^{2n-1}}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C2.S8.SS3.p2.s2">
+Here <Math mode="inline" xml:id="C2.S8.SS3.p2.m1">A_{0}(\xi)=1</Math> , <Math equation-number="2.8.17" mode="display" xml:id="C2.S8.E17">B_{s}(\xi)=\begin{cases}\dfrac{1}{2\xi^{1/2}}\displaystyle\int_{0}^{\xi}\left( \psi(v)A_{s}(v)-A_{s}^{\prime\prime}(v)\right)\dfrac{\mathrm{d}v}{v^{1/2}},&amp; \xi&gt;0,\\ \dfrac{1}{2(-\xi)^{1/2}}\displaystyle\int_{\xi}^{0}\left(\psi(v)A_{s}(v)-A_{s} ^{\prime\prime}(v)\right)\dfrac{\mathrm{d}v}{(-v)^{1/2}},&amp;\xi&lt;0,\end{cases}</Math> and <Math equation-number="2.8.18" mode="display" xml:id="C2.S8.E18">A_{s+1}(\xi)=-\tfrac{1}{2}B_{s}^{\prime}(\xi)+\tfrac{1}{2}\int\psi(\xi)B_{s}( \xi)\mathrm{d}\xi,</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S8.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C2.S8.SS3.p3.s1">
+when <Math mode="inline" xml:id="C2.S8.SS3.p3.m1">s=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C2.S8.SS3.p3.s2">
+For <Math mode="inline" xml:id="C2.S8.SS3.p3.m2">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C2.S8.SS3.p3.m3">\mathrm{Bi}</Math> see §9.2.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C2.S8.SS3.p3.s3">
+The expansions (2.8.15) and (2.8.16) are both uniform and differentiable with respect to <Math mode="inline" xml:id="C2.S8.SS3.p3.m4">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C2.S8.SS3.p3.s4">
+These results are valid when <Math mode="inline" xml:id="C2.S8.SS3.p3.m5">\mathcal{V}_{\alpha_{1},\alpha_{2}}\left(|\xi|^{1/2}B_{0}\right)</Math> and <Math mode="inline" xml:id="C2.S8.SS3.p3.m6">\mathcal{V}_{\alpha_{1},\alpha_{2}}\left(|\xi|^{1/2}B_{n-1}\right)</Math> are finite.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C2.S8.SS3.p4.s1">
+An alternative way of representing the error terms in (2.8.15) and (2.8.16) is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C2.S8.SS3.p4.s2">
+Let <Math mode="inline" xml:id="C2.S8.SS3.p4.m1">c=-0.36604\ldot</Math> s be the real root of the equation <Math equation-number="2.8.19" mode="display" xml:id="C2.S8.E19">\mathrm{Ai}\left(x\right)=\mathrm{Bi}\left(x\right)</Math> of smallest absolute value, and define the envelopes of <Math mode="inline" xml:id="C2.S8.SS3.p4.m2">\mathrm{Ai}\left(x\right)</Math> and <Math mode="inline" xml:id="C2.S8.SS3.p4.m3">\mathrm{Bi}\left(x\right)</Math> by <Math equation-number="2.8.20" mode="display" xml:id="C2.S8.E20">\mathrm{envAi}\left(x\right)=\mathrm{envBi}\left(x\right)=\left({\mathrm{Ai}^{ 2}}\left(x\right)+{\mathrm{Bi}^{2}}\left(x\right)\right)^{1/2}, if -\infty&lt;x\leq c,</Math> <Math equation-number="2.8.21" mode="display" xml:id="C2.S8.E21">\mathrm{envAi}\left(x\right)=\sqrt{2}\mathrm{Ai}\left(x\right),\mathrm{envBi}\left(x\right)=\sqrt{2}\mathrm{Bi}\left(x\right), , if c\leq x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C2.S8.SS3.p4.s3">
+These envelopes are continuous functions of <Math mode="inline" xml:id="C2.S8.SS3.p4.m8">x</Math> , and as <Math mode="inline" xml:id="C2.S8.SS3.p4.m9">u\to\infty</Math> <Math equation-number="2.8.22" mode="display" xml:id="C2.S8.E22">W_{n,1}(u,\xi)=\mathrm{Ai}\left(u^{2/3}\xi\right)\sum_{s=0}^{n-1}\frac{A_{s}( \xi)}{u^{2s}}+\mathrm{Ai}'\left(u^{2/3}\xi\right)\sum_{s=0}^{n-2}\frac{B_{s}( \xi)}{u^{2s+(4/3)}}+\mathrm{envAi}\left(u^{2/3}\xi\right)O\left(\frac{1}{u^{2n -1}}\right),</Math> , <Math equation-number="2.8.23" mode="display" xml:id="C2.S8.E23">W_{n,2}(u,\xi)=\mathrm{Bi}\left(u^{2/3}\xi\right)\sum_{s=0}^{n-1}\frac{A_{s}( \xi)}{u^{2s}}+\mathrm{Bi}'\left(u^{2/3}\xi\right)\sum_{s=0}^{n-2}\frac{B_{s}( \xi)}{u^{2s+(4/3)}}+\mathrm{envBi}\left(u^{2/3}\xi\right)O\left(\frac{1}{u^{2n -1}}\right),</Math> uniformly with respect to <Math mode="inline" xml:id="C2.S8.SS3.p4.m10">\xi\in(\alpha_{1},\alpha_{2})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C2.S8.SS3.p5.s1">
+For error bounds, more delicate error estimates, extensions to complex <Math mode="inline" xml:id="C2.S8.SS3.p5.m1">\xi</Math> and <Math mode="inline" xml:id="C2.S8.SS3.p5.m2">u</Math> , zeros, connection formulas, extensions to inhomogeneous equations, and examples, see Olver (1997b, Chapters 11, 13), Olver (1964b),Reid (1974a, b), Boyd (1987), andBaldwin (1991).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C2.S8.SS3.p6.s1">
+For other examples of uniform asymptotic approximations and expansions of special functions in terms of Airy functions see especially §10.20 and §§12.10(vii),12.10(viii); also §§12.14(ix),13.20(v),13.21(iii), 13.21(iv),15.12(iii),18.15(iv),30.9(i), 30.9(ii), 32.11(ii),32.11(iii),33.12(i),33.12(ii),33.20(iv), 36.12(ii),36.13.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S8.SS4">
+<title>Case III: Simple Pole</title>         
+ 
+<para xml:id="C2.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C2.S8.SS4.p1.s1">
+The transformed equation (2.8.8) is renormalized as <Math equation-number="2.8.24" mode="display" xml:id="C2.S8.E24">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}=\left(\frac{u^{2}}{4\xi}+\frac{ \nu^{2}-1}{4\xi^{2}}+\frac{\psi(\xi)}{\xi}\right)W</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C2.S8.SS4.p1.s2">
+We again assume <Math mode="inline" xml:id="C2.S8.SS4.p1.m1">\xi\in(\alpha_{1},\alpha_{2})</Math> with <Math mode="inline" xml:id="C2.S8.SS4.p1.m2">-\infty\leq\alpha_{1}&lt;0</Math> , <Math mode="inline" xml:id="C2.S8.SS4.p1.m3">0&lt;\alpha_{2}\leq\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C2.S8.SS4.p1.s3">
+Also, <Math mode="inline" xml:id="C2.S8.SS4.p1.m4">\psi(\xi)</Math> is <Math mode="inline" xml:id="C2.S8.SS4.p1.m5">C^{\infty}</Math> on <Math mode="inline" xml:id="C2.S8.SS4.p1.m6">(\alpha_{1},\alpha_{2})</Math> , and <Math mode="inline" xml:id="C2.S8.SS4.p1.m7">u&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="46" xml:id="C2.S8.SS4.p1.s4">
+The constant <Math mode="inline" xml:id="C2.S8.SS4.p1.m8">\nu</Math> ( <Math mode="inline" xml:id="C2.S8.SS4.p1.m9">=\sqrt{1+4\rho}</Math> ) is real and nonnegative.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C2.S8.SS4.p2.s1">
+There are two cases: <Math mode="inline" xml:id="C2.S8.SS4.p2.m1">\xi\in(0,\alpha_{2})</Math> and <Math mode="inline" xml:id="C2.S8.SS4.p2.m2">\xi\in(\alpha_{1},0)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C2.S8.SS4.p2.s2">
+In the former, corresponding to any positive integer <Math mode="inline" xml:id="C2.S8.SS4.p2.m3">n</Math> there are solutions <Math mode="inline" xml:id="C2.S8.SS4.p2.m4">W_{n,j}(u,\xi)</Math> , <Math mode="inline" xml:id="C2.S8.SS4.p2.m5">j=1,2</Math> , that are <Math mode="inline" xml:id="C2.S8.SS4.p2.m6">C^{\infty}</Math> on <Math mode="inline" xml:id="C2.S8.SS4.p2.m7">(0,\alpha_{2})</Math> , and as <Math mode="inline" xml:id="C2.S8.SS4.p2.m8">u\to\infty</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S8.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C2.S8.SS4.p3.s1">
+ <Math equation-number="2.8.25" mode="display" xml:id="C2.S8.E25">W_{n,1}(u,\xi)=\xi^{1/2}I_{\nu}\left(u\xi^{1/2}\right)\sum_{s=0}^{n-1}\frac{A_ {s}(\xi)}{u^{2s}}+\xi I_{\nu+1}\left(u\xi^{1/2}\right)\sum_{s=0}^{n-2}\frac{B_ {s}(\xi)}{u^{2s+1}}+\xi^{1/2}I_{\nu}\left(u\xi^{1/2}\right)O\left(\frac{1}{u^{ 2n-1}}\right),</Math> , <Math equation-number="2.8.26" mode="display" xml:id="C2.S8.E26">W_{n,2}(u,\xi)=\xi^{1/2}K_{\nu}\left(u\xi^{1/2}\right)\sum_{s=0}^{n-1}\frac{A_ {s}(\xi)}{u^{2s}}-\xi K_{\nu+1}\left(u\xi^{1/2}\right)\sum_{s=0}^{n-2}\frac{B_ {s}(\xi)}{u^{2s+1}}+\xi^{1/2}K_{\nu}\left(u\xi^{1/2}\right)O\left(\frac{1}{u^{ 2n-1}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C2.S8.SS4.p3.s2">
+Here <Math mode="inline" xml:id="C2.S8.SS4.p3.m1">A_{0}(\xi)=1</Math> , <Math equation-number="2.8.27" mode="display" xml:id="C2.S8.E27">B_{s}(\xi)=-A_{s}^{\prime}(\xi)+\frac{1}{\xi^{1/2}}\int_{0}^{\xi}\left(\psi(v) A_{s}(v)-\left(\nu+\tfrac{1}{2}\right)A_{s}^{\prime}(v)\right)\frac{\mathrm{d} v}{v^{1/2}},</Math> <Math equation-number="2.8.28" mode="display" xml:id="C2.S8.E28">A_{s+1}(\xi)=\nu B_{s}(\xi)-\xi B_{s}^{\prime}(\xi)+\int\psi(\xi)B_{s}(\xi) \mathrm{d}\xi,</Math> <Math mode="inline" xml:id="C2.S8.SS4.p3.m2">s=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="51" xml:id="C2.S8.SS4.p3.s3">
+For <Math mode="inline" xml:id="C2.S8.SS4.p3.m3">I_{\nu}</Math> and <Math mode="inline" xml:id="C2.S8.SS4.p3.m4">K_{\nu}</Math> see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="52" xml:id="C2.S8.SS4.p3.s4">
+The expansions (2.8.25) and (2.8.26) are both uniform and differentiable with respect to <Math mode="inline" xml:id="C2.S8.SS4.p3.m5">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="53" xml:id="C2.S8.SS4.p3.s5">
+These results are valid when <Math mode="inline" xml:id="C2.S8.SS4.p3.m6">\mathcal{V}_{0,\alpha_{2}}\left(\xi^{1/2}B_{0}\right)</Math> and <Math mode="inline" xml:id="C2.S8.SS4.p3.m7">\mathcal{V}_{0,\alpha_{2}}\left(\xi^{1/2}B_{n-1}\right)</Math> are finite.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S8.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C2.S8.SS4.p4.s1">
+If <Math mode="inline" xml:id="C2.S8.SS4.p4.m1">\xi\in(\alpha_{1},0)</Math> , then there are solutions <Math mode="inline" xml:id="C2.S8.SS4.p4.m2">W_{n,j}(u,\xi)</Math> , <Math mode="inline" xml:id="C2.S8.SS4.p4.m3">j=3,4</Math> , that are <Math mode="inline" xml:id="C2.S8.SS4.p4.m4">C^{\infty}</Math> on <Math mode="inline" xml:id="C2.S8.SS4.p4.m5">(\alpha_{1},0)</Math> , and as <Math mode="inline" xml:id="C2.S8.SS4.p4.m6">u\to\infty</Math> <Math equation-number="2.8.29" mode="display" xml:id="C2.S8.E29">W_{n,3}(u,\xi)=|\xi|^{1/2}J_{\nu}\left(u|\xi|^{1/2}\right)\left(\sum_{s=0}^{n- 1}\frac{A_{s}(\xi)}{u^{2s}}+O\left(\frac{1}{u^{2n-1}}\right)\right)-|\xi|J_{ \nu+1}\left(u|\xi|^{1/2}\right)\left(\sum_{s=0}^{n-2}\frac{B_{s}(\xi)}{u^{2s+1 }}+O\left(\frac{1}{u^{2n-2}}\right)\right),</Math> <Math equation-number="2.8.30" mode="display" xml:id="C2.S8.E30">W_{n,4}(u,\xi)=|\xi|^{1/2}Y_{\nu}\left(u|\xi|^{1/2}\right)\left(\sum_{s=0}^{n- 1}\frac{A_{s}(\xi)}{u^{2s}}+O\left(\frac{1}{u^{2n-1}}\right)\right)-|\xi|Y_{ \nu+1}\left(u|\xi|^{1/2}\right)\left(\sum_{s=0}^{n-2}\frac{B_{s}(\xi)}{u^{2s+1 }}+O\left(\frac{1}{u^{2n-2}}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C2.S8.SS4.p4.s2">
+Here <Math mode="inline" xml:id="C2.S8.SS4.p4.m7">A_{0}(\xi)=1</Math> , <Math equation-number="2.8.31" mode="display" xml:id="C2.S8.E31">B_{s}(\xi)=-A_{s}^{\prime}(\xi)+\frac{1}{|\xi|^{1/2}}\int_{\xi}^{0}\left(\psi( v)A_{s}(v)-\left(\nu+\tfrac{1}{2}\right)A_{s}^{\prime}(v)\right)\frac{\mathrm{ d}v}{|v|^{1/2}},</Math> <Math mode="inline" xml:id="C2.S8.SS4.p4.m8">s=0,1,2,\dots</Math> , and (2.8.28) again applies.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="56" xml:id="C2.S8.SS4.p4.s3">
+For <Math mode="inline" xml:id="C2.S8.SS4.p4.m9">J_{\nu}</Math> and <Math mode="inline" xml:id="C2.S8.SS4.p4.m10">Y_{\nu}</Math> see §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="57" xml:id="C2.S8.SS4.p4.s4">
+The expansions (2.8.29) and (2.8.30) are both uniform and differentiable with respect to <Math mode="inline" xml:id="C2.S8.SS4.p4.m11">\xi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="58" xml:id="C2.S8.SS4.p4.s5">
+These results are valid when <Math mode="inline" xml:id="C2.S8.SS4.p4.m12">\mathcal{V}_{\alpha_{1},0}\left(|\xi|^{1/2}B_{0}\right)</Math> and <Math mode="inline" xml:id="C2.S8.SS4.p4.m13">\mathcal{V}_{\alpha_{1},0}\left(|\xi|^{1/2}B_{n-1}\right)</Math> are finite.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C2.S8.SS4.p5.s1">
+Again, an alternative way of representing the error terms in (2.8.29) and (2.8.30) is by means of envelope functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="60" xml:id="C2.S8.SS4.p5.s2">
+Let <Math mode="inline" xml:id="C2.S8.SS4.p5.m1">x=X_{\nu}</Math> be the smallest positive root of the equation <Math equation-number="2.8.32" mode="display" xml:id="C2.S8.E32">J_{\nu}(x)+Y_{\nu}(x)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="61" xml:id="C2.S8.SS4.p5.s3">
+Define <Math equation-number="2.8.33" mode="display" xml:id="C2.S8.E33">\mathrm{env}\mskip-2.0mu J_{\nu}(x)=\sqrt{2}J_{\nu}(x),\mathrm{env}\mskip-2.0mu Y_{\nu}(x)=\sqrt{2}\left|Y_{\nu}(x)\right|, , if 0&lt;x\leq X_{\nu},</Math> <Math equation-number="2.8.34" mode="display" xml:id="C2.S8.E34">\mathrm{env}\mskip-2.0mu J_{\nu}(x)=\mathrm{env}\mskip-2.0mu Y_{\nu}(x)=\left( {J_{\nu}^{2}}(x)+{Y_{\nu}^{2}}(x)\right)^{1/2}, if X_{\nu}\leq x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="62" xml:id="C2.S8.SS4.p5.s4">
+Then as <Math mode="inline" xml:id="C2.S8.SS4.p5.m6">u\to\infty</Math> <Math equation-number="2.8.35" mode="display" xml:id="C2.S8.E35">W_{n,3}(u,\xi)=|\xi|^{1/2}J_{\nu}\left(u|\xi|^{1/2}\right)\sum_{s=0}^{n-1} \frac{A_{s}(\xi)}{u^{2s}}-|\xi|J_{\nu+1}\left(u|\xi|^{1/2}\right)\sum_{s=0}^{n -2}\frac{B_{s}(\xi)}{u^{2s+1}}+|\xi|^{1/2}\mathrm{env}\mskip-2.0mu J_{\nu} \left(u|\xi|^{1/2}\right)O\left(\frac{1}{u^{2n-1}}\right),</Math> <Math equation-number="2.8.36" mode="display" xml:id="C2.S8.E36">W_{n,4}(u,\xi)=|\xi|^{1/2}Y_{\nu}\left(u|\xi|^{1/2}\right)\sum_{s=0}^{n-1} \frac{A_{s}(\xi)}{u^{2s}}-|\xi|Y_{\nu+1}\left(u|\xi|^{1/2}\right)\sum_{s=0}^{n -2}\frac{B_{s}(\xi)}{u^{2s+1}}+|\xi|^{1/2}\mathrm{env}\mskip-2.0mu Y_{\nu} \left(u|\xi|^{1/2}\right)O\left(\frac{1}{u^{2n-1}}\right),</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S8.SS4.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C2.S8.SS4.p6.s1">
+uniformly with respect to <Math mode="inline" xml:id="C2.S8.SS4.p6.m1">\xi\in(\alpha_{1},0)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS4.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C2.S8.SS4.p7.s1">
+For error bounds, more delicate error estimates, extensions to complex <Math mode="inline" xml:id="C2.S8.SS4.p7.m1">\xi</Math> , <Math mode="inline" xml:id="C2.S8.SS4.p7.m2">\nu</Math> , and <Math mode="inline" xml:id="C2.S8.SS4.p7.m3">u</Math> , zeros, and examples see Olver (1997b, Chapter 12),Boyd (1990a), and Dunster (1990a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS4.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C2.S8.SS4.p8.s1">
+For other examples of uniform asymptotic approximations and expansions of special functions in terms of Bessel functions or modified Bessel functions of fixed order see §§13.8(iii),13.21(i),13.21(iv), 14.15(i),14.15(iii),14.20(vii), 15.12(iii),18.15(i),18.15(iv), 18.24,33.20(iv).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C2.S8.SS5">
+<title>Multiple and Fractional Turning Points</title>          
+<para xml:id="C2.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C2.S8.SS5.p1.s1">
+The approach used in preceding subsections for equation (2.8.1) also succeeds when <Math mode="inline" xml:id="C2.S8.SS5.p1.m1">z_{0}</Math> is a multiple or fractional turning point. For the former <Math mode="inline" xml:id="C2.S8.SS5.p1.m2">f(z)</Math> has a zero of multiplicity <Math mode="inline" xml:id="C2.S8.SS5.p1.m3">\lambda=2,3,4,\dots</Math> and <Math mode="inline" xml:id="C2.S8.SS5.p1.m4">g(z)</Math> is analytic.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="67" xml:id="C2.S8.SS5.p1.s2">
+For the latter <Math mode="inline" xml:id="C2.S8.SS5.p1.m5">(z-z_{0})^{-\lambda}f(z)</Math> and <Math mode="inline" xml:id="C2.S8.SS5.p1.m6">g(z)</Math> are both analytic at <Math mode="inline" xml:id="C2.S8.SS5.p1.m7">z_{0}</Math> , <Math mode="inline" xml:id="C2.S8.SS5.p1.m8">\lambda</Math> ( <Math mode="inline" xml:id="C2.S8.SS5.p1.m9">&gt;-2</Math> ) being a real constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="68" xml:id="C2.S8.SS5.p1.s3">
+In both cases uniform asymptotic approximations are obtained in terms of Bessel functions of order <Math mode="inline" xml:id="C2.S8.SS5.p1.m10">1/(\lambda+2)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="69" xml:id="C2.S8.SS5.p1.s4">
+More generally, <Math mode="inline" xml:id="C2.S8.SS5.p1.m11">g(z)</Math> can have a simple or double pole at <Math mode="inline" xml:id="C2.S8.SS5.p1.m12">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="70" xml:id="C2.S8.SS5.p1.s5">
+(In the case of the double pole the order of the approximating Bessel functions is fixed but no longer <Math mode="inline" xml:id="C2.S8.SS5.p1.m13">1/(\lambda+2)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="71" xml:id="C2.S8.SS5.p1.s6">
+) However, in all cases with <Math mode="inline" xml:id="C2.S8.SS5.p1.m14">\lambda&gt;-2</Math> and <Math mode="inline" xml:id="C2.S8.SS5.p1.m15">\lambda\neq 0</Math> or <Math mode="inline" xml:id="C2.S8.SS5.p1.m16">\pm 1</Math> , only uniform asymptotic approximations are available, not uniform asymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="72" xml:id="C2.S8.SS5.p1.s7">
+For results, including error bounds, see Olver (1977c).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C2.S8.SS5.p2.s1">
+For connection formulas for Liouville–Green approximations across these transition points see Olver (1977b, a, 1978).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S8.SS6">
+<title>Coalescing Transition Points</title>          
+<para xml:id="C2.S8.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C2.S8.SS6.p1.s1">
+Corresponding to the problems for integrals outlined in §§2.3(v), 2.4(v), and 2.4(vi), there are analogous problems for differential equations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C2.S8.SS6.p2.s1">
+For two coalescing turning points see Olver (1975a, 1976) and Dunster (1996a); in this case the uniform approximants are parabolic cylinder functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="76" xml:id="C2.S8.SS6.p2.s2">
+(For envelope functions for parabolic cylinder functions see §14.15(v)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C2.S8.SS6.p3.s1">
+For a coalescing turning point and double pole see Boyd and Dunster (1986) andDunster (1990b); in this case the uniform approximants are Bessel functions of variable order.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C2.S8.SS6.p4.s1">
+For a coalescing turning point and simple pole see Nestor (1984) andDunster (1994b); in this case the uniform approximants are Whittaker functions (§13.14(i)) with a fixed value of the second parameter.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C2.S8.SS6.p5.s1">
+For further examples of uniform asymptotic approximations in terms of parabolic cylinder functions see §§13.20(iii), 13.20(iv),14.15(v),15.12(iii), 18.24.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S8.SS6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C2.S8.SS6.p6.s1">
+For further examples of uniform asymptotic approximations in terms of Bessel functions or modified Bessel functions of variable order see §§13.21(ii), 14.15(ii), 14.15(iv),14.20(viii),30.9(i), 30.9(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C2.S8.SS6.p7.s1">
+For examples of uniform asymptotic approximations in terms of Whittaker functions with fixed second parameter see §18.15(i) and §28.8(iv).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S8.SS6.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C2.S8.SS6.p8.s1">
+Lastly, for an example of a fourth-order differential equation, see Wong and Zhang (2007).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

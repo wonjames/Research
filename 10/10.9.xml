@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S9">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C10.S9.SS1">
+<title>Integrals along the Real Line</title>        
+  
+<paragraph xml:id="C10.S9.Px1">
+<title>Bessel’s Integral</title>    
+<para xml:id="C10.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S9.Px1.p1.s1">
+ <Math equation-number="10.9.1" mode="display" xml:id="C10.S9.E1">J_{0}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(z\sin\theta\right) \mathrm{d}\theta=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(z\cos\theta\right) \mathrm{d}\theta,</Math> <Math equation-number="10.9.2" mode="display" xml:id="C10.S9.E2">J_{n}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(z\sin\theta-n\theta \right)\mathrm{d}\theta=\frac{i^{-n}}{\pi}\int_{0}^{\pi}e^{iz\cos\theta}\cos \left(n\theta\right)\mathrm{d}\theta, if n\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px2">
+<title>Neumann’s Integral</title>    
+<para xml:id="C10.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C10.S9.Px2.p1.s1">
+ <Math equation-number="10.9.3" mode="display" xml:id="C10.S9.E3">Y_{0}\left(z\right)=\frac{4}{\pi^{2}}\int_{0}^{\frac{1}{2}\pi}\cos\left(z\cos \theta\right)\left(\gamma+\ln\left(2z{\sin^{2}}\theta\right)\right)\mathrm{d}\theta,</Math> where <Math mode="inline" xml:id="C10.S9.Px2.p1.m1">\gamma</Math> is Euler’s constant (§5.2(ii)).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px3">
+<title>Poisson’s and Related Integrals</title>    
+<para xml:id="C10.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S9.Px3.p1.s1">
+ <Math equation-number="10.9.4" mode="display" xml:id="C10.S9.E4">J_{\nu}\left(z\right)=\frac{(\tfrac{1}{2}z)^{\nu}}{\pi^{\frac{1}{2}}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\pi}\cos\left(z\cos\theta\right)(\sin \theta)^{2\nu}\mathrm{d}\theta=\frac{2(\tfrac{1}{2}z)^{\nu}}{\pi^{\frac{1}{2}} \Gamma\left(\nu+\tfrac{1}{2}\right)}\int_{0}^{1}(1-t^{2})^{\nu-\frac{1}{2}} \cos\left(zt\right)\mathrm{d}t, if \Re\nu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C10.S9.Px3.p1.s2">
+<Math equation-number="10.9.5" mode="display" xml:id="C10.S9.E5">Y_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\pi^{\frac{1}{2}}\Gamma \left(\nu+\tfrac{1}{2}\right)}\left(\int_{0}^{1}(1-t^{2})^{\nu-\frac{1}{2}} \sin\left(zt\right)\mathrm{d}t-\int_{0}^{\infty}e^{-zt}(1+t^{2})^{\nu-\frac{1} {2}}\mathrm{d}t\right), if \Re\nu&gt;-\tfrac{1}{2},|\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px4">
+<title>Schläfli’s and Related Integrals</title>    
+<para xml:id="C10.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S9.Px4.p1.s1">
+ <Math equation-number="10.9.6" mode="display" xml:id="C10.S9.E6">J_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(z\sin\theta-\nu \theta\right)\mathrm{d}\theta-\frac{\sin\left(\nu\pi\right)}{\pi}\int_{0}^{ \infty}e^{-z\sinh t-\nu t}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi,</Math> <Math equation-number="10.9.7" mode="display" xml:id="C10.S9.E7">Y_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\sin\left(z\sin\theta-\nu \theta\right)\mathrm{d}\theta-\frac{1}{\pi}\int_{0}^{\infty}\left(e^{\nu t}+e^ {-\nu t}\cos\left(\nu\pi\right)\right)e^{-z\sinh t}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px5">
+<title>Mehler–Sonine and Related Integrals</title>    
+<para xml:id="C10.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S9.Px5.p1.s1">
+ <Math equation-number="10.9.8" mode="display" xml:id="C10.S9.E8">J_{\nu}\left(x\right)=\frac{2}{\pi}\int_{0}^{\infty}\sin\left(x\cosh t-\tfrac{ 1}{2}\nu\pi\right)\cosh\left(\nu t\right)\mathrm{d}t,Y_{\nu}\left(x\right)=-\frac{2}{\pi}\int_{0}^{\infty}\cos\left(x\cosh t-\tfrac {1}{2}\nu\pi\right)\cosh\left(\nu t\right)\mathrm{d}t, if |\Re\nu|&lt;1,x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S9.Px5.p1.s2">
+In particular, <Math equation-number="10.9.9" mode="display" xml:id="C10.S9.E9">J_{0}\left(x\right)=\frac{2}{\pi}\int_{0}^{\infty}\sin\left(x\cosh t\right) \mathrm{d}t, if x&gt;0, //// Y_{0}\left(x\right)=-\frac{2}{\pi}\int_{0}^{\infty}\cos\left(x\cosh t\right) \mathrm{d}t, if x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S9.Px5.p1.s3">
+<Math equation-number="10.9.10" mode="display" xml:id="C10.S9.E10">{H^{(1)}_{\nu}}\left(z\right)=\frac{e^{-\frac{1}{2}\nu\pi i}}{\pi i}\int_{- \infty}^{\infty}e^{iz\cosh t-\nu t}\mathrm{d}t, if 0&lt;\operatorname{ph}z&lt;\pi,</Math> <Math equation-number="10.9.11" mode="display" xml:id="C10.S9.E11">{H^{(2)}_{\nu}}\left(z\right)=-\frac{e^{\frac{1}{2}\nu\pi i}}{\pi i}\int_{- \infty}^{\infty}e^{-iz\cosh t-\nu t}\mathrm{d}t, if -\pi&lt;\operatorname{ph}z&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C10.S9.Px5.p1.s4">
+<Math equation-number="10.9.12" mode="display" xml:id="C10.S9.E12">J_{\nu}\left(x\right)=\frac{2(\tfrac{1}{2}x)^{-\nu}}{\pi^{\frac{1}{2}}\Gamma \left(\tfrac{1}{2}-\nu\right)}\int_{1}^{\infty}\frac{\sin\left(xt\right) \mathrm{d}t}{(t^{2}-1)^{\nu+\frac{1}{2}}},Y_{\nu}\left(x\right)=-\frac{2(\tfrac{1}{2}x)^{-\nu}}{\pi^{\frac{1}{2}}\Gamma \left(\tfrac{1}{2}-\nu\right)}\int_{1}^{\infty}\frac{\cos\left(xt\right) \mathrm{d}t}{(t^{2}-1)^{\nu+\frac{1}{2}}}, if |\Re\nu|&lt;\tfrac{1}{2}, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C10.S9.Px5.p1.s5">
+<Math equation-number="10.9.13" mode="display" xml:id="C10.S9.E13">\left(\frac{z+\zeta}{z-\zeta}\right)^{\frac{1}{2}\nu}J_{\nu}\left((z^{2}-\zeta ^{2})^{\frac{1}{2}}\right)=\frac{1}{\pi}\int_{0}^{\pi}e^{\zeta\cos\theta}\cos \left(z\sin\theta-\nu\theta\right)\mathrm{d}\theta-\frac{\sin\left(\nu\pi \right)}{\pi}\int_{0}^{\infty}e^{-\zeta\cosh t-z\sinh t-\nu t}\mathrm{d}t, if \Re(z+\zeta)&gt;0,</Math> <Math equation-number="10.9.14" mode="display" xml:id="C10.S9.E14">\left(\frac{z+\zeta}{z-\zeta}\right)^{\frac{1}{2}\nu}Y_{\nu}\left((z^{2}-\zeta ^{2})^{\frac{1}{2}}\right)=\frac{1}{\pi}\int_{0}^{\pi}e^{\zeta\cos\theta}\sin \left(z\sin\theta-\nu\theta\right)\mathrm{d}\theta-\frac{1}{\pi}\int_{0}^{ \infty}\left(e^{\nu t+\zeta\cosh t}+e^{-\nu t-\zeta\cosh t}\cos\left(\nu\pi \right)\right)\*e^{-z\sinh t}\mathrm{d}t, if \Re(z\pm\zeta)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="11" xml:id="C10.S9.Px5.p1.s6">
+<Math equation-number="10.9.15" mode="display" xml:id="C10.S9.E15">\left(\frac{z+\zeta}{z-\zeta}\right)^{\frac{1}{2}\nu}{H^{(1)}_{\nu}}\left((z^{ 2}-\zeta^{2})^{\frac{1}{2}}\right)=\frac{1}{\pi i}e^{-\frac{1}{2}\nu\pi i}\int _{-\infty}^{\infty}e^{iz\cosh t+i\zeta\sinh t-\nu t}\mathrm{d}t, if \Im(z\pm\zeta)&gt;0,</Math> <Math equation-number="10.9.16" mode="display" xml:id="C10.S9.E16">\left(\frac{z+\zeta}{z-\zeta}\right)^{\frac{1}{2}\nu}{H^{(2)}_{\nu}}\left((z^{ 2}-\zeta^{2})^{\frac{1}{2}}\right)=-\frac{1}{\pi i}e^{\frac{1}{2}\nu\pi i}\int _{-\infty}^{\infty}e^{-iz\cosh t-i\zeta\sinh t-\nu t}\mathrm{d}t, if \Im(z\pm\zeta)&lt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S9.SS2">
+<title>Contour Integrals</title>        
+  
+<paragraph xml:id="C10.S9.Px6">
+<title>Schläfli–Sommerfeld Integrals</title>    
+<para xml:id="C10.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S9.Px6.p1.s1">
+When <Math mode="inline" xml:id="C10.S9.Px6.p1.m1">|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> , <Math equation-number="10.9.17" mode="display" xml:id="C10.S9.E17">J_{\nu}\left(z\right)=\frac{1}{2\pi i}\int_{\infty-\pi i}^{\infty+\pi i}e^{z \sinh t-\nu t}\mathrm{d}t,</Math> and <Math equation-number="10.9.18" mode="display" xml:id="C10.S9.E18">{H^{(1)}_{\nu}}\left(z\right)=\frac{1}{\pi i}\int_{-\infty}^{\infty+\pi i}e^{z \sinh t-\nu t}\mathrm{d}t,{H^{(2)}_{\nu}}\left(z\right)=-\frac{1}{\pi i}\int_{-\infty}^{\infty-\pi i}e^{ z\sinh t-\nu t}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px7">
+<title>Schläfli’s Integral</title>    
+<para xml:id="C10.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S9.Px7.p1.s1">
+ <Math equation-number="10.9.19" mode="display" xml:id="C10.S9.E19">J_{\nu}\left(z\right)=\frac{(\tfrac{1}{2}z)^{\nu}}{2\pi i}\int_{-\infty}^{(0+) }\exp\left(t-\frac{z^{2}}{4t}\right)\frac{\mathrm{d}t}{t^{\nu+1}},</Math> where the integration path is a simple loop contour, and <Math mode="inline" xml:id="C10.S9.Px7.p1.m1">t^{\nu+1}</Math> is continuous on the path and takes its principal value at the intersection with the positive real axis.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px8">
+<title>Hankel’s Integrals</title>   
+<para xml:id="C10.S9.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S9.Px8.p1.s1">
+In (10.9.20) and (10.9.21) the integration paths are simple loop contours not enclosing <Math mode="inline" xml:id="C10.S9.Px8.p1.m1">t=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C10.S9.Px8.p1.s2">
+Also, <Math mode="inline" xml:id="C10.S9.Px8.p1.m2">(t^{2}-1)^{\nu-\frac{1}{2}}</Math> is continuous on the path, and takes its principal value at the intersection with the interval <Math mode="inline" xml:id="C10.S9.Px8.p1.m3">(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S9.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S9.Px8.p2.s1">
+ <Math equation-number="10.9.20" mode="display" xml:id="C10.S9.E20">J_{\nu}\left(z\right)=\frac{\Gamma\left(\frac{1}{2}-\nu\right)(\frac{1}{2}z)^{ \nu}}{\pi^{\frac{3}{2}}i}\int_{0}^{(1+)}\cos\left(zt\right)(t^{2}-1)^{\nu- \frac{1}{2}}\mathrm{d}t, if \nu\neq\tfrac{1}{2},\tfrac{3}{2},\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C10.S9.Px8.p2.s2">
+<Math equation-number="10.9.21" mode="display" xml:id="C10.S9.E21">{H^{(1)}_{\nu}}\left(z\right)=\frac{\Gamma\left(\tfrac{1}{2}-\nu\right)(\tfrac {1}{2}z)^{\nu}}{\pi^{\frac{3}{2}}i}\int_{1+i\infty}^{(1+)}e^{izt}(t^{2}-1)^{ \nu-\frac{1}{2}}\mathrm{d}t, //// {H^{(2)}_{\nu}}\left(z\right)=\frac{\Gamma\left(\tfrac{1}{2}-\nu\right)(\tfrac {1}{2}z)^{\nu}}{\pi^{\frac{3}{2}}i}\int_{1-i\infty}^{(1+)}e^{-izt}(t^{2}-1)^{ \nu-\frac{1}{2}}\mathrm{d}t, if \nu\neq\tfrac{1}{2},\tfrac{3}{2},\ldots,|\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px9">
+<title>Mellin–Barnes Type Integrals</title>    
+<para xml:id="C10.S9.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C10.S9.Px9.p1.s1">
+ <Math equation-number="10.9.22" mode="display" xml:id="C10.S9.E22">J_{\nu}\left(x\right)=\frac{1}{2\pi i}\int_{-i\infty}^{i\infty}\frac{\Gamma \left(-t\right)(\tfrac{1}{2}x)^{\nu+2t}}{\Gamma\left(\nu+t+1\right)}\mathrm{d}t, if \Re\nu&gt;0, x&gt;0,</Math> where the integration path passes to the left of <Math mode="inline" xml:id="C10.S9.Px9.p1.m1">t=0,1,2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C10.S9.Px9.p1.s2">
+<Math equation-number="10.9.23" mode="display" xml:id="C10.S9.E23">J_{\nu}\left(z\right)=\frac{1}{2\pi i}\int_{-\infty-ic}^{-\infty+ic}\frac{ \Gamma\left(t\right)}{\Gamma\left(\nu-t+1\right)}(\tfrac{1}{2}z)^{\nu-2t} \mathrm{d}t,</Math> where <Math mode="inline" xml:id="C10.S9.Px9.p1.m2">c</Math> is a positive constant and the integration path encloses the points <Math mode="inline" xml:id="C10.S9.Px9.p1.m3">t=0,-1,-2,\ldots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S9.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S9.Px9.p2.s1">
+In (10.9.24) and (10.9.25)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C10.S9.Px9.p2.s2">
+<Math mode="inline" xml:id="C10.S9.Px9.p2.m1">c</Math> is any constant exceeding <Math mode="inline" xml:id="C10.S9.Px9.p2.m2">\max(\Re\nu,0)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C10.S9.Px9.p2.s3">
+<Math equation-number="10.9.24" mode="display" xml:id="C10.S9.E24">{H^{(1)}_{\nu}}\left(z\right)=-\frac{e^{-\frac{1}{2}\nu\pi i}}{2\pi^{2}}\*\int _{c-i\infty}^{c+i\infty}\Gamma\left(t\right)\Gamma\left(t-\nu\right)(-\tfrac{1 }{2}iz)^{\nu-2t}\mathrm{d}t, if 0&lt;\operatorname{ph}z&lt;\pi,</Math> , <Math equation-number="10.9.25" mode="display" xml:id="C10.S9.E25">{H^{(2)}_{\nu}}\left(z\right)=\frac{e^{\frac{1}{2}\nu\pi i}}{2\pi^{2}}\int_{c- i\infty}^{c+i\infty}\Gamma\left(t\right)\Gamma\left(t-\nu\right)(\tfrac{1}{2} iz)^{\nu-2t}\mathrm{d}t, if -\pi&lt;\operatorname{ph}z&lt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S9.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C10.S9.Px9.p3.s1">
+For (10.9.22)–(10.9.25) and further integrals of this type see Paris and Kaminski (2001, pp. 114–116).
+</sentence>
+
+</para>
+
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S9.SS3">
+<title>Products</title>        
+  
+<para xml:id="C10.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C10.S9.SS3.p1.s1">
+ <Math equation-number="10.9.26" mode="display" xml:id="C10.S9.E26">J_{\mu}\left(z\right)J_{\nu}\left(z\right)=\frac{2}{\pi}\int_{0}^{\pi/2}J_{\mu +\nu}\left(2z\cos\theta\right)\cos\left((\mu-\nu)\theta\right)\mathrm{d}\theta, if \Re(\mu+\nu)&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C10.S9.SS3.p1.s2">
+<Math equation-number="10.9.27" mode="display" xml:id="C10.S9.E27">J_{\nu}\left(z\right)J_{\nu}\left(\zeta\right)=\frac{2}{\pi}\int_{0}^{\pi/2}J_ {2\nu}\left(2(z\zeta)^{\frac{1}{2}}\sin\theta\right)\cos\left((z-\zeta)\cos \theta\right)\mathrm{d}\theta, if \Re\nu&gt;-\tfrac{1}{2},</Math> where the square root has its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C10.S9.SS3.p1.s3">
+<Math equation-number="10.9.28" mode="display" xml:id="C10.S9.E28">J_{\nu}\left(z\right)J_{\nu}\left(\zeta\right)=\frac{1}{2\pi i}\int_{c-i\infty }^{c+i\infty}\*\exp\left(\frac{1}{2}t-\frac{z^{2}+\zeta^{2}}{2t}\right)I_{\nu} \left(\frac{z\zeta}{t}\right)\frac{\mathrm{d}t}{t}, if \Re\nu&gt;-1,</Math> where <Math mode="inline" xml:id="C10.S9.SS3.p1.m1">c</Math> is a positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="27" xml:id="C10.S9.SS3.p1.s4">
+For the function <Math mode="inline" xml:id="C10.S9.SS3.p1.m2">I_{\nu}</Math> see § 10.25(ii).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S9.Px10">
+<title>Mellin–Barnes Type</title>   
+<para xml:id="C10.S9.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C10.S9.Px10.p1.s1">
+ <Math equation-number="10.9.29" mode="display" xml:id="C10.S9.E29">J_{\mu}\left(x\right)J_{\nu}\left(x\right)=\frac{1}{2\pi i}\int_{-i\infty}^{i \infty}\frac{\Gamma\left(-t\right)\Gamma\left(2t+\mu+\nu+1\right)(\tfrac{1}{2} x)^{\mu+\nu+2t}}{\Gamma\left(t+\mu+1\right)\Gamma\left(t+\nu+1\right)\Gamma \left(t+\mu+\nu+1\right)}\mathrm{d}t, if x&gt;0,</Math> where the path of integration separates the poles of <Math mode="inline" xml:id="C10.S9.Px10.p1.m1">\Gamma\left(-t\right)</Math> from those of <Math mode="inline" xml:id="C10.S9.Px10.p1.m2">\Gamma\left(2t+\mu+\nu+1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C10.S9.Px10.p1.s2">
+See Paris and Kaminski (2001, p. 116) for related results.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S9.Px11">
+<title>Nicholson’s Integral</title>    
+<para xml:id="C10.S9.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C10.S9.Px11.p1.s1">
+ <Math equation-number="10.9.30" mode="display" xml:id="C10.S9.E30">{J_{\nu}^{2}}\left(z\right)+{Y_{\nu}^{2}}\left(z\right)=\frac{8}{\pi^{2}}\int_ {0}^{\infty}\cosh\left(2\nu t\right)K_{0}\left(2z\sinh t\right)\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C10.S9.Px11.p1.s2">
+For the function <Math mode="inline" xml:id="C10.S9.Px11.p1.m1">K_{0}</Math> see §10.25(ii).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S9.SS4">
+<title>Compendia</title>        
+    
+<para xml:id="C10.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C10.S9.SS4.p1.s1">
+For collections of integral representations of Bessel and Hankel functions seeErdélyi et al. (1953b, §§7.3 and 7.12),Erdélyi et al. (1954a, pp. 43–48, 51–60, 99–105, 108–115, 123–124, 272–276, and 356–357),Gröbner and Hofreiter (1950, pp. 189–192),Marichev (1983, pp. 191–192 and 196–210),Magnus et al. (1966, §3.6), and Watson (1944, Chapter 6).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S10">
+<title>Inequalities</title>         
+ 
+<para xml:id="C8.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S10.p1.s1">
+ <Math equation-number="8.10.1" mode="display" xml:id="C8.S10.E1">x^{1-a}e^{x}\Gamma\left(a,x\right)\leq 1, if x&gt;0, 0&lt;a\leq 1,</Math> <Math equation-number="8.10.2" mode="display" xml:id="C8.S10.E2">\gamma\left(a,x\right)\geq\frac{x^{a-1}}{a}(1-e^{-x}), if x&gt;0, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S10.p1.s2">
+The inequalities in (8.10.1) and (8.10.2) are reversed when <Math mode="inline" xml:id="C8.S10.p1.m1">a\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S10.p1.s3">
+If <Math mode="inline" xml:id="C8.S10.p1.m2">\vartheta</Math> is defined by <Math equation-number="8.10.3" mode="display" xml:id="C8.S10.E3">x^{1-a}e^{x}\Gamma\left(a,x\right)=1+\frac{a-1}{x}\vartheta,</Math> then <Math mode="inline" xml:id="C8.S10.p1.m3">\vartheta\to 1</Math> as <Math mode="inline" xml:id="C8.S10.p1.m4">x\to\infty</Math> , and <Math equation-number="8.10.4" mode="display" xml:id="C8.S10.E4">0&lt;\vartheta\leq 1, if x&gt;0, a\leq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S10.p1.s4">
+For further inequalities of these types see Qi and Mei (1999) and Neuman (2013).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S10.Px1">
+<title>Padé Approximants</title>    
+<para xml:id="C8.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S10.Px1.p1.s1">
+For <Math mode="inline" xml:id="C8.S10.Px1.p1.m1">n=1,2,\dots</Math> , <Math equation-number="8.10.5" mode="display" xml:id="C8.S10.E5">A_{n}&lt;x^{1-a}e^{x}\Gamma\left(a,x\right)&lt;B_{n}, if x&gt;0, a&lt;1,</Math> where <Math equation-number="8.10.6" mode="display" xml:id="C8.S10.E6">A_{1}=\frac{x}{x+1-a},B_{1}=\frac{x+1}{x+2-a},A_{2}=\frac{x(x+3-a)}{x^{2}+2(2-a)x+(1-a)(2-a)},B_{2}=\frac{x^{2}+(5-a)x+2}{x^{2}+2(3-a)x+(2-a)(3-a)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C8.S10.Px1.p1.s2">
+For hypergeometric polynomial representations of <Math mode="inline" xml:id="C8.S10.Px1.p1.m2">A_{n}</Math> and <Math mode="inline" xml:id="C8.S10.Px1.p1.m3">B_{n}</Math> , seeLuke (1969b, §14.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C8.S10.Px1.p2.s1">
+Next, define <Math equation-number="8.10.7" mode="display" xml:id="C8.S10.E7">I=\int_{0}^{x}t^{a-1}e^{t}\mathrm{d}t=\Gamma\left(a\right)x^{a}\gamma^{*}\left (a,-x\right), if \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C8.S10.Px1.p2.s2">
+Then <Math equation-number="8.10.8" mode="display" xml:id="C8.S10.E8">\frac{(a+1)(a+2)-x}{(a+1)(a+2+x)}&lt;ax^{-a}e^{-x}I&lt;\frac{a+1}{a+1+x}, if x&gt;0, a\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S10.Px1.p3.s1">
+Also, define <Math equation-number="8.10.9" mode="display" xml:id="C8.S10.E9">c_{a}=(\Gamma\left(1+a\right))^{1/(a-1)},d_{a}=(\Gamma\left(1+a\right))^{-1/a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S10.Px1.p3.s2">
+Then <Math equation-number="8.10.10" mode="display" xml:id="C8.S10.E10">\frac{x}{2a}\left(\left(1+\frac{2}{x}\right)^{a}-1\right)&lt;x^{1-a}e^{x}\Gamma \left(a,x\right)\leq\frac{x}{ac_{a}}\left(\left(1+\frac{c_{a}}{x}\right)^{a}-1 \right), if x\geq 0, 0&lt;a&lt;1,</Math> and <Math equation-number="8.10.11" mode="display" xml:id="C8.S10.E11">(1-e^{-\alpha_{a}x})^{a}\leq P\left(a,x\right)\leq(1-e^{-\beta_{a}x})^{a}, if x\geq 0, a&gt;0,</Math> where <Math equation-number="8.10.12" mode="display" xml:id="C8.S10.E12">\alpha_{a}=\begin{cases}1,&amp;0&lt;a&lt;1,\\ d_{a},&amp;a&gt;1,\end{cases}\beta_{a}=\begin{cases}d_{a},&amp;0&lt;a&lt;1,\\ 1,&amp;a&gt;1.\end{cases</Math> } Equalities in (8.10.11)apply only when <Math mode="inline" xml:id="C8.S10.Px1.p3.m1">a=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C8.S10.Px1.p4.s1">
+Lastly, <Math equation-number="8.10.13" mode="display" xml:id="C8.S10.E13">\frac{\Gamma\left(n,n\right)}{\Gamma\left(n\right)}&lt;\frac{1}{2}&lt;\frac{\Gamma \left(n,n-1\right)}{\Gamma\left(n\right)}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S18">
+<title>Counting Techniques</title>        
+    
+    
+<para xml:id="C26.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S18.p1.s1">
+Let <Math mode="inline" xml:id="C26.S18.p1.m1">A_{1},A_{2},\ldots,A_{n}</Math> be subsets of a set <Math mode="inline" xml:id="C26.S18.p1.m2">S</Math> that are not necessarily disjoint. Then the number of elements in the set <Math mode="inline" xml:id="C26.S18.p1.m3">S\setminus(A_{1}\cup A_{2}\cup\cdots\cup A_{n})</Math> is <Math equation-number="26.18.1" mode="display" xml:id="C26.S18.E1">\left|S\setminus(A_{1}\cup A_{2}\cup\cdots\cup A_{n})\right|=\left|S\right|+ \sum_{t=1}^{n}(-1)^{t}\sum_{1\leq j_{1}&lt;j_{2}&lt;\cdots&lt;j_{t}\leq n}\left|A_{j_{1 }}\cap A_{j_{2}}\cap\cdots\cap A_{j_{t}}\right|</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C26.S18.Px1">
+<title>Example 1</title>   
+<para xml:id="C26.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C26.S18.Px1.p1.s1">
+The number of positive integers <Math mode="inline" xml:id="C26.S18.Px1.p1.m1">\leq N</Math> that are not divisible by any of the primes <Math mode="inline" xml:id="C26.S18.Px1.p1.m2">p_{1},p_{2},\ldots,p_{n}</Math> (§27.2(i)) is <Math equation-number="26.18.2" mode="display" xml:id="C26.S18.E2">N+\sum_{t=1}^{n}(-1)^{t}\sum_{1\leq j_{1}&lt;j_{2}&lt;\cdots&lt;j_{t}\leq n}\left \lfloor\frac{N}{p_{j_{1}}p_{j_{2}}\cdots p_{j_{t}}}\right\rfloor</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C26.S18.Px2">
+<title>Example 2</title>   
+<para xml:id="C26.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C26.S18.Px2.p1.s1">
+With the notation of §26.15, the number of placements of <Math mode="inline" xml:id="C26.S18.Px2.p1.m1">n</Math> nonattacking rooks on an <Math mode="inline" xml:id="C26.S18.Px2.p1.m2">n\times n</Math> chessboard that avoid the squares in a specified subset <Math mode="inline" xml:id="C26.S18.Px2.p1.m3">B</Math> is <Math equation-number="26.18.3" mode="display" xml:id="C26.S18.E3">n!+\sum_{t=1}^{n}(-1)^{t}r_{t}(B)(n-t)!</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C26.S18.Px3">
+<title>Example 3</title>   
+<para xml:id="C26.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S18.Px3.p1.s1">
+The number of ways of placing <Math mode="inline" xml:id="C26.S18.Px3.p1.m1">n</Math> labeled objects into <Math mode="inline" xml:id="C26.S18.Px3.p1.m2">k</Math> labeled boxes so that at least one object is in each box is <Math equation-number="26.18.4" mode="display" xml:id="C26.S18.E4">k^{n}+\sum_{t=1}^{n}(-1)^{t}\genfrac{(}{)}{0.0pt}{}{k}{t}(k-t)^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C26.S18.Px3.p1.s2">
+Note that this is also one of the counting problems for which a formula is given in Table 26.17.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C26.S18.Px3.p1.s3">
+Elements of <Math mode="inline" xml:id="C26.S18.Px3.p1.m3">N</Math> are labeled, elements of <Math mode="inline" xml:id="C26.S18.Px3.p1.m4">K</Math> are labeled, and <Math mode="inline" xml:id="C26.S18.Px3.p1.m5">f</Math> is onto.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S18.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C26.S18.Px3.p2.s1">
+For further examples in the use of generating functions, seeStanley (1997, 1999) and Wilf (1994).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C26.S18.Px3.p2.s2">
+See also Pólya et al. (1983).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</section>

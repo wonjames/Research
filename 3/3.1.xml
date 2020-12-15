@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S1">
+<title>Arithmetics and Error Measures</title>         
+<subsection xml:id="C3.S1.SS1">
+<title>Floating-Point Arithmetic</title>            
+<para xml:id="C3.S1.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S1.SS1.p1.s1">
+Computer arithmetic is described for the binary based system with base 2; another frequently used system is the hexadecimal system with base 16.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C3.S1.SS1.p2.s1">
+A nonzero normalized binary floating-point machine number <Math mode="inline" xml:id="C3.S1.SS1.p2.m1">x</Math> is represented as <Math equation-number="3.1.1" mode="display" xml:id="C3.S1.E1">x=(-1)^{s}\cdot(b_{0}.b_{1}b_{2}\dots b_{p-1})\cdot 2^{E}, if b_{0}=1,</Math> where <Math mode="inline" xml:id="C3.S1.SS1.p2.m2">s</Math> is equal to <Math mode="inline" xml:id="C3.S1.SS1.p2.m3">1</Math> or <Math mode="inline" xml:id="C3.S1.SS1.p2.m4">0</Math> , each <Math mode="inline" xml:id="C3.S1.SS1.p2.m5">b_{j}</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p2.m6">j\geq 1</Math> , is either <Math mode="inline" xml:id="C3.S1.SS1.p2.m7">0</Math> or <Math mode="inline" xml:id="C3.S1.SS1.p2.m8">1</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p2.m9">b_{1}</Math> is the most significant bit, <Math mode="inline" xml:id="C3.S1.SS1.p2.m10">p</Math> ( <Math mode="inline" xml:id="C3.S1.SS1.p2.m11">\in\mathbb{N}</Math> ) is the number of significant bits <Math mode="inline" xml:id="C3.S1.SS1.p2.m12">b_{j}</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p2.m13">b_{p-1}</Math> is the least significant bit, <Math mode="inline" xml:id="C3.S1.SS1.p2.m14">E</Math> is an integer called the exponent, <Math mode="inline" xml:id="C3.S1.SS1.p2.m15">b_{0}.b_{1}b_{2}\dots b_{p-1}</Math> is the significand, and <Math mode="inline" xml:id="C3.S1.SS1.p2.m16">f=.b_{1}b_{2}\dots b_{p-1}</Math> is the fractional part.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S1.SS1.p3.s1">
+The set of machine numbers <Math mode="inline" xml:id="C3.S1.SS1.p3.m1">\mathbb{R}_{{\rm fl}}</Math> is the union of <Math mode="inline" xml:id="C3.S1.SS1.p3.m2">0</Math> and the set <Math equation-number="3.1.2" mode="display" xml:id="C3.S1.E2">(-1)^{s}2^{E}\sum_{j=0}^{p-1}b_{j}2^{-j},</Math> with <Math mode="inline" xml:id="C3.S1.SS1.p3.m3">b_{0}=1</Math> and all allowable choices of <Math mode="inline" xml:id="C3.S1.SS1.p3.m4">E</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p3.m5">p</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p3.m6">s</Math> , and <Math mode="inline" xml:id="C3.S1.SS1.p3.m7">b_{j}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C3.S1.SS1.p4.s1">
+Let <Math mode="inline" xml:id="C3.S1.SS1.p4.m1">E_{{\rm min}}\leq E\leq E_{{\rm max}}</Math> with <Math mode="inline" xml:id="C3.S1.SS1.p4.m2">E_{{\rm min}}&lt;0</Math> and <Math mode="inline" xml:id="C3.S1.SS1.p4.m3">E_{{\rm max}}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C3.S1.SS1.p4.s2">
+For given values of <Math mode="inline" xml:id="C3.S1.SS1.p4.m4">E_{{\rm min}}</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p4.m5">E_{{\rm max}}</Math> , and <Math mode="inline" xml:id="C3.S1.SS1.p4.m6">p</Math> , the format width in bits <Math mode="inline" xml:id="C3.S1.SS1.p4.m7">N</Math> of a computer word is the total number of bits: the sign (one bit), the significant bits <Math mode="inline" xml:id="C3.S1.SS1.p4.m8">b_{1},b_{2},\dots,b_{p-1}</Math> ( <Math mode="inline" xml:id="C3.S1.SS1.p4.m9">p-1</Math> bits), and the bits allocated to the exponent (the remaining <Math mode="inline" xml:id="C3.S1.SS1.p4.m10">N-p</Math> bits).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C3.S1.SS1.p4.s3">
+The integers <Math mode="inline" xml:id="C3.S1.SS1.p4.m11">p</Math> , <Math mode="inline" xml:id="C3.S1.SS1.p4.m12">E_{{\rm min}}</Math> , and <Math mode="inline" xml:id="C3.S1.SS1.p4.m13">E_{{\rm max}}</Math> are characteristics of the machine.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C3.S1.SS1.p4.s4">
+The machine epsilon <Math mode="inline" xml:id="C3.S1.SS1.p4.m14">\epsilon_{M}</Math> , that is, the distance between <Math mode="inline" xml:id="C3.S1.SS1.p4.m15">1</Math> and the next larger machine number with <Math mode="inline" xml:id="C3.S1.SS1.p4.m16">E=0</Math> is given by <Math mode="inline" xml:id="C3.S1.SS1.p4.m17">\epsilon_{M}=2^{-p+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C3.S1.SS1.p4.s5">
+The machine precision is <Math mode="inline" xml:id="C3.S1.SS1.p4.m18">\frac{1}{2}\epsilon_{M}=2^{-p}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C3.S1.SS1.p4.s6">
+The lower and upper bounds for the absolute values of the nonzero machine numbers are given by <Math equation-number="3.1.3" mode="display" xml:id="C3.S1.E3">N_{{\rm min}}=2^{E_{{\rm min}}}\leq|x|\leq 2^{E_{{\rm max}}+1}\left(1-2^{-p} \right)=N_{{\rm max}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="10" xml:id="C3.S1.SS1.p4.s7">
+Underflow (overflow) after computing <Math mode="inline" xml:id="C3.S1.SS1.p4.m19">x\neq 0</Math> occurs when <Math mode="inline" xml:id="C3.S1.SS1.p4.m20">|x|</Math> is smaller (larger) than <Math mode="inline" xml:id="C3.S1.SS1.p4.m21">N_{{\rm min}}</Math> ( <Math mode="inline" xml:id="C3.S1.SS1.p4.m22">N_{{\rm max}}</Math> ).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S1.Px1">
+<title>IEEE Standard</title>  
+    
+<para xml:id="C3.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C3.S1.Px1.p1.s1">
+The current standard is the ANSI/IEEE Standard 754; seeIEEE (1985, §§1–4).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C3.S1.Px1.p1.s2">
+In the case of normalized binary representation the memory positions for single precision ( <Math mode="inline" xml:id="C3.S1.Px1.p1.m1">N=32</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m2">p=24</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m3">E_{{\rm min}}=-126</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m4">E_{{\rm max}}=127</Math> ) anddouble precision ( <Math mode="inline" xml:id="C3.S1.Px1.p1.m5">N=64</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m6">p=53</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m7">E_{{\rm min}}=-1022</Math> , <Math mode="inline" xml:id="C3.S1.Px1.p1.m8">E_{{\rm max}}=1023</Math> ) are as in Figure 3.1.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C3.S1.Px1.p1.s3">
+The respective machine precisions are <Math mode="inline" xml:id="C3.S1.Px1.p1.m9">\frac{1}{2}\epsilon_{M}=0.596\times 10^{-7}</Math> and <Math mode="inline" xml:id="C3.S1.Px1.p1.m10">\frac{1}{2}\epsilon_{M}=0.111\times 10^{-15}</Math>.
+</sentence>
+
+</para>
+       
+  
+   1      <Math mode="inline" xml:id="C3.S1.F1.pic1.m1">s</Math>     8      <Math mode="inline" xml:id="C3.S1.F1.pic1.m2">E</Math>     23 bits      <Math mode="inline" xml:id="C3.S1.F1.pic1.m3">f</Math>    <Math mode="inline" xml:id="C3.S1.F1.pic1.m4">N=32</Math> ,   <Math mode="inline" xml:id="C3.S1.F1.pic1.m5">p=24</Math>    1      <Math mode="inline" xml:id="C3.S1.F1.pic1.m6">s</Math>     11      <Math mode="inline" xml:id="C3.S1.F1.pic1.m7">E</Math>     52 bits      <Math mode="inline" xml:id="C3.S1.F1.pic1.m8">f</Math>    <Math mode="inline" xml:id="C3.S1.F1.pic1.m9">N=64</Math> ,   <Math mode="inline" xml:id="C3.S1.F1.pic1.m10">p=53</Math>     
+<sentence sentence-num-in-section="14" xml:id="C3.S1.F1.s1">
+Figure 3.1.1: Floating-point arithmetic. Memory positions in single and double precision, in the case of binary representation.
+</sentence>  
+</paragraph>
+ 
+<paragraph xml:id="C3.S1.Px2">
+<title>Rounding</title>  
+     
+<para xml:id="C3.S1.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S1.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C3.S1.Px2.p1.m1">x</Math> be any positive number with <Math equation-number="3.1.4" mode="display" xml:id="C3.S1.E4">x=(1.b_{1}b_{2}\dots b_{p-1}b_{p}b_{p+1}\dots)\cdot 2^{E},</Math> <Math mode="inline" xml:id="C3.S1.Px2.p1.m2">N_{{\rm min}}\leq x\leq N_{{\rm max}}</Math> , and <Math equation-number="3.1.5" mode="display" xml:id="C3.S1.E5">x_{-}=(1.b_{1}b_{2}\dots b_{p-1})\cdot 2^{E},x_{+}=((1.b_{1}b_{2}\dots b_{p-1})+\epsilon_{M})\cdot 2^{E}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C3.S1.Px2.p1.s2">
+Then rounding by chopping or rounding down of <Math mode="inline" xml:id="C3.S1.Px2.p1.m3">x</Math> gives <Math mode="inline" xml:id="C3.S1.Px2.p1.m4">x_{-}</Math> , with maximum relative error <Math mode="inline" xml:id="C3.S1.Px2.p1.m5">\epsilon_{M}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C3.S1.Px2.p1.s3">
+Symmetric rounding orrounding to nearest of <Math mode="inline" xml:id="C3.S1.Px2.p1.m6">x</Math> gives <Math mode="inline" xml:id="C3.S1.Px2.p1.m7">x_{-}</Math> or <Math mode="inline" xml:id="C3.S1.Px2.p1.m8">x_{+}</Math> , whichever is nearer to <Math mode="inline" xml:id="C3.S1.Px2.p1.m9">x</Math> , with maximum relative error equal to the machine precision <Math mode="inline" xml:id="C3.S1.Px2.p1.m10">\frac{1}{2}\epsilon_{M}=2^{-p}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C3.S1.Px2.p2.s1">
+Negative numbers <Math mode="inline" xml:id="C3.S1.Px2.p2.m1">x</Math> are rounded in the same way as <Math mode="inline" xml:id="C3.S1.Px2.p2.m2">-x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C3.S1.Px2.p3.s1">
+For further information see Goldberg (1991) andOverton (2001).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S1.SS2">
+<title>Interval Arithmetic</title>            
+<para xml:id="C3.S1.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C3.S1.SS2.p1.s1">
+Interval arithmetic is intended for bounding the total effect of rounding errors of calculations with machine numbers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C3.S1.SS2.p1.s2">
+With this arithmetic the computed result can be proved to lie in a certain interval, which leads tovalidated computing with guaranteed and rigorous inclusion regions for the results.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S1.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C3.S1.SS2.p2.s1">
+Let <Math mode="inline" xml:id="C3.S1.SS2.p2.m1">G</Math> be the set of closed intervals <Math mode="inline" xml:id="C3.S1.SS2.p2.m2">\{[a,b]\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C3.S1.SS2.p2.s2">
+The elementary arithmetical operations on intervals are defined as follows: <Math equation-number="3.1.6" mode="display" xml:id="C3.S1.E6">I*J=\{x*y\,|\,x\in I,y\in J\}, if I,J\in G,</Math> where <Math mode="inline" xml:id="C3.S1.SS2.p2.m3">*\in\{+,-,\cdot,/\}</Math> , with appropriate roundings of the end points of <Math mode="inline" xml:id="C3.S1.SS2.p2.m4">I*J</Math> when machine numbers are being used. Division is possible only if the divisor interval does not contain zero.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C3.S1.SS2.p3.s1">
+A basic text on interval arithmetic and analysis is Alefeld and Herzberger (1983), and for applications and further information see Moore (1979) andPetković and Petković (1998).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C3.S1.SS2.p3.s2">
+The last reference includes analogs for arithmetic in the complex plane <Math mode="inline" xml:id="C3.S1.SS2.p3.m1">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S1.SS3">
+<title>Rational Arithmetics</title>          
+   
+<para xml:id="C3.S1.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C3.S1.SS3.p1.s1">
+Computer algebra systems use exact rational arithmetic with rational numbers <Math mode="inline" xml:id="C3.S1.SS3.p1.m1">p/q</Math> , where <Math mode="inline" xml:id="C3.S1.SS3.p1.m2">p</Math> and <Math mode="inline" xml:id="C3.S1.SS3.p1.m3">q</Math> are multi-length integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C3.S1.SS3.p1.s2">
+During the calculations common divisors are removed from the rational numbers, and the final results can be converted to decimal representations of arbitrary length.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C3.S1.SS3.p1.s3">
+For further information see Matula and Kornerup (1980).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S1.SS4">
+<title>Level-Index Arithmetic</title>           
+<para xml:id="C3.S1.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C3.S1.SS4.p1.s1">
+To eliminate overflow or underflow in finite-precision arithmetic numbers are represented by using generalized logarithms <Math mode="inline" xml:id="C3.S1.SS4.p1.m1">\ln_{\ell}(x)</Math> given by <Math equation-number="3.1.7" mode="display" xml:id="C3.S1.E7">\ln_{0}(x)=x,\ln_{\ell}(x)=\ln\left(\ln_{\ell-1}(x)\right), if \ell=1,2,\dots,</Math> with <Math mode="inline" xml:id="C3.S1.SS4.p1.m2">x\geq 0</Math> and <Math mode="inline" xml:id="C3.S1.SS4.p1.m3">\ell</Math> the unique nonnegative integer such that <Math mode="inline" xml:id="C3.S1.SS4.p1.m4">a=\ln_{\ell}(x)\in[0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C3.S1.SS4.p1.s2">
+In level-index arithmetic <Math mode="inline" xml:id="C3.S1.SS4.p1.m5">x</Math> is represented by <Math mode="inline" xml:id="C3.S1.SS4.p1.m6">\ell+a</Math> (or <Math mode="inline" xml:id="C3.S1.SS4.p1.m7">-(\ell+a)</Math> for negative numbers).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C3.S1.SS4.p1.s3">
+Also in this arithmetic generalized precision can be defined, which includes absolute error and relative precision (§3.1(v)) as special cases.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C3.S1.SS4.p2.s1">
+For further information see Clenshaw and Olver (1984) andClenshaw et al. (1989).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C3.S1.SS4.p2.s2">
+For applications see Lozier (1993).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C3.S1.SS4.p3.s1">
+For further references on level-index arithmetic (and also other arithmetics) see Anuta et al. (1996).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C3.S1.SS4.p3.s2">
+See also Hayes (2009).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S1.SS5">
+<title>Error Measures</title>         
+<para xml:id="C3.S1.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C3.S1.SS5.p1.s1">
+If <Math mode="inline" xml:id="C3.S1.SS5.p1.m1">x^{*}</Math> is an approximation to a real or complex number <Math mode="inline" xml:id="C3.S1.SS5.p1.m2">x</Math> , then theabsolute error is <Math equation-number="3.1.8" mode="display" xml:id="C3.S1.E8">\epsilon_{a}=\left|x^{*}-x\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C3.S1.SS5.p1.s2">
+If <Math mode="inline" xml:id="C3.S1.SS5.p1.m3">x\neq 0</Math> , the relative error is <Math equation-number="3.1.9" mode="display" xml:id="C3.S1.E9">\epsilon_{r}=\left|\frac{x^{*}-x}{x}\right|=\frac{\epsilon_{a}}{\left|x\right|}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C3.S1.SS5.p1.s3">
+The relative precision is <Math equation-number="3.1.10" mode="display" xml:id="C3.S1.E10">\epsilon_{\mathit{rp}}=\left|\ln\left(\ifrac{x^{*}}{x}\right)\right|,</Math> where <Math mode="inline" xml:id="C3.S1.SS5.p1.m4">xx^{*}&gt;0</Math> for real variables, and <Math mode="inline" xml:id="C3.S1.SS5.p1.m5">xx^{*}\neq 0</Math> for complex variables (with the principal value of the logarithm).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C3.S1.SS5.p2.s1">
+The mollified error is <Math equation-number="3.1.11" mode="display" xml:id="C3.S1.E11">\epsilon_{m}=\frac{\left|x^{*}-x\right|}{\max(\left|x\right|,1)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S1.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C3.S1.SS5.p3.s1">
+For error measures for complex arithmetic see Olver (1983).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

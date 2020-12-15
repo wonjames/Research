@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S13">
+<title>Permutations: Cycle Notation</title>        
+  
+<para xml:id="C26.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S13.p1.s1">
+ <Math mode="inline" xml:id="C26.S13.p1.m1">\mathfrak{S}_{n}</Math> denotes the set of permutations of <Math mode="inline" xml:id="C26.S13.p1.m2">\{1,2,\ldots,n\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S13.p1.s2">
+<Math mode="inline" xml:id="C26.S13.p1.m5">\sigma\in\mathfrak{S}_{n}</Math> is a one-to-one and onto mapping from <Math mode="inline" xml:id="C26.S13.p1.m6">\{1,2,\ldots,n\}</Math> to itself.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S13.p1.s3">
+An explicit representation of <Math mode="inline" xml:id="C26.S13.p1.m7">\sigma</Math> can be given by the <Math mode="inline" xml:id="C26.S13.p1.m8">2\times n</Math> matrix:
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C26.S13.p2.s1">
+ <Math equation-number="26.13.1" mode="display" xml:id="C26.S13.E1">\begin{bmatrix}1&amp;2&amp;3&amp;\cdots&amp;n\\ \sigma(1)&amp;\sigma(2)&amp;\sigma(3)&amp;\cdots&amp;\sigma(n)\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C26.S13.p3.s1">
+In cycle notation, the elements in each cycle are put inside parentheses, ordered so that <Math mode="inline" xml:id="C26.S13.p3.m1">\sigma(j)</Math> immediately follows <Math mode="inline" xml:id="C26.S13.p3.m2">j</Math> or, if <Math mode="inline" xml:id="C26.S13.p3.m3">j</Math> is the last listed element of the cycle, then <Math mode="inline" xml:id="C26.S13.p3.m4">\sigma(j)</Math> is the first element of the cycle.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C26.S13.p3.s2">
+The permutation
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S13.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C26.S13.p4.s1">
+ <Math equation-number="26.13.2" mode="display" xml:id="C26.S13.E2">\begin{bmatrix}1&amp;2&amp;3&amp;4&amp;5&amp;6&amp;7&amp;8\\ 3&amp;5&amp;2&amp;4&amp;7&amp;8&amp;1&amp;6\end{bmatrix}</Math> is <Math mode="inline" xml:id="C26.S13.p4.m1">(1,3,2,5,7)(4)(6,8)</Math> in cycle notation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C26.S13.p4.s2">
+Cycles of length one arefixed points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C26.S13.p4.s3">
+They are often dropped from the cycle notation.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C26.S13.p4.s4">
+In consequence, (26.13.2) can also be written as <Math mode="inline" xml:id="C26.S13.p4.m2">(1,3,2,5,7)(6,8)</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C26.S13.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C26.S13.p5.s1">
+An element of <Math mode="inline" xml:id="C26.S13.p5.m1">\mathfrak{S}_{n}</Math> with <Math mode="inline" xml:id="C26.S13.p5.m2">a_{1}</Math> fixed points, <Math mode="inline" xml:id="C26.S13.p5.m3">a_{2}</Math> cycles of length <Math mode="inline" xml:id="C26.S13.p5.m4">2,\ldots,a_{n}</Math> cycles of length <Math mode="inline" xml:id="C26.S13.p5.m5">n</Math> , where <Math mode="inline" xml:id="C26.S13.p5.m6">n=a_{1}+2a_{2}+\cdots+na_{n}</Math> , is said to have cycle type <Math mode="inline" xml:id="C26.S13.p5.m7">(a_{1},a_{2},\ldots,a_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C26.S13.p5.s2">
+The number of elements of <Math mode="inline" xml:id="C26.S13.p5.m8">\mathfrak{S}_{n}</Math> with cycle type <Math mode="inline" xml:id="C26.S13.p5.m9">(a_{1},a_{2},\ldots,a_{n})</Math> is given by (26.4.7).
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S13.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C26.S13.p6.s1">
+The Stirling cycle numbers of the first kind, denoted by <Math mode="inline" xml:id="C26.S13.p6.m1">\left[n\atop k\right]</Math> , count the number of permutations of <Math mode="inline" xml:id="C26.S13.p6.m2">\{1,2,\ldots,n\}</Math> with exactly <Math mode="inline" xml:id="C26.S13.p6.m3">k</Math> cycles.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C26.S13.p6.s2">
+They are related to Stirling numbers of the first kind by <Math equation-number="26.13.3" mode="display" xml:id="C26.S13.E3">\left[n\atop k\right]=\left|s\left(n,k\right)\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C26.S13.p6.s3">
+See §26.8 for generating functions, recurrence relations, identities, and asymptotic approximations.
+</sentence>
+
+</para>
+   
+<para xml:id="C26.S13.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C26.S13.p7.s1">
+A derangement is a permutation with no fixed points.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C26.S13.p7.s2">
+Thederangement number, <Math mode="inline" xml:id="C26.S13.p7.m1">d(n)</Math> , is the number of elements of <Math mode="inline" xml:id="C26.S13.p7.m2">\mathfrak{S}_{n}</Math> with no fixed points: <Math equation-number="26.13.4" mode="display" xml:id="C26.S13.E4">d(n)=n!\sum_{j=0}^{n}(-1)^{j}\frac{1}{j!}=\left\lfloor\frac{n!+\mathrm{e}-2}{ \mathrm{e}}\right\rfloor</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C26.S13.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C26.S13.p8.s1">
+A transposition is a permutation that consists of a single cycle of length two.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C26.S13.p8.s2">
+An adjacent transposition is a transposition of two consecutive integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C26.S13.p8.s3">
+A permutation that consists of a single cycle of length <Math mode="inline" xml:id="C26.S13.p8.m1">k</Math> can be written as the composition of <Math mode="inline" xml:id="C26.S13.p8.m2">k-1</Math> two-cycles (read from right to left): <Math equation-number="26.13.5" mode="display" xml:id="C26.S13.E5">(j_{1},j_{2},\ldots,j_{k})=(j_{1},j_{2})(j_{2},j_{3})\cdots(j_{k-2},j_{k-1})(j _{k-1},j_{k})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C26.S13.p8.s4">
+Every permutation is a product of transpositions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C26.S13.p8.s5">
+A permutation with cycle type <Math mode="inline" xml:id="C26.S13.p8.m3">(a_{1},a_{2},\ldots,a_{n})</Math> can be written as a product of <Math mode="inline" xml:id="C26.S13.p8.m4">a_{2}+2a_{3}+\cdots+(n-1)a_{n}=n-(a_{1}+a_{2}+\cdots+a_{n})</Math> transpositions, and no fewer.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="23" xml:id="C26.S13.p8.s6">
+For the example (26.13.2), this decomposition is given by <Math mode="inline" xml:id="C26.S13.p8.m5">(1,3,2,5,7)(6,8)=(1,3)(2,3)(2,5)(5,7)(6,8)</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C26.S13.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C26.S13.p9.s1">
+A permutation is even or odd according to the parity of the number of transpositions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C26.S13.p9.s2">
+The sign of a permutation is <Math mode="inline" xml:id="C26.S13.p9.m1">+</Math> if the permutation is even, <Math mode="inline" xml:id="C26.S13.p9.m2">-</Math> if it is odd.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S13.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C26.S13.p10.s1">
+Every transposition is the product of adjacent transpositions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C26.S13.p10.s2">
+If <Math mode="inline" xml:id="C26.S13.p10.m1">j&lt;k</Math> , then <Math mode="inline" xml:id="C26.S13.p10.m2">(j,k)</Math> is a product of <Math mode="inline" xml:id="C26.S13.p10.m3">2k-2j-1</Math> adjacent transpositions: <Math equation-number="26.13.6" mode="display" xml:id="C26.S13.E6">(j,k)=(k-1,k)(k-2,k-1)\cdots(j+1,j+2)\*(j,j+1)(j+1,j+2)\cdots(k-1,k)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C26.S13.p10.s3">
+Every permutation is a product of adjacent transpositions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C26.S13.p10.s4">
+Given a permutation <Math mode="inline" xml:id="C26.S13.p10.m4">\sigma\in\mathfrak{S}_{n}</Math> , the inversion number of <Math mode="inline" xml:id="C26.S13.p10.m5">\sigma</Math> , denoted <Math mode="inline" xml:id="C26.S13.p10.m6">\mathop{\mathrm{inv}}(\sigma)</Math> , is the least number of adjacent transpositions required to represent <Math mode="inline" xml:id="C26.S13.p10.m7">\sigma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="30" xml:id="C26.S13.p10.s5">
+Again, for the example (26.13.2) a minimal decomposition into adjacent transpositions is given by <Math mode="inline" xml:id="C26.S13.p10.m8">(1,3,2,5,7)(6,8)=(2,3)\*(1,2)\*(4,5)(3,4)(2,3)(3,4)(4,5)(6,7)(5,6)(7,8)\*(6,7)</Math> : <Math mode="inline" xml:id="C26.S13.p10.m9">\mathop{\mathrm{inv}}((1,3,2,5,7)(6,8))=11</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>

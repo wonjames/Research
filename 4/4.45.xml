@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S45">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C4.S45.SS1">
+<title>Real Variables</title>         
+<paragraph xml:id="C4.S45.Px1">
+<title>Logarithms</title>    
+<para xml:id="C4.S45.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S45.Px1.p1.s1">
+The function <Math mode="inline" xml:id="C4.S45.Px1.p1.m1">\ln x</Math> can always be computed from its ascending power series after preliminary scaling.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S45.Px1.p1.s2">
+Suppose first <Math mode="inline" xml:id="C4.S45.Px1.p1.m2">1/10\leq x\leq 10</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C4.S45.Px1.p1.s3">
+Then we take square roots repeatedly until <Math mode="inline" xml:id="C4.S45.Px1.p1.m3">|y|</Math> is sufficiently small, where <Math equation-number="4.45.1" mode="display" xml:id="C4.S45.E1">y=x^{2^{-m}}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C4.S45.Px1.p1.s4">
+After computing <Math mode="inline" xml:id="C4.S45.Px1.p1.m4">\ln\left(1+y\right)</Math> from (4.6.1)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C4.S45.Px1.p1.s5">
+<Math equation-number="4.45.2" mode="display" xml:id="C4.S45.E2">\ln x=2^{m}\ln\left(1+y\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C4.S45.Px1.p2.s1">
+For other values of <Math mode="inline" xml:id="C4.S45.Px1.p2.m1">x</Math> set <Math mode="inline" xml:id="C4.S45.Px1.p2.m2">x=10^{m}\xi</Math> , where <Math mode="inline" xml:id="C4.S45.Px1.p2.m3">1/10\leq\xi\leq 10</Math> and <Math mode="inline" xml:id="C4.S45.Px1.p2.m4">m\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C4.S45.Px1.p2.s2">
+Then <Math equation-number="4.45.3" mode="display" xml:id="C4.S45.E3">\ln x=\ln\xi+m\ln 10</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S45.Px2">
+<title>Exponentials</title>    
+<para xml:id="C4.S45.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S45.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C4.S45.Px2.p1.m1">x</Math> have any real value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C4.S45.Px2.p1.s2">
+First, rescale via <Math equation-number="4.45.4" mode="display" xml:id="C4.S45.E4">m=\left\lfloor\frac{x}{\ln 10}+\frac{1}{2}\right\rfloor,y=x-m\ln 10</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C4.S45.Px2.p1.s3">
+Then <Math equation-number="4.45.5" mode="display" xml:id="C4.S45.E5">e^{x}=10^{m}e^{y},</Math> and since <Math mode="inline" xml:id="C4.S45.Px2.p1.m2">|y|\leq\frac{1}{2}\ln 10=1.15\dot</Math> s, <Math mode="inline" xml:id="C4.S45.Px2.p1.m3">e^{y}</Math> can be computed straightforwardly from (4.2.19).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S45.Px3">
+<title>Trigonometric Functions</title>    
+<para xml:id="C4.S45.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C4.S45.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C4.S45.Px3.p1.m1">x</Math> have any real value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C4.S45.Px3.p1.s2">
+We first compute <Math mode="inline" xml:id="C4.S45.Px3.p1.m2">\xi=x/\pi</Math> , followed by <Math equation-number="4.45.6" mode="display" xml:id="C4.S45.E6">m=\left\lfloor\xi+\tfrac{1}{2}\right\rfloor,\theta=\pi(\xi-m)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C4.S45.Px3.p1.s3">
+Then <Math equation-number="4.45.7" mode="display" xml:id="C4.S45.E7">\sin x=(-1)^{m}\sin\theta,\cos x=(-1)^{m}\cos\theta,</Math> and since <Math mode="inline" xml:id="C4.S45.Px3.p1.m3">|\theta|\leq\frac{1}{2}\pi=1.57\dot</Math> s, <Math mode="inline" xml:id="C4.S45.Px3.p1.m4">\sin\theta</Math> and <Math mode="inline" xml:id="C4.S45.Px3.p1.m5">\cos\theta</Math> can be computed straightforwardly from (4.19.1) and (4.19.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C4.S45.Px3.p2.s1">
+The other trigonometric functions can be found from the definitions (4.14.4)–(4.14.7).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S45.Px4">
+<title>Inverse Trigonometric Functions</title>    
+<para xml:id="C4.S45.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C4.S45.Px4.p1.s1">
+The function <Math mode="inline" xml:id="C4.S45.Px4.p1.m1">\operatorname{arctan}x</Math> can always be computed from its ascending power series after preliminary transformations to reduce the size of <Math mode="inline" xml:id="C4.S45.Px4.p1.m2">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C4.S45.Px4.p1.s2">
+From (4.24.15) with <Math mode="inline" xml:id="C4.S45.Px4.p1.m3">u=v=((1+x^{2})^{1/2}-1)/x</Math> , we have <Math equation-number="4.45.8" mode="display" xml:id="C4.S45.E8">2\operatorname{arctan}\frac{x}{1+(1+x^{2})^{1/2}}=\operatorname{arctan}x, if 0&lt;x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C4.S45.Px4.p1.s3">
+Beginning with <Math mode="inline" xml:id="C4.S45.Px4.p1.m4">x_{0}=x</Math> , generate the sequence <Math equation-number="4.45.9" mode="display" xml:id="C4.S45.E9">x_{n}=\frac{x_{n-1}}{1+(1+x^{2}_{n-1})^{1/2}}, if n=1,2,3,\dots,</Math> until <Math mode="inline" xml:id="C4.S45.Px4.p1.m5">x_{n}</Math> is sufficiently small.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C4.S45.Px4.p1.s4">
+We then compute <Math mode="inline" xml:id="C4.S45.Px4.p1.m6">\operatorname{arctan}x_{n}</Math> from (4.24.3), followed by <Math equation-number="4.45.10" mode="display" xml:id="C4.S45.E10">\operatorname{arctan}x=2^{n}\operatorname{arctan}x_{n}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C4.S45.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C4.S45.Px4.p2.s1">
+Another method, when <Math mode="inline" xml:id="C4.S45.Px4.p2.m1">x</Math> is large, is to sum <Math equation-number="4.45.11" mode="display" xml:id="C4.S45.E11">\operatorname{arctan}x=\frac{\pi}{2}-\frac{1}{x}+\frac{1}{3x^{3}}-\frac{1}{5x^ {5}}+\dots;</Math> compare (4.24.4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C4.S45.Px4.p3.s1">
+As an example, take <Math mode="inline" xml:id="C4.S45.Px4.p3.m1">x=9.4737</Math> 6. Then <Math equation-number="4.45.12" mode="display" xml:id="C4.S45.E12">x_{1}=0.90000\dots,x_{2}=0.38373\dots,x_{3}=0.18528\dots,x_{4}=0.09185\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C4.S45.Px4.p4.s1">
+From (4.24.3)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C4.S45.Px4.p4.s2">
+<Math mode="inline" xml:id="C4.S45.Px4.p4.m1">\operatorname{arctan}x_{4}=0.09160\dot</Math> s. From (4.45.10)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C4.S45.Px4.p4.s3">
+<Math equation-number="4.45.13" mode="display" xml:id="C4.S45.E13">\operatorname{arctan}x=16\operatorname{arctan}x_{4}=1.46563\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C4.S45.Px4.p5.s1">
+As a check, from (4.45.11)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C4.S45.Px4.p5.s2">
+<Math equation-number="4.45.14" mode="display" xml:id="C4.S45.E14">\operatorname{arctan}x=1.57079\ldots-0.10555\ldots+0.00039\ldots-\cdots=1.4656 3\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.Px4.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C4.S45.Px4.p6.s1">
+For the remaining inverse trigonometric functions, we may use the identities provided by the fourth row of Table 4.16.3.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C4.S45.Px4.p6.s2">
+For example, <Math mode="inline" xml:id="C4.S45.Px4.p6.m1">\operatorname{arcsin}x=\operatorname{arctan}\left(x(1-x^{2})^{-1/2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S45.Px5">
+<title>Hyperbolic and Inverse Hyperbolic Functions</title>     
+<para xml:id="C4.S45.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C4.S45.Px5.p1.s1">
+The hyperbolic functions can be computed directly from the definitions(4.28.1)–(4.28.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C4.S45.Px5.p1.s2">
+The inverses <Math mode="inline" xml:id="C4.S45.Px5.p1.m1">\operatorname{arcsinh}</Math> , <Math mode="inline" xml:id="C4.S45.Px5.p1.m2">\operatorname{arccosh}</Math> , and <Math mode="inline" xml:id="C4.S45.Px5.p1.m3">\operatorname{arctanh}</Math> can be computed from the logarithmic forms given in §4.37(iv), with real arguments.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C4.S45.Px5.p1.s3">
+For <Math mode="inline" xml:id="C4.S45.Px5.p1.m4">\operatorname{arccsch}</Math> , <Math mode="inline" xml:id="C4.S45.Px5.p1.m5">\operatorname{arcsech}</Math> , and <Math mode="inline" xml:id="C4.S45.Px5.p1.m6">\operatorname{arccoth}</Math> we have (4.37.7)–(4.37.9).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C4.S45.Px6">
+<title>Other Methods</title>   
+<para xml:id="C4.S45.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C4.S45.Px6.p1.s1">
+See Luther (1995),Ziv (1991), Cody and Waite (1980), Rosenberg and McNamee (1976), Carlson (1972a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C4.S45.Px6.p1.s2">
+For interval-arithmetic algorithms, seeMarkov (1981).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C4.S45.Px6.p1.s3">
+For Shift-and-Add and CORDIC algorithms, seeMuller (1997), Merrheim (1994), Schelin (1983).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="34" xml:id="C4.S45.Px6.p1.s4">
+For multiprecision methods, see Smith (1989), Brent (1976).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S45.SS2">
+<title>Complex Variables</title>         
+<para xml:id="C4.S45.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C4.S45.SS2.p1.s1">
+For <Math mode="inline" xml:id="C4.S45.SS2.p1.m1">\ln z</Math> and <Math mode="inline" xml:id="C4.S45.SS2.p1.m2">e^{z}</Math> <Math equation-number="4.45.15" mode="display" xml:id="C4.S45.E15">\ln z=\ln|z|+i\operatorname{ph}z, if -\pi\leq\operatorname{ph}z\leq\pi,</Math> , <Math equation-number="4.45.16" mode="display" xml:id="C4.S45.E16">e^{z}=e^{\Re z}(\cos\left(\Im z\right)+i\sin\left(\Im z\right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C4.S45.SS2.p1.s2">
+See §1.9(i) for the precise relationship of <Math mode="inline" xml:id="C4.S45.SS2.p1.m3">\operatorname{ph}z</Math> to the arctangent function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C4.S45.SS2.p2.s1">
+The trigonometric functions may be computed from the definitions (4.14.1)–(4.14.7), and their inverses from the logarithmic forms in §4.23(iv), followed by (4.23.7)–(4.23.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C4.S45.SS2.p2.s2">
+Similarly for the hyperbolic and inverse hyperbolic functions; compare (4.28.1)–(4.28.7), §4.37(iv), and (4.37.7)–(4.37.9).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C4.S45.SS2.p3.s1">
+For other methods see Miel (1981).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S45.SS3">
+<title>Lambert <Math mode="inline" xml:id="C4.S45.SS3.m1">W</Math>-Function</title>          
+<para xml:id="C4.S45.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C4.S45.SS3.p1.s1">
+For <Math mode="inline" xml:id="C4.S45.SS3.p1.m1">x\in[-1/e,\infty)</Math> the principal branch <Math mode="inline" xml:id="C4.S45.SS3.p1.m2">\mathrm{Wp}\left(x\right)</Math> can be computedby solving the defining equation <Math mode="inline" xml:id="C4.S45.SS3.p1.m3">We^{W}=x</Math> numerically, for example, by Newton’s rule (§3.8(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C4.S45.SS3.p1.s2">
+Initial approximations are obtainable, for example, from the power series (4.13.6) (with <Math mode="inline" xml:id="C4.S45.SS3.p1.m4">t\geq 0</Math> ) when <Math mode="inline" xml:id="C4.S45.SS3.p1.m5">x</Math> is close to <Math mode="inline" xml:id="C4.S45.SS3.p1.m6">-1/e</Math> , from the asymptotic expansion (4.13.10) when <Math mode="inline" xml:id="C4.S45.SS3.p1.m7">x</Math> is large, and by numerical integration of the differential equation (4.13.4) (§3.7) for other values of <Math mode="inline" xml:id="C4.S45.SS3.p1.m8">x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C4.S45.SS3.p2.s1">
+Similarly for <Math mode="inline" xml:id="C4.S45.SS3.p2.m1">\mathrm{Wm}\left(x\right)</Math> in the interval <Math mode="inline" xml:id="C4.S45.SS3.p2.m2">[-1/e,0)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S45.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C4.S45.SS3.p3.s1">
+See also Barry et al. (1995b) and Chapeau-Blondeau and Monir (2002).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

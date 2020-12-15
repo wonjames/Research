@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S11">
+<title>Asymptotic Approximations and Expansions</title>          
+<subsection xml:id="C8.S11.SS1">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS1.m1">z</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS1.m2">a</Math></title>         
+<para xml:id="C8.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S11.SS1.p1.s1">
+Define <Math equation-number="8.11.1" mode="display" xml:id="C8.S11.E1">u_{k}=(-1)^{k}{\left(1-a\right)_{k}}=(a-1)(a-2)\cdots(a-k),</Math> <Math equation-number="8.11.2" mode="display" xml:id="C8.S11.E2">\Gamma\left(a,z\right)=z^{a-1}e^{-z}\left(\sum_{k=0}^{n-1}\frac{u_{k}}{z^{k}}+ R_{n}(a,z)\right), if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S11.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S11.SS1.p1.m1">z\to\infty</Math> with <Math mode="inline" xml:id="C8.S11.SS1.p1.m2">a</Math> and <Math mode="inline" xml:id="C8.S11.SS1.p1.m3">n</Math> fixed <Math equation-number="8.11.3" mode="display" xml:id="C8.S11.E3">R_{n}(a,z)=O\left(z^{-n}\right), if |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta,</Math> where <Math mode="inline" xml:id="C8.S11.SS1.p1.m4">\delta</Math> denotes an arbitrary small positive constant.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C8.S11.SS1.p2.s1">
+If <Math mode="inline" xml:id="C8.S11.SS1.p2.m1">a</Math> is real and <Math mode="inline" xml:id="C8.S11.SS1.p2.m2">z</Math> ( <Math mode="inline" xml:id="C8.S11.SS1.p2.m3">=x</Math> ) is positive, then <Math mode="inline" xml:id="C8.S11.SS1.p2.m4">R_{n}(a,x)</Math> is bounded in absolute value by the first neglected term <Math mode="inline" xml:id="C8.S11.SS1.p2.m5">u_{n}/x^{n}</Math> and has the same sign provided that <Math mode="inline" xml:id="C8.S11.SS1.p2.m6">n\geq a-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C8.S11.SS1.p2.s2">
+For bounds on <Math mode="inline" xml:id="C8.S11.SS1.p2.m7">R_{n}(a,z)</Math> when <Math mode="inline" xml:id="C8.S11.SS1.p2.m8">a</Math> is real and <Math mode="inline" xml:id="C8.S11.SS1.p2.m9">z</Math> is complex see Olver (1997b, pp. 109–112).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C8.S11.SS1.p2.s3">
+For an exponentially-improved asymptotic expansion (§2.11(iii)) seeOlver (1991a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS2">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS2.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS2.m2">z</Math></title>         
+<para xml:id="C8.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C8.S11.SS2.p1.s1">
+ <Math equation-number="8.11.4" mode="display" xml:id="C8.S11.E4">\gamma\left(a,z\right)=z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{z^{k}}{{\left(a \right)_{k+1}}}, if a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C8.S11.SS2.p1.s2">
+This expansion is absolutely convergent for all finite <Math mode="inline" xml:id="C8.S11.SS2.p1.m1">z</Math> , and it can also be regarded as a generalized asymptotic expansion (§2.1(v)) of <Math mode="inline" xml:id="C8.S11.SS2.p1.m2">\gamma\left(a,z\right)</Math> as <Math mode="inline" xml:id="C8.S11.SS2.p1.m3">a\to\infty</Math> in <Math mode="inline" xml:id="C8.S11.SS2.p1.m4">|\operatorname{ph}a|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C8.S11.SS2.p2.s1">
+Also, <Math equation-number="8.11.5" mode="display" xml:id="C8.S11.E5">P\left(a,z\right)\sim\frac{z^{a}e^{-z}}{\Gamma\left(1+a\right)}\sim(2\pi a)^{- \frac{1}{2}}e^{a-z}(z/a)^{a}, if a\to\infty, |\operatorname{ph}a|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS3">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS3.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS3.m2">z/a</Math></title>        
+ 
+<para xml:id="C8.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S11.SS3.p1.s1">
+If <Math mode="inline" xml:id="C8.S11.SS3.p1.m1">z=\lambda a</Math> , with <Math mode="inline" xml:id="C8.S11.SS3.p1.m2">\lambda</Math> fixed, then as <Math mode="inline" xml:id="C8.S11.SS3.p1.m3">a\to\infty</Math> <Math equation-number="8.11.6" mode="display" xml:id="C8.S11.E6">\gamma\left(a,z\right)\sim-z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{(-a)^{k}b_{k}( \lambda)}{(z-a)^{2k+1}}, if 0&lt;\lambda&lt;1, |\operatorname{ph}a|\leq\frac{\pi}{2}-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S11.SS3.p1.s2">
+<Math equation-number="8.11.7" mode="display" xml:id="C8.S11.E7">\Gamma\left(a,z\right)\sim z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{(-a)^{k}b_{k}( \lambda)}{(z-a)^{2k+1}}, if \lambda&gt;1, |\operatorname{ph}a|\leq\frac{3\pi}{2}-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C8.S11.SS3.p1.s3">
+where <Math equation-number="8.11.8" mode="display" xml:id="C8.S11.E8">b_{0}(\lambda)=1,b_{1}(\lambda)=\lambda,b_{2}(\lambda)=\lambda(2\lambda+1),</Math> and for <Math mode="inline" xml:id="C8.S11.SS3.p1.m4">k=1,2,\dots</Math> , <Math equation-number="8.11.9" mode="display" xml:id="C8.S11.E9">b_{k}(\lambda)=\lambda(1-\lambda)b_{k-1}^{\prime}(\lambda)+(2k-1)\lambda b_{k- 1}(\lambda)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C8.S11.SS3.p2.s1">
+Sharp error bounds and an exponentially-improved extension for (8.11.7) can be found in Nemes (2016).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C8.S11.SS3.p2.s2">
+This reference also contains explicit formulas for <Math mode="inline" xml:id="C8.S11.SS3.p2.m1">b_{k}(\lambda)</Math> in terms of Stirling numbers and for the case <Math mode="inline" xml:id="C8.S11.SS3.p2.m2">\lambda&gt;1</Math> an asymptotic expansion for <Math mode="inline" xml:id="C8.S11.SS3.p2.m3">b_{k}(\lambda)</Math> as <Math mode="inline" xml:id="C8.S11.SS3.p2.m4">k\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C8.S11.SS3.p3.s1">
+The expansion (8.11.7) also applies when <Math mode="inline" xml:id="C8.S11.SS3.p3.m1">a</Math> is replaced by <Math mode="inline" xml:id="C8.S11.SS3.p3.m2">-a</Math> , <Math mode="inline" xml:id="C8.S11.SS3.p3.m3">\lambda&lt;0</Math> and <Math mode="inline" xml:id="C8.S11.SS3.p3.m4">|{\rm ph}\,a|\leq\frac{3\pi}{2}-\omega-\delta</Math> with <Math mode="inline" xml:id="C8.S11.SS3.p3.m5">\omega={\rm ph}(-\lambda+\ln\left(-\lambda\right)+\pi i)</Math> , <Math mode="inline" xml:id="C8.S11.SS3.p3.m6">0&lt;\omega&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C8.S11.SS3.p3.s2">
+For error bounds and an exponentially-improved extension for this later expansion, see Nemes (2015c).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS4">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS4.m1">a</Math>, Bounded <Math mode="inline" xml:id="C8.S11.SS4.m2">(x-a)/(2a)^{\frac{1}{2}}</Math></title>        
+ 
+<para xml:id="C8.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S11.SS4.p1.s1">
+If <Math mode="inline" xml:id="C8.S11.SS4.p1.m1">x=a+(2a)^{\frac{1}{2}}y</Math> and <Math mode="inline" xml:id="C8.S11.SS4.p1.m2">a\to+\infty</Math> , then <Math equation-number="8.11.10" mode="display" xml:id="C8.S11.E10">P\left(a+1,x\right)=\tfrac{1}{2}\operatorname{erfc}\left(-y\right)-\frac{1}{3} \sqrt{\frac{2}{\pi a}}(1+y^{2})e^{-y^{2}}+O\left(a^{-1}\right),</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C8.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C8.S11.SS4.p2.s1">
+ <Math equation-number="8.11.11" mode="display" xml:id="C8.S11.E11">\gamma^{*}\left(1-a,-x\right)=x^{a-1}\left(-\cos\left(\pi a\right)+\frac{\sin \left(\pi a\right)}{\pi}\left(2\sqrt{\pi}F\left(y\right)+\frac{2}{3}\sqrt{ \frac{2\pi}{a}}\left(1-y^{2}\right)\right)e^{y^{2}}+O\left(a^{-1}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C8.S11.SS4.p3.s1">
+in both cases uniformly with respect to bounded real values of <Math mode="inline" xml:id="C8.S11.SS4.p3.m1">y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C8.S11.SS4.p3.s2">
+For Dawson’s integral <Math mode="inline" xml:id="C8.S11.SS4.p3.m2">F\left(y\right)</Math> see §7.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C8.S11.SS4.p3.s3">
+SeeTricomi (1950b) for these approximations, together with higher terms and extensions to complex variables.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C8.S11.SS4.p3.s4">
+For related expansions involving Hermite polynomials see Pagurova (1965).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS5">
+<title>Other Approximations</title>         
+<para xml:id="C8.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C8.S11.SS5.p1.s1">
+As <Math mode="inline" xml:id="C8.S11.SS5.p1.m1">z\to\infty</Math> , <Math equation-number="8.11.12" mode="display" xml:id="C8.S11.E12">\Gamma\left(z,z\right)\sim z^{z-1}e^{-z}\left(\sqrt{\frac{\pi}{2}}z^{\frac{1}{ 2}}-\frac{1}{3}+\frac{\sqrt{2\pi}}{24z^{\frac{1}{2}}}-\frac{4}{135z}+\frac{ \sqrt{2\pi}}{576z^{\frac{3}{2}}}+\frac{8}{2835z^{2}}+\dots\right), if |\operatorname{ph}z|\leq 2\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C8.S11.SS5.p1.s2">
+For sharp error bounds and an exponentially-improved extension, see Nemes (2016).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C8.S11.SS5.p1.s3">
+This reference also contains explicit formulas for the coefficients in terms of Stirling numbers.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C8.S11.SS5.p2.s1">
+For the function <Math mode="inline" xml:id="C8.S11.SS5.p2.m1">e_{n}(z)</Math> defined by (8.4.11),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C8.S11.SS5.p2.s2">
+<Math equation-number="8.11.13" mode="display" xml:id="C8.S11.E13">\lim_{n\to\infty}\frac{e_{n}(nx)}{e^{nx}}=\begin{cases}0,&amp;x&gt;1,\\ \tfrac{1}{2},&amp;x=1,\\ 1,&amp;0\leq x&lt;1.\end{cases</Math> } With <Math mode="inline" xml:id="C8.S11.SS5.p2.m2">x=1</Math> , an asymptotic expansion of <Math mode="inline" xml:id="C8.S11.SS5.p2.m3">e_{n}(nx)/e^{nx}</Math> follows from (8.11.14) and (8.11.16).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C8.S11.SS5.p3.s1">
+If <Math mode="inline" xml:id="C8.S11.SS5.p3.m1">S_{n}(x)</Math> is defined by <Math equation-number="8.11.14" mode="display" xml:id="C8.S11.E14">e^{nx}=e_{n}(nx)+\frac{(nx)^{n}}{n!}S_{n}(x)</Math> , then <Math equation-number="8.11.15" mode="display" xml:id="C8.S11.E15">S_{n}(x)=\frac{\gamma\left(n+1,nx\right)}{(nx)^{n}e^{-nx}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C8.S11.SS5.p3.s2">
+As <Math mode="inline" xml:id="C8.S11.SS5.p3.m2">n\to\infty</Math> <Math equation-number="8.11.16" mode="display" xml:id="C8.S11.E16">S_{n}(1)-\frac{1}{2}\frac{n!e^{n}}{n^{n}}\sim-\tfrac{2}{3}+\tfrac{4}{135}n^{-1 }-\tfrac{8}{2835}n^{-2}-\tfrac{16}{8505}n^{-3}+\dots,</Math> <Math equation-number="8.11.17" mode="display" xml:id="C8.S11.E17">S_{n}(-1)\sim-\tfrac{1}{2}+\tfrac{1}{8}n^{-1}+\tfrac{1}{32}n^{-2}-\tfrac{1}{12 8}n^{-3}-\tfrac{13}{512}n^{-4}+\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C8.S11.SS5.p3.s3">
+Also, <Math equation-number="8.11.18" mode="display" xml:id="C8.S11.E18">S_{n}(x)\sim\sum_{k=0}^{\infty}d_{k}(x)n^{-k}, if n\to\infty,</Math> uniformly for <Math mode="inline" xml:id="C8.S11.SS5.p3.m3">x\in(-\infty,1-\delta]</Math> , with <Math equation-number="8.11.19" mode="display" xml:id="C8.S11.E19">d_{k}(x)=\frac{(-1)^{k}b_{k}(x)}{(1-x)^{2k+1}}, if k=0,1,2,\dots,</Math> and <Math mode="inline" xml:id="C8.S11.SS5.p3.m4">b_{k}(x)</Math> as in §8.11(iii).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C8.S11.SS5.p4.s1">
+For (8.11.18) and extensions to complex values of <Math mode="inline" xml:id="C8.S11.SS5.p4.m1">x</Math> seeBuckholtz (1963).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C8.S11.SS5.p4.s2">
+For a uniformly valid expansion for <Math mode="inline" xml:id="C8.S11.SS5.p4.m2">n\to\infty</Math> and <Math mode="inline" xml:id="C8.S11.SS5.p4.m3">x\in[\delta,1]</Math> , see Wong (1973b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

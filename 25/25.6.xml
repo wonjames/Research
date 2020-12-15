@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S6">
+<title>Integer Arguments</title>         
+<subsection xml:id="C25.S6.SS1">
+<title>Function Values</title>           
+<para xml:id="C25.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S6.SS1.p1.s1">
+ <Math equation-number="25.6.1" mode="display" xml:id="C25.S6.E1">\zeta\left(0\right)=-\frac{1}{2},\zeta\left(2\right)=\frac{\pi^{2}}{6},\zeta\left(4\right)=\frac{\pi^{4}}{90},\zeta\left(6\right)=\frac{\pi^{6}}{945}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S6.SS1.p1.s2">
+<Math equation-number="25.6.2" mode="display" xml:id="C25.S6.E2">\zeta\left(2n\right)=\frac{(2\pi)^{2n}}{2(2n)!}\left|B_{2n}\right|, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S6.SS1.p1.s3">
+<Math equation-number="25.6.3" mode="display" xml:id="C25.S6.E3">\zeta\left(-n\right)=-\frac{B_{n+1}}{n+1}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C25.S6.SS1.p1.s4">
+<Math equation-number="25.6.4" mode="display" xml:id="C25.S6.E4">\zeta\left(-2n\right)=0, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C25.S6.SS1.p1.s5">
+<Math equation-number="25.6.5" mode="display" xml:id="C25.S6.E5">\zeta\left(k+1\right)=\frac{1}{k!}\sum_{n_{1}=1}^{\infty}\dots\sum_{n_{k}=1}^{ \infty}\frac{1}{n_{1}\cdots n_{k}(n_{1}+\dots+n_{k})}, if k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C25.S6.SS1.p1.s6">
+<Math equation-number="25.6.6" mode="display" xml:id="C25.S6.E6">\zeta\left(2k+1\right)=\frac{(-1)^{k+1}(2\pi)^{2k+1}}{2(2k+1)!}\int_{0}^{1}B_{ 2k+1}\left(t\right)\cot\left(\pi t\right)\mathrm{d}t, if k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C25.S6.SS1.p1.s7">
+<Math equation-number="25.6.7" mode="display" xml:id="C25.S6.E7">\zeta\left(2\right)=\int_{0}^{1}\int_{0}^{1}\frac{1}{1-xy}\mathrm{d}x\mathrm{d }y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C25.S6.SS1.p1.s8">
+<Math equation-number="25.6.8" mode="display" xml:id="C25.S6.E8">\zeta\left(2\right)=3\sum_{k=1}^{\infty}\frac{1}{k^{2}\genfrac{(}{)}{0.0pt}{}{ 2k}{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C25.S6.SS1.p1.s9">
+<Math equation-number="25.6.9" mode="display" xml:id="C25.S6.E9">\zeta\left(3\right)=\frac{5}{2}\sum_{k=1}^{\infty}\frac{(-1)^{k-1}}{k^{3} \genfrac{(}{)}{0.0pt}{}{2k}{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" xml:id="C25.S6.SS1.p1.s10">
+<Math equation-number="25.6.10" mode="display" xml:id="C25.S6.E10">\zeta\left(4\right)=\frac{36}{17}\sum_{k=1}^{\infty}\frac{1}{k^{4}\genfrac{(}{ )}{0.0pt}{}{2k}{k}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S6.SS2">
+<title>Derivative Values</title>          
+<para xml:id="C25.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C25.S6.SS2.p1.s1">
+ <Math equation-number="25.6.11" mode="display" xml:id="C25.S6.E11">\zeta'\left(0\right)=-\tfrac{1}{2}\ln\left(2\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C25.S6.SS2.p1.s2">
+<Math equation-number="25.6.12" mode="display" xml:id="C25.S6.E12">\zeta''\left(0\right)=-\tfrac{1}{2}(\ln\left(2\pi\right))^{2}+\tfrac{1}{2}{ \gamma^{2}}-\tfrac{1}{24}\pi^{2}+\gamma_{1},</Math> where <Math mode="inline" xml:id="C25.S6.SS2.p1.m1">\gamma_{1}</Math> is given by (25.2.5).
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C25.S6.SS2.p2.s1">
+With <Math mode="inline" xml:id="C25.S6.SS2.p2.m1">c</Math> defined by (25.4.6) and <Math mode="inline" xml:id="C25.S6.SS2.p2.m2">n=1,2,3,\dots</Math> , <Math equation-number="25.6.13" mode="display" xml:id="C25.S6.E13">(-1)^{k}{\zeta^{(k)}}\left(-2n\right)=\frac{2(-1)^{n}}{(2\pi)^{2n+1}}\sum_{m=0 }^{k}\sum_{r=0}^{m}\genfrac{(}{)}{0.0pt}{}{k}{m}\genfrac{(}{)}{0.0pt}{}{m}{r} \Im(c^{k-m})\*{\Gamma^{(r)}}\left(2n+1\right){\zeta^{(m-r)}}\left(2n+1\right),</Math> , <Math equation-number="25.6.14" mode="display" xml:id="C25.S6.E14">(-1)^{k}{\zeta^{(k)}}\left(1-2n\right)=\frac{2(-1)^{n}}{(2\pi)^{2n}}\sum_{m=0} ^{k}\sum_{r=0}^{m}\genfrac{(}{)}{0.0pt}{}{k}{m}\genfrac{(}{)}{0.0pt}{}{m}{r} \Re(c^{k-m})\*{\Gamma^{(r)}}\left(2n\right){\zeta^{(m-r)}}\left(2n\right),</Math> , <Math equation-number="25.6.15" mode="display" xml:id="C25.S6.E15">\zeta'\left(2n\right)=\frac{(-1)^{n+1}(2\pi)^{2n}}{2(2n)!}\left(2n\zeta'\left( 1-2n\right)-(\psi\left(2n\right)-\ln\left(2\pi\right))B_{2n}\right)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C25.S6.SS3">
+<title>Recursion Formulas</title>        
+  
+<para xml:id="C25.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C25.S6.SS3.p1.s1">
+ <Math equation-number="25.6.16" mode="display" xml:id="C25.S6.E16">\left(n+\tfrac{1}{2}\right)\zeta\left(2n\right)=\sum_{k=1}^{n-1}\zeta\left(2k \right)\zeta\left(2n-2k\right), if n\geq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C25.S6.SS3.p1.s2">
+ <Math equation-number="25.6.17" mode="display" xml:id="C25.S6.E17">\left(n+\tfrac{3}{4}\right)\zeta\left(4n+2\right)=\sum_{k=1}^{n}\zeta\left(2k \right)\zeta\left(4n+2-2k\right), if n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C25.S6.SS3.p1.s3">
+<Math equation-number="25.6.18" mode="display" xml:id="C25.S6.E18">{\left(n+\tfrac{1}{4}\right)\zeta\left(4n\right)+\tfrac{1}{2}(\zeta\left(2n \right))^{2}=\sum_{k=1}^{n}\zeta\left(2k\right)\zeta\left(4n-2k\right)}, if n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C25.S6.SS3.p1.s4">
+<Math equation-number="25.6.19" mode="display" xml:id="C25.S6.E19">\left(m+n+\tfrac{3}{2}\right)\zeta\left(2m+2n+2\right)=\left(\sum_{k=1}^{m}+ \sum_{k=1}^{n}\right)\zeta\left(2k\right)\zeta\left(2m+2n+2-2k\right), if m\geq 0, n\geq 0, m+n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C25.S6.SS3.p1.s5">
+<Math equation-number="25.6.20" mode="display" xml:id="C25.S6.E20">\tfrac{1}{2}(2^{2n}-1)\zeta\left(2n\right)=\sum_{k=1}^{n-1}(2^{2n-2k}-1)\zeta \left(2n-2k\right)\zeta\left(2k\right), if n\geq 2.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C25.S6.SS3.p2.s1">
+For related results see Basu and Apostol (2000).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

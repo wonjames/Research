@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S20">
+<title>Methods of Computation</title>         
+<subsection xml:id="C29.S20.SS1">
+<title>Lamé Functions</title>           
+<para xml:id="C29.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S20.SS1.p1.s1">
+The eigenvalues <Math mode="inline" xml:id="C29.S20.SS1.p1.m1">a^{m}_{\nu}\left(k^{2}\right)</Math> , <Math mode="inline" xml:id="C29.S20.SS1.p1.m2">b^{m}_{\nu}\left(k^{2}\right)</Math> , and the Lamé functions <Math mode="inline" xml:id="C29.S20.SS1.p1.m3">\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)</Math> , <Math mode="inline" xml:id="C29.S20.SS1.p1.m4">\mathit{Es}^{m}_{\nu}\left(z,k^{2}\right)</Math> , can be calculated by direct numerical methods applied to the differential equation (29.2.1); see §3.7.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S20.SS1.p1.s2">
+The normalization of Lamé functions given in §29.3(v) can be carried out by quadrature (§3.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C29.S20.SS1.p2.s1">
+A second approach is to solve the continued-fraction equations typified by (29.3.10) by Newton’s rule or other iterative methods; see §3.8.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C29.S20.SS1.p2.s2">
+Initial approximations to the eigenvalues can be found, for example, from the asymptotic expansions supplied in §29.7(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C29.S20.SS1.p2.s3">
+Subsequently, formulas typified by (29.6.4) can be applied to compute the coefficients of the Fourier expansions of the corresponding Lamé functions by backward recursion followed by application of formulas typified by (29.6.5) and (29.6.6) to achieve normalization; compare §3.6.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C29.S20.SS1.p2.s4">
+(Equation (29.6.3)serves as a check.)The Fourier series may be summed using Clenshaw’s algorithm; see §3.11(ii).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C29.S20.SS1.p2.s5">
+For further information see Jansen (1977).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C29.S20.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C29.S20.SS1.p3.s1">
+A third method is to approximate eigenvalues and Fourier coefficients of Lamé functions by eigenvalues and eigenvectors of finite matrices using the methods of §§3.2(vi) and 3.8(iv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C29.S20.SS1.p3.s2">
+These matrices are the same as those provided in §29.15(i) for the computation of Lamé polynomials with the difference that <Math mode="inline" xml:id="C29.S20.SS1.p3.m1">n</Math> has to be chosen sufficiently large.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C29.S20.SS1.p3.s3">
+The approximations converge geometrically (§3.8(i)) to the eigenvalues and coefficients of Lamé functions as <Math mode="inline" xml:id="C29.S20.SS1.p3.m2">n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C29.S20.SS1.p3.s4">
+The numerical computations described in Jansen (1977) are based in part upon this method.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S20.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C29.S20.SS1.p4.s1">
+A fourth method is by asymptotic approximations by zeros of orthogonal polynomials of increasing degree.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C29.S20.SS1.p4.s2">
+See (f) of §28.34(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S20.SS2">
+<title>Lamé Polynomials</title>             
+<para xml:id="C29.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C29.S20.SS2.p1.s1">
+The eigenvalues corresponding to Lamé polynomials are computed from eigenvalues of the finite tridiagonal matrices <Math mode="inline" xml:id="C29.S20.SS2.p1.m1">\mathbf{M}</Math> given in §29.15(i), using methods described in §3.2(vi) andRitter (1998).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C29.S20.SS2.p1.s2">
+The corresponding eigenvectors yield the coefficients in the finite Fourier series for Lamé polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C29.S20.SS2.p1.s3">
+§29.15(i) includes formulas for normalizing the eigenvectors.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S20.SS3">
+<title>Zeros</title>          
+<para xml:id="C29.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C29.S20.SS3.p1.s1">
+Zeros of Lamé polynomials can be computed by solving the system of equations (29.12.13) by employing Newton’s method; see §3.8(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C29.S20.SS3.p1.s2">
+Alternatively, the zeros can be found by locating the maximum of function <Math mode="inline" xml:id="C29.S20.SS3.p1.m1">g</Math> in (29.12.11).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

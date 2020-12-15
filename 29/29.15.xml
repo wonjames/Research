@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S15">
+<title>Fourier Series and Chebyshev Series</title>          
+<subsection xml:id="C29.S15.SS1">
+<title>Fourier Coefficients</title>         
+<paragraph xml:id="C29.S15.Px1">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px1.m1">\mathit{uE}^{m}_{2n}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S15.Px1.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px1.p1.m1">\nu=2n</Math> , <Math mode="inline" xml:id="C29.S15.Px1.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.1)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S15.Px1.p1.s2">
+<Math equation-number="29.15.1" mode="display" xml:id="C29.S15.E1">\mathit{uE}^{m}_{2n}\left(z,k^{2}\right)=\tfrac{1}{2}A_{0}+\sum_{p=1}^{n}A_{2p }\cos\left(2p\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C29.S15.Px1.p1.s3">
+A convenient way of constructing the coefficients, together with the eigenvalues, is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C29.S15.Px1.p1.s4">
+Equations (29.6.4), with <Math mode="inline" xml:id="C29.S15.Px1.p1.m3">p=1,2,\dots,n</Math> , (29.6.3), and <Math mode="inline" xml:id="C29.S15.Px1.p1.m4">A_{2n+2}=0</Math> can be cast as an algebraic eigenvalue problem in the following way.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C29.S15.Px1.p1.s5">
+Let <Math equation-number="29.15.2" mode="display" xml:id="C29.S15.E2">\mathbf{M}=\begin{bmatrix}\beta_{0}&amp;\alpha_{0}&amp;0&amp;\cdots&amp;0\\ \gamma_{1}&amp;\beta_{1}&amp;\alpha_{1}&amp;\ddots&amp;\vdots\\ 0&amp;\ddots&amp;\ddots&amp;\ddots&amp;0\\ \vdots&amp;\ddots&amp;\gamma_{n-1}&amp;\beta_{n-1}&amp;\alpha_{n-1}\\ 0&amp;\cdots&amp;0&amp;\gamma_{n}&amp;\beta_{n}\end{bmatrix}</Math> be the tridiagonal matrix with <Math mode="inline" xml:id="C29.S15.Px1.p1.m5">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px1.p1.m6">\beta_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px1.p1.m7">\gamma_{p}</Math> as in (29.3.11),(29.3.12).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C29.S15.Px1.p1.s6">
+Let the eigenvalues of <Math mode="inline" xml:id="C29.S15.Px1.p1.m8">\mathbf{M}</Math> be <Math mode="inline" xml:id="C29.S15.Px1.p1.m9">H_{p}</Math> with <Math equation-number="29.15.3" mode="display" xml:id="C29.S15.E3">H_{0}&lt;H_{1}&lt;\cdots&lt;H_{n},</Math> and also let <Math equation-number="29.15.4" mode="display" xml:id="C29.S15.E4">[A_{0},A_{2},\dots,A_{2n}]^{\mathrm{T}}</Math> be the eigenvector corresponding to <Math mode="inline" xml:id="C29.S15.Px1.p1.m10">H_{m}</Math> and normalized so that <Math equation-number="29.15.5" mode="display" xml:id="C29.S15.E5">\tfrac{1}{2}A_{0}^{2}+\sum_{p=1}^{n}A_{2p}^{2}=1</Math> and <Math equation-number="29.15.6" mode="display" xml:id="C29.S15.E6">\tfrac{1}{2}A_{0}+\sum_{p=1}^{n}A_{2p}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C29.S15.Px1.p1.s7">
+Then <Math equation-number="29.15.7" mode="display" xml:id="C29.S15.E7">a^{2m}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.1) applies, with <Math mode="inline" xml:id="C29.S15.Px1.p1.m11">\phi</Math> again defined as in (29.2.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S15.Px1.p2">
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px2">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px2.m1">\mathit{sE}^{m}_{2n+1}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C29.S15.Px2.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px2.p1.m1">\nu=2n+1</Math> , <Math mode="inline" xml:id="C29.S15.Px2.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.16)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C29.S15.Px2.p1.s2">
+<Math equation-number="29.15.8" mode="display" xml:id="C29.S15.E8">\mathit{sE}^{m}_{2n+1}\left(z,k^{2}\right)=\sum_{p=0}^{n}A_{2p+1}\cos\left((2p +1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C29.S15.Px2.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px2.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px2.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px2.p1.m5">\gamma_{p}</Math> as in (29.3.13),(29.3.14).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C29.S15.Px2.p1.s4">
+Also, replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.9" mode="display" xml:id="C29.S15.E9">[A_{1},A_{3},\dots,A_{2n+1}]^{\mathrm{T}},</Math> <Math equation-number="29.15.10" mode="display" xml:id="C29.S15.E10">\sum_{p=0}^{n}A_{2p+1}^{2}=1,</Math> <Math equation-number="29.15.11" mode="display" xml:id="C29.S15.E11">\sum_{p=0}^{n}A_{2p+1}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C29.S15.Px2.p1.s5">
+Then <Math equation-number="29.15.12" mode="display" xml:id="C29.S15.E12">a^{2m+1}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.8) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px3">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px3.m1">\mathit{cE}^{m}_{2n+1}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C29.S15.Px3.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px3.p1.m1">\nu=2n+1</Math> , <Math mode="inline" xml:id="C29.S15.Px3.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.31)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C29.S15.Px3.p1.s2">
+<Math equation-number="29.15.13" mode="display" xml:id="C29.S15.E13">\mathit{cE}^{m}_{2n+1}\left(z,k^{2}\right)=\sum_{p=0}^{n}B_{2p+1}\sin\left((2p +1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C29.S15.Px3.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px3.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px3.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px3.p1.m5">\gamma_{p}</Math> as in(29.3.15),(29.3.16).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C29.S15.Px3.p1.s4">
+Also, replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.14" mode="display" xml:id="C29.S15.E14">[B_{1},B_{3},\dots,B_{2n+1}]^{\mathrm{T}},</Math> <Math equation-number="29.15.15" mode="display" xml:id="C29.S15.E15">\sum_{p=0}^{n}B_{2p+1}^{2}=1,</Math> <Math equation-number="29.15.16" mode="display" xml:id="C29.S15.E16">\sum_{p=0}^{n}(2p+1)B_{2p+1}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C29.S15.Px3.p1.s5">
+Then <Math equation-number="29.15.17" mode="display" xml:id="C29.S15.E17">b^{2m+1}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.13) applies.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px4">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px4.m1">\mathit{dE}^{m}_{2n+1}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C29.S15.Px4.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px4.p1.m1">\nu=2n+1</Math> , <Math mode="inline" xml:id="C29.S15.Px4.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.8)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C29.S15.Px4.p1.s2">
+<Math equation-number="29.15.18" mode="display" xml:id="C29.S15.E18">\mathit{dE}^{m}_{2n+1}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \left(\tfrac{1}{2}C_{0}+\sum_{p=1}^{n}C_{2p}\cos\left(2p\phi\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C29.S15.Px4.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px4.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px4.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px4.p1.m5">\gamma_{p}</Math> as in (29.6.11).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C29.S15.Px4.p1.s4">
+Also, replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.19" mode="display" xml:id="C29.S15.E19">[C_{0},C_{2},\dots,C_{2n}]^{\mathrm{T}},</Math> <Math equation-number="29.15.20" mode="display" xml:id="C29.S15.E20">\left(1-\tfrac{1}{2}k^{2}\right)\left(\tfrac{1}{2}C_{0}^{2}+\sum_{p=1}^{n}C_{2 p}^{2}\right)-\tfrac{1}{2}k^{2}\sum_{p=0}^{n-1}C_{2p}C_{2p+2}=1,</Math> <Math equation-number="29.15.21" mode="display" xml:id="C29.S15.E21">\tfrac{1}{2}C_{0}+\sum_{p=1}^{n}C_{2p}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C29.S15.Px4.p1.s5">
+Then <Math equation-number="29.15.22" mode="display" xml:id="C29.S15.E22">a^{2m}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.18) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px5">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px5.m1">\mathit{scE}^{m}_{2n+2}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C29.S15.Px5.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px5.p1.m1">\nu=2n+2</Math> , <Math mode="inline" xml:id="C29.S15.Px5.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.46)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C29.S15.Px5.p1.s2">
+<Math equation-number="29.15.23" mode="display" xml:id="C29.S15.E23">\mathit{scE}^{m}_{2n+2}\left(z,k^{2}\right)=\sum_{p=0}^{n}B_{2p+2}\sin\left((2 p+2)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C29.S15.Px5.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px5.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px5.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px5.p1.m5">\gamma_{p}</Math> as in (29.3.17).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C29.S15.Px5.p1.s4">
+Also replace(29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.24" mode="display" xml:id="C29.S15.E24">[B_{2},B_{4},\dots,B_{2n+2}]^{\mathrm{T}},</Math> <Math equation-number="29.15.25" mode="display" xml:id="C29.S15.E25">\sum_{p=0}^{n}B_{2p+2}^{2}=1,</Math> <Math equation-number="29.15.26" mode="display" xml:id="C29.S15.E26">\sum_{p=0}^{n}(2p+2)B_{2p+2}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="27" xml:id="C29.S15.Px5.p1.s5">
+Then <Math equation-number="29.15.27" mode="display" xml:id="C29.S15.E27">b^{2m+2}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.23) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px6">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px6.m1">\mathit{sdE}^{m}_{2n+2}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C29.S15.Px6.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px6.p1.m1">\nu=2n+2</Math> , <Math mode="inline" xml:id="C29.S15.Px6.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.23)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C29.S15.Px6.p1.s2">
+<Math equation-number="29.15.28" mode="display" xml:id="C29.S15.E28">\mathit{sdE}^{m}_{2n+2}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{n}C_{2p+1}\cos\left((2p+1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C29.S15.Px6.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px6.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px6.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px6.p1.m5">\gamma_{p}</Math> as in (29.6.26).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C29.S15.Px6.p1.s4">
+Also replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.29" mode="display" xml:id="C29.S15.E29">[C_{1},C_{3},\dots,C_{2n+1}]^{\mathrm{T}},</Math> <Math equation-number="29.15.30" mode="display" xml:id="C29.S15.E30">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=0}^{n}C_{2p+1}^{2}-{\tfrac{1}{2}k^{2} \left(\tfrac{1}{2}C_{1}^{2}+\sum_{p=0}^{n-1}C_{2p+1}C_{2p+3}\right)=1},</Math> <Math equation-number="29.15.31" mode="display" xml:id="C29.S15.E31">\sum_{p=0}^{n}C_{2p+1}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="32" xml:id="C29.S15.Px6.p1.s5">
+Then <Math equation-number="29.15.32" mode="display" xml:id="C29.S15.E32">a^{2m+1}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.28) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px7">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px7.m1">\mathit{cdE}^{m}_{2n+2}\left(z,k^{2}\right)</Math></title>   
+<para xml:id="C29.S15.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C29.S15.Px7.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px7.p1.m1">\nu=2n+2</Math> , <Math mode="inline" xml:id="C29.S15.Px7.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.38)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C29.S15.Px7.p1.s2">
+<Math equation-number="29.15.33" mode="display" xml:id="C29.S15.E33">\mathit{cdE}^{m}_{2n+2}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{n}D_{2p+1}\sin\left((2p+1)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C29.S15.Px7.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px7.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px7.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px7.p1.m5">\gamma_{p}</Math> as in (29.6.41).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="36" xml:id="C29.S15.Px7.p1.s4">
+Also replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.34" mode="display" xml:id="C29.S15.E34">[D_{1},D_{3},\dots,D_{2n+1}]^{\mathrm{T}},</Math> <Math equation-number="29.15.35" mode="display" xml:id="C29.S15.E35">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=0}^{n}D_{2p+1}^{2}+{\tfrac{1}{2}k^{2} \left(\tfrac{1}{2}D_{1}^{2}-\sum_{p=0}^{n-1}D_{2p+1}D_{2p+3}\right)=1},</Math> <Math equation-number="29.15.36" mode="display" xml:id="C29.S15.E36">\sum_{p=0}^{n}(2p+1)D_{2p+1}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="37" xml:id="C29.S15.Px7.p1.s5">
+Then <Math equation-number="29.15.37" mode="display" xml:id="C29.S15.E37">b^{2m+1}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.33) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C29.S15.Px8">
+<title>Polynomial <Math mode="inline" xml:id="C29.S15.Px8.m1">\mathit{scdE}^{m}_{2n+3}\left(z,k^{2}\right)</Math></title>  
+ 
+<para xml:id="C29.S15.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C29.S15.Px8.p1.s1">
+When <Math mode="inline" xml:id="C29.S15.Px8.p1.m1">\nu=2n+3</Math> , <Math mode="inline" xml:id="C29.S15.Px8.p1.m2">m=0,1,\dots,n</Math> , the Fourier series (29.6.53)terminates:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C29.S15.Px8.p1.s2">
+<Math equation-number="29.15.38" mode="display" xml:id="C29.S15.E38">\mathit{scdE}^{m}_{2n+3}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{n}D_{2p+2}\sin\left((2p+2)\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C29.S15.Px8.p1.s3">
+In (29.15.2) replace <Math mode="inline" xml:id="C29.S15.Px8.p1.m3">\alpha_{p}</Math> , <Math mode="inline" xml:id="C29.S15.Px8.p1.m4">\beta_{p}</Math> , and <Math mode="inline" xml:id="C29.S15.Px8.p1.m5">\gamma_{p}</Math> as in (29.6.56).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="41" xml:id="C29.S15.Px8.p1.s4">
+Also replace (29.15.4), (29.15.5), (29.15.6) by <Math equation-number="29.15.39" mode="display" xml:id="C29.S15.E39">[D_{2},D_{4},\dots,D_{2n+2}]^{\mathrm{T}},</Math> <Math equation-number="29.15.40" mode="display" xml:id="C29.S15.E40">\left(1-\tfrac{1}{2}k^{2}\right)\sum_{p=0}^{n}D_{2p+2}^{2}-\tfrac{1}{2}k^{2} \sum_{p=1}^{n}D_{2p}D_{2p+2}=1,</Math> <Math equation-number="29.15.41" mode="display" xml:id="C29.S15.E41">\sum_{p=0}^{n}(2p+2)D_{2p+2}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="42" xml:id="C29.S15.Px8.p1.s5">
+Then <Math equation-number="29.15.42" mode="display" xml:id="C29.S15.E42">b^{2m+2}_{\nu}\left(k^{2}\right)=\tfrac{1}{2}(H_{m}+\nu(\nu+1)k^{2}),</Math> and (29.15.38) applies.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S15.SS2">
+<title>Chebyshev Series</title>          
+<para xml:id="C29.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C29.S15.SS2.p1.s1">
+The Chebyshev polynomial <Math mode="inline" xml:id="C29.S15.SS2.p1.m1">T</Math> of the first kind (§18.3)satisfies
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C29.S15.SS2.p1.s2">
+<Math mode="inline" xml:id="C29.S15.SS2.p1.m2">\cos\left(p\phi\right)=T_{p}\left(\cos\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C29.S15.SS2.p1.s3">
+Since (29.2.5) implies that <Math mode="inline" xml:id="C29.S15.SS2.p1.m3">\cos\phi=\operatorname{sn}\left(z,k\right)</Math> ,(29.15.1) can be rewritten in the form <Math equation-number="29.15.43" mode="display" xml:id="C29.S15.E43">\mathit{uE}^{m}_{2n}\left(z,k^{2}\right)=\tfrac{1}{2}A_{0}+\sum_{p=1}^{n}A_{2p }T_{2p}\left(\operatorname{sn}\left(z,k\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="46" xml:id="C29.S15.SS2.p1.s4">
+This determines the polynomial <Math mode="inline" xml:id="C29.S15.SS2.p1.m4">P</Math> of degree <Math mode="inline" xml:id="C29.S15.SS2.p1.m5">n</Math> for which <Math mode="inline" xml:id="C29.S15.SS2.p1.m6">\mathit{uE}^{m}_{2n}\left(z,k^{2}\right)=P({\operatorname{sn}^{2}}\left(z,k \right))</Math> ; compare Table29.12.1.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="47" xml:id="C29.S15.SS2.p1.s5">
+The set of coefficients of this polynomial (without normalization) can also be found directly as an eigenvector of an <Math mode="inline" xml:id="C29.S15.SS2.p1.m7">(n+1)\times(n+1)</Math> tridiagonal matrix; see Arscott and Khabaza (1962).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S15.SS2.p2">
+
+</para>
+ 
+<para xml:id="C29.S15.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C29.S15.SS2.p3.s1">
+Using also <Math mode="inline" xml:id="C29.S15.SS2.p3.m1">\sin\left((p+1)\phi\right)=(\sin\phi)U_{p}\left(\cos\phi\right)</Math> , with <Math mode="inline" xml:id="C29.S15.SS2.p3.m2">U</Math> denoting the Chebyshev polynomial of the second kind (§18.3),we obtain <Math equation-number="29.15.44" mode="display" xml:id="C29.S15.E44">\mathit{sE}^{m}_{2n+1}\left(z,k^{2}\right)=\sum_{p=0}^{n}A_{2p+1}T_{2p+1}\left (\operatorname{sn}\left(z,k\right)\right),</Math> , <Math equation-number="29.15.45" mode="display" xml:id="C29.S15.E45">\mathit{cE}^{m}_{2n+1}\left(z,k^{2}\right)=\operatorname{cn}\left(z,k\right) \sum_{p=0}^{n}B_{2p+1}U_{2p}\left(\operatorname{sn}\left(z,k\right)\right),</Math> , <Math equation-number="29.15.46" mode="display" xml:id="C29.S15.E46">\mathit{dE}^{m}_{2n+1}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \left(\tfrac{1}{2}C_{0}+\sum_{p=1}^{n}C_{2p}T_{2p}\left(\operatorname{sn}\left (z,k\right)\right)\right),</Math> , <Math equation-number="29.15.47" mode="display" xml:id="C29.S15.E47">\mathit{scE}^{m}_{2n+2}\left(z,k^{2}\right)=\operatorname{cn}\left(z,k\right) \sum_{p=0}^{n}B_{2p+2}U_{2p+1}\left(\operatorname{sn}\left(z,k\right)\right),</Math> , <Math equation-number="29.15.48" mode="display" xml:id="C29.S15.E48">\mathit{sdE}^{m}_{2n+2}\left(z,k^{2}\right)=\operatorname{dn}\left(z,k\right) \sum_{p=0}^{n}C_{2p+1}T_{2p+1}\left(\operatorname{sn}\left(z,k\right)\right),</Math> , <Math equation-number="29.15.49" mode="display" xml:id="C29.S15.E49">\mathit{cdE}^{m}_{2n+2}\left(z,k^{2}\right)=\operatorname{cn}\left(z,k\right) \operatorname{dn}\left(z,k\right)\sum_{p=0}^{n}D_{2p+1}U_{2p}\left( \operatorname{sn}\left(z,k\right)\right),</Math> , <Math equation-number="29.15.50" mode="display" xml:id="C29.S15.E50">\mathit{scdE}^{m}_{2n+3}\left(z,k^{2}\right)=\operatorname{cn}\left(z,k\right) \operatorname{dn}\left(z,k\right)\sum_{p=0}^{n}D_{2p+2}U_{2p+1}\left( \operatorname{sn}\left(z,k\right)\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C29.S15.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C29.S15.SS2.p4.s1">
+For explicit formulas for Lamé polynomials of low degree, seeArscott (1964b, p. 205).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

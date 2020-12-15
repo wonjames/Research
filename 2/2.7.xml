@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S7">
+<title>Differential Equations</title>         
+<subsection xml:id="C2.S7.SS1">
+<title>Regular Singularities: Fuchs–Frobenius Theory</title>          
+<para xml:id="C2.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S7.SS1.p1.s1">
+An ordinary point of the differential equation <Math equation-number="2.7.1" mode="display" xml:id="C2.S7.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+f(z)\frac{\mathrm{d}w}{\mathrm{d}z }+g(z)w=0</Math> is one at which the coefficients <Math mode="inline" xml:id="C2.S7.SS1.p1.m1">f(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS1.p1.m2">g(z)</Math> are analytic.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S7.SS1.p1.s2">
+All solutions are analytic at an ordinary point, and their Taylor-series expansions are found by equating coefficients.
+</sentence>
+
+</para>
+   
+<para xml:id="C2.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C2.S7.SS1.p2.s1">
+Other points <Math mode="inline" xml:id="C2.S7.SS1.p2.m1">z_{0}</Math> are singularities of the differential equation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C2.S7.SS1.p2.s2">
+If both <Math mode="inline" xml:id="C2.S7.SS1.p2.m2">(z-z_{0})f(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS1.p2.m3">(z-z_{0})^{2}g(z)</Math> are analytic at <Math mode="inline" xml:id="C2.S7.SS1.p2.m4">z_{0}</Math> , then <Math mode="inline" xml:id="C2.S7.SS1.p2.m5">z_{0}</Math> is aregular singularity (or singularity of the first kind).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C2.S7.SS1.p2.s3">
+All other singularities are classified as irregular.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C2.S7.SS1.p3.s1">
+In a punctured neighborhood <Math mode="inline" xml:id="C2.S7.SS1.p3.m1">\mathbf{N}</Math> of a regular singularity <Math mode="inline" xml:id="C2.S7.SS1.p3.m2">z_{0}</Math> <Math equation-number="2.7.2" mode="display" xml:id="C2.S7.E2">f(z)=\sum_{s=0}^{\infty}f_{s}(z-z_{0})^{s-1},g(z)=\sum_{s=0}^{\infty}g_{s}(z-z_{0})^{s-2},</Math> with at least one of the coefficients <Math mode="inline" xml:id="C2.S7.SS1.p3.m3">f_{0}</Math> , <Math mode="inline" xml:id="C2.S7.SS1.p3.m4">g_{0}</Math> , <Math mode="inline" xml:id="C2.S7.SS1.p3.m5">g_{1}</Math> nonzero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C2.S7.SS1.p3.s2">
+Let <Math mode="inline" xml:id="C2.S7.SS1.p3.m6">\alpha_{1}</Math> , <Math mode="inline" xml:id="C2.S7.SS1.p3.m7">\alpha_{2}</Math> denote the indices or exponents, that is, the roots of the indicial equation <Math equation-number="2.7.3" mode="display" xml:id="C2.S7.E3">Q(\alpha)=\alpha(\alpha-1)+f_{0}\alpha+g_{0}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C2.S7.SS1.p3.s3">
+Provided that <Math mode="inline" xml:id="C2.S7.SS1.p3.m8">\alpha_{1}-\alpha_{2}</Math> is not zero or an integer, equation (2.7.1) has independent solutions <Math mode="inline" xml:id="C2.S7.SS1.p3.m9">w_{j}(z)</Math> , <Math mode="inline" xml:id="C2.S7.SS1.p3.m10">j=1,2</Math> , such that <Math equation-number="2.7.4" mode="display" xml:id="C2.S7.E4">w_{j}(z)=(z-z_{0})^{\alpha_{j}}\sum_{s=0}^{\infty}a_{s,j}(z-z_{0})^{s}, if z\in\mathbf{N},</Math> with <Math mode="inline" xml:id="C2.S7.SS1.p3.m11">a_{0,j}=1</Math> , and <Math equation-number="2.7.5" mode="display" xml:id="C2.S7.E5">Q(\alpha_{j}+s)a_{s,j}=-\sum_{r=0}^{s-1}\left((\alpha_{j}+r)f_{s-r}+g_{s-r} \right)a_{r,j},</Math> when <Math mode="inline" xml:id="C2.S7.SS1.p3.m12">s=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S7.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S7.SS1.p4.s1">
+If <Math mode="inline" xml:id="C2.S7.SS1.p4.m1">\alpha_{1}-\alpha_{2}=0,1,2,\dots</Math> , then (2.7.4) applies only in the case <Math mode="inline" xml:id="C2.S7.SS1.p4.m2">j=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S7.SS1.p4.s2">
+But there is an independent solution <Math equation-number="2.7.6" mode="display" xml:id="C2.S7.E6">w_{2}(z)=(z-z_{0})^{\alpha_{2}}\sum_{\begin{subarray}{c}s=0\\ s\neq\alpha_{1}-\alpha_{2}\end{subarray}}^{\infty}b_{s}(z-z_{0})^{s}+cw_{1}(z) \ln\left(z-z_{0}\right), if z\in\mathbf{N}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S7.SS1.p4.s3">
+The coefficients <Math mode="inline" xml:id="C2.S7.SS1.p4.m3">b_{s}</Math> and constant <Math mode="inline" xml:id="C2.S7.SS1.p4.m4">c</Math> are again determined by equating coefficients in the differential equation, beginning with <Math mode="inline" xml:id="C2.S7.SS1.p4.m5">c=1</Math> when <Math mode="inline" xml:id="C2.S7.SS1.p4.m6">\alpha_{1}-\alpha_{2}=0</Math> , or with <Math mode="inline" xml:id="C2.S7.SS1.p4.m7">b_{0}=1</Math> when <Math mode="inline" xml:id="C2.S7.SS1.p4.m8">\alpha_{1}-\alpha_{2}=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C2.S7.SS1.p5.s1">
+The radii of convergence of the series (2.7.4), (2.7.6) are not less than the distance of the next nearest singularity of the differential equation from <Math mode="inline" xml:id="C2.S7.SS1.p5.m1">z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S7.SS1.p6.s1">
+To include the point at infinity in the foregoing classification scheme, we transform it into the origin by replacing <Math mode="inline" xml:id="C2.S7.SS1.p6.m1">z</Math> in (2.7.1) with <Math mode="inline" xml:id="C2.S7.SS1.p6.m2">1/z</Math> ; see Olver (1997b, pp. 153–154).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C2.S7.SS1.p6.s2">
+For corresponding definitions, together with examples, for linear differential equations of arbitrary order see §§16.8(i)–16.8(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S7.SS2">
+<title>Irregular Singularities of Rank 1</title>          
+  
+<para xml:id="C2.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C2.S7.SS2.p1.s1">
+If the singularities of <Math mode="inline" xml:id="C2.S7.SS2.p1.m1">f(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS2.p1.m2">g(z)</Math> at <Math mode="inline" xml:id="C2.S7.SS2.p1.m3">z_{0}</Math> are no worse than poles, then <Math mode="inline" xml:id="C2.S7.SS2.p1.m4">z_{0}</Math> has rank <Math mode="inline" xml:id="C2.S7.SS2.p1.m5">\ell-1</Math> , where <Math mode="inline" xml:id="C2.S7.SS2.p1.m6">\ell</Math> is the least integer such that <Math mode="inline" xml:id="C2.S7.SS2.p1.m7">(z-z_{0})^{\ell}f(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS2.p1.m8">(z-z_{0})^{2\ell}g(z)</Math> are analytic at <Math mode="inline" xml:id="C2.S7.SS2.p1.m9">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C2.S7.SS2.p1.s2">
+Thus a regular singularity has rank 0. The most common type of irregular singularity for special functions has rank 1 and is located at infinity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C2.S7.SS2.p1.s3">
+Then <Math equation-number="2.7.7" mode="display" xml:id="C2.S7.E7">f(z)=\sum_{s=0}^{\infty}\frac{f_{s}}{z^{s}},g(z)=\sum_{s=0}^{\infty}\frac{g_{s}}{z^{s}},</Math> these series converging in an annulus <Math mode="inline" xml:id="C2.S7.SS2.p1.m10">|z|&gt;a</Math> , with at least one of <Math mode="inline" xml:id="C2.S7.SS2.p1.m11">f_{0}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p1.m12">g_{0}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p1.m13">g_{1}</Math> nonzero.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C2.S7.SS2.p2.s1">
+Formal solutions are <Math equation-number="2.7.8" mode="display" xml:id="C2.S7.E8">e^{\lambda_{j}z}z^{\mu_{j}}\sum_{s=0}^{\infty}\frac{a_{s,j}}{z^{s}}, if j=1,2,</Math> where <Math mode="inline" xml:id="C2.S7.SS2.p2.m1">\lambda_{1}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p2.m2">\lambda_{2}</Math> are the roots of the characteristic equation <Math equation-number="2.7.9" mode="display" xml:id="C2.S7.E9">\lambda^{2}+f_{0}\lambda+g_{0}=0,</Math> <Math equation-number="2.7.10" mode="display" xml:id="C2.S7.E10">\mu_{j}=-(f_{1}\lambda_{j}+g_{1})/(f_{0}+2\lambda_{j}),</Math> <Math mode="inline" xml:id="C2.S7.SS2.p2.m3">a_{0,j}=1</Math> , and <Math equation-number="2.7.11" mode="display" xml:id="C2.S7.E11">(f_{0}+2\lambda_{j})sa_{s,j}=(s-\mu_{j})(s-1-\mu_{j})a_{s-1,j}+\sum_{r=1}^{s} \left(\lambda_{j}f_{r+1}+g_{r+1}-(s-r-\mu_{j})f_{r}\right)a_{s-r,j},</Math> when <Math mode="inline" xml:id="C2.S7.SS2.p2.m4">s=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C2.S7.SS2.p2.s2">
+The construction fails iff <Math mode="inline" xml:id="C2.S7.SS2.p2.m5">\lambda_{1}=\lambda_{2}</Math> , that is, when <Math mode="inline" xml:id="C2.S7.SS2.p2.m6">f_{0}^{2}=4g_{0}</Math> : this case is treated below.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C2.S7.SS2.p3.s1">
+For large <Math mode="inline" xml:id="C2.S7.SS2.p3.m1">s</Math> , <Math equation-number="2.7.12" mode="display" xml:id="C2.S7.E12">a_{s,1}\sim\frac{\Lambda_{1}}{(\lambda_{1}-\lambda_{2})^{s}}\*\sum_{j=0}^{ \infty}{a_{j,2}(\lambda_{1}-\lambda_{2})^{j}\Gamma\left(s+\mu_{2}-\mu_{1}-j \right)},</Math> , <Math equation-number="2.7.13" mode="display" xml:id="C2.S7.E13">a_{s,2}\sim\frac{\Lambda_{2}}{(\lambda_{2}-\lambda_{1})^{s}}\*\sum_{j=0}^{ \infty}{a_{j,1}(\lambda_{2}-\lambda_{1})^{j}\Gamma\left(s+\mu_{1}-\mu_{2}-j \right)},</Math> where <Math mode="inline" xml:id="C2.S7.SS2.p3.m2">\Lambda_{1}</Math> and <Math mode="inline" xml:id="C2.S7.SS2.p3.m3">\Lambda_{2}</Math> are constants, and the <Math mode="inline" xml:id="C2.S7.SS2.p3.m4">J</Math> th remainder terms in the sums are <Math mode="inline" xml:id="C2.S7.SS2.p3.m5">O\left(\Gamma\left(s+\mu_{2}-\mu_{1}-J\right)\right)</Math> and <Math mode="inline" xml:id="C2.S7.SS2.p3.m6">O\left(\Gamma\left(s+\mu_{1}-\mu_{2}-J\right)\right)</Math> , respectively (Olver (1994a)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C2.S7.SS2.p3.s2">
+Hence unless the series (2.7.8) terminate (in which case the corresponding <Math mode="inline" xml:id="C2.S7.SS2.p3.m7">\Lambda_{j}</Math> is zero) they diverge.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C2.S7.SS2.p3.s3">
+However, there are unique and linearly independent solutions <Math mode="inline" xml:id="C2.S7.SS2.p3.m8">w_{j}(z)</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p3.m9">j=1,2</Math> , such that <Math equation-number="2.7.14" mode="display" xml:id="C2.S7.E14">w_{j}(z)\sim e^{\lambda_{j}z}((\lambda_{2}-\lambda_{1})z)^{\mu_{j}}\sum_{s=0}^ {\infty}\frac{a_{s,j}}{z^{s}}</Math> as <Math mode="inline" xml:id="C2.S7.SS2.p3.m10">z\to\infty</Math> in the sectors <Math equation-number="2.7.15" mode="display" xml:id="C2.S7.E15">-\tfrac{3}{2}\pi+\delta\leq\operatorname{ph}\left((\lambda_{2}-\lambda_{1})z \right)\leq\tfrac{3}{2}\pi-\delta, if j=1,</Math> <Math equation-number="2.7.16" mode="display" xml:id="C2.S7.E16">-\tfrac{1}{2}\pi+\delta\leq\operatorname{ph}\left((\lambda_{2}-\lambda_{1})z \right)\leq\tfrac{5}{2}\pi-\delta, if j=2,</Math> <Math mode="inline" xml:id="C2.S7.SS2.p3.m11">\delta</Math> being an arbitrary small positive constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C2.S7.SS2.p4.s1">
+Although the expansions (2.7.14) apply only in the sectors (2.7.15) and (2.7.16), each solution <Math mode="inline" xml:id="C2.S7.SS2.p4.m1">w_{j}(z)</Math> can be continued analytically into any other sector.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C2.S7.SS2.p4.s2">
+Typical connection formulas are <Math equation-number="2.7.17" mode="display" xml:id="C2.S7.E17">w_{1}(z)=e^{2\pi i\mu_{1}}w_{1}(ze^{-2\pi i})+C_{1}w_{2}(z),w_{2}(z)=e^{-2\pi i\mu_{2}}w_{2}(ze^{2\pi i})+C_{2}w_{1}(z),</Math> in which <Math mode="inline" xml:id="C2.S7.SS2.p4.m2">C_{1}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p4.m3">C_{2}</Math> are constants, the so-called Stokes multipliers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C2.S7.SS2.p4.s3">
+In combination with (2.7.14) these formulas yield asymptotic expansions for <Math mode="inline" xml:id="C2.S7.SS2.p4.m4">w_{1}(z)</Math> in <Math mode="inline" xml:id="C2.S7.SS2.p4.m5">\frac{1}{2}\pi+\delta\leq\operatorname{ph}\left((\lambda_{2}-\lambda_{1})z \right)\leq\frac{5}{2}\pi-\delta</Math> , and <Math mode="inline" xml:id="C2.S7.SS2.p4.m6">w_{2}(z)</Math> in <Math mode="inline" xml:id="C2.S7.SS2.p4.m7">-\frac{3}{2}\pi+\delta\leq\operatorname{ph}\left((\lambda_{2}-\lambda_{1})z \right)\leq\frac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C2.S7.SS2.p4.s4">
+Furthermore, <Math equation-number="2.7.18" mode="display" xml:id="C2.S7.E18">\Lambda_{1}=-ie^{(\mu_{2}-\mu_{1})\pi i}C_{1}/(2\pi),\Lambda_{2}=iC_{2}/(2\pi)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C2.S7.SS2.p5.s1">
+Note that the coefficients in the expansions (2.7.12), (2.7.13) for the “late” coefficients, that is, <Math mode="inline" xml:id="C2.S7.SS2.p5.m1">a_{s,1}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p5.m2">a_{s,2}</Math> with <Math mode="inline" xml:id="C2.S7.SS2.p5.m3">s</Math> large, are the “early” coefficients <Math mode="inline" xml:id="C2.S7.SS2.p5.m4">a_{j,2}</Math> , <Math mode="inline" xml:id="C2.S7.SS2.p5.m5">a_{j,1}</Math> with <Math mode="inline" xml:id="C2.S7.SS2.p5.m6">j</Math> small.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C2.S7.SS2.p5.s2">
+This phenomenon is an example of resurgence, a classification due to Écalle (1981a, b).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C2.S7.SS2.p5.s3">
+See §2.11(v) for other examples.
+</sentence>
+
+</para>
+    
+<para xml:id="C2.S7.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C2.S7.SS2.p6.s1">
+The exceptional case <Math mode="inline" xml:id="C2.S7.SS2.p6.m1">f_{0}^{2}=4g_{0}</Math> is handled by Fabry’s transformation: <Math equation-number="2.7.19" mode="display" xml:id="C2.S7.E19">w=e^{-f_{0}z/2}W,t=z^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C2.S7.SS2.p6.s2">
+The transformed differential equation either has a regular singularity at <Math mode="inline" xml:id="C2.S7.SS2.p6.m2">t=\infty</Math> , or its characteristic equation has unequal roots.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C2.S7.SS2.p7.s1">
+For error bounds for (2.7.14) see Olver (1997b, Chapter 7).For the calculation of Stokes multipliers see Olde Daalhuis and Olver (1995b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C2.S7.SS2.p7.s2">
+For extensions to singularities of higher rank see Olver and Stenger (1965).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C2.S7.SS2.p7.s3">
+For extensions to higher-order differential equations seeStenger (1966a, b), Olver (1997a, 1999), andOlde Daalhuis and Olver (1998).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S7.SS3">
+<title>Liouville–Green (WKBJ) Approximation</title>           
+<para xml:id="C2.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C2.S7.SS3.p1.s1">
+For irregular singularities of nonclassifiable rank, a powerful tool for finding the asymptotic behavior of solutions, complete with error bounds, is as follows:
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C2.S7.Px1">
+<title>Liouville–Green Approximation Theorem</title>  
+ 
+<para xml:id="C2.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C2.S7.Px1.p1.s1">
+In a finite or infinite interval <Math mode="inline" xml:id="C2.S7.Px1.p1.m1">(a_{1},a_{2})</Math> let <Math mode="inline" xml:id="C2.S7.Px1.p1.m2">f(x)</Math> be real, positive, and twice-continuously differentiable, and <Math mode="inline" xml:id="C2.S7.Px1.p1.m3">g(x)</Math> be continuous.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C2.S7.Px1.p1.s2">
+Then in <Math mode="inline" xml:id="C2.S7.Px1.p1.m4">(a_{1},a_{2})</Math> the differential equation <Math equation-number="2.7.20" mode="display" xml:id="C2.S7.E20">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}=(f(x)+g(x))w</Math> has twice-continuously differentiable solutions <Math equation-number="2.7.21" mode="display" xml:id="C2.S7.E21">w_{1}(x)=f^{-1/4}(x)\exp\left(\int f^{1/2}(x)\mathrm{d}x\right)\*\left(1+ \epsilon_{1}(x)\right),</Math> , <Math equation-number="2.7.22" mode="display" xml:id="C2.S7.E22">w_{2}(x)=f^{-1/4}(x)\exp\left(-\int f^{1/2}(x)\mathrm{d}x\right)\*\left(1+ \epsilon_{2}(x)\right),</Math> such that <Math equation-number="2.7.23" mode="display" xml:id="C2.S7.E23">|\epsilon_{j}(x)|,\;\;\tfrac{1}{2}f^{-1/2}(x)|\epsilon_{j}^{\prime}(x)|\leq \exp\left(\tfrac{1}{2}\mathcal{V}_{a_{j},x}\left(F\right)\right)-1, if j=1,2,</Math> provided that <Math mode="inline" xml:id="C2.S7.Px1.p1.m5">\mathcal{V}_{a_{j},x}\left(F\right)&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C2.S7.Px1.p1.s3">
+Here <Math mode="inline" xml:id="C2.S7.Px1.p1.m6">F(x)</Math> is theerror-control function <Math equation-number="2.7.24" mode="display" xml:id="C2.S7.E24">F(x)=\int\left(\frac{1}{f^{1/4}}\frac{{\mathrm{d}}^{2}}{{\mathrm{d}x}^{2}} \left(\frac{1}{f^{1/4}}\right)-\frac{g}{f^{1/2}}\right)\mathrm{d}x,</Math> and <Math mode="inline" xml:id="C2.S7.Px1.p1.m7">\mathcal{V}</Math> denotes the variational operator (§2.3(i)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C2.S7.Px1.p1.s4">
+Thus <Math equation-number="2.7.25" mode="display" xml:id="C2.S7.E25">\mathcal{V}_{a_{j},x}\left(F\right)=\int_{a_{j}}^{x}\left|\left(\frac{1}{f^{1/ 4}(t)}\frac{{\mathrm{d}}^{2}}{{\mathrm{d}t}^{2}}\left(\frac{1}{f^{1/4}(t)} \right)-\frac{g(t)}{f^{1/2}(t)}\right)\mathrm{d}t\right|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C2.S7.Px1.p2.s1">
+Assuming also <Math mode="inline" xml:id="C2.S7.Px1.p2.m1">\mathcal{V}_{a_{1},a_{2}}\left(F\right)&lt;\infty</Math> , we have <Math equation-number="2.7.26" mode="display" xml:id="C2.S7.E26">w_{1}(x)\sim f^{-1/4}(x)\exp\left(\int f^{1/2}(x)\mathrm{d}x\right), if x\to a_{1}+,</Math> <Math equation-number="2.7.27" mode="display" xml:id="C2.S7.E27">w_{2}(x)\sim f^{-1/4}(x)\exp\left(-\int f^{1/2}(x)\mathrm{d}x\right), if x\to a_{2}-</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C2.S7.Px1.p2.s2">
+Suppose in addition <Math mode="inline" xml:id="C2.S7.Px1.p2.m2">|\int f^{1/2}(x)\mathrm{d}x|</Math> is unbounded as <Math mode="inline" xml:id="C2.S7.Px1.p2.m3">x\to a_{1}+</Math> and <Math mode="inline" xml:id="C2.S7.Px1.p2.m4">x\to a_{2}-</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="42" xml:id="C2.S7.Px1.p2.s3">
+Then there are solutions <Math mode="inline" xml:id="C2.S7.Px1.p2.m5">w_{3}(x)</Math> , <Math mode="inline" xml:id="C2.S7.Px1.p2.m6">w_{4}(x)</Math> , such that <Math equation-number="2.7.28" mode="display" xml:id="C2.S7.E28">w_{3}(x)\sim f^{-1/4}(x)\exp\left(\int f^{1/2}(x)\mathrm{d}x\right), if x\to a_{2}-,</Math> <Math equation-number="2.7.29" mode="display" xml:id="C2.S7.E29">w_{4}(x)\sim f^{-1/4}(x)\exp\left(-\int f^{1/2}(x)\mathrm{d}x\right), if x\to a_{1}+</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="43" xml:id="C2.S7.Px1.p2.s4">
+The solutions with the properties (2.7.26), (2.7.27) are unique, but not those with the properties (2.7.28), (2.7.29).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="44" xml:id="C2.S7.Px1.p2.s5">
+In fact, since <Math equation-number="2.7.30" mode="display" xml:id="C2.S7.E30">w_{1}(x)/w_{4}(x)\to 0, if x\to a_{1}+,</Math> <Math mode="inline" xml:id="C2.S7.Px1.p2.m7">w_{1}(x)</Math> is a recessive (or subdominant) solution as <Math mode="inline" xml:id="C2.S7.Px1.p2.m8">x\to a_{1}+</Math> , and <Math mode="inline" xml:id="C2.S7.Px1.p2.m9">w_{4}(x)</Math> is a dominant solution as <Math mode="inline" xml:id="C2.S7.Px1.p2.m10">x\to a_{1}+</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="45" xml:id="C2.S7.Px1.p2.s6">
+Similarly for <Math mode="inline" xml:id="C2.S7.Px1.p2.m11">w_{2}(x)</Math> and <Math mode="inline" xml:id="C2.S7.Px1.p2.m12">w_{3}(x)</Math> as <Math mode="inline" xml:id="C2.S7.Px1.p2.m13">x\to a_{2}-</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C2.S7.Px2">
+<title>Example</title>   
+<para xml:id="C2.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C2.S7.Px2.p1.s1">
+ <Math equation-number="2.7.31" mode="display" xml:id="C2.S7.E31">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}=(x+\ln x)w, if 0&lt;x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C2.S7.Px2.p1.s2">
+We cannot take <Math mode="inline" xml:id="C2.S7.Px2.p1.m1">f=x</Math> and <Math mode="inline" xml:id="C2.S7.Px2.p1.m2">g=\ln x</Math> because <Math mode="inline" xml:id="C2.S7.Px2.p1.m3">\int gf^{-1/2}\mathrm{d}x</Math> would diverge as <Math mode="inline" xml:id="C2.S7.Px2.p1.m4">x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C2.S7.Px2.p1.s3">
+Instead set <Math mode="inline" xml:id="C2.S7.Px2.p1.m5">f=x+\ln x</Math> , <Math mode="inline" xml:id="C2.S7.Px2.p1.m6">g=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="49" xml:id="C2.S7.Px2.p1.s4">
+By approximating <Math equation-number="2.7.32" mode="display" xml:id="C2.S7.E32">f^{1/2}=x^{1/2}+\tfrac{1}{2}x^{-1/2}\ln x+O\left(x^{-3/2}(\ln x)^{2}\right),</Math> we arrive at <Math equation-number="2.7.33" mode="display" xml:id="C2.S7.E33">w_{2}(x)\sim x^{-(1/4)-\sqrt{x}}\exp\left(2x^{1/2}-\tfrac{2}{3}x^{3/2}\right),</Math> , <Math equation-number="2.7.34" mode="display" xml:id="C2.S7.E34">w_{3}(x)\sim x^{-(1/4)+\sqrt{x}}\exp\left(\tfrac{2}{3}x^{3/2}-2x^{1/2}\right),</Math> as <Math mode="inline" xml:id="C2.S7.Px2.p1.m7">x\to+\infty</Math> , <Math mode="inline" xml:id="C2.S7.Px2.p1.m8">w_{2}(x)</Math> being recessive and <Math mode="inline" xml:id="C2.S7.Px2.p1.m9">w_{3}(x)</Math> dominant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C2.S7.Px2.p2.s1">
+For other examples, and also the corresponding results when <Math mode="inline" xml:id="C2.S7.Px2.p2.m1">f(x)</Math> is negative, seeOlver (1997b, Chapter 6), Olver (1980a),Taylor (1978, 1982), and Smith (1986).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C2.S7.Px2.p2.s2">
+The first of these references includes extensions to complex variables and reversions for zeros.
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S7.SS4">
+<title>Numerically Satisfactory Solutions</title>           
+<para xml:id="C2.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C2.S7.SS4.p1.s1">
+One pair of independent solutions of the equation <Math equation-number="2.7.35" mode="display" xml:id="C2.S7.E35">\ifrac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=w</Math> is <Math mode="inline" xml:id="C2.S7.SS4.p1.m1">w_{1}(z)=e^{z}</Math> , <Math mode="inline" xml:id="C2.S7.SS4.p1.m2">w_{2}(z)=e^{-z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C2.S7.SS4.p1.s2">
+Another is <Math mode="inline" xml:id="C2.S7.SS4.p1.m3">w_{3}(z)=\cosh z</Math> , <Math mode="inline" xml:id="C2.S7.SS4.p1.m4">w_{4}(z)=\sinh z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="54" xml:id="C2.S7.SS4.p1.s3">
+In theory either pair may be used to construct any other solution <Math equation-number="2.7.36" mode="display" xml:id="C2.S7.E36">w(z)=Aw_{1}(z)+Bw_{2}(z),</Math> or <Math equation-number="2.7.37" mode="display" xml:id="C2.S7.E37">w(z)=Cw_{3}(z)+Dw_{4}(z),</Math> where <Math mode="inline" xml:id="C2.S7.SS4.p1.m5">A,B,C,D</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="55" xml:id="C2.S7.SS4.p1.s4">
+From the numerical standpoint, however, the pair <Math mode="inline" xml:id="C2.S7.SS4.p1.m6">w_{3}(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p1.m7">w_{4}(z)</Math> has the drawback that severe numerical cancellation can occur with certain combinations of <Math mode="inline" xml:id="C2.S7.SS4.p1.m8">C</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p1.m9">D</Math> , for example if <Math mode="inline" xml:id="C2.S7.SS4.p1.m10">C</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p1.m11">D</Math> are equal, or nearly equal, and <Math mode="inline" xml:id="C2.S7.SS4.p1.m12">z</Math> , or <Math mode="inline" xml:id="C2.S7.SS4.p1.m13">\Re z</Math> , is large and negative.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="56" xml:id="C2.S7.SS4.p1.s5">
+This kind of cancellation cannot take place with <Math mode="inline" xml:id="C2.S7.SS4.p1.m14">w_{1}(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p1.m15">w_{2}(z)</Math> , and for this reason, and following Miller (1950), we call <Math mode="inline" xml:id="C2.S7.SS4.p1.m16">w_{1}(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p1.m17">w_{2}(z)</Math> anumerically satisfactory pair of solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C2.S7.SS4.p2.s1">
+The solutions <Math mode="inline" xml:id="C2.S7.SS4.p2.m1">w_{1}(z)</Math> and <Math mode="inline" xml:id="C2.S7.SS4.p2.m2">w_{2}(z)</Math> are respectively recessive and dominant as <Math mode="inline" xml:id="C2.S7.SS4.p2.m3">\Re z\to-\infty</Math> , and vice versa as <Math mode="inline" xml:id="C2.S7.SS4.p2.m4">\Re z\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C2.S7.SS4.p2.s2">
+This is characteristic of numerically satisfactory pairs.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C2.S7.SS4.p2.s3">
+In a neighborhood, or sectorial neighborhood of a singularity, one member has to be recessive.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="60" xml:id="C2.S7.SS4.p2.s4">
+In consequence, if a differential equation has more than one singularity in the extended plane, then usually more than two standard solutions need to be chosen in order to have numerically satisfactory representations everywhere.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S7.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C2.S7.SS4.p3.s1">
+In oscillatory intervals, and again following Miller (1950), we call a pair of solutions numerically satisfactory if asymptotically they have the same amplitude and are <Math mode="inline" xml:id="C2.S7.SS4.p3.m1">\tfrac{1}{2}\pi</Math> out of phase.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+</section>

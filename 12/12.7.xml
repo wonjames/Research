@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S7">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C12.S7.SS1">
+<title>Hermite Polynomials</title>        
+    
+<para xml:id="C12.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S7.SS1.p1.s1">
+For the notation see §18.3.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C12.S7.SS1.p1.s2">
+<Math equation-number="12.7.1" mode="display" xml:id="C12.S7.E1">U\left(-\tfrac{1}{2},z\right)=D_{0}\left(z\right)=e^{-\frac{1}{4}z^{2}},</Math> <Math equation-number="12.7.2" mode="display" xml:id="C12.S7.E2">U\left(-n-\tfrac{1}{2},z\right)=D_{n}\left(z\right)=e^{-\frac{1}{4}z^{2}} \mathit{He}_{n}\left(z\right)=2^{-n/2}e^{-\frac{1}{4}z^{2}}H_{n}\left(z/\sqrt{ 2}\right), if n=0,1,2,\dots ,</Math> <Math equation-number="12.7.3" mode="display" xml:id="C12.S7.E3">V\left(n+\tfrac{1}{2},z\right)=\sqrt{2/\pi}e^{\frac{1}{4}z^{2}}(-i)^{n}\mathit {He}_{n}\left(iz\right)=\sqrt{2/\pi}e^{\frac{1}{4}z^{2}}(-i)^{n}2^{-\frac{1}{2 }n}H_{n}\left(iz/\sqrt{2}\right), if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS2">
+<title>Error Functions, Dawson’s Integral, and Probability Function</title>        
+    
+    
+ 
+ 
+<para xml:id="C12.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C12.S7.SS2.p1.s1">
+For the notation see §§7.2 and 7.18.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C12.S7.SS2.p1.s2">
+<Math equation-number="12.7.4" mode="display" xml:id="C12.S7.E4">V\left(-\tfrac{1}{2},z\right)=(\ifrac{2}{\sqrt{\pi}}\,)e^{\frac{1}{4}z^{2}}F \left(z/\sqrt{2}\right),</Math> <Math equation-number="12.7.5" mode="display" xml:id="C12.S7.E5">U\left(\tfrac{1}{2},z\right)=D_{-1}\left(z\right)=\sqrt{\tfrac{1}{2}\pi}\,e^{ \frac{1}{4}z^{2}}\operatorname{erfc}\left(z/\sqrt{2}\right),</Math> <Math equation-number="12.7.6" mode="display" xml:id="C12.S7.E6">U\left(n+\tfrac{1}{2},z\right)=D_{-n-1}\left(z\right)=\sqrt{\frac{\pi}{2}} \frac{(-1)^{n}}{n!}e^{-\frac{1}{4}z^{2}}\frac{{\mathrm{d}}^{n}\left(e^{\frac{1 }{2}z^{2}}\operatorname{erfc}\left(z/\sqrt{2}\right)\right)}{{\mathrm{d}z}^{n}}, if n=0,1,2,\dots,</Math> <Math equation-number="12.7.7" mode="display" xml:id="C12.S7.E7">U\left(n+\tfrac{1}{2},z\right)=e^{\frac{1}{4}z^{2}}\mathit{Hh}_{n}\left(z \right)=\sqrt{\pi}\,2^{\frac{1}{2}(n-1)}e^{\frac{1}{4}z^{2}}\mathop{\mathrm{i} ^{n}\mathrm{erfc}}\left(z/\sqrt{2}\right), if n=-1,0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS3">
+<title>Modified Bessel Functions</title>        
+  
+ 
+<para xml:id="C12.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C12.S7.SS3.p1.s1">
+For the notation see §10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C12.S7.SS3.p1.s2">
+<Math equation-number="12.7.8" mode="display" xml:id="C12.S7.E8">U\left(-2,z\right)=\frac{z^{5/2}}{4\sqrt{2\pi}}\left(2\!K_{\frac{1}{4}}\left( \tfrac{1}{4}z^{2}\right)+3\!K_{\frac{3}{4}}\left(\tfrac{1}{4}z^{2}\right)-K_{ \frac{5}{4}}\left(\tfrac{1}{4}z^{2}\right)\right),</Math> <Math equation-number="12.7.9" mode="display" xml:id="C12.S7.E9">U\left(-1,z\right)=\frac{z^{3/2}}{2\sqrt{2\pi}}\left(K_{\frac{1}{4}}\left( \tfrac{1}{4}z^{2}\right)+K_{\frac{3}{4}}\left(\tfrac{1}{4}z^{2}\right)\right),</Math> , <Math equation-number="12.7.10" mode="display" xml:id="C12.S7.E10">U\left(0,z\right)=\sqrt{\frac{z}{2\pi}}K_{\frac{1}{4}}\left(\tfrac{1}{4}z^{2} \right),</Math> , <Math equation-number="12.7.11" mode="display" xml:id="C12.S7.E11">U\left(1,z\right)=\frac{z^{3/2}}{\sqrt{2\pi}}\left(K_{\frac{3}{4}}\left(\tfrac {1}{4}z^{2}\right)-K_{\frac{1}{4}}\left(\tfrac{1}{4}z^{2}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C12.S7.SS3.p1.s3">
+For these, the corresponding results for <Math mode="inline" xml:id="C12.S7.SS3.p1.m1">U\left(a,z\right)</Math> with <Math mode="inline" xml:id="C12.S7.SS3.p1.m2">a=2</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m3">\pm 3</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m4">-\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m5">-\tfrac{3}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m6">-\tfrac{5}{2}</Math> , and the corresponding results for <Math mode="inline" xml:id="C12.S7.SS3.p1.m7">V\left(a,z\right)</Math> with <Math mode="inline" xml:id="C12.S7.SS3.p1.m8">a=0</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m9">\pm 1</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m10">\pm 2</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m11">\pm 3</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m12">\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m13">\tfrac{3}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m14">\tfrac{5}{2}</Math> , see Miller (1955, pp. 42–43 and 77–79).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS4">
+<title>Confluent Hypergeometric Functions</title>        
+   
+<para xml:id="C12.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C12.S7.SS4.p1.s1">
+For the notation see §§13.2(i) and 13.14(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C12.S7.SS4.p2.s1">
+The even and odd solutions of (12.2.2) (see (12.4.3)–(12.4.6)) are given by <Math equation-number="12.7.12" mode="display" xml:id="C12.S7.E12">u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2 },\tfrac{1}{2}z^{2}\right)=e^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac{1 }{4},\tfrac{1}{2},-\tfrac{1}{2}z^{2}\right),</Math> <Math equation-number="12.7.13" mode="display" xml:id="C12.S7.E13">u_{2}(a,z)=ze^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{ 2},\tfrac{1}{2}z^{2}\right)=ze^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac {3}{4},\tfrac{3}{2},-\tfrac{1}{2}z^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C12.S7.SS4.p2.s2">
+Also, <Math equation-number="12.7.14" mode="display" xml:id="C12.S7.E14">U\left(a,z\right)=2^{-\frac{1}{4}-\frac{1}{2}a}e^{-\frac{1}{4}z^{2}}U\left( \tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=2^{-\frac{3}{ 4}-\frac{1}{2}a}ze^{-\frac{1}{4}z^{2}}U\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac {3}{2},\tfrac{1}{2}z^{2}\right)=2^{-\frac{1}{2}a}z^{-\frac{1}{2}}W_{-\frac{1}{ 2}a,\pm\frac{1}{4}}\left(\tfrac{1}{2}z^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C12.S7.SS4.p2.s3">
+(It should be observed that the functions on the right-hand sides of (12.7.14) are multivalued; hence, for example, <Math mode="inline" xml:id="C12.S7.SS4.p2.m1">z</Math> cannot be replaced simply by <Math mode="inline" xml:id="C12.S7.SS4.p2.m2">-z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C12.S7.SS4.p2.s4">
+)
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

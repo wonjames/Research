@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S31">
+<title>Equations of Whittaker–Hill and Ince</title>        
+   
+<subsection xml:id="C28.S31.SS1">
+<title>Whittaker–Hill Equation</title>        
+  
+<para xml:id="C28.S31.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S31.SS1.p1.s1">
+Hill’s equation with three terms <Math equation-number="28.31.1" mode="display" xml:id="C28.S31.E1">W^{\prime\prime}+\left(A+B\cos\left(2z\right)-\tfrac{1}{2}(kc)^{2}\cos\left(4z \right)\right)W=0</Math> and constant values of <Math mode="inline" xml:id="C28.S31.SS1.p1.m1">A,B,k</Math> , and <Math mode="inline" xml:id="C28.S31.SS1.p1.m2">c</Math> , is called the Equation of Whittaker–Hill.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S31.SS1.p1.s2">
+It has been discussed in detail by Arscott (1967) for <Math mode="inline" xml:id="C28.S31.SS1.p1.m3">k^{2}&lt;0</Math> , and by Urwin and Arscott (1970) for <Math mode="inline" xml:id="C28.S31.SS1.p1.m4">k^{2}&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S31.SS2">
+<title>Equation of Ince; Ince Polynomials</title>        
+   
+<para xml:id="C28.S31.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C28.S31.SS2.p1.s1">
+When <Math mode="inline" xml:id="C28.S31.SS2.p1.m1">k^{2}&lt;0</Math> , we substitute <Math equation-number="28.31.2" mode="display" xml:id="C28.S31.E2">\xi^{2}=-4k^{2}c^{2},A=\eta-\tfrac{1}{8}\xi^{2},B=-(p+1)\xi,W(z)=w(z)\exp\left(-\tfrac{1}{4}\xi\cos\left(2z\right)\right),</Math> in (28.31.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C28.S31.SS2.p1.s2">
+The result is the Equation of Ince: <Math equation-number="28.31.3" mode="display" xml:id="C28.S31.E3">w^{\prime\prime}+\xi\sin\left(2z\right)w^{\prime}+(\eta-p\xi\cos\left(2z\right ))w=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S31.SS2.p2.s1">
+Formal <Math mode="inline" xml:id="C28.S31.SS2.p2.m1">2\pi</Math> -periodic solutions can be constructed as Fourier series; compare §28.4:
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C28.S31.SS2.p2.s2">
+<Math equation-number="28.31.4" mode="display" xml:id="C28.S31.E4">w_{\mathit{e},s}(z)=\sum_{\ell=0}^{\infty}A_{2\ell+s}\cos(2\ell+s)z, if s=0,1,</Math> , <Math equation-number="28.31.5" mode="display" xml:id="C28.S31.E5">w_{\mathit{o},s}(z)=\sum_{\ell=0}^{\infty}B_{2\ell+s}\sin(2\ell+s)z, if s=1,2,</Math> where the coefficients satisfy
+</sentence>
+
+</para>
+  
+<para xml:id="C28.S31.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C28.S31.SS2.p3.s1">
+ <Math equation-number="28.31.6" mode="display" xml:id="C28.S31.E6">-2\eta A_{0}+(2+p)\xi A_{2}=0,p\xi A_{0}+(4-\eta)A_{2}+\left(\tfrac{1}{2}p+2\right)\xi A_{4}=0,(\tfrac{1}{2}p-\ell+1)\xi A_{2\ell-2}+\left(4\ell^{2}-\eta\right)A_{2\ell}+( \tfrac{1}{2}p+\ell+1)\xi A_{2\ell+2}=0, if \ell\geq 2,</Math> <Math equation-number="28.31.7" mode="display" xml:id="C28.S31.E7">\left(1-\eta+\left(\tfrac{1}{2}p+\tfrac{1}{2}\right)\xi\right)A_{1}+\left( \tfrac{1}{2}p+\tfrac{3}{2}\right)\xi A_{3}=0,(\tfrac{1}{2}p-\ell+\tfrac{1}{2})\xi A_{2\ell-1}+\left((2\ell+1)^{2}-\eta \right)A_{2\ell+1}+(\tfrac{1}{2}p+\ell+\tfrac{3}{2})\xi A_{2\ell+3}=0, if \ell\geq 1,</Math> <Math equation-number="28.31.8" mode="display" xml:id="C28.S31.E8">\left(1-\eta-\left(\tfrac{1}{2}p+\tfrac{1}{2}\right)\xi\right)B_{1}+\left( \tfrac{1}{2}p+\tfrac{3}{2}\right)\xi B_{3}=0,(\tfrac{1}{2}p-\ell+\tfrac{1}{2})\xi B_{2\ell-1}+\left((2\ell+1)^{2}-\eta \right)B_{2\ell+1}+(\tfrac{1}{2}p+\ell+\tfrac{3}{2})\xi B_{2\ell+3}=0, if \ell\geq 1,</Math> <Math equation-number="28.31.9" mode="display" xml:id="C28.S31.E9">(4-\eta)B_{2}+\left(\tfrac{1}{2}p+2\right)\xi B_{4}=0,(\tfrac{1}{2}p-\ell+1)\xi B_{2\ell-2}+(4\ell^{2}-\eta)B_{2\ell}+(\tfrac{1}{2}p +\ell+1)\xi B_{2\ell+2}=0, if \ell\geq 2.</Math>
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C28.S31.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C28.S31.SS2.p4.s1">
+When <Math mode="inline" xml:id="C28.S31.SS2.p4.m1">p</Math> is a nonnegative integer, the parameter <Math mode="inline" xml:id="C28.S31.SS2.p4.m2">\eta</Math> can be chosen so that solutions of (28.31.3) are trigonometric polynomials, calledInce polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C28.S31.SS2.p4.s2">
+They are denoted by <Math equation-number="28.31.10" mode="display" xml:id="C28.S31.E10">\begin{array}[]{cl}C_{2n}^{2m}(z,\xi)&amp;\mbox{with $p=2n$},\\ C_{2n+1}^{2m+1}(z,\xi)&amp;\mbox{with $p=2n+1$},\end{array}</Math> <Math equation-number="28.31.11" mode="display" xml:id="C28.S31.E11">\begin{array}[]{cl}S_{2n+1}^{2m+1}(z,\xi)&amp;\mbox{with $p=2n+1$},\\ S_{2n+2}^{2m+2}(z,\xi)&amp;\mbox{with $p=2n+2$},\end{array}</Math> and <Math mode="inline" xml:id="C28.S31.SS2.p4.m5">m=0,1,\dots,n</Math> in all cases.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C28.S31.SS2.p5.s1">
+The values of <Math mode="inline" xml:id="C28.S31.SS2.p5.m1">\eta</Math> corresponding to <Math mode="inline" xml:id="C28.S31.SS2.p5.m2">C_{p}^{m}(z,\xi)</Math> , <Math mode="inline" xml:id="C28.S31.SS2.p5.m3">S_{p}^{m}(z,\xi)</Math> are denoted by <Math mode="inline" xml:id="C28.S31.SS2.p5.m4">a_{p}^{m}(\xi)</Math> , <Math mode="inline" xml:id="C28.S31.SS2.p5.m5">b_{p}^{m}(\xi)</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C28.S31.SS2.p5.s2">
+They are real and distinct, and can be ordered so that <Math mode="inline" xml:id="C28.S31.SS2.p5.m6">C_{p}^{m}(z,\xi)</Math> and <Math mode="inline" xml:id="C28.S31.SS2.p5.m7">S_{p}^{m}(z,\xi)</Math> have precisely <Math mode="inline" xml:id="C28.S31.SS2.p5.m8">m</Math> zeros, all simple, in <Math mode="inline" xml:id="C28.S31.SS2.p5.m9">0\leq z&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C28.S31.SS2.p5.s3">
+The normalization is given by <Math equation-number="28.31.12" mode="display" xml:id="C28.S31.E12">\dfrac{1}{\pi}\int_{0}^{2\pi}\left(C_{p}^{m}(x,\xi)\right)^{2}\mathrm{d}x= \dfrac{1}{\pi}\int_{0}^{2\pi}\left(S_{p}^{m}(x,\xi)\right)^{2}\mathrm{d}x=1,</Math> ambiguities in sign being resolved by requiring <Math mode="inline" xml:id="C28.S31.SS2.p5.m10">C_{p}^{m}(x,\xi)</Math> and <Math mode="inline" xml:id="C28.S31.SS2.p5.m11">{S_{p}^{m}}^{\prime}(x,\xi)</Math> to be continuous functions of <Math mode="inline" xml:id="C28.S31.SS2.p5.m12">x</Math> and positive when <Math mode="inline" xml:id="C28.S31.SS2.p5.m13">x=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C28.S31.SS2.p6.s1">
+For <Math mode="inline" xml:id="C28.S31.SS2.p6.m1">\xi\to 0</Math> , with <Math mode="inline" xml:id="C28.S31.SS2.p6.m2">x</Math> fixed, <Math equation-number="28.31.13" mode="display" xml:id="C28.S31.E13">C_{p}^{0}(x,\xi)\to 1/{\sqrt{2}}, //// C_{p}^{m}(x,\xi)\to\cos\left(mx\right), //// S_{p}^{m}(x,\xi)\to\sin\left(mx\right), if m\neq 0; //// a_{p}^{m}(\xi),\,b_{p}^{m}(\xi)\to m^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C28.S31.SS2.p7.s1">
+If <Math mode="inline" xml:id="C28.S31.SS2.p7.m1">p\to\infty</Math> and <Math mode="inline" xml:id="C28.S31.SS2.p7.m2">\xi\to 0</Math> in such a way that <Math mode="inline" xml:id="C28.S31.SS2.p7.m3">p\xi\to 2q</Math> , then in the notation of §§28.2(v) and 28.2(vi)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C28.S31.SS2.p7.s2">
+<Math equation-number="28.31.14" mode="display" xml:id="C28.S31.E14">C_{p}^{m}(x,\xi)\to\mathrm{ce}_{m}\left(x,q\right),S_{p}^{m}(x,\xi)\to\mathrm{se}_{m}\left(x,q\right),</Math> <Math equation-number="28.31.15" mode="display" xml:id="C28.S31.E15">a_{p}^{m}(\xi)\to a_{m}(q),b_{p}^{m}(\xi)\to b_{m}(q)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C28.S31.SS2.p8.s1">
+For proofs and further information, including convergence of the series (28.31.4), (28.31.5), see Arscott (1967).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S31.SS3">
+<title>Paraboloidal Wave Functions</title>        
+   
+<para xml:id="C28.S31.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C28.S31.SS3.p1.s1">
+With (28.31.10) and (28.31.11),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C28.S31.SS3.p1.s2">
+<Math equation-number="28.31.16" mode="display" xml:id="C28.S31.E16">\mathit{hc}_{p}^{m}(z,\xi)=e^{-\frac{1}{4}\xi\cos\left(2z\right)}C_{p}^{m}(z, \xi),</Math> <Math equation-number="28.31.17" mode="display" xml:id="C28.S31.E17">\mathit{hs}_{p}^{m}(z,\xi)=e^{-\frac{1}{4}\xi\cos\left(2z\right)}S_{p}^{m}(z, \xi),</Math> are called paraboloidal wave functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C28.S31.SS3.p1.s3">
+They satisfy the differential equation <Math equation-number="28.31.18" mode="display" xml:id="C28.S31.E18">w^{\prime\prime}+\left(\eta-\tfrac{1}{8}\xi^{2}-(p+1)\xi\cos\left(2z\right)+ \tfrac{1}{8}\xi^{2}\cos\left(4z\right)\right)w=0,</Math> with <Math mode="inline" xml:id="C28.S31.SS3.p1.m3">\eta=a_{p}^{m}(\xi)</Math> , <Math mode="inline" xml:id="C28.S31.SS3.p1.m4">\eta=b_{p}^{m}(\xi)</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C28.S31.SS3.p2.s1">
+For change of sign of <Math mode="inline" xml:id="C28.S31.SS3.p2.m1">\xi</Math> , <Math equation-number="28.31.19" mode="display" xml:id="C28.S31.E19">\mathit{hc}_{2n}^{2m}(z,-\xi)=(-1)^{m}\mathit{hc}_{2n}^{2m}(\tfrac{1}{2}\pi-z, \xi),\mathit{hc}_{2n+1}^{2m+1}(z,-\xi)=(-1)^{m}\mathit{hs}_{2n+1}^{2m+1}(\tfrac{1}{ 2}\pi-z,\xi),</Math> and <Math equation-number="28.31.20" mode="display" xml:id="C28.S31.E20">\mathit{hs}_{2n+1}^{2m+1}(z,-\xi)=(-1)^{m}\mathit{hc}_{2n+1}^{2m+1}(\tfrac{1}{ 2}\pi-z,\xi),\mathit{hs}_{2n+2}^{2m+2}(z,-\xi)=(-1)^{m}\mathit{hs}_{2n+2}^{2m+2}(\tfrac{1}{ 2}\pi-z,\xi)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C28.S31.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C28.S31.SS3.p3.s1">
+For <Math mode="inline" xml:id="C28.S31.SS3.p3.m1">m_{1}\neq m_{2}</Math> , <Math equation-number="28.31.21" mode="display" xml:id="C28.S31.E21">\int_{0}^{2\pi}\mathit{hc}_{p}^{m_{1}}(x,\xi)\mathit{hc}_{p}^{m_{2}}(x,\xi) \mathrm{d}x=\int_{0}^{2\pi}\mathit{hs}_{p}^{m_{1}}(x,\xi)\mathit{hs}_{p}^{m_{2 }}(x,\xi)\mathrm{d}x=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C28.S31.SS3.p3.s2">
+More important are the double orthogonality relations for <Math mode="inline" xml:id="C28.S31.SS3.p3.m2">p_{1}\neq p_{2}</Math> or <Math mode="inline" xml:id="C28.S31.SS3.p3.m3">m_{1}\neq m_{2}</Math> or both, given by <Math equation-number="28.31.22" mode="display" xml:id="C28.S31.E22">\int_{u_{0}}^{u_{\infty}}\int_{0}^{2\pi}\mathit{hc}_{p_{1}}^{m_{1}}(u,\xi) \mathit{hc}_{p_{1}}^{m_{1}}(v,\xi)\mathit{hc}_{p_{2}}^{m_{2}}(u,\xi)\mathit{hc }_{p_{2}}^{m_{2}}(v,\xi)\*\left(\cos\left(2u\right)-\cos\left(2v\right)\right) \mathrm{d}v\mathrm{d}u=0,</Math> and <Math equation-number="28.31.23" mode="display" xml:id="C28.S31.E23">\int_{u_{0}}^{u_{\infty}}\int_{0}^{2\pi}\mathit{hs}_{p_{1}}^{m_{1}}(u,\xi) \mathit{hs}_{p_{1}}^{m_{1}}(v,\xi)\mathit{hs}_{p_{2}}^{m_{2}}(u,\xi)\mathit{hs }_{p_{2}}^{m_{2}}(v,\xi)\*\left(\cos\left(2u\right)-\cos\left(2v\right)\right) \mathrm{d}v\mathrm{d}u=0,</Math> and also for all <Math mode="inline" xml:id="C28.S31.SS3.p3.m4">p_{1},p_{2},m_{1},m_{2}</Math> , given by <Math equation-number="28.31.24" mode="display" xml:id="C28.S31.E24">\int_{u_{0}}^{u_{\infty}}\int_{0}^{2\pi}\mathit{hc}_{p_{1}}^{m_{1}}(u,\xi) \mathit{hc}_{p_{1}}^{m_{1}}(v,\xi)\mathit{hs}_{p_{2}}^{m_{2}}(u,\xi)\mathit{hs }_{p_{2}}^{m_{2}}(v,\xi)\*\left(\cos\left(2u\right)-\cos\left(2v\right)\right) \mathrm{d}v\mathrm{d}u=0,</Math> where <Math mode="inline" xml:id="C28.S31.SS3.p3.m5">(u_{0},u_{\infty})=(0,\mathrm{i}\infty)</Math> when <Math mode="inline" xml:id="C28.S31.SS3.p3.m6">\xi&gt;0</Math> , and <Math mode="inline" xml:id="C28.S31.SS3.p3.m7">(u_{0},u_{\infty})=(\tfrac{1}{2}\pi,\tfrac{1}{2}\pi+\mathrm{i}\infty)</Math> when <Math mode="inline" xml:id="C28.S31.SS3.p3.m8">\xi&lt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C28.S31.SS3.p4.s1">
+For proofs and further integral equations see Urwin (1964, 1965).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C28.S31.Px1">
+<title>Asymptotic Behavior</title>  
+ 
+ 
+<para xml:id="C28.S31.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C28.S31.Px1.p1.s1">
+For <Math mode="inline" xml:id="C28.S31.Px1.p1.m1">\xi&gt;0</Math> , the functions <Math mode="inline" xml:id="C28.S31.Px1.p1.m2">\mathit{hc}_{p}^{m}(z,\xi)</Math> , <Math mode="inline" xml:id="C28.S31.Px1.p1.m3">\mathit{hs}_{p}^{m}(z,\xi)</Math> behave asymptotically as multiples of <Math mode="inline" xml:id="C28.S31.Px1.p1.m4">\exp\left(-\tfrac{1}{4}\xi\cos\left(2z\right)\right)\left(\cos z\right)^{p}</Math> as <Math mode="inline" xml:id="C28.S31.Px1.p1.m5">z\to\pm\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C28.S31.Px1.p1.s2">
+All other periodic solutions behave as multiples of <Math mode="inline" xml:id="C28.S31.Px1.p1.m6">\exp\left(\tfrac{1}{4}\xi\cos\left(2z\right)\right)(\cos z)^{-p-2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S31.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C28.S31.Px1.p2.s1">
+For <Math mode="inline" xml:id="C28.S31.Px1.p2.m1">\xi&gt;0</Math> , the functions <Math mode="inline" xml:id="C28.S31.Px1.p2.m2">\mathit{hc}_{p}^{m}(z,-\xi)</Math> , <Math mode="inline" xml:id="C28.S31.Px1.p2.m3">\mathit{hs}_{p}^{m}(z,-\xi)</Math> behave asymptotically as multiples of <Math mode="inline" xml:id="C28.S31.Px1.p2.m4">\exp\left(\tfrac{1}{4}\xi\cos\left(2z\right)\right)(\cos z)^{-p-2}</Math> as <Math mode="inline" xml:id="C28.S31.Px1.p2.m5">z\to\tfrac{1}{2}\pi\pm\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C28.S31.Px1.p2.s2">
+All other periodic solutions behave as multiples of <Math mode="inline" xml:id="C28.S31.Px1.p2.m6">\exp\left(-\tfrac{1}{4}\xi\cos\left(2z\right)\right)\left(\cos z\right)^{p}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

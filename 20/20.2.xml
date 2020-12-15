@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C20.S2">
+<title>Definitions and Periodic Properties</title>         
+<subsection xml:id="C20.S2.SS1">
+<title>Fourier Series</title>                
+<para xml:id="C20.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C20.S2.SS1.p1.s1">
+ <Math equation-number="20.2.1" mode="display" xml:id="C20.S2.E1">\theta_{1}\left(z\middle|\tau\right)=\theta_{1}\left(z,q\right)=2\sum\limits_{ n=0}^{\infty}(-1)^{n}q^{(n+\frac{1}{2})^{2}}\sin\left((2n+1)z\right),</Math> , <Math equation-number="20.2.2" mode="display" xml:id="C20.S2.E2">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(z,q\right)=2\sum\limits_{ n=0}^{\infty}q^{(n+\frac{1}{2})^{2}}\cos\left((2n+1)z\right),</Math> , <Math equation-number="20.2.3" mode="display" xml:id="C20.S2.E3">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(z,q\right)=1+2\sum\limits _{n=1}^{\infty}q^{n^{2}}\cos\left(2nz\right),</Math> , <Math equation-number="20.2.4" mode="display" xml:id="C20.S2.E4">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(z,q\right)=1+2\sum\limits _{n=1}^{\infty}(-1)^{n}q^{n^{2}}\cos\left(2nz\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C20.S2.SS1.p2.s1">
+Corresponding expansions for <Math mode="inline" xml:id="C20.S2.SS1.p2.m1">\theta_{j}'\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.SS1.p2.m2">j=1,2,3,4</Math> , can be found by differentiating (20.2.1)–(20.2.4) with respect to <Math mode="inline" xml:id="C20.S2.SS1.p2.m3">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS2">
+<title>Periodicity and Quasi-Periodicity</title>           
+<para xml:id="C20.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C20.S2.SS2.p1.s1">
+For fixed <Math mode="inline" xml:id="C20.S2.SS2.p1.m1">\tau</Math> , each <Math mode="inline" xml:id="C20.S2.SS2.p1.m2">\theta_{j}\left(z\middle|\tau\right)</Math> is an entire function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m3">z</Math> with period <Math mode="inline" xml:id="C20.S2.SS2.p1.m4">2\pi</Math> ; <Math mode="inline" xml:id="C20.S2.SS2.p1.m5">\theta_{1}\left(z\middle|\tau\right)</Math> is odd in <Math mode="inline" xml:id="C20.S2.SS2.p1.m6">z</Math> and the others are even.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C20.S2.SS2.p1.s2">
+For fixed <Math mode="inline" xml:id="C20.S2.SS2.p1.m7">z</Math> , each of <Math mode="inline" xml:id="C20.S2.SS2.p1.m8">\ifrac{\theta_{1}\left(z\middle|\tau\right)}{\sin z}</Math> , <Math mode="inline" xml:id="C20.S2.SS2.p1.m9">\ifrac{\theta_{2}\left(z\middle|\tau\right)}{\cos z}</Math> , <Math mode="inline" xml:id="C20.S2.SS2.p1.m10">\theta_{3}\left(z\middle|\tau\right)</Math> , and <Math mode="inline" xml:id="C20.S2.SS2.p1.m11">\theta_{4}\left(z\middle|\tau\right)</Math> is an analytic function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m12">\tau</Math> for <Math mode="inline" xml:id="C20.S2.SS2.p1.m13">\Im\tau&gt;0</Math> , with a natural boundary <Math mode="inline" xml:id="C20.S2.SS2.p1.m14">\Im\tau=0</Math> , and correspondingly, an analytic function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m15">q</Math> for <Math mode="inline" xml:id="C20.S2.SS2.p1.m16">\left|q\right|&lt;1</Math> with a natural boundary <Math mode="inline" xml:id="C20.S2.SS2.p1.m17">\left|q\right|=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C20.S2.SS2.p2.s1">
+The four points <Math mode="inline" xml:id="C20.S2.SS2.p2.m1">(0,\pi,\pi+\tau\pi,\tau\pi)</Math> are the vertices of thefundamental parallelogram in the <Math mode="inline" xml:id="C20.S2.SS2.p2.m2">z</Math> -plane; see Figure 20.2.1.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C20.S2.SS2.p2.s2">
+The points <Math equation-number="20.2.5" mode="display" xml:id="C20.S2.E5">z_{m,n}=(m+n\tau)\pi, if m,n\in\mathbb{Z},</Math> are the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C20.S2.SS2.p2.s3">
+The theta functions are quasi-periodic on the lattice: <Math equation-number="20.2.6" mode="display" xml:id="C20.S2.E6">\theta_{1}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{m+n}q^{-n^{2}}e^{-2inz }\theta_{1}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.7" mode="display" xml:id="C20.S2.E7">\theta_{2}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{m}q^{-n^{2}}e^{-2inz} \theta_{2}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.8" mode="display" xml:id="C20.S2.E8">\theta_{3}\left(z+(m+n\tau)\pi\middle|\tau\right)=q^{-n^{2}}e^{-2inz}\theta_{3 }\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.9" mode="display" xml:id="C20.S2.E9">\theta_{4}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{n}q^{-n^{2}}e^{-2inz} \theta_{4}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+
+         
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="1" xml:id="C20.S2.F1.t1.s1">
+
+
+</sentence>
+  
+<sentence sentence-num-in-section="9" xml:id="C20.S2.F1.s1">
+Figure 20.2.1: <Math mode="inline" xml:id="C20.S2.F1.m1">z</Math> -plane. Fundamental parallelogram. Left-hand diagram is the rectangular case (<Math mode="inline" xml:id="C20.S2.F1.m2">\tau</Math> purely imaginary); right-hand diagram is the general case. zeros of <Math mode="inline" xml:id="C20.S2.F1.m4">\theta_{1}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m5">\blacksquare</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m6">\theta_{2}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m7">\blacktriangle</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m8">\theta_{3}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m9">\blacklozenge</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m10">\theta_{4}\left(z\middle|\tau\right)</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS3">
+<title>Translation of the Argument by Half-Periods</title>        
+  
+<para xml:id="C20.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C20.S2.SS3.p1.s1">
+With <Math equation-number="20.2.10" mode="display" xml:id="C20.S2.E10">M=M(z|\tau)=e^{iz+(i\pi\tau/4)},</Math> <Math equation-number="20.2.11" mode="display" xml:id="C20.S2.E11">\theta_{1}\left(z\middle|\tau\right)=-\theta_{2}\left(z+\tfrac{1}{2}\pi\middle |\tau\right)=-iM\theta_{4}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=-iM \theta_{3}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.12" mode="display" xml:id="C20.S2.E12">\theta_{2}\left(z\middle|\tau\right)=\theta_{1}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=M\theta_{3}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=M\theta_ {4}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.13" mode="display" xml:id="C20.S2.E13">\theta_{3}\left(z\middle|\tau\right)=\theta_{4}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=M\theta_{2}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=M\theta_ {1}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.14" mode="display" xml:id="C20.S2.E14">\theta_{4}\left(z\middle|\tau\right)=\theta_{3}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=-iM\theta_{1}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=iM \theta_{2}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS4">
+<title><Math mode="inline" xml:id="C20.S2.SS4.m1">z</Math>-Zeros</title>        
+  
+<para xml:id="C20.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C20.S2.SS4.p1.s1">
+For <Math mode="inline" xml:id="C20.S2.SS4.p1.m1">m,n\in\mathbb{Z}</Math> , the <Math mode="inline" xml:id="C20.S2.SS4.p1.m2">z</Math> -zeros of <Math mode="inline" xml:id="C20.S2.SS4.p1.m3">\theta_{j}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m4">j=1,2,3,4</Math> , are <Math mode="inline" xml:id="C20.S2.SS4.p1.m5">(m+n\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m6">(m+\tfrac{1}{2}+n\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m7">(m+\tfrac{1}{2}+(n+\tfrac{1}{2})\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m8">(m+(n+\tfrac{1}{2})\tau)\pi</Math> respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

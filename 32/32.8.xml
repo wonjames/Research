@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S8">
+<title>Rational Solutions</title>           
+<subsection xml:id="C32.S8.SS1">
+<title>Introduction</title>         
+<para xml:id="C32.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S8.SS1.p1.s1">
+ <Math mode="inline" xml:id="C32.S8.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S8.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> possess hierarchies of rational solutions for special values of the parameters which are generated from “seed solutions” using the Bäcklundtransformations and often can be expressed in the form of determinants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C32.S8.SS1.p1.s2">
+SeeAirault (1979).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS2">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C32.S8.SS2.p1.s1">
+Rational solutions of <Math mode="inline" xml:id="C32.S8.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> exist for <Math mode="inline" xml:id="C32.S8.SS2.p1.m2">\alpha=n(\in\mathbb{Z})</Math> and are generated using the seed solution <Math mode="inline" xml:id="C32.S8.SS2.p1.m3">w(z;0)=0</Math> and the Bäcklund transformations (32.7.1) and (32.7.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C32.S8.SS2.p1.s2">
+The first four are <Math equation-number="32.8.1" mode="display" xml:id="C32.S8.E1">w(z;1)=-\ifrac{1}{z},</Math> <Math equation-number="32.8.2" mode="display" xml:id="C32.S8.E2">w(z;2)=\frac{1}{z}-\frac{3z^{2}}{z^{3}+4},</Math> <Math equation-number="32.8.3" mode="display" xml:id="C32.S8.E3">w(z;3)=\frac{3z^{2}}{z^{3}+4}-\frac{6z^{2}(z^{3}+10)}{z^{6}+20z^{3}-80},</Math> <Math equation-number="32.8.4" mode="display" xml:id="C32.S8.E4">w(z;4)=-\frac{1}{z}+\frac{6z^{2}(z^{3}+10)}{z^{6}+20z^{3}-80}-\frac{9z^{5}(z^{ 3}+40)}{z^{9}+60z^{6}+11200}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C32.S8.SS2.p2.s1">
+More generally, <Math equation-number="32.8.5" mode="display" xml:id="C32.S8.E5">w(z;n)=\frac{\mathrm{d}}{\mathrm{d}z}\left(\ln\left(\frac{Q_{n-1}(z)}{Q_{n}(z) }\right)\right),</Math> where the <Math mode="inline" xml:id="C32.S8.SS2.p2.m1">Q_{n}(z)</Math> are monic polynomials (coefficient of highest power of <Math mode="inline" xml:id="C32.S8.SS2.p2.m2">z</Math> is <Math mode="inline" xml:id="C32.S8.SS2.p2.m3">1</Math> ) satisfying <Math equation-number="32.8.6" mode="display" xml:id="C32.S8.E6">Q_{n+1}(z)Q_{n-1}(z)={zQ_{n}^{2}(z)+4\left(Q_{n}^{\prime}(z)\right)^{2}-4Q_{n} (z)Q_{n}^{\prime\prime}(z)},</Math> with <Math mode="inline" xml:id="C32.S8.SS2.p2.m4">Q_{0}(z)=1</Math> , <Math mode="inline" xml:id="C32.S8.SS2.p2.m5">Q_{1}(z)=z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C32.S8.SS2.p2.s2">
+Thus <Math equation-number="32.8.7" mode="display" xml:id="C32.S8.E7">Q_{2}(z)=z^{3}+4,Q_{3}(z)=z^{6}+20z^{3}-80,Q_{4}(z)=z^{10}+60z^{7}+11200z,Q_{5}(z)=z^{15}+140z^{12}+2800z^{9}+78400z^{6}-3\;13600z^{3}-62\;72000,Q_{6}(z)=z^{21}+280z^{18}+18480z^{15}+6\;27200z^{12}-172\;48000z^{9}+14488\;32 000z^{6}+1\;93177\;60000z^{3}-3\;86355\;20000</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C32.S8.SS2.p3.s1">
+Next, let <Math mode="inline" xml:id="C32.S8.SS2.p3.m1">p_{m}(z)</Math> be the polynomials defined by <Math mode="inline" xml:id="C32.S8.SS2.p3.m2">p_{m}(z)=0</Math> for <Math mode="inline" xml:id="C32.S8.SS2.p3.m3">m&lt;0</Math> , and <Math equation-number="32.8.8" mode="display" xml:id="C32.S8.E8">\sum_{m=0}^{\infty}p_{m}(z)\lambda^{m}=\exp\left(z\lambda-\tfrac{4}{3}\lambda^ {3}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C32.S8.SS2.p3.s2">
+Then for <Math mode="inline" xml:id="C32.S8.SS2.p3.m4">n\geq 2</Math> <Math equation-number="32.8.9" mode="display" xml:id="C32.S8.E9">w(z;n)=\frac{\mathrm{d}}{\mathrm{d}z}\left(\ln\left(\frac{\tau_{n-1}(z)}{\tau_ {n}(z)}\right)\right),</Math> where <Math mode="inline" xml:id="C32.S8.SS2.p3.m5">\tau_{n}(z)</Math> is the <Math mode="inline" xml:id="C32.S8.SS2.p3.m6">n\times n</Math> determinant <Math equation-number="32.8.10" mode="display" xml:id="C32.S8.E10">\tau_{n}(z)=\begin{vmatrix}p_{1}(z)&amp;p_{3}(z)&amp;\cdots&amp;p_{2n-1}(z)\\ p_{1}^{\prime}(z)&amp;p_{3}^{\prime}(z)&amp;\cdots&amp;p_{2n-1}^{\prime}(z)\\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ p_{1}^{(n-1)}(z)&amp;p_{3}^{(n-1)}(z)&amp;\cdots&amp;p_{2n-1}^{(n-1)}(z)\end{vmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C32.S8.SS2.p4.s1">
+For plots of the zeros of <Math mode="inline" xml:id="C32.S8.SS2.p4.m1">Q_{n}(z)</Math> see Clarkson and Mansfield (2003).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS3">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C32.S8.SS3.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> are <Math equation-number="32.8.11" mode="display" xml:id="C32.S8.E11">w(z;\mu,-\mu\kappa^{2},\lambda,-\lambda\kappa^{4})=\kappa,</Math> <Math equation-number="32.8.12" mode="display" xml:id="C32.S8.E12">w(z;0,-\mu,0,\mu\kappa)=\kappa z,</Math> <Math equation-number="32.8.13" mode="display" xml:id="C32.S8.E13">w(z;2\kappa+3,-2\kappa+1,1,-1)=\dfrac{z+\kappa}{z+\kappa+1},</Math> with <Math mode="inline" xml:id="C32.S8.SS3.p1.m2">\kappa</Math> , <Math mode="inline" xml:id="C32.S8.SS3.p1.m3">\lambda</Math> , and <Math mode="inline" xml:id="C32.S8.SS3.p1.m4">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C32.S8.SS3.p2.s1">
+In the general case assume <Math mode="inline" xml:id="C32.S8.SS3.p2.m1">\gamma\delta\neq 0</Math> , so that as in§32.2(ii)we may set <Math mode="inline" xml:id="C32.S8.SS3.p2.m2">\gamma=1</Math> and <Math mode="inline" xml:id="C32.S8.SS3.p2.m3">\delta=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C32.S8.SS3.p2.s2">
+Then <Math mode="inline" xml:id="C32.S8.SS3.p2.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> has rational solutions iff <Math equation-number="32.8.14" mode="display" xml:id="C32.S8.E14">\alpha\pm\beta=4n,</Math> with <Math mode="inline" xml:id="C32.S8.SS3.p2.m5">n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C32.S8.SS3.p2.s3">
+These solutions have the form <Math equation-number="32.8.15" mode="display" xml:id="C32.S8.E15">w(z)=\ifrac{P_{m}(z)}{Q_{m}(z)},</Math> where <Math mode="inline" xml:id="C32.S8.SS3.p2.m6">P_{m}(z)</Math> and <Math mode="inline" xml:id="C32.S8.SS3.p2.m7">Q_{m}(z)</Math> are polynomials of degree <Math mode="inline" xml:id="C32.S8.SS3.p2.m8">m</Math> , with no common zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C32.S8.SS3.p3.s1">
+For examples and plots see Milne et al. (1997); alsoClarkson (2003a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C32.S8.SS3.p3.s2">
+For determinantal representations seeKajiwara and Masuda (1999).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS4">
+<title>Fourth Painlevé Equation</title>        
+ 
+<para xml:id="C32.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C32.S8.SS4.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> are <Math equation-number="32.8.16" mode="display" xml:id="C32.S8.E16">w_{1}(z;\pm 2,-2)=\pm\ifrac{1}{z},</Math> , <Math equation-number="32.8.17" mode="display" xml:id="C32.S8.E17">w_{2}(z;0,-2)=-2z,</Math> , <Math equation-number="32.8.18" mode="display" xml:id="C32.S8.E18">w_{3}(z;0,-\tfrac{2}{9})=-\tfrac{2}{3}z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C32.S8.SS4.p2.s1">
+There are also three families of solutions of <Math mode="inline" xml:id="C32.S8.SS4.p2.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> of the form <Math equation-number="32.8.19" mode="display" xml:id="C32.S8.E19">w_{1}(z;\alpha_{1},\beta_{1})=\ifrac{P_{1,n-1}(z)}{Q_{1,n}(z)},</Math> <Math equation-number="32.8.20" mode="display" xml:id="C32.S8.E20">w_{2}(z;\alpha_{2},\beta_{2})=-2z+(\ifrac{P_{2,n-1}(z)}{Q_{2,n}(z)}),</Math> <Math equation-number="32.8.21" mode="display" xml:id="C32.S8.E21">w_{3}(z;\alpha_{3},\beta_{3})=-\tfrac{2}{3}z+(\ifrac{P_{3,n-1}(z)}{Q_{3,n}(z)}),</Math> where <Math mode="inline" xml:id="C32.S8.SS4.p2.m2">P_{j,n-1}(z)</Math> and <Math mode="inline" xml:id="C32.S8.SS4.p2.m3">Q_{j,n}(z)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S8.SS4.p2.m4">n-1</Math> and <Math mode="inline" xml:id="C32.S8.SS4.p2.m5">n</Math> , respectively, with no common zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C32.S8.SS4.p3.s1">
+In general, <Math mode="inline" xml:id="C32.S8.SS4.p3.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> has rational solutions iff either <Math equation-number="32.8.22" mode="display" xml:id="C32.S8.E22">\alpha=m,\beta=-2(1+2n-m)^{2},</Math> or <Math equation-number="32.8.23" mode="display" xml:id="C32.S8.E23">\mspace{12.0mu }\alpha=m,\beta=-2(\tfrac{1}{3}+2n-m)^{2},</Math> with <Math mode="inline" xml:id="C32.S8.SS4.p3.m2">m,n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C32.S8.SS4.p3.s2">
+The rational solutions when the parameters satisfy (32.8.22) are special cases of §32.10(iv).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C32.S8.SS4.p4.s1">
+For examples and plots see Bassom et al. (1995); alsoClarkson (2003b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C32.S8.SS4.p4.s2">
+For determinantal representations seeKajiwara and Ohta (1998) and Noumi and Yamada (1999).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS5">
+<title>Fifth Painlevé Equation</title>         
+<para xml:id="C32.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C32.S8.SS5.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> are <Math equation-number="32.8.24" mode="display" xml:id="C32.S8.E24">w(z;\tfrac{1}{2},-\tfrac{1}{2}\mu^{2},\kappa(2-\mu),-\tfrac{1}{2}\kappa^{2})= \kappa z+\mu,</Math> <Math equation-number="32.8.25" mode="display" xml:id="C32.S8.E25">w(z;\tfrac{1}{2},\kappa^{2}\mu,2\kappa\mu,\mu)=\kappa/(z+\kappa),</Math> <Math equation-number="32.8.26" mode="display" xml:id="C32.S8.E26">w(z;\tfrac{1}{8},-\tfrac{1}{8},-\kappa\mu,\mu)=(\kappa+z)/(\kappa-z),</Math> with <Math mode="inline" xml:id="C32.S8.SS5.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C32.S8.SS5.p2.s1">
+In the general case assume <Math mode="inline" xml:id="C32.S8.SS5.p2.m1">\delta\neq 0</Math> , so that as in §32.2(ii) we may set <Math mode="inline" xml:id="C32.S8.SS5.p2.m2">\delta=-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C32.S8.SS5.p2.s2">
+Then <Math mode="inline" xml:id="C32.S8.SS5.p2.m3">\mbox{P}_{\mbox{\scriptsize V}}</Math> has a rational solution iff one of the following holds with <Math mode="inline" xml:id="C32.S8.SS5.p2.m4">m,n\in\mathbb{Z}</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p2.m5">\varepsilon=\pm 1</Math> : <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m1">\alpha=\tfrac{1}{2}(m+\varepsilon\gamma)^{2}</Math> and <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m2">\beta=-\tfrac{1}{2}n^{2}</Math> , where <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m3">n&gt;0</Math> , <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m4">m+n</Math> is odd, and <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m5">\alpha\neq 0</Math> when <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m6">|m|&lt;n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C32.S8.SS5.p2.s3">
+<Math mode="inline" xml:id="C32.S8.I1.i2.p1.m1">\alpha=\tfrac{1}{2}n^{2}</Math> and <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m2">\beta=-\tfrac{1}{2}(m+\varepsilon\gamma)^{2}</Math> , where <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m3">n&gt;0</Math> , <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m4">m+n</Math> is odd, and <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m5">\beta\neq 0</Math> when <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m6">|m|&lt;n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C32.S8.SS5.p2.s4">
+<Math mode="inline" xml:id="C32.S8.I1.i3.p1.m1">\alpha=\tfrac{1}{2}a^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m2">\beta=-\tfrac{1}{2}(a+n)^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m3">\gamma=m</Math> , with <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m4">m+n</Math> even.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="27" xml:id="C32.S8.SS5.p2.s5">
+<Math mode="inline" xml:id="C32.S8.I1.i4.p1.m1">\alpha=\tfrac{1}{2}(b+n)^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m2">\beta=-\tfrac{1}{2}b^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m3">\gamma=m</Math> , with <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m4">m+n</Math> even.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="28" xml:id="C32.S8.SS5.p2.s6">
+<Math mode="inline" xml:id="C32.S8.I1.i5.p1.m1">\alpha=\tfrac{1}{8}(2m+1)^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i5.p1.m2">\beta=-\tfrac{1}{8}(2n+1)^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i5.p1.m3">\gamma\notin\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="29" xml:id="C32.S8.SS5.p2.s7">
+These rational solutions have the form <Math equation-number="32.8.27" mode="display" xml:id="C32.S8.E27">w(z)=\lambda z+\mu+(\ifrac{P_{n-1}(z)}{Q_{n}(z)}),</Math> where <Math mode="inline" xml:id="C32.S8.SS5.p2.m6">\lambda</Math> , <Math mode="inline" xml:id="C32.S8.SS5.p2.m7">\mu</Math> are constants, and <Math mode="inline" xml:id="C32.S8.SS5.p2.m8">P_{n-1}(z)</Math> , <Math mode="inline" xml:id="C32.S8.SS5.p2.m9">Q_{n}(z)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S8.SS5.p2.m10">n-1</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p2.m11">n</Math> , respectively, with no common zeros.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="30" xml:id="C32.S8.SS5.p2.s8">
+Cases (a) and (b) are special cases of §32.10(v).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C32.S8.SS5.p3.s1">
+For examples and plots see Clarkson (2005).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C32.S8.SS5.p3.s2">
+For determinantal representations see Masuda et al. (2002).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C32.S8.SS5.p3.s3">
+For the case <Math mode="inline" xml:id="C32.S8.SS5.p3.m1">\delta=0</Math> seeAirault (1979) and Lukaševič (1968).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS6">
+<title>Sixth Painlevé Equation</title>         
+<para xml:id="C32.S8.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C32.S8.SS6.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS6.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are <Math equation-number="32.8.28" mode="display" xml:id="C32.S8.E28">w(z;\mu,-\mu\kappa^{2},\tfrac{1}{2},\tfrac{1}{2}-\mu(\kappa-1)^{2})=\kappa z,</Math> <Math equation-number="32.8.29" mode="display" xml:id="C32.S8.E29">w(z;0,0,2,0)=\kappa z^{2},</Math> , <Math equation-number="32.8.30" mode="display" xml:id="C32.S8.E30">w(z;0,0,\tfrac{1}{2},-\tfrac{3}{2})=\ifrac{\kappa}{z},</Math> , <Math equation-number="32.8.31" mode="display" xml:id="C32.S8.E31">w(z;0,0,2,-4)=\ifrac{\kappa}{z^{2}},</Math> <Math equation-number="32.8.32" mode="display" xml:id="C32.S8.E32">w(z;\tfrac{1}{2}(\kappa+\mu)^{2},-\tfrac{1}{2},\tfrac{1}{2}(\mu-1)^{2},\tfrac{ 1}{2}\kappa(2-\kappa))=\dfrac{z}{\kappa+\mu z},</Math> with <Math mode="inline" xml:id="C32.S8.SS6.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S8.SS6.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C32.S8.SS6.p2.s1">
+In the general case, <Math mode="inline" xml:id="C32.S8.SS6.p2.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> has rational solutions if <Math equation-number="32.8.33" mode="display" xml:id="C32.S8.E33">a+b+c+d=2n+1,</Math> where <Math mode="inline" xml:id="C32.S8.SS6.p2.m2">n\in\mathbb{Z}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m3">a=\varepsilon_{1}\sqrt{2\alpha}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m4">b=\varepsilon_{2}\sqrt{-2\beta}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m5">c=\varepsilon_{3}\sqrt{2\gamma}</Math> , and <Math mode="inline" xml:id="C32.S8.SS6.p2.m6">d=\varepsilon_{4}\sqrt{1-2\delta}</Math> , with <Math mode="inline" xml:id="C32.S8.SS6.p2.m7">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m8">j=1,2,3,4</Math> , independently, and at least one of <Math mode="inline" xml:id="C32.S8.SS6.p2.m9">a</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m10">b</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m11">c</Math> or <Math mode="inline" xml:id="C32.S8.SS6.p2.m12">d</Math> is an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C32.S8.SS6.p2.s2">
+These are special cases of §32.10(vi).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

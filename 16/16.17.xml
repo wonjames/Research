@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S17">
+<title>Definition</title>         
+  
+<para xml:id="C16.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S17.p1.s1">
+Again assume <Math mode="inline" xml:id="C16.S17.p1.m1">a_{1},a_{2},\dots,a_{p}</Math> and <Math mode="inline" xml:id="C16.S17.p1.m2">b_{1},b_{2},\dots,b_{q}</Math> are real or complex parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S17.p1.s2">
+Assume also that <Math mode="inline" xml:id="C16.S17.p1.m3">m</Math> and <Math mode="inline" xml:id="C16.S17.p1.m4">n</Math> are integers such that <Math mode="inline" xml:id="C16.S17.p1.m5">0\leq m\leq q</Math> and <Math mode="inline" xml:id="C16.S17.p1.m6">0\leq n\leq p</Math> , and none of <Math mode="inline" xml:id="C16.S17.p1.m7">a_{k}-b_{j}</Math> is a positive integer when <Math mode="inline" xml:id="C16.S17.p1.m8">1\leq k\leq n</Math> and <Math mode="inline" xml:id="C16.S17.p1.m9">1\leq j\leq m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S17.p1.s3">
+Then the Meijer <Math mode="inline" xml:id="C16.S17.p1.m10">G</Math> -function is defined via the Mellin–Barnes integral representation: <Math equation-number="16.17.1" mode="display" xml:id="C16.S17.E1">{G^{m,n}_{p,q}}\left(z;\mathbf{a};\mathbf{b}\right)={G^{m,n}_{p,q}}\left(z;{a_ {1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)=\frac{1}{2\pi\mathrm{i}}\int_{L }\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{m}\Gamma\left(b_{\ell}-s\right )\prod\limits_{\ell=1}^{n}\Gamma\left(1-a_{\ell}+s\right)}{\left(\prod\limits_ {\ell=m}^{q-1}\Gamma\left(1-b_{\ell+1}+s\right)\prod\limits_{\ell=n}^{p-1} \Gamma\left(a_{\ell+1}-s\right)\right)}}\right)z^{s}\mathrm{d}s,</Math> where the integration path <Math mode="inline" xml:id="C16.S17.p1.m12">L</Math> separates the poles of the factors <Math mode="inline" xml:id="C16.S17.p1.m13">\Gamma\left(b_{\ell}-s\right)</Math> from those of the factors <Math mode="inline" xml:id="C16.S17.p1.m14">\Gamma\left(1-a_{\ell}+s\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C16.S17.p1.s4">
+There are three possible choices for <Math mode="inline" xml:id="C16.S17.p1.m15">L</Math> , illustrated in Figure 16.17.1 in the case <Math mode="inline" xml:id="C16.S17.p1.m16">m=1</Math> , <Math mode="inline" xml:id="C16.S17.p1.m17">n=2</Math> : <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m1">L</Math> goes from <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m2">-\mathrm{i}\infty</Math> to <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m3">\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C16.S17.p1.s5">
+The integral converges if <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m4">p+q&lt;2(m+n)</Math> and <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m5">|\operatorname{ph}z|&lt;(m+n-\frac{1}{2}(p+q))\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C16.S17.p1.s6">
+<Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m1">L</Math> is a loop that starts at infinity on a line parallel to the positive real axis, encircles the poles of the <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m2">\Gamma\left(b_{\ell}-s\right)</Math> once in the negative sense and returns to infinity on another line parallel to the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C16.S17.p1.s7">
+The integral converges for all <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m3">z</Math> ( <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m4">\neq 0</Math> ) if <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m5">p&lt;q</Math> , and for <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m6">0&lt;|z|&lt;1</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m7">p=q\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C16.S17.p1.s8">
+<Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m1">L</Math> is a loop that starts at infinity on a line parallel to the negative real axis, encircles the poles of the <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m2">\Gamma\left(1-a_{\ell}+s\right)</Math> once in the positive sense and returns to infinity on another line parallel to the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C16.S17.p1.s9">
+The integral converges for all <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m3">z</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m4">p&gt;q</Math> , and for <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m5">|z|&gt;1</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m6">p=q\geq 1</Math>.
+</sentence>
+
+</para>
+        
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="1" xml:id="C16.S17.F1.t1.s1">
+Case (i)
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="2" xml:id="C16.S17.F1.t1.s2">
+Case (ii)
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="3" xml:id="C16.S17.F1.t1.s3">
+Case (iii)
+</sentence>
+  
+<sentence sentence-num-in-section="13" xml:id="C16.S17.F1.s1">
+Figure 16.17.1: -plane. Path <Math mode="inline" xml:id="C16.S17.F1.m3">L</Math> for the integral representation ( ) of the Meijer <Math mode="inline" xml:id="C16.S17.F1.m4">G</Math> -function.
+</sentence>  
+<para xml:id="C16.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C16.S17.p2.s1">
+When more than one of Cases (i), (ii), and (iii) is applicable the same value is obtained for the Meijer <Math mode="inline" xml:id="C16.S17.p2.m1">G</Math> -function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C16.S17.p3.s1">
+Assume <Math mode="inline" xml:id="C16.S17.p3.m1">p\leq q</Math> , no two of the bottom parameters <Math mode="inline" xml:id="C16.S17.p3.m2">b_{j}</Math> , <Math mode="inline" xml:id="C16.S17.p3.m3">j=1,\dots,m</Math> , differ by an integer, and <Math mode="inline" xml:id="C16.S17.p3.m4">a_{j}-b_{k}</Math> is not a positive integer when <Math mode="inline" xml:id="C16.S17.p3.m5">j=1,2,\dots,n</Math> and <Math mode="inline" xml:id="C16.S17.p3.m6">k=1,2,\dots,m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C16.S17.p3.s2">
+Then <Math equation-number="16.17.2" mode="display" xml:id="C16.S17.E2">{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)=\sum_ {k=1}^{m}A_{p,q,k}^{m,n}(z){{}_{p}F_{q-1}}\left({1+b_{k}-a_{1},\dots,1+b_{k}-a _{p}\atop 1+b_{k}-b_{1},\ldots*\dots,1+b_{k}-b_{q}};(-1)^{p-m-n}z\right),</Math> where <Math mode="inline" xml:id="C16.S17.p3.m8">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S17.p3.m9">1+b_{k}-b_{k}</Math> is omitted. Also, <Math equation-number="16.17.3" mode="display" xml:id="C16.S17.E3">A_{p,q,k}^{m,n}(z)=\ifrac{\prod\limits_{\begin{subarray}{c}\ell=1\\ \ell\neq k\end{subarray}}^{m}\Gamma\left(b_{\ell}-b_{k}\right)\prod\limits_{ \ell=1}^{n}\Gamma\left(1+b_{k}-a_{\ell}\right)z^{b_{k}}}{\left(\prod\limits_{ \ell=m}^{q-1}\Gamma\left(1+b_{k}-b_{\ell+1}\right)\prod\limits_{\ell=n}^{p-1} \Gamma\left(a_{\ell+1}-b_{k}\right)\right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>

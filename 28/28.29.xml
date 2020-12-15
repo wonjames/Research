@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S29">
+<title>Definitions and Basic Properties</title>        
+ 
+<subsection xml:id="C28.S29.SS1">
+<title>Hill’s Equation</title>        
+ 
+<para xml:id="C28.S29.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S29.SS1.p1.s1">
+A generalization of Mathieu’s equation (28.2.1) isHill’s equation <Math equation-number="28.29.1" mode="display" xml:id="C28.S29.E1">w^{\prime\prime}(z)+\left(\lambda+Q(z)\right)w=0,</Math> with <Math equation-number="28.29.2" mode="display" xml:id="C28.S29.E2">Q(z+\pi)=Q(z),</Math> and <Math equation-number="28.29.3" mode="display" xml:id="C28.S29.E3">\int_{0}^{\pi}Q(z)\mathrm{d}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S29.SS1.p1.s2">
+<Math mode="inline" xml:id="C28.S29.SS1.p1.m1">Q(z)</Math> is either a continuous and real-valued function for <Math mode="inline" xml:id="C28.S29.SS1.p1.m2">z\in\mathbb{R}</Math> or an analytic function of <Math mode="inline" xml:id="C28.S29.SS1.p1.m3">z</Math> in a doubly-infinite open strip that contains the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S29.SS1.p1.s3">
+<Math mode="inline" xml:id="C28.S29.SS1.p1.m4">\pi</Math> is the minimum period of <Math mode="inline" xml:id="C28.S29.SS1.p1.m5">Q</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S29.SS2">
+<title>Floquet’s Theorem and the Characteristic Exponent</title>        
+    
+<para xml:id="C28.S29.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C28.S29.SS2.p1.s1">
+The basic solutions <Math mode="inline" xml:id="C28.S29.SS2.p1.m1">w_{\mbox{\tiny I}}(z,\lambda)</Math> , <Math mode="inline" xml:id="C28.S29.SS2.p1.m2">w_{\mbox{\tiny II}}(z,\lambda)</Math> are defined in the same way as in §28.2(ii) (compare (28.2.5), (28.2.6)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C28.S29.SS2.p1.s2">
+Then <Math equation-number="28.29.4" mode="display" xml:id="C28.S29.E4">w_{\mbox{\tiny I}}(z+\pi,\lambda)=w_{\mbox{\tiny I}}(\pi,\lambda)w_{\mbox{ \tiny I}}(z,\lambda)+w^{\prime}_{\mbox{\tiny I}}(\pi,\lambda)w_{\mbox{\tiny II }}(z,\lambda),</Math> , <Math equation-number="28.29.5" mode="display" xml:id="C28.S29.E5">w_{\mbox{\tiny II}}(z+\pi,\lambda)=w_{\mbox{\tiny II}}(\pi,\lambda)w_{\mbox{ \tiny I}}(z,\lambda)+w^{\prime}_{\mbox{\tiny II}}(\pi,\lambda)w_{\mbox{\tiny II }}(z,\lambda)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C28.S29.SS2.p2.s1">
+Let <Math mode="inline" xml:id="C28.S29.SS2.p2.m1">\nu</Math> be a real or complex constant satisfying (without loss of generality) <Math equation-number="28.29.6" mode="display" xml:id="C28.S29.E6">-1&lt;\Re\nu\leq 1</Math> throughout this section.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C28.S29.SS2.p2.s2">
+Then (28.29.1) has a nontrivial solution <Math mode="inline" xml:id="C28.S29.SS2.p2.m2">w(z)</Math> with the pseudoperiodic property <Math equation-number="28.29.7" mode="display" xml:id="C28.S29.E7">w(z+\pi)=e^{\pi\mathrm{i}\nu}w(z),</Math> iff <Math mode="inline" xml:id="C28.S29.SS2.p2.m3">e^{\pi\mathrm{i}\nu}</Math> is an eigenvalue of the matrix <Math equation-number="28.29.8" mode="display" xml:id="C28.S29.E8">\begin{bmatrix}w_{\mbox{\tiny I}}(\pi,\lambda)&amp;w_{\mbox{\tiny II}}(\pi,\lambda )\\ w^{\prime}_{\mbox{\tiny I}}(\pi,\lambda)&amp;w^{\prime}_{\mbox{\tiny II}}(\pi, \lambda)\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C28.S29.SS2.p2.s3">
+Equivalently, <Math equation-number="28.29.9" mode="display" xml:id="C28.S29.E9">2\cos\left(\pi\nu\right)=w_{\mbox{\tiny I}}(\pi,\lambda)+w_{\mbox{\tiny II}}^{ \prime}(\pi,\lambda)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C28.S29.SS2.p2.s4">
+This is the characteristic equation of (28.29.1), and <Math mode="inline" xml:id="C28.S29.SS2.p2.m4">\cos\left(\pi\nu\right)</Math> is an entire function of <Math mode="inline" xml:id="C28.S29.SS2.p2.m5">\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C28.S29.SS2.p2.s5">
+Given <Math mode="inline" xml:id="C28.S29.SS2.p2.m6">\lambda</Math> together with the condition (28.29.6), the solutions <Math mode="inline" xml:id="C28.S29.SS2.p2.m7">\pm\nu</Math> of (28.29.9) are the characteristic exponents of (28.29.1).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="11" xml:id="C28.S29.SS2.p2.s6">
+A solution satisfying (28.29.7) is called aFloquet solution with respect to <Math mode="inline" xml:id="C28.S29.SS2.p2.m8">\nu</Math> (or Floquet solution).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="12" xml:id="C28.S29.SS2.p2.s7">
+It has the form <Math equation-number="28.29.10" mode="display" xml:id="C28.S29.E10">F_{\nu}(z)=e^{\mathrm{i}\nu z}P_{\nu}(z),</Math> where the function <Math mode="inline" xml:id="C28.S29.SS2.p2.m9">P_{\nu}(z)</Math> is <Math mode="inline" xml:id="C28.S29.SS2.p2.m10">\pi</Math> -periodic.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C28.S29.SS2.p3.s1">
+If <Math mode="inline" xml:id="C28.S29.SS2.p3.m1">\nu</Math> <Math mode="inline" xml:id="C28.S29.SS2.p3.m2">(\neq 0,1)</Math> is a solution of (28.29.9), then <Math mode="inline" xml:id="C28.S29.SS2.p3.m3">F_{\nu}(z)</Math> , <Math mode="inline" xml:id="C28.S29.SS2.p3.m4">F_{-\nu}(z)</Math> comprise a fundamental pair of solutions of Hill’s equation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C28.S29.SS2.p4.s1">
+If <Math mode="inline" xml:id="C28.S29.SS2.p4.m1">\nu=0</Math> or <Math mode="inline" xml:id="C28.S29.SS2.p4.m2">1</Math> , then (28.29.1) has a nontrivial solution <Math mode="inline" xml:id="C28.S29.SS2.p4.m3">P(z)</Math> which is periodic with period <Math mode="inline" xml:id="C28.S29.SS2.p4.m4">\pi</Math> (when <Math mode="inline" xml:id="C28.S29.SS2.p4.m5">\nu=0</Math> ) or <Math mode="inline" xml:id="C28.S29.SS2.p4.m6">2\pi</Math> (when <Math mode="inline" xml:id="C28.S29.SS2.p4.m7">\nu=1</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C28.S29.SS2.p4.s2">
+Let <Math mode="inline" xml:id="C28.S29.SS2.p4.m8">w(z)</Math> be a solution linearly independent of <Math mode="inline" xml:id="C28.S29.SS2.p4.m9">P(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C28.S29.SS2.p4.s3">
+Then <Math equation-number="28.29.11" mode="display" xml:id="C28.S29.E11">w(z+\pi)=(-1)^{\nu}w(z)+cP(z),</Math> where <Math mode="inline" xml:id="C28.S29.SS2.p4.m10">c</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C28.S29.SS2.p4.s4">
+The case <Math mode="inline" xml:id="C28.S29.SS2.p4.m11">c=0</Math> is equivalent to <Math equation-number="28.29.12" mode="display" xml:id="C28.S29.E12">\begin{bmatrix}w_{\mbox{\tiny I}}(\pi,\lambda)&amp;w_{\mbox{\tiny II}}(\pi,\lambda )\\ w^{\prime}_{\mbox{\tiny I}}(\pi,\lambda)&amp;w^{\prime}_{\mbox{\tiny II}}(\pi, \lambda)\end{bmatrix}=\begin{bmatrix}(-1)^{\nu}&amp;0\\ 0&amp;(-1)^{\nu}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C28.S29.SS2.p4.s5">
+The solutions of period <Math mode="inline" xml:id="C28.S29.SS2.p4.m12">\pi</Math> or <Math mode="inline" xml:id="C28.S29.SS2.p4.m13">2\pi</Math> are exceptional in the following sense.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="19" xml:id="C28.S29.SS2.p4.s6">
+If (28.29.1) has a periodic solution with minimum period <Math mode="inline" xml:id="C28.S29.SS2.p4.m14">n\pi</Math> , <Math mode="inline" xml:id="C28.S29.SS2.p4.m15">n=3,4,\dots</Math> , then all solutions are periodic with period <Math mode="inline" xml:id="C28.S29.SS2.p4.m16">n\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C28.S29.SS2.p5.s1">
+Furthermore, for each solution <Math mode="inline" xml:id="C28.S29.SS2.p5.m1">w(z)</Math> of (28.29.1)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C28.S29.SS2.p5.s2">
+<Math equation-number="28.29.13" mode="display" xml:id="C28.S29.E13">w(z+\pi)+w(z-\pi)=2\cos\left(\pi\nu\right)w(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C28.S29.SS2.p5.s3">
+A nontrivial solution <Math mode="inline" xml:id="C28.S29.SS2.p5.m2">w(z)</Math> is either a Floquet solution with respect to <Math mode="inline" xml:id="C28.S29.SS2.p5.m3">\nu</Math> , or <Math mode="inline" xml:id="C28.S29.SS2.p5.m4">w(z+\pi)-e^{\mathrm{i}\nu\pi}w(z)</Math> is a Floquet solution with respect to <Math mode="inline" xml:id="C28.S29.SS2.p5.m5">-\nu</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C28.S29.SS2.p6.s1">
+In the symmetric case <Math mode="inline" xml:id="C28.S29.SS2.p6.m1">Q(z)=Q(-z)</Math> , <Math mode="inline" xml:id="C28.S29.SS2.p6.m2">w_{\mbox{\tiny I}}(z,\lambda)</Math> is an even solution and <Math mode="inline" xml:id="C28.S29.SS2.p6.m3">w_{\mbox{\tiny II}}(z,\lambda)</Math> is an odd solution; compare §28.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C28.S29.SS2.p6.s2">
+(28.29.9) reduces to <Math equation-number="28.29.14" mode="display" xml:id="C28.S29.E14">\cos\left(\pi\nu\right)=w_{\mbox{\tiny I}}(\pi,\lambda)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C28.S29.SS2.p6.s3">
+The cases <Math mode="inline" xml:id="C28.S29.SS2.p6.m4">\nu=0</Math> and <Math mode="inline" xml:id="C28.S29.SS2.p6.m5">\nu=1</Math> split into four subcases as in (28.2.21) and (28.2.22).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C28.S29.SS2.p6.s4">
+The <Math mode="inline" xml:id="C28.S29.SS2.p6.m6">\pi</Math> -periodic or <Math mode="inline" xml:id="C28.S29.SS2.p6.m7">\pi</Math> -antiperiodic solutions are multiples of <Math mode="inline" xml:id="C28.S29.SS2.p6.m8">w_{\mbox{\tiny I}}(z,\lambda),w_{\mbox{\tiny II}}(z,\lambda)</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C28.S29.SS2.p7.s1">
+For details and proofs see Magnus and Winkler (1966, §1.3).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S29.SS3">
+<title>Discriminant and Eigenvalues in the Real Case</title>        
+  
+<para xml:id="C28.S29.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C28.S29.SS3.p1.s1">
+ <Math mode="inline" xml:id="C28.S29.SS3.p1.m1">Q(x)</Math> is assumed to be real-valued throughout this subsection.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C28.S29.SS3.p2.s1">
+The function <Math equation-number="28.29.15" mode="display" xml:id="C28.S29.E15">\bigtriangleup(\lambda)=w_{\mbox{\tiny I}}(\pi,\lambda)+w_{\mbox{\tiny II}}^{ \prime}(\pi,\lambda)</Math> is called the discriminant of (28.29.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C28.S29.SS3.p2.s2">
+It is an entire function of <Math mode="inline" xml:id="C28.S29.SS3.p2.m1">\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C28.S29.SS3.p2.s3">
+Its order of growth for <Math mode="inline" xml:id="C28.S29.SS3.p2.m2">|\lambda|\to\infty</Math> is exactly <Math mode="inline" xml:id="C28.S29.SS3.p2.m3">\tfrac{1}{2}</Math> ; seeMagnus and Winkler (1966, Chapter II, pp. 19–28).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C28.S29.SS3.p3.s1">
+For a given <Math mode="inline" xml:id="C28.S29.SS3.p3.m1">\nu</Math> , the characteristic equation <Math mode="inline" xml:id="C28.S29.SS3.p3.m2">\bigtriangleup(\lambda)-2\cos\left(\pi\nu\right)=0</Math> has infinitely many roots <Math mode="inline" xml:id="C28.S29.SS3.p3.m3">\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C28.S29.SS3.p3.s2">
+Conversely, for a given <Math mode="inline" xml:id="C28.S29.SS3.p3.m4">\lambda</Math> , the value of <Math mode="inline" xml:id="C28.S29.SS3.p3.m5">\bigtriangleup(\lambda)</Math> is needed for the computation of <Math mode="inline" xml:id="C28.S29.SS3.p3.m6">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C28.S29.SS3.p3.s3">
+For this purpose the discriminant can be expressed as an infinite determinant involving the Fourier coefficients of <Math mode="inline" xml:id="C28.S29.SS3.p3.m7">Q(x)</Math> ; seeMagnus and Winkler (1966, §2.3, pp. 28–36).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C28.S29.SS3.p4.s1">
+To every equation (28.29.1), there belong two increasing infinite sequences of real eigenvalues: <Math equation-number="28.29.16" mode="display" xml:id="C28.S29.E16">\lambda_{n},\;n=0,1,2,\dots,\mbox{ with $\bigtriangleup(\lambda_{n})=2$},</Math> , <Math equation-number="28.29.17" mode="display" xml:id="C28.S29.E17">\mu_{n},\;n=1,2,3,\dots,\mbox{ with $\bigtriangleup(\mu_{n})=-2$}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C28.S29.SS3.p4.s2">
+In consequence, (28.29.1) has a solution of period <Math mode="inline" xml:id="C28.S29.SS3.p4.m1">\pi</Math> iff <Math mode="inline" xml:id="C28.S29.SS3.p4.m2">\lambda=\lambda_{n}</Math> , and a solution of period <Math mode="inline" xml:id="C28.S29.SS3.p4.m3">2\pi</Math> iff <Math mode="inline" xml:id="C28.S29.SS3.p4.m4">\lambda=\mu_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C28.S29.SS3.p4.s3">
+Both <Math mode="inline" xml:id="C28.S29.SS3.p4.m5">\lambda_{n}</Math> and <Math mode="inline" xml:id="C28.S29.SS3.p4.m6">\mu_{n}\to\infty</Math> as <Math mode="inline" xml:id="C28.S29.SS3.p4.m7">n\to\infty</Math> , and interlaceaccording to the inequalities <Math equation-number="28.29.18" mode="display" xml:id="C28.S29.E18">\lambda_{0}&lt;\mu_{1}\leq\mu_{2}&lt;\lambda_{1}\leq\lambda_{2}&lt;\mu_{3}\leq\mu_{4}&lt; \lambda_{3}\leq\lambda_{4}&lt;\cdots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C28.S29.SS3.p5.s1">
+Assume that the second derivative of <Math mode="inline" xml:id="C28.S29.SS3.p5.m1">Q(x)</Math> in (28.29.1) exists and is continuous.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C28.S29.SS3.p5.s2">
+Then with <Math equation-number="28.29.19" mode="display" xml:id="C28.S29.E19">N=\frac{1}{\pi}\int_{0}^{\pi}\left(Q(x)\right)^{2}\mathrm{d}x,</Math> we have for <Math mode="inline" xml:id="C28.S29.SS3.p5.m2">m\to\infty</Math> <Math equation-number="28.29.20" mode="display" xml:id="C28.S29.E20">\mu_{2m-1}-(2m-1)^{2}-\dfrac{N}{(4m)^{2}}=o\left(m^{-2}\right),\mu_{2m}-(2m-1)^{2}-\dfrac{N}{(4m)^{2}}=o\left(m^{-2}\right),</Math> <Math equation-number="28.29.21" mode="display" xml:id="C28.S29.E21">\lambda_{2m-1}-(2m)^{2}-\dfrac{N}{(4m)^{2}}=o\left(m^{-2}\right),\lambda_{2m}-(2m)^{2}-\dfrac{N}{(4m)^{2}}=o\left(m^{-2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C28.S29.SS3.p5.s3">
+If <Math mode="inline" xml:id="C28.S29.SS3.p5.m3">Q(x)</Math> has <Math mode="inline" xml:id="C28.S29.SS3.p5.m4">k</Math> continuous derivatives, then as <Math mode="inline" xml:id="C28.S29.SS3.p5.m5">m\to\infty</Math> <Math equation-number="28.29.22" mode="display" xml:id="C28.S29.E22">\lambda_{2m}-\lambda_{2m-1}=o\left(\ifrac{1}{m^{k}}\right),\mu_{2m}-\mu_{2m-1}=o\left(\ifrac{1}{m^{k}}\right);</Math> see Hochstadt (1963).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S29.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C28.S29.SS3.p6.s1">
+For further results, especially when <Math mode="inline" xml:id="C28.S29.SS3.p6.m1">Q(z)</Math> is analytic in a strip, seeWeinstein and Keller (1987).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

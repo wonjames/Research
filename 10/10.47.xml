@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S47">
+<title>Definitions and Basic Properties</title>        
+ 
+<subsection xml:id="C10.S47.SS1">
+<title>Differential Equations</title>        
+  
+<para xml:id="C10.S47.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S47.SS1.p1.s1">
+ <Math equation-number="10.47.1" mode="display" xml:id="C10.S47.E1">z^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+2z\frac{\mathrm{d}w}{\mathrm{ d}z}+\left(z^{2}-n(n+1)\right)w=0,</Math> <Math equation-number="10.47.2" mode="display" xml:id="C10.S47.E2">z^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+2z\frac{\mathrm{d}w}{\mathrm{ d}z}-\left(z^{2}+n(n+1)\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S47.SS1.p1.s2">
+Here, and throughout the remainder of §§10.47–10.60,
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S47.SS1.p1.s3">
+<Math mode="inline" xml:id="C10.S47.SS1.p1.m1">n</Math> is a nonnegative integer.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S47.SS1.p1.s4">
+(This is in contrast to other treatments of spherical Bessel functions, including Abramowitz and Stegun (1964, Chapter 10), in which <Math mode="inline" xml:id="C10.S47.SS1.p1.m2">n</Math> can be any integer.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C10.S47.SS1.p1.s5">
+However, there is a gain in symmetry, without any loss of generality in applications, on restricting <Math mode="inline" xml:id="C10.S47.SS1.p1.m3">n\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C10.S47.SS1.p1.s6">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S47.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S47.SS1.p2.s1">
+Equations (10.47.1) and (10.47.2) each have a regular singularity at <Math mode="inline" xml:id="C10.S47.SS1.p2.m1">z=0</Math> with indices <Math mode="inline" xml:id="C10.S47.SS1.p2.m2">n</Math> , <Math mode="inline" xml:id="C10.S47.SS1.p2.m3">-n-1</Math> , and an irregular singularity at <Math mode="inline" xml:id="C10.S47.SS1.p2.m4">z=\infty</Math> of rank <Math mode="inline" xml:id="C10.S47.SS1.p2.m5">1</Math> ; compare §§2.7(i)–2.7(ii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S47.SS2">
+<title>Standard Solutions</title>        
+  
+<paragraph xml:id="C10.S47.Px1">
+<title>Equation (10.47.1)</title>   
+ 
+<para xml:id="C10.S47.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S47.Px1.p1.s1">
+ <Math equation-number="10.47.3" mode="display" xml:id="C10.S47.E3">\mathsf{j}_{n}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}J_{n+\frac{1}{2}}\left(z \right)=(-1)^{n}\sqrt{\tfrac{1}{2}\pi/z}Y_{-n-\frac{1}{2}}\left(z\right),</Math> <Math equation-number="10.47.4" mode="display" xml:id="C10.S47.E4">\mathsf{y}_{n}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}Y_{n+\frac{1}{2}}\left(z \right)=(-1)^{n+1}\sqrt{\tfrac{1}{2}\pi/z}J_{-n-\frac{1}{2}}\left(z\right),</Math> <Math equation-number="10.47.5" mode="display" xml:id="C10.S47.E5">{\mathsf{h}^{(1)}_{n}}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}{H^{(1)}_{n+\frac {1}{2}}}\left(z\right)=(-1)^{n+1}\mathrm{i}\sqrt{\tfrac{1}{2}\pi/z}{H^{(1)}_{- n-\frac{1}{2}}}\left(z\right),</Math> <Math equation-number="10.47.6" mode="display" xml:id="C10.S47.E6">{\mathsf{h}^{(2)}_{n}}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}{H^{(2)}_{n+\frac {1}{2}}}\left(z\right)=(-1)^{n}\mathrm{i}\sqrt{\tfrac{1}{2}\pi/z}{H^{(2)}_{-n- \frac{1}{2}}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C10.S47.Px1.p1.s2">
+<Math mode="inline" xml:id="C10.S47.Px1.p1.m1">\mathsf{j}_{n}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S47.Px1.p1.m2">\mathsf{y}_{n}\left(z\right)</Math> are the spherical Bessel functions of the first and second kinds, respectively; <Math mode="inline" xml:id="C10.S47.Px1.p1.m3">{\mathsf{h}^{(1)}_{n}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S47.Px1.p1.m4">{\mathsf{h}^{(2)}_{n}}\left(z\right)</Math> are the spherical Bessel functions of the third kind.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S47.Px2">
+<title>Equation (10.47.2)</title>   
+  
+<para xml:id="C10.S47.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C10.S47.Px2.p1.s1">
+ <Math equation-number="10.47.7" mode="display" xml:id="C10.S47.E7">{\mathsf{i}^{(1)}_{n}}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}I_{n+\frac{1}{2}} \left(z\right)</Math> , <Math equation-number="10.47.8" mode="display" xml:id="C10.S47.E8">{\mathsf{i}^{(2)}_{n}}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}I_{-n-\frac{1}{2} }\left(z\right)</Math> <Math equation-number="10.47.9" mode="display" xml:id="C10.S47.E9">\mathsf{k}_{n}\left(z\right)=\sqrt{\tfrac{1}{2}\pi/z}K_{n+\frac{1}{2}}\left(z \right)=\sqrt{\tfrac{1}{2}\pi/z}K_{-n-\frac{1}{2}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C10.S47.Px2.p1.s2">
+<Math mode="inline" xml:id="C10.S47.Px2.p1.m1">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p1.m2">{\mathsf{i}^{(2)}_{n}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C10.S47.Px2.p1.m3">\mathsf{k}_{n}\left(z\right)</Math> are the modified spherical Bessel functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S47.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S47.Px2.p2.s1">
+Many properties of <Math mode="inline" xml:id="C10.S47.Px2.p2.m1">\mathsf{j}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m2">\mathsf{y}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m3">{\mathsf{h}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m4">{\mathsf{h}^{(2)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m5">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m6">{\mathsf{i}^{(2)}_{n}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C10.S47.Px2.p2.m7">\mathsf{k}_{n}\left(z\right)</Math> follow straightforwardlyfrom the above definitions and results given in preceding sections of this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C10.S47.Px2.p2.s2">
+For example, <Math mode="inline" xml:id="C10.S47.Px2.p2.m8">z^{-n}\mathsf{j}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m9">z^{n+1}\mathsf{y}_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m10">z^{n+1}{\mathsf{h}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m11">z^{n+1}{\mathsf{h}^{(2)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m12">z^{-n}{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S47.Px2.p2.m13">z^{n+1}{\mathsf{i}^{(2)}_{n}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C10.S47.Px2.p2.m14">z^{n+1}\mathsf{k}_{n}\left(z\right)</Math> are all entire functions of <Math mode="inline" xml:id="C10.S47.Px2.p2.m15">z</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S47.SS3">
+<title>Numerically Satisfactory Pairs of Solutions</title>          
+<para xml:id="C10.S47.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S47.SS3.p1.s1">
+For (10.47.1) numerically satisfactory pairs of solutions are given by Table 10.2.1 with the symbols <Math mode="inline" xml:id="C10.S47.SS3.p1.m1">J</Math> , <Math mode="inline" xml:id="C10.S47.SS3.p1.m2">Y</Math> , <Math mode="inline" xml:id="C10.S47.SS3.p1.m3">H</Math> , and <Math mode="inline" xml:id="C10.S47.SS3.p1.m4">\nu</Math> replaced by <Math mode="inline" xml:id="C10.S47.SS3.p1.m5">\mathsf{j}</Math> , <Math mode="inline" xml:id="C10.S47.SS3.p1.m6">\mathsf{y}</Math> , <Math mode="inline" xml:id="C10.S47.SS3.p1.m7">\mathsf{h}</Math> , and <Math mode="inline" xml:id="C10.S47.SS3.p1.m8">n</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S47.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S47.SS3.p2.s1">
+For (10.47.2) numerically satisfactory pairs of solutions are <Math mode="inline" xml:id="C10.S47.SS3.p2.m1">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S47.SS3.p2.m2">\mathsf{k}_{n}\left(z\right)</Math> in the right half of the <Math mode="inline" xml:id="C10.S47.SS3.p2.m3">z</Math> -plane, and <Math mode="inline" xml:id="C10.S47.SS3.p2.m4">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S47.SS3.p2.m5">\mathsf{k}_{n}\left(-z\right)</Math> in the left half of the <Math mode="inline" xml:id="C10.S47.SS3.p2.m6">z</Math> -plane.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S47.SS4">
+<title>Interrelations</title>          
+<para xml:id="C10.S47.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S47.SS4.p1.s1">
+ <Math equation-number="10.47.10" mode="display" xml:id="C10.S47.E10">{\mathsf{h}^{(1)}_{n}}\left(z\right)=\mathsf{j}_{n}\left(z\right)+i\mathsf{y}_ {n}\left(z\right),{\mathsf{h}^{(2)}_{n}}\left(z\right)=\mathsf{j}_{n}\left(z\right)-i\mathsf{y}_ {n}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C10.S47.SS4.p1.s2">
+<Math equation-number="10.47.11" mode="display" xml:id="C10.S47.E11">\mathsf{k}_{n}\left(z\right)=(-1)^{n+1}\tfrac{1}{2}\pi\left({\mathsf{i}^{(1)}_ {n}}\left(z\right)-{\mathsf{i}^{(2)}_{n}}\left(z\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C10.S47.SS4.p1.s3">
+<Math equation-number="10.47.12" mode="display" xml:id="C10.S47.E12">{\mathsf{i}^{(1)}_{n}}\left(z\right)=i^{-n}\mathsf{j}_{n}\left(iz\right),{\mathsf{i}^{(2)}_{n}}\left(z\right)=i^{-n-1}\mathsf{y}_{n}\left(iz\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C10.S47.SS4.p1.s4">
+<Math equation-number="10.47.13" mode="display" xml:id="C10.S47.E13">\mathsf{k}_{n}\left(z\right)=-\tfrac{1}{2}\pi i^{n}{\mathsf{h}^{(1)}_{n}}\left (iz\right)=-\tfrac{1}{2}\pi i^{-n}{\mathsf{h}^{(2)}_{n}}\left(-iz\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S47.SS5">
+<title>Reflection Formulas</title>         
+ 
+<para xml:id="C10.S47.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S47.SS5.p1.s1">
+ <Math equation-number="10.47.14" mode="display" xml:id="C10.S47.E14">\displaystyle\mathsf{j}_{n}\left(-z\right)=(-1)^{n}\mathsf{j}_{n}\left(z\right), \displaystyle\mathsf{y}_{n}\left(-z\right)=(-1)^{n+1}\mathsf{y}_{n}\left(z \right),</Math> , <Math equation-number="10.47.15" mode="display" xml:id="C10.S47.E15">\displaystyle{\mathsf{h}^{(1)}_{n}}\left(-z\right)=(-1)^{n}{\mathsf{h}^{(2)}_{ n}}\left(z\right), \displaystyle{\mathsf{h}^{(2)}_{n}}\left(-z\right)=(-1)^{n}{\mathsf{h}^{(1)}_{ n}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C10.S47.SS5.p1.s2">
+<Math equation-number="10.47.16" mode="display" xml:id="C10.S47.E16">\displaystyle{\mathsf{i}^{(1)}_{n}}\left(-z\right)=(-1)^{n}{\mathsf{i}^{(1)}_{ n}}\left(z\right), \displaystyle{\mathsf{i}^{(2)}_{n}}\left(-z\right)=(-1)^{n+1}{\mathsf{i}^{(2)} _{n}}\left(z\right),</Math> <Math equation-number="10.47.17" mode="display" xml:id="C10.S47.E17">\mathsf{k}_{n}\left(-z\right)=-\tfrac{1}{2}\pi\left({\mathsf{i}^{(1)}_{n}} \left(z\right)+{\mathsf{i}^{(2)}_{n}}\left(z\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

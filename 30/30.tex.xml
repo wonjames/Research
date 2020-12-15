@@ -1,0 +1,1702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C30">
+<title>Spheroidal Wave Functions</title>               
+          
+<section xml:id="C30.S1">
+<title>Special Notation</title>         
+<para xml:id="C30.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C30.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C30.S1.p1.t1.s2">
+real variable. Except in §§LABEL:sec:SW.GR.CA, LABEL:sec:SW.SJ.GR,LABEL:sec:SW.PR, and LABEL:sec:SW.OB, <Math mode="inline" xml:id="C30.S1.p1.t1.r1.m2">-1&lt;x&lt;1</Math>.    
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C30.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r2.m1">\gamma^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C30.S1.p1.t1.s4">
+real parameter (positive, zero, or negative).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C30.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r3.m1">m</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C30.S1.p1.t1.s6">
+order, a nonnegative integer.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C30.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r4.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C30.S1.p1.t1.s8">
+degree, an integer <Math mode="inline" xml:id="C30.S1.p1.t1.r4.m2">n=m,m+1,m+2,\dots</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C30.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r5.m1">k</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C30.S1.p1.t1.s10">
+integer.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C30.S1.p1.t1.s11">
+<Math mode="inline" xml:id="C30.S1.p1.t1.r6.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C30.S1.p1.t1.s12">
+arbitrary small positive constant.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C30.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C30.S1.p2.s1">
+The main functions treated in this chapter are the eigenvalues <Math mode="inline" xml:id="C30.S1.p2.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> and the spheroidal wave functions <Math mode="inline" xml:id="C30.S1.p2.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S1.p2.m3">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S1.p2.m4">\mathit{Ps}^{m}_{n}\left(z,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S1.p2.m5">\mathit{Qs}^{m}_{n}\left(z,\gamma^{2}\right)</Math> , and <Math mode="inline" xml:id="C30.S1.p2.m6">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , <Math mode="inline" xml:id="C30.S1.p2.m7">j=1,2,3,4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C30.S1.p2.s2">
+These notations are similar to those used in ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C30.S1.p2.s3">
+( ) use <Math mode="inline" xml:id="C30.S1.p2.m12">\mathrm{ps}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m13">\mathrm{qs}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m14">\mathrm{Ps}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m15">\mathrm{Qs}</Math> for <Math mode="inline" xml:id="C30.S1.p2.m16">\mathsf{Ps}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m17">\mathsf{Qs}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m18">\mathit{Ps}</Math> , <Math mode="inline" xml:id="C30.S1.p2.m19">\mathit{Qs}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C30.S1.Px1">
+<title>Other Notations</title>    
+<para xml:id="C30.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C30.S1.Px1.p1.s1">
+( ) and ( ) use <Math mode="inline" xml:id="C30.S1.Px1.p1.m3">\lambda_{mn}(\gamma)</Math> for <Math mode="inline" xml:id="C30.S1.Px1.p1.m4">\lambda^{m}_{n}\left(\gamma^{2}\right)+\gamma^{2}</Math> , <Math mode="inline" xml:id="C30.S1.Px1.p1.m5">R_{mn}^{(j)}(\gamma,z)</Math> for <Math mode="inline" xml:id="C30.S1.Px1.p1.m6">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , and <Math equation-number="30.1.1" mode="display" xml:id="C30.S1.E1">S^{(1)}_{mn}(\gamma,x)=d_{mn}(\gamma)\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2} \right), S^{(2)}_{mn}(\gamma,x)=d_{mn}(\gamma)\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2} \right),</Math> where <Math mode="inline" xml:id="C30.S1.Px1.p1.m9">d_{mn}(\gamma)</Math> is a normalization constant determined by <Math equation-number="30.1.2" mode="display" xml:id="C30.S1.E2">S^{(1)}_{mn}(\gamma,0)=(-1)^{m}\mathsf{P}^{m}_{n}\left(0\right), \left.\frac{\mathrm{d}}{\mathrm{d}x}S^{(1)}_{mn}(\gamma,x)\right|_{x=0}=(-1)^{ m}\left.\frac{\mathrm{d}}{\mathrm{d}x}\mathsf{P}^{m}_{n}\left(x\right)\right|_ {x=0},</Math> For older notations see ( , §21.11) and ( , pp. 14,15) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+<section xml:id="C30.S2">
+<title>Differential Equations</title>         
+<subsection xml:id="C30.S2.SS1">
+<title>Spheroidal Differential Equation</title>          
+    
+<para xml:id="C30.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C30.S2.SS1.p1.s1">
+ <Math equation-number="30.2.1" mode="display" xml:id="C30.S2.E1">\frac{\mathrm{d}}{\mathrm{d}z}\left((1-z^{2})\frac{\mathrm{d}w}{\mathrm{d}z} \right)+\left(\lambda+\gamma^{2}(1-z^{2})-\frac{\mu^{2}}{1-z^{2}}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C30.S2.SS1.p1.s2">
+This equation has regular singularities at <Math mode="inline" xml:id="C30.S2.SS1.p1.m1">z=\pm 1</Math> with exponents <Math mode="inline" xml:id="C30.S2.SS1.p1.m2">\pm\frac{1}{2}\mu</Math> and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C30.S2.SS1.p1.m3">z=\infty</Math> (if <Math mode="inline" xml:id="C30.S2.SS1.p1.m4">\gamma\neq 0</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C30.S2.SS1.p1.s3">
+The equation contains three real parameters <Math mode="inline" xml:id="C30.S2.SS1.p1.m5">\lambda</Math> , <Math mode="inline" xml:id="C30.S2.SS1.p1.m6">\gamma^{2}</Math> , and <Math mode="inline" xml:id="C30.S2.SS1.p1.m7">\mu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C30.S2.SS1.p1.s4">
+In applications involving prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S2.SS1.p1.m8">\gamma^{2}</Math> is positive, in applications involving oblate spheroidal coordinates <Math mode="inline" xml:id="C30.S2.SS1.p1.m9">\gamma^{2}</Math> is negative; see §§LABEL:sec:SW.PR, LABEL:sec:SW.OB.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S2.SS2">
+<title>Other Forms</title>        
+ 
+<para xml:id="C30.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C30.S2.SS2.p1.s1">
+The Liouville normal form of equation (LABEL:eq:SW.DE.DE) is <Math equation-number="30.2.2" mode="display" xml:id="C30.S2.E2">\frac{{\mathrm{d}}^{2}g}{{\mathrm{d}t}^{2}}+\left(\lambda+\frac{1}{4}+\gamma^{ 2}{\sin^{2}}t-\frac{\mu^{2}-\frac{1}{4}}{{\sin^{2}}t}\right)g=0,</Math> <Math equation-number="30.2.3" mode="display" xml:id="C30.S2.E3">z=\cos t, w(z)=(1-z^{2})^{-\frac{1}{4}}g(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C30.S2.SS2.p1.s2">
+With <Math mode="inline" xml:id="C30.S2.SS2.p1.m1">\zeta=\gamma z</Math> Equation (LABEL:eq:SW.DE.DE) changes to <Math equation-number="30.2.4" mode="display" xml:id="C30.S2.E4">(\zeta^{2}-\gamma^{2})\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\zeta}^{2}}+2\zeta \frac{\mathrm{d}w}{\mathrm{d}\zeta}+\left(\zeta^{2}-\lambda-\gamma^{2}-\frac{ \gamma^{2}\mu^{2}}{\zeta^{2}-\gamma^{2}}\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S2.SS3">
+<title>Special Cases</title>        
+  
+<para xml:id="C30.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C30.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m1">\gamma=0</Math> , Equation (LABEL:eq:SW.DE.DE) is the associated Legendre differential equation; see (LABEL:eq:LE.DE.AssocLegEq).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C30.S2.SS3.p1.s2">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m2">\mu^{2}=\frac{1}{4}</Math> , Equation (LABEL:eq:SW.DE.NF) reduces to the Mathieu equation; see (LABEL:eq:MA.DE.Ma).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C30.S2.SS3.p1.s3">
+If <Math mode="inline" xml:id="C30.S2.SS3.p1.m3">\gamma=0</Math> , Equation (LABEL:eq:SW.DE.DE3) is satisfied by spherical Bessel functions; see (LABEL:eq:BS.DBP.DE.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S3">
+<title>Eigenvalues</title>        
+   
+<subsection xml:id="C30.S3.SS1">
+<title>Definition</title>        
+ 
+<para xml:id="C30.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C30.S3.SS1.p1.s1">
+With <Math mode="inline" xml:id="C30.S3.SS1.p1.m1">\mu=m=0,1,2,\dots</Math> , the spheroidal wave functions <Math mode="inline" xml:id="C30.S3.SS1.p1.m3">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> are solutions of Equation (LABEL:eq:SW.DE.DE) which are bounded on <Math mode="inline" xml:id="C30.S3.SS1.p1.m4">(-1,1)</Math> , or equivalently, which are of the form <Math mode="inline" xml:id="C30.S3.SS1.p1.m5">(1-x^{2})^{\frac{1}{2}m}g(x)</Math> where <Math mode="inline" xml:id="C30.S3.SS1.p1.m6">g(z)</Math> is an entire function of <Math mode="inline" xml:id="C30.S3.SS1.p1.m7">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C30.S3.SS1.p1.s2">
+These solutions exist only for eigenvalues <Math mode="inline" xml:id="C30.S3.SS1.p1.m8">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS1.p1.m9">n=m,m+1,m+2,\dots</Math> , of the parameter <Math mode="inline" xml:id="C30.S3.SS1.p1.m10">\lambda</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS2">
+<title>Properties</title>        
+ 
+<para xml:id="C30.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C30.S3.SS2.p1.s1">
+The eigenvalues <Math mode="inline" xml:id="C30.S3.SS2.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are analytic functions of the real variable <Math mode="inline" xml:id="C30.S3.SS2.p1.m2">\gamma^{2}</Math> and satisfy <Math equation-number="30.3.1" mode="display" xml:id="C30.S3.E1">\lambda^{m}_{m}\left(\gamma^{2}\right)&lt;\lambda^{m}_{m+1}\left(\gamma^{2}\right )&lt;\lambda^{m}_{m+2}\left(\gamma^{2}\right)&lt;\cdots,</Math> <Math equation-number="30.3.2" mode="display" xml:id="C30.S3.E2">\lambda^{m}_{n}\left(\gamma^{2}\right)=n(n+1)-\tfrac{1}{2}\gamma^{2}+O\left(n^ {-2}\right), subject to n\to\infty,</Math> <Math equation-number="30.3.3" mode="display" xml:id="C30.S3.E3">\lambda^{m}_{n}\left(0\right)=n(n+1),</Math> <Math equation-number="30.3.4" mode="display" xml:id="C30.S3.E4">-1&lt;\frac{\mathrm{d}\lambda^{m}_{n}\left(\gamma^{2}\right)}{\mathrm{d}(\gamma^{ 2})}&lt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS3">
+<title>Transcendental Equation</title>        
+  
+<para xml:id="C30.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C30.S3.SS3.p1.s1">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m1">p</Math> is an even nonnegative integer, then the continued-fraction equation <Math equation-number="30.3.5" mode="display" xml:id="C30.S3.E5">\beta_{p}-\lambda-\cfrac{\alpha_{p-2}\gamma_{p}}{\beta_{p-2}-\lambda-\cfrac{ \alpha_{p-4}\gamma_{p-2}}{\beta_{p-4}-\lambda-\cdots}}=\cfrac{\alpha_{p}\gamma _{p+2}}{\beta_{p+2}-\lambda-\cfrac{\alpha_{p+2}\gamma_{p+4}}{\beta_{p+4}- \lambda-\cdots}},</Math> where <Math mode="inline" xml:id="C30.S3.SS3.p1.m2">\alpha_{k}</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m3">\beta_{k}</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m4">\gamma_{k}</Math> are defined by <Math equation-number="30.3.6" mode="display" xml:id="C30.S3.E6">\alpha_{k}=-(k+1)(k+2), \beta_{k}=(m+k)(m+k+1)-\gamma^{2}, \gamma_{k}=\gamma^{2},</Math> has the solutions <Math mode="inline" xml:id="C30.S3.SS3.p1.m5">\lambda=\lambda^{m}_{m+2j}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m6">j=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C30.S3.SS3.p1.s2">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m7">p</Math> is an odd positive integer, then Equation (LABEL:eq:SW.EV.CF) has the solutions <Math mode="inline" xml:id="C30.S3.SS3.p1.m8">\lambda=\lambda^{m}_{m+2j+1}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S3.SS3.p1.m9">j=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C30.S3.SS3.p1.s3">
+If <Math mode="inline" xml:id="C30.S3.SS3.p1.m10">p=0</Math> or <Math mode="inline" xml:id="C30.S3.SS3.p1.m11">p=1</Math> , the finite continued-fraction on the left-hand side of (LABEL:eq:SW.EV.CF) equals 0; if <Math mode="inline" xml:id="C30.S3.SS3.p1.m12">p&gt;1</Math> its last denominator is <Math mode="inline" xml:id="C30.S3.SS3.p1.m13">\beta_{0}-\lambda</Math> or <Math mode="inline" xml:id="C30.S3.SS3.p1.m14">\beta_{1}-\lambda</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S3.SS3.p2">
+
+</para>
+ 
+<para xml:id="C30.S3.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C30.S3.SS3.p3.s1">
+In equation (LABEL:eq:SW.EV.CF) we can also use <Math equation-number="30.3.7" mode="display" xml:id="C30.S3.E7">\alpha_{k}=\gamma^{2}\frac{(k+2m+1)(k+2m+2)}{(2k+2m+3)(2k+2m+5)}, \beta_{k}=(k+m)(k+m+1)-2\gamma^{2}\frac{(k+m)(k+m+1)-1+m^{2}}{(2k+2m-1)(2k+2m+ 3)}, \gamma_{k}=\gamma^{2}\frac{(k-1)k}{(2k+2m-3)(2k+2m-1)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S3.SS4">
+<title>Power-Series Expansion</title>        
+   
+<para xml:id="C30.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C30.S3.SS4.p1.s1">
+ <Math equation-number="30.3.8" mode="display" xml:id="C30.S3.E8">\lambda^{m}_{n}\left(\gamma^{2}\right)=\sum_{k=0}^{\infty}\ell_{2k}\gamma^{2k}, subject to |\gamma^{2}|&lt;r_{n}^{m}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C30.S3.SS4.p1.s2">
+For values of <Math mode="inline" xml:id="C30.S3.SS4.p1.m1">r_{n}^{m}</Math> see ( , p. 109) .
+</sentence>
+
+</para>
+     
+<para xml:id="C30.S3.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C30.S3.SS4.p2.s1">
+ <Math equation-number="30.3.9" mode="display" xml:id="C30.S3.E9">\ell_{0}=n(n+1), 2\ell_{2}=-1-\frac{(2m-1)(2m+1)}{(2n-1)(2n+3)}, 2\ell_{4}=\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-3)(2n-1)^{3}(2n+1)}-\frac{(n-m+1 )(n-m+2)(n+m+1)(n+m+2)}{(2n+1)(2n+3)^{3}(2n+5)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S3.SS4.p3">
+
+</para>
+ 
+<para xml:id="C30.S3.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C30.S3.SS4.p4.s1">
+ <Math equation-number="30.3.10" mode="display" xml:id="C30.S3.E10">\ell_{6}=(4m^{2}-1)\left(\frac{(n-m+1)(n-m+2)(n+m+1)(n+m+2)}{(2n-1)(2n+1)(2n+3 )^{5}(2n+5)(2n+7)}-\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-5)(2n-3)(2n-1)^{5}(2n+1 )(2n+3)}\right),</Math> <Math equation-number="30.3.11" mode="display" xml:id="C30.S3.E11">\ell_{8}=2(4m^{2}-1)^{2}A+\frac{1}{16}B+\frac{1}{8}C+\frac{1}{2}D,</Math> <Math equation-number="30.3.12" mode="display" xml:id="C30.S3.E12">A=\frac{(n-m-1)(n-m)(n+m-1)(n+m)}{(2n-5)^{2}(2n-3)(2n-1)^{7}(2n+1)(2n+3)^{2}}- \frac{(n-m+1)(n-m+2)(n+m+1)(n+m+2)}{(2n-1)^{2}(2n+1)(2n+3)^{7}(2n+5)(2n+7)^{2}}, B=\frac{(n-m-3)(n-m-2)(n-m-1)(n-m)(n+m-3)(n+m-2)(n+m-1)(n+m)}{(2n-7)(2n-5)^{2} (2n-3)^{3}(2n-1)^{4}(2n+1)}-\frac{(n-m+1)(n-m+2)(n-m+3)(n-m+4)(n+m+1)(n+m+2)(n +m+3)(n+m+4)}{(2n+1)(2n+3)^{4}(2n+5)^{3}(2n+7)^{2}(2n+9)}, C=\frac{(n-m+1)^{2}(n-m+2)^{2}(n+m+1)^{2}(n+m+2)^{2}}{(2n+1)^{2}(2n+3)^{7}(2n+ 5)^{2}}-\frac{(n-m-1)^{2}(n-m)^{2}(n+m-1)^{2}(n+m)^{2}}{(2n-3)^{2}(2n-1)^{7}(2 n+1)^{2}}, D=\frac{(n-m-1)(n-m)(n-m+1)(n-m+2)(n+m-1)(n+m)(n+m+1)(n+m+2)}{(2n-3)(2n-1)^{4} (2n+1)^{2}(2n+3)^{4}(2n+5)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C30.S3.SS4.p4.s2">
+Further coefficients can be found with the Maple program SWF9; see §LABEL:sec:SW.SO.IS.
+</sentence>
+
+</para>
+ 
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S4">
+<title>Functions of the First Kind</title>        
+  
+<subsection xml:id="C30.S4.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C30.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C30.S4.SS1.p1.s1">
+The eigenfunctions of (LABEL:eq:SW.DE.DE) that correspond to the eigenvalues <Math mode="inline" xml:id="C30.S4.SS1.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are denoted by <Math mode="inline" xml:id="C30.S4.SS1.p1.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S4.SS1.p1.m3">n=m,m+1,m+2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C30.S4.SS1.p1.s2">
+They are normalized by the condition <Math equation-number="30.4.1" mode="display" xml:id="C30.S4.E1">\int_{-1}^{1}\left(\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)\right)^{2} \mathrm{d}x=\frac{2}{2n+1}\frac{(n+m)!}{(n-m)!}</Math> , the sign of <Math mode="inline" xml:id="C30.S4.SS1.p1.m4">\mathsf{Ps}^{m}_{n}\left(0,\gamma^{2}\right)</Math> being <Math mode="inline" xml:id="C30.S4.SS1.p1.m5">(-1)^{(n+m)/2}</Math> when <Math mode="inline" xml:id="C30.S4.SS1.p1.m6">n-m</Math> is even, and the sign of <Math mode="inline" xml:id="C30.S4.SS1.p1.m7">\ifrac{\mathrm{d}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)}{\mathrm{d}x}|_{ x=0}</Math> being <Math mode="inline" xml:id="C30.S4.SS1.p1.m8">(-1)^{(n+m-1)/2}</Math> when <Math mode="inline" xml:id="C30.S4.SS1.p1.m9">n-m</Math> is odd.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C30.S4.SS1.p2.s1">
+When <Math mode="inline" xml:id="C30.S4.SS1.p2.m1">\gamma^{2}&gt;0</Math> <Math mode="inline" xml:id="C30.S4.SS1.p2.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> is theprolate angular spheroidal wave function, and when <Math mode="inline" xml:id="C30.S4.SS1.p2.m3">\gamma^{2}&lt;0</Math> <Math mode="inline" xml:id="C30.S4.SS1.p2.m4">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> is theoblate angular spheroidal wave function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C30.S4.SS1.p2.s2">
+If <Math mode="inline" xml:id="C30.S4.SS1.p2.m5">\gamma=0</Math> , <Math mode="inline" xml:id="C30.S4.SS1.p2.m6">\mathsf{Ps}^{m}_{n}\left(x,0\right)</Math> reduces to the Ferrers function <Math mode="inline" xml:id="C30.S4.SS1.p2.m7">\mathsf{P}^{m}_{n}\left(x\right)</Math> : <Math equation-number="30.4.2" mode="display" xml:id="C30.S4.E2">\mathsf{Ps}^{m}_{n}\left(x,0\right)=\mathsf{P}^{m}_{n}\left(x\right);</Math> compare §LABEL:sec:LE.DHR.D1.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS2">
+<title>Elementary Properties</title>        
+   
+<para xml:id="C30.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C30.S4.SS2.p1.s1">
+ <Math equation-number="30.4.3" mode="display" xml:id="C30.S4.E3">\mathsf{Ps}^{m}_{n}\left(-x,\gamma^{2}\right)=(-1)^{n-m}\mathsf{Ps}^{m}_{n} \left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C30.S4.SS2.p1.s2">
+<Math mode="inline" xml:id="C30.S4.SS2.p1.m1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> has exactly <Math mode="inline" xml:id="C30.S4.SS2.p1.m2">n-m</Math> zeros in the interval <Math mode="inline" xml:id="C30.S4.SS2.p1.m3">-1&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS3">
+<title>Power-Series Expansion</title>        
+ 
+<para xml:id="C30.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C30.S4.SS3.p1.s1">
+ <Math equation-number="30.4.4" mode="display" xml:id="C30.S4.E4">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=(1-x^{2})^{\frac{1}{2}m}\sum_{k=0 }^{\infty}g_{k}x^{k}, subject to -1\leq x\leq 1,</Math> where <Math equation-number="30.4.5" mode="display" xml:id="C30.S4.E5">\alpha_{k}g_{k+2}+(\beta_{k}-\lambda^{m}_{n}\left(\gamma^{2}\right))g_{k}+ \gamma_{k}g_{k-2}=0</Math> with <Math mode="inline" xml:id="C30.S4.SS3.p1.m1">\alpha_{k}</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m2">\beta_{k}</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m3">\gamma_{k}</Math> from (LABEL:eq:SW.SW.AL), and <Math mode="inline" xml:id="C30.S4.SS3.p1.m4">g_{-1}=g_{-2}=0</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m5">g_{k}=0</Math> for even <Math mode="inline" xml:id="C30.S4.SS3.p1.m6">k</Math> if <Math mode="inline" xml:id="C30.S4.SS3.p1.m7">n-m</Math> is odd and <Math mode="inline" xml:id="C30.S4.SS3.p1.m8">g_{k}=0</Math> for odd <Math mode="inline" xml:id="C30.S4.SS3.p1.m9">k</Math> if <Math mode="inline" xml:id="C30.S4.SS3.p1.m10">n-m</Math> is even.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C30.S4.SS3.p1.s2">
+Normalization of the coefficients <Math mode="inline" xml:id="C30.S4.SS3.p1.m11">g_{k}</Math> is effected by application of (LABEL:eq:SW.SW.NO).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS4">
+<title>Orthogonality</title>        
+ 
+ 
+<para xml:id="C30.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C30.S4.SS4.p1.s1">
+ <Math equation-number="30.4.6" mode="display" xml:id="C30.S4.E6">\int_{-1}^{1}\mathsf{Ps}^{m}_{k}\left(x,\gamma^{2}\right)\mathsf{Ps}^{m}_{n} \left(x,\gamma^{2}\right)\mathrm{d}x=\frac{2}{2n+1}\frac{(n+m)!}{(n-m)!}\delta _{k,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C30.S4.SS4.p1.s2">
+If <Math mode="inline" xml:id="C30.S4.SS4.p1.m1">f(x)</Math> is mean-square integrable on <Math mode="inline" xml:id="C30.S4.SS4.p1.m2">[-1,1]</Math> , then formally <Math equation-number="30.4.7" mode="display" xml:id="C30.S4.E7">f(x)=\sum_{n=m}^{\infty}c_{n}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right),</Math> where <Math equation-number="30.4.8" mode="display" xml:id="C30.S4.E8">c_{n}=(n+\tfrac{1}{2})\frac{(n-m)!}{(n+m)!}\int_{-1}^{1}f(t)\mathsf{Ps}^{m}_{n }\left(t,\gamma^{2}\right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C30.S4.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C30.S4.SS4.p2.s1">
+The expansion (LABEL:eq:SW.SW.EX) converges in the norm of <Math mode="inline" xml:id="C30.S4.SS4.p2.m1">L^{2}(-1,1)</Math> , that is, <Math equation-number="30.4.9" mode="display" xml:id="C30.S4.E9">\lim_{N\to\infty}\int_{-1}^{1}{\left|f(x)-\sum_{n=m}^{N}c_{n}\mathsf{Ps}^{m}_{ n}\left(x,\gamma^{2}\right)\right|^{2}}\mathrm{d}x=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C30.S4.SS4.p2.s2">
+It is also equiconvergent with its expansion in Ferrers functions (as in (LABEL:eq:SW.SW.NO2)), that is, the difference of corresponding partial sums converges to 0 uniformly for <Math mode="inline" xml:id="C30.S4.SS4.p2.m2">-1\leq x\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S5">
+<title>Functions of the Second Kind</title>        
+  
+        
+<para xml:id="C30.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C30.S5.p1.s1">
+Other solutions of (LABEL:eq:SW.DE.DE) with <Math mode="inline" xml:id="C30.S5.p1.m1">\mu=m</Math> , <Math mode="inline" xml:id="C30.S5.p1.m2">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> , and <Math mode="inline" xml:id="C30.S5.p1.m3">z=x</Math> are <Math equation-number="30.5.1" mode="display" xml:id="C30.S5.E1">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right), subject to n=m,m+1,m+2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C30.S5.p1.s2">
+They satisfy <Math equation-number="30.5.2" mode="display" xml:id="C30.S5.E2">\mathsf{Qs}^{m}_{n}\left(-x,\gamma^{2}\right)=(-1)^{n-m+1}\mathsf{Qs}^{m}_{n} \left(x,\gamma^{2}\right),</Math> and <Math equation-number="30.5.3" mode="display" xml:id="C30.S5.E3">\mathsf{Qs}^{m}_{n}\left(x,0\right)=\mathsf{Q}^{m}_{n}\left(x\right);</Math> compare §LABEL:sec:LE.DHR.D1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="53" xml:id="C30.S5.p1.s3">
+Also, <Math equation-number="30.5.4" mode="display" xml:id="C30.S5.E4">\mathscr{W}\left\{\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right),\mathsf{Qs}^{m} _{n}\left(x,\gamma^{2}\right)\right\}=\frac{(n+m)!}{(1-x^{2})(n-m)!}A_{n}^{m}( \gamma^{2})A_{n}^{-m}(\gamma^{2})\quad(\neq 0),</Math> with <Math mode="inline" xml:id="C30.S5.p1.m4">A_{n}^{\pm m}(\gamma^{2})</Math> as in (LABEL:eq:SW.SJ.DA).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C30.S5.p2.s1">
+For further properties see ( ) and §LABEL:sec:SW.LF.SK.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C30.S6">
+<title>Functions of Complex Argument</title>        
+ 
+ 
+<para xml:id="C30.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C30.S6.p1.s1">
+The solutions <Math equation-number="30.6.1" mode="display" xml:id="C30.S6.E1">\mathit{Ps}^{m}_{n}\left(z,\gamma^{2}\right), \mathit{Qs}^{m}_{n}\left(z,\gamma^{2}\right),</Math> of (LABEL:eq:SW.DE.DE) with <Math mode="inline" xml:id="C30.S6.p1.m3">\mu=m</Math> and <Math mode="inline" xml:id="C30.S6.p1.m4">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are real when <Math mode="inline" xml:id="C30.S6.p1.m5">z\in(1,\infty)</Math> , and their principal values (§LABEL:sec:EF.FN.LOG) are obtained by analytic continuation to <Math mode="inline" xml:id="C30.S6.p1.m6">\mathbb{C}\setminus(-\infty,1]</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C30.S6.Px1">
+<title>Relations to Associated Legendre Functions</title>   
+<para xml:id="C30.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C30.S6.Px1.p1.s1">
+ <Math equation-number="30.6.2" mode="display" xml:id="C30.S6.E2">\mathit{Ps}^{m}_{n}\left(z,0\right)=P^{m}_{n}\left(z\right), \mathit{Qs}^{m}_{n}\left(z,0\right)=Q^{m}_{n}\left(z\right);</Math> compare §LABEL:sec:LE.DHR.D2.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C30.S6.Px2">
+<title>Wronskian</title>   
+<para xml:id="C30.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C30.S6.Px2.p1.s1">
+ <Math equation-number="30.6.3" mode="display" xml:id="C30.S6.E3">\mathscr{W}\left\{\mathit{Ps}^{m}_{n}\left(z,\gamma^{2}\right),\mathit{Qs}^{m} _{n}\left(z,\gamma^{2}\right)\right\}=\frac{(-1)^{m}(n+m)!}{(1-z^{2})(n-m)!}A_ {n}^{m}(\gamma^{2})A_{n}^{-m}(\gamma^{2}),</Math> with <Math mode="inline" xml:id="C30.S6.Px2.p1.m1">A_{n}^{\pm m}(\gamma^{2})</Math> as in (LABEL:eq:SW.SJ.DA).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C30.S6.Px3">
+<title>Values on <Math mode="inline" xml:id="C30.S6.Px3.m1">(-1,1)</Math></title>   
+<para xml:id="C30.S6.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C30.S6.Px3.p1.s1">
+ <Math equation-number="30.6.4" mode="display" xml:id="C30.S6.E4">\mathit{Ps}^{m}_{n}\left(x\pm\mathrm{i}0,\gamma^{2}\right)=(\mp\mathrm{i})^{m} \mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right),</Math> , <Math equation-number="30.6.5" mode="display" xml:id="C30.S6.E5">\mathit{Qs}^{m}_{n}\left(x\pm\mathrm{i}0,\gamma^{2}\right)={(\mp\mathrm{i})^{m }\left(\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)\mp\tfrac{1}{2}\mathrm{i} \pi\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S6.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C30.S6.Px3.p2.s1">
+For further properties see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S6.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C30.S6.Px3.p3.s1">
+For results for Equation (LABEL:eq:SW.DE.DE) with complex parameters see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C30.S7">
+<title>Graphics</title>        
+ 
+<subsection xml:id="C30.S7.SS1">
+<title>Eigenvalues</title>                   
+<sentence sentence-num-in-section="61" xml:id="C30.S7.F1.s1">
+Figure 30.7.1: Eigenvalues <Math mode="inline" xml:id="C30.S7.F1.m4">\lambda^{0}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S7.F1.m5">n=0,1,2,3</Math> , <Math mode="inline" xml:id="C30.S7.F1.m6">-10\leq\gamma^{2}\leq 10</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS1.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="62" xml:id="C30.S7.F2.s1">
+Figure 30.7.2: Eigenvalues <Math mode="inline" xml:id="C30.S7.F2.m4">\lambda^{1}_{n}\left(\gamma^{2}\right)</Math> <Math mode="inline" xml:id="C30.S7.F2.m5">n=1,2,3,4</Math> , <Math mode="inline" xml:id="C30.S7.F2.m6">-10\leq\gamma^{2}\leq 10</Math> .
+</sentence>           
+<sentence sentence-num-in-section="63" xml:id="C30.S7.F3.s1">
+Figure 30.7.3: Eigenvalues <Math mode="inline" xml:id="C30.S7.F3.m4">\lambda^{5}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S7.F3.m5">n=5,6,7,8</Math> , <Math mode="inline" xml:id="C30.S7.F3.m6">-40\leq\gamma^{2}\leq 40</Math> .
+</sentence>           
+<sentence sentence-num-in-section="64" xml:id="C30.S7.F4.s1">
+Figure 30.7.4: Eigenvalues <Math mode="inline" xml:id="C30.S7.F4.m4">\lambda^{10}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S7.F4.m5">n=10,11,12,13</Math> , <Math mode="inline" xml:id="C30.S7.F4.m6">-50\leq\gamma^{2}\leq 150</Math> .
+</sentence> 
+  
+</subsection>
+ 
+<subsection xml:id="C30.S7.SS2">
+<title>Functions of the First Kind</title>                   
+<sentence sentence-num-in-section="65" xml:id="C30.S7.F5.s1">
+Figure 30.7.5: <Math mode="inline" xml:id="C30.S7.F5.m4">\mathsf{Ps}^{0}_{n}\left(x,4\right)</Math> , <Math mode="inline" xml:id="C30.S7.F5.m5">n=0,1,2,3</Math> , <Math mode="inline" xml:id="C30.S7.F5.m6">-1\leq x\leq 1</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS2.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="66" xml:id="C30.S7.F6.s1">
+Figure 30.7.6: <Math mode="inline" xml:id="C30.S7.F6.m4">\mathsf{Ps}^{0}_{n}\left(x,-4\right)</Math> , <Math mode="inline" xml:id="C30.S7.F6.m5">n=0,1,2,3</Math> , <Math mode="inline" xml:id="C30.S7.F6.m6">-1\leq x\leq 1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="67" xml:id="C30.S7.F7.s1">
+Figure 30.7.7: <Math mode="inline" xml:id="C30.S7.F7.m4">\mathsf{Ps}^{1}_{n}\left(x,30\right)</Math> , <Math mode="inline" xml:id="C30.S7.F7.m5">n=1,2,3,4</Math> , <Math mode="inline" xml:id="C30.S7.F7.m6">-1\leq x\leq 1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="68" xml:id="C30.S7.F8.s1">
+Figure 30.7.8: <Math mode="inline" xml:id="C30.S7.F8.m4">\mathsf{Ps}^{1}_{n}\left(x,-30\right)</Math> , <Math mode="inline" xml:id="C30.S7.F8.m5">n=1,2,3,4</Math> , <Math mode="inline" xml:id="C30.S7.F8.m6">-1\leq x\leq 1</Math> .
+</sentence>         
+  
+<sentence sentence-num-in-section="69" xml:id="C30.S7.F9.s1">
+Figure 30.7.9: <Math mode="inline" xml:id="C30.S7.F9.m4">\mathsf{Ps}^{0}_{2}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S7.F9.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C30.S7.F9.m6">-50\leq\gamma^{2}\leq 50</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS2.p2">
+
+</para>
+          
+<sentence sentence-num-in-section="70" xml:id="C30.S7.F10.s1">
+Figure 30.7.10: <Math mode="inline" xml:id="C30.S7.F10.m4">\mathsf{Ps}^{1}_{3}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S7.F10.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C30.S7.F10.m6">-50\leq\gamma^{2}\leq 50</Math> .
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C30.S7.SS3">
+<title>Functions of the Second Kind</title>                  
+<sentence sentence-num-in-section="71" xml:id="C30.S7.F11.s1">
+Figure 30.7.11: <Math mode="inline" xml:id="C30.S7.F11.m4">\mathsf{Qs}^{0}_{n}\left(x,4\right)</Math> , <Math mode="inline" xml:id="C30.S7.F11.m5">n=0,1,2,3</Math> , <Math mode="inline" xml:id="C30.S7.F11.m6">-1&amp;lt;x&amp;lt;1</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS3.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="72" xml:id="C30.S7.F12.s1">
+Figure 30.7.12: <Math mode="inline" xml:id="C30.S7.F12.m4">\mathsf{Qs}^{0}_{n}\left(x,-4\right)</Math> , <Math mode="inline" xml:id="C30.S7.F12.m5">n=0,1,2,3</Math> , <Math mode="inline" xml:id="C30.S7.F12.m6">-1&amp;lt;x&amp;lt;1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="73" xml:id="C30.S7.F13.s1">
+Figure 30.7.13: <Math mode="inline" xml:id="C30.S7.F13.m4">\mathsf{Qs}^{1}_{n}\left(x,4\right)</Math> , for <Math mode="inline" xml:id="C30.S7.F13.m5">n=1,2,3,4</Math> , <Math mode="inline" xml:id="C30.S7.F13.m6">-1&amp;lt;x&amp;lt;1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="74" xml:id="C30.S7.F14.s1">
+Figure 30.7.14: <Math mode="inline" xml:id="C30.S7.F14.m4">\mathsf{Qs}^{1}_{n}\left(x,-4\right)</Math> , <Math mode="inline" xml:id="C30.S7.F14.m5">n=1,2,3,4</Math> , <Math mode="inline" xml:id="C30.S7.F14.m6">-1&amp;lt;x&amp;lt;1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="75" xml:id="C30.S7.F15.s1">
+Figure 30.7.15: <Math mode="inline" xml:id="C30.S7.F15.m2">\mathsf{Qs}^{0}_{1}\left(x,\gamma^{2}\right),-1&amp;lt;x&amp;lt;1,-10\leq\gamma^{2}\leq 10</Math> .
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C30.S7.SS4">
+<title>Functions of Complex Argument</title>                  
+<sentence sentence-num-in-section="76" xml:id="C30.S7.F16.s1">
+Figure 30.7.16: <Math mode="inline" xml:id="C30.S7.F16.m4">|\mathit{Ps}^{0}_{0}\left(x+\mathrm{i}y,4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F16.m5">-2\leq x\leq 2</Math> , <Math mode="inline" xml:id="C30.S7.F16.m6">-2\leq y\leq 2</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS4.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="77" xml:id="C30.S7.F17.s1">
+Figure 30.7.17: <Math mode="inline" xml:id="C30.S7.F17.m4">|\mathit{Ps}^{0}_{0}\left(x+\mathrm{i}y,-4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F17.m5">-2\leq x\leq 2</Math> , <Math mode="inline" xml:id="C30.S7.F17.m6">-2\leq y\leq 2</Math> .
+</sentence>        
+   
+<sentence sentence-num-in-section="78" xml:id="C30.S7.F18.s1">
+Figure 30.7.18: <Math mode="inline" xml:id="C30.S7.F18.m4">|\mathit{Ps}^{1}_{1}\left(x+\mathrm{i}y,4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F18.m5">-2\leq x\leq 2</Math> , <Math mode="inline" xml:id="C30.S7.F18.m6">-2\leq y\leq 2</Math> .
+</sentence>           
+<sentence sentence-num-in-section="79" xml:id="C30.S7.F19.s1">
+Figure 30.7.19: <Math mode="inline" xml:id="C30.S7.F19.m4">|\mathit{Ps}^{1}_{1}\left(x+\mathrm{i}y,-4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F19.m5">-2\leq x\leq 2</Math> , <Math mode="inline" xml:id="C30.S7.F19.m6">-2\leq y\leq 2</Math> .
+</sentence>           
+<sentence sentence-num-in-section="80" xml:id="C30.S7.F20.s1">
+Figure 30.7.20: <Math mode="inline" xml:id="C30.S7.F20.m4">|\mathit{Qs}^{0}_{0}\left(x+\mathrm{i}y,4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F20.m5">-2\leq x\leq 2</Math> , <Math mode="inline" xml:id="C30.S7.F20.m6">-2\leq y\leq 2</Math> .
+</sentence>  
+<para xml:id="C30.S7.SS4.p2">
+
+</para>
+          
+<sentence sentence-num-in-section="81" xml:id="C30.S7.F21.s1">
+Figure 30.7.21: <Math mode="inline" xml:id="C30.S7.F21.m4">|\mathit{Qs}^{0}_{0}\left(x+\mathrm{i}y,-4\right)|</Math> , <Math mode="inline" xml:id="C30.S7.F21.m5">-1.8\leq x\leq 1.</Math>8 , <Math mode="inline" xml:id="C30.S7.F21.m6">-2\leq y\leq 2</Math> .
+</sentence>   
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S8">
+<title>Expansions in Series of Ferrers Functions</title>        
+  
+<subsection xml:id="C30.S8.SS1">
+<title>Functions of the First Kind</title>        
+ 
+<para xml:id="C30.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C30.S8.SS1.p1.s1">
+ <Math equation-number="30.8.1" mode="display" xml:id="C30.S8.E1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=\sum_{k=-R}^{\infty}(-1)^{k}a^{m} _{n,k}(\gamma^{2})\mathsf{P}^{m}_{n+2k}\left(x\right),</Math> where <Math mode="inline" xml:id="C30.S8.SS1.p1.m1">\mathsf{P}^{m}_{n+2k}\left(x\right)</Math> is the Ferrers function of the first kind (§LABEL:sec:LE.DHR.D1), <Math mode="inline" xml:id="C30.S8.SS1.p1.m2">R=\left\lfloor\frac{1}{2}(n-m)\right\rfloor</Math> , and the coefficients <Math mode="inline" xml:id="C30.S8.SS1.p1.m3">a^{m}_{n,k}(\gamma^{2})</Math> are given by <Math equation-number="30.8.2" mode="display" xml:id="C30.S8.E2">a^{m}_{n,k}(\gamma^{2})=(-1)^{k}\left(n+2k+\tfrac{1}{2}\right)\frac{(n-m+2k)!} {(n+m+2k)!}\*\int_{-1}^{1}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)\mathsf{ P}^{m}_{n+2k}\left(x\right)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="83" xml:id="C30.S8.SS1.p1.s2">
+Let <Math equation-number="30.8.3" mode="display" xml:id="C30.S8.E3">A_{k}=-\gamma^{2}\frac{(n-m+2k-1)(n-m+2k)}{(2n+4k-3)(2n+4k-1)}, B_{k}=(n+2k)(n+2k+1)-2\gamma^{2}\frac{(n+2k)(n+2k+1)-1+m^{2}}{(2n+4k-1)(2n+4k+ 3)}, C_{k}=-\gamma^{2}\frac{(n+m+2k+1)(n+m+2k+2)}{(2n+4k+3)(2n+4k+5)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="84" xml:id="C30.S8.SS1.p1.s3">
+Then the set of coefficients <Math mode="inline" xml:id="C30.S8.SS1.p1.m4">a^{m}_{n,k}(\gamma^{2})</Math> , <Math mode="inline" xml:id="C30.S8.SS1.p1.m5">k=-R,-R+1,-R+2,\dots</Math> is the solution of the difference equation <Math equation-number="30.8.4" mode="display" xml:id="C30.S8.E4">A_{k}f_{k-1}+\left(B_{k}-\lambda^{m}_{n}\left(\gamma^{2}\right)\right)f_{k}+C_ {k}f_{k+1}=0,</Math> (note that <Math mode="inline" xml:id="C30.S8.SS1.p1.m6">A_{-R}=0</Math> ) that satisfies the normalizing condition <Math equation-number="30.8.5" mode="display" xml:id="C30.S8.E5">\sum_{k=-R}^{\infty}a_{n,k}^{m}(\gamma^{2})a_{n,k}^{-m}(\gamma^{2})\frac{1}{2n +4k+1}=\frac{1}{2n+1},</Math> with <Math equation-number="30.8.6" mode="display" xml:id="C30.S8.E6">a_{n,k}^{-m}(\gamma^{2})=\frac{(n-m)!(n+m+2k)!}{(n+m)!(n-m+2k)!}a_{n,k}^{m}( \gamma^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="85" xml:id="C30.S8.SS1.p1.s4">
+Also, as <Math mode="inline" xml:id="C30.S8.SS1.p1.m7">k\to\infty</Math> , <Math equation-number="30.8.7" mode="display" xml:id="C30.S8.E7">\frac{k^{2}a^{m}_{n,k}(\gamma^{2})}{a^{m}_{n,k-1}(\gamma^{2})}=\frac{\gamma^{2 }}{16}+O\left(\frac{1}{k}\right),</Math> and <Math equation-number="30.8.8" mode="display" xml:id="C30.S8.E8">\frac{\lambda^{m}_{n}\left(\gamma^{2}\right)-B_{k}}{A_{k}}\frac{a^{m}_{n,k}( \gamma^{2})}{a^{m}_{n,k-1}(\gamma^{2})}=1+O\left(\frac{1}{k^{4}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S8.SS2">
+<title>Functions of the Second Kind</title>        
+ 
+<para xml:id="C30.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C30.S8.SS2.p1.s1">
+ <Math equation-number="30.8.9" mode="display" xml:id="C30.S8.E9">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)=\sum_{k=-\infty}^{-N-1}(-1)^{k}{a ^{\prime}}^{m}_{n,k}(\gamma^{2})\mathsf{P}^{m}_{n+2k}\left(x\right)+\sum_{k=-N }^{\infty}(-1)^{k}a^{m}_{n,k}(\gamma^{2})\mathsf{Q}^{m}_{n+2k}\left(x\right),</Math> where <Math mode="inline" xml:id="C30.S8.SS2.p1.m1">\mathsf{P}^{m}_{n}</Math> and <Math mode="inline" xml:id="C30.S8.SS2.p1.m2">\mathsf{Q}^{m}_{n}</Math> are again the Ferrers functions and <Math mode="inline" xml:id="C30.S8.SS2.p1.m3">N=\left\lfloor\frac{1}{2}(n+m)\right\rfloor</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C30.S8.SS2.p1.s2">
+The coefficients <Math mode="inline" xml:id="C30.S8.SS2.p1.m4">a^{m}_{n,k}(\gamma^{2})</Math> satisfy (LABEL:eq:SW.LF.REC2) for all <Math mode="inline" xml:id="C30.S8.SS2.p1.m5">k</Math> when we set <Math mode="inline" xml:id="C30.S8.SS2.p1.m6">a^{m}_{n,k}(\gamma^{2})=0</Math> for <Math mode="inline" xml:id="C30.S8.SS2.p1.m7">k&lt;-N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="88" xml:id="C30.S8.SS2.p1.s3">
+For <Math mode="inline" xml:id="C30.S8.SS2.p1.m8">k\geq-R</Math> they agree with the coefficients defined in §LABEL:sec:SW.LF.FK.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="89" xml:id="C30.S8.SS2.p1.s4">
+For <Math mode="inline" xml:id="C30.S8.SS2.p1.m9">k=-N,-N+1,\dots,-R-1</Math> they are determined from (LABEL:eq:SW.LF.REC2) by forward recursion using <Math mode="inline" xml:id="C30.S8.SS2.p1.m10">a^{m}_{n,-N-1}(\gamma^{2})=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="90" xml:id="C30.S8.SS2.p1.s5">
+The set of coefficients <Math mode="inline" xml:id="C30.S8.SS2.p1.m11">{a^{\prime}}^{m}_{n,k}(\gamma^{2})</Math> , <Math mode="inline" xml:id="C30.S8.SS2.p1.m12">k=-N-1,-N-2,\dots</Math> , is the recessive solution of (LABEL:eq:SW.LF.REC2) as <Math mode="inline" xml:id="C30.S8.SS2.p1.m13">k\to-\infty</Math> that is normalized by <Math equation-number="30.8.10" mode="display" xml:id="C30.S8.E10">A_{-N-1}{a^{\prime}}^{m}_{n,-N-2}(\gamma^{2})+{\left(B_{-N-1}-\lambda^{m}_{n} \left(\gamma^{2}\right)\right){a^{\prime}}^{m}_{n,-N-1}(\gamma^{2})}+C^{\prime }a^{m}_{n,-N}(\gamma^{2})=0,</Math> with <Math equation-number="30.8.11" mode="display" xml:id="C30.S8.E11">C^{\prime}=\begin{cases}\dfrac{\gamma^{2}}{4m^{2}-1},&amp;\mbox{$n-m$ even},\\ -\dfrac{\gamma^{2}}{(2m-1)(2m-3)},&amp;\mbox{$n-m$ odd}.\end{cases</Math> } It should be noted that if the forward recursion (LABEL:eq:SW.LF.REC2) beginning with <Math mode="inline" xml:id="C30.S8.SS2.p1.m14">f_{-N-1}=0</Math> , <Math mode="inline" xml:id="C30.S8.SS2.p1.m15">f_{-N}=1</Math> leads to <Math mode="inline" xml:id="C30.S8.SS2.p1.m16">f_{-R}=0</Math> , then <Math mode="inline" xml:id="C30.S8.SS2.p1.m17">a^{m}_{n,k}(\gamma^{2})</Math> is undefined for <Math mode="inline" xml:id="C30.S8.SS2.p1.m18">n&lt;-R</Math> and <Math mode="inline" xml:id="C30.S8.SS2.p1.m19">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math> does not exist.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S9">
+<title>Asymptotic Approximations and Expansions</title>        
+  
+<subsection xml:id="C30.S9.SS1">
+<title>Prolate Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C30.S9.SS1.p1.s1">
+As <Math mode="inline" xml:id="C30.S9.SS1.p1.m1">\gamma^{2}\to+\infty</Math> , with <Math mode="inline" xml:id="C30.S9.SS1.p1.m2">q=2(n-m)+1</Math> , <Math equation-number="30.9.1" mode="display" xml:id="C30.S9.E1">\lambda^{m}_{n}\left(\gamma^{2}\right)\sim-\gamma^{2}+\gamma q+\beta_{0}+\beta _{1}\gamma^{-1}+\beta_{2}\gamma^{-2}+\cdots,</Math> where <Math equation-number="30.9.2" mode="display" xml:id="C30.S9.E2">8\beta_{0}=8m^{2}-q^{2}-5, 2^{6}\beta_{1}=-q^{3}-11q+32m^{2}q, 2^{10}\beta_{2}=-5(q^{4}+26q^{2}+21)+384m^{2}(q^{2}+1), 2^{14}\beta_{3}=-33q^{5}-1594q^{3}-5621q+128m^{2}(37q^{3}+167q)-2048m^{4}q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p2">
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C30.S9.SS1.p3.s1">
+ <Math equation-number="30.9.3" mode="display" xml:id="C30.S9.E3">2^{16}\beta_{4}=-63q^{6}-4940q^{4}-43327q^{2}-22470+128m^{2}(115q^{4}+1310q^{2 }+735)-24576m^{4}(q^{2}+1), 2^{20}\beta_{5}=-527q^{7}-61529q^{5}-10\;43961q^{3}-22\;41599q+32m^{2}(5739q^{ 5}+1\;27550q^{3}+2\;98951q)-2048m^{4}(355q^{3}+1505q)+65536m^{6}q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="93" xml:id="C30.S9.SS1.p3.s2">
+Further coefficients can be found with the Maple program SWF7; see §LABEL:sec:SW.SO.IS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C30.S9.SS1.p4.s1">
+For the eigenfunctions see ( , §3.251) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C30.S9.SS1.p5.s1">
+For uniform asymptotic expansions in terms of Airy or Bessel functions for real values of the parameters, complex values of the variable, and with explicit error bounds see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C30.S9.SS1.p5.s2">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S9.SS2">
+<title>Oblate Spheroidal Wave Functions</title>        
+    
+<para xml:id="C30.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C30.S9.SS2.p1.s1">
+As <Math mode="inline" xml:id="C30.S9.SS2.p1.m1">\gamma^{2}\to-\infty</Math> , with <Math mode="inline" xml:id="C30.S9.SS2.p1.m2">q=n+1</Math> if <Math mode="inline" xml:id="C30.S9.SS2.p1.m3">n-m</Math> is even, or <Math mode="inline" xml:id="C30.S9.SS2.p1.m4">q=n</Math> if <Math mode="inline" xml:id="C30.S9.SS2.p1.m5">n-m</Math> is odd, we have <Math equation-number="30.9.4" mode="display" xml:id="C30.S9.E4">\lambda^{m}_{n}\left(\gamma^{2}\right)\sim 2q|\gamma|+c_{0}+c_{1}|\gamma|^{-1} +c_{2}|\gamma|^{-2}+\cdots,</Math> where <Math equation-number="30.9.5" mode="display" xml:id="C30.S9.E5">2c_{0}=-q^{2}-1+m^{2}, 8c_{1}=-q^{3}-q+m^{2}q, 2^{6}c_{2}=-5q^{4}-10q^{2}-1+2m^{2}(3q^{2}+1)-m^{4}, 2^{9}c_{3}=-33q^{5}-114q^{3}-37q+2m^{2}(23q^{3}+25q)-13m^{4}q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p2">
+
+</para>
+
+ 
+<para xml:id="C30.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C30.S9.SS2.p3.s1">
+ <Math equation-number="30.9.6" mode="display" xml:id="C30.S9.E6">2^{10}c_{4}=-63q^{6}-340q^{4}-239q^{2}-14+10m^{2}(10q^{4}+23q^{2}+3)-3m^{4}(13 q^{2}+6)+2m^{6}, 2^{13}c_{5}=-527q^{7}-4139q^{5}-5221q^{3}-1009q+m^{2}(939q^{5}+3750q^{3}+1591q )-m^{4}(465q^{3}+635q)+53m^{6}q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C30.S9.SS2.p3.s2">
+Further coefficients can be found with the Maple program SWF8; see §LABEL:sec:SW.SO.IS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C30.S9.SS2.p4.s1">
+For the eigenfunctions see ( , §3.252) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S9.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C30.S9.SS2.p5.s1">
+For uniform asymptotic expansions in terms of elementary, Airy, or Bessel functions for real values of the parameters, complex values of the variable,and with explicit error bounds see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C30.S9.SS2.p5.s2">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S9.SS3">
+<title>Other Approximations and Expansions</title>        
+  
+<para xml:id="C30.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C30.S9.SS3.p1.s1">
+The asymptotic behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S9.SS3.p1.m2">a^{m}_{n,k}(\gamma^{2})</Math> as <Math mode="inline" xml:id="C30.S9.SS3.p1.m3">n\to\infty</Math> in descending powers of <Math mode="inline" xml:id="C30.S9.SS3.p1.m4">2n+1</Math> is derived in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C30.S9.SS3.p1.s2">
+The cases of large <Math mode="inline" xml:id="C30.S9.SS3.p1.m5">m</Math> , and of large <Math mode="inline" xml:id="C30.S9.SS3.p1.m6">m</Math> and large <Math mode="inline" xml:id="C30.S9.SS3.p1.m7">|\gamma|</Math> , are studied in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="105" xml:id="C30.S9.SS3.p1.s3">
+The asymptotic behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m8">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S9.SS3.p1.m9">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math> as <Math mode="inline" xml:id="C30.S9.SS3.p1.m10">x\to\pm 1</Math> is given in ( , p. 151) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="106" xml:id="C30.S9.SS3.p1.s4">
+The behavior of <Math mode="inline" xml:id="C30.S9.SS3.p1.m11">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> for complex <Math mode="inline" xml:id="C30.S9.SS3.p1.m12">\gamma^{2}</Math> and large <Math mode="inline" xml:id="C30.S9.SS3.p1.m13">|\lambda^{m}_{n}\left(\gamma^{2}\right)|</Math> is investigated in ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S10">
+<title>Series and Integrals</title>        
+ 
+<para xml:id="C30.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C30.S10.p1.s1">
+Integrals and integral equations for <Math mode="inline" xml:id="C30.S10.p1.m1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> are given in ( , §8.6) , ( , §16.13) , ( , Chapter 5) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C30.S10.p1.s2">
+For product formulas and convolutions see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="109" xml:id="C30.S10.p1.s3">
+For an addition theorem, see ( , p. 300) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="110" xml:id="C30.S10.p1.s4">
+For expansions in products of spherical Bessel functions, see ( , Chapter 6) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C30.S11">
+<title>Radial Spheroidal Wave Functions</title>        
+   
+<subsection xml:id="C30.S11.SS1">
+<title>Definitions</title>        
+ 
+       
+<para xml:id="C30.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C30.S11.SS1.p1.s1">
+Denote <Math equation-number="30.11.1" mode="display" xml:id="C30.S11.E1">\psi_{k}^{(j)}(z)=\left(\frac{\pi}{2z}\right)^{\frac{1}{2}}{\cal C}_{k+\frac{1 }{2}}^{(j)}(z), subject to j=1,2,3,4,</Math> where <Math equation-number="30.11.2" mode="display" xml:id="C30.S11.E2">{\cal C}_{\nu}^{(1)}=J_{\nu}, {\cal C}_{\nu}^{(2)}=Y_{\nu}, {\cal C}_{\nu}^{(3)}={H^{(1)}_{\nu}}, {\cal C}_{\nu}^{(4)}={H^{(2)}_{\nu}},</Math> with <Math mode="inline" xml:id="C30.S11.SS1.p1.m1">J_{\nu}</Math> , <Math mode="inline" xml:id="C30.S11.SS1.p1.m2">Y_{\nu}</Math> , <Math mode="inline" xml:id="C30.S11.SS1.p1.m3">{H^{(1)}_{\nu}}</Math> , and <Math mode="inline" xml:id="C30.S11.SS1.p1.m4">{H^{(2)}_{\nu}}</Math> as in §LABEL:sec:BS.DEF.SS. Then solutions of (LABEL:eq:SW.DE.DE) with <Math mode="inline" xml:id="C30.S11.SS1.p1.m5">\mu=m</Math> and <Math mode="inline" xml:id="C30.S11.SS1.p1.m6">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are given by <Math equation-number="30.11.3" mode="display" xml:id="C30.S11.E3">S^{m(j)}_{n}\left(z,\gamma\right)=\frac{(1-z^{-2})^{\frac{1}{2}m}}{A_{n}^{-m}( \gamma^{2})}\sum_{2k\geq m-n}a^{-m}_{n,k}(\gamma^{2})\psi_{n+2k}^{(j)}(\gamma z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="112" xml:id="C30.S11.SS1.p1.s2">
+Here <Math mode="inline" xml:id="C30.S11.SS1.p1.m7">a^{-m}_{n,k}(\gamma^{2})</Math> is defined by (LABEL:eq:SW.LF.AR) and (LABEL:eq:SW.LF.NN), and <Math equation-number="30.11.4" mode="display" xml:id="C30.S11.E4">A_{n}^{\pm m}(\gamma^{2})=\sum_{2k\geq\mp m-n}(-1)^{k}a^{\pm m}_{n,k}(\gamma^{ 2})\quad(\neq 0)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="113" xml:id="C30.S11.SS1.p1.s3">
+In (LABEL:eq:SW.SJ.DF) <Math mode="inline" xml:id="C30.S11.SS1.p1.m8">z\neq 0</Math> when <Math mode="inline" xml:id="C30.S11.SS1.p1.m9">j=1</Math> , and <Math mode="inline" xml:id="C30.S11.SS1.p1.m10">|z|&gt;1</Math> when <Math mode="inline" xml:id="C30.S11.SS1.p1.m11">j=2,3,4</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C30.S11.Px1">
+<title>Connection Formulas</title>    
+<para xml:id="C30.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C30.S11.Px1.p1.s1">
+ <Math equation-number="30.11.5" mode="display" xml:id="C30.S11.E5">S^{m(3)}_{n}\left(z,\gamma\right)=S^{m(1)}_{n}\left(z,\gamma\right)+\mathrm{i} S^{m(2)}_{n}\left(z,\gamma\right), S^{m(4)}_{n}\left(z,\gamma\right)=S^{m(1)}_{n}\left(z,\gamma\right)-\mathrm{i} S^{m(2)}_{n}\left(z,\gamma\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S11.SS2">
+<title>Graphics</title>        
+           
+<sentence sentence-num-in-section="115" xml:id="C30.S11.F1.s1">
+Figure 30.11.1: <Math mode="inline" xml:id="C30.S11.F1.m4">S^{0(1)}_{n}\left(x,2\right)</Math> , <Math mode="inline" xml:id="C30.S11.F1.m5">n=0,1</Math> , <Math mode="inline" xml:id="C30.S11.F1.m6">1\leq x\leq 10</Math> .
+</sentence>  
+<para xml:id="C30.S11.SS2.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="116" xml:id="C30.S11.F2.s1">
+Figure 30.11.2: <Math mode="inline" xml:id="C30.S11.F2.m4">S^{0(1)}_{n}\left(\mathrm{i}y,2\mathrm{i}\right)</Math> , <Math mode="inline" xml:id="C30.S11.F2.m5">n=0,1</Math> , <Math mode="inline" xml:id="C30.S11.F2.m6">0\leq y\leq 10</Math> .
+</sentence>           
+<sentence sentence-num-in-section="117" xml:id="C30.S11.F3.s1">
+Figure 30.11.3: <Math mode="inline" xml:id="C30.S11.F3.m4">S^{1(1)}_{n}\left(x,2\right)</Math> , <Math mode="inline" xml:id="C30.S11.F3.m5">n=1,2</Math> , <Math mode="inline" xml:id="C30.S11.F3.m6">1\leq x\leq 10</Math> .
+</sentence>           
+<sentence sentence-num-in-section="118" xml:id="C30.S11.F4.s1">
+Figure 30.11.4: <Math mode="inline" xml:id="C30.S11.F4.m4">S^{1(1)}_{n}\left(\mathrm{i}y,2\mathrm{i}\right)</Math> , <Math mode="inline" xml:id="C30.S11.F4.m5">n=1,2</Math> , <Math mode="inline" xml:id="C30.S11.F4.m6">0\leq y\leq 10</Math> .
+</sentence>   
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S11.SS3">
+<title>Asymptotic Behavior</title>        
+  
+<para xml:id="C30.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C30.S11.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C30.S11.SS3.p1.m1">\gamma</Math> , as <Math mode="inline" xml:id="C30.S11.SS3.p1.m2">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C30.S11.SS3.p1.m3">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C30.S11.SS3.p1.m4">&lt;\pi</Math> ), <Math equation-number="30.11.6" mode="display" xml:id="C30.S11.E6">S^{m(j)}_{n}\left(z,\gamma\right)=\begin{cases}\psi_{n}^{(j)}(\gamma z)+O\left (z^{-2}e^{|\Im z|}\right),&amp;j=1,2,\\ \psi_{n}^{(j)}(\gamma z)\left(1+O\left(z^{-1}\right)\right),&amp;j=3,4.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C30.S11.SS3.p2.s1">
+For asymptotic expansions in negative powers of <Math mode="inline" xml:id="C30.S11.SS3.p2.m1">z</Math> see ( , p. 293) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S11.SS4">
+<title>Wronskian</title>        
+  
+<para xml:id="C30.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C30.S11.SS4.p1.s1">
+ <Math equation-number="30.11.7" mode="display" xml:id="C30.S11.E7">\mathscr{W}\left\{S^{m(1)}_{n}\left(z,\gamma\right),S^{m(2)}_{n}\left(z,\gamma \right)\right\}=\frac{1}{\gamma(z^{2}-1)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S11.SS5">
+<title>Connection with the <Math content-tex="\sphwavePs{}{}" mode="inline" xml:id="C30.S11.SS5.m1">\mathit{Ps}</Math> and <Math content-tex="\sphwaveQs{}{}" mode="inline" xml:id="C30.S11.SS5.m2">\mathit{Qs}</Math> Functions</title>        
+ 
+ 
+<para xml:id="C30.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C30.S11.SS5.p1.s1">
+ <Math equation-number="30.11.8" mode="display" xml:id="C30.S11.E8">S^{m(1)}_{n}\left(z,\gamma\right)=K_{n}^{m}(\gamma)\mathit{Ps}^{m}_{n}\left(z, \gamma^{2}\right),</Math> <Math equation-number="30.11.9" mode="display" xml:id="C30.S11.E9">S^{m(2)}_{n}\left(z,\gamma\right)=\frac{(n-m)!}{(n+m)!}\frac{(-1)^{m+1}\mathit {Qs}^{m}_{n}\left(z,\gamma^{2}\right)}{\gamma K_{n}^{m}(\gamma)A_{n}^{m}( \gamma^{2})A_{n}^{-m}(\gamma^{2})},</Math> where <Math equation-number="30.11.10" mode="display" xml:id="C30.S11.E10">K_{n}^{m}(\gamma)=\frac{\sqrt{\pi}}{2}\left(\frac{\gamma}{2}\right)^{m}\frac{( -1)^{m}a_{n,\frac{1}{2}(m-n)}^{-m}(\gamma^{2})}{\Gamma\left(\frac{3}{2}+m \right)A_{n}^{-m}(\gamma^{2})\mathsf{Ps}^{m}_{n}\left(0,\gamma^{2}\right)}, subject to n-m even,</Math> or <Math equation-number="30.11.11" mode="display" xml:id="C30.S11.E11">K_{n}^{m}(\gamma)=\frac{\sqrt{\pi}}{2}\left(\frac{\gamma}{2}\right)^{m+1}\* \frac{(-1)^{m}a_{n,\frac{1}{2}(m-n+1)}^{-m}(\gamma^{2})}{\Gamma\left(\frac{5}{ 2}+m\right)A_{n}^{-m}(\gamma^{2})(\left.\ifrac{\mathrm{d}\mathsf{Ps}^{m}_{n}(z ,\gamma^{2})}{\mathrm{d}z}\right|_{z=0})}, subject to n-m odd</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S11.SS6">
+<title>Integral Representations</title>        
+ 
+ 
+<para xml:id="C30.S11.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C30.S11.SS6.p1.s1">
+When <Math mode="inline" xml:id="C30.S11.SS6.p1.m1">z\in\mathbb{C}\setminus(-\infty,1]</Math> <Math equation-number="30.11.12" mode="display" xml:id="C30.S11.E12">A_{n}^{-m}(\gamma^{2})S^{m(1)}_{n}\left(z,\gamma\right)=\frac{1}{2}{\mathrm{i} ^{m+n}}\gamma^{m}\frac{(n-m)!}{(n+m)!}z^{m}(1-z^{-2})^{\frac{1}{2}m}\*\int_{-1 }^{1}e^{-\mathrm{i}\gamma zt}(1-t^{2})^{\frac{1}{2}m}\mathsf{Ps}^{m}_{n}\left( t,\gamma^{2}\right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S11.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C30.S11.SS6.p2.s1">
+For further relations see ( , §8.6) , ( ) , ( , §16.13) , ( ) , and ( , §3.1) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S12">
+<title>Generalized and Coulomb Spheroidal Functions</title>        
+   
+ 
+<para xml:id="C30.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C30.S12.p1.s1">
+Generalized spheroidal wave functions and Coulomb spheroidal functions are solutions of the differential equation <Math equation-number="30.12.1" mode="display" xml:id="C30.S12.E1">\frac{\mathrm{d}}{\mathrm{d}z}\left((1-z^{2})\frac{\mathrm{d}w}{\mathrm{d}z} \right)+{\left(\lambda+\alpha z+\gamma^{2}(1-z^{2})-\frac{\mu^{2}}{1-z^{2}} \right)w}=0,</Math> which reduces to (LABEL:eq:SW.DE.DE) if <Math mode="inline" xml:id="C30.S12.p1.m1">\alpha=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="126" xml:id="C30.S12.p1.s2">
+Equation (LABEL:eq:SW.GS.DE) appears in astrophysics and molecular physics.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="127" xml:id="C30.S12.p1.s3">
+For the theory and computation of solutions of (LABEL:eq:SW.GS.DE) see ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C30.S12.p2.s1">
+Another generalization is provided by the differential equation <Math equation-number="30.12.2" mode="display" xml:id="C30.S12.E2">\frac{\mathrm{d}}{\mathrm{d}z}\left((1-z^{2})\frac{\mathrm{d}w}{\mathrm{d}z} \right)+\left(\lambda+\gamma^{2}(1-z^{2})-\frac{\alpha(\alpha+1)}{z^{2}}-\frac {\mu^{2}}{1-z^{2}}\right)w=0,</Math> which also reduces to (LABEL:eq:SW.DE.DE) when <Math mode="inline" xml:id="C30.S12.p2.m1">\alpha=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="129" xml:id="C30.S12.p2.s2">
+See ( ) , ( ) with <Math mode="inline" xml:id="C30.S12.p2.m2">\mu=0</Math> , and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C30.S13">
+<title>Wave Equation in Prolate Spheroidal Coordinates</title>        
+   
+<subsection xml:id="C30.S13.SS1">
+<title>Prolate Spheroidal Coordinates</title>        
+  
+ 
+<para xml:id="C30.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C30.S13.SS1.p1.s1">
+Prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S13.SS1.p1.m1">\xi,\eta,\phi</Math> are related to Cartesian coordinates <Math mode="inline" xml:id="C30.S13.SS1.p1.m2">x,y,z</Math> by <Math equation-number="30.13.1" mode="display" xml:id="C30.S13.E1">x=c\sqrt{(\xi^{2}-1)(1-\eta^{2})}\cos\phi, y=c\sqrt{(\xi^{2}-1)(1-\eta^{2})}\sin\phi, z=c\xi\eta,</Math> where <Math mode="inline" xml:id="C30.S13.SS1.p1.m3">c</Math> is a positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="131" xml:id="C30.S13.SS1.p1.s2">
+(On the use of the symbol <Math mode="inline" xml:id="C30.S13.SS1.p1.m4">\theta</Math> in placeof <Math mode="inline" xml:id="C30.S13.SS1.p1.m5">\phi</Math> see §LABEL:sec:AL.FOT.la.)The
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="132" xml:id="C30.S13.SS1.p1.s3">
+<Math mode="inline" xml:id="C30.S13.SS1.p1.m6">(x,y,z)</Math> -space without the <Math mode="inline" xml:id="C30.S13.SS1.p1.m7">z</Math> -axis corresponds to <Math equation-number="30.13.2" mode="display" xml:id="C30.S13.E2">1&lt;\xi&lt;\infty, -1&lt;\eta&lt;1, 0\leq\phi&lt;2\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="133" xml:id="C30.S13.SS1.p1.s4">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S13.SS1.p1.m8">\xi=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="134" xml:id="C30.S13.SS1.p1.s5">
+are prolate ellipsoids of revolution with foci at <Math mode="inline" xml:id="C30.S13.SS1.p1.m9">x=y=0</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m10">z=\pm c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="135" xml:id="C30.S13.SS1.p1.s6">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S13.SS1.p1.m11">\eta=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="136" xml:id="C30.S13.SS1.p1.s7">
+are sheets of two-sheeted hyperboloids of revolution with the same foci.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="137" xml:id="C30.S13.SS1.p1.s8">
+The focal line is given by <Math mode="inline" xml:id="C30.S13.SS1.p1.m12">\xi=1</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m13">-1\leq\eta\leq 1</Math> , and the rays <Math mode="inline" xml:id="C30.S13.SS1.p1.m14">\pm z\geq c</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m15">x=y=0</Math> are given by <Math mode="inline" xml:id="C30.S13.SS1.p1.m16">\eta=\pm 1</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m17">\xi\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS2">
+<title>Metric Coefficients</title>        
+ 
+  
+<para xml:id="C30.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C30.S13.SS2.p1.s1">
+ <Math equation-number="30.13.3" mode="display" xml:id="C30.S13.E3">h_{\xi}^{2}=\left(\frac{\partial x}{\partial\xi}\right)^{2}+\left(\frac{ \partial y}{\partial\xi}\right)^{2}+\left(\frac{\partial z}{\partial\xi}\right )^{2}=\frac{c^{2}(\xi^{2}-\eta^{2})}{\xi^{2}-1},</Math> , <Math equation-number="30.13.4" mode="display" xml:id="C30.S13.E4">h_{\eta}^{2}=\left(\frac{\partial x}{\partial\eta}\right)^{2}+\left(\frac{ \partial y}{\partial\eta}\right)^{2}+\left(\frac{\partial z}{\partial\eta} \right)^{2}=\frac{c^{2}(\xi^{2}-\eta^{2})}{1-\eta^{2}},</Math> , <Math equation-number="30.13.5" mode="display" xml:id="C30.S13.E5">h_{\phi}^{2}=\left(\frac{\partial x}{\partial\phi}\right)^{2}+\left(\frac{ \partial y}{\partial\phi}\right)^{2}+\left(\frac{\partial z}{\partial\phi} \right)^{2}=c^{2}(\xi^{2}-1)(1-\eta^{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS3">
+<title>Laplacian</title>        
+  
+ 
+<para xml:id="C30.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="139" xml:id="C30.S13.SS3.p1.s1">
+ <Math equation-number="30.13.6" mode="display" xml:id="C30.S13.E6">\nabla^{2}=\frac{1}{h_{\xi}h_{\eta}h_{\phi}}\left(\frac{\partial}{\partial\xi} \left(\frac{h_{\eta}h_{\phi}}{h_{\xi}}\frac{\partial}{\partial\xi}\right)+ \frac{\partial}{\partial\eta}\left(\frac{h_{\xi}h_{\phi}}{h_{\eta}}\frac{ \partial}{\partial\eta}\right)+\frac{\partial}{\partial\phi}\left(\frac{h_{\xi }h_{\eta}}{h_{\phi}}\frac{\partial}{\partial\phi}\right)\right)=\frac{1}{c^{2} (\xi^{2}-\eta^{2})}\left(\frac{\partial}{\partial\xi}\left((\xi^{2}-1)\frac{ \partial}{\partial\xi}\right)+\frac{\partial}{\partial\eta}\left((1-\eta^{2}) \frac{\partial}{\partial\eta}\right)+\frac{\xi^{2}-\eta^{2}}{(\xi^{2}-1)(1- \eta^{2})}\frac{{\partial}^{2}}{{\partial\phi}^{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS4">
+<title>Separation of Variables</title>        
+ 
+<para xml:id="C30.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C30.S13.SS4.p1.s1">
+The wave equation <Math equation-number="30.13.7" mode="display" xml:id="C30.S13.E7">\nabla^{2}w+\kappa^{2}w=0,</Math> transformed to prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S13.SS4.p1.m1">(\xi,\eta,\phi)</Math> , admits solutions <Math equation-number="30.13.8" mode="display" xml:id="C30.S13.E8">w(\xi,\eta,\phi)=w_{1}(\xi)w_{2}(\eta)w_{3}(\phi),</Math> where <Math mode="inline" xml:id="C30.S13.SS4.p1.m2">w_{1}</Math> , <Math mode="inline" xml:id="C30.S13.SS4.p1.m3">w_{2}</Math> , <Math mode="inline" xml:id="C30.S13.SS4.p1.m4">w_{3}</Math> satisfy the differential equations <Math equation-number="30.13.9" mode="display" xml:id="C30.S13.E9">\frac{\mathrm{d}}{\mathrm{d}\xi}\left((1-\xi^{2})\frac{\mathrm{d}w_{1}}{ \mathrm{d}\xi}\right)+\left(\lambda+\gamma^{2}(1-\xi^{2})-\frac{\mu^{2}}{1-\xi ^{2}}\right)w_{1}=0,</Math> <Math equation-number="30.13.10" mode="display" xml:id="C30.S13.E10">\frac{\mathrm{d}}{\mathrm{d}\eta}\left((1-\eta^{2})\frac{\mathrm{d}w_{2}}{ \mathrm{d}\eta}\right)+\left(\lambda+\gamma^{2}(1-\eta^{2})-\frac{\mu^{2}}{1- \eta^{2}}\right)w_{2}=0,</Math> <Math equation-number="30.13.11" mode="display" xml:id="C30.S13.E11">\frac{{\mathrm{d}}^{2}w_{3}}{{\mathrm{d}\phi}^{2}}+\mu^{2}w_{3}=0,</Math> with <Math mode="inline" xml:id="C30.S13.SS4.p1.m5">\gamma^{2}=\kappa^{2}c^{2}\geq 0</Math> and separation constants <Math mode="inline" xml:id="C30.S13.SS4.p1.m6">\lambda</Math> and <Math mode="inline" xml:id="C30.S13.SS4.p1.m7">\mu^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="141" xml:id="C30.S13.SS4.p1.s2">
+Equations (LABEL:eq:SW.PR.DE1) and (LABEL:eq:SW.PR.DE2) agree with (LABEL:eq:SW.DE.DE).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C30.S13.SS4.p2.s1">
+In most applications the solution <Math mode="inline" xml:id="C30.S13.SS4.p2.m1">w</Math> has to be a single-valued function of <Math mode="inline" xml:id="C30.S13.SS4.p2.m2">(x,y,z)</Math> , which requires <Math mode="inline" xml:id="C30.S13.SS4.p2.m3">\mu=m</Math> (a nonnegative integer) and <Math equation-number="30.13.12" mode="display" xml:id="C30.S13.E12">w_{3}(\phi)=a_{3}\cos\left(m\phi\right)+b_{3}\sin\left(m\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="143" xml:id="C30.S13.SS4.p2.s2">
+Moreover, <Math mode="inline" xml:id="C30.S13.SS4.p2.m4">w</Math> has to be bounded along the <Math mode="inline" xml:id="C30.S13.SS4.p2.m5">z</Math> -axis away from the focal line: this requires <Math mode="inline" xml:id="C30.S13.SS4.p2.m6">w_{2}(\eta)</Math> to be bounded when <Math mode="inline" xml:id="C30.S13.SS4.p2.m7">-1&lt;\eta&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="144" xml:id="C30.S13.SS4.p2.s3">
+Then <Math mode="inline" xml:id="C30.S13.SS4.p2.m8">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> for some <Math mode="inline" xml:id="C30.S13.SS4.p2.m9">n=m,m+1,m+2,\dots</Math> , and the general solution of (LABEL:eq:SW.PR.DE2) is <Math equation-number="30.13.13" mode="display" xml:id="C30.S13.E13">w_{2}(\eta)=a_{2}\mathsf{Ps}^{m}_{n}\left(\eta,\gamma^{2}\right)+b_{2}\mathsf{ Qs}^{m}_{n}\left(\eta,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="145" xml:id="C30.S13.SS4.p2.s4">
+The solution of (LABEL:eq:SW.PR.DE1) with <Math mode="inline" xml:id="C30.S13.SS4.p2.m10">\mu=m</Math> is <Math equation-number="30.13.14" mode="display" xml:id="C30.S13.E14">w_{1}(\xi)=a_{1}S^{m(1)}_{n}\left(\xi,\gamma\right)+b_{1}S^{m(2)}_{n}\left(\xi ,\gamma\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C30.S13.SS4.p3.s1">
+If <Math mode="inline" xml:id="C30.S13.SS4.p3.m1">b_{1}=b_{2}=0</Math> , then the function (LABEL:eq:SW.PR.SO) is a twice-continuously differentiable solutionof (LABEL:eq:SW.PR.SW) in the entire <Math mode="inline" xml:id="C30.S13.SS4.p3.m2">(x,y,z)</Math> -space.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="147" xml:id="C30.S13.SS4.p3.s2">
+If <Math mode="inline" xml:id="C30.S13.SS4.p3.m3">b_{2}=0</Math> , then this property holds outside the focal line.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS5">
+<title>The Interior Dirichlet Problem for Prolate Ellipsoids</title>        
+  
+<para xml:id="C30.S13.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C30.S13.SS5.p1.s1">
+Equation (LABEL:eq:SW.PR.SW) for <Math mode="inline" xml:id="C30.S13.SS5.p1.m1">\xi\leq\xi_{0}</Math> , and subject to the boundary condition <Math mode="inline" xml:id="C30.S13.SS5.p1.m2">w=0</Math> on the ellipsoid given by <Math mode="inline" xml:id="C30.S13.SS5.p1.m3">\xi=\xi_{0}</Math> , poses an eigenvalue problem with <Math mode="inline" xml:id="C30.S13.SS5.p1.m4">\kappa^{2}</Math> as spectral parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="149" xml:id="C30.S13.SS5.p1.s2">
+The eigenvalues are given by <Math mode="inline" xml:id="C30.S13.SS5.p1.m5">c^{2}\kappa^{2}=\gamma^{2}</Math> , where <Math mode="inline" xml:id="C30.S13.SS5.p1.m6">\gamma</Math> is determined from the condition <Math equation-number="30.13.15" mode="display" xml:id="C30.S13.E15">S^{m(1)}_{n}\left(\xi_{0},\gamma\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="150" xml:id="C30.S13.SS5.p1.s3">
+The corresponding eigenfunctions are given by (LABEL:eq:SW.PR.SO), (LABEL:eq:SW.PR.U1), (LABEL:eq:SW.PR.U2), (LABEL:eq:SW.PR.U3), with <Math mode="inline" xml:id="C30.S13.SS5.p1.m7">b_{1}=b_{2}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="151" xml:id="C30.S13.SS5.p1.s4">
+For the Dirichlet boundary-value problem of the region <Math mode="inline" xml:id="C30.S13.SS5.p1.m8">\xi_{1}\leq\xi\leq\xi_{2}</Math> between two ellipsoids, the eigenvalues aredetermined from <Math equation-number="30.13.16" mode="display" xml:id="C30.S13.E16">w_{1}(\xi_{1})=w_{1}(\xi_{2})=0,</Math> with <Math mode="inline" xml:id="C30.S13.SS5.p1.m9">w_{1}</Math> as in (LABEL:eq:SW.PR.U1).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="152" xml:id="C30.S13.SS5.p1.s5">
+The corresponding eigenfunctions are given as before with <Math mode="inline" xml:id="C30.S13.SS5.p1.m10">b_{2}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C30.S13.SS5.p2.s1">
+For further applications see ( ) , ( ) and the references cited therein; also ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S14">
+<title>Wave Equation in Oblate Spheroidal Coordinates</title>        
+ 
+<subsection xml:id="C30.S14.SS1">
+<title>Oblate Spheroidal Coordinates</title>        
+   
+ 
+<para xml:id="C30.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C30.S14.SS1.p1.s1">
+Oblate spheroidal coordinates <Math mode="inline" xml:id="C30.S14.SS1.p1.m1">\xi,\eta,\phi</Math> are related to Cartesian coordinates <Math mode="inline" xml:id="C30.S14.SS1.p1.m2">x,y,z</Math> by <Math equation-number="30.14.1" mode="display" xml:id="C30.S14.E1">x=c\sqrt{(\xi^{2}+1)(1-\eta^{2})}\cos\phi, y=c\sqrt{(\xi^{2}+1)(1-\eta^{2})}\sin\phi, z=c\xi\eta,</Math> where <Math mode="inline" xml:id="C30.S14.SS1.p1.m3">c</Math> is a positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C30.S14.SS1.p1.s2">
+(On the use of the symbol <Math mode="inline" xml:id="C30.S14.SS1.p1.m4">\theta</Math> in place of <Math mode="inline" xml:id="C30.S14.SS1.p1.m5">\phi</Math> see §LABEL:sec:AL.FOT.la.)The
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="156" xml:id="C30.S14.SS1.p1.s3">
+<Math mode="inline" xml:id="C30.S14.SS1.p1.m6">(x,y,z)</Math> -space without the <Math mode="inline" xml:id="C30.S14.SS1.p1.m7">z</Math> -axis and the disk <Math mode="inline" xml:id="C30.S14.SS1.p1.m8">z=0</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m9">x^{2}+y^{2}\leq c^{2}</Math> corresponds to <Math equation-number="30.14.2" mode="display" xml:id="C30.S14.E2">0&lt;\xi&lt;\infty, -1&lt;\eta&lt;1, 0\leq\phi&lt;2\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="157" xml:id="C30.S14.SS1.p1.s4">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S14.SS1.p1.m10">\xi=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="158" xml:id="C30.S14.SS1.p1.s5">
+are oblate ellipsoids of revolution with focal circle <Math mode="inline" xml:id="C30.S14.SS1.p1.m11">z=0</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m12">x^{2}+y^{2}=c^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="159" xml:id="C30.S14.SS1.p1.s6">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S14.SS1.p1.m13">\eta=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="160" xml:id="C30.S14.SS1.p1.s7">
+are halves of one-sheeted hyperboloids of revolution with the same focal circle.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="161" xml:id="C30.S14.SS1.p1.s8">
+The disk <Math mode="inline" xml:id="C30.S14.SS1.p1.m14">z=0</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m15">x^{2}+y^{2}\leq c^{2}</Math> is given by <Math mode="inline" xml:id="C30.S14.SS1.p1.m16">\xi=0</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m17">-1\leq\eta\leq 1</Math> , and the rays <Math mode="inline" xml:id="C30.S14.SS1.p1.m18">\pm z\geq 0</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m19">x=y=0</Math> are given by <Math mode="inline" xml:id="C30.S14.SS1.p1.m20">\eta=\pm 1</Math> , <Math mode="inline" xml:id="C30.S14.SS1.p1.m21">\xi\geq 0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S14.SS2">
+<title>Metric Coefficients</title>        
+   
+<para xml:id="C30.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C30.S14.SS2.p1.s1">
+ <Math equation-number="30.14.3" mode="display" xml:id="C30.S14.E3">h_{\xi}^{2}=\frac{c^{2}(\xi^{2}+\eta^{2})}{1+\xi^{2}},</Math> , <Math equation-number="30.14.4" mode="display" xml:id="C30.S14.E4">h_{\eta}^{2}=\frac{c^{2}(\xi^{2}+\eta^{2})}{1-\eta^{2}},</Math> , <Math equation-number="30.14.5" mode="display" xml:id="C30.S14.E5">h_{\phi}^{2}=c^{2}(\xi^{2}+1)(1-\eta^{2})</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S14.SS3">
+<title>Laplacian</title>        
+   
+<para xml:id="C30.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C30.S14.SS3.p1.s1">
+ <Math equation-number="30.14.6" mode="display" xml:id="C30.S14.E6">\nabla^{2}=\frac{1}{c^{2}(\xi^{2}+\eta^{2})}\left(\frac{\partial}{\partial\xi} \left((\xi^{2}+1)\frac{\partial}{\partial\xi}\right)+\frac{\partial}{\partial \eta}\left((1-\eta^{2})\frac{\partial}{\partial\eta}\right)+\frac{\xi^{2}+\eta ^{2}}{(\xi^{2}+1)(1-\eta^{2})}\frac{{\partial}^{2}}{{\partial\phi}^{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S14.SS4">
+<title>Separation of Variables</title>        
+ 
+<para xml:id="C30.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C30.S14.SS4.p1.s1">
+The wave equation (LABEL:eq:SW.PR.SW), transformed to oblate spheroidal coordinates <Math mode="inline" xml:id="C30.S14.SS4.p1.m1">(\xi,\eta,\phi)</Math> , admits solutions of the form (LABEL:eq:SW.PR.SO), where <Math mode="inline" xml:id="C30.S14.SS4.p1.m2">w_{1}</Math> satisfies the differential equation <Math equation-number="30.14.7" mode="display" xml:id="C30.S14.E7">\frac{\mathrm{d}}{\mathrm{d}\xi}\left((1+\xi^{2})\frac{\mathrm{d}w_{1}}{ \mathrm{d}\xi}\right)-\left(\lambda+\gamma^{2}(1+\xi^{2})-\frac{\mu^{2}}{1+\xi ^{2}}\right)w_{1}=0,</Math> and <Math mode="inline" xml:id="C30.S14.SS4.p1.m3">w_{2}</Math> , <Math mode="inline" xml:id="C30.S14.SS4.p1.m4">w_{3}</Math> satisfy (LABEL:eq:SW.PR.DE2) and (LABEL:eq:SW.PR.DE3), respectively, with <Math mode="inline" xml:id="C30.S14.SS4.p1.m5">\gamma^{2}=-\kappa^{2}c^{2}\leq 0</Math> and separation constants <Math mode="inline" xml:id="C30.S14.SS4.p1.m6">\lambda</Math> and <Math mode="inline" xml:id="C30.S14.SS4.p1.m7">\mu^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C30.S14.SS4.p1.s2">
+Equation (LABEL:eq:SW.OB.DE1) can be transformed to equation (LABEL:eq:SW.DE.DE) by the substitution <Math mode="inline" xml:id="C30.S14.SS4.p1.m8">z=\pm i\xi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C30.S14.SS4.p2.s1">
+In most applications the solution <Math mode="inline" xml:id="C30.S14.SS4.p2.m1">w</Math> has to be a single-valued function of <Math mode="inline" xml:id="C30.S14.SS4.p2.m2">(x,y,z)</Math> , which requires <Math mode="inline" xml:id="C30.S14.SS4.p2.m3">\mu=m</Math> (a nonnegative integer).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C30.S14.SS4.p2.s2">
+Moreover, the solution <Math mode="inline" xml:id="C30.S14.SS4.p2.m4">w</Math> has to be bounded along the <Math mode="inline" xml:id="C30.S14.SS4.p2.m5">z</Math> -axis: this requires <Math mode="inline" xml:id="C30.S14.SS4.p2.m6">w_{2}(\eta)</Math> to be bounded when <Math mode="inline" xml:id="C30.S14.SS4.p2.m7">-1&lt;\eta&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="168" xml:id="C30.S14.SS4.p2.s3">
+Then <Math mode="inline" xml:id="C30.S14.SS4.p2.m8">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> for some <Math mode="inline" xml:id="C30.S14.SS4.p2.m9">n=m,m+1,m+2,\dots</Math> , and the solution of (LABEL:eq:SW.PR.DE2) is given by (LABEL:eq:SW.PR.U2).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="169" xml:id="C30.S14.SS4.p2.s4">
+The solution of (LABEL:eq:SW.OB.DE1) is given by <Math equation-number="30.14.8" mode="display" xml:id="C30.S14.E8">w_{1}(\xi)=a_{1}S^{m(1)}_{n}\left(i\xi,\gamma\right)+b_{1}S^{m(2)}_{n}\left(i \xi,\gamma\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S14.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C30.S14.SS4.p3.s1">
+If <Math mode="inline" xml:id="C30.S14.SS4.p3.m1">b_{1}=b_{2}=0</Math> , then the function (LABEL:eq:SW.PR.SO) is a twice-continuously differentiable solution of (LABEL:eq:SW.PR.SW) in the entire <Math mode="inline" xml:id="C30.S14.SS4.p3.m2">(x,y,z)</Math> -space.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="171" xml:id="C30.S14.SS4.p3.s2">
+If <Math mode="inline" xml:id="C30.S14.SS4.p3.m3">b_{2}=0</Math> , then this property holds outside the focal disk.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S14.SS5">
+<title>The Interior Dirichlet Problem for Oblate Ellipsoids</title>        
+   
+<para xml:id="C30.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C30.S14.SS5.p1.s1">
+Equation (LABEL:eq:SW.PR.SW) for <Math mode="inline" xml:id="C30.S14.SS5.p1.m1">\xi\leq\xi_{0}</Math> together with the boundarycondition <Math mode="inline" xml:id="C30.S14.SS5.p1.m2">w=0</Math> on the ellipsoid given by <Math mode="inline" xml:id="C30.S14.SS5.p1.m3">\xi=\xi_{0}</Math> , poses an eigenvalue problem with <Math mode="inline" xml:id="C30.S14.SS5.p1.m4">\kappa^{2}</Math> as spectral parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="173" xml:id="C30.S14.SS5.p1.s2">
+The eigenvalues are given by <Math mode="inline" xml:id="C30.S14.SS5.p1.m5">c^{2}\kappa^{2}=-\gamma^{2}</Math> , where <Math mode="inline" xml:id="C30.S14.SS5.p1.m6">\gamma^{2}</Math> is determined from the condition <Math equation-number="30.14.9" mode="display" xml:id="C30.S14.E9">S^{m(1)}_{n}\left(\mathrm{i}\xi_{0},\gamma\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="174" xml:id="C30.S14.SS5.p1.s3">
+The corresponding eigenfunctions are then given by (LABEL:eq:SW.PR.SO), (LABEL:eq:SW.OB.U1), (LABEL:eq:SW.PR.U2), (LABEL:eq:SW.PR.U3), with <Math mode="inline" xml:id="C30.S14.SS5.p1.m7">b_{1}=b_{2}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S14.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C30.S14.SS5.p2.s1">
+For further applications see ( ) , ( ) and the references cited therein; also ( ) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S15">
+<title>Signal Analysis</title>        
+    
+<subsection xml:id="C30.S15.SS1">
+<title>Scaled Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C30.S15.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C30.S15.SS1.p1.m1">\tau</Math> <Math mode="inline" xml:id="C30.S15.SS1.p1.m2">(&gt;0)</Math> and <Math mode="inline" xml:id="C30.S15.SS1.p1.m3">\sigma</Math> <Math mode="inline" xml:id="C30.S15.SS1.p1.m4">(&gt;0)</Math> be given.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="177" xml:id="C30.S15.SS1.p1.s2">
+Set <Math mode="inline" xml:id="C30.S15.SS1.p1.m5">\gamma=\tau\sigma</Math> and define <Math equation-number="30.15.1" mode="display" xml:id="C30.S15.E1">\phi_{n}(t)=\sqrt{\frac{2n+1}{2\tau}}\sqrt{\Lambda_{n}}\mathsf{Ps}^{0}_{n} \left(\frac{t}{\tau},\gamma^{2}\right), subject to n=0,1,2,\dots,</Math> <Math equation-number="30.15.2" mode="display" xml:id="C30.S15.E2">\Lambda_{n}=\frac{2\gamma}{\pi}\left(K_{n}^{0}(\gamma)A_{n}^{0}(\gamma^{2}) \right)^{2};</Math> see §LABEL:sec:SW.SJ.CC.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS2">
+<title>Integral Equation</title>        
+   
+<para xml:id="C30.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C30.S15.SS2.p1.s1">
+ <Math equation-number="30.15.3" mode="display" xml:id="C30.S15.E3">\int_{-\tau}^{\tau}\frac{\sin\sigma(t-s)}{\pi(t-s)}\phi_{n}(s)\mathrm{d}s= \Lambda_{n}\phi_{n}(t)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS3">
+<title>Fourier Transform</title>        
+  
+ 
+<para xml:id="C30.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C30.S15.SS3.p1.s1">
+ <Math equation-number="30.15.4" mode="display" xml:id="C30.S15.E4">\int_{-\infty}^{\infty}e^{-\mathrm{i}t\omega}\phi_{n}(t)\mathrm{d}t=(-\mathrm{ i})^{n}\sqrt{\frac{2\pi\tau}{\sigma\Lambda_{n}}}\phi_{n}\left(\frac{\tau}{ \sigma}\omega\right)\chi_{\sigma}(\omega),</Math> <Math equation-number="30.15.5" mode="display" xml:id="C30.S15.E5">\int_{-\tau}^{\tau}e^{-\mathrm{i}t\omega}\phi_{n}(t)\mathrm{d}t=(-\mathrm{i})^ {n}\sqrt{\frac{2\pi\tau\Lambda_{n}}{\sigma}}\phi_{n}\left(\frac{\tau}{\sigma} \omega\right),</Math> where <Math equation-number="30.15.6" mode="display" xml:id="C30.S15.E6">\chi_{\sigma}(\omega)=\begin{cases}1,&amp;\mbox{$|\omega|\leq\sigma$},\\ 0,&amp;\mbox{$|\omega|&gt;\sigma$}.\end{cases</Math> } Equations (LABEL:eq:SW.SI.F1) and (LABEL:eq:SW.SI.F4) show that the functions <Math mode="inline" xml:id="C30.S15.SS3.p1.m1">\phi_{n}</Math> are <Math mode="inline" xml:id="C30.S15.SS3.p1.m2">\sigma</Math> -bandlimited, that is, their Fourier transform vanishes outside the interval <Math mode="inline" xml:id="C30.S15.SS3.p1.m3">[-\sigma,\sigma]</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS4">
+<title>Orthogonality</title>        
+  
+<para xml:id="C30.S15.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C30.S15.SS4.p1.s1">
+ <Math equation-number="30.15.7" mode="display" xml:id="C30.S15.E7">\int_{-\tau}^{\tau}\phi_{k}(t)\phi_{n}(t)\mathrm{d}t=\Lambda_{n}\delta_{k,n},</Math> , <Math equation-number="30.15.8" mode="display" xml:id="C30.S15.E8">\int_{-\infty}^{\infty}\phi_{k}(t)\phi_{n}(t)\mathrm{d}t=\delta_{k,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="181" xml:id="C30.S15.SS4.p1.s2">
+The sequence <Math mode="inline" xml:id="C30.S15.SS4.p1.m1">\phi_{n}</Math> , <Math mode="inline" xml:id="C30.S15.SS4.p1.m2">n=0,1,2,\dots</Math> forms an orthonormal basis in the space of <Math mode="inline" xml:id="C30.S15.SS4.p1.m3">\sigma</Math> -bandlimited functions, and, after normalization, an orthonormal basis in <Math mode="inline" xml:id="C30.S15.SS4.p1.m4">L^{2}(-\tau,\tau)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S15.SS5">
+<title>Extremal Properties</title>        
+  
+<para xml:id="C30.S15.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C30.S15.SS5.p1.s1">
+The maximum (or least upper bound) <Math mode="inline" xml:id="C30.S15.SS5.p1.m1">\mathrm{B}</Math> of all numbers <Math equation-number="30.15.9" mode="display" xml:id="C30.S15.E9">\beta=\frac{1}{2\pi}\int_{-\sigma}^{\sigma}\left|\int_{-\infty}^{\infty}e^{- \mathrm{i}t\omega}f(t)\mathrm{d}t\right|^{2}\mathrm{d}\omega</Math> taken over all <Math mode="inline" xml:id="C30.S15.SS5.p1.m2">f\in L^{2}(-\infty,\infty)</Math> subject to <Math equation-number="30.15.10" mode="display" xml:id="C30.S15.E10">\int_{-\infty}^{\infty}|f(t)|^{2}\mathrm{d}t=1, \int_{-\tau}^{\tau}|f(t)|^{2}\mathrm{d}t=\alpha,</Math> for (fixed) <Math mode="inline" xml:id="C30.S15.SS5.p1.m3">\Lambda_{0}&lt;\alpha\leq 1</Math> , is given by <Math equation-number="30.15.11" mode="display" xml:id="C30.S15.E11">\operatorname{arccos}\sqrt{\mathrm{B}}+\operatorname{arccos}\sqrt{\alpha}= \operatorname{arccos}\sqrt{\Lambda_{0}},</Math> or equivalently, <Math equation-number="30.15.12" mode="display" xml:id="C30.S15.E12">\mathrm{B}=\left(\sqrt{\Lambda_{0}\alpha}+\sqrt{1-\Lambda_{0}}\sqrt{1-\alpha} \right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="183" xml:id="C30.S15.SS5.p1.s2">
+The corresponding function <Math mode="inline" xml:id="C30.S15.SS5.p1.m4">f</Math> is given by <Math equation-number="30.15.13" mode="display" xml:id="C30.S15.E13">f(t)=a\phi_{0}(t)\chi_{\tau}(t)+b\phi_{0}(t)(1-\chi_{\tau}(t)), a=\sqrt{\frac{\alpha}{\Lambda_{0}}}, b=\sqrt{\frac{1-\alpha}{1-\Lambda_{0}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="184" xml:id="C30.S15.SS5.p1.s3">
+If <Math mode="inline" xml:id="C30.S15.SS5.p1.m5">0&lt;\alpha\leq\Lambda_{0}</Math> , then <Math mode="inline" xml:id="C30.S15.SS5.p1.m6">\mathrm{B}=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S15.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C30.S15.SS5.p2.s1">
+For further information see ( ) , ( ) , ( , Chapter 6) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C30.S16">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C30.S16.SS1">
+<title>Eigenvalues</title>        
+  
+<para xml:id="C30.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C30.S16.SS1.p1.s1">
+For small <Math mode="inline" xml:id="C30.S16.SS1.p1.m1">|\gamma^{2}|</Math> we can use the power-series expansion (LABEL:eq:SW.EV.EQ1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="187" xml:id="C30.S16.SS1.p1.s2">
+( ) gives corresponding error bounds.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="188" xml:id="C30.S16.SS1.p1.s3">
+If <Math mode="inline" xml:id="C30.S16.SS1.p1.m2">|\gamma^{2}|</Math> is large we can use the asymptotic expansions in §LABEL:sec:SW.AE. Approximations to eigenvalues can be improved by using the continued-fraction equations from §LABEL:sec:SW.EV.TR and §LABEL:sec:SW.LF; see ( ) and ( , §3.93) .
+</sentence>
+
+</para>
+    
+<para xml:id="C30.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C30.S16.SS1.p2.s1">
+Another method is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="190" xml:id="C30.S16.SS1.p2.s2">
+Let <Math mode="inline" xml:id="C30.S16.SS1.p2.m1">n-m</Math> be even.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="191" xml:id="C30.S16.SS1.p2.s3">
+For <Math mode="inline" xml:id="C30.S16.SS1.p2.m2">d</Math> sufficiently large, construct the <Math mode="inline" xml:id="C30.S16.SS1.p2.m3">d\times d</Math> tridiagonal matrix <Math mode="inline" xml:id="C30.S16.SS1.p2.m4">\mathbf{A}=[A_{j,k}]</Math> with nonzero elements <Math equation-number="30.16.1" mode="display" xml:id="C30.S16.E1">A_{j,j}=(m+2j-2)(m+2j-1)-2\gamma^{2}\frac{(m+2j-2)(m+2j-1)-1+m^{2}}{(2m+4j-5)( 2m+4j-1)}, A_{j,j+1}=-\gamma^{2}\frac{(2m+2j-1)(2m+2j)}{(2m+4j-1)(2m+4j+1)}, A_{j,j-1}=-\gamma^{2}\frac{(2j-3)(2j-2)}{(2m+4j-7)(2m+4j-5)},</Math> and real eigenvalues <Math mode="inline" xml:id="C30.S16.SS1.p2.m5">\alpha_{1,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m6">\alpha_{2,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m7">\dots</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m8">\alpha_{d,d}</Math> ,arranged in ascending order of magnitude.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="192" xml:id="C30.S16.SS1.p2.s4">
+Then <Math equation-number="30.16.2" mode="display" xml:id="C30.S16.E2">\alpha_{j,d+1}\leq\alpha_{j,d},</Math> and <Math equation-number="30.16.3" mode="display" xml:id="C30.S16.E3">\lambda^{m}_{n}\left(\gamma^{2}\right)=\lim_{d\to\infty}\alpha_{p,d}, subject to p=\left\lfloor\frac{1}{2}(n-m)\right\rfloor+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="193" xml:id="C30.S16.SS1.p2.s5">
+The eigenvalues of <Math mode="inline" xml:id="C30.S16.SS1.p2.m9">\mathbf{A}</Math> can be computed by methods indicated in §§LABEL:sec:NM.LIN.LANCZS, LABEL:sec:NM.LIN.CEV.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="194" xml:id="C30.S16.SS1.p2.s6">
+The error satisfies <Math equation-number="30.16.4" mode="display" xml:id="C30.S16.E4">\alpha_{p,d}-\lambda^{m}_{n}\left(\gamma^{2}\right)=O\left(\frac{\gamma^{4d}}{ 4^{2d+1}((m+2d-1)!(m+2d+1)!)^{2}}\right), subject to d\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C30.S16.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C30.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C30.S16.Px1.p1.s1">
+For <Math mode="inline" xml:id="C30.S16.Px1.p1.m1">m=2</Math> , <Math mode="inline" xml:id="C30.S16.Px1.p1.m2">n=4</Math> , <Math mode="inline" xml:id="C30.S16.Px1.p1.m3">\gamma^{2}=10</Math> , <Math equation-number="30.16.5" mode="display" xml:id="C30.S16.E5">\alpha_{2,2}=14.18833\;246, \alpha_{2,3}=13.98002\;013, \alpha_{2,4}=13.97907\;459, \alpha_{2,5}=13.97907\;345, \alpha_{2,6}=13.97907\;345</Math> , which yields <Math mode="inline" xml:id="C30.S16.Px1.p1.m4">\lambda^{2}_{4}\left(10\right)=13.97907\;34</Math> 5. If <Math mode="inline" xml:id="C30.S16.Px1.p1.m5">n-m</Math> is odd, then (LABEL:eq:SW.MC.T1) is replaced by <Math equation-number="30.16.6" mode="display" xml:id="C30.S16.E6">A_{j,j}=(m+2j-1)(m+2j)-2\gamma^{2}\*\frac{(m+2j-1)(m+2j)-1+m^{2}}{(2m+4j-3)(2m +4j+1)}, A_{j,j+1}=-\gamma^{2}\frac{(2m+2j)(2m+2j+1)}{(2m+4j+1)(2m+4j+3)}, A_{j,j-1}=-\gamma^{2}\frac{(2j-2)(2j-1)}{(2m+4j-5)(2m+4j-3)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S16.SS2">
+<title>Spheroidal Wave Functions of the First Kind</title>          
+<para xml:id="C30.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C30.S16.SS2.p1.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p1.m1">|\gamma^{2}|</Math> is large, then we can use the asymptotic expansions referred to in §LABEL:sec:SW.AE to approximate <Math mode="inline" xml:id="C30.S16.SS2.p1.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="197" xml:id="C30.S16.SS2.p2.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p2.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> is known, then we can compute <Math mode="inline" xml:id="C30.S16.SS2.p2.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> (not normalized) by solving the differential equation (LABEL:eq:SW.DE.DE) numerically with initial conditions <Math mode="inline" xml:id="C30.S16.SS2.p2.m3">w(0)=1</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p2.m4">w^{\prime}(0)=0</Math> if <Math mode="inline" xml:id="C30.S16.SS2.p2.m5">n-m</Math> is even, or <Math mode="inline" xml:id="C30.S16.SS2.p2.m6">w(0)=0</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p2.m7">w^{\prime}(0)=1</Math> if <Math mode="inline" xml:id="C30.S16.SS2.p2.m8">n-m</Math> is odd.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="198" xml:id="C30.S16.SS2.p3.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p3.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> is known, then <Math mode="inline" xml:id="C30.S16.SS2.p3.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> can be found by summing (LABEL:eq:SW.LF.EX).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="199" xml:id="C30.S16.SS2.p3.s2">
+The coefficients <Math mode="inline" xml:id="C30.S16.SS2.p3.m3">a^{m}_{n,r}(\gamma^{2})</Math> are computed as the recessive solution of (LABEL:eq:SW.LF.REC2) (§LABEL:sec:NM.LDE), and normalized via (LABEL:eq:SW.LF.NO).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="200" xml:id="C30.S16.SS2.p4.s1">
+A fourth method, based on the expansion (LABEL:eq:SW.LF.EX), is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="201" xml:id="C30.S16.SS2.p4.s2">
+Let <Math mode="inline" xml:id="C30.S16.SS2.p4.m1">\mathbf{A}</Math> be the <Math mode="inline" xml:id="C30.S16.SS2.p4.m2">d\times d</Math> matrix given by (LABEL:eq:SW.MC.T1) if <Math mode="inline" xml:id="C30.S16.SS2.p4.m3">n-m</Math> is even, or by (LABEL:eq:SW.MC.T5) if <Math mode="inline" xml:id="C30.S16.SS2.p4.m4">n-m</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="202" xml:id="C30.S16.SS2.p4.s3">
+Form the eigenvector <Math mode="inline" xml:id="C30.S16.SS2.p4.m5">[e_{1,d},e_{2,d},\dots,e_{d,d}]^{\mathrm{T}}</Math> of <Math mode="inline" xml:id="C30.S16.SS2.p4.m6">\mathbf{A}</Math> associated with the eigenvalue <Math mode="inline" xml:id="C30.S16.SS2.p4.m7">\alpha_{p,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p4.m8">p=\left\lfloor\frac{1}{2}(n-m)\right\rfloor+1</Math> , normalized according to <Math equation-number="30.16.7" mode="display" xml:id="C30.S16.E7">\sum_{j=1}^{d}e_{j,d}^{2}\frac{(n+m+2j-2p)!}{(n-m+2j-2p)!}\frac{1}{2n+4j-4p+1} =\frac{(n+m)!}{(n-m)!}\frac{1}{2n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="203" xml:id="C30.S16.SS2.p4.s4">
+Then <Math equation-number="30.16.8" mode="display" xml:id="C30.S16.E8">a_{n,k}^{m}(\gamma^{2})=\lim_{d\to\infty}e_{k+p,d},</Math> <Math equation-number="30.16.9" mode="display" xml:id="C30.S16.E9">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=\lim_{d\to\infty}\sum_{j=1}^{d}(- 1)^{j-p}e_{j,d}\mathsf{P}^{m}_{n+2(j-p)}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="204" xml:id="C30.S16.SS2.p4.s5">
+For error estimates see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S16.SS3">
+<title>Radial Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C30.S16.SS3.p1.s1">
+The coefficients <Math mode="inline" xml:id="C30.S16.SS3.p1.m1">a_{n,k}^{m}(\gamma^{2})</Math> calculated in §LABEL:sec:SW.MC.CW can be used to compute <Math mode="inline" xml:id="C30.S16.SS3.p1.m2">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , <Math mode="inline" xml:id="C30.S16.SS3.p1.m3">j=1,2,3,4</Math> from (LABEL:eq:SW.SJ.DF) as well as the connection coefficients <Math mode="inline" xml:id="C30.S16.SS3.p1.m4">K_{n}^{m}(\gamma)</Math> from (LABEL:eq:SW.SJ.KE) and (LABEL:eq:SW.SJ.KO).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="206" xml:id="C30.S16.SS3.p2.s1">
+For other methods see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C30.S17">
+<title>Tables</title>        
+   
+ 
+ 
+<para xml:id="C30.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C30.S17.p1.s1">
+( ) tabulates quantities closely related to <Math mode="inline" xml:id="C30.S17.I1.i1.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S17.I1.i1.p1.m2">a^{m}_{n,k}(\gamma^{2})</Math> for <Math mode="inline" xml:id="C30.S17.I1.i1.p1.m3">0\leq m\leq 8</Math> , <Math mode="inline" xml:id="C30.S17.I1.i1.p1.m4">m\leq n\leq 8</Math> , <Math mode="inline" xml:id="C30.S17.I1.i1.p1.m5">-64\leq\gamma^{2}\leq 64</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="208" xml:id="C30.S17.p1.s2">
+Precision is 7S. ( ) includes 18 tables of eigenvalues, expansion coefficients, spheroidal wave functions, and other related quantities.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="209" xml:id="C30.S17.p1.s3">
+Precision varies between 4S and 10S. ( ) gives <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> and <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m2">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m3">j=1,2</Math> , and their first derivatives, for <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m4">0\leq m\leq 2</Math> , <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m5">m\leq n\leq m+49</Math> , <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m6">-1600\leq\gamma^{2}\leq 1600</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="210" xml:id="C30.S17.p1.s4">
+The range of <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m7">z</Math> is given by <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m8">1\leq z\leq 10</Math> if <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m9">\gamma^{2}&gt;0</Math> , or <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m10">z=-\mathrm{i}\xi</Math> , <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m11">0\leq\xi\leq 2</Math> if <Math mode="inline" xml:id="C30.S17.I1.i3.p1.m12">\gamma^{2}&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="211" xml:id="C30.S17.p1.s5">
+Precision is 18S. ( ) gives <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m1">S^{m(j)}\left(iy,-ic\right)</Math> , <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m2">S^{m(j)}\left(z,\gamma\right)</Math> and their first derivatives for <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m3">j=1,2</Math> , <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m4">0.5\leq c\leq 8</Math> , <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m5">y=0,0.5,1,1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="212" xml:id="C30.S17.p1.s6">
+5, <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m6">0.5\leq\gamma\leq 8</Math> , <Math mode="inline" xml:id="C30.S17.I1.i4.p1.m7">z=1.01,1.1,1.4,1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="213" xml:id="C30.S17.p1.s7">
+8. Precision is 15S. ( ) gives <Math mode="inline" xml:id="C30.S17.I1.i5.p1.m1">\lambda^{0}_{n}\left(\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S17.I1.i5.p1.m2">\mathsf{Ps}^{0}_{n}\left(x,\gamma^{2}\right)</Math> for <Math mode="inline" xml:id="C30.S17.I1.i5.p1.m3">0\leq n\leq 49</Math> , <Math mode="inline" xml:id="C30.S17.I1.i5.p1.m4">-1600\leq\gamma^{2}\leq 1600</Math> , <Math mode="inline" xml:id="C30.S17.I1.i5.p1.m5">-1\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="214" xml:id="C30.S17.p1.s8">
+Precision is 8S. ( ) includes 24 tables of eigenvalues, spheroidal wave functions and their derivatives.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="215" xml:id="C30.S17.p1.s9">
+Precision varies between 6S and 8S. ( , §22.28) provides additional information on tables prior to 1961.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C30.S18">
+<title>Software</title>        
+ 
+<para xml:id="C30.S18.p1">
+
+</para>
+ 
+<subsection xml:id="C30.S18.SS1">
+<title>Introduction</title>         
+<para xml:id="C30.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C30.S18.SS1.p1.s1">
+In §§LABEL:sec:SW.SO.ES and LABEL:sec:SW.SO.SW we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="217" xml:id="C30.S18.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="218" xml:id="C30.S18.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="219" xml:id="C30.S18.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="220" xml:id="C30.S18.SS1.p2.s2">
+Also, the following Maple programs were provided by the author.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="221" xml:id="C30.S18.SS1.p2.s3">
+SWF1: <Math mode="inline" xml:id="C30.S18.I1.i1.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="222" xml:id="C30.S18.SS1.p2.s4">
+SWF2: <Math mode="inline" xml:id="C30.S18.I1.i2.p1.m1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="223" xml:id="C30.S18.SS1.p2.s5">
+SWF3: <Math mode="inline" xml:id="C30.S18.I1.i3.p1.m1">\mathsf{Qs}^{m}_{n}\left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="224" xml:id="C30.S18.SS1.p2.s6">
+SWF4: <Math mode="inline" xml:id="C30.S18.I1.i4.p1.m1">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , <Math mode="inline" xml:id="C30.S18.I1.i4.p1.m2">j=1,2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="225" xml:id="C30.S18.SS1.p2.s7">
+SWF5: <Math mode="inline" xml:id="C30.S18.I1.i5.p1.m1">K_{n}^{m}(\gamma)</Math> in §LABEL:sec:SW.SJ.CC.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="226" xml:id="C30.S18.SS1.p2.s8">
+SWF6: <Math mode="inline" xml:id="C30.S18.I1.i6.p1.m1">\phi_{n}(t)</Math> and <Math mode="inline" xml:id="C30.S18.I1.i6.p1.m2">\Lambda_{n}</Math> in §LABEL:sec:SW.SI.SC.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="227" xml:id="C30.S18.SS1.p2.s9">
+SWF7: Coefficients <Math mode="inline" xml:id="C30.S18.I1.i7.p1.m1">\beta_{p}</Math> in (LABEL:eq:SW.AE.PR1).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="228" xml:id="C30.S18.SS1.p2.s10">
+SWF8: Coefficients <Math mode="inline" xml:id="C30.S18.I1.i8.p1.m1">c_{p}</Math> in (LABEL:eq:SW.AE.OB1).
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="229" xml:id="C30.S18.SS1.p2.s11">
+SWF9: Coefficients <Math mode="inline" xml:id="C30.S18.I1.i9.p1.m1">\ell_{p}</Math> in (LABEL:eq:SW.EV.EQ1).
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="230" xml:id="C30.S18.SS1.p2.s12">
+Precision in SWF1-6 is adjustable.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="231" xml:id="C30.S18.SS1.p2.s13">
+Programs SWF7-9 use symbolic algebra.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S18.SS2">
+<title>Eigenvalues <Math content-tex="\spheigvalLambda{m}{n}@{\gamma^{2}}" mode="inline" xml:id="C30.S18.SS2.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math></title>         
+<para xml:id="C30.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C30.S18.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="233" xml:id="C30.S18.SS2.p1.s2">
+Mathematica.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="234" xml:id="C30.S18.SS2.p1.s3">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="235" xml:id="C30.S18.SS2.p1.s4">
+Mathematica.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S18.SS3">
+<title>Spheroidal Wave Functions</title>         
+<para xml:id="C30.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C30.S18.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C30.S18.SS3.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="238" xml:id="C30.S18.SS3.p1.s3">
+Mathematica.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="239" xml:id="C30.S18.SS3.p1.s4">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="240" xml:id="C30.S18.SS3.p1.s5">
+Mathematica.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="241" xml:id="C30.S18.SS3.p1.s6">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

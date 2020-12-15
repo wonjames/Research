@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S17">
+<title>Asymptotic Expansions for Large Argument</title>        
+ 
+ 
+<subsection xml:id="C10.S17.SS1">
+<title>Hankel’s Expansions</title>        
+  
+<para xml:id="C10.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S17.SS1.p1.s1">
+Define <Math mode="inline" xml:id="C10.S17.SS1.p1.m1">a_{0}(\nu)=1</Math> , <Math equation-number="10.17.1" mode="display" xml:id="C10.S17.E1">a_{k}(\nu)=\frac{(4\nu^{2}-1^{2})(4\nu^{2}-3^{2})\cdots(4\nu^{2}-(2k-1)^{2})}{ k!8^{k}}, if k\geq 1,</Math> <Math equation-number="10.17.2" mode="display" xml:id="C10.S17.E2">\omega=z-\tfrac{1}{2}\nu\pi-\tfrac{1}{4}\pi,</Math> and let <Math mode="inline" xml:id="C10.S17.SS1.p1.m2">\delta</Math> denote an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S17.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C10.S17.SS1.p1.m3">z\to\infty</Math> , with <Math mode="inline" xml:id="C10.S17.SS1.p1.m4">\nu</Math> fixed, <Math equation-number="10.17.3" mode="display" xml:id="C10.S17.E3">J_{\nu}\left(z\right)\sim\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}\*\left( \cos\omega\sum_{k=0}^{\infty}(-1)^{k}\frac{a_{2k}(\nu)}{z^{2k}}-\sin\omega\sum _{k=0}^{\infty}(-1)^{k}\frac{a_{2k+1}(\nu)}{z^{2k+1}}\right), if |\operatorname{ph}z|\leq\pi-\delta,</Math> <Math equation-number="10.17.4" mode="display" xml:id="C10.S17.E4">Y_{\nu}\left(z\right)\sim\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}\*\left( \sin\omega\sum_{k=0}^{\infty}(-1)^{k}\frac{a_{2k}(\nu)}{z^{2k}}+\cos\omega\sum _{k=0}^{\infty}(-1)^{k}\frac{a_{2k+1}(\nu)}{z^{2k+1}}\right), if |\operatorname{ph}z|\leq\pi-\delta,</Math> <Math equation-number="10.17.5" mode="display" xml:id="C10.S17.E5">{H^{(1)}_{\nu}}\left(z\right)\sim\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}e^{ i\omega}\sum_{k=0}^{\infty}i^{k}\frac{a_{k}(\nu)}{z^{k}}, if -\pi+\delta\leq\operatorname{ph}z\leq 2\pi-\delta,</Math> <Math equation-number="10.17.6" mode="display" xml:id="C10.S17.E6">{H^{(2)}_{\nu}}\left(z\right)\sim\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}e^{ -i\omega}\sum_{k=0}^{\infty}(-i)^{k}\frac{a_{k}(\nu)}{z^{k}}, if -2\pi+\delta\leq\operatorname{ph}z\leq\pi-\delta,</Math> where the branch of <Math mode="inline" xml:id="C10.S17.SS1.p1.m5">z^{\frac{1}{2}}</Math> is determined by <Math equation-number="10.17.7" mode="display" xml:id="C10.S17.E7">z^{\frac{1}{2}}=\exp\left(\tfrac{1}{2}\ln|z|+\tfrac{1}{2}i\operatorname{ph}z \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S17.SS1.p2.s1">
+Corresponding expansions for other ranges of <Math mode="inline" xml:id="C10.S17.SS1.p2.m1">\operatorname{ph}z</Math> can be obtained by combining (10.17.3), (10.17.5), (10.17.6) with the continuation formulas (10.11.1), (10.11.3), (10.11.4) (or (10.11.7), (10.11.8)), and also the connection formula given by the second of (10.4.4).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S17.SS2">
+<title>Asymptotic Expansions of Derivatives</title>        
+  
+<para xml:id="C10.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S17.SS2.p1.s1">
+We continue to use the notation of §10.17(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S17.SS2.p1.s2">
+Also, <Math mode="inline" xml:id="C10.S17.SS2.p1.m1">b_{0}(\nu)=1</Math> , <Math mode="inline" xml:id="C10.S17.SS2.p1.m2">b_{1}(\nu)=(4\nu^{2}+3)/8</Math> , and for <Math mode="inline" xml:id="C10.S17.SS2.p1.m3">k\geq 2</Math> ,
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S17.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S17.SS2.p2.s1">
+ <Math equation-number="10.17.8" mode="display" xml:id="C10.S17.E8">b_{k}(\nu)=\frac{\left((4\nu^{2}-1^{2})(4\nu^{2}-3^{2})\cdots(4\nu^{2}-(2k-3)^ {2})\right)(4\nu^{2}+4k^{2}-1)}{k!8^{k}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S17.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S17.SS2.p3.s1">
+Then as <Math mode="inline" xml:id="C10.S17.SS2.p3.m1">z\to\infty</Math> with <Math mode="inline" xml:id="C10.S17.SS2.p3.m2">\nu</Math> fixed, <Math equation-number="10.17.9" mode="display" xml:id="C10.S17.E9">J_{\nu}'\left(z\right)\sim-\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}\left( \sin\omega\sum_{k=0}^{\infty}(-1)^{k}\frac{b_{2k}(\nu)}{z^{2k}}+\cos\omega\sum _{k=0}^{\infty}(-1)^{k}\frac{b_{2k+1}(\nu)}{z^{2k+1}}\right), if |\operatorname{ph}z|\leq\pi-\delta,</Math> , <Math equation-number="10.17.10" mode="display" xml:id="C10.S17.E10">Y_{\nu}'\left(z\right)\sim\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}\left(\cos \omega\sum_{k=0}^{\infty}(-1)^{k}\frac{b_{2k}(\nu)}{z^{2k}}-\sin\omega\sum_{k= 0}^{\infty}(-1)^{k}\frac{b_{2k+1}(\nu)}{z^{2k+1}}\right), if |\operatorname{ph}z|\leq\pi-\delta,</Math> <Math equation-number="10.17.11" mode="display" xml:id="C10.S17.E11">{H^{(1)}_{\nu}}'\left(z\right)\sim i\left(\frac{2}{\pi z}\right)^{\frac{1}{2}} e^{i\omega}\sum_{k=0}^{\infty}i^{k}\frac{b_{k}(\nu)}{z^{k}}, if -\pi+\delta\leq\operatorname{ph}z\leq 2\pi-\delta,</Math> , <Math equation-number="10.17.12" mode="display" xml:id="C10.S17.E12">{H^{(2)}_{\nu}}'\left(z\right)\sim-i\left(\frac{2}{\pi z}\right)^{\frac{1}{2}} e^{-i\omega}\sum_{k=0}^{\infty}(-i)^{k}\frac{b_{k}(\nu)}{z^{k}}, if -2\pi+\delta\leq\operatorname{ph}z\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S17.SS3">
+<title>Error Bounds for Real Argument and Order</title>        
+  
+ 
+<para xml:id="C10.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S17.SS3.p1.s1">
+In the expansions (10.17.3) and (10.17.4) assume that <Math mode="inline" xml:id="C10.S17.SS3.p1.m1">\nu\geq 0</Math> and <Math mode="inline" xml:id="C10.S17.SS3.p1.m2">z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C10.S17.SS3.p1.s2">
+Then the remainder associated with the sum <Math mode="inline" xml:id="C10.S17.SS3.p1.m3">\sum_{k=0}^{\ell-1}(-1)^{k}a_{2k}(\nu)z^{-2k}</Math> does not exceed the first neglected term in absolute value and has the same sign provided that <Math mode="inline" xml:id="C10.S17.SS3.p1.m4">\ell\geq\max(\tfrac{1}{2}\nu-\tfrac{1}{4},1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C10.S17.SS3.p1.s3">
+Similarly for <Math mode="inline" xml:id="C10.S17.SS3.p1.m5">\sum_{k=0}^{\ell-1}(-1)^{k}a_{2k+1}(\nu)z^{-2k-1}</Math> , provided that <Math mode="inline" xml:id="C10.S17.SS3.p1.m6">\ell\geq\max(\tfrac{1}{2}\nu-\tfrac{3}{4},1)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S17.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S17.SS3.p2.s1">
+In the expansions (10.17.5) and (10.17.6) assume that <Math mode="inline" xml:id="C10.S17.SS3.p2.m1">\nu&gt;-\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C10.S17.SS3.p2.m2">z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C10.S17.SS3.p2.s2">
+If these expansions are terminated when <Math mode="inline" xml:id="C10.S17.SS3.p2.m3">k=\ell-1</Math> , then the remainder term is bounded in absolute value by the first neglected term, provided that <Math mode="inline" xml:id="C10.S17.SS3.p2.m4">\ell\geq\max(\nu-\tfrac{1}{2},1)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S17.SS4">
+<title>Error Bounds for Complex Argument and Order</title>        
+ 
+<para xml:id="C10.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S17.SS4.p1.s1">
+For (10.17.5) and (10.17.6) write <Math equation-number="10.17.13" mode="display" xml:id="C10.S17.E13">\rselection{{H^{(1)}_{\nu}}\left(z\right)\\ {H^{(2)}_{\nu}}\left(z\right)}=\left(\frac{2}{\pi z}\right)^{\frac{1}{2}}e^{ \pm i\omega}\left(\sum_{k=0}^{\ell-1}(\pm i)^{k}\frac{a_{k}(\nu)}{z^{k}}+R_{ \ell}^{\pm}(\nu,z)\right), if \ell=1,2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S17.SS4.p1.s2">
+Then <Math equation-number="10.17.14" mode="display" xml:id="C10.S17.E14">\left|R_{\ell}^{\pm}(\nu,z)\right|\leq 2|a_{\ell}(\nu)|\mathcal{V}_{z,\pm i \infty}\left(t^{-\ell}\right)\*\exp\left(|\nu^{2}-\tfrac{1}{4}|\mathcal{V}_{z, \pm i\infty}\left(t^{-1}\right)\right),</Math> where <Math mode="inline" xml:id="C10.S17.SS4.p1.m1">\mathcal{V}</Math> denotes the variational operator (2.3.6), and the paths of variation are subject to the condition that <Math mode="inline" xml:id="C10.S17.SS4.p1.m2">|\Im t|</Math> changes monotonically.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C10.S17.SS4.p1.s3">
+Bounds for <Math mode="inline" xml:id="C10.S17.SS4.p1.m3">\mathcal{V}_{z,i\infty}\left(t^{-\ell}\right)</Math> are given by
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S17.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S17.SS4.p2.s1">
+ <Math equation-number="10.17.15" mode="display" xml:id="C10.S17.E15">\mathcal{V}_{z,i\infty}\left(t^{-\ell}\right)\leq\begin{cases}|z|^{-\ell},&amp;0 \leq\operatorname{ph}z\leq\pi,\\ \chi(\ell)|z|^{-\ell},&amp;\parbox[t]{224.037pt}{$-\tfrac{1}{2}\pi\leq \operatorname{ph}z\leq 0$ or $\pi\leq\operatorname{ph}z\leq\tfrac{3}{2}\pi$,}\\ 2\chi(\ell)|\Im z|^{-\ell},&amp;\parbox[t]{224.037pt}{$-\pi&lt;\operatorname{ph}z\leq -\tfrac{1}{2}\pi$ or $\tfrac{3}{2}\pi\leq\operatorname{ph}z&lt;2\pi$,}\end{cases}</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S17.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C10.S17.SS4.p3.s1">
+where <Math mode="inline" xml:id="C10.S17.SS4.p3.m1">\chi(\ell)=\pi^{\frac{1}{2}}\Gamma\left(\tfrac{1}{2}\ell+1\right)/\Gamma\left( \tfrac{1}{2}\ell+\tfrac{1}{2}\right)</Math> ; see §9.7(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C10.S17.SS4.p3.s2">
+The bounds ( 10.17.15) also apply to <Math mode="inline" xml:id="C10.S17.SS4.p3.m2">\mathcal{V}_{z,-i\infty}\left(t^{-\ell}\right)</Math> in the conjugate sectors.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C10.S17.SS4.p3.s3">
+Corresponding error bounds for (10.17.3) and(10.17.4) are obtainable by combining (10.17.13) and (10.17.14) with (10.4.4).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S17.SS5">
+<title>Exponentially-Improved Expansions</title>        
+   
+<para xml:id="C10.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S17.SS5.p1.s1">
+As in §9.7(v) denote <Math equation-number="10.17.16" mode="display" xml:id="C10.S17.E16">G_{p}\left(z\right)=\frac{e^{z}}{2\pi}\Gamma\left(p\right)\Gamma\left(1-p,z \right),</Math> where <Math mode="inline" xml:id="C10.S17.SS5.p1.m1">\Gamma\left(1-p,z\right)</Math> is the incomplete gamma function (§8.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C10.S17.SS5.p1.s2">
+Then in (10.17.13) as <Math mode="inline" xml:id="C10.S17.SS5.p1.m2">z\to\infty</Math> with <Math mode="inline" xml:id="C10.S17.SS5.p1.m3">|\ell-2|z||</Math> bounded and <Math mode="inline" xml:id="C10.S17.SS5.p1.m4">m</Math> ( <Math mode="inline" xml:id="C10.S17.SS5.p1.m5">\geq 0</Math> ) fixed, <Math equation-number="10.17.17" mode="display" xml:id="C10.S17.E17">R_{\ell}^{\pm}(\nu,z)=(-1)^{\ell}2\cos\left(\nu\pi\right)\*\left(\sum_{k=0}^{m -1}(\pm i)^{k}\frac{a_{k}(\nu)}{z^{k}}G_{\ell-k}\left(\mp 2iz\right)+R_{m,\ell }^{\pm}(\nu,z)\right),</Math> where <Math equation-number="10.17.18" mode="display" xml:id="C10.S17.E18">R_{m,\ell}^{\pm}(\nu,z)=O\left(e^{-2|z|}z^{-m}\right), if |\operatorname{ph}\left(ze^{\mp\frac{1}{2}\pi i}\right)|\leq\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S17.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C10.S17.SS5.p2.s1">
+For higher re-expansions of the remainder terms seeOlde Daalhuis and Olver (1995a) andOlde Daalhuis (1995, 1996).
+</sentence>
+
+</para>
+    
+ 
+</subsection>
+ 
+</section>

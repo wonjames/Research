@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S5">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C12.S5.SS1">
+<title>Integrals Along the Real Line</title>        
+ 
+ 
+<para xml:id="C12.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S5.SS1.p1.s1">
+ <Math equation-number="12.5.1" mode="display" xml:id="C12.S5.E1">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{1}{2}+a\right )}\int_{0}^{\infty}t^{a-\frac{1}{2}}e^{-\frac{1}{2}t^{2}-zt}\mathrm{d}t, if \Re a&gt;-\tfrac{1}{2} ,</Math> <Math equation-number="12.5.2" mode="display" xml:id="C12.S5.E2">U\left(a,z\right)=\frac{ze^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{1}{4}+\frac{ 1}{2}a\right)}\*\int_{0}^{\infty}t^{\frac{1}{2}a-\frac{3}{4}}e^{-t}\left(z^{2} +2t\right)^{-\frac{1}{2}a-\frac{3}{4}}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re a&gt;-\tfrac{1}{2} ,</Math> <Math equation-number="12.5.3" mode="display" xml:id="C12.S5.E3">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{3}{4}+\frac{1 }{2}a\right)}\*\int_{0}^{\infty}t^{\frac{1}{2}a-\frac{1}{4}}e^{-t}\left(z^{2}+ 2t\right)^{-\frac{1}{2}a-\frac{1}{4}}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re a&gt;-\tfrac{3}{2} ,</Math> <Math equation-number="12.5.4" mode="display" xml:id="C12.S5.E4">U\left(a,z\right)=\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}\*\int_{0}^{\infty}t ^{-a-\frac{1}{2}}e^{-\frac{1}{2}t^{2}}\cos\left(zt+\left(\tfrac{1}{2}a+\tfrac{ 1}{4}\right)\pi\right)\mathrm{d}t, if \Re a&lt;\tfrac{1}{2} </Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS2">
+<title>Contour Integrals</title>        
+  
+<para xml:id="C12.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C12.S5.SS2.p1.s1">
+The following integrals correspond to those of §12.5(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C12.S5.SS2.p1.s2">
+<Math equation-number="12.5.5" mode="display" xml:id="C12.S5.E5">U\left(a,z\right)=\frac{\Gamma\left(\frac{1}{2}-a\right)}{2\pi i}e^{-\frac{1}{ 4}z^{2}}\int_{-\infty}^{(0+)}e^{zt-\frac{1}{2}t^{2}}t^{a-\frac{1}{2}}\mathrm{d }t, if a\neq\frac{1}{2},\frac{3}{2},\frac{5}{2},\dots, -\pi&lt;\operatorname{ph}t&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C12.S5.SS2.p1.s3">
+Restrictions on <Math mode="inline" xml:id="C12.S5.SS2.p1.m1">a</Math> are not needed in the following two representations: <Math equation-number="12.5.6" mode="display" xml:id="C12.S5.E6">U\left(a,z\right)=\frac{e^{\frac{1}{4}z^{2}}}{i\sqrt{2\pi}}\int_{c-i\infty}^{c +i\infty}e^{-zt+\frac{1}{2}t^{2}}t^{-a-\frac{1}{2}}\mathrm{d}t, if -\tfrac{1}{2}\pi&lt;\operatorname{ph}t&lt;\tfrac{1}{2}\pi, c&gt;0 ,</Math> <Math equation-number="12.5.7" mode="display" xml:id="C12.S5.E7">V\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{2\pi}\*\left(\int_{-ic-\infty}^ {-ic+\infty}+\int_{ic-\infty}^{ic+\infty}\right)e^{zt-\frac{1}{2}t^{2}}t^{a- \frac{1}{2}}\mathrm{d}t, if -\pi&lt;\operatorname{ph}{t}&lt;\pi, c&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C12.S5.SS2.p2.s1">
+For proofs and further results see Miller (1955, §4) andWhittaker (1902).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS3">
+<title>Mellin–Barnes Integrals</title>        
+  
+<para xml:id="C12.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C12.S5.SS3.p1.s1">
+ <Math equation-number="12.5.8" mode="display" xml:id="C12.S5.E8">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}}{2\pi i\Gamma \left(\frac{1}{2}+a\right)}\*\int_{-i\infty}^{i\infty}\Gamma\left(t\right) \Gamma\left(\tfrac{1}{2}+a-2t\right)2^{t}z^{2t}\mathrm{d}t, if a\neq-\frac{1}{2},-\frac{3}{2},-\frac{5}{2},\dots, |\operatorname{ph}z|&lt;\tfrac{3}{4}\pi,</Math> , <Math equation-number="12.5.9" mode="display" xml:id="C12.S5.E9">V\left(a,z\right)=\sqrt{\frac{2}{\pi}}\frac{e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{ 2}}}{2\pi i\Gamma\left(\frac{1}{2}-a\right)}\*\int_{-i\infty}^{i\infty}\Gamma \left(t\right)\Gamma\left(\tfrac{1}{2}-a-2t\right)2^{t}z^{2t}\cos\left(\pi t \right)\mathrm{d}t, if a\neq\frac{1}{2},\frac{3}{2},\frac{5}{2},\dots, |\operatorname{ph}z|&lt;\tfrac{1}{4}\pi,</Math> where the contour separates the poles of <Math mode="inline" xml:id="C12.S5.SS3.p1.m1">\Gamma\left(t\right)</Math> from those of <Math mode="inline" xml:id="C12.S5.SS3.p1.m2">\Gamma\left(\tfrac{1}{2}-a-2t\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS4">
+<title>Compendia</title>        
+  
+<para xml:id="C12.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C12.S5.SS4.p1.s1">
+For further collections of integral representations seeApelblat (1983, pp. 427-436),Erdélyi et al. (1953b, v. 2, pp. 119–120),Erdélyi et al. (1954a, pp. 289–291 and 362),Gradshteyn and Ryzhik (2000, §§9.24–9.25),Magnuset al. (1966, pp. 328–330),Oberhettinger (1974, pp. 251–252), and Oberhettinger and Badii (1973, pp. 378–384).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S49">
+<title>Explicit Formulas</title>        
+ 
+<subsection xml:id="C10.S49.SS1">
+<title>Unmodified Functions</title>         
+ 
+<para xml:id="C10.S49.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S49.SS1.p1.s1">
+Define <Math mode="inline" xml:id="C10.S49.SS1.p1.m1">a_{k}(\nu)</Math> as in (10.17.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S49.SS1.p1.s2">
+Then <Math equation-number="10.49.1" mode="display" xml:id="C10.S49.E1">a_{k}(n+\tfrac{1}{2})=\begin{cases}\dfrac{(n+k)!}{2^{k}k!(n-k)!},&amp;k=0,1,\ldots ,n,\\ 0,&amp;k=n+1,n+2,\ldots.\end{cases</Math> } <Math equation-number="10.49.2" mode="display" xml:id="C10.S49.E2">\mathsf{j}_{n}\left(z\right)=\sin\left(z-\tfrac{1}{2}n\pi\right)\sum_{k=0}^{ \left\lfloor n/2\right\rfloor}(-1)^{k}\frac{a_{2k}(n+\tfrac{1}{2})}{z^{2k+1}}+ \cos\left(z-\tfrac{1}{2}n\pi\right)\sum_{k=0}^{\left\lfloor(n-1)/2\right \rfloor}(-1)^{k}\frac{a_{2k+1}(n+\tfrac{1}{2})}{z^{2k+2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S49.SS1.p1.s3">
+<Math equation-number="10.49.3" mode="display" xml:id="C10.S49.E3">\mathsf{j}_{0}\left(z\right)=\frac{\sin z}{z},\mathsf{j}_{1}\left(z\right)=\frac{\sin z}{z^{2}}-\frac{\cos z}{z},\mathsf{j}_{2}\left(z\right)=\left(-\frac{1}{z}+\frac{3}{z^{3}}\right)\sin z- \frac{3}{z^{2}}\cos z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S49.SS1.p1.s4">
+<Math equation-number="10.49.4" mode="display" xml:id="C10.S49.E4">\mathsf{y}_{n}\left(z\right)=-\cos\left(z-\tfrac{1}{2}n\pi\right)\sum_{k=0}^{ \left\lfloor n/2\right\rfloor}(-1)^{k}\frac{a_{2k}(n+\tfrac{1}{2})}{z^{2k+1}}+ \sin\left(z-\tfrac{1}{2}n\pi\right)\sum_{k=0}^{\left\lfloor(n-1)/2\right \rfloor}(-1)^{k}\frac{a_{2k+1}(n+\tfrac{1}{2})}{z^{2k+2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C10.S49.SS1.p1.s5">
+<Math equation-number="10.49.5" mode="display" xml:id="C10.S49.E5">\mathsf{y}_{0}\left(z\right)=-\frac{\cos z}{z},\mathsf{y}_{1}\left(z\right)=-\frac{\cos z}{z^{2}}-\frac{\sin z}{z},\mathsf{y}_{2}\left(z\right)=\left(\frac{1}{z}-\frac{3}{z^{3}}\right)\cos z- \frac{3}{z^{2}}\sin z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C10.S49.SS1.p1.s6">
+<Math equation-number="10.49.6" mode="display" xml:id="C10.S49.E6">{\mathsf{h}^{(1)}_{n}}\left(z\right)=e^{iz}\sum_{k=0}^{n}i^{k-n-1}\frac{a_{k}( n+\frac{1}{2})}{z^{k+1}},</Math> , <Math equation-number="10.49.7" mode="display" xml:id="C10.S49.E7">{\mathsf{h}^{(2)}_{n}}\left(z\right)=e^{-iz}\sum_{k=0}^{n}(-i)^{k-n-1}\frac{a_ {k}(n+\frac{1}{2})}{z^{k+1}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S49.SS2">
+<title>Modified Functions</title>          
+<para xml:id="C10.S49.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S49.SS2.p1.s1">
+Again, with <Math mode="inline" xml:id="C10.S49.SS2.p1.m1">a_{k}(n+\tfrac{1}{2})</Math> as in (10.49.1),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S49.SS2.p1.s2">
+<Math equation-number="10.49.8" mode="display" xml:id="C10.S49.E8">{\mathsf{i}^{(1)}_{n}}\left(z\right)=\tfrac{1}{2}e^{z}\sum_{k=0}^{n}(-1)^{k} \frac{a_{k}(n+\frac{1}{2})}{z^{k+1}}+(-1)^{n+1}\*\tfrac{1}{2}e^{-z}\sum_{k=0}^ {n}\frac{a_{k}(n+\frac{1}{2})}{z^{k+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C10.S49.SS2.p1.s3">
+<Math equation-number="10.49.9" mode="display" xml:id="C10.S49.E9">{\mathsf{i}^{(1)}_{0}}\left(z\right)=\frac{\sinh z}{z},{\mathsf{i}^{(1)}_{1}}\left(z\right)=-\frac{\sinh z}{z^{2}}+\frac{\cosh z}{z},{\mathsf{i}^{(1)}_{2}}\left(z\right)=\left(\frac{1}{z}+\frac{3}{z^{3}}\right) \sinh z-\frac{3}{z^{2}}\cosh z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C10.S49.SS2.p1.s4">
+<Math equation-number="10.49.10" mode="display" xml:id="C10.S49.E10">{\mathsf{i}^{(2)}_{n}}\left(z\right)=\tfrac{1}{2}e^{z}\sum_{k=0}^{n}(-1)^{k} \frac{a_{k}(n+\frac{1}{2})}{z^{k+1}}+(-1)^{n}\tfrac{1}{2}e^{-z}\sum_{k=0}^{n} \frac{a_{k}(n+\frac{1}{2})}{z^{k+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C10.S49.SS2.p1.s5">
+<Math equation-number="10.49.11" mode="display" xml:id="C10.S49.E11">{\mathsf{i}^{(2)}_{0}}\left(z\right)=\frac{\cosh z}{z},{\mathsf{i}^{(2)}_{1}}\left(z\right)=-\frac{\cosh z}{z^{2}}+\frac{\sinh z}{z},{\mathsf{i}^{(2)}_{2}}\left(z\right)=\left(\frac{1}{z}+\frac{3}{z^{3}}\right) \cosh z-\frac{3}{z^{2}}\sinh z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C10.S49.SS2.p1.s6">
+<Math equation-number="10.49.12" mode="display" xml:id="C10.S49.E12">\mathsf{k}_{n}\left(z\right)=\tfrac{1}{2}\pi e^{-z}\sum_{k=0}^{n}\frac{a_{k}(n +\frac{1}{2})}{z^{k+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="13" xml:id="C10.S49.SS2.p1.s7">
+<Math equation-number="10.49.13" mode="display" xml:id="C10.S49.E13">\mathsf{k}_{0}\left(z\right)=\tfrac{1}{2}\pi\frac{e^{-z}}{z},\mathsf{k}_{1}\left(z\right)=\tfrac{1}{2}\pi e^{-z}\left(\frac{1}{z}+\frac{1}{ z^{2}}\right),\mathsf{k}_{2}\left(z\right)=\tfrac{1}{2}\pi e^{-z}\left(\frac{1}{z}+\frac{3}{ z^{2}}+\frac{3}{z^{3}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S49.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S49.SS2.p2.s1">
+ <Math mode="inline" xml:id="C10.S49.SS2.p2.m1">\sum_{k=0}^{n}a_{k}(n+\tfrac{1}{2})z^{n-k}</Math> is sometimes called theBessel polynomial of degree <Math mode="inline" xml:id="C10.S49.SS2.p2.m2">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C10.S49.SS2.p2.s2">
+For a survey of properties of these polynomials and their generalizations see Grosswald (1978).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C10.S49.SS2.p2.s3">
+See also §18.34, de Bruin et al. (1981a, b), andDunster (2001c).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S49.SS3">
+<title>Rayleigh’s Formulas</title>        
+ 
+ 
+<para xml:id="C10.S49.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C10.S49.SS3.p1.s1">
+ <Math equation-number="10.49.14" mode="display" xml:id="C10.S49.E14">\mathsf{j}_{n}\left(z\right)=z^{n}\left(-\frac{1}{z}\frac{\mathrm{d}}{\mathrm{ d}z}\right)^{n}\frac{\sin z}{z},\mathsf{y}_{n}\left(z\right)=-z^{n}\left(-\frac{1}{z}\frac{\mathrm{d}}{\mathrm {d}z}\right)^{n}\frac{\cos z}{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C10.S49.SS3.p1.s2">
+<Math equation-number="10.49.15" mode="display" xml:id="C10.S49.E15">{\mathsf{i}^{(1)}_{n}}\left(z\right)=z^{n}\left(\frac{1}{z}\frac{\mathrm{d}}{ \mathrm{d}z}\right)^{n}\frac{\sinh z}{z},{\mathsf{i}^{(2)}_{n}}\left(z\right)=z^{n}\left(\frac{1}{z}\frac{\mathrm{d}}{ \mathrm{d}z}\right)^{n}\frac{\cosh z}{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C10.S49.SS3.p1.s3">
+<Math equation-number="10.49.16" mode="display" xml:id="C10.S49.E16">\mathsf{k}_{n}\left(z\right)=(-1)^{n}\tfrac{1}{2}\pi z^{n}\left(\frac{1}{z} \frac{\mathrm{d}}{\mathrm{d}z}\right)^{n}\frac{e^{-z}}{z}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S49.SS4">
+<title>Sums or Differences of Squares</title>         
+ 
+<para xml:id="C10.S49.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S49.SS4.p1.s1">
+Denote <Math equation-number="10.49.17" mode="display" xml:id="C10.S49.E17">s_{k}(n+\tfrac{1}{2})=\frac{(2k)!(n+k)!}{2^{2k}(k!)^{2}(n-k)!}, if k=0,1,\ldots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C10.S49.SS4.p1.s2">
+Then <Math equation-number="10.49.18" mode="display" xml:id="C10.S49.E18">{\mathsf{j}_{n}^{2}}\left(z\right)+{\mathsf{y}_{n}^{2}}\left(z\right)=\sum_{k= 0}^{n}\frac{s_{k}(n+\frac{1}{2})}{z^{2k+2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C10.S49.SS4.p1.s3">
+<Math equation-number="10.49.19" mode="display" xml:id="C10.S49.E19">{\mathsf{j}_{0}^{2}}\left(z\right)+{\mathsf{y}_{0}^{2}}\left(z\right)=z^{-2},{\mathsf{j}_{1}^{2}}\left(z\right)+{\mathsf{y}_{1}^{2}}\left(z\right)=z^{-2}+z ^{-4},{\mathsf{j}_{2}^{2}}\left(z\right)+{\mathsf{y}_{2}^{2}}\left(z\right)=z^{-2}+3 z^{-4}+9z^{-6}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C10.S49.SS4.p1.s4">
+<Math equation-number="10.49.20" mode="display" xml:id="C10.S49.E20">\left({\mathsf{i}^{(1)}_{n}}\left(z\right)\right)^{2}-\left({\mathsf{i}^{(2)}_ {n}}\left(z\right)\right)^{2}=(-1)^{n+1}\sum_{k=0}^{n}(-1)^{k}\frac{s_{k}(n+ \frac{1}{2})}{z^{2k+2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="24" xml:id="C10.S49.SS4.p1.s5">
+<Math equation-number="10.49.21" mode="display" xml:id="C10.S49.E21">\Big{(}{\mathsf{i}^{(1)}_{0}}\left(z\right)\Big{)}^{2}-\Big{(}{\mathsf{i}^{(2) }_{0}}\left(z\right)\Big{)}^{2}=-z^{-2},\Big{(}{\mathsf{i}^{(1)}_{1}}\left(z\right)\Big{)}^{2}-\Big{(}{\mathsf{i}^{(2) }_{1}}\left(z\right)\Big{)}^{2}=z^{-2}-z^{-4},\Big{(}{\mathsf{i}^{(1)}_{2}}\left(z\right)\Big{)}^{2}-\Big{(}{\mathsf{i}^{(2) }_{2}}\left(z\right)\Big{)}^{2}=-z^{-2}+3z^{-4}-9z^{-6}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

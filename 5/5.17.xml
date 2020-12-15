@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S17">
+<title>Barnes’ <Math mode="inline" xml:id="C5.S17.m1">G</Math>-Function (Double Gamma Function)</title>           
+<para xml:id="C5.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S17.p1.s1">
+ <Math equation-number="5.17.1" mode="display" xml:id="C5.S17.E1">G\left(z+1\right)=\Gamma\left(z\right)G\left(z\right),G\left(1\right)=1,</Math> <Math equation-number="5.17.2" mode="display" xml:id="C5.S17.E2">G\left(n\right)=(n-2)!(n-3)!\cdots 1!, if n=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S17.p1.s2">
+<Math equation-number="5.17.3" mode="display" xml:id="C5.S17.E3">G\left(z+1\right)=(2\pi)^{z/2}\exp\left(-\tfrac{1}{2}z(z+1)-\tfrac{1}{2}\gamma z ^{2}\right)\*\prod_{k=1}^{\infty}\left(\left(1+\frac{z}{k}\right)^{k}\exp\left (-z+\frac{z^{2}}{2k}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C5.S17.p1.s3">
+<Math equation-number="5.17.4" mode="display" xml:id="C5.S17.E4">\operatorname{Ln}G\left(z+1\right)=\tfrac{1}{2}z\ln\left(2\pi\right)-\tfrac{1} {2}z(z+1)+z\operatorname{Ln}\Gamma\left(z+1\right)-\int_{0}^{z}\operatorname{ Ln}\Gamma\left(t+1\right)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C5.S17.p1.s4">
+In this equation (and in (5.17.5) below), the <Math mode="inline" xml:id="C5.S17.p1.m3">\operatorname{Ln}</Math> ’s have their principal values on the positive real axis and are continued via continuity, as in §4.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C5.S17.p2.s1">
+When <Math mode="inline" xml:id="C5.S17.p2.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C5.S17.p2.m2">|\operatorname{ph}z|\leq\pi-\delta\;(&lt;\pi)</Math> , <Math equation-number="5.17.5" mode="display" xml:id="C5.S17.E5">\operatorname{Ln}G\left(z+1\right)\sim\tfrac{1}{4}z^{2}+z\operatorname{Ln} \Gamma\left(z+1\right)-\left(\tfrac{1}{2}z(z+1)+\tfrac{1}{12}\right) \operatorname{Ln}z-\ln A+\sum_{k=1}^{\infty}\frac{B_{2k+2}}{2k(2k+1)(2k+2)z^{2 k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C5.S17.p2.s2">
+For error bounds and an exponentially-improved extension, see Nemes (2014).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C5.S17.p2.s3">
+Here <Math mode="inline" xml:id="C5.S17.p2.m4">B_{2k+2}</Math> is the Bernoulli number (§24.2(i)), and <Math mode="inline" xml:id="C5.S17.p2.m5">A</Math> is Glaisher’s constant, given by <Math equation-number="5.17.6" mode="display" xml:id="C5.S17.E6">A=e^{C}=1.28242\;71291\;00622\;63687\;\ldots</Math> , where <Math equation-number="5.17.7" mode="display" xml:id="C5.S17.E7">C=\lim_{n\to\infty}\left(\sum_{k=1}^{n}k\ln k-\left(\tfrac{1}{2}n^{2}+\tfrac{1 }{2}n+\tfrac{1}{12}\right)\ln n+\tfrac{1}{4}n^{2}\right)=\frac{\gamma+\ln\left (2\pi\right)}{12}-\frac{\zeta'\left(2\right)}{2\pi^{2}}=\frac{1}{12}-\zeta' \left(-1\right),</Math> and <Math mode="inline" xml:id="C5.S17.p2.m6">\zeta'</Math> is the derivative of the zeta function (Chapter25).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C5.S17.p3.s1">
+For Glaisher’s constant see also Greene and Knuth (1982, p. 100) and §2.10(i).
+</sentence>
+
+</para>
+ 
+</section>

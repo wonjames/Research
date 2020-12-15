@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S20">
+<title>Mathematical Applications</title>        
+ 
+<subsection xml:id="C7.S20.SS1">
+<title>Asymptotics</title>        
+  
+<para xml:id="C7.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S20.SS1.p1.s1">
+For applications of the complementary error function in uniform asymptotic approximations of integrals—saddle point coalescing with a pole or saddle point coalescing with an endpoint—see Wong (1989, Chapter 7),Olver (1997b, Chapter 9), and van der Waerden (1951).
+</sentence>
+
+</para>
+  
+<para xml:id="C7.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C7.S20.SS1.p2.s1">
+The complementary error function also plays a ubiquitous role in constructing exponentially-improved asymptotic expansions and providing a smooth interpretation of the Stokes phenomenon; see §§2.11(iii) and2.11(iv).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S20.SS2">
+<title>Cornu’s Spiral</title>        
+    
+<para xml:id="C7.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C7.S20.SS2.p1.s1">
+Let the set <Math mode="inline" xml:id="C7.S20.SS2.p1.m1">\{x(t),y(t),t\}</Math> be defined by <Math mode="inline" xml:id="C7.S20.SS2.p1.m2">x(t)=C\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.SS2.p1.m3">y(t)=S\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.SS2.p1.m4">t\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C7.S20.SS2.p1.s2">
+Then the set <Math mode="inline" xml:id="C7.S20.SS2.p1.m5">\{x(t),y(t)\}</Math> is calledCornu’s spiral: it is the projection of the corkscrew on the <Math mode="inline" xml:id="C7.S20.SS2.p1.m6">\{x,y\}</Math> -plane.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C7.S20.SS2.p1.s3">
+See Figure 7.20.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C7.S20.SS2.p1.s4">
+The spiral has several special properties (see Temme (1996b, p. 184)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C7.S20.SS2.p1.s5">
+Let <Math mode="inline" xml:id="C7.S20.SS2.p1.m7">P(t)=P(x(t),y(t))</Math> be any point on the projected spiral.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="8" xml:id="C7.S20.SS2.p1.s6">
+Then the arc length between the origin and <Math mode="inline" xml:id="C7.S20.SS2.p1.m8">P(t)</Math> equals <Math mode="inline" xml:id="C7.S20.SS2.p1.m9">t</Math> , and is directly proportional to the curvature at <Math mode="inline" xml:id="C7.S20.SS2.p1.m10">P(t)</Math> , which equals <Math mode="inline" xml:id="C7.S20.SS2.p1.m11">\pi t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="9" xml:id="C7.S20.SS2.p1.s7">
+Furthermore, because <Math mode="inline" xml:id="C7.S20.SS2.p1.m12">\ifrac{\mathrm{d}y}{\mathrm{d}x}=\tan\left(\frac{1}{2}\pi t^{2}\right)</Math> , the angle between the <Math mode="inline" xml:id="C7.S20.SS2.p1.m13">x</Math> -axis and the tangent to the spiral at <Math mode="inline" xml:id="C7.S20.SS2.p1.m14">P(t)</Math> is given by <Math mode="inline" xml:id="C7.S20.SS2.p1.m15">\frac{1}{2}\pi t^{2}</Math>.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="10" xml:id="C7.S20.F1.s1">
+Figure 7.20.1: Cornu’s spiral, formed from Fresnel integrals, is defined parametrically by <Math mode="inline" xml:id="C7.S20.F1.m1">x=C\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.F1.m2">y=S\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.F1.m3">t\in[0,\infty)</Math> .
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C7.S20.SS3">
+<title>Statistics</title>        
+  
+<para xml:id="C7.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C7.S20.SS3.p1.s1">
+The normal distribution function with mean <Math mode="inline" xml:id="C7.S20.SS3.p1.m1">m</Math> and standard deviation <Math mode="inline" xml:id="C7.S20.SS3.p1.m2">\sigma</Math> is given by <Math equation-number="7.20.1" mode="display" xml:id="C7.S20.E1">\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{x}e^{-(t-m)^{2}/(2\sigma^{2})} \mathrm{d}t=\frac{1}{2}\operatorname{erfc}\left(\frac{m-x}{\sigma\sqrt{2}} \right)=Q\left(\frac{m-x}{\sigma}\right)=P\left(\frac{x-m}{\sigma}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C7.S20.SS3.p1.s2">
+For applications in statistics and probability theory, also for the role of the normal distribution functions (the error functions and probability integrals) in the asymptotics of arbitrary probability density functions, seeJohnson et al. (1994, Chapter 13) and Patel and Read (1982, Chapters 2 and 3).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

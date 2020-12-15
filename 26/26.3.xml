@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S3">
+<title>Lattice Paths: Binomial Coefficients</title>        
+ 
+<subsection xml:id="C26.S3.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C26.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S3.SS1.p1.s1">
+ <Math mode="inline" xml:id="C26.S3.SS1.p1.m1">\genfrac{(}{)}{0.0pt}{}{m}{n</Math> } is the number of ways of choosing <Math mode="inline" xml:id="C26.S3.SS1.p1.m2">n</Math> objects from a collection of <Math mode="inline" xml:id="C26.S3.SS1.p1.m3">m</Math> distinct objects without regard to order.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S3.SS1.p1.s2">
+<Math mode="inline" xml:id="C26.S3.SS1.p1.m4">\genfrac{(}{)}{0.0pt}{}{m+n}{n</Math> } is the number of lattice paths from <Math mode="inline" xml:id="C26.S3.SS1.p1.m5">(0,0)</Math> to <Math mode="inline" xml:id="C26.S3.SS1.p1.m6">(m,n)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S3.SS1.p1.s3">
+See also 1.2(i).The number of lattice paths from <Math mode="inline" xml:id="C26.S3.SS1.p1.m7">(0,0)</Math> to <Math mode="inline" xml:id="C26.S3.SS1.p1.m8">(m,n)</Math> , <Math mode="inline" xml:id="C26.S3.SS1.p1.m9">m\leq n</Math> , that stay on or above the line <Math mode="inline" xml:id="C26.S3.SS1.p1.m10">y=x</Math> is <Math mode="inline" xml:id="C26.S3.SS1.p1.m11">\genfrac{(}{)}{0.0pt}{}{m+n}{m}-\genfrac{(}{)}{0.0pt}{}{m+n}{m-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C26.S3.SS1.p1.s4">
+<Math equation-number="26.3.1" mode="display" xml:id="C26.S3.E1">\genfrac{(}{)}{0.0pt}{}{m}{n}=\genfrac{(}{)}{0.0pt}{}{m}{m-n}=\frac{m!}{(m-n)! \,n!}, if m\geq n,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C26.S3.SS1.p2.s1">
+ <Math equation-number="26.3.2" mode="display" xml:id="C26.S3.E2">\genfrac{(}{)}{0.0pt}{}{m}{n}=0, if n&gt;m</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C26.S3.SS1.p3.s1">
+For numerical values of <Math mode="inline" xml:id="C26.S3.SS1.p3.m1">\genfrac{(}{)}{0.0pt}{}{m}{n</Math> } and <Math mode="inline" xml:id="C26.S3.SS1.p3.m2">\genfrac{(}{)}{0.0pt}{}{m+n}{n</Math> } see Tables26.3.1 and 26.3.2.
+</sentence>
+
+</para>
+
+         
+<sentence sentence-num-in-section="7" xml:id="C26.S3.T1.s1">
+Table 26.3.1: Binomial coefficients <Math mode="inline" xml:id="C26.S3.T1.m2">\genfrac{(}{)}{0.0pt}{}{m}{n</Math>} .
+</sentence>
+ 
+ 
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="1" xml:id="C26.S3.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S3.T1.t1.r1.m1">m</Math>
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="2" xml:id="C26.S3.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S3.T1.t1.r1.m2">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="3" xml:id="C26.S3.T1.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="4" xml:id="C26.S3.T1.t1.s4">
+1
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="5" xml:id="C26.S3.T1.t1.s5">
+2
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="6" xml:id="C26.S3.T1.t1.s6">
+3
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="7" xml:id="C26.S3.T1.t1.s7">
+4
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="8" xml:id="C26.S3.T1.t1.s8">
+5
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="9" xml:id="C26.S3.T1.t1.s9">
+6
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="10" xml:id="C26.S3.T1.t1.s10">
+7
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="11" xml:id="C26.S3.T1.t1.s11">
+8
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="12" xml:id="C26.S3.T1.t1.s12">
+9
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="13" xml:id="C26.S3.T1.t1.s13">
+10
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="14" xml:id="C26.S3.T1.t1.s14">
+0
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="15" xml:id="C26.S3.T1.t1.s15">
+1
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="16" xml:id="C26.S3.T1.t1.s16">
+1
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="17" xml:id="C26.S3.T1.t1.s17">
+1
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="18" xml:id="C26.S3.T1.t1.s18">
+1
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="19" xml:id="C26.S3.T1.t1.s19">
+2
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="20" xml:id="C26.S3.T1.t1.s20">
+1
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="21" xml:id="C26.S3.T1.t1.s21">
+2
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="22" xml:id="C26.S3.T1.t1.s22">
+1
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="23" xml:id="C26.S3.T1.t1.s23">
+3
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="24" xml:id="C26.S3.T1.t1.s24">
+1
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="25" xml:id="C26.S3.T1.t1.s25">
+3
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="26" xml:id="C26.S3.T1.t1.s26">
+3
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="27" xml:id="C26.S3.T1.t1.s27">
+1
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="28" xml:id="C26.S3.T1.t1.s28">
+4
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="29" xml:id="C26.S3.T1.t1.s29">
+1
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="30" xml:id="C26.S3.T1.t1.s30">
+4
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="31" xml:id="C26.S3.T1.t1.s31">
+6
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="32" xml:id="C26.S3.T1.t1.s32">
+4
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="33" xml:id="C26.S3.T1.t1.s33">
+1
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="34" xml:id="C26.S3.T1.t1.s34">
+5
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="35" xml:id="C26.S3.T1.t1.s35">
+1
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="36" xml:id="C26.S3.T1.t1.s36">
+5
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="37" xml:id="C26.S3.T1.t1.s37">
+10
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="38" xml:id="C26.S3.T1.t1.s38">
+10
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="39" xml:id="C26.S3.T1.t1.s39">
+5
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="40" xml:id="C26.S3.T1.t1.s40">
+1
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="41" xml:id="C26.S3.T1.t1.s41">
+6
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="42" xml:id="C26.S3.T1.t1.s42">
+1
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="43" xml:id="C26.S3.T1.t1.s43">
+6
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="44" xml:id="C26.S3.T1.t1.s44">
+15
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="45" xml:id="C26.S3.T1.t1.s45">
+20
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="46" xml:id="C26.S3.T1.t1.s46">
+15
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="47" xml:id="C26.S3.T1.t1.s47">
+6
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="48" xml:id="C26.S3.T1.t1.s48">
+1
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="49" xml:id="C26.S3.T1.t1.s49">
+7
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="50" xml:id="C26.S3.T1.t1.s50">
+1
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="51" xml:id="C26.S3.T1.t1.s51">
+7
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="52" xml:id="C26.S3.T1.t1.s52">
+21
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="53" xml:id="C26.S3.T1.t1.s53">
+35
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="54" xml:id="C26.S3.T1.t1.s54">
+35
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="55" xml:id="C26.S3.T1.t1.s55">
+21
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="56" xml:id="C26.S3.T1.t1.s56">
+7
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="57" xml:id="C26.S3.T1.t1.s57">
+1
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="58" xml:id="C26.S3.T1.t1.s58">
+8
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="59" xml:id="C26.S3.T1.t1.s59">
+1
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="60" xml:id="C26.S3.T1.t1.s60">
+8
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="61" xml:id="C26.S3.T1.t1.s61">
+28
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="62" xml:id="C26.S3.T1.t1.s62">
+56
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="63" xml:id="C26.S3.T1.t1.s63">
+70
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="64" xml:id="C26.S3.T1.t1.s64">
+56
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="65" xml:id="C26.S3.T1.t1.s65">
+28
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="66" xml:id="C26.S3.T1.t1.s66">
+8
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="67" xml:id="C26.S3.T1.t1.s67">
+1
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="68" xml:id="C26.S3.T1.t1.s68">
+9
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="69" xml:id="C26.S3.T1.t1.s69">
+1
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="70" xml:id="C26.S3.T1.t1.s70">
+9
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="71" xml:id="C26.S3.T1.t1.s71">
+36
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="72" xml:id="C26.S3.T1.t1.s72">
+84
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="73" xml:id="C26.S3.T1.t1.s73">
+126
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="74" xml:id="C26.S3.T1.t1.s74">
+126
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="75" xml:id="C26.S3.T1.t1.s75">
+84
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="76" xml:id="C26.S3.T1.t1.s76">
+36
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="77" xml:id="C26.S3.T1.t1.s77">
+9
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="78" xml:id="C26.S3.T1.t1.s78">
+1
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="79" xml:id="C26.S3.T1.t1.s79">
+10
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="80" xml:id="C26.S3.T1.t1.s80">
+1
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="81" xml:id="C26.S3.T1.t1.s81">
+10
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="82" xml:id="C26.S3.T1.t1.s82">
+45
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="83" xml:id="C26.S3.T1.t1.s83">
+120
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="84" xml:id="C26.S3.T1.t1.s84">
+210
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="85" xml:id="C26.S3.T1.t1.s85">
+252
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="86" xml:id="C26.S3.T1.t1.s86">
+210
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="87" xml:id="C26.S3.T1.t1.s87">
+120
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="88" xml:id="C26.S3.T1.t1.s88">
+45
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="89" xml:id="C26.S3.T1.t1.s89">
+10
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="90" xml:id="C26.S3.T1.t1.s90">
+1
+</sentence>
+ 
+         
+<sentence sentence-num-in-section="98" xml:id="C26.S3.T2.s1">
+Table 26.3.2: Binomial coefficients <Math mode="inline" xml:id="C26.S3.T2.m2">\genfrac{(}{)}{0.0pt}{}{m+n}{m</Math>} for lattice paths.
+</sentence>
+ 
+ 
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="1" xml:id="C26.S3.T2.t1.s1">
+<Math mode="inline" xml:id="C26.S3.T2.t1.r1.m1">m</Math>
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="2" xml:id="C26.S3.T2.t1.s2">
+<Math mode="inline" xml:id="C26.S3.T2.t1.r1.m2">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="3" xml:id="C26.S3.T2.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="4" xml:id="C26.S3.T2.t1.s4">
+1
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="5" xml:id="C26.S3.T2.t1.s5">
+2
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="6" xml:id="C26.S3.T2.t1.s6">
+3
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="7" xml:id="C26.S3.T2.t1.s7">
+4
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="8" xml:id="C26.S3.T2.t1.s8">
+5
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="9" xml:id="C26.S3.T2.t1.s9">
+6
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="10" xml:id="C26.S3.T2.t1.s10">
+7
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="11" xml:id="C26.S3.T2.t1.s11">
+8
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="12" xml:id="C26.S3.T2.t1.s12">
+0
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="13" xml:id="C26.S3.T2.t1.s13">
+1
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="14" xml:id="C26.S3.T2.t1.s14">
+1
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="15" xml:id="C26.S3.T2.t1.s15">
+1
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="16" xml:id="C26.S3.T2.t1.s16">
+1
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="17" xml:id="C26.S3.T2.t1.s17">
+1
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="18" xml:id="C26.S3.T2.t1.s18">
+1
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="19" xml:id="C26.S3.T2.t1.s19">
+1
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="20" xml:id="C26.S3.T2.t1.s20">
+1
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="21" xml:id="C26.S3.T2.t1.s21">
+1
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="22" xml:id="C26.S3.T2.t1.s22">
+1
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="23" xml:id="C26.S3.T2.t1.s23">
+1
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="24" xml:id="C26.S3.T2.t1.s24">
+2
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="25" xml:id="C26.S3.T2.t1.s25">
+3
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="26" xml:id="C26.S3.T2.t1.s26">
+4
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="27" xml:id="C26.S3.T2.t1.s27">
+5
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="28" xml:id="C26.S3.T2.t1.s28">
+6
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="29" xml:id="C26.S3.T2.t1.s29">
+7
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="30" xml:id="C26.S3.T2.t1.s30">
+8
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="31" xml:id="C26.S3.T2.t1.s31">
+9
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="32" xml:id="C26.S3.T2.t1.s32">
+2
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="33" xml:id="C26.S3.T2.t1.s33">
+1
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="34" xml:id="C26.S3.T2.t1.s34">
+3
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="35" xml:id="C26.S3.T2.t1.s35">
+6
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="36" xml:id="C26.S3.T2.t1.s36">
+10
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="37" xml:id="C26.S3.T2.t1.s37">
+15
+</sentence>
+
+<sentence sentence-num-in-section="136" sentence-num-in-table="38" xml:id="C26.S3.T2.t1.s38">
+21
+</sentence>
+
+<sentence sentence-num-in-section="137" sentence-num-in-table="39" xml:id="C26.S3.T2.t1.s39">
+28
+</sentence>
+
+<sentence sentence-num-in-section="138" sentence-num-in-table="40" xml:id="C26.S3.T2.t1.s40">
+36
+</sentence>
+
+<sentence sentence-num-in-section="139" sentence-num-in-table="41" xml:id="C26.S3.T2.t1.s41">
+45
+</sentence>
+
+<sentence sentence-num-in-section="140" sentence-num-in-table="42" xml:id="C26.S3.T2.t1.s42">
+3
+</sentence>
+
+<sentence sentence-num-in-section="141" sentence-num-in-table="43" xml:id="C26.S3.T2.t1.s43">
+1
+</sentence>
+
+<sentence sentence-num-in-section="142" sentence-num-in-table="44" xml:id="C26.S3.T2.t1.s44">
+4
+</sentence>
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="45" xml:id="C26.S3.T2.t1.s45">
+10
+</sentence>
+
+<sentence sentence-num-in-section="144" sentence-num-in-table="46" xml:id="C26.S3.T2.t1.s46">
+20
+</sentence>
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="47" xml:id="C26.S3.T2.t1.s47">
+35
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="48" xml:id="C26.S3.T2.t1.s48">
+56
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="49" xml:id="C26.S3.T2.t1.s49">
+84
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="50" xml:id="C26.S3.T2.t1.s50">
+120
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="51" xml:id="C26.S3.T2.t1.s51">
+165
+</sentence>
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="52" xml:id="C26.S3.T2.t1.s52">
+4
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="53" xml:id="C26.S3.T2.t1.s53">
+1
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="54" xml:id="C26.S3.T2.t1.s54">
+5
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="55" xml:id="C26.S3.T2.t1.s55">
+15
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="56" xml:id="C26.S3.T2.t1.s56">
+35
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="57" xml:id="C26.S3.T2.t1.s57">
+70
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="58" xml:id="C26.S3.T2.t1.s58">
+126
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="59" xml:id="C26.S3.T2.t1.s59">
+210
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="60" xml:id="C26.S3.T2.t1.s60">
+330
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="61" xml:id="C26.S3.T2.t1.s61">
+495
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="62" xml:id="C26.S3.T2.t1.s62">
+5
+</sentence>
+
+<sentence sentence-num-in-section="161" sentence-num-in-table="63" xml:id="C26.S3.T2.t1.s63">
+1
+</sentence>
+
+<sentence sentence-num-in-section="162" sentence-num-in-table="64" xml:id="C26.S3.T2.t1.s64">
+6
+</sentence>
+
+<sentence sentence-num-in-section="163" sentence-num-in-table="65" xml:id="C26.S3.T2.t1.s65">
+21
+</sentence>
+
+<sentence sentence-num-in-section="164" sentence-num-in-table="66" xml:id="C26.S3.T2.t1.s66">
+56
+</sentence>
+
+<sentence sentence-num-in-section="165" sentence-num-in-table="67" xml:id="C26.S3.T2.t1.s67">
+126
+</sentence>
+
+<sentence sentence-num-in-section="166" sentence-num-in-table="68" xml:id="C26.S3.T2.t1.s68">
+252
+</sentence>
+
+<sentence sentence-num-in-section="167" sentence-num-in-table="69" xml:id="C26.S3.T2.t1.s69">
+462
+</sentence>
+
+<sentence sentence-num-in-section="168" sentence-num-in-table="70" xml:id="C26.S3.T2.t1.s70">
+792
+</sentence>
+
+<sentence sentence-num-in-section="169" sentence-num-in-table="71" xml:id="C26.S3.T2.t1.s71">
+1287
+</sentence>
+
+<sentence sentence-num-in-section="170" sentence-num-in-table="72" xml:id="C26.S3.T2.t1.s72">
+6
+</sentence>
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="73" xml:id="C26.S3.T2.t1.s73">
+1
+</sentence>
+
+<sentence sentence-num-in-section="172" sentence-num-in-table="74" xml:id="C26.S3.T2.t1.s74">
+7
+</sentence>
+
+<sentence sentence-num-in-section="173" sentence-num-in-table="75" xml:id="C26.S3.T2.t1.s75">
+28
+</sentence>
+
+<sentence sentence-num-in-section="174" sentence-num-in-table="76" xml:id="C26.S3.T2.t1.s76">
+84
+</sentence>
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="77" xml:id="C26.S3.T2.t1.s77">
+210
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="78" xml:id="C26.S3.T2.t1.s78">
+462
+</sentence>
+
+<sentence sentence-num-in-section="177" sentence-num-in-table="79" xml:id="C26.S3.T2.t1.s79">
+924
+</sentence>
+
+<sentence sentence-num-in-section="178" sentence-num-in-table="80" xml:id="C26.S3.T2.t1.s80">
+1716
+</sentence>
+
+<sentence sentence-num-in-section="179" sentence-num-in-table="81" xml:id="C26.S3.T2.t1.s81">
+3003
+</sentence>
+
+<sentence sentence-num-in-section="180" sentence-num-in-table="82" xml:id="C26.S3.T2.t1.s82">
+7
+</sentence>
+
+<sentence sentence-num-in-section="181" sentence-num-in-table="83" xml:id="C26.S3.T2.t1.s83">
+1
+</sentence>
+
+<sentence sentence-num-in-section="182" sentence-num-in-table="84" xml:id="C26.S3.T2.t1.s84">
+8
+</sentence>
+
+<sentence sentence-num-in-section="183" sentence-num-in-table="85" xml:id="C26.S3.T2.t1.s85">
+36
+</sentence>
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="86" xml:id="C26.S3.T2.t1.s86">
+120
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="87" xml:id="C26.S3.T2.t1.s87">
+330
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="88" xml:id="C26.S3.T2.t1.s88">
+792
+</sentence>
+
+<sentence sentence-num-in-section="187" sentence-num-in-table="89" xml:id="C26.S3.T2.t1.s89">
+1716
+</sentence>
+
+<sentence sentence-num-in-section="188" sentence-num-in-table="90" xml:id="C26.S3.T2.t1.s90">
+3432
+</sentence>
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="91" xml:id="C26.S3.T2.t1.s91">
+6435
+</sentence>
+
+<sentence sentence-num-in-section="190" sentence-num-in-table="92" xml:id="C26.S3.T2.t1.s92">
+8
+</sentence>
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="93" xml:id="C26.S3.T2.t1.s93">
+1
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="94" xml:id="C26.S3.T2.t1.s94">
+9
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="95" xml:id="C26.S3.T2.t1.s95">
+45
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="96" xml:id="C26.S3.T2.t1.s96">
+165
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="97" xml:id="C26.S3.T2.t1.s97">
+495
+</sentence>
+
+<sentence sentence-num-in-section="196" sentence-num-in-table="98" xml:id="C26.S3.T2.t1.s98">
+1287
+</sentence>
+
+<sentence sentence-num-in-section="197" sentence-num-in-table="99" xml:id="C26.S3.T2.t1.s99">
+3003
+</sentence>
+
+<sentence sentence-num-in-section="198" sentence-num-in-table="100" xml:id="C26.S3.T2.t1.s100">
+6435
+</sentence>
+
+<sentence sentence-num-in-section="199" sentence-num-in-table="101" xml:id="C26.S3.T2.t1.s101">
+12870
+</sentence>
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S3.SS2">
+<title>Generating Functions</title>        
+  
+<para xml:id="C26.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="200" xml:id="C26.S3.SS2.p1.s1">
+ <Math equation-number="26.3.3" mode="display" xml:id="C26.S3.E3">\sum_{n=0}^{m}\genfrac{(}{)}{0.0pt}{}{m}{n}x^{n}=(1+x)^{m}, if m=0,1,\ldots,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C26.S3.SS2.p2.s1">
+ <Math equation-number="26.3.4" mode="display" xml:id="C26.S3.E4">\sum_{m=0}^{\infty}\genfrac{(}{)}{0.0pt}{}{m+n}{m}x^{m}=\frac{1}{(1-x)^{n+1}}, if |x|&lt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S3.SS3">
+<title>Recurrence Relations</title>        
+  
+<para xml:id="C26.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="202" xml:id="C26.S3.SS3.p1.s1">
+ <Math equation-number="26.3.5" mode="display" xml:id="C26.S3.E5">\genfrac{(}{)}{0.0pt}{}{m}{n}=\genfrac{(}{)}{0.0pt}{}{m-1}{n}+\genfrac{(}{)}{0 .0pt}{}{m-1}{n-1}, if m\geq n\geq 1,</Math> , <Math equation-number="26.3.6" mode="display" xml:id="C26.S3.E6">\genfrac{(}{)}{0.0pt}{}{m}{n}=\frac{m}{n}\genfrac{(}{)}{0.0pt}{}{m-1}{n-1}= \frac{m-n+1}{n}\genfrac{(}{)}{0.0pt}{}{m}{n-1}, if m\geq n\geq 1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C26.S3.SS3.p2.s1">
+ <Math equation-number="26.3.7" mode="display" xml:id="C26.S3.E7">\genfrac{(}{)}{0.0pt}{}{m+1}{n+1}=\sum_{k=n}^{m}\genfrac{(}{)}{0.0pt}{}{k}{n}, if m\geq n\geq 0,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="204" xml:id="C26.S3.SS3.p3.s1">
+ <Math equation-number="26.3.8" mode="display" xml:id="C26.S3.E8">\genfrac{(}{)}{0.0pt}{}{m}{n}=\sum_{k=0}^{n}\genfrac{(}{)}{0.0pt}{}{m-n-1+k}{k}, if m\geq n\geq 0.</Math>
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S3.SS4">
+<title>Identities</title>        
+ 
+ 
+<para xml:id="C26.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C26.S3.SS4.p1.s1">
+ <Math equation-number="26.3.9" mode="display" xml:id="C26.S3.E9">\genfrac{(}{)}{0.0pt}{}{n}{0}=\genfrac{(}{)}{0.0pt}{}{n}{n}=1</Math> ,
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S3.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="206" xml:id="C26.S3.SS4.p2.s1">
+ <Math equation-number="26.3.10" mode="display" xml:id="C26.S3.E10">\genfrac{(}{)}{0.0pt}{}{m}{n}=\sum_{k=0}^{n}(-1)^{n-k}\genfrac{(}{)}{0.0pt}{}{ m+1}{k}, if m\geq n\geq 0,</Math> <Math equation-number="26.3.11" mode="display" xml:id="C26.S3.E11">\genfrac{(}{)}{0.0pt}{}{2n}{n}=\frac{2^{n}(2n-1)(2n-3)\cdots 3\cdot 1}{n!}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="207" xml:id="C26.S3.SS4.p2.s2">
+See also §1.2(i).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S3.SS5">
+<title>Limiting Form</title>        
+  
+<para xml:id="C26.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C26.S3.SS5.p1.s1">
+ <Math equation-number="26.3.12" mode="display" xml:id="C26.S3.E12">\genfrac{(}{)}{0.0pt}{}{2n}{n}\sim\frac{4^{n}}{\sqrt{\pi n}}, if n\to\infty</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

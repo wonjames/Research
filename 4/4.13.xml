@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S13">
+<title>Lambert <Math mode="inline" xml:id="C4.S13.m1">W</Math>-Function</title>            
+<para xml:id="C4.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S13.p1.s1">
+The Lambert <Math mode="inline" xml:id="C4.S13.p1.m1">W</Math> -function <Math mode="inline" xml:id="C4.S13.p1.m2">W\left(x\right)</Math> is the solution of the equation <Math equation-number="4.13.1" mode="display" xml:id="C4.S13.E1">We^{W}=x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C4.S13.p2.s1">
+On the <Math mode="inline" xml:id="C4.S13.p2.m1">x</Math> -interval <Math mode="inline" xml:id="C4.S13.p2.m2">[0,\infty)</Math> there is one real solution, and it is nonnegative and increasing.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C4.S13.p2.s2">
+On the <Math mode="inline" xml:id="C4.S13.p2.m3">x</Math> -interval <Math mode="inline" xml:id="C4.S13.p2.m4">(-1/e,0)</Math> there are two realsolutions, one increasing and the other decreasing.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C4.S13.p2.s3">
+We call the solution for which <Math mode="inline" xml:id="C4.S13.p2.m5">W\left(x\right)\geq W\left(-1/e\right)</Math> the principal branch and denote it by <Math mode="inline" xml:id="C4.S13.p2.m12">\mathrm{Wp}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C4.S13.p2.s4">
+The other solution is denoted by <Math mode="inline" xml:id="C4.S13.p2.m13">\mathrm{Wm}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C4.S13.p2.s5">
+See Figure 4.13.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="7" xml:id="C4.S13.F1.s1">
+Figure 4.13.1: Branches <Math mode="inline" xml:id="C4.S13.F1.m4">\mathrm{Wp}\left(x\right)</Math> and <Math mode="inline" xml:id="C4.S13.F1.m5">\mathrm{Wm}\left(x\right)</Math> of the Lambert <Math mode="inline" xml:id="C4.S13.F1.m6">W</Math> -function. <Math mode="inline" xml:id="C4.S13.F1.m7">A</Math> and <Math mode="inline" xml:id="C4.S13.F1.m8">B</Math> denote the points <Math mode="inline" xml:id="C4.S13.F1.m9">-1/e</Math> and <Math mode="inline" xml:id="C4.S13.F1.m10">e</Math> , respectively, on the <Math mode="inline" xml:id="C4.S13.F1.m11">x</Math> -axis.
+</sentence>    
+<para xml:id="C4.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S13.p3.s1">
+Properties include: <Math equation-number="4.13.2" mode="display" xml:id="C4.S13.E2">\mathrm{Wp}\left(-1/e\right)=\mathrm{Wm}\left(-1/e\right)=-1,\mathrm{Wp}\left(0\right)=0,\mathrm{Wp}\left(e\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C4.S13.p3.s2">
+<Math equation-number="4.13.3" mode="display" xml:id="C4.S13.E3">U+\ln U=x,U=U(x)=W\left(e^{x}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C4.S13.p3.s3">
+<Math equation-number="4.13.4" mode="display" xml:id="C4.S13.E4">\frac{\mathrm{d}W}{\mathrm{d}x}=\frac{e^{-W}}{1+W}, if x\neq-\dfrac{1}{e}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C4.S13.p3.s4">
+<Math equation-number="4.13.5" mode="display" xml:id="C4.S13.E5">\mathrm{Wp}\left(x\right)=\sum_{n=1}^{\infty}(-1)^{n-1}\frac{n^{n-2}}{(n-1)!}x ^{n}, if |x|&lt;\dfrac{1}{e}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C4.S13.p3.s5">
+<Math equation-number="4.13.6" mode="display" xml:id="C4.S13.E6">W\left(-e^{-1-(t^{2}/2)}\right)=\sum_{n=0}^{\infty}(-1)^{n-1}c_{n}t^{n}, if |t|&lt;2\sqrt{\pi},</Math> where <Math mode="inline" xml:id="C4.S13.p3.m2">t\geq 0</Math> for <Math mode="inline" xml:id="C4.S13.p3.m3">\mathrm{Wp}</Math> , <Math mode="inline" xml:id="C4.S13.p3.m4">t\leq 0</Math> for <Math mode="inline" xml:id="C4.S13.p3.m5">\mathrm{Wm}</Math> , <Math equation-number="4.13.7" mode="display" xml:id="C4.S13.E7">c_{0}=1,c_{1}=1,c_{2}=\tfrac{1}{3},c_{3}=\tfrac{1}{36},c_{4}=-\tfrac{1}{270},</Math> <Math equation-number="4.13.8" mode="display" xml:id="C4.S13.E8">c_{n}=\frac{1}{n+1}\left(c_{n-1}-\sum_{k=2}^{n-1}kc_{k}c_{n+1-k}\right), if n\geq 2,</Math> and <Math equation-number="4.13.9" mode="display" xml:id="C4.S13.E9">1\cdot 3\cdot 5\cdots(2n+1)c_{2n+1}=g_{n},</Math> where <Math mode="inline" xml:id="C4.S13.p3.m6">g_{n}</Math> is defined in §5.11(i).
+</sentence>
+
+</para>
+  
+<para xml:id="C4.S13.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C4.S13.p4.s1">
+As <Math mode="inline" xml:id="C4.S13.p4.m1">x\to+\infty</Math> <Math equation-number="4.13.10" mode="display" xml:id="C4.S13.E10">\mathrm{Wp}\left(x\right)=\xi-\ln\xi+\frac{\ln\xi}{\xi}+\frac{(\ln\xi)^{2}}{2 \xi^{2}}-\frac{\ln\xi}{\xi^{2}}+O\left(\frac{(\ln\xi)^{3}}{\xi^{3}}\right),</Math> where <Math mode="inline" xml:id="C4.S13.p4.m2">\xi=\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C4.S13.p4.s2">
+As <Math mode="inline" xml:id="C4.S13.p4.m3">x\to 0-</Math> <Math equation-number="4.13.11" mode="display" xml:id="C4.S13.E11">\mathrm{Wm}\left(x\right)=-\eta-\ln\eta-\frac{\ln\eta}{\eta}-\frac{(\ln\eta)^{ 2}}{2\eta^{2}}-\frac{\ln\eta}{\eta^{2}}+O\left(\frac{(\ln\eta)^{3}}{\eta^{3}} \right),</Math> where <Math mode="inline" xml:id="C4.S13.p4.m4">\eta=\ln\left(-1/x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S13.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C4.S13.p5.s1">
+For the foregoing results and further information seeBorwein and Corless (1999), Corless et al. (1996),de Bruijn (1961, pp. 25–28), Olver (1997b, pp. 12–13), andSiewert and Burniston (1973).
+</sentence>
+
+</para>
+  
+<para xml:id="C4.S13.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C4.S13.p6.s1">
+For integral representations of all branches of the Lambert <Math mode="inline" xml:id="C4.S13.p6.m1">W</Math> -function see Kheyfits (2004).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S13.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C4.S13.p7.s1">
+For a generalization of the Lambert <Math mode="inline" xml:id="C4.S13.p7.m1">W</Math> -function connected to the three-body problem see Scott et al. (2006), Scott et al. (2013) and Scott et al. (2014).
+</sentence>
+
+</para>
+ 
+</section>

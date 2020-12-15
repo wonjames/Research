@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S12">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C6.S12.SS1">
+<title>Exponential and Logarithmic Integrals</title>        
+ 
+ 
+<para xml:id="C6.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S12.SS1.p1.s1">
+ <Math equation-number="6.12.1" mode="display" xml:id="C6.S12.E1">E_{1}\left(z\right)\sim\frac{e^{-z}}{z}\left(1-\frac{1!}{z}+\frac{2!}{z^{2}}- \frac{3!}{z^{3}}+\cdots\right), if z\to\infty, |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta(&lt;\tfrac{3}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C6.S12.SS1.p1.s2">
+When <Math mode="inline" xml:id="C6.S12.SS1.p1.m1">|\operatorname{ph}z|\leq\frac{1}{2}\pi</Math> the remainder is bounded in magnitude by the first neglected term, and has the same sign when <Math mode="inline" xml:id="C6.S12.SS1.p1.m2">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C6.S12.SS1.p1.s3">
+When <Math mode="inline" xml:id="C6.S12.SS1.p1.m3">\frac{1}{2}\pi\leq|\operatorname{ph}z|&lt;\pi</Math> the remainder term is bounded in magnitude by <Math mode="inline" xml:id="C6.S12.SS1.p1.m4">\csc\left(|\operatorname{ph}z|\right)</Math> times the first neglected term.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C6.S12.SS1.p1.s4">
+For these and other error bounds see Olver (1997b, pp. 109–112) with <Math mode="inline" xml:id="C6.S12.SS1.p1.m5">\alpha=0</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C6.S12.SS1.p2.s1">
+For re-expansions of the remainder term leading to larger sectors of validity, exponential improvement, and a smooth interpretation of the Stokes phenomenon, see §§2.11(ii)–2.11(iv),with
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C6.S12.SS1.p2.s2">
+<Math mode="inline" xml:id="C6.S12.SS1.p2.m1">p=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C6.S12.SS1.p2.s3">
+<Math equation-number="6.12.2" mode="display" xml:id="C6.S12.E2">\mathrm{Ei}\left(x\right)\sim\frac{e^{x}}{x}\left(1+\frac{1!}{x}+\frac{2!}{x^{ 2}}+\frac{3!}{x^{3}}+\cdots\right), if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C6.S12.SS1.p2.s4">
+If the expansion is terminated at the <Math mode="inline" xml:id="C6.S12.SS1.p2.m2">n</Math> th term, then the remainder term is bounded by <Math mode="inline" xml:id="C6.S12.SS1.p2.m3">1+\chi(n+1)</Math> times the next term.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C6.S12.SS1.p2.s5">
+For the function <Math mode="inline" xml:id="C6.S12.SS1.p2.m4">\chi</Math> see §9.7(i).
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C6.S12.SS1.p3.s1">
+The asymptotic expansion of <Math mode="inline" xml:id="C6.S12.SS1.p3.m1">\mathrm{li}\left(x\right)</Math> as <Math mode="inline" xml:id="C6.S12.SS1.p3.m2">x\to\infty</Math> is obtainable from (6.2.8) and (6.12.2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S12.SS2">
+<title>Sine and Cosine Integrals</title>        
+  
+<para xml:id="C6.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C6.S12.SS2.p1.s1">
+The asymptotic expansions of <Math mode="inline" xml:id="C6.S12.SS2.p1.m1">\mathrm{Si}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S12.SS2.p1.m2">\mathrm{Ci}\left(z\right)</Math> are given by (6.2.19), (6.2.20), together with <Math equation-number="6.12.3" mode="display" xml:id="C6.S12.E3">\mathrm{f}\left(z\right)\sim\frac{1}{z}\left(1-\frac{2!}{z^{2}}+\frac{4!}{z^{4 }}-\frac{6!}{z^{6}}+\cdots\right)</Math> , <Math equation-number="6.12.4" mode="display" xml:id="C6.S12.E4">\mathrm{g}\left(z\right)\sim\frac{1}{z^{2}}\left(1-\frac{3!}{z^{2}}+\frac{5!}{ z^{4}}-\frac{7!}{z^{6}}+\cdots\right)</Math> , as <Math mode="inline" xml:id="C6.S12.SS2.p1.m3">z\to\infty</Math> in <Math mode="inline" xml:id="C6.S12.SS2.p1.m4">|\operatorname{ph}z|\leq\pi-\delta\thinspace(&lt;\pi)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C6.S12.SS2.p2.s1">
+The remainder terms are given by <Math equation-number="6.12.5" mode="display" xml:id="C6.S12.E5">\mathrm{f}\left(z\right)=\frac{1}{z}\sum_{m=0}^{n-1}(-1)^{m}\frac{(2m)!}{z^{2m }}+R_{n}^{(\mathrm{f})}(z),</Math> , <Math equation-number="6.12.6" mode="display" xml:id="C6.S12.E6">\mathrm{g}\left(z\right)=\frac{1}{z^{2}}\sum_{m=0}^{n-1}(-1)^{m}\frac{(2m+1)!} {z^{2m}}+R_{n}^{(\mathrm{g})}(z),</Math> where, for <Math mode="inline" xml:id="C6.S12.SS2.p2.m1">n=0,1,2,\dots</Math> , <Math equation-number="6.12.7" mode="display" xml:id="C6.S12.E7">R_{n}^{(\mathrm{f})}(z)=(-1)^{n}\int_{0}^{\infty}\frac{e^{-zt}t^{2n}}{t^{2}+1} \mathrm{d}t,</Math> , <Math equation-number="6.12.8" mode="display" xml:id="C6.S12.E8">R_{n}^{(\mathrm{g})}(z)=(-1)^{n}\int_{0}^{\infty}\frac{e^{-zt}t^{2n+1}}{t^{2}+ 1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C6.S12.SS2.p2.s2">
+When <Math mode="inline" xml:id="C6.S12.SS2.p2.m2">|\operatorname{ph}z|\leq\tfrac{1}{4}\pi</Math> , these remainders are bounded in magnitude by the first neglected terms in (6.12.3) and (6.12.4), respectively, and have the same signs as these terms when <Math mode="inline" xml:id="C6.S12.SS2.p2.m3">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C6.S12.SS2.p2.s3">
+When <Math mode="inline" xml:id="C6.S12.SS2.p2.m4">\frac{1}{4}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> the remainders are bounded in magnitude by <Math mode="inline" xml:id="C6.S12.SS2.p2.m5">\csc\left(2|\operatorname{ph}z|\right)</Math> times the first neglected terms.
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C6.S12.SS2.p3.s1">
+For other phase ranges use (6.4.6) and (6.4.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C6.S12.SS2.p3.s2">
+For exponentially-improved asymptotic expansions, use (6.5.5), (6.5.6), and §6.12(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

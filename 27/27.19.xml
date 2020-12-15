@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S19">
+<title>Methods of Computation: Factorization</title>        
+  
+<para xml:id="C27.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S19.p1.s1">
+Techniques for factorization of integers fall into three general classes:Deterministic algorithms, Type I probabilistic algorithms whose expected running time depends on the size of the smallest prime factor, andType II probabilistic algorithms whose expected running time depends on the size of the number to be factored.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C27.S19.p2.s1">
+Deterministic algorithms are slow but are guaranteed to find the factorizationwithin a known period of time.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C27.S19.p2.s2">
+Trial division is one example.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C27.S19.p2.s3">
+Fermat’s algorithm is another; see Bressoud (1989, §5.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C27.S19.p3.s1">
+Type I probabilistic algorithms include the Brent–Pollard rho algorithm (also called Monte Carlo method), the Pollard <Math mode="inline" xml:id="C27.S19.p3.m1">p-1</Math> algorithm, and the Elliptic Curve Method (ecm).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C27.S19.p3.s2">
+Descriptions of these algorithms are given in Crandall and Pomerance (2005, §§5.2, 5.4, and 7.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C27.S19.p3.s3">
+As of January 2009 the largest prime factors found by these methods are a 19-digit prime for Brent–Pollard rho, a 58-digit prime for Pollard <Math mode="inline" xml:id="C27.S19.p3.m2">p-1</Math> , and a 67-digit prime for ecm.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S19.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C27.S19.p4.s1">
+Type II probabilistic algorithms for factoring <Math mode="inline" xml:id="C27.S19.p4.m1">n</Math> rely on finding a pseudo-random pair of integers <Math mode="inline" xml:id="C27.S19.p4.m2">(x,y)</Math> that satisfy <Math mode="inline" xml:id="C27.S19.p4.m3">x^{2}\equiv y^{2}\pmod{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C27.S19.p4.s2">
+These algorithms include the Continued Fraction Algorithm (cfrac), the Multiple Polynomial Quadratic Sieve (mpqs), the General Number Field Sieve (gnfs), and the Special Number Field Sieve (snfs).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C27.S19.p4.s3">
+A description of cfrac is given inBressoud and Wagon (2000).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C27.S19.p4.s4">
+Descriptions of mpqs, gnfs, and snfs are given in Crandall and Pomerance (2005, §§6.1 and 6.2).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C27.S19.p4.s5">
+As of January 2009 the snfs holds the record for the largest integer that has been factored by a Type II probabilistic algorithm, a 307-digit composite integer.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="13" xml:id="C27.S19.p4.s6">
+The snfs can be applied only to numbers that are very close to a power of a very small base.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="14" xml:id="C27.S19.p4.s7">
+The largest composite numbers that have been factored by other Type II probabilistic algorithms are a 63-digit integer bycfrac, a 135-digit integer by mpqs, and a 182-digit integer bygnfs.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C27.S19.p5.s1">
+For further information see Crandall and Pomerance (2005) and §26.22.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S19.p6">
+
+</para>
+ 
+<para xml:id="C27.S19.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C27.S19.p7.s1">
+For current records see Cunningham Project.
+</sentence>
+
+</para>
+ 
+</section>

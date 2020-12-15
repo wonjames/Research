@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S19">
+<title>Methods of Computation</title>          
+<subsection xml:id="C15.S19.SS1">
+<title>Maclaurin Expansions</title>         
+<para xml:id="C15.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S19.SS1.p1.s1">
+The Gauss series (15.2.1) converges for <Math mode="inline" xml:id="C15.S19.SS1.p1.m1">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S19.SS1.p1.s2">
+For <Math mode="inline" xml:id="C15.S19.SS1.p1.m2">z\in\mathbb{R}</Math> it is always possible to apply one of the linear transformations in §15.8(i) in such a way that the hypergeometric function is expressed in terms of hypergeometric functions with an argument in the interval <Math mode="inline" xml:id="C15.S19.SS1.p1.m3">[0,\frac{1}{2}]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C15.S19.SS1.p2.s1">
+For <Math mode="inline" xml:id="C15.S19.SS1.p2.m1">z\in\mathbb{C}</Math> it is possible to use the linear transformations in such a way that the new arguments lie within the unit circle, except when <Math mode="inline" xml:id="C15.S19.SS1.p2.m2">z=e^{\pm\pi\mathrm{i}/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C15.S19.SS1.p2.s2">
+This is because the linear transformations map the pair <Math mode="inline" xml:id="C15.S19.SS1.p2.m4">\{e^{\pi\mathrm{i}/3},e^{-\pi\mathrm{i}/3}\}</Math> onto itself.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C15.S19.SS1.p2.s3">
+However, by appropriate choice of the constant <Math mode="inline" xml:id="C15.S19.SS1.p2.m5">z_{0}</Math> in (15.15.1) we can obtain an infinite series that converges on a disk containing <Math mode="inline" xml:id="C15.S19.SS1.p2.m6">z=e^{\pm\pi\mathrm{i}/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C15.S19.SS1.p2.s4">
+Moreover, it is also possible to accelerate convergence by appropriate choice of <Math mode="inline" xml:id="C15.S19.SS1.p2.m7">z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C15.S19.SS1.p3.s1">
+Large values of <Math mode="inline" xml:id="C15.S19.SS1.p3.m1">|a|</Math> or <Math mode="inline" xml:id="C15.S19.SS1.p3.m2">|b|</Math> , for example, delay convergence of the Gauss series, and may also lead to severe cancellation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C15.S19.SS1.p4.s1">
+For fast computation of <Math mode="inline" xml:id="C15.S19.SS1.p4.m1">F\left(a,b;c;z\right)</Math> with <Math mode="inline" xml:id="C15.S19.SS1.p4.m2">a,b</Math> and <Math mode="inline" xml:id="C15.S19.SS1.p4.m3">c</Math> complex, and with application to Pöschl–Teller-Ginocchio potential wave functions, see Michel and Stoitsov (2008).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C15.S19.SS1.p5.s1">
+For further information see Bühring (1987a), Forrey (1997),Kalla (1992) and López and Temme (2013).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS2">
+<title>Differential Equation</title>         
+<para xml:id="C15.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S19.SS2.p1.s1">
+A comprehensive and powerful approach is to integrate the hypergeometric differential equation (15.10.1) by direct numerical methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C15.S19.SS2.p1.s2">
+As noted in §3.7(ii), the integration path should be chosen so that the wanted solution grows in magnitude at least as fast as all other solutions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C15.S19.SS2.p1.s3">
+However, since the growth near the singularities of the differential equation is algebraic rather than exponential, the resulting instabilities in the numerical integration might be tolerable in some cases.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS3">
+<title>Integral Representations</title>         
+<para xml:id="C15.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S19.SS3.p1.s1">
+The representation (15.6.1) can be used to compute the hypergeometric function in the sector <Math mode="inline" xml:id="C15.S19.SS3.p1.m1">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C15.S19.SS3.p1.s2">
+Gauss quadrature approximations are discussed in Gautschi (2002b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS4">
+<title>Recurrence Relations</title>        
+ 
+<para xml:id="C15.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S19.SS4.p1.s1">
+The relations in §15.5(ii) can be used to compute <Math mode="inline" xml:id="C15.S19.SS4.p1.m1">F\left(a,b;c;z\right)</Math> , provided that care is taken to apply these relations in a stable manner; see §3.6(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C15.S19.SS4.p1.s2">
+Initial values for moderate values of <Math mode="inline" xml:id="C15.S19.SS4.p1.m2">|a|</Math> and <Math mode="inline" xml:id="C15.S19.SS4.p1.m3">|b|</Math> can be obtained by the methods of §15.19(i), and for large values of <Math mode="inline" xml:id="C15.S19.SS4.p1.m4">|a|</Math> , <Math mode="inline" xml:id="C15.S19.SS4.p1.m5">|b|</Math> , or <Math mode="inline" xml:id="C15.S19.SS4.p1.m6">|c|</Math> via the asymptotic expansions of §§15.12(ii) and 15.12(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C15.S19.SS4.p2.s1">
+For example, in the half-plane <Math mode="inline" xml:id="C15.S19.SS4.p2.m1">\Re z\leq\frac{1}{2}</Math> we can use (15.12.2) or (15.12.3) to compute <Math mode="inline" xml:id="C15.S19.SS4.p2.m2">F\left(a,b;c+N+1;z\right)</Math> and <Math mode="inline" xml:id="C15.S19.SS4.p2.m3">F\left(a,b;c+N;z\right)</Math> , where <Math mode="inline" xml:id="C15.S19.SS4.p2.m4">N</Math> is a large positive integer, and then apply (15.5.18) in the backward direction.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C15.S19.SS4.p2.s2">
+When <Math mode="inline" xml:id="C15.S19.SS4.p2.m5">\Re z&gt;\frac{1}{2}</Math> it is better to begin with one of the linear transformations (15.8.4), (15.8.7), or (15.8.8).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C15.S19.SS4.p2.s3">
+For further information seeGil et al. (2006c, 2007b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS5">
+<title>Continued Fractions</title>        
+ 
+<para xml:id="C15.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C15.S19.SS5.p1.s1">
+In Colman et al. (2011) an algorithm is described that uses expansions in continued fractions for high-precision computation of the Gauss hypergeometric function, when the variable and parameters are real and one of the numerator parameters is a positive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C15.S19.SS5.p1.s2">
+The accuracy is controlled and validated by a running error analysis coupled with interval arithmetic.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S2">
+<title>Differential Equations</title>           
+<subsection xml:id="C12.S2.SS1">
+<title>Introduction</title>          
+<para xml:id="C12.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S2.SS1.p1.s1">
+PCFs are solutions of the differential equation <Math equation-number="12.2.1" mode="display" xml:id="C12.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(az^{2}+bz+c\right)w=0,</Math> with three distinct standard forms <Math equation-number="12.2.2" mode="display" xml:id="C12.S2.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-\left(\tfrac{1}{4}z^{2}+a\right)w=0,</Math> <Math equation-number="12.2.3" mode="display" xml:id="C12.S2.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\tfrac{1}{4}z^{2}-a\right)w=0,</Math> <Math equation-number="12.2.4" mode="display" xml:id="C12.S2.E4">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\nu+\tfrac{1}{2}-\tfrac{1}{4 }z^{2}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C12.S2.SS1.p1.s2">
+Each of these equations is transformable into the others.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C12.S2.SS1.p1.s3">
+Standard solutions are <Math mode="inline" xml:id="C12.S2.SS1.p1.m3">U\left(a,\pm z\right)</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p1.m4">V\left(a,\pm z\right)</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p1.m5">\overline{U}\left(a,\pm x\right)</Math> (not complex conjugate), <Math mode="inline" xml:id="C12.S2.SS1.p1.m6">U\left(-a,\pm iz\right)</Math> for (12.2.2);
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C12.S2.SS1.p1.s4">
+<Math mode="inline" xml:id="C12.S2.SS1.p1.m7">W\left(a,\pm x\right)</Math> for (12.2.3);
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C12.S2.SS1.p1.s5">
+<Math mode="inline" xml:id="C12.S2.SS1.p1.m8">D_{\nu}\left(\pm z\right)</Math> for (12.2.4), where <Math equation-number="12.2.5" mode="display" xml:id="C12.S2.E5">D_{\nu}\left(z\right)=U\left(-\tfrac{1}{2}-\nu,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C12.S2.SS1.p2.s1">
+All solutions are entire functions of <Math mode="inline" xml:id="C12.S2.SS1.p2.m1">z</Math> and entire functions of <Math mode="inline" xml:id="C12.S2.SS1.p2.m2">a</Math> or <Math mode="inline" xml:id="C12.S2.SS1.p2.m3">\nu</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C12.S2.SS1.p3.s1">
+For real values of <Math mode="inline" xml:id="C12.S2.SS1.p3.m1">z</Math> <Math mode="inline" xml:id="C12.S2.SS1.p3.m2">(=x)</Math> , numerically satisfactory pairs of solutions (§2.7(iv)) of (12.2.2) are <Math mode="inline" xml:id="C12.S2.SS1.p3.m3">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m4">V\left(a,x\right)</Math> when <Math mode="inline" xml:id="C12.S2.SS1.p3.m5">x</Math> is positive, or <Math mode="inline" xml:id="C12.S2.SS1.p3.m6">U\left(a,-x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m7">V\left(a,-x\right)</Math> when <Math mode="inline" xml:id="C12.S2.SS1.p3.m8">x</Math> is negative.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C12.S2.SS1.p3.s2">
+For (12.2.3)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C12.S2.SS1.p3.s3">
+<Math mode="inline" xml:id="C12.S2.SS1.p3.m9">W\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m10">W\left(a,-x\right)</Math> comprise a numericallysatisfactory pair, for all <Math mode="inline" xml:id="C12.S2.SS1.p3.m11">x\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C12.S2.SS1.p3.s4">
+The solutions <Math mode="inline" xml:id="C12.S2.SS1.p3.m12">W\left(a,\pm x\right)</Math> are treated in §12.14.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C12.S2.SS1.p4.s1">
+In <Math mode="inline" xml:id="C12.S2.SS1.p4.m1">\mathbb{C}</Math> , for <Math mode="inline" xml:id="C12.S2.SS1.p4.m2">j=0,1,2,3</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p4.m3">U\left((-1)^{j-1}a,(-i)^{j-1}z\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p4.m4">U\left((-1)^{j}a,(-i)^{j}z\right)</Math> comprise a numerically satisfactory pair of solutions in the half-plane <Math mode="inline" xml:id="C12.S2.SS1.p4.m5">\tfrac{1}{4}(2j-3)\pi\leq\operatorname{ph}z\leq\tfrac{1}{4}(2j+1)\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS2">
+<title>Values at <Math mode="inline" xml:id="C12.S2.SS2.m1">z=0</Math></title>          
+<para xml:id="C12.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C12.S2.SS2.p1.s1">
+ <Math equation-number="12.2.6" mode="display" xml:id="C12.S2.E6">U\left(a,0\right)=\frac{\sqrt{\pi}}{2^{\frac{1}{2}a+\frac{1}{4}}\Gamma\left( \frac{3}{4}+\frac{1}{2}a\right)},</Math> , <Math equation-number="12.2.7" mode="display" xml:id="C12.S2.E7">U'\left(a,0\right)=-\frac{\sqrt{\pi}}{2^{\frac{1}{2}a-\frac{1}{4}}\Gamma\left( \frac{1}{4}+\frac{1}{2}a\right)},</Math> , <Math equation-number="12.2.8" mode="display" xml:id="C12.S2.E8">V\left(a,0\right)=\frac{\pi 2^{\frac{1}{2}a+\frac{1}{4}}}{\left(\Gamma\left( \frac{3}{4}-\frac{1}{2}a\right)\right)^{2}\Gamma\left(\frac{1}{4}+\frac{1}{2}a \right)},</Math> , <Math equation-number="12.2.9" mode="display" xml:id="C12.S2.E9">V'\left(a,0\right)=\frac{\pi 2^{\frac{1}{2}a+\frac{3}{4}}}{\left(\Gamma\left( \frac{1}{4}-\frac{1}{2}a\right)\right)^{2}\Gamma\left(\frac{3}{4}+\frac{1}{2}a \right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS3">
+<title>Wronskians</title>          
+<para xml:id="C12.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C12.S2.SS3.p1.s1">
+ <Math equation-number="12.2.10" mode="display" xml:id="C12.S2.E10">\mathscr{W}\left\{U\left(a,z\right),V\left(a,z\right)\right\}=\sqrt{2/\pi},</Math> <Math equation-number="12.2.11" mode="display" xml:id="C12.S2.E11">\mathscr{W}\left\{U\left(a,z\right),U\left(a,-z\right)\right\}=\frac{\sqrt{2 \pi}}{\Gamma\left(\frac{1}{2}+a\right)},</Math> <Math equation-number="12.2.12" mode="display" xml:id="C12.S2.E12">\mathscr{W}\left\{U\left(a,z\right),U\left(-a,\pm iz\right)\right\}=\mp ie^{ \pm i\pi(\frac{1}{2}a+\frac{1}{4})}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS4">
+<title>Reflection Formulas</title>        
+ 
+ 
+<para xml:id="C12.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C12.S2.SS4.p1.s1">
+For <Math mode="inline" xml:id="C12.S2.SS4.p1.m1">n=0,1,\dots</Math> , <Math equation-number="12.2.13" mode="display" xml:id="C12.S2.E13">U\left(-n-\tfrac{1}{2},-z\right)=(-1)^{n}U\left(-n-\tfrac{1}{2},z\right),</Math> <Math equation-number="12.2.14" mode="display" xml:id="C12.S2.E14">V\left(n+\tfrac{1}{2},-z\right)=(-1)^{n}V\left(n+\tfrac{1}{2},z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS5">
+<title>Connection Formulas</title>        
+  
+<para xml:id="C12.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C12.S2.SS5.p1.s1">
+ <Math equation-number="12.2.15" mode="display" xml:id="C12.S2.E15">U\left(a,-z\right)=-\sin\left(\pi a\right)U\left(a,z\right)+\frac{\pi}{\Gamma \left(\frac{1}{2}+a\right)}V\left(a,z\right),</Math> <Math equation-number="12.2.16" mode="display" xml:id="C12.S2.E16">V\left(a,-z\right)=\frac{\cos\left(\pi a\right)}{\Gamma\left(\frac{1}{2}-a \right)}U\left(a,z\right)+\sin\left(\pi a\right)V\left(a,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C12.S2.SS5.p2.s1">
+ <Math equation-number="12.2.17" mode="display" xml:id="C12.S2.E17">\sqrt{2\pi}U\left(-a,\pm iz\right)=\Gamma\left(\tfrac{1}{2}+a\right)\left(e^{ \mp i\pi(\frac{1}{2}a-\frac{1}{4})}U\left(a,z\right)+e^{\pm i\pi(\frac{1}{2}a- \frac{1}{4})}U\left(a,-z\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C12.S2.SS5.p2.s2">
+<Math equation-number="12.2.18" mode="display" xml:id="C12.S2.E18">\sqrt{2\pi}U\left(a,z\right)=\Gamma\left(\tfrac{1}{2}-a\right)\left(e^{\mp i \pi(\frac{1}{2}a+\frac{1}{4})}U\left(-a,\pm iz\right)+e^{\pm i\pi(\frac{1}{2}a +\frac{1}{4})}U\left(-a,\mp iz\right)\right),</Math> <Math equation-number="12.2.19" mode="display" xml:id="C12.S2.E19">U\left(a,z\right)=\pm ie^{\pm i\pi a}U\left(a,-z\right)+\frac{\sqrt{2\pi}}{ \Gamma\left(\tfrac{1}{2}+a\right)}e^{\pm i\pi(\frac{1}{2}a-\frac{1}{4})}U\left (-a,\pm iz\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S2.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C12.S2.SS5.p3.s1">
+ <Math equation-number="12.2.20" mode="display" xml:id="C12.S2.E20">V\left(a,z\right)=\frac{\mp i}{\Gamma\left(\frac{1}{2}-a\right)}U\left(a,z \right)+\sqrt{\frac{2}{\pi}}e^{\mp i\pi(\frac{1}{2}a-\frac{1}{4})}U\left(-a, \pm iz\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS6">
+<title>Solution <Math mode="inline" xml:id="C12.S2.SS6.m1">\overline{U}\left(a,x\right)</Math>; Modulus and Phase Functions</title>        
+   
+<para xml:id="C12.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C12.S2.SS6.p1.s1">
+When <Math mode="inline" xml:id="C12.S2.SS6.p1.m1">z</Math> <Math mode="inline" xml:id="C12.S2.SS6.p1.m2">(=x)</Math> is real the solution <Math mode="inline" xml:id="C12.S2.SS6.p1.m3">\overline{U}\left(a,x\right)</Math> is defined by <Math equation-number="12.2.21" mode="display" xml:id="C12.S2.E21">\overline{U}\left(a,x\right)=\Gamma\left(\tfrac{1}{2}-a\right)V\left(a,x\right),</Math> unless <Math mode="inline" xml:id="C12.S2.SS6.p1.m5">a=\tfrac{1}{2},\tfrac{3}{2},\dots</Math> , in which case <Math mode="inline" xml:id="C12.S2.SS6.p1.m6">\overline{U}\left(a,x\right)</Math> is undefined. Its importance is that when <Math mode="inline" xml:id="C12.S2.SS6.p1.m7">a</Math> is negative and <Math mode="inline" xml:id="C12.S2.SS6.p1.m8">|a|</Math> is large, <Math mode="inline" xml:id="C12.S2.SS6.p1.m9">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS6.p1.m10">\overline{U}\left(a,x\right)</Math> asymptotically have the same envelope (modulus) and are <Math mode="inline" xml:id="C12.S2.SS6.p1.m11">\tfrac{1}{2}\pi</Math> out of phase in the oscillatory interval <Math mode="inline" xml:id="C12.S2.SS6.p1.m12">-2\sqrt{-a}&lt;x&lt;2\sqrt{-a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C12.S2.SS6.p1.s2">
+Properties of <Math mode="inline" xml:id="C12.S2.SS6.p1.m13">\overline{U}\left(a,x\right)</Math> follow immediately from those of <Math mode="inline" xml:id="C12.S2.SS6.p1.m14">V\left(a,x\right)</Math> via (12.2.21).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C12.S2.SS6.p2.s1">
+In the oscillatory interval we define <Math equation-number="12.2.22" mode="display" xml:id="C12.S2.E22">U\left(a,x\right)+i\overline{U}\left(a,x\right)=F(a,x)e^{i\theta(a,x)},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C12.S2.SS6.p3.s1">
+ <Math equation-number="12.2.23" mode="display" xml:id="C12.S2.E23">U'\left(a,x\right)+i\overline{U}'\left(a,x\right)=-G(a,x)e^{i\psi(a,x)},</Math> where <Math mode="inline" xml:id="C12.S2.SS6.p3.m1">F(a,x)</Math> ( <Math mode="inline" xml:id="C12.S2.SS6.p3.m2">&gt;</Math> 0), <Math mode="inline" xml:id="C12.S2.SS6.p3.m3">\theta(a,x)</Math> , <Math mode="inline" xml:id="C12.S2.SS6.p3.m4">G(a,x)</Math> ( <Math mode="inline" xml:id="C12.S2.SS6.p3.m5">&gt;</Math> 0), and <Math mode="inline" xml:id="C12.S2.SS6.p3.m6">\psi(a,x)</Math> are real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C12.S2.SS6.p3.s2">
+<Math mode="inline" xml:id="C12.S2.SS6.p3.m7">F</Math> or <Math mode="inline" xml:id="C12.S2.SS6.p3.m8">G</Math> is the modulus and <Math mode="inline" xml:id="C12.S2.SS6.p3.m9">\theta</Math> or <Math mode="inline" xml:id="C12.S2.SS6.p3.m10">\psi</Math> is the correspondingphase.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C12.S2.SS6.p4.s1">
+For properties of the modulus and phase functions, including differentialequations, see Miller (1955, pp. 72–73).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C12.S2.SS6.p4.s2">
+For graphs of the modulus functions see §12.3(i).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

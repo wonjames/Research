@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S26">
+<title>Integrals</title>         
+<subsection xml:id="C4.S26.SS1">
+<title>Introduction</title>         
+<para xml:id="C4.S26.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S26.SS1.p1.s1">
+Throughout this section the variables are assumed to be real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S26.SS1.p1.s2">
+The results in §§4.26(ii) and 4.26(iv) can be extended to the complex plane by using continuous branches and avoiding singularities.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S26.SS2">
+<title>Indefinite Integrals</title>          
+<para xml:id="C4.S26.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C4.S26.SS2.p1.s1">
+ <Math equation-number="4.26.1" mode="display" xml:id="C4.S26.E1">\int\sin x\mathrm{d}x=-\cos x,</Math> , <Math equation-number="4.26.2" mode="display" xml:id="C4.S26.E2">\int\cos x\mathrm{d}x=\sin x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C4.S26.SS2.p1.s2">
+<Math equation-number="4.26.3" mode="display" xml:id="C4.S26.E3">\int\tan x\mathrm{d}x=-\ln\left(\cos x\right), if -\tfrac{1}{2}\pi&lt;x&lt;\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C4.S26.SS2.p1.s3">
+<Math equation-number="4.26.4" mode="display" xml:id="C4.S26.E4">\int\csc x\mathrm{d}x=\ln\left(\tan\tfrac{1}{2}x\right), if 0&lt;x&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C4.S26.SS2.p1.s4">
+<Math equation-number="4.26.5" mode="display" xml:id="C4.S26.E5">\int\sec x\mathrm{d}x={\operatorname{gd}^{-1}}\left(x\right), if -\frac{1}{2}\pi&lt;x&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C4.S26.SS2.p1.s5">
+For the right-hand side see (4.23.41) and (4.23.42).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="8" xml:id="C4.S26.SS2.p1.s6">
+<Math equation-number="4.26.6" mode="display" xml:id="C4.S26.E6">\int\cot x\mathrm{d}x=\ln\left(\sin x\right), if 0&lt;x&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="9" xml:id="C4.S26.SS2.p1.s7">
+<Math equation-number="4.26.7" mode="display" xml:id="C4.S26.E7">\int e^{ax}\sin\left(bx\right)\mathrm{d}x=\frac{e^{ax}}{a^{2}+b^{2}}(a\sin \left(bx\right)-b\cos\left(bx\right)),</Math> <Math equation-number="4.26.8" mode="display" xml:id="C4.S26.E8">\int e^{ax}\cos\left(bx\right)\mathrm{d}x=\frac{e^{ax}}{a^{2}+b^{2}}(a\cos \left(bx\right)+b\sin\left(bx\right))</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S26.SS3">
+<title>Definite Integrals</title>          
+<para xml:id="C4.S26.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C4.S26.SS3.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C4.S26.SS3.p1.m1">m</Math> and <Math mode="inline" xml:id="C4.S26.SS3.p1.m2">n</Math> are integers.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C4.S26.Px1">
+<title>Orthogonality Properties</title>    
+<para xml:id="C4.S26.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C4.S26.Px1.p1.s1">
+ <Math equation-number="4.26.9" mode="display" xml:id="C4.S26.E9">\int_{0}^{\pi}\sin\left(mt\right)\sin\left(nt\right)\mathrm{d}t=0, if m\neq n,</Math> <Math equation-number="4.26.10" mode="display" xml:id="C4.S26.E10">\int_{0}^{\pi}\cos\left(mt\right)\cos\left(nt\right)\mathrm{d}t=0, if m\neq n,</Math> <Math equation-number="4.26.11" mode="display" xml:id="C4.S26.E11">\int_{0}^{\pi}{\sin^{2}}\left(nt\right)\mathrm{d}t=\int_{0}^{\pi}{\cos^{2}} \left(nt\right)\mathrm{d}t=\tfrac{1}{2}\pi, if n\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C4.S26.Px1.p1.s2">
+ <Math equation-number="4.26.12" mode="display" xml:id="C4.S26.E12">\int_{0}^{\infty}\frac{\sin\left(mt\right)}{t}\mathrm{d}t=\begin{cases}\frac{1 }{2}\pi,&amp;m&gt;0,\\ 0,&amp;m=0,\\ -\frac{1}{2}\pi,&amp;m&lt;0.\end{cases</Math> } <Math equation-number="4.26.13" mode="display" xml:id="C4.S26.E13">\int_{0}^{\infty}\sin\left(t^{2}\right)\mathrm{d}t=\int_{0}^{\infty}\cos\left( t^{2}\right)\mathrm{d}t=\frac{1}{2}\sqrt{\frac{\pi}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S26.SS4">
+<title>Inverse Trigonometric Functions</title>        
+  
+<para xml:id="C4.S26.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C4.S26.SS4.p1.s1">
+ <Math equation-number="4.26.14" mode="display" xml:id="C4.S26.E14">\int\operatorname{arcsin}x\mathrm{d}x=x\operatorname{arcsin}x+(1-x^{2})^{1/2}, if -1&lt;x&lt;1,</Math> <Math equation-number="4.26.15" mode="display" xml:id="C4.S26.E15">\int\operatorname{arccos}x\mathrm{d}x=x\operatorname{arccos}x-(1-x^{2})^{1/2}, if -1&lt;x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C4.S26.SS4.p1.s2">
+<Math equation-number="4.26.16" mode="display" xml:id="C4.S26.E16">\int\operatorname{arctan}x\mathrm{d}x=x\operatorname{arctan}x-\tfrac{1}{2}\ln \left(1+x^{2}\right), if -\infty&lt;x&lt;\infty,</Math> <Math equation-number="4.26.17" mode="display" xml:id="C4.S26.E17">\int\operatorname{arccsc}x\mathrm{d}x=x\operatorname{arccsc}x+\ln\left(x+(x^{2 }-1)^{1/2}\right), if 1&lt;x&lt;\infty,</Math> <Math equation-number="4.26.18" mode="display" xml:id="C4.S26.E18">\int\operatorname{arcsec}x\mathrm{d}x=x\operatorname{arcsec}x-\ln\left(x+(x^{2 }-1)^{1/2}\right), if 1&lt;x&lt;\infty,</Math> <Math equation-number="4.26.19" mode="display" xml:id="C4.S26.E19">\int\operatorname{arccot}x\mathrm{d}x=x\operatorname{arccot}x+\tfrac{1}{2}\ln \left(1+x^{2}\right), if 0&lt;x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C4.S26.SS4.p1.s3">
+<Math equation-number="4.26.20" mode="display" xml:id="C4.S26.E20">\int x\operatorname{arcsin}x\mathrm{d}x=\left(\frac{x^{2}}{2}-\frac{1}{4} \right)\operatorname{arcsin}x+\frac{x}{4}(1-x^{2})^{1/2}, if -1&lt;x&lt;1,</Math> <Math equation-number="4.26.21" mode="display" xml:id="C4.S26.E21">\int x\operatorname{arccos}x\mathrm{d}x=\left(\frac{x^{2}}{2}-\frac{1}{4} \right)\operatorname{arccos}x-\frac{x}{4}(1-x^{2})^{1/2}, if -1&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S26.SS5">
+<title>Compendia</title>         
+<para xml:id="C4.S26.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C4.S26.SS5.p1.s1">
+Extensive compendia of indefinite and definite integrals of trigonometric and inverse trigonometric functions include Apelblat (1983, pp. 48–109),Bierens de Haan (1939), Gradshteyn and Ryzhik (2000, Chapters 2–4),Gröbner and Hofreiter (1949, pp. 116–139), Gröbner and Hofreiter (1950, pp. 94–160), and Prudnikov et al. (1986a, §§1.5, 1.7, 2.5, 2.7).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

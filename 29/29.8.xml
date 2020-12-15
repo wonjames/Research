@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S8">
+<title>Integral Equations</title>          
+<para xml:id="C29.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S8.p1.s1">
+Let <Math mode="inline" xml:id="C29.S8.p1.m1">w(z)</Math> be any solution of (29.2.1) of period <Math mode="inline" xml:id="C29.S8.p1.m2">4\!K\</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S8.p1.s2">
+<Math mode="inline" xml:id="C29.S8.p1.m3">w_{2}(z)</Math> be a linearly independent solution, and <Math mode="inline" xml:id="C29.S8.p1.m4">\mathscr{W}\left\{w,w_{2}\right\}</Math> denote their Wronskian.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C29.S8.p1.s3">
+Also let <Math mode="inline" xml:id="C29.S8.p1.m5">x</Math> be defined by <Math equation-number="29.8.1" mode="display" xml:id="C29.S8.E1">x=k^{2}\operatorname{sn}\left(z,k\right)\operatorname{sn}\left(z_{1},k\right) \operatorname{sn}\left(z_{2},k\right)\operatorname{sn}\left(z_{3},k\right)- \frac{k^{2}}{{k^{\prime}}^{2}}\operatorname{cn}\left(z,k\right)\operatorname{ cn}\left(z_{1},k\right)\operatorname{cn}\left(z_{2},k\right)\operatorname{cn} \left(z_{3},k\right)+\frac{1}{{k^{\prime}}^{2}}\operatorname{dn}\left(z,k \right)\operatorname{dn}\left(z_{1},k\right)\operatorname{dn}\left(z_{2},k \right)\operatorname{dn}\left(z_{3},k\right),</Math> where <Math mode="inline" xml:id="C29.S8.p1.m6">z,z_{1},z_{2},z_{3}</Math> are real, and <Math mode="inline" xml:id="C29.S8.p1.m7">\operatorname{sn}</Math> , <Math mode="inline" xml:id="C29.S8.p1.m8">\operatorname{cn}</Math> , <Math mode="inline" xml:id="C29.S8.p1.m9">\operatorname{dn}</Math> are the Jacobian elliptic functions (§22.2).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C29.S8.p1.s4">
+Then <Math equation-number="29.8.2" mode="display" xml:id="C29.S8.E2">\mu w(z_{1})w(z_{2})w(z_{3})=\int_{-2\!K\!}^{2\!K\!}\mathsf{P}_{\nu}\left(x \right)w(z)\mathrm{d}z,</Math> where <Math mode="inline" xml:id="C29.S8.p1.m10">\mathsf{P}_{\nu}\left(x\right)</Math> is the Ferrers function of the first kind (§14.3(i)),
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C29.S8.p1.s5">
+<Math equation-number="29.8.3" mode="display" xml:id="C29.S8.E3">\mu=\frac{2\sigma\tau}{\mathscr{W}\left\{w,w_{2}\right\}},</Math> and <Math mode="inline" xml:id="C29.S8.p1.m11">\sigma</Math> (= <Math mode="inline" xml:id="C29.S8.p1.m12">\pm 1</Math> ) and <Math mode="inline" xml:id="C29.S8.p1.m13">\tau</Math> are determined by <Math equation-number="29.8.4" mode="display" xml:id="C29.S8.E4">w(z+2\!K\!)=\sigma w(z),w_{2}(z+2\!K\!)=\tau w(z)+\sigma w_{2}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C29.S8.p2.s1">
+A special case of (29.8.2) is <Math equation-number="29.8.5" mode="display" xml:id="C29.S8.E5">\mathit{Ec}^{2m}_{\nu}\left(z_{1},k^{2}\right)\frac{w_{2}(\!K\!)-w_{2}(-\!K\!) }{\left.\ifrac{\mathrm{d}w_{2}(z)}{\mathrm{d}z}\right|_{z=0}}=\int_{-\!K\!}^{ \!K\!}\mathsf{P}_{\nu}\left(y\right)\mathit{Ec}^{2m}_{\nu}\left(z,k^{2}\right) \mathrm{d}z,</Math> where <Math equation-number="29.8.6" mode="display" xml:id="C29.S8.E6">y=\frac{1}{k^{\prime}}\operatorname{dn}\left(z,k\right)\operatorname{dn}\left( z_{1},k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S8.p3">
+
+</para>
+  
+<para xml:id="C29.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C29.S8.p4.s1">
+Others are: <Math equation-number="29.8.7" mode="display" xml:id="C29.S8.E7">\mathit{Ec}^{2m+1}_{\nu}\left(z_{1},k^{2}\right)\frac{w_{2}(\!K\!)+w_{2}(-\!K \!)}{w_{2}(0)}=-k^{2}\operatorname{sn}\left(z_{1},k\right)\int_{-\!K\!}^{\!K\! }\operatorname{sn}\left(z,k\right)\frac{\mathrm{d}\mathsf{P}_{\nu}\left(y \right)}{\mathrm{d}y}\mathit{Ec}^{2m+1}_{\nu}\left(z,k^{2}\right)\mathrm{d}z,</Math> <Math equation-number="29.8.8" mode="display" xml:id="C29.S8.E8">\mathit{Es}^{2m+1}_{\nu}\left(z_{1},k^{2}\right)\frac{\left.\ifrac{\mathrm{d}w _{2}(z)}{\mathrm{d}z}\right|_{z=\!K\!}+\left.\ifrac{\mathrm{d}w_{2}(z)}{ \mathrm{d}z}\right|_{z=-\!K\!}}{\left.\ifrac{\mathrm{d}w_{2}(z)}{\mathrm{d}z} \right|_{z=0}}=\frac{k^{2}}{k^{\prime}}\operatorname{cn}\left(z_{1},k\right) \int_{-\!K\!}^{\!K\!}\operatorname{cn}\left(z,k\right)\frac{\mathrm{d}\mathsf{ P}_{\nu}\left(y\right)}{\mathrm{d}y}\mathit{Es}^{2m+1}_{\nu}\left(z,k^{2} \right)\mathrm{d}z,</Math> and <Math equation-number="29.8.9" mode="display" xml:id="C29.S8.E9">\mathit{Es}^{2m+2}_{\nu}\left(z_{1},k^{2}\right)\frac{\left.\ifrac{\mathrm{d}w _{2}(z)}{\mathrm{d}z}\right|_{z=\!K\!}-\left.\ifrac{\mathrm{d}w_{2}(z)}{ \mathrm{d}z}\right|_{z=-\!K\!}}{w_{2}(0)}=-\frac{k^{4}}{k^{\prime}} \operatorname{sn}\left(z_{1},k\right)\operatorname{cn}\left(z_{1},k\right)\int _{-\!K\!}^{\!K\!}\operatorname{sn}\left(z,k\right)\operatorname{cn}\left(z,k \right)\frac{{\mathrm{d}}^{2}\mathsf{P}_{\nu}\left(y\right)}{{\mathrm{d}y}^{2} }\mathit{Es}^{2m+2}_{\nu}\left(z,k^{2}\right)\mathrm{d}z</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C29.S8.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C29.S8.p5.s1">
+For further integral equations see Arscott (1964a),Erdélyi et al. (1955, §15.5.3),Shail (1980),Sleeman (1968a), and Volkmer (1982, 1983, 1984).
+</sentence>
+
+</para>
+ 
+</section>

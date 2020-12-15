@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C36.S10">
+<title>Differential Equations</title>        
+  
+<subsection xml:id="C36.S10.SS1">
+<title>Equations for <Math mode="inline" xml:id="C36.S10.SS1.m1">\Psi_{K}\left(\mathbf{x}\right)</Math></title>         
+<para xml:id="C36.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C36.S10.SS1.p1.s1">
+In terms of the normal form (36.2.1) the <Math mode="inline" xml:id="C36.S10.SS1.p1.m1">\Psi_{K}\left(\mathbf{x}\right)</Math> satisfy the operator equation <Math equation-number="36.10.1" mode="display" xml:id="C36.S10.E1">\Phi_{K}'\left(-i\frac{\partial}{\partial x_{1}};\mathbf{x}\right)\Psi_{K} \left(\mathbf{x}\right)=0,</Math> or explicitly, <Math equation-number="36.10.2" mode="display" xml:id="C36.S10.E2">\frac{{\partial}^{K+1}\Psi_{K}\left(\mathbf{x}\right)}{{\partial x_{1}}^{K+1}} +\sum_{m=1}^{K}(-i)^{m-K-2}\left(\frac{mx_{m}}{K+2}\right)\frac{{\partial}^{m- 1}\Psi_{K}\left(\mathbf{x}\right)}{{\partial x_{1}}^{m-1}}=0</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C36.S10.Px1">
+<title>Special Cases</title>   
+<para xml:id="C36.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C36.S10.Px1.p1.s1">
+ <Math mode="inline" xml:id="C36.S10.Px1.p1.m1">K=1</Math> , fold: (36.10.1)becomes Airy’s equation (§9.2(i))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C36.S10.Px1.p1.s2">
+<Math equation-number="36.10.3" mode="display" xml:id="C36.S10.E3">\frac{{\partial}^{2}\Psi_{1}}{{\partial x}^{2}}-\frac{x}{3}\Psi_{1}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C36.S10.Px1.p2.s1">
+ <Math mode="inline" xml:id="C36.S10.Px1.p2.m1">K=2</Math> , cusp: <Math equation-number="36.10.4" mode="display" xml:id="C36.S10.E4">\frac{{\partial}^{3}\Psi_{2}}{{\partial x}^{3}}-\frac{1}{2}y\frac{\partial\Psi _{2}}{\partial x}-\frac{i}{4}x\Psi_{2}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S10.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C36.S10.Px1.p3.s1">
+ <Math mode="inline" xml:id="C36.S10.Px1.p3.m1">K=3</Math> , swallowtail: <Math equation-number="36.10.5" mode="display" xml:id="C36.S10.E5">\frac{{\partial}^{4}\Psi_{3}}{{\partial x}^{4}}-\frac{3}{5}z\frac{{\partial}^{ 2}\Psi_{3}}{{\partial x}^{2}}-\frac{2i}{5}y\frac{\partial\Psi_{3}}{\partial x} +\frac{1}{5}x\Psi_{3}=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C36.S10.SS2">
+<title>Partial Derivatives with Respect to the <Math mode="inline" xml:id="C36.S10.SS2.m1">x_{n}</Math></title>         
+<para xml:id="C36.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C36.S10.SS2.p1.s1">
+ <Math equation-number="36.10.6" mode="display" xml:id="C36.S10.E6">\frac{{\partial}^{ln}\Psi_{K}}{{\partial x_{m}}^{ln}}=i^{n(l-m)}\frac{{ \partial}^{mn}\Psi_{K}}{{\partial x_{l}}^{mn}}, if 1\leq m\leq K, 1\leq l\leq K</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C36.S10.Px2">
+<title>Special Cases</title>   
+<para xml:id="C36.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C36.S10.Px2.p1.s1">
+ <Math mode="inline" xml:id="C36.S10.Px2.p1.m1">K=1</Math> , fold: (36.10.6) is an identity.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S10.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C36.S10.Px2.p2.s1">
+ <Math mode="inline" xml:id="C36.S10.Px2.p2.m1">K=2</Math> , cusp: <Math equation-number="36.10.7" mode="display" xml:id="C36.S10.E7">\frac{{\partial}^{2n}\Psi_{2}}{{\partial x}^{2n}}=i^{n}\frac{{\partial}^{n} \Psi_{2}}{{\partial y}^{n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S10.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C36.S10.Px2.p3.s1">
+ <Math mode="inline" xml:id="C36.S10.Px2.p3.m1">K=3</Math> , swallowtail: <Math equation-number="36.10.8" mode="display" xml:id="C36.S10.E8">\frac{{\partial}^{2n}\Psi_{3}}{{\partial x}^{2n}}=i^{n}\frac{{\partial}^{n} \Psi_{3}}{{\partial y}^{n}},</Math> , <Math equation-number="36.10.9" mode="display" xml:id="C36.S10.E9">\frac{{\partial}^{3n}\Psi_{3}}{{\partial x}^{3n}}=(-1)^{n}\frac{{\partial}^{n} \Psi_{3}}{{\partial z}^{n}},</Math> , <Math equation-number="36.10.10" mode="display" xml:id="C36.S10.E10">\frac{{\partial}^{3n}\Psi_{3}}{{\partial y}^{3n}}=i^{n}\frac{{\partial}^{2n} \Psi_{3}}{{\partial z}^{2n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C36.S10.SS3">
+<title>Operator Equations</title>         
+<para xml:id="C36.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C36.S10.SS3.p1.s1">
+In terms of the normal forms (36.2.2) and (36.2.3), the <Math mode="inline" xml:id="C36.S10.SS3.p1.m1">\Psi^{(\mathrm{U})}\left(\mathbf{x}\right)</Math> satisfy the following operator equations <Math equation-number="36.10.11" mode="display" xml:id="C36.S10.E11">{\Phi_{s}^{(\mathrm{U})}}\left(-i\frac{\partial}{\partial x},-i\frac{\partial} {\partial y};\mathbf{x}\right)\Psi^{(\mathrm{U})}\left(\mathbf{x}\right)=0,{\Phi_{t}^{(\mathrm{U})}}\left(-i\frac{\partial}{\partial x},-i\frac{\partial} {\partial y};\mathbf{x}\right)\Psi^{(\mathrm{U})}\left(\mathbf{x}\right)=0,</Math> where <Math equation-number="36.10.12" mode="display" xml:id="C36.S10.E12">{\Phi_{s}^{(\mathrm{U})}}\left(s,t;\mathbf{x}\right)=\frac{\partial}{\partial s }\Phi^{(\mathrm{U})}\left(s,t;\mathbf{x}\right),{\Phi_{t}^{(\mathrm{U})}}\left(s,t;\mathbf{x}\right)=\frac{\partial}{\partial t }\Phi^{(\mathrm{U})}\left(s,t;\mathbf{x}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C36.S10.SS3.p1.s2">
+Explicitly, <Math equation-number="36.10.13" mode="display" xml:id="C36.S10.E13">6\frac{{\partial}^{2}\Psi^{(\mathrm{E})}}{\partial x\partial y}-2iz\frac{ \partial\Psi^{(\mathrm{E})}}{\partial y}+y\Psi^{(\mathrm{E})}=0,</Math> <Math equation-number="36.10.14" mode="display" xml:id="C36.S10.E14">3\left(\frac{{\partial}^{2}\Psi^{(\mathrm{E})}}{{\partial x}^{2}}-\frac{{ \partial}^{2}\Psi^{(\mathrm{E})}}{{\partial y}^{2}}\right)+2iz\frac{\partial \Psi^{(\mathrm{E})}}{\partial x}-x\Psi^{(\mathrm{E})}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C36.S10.SS3.p1.s3">
+<Math equation-number="36.10.15" mode="display" xml:id="C36.S10.E15">3\frac{{\partial}^{2}\Psi^{(\mathrm{H})}}{{\partial x}^{2}}+iz\frac{\partial \Psi^{(\mathrm{H})}}{\partial y}-x\Psi^{(\mathrm{H})}=0,</Math> <Math equation-number="36.10.16" mode="display" xml:id="C36.S10.E16">3\frac{{\partial}^{2}\Psi^{(\mathrm{H})}}{{\partial y}^{2}}+iz\frac{\partial \Psi^{(\mathrm{H})}}{\partial x}-y\Psi^{(\mathrm{H})}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C36.S10.SS4">
+<title>Partial <Math mode="inline" xml:id="C36.S10.SS4.m1">z</Math>-Derivatives</title>         
+<para xml:id="C36.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C36.S10.SS4.p1.s1">
+ <Math equation-number="36.10.17" mode="display" xml:id="C36.S10.E17">i\frac{\partial\Psi^{(\mathrm{E})}}{\partial z}=\frac{{\partial}^{2}\Psi^{( \mathrm{E})}}{{\partial x}^{2}}+\frac{{\partial}^{2}\Psi^{(\mathrm{E})}}{{ \partial y}^{2}},</Math> <Math equation-number="36.10.18" mode="display" xml:id="C36.S10.E18">i\frac{\partial\Psi^{(\mathrm{H})}}{\partial z}=\frac{{\partial}^{2}\Psi^{( \mathrm{H})}}{\partial x\partial y}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C36.S10.SS4.p1.s2">
+Equation (36.10.17) is the paraxial wave equation.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

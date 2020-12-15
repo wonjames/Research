@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S4">
+<title>Partitions and Zonal Polynomials</title>          
+<subsection xml:id="C35.S4.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S4.SS1.p1.s1">
+A partition <Math mode="inline" xml:id="C35.S4.SS1.p1.m1">\kappa=(k_{1},\dots,k_{m})</Math> is a vector of nonnegative integers, listed in nonincreasing order.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C35.S4.SS1.p1.s2">
+Also, <Math mode="inline" xml:id="C35.S4.SS1.p1.m2">|\kappa|</Math> denotes <Math mode="inline" xml:id="C35.S4.SS1.p1.m3">k_{1}+\dots+k_{m}</Math> , the weight of <Math mode="inline" xml:id="C35.S4.SS1.p1.m4">\kappa</Math> ; <Math mode="inline" xml:id="C35.S4.SS1.p1.m5">\ell(\kappa)</Math> denotes the number of nonzero <Math mode="inline" xml:id="C35.S4.SS1.p1.m6">k_{j}</Math> ; <Math mode="inline" xml:id="C35.S4.SS1.p1.m7">a+\kappa</Math> denotes the vector <Math mode="inline" xml:id="C35.S4.SS1.p1.m8">(a+k_{1},\dots,a+k_{m})</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C35.S4.SS1.p2.s1">
+The partitional shifted factorial is given by <Math equation-number="35.4.1" mode="display" xml:id="C35.S4.E1">{\left[a\right]_{\kappa}}=\frac{\Gamma_{m}\left(a+\kappa\right)}{\Gamma_{m} \left(a\right)}=\prod_{j=1}^{m}{\left(a-\tfrac{1}{2}(j-1)\right)_{k_{j}}},</Math> where <Math mode="inline" xml:id="C35.S4.SS1.p2.m1">{\left(a\right)_{k}}=a(a+1)\cdots(a+k-1)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S4.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S4.SS1.p3.s1">
+For any partition <Math mode="inline" xml:id="C35.S4.SS1.p3.m1">\kappa</Math> , the zonal polynomial <Math mode="inline" xml:id="C35.S4.SS1.p3.m2">Z_{\kappa}:\boldsymbol{\mathcal{S}}\to\mathbb{R}</Math> is defined by the properties <Math equation-number="35.4.2" mode="display" xml:id="C35.S4.E2">Z_{\kappa}\left(\mathbf{I}\right)=|\kappa|!\,2^{2|\kappa|}\,{\left[m/2\right]_ {\kappa}}\frac{\prod\limits_{1\leq j&lt;l\leq\ell(\kappa)}(2k_{j}-2k_{l}-j+l)}{ \prod\limits_{j=1}^{\ell(\kappa)}(2k_{j}+\ell(\kappa)-j)!</Math> } and <Math equation-number="35.4.3" mode="display" xml:id="C35.S4.E3">Z_{\kappa}\left(\mathbf{T}\right)=Z_{\kappa}\left(\mathbf{I}\right)\,|\mathbf{ T}|^{k_{m}}\*\int\limits_{\mathbf{O}(m)}\prod_{j=1}^{m-1}|(\mathbf{H}\mathbf{T }\mathbf{H}^{-1})_{j}|^{k_{j}-k_{j+1}}\mathrm{d}\mathbf{H}, if \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S4.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C35.S4.SS1.p4.s1">
+See Muirhead (1982, pp. 68–72) for the definition and properties of the Haar measure <Math mode="inline" xml:id="C35.S4.SS1.p4.m1">\mathrm{d}\mathbf{H}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C35.S4.SS1.p4.s2">
+See Hua (1963, p. 30),Constantine (1963), James (1964), andMacdonald (1995, pp. 425–431) for further information on (35.4.2) and (35.4.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C35.S4.SS1.p4.s3">
+Alternative notations for the zonal polynomials are <Math mode="inline" xml:id="C35.S4.SS1.p4.m2">C_{\kappa}(\mathbf{T})</Math> (Muirhead (1982, pp. 227–239)), <Math mode="inline" xml:id="C35.S4.SS1.p4.m3">\mathcal{Y}_{\kappa}(\mathbf{T})</Math> (Takemura (1984, p. 22)), and <Math mode="inline" xml:id="C35.S4.SS1.p4.m4">\Phi_{\kappa}(\mathbf{T})</Math> (Faraut and Korányi (1994, pp. 228–236)).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S4.SS2">
+<title>Properties</title>         
+<paragraph xml:id="C35.S4.Px1">
+<title>Normalization</title>    
+<para xml:id="C35.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C35.S4.Px1.p1.s1">
+ <Math equation-number="35.4.4" mode="display" xml:id="C35.S4.E4">Z_{\kappa}\left(\boldsymbol{{0}}\right)=\begin{cases}1,&amp;\kappa=(0,\dots,0),\\ 0,&amp;\kappa\neq(0,\dots,0).\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px2">
+<title>Orthogonal Invariance</title>    
+<para xml:id="C35.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C35.S4.Px2.p1.s1">
+ <Math equation-number="35.4.5" mode="display" xml:id="C35.S4.E5">Z_{\kappa}\left(\mathbf{H}\mathbf{T}\mathbf{H}^{-1}\right)=Z_{\kappa}\left( \mathbf{T}\right), if \mathbf{H}\in\mathbf{O}(m)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C35.S4.Px2.p1.s2">
+Therefore <Math mode="inline" xml:id="C35.S4.Px2.p1.m1">Z_{\kappa}\left(\mathbf{T}\right)</Math> is a symmetric polynomial in the eigenvalues of <Math mode="inline" xml:id="C35.S4.Px2.p1.m2">\mathbf{T}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px3">
+<title>Summation</title>    
+<para xml:id="C35.S4.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C35.S4.Px3.p1.s1">
+For <Math mode="inline" xml:id="C35.S4.Px3.p1.m1">k=0,1,2,\dots</Math> , <Math equation-number="35.4.6" mode="display" xml:id="C35.S4.E6">\sum_{|\kappa|=k}Z_{\kappa}\left(\mathbf{T}\right)=(\operatorname{tr}{\mathbf{ T}})^{k}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px4">
+<title>Mean-Value</title>    
+<para xml:id="C35.S4.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C35.S4.Px4.p1.s1">
+ <Math equation-number="35.4.7" mode="display" xml:id="C35.S4.E7">\int_{\mathbf{O}(m)}Z_{\kappa}\left(\mathbf{S}\mathbf{H}\mathbf{T}\mathbf{H}^{ -1}\right)\mathrm{d}\mathbf{H}=\frac{Z_{\kappa}\left(\mathbf{S}\right)Z_{ \kappa}\left(\mathbf{T}\right)}{Z_{\kappa}\left(\mathbf{I}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px5">
+<title>Laplace and Beta Integrals</title>     
+<para xml:id="C35.S4.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C35.S4.Px5.p1.s1">
+For <Math mode="inline" xml:id="C35.S4.Px5.p1.m1">\mathbf{T}\in{\boldsymbol{\Omega}}</Math> and <Math mode="inline" xml:id="C35.S4.Px5.p1.m2">\Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math> , <Math equation-number="35.4.8" mode="display" xml:id="C35.S4.E8">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)\,| \mathbf{X}|^{a-\frac{1}{2}(m+1)}Z_{\kappa}\left(\mathbf{X}\right)\mathrm{d} \mathbf{X}=\Gamma_{m}\left(a+\kappa\right)\,|\mathbf{T}|^{-a}Z_{\kappa}\left( \mathbf{T}^{-1}\right),</Math> <Math equation-number="35.4.9" mode="display" xml:id="C35.S4.E9">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}|^{a-\frac{1}{2 }(m+1)}\*|\mathbf{I}-\mathbf{X}|^{b-\frac{1}{2}(m+1)}Z_{\kappa}\left(\mathbf{T }\mathbf{X}\right)\mathrm{d}\mathbf{X}=\frac{{\left[a\right]_{\kappa}}}{{\left [a+b\right]_{\kappa}}}\mathrm{B}_{m}\left(a,b\right)Z_{\kappa}\left(\mathbf{T} \right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

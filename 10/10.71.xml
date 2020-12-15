@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S71">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C10.S71.SS1">
+<title>Indefinite Integrals</title>        
+ 
+ 
+<para xml:id="C10.S71.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S71.SS1.p1.s1">
+In the following equations <Math mode="inline" xml:id="C10.S71.SS1.p1.m1">f_{\nu},g_{\nu}</Math> is any one of the four ordered pairs given in ( 10.63.1), and <Math mode="inline" xml:id="C10.S71.SS1.p1.m2">\widehat{f}_{\nu},\widehat{g}_{\nu}</Math> is either the same ordered pair or any other ordered pair in (10.63.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S71.SS1.p1.s2">
+<Math equation-number="10.71.1" mode="display" xml:id="C10.S71.E1">\int x^{1+\nu}f_{\nu}\mathrm{d}x=-\frac{x^{1+\nu}}{\sqrt{2}}(f_{\nu+1}-g_{\nu+ 1})=-x^{1+\nu}\left(\frac{\nu}{x}g_{\nu}-g_{\nu}^{\prime}\right),</Math> , <Math equation-number="10.71.2" mode="display" xml:id="C10.S71.E2">\int x^{1-\nu}f_{\nu}\mathrm{d}x=\frac{x^{1-\nu}}{\sqrt{2}}(f_{\nu-1}-g_{\nu-1 })=x^{1-\nu}\left(\frac{\nu}{x}g_{\nu}+g_{\nu}^{\prime}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S71.SS1.p1.s3">
+<Math equation-number="10.71.3" mode="display" xml:id="C10.S71.E3">\int x(f_{\nu}\widehat{g}_{\nu}-g_{\nu}\widehat{f}_{\nu})\mathrm{d}x=\frac{x}{ 2\sqrt{2}}\left(\widehat{f}_{\nu}(f_{\nu+1}+g_{\nu+1})-\widehat{g}_{\nu}(f_{ \nu+1}-g_{\nu+1})-f_{\nu}(\widehat{f}_{\nu+1}+\widehat{g}_{\nu+1})+g_{\nu}( \widehat{f}_{\nu+1}-\widehat{g}_{\nu+1})\right)=\tfrac{1}{2}x(f_{\nu}^{\prime} \widehat{f}_{\nu}-f_{\nu}\widehat{f}_{\nu}^{\prime}+g_{\nu}^{\prime}\widehat{g }_{\nu}-g_{\nu}\widehat{g}^{\prime}_{\nu}),</Math> , <Math equation-number="10.71.4" mode="display" xml:id="C10.S71.E4">\int x(f_{\nu}\widehat{g}_{\nu}+g_{\nu}\widehat{f}_{\nu})\mathrm{d}x=\tfrac{1} {4}x^{2}(2f_{\nu}\widehat{g}_{\nu}-f_{\nu-1}\widehat{g}_{\nu+1}-f_{\nu+1} \widehat{g}_{\nu-1}+2g_{\nu}\widehat{f}_{\nu}-g_{\nu-1}\widehat{f}_{\nu+1}-g_{ \nu+1}\widehat{f}_{\nu-1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S71.SS1.p1.s4">
+<Math equation-number="10.71.5" mode="display" xml:id="C10.S71.E5">\int x(f_{\nu}^{2}+g_{\nu}^{2})\mathrm{d}x=x(f_{\nu}g_{\nu}^{\prime}-f_{\nu}^{ \prime}g_{\nu})=-\frac{x}{\sqrt{2}}(f_{\nu}f_{\nu+1}+g_{\nu}g_{\nu+1}-f_{\nu}g _{\nu+1}+f_{\nu+1}g_{\nu}),</Math> <Math equation-number="10.71.6" mode="display" xml:id="C10.S71.E6">\int xf_{\nu}g_{\nu}\mathrm{d}x=\tfrac{1}{4}x^{2}\left(2f_{\nu}g_{\nu}-f_{\nu- 1}g_{\nu+1}-f_{\nu+1}g_{\nu-1}\right),</Math> , <Math equation-number="10.71.7" mode="display" xml:id="C10.S71.E7">\int x(f_{\nu}^{2}-g_{\nu}^{2})\mathrm{d}x=\tfrac{1}{2}x^{2}\left(f_{\nu}^{2}- f_{\nu-1}f_{\nu+1}-g_{\nu}^{2}+g_{\nu-1}g_{\nu+1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S71.Px1">
+<title>Examples</title>   
+<para xml:id="C10.S71.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S71.Px1.p1.s1">
+ <Math equation-number="10.71.8" mode="display" xml:id="C10.S71.E8">\int x{M_{\nu}^{2}}\left(x\right)\mathrm{d}x=x(\operatorname{ber}_{\nu}x \operatorname{bei}_{\nu}'x-\operatorname{ber}_{\nu}'x\operatorname{bei}_{\nu}x),\int x{N_{\nu}^{2}}\left(x\right)\mathrm{d}x=x(\operatorname{ker}_{\nu}x \operatorname{kei}_{\nu}'x-\operatorname{ker}_{\nu}'x\operatorname{kei}_{\nu}x),</Math> where <Math mode="inline" xml:id="C10.S71.Px1.p1.m1">M_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S71.Px1.p1.m2">N_{\nu}\left(x\right)</Math> are the modulus functions introduced in §10.68(i).
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S71.SS2">
+<title>Definite Integrals</title>        
+  
+<para xml:id="C10.S71.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S71.SS2.p1.s1">
+See Kerr (1978) and Glasser (1979).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S71.SS3">
+<title>Compendia</title>        
+  
+<para xml:id="C10.S71.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S71.SS3.p1.s1">
+For infinite double integrals involving Kelvin functions seePrudnikov et al. (1986b, pp. 630–631).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S71.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S71.SS3.p2.s1">
+For direct and inverse Laplace transforms of Kelvin functions seePrudnikov et al. (1992a, §3.19) andPrudnikov et al. (1992b, §3.19).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

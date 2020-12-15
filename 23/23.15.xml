@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S15">
+<title>Definitions</title>            
+ 
+<subsection xml:id="C23.S15.SS1">
+<title>General Modular Functions</title>         
+ 
+<para xml:id="C23.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S15.SS1.p1.s1">
+In §§23.15–23.19,
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C23.S15.SS1.p1.s2">
+<Math mode="inline" xml:id="C23.S15.SS1.p1.m1">k</Math> and <Math mode="inline" xml:id="C23.S15.SS1.p1.m2">k^{\prime}</Math> <Math mode="inline" xml:id="C23.S15.SS1.p1.m3">(\in\mathbb{C})</Math> denote the Jacobi modulus and complementary modulus, respectively, and <Math mode="inline" xml:id="C23.S15.SS1.p1.m4">q=e^{i\pi\tau}</Math> ( <Math mode="inline" xml:id="C23.S15.SS1.p1.m5">\Im\tau&gt;0</Math> ) denotes the nome; compare §§20.1 and 22.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C23.S15.SS1.p1.s3">
+Thus <Math equation-number="23.15.1" mode="display" xml:id="C23.S15.E1">q=\exp\left(-\pi\frac{{K^{\prime}}\left(k\right)}{K\left(k\right)}\right),</Math> <Math equation-number="23.15.2" mode="display" xml:id="C23.S15.E2">k=\frac{{\theta_{2}^{2}}\left(0,q\right)}{{\theta_{3}^{2}}\left(0,q\right)},k^{\prime}=\frac{{\theta_{4}^{2}}\left(0,q\right)}{{\theta_{3}^{2}}\left(0,q \right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C23.S15.SS1.p2.s1">
+Also <Math mode="inline" xml:id="C23.S15.SS1.p2.m1">\mathcal{A}</Math> denotes a bilinear transformation on <Math mode="inline" xml:id="C23.S15.SS1.p2.m2">\tau</Math> , given by <Math equation-number="23.15.3" mode="display" xml:id="C23.S15.E3">\mathcal{A}\tau=\frac{a\tau+b}{c\tau+d},</Math> in which <Math mode="inline" xml:id="C23.S15.SS1.p2.m3">a,b,c,d</Math> are integers, with <Math equation-number="23.15.4" mode="display" xml:id="C23.S15.E4">ad-bc=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C23.S15.SS1.p2.s2">
+The set of all bilinear transformations of this form is denoted bySL <Math mode="inline" xml:id="C23.S15.SS1.p2.m4">(2,\mathbb{Z})</Math> (Serre (1973, p. 77)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C23.S15.SS1.p3.s1">
+A modular function <Math mode="inline" xml:id="C23.S15.SS1.p3.m1">f(\tau)</Math> is a function of <Math mode="inline" xml:id="C23.S15.SS1.p3.m2">\tau</Math> that is meromorphic in the half-plane <Math mode="inline" xml:id="C23.S15.SS1.p3.m3">\Im\tau&gt;0</Math> , and has the property that for all <Math mode="inline" xml:id="C23.S15.SS1.p3.m4">\mathcal{A}\in\mbox{SL}(2,\mathbb{Z})</Math> , or for all <Math mode="inline" xml:id="C23.S15.SS1.p3.m5">\mathcal{A}</Math> belonging to a subgroup of SL <Math mode="inline" xml:id="C23.S15.SS1.p3.m6">(2,\mathbb{Z})</Math> , <Math equation-number="23.15.5" mode="display" xml:id="C23.S15.E5">f(\mathcal{A}\tau)=c_{\mathcal{A}}(c\tau+d)^{\ell}f(\tau), if \Im\tau&gt;0,</Math> where <Math mode="inline" xml:id="C23.S15.SS1.p3.m7">c_{\mathcal{A}}</Math> is a constant depending only on <Math mode="inline" xml:id="C23.S15.SS1.p3.m8">\mathcal{A}</Math> , and <Math mode="inline" xml:id="C23.S15.SS1.p3.m9">\ell</Math> (the level) is an integer or half an odd integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C23.S15.SS1.p3.s2">
+(Some references refer to <Math mode="inline" xml:id="C23.S15.SS1.p3.m10">2\ell</Math> as the level).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C23.S15.SS1.p3.s3">
+If, as a function of <Math mode="inline" xml:id="C23.S15.SS1.p3.m11">q</Math> , <Math mode="inline" xml:id="C23.S15.SS1.p3.m12">f(\tau)</Math> is analytic at <Math mode="inline" xml:id="C23.S15.SS1.p3.m13">q=0</Math> , then <Math mode="inline" xml:id="C23.S15.SS1.p3.m14">f(\tau)</Math> is called a modular form.If, in addition, <Math mode="inline" xml:id="C23.S15.SS1.p3.m15">f(\tau)\to 0</Math> as <Math mode="inline" xml:id="C23.S15.SS1.p3.m16">q\to 0</Math> , then <Math mode="inline" xml:id="C23.S15.SS1.p3.m17">f(\tau)</Math> is called acusp form.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S15.SS2">
+<title>Functions <Math mode="inline" xml:id="C23.S15.SS2.m1">\lambda\left(\tau\right)</Math>, <Math mode="inline" xml:id="C23.S15.SS2.m2">J\left(\tau\right)</Math>,<Math mode="inline" xml:id="C23.S15.SS2.m3">\eta\left(\tau\right)</Math></title>          
+<paragraph xml:id="C23.S15.Px1">
+<title>Elliptic Modular Function</title>   
+<para xml:id="C23.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C23.S15.Px1.p1.s1">
+ <Math equation-number="23.15.6" mode="display" xml:id="C23.S15.E6">\lambda\left(\tau\right)=\frac{{\theta_{2}^{4}}\left(0,q\right)}{{\theta_{3}^{ 4}}\left(0,q\right)};</Math> compare also (23.15.2).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S15.Px2">
+<title>Klein’s Complete Invariant</title>    
+<para xml:id="C23.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C23.S15.Px2.p1.s1">
+ <Math equation-number="23.15.7" mode="display" xml:id="C23.S15.E7">J\left(\tau\right)=\frac{\left({\theta_{2}^{8}}\left(0,q\right)+{\theta_{3}^{8 }}\left(0,q\right)+{\theta_{4}^{8}}\left(0,q\right)\right)^{3}}{54\left(\theta _{1}'\left(0,q\right)\right)^{8}},</Math> where (as in §20.2(i))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C23.S15.Px2.p1.s2">
+<Math equation-number="23.15.8" mode="display" xml:id="C23.S15.E8">\theta_{1}'\left(0,q\right)=\ifrac{\partial\theta_{1}\left(z,q\right)}{ \partial z}|_{z=0}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S15.Px3">
+<title>Dedekind’s Eta Function (or Dedekind Modular Function)</title>      
+<para xml:id="C23.S15.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C23.S15.Px3.p1.s1">
+ <Math equation-number="23.15.9" mode="display" xml:id="C23.S15.E9">\eta\left(\tau\right)=\left(\tfrac{1}{2}\theta_{1}'\left(0,q\right)\right)^{1/ 3}=e^{i\pi\tau/12}\theta_{3}\left(\tfrac{1}{2}\pi(1+\tau)\middle|3\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C23.S15.Px3.p1.s2">
+In (23.15.9) the branch of the cube root is chosen to agree with the second equality; in particular, when <Math mode="inline" xml:id="C23.S15.Px3.p1.m1">\tau</Math> lies on the positive imaginary axis the cube root is real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C23.S15.Px3.p1.s3">
+See also 27.14.12.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

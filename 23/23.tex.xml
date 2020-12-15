@@ -1,0 +1,2122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C23">
+<title>Weierstrass Elliptic and Modular Functions</title>                
+          
+<section xml:id="C23.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C23.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C23.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r1.m1">\mathbb{L}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C23.S1.p2.t1.s2">
+lattice in <Math mode="inline" xml:id="C23.S1.p2.t1.r1.m2">\mathbb{C}</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C23.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r2.m1">\ell,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C23.S1.p2.t1.s4">
+integers.    
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C23.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r3.m1">m</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C23.S1.p2.t1.s6">
+integer, except in §LABEL:sec:WE.21(ii).  
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C23.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r4.m1">z=x+iy</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C23.S1.p2.t1.s8">
+complex variable, except in §§LABEL:sec:WE.21(ii),LABEL:sec:WE.22(iii).      
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C23.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r5.m1">[a,b]</Math> or <Math mode="inline" xml:id="C23.S1.p2.t1.r5.m2">(a,b)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C23.S1.p2.t1.s10">
+closed, or open, straight-line segment joining <Math mode="inline" xml:id="C23.S1.p2.t1.r5.m3">a</Math> and <Math mode="inline" xml:id="C23.S1.p2.t1.r5.m4">b</Math>, whether or not <Math mode="inline" xml:id="C23.S1.p2.t1.r5.m5">a</Math> and <Math mode="inline" xml:id="C23.S1.p2.t1.r5.m6">b</Math> are real.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C23.S1.p2.t1.s11">
+primes
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C23.S1.p2.t1.s12">
+derivatives with respect to the variable, except where indicated otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C23.S1.p2.t1.s13">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r7.m1">K\left(k\right)</Math>, <Math mode="inline" xml:id="C23.S1.p2.t1.r7.m2">K'\left(k\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C23.S1.p2.t1.s14">
+complete elliptic integrals (§LABEL:sec:EL.LD.EI).
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="16" sentence-num-in-table="15" xml:id="C23.S1.p2.t1.s15">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r8.m1">2\omega_{1},2\omega_{3}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="17" sentence-num-in-table="16" xml:id="C23.S1.p2.t1.s16">
+lattice generators (<Math mode="inline" xml:id="C23.S1.p2.t1.r8.m2">\Im(\omega_{3}/\omega_{1})&gt;0</Math>).  
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="18" sentence-num-in-table="17" xml:id="C23.S1.p2.t1.s17">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r9.m1">\omega_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="19" sentence-num-in-table="18" xml:id="C23.S1.p2.t1.s18">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r9.m2">-\omega_{1}-\omega_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="20" sentence-num-in-table="19" xml:id="C23.S1.p2.t1.s19">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r10.m1">\tau=\omega_{3}/\omega_{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="21" sentence-num-in-table="20" xml:id="C23.S1.p2.t1.s20">
+lattice parameter (<Math mode="inline" xml:id="C23.S1.p2.t1.r10.m2">\Im\tau&gt;0</Math>).  
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="22" sentence-num-in-table="21" xml:id="C23.S1.p2.t1.s21">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r11.m1">q=e^{i\pi\omega_{3}/\omega_{1}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="23" sentence-num-in-table="22" xml:id="C23.S1.p2.t1.s22">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r12.m1">\phantom{q}=e^{i\pi\tau}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="24" sentence-num-in-table="23" xml:id="C23.S1.p2.t1.s23">
+nome.  
+</sentence>
+
+<sentence sentence-num-in-para="24" sentence-num-in-section="25" sentence-num-in-table="24" xml:id="C23.S1.p2.t1.s24">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r13.m1">\Delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="25" sentence-num-in-section="26" sentence-num-in-table="25" xml:id="C23.S1.p2.t1.s25">
+discriminant <Math mode="inline" xml:id="C23.S1.p2.t1.r13.m2">{g_{2}^{3}}-27{g_{3}^{2}}</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="26" sentence-num-in-section="27" sentence-num-in-table="26" xml:id="C23.S1.p2.t1.s26">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r14.m1">n\mathbb{Z}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="27" sentence-num-in-section="28" sentence-num-in-table="27" xml:id="C23.S1.p2.t1.s27">
+set of all integer multiples of <Math mode="inline" xml:id="C23.S1.p2.t1.r14.m2">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="28" sentence-num-in-section="29" sentence-num-in-table="28" xml:id="C23.S1.p2.t1.s28">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r15.m1">S_{1}/S_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="29" sentence-num-in-section="30" sentence-num-in-table="29" xml:id="C23.S1.p2.t1.s29">
+set of all elements of <Math mode="inline" xml:id="C23.S1.p2.t1.r15.m2">S_{1}</Math>, modulo elements of <Math mode="inline" xml:id="C23.S1.p2.t1.r15.m3">S_{2}</Math>. Thus two elements of <Math mode="inline" xml:id="C23.S1.p2.t1.r15.m4">S_{1}/S_{2}</Math> are equivalent if they are both in <Math mode="inline" xml:id="C23.S1.p2.t1.r15.m5">S_{1}</Math> and their difference is in <Math mode="inline" xml:id="C23.S1.p2.t1.r15.m6">S_{2}</Math>. (For an example see §LABEL:sec:TH.of.et.)
+</sentence>
+
+<sentence sentence-num-in-para="30" sentence-num-in-section="31" sentence-num-in-table="30" xml:id="C23.S1.p2.t1.s30">
+<Math mode="inline" xml:id="C23.S1.p2.t1.r16.m1">G\times H</Math>
+</sentence>
+
+<sentence sentence-num-in-para="31" sentence-num-in-section="32" sentence-num-in-table="31" xml:id="C23.S1.p2.t1.s31">
+Cartesian product of groups <Math mode="inline" xml:id="C23.S1.p2.t1.r16.m2">G</Math> and <Math mode="inline" xml:id="C23.S1.p2.t1.r16.m3">H</Math>, that is, the set of all pairs of elements <Math mode="inline" xml:id="C23.S1.p2.t1.r16.m4">(g,h)</Math> with group operation <Math mode="inline" xml:id="C23.S1.p2.t1.r16.m5">(g_{1},h_{1})+(g_{2},h_{2})=(g_{1}+g_{2},h_{1}+h_{2})</Math>.
+</sentence>
+
+</para>
+ 
+    
+<para xml:id="C23.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C23.S1.p3.s1">
+The main functions treated in this chapter are the Weierstrass <Math mode="inline" xml:id="C23.S1.p3.m1">\wp</Math> -function <Math mode="inline" xml:id="C23.S1.p3.m2">\wp\left(z\right)=\wp\left(z|\mathbb{L}\right)=\wp\left(z;g_{2},g_{3}\right)</Math> ; the Weierstrass zeta function <Math mode="inline" xml:id="C23.S1.p3.m3">\zeta\left(z\right)=\zeta\left(z|\mathbb{L}\right)=\zeta\left(z;g_{2},g_{3}\right)</Math> ; the Weierstrass sigma function <Math mode="inline" xml:id="C23.S1.p3.m4">\sigma\left(z\right)=\sigma\left(z|\mathbb{L}\right)=\sigma\left(z;g_{2},g_{3}\right)</Math> ; the elliptic modular function <Math mode="inline" xml:id="C23.S1.p3.m5">\lambda\left(\tau\right)</Math> ; Klein’s complete invariant <Math mode="inline" xml:id="C23.S1.p3.m6">J\left(\tau\right)</Math> ; Dedekind’s eta function <Math mode="inline" xml:id="C23.S1.p3.m7">\eta\left(\tau\right)</Math>.
+</sentence>
+
+</para>
+        
+   
+<paragraph xml:id="C23.S1.Px1">
+<title>Other Notations</title>   
+<para xml:id="C23.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C23.S1.Px1.p1.s1">
+( ) requires only <Math mode="inline" xml:id="C23.S1.Px1.p1.m1">\Im(\omega_{3}/\omega_{1})\neq 0</Math> , instead of <Math mode="inline" xml:id="C23.S1.Px1.p1.m2">\Im(\omega_{3}/\omega_{1})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C23.S1.Px1.p1.s2">
+( , Chapter 18) considers only rectangular and rhombic lattices (§LABEL:sec:WE.6);
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C23.S1.Px1.p1.s3">
+<Math mode="inline" xml:id="C23.S1.Px1.p1.m3">\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S1.Px1.p1.m4">\omega_{3}</Math> are replaced by <Math mode="inline" xml:id="C23.S1.Px1.p1.m5">\omega</Math> , <Math mode="inline" xml:id="C23.S1.Px1.p1.m6">\omega^{\prime}</Math> for the former and by <Math mode="inline" xml:id="C23.S1.Px1.p1.m7">\omega_{2}</Math> , <Math mode="inline" xml:id="C23.S1.Px1.p1.m8">\omega^{\prime}</Math> for the latter.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C23.S1.Px1.p1.s4">
+( ) and ( ) replace <Math mode="inline" xml:id="C23.S1.Px1.p1.m9">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S1.Px1.p1.m10">2\omega_{3}</Math> by <Math mode="inline" xml:id="C23.S1.Px1.p1.m11">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S1.Px1.p1.m12">\omega_{3}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="38" xml:id="C23.S1.Px1.p1.s5">
+( ) normalizes <Math mode="inline" xml:id="C23.S1.Px1.p1.m13">2\omega_{1}=1</Math> , <Math mode="inline" xml:id="C23.S1.Px1.p1.m14">2\omega_{3}=\tau</Math> , and uses homogeneity (§LABEL:sec:WE.10(iv)).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="39" xml:id="C23.S1.Px1.p1.s6">
+( ) replaces <Math mode="inline" xml:id="C23.S1.Px1.p1.m15">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S1.Px1.p1.m16">2\omega_{3}</Math> by <Math mode="inline" xml:id="C23.S1.Px1.p1.m17">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S1.Px1.p1.m18">\omega_{2}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+<section xml:id="C23.S2">
+<title>Definitions and Periodic Properties</title>         
+<subsection xml:id="C23.S2.SS1">
+<title>Lattices</title>             
+<para xml:id="C23.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C23.S2.SS1.p1.s1">
+If <Math mode="inline" xml:id="C23.S2.SS1.p1.m1">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S2.SS1.p1.m2">\omega_{3}</Math> are nonzero real or complex numbers such that <Math mode="inline" xml:id="C23.S2.SS1.p1.m3">\Im(\omega_{3}/\omega_{1})&gt;0</Math> , then the set of points <Math mode="inline" xml:id="C23.S2.SS1.p1.m4">2m\omega_{1}+2n\omega_{3}</Math> , with <Math mode="inline" xml:id="C23.S2.SS1.p1.m5">m,n\in\mathbb{Z}</Math> , constitutes a lattice <Math mode="inline" xml:id="C23.S2.SS1.p1.m6">\mathbb{L}</Math> with <Math mode="inline" xml:id="C23.S2.SS1.p1.m7">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S2.SS1.p1.m8">2\omega_{3}</Math> lattice generators.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C23.S2.SS1.p2.s1">
+The generators of a given lattice <Math mode="inline" xml:id="C23.S2.SS1.p2.m1">\mathbb{L}</Math> are not unique.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C23.S2.SS1.p2.s2">
+For example, if <Math equation-number="23.2.1" mode="display" xml:id="C23.S2.E1">\omega_{1}+\omega_{2}+\omega_{3}=0,</Math> then <Math mode="inline" xml:id="C23.S2.SS1.p2.m2">2\omega_{2}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m3">2\omega_{3}</Math> are generators, as are <Math mode="inline" xml:id="C23.S2.SS1.p2.m4">2\omega_{2}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m5">2\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="43" xml:id="C23.S2.SS1.p2.s3">
+In general, if <Math equation-number="23.2.2" mode="display" xml:id="C23.S2.E2">\chi_{1}=a\omega_{1}+b\omega_{3}, \chi_{3}=c\omega_{1}+d\omega_{3},</Math> where <Math mode="inline" xml:id="C23.S2.SS1.p2.m6">a,b,c,d</Math> are integers, then <Math mode="inline" xml:id="C23.S2.SS1.p2.m7">2\chi_{1}</Math> , <Math mode="inline" xml:id="C23.S2.SS1.p2.m8">2\chi_{3}</Math> are generators of <Math mode="inline" xml:id="C23.S2.SS1.p2.m9">\mathbb{L}</Math> iff <Math equation-number="23.2.3" mode="display" xml:id="C23.S2.E3">ad-bc=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S2.SS2">
+<title>Weierstrass Elliptic Functions</title>              
+<para xml:id="C23.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C23.S2.SS2.p1.s1">
+ <Math equation-number="23.2.4" mode="display" xml:id="C23.S2.E4">\wp\left(z\right)=\frac{1}{z^{2}}+\sum_{w\in\mathbb{L}\setminus\{0\}}\left( \frac{1}{(z-w)^{2}}-\frac{1}{w^{2}}\right),</Math> <Math equation-number="23.2.5" mode="display" xml:id="C23.S2.E5">\zeta\left(z\right)=\frac{1}{z}+\sum_{w\in\mathbb{L}\setminus\{0\}}\left(\frac {1}{z-w}+\frac{1}{w}+\frac{z}{w^{2}}\right),</Math> <Math equation-number="23.2.6" mode="display" xml:id="C23.S2.E6">\sigma\left(z\right)=z\prod_{w\in\mathbb{L}\setminus\{0\}}\left(\left(1-\frac{ z}{w}\right)\exp\left(\frac{z}{w}+\frac{z^{2}}{2w^{2}}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C23.S2.SS2.p1.s2">
+The double series and double product are absolutely and uniformly convergent in compact sets in <Math mode="inline" xml:id="C23.S2.SS2.p1.m1">\mathbb{C}</Math> that do not include lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="46" xml:id="C23.S2.SS2.p1.s3">
+Hence the order of the terms or factors is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C23.S2.SS2.p2.s1">
+When <Math mode="inline" xml:id="C23.S2.SS2.p2.m1">z\notin\mathbb{L}</Math> the functions are related by <Math equation-number="23.2.7" mode="display" xml:id="C23.S2.E7">\wp\left(z\right)=-\zeta'\left(z\right),</Math> <Math equation-number="23.2.8" mode="display" xml:id="C23.S2.E8">\zeta\left(z\right)=\ifrac{\sigma'\left(z\right)}{\sigma\left(z\right)}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C23.S2.SS2.p3.s1">
+ <Math mode="inline" xml:id="C23.S2.SS2.p3.m1">\wp\left(z\right)</Math> and <Math mode="inline" xml:id="C23.S2.SS2.p3.m2">\zeta\left(z\right)</Math> are meromorphic functions with poles at the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C23.S2.SS2.p3.s2">
+<Math mode="inline" xml:id="C23.S2.SS2.p3.m3">\wp\left(z\right)</Math> is even and <Math mode="inline" xml:id="C23.S2.SS2.p3.m4">\zeta\left(z\right)</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C23.S2.SS2.p3.s3">
+The poles of <Math mode="inline" xml:id="C23.S2.SS2.p3.m5">\wp\left(z\right)</Math> are double with residue <Math mode="inline" xml:id="C23.S2.SS2.p3.m6">0</Math> ; the poles of <Math mode="inline" xml:id="C23.S2.SS2.p3.m7">\zeta\left(z\right)</Math> are simple with residue <Math mode="inline" xml:id="C23.S2.SS2.p3.m8">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="51" xml:id="C23.S2.SS2.p3.s4">
+The function <Math mode="inline" xml:id="C23.S2.SS2.p3.m9">\sigma\left(z\right)</Math> is entire and odd, with simple zeros at the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="52" xml:id="C23.S2.SS2.p3.s5">
+When it is important to display the lattice with the functionsthey are denoted by <Math mode="inline" xml:id="C23.S2.SS2.p3.m10">\wp\left(z|\mathbb{L}\right)</Math> , <Math mode="inline" xml:id="C23.S2.SS2.p3.m11">\zeta\left(z|\mathbb{L}\right)</Math> , and <Math mode="inline" xml:id="C23.S2.SS2.p3.m12">\sigma\left(z|\mathbb{L}\right)</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S2.SS3">
+<title>Periodicity</title>          
+<para xml:id="C23.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C23.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C23.S2.SS3.p1.m1">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p1.m2">2\omega_{3}</Math> is any pair of generators of <Math mode="inline" xml:id="C23.S2.SS3.p1.m3">\mathbb{L}</Math> , and <Math mode="inline" xml:id="C23.S2.SS3.p1.m4">\omega_{2}</Math> is defined by (LABEL:eq:WE.2.1), then <Math equation-number="23.2.9" mode="display" xml:id="C23.S2.E9">\wp\left(z+2\omega_{j}\right)=\wp\left(z\right), subject to j=1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C23.S2.SS3.p1.s2">
+Hence <Math mode="inline" xml:id="C23.S2.SS3.p1.m5">\wp\left(z\right)</Math> is an elliptic function, that is, <Math mode="inline" xml:id="C23.S2.SS3.p1.m6">\wp\left(z\right)</Math> is meromorphic and periodic on a lattice; equivalently, <Math mode="inline" xml:id="C23.S2.SS3.p1.m7">\wp\left(z\right)</Math> is meromorphic and has two periods whose ratio is not real.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C23.S2.SS3.p1.s3">
+We also have <Math equation-number="23.2.10" mode="display" xml:id="C23.S2.E10">\wp'\left(\omega_{j}\right)=0, subject to j=1,2,3</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C23.S2.SS3.p2.s1">
+The function <Math mode="inline" xml:id="C23.S2.SS3.p2.m1">\zeta\left(z\right)</Math> is quasi-periodic: for <Math mode="inline" xml:id="C23.S2.SS3.p2.m2">j=1,2,3</Math> , <Math equation-number="23.2.11" mode="display" xml:id="C23.S2.E11">\zeta\left(z+2\omega_{j}\right)=\zeta\left(z\right)+2\eta_{j},</Math> where <Math equation-number="23.2.12" mode="display" xml:id="C23.S2.E12">\eta_{j}=\zeta\left(\omega_{j}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C23.S2.SS3.p2.s2">
+Also, <Math equation-number="23.2.13" mode="display" xml:id="C23.S2.E13">\eta_{1}+\eta_{2}+\eta_{3}=0,</Math> <Math equation-number="23.2.14" mode="display" xml:id="C23.S2.E14">\eta_{3}\omega_{2}-\eta_{2}\omega_{3}=\eta_{2}\omega_{1}-\eta_{1}\omega_{2}= \eta_{1}\omega_{3}-\eta_{3}\omega_{1}=\tfrac{1}{2}\pi i</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C23.S2.SS3.p3.s1">
+For <Math mode="inline" xml:id="C23.S2.SS3.p3.m1">j=1,2,3</Math> , the function <Math mode="inline" xml:id="C23.S2.SS3.p3.m2">\sigma\left(z\right)</Math> satisfies <Math equation-number="23.2.15" mode="display" xml:id="C23.S2.E15">\sigma\left(z+2\omega_{j}\right)=-e^{2\eta_{j}(z+\omega_{j})}\sigma\left(z \right),</Math> <Math equation-number="23.2.16" mode="display" xml:id="C23.S2.E16">\sigma'\left(2\omega_{j}\right)=-e^{2\eta_{j}\omega_{j}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C23.S2.SS3.p3.s2">
+More generally, if <Math mode="inline" xml:id="C23.S2.SS3.p3.m3">j=1,2,3</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p3.m4">k=1,2,3</Math> , <Math mode="inline" xml:id="C23.S2.SS3.p3.m5">j\neq k</Math> , and <Math mode="inline" xml:id="C23.S2.SS3.p3.m6">m,n\in\mathbb{Z}</Math> , then <Math equation-number="23.2.17" mode="display" xml:id="C23.S2.E17">\ifrac{\sigma\left(z+2m\omega_{j}+2n\omega_{k}\right)}{\sigma\left(z\right)}=( -1)^{m+n+mn}\exp\left((2m\eta_{j}+2n\eta_{k})(m\omega_{j}+n\omega_{k}+z)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C23.S2.SS3.p4.s1">
+For further quasi-periodic properties of the <Math mode="inline" xml:id="C23.S2.SS3.p4.m1">\sigma</Math> -function see ( , §6.2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S3">
+<title>Differential Equations</title>         
+<subsection xml:id="C23.S3.SS1">
+<title>Invariants, Roots, and Discriminant</title>        
+  
+<para xml:id="C23.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C23.S3.SS1.p1.s1">
+The lattice invariants are defined by <Math equation-number="23.3.1" mode="display" xml:id="C23.S3.E1">g_{2}=60\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-4},</Math> , <Math equation-number="23.3.2" mode="display" xml:id="C23.S3.E2">g_{3}=140\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-6}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C23.S3.SS1.p2.s1">
+The lattice roots satisfy the cubic equation <Math equation-number="23.3.3" mode="display" xml:id="C23.S3.E3">4z^{3}-g_{2}z-g_{3}=0,</Math> and are denoted by <Math mode="inline" xml:id="C23.S3.SS1.p2.m1">e_{1},e_{2},e_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C23.S3.SS1.p2.s2">
+The discriminant (§LABEL:sec:AL.ZP.rp) is given by <Math equation-number="23.3.4" mode="display" xml:id="C23.S3.E4">\Delta={g_{2}^{3}}-27{g_{3}^{2}}=16(e_{2}-e_{3})^{2}(e_{3}-e_{1})^{2}(e_{1}-e_ {2})^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="64" xml:id="C23.S3.SS1.p2.s3">
+In consequence, <Math equation-number="23.3.5" mode="display" xml:id="C23.S3.E5">e_{1}+e_{2}+e_{3}=0,</Math> <Math equation-number="23.3.6" mode="display" xml:id="C23.S3.E6">g_{2}=2({e_{1}^{2}}+{e_{2}^{2}}+{e_{3}^{2}})=-4(e_{2}e_{3}+e_{3}e_{1}+e_{1}e_{ 2}),</Math> <Math equation-number="23.3.7" mode="display" xml:id="C23.S3.E7">g_{3}=4e_{1}e_{2}e_{3}=\tfrac{4}{3}({e_{1}^{3}}+{e_{2}^{3}}+{e_{3}^{3}})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C23.S3.SS1.p3.s1">
+Let <Math mode="inline" xml:id="C23.S3.SS1.p3.m1">{g_{2}^{3}}\neq 27{g_{3}^{2}}</Math> , or equivalently <Math mode="inline" xml:id="C23.S3.SS1.p3.m2">\Delta</Math> be nonzero, or <Math mode="inline" xml:id="C23.S3.SS1.p3.m3">e_{1},e_{2},e_{3}</Math> be distinct.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C23.S3.SS1.p3.s2">
+Given <Math mode="inline" xml:id="C23.S3.SS1.p3.m4">g_{2}</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m5">g_{3}</Math> there is a unique lattice <Math mode="inline" xml:id="C23.S3.SS1.p3.m6">\mathbb{L}</Math> such that (LABEL:eq:WE.3.1) and (LABEL:eq:WE.3.2) are satisfied. We may therefore define <Math equation-number="23.3.8" mode="display" xml:id="C23.S3.E8">\wp\left(z;g_{2},g_{3}\right)=\wp\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C23.S3.SS1.p3.s3">
+Similarly for <Math mode="inline" xml:id="C23.S3.SS1.p3.m9">\zeta\left(z;g_{2},g_{3}\right)</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m10">\sigma\left(z;g_{2},g_{3}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="68" xml:id="C23.S3.SS1.p3.s4">
+As functions of <Math mode="inline" xml:id="C23.S3.SS1.p3.m11">g_{2}</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m12">g_{3}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p3.m13">\wp\left(z;g_{2},g_{3}\right)</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m14">\zeta\left(z;g_{2},g_{3}\right)</Math> are meromorphic and <Math mode="inline" xml:id="C23.S3.SS1.p3.m15">\sigma\left(z;g_{2},g_{3}\right)</Math> is entire.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C23.S3.SS1.p4.s1">
+Conversely, <Math mode="inline" xml:id="C23.S3.SS1.p4.m1">g_{2}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p4.m2">g_{3}</Math> , and the set <Math mode="inline" xml:id="C23.S3.SS1.p4.m3">\{e_{1},e_{2},e_{3}\}</Math> are determined uniquely by the lattice <Math mode="inline" xml:id="C23.S3.SS1.p4.m4">\mathbb{L}</Math> independently of the choice of generators.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="70" xml:id="C23.S3.SS1.p4.s2">
+However, given any pair of generators <Math mode="inline" xml:id="C23.S3.SS1.p4.m5">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p4.m6">2\omega_{3}</Math> of <Math mode="inline" xml:id="C23.S3.SS1.p4.m7">\mathbb{L}</Math> , and with <Math mode="inline" xml:id="C23.S3.SS1.p4.m8">\omega_{2}</Math> defined by (LABEL:eq:WE.2.1), we can identify the <Math mode="inline" xml:id="C23.S3.SS1.p4.m9">e_{j}</Math> individually, via <Math equation-number="23.3.9" mode="display" xml:id="C23.S3.E9">e_{j}=\wp\left(\omega_{j}|\mathbb{L}\right), subject to j=1,2,3</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C23.S3.SS1.p5.s1">
+In what follows, it will be assumed that (LABEL:eq:WE.3.9)always applies.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S3.SS2">
+<title>Differential Equations and Derivatives</title>         
+  
+<para xml:id="C23.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C23.S3.SS2.p1.s1">
+ <Math equation-number="23.3.10" mode="display" xml:id="C23.S3.E10">{\wp'}^{2}(z)=4\!{\wp^{3}}\left(z\right)-g_{2}\wp\left(z\right)-g_{3}</Math> , <Math equation-number="23.3.11" mode="display" xml:id="C23.S3.E11">{\wp'}^{2}(z)=4(\wp\left(z\right)-e_{1})(\wp\left(z\right)-e_{2})(\wp\left(z \right)-e_{3}),</Math> <Math equation-number="23.3.12" mode="display" xml:id="C23.S3.E12">\wp''\left(z\right)=6\!{\wp^{2}}\left(z\right)-\tfrac{1}{2}g_{2},</Math> <Math equation-number="23.3.13" mode="display" xml:id="C23.S3.E13">\wp'''\left(z\right)=12\wp\left(z\right)\wp'\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="73" xml:id="C23.S3.SS2.p1.s2">
+See also (LABEL:eq:WE.2.7) and (LABEL:eq:WE.wfdef.new).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S4">
+<title>Graphics</title>         
+<subsection xml:id="C23.S4.SS1">
+<title>Real Variables</title>             
+<para xml:id="C23.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C23.S4.SS1.p1.s1">
+Linegraphs of the Weierstrass functions <Math mode="inline" xml:id="C23.S4.SS1.p1.m1">\wp\left(x\right)</Math> , <Math mode="inline" xml:id="C23.S4.SS1.p1.m2">\zeta\left(x\right)</Math> , and <Math mode="inline" xml:id="C23.S4.SS1.p1.m3">\sigma\left(x\right)</Math> , illustrating the lemniscatic and equianharmonic cases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="75" xml:id="C23.S4.SS1.p1.s2">
+(The figures in this subsection may be compared with the figures in §LABEL:sec:JA.gr.lg.)
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="76" xml:id="C23.S4.F1.s1">
+Figure 23.4.1: <Math mode="inline" xml:id="C23.S4.F1.m4">\wp\left(x;g_{2},0\right)</Math> for <Math mode="inline" xml:id="C23.S4.F1.m5">0\leq x\leq 9</Math> , <Math mode="inline" xml:id="C23.S4.F1.m6">g_{2}</Math> = 0.1, 0.2, 0.5, 0.8. (Lemniscatic case.)
+</sentence>             
+<sentence sentence-num-in-section="77" xml:id="C23.S4.F2.s1">
+Figure 23.4.2: <Math mode="inline" xml:id="C23.S4.F2.m4">\wp\left(x;0,g_{3}\right)</Math> for <Math mode="inline" xml:id="C23.S4.F2.m5">0\leq x\leq 9</Math> , <Math mode="inline" xml:id="C23.S4.F2.m6">g_{3}</Math> = 0.1, 0.2, 0.5, 0.8. (Equianharmonic case.)
+</sentence> 
+          
+<sentence sentence-num-in-section="78" xml:id="C23.S4.F3.s1">
+Figure 23.4.3: <Math mode="inline" xml:id="C23.S4.F3.m4">\zeta\left(x;g_{2},0\right)</Math> for <Math mode="inline" xml:id="C23.S4.F3.m5">0\leq x\leq 8</Math> , <Math mode="inline" xml:id="C23.S4.F3.m6">g_{2}</Math> = 0.1, 0.2, 0.5, 0.8. (Lemniscatic case.)
+</sentence>             
+<sentence sentence-num-in-section="79" xml:id="C23.S4.F4.s1">
+Figure 23.4.4: <Math mode="inline" xml:id="C23.S4.F4.m4">\zeta\left(x;0,g_{3}\right)</Math> for <Math mode="inline" xml:id="C23.S4.F4.m5">0\leq x\leq 8</Math> , <Math mode="inline" xml:id="C23.S4.F4.m6">g_{3}</Math> = 0.1, 0.2, 0.5, 0.8. (Equianharmonic case.)
+</sentence>           
+<sentence sentence-num-in-section="80" xml:id="C23.S4.F5.s1">
+Figure 23.4.5: <Math mode="inline" xml:id="C23.S4.F5.m4">\sigma\left(x;g_{2},0\right)</Math> for <Math mode="inline" xml:id="C23.S4.F5.m5">-5\leq x\leq 5</Math> , <Math mode="inline" xml:id="C23.S4.F5.m6">g_{2}</Math> = 0.1, 0.2, 0.5, 0.8. (Lemniscatic case.)
+</sentence>             
+<sentence sentence-num-in-section="81" xml:id="C23.S4.F6.s1">
+Figure 23.4.6: <Math mode="inline" xml:id="C23.S4.F6.m4">\sigma\left(x;0,g_{3}\right)</Math> for <Math mode="inline" xml:id="C23.S4.F6.m5">-5\leq x\leq 5</Math> , <Math mode="inline" xml:id="C23.S4.F6.m6">g_{3}</Math> = 0.1, 0.2, 0.5, 0.8. (Equianharmonic case.)
+</sentence>            
+<sentence sentence-num-in-section="82" xml:id="C23.S4.F7.s1">
+Figure 23.4.7: <Math mode="inline" xml:id="C23.S4.F7.m4">\wp\left(x\right)</Math> with <Math mode="inline" xml:id="C23.S4.F7.m5">\omega_{1}=K\left(k\right)</Math> , <Math mode="inline" xml:id="C23.S4.F7.m6">\omega_{3}=i\!{K^{\prime}}\left(k\right</Math>) for <Math mode="inline" xml:id="C23.S4.F7.m7">0\leq x\leq 9</Math> , <Math mode="inline" xml:id="C23.S4.F7.m8">k^{2}</Math> = 0.2, 0.8, 0.95, 0.99. (Lemniscatic case.)
+</sentence>       
+</subsection>
+ 
+<subsection xml:id="C23.S4.SS2">
+<title>Complex Variables</title>          
+<para xml:id="C23.S4.SS2.p1">
+
+</para>
+ 
+<para xml:id="C23.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C23.S4.SS2.p2.s1">
+Surfaces for the Weierstrass functions <Math mode="inline" xml:id="C23.S4.SS2.p2.m1">\wp\left(z\right)</Math> , <Math mode="inline" xml:id="C23.S4.SS2.p2.m2">\zeta\left(z\right)</Math> , and <Math mode="inline" xml:id="C23.S4.SS2.p2.m3">\sigma\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="84" xml:id="C23.S4.SS2.p2.s2">
+Height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="85" xml:id="C23.S4.SS2.p2.s3">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="86" xml:id="C23.S4.SS2.p2.s4">
+(The figures in this subsection may be compared with the figures in §LABEL:sec:JA.gr.cpxx.)
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="87" xml:id="C23.S4.F8.s1">
+Figure 23.4.8: <Math mode="inline" xml:id="C23.S4.F8.m5">\wp\left(x+iy\right)</Math> with <Math mode="inline" xml:id="C23.S4.F8.m6">\omega_{1}=K\left(k\right)</Math> , <Math mode="inline" xml:id="C23.S4.F8.m7">\omega_{3}=i\!{K^{\prime}}\left(k\right</Math>) for <Math mode="inline" xml:id="C23.S4.F8.m8">-2\!K\left(k\right)\leq x\leq 2\!K\left(k\right)</Math> , <Math mode="inline" xml:id="C23.S4.F8.m9">0\leq y\leq 6\!{K^{\prime}}\left(k\right</Math>) , <Math mode="inline" xml:id="C23.S4.F8.m10">k^{2}=0.</Math>9 . (The scaling makes the lattice appear to be square.)
+</sentence>           
+<sentence sentence-num-in-section="88" xml:id="C23.S4.F9.s1">
+Figure 23.4.9: <Math mode="inline" xml:id="C23.S4.F9.m4">\wp\left(x+iy;1,4i\right)</Math> for <Math mode="inline" xml:id="C23.S4.F9.m5">-3.8\leq x\leq 3.8</Math> , <Math mode="inline" xml:id="C23.S4.F9.m6">-3.8\leq y\leq 3.8</Math>. (The variables are unscaled and the lattice is skew.)
+</sentence>             
+<sentence sentence-num-in-section="89" xml:id="C23.S4.F10.s1">
+Figure 23.4.10: <Math mode="inline" xml:id="C23.S4.F10.m4">\zeta\left(x+iy;1,0\right)</Math> for <Math mode="inline" xml:id="C23.S4.F10.m5">-5\leq x\leq 5</Math> , <Math mode="inline" xml:id="C23.S4.F10.m6">-5\leq y\leq 5</Math>. 
+</sentence>           
+<sentence sentence-num-in-section="90" xml:id="C23.S4.F11.s1">
+Figure 23.4.11: <Math mode="inline" xml:id="C23.S4.F11.m4">\sigma\left(x+iy;1,i\right)</Math> for <Math mode="inline" xml:id="C23.S4.F11.m5">-2.5\leq x\leq 2.5</Math> , <Math mode="inline" xml:id="C23.S4.F11.m6">-2.5\leq y\leq 2.5</Math>. 
+</sentence>              
+<sentence sentence-num-in-section="91" xml:id="C23.S4.F12.s1">
+Figure 23.4.12: <Math mode="inline" xml:id="C23.S4.F12.m4">\wp\left(3.7;a+ib,0\right</Math>) for <Math mode="inline" xml:id="C23.S4.F12.m5">-5\leq a\leq 3</Math> , <Math mode="inline" xml:id="C23.S4.F12.m6">-4\leq b\leq 4</Math> . There is a double zero at <Math mode="inline" xml:id="C23.S4.F12.m7">a=b=0</Math> and double poles on the real axis. 
+</sentence>   
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S5">
+<title>Special Lattices</title>        
+ 
+<subsection xml:id="C23.S5.SS1">
+<title>Real-Valued Functions</title>         
+<para xml:id="C23.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C23.S5.SS1.p1.s1">
+The Weierstrass functions take real values on the real axis iff the lattice is fixed under complex conjugation: <Math mode="inline" xml:id="C23.S5.SS1.p1.m1">\mathbb{L}=\overline{\mathbb{L}}</Math> ; equivalently, when <Math mode="inline" xml:id="C23.S5.SS1.p1.m2">g_{2},g_{3}\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="93" xml:id="C23.S5.SS1.p1.s2">
+This happens in the cases treated in the following four subsections.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S5.SS2">
+<title>Rectangular Lattice</title>          
+<para xml:id="C23.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C23.S5.SS2.p1.s1">
+This occurs when both <Math mode="inline" xml:id="C23.S5.SS2.p1.m1">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S5.SS2.p1.m2">\omega_{3}/i</Math> are real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="95" xml:id="C23.S5.SS2.p1.s2">
+Then <Math mode="inline" xml:id="C23.S5.SS2.p1.m3">\Delta&gt;0</Math> and the parallelogram with vertices at <Math mode="inline" xml:id="C23.S5.SS2.p1.m4">0</Math> , <Math mode="inline" xml:id="C23.S5.SS2.p1.m5">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S5.SS2.p1.m6">2\omega_{1}+2\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S5.SS2.p1.m7">2\omega_{3}</Math> is a rectangle.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C23.S5.SS2.p2.s1">
+In this case the lattice roots <Math mode="inline" xml:id="C23.S5.SS2.p2.m1">e_{1}</Math> , <Math mode="inline" xml:id="C23.S5.SS2.p2.m2">e_{2}</Math> , and <Math mode="inline" xml:id="C23.S5.SS2.p2.m3">e_{3}</Math> are real and distinct.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C23.S5.SS2.p2.s2">
+When they are identified as in (LABEL:eq:WE.3.9)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="98" xml:id="C23.S5.SS2.p2.s3">
+<Math equation-number="23.5.1" mode="display" xml:id="C23.S5.E1">e_{1}&gt;e_{2}&gt;e_{3}, e_{1}&gt;0&gt;e_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="99" xml:id="C23.S5.SS2.p2.s4">
+Also, <Math mode="inline" xml:id="C23.S5.SS2.p2.m4">e_{2}</Math> and <Math mode="inline" xml:id="C23.S5.SS2.p2.m5">g_{3}</Math> have opposite signs unless <Math mode="inline" xml:id="C23.S5.SS2.p2.m6">\omega_{3}=i\omega_{1}</Math> , in which event both are zero.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C23.S5.SS2.p3.s1">
+As functions of <Math mode="inline" xml:id="C23.S5.SS2.p3.m1">\Im\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S5.SS2.p3.m2">e_{1}</Math> and <Math mode="inline" xml:id="C23.S5.SS2.p3.m3">e_{2}</Math> are decreasing and <Math mode="inline" xml:id="C23.S5.SS2.p3.m4">e_{3}</Math> is increasing.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S5.SS3">
+<title>Lemniscatic Lattice</title>           
+<para xml:id="C23.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C23.S5.SS3.p1.s1">
+This occurs when <Math mode="inline" xml:id="C23.S5.SS3.p1.m1">\omega_{1}</Math> is real and positive and <Math mode="inline" xml:id="C23.S5.SS3.p1.m2">\omega_{3}=i\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C23.S5.SS3.p1.s2">
+The parallelogram <Math mode="inline" xml:id="C23.S5.SS3.p1.m3">0</Math> , <Math mode="inline" xml:id="C23.S5.SS3.p1.m4">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S5.SS3.p1.m5">2\omega_{1}+2\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S5.SS3.p1.m6">2\omega_{3}</Math> is a square, and <Math equation-number="23.5.2" mode="display" xml:id="C23.S5.E2">\eta_{1}=i\eta_{3}=\pi/(4\omega_{1}),</Math> <Math equation-number="23.5.3" mode="display" xml:id="C23.S5.E3">e_{1}=-e_{3}=\left(\Gamma\left(\tfrac{1}{4}\right)\right)^{4}/(32\pi\omega_{1} ^{2}), e_{2}=0,</Math> <Math equation-number="23.5.4" mode="display" xml:id="C23.S5.E4">g_{2}=\left(\Gamma\left(\tfrac{1}{4}\right)\right)^{8}/(256\pi^{2}\omega_{1}^{ 4}), g_{3}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C23.S5.SS3.p2.s1">
+Note also that in this case <Math mode="inline" xml:id="C23.S5.SS3.p2.m1">\tau=\mathrm{i}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C23.S5.SS3.p2.s2">
+In consequence, <Math equation-number="23.5.5" mode="display" xml:id="C23.S5.E5">k^{2}=\tfrac{1}{2}, K\left(k\right)=K'\left(k\right)=\ifrac{\left(\Gamma\left(\tfrac{1}{4}\right) \right)^{2}}{\left(4\sqrt{\pi}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S5.SS4">
+<title>Rhombic Lattice</title>          
+ 
+<para xml:id="C23.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C23.S5.SS4.p1.s1">
+This occurs when <Math mode="inline" xml:id="C23.S5.SS4.p1.m1">\omega_{1}</Math> is real and positive, <Math mode="inline" xml:id="C23.S5.SS4.p1.m2">\Im\omega_{3}&gt;0</Math> , <Math mode="inline" xml:id="C23.S5.SS4.p1.m3">\Re\omega_{3}=\tfrac{1}{2}\omega_{1}</Math> , and <Math mode="inline" xml:id="C23.S5.SS4.p1.m4">\Delta&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C23.S5.SS4.p1.s2">
+The parallelogram <Math mode="inline" xml:id="C23.S5.SS4.p1.m5">0</Math> , <Math mode="inline" xml:id="C23.S5.SS4.p1.m6">2\omega_{1}-2\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S5.SS4.p1.m7">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S5.SS4.p1.m8">2\omega_{3}</Math> , is a rhombus: see Figure LABEL:fig:WE.6.1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S5.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C23.S5.SS4.p2.s1">
+The lattice root <Math mode="inline" xml:id="C23.S5.SS4.p2.m1">e_{1}</Math> is real, and <Math mode="inline" xml:id="C23.S5.SS4.p2.m2">e_{3}=\overline{e_{2}}</Math> , with <Math mode="inline" xml:id="C23.S5.SS4.p2.m3">\Im e_{2}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C23.S5.SS4.p2.s2">
+<Math mode="inline" xml:id="C23.S5.SS4.p2.m4">e_{1}</Math> and <Math mode="inline" xml:id="C23.S5.SS4.p2.m5">g_{3}</Math> have the same sign unless <Math mode="inline" xml:id="C23.S5.SS4.p2.m6">2\omega_{3}=(1+i)\omega_{1}</Math> when both are zero: the pseudo-lemniscatic case.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="109" xml:id="C23.S5.SS4.p2.s3">
+As a function of <Math mode="inline" xml:id="C23.S5.SS4.p2.m7">\Im e_{3}</Math> the root <Math mode="inline" xml:id="C23.S5.SS4.p2.m8">e_{1}</Math> is increasing.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="110" xml:id="C23.S5.SS4.p2.s4">
+For the case <Math mode="inline" xml:id="C23.S5.SS4.p2.m9">\omega_{3}=e^{\pi i/3}\omega_{1}</Math> see §LABEL:sec:WE.6(v).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+<subsection xml:id="C23.S5.SS5">
+<title>Equianharmonic Lattice</title>          
+ 
+<para xml:id="C23.S5.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C23.S5.SS5.p1.s1">
+This occurs when <Math mode="inline" xml:id="C23.S5.SS5.p1.m1">\omega_{1}</Math> is real and positive and <Math mode="inline" xml:id="C23.S5.SS5.p1.m2">\omega_{3}=e^{\pi i/3}\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="112" xml:id="C23.S5.SS5.p1.s2">
+The rhombus <Math mode="inline" xml:id="C23.S5.SS5.p1.m3">0</Math> , <Math mode="inline" xml:id="C23.S5.SS5.p1.m4">2\omega_{1}-2\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S5.SS5.p1.m5">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S5.SS5.p1.m6">2\omega_{3}</Math> can be regarded as the union of two equilateral triangles: see Figure LABEL:fig:WE.6.2.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="113" xml:id="C23.S5.F1.s1">
+Figure 23.5.1: Rhombic lattice. <Math mode="inline" xml:id="C23.S5.F1.m2">\Re(2\omega_{3})=\omega_{1}</Math> .
+</sentence>           
+<sentence sentence-num-in-section="114" xml:id="C23.S5.F2.s1">
+Figure 23.5.2: Equianharmonic lattice. <Math mode="inline" xml:id="C23.S5.F2.m3">2\omega_{3}=e^{\pi i/3}2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S5.F2.m4">2\omega_{1}-2\omega_{3}=e^{-\pi i/3}2\omega_{1}</Math> .
+</sentence>      
+<para xml:id="C23.S5.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C23.S5.SS5.p2.s1">
+ <Math equation-number="23.5.6" mode="display" xml:id="C23.S5.E6">\eta_{1}=e^{\pi i/3}\eta_{3}=\frac{\pi}{2\sqrt{3}\omega_{1}},</Math> and the lattice roots and invariants are given by <Math equation-number="23.5.7" mode="display" xml:id="C23.S5.E7">e_{1}=e^{2\pi i/3}e_{3}=e^{-2\pi i/3}e_{2}=\frac{\left(\Gamma\left(\tfrac{1}{3 }\right)\right)^{6}}{2^{14/3}\pi^{2}\omega_{1}^{2}},</Math> <Math equation-number="23.5.8" mode="display" xml:id="C23.S5.E8">g_{2}=0, g_{3}=\frac{\left(\Gamma\left(\tfrac{1}{3}\right)\right)^{18}}{(4\pi\omega_{1} )^{6}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S5.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C23.S5.SS5.p3.s1">
+Note also that in this case <Math mode="inline" xml:id="C23.S5.SS5.p3.m1">\tau=e^{\mathrm{i}\pi/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="117" xml:id="C23.S5.SS5.p3.s2">
+In consequence, <Math equation-number="23.5.9" mode="display" xml:id="C23.S5.E9">k^{2}=e^{\mathrm{i}\pi/3}, K\left(k\right)=e^{\mathrm{i}\pi/6}K'\left(k\right)=e^{\mathrm{i}\pi/12}\frac{ 3^{1/4}\left(\Gamma\left(\frac{1}{3}\right)\right)^{3}}{2^{7/3}\pi}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S6">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C23.S6.SS1">
+<title>Theta Functions</title>        
+   
+<para xml:id="C23.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C23.S6.SS1.p1.s1">
+In this subsection <Math mode="inline" xml:id="C23.S6.SS1.p1.m1">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S6.SS1.p1.m2">2\omega_{3}</Math> are any pair of generators of the lattice <Math mode="inline" xml:id="C23.S6.SS1.p1.m3">\mathbb{L}</Math> , and the lattice roots <Math mode="inline" xml:id="C23.S6.SS1.p1.m4">e_{1}</Math> , <Math mode="inline" xml:id="C23.S6.SS1.p1.m5">e_{2}</Math> , <Math mode="inline" xml:id="C23.S6.SS1.p1.m6">e_{3}</Math> are given by (LABEL:eq:WE.3.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C23.S6.SS1.p1.s2">
+<Math equation-number="23.6.1" mode="display" xml:id="C23.S6.E1">q=e^{i\pi\tau}, \tau=\omega_{3}/\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="120" xml:id="C23.S6.SS1.p1.s3">
+<Math equation-number="23.6.2" mode="display" xml:id="C23.S6.E2">e_{1}=\frac{\pi^{2}}{12\omega_{1}^{2}}\left({\theta_{2}^{4}}\left(0,q\right)+2 \!{\theta_{4}^{4}}\left(0,q\right)\right),</Math> , <Math equation-number="23.6.3" mode="display" xml:id="C23.S6.E3">e_{2}=\frac{\pi^{2}}{12\omega_{1}^{2}}\left({\theta_{2}^{4}}\left(0,q\right)-{ \theta_{4}^{4}}\left(0,q\right)\right),</Math> , <Math equation-number="23.6.4" mode="display" xml:id="C23.S6.E4">e_{3}=-\frac{\pi^{2}}{12\omega_{1}^{2}}\left(2\!{\theta_{2}^{4}}\left(0,q \right)+{\theta_{4}^{4}}\left(0,q\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="121" xml:id="C23.S6.SS1.p1.s4">
+<Math equation-number="23.6.5" mode="display" xml:id="C23.S6.E5">\wp\left(z\right)-e_{1}=\left(\frac{\pi\theta_{3}\left(0,q\right)\theta_{4} \left(0,q\right)\theta_{2}\left(\pi z/(2\omega_{1}),q\right)}{2\omega_{1} \theta_{1}\left(\pi z/(2\omega_{1}),q\right)}\right)^{2},</Math> , <Math equation-number="23.6.6" mode="display" xml:id="C23.S6.E6">\wp\left(z\right)-e_{2}=\left(\frac{\pi\theta_{2}\left(0,q\right)\theta_{4} \left(0,q\right)\theta_{3}\left(\pi z/(2\omega_{1}),q\right)}{2\omega_{1} \theta_{1}\left(\pi z/(2\omega_{1}),q\right)}\right)^{2},</Math> , <Math equation-number="23.6.7" mode="display" xml:id="C23.S6.E7">\wp\left(z\right)-e_{3}=\left(\frac{\pi\theta_{2}\left(0,q\right)\theta_{3} \left(0,q\right)\theta_{4}\left(\pi z/(2\omega_{1}),q\right)}{2\omega_{1} \theta_{1}\left(\pi z/(2\omega_{1}),q\right)}\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="122" xml:id="C23.S6.SS1.p1.s5">
+<Math equation-number="23.6.8" mode="display" xml:id="C23.S6.E8">\eta_{1}=-\frac{\pi^{2}}{12\omega_{1}}\frac{\theta_{1}'''\left(0,q\right)}{ \theta_{1}'\left(0,q\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="123" xml:id="C23.S6.SS1.p1.s6">
+<Math equation-number="23.6.9" mode="display" xml:id="C23.S6.E9">\sigma\left(z\right)=2\omega_{1}\exp\left(\frac{\eta_{1}z^{2}}{2\omega_{1}} \right)\frac{\theta_{1}\left(\pi z/(2\omega_{1}),q\right)}{\pi\theta_{1}'\left (0,q\right)},</Math> <Math equation-number="23.6.10" mode="display" xml:id="C23.S6.E10">\sigma\left(\omega_{1}\right)=2\omega_{1}\frac{\exp\left(\tfrac{1}{2}\eta_{1} \omega_{1}\right)\theta_{2}\left(0,q\right)}{\pi\theta_{1}'\left(0,q\right)},</Math> , <Math equation-number="23.6.11" mode="display" xml:id="C23.S6.E11">\sigma\left(\omega_{2}\right)=2\omega_{1}i\frac{\exp\left(\tfrac{1}{2}\eta_{1} \omega_{1}\tau^{2}\right)\theta_{3}\left(0,q\right)}{\pi q^{1/4}\theta_{1}' \left(0,q\right)},</Math> , <Math equation-number="23.6.12" mode="display" xml:id="C23.S6.E12">\sigma\left(\omega_{3}\right)=-2\omega_{1}\frac{\exp\left(\tfrac{1}{2}\eta_{1} \omega_{1}\right)\theta_{4}\left(0,q\right)}{\pi q^{1/4}\theta_{1}'\left(0,q \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="124" xml:id="C23.S6.SS1.p1.s7">
+With <Math mode="inline" xml:id="C23.S6.SS1.p1.m7">z=\ifrac{\pi u}{(2\omega_{1})}</Math> , <Math equation-number="23.6.13" mode="display" xml:id="C23.S6.E13">\zeta\left(u\right)=\frac{\eta_{1}}{\omega_{1}}u+\frac{\pi}{2\omega_{1}}\frac{ \mathrm{d}}{\mathrm{d}z}\ln\theta_{1}\left(z,q\right),</Math> <Math equation-number="23.6.14" mode="display" xml:id="C23.S6.E14">\wp\left(u\right)=\left(\frac{\pi}{2\omega_{1}}\right)^{2}\left(\frac{\theta_{ 1}'''\left(0,q\right)}{3\!\theta_{1}'\left(0,q\right)}-\frac{{\mathrm{d}}^{2}} {{\mathrm{d}z}^{2}}\ln\theta_{1}\left(z,q\right)\right),</Math> <Math equation-number="23.6.15" mode="display" xml:id="C23.S6.E15">\frac{\sigma\left(u+\omega_{j}\right)}{\sigma\left(\omega_{j}\right)}=\exp \left(\eta_{j}u+\frac{\eta_{j}u^{2}}{2\omega_{1}}\right)\frac{\theta_{j+1} \left(z,q\right)}{\theta_{j+1}\left(0,q\right)}, subject to j=1,2,3</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C23.S6.SS1.p2.s1">
+For further results for the <Math mode="inline" xml:id="C23.S6.SS1.p2.m1">\sigma</Math> -function see ( , §6.2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S6.SS2">
+<title>Jacobian Elliptic Functions</title>         
+  
+<para xml:id="C23.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C23.S6.SS2.p1.s1">
+Again, in Equations (LABEL:eq:WE.wfrof.kdef)–(LABEL:eq:WE.wfrof.wpom3-e3),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="127" xml:id="C23.S6.SS2.p1.s2">
+<Math mode="inline" xml:id="C23.S6.SS2.p1.m1">2\omega_{1},2\omega_{3}</Math> are any pair of generators of the lattice <Math mode="inline" xml:id="C23.S6.SS2.p1.m2">\mathbb{L}</Math> and <Math mode="inline" xml:id="C23.S6.SS2.p1.m3">e_{1},e_{2},e_{3}</Math> are given by (LABEL:eq:WE.3.9).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="128" xml:id="C23.S6.SS2.p1.s3">
+<Math equation-number="23.6.16" mode="display" xml:id="C23.S6.E16">k^{2}=\frac{e_{2}-e_{3}}{e_{1}-e_{3}}, {k^{\prime}}^{2}=\frac{e_{1}-e_{2}}{e_{1}-e_{3}},</Math> <Math equation-number="23.6.17" mode="display" xml:id="C23.S6.E17">{K^{2}}=(K\left(k\right))^{2}=\omega_{1}^{2}(e_{1}-e_{3}), {{K^{\prime}}^{2}}=(K\left(k^{\prime}\right))^{2}=\omega_{3}^{2}(e_{3}-e_{1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="129" xml:id="C23.S6.SS2.p1.s4">
+<Math equation-number="23.6.18" mode="display" xml:id="C23.S6.E18">e_{1}=\frac{{K^{2}}}{3\omega_{1}^{2}}(1+{k^{\prime}}^{2}),</Math> , <Math equation-number="23.6.19" mode="display" xml:id="C23.S6.E19">e_{2}=\frac{{K^{2}}}{3\omega_{1}^{2}}(k^{2}-{k^{\prime}}^{2}),</Math> , <Math equation-number="23.6.20" mode="display" xml:id="C23.S6.E20">e_{3}=-\frac{{K^{2}}}{3\omega_{1}^{2}}(1+k^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="130" xml:id="C23.S6.SS2.p1.s5">
+<Math equation-number="23.6.21" mode="display" xml:id="C23.S6.E21">\wp\left(z\right)-e_{1}=\frac{{K^{2}}}{\omega_{1}^{2}}{\operatorname{cs}^{2}} \left(\frac{K\!z}{\omega_{1}},k\right)</Math> , <Math equation-number="23.6.22" mode="display" xml:id="C23.S6.E22">\wp\left(z\right)-e_{2}=\frac{{K^{2}}}{\omega_{1}^{2}}{\operatorname{ds}^{2}} \left(\frac{K\!z}{\omega_{1}},k\right)</Math> ,, <Math equation-number="23.6.23" mode="display" xml:id="C23.S6.E23">\wp\left(z\right)-e_{3}=\frac{{K^{2}}}{\omega_{1}^{2}}{\operatorname{ns}^{2}} \left(\frac{K\!z}{\omega_{1}},k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="131" xml:id="C23.S6.SS2.p1.s6">
+<Math equation-number="23.6.24" mode="display" xml:id="C23.S6.E24">\wp\left(z+\omega_{1}\right)-e_{1}=\left(\frac{K\!k^{\prime}}{\omega_{1}} \right)^{2}{\operatorname{sc}^{2}}\left(\frac{K\!z}{\omega_{1}},k\right)</Math> , <Math equation-number="23.6.25" mode="display" xml:id="C23.S6.E25">\wp\left(z+\omega_{2}\right)-e_{2}=-\left(\frac{K\!kk^{\prime}}{\omega_{1}} \right)^{2}{\operatorname{sd}^{2}}\left(\frac{K\!z}{\omega_{1}},k\right)</Math> ,, <Math equation-number="23.6.26" mode="display" xml:id="C23.S6.E26">\wp\left(z+\omega_{3}\right)-e_{3}=\left(\frac{K\!k}{\omega_{1}}\right)^{2}{ \operatorname{sn}^{2}}\left(\frac{K\!z}{\omega_{1}},k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C23.S6.SS2.p2.s1">
+In (LABEL:eq:WE.wfrof.zeta1)–(LABEL:eq:WE.wfrof.zeta3) the modulus <Math mode="inline" xml:id="C23.S6.SS2.p2.m1">k</Math> is given and <Math mode="inline" xml:id="C23.S6.SS2.p2.m2">K=K\left(k\right)</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p2.m3">{K^{\prime}}=K\left(k^{\prime}\right)</Math> are the corresponding complete elliptic integrals (§LABEL:sec:EL.LD.LL).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C23.S6.SS2.p2.s2">
+Also, <Math mode="inline" xml:id="C23.S6.SS2.p2.m4">\mathbb{L}_{\mspace{1.0mu }1}</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p2.m5">\mathbb{L}_{\mspace{1.0mu }2}</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p2.m6">\mathbb{L}_{\mspace{1.0mu }3}</Math> are the lattices with generators <Math mode="inline" xml:id="C23.S6.SS2.p2.m7">(4\!K,2\mathrm{i}{K^{\prime}})</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p2.m8">(2\!K-2\mathrm{i}{K^{\prime}},2\!K+2\mathrm{i}{K^{\prime}})</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p2.m9">(2\!K,4\mathrm{i}{K^{\prime}})</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="134" xml:id="C23.S6.SS2.p2.s3">
+<Math equation-number="23.6.27" mode="display" xml:id="C23.S6.E27">\zeta\left(z|\mathbb{L}_{\mspace{1.0mu }1}\right)-\zeta\left(z+2\!K|\mathbb{L} _{\mspace{1.0mu }1}\right)+\zeta\left(2\!K|\mathbb{L}_{\mspace{1.0mu }1}\right )=\operatorname{ns}\left(z,k\right),</Math> <Math equation-number="23.6.28" mode="display" xml:id="C23.S6.E28">\zeta\left(z|\mathbb{L}_{\mspace{1.0mu }2}\right)-\zeta\left(z+2\!K|\mathbb{L} _{\mspace{1.0mu }2}\right)+\zeta\left(2\!K|\mathbb{L}_{\mspace{1.0mu }2}\right )=\operatorname{ds}\left(z,k\right),</Math> <Math equation-number="23.6.29" mode="display" xml:id="C23.S6.E29">\zeta\left(z|\mathbb{L}_{\mspace{1.0mu }3}\right)-\zeta\left(z+2\mathrm{i}\!{K ^{\prime}}|\mathbb{L}_{\mspace{1.0mu }3}\right)-\zeta\left(2\mathrm{i}\!{K^{ \prime}}|\mathbb{L}_{\mspace{1.0mu }3}\right)=\operatorname{cs}\left(z,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.SS2.p3">
+
+</para>
+ 
+<para xml:id="C23.S6.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C23.S6.SS2.p4.s1">
+Similar results for the other nine Jacobi functions can be constructed with the aid of the transformations given by Table LABEL:tab:JA.tz.tc.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C23.S6.SS2.p5.s1">
+For representations of the Jacobi functions <Math mode="inline" xml:id="C23.S6.SS2.p5.m1">\operatorname{sn}</Math> , <Math mode="inline" xml:id="C23.S6.SS2.p5.m2">\operatorname{cn}</Math> , and <Math mode="inline" xml:id="C23.S6.SS2.p5.m3">\operatorname{dn}</Math> as quotients of <Math mode="inline" xml:id="C23.S6.SS2.p5.m4">\sigma</Math> -functions see ( , §§6.2, 6.3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S6.SS3">
+<title>General Elliptic Functions</title>           
+<para xml:id="C23.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C23.S6.SS3.p1.s1">
+For representations of general elliptic functions (§LABEL:sec:WE.2(iii))interms of <Math mode="inline" xml:id="C23.S6.SS3.p1.m1">\sigma\left(z\right)</Math> and <Math mode="inline" xml:id="C23.S6.SS3.p1.m2">\wp\left(z\right)</Math> see ( , §§8.9, 8.10) , and for expansions in terms of <Math mode="inline" xml:id="C23.S6.SS3.p1.m3">\zeta\left(z\right)</Math> see ( , §8.11) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S6.SS4">
+<title>Elliptic Integrals</title>          
+ 
+<paragraph xml:id="C23.S6.Px1">
+<title>Rectangular Lattice</title>   
+<para xml:id="C23.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C23.S6.Px1.p1.s1">
+Let <Math mode="inline" xml:id="C23.S6.Px1.p1.m1">z</Math> be on the perimeter of the rectangle with vertices <Math mode="inline" xml:id="C23.S6.Px1.p1.m2">0,2\omega_{1},2\omega_{1}+2\omega_{3},2\omega_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C23.S6.Px1.p1.s2">
+Then <Math mode="inline" xml:id="C23.S6.Px1.p1.m3">t=\wp\left(z\right)</Math> is real (§§ LABEL:sec:WE.6(i)–LABEL:sec:WE.6(ii)),and
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C23.S6.Px1.p1.s3">
+<Math equation-number="23.6.30" mode="display" xml:id="C23.S6.E30">z=\frac{1}{2}\int_{t}^{\infty}\frac{\mathrm{d}u}{\sqrt{(u-e_{1})(u-e_{2})(u-e_ {3})}}, subject to t\geq e_{1}, z\in(0,\omega_{1}],</Math> <Math equation-number="23.6.31" mode="display" xml:id="C23.S6.E31">z-\omega_{1}=\frac{i}{2}\int_{t}^{e_{1}}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(u-e _{2})(u-e_{3})}}, subject to e_{2}\leq t\leq e_{1}, z\in[\omega_{1},\omega_{1}+\omega_{3}],</Math> , <Math equation-number="23.6.32" mode="display" xml:id="C23.S6.E32">z-\omega_{3}=\frac{1}{2}\int_{e_{3}}^{t}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(e_{ 2}-u)(u-e_{3})}}, subject to e_{3}\leq t\leq e_{2}, z\in[\omega_{3},\omega_{1}+\omega_{3}],</Math> <Math equation-number="23.6.33" mode="display" xml:id="C23.S6.E33">z=\frac{i}{2}\int_{-\infty}^{t}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(e_{2}-u)(e_{ 3}-u)}}, subject to t\leq e_{3}, z\in(0,\omega_{3}]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="141" xml:id="C23.S6.Px1.p1.s4">
+<Math equation-number="23.6.34" mode="display" xml:id="C23.S6.E34">2\omega_{1}=\int_{e_{1}}^{\infty}\frac{\mathrm{d}u}{\sqrt{(u-e_{1})(u-e_{2})(u -e_{3})}}=\int_{e_{3}}^{e_{2}}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(e_{2}-u)(u-e_ {3})}},</Math> <Math equation-number="23.6.35" mode="display" xml:id="C23.S6.E35">2\omega_{3}=i\int_{e_{2}}^{e_{1}}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(u-e_{2})(u -e_{3})}}=i\int_{-\infty}^{e_{3}}\frac{\mathrm{d}u}{\sqrt{(e_{1}-u)(e_{2}-u)(e _{3}-u)}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="142" xml:id="C23.S6.Px1.p1.s5">
+For (LABEL:eq:WE.wfrof.ellint1)–(LABEL:eq:WE.wfrof.ellint6)and further identities see ( , §6.12) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C23.S6.Px1.p2.s1">
+See also §§LABEL:sec:EL.LD.EI, LABEL:sec:EL.LR, and ( , §13.14) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S6.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C23.S6.Px1.p3.s1">
+For relations to symmetric elliptic integrals see §LABEL:sec:EL.OF.WEF.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S6.Px2">
+<title>General Lattice</title>   
+<para xml:id="C23.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C23.S6.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C23.S6.Px2.p1.m1">z</Math> be a point of <Math mode="inline" xml:id="C23.S6.Px2.p1.m2">\mathbb{C}</Math> different from <Math mode="inline" xml:id="C23.S6.Px2.p1.m3">e_{1},e_{2},e_{3}</Math> , and define <Math mode="inline" xml:id="C23.S6.Px2.p1.m4">w</Math> by <Math equation-number="23.6.36" mode="display" xml:id="C23.S6.E36">w=\int_{z}^{\infty}\frac{\mathrm{d}u}{\sqrt{4u^{3}-g_{2}u-g_{3}}}=\frac{1}{2} \int_{z}^{\infty}\frac{\mathrm{d}u}{\sqrt{(u-e_{1})(u-e_{2})(u-e_{3})}},</Math> where the integral is taken along any path from <Math mode="inline" xml:id="C23.S6.Px2.p1.m5">z</Math> to <Math mode="inline" xml:id="C23.S6.Px2.p1.m6">\infty</Math> that does not pass through any of <Math mode="inline" xml:id="C23.S6.Px2.p1.m7">e_{1},e_{2},e_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="146" xml:id="C23.S6.Px2.p1.s2">
+Then <Math mode="inline" xml:id="C23.S6.Px2.p1.m8">z=\wp\left(w\right)</Math> , where the value of <Math mode="inline" xml:id="C23.S6.Px2.p1.m9">w</Math> depends on the choice of path and determination of the square root; see ( , pp. 87–88 and §2.5) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S7">
+<title>Quarter Periods</title>         
+ 
+<para xml:id="C23.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C23.S7.p1.s1">
+ <Math equation-number="23.7.1" mode="display" xml:id="C23.S7.E1">\wp\left(\tfrac{1}{2}\omega_{1}\right)=e_{1}+\sqrt{(e_{1}-e_{3})(e_{1}-e_{2})} =e_{1}+\omega_{1}^{-2}(K\left(k\right))^{2}k^{\prime},</Math> , <Math equation-number="23.7.2" mode="display" xml:id="C23.S7.E2">\wp\left(\tfrac{1}{2}\omega_{2}\right)=e_{2}-i\sqrt{(e_{1}-e_{2})(e_{2}-e_{3}) }=e_{2}-i\omega_{1}^{-2}(K\left(k\right))^{2}kk^{\prime},</Math> , <Math equation-number="23.7.3" mode="display" xml:id="C23.S7.E3">\wp\left(\tfrac{1}{2}\omega_{3}\right)=e_{3}-\sqrt{(e_{1}-e_{3})(e_{2}-e_{3})} =e_{3}-\omega_{1}^{-2}(K\left(k\right))^{2}k,</Math> where <Math mode="inline" xml:id="C23.S7.p1.m1">k,k^{\prime}</Math> and the square roots are real and positive when the lattice is rectangular; otherwise they are determined by continuity from the rectangular case.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C23.S8">
+<title>Trigonometric Series and Products</title>         
+<subsection xml:id="C23.S8.SS1">
+<title>Fourier Series</title>          
+<para xml:id="C23.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C23.S8.SS1.p1.s1">
+If <Math mode="inline" xml:id="C23.S8.SS1.p1.m1">q=e^{i\pi\omega_{3}/\omega_{1}}</Math> , <Math mode="inline" xml:id="C23.S8.SS1.p1.m2">\Im(z/\omega_{1})&lt;2\Im(\omega_{3}/\omega_{1})</Math> , and <Math mode="inline" xml:id="C23.S8.SS1.p1.m3">z\notin\mathbb{L}</Math> , then <Math equation-number="23.8.1" mode="display" xml:id="C23.S8.E1">\wp\left(z\right)+\frac{\eta_{1}}{\omega_{1}}-\frac{\pi^{2}}{4\omega_{1}^{2}}{ \csc^{2}}\left(\frac{\pi z}{2\omega_{1}}\right)=-\frac{2\pi^{2}}{\omega_{1}^{2 }}\sum_{n=1}^{\infty}\frac{nq^{2n}}{1-q^{2n}}\cos\left(\frac{n\pi z}{\omega_{1 }}\right),</Math> , <Math equation-number="23.8.2" mode="display" xml:id="C23.S8.E2">\zeta\left(z\right)-\frac{\eta_{1}z}{\omega_{1}}-\frac{\pi}{2\omega_{1}}\cot \left(\frac{\pi z}{2\omega_{1}}\right)=\frac{2\pi}{\omega_{1}}\sum_{n=1}^{ \infty}\frac{q^{2n}}{1-q^{2n}}\sin\left(\frac{n\pi z}{\omega_{1}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S8.SS2">
+<title>Series of Cosecants and Cotangents</title>          
+<para xml:id="C23.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C23.S8.SS2.p1.s1">
+When <Math mode="inline" xml:id="C23.S8.SS2.p1.m1">z\notin\mathbb{L}</Math> , <Math equation-number="23.8.3" mode="display" xml:id="C23.S8.E3">\wp\left(z\right)=-\frac{\eta_{1}}{\omega_{1}}+\frac{\pi^{2}}{4\omega_{1}^{2}} \sum_{n=-\infty}^{\infty}{\csc^{2}}\left(\frac{\pi(z+2n\omega_{3})}{2\omega_{1 }}\right),</Math> <Math equation-number="23.8.4" mode="display" xml:id="C23.S8.E4">\zeta\left(z\right)=\frac{\eta_{1}z}{\omega_{1}}+\frac{\pi}{2\omega_{1}}\sum_{ n=-\infty}^{\infty}\cot\left(\frac{\pi(z+2n\omega_{3})}{2\omega_{1}}\right),</Math> where in (LABEL:eq:WE.8.4) the terms in <Math mode="inline" xml:id="C23.S8.SS2.p1.m2">n</Math> and <Math mode="inline" xml:id="C23.S8.SS2.p1.m3">-n</Math> are to be bracketed together (the Eisenstein convention or principal value: see ( , p. 6) or ( , p. 3) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="150" xml:id="C23.S8.SS2.p1.s2">
+<Math equation-number="23.8.5" mode="display" xml:id="C23.S8.E5">\eta_{1}=\frac{\pi^{2}}{2\omega_{1}}\left(\frac{1}{6}+\sum_{n=1}^{\infty}{\csc ^{2}}\left(\frac{n\pi\omega_{3}}{\omega_{1}}\right)\right),</Math> with similar results for <Math mode="inline" xml:id="C23.S8.SS2.p1.m4">\eta_{2}</Math> and <Math mode="inline" xml:id="C23.S8.SS2.p1.m5">\eta_{3}</Math> obtainable by use of (LABEL:eq:WE.wfdef.etaom).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C23.S8.SS3">
+<title>Infinite Products</title>          
+<para xml:id="C23.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C23.S8.SS3.p1.s1">
+ <Math equation-number="23.8.6" mode="display" xml:id="C23.S8.E6">\sigma\left(z\right)=\frac{2\omega_{1}}{\pi}\exp\left(\frac{\eta_{1}z^{2}}{2 \omega_{1}}\right)\sin\left(\frac{\pi z}{2\omega_{1}}\right)\*\prod_{n=1}^{ \infty}\frac{1-2q^{2n}\cos\left(\pi z/\omega_{1}\right)+q^{4n}}{(1-q^{2n})^{2}},</Math> <Math equation-number="23.8.7" mode="display" xml:id="C23.S8.E7">\sigma\left(z\right)=\frac{2\omega_{1}}{\pi}\exp\left(\frac{\eta_{1}z^{2}}{2 \omega_{1}}\right)\sin\left(\frac{\pi z}{2\omega_{1}}\right)\prod_{n=1}^{ \infty}\frac{\sin\left(\pi(2n\omega_{3}+z)/(2\omega_{1})\right)\sin\left(\pi(2 n\omega_{3}-z)/(2\omega_{1})\right)}{{\sin^{2}}\left(\pi n\omega_{3}/\omega_{1 }\right)}</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S9">
+<title>Laurent and Other Power Series</title>           
+<para xml:id="C23.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C23.S9.p1.s1">
+Let <Math mode="inline" xml:id="C23.S9.p1.m1">z_{0}(\neq 0)</Math> be the nearest lattice point to the origin, and define <Math equation-number="23.9.1" mode="display" xml:id="C23.S9.E1">c_{n}=(2n-1)\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-2n}, subject to n=2,3,4,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="153" xml:id="C23.S9.p1.s2">
+Then <Math equation-number="23.9.2" mode="display" xml:id="C23.S9.E2">\wp\left(z\right)=\frac{1}{z^{2}}+\sum_{n=2}^{\infty}c_{n}z^{2n-2}, subject to 0&lt;|z|&lt;|z_{0}|,</Math> <Math equation-number="23.9.3" mode="display" xml:id="C23.S9.E3">\zeta\left(z\right)=\frac{1}{z}-\sum_{n=2}^{\infty}\frac{c_{n}}{2n-1}z^{2n-1}, subject to 0&lt;|z|&lt;|z_{0}|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="154" xml:id="C23.S9.p1.s3">
+Here <Math equation-number="23.9.4" mode="display" xml:id="C23.S9.E4">c_{2}=\frac{1}{20}g_{2}, c_{3}=\frac{1}{28}g_{3},</Math> <Math equation-number="23.9.5" mode="display" xml:id="C23.S9.E5">c_{n}=\frac{3}{(2n+1)(n-3)}\sum_{m=2}^{n-2}c_{m}c_{n-m}, subject to n\geq 4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="155" xml:id="C23.S9.p1.s4">
+Explicit coefficients <Math mode="inline" xml:id="C23.S9.p1.m2">c_{n}</Math> in terms of <Math mode="inline" xml:id="C23.S9.p1.m3">c_{2}</Math> and <Math mode="inline" xml:id="C23.S9.p1.m4">c_{3}</Math> are given up to <Math mode="inline" xml:id="C23.S9.p1.m5">c_{19}</Math> in ( , p. 636) .
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C23.S9.p2.s1">
+For <Math mode="inline" xml:id="C23.S9.p2.m1">j=1,2,3</Math> , and with <Math mode="inline" xml:id="C23.S9.p2.m2">e_{j}</Math> as in §LABEL:sec:WE.3(i),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="157" xml:id="C23.S9.p2.s2">
+<Math equation-number="23.9.6" mode="display" xml:id="C23.S9.E6">\wp\left(\omega_{j}+t\right)=e_{j}+(3e_{j}^{2}-5c_{2})t^{2}+(10c_{2}e_{j}+21c_ {3})t^{4}+(7c_{2}e_{j}^{2}+21c_{3}e_{j}+5c_{2}^{2})t^{6}+O\left(t^{8}\right),</Math> as <Math mode="inline" xml:id="C23.S9.p2.m3">t\to 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="158" xml:id="C23.S9.p2.s3">
+For the next four terms see ( , (18.5.56)) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="159" xml:id="C23.S9.p2.s4">
+Also, ( , (18.5.25)) supplies the first 22 terms in the reverted form of (LABEL:eq:WE.9.2) as <Math mode="inline" xml:id="C23.S9.p2.m4">1/\wp\left(z\right)\to 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C23.S9.p3.s1">
+For <Math mode="inline" xml:id="C23.S9.p3.m1">z\in\mathbb{C}</Math> <Math equation-number="23.9.7" mode="display" xml:id="C23.S9.E7">\sigma\left(z\right)=\sum_{m,n=0}^{\infty}a_{m,n}(10c_{2})^{m}(56c_{3})^{n} \frac{z^{4m+6n+1}}{(4m+6n+1)!}</Math> , where <Math mode="inline" xml:id="C23.S9.p3.m2">a_{0,0}=1</Math> , <Math mode="inline" xml:id="C23.S9.p3.m3">a_{m,n}=0</Math> if either <Math mode="inline" xml:id="C23.S9.p3.m4">m</Math> or <Math mode="inline" xml:id="C23.S9.p3.m5">n&lt;0</Math> , and <Math equation-number="23.9.8" mode="display" xml:id="C23.S9.E8">a_{m,n}=3(m+1)a_{m+1,n-1}+\tfrac{16}{3}(n+1)a_{m-2,n+1}-\tfrac{1}{3}(2m+3n-1)( 4m+6n-1)a_{m-1,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="161" xml:id="C23.S9.p3.s2">
+For <Math mode="inline" xml:id="C23.S9.p3.m6">a_{m,n}</Math> with <Math mode="inline" xml:id="C23.S9.p3.m7">m=0,1,\dots,12</Math> and <Math mode="inline" xml:id="C23.S9.p3.m8">n=0,1,\dots,8</Math> , see ( , p. 637) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C23.S10">
+<title>Addition Theorems and Other Identities</title>         
+<subsection xml:id="C23.S10.SS1">
+<title>Addition Theorems</title>         
+ 
+<para xml:id="C23.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C23.S10.SS1.p1.s1">
+ <Math equation-number="23.10.1" mode="display" xml:id="C23.S10.E1">\wp\left(u+v\right)=\frac{1}{4}\left(\frac{\wp'\left(u\right)-\wp'\left(v \right)}{\wp\left(u\right)-\wp\left(v\right)}\right)^{2}-\wp\left(u\right)-\wp \left(v\right),</Math> <Math equation-number="23.10.2" mode="display" xml:id="C23.S10.E2">\zeta\left(u+v\right)=\zeta\left(u\right)+\zeta\left(v\right)+\frac{1}{2}\frac {\zeta''\left(u\right)-\zeta''\left(v\right)}{\zeta'\left(u\right)-\zeta'\left (v\right)},</Math> <Math equation-number="23.10.3" mode="display" xml:id="C23.S10.E3">\frac{\sigma\left(u+v\right)\sigma\left(u-v\right)}{{\sigma^{2}}\left(u\right) {\sigma^{2}}\left(v\right)}=\wp\left(v\right)-\wp\left(u\right),</Math> <Math equation-number="23.10.4" mode="display" xml:id="C23.S10.E4">\sigma\left(u+v\right)\sigma\left(u-v\right)\sigma\left(x+y\right)\sigma\left( x-y\right)+\sigma\left(v+x\right)\sigma\left(v-x\right)\sigma\left(u+y\right) \sigma\left(u-y\right)+{\sigma\left(x+u\right)\sigma\left(x-u\right)\sigma \left(v+y\right)\sigma\left(v-y\right)=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="163" xml:id="C23.S10.SS1.p1.s2">
+} For further addition-type identities for the <Math mode="inline" xml:id="C23.S10.SS1.p1.m1">\sigma</Math> -function see ( , §6.4) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C23.S10.SS1.p2.s1">
+If <Math mode="inline" xml:id="C23.S10.SS1.p2.m1">u+v+w=0</Math> , then <Math equation-number="23.10.5" mode="display" xml:id="C23.S10.E5">\begin{vmatrix}1&amp;\wp\left(u\right)&amp;\wp'\left(u\right)\\ 1&amp;\wp\left(v\right)&amp;\wp'\left(v\right)\\ 1&amp;\wp\left(w\right)&amp;\wp'\left(w\right)\end{vmatrix}=0,</Math> and <Math equation-number="23.10.6" mode="display" xml:id="C23.S10.E6">\left(\zeta\left(u\right)+\zeta\left(v\right)+\zeta\left(w\right)\right)^{2}+ \zeta'\left(u\right)+\zeta'\left(v\right)+\zeta'\left(w\right)=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS2">
+<title>Duplication Formulas</title>        
+  
+<para xml:id="C23.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="165" xml:id="C23.S10.SS2.p1.s1">
+ <Math equation-number="23.10.7" mode="display" xml:id="C23.S10.E7">\wp\left(2z\right)=-2\wp\left(z\right)+\frac{1}{4}\left(\frac{\wp''\left(z \right)}{\wp'\left(z\right)}\right)^{2},</Math> <Math equation-number="23.10.8" mode="display" xml:id="C23.S10.E8">(\wp\left(2z\right)-e_{1}){\wp'}^{2}(z)=\left((\wp\left(z\right)-e_{1})^{2}-(e _{1}-e_{2})(e_{1}-e_{3})\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="166" xml:id="C23.S10.SS2.p1.s2">
+(LABEL:eq:WE.wfident.wpdup2)continues to hold when <Math mode="inline" xml:id="C23.S10.SS2.p1.m1">e_{1}</Math> , <Math mode="inline" xml:id="C23.S10.SS2.p1.m2">e_{2}</Math> , <Math mode="inline" xml:id="C23.S10.SS2.p1.m3">e_{3}</Math> are permuted cyclically.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="167" xml:id="C23.S10.SS2.p1.s3">
+<Math equation-number="23.10.9" mode="display" xml:id="C23.S10.E9">\zeta\left(2z\right)=2\zeta\left(z\right)+\frac{1}{2}\frac{\zeta'''\left(z \right)}{\zeta''\left(z\right)},</Math> <Math equation-number="23.10.10" mode="display" xml:id="C23.S10.E10">\sigma\left(2z\right)=-\wp'\left(z\right){\sigma^{4}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS3">
+<title><Math mode="inline" xml:id="C23.S10.SS3.m1">n</Math>-Tuple Formulas</title>         
+ 
+<para xml:id="C23.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="168" xml:id="C23.S10.SS3.p1.s1">
+For <Math mode="inline" xml:id="C23.S10.SS3.p1.m1">n=2,3,\dots</Math> , <Math equation-number="23.10.11" mode="display" xml:id="C23.S10.E11">n^{2}\wp\left(nz\right)=\sum_{j=0}^{n-1}\sum_{\ell=0}^{n-1}\wp\left(z+\frac{2j }{n}\omega_{1}+\frac{2\ell}{n}\omega_{3}\right),</Math> <Math equation-number="23.10.12" mode="display" xml:id="C23.S10.E12">n\zeta\left(nz\right)=-n(n-1)(\eta_{1}+\eta_{3})+\sum_{j=0}^{n-1}\sum_{\ell=0} ^{n-1}\zeta\left(z+\frac{2j}{n}\omega_{1}+\frac{2\ell}{n}\omega_{3}\right),</Math> <Math equation-number="23.10.13" mode="display" xml:id="C23.S10.E13">\sigma\left(nz\right)=A_{n}e^{-n(n-1)(\eta_{1}+\eta_{3})z}\prod_{j=0}^{n-1} \prod_{\ell=0}^{n-1}\sigma\left(z+\frac{2j}{n}\omega_{1}+\frac{2\ell}{n}\omega _{3}\right),</Math> where <Math equation-number="23.10.14" mode="display" xml:id="C23.S10.E14">A_{n}=n\prod_{j=0}^{n-1}\prod_{\begin{subarray}{c}\ell=0\\ \ell\neq j\end{subarray}}^{n-1}\frac{1}{\sigma\left((2j\omega_{1}+2\ell\omega_ {3})/n\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="169" xml:id="C23.S10.SS3.p1.s2">
+Equivalently,
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C23.S10.SS3.p2.s1">
+ <Math equation-number="23.10.15" mode="display" xml:id="C23.S10.E15">A_{n}=\left(\frac{\pi^{2}G^{2}}{\omega_{1}}\right)^{n^{2}-1}\frac{q^{n(n-1)/2} }{i^{n-1}}\exp\left(-\frac{(n-1)\eta_{1}}{3\omega_{1}}\left((2n-1)(\omega_{1}^ {2}+\omega_{3}^{2})+3(n-1)\omega_{1}\omega_{3}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S10.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="171" xml:id="C23.S10.SS3.p3.s1">
+where <Math equation-number="23.10.16" mode="display" xml:id="C23.S10.E16">q=e^{\pi i\omega_{3}/\omega_{1}}, G=\prod_{n=1}^{\infty}(1-q^{2n})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS4">
+<title>Homogeneity</title>        
+  
+<para xml:id="C23.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C23.S10.SS4.p1.s1">
+For any nonzero real or complex constant <Math mode="inline" xml:id="C23.S10.SS4.p1.m1">c</Math> <Math equation-number="23.10.17" mode="display" xml:id="C23.S10.E17">\wp\left(cz|c\mathbb{L}\right)=c^{-2}\wp\left(z|\mathbb{L}\right),</Math> , <Math equation-number="23.10.18" mode="display" xml:id="C23.S10.E18">\zeta\left(cz|c\mathbb{L}\right)=c^{-1}\zeta\left(z|\mathbb{L}\right),</Math> , <Math equation-number="23.10.19" mode="display" xml:id="C23.S10.E19">\sigma\left(cz|c\mathbb{L}\right)=c\sigma\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="173" xml:id="C23.S10.SS4.p1.s2">
+Also, when <Math mode="inline" xml:id="C23.S10.SS4.p1.m2">\mathbb{L}</Math> is replaced by <Math mode="inline" xml:id="C23.S10.SS4.p1.m3">c\mathbb{L}</Math> the lattice invariants <Math mode="inline" xml:id="C23.S10.SS4.p1.m4">g_{2}</Math> and <Math mode="inline" xml:id="C23.S10.SS4.p1.m5">g_{3}</Math> are divided by <Math mode="inline" xml:id="C23.S10.SS4.p1.m6">c^{4}</Math> and <Math mode="inline" xml:id="C23.S10.SS4.p1.m7">c^{6}</Math> , respectively.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C23.S10.SS4.p2.s1">
+For these results and further identities see ( , §6.6) and ( , p. 14) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S11">
+<title>Integral Representations</title>         
+ 
+<para xml:id="C23.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C23.S11.p1.s1">
+Let <Math mode="inline" xml:id="C23.S11.p1.m1">\tau=\ifrac{\omega_{3}}{\omega_{1}}</Math> and <Math equation-number="23.11.1" mode="display" xml:id="C23.S11.E1">f_{1}(s,\tau)=\frac{{\cosh^{2}}\left(\tfrac{1}{2}\tau s\right)}{1-2e^{-s}\cosh \left(\tau s\right)+e^{-2s}}, f_{2}(s,\tau)=\frac{{\cos^{2}}\left(\tfrac{1}{2}s\right)}{1-2e^{i\tau s}\cos s +e^{2i\tau s}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C23.S11.p2.s1">
+Then <Math equation-number="23.11.2" mode="display" xml:id="C23.S11.E2">\wp\left(z\right)=\frac{1}{z^{2}}+8\int_{0}^{\infty}s\left(e^{-s}{\sinh^{2}} \left(\tfrac{1}{2}zs\right)f_{1}(s,\tau)+e^{i\tau s}{\sin^{2}}\left(\tfrac{1}{ 2}zs\right)f_{2}(s,\tau)\right)\mathrm{d}s,</Math> and <Math equation-number="23.11.3" mode="display" xml:id="C23.S11.E3">\zeta\left(z\right)=\frac{1}{z}+\int_{0}^{\infty}\left(e^{-s}\left(zs-\sinh \left(zs\right)\right)f_{1}(s,\tau)-e^{i\tau s}\left(zs-\sin\left(zs\right) \right)f_{2}(s,\tau)\right)\mathrm{d}s,</Math> provided that <Math mode="inline" xml:id="C23.S11.p2.m1">-1&lt;\Re(z+\tau)&lt;1</Math> and <Math mode="inline" xml:id="C23.S11.p2.m2">\left|\Im z\right|&lt;\Im\tau</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C23.S12">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C23.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C23.S12.p1.s1">
+If <Math mode="inline" xml:id="C23.S12.p1.m1">q\&gt;(=e^{\pi i\omega_{3}/\omega_{1}})\to 0</Math> with <Math mode="inline" xml:id="C23.S12.p1.m2">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S12.p1.m3">z</Math> fixed, then <Math equation-number="23.12.1" mode="display" xml:id="C23.S12.E1">\wp\left(z\right)=\frac{\pi^{2}}{4\omega_{1}^{2}}\left(-\frac{1}{3}+{\csc^{2}} \left(\frac{\pi z}{2\omega_{1}}\right)+8\left(1-\cos\left(\frac{\pi z}{\omega_ {1}}\right)\right)q^{2}+O\left(q^{4}\right)\right),</Math> <Math equation-number="23.12.2" mode="display" xml:id="C23.S12.E2">\zeta\left(z\right)=\frac{\pi^{2}}{4\omega_{1}^{2}}\left(\frac{z}{3}+\frac{2 \omega_{1}}{\pi}\cot\left(\frac{\pi z}{\omega_{1}}\right)-8\left(z-\frac{ \omega_{1}}{\pi}\sin\left(\frac{\pi z}{\omega_{1}}\right)\right)q^{2}+O\left(q ^{4}\right)\right),</Math> <Math equation-number="23.12.3" mode="display" xml:id="C23.S12.E3">\sigma\left(z\right)=\frac{2\omega_{1}}{\pi}\exp\left(\frac{\pi^{2}z^{2}}{24 \omega_{1}^{2}}\right)\sin\left(\frac{\pi z}{2\omega_{1}}\right)\*\left(1- \left(\frac{\pi^{2}z^{2}}{\omega_{1}^{2}}-4{\sin^{2}}\left(\frac{\pi z}{2 \omega_{1}}\right)\right)q^{2}+O\left(q^{4}\right)\right),</Math> provided that <Math mode="inline" xml:id="C23.S12.p1.m4">z\notin\mathbb{L}</Math> in the case of (LABEL:eq:WE.12.1) and (LABEL:eq:WE.12.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C23.S12.p1.s2">
+Also, <Math equation-number="23.12.4" mode="display" xml:id="C23.S12.E4">\eta_{1}=\frac{\pi^{2}}{4\omega_{1}}\left(\frac{1}{3}-8q^{2}+O\left(q^{4} \right)\right),</Math> with similar results for <Math mode="inline" xml:id="C23.S12.p1.m5">\eta_{2}</Math> and <Math mode="inline" xml:id="C23.S12.p1.m6">\eta_{3}</Math> obtainable by use of(LABEL:eq:WE.wfdef.etaom).
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C23.S13">
+<title>Zeros</title>          
+<para xml:id="C23.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C23.S13.p1.s1">
+For information on the zeros of <Math mode="inline" xml:id="C23.S13.p1.m1">\wp\left(z\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C23.S14">
+<title>Integrals</title>          
+<para xml:id="C23.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C23.S14.p1.s1">
+ <Math equation-number="23.14.1" mode="display" xml:id="C23.S14.E1">\int\wp\left(z\right)\mathrm{d}z=-\zeta\left(z\right),</Math> <Math equation-number="23.14.2" mode="display" xml:id="C23.S14.E2">\int{\wp^{2}}\left(z\right)\mathrm{d}z=\frac{1}{6}\wp'\left(z\right)+\frac{1}{ 12}g_{2}z,</Math> <Math equation-number="23.14.3" mode="display" xml:id="C23.S14.E3">\int{\wp^{3}}\left(z\right)\mathrm{d}z=\frac{1}{120}\wp'''\left(z\right)-\frac {3}{20}g_{2}\zeta\left(z\right)+\frac{1}{10}g_{3}z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C23.S14.p2.s1">
+For further integrals see ( , Vol. 1, pp. 161–162) , ( , p. 622) , and ( , pp. 51–52) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C23.S15">
+<title>Definitions</title>            
+ 
+<subsection xml:id="C23.S15.SS1">
+<title>General Modular Functions</title>         
+ 
+<para xml:id="C23.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C23.S15.SS1.p1.s1">
+In §§LABEL:sec:WE.15–LABEL:sec:WE.19,
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="183" xml:id="C23.S15.SS1.p1.s2">
+<Math mode="inline" xml:id="C23.S15.SS1.p1.m1">k</Math> and <Math mode="inline" xml:id="C23.S15.SS1.p1.m2">k^{\prime}</Math> <Math mode="inline" xml:id="C23.S15.SS1.p1.m3">(\in\mathbb{C})</Math> denote the Jacobi modulus and complementary modulus, respectively, and <Math mode="inline" xml:id="C23.S15.SS1.p1.m4">q=e^{i\pi\tau}</Math> ( <Math mode="inline" xml:id="C23.S15.SS1.p1.m5">\Im\tau&gt;0</Math> ) denotes the nome; compare §§LABEL:sec:TH.notand LABEL:sec:JA.nt.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="184" xml:id="C23.S15.SS1.p1.s3">
+Thus <Math equation-number="23.15.1" mode="display" xml:id="C23.S15.E1">q=\exp\left(-\pi\frac{{K^{\prime}}\left(k\right)}{K\left(k\right)}\right),</Math> <Math equation-number="23.15.2" mode="display" xml:id="C23.S15.E2">k=\frac{{\theta_{2}^{2}}\left(0,q\right)}{{\theta_{3}^{2}}\left(0,q\right)}, k^{\prime}=\frac{{\theta_{4}^{2}}\left(0,q\right)}{{\theta_{3}^{2}}\left(0,q \right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S15.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C23.S15.SS1.p2.s1">
+Also <Math mode="inline" xml:id="C23.S15.SS1.p2.m1">\mathcal{A}</Math> denotes a bilinear transformation on <Math mode="inline" xml:id="C23.S15.SS1.p2.m2">\tau</Math> , given by <Math equation-number="23.15.3" mode="display" xml:id="C23.S15.E3">\mathcal{A}\tau=\frac{a\tau+b}{c\tau+d},</Math> in which <Math mode="inline" xml:id="C23.S15.SS1.p2.m3">a,b,c,d</Math> are integers, with <Math equation-number="23.15.4" mode="display" xml:id="C23.S15.E4">ad-bc=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="186" xml:id="C23.S15.SS1.p2.s2">
+The set of all bilinear transformations of this form is denoted bySL <Math mode="inline" xml:id="C23.S15.SS1.p2.m4">(2,\mathbb{Z})</Math> ( ( , p. 77) ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S15.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C23.S15.SS1.p3.s1">
+A modular function <Math mode="inline" xml:id="C23.S15.SS1.p3.m1">f(\tau)</Math> is a function of <Math mode="inline" xml:id="C23.S15.SS1.p3.m2">\tau</Math> that is meromorphic in the half-plane <Math mode="inline" xml:id="C23.S15.SS1.p3.m3">\Im\tau&gt;0</Math> , and has the property that for all <Math mode="inline" xml:id="C23.S15.SS1.p3.m4">\mathcal{A}\in\mbox{SL}(2,\mathbb{Z})</Math> , or for all <Math mode="inline" xml:id="C23.S15.SS1.p3.m5">\mathcal{A}</Math> belonging to a subgroup of SL <Math mode="inline" xml:id="C23.S15.SS1.p3.m6">(2,\mathbb{Z})</Math> , <Math equation-number="23.15.5" mode="display" xml:id="C23.S15.E5">f(\mathcal{A}\tau)=c_{\mathcal{A}}(c\tau+d)^{\ell}f(\tau), subject to \Im\tau&gt;0,</Math> where <Math mode="inline" xml:id="C23.S15.SS1.p3.m7">c_{\mathcal{A}}</Math> is a constant depending only on <Math mode="inline" xml:id="C23.S15.SS1.p3.m8">\mathcal{A}</Math> , and <Math mode="inline" xml:id="C23.S15.SS1.p3.m9">\ell</Math> (the level) is an integer or half an odd integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="188" xml:id="C23.S15.SS1.p3.s2">
+(Some references refer to <Math mode="inline" xml:id="C23.S15.SS1.p3.m10">2\ell</Math> as the level).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="189" xml:id="C23.S15.SS1.p3.s3">
+If, as a function of <Math mode="inline" xml:id="C23.S15.SS1.p3.m11">q</Math> , <Math mode="inline" xml:id="C23.S15.SS1.p3.m12">f(\tau)</Math> is analytic at <Math mode="inline" xml:id="C23.S15.SS1.p3.m13">q=0</Math> , then <Math mode="inline" xml:id="C23.S15.SS1.p3.m14">f(\tau)</Math> is called a modular form.If, in addition, <Math mode="inline" xml:id="C23.S15.SS1.p3.m15">f(\tau)\to 0</Math> as <Math mode="inline" xml:id="C23.S15.SS1.p3.m16">q\to 0</Math> , then <Math mode="inline" xml:id="C23.S15.SS1.p3.m17">f(\tau)</Math> is called acusp form.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S15.SS2">
+<title>Functions <Math content-tex="\modularlambdatau@{\tau}" mode="inline" xml:id="C23.S15.SS2.m1">\lambda\left(\tau\right)</Math>, <Math content-tex="\KleincompinvarJtau@{\tau}" mode="inline" xml:id="C23.S15.SS2.m2">J\left(\tau\right)</Math>, <Math content-tex="\Dedekindeta@{\tau}" mode="inline" xml:id="C23.S15.SS2.m3">\eta\left(\tau\right)</Math></title>          
+<paragraph xml:id="C23.S15.Px1">
+<title>Elliptic Modular Function</title>   
+<para xml:id="C23.S15.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="190" xml:id="C23.S15.Px1.p1.s1">
+ <Math equation-number="23.15.6" mode="display" xml:id="C23.S15.E6">\lambda\left(\tau\right)=\frac{{\theta_{2}^{4}}\left(0,q\right)}{{\theta_{3}^{ 4}}\left(0,q\right)};</Math> compare also (LABEL:eq:WE.15.2).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S15.Px2">
+<title>Klein’s Complete Invariant</title>    
+<para xml:id="C23.S15.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="191" xml:id="C23.S15.Px2.p1.s1">
+ <Math equation-number="23.15.7" mode="display" xml:id="C23.S15.E7">J\left(\tau\right)=\frac{\left({\theta_{2}^{8}}\left(0,q\right)+{\theta_{3}^{8 }}\left(0,q\right)+{\theta_{4}^{8}}\left(0,q\right)\right)^{3}}{54\left(\theta _{1}'\left(0,q\right)\right)^{8}},</Math> where (as in §LABEL:sec:TH.def.fe)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="192" xml:id="C23.S15.Px2.p1.s2">
+<Math equation-number="23.15.8" mode="display" xml:id="C23.S15.E8">\theta_{1}'\left(0,q\right)=\ifrac{\partial\theta_{1}\left(z,q\right)}{ \partial z}|_{z=0}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S15.Px3">
+<title>Dedekind’s Eta Function (or Dedekind Modular Function)</title>      
+<para xml:id="C23.S15.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="193" xml:id="C23.S15.Px3.p1.s1">
+ <Math equation-number="23.15.9" mode="display" xml:id="C23.S15.E9">\eta\left(\tau\right)=\left(\tfrac{1}{2}\theta_{1}'\left(0,q\right)\right)^{1/ 3}=e^{i\pi\tau/12}\theta_{3}\left(\tfrac{1}{2}\pi(1+\tau)\middle|3\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="194" xml:id="C23.S15.Px3.p1.s2">
+In (LABEL:eq:WE.15.8) the branch of the cube root is chosen to agree with the second equality; in particular, when <Math mode="inline" xml:id="C23.S15.Px3.p1.m1">\tau</Math> lies on the positive imaginary axis the cube root is real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="195" xml:id="C23.S15.Px3.p1.s3">
+See also LABEL:eq:NT.GF.ETA.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S16">
+<title>Graphics</title>          
+<para xml:id="C23.S16.p1">
+
+</para>
+
+ 
+<para xml:id="C23.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C23.S16.p2.s1">
+See Figures LABEL:fig:WE.16.1–LABEL:fig:WE.16.3 for the modular functions <Math mode="inline" xml:id="C23.S16.p2.m1">\lambda</Math> , <Math mode="inline" xml:id="C23.S16.p2.m2">J</Math> , and <Math mode="inline" xml:id="C23.S16.p2.m3">\eta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="197" xml:id="C23.S16.p2.s2">
+In Figures LABEL:fig:WE.16.2 and LABEL:fig:WE.16.3, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="198" xml:id="C23.S16.p2.s3">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="199" xml:id="C23.S16.F1.s1">
+Figure 23.16.1: Modular functions <Math mode="inline" xml:id="C23.S16.F1.m5">\lambda\left(iy\right)</Math> , <Math mode="inline" xml:id="C23.S16.F1.m6">J\left(iy\right)</Math> , <Math mode="inline" xml:id="C23.S16.F1.m7">\eta\left(iy\right)</Math> for <Math mode="inline" xml:id="C23.S16.F1.m8">0\leq y\leq 3</Math> . See also Figure  .
+</sentence>             
+<sentence sentence-num-in-section="200" xml:id="C23.S16.F2.s1">
+Figure 23.16.2: Elliptic modular function <Math mode="inline" xml:id="C23.S16.F2.m4">\lambda\left(x+iy\right)</Math> for <Math mode="inline" xml:id="C23.S16.F2.m5">-0.25\leq x\leq 0.25</Math> , <Math mode="inline" xml:id="C23.S16.F2.m6">0.005\leq y\leq 0.1</Math> . 
+</sentence>           
+<sentence sentence-num-in-section="201" xml:id="C23.S16.F3.s1">
+Figure 23.16.3: Dedekind’s eta function <Math mode="inline" xml:id="C23.S16.F3.m4">\eta\left(x+iy\right)</Math> for <Math mode="inline" xml:id="C23.S16.F3.m5">-0.0625\leq x\leq 0.0625</Math> , <Math mode="inline" xml:id="C23.S16.F3.m6">0.0001\leq y\leq 0.07</Math> . 
+</sentence>    
+</section>
+ 
+<section xml:id="C23.S17">
+<title>Elementary Properties</title>          
+<subsection xml:id="C23.S17.SS1">
+<title>Special Values</title>         
+ 
+<para xml:id="C23.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="202" xml:id="C23.S17.SS1.p1.s1">
+ <Math equation-number="23.17.1" mode="display" xml:id="C23.S17.E1">\lambda\left(i\right)=\tfrac{1}{2}, \lambda\left(\textstyle e^{\pi i/3}\right)=e^{\pi i/3},</Math> <Math equation-number="23.17.2" mode="display" xml:id="C23.S17.E2">J\left(i\right)=1, J\left(\textstyle e^{\pi i/3}\right)=0,</Math> <Math equation-number="23.17.3" mode="display" xml:id="C23.S17.E3">\eta\left(i\right)=\frac{\Gamma\left(\tfrac{1}{4}\right)}{2\pi^{3/4}}, \eta\left(\textstyle e^{\pi i/3}\right)=\frac{3^{1/8}\left(\Gamma\left(\tfrac{ 1}{3}\right)\right)^{3/2}}{2\pi}e^{\pi i/24}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C23.S17.SS1.p2.s1">
+For further results for <Math mode="inline" xml:id="C23.S17.SS1.p2.m1">J\left(\tau\right)</Math> see ( , p. 376) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S17.SS2">
+<title>Power and Laurent Series</title>           
+<para xml:id="C23.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="204" xml:id="C23.S17.SS2.p1.s1">
+When <Math mode="inline" xml:id="C23.S17.SS2.p1.m1">|q|&lt;1</Math> <Math equation-number="23.17.4" mode="display" xml:id="C23.S17.E4">\lambda\left(\tau\right)=16q(1-8q+44q^{2}+\cdots),</Math> <Math equation-number="23.17.5" mode="display" xml:id="C23.S17.E5">1728\!J\left(\tau\right)=q^{-2}+744+1\;96884q^{2}+214\;93760q^{4}+\cdots,</Math> <Math equation-number="23.17.6" mode="display" xml:id="C23.S17.E6">\eta\left(\tau\right)=\sum_{n=-\infty}^{\infty}(-1)^{n}q^{(6n+1)^{2}/12}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S17.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C23.S17.SS2.p2.s1">
+In (LABEL:eq:WE.17.5) for terms up to <Math mode="inline" xml:id="C23.S17.SS2.p2.m1">q^{48}</Math> see ( ) , and for terms up to <Math mode="inline" xml:id="C23.S17.SS2.p2.m2">q^{100}</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="206" xml:id="C23.S17.SS2.p2.s2">
+See also ( , p. 22) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S17.SS3">
+<title>Infinite Products</title>          
+<para xml:id="C23.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C23.S17.SS3.p1.s1">
+ <Math equation-number="23.17.7" mode="display" xml:id="C23.S17.E7">\lambda\left(\tau\right)=16q\prod_{n=1}^{\infty}\left(\frac{1+q^{2n}}{1+q^{2n- 1}}\right)^{8},</Math> <Math equation-number="23.17.8" mode="display" xml:id="C23.S17.E8">\eta\left(\tau\right)=q^{1/12}\prod_{n=1}^{\infty}(1-q^{2n}),</Math> with <Math mode="inline" xml:id="C23.S17.SS3.p1.m1">q^{1/12}=e^{i\pi\tau/12}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S18">
+<title>Modular Transformations</title>          
+<paragraph xml:id="C23.S18.Px1">
+<title>Elliptic Modular Function</title>   
+<para xml:id="C23.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C23.S18.Px1.p1.s1">
+ <Math mode="inline" xml:id="C23.S18.Px1.p1.m1">\lambda\left(\mathcal{A}\tau\right)</Math> equals <Math equation-number="23.18.1" mode="display" xml:id="C23.S18.E1">\lambda\left(\tau\right), 1-\lambda\left(\tau\right), \frac{1}{\lambda\left(\tau\right)}, \frac{1}{1-\lambda\left(\tau\right)}, \frac{\lambda\left(\tau\right)}{\lambda\left(\tau\right)-1}, 1-\frac{1}{\lambda\left(\tau\right)},</Math> according as the elements <Math mode="inline" xml:id="C23.S18.Px1.p1.m2">\begin{bmatrix}a&amp;b\\ c&amp;d\end{bmatrix}</Math> of <Math mode="inline" xml:id="C23.S18.Px1.p1.m3">\mathcal{A}</Math> in (LABEL:eq:WE.15.3) have the respective forms <Math equation-number="23.18.2" mode="display" xml:id="C23.S18.E2">\begin{bmatrix}\mathrm{o}&amp;\mathrm{e}\\ \mathrm{e}&amp;\mathrm{o}\end{bmatrix}, \begin{bmatrix}\mathrm{e}&amp;\mathrm{o}\\ \mathrm{o}&amp;\mathrm{e}\end{bmatrix}, \begin{bmatrix}\mathrm{o}&amp;\mathrm{e}\\ \mathrm{o}&amp;\mathrm{o}\end{bmatrix}, \begin{bmatrix}\mathrm{e}&amp;\mathrm{o}\\ \mathrm{o}&amp;\mathrm{o}\end{bmatrix}, \begin{bmatrix}\mathrm{o}&amp;\mathrm{o}\\ \mathrm{e}&amp;\mathrm{o}\end{bmatrix}, \begin{bmatrix}\mathrm{o}&amp;\mathrm{o}\\ \mathrm{o}&amp;\mathrm{e}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="209" xml:id="C23.S18.Px1.p1.s2">
+Here e and o are generic symbols for even and odd integers, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="210" xml:id="C23.S18.Px1.p1.s3">
+In particular, if <Math mode="inline" xml:id="C23.S18.Px1.p1.m4">a-1,b,c</Math> , and <Math mode="inline" xml:id="C23.S18.Px1.p1.m5">d-1</Math> are all even, then <Math equation-number="23.18.3" mode="display" xml:id="C23.S18.E3">\lambda\left(\mathcal{A}\tau\right)=\lambda\left(\tau\right),</Math> and <Math mode="inline" xml:id="C23.S18.Px1.p1.m6">\lambda\left(\tau\right)</Math> is a cusp form of level zero for the correspondingsubgroup of SL <Math mode="inline" xml:id="C23.S18.Px1.p1.m7">(2,\mathbb{Z})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S18.Px2">
+<title>Klein’s Complete Invariant</title>   
+<para xml:id="C23.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="211" xml:id="C23.S18.Px2.p1.s1">
+ <Math equation-number="23.18.4" mode="display" xml:id="C23.S18.E4">J\left(\mathcal{A}\tau\right)=J\left(\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="212" xml:id="C23.S18.Px2.p1.s2">
+<Math mode="inline" xml:id="C23.S18.Px2.p1.m1">J\left(\tau\right)</Math> is a modular form of level zero for SL <Math mode="inline" xml:id="C23.S18.Px2.p1.m2">(2,\mathbb{Z})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S18.Px3">
+<title>Dedekind’s Eta Function</title>   
+<para xml:id="C23.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="213" xml:id="C23.S18.Px3.p1.s1">
+ <Math equation-number="23.18.5" mode="display" xml:id="C23.S18.E5">\eta\left(\mathcal{A}\tau\right)=\varepsilon(\mathcal{A})\left(-i(c\tau+d) \right)^{1/2}\eta\left(\tau\right),</Math> where the square root has its principal value and <Math equation-number="23.18.6" mode="display" xml:id="C23.S18.E6">\varepsilon(\mathcal{A})=\exp\left(\pi i\left(\frac{a+d}{12c}+s(-d,c)\right) \right),</Math> <Math equation-number="23.18.7" mode="display" xml:id="C23.S18.E7">{s(d,c)=\sum_{r=1}^{c-1}\frac{r}{c}\left(\frac{dr}{c}-\left\lfloor\frac{dr}{c} \right\rfloor-\frac{1}{2}\right),} subject to c&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="214" xml:id="C23.S18.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C23.S18.Px3.p1.m1">s(d,c)</Math> is a Dedekind sum.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="215" xml:id="C23.S18.Px3.p1.s3">
+See (LABEL:eq:NT.GF.DSUM), §LABEL:sec:NT.FNS.PTc, §LABEL:sec:NT.FNS.PTd and ( , pp. 48 and 51–53) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="216" xml:id="C23.S18.Px3.p1.s4">
+Note that <Math mode="inline" xml:id="C23.S18.Px3.p1.m2">\eta\left(\tau\right)</Math> is of level <Math mode="inline" xml:id="C23.S18.Px3.p1.m3">\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C23.S19">
+<title>Interrelations</title>        
+  
+<para xml:id="C23.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="217" xml:id="C23.S19.p1.s1">
+ <Math equation-number="23.19.1" mode="display" xml:id="C23.S19.E1">\lambda\left(\tau\right)=16\left(\frac{{\eta^{2}}\left(2\tau\right)\eta\left( \tfrac{1}{2}\tau\right)}{{\eta^{3}}\left(\tau\right)}\right)^{8},</Math> <Math equation-number="23.19.2" mode="display" xml:id="C23.S19.E2">J\left(\tau\right)=\frac{4}{27}\frac{\left(1-\lambda\left(\tau\right)+{\lambda ^{2}}\left(\tau\right)\right)^{3}}{\left(\lambda\left(\tau\right)\left(1- \lambda\left(\tau\right)\right)\right)^{2}},</Math> <Math equation-number="23.19.3" mode="display" xml:id="C23.S19.E3">J\left(\tau\right)=\frac{{g_{2}^{3}}}{{g_{2}^{3}}-27{g_{3}^{2}}},</Math> where <Math mode="inline" xml:id="C23.S19.p1.m1">g_{2},g_{3}</Math> are the invariants of the lattice <Math mode="inline" xml:id="C23.S19.p1.m2">\mathbb{L}</Math> with generators <Math mode="inline" xml:id="C23.S19.p1.m3">1</Math> and <Math mode="inline" xml:id="C23.S19.p1.m4">\tau</Math> ; see §LABEL:sec:WE.3(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C23.S19.p2.s1">
+Also,with <Math mode="inline" xml:id="C23.S19.p2.m1">\Delta</Math> defined as in (LABEL:eq:WE.3.4),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="219" xml:id="C23.S19.p2.s2">
+<Math equation-number="23.19.4" mode="display" xml:id="C23.S19.E4">\Delta=(2\pi)^{12}{\eta^{24}}\left(\tau\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C23.S20">
+<title>Mathematical Applications</title>        
+   
+<subsection xml:id="C23.S20.SS1">
+<title>Conformal Mappings</title>          
+<paragraph xml:id="C23.S20.Px1">
+<title>Rectangular Lattice</title>   
+<para xml:id="C23.S20.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="220" xml:id="C23.S20.Px1.p1.s1">
+The boundary of the rectangle <Math mode="inline" xml:id="C23.S20.Px1.p1.m1">R</Math> , with vertices <Math mode="inline" xml:id="C23.S20.Px1.p1.m2">0</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m3">\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m4">\omega_{1}+\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m5">\omega_{3}</Math> , is mapped strictly monotonically by <Math mode="inline" xml:id="C23.S20.Px1.p1.m6">\wp</Math> onto the real line with <Math mode="inline" xml:id="C23.S20.Px1.p1.m7">0\to\infty</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m8">\omega_{1}\to e_{1}</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m9">\omega_{1}+\omega_{3}\to e_{2}</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m10">\omega_{3}\to e_{3}</Math> , <Math mode="inline" xml:id="C23.S20.Px1.p1.m11">0\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="221" xml:id="C23.S20.Px1.p1.s2">
+There is a unique point <Math mode="inline" xml:id="C23.S20.Px1.p1.m12">z_{0}\in[\omega_{1},\omega_{1}+\omega_{3}]\cup[\omega_{1}+\omega_{3},\omega_{3}]</Math> such that <Math mode="inline" xml:id="C23.S20.Px1.p1.m13">\wp\left(z_{0}\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="222" xml:id="C23.S20.Px1.p1.s3">
+The interior of <Math mode="inline" xml:id="C23.S20.Px1.p1.m14">R</Math> is mapped one-to-one onto the lower half-plane.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S20.Px2">
+<title>Rhombic Lattice</title>   
+<para xml:id="C23.S20.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="223" xml:id="C23.S20.Px2.p1.s1">
+The two pairs of edges <Math mode="inline" xml:id="C23.S20.Px2.p1.m1">[0,\omega_{1}]\cup[\omega_{1},2\omega_{3}]</Math> and <Math mode="inline" xml:id="C23.S20.Px2.p1.m2">[2\omega_{3},2\omega_{3}-\omega_{1}]\cup[2\omega_{3}-\omega_{1},0]</Math> of <Math mode="inline" xml:id="C23.S20.Px2.p1.m3">R</Math> are eachmapped strictly monotonically by <Math mode="inline" xml:id="C23.S20.Px2.p1.m4">\wp</Math> onto the real line, with <Math mode="inline" xml:id="C23.S20.Px2.p1.m5">0\to\infty</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p1.m6">\omega_{1}\to e_{1}</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p1.m7">2\omega_{3}\to-\infty</Math> ; similarly for the other pair of edges.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="224" xml:id="C23.S20.Px2.p1.s2">
+For each pair of edges there is a unique point <Math mode="inline" xml:id="C23.S20.Px2.p1.m8">z_{0}</Math> such that <Math mode="inline" xml:id="C23.S20.Px2.p1.m9">\wp\left(z_{0}\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="225" xml:id="C23.S20.Px2.p2.s1">
+The interior of the rectangle with vertices <Math mode="inline" xml:id="C23.S20.Px2.p2.m1">0</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m2">\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m3">2\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m4">2\omega_{3}-\omega_{1}</Math> is mapped two-to-one onto the lower half-plane.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="226" xml:id="C23.S20.Px2.p2.s2">
+The interior of the rectangle with vertices <Math mode="inline" xml:id="C23.S20.Px2.p2.m5">0</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m6">\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m7">\frac{1}{2}\omega_{1}+\omega_{3}</Math> , <Math mode="inline" xml:id="C23.S20.Px2.p2.m8">\frac{1}{2}\omega_{1}-\omega_{3}</Math> is mapped one-to-one onto the lower half-plane with a cut from <Math mode="inline" xml:id="C23.S20.Px2.p2.m9">e_{3}</Math> to <Math mode="inline" xml:id="C23.S20.Px2.p2.m10">\wp\left(\frac{1}{2}\omega_{1}+\omega_{3}\right)\&gt;(=\wp\left(\frac{1}{2}\omega _{1}-\omega_{3}\right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="227" xml:id="C23.S20.Px2.p2.s3">
+The cut is the image of the edge from <Math mode="inline" xml:id="C23.S20.Px2.p2.m11">\frac{1}{2}\omega_{1}+\omega_{3}</Math> to <Math mode="inline" xml:id="C23.S20.Px2.p2.m12">\frac{1}{2}\omega_{1}-\omega_{3}</Math> and is not a line segment.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="228" xml:id="C23.S20.Px2.p3.s1">
+For examples of conformal mappings of the function <Math mode="inline" xml:id="C23.S20.Px2.p3.m1">\wp\left(z\right)</Math> , see ( , pp. 642–648, 654–655, and 659–60) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C23.S20.Px2.p4.s1">
+For conformal mappings via modular functions see ( , §2.7) .
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S20.SS2">
+<title>Elliptic Curves</title>        
+    
+<para xml:id="C23.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C23.S20.SS2.p1.s1">
+An algebraic curve that can be put either into the form <Math equation-number="23.20.1" mode="display" xml:id="C23.S20.E1">C:y^{2}=x^{3}+ax+b,</Math> or equivalently, on replacing <Math mode="inline" xml:id="C23.S20.SS2.p1.m1">x</Math> by <Math mode="inline" xml:id="C23.S20.SS2.p1.m2">x/z</Math> and <Math mode="inline" xml:id="C23.S20.SS2.p1.m3">y</Math> by <Math mode="inline" xml:id="C23.S20.SS2.p1.m4">y/z</Math> (projective coordinates), into the form <Math equation-number="23.20.2" mode="display" xml:id="C23.S20.E2">C:y^{2}z=x^{3}+axz^{2}+bz^{3},</Math> is an example of an elliptic curve (§LABEL:sec:JA.ma.ac).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="231" xml:id="C23.S20.SS2.p1.s2">
+Here <Math mode="inline" xml:id="C23.S20.SS2.p1.m5">a</Math> and <Math mode="inline" xml:id="C23.S20.SS2.p1.m6">b</Math> are real or complex constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C23.S20.SS2.p2.s1">
+Points <Math mode="inline" xml:id="C23.S20.SS2.p2.m1">P=(x,y)</Math> on the curve can be parametrized by <Math mode="inline" xml:id="C23.S20.SS2.p2.m2">x=\wp\left(z;g_{2},g_{3}\right)</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p2.m3">2y=\wp'\left(z;g_{2},g_{3}\right)</Math> , where <Math mode="inline" xml:id="C23.S20.SS2.p2.m4">g_{2}=-4a</Math> and <Math mode="inline" xml:id="C23.S20.SS2.p2.m5">g_{3}=-4b</Math> : in this case we write <Math mode="inline" xml:id="C23.S20.SS2.p2.m6">P=P(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="233" xml:id="C23.S20.SS2.p2.s2">
+The curve <Math mode="inline" xml:id="C23.S20.SS2.p2.m7">C</Math> is made into an abelian group ( ( , Chapter 5) ) by defining the zero element <Math mode="inline" xml:id="C23.S20.SS2.p2.m8">o=(0,1,0)</Math> as the point at infinity, the negative of <Math mode="inline" xml:id="C23.S20.SS2.p2.m9">P=(x,y)</Math> by <Math mode="inline" xml:id="C23.S20.SS2.p2.m10">-P=(x,-y)</Math> , and generally <Math mode="inline" xml:id="C23.S20.SS2.p2.m11">P_{1}+P_{2}+P_{3}=0</Math> on the curve iff the points <Math mode="inline" xml:id="C23.S20.SS2.p2.m12">P_{1}</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p2.m13">P_{2}</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p2.m14">P_{3}</Math> are collinear.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="234" xml:id="C23.S20.SS2.p2.s3">
+It follows from the addition formula (LABEL:eq:WE.10.1) that the points <Math mode="inline" xml:id="C23.S20.SS2.p2.m15">P_{j}=P(z_{j})</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p2.m16">j=1,2,3</Math> , have zero sum iff <Math mode="inline" xml:id="C23.S20.SS2.p2.m17">z_{1}+z_{2}+z_{3}\in\mathbb{L}</Math> , so that addition of points on the curve <Math mode="inline" xml:id="C23.S20.SS2.p2.m18">C</Math> corresponds to addition of parameters <Math mode="inline" xml:id="C23.S20.SS2.p2.m19">z_{j}</Math> on the torus <Math mode="inline" xml:id="C23.S20.SS2.p2.m20">\mathbb{C}/\mathbb{L}</Math> ; see ( , §§2.11, 2.14) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="235" xml:id="C23.S20.SS2.p3.s1">
+In terms of <Math mode="inline" xml:id="C23.S20.SS2.p3.m1">(x,y)</Math> the addition law can be expressed <Math mode="inline" xml:id="C23.S20.SS2.p3.m2">(x,y)+o=(x,y)</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p3.m3">(x,y)+(x,-y)=o</Math> ; otherwise <Math mode="inline" xml:id="C23.S20.SS2.p3.m4">(x_{1},y_{1})+(x_{2},y_{2})=(x_{3},y_{3})</Math> , where <Math equation-number="23.20.3" mode="display" xml:id="C23.S20.E3">x_{3}=m^{2}-x_{1}-x_{2}, y_{3}=-m(x_{3}-x_{1})-y_{1},</Math> and <Math equation-number="23.20.4" mode="display" xml:id="C23.S20.E4">m=\begin{cases}(3x_{1}^{2}+a)/(2y_{1}),&amp;P_{1}=P_{2},\\ (y_{2}-y_{1})/(x_{2}-x_{1}),&amp;P_{1}\neq P_{2}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C23.S20.SS2.p4.s1">
+If <Math mode="inline" xml:id="C23.S20.SS2.p4.m1">a,b\in\mathbb{R}</Math> , then <Math mode="inline" xml:id="C23.S20.SS2.p4.m2">C</Math> intersects the plane <Math mode="inline" xml:id="C23.S20.SS2.p4.m3">{\mathbb{R}^{2}}</Math> in a curve that is connected if <Math mode="inline" xml:id="C23.S20.SS2.p4.m4">\Delta=4a^{3}+27b^{2}&gt;0</Math> ; if <Math mode="inline" xml:id="C23.S20.SS2.p4.m5">\Delta&lt;0</Math> , then the intersection has two components, one of which is a closed loop.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C23.S20.SS2.p4.s2">
+These cases correspond to rhombic and rectangular lattices, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="238" xml:id="C23.S20.SS2.p4.s3">
+The addition law states that to find the sum of two points, take the third intersection with <Math mode="inline" xml:id="C23.S20.SS2.p4.m6">C</Math> of the chord joining them (or the tangent if they coincide); then its reflection in the <Math mode="inline" xml:id="C23.S20.SS2.p4.m7">x</Math> -axis gives the required sum.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="239" xml:id="C23.S20.SS2.p4.s4">
+The geometric nature of this construction is illustrated in ( , §2.14) , ( , §§6, 7) , and ( , Chapter 1, §§3, 4) : each of these referencesmakes a connection with the addition theorem (LABEL:eq:WE.10.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C23.S20.SS2.p5.s1">
+If <Math mode="inline" xml:id="C23.S20.SS2.p5.m1">a,b\in\mathbb{Q}</Math> , then by rescaling we may assume <Math mode="inline" xml:id="C23.S20.SS2.p5.m2">a,b\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="241" xml:id="C23.S20.SS2.p5.s2">
+Let <Math mode="inline" xml:id="C23.S20.SS2.p5.m3">T</Math> denote the set of points on <Math mode="inline" xml:id="C23.S20.SS2.p5.m4">C</Math> that are of finite order (that is, those points <Math mode="inline" xml:id="C23.S20.SS2.p5.m5">P</Math> for which there exists a positive integer <Math mode="inline" xml:id="C23.S20.SS2.p5.m6">n</Math> with <Math mode="inline" xml:id="C23.S20.SS2.p5.m7">nP=o</Math> ), and let <Math mode="inline" xml:id="C23.S20.SS2.p5.m8">I,K</Math> be the sets of points with integer andrational coordinates, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="242" xml:id="C23.S20.SS2.p5.s3">
+Then <Math mode="inline" xml:id="C23.S20.SS2.p5.m9">\emptyset\subseteq T\subseteq I\subseteq K\subseteq C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="243" xml:id="C23.S20.SS2.p5.s4">
+Both <Math mode="inline" xml:id="C23.S20.SS2.p5.m10">T,K</Math> are subgroups of <Math mode="inline" xml:id="C23.S20.SS2.p5.m11">C</Math> , though <Math mode="inline" xml:id="C23.S20.SS2.p5.m12">I</Math> may not be.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="244" xml:id="C23.S20.SS2.p5.s5">
+<Math mode="inline" xml:id="C23.S20.SS2.p5.m13">K</Math> always has the form <Math mode="inline" xml:id="C23.S20.SS2.p5.m14">T\times{\mathbb{Z}^{r}}</Math> (Mordell’s Theorem: ( , Chapter 3, §5) ); the determination of <Math mode="inline" xml:id="C23.S20.SS2.p5.m15">r</Math> , the rank of <Math mode="inline" xml:id="C23.S20.SS2.p5.m16">K</Math> , raises questions of great difficulty, many of which are still open.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="245" xml:id="C23.S20.SS2.p5.s6">
+Both <Math mode="inline" xml:id="C23.S20.SS2.p5.m17">T</Math> and <Math mode="inline" xml:id="C23.S20.SS2.p5.m18">I</Math> are finite sets.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="246" xml:id="C23.S20.SS2.p5.s7">
+<Math mode="inline" xml:id="C23.S20.SS2.p5.m19">T</Math> must have one of the forms <Math mode="inline" xml:id="C23.S20.SS2.p5.m20">\mathbb{Z}/(n\mathbb{Z})</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m21">1\leq n\leq 10</Math> or <Math mode="inline" xml:id="C23.S20.SS2.p5.m22">n=12</Math> , or <Math mode="inline" xml:id="C23.S20.SS2.p5.m23">(\mathbb{Z}/(2\mathbb{Z}))\times(\mathbb{Z}/(2n\mathbb{Z}))</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m24">1\leq n\leq 4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="247" xml:id="C23.S20.SS2.p5.s8">
+To determine <Math mode="inline" xml:id="C23.S20.SS2.p5.m25">T</Math> , we make use of the fact that if <Math mode="inline" xml:id="C23.S20.SS2.p5.m26">(x,y)\in T</Math> then <Math mode="inline" xml:id="C23.S20.SS2.p5.m27">y^{2}</Math> must be a divisor of <Math mode="inline" xml:id="C23.S20.SS2.p5.m28">\Delta</Math> ; hence there are only afinite number of possibilities for <Math mode="inline" xml:id="C23.S20.SS2.p5.m29">y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="248" xml:id="C23.S20.SS2.p5.s9">
+Values of <Math mode="inline" xml:id="C23.S20.SS2.p5.m30">x</Math> are then found as integer solutions of <Math mode="inline" xml:id="C23.S20.SS2.p5.m31">x^{3}+ax+b-y^{2}=0</Math> (in particular <Math mode="inline" xml:id="C23.S20.SS2.p5.m32">x</Math> must be a divisor of <Math mode="inline" xml:id="C23.S20.SS2.p5.m33">b-y^{2}</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="249" xml:id="C23.S20.SS2.p5.s10">
+The resulting points are then tested for finite order as follows.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="250" xml:id="C23.S20.SS2.p5.s11">
+Given <Math mode="inline" xml:id="C23.S20.SS2.p5.m34">P</Math> , calculate <Math mode="inline" xml:id="C23.S20.SS2.p5.m35">2P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m36">4P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m37">8P</Math> by doubling as above.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="251" xml:id="C23.S20.SS2.p5.s12">
+If any of these quantities is zero, then the point has finite order.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="252" xml:id="C23.S20.SS2.p5.s13">
+If any of <Math mode="inline" xml:id="C23.S20.SS2.p5.m38">2P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m39">4P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m40">8P</Math> is not an integer, then the point has infinite order.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="253" xml:id="C23.S20.SS2.p5.s14">
+Otherwise observe any equalities between <Math mode="inline" xml:id="C23.S20.SS2.p5.m41">P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m42">2P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m43">4P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m44">8P</Math> , and their negatives.
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="254" xml:id="C23.S20.SS2.p5.s15">
+The order of a point (if finite and not already determined) can have only the values 3, 5, 6, 7, 9, 10, or 12, and so can be found from <Math mode="inline" xml:id="C23.S20.SS2.p5.m45">2P=-P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m46">4P=-P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m47">4P=-2P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m48">8P=P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m49">8P=-P</Math> , <Math mode="inline" xml:id="C23.S20.SS2.p5.m50">8P=-2P</Math> , or <Math mode="inline" xml:id="C23.S20.SS2.p5.m51">8P=-4P</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="255" xml:id="C23.S20.SS2.p5.s16">
+If none of these equalities hold, then <Math mode="inline" xml:id="C23.S20.SS2.p5.m52">P</Math> has infinite order.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S20.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="256" xml:id="C23.S20.SS2.p6.s1">
+For extensive tables of elliptic curves see ( , pp. 84–340) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S20.SS3">
+<title>Factorization</title>            
+<para xml:id="C23.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="257" xml:id="C23.S20.SS3.p1.s1">
+§LABEL:sec:NT.CRYP describes the use of primality testing and factorization in cryptography.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="258" xml:id="C23.S20.SS3.p1.s2">
+For applications of the Weierstrass function and the ellipticcurve method to these problems see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S20.SS4">
+<title>Modular and Quintic Equations</title>          
+<para xml:id="C23.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="259" xml:id="C23.S20.SS4.p1.s1">
+The modular equation of degree <Math mode="inline" xml:id="C23.S20.SS4.p1.m1">p</Math> , <Math mode="inline" xml:id="C23.S20.SS4.p1.m2">p</Math> prime, is an algebraic equation in <Math mode="inline" xml:id="C23.S20.SS4.p1.m3">\alpha=\lambda\left(p\tau\right)</Math> and <Math mode="inline" xml:id="C23.S20.SS4.p1.m4">\beta=\lambda\left(\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="260" xml:id="C23.S20.SS4.p1.s2">
+For <Math mode="inline" xml:id="C23.S20.SS4.p1.m5">p=2,3,5,7</Math> and with <Math mode="inline" xml:id="C23.S20.SS4.p1.m6">u=\alpha^{1/4}</Math> , <Math mode="inline" xml:id="C23.S20.SS4.p1.m7">v=\beta^{1/4}</Math> , the modular equation is as follows: <Math equation-number="23.20.5" mode="display" xml:id="C23.S20.E5">v^{8}(1+u^{8})=4u^{4}, subject to p=2,</Math> <Math equation-number="23.20.6" mode="display" xml:id="C23.S20.E6">u^{4}-v^{4}+2uv(1-u^{2}v^{2})=0, subject to p=3,</Math> <Math equation-number="23.20.7" mode="display" xml:id="C23.S20.E7">{u^{6}-v^{6}+5u^{2}v^{2}(u^{2}-v^{2})+4uv(1-u^{4}v^{4})=0}, subject to p=5,</Math> <Math equation-number="23.20.8" mode="display" xml:id="C23.S20.E8">(1-u^{8})(1-v^{8})=(1-uv)^{8}, subject to p=7</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S20.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="261" xml:id="C23.S20.SS4.p2.s1">
+For further information, including the application of (LABEL:eq:WE.21.7) to the solution of the general quintic equation, see ( , Chapter 4) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S20.SS5">
+<title>Modular Functions and Number Theory</title>           
+<para xml:id="C23.S20.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C23.S20.SS5.p1.s1">
+For applications of modular functions to number theory see§LABEL:sec:NT.FNS.PTd and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="263" xml:id="C23.S20.SS5.p1.s2">
+See also ( ) , ( , Part 2, Chapters 6, 7) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S21">
+<title>Physical Applications</title>               
+<subsection xml:id="C23.S21.SS1">
+<title>Classical Dynamics</title>         
+<para xml:id="C23.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="264" xml:id="C23.S21.SS1.p1.s1">
+In §LABEL:sec:JA.ph.hd it is noted that Jacobian elliptic functions provide a natural basis of solutions for problems in Newtonian classical dynamics with quartic potentials in canonical form <Math mode="inline" xml:id="C23.S21.SS1.p1.m1">(1-x^{2})(1-k^{2}x^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="265" xml:id="C23.S21.SS1.p1.s2">
+The Weierstrass function <Math mode="inline" xml:id="C23.S21.SS1.p1.m2">\wp</Math> plays a similar role for cubic potentials in canonical form <Math mode="inline" xml:id="C23.S21.SS1.p1.m3">g_{3}+g_{2}x-4x^{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="266" xml:id="C23.S21.SS1.p1.s3">
+See, for example, ( , Chapter 7) and ( , Chapters 4–6) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS2">
+<title>Nonlinear Evolution Equations</title>             
+<para xml:id="C23.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="267" xml:id="C23.S21.SS2.p1.s1">
+( ) applies the function <Math mode="inline" xml:id="C23.S21.SS2.p1.m1">\wp</Math> to an integrable classical many-body problem, and relates the solutions to nonlinear partial differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="268" xml:id="C23.S21.SS2.p1.s2">
+For applications to soliton solutions of the Korteweg–de Vries (KdV) equation see ( , p. 91) , ( ) , and ( , §8.1) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS3">
+<title>Ellipsoidal Coordinates</title>          
+ 
+<para xml:id="C23.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C23.S21.SS3.p1.s1">
+Ellipsoidal coordinates <Math mode="inline" xml:id="C23.S21.SS3.p1.m1">(\xi,\eta,\zeta)</Math> may be defined as the three roots <Math mode="inline" xml:id="C23.S21.SS3.p1.m2">\rho</Math> of the equation <Math equation-number="23.21.1" mode="display" xml:id="C23.S21.E1">\frac{x^{2}}{\rho-e_{1}}+\frac{y^{2}}{\rho-e_{2}}+\frac{z^{2}}{\rho-e_{3}}=1,</Math> where <Math mode="inline" xml:id="C23.S21.SS3.p1.m3">x,y,z</Math> are the corresponding Cartesian coordinates and <Math mode="inline" xml:id="C23.S21.SS3.p1.m4">e_{1}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p1.m5">e_{2}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p1.m6">e_{3}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="270" xml:id="C23.S21.SS3.p1.s2">
+The Laplacian operator <Math mode="inline" xml:id="C23.S21.SS3.p1.m7">\nabla^{2}</Math> (§LABEL:sec:AL.FOT.la) is given by <Math equation-number="23.21.2" mode="display" xml:id="C23.S21.E2">(\eta-\zeta)(\zeta-\xi)(\xi-\eta)\nabla^{2}=(\zeta-\eta)f(\xi)f^{\prime}(\xi) \frac{\partial}{\partial\xi}+(\xi-\zeta)f(\eta)f^{\prime}(\eta)\frac{\partial} {\partial\eta}+(\eta-\xi)f(\zeta)f^{\prime}(\zeta)\frac{\partial}{\partial \zeta},</Math> where <Math equation-number="23.21.3" mode="display" xml:id="C23.S21.E3">f(\rho)=2\left((\rho-e_{1})(\rho-e_{2})(\rho-e_{3})\right)^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S21.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="271" xml:id="C23.S21.SS3.p2.s1">
+Another form is obtained by identifying <Math mode="inline" xml:id="C23.S21.SS3.p2.m1">e_{1}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p2.m2">e_{2}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p2.m3">e_{3}</Math> as lattice roots (§LABEL:sec:WE.3(i)),and setting <Math equation-number="23.21.4" mode="display" xml:id="C23.S21.E4">\xi=\wp\left(u\right), \eta=\wp\left(v\right), \zeta=\wp\left(w\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="272" xml:id="C23.S21.SS3.p2.s2">
+Then <Math equation-number="23.21.5" mode="display" xml:id="C23.S21.E5">\left(\wp\left(v\right)-\wp\left(w\right)\right)\left(\wp\left(w\right)-\wp \left(u\right)\right)\left(\wp\left(u\right)-\wp\left(v\right)\right)\nabla^{2 }=\left(\wp\left(w\right)-\wp\left(v\right)\right)\frac{{\partial}^{2}}{{ \partial u}^{2}}+\left(\wp\left(u\right)-\wp\left(w\right)\right)\frac{{ \partial}^{2}}{{\partial v}^{2}}+\left(\wp\left(v\right)-\wp\left(u\right) \right)\frac{{\partial}^{2}}{{\partial w}^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S21.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="273" xml:id="C23.S21.SS3.p3.s1">
+See also §LABEL:sec:LA.MA.EC.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS4">
+<title>Modular Functions</title>         
+<para xml:id="C23.S21.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="274" xml:id="C23.S21.SS4.p1.s1">
+Physical applications of modular functions include: Quantum field theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="275" xml:id="C23.S21.SS4.p1.s2">
+See ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="276" xml:id="C23.S21.SS4.p1.s3">
+Statistical mechanics.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="277" xml:id="C23.S21.SS4.p1.s4">
+See ( , p. 434) and ( , §9.3) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="278" xml:id="C23.S21.SS4.p1.s5">
+String theory.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="279" xml:id="C23.S21.SS4.p1.s6">
+See ( , §8.2) and ( , §7.2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C23.S22">
+<title>Methods of Computation</title>          
+<subsection xml:id="C23.S22.SS1">
+<title>Function Values</title>        
+ 
+<para xml:id="C23.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="280" xml:id="C23.S22.SS1.p1.s1">
+Given <Math mode="inline" xml:id="C23.S22.SS1.p1.m1">\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S22.SS1.p1.m2">\omega_{3}</Math> , with <Math mode="inline" xml:id="C23.S22.SS1.p1.m3">\Im(\omega_{3}/\omega_{1})&gt;0</Math> , the nome <Math mode="inline" xml:id="C23.S22.SS1.p1.m4">q</Math> is computed from <Math mode="inline" xml:id="C23.S22.SS1.p1.m5">q=e^{i\pi\omega_{3}/\omega_{1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="281" xml:id="C23.S22.SS1.p1.s2">
+For <Math mode="inline" xml:id="C23.S22.SS1.p1.m6">\wp\left(z\right)</Math> we apply (LABEL:eq:WE.5.2) and (LABEL:eq:WE.5.5), generating all needed values of the theta functions by the methods described in §LABEL:sec:TH.c.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S22.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="282" xml:id="C23.S22.SS1.p2.s1">
+The functions <Math mode="inline" xml:id="C23.S22.SS1.p2.m1">\zeta\left(z\right)</Math> and <Math mode="inline" xml:id="C23.S22.SS1.p2.m2">\sigma\left(z\right)</Math> are computed in a similar manner: the former by replacing <Math mode="inline" xml:id="C23.S22.SS1.p2.m3">u</Math> and <Math mode="inline" xml:id="C23.S22.SS1.p2.m4">z</Math> in (LABEL:eq:WE.5.13) by <Math mode="inline" xml:id="C23.S22.SS1.p2.m5">z</Math> and <Math mode="inline" xml:id="C23.S22.SS1.p2.m6">\pi z/(2\omega_{1})</Math> , respectively, and also referring to (LABEL:eq:WE.5.8); the latter by applying (LABEL:eq:WE.5.9).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S22.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="283" xml:id="C23.S22.SS1.p3.s1">
+The modular functions <Math mode="inline" xml:id="C23.S22.SS1.p3.m1">\lambda\left(\tau\right)</Math> , <Math mode="inline" xml:id="C23.S22.SS1.p3.m2">J\left(\tau\right)</Math> , and <Math mode="inline" xml:id="C23.S22.SS1.p3.m3">\eta\left(\tau\right)</Math> are also obtainable in a similar manner from their definitions in §LABEL:sec:WE.15(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S22.SS2">
+<title>Lattice Calculations</title>        
+ 
+ 
+<paragraph xml:id="C23.S22.Px1">
+<title>Starting from Lattice</title>   
+<para xml:id="C23.S22.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="284" xml:id="C23.S22.Px1.p1.s1">
+Suppose that the lattice <Math mode="inline" xml:id="C23.S22.Px1.p1.m1">\mathbb{L}</Math> is given.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="285" xml:id="C23.S22.Px1.p1.s2">
+Then a pair of generators <Math mode="inline" xml:id="C23.S22.Px1.p1.m2">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S22.Px1.p1.m3">2\omega_{3}</Math> can be chosen in an almost canonical way as follows.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="286" xml:id="C23.S22.Px1.p1.s3">
+For <Math mode="inline" xml:id="C23.S22.Px1.p1.m4">2\omega_{1}</Math> choose a nonzero point of <Math mode="inline" xml:id="C23.S22.Px1.p1.m5">\mathbb{L}</Math> of smallest absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="287" xml:id="C23.S22.Px1.p1.s4">
+(There will be <Math mode="inline" xml:id="C23.S22.Px1.p1.m6">2</Math> , <Math mode="inline" xml:id="C23.S22.Px1.p1.m7">4</Math> , or <Math mode="inline" xml:id="C23.S22.Px1.p1.m8">6</Math> possible choices.)For
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="288" xml:id="C23.S22.Px1.p1.s5">
+<Math mode="inline" xml:id="C23.S22.Px1.p1.m9">2\omega_{3}</Math> choose a nonzero point that is not a multiple of <Math mode="inline" xml:id="C23.S22.Px1.p1.m10">2\omega_{1}</Math> and is such that <Math mode="inline" xml:id="C23.S22.Px1.p1.m11">\Im\tau&gt;0</Math> and <Math mode="inline" xml:id="C23.S22.Px1.p1.m12">|\tau|</Math> is as small as possible, where <Math mode="inline" xml:id="C23.S22.Px1.p1.m13">\tau=\omega_{3}/\omega_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="289" xml:id="C23.S22.Px1.p1.s6">
+(There will be either <Math mode="inline" xml:id="C23.S22.Px1.p1.m14">1</Math> or <Math mode="inline" xml:id="C23.S22.Px1.p1.m15">2</Math> possible choices.)This yields a pair of generators that satisfy <Math mode="inline" xml:id="C23.S22.Px1.p1.m16">\Im\tau&gt;0</Math> , <Math mode="inline" xml:id="C23.S22.Px1.p1.m17">|\Re\tau|\leq\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C23.S22.Px1.p1.m18">|\tau|&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="290" xml:id="C23.S22.Px1.p1.s7">
+In consequence, <Math mode="inline" xml:id="C23.S22.Px1.p1.m19">q=e^{i\pi\omega_{3}/\omega_{1}}</Math> satisfies <Math mode="inline" xml:id="C23.S22.Px1.p1.m20">|q|\leq e^{-\pi\sqrt{3}/2}=0.0658\dot</Math> s.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="291" xml:id="C23.S22.Px1.p1.s8">
+The corresponding values of <Math mode="inline" xml:id="C23.S22.Px1.p1.m21">e_{1}</Math> , <Math mode="inline" xml:id="C23.S22.Px1.p1.m22">e_{2}</Math> , <Math mode="inline" xml:id="C23.S22.Px1.p1.m23">e_{3}</Math> are calculated from (LABEL:eq:WE.5.2)–(LABEL:eq:WE.5.4), then <Math mode="inline" xml:id="C23.S22.Px1.p1.m24">g_{2}</Math> and <Math mode="inline" xml:id="C23.S22.Px1.p1.m25">g_{3}</Math> are obtained from (LABEL:eq:WE.3.6) and (LABEL:eq:WE.3.7).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S22.Px2">
+<title>Starting from Invariants</title>   
+<para xml:id="C23.S22.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="292" xml:id="C23.S22.Px2.p1.s1">
+Suppose that the invariants <Math mode="inline" xml:id="C23.S22.Px2.p1.m1">g_{2}=c</Math> , <Math mode="inline" xml:id="C23.S22.Px2.p1.m2">g_{3}=d</Math> , are given, for example in the differential equation (LABEL:eq:WE.3.10) or via coefficients of an elliptic curve (§LABEL:sec:WE.21(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="293" xml:id="C23.S22.Px2.p1.s2">
+The determination of suitable generators <Math mode="inline" xml:id="C23.S22.Px2.p1.m3">2\omega_{1}</Math> and <Math mode="inline" xml:id="C23.S22.Px2.p1.m4">2\omega_{3}</Math> is the classical inversion problem ( ( , §21.73) , ( , §2.12) ; see also §LABEL:sec:TH.of.elja and ( , §2.16) ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="294" xml:id="C23.S22.Px2.p1.s3">
+This problem is solvable as follows:
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S22.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="295" xml:id="C23.S22.Px2.p2.s1">
+In the general case, given by <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m1">cd\neq 0</Math> , we compute the roots <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m2">\alpha</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m3">\beta</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m4">\gamma</Math> , say, of the cubic equation <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m5">4t^{3}-ct-d=0</Math> ; see §LABEL:sec:AL.ZP.pd.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="296" xml:id="C23.S22.Px2.p2.s2">
+These roots are necessarily distinct and represent <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m6">e_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m7">e_{2}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p1.m8">e_{3}</Math> in some order.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="297" xml:id="C23.S22.Px2.p2.s3">
+If <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m1">c</Math> and <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m2">d</Math> are real, then <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m3">e_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m4">e_{2}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m5">e_{3}</Math> can be identified via (LABEL:eq:WE.6.1), and <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m6">k^{2}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p2.m7">{k^{\prime}}^{2}</Math> obtained from (LABEL:eq:WE.wfrof.kdef).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="298" xml:id="C23.S22.Px2.p2.s4">
+If <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m1">c</Math> and <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m2">d</Math> are not both real, then we label <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m3">\alpha</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m4">\beta</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m5">\gamma</Math> so that the triangle with vertices <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m6">\alpha</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m7">\beta</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m8">\gamma</Math> is positively oriented and <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m9">[\alpha,\gamma]</Math> is its longest side (chosen arbitrarily if there is more than one).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="299" xml:id="C23.S22.Px2.p2.s5">
+In particular, if <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m10">\alpha</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m11">\beta</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m12">\gamma</Math> are collinear, then we label them so that <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m13">\beta</Math> is on the line segment <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m14">(\alpha,\gamma)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="300" xml:id="C23.S22.Px2.p2.s6">
+In consequence, <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m15">k^{2}=(\beta-\gamma)/(\alpha-\gamma)</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m16">{k^{\prime}}^{2}=(\alpha-\beta)/(\alpha-\gamma)</Math> satisfy <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m17">\Im k^{2}\geq 0\geq\Im{k^{\prime}}^{2}</Math> (with strict inequality unless <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m18">\alpha</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m19">\beta</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m20">\gamma</Math> are collinear); also <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m21">|k^{2}|</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p3.m22">|{k^{\prime}}^{2}|\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="301" xml:id="C23.S22.Px2.p2.s7">
+Finally, on taking the principal square roots of <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m1">k^{2}</Math> and <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m2">{k^{\prime}}^{2}</Math> we obtain values for <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m3">k</Math> and <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m4">k^{\prime}</Math> that lie in the 1st and 4th quadrants, respectively, and <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m5">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m6">2\omega_{3}</Math> are given by <Math equation-number="23.22.1" mode="display" xml:id="C23.S22.E1">2\omega_{1}M(1,k^{\prime})=-2i\omega_{3}M(1,k)=\frac{\pi}{3}\sqrt{\frac{c(2+k^ {2}{k^{\prime}}^{2})({k^{\prime}}^{2}-k^{2})}{d(1-k^{2}{k^{\prime}}^{2})}},</Math> where <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m7">M</Math> denotes the arithmetic-geometric mean (see §§LABEL:sec:EL.LQ.GM andLABEL:sec:JA.mc.ag).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="302" xml:id="C23.S22.Px2.p2.s8">
+This process yields 2 possible pairs ( <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m8">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i1.p4.m9">2\omega_{3}</Math> ), corresponding to the 2 possible choices of thesquare root.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="303" xml:id="C23.S22.Px2.p2.s9">
+If <Math mode="inline" xml:id="C23.S22.I1.i2.p1.m1">d=0</Math> , then <Math equation-number="23.22.2" mode="display" xml:id="C23.S22.E2">2\omega_{1}=-2i\omega_{3}=\frac{\left(\Gamma\left(\frac{1}{4}\right)\right)^{2 }}{2\sqrt{\pi}c^{1/4}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="304" xml:id="C23.S22.Px2.p2.s10">
+There are 4 possible pairs ( <Math mode="inline" xml:id="C23.S22.I1.i2.p1.m2">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i2.p1.m3">2\omega_{3}</Math> ), corresponding to the 4 rotations of a square lattice.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="305" xml:id="C23.S22.Px2.p2.s11">
+The lemniscatic case occurs when <Math mode="inline" xml:id="C23.S22.I1.i2.p1.m4">c&gt;0</Math> and <Math mode="inline" xml:id="C23.S22.I1.i2.p1.m5">\omega_{1}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="306" xml:id="C23.S22.Px2.p2.s12">
+If <Math mode="inline" xml:id="C23.S22.I1.i3.p1.m1">c=0</Math> , then <Math equation-number="23.22.3" mode="display" xml:id="C23.S22.E3">2\omega_{1}=2e^{-\pi i/3}\omega_{3}=\frac{\left(\Gamma\left(\frac{1}{3}\right) \right)^{3}}{2\pi d^{1/6}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="307" xml:id="C23.S22.Px2.p2.s13">
+There are 6 possible pairs ( <Math mode="inline" xml:id="C23.S22.I1.i3.p1.m2">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S22.I1.i3.p1.m3">2\omega_{3}</Math> ), corresponding to the 6 rotations of a lattice of equilateral triangles.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="308" xml:id="C23.S22.Px2.p2.s14">
+The equianharmonic case occurs when <Math mode="inline" xml:id="C23.S22.I1.i3.p1.m4">d&gt;0</Math> and <Math mode="inline" xml:id="C23.S22.I1.i3.p1.m5">\omega_{1}&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C23.S22.Px3">
+<title>Example</title>   
+<para xml:id="C23.S22.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="309" xml:id="C23.S22.Px3.p1.s1">
+Assume <Math mode="inline" xml:id="C23.S22.Px3.p1.m1">c=g_{2}=-4(3-2i)</Math> and <Math mode="inline" xml:id="C23.S22.Px3.p1.m2">d=g_{3}=4(4-2i)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="310" xml:id="C23.S22.Px3.p1.s2">
+Then <Math mode="inline" xml:id="C23.S22.Px3.p1.m3">\alpha=-1-2i</Math> , <Math mode="inline" xml:id="C23.S22.Px3.p1.m4">\beta=1</Math> , <Math mode="inline" xml:id="C23.S22.Px3.p1.m5">\gamma=2i</Math> ; <Math mode="inline" xml:id="C23.S22.Px3.p1.m6">k^{2}=\ifrac{(7+6i)}{17}</Math> , and <Math mode="inline" xml:id="C23.S22.Px3.p1.m7">{k^{\prime}}^{2}=\ifrac{(10-6i)}{17}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="311" xml:id="C23.S22.Px3.p1.s3">
+Working to 6 decimal places we obtain <Math equation-number="23.22.4" mode="display" xml:id="C23.S22.E4">2\omega_{1}=0.867568+i1.466607, 2\omega_{3}=-1.223741+i1.328694, \tau=0.305480+i1.015109</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C23.S23">
+<title>Tables</title>        
+ 
+ 
+<para xml:id="C23.S23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="312" xml:id="C23.S23.p1.s1">
+Table 18.2 in ( ) gives values of <Math mode="inline" xml:id="C23.S23.p1.m1">\wp\left(z\right)</Math> , <Math mode="inline" xml:id="C23.S23.p1.m2">\wp'\left(z\right)</Math> , and <Math mode="inline" xml:id="C23.S23.p1.m3">\zeta\left(z\right)</Math> to 7 or 8D in the rectangular and rhombic cases, normalized so that <Math mode="inline" xml:id="C23.S23.p1.m4">\omega_{1}=1</Math> and <Math mode="inline" xml:id="C23.S23.p1.m5">\omega_{3}=ia</Math> (rectangular case), or <Math mode="inline" xml:id="C23.S23.p1.m6">\omega_{1}=1</Math> and <Math mode="inline" xml:id="C23.S23.p1.m7">\omega_{3}=\tfrac{1}{2}+ia</Math> (rhombic case), for <Math mode="inline" xml:id="C23.S23.p1.m8">a</Math> = 1.00, 1.05, 1.1, 1.2, 1.4, 2, 4. The values are tabulated on the real and imaginary <Math mode="inline" xml:id="C23.S23.p1.m9">z</Math> -axes, mostly ranging from 0 to 1 or <Math mode="inline" xml:id="C23.S23.p1.m10">i</Math> in steps of length 0.05, and in the case of <Math mode="inline" xml:id="C23.S23.p1.m11">\wp\left(z\right)</Math> the user may deduce values for complex <Math mode="inline" xml:id="C23.S23.p1.m12">z</Math> by application of the addition theorem (LABEL:eq:WE.10.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S23.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="313" xml:id="C23.S23.p2.s1">
+( ) also includes other tables to assist the computation of the Weierstrass functions, for example, the generators as functions of the lattice invariants <Math mode="inline" xml:id="C23.S23.p2.m1">g_{2}</Math> and <Math mode="inline" xml:id="C23.S23.p2.m2">g_{3}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S23.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="314" xml:id="C23.S23.p3.s1">
+For earlier tables related to Weierstrass functions see ( , pp. 503–505) and ( , pp. 223–226) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C23.S24">
+<title>Software</title>         
+<para xml:id="C23.S24.p1">
+
+</para>
+ 
+<subsection xml:id="C23.S24.SS1">
+<title>Introduction</title>         
+<para xml:id="C23.S24.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="315" xml:id="C23.S24.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="316" xml:id="C23.S24.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S24.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="317" xml:id="C23.S24.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="318" xml:id="C23.S24.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S24.SS2">
+<title>Real Argument</title>        
+ 
+<para xml:id="C23.S24.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="319" xml:id="C23.S24.SS2.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="320" xml:id="C23.S24.SS2.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S24.SS3">
+<title>Complex Argument</title>         
+<para xml:id="C23.S24.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="321" xml:id="C23.S24.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="322" xml:id="C23.S24.SS3.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

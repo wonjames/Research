@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S2">
+<title>General Orthogonal Polynomials</title>        
+ 
+<subsection xml:id="C18.S2.SS1">
+<title>Definition</title>        
+ 
+<paragraph xml:id="C18.S2.Px1">
+<title>Orthogonality on Intervals</title>    
+<para xml:id="C18.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S2.Px1.p1.s1">
+Let <Math mode="inline" xml:id="C18.S2.Px1.p1.m1">(a,b)</Math> be a finite or infinite open interval in <Math mode="inline" xml:id="C18.S2.Px1.p1.m2">\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S2.Px1.p1.s2">
+A system (or set) of polynomials <Math mode="inline" xml:id="C18.S2.Px1.p1.m3">\{p_{n}(x)\}</Math> , <Math mode="inline" xml:id="C18.S2.Px1.p1.m4">n=0,1,2,\ldots</Math> , is said to beorthogonal on <Math mode="inline" xml:id="C18.S2.Px1.p1.m5">(a,b)</Math> with respect to the weight function <Math mode="inline" xml:id="C18.S2.Px1.p1.m6">w(x)</Math> ( <Math mode="inline" xml:id="C18.S2.Px1.p1.m7">\geq 0</Math> ) if <Math equation-number="18.2.1" mode="display" xml:id="C18.S2.E1">\int_{a}^{b}p_{n}(x)p_{m}(x)w(x)\mathrm{d}x=0, if n\neq m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S2.Px1.p1.s3">
+Here <Math mode="inline" xml:id="C18.S2.Px1.p1.m8">w(x)</Math> is continuous or piecewise continuous or integrable, and such that <Math mode="inline" xml:id="C18.S2.Px1.p1.m9">0&lt;\int_{a}^{b}x^{2n}w(x)\mathrm{d}x&lt;\infty</Math> for all <Math mode="inline" xml:id="C18.S2.Px1.p1.m10">n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S2.Px1.p2.s1">
+It is assumed throughout this chapter that for each polynomial <Math mode="inline" xml:id="C18.S2.Px1.p2.m1">p_{n}(x)</Math> that is orthogonal on an open interval <Math mode="inline" xml:id="C18.S2.Px1.p2.m2">(a,b)</Math> the variable <Math mode="inline" xml:id="C18.S2.Px1.p2.m3">x</Math> is confined to the closure of <Math mode="inline" xml:id="C18.S2.Px1.p2.m4">(a,b)</Math> unless indicated otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C18.S2.Px1.p2.s2">
+(However, under appropriate conditions almost all equations given in the chapter can be continued analytically to various complex values of the variables.)
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S2.Px2">
+<title>Orthogonality on Finite Point Sets</title>    
+<para xml:id="C18.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S2.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C18.S2.Px2.p1.m1">X</Math> be a finite set of distinct points on <Math mode="inline" xml:id="C18.S2.Px2.p1.m2">\mathbb{R}</Math> , or a countable infinite set of distinct points on <Math mode="inline" xml:id="C18.S2.Px2.p1.m3">\mathbb{R}</Math> , and <Math mode="inline" xml:id="C18.S2.Px2.p1.m4">w_{x}</Math> , <Math mode="inline" xml:id="C18.S2.Px2.p1.m5">x\in X</Math> , be a set of positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C18.S2.Px2.p1.s2">
+Then a system of polynomials <Math mode="inline" xml:id="C18.S2.Px2.p1.m6">\{p_{n}(x)\}</Math> , <Math mode="inline" xml:id="C18.S2.Px2.p1.m7">n=0,1,2,\ldots</Math> , is said to be orthogonal on <Math mode="inline" xml:id="C18.S2.Px2.p1.m8">X</Math> with respect to the weights <Math mode="inline" xml:id="C18.S2.Px2.p1.m9">w_{x}</Math> if <Math equation-number="18.2.2" mode="display" xml:id="C18.S2.E2">\sum_{x\in X}p_{n}(x)p_{m}(x)w_{x}=0, if n\neq m,</Math> when <Math mode="inline" xml:id="C18.S2.Px2.p1.m10">X</Math> is infinite, or <Math equation-number="18.2.3" mode="display" xml:id="C18.S2.E3">\sum_{x\in X}p_{n}(x)p_{m}(x)w_{x}=0, if n,m=0,1,\ldots,N;n\neq m,</Math> when <Math mode="inline" xml:id="C18.S2.Px2.p1.m11">X</Math> is a finite set of <Math mode="inline" xml:id="C18.S2.Px2.p1.m12">N+1</Math> distinct points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C18.S2.Px2.p1.s3">
+In the former case we also require <Math equation-number="18.2.4" mode="display" xml:id="C18.S2.E4">\sum_{x\in X}x^{2n}w_{x}&lt;\infty, if n=0,1,\dots,</Math> whereas in the latter case the system <Math mode="inline" xml:id="C18.S2.Px2.p1.m13">\{p_{n}(x)\}</Math> is finite: <Math mode="inline" xml:id="C18.S2.Px2.p1.m14">n=0,1,\ldots,N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S2.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S2.Px2.p2.s1">
+More generally than (18.2.1)–(18.2.3),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C18.S2.Px2.p2.s2">
+<Math mode="inline" xml:id="C18.S2.Px2.p2.m1">w(x)\mathrm{d}x</Math> may be replaced in (18.2.1) by a positive measure <Math mode="inline" xml:id="C18.S2.Px2.p2.m2">\mathrm{d}\alpha(x)</Math> , where <Math mode="inline" xml:id="C18.S2.Px2.p2.m3">\alpha(x)</Math> is a bounded nondecreasing function on the closure of <Math mode="inline" xml:id="C18.S2.Px2.p2.m4">(a,b)</Math> with an infinite number of points of increase, and such that <Math mode="inline" xml:id="C18.S2.Px2.p2.m5">0&lt;\int_{a}^{b}x^{2n}\mathrm{d}\alpha(x)&lt;\infty</Math> for all <Math mode="inline" xml:id="C18.S2.Px2.p2.m6">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C18.S2.Px2.p2.s3">
+SeeMcDonald and Weiss (1999, Chapters 3, 4) and Szegő (1975, §1.4).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S2.SS2">
+<title><Math mode="inline" xml:id="C18.S2.SS2.m1">x</Math>-Difference Operators</title>           
+<para xml:id="C18.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S2.SS2.p1.s1">
+If the orthogonality discrete set <Math mode="inline" xml:id="C18.S2.SS2.p1.m1">X</Math> is <Math mode="inline" xml:id="C18.S2.SS2.p1.m2">\{0,1,\dots,N\}</Math> or <Math mode="inline" xml:id="C18.S2.SS2.p1.m3">\{0,1,2,\dots\}</Math> , then the role of the differentiation operator <Math mode="inline" xml:id="C18.S2.SS2.p1.m4">\ifrac{\mathrm{d}}{\mathrm{d}x}</Math> in the case of classical OP’s (§18.3) is played by <Math mode="inline" xml:id="C18.S2.SS2.p1.m5">\Delta_{x}</Math> , the forward-difference operator, or by <Math mode="inline" xml:id="C18.S2.SS2.p1.m6">\nabla_{x}</Math> , the backward-difference operator; compare §18.1(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C18.S2.SS2.p1.s2">
+This happens, for example, with the Hahn class OP’s (§18.20(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S2.SS2.p2.s1">
+If the orthogonality interval is <Math mode="inline" xml:id="C18.S2.SS2.p2.m1">(-\infty,\infty)</Math> or <Math mode="inline" xml:id="C18.S2.SS2.p2.m2">(0,\infty)</Math> , then the role of <Math mode="inline" xml:id="C18.S2.SS2.p2.m3">\ifrac{\mathrm{d}}{\mathrm{d}x}</Math> can be played by <Math mode="inline" xml:id="C18.S2.SS2.p2.m4">\delta_{x}</Math> , the central-difference operator in the imaginary direction (§18.1(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C18.S2.SS2.p2.s2">
+This happens, for example, with the continuous Hahn polynomials and Meixner–Pollaczek polynomials (§18.20(i)).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S2.SS3">
+<title>Normalization</title>        
+ 
+<para xml:id="C18.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C18.S2.SS3.p1.s1">
+The orthogonality relations (18.2.1)–(18.2.3) each determine the polynomials <Math mode="inline" xml:id="C18.S2.SS3.p1.m1">p_{n}(x)</Math> uniquely up to constant factors, which may be fixed by suitable normalization.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S2.SS3.p2.s1">
+If we define <Math equation-number="18.2.5" mode="display" xml:id="C18.S2.E5">h_{n}=\int_{a}^{b}\left(p_{n}(x)\right)^{2}w(x)\mathrm{d}x\text{ or }\sum_{x \in X}\left(p_{n}(x)\right)^{2}w_{x},</Math> <Math equation-number="18.2.6" mode="display" xml:id="C18.S2.E6">\tilde{h}_{n}=\int_{a}^{b}x\left(p_{n}(x)\right)^{2}w(x)\mathrm{d}x\text{ or } \sum_{x\in X}x\left(p_{n}(x)\right)^{2}w_{x},</Math> and <Math equation-number="18.2.7" mode="display" xml:id="C18.S2.E7">p_{n}(x)=k_{n}x^{n}+\tilde{k}_{n}x^{n-1}+\tilde{\tilde{k}}_{n}x^{n-2}+\cdots,</Math> then two special normalizations are: (i) orthonormal OP’s: <Math mode="inline" xml:id="C18.S2.SS3.p2.m1">h_{n}=1</Math> , <Math mode="inline" xml:id="C18.S2.SS3.p2.m2">k_{n}&gt;0</Math> ; (ii) monic OP’s: <Math mode="inline" xml:id="C18.S2.SS3.p2.m3">k_{n}=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S2.SS4">
+<title>Recurrence Relations</title>        
+ 
+ 
+<para xml:id="C18.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C18.S2.SS4.p1.s1">
+As in §18.1(i) we assume that <Math mode="inline" xml:id="C18.S2.SS4.p1.m1">p_{-1}(x)\equiv 0</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S2.Px3">
+<title>First Form</title>   
+<para xml:id="C18.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C18.S2.Px3.p1.s1">
+ <Math equation-number="18.2.8" mode="display" xml:id="C18.S2.E8">p_{n+1}(x)=(A_{n}x+B_{n})p_{n}(x)-C_{n}p_{n-1}(x), if n\geq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C18.S2.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C18.S2.Px3.p1.m1">A_{n}</Math> , <Math mode="inline" xml:id="C18.S2.Px3.p1.m2">B_{n}</Math> ( <Math mode="inline" xml:id="C18.S2.Px3.p1.m3">n\geq 0</Math> ), and <Math mode="inline" xml:id="C18.S2.Px3.p1.m4">C_{n}</Math> ( <Math mode="inline" xml:id="C18.S2.Px3.p1.m5">n\geq 1</Math> ) are real constants, and <Math mode="inline" xml:id="C18.S2.Px3.p1.m6">A_{n-1}A_{n}C_{n}&gt;0</Math> for <Math mode="inline" xml:id="C18.S2.Px3.p1.m7">n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C18.S2.Px3.p1.s3">
+Then <Math equation-number="18.2.9" mode="display" xml:id="C18.S2.E9">A_{n}=\frac{k_{n+1}}{k_{n}},B_{n}=\left(\frac{\tilde{k}_{n+1}}{k_{n+1}}-\frac{\tilde{k}_{n}}{k_{n}}\right) A_{n}=-\frac{\tilde{h}_{n}}{h_{n}}A_{n},C_{n}=\frac{A_{n}\tilde{\tilde{k}}_{n}+B_{n}\tilde{k}_{n}-\tilde{\tilde{k}}_{n +1}}{k_{n-1}}=\frac{A_{n}}{A_{n-1}}\frac{h_{n}}{h_{n-1}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S2.Px4">
+<title>Second Form</title>   
+<para xml:id="C18.S2.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C18.S2.Px4.p1.s1">
+ <Math equation-number="18.2.10" mode="display" xml:id="C18.S2.E10">xp_{n}(x)=a_{n}p_{n+1}(x)+b_{n}p_{n}(x)+c_{n}p_{n-1}(x), if n\geq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C18.S2.Px4.p1.s2">
+Here <Math mode="inline" xml:id="C18.S2.Px4.p1.m1">a_{n}</Math> , <Math mode="inline" xml:id="C18.S2.Px4.p1.m2">b_{n}</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p1.m3">n\geq 0</Math> ), <Math mode="inline" xml:id="C18.S2.Px4.p1.m4">c_{n}</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p1.m5">n\geq 1</Math> ) are real constants, and <Math mode="inline" xml:id="C18.S2.Px4.p1.m6">a_{n-1}c_{n}&gt;0</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p1.m7">n\geq 1</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C18.S2.Px4.p1.s3">
+Then <Math equation-number="18.2.11" mode="display" xml:id="C18.S2.E11">a_{n}=\frac{k_{n}}{k_{n+1}},b_{n}=\frac{\tilde{k}_{n}}{k_{n}}-\frac{\tilde{k}_{n+1}}{k_{n+1}}=\frac{\tilde {h}_{n}}{h_{n}},c_{n}=\frac{\tilde{\tilde{k}}_{n}-a_{n}\tilde{\tilde{k}}_{n+1}-b_{n}\tilde{k}_ {n}}{k_{n-1}}=a_{n-1}\frac{h_{n}}{h_{n-1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C18.S2.Px4.p1.s4">
+If the OP’s are orthonormal, then <Math mode="inline" xml:id="C18.S2.Px4.p1.m8">c_{n}=a_{n-1}</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p1.m9">n\geq 1</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C18.S2.Px4.p1.s5">
+If the OP’s are monic, then <Math mode="inline" xml:id="C18.S2.Px4.p1.m10">a_{n}=1</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p1.m11">n\geq 0</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S2.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C18.S2.Px4.p2.s1">
+Conversely, if a system of polynomials <Math mode="inline" xml:id="C18.S2.Px4.p2.m1">\{p_{n}(x)\}</Math> satisfies(18.2.10) with <Math mode="inline" xml:id="C18.S2.Px4.p2.m2">a_{n-1}c_{n}&gt;0</Math> ( <Math mode="inline" xml:id="C18.S2.Px4.p2.m3">n\geq 1</Math> ), then <Math mode="inline" xml:id="C18.S2.Px4.p2.m4">\{p_{n}(x)\}</Math> is orthogonal with respect to some positive measure on <Math mode="inline" xml:id="C18.S2.Px4.p2.m5">\mathbb{R}</Math> (Favard’s theorem).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C18.S2.Px4.p2.s2">
+The measure is not necessarily of the form <Math mode="inline" xml:id="C18.S2.Px4.p2.m6">w(x)\mathrm{d}x</Math> nor is it necessarily unique.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S2.SS5">
+<title>Christoffel–Darboux Formula</title>        
+   
+<para xml:id="C18.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C18.S2.SS5.p1.s1">
+ <Math equation-number="18.2.12" mode="display" xml:id="C18.S2.E12">\sum_{\ell=0}^{n}\frac{p_{\ell}(x)p_{\ell}(y)}{h_{\ell}}=\frac{k_{n}}{h_{n}k_{ n+1}}\frac{p_{n+1}(x)p_{n}(y)-p_{n}(x)p_{n+1}(y)}{x-y}, if x\neq y</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S2.Px5">
+<title>Confluent Form</title>   
+ 
+<para xml:id="C18.S2.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C18.S2.Px5.p1.s1">
+ <Math equation-number="18.2.13" mode="display" xml:id="C18.S2.E13">\sum_{\ell=0}^{n}\frac{(p_{\ell}(x))^{2}}{h_{\ell}}=\frac{k_{n}}{h_{n}k_{n+1}} {\left(p_{n+1}^{\prime}(x)p_{n}(x)-p_{n}^{\prime}(x)p_{n+1}(x)\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S2.SS6">
+<title>Zeros</title>        
+        
+ 
+<para xml:id="C18.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C18.S2.SS6.p1.s1">
+All <Math mode="inline" xml:id="C18.S2.SS6.p1.m1">n</Math> zeros of an OP <Math mode="inline" xml:id="C18.S2.SS6.p1.m2">p_{n}(x)</Math> are simple, and they are located in the interval of orthogonality <Math mode="inline" xml:id="C18.S2.SS6.p1.m3">(a,b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C18.S2.SS6.p1.s2">
+The zeros of <Math mode="inline" xml:id="C18.S2.SS6.p1.m4">p_{n}(x)</Math> and <Math mode="inline" xml:id="C18.S2.SS6.p1.m5">p_{n+1}(x)</Math> separate each other, and if <Math mode="inline" xml:id="C18.S2.SS6.p1.m6">m&lt;n</Math> then between any two zeros of <Math mode="inline" xml:id="C18.S2.SS6.p1.m7">p_{m}(x)</Math> there is at least one zero of <Math mode="inline" xml:id="C18.S2.SS6.p1.m8">p_{n}(x)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C18.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C18.S2.SS6.p2.s1">
+For illustrations of these properties see Figures 18.4.1–18.4.7.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S12">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C19.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S12.p1.s1">
+With <Math mode="inline" xml:id="C19.S12.p1.m1">\psi\left(x\right)</Math> denoting the digamma function (§5.2(i)) in this subsection, the asymptotic behavior of <Math mode="inline" xml:id="C19.S12.p1.m2">K\left(k\right)</Math> and <Math mode="inline" xml:id="C19.S12.p1.m3">E\left(k\right)</Math> near the singularity at <Math mode="inline" xml:id="C19.S12.p1.m4">k=1</Math> is given by the following convergent series: <Math equation-number="19.12.1" mode="display" xml:id="C19.S12.E1">K\left(k\right)=\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2}\right)_{m}}{\left (\tfrac{1}{2}\right)_{m}}}{m!\;m!}{k^{\prime}}^{2m}\left(\ln\left(\frac{1}{k^{ \prime}}\right)+d(m)\right), if 0&lt;|k^{\prime}|&lt;1,</Math> <Math equation-number="19.12.2" mode="display" xml:id="C19.S12.E2">E\left(k\right)=1+\frac{1}{2}\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2} \right)_{m}}{\left(\tfrac{3}{2}\right)_{m}}}{{\left(2\right)_{m}}m!}{k^{\prime }}^{2m+2}\*\left(\ln\left(\frac{1}{k^{\prime}}\right)+d(m)-\frac{1}{(2m+1)(2m+ 2)}\right), if |k^{\prime}|&lt;1,</Math> where <Math equation-number="19.12.3" mode="display" xml:id="C19.S12.E3">d(m)=\psi\left(1+m\right)-\psi\left(\tfrac{1}{2}+m\right),d(m+1)=d(m)-\frac{2}{(2m+1)(2m+2)}, , if m=0,1,\dots,</Math> with <Math mode="inline" xml:id="C19.S12.p1.m5">d(0)=2\ln 2</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C19.S12.p2.s1">
+For the asymptotic behavior of <Math mode="inline" xml:id="C19.S12.p2.m1">F\left(\phi,k\right)</Math> and <Math mode="inline" xml:id="C19.S12.p2.m2">E\left(\phi,k\right)</Math> as <Math mode="inline" xml:id="C19.S12.p2.m3">\phi\to\tfrac{1}{2}\pi-</Math> and <Math mode="inline" xml:id="C19.S12.p2.m4">k\to 1-</Math> see Kaplan (1948, §2),Van de Vel (1969), and Karp and Sitnik (2007).
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C19.S12.p3.s1">
+As <Math mode="inline" xml:id="C19.S12.p3.m1">k^{2}\to 1-</Math> <Math equation-number="19.12.4" mode="display" xml:id="C19.S12.E4">(1-\alpha^{2})\Pi\left(\alpha^{2},k\right)=\left(\ln\frac{4}{k^{\prime}}\right )\left(1+O\left({k^{\prime}}^{2}\right)\right)-\alpha^{2}R_{C}\left(1,1-\alpha ^{2}\right), if -\infty&lt;\alpha^{2}&lt;1,</Math> <Math equation-number="19.12.5" mode="display" xml:id="C19.S12.E5">(1-\alpha^{2})\Pi\left(\alpha^{2},k\right)=\left(\ln\left(\frac{4}{k^{\prime}} \right)-R_{C}\left(1,1-\alpha^{-2}\right)\right)\*\left(1+O\left({k^{\prime}}^ {2}\right)\right), if 1&lt;\alpha^{2}&lt;\infty.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C19.S12.p4.s1">
+Asymptotic approximations for <Math mode="inline" xml:id="C19.S12.p4.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math> , with differentvariables, are given in Karp et al. (2007).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C19.S12.p4.s2">
+They are useful primarily when <Math mode="inline" xml:id="C19.S12.p4.m2">\ifrac{(1-k)}{(1-\sin\phi)}</Math> is either small or large compared with 1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S12.p5.s1">
+If <Math mode="inline" xml:id="C19.S12.p5.m1">x\geq 0</Math> and <Math mode="inline" xml:id="C19.S12.p5.m2">y&gt;0</Math> , then <Math equation-number="19.12.6" mode="display" xml:id="C19.S12.E6">R_{C}\left(x,y\right)=\frac{\pi}{2\sqrt{y}}-\frac{\sqrt{x}}{y}\left(1+O\left( \sqrt{\frac{x}{y}}\right)\right), if x/y\to 0,</Math> <Math equation-number="19.12.7" mode="display" xml:id="C19.S12.E7">R_{C}\left(x,y\right)=\frac{1}{2\sqrt{x}}\left(\left(1+\frac{y}{2x}\right)\ln \left(\frac{4x}{y}\right)-\frac{y}{2x}\right)\*(1+O\left(y^{2}/x^{2}\right)), if y/x\to 0.</Math>
+</sentence>
+
+</para>
+ 
+</section>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S10">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C13.S10.SS1">
+<title>Indefinite Integrals</title>          
+<para xml:id="C13.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S10.SS1.p1.s1">
+When <Math mode="inline" xml:id="C13.S10.SS1.p1.m1">a\neq 1</Math> , <Math equation-number="13.10.1" mode="display" xml:id="C13.S10.E1">\int{\mathbf{M}}\left(a,b,z\right)\mathrm{d}z=\frac{1}{a-1}{\mathbf{M}}\left(a -1,b-1,z\right),</Math> <Math equation-number="13.10.2" mode="display" xml:id="C13.S10.E2">\int U\left(a,b,z\right)\mathrm{d}z=-\frac{1}{a-1}U\left(a-1,b-1,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S10.SS1.p2.s1">
+Other formulas of this kind can be constructed by inversion of the differentiation formulas given in §13.3(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S10.SS2">
+<title>Laplace Transforms</title>         
+ 
+<para xml:id="C13.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C13.S10.SS2.p1.s1">
+For the notation see §§15.1, 15.2(i), and10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C13.S10.SS2.p1.s2">
+<Math equation-number="13.10.3" mode="display" xml:id="C13.S10.E3">\int_{0}^{\infty}e^{-zt}t^{b-1}{\mathbf{M}}\left(a,c,kt\right)\mathrm{d}t= \Gamma\left(b\right)z^{-b}{{}_{2}{\mathbf{F}}_{1}}\left(a,b;c;\ifrac{k}{z} \right), if \Re b&gt;0, \Re z&gt;\max\left(\Re k,0\right),</Math> <Math equation-number="13.10.4" mode="display" xml:id="C13.S10.E4">\int_{0}^{\infty}e^{-zt}t^{b-1}{\mathbf{M}}\left(a,b,t\right)\mathrm{d}t=z^{-b }\left(1-\frac{1}{z}\right)^{-a}, if \Re b&gt;0, \Re z&gt;1,</Math> <Math equation-number="13.10.5" mode="display" xml:id="C13.S10.E5">\int_{0}^{\infty}e^{-t}t^{b-1}{\mathbf{M}}\left(a,c,t\right)\mathrm{d}t=\frac{ \Gamma\left(b\right)\Gamma\left(c-a-b\right)}{\Gamma\left(c-a\right)\Gamma \left(c-b\right)}, if \Re(c-a)&gt;\Re b&gt;0,</Math> <Math equation-number="13.10.6" mode="display" xml:id="C13.S10.E6">\int_{0}^{\infty}e^{-zt-t^{2}}t^{2b-2}{\mathbf{M}}\left(a,b,t^{2}\right) \mathrm{d}t=\tfrac{1}{2}\pi^{-\frac{1}{2}}\Gamma\left(b-\tfrac{1}{2}\right)U \left(b-\tfrac{1}{2},a+\tfrac{1}{2},\tfrac{1}{4}z^{2}\right), if \Re b&gt;\tfrac{1}{2}, \Re z&gt;0,</Math> <Math equation-number="13.10.7" mode="display" xml:id="C13.S10.E7">\int_{0}^{\infty}e^{-zt}t^{b-1}U\left(a,c,t\right)\mathrm{d}t=\Gamma\left(b \right)\Gamma\left(b-c+1\right)\*z^{-b}{{}_{2}{\mathbf{F}}_{1}}\left(a,b;a+b-c +1;1-\frac{1}{z}\right), if \Re b&gt;\max\left(\Re c-1,0\right), \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C13.S10.Px1">
+<title>Loop Integrals</title>   
+<para xml:id="C13.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C13.S10.Px1.p1.s1">
+ <Math equation-number="13.10.8" mode="display" xml:id="C13.S10.E8">\frac{1}{2\pi\mathrm{i}}\int_{-\infty}^{(0+)}e^{tz}t^{-a}{\mathbf{M}}\left(a,b ,\ifrac{y}{t}\right)\mathrm{d}t=\frac{1}{\Gamma\left(a\right)}z^{\frac{1}{2}(2 a-b-1)}y^{\frac{1}{2}(1-b)}I_{b-1}\left(2\sqrt{zy}\right), if \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C13.S10.Px1.p1.s2">
+<Math equation-number="13.10.9" mode="display" xml:id="C13.S10.E9">\frac{1}{2\pi\mathrm{i}}\int_{-\infty}^{(0+)}e^{tz}t^{-a}U\left(a,b,\ifrac{y}{ t}\right)\mathrm{d}t=\frac{2z^{\frac{1}{2}(2a-b-1)}y^{\frac{1}{2}(1-b)}}{ \Gamma\left(a\right)\Gamma\left(a-b+1\right)}K_{b-1}\left(2\sqrt{zy}\right), if \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S10.Px1.p2.s1">
+For additional Laplace transforms seeErdélyi et al. (1954a, §§4.22,5.20),Oberhettinger and Badii (1973, §1.17), andPrudnikov et al. (1992a, §§3.34, 3.35).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C13.S10.Px1.p2.s2">
+Inverse Laplace transforms are given inOberhettinger and Badii (1973, §2.16) andPrudnikov et al. (1992b, §§3.33, 3.34).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S10.SS3">
+<title>Mellin Transforms</title>          
+<para xml:id="C13.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S10.SS3.p1.s1">
+ <Math equation-number="13.10.10" mode="display" xml:id="C13.S10.E10">\int_{0}^{\infty}t^{\lambda-1}{\mathbf{M}}\left(a,b,-t\right)\mathrm{d}t=\frac {\Gamma\left(\lambda\right)\Gamma\left(a-\lambda\right)}{\Gamma\left(a\right) \Gamma\left(b-\lambda\right)}, if 0&lt;\Re\lambda&lt;\Re a,</Math> <Math equation-number="13.10.11" mode="display" xml:id="C13.S10.E11">\int_{0}^{\infty}t^{\lambda-1}U\left(a,b,t\right)\mathrm{d}t=\frac{\Gamma\left (\lambda\right)\Gamma\left(a-\lambda\right)\Gamma\left(\lambda-b+1\right)}{ \Gamma\left(a\right)\Gamma\left(a-b+1\right)}, if \max\left(\Re b-1,0\right)&lt;\Re\lambda&lt;\Re a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C13.S10.SS3.p2.s1">
+For additional Mellin transforms see Erdélyi et al. (1954a, §§6.9, 7.5),Marichev (1983, pp. 283–287), and Oberhettinger (1974, §§1.13, 2.8).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S10.SS4">
+<title>Fourier Transforms</title>         
+ 
+<para xml:id="C13.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C13.S10.SS4.p1.s1">
+ <Math equation-number="13.10.12" mode="display" xml:id="C13.S10.E12">\int_{0}^{\infty}\cos\left(2xt\right){\mathbf{M}}\left(a,b,-t^{2}\right) \mathrm{d}t=\frac{\sqrt{\pi}}{2\Gamma\left(a\right)}x^{2a-1}e^{-x^{2}}U\left(b -\tfrac{1}{2},a+\tfrac{1}{2},x^{2}\right), if \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C13.S10.SS4.p2.s1">
+For additional Fourier transforms see Erdélyi et al. (1954a, §§1.14, 2.14, 3.3) and Oberhettinger (1990, §§1.22,2.22).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S10.SS5">
+<title>Hankel Transforms</title>          
+<para xml:id="C13.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C13.S10.SS5.p1.s1">
+For the notation see §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C13.S10.SS5.p1.s2">
+<Math equation-number="13.10.13" mode="display" xml:id="C13.S10.E13">\int_{0}^{\infty}e^{-t}t^{b-1-\frac{1}{2}\nu}{\mathbf{M}}\left(a,b,t\right)J_{ \nu}\left(2\sqrt{xt}\right)\mathrm{d}t=x^{-a+\frac{1}{2}\nu}e^{-x}{\mathbf{M}} \left(\nu-b+1,\nu-a+1,x\right), if x&gt;0, 2\Re a&lt;\Re\nu+\tfrac{5}{2}, \Re b&gt;0,</Math> <Math equation-number="13.10.14" mode="display" xml:id="C13.S10.E14">\int_{0}^{\infty}e^{-t}t^{\frac{1}{2}\nu}{\mathbf{M}}\left(a,b,t\right)J_{\nu} \left(2\sqrt{xt}\right)\mathrm{d}t=\frac{x^{\frac{1}{2}\nu}e^{-x}}{\Gamma\left (b-a\right)}U\left(a,a-b+\nu+2,x\right), if x&gt;0, -1&lt;\Re\nu&lt;2\Re(b-a)-\tfrac{1}{2},</Math> <Math equation-number="13.10.15" mode="display" xml:id="C13.S10.E15">\int_{0}^{\infty}t^{\frac{1}{2}\nu}U\left(a,b,t\right)J_{\nu}\left(2\sqrt{xt} \right)\mathrm{d}t=\frac{\Gamma\left(\nu-b+2\right)}{\Gamma\left(a\right)}x^{ \frac{1}{2}\nu}U\left(\nu-b+2,\nu-a+2,x\right), if x&gt;0, \max\left(\Re b-2,-1\right)&lt;\Re\nu&lt;2\Re a+\tfrac{1}{2},</Math> <Math equation-number="13.10.16" mode="display" xml:id="C13.S10.E16">\int_{0}^{\infty}e^{-t}t^{\frac{1}{2}\nu}U\left(a,b,t\right)J_{\nu}\left(2 \sqrt{xt}\right)\mathrm{d}t=\Gamma\left(\nu-b+2\right)x^{\frac{1}{2}\nu}e^{-x} {\mathbf{M}}\left(a,a-b+\nu+2,x\right), if x&gt;0, \max\left(\Re b-2,-1\right)&lt;\Re\nu</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C13.S10.SS5.p2.s1">
+For additional Hankel transforms and also other Bessel transforms see Erdélyi et al. (1954b, §8.18) andOberhettinger (1972, §§1.16 and 3.4.42–46,4.4.45–47,5.94–97).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S10.SS6">
+<title>Other Integrals</title>          
+<para xml:id="C13.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C13.S10.SS6.p1.s1">
+For integral transforms in terms of Whittaker functions see §13.23(iv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C13.S10.SS6.p1.s2">
+Additional integrals can be found inApelblat (1983, pp. 388–392), Erdélyi et al. (1954b),Gradshteyn and Ryzhik (2000, §7.6), Magnus et al. (1966, §6.1.2),Prudnikovet al. (1990, §§1.13, 1.14, 2.19, 4.2.2),Prudnikovet al. (1992a, §§3.35, 3.36), andPrudnikov et al. (1992b, §§3.33, 3.34).See also (13.4.2), (13.4.5), (13.4.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S10.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C13.S10.SS6.p2.s1">
+Generalized orthogonality integrals (33.14.13) and (33.14.15) can be expressed in terms of Kummer functions via the definitions in that section.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

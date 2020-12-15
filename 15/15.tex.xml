@@ -1,0 +1,2434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C15">
+<title>Hypergeometric Function</title>              
+          
+<section xml:id="C15.S1">
+<title>Special Notation</title>         
+<para xml:id="C15.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C15.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C15.S1.p1.t1.s2">
+real variable.    
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C15.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r2.m1">z=x+\mathrm{i}y</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C15.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C15.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r3.m1">a,b,c</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C15.S1.p1.t1.s6">
+real or complex parameters.      
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C15.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r4.m1">k,\ell,m,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C15.S1.p1.t1.s8">
+integers.        
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C15.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r5.m1">s</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C15.S1.p1.t1.s10">
+nonnegative integer.  
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C15.S1.p1.t1.s11">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r6.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C15.S1.p1.t1.s12">
+arbitrary small positive constant.  
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C15.S1.p1.t1.s13">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r7.m1">\Gamma\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C15.S1.p1.t1.s14">
+gamma function (§LABEL:sec:GA.Def.GP).
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="16" sentence-num-in-table="15" xml:id="C15.S1.p1.t1.s15">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r8.m1">\psi\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="17" sentence-num-in-table="16" xml:id="C15.S1.p1.t1.s16">
+<Math mode="inline" xml:id="C15.S1.p1.t1.r8.m2">\ifrac{\Gamma'\left(z\right)}{\Gamma\left(z\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C15.S1.p2.s1">
+Unless indicated otherwise primes denote derivatives with respect to the variable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C15.S1.p3.s1">
+We use the following notations for the hypergeometric function: <Math equation-number="15.1.1" mode="display" xml:id="C15.S1.E1">{{}_{2}F_{1}}\left(a,b;c;z\right)=F\left(a,b;c;z\right)=F\left({a,b\atop c};z \right),</Math> and also <Math equation-number="15.1.2" mode="display" xml:id="C15.S1.E2">\frac{F\left(a,b;c;z\right)}{\Gamma\left(c\right)}=\mathbf{F}\left(a,b;c;z \right)=\mathbf{F}\left({a,b\atop c};z\right)={{}_{2}{\mathbf{F}}_{1}}\left(a, b;c;z\right),</Math> ( ( , Chapter 5) ).
+</sentence>
+
+</para>
+ 
+</section>
+          
+ 
+<section xml:id="C15.S2">
+<title>Definitions and Analytical Properties</title>         
+<subsection xml:id="C15.S2.SS1">
+<title>Gauss Series</title>             
+<para xml:id="C15.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C15.S2.SS1.p1.s1">
+The hypergeometric function <Math mode="inline" xml:id="C15.S2.SS1.p1.m1">F\left(a,b;c;z\right)</Math> is defined by theGauss series <Math equation-number="15.2.1" mode="display" xml:id="C15.S2.E1">F\left(a,b;c;z\right)=\sum_{s=0}^{\infty}\frac{{\left(a\right)_{s}}{\left(b \right)_{s}}}{{\left(c\right)_{s}}s!}z^{s}=1+\frac{ab}{c}z+\frac{a(a+1)b(b+1)} {c(c+1)2!}z^{2}+\cdots=\frac{\Gamma\left(c\right)}{\Gamma\left(a\right)\Gamma \left(b\right)}\sum_{s=0}^{\infty}\frac{\Gamma\left(a+s\right)\Gamma\left(b+s \right)}{\Gamma\left(c+s\right)s!}z^{s}</Math> , on the disk <Math mode="inline" xml:id="C15.S2.SS1.p1.m2">|z|&lt;1</Math> , and by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C15.S2.SS1.p1.s2">
+In general, <Math mode="inline" xml:id="C15.S2.SS1.p1.m3">F\left(a,b;c;z\right)</Math> does not exist when <Math mode="inline" xml:id="C15.S2.SS1.p1.m4">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C15.S2.SS1.p1.s3">
+The branch obtained by introducing a cut from <Math mode="inline" xml:id="C15.S2.SS1.p1.m5">1</Math> to <Math mode="inline" xml:id="C15.S2.SS1.p1.m6">+\infty</Math> on the real <Math mode="inline" xml:id="C15.S2.SS1.p1.m7">z</Math> -axis, that is, the branch in the sector <Math mode="inline" xml:id="C15.S2.SS1.p1.m8">|\operatorname{ph}\left(1-z\right)|\leq\pi</Math> , is the principal branch (or principal value) of <Math mode="inline" xml:id="C15.S2.SS1.p1.m9">F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C15.S2.SS1.p2.s1">
+For all values of <Math mode="inline" xml:id="C15.S2.SS1.p2.m1">c</Math> <Math equation-number="15.2.2" mode="display" xml:id="C15.S2.E2">\mathbf{F}\left(a,b;c;z\right)=\sum_{s=0}^{\infty}\frac{{\left(a\right)_{s}}{ \left(b\right)_{s}}}{\Gamma\left(c+s\right)s!}z^{s}, subject to |z|&lt;1,</Math> again with analytic continuation for other values of <Math mode="inline" xml:id="C15.S2.SS1.p2.m2">z</Math> , and with the principal branch defined in a similar way.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C15.S2.SS1.p3.s1">
+Except where indicated otherwise principal branches of <Math mode="inline" xml:id="C15.S2.SS1.p3.m1">F\left(a,b;c;z\right)</Math> and <Math mode="inline" xml:id="C15.S2.SS1.p3.m2">\mathbf{F}\left(a,b;c;z\right)</Math> are assumed throughout the DLMF.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C15.S2.SS1.p4.s1">
+The difference between the principal branches on the two sides of the branch cut (§LABEL:sec:EF.FN.LOG) is given by <Math equation-number="15.2.3" mode="display" xml:id="C15.S2.E3">\mathbf{F}\left({a,b\atop c};x+\mathrm{i}0\right)-\mathbf{F}\left({a,b\atop c} ;x-\mathrm{i}0\right)=\frac{2\pi\mathrm{i}}{\Gamma\left(a\right)\Gamma\left(b \right)}(x-1)^{c-a-b}\mathbf{F}\left({c-a,c-b\atop c-a-b+1};1-x\right), subject to x&gt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C15.S2.SS1.p5.s1">
+On the circle of convergence, <Math mode="inline" xml:id="C15.S2.SS1.p5.m1">|z|=1</Math> , the Gauss series: Converges absolutely when <Math mode="inline" xml:id="C15.S2.I1.ix1.p1.m1">\Re(c-a-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C15.S2.SS1.p5.s2">
+Converges conditionally when <Math mode="inline" xml:id="C15.S2.I1.ix2.p1.m1">-1&lt;\Re(c-a-b)\leq 0</Math> and <Math mode="inline" xml:id="C15.S2.I1.ix2.p1.m2">z=1</Math> is excluded. Diverges when <Math mode="inline" xml:id="C15.S2.I1.ix3.p1.m1">\Re(c-a-b)\leq-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C15.S2.SS1.p5.s3">
+For the case <Math mode="inline" xml:id="C15.S2.SS1.p5.m2">z=1</Math> see also §LABEL:sec:HY.SC.AU.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S2.SS2">
+<title>Analytic Properties</title>        
+    
+<para xml:id="C15.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C15.S2.SS2.p1.s1">
+The principal branch of <Math mode="inline" xml:id="C15.S2.SS2.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> is an entire function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m2">a</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m3">b</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m4">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C15.S2.SS2.p1.s2">
+The same is true of other branches, provided that <Math mode="inline" xml:id="C15.S2.SS2.p1.m5">z=0</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m6">1</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m7">\infty</Math> are excluded. As a multivalued function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m8">z</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m9">\mathbf{F}\left(a,b;c;z\right)</Math> is analytic everywhere except for possible branch points at <Math mode="inline" xml:id="C15.S2.SS2.p1.m10">z=0</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m11">1</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p1.m12">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C15.S2.SS2.p1.s3">
+The same properties hold for <Math mode="inline" xml:id="C15.S2.SS2.p1.m13">F\left(a,b;c;z\right)</Math> , except that as a function of <Math mode="inline" xml:id="C15.S2.SS2.p1.m14">c</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p1.m15">F\left(a,b;c;z\right)</Math> in general has poles at <Math mode="inline" xml:id="C15.S2.SS2.p1.m16">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C15.S2.SS2.p2.s1">
+Because of the analytic properties with respect to <Math mode="inline" xml:id="C15.S2.SS2.p2.m1">a</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p2.m2">b</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p2.m3">c</Math> , it is usually legitimate to take limits in formulas involving functions that are undefined for certain values of the parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C15.S2.SS2.p2.s2">
+In particular <Math mode="display" xml:id="C15.S2.Ex1">\lim_{c\to-n}\frac{F\left(a,b;c;z\right)}{\Gamma\left(c\right)}=\mathbf{F} \left(a,b;-n;z\right)=\frac{{\left(a\right)_{n+1}}{\left(b\right)_{n+1}}}{(n+1 )!}z^{n+1}F\left(a+n+1,b+n+1;n+2;z\right), subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C15.S2.SS2.p3.s1">
+For example, when <Math mode="inline" xml:id="C15.S2.SS2.p3.m1">a=-m</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m2">m=0,1,2,\dots</Math> , and <Math mode="inline" xml:id="C15.S2.SS2.p3.m3">c\neq 0,-1,-2,\dots</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m4">F\left(a,b;c;z\right)</Math> is a polynomial: <Math equation-number="15.2.4" mode="display" xml:id="C15.S2.E4">F\left(-m,b;c;z\right)=\sum_{n=0}^{m}\frac{{\left(-m\right)_{n}}{\left(b\right )_{n}}}{{\left(c\right)_{n}}{n!}}z^{n}=\sum_{n=0}^{m}(-1)^{n}\genfrac{(}{)}{0. 0pt}{}{m}{n}\frac{{\left(b\right)_{n}}}{{\left(c\right)_{n}}}z^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C15.S2.SS2.p3.s2">
+This formula is also valid when <Math mode="inline" xml:id="C15.S2.SS2.p3.m5">c=-m-\ell</Math> , <Math mode="inline" xml:id="C15.S2.SS2.p3.m6">\ell=0,1,2,\dots</Math> , provided that weuse the interpretation <Math equation-number="15.2.5" mode="display" xml:id="C15.S2.E5">F\left({-m,b\atop-m-\ell};z\right)=\lim_{c\to-m-\ell}\left(\lim_{a\to-m}F\left ({a,b\atop c};z\right)\right),</Math> and not <Math equation-number="15.2.6" mode="display" xml:id="C15.S2.E6">F\left({-m,b\atop-m-\ell};z\right)=\lim_{a\to-m}F\left({a,b\atop a-\ell};z \right),</Math> which sometimes needs to be used in §LABEL:sec:HY.SC.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C15.S2.SS2.p3.s3">
+(Both interpretations give solutions of the hypergeometric differential equation (LABEL:eq:HY.DE.DE), as does <Math mode="inline" xml:id="C15.S2.SS2.p3.m7">\mathbf{F}\left(a,b;c;z\right)</Math> , which is analytic at <Math mode="inline" xml:id="C15.S2.SS2.p3.m8">c=0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C15.S2.SS2.p3.s4">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S2.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C15.S2.SS2.p4.s1">
+For comparison of <Math mode="inline" xml:id="C15.S2.SS2.p4.m1">F\left(a,b;c;z\right)</Math> and <Math mode="inline" xml:id="C15.S2.SS2.p4.m2">\mathbf{F}\left(a,b;c;z\right)</Math> , with the former using the limit interpretation (LABEL:eq:HY.AN.4), see Figures LABEL:fig:HY.GR.3D.modFm3 and LABEL:fig:HY.GR.3D.modGFm3.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S2.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C15.S2.SS2.p5.s1">
+Let <Math mode="inline" xml:id="C15.S2.SS2.p5.m1">m</Math> be a nonnegative integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C15.S2.SS2.p5.s2">
+Formula (LABEL:eq:HY.SC.6) reads <Math mode="inline" xml:id="C15.S2.SS2.p5.m2">F\left(a,b;a;z\right)=(1-z)^{-b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C15.S2.SS2.p5.s3">
+The right-hand side can be seen as an analytical continuation for the left-hand side when <Math mode="inline" xml:id="C15.S2.SS2.p5.m3">a</Math> approaches <Math mode="inline" xml:id="C15.S2.SS2.p5.m4">-m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="42" xml:id="C15.S2.SS2.p5.s4">
+In that case we are using interpretation (LABEL:eq:HY.AN.5) since with interpretation (LABEL:eq:HY.AN.4) we would obtain that <Math mode="inline" xml:id="C15.S2.SS2.p5.m5">F\left(-m,b;-m;z\right)</Math> is equal to the first <Math mode="inline" xml:id="C15.S2.SS2.p5.m6">m+1</Math> terms of the Maclaurin series for <Math mode="inline" xml:id="C15.S2.SS2.p5.m7">(1-z)^{-b}</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S3">
+<title>Graphics</title>         
+<subsection xml:id="C15.S3.SS1">
+<title>Graphs</title>        
+            
+<sentence sentence-num-in-section="43" xml:id="C15.S3.F1.s1">
+Figure 15.3.1: <Math mode="inline" xml:id="C15.S3.F1.m2">F\left(\tfrac{4}{3},\tfrac{9}{16};\tfrac{14}{5};x\right),-100\leq x\leq 1</Math> . 
+</sentence>           
+<sentence sentence-num-in-section="44" xml:id="C15.S3.F2.s1">
+Figure 15.3.2: <Math mode="inline" xml:id="C15.S3.F2.m2">F\left(5,-10;1;x\right),-0.023\leq x\leq 1</Math> . 
+</sentence>             
+<sentence sentence-num-in-section="45" xml:id="C15.S3.F3.s1">
+Figure 15.3.3: <Math mode="inline" xml:id="C15.S3.F3.m2">F\left(1,-10;10;x\right),-3\leq x\leq 1</Math> . 
+</sentence> 
+          
+<sentence sentence-num-in-section="46" xml:id="C15.S3.F4.s1">
+Figure 15.3.4: <Math mode="inline" xml:id="C15.S3.F4.m2">F\left(5,10;1;x\right),-1\leq x\leq 0.022</Math> . 
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C15.S3.SS2">
+<title>Surfaces</title>         
+<para xml:id="C15.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C15.S3.SS2.p1.s1">
+In Figures LABEL:fig:HY.GR.3D.modF4 and LABEL:fig:HY.GR.3D.modFm3, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C15.S3.SS2.p1.s2">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="49" xml:id="C15.S3.F5.s1">
+Figure 15.3.5: <Math mode="inline" xml:id="C15.S3.F5.m2">F\left(\tfrac{4}{3},\tfrac{9}{16};\tfrac{14}{5};x+\mathrm{i}y\right),0\leq x \leq 2,-0.5\leq y\leq 0.5</Math> . (There is a cut along the real axis from <Math mode="inline" xml:id="C15.S3.F5.m3">1</Math> to <Math mode="inline" xml:id="C15.S3.F5.m4">\infty</Math> .)
+</sentence>           
+<sentence sentence-num-in-section="50" xml:id="C15.S3.F6.s1">
+Figure 15.3.6: <Math mode="inline" xml:id="C15.S3.F6.m2">F\left(-3,\frac{3}{5};u+\mathrm{i}v;\frac{1}{2}\right),-6\leq u\leq 2,-2\leq v\leq 2</Math> . (With <Math mode="inline" xml:id="C15.S3.F6.m3">c=u+\mathrm{i}v</Math> the only poles occur at <Math mode="inline" xml:id="C15.S3.F6.m4">c=0,-1,-2</Math> ; compare § .)
+</sentence>             
+<sentence sentence-num-in-section="51" xml:id="C15.S3.F7.s1">
+Figure 15.3.7: <Math mode="inline" xml:id="C15.S3.F7.m2">|\mathbf{F}\left(-3,\frac{3}{5};u+\mathrm{i}v;\frac{1}{2}\right)|,-6\leq u\leq 2 ,-2\leq v\leq 2</Math> .
+</sentence> 
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S4">
+<title>Special Cases</title>         
+<subsection xml:id="C15.S4.SS1">
+<title>Elementary Functions</title>          
+ 
+<para xml:id="C15.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C15.S4.SS1.p1.s1">
+The following results hold for principal branches when <Math mode="inline" xml:id="C15.S4.SS1.p1.m1">|z|&lt;1</Math> , and by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C15.S4.SS1.p1.s2">
+Exceptions are (LABEL:eq:HY.SC.8) and (LABEL:eq:HY.SC.10), that hold for <Math mode="inline" xml:id="C15.S4.SS1.p1.m2">|z|&lt;\ifrac{\pi}{4}</Math> , and (LABEL:eq:HY.SC.12), (LABEL:eq:HY.SC.14), and (LABEL:eq:HY.SC.16), that hold for <Math mode="inline" xml:id="C15.S4.SS1.p1.m3">|z|&lt;\ifrac{\pi}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="54" xml:id="C15.S4.SS1.p1.s3">
+<Math equation-number="15.4.1" mode="display" xml:id="C15.S4.E1">F\left(1,1;2;z\right)=-z^{-1}\ln\left(1-z\right),</Math> , <Math equation-number="15.4.2" mode="display" xml:id="C15.S4.E2">F\left(\tfrac{1}{2},1;\tfrac{3}{2};z^{2}\right)=\frac{1}{2z}\ln\left(\frac{1+z }{1-z}\right),</Math> , <Math equation-number="15.4.3" mode="display" xml:id="C15.S4.E3">F\left(\tfrac{1}{2},1;\tfrac{3}{2};-z^{2}\right)=z^{-1}\operatorname{arctan}z,</Math> , <Math equation-number="15.4.4" mode="display" xml:id="C15.S4.E4">F\left(\tfrac{1}{2},\tfrac{1}{2};\tfrac{3}{2};z^{2}\right)=z^{-1}\operatorname {arcsin}z,</Math> , <Math equation-number="15.4.5" mode="display" xml:id="C15.S4.E5">F\left(\tfrac{1}{2},\tfrac{1}{2};\tfrac{3}{2};-z^{2}\right)=z^{-1}\ln\left(z+ \sqrt{1+z^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="55" xml:id="C15.S4.SS1.p1.s4">
+<Math equation-number="15.4.6" mode="display" xml:id="C15.S4.E6">F\left(a,b;a;z\right)=(1-z)^{-b}, F\left(a,b;b;z\right)=(1-z)^{-a},</Math> where the limit interpretation (LABEL:eq:HY.AN.5), rather than (LABEL:eq:HY.AN.4), has to be taken when the third parameter is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="56" xml:id="C15.S4.SS1.p1.s5">
+See the final paragraph in §LABEL:sec:HY.GA.AN. <Math equation-number="15.4.7" mode="display" xml:id="C15.S4.E7">F\left(a,\tfrac{1}{2}+a;\tfrac{1}{2};z^{2}\right)=\tfrac{1}{2}\left((1+z)^{-2a }+(1-z)^{-2a}\right),</Math> <Math equation-number="15.4.8" mode="display" xml:id="C15.S4.E8">F\left(a,\tfrac{1}{2}+a;\tfrac{1}{2};-{\tan^{2}}z\right)=(\cos z)^{2a}\cos \left(2az\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="57" xml:id="C15.S4.SS1.p1.s6">
+<Math equation-number="15.4.9" mode="display" xml:id="C15.S4.E9">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2};z^{2}\right)=\frac{1}{(2-4a)z}\left((1+z) ^{1-2a}-(1-z)^{1-2a}\right),</Math> <Math equation-number="15.4.10" mode="display" xml:id="C15.S4.E10">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2};-{\tan^{2}}z\right)=(\cos z)^{2a}\frac{ \sin\left((1-2a)z\right)}{(1-2a)\sin z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="58" xml:id="C15.S4.SS1.p1.s7">
+<Math equation-number="15.4.11" mode="display" xml:id="C15.S4.E11">F\left(-a,a;\tfrac{1}{2};-z^{2}\right)=\tfrac{1}{2}\left(\left(\sqrt{1+z^{2}}+ z\right)^{2a}+\left(\sqrt{1+z^{2}}-z\right)^{2a}\right),</Math> <Math equation-number="15.4.12" mode="display" xml:id="C15.S4.E12">F\left(-a,a;\tfrac{1}{2};{\sin^{2}}z\right)=\cos\left(2az\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="59" xml:id="C15.S4.SS1.p1.s8">
+<Math equation-number="15.4.13" mode="display" xml:id="C15.S4.E13">F\left(a,1-a;\tfrac{1}{2};-z^{2}\right)=\frac{1}{2\sqrt{1+z^{2}}}\left(\left( \sqrt{1+z^{2}}+z\right)^{2a-1}+\left(\sqrt{1+z^{2}}-z\right)^{2a-1}\right),</Math> <Math equation-number="15.4.14" mode="display" xml:id="C15.S4.E14">F\left(a,1-a;\tfrac{1}{2};{\sin^{2}}z\right)=\frac{\cos\left((2a-1)z\right)}{ \cos z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="60" xml:id="C15.S4.SS1.p1.s9">
+<Math equation-number="15.4.15" mode="display" xml:id="C15.S4.E15">F\left(a,1-a;\tfrac{3}{2};-z^{2}\right)=\frac{1}{(2-4a)z}\left(\left(\sqrt{1+z ^{2}}+z\right)^{1-2a}-\left(\sqrt{1+z^{2}}-z\right)^{1-2a}\right),</Math> <Math equation-number="15.4.16" mode="display" xml:id="C15.S4.E16">F\left(a,1-a;\tfrac{3}{2};{\sin^{2}}z\right)=\frac{\sin\left((2a-1)z\right)}{( 2a-1)\sin z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="61" xml:id="C15.S4.SS1.p1.s10">
+<Math equation-number="15.4.17" mode="display" xml:id="C15.S4.E17">F\left(a,\tfrac{1}{2}+a;1+2a;z\right)=\left(\tfrac{1}{2}+\tfrac{1}{2}\sqrt{1-z }\right)^{-2a},</Math> <Math equation-number="15.4.18" mode="display" xml:id="C15.S4.E18">F\left(a,\tfrac{1}{2}+a;2a;z\right)=\frac{1}{\sqrt{1-z}}\left(\tfrac{1}{2}+ \tfrac{1}{2}\sqrt{1-z}\right)^{1-2a},</Math> <Math equation-number="15.4.19" mode="display" xml:id="C15.S4.E19">F\left(a+1,b;a;z\right)=\left(1-(1-(\ifrac{b}{a}))z\right)(1-z)^{-1-b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="62" xml:id="C15.S4.SS1.p1.s11">
+In (LABEL:eq:HY.SC.17), (LABEL:eq:HY.SC.18) and (LABEL:eq:HY.SC.19) when the third entry is a nonpositive integer one has to use the limit interpretation (LABEL:eq:HY.AN.5), rather than (LABEL:eq:HY.AN.4).
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="63" xml:id="C15.S4.SS1.p1.s12">
+Compare the final paragraph in §LABEL:sec:HY.GA.AN.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C15.S4.SS1.p2.s1">
+For an extensive list of elementary representations see ( , pp. 468–488) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S4.SS2">
+<title>Argument Unity</title>        
+    
+<para xml:id="C15.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C15.S4.SS2.p1.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p1.m1">\Re(c-a-b)&gt;0</Math> , then <Math equation-number="15.4.20" mode="display" xml:id="C15.S4.E20">F\left(a,b;c;1\right)=\frac{\Gamma\left(c\right)\Gamma\left(c-a-b\right)}{ \Gamma\left(c-a\right)\Gamma\left(c-b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C15.S4.SS2.p2.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p2.m1">c=a+b</Math> , then <Math equation-number="15.4.21" mode="display" xml:id="C15.S4.E21">\lim_{z\to 1-}\frac{F\left(a,b;a+b;z\right)}{-\ln\left(1-z\right)}=\frac{ \Gamma\left(a+b\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C15.S4.SS2.p3.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p3.m1">\Re(c-a-b)=0</Math> and <Math mode="inline" xml:id="C15.S4.SS2.p3.m2">c\neq a+b</Math> , then <Math equation-number="15.4.22" mode="display" xml:id="C15.S4.E22">\lim_{z\to 1-}(1-z)^{a+b-c}\left(F\left(a,b;c;z\right)-\frac{\Gamma\left(c \right)\Gamma\left(c-a-b\right)}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)} \right)=\frac{\Gamma\left(c\right)\Gamma\left(a+b-c\right)}{\Gamma\left(a \right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C15.S4.SS2.p4.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p4.m1">\Re(c-a-b)&lt;0</Math> , then <Math equation-number="15.4.23" mode="display" xml:id="C15.S4.E23">\lim_{z\to 1-}\frac{F\left(a,b;c;z\right)}{(1-z)^{c-a-b}}=\frac{\Gamma\left(c \right)\Gamma\left(a+b-c\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C15.S4.Px1">
+<title>Chu–Vandermonde Identity</title>    
+<para xml:id="C15.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C15.S4.Px1.p1.s1">
+ <Math equation-number="15.4.24" mode="display" xml:id="C15.S4.E24">F\left(-n,b;c;1\right)=\frac{{\left(c-b\right)_{n}}}{{\left(c\right)_{n}}}, subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S4.Px2">
+<title>Dougall’s Bilateral Sum</title>    
+<para xml:id="C15.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C15.S4.Px2.p1.s1">
+This is a generalization of (LABEL:eq:HY.SC.20).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C15.S4.Px2.p1.s2">
+If <Math mode="inline" xml:id="C15.S4.Px2.p1.m1">a,b</Math> are not integers and <Math mode="inline" xml:id="C15.S4.Px2.p1.m2">\Re(c+d-a-b)&gt;1</Math> , then <Math equation-number="15.4.25" mode="display" xml:id="C15.S4.E25">\sum_{n=-\infty}^{\infty}\frac{\Gamma\left(a+n\right)\Gamma\left(b+n\right)}{ \Gamma\left(c+n\right)\Gamma\left(d+n\right)}=\frac{\pi^{2}}{\sin\left(\pi a \right)\sin\left(\pi b\right)}\*\frac{\Gamma\left(c+d-a-b-1\right)}{\Gamma \left(c-a\right)\Gamma\left(d-a\right)\Gamma\left(c-b\right)\Gamma\left(d-b \right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S4.SS3">
+<title>Other Arguments</title>               
+<para xml:id="C15.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C15.S4.SS3.p1.s1">
+ <Math equation-number="15.4.26" mode="display" xml:id="C15.S4.E26">F\left(a,b;a-b+1;-1\right)=\frac{\Gamma\left(a-b+1\right)\Gamma\left(\tfrac{1} {2}a+1\right)}{\Gamma\left(a+1\right)\Gamma\left(\tfrac{1}{2}a-b+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="73" xml:id="C15.S4.SS3.p1.s2">
+<Math equation-number="15.4.27" mode="display" xml:id="C15.S4.E27">F\left(1,a;a+1;-1\right)=\tfrac{1}{2}a\left(\psi\left(\tfrac{1}{2}a+\tfrac{1}{ 2}\right)-\psi\left(\tfrac{1}{2}a\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="74" xml:id="C15.S4.SS3.p1.s3">
+<Math equation-number="15.4.28" mode="display" xml:id="C15.S4.E28">F\left(a,b;\tfrac{1}{2}a+\tfrac{1}{2}b+\tfrac{1}{2};\tfrac{1}{2}\right)=\sqrt{ \pi}\frac{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b+\tfrac{1}{2}\right)}{\Gamma \left(\tfrac{1}{2}a+\tfrac{1}{2}\right)\Gamma\left(\tfrac{1}{2}b+\tfrac{1}{2} \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="75" xml:id="C15.S4.SS3.p1.s4">
+<Math equation-number="15.4.29" mode="display" xml:id="C15.S4.E29">F\left(a,b;\tfrac{1}{2}a+\tfrac{1}{2}b+1;\tfrac{1}{2}\right)=\frac{2\sqrt{\pi} }{a-b}\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b+1\right)\*\left(\frac{1}{\Gamma \left(\tfrac{1}{2}a\right)\Gamma\left(\tfrac{1}{2}b+\tfrac{1}{2}\right)}-\frac {1}{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}\right)\Gamma\left(\tfrac{1}{2}b \right)}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="76" xml:id="C15.S4.SS3.p1.s5">
+<Math equation-number="15.4.30" mode="display" xml:id="C15.S4.E30">F\left(a,1-a;b;\tfrac{1}{2}\right)=\frac{2^{1-b}\sqrt{\pi}\Gamma\left(b\right) }{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b\right)\Gamma\left(\tfrac{1}{2}b- \tfrac{1}{2}a+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="77" xml:id="C15.S4.SS3.p1.s6">
+<Math equation-number="15.4.31" mode="display" xml:id="C15.S4.E31">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2}-2a;-\tfrac{1}{3}\right)=\left(\frac{8}{9} \right)^{-2a}\frac{\Gamma\left(\tfrac{4}{3}\right)\Gamma\left(\tfrac{3}{2}-2a \right)}{\Gamma\left(\tfrac{3}{2}\right)\Gamma\left(\tfrac{4}{3}-2a\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="78" xml:id="C15.S4.SS3.p1.s7">
+<Math equation-number="15.4.32" mode="display" xml:id="C15.S4.E32">F\left(a,\tfrac{1}{2}+a;\tfrac{5}{6}+\tfrac{2}{3}a;\tfrac{1}{9}\right)=\sqrt{ \pi}\left(\frac{3}{4}\right)^{a}\frac{\Gamma\left(\tfrac{5}{6}+\tfrac{2}{3}a \right)}{\Gamma\left(\tfrac{1}{2}+\tfrac{1}{3}a\right)\Gamma\left(\tfrac{5}{6} +\tfrac{1}{3}a\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="79" xml:id="C15.S4.SS3.p1.s8">
+<Math equation-number="15.4.33" mode="display" xml:id="C15.S4.E33">F\left(3a,\tfrac{1}{3}+a;\tfrac{2}{3}+2a;e^{\ifrac{\mathrm{i}\pi}{3}}\right)= \sqrt{\pi}e^{\ifrac{\mathrm{i}\pi a}{2}}\left(\frac{16}{27}\right)^{(3a+1)/6} \frac{\Gamma\left(\frac{5}{6}+a\right)}{\Gamma\left(\frac{2}{3}+a\right)\Gamma \left(\frac{2}{3}\right)},</Math> where the limit interpretation (LABEL:eq:HY.AN.5), rather than (LABEL:eq:HY.AN.4), has to be taken when <Math mode="inline" xml:id="C15.S4.SS3.p1.m1">a=-\frac{1}{3},-\frac{4}{3},-\frac{7}{3},\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="80" xml:id="C15.S4.SS3.p1.s9">
+Compare the final paragraph in §LABEL:sec:HY.GA.AN.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S5">
+<title>Derivatives and Contiguous Functions</title>         
+<subsection xml:id="C15.S5.SS1">
+<title>Differentiation Formulas</title>          
+<para xml:id="C15.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C15.S5.SS1.p1.s1">
+ <Math equation-number="15.5.1" mode="display" xml:id="C15.S5.E1">\frac{\mathrm{d}}{\mathrm{d}z}F\left(a,b;c;z\right)=\frac{ab}{c}F\left(a+1,b+1 ;c+1;z\right),</Math> <Math equation-number="15.5.2" mode="display" xml:id="C15.S5.E2">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}F\left(a,b;c;z\right)=\frac{{\left(a \right)_{n}}{\left(b\right)_{n}}}{{\left(c\right)_{n}}}\*F\left(a+n,b+n;c+n;z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="82" xml:id="C15.S5.SS1.p1.s2">
+<Math equation-number="15.5.3" mode="display" xml:id="C15.S5.E3">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{a-1}F\left(a,b;c;z \right)\right)={\left(a\right)_{n}}z^{a+n-1}F\left(a+n,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="83" xml:id="C15.S5.SS1.p1.s3">
+<Math equation-number="15.5.4" mode="display" xml:id="C15.S5.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{c-1}F\left(a,b;c;z\right) \right)={\left(c-n\right)_{n}}z^{c-n-1}F\left(a,b;c-n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="84" xml:id="C15.S5.SS1.p1.s4">
+<Math equation-number="15.5.5" mode="display" xml:id="C15.S5.E5">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{c-a-1}(1-z)^{a+b-c}F \left(a,b;c;z\right)\right)={\left(c-a\right)_{n}}z^{c-a+n-1}(1-z)^{a-n+b-c}\* F\left(a-n,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="85" xml:id="C15.S5.SS1.p1.s5">
+<Math equation-number="15.5.6" mode="display" xml:id="C15.S5.E6">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left((1-z)^{a+b-c}F\left(a,b;c;z \right)\right)=\frac{{\left(c-a\right)_{n}}{\left(c-b\right)_{n}}}{{\left(c \right)_{n}}}(1-z)^{a+b-c-n}\*F\left(a,b;c+n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="86" xml:id="C15.S5.SS1.p1.s6">
+<Math equation-number="15.5.7" mode="display" xml:id="C15.S5.E7">\left((1-z)\frac{\mathrm{d}}{\mathrm{d}z}(1-z)\right)^{n}\left((1-z)^{a-1}F \left(a,b;c;z\right)\right)=(-1)^{n}\frac{{\left(a\right)_{n}}{\left(c-b\right )_{n}}}{{\left(c\right)_{n}}}(1-z)^{a+n-1}\*F\left(a+n,b;c+n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="87" xml:id="C15.S5.SS1.p1.s7">
+<Math equation-number="15.5.8" mode="display" xml:id="C15.S5.E8">\left((1-z)\frac{\mathrm{d}}{\mathrm{d}z}(1-z)\right)^{n}\left(z^{c-1}(1-z)^{b -c}F\left(a,b;c;z\right)\right)={\left(c-n\right)_{n}}z^{c-n-1}(1-z)^{b-c+n}\* F\left(a-n,b;c-n;z\right).</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="88" xml:id="C15.S5.SS1.p1.s8">
+ <Math equation-number="15.5.9" mode="display" xml:id="C15.S5.E9">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{c-1}(1-z)^{a+b-c}F\left(a,b ;c;z\right)\right)={\left(c-n\right)_{n}}z^{c-n-1}(1-z)^{a+b-c-n}\*F\left(a-n, b-n;c-n;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C15.S5.SS1.p2.s1">
+Other versions of several of the identities in this subsection can be constructed with the aid of the operator identity <Math equation-number="15.5.10" mode="display" xml:id="C15.S5.E10">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}=z^{n}\frac{{\mathrm{d}}^{n}} {{\mathrm{d}z}^{n}}z^{n}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="90" xml:id="C15.S5.SS1.p2.s2">
+See ( , pp. 102–103) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S5.SS2">
+<title>Contiguous Functions</title>        
+   
+<para xml:id="C15.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C15.S5.SS2.p1.s1">
+The six functions <Math mode="inline" xml:id="C15.S5.SS2.p1.m1">F\left(a\pm 1,b;c;z\right)</Math> , <Math mode="inline" xml:id="C15.S5.SS2.p1.m2">F\left(a,b\pm 1;c;z\right)</Math> , <Math mode="inline" xml:id="C15.S5.SS2.p1.m3">F\left(a,b;c\pm 1;z\right)</Math> are said to be contiguous to <Math mode="inline" xml:id="C15.S5.SS2.p1.m4">F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="92" xml:id="C15.S5.SS2.p1.s2">
+<Math equation-number="15.5.11" mode="display" xml:id="C15.S5.E11">(c-a)F\left(a-1,b;c;z\right)+\left(2a-c+(b-a)z\right)F\left(a,b;c;z\right)+a(z -1)F\left(a+1,b;c;z\right)=0,</Math> , <Math equation-number="15.5.12" mode="display" xml:id="C15.S5.E12">(b-a)F\left(a,b;c;z\right)+aF\left(a+1,b;c;z\right)-bF\left(a,b+1;c;z\right)=0,</Math> , <Math equation-number="15.5.13" mode="display" xml:id="C15.S5.E13">(c-a-b)F\left(a,b;c;z\right)+a(1-z)F\left(a+1,b;c;z\right)-(c-b)F\left(a,b-1;c ;z\right)=0,</Math> , <Math equation-number="15.5.14" mode="display" xml:id="C15.S5.E14">c\left(a+(b-c)z\right)F\left(a,b;c;z\right)-ac(1-z)F\left(a+1,b;c;z\right)+(c- a)(c-b)zF\left(a,b;c+1;z\right)=0,</Math> , <Math equation-number="15.5.15" mode="display" xml:id="C15.S5.E15">(c-a-1)F\left(a,b;c;z\right)+aF\left(a+1,b;c;z\right)-(c-1)F\left(a,b;c-1;z \right)=0,</Math> , <Math equation-number="15.5.16" mode="display" xml:id="C15.S5.E16">c(1-z)F\left(a,b;c;z\right)-cF\left(a-1,b;c;z\right)+(c-b)zF\left(a,b;c+1;z \right)=0,</Math> , <Math equation-number="15.5.17" mode="display" xml:id="C15.S5.E17">\left(a-1+(b+1-c)z\right)F\left(a,b;c;z\right)+(c-a)F\left(a-1,b;c;z\right)-(c -1)(1-z)F\left(a,b;c-1;z\right)=0,</Math> , <Math equation-number="15.5.18" mode="display" xml:id="C15.S5.E18">c(c-1)(z-1)F\left(a,b;c-1;z\right)+{c\left(c-1-(2c-a-b-1)z\right)}F\left(a,b;c ;z\right)+(c-a)(c-b)zF\left(a,b;c+1;z\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C15.S5.SS2.p2.s1">
+By repeated applications of (LABEL:eq:HY.DC.12)–(LABEL:eq:HY.DC.13) any function <Math mode="inline" xml:id="C15.S5.SS2.p2.m1">F\left(a+k,b+\ell;c+m;z\right)</Math> , in which <Math mode="inline" xml:id="C15.S5.SS2.p2.m2">k,\ell,m</Math> are integers, can be expressed as a linear combination of <Math mode="inline" xml:id="C15.S5.SS2.p2.m3">F\left(a,b;c;z\right)</Math> and any one of its contiguous functions, with coefficients that are rational functions of <Math mode="inline" xml:id="C15.S5.SS2.p2.m4">a,b,c</Math> , and <Math mode="inline" xml:id="C15.S5.SS2.p2.m5">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C15.S5.SS2.p3.s1">
+An equivalent equation to the hypergeometric differential equation (LABEL:eq:HY.DE.DE) is <Math equation-number="15.5.19" mode="display" xml:id="C15.S5.E19">{z(1-z)(a+1)(b+1)}F\left(a+2,b+2;c+2;z\right)+{(c-(a+b+1)z)(c+1)}F\left(a+1,b+ 1;c+1;z\right)-{c(c+1)}F\left(a,b;c;z\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="95" xml:id="C15.S5.SS2.p3.s2">
+Further contiguous relations include: <Math equation-number="15.5.20" mode="display" xml:id="C15.S5.E20">z(1-z)\left(\ifrac{\mathrm{d}F\left(a,b;c;z\right)}{\mathrm{d}z}\right)=(c-a)F \left(a-1,b;c;z\right)+(a-c+bz)F\left(a,b;c;z\right)=(c-b)F\left(a,b-1;c;z \right)+(b-c+az)F\left(a,b;c;z\right),</Math> <Math equation-number="15.5.21" mode="display" xml:id="C15.S5.E21">c(1-z)\left(\ifrac{\mathrm{d}F\left(a,b;c;z\right)}{\mathrm{d}z}\right)=(c-a)( c-b)F\left(a,b;c+1;z\right)+c(a+b-c)F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S6">
+<title>Integral Representations</title>          
+ 
+<para xml:id="C15.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C15.S6.p1.s1">
+The function <Math mode="inline" xml:id="C15.S6.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> (not <Math mode="inline" xml:id="C15.S6.p1.m2">F\left(a,b;c;z\right)</Math> ) has the following integral representations: <Math equation-number="15.6.1" mode="display" xml:id="C15.S6.E1">\frac{1}{\Gamma\left(b\right)\Gamma\left(c-b\right)}\int_{0}^{1}\frac{t^{b-1}( 1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, subject to \Re c&gt;\Re b&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C15.S6.p1.s2">
+<Math equation-number="15.6.2" mode="display" xml:id="C15.S6.E2">\frac{\Gamma\left(1+b-c\right)}{2\pi\mathrm{i}\Gamma\left(b\right)}\int_{0}^{( 1+)}\frac{t^{b-1}(t-1)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, subject to c-b\neq 1,2,3,\dots, \Re b&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="98" xml:id="C15.S6.p1.s3">
+<Math equation-number="15.6.3" mode="display" xml:id="C15.S6.E3">e^{-b\pi\mathrm{i}}\frac{\Gamma\left(1-b\right)}{2\pi\mathrm{i}\Gamma\left(c-b \right)}\int_{\infty}^{(0+)}\frac{t^{b-1}(t+1)^{a-c}}{(t-zt+1)^{a}}\mathrm{d}t, subject to b\neq 1,2,3,\dots, \Re(c-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="99" xml:id="C15.S6.p1.s4">
+<Math equation-number="15.6.4" mode="display" xml:id="C15.S6.E4">e^{-b\pi\mathrm{i}}\frac{\Gamma\left(1-b\right)}{2\pi\mathrm{i}\Gamma\left(c-b \right)}\int_{1}^{(0+)}\frac{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm{d}t, subject to b\neq 1,2,3,\dots, \Re(c-b)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="100" xml:id="C15.S6.p1.s5">
+<Math equation-number="15.6.5" mode="display" xml:id="C15.S6.E5">e^{-c\pi\mathrm{i}}\Gamma\left(1-b\right)\Gamma\left(1+b-c\right)\*\frac{1}{4 \pi^{2}}\int_{A}^{(0+,1+,0-,1-)}\frac{t^{b-1}(1-t)^{c-b-1}}{(1-zt)^{a}}\mathrm {d}t, subject to b,c-b\neq 1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="101" xml:id="C15.S6.p1.s6">
+<Math equation-number="15.6.6" mode="display" xml:id="C15.S6.E6">\frac{1}{2\pi\mathrm{i}\Gamma\left(a\right)\Gamma\left(b\right)}\int_{-\mathrm {i}\infty}^{\mathrm{i}\infty}\frac{\Gamma\left(a+t\right)\Gamma\left(b+t\right )\Gamma\left(-t\right)}{\Gamma\left(c+t\right)}(-z)^{t}\mathrm{d}t, subject to a,b\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C15.S6.p2.s1">
+ <Math equation-number="15.6.7" mode="display" xml:id="C15.S6.E7">\frac{1}{2\pi\mathrm{i}\Gamma\left(a\right)\Gamma\left(b\right)\Gamma\left(c-a \right)\Gamma\left(c-b\right)}\int_{-\mathrm{i}\infty}^{\mathrm{i}\infty} \Gamma\left(a+t\right)\Gamma\left(b+t\right)\Gamma\left(c-a-b-t\right)\Gamma \left(-t\right)(1-z)^{t}\mathrm{d}t, subject to a,b,c-a,c-b\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="103" xml:id="C15.S6.p2.s2">
+<Math equation-number="15.6.8" mode="display" xml:id="C15.S6.E8">\frac{1}{\Gamma\left(c-d\right)}\int_{0}^{1}\mathbf{F}\left(a,b;d;zt\right)t^{ d-1}(1-t)^{c-d-1}\mathrm{d}t, subject to \Re c&gt;\Re d&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="104" xml:id="C15.S6.p2.s3">
+<Math equation-number="15.6.9" mode="display" xml:id="C15.S6.E9">\int_{0}^{1}\frac{t^{d-1}(1-t)^{c-d-1}}{(1-zt)^{a+b-\lambda}}\mathbf{F}\left({ \lambda-a,\lambda-b\atop d};zt\right)\mathbf{F}\left({a+b-\lambda,\lambda-d \atop c-d};\frac{(1-t)z}{1-zt}\right)\mathrm{d}t, subject to \lambda\in\mathbb{C}, \Re c&gt;\Re d&gt;0</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C15.S6.p3.s1">
+These representations are valid when <Math mode="inline" xml:id="C15.S6.p3.m1">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , except (LABEL:eq:HY.IR.6) which holds for <Math mode="inline" xml:id="C15.S6.p3.m2">|\operatorname{ph}\left(-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C15.S6.p3.s2">
+In all cases the integrands are continuous functions of <Math mode="inline" xml:id="C15.S6.p3.m3">t</Math> on the integration paths, except possibly at the endpoints.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="107" xml:id="C15.S6.p3.s3">
+Note that (LABEL:eq:HY.IR.8) can be rewritten as a fractional integral.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="108" xml:id="C15.S6.p3.s4">
+In addition:
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C15.S6.p4.s1">
+In (LABEL:eq:HY.IR.1) all functions in the integrand assume their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C15.S6.p5.s1">
+In (LABEL:eq:HY.IR.2) the point <Math mode="inline" xml:id="C15.S6.p5.m1">\ifrac{1}{z}</Math> lies outside the integration contour, <Math mode="inline" xml:id="C15.S6.p5.m2">t^{b-1}</Math> and <Math mode="inline" xml:id="C15.S6.p5.m3">(t-1)^{c-b-1}</Math> assume their principal values where the contour cuts the interval <Math mode="inline" xml:id="C15.S6.p5.m4">(1,\infty)</Math> , and <Math mode="inline" xml:id="C15.S6.p5.m5">(1-zt)^{a}=1</Math> at <Math mode="inline" xml:id="C15.S6.p5.m6">t=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C15.S6.p6.s1">
+In (LABEL:eq:HY.IR.3) the point <Math mode="inline" xml:id="C15.S6.p6.m1">\ifrac{1}{(z-1)}</Math> lies outside the integration contour, the contour cuts the real axis between <Math mode="inline" xml:id="C15.S6.p6.m2">t=-1</Math> and <Math mode="inline" xml:id="C15.S6.p6.m3">0</Math> , at which point <Math mode="inline" xml:id="C15.S6.p6.m4">\operatorname{ph}t=\pi</Math> and <Math mode="inline" xml:id="C15.S6.p6.m5">\operatorname{ph}\left(1+t\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C15.S6.p7.s1">
+In (LABEL:eq:HY.IR.4) the point <Math mode="inline" xml:id="C15.S6.p7.m1">\ifrac{1}{z}</Math> lies outside the integration contour, and at the point where the contour cuts the negative real axis <Math mode="inline" xml:id="C15.S6.p7.m2">\operatorname{ph}t=\pi</Math> and <Math mode="inline" xml:id="C15.S6.p7.m3">\operatorname{ph}\left(1-t\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C15.S6.p8.s1">
+In (LABEL:eq:HY.IR.5) the integration contour starts and terminates at a point <Math mode="inline" xml:id="C15.S6.p8.m1">A</Math> on the real axis between <Math mode="inline" xml:id="C15.S6.p8.m2">0</Math> and <Math mode="inline" xml:id="C15.S6.p8.m3">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C15.S6.p8.s2">
+It encircles <Math mode="inline" xml:id="C15.S6.p8.m4">t=0</Math> and <Math mode="inline" xml:id="C15.S6.p8.m5">t=1</Math> once in the positive direction, and then once in the negative direction.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="115" xml:id="C15.S6.p8.s3">
+See FigureLABEL:fig:HY.IR.53.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="116" xml:id="C15.S6.p8.s4">
+At the starting point <Math mode="inline" xml:id="C15.S6.p8.m6">\operatorname{ph}t</Math> and <Math mode="inline" xml:id="C15.S6.p8.m7">\operatorname{ph}\left(1-t\right)</Math> are zero.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="117" xml:id="C15.S6.p8.s5">
+If desired, and as in Figure LABEL:fig:GA.BF.3, the upper integration limit in (LABEL:eq:HY.IR.5) can be replaced by <Math mode="inline" xml:id="C15.S6.p8.m8">(1+,0+,1-,0-)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="118" xml:id="C15.S6.p8.s6">
+However, this reverses the direction of the integration contour, and in consequence (LABEL:eq:HY.IR.5) would need to be multiplied by <Math mode="inline" xml:id="C15.S6.p8.m9">-1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C15.S6.p9.s1">
+In (LABEL:eq:HY.IR.6) the integration contour separates the poles of <Math mode="inline" xml:id="C15.S6.p9.m1">\Gamma\left(a+t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p9.m2">\Gamma\left(b+t\right)</Math> from those of <Math mode="inline" xml:id="C15.S6.p9.m3">\Gamma\left(-t\right)</Math> , and <Math mode="inline" xml:id="C15.S6.p9.m4">(-z)^{t}</Math> has its principal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C15.S6.p10.s1">
+In (LABEL:eq:HY.IR.7) the integration contour separates the poles of <Math mode="inline" xml:id="C15.S6.p10.m1">\Gamma\left(a+t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p10.m2">\Gamma\left(b+t\right)</Math> from those of <Math mode="inline" xml:id="C15.S6.p10.m3">\Gamma\left(c-a-b-t\right)</Math> and <Math mode="inline" xml:id="C15.S6.p10.m4">\Gamma\left(-t\right)</Math> , and <Math mode="inline" xml:id="C15.S6.p10.m5">(1-z)^{t}</Math> has itsprincipal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S6.p11">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C15.S6.p11.s1">
+In each of (LABEL:eq:HY.IR.8) and (LABEL:eq:HY.IR.9) all functions in the integrand assume their principal values.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="122" xml:id="C15.S6.F1.s1">
+Figure 15.6.1: <Math mode="inline" xml:id="C15.S6.F1.m1">t</Math> -plane. Contour of integration in ( ).
+</sentence>    
+</section>
+ 
+<section xml:id="C15.S7">
+<title>Continued Fractions</title>          
+<para xml:id="C15.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C15.S7.p1.s1">
+If <Math mode="inline" xml:id="C15.S7.p1.m1">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> ,then <Math equation-number="15.7.1" mode="display" xml:id="C15.S7.E1">\frac{\mathbf{F}\left(a,b;c;z\right)}{\mathbf{F}\left(a,b+1;c+1;z\right)}=t_{0 }-\cfrac{u_{1}z}{t_{1}-\cfrac{u_{2}z}{t_{2}-\cfrac{u_{3}z}{t_{3}-\cdots}}},</Math> where <Math equation-number="15.7.2" mode="display" xml:id="C15.S7.E2">t_{n}=c+n, u_{2n+1}=(a+n)(c-b+n), u_{2n}=(b+n)(c-a+n)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C15.S7.p2.s1">
+If <Math mode="inline" xml:id="C15.S7.p2.m1">|z|&lt;1</Math> ,then <Math equation-number="15.7.3" mode="display" xml:id="C15.S7.E3">\frac{\mathbf{F}\left(a,b;c;z\right)}{\mathbf{F}\left(a,b+1;c+1;z\right)}=v_{0 }-\cfrac{w_{1}}{v_{1}-\cfrac{w_{2}}{v_{2}-\cfrac{w_{3}}{v_{3}-\cdots}}},</Math> where <Math equation-number="15.7.4" mode="display" xml:id="C15.S7.E4">v_{n}=c+n+(b-a+n+1)z, w_{n}=(b+n)(c-a+n)z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C15.S7.p3.s1">
+If <Math mode="inline" xml:id="C15.S7.p3.m1">\Re z&lt;\tfrac{1}{2}</Math> ,then <Math equation-number="15.7.5" mode="display" xml:id="C15.S7.E5">\frac{\mathbf{F}\left(a,b;c;z\right)}{\mathbf{F}\left(a+1,b+1;c+1;z\right)}={x _{0}+\cfrac{y_{1}}{x_{1}+\cfrac{y_{2}}{x_{2}+\cfrac{y_{3}}{x_{3}+\cdots}}}},</Math> where <Math equation-number="15.7.6" mode="display" xml:id="C15.S7.E6">x_{n}=c+n-(a+b+2n+1)z, y_{n}=(a+n)(b+n)z(1-z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S7.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C15.S7.p4.s1">
+See also ( , pp. 295–309) .
+</sentence>
+
+</para>
+  
+</section>
+ 
+<section xml:id="C15.S8">
+<title>Transformations of Variable</title>         
+<subsection xml:id="C15.S8.SS1">
+<title>Linear Transformations</title>        
+  
+<para xml:id="C15.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C15.S8.SS1.p1.s1">
+All functions in this subsection and §LABEL:sec:HY.TF.LTLC assume their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="128" xml:id="C15.S8.SS1.p1.s2">
+<Math equation-number="15.8.1" mode="display" xml:id="C15.S8.E1">\mathbf{F}\left({a,b\atop c};z\right)=(1-z)^{-a}\mathbf{F}\left({a,c-b\atop c} ;\frac{z}{z-1}\right)=(1-z)^{-b}\mathbf{F}\left({c-a,b\atop c};\frac{z}{z-1} \right)=(1-z)^{c-a-b}\mathbf{F}\left({c-a,c-b\atop c};z\right), subject to |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="129" xml:id="C15.S8.SS1.p1.s3">
+<Math equation-number="15.8.2" mode="display" xml:id="C15.S8.E2">\frac{\sin\left(\pi(b-a)\right)}{\pi}\mathbf{F}\left({a,b\atop c};z\right)= \frac{(-z)^{-a}}{\Gamma\left(b\right)\Gamma\left(c-a\right)}\mathbf{F}\left({a ,a-c+1\atop a-b+1};\frac{1}{z}\right)-\frac{(-z)^{-b}}{\Gamma\left(a\right) \Gamma\left(c-b\right)}\mathbf{F}\left({b,b-c+1\atop b-a+1};\frac{1}{z}\right), subject to |\operatorname{ph}\left(-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="130" xml:id="C15.S8.SS1.p1.s4">
+, <Math equation-number="15.8.3" mode="display" xml:id="C15.S8.E3">\frac{\sin\left(\pi(b-a)\right)}{\pi}\mathbf{F}\left({a,b\atop c};z\right)= \frac{(1-z)^{-a}}{\Gamma\left(b\right)\Gamma\left(c-a\right)}\mathbf{F}\left({ a,c-b\atop a-b+1};\frac{1}{1-z}\right)-\frac{(1-z)^{-b}}{\Gamma\left(a\right) \Gamma\left(c-b\right)}\mathbf{F}\left({b,c-a\atop b-a+1};\frac{1}{1-z}\right), subject to |\operatorname{ph}\left(-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="131" xml:id="C15.S8.SS1.p1.s5">
+, <Math equation-number="15.8.4" mode="display" xml:id="C15.S8.E4">\frac{\sin\left(\pi(c-a-b)\right)}{\pi}\mathbf{F}\left({a,b\atop c};z\right)= \frac{1}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)}\mathbf{F}\left({a,b \atop a+b-c+1};1-z\right)-\frac{(1-z)^{c-a-b}}{\Gamma\left(a\right)\Gamma\left (b\right)}\mathbf{F}\left({c-a,c-b\atop c-a-b+1};1-z\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="132" xml:id="C15.S8.SS1.p1.s6">
+, <Math equation-number="15.8.5" mode="display" xml:id="C15.S8.E5">\frac{\sin\left(\pi(c-a-b)\right)}{\pi}\mathbf{F}\left({a,b\atop c};z\right)= \frac{z^{-a}}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)}\mathbf{F}\left({a, a-c+1\atop a+b-c+1};1-\frac{1}{z}\right)-\frac{(1-z)^{c-a-b}z^{a-c}}{\Gamma \left(a\right)\Gamma\left(b\right)}\mathbf{F}\left({c-a,1-a\atop c-a-b+1};1- \frac{1}{z}\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C15.S8.SS1.p2.s1">
+For an alternative version of the transformations (LABEL:eq:HY.LT.2) and (LABEL:eq:HY.LT.3), see (LABEL:eq:HY.KU.C9), and for an alternative version of the transformations (LABEL:eq:HY.LT.4) and (LABEL:eq:HY.LT.5), see (LABEL:eq:HY.KU.C5).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S8.SS2">
+<title>Linear Transformations: Limiting Cases</title>        
+ 
+<para xml:id="C15.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C15.S8.SS2.p1.s1">
+With <Math mode="inline" xml:id="C15.S8.SS2.p1.m1">m=0,1,2,\dots</Math> , polynomial cases of (LABEL:eq:HY.LT.2)–(LABEL:eq:HY.LT.5) are given by <Math equation-number="15.8.6" mode="display" xml:id="C15.S8.E6">F\left({-m,b\atop c};z\right)=\frac{(b)_{m}}{(c)_{m}}(-z)^{m}F\left({-m,1-c-m \atop 1-b-m};\frac{1}{z}\right)=\frac{(b)_{m}}{(c)_{m}}(1-z)^{m}F\left({-m,c-b \atop 1-b-m};\frac{1}{1-z}\right),</Math> , <Math equation-number="15.8.7" mode="display" xml:id="C15.S8.E7">F\left({-m,b\atop c};z\right)=\frac{(c-b)_{m}}{(c)_{m}}F\left({-m,b\atop b-c-m +1};1-z\right)=\frac{(c-b)_{m}}{(c)_{m}}z^{m}F\left({-m,1-c-m\atop b-c-m+1};1- \frac{1}{z}\right),</Math> with the understanding that if <Math mode="inline" xml:id="C15.S8.SS2.p1.m2">b=-\ell</Math> , <Math mode="inline" xml:id="C15.S8.SS2.p1.m3">\ell=0,1,2,\dots</Math> , then <Math mode="inline" xml:id="C15.S8.SS2.p1.m4">m\leq\ell</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C15.S8.SS2.p2.s1">
+When <Math mode="inline" xml:id="C15.S8.SS2.p2.m1">b-a</Math> is an integer limits are taken in (LABEL:eq:HY.LT.2) and (LABEL:eq:HY.LT.3) as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C15.S8.SS2.p3.s1">
+If <Math mode="inline" xml:id="C15.S8.SS2.p3.m1">b-a</Math> is a nonnegative integer, then <Math equation-number="15.8.8" mode="display" xml:id="C15.S8.E8">\mathbf{F}\left({a,a+m\atop c};z\right)=\frac{(-z)^{-a}}{\Gamma\left(a+m\right )}\sum_{k=0}^{m-1}\frac{(a)_{k}(m-k-1)!}{k!\Gamma\left(c-a-k\right)}z^{-k}+ \frac{(-z)^{-a}}{\Gamma\left(a\right)}\sum_{k=0}^{\infty}\frac{(a+m)_{k}}{k!(k +m)!\Gamma\left(c-a-k-m\right)}(-1)^{k}z^{-k-m}\*\left(\ln\left(-z\right)+\psi \left(k+1\right)+\psi\left(k+m+1\right)-\psi\left(a+k+m\right)-\psi\left(c-a-k -m\right)\right), subject to |z|&gt;1,|\operatorname{ph}\left(-z\right)|&lt;\pi,</Math> <Math equation-number="15.8.9" mode="display" xml:id="C15.S8.E9">\mathbf{F}\left({a,a+m\atop c};z\right)=\frac{(1-z)^{-a}}{\Gamma\left(a+m \right)\Gamma\left(c-a\right)}\sum_{k=0}^{m-1}\frac{(a)_{k}(c-a-m)_{k}(m-k-1)! }{k!}(z-1)^{-k}+\frac{(-1)^{m}(1-z)^{-a-m}}{\Gamma\left(a\right)\Gamma\left(c- a-m\right)}\sum_{k=0}^{\infty}\frac{(a+m)_{k}(c-a)_{k}}{k!(k+m)!}(1-z)^{-k}\*( \ln\left(1-z\right)+\psi\left(k+1\right)+\psi\left(k+m+1\right)-\psi\left(a+k+ m\right)-\psi\left(c-a+k\right)), subject to |z-1|&gt;1,|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="137" xml:id="C15.S8.SS2.p3.s2">
+In (LABEL:eq:HY.LTLC.8)when
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="138" xml:id="C15.S8.SS2.p3.s3">
+<Math mode="inline" xml:id="C15.S8.SS2.p3.m2">c-a-k-m</Math> is a nonpositive integer <Math mode="inline" xml:id="C15.S8.SS2.p3.m3">\ifrac{\psi\left(c-a-k-m\right)}{\Gamma\left(c-a-k-m\right)}</Math> is interpreted as <Math mode="inline" xml:id="C15.S8.SS2.p3.m4">(-1)^{m+k+a-c+1}(m+k+a-c)!</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="139" xml:id="C15.S8.SS2.p3.s4">
+Also, if <Math mode="inline" xml:id="C15.S8.SS2.p3.m5">a</Math> is a nonpositive integer, then (LABEL:eq:HY.LTLC.6)applies.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C15.S8.SS2.p4.s1">
+Alternatively, if <Math mode="inline" xml:id="C15.S8.SS2.p4.m1">b-a</Math> is a negative integer, then we interchange <Math mode="inline" xml:id="C15.S8.SS2.p4.m2">a</Math> and <Math mode="inline" xml:id="C15.S8.SS2.p4.m3">b</Math> in <Math mode="inline" xml:id="C15.S8.SS2.p4.m4">\mathbf{F}\left(a,b;c;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C15.S8.SS2.p5.s1">
+In a similar way, when <Math mode="inline" xml:id="C15.S8.SS2.p5.m1">c-a-b</Math> is an integer limits are taken in (LABEL:eq:HY.LT.4) and (LABEL:eq:HY.LT.5) as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C15.S8.SS2.p6.s1">
+If <Math mode="inline" xml:id="C15.S8.SS2.p6.m1">c-a-b</Math> is a nonnegative integer, then <Math equation-number="15.8.10" mode="display" xml:id="C15.S8.E10">\mathbf{F}\left({a,b\atop a+b+m};z\right)=\frac{1}{\Gamma\left(a+m\right) \Gamma\left(b+m\right)}\sum_{k=0}^{m-1}\frac{(a)_{k}(b)_{k}(m-k-1)!}{k!}(z-1)^ {k}-\frac{(z-1)^{m}}{\Gamma\left(a\right)\Gamma\left(b\right)}\sum_{k=0}^{ \infty}\frac{(a+m)_{k}(b+m)_{k}}{k!(k+m)!}(1-z)^{k}\*\left(\ln\left(1-z\right) -\psi\left(k+1\right)-\psi\left(k+m+1\right)+\psi\left(a+k+m\right)+\psi\left( b+k+m\right)\right), subject to |z-1|&lt;1,|\operatorname{ph}\left(1-z\right)|&lt;\pi,</Math> <Math equation-number="15.8.11" mode="display" xml:id="C15.S8.E11">\mathbf{F}\left({a,b\atop a+b+m};z\right)=\frac{z^{-a}}{\Gamma\left(a+m\right) }\sum_{k=0}^{m-1}\frac{(a)_{k}(m-k-1)!}{k!\Gamma\left(b+m-k\right)}\left(1- \frac{1}{z}\right)^{k}-\frac{z^{-a}}{\Gamma\left(a\right)}\sum_{k=0}^{\infty} \frac{(a+m)_{k}}{k!(k+m)!\Gamma\left(b-k\right)}(-1)^{k}\left(1-\frac{1}{z} \right)^{k+m}\*\left(\ln\left(\frac{1-z}{z}\right)-\psi\left(k+1\right)-\psi \left(k+m+1\right)+\psi\left(a+k+m\right)+\psi\left(b-k\right)\right), subject to \Re z&gt;\tfrac{1}{2},|\operatorname{ph}z|&lt;\pi,|\operatorname{ph}\left(1-z\right) |&lt;\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S8.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C15.S8.SS2.p7.s1">
+In (LABEL:eq:HY.LTLC.11)when
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C15.S8.SS2.p7.s2">
+<Math mode="inline" xml:id="C15.S8.SS2.p7.m1">b-k</Math> is a nonpositive integer, <Math mode="inline" xml:id="C15.S8.SS2.p7.m2">\ifrac{\psi\left(b-k\right)}{\Gamma\left(b-k\right)}</Math> is interpreted as <Math mode="inline" xml:id="C15.S8.SS2.p7.m3">(-1)^{k-b+1}(k-b)</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="145" xml:id="C15.S8.SS2.p7.s3">
+. Also, if <Math mode="inline" xml:id="C15.S8.SS2.p7.m4">a</Math> or <Math mode="inline" xml:id="C15.S8.SS2.p7.m5">b</Math> or both are nonpositive integers, then (LABEL:eq:HY.LTLC.7)applies.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C15.S8.SS2.p8.s1">
+Lastly, if <Math mode="inline" xml:id="C15.S8.SS2.p8.m1">c-a-b</Math> is a negative integer, then we first apply the transformation <Math equation-number="15.8.12" mode="display" xml:id="C15.S8.E12">\mathbf{F}\left(a,b;a+b-m;z\right)=(1-z)^{-m}\mathbf{F}\left(\tilde{a},\tilde{ b};\tilde{a}+\tilde{b}+m;z\right), subject to \tilde{a}=a-m,\tilde{b}=b-m</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S8.SS3">
+<title>Quadratic Transformations</title>        
+  
+<para xml:id="C15.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C15.S8.SS3.p1.s1">
+A quadratic transformation relates two hypergeometric functions, with the variable in one a quadratic function of the variable in the other, possibly combined with a fractional linear transformation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C15.S8.SS3.p2.s1">
+A necessary and sufficient condition that there exists a quadratic transformation is that at least one of the equations shown in TableLABEL:tab:HY.TF.QTTAB is satisfied.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="149" xml:id="C15.S8.T1.s1">
+Table 15.8.1: Quadratic transformations of the hypergeometric function.
+</sentence> 
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="1" xml:id="C15.S8.T1.t1.s1">
+Group 1
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="2" xml:id="C15.S8.T1.t1.s2">
+Group 2
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="3" xml:id="C15.S8.T1.t1.s3">
+Group 3
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="4" xml:id="C15.S8.T1.t1.s4">
+Group 4
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="5" xml:id="C15.S8.T1.t1.s5">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r2.m1">c=a-b+1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="6" xml:id="C15.S8.T1.t1.s6">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r2.m2">a=b+\frac{1}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="7" xml:id="C15.S8.T1.t1.s7">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r3.m1">c=2a</Math>
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="8" xml:id="C15.S8.T1.t1.s8">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r3.m2">c=b-a+1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="9" xml:id="C15.S8.T1.t1.s9">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r3.m3">b=a+\frac{1}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="10" xml:id="C15.S8.T1.t1.s10">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r3.m4">c=\frac{1}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="11" xml:id="C15.S8.T1.t1.s11">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r4.m1">c=2b</Math>
+</sentence>
+
+<sentence sentence-num-in-section="161" sentence-num-in-table="12" xml:id="C15.S8.T1.t1.s12">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r4.m2">c=\frac{1}{2}(a+b+1)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="162" sentence-num-in-table="13" xml:id="C15.S8.T1.t1.s13">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r4.m3">c=a+b+\frac{1}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="163" sentence-num-in-table="14" xml:id="C15.S8.T1.t1.s14">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r4.m4">c=\frac{3}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="164" sentence-num-in-table="15" xml:id="C15.S8.T1.t1.s15">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r5.m1">a+b=1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="165" sentence-num-in-table="16" xml:id="C15.S8.T1.t1.s16">
+<Math mode="inline" xml:id="C15.S8.T1.t1.r5.m2">c=a+b-\frac{1}{2}</Math>
+</sentence>
+  
+<para xml:id="C15.S8.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C15.S8.SS3.p3.s1">
+The hypergeometric functions that correspond to Groups 1 and 2 have <Math mode="inline" xml:id="C15.S8.SS3.p3.m1">z</Math> as variable.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C15.S8.SS3.p3.s2">
+The hypergeometric functions that correspond to Groups 3 and 4 have a nonlinear function of <Math mode="inline" xml:id="C15.S8.SS3.p3.m2">z</Math> as variable.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="168" xml:id="C15.S8.SS3.p3.s3">
+The transformation formulas between two hypergeometric functions in Group 2, or two hypergeometric functions in Group 3, are the linear transformations (LABEL:eq:HY.LT.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C15.S8.SS3.p4.s1">
+In the equations that follow in this subsection all functions take their principal values.
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C15.S8.Px1">
+<title>Group 1 <Math mode="inline" xml:id="C15.S8.Px1.m1">\longrightarrow</Math> Group 3</title>   
+<para xml:id="C15.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C15.S8.Px1.p1.s1">
+ <Math equation-number="15.8.13" mode="display" xml:id="C15.S8.E13">F\left({a,b\atop 2b};z\right)=\left(1-\tfrac{1}{2}z\right)^{-a}F\left({\tfrac{ 1}{2}a,\tfrac{1}{2}a+\tfrac{1}{2}\atop b+\tfrac{1}{2}};\left(\frac{z}{2-z} \right)^{2}\right), subject to |\operatorname{ph}\left(1-z\right)|&lt;\pi,</Math> , <Math equation-number="15.8.14" mode="display" xml:id="C15.S8.E14">F\left({a,b\atop 2b};z\right)=\left(1-z\right)^{-\ifrac{a}{2}}F\left({\tfrac{1 }{2}a,b-\tfrac{1}{2}a\atop b+\tfrac{1}{2}};\frac{z^{2}}{4z-4}\right), subject to |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S8.Px2">
+<title>Group 2 <Math mode="inline" xml:id="C15.S8.Px2.m1">\longrightarrow</Math> Group 3</title>   
+<para xml:id="C15.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="171" xml:id="C15.S8.Px2.p1.s1">
+ <Math equation-number="15.8.15" mode="display" xml:id="C15.S8.E15">F\left({a,b\atop a-b+1};z\right)=(1+z)^{-a}F\left({\frac{1}{2}a,\frac{1}{2}a+ \frac{1}{2}\atop a-b+1};\frac{4z}{(1+z)^{2}}\right), subject to |z|&lt;1,</Math> , <Math equation-number="15.8.16" mode="display" xml:id="C15.S8.E16">F\left({a,b\atop a-b+1};z\right)=(1-z)^{-a}F\left({\frac{1}{2}a,\frac{1}{2}a-b +\frac{1}{2}\atop a-b+1};\frac{-4z}{(1-z)^{2}}\right), subject to |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="172" xml:id="C15.S8.Px2.p1.s2">
+<Math equation-number="15.8.17" mode="display" xml:id="C15.S8.E17">F\left({a,b\atop\frac{1}{2}(a+b+1)};z\right)=(1-2z)^{-a}F\left({\frac{1}{2}a, \frac{1}{2}a+\frac{1}{2}\atop\frac{1}{2}(a+b+1)};\frac{4z(z-1)}{(1-2z)^{2}} \right), subject to \Re z&lt;\frac{1}{2},</Math> , <Math equation-number="15.8.18" mode="display" xml:id="C15.S8.E18">F\left({a,b\atop\frac{1}{2}(a+b+1)};z\right)=F\left({\frac{1}{2}a,\frac{1}{2}b \atop\frac{1}{2}(a+b+1)};4z(1-z)\right), subject to \Re z&lt;\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="173" xml:id="C15.S8.Px2.p1.s3">
+<Math equation-number="15.8.19" mode="display" xml:id="C15.S8.E19">F\left({a,1-a\atop c};z\right)=(1-2z)^{1-a-c}(1-z)^{c-1}F\left({\frac{1}{2}(a+ c),\frac{1}{2}(a+c-1)\atop c};\frac{4z(z-1)}{(1-2z)^{2}}\right), subject to \Re z&lt;\frac{1}{2},</Math> , <Math equation-number="15.8.20" mode="display" xml:id="C15.S8.E20">F\left({a,1-a\atop c};z\right)=(1-z)^{c-1}F\left({\frac{1}{2}(c-a),\frac{1}{2} (a+c-1)\atop c};4z(1-z)\right), subject to \Re z&lt;\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S8.Px3">
+<title>Group 2 <Math mode="inline" xml:id="C15.S8.Px3.m1">\longrightarrow</Math> Group 1</title>   
+<para xml:id="C15.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C15.S8.Px3.p1.s1">
+ <Math equation-number="15.8.21" mode="display" xml:id="C15.S8.E21">F\left({a,b\atop a-b+1};z\right)=\left(1+\sqrt{z}\right)^{-2a}F\left({a,a-b+ \tfrac{1}{2}\atop 2a-2b+1};\frac{4\sqrt{z}}{(1+\sqrt{z})^{2}}\right), subject to |\operatorname{ph}z|&lt;\pi, |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="175" xml:id="C15.S8.Px3.p1.s2">
+, <Math equation-number="15.8.22" mode="display" xml:id="C15.S8.E22">F\left({a,b\atop\tfrac{1}{2}(a+b+1)};z\right)=\left(\frac{\sqrt{1-z^{-1}}-1}{ \sqrt{1-z^{-1}}+1}\right)^{a}F\left({a,\tfrac{1}{2}(a+b)\atop a+b};\frac{4 \sqrt{1-z^{-1}}}{\left(\sqrt{1-z^{-1}}+1\right)^{2}}\right), subject to |\operatorname{ph}\left(-z\right)|&lt;\pi, \Re z&lt;\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="176" xml:id="C15.S8.Px3.p1.s3">
+<Math equation-number="15.8.23" mode="display" xml:id="C15.S8.E23">F\left({a,1-a\atop c};z\right)=\left(\sqrt{1-z^{-1}}-1\right)^{1-a}\left(\sqrt {1-z^{-1}}+1\right)^{a-2c+1}\left(1-z^{-1}\right)^{c-1}F\left({c-a,c-\tfrac{1} {2}\atop 2c-1};\frac{4\sqrt{1-z^{-1}}}{\left(\sqrt{1-z^{-1}}+1\right)^{2}} \right), subject to |\operatorname{ph}\left(-z\right)|&lt;\pi, \Re z&lt;\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S8.Px4">
+<title>Group 2 <Math mode="inline" xml:id="C15.S8.Px4.m1">\longrightarrow</Math> Group 4</title>   
+<para xml:id="C15.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C15.S8.Px4.p1.s1">
+ <Math equation-number="15.8.24" mode="display" xml:id="C15.S8.E24">F\left({a,b\atop a-b+1};z\right)=(1-z)^{-a}\frac{\Gamma\left(a-b+1\right) \Gamma\left(\tfrac{1}{2}\right)}{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}\right) \Gamma\left(\tfrac{1}{2}a-b+1\right)}F\left({\tfrac{1}{2}a,\tfrac{1}{2}a-b+ \tfrac{1}{2}\atop\tfrac{1}{2}};\left(\frac{z+1}{z-1}\right)^{2}\right)+(1+z)(1 -z)^{-a-1}\frac{\Gamma\left(a-b+1\right)\Gamma\left(-\tfrac{1}{2}\right)}{ \Gamma\left(\tfrac{1}{2}a\right)\Gamma\left(\tfrac{1}{2}a-b+\tfrac{1}{2}\right )}F\left({\tfrac{1}{2}a+\tfrac{1}{2},\tfrac{1}{2}a-b+1\atop\tfrac{3}{2}};\left (\frac{z+1}{z-1}\right)^{2}\right), subject to |\operatorname{ph}\left(-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C15.S8.Px4.p1.s2">
+<Math equation-number="15.8.25" mode="display" xml:id="C15.S8.E25">F\left({a,b\atop\tfrac{1}{2}(a+b+1)};z\right)=\frac{\Gamma\left(\tfrac{1}{2}(a +b+1)\right)\Gamma\left(\tfrac{1}{2}\right)}{\Gamma\left(\tfrac{1}{2}a+\tfrac{ 1}{2}\right)\Gamma\left(\tfrac{1}{2}b+\tfrac{1}{2}\right)}F\left({\tfrac{1}{2} a,\tfrac{1}{2}b\atop\tfrac{1}{2}};(1-2z)^{2}\right)+(1-2z)\frac{\Gamma\left( \tfrac{1}{2}(a+b+1)\right)\Gamma\left(-\tfrac{1}{2}\right)}{\Gamma\left(\tfrac {1}{2}a\right)\Gamma\left(\tfrac{1}{2}b\right)}F\left({\tfrac{1}{2}a+\tfrac{1} {2},\tfrac{1}{2}b+\tfrac{1}{2}\atop\tfrac{3}{2}};(1-2z)^{2}\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="179" xml:id="C15.S8.Px4.p1.s3">
+<Math equation-number="15.8.26" mode="display" xml:id="C15.S8.E26">F\left({a,1-a\atop c};z\right)=(1-z)^{c-1}\frac{\Gamma\left(c\right)\Gamma \left(\tfrac{1}{2}\right)}{\Gamma\left(\tfrac{1}{2}(c-a+1)\right)\Gamma\left( \tfrac{1}{2}c+\tfrac{1}{2}a\right)}F\left({\tfrac{1}{2}c-\tfrac{1}{2}a,\tfrac{ 1}{2}c+\tfrac{1}{2}a-\tfrac{1}{2}\atop\tfrac{1}{2}};(1-2z)^{2}\right)+(1-2z)(1 -z)^{c-1}\frac{\Gamma\left(c\right)\Gamma\left(-\tfrac{1}{2}\right)}{\Gamma \left(\tfrac{1}{2}c-\tfrac{1}{2}a\right)\Gamma\left(\tfrac{1}{2}(c+a-1)\right) }F\left({\tfrac{1}{2}c-\tfrac{1}{2}a+\tfrac{1}{2},\tfrac{1}{2}c+\tfrac{1}{2}a \atop\tfrac{3}{2}};(1-2z)^{2}\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S8.Px5">
+<title>Group 4 <Math mode="inline" xml:id="C15.S8.Px5.m1">\longrightarrow</Math> Group 2</title>  
+ 
+<para xml:id="C15.S8.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C15.S8.Px5.p1.s1">
+ <Math equation-number="15.8.27" mode="display" xml:id="C15.S8.E27">\frac{2\Gamma\left(\tfrac{1}{2}\right)\Gamma\left(a+b+\tfrac{1}{2}\right)}{ \Gamma\left(a+\tfrac{1}{2}\right)\Gamma\left(b+\tfrac{1}{2}\right)}F\left(a,b; \tfrac{1}{2};z\right)=F\left(2a,2b;a+b+\tfrac{1}{2};\tfrac{1}{2}-\tfrac{1}{2} \sqrt{z}\right)+F\left(2a,2b;a+b+\tfrac{1}{2};\tfrac{1}{2}+\tfrac{1}{2}\sqrt{z }\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="181" xml:id="C15.S8.Px5.p1.s2">
+<Math equation-number="15.8.28" mode="display" xml:id="C15.S8.E28">\frac{2\sqrt{z}\Gamma\left(-\tfrac{1}{2}\right)\Gamma\left(a+b-\tfrac{1}{2} \right)}{\Gamma\left(a-\tfrac{1}{2}\right)\Gamma\left(b-\tfrac{1}{2}\right)}F \left(a,b;\tfrac{3}{2};z\right)=F\left(2a-1,2b-1;a+b-\tfrac{1}{2};\tfrac{1}{2} -\tfrac{1}{2}\sqrt{z}\right)-F\left(2a-1,2b-1;a+b-\tfrac{1}{2};\tfrac{1}{2}+ \tfrac{1}{2}\sqrt{z}\right), subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S8.SS4">
+<title>Quadratic Transformations (Continued)</title>        
+ 
+<para xml:id="C15.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C15.S8.SS4.p1.s1">
+When the intersection of two groups in Table LABEL:tab:HY.TF.QTTAB is not empty there exist special quadratic transformations, with only one free parameter, between two hypergeometric functions in the same group.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S8.Px6">
+<title>Examples</title>   
+<para xml:id="C15.S8.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C15.S8.Px6.p1.s1">
+ <Math mode="inline" xml:id="C15.S8.Px6.p1.m1">b=\tfrac{1}{3}a+\tfrac{1}{3}</Math> , <Math mode="inline" xml:id="C15.S8.Px6.p1.m2">c=2b=a-b+1</Math> in Groups 1 and 2.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C15.S8.Px6.p2.s1">
+(LABEL:eq:HY.LT.19) becomes <Math equation-number="15.8.29" mode="display" xml:id="C15.S8.E29">F\left({a,\tfrac{1}{3}a+\tfrac{1}{3}\atop\tfrac{2}{3}a+\tfrac{2}{3}};z\right)= \left(1+\sqrt{z}\right)^{-2a}\*F\left({a,\tfrac{2}{3}a+\tfrac{1}{6}\atop\tfrac {4}{3}a+\tfrac{1}{3}};\frac{4\sqrt{z}}{(1+\sqrt{z})^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="185" xml:id="C15.S8.Px6.p2.s2">
+This is a quadratic transformation between two cases in Group 1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.Px6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C15.S8.Px6.p3.s1">
+We can also use (LABEL:eq:HY.LT.11), followed by the inverse of (LABEL:eq:HY.LT.13), and obtain <Math equation-number="15.8.30" mode="display" xml:id="C15.S8.E30">\left(1-\tfrac{1}{2}z\right)^{-a}F\left({\tfrac{1}{2}a,\tfrac{1}{2}a+\tfrac{1} {2}\atop\tfrac{1}{3}a+\tfrac{5}{6}};\left(\frac{z}{2-z}\right)^{2}\right)=F \left({a,\tfrac{1}{3}a+\tfrac{1}{3}\atop\tfrac{2}{3}a+\tfrac{2}{3}};z\right)=( 1+z)^{-a}F\left({\tfrac{1}{2}a,\tfrac{1}{2}a+\tfrac{1}{2}\atop\tfrac{2}{3}a+ \tfrac{2}{3}};\frac{4z}{(1+z)^{2}}\right),</Math> which is a quadratic transformation between two cases in Group 3.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.Px6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C15.S8.Px6.p4.s1">
+For further examples see ( , pp. 130–132 and 176–177) .
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S8.SS5">
+<title>Cubic Transformations</title>        
+ 
+ 
+<paragraph xml:id="C15.S8.Px7">
+<title>Examples</title>   
+<para xml:id="C15.S8.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C15.S8.Px7.p1.s1">
+ <Math equation-number="15.8.31" mode="display" xml:id="C15.S8.E31">F\left({3a,3a+\frac{1}{2}\atop 4a+\frac{2}{3}};z\right)=\left(1-\tfrac{9}{8}z \right)^{-2a}\*F\left({a,a+\frac{1}{2}\atop 2a+\frac{5}{6}};\frac{27z^{2}(z-1) }{(9z-8)^{2}}\right), subject to \Re z&lt;\frac{8}{9}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C15.S8.Px7.p2.s1">
+With <Math mode="inline" xml:id="C15.S8.Px7.p2.m1">\zeta=e^{\ifrac{2\pi\mathrm{i}}{3}}(1-z)/\left(z-e^{\ifrac{4\pi\mathrm{i}}{3}}\right)</Math> <Math equation-number="15.8.32" mode="display" xml:id="C15.S8.E32">\frac{\left(1-z^{3}\right)^{a}}{\left(-z\right)^{3a}}\left(\frac{1}{\Gamma \left(a+\frac{2}{3}\right)\Gamma\left(\frac{2}{3}\right)}F\left({a,a+\frac{1}{ 3}\atop\frac{2}{3}};z^{-3}\right)+\frac{e^{\frac{1}{3}\pi\mathrm{i}}}{z\Gamma \left(a\right)\Gamma\left(\frac{4}{3}\right)}F\left({a+\frac{1}{3},a+\frac{2}{ 3}\atop\frac{4}{3}};z^{-3}\right)\right)=\frac{3^{\frac{3}{2}a+\frac{1}{2}}e^{ \frac{1}{2}a\pi\mathrm{i}}\Gamma\left(a+\frac{1}{3}\right)(1-\zeta)^{a}}{2\pi \Gamma\left(2a+\frac{2}{3}\right)(-\zeta)^{2a}}F\left({a+\frac{1}{3},3a\atop 2 a+\frac{2}{3}};\zeta^{-1}\right), subject to |z|&gt;1, |\operatorname{ph}\left(-z\right)|&lt;\frac{1}{3}\pi</Math>.
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S8.Px8">
+<title>Ramanujan’s Cubic Transformation</title>    
+<para xml:id="C15.S8.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="190" xml:id="C15.S8.Px8.p1.s1">
+ <Math equation-number="15.8.33" mode="display" xml:id="C15.S8.E33">F\left({\frac{1}{3},\frac{2}{3}\atop 1};1-\left(\frac{1-z}{1+2z}\right)^{3} \right)=(1+2z)F\left({\frac{1}{3},\frac{2}{3}\atop 1};z^{3}\right),</Math> provided that <Math mode="inline" xml:id="C15.S8.Px8.p1.m1">z</Math> lies in the intersection of the open disks <Math mode="inline" xml:id="C15.S8.Px8.p1.m2">\left|z-\frac{1}{4}\pm\frac{1}{4}\sqrt{3}\mathrm{i}\right|&lt;\frac{1}{2}\sqrt{3}</Math> , or equivalently, <Math mode="inline" xml:id="C15.S8.Px8.p1.m3">\left|\operatorname{ph}\left(\ifrac{(1-z)}{(1+2z)}\right)\right|&lt;\pi/3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="191" xml:id="C15.S8.Px8.p1.s2">
+This is used in a cubic analog of the arithmetic-geometric mean.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="192" xml:id="C15.S8.Px8.p1.s3">
+See ( ) , and also ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S8.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="193" xml:id="C15.S8.Px8.p2.s1">
+For further examples and higher-order transformations see ( ) , ( ) , ( ) , and ( ) ; see also ( , pp. 67 and 113–114) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S9">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C15.S9.SS1">
+<title>Orthogonal Polynomials</title>            
+<para xml:id="C15.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="194" xml:id="C15.S9.SS1.p1.s1">
+For the notation see §§LABEL:sec:OP.CP.OR and LABEL:sec:OP.AS.HO.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S9.Px1">
+<title>Jacobi</title>    
+<para xml:id="C15.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C15.S9.Px1.p1.s1">
+ <Math equation-number="15.9.1" mode="display" xml:id="C15.S9.E1">P^{(\alpha,\beta)}_{n}\left(x\right)=\frac{{\left(\alpha+1\right)_{n}}}{n!}F \left({-n,n+\alpha+\beta+1\atop\alpha+1};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px2">
+<title>Gegenbauer (or Ultraspherical)</title>  
+  
+<para xml:id="C15.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C15.S9.Px2.p1.s1">
+ <Math equation-number="15.9.2" mode="display" xml:id="C15.S9.E2">C^{(\lambda)}_{n}\left(x\right)=\frac{{\left(2\lambda\right)_{n}}}{n!}F\left({ -n,n+2\lambda\atop\lambda+\frac{1}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="197" xml:id="C15.S9.Px2.p1.s2">
+, <Math equation-number="15.9.3" mode="display" xml:id="C15.S9.E3">C^{(\lambda)}_{n}\left(x\right)=(2x)^{n}\frac{{\left(\lambda\right)_{n}}}{n!}F \left({-\frac{1}{2}n,\frac{1}{2}(1-n)\atop 1-\lambda-n};\frac{1}{x^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="198" xml:id="C15.S9.Px2.p1.s3">
+<Math equation-number="15.9.4" mode="display" xml:id="C15.S9.E4">C^{(\lambda)}_{n}\left(\cos\theta\right)=e^{n\mathrm{i}\theta}\frac{{\left( \lambda\right)_{n}}}{n!}F\left({-n,\lambda\atop 1-\lambda-n};e^{-2\mathrm{i} \theta}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px3">
+<title>Chebyshev</title>    
+<para xml:id="C15.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="199" xml:id="C15.S9.Px3.p1.s1">
+ <Math equation-number="15.9.5" mode="display" xml:id="C15.S9.E5">T_{n}\left(x\right)=F\left({-n,n\atop\frac{1}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="200" xml:id="C15.S9.Px3.p1.s2">
+, <Math equation-number="15.9.6" mode="display" xml:id="C15.S9.E6">U_{n}\left(x\right)=(n+1)F\left({-n,n+2\atop\frac{3}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px4">
+<title>Legendre</title>    
+<para xml:id="C15.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C15.S9.Px4.p1.s1">
+ <Math equation-number="15.9.7" mode="display" xml:id="C15.S9.E7">P_{n}\left(x\right)=F\left({-n,n+1\atop 1};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px5">
+<title>Krawtchouk</title>     
+<para xml:id="C15.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="202" xml:id="C15.S9.Px5.p1.s1">
+ <Math equation-number="15.9.8" mode="display" xml:id="C15.S9.E8">K_{n}\left(x;p,N\right)=F\left({-n,-x\atop-N};\frac{1}{p}\right), subject to n=0,1,2,\dots,N;</Math> compare also §LABEL:sec:HY.GA.AN.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px6">
+<title>Meixner</title>    
+<para xml:id="C15.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C15.S9.Px6.p1.s1">
+ <Math equation-number="15.9.9" mode="display" xml:id="C15.S9.E9">M_{n}\left(x;\beta,c\right)=F\left({-n,-x\atop\beta};1-\frac{1}{c}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px7">
+<title>Meixner–Pollaczek</title>  
+  
+<para xml:id="C15.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="204" xml:id="C15.S9.Px7.p1.s1">
+ <Math equation-number="15.9.10" mode="display" xml:id="C15.S9.E10">P^{(\lambda)}_{n}\left(x;\phi\right)=\frac{{\left(2\lambda\right)_{n}}}{n!}e^{ n\mathrm{i}\phi}F\left({-n,\lambda+\mathrm{i}x\atop 2\lambda};1-e^{-2\mathrm{i }\phi}\right)</Math>.
+</sentence>
+
+</para>
+
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS2">
+<title>Jacobi Function</title>           
+ 
+<para xml:id="C15.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C15.S9.SS2.p1.s1">
+This is a generalization of Jacobi polynomials (§LABEL:sec:OP.CP.OR) and has the representation <Math equation-number="15.9.11" mode="display" xml:id="C15.S9.E11">\phi^{(\alpha,\beta)}_{\lambda}\left(t\right)=F\left({\tfrac{1}{2}(\alpha+ \beta+1-\mathrm{i}\lambda),\tfrac{1}{2}(\alpha+\beta+1+\mathrm{i}\lambda)\atop \alpha+1};-{\sinh^{2}}t\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="206" xml:id="C15.S9.SS2.p2.s1">
+The Jacobi transform is defined as <Math equation-number="15.9.12" mode="display" xml:id="C15.S9.E12">\widetilde{f}(\lambda)=\int_{0}^{\infty}f(t)\phi^{(\alpha,\beta)}_{\lambda} \left(t\right)(2\sinh t)^{2\alpha+1}(2\cosh t)^{2\beta+1}\mathrm{d}t,</Math> with inverse <Math equation-number="15.9.13" mode="display" xml:id="C15.S9.E13">f(t)=\frac{1}{2\pi\mathrm{i}}\int_{-\mathrm{i}\infty}^{\mathrm{i}\infty} \widetilde{f}(\mathrm{i}\lambda)\Phi^{(\alpha,\beta)}_{\mathrm{i}\lambda}(t) \frac{\Gamma\left(\tfrac{1}{2}(\alpha+\beta+1+\lambda)\right)\Gamma\left( \tfrac{1}{2}(\alpha-\beta+1+\lambda)\right)}{\Gamma\left(\alpha+1\right)\Gamma \left(\lambda\right)2^{\alpha+\beta+1-\lambda}}\mathrm{d}\lambda,</Math> where the contour of integration is located to the right of the poles of the gamma functions in the integrand, and <Math equation-number="15.9.14" mode="display" xml:id="C15.S9.E14">\Phi^{(\alpha,\beta)}_{\lambda}(t)=(2\cosh t)^{\mathrm{i}\lambda-\alpha-\beta- 1}F\left({\tfrac{1}{2}(\alpha+\beta+1-\mathrm{i}\lambda),\tfrac{1}{2}(\alpha- \beta+1-\mathrm{i}\lambda)\atop 1-\mathrm{i}\lambda};{\operatorname{sech}^{2}} t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="207" xml:id="C15.S9.SS2.p2.s2">
+For this result, together with restrictions on the functions <Math mode="inline" xml:id="C15.S9.SS2.p2.m1">f(t)</Math> and <Math mode="inline" xml:id="C15.S9.SS2.p2.m2">\widetilde{f}(\lambda)</Math> , see ( ) .
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS3">
+<title>Gegenbauer Function</title>           
+ 
+<para xml:id="C15.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C15.S9.SS3.p1.s1">
+This is a generalization of Gegenbauer (or ultraspherical) polynomials (§LABEL:sec:OP.CP.OR).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="209" xml:id="C15.S9.SS3.p1.s2">
+It is defined by: <Math equation-number="15.9.15" mode="display" xml:id="C15.S9.E15">C^{(\lambda)}_{\alpha}\left(z\right)=\frac{\Gamma\left(\alpha+2\lambda\right)} {\Gamma\left(2\lambda\right)\Gamma\left(\alpha+1\right)}F\left({-\alpha,\alpha +2\lambda\atop\lambda+\tfrac{1}{2}};\frac{1-z}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS4">
+<title>Associated Legendre Functions; Ferrers Functions</title>            
+ 
+<para xml:id="C15.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C15.S9.SS4.p1.s1">
+Any hypergeometric function for which a quadratic transformation exists can be expressed in terms of associated Legendre functions or Ferrers functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="211" xml:id="C15.S9.SS4.p1.s2">
+For examples see §§LABEL:sec:LE.DHR.D1–LABEL:sec:LE.DHR.AHR andLABEL:sec:LE.DBP.BP.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S9.SS4.p2">
+
+</para>
+ 
+ 
+<para xml:id="C15.S9.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C15.S9.SS4.p3.s1">
+The following formulas apply with principal branches of the hypergeometric functions, associated Legendre functions, and fractional powers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C15.S9.SS4.p3.s2">
+<Math equation-number="15.9.16" mode="display" xml:id="C15.S9.E16">\mathbf{F}\left({a,b\atop 2b};z\right)=\frac{\sqrt{\pi}}{\Gamma\left(b\right)} z^{-b+(\ifrac{1}{2})}(1-z)^{(b-a-(\ifrac{1}{2}))/2}\*P^{-b+(\ifrac{1}{2})}_{a- b-(\ifrac{1}{2})}\left(\frac{2-z}{2\sqrt{1-z}}\right), subject to b\neq 0,-1,-2,\dots, |\operatorname{ph}\left(1-z\right)|&lt;\pi and |1-z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="214" xml:id="C15.S9.SS4.p3.s3">
+, <Math equation-number="15.9.17" mode="display" xml:id="C15.S9.E17">\mathbf{F}\left({a,a+\tfrac{1}{2}\atop c};z\right)=2^{c-1}z^{\ifrac{(1-c)}{2}} (1-z)^{-a+(\ifrac{(c-1)}{2})}\*P^{1-c}_{2a-c}\left(\frac{1}{\sqrt{1-z}}\right), subject to |\operatorname{ph}z|&lt;\pi and |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="215" xml:id="C15.S9.SS4.p3.s4">
+, <Math equation-number="15.9.18" mode="display" xml:id="C15.S9.E18">\mathbf{F}\left({a,b\atop a+b+\tfrac{1}{2}};z\right)=2^{a+b-(\ifrac{1}{2})}(-z )^{(-a-b+(\ifrac{1}{2}))/2}\*P^{-a-b+(\ifrac{1}{2})}_{a-b-(\ifrac{1}{2})}\left (\sqrt{1-z}\right), subject to \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="216" xml:id="C15.S9.SS4.p3.s5">
+, <Math equation-number="15.9.19" mode="display" xml:id="C15.S9.E19">\mathbf{F}\left({a,b\atop a-b+1};z\right)=z^{\ifrac{(b-a)}{2}}(1-z)^{-b}\*P^{b -a}_{-b}\left(\frac{1+z}{1-z}\right), subject to |\operatorname{ph}z|&lt;\pi and |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="217" xml:id="C15.S9.SS4.p3.s6">
+, <Math equation-number="15.9.20" mode="display" xml:id="C15.S9.E20">\mathbf{F}\left({a,b\atop\tfrac{1}{2}(a+b+1)};z\right)=\left(-z(1-z)\right)^{ \ifrac{(1-a-b)}{4}}\*P^{\ifrac{(1-a-b)}{2}}_{\ifrac{(a-b-1)}{2}}\left(1-2z \right), subject to \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="218" xml:id="C15.S9.SS4.p3.s7">
+, <Math equation-number="15.9.21" mode="display" xml:id="C15.S9.E21">\mathbf{F}\left({a,1-a\atop c};z\right)=\left(\frac{-z}{1-z}\right)^{\ifrac{(1 -c)}{2}}\*P^{1-c}_{-a}\left(1-2z\right), subject to \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="219" xml:id="C15.S9.SS4.p3.s8">
+<Math equation-number="15.9.22" mode="display" xml:id="C15.S9.E22">\mathbf{F}\left({a,b\atop\tfrac{1}{2}};z\right)=\frac{2^{a+b-(\ifrac{3}{2})}}{ \pi}\Gamma\left(a+\tfrac{1}{2}\right)\Gamma\left(b+\tfrac{1}{2}\right)\*(z-1)^ {(-a-b+(\ifrac{1}{2}))/2}\*\left(e^{\pm\pi\mathrm{i}(a+b-(\ifrac{1}{2}))}P^{-a -b+(\ifrac{1}{2})}_{a-b-(\ifrac{1}{2})}\left(-\sqrt{z}\right)+P^{-a-b+(\ifrac{ 1}{2})}_{a-b-(\ifrac{1}{2})}\left(\sqrt{z}\right)\right), subject to a,b\neq-\frac{1}{2},-\frac{3}{2},-\frac{5}{2},\ldots, 0&lt;|\operatorname{ph}z|&lt;\pi,</Math> where the sign in the exponential is <Math mode="inline" xml:id="C15.S9.SS4.p3.m1">\pm</Math> according as <Math mode="inline" xml:id="C15.S9.SS4.p3.m2">\Im z\gtrless 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="220" xml:id="C15.S9.SS4.p3.s9">
+<Math equation-number="15.9.23" mode="display" xml:id="C15.S9.E23">\mathbf{F}\left({a,b\atop\tfrac{3}{2}};z\right)=\frac{2^{a+b-(\ifrac{5}{2})}}{ \pi\sqrt{z}}\Gamma\left(a-\tfrac{1}{2}\right)\Gamma\left(b-\tfrac{1}{2}\right) \*(z-1)^{(-a-b+(\ifrac{3}{2}))/2}\*\left(e^{\pm\pi\mathrm{i}(a+b-(\ifrac{3}{2} ))}P^{-a-b+(\ifrac{3}{2})}_{a-b-(\ifrac{1}{2})}\left(-\sqrt{z}\right)-P^{-a-b+ (\ifrac{3}{2})}_{a-b-(\ifrac{1}{2})}\left(\sqrt{z}\right)\right), subject to a,b\neq\frac{1}{2},-\frac{1}{2},-\frac{3}{2},\dots, 0&lt;|\operatorname{ph}z|&lt;\pi,</Math> where the sign in the exponential is <Math mode="inline" xml:id="C15.S9.SS4.p3.m3">\pm</Math> according as <Math mode="inline" xml:id="C15.S9.SS4.p3.m4">\Im z\gtrless 0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S10">
+<title>Hypergeometric Differential Equation</title>        
+ 
+<subsection xml:id="C15.S10.SS1">
+<title>Fundamental Solutions</title>          
+<para xml:id="C15.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="221" xml:id="C15.S10.SS1.p1.s1">
+ <Math equation-number="15.10.1" mode="display" xml:id="C15.S10.E1">z(1-z)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(c-(a+b+1)z\right)\frac {\mathrm{d}w}{\mathrm{d}z}-abw=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="222" xml:id="C15.S10.SS1.p1.s2">
+This is the hypergeometric differential equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="223" xml:id="C15.S10.SS1.p1.s3">
+It has regularsingularities at <Math mode="inline" xml:id="C15.S10.SS1.p1.m1">z=0,1,\infty</Math> , with corresponding exponent pairs <Math mode="inline" xml:id="C15.S10.SS1.p1.m2">\{0,1-c\}</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m3">\{0,c-a-b\}</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m4">\{a,b\}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="224" xml:id="C15.S10.SS1.p1.s4">
+When none of the exponent pairs differ by an integer, that is, when none of <Math mode="inline" xml:id="C15.S10.SS1.p1.m5">c</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m6">c-a-b</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m7">a-b</Math> is an integer, we have the following pairs <Math mode="inline" xml:id="C15.S10.SS1.p1.m8">f_{1}(z)</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m9">f_{2}(z)</Math> of fundamental solutions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="225" xml:id="C15.S10.SS1.p1.s5">
+They are also numerically satisfactory (§ LABEL:sec:AS.DE.NSS) in the neighborhood of the corresponding singularity.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S10.Px1">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px1.m1">z=0</Math></title>     
+<para xml:id="C15.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="226" xml:id="C15.S10.Px1.p1.s1">
+ <Math equation-number="15.10.2" mode="display" xml:id="C15.S10.E2">f_{1}(z)=F\left({a,b\atop c};z\right), f_{2}(z)=z^{1-c}F\left({a-c+1,b-c+1\atop 2-c};z\right),</Math> <Math equation-number="15.10.3" mode="display" xml:id="C15.S10.E3">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(1-c)z^{-c}(1-z)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S10.Px2">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px2.m1">z=1</Math></title>     
+<para xml:id="C15.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C15.S10.Px2.p1.s1">
+ <Math equation-number="15.10.4" mode="display" xml:id="C15.S10.E4">f_{1}(z)=F\left({a,b\atop a+b+1-c};1-z\right), f_{2}(z)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c-a-b+1};1-z\right),</Math> <Math equation-number="15.10.5" mode="display" xml:id="C15.S10.E5">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(a+b-c)z^{-c}(1-z)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S10.Px3">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px3.m1">z=\infty</Math></title>     
+<para xml:id="C15.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="228" xml:id="C15.S10.Px3.p1.s1">
+ <Math equation-number="15.10.6" mode="display" xml:id="C15.S10.E6">f_{1}(z)=z^{-a}F\left({a,a-c+1\atop a-b+1};\frac{1}{z}\right), f_{2}(z)=z^{-b}F\left({b,b-c+1\atop b-a+1};\frac{1}{z}\right),</Math> <Math equation-number="15.10.7" mode="display" xml:id="C15.S10.E7">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(a-b)z^{-c}(z-1)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S10.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C15.S10.Px3.p2.s1">
+(a) If <Math mode="inline" xml:id="C15.S10.Px3.p2.m1">c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p2.m2">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C15.S10.Px3.p2.m3">a=1,2,\dots,n-1</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p2.m4">z=0</Math> are given by (LABEL:eq:HY.DE.KU1) with the interpretation (LABEL:eq:HY.AN.4) for <Math mode="inline" xml:id="C15.S10.Px3.p2.m5">f_{2}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C15.S10.Px3.p3.s1">
+(b) If <Math mode="inline" xml:id="C15.S10.Px3.p3.m1">c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p3.m2">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C15.S10.Px3.p3.m3">a\neq 1,2,\dots,n-1</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p3.m4">z=0</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p3.m5">F\left(a,b;n;z\right)</Math> and
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C15.S10.Px3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="231" xml:id="C15.S10.Px3.p4.s1">
+ <Math equation-number="15.10.8" mode="display" xml:id="C15.S10.E8">F\left({a,b\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n-k-1)! {\left(1-a\right)_{k}}{\left(1-b\right)_{k}}}(-z)^{-k}\\ +\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k}}{\left(b\right)_{k}}}{{\left(n \right)_{k}}k!}z^{k}\left(\psi\left(a+k\right)+\psi\left(b+k\right)-\psi\left( 1+k\right)-\psi\left(n+k\right)\right), subject to a,b\neq n-1,n-2,\dots,0,-1,-2,\dots,</Math> or <Math equation-number="15.10.9" mode="display" xml:id="C15.S10.E9">F\left({-m,b\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n-k-1) !{\left(m+1\right)_{k}}{\left(1-b\right)_{k}}}(-z)^{-k}+\sum_{k=0}^{m}\frac{{ \left(-m\right)_{k}}{\left(b\right)_{k}}}{{\left(n\right)_{k}}k!}z^{k}\left( \psi\left(1+m-k\right)+\psi\left(b+k\right)-\psi\left(1+k\right)-\psi\left(n+k \right)\right)+(-1)^{m}m!\sum_{k=m+1}^{\infty}\frac{(k-1-m)!{\left(b\right)_{k }}}{{\left(n\right)_{k}}k!}z^{k}, subject to a=-m, m=0,1,2,\dots; b\neq n-1,n-2,\dots,0,-1,-2,\dots,</Math> or <Math equation-number="15.10.10" mode="display" xml:id="C15.S10.E10">F\left({-m,-\ell\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n- k-1)!{\left(m+1\right)_{k}}{\left(\ell+1\right)_{k}}}(-z)^{-k}+\sum_{k=0}^{ \ell}\frac{{\left(-m\right)_{k}}{\left(-\ell\right)_{k}}}{{\left(n\right)_{k}} k!}z^{k}\left(\psi\left(1+m-k\right)+\psi\left(1+\ell-k\right)-\psi\left(1+k \right)-\psi\left(n+k\right)\right)+(-1)^{\ell}\ell\,!\sum_{k=\ell+1}^{m}\frac {(k-1-\ell)!{\left(-m\right)_{k}}}{{\left(n\right)_{k}}k!}z^{k}, subject to a=-m, m=0,1,2,\dots; b=-\ell, \ell=0,1,2,\dots,m</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S10.Px3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C15.S10.Px3.p5.s1">
+Moreover, in (LABEL:eq:HY.DE.KU5) and (LABEL:eq:HY.DE.KU6) the symbols <Math mode="inline" xml:id="C15.S10.Px3.p5.m1">a</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p5.m2">b</Math> are interchangeable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="233" xml:id="C15.S10.Px3.p6.s1">
+(c) If the parameter <Math mode="inline" xml:id="C15.S10.Px3.p6.m1">c</Math> in the differential equation equals <Math mode="inline" xml:id="C15.S10.Px3.p6.m2">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p6.m3">z=0</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p6.m4">z^{n-1}</Math> times those in (a) and (b), with <Math mode="inline" xml:id="C15.S10.Px3.p6.m5">a</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p6.m6">b</Math> replaced throughout by <Math mode="inline" xml:id="C15.S10.Px3.p6.m7">a+n-1</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p6.m8">b+n-1</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="234" xml:id="C15.S10.Px3.p7.s1">
+(d) If <Math mode="inline" xml:id="C15.S10.Px3.p7.m1">a+b+1-c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p7.m2">n=1,2,3,\dots</Math> , or <Math mode="inline" xml:id="C15.S10.Px3.p7.m3">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p7.m4">z=1</Math> are given by those in (a), (b), and (c) with <Math mode="inline" xml:id="C15.S10.Px3.p7.m5">z</Math> replaced by <Math mode="inline" xml:id="C15.S10.Px3.p7.m6">1-z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="235" xml:id="C15.S10.Px3.p8.s1">
+(e) Finally, if <Math mode="inline" xml:id="C15.S10.Px3.p8.m1">a-b+1</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p8.m2">n=1,2,3,\dots</Math> , or <Math mode="inline" xml:id="C15.S10.Px3.p8.m3">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p8.m4">z=\infty</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p8.m5">z^{-a}</Math> times those in (a), (b), and (c) with <Math mode="inline" xml:id="C15.S10.Px3.p8.m6">b</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p8.m7">z</Math> replaced by <Math mode="inline" xml:id="C15.S10.Px3.p8.m8">a-c+1</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p8.m9">\ifrac{1}{z}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S10.SS2">
+<title>Kummer’s 24 Solutions and Connection Formulas</title>         
+ 
+<para xml:id="C15.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C15.S10.SS2.p1.s1">
+The three pairs of fundamental solutions given by (LABEL:eq:HY.DE.KU1), (LABEL:eq:HY.DE.KU2), and (LABEL:eq:HY.DE.KU3) can be transformed into 18 other solutions by means of (LABEL:eq:HY.LT.1), leading to a total of 24 solutions known as Kummer’s solutions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C15.S10.SS2.p1.s2">
+<Math equation-number="15.10.11" mode="display" xml:id="C15.S10.E11">w_{1}(z)=F\left({a,b\atop c};z\right)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c};z \right)=(1-z)^{-a}F\left({a,c-b\atop c};\frac{z}{z-1}\right)=(1-z)^{-b}F\left( {c-a,b\atop c};\frac{z}{z-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="238" xml:id="C15.S10.SS2.p1.s3">
+, <Math equation-number="15.10.12" mode="display" xml:id="C15.S10.E12">w_{2}(z)={z^{1-c}}F\left({a-c+1,b-c+1\atop 2-c};z\right)={z^{1-c}(1-z)^{c-a-b} }\*F\left({1-a,1-b\atop 2-c};z\right)={z^{1-c}(1-z)^{c-a-1}}\*F\left({a-c+1,1- b\atop 2-c};\frac{z}{z-1}\right)={z^{1-c}(1-z)^{c-b-1}}\*F\left({1-a,b-c+1 \atop 2-c};\frac{z}{z-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="239" xml:id="C15.S10.SS2.p1.s4">
+, <Math equation-number="15.10.13" mode="display" xml:id="C15.S10.E13">w_{3}(z)=F\left({a,b\atop a+b-c+1};1-z\right)=z^{1-c}F\left({a-c+1,b-c+1\atop a +b-c+1};1-z\right)=z^{-a}F\left({a,a-c+1\atop a+b-c+1};1-\frac{1}{z}\right)=z^ {-b}F\left({b,b-c+1\atop a+b-c+1};1-\frac{1}{z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="240" xml:id="C15.S10.SS2.p1.s5">
+, <Math equation-number="15.10.14" mode="display" xml:id="C15.S10.E14">w_{4}(z)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c-a-b+1};1-z\right)=z^{1-c}(1-z)^{c -a-b}F\left({1-a,1-b\atop c-a-b+1};1-z\right)=z^{a-c}(1-z)^{c-a-b}F\left({1-a, c-a\atop c-a-b+1};1-\frac{1}{z}\right)=z^{b-c}(1-z)^{c-a-b}F\left({1-b,c-b \atop c-a-b+1};1-\frac{1}{z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="241" xml:id="C15.S10.SS2.p1.s6">
+, <Math equation-number="15.10.15" mode="display" xml:id="C15.S10.E15">w_{5}(z)=e^{a\pi\mathrm{i}}z^{-a}\*F\left({a,a-c+1\atop a-b+1};\frac{1}{z} \right)=e^{(c-b)\pi\mathrm{i}}z^{b-c}(1-z)^{c-a-b}\*F\left({1-b,c-b\atop a-b+1 };\frac{1}{z}\right)=(1-z)^{-a}F\left({a,c-b\atop a-b+1};\frac{1}{1-z}\right)= e^{(c-1)\pi\mathrm{i}}z^{1-c}(1-z)^{c-a-1}\*F\left({1-b,a-c+1\atop a-b+1}; \frac{1}{1-z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="242" xml:id="C15.S10.SS2.p1.s7">
+, <Math equation-number="15.10.16" mode="display" xml:id="C15.S10.E16">w_{6}(z)=e^{b\pi\mathrm{i}}z^{-b}F\left({b,b-c+1\atop b-a+1};\frac{1}{z}\right )=e^{(c-a)\pi\mathrm{i}}z^{a-c}(1-z)^{c-a-b}\*F\left({1-a,c-a\atop b-a+1}; \frac{1}{z}\right)=(1-z)^{-b}F\left({b,c-a\atop b-a+1};\frac{1}{1-z}\right)=e^ {(c-1)\pi\mathrm{i}}z^{1-c}(1-z)^{c-b-1}\*F\left({1-a,b-c+1\atop b-a+1};\frac{ 1}{1-z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="243" xml:id="C15.S10.SS2.p2.s1">
+The <Math mode="inline" xml:id="C15.S10.SS2.p2.m1">\genfrac{(}{)}{0.0pt}{}{6}{3}=2</Math> 0 connection formulas for the principal branches of Kummer’s solutions are: <Math equation-number="15.10.17" mode="display" xml:id="C15.S10.E17">w_{3}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(a+b-c+1\right)}{\Gamma\left(a -c+1\right)\Gamma\left(b-c+1\right)}w_{1}(z)+\frac{\Gamma\left(c-1\right) \Gamma\left(a+b-c+1\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}w_{2}(z),</Math> , <Math equation-number="15.10.18" mode="display" xml:id="C15.S10.E18">w_{4}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(c-a-b+1\right)}{\Gamma\left(1 -a\right)\Gamma\left(1-b\right)}w_{1}(z)+\frac{\Gamma\left(c-1\right)\Gamma \left(c-a-b+1\right)}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)}w_{2}(z),</Math> , <Math equation-number="15.10.19" mode="display" xml:id="C15.S10.E19">w_{5}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(a-b+1\right)}{\Gamma\left(a-c +1\right)\Gamma\left(1-b\right)}w_{1}(z)+e^{(c-1)\pi\mathrm{i}}\frac{\Gamma \left(c-1\right)\Gamma\left(a-b+1\right)}{\Gamma\left(a\right)\Gamma\left(c-b \right)}w_{2}(z),</Math> , <Math equation-number="15.10.20" mode="display" xml:id="C15.S10.E20">w_{6}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(b-a+1\right)}{\Gamma\left(b-c +1\right)\Gamma\left(1-a\right)}w_{1}(z)+e^{(c-1)\pi\mathrm{i}}\frac{\Gamma \left(c-1\right)\Gamma\left(b-a+1\right)}{\Gamma\left(b\right)\Gamma\left(c-a \right)}w_{2}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="244" xml:id="C15.S10.SS2.p2.s2">
+<Math equation-number="15.10.21" mode="display" xml:id="C15.S10.E21">w_{1}(z)=\frac{\Gamma\left(c\right)\Gamma\left(c-a-b\right)}{\Gamma\left(c-a \right)\Gamma\left(c-b\right)}w_{3}(z)+\frac{\Gamma\left(c\right)\Gamma\left(a +b-c\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}w_{4}(z),</Math> , <Math equation-number="15.10.22" mode="display" xml:id="C15.S10.E22">w_{2}(z)=\frac{\Gamma\left(2-c\right)\Gamma\left(c-a-b\right)}{\Gamma\left(1-a \right)\Gamma\left(1-b\right)}w_{3}(z)+\frac{\Gamma\left(2-c\right)\Gamma\left (a+b-c\right)}{\Gamma\left(a-c+1\right)\Gamma\left(b-c+1\right)}w_{4}(z),</Math> , <Math equation-number="15.10.23" mode="display" xml:id="C15.S10.E23">w_{5}(z)=e^{a\pi\mathrm{i}}\frac{\Gamma\left(a-b+1\right)\Gamma\left(c-a-b \right)}{\Gamma\left(1-b\right)\Gamma\left(c-b\right)}w_{3}(z)+e^{(c-b)\pi \mathrm{i}}\frac{\Gamma\left(a-b+1\right)\Gamma\left(a+b-c\right)}{\Gamma\left (a\right)\Gamma\left(a-c+1\right)}w_{4}(z),</Math> , <Math equation-number="15.10.24" mode="display" xml:id="C15.S10.E24">w_{6}(z)=e^{b\pi\mathrm{i}}\frac{\Gamma\left(b-a+1\right)\Gamma\left(c-a-b \right)}{\Gamma\left(1-a\right)\Gamma\left(c-a\right)}w_{3}(z)+e^{(c-a)\pi \mathrm{i}}\frac{\Gamma\left(b-a+1\right)\Gamma\left(a+b-c\right)}{\Gamma\left (b\right)\Gamma\left(b-c+1\right)}w_{4}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="245" xml:id="C15.S10.SS2.p2.s3">
+<Math equation-number="15.10.25" mode="display" xml:id="C15.S10.E25">w_{1}(z)=\frac{\Gamma\left(c\right)\Gamma\left(b-a\right)}{\Gamma\left(b\right )\Gamma\left(c-a\right)}w_{5}(z)+\frac{\Gamma\left(c\right)\Gamma\left(a-b \right)}{\Gamma\left(a\right)\Gamma\left(c-b\right)}w_{6}(z),</Math> , <Math equation-number="15.10.26" mode="display" xml:id="C15.S10.E26">w_{2}(z)=e^{(1-c)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b-a \right)}{\Gamma\left(1-a\right)\Gamma\left(b-c+1\right)}w_{5}(z)+e^{(1-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a-b\right)}{\Gamma\left(1-b \right)\Gamma\left(a-c+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.27" mode="display" xml:id="C15.S10.E27">w_{3}(z)=e^{-a\pi\mathrm{i}}\frac{\Gamma\left(a+b-c+1\right)\Gamma\left(b-a \right)}{\Gamma\left(b\right)\Gamma\left(b-c+1\right)}w_{5}(z)+e^{-b\pi\mathrm {i}}\frac{\Gamma\left(a+b-c+1\right)\Gamma\left(a-b\right)}{\Gamma\left(a \right)\Gamma\left(a-c+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.28" mode="display" xml:id="C15.S10.E28">w_{4}(z)=e^{(b-c)\pi\mathrm{i}}\frac{\Gamma\left(c-a-b+1\right)\Gamma\left(b-a \right)}{\Gamma\left(1-a\right)\Gamma\left(c-a\right)}w_{5}(z)+e^{(a-c)\pi \mathrm{i}}\frac{\Gamma\left(c-a-b+1\right)\Gamma\left(a-b\right)}{\Gamma\left (1-b\right)\Gamma\left(c-b\right)}w_{6}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="246" xml:id="C15.S10.SS2.p2.s4">
+<Math equation-number="15.10.29" mode="display" xml:id="C15.S10.E29">w_{1}(z)=e^{b\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(a-c+1\right)} {\Gamma\left(a+b-c+1\right)\Gamma\left(c-b\right)}w_{3}(z)+e^{(b-c)\pi\mathrm{ i}}\frac{\Gamma\left(c\right)\Gamma\left(a-c+1\right)}{\Gamma\left(b\right) \Gamma\left(a-b+1\right)}w_{5}(z),</Math> , <Math equation-number="15.10.30" mode="display" xml:id="C15.S10.E30">w_{1}(z)=e^{a\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(b-c+1\right)} {\Gamma\left(a+b-c+1\right)\Gamma\left(c-a\right)}w_{3}(z)+e^{(a-c)\pi\mathrm{ i}}\frac{\Gamma\left(c\right)\Gamma\left(b-c+1\right)}{\Gamma\left(a\right) \Gamma\left(b-a+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.31" mode="display" xml:id="C15.S10.E31">w_{2}(z)=e^{(b-c+1)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a \right)}{\Gamma\left(a+b-c+1\right)\Gamma\left(1-b\right)}w_{3}(z)+e^{(b-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a\right)}{\Gamma\left(a-b+1 \right)\Gamma\left(b-c+1\right)}w_{5}(z),</Math> , <Math equation-number="15.10.32" mode="display" xml:id="C15.S10.E32">w_{2}(z)=e^{(a-c+1)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b \right)}{\Gamma\left(a+b-c+1\right)\Gamma\left(1-a\right)}w_{3}(z)+e^{(a-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b\right)}{\Gamma\left(b-a+1 \right)\Gamma\left(a-c+1\right)}w_{6}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="247" xml:id="C15.S10.SS2.p2.s5">
+<Math equation-number="15.10.33" mode="display" xml:id="C15.S10.E33">w_{1}(z)=e^{(c-a)\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(1-b\right )}{\Gamma\left(a\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-a\pi\mathrm{i}} \frac{\Gamma\left(c\right)\Gamma\left(1-b\right)}{\Gamma\left(a-b+1\right) \Gamma\left(c-a\right)}w_{5}(z),</Math> , <Math equation-number="15.10.34" mode="display" xml:id="C15.S10.E34">w_{1}(z)=e^{(c-b)\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(1-a\right )}{\Gamma\left(b\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-b\pi\mathrm{i}} \frac{\Gamma\left(c\right)\Gamma\left(1-a\right)}{\Gamma\left(b-a+1\right) \Gamma\left(c-b\right)}w_{6}(z),</Math> , <Math equation-number="15.10.35" mode="display" xml:id="C15.S10.E35">w_{2}(z)=e^{(1-a)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-b \right)}{\Gamma\left(a-c+1\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-a\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-b\right)}{\Gamma\left(a-b +1\right)\Gamma\left(1-a\right)}w_{5}(z),</Math> , <Math equation-number="15.10.36" mode="display" xml:id="C15.S10.E36">w_{2}(z)=e^{(1-b)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-a \right)}{\Gamma\left(b-c+1\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-b\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-a\right)}{\Gamma\left(b-a +1\right)\Gamma\left(1-b\right)}w_{6}(z)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S11">
+<title>Riemann’s Differential Equation</title>        
+ 
+ 
+<subsection xml:id="C15.S11.SS1">
+<title>Equations with Three Singularities</title>          
+<para xml:id="C15.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C15.S11.SS1.p1.s1">
+The importance of (LABEL:eq:HY.DE.DE) is that any homogeneous linear differential equation of the second order with at most three distinct singularities, all regular, in the extended plane can be transformed into (LABEL:eq:HY.DE.DE).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="249" xml:id="C15.S11.SS1.p1.s2">
+The most general form is given by <Math equation-number="15.11.1" mode="display" xml:id="C15.S11.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{1-a_{1}-a_{2}}{z- \alpha}+\frac{1-b_{1}-b_{2}}{z-\beta}+\frac{1-c_{1}-c_{2}}{z-\gamma}\right) \frac{\mathrm{d}w}{\mathrm{d}z}+{\left(\frac{(\alpha-\beta)(\alpha-\gamma)a_{1 }a_{2}}{z-\alpha}+\frac{(\beta-\alpha)(\beta-\gamma)b_{1}b_{2}}{z-\beta}+\frac {(\gamma-\alpha)(\gamma-\beta)c_{1}c_{2}}{z-\gamma}\right)\frac{w}{(z-\alpha)( z-\beta)(z-\gamma)}=0},</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="250" xml:id="C15.S11.SS1.p2.s1">
+with <Math equation-number="15.11.2" mode="display" xml:id="C15.S11.E2">a_{1}+a_{2}+b_{1}+b_{2}+c_{1}+c_{2}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="251" xml:id="C15.S11.SS1.p2.s2">
+Here <Math mode="inline" xml:id="C15.S11.SS1.p2.m1">\{a_{1},a_{2}\}</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m2">\{b_{1},b_{2}\}</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m3">\{c_{1},c_{2}\}</Math> are the exponent pairs at the points <Math mode="inline" xml:id="C15.S11.SS1.p2.m4">\alpha</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m5">\beta</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m6">\gamma</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="252" xml:id="C15.S11.SS1.p2.s3">
+Cases in which there arefewer than three singularities are included automatically by allowing the choice <Math mode="inline" xml:id="C15.S11.SS1.p2.m7">\{0,1\}</Math> for exponent pairs.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="253" xml:id="C15.S11.SS1.p2.s4">
+Also, if any of <Math mode="inline" xml:id="C15.S11.SS1.p2.m8">\alpha</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m9">\beta</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m10">\gamma</Math> , is at infinity, then we take the corresponding limit in (LABEL:eq:HY.RDE.DE).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="254" xml:id="C15.S11.SS1.p3.s1">
+The complete set of solutions of (LABEL:eq:HY.RDE.DE) is denoted byRiemann’s <Math mode="inline" xml:id="C15.S11.SS1.p3.m1">P</Math> -symbol: <Math equation-number="15.11.3" mode="display" xml:id="C15.S11.E3">w=P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="255" xml:id="C15.S11.SS1.p3.s2">
+In particular, <Math equation-number="15.11.4" mode="display" xml:id="C15.S11.E4">w=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a&amp;z\\ 1-c&amp;c-a-b&amp;b&amp;\end{Bmatrix}</Math> denotes the set of solutions of (LABEL:eq:HY.DE.DE).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S11.SS2">
+<title>Transformation Formulas</title>          
+<para xml:id="C15.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="256" xml:id="C15.S11.SS2.p1.s1">
+A conformal mapping of the extended complex plane onto itself has the form <Math equation-number="15.11.5" mode="display" xml:id="C15.S11.E5">t=\ifrac{(\kappa z+\lambda)}{(\mu z+\nu)},</Math> where <Math mode="inline" xml:id="C15.S11.SS2.p1.m1">\kappa</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m2">\lambda</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m3">\mu</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m4">\nu</Math> are real or complex constants such that <Math mode="inline" xml:id="C15.S11.SS2.p1.m5">\kappa\nu-\lambda\mu=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="257" xml:id="C15.S11.SS2.p1.s2">
+These constants can be chosen to map any two sets of three distinct points <Math mode="inline" xml:id="C15.S11.SS2.p1.m6">\{\alpha,\beta,\gamma\}</Math> and <Math mode="inline" xml:id="C15.S11.SS2.p1.m7">\{\widetilde{\alpha},\widetilde{\beta},\widetilde{\gamma}\}</Math> onto each other.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="258" xml:id="C15.S11.SS2.p1.s3">
+Symbolically: <Math equation-number="15.11.6" mode="display" xml:id="C15.S11.E6">P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=P\begin{Bmatrix}\widetilde{\alpha}&amp;\widetilde{ \beta}&amp;\widetilde{\gamma}&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;t\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="259" xml:id="C15.S11.SS2.p1.s4">
+The reduction of a general homogeneous linear differential equation of thesecond order with at most three regular singularities to the hypergeometric differential equation is given by
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="260" xml:id="C15.S11.SS2.p2.s1">
+ <Math equation-number="15.11.7" mode="display" xml:id="C15.S11.E7">P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=\left(\frac{z-\alpha}{z-\gamma}\right)^{a_{1}} \left(\frac{z-\beta}{z-\gamma}\right)^{b_{1}}P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a_{1}+b_{1}+c_{1}&amp;\dfrac{(z-\alpha)(\beta-\gamma)}{(z-\gamma)(\beta-\alpha )}\\ a_{2}-a_{1}&amp;b_{2}-b_{1}&amp;a_{1}+b_{1}+c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="261" xml:id="C15.S11.SS2.p2.s2">
+We also have <Math equation-number="15.11.8" mode="display" xml:id="C15.S11.E8">z^{\lambda}(1-z)^{\mu}P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ a_{1}+\lambda&amp;b_{1}+\mu&amp;c_{1}-\lambda-\mu&amp;z\\ a_{2}+\lambda&amp;b_{2}+\mu&amp;c_{2}-\lambda-\mu&amp;\end{Bmatrix},</Math> for arbitrary <Math mode="inline" xml:id="C15.S11.SS2.p2.m1">\lambda</Math> and <Math mode="inline" xml:id="C15.S11.SS2.p2.m2">\mu</Math>.
+</sentence>
+
+</para>
+  
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S12">
+<title>Asymptotic Approximations</title>        
+ 
+<subsection xml:id="C15.S12.SS1">
+<title>Large Variable</title>          
+<para xml:id="C15.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C15.S12.SS1.p1.s1">
+For the asymptotic behavior of <Math mode="inline" xml:id="C15.S12.SS1.p1.m1">\mathbf{F}\left(a,b;c;z\right)</Math> as <Math mode="inline" xml:id="C15.S12.SS1.p1.m2">z\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS1.p1.m3">a</Math> , <Math mode="inline" xml:id="C15.S12.SS1.p1.m4">b</Math> , <Math mode="inline" xml:id="C15.S12.SS1.p1.m5">c</Math> fixed, combine (LABEL:eq:HY.GA.new) with (LABEL:eq:HY.LT.2) or (LABEL:eq:HY.LTLC.8).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S12.SS2">
+<title>Large <Math mode="inline" xml:id="C15.S12.SS2.m1">c</Math></title>         
+ 
+<para xml:id="C15.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="263" xml:id="C15.S12.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C15.S12.SS2.p1.m1">\delta</Math> denote an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="264" xml:id="C15.S12.SS2.p1.s2">
+Also let <Math mode="inline" xml:id="C15.S12.SS2.p1.m2">a,b,z</Math> be real or complex and fixed, and at least one of the following conditions be satisfied: <Math mode="inline" xml:id="C15.S12.I1.ix4.p1.m1">a</Math> and/or <Math mode="inline" xml:id="C15.S12.I1.ix4.p1.m2">b\in\{0,-1,-2,\dots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="265" xml:id="C15.S12.SS2.p1.s3">
+<Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m1">\Re z&lt;\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m2">|c+n|\geq\delta</Math> for all <Math mode="inline" xml:id="C15.S12.I1.ix5.p1.m3">n\in\{0,1,2,\dots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="266" xml:id="C15.S12.SS2.p1.s4">
+<Math mode="inline" xml:id="C15.S12.I1.ix6.p1.m1">\Re z=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix6.p1.m2">\left|\operatorname{ph}c\right|\leq\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="267" xml:id="C15.S12.SS2.p1.s5">
+<Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m1">\Re z&gt;\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m2">\alpha_{-}-\tfrac{1}{2}\pi+\delta\leq\operatorname{ph}c\leq\alpha_{+}+\tfrac{1 }{2}\pi-\delta</Math> , where <Math equation-number="15.12.1" mode="display" xml:id="C15.S12.E1">\alpha_{\pm}=\operatorname{arctan}\left(\frac{\operatorname{ph}z-\operatorname {ph}\left(1-z\right)\mp\pi}{\ln|1-z^{-1}|}\right),</Math> with <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m3">z</Math> restricted so that <Math mode="inline" xml:id="C15.S12.I1.ix7.p1.m4">\pm\alpha_{\pm}\in[0,\tfrac{1}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="268" xml:id="C15.S12.SS2.p1.s6">
+Then for fixed <Math mode="inline" xml:id="C15.S12.SS2.p1.m3">m\in\{0,1,2,\dots\}</Math> , <Math equation-number="15.12.2" mode="display" xml:id="C15.S12.E2">F\left(a,b;c;z\right)=\sum_{s=0}^{m-1}\frac{{\left(a\right)_{s}}{\left(b\right )_{s}}}{{\left(c\right)_{s}}s!}z^{s}+O\left(c^{-m}\right), subject to |c|\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C15.S12.SS2.p2.s1">
+Similar results for other sectors are given in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="270" xml:id="C15.S12.SS2.p2.s2">
+For the more general case in which <Math mode="inline" xml:id="C15.S12.SS2.p2.m1">a^{2}=o\left(c\right)</Math> and <Math mode="inline" xml:id="C15.S12.SS2.p2.m2">b^{2}=o\left(c\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="271" xml:id="C15.S12.SS2.p3.s1">
+For large <Math mode="inline" xml:id="C15.S12.SS2.p3.m1">b</Math> and <Math mode="inline" xml:id="C15.S12.SS2.p3.m2">c</Math> with <Math mode="inline" xml:id="C15.S12.SS2.p3.m3">c&gt;b+1</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S12.SS3">
+<title>Other Large Parameters</title>        
+ 
+<para xml:id="C15.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="272" xml:id="C15.S12.SS3.p1.s1">
+Again, throughout this subsection <Math mode="inline" xml:id="C15.S12.SS3.p1.m1">\delta</Math> denotes an arbitrary small positive constant, and <Math mode="inline" xml:id="C15.S12.SS3.p1.m2">a,b,c,z</Math> are real or complex and fixed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="273" xml:id="C15.S12.SS3.p2.s1">
+As <Math mode="inline" xml:id="C15.S12.SS3.p2.m1">\lambda\to\infty</Math> , <Math equation-number="15.12.3" mode="display" xml:id="C15.S12.E3">F\left({a,b\atop c+\lambda};z\right)\sim\frac{\Gamma\left(c+\lambda\right)}{ \Gamma\left(c-b+\lambda\right)}\sum_{s=0}^{\infty}q_{s}(z){\left(b\right)_{s}} \lambda^{-s-b},</Math> where <Math mode="inline" xml:id="C15.S12.SS3.p2.m3">q_{0}(z)=1</Math> and <Math mode="inline" xml:id="C15.S12.SS3.p2.m4">q_{s}(z)</Math> , <Math mode="inline" xml:id="C15.S12.SS3.p2.m5">s=1,2,\dots</Math> , are defined by the generating function <Math equation-number="15.12.4" mode="display" xml:id="C15.S12.E4">\left(\frac{e^{t}-1}{t}\right)^{b-1}e^{t(1-c)}\left(1-z+ze^{-t}\right)^{-a}= \sum_{s=0}^{\infty}q_{s}(z)t^{s}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="274" xml:id="C15.S12.SS3.p2.s2">
+If <Math mode="inline" xml:id="C15.S12.SS3.p2.m6">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , then (LABEL:eq:HY.AS.2) applies when <Math mode="inline" xml:id="C15.S12.SS3.p2.m7">|\operatorname{ph}\lambda|\leq\tfrac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="275" xml:id="C15.S12.SS3.p2.s3">
+If <Math mode="inline" xml:id="C15.S12.SS3.p2.m8">\Re z\leq\tfrac{1}{2}</Math> , then (LABEL:eq:HY.AS.2) applies when <Math mode="inline" xml:id="C15.S12.SS3.p2.m9">|\operatorname{ph}\lambda|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="276" xml:id="C15.S12.SS3.p3.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p3.m1">|\operatorname{ph}\left(z-1\right)|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p3.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p3.m3">|\operatorname{ph}\lambda|\leq\pi-\delta</Math> ,
+</sentence>
+
+</para>
+   
+<para xml:id="C15.S12.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="277" xml:id="C15.S12.SS3.p4.s1">
+ <Math equation-number="15.12.5" mode="display" xml:id="C15.S12.E5">\mathbf{F}\left({a+\lambda,b-\lambda\atop c};\tfrac{1}{2}-\tfrac{1}{2}z\right) =2^{(a+b-1)/2}\frac{(z+1)^{(c-a-b-1)/2}}{(z-1)^{c/2}}\sqrt{\zeta\sinh\zeta} \left(\lambda+\tfrac{1}{2}a-\tfrac{1}{2}b\right)^{1-c}\left(I_{c-1}\left(( \lambda+\tfrac{1}{2}a-\tfrac{1}{2}b)\zeta\right)(1+O(\lambda^{-2}))+\frac{I_{c -2}\left((\lambda+\tfrac{1}{2}a-\tfrac{1}{2}b)\zeta\right)}{2\lambda+a-b}\left (\left(c-\tfrac{1}{2}\right)\left(c-\tfrac{3}{2}\right)\left(\frac{1}{\zeta}- \coth\zeta\right)+\tfrac{1}{2}(2c-a-b-1)(a+b-1)\tanh\left(\tfrac{1}{2}\zeta \right)+O(\lambda^{-2})\right)\right),</Math> where <Math equation-number="15.12.6" mode="display" xml:id="C15.S12.E6">\zeta=\operatorname{arccosh}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="278" xml:id="C15.S12.SS3.p4.s2">
+For <Math mode="inline" xml:id="C15.S12.SS3.p4.m1">I_{\nu}\left(z\right)</Math> see §LABEL:sec:BS.MDEF.SS. For this result and an extension to an asymptotic expansion with error bounds see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="279" xml:id="C15.S12.SS3.p5.s1">
+See also ( ) where the asymptotics of Jacobi polynomials is described; compare (LABEL:eq:HY.OP.JA).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="280" xml:id="C15.S12.SS3.p6.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p6.m1">|\operatorname{ph}z|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p6.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p6.m3">|\operatorname{ph}\lambda|\leq\pi-\delta</Math> , <Math equation-number="15.12.7" mode="display" xml:id="C15.S12.E7">F\left({a,b-\lambda\atop c+\lambda};-z\right)=2^{b-c+(1/2)}\left(\frac{z+1}{2 \sqrt{z}}\right)^{\lambda}\left(\lambda^{a/2}U\left(a-\tfrac{1}{2},-\alpha \sqrt{\lambda}\right)\left((1+z)^{c-a-b}z^{1-c}\left(\frac{\alpha}{z-1}\right) ^{1-a}+O(\lambda^{-1})\right)+\frac{\lambda^{\ifrac{(a-1)}{2}}}{\alpha}U\left( a-\tfrac{3}{2},-\alpha\sqrt{\lambda}\right)\left((1+z)^{c-a-b}z^{1-c}\left( \frac{\alpha}{z-1}\right)^{1-a}-2^{c-b-(\ifrac{1}{2})}\left(\frac{\alpha}{z-1} \right)^{a}+O(\lambda^{-1})\right)\right),</Math> where <Math equation-number="15.12.8" mode="display" xml:id="C15.S12.E8">\alpha=\left(-2\ln\left(1-\left(\frac{z-1}{z+1}\right)^{2}\right)\right)^{1/2},</Math> with the branch chosen to be continuous and <Math mode="inline" xml:id="C15.S12.SS3.p6.m7">\Re\alpha&gt;0</Math> when <Math mode="inline" xml:id="C15.S12.SS3.p6.m8">\Re(\ifrac{(z-1)}{(z+1)})&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="281" xml:id="C15.S12.SS3.p6.s2">
+For <Math mode="inline" xml:id="C15.S12.SS3.p6.m9">U\left(a,z\right)</Math> see §LABEL:sec:PC.DE, and for an extension to an asymptotic expansion see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="282" xml:id="C15.S12.SS3.p7.s1">
+If <Math mode="inline" xml:id="C15.S12.SS3.p7.m1">|\operatorname{ph}z|&lt;\pi</Math> , then as <Math mode="inline" xml:id="C15.S12.SS3.p7.m2">\lambda\to\infty</Math> with <Math mode="inline" xml:id="C15.S12.SS3.p7.m3">|\operatorname{ph}\lambda|\leq\tfrac{1}{2}\pi-\delta</Math> , <Math equation-number="15.12.9" mode="display" xml:id="C15.S12.E9">(z+1)^{3\lambda/2}(2\lambda)^{c-1}\mathbf{F}\left({a+\lambda,b+2\lambda\atop c };-z\right)={\lambda^{-1/3}\left(e^{\pi\mathrm{i}(a-c+\lambda+(1/3))}\mathrm{ Ai}\left(e^{-\ifrac{2\pi\mathrm{i}}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)+ e^{\pi\mathrm{i}(c-a-\lambda-(1/3))}\mathrm{Ai}\left(e^{\ifrac{2\pi\mathrm{i}} {3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)\right)\left(a_{0}(\zeta)+O(\lambda^ {-1})\right)}+\lambda^{-2/3}\left(e^{\pi\mathrm{i}(a-c+\lambda+(2/3))}\mathrm{ Ai}'\left(e^{-\ifrac{2\pi\mathrm{i}}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right) +e^{\pi\mathrm{i}(c-a-\lambda-(2/3))}\mathrm{Ai}'\left(e^{\ifrac{2\pi\mathrm{i }}{3}}\lambda^{\ifrac{2}{3}}\beta^{2}\right)\right)\left(a_{1}(\zeta)+O( \lambda^{-1})\right),</Math> where <Math equation-number="15.12.10" mode="display" xml:id="C15.S12.E10">\zeta=\operatorname{arccosh}\left(\tfrac{1}{4}z-1\right),</Math> , <Math equation-number="15.12.11" mode="display" xml:id="C15.S12.E11">\beta=\left(-\frac{3}{2}\zeta+\frac{9}{4}\ln\left(\frac{2+e^{\zeta}}{2+e^{- \zeta}}\right)\right)^{1/3},</Math> with the branch chosen to be continuous and <Math mode="inline" xml:id="C15.S12.SS3.p7.m6">\beta&gt;0</Math> when <Math mode="inline" xml:id="C15.S12.SS3.p7.m7">\zeta&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="283" xml:id="C15.S12.SS3.p7.s2">
+Also, <Math equation-number="15.12.12" mode="display" xml:id="C15.S12.E12">a_{0}(\zeta)=\tfrac{1}{2}G_{0}(\beta)+\tfrac{1}{2}G_{0}(-\beta), a_{1}(\zeta)=\left(\tfrac{1}{2}G_{0}(\beta)-\tfrac{1}{2}G_{0}(-\beta)\right)/\beta,</Math> where <Math equation-number="15.12.13" mode="display" xml:id="C15.S12.E13">G_{0}(\pm\beta)=\left(2+e^{\pm\zeta}\right)^{c-b-(\ifrac{1}{2})}\left(1+e^{\pm \zeta}\right)^{a-c+(\ifrac{1}{2})}\left(z-1-e^{\pm\zeta}\right)^{-a+(\ifrac{1} {2})}\sqrt{\frac{\beta}{e^{\zeta}-e^{-\zeta}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="284" xml:id="C15.S12.SS3.p7.s3">
+For <Math mode="inline" xml:id="C15.S12.SS3.p7.m8">\mathrm{Ai}\left(z\right)</Math> see §LABEL:sec:AI.DE, and for further information and an extension to an asymptotic expansion see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="285" xml:id="C15.S12.SS3.p7.s4">
+(Two errors in this reference are corrected in (LABEL:eq:HY.AS.5).)
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S12.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="286" xml:id="C15.S12.SS3.p8.s1">
+By combination of the foregoing results of this subsection with the linear transformations of §LABEL:sec:HY.TF.LT and the connection formulas of §LABEL:sec:HY.DE.KU, similar asymptotic approximations for <Math mode="inline" xml:id="C15.S12.SS3.p8.m1">F\left(a+e_{1}\lambda,b+e_{2}\lambda;c+e_{3}\lambda;z\right)</Math> can be obtained with <Math mode="inline" xml:id="C15.S12.SS3.p8.m2">e_{j}=\pm 1</Math> or <Math mode="inline" xml:id="C15.S12.SS3.p8.m3">0</Math> , <Math mode="inline" xml:id="C15.S12.SS3.p8.m4">j=1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="287" xml:id="C15.S12.SS3.p8.s2">
+For more details see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="288" xml:id="C15.S12.SS3.p8.s3">
+For other extensions, see ( ) , ( ) and ( , Chapters 12 and 28) .
+</sentence>
+
+</para>
+      
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S13">
+<title>Zeros</title>          
+<para xml:id="C15.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="289" xml:id="C15.S13.p1.s1">
+Let <Math mode="inline" xml:id="C15.S13.p1.m1">N(a,b,c)</Math> denote the number of zeros of <Math mode="inline" xml:id="C15.S13.p1.m2">F\left(a,b;c;z\right)</Math> in the sector <Math mode="inline" xml:id="C15.S13.p1.m3">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="290" xml:id="C15.S13.p1.s2">
+If <Math mode="inline" xml:id="C15.S13.p1.m4">a</Math> , <Math mode="inline" xml:id="C15.S13.p1.m5">b</Math> , <Math mode="inline" xml:id="C15.S13.p1.m6">c</Math> are real, <Math mode="inline" xml:id="C15.S13.p1.m7">a</Math> , <Math mode="inline" xml:id="C15.S13.p1.m8">b</Math> , <Math mode="inline" xml:id="C15.S13.p1.m9">c</Math> , <Math mode="inline" xml:id="C15.S13.p1.m10">c-a</Math> , <Math mode="inline" xml:id="C15.S13.p1.m11">c-b\neq 0,-1,-2,\dots</Math> , and, without loss of generality, <Math mode="inline" xml:id="C15.S13.p1.m12">b\geq a</Math> , <Math mode="inline" xml:id="C15.S13.p1.m13">c\geq a+b</Math> (compare (LABEL:eq:HY.LT.1)), then <Math equation-number="15.13.1" mode="display" xml:id="C15.S13.E1">N(a,b,c)=\begin{cases}0,&amp;a&gt;0,\\ \left\lfloor-a\right\rfloor+\tfrac{1}{2}(1+S),&amp;a&lt;0,c-a&gt;0,\\ \left\lfloor-a\right\rfloor+\tfrac{1}{2}(1+S)+\left\lfloor a-c+1\right\rfloor S ,&amp;a&lt;0,c-a&lt;0,\\ \end{cases}</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="291" xml:id="C15.S13.p2.s1">
+where <Math mode="inline" xml:id="C15.S13.p2.m1">S=\operatorname{sign}\left(\Gamma\left(a\right)\Gamma\left(b\right)\Gamma\left (c-a\right)\Gamma\left(c-b\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="292" xml:id="C15.S13.p3.s1">
+If <Math mode="inline" xml:id="C15.S13.p3.m1">a</Math> , <Math mode="inline" xml:id="C15.S13.p3.m2">b</Math> , <Math mode="inline" xml:id="C15.S13.p3.m3">c</Math> , <Math mode="inline" xml:id="C15.S13.p3.m4">c-a</Math> , or <Math mode="inline" xml:id="C15.S13.p3.m5">c-b\in\{0,-1,-2,\dots\}</Math> , then <Math mode="inline" xml:id="C15.S13.p3.m6">F\left(a,b;c;z\right)</Math> is not defined, or reduces to a polynomial, or reduces to <Math mode="inline" xml:id="C15.S13.p3.m7">(1-z)^{c-a-b}</Math> times a polynomial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S13.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="293" xml:id="C15.S13.p4.s1">
+For further information on the location of real zeros see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="294" xml:id="C15.S13.p4.s2">
+A small table of zeros is given in ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C15.S14">
+<title>Integrals</title>            
+<para xml:id="C15.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="295" xml:id="C15.S14.p1.s1">
+The Mellin transform of the hypergeometric function of negative argument is given by <Math equation-number="15.14.1" mode="display" xml:id="C15.S14.E1">\int_{0}^{\infty}x^{s-1}\mathbf{F}\left({a,b\atop c};-x\right)\mathrm{d}x= \frac{\Gamma\left(s\right)\Gamma\left(a-s\right)\Gamma\left(b-s\right)}{\Gamma \left(a\right)\Gamma\left(b\right)\Gamma\left(c-s\right)}, subject to \min(\Re a,\Re b)&gt;\Re s&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="296" xml:id="C15.S14.p2.s1">
+Integrals of the form <Math mode="inline" xml:id="C15.S14.p2.m1">\int x^{\alpha}(x+t)^{\beta}F\left(a,b;c;x\right)\mathrm{d}x</Math> and more complicated forms are given in ( , pp. 370–387) , ( , §§1.15 and 2.21) , ( , §7.5) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S14.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="297" xml:id="C15.S14.p3.s1">
+Fourier transforms of hypergeometric functions are given in ( , §§1.14 and 2.14) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="298" xml:id="C15.S14.p3.s2">
+Laplace transforms of hypergeometric functions are given in ( , §4.21) , ( , §1.19) , and ( , §3.37) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="299" xml:id="C15.S14.p3.s3">
+Inverse Laplace transforms of hypergeometric functions are given in ( , §5.19) , ( , §2.18) , and ( , §3.35) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="300" xml:id="C15.S14.p3.s4">
+Mellin transforms of hypergeometric functions are given in ( , §6.9) , ( , §1.15) , and ( , pp. 288–299) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="301" xml:id="C15.S14.p3.s5">
+Inverse Mellin transforms are given in ( , §7.5) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="302" xml:id="C15.S14.p3.s6">
+Hankel transforms of hypergeometric functions are given in ( , §1.17) and ( , §8.17) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S14.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="303" xml:id="C15.S14.p4.s1">
+For other integral transforms see ( ) , ( , §4.3.43), and also §LABEL:sec:HY.OT.JF.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C15.S15">
+<title>Sums</title>          
+<para xml:id="C15.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="304" xml:id="C15.S15.p1.s1">
+ <Math equation-number="15.15.1" mode="display" xml:id="C15.S15.E1">\mathbf{F}\left({a,b\atop c};\frac{1}{z}\right)=\left(1-\frac{z_{0}}{z}\right) ^{-a}\sum_{s=0}^{\infty}\frac{(a)_{s}}{s!}\*\mathbf{F}\left({-s,b\atop c}; \frac{1}{z_{0}}\right)\left(1-\frac{z}{z_{0}}\right)^{-s}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="305" xml:id="C15.S15.p1.s2">
+Here <Math mode="inline" xml:id="C15.S15.p1.m1">z_{0}</Math> ( <Math mode="inline" xml:id="C15.S15.p1.m2">{\neq 0}</Math> ) is an arbitrary complex constant and the expansion converges when <Math mode="inline" xml:id="C15.S15.p1.m3">|z-z_{0}|&gt;\max(|z_{0}|,|z_{0}-1|)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="306" xml:id="C15.S15.p1.s3">
+For further information see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="307" xml:id="C15.S15.p2.s1">
+For compendia of finite sums and infinite series involving hypergeometric functions see ( , §§5.3 and 6.7) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C15.S16">
+<title>Products</title>          
+<para xml:id="C15.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="308" xml:id="C15.S16.p1.s1">
+ <Math equation-number="15.16.1" mode="display" xml:id="C15.S16.E1">F\left({a,b\atop c-\frac{1}{2}};z\right)F\left({c-a,c-b\atop c+\frac{1}{2}};z \right)=\sum_{s=0}^{\infty}\frac{{\left(c\right)_{s}}}{{\left(c+\frac{1}{2} \right)_{s}}}A_{s}z^{s}, subject to |z|&lt;1,</Math> where <Math mode="inline" xml:id="C15.S16.p1.m1">A_{0}=1</Math> and <Math mode="inline" xml:id="C15.S16.p1.m2">A_{s}</Math> , <Math mode="inline" xml:id="C15.S16.p1.m3">s=1,2,\dots</Math> , are defined by the generating function <Math equation-number="15.16.2" mode="display" xml:id="C15.S16.E2">(1-z)^{a+b-c}F\left(2a,2b;2c-1;z\right)=\sum_{s=0}^{\infty}A_{s}z^{s}, subject to |z|&lt;1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="309" xml:id="C15.S16.p2.s1">
+Also, <Math equation-number="15.16.3" mode="display" xml:id="C15.S16.E3">F\left({a,b\atop c};z\right)F\left({a,b\atop c};\zeta\right)=\sum_{s=0}^{ \infty}\frac{{\left(a\right)_{s}}{\left(b\right)_{s}}{\left(c-a\right)_{s}}{ \left(c-b\right)_{s}}}{{\left(c\right)_{s}}{\left(c\right)_{2s}}s!}\left(z \zeta\right)^{s}F\left({a+s,b+s\atop c+2s};z+\zeta-z\zeta\right), subject to |z|&lt;1, |\zeta|&lt;1, |z+\zeta-z\zeta|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="310" xml:id="C15.S16.p2.s2">
+<Math equation-number="15.16.4" mode="display" xml:id="C15.S16.E4">F\left({a,b\atop c};z\right)F\left({-a,-b\atop-c};z\right)+\frac{ab(a-c)(b-c)} {c^{2}(1-c^{2})}z^{2}F\left({1+a,1+b\atop 2+c};z\right)F\left({1-a,1-b\atop 2- c};z\right)=1</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S16.Px1">
+<title>Generalized Legendre’s Relation</title>    
+<para xml:id="C15.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="311" xml:id="C15.S16.Px1.p1.s1">
+ <Math equation-number="15.16.5" mode="display" xml:id="C15.S16.E5">F\left({\frac{1}{2}+\lambda,-\frac{1}{2}-\nu\atop 1+\lambda+\mu};z\right)F \left({\frac{1}{2}-\lambda,\frac{1}{2}+\nu\atop 1+\nu+\mu};1-z\right)+F\left({ \frac{1}{2}+\lambda,\frac{1}{2}-\nu\atop 1+\lambda+\mu};z\right)F\left({-\frac {1}{2}-\lambda,\frac{1}{2}+\nu\atop 1+\nu+\mu};1-z\right)-F\left({\frac{1}{2}+ \lambda,\frac{1}{2}-\nu\atop 1+\lambda+\mu};z\right)F\left({\frac{1}{2}- \lambda,\frac{1}{2}+\nu\atop 1+\nu+\mu};1-z\right)=\frac{\Gamma\left(1+\lambda +\mu\right)\Gamma\left(1+\nu+\mu\right)}{\Gamma\left(\lambda+\mu+\nu+\frac{3}{ 2}\right)\Gamma\left(\frac{1}{2}+\nu\right)}, subject to |\operatorname{ph}z|&lt;\pi, |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S16.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="312" xml:id="C15.S16.Px1.p2.s1">
+For further results of this kind, and also series of products of hypergeometric functions, see ( , §2.5.2) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+<section xml:id="C15.S17">
+<title>Mathematical Applications</title>          
+<subsection xml:id="C15.S17.SS1">
+<title>Differential Equations</title>         
+<para xml:id="C15.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="313" xml:id="C15.S17.SS1.p1.s1">
+This topic is treated in §§LABEL:sec:HY.DE and LABEL:sec:HY.RDE.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="314" xml:id="C15.S17.SS1.p2.s1">
+The logarithmic derivatives of some hypergeometric functions for which quadratic transformations exist (§LABEL:sec:HY.TF.QT) are solutions of Painlevé equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="315" xml:id="C15.S17.SS1.p2.s2">
+See §LABEL:sec:PT.SF.P6.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S17.SS2">
+<title>Conformal Mappings</title>        
+     
+<para xml:id="C15.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="316" xml:id="C15.S17.SS2.p1.s1">
+The quotient of two solutions of (LABEL:eq:HY.DE.DE) maps the closed upper half-plane <Math mode="inline" xml:id="C15.S17.SS2.p1.m1">\Im z\geq 0</Math> conformally onto a curvilinear triangle.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="317" xml:id="C15.S17.SS2.p1.s2">
+See ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="318" xml:id="C15.S17.SS2.p1.s3">
+Hypergeometric functions, especially complete elliptic integrals, also play an important role in quasiconformal mapping.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="319" xml:id="C15.S17.SS2.p1.s4">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S17.SS3">
+<title>Group Representations</title>           
+<para xml:id="C15.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="320" xml:id="C15.S17.SS3.p1.s1">
+For harmonic analysis it is more natural to represent hypergeometric functionsas a Jacobi function (§LABEL:sec:HY.OT.JF).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="321" xml:id="C15.S17.SS3.p1.s2">
+For special values of <Math mode="inline" xml:id="C15.S17.SS3.p1.m1">\alpha</Math> and <Math mode="inline" xml:id="C15.S17.SS3.p1.m2">\beta</Math> there are many group-theoretic interpretations.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="322" xml:id="C15.S17.SS3.p1.s3">
+First, as spherical functions on noncompact Riemannian symmetric spaces of rank one, but also as associated spherical functions, intertwining functions, matrix elements of SL <Math mode="inline" xml:id="C15.S17.SS3.p1.m3">(2,\mathbb{R})</Math> , and spherical functions on certain nonsymmetric Gelfand pairs.Harmonic analysis can be developed for the Jacobi transform either as a generalization of the Fourier-cosine transform (§LABEL:sec:AL.IT.fc) or as a specialization of a group Fourier transform.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="323" xml:id="C15.S17.SS3.p1.s4">
+For further information see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S17.SS4">
+<title>Combinatorics</title>          
+<para xml:id="C15.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="324" xml:id="C15.S17.SS4.p1.s1">
+In combinatorics, hypergeometric identities classify single sums of products of binomial coefficients.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="325" xml:id="C15.S17.SS4.p1.s2">
+See ( , §2.3) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S17.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="326" xml:id="C15.S17.SS4.p2.s1">
+Quadratic transformations give insight into the relation of elliptic integrals to the arithmetic-geometric mean (§LABEL:sec:EL.QT.GM).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="327" xml:id="C15.S17.SS4.p2.s2">
+See ( , §3.2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S17.SS5">
+<title>Monodromy Groups</title>          
+ 
+<para xml:id="C15.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="328" xml:id="C15.S17.SS5.p1.s1">
+The three singular points in Riemann’s differential equation (LABEL:eq:HY.RDE.DE) lead to an interesting Riemann sheet structure.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="329" xml:id="C15.S17.SS5.p1.s2">
+By considering, as a group, all analytic transformations of a basis of solutions under analytic continuation around all paths on the Riemann sheet, we obtain the monodromy group.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="330" xml:id="C15.S17.SS5.p1.s3">
+These monodromy groups are finite iff the solutions of Riemann’s differential equation are all algebraic.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="331" xml:id="C15.S17.SS5.p1.s4">
+For a survey of this topic see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S18">
+<title>Physical Applications</title>          
+<para xml:id="C15.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="332" xml:id="C15.S18.p1.s1">
+The hypergeometric function has allowed the development of “solvable” models for one-dimensional quantum scattering through and over barriers ( ( ) , ( ) ), and generalized to include position-dependent effective masses ( ( ) ).
+</sentence>
+
+</para>
+      
+  
+<para xml:id="C15.S18.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="333" xml:id="C15.S18.p2.s1">
+More varied applications include photon scattering from atoms ( ( ) ), energy distributions of particles in plasmas ( ( ) ), conformal field theory of critical phenomena ( ( ) ), quantum chromo-dynamics ( ( ) ), and general parametrization of the effective potentials of interaction between atoms in diatomic molecules ( ( ) ).
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C15.S19">
+<title>Methods of Computation</title>          
+<subsection xml:id="C15.S19.SS1">
+<title>Maclaurin Expansions</title>         
+<para xml:id="C15.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="334" xml:id="C15.S19.SS1.p1.s1">
+The Gauss series (LABEL:eq:HY.GS.GS) converges for <Math mode="inline" xml:id="C15.S19.SS1.p1.m1">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="335" xml:id="C15.S19.SS1.p1.s2">
+For <Math mode="inline" xml:id="C15.S19.SS1.p1.m2">z\in\mathbb{R}</Math> it is always possible to apply one of the linear transformations in §LABEL:sec:HY.TF.LT in such a way that the hypergeometric function is expressed in terms of hypergeometric functions with an argument in the interval <Math mode="inline" xml:id="C15.S19.SS1.p1.m3">[0,\frac{1}{2}]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="336" xml:id="C15.S19.SS1.p2.s1">
+For <Math mode="inline" xml:id="C15.S19.SS1.p2.m1">z\in\mathbb{C}</Math> it is possible to use the linear transformations in such a way that the new arguments lie within the unit circle, except when <Math mode="inline" xml:id="C15.S19.SS1.p2.m2">z=e^{\pm\pi\mathrm{i}/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="337" xml:id="C15.S19.SS1.p2.s2">
+This is because the linear transformations map the pair <Math mode="inline" xml:id="C15.S19.SS1.p2.m4">\{e^{\pi\mathrm{i}/3},e^{-\pi\mathrm{i}/3}\}</Math> onto itself.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="338" xml:id="C15.S19.SS1.p2.s3">
+However, by appropriate choice of the constant <Math mode="inline" xml:id="C15.S19.SS1.p2.m5">z_{0}</Math> in (LABEL:eq:HY.Sums.1)we can obtain an infinite series that converges on a disk containing <Math mode="inline" xml:id="C15.S19.SS1.p2.m6">z=e^{\pm\pi\mathrm{i}/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="339" xml:id="C15.S19.SS1.p2.s4">
+Moreover, it is also possible to accelerate convergence by appropriate choice of <Math mode="inline" xml:id="C15.S19.SS1.p2.m7">z_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="340" xml:id="C15.S19.SS1.p3.s1">
+Large values of <Math mode="inline" xml:id="C15.S19.SS1.p3.m1">|a|</Math> or <Math mode="inline" xml:id="C15.S19.SS1.p3.m2">|b|</Math> , for example, delay convergence of the Gauss series, and may also lead to severe cancellation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="341" xml:id="C15.S19.SS1.p4.s1">
+For fast computation of <Math mode="inline" xml:id="C15.S19.SS1.p4.m1">F\left(a,b;c;z\right)</Math> with <Math mode="inline" xml:id="C15.S19.SS1.p4.m2">a,b</Math> and <Math mode="inline" xml:id="C15.S19.SS1.p4.m3">c</Math> complex, and with application to Pöschl–Teller-Ginocchio potential wave functions, see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="342" xml:id="C15.S19.SS1.p5.s1">
+For further information see ( ) , ( ) , ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS2">
+<title>Differential Equation</title>         
+<para xml:id="C15.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="343" xml:id="C15.S19.SS2.p1.s1">
+A comprehensive and powerful approach is to integrate the hypergeometric differential equation (LABEL:eq:HY.DE.DE) by direct numerical methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="344" xml:id="C15.S19.SS2.p1.s2">
+As noted in §LABEL:sec:NM.ODE.IVP, the integration path should be chosen so that the wanted solution grows in magnitude at least as fast as all other solutions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="345" xml:id="C15.S19.SS2.p1.s3">
+However, since the growth near the singularities of the differential equation is algebraic rather than exponential, the resulting instabilities in the numerical integration might be tolerable in some cases.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS3">
+<title>Integral Representations</title>         
+<para xml:id="C15.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="346" xml:id="C15.S19.SS3.p1.s1">
+The representation (LABEL:eq:HY.IR.1) can be used to compute the hypergeometric function in the sector <Math mode="inline" xml:id="C15.S19.SS3.p1.m1">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="347" xml:id="C15.S19.SS3.p1.s2">
+Gauss quadrature approximations are discussed in ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS4">
+<title>Recurrence Relations</title>        
+ 
+<para xml:id="C15.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="348" xml:id="C15.S19.SS4.p1.s1">
+The relations in §LABEL:sec:HY.DC.CR can be used to compute <Math mode="inline" xml:id="C15.S19.SS4.p1.m1">F\left(a,b;c;z\right)</Math> , provided that care is taken to apply these relations in a stable manner; see §LABEL:sec:NM.LDE.HE. Initial values for moderate values of <Math mode="inline" xml:id="C15.S19.SS4.p1.m2">|a|</Math> and <Math mode="inline" xml:id="C15.S19.SS4.p1.m3">|b|</Math> can be obtained by the methods of §LABEL:sec:HY.CO.MC, and for large values of <Math mode="inline" xml:id="C15.S19.SS4.p1.m4">|a|</Math> , <Math mode="inline" xml:id="C15.S19.SS4.p1.m5">|b|</Math> , or <Math mode="inline" xml:id="C15.S19.SS4.p1.m6">|c|</Math> via the asymptotic expansions of §§LABEL:sec:HY.AS.LC and LABEL:sec:HY.AS.LP.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S19.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="349" xml:id="C15.S19.SS4.p2.s1">
+For example, in the half-plane <Math mode="inline" xml:id="C15.S19.SS4.p2.m1">\Re z\leq\frac{1}{2}</Math> we can use (LABEL:eq:HY.AS.1) or (LABEL:eq:HY.AS.2) to compute <Math mode="inline" xml:id="C15.S19.SS4.p2.m2">F\left(a,b;c+N+1;z\right)</Math> and <Math mode="inline" xml:id="C15.S19.SS4.p2.m3">F\left(a,b;c+N;z\right)</Math> , where <Math mode="inline" xml:id="C15.S19.SS4.p2.m4">N</Math> is a large positive integer, and then apply (LABEL:eq:HY.DC.13) in the backward direction.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="350" xml:id="C15.S19.SS4.p2.s2">
+When <Math mode="inline" xml:id="C15.S19.SS4.p2.m5">\Re z&gt;\frac{1}{2}</Math> it is better to begin with one of the linear transformations (LABEL:eq:HY.LT.4), (LABEL:eq:HY.LTLC.7),or (LABEL:eq:HY.LTLC.8).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="351" xml:id="C15.S19.SS4.p2.s3">
+For further information see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S19.SS5">
+<title>Continued Fractions</title>        
+ 
+<para xml:id="C15.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="352" xml:id="C15.S19.SS5.p1.s1">
+In ( ) an algorithm is described that uses expansions in continued fractions for high-precision computation of the Gauss hypergeometric function, when the variable and parameters are real and one of the numerator parameters is a positive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="353" xml:id="C15.S19.SS5.p1.s2">
+The accuracy is controlled and validated by a running error analysis coupled with interval arithmetic.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C15.S20">
+<title>Software</title>         
+<para xml:id="C15.S20.p1">
+
+</para>
+ 
+<subsection xml:id="C15.S20.SS1">
+<title>Introduction</title>         
+<para xml:id="C15.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="354" xml:id="C15.S20.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="355" xml:id="C15.S20.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="356" xml:id="C15.S20.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="357" xml:id="C15.S20.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S20.SS2">
+<title>Real Parameters and Argument</title>         
+<para xml:id="C15.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="358" xml:id="C15.S20.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="359" xml:id="C15.S20.SS2.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S20.SS3">
+<title>Complex Parameters and Argument</title>         
+<para xml:id="C15.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="360" xml:id="C15.S20.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="361" xml:id="C15.S20.SS3.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="362" xml:id="C15.S20.SS3.p1.s3">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S20.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="363" xml:id="C15.S20.SS3.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

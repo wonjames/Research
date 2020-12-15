@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S21">
+<title>Generalized Sine and Cosine Integrals</title>           
+ 
+<subsection xml:id="C8.S21.SS1">
+<title>Definitions: General Values</title>          
+<para xml:id="C8.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S21.SS1.p1.s1">
+With <Math mode="inline" xml:id="C8.S21.SS1.p1.m1">\gamma</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m2">\Gamma</Math> denoting here the general values of the incomplete gamma functions (§8.2(i)), we define <Math equation-number="8.21.1" mode="display" xml:id="C8.S21.E1">\mathrm{ci}\left(a,z\right)\pm i\mathrm{si}\left(a,z\right)=e^{\pm\frac{1}{2} \pi ia}\Gamma\left(a,ze^{\mp\frac{1}{2}\pi i}\right),</Math> , <Math equation-number="8.21.2" mode="display" xml:id="C8.S21.E2">\mathrm{Ci}\left(a,z\right)\pm i\mathrm{Si}\left(a,z\right)=e^{\pm\frac{1}{2} \pi ia}\gamma\left(a,ze^{\mp\frac{1}{2}\pi i}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S21.SS1.p1.s2">
+From §§8.2(i) and 8.2(ii) it follows that each of the four functions <Math mode="inline" xml:id="C8.S21.SS1.p1.m3">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS1.p1.m4">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS1.p1.m5">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS1.p1.m6">\mathrm{Ci}\left(a,z\right)</Math> is a multivalued function of <Math mode="inline" xml:id="C8.S21.SS1.p1.m7">z</Math> with branch point at <Math mode="inline" xml:id="C8.S21.SS1.p1.m8">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S21.SS1.p1.s3">
+Furthermore, <Math mode="inline" xml:id="C8.S21.SS1.p1.m9">\mathrm{si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m10">\mathrm{ci}\left(a,z\right)</Math> are entire functions of <Math mode="inline" xml:id="C8.S21.SS1.p1.m11">a</Math> , and <Math mode="inline" xml:id="C8.S21.SS1.p1.m12">\mathrm{Si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m13">\mathrm{Ci}\left(a,z\right)</Math> are meromorphic functions of <Math mode="inline" xml:id="C8.S21.SS1.p1.m14">a</Math> with simple poles at <Math mode="inline" xml:id="C8.S21.SS1.p1.m15">a=-1,-3,-5,\dots</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m16">a=0,-2,-4,\dots</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS2">
+<title>Definitions: Principal Values</title>          
+<para xml:id="C8.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C8.S21.SS2.p1.s1">
+When <Math mode="inline" xml:id="C8.S21.SS2.p1.m1">\operatorname{ph}z=0</Math> (and when <Math mode="inline" xml:id="C8.S21.SS2.p1.m2">a\neq-1,-3,-5,\dots</Math> , in the case of <Math mode="inline" xml:id="C8.S21.SS2.p1.m3">\mathrm{Si}\left(a,z\right)</Math> , or <Math mode="inline" xml:id="C8.S21.SS2.p1.m4">a\neq 0,-2,-4,\dots</Math> , in the case of <Math mode="inline" xml:id="C8.S21.SS2.p1.m5">\mathrm{Ci}\left(a,z\right)</Math> ) the principal values of <Math mode="inline" xml:id="C8.S21.SS2.p1.m6">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p1.m7">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p1.m8">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS2.p1.m9">\mathrm{Ci}\left(a,z\right)</Math> are defined by (8.21.1) and (8.21.2) with the incomplete gamma functions assuming theirprincipal values (§8.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C8.S21.SS2.p1.s2">
+Elsewhere in the sector <Math mode="inline" xml:id="C8.S21.SS2.p1.m10">|\operatorname{ph}z|\leq\pi</Math> the principal values are defined by analytic continuation from <Math mode="inline" xml:id="C8.S21.SS2.p1.m11">\operatorname{ph}z=0</Math> ; compare §4.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C8.S21.SS2.p2.s1">
+From here on it is assumed that unless indicated otherwise the functions <Math mode="inline" xml:id="C8.S21.SS2.p2.m1">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p2.m2">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p2.m3">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS2.p2.m4">\mathrm{Ci}\left(a,z\right)</Math> have their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C8.S21.SS2.p3.s1">
+Properties of the four functions that are stated below in §§8.21(iii) and 8.21(iv) follow directly from the definitions given above, together with properties of the incomplete gamma functions given earlier in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C8.S21.SS2.p3.s2">
+In the case of §8.21(iv) the equation <Math equation-number="8.21.3" mode="display" xml:id="C8.S21.E3">\int_{0}^{\infty}t^{a-1}e^{\pm\mathrm{i}t}\mathrm{d}t=e^{\pm\frac{1}{2}\pi \mathrm{i}a}\Gamma\left(a\right), if 0&lt;\Re a&lt;1,</Math> (obtained from (5.2.1) by rotation of the integration path) is also needed.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS3">
+<title>Integral Representations</title>        
+   
+<para xml:id="C8.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S21.SS3.p1.s1">
+ <Math equation-number="8.21.4" mode="display" xml:id="C8.S21.E4">\mathrm{si}\left(a,z\right)=\int_{z}^{\infty}t^{a-1}\sin t\mathrm{d}t, if \Re a&lt;1,</Math> , <Math equation-number="8.21.5" mode="display" xml:id="C8.S21.E5">\mathrm{ci}\left(a,z\right)=\int_{z}^{\infty}t^{a-1}\cos t\mathrm{d}t, if \Re a&lt;1,</Math> , <Math equation-number="8.21.6" mode="display" xml:id="C8.S21.E6">\mathrm{Si}\left(a,z\right)=\int_{0}^{z}t^{a-1}\sin t\mathrm{d}t, if \Re a&gt;-1,</Math> , <Math equation-number="8.21.7" mode="display" xml:id="C8.S21.E7">\mathrm{Ci}\left(a,z\right)=\int_{0}^{z}t^{a-1}\cos t\mathrm{d}t, if \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S21.SS3.p1.s2">
+In these representations the integration paths do not cross the negative real axis, and in the case of (8.21.4) and (8.21.5) the paths also exclude the origin.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS4">
+<title>Interrelations</title>          
+<para xml:id="C8.S21.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C8.S21.SS4.p1.s1">
+ <Math equation-number="8.21.8" mode="display" xml:id="C8.S21.E8">\mathrm{Si}\left(a,z\right)=\Gamma\left(a\right)\sin\left(\tfrac{1}{2}\pi a \right)-\mathrm{si}\left(a,z\right), if a\neq-1,-3,-5,\dots,</Math> <Math equation-number="8.21.9" mode="display" xml:id="C8.S21.E9">\mathrm{Ci}\left(a,z\right)=\Gamma\left(a\right)\cos\left(\tfrac{1}{2}\pi a \right)-\mathrm{ci}\left(a,z\right), if a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS5">
+<title>Special Values</title>           
+<para xml:id="C8.S21.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C8.S21.SS5.p1.s1">
+ <Math equation-number="8.21.10" mode="display" xml:id="C8.S21.E10">\mathrm{si}\left(0,z\right)=-\mathrm{si}\left(z\right),\mathrm{ci}\left(0,z\right)=-\mathrm{Ci}\left(z\right),</Math> <Math equation-number="8.21.11" mode="display" xml:id="C8.S21.E11">\mathrm{Si}\left(0,z\right)=\mathrm{Si}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C8.S21.SS5.p1.s2">
+For the functions on the right-hand sides of (8.21.10) and (8.21.11) see §6.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C8.S21.SS5.p1.s3">
+<Math equation-number="8.21.12" mode="display" xml:id="C8.S21.E12">\mathrm{Si}\left(a,\infty\right)=\Gamma\left(a\right)\sin\left(\tfrac{1}{2}\pi a \right), if a\neq-1,-3,-5,\dots,</Math> , <Math equation-number="8.21.13" mode="display" xml:id="C8.S21.E13">\mathrm{Ci}\left(a,\infty\right)=\Gamma\left(a\right)\cos\left(\tfrac{1}{2}\pi a \right), if a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS6">
+<title>Series Expansions</title>         
+<paragraph xml:id="C8.S21.Px1">
+<title>Power-Series Expansions</title>    
+<para xml:id="C8.S21.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C8.S21.Px1.p1.s1">
+ <Math equation-number="8.21.14" mode="display" xml:id="C8.S21.E14">\mathrm{Si}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{(-1)^{k}z^{2k+1}}{(2 k+a+1)(2k+1)!}, if a\neq-1,-3,-5,\dots,</Math> <Math equation-number="8.21.15" mode="display" xml:id="C8.S21.E15">\mathrm{Ci}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{(-1)^{k}z^{2k}}{(2k+ a)(2k)!}, if a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S21.Px2">
+<title>Spherical-Bessel-Function Expansions</title>    
+<para xml:id="C8.S21.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S21.Px2.p1.s1">
+ <Math equation-number="8.21.16" mode="display" xml:id="C8.S21.E16">\mathrm{Si}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{\left(2k+\frac{3}{2} \right){\left(1-\frac{1}{2}a\right)_{k}}}{{\left(\frac{1}{2}+\frac{1}{2}a \right)_{k+1}}}\mathsf{j}_{2k+1}\left(z\right), if a\neq-1,-3,-5,\dots,</Math> , <Math equation-number="8.21.17" mode="display" xml:id="C8.S21.E17">\mathrm{Ci}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{\left(2k+\frac{1}{2} \right){\left(\frac{1}{2}-\frac{1}{2}a\right)_{k}}}{{\left(\frac{1}{2}a\right) _{k+1}}}\mathsf{j}_{2k}\left(z\right), if a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C8.S21.Px2.p1.s2">
+For <Math mode="inline" xml:id="C8.S21.Px2.p1.m1">\mathsf{j}_{n}\left(z\right)</Math> see §10.47(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C8.S21.Px2.p1.s3">
+For (8.21.16), (8.21.17), and further expansions in series of Bessel functions see Luke (1969b, pp. 56–57).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS7">
+<title>Auxiliary Functions</title>         
+ 
+<para xml:id="C8.S21.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C8.S21.SS7.p1.s1">
+ <Math equation-number="8.21.18" mode="display" xml:id="C8.S21.E18">f(a,z)=\mathrm{si}\left(a,z\right)\cos z-\mathrm{ci}\left(a,z\right)\sin z,</Math> , <Math equation-number="8.21.19" mode="display" xml:id="C8.S21.E19">g(a,z)=\mathrm{si}\left(a,z\right)\sin z+\mathrm{ci}\left(a,z\right)\cos z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C8.S21.SS7.p1.s2">
+<Math equation-number="8.21.20" mode="display" xml:id="C8.S21.E20">\mathrm{si}\left(a,z\right)=f(a,z)\cos z+g(a,z)\sin z,</Math> , <Math equation-number="8.21.21" mode="display" xml:id="C8.S21.E21">\mathrm{ci}\left(a,z\right)=-f(a,z)\sin z+g(a,z)\cos z</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S21.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C8.S21.SS7.p2.s1">
+When <Math mode="inline" xml:id="C8.S21.SS7.p2.m1">|\operatorname{ph}z|&lt;\pi</Math> and <Math mode="inline" xml:id="C8.S21.SS7.p2.m2">\Re a&lt;1</Math> , <Math equation-number="8.21.22" mode="display" xml:id="C8.S21.E22">f(a,z)=\int_{0}^{\infty}\frac{\sin t}{(t+z)^{1-a}}\mathrm{d}t,</Math> <Math equation-number="8.21.23" mode="display" xml:id="C8.S21.E23">g(a,z)=\int_{0}^{\infty}\frac{\cos t}{(t+z)^{1-a}}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C8.S21.SS7.p3.s1">
+When <Math mode="inline" xml:id="C8.S21.SS7.p3.m1">|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> , <Math equation-number="8.21.24" mode="display" xml:id="C8.S21.E24">f(a,z)=\frac{z^{a}}{2}\int_{0}^{\infty}\left((1+it)^{a-1}+(1-it)^{a-1}\right)e ^{-zt}\mathrm{d}t,</Math> <Math equation-number="8.21.25" mode="display" xml:id="C8.S21.E25">g(a,z)=\frac{z^{a}}{2i}\int_{0}^{\infty}\left((1-it)^{a-1}-(1+it)^{a-1}\right) e^{-zt}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS8">
+<title>Asymptotic Expansions</title>           
+<para xml:id="C8.S21.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C8.S21.SS8.p1.s1">
+When <Math mode="inline" xml:id="C8.S21.SS8.p1.m1">z\to\infty</Math> with <Math mode="inline" xml:id="C8.S21.SS8.p1.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C8.S21.SS8.p1.m3">&lt;\pi</Math> ), <Math equation-number="8.21.26" mode="display" xml:id="C8.S21.E26">f(a,z)\sim z^{a-1}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(1-a\right)_{2k}}}{z^ {2k}},</Math> , <Math equation-number="8.21.27" mode="display" xml:id="C8.S21.E27">g(a,z)\sim z^{a-1}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(1-a\right)_{2k+1}}}{ z^{2k+1}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C8.S21.SS8.p2.s1">
+For the corresponding expansions for <Math mode="inline" xml:id="C8.S21.SS8.p2.m1">\mathrm{si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS8.p2.m2">\mathrm{ci}\left(a,z\right)</Math> apply (8.21.20) and (8.21.21).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

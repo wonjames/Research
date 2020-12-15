@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S17">
+<title>Integrals</title>        
+ 
+ 
+<subsection xml:id="C18.S17.SS1">
+<title>Indefinite Integrals</title>        
+ 
+<paragraph xml:id="C18.S17.Px1">
+<title>Jacobi</title>     
+<para xml:id="C18.S17.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S17.Px1.p1.s1">
+ <Math equation-number="18.17.1" mode="display" xml:id="C18.S17.E1">2n\int_{0}^{x}(1-y)^{\alpha}(1+y)^{\beta}P^{(\alpha,\beta)}_{n}\left(y\right) \mathrm{d}y=P^{(\alpha+1,\beta+1)}_{n-1}\left(0\right)-(1-x)^{\alpha+1}(1+x)^{ \beta+1}P^{(\alpha+1,\beta+1)}_{n-1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px2">
+<title>Laguerre</title>    
+ 
+<para xml:id="C18.S17.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S17.Px2.p1.s1">
+ <Math equation-number="18.17.2" mode="display" xml:id="C18.S17.E2">\int_{0}^{x}L_{m}\left(y\right)L_{n}\left(x-y\right)\mathrm{d}y=\int_{0}^{x}L_ {m+n}\left(y\right)\mathrm{d}y=L_{m+n}\left(x\right)-L_{m+n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px3">
+<title>Hermite</title>    
+ 
+<para xml:id="C18.S17.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C18.S17.Px3.p1.s1">
+ <Math equation-number="18.17.3" mode="display" xml:id="C18.S17.E3">\int_{0}^{x}H_{n}\left(y\right)\mathrm{d}y=\frac{1}{2(n+1)}(H_{n+1}\left(x \right)-H_{n+1}\left(0\right)),</Math> <Math equation-number="18.17.4" mode="display" xml:id="C18.S17.E4">\int_{0}^{x}e^{-y^{2}}H_{n}\left(y\right)\mathrm{d}y=H_{n-1}\left(0\right)-e^{ -x^{2}}H_{n-1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS2">
+<title>Integral Representations for Products</title>        
+ 
+ 
+<paragraph xml:id="C18.S17.Px4">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S17.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S17.Px4.p1.s1">
+ <Math equation-number="18.17.5" mode="display" xml:id="C18.S17.E5">\frac{C^{(\lambda)}_{n}\left(\cos\theta_{1}\right)}{C^{(\lambda)}_{n}\left(1 \right)}\frac{C^{(\lambda)}_{n}\left(\cos\theta_{2}\right)}{C^{(\lambda)}_{n} \left(1\right)}=\frac{\Gamma\left(\lambda+\frac{1}{2}\right)}{\pi^{\frac{1}{2} }\Gamma\left(\lambda\right)}\*\int_{0}^{\pi}\frac{C^{(\lambda)}_{n}\left(\cos \theta_{1}\cos\theta_{2}+\sin\theta_{1}\sin\theta_{2}\cos\phi\right)}{C^{( \lambda)}_{n}\left(1\right)}(\sin\phi)^{2\lambda-1}\mathrm{d}\phi, if \lambda&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px5">
+<title>Legendre</title>    
+<para xml:id="C18.S17.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S17.Px5.p1.s1">
+ <Math equation-number="18.17.6" mode="display" xml:id="C18.S17.E6">P_{n}\left(\cos\theta_{1}\right)P_{n}\left(\cos\theta_{2}\right)=\frac{1}{\pi} \int_{0}^{\pi}P_{n}\left(\cos\theta_{1}\cos\theta_{2}+\sin\theta_{1}\sin\theta _{2}\cos\phi\right)\mathrm{d}\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C18.S17.Px5.p1.s2">
+For formulas for Jacobi and Laguerre polynomials analogous to (18.17.5) and (18.17.6), seeKoornwinder (1974, 1977).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS3">
+<title>Nicholson-Type Integrals</title>        
+ 
+<paragraph xml:id="C18.S17.Px6">
+<title>Legendre</title>     
+<para xml:id="C18.S17.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S17.Px6.p1.s1">
+ <Math equation-number="18.17.7" mode="display" xml:id="C18.S17.E7">\left(P_{n}\left(x\right)\right)^{2}+4\pi^{-2}\left(\mathsf{Q}_{n}\left(x \right)\right)^{2}=4\pi^{-2}\*\int_{1}^{\infty}Q_{n}\left(x^{2}+(1-x^{2})t \right)(t^{2}-1)^{-\frac{1}{2}}\mathrm{d}t, if -1&lt;x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C18.S17.Px6.p1.s2">
+For the Ferrers function <Math mode="inline" xml:id="C18.S17.Px6.p1.m1">\mathsf{Q}_{n}\left(x\right)</Math> and Legendre function <Math mode="inline" xml:id="C18.S17.Px6.p1.m2">Q_{n}\left(x\right)</Math> see§§14.3(i) and 14.3(ii), with <Math mode="inline" xml:id="C18.S17.Px6.p1.m3">\mu=0</Math> and <Math mode="inline" xml:id="C18.S17.Px6.p1.m4">\nu=n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px7">
+<title>Hermite</title>     
+<para xml:id="C18.S17.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S17.Px7.p1.s1">
+ <Math equation-number="18.17.8" mode="display" xml:id="C18.S17.E8">\left(H_{n}\left(x\right)\right)^{2}+2^{n}(n!)^{2}e^{x^{2}}\left(V\left(-n- \tfrac{1}{2},2^{\frac{1}{2}}x\right)\right)^{2}=\frac{2^{n+\frac{3}{2}}n!\,e^{ x^{2}}}{\pi}\int_{0}^{\infty}\frac{e^{-(2n+1)t+x^{2}\tanh t}}{(\sinh 2t)^{ \frac{1}{2}}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C18.S17.Px7.p1.s2">
+For the parabolic cylinder function <Math mode="inline" xml:id="C18.S17.Px7.p1.m1">V\left(a,z\right)</Math> see §12.2.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C18.S17.Px7.p1.s3">
+For similar formulas for ultraspherical polynomials seeDurand (1975), and for Jacobi and Laguerre polynomials seeDurand (1978).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS4">
+<title>Fractional Integrals</title>        
+ 
+<paragraph xml:id="C18.S17.Px8">
+<title>Jacobi</title>     
+<para xml:id="C18.S17.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S17.Px8.p1.s1">
+ <Math equation-number="18.17.9" mode="display" xml:id="C18.S17.E9">\frac{(1-x)^{\alpha+\mu}P^{(\alpha+\mu,\beta-\mu)}_{n}\left(x\right)}{\Gamma \left(\alpha+\mu+n+1\right)}=\int_{x}^{1}\frac{(1-y)^{\alpha}P^{(\alpha,\beta) }_{n}\left(y\right)}{\Gamma\left(\alpha+n+1\right)}\frac{(y-x)^{\mu-1}}{\Gamma \left(\mu\right)}\mathrm{d}y, if \mu&gt;0, -1&lt;x&lt;1,</Math> <Math equation-number="18.17.10" mode="display" xml:id="C18.S17.E10">\frac{x^{\beta+\mu}(x+1)^{n}}{\Gamma\left(\beta+\mu+n+1\right)}P^{(\alpha, \beta+\mu)}_{n}\left(\frac{x-1}{x+1}\right)=\int_{0}^{x}\frac{y^{\beta}(y+1)^{ n}}{\Gamma\left(\beta+n+1\right)}P^{(\alpha,\beta)}_{n}\left(\frac{y-1}{y+1} \right)\*\frac{(x-y)^{\mu-1}}{\Gamma\left(\mu\right)}\mathrm{d}y, if \mu&gt;0, x&gt;0,</Math> , <Math equation-number="18.17.11" mode="display" xml:id="C18.S17.E11">\frac{\Gamma\left(n+\alpha+\beta-\mu+1\right)}{x^{n+\alpha+\beta-\mu+1}}P^{( \alpha,\beta-\mu)}_{n}\left(1-2x^{-1}\right)=\int_{x}^{\infty}\frac{\Gamma \left(n+\alpha+\beta+1\right)}{y^{n+\alpha+\beta+1}}P^{(\alpha,\beta)}_{n} \left(1-2y^{-1}\right)\*\frac{(y-x)^{\mu-1}}{\Gamma\left(\mu\right)}\mathrm{d}y, if \alpha+\beta+1&gt;\mu&gt;0, x&gt;1,</Math> and three formulas similar to (18.17.9)–(18.17.11) by symmetry; compare the second row in Table18.6.1.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px9">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S17.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S17.Px9.p1.s1">
+ <Math equation-number="18.17.12" mode="display" xml:id="C18.S17.E12">\frac{\Gamma\left(\lambda-\mu\right)C^{(\lambda-\mu)}_{n}\left(x^{-\frac{1}{2} }\right)}{x^{\lambda-\mu+\frac{1}{2}n}}=\int_{x}^{\infty}\frac{\Gamma\left( \lambda\right)C^{(\lambda)}_{n}\left(y^{-\frac{1}{2}}\right)}{y^{\lambda+\frac {1}{2}n}}\frac{(y-x)^{\mu-1}}{\Gamma\left(\mu\right)}\mathrm{d}y, if \lambda&gt;\mu&gt;0, x&gt;0,</Math> , <Math equation-number="18.17.13" mode="display" xml:id="C18.S17.E13">\frac{x^{\frac{1}{2}n}(x-1)^{\lambda+\mu-\frac{1}{2}}}{\Gamma\left(\lambda+\mu +\tfrac{1}{2}\right)}\frac{C^{(\lambda+\mu)}_{n}\left(x^{-\frac{1}{2}}\right)} {C^{(\lambda+\mu)}_{n}\left(1\right)}=\int_{1}^{x}\frac{y^{\frac{1}{2}n}(y-1)^ {\lambda-\frac{1}{2}}}{\Gamma\left(\lambda+\tfrac{1}{2}\right)}\frac{C^{( \lambda)}_{n}\left(y^{-\frac{1}{2}}\right)}{C^{(\lambda)}_{n}\left(1\right)} \frac{(x-y)^{\mu-1}}{\Gamma\left(\mu\right)}\mathrm{d}y, if \mu&gt;0, x&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px10">
+<title>Laguerre</title>     
+<para xml:id="C18.S17.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S17.Px10.p1.s1">
+ <Math equation-number="18.17.14" mode="display" xml:id="C18.S17.E14">\frac{x^{\alpha+\mu}L^{(\alpha+\mu)}_{n}\left(x\right)}{\Gamma\left(\alpha+\mu +n+1\right)}=\int_{0}^{x}\frac{y^{\alpha}L^{(\alpha)}_{n}\left(y\right)}{ \Gamma\left(\alpha+n+1\right)}\frac{(x-y)^{\mu-1}}{\Gamma\left(\mu\right)} \mathrm{d}y, if \mu&gt;0, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C18.S17.Px10.p1.s2">
+<Math equation-number="18.17.15" mode="display" xml:id="C18.S17.E15">e^{-x}L^{(\alpha)}_{n}\left(x\right)=\int_{x}^{\infty}e^{-y}L^{(\alpha+\mu)}_{ n}\left(y\right)\frac{(y-x)^{\mu-1}}{\Gamma\left(\mu\right)}\mathrm{d}y, if \mu&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS5">
+<title>Fourier Transforms</title>        
+  
+<para xml:id="C18.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C18.S17.SS5.p1.s1">
+Throughout this subsection we assume <Math mode="inline" xml:id="C18.S17.SS5.p1.m1">y&gt;0</Math> ; sometimes however, this restriction can be eased by analytic continuation.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C18.S17.Px11">
+<title>Jacobi</title>    
+<para xml:id="C18.S17.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S17.Px11.p1.s1">
+ <Math equation-number="18.17.16" mode="display" xml:id="C18.S17.E16">\int_{-1}^{1}(1-x)^{\alpha}(1+x)^{\beta}P^{(\alpha,\beta)}_{n}\left(x\right)e^ {ixy}\mathrm{d}x=\frac{(iy)^{n}e^{iy}}{n!}2^{n+\alpha+\beta+1}\mathrm{B}\left( n+\alpha+1,n+\beta+1\right){{}_{1}F_{1}}\left(n+\alpha+1;2n+\alpha+\beta+2;-2 iy\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S17.Px11.p1.s2">
+For the beta function <Math mode="inline" xml:id="C18.S17.Px11.p1.m1">\mathrm{B}\left(a,b\right)</Math> see §5.12, and for the confluent hypergeometric function <Math mode="inline" xml:id="C18.S17.Px11.p1.m2">{{}_{1}F_{1}}</Math> see (16.2.1) and Chapter 13.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px12">
+<title>Ultraspherical</title>   
+ 
+<para xml:id="C18.S17.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C18.S17.Px12.p1.s1">
+ <Math equation-number="18.17.17" mode="display" xml:id="C18.S17.E17">\int_{0}^{1}(1-x^{2})^{\lambda-\frac{1}{2}}C^{(\lambda)}_{2n}\left(x\right) \cos\left(xy\right)\mathrm{d}x=\frac{(-1)^{n}\pi\Gamma\left(2n+2\lambda\right) J_{\lambda+2n}\left(y\right)}{(2n)!\Gamma\left(\lambda\right)(2y)^{\lambda}}</Math> , <Math equation-number="18.17.18" mode="display" xml:id="C18.S17.E18">\int_{0}^{1}(1-x^{2})^{\lambda-\frac{1}{2}}C^{(\lambda)}_{2n+1}\left(x\right) \sin\left(xy\right)\mathrm{d}x=\frac{(-1)^{n}\pi\Gamma\left(2n+2\lambda+1 \right)J_{2n+\lambda+1}\left(y\right)}{(2n+1)!\Gamma\left(\lambda\right)(2y)^{ \lambda}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C18.S17.Px12.p1.s2">
+For the Bessel function <Math mode="inline" xml:id="C18.S17.Px12.p1.m1">J_{\nu}</Math> see §10.2(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px13">
+<title>Legendre</title>   
+ 
+<para xml:id="C18.S17.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C18.S17.Px13.p1.s1">
+ <Math equation-number="18.17.19" mode="display" xml:id="C18.S17.E19">\int_{-1}^{1}P_{n}\left(x\right)e^{ixy}\mathrm{d}x=i^{n}\sqrt{\frac{2\pi}{y}}J _{n+\frac{1}{2}}\left(y\right),</Math> <Math equation-number="18.17.20" mode="display" xml:id="C18.S17.E20">\int_{0}^{1}P_{n}\left(1-2x^{2}\right)\cos\left(xy\right)\mathrm{d}x=(-1)^{n} \tfrac{1}{2}\pi J_{n+\frac{1}{2}}\left(\tfrac{1}{2}y\right)J_{-n-\frac{1}{2}} \left(\tfrac{1}{2}y\right),</Math> <Math equation-number="18.17.21" mode="display" xml:id="C18.S17.E21">\int_{0}^{1}P_{n}\left(1-2x^{2}\right)\sin\left(xy\right)\mathrm{d}x=\tfrac{1} {2}\pi\left(J_{n+\frac{1}{2}}\left(\tfrac{1}{2}y\right)\right)^{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px14">
+<title>Hermite</title>   
+ 
+<para xml:id="C18.S17.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C18.S17.Px14.p1.s1">
+ <Math equation-number="18.17.22" mode="display" xml:id="C18.S17.E22">\frac{1}{2\sqrt{\pi}}\int_{-\infty}^{\infty}e^{-\frac{1}{4}x^{2}}\mathit{He}_{ n}\left(x\right)e^{\frac{1}{2}\mathrm{i}xy}\mathrm{d}x={\mathrm{i}^{n}}e^{- \frac{1}{4}y^{2}}\mathit{He}_{n}\left(y\right),</Math> <Math equation-number="18.17.23" mode="display" xml:id="C18.S17.E23">\int_{0}^{\infty}e^{-\frac{1}{2}x^{2}}\mathit{He}_{2n}\left(x\right)\cos\left( xy\right)\mathrm{d}x=(-1)^{n}\sqrt{\tfrac{1}{2}\pi}y^{2n}e^{-\frac{1}{2}y^{2}},</Math> <Math equation-number="18.17.24" mode="display" xml:id="C18.S17.E24">\int_{0}^{\infty}e^{-x^{2}}\mathit{He}_{2n}\left(2x\right)\cos\left(xy\right) \mathrm{d}x=(-1)^{n}\tfrac{1}{2}\sqrt{\pi}e^{-\frac{1}{4}y^{2}}\mathit{He}_{2n }\left(y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C18.S17.Px14.p1.s2">
+<Math equation-number="18.17.25" mode="display" xml:id="C18.S17.E25">\int_{0}^{\infty}e^{-\frac{1}{2}x^{2}}\mathit{He}_{n}\left(x\right)\mathit{He} _{n+2m}\left(x\right)\cos\left(xy\right)\mathrm{d}x=(-1)^{m}\sqrt{\tfrac{1}{2} \pi}n!\,y^{2m}e^{-\frac{1}{2}y^{2}}L^{(2m)}_{n}\left(y^{2}\right)</Math> , <Math equation-number="18.17.26" mode="display" xml:id="C18.S17.E26">\int_{0}^{\infty}e^{-\frac{1}{2}x^{2}}\mathit{He}_{n}\left(x\right)\mathit{He} _{n+2m+1}\left(x\right)\sin\left(xy\right)\mathrm{d}x=(-1)^{m}\sqrt{\tfrac{1}{ 2}\pi}n!\,y^{2m+1}e^{-\frac{1}{2}y^{2}}L^{(2m+1)}_{n}\left(y^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C18.S17.Px14.p1.s3">
+<Math equation-number="18.17.27" mode="display" xml:id="C18.S17.E27">\int_{0}^{\infty}e^{-\frac{1}{2}x^{2}}\mathit{He}_{2n+1}\left(x\right)\sin \left(xy\right)\mathrm{d}x=(-1)^{n}\sqrt{\tfrac{1}{2}\pi}y^{2n+1}e^{-\frac{1}{ 2}y^{2}},</Math> <Math equation-number="18.17.28" mode="display" xml:id="C18.S17.E28">\int_{0}^{\infty}e^{-x^{2}}\mathit{He}_{2n+1}\left(2x\right)\sin\left(xy\right )\mathrm{d}x=(-1)^{n}\tfrac{1}{2}\sqrt{\pi}e^{-\frac{1}{4}y^{2}}\mathit{He}_{2 n+1}\left(y\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px15">
+<title>Laguerre</title>   
+ 
+<para xml:id="C18.S17.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C18.S17.Px15.p1.s1">
+ <Math equation-number="18.17.29" mode="display" xml:id="C18.S17.E29">\int_{0}^{\infty}x^{2m}e^{-\frac{1}{2}x^{2}}L^{(2m)}_{n}\left(x^{2}\right)\cos \left(xy\right)\mathrm{d}x=(-1)^{m}\sqrt{\tfrac{1}{2}\pi}\frac{1}{n!}e^{-\frac {1}{2}y^{2}}\mathit{He}_{n}\left(y\right)\mathit{He}_{n+2m}\left(y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C18.S17.Px15.p1.s2">
+<Math equation-number="18.17.30" mode="display" xml:id="C18.S17.E30">\int_{0}^{\infty}x^{2n}e^{-\frac{1}{2}x^{2}}L^{(n-\frac{1}{2})}_{n}\left( \tfrac{1}{2}x^{2}\right)\cos\left(xy\right)\mathrm{d}x=\sqrt{\tfrac{1}{2}\pi}y ^{2n}e^{-\frac{1}{2}y^{2}}L^{(n-\frac{1}{2})}_{n}\left(\tfrac{1}{2}y^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C18.S17.Px15.p1.s3">
+<Math equation-number="18.17.31" mode="display" xml:id="C18.S17.E31">\int_{0}^{\infty}e^{-ax}x^{\nu-2n}L^{(\nu-2n)}_{2n-1}\left(ax\right)\cos\left( xy\right)\mathrm{d}x=i\frac{(-1)^{n}\Gamma\left(\nu\right)}{2(2n-1)!}y^{2n-1} \left((a+iy)^{-\nu}-(a-iy)^{-\nu}\right), if \nu&gt;2n-1, a&gt;0,</Math> <Math equation-number="18.17.32" mode="display" xml:id="C18.S17.E32">\int_{0}^{\infty}e^{-ax}x^{\nu-1-2n}L^{(\nu-1-2n)}_{2n}\left(ax\right)\cos \left(xy\right)\mathrm{d}x=\frac{(-1)^{n}\Gamma\left(\nu\right)}{2(2n)!}y^{2n} \left((a+iy)^{-\nu}+(a-iy)^{-\nu}\right), if \nu&gt;2n, a&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS6">
+<title>Laplace Transforms</title>        
+  
+<paragraph xml:id="C18.S17.Px16">
+<title>Jacobi</title>     
+<para xml:id="C18.S17.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C18.S17.Px16.p1.s1">
+ <Math equation-number="18.17.33" mode="display" xml:id="C18.S17.E33">\int_{-1}^{1}e^{-(x+1)z}P^{(\alpha,\beta)}_{n}\left(x\right)(1-x)^{\alpha}(1+x )^{\beta}\mathrm{d}x=\frac{(-1)^{n}2^{\alpha+\beta+n+1}\Gamma\left(\alpha+n+1 \right)\Gamma\left(\beta+n+1\right)}{\Gamma\left(\alpha+\beta+2n+2\right)n!}z^ {n}{{}_{1}F_{1}}\left({\beta+n+1\atop\alpha+\beta+2n+2};-2z\right), if z\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C18.S17.Px16.p1.s2">
+For the confluent hypergeometric function <Math mode="inline" xml:id="C18.S17.Px16.p1.m1">{{}_{1}F_{1}}</Math> see (16.2.1) and Chapter 13.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px17">
+<title>Laguerre</title>     
+<para xml:id="C18.S17.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C18.S17.Px17.p1.s1">
+ <Math equation-number="18.17.34" mode="display" xml:id="C18.S17.E34">\int_{0}^{\infty}e^{-xz}L^{(\alpha)}_{n}\left(x\right)e^{-x}x^{\alpha}\mathrm{ d}x=\frac{\Gamma\left(\alpha+n+1\right)z^{n}}{n!(z+1)^{\alpha+n+1}}, if \Re z&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px18">
+<title>Hermite</title>     
+<para xml:id="C18.S17.Px18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C18.S17.Px18.p1.s1">
+ <Math equation-number="18.17.35" mode="display" xml:id="C18.S17.E35">\int_{-\infty}^{\infty}e^{-xz}H_{n}\left(x\right)e^{-x^{2}}\mathrm{d}x=\pi^{ \frac{1}{2}}(-z)^{n}e^{\frac{1}{4}z^{2}}, if z\in\mathbb{C}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS7">
+<title>Mellin Transforms</title>        
+  
+<paragraph xml:id="C18.S17.Px19">
+<title>Jacobi</title>    
+<para xml:id="C18.S17.Px19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C18.S17.Px19.p1.s1">
+ <Math equation-number="18.17.36" mode="display" xml:id="C18.S17.E36">\int_{-1}^{1}(1-x)^{z-1}(1+x)^{\beta}P^{(\alpha,\beta)}_{n}\left(x\right) \mathrm{d}x=\frac{2^{\beta+z}\Gamma\left(z\right)\Gamma\left(1+\beta+n\right){ \left(1+\alpha-z\right)_{n}}}{n!\Gamma\left(1+\beta+z+n\right)}, if \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px20">
+<title>Ultraspherical</title>  
+  
+<para xml:id="C18.S17.Px20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C18.S17.Px20.p1.s1">
+ <Math equation-number="18.17.37" mode="display" xml:id="C18.S17.E37">\int_{0}^{1}(1-x^{2})^{\lambda-\frac{1}{2}}C^{(\lambda)}_{n}\left(x\right)x^{z -1}\mathrm{d}x=\frac{\pi\,2^{1-2\lambda-z}\Gamma\left(n+2\lambda\right)\Gamma \left(z\right)}{n!\Gamma\left(\lambda\right)\Gamma\left(\frac{1}{2}+\frac{1}{2 }n+\lambda+\frac{1}{2}z\right)\Gamma\left(\frac{1}{2}+\frac{1}{2}z-\frac{1}{2} n\right)}, if \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px21">
+<title>Legendre</title>   
+ 
+<para xml:id="C18.S17.Px21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C18.S17.Px21.p1.s1">
+ <Math equation-number="18.17.38" mode="display" xml:id="C18.S17.E38">\int_{0}^{1}P_{2n}\left(x\right)x^{z-1}\mathrm{d}x=\frac{(-1)^{n}{\left(\frac{ 1}{2}-\frac{1}{2}z\right)_{n}}}{2{\left(\frac{1}{2}z\right)_{n+1}}}, if \Re z&gt;0,</Math> <Math equation-number="18.17.39" mode="display" xml:id="C18.S17.E39">\int_{0}^{1}P_{2n+1}\left(x\right)x^{z-1}\mathrm{d}x=\frac{(-1)^{n}{\left(1- \frac{1}{2}z\right)_{n}}}{2{\left(\frac{1}{2}+\frac{1}{2}z\right)_{n+1}}}, if \Re z&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px22">
+<title>Laguerre</title>    
+<para xml:id="C18.S17.Px22.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C18.S17.Px22.p1.s1">
+ <Math equation-number="18.17.40" mode="display" xml:id="C18.S17.E40">\int_{0}^{\infty}e^{-ax}L^{(\alpha)}_{n}\left(bx\right)x^{z-1}\mathrm{d}x= \frac{\Gamma\left(z+n\right)}{n!}\*{(a-b)^{n}}a^{-n-z}\*{{}_{2}F_{1}}\left({-n ,1+\alpha-z\atop 1-n-z};\frac{a}{a-b}\right), if \Re a&gt;0, \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C18.S17.Px22.p1.s2">
+For the hypergeometric function <Math mode="inline" xml:id="C18.S17.Px22.p1.m1">{{}_{2}F_{1}}</Math> see §§15.1 and15.2(i).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px23">
+<title>Hermite</title>   
+ 
+<para xml:id="C18.S17.Px23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C18.S17.Px23.p1.s1">
+ <Math equation-number="18.17.41" mode="display" xml:id="C18.S17.E41">\int_{0}^{\infty}e^{-ax}\mathit{He}_{n}\left(x\right)x^{z-1}\mathrm{d}x=\Gamma \left(z+n\right)a^{-n-2}{{}_{2}F_{2}}\left({-\tfrac{1}{2}n,-\tfrac{1}{2}n+ \tfrac{1}{2}\atop-\tfrac{1}{2}z-\tfrac{1}{2}n,-\tfrac{1}{2}z-\tfrac{1}{2}n+ \tfrac{1}{2}};-\tfrac{1}{2}a^{2}\right), if \Re a&gt;0. Also, \Re z&gt;0, n even; \Re z&gt;-1, n odd</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C18.S17.Px23.p1.s2">
+For the generalized hypergeometric function <Math mode="inline" xml:id="C18.S17.Px23.p1.m1">{{}_{2}F_{2}}</Math> see (16.2.1).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS8">
+<title>Other Integrals</title>        
+ 
+<paragraph xml:id="C18.S17.Px24">
+<title>Chebyshev</title>   
+ 
+<para xml:id="C18.S17.Px24.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C18.S17.Px24.p1.s1">
+ <Math equation-number="18.17.42" mode="display" xml:id="C18.S17.E42">\pvint_{-1}^{1}T_{n}\left(y\right)\frac{(1-y^{2})^{-\frac{1}{2}}}{y-x}\mathrm{ d}y=\pi U_{n-1}\left(x\right),</Math> <Math equation-number="18.17.43" mode="display" xml:id="C18.S17.E43">\pvint_{-1}^{1}U_{n-1}\left(y\right)\frac{(1-y^{2})^{\frac{1}{2}}}{y-x}\mathrm {d}y=-\pi T_{n}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C18.S17.Px24.p1.s2">
+These integrals are Cauchy principal values (§1.4(v)).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px25">
+<title>Legendre</title>    
+<para xml:id="C18.S17.Px25.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C18.S17.Px25.p1.s1">
+ <Math equation-number="18.17.44" mode="display" xml:id="C18.S17.E44">\int_{-1}^{1}\frac{P_{n}\left(x\right)-P_{n}\left(t\right)}{|x-t|}\mathrm{d}t= 2\left(1+\tfrac{1}{2}+\dots+\tfrac{1}{n}\right)P_{n}\left(x\right), if -1\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C18.S17.Px25.p1.s2">
+The case <Math mode="inline" xml:id="C18.S17.Px25.p1.m1">x=1</Math> is a limit case of an integral for Jacobi polynomials; seeAskey and Razban (1972).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="43" xml:id="C18.S17.Px25.p1.s3">
+<Math equation-number="18.17.45" mode="display" xml:id="C18.S17.E45">(n+\tfrac{1}{2})(1+x)^{\frac{1}{2}}\int_{-1}^{x}(x-t)^{-\frac{1}{2}}P_{n}\left (t\right)\mathrm{d}t=T_{n}\left(x\right)+T_{n+1}\left(x\right),</Math> <Math equation-number="18.17.46" mode="display" xml:id="C18.S17.E46">(n+\tfrac{1}{2})(1-x)^{\frac{1}{2}}\int_{x}^{1}(t-x)^{-\frac{1}{2}}P_{n}\left( t\right)\mathrm{d}t=T_{n}\left(x\right)-T_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px26">
+<title>Laguerre</title>   
+<para xml:id="C18.S17.Px26.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C18.S17.Px26.p1.s1">
+ <Math equation-number="18.17.47" mode="display" xml:id="C18.S17.E47">\int_{0}^{x}t^{\alpha}\frac{L^{(\alpha)}_{m}\left(t\right)}{L^{(\alpha)}_{m} \left(0\right)}(x-t)^{\beta}\frac{L^{(\beta)}_{n}\left(x-t\right)}{L^{(\beta)} _{n}\left(0\right)}\mathrm{d}t=\frac{\Gamma\left(\alpha+1\right)\Gamma\left( \beta+1\right)}{\Gamma\left(\alpha+\beta+2\right)}x^{\alpha+\beta+1}\frac{L^{( \alpha+\beta+1)}_{m+n}\left(x\right)}{L^{(\alpha+\beta+1)}_{m+n}\left(0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S17.Px27">
+<title>Hermite</title>   
+ 
+<para xml:id="C18.S17.Px27.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C18.S17.Px27.p1.s1">
+ <Math equation-number="18.17.48" mode="display" xml:id="C18.S17.E48">\int_{-\infty}^{\infty}H_{m}\left(y\right)e^{-y^{2}}H_{n}\left(x-y\right)e^{-( x-y)^{2}}\mathrm{d}y=\pi^{\frac{1}{2}}2^{-\frac{1}{2}(m+n+1)}H_{m+n}\left(2^{- \frac{1}{2}}x\right)e^{-\frac{1}{2}x^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C18.S17.Px27.p1.s2">
+<Math equation-number="18.17.49" mode="display" xml:id="C18.S17.E49">\int_{-\infty}^{\infty}H_{\ell}\left(x\right)H_{m}\left(x\right)H_{n}\left(x \right)e^{-x^{2}}\mathrm{d}x=\frac{2^{\frac{1}{2}(\ell+m+n)}\ell\,!\,m\,!\,n\, !\,\sqrt{\pi}}{(\tfrac{1}{2}\ell+\tfrac{1}{2}m-\tfrac{1}{2}n)\,!\,(\tfrac{1}{2 }m+\tfrac{1}{2}n-\tfrac{1}{2}\ell\,)\,!\,(\tfrac{1}{2}n+\tfrac{1}{2}\ell- \tfrac{1}{2}m\,)\,!}</Math> , provided that <Math mode="inline" xml:id="C18.S17.Px27.p1.m1">\ell+m+n</Math> is even and the sum of any two of <Math mode="inline" xml:id="C18.S17.Px27.p1.m2">\ell,m,n</Math> is not less than the third; otherwise the integral is zero.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S17.SS9">
+<title>Compendia</title>        
+   
+ 
+<para xml:id="C18.S17.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C18.S17.SS9.p1.s1">
+For further integrals, seeApelblat (1983, pp. 189–204),Erdélyi et al. (1954a, pp. 38–39, 94–95, 170–176, 259–261, 324),Erdélyi et al. (1954b, pp. 42–44, 271–294),Gradshteyn and Ryzhik (2000, pp. 788–806),Gröbner and Hofreiter (1950, pp. 23–30),Marichev (1983, pp. 216–247),Oberhettinger (1972, pp. 64–67),Oberhettinger (1974, pp. 83–92),Oberhettinger (1990, pp. 44–47 and 152–154),Oberhettinger and Badii (1973, pp. 103–112),Prudnikov et al. (1986b, pp. 420–617),Prudnikov et al. (1992a, pp. 419–476), andPrudnikov et al. (1992b, pp. 280–308).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

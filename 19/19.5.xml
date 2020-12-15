@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S5">
+<title>Maclaurin and Related Expansions</title>           
+<para xml:id="C19.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S5.p1.s1">
+If <Math mode="inline" xml:id="C19.S5.p1.m1">|k|&lt;1</Math> and <Math mode="inline" xml:id="C19.S5.p1.m2">|\alpha|&lt;1</Math> , then <Math equation-number="19.5.1" mode="display" xml:id="C19.S5.E1">K\left(k\right)=\frac{\pi}{2}\sum_{m=0}^{\infty}\frac{{\left(\tfrac{1}{2} \right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{m!\;m!}k^{2m}=\frac{\pi}{2}{{}_{2 }F_{1}}\left(\tfrac{1}{2},\tfrac{1}{2};1;k^{2}\right),</Math> where <Math mode="inline" xml:id="C19.S5.p1.m3">{{}_{2}F_{1}}</Math> is the Gauss hypergeometric function (§§15.1 and 15.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S5.p1.s2">
+<Math equation-number="19.5.2" mode="display" xml:id="C19.S5.E2">E\left(k\right)=\frac{\pi}{2}\sum_{m=0}^{\infty}\frac{{\left(-\tfrac{1}{2} \right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{m!\;m!}k^{2m}=\frac{\pi}{2}{{}_{2 }F_{1}}\left(-\tfrac{1}{2},\tfrac{1}{2};1;k^{2}\right),</Math> <Math equation-number="19.5.3" mode="display" xml:id="C19.S5.E3">D\left(k\right)=\frac{\pi}{4}\sum_{m=0}^{\infty}\frac{{\left(\tfrac{3}{2} \right)_{m}}{\left(\tfrac{1}{2}\right)_{m}}}{(m+1)!\;m!}k^{2m}=\frac{\pi}{4}{{ }_{2}F_{1}}\left(\tfrac{3}{2},\tfrac{1}{2};2;k^{2}\right),</Math> <Math equation-number="19.5.4" mode="display" xml:id="C19.S5.E4">\Pi\left(\alpha^{2},k\right)=\frac{\pi}{2}\sum_{n=0}^{\infty}\frac{{\left( \tfrac{1}{2}\right)_{n}}}{n!}\sum_{m=0}^{n}\frac{{\left(\tfrac{1}{2}\right)_{m }}}{m!}k^{2m}\alpha^{2n-2m}=\frac{\pi}{2}{F_{1}}\left(\tfrac{1}{2};\tfrac{1}{2 },1;1;k^{2},\alpha^{2}\right),</Math> where <Math mode="inline" xml:id="C19.S5.p1.m4">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)</Math> is an Appell function (§16.13).
+</sentence>
+
+</para>
+   
+<para xml:id="C19.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C19.S5.p2.s1">
+For Jacobi’s nome <Math mode="inline" xml:id="C19.S5.p2.m1">q</Math> : <Math equation-number="19.5.5" mode="display" xml:id="C19.S5.E5">q=\exp\left(-\pi{K^{\prime}}\left(k\right)/K\left(k\right)\right)=r+8r^{2}+84r ^{3}+992r^{4}+\cdots, if r=\frac{1}{16}k^{2}, 0\leq k\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C19.S5.p2.s2">
+Also, <Math equation-number="19.5.6" mode="display" xml:id="C19.S5.E6">q=\lambda+2\lambda^{5}+15\lambda^{9}+150\lambda^{13}+1707\lambda^{17}+\cdots, if 0\leq k\leq 1,</Math> where <Math equation-number="19.5.7" mode="display" xml:id="C19.S5.E7">\lambda=(1-\sqrt{k^{\prime}})/(2(1+\sqrt{k^{\prime}}))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C19.S5.p2.s3">
+Coefficients of terms up to <Math mode="inline" xml:id="C19.S5.p2.m2">\lambda^{49}</Math> are given in Lee (1990), along with tables of fractional errors in <Math mode="inline" xml:id="C19.S5.p2.m3">K\left(k\right)</Math> and <Math mode="inline" xml:id="C19.S5.p2.m4">E\left(k\right)</Math> , <Math mode="inline" xml:id="C19.S5.p2.m5">0.1\leq k^{2}\leq 0.9999</Math> , obtained by using 12 different truncations of (19.5.6) in (19.5.8) and (19.5.9).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C19.S5.p2.s4">
+<Math equation-number="19.5.8" mode="display" xml:id="C19.S5.E8">K\left(k\right)=\frac{\pi}{2}\left(1+2\sum_{n=1}^{\infty}q^{n^{2}}\right)^{2}, if |q|&lt;1,</Math> <Math equation-number="19.5.9" mode="display" xml:id="C19.S5.E9">E\left(k\right)=K\left(k\right)+\frac{2\pi^{2}}{K\left(k\right)}\,\frac{\sum_{ n=1}^{\infty}(-1)^{n}n^{2}q^{n^{2}}}{1+2\sum_{n=1}^{\infty}(-1)^{n}q^{n^{2}}}, if |q|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S5.p3.s1">
+An infinite series for <Math mode="inline" xml:id="C19.S5.p3.m1">\ln K\left(k\right)</Math> is equivalent to the infinite product <Math equation-number="19.5.10" mode="display" xml:id="C19.S5.E10">K\left(k\right)=\frac{\pi}{2}\prod_{m=1}^{\infty}(1+k_{m}),</Math> where <Math mode="inline" xml:id="C19.S5.p3.m2">k_{0}=k</Math> and <Math equation-number="19.5.11" mode="display" xml:id="C19.S5.E11">k_{m+1}=\frac{1-\sqrt{1-k_{m}^{2}}}{1+\sqrt{1-k_{m}^{2}}}, if m=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C19.S5.p4.s1">
+Series expansions of <Math mode="inline" xml:id="C19.S5.p4.m1">F\left(\phi,k\right)</Math> and <Math mode="inline" xml:id="C19.S5.p4.m2">E\left(\phi,k\right)</Math> are surveyed and improved in Van de Vel (1969), and the case of <Math mode="inline" xml:id="C19.S5.p4.m3">F\left(\phi,k\right)</Math> is summarized in Gautschi (1975, §1.3.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C19.S5.p4.s2">
+For series expansions of <Math mode="inline" xml:id="C19.S5.p4.m4">\Pi\left(\phi,\alpha^{2},k\right)</Math> when <Math mode="inline" xml:id="C19.S5.p4.m5">|\alpha^{2}|&lt;1</Math> seeErdélyi et al. (1953b, §13.6(9)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C19.S5.p4.s3">
+See also Karp et al. (2007).
+</sentence>
+
+</para>
+ 
+</section>

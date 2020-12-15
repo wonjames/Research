@@ -1,0 +1,3875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S5">
+<title>Quadrature</title>           
+<subsection xml:id="C3.S5.SS1">
+<title>Trapezoidal Rules</title>         
+<para xml:id="C3.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S5.SS1.p1.s1">
+The elementary trapezoidal rule is given by <Math equation-number="3.5.1" mode="display" xml:id="C3.S5.E1">\int_{a}^{b}f(x)\mathrm{d}x=\tfrac{1}{2}h(f(a)+f(b))-\tfrac{1}{12}h^{3}f^{ \prime\prime}(\xi),</Math> where <Math mode="inline" xml:id="C3.S5.SS1.p1.m1">h=b-a</Math> , <Math mode="inline" xml:id="C3.S5.SS1.p1.m2">f\in C^{2}[a,b]</Math> , and <Math mode="inline" xml:id="C3.S5.SS1.p1.m3">a&lt;\xi&lt;b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C3.S5.SS1.p2.s1">
+The composite trapezoidal rule is <Math equation-number="3.5.2" mode="display" xml:id="C3.S5.E2">\displaystyle\int_{a}^{b}f(x)\mathrm{d}x=h(\tfrac{1}{2}f_{0}+f_{1}+\dots+f_{n- 1}+\tfrac{1}{2}f_{n})+E_{n}(f),</Math> where <Math mode="inline" xml:id="C3.S5.SS1.p2.m1">h=(b-a)/n</Math> , <Math mode="inline" xml:id="C3.S5.SS1.p2.m2">x_{k}=a+kh</Math> , <Math mode="inline" xml:id="C3.S5.SS1.p2.m3">f_{k}=f(x_{k})</Math> , <Math mode="inline" xml:id="C3.S5.SS1.p2.m4">k=0,1,\dots,n</Math> , and <Math equation-number="3.5.3" mode="display" xml:id="C3.S5.E3">E_{n}(f)=-\frac{b-a}{12}h^{2}f^{\prime\prime}(\xi), if a&lt;\xi&lt;b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S5.SS1.p3.s1">
+If in addition <Math mode="inline" xml:id="C3.S5.SS1.p3.m1">f</Math> is periodic, <Math mode="inline" xml:id="C3.S5.SS1.p3.m2">f\in C^{k}(\mathbb{R})</Math> , and the integral is taken over a period, then <Math equation-number="3.5.4" mode="display" xml:id="C3.S5.E4">E_{n}(f)=O\left(h^{k}\right), if h\to 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C3.S5.SS1.p3.s2">
+In particular, when <Math mode="inline" xml:id="C3.S5.SS1.p3.m3">k=\infty</Math> the error term is an exponentially-small function of <Math mode="inline" xml:id="C3.S5.SS1.p3.m4">1/h</Math> , and in these circumstances the composite trapezoidal rule is exceptionally efficient.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C3.S5.SS1.p3.s3">
+For an example see §3.5(ix).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S5.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C3.S5.SS1.p4.s1">
+Similar results hold for the trapezoidal rule in the form <Math equation-number="3.5.5" mode="display" xml:id="C3.S5.E5">\int_{-\infty}^{\infty}f(t)\mathrm{d}t=h\sum_{k=-\infty}^{\infty}f(kh)+E_{h}(f),</Math> with a function <Math mode="inline" xml:id="C3.S5.SS1.p4.m1">f</Math> that is analytic in a strip containing <Math mode="inline" xml:id="C3.S5.SS1.p4.m2">\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C3.S5.SS1.p4.s2">
+For further information and examples, see Goodwin (1949b).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C3.S5.SS1.p4.s3">
+InStenger (1993, Chapter 3) the rule (3.5.5) is considered in the framework of Sinc approximations (§3.3(vi)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C3.S5.SS1.p4.s4">
+See also Poisson’s summation formula (§1.8(iv)).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S5.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C3.S5.SS1.p5.s1">
+If <Math mode="inline" xml:id="C3.S5.SS1.p5.m1">k</Math> in (3.5.4) is not arbitrarily large, and if odd-order derivatives of <Math mode="inline" xml:id="C3.S5.SS1.p5.m2">f</Math> are known at the end points <Math mode="inline" xml:id="C3.S5.SS1.p5.m3">a</Math> and <Math mode="inline" xml:id="C3.S5.SS1.p5.m4">b</Math> , then the composite trapezoidal rule can be improved by means of the Euler–Maclaurin formula (§2.10(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C3.S5.SS1.p5.s2">
+See Davis and Rabinowitz (1984, pp. 134–142) and Temme (1996b, p. 25).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS2">
+<title>Simpson’s Rule</title>         
+<para xml:id="C3.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S5.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C3.S5.SS2.p1.m1">h=\frac{1}{2}(b-a)</Math> and <Math mode="inline" xml:id="C3.S5.SS2.p1.m2">f\in C^{4}[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C3.S5.SS2.p1.s2">
+Then theelementary Simpson’s rule is <Math equation-number="3.5.6" mode="display" xml:id="C3.S5.E6">\int_{a}^{b}f(x)\mathrm{d}x=\tfrac{1}{3}h(f(a)+4f(\tfrac{1}{2}(a+b))+f(b))- \tfrac{1}{90}h^{5}f^{(4)}(\xi),</Math> where <Math mode="inline" xml:id="C3.S5.SS2.p1.m3">a&lt;\xi&lt;b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C3.S5.SS2.p2.s1">
+Now let <Math mode="inline" xml:id="C3.S5.SS2.p2.m1">h=(b-a)/n</Math> , <Math mode="inline" xml:id="C3.S5.SS2.p2.m2">x_{k}=a+kh</Math> , and <Math mode="inline" xml:id="C3.S5.SS2.p2.m3">f_{k}=f(x_{k})</Math> , <Math mode="inline" xml:id="C3.S5.SS2.p2.m4">k=0,1,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C3.S5.SS2.p2.s2">
+Then the composite Simpson’s rule is <Math equation-number="3.5.7" mode="display" xml:id="C3.S5.E7">\int_{a}^{b}f(x)\mathrm{d}x=\tfrac{1}{3}h(f_{0}+4f_{1}+2f_{2}+4f_{3}+2f_{4}+ \cdots+4f_{n-1}+f_{n})+E_{n}(f),</Math> where <Math mode="inline" xml:id="C3.S5.SS2.p2.m5">n</Math> is even and <Math equation-number="3.5.8" mode="display" xml:id="C3.S5.E8">E_{n}(f)=-\frac{b-a}{180}h^{4}f^{(4)}(\xi), if a&lt;\xi&lt;b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C3.S5.SS2.p3.s1">
+Simpson’s rule can be regarded as a combination of two trapezoidal rules, one with step size <Math mode="inline" xml:id="C3.S5.SS2.p3.m1">h</Math> and one with step size <Math mode="inline" xml:id="C3.S5.SS2.p3.m2">h/2</Math> to refine the error term.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS3">
+<title>Romberg Integration</title>        
+  
+<para xml:id="C3.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C3.S5.SS3.p1.s1">
+Further refinements are achieved by Romberg integration.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C3.S5.SS3.p1.s2">
+If <Math mode="inline" xml:id="C3.S5.SS3.p1.m1">f\in C^{2m+2}[a,b]</Math> , then the remainder <Math mode="inline" xml:id="C3.S5.SS3.p1.m2">E_{n}(f)</Math> in (3.5.2) can be expanded in the form <Math equation-number="3.5.9" mode="display" xml:id="C3.S5.E9">E_{n}(f)=c_{1}h^{2}+c_{2}h^{4}+\dots+c_{m}h^{2m}+O\left(h^{2m+2}\right),</Math> where <Math mode="inline" xml:id="C3.S5.SS3.p1.m3">h=(b-a)/n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C3.S5.SS3.p1.s3">
+As in Simpson’s rule, by combining the rule for <Math mode="inline" xml:id="C3.S5.SS3.p1.m4">h</Math> with that for <Math mode="inline" xml:id="C3.S5.SS3.p1.m5">h/2</Math> , the first error term <Math mode="inline" xml:id="C3.S5.SS3.p1.m6">c_{1}h^{2}</Math> in (3.5.9) can be eliminated. With the Romberg scheme successive terms <Math mode="inline" xml:id="C3.S5.SS3.p1.m7">c_{1}h^{2},c_{2}h^{4},\dots</Math> , in (3.5.9) are eliminated, according to the formula <Math equation-number="3.5.10" mode="display" xml:id="C3.S5.E10">G_{k}(\tfrac{1}{2}h)=G_{k-1}(\tfrac{1}{2}h)+\frac{G_{k-1}(\frac{1}{2}h)-G_{k-1 }(h)}{4^{k}-1}, if k\geq 1,</Math> beginning with <Math equation-number="3.5.11" mode="display" xml:id="C3.S5.E11">G_{0}(h)=h(\tfrac{1}{2}f_{0}+f_{1}+\dots+f_{n-1}+\tfrac{1}{2}f_{n}),</Math> although we may also start with the elementary rule with <Math mode="inline" xml:id="C3.S5.SS3.p1.m8">G_{0}(h)=\frac{1}{2}h(f(a)+f(b))</Math> and <Math mode="inline" xml:id="C3.S5.SS3.p1.m9">h=b-a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C3.S5.SS3.p1.s4">
+To generate <Math mode="inline" xml:id="C3.S5.SS3.p1.m10">G_{k}(h)</Math> the quantities <Math mode="inline" xml:id="C3.S5.SS3.p1.m11">G_{0}(h),G_{0}(h/2),\dots,G_{0}(h/2^{k})</Math> are needed. These can be found by means of the recursion <Math equation-number="3.5.12" mode="display" xml:id="C3.S5.E12">G_{0}(\tfrac{1}{2}h)=\tfrac{1}{2}G_{0}(h)+\tfrac{1}{2}h\sum_{k=0}^{n-1}f\left( x_{0}+(k+\tfrac{1}{2})h\right),</Math> which depends on function values computed previously.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C3.S5.SS3.p2.s1">
+If <Math mode="inline" xml:id="C3.S5.SS3.p2.m1">f\in C^{2k+2}(a,b)</Math> , then for <Math mode="inline" xml:id="C3.S5.SS3.p2.m2">j,k=0,1,\dots</Math> , <Math equation-number="3.5.13" mode="display" xml:id="C3.S5.E13">\int_{a}^{b}f(x)\mathrm{d}x-G_{k}\left(\frac{b-a}{2^{j}}\right)=-\frac{(b-a)^{ 2k+3}}{2^{k(k+1)}}\frac{4^{-j(k+1)}}{(2k+2)!}\left|B_{2k+2}\right|f^{(2k+2)}( \xi),</Math> for some <Math mode="inline" xml:id="C3.S5.SS3.p2.m3">\xi\in(a,b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C3.S5.SS3.p2.s2">
+For the Bernoulli numbers <Math mode="inline" xml:id="C3.S5.SS3.p2.m4">B_{m}</Math> see §24.2(i).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S5.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C3.S5.SS3.p3.s1">
+When <Math mode="inline" xml:id="C3.S5.SS3.p3.m1">f\in C^{\infty}</Math> , the Romberg method affords a means of obtaining high accuracy in many cases with a relatively simple adaptive algorithm.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C3.S5.SS3.p3.s2">
+However, as illustrated by the next example, other methods may be more efficient.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S5.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C3.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C3.S5.Px1.p1.s1">
+With <Math mode="inline" xml:id="C3.S5.Px1.p1.m1">J_{0}\left(t\right)</Math> denoting the Bessel function (§10.2(ii)) the integral <Math equation-number="3.5.14" mode="display" xml:id="C3.S5.E14">\int_{0}^{\infty}e^{-pt}J_{0}\left(t\right)\mathrm{d}t=\frac{1}{\sqrt{p^{2}+1}}</Math> is computed with <Math mode="inline" xml:id="C3.S5.Px1.p1.m2">p=1</Math> on the interval <Math mode="inline" xml:id="C3.S5.Px1.p1.m3">[0,30]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C3.S5.Px1.p1.s2">
+Using (3.5.10) with <Math mode="inline" xml:id="C3.S5.Px1.p1.m4">h=30/4=7.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C3.S5.Px1.p1.s3">
+5 we obtain <Math mode="inline" xml:id="C3.S5.Px1.p1.m5">G_{7}(h)</Math> with 14 correct digits.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C3.S5.Px1.p1.s4">
+About <Math mode="inline" xml:id="C3.S5.Px1.p1.m6">2^{9}=512</Math> function evaluations are needed. (With the 20-point Gauss–Laguerre formula (§3.5(v)) the same precision can be achieved with 15 function evaluations.)With
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C3.S5.Px1.p1.s5">
+<Math mode="inline" xml:id="C3.S5.Px1.p1.m7">j=2</Math> and <Math mode="inline" xml:id="C3.S5.Px1.p1.m8">k=7</Math> , the coefficient of the derivative <Math mode="inline" xml:id="C3.S5.Px1.p1.m9">f^{(16)}(\xi)</Math> in (3.5.13) is found to be <Math mode="inline" xml:id="C3.S5.Px1.p1.m10">(0.14\dots)\times 10^{-13}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C3.S5.Px1.p2.s1">
+See Davis and Rabinowitz (1984, pp. 440–441) for modifications of the Romberg method when the function <Math mode="inline" xml:id="C3.S5.Px1.p2.m1">f</Math> is singular.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS4">
+<title>Interpolatory Quadrature Rules</title>         
+<para xml:id="C3.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C3.S5.SS4.p1.s1">
+An interpolatory quadrature rule <Math equation-number="3.5.15" mode="display" xml:id="C3.S5.E15">\int_{a}^{b}f(x)w(x)\mathrm{d}x=\sum_{k=1}^{n}w_{k}f(x_{k})+E_{n}(f),</Math> with weight function <Math mode="inline" xml:id="C3.S5.SS4.p1.m1">w(x)</Math> , is one for which <Math mode="inline" xml:id="C3.S5.SS4.p1.m2">E_{n}(f)=0</Math> whenever <Math mode="inline" xml:id="C3.S5.SS4.p1.m3">f</Math> is a polynomial of degree <Math mode="inline" xml:id="C3.S5.SS4.p1.m4">\leq n-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C3.S5.SS4.p1.s2">
+The nodes <Math mode="inline" xml:id="C3.S5.SS4.p1.m5">x_{1},x_{2},\dots,x_{n}</Math> are prescribed, and the weights <Math mode="inline" xml:id="C3.S5.SS4.p1.m6">w_{k}</Math> and error term <Math mode="inline" xml:id="C3.S5.SS4.p1.m7">E_{n}(f)</Math> are found by integrating the product of the Lagrange interpolation polynomial of degree <Math mode="inline" xml:id="C3.S5.SS4.p1.m8">n-1</Math> and <Math mode="inline" xml:id="C3.S5.SS4.p1.m9">w(x)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C3.S5.SS4.p2.s1">
+If the extreme members of the set of nodes <Math mode="inline" xml:id="C3.S5.SS4.p2.m1">x_{1},x_{2},\dots,x_{n}</Math> are the endpoints <Math mode="inline" xml:id="C3.S5.SS4.p2.m2">a</Math> and <Math mode="inline" xml:id="C3.S5.SS4.p2.m3">b</Math> , then the quadrature rule is said to be closed. Or if the set <Math mode="inline" xml:id="C3.S5.SS4.p2.m4">x_{1},x_{2},\dots,x_{n}</Math> lies in the open interval <Math mode="inline" xml:id="C3.S5.SS4.p2.m5">(a,b)</Math> , then the quadrature rule is said to be open.
+</sentence>
+
+</para>
+  
+      
+<para xml:id="C3.S5.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C3.S5.SS4.p3.s1">
+Rules of closed type include the Newton–Cotes formulas such as the trapezoidal rules and Simpson’s rule.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C3.S5.SS4.p3.s2">
+Examples of open rules are the Gauss formulas (§3.5(v)), themidpoint rule, and Fejér’s quadrature rule.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C3.S5.SS4.p3.s3">
+For the latter <Math mode="inline" xml:id="C3.S5.SS4.p3.m1">a=-1</Math> , <Math mode="inline" xml:id="C3.S5.SS4.p3.m2">b=1</Math> , and the nodes <Math mode="inline" xml:id="C3.S5.SS4.p3.m3">x_{k}</Math> are the extrema of the Chebyshev polynomial <Math mode="inline" xml:id="C3.S5.SS4.p3.m4">T_{n}\left(x\right)</Math> (§3.11(ii) and §18.3).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C3.S5.SS4.p3.s4">
+If we add <Math mode="inline" xml:id="C3.S5.SS4.p3.m5">-1</Math> and <Math mode="inline" xml:id="C3.S5.SS4.p3.m6">1</Math> to this set of <Math mode="inline" xml:id="C3.S5.SS4.p3.m7">x_{k}</Math> , then the resulting closed formula is the frequently-used Clenshaw–Curtis formula, whose weights are positive and given by <Math equation-number="3.5.16" mode="display" xml:id="C3.S5.E16">w_{k}=\frac{g_{k}}{n}\left(1-\sum_{j=1}^{\left\lfloor n/2\right\rfloor}\frac{b _{j}}{4j^{2}-1}\cos\left(2jk\pi/n\right)\right),</Math> where <Math mode="inline" xml:id="C3.S5.SS4.p3.m8">x_{k}=\cos\left(k\pi/n\right),k=0,1,\ldots,n</Math> , and <Math equation-number="3.5.17" mode="display" xml:id="C3.S5.E17">g_{k}=\begin{cases}1,&amp;\text{$k=0,n$},\\ 2,&amp;\text{otherwise},\end{cases}\quad b_{j}=\begin{cases}1,&amp;\text{$j=\frac{1}{2 }n$},\\ 2,&amp;\text{otherwise}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C3.S5.SS4.p4.s1">
+For further information, see Mason and Handscomb (2003, Chapter 8),Davis and Rabinowitz (1984, pp. 74–92), and Clenshaw and Curtis (1960).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C3.S5.SS4.p5.s1">
+For detailed comparisons of the Clenshaw–Curtis formula with Gauss quadrature (§3.5(v)), see Trefethen (2008, 2011).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS5">
+<title>Gauss Quadrature</title>          
+    
+ 
+<para xml:id="C3.S5.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C3.S5.SS5.p1.s1">
+Let <Math mode="inline" xml:id="C3.S5.SS5.p1.m1">\{p_{n}\}</Math> denote the set of monic polynomials <Math mode="inline" xml:id="C3.S5.SS5.p1.m2">p_{n}</Math> of degree <Math mode="inline" xml:id="C3.S5.SS5.p1.m3">n</Math> (coefficient of <Math mode="inline" xml:id="C3.S5.SS5.p1.m4">x^{n}</Math> equal to <Math mode="inline" xml:id="C3.S5.SS5.p1.m5">1</Math> ) that are orthogonal with respect to a positive weight function <Math mode="inline" xml:id="C3.S5.SS5.p1.m6">w</Math> on a finite or infinite interval <Math mode="inline" xml:id="C3.S5.SS5.p1.m7">(a,b)</Math> ; compare §18.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C3.S5.SS5.p1.s2">
+In Gauss quadrature (also known asGauss–Christoffel quadrature) we use (3.5.15) with nodes <Math mode="inline" xml:id="C3.S5.SS5.p1.m8">x_{k}</Math> the zeros of <Math mode="inline" xml:id="C3.S5.SS5.p1.m9">p_{n}</Math> , and weights <Math mode="inline" xml:id="C3.S5.SS5.p1.m10">w_{k}</Math> given by <Math equation-number="3.5.18" mode="display" xml:id="C3.S5.E18">w_{k}=\int_{a}^{b}\frac{p_{n}(x)}{(x-x_{k})p^{\mspace{1.0mu }\prime}_{n}(x_{k} )}\,w(x)\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="42" xml:id="C3.S5.SS5.p1.s3">
+The <Math mode="inline" xml:id="C3.S5.SS5.p1.m11">w_{k}</Math> are also known as Christoffel coefficients orChristoffel numbers and they are all positive.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="43" xml:id="C3.S5.SS5.p1.s4">
+The remainder is given by <Math equation-number="3.5.19" mode="display" xml:id="C3.S5.E19">E_{n}(f)=\gamma_{n}f^{(2n)}(\xi)/(2n)!,</Math> where <Math equation-number="3.5.20" mode="display" xml:id="C3.S5.E20">\gamma_{n}=\int_{a}^{b}p_{n}^{2}(x)w(x)\mathrm{d}x,</Math> and <Math mode="inline" xml:id="C3.S5.SS5.p1.m12">\xi</Math> is some point in <Math mode="inline" xml:id="C3.S5.SS5.p1.m13">(a,b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="44" xml:id="C3.S5.SS5.p1.s5">
+As a consequence, the rule is exact for polynomials of degree <Math mode="inline" xml:id="C3.S5.SS5.p1.m14">\leq 2n-1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C3.S5.SS5.p2.s1">
+In practical applications the weight function <Math mode="inline" xml:id="C3.S5.SS5.p2.m1">w(x)</Math> is chosen to simulate the asymptotic behavior of the integrand as the endpoints are approached. For <Math mode="inline" xml:id="C3.S5.SS5.p2.m2">C^{\infty}</Math> functions Gauss quadrature can be very efficient.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C3.S5.SS5.p2.s2">
+In adaptive algorithms the evaluation of the nodes and weights may cause difficulties, unless exact values are known.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C3.S5.SS5.p3.s1">
+For the derivation of Gauss quadrature formulas seeGautschi (2004, pp. 22–32), Gil et al. (2007a, §5.3), andDavis and Rabinowitz (1984, §§2.7 and 3.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C3.S5.SS5.p3.s2">
+Stroud and Secrest (1966) includes computational methods and extensive tables.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C3.S5.SS5.p3.s3">
+For further extensions, applications, and computation of orthogonal polynomials and Gauss-type formulas, seeGautschi (1994, 1996, 2004).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="50" xml:id="C3.S5.SS5.p3.s4">
+For effective testing of Gaussian quadrature rules see Gautschi (1983).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C3.S5.SS5.p4.s1">
+For the classical orthogonal polynomials related to the following Gauss rules, see §18.3.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C3.S5.SS5.p4.s2">
+The given quantities <Math mode="inline" xml:id="C3.S5.SS5.p4.m1">\gamma_{n}</Math> follow from (18.2.5), (18.2.7),Table 18.3.1,and the relation <Math mode="inline" xml:id="C3.S5.SS5.p4.m2">\gamma_{n}=\ifrac{h_{n}}{k_{n}^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S5.Px2">
+<title>Gauss–Legendre Formula</title>  
+  
+   
+<para xml:id="C3.S5.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C3.S5.Px2.p1.s1">
+ <Math equation-number="3.5.21" mode="display" xml:id="C3.S5.E21">[a,b]=[-1,1],w(x)=1,\gamma_{n}=\frac{2^{2n+1}}{2n+1}\,\frac{(n!)^{4}}{((2n)!)^{2}}\,</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C3.S5.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C3.S5.Px2.p2.s1">
+The nodes <Math mode="inline" xml:id="C3.S5.Px2.p2.m1">x_{k}</Math> and weights <Math mode="inline" xml:id="C3.S5.Px2.p2.m2">w_{k}</Math> for <Math mode="inline" xml:id="C3.S5.Px2.p2.m3">n=5</Math> , <Math mode="inline" xml:id="C3.S5.Px2.p2.m4">10</Math> are shown in Tables3.5.1 and 3.5.2.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C3.S5.Px2.p2.s2">
+The <Math mode="inline" xml:id="C3.S5.Px2.p2.m5">p_{n}(x)</Math> are themonic Legendre polynomials, that is, the polynomials <Math mode="inline" xml:id="C3.S5.Px2.p2.m6">P_{n}\left(x\right)</Math> (§18.3) scaled so that the coefficient of the highest power of <Math mode="inline" xml:id="C3.S5.Px2.p2.m7">x</Math> in their explicit forms is unity.
+</sentence>
+
+</para>
+       
+  
+<sentence sentence-num-in-section="56" xml:id="C3.S5.T1.s1">
+Table 3.5.1: Nodes and weights for the 5-point Gauss–Legendre formula.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="1" xml:id="C3.S5.T1.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="2" xml:id="C3.S5.T1.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="3" xml:id="C3.S5.T1.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r2.m1">0.00000\;00000\;00000</Math>
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="4" xml:id="C3.S5.T1.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r2.m3">0.56888\;88888\;88889</Math>
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="5" xml:id="C3.S5.T1.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r3.m1">0.53846\;93101\;05683</Math>
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="6" xml:id="C3.S5.T1.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r3.m3">0.47862\;86704\;99366</Math>
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="7" xml:id="C3.S5.T1.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r4.m1">0.90617\;98459\;38664</Math>
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="8" xml:id="C3.S5.T1.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T1.t1.r4.m3">0.23692\;68850\;56189</Math>
+</sentence>
+          
+<sentence sentence-num-in-section="65" xml:id="C3.S5.T2.s1">
+Table 3.5.2: Nodes and weights for the 10-point Gauss–Legendre formula.
+</sentence>  
+ 
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="1" xml:id="C3.S5.T2.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T2.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="2" xml:id="C3.S5.T2.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T2.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="3" xml:id="C3.S5.T2.t1.s3">
+0.14887 43389 81631 211
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="4" xml:id="C3.S5.T2.t1.s4">
+0.29552 42247 14752 870
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="5" xml:id="C3.S5.T2.t1.s5">
+0.43339 53941 29247 191
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="6" xml:id="C3.S5.T2.t1.s6">
+0.26926 67193 09996 355
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="7" xml:id="C3.S5.T2.t1.s7">
+0.67940 95682 99024 406
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="8" xml:id="C3.S5.T2.t1.s8">
+0.21908 63625 15982 044
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="9" xml:id="C3.S5.T2.t1.s9">
+0.86506 33666 88984 511
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="10" xml:id="C3.S5.T2.t1.s10">
+0.14945 13491 50580 593
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="11" xml:id="C3.S5.T2.t1.s11">
+0.97390 65285 17171 720
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="12" xml:id="C3.S5.T2.t1.s12">
+0.06667 13443 08688 138
+</sentence>
+   
+<para xml:id="C3.S5.Px2.p3">
+
+</para>
+          
+<sentence sentence-num-in-section="78" xml:id="C3.S5.T3.s1">
+Table 3.5.3: Nodes and weights for the 20-point Gauss–Legendre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="1" xml:id="C3.S5.T3.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T3.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="2" xml:id="C3.S5.T3.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T3.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="3" xml:id="C3.S5.T3.t1.s3">
+0.07652 65211 33497 33375 5
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="4" xml:id="C3.S5.T3.t1.s4">
+0.15275 33871 30725 85069 8
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="5" xml:id="C3.S5.T3.t1.s5">
+0.22778 58511 41645 07808 0
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="6" xml:id="C3.S5.T3.t1.s6">
+0.14917 29864 72603 74678 8
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="7" xml:id="C3.S5.T3.t1.s7">
+0.37370 60887 15419 56067 3
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="8" xml:id="C3.S5.T3.t1.s8">
+0.14209 61093 18382 05132 9
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="9" xml:id="C3.S5.T3.t1.s9">
+0.51086 70019 50827 09800 4
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="10" xml:id="C3.S5.T3.t1.s10">
+0.13168 86384 49176 62689 8
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="11" xml:id="C3.S5.T3.t1.s11">
+0.63605 36807 26515 02545 3
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="12" xml:id="C3.S5.T3.t1.s12">
+0.11819 45319 61518 41731 2
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="13" xml:id="C3.S5.T3.t1.s13">
+0.74633 19064 60150 79261 4
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="14" xml:id="C3.S5.T3.t1.s14">
+0.10193 01198 17240 43503 7
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="15" xml:id="C3.S5.T3.t1.s15">
+0.83911 69718 22218 82339 5
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="16" xml:id="C3.S5.T3.t1.s16">
+0.08327 67415 76704 74872 5
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="17" xml:id="C3.S5.T3.t1.s17">
+0.91223 44282 51325 90586 8
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="18" xml:id="C3.S5.T3.t1.s18">
+0.06267 20483 34109 06357 0
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="19" xml:id="C3.S5.T3.t1.s19">
+0.96397 19272 77913 79126 8
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="20" xml:id="C3.S5.T3.t1.s20">
+0.04060 14298 00386 94133 1
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="21" xml:id="C3.S5.T3.t1.s21">
+0.99312 85991 85094 92478 6
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="22" xml:id="C3.S5.T3.t1.s22">
+0.01761 40071 39152 11831 2
+</sentence>
+           
+<sentence sentence-num-in-section="101" xml:id="C3.S5.T4.s1">
+Table 3.5.4: Nodes and weights for the 40-point Gauss–Legendre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="1" xml:id="C3.S5.T4.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T4.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="2" xml:id="C3.S5.T4.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T4.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="3" xml:id="C3.S5.T4.t1.s3">
+0.03877 24175 06050 82193 3
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="4" xml:id="C3.S5.T4.t1.s4">
+0.07750 59479 78424 81126 4
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="5" xml:id="C3.S5.T4.t1.s5">
+0.11608 40706 75255 20848 3
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="6" xml:id="C3.S5.T4.t1.s6">
+0.07703 98181 64247 96558 8
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="7" xml:id="C3.S5.T4.t1.s7">
+0.19269 75807 01371 09971 6
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="8" xml:id="C3.S5.T4.t1.s8">
+0.07611 03619 00626 24237 2
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="9" xml:id="C3.S5.T4.t1.s9">
+0.26815 21850 07253 68114 1
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="10" xml:id="C3.S5.T4.t1.s10">
+0.07472 31690 57968 26420 0
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="11" xml:id="C3.S5.T4.t1.s11">
+0.34199 40908 25758 47300 7
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="12" xml:id="C3.S5.T4.t1.s12">
+0.07288 65823 95804 05906 1
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="13" xml:id="C3.S5.T4.t1.s13">
+0.41377 92043 71605 00152 5
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="14" xml:id="C3.S5.T4.t1.s14">
+0.07061 16473 91286 77969 6
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="15" xml:id="C3.S5.T4.t1.s15">
+0.48307 58016 86178 71290 9
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="16" xml:id="C3.S5.T4.t1.s16">
+0.06791 20458 15233 90382 6
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="17" xml:id="C3.S5.T4.t1.s17">
+0.54946 71250 95128 20207 6
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="18" xml:id="C3.S5.T4.t1.s18">
+0.06480 40134 56601 03807 5
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="19" xml:id="C3.S5.T4.t1.s19">
+0.61255 38896 67980 23795 3
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="20" xml:id="C3.S5.T4.t1.s20">
+0.06130 62424 92928 93916 7
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="21" xml:id="C3.S5.T4.t1.s21">
+0.67195 66846 14179 54837 9
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="22" xml:id="C3.S5.T4.t1.s22">
+0.05743 97690 99391 55136 7
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="23" xml:id="C3.S5.T4.t1.s23">
+0.72731 82551 89927 10328 1
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="24" xml:id="C3.S5.T4.t1.s24">
+0.05322 78469 83936 82435 5
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="25" xml:id="C3.S5.T4.t1.s25">
+0.77830 56514 26519 38769 5
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="26" xml:id="C3.S5.T4.t1.s26">
+0.04869 58076 35072 23206 1
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="27" xml:id="C3.S5.T4.t1.s27">
+0.82461 22308 33311 66319 6
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="28" xml:id="C3.S5.T4.t1.s28">
+0.04387 09081 85673 27199 2
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="29" xml:id="C3.S5.T4.t1.s29">
+0.86595 95032 12259 50382 1
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="30" xml:id="C3.S5.T4.t1.s30">
+0.03878 21679 74472 01764 0
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="31" xml:id="C3.S5.T4.t1.s31">
+0.90209 88069 68874 29672 8
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="32" xml:id="C3.S5.T4.t1.s32">
+0.03346 01952 82547 84739 3
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="33" xml:id="C3.S5.T4.t1.s33">
+0.93281 28082 78676 53336 1
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="34" xml:id="C3.S5.T4.t1.s34">
+0.02793 70069 80023 40109 9
+</sentence>
+
+<sentence sentence-num-in-section="136" sentence-num-in-table="35" xml:id="C3.S5.T4.t1.s35">
+0.95791 68192 13791 65580 5
+</sentence>
+
+<sentence sentence-num-in-section="137" sentence-num-in-table="36" xml:id="C3.S5.T4.t1.s36">
+0.02224 58491 94166 95726 2
+</sentence>
+
+<sentence sentence-num-in-section="138" sentence-num-in-table="37" xml:id="C3.S5.T4.t1.s37">
+0.97725 99499 83774 26266 3
+</sentence>
+
+<sentence sentence-num-in-section="139" sentence-num-in-table="38" xml:id="C3.S5.T4.t1.s38">
+0.01642 10583 81907 88871 3
+</sentence>
+
+<sentence sentence-num-in-section="140" sentence-num-in-table="39" xml:id="C3.S5.T4.t1.s39">
+0.99072 62386 99457 00645 3
+</sentence>
+
+<sentence sentence-num-in-section="141" sentence-num-in-table="40" xml:id="C3.S5.T4.t1.s40">
+0.01049 82845 31152 81361 5
+</sentence>
+
+<sentence sentence-num-in-section="142" sentence-num-in-table="41" xml:id="C3.S5.T4.t1.s41">
+0.99823 77097 10559 20035 0
+</sentence>
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="42" xml:id="C3.S5.T4.t1.s42">
+0.00452 12770 98533 19125 8
+</sentence>
+           
+<sentence sentence-num-in-section="144" xml:id="C3.S5.T5.s1">
+Table 3.5.5: Nodes and weights for the 80-point Gauss–Legendre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="1" xml:id="C3.S5.T5.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T5.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="2" xml:id="C3.S5.T5.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T5.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="3" xml:id="C3.S5.T5.t1.s3">
+0.01951 13832 56793 99765 4
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="4" xml:id="C3.S5.T5.t1.s4">
+0.03901 78136 56306 65481 1
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="5" xml:id="C3.S5.T5.t1.s5">
+0.05850 44371 52420 66862 9
+</sentence>
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="6" xml:id="C3.S5.T5.t1.s6">
+0.03895 83959 62769 53119 9
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="7" xml:id="C3.S5.T5.t1.s7">
+0.09740 83984 41584 59906 3
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="8" xml:id="C3.S5.T5.t1.s8">
+0.03883 96510 59051 96893 2
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="9" xml:id="C3.S5.T5.t1.s9">
+0.13616 40228 09143 88655 9
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="10" xml:id="C3.S5.T5.t1.s10">
+0.03866 17597 74076 46332 7
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="11" xml:id="C3.S5.T5.t1.s11">
+0.17471 22918 32646 81255 9
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="12" xml:id="C3.S5.T5.t1.s12">
+0.03842 49930 06959 42318 5
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="13" xml:id="C3.S5.T5.t1.s13">
+0.21299 45028 57666 13257 2
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="14" xml:id="C3.S5.T5.t1.s14">
+0.03812 97113 14477 63834 4
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="15" xml:id="C3.S5.T5.t1.s15">
+0.25095 23583 92272 12049 3
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="16" xml:id="C3.S5.T5.t1.s16">
+0.03777 63643 62001 39749 0
+</sentence>
+
+<sentence sentence-num-in-section="161" sentence-num-in-table="17" xml:id="C3.S5.T5.t1.s17">
+0.28852 80548 84511 85310 9
+</sentence>
+
+<sentence sentence-num-in-section="162" sentence-num-in-table="18" xml:id="C3.S5.T5.t1.s18">
+0.03736 54902 38730 49002 7
+</sentence>
+
+<sentence sentence-num-in-section="163" sentence-num-in-table="19" xml:id="C3.S5.T5.t1.s19">
+0.32566 43707 47701 91461 9
+</sentence>
+
+<sentence sentence-num-in-section="164" sentence-num-in-table="20" xml:id="C3.S5.T5.t1.s20">
+0.03689 77146 38276 00883 9
+</sentence>
+
+<sentence sentence-num-in-section="165" sentence-num-in-table="21" xml:id="C3.S5.T5.t1.s21">
+0.36230 47534 99487 31561 9
+</sentence>
+
+<sentence sentence-num-in-section="166" sentence-num-in-table="22" xml:id="C3.S5.T5.t1.s22">
+0.03637 37499 05835 97804 4
+</sentence>
+
+<sentence sentence-num-in-section="167" sentence-num-in-table="23" xml:id="C3.S5.T5.t1.s23">
+0.39839 34058 81969 22702 4
+</sentence>
+
+<sentence sentence-num-in-section="168" sentence-num-in-table="24" xml:id="C3.S5.T5.t1.s24">
+0.03579 43939 53416 05460 3
+</sentence>
+
+<sentence sentence-num-in-section="169" sentence-num-in-table="25" xml:id="C3.S5.T5.t1.s25">
+0.43387 53708 31756 09306 2
+</sentence>
+
+<sentence sentence-num-in-section="170" sentence-num-in-table="26" xml:id="C3.S5.T5.t1.s26">
+0.03516 05290 44747 59349 6
+</sentence>
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="27" xml:id="C3.S5.T5.t1.s27">
+0.46869 66151 70544 47703 6
+</sentence>
+
+<sentence sentence-num-in-section="172" sentence-num-in-table="28" xml:id="C3.S5.T5.t1.s28">
+0.03447 31204 51753 92879 4
+</sentence>
+
+<sentence sentence-num-in-section="173" sentence-num-in-table="29" xml:id="C3.S5.T5.t1.s29">
+0.50280 41118 88784 98759 4
+</sentence>
+
+<sentence sentence-num-in-section="174" sentence-num-in-table="30" xml:id="C3.S5.T5.t1.s30">
+0.03373 32149 84611 52281 7
+</sentence>
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="31" xml:id="C3.S5.T5.t1.s31">
+0.53614 59208 97131 93202 0
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="32" xml:id="C3.S5.T5.t1.s32">
+0.03294 19393 97645 40138 3
+</sentence>
+
+<sentence sentence-num-in-section="177" sentence-num-in-table="33" xml:id="C3.S5.T5.t1.s33">
+0.56867 12681 22709 78472 5
+</sentence>
+
+<sentence sentence-num-in-section="178" sentence-num-in-table="34" xml:id="C3.S5.T5.t1.s34">
+0.03210 04986 73487 77314 8
+</sentence>
+
+<sentence sentence-num-in-section="179" sentence-num-in-table="35" xml:id="C3.S5.T5.t1.s35">
+0.60033 06228 29751 74315 5
+</sentence>
+
+<sentence sentence-num-in-section="180" sentence-num-in-table="36" xml:id="C3.S5.T5.t1.s36">
+0.03121 01741 88114 70164 2
+</sentence>
+
+<sentence sentence-num-in-section="181" sentence-num-in-table="37" xml:id="C3.S5.T5.t1.s37">
+0.63107 57730 46871 96624 8
+</sentence>
+
+<sentence sentence-num-in-section="182" sentence-num-in-table="38" xml:id="C3.S5.T5.t1.s38">
+0.03027 23217 59557 98066 1
+</sentence>
+
+<sentence sentence-num-in-section="183" sentence-num-in-table="39" xml:id="C3.S5.T5.t1.s39">
+0.66085 98989 86119 80173 6
+</sentence>
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="40" xml:id="C3.S5.T5.t1.s40">
+0.02928 83695 83267 84769 3
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="41" xml:id="C3.S5.T5.t1.s41">
+0.68963 76443 42027 60077 1
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="42" xml:id="C3.S5.T5.t1.s42">
+0.02825 98160 57276 86239 7
+</sentence>
+
+<sentence sentence-num-in-section="187" sentence-num-in-table="43" xml:id="C3.S5.T5.t1.s43">
+0.71736 51853 62099 88025 4
+</sentence>
+
+<sentence sentence-num-in-section="188" sentence-num-in-table="44" xml:id="C3.S5.T5.t1.s44">
+0.02718 82275 00486 38067 4
+</sentence>
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="45" xml:id="C3.S5.T5.t1.s45">
+0.74400 02975 83597 27231 7
+</sentence>
+
+<sentence sentence-num-in-section="190" sentence-num-in-table="46" xml:id="C3.S5.T5.t1.s46">
+0.02607 52357 67565 11790 3
+</sentence>
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="47" xml:id="C3.S5.T5.t1.s47">
+0.76950 24201 35041 37386 6
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="48" xml:id="C3.S5.T5.t1.s48">
+0.02492 25357 64115 49110 5
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="49" xml:id="C3.S5.T5.t1.s49">
+0.79383 27175 04605 44994 9
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="50" xml:id="C3.S5.T5.t1.s50">
+0.02373 18828 65930 10129 3
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="51" xml:id="C3.S5.T5.t1.s51">
+0.81695 41386 81463 47037 1
+</sentence>
+
+<sentence sentence-num-in-section="196" sentence-num-in-table="52" xml:id="C3.S5.T5.t1.s52">
+0.02250 50902 46332 46192 6
+</sentence>
+
+<sentence sentence-num-in-section="197" sentence-num-in-table="53" xml:id="C3.S5.T5.t1.s53">
+0.83883 14735 80255 27561 7
+</sentence>
+
+<sentence sentence-num-in-section="198" sentence-num-in-table="54" xml:id="C3.S5.T5.t1.s54">
+0.02124 40261 15782 00638 9
+</sentence>
+
+<sentence sentence-num-in-section="199" sentence-num-in-table="55" xml:id="C3.S5.T5.t1.s55">
+0.85943 14066 63111 09697 7
+</sentence>
+
+<sentence sentence-num-in-section="200" sentence-num-in-table="56" xml:id="C3.S5.T5.t1.s56">
+0.01995 06108 78141 99892 9
+</sentence>
+
+<sentence sentence-num-in-section="201" sentence-num-in-table="57" xml:id="C3.S5.T5.t1.s57">
+0.87872 25676 78213 82870 4
+</sentence>
+
+<sentence sentence-num-in-section="202" sentence-num-in-table="58" xml:id="C3.S5.T5.t1.s58">
+0.01862 68142 08299 03142 9
+</sentence>
+
+<sentence sentence-num-in-section="203" sentence-num-in-table="59" xml:id="C3.S5.T5.t1.s59">
+0.89667 55794 38770 68319 4
+</sentence>
+
+<sentence sentence-num-in-section="204" sentence-num-in-table="60" xml:id="C3.S5.T5.t1.s60">
+0.01727 46520 56269 30635 9
+</sentence>
+
+<sentence sentence-num-in-section="205" sentence-num-in-table="61" xml:id="C3.S5.T5.t1.s61">
+0.91326 31025 71757 65416 5
+</sentence>
+
+<sentence sentence-num-in-section="206" sentence-num-in-table="62" xml:id="C3.S5.T5.t1.s62">
+0.01589 61835 83725 68804 5
+</sentence>
+
+<sentence sentence-num-in-section="207" sentence-num-in-table="63" xml:id="C3.S5.T5.t1.s63">
+0.92845 98771 72445 79595 3
+</sentence>
+
+<sentence sentence-num-in-section="208" sentence-num-in-table="64" xml:id="C3.S5.T5.t1.s64">
+0.01449 35080 40509 07611 7
+</sentence>
+
+<sentence sentence-num-in-section="209" sentence-num-in-table="65" xml:id="C3.S5.T5.t1.s65">
+0.94224 27613 09872 67475 2
+</sentence>
+
+<sentence sentence-num-in-section="210" sentence-num-in-table="66" xml:id="C3.S5.T5.t1.s66">
+0.01306 87615 92401 33929 4
+</sentence>
+
+<sentence sentence-num-in-section="211" sentence-num-in-table="67" xml:id="C3.S5.T5.t1.s67">
+0.95459 07663 43634 90549 3
+</sentence>
+
+<sentence sentence-num-in-section="212" sentence-num-in-table="68" xml:id="C3.S5.T5.t1.s68">
+0.01162 41141 20797 82691 7
+</sentence>
+
+<sentence sentence-num-in-section="213" sentence-num-in-table="69" xml:id="C3.S5.T5.t1.s69">
+0.96548 50890 43799 25145 2
+</sentence>
+
+<sentence sentence-num-in-section="214" sentence-num-in-table="70" xml:id="C3.S5.T5.t1.s70">
+0.01016 17660 41103 06452 1
+</sentence>
+
+<sentence sentence-num-in-section="215" sentence-num-in-table="71" xml:id="C3.S5.T5.t1.s71">
+0.97490 91405 85727 79338 6
+</sentence>
+
+<sentence sentence-num-in-section="216" sentence-num-in-table="72" xml:id="C3.S5.T5.t1.s72">
+0.00868 39452 69260 85842 6
+</sentence>
+
+<sentence sentence-num-in-section="217" sentence-num-in-table="73" xml:id="C3.S5.T5.t1.s73">
+0.98284 85727 38629 07041 8
+</sentence>
+
+<sentence sentence-num-in-section="218" sentence-num-in-table="74" xml:id="C3.S5.T5.t1.s74">
+0.00719 29047 68117 31275 3
+</sentence>
+
+<sentence sentence-num-in-section="219" sentence-num-in-table="75" xml:id="C3.S5.T5.t1.s75">
+0.98929 13024 99755 53102 7
+</sentence>
+
+<sentence sentence-num-in-section="220" sentence-num-in-table="76" xml:id="C3.S5.T5.t1.s76">
+0.00569 09224 51403 19864 9
+</sentence>
+
+<sentence sentence-num-in-section="221" sentence-num-in-table="77" xml:id="C3.S5.T5.t1.s77">
+0.99422 75409 65688 27789 2
+</sentence>
+
+<sentence sentence-num-in-section="222" sentence-num-in-table="78" xml:id="C3.S5.T5.t1.s78">
+0.00418 03131 24694 89523 7
+</sentence>
+
+<sentence sentence-num-in-section="223" sentence-num-in-table="79" xml:id="C3.S5.T5.t1.s79">
+0.99764 98643 98237 68889 9
+</sentence>
+
+<sentence sentence-num-in-section="224" sentence-num-in-table="80" xml:id="C3.S5.T5.t1.s80">
+0.00266 35335 89512 68166 9
+</sentence>
+
+<sentence sentence-num-in-section="225" sentence-num-in-table="81" xml:id="C3.S5.T5.t1.s81">
+0.99955 38226 51630 62988 0
+</sentence>
+
+<sentence sentence-num-in-section="226" sentence-num-in-table="82" xml:id="C3.S5.T5.t1.s82">
+0.00114 49500 03186 94153 5
+</sentence>
+  
+  
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S5.Px3">
+<title>Gauss–Chebyshev Formula</title>  
+  
+<para xml:id="C3.S5.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C3.S5.Px3.p1.s1">
+ <Math equation-number="3.5.22" mode="display" xml:id="C3.S5.E22">[a,b]=[-1,1],w(x)=(1-x^{2})^{-1/2},\gamma_{n}=\frac{\pi}{2^{2n-1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="228" xml:id="C3.S5.Px3.p1.s2">
+The nodes <Math mode="inline" xml:id="C3.S5.Px3.p1.m1">x_{k}</Math> and weights <Math mode="inline" xml:id="C3.S5.Px3.p1.m2">w_{k}</Math> are known explicitly: <Math equation-number="3.5.23" mode="display" xml:id="C3.S5.E23">x_{k}=\cos\left(\frac{2k-1}{2n}\pi\right),w_{k}=\frac{\pi}{n}, , if k=1,2,\dots,n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px3.p2">
+
+</para>
+  
+<para xml:id="C3.S5.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C3.S5.Px3.p3.s1">
+In the case of Chebyshev weight functions <Math mode="inline" xml:id="C3.S5.Px3.p3.m1">w(x)=(1-x)^{\alpha}(1+x)^{\beta}</Math> on <Math mode="inline" xml:id="C3.S5.Px3.p3.m2">[-1,1]</Math> , with <Math mode="inline" xml:id="C3.S5.Px3.p3.m3">\left|\alpha\right|=\left|\beta\right|=\frac{1}{2}</Math> , the nodes <Math mode="inline" xml:id="C3.S5.Px3.p3.m4">x_{k}</Math> , weights <Math mode="inline" xml:id="C3.S5.Px3.p3.m5">w_{k}</Math> , and error constant <Math mode="inline" xml:id="C3.S5.Px3.p3.m6">\gamma_{n}</Math> , are as follows: <Math equation-number="3.5.24" mode="display" xml:id="C3.S5.E24">x_{k}=\cos\left(\frac{k}{n+1}\pi\right),w_{k}=\frac{\pi}{n+1}{\sin^{2}}\left(\frac{k}{n+1}\pi\right),\gamma_{n}=\frac{\pi}{2^{2n+1}}, if \alpha=\beta=\tfrac{1}{2},</Math> and <Math equation-number="3.5.25" mode="display" xml:id="C3.S5.E25">x_{k}=\pm\cos\left(\frac{2k}{2n+1}\pi\right),w_{k}=\frac{4\pi}{2n+1}{\sin^{2}}\left(\frac{k}{2n+1}\pi\right),\gamma_{n}=\frac{\pi}{2^{2n}}, if \alpha=-\beta=\pm\tfrac{1}{2},</Math> where <Math mode="inline" xml:id="C3.S5.Px3.p3.m7">k=1,2,\dots,n</Math>.
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S5.Px4">
+<title>Gauss–Jacobi Formula</title>  
+  
+ 
+<para xml:id="C3.S5.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C3.S5.Px4.p1.s1">
+ <Math equation-number="3.5.26" mode="display" xml:id="C3.S5.E26">[a,b]=[-1,1],w(x)=(1-x)^{\alpha}(1+x)^{\beta},\gamma_{n}=\dfrac{\Gamma\left(n+\alpha+1\right)\Gamma\left(n+\beta+1\right) \Gamma\left(n+\alpha+\beta+1\right)}{(2n+\alpha+\beta+1)(\Gamma\left(2n+\alpha +\beta+1\right))^{2}}2^{2n+\alpha+\beta+1}n!, if \alpha&gt;-1, \beta&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="231" xml:id="C3.S5.Px4.p1.s2">
+The <Math mode="inline" xml:id="C3.S5.Px4.p1.m1">p_{n}(x)</Math> are the monic Jacobi polynomials <Math mode="inline" xml:id="C3.S5.Px4.p1.m2">P^{(\alpha,\beta)}_{n}\left(x\right)</Math> (§18.3).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S5.Px5">
+<title>Gauss–Laguerre Formula</title>  
+  
+  
+<para xml:id="C3.S5.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C3.S5.Px5.p1.s1">
+ <Math equation-number="3.5.27" mode="display" xml:id="C3.S5.E27">[a,b)=[0,\infty),w(x)=x^{\alpha}e^{-x},\gamma_{n}=n!\,\Gamma\left(n+\alpha+1\right), if \alpha&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="233" xml:id="C3.S5.Px5.p1.s2">
+If <Math mode="inline" xml:id="C3.S5.Px5.p1.m1">\alpha\neq 0</Math> this is called the generalized Gauss–Laguerre formula.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="234" xml:id="C3.S5.Px5.p2.s1">
+The nodes <Math mode="inline" xml:id="C3.S5.Px5.p2.m1">x_{k}</Math> and weights <Math mode="inline" xml:id="C3.S5.Px5.p2.m2">w_{k}</Math> for <Math mode="inline" xml:id="C3.S5.Px5.p2.m3">\alpha=0</Math> and <Math mode="inline" xml:id="C3.S5.Px5.p2.m4">n=5</Math> , <Math mode="inline" xml:id="C3.S5.Px5.p2.m5">10</Math> are shown in Tables 3.5.6 and 3.5.7.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="235" xml:id="C3.S5.Px5.p2.s2">
+The <Math mode="inline" xml:id="C3.S5.Px5.p2.m6">p_{n}(x)</Math> are the monic Laguerre polynomials <Math mode="inline" xml:id="C3.S5.Px5.p2.m7">L_{n}\left(x\right)</Math> (§18.3).
+</sentence>
+
+</para>
+
+         
+<sentence sentence-num-in-section="236" xml:id="C3.S5.T6.s1">
+Table 3.5.6: Nodes and weights for the 5-point Gauss–Laguerre formula.
+</sentence>  
+ 
+
+<sentence sentence-num-in-section="237" sentence-num-in-table="1" xml:id="C3.S5.T6.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="238" sentence-num-in-table="2" xml:id="C3.S5.T6.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="239" sentence-num-in-table="3" xml:id="C3.S5.T6.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r2.m1">0.26356\;03197\;18141</Math>
+</sentence>
+
+<sentence sentence-num-in-section="240" sentence-num-in-table="4" xml:id="C3.S5.T6.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r2.m3">0.52175\;56105\;82809</Math>
+</sentence>
+
+<sentence sentence-num-in-section="241" sentence-num-in-table="5" xml:id="C3.S5.T6.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r3.m1">0.14134\;03059\;10652</Math>
+</sentence>
+
+<sentence sentence-num-in-section="242" sentence-num-in-table="6" xml:id="C3.S5.T6.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r3.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="243" sentence-num-in-table="7" xml:id="C3.S5.T6.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r3.m3">0.39866\;68110\;83176</Math>
+</sentence>
+
+<sentence sentence-num-in-section="244" sentence-num-in-table="8" xml:id="C3.S5.T6.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r4.m1">0.35964\;25771\;04072</Math>
+</sentence>
+
+<sentence sentence-num-in-section="245" sentence-num-in-table="9" xml:id="C3.S5.T6.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="246" sentence-num-in-table="10" xml:id="C3.S5.T6.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r4.m3">0.75942\;44968\;17076</Math>
+</sentence>
+
+<sentence sentence-num-in-section="247" sentence-num-in-table="11" xml:id="C3.S5.T6.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r4.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="248" sentence-num-in-table="12" xml:id="C3.S5.T6.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r5.m1">0.70858\;10005\;85884</Math>
+</sentence>
+
+<sentence sentence-num-in-section="249" sentence-num-in-table="13" xml:id="C3.S5.T6.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="250" sentence-num-in-table="14" xml:id="C3.S5.T6.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r5.m3">0.36117\;58679\;92205</Math>
+</sentence>
+
+<sentence sentence-num-in-section="251" sentence-num-in-table="15" xml:id="C3.S5.T6.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r5.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="252" sentence-num-in-table="16" xml:id="C3.S5.T6.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r6.m1">0.12640\;80084\;42758</Math>
+</sentence>
+
+<sentence sentence-num-in-section="253" sentence-num-in-table="17" xml:id="C3.S5.T6.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r6.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="254" sentence-num-in-table="18" xml:id="C3.S5.T6.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r6.m3">0.23369\;97238\;57762</Math>
+</sentence>
+
+<sentence sentence-num-in-section="255" sentence-num-in-table="19" xml:id="C3.S5.T6.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T6.t1.r6.m4">\times 10^{-4}</Math>
+</sentence>
+           
+<sentence sentence-num-in-section="256" xml:id="C3.S5.T7.s1">
+Table 3.5.7: Nodes and weights for the 10-point Gauss–Laguerre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="257" sentence-num-in-table="1" xml:id="C3.S5.T7.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="258" sentence-num-in-table="2" xml:id="C3.S5.T7.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="259" sentence-num-in-table="3" xml:id="C3.S5.T7.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r2.m1">0.13779\;34705\;40492\;431</Math>
+</sentence>
+
+<sentence sentence-num-in-section="260" sentence-num-in-table="4" xml:id="C3.S5.T7.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r2.m3">0.30844\;11157\;65020\;141</Math>
+</sentence>
+
+<sentence sentence-num-in-section="261" sentence-num-in-table="5" xml:id="C3.S5.T7.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r3.m1">0.72945\;45495\;03170\;498</Math>
+</sentence>
+
+<sentence sentence-num-in-section="262" sentence-num-in-table="6" xml:id="C3.S5.T7.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r3.m3">0.40111\;99291\;55273\;552</Math>
+</sentence>
+
+<sentence sentence-num-in-section="263" sentence-num-in-table="7" xml:id="C3.S5.T7.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r4.m1">0.18083\;42901\;74031\;605</Math>
+</sentence>
+
+<sentence sentence-num-in-section="264" sentence-num-in-table="8" xml:id="C3.S5.T7.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="265" sentence-num-in-table="9" xml:id="C3.S5.T7.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r4.m3">0.21806\;82876\;11809\;422</Math>
+</sentence>
+
+<sentence sentence-num-in-section="266" sentence-num-in-table="10" xml:id="C3.S5.T7.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r5.m1">0.34014\;33697\;85489\;951</Math>
+</sentence>
+
+<sentence sentence-num-in-section="267" sentence-num-in-table="11" xml:id="C3.S5.T7.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="268" sentence-num-in-table="12" xml:id="C3.S5.T7.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r5.m3">0.62087\;45609\;86777\;475</Math>
+</sentence>
+
+<sentence sentence-num-in-section="269" sentence-num-in-table="13" xml:id="C3.S5.T7.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r5.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="270" sentence-num-in-table="14" xml:id="C3.S5.T7.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r6.m1">0.55524\;96140\;06380\;363</Math>
+</sentence>
+
+<sentence sentence-num-in-section="271" sentence-num-in-table="15" xml:id="C3.S5.T7.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="272" sentence-num-in-table="16" xml:id="C3.S5.T7.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r6.m3">0.95015\;16975\;18110\;055</Math>
+</sentence>
+
+<sentence sentence-num-in-section="273" sentence-num-in-table="17" xml:id="C3.S5.T7.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r6.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="274" sentence-num-in-table="18" xml:id="C3.S5.T7.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r7.m1">0.83301\;52746\;76449\;670</Math>
+</sentence>
+
+<sentence sentence-num-in-section="275" sentence-num-in-table="19" xml:id="C3.S5.T7.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r7.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="276" sentence-num-in-table="20" xml:id="C3.S5.T7.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r7.m3">0.75300\;83885\;87538\;775</Math>
+</sentence>
+
+<sentence sentence-num-in-section="277" sentence-num-in-table="21" xml:id="C3.S5.T7.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r7.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="278" sentence-num-in-table="22" xml:id="C3.S5.T7.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r8.m1">0.11843\;78583\;79000\;656</Math>
+</sentence>
+
+<sentence sentence-num-in-section="279" sentence-num-in-table="23" xml:id="C3.S5.T7.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r8.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="280" sentence-num-in-table="24" xml:id="C3.S5.T7.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r8.m3">0.28259\;23349\;59956\;557</Math>
+</sentence>
+
+<sentence sentence-num-in-section="281" sentence-num-in-table="25" xml:id="C3.S5.T7.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r8.m4">\times 10^{-4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="282" sentence-num-in-table="26" xml:id="C3.S5.T7.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r9.m1">0.16279\;25783\;13781\;021</Math>
+</sentence>
+
+<sentence sentence-num-in-section="283" sentence-num-in-table="27" xml:id="C3.S5.T7.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r9.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="284" sentence-num-in-table="28" xml:id="C3.S5.T7.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r9.m3">0.42493\;13984\;96268\;637</Math>
+</sentence>
+
+<sentence sentence-num-in-section="285" sentence-num-in-table="29" xml:id="C3.S5.T7.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r9.m4">\times 10^{-6}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="286" sentence-num-in-table="30" xml:id="C3.S5.T7.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r10.m1">0.21996\;58581\;19807\;620</Math>
+</sentence>
+
+<sentence sentence-num-in-section="287" sentence-num-in-table="31" xml:id="C3.S5.T7.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r10.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="288" sentence-num-in-table="32" xml:id="C3.S5.T7.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r10.m3">0.18395\;64823\;97963\;078</Math>
+</sentence>
+
+<sentence sentence-num-in-section="289" sentence-num-in-table="33" xml:id="C3.S5.T7.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r10.m4">\times 10^{-8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="290" sentence-num-in-table="34" xml:id="C3.S5.T7.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r11.m1">0.29920\;69701\;22738\;916</Math>
+</sentence>
+
+<sentence sentence-num-in-section="291" sentence-num-in-table="35" xml:id="C3.S5.T7.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r11.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="292" sentence-num-in-table="36" xml:id="C3.S5.T7.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r11.m3">0.99118\;27219\;60900\;856</Math>
+</sentence>
+
+<sentence sentence-num-in-section="293" sentence-num-in-table="37" xml:id="C3.S5.T7.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T7.t1.r11.m4">\times 10^{-12}</Math>
+</sentence>
+   
+<para xml:id="C3.S5.Px5.p3">
+
+</para>
+         
+<sentence sentence-num-in-section="294" xml:id="C3.S5.T8.s1">
+Table 3.5.8: Nodes and weights for the 15-point Gauss–Laguerre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="295" sentence-num-in-table="1" xml:id="C3.S5.T8.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="296" sentence-num-in-table="2" xml:id="C3.S5.T8.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="297" sentence-num-in-table="3" xml:id="C3.S5.T8.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r2.m1">0.93307\;81201\;72818\;04762\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="298" sentence-num-in-table="4" xml:id="C3.S5.T8.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r2.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="299" sentence-num-in-table="5" xml:id="C3.S5.T8.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r2.m3">0.21823\;48859\;40086\;88985\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="300" sentence-num-in-table="6" xml:id="C3.S5.T8.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r3.m1">0.49269\;17403\;01883\;90896\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="301" sentence-num-in-table="7" xml:id="C3.S5.T8.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r3.m3">0.34221\;01779\;22883\;32963\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="302" sentence-num-in-table="8" xml:id="C3.S5.T8.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r4.m1">0.12155\;95412\;07094\;94637\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="303" sentence-num-in-table="9" xml:id="C3.S5.T8.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="304" sentence-num-in-table="10" xml:id="C3.S5.T8.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r4.m3">0.26302\;75779\;41680\;09741\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="305" sentence-num-in-table="11" xml:id="C3.S5.T8.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r5.m1">0.22699\;49526\;20374\;32024\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="306" sentence-num-in-table="12" xml:id="C3.S5.T8.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="307" sentence-num-in-table="13" xml:id="C3.S5.T8.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r5.m3">0.12642\;58181\;05930\;53584\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="308" sentence-num-in-table="14" xml:id="C3.S5.T8.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r6.m1">0.36676\;22721\;75143\;72772\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="309" sentence-num-in-table="15" xml:id="C3.S5.T8.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="310" sentence-num-in-table="16" xml:id="C3.S5.T8.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r6.m3">0.40206\;86492\;10009\;14841\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="311" sentence-num-in-table="17" xml:id="C3.S5.T8.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r6.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="312" sentence-num-in-table="18" xml:id="C3.S5.T8.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r7.m1">0.54253\;36627\;41355\;31653\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="313" sentence-num-in-table="19" xml:id="C3.S5.T8.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r7.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="314" sentence-num-in-table="20" xml:id="C3.S5.T8.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r7.m3">0.85638\;77803\;61183\;83639\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="315" sentence-num-in-table="21" xml:id="C3.S5.T8.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r7.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="316" sentence-num-in-table="22" xml:id="C3.S5.T8.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r8.m1">0.75659\;16226\;61306\;78605\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="317" sentence-num-in-table="23" xml:id="C3.S5.T8.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r8.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="318" sentence-num-in-table="24" xml:id="C3.S5.T8.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r8.m3">0.12124\;36147\;21425\;20762\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="319" sentence-num-in-table="25" xml:id="C3.S5.T8.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r8.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="320" sentence-num-in-table="26" xml:id="C3.S5.T8.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r9.m1">0.10120\;22856\;80191\;12734\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="321" sentence-num-in-table="27" xml:id="C3.S5.T8.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r9.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="322" sentence-num-in-table="28" xml:id="C3.S5.T8.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r9.m3">0.11167\;43923\;44251\;94199\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="323" sentence-num-in-table="29" xml:id="C3.S5.T8.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r9.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="324" sentence-num-in-table="30" xml:id="C3.S5.T8.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r10.m1">0.13130\;28248\;21757\;23564\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="325" sentence-num-in-table="31" xml:id="C3.S5.T8.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r10.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="326" sentence-num-in-table="32" xml:id="C3.S5.T8.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r10.m3">0.64599\;26762\;02290\;09246\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="327" sentence-num-in-table="33" xml:id="C3.S5.T8.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r10.m4">\times 10^{-5}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="328" sentence-num-in-table="34" xml:id="C3.S5.T8.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r11.m1">0.16654\;40770\;83299\;57822\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="329" sentence-num-in-table="35" xml:id="C3.S5.T8.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r11.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="330" sentence-num-in-table="36" xml:id="C3.S5.T8.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r11.m3">0.22263\;16907\;09627\;26303\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="331" sentence-num-in-table="37" xml:id="C3.S5.T8.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r11.m4">\times 10^{-6}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="332" sentence-num-in-table="38" xml:id="C3.S5.T8.t1.s38">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r12.m1">0.20776\;47889\;94487\;66772\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="333" sentence-num-in-table="39" xml:id="C3.S5.T8.t1.s39">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r12.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="334" sentence-num-in-table="40" xml:id="C3.S5.T8.t1.s40">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r12.m3">0.42274\;30384\;97936\;50073\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="335" sentence-num-in-table="41" xml:id="C3.S5.T8.t1.s41">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r12.m4">\times 10^{-8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="336" sentence-num-in-table="42" xml:id="C3.S5.T8.t1.s42">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r13.m1">0.25623\;89422\;67287\;80144\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="337" sentence-num-in-table="43" xml:id="C3.S5.T8.t1.s43">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r13.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="338" sentence-num-in-table="44" xml:id="C3.S5.T8.t1.s44">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r13.m3">0.39218\;97267\;04108\;92903\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="339" sentence-num-in-table="45" xml:id="C3.S5.T8.t1.s45">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r13.m4">\times 10^{-10}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="340" sentence-num-in-table="46" xml:id="C3.S5.T8.t1.s46">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r14.m1">0.31407\;51916\;97539\;38515\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="341" sentence-num-in-table="47" xml:id="C3.S5.T8.t1.s47">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r14.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="342" sentence-num-in-table="48" xml:id="C3.S5.T8.t1.s48">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r14.m3">0.14565\;15264\;07312\;64063\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="343" sentence-num-in-table="49" xml:id="C3.S5.T8.t1.s49">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r14.m4">\times 10^{-12}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="344" sentence-num-in-table="50" xml:id="C3.S5.T8.t1.s50">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r15.m1">0.38530\;68330\;64860\;09416\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="345" sentence-num-in-table="51" xml:id="C3.S5.T8.t1.s51">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r15.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="346" sentence-num-in-table="52" xml:id="C3.S5.T8.t1.s52">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r15.m3">0.14830\;27051\;11330\;13354\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="347" sentence-num-in-table="53" xml:id="C3.S5.T8.t1.s53">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r15.m4">\times 10^{-15}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="348" sentence-num-in-table="54" xml:id="C3.S5.T8.t1.s54">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r16.m1">0.48026\;08557\;26857\;94346\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="349" sentence-num-in-table="55" xml:id="C3.S5.T8.t1.s55">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r16.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="350" sentence-num-in-table="56" xml:id="C3.S5.T8.t1.s56">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r16.m3">0.16005\;94906\;21113\;32310\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="351" sentence-num-in-table="57" xml:id="C3.S5.T8.t1.s57">
+<Math mode="inline" xml:id="C3.S5.T8.t1.r16.m4">\times 10^{-19}</Math>
+</sentence>
+          
+<sentence sentence-num-in-section="352" xml:id="C3.S5.T9.s1">
+Table 3.5.9: Nodes and weights for the 20-point Gauss–Laguerre formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="353" sentence-num-in-table="1" xml:id="C3.S5.T9.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="354" sentence-num-in-table="2" xml:id="C3.S5.T9.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="355" sentence-num-in-table="3" xml:id="C3.S5.T9.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r2.m1">0.70539\;88969\;19887\;53366\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="356" sentence-num-in-table="4" xml:id="C3.S5.T9.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r2.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="357" sentence-num-in-table="5" xml:id="C3.S5.T9.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r2.m3">0.16874\;68018\;51113\;86214\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="358" sentence-num-in-table="6" xml:id="C3.S5.T9.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r3.m1">0.37212\;68180\;01611\;44379\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="359" sentence-num-in-table="7" xml:id="C3.S5.T9.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r3.m3">0.29125\;43620\;06068\;28171\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="360" sentence-num-in-table="8" xml:id="C3.S5.T9.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r4.m1">0.91658\;21024\;83273\;56466\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="361" sentence-num-in-table="9" xml:id="C3.S5.T9.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r4.m3">0.26668\;61028\;67001\;28855\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="362" sentence-num-in-table="10" xml:id="C3.S5.T9.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r5.m1">0.17073\;06531\;02834\;38806\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="363" sentence-num-in-table="11" xml:id="C3.S5.T9.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="364" sentence-num-in-table="12" xml:id="C3.S5.T9.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r5.m3">0.16600\;24532\;69506\;84003\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="365" sentence-num-in-table="13" xml:id="C3.S5.T9.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r6.m1">0.27491\;99255\;30943\;21296\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="366" sentence-num-in-table="14" xml:id="C3.S5.T9.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="367" sentence-num-in-table="15" xml:id="C3.S5.T9.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r6.m3">0.74826\;06466\;87923\;70540\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="368" sentence-num-in-table="16" xml:id="C3.S5.T9.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r6.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="369" sentence-num-in-table="17" xml:id="C3.S5.T9.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r7.m1">0.40489\;25313\;85088\;69223\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="370" sentence-num-in-table="18" xml:id="C3.S5.T9.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r7.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="371" sentence-num-in-table="19" xml:id="C3.S5.T9.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r7.m3">0.24964\;41730\;92832\;21072\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="372" sentence-num-in-table="20" xml:id="C3.S5.T9.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r7.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="373" sentence-num-in-table="21" xml:id="C3.S5.T9.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r8.m1">0.56151\;74970\;86161\;65141\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="374" sentence-num-in-table="22" xml:id="C3.S5.T9.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r8.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="375" sentence-num-in-table="23" xml:id="C3.S5.T9.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r8.m3">0.62025\;50844\;57223\;68474\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="376" sentence-num-in-table="24" xml:id="C3.S5.T9.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r8.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="377" sentence-num-in-table="25" xml:id="C3.S5.T9.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r9.m1">0.74590\;17453\;67106\;33097\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="378" sentence-num-in-table="26" xml:id="C3.S5.T9.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r9.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="379" sentence-num-in-table="27" xml:id="C3.S5.T9.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r9.m3">0.11449\;62386\;47690\;82420\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="380" sentence-num-in-table="28" xml:id="C3.S5.T9.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r9.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="381" sentence-num-in-table="29" xml:id="C3.S5.T9.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r10.m1">0.95943\;92869\;58109\;67724\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="382" sentence-num-in-table="30" xml:id="C3.S5.T9.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r10.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="383" sentence-num-in-table="31" xml:id="C3.S5.T9.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r10.m3">0.15574\;17730\;27811\;97478\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="384" sentence-num-in-table="32" xml:id="C3.S5.T9.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r10.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="385" sentence-num-in-table="33" xml:id="C3.S5.T9.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r11.m1">0.12038\;80254\;69643\;16309\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="386" sentence-num-in-table="34" xml:id="C3.S5.T9.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r11.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="387" sentence-num-in-table="35" xml:id="C3.S5.T9.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r11.m3">0.15401\;44086\;52249\;15689\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="388" sentence-num-in-table="36" xml:id="C3.S5.T9.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r11.m4">\times 10^{-4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="389" sentence-num-in-table="37" xml:id="C3.S5.T9.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r12.m1">0.14814\;29344\;26307\;39978\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="390" sentence-num-in-table="38" xml:id="C3.S5.T9.t1.s38">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r12.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="391" sentence-num-in-table="39" xml:id="C3.S5.T9.t1.s39">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r12.m3">0.10864\;86366\;51798\;23514\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="392" sentence-num-in-table="40" xml:id="C3.S5.T9.t1.s40">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r12.m4">\times 10^{-5}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="393" sentence-num-in-table="41" xml:id="C3.S5.T9.t1.s41">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r13.m1">0.17948\;89552\;05193\;76017\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="394" sentence-num-in-table="42" xml:id="C3.S5.T9.t1.s42">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r13.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="395" sentence-num-in-table="43" xml:id="C3.S5.T9.t1.s43">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r13.m3">0.53301\;20909\;55671\;47509\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="396" sentence-num-in-table="44" xml:id="C3.S5.T9.t1.s44">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r13.m4">\times 10^{-7}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="397" sentence-num-in-table="45" xml:id="C3.S5.T9.t1.s45">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r14.m1">0.21478\;78824\;02850\;10975\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="398" sentence-num-in-table="46" xml:id="C3.S5.T9.t1.s46">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r14.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="399" sentence-num-in-table="47" xml:id="C3.S5.T9.t1.s47">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r14.m3">0.17579\;81179\;05058\;20035\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="400" sentence-num-in-table="48" xml:id="C3.S5.T9.t1.s48">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r14.m4">\times 10^{-8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="401" sentence-num-in-table="49" xml:id="C3.S5.T9.t1.s49">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r15.m1">0.25451\;70279\;31869\;05503\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="402" sentence-num-in-table="50" xml:id="C3.S5.T9.t1.s50">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r15.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="403" sentence-num-in-table="51" xml:id="C3.S5.T9.t1.s51">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r15.m3">0.37255\;02402\;51232\;08726\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="404" sentence-num-in-table="52" xml:id="C3.S5.T9.t1.s52">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r15.m4">\times 10^{-10}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="405" sentence-num-in-table="53" xml:id="C3.S5.T9.t1.s53">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r16.m1">0.29932\;55463\;17006\;12006\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="406" sentence-num-in-table="54" xml:id="C3.S5.T9.t1.s54">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r16.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="407" sentence-num-in-table="55" xml:id="C3.S5.T9.t1.s55">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r16.m3">0.47675\;29251\;57819\;05244\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="408" sentence-num-in-table="56" xml:id="C3.S5.T9.t1.s56">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r16.m4">\times 10^{-12}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="409" sentence-num-in-table="57" xml:id="C3.S5.T9.t1.s57">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r17.m1">0.35013\;43424\;04790\;00006\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="410" sentence-num-in-table="58" xml:id="C3.S5.T9.t1.s58">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r17.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="411" sentence-num-in-table="59" xml:id="C3.S5.T9.t1.s59">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r17.m3">0.33728\;44243\;36243\;84123\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="412" sentence-num-in-table="60" xml:id="C3.S5.T9.t1.s60">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r17.m4">\times 10^{-14}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="413" sentence-num-in-table="61" xml:id="C3.S5.T9.t1.s61">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r18.m1">0.40833\;05705\;67285\;71062\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="414" sentence-num-in-table="62" xml:id="C3.S5.T9.t1.s62">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r18.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="415" sentence-num-in-table="63" xml:id="C3.S5.T9.t1.s63">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r18.m3">0.11550\;14339\;50039\;88309\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="416" sentence-num-in-table="64" xml:id="C3.S5.T9.t1.s64">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r18.m4">\times 10^{-16}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="417" sentence-num-in-table="65" xml:id="C3.S5.T9.t1.s65">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r19.m1">0.47619\;99404\;73465\;02139\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="418" sentence-num-in-table="66" xml:id="C3.S5.T9.t1.s66">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r19.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="419" sentence-num-in-table="67" xml:id="C3.S5.T9.t1.s67">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r19.m3">0.15395\;22140\;58234\;35534\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="420" sentence-num-in-table="68" xml:id="C3.S5.T9.t1.s68">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r19.m4">\times 10^{-19}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="421" sentence-num-in-table="69" xml:id="C3.S5.T9.t1.s69">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r20.m1">0.55810\;79575\;00638\;98890\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="422" sentence-num-in-table="70" xml:id="C3.S5.T9.t1.s70">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r20.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="423" sentence-num-in-table="71" xml:id="C3.S5.T9.t1.s71">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r20.m3">0.52864\;42725\;56915\;78288\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="424" sentence-num-in-table="72" xml:id="C3.S5.T9.t1.s72">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r20.m4">\times 10^{-23}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="425" sentence-num-in-table="73" xml:id="C3.S5.T9.t1.s73">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r21.m1">0.66524\;41652\;56157\;53818\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="426" sentence-num-in-table="74" xml:id="C3.S5.T9.t1.s74">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r21.m2">\times 10^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="427" sentence-num-in-table="75" xml:id="C3.S5.T9.t1.s75">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r21.m3">0.16564\;56612\;49902\;32959\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="428" sentence-num-in-table="76" xml:id="C3.S5.T9.t1.s76">
+<Math mode="inline" xml:id="C3.S5.T9.t1.r21.m4">\times 10^{-27}</Math>
+</sentence>
+  
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S5.Px6">
+<title>Gauss–Hermite Formula</title>  
+   
+<para xml:id="C3.S5.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="429" xml:id="C3.S5.Px6.p1.s1">
+ <Math equation-number="3.5.28" mode="display" xml:id="C3.S5.E28">(a,b)=(-\infty,\infty),w(x)=e^{-x^{2}},\gamma_{n}=\sqrt{\pi}\,\frac{n!}{2^{n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="430" xml:id="C3.S5.Px6.p2.s1">
+The nodes <Math mode="inline" xml:id="C3.S5.Px6.p2.m1">x_{k}</Math> and weights <Math mode="inline" xml:id="C3.S5.Px6.p2.m2">w_{k}</Math> for <Math mode="inline" xml:id="C3.S5.Px6.p2.m3">n=5,10</Math> are shown in Tables3.5.10 and 3.5.11.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="431" xml:id="C3.S5.Px6.p2.s2">
+The <Math mode="inline" xml:id="C3.S5.Px6.p2.m4">p_{n}(x)</Math> are the monic Hermite polynomials <Math mode="inline" xml:id="C3.S5.Px6.p2.m5">H_{n}\left(x\right)</Math> (§18.3).
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="432" xml:id="C3.S5.T10.s1">
+Table 3.5.10: Nodes and weights for the 5-point Gauss–Hermite formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="433" sentence-num-in-table="1" xml:id="C3.S5.T10.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="434" sentence-num-in-table="2" xml:id="C3.S5.T10.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="435" sentence-num-in-table="3" xml:id="C3.S5.T10.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r2.m1">0.00000\;00000\;00000</Math>
+</sentence>
+
+<sentence sentence-num-in-section="436" sentence-num-in-table="4" xml:id="C3.S5.T10.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r2.m3">0.94530\;87204\;82942</Math>
+</sentence>
+
+<sentence sentence-num-in-section="437" sentence-num-in-table="5" xml:id="C3.S5.T10.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r3.m1">0.95857\;24646\;13819</Math>
+</sentence>
+
+<sentence sentence-num-in-section="438" sentence-num-in-table="6" xml:id="C3.S5.T10.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r3.m3">0.39361\;93231\;52241</Math>
+</sentence>
+
+<sentence sentence-num-in-section="439" sentence-num-in-table="7" xml:id="C3.S5.T10.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r4.m1">0.20201\;82870\;45609</Math>
+</sentence>
+
+<sentence sentence-num-in-section="440" sentence-num-in-table="8" xml:id="C3.S5.T10.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="441" sentence-num-in-table="9" xml:id="C3.S5.T10.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r4.m3">0.19953\;24205\;90459</Math>
+</sentence>
+
+<sentence sentence-num-in-section="442" sentence-num-in-table="10" xml:id="C3.S5.T10.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T10.t1.r4.m4">\times 10^{-1}</Math>
+</sentence>
+          
+<sentence sentence-num-in-section="443" xml:id="C3.S5.T11.s1">
+Table 3.5.11: Nodes and weights for the 10-point Gauss–Hermite formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="444" sentence-num-in-table="1" xml:id="C3.S5.T11.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="445" sentence-num-in-table="2" xml:id="C3.S5.T11.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="446" sentence-num-in-table="3" xml:id="C3.S5.T11.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r2.m1">0.34290\;13272\;23704\;609</Math>
+</sentence>
+
+<sentence sentence-num-in-section="447" sentence-num-in-table="4" xml:id="C3.S5.T11.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r2.m3">0.61086\;26337\;35325\;799</Math>
+</sentence>
+
+<sentence sentence-num-in-section="448" sentence-num-in-table="5" xml:id="C3.S5.T11.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r3.m1">0.10366\;10829\;78951\;365</Math>
+</sentence>
+
+<sentence sentence-num-in-section="449" sentence-num-in-table="6" xml:id="C3.S5.T11.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r3.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="450" sentence-num-in-table="7" xml:id="C3.S5.T11.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r3.m3">0.24013\;86110\;82314\;686</Math>
+</sentence>
+
+<sentence sentence-num-in-section="451" sentence-num-in-table="8" xml:id="C3.S5.T11.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r4.m1">0.17566\;83649\;29988\;177</Math>
+</sentence>
+
+<sentence sentence-num-in-section="452" sentence-num-in-table="9" xml:id="C3.S5.T11.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="453" sentence-num-in-table="10" xml:id="C3.S5.T11.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r4.m3">0.33874\;39445\;54810\;631</Math>
+</sentence>
+
+<sentence sentence-num-in-section="454" sentence-num-in-table="11" xml:id="C3.S5.T11.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r4.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="455" sentence-num-in-table="12" xml:id="C3.S5.T11.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r5.m1">0.25327\;31674\;23278\;980</Math>
+</sentence>
+
+<sentence sentence-num-in-section="456" sentence-num-in-table="13" xml:id="C3.S5.T11.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="457" sentence-num-in-table="14" xml:id="C3.S5.T11.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r5.m3">0.13436\;45746\;78123\;269</Math>
+</sentence>
+
+<sentence sentence-num-in-section="458" sentence-num-in-table="15" xml:id="C3.S5.T11.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r5.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="459" sentence-num-in-table="16" xml:id="C3.S5.T11.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r6.m1">0.34361\;59118\;83773\;760</Math>
+</sentence>
+
+<sentence sentence-num-in-section="460" sentence-num-in-table="17" xml:id="C3.S5.T11.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="461" sentence-num-in-table="18" xml:id="C3.S5.T11.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r6.m3">0.76404\;32855\;23262\;063</Math>
+</sentence>
+
+<sentence sentence-num-in-section="462" sentence-num-in-table="19" xml:id="C3.S5.T11.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T11.t1.r6.m4">\times 10^{-5}</Math>
+</sentence>
+  
+<para xml:id="C3.S5.Px6.p3">
+
+</para>
+         
+<sentence sentence-num-in-section="463" xml:id="C3.S5.T12.s1">
+Table 3.5.12: Nodes and weights for the 15-point Gauss–Hermite formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="464" sentence-num-in-table="1" xml:id="C3.S5.T12.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="465" sentence-num-in-table="2" xml:id="C3.S5.T12.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="466" sentence-num-in-table="3" xml:id="C3.S5.T12.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r2.m1">0.00000\;00000\;00000\;00000\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="467" sentence-num-in-table="4" xml:id="C3.S5.T12.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r2.m3">0.56410\;03087\;26417\;53285\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="468" sentence-num-in-table="5" xml:id="C3.S5.T12.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r3.m1">0.56506\;95832\;55575\;74852\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="469" sentence-num-in-table="6" xml:id="C3.S5.T12.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r3.m3">0.41202\;86874\;98898\;62702\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="470" sentence-num-in-table="7" xml:id="C3.S5.T12.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r4.m1">0.11361\;15585\;21092\;06663\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="471" sentence-num-in-table="8" xml:id="C3.S5.T12.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="472" sentence-num-in-table="9" xml:id="C3.S5.T12.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r4.m3">0.15848\;89157\;95935\;74688\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="473" sentence-num-in-table="10" xml:id="C3.S5.T12.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r5.m1">0.17199\;92575\;18648\;89324\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="474" sentence-num-in-table="11" xml:id="C3.S5.T12.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="475" sentence-num-in-table="12" xml:id="C3.S5.T12.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r5.m3">0.30780\;03387\;25460\;82228\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="476" sentence-num-in-table="13" xml:id="C3.S5.T12.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r5.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="477" sentence-num-in-table="14" xml:id="C3.S5.T12.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r6.m1">0.23257\;32486\;17385\;77454\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="478" sentence-num-in-table="15" xml:id="C3.S5.T12.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="479" sentence-num-in-table="16" xml:id="C3.S5.T12.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r6.m3">0.27780\;68842\;91277\;58960\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="480" sentence-num-in-table="17" xml:id="C3.S5.T12.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r6.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="481" sentence-num-in-table="18" xml:id="C3.S5.T12.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r7.m1">0.29671\;66927\;90560\;32484\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="482" sentence-num-in-table="19" xml:id="C3.S5.T12.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r7.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="483" sentence-num-in-table="20" xml:id="C3.S5.T12.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r7.m3">0.10000\;44412\;32499\;86812\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="484" sentence-num-in-table="21" xml:id="C3.S5.T12.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r7.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="485" sentence-num-in-table="22" xml:id="C3.S5.T12.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r8.m1">0.36699\;50373\;40445\;25347\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="486" sentence-num-in-table="23" xml:id="C3.S5.T12.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r8.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="487" sentence-num-in-table="24" xml:id="C3.S5.T12.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r8.m3">0.10591\;15547\;71106\;66357\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="488" sentence-num-in-table="25" xml:id="C3.S5.T12.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r8.m4">\times 10^{-5}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="489" sentence-num-in-table="26" xml:id="C3.S5.T12.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r9.m1">0.44999\;90707\;30939\;15536\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="490" sentence-num-in-table="27" xml:id="C3.S5.T12.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r9.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="491" sentence-num-in-table="28" xml:id="C3.S5.T12.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r9.m3">0.15224\;75804\;25351\;70201\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="492" sentence-num-in-table="29" xml:id="C3.S5.T12.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T12.t1.r9.m4">\times 10^{-8}</Math>
+</sentence>
+          
+<sentence sentence-num-in-section="493" xml:id="C3.S5.T13.s1">
+Table 3.5.13: Nodes and weights for the 20-point Gauss–Hermite formula.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="494" sentence-num-in-table="1" xml:id="C3.S5.T13.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r1.m1">\pm x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="495" sentence-num-in-table="2" xml:id="C3.S5.T13.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="496" sentence-num-in-table="3" xml:id="C3.S5.T13.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r2.m1">0.24534\;07083\;00901\;24990\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="497" sentence-num-in-table="4" xml:id="C3.S5.T13.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r2.m3">0.46224\;36696\;00610\;08965\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="498" sentence-num-in-table="5" xml:id="C3.S5.T13.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r3.m1">0.73747\;37285\;45394\;35870\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="499" sentence-num-in-table="6" xml:id="C3.S5.T13.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r3.m3">0.28667\;55053\;62834\;12972\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="500" sentence-num-in-table="7" xml:id="C3.S5.T13.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r4.m1">0.12340\;76215\;39532\;30078\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="501" sentence-num-in-table="8" xml:id="C3.S5.T13.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r4.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="502" sentence-num-in-table="9" xml:id="C3.S5.T13.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r4.m3">0.10901\;72060\;20023\;32001\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="503" sentence-num-in-table="10" xml:id="C3.S5.T13.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r5.m1">0.17385\;37712\;11658\;62067\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="504" sentence-num-in-table="11" xml:id="C3.S5.T13.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r5.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="505" sentence-num-in-table="12" xml:id="C3.S5.T13.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r5.m3">0.24810\;52088\;74636\;10882\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="506" sentence-num-in-table="13" xml:id="C3.S5.T13.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r5.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="507" sentence-num-in-table="14" xml:id="C3.S5.T13.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r6.m1">0.22549\;74002\;08927\;55230\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="508" sentence-num-in-table="15" xml:id="C3.S5.T13.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r6.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="509" sentence-num-in-table="16" xml:id="C3.S5.T13.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r6.m3">0.32437\;73342\;23786\;18321\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="510" sentence-num-in-table="17" xml:id="C3.S5.T13.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r6.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="511" sentence-num-in-table="18" xml:id="C3.S5.T13.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r7.m1">0.27888\;06058\;42813\;04805\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="512" sentence-num-in-table="19" xml:id="C3.S5.T13.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r7.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="513" sentence-num-in-table="20" xml:id="C3.S5.T13.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r7.m3">0.22833\;86360\;16353\;96725\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="514" sentence-num-in-table="21" xml:id="C3.S5.T13.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r7.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="515" sentence-num-in-table="22" xml:id="C3.S5.T13.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r8.m1">0.33478\;54567\;38321\;63269\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="516" sentence-num-in-table="23" xml:id="C3.S5.T13.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r8.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="517" sentence-num-in-table="24" xml:id="C3.S5.T13.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r8.m3">0.78025\;56478\;53206\;36941\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="518" sentence-num-in-table="25" xml:id="C3.S5.T13.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r8.m4">\times 10^{-5}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="519" sentence-num-in-table="26" xml:id="C3.S5.T13.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r9.m1">0.39447\;64040\;11562\;52103\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="520" sentence-num-in-table="27" xml:id="C3.S5.T13.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r9.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="521" sentence-num-in-table="28" xml:id="C3.S5.T13.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r9.m3">0.10860\;69370\;76928\;16940\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="522" sentence-num-in-table="29" xml:id="C3.S5.T13.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r9.m4">\times 10^{-6}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="523" sentence-num-in-table="30" xml:id="C3.S5.T13.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r10.m1">0.46036\;82449\;55074\;42730\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="524" sentence-num-in-table="31" xml:id="C3.S5.T13.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r10.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="525" sentence-num-in-table="32" xml:id="C3.S5.T13.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r10.m3">0.43993\;40992\;27318\;05536\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="526" sentence-num-in-table="33" xml:id="C3.S5.T13.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r10.m4">\times 10^{-9}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="527" sentence-num-in-table="34" xml:id="C3.S5.T13.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r11.m1">0.53874\;80890\;01123\;28620\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="528" sentence-num-in-table="35" xml:id="C3.S5.T13.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r11.m2">\times 10^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="529" sentence-num-in-table="36" xml:id="C3.S5.T13.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r11.m3">0.22293\;93645\;53415\;12925\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="530" sentence-num-in-table="37" xml:id="C3.S5.T13.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T13.t1.r11.m4">\times 10^{-12}</Math>
+</sentence>
+  
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S5.Px7">
+<title>Gauss Formula for a Logarithmic Weight Function</title>  
+   
+<para xml:id="C3.S5.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="531" xml:id="C3.S5.Px7.p1.s1">
+ <Math equation-number="3.5.29" mode="display" xml:id="C3.S5.E29">[a,b]=[0,1],w(x)=\ln\left(1/x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="532" xml:id="C3.S5.Px7.p2.s1">
+The nodes <Math mode="inline" xml:id="C3.S5.Px7.p2.m1">x_{k}</Math> and weights <Math mode="inline" xml:id="C3.S5.Px7.p2.m2">w_{k}</Math> for <Math mode="inline" xml:id="C3.S5.Px7.p2.m3">n=5,10</Math> are shown in Tables3.5.14 and 3.5.15.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="533" xml:id="C3.S5.T14.s1">
+Table 3.5.14: Nodes and weights for the 5-point Gauss formula for the logarithmic weight function.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="534" sentence-num-in-table="1" xml:id="C3.S5.T14.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="535" sentence-num-in-table="2" xml:id="C3.S5.T14.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="536" sentence-num-in-table="3" xml:id="C3.S5.T14.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r2.m1">0.29134\;47215\;19721</Math>
+</sentence>
+
+<sentence sentence-num-in-section="537" sentence-num-in-table="4" xml:id="C3.S5.T14.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r2.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="538" sentence-num-in-table="5" xml:id="C3.S5.T14.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r2.m3">0.29789\;34717\;82894</Math>
+</sentence>
+
+<sentence sentence-num-in-section="539" sentence-num-in-table="6" xml:id="C3.S5.T14.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r3.m1">0.17397\;72133\;20898</Math>
+</sentence>
+
+<sentence sentence-num-in-section="540" sentence-num-in-table="7" xml:id="C3.S5.T14.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r3.m3">0.34977\;62265\;13224</Math>
+</sentence>
+
+<sentence sentence-num-in-section="541" sentence-num-in-table="8" xml:id="C3.S5.T14.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r4.m1">0.41170\;25202\;84902</Math>
+</sentence>
+
+<sentence sentence-num-in-section="542" sentence-num-in-table="9" xml:id="C3.S5.T14.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r4.m3">0.23448\;82900\;44052</Math>
+</sentence>
+
+<sentence sentence-num-in-section="543" sentence-num-in-table="10" xml:id="C3.S5.T14.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r5.m1">0.67731\;41745\;82820</Math>
+</sentence>
+
+<sentence sentence-num-in-section="544" sentence-num-in-table="11" xml:id="C3.S5.T14.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r5.m3">0.98930\;45951\;66331</Math>
+</sentence>
+
+<sentence sentence-num-in-section="545" sentence-num-in-table="12" xml:id="C3.S5.T14.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r5.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="546" sentence-num-in-table="13" xml:id="C3.S5.T14.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r6.m1">0.89477\;13610\;31008</Math>
+</sentence>
+
+<sentence sentence-num-in-section="547" sentence-num-in-table="14" xml:id="C3.S5.T14.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r6.m3">0.18911\;55214\;31958</Math>
+</sentence>
+
+<sentence sentence-num-in-section="548" sentence-num-in-table="15" xml:id="C3.S5.T14.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T14.t1.r6.m4">\times 10^{-1}</Math>
+</sentence>
+
+          
+<sentence sentence-num-in-section="549" xml:id="C3.S5.T15.s1">
+Table 3.5.15: Nodes and weights for the 10-point Gauss formula for the logarithmic weight function.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="550" sentence-num-in-table="1" xml:id="C3.S5.T15.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="551" sentence-num-in-table="2" xml:id="C3.S5.T15.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="552" sentence-num-in-table="3" xml:id="C3.S5.T15.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r2.m1">0.90426\;30962\;19965\;064</Math>
+</sentence>
+
+<sentence sentence-num-in-section="553" sentence-num-in-table="4" xml:id="C3.S5.T15.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r2.m2">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="554" sentence-num-in-table="5" xml:id="C3.S5.T15.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r2.m3">0.12095\;51319\;54570\;515</Math>
+</sentence>
+
+<sentence sentence-num-in-section="555" sentence-num-in-table="6" xml:id="C3.S5.T15.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r3.m1">0.53971\;26622\;25006\;295</Math>
+</sentence>
+
+<sentence sentence-num-in-section="556" sentence-num-in-table="7" xml:id="C3.S5.T15.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r3.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="557" sentence-num-in-table="8" xml:id="C3.S5.T15.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r3.m3">0.18636\;35425\;64071\;870</Math>
+</sentence>
+
+<sentence sentence-num-in-section="558" sentence-num-in-table="9" xml:id="C3.S5.T15.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r4.m1">0.13531\;18246\;39250\;775</Math>
+</sentence>
+
+<sentence sentence-num-in-section="559" sentence-num-in-table="10" xml:id="C3.S5.T15.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r4.m3">0.19566\;08732\;77759\;983</Math>
+</sentence>
+
+<sentence sentence-num-in-section="560" sentence-num-in-table="11" xml:id="C3.S5.T15.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r5.m1">0.24705\;24162\;87159\;824</Math>
+</sentence>
+
+<sentence sentence-num-in-section="561" sentence-num-in-table="12" xml:id="C3.S5.T15.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r5.m3">0.17357\;71421\;82906\;921</Math>
+</sentence>
+
+<sentence sentence-num-in-section="562" sentence-num-in-table="13" xml:id="C3.S5.T15.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r6.m1">0.38021\;25396\;09332\;334</Math>
+</sentence>
+
+<sentence sentence-num-in-section="563" sentence-num-in-table="14" xml:id="C3.S5.T15.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r6.m3">0.13569\;56729\;95484\;202</Math>
+</sentence>
+
+<sentence sentence-num-in-section="564" sentence-num-in-table="15" xml:id="C3.S5.T15.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r7.m1">0.52379\;23179\;71843\;201</Math>
+</sentence>
+
+<sentence sentence-num-in-section="565" sentence-num-in-table="16" xml:id="C3.S5.T15.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r7.m3">0.93646\;75853\;81105\;260</Math>
+</sentence>
+
+<sentence sentence-num-in-section="566" sentence-num-in-table="17" xml:id="C3.S5.T15.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r7.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="567" sentence-num-in-table="18" xml:id="C3.S5.T15.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r8.m1">0.66577\;52055\;16424\;597</Math>
+</sentence>
+
+<sentence sentence-num-in-section="568" sentence-num-in-table="19" xml:id="C3.S5.T15.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r8.m3">0.55787\;72735\;14158\;741</Math>
+</sentence>
+
+<sentence sentence-num-in-section="569" sentence-num-in-table="20" xml:id="C3.S5.T15.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r8.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="570" sentence-num-in-table="21" xml:id="C3.S5.T15.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r9.m1">0.79419\;04160\;11966\;217</Math>
+</sentence>
+
+<sentence sentence-num-in-section="571" sentence-num-in-table="22" xml:id="C3.S5.T15.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r9.m3">0.27159\;81089\;92333\;311</Math>
+</sentence>
+
+<sentence sentence-num-in-section="572" sentence-num-in-table="23" xml:id="C3.S5.T15.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r9.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="573" sentence-num-in-table="24" xml:id="C3.S5.T15.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r10.m1">0.89816\;10912\;19003\;538</Math>
+</sentence>
+
+<sentence sentence-num-in-section="574" sentence-num-in-table="25" xml:id="C3.S5.T15.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r10.m3">0.95151\;82602\;84851\;500</Math>
+</sentence>
+
+<sentence sentence-num-in-section="575" sentence-num-in-table="26" xml:id="C3.S5.T15.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r10.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="576" sentence-num-in-table="27" xml:id="C3.S5.T15.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r11.m1">0.96884\;79887\;18633\;539</Math>
+</sentence>
+
+<sentence sentence-num-in-section="577" sentence-num-in-table="28" xml:id="C3.S5.T15.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r11.m3">0.16381\;57633\;59826\;325</Math>
+</sentence>
+
+<sentence sentence-num-in-section="578" sentence-num-in-table="29" xml:id="C3.S5.T15.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T15.t1.r11.m4">\times 10^{-2}</Math>
+</sentence>
+  
+<para xml:id="C3.S5.Px7.p3">
+
+</para>
+         
+<sentence sentence-num-in-section="579" xml:id="C3.S5.T16.s1">
+Table 3.5.16: Nodes and weights for the 15-point Gauss formula for the logarithmic weight function.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="580" sentence-num-in-table="1" xml:id="C3.S5.T16.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="581" sentence-num-in-table="2" xml:id="C3.S5.T16.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="582" sentence-num-in-table="3" xml:id="C3.S5.T16.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r2.m1">0.43831\;10175\;47540\;38348\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="583" sentence-num-in-table="4" xml:id="C3.S5.T16.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r2.m2">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="584" sentence-num-in-table="5" xml:id="C3.S5.T16.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r2.m3">0.67009\;97891\;64937\;13603\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="585" sentence-num-in-table="6" xml:id="C3.S5.T16.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r2.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="586" sentence-num-in-table="7" xml:id="C3.S5.T16.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r3.m1">0.25935\;89810\;53306\;16102\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="587" sentence-num-in-table="8" xml:id="C3.S5.T16.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r3.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="588" sentence-num-in-table="9" xml:id="C3.S5.T16.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r3.m3">0.11226\;41502\;86705\;74182\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="589" sentence-num-in-table="10" xml:id="C3.S5.T16.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r4.m1">0.65596\;09541\;23162\;45254\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="590" sentence-num-in-table="11" xml:id="C3.S5.T16.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r4.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="591" sentence-num-in-table="12" xml:id="C3.S5.T16.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r4.m3">0.13176\;01770\;39679\;90373\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="592" sentence-num-in-table="13" xml:id="C3.S5.T16.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r5.m1">0.12210\;19340\;73331\;60333\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="593" sentence-num-in-table="14" xml:id="C3.S5.T16.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r5.m3">0.13521\;76490\;61934\;72513\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="594" sentence-num-in-table="15" xml:id="C3.S5.T16.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r6.m1">0.19339\;52623\;74007\;11598\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="595" sentence-num-in-table="16" xml:id="C3.S5.T16.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r6.m3">0.12788\;17986\;45680\;37040\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="596" sentence-num-in-table="17" xml:id="C3.S5.T16.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r7.m1">0.27677\;28387\;06102\;02439\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="597" sentence-num-in-table="18" xml:id="C3.S5.T16.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r7.m3">0.11353\;29074\;90219\;42129\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="598" sentence-num-in-table="19" xml:id="C3.S5.T16.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r8.m1">0.36901\;51271\;39742\;94381\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="599" sentence-num-in-table="20" xml:id="C3.S5.T16.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r8.m3">0.95205\;23978\;43586\;58511\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="600" sentence-num-in-table="21" xml:id="C3.S5.T16.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r8.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="601" sentence-num-in-table="22" xml:id="C3.S5.T16.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r9.m1">0.46652\;43289\;64706\;58267\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="602" sentence-num-in-table="23" xml:id="C3.S5.T16.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r9.m3">0.75389\;31416\;73959\;54339\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="603" sentence-num-in-table="24" xml:id="C3.S5.T16.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r9.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="604" sentence-num-in-table="25" xml:id="C3.S5.T16.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r10.m1">0.56547\;34737\;91817\;30642\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="605" sentence-num-in-table="26" xml:id="C3.S5.T16.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r10.m3">0.56078\;42449\;26537\;17992\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="606" sentence-num-in-table="27" xml:id="C3.S5.T16.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r10.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="607" sentence-num-in-table="28" xml:id="C3.S5.T16.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r11.m1">0.66196\;29190\;12456\;42139\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="608" sentence-num-in-table="29" xml:id="C3.S5.T16.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r11.m3">0.38768\;29537\;50182\;31110\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="609" sentence-num-in-table="30" xml:id="C3.S5.T16.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r11.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="610" sentence-num-in-table="31" xml:id="C3.S5.T16.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r12.m1">0.75217\;88833\;78785\;79878\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="611" sentence-num-in-table="32" xml:id="C3.S5.T16.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r12.m3">0.24451\;48326\;87500\;75960\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="612" sentence-num-in-table="33" xml:id="C3.S5.T16.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r12.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="613" sentence-num-in-table="34" xml:id="C3.S5.T16.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r13.m1">0.83254\;80338\;66189\;58925\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="614" sentence-num-in-table="35" xml:id="C3.S5.T16.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r13.m3">0.13624\;63013\;82388\;46905\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="615" sentence-num-in-table="36" xml:id="C3.S5.T16.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r13.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="616" sentence-num-in-table="37" xml:id="C3.S5.T16.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r14.m1">0.89988\;20501\;20898\;08433\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="617" sentence-num-in-table="38" xml:id="C3.S5.T16.t1.s38">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r14.m3">0.63164\;47598\;59076\;11998\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="618" sentence-num-in-table="39" xml:id="C3.S5.T16.t1.s39">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r14.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="619" sentence-num-in-table="40" xml:id="C3.S5.T16.t1.s40">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r15.m1">0.95150\;61887\;43409\;90272\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="620" sentence-num-in-table="41" xml:id="C3.S5.T16.t1.s41">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r15.m3">0.21388\;89915\;94447\;13478\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="621" sentence-num-in-table="42" xml:id="C3.S5.T16.t1.s42">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r15.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="622" sentence-num-in-table="43" xml:id="C3.S5.T16.t1.s43">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r16.m1">0.98536\;44681\;22131\;93892\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="623" sentence-num-in-table="44" xml:id="C3.S5.T16.t1.s44">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r16.m3">0.36061\;38183\;35406\;64685\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="624" sentence-num-in-table="45" xml:id="C3.S5.T16.t1.s45">
+<Math mode="inline" xml:id="C3.S5.T16.t1.r16.m4">\times 10^{-3}</Math>
+</sentence>
+          
+<sentence sentence-num-in-section="625" xml:id="C3.S5.T17.s1">
+Table 3.5.17: Nodes and weights for the 20-point Gauss formula for the logarithmic weight function.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="626" sentence-num-in-table="1" xml:id="C3.S5.T17.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r1.m1">x_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="627" sentence-num-in-table="2" xml:id="C3.S5.T17.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="628" sentence-num-in-table="3" xml:id="C3.S5.T17.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r2.m1">0.25883\;27955\;92195\;54283\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="629" sentence-num-in-table="4" xml:id="C3.S5.T17.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r2.m2">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="630" sentence-num-in-table="5" xml:id="C3.S5.T17.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r2.m3">0.43142\;75213\;32080\;78579\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="631" sentence-num-in-table="6" xml:id="C3.S5.T17.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r2.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="632" sentence-num-in-table="7" xml:id="C3.S5.T17.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r3.m1">0.15209\;66234\;95602\;31720\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="633" sentence-num-in-table="8" xml:id="C3.S5.T17.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r3.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="634" sentence-num-in-table="9" xml:id="C3.S5.T17.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r3.m3">0.75383\;70990\;85893\;59550\;5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="635" sentence-num-in-table="10" xml:id="C3.S5.T17.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r3.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="636" sentence-num-in-table="11" xml:id="C3.S5.T17.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r4.m1">0.38536\;55037\;21653\;27959\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="637" sentence-num-in-table="12" xml:id="C3.S5.T17.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r4.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="638" sentence-num-in-table="13" xml:id="C3.S5.T17.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r4.m3">0.93053\;26745\;16630\;51372\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="639" sentence-num-in-table="14" xml:id="C3.S5.T17.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r4.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="640" sentence-num-in-table="15" xml:id="C3.S5.T17.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r5.m1">0.72181\;61381\;58739\;06435\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="641" sentence-num-in-table="16" xml:id="C3.S5.T17.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r5.m2">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="642" sentence-num-in-table="17" xml:id="C3.S5.T17.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r5.m3">0.10145\;67118\;49829\;75443\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="643" sentence-num-in-table="18" xml:id="C3.S5.T17.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r6.m1">0.11546\;05264\;87633\;15055\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="644" sentence-num-in-table="19" xml:id="C3.S5.T17.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r6.m3">0.10320\;17620\;56072\;06905\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="645" sentence-num-in-table="20" xml:id="C3.S5.T17.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r7.m1">0.16744\;28562\;75329\;68571\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="646" sentence-num-in-table="21" xml:id="C3.S5.T17.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r7.m3">0.10002\;25498\;05273\;16653\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="647" sentence-num-in-table="22" xml:id="C3.S5.T17.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r8.m1">0.22698\;37872\;60202\;50336\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="648" sentence-num-in-table="23" xml:id="C3.S5.T17.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r8.m3">0.93259\;79930\;02976\;78083\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="649" sentence-num-in-table="24" xml:id="C3.S5.T17.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r8.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="650" sentence-num-in-table="25" xml:id="C3.S5.T17.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r9.m1">0.29275\;49609\;41545\;83299\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="651" sentence-num-in-table="26" xml:id="C3.S5.T17.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r9.m3">0.84028\;95287\;19410\;56497\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="652" sentence-num-in-table="27" xml:id="C3.S5.T17.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r9.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="653" sentence-num-in-table="28" xml:id="C3.S5.T17.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r10.m1">0.36327\;74298\;57858\;90453\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="654" sentence-num-in-table="29" xml:id="C3.S5.T17.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r10.m3">0.73285\;58913\;00307\;40962\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="655" sentence-num-in-table="30" xml:id="C3.S5.T17.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r10.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="656" sentence-num-in-table="31" xml:id="C3.S5.T17.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r11.m1">0.43695\;71400\;90768\;31848\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="657" sentence-num-in-table="32" xml:id="C3.S5.T17.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r11.m3">0.61850\;33691\;37302\;89957\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="658" sentence-num-in-table="33" xml:id="C3.S5.T17.t1.s33">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r11.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="659" sentence-num-in-table="34" xml:id="C3.S5.T17.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r12.m1">0.51212\;25946\;78967\;33619\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="660" sentence-num-in-table="35" xml:id="C3.S5.T17.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r12.m3">0.50416\;60443\;83746\;77637\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="661" sentence-num-in-table="36" xml:id="C3.S5.T17.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r12.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="662" sentence-num-in-table="37" xml:id="C3.S5.T17.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r13.m1">0.58706\;40449\;14409\;91513\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="663" sentence-num-in-table="38" xml:id="C3.S5.T17.t1.s38">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r13.m3">0.39551\;37000\;52983\;85332\;9</Math>
+</sentence>
+
+<sentence sentence-num-in-section="664" sentence-num-in-table="39" xml:id="C3.S5.T17.t1.s39">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r13.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="665" sentence-num-in-table="40" xml:id="C3.S5.T17.t1.s40">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r14.m1">0.66007\;34133\;14909\;41391\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="666" sentence-num-in-table="41" xml:id="C3.S5.T17.t1.s41">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r14.m3">0.29694\;07789\;58128\;44804\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="667" sentence-num-in-table="42" xml:id="C3.S5.T17.t1.s42">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r14.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="668" sentence-num-in-table="43" xml:id="C3.S5.T17.t1.s43">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r15.m1">0.72948\;40839\;29687\;49887\;1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="669" sentence-num-in-table="44" xml:id="C3.S5.T17.t1.s44">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r15.m3">0.21156\;31535\;54270\;97673\;0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="670" sentence-num-in-table="45" xml:id="C3.S5.T17.t1.s45">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r15.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="671" sentence-num-in-table="46" xml:id="C3.S5.T17.t1.s46">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r16.m1">0.79370\;96719\;87085\;81774\;4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="672" sentence-num-in-table="47" xml:id="C3.S5.T17.t1.s47">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r16.m3">0.14123\;73293\;89640\;20436\;6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="673" sentence-num-in-table="48" xml:id="C3.S5.T17.t1.s48">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r16.m4">\times 10^{-1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="674" sentence-num-in-table="49" xml:id="C3.S5.T17.t1.s49">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r17.m1">0.85128\;08927\;89125\;72722\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="675" sentence-num-in-table="50" xml:id="C3.S5.T17.t1.s50">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r17.m3">0.86609\;74504\;33549\;86282\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="676" sentence-num-in-table="51" xml:id="C3.S5.T17.t1.s51">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r17.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="677" sentence-num-in-table="52" xml:id="C3.S5.T17.t1.s52">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r18.m1">0.90087\;96808\;54417\;59422\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="678" sentence-num-in-table="53" xml:id="C3.S5.T17.t1.s53">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r18.m3">0.47199\;40146\;20360\;49543\;7</Math>
+</sentence>
+
+<sentence sentence-num-in-section="679" sentence-num-in-table="54" xml:id="C3.S5.T17.t1.s54">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r18.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="680" sentence-num-in-table="55" xml:id="C3.S5.T17.t1.s55">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r19.m1">0.94136\;97491\;29091\;67630\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="681" sentence-num-in-table="56" xml:id="C3.S5.T17.t1.s56">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r19.m3">0.21513\;97403\;96520\;61146\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="682" sentence-num-in-table="57" xml:id="C3.S5.T17.t1.s57">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r19.m4">\times 10^{-2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="683" sentence-num-in-table="58" xml:id="C3.S5.T17.t1.s58">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r20.m1">0.97182\;27410\;75263\;19373\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="684" sentence-num-in-table="59" xml:id="C3.S5.T17.t1.s59">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r20.m3">0.71972\;82146\;53202\;64635\;8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="685" sentence-num-in-table="60" xml:id="C3.S5.T17.t1.s60">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r20.m4">\times 10^{-3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="686" sentence-num-in-table="61" xml:id="C3.S5.T17.t1.s61">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r21.m1">0.99153\;80814\;38711\;97265\;2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="687" sentence-num-in-table="62" xml:id="C3.S5.T17.t1.s62">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r21.m3">0.12042\;76763\;30216\;74169\;3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="688" sentence-num-in-table="63" xml:id="C3.S5.T17.t1.s63">
+<Math mode="inline" xml:id="C3.S5.T17.t1.r21.m4">\times 10^{-3}</Math>
+</sentence>
+      
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS6">
+<title>Eigenvalue/Eigenvector Characterization of Gauss Quadrature Formulas</title>        
+  
+<para xml:id="C3.S5.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="689" xml:id="C3.S5.SS6.p1.s1">
+All the monic orthogonal polynomials <Math mode="inline" xml:id="C3.S5.SS6.p1.m1">\{p_{n}\}</Math> used with Gauss quadrature satisfy a three-term recurrence relation (§ 18.2(iv)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="690" xml:id="C3.S5.SS6.p1.s2">
+<Math equation-number="3.5.30" mode="display" xml:id="C3.S5.E30">p_{k+1}(x)=(x-\alpha_{k})p_{k}(x)-\beta_{k}p_{k-1}(x), if k=0,1,\dots,</Math> with <Math mode="inline" xml:id="C3.S5.SS6.p1.m2">\beta_{k}&gt;0</Math> , <Math mode="inline" xml:id="C3.S5.SS6.p1.m3">p_{-1}(x)=0</Math> , and <Math mode="inline" xml:id="C3.S5.SS6.p1.m4">p_{0}(x)=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="691" xml:id="C3.S5.SS6.p2.s1">
+The Gauss nodes <Math mode="inline" xml:id="C3.S5.SS6.p2.m1">x_{k}</Math> (the zeros of <Math mode="inline" xml:id="C3.S5.SS6.p2.m2">p_{n}</Math> ) are the eigenvalues of the (symmetric tridiagonal) Jacobi matrix of order <Math mode="inline" xml:id="C3.S5.SS6.p2.m3">n\times n</Math> : <Math equation-number="3.5.31" mode="display" xml:id="C3.S5.E31">\mathbf{J}_{n}=\begin{bmatrix}\alpha_{0}&amp;\sqrt{\beta_{1}}&amp;&amp;&amp;0\\ \sqrt{\beta_{1}}&amp;\alpha_{1}&amp;\sqrt{\beta_{2}}&amp;&amp;\\ &amp;\ddots&amp;\ddots&amp;\ddots&amp;\\ &amp;&amp;\sqrt{\beta_{n-2}}&amp;\alpha_{n-2}&amp;\sqrt{\beta_{n-1}}\\ 0&amp;&amp;&amp;\sqrt{\beta_{n-1}}&amp;\alpha_{n-1}\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="692" xml:id="C3.S5.SS6.p3.s1">
+Let <Math mode="inline" xml:id="C3.S5.SS6.p3.m1">\mathbf{v}_{k}</Math> denote the normalized eigenvector of <Math mode="inline" xml:id="C3.S5.SS6.p3.m2">\mathbf{J}_{n}</Math> corresponding to the eigenvalue <Math mode="inline" xml:id="C3.S5.SS6.p3.m3">x_{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="693" xml:id="C3.S5.SS6.p3.s2">
+Then the weights are given by <Math equation-number="3.5.32" mode="display" xml:id="C3.S5.E32">w_{k}=\beta_{0}v_{k,1}^{2}, if k=1,2,\dots,n,</Math> where <Math mode="inline" xml:id="C3.S5.SS6.p3.m4">\beta_{0}=\int_{a}^{b}w(x)\mathrm{d}x</Math> and <Math mode="inline" xml:id="C3.S5.SS6.p3.m5">v_{k,1}</Math> is the first element of <Math mode="inline" xml:id="C3.S5.SS6.p3.m6">\mathbf{v}_{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="694" xml:id="C3.S5.SS6.p3.s3">
+Also, the error constant (3.5.20) is given by <Math equation-number="3.5.33" mode="display" xml:id="C3.S5.E33">\gamma_{n}=\beta_{0}\beta_{1}\cdots\beta_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="695" xml:id="C3.S5.SS6.p4.s1">
+Tables 3.5.1–3.5.13 can be verified by application of the results given in the present subsection.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="696" xml:id="C3.S5.SS6.p4.s2">
+In these cases the coefficients <Math mode="inline" xml:id="C3.S5.SS6.p4.m1">\alpha_{k}</Math> and <Math mode="inline" xml:id="C3.S5.SS6.p4.m2">\beta_{k}</Math> are obtainable explicitly from results given in §18.9(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS6.p5">
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS7">
+<title>Oscillatory Integrals</title>         
+<para xml:id="C3.S5.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="697" xml:id="C3.S5.SS7.p1.s1">
+Integrals of the form <Math equation-number="3.5.34" mode="display" xml:id="C3.S5.E34">\int_{a}^{b}f(x)\cos\left(\omega x\right)\mathrm{d}x,\int_{a}^{b}f(x)\sin\left(\omega x\right)\mathrm{d}x,</Math> can be computed by Filon’s rule.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="698" xml:id="C3.S5.SS7.p1.s2">
+SeeDavis and Rabinowitz (1984, pp. 146–168).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="699" xml:id="C3.S5.SS7.p2.s1">
+Oscillatory integral transforms are treated in Wong (1982) by amethod based on Gaussian quadrature.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="700" xml:id="C3.S5.SS7.p2.s2">
+A comparison of several methods, including an extension of the Clenshaw–Curtis formula (§3.5(iv)), is given in Evans and Webster (1999).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="701" xml:id="C3.S5.SS7.p3.s1">
+For computing infinite oscillatory integrals, Longman’s method may be used. The integral is written as an alternating series of positive and negative subintegrals that are computed individually; see Longman (1956).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="702" xml:id="C3.S5.SS7.p3.s2">
+Convergence acceleration schemes, for example Levin’s transformation (§3.9(v)), can be used when evaluating the series.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="703" xml:id="C3.S5.SS7.p3.s3">
+Further methods are given in Clendenin (1966) and Lyness (1985).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS7.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="704" xml:id="C3.S5.SS7.p4.s1">
+For a comprehensive survey of quadrature of highly oscillatory integrals, including multidimensional integrals, see Iserles et al. (2006).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS8">
+<title>Complex Gauss Quadrature</title>         
+    
+<para xml:id="C3.S5.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="705" xml:id="C3.S5.SS8.p1.s1">
+For the Bromwich integral <Math equation-number="3.5.35" mode="display" xml:id="C3.S5.E35">I(f)=\frac{1}{2\pi\mathrm{i}}\int_{c-\mathrm{i}\infty}^{c+\mathrm{i}\infty}e^{ \zeta}\zeta^{-s}f(\zeta)\mathrm{d}\zeta, if s&gt;0, c&gt;c_{0}&gt;0,</Math> a complex Gauss quadrature formula is available.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="706" xml:id="C3.S5.SS8.p1.s2">
+Here <Math mode="inline" xml:id="C3.S5.SS8.p1.m1">f(\zeta)</Math> is assumed analytic in the half-plane <Math mode="inline" xml:id="C3.S5.SS8.p1.m2">\Re\zeta&gt;c_{0}</Math> and bounded as <Math mode="inline" xml:id="C3.S5.SS8.p1.m3">\zeta\to\infty</Math> in <Math mode="inline" xml:id="C3.S5.SS8.p1.m4">\left|\operatorname{ph}\zeta\right|\leq\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="707" xml:id="C3.S5.SS8.p1.s3">
+The quadrature rule for (3.5.35) is <Math equation-number="3.5.36" mode="display" xml:id="C3.S5.E36">I(f)=\sum_{k=1}^{n}w_{k}f(\zeta_{k})+E_{n}(f),</Math> where <Math mode="inline" xml:id="C3.S5.SS8.p1.m5">E_{n}(f)=0</Math> if <Math mode="inline" xml:id="C3.S5.SS8.p1.m6">f(\zeta)</Math> is a polynomial of degree <Math mode="inline" xml:id="C3.S5.SS8.p1.m7">\leq 2n-1</Math> in <Math mode="inline" xml:id="C3.S5.SS8.p1.m8">1/\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="708" xml:id="C3.S5.SS8.p1.s4">
+Complex orthogonal polynomials <Math mode="inline" xml:id="C3.S5.SS8.p1.m9">p_{n}(1/\zeta)</Math> of degree <Math mode="inline" xml:id="C3.S5.SS8.p1.m10">n=0,1,2,\dots</Math> , in <Math mode="inline" xml:id="C3.S5.SS8.p1.m11">1/\zeta</Math> that satisfy the orthogonality condition <Math equation-number="3.5.37" mode="display" xml:id="C3.S5.E37">\int_{c-\mathrm{i}\infty}^{c+\mathrm{i}\infty}e^{\zeta}\zeta^{-s}p_{k}(1/\zeta )p_{\ell}(1/\zeta)\mathrm{d}\zeta=0, if k\neq\ell,</Math> are related to Bessel polynomials (§§10.49(ii)and18.34).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="709" xml:id="C3.S5.SS8.p1.s5">
+The complex Gauss nodes <Math mode="inline" xml:id="C3.S5.SS8.p1.m12">\zeta_{k}</Math> have positive real part for all <Math mode="inline" xml:id="C3.S5.SS8.p1.m13">s&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="710" xml:id="C3.S5.SS8.p2.s1">
+The nodes and weights of the 5-point complex Gauss quadrature formula(3.5.36) for <Math mode="inline" xml:id="C3.S5.SS8.p2.m1">s=1</Math> are shown in Table3.5.18.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="711" xml:id="C3.S5.SS8.p2.s2">
+Extensive tables of quadrature nodes and weights can be found in Krylov and Skoblya (1985).
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="712" xml:id="C3.S5.T18.s1">
+Table 3.5.18: Nodes and weights for the 5-point complex Gauss quadrature formula with <Math mode="inline" xml:id="C3.S5.T18.m2">s=1</Math> .
+</sentence>
+ 
+
+<sentence sentence-num-in-section="713" sentence-num-in-table="1" xml:id="C3.S5.T18.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r1.m1">\zeta_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="714" sentence-num-in-table="2" xml:id="C3.S5.T18.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r1.m2">w_{k}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="715" sentence-num-in-table="3" xml:id="C3.S5.T18.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m1">3.65569\;4325</Math>
+</sentence>
+
+<sentence sentence-num-in-section="716" sentence-num-in-table="4" xml:id="C3.S5.T18.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m3">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="717" sentence-num-in-table="5" xml:id="C3.S5.T18.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m4">6.54373\;6899\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="718" sentence-num-in-table="6" xml:id="C3.S5.T18.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m6">3.83966\;1630</Math>
+</sentence>
+
+<sentence sentence-num-in-section="719" sentence-num-in-table="7" xml:id="C3.S5.T18.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m8">-</Math>
+</sentence>
+
+<sentence sentence-num-in-section="720" sentence-num-in-table="8" xml:id="C3.S5.T18.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r2.m9">0.27357\;03863\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="721" sentence-num-in-table="9" xml:id="C3.S5.T18.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m1">3.65569\;4325</Math>
+</sentence>
+
+<sentence sentence-num-in-section="722" sentence-num-in-table="10" xml:id="C3.S5.T18.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m3">-</Math>
+</sentence>
+
+<sentence sentence-num-in-section="723" sentence-num-in-table="11" xml:id="C3.S5.T18.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m4">6.54373\;6899\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="724" sentence-num-in-table="12" xml:id="C3.S5.T18.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m6">3.83966\;1630</Math>
+</sentence>
+
+<sentence sentence-num-in-section="725" sentence-num-in-table="13" xml:id="C3.S5.T18.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m8">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="726" sentence-num-in-table="14" xml:id="C3.S5.T18.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r3.m9">0.27357\;03863\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="727" sentence-num-in-table="15" xml:id="C3.S5.T18.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m1">5.70095\;3299</Math>
+</sentence>
+
+<sentence sentence-num-in-section="728" sentence-num-in-table="16" xml:id="C3.S5.T18.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m3">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="729" sentence-num-in-table="17" xml:id="C3.S5.T18.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m4">3.21026\;5600\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="730" sentence-num-in-table="18" xml:id="C3.S5.T18.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m6">-25.07945\;22</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="731" sentence-num-in-table="19" xml:id="C3.S5.T18.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m8">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="732" sentence-num-in-table="20" xml:id="C3.S5.T18.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r4.m9">2.18725\;2294\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="733" sentence-num-in-table="21" xml:id="C3.S5.T18.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m1">5.70095\;3299</Math>
+</sentence>
+
+<sentence sentence-num-in-section="734" sentence-num-in-table="22" xml:id="C3.S5.T18.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m3">-</Math>
+</sentence>
+
+<sentence sentence-num-in-section="735" sentence-num-in-table="23" xml:id="C3.S5.T18.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m4">3.21026\;5600\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="736" sentence-num-in-table="24" xml:id="C3.S5.T18.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m6">-25.07945\;22</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="737" sentence-num-in-table="25" xml:id="C3.S5.T18.t1.s25">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m8">-</Math>
+</sentence>
+
+<sentence sentence-num-in-section="738" sentence-num-in-table="26" xml:id="C3.S5.T18.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r5.m9">2.18725\;2294\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="739" sentence-num-in-table="27" xml:id="C3.S5.T18.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m1">6.28670\;4752</Math>
+</sentence>
+
+<sentence sentence-num-in-section="740" sentence-num-in-table="28" xml:id="C3.S5.T18.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m3">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="741" sentence-num-in-table="29" xml:id="C3.S5.T18.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m4">0.00000\;0000\mathrm{i}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="742" sentence-num-in-table="30" xml:id="C3.S5.T18.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m6">43.47958\;11</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="743" sentence-num-in-table="31" xml:id="C3.S5.T18.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m8">+</Math>
+</sentence>
+
+<sentence sentence-num-in-section="744" sentence-num-in-table="32" xml:id="C3.S5.T18.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T18.t1.r6.m9">0.00000\;0000\mathrm{i}</Math>
+</sentence>
+     
+<paragraph xml:id="C3.S5.Px8">
+<title>Example. Laplace Transform Inversion</title>  
+   
+<para xml:id="C3.S5.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="745" xml:id="C3.S5.Px8.p1.s1">
+From §1.14(iii)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="746" xml:id="C3.S5.Px8.p1.s2">
+<Math equation-number="3.5.38" mode="display" xml:id="C3.S5.E38">G(p)=\int_{0}^{\infty}e^{-pt}g(t)\mathrm{d}t,</Math> <Math equation-number="3.5.39" mode="display" xml:id="C3.S5.E39">g(t)=\frac{1}{2\pi\mathrm{i}}\int_{\sigma-\mathrm{i}\infty}^{\sigma+\mathrm{i} \infty}e^{tp}G(p)\mathrm{d}p,</Math> with appropriate conditions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="747" xml:id="C3.S5.Px8.p1.s3">
+The pair <Math equation-number="3.5.40" mode="display" xml:id="C3.S5.E40">g(t)=J_{0}\left(t\right),G(p)=\frac{1}{\sqrt{p^{2}+1}},</Math> where <Math mode="inline" xml:id="C3.S5.Px8.p1.m1">J_{0}\left(t\right)</Math> is the Bessel function (§10.2(ii)),satisfy these conditions, provided that <Math mode="inline" xml:id="C3.S5.Px8.p1.m2">\sigma&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="748" xml:id="C3.S5.Px8.p1.s4">
+The integral ( 3.5.39)has the form (3.5.35) if we set <Math mode="inline" xml:id="C3.S5.Px8.p1.m3">\zeta=tp</Math> , <Math mode="inline" xml:id="C3.S5.Px8.p1.m4">c=t\sigma</Math> , and <Math mode="inline" xml:id="C3.S5.Px8.p1.m5">f(\zeta)=t^{-1}\zeta^{s}G(\zeta/t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="749" xml:id="C3.S5.Px8.p1.s5">
+We choose <Math mode="inline" xml:id="C3.S5.Px8.p1.m6">s=1</Math> so that <Math mode="inline" xml:id="C3.S5.Px8.p1.m7">f(\zeta)=O\left(1\right)</Math> at infinity.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="750" xml:id="C3.S5.Px8.p1.s6">
+Equation (3.5.36), without the error term, becomes <Math equation-number="3.5.41" mode="display" xml:id="C3.S5.E41">g(t)=\sum_{k=1}^{n}\frac{w_{k}\zeta_{k}}{\sqrt{\zeta_{k}^{2}+t^{2}}},</Math> approximately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="751" xml:id="C3.S5.Px8.p2.s1">
+Using Table 3.5.18we compute <Math mode="inline" xml:id="C3.S5.Px8.p2.m1">g(t)</Math> for <Math mode="inline" xml:id="C3.S5.Px8.p2.m2">n=5</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="752" xml:id="C3.S5.Px8.p2.s2">
+The results are given in the middle column of Table 3.5.19,accompanied by the actual 10D values in the last column.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="753" xml:id="C3.S5.Px8.p2.s3">
+Agreement is very good for small values of <Math mode="inline" xml:id="C3.S5.Px8.p2.m3">t</Math> , but not for larger values.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="754" xml:id="C3.S5.Px8.p2.s4">
+For these cases the integration path may need to be deformed; see §3.5(ix).
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="755" xml:id="C3.S5.T19.s1">
+Table 3.5.19: Laplace transform inversion.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="756" sentence-num-in-table="1" xml:id="C3.S5.T19.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r1.m1">t</Math>
+</sentence>
+
+<sentence sentence-num-in-section="757" sentence-num-in-table="2" xml:id="C3.S5.T19.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r1.m2">J_{0}(t)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="758" sentence-num-in-table="3" xml:id="C3.S5.T19.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r1.m3">g(t)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="759" sentence-num-in-table="4" xml:id="C3.S5.T19.t1.s4">
+0.0
+</sentence>
+
+<sentence sentence-num-in-section="760" sentence-num-in-table="5" xml:id="C3.S5.T19.t1.s5">
+1.00000 00000
+</sentence>
+
+<sentence sentence-num-in-section="761" sentence-num-in-table="6" xml:id="C3.S5.T19.t1.s6">
+1.00000 00000
+</sentence>
+
+<sentence sentence-num-in-section="762" sentence-num-in-table="7" xml:id="C3.S5.T19.t1.s7">
+0.5
+</sentence>
+
+<sentence sentence-num-in-section="763" sentence-num-in-table="8" xml:id="C3.S5.T19.t1.s8">
+0.93846 98072
+</sentence>
+
+<sentence sentence-num-in-section="764" sentence-num-in-table="9" xml:id="C3.S5.T19.t1.s9">
+0.93846 98072
+</sentence>
+
+<sentence sentence-num-in-section="765" sentence-num-in-table="10" xml:id="C3.S5.T19.t1.s10">
+1.0
+</sentence>
+
+<sentence sentence-num-in-section="766" sentence-num-in-table="11" xml:id="C3.S5.T19.t1.s11">
+0.76519 76866
+</sentence>
+
+<sentence sentence-num-in-section="767" sentence-num-in-table="12" xml:id="C3.S5.T19.t1.s12">
+0.76519 76865
+</sentence>
+
+<sentence sentence-num-in-section="768" sentence-num-in-table="13" xml:id="C3.S5.T19.t1.s13">
+2.0
+</sentence>
+
+<sentence sentence-num-in-section="769" sentence-num-in-table="14" xml:id="C3.S5.T19.t1.s14">
+0.22389 07791
+</sentence>
+
+<sentence sentence-num-in-section="770" sentence-num-in-table="15" xml:id="C3.S5.T19.t1.s15">
+0.22389 10326
+</sentence>
+
+<sentence sentence-num-in-section="771" sentence-num-in-table="16" xml:id="C3.S5.T19.t1.s16">
+5.0
+</sentence>
+
+<sentence sentence-num-in-section="772" sentence-num-in-table="17" xml:id="C3.S5.T19.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r6.m1">-</Math>0.17759 67713
+</sentence>
+
+<sentence sentence-num-in-section="773" sentence-num-in-table="18" xml:id="C3.S5.T19.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r6.m2">-</Math>0.17902 54097
+</sentence>
+
+<sentence sentence-num-in-section="774" sentence-num-in-table="19" xml:id="C3.S5.T19.t1.s19">
+10.0
+</sentence>
+
+<sentence sentence-num-in-section="775" sentence-num-in-table="20" xml:id="C3.S5.T19.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r7.m1">-</Math>0.24593 57645
+</sentence>
+
+<sentence sentence-num-in-section="776" sentence-num-in-table="21" xml:id="C3.S5.T19.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T19.t1.r7.m2">-</Math>0.07540 53543
+</sentence>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS9">
+<title>Other Contour Integrals</title>           
+<para xml:id="C3.S5.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="777" xml:id="C3.S5.SS9.p1.s1">
+A frequent problem with contour integrals is heavy cancellation, which occurs especially when the value of the integral is exponentially small compared with the maximum absolute value of the integrand.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="778" xml:id="C3.S5.SS9.p1.s2">
+To avoid cancellation wetry to deform the path to pass through a saddle point in such a way that the maximum contribution of the integrand is derived from the neighborhood of the saddle point. For example, steepest descent paths can be used; see §2.4(iv).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S5.Px9">
+<title>Example</title>  
+  
+<para xml:id="C3.S5.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="779" xml:id="C3.S5.Px9.p1.s1">
+In (3.5.35) take <Math mode="inline" xml:id="C3.S5.Px9.p1.m1">s=1</Math> and <Math mode="inline" xml:id="C3.S5.Px9.p1.m2">f(\zeta)=e^{-2\lambda\sqrt{\zeta}}</Math> , with <Math mode="inline" xml:id="C3.S5.Px9.p1.m3">\lambda&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="780" xml:id="C3.S5.Px9.p1.s2">
+When <Math mode="inline" xml:id="C3.S5.Px9.p1.m4">\lambda</Math> is large the integral becomes exponentially small, and application of the quadrature rule of § 3.5(viii) is useless.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="781" xml:id="C3.S5.Px9.p1.s3">
+In fact from (7.14.4) and the inversion formula for the Laplace transform (§1.14(iii)) we have <Math equation-number="3.5.42" mode="display" xml:id="C3.S5.E42">\operatorname{erfc}\lambda=\frac{1}{2\pi\mathrm{i}}\int_{c-\mathrm{i}\infty}^{ c+\mathrm{i}\infty}e^{\zeta-2\lambda\sqrt{\zeta}}\frac{\mathrm{d}\zeta}{\zeta}, if c&gt;0,</Math> where <Math mode="inline" xml:id="C3.S5.Px9.p1.m5">\operatorname{erfc}z</Math> is the complementary error function, and from (7.12.1) it follows that <Math equation-number="3.5.43" mode="display" xml:id="C3.S5.E43">\operatorname{erfc}\lambda\sim\frac{e^{-\lambda^{2}}}{\sqrt{\pi}\lambda}, if \lambda\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="782" xml:id="C3.S5.Px9.p1.s4">
+With the transformation <Math mode="inline" xml:id="C3.S5.Px9.p1.m6">\zeta=\lambda^{2}t</Math> , (3.5.42) becomes <Math equation-number="3.5.44" mode="display" xml:id="C3.S5.E44">\operatorname{erfc}\lambda=\frac{1}{2\pi\mathrm{i}}\int_{c-\mathrm{i}\infty}^{ c+\mathrm{i}\infty}e^{\lambda^{2}(t-2\sqrt{t})}\frac{\mathrm{d}t}{t}, if c&gt;0,</Math> with saddle point at <Math mode="inline" xml:id="C3.S5.Px9.p1.m7">t=1</Math> , and when <Math mode="inline" xml:id="C3.S5.Px9.p1.m8">c=1</Math> the vertical path intersects the real axis at the saddle point. The steepest descent path is given by <Math mode="inline" xml:id="C3.S5.Px9.p1.m9">\Im(t-2\sqrt{t})=0</Math> , or in polar coordinates <Math mode="inline" xml:id="C3.S5.Px9.p1.m10">t=re^{i\theta}</Math> we have <Math mode="inline" xml:id="C3.S5.Px9.p1.m11">r={\sec^{2}}\left(\frac{1}{2}\theta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="783" xml:id="C3.S5.Px9.p1.s5">
+Thus <Math equation-number="3.5.45" mode="display" xml:id="C3.S5.E45">\operatorname{erfc}\lambda=\frac{e^{-\lambda^{2}}}{2\pi}\int_{-\pi}^{\pi}e^{- \lambda^{2}{\tan^{2}}\left(\frac{1}{2}\theta\right)}\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="784" xml:id="C3.S5.Px9.p1.s6">
+The integrand can be extended as a periodic <Math mode="inline" xml:id="C3.S5.Px9.p1.m12">C^{\infty}</Math> function on <Math mode="inline" xml:id="C3.S5.Px9.p1.m13">\mathbb{R}</Math> with period <Math mode="inline" xml:id="C3.S5.Px9.p1.m14">2\pi</Math> and as noted in §3.5(i), the trapezoidal rule is exceptionally efficient in this case.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="785" xml:id="C3.S5.Px9.p2.s1">
+Table 3.5.20 gives the results of applying the composite trapezoidal rule (3.5.2) with step size <Math mode="inline" xml:id="C3.S5.Px9.p2.m1">h</Math> ; <Math mode="inline" xml:id="C3.S5.Px9.p2.m2">n</Math> indicates the number of function values in the rule that are larger than <Math mode="inline" xml:id="C3.S5.Px9.p2.m3">10^{-15}</Math> (we exploit the fact that the integrand is even).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="786" xml:id="C3.S5.Px9.p2.s2">
+All digits shown in the approximation in the final row are correct.
+</sentence>
+
+</para>
+
+         
+<sentence sentence-num-in-section="787" xml:id="C3.S5.T20.s1">
+Table 3.5.20: Composite trapezoidal rule for the integral ( ) with <Math mode="inline" xml:id="C3.S5.T20.m2">\lambda=10</Math> .
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="788" sentence-num-in-table="1" xml:id="C3.S5.T20.t1.s1">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r1.m1">h</Math>
+</sentence>
+
+<sentence sentence-num-in-section="789" sentence-num-in-table="2" xml:id="C3.S5.T20.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r1.m2">\operatorname{erfc}\lambda</Math>
+</sentence>
+
+<sentence sentence-num-in-section="790" sentence-num-in-table="3" xml:id="C3.S5.T20.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r1.m3">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="791" sentence-num-in-table="4" xml:id="C3.S5.T20.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r2.m1">0.25</Math>
+</sentence>
+
+<sentence sentence-num-in-section="792" sentence-num-in-table="5" xml:id="C3.S5.T20.t1.s5">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r2.m3">0.20949\;49432\;96679</Math>
+</sentence>
+
+<sentence sentence-num-in-section="793" sentence-num-in-table="6" xml:id="C3.S5.T20.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r2.m4">\times 10^{-44}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="794" sentence-num-in-table="7" xml:id="C3.S5.T20.t1.s7">
+5
+</sentence>
+
+<sentence sentence-num-in-section="795" sentence-num-in-table="8" xml:id="C3.S5.T20.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r3.m1">0.20</Math>
+</sentence>
+
+<sentence sentence-num-in-section="796" sentence-num-in-table="9" xml:id="C3.S5.T20.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r3.m3">0.20886\;11645\;34559</Math>
+</sentence>
+
+<sentence sentence-num-in-section="797" sentence-num-in-table="10" xml:id="C3.S5.T20.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r3.m4">\times 10^{-44}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="798" sentence-num-in-table="11" xml:id="C3.S5.T20.t1.s11">
+6
+</sentence>
+
+<sentence sentence-num-in-section="799" sentence-num-in-table="12" xml:id="C3.S5.T20.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r4.m1">0.15</Math>
+</sentence>
+
+<sentence sentence-num-in-section="800" sentence-num-in-table="13" xml:id="C3.S5.T20.t1.s13">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r4.m3">0.20884\;87588\;72946</Math>
+</sentence>
+
+<sentence sentence-num-in-section="801" sentence-num-in-table="14" xml:id="C3.S5.T20.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r4.m4">\times 10^{-44}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="802" sentence-num-in-table="15" xml:id="C3.S5.T20.t1.s15">
+8
+</sentence>
+
+<sentence sentence-num-in-section="803" sentence-num-in-table="16" xml:id="C3.S5.T20.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r5.m1">0.10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="804" sentence-num-in-table="17" xml:id="C3.S5.T20.t1.s17">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r5.m3">0.20884\;87583\;76254</Math>
+</sentence>
+
+<sentence sentence-num-in-section="805" sentence-num-in-table="18" xml:id="C3.S5.T20.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T20.t1.r5.m4">\times 10^{-44}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="806" sentence-num-in-table="19" xml:id="C3.S5.T20.t1.s19">
+11
+</sentence>
+   
+<para xml:id="C3.S5.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="807" xml:id="C3.S5.Px9.p3.s1">
+A second example is provided in Gil et al. (2001), where the method of contour integration is used to evaluate Scorer functions of complex argument (§9.12).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="808" xml:id="C3.S5.Px9.p3.s2">
+See also Gil et al. (2003b).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="809" xml:id="C3.S5.Px9.p4.s1">
+If <Math mode="inline" xml:id="C3.S5.Px9.p4.m1">f</Math> is meromorphic, with poles near the saddle point, then the foregoing method can be modified. A special case is the rule for Hilbert transforms (§1.14(v)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="810" xml:id="C3.S5.Px9.p4.s2">
+<Math equation-number="3.5.46" mode="display" xml:id="C3.S5.E46">\mathcal{H}\mskip-3.0mu f\mskip 3.0mu \left(x\right)=\frac{1}{\pi}\pvint_{- \infty}^{\infty}\frac{f(t)}{t-x}\mathrm{d}t, if x\in\mathbb{R},</Math> where the integral is the Cauchy principal value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="811" xml:id="C3.S5.Px9.p4.s3">
+See Kress and Martensen (1970).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.Px9.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="812" xml:id="C3.S5.Px9.p5.s1">
+Other contour integrals occur in standard integral transforms or their inverses, for example, Hankel transforms (§10.22(v)),Kontorovich–Lebedev transforms (§10.43(v)), and Mellin transforms (§1.14(iv)).
+</sentence>
+
+</para>
+
+   
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S5.SS10">
+<title>Cubature Formulas</title>           
+<para xml:id="C3.S5.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="813" xml:id="C3.S5.SS10.p1.s1">
+Table 3.5.21supplies cubature rules, including weights <Math mode="inline" xml:id="C3.S5.SS10.p1.m1">w_{j}</Math> , for the disk <Math mode="inline" xml:id="C3.S5.SS10.p1.m2">D</Math> , given by <Math mode="inline" xml:id="C3.S5.SS10.p1.m3">x^{2}+y^{2}\leq h^{2}</Math> : <Math equation-number="3.5.47" mode="display" xml:id="C3.S5.E47">\frac{1}{\pi h^{2}}\iint_{D}f(x,y)\mathrm{d}x\mathrm{d}y=\sum_{j=1}^{n}w_{j}f( x_{j},y_{j})+R,</Math> and the square <Math mode="inline" xml:id="C3.S5.SS10.p1.m4">S</Math> , given by <Math mode="inline" xml:id="C3.S5.SS10.p1.m5">\left|x\right|\leq h</Math> , <Math mode="inline" xml:id="C3.S5.SS10.p1.m6">\left|y\right|\leq h</Math> : <Math equation-number="3.5.48" mode="display" xml:id="C3.S5.E48">\frac{1}{4h^{2}}\iint_{S}f(x,y)\mathrm{d}x\mathrm{d}y=\sum_{j=1}^{n}w_{j}f(x_{ j},y_{j})+R</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="814" xml:id="C3.S5.SS10.p2.s1">
+For these results and further information on cubature formulas seeCools (2003).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S5.SS10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="815" xml:id="C3.S5.SS10.p3.s1">
+For integrals in higher dimensions, Monte Carlo methods are another—often the only—alternative.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="816" xml:id="C3.S5.SS10.p3.s2">
+The standard Monte Carlo method samples points uniformly from the integration region to estimate the integral and its error.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="817" xml:id="C3.S5.SS10.p3.s3">
+In more advanced methods points are sampled from a probability distribution, so that they are concentrated in regions that make the largest contribution to the integral.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="818" xml:id="C3.S5.SS10.p3.s4">
+With <Math mode="inline" xml:id="C3.S5.SS10.p3.m1">N</Math> function values, the Monte Carlomethod aims at an error of order <Math mode="inline" xml:id="C3.S5.SS10.p3.m2">1/\sqrt{N}</Math> , independently of the dimension of the domain of integration.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="819" xml:id="C3.S5.SS10.p3.s5">
+See Davis and Rabinowitz (1984, pp. 384–417) and Schürer (2004).
+</sentence>
+
+</para>
+   
+         
+<sentence sentence-num-in-section="820" xml:id="C3.S5.T21.s1">
+Table 3.5.21: Cubature formulas for disk and square.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="821" sentence-num-in-table="1" xml:id="C3.S5.T21.t1.s1">
+Diagram
+</sentence>
+
+<sentence sentence-num-in-section="822" sentence-num-in-table="2" xml:id="C3.S5.T21.t1.s2">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r1.m1">(x_{j},y_{j})</Math>
+</sentence>
+
+<sentence sentence-num-in-section="823" sentence-num-in-table="3" xml:id="C3.S5.T21.t1.s3">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r1.m2">w_{j}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="824" sentence-num-in-table="4" xml:id="C3.S5.T21.t1.s4">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r1.m3">R</Math>
+</sentence>
+
+<sentence sentence-num-in-section="825" sentence-num-in-table="5" xml:id="C3.S5.T21.t1.s5">
+
+
+                                                                                                                                             
+</sentence>
+
+<sentence sentence-num-in-section="826" sentence-num-in-table="6" xml:id="C3.S5.T21.t1.s6">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r3.m1">(0,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="827" sentence-num-in-table="7" xml:id="C3.S5.T21.t1.s7">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r3.m2">\tfrac{1}{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="828" sentence-num-in-table="8" xml:id="C3.S5.T21.t1.s8">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r3.m3">O\left(h^{4}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="829" sentence-num-in-table="9" xml:id="C3.S5.T21.t1.s9">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r4.m1">(\pm h,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="830" sentence-num-in-table="10" xml:id="C3.S5.T21.t1.s10">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r4.m2">\tfrac{1}{8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="831" sentence-num-in-table="11" xml:id="C3.S5.T21.t1.s11">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r5.m1">(0,\pm h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="832" sentence-num-in-table="12" xml:id="C3.S5.T21.t1.s12">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r5.m2">\tfrac{1}{8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="833" sentence-num-in-table="13" xml:id="C3.S5.T21.t1.s13">
+
+
+                                                                                                                                          
+</sentence>
+
+<sentence sentence-num-in-section="834" sentence-num-in-table="14" xml:id="C3.S5.T21.t1.s14">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r7.m1">(\pm\tfrac{1}{2}h,\pm\tfrac{1}{2}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="835" sentence-num-in-table="15" xml:id="C3.S5.T21.t1.s15">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r7.m2">\tfrac{1}{4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="836" sentence-num-in-table="16" xml:id="C3.S5.T21.t1.s16">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r7.m3">O\left(h^{4}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="837" sentence-num-in-table="17" xml:id="C3.S5.T21.t1.s17">
+
+
+                                                                                                                                                         
+</sentence>
+
+<sentence sentence-num-in-section="838" sentence-num-in-table="18" xml:id="C3.S5.T21.t1.s18">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r9.m1">(0,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="839" sentence-num-in-table="19" xml:id="C3.S5.T21.t1.s19">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r9.m2">\tfrac{1}{6}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="840" sentence-num-in-table="20" xml:id="C3.S5.T21.t1.s20">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r9.m3">O\left(h^{6}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="841" sentence-num-in-table="21" xml:id="C3.S5.T21.t1.s21">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r10.m1">(\pm h,0)</Math>, <Math mode="inline" xml:id="C3.S5.T21.t1.r10.m2">(0,\pm h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="842" sentence-num-in-table="22" xml:id="C3.S5.T21.t1.s22">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r10.m3">\tfrac{1}{24}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="843" sentence-num-in-table="23" xml:id="C3.S5.T21.t1.s23">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r11.m1">(\pm\tfrac{1}{2}h,\pm\tfrac{1}{2}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="844" sentence-num-in-table="24" xml:id="C3.S5.T21.t1.s24">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r11.m2">\tfrac{1}{6}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="845" sentence-num-in-table="25" xml:id="C3.S5.T21.t1.s25">
+
+
+                                                                                                                                                   
+</sentence>
+
+<sentence sentence-num-in-section="846" sentence-num-in-table="26" xml:id="C3.S5.T21.t1.s26">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r13.m1">(0,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="847" sentence-num-in-table="27" xml:id="C3.S5.T21.t1.s27">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r13.m2">\tfrac{1}{4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="848" sentence-num-in-table="28" xml:id="C3.S5.T21.t1.s28">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r13.m3">O\left(h^{6}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="849" sentence-num-in-table="29" xml:id="C3.S5.T21.t1.s29">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r14.m1">(\pm\tfrac{1}{3}\sqrt{6}h,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="850" sentence-num-in-table="30" xml:id="C3.S5.T21.t1.s30">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r14.m2">\tfrac{1}{8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="851" sentence-num-in-table="31" xml:id="C3.S5.T21.t1.s31">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r15.m1">(\pm\tfrac{1}{6}\sqrt{6}h,\pm\tfrac{1}{2}\sqrt{2}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="852" sentence-num-in-table="32" xml:id="C3.S5.T21.t1.s32">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r15.m2">\tfrac{1}{8}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="853" sentence-num-in-table="33" xml:id="C3.S5.T21.t1.s33">
+
+
+                                                                                                                                                                  
+</sentence>
+
+<sentence sentence-num-in-section="854" sentence-num-in-table="34" xml:id="C3.S5.T21.t1.s34">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r17.m1">(0,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="855" sentence-num-in-table="35" xml:id="C3.S5.T21.t1.s35">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r17.m2">\tfrac{4}{9}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="856" sentence-num-in-table="36" xml:id="C3.S5.T21.t1.s36">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r17.m3">O\left(h^{4}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="857" sentence-num-in-table="37" xml:id="C3.S5.T21.t1.s37">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r18.m1">(\pm h,0)</Math>, <Math mode="inline" xml:id="C3.S5.T21.t1.r18.m2">(0,\pm h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="858" sentence-num-in-table="38" xml:id="C3.S5.T21.t1.s38">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r18.m3">\tfrac{1}{9}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="859" sentence-num-in-table="39" xml:id="C3.S5.T21.t1.s39">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r19.m1">(\pm h,\pm h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="860" sentence-num-in-table="40" xml:id="C3.S5.T21.t1.s40">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r19.m2">\tfrac{1}{36}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="861" sentence-num-in-table="41" xml:id="C3.S5.T21.t1.s41">
+
+
+                                                                                                                                                   
+</sentence>
+
+<sentence sentence-num-in-section="862" sentence-num-in-table="42" xml:id="C3.S5.T21.t1.s42">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r21.m1">(\pm\tfrac{1}{3}\sqrt{3}h,\pm\tfrac{1}{3}\sqrt{3}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="863" sentence-num-in-table="43" xml:id="C3.S5.T21.t1.s43">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r21.m2">\tfrac{1}{4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="864" sentence-num-in-table="44" xml:id="C3.S5.T21.t1.s44">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r21.m3">O\left(h^{4}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="865" sentence-num-in-table="45" xml:id="C3.S5.T21.t1.s45">
+
+
+                                                                                                                                                                  
+</sentence>
+
+<sentence sentence-num-in-section="866" sentence-num-in-table="46" xml:id="C3.S5.T21.t1.s46">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r23.m1">(0,0)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="867" sentence-num-in-table="47" xml:id="C3.S5.T21.t1.s47">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r23.m2">\tfrac{16}{81}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="868" sentence-num-in-table="48" xml:id="C3.S5.T21.t1.s48">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r23.m3">O\left(h^{6}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="869" sentence-num-in-table="49" xml:id="C3.S5.T21.t1.s49">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r24.m1">(\pm\sqrt{\tfrac{3}{5}}h,0)</Math>, <Math mode="inline" xml:id="C3.S5.T21.t1.r24.m2">(0,\pm\sqrt{\tfrac{3}{5}}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="870" sentence-num-in-table="50" xml:id="C3.S5.T21.t1.s50">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r24.m3">\tfrac{10}{81}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="871" sentence-num-in-table="51" xml:id="C3.S5.T21.t1.s51">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r25.m1">(\pm\sqrt{\tfrac{3}{5}}h,\pm\sqrt{\tfrac{3}{5}}h)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="872" sentence-num-in-table="52" xml:id="C3.S5.T21.t1.s52">
+<Math mode="inline" xml:id="C3.S5.T21.t1.r25.m2">\tfrac{25}{324}</Math>
+</sentence>
+    
+</subsection>
+ 
+</section>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S11">
+<title>Zeros</title>        
+ 
+<subsection xml:id="C12.S11.SS1">
+<title>Distribution of Real Zeros</title>        
+  
+<para xml:id="C12.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S11.SS1.p1.s1">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m1">a\geq-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m2">U\left(a,x\right)</Math> has no real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C12.S11.SS1.p1.s2">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m3">-\tfrac{3}{2}&lt;a&lt;-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m4">U\left(a,x\right)</Math> has no positive real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C12.S11.SS1.p1.s3">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m5">-2n-\tfrac{3}{2}&lt;a&lt;-2n+\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p1.m6">n=1,2,\dots</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m7">U\left(a,x\right)</Math> has <Math mode="inline" xml:id="C12.S11.SS1.p1.m8">n</Math> positive real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C12.S11.SS1.p1.s4">
+Lastly, when <Math mode="inline" xml:id="C12.S11.SS1.p1.m9">a=-n-\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p1.m10">n=1,2,\dots</Math> (Hermite polynomial case) <Math mode="inline" xml:id="C12.S11.SS1.p1.m11">U\left(a,x\right)</Math> has <Math mode="inline" xml:id="C12.S11.SS1.p1.m12">n</Math> zeros and they lie in the interval <Math mode="inline" xml:id="C12.S11.SS1.p1.m13">[-2\sqrt{-a},2\sqrt{-a}\,]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C12.S11.SS1.p1.s5">
+For further information on these cases see Dean (1966).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C12.S11.SS1.p2.s1">
+If <Math mode="inline" xml:id="C12.S11.SS1.p2.m1">a&gt;-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p2.m2">V\left(a,x\right)</Math> has no positive real zeros, and if <Math mode="inline" xml:id="C12.S11.SS1.p2.m3">a=\tfrac{3}{2}-2n</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p2.m4">n\in\mathbb{Z}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p2.m5">V\left(a,x\right)</Math> has a zero at <Math mode="inline" xml:id="C12.S11.SS1.p2.m6">x=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S11.SS2">
+<title>Asymptotic Expansions of Large Zeros</title>        
+  
+<para xml:id="C12.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C12.S11.SS2.p1.s1">
+When <Math mode="inline" xml:id="C12.S11.SS2.p1.m1">a&gt;-\frac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS2.p1.m2">U\left(a,z\right)</Math> has a string of complex zeros that approaches the ray <Math mode="inline" xml:id="C12.S11.SS2.p1.m3">\operatorname{ph}z=\frac{3}{4}\pi</Math> as <Math mode="inline" xml:id="C12.S11.SS2.p1.m4">z\to\infty</Math> , and a conjugate string.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C12.S11.SS2.p1.s2">
+When <Math mode="inline" xml:id="C12.S11.SS2.p1.m5">a&gt;-\frac{1}{2}</Math> the zeros are asymptotically given by <Math mode="inline" xml:id="C12.S11.SS2.p1.m6">z_{a,s}</Math> and <Math mode="inline" xml:id="C12.S11.SS2.p1.m7">\overline{z_{a,s}}</Math> , where <Math mode="inline" xml:id="C12.S11.SS2.p1.m8">s</Math> is a large positive integer and <Math equation-number="12.11.1" mode="display" xml:id="C12.S11.E1">z_{a,s}=e^{\frac{3}{4}\pi i}\sqrt{2\tau_{s}}\left(1-\frac{ia\lambda_{s}}{2\tau _{s}}+\frac{2a^{2}\lambda_{s}^{2}-8a^{2}\lambda_{s}+4a^{2}+3}{16\tau_{s}^{2}}+ O\left(\lambda_{s}^{3}\tau_{s}^{-3}\right)\right),</Math> with <Math equation-number="12.11.2" mode="display" xml:id="C12.S11.E2">\tau_{s}=\left(2s+\tfrac{1}{2}-a\right)\pi+i\ln\left(\pi^{-\frac{1}{2}}2^{-a- \frac{1}{2}}\Gamma\left(\tfrac{1}{2}+a\right)\right),</Math> and <Math equation-number="12.11.3" mode="display" xml:id="C12.S11.E3">\lambda_{s}=\ln\tau_{s}-\tfrac{1}{2}\pi i</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C12.S11.SS2.p2.s1">
+When <Math mode="inline" xml:id="C12.S11.SS2.p2.m1">a=\tfrac{1}{2}</Math> these zeros are the same as the zeros of the complementary error function <Math mode="inline" xml:id="C12.S11.SS2.p2.m2">\operatorname{erfc}(z/\sqrt{2})</Math> ; compare (12.7.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C12.S11.SS2.p2.s2">
+Numerical calculations in this case show that <Math mode="inline" xml:id="C12.S11.SS2.p2.m3">z_{\frac{1}{2},s}</Math> corresponds to the <Math mode="inline" xml:id="C12.S11.SS2.p2.m4">s</Math> th zero on the string; compare §7.13(ii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S11.SS3">
+<title>Asymptotic Expansions for Large Parameter</title>          
+<para xml:id="C12.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C12.S11.SS3.p1.s1">
+For large negative values of <Math mode="inline" xml:id="C12.S11.SS3.p1.m1">a</Math> the real zeros of <Math mode="inline" xml:id="C12.S11.SS3.p1.m2">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m3">U'\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m4">V\left(a,x\right)</Math> , and <Math mode="inline" xml:id="C12.S11.SS3.p1.m5">V'\left(a,x\right)</Math> can be approximated by reversion of the Airy-type asymptotic expansions of §§12.10(vii) and 12.10(viii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C12.S11.SS3.p1.s2">
+For example, let the <Math mode="inline" xml:id="C12.S11.SS3.p1.m6">s</Math> th real zeros of <Math mode="inline" xml:id="C12.S11.SS3.p1.m7">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S11.SS3.p1.m8">U'\left(a,x\right)</Math> , counted in descending order away from the point <Math mode="inline" xml:id="C12.S11.SS3.p1.m9">z=2\sqrt{-a}</Math> , be denoted by <Math mode="inline" xml:id="C12.S11.SS3.p1.m10">u_{a,s}</Math> and <Math mode="inline" xml:id="C12.S11.SS3.p1.m11">u^{\prime}_{a,s}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C12.S11.SS3.p1.s3">
+Then <Math equation-number="12.11.4" mode="display" xml:id="C12.S11.E4">u_{a,s}\sim 2^{\frac{1}{2}}\mu\left(p_{0}(\alpha)+\frac{p_{1}(\alpha)}{\mu^{4} }+\frac{p_{2}(\alpha)}{\mu^{8}}+\cdots\right),</Math> as <Math mode="inline" xml:id="C12.S11.SS3.p1.m12">\mu</Math> ( <Math mode="inline" xml:id="C12.S11.SS3.p1.m13">=\sqrt{-2a}</Math> ) <Math mode="inline" xml:id="C12.S11.SS3.p1.m14">\to\infty</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m15">s</Math> fixed. Here <Math mode="inline" xml:id="C12.S11.SS3.p1.m16">\alpha=\mu^{-\frac{4}{3}}a_{s}</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m17">a_{s}</Math> denoting the <Math mode="inline" xml:id="C12.S11.SS3.p1.m18">s</Math> th negative zero of the function <Math mode="inline" xml:id="C12.S11.SS3.p1.m19">\mathrm{Ai}</Math> (see §9.9(i)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C12.S11.SS3.p1.s4">
+The first two coefficients are given by <Math equation-number="12.11.5" mode="display" xml:id="C12.S11.E5">p_{0}(\zeta)=t(\zeta),</Math> where <Math mode="inline" xml:id="C12.S11.SS3.p1.m20">t(\zeta)</Math> is the function inverse to <Math mode="inline" xml:id="C12.S11.SS3.p1.m21">\zeta(t)</Math> , defined by (12.10.39)(see also (12.10.41)), and <Math equation-number="12.11.6" mode="display" xml:id="C12.S11.E6">p_{1}(\zeta)=\frac{t^{3}-6t}{24(t^{2}-1)^{2}}+\frac{5}{48((t^{2}-1)\zeta^{3})^ {\frac{1}{2}}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C12.S11.SS3.p2.s1">
+Similarly, for the zeros of <Math mode="inline" xml:id="C12.S11.SS3.p2.m1">U'\left(a,x\right)</Math> we have <Math equation-number="12.11.7" mode="display" xml:id="C12.S11.E7">u^{\prime}_{a,s}\sim 2^{\frac{1}{2}}\mu\left(q_{0}(\beta)+\frac{q_{1}(\beta)}{ \mu^{4}}+\frac{q_{2}(\beta)}{\mu^{8}}+\cdots\right),</Math> where <Math mode="inline" xml:id="C12.S11.SS3.p2.m2">\beta=\mu^{-\frac{4}{3}}a^{\prime}_{s}</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p2.m3">a^{\prime}_{s}</Math> denoting the <Math mode="inline" xml:id="C12.S11.SS3.p2.m4">s</Math> th negative zero of the function <Math mode="inline" xml:id="C12.S11.SS3.p2.m5">\mathrm{Ai}'</Math> and <Math equation-number="12.11.8" mode="display" xml:id="C12.S11.E8">q_{0}(\zeta)=t(\zeta)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C12.S11.SS3.p3.s1">
+For the first zero of <Math mode="inline" xml:id="C12.S11.SS3.p3.m1">U\left(a,x\right)</Math> we also have <Math equation-number="12.11.9" mode="display" xml:id="C12.S11.E9">u_{a,1}\sim 2^{\frac{1}{2}}\mu\left(1-1.85575\;708\mu^{-4/3}-0.34438\;34\mu^{- 8/3}-0.16871\;5\mu^{-4}-0.11414\mu^{-16/3}-0.0808\mu^{-20/3}-\cdots\right)</Math> , where the numerical coefficients have been rounded off.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C12.S11.SS3.p4.s1">
+For further information, including associated functions, seeOlver (1959).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

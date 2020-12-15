@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S16">
+<title>Mathematical Applications</title>        
+  
+<subsection xml:id="C25.S16.SS1">
+<title>Distribution of Primes</title>        
+  
+<para xml:id="C25.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S16.SS1.p1.s1">
+In studying the distribution of primes <Math mode="inline" xml:id="C25.S16.SS1.p1.m1">p\leq x</Math> , Chebyshev (1851) introduced a function <Math mode="inline" xml:id="C25.S16.SS1.p1.m2">\psi\left(x\right)</Math> (not to be confused with the digamma function used elsewhere in this chapter), given by <Math equation-number="25.16.1" mode="display" xml:id="C25.S16.E1">\psi\left(x\right)=\sum_{m=1}^{\infty}\sum_{p^{m}\leq x}\ln p,</Math> which is related to the Riemann zeta function by <Math equation-number="25.16.2" mode="display" xml:id="C25.S16.E2">\psi\left(x\right)=x-\frac{\zeta'\left(0\right)}{\zeta\left(0\right)}-\sum_{ \rho}\frac{x^{\rho}}{\rho}+o\left(1\right), if x\to\infty,</Math> where the sum is taken over the nontrivial zeros <Math mode="inline" xml:id="C25.S16.SS1.p1.m4">\rho</Math> of <Math mode="inline" xml:id="C25.S16.SS1.p1.m5">\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C25.S16.SS1.p2.s1">
+The prime number theorem (27.2.3) is equivalent to the statement <Math equation-number="25.16.3" mode="display" xml:id="C25.S16.E3">\psi\left(x\right)=x+o\left(x\right), if x\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C25.S16.SS1.p3.s1">
+The Riemann hypothesis is equivalent to the statement <Math equation-number="25.16.4" mode="display" xml:id="C25.S16.E4">\psi\left(x\right)=x+O\left(x^{\frac{1}{2}+\epsilon}\right), if x\to\infty,</Math> for every <Math mode="inline" xml:id="C25.S16.SS1.p3.m1">\epsilon&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S16.SS2">
+<title>Euler Sums</title>        
+  
+<para xml:id="C25.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C25.S16.SS2.p1.s1">
+Euler sums have the form <Math equation-number="25.16.5" mode="display" xml:id="C25.S16.E5">H\left(s\right)=\sum_{n=1}^{\infty}\frac{h(n)}{n^{s}},</Math> where <Math mode="inline" xml:id="C25.S16.SS2.p1.m2">h(n)</Math> is given by (25.11.33).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C25.S16.SS2.p2.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p2.m1">H\left(s\right)</Math> is analytic for <Math mode="inline" xml:id="C25.S16.SS2.p2.m2">\Re s&gt;1</Math> , and can be extended meromorphically into the half-plane <Math mode="inline" xml:id="C25.S16.SS2.p2.m3">\Re s&gt;-2k</Math> for every positive integer <Math mode="inline" xml:id="C25.S16.SS2.p2.m4">k</Math> by use of the relations
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S16.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C25.S16.SS2.p3.s1">
+ <Math equation-number="25.16.6" mode="display" xml:id="C25.S16.E6">H\left(s\right)=-\zeta'\left(s\right)+\gamma\zeta\left(s\right)+\frac{1}{2} \zeta\left(s+1\right)+\sum_{r=1}^{k}\zeta\left(1-2r\right)\zeta\left(s+2r \right)+\sum_{n=1}^{\infty}\frac{1}{n^{s}}\int_{n}^{\infty}\frac{\widetilde{B} _{2k+1}\left(x\right)}{x^{2k+2}}\mathrm{d}x,</Math> <Math equation-number="25.16.7" mode="display" xml:id="C25.S16.E7">H\left(s\right)=\frac{1}{2}\zeta\left(s+1\right)+\frac{\zeta\left(s\right)}{s- 1}-\sum_{r=1}^{k}\genfrac{(}{)}{0.0pt}{}{s+2r-2}{2r-1}\zeta\left(1-2r\right) \zeta\left(s+2r\right)-\genfrac{(}{)}{0.0pt}{}{s+2k}{2k+1}\sum_{n=1}^{\infty} \frac{1}{n}\int_{n}^{\infty}\frac{\widetilde{B}_{2k+1}\left(x\right)}{x^{s+2k+ 1}}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S16.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C25.S16.SS2.p4.s1">
+For integer <Math mode="inline" xml:id="C25.S16.SS2.p4.m1">s</Math> ( <Math mode="inline" xml:id="C25.S16.SS2.p4.m2">\geq 2</Math> ), <Math mode="inline" xml:id="C25.S16.SS2.p4.m3">H\left(s\right)</Math> can be evaluated in terms of the zeta function: <Math equation-number="25.16.8" mode="display" xml:id="C25.S16.E8">H\left(2\right)=2\zeta\left(3\right),H\left(3\right)=\tfrac{5}{4}\zeta\left(4\right),</Math> <Math equation-number="25.16.9" mode="display" xml:id="C25.S16.E9">H\left(a\right)=\frac{a+2}{2}\zeta\left(a+1\right)-\frac{1}{2}\sum_{r=1}^{a-2} \zeta\left(r+1\right)\zeta\left(a-r\right), if a=2,3,4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C25.S16.SS2.p5.s1">
+Also, <Math equation-number="25.16.10" mode="display" xml:id="C25.S16.E10">H\left(-2a\right)=\frac{1}{2}\zeta\left(1-2a\right)=-\frac{B_{2a}}{4a}, if a=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C25.S16.SS2.p6.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p6.m1">H\left(s\right)</Math> has a simple pole with residue <Math mode="inline" xml:id="C25.S16.SS2.p6.m2">\zeta\left(1-2r\right)</Math> ( <Math mode="inline" xml:id="C25.S16.SS2.p6.m3">=-B_{2r}/(2r)</Math> ) at each odd negative integer <Math mode="inline" xml:id="C25.S16.SS2.p6.m4">s=1-2r</Math> , <Math mode="inline" xml:id="C25.S16.SS2.p6.m5">r=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C25.S16.SS2.p7.s1">
+ <Math mode="inline" xml:id="C25.S16.SS2.p7.m1">H\left(s\right)</Math> is the special case <Math mode="inline" xml:id="C25.S16.SS2.p7.m2">H\left(s,1\right)</Math> of the function <Math equation-number="25.16.11" mode="display" xml:id="C25.S16.E11">H\left(s,z\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}\sum_{m=1}^{n}\frac{1}{m^{ z}}, if \Re(s+z)&gt;1,</Math> which satisfies the reciprocity law <Math equation-number="25.16.12" mode="display" xml:id="C25.S16.E12">H\left(s,z\right)+H\left(z,s\right)=\zeta\left(s\right)\zeta\left(z\right)+ \zeta\left(s+z\right),</Math> when both <Math mode="inline" xml:id="C25.S16.SS2.p7.m4">H\left(s,z\right)</Math> and <Math mode="inline" xml:id="C25.S16.SS2.p7.m5">H\left(z,s\right)</Math> are finite.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C25.S16.SS2.p8.s1">
+For further properties of <Math mode="inline" xml:id="C25.S16.SS2.p8.m1">H\left(s,z\right)</Math> see Apostol and Vu (1984).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C25.S16.SS2.p8.s2">
+Related results are: <Math equation-number="25.16.13" mode="display" xml:id="C25.S16.E13">\sum_{n=1}^{\infty}\left(\frac{h(n)}{n}\right)^{2}=\frac{17}{4}\zeta\left(4 \right),</Math> , <Math equation-number="25.16.14" mode="display" xml:id="C25.S16.E14">\sum_{r=1}^{\infty}\sum_{k=1}^{r}\frac{1}{rk(r+k)}=\frac{5}{4}\zeta\left(3 \right),</Math> , <Math equation-number="25.16.15" mode="display" xml:id="C25.S16.E15">\sum_{r=1}^{\infty}\sum_{k=1}^{r}\frac{1}{r^{2}(r+k)}=\frac{3}{4}\zeta\left(3 \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S16.SS2.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C25.S16.SS2.p9.s1">
+For further generalizations, see Flajolet and Salvy (1998).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

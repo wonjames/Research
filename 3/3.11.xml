@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S11">
+<title>Approximation Techniques</title>         
+<subsection xml:id="C3.S11.SS1">
+<title>Minimax Polynomial Approximations</title>            
+<para xml:id="C3.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S11.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C3.S11.SS1.p1.m1">f(x)</Math> be continuous on a closed interval <Math mode="inline" xml:id="C3.S11.SS1.p1.m2">[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S11.SS1.p1.s2">
+Then there exists a unique <Math mode="inline" xml:id="C3.S11.SS1.p1.m3">n</Math> th degree polynomial <Math mode="inline" xml:id="C3.S11.SS1.p1.m4">p_{n}(x)</Math> , called the minimax (or best uniform) polynomial approximation to <Math mode="inline" xml:id="C3.S11.SS1.p1.m5">f(x)</Math> on <Math mode="inline" xml:id="C3.S11.SS1.p1.m6">[a,b]</Math> , that minimizes <Math mode="inline" xml:id="C3.S11.SS1.p1.m7">\max_{a\leq x\leq b}\left|\epsilon_{n}(x)\right|</Math> , where <Math mode="inline" xml:id="C3.S11.SS1.p1.m8">\epsilon_{n}(x)=f(x)-p_{n}(x)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S11.SS1.p2.s1">
+A sufficient condition for <Math mode="inline" xml:id="C3.S11.SS1.p2.m1">p_{n}(x)</Math> to be the minimax polynomial is that <Math mode="inline" xml:id="C3.S11.SS1.p2.m2">\left|\epsilon_{n}(x)\right|</Math> attains its maximum at <Math mode="inline" xml:id="C3.S11.SS1.p2.m3">n+2</Math> distinct points in <Math mode="inline" xml:id="C3.S11.SS1.p2.m4">[a,b]</Math> and <Math mode="inline" xml:id="C3.S11.SS1.p2.m5">\epsilon_{n}(x)</Math> changes sign at these consecutive maxima.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C3.S11.SS1.p3.s1">
+If we have a sufficiently close approximation <Math equation-number="3.11.1" mode="display" xml:id="C3.S11.E1">p_{n}(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\dots+a_{0}</Math> to <Math mode="inline" xml:id="C3.S11.SS1.p3.m1">f(x)</Math> , then the coefficients <Math mode="inline" xml:id="C3.S11.SS1.p3.m2">a_{k}</Math> can be computed iteratively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C3.S11.SS1.p3.s2">
+Assume that <Math mode="inline" xml:id="C3.S11.SS1.p3.m3">f^{\prime}(x)</Math> is continuous on <Math mode="inline" xml:id="C3.S11.SS1.p3.m4">[a,b]</Math> and let <Math mode="inline" xml:id="C3.S11.SS1.p3.m5">x_{0}=a</Math> , <Math mode="inline" xml:id="C3.S11.SS1.p3.m6">x_{n+1}=b</Math> , and <Math mode="inline" xml:id="C3.S11.SS1.p3.m7">x_{1},x_{2},\dots,x_{n}</Math> be the zeros of <Math mode="inline" xml:id="C3.S11.SS1.p3.m8">\epsilon_{n}^{\mspace{1.0mu }\prime}(x)</Math> in <Math mode="inline" xml:id="C3.S11.SS1.p3.m9">(a,b)</Math> arranged so that <Math equation-number="3.11.2" mode="display" xml:id="C3.S11.E2">x_{0}&lt;x_{1}&lt;x_{2}&lt;\cdots&lt;x_{n}&lt;x_{n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C3.S11.SS1.p3.s3">
+Also, let <Math equation-number="3.11.3" mode="display" xml:id="C3.S11.E3">m_{j}=(-1)^{j}\epsilon_{n}(x_{j}), if j=0,1,\dots,n+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C3.S11.SS1.p3.s4">
+(Thus the <Math mode="inline" xml:id="C3.S11.SS1.p3.m10">m_{j}</Math> are approximations to <Math mode="inline" xml:id="C3.S11.SS1.p3.m11">m</Math> , where <Math mode="inline" xml:id="C3.S11.SS1.p3.m12">\pm m</Math> is the maximum value of <Math mode="inline" xml:id="C3.S11.SS1.p3.m13">\left|\epsilon_{n}(x)\right|</Math> on <Math mode="inline" xml:id="C3.S11.SS1.p3.m14">[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C3.S11.SS1.p3.s5">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C3.S11.SS1.p4.s1">
+Then (in general) a better approximation to <Math mode="inline" xml:id="C3.S11.SS1.p4.m1">p_{n}(x)</Math> is given by <Math equation-number="3.11.4" mode="display" xml:id="C3.S11.E4">\sum_{k=0}^{n}(a_{k}+\delta a_{k})x^{k},</Math> where <Math equation-number="3.11.5" mode="display" xml:id="C3.S11.E5">\sum_{k=0}^{n}x_{j}^{k}\delta a_{k}=(-1)^{j}(m_{j}-m), if j=0,1,\dots,n+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C3.S11.SS1.p4.s2">
+This is a set of <Math mode="inline" xml:id="C3.S11.SS1.p4.m2">n+2</Math> equations for the <Math mode="inline" xml:id="C3.S11.SS1.p4.m3">n+2</Math> unknowns <Math mode="inline" xml:id="C3.S11.SS1.p4.m4">\delta a_{0},\delta a_{1},\dots,\delta a_{n}</Math> and <Math mode="inline" xml:id="C3.S11.SS1.p4.m5">m</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C3.S11.SS1.p5.s1">
+The iterative process converges locally and quadratically (§3.8(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S11.SS1.p6.s1">
+A method for obtaining a sufficiently accurate first approximation is describedin the next subsection.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C3.S11.SS1.p7.s1">
+For the theory of minimax approximations see Meinardus (1967).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C3.S11.SS1.p7.s2">
+For examples of minimax polynomial approximations to elementary and special functions see Hart et al. (1968).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C3.S11.SS1.p7.s3">
+See also Cody (1970) andRalston (1965).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S11.SS2">
+<title>Chebyshev-Series Expansions</title>          
+<para xml:id="C3.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C3.S11.SS2.p1.s1">
+The Chebyshev polynomials <Math mode="inline" xml:id="C3.S11.SS2.p1.m1">T_{n}</Math> are given by <Math equation-number="3.11.6" mode="display" xml:id="C3.S11.E6">T_{n}\left(x\right)=\cos\left(n\operatorname{arccos}x\right), if -1\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C3.S11.SS2.p1.s2">
+They satisfy the recurrence relation <Math equation-number="3.11.7" mode="display" xml:id="C3.S11.E7">T_{n+1}\left(x\right)-2xT_{n}\left(x\right)+T_{n-1}\left(x\right)=0, if n=1,2,\dots,</Math> with initial values <Math mode="inline" xml:id="C3.S11.SS2.p1.m2">T_{0}\left(x\right)=1</Math> , <Math mode="inline" xml:id="C3.S11.SS2.p1.m3">T_{1}\left(x\right)=x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C3.S11.SS2.p1.s3">
+They enjoy an orthogonal property with respect to integrals: <Math equation-number="3.11.8" mode="display" xml:id="C3.S11.E8">\int_{-1}^{1}\frac{T_{j}\left(x\right)T_{k}\left(x\right)}{\sqrt{1-x^{2}}} \mathrm{d}x=\begin{cases}\pi,&amp;j=k=0,\\ \frac{1}{2}\pi,&amp;j=k\neq 0,\\ 0,&amp;j\neq k,\end{cases}</Math> as well as an orthogonal property with respect to sums, as follows.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C3.S11.SS2.p1.s4">
+When <Math mode="inline" xml:id="C3.S11.SS2.p1.m4">n&gt;0</Math> and <Math mode="inline" xml:id="C3.S11.SS2.p1.m5">0\leq j\leq n</Math> , <Math mode="inline" xml:id="C3.S11.SS2.p1.m6">0\leq k\leq n</Math> , <Math equation-number="3.11.9" mode="display" xml:id="C3.S11.E9">\sideset{}{{}^{\prime\prime}}{\sum}_{\ell=0}^{n}T_{j}\left(x_{\ell}\right)T_{k }\left(x_{\ell}\right)=\begin{cases}n,&amp;j=k=0\text{ or }n,\\ \frac{1}{2}n,&amp;j=k\neq 0\text{ or }n,\\ 0,&amp;j\neq k,\end{cases}</Math> where <Math mode="inline" xml:id="C3.S11.SS2.p1.m7">x_{\ell}=\cos\left(\pi\ell/n\right)</Math> and the double prime means that the first and last terms are to be halved.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C3.S11.SS2.p2.s1">
+For these and further properties of Chebyshev polynomials, see Chapter 18, Gil et al. (2007a, Chapter 3), andMason and Handscomb (2003).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S11.Px1">
+<title>Chebyshev Expansions</title>  
+  
+<para xml:id="C3.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C3.S11.Px1.p1.s1">
+If <Math mode="inline" xml:id="C3.S11.Px1.p1.m1">f</Math> is continuously differentiable on <Math mode="inline" xml:id="C3.S11.Px1.p1.m2">[-1,1]</Math> , then with <Math equation-number="3.11.10" mode="display" xml:id="C3.S11.E10">c_{n}=\frac{2}{\pi}\int_{0}^{\pi}f(\cos\theta)\cos\left(n\theta\right)\mathrm{ d}\theta, if n=0,1,2,\dots,</Math> the expansion <Math equation-number="3.11.11" mode="display" xml:id="C3.S11.E11">f(x)=\sideset{}{{}^{\prime}}{\sum}_{n=0}^{\infty}c_{n}T_{n}\left(x\right), if -1\leq x\leq 1,</Math> converges uniformly.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C3.S11.Px1.p1.s2">
+Here the single prime on the summation symbol means that the first term is to be halved. In fact, (3.11.11) is the Fourier-series expansion of <Math mode="inline" xml:id="C3.S11.Px1.p1.m3">f(\cos\theta)</Math> ; compare (3.11.6) and §1.8(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C3.S11.Px1.p2.s1">
+Furthermore, if <Math mode="inline" xml:id="C3.S11.Px1.p2.m1">f\in C^{\infty}[-1,1]</Math> , then the convergence of (3.11.11) is usually very rapid; compare (1.8.7) with <Math mode="inline" xml:id="C3.S11.Px1.p2.m2">k</Math> arbitrary.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C3.S11.Px1.p3.s1">
+For general intervals <Math mode="inline" xml:id="C3.S11.Px1.p3.m1">[a,b]</Math> we rescale: <Math equation-number="3.11.12" mode="display" xml:id="C3.S11.E12">f(x)=\sideset{}{{}^{\prime}}{\sum}_{n=0}^{\infty}d_{n}T_{n}\left(\frac{2x-a-b} {b-a}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C3.S11.Px1.p4.s1">
+Because the series (3.11.12) converges rapidly we obtain a very good first approximation to the minimax polynomial <Math mode="inline" xml:id="C3.S11.Px1.p4.m1">p_{n}(x)</Math> for <Math mode="inline" xml:id="C3.S11.Px1.p4.m2">[a,b]</Math> if we truncate (3.11.12) at its <Math mode="inline" xml:id="C3.S11.Px1.p4.m3">(n+1)</Math> th term.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C3.S11.Px1.p4.s2">
+This is because in the notation of §3.11(i)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C3.S11.Px1.p4.s3">
+<Math equation-number="3.11.13" mode="display" xml:id="C3.S11.E13">\epsilon_{n}(x)=d_{n+1}T_{n+1}\left(\frac{2x-a-b}{b-a}\right),</Math> approximately, and the right-hand side enjoys exactly those properties concerning its maxima and minima that are required for the minimax approximation; compare Figure 18.4.3.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C3.S11.Px1.p5.s1">
+More precisely, it is known that for the interval <Math mode="inline" xml:id="C3.S11.Px1.p5.m1">[a,b]</Math> , the ratio of the maximum value of the remainder <Math equation-number="3.11.14" mode="display" xml:id="C3.S11.E14">\left|\sum_{k=n+1}^{\infty}{}d_{k}T_{k}\left(\frac{2x-a-b}{b-a}\right)\right|</Math> to the maximum error of the minimax polynomial <Math mode="inline" xml:id="C3.S11.Px1.p5.m2">p_{n}(x)</Math> is bounded by <Math mode="inline" xml:id="C3.S11.Px1.p5.m3">1+L_{n}</Math> , where <Math mode="inline" xml:id="C3.S11.Px1.p5.m4">L_{n}</Math> is the <Math mode="inline" xml:id="C3.S11.Px1.p5.m5">n</Math> th Lebesgue constant for Fourier series; see §1.8(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C3.S11.Px1.p5.s2">
+Since <Math mode="inline" xml:id="C3.S11.Px1.p5.m6">L_{0}=1</Math> , <Math mode="inline" xml:id="C3.S11.Px1.p5.m7">L_{n}</Math> is a monotonically increasing function of <Math mode="inline" xml:id="C3.S11.Px1.p5.m8">n</Math> , and (for example) <Math mode="inline" xml:id="C3.S11.Px1.p5.m9">L_{1000}=4.07\dot</Math> s, this means that in practice the gain in replacing a truncated Chebyshev-series expansion by the corresponding minimax polynomial approximation is hardly worthwhile.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C3.S11.Px1.p5.s3">
+Moreover, the set of minimax approximations <Math mode="inline" xml:id="C3.S11.Px1.p5.m10">p_{0}(x),p_{1}(x),p_{2}(x),\dots,p_{n}(x)</Math> requires the calculation and storage of <Math mode="inline" xml:id="C3.S11.Px1.p5.m11">\frac{1}{2}(n+1)(n+2)</Math> coefficients, whereas the corresponding set of Chebyshev-series approximations requires only <Math mode="inline" xml:id="C3.S11.Px1.p5.m12">n+1</Math> coefficients.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S11.Px2">
+<title>Calculation of Chebyshev Coefficients</title>  
+  
+<para xml:id="C3.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C3.S11.Px2.p1.s1">
+The <Math mode="inline" xml:id="C3.S11.Px2.p1.m1">c_{n}</Math> in (3.11.11) can be calculated from (3.11.10), but in general it is more efficient to make use of the orthogonal property (3.11.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C3.S11.Px2.p1.s2">
+Also, in cases where <Math mode="inline" xml:id="C3.S11.Px2.p1.m2">f(x)</Math> satisfies a linear ordinary differential equation with polynomial coefficients, the expansion (3.11.11) can be substituted in the differential equation to yield a recurrence relation satisfied by the <Math mode="inline" xml:id="C3.S11.Px2.p1.m3">c_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C3.S11.Px2.p2.s1">
+For details and examples of these methods, see Clenshaw (1957, 1962) and Miller (1966).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C3.S11.Px2.p2.s2">
+See alsoMason and Handscomb (2003, Chapter 10) and Fox and Parker (1968, Chapter 5).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S11.Px3">
+<title>Summation of Chebyshev Series: Clenshaw’s Algorithm</title>  
+  
+ 
+<para xml:id="C3.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C3.S11.Px3.p1.s1">
+For the expansion (3.11.11), numerical values of the Chebyshev polynomials <Math mode="inline" xml:id="C3.S11.Px3.p1.m1">T_{n}\left(x\right)</Math> can be generated by application of the recurrence relation (3.11.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C3.S11.Px3.p1.s2">
+A more efficient procedure is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C3.S11.Px3.p1.s3">
+Let <Math mode="inline" xml:id="C3.S11.Px3.p1.m2">c_{n}T_{n}\left(x\right)</Math> be the last term retained in the truncated series.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="38" xml:id="C3.S11.Px3.p1.s4">
+Beginning with <Math mode="inline" xml:id="C3.S11.Px3.p1.m3">u_{n+1}=0</Math> , <Math mode="inline" xml:id="C3.S11.Px3.p1.m4">u_{n}=c_{n}</Math> , we apply <Math equation-number="3.11.15" mode="display" xml:id="C3.S11.E15">u_{k}=2xu_{k+1}-u_{k+2}+c_{k}, if k=n-1,n-2,\dots,0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="39" xml:id="C3.S11.Px3.p1.s5">
+Then the sum of the truncated expansion equals <Math mode="inline" xml:id="C3.S11.Px3.p1.m5">\frac{1}{2}(u_{0}-u_{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="40" xml:id="C3.S11.Px3.p1.s6">
+For error analysis and modifications of Clenshaw’s algorithm, seeOliver (1977).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S11.Px4">
+<title>Complex Variables</title>  
+  
+<para xml:id="C3.S11.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C3.S11.Px4.p1.s1">
+If <Math mode="inline" xml:id="C3.S11.Px4.p1.m1">x</Math> is replaced by a complex variable <Math mode="inline" xml:id="C3.S11.Px4.p1.m2">z</Math> and <Math mode="inline" xml:id="C3.S11.Px4.p1.m3">f(z)</Math> is analytic, then the expansion (3.11.11) converges within an ellipse.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C3.S11.Px4.p1.s2">
+However, in general (3.11.11) affords no advantage in <Math mode="inline" xml:id="C3.S11.Px4.p1.m4">\mathbb{C}</Math> for numerical purposes compared with the Maclaurin expansion of <Math mode="inline" xml:id="C3.S11.Px4.p1.m5">f(z)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S11.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C3.S11.Px4.p2.s1">
+For further details on Chebyshev-series expansions in the complex plane, seeMason and Handscomb (2003, §5.10).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S11.SS3">
+<title>Minimax Rational Approximations</title>             
+<para xml:id="C3.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C3.S11.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C3.S11.SS3.p1.m1">f</Math> be continuous on a closed interval <Math mode="inline" xml:id="C3.S11.SS3.p1.m2">[a,b]</Math> and <Math mode="inline" xml:id="C3.S11.SS3.p1.m3">w</Math> be a continuous nonvanishing function on <Math mode="inline" xml:id="C3.S11.SS3.p1.m4">[a,b]</Math> : <Math mode="inline" xml:id="C3.S11.SS3.p1.m5">w</Math> is called a weight function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C3.S11.SS3.p1.s2">
+Then the minimax (or best uniform) rational approximation <Math equation-number="3.11.16" mode="display" xml:id="C3.S11.E16">R_{k,\ell}(x)=\frac{p_{0}+p_{1}x+\dots+p_{k}x^{k}}{1+q_{1}x+\dots+q_{\ell}x^{ \ell}}</Math> of type <Math mode="inline" xml:id="C3.S11.SS3.p1.m6">[k,\ell]</Math> to <Math mode="inline" xml:id="C3.S11.SS3.p1.m7">f</Math> on <Math mode="inline" xml:id="C3.S11.SS3.p1.m8">[a,b]</Math> minimizes the maximum value of <Math mode="inline" xml:id="C3.S11.SS3.p1.m9">\left|\epsilon_{k,\ell}(x)\right|</Math> on <Math mode="inline" xml:id="C3.S11.SS3.p1.m10">[a,b]</Math> , where <Math equation-number="3.11.17" mode="display" xml:id="C3.S11.E17">\epsilon_{k,\ell}(x)=\frac{R_{k,\ell}(x)-f(x)}{w(x)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C3.S11.SS3.p2.s1">
+The theory of polynomial minimax approximation given in §3.11(i) can be extended to the case when <Math mode="inline" xml:id="C3.S11.SS3.p2.m1">p_{n}(x)</Math> is replaced by a rational function <Math mode="inline" xml:id="C3.S11.SS3.p2.m2">R_{k,\ell}(x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C3.S11.SS3.p2.s2">
+There exists a unique solution of this minimax problem and there are at least <Math mode="inline" xml:id="C3.S11.SS3.p2.m3">k+\ell+2</Math> values <Math mode="inline" xml:id="C3.S11.SS3.p2.m4">x_{j}</Math> , <Math mode="inline" xml:id="C3.S11.SS3.p2.m5">a\leq x_{0}&lt;x_{1}&lt;\cdots&lt;x_{k+\ell+1}\leq b</Math> , such that <Math mode="inline" xml:id="C3.S11.SS3.p2.m6">m_{j}=m</Math> , where <Math equation-number="3.11.18" mode="display" xml:id="C3.S11.E18">m_{j}=(-1)^{j}\epsilon_{k,\ell}(x_{j}), if j=0,1,\dots,k+\ell+1,</Math> and <Math mode="inline" xml:id="C3.S11.SS3.p2.m7">\pm m</Math> is the maximum of <Math mode="inline" xml:id="C3.S11.SS3.p2.m8">\left|\epsilon_{k,\ell}(x)\right|</Math> on <Math mode="inline" xml:id="C3.S11.SS3.p2.m9">[a,b]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C3.S11.SS3.p3.s1">
+A collection of minimax rational approximations to elementary and specialfunctions can be found in Hart et al. (1968).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C3.S11.SS3.p4.s1">
+A widely implemented and used algorithm for calculating the coefficients <Math mode="inline" xml:id="C3.S11.SS3.p4.m1">p_{j}</Math> and <Math mode="inline" xml:id="C3.S11.SS3.p4.m2">q_{j}</Math> in (3.11.16) is Remez’s second algorithm.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C3.S11.SS3.p4.s2">
+See Remez (1957), Werner et al. (1967), andJohnson and Blair (1973).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S11.Px5">
+<title>Example</title>    
+<para xml:id="C3.S11.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C3.S11.Px5.p1.s1">
+With <Math mode="inline" xml:id="C3.S11.Px5.p1.m1">w(x)=1</Math> and 14-digit computation, we obtain the following rational approximation of type <Math mode="inline" xml:id="C3.S11.Px5.p1.m2">[3,3]</Math> to the Bessel function <Math mode="inline" xml:id="C3.S11.Px5.p1.m3">J_{0}\left(x\right)</Math> (§10.2(ii)) on the interval <Math mode="inline" xml:id="C3.S11.Px5.p1.m4">0\leq x\leq j_{0,1}</Math> , where <Math mode="inline" xml:id="C3.S11.Px5.p1.m5">j_{0,1}</Math> is the first positive zero of <Math mode="inline" xml:id="C3.S11.Px5.p1.m6">J_{0}\left(x\right)</Math> : <Math equation-number="3.11.19" mode="display" xml:id="C3.S11.E19">R_{3,3}(x)=\frac{p_{0}+p_{1}x+p_{2}x^{2}+p_{3}x^{3}}{1+q_{1}x+q_{2}x^{2}+q_{3} x^{3}},</Math> with coefficients given in Table 3.11.1.
+</sentence>
+
+</para>
+
+         
+<sentence sentence-num-in-section="52" xml:id="C3.S11.T1.s1">
+Table 3.11.1: Coefficients <Math mode="inline" xml:id="C3.S11.T1.m4">p_{j}</Math> , <Math mode="inline" xml:id="C3.S11.T1.m5">q_{j}</Math> for the minimax rational approximation <Math mode="inline" xml:id="C3.S11.T1.m6">R_{3,3}(x)</Math> .
+</sentence>
+ 
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="1" xml:id="C3.S11.T1.t1.s1">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r1.m1">j</Math>
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="2" xml:id="C3.S11.T1.t1.s2">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r1.m2">p_{j}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="3" xml:id="C3.S11.T1.t1.s3">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r1.m3">q_{j}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="4" xml:id="C3.S11.T1.t1.s4">
+0
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="5" xml:id="C3.S11.T1.t1.s5">
+0.99999 99891 7854
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="6" xml:id="C3.S11.T1.t1.s6">
+1
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="7" xml:id="C3.S11.T1.t1.s7">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r3.m1">-</Math>0.34038 93820 9347
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="8" xml:id="C3.S11.T1.t1.s8">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r3.m2">-</Math>0.34039 05233 8838
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="9" xml:id="C3.S11.T1.t1.s9">
+2
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="10" xml:id="C3.S11.T1.t1.s10">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r4.m1">-</Math>0.18915 48376 3222
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="11" xml:id="C3.S11.T1.t1.s11">
+0.06086 50162 9812
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="12" xml:id="C3.S11.T1.t1.s12">
+3
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="13" xml:id="C3.S11.T1.t1.s13">
+0.06658 31942 0166
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="14" xml:id="C3.S11.T1.t1.s14">
+<Math mode="inline" xml:id="C3.S11.T1.t1.r5.m1">-</Math>0.01864 47680 9090
+</sentence>
+  
+<para xml:id="C3.S11.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C3.S11.Px5.p2.s1">
+The error curve is shown in Figure 3.11.1.
+</sentence>
+
+</para>
+       
+   
+<sentence sentence-num-in-section="68" xml:id="C3.S11.F1.s1">
+Figure 3.11.1: Error <Math mode="inline" xml:id="C3.S11.F1.m2">R_{3,3}(x)-J_{0}\left(x\right)</Math> of the minimax rational approximation <Math mode="inline" xml:id="C3.S11.F1.m3">R_{3,3}(x)</Math> to the Bessel function <Math mode="inline" xml:id="C3.S11.F1.m4">J_{0}\left(x\right)</Math> for <Math mode="inline" xml:id="C3.S11.F1.m5">0\leq x\leq j_{0,1}</Math> (<Math mode="inline" xml:id="C3.S11.F1.m6">=0.89357\ldot</Math>s ).
+</sentence>  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S11.SS4">
+<title>Padé Approximations</title>          
+ 
+<para xml:id="C3.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C3.S11.SS4.p1.s1">
+Let <Math equation-number="3.11.20" mode="display" xml:id="C3.S11.E20">f(z)=c_{0}+c_{1}z+c_{2}z^{2}+\cdots</Math> be a formal power series.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="70" xml:id="C3.S11.SS4.p1.s2">
+The rational function <Math equation-number="3.11.21" mode="display" xml:id="C3.S11.E21">\frac{N_{p,q}(z)}{D_{p,q}(z)}=\frac{a_{0}+a_{1}z+\dots+a_{p}z^{p}}{b_{0}+b_{1} z+\dots+b_{q}z^{q}}</Math> is called a Padé approximant at zero of <Math mode="inline" xml:id="C3.S11.SS4.p1.m1">f</Math> if <Math equation-number="3.11.22" mode="display" xml:id="C3.S11.E22">N_{p,q}(z)-f(z)D_{p,q}(z)=O\left(z^{p+q+1}\right), if z\to 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="71" xml:id="C3.S11.SS4.p1.s3">
+It is denoted by <Math mode="inline" xml:id="C3.S11.SS4.p1.m2">{[p/q]_{f}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="72" xml:id="C3.S11.SS4.p1.s4">
+Thus if <Math mode="inline" xml:id="C3.S11.SS4.p1.m3">b_{0}\neq 0</Math> , then the Maclaurin expansion of (3.11.21) agrees with (3.11.20) up to, and including, the term in <Math mode="inline" xml:id="C3.S11.SS4.p1.m5">z^{p+q}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C3.S11.SS4.p2.s1">
+The requirement (3.11.22) implies <Math equation-number="3.11.23" mode="display" xml:id="C3.S11.E23">\displaystyle a_{0}=c_{0}b_{0},\displaystyle a_{1}=c_{1}b_{0}+c_{0}b_{1},\displaystyle\vdots\displaystyle a_{p}=c_{p}b_{0}+c_{p-1}b_{1}+\dots+c_{p-q}b_{q},\displaystyle 0=c_{p+1}b_{0}+c_{p}b_{1}+\dots+c_{p-q+1}b_{q},\displaystyle\vdots\displaystyle 0=c_{p+q}b_{0}+c_{p+q-1}b_{1}+\dots+c_{p}b_{q},</Math> where <Math mode="inline" xml:id="C3.S11.SS4.p2.m1">c_{j}=0</Math> if <Math mode="inline" xml:id="C3.S11.SS4.p2.m2">j&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="74" xml:id="C3.S11.SS4.p2.s2">
+With <Math mode="inline" xml:id="C3.S11.SS4.p2.m3">b_{0}=1</Math> , the last <Math mode="inline" xml:id="C3.S11.SS4.p2.m4">q</Math> equations give <Math mode="inline" xml:id="C3.S11.SS4.p2.m5">b_{1},\dots,b_{q}</Math> as the solution of a system of linear equations.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="75" xml:id="C3.S11.SS4.p2.s3">
+The first <Math mode="inline" xml:id="C3.S11.SS4.p2.m6">p+1</Math> equations then yield <Math mode="inline" xml:id="C3.S11.SS4.p2.m7">a_{0},\dots,a_{p}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C3.S11.SS4.p3.s1">
+The array of Padé approximants <Math equation-number="3.11.24" mode="display" xml:id="C3.S11.E24">\begin{array}[]{cccc}{[0/0]_{f}}&amp;{[0/1]_{f}}&amp;{[0/2]_{f}}&amp;\cdots\\ {[1/0]_{f}}&amp;{[1/1]_{f}}&amp;{[1/2]_{f}}&amp;\cdots\\ {[2/0]_{f}}&amp;{[2/1]_{f}}&amp;{[2/2]_{f}}&amp;\cdots\\ \vdots&amp;\vdots&amp;\vdots&amp;\ddots\\ \end{array}</Math> is called a Padé table.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C3.S11.SS4.p3.s2">
+Approximants with the same denominator degree are located in the same column of the table.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C3.S11.SS4.p4.s1">
+For convergence results for Padé approximants, and the connection with continued fractions and Gaussian quadrature, see Baker and Graves-Morris (1996, §4.7).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C3.S11.SS4.p5.s1">
+The Padé approximants can be computed by Wynn’s cross rule.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C3.S11.SS4.p5.s2">
+Any five approximants arranged in the Padé table as <Math mode="inline" xml:id="C3.S11.SS4.p5.pic1.m1">W</Math> <Math mode="inline" xml:id="C3.S11.SS4.p5.pic1.m2">S</Math> <Math mode="inline" xml:id="C3.S11.SS4.p5.pic1.m3">C</Math> <Math mode="inline" xml:id="C3.S11.SS4.p5.pic1.m4">N</Math> <Math mode="inline" xml:id="C3.S11.SS4.p5.pic1.m5">E</Math> satisfy <Math equation-number="3.11.25" mode="display" xml:id="C3.S11.E25">(N-C)^{-1}+(S-C)^{-1}=(W-C)^{-1}+(E-C)^{-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="81" xml:id="C3.S11.SS4.p5.s3">
+Starting with the first column <Math mode="inline" xml:id="C3.S11.SS4.p5.m1">{[n/0]_{f}}</Math> , <Math mode="inline" xml:id="C3.S11.SS4.p5.m2">n=0,1,2,\dots</Math> , and initializing the preceding column by <Math mode="inline" xml:id="C3.S11.SS4.p5.m3">{[n/-1]_{f}}=\infty</Math> , <Math mode="inline" xml:id="C3.S11.SS4.p5.m4">n=1,2,\dots</Math> , we can compute the lower triangular part of the table via (3.11.25).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="82" xml:id="C3.S11.SS4.p5.s4">
+Similarly, the upper triangular part follows from the first row <Math mode="inline" xml:id="C3.S11.SS4.p5.m5">{[0/n]_{f}}</Math> , <Math mode="inline" xml:id="C3.S11.SS4.p5.m6">n=0,1,2,\dots</Math> , by initializing <Math mode="inline" xml:id="C3.S11.SS4.p5.m7">{[-1/n]_{f}}=0</Math> , <Math mode="inline" xml:id="C3.S11.SS4.p5.m8">n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS4.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C3.S11.SS4.p6.s1">
+For the recursive computation of <Math mode="inline" xml:id="C3.S11.SS4.p6.m1">{[n+k/k]_{f}}</Math> by Wynn’s epsilon algorithm, see (3.9.11) and the subsequent text.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S11.Px6">
+<title>Laplace Transform Inversion</title>  
+  
+<para xml:id="C3.S11.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C3.S11.Px6.p1.s1">
+Numerical inversion of the Laplace transform (§1.14(iii))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C3.S11.Px6.p1.s2">
+<Math equation-number="3.11.26" mode="display" xml:id="C3.S11.E26">F(s)=\mathscr{L}\mskip-3.0mu f\mskip 3.0mu \left(s\right)=\int_{0}^{\infty}e^{ -st}f(t)\mathrm{d}t</Math> requires <Math mode="inline" xml:id="C3.S11.Px6.p1.m1">f={\mathscr{L}^{-1}}F</Math> to be obtained from numerical values of <Math mode="inline" xml:id="C3.S11.Px6.p1.m2">F</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="86" xml:id="C3.S11.Px6.p1.s3">
+A general procedure is to approximate <Math mode="inline" xml:id="C3.S11.Px6.p1.m3">F</Math> by a rational function <Math mode="inline" xml:id="C3.S11.Px6.p1.m4">R</Math> (vanishing at infinity) and then approximate <Math mode="inline" xml:id="C3.S11.Px6.p1.m5">f</Math> by <Math mode="inline" xml:id="C3.S11.Px6.p1.m6">r={\mathscr{L}^{-1}}R</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="87" xml:id="C3.S11.Px6.p1.s4">
+When <Math mode="inline" xml:id="C3.S11.Px6.p1.m7">F</Math> has an explicit power-series expansion a possible choice of <Math mode="inline" xml:id="C3.S11.Px6.p1.m8">R</Math> is a Padé approximation to <Math mode="inline" xml:id="C3.S11.Px6.p1.m9">F</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="88" xml:id="C3.S11.Px6.p1.s5">
+See Luke (1969b, §16.4) for several examples involving special functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C3.S11.Px6.p2.s1">
+For further information on Padé approximations, seeBaker and Graves-Morris (1996, §4.7),Brezinski (1980, pp. 9–39 and 126–177), andLorentzen and Waadeland (1992, pp. 367–395).
+</sentence>
+
+</para>
+   
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S11.SS5">
+<title>Least Squares Approximations</title>           
+<para xml:id="C3.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C3.S11.SS5.p1.s1">
+Suppose a function <Math mode="inline" xml:id="C3.S11.SS5.p1.m1">f(x)</Math> is approximated by the polynomial <Math equation-number="3.11.27" mode="display" xml:id="C3.S11.E27">p_{n}(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\dots+a_{0}</Math> that minimizes <Math equation-number="3.11.28" mode="display" xml:id="C3.S11.E28">S=\sum_{j=1}^{J}\left(f(x_{j})-p_{n}(x_{j})\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C3.S11.SS5.p1.s2">
+Here <Math mode="inline" xml:id="C3.S11.SS5.p1.m2">x_{j}</Math> , <Math mode="inline" xml:id="C3.S11.SS5.p1.m3">j=1,2,\dots,J</Math> , is a given set of distinct real points and <Math mode="inline" xml:id="C3.S11.SS5.p1.m4">J\geq n+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="92" xml:id="C3.S11.SS5.p1.s3">
+From the equations <Math mode="inline" xml:id="C3.S11.SS5.p1.m5">\ifrac{\partial S}{\partial a_{k}}=0</Math> , <Math mode="inline" xml:id="C3.S11.SS5.p1.m6">k=0,1,\dots,n</Math> , we derive the normal equations <Math equation-number="3.11.29" mode="display" xml:id="C3.S11.E29">\begin{bmatrix}X_{0}&amp;X_{1}&amp;\cdots&amp;X_{n}\\ X_{1}&amp;X_{2}&amp;\cdots&amp;X_{n+1}\\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ X_{n}&amp;X_{n+1}&amp;\cdots&amp;X_{2n}\end{bmatrix}\begin{bmatrix}a_{0}\\ a_{1}\\ \vdots\\ a_{n}\end{bmatrix}=\begin{bmatrix}F_{0}\\ F_{1}\\ \vdots\\ F_{n}\end{bmatrix},</Math> where <Math equation-number="3.11.30" mode="display" xml:id="C3.S11.E30">X_{k}=\sum_{j=1}^{J}x_{j}^{k},F_{k}=\sum_{j=1}^{J}f(x_{j})x_{j}^{k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C3.S11.SS5.p2.s1">
+(3.11.29) is a system of <Math mode="inline" xml:id="C3.S11.SS5.p2.m1">n+1</Math> linear equations for the coefficients <Math mode="inline" xml:id="C3.S11.SS5.p2.m2">a_{0},a_{1},\dots,a_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C3.S11.SS5.p2.s2">
+The matrix is symmetric and positive definite, but the system is ill-conditioned when <Math mode="inline" xml:id="C3.S11.SS5.p2.m3">n</Math> is large because the lower rows of the matrix are approximately proportional to one another.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="95" xml:id="C3.S11.SS5.p2.s3">
+If <Math mode="inline" xml:id="C3.S11.SS5.p2.m4">J=n+1</Math> , then <Math mode="inline" xml:id="C3.S11.SS5.p2.m5">p_{n}(x)</Math> is the Lagrange interpolation polynomial for the set <Math mode="inline" xml:id="C3.S11.SS5.p2.m6">x_{1},x_{2},\dots,x_{J}</Math> (§3.3(i)).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C3.S11.SS5.p3.s1">
+More generally, let <Math mode="inline" xml:id="C3.S11.SS5.p3.m1">f(x)</Math> be approximated by a linear combination <Math equation-number="3.11.31" mode="display" xml:id="C3.S11.E31">\Phi_{n}(x)=a_{n}\phi_{n}(x)+a_{n-1}\phi_{n-1}(x)+\dots+a_{0}\phi_{0}(x)</Math> of given functions <Math mode="inline" xml:id="C3.S11.SS5.p3.m2">\phi_{k}(x)</Math> , <Math mode="inline" xml:id="C3.S11.SS5.p3.m3">k=0,1,\dots,n</Math> , that minimizes <Math equation-number="3.11.32" mode="display" xml:id="C3.S11.E32">\sum_{j=1}^{J}w(x_{j})\left(f(x_{j})-\Phi_{n}(x_{j})\right)^{2},</Math> <Math mode="inline" xml:id="C3.S11.SS5.p3.m4">w(x)</Math> being a given positive weight function, and again <Math mode="inline" xml:id="C3.S11.SS5.p3.m5">J\geq n+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C3.S11.SS5.p3.s2">
+Then ( 3.11.29) is replaced by <Math equation-number="3.11.33" mode="display" xml:id="C3.S11.E33">\begin{bmatrix}X_{00}&amp;X_{01}&amp;\cdots&amp;X_{0n}\\ X_{10}&amp;X_{11}&amp;\cdots&amp;X_{1n}\\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ X_{n0}&amp;X_{n1}&amp;\cdots&amp;X_{nn}\end{bmatrix}\begin{bmatrix}a_{0}\\ a_{1}\\ \vdots\\ a_{n}\end{bmatrix}=\begin{bmatrix}F_{0}\\ F_{1}\\ \vdots\\ F_{n}\end{bmatrix},</Math> with <Math equation-number="3.11.34" mode="display" xml:id="C3.S11.E34">X_{k\ell}=\sum_{j=1}^{J}w(x_{j})\phi_{k}(x_{j})\phi_{\ell}(x_{j}),</Math> and <Math equation-number="3.11.35" mode="display" xml:id="C3.S11.E35">F_{k}=\sum_{j=1}^{J}w(x_{j})f(x_{j})\phi_{k}(x_{j})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="98" xml:id="C3.S11.SS5.p3.s3">
+Since <Math mode="inline" xml:id="C3.S11.SS5.p3.m6">X_{k\ell}=X_{\ell k}</Math> , the matrix is again symmetric.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C3.S11.SS5.p4.s1">
+If the functions <Math mode="inline" xml:id="C3.S11.SS5.p4.m1">\phi_{k}(x)</Math> are linearly independent on the set <Math mode="inline" xml:id="C3.S11.SS5.p4.m2">x_{1},x_{2},\dots,x_{J}</Math> , that is, the only solution of the system of equations <Math equation-number="3.11.36" mode="display" xml:id="C3.S11.E36">\sum_{k=0}^{n}c_{k}\phi_{k}(x_{j})=0, if j=1,2,\dots,J,</Math> is <Math mode="inline" xml:id="C3.S11.SS5.p4.m3">c_{0}=c_{1}=\dots=c_{n}=0</Math> , then the approximation <Math mode="inline" xml:id="C3.S11.SS5.p4.m4">\Phi_{n}(x)</Math> is determined uniquely.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C3.S11.SS5.p5.s1">
+Now suppose that <Math mode="inline" xml:id="C3.S11.SS5.p5.m1">X_{k\ell}=0</Math> when <Math mode="inline" xml:id="C3.S11.SS5.p5.m2">k\neq\ell</Math> , that is, the functions <Math mode="inline" xml:id="C3.S11.SS5.p5.m3">\phi_{k}(x)</Math> are orthogonal with respect to weighted summation on the discrete set <Math mode="inline" xml:id="C3.S11.SS5.p5.m4">x_{1},x_{2},\dots,x_{J}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="101" xml:id="C3.S11.SS5.p5.s2">
+Then the system (3.11.33) is diagonal and hence well-conditioned.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C3.S11.SS5.p6.s1">
+A set of functions <Math mode="inline" xml:id="C3.S11.SS5.p6.m1">\phi_{0}(x),\phi_{1}(x),\dots,\phi_{n}(x)</Math> that is linearly independent on the set <Math mode="inline" xml:id="C3.S11.SS5.p6.m2">x_{1},x_{2},\dots,x_{J}</Math> (compare (3.11.36)) can always be orthogonalized in the sense given in the preceding paragraph by the Gram–Schmidt procedure; see Gautschi (1997a).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S11.Px7">
+<title>Example. The Discrete Fourier Transform</title>  
+   
+<para xml:id="C3.S11.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C3.S11.Px7.p1.s1">
+We take <Math mode="inline" xml:id="C3.S11.Px7.p1.m1">n</Math> complex exponentials <Math mode="inline" xml:id="C3.S11.Px7.p1.m2">\phi_{k}(x)=e^{\mathrm{i}kx}</Math> , <Math mode="inline" xml:id="C3.S11.Px7.p1.m3">k=0,1,\dots,n-1</Math> , and approximate <Math mode="inline" xml:id="C3.S11.Px7.p1.m4">f(x)</Math> by the linear combination (3.11.31).The functions <Math mode="inline" xml:id="C3.S11.Px7.p1.m5">\phi_{k}(x)</Math> are orthogonal on the set <Math mode="inline" xml:id="C3.S11.Px7.p1.m6">x_{0},x_{1},\dots,x_{n-1}</Math> , <Math mode="inline" xml:id="C3.S11.Px7.p1.m7">x_{j}=2\pi j/n</Math> , with respect to the weight function <Math mode="inline" xml:id="C3.S11.Px7.p1.m8">w(x)=1</Math> , in the sense that <Math equation-number="3.11.37" mode="display" xml:id="C3.S11.E37">\sum_{j=0}^{n-1}\phi_{k}(x_{j})\overline{\phi_{\ell}(x_{j})}=n\delta_{k,\ell}, if k,\ell=0,1,\dots,n-1,</Math> <Math mode="inline" xml:id="C3.S11.Px7.p1.m9">\delta_{k,\ell}</Math> being Kronecker’s symbol and the bar denoting complex conjugate.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C3.S11.Px7.p1.s2">
+In consequence we can solve the system <Math equation-number="3.11.38" mode="display" xml:id="C3.S11.E38">f_{j}=\sum_{k=0}^{n-1}a_{k}\phi_{k}(x_{j}), if j=0,1,\dots,n-1,</Math> and obtain <Math equation-number="3.11.39" mode="display" xml:id="C3.S11.E39">a_{k}=\frac{1}{n}\sum_{j=0}^{n-1}f_{j}\overline{\phi_{k}(x_{j})}, if k=0,1,\dots,n-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="105" xml:id="C3.S11.Px7.p1.s3">
+With this choice of <Math mode="inline" xml:id="C3.S11.Px7.p1.m10">a_{k}</Math> and <Math mode="inline" xml:id="C3.S11.Px7.p1.m11">f_{j}=f(x_{j})</Math> , the corresponding sum (3.11.32) vanishes.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C3.S11.Px7.p2.s1">
+The pair of vectors <Math mode="inline" xml:id="C3.S11.Px7.p2.m1">\{\mathbf{f},\mathbf{a}\}</Math> <Math equation-number="3.11.40" mode="display" xml:id="C3.S11.E40">\mathbf{f}=[f_{0},f_{1},\dots,f_{n-1}]^{\rm T},\mathbf{a}=[a_{0},a_{1},\dots,a_{n-1}]^{\rm T},</Math> is called a discrete Fourier transform pair.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S11.Px8">
+<title>The Fast Fourier Transform</title>  
+  
+ 
+<para xml:id="C3.S11.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C3.S11.Px8.p1.s1">
+The direct computation of the discrete Fourier transform (3.11.38), that is, of <Math equation-number="3.11.41" mode="display" xml:id="C3.S11.E41">f_{j}=\sum_{k=0}^{n-1}a_{k}\omega_{n}^{jk},\omega_{n}=e^{2\pi i/n}, , if j=0,1,\dots,n-1,</Math> requires approximately <Math mode="inline" xml:id="C3.S11.Px8.p1.m1">n^{2}</Math> multiplications.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C3.S11.Px8.p1.s2">
+The method of the fast Fourier transform (FFT) exploits the structure of the matrix <Math mode="inline" xml:id="C3.S11.Px8.p1.m2">\boldsymbol{{\Omega}}</Math> with elements <Math mode="inline" xml:id="C3.S11.Px8.p1.m3">\omega_{n}^{jk}</Math> , <Math mode="inline" xml:id="C3.S11.Px8.p1.m4">j,k=0,1,\dots,n-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="109" xml:id="C3.S11.Px8.p1.s3">
+If <Math mode="inline" xml:id="C3.S11.Px8.p1.m5">n=2^{m}</Math> , then <Math mode="inline" xml:id="C3.S11.Px8.p1.m6">\boldsymbol{{\Omega}}</Math> can be factored into <Math mode="inline" xml:id="C3.S11.Px8.p1.m7">m</Math> matrices, the rows of which contain only a few nonzero entries and the nonzero entries are equal apart from signs.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="110" xml:id="C3.S11.Px8.p1.s4">
+In consequence of this structure the number of operations can be reduced to <Math mode="inline" xml:id="C3.S11.Px8.p1.m8">nm=n\log_{2}n</Math> operations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C3.S11.Px8.p2.s1">
+The property <Math equation-number="3.11.42" mode="display" xml:id="C3.S11.E42">\omega_{n}^{2(k-(n/2))}=\omega_{n/2}^{k}</Math> is of fundamental importance in the FFT algorithm.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="112" xml:id="C3.S11.Px8.p2.s2">
+If <Math mode="inline" xml:id="C3.S11.Px8.p2.m1">n</Math> is not a power of 2, then modifications are possible.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="113" xml:id="C3.S11.Px8.p2.s3">
+For the original reference seeCooley and Tukey (1965).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="114" xml:id="C3.S11.Px8.p2.s4">
+For further details and algorithms, seeVan Loan (1992).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.Px8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C3.S11.Px8.p3.s1">
+For further information on least squares approximations, including examples, see Gautschi (1997a, Chapter 2) andBjörck (1996, Chapters 1 and 2).
+</sentence>
+
+</para>
+   
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S11.SS6">
+<title>Splines</title>           
+<para xml:id="C3.S11.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C3.S11.SS6.p1.s1">
+Splines are defined piecewise and usually by low-degree polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="117" xml:id="C3.S11.SS6.p1.s2">
+Given <Math mode="inline" xml:id="C3.S11.SS6.p1.m1">n+1</Math> distinct points <Math mode="inline" xml:id="C3.S11.SS6.p1.m2">x_{k}</Math> in the real interval <Math mode="inline" xml:id="C3.S11.SS6.p1.m3">[a,b]</Math> , with ( <Math mode="inline" xml:id="C3.S11.SS6.p1.m4">a=</Math> ) <Math mode="inline" xml:id="C3.S11.SS6.p1.m5">x_{0}&lt;x_{1}&lt;\cdots&lt;x_{n-1}&lt;x_{n}</Math> ( <Math mode="inline" xml:id="C3.S11.SS6.p1.m6">=b</Math> ), on each subinterval <Math mode="inline" xml:id="C3.S11.SS6.p1.m7">[x_{k},x_{k+1}]</Math> , <Math mode="inline" xml:id="C3.S11.SS6.p1.m8">k=0,1,\ldots,n-1</Math> , a low-degree polynomial is defined with coefficients determined by, for example, values <Math mode="inline" xml:id="C3.S11.SS6.p1.m9">f_{k}</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p1.m10">f_{k}^{\prime}</Math> of a function <Math mode="inline" xml:id="C3.S11.SS6.p1.m11">f</Math> and its derivative at the nodes <Math mode="inline" xml:id="C3.S11.SS6.p1.m12">x_{k}</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p1.m13">x_{k+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="118" xml:id="C3.S11.SS6.p1.s3">
+The set of all the polynomials defines a function, the spline, on <Math mode="inline" xml:id="C3.S11.SS6.p1.m14">[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="119" xml:id="C3.S11.SS6.p1.s4">
+By taking more derivatives into account, the smoothness of the spline will increase.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C3.S11.SS6.p2.s1">
+For splines based on Bernoulli and Euler polynomials, see §24.17(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C3.S11.SS6.p3.s1">
+For many applications a spline function is a more adaptable approximating tool than the Lagrange interpolation polynomial involving a comparable number of parameters; see §3.3(i), where a single polynomial is used for interpolating <Math mode="inline" xml:id="C3.S11.SS6.p3.m1">f(x)</Math> on the complete interval <Math mode="inline" xml:id="C3.S11.SS6.p3.m2">[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="122" xml:id="C3.S11.SS6.p3.s2">
+Multivariate functions can also be approximated in terms of multivariate polynomial splines.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="123" xml:id="C3.S11.SS6.p3.s3">
+See de Boor (2001), Chui (1988), andSchumaker (1981) for further information.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S11.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C3.S11.SS6.p4.s1">
+In computer graphics a special type of spline is used which produces aBézier curve.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="125" xml:id="C3.S11.SS6.p4.s2">
+A cubic Bézier curve is defined by four points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="126" xml:id="C3.S11.SS6.p4.s3">
+Two are endpoints: <Math mode="inline" xml:id="C3.S11.SS6.p4.m1">(x_{0},y_{0})</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p4.m2">(x_{3},y_{3})</Math> ; the other points <Math mode="inline" xml:id="C3.S11.SS6.p4.m3">(x_{1},y_{1})</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p4.m4">(x_{2},y_{2})</Math> are control points.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="127" xml:id="C3.S11.SS6.p4.s4">
+The slope of the curve at <Math mode="inline" xml:id="C3.S11.SS6.p4.m5">(x_{0},y_{0})</Math> is tangent to the line between <Math mode="inline" xml:id="C3.S11.SS6.p4.m6">(x_{0},y_{0})</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p4.m7">(x_{1},y_{1})</Math> ; similarly the slope at <Math mode="inline" xml:id="C3.S11.SS6.p4.m8">(x_{3},y_{3})</Math> is tangent to the line between <Math mode="inline" xml:id="C3.S11.SS6.p4.m9">x_{2},y_{2}</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p4.m10">x_{3},y_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="128" xml:id="C3.S11.SS6.p4.s5">
+The curve is described by <Math mode="inline" xml:id="C3.S11.SS6.p4.m11">x(t)</Math> and <Math mode="inline" xml:id="C3.S11.SS6.p4.m12">y(t)</Math> , which are cubic polynomials with <Math mode="inline" xml:id="C3.S11.SS6.p4.m13">t\in[0,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="129" xml:id="C3.S11.SS6.p4.s6">
+A complete spline results by composing several Bézier curves.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="130" xml:id="C3.S11.SS6.p4.s7">
+A special applications area of Bézier curves is mathematical typography and the design of type fonts.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="131" xml:id="C3.S11.SS6.p4.s8">
+See Knuth (1986, pp. 116-136).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

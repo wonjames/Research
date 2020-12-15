@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S12">
+<title>Generating Functions</title>        
+ 
+ 
+<para xml:id="C18.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S12.p1.s1">
+With the notation of §§10.2(ii),10.25(ii), and15.2,
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S12.Px1">
+<title>Jacobi</title>    
+<para xml:id="C18.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S12.Px1.p1.s1">
+ <Math equation-number="18.12.1" mode="display" xml:id="C18.S12.E1">\frac{2^{\alpha+\beta}}{R(1+R-z)^{\alpha}(1+R+z)^{\beta}}=\sum_{n=0}^{\infty}P ^{(\alpha,\beta)}_{n}\left(x\right)z^{n}, if R=\sqrt{1-2xz+z^{2}}, |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S12.Px1.p1.s2">
+<Math equation-number="18.12.2" mode="display" xml:id="C18.S12.E2">\left(\tfrac{1}{2}(1-x)z\right)^{-\frac{1}{2}\alpha}J_{\alpha}\left(\sqrt{2(1- x)z}\right)\*\left(\tfrac{1}{2}(1+x)z\right)^{-\frac{1}{2}\beta}I_{\beta}\left (\sqrt{2(1+x)z}\right)=\sum_{n=0}^{\infty}\frac{P^{(\alpha,\beta)}_{n}\left(x \right)}{\Gamma\left(n+\alpha+1\right)\Gamma\left(n+\beta+1\right)}z^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C18.S12.Px1.p1.s3">
+<Math equation-number="18.12.3" mode="display" xml:id="C18.S12.E3">(1+z)^{-\alpha-\beta-1}\*{{}_{2}F_{1}}\left({\tfrac{1}{2}(\alpha+\beta+1), \tfrac{1}{2}(\alpha+\beta+2)\atop\beta+1};\frac{2(x+1)z}{(1+z)^{2}}\right)= \sum_{n=0}^{\infty}\frac{{\left(\alpha+\beta+1\right)_{n}}}{{\left(\beta+1 \right)_{n}}}P^{(\alpha,\beta)}_{n}\left(x\right)z^{n}, if |z|&lt;1,</Math> and a similar formula by symmetry; compare the second row in Table18.6.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C18.S12.Px1.p1.s4">
+For the hypergeometric function <Math mode="inline" xml:id="C18.S12.Px1.p1.m1">{{}_{2}F_{1}}</Math> see §§15.1, 15.2(i).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S12.Px2">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S12.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S12.Px2.p1.s1">
+ <Math equation-number="18.12.4" mode="display" xml:id="C18.S12.E4">(1-2xz+z^{2})^{-\lambda}=\sum_{n=0}^{\infty}C^{(\lambda)}_{n}\left(x\right)z^{ n}=\sum_{n=0}^{\infty}\frac{{\left(2\lambda\right)_{n}}}{{\left(\lambda+\tfrac {1}{2}\right)_{n}}}P^{(\lambda-\frac{1}{2},\lambda-\frac{1}{2})}_{n}\left(x \right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C18.S12.Px2.p1.s2">
+<Math equation-number="18.12.5" mode="display" xml:id="C18.S12.E5">\frac{1-xz}{(1-2xz+z^{2})^{\lambda+1}}=\sum_{n=0}^{\infty}\frac{n+2\lambda}{2 \lambda}C^{(\lambda)}_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C18.S12.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S12.Px2.p2.s1">
+ <Math equation-number="18.12.6" mode="display" xml:id="C18.S12.E6">\Gamma\left(\lambda+\tfrac{1}{2}\right)e^{z\cos\theta}(\tfrac{1}{2}z\sin\theta )^{\frac{1}{2}-\lambda}J_{\lambda-\frac{1}{2}}\left(z\sin\theta\right)=\sum_{n =0}^{\infty}\frac{C^{(\lambda)}_{n}\left(\cos\theta\right)}{{\left(2\lambda \right)_{n}}}z^{n}, if 0\leq\theta\leq\pi</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S12.Px3">
+<title>Chebyshev</title>    
+<para xml:id="C18.S12.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S12.Px3.p1.s1">
+ <Math equation-number="18.12.7" mode="display" xml:id="C18.S12.E7">\frac{1-z^{2}}{1-2xz+z^{2}}=1+2\sum_{n=1}^{\infty}T_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C18.S12.Px3.p1.s2">
+<Math equation-number="18.12.8" mode="display" xml:id="C18.S12.E8">\frac{1-xz}{1-2xz+z^{2}}=\sum_{n=0}^{\infty}T_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C18.S12.Px3.p1.s3">
+<Math equation-number="18.12.9" mode="display" xml:id="C18.S12.E9">-\ln\left(1-2xz+z^{2}\right)=2\sum_{n=1}^{\infty}\frac{T_{n}\left(x\right)}{n} z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C18.S12.Px3.p1.s4">
+<Math equation-number="18.12.10" mode="display" xml:id="C18.S12.E10">\frac{1}{1-2xz+z^{2}}=\sum_{n=0}^{\infty}U_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S12.Px4">
+<title>Legendre</title>   
+ 
+<para xml:id="C18.S12.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S12.Px4.p1.s1">
+ <Math equation-number="18.12.11" mode="display" xml:id="C18.S12.E11">\frac{1}{\sqrt{1-2xz+z^{2}}}=\sum_{n=0}^{\infty}P_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S12.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S12.Px4.p2.s1">
+ <Math equation-number="18.12.12" mode="display" xml:id="C18.S12.E12">e^{xz}J_{0}\left(z\sqrt{1-x^{2}}\right)=\sum_{n=0}^{\infty}\frac{P_{n}\left(x \right)}{n!}z^{n}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S12.Px5">
+<title>Laguerre</title>    
+<para xml:id="C18.S12.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C18.S12.Px5.p1.s1">
+ <Math equation-number="18.12.13" mode="display" xml:id="C18.S12.E13">(1-z)^{-\alpha-1}\exp\left(\frac{xz}{z-1}\right)=\sum_{n=0}^{\infty}L^{(\alpha )}_{n}\left(x\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C18.S12.Px5.p1.s2">
+<Math equation-number="18.12.14" mode="display" xml:id="C18.S12.E14">\Gamma\left(\alpha+1\right)(xz)^{-\frac{1}{2}\alpha}e^{z}J_{\alpha}\left(2 \sqrt{xz}\right)=\sum_{n=0}^{\infty}\frac{L^{(\alpha)}_{n}\left(x\right)}{{ \left(\alpha+1\right)_{n}}}z^{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S12.Px6">
+<title>Hermite</title>    
+<para xml:id="C18.S12.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S12.Px6.p1.s1">
+ <Math equation-number="18.12.15" mode="display" xml:id="C18.S12.E15">e^{2xz-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}\left(x\right)}{n!}z^{n}</Math> , <Math equation-number="18.12.16" mode="display" xml:id="C18.S12.E16">e^{xz-\frac{1}{2}z^{2}}=\sum_{n=0}^{\infty}\frac{\mathit{He}_{n}\left(x\right) }{n!}z^{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

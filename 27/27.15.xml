@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S15">
+<title>Chinese Remainder Theorem</title>        
+  
+<para xml:id="C27.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S15.p1.s1">
+The Chinese remainder theorem states that a system of congruences <Math mode="inline" xml:id="C27.S15.p1.m1">x\equiv a_{1}\pmod{m_{1}},\dots,x\equiv a_{k}\pmod{m_{k}}</Math> , always has a solution if the moduli are relatively prime in pairs; the solution is unique (mod <Math mode="inline" xml:id="C27.S15.p1.m2">m</Math> ), where <Math mode="inline" xml:id="C27.S15.p1.m3">m</Math> is the product of the moduli.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C27.S15.p2.s1">
+This theorem is employed to increase efficiency in calculating with large numbers by making use of smaller numbers in most of the calculation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C27.S15.p2.s2">
+For example, suppose a lengthy calculation involves many 10-digit integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C27.S15.p2.s3">
+Most of the calculation can be done with five-digit integers as follows.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C27.S15.p2.s4">
+Choose fourrelatively prime moduli <Math mode="inline" xml:id="C27.S15.p2.m1">m_{1},m_{2},m_{3}</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m2">m_{4}</Math> of five digits each, for example <Math mode="inline" xml:id="C27.S15.p2.m3">2^{16}-3</Math> , <Math mode="inline" xml:id="C27.S15.p2.m4">2^{16}-1</Math> , <Math mode="inline" xml:id="C27.S15.p2.m5">2^{16}+1</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m6">2^{16}+3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C27.S15.p2.s5">
+Their product <Math mode="inline" xml:id="C27.S15.p2.m7">m</Math> has 20 digits, twice the number of digits in the data.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C27.S15.p2.s6">
+By the Chinese remainder theorem each integer in the data can be uniquely represented by its residues (mod <Math mode="inline" xml:id="C27.S15.p2.m8">m_{1}</Math> ), (mod <Math mode="inline" xml:id="C27.S15.p2.m9">m_{2}</Math> ), (mod <Math mode="inline" xml:id="C27.S15.p2.m10">m_{3}</Math> ), and (mod <Math mode="inline" xml:id="C27.S15.p2.m11">m_{4}</Math> ), respectively.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" xml:id="C27.S15.p2.s7">
+Because each residue has no more than five digits, the arithmetic can be performed efficiently on these residues with respect to each of the moduli, yielding answers <Math mode="inline" xml:id="C27.S15.p2.m12">a_{1}\pmod{m_{1}}</Math> , <Math mode="inline" xml:id="C27.S15.p2.m13">a_{2}\pmod{m_{2}}</Math> , <Math mode="inline" xml:id="C27.S15.p2.m14">a_{3}\pmod{m_{3}}</Math> , and <Math mode="inline" xml:id="C27.S15.p2.m15">a_{4}\pmod{m_{4}}</Math> , where each <Math mode="inline" xml:id="C27.S15.p2.m16">a_{j}</Math> has no more than five digits.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" xml:id="C27.S15.p2.s8">
+These numbers, in turn, are combined by the Chinese remainder theorem to obtain the final result <Math mode="inline" xml:id="C27.S15.p2.m17">\pmod{m}</Math> , which is correct to 20 digits.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C27.S15.p3.s1">
+Even though the lengthy calculation is repeated four times, once for each modulus, most of it only uses five-digit integers and is accomplished quickly without overwhelming the machine’s memory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C27.S15.p3.s2">
+Details of a machine program describing the method together with typical numerical results can be found inNewman (1967).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C27.S15.p3.s3">
+See also Apostol and Niven (1994, pp. 18–19).
+</sentence>
+
+</para>
+ 
+</section>

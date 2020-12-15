@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S4">
+<title>Special Values</title>          
+<para xml:id="C8.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S4.p1.s1">
+For <Math mode="inline" xml:id="C8.S4.p1.m1">\operatorname{erf}\left(z\right)</Math> , <Math mode="inline" xml:id="C8.S4.p1.m2">\operatorname{erfc}\left(z\right)</Math> , and <Math mode="inline" xml:id="C8.S4.p1.m3">F\left(z\right)</Math> , see §§7.2(i),7.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S4.p1.s2">
+For <Math mode="inline" xml:id="C8.S4.p1.m4">E_{n}\left(z\right)</Math> see §8.19(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S4.p1.s3">
+<Math equation-number="8.4.1" mode="display" xml:id="C8.S4.E1">\gamma\left(\tfrac{1}{2},z^{2}\right)=2\int_{0}^{z}e^{-t^{2}}\mathrm{d}t=\sqrt {\pi}\operatorname{erf}\left(z\right),</Math> <Math equation-number="8.4.2" mode="display" xml:id="C8.S4.E2">\gamma^{*}\left(a,0\right)=\frac{1}{\Gamma\left(a+1\right)},</Math> , <Math equation-number="8.4.3" mode="display" xml:id="C8.S4.E3">\gamma^{*}\left(\tfrac{1}{2},-z^{2}\right)=\frac{2e^{z^{2}}}{z\sqrt{\pi}}F \left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S4.p1.s4">
+<Math equation-number="8.4.4" mode="display" xml:id="C8.S4.E4">\Gamma\left(0,z\right)=\int_{z}^{\infty}t^{-1}e^{-t}\mathrm{d}t=E_{1}\left(z \right),</Math> <Math equation-number="8.4.5" mode="display" xml:id="C8.S4.E5">\Gamma\left(1,z\right)=e^{-z},</Math> <Math equation-number="8.4.6" mode="display" xml:id="C8.S4.E6">\Gamma\left(\tfrac{1}{2},z^{2}\right)=2\int_{z}^{\infty}e^{-t^{2}}\mathrm{d}t= \sqrt{\pi}\operatorname{erfc}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S4.p2.s1">
+For <Math mode="inline" xml:id="C8.S4.p2.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.4.7" mode="display" xml:id="C8.S4.E7">\gamma\left(n+1,z\right)=n!(1-e^{-z}e_{n}(z))</Math> , <Math equation-number="8.4.8" mode="display" xml:id="C8.S4.E8">\Gamma\left(n+1,z\right)=n!e^{-z}e_{n}(z)</Math> ,, <Math equation-number="8.4.9" mode="display" xml:id="C8.S4.E9">P\left(n+1,z\right)=1-e^{-z}e_{n}(z),</Math> , <Math equation-number="8.4.10" mode="display" xml:id="C8.S4.E10">Q\left(n+1,z\right)=e^{-z}e_{n}(z),</Math> where <Math equation-number="8.4.11" mode="display" xml:id="C8.S4.E11">e_{n}(z)=\sum_{k=0}^{n}\frac{z^{k}}{k!}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C8.S4.p3.s1">
+Also <Math equation-number="8.4.12" mode="display" xml:id="C8.S4.E12">\gamma^{*}\left(-n,z\right)=z^{n},</Math> <Math equation-number="8.4.13" mode="display" xml:id="C8.S4.E13">\Gamma\left(1-n,z\right)=z^{1-n}E_{n}\left(z\right),</Math> <Math equation-number="8.4.14" mode="display" xml:id="C8.S4.E14">Q\left(n+\tfrac{1}{2},z^{2}\right)=\operatorname{erfc}\left(z\right)+\frac{e^{ -z^{2}}}{\sqrt{\pi}}\sum_{k=1}^{n}\frac{z^{2k-1}}{{\left(\tfrac{1}{2}\right)_{ k}}},</Math> <Math equation-number="8.4.15" mode="display" xml:id="C8.S4.E15">\Gamma\left(-n,z\right)=\frac{(-1)^{n}}{n!}\left(E_{1}\left(z\right)-e^{-z} \sum_{k=0}^{n-1}\frac{(-1)^{k}k!}{z^{k+1}}\right)=\frac{(-1)^{n}}{n!}\left( \psi\left(n+1\right)-\ln z\right)-z^{-n}\sum_{\begin{subarray}{c}k=0\\ k\neq n\end{subarray}}^{\infty}\frac{(-z)^{k}}{k!(k-n)}</Math>.
+</sentence>
+
+</para>
+ 
+</section>

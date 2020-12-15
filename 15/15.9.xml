@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S9">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C15.S9.SS1">
+<title>Orthogonal Polynomials</title>            
+<para xml:id="C15.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S9.SS1.p1.s1">
+For the notation see §§18.3 and 18.19.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S9.Px1">
+<title>Jacobi</title>    
+<para xml:id="C15.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C15.S9.Px1.p1.s1">
+ <Math equation-number="15.9.1" mode="display" xml:id="C15.S9.E1">P^{(\alpha,\beta)}_{n}\left(x\right)=\frac{{\left(\alpha+1\right)_{n}}}{n!}F \left({-n,n+\alpha+\beta+1\atop\alpha+1};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px2">
+<title>Gegenbauer (or Ultraspherical)</title>  
+  
+<para xml:id="C15.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C15.S9.Px2.p1.s1">
+ <Math equation-number="15.9.2" mode="display" xml:id="C15.S9.E2">C^{(\lambda)}_{n}\left(x\right)=\frac{{\left(2\lambda\right)_{n}}}{n!}F\left({ -n,n+2\lambda\atop\lambda+\frac{1}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C15.S9.Px2.p1.s2">
+<Math equation-number="15.9.3" mode="display" xml:id="C15.S9.E3">C^{(\lambda)}_{n}\left(x\right)=(2x)^{n}\frac{{\left(\lambda\right)_{n}}}{n!}F \left({-\frac{1}{2}n,\frac{1}{2}(1-n)\atop 1-\lambda-n};\frac{1}{x^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C15.S9.Px2.p1.s3">
+<Math equation-number="15.9.4" mode="display" xml:id="C15.S9.E4">C^{(\lambda)}_{n}\left(\cos\theta\right)=e^{n\mathrm{i}\theta}\frac{{\left( \lambda\right)_{n}}}{n!}F\left({-n,\lambda\atop 1-\lambda-n};e^{-2\mathrm{i} \theta}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px3">
+<title>Chebyshev</title>    
+<para xml:id="C15.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C15.S9.Px3.p1.s1">
+ <Math equation-number="15.9.5" mode="display" xml:id="C15.S9.E5">T_{n}\left(x\right)=F\left({-n,n\atop\frac{1}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C15.S9.Px3.p1.s2">
+<Math equation-number="15.9.6" mode="display" xml:id="C15.S9.E6">U_{n}\left(x\right)=(n+1)F\left({-n,n+2\atop\frac{3}{2}};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px4">
+<title>Legendre</title>    
+<para xml:id="C15.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C15.S9.Px4.p1.s1">
+ <Math equation-number="15.9.7" mode="display" xml:id="C15.S9.E7">P_{n}\left(x\right)=F\left({-n,n+1\atop 1};\frac{1-x}{2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px5">
+<title>Krawtchouk</title>     
+<para xml:id="C15.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C15.S9.Px5.p1.s1">
+ <Math equation-number="15.9.8" mode="display" xml:id="C15.S9.E8">K_{n}\left(x;p,N\right)=F\left({-n,-x\atop-N};\frac{1}{p}\right), if n=0,1,2,\dots,N;</Math> compare also §15.2(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px6">
+<title>Meixner</title>    
+<para xml:id="C15.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S9.Px6.p1.s1">
+ <Math equation-number="15.9.9" mode="display" xml:id="C15.S9.E9">M_{n}\left(x;\beta,c\right)=F\left({-n,-x\atop\beta};1-\frac{1}{c}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S9.Px7">
+<title>Meixner–Pollaczek</title>  
+  
+<para xml:id="C15.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C15.S9.Px7.p1.s1">
+ <Math equation-number="15.9.10" mode="display" xml:id="C15.S9.E10">P^{(\lambda)}_{n}\left(x;\phi\right)=\frac{{\left(2\lambda\right)_{n}}}{n!}e^{ n\mathrm{i}\phi}F\left({-n,\lambda+\mathrm{i}x\atop 2\lambda};1-e^{-2\mathrm{i }\phi}\right)</Math>.
+</sentence>
+
+</para>
+
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS2">
+<title>Jacobi Function</title>           
+ 
+<para xml:id="C15.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C15.S9.SS2.p1.s1">
+This is a generalization of Jacobi polynomials (§18.3) and has the representation <Math equation-number="15.9.11" mode="display" xml:id="C15.S9.E11">\phi^{(\alpha,\beta)}_{\lambda}\left(t\right)=F\left({\tfrac{1}{2}(\alpha+ \beta+1-\mathrm{i}\lambda),\tfrac{1}{2}(\alpha+\beta+1+\mathrm{i}\lambda)\atop \alpha+1};-{\sinh^{2}}t\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S9.SS2.p2.s1">
+The Jacobi transform is defined as <Math equation-number="15.9.12" mode="display" xml:id="C15.S9.E12">\widetilde{f}(\lambda)=\int_{0}^{\infty}f(t)\phi^{(\alpha,\beta)}_{\lambda} \left(t\right)(2\sinh t)^{2\alpha+1}(2\cosh t)^{2\beta+1}\mathrm{d}t,</Math> with inverse <Math equation-number="15.9.13" mode="display" xml:id="C15.S9.E13">f(t)=\frac{1}{2\pi\mathrm{i}}\int_{-\mathrm{i}\infty}^{\mathrm{i}\infty} \widetilde{f}(\mathrm{i}\lambda)\Phi^{(\alpha,\beta)}_{\mathrm{i}\lambda}(t) \frac{\Gamma\left(\tfrac{1}{2}(\alpha+\beta+1+\lambda)\right)\Gamma\left( \tfrac{1}{2}(\alpha-\beta+1+\lambda)\right)}{\Gamma\left(\alpha+1\right)\Gamma \left(\lambda\right)2^{\alpha+\beta+1-\lambda}}\mathrm{d}\lambda,</Math> where the contour of integration is located to the right of the poles of the gamma functions in the integrand, and <Math equation-number="15.9.14" mode="display" xml:id="C15.S9.E14">\Phi^{(\alpha,\beta)}_{\lambda}(t)=(2\cosh t)^{\mathrm{i}\lambda-\alpha-\beta- 1}F\left({\tfrac{1}{2}(\alpha+\beta+1-\mathrm{i}\lambda),\tfrac{1}{2}(\alpha- \beta+1-\mathrm{i}\lambda)\atop 1-\mathrm{i}\lambda};{\operatorname{sech}^{2}} t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C15.S9.SS2.p2.s2">
+For this result, together with restrictions on the functions <Math mode="inline" xml:id="C15.S9.SS2.p2.m1">f(t)</Math> and <Math mode="inline" xml:id="C15.S9.SS2.p2.m2">\widetilde{f}(\lambda)</Math> , see Koornwinder (1984a).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS3">
+<title>Gegenbauer Function</title>           
+ 
+<para xml:id="C15.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S9.SS3.p1.s1">
+This is a generalization of Gegenbauer (or ultraspherical) polynomials (§18.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C15.S9.SS3.p1.s2">
+It is defined by: <Math equation-number="15.9.15" mode="display" xml:id="C15.S9.E15">C^{(\lambda)}_{\alpha}\left(z\right)=\frac{\Gamma\left(\alpha+2\lambda\right)} {\Gamma\left(2\lambda\right)\Gamma\left(\alpha+1\right)}F\left({-\alpha,\alpha +2\lambda\atop\lambda+\tfrac{1}{2}};\frac{1-z}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S9.SS4">
+<title>Associated Legendre Functions; Ferrers Functions</title>            
+ 
+<para xml:id="C15.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C15.S9.SS4.p1.s1">
+Any hypergeometric function for which a quadratic transformation exists can be expressed in terms of associated Legendre functions or Ferrers functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C15.S9.SS4.p1.s2">
+For examples see §§14.3(i)–14.3(iii)and14.21(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S9.SS4.p2">
+
+</para>
+ 
+ 
+<para xml:id="C15.S9.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C15.S9.SS4.p3.s1">
+The following formulas apply with principal branches of the hypergeometric functions, associated Legendre functions, and fractional powers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C15.S9.SS4.p3.s2">
+<Math equation-number="15.9.16" mode="display" xml:id="C15.S9.E16">\mathbf{F}\left({a,b\atop 2b};z\right)=\frac{\sqrt{\pi}}{\Gamma\left(b\right)} z^{-b+(\ifrac{1}{2})}(1-z)^{(b-a-(\ifrac{1}{2}))/2}\*P^{-b+(\ifrac{1}{2})}_{a- b-(\ifrac{1}{2})}\left(\frac{2-z}{2\sqrt{1-z}}\right), if b\neq 0,-1,-2,\dots, |\operatorname{ph}\left(1-z\right)|&lt;\pi and |1-z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C15.S9.SS4.p3.s3">
+<Math equation-number="15.9.17" mode="display" xml:id="C15.S9.E17">\mathbf{F}\left({a,a+\tfrac{1}{2}\atop c};z\right)=2^{c-1}z^{\ifrac{(1-c)}{2}} (1-z)^{-a+(\ifrac{(c-1)}{2})}\*P^{1-c}_{2a-c}\left(\frac{1}{\sqrt{1-z}}\right), if |\operatorname{ph}z|&lt;\pi and |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C15.S9.SS4.p3.s4">
+<Math equation-number="15.9.18" mode="display" xml:id="C15.S9.E18">\mathbf{F}\left({a,b\atop a+b+\tfrac{1}{2}};z\right)=2^{a+b-(\ifrac{1}{2})}(-z )^{(-a-b+(\ifrac{1}{2}))/2}\*P^{-a-b+(\ifrac{1}{2})}_{a-b-(\ifrac{1}{2})}\left (\sqrt{1-z}\right), if \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="23" xml:id="C15.S9.SS4.p3.s5">
+<Math equation-number="15.9.19" mode="display" xml:id="C15.S9.E19">\mathbf{F}\left({a,b\atop a-b+1};z\right)=z^{\ifrac{(b-a)}{2}}(1-z)^{-b}\*P^{b -a}_{-b}\left(\frac{1+z}{1-z}\right), if |\operatorname{ph}z|&lt;\pi and |\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="24" xml:id="C15.S9.SS4.p3.s6">
+<Math equation-number="15.9.20" mode="display" xml:id="C15.S9.E20">\mathbf{F}\left({a,b\atop\tfrac{1}{2}(a+b+1)};z\right)=\left(-z(1-z)\right)^{ \ifrac{(1-a-b)}{4}}\*P^{\ifrac{(1-a-b)}{2}}_{\ifrac{(a-b-1)}{2}}\left(1-2z \right), if \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="25" xml:id="C15.S9.SS4.p3.s7">
+<Math equation-number="15.9.21" mode="display" xml:id="C15.S9.E21">\mathbf{F}\left({a,1-a\atop c};z\right)=\left(\frac{-z}{1-z}\right)^{\ifrac{(1 -c)}{2}}\*P^{1-c}_{-a}\left(1-2z\right), if \left|\operatorname{ph}\left(-z\right)\right|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="26" xml:id="C15.S9.SS4.p3.s8">
+<Math equation-number="15.9.22" mode="display" xml:id="C15.S9.E22">\mathbf{F}\left({a,b\atop\tfrac{1}{2}};z\right)=\frac{2^{a+b-(\ifrac{3}{2})}}{ \pi}\Gamma\left(a+\tfrac{1}{2}\right)\Gamma\left(b+\tfrac{1}{2}\right)\*(z-1)^ {(-a-b+(\ifrac{1}{2}))/2}\*\left(e^{\pm\pi\mathrm{i}(a+b-(\ifrac{1}{2}))}P^{-a -b+(\ifrac{1}{2})}_{a-b-(\ifrac{1}{2})}\left(-\sqrt{z}\right)+P^{-a-b+(\ifrac{ 1}{2})}_{a-b-(\ifrac{1}{2})}\left(\sqrt{z}\right)\right), if a,b\neq-\frac{1}{2},-\frac{3}{2},-\frac{5}{2},\ldots, 0&lt;|\operatorname{ph}z|&lt;\pi,</Math> where the sign in the exponential is <Math mode="inline" xml:id="C15.S9.SS4.p3.m1">\pm</Math> according as <Math mode="inline" xml:id="C15.S9.SS4.p3.m2">\Im z\gtrless 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="27" xml:id="C15.S9.SS4.p3.s9">
+<Math equation-number="15.9.23" mode="display" xml:id="C15.S9.E23">\mathbf{F}\left({a,b\atop\tfrac{3}{2}};z\right)=\frac{2^{a+b-(\ifrac{5}{2})}}{ \pi\sqrt{z}}\Gamma\left(a-\tfrac{1}{2}\right)\Gamma\left(b-\tfrac{1}{2}\right) \*(z-1)^{(-a-b+(\ifrac{3}{2}))/2}\*\left(e^{\pm\pi\mathrm{i}(a+b-(\ifrac{3}{2} ))}P^{-a-b+(\ifrac{3}{2})}_{a-b-(\ifrac{1}{2})}\left(-\sqrt{z}\right)-P^{-a-b+ (\ifrac{3}{2})}_{a-b-(\ifrac{1}{2})}\left(\sqrt{z}\right)\right), if a,b\neq\frac{1}{2},-\frac{1}{2},-\frac{3}{2},\dots, 0&lt;|\operatorname{ph}z|&lt;\pi,</Math> where the sign in the exponential is <Math mode="inline" xml:id="C15.S9.SS4.p3.m3">\pm</Math> according as <Math mode="inline" xml:id="C15.S9.SS4.p3.m4">\Im z\gtrless 0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

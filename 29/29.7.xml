@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C29.S7">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C29.S7.SS1">
+<title>Eigenvalues</title>          
+<para xml:id="C29.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C29.S7.SS1.p1.s1">
+As <Math mode="inline" xml:id="C29.S7.SS1.p1.m1">\nu\to\infty</Math> , <Math equation-number="29.7.1" mode="display" xml:id="C29.S7.E1">a^{m}_{\nu}\left(k^{2}\right)\sim p\kappa-\tau_{0}-\tau_{1}\kappa^{-1}-\tau_{2 }\kappa^{-2}-\cdots,</Math> where <Math equation-number="29.7.2" mode="display" xml:id="C29.S7.E2">\kappa=k(\nu(\nu+1))^{1/2},p=2m+1,</Math> <Math equation-number="29.7.3" mode="display" xml:id="C29.S7.E3">\tau_{0}=\frac{1}{2^{3}}(1+k^{2})(1+p^{2}),</Math> , <Math equation-number="29.7.4" mode="display" xml:id="C29.S7.E4">\tau_{1}=\frac{p}{2^{6}}((1+k^{2})^{2}(p^{2}+3)-4k^{2}(p^{2}+5))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C29.S7.SS1.p1.s2">
+The same Poincaré expansion holds for <Math mode="inline" xml:id="C29.S7.SS1.p1.m2">b^{m+1}_{\nu}\left(k^{2}\right)</Math> , since <Math equation-number="29.7.5" mode="display" xml:id="C29.S7.E5">b^{m+1}_{\nu}\left(k^{2}\right)-a^{m}_{\nu}\left(k^{2}\right)=O\left(\nu^{m+ \frac{3}{2}}\left(\frac{1-k}{1+k}\right)^{\nu}\right), if \nu\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C29.S7.SS1.p1.s3">
+See also Volkmer (2004b).
+</sentence>
+
+</para>
+ 
+<para xml:id="C29.S7.SS1.p2">
+
+</para>
+
+ 
+<para xml:id="C29.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C29.S7.SS1.p3.s1">
+ <Math equation-number="29.7.6" mode="display" xml:id="C29.S7.E6">\tau_{2}=\frac{1}{2^{10}}(1+k^{2})(1-k^{2})^{2}(5p^{4}+34p^{2}+9),</Math> <Math equation-number="29.7.7" mode="display" xml:id="C29.S7.E7">\tau_{3}=\frac{p}{2^{14}}((1+k^{2})^{4}(33p^{4}+410p^{2}+405)-24k^{2}(1+k^{2}) ^{2}(7p^{4}+90p^{2}+95)+16k^{4}(9p^{4}+130p^{2}+173)),</Math> <Math equation-number="29.7.8" mode="display" xml:id="C29.S7.E8">\tau_{4}=\frac{1}{2^{16}}((1+k^{2})^{5}(63p^{6}+1260p^{4}+2943p^{2}+486)-8k^{2 }(1+k^{2})^{3}(49p^{6}+1010p^{4}+2493p^{2}+432)+16k^{4}(1+k^{2})(35p^{6}+760p^ {4}+2043p^{2}+378))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C29.S7.SS1.p3.s2">
+Formulas for additional terms can be computed with the author’s Maple program LA5; see §29.22.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C29.S7.SS2">
+<title>Lamé Functions</title>          
+<para xml:id="C29.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C29.S7.SS2.p1.s1">
+Müller (1966a, b) found three formal asymptotic expansions for a fundamental system of solutions of (29.2.1) (and (29.11.1)) as <Math mode="inline" xml:id="C29.S7.SS2.p1.m1">\nu\to\infty</Math> , one in terms of Jacobian elliptic functions and two in terms of Hermite polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C29.S7.SS2.p1.s2">
+In Müller (1966c) it is shown how these expansions lead to asymptotic expansions for the Lamé functions <Math mode="inline" xml:id="C29.S7.SS2.p1.m2">\mathit{Ec}^{m}_{\nu}\left(z,k^{2}\right)</Math> and <Math mode="inline" xml:id="C29.S7.SS2.p1.m3">\mathit{Es}^{m}_{\nu}\left(z,k^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C29.S7.SS2.p1.s3">
+Weinstein and Keller (1985) give asymptotics for solutions of Hill’s equation (§28.29(i)) that are applicable to the Lamé equation.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

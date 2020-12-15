@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C6">
+<title>Exponential, Logarithmic, Sine, and Cosine Integrals</title>               
+          
+<section xml:id="C6.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C6.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C6.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C6.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C6.S1.p1.t1.s2">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C6.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C6.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C6.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C6.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C6.S1.p1.t1.r3.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C6.S1.p1.t1.s6">
+nonnegative integer.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C6.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C6.S1.p1.t1.r4.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C6.S1.p1.t1.s8">
+arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C6.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C6.S1.p1.t1.r5.m1">\gamma</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C6.S1.p1.t1.s10">
+Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C6.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C6.S1.p2.s1">
+Unless otherwise noted, primes indicate derivatives with respect to the argument.
+</sentence>
+
+</para>
+     
+<para xml:id="C6.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C6.S1.p3.s1">
+The main functions treated in this chapter are the exponential integrals <Math mode="inline" xml:id="C6.S1.p3.m1">\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S1.p3.m2">E_{1}\left(z\right)</Math> , and <Math mode="inline" xml:id="C6.S1.p3.m3">\mathrm{Ein}\left(z\right)</Math> ; the logarithmic integral <Math mode="inline" xml:id="C6.S1.p3.m4">\mathrm{li}\left(x\right)</Math> ; the sine integrals <Math mode="inline" xml:id="C6.S1.p3.m5">\mathrm{Si}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S1.p3.m6">\mathrm{si}\left(z\right)</Math> ; the cosine integrals <Math mode="inline" xml:id="C6.S1.p3.m7">\mathrm{Ci}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S1.p3.m8">\mathrm{Cin}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+          
+ 
+<section xml:id="C6.S2">
+<title>Definitions and Interrelations</title>        
+ 
+<subsection xml:id="C6.S2.SS1">
+<title>Exponential and Logarithmic Integrals</title>        
+      
+<para xml:id="C6.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C6.S2.SS1.p1.s1">
+The principal value of the exponential integral <Math mode="inline" xml:id="C6.S2.SS1.p1.m1">E_{1}\left(z\right)</Math> is defined by <Math equation-number="6.2.1" mode="display" xml:id="C6.S2.E1">E_{1}\left(z\right)=\int_{z}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t, subject to z\neq 0,</Math> where the path does not cross the negative real axis or pass through the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C6.S2.SS1.p1.s2">
+As in the case of the logarithm (§LABEL:sec:EF.FN.LOG) there is a cutalong the interval <Math mode="inline" xml:id="C6.S2.SS1.p1.m2">(-\infty,0]</Math> and the principal value is two-valued on <Math mode="inline" xml:id="C6.S2.SS1.p1.m3">(-\infty,0)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C6.S2.SS1.p2.s1">
+Unless indicated otherwise, it is assumed throughout the DLMF that <Math mode="inline" xml:id="C6.S2.SS1.p2.m1">E_{1}\left(z\right)</Math> assumes its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C6.S2.SS1.p2.s2">
+This is also true of the functions <Math mode="inline" xml:id="C6.S2.SS1.p2.m2">\mathrm{Ci}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S2.SS1.p2.m3">\mathrm{Chi}\left(z\right)</Math> defined in §LABEL:sec:EX.DF.SC.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C6.S2.SS1.p2.s3">
+<Math equation-number="6.2.2" mode="display" xml:id="C6.S2.E2">E_{1}\left(z\right)=e^{-z}\int_{0}^{\infty}\frac{e^{-t}}{t+z}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C6.S2.SS1.p2.s4">
+<Math equation-number="6.2.3" mode="display" xml:id="C6.S2.E3">\mathrm{Ein}\left(z\right)=\int_{0}^{z}\frac{1-e^{-t}}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="20" xml:id="C6.S2.SS1.p2.s5">
+<Math mode="inline" xml:id="C6.S2.SS1.p2.m4">\mathrm{Ein}\left(z\right)</Math> is sometimes called the complementary exponential integral.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="21" xml:id="C6.S2.SS1.p2.s6">
+It is entire.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="22" xml:id="C6.S2.SS1.p2.s7">
+<Math equation-number="6.2.4" mode="display" xml:id="C6.S2.E4">E_{1}\left(z\right)=\mathrm{Ein}\left(z\right)-\ln z-\gamma</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C6.S2.SS1.p3.s1">
+In the next three equations <Math mode="inline" xml:id="C6.S2.SS1.p3.m1">x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C6.S2.SS1.p3.s2">
+<Math equation-number="6.2.5" mode="display" xml:id="C6.S2.E5">\mathrm{Ei}\left(x\right)=-\,\pvint_{-x}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t= \pvint_{-\infty}^{x}\frac{e^{t}}{t}\mathrm{d}t,</Math> <Math equation-number="6.2.6" mode="display" xml:id="C6.S2.E6">\mathrm{Ei}\left(-x\right)=-\int_{x}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t=-E_{1 }\left(x\right),</Math> <Math equation-number="6.2.7" mode="display" xml:id="C6.S2.E7">\mathrm{Ei}\left(\pm x\right)=-\mathrm{Ein}\left(\mp x\right)+\ln x+\gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C6.S2.SS1.p3.s3">
+( <Math mode="inline" xml:id="C6.S2.SS1.p3.m3">\mathrm{Ei}\left(x\right)</Math> is undefined when <Math mode="inline" xml:id="C6.S2.SS1.p3.m4">x=0</Math> , or when <Math mode="inline" xml:id="C6.S2.SS1.p3.m5">x</Math> is not real.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C6.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C6.S2.SS1.p4.s1">
+The logarithmic integral is defined by <Math equation-number="6.2.8" mode="display" xml:id="C6.S2.E8">\mathrm{li}\left(x\right)=\pvint_{0}^{x}\frac{\mathrm{d}t}{\ln t}=\mathrm{Ei} \left(\ln x\right), subject to x&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C6.S2.SS1.p5.s1">
+The generalized exponential integral <Math mode="inline" xml:id="C6.S2.SS1.p5.m1">E_{p}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S2.SS1.p5.m2">p\in\mathbb{C}</Math> , is treated in Chapter LABEL:ch:IG.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S2.SS2">
+<title>Sine and Cosine Integrals</title>        
+    
+ 
+<para xml:id="C6.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C6.S2.SS2.p1.s1">
+ <Math equation-number="6.2.9" mode="display" xml:id="C6.S2.E9">\mathrm{Si}\left(z\right)=\int_{0}^{z}\frac{\sin t}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C6.S2.SS2.p1.s2">
+<Math mode="inline" xml:id="C6.S2.SS2.p1.m1">\mathrm{Si}\left(z\right)</Math> is an odd entire function.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C6.S2.SS2.p1.s3">
+<Math equation-number="6.2.10" mode="display" xml:id="C6.S2.E10">\mathrm{si}\left(z\right)=-\int_{z}^{\infty}\frac{\sin t}{t}\mathrm{d}t= \mathrm{Si}\left(z\right)-\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C6.S2.SS2.p1.s4">
+<Math equation-number="6.2.11" mode="display" xml:id="C6.S2.E11">\mathrm{Ci}(z)=-\int_{z}^{\infty}\frac{\cos t}{t}\mathrm{d}t,</Math> where the path does not cross the negative real axis or pass through theorigin.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="32" xml:id="C6.S2.SS2.p1.s5">
+This is the principal value; compare (LABEL:eq:EX.DF.E1).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="33" xml:id="C6.S2.SS2.p1.s6">
+<Math equation-number="6.2.12" mode="display" xml:id="C6.S2.E12">\mathrm{Cin}\left(z\right)=\int_{0}^{z}\frac{1-\cos t}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="34" xml:id="C6.S2.SS2.p1.s7">
+<Math mode="inline" xml:id="C6.S2.SS2.p1.m2">\mathrm{Cin}\left(z\right)</Math> is an even entire function.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="35" xml:id="C6.S2.SS2.p1.s8">
+<Math equation-number="6.2.13" mode="display" xml:id="C6.S2.E13">\mathrm{Ci}\left(z\right)=-\mathrm{Cin}\left(z\right)+\ln z+\gamma</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C6.S2.Px1">
+<title>Values at Infinity</title>     
+<para xml:id="C6.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C6.S2.Px1.p1.s1">
+ <Math equation-number="6.2.14" mode="display" xml:id="C6.S2.E14">\lim_{x\to\infty}\mathrm{Si}\left(x\right)=\tfrac{1}{2}\pi, \lim_{x\to\infty}\mathrm{Ci}\left(x\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C6.S2.Px2">
+<title>Hyperbolic Analogs of the Sine and Cosine Integrals</title>     
+<para xml:id="C6.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C6.S2.Px2.p1.s1">
+ <Math equation-number="6.2.15" mode="display" xml:id="C6.S2.E15">\mathrm{Shi}\left(z\right)=\int_{0}^{z}\frac{\sinh t}{t}\mathrm{d}t,</Math> , <Math equation-number="6.2.16" mode="display" xml:id="C6.S2.E16">\mathrm{Chi}\left(z\right)=\gamma+\ln z+\int_{0}^{z}\frac{\cosh t-1}{t}\mathrm {d}t</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S2.SS3">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C6.S2.SS3.p1.s1">
+ <Math equation-number="6.2.17" mode="display" xml:id="C6.S2.E17">\mathrm{f}\left(z\right)=\phantom{+}\mathrm{Ci}\left(z\right)\sin z-\mathrm{si }\left(z\right)\cos z,</Math> , <Math equation-number="6.2.18" mode="display" xml:id="C6.S2.E18">\mathrm{g}\left(z\right)=-\mathrm{Ci}\left(z\right)\cos z-\mathrm{si}\left(z \right)\sin z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C6.S2.SS3.p1.s2">
+, <Math equation-number="6.2.19" mode="display" xml:id="C6.S2.E19">\mathrm{Si}\left(z\right)=\tfrac{1}{2}\pi-\mathrm{f}\left(z\right)\cos z- \mathrm{g}\left(z\right)\sin z,</Math> , <Math equation-number="6.2.20" mode="display" xml:id="C6.S2.E20">\mathrm{Ci}\left(z\right)=\mathrm{f}\left(z\right)\sin z-\mathrm{g}\left(z \right)\cos z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C6.S2.SS3.p1.s3">
+<Math equation-number="6.2.21" mode="display" xml:id="C6.S2.E21">\frac{\mathrm{d}\mathrm{f}\left(z\right)}{\mathrm{d}z}=-\mathrm{g}\left(z \right), \frac{\mathrm{d}\mathrm{g}\left(z\right)}{\mathrm{d}z}=\mathrm{f}\left(z\right )-\frac{1}{z}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S3">
+<title>Graphics</title>        
+ 
+<subsection xml:id="C6.S3.SS1">
+<title>Real Variable</title>               
+   
+<sentence sentence-num-in-section="41" xml:id="C6.S3.F1.s1">
+Figure 6.3.1: The exponential integrals <Math mode="inline" xml:id="C6.S3.F1.m4">E_{1}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S3.F1.m5">\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S3.F1.m6">0&amp;lt;x\leq 2</Math> .
+</sentence> 
+       
+   
+<sentence sentence-num-in-section="42" xml:id="C6.S3.F2.s1">
+Figure 6.3.2: The sine and cosine integrals <Math mode="inline" xml:id="C6.S3.F2.m3">\mathrm{Si}\left(x\right),\mathrm{Ci}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S3.F2.m4">0\leq x\leq 15</Math> .
+</sentence>    
+<para xml:id="C6.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C6.S3.SS1.p1.s1">
+For a graph of <Math mode="inline" xml:id="C6.S3.SS1.p1.m1">\mathrm{li}\left(x\right)</Math> see Figure LABEL:fig:EX.GR.E4.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S3.SS2">
+<title>Complex Variable</title>               
+   
+<sentence sentence-num-in-section="44" xml:id="C6.S3.F3.s1">
+Figure 6.3.3: <Math mode="inline" xml:id="C6.S3.F3.m4">|E_{1}\left(x+iy\right)|</Math> , <Math mode="inline" xml:id="C6.S3.F3.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C6.S3.F3.m6">-4\leq y\leq 4</Math> . Principal value. There is a cut along the negative real axis. Also, <Math mode="inline" xml:id="C6.S3.F3.m7">|E_{1}\left(z\right)|\to\infty</Math> logarithmically as <Math mode="inline" xml:id="C6.S3.F3.m8">z\to 0</Math> .
+</sentence>
+   
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S4">
+<title>Analytic Continuation</title>        
+   
+<para xml:id="C6.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C6.S4.p1.s1">
+Analytic continuation of the principal value of <Math mode="inline" xml:id="C6.S4.p1.m1">E_{1}\left(z\right)</Math> yields a multi-valued function with branch points at <Math mode="inline" xml:id="C6.S4.p1.m2">z=0</Math> and <Math mode="inline" xml:id="C6.S4.p1.m3">z=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C6.S4.p1.s2">
+The general value of <Math mode="inline" xml:id="C6.S4.p1.m4">E_{1}\left(z\right)</Math> is given by <Math equation-number="6.4.1" mode="display" xml:id="C6.S4.E1">E_{1}\left(z\right)=\mathrm{Ein}\left(z\right)-\operatorname{Ln}z-\gamma;</Math> compare (LABEL:eq:EX.DF.E4) and (LABEL:eq:EF.LO.GenLog).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="47" xml:id="C6.S4.p1.s3">
+Thus <Math equation-number="6.4.2" mode="display" xml:id="C6.S4.E2">E_{1}\left(ze^{2m\pi i}\right)=E_{1}\left(z\right)-2m\pi i, subject to m\in\mathbb{Z},</Math> and <Math equation-number="6.4.3" mode="display" xml:id="C6.S4.E3">E_{1}\left(ze^{\pm\pi i}\right)=\mathrm{Ein}\left(-z\right)-\ln z-\gamma\mp\pi i, subject to |\operatorname{ph}z|\leq\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C6.S4.p2.s1">
+The general values of the other functions are defined in a similar manner, and <Math equation-number="6.4.4" mode="display" xml:id="C6.S4.E4">\mathrm{Ci}\left(ze^{\pm\pi i}\right)=\pm\pi i+\mathrm{Ci}\left(z\right),</Math> , <Math equation-number="6.4.5" mode="display" xml:id="C6.S4.E5">\mathrm{Chi}\left(ze^{\pm\pi i}\right)=\pm\pi i+\mathrm{Chi}\left(z\right),</Math> , <Math equation-number="6.4.6" mode="display" xml:id="C6.S4.E6">\mathrm{f}\left(ze^{\pm\pi i}\right)=\pi e^{\mp iz}-\mathrm{f}\left(z\right),</Math> , <Math equation-number="6.4.7" mode="display" xml:id="C6.S4.E7">\mathrm{g}\left(ze^{\pm\pi i}\right)=\mp\pi ie^{\mp iz}+\mathrm{g}\left(z \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C6.S4.p3.s1">
+Unless indicated otherwise, in the rest of this chapter and elsewhere in the DLMF the functions <Math mode="inline" xml:id="C6.S4.p3.m1">E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S4.p3.m2">\mathrm{Ci}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S4.p3.m3">\mathrm{Chi}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S4.p3.m4">\mathrm{f}\left(z\right)</Math> , and <Math mode="inline" xml:id="C6.S4.p3.m5">\mathrm{g}\left(z\right)</Math> assume their principal values, that is, the branches that are real on the positive real axis and two-valued on the negative real axis.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S5">
+<title>Further Interrelations</title>        
+     
+<para xml:id="C6.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C6.S5.p1.s1">
+When <Math mode="inline" xml:id="C6.S5.p1.m1">x&gt;0</Math> , <Math equation-number="6.5.1" mode="display" xml:id="C6.S5.E1">E_{1}\left(-x\pm i0\right)=-\mathrm{Ei}\left(x\right)\mp i\pi,</Math> <Math equation-number="6.5.2" mode="display" xml:id="C6.S5.E2">\mathrm{Ei}\left(x\right)=-\tfrac{1}{2}(E_{1}\left(-x+i0\right)+E_{1}\left(-x- i0\right)),</Math> <Math equation-number="6.5.3" mode="display" xml:id="C6.S5.E3">\tfrac{1}{2}(\mathrm{Ei}\left(x\right)+E_{1}\left(x\right))=\mathrm{Shi}\left( x\right)=-i\mathrm{Si}\left(ix\right),</Math> <Math equation-number="6.5.4" mode="display" xml:id="C6.S5.E4">\tfrac{1}{2}(\mathrm{Ei}\left(x\right)-E_{1}\left(x\right))=\mathrm{Chi}\left( x\right)=\mathrm{Ci}\left(ix\right)-\tfrac{1}{2}\pi i</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C6.S5.p2.s1">
+When <Math mode="inline" xml:id="C6.S5.p2.m1">|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> , <Math equation-number="6.5.5" mode="display" xml:id="C6.S5.E5">\mathrm{Si}\left(z\right)=\tfrac{1}{2}i(E_{1}\left(-iz\right)-E_{1}\left(iz \right))+\tfrac{1}{2}\pi,</Math> , <Math equation-number="6.5.6" mode="display" xml:id="C6.S5.E6">\mathrm{Ci}\left(z\right)=-\tfrac{1}{2}(E_{1}\left(iz\right)+E_{1}\left(-iz \right)),</Math> <Math equation-number="6.5.7" mode="display" xml:id="C6.S5.E7">\mathrm{g}\left(z\right)\pm i\mathrm{f}\left(z\right)=E_{1}\left(\mp iz\right) e^{\mp iz}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S6">
+<title>Power Series</title>        
+   
+ 
+<para xml:id="C6.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C6.S6.p1.s1">
+ <Math equation-number="6.6.1" mode="display" xml:id="C6.S6.E1">\mathrm{Ei}\left(x\right)=\gamma+\ln x+\sum_{n=1}^{\infty}\frac{x^{n}}{n! \thinspace n}, subject to x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C6.S6.p1.s2">
+<Math equation-number="6.6.2" mode="display" xml:id="C6.S6.E2">E_{1}\left(z\right)=-\gamma-\ln z-\sum_{n=1}^{\infty}\frac{(-1)^{n}z^{n}}{n! \thinspace n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="54" xml:id="C6.S6.p1.s3">
+<Math equation-number="6.6.3" mode="display" xml:id="C6.S6.E3">E_{1}\left(z\right)=-\ln z+e^{-z}\sum_{n=0}^{\infty}\frac{z^{n}}{n!}\psi\left( n+1\right),</Math> where <Math mode="inline" xml:id="C6.S6.p1.m1">\psi</Math> denotes the logarithmic derivative of the gamma function (§LABEL:sec:GA.Def.GP).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="55" xml:id="C6.S6.p1.s4">
+<Math equation-number="6.6.4" mode="display" xml:id="C6.S6.E4">\mathrm{Ein}\left(z\right)=\sum_{n=1}^{\infty}\frac{(-1)^{n-1}z^{n}}{n! \thinspace n},</Math> <Math equation-number="6.6.5" mode="display" xml:id="C6.S6.E5">\mathrm{Si}\left(z\right)=\sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n+1}}{(2n+1)!(2 n+1)},</Math> <Math equation-number="6.6.6" mode="display" xml:id="C6.S6.E6">\mathrm{Ci}\left(z\right)=\gamma+\ln z+\sum_{n=1}^{\infty}\frac{(-1)^{n}z^{2n} }{(2n)!(2n)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="56" xml:id="C6.S6.p1.s5">
+The series in this section converge for all finite values of <Math mode="inline" xml:id="C6.S6.p1.m2">x</Math> and <Math mode="inline" xml:id="C6.S6.p1.m3">|z|</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S7">
+<title>Integral Representations</title>        
+  
+<subsection xml:id="C6.S7.SS1">
+<title>Exponential Integrals</title>        
+ 
+<para xml:id="C6.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C6.S7.SS1.p1.s1">
+ <Math equation-number="6.7.1" mode="display" xml:id="C6.S7.E1">\int_{0}^{\infty}\frac{e^{-at}}{t+b}\mathrm{d}t=\int_{0}^{\infty}\frac{e^{iat} }{t+ib}\mathrm{d}t=e^{ab}E_{1}\left(ab\right), subject to a&gt;0, b&gt;0,</Math> <Math equation-number="6.7.2" mode="display" xml:id="C6.S7.E2">e^{x}\int_{0}^{\alpha}\frac{e^{-xt}}{1-t}\mathrm{d}t=\mathrm{Ei}\left(x\right) -\mathrm{Ei}\left((1-\alpha)x\right), subject to 0\leq\alpha&lt;1, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C6.S7.SS1.p1.s2">
+<Math equation-number="6.7.3" mode="display" xml:id="C6.S7.E3">\int_{x}^{\infty}\frac{e^{it}}{a^{2}+t^{2}}\mathrm{d}t=\frac{i}{2a}\left(e^{a} E_{1}\left(a-ix\right)-e^{-a}E_{1}\left(-a-ix\right)\right), subject to a&gt;0, x&gt;0,</Math> <Math equation-number="6.7.4" mode="display" xml:id="C6.S7.E4">\int_{x}^{\infty}\frac{te^{it}}{a^{2}+t^{2}}\mathrm{d}t=\tfrac{1}{2}\left(e^{a }E_{1}\left(a-ix\right)+e^{-a}E_{1}\left(-a-ix\right)\right), subject to a&gt;0, x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C6.S7.SS1.p1.s3">
+<Math equation-number="6.7.5" mode="display" xml:id="C6.S7.E5">\int_{x}^{\infty}\frac{e^{-t}}{a^{2}+t^{2}}\mathrm{d}t=-\frac{1}{2ai}\left(e^{ ia}E_{1}\left(x+ia\right)-e^{-ia}E_{1}\left(x-ia\right)\right), subject to a&gt;0, x\in\mathbb{R},</Math> <Math equation-number="6.7.6" mode="display" xml:id="C6.S7.E6">\int_{x}^{\infty}\frac{te^{-t}}{a^{2}+t^{2}}\mathrm{d}t=\tfrac{1}{2}\left(e^{ ia}E_{1}\left(x+ia\right)+e^{-ia}E_{1}\left(x-ia\right)\right), subject to a&gt;0, x\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="60" xml:id="C6.S7.SS1.p1.s4">
+<Math equation-number="6.7.7" mode="display" xml:id="C6.S7.E7">\int_{0}^{1}\frac{e^{-at}\sin\left(bt\right)}{t}\mathrm{d}t=\Im\mathrm{Ein} \left(a+ib\right), subject to a,b\in\mathbb{R},</Math> <Math equation-number="6.7.8" mode="display" xml:id="C6.S7.E8">\int_{0}^{1}\frac{e^{-at}(1-\cos\left(bt\right))}{t}\mathrm{d}t=\Re\mathrm{Ein }\left(a+ib\right)-\mathrm{Ein}\left(a\right), subject to a,b\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C6.S7.SS1.p2.s1">
+Many integrals with exponentials and rational functions, for example, integrals of the type <Math mode="inline" xml:id="C6.S7.SS1.p2.m1">\int e^{z}R(z)\mathrm{d}z</Math> , where <Math mode="inline" xml:id="C6.S7.SS1.p2.m2">R(z)</Math> is an arbitrary rationalfunction, can be represented in finite form in terms of the function <Math mode="inline" xml:id="C6.S7.SS1.p2.m3">E_{1}\left(z\right)</Math> and elementary functions; see ( , p. 42) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS2">
+<title>Sine and Cosine Integrals</title>        
+   
+<para xml:id="C6.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C6.S7.SS2.p1.s1">
+When <Math mode="inline" xml:id="C6.S7.SS2.p1.m1">z\in\mathbb{C}</Math> <Math equation-number="6.7.9" mode="display" xml:id="C6.S7.E9">\mathrm{si}\left(z\right)=-\int_{0}^{\pi/2}e^{-z\cos t}\cos\left(z\sin t\right )\mathrm{d}t,</Math> <Math equation-number="6.7.10" mode="display" xml:id="C6.S7.E10">\mathrm{Ein}\left(z\right)-\mathrm{Cin}\left(z\right)=\int_{0}^{\pi/2}e^{-z \cos t}\sin\left(z\sin t\right)\mathrm{d}t,</Math> <Math equation-number="6.7.11" mode="display" xml:id="C6.S7.E11">\int_{0}^{1}\frac{(1-e^{-at})\cos\left(bt\right)}{t}\mathrm{d}t=\Re\mathrm{Ein }\left(a+ib\right)-\mathrm{Cin}\left(b\right), subject to a,b\in\mathbb{R}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS3">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C6.S7.SS3.p1.s1">
+ <Math equation-number="6.7.12" mode="display" xml:id="C6.S7.E12">\mathrm{g}\left(z\right)+i\mathrm{f}\left(z\right)=e^{-iz}\int_{z}^{\infty} \frac{e^{it}}{t}\mathrm{d}t, subject to |\operatorname{ph}z|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C6.S7.SS3.p1.s2">
+The path of integration does not cross the negative real axis or pass through the origin.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C6.S7.SS3.p1.s3">
+<Math equation-number="6.7.13" mode="display" xml:id="C6.S7.E13">\mathrm{f}\left(z\right)=\int_{0}^{\infty}\frac{\sin t}{t+z}\mathrm{d}t=\int_{ 0}^{\infty}\frac{e^{-zt}}{t^{2}+1}\mathrm{d}t,</Math> , <Math equation-number="6.7.14" mode="display" xml:id="C6.S7.E14">\mathrm{g}\left(z\right)=\int_{0}^{\infty}\frac{\cos t}{t+z}\mathrm{d}t=\int_{ 0}^{\infty}\frac{te^{-zt}}{t^{2}+1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="66" xml:id="C6.S7.SS3.p1.s4">
+The first integrals on the right-hand sides apply when <Math mode="inline" xml:id="C6.S7.SS3.p1.m1">|\operatorname{ph}z|&lt;\pi</Math> ; the second ones when <Math mode="inline" xml:id="C6.S7.SS3.p1.m2">\Re z\geq 0</Math> and (in the case of (LABEL:eq:EX.IR.I14)) <Math mode="inline" xml:id="C6.S7.SS3.p1.m3">z\neq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C6.S7.SS3.p2.s1">
+When <Math mode="inline" xml:id="C6.S7.SS3.p2.m1">|\operatorname{ph}z|&lt;\pi</Math> <Math equation-number="6.7.15" mode="display" xml:id="C6.S7.E15">\mathrm{f}\left(z\right)=2\int_{0}^{\infty}K_{0}\left(2\sqrt{zt}\right)\cos t \mathrm{d}t,</Math> , <Math equation-number="6.7.16" mode="display" xml:id="C6.S7.E16">\mathrm{g}\left(z\right)=2\int_{0}^{\infty}K_{0}\left(2\sqrt{zt}\right)\sin t \mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="68" xml:id="C6.S7.SS3.p2.s2">
+For <Math mode="inline" xml:id="C6.S7.SS3.p2.m2">K_{0}</Math> see §LABEL:sec:BS.MDEF.SS.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S7.SS4">
+<title>Compendia</title>        
+ 
+<para xml:id="C6.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C6.S7.SS4.p1.s1">
+For collections of integral representations see ( , pp. 56–59, 72–73, 82–84, 121, 133–136, 155, 179–181, 223, 225–227, 230, 259–260, 374, 377, 397–398, 408, 416, 424, 431, 438–439, 442–444, 488, 496–500, 567–571, 585, 602, 638, 675–677) , ( ) , ( , vol. 1, pp. 267–270) , ( ) , ( ) , ( , pp. 244–246) , ( , pp. 364–371) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S8">
+<title>Inequalities</title>        
+  
+<para xml:id="C6.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C6.S8.p1.s1">
+In this section <Math mode="inline" xml:id="C6.S8.p1.m1">x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C6.S8.p1.s2">
+<Math equation-number="6.8.1" mode="display" xml:id="C6.S8.E1">\frac{1}{2}\ln\left(1+\frac{2}{x}\right)&lt;e^{x}E_{1}\left(x\right)&lt;\ln\left(1+ \frac{1}{x}\right),</Math> <Math equation-number="6.8.2" mode="display" xml:id="C6.S8.E2">\frac{x}{x+1}&lt;xe^{x}E_{1}\left(x\right)&lt;\frac{x+1}{x+2},</Math> <Math equation-number="6.8.3" mode="display" xml:id="C6.S8.E3">\frac{x(x+3)}{x^{2}+4x+2}&lt;xe^{x}E_{1}\left(x\right)&lt;\frac{x^{2}+5x+2}{x^{2}+6x +6}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S9">
+<title>Continued Fraction</title>        
+ 
+ 
+<para xml:id="C6.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C6.S9.p1.s1">
+ <Math equation-number="6.9.1" mode="display" xml:id="C6.S9.E1">E_{1}\left(z\right)=\cfrac{e^{-z}}{z+\cfrac{1}{1+\cfrac{1}{z+\cfrac{2}{1+ \cfrac{2}{z+\cfrac{3}{1+\cfrac{3}{z+}}}}}}}\cdots, subject to |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C6.S9.p2.s1">
+See also ( , pp. 287–290) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S10">
+<title>Other Series Expansions</title>         
+<subsection xml:id="C6.S10.SS1">
+<title>Inverse Factorial Series</title>        
+  
+<para xml:id="C6.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C6.S10.SS1.p1.s1">
+ <Math equation-number="6.10.1" mode="display" xml:id="C6.S10.E1">E_{1}\left(z\right)=e^{-z}\left(\frac{c_{0}}{z}+\frac{c_{1}}{z(z+1)}+\frac{2!c _{2}}{z(z+1)(z+2)}+\frac{3!c_{3}}{z(z+1)(z+2)(z+3)}+\cdots\right), subject to \Re z&gt;0,</Math> where <Math equation-number="6.10.2" mode="display" xml:id="C6.S10.E2">c_{0}=1, c_{1}=-1, c_{2}=\tfrac{1}{2}, c_{3}=-\tfrac{1}{3}, c_{4}=\tfrac{1}{6},</Math> and <Math equation-number="6.10.3" mode="display" xml:id="C6.S10.E3">c_{k}=-\sum_{j=0}^{k-1}\frac{c_{j}}{k-j}, subject to k\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C6.S10.SS1.p2.s1">
+For a more general result (incomplete gamma function), and also for a result for the logarithmic integral, see ( , p. 283: Formula (3) is incorrect) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S10.SS2">
+<title>Expansions in Series of Spherical Bessel Functions</title>            
+<para xml:id="C6.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C6.S10.SS2.p1.s1">
+For the notation see §LABEL:sec:BS.DBP.SS. <Math equation-number="6.10.4" mode="display" xml:id="C6.S10.E4">\mathrm{Si}\left(z\right)=z\sum_{n=0}^{\infty}\left(\mathsf{j}_{n}\left(\tfrac {1}{2}z\right)\right)^{2},</Math> , <Math equation-number="6.10.5" mode="display" xml:id="C6.S10.E5">\mathrm{Cin}\left(z\right)=\sum_{n=1}^{\infty}a_{n}\left(\mathsf{j}_{n}\left( \tfrac{1}{2}z\right)\right)^{2},</Math> <Math equation-number="6.10.6" mode="display" xml:id="C6.S10.E6">\mathrm{Ei}\left(x\right)=\gamma+\ln\left|x\right|+\sum_{n=0}^{\infty}(-1)^{n} (x-a_{n})\left({\mathsf{i}^{(1)}_{n}}\left(\tfrac{1}{2}x\right)\right)^{2}, subject to x\neq 0,</Math> where <Math equation-number="6.10.7" mode="display" xml:id="C6.S10.E7">a_{n}=(2n+1)\left(1-(-1)^{n}+\psi\left(n+1\right)-\psi\left(1\right)\right),</Math> and <Math mode="inline" xml:id="C6.S10.SS2.p1.m1">\psi</Math> denotes the logarithmic derivative of the gamma function (§LABEL:sec:GA.Def.GP).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C6.S10.SS2.p1.s2">
+<Math equation-number="6.10.8" mode="display" xml:id="C6.S10.E8">\mathrm{Ein}\left(z\right)=ze^{-z/2}\left({\mathsf{i}^{(1)}_{0}}\left(\tfrac{1 }{2}z\right)+\sum_{n=1}^{\infty}\dfrac{2n+1}{n(n+1)}{\mathsf{i}^{(1)}_{n}} \left(\tfrac{1}{2}z\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C6.S10.SS2.p2.s1">
+For (LABEL:eq:EX.FS.SBF1)–(LABEL:eq:EX.FS.SBF4) and further results see ( ) and ( , pp. 56–57) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="79" xml:id="C6.S10.SS2.p2.s2">
+An expansion for <Math mode="inline" xml:id="C6.S10.SS2.p2.m1">E_{1}\left(z\right)</Math> can be obtained by combining (LABEL:eq:EX.DF.E4) and (LABEL:eq:EX.FS.SBF4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S11">
+<title>Relations to Other Functions</title>        
+ 
+<para xml:id="C6.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C6.S11.p1.s1">
+For the notation see §§LABEL:sec:IG.PV and LABEL:sec:CH.MU.DE.KU.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C6.S11.Px1">
+<title>Incomplete Gamma Function</title>     
+<para xml:id="C6.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C6.S11.Px1.p1.s1">
+ <Math equation-number="6.11.1" mode="display" xml:id="C6.S11.E1">E_{1}\left(z\right)=\Gamma\left(0,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C6.S11.Px2">
+<title>Confluent Hypergeometric Function</title>     
+<para xml:id="C6.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C6.S11.Px2.p1.s1">
+ <Math equation-number="6.11.2" mode="display" xml:id="C6.S11.E2">E_{1}\left(z\right)=e^{-z}U\left(1,1,z\right),</Math> <Math equation-number="6.11.3" mode="display" xml:id="C6.S11.E3">\mathrm{g}\left(z\right)+i\mathrm{f}\left(z\right)=U\left(1,1,-iz\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C6.S12">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C6.S12.SS1">
+<title>Exponential and Logarithmic Integrals</title>        
+ 
+ 
+<para xml:id="C6.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C6.S12.SS1.p1.s1">
+ <Math equation-number="6.12.1" mode="display" xml:id="C6.S12.E1">E_{1}\left(z\right)\sim\frac{e^{-z}}{z}\left(1-\frac{1!}{z}+\frac{2!}{z^{2}}- \frac{3!}{z^{3}}+\cdots\right), subject to z\to\infty, |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta(&lt;\tfrac{3}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="84" xml:id="C6.S12.SS1.p1.s2">
+When <Math mode="inline" xml:id="C6.S12.SS1.p1.m1">|\operatorname{ph}z|\leq\frac{1}{2}\pi</Math> the remainder is bounded in magnitude by the first neglected term, and has the same sign when <Math mode="inline" xml:id="C6.S12.SS1.p1.m2">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="85" xml:id="C6.S12.SS1.p1.s3">
+When <Math mode="inline" xml:id="C6.S12.SS1.p1.m3">\frac{1}{2}\pi\leq|\operatorname{ph}z|&lt;\pi</Math> the remainder term is bounded in magnitude by <Math mode="inline" xml:id="C6.S12.SS1.p1.m4">\csc\left(|\operatorname{ph}z|\right)</Math> times the first neglected term.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="86" xml:id="C6.S12.SS1.p1.s4">
+For these and other error bounds see ( , pp. 109–112) with <Math mode="inline" xml:id="C6.S12.SS1.p1.m5">\alpha=0</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C6.S12.SS1.p2.s1">
+For re-expansions of the remainder term leading to larger sectors of validity, exponential improvement, and a smooth interpretation of the Stokes phenomenon, see §§LABEL:sec:AS.RTSP.CF–LABEL:sec:AS.RTSP.SP, with <Math mode="inline" xml:id="C6.S12.SS1.p2.m1">p=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C6.S12.SS1.p2.s2">
+<Math equation-number="6.12.2" mode="display" xml:id="C6.S12.E2">\mathrm{Ei}\left(x\right)\sim\frac{e^{x}}{x}\left(1+\frac{1!}{x}+\frac{2!}{x^{ 2}}+\frac{3!}{x^{3}}+\cdots\right), subject to x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="89" xml:id="C6.S12.SS1.p2.s3">
+If the expansion is terminated at the <Math mode="inline" xml:id="C6.S12.SS1.p2.m2">n</Math> th term, then the remainder term is bounded by <Math mode="inline" xml:id="C6.S12.SS1.p2.m3">1+\chi(n+1)</Math> times the next term.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="90" xml:id="C6.S12.SS1.p2.s4">
+For the function <Math mode="inline" xml:id="C6.S12.SS1.p2.m4">\chi</Math> see §LABEL:sec:AI.AS.NO.
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C6.S12.SS1.p3.s1">
+The asymptotic expansion of <Math mode="inline" xml:id="C6.S12.SS1.p3.m1">\mathrm{li}\left(x\right)</Math> as <Math mode="inline" xml:id="C6.S12.SS1.p3.m2">x\to\infty</Math> is obtainable from (LABEL:eq:EX.DF.E8) and (LABEL:eq:EX.AE.A2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S12.SS2">
+<title>Sine and Cosine Integrals</title>        
+  
+<para xml:id="C6.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C6.S12.SS2.p1.s1">
+The asymptotic expansions of <Math mode="inline" xml:id="C6.S12.SS2.p1.m1">\mathrm{Si}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S12.SS2.p1.m2">\mathrm{Ci}\left(z\right)</Math> are given by (LABEL:eq:EX.DF.SZ), (LABEL:eq:EX.DF.CZ), together with <Math equation-number="6.12.3" mode="display" xml:id="C6.S12.E3">\mathrm{f}\left(z\right)\sim\frac{1}{z}\left(1-\frac{2!}{z^{2}}+\frac{4!}{z^{4 }}-\frac{6!}{z^{6}}+\cdots\right)</Math> , <Math equation-number="6.12.4" mode="display" xml:id="C6.S12.E4">\mathrm{g}\left(z\right)\sim\frac{1}{z^{2}}\left(1-\frac{3!}{z^{2}}+\frac{5!}{ z^{4}}-\frac{7!}{z^{6}}+\cdots\right)</Math> , as <Math mode="inline" xml:id="C6.S12.SS2.p1.m3">z\to\infty</Math> in <Math mode="inline" xml:id="C6.S12.SS2.p1.m4">|\operatorname{ph}z|\leq\pi-\delta\thinspace(&lt;\pi)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C6.S12.SS2.p2.s1">
+The remainder terms are given by <Math equation-number="6.12.5" mode="display" xml:id="C6.S12.E5">\mathrm{f}\left(z\right)=\frac{1}{z}\sum_{m=0}^{n-1}(-1)^{m}\frac{(2m)!}{z^{2m }}+R_{n}^{(\mathrm{f})}(z),</Math> , <Math equation-number="6.12.6" mode="display" xml:id="C6.S12.E6">\mathrm{g}\left(z\right)=\frac{1}{z^{2}}\sum_{m=0}^{n-1}(-1)^{m}\frac{(2m+1)!} {z^{2m}}+R_{n}^{(\mathrm{g})}(z),</Math> where, for <Math mode="inline" xml:id="C6.S12.SS2.p2.m1">n=0,1,2,\dots</Math> , <Math equation-number="6.12.7" mode="display" xml:id="C6.S12.E7">R_{n}^{(\mathrm{f})}(z)=(-1)^{n}\int_{0}^{\infty}\frac{e^{-zt}t^{2n}}{t^{2}+1} \mathrm{d}t,</Math> , <Math equation-number="6.12.8" mode="display" xml:id="C6.S12.E8">R_{n}^{(\mathrm{g})}(z)=(-1)^{n}\int_{0}^{\infty}\frac{e^{-zt}t^{2n+1}}{t^{2}+ 1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C6.S12.SS2.p2.s2">
+When <Math mode="inline" xml:id="C6.S12.SS2.p2.m2">|\operatorname{ph}z|\leq\tfrac{1}{4}\pi</Math> , these remainders are bounded in magnitude by the first neglected terms in (LABEL:eq:EX.AE.A3) and (LABEL:eq:EX.AE.A4), respectively, and have the same signs as these terms when <Math mode="inline" xml:id="C6.S12.SS2.p2.m3">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="95" xml:id="C6.S12.SS2.p2.s3">
+When <Math mode="inline" xml:id="C6.S12.SS2.p2.m4">\frac{1}{4}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> the remainders are bounded in magnitude by <Math mode="inline" xml:id="C6.S12.SS2.p2.m5">\csc\left(2|\operatorname{ph}z|\right)</Math> times the first neglected terms.
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C6.S12.SS2.p3.s1">
+For other phase ranges use (LABEL:eq:EX.AC.A6) and (LABEL:eq:EX.AC.A7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C6.S12.SS2.p3.s2">
+For exponentially-improved asymptotic expansions, use (LABEL:eq:EX.FI.I5), (LABEL:eq:EX.FI.I6), and §LABEL:sec:EX.AE.EI.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S13">
+<title>Zeros</title>        
+  
+<para xml:id="C6.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C6.S13.p1.s1">
+The function <Math mode="inline" xml:id="C6.S13.p1.m1">\mathrm{Ei}\left(x\right)</Math> has one real zero <Math mode="inline" xml:id="C6.S13.p1.m2">x_{0}</Math> , given by <Math equation-number="6.13.1" mode="display" xml:id="C6.S13.E1">x_{0}=0.37250\;74107\;81366\;63446\;19918\;66580\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C6.S13.p1.s2">
+<Math mode="inline" xml:id="C6.S13.p1.m3">\mathrm{Ci}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S13.p1.m4">\mathrm{si}\left(x\right)</Math> each have an infinite number of positive real zeros, which are denoted by <Math mode="inline" xml:id="C6.S13.p1.m5">c_{k}</Math> , <Math mode="inline" xml:id="C6.S13.p1.m6">s_{k}</Math> , respectively, arranged in ascending order of absolute value for <Math mode="inline" xml:id="C6.S13.p1.m7">k=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="100" xml:id="C6.S13.p1.s3">
+Values of <Math mode="inline" xml:id="C6.S13.p1.m8">c_{1}</Math> and <Math mode="inline" xml:id="C6.S13.p1.m9">c_{2}</Math> to30D are given by ( ) .
+</sentence>
+
+</para>
+   
+<para xml:id="C6.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C6.S13.p2.s1">
+As <Math mode="inline" xml:id="C6.S13.p2.m1">k\to\infty</Math> , <Math equation-number="6.13.2" mode="display" xml:id="C6.S13.E2">c_{k},s_{k}\sim\alpha+\frac{1}{\alpha}-\frac{16}{3}\frac{1}{\alpha^{3}}+\frac{ 1673}{15}\frac{1}{\alpha^{5}}-\frac{5\;07746}{105}\frac{1}{\alpha^{7}}+\cdots,</Math> where <Math mode="inline" xml:id="C6.S13.p2.m2">\alpha=k\pi</Math> for <Math mode="inline" xml:id="C6.S13.p2.m3">c_{k}</Math> , and <Math mode="inline" xml:id="C6.S13.p2.m4">\alpha=(k+\frac{1}{2})\pi</Math> for <Math mode="inline" xml:id="C6.S13.p2.m5">s_{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C6.S13.p2.s2">
+For these results, together with the next three terms in (LABEL:eq:EX.SC.Z1), see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="103" xml:id="C6.S13.p2.s3">
+See also ( , pp. 176–177) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C6.S14">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C6.S14.SS1">
+<title>Laplace Transforms</title>        
+       
+<para xml:id="C6.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C6.S14.SS1.p1.s1">
+ <Math equation-number="6.14.1" mode="display" xml:id="C6.S14.E1">\int_{0}^{\infty}e^{-at}E_{1}\left(t\right)\mathrm{d}t=\frac{1}{a}\ln\left(1+a \right), subject to \Re a&gt;-1,</Math> <Math equation-number="6.14.2" mode="display" xml:id="C6.S14.E2">\int_{0}^{\infty}e^{-at}\mathrm{Ci}\left(t\right)\mathrm{d}t=-\frac{1}{2a}\ln \left(1+a^{2}\right), subject to \Re a&gt;0,</Math> <Math equation-number="6.14.3" mode="display" xml:id="C6.S14.E3">\int_{0}^{\infty}e^{-at}\mathrm{si}\left(t\right)\mathrm{d}t=-\frac{1}{a} \operatorname{arctan}a, subject to \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S14.SS2">
+<title>Other Integrals</title>        
+   
+ 
+<para xml:id="C6.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C6.S14.SS2.p1.s1">
+ <Math equation-number="6.14.4" mode="display" xml:id="C6.S14.E4">\int_{0}^{\infty}{E_{1}^{2}}\left(t\right)\mathrm{d}t=2\ln 2,</Math> <Math equation-number="6.14.5" mode="display" xml:id="C6.S14.E5">\int_{0}^{\infty}\cos t\mathrm{Ci}\left(t\right)\mathrm{d}t=\int_{0}^{\infty} \sin t\mathrm{si}\left(t\right)\mathrm{d}t=-\tfrac{1}{4}\pi,</Math> <Math equation-number="6.14.6" mode="display" xml:id="C6.S14.E6">\int_{0}^{\infty}{\mathrm{Ci}^{2}}\left(t\right)\mathrm{d}t=\int_{0}^{\infty}{ \mathrm{si}^{2}}\left(t\right)\mathrm{d}t=\tfrac{1}{2}\pi,</Math> <Math equation-number="6.14.7" mode="display" xml:id="C6.S14.E7">\int_{0}^{\infty}\mathrm{Ci}\left(t\right)\mathrm{si}\left(t\right)\mathrm{d}t =\ln 2.</Math>
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S14.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C6.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C6.S14.SS3.p1.s1">
+For collections of integrals, see ( , pp. 110–123) , ( , pp. 373–374, 409, 479, 571–572, 637, 664–673, 680–682, 685–697) , ( , vol. 1, pp. 40–42, 96–98, 177–178, 325) , ( ) , ( , §§5.2–5.3 and 6.2–6.27), ( , pp. 182–184) , ( ) , ( , pp. 139–141) , ( , pp. 53–55 and 158–160) , ( , pp. 172–179) , ( , vol. 2, pp. 24–29 and 64–92) , ( , §§3.4–3.6), ( , §§3.4–3.6), and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S15">
+<title>Sums</title>        
+  
+ 
+<para xml:id="C6.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C6.S15.p1.s1">
+ <Math equation-number="6.15.1" mode="display" xml:id="C6.S15.E1">\sum_{n=1}^{\infty}\mathrm{Ci}\left(\pi n\right)=\tfrac{1}{2}(\ln 2-\gamma),</Math> , <Math equation-number="6.15.2" mode="display" xml:id="C6.S15.E2">\sum_{n=1}^{\infty}\frac{\mathrm{si}\left(\pi n\right)}{n}=\tfrac{1}{2}\pi(\ln \pi-1),</Math> <Math equation-number="6.15.3" mode="display" xml:id="C6.S15.E3">\sum_{n=1}^{\infty}(-1)^{n}\mathrm{Ci}\left(2\pi n\right)=1-\ln 2-\tfrac{1}{2}\gamma,</Math> , <Math equation-number="6.15.4" mode="display" xml:id="C6.S15.E4">\sum_{n=1}^{\infty}(-1)^{n}\frac{\mathrm{si}\left(2\pi n\right)}{n}=\pi(\tfrac {3}{2}\ln 2-1)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C6.S15.p2.s1">
+For further sums see ( ) , ( , pp. 423–424) , ( ) , ( , vol. 2, pp. 649–650) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C6.S16">
+<title>Mathematical Applications</title>        
+ 
+<subsection xml:id="C6.S16.SS1">
+<title>The Gibbs Phenomenon</title>        
+   
+<para xml:id="C6.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C6.S16.SS1.p1.s1">
+Consider the Fourier series <Math equation-number="6.16.1" mode="display" xml:id="C6.S16.E1">\sin x+\tfrac{1}{3}\sin\left(3x\right)+\tfrac{1}{5}\sin\left(5x\right)+\dots= \begin{cases}\frac{1}{4}\pi,&amp;0&lt;x&lt;\pi,\\ 0,&amp;x=0,\\ -\frac{1}{4}\pi,&amp;-\pi&lt;x&lt;0.\end{cases</Math> } The <Math mode="inline" xml:id="C6.S16.SS1.p1.m1">n</Math> th partial sum is given by <Math equation-number="6.16.2" mode="display" xml:id="C6.S16.E2">S_{n}(x)=\sum_{k=0}^{n-1}\frac{\sin\left((2k+1)x\right)}{2k+1}=\frac{1}{2}\int _{0}^{x}\frac{\sin\left(2nt\right)}{\sin t}\mathrm{d}t=\tfrac{1}{2}\mathrm{Si} \left(2nx\right)+R_{n}(x),</Math> where <Math equation-number="6.16.3" mode="display" xml:id="C6.S16.E3">R_{n}(x)=\frac{1}{2}\int_{0}^{x}\left(\frac{1}{\sin t}-\frac{1}{t}\right)\sin \left(2nt\right)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C6.S16.SS1.p1.s2">
+By integration by parts <Math equation-number="6.16.4" mode="display" xml:id="C6.S16.E4">R_{n}(x)=O\left(n^{-1}\right), subject to n\to\infty,</Math> uniformly for <Math mode="inline" xml:id="C6.S16.SS1.p1.m2">x\in[-\pi,\pi]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C6.S16.SS1.p1.s3">
+Hence, if <Math mode="inline" xml:id="C6.S16.SS1.p1.m3">x</Math> is fixed and <Math mode="inline" xml:id="C6.S16.SS1.p1.m4">n\to\infty</Math> , then <Math mode="inline" xml:id="C6.S16.SS1.p1.m5">S_{n}(x)\to\frac{1}{4}\pi</Math> , <Math mode="inline" xml:id="C6.S16.SS1.p1.m6">0</Math> , or <Math mode="inline" xml:id="C6.S16.SS1.p1.m7">-\frac{1}{4}\pi</Math> according as <Math mode="inline" xml:id="C6.S16.SS1.p1.m8">0&lt;x&lt;\pi</Math> , <Math mode="inline" xml:id="C6.S16.SS1.p1.m9">x=0</Math> , or <Math mode="inline" xml:id="C6.S16.SS1.p1.m10">-\pi&lt;x&lt;0</Math> ; compare (LABEL:eq:EX.DF.S6).
+</sentence>
+
+</para>
+  
+<para xml:id="C6.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C6.S16.SS1.p2.s1">
+These limits are not approached uniformly, however.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="113" xml:id="C6.S16.SS1.p2.s2">
+The first maximum of <Math mode="inline" xml:id="C6.S16.SS1.p2.m1">\frac{1}{2}\mathrm{Si}\left(x\right)</Math> for positive <Math mode="inline" xml:id="C6.S16.SS1.p2.m2">x</Math> occurs at <Math mode="inline" xml:id="C6.S16.SS1.p2.m3">x=\pi</Math> and equals <Math mode="inline" xml:id="C6.S16.SS1.p2.m4">(1.1789\dots)\times\frac{1}{4}\p</Math> i; compare Figure LABEL:fig:EX.GR.E2.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="114" xml:id="C6.S16.SS1.p2.s3">
+Hence if <Math mode="inline" xml:id="C6.S16.SS1.p2.m5">x=\pi/(2n)</Math> and <Math mode="inline" xml:id="C6.S16.SS1.p2.m6">n\to\infty</Math> , then the limiting value of <Math mode="inline" xml:id="C6.S16.SS1.p2.m7">S_{n}(x)</Math> overshoots <Math mode="inline" xml:id="C6.S16.SS1.p2.m8">\frac{1}{4}\pi</Math> by approximately 18 <Math mode="inline" xml:id="C6.S16.SS1.p2.m9">x=\pi/n</Math> , then the limiting value of <Math mode="inline" xml:id="C6.S16.SS1.p2.m10">S_{n}(x)</Math> undershoots <Math mode="inline" xml:id="C6.S16.SS1.p2.m11">\frac{1}{4}\pi</Math> byapproximately 10LABEL:fig:EX.GR.E3.
+</sentence>
+
+</para>
+  
+<para xml:id="C6.S16.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C6.S16.SS1.p3.s1">
+This nonuniformity of convergence is an illustration of the Gibbs phenomenon.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C6.S16.SS1.p3.s2">
+It occurs with Fourier-series expansions of all piecewise continuous functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="117" xml:id="C6.S16.SS1.p3.s3">
+See ( ) for additional graphs and information.
+</sentence>
+
+</para>
+       
+   
+<sentence sentence-num-in-section="118" xml:id="C6.S16.F1.s1">
+Figure 6.16.1: Graph of <Math mode="inline" xml:id="C6.S16.F1.m1">S_{n}(x)</Math> , <Math mode="inline" xml:id="C6.S16.F1.m2">n=250</Math> , <Math mode="inline" xml:id="C6.S16.F1.m3">-0.1\leq x\leq 0.1</Math> , illustrating the Gibbs phenomenon.
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C6.S16.SS2">
+<title>Number-Theoretic Significance of <Math content-tex="\logint@{x}" mode="inline" xml:id="C6.S16.SS2.m1">\mathrm{li}\left(x\right)</Math></title>        
+ 
+ 
+<para xml:id="C6.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C6.S16.SS2.p1.s1">
+If we assume Riemann’s hypothesis that all nonreal zeros of <Math mode="inline" xml:id="C6.S16.SS2.p1.m1">\zeta\left(s\right)</Math> have real part of <Math mode="inline" xml:id="C6.S16.SS2.p1.m2">\tfrac{1}{2}</Math> (§LABEL:sec:ZE.ZERO.DIST), then <Math equation-number="6.16.5" mode="display" xml:id="C6.S16.E5">\mathrm{li}\left(x\right)-\pi(x)=O\left(\sqrt{x}\ln x\right), subject to x\to\infty,</Math> where <Math mode="inline" xml:id="C6.S16.SS2.p1.m3">\pi(x)</Math> is the number of primes less than or equal to <Math mode="inline" xml:id="C6.S16.SS2.p1.m4">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="120" xml:id="C6.S16.SS2.p1.s2">
+Compare §LABEL:sec:NT.PF and Figure LABEL:fig:EX.GR.E4.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="121" xml:id="C6.S16.SS2.p1.s3">
+See also ( ) .
+</sentence>
+
+</para>
+       
+   
+<sentence sentence-num-in-section="122" xml:id="C6.S16.F2.s1">
+Figure 6.16.2: The logarithmic integral <Math mode="inline" xml:id="C6.S16.F2.m4">\mathrm{li}\left(x\right)</Math> , together with vertical bars indicating the value of <Math mode="inline" xml:id="C6.S16.F2.m5">\pi(x)</Math> for <Math mode="inline" xml:id="C6.S16.F2.m6">x=10,20,\dots,1000</Math> .
+</sentence>  
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S17">
+<title>Physical Applications</title>        
+     
+<para xml:id="C6.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C6.S17.p1.s1">
+( ) cites work with applications from diffusion theory, transport problems, the study of the radiative equilibrium of stellar atmospheres, and the evaluation of exchange integrals occurring in quantum mechanics.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C6.S17.p1.s2">
+For applications in astrophysics, see also ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="125" xml:id="C6.S17.p1.s3">
+( ) gives an application to electromagnetic theory (radiation of a linear half-wave oscillator), in which sine and cosine integrals are used.
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C6.S18">
+<title>Methods of Computation</title>        
+   
+ 
+<subsection xml:id="C6.S18.SS1">
+<title>Main Functions</title>        
+ 
+<para xml:id="C6.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C6.S18.SS1.p1.s1">
+For small or moderate values of <Math mode="inline" xml:id="C6.S18.SS1.p1.m1">x</Math> and <Math mode="inline" xml:id="C6.S18.SS1.p1.m2">|z|</Math> , the expansion in power series (§LABEL:sec:EX.MS) or in series of spherical Bessel functions (§LABEL:sec:EX.FS.SBF) can be used. For large <Math mode="inline" xml:id="C6.S18.SS1.p1.m3">x</Math> or <Math mode="inline" xml:id="C6.S18.SS1.p1.m4">|z|</Math> these series suffer from slow convergence or cancellation (or both).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="127" xml:id="C6.S18.SS1.p1.s2">
+However, this problem is less severe for the series of spherical Bessel functions because of their more rapid rate of convergence, and also (except in the case of (LABEL:eq:EX.FS.SBF3)) absence of cancellation when <Math mode="inline" xml:id="C6.S18.SS1.p1.m5">z=x</Math> ( <Math mode="inline" xml:id="C6.S18.SS1.p1.m6">&gt;0</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C6.S18.SS1.p2.s1">
+For large <Math mode="inline" xml:id="C6.S18.SS1.p2.m1">x</Math> and <Math mode="inline" xml:id="C6.S18.SS1.p2.m2">\left|z\right|</Math> , expansions in inverse factorial series (§LABEL:sec:EX.FS.IFS) or asymptotic expansions (§LABEL:sec:EX.AE) are available.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="129" xml:id="C6.S18.SS1.p2.s2">
+The attainable accuracy of the asymptotic expansions can be increased considerably by exponential improvement.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="130" xml:id="C6.S18.SS1.p2.s3">
+Also, other ranges of <Math mode="inline" xml:id="C6.S18.SS1.p2.m3">\operatorname{ph}z</Math> can be covered by use of the continuation formulas of §LABEL:sec:EX.AC.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S18.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C6.S18.SS1.p3.s1">
+Quadrature of the integral representations is another effective method.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="132" xml:id="C6.S18.SS1.p3.s2">
+For example, the Gauss-Laguerre formula (§LABEL:sec:NM.QUA.GAUSS) can be applied to (LABEL:eq:EX.DF.E2); see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="133" xml:id="C6.S18.SS1.p3.s3">
+For an application of the Gauss-Legendre formula (§LABEL:sec:NM.QUA.GAUSS) see ( ) .
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C6.S18.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C6.S18.SS1.p4.s1">
+Lastly, the continued fraction (LABEL:eq:EX.CF.CF) can be used if <Math mode="inline" xml:id="C6.S18.SS1.p4.m1">|z|</Math> is bounded away from the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="135" xml:id="C6.S18.SS1.p4.s2">
+Convergence becomes slow when <Math mode="inline" xml:id="C6.S18.SS1.p4.m2">z</Math> is near the negative real axis, however.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS2">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C6.S18.SS2.p1.s1">
+Power series, asymptotic expansions, and quadrature can also be used to compute the functions <Math mode="inline" xml:id="C6.S18.SS2.p1.m1">\mathrm{f}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S18.SS2.p1.m2">\mathrm{g}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="137" xml:id="C6.S18.SS2.p1.s2">
+In addition, ( ) developed a recurrence procedure, as follows.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="138" xml:id="C6.S18.SS2.p1.s3">
+For <Math mode="inline" xml:id="C6.S18.SS2.p1.m3">n=0,1,2,\dots</Math> , define <Math equation-number="6.18.1" mode="display" xml:id="C6.S18.E1">A_{n}=\int_{0}^{\infty}\frac{te^{-zt}}{1+t^{2}}\left(\frac{t^{2}}{1+t^{2}} \right)^{n}\mathrm{d}t, B_{n}=\int_{0}^{\infty}\frac{e^{-zt}}{1+t^{2}}\left(\frac{t^{2}}{1+t^{2}} \right)^{n}\mathrm{d}t, C_{n}=\int_{0}^{\infty}e^{-zt}\left(\frac{t^{2}}{1+t^{2}}\right)^{n}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="139" xml:id="C6.S18.SS2.p1.s4">
+Then <Math mode="inline" xml:id="C6.S18.SS2.p1.m4">\mathrm{f}\left(z\right)=B_{0}</Math> , <Math mode="inline" xml:id="C6.S18.SS2.p1.m5">\mathrm{g}\left(z\right)=A_{0}</Math> , and <Math equation-number="6.18.2" mode="display" xml:id="C6.S18.E2">A_{n-1}=A_{n}+\frac{z}{2n}C_{n}, B_{n-1}=\frac{2nB_{n}+zA_{n-1}}{2n-1}, C_{n-1}=C_{n}+B_{n-1} subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="140" xml:id="C6.S18.SS2.p1.s5">
+<Math mode="inline" xml:id="C6.S18.SS2.p1.m6">A_{0}</Math> , <Math mode="inline" xml:id="C6.S18.SS2.p1.m7">B_{0}</Math> , and <Math mode="inline" xml:id="C6.S18.SS2.p1.m8">C_{0}</Math> can be computed by Miller’s algorithm (§LABEL:sec:NM.LDE.MA), starting with initial values <Math mode="inline" xml:id="C6.S18.SS2.p1.m9">(A_{N},B_{N},C_{N})=(1,0,0)</Math> , say, where <Math mode="inline" xml:id="C6.S18.SS2.p1.m10">N</Math> is an arbitrary large integer, and normalizing via <Math mode="inline" xml:id="C6.S18.SS2.p1.m11">C_{0}=1/z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS3">
+<title>Zeros</title>           
+<para xml:id="C6.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C6.S18.SS3.p1.s1">
+Zeros of <Math mode="inline" xml:id="C6.S18.SS3.p1.m1">\mathrm{Ci}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S18.SS3.p1.m2">\mathrm{si}\left(x\right)</Math> can be computed to high precision by Newton’s rule (§LABEL:sec:NM.NLE.NEWTON), using values supplied by the asymptotic expansion (LABEL:eq:EX.SC.Z1) as initial approximations.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS4">
+<title>Other References</title>        
+ 
+<para xml:id="C6.S18.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C6.S18.SS4.p1.s1">
+For a comprehensive survey of computational methods for the functions treated in this chapter, see ( , Ch. IV) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S19">
+<title>Tables</title>        
+ 
+<subsection xml:id="C6.S19.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C6.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C6.S19.SS1.p1.s1">
+( ) and ( ) give comprehensive indexes of mathematical tables.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C6.S19.SS1.p1.s2">
+This section lists relevant tables that appeared later.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S19.SS2">
+<title>Real Variables</title>        
+  
+<para xml:id="C6.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C6.S19.SS2.p1.s1">
+( , Chapter 5) includes <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m1">x^{-1}\mathrm{Si}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m2">-x^{-2}\mathrm{Cin}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m3">x^{-1}\mathrm{Ein}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m4">-x^{-1}\mathrm{Ein}\left(-x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m5">x=0(.01)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="146" xml:id="C6.S19.SS2.p1.s2">
+5; <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m6">\mathrm{Si}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m7">\mathrm{Ci}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m8">\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m9">E_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m10">x=0.5(.01)</Math> 2; <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m11">\mathrm{Si}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m12">\mathrm{Ci}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m13">xe^{-x}\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m14">xe^{x}E_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m15">x=2(.1)1</Math> 0; <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m16">x\mathrm{f}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m17">x^{2}\mathrm{g}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m18">xe^{-x}\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m19">xe^{x}E_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m20">x^{-1}=0(.005)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="147" xml:id="C6.S19.SS2.p1.s3">
+1; <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m21">\mathrm{Si}\left(\pi x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m22">\mathrm{Cin}\left(\pi x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i1.p1.m23">x=0(.1)1</Math> 0. Accuracy varies but is within the range 8S–11S. ( , pp. 652, 689) includes <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m1">\mathrm{Si}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m2">\mathrm{Ci}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m3">x=0(.5)20(2)3</Math> 0, 8D; <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m4">\mathrm{Ei}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m5">E_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C6.S19.I1.i2.p1.m6">x=[0,100]</Math> , 8S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S19.SS3">
+<title>Complex Variables, <Math mode="inline" xml:id="C6.S19.SS3.m1">z=x+iy</Math></title>        
+ 
+<para xml:id="C6.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C6.S19.SS3.p1.s1">
+( , Chapter 5) includes the real and imaginary parts of <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m1">ze^{z}E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m2">x=-19(1)20</Math> , <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m3">y=0(1)20</Math> , 6D; <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m4">e^{z}E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m5">x=-4(.5)-</Math> 2, <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m6">y=0(.2)</Math> 1, 6D; <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m7">E_{1}\left(z\right)+\ln z</Math> , <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m8">x=-2(.5)2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="149" xml:id="C6.S19.SS3.p1.s2">
+5, <Math mode="inline" xml:id="C6.S19.I2.i1.p1.m9">y=0(.2)</Math> 1, 6D. ( , pp. 690–692) includes the real and imaginary parts of <Math mode="inline" xml:id="C6.S19.I2.i2.p1.m1">E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S19.I2.i2.p1.m2">\pm x=0.5,1,3,5,10,15,20,50,10</Math> 0, <Math mode="inline" xml:id="C6.S19.I2.i2.p1.m3">y=0(.5)1(1)5(5)30,50,10</Math> 0, 8S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S20">
+<title>Approximations</title>        
+ 
+<subsection xml:id="C6.S20.SS1">
+<title>Approximations in Terms of Elementary Functions</title>        
+ 
+<para xml:id="C6.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C6.S20.SS1.p1.s1">
+( ) gives several minimax polynomial and rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m1">E_{1}\left(x\right)+\ln x</Math> , <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m2">xe^{x}E_{1}\left(x\right)</Math> , and the auxiliary functions <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m3">\mathrm{f}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I1.i1.p1.m4">\mathrm{g}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="151" xml:id="C6.S20.SS1.p1.s2">
+These are included in ( , Ch. 5) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="152" xml:id="C6.S20.SS1.p1.s3">
+( ) provides minimax rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i2.p1.m1">E_{1}\left(x\right)</Math> , with accuracies up to 20S. ( ) provides minimax rational approximations for <Math mode="inline" xml:id="C6.S20.I1.i3.p1.m1">\mathrm{Ei}\left(x\right)</Math> , with accuracies up to 20S. ( ) provides rational approximations for the sine and cosine integrals and for the auxiliary functions <Math mode="inline" xml:id="C6.S20.I1.i4.p1.m1">\mathrm{f}</Math> and <Math mode="inline" xml:id="C6.S20.I1.i4.p1.m2">\mathrm{g}</Math> , with accuracies up to 20S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S20.SS2">
+<title>Expansions in Chebyshev Series</title>        
+ 
+<para xml:id="C6.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C6.S20.SS2.p1.s1">
+( ) gives Chebyshev coefficients for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m1">-E_{1}\left(x\right)-\ln|x|</Math> for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m2">-4\leq x\leq 4</Math> and <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m3">e^{x}E_{1}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i1.p1.m4">x\geq 4</Math> (20D).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="154" xml:id="C6.S20.SS2.p1.s2">
+( ) covers <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m1">\mathrm{Ei}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m2">x\leq-4</Math> (20D), and <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m3">\mathrm{Si}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m4">\mathrm{Ci}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i2.p1.m5">x\geq 4</Math> (20D).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="155" xml:id="C6.S20.SS2.p1.s3">
+( , pp. 41–42) gives Chebyshev expansions of <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m1">\mathrm{Ein}\left(ax\right)</Math> , <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m2">\mathrm{Si}\left(ax\right)</Math> , and <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m3">\mathrm{Cin}\left(ax\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m4">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C6.S20.I2.i3.p1.m5">a\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="156" xml:id="C6.S20.SS2.p1.s4">
+The coefficients are given in terms of series of Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="157" xml:id="C6.S20.SS2.p1.s5">
+( , pp. 321–322) covers <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m1">\mathrm{Ein}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m2">-\mathrm{Ein}\left(-x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m3">0\leq x\leq 8</Math> (the Chebyshev coefficients are given to 20D); <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m4">E_{1}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m5">x\geq 5</Math> (20D), and <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m6">\mathrm{Ei}\left(x\right)</Math> for <Math mode="inline" xml:id="C6.S20.I2.i4.p1.m7">x\geq 8</Math> (15D).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="158" xml:id="C6.S20.SS2.p1.s6">
+Coefficients for the sine and cosine integrals are given on pp. 325–327.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="159" xml:id="C6.S20.SS2.p1.s7">
+( , p. 25) gives a Chebyshev expansion near infinity for the confluent hypergeometric <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m1">U</Math> -function (§LABEL:sec:CH.MU.DE.KU) from which Chebyshev expansions near infinity for <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m2">E_{1}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m3">\mathrm{f}\left(z\right)</Math> ,and <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m4">\mathrm{g}\left(z\right)</Math> follow by using (LABEL:eq:EX.OF.O2) and (LABEL:eq:EX.OF.O3).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="160" xml:id="C6.S20.SS2.p1.s8">
+Luke also includes a recursion scheme for computing the coefficients in the expansions of the <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m5">U</Math> functions.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="161" xml:id="C6.S20.SS2.p1.s9">
+If <Math mode="inline" xml:id="C6.S20.I2.i5.p1.m6">|\operatorname{ph}z|&lt;\pi</Math> the scheme can be used in backward direction.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S20.SS3">
+<title>Padé-Type and Rational Expansions</title>        
+ 
+<para xml:id="C6.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C6.S20.SS3.p1.s1">
+( , pp. 402, 410, and 415–421) gives main diagonal Padé approximations for <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m1">\mathrm{Ein}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m2">\mathrm{Si}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m3">\mathrm{Cin}\left(z\right)</Math> (valid near the origin), and <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m4">E_{1}\left(z\right)</Math> (valid for large <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m5">|z|</Math> ); approximate errors are given for a selection of <Math mode="inline" xml:id="C6.S20.I3.i1.p1.m6">z</Math> -values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="163" xml:id="C6.S20.SS3.p1.s2">
+( , pp. 411–414) gives rational approximations for <Math mode="inline" xml:id="C6.S20.I3.i2.p1.m1">\mathrm{Ein}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C6.S21">
+<title>Software</title>        
+ 
+<para xml:id="C6.S21.p1">
+
+</para>
+ 
+<subsection xml:id="C6.S21.SS1">
+<title>Introduction</title>         
+<para xml:id="C6.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C6.S21.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C6.S21.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="166" xml:id="C6.S21.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S21.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C6.S21.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="168" xml:id="C6.S21.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S21.SS2">
+<title><Math content-tex="\expintE@{x}" mode="inline" xml:id="C6.S21.SS2.m1">E_{1}\left(x\right)</Math>, <Math content-tex="\expintEi@{x}" mode="inline" xml:id="C6.S21.SS2.m2">\mathrm{Ei}\left(x\right)</Math>, <Math content-tex="\sinint@{x}" mode="inline" xml:id="C6.S21.SS2.m3">\mathrm{Si}\left(x\right)</Math>, <Math content-tex="\cosint@{x}" mode="inline" xml:id="C6.S21.SS2.m4">\mathrm{Ci}\left(x\right)</Math>, <Math content-tex="\sinhint@{x}" mode="inline" xml:id="C6.S21.SS2.m5">\mathrm{Shi}\left(x\right)</Math>, <Math content-tex="\coshint@{x}" mode="inline" xml:id="C6.S21.SS2.m6">\mathrm{Chi}\left(x\right)</Math>, <Math content-tex="x\in\Reals" mode="inline" xml:id="C6.S21.SS2.m7">x\in\mathbb{R}</Math></title>        
+ 
+<para xml:id="C6.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C6.S21.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="170" xml:id="C6.S21.SS2.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="171" xml:id="C6.S21.SS2.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="172" xml:id="C6.S21.SS2.p1.s4">
+Fortran.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="173" xml:id="C6.S21.SS2.p1.s5">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S21.SS3">
+<title><Math content-tex="\expintE@{z}" mode="inline" xml:id="C6.S21.SS3.m1">E_{1}\left(z\right)</Math>, <Math content-tex="\sinint@{z}" mode="inline" xml:id="C6.S21.SS3.m2">\mathrm{Si}\left(z\right)</Math>, <Math content-tex="\cosint@{z}" mode="inline" xml:id="C6.S21.SS3.m3">\mathrm{Ci}\left(z\right)</Math>, <Math content-tex="\sinhint@{z}" mode="inline" xml:id="C6.S21.SS3.m4">\mathrm{Shi}\left(z\right)</Math>, <Math content-tex="\coshint@{z}" mode="inline" xml:id="C6.S21.SS3.m5">\mathrm{Chi}\left(z\right)</Math>, <Math content-tex="z\in\Complexes" mode="inline" xml:id="C6.S21.SS3.m6">z\in\mathbb{C}</Math></title>        
+ 
+<para xml:id="C6.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C6.S21.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="175" xml:id="C6.S21.SS3.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

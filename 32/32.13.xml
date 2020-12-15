@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S13">
+<title>Reductions of Partial Differential Equations</title>           
+ 
+<subsection xml:id="C32.S13.SS1">
+<title>Korteweg–de Vries and Modified Korteweg–de Vries Equations</title>           
+<para xml:id="C32.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S13.SS1.p1.s1">
+The modified Korteweg–de Vries (mKdV) equation <Math equation-number="32.13.1" mode="display" xml:id="C32.S13.E1">v_{t}-6v^{2}v_{x}+v_{xxx}=0,</Math> has the scaling reduction <Math equation-number="32.13.2" mode="display" xml:id="C32.S13.E2">z=x(3t)^{-1/3},v(x,t)=(3t)^{-1/3}w(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p1.m1">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S13.SS1.p1.m3">\alpha</Math> a constant of integration.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C32.S13.SS1.p2.s1">
+The Korteweg–de Vries (KdV) equation <Math equation-number="32.13.3" mode="display" xml:id="C32.S13.E3">u_{t}+6uu_{x}+u_{xxx}=0,</Math> has the scaling reduction <Math equation-number="32.13.4" mode="display" xml:id="C32.S13.E4">z=x(3t)^{-1/3},u(x,t)=-(3t)^{-2/3}(w^{\prime}+w^{2}),</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p2.m1">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS1.p2.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S13.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C32.S13.SS1.p3.s1">
+Equation (32.13.3) also has the similarity reduction <Math equation-number="32.13.5" mode="display" xml:id="C32.S13.E5">z=x+3\lambda t^{2},u(x,t)=W(z)-\lambda t,</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p3.m1">\lambda</Math> is an arbitrary constant and <Math mode="inline" xml:id="C32.S13.SS1.p3.m2">W(z)</Math> is expressible in terms of solutions of <Math mode="inline" xml:id="C32.S13.SS1.p3.m3">\mbox{P}_{\mbox{\scriptsize I}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C32.S13.SS1.p3.s2">
+See Fokas and Ablowitz (1982) and P. J. Olver (1993b, p. 194).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S13.SS2">
+<title>Sine-Gordon Equation</title>          
+<para xml:id="C32.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C32.S13.SS2.p1.s1">
+The sine-Gordon equation <Math equation-number="32.13.6" mode="display" xml:id="C32.S13.E6">u_{xt}=\sin u,</Math> has the scaling reduction <Math equation-number="32.13.7" mode="display" xml:id="C32.S13.E7">z=xt,u(x,t)=v(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS2.p1.m1">v(z)</Math> satisfies (32.2.10) with <Math mode="inline" xml:id="C32.S13.SS2.p1.m2">\alpha=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C32.S13.SS2.p1.m3">\gamma=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C32.S13.SS2.p1.s2">
+In consequence if <Math mode="inline" xml:id="C32.S13.SS2.p1.m4">w=\exp\left(-iv\right)</Math> , then <Math mode="inline" xml:id="C32.S13.SS2.p1.m5">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS2.p1.m6">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S13.SS2.p1.m7">\alpha=-\beta=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C32.S13.SS2.p1.m8">\gamma=\delta=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S13.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C32.S13.SS2.p2.s1">
+See also Wong and Zhang (2009b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S13.SS3">
+<title>Boussinesq Equation</title>          
+<para xml:id="C32.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C32.S13.SS3.p1.s1">
+The Boussinesq equation <Math equation-number="32.13.8" mode="display" xml:id="C32.S13.E8">u_{tt}=u_{xx}-6(u^{2})_{xx}+u_{xxxx},</Math> has the traveling wave solution <Math equation-number="32.13.9" mode="display" xml:id="C32.S13.E9">z=x-ct,u(x,t)=v(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS3.p1.m1">c</Math> is an arbitrary constant and <Math mode="inline" xml:id="C32.S13.SS3.p1.m2">v(z)</Math> satisfies <Math equation-number="32.13.10" mode="display" xml:id="C32.S13.E10">v^{\prime\prime}=6v^{2}+(c^{2}-1)v+Az+B,</Math> with <Math mode="inline" xml:id="C32.S13.SS3.p1.m3">A</Math> and <Math mode="inline" xml:id="C32.S13.SS3.p1.m4">B</Math> constants of integration.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C32.S13.SS3.p1.s2">
+Depending whether <Math mode="inline" xml:id="C32.S13.SS3.p1.m5">A=0</Math> or <Math mode="inline" xml:id="C32.S13.SS3.p1.m6">A\neq 0</Math> , <Math mode="inline" xml:id="C32.S13.SS3.p1.m7">v(z)</Math> is expressible in terms of the Weierstrass elliptic function (§23.2) or solutions of <Math mode="inline" xml:id="C32.S13.SS3.p1.m8">\mbox{P}_{\mbox{\scriptsize I}}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

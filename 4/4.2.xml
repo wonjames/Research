@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S2">
+<title>Definitions</title>         
+<subsection xml:id="C4.S2.SS1">
+<title>The Logarithm</title>           
+<para xml:id="C4.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S2.SS1.p1.s1">
+The general logarithm function <Math mode="inline" xml:id="C4.S2.SS1.p1.m1">\operatorname{Ln}z</Math> is defined by <Math equation-number="4.2.1" mode="display" xml:id="C4.S2.E1">\operatorname{Ln}z=\int_{1}^{z}\frac{\mathrm{d}t}{t}, if z\neq 0,</Math> where the integration path does not intersect the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S2.SS1.p1.s2">
+This is a multivalued function of <Math mode="inline" xml:id="C4.S2.SS1.p1.m2">z</Math> with branch point at <Math mode="inline" xml:id="C4.S2.SS1.p1.m3">z=0</Math>.
+</sentence>
+
+</para>
+      
+<para xml:id="C4.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C4.S2.SS1.p2.s1">
+The principal value, or principal branch, is defined by <Math equation-number="4.2.2" mode="display" xml:id="C4.S2.E2">\ln z=\int_{1}^{z}\frac{\mathrm{d}t}{t},</Math> where the path does not intersect <Math mode="inline" xml:id="C4.S2.SS1.p2.m1">(-\infty,0]</Math> ; see Figure4.2.1.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C4.S2.SS1.p2.s2">
+<Math mode="inline" xml:id="C4.S2.SS1.p2.m2">\ln z</Math> is a single-valued analytic function on <Math mode="inline" xml:id="C4.S2.SS1.p2.m3">\mathbb{C}\setminus(-\infty,0]</Math> and real-valued when <Math mode="inline" xml:id="C4.S2.SS1.p2.m4">z</Math> ranges over the positive real numbers.
+</sentence>
+
+</para>
+       
+   
+<sentence sentence-num-in-section="5" xml:id="C4.S2.F1.s1">
+Figure 4.2.1: <Math mode="inline" xml:id="C4.S2.F1.m3">z</Math> -plane: Branch cut for <Math mode="inline" xml:id="C4.S2.F1.m4">\ln z</Math> and <Math mode="inline" xml:id="C4.S2.F1.m5">z^{\alpha}</Math> .
+</sentence>    
+<para xml:id="C4.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C4.S2.SS1.p3.s1">
+The real and imaginary parts of <Math mode="inline" xml:id="C4.S2.SS1.p3.m1">\ln z</Math> are given by <Math equation-number="4.2.3" mode="display" xml:id="C4.S2.E3">\ln z=\ln\left|z\right|+\mathrm{i}\operatorname{ph}z, if -\pi&lt;\operatorname{ph}z&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C4.S2.SS1.p3.s2">
+For <Math mode="inline" xml:id="C4.S2.SS1.p3.m2">\operatorname{ph}z</Math> see §1.9(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S2.SS1.p4.s1">
+The only zero of <Math mode="inline" xml:id="C4.S2.SS1.p4.m1">\ln z</Math> is at <Math mode="inline" xml:id="C4.S2.SS1.p4.m2">z=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C4.S2.SS1.p5.s1">
+Most texts extend the definition of the principal value to include thebranch cut <Math equation-number="4.2.4" mode="display" xml:id="C4.S2.E4">z=x, if -\infty&lt;x&lt;0,</Math> by replacing (4.2.3) with <Math equation-number="4.2.5" mode="display" xml:id="C4.S2.E5">\ln z=\ln\left|z\right|+\mathrm{i}\operatorname{ph}z, if -\pi&lt;\operatorname{ph}z\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C4.S2.SS1.p5.s2">
+With this definition the general logarithm is given by <Math equation-number="4.2.6" mode="display" xml:id="C4.S2.E6">\operatorname{Ln}z=\ln z+2k\pi\mathrm{i},</Math> where <Math mode="inline" xml:id="C4.S2.SS1.p5.m1">k</Math> is the excess of the number of times the path in (4.2.1) crosses the negative real axis in the positive sense over the number of times in the negative sense.
+</sentence>
+
+</para>
+  
+<para xml:id="C4.S2.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C4.S2.SS1.p6.s1">
+In the DLMF we allow a further extension by regarding the cut as representing two sets of points, one set corresponding to the “upper side” and denoted by <Math mode="inline" xml:id="C4.S2.SS1.p6.m1">z=x+\mathrm{i}0</Math> , the other set corresponding to the “lower side” and denoted by <Math mode="inline" xml:id="C4.S2.SS1.p6.m2">z=x-\mathrm{i}0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C4.S2.SS1.p6.s2">
+Again see Figure 4.2.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C4.S2.SS1.p6.s3">
+Then <Math equation-number="4.2.7" mode="display" xml:id="C4.S2.E7">\ln\left(x\pm\mathrm{i}0\right)=\ln|x|\pm i\pi, if -\infty&lt;x&lt;0,</Math> with either upper signs or lower signs taken throughout.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C4.S2.SS1.p6.s4">
+Consequently <Math mode="inline" xml:id="C4.S2.SS1.p6.m3">\ln z</Math> is two-valued on the cut, and discontinuous across the cut.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" xml:id="C4.S2.SS1.p6.s5">
+We regard this as the closed definition of the principal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C4.S2.SS1.p7.s1">
+In contrast to (4.2.5) the closed definition is symmetric.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C4.S2.SS1.p7.s2">
+As a consequence, it has the advantage of extending regions of validity of properties of principal values.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C4.S2.SS1.p7.s3">
+For example, with the definition(4.2.5) the identity (4.8.7) is valid only when <Math mode="inline" xml:id="C4.S2.SS1.p7.m1">\left|\operatorname{ph}z\right|&lt;\pi</Math> , but with the closed definition the identity (4.8.7) is valid when <Math mode="inline" xml:id="C4.S2.SS1.p7.m2">\left|\operatorname{ph}z\right|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C4.S2.SS1.p7.s4">
+For another example see (4.2.37).
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C4.S2.SS1.p8.s1">
+In the DLMF it is usually clear from the context which definition of principal value is being used. However, in the absence of any indication to the contrary it is assumed that the definition is the closed one.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C4.S2.SS1.p8.s2">
+For other examples in this chapter see §§4.23,4.24,4.37, and 4.38.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S2.SS2">
+<title>Logarithms to a General Base <Math mode="inline" xml:id="C4.S2.SS2.m1">a</Math></title>        
+  
+<para xml:id="C4.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C4.S2.SS2.p1.s1">
+With <Math mode="inline" xml:id="C4.S2.SS2.p1.m1">a,b\neq 0</Math> or <Math mode="inline" xml:id="C4.S2.SS2.p1.m2">1</Math> , <Math equation-number="4.2.8" mode="display" xml:id="C4.S2.E8">\operatorname{log}_{a}z=\ifrac{\ln z}{\ln a},</Math> , <Math equation-number="4.2.9" mode="display" xml:id="C4.S2.E9">\operatorname{log}_{a}z=\frac{\operatorname{log}_{b}z}{\operatorname{log}_{b}a},</Math> , <Math equation-number="4.2.10" mode="display" xml:id="C4.S2.E10">\operatorname{log}_{a}b=\frac{1}{\operatorname{log}_{b}a}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C4.S2.SS2.p2.s1">
+Natural logarithms have as base the unique positive number <Math equation-number="4.2.11" mode="display" xml:id="C4.S2.E11">e=2.71828\ 18284\ 59045\ 23536\dots</Math> such that <Math equation-number="4.2.12" mode="display" xml:id="C4.S2.E12">\ln e=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C4.S2.SS2.p2.s2">
+Equivalently, <Math equation-number="4.2.13" mode="display" xml:id="C4.S2.E13">\int_{1}^{e}\frac{\mathrm{d}t}{t}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C4.S2.SS2.p2.s3">
+Thus <Math equation-number="4.2.14" mode="display" xml:id="C4.S2.E14">\operatorname{log}_{e}z=\ln z,</Math> <Math equation-number="4.2.15" mode="display" xml:id="C4.S2.E15">\operatorname{log}_{10}z=\ifrac{(\ln z)}{(\ln 10)}=(\operatorname{log}_{10}e) \ln z,</Math> <Math equation-number="4.2.16" mode="display" xml:id="C4.S2.E16">\ln z=(\ln 10)\operatorname{log}_{10}z,</Math> <Math equation-number="4.2.17" mode="display" xml:id="C4.S2.E17">\operatorname{log}_{10}e=0.43429\ 44819\ 03251\ 82765\dots,</Math> <Math equation-number="4.2.18" mode="display" xml:id="C4.S2.E18">\ln 10=2.30258\ 50929\ 94045\ 68401\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C4.S2.SS2.p2.s4">
+<Math mode="inline" xml:id="C4.S2.SS2.p2.m2">\operatorname{log}_{e}x=\ln x</Math> is also called the Napierian orhyperbolic logarithm.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="27" xml:id="C4.S2.SS2.p2.s5">
+<Math mode="inline" xml:id="C4.S2.SS2.p2.m3">\operatorname{log}_{10}x</Math> is the common orBriggs logarithm.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S2.SS3">
+<title>The Exponential Function</title>               
+<para xml:id="C4.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C4.S2.SS3.p1.s1">
+ <Math equation-number="4.2.19" mode="display" xml:id="C4.S2.E19">\exp z=1+\frac{z}{1!}+\frac{z^{2}}{2!}+\frac{z^{3}}{3!}+\cdots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C4.S2.SS3.p1.s2">
+The function <Math mode="inline" xml:id="C4.S2.SS3.p1.m1">\exp</Math> is an entire function of <Math mode="inline" xml:id="C4.S2.SS3.p1.m2">z</Math> , with no real or complex zeros.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C4.S2.SS3.p1.s3">
+It has period <Math mode="inline" xml:id="C4.S2.SS3.p1.m3">2\pi i</Math> : <Math equation-number="4.2.20" mode="display" xml:id="C4.S2.E20">\exp\left(z+2\pi i\right)=\exp z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C4.S2.SS3.p1.s4">
+Also, <Math equation-number="4.2.21" mode="display" xml:id="C4.S2.E21">\exp\left(-z\right)=1/\exp\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="32" xml:id="C4.S2.SS3.p1.s5">
+<Math equation-number="4.2.22" mode="display" xml:id="C4.S2.E22">|\exp z|=\exp\left(\Re z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="33" xml:id="C4.S2.SS3.p1.s6">
+The general value of the phase is given by <Math equation-number="4.2.23" mode="display" xml:id="C4.S2.E23">\operatorname{ph}\left(\exp z\right)=\Im z+2k\pi, if k\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C4.S2.SS3.p2.s1">
+If <Math mode="inline" xml:id="C4.S2.SS3.p2.m1">z=x+iy</Math> , then <Math equation-number="4.2.24" mode="display" xml:id="C4.S2.E24">\exp z=e^{x}\cos y+ie^{x}\sin y</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C4.S2.SS3.p3.s1">
+If <Math mode="inline" xml:id="C4.S2.SS3.p3.m1">\zeta\neq 0</Math> then <Math equation-number="4.2.25" mode="display" xml:id="C4.S2.E25">\exp z=\zeta\;\;\Longleftrightarrow\;\;z=\operatorname{Ln}\zeta</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S2.SS4">
+<title>Powers</title>         
+ 
+<paragraph xml:id="C4.S2.Px1">
+<title>Powers with General Bases</title>       
+<para xml:id="C4.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C4.S2.Px1.p1.s1">
+The general <Math mode="inline" xml:id="C4.S2.Px1.p1.m1">a^{\rm th}</Math> power of <Math mode="inline" xml:id="C4.S2.Px1.p1.m2">z</Math> is defined by <Math equation-number="4.2.26" mode="display" xml:id="C4.S2.E26">z^{a}=\exp\left(a\operatorname{Ln}z\right), if z\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C4.S2.Px1.p1.s2">
+In particular, <Math mode="inline" xml:id="C4.S2.Px1.p1.m3">z^{0}=1</Math> , and if <Math mode="inline" xml:id="C4.S2.Px1.p1.m4">a=n=1,2,3,\dots</Math> , then <Math equation-number="4.2.27" mode="display" xml:id="C4.S2.E27">z^{a}=\underbrace{z\cdot z\cdots z}_{n\text{ times}}=1/z^{-a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C4.S2.Px1.p1.s3">
+In all other cases, <Math mode="inline" xml:id="C4.S2.Px1.p1.m5">z^{a}</Math> is a multivalued function with branch point at <Math mode="inline" xml:id="C4.S2.Px1.p1.m6">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C4.S2.Px1.p1.s4">
+The principal value is <Math equation-number="4.2.28" mode="display" xml:id="C4.S2.E28">z^{a}=\exp\left(a\ln z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C4.S2.Px1.p1.s5">
+This is an analytic function of <Math mode="inline" xml:id="C4.S2.Px1.p1.m7">z</Math> on <Math mode="inline" xml:id="C4.S2.Px1.p1.m8">\mathbb{C}\setminus(-\infty,0]</Math> , and is two-valued and discontinuous on the cut shown in Figure 4.2.1, unless <Math mode="inline" xml:id="C4.S2.Px1.p1.m9">a\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="41" xml:id="C4.S2.Px1.p1.s6">
+<Math equation-number="4.2.29" mode="display" xml:id="C4.S2.E29">|z^{a}|=|z|^{\Re a}\exp\left(-(\Im a)\operatorname{ph}z\right),</Math> <Math equation-number="4.2.30" mode="display" xml:id="C4.S2.E30">\operatorname{ph}\left(z^{a}\right)=(\Re a)\operatorname{ph}z+(\Im a)\ln|z|,</Math> where <Math mode="inline" xml:id="C4.S2.Px1.p1.m10">\operatorname{ph}z\in[-\pi,\pi]</Math> for the principal value of <Math mode="inline" xml:id="C4.S2.Px1.p1.m11">z^{a}</Math> , and is unrestricted in the general case.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="42" xml:id="C4.S2.Px1.p1.s7">
+When <Math mode="inline" xml:id="C4.S2.Px1.p1.m12">a</Math> is real <Math equation-number="4.2.31" mode="display" xml:id="C4.S2.E31">|z^{a}|=|z|^{a},\operatorname{ph}\left(z^{a}\right)=a\operatorname{ph}z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C4.S2.Px1.p2.s1">
+Unless indicated otherwise, it is assumed throughout the DLMF that a power assumes its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C4.S2.Px1.p2.s2">
+With this convention, <Math equation-number="4.2.32" mode="display" xml:id="C4.S2.E32">e^{z}=\exp z,</Math> but the general value of <Math mode="inline" xml:id="C4.S2.Px1.p2.m1">e^{z}</Math> is <Math equation-number="4.2.33" mode="display" xml:id="C4.S2.E33">e^{z}=(\exp z)\exp\left(2kz\pi\mathrm{i}\right), if k\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C4.S2.Px1.p3.s1">
+For <Math mode="inline" xml:id="C4.S2.Px1.p3.m1">z=1</Math> <Math equation-number="4.2.34" mode="display" xml:id="C4.S2.E34">e=1+\frac{1}{1!}+\frac{1}{2!}+\frac{1}{3!}+\cdots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C4.S2.Px1.p4.s1">
+If <Math mode="inline" xml:id="C4.S2.Px1.p4.m1">z^{a}</Math> has its general value, with <Math mode="inline" xml:id="C4.S2.Px1.p4.m2">a\neq 0</Math> , and if <Math mode="inline" xml:id="C4.S2.Px1.p4.m3">w\neq 0</Math> , then <Math equation-number="4.2.35" mode="display" xml:id="C4.S2.E35">z^{a}=w\;\;\Longleftrightarrow\;\;z=\exp\left(\frac{1}{a}\operatorname{Ln}w \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C4.S2.Px1.p4.s2">
+This result is also valid when <Math mode="inline" xml:id="C4.S2.Px1.p4.m4">z^{a}</Math> has its principal value, provided that the branch of <Math mode="inline" xml:id="C4.S2.Px1.p4.m5">\operatorname{Ln}w</Math> satisfies <Math equation-number="4.2.36" mode="display" xml:id="C4.S2.E36">-\pi\leq\Im\left(\frac{1}{a}\operatorname{Ln}w\right)\leq\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C4.S2.Px1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C4.S2.Px1.p5.s1">
+Another example of a principal value is provided by <Math equation-number="4.2.37" mode="display" xml:id="C4.S2.E37">\sqrt{z^{2}}=\begin{cases}z,&amp;\Re z\geq 0,\\ -z,&amp;\Re z\leq 0.\end{cases}</Math> Again, without the closed definition the <Math mode="inline" xml:id="C4.S2.Px1.p5.m1">\geq</Math> and <Math mode="inline" xml:id="C4.S2.Px1.p5.m2">\leq</Math> signs would have to be replaced by <Math mode="inline" xml:id="C4.S2.Px1.p5.m3">&gt;</Math> and <Math mode="inline" xml:id="C4.S2.Px1.p5.m4">&lt;</Math> , respectively.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+</section>

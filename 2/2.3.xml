@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S3">
+<title>Integrals of a Real Variable</title>        
+ 
+<subsection xml:id="C2.S3.SS1">
+<title>Integration by Parts</title>          
+<para xml:id="C2.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S3.SS1.p1.s1">
+Assume that the Laplace transform <Math equation-number="2.3.1" mode="display" xml:id="C2.S3.E1">\int_{0}^{\infty}e^{-xt}q(t)\mathrm{d}t</Math> converges for all sufficiently large <Math mode="inline" xml:id="C2.S3.SS1.p1.m1">x</Math> , and <Math mode="inline" xml:id="C2.S3.SS1.p1.m2">q(t)</Math> is infinitely differentiable in a neighborhood of the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S3.SS1.p1.s2">
+Then <Math equation-number="2.3.2" mode="display" xml:id="C2.S3.E2">\int_{0}^{\infty}e^{-xt}q(t)\mathrm{d}t\sim\sum_{s=0}^{\infty}\frac{q^{(s)}(0) }{x^{s+1}}, if x\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C2.S3.SS1.p2.s1">
+If, in addition, <Math mode="inline" xml:id="C2.S3.SS1.p2.m1">q(t)</Math> is infinitely differentiable on <Math mode="inline" xml:id="C2.S3.SS1.p2.m2">[0,\infty)</Math> and <Math equation-number="2.3.3" mode="display" xml:id="C2.S3.E3">\sigma_{n}=\sup_{(0,\infty)}(t^{-1}\ln|q^{(n)}(t)/q^{(n)}(0)|)</Math> is finite and bounded for <Math mode="inline" xml:id="C2.S3.SS1.p2.m3">n=0,1,2,\dots</Math> , then the <Math mode="inline" xml:id="C2.S3.SS1.p2.m4">n</Math> th error term (that is, the difference between the integral and <Math mode="inline" xml:id="C2.S3.SS1.p2.m5">n</Math> th partial sum in (2.3.2)) is bounded in absolute value by <Math mode="inline" xml:id="C2.S3.SS1.p2.m6">|q^{(n)}(0)/(x^{n}(x-\sigma_{n}))|</Math> when <Math mode="inline" xml:id="C2.S3.SS1.p2.m7">x</Math> exceeds both <Math mode="inline" xml:id="C2.S3.SS1.p2.m8">0</Math> and <Math mode="inline" xml:id="C2.S3.SS1.p2.m9">\sigma_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C2.S3.SS1.p3.s1">
+For the Fourier integral <Math mode="display" xml:id="C2.S3.Ex1">\int_{a}^{b}e^{ixt}q(t)\mathrm{d}t</Math> assume <Math mode="inline" xml:id="C2.S3.SS1.p3.m1">a</Math> and <Math mode="inline" xml:id="C2.S3.SS1.p3.m2">b</Math> are finite, and <Math mode="inline" xml:id="C2.S3.SS1.p3.m3">q(t)</Math> is infinitely differentiable on <Math mode="inline" xml:id="C2.S3.SS1.p3.m4">[a,b]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C2.S3.SS1.p3.s2">
+Then <Math equation-number="2.3.4" mode="display" xml:id="C2.S3.E4">\int_{a}^{b}e^{ixt}q(t)\mathrm{d}t\sim e^{iax}\sum_{s=0}^{\infty}q^{(s)}(a) \left(\frac{i}{x}\right)^{s+1}-e^{ibx}\sum_{s=0}^{\infty}q^{(s)}(b)\left(\frac {i}{x}\right)^{s+1}, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C2.S3.SS1.p3.s3">
+Alternatively, assume <Math mode="inline" xml:id="C2.S3.SS1.p3.m5">b=\infty</Math> , <Math mode="inline" xml:id="C2.S3.SS1.p3.m6">q(t)</Math> is infinitely differentiable on <Math mode="inline" xml:id="C2.S3.SS1.p3.m7">[a,\infty)</Math> , and each of the integrals <Math mode="inline" xml:id="C2.S3.SS1.p3.m8">\int e^{ixt}q^{(s)}(t)\mathrm{d}t</Math> , <Math mode="inline" xml:id="C2.S3.SS1.p3.m9">s=0,1,2,\dots</Math> , converges as <Math mode="inline" xml:id="C2.S3.SS1.p3.m10">t\to\infty</Math> uniformly for all sufficiently large <Math mode="inline" xml:id="C2.S3.SS1.p3.m11">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C2.S3.SS1.p3.s4">
+Then <Math equation-number="2.3.5" mode="display" xml:id="C2.S3.E5">\int_{a}^{\infty}e^{ixt}q(t)\mathrm{d}t\sim e^{iax}\sum_{s=0}^{\infty}q^{(s)}( a)\left(\frac{i}{x}\right)^{s+1}, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C2.S3.SS1.p3.s5">
+In both cases the <Math mode="inline" xml:id="C2.S3.SS1.p3.m12">n</Math> th error term is bounded in absolute value by <Math mode="inline" xml:id="C2.S3.SS1.p3.m13">x^{-n}\mathcal{V}_{a,b}\left(q^{(n-1)}(t)\right)</Math> , where the variational operator <Math mode="inline" xml:id="C2.S3.SS1.p3.m14">\mathcal{V}_{a,b}</Math> is defined by <Math equation-number="2.3.6" mode="display" xml:id="C2.S3.E6">\mathcal{V}_{a,b}\left(f(t)\right)=\int_{a}^{b}|f^{\prime}(t)\mathrm{d}t|;</Math> see §1.4(v).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" xml:id="C2.S3.SS1.p3.s6">
+For other examples, seeWong (1989, Chapter 1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S3.SS2">
+<title>Watson’s Lemma</title>           
+<para xml:id="C2.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C2.S3.SS2.p1.s1">
+Assume again that the integral (2.3.1)converges for all sufficiently large <Math mode="inline" xml:id="C2.S3.SS2.p1.m1">x</Math> , but now <Math equation-number="2.3.7" mode="display" xml:id="C2.S3.E7">q(t)\sim\sum_{s=0}^{\infty}a_{s}t^{(s+\lambda-\mu)/\mu}, if t\to 0+,</Math> where <Math mode="inline" xml:id="C2.S3.SS2.p1.m2">\lambda</Math> and <Math mode="inline" xml:id="C2.S3.SS2.p1.m3">\mu</Math> are positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C2.S3.SS2.p1.s2">
+Then the series obtained by substituting (2.3.7)into (2.3.1) and integrating formally term by term yields an asymptotic expansion: <Math equation-number="2.3.8" mode="display" xml:id="C2.S3.E8">\int_{0}^{\infty}e^{-xt}q(t)\mathrm{d}t\sim\sum_{s=0}^{\infty}\Gamma\left( \frac{s+\lambda}{\mu}\right)\frac{a_{s}}{x^{(s+\lambda)/\mu}}, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C2.S3.SS2.p1.s3">
+For the function <Math mode="inline" xml:id="C2.S3.SS2.p1.m4">\Gamma</Math> see §5.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S3.SS2.p2.s1">
+This result is probably the most frequently used method for deriving asymptotic expansions of special functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C2.S3.SS2.p2.s2">
+Since <Math mode="inline" xml:id="C2.S3.SS2.p2.m1">q(t)</Math> need not be continuous (as long as the integral converges), the case of a finite integration range is included.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C2.S3.SS2.p3.s1">
+Other types of singular behavior in the integrand can be treated in an analogous manner.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C2.S3.SS2.p3.s2">
+For example, <Math equation-number="2.3.9" mode="display" xml:id="C2.S3.E9">\int_{0}^{\infty}e^{-xt}q(t)\ln t\mathrm{d}t\sim\sum_{s=0}^{\infty}\Gamma' \left(\frac{s+\lambda}{\mu}\right)\frac{a_{s}}{x^{(s+\lambda)/\mu}}-(\ln x) \sum_{s=0}^{\infty}\Gamma\left(\frac{s+\lambda}{\mu}\right)\frac{a_{s}}{x^{(s+ \lambda)/\mu}},</Math> provided that the integral on the left-hand side of (2.3.9)converges for all sufficiently large values of <Math mode="inline" xml:id="C2.S3.SS2.p3.m1">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C2.S3.SS2.p3.s3">
+(In other words, differentiation of (2.3.8) with respect to the parameter <Math mode="inline" xml:id="C2.S3.SS2.p3.m2">\lambda</Math> (or <Math mode="inline" xml:id="C2.S3.SS2.p3.m3">\mu</Math> ) is legitimate.)
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S3.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C2.S3.SS2.p4.s1">
+Another extension is to more general factors than the exponential function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C2.S3.SS2.p4.s2">
+In addition to (2.3.7)assume that <Math mode="inline" xml:id="C2.S3.SS2.p4.m1">f(t)</Math> and <Math mode="inline" xml:id="C2.S3.SS2.p4.m2">q(t)</Math> are piecewise continuous (§1.4(ii)) on <Math mode="inline" xml:id="C2.S3.SS2.p4.m3">(0,\infty)</Math> , and <Math equation-number="2.3.10" mode="display" xml:id="C2.S3.E10">|f(t)|\leq A\exp\left(-at^{\kappa}\right), if 0\leq t&lt;\infty,</Math> <Math equation-number="2.3.11" mode="display" xml:id="C2.S3.E11">q(t)=O\left(\exp\left(bt^{\kappa}\right)\right), if t\to+\infty,</Math> where <Math mode="inline" xml:id="C2.S3.SS2.p4.m4">A,a,b,\kappa</Math> are positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C2.S3.SS2.p4.s3">
+Then <Math equation-number="2.3.12" mode="display" xml:id="C2.S3.E12">\int_{0}^{\infty}f(xt)q(t)\mathrm{d}t\sim\sum_{s=0}^{\infty}\mathscr{M}\mskip- 3.0mu f\mskip 3.0mu \left(\frac{s+\lambda}{\mu}\right)\frac{a_{s}}{x^{(s+ \lambda)/\mu}}, if x\to+\infty,</Math> where <Math mode="inline" xml:id="C2.S3.SS2.p4.m5">\mathscr{M}\mskip-3.0mu f\mskip 3.0mu \left(\alpha\right)</Math> is the Mellin transform of <Math mode="inline" xml:id="C2.S3.SS2.p4.m6">f(t)</Math> (§2.5(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C2.S3.SS2.p5.s1">
+For a more detailed treatment of the integral (2.3.12)see §§2.5, 2.6.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S3.SS3">
+<title>Laplace’s Method</title>          
+ 
+<para xml:id="C2.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C2.S3.SS3.p1.s1">
+When <Math mode="inline" xml:id="C2.S3.SS3.p1.m1">p(t)</Math> is real and <Math mode="inline" xml:id="C2.S3.SS3.p1.m2">x</Math> is a large positive parameter, the main contribution to the integral <Math equation-number="2.3.13" mode="display" xml:id="C2.S3.E13">I(x)=\int_{a}^{b}e^{-xp(t)}q(t)\mathrm{d}t</Math> derives from the neighborhood of the minimum of <Math mode="inline" xml:id="C2.S3.SS3.p1.m3">p(t)</Math> in the integration range.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C2.S3.SS3.p1.s2">
+Without loss of generality, we assume that this minimum is at the left endpoint <Math mode="inline" xml:id="C2.S3.SS3.p1.m4">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C2.S3.SS3.p1.s3">
+Furthermore: <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m1">p^{\prime}(t)</Math> and <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m2">q(t)</Math> are continuous in a neighborhood of <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m3">a</Math> , save possibly at <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m4">a</Math> , and the minimum of <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m5">p(t)</Math> in <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m6">[a,b)</Math> is approached only at <Math mode="inline" xml:id="C2.S3.I1.ix1.p1.m7">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C2.S3.SS3.p1.s4">
+As <Math mode="inline" xml:id="C2.S3.I1.ix2.p1.m1">t\to a+</Math> <Math equation-number="2.3.14" mode="display" xml:id="C2.S3.E14">p(t)\sim p(a)+\sum_{s=0}^{\infty}p_{s}(t-a)^{s+\mu},q(t)\sim\sum_{s=0}^{\infty}q_{s}(t-a)^{s+\lambda-1},</Math> and the expansion for <Math mode="inline" xml:id="C2.S3.I1.ix2.p1.m2">p(t)</Math> is differentiable.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C2.S3.SS3.p1.s5">
+Again <Math mode="inline" xml:id="C2.S3.I1.ix2.p1.m3">\lambda</Math> and <Math mode="inline" xml:id="C2.S3.I1.ix2.p1.m4">\mu</Math> are positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="27" xml:id="C2.S3.SS3.p1.s6">
+Also <Math mode="inline" xml:id="C2.S3.I1.ix2.p1.m5">p_{0}&gt;0</Math> (consistent with (a)).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="28" xml:id="C2.S3.SS3.p1.s7">
+The integral (2.3.13)converges absolutely for all sufficiently large <Math mode="inline" xml:id="C2.S3.I1.ix3.p1.m1">x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C2.S3.SS3.p2.s1">
+Then <Math equation-number="2.3.15" mode="display" xml:id="C2.S3.E15">\int_{a}^{b}e^{-xp(t)}q(t)\mathrm{d}t\sim e^{-xp(a)}\sum_{s=0}^{\infty}\Gamma \left(\frac{s+\lambda}{\mu}\right)\frac{b_{s}}{x^{(s+\lambda)/\mu}}, if x\to+\infty,</Math> where the coefficients <Math mode="inline" xml:id="C2.S3.SS3.p2.m1">b_{s}</Math> are defined by the expansion <Math equation-number="2.3.16" mode="display" xml:id="C2.S3.E16">\frac{q(t)}{p^{\prime}(t)}\sim\sum_{s=0}^{\infty}b_{s}v^{(s+\lambda-\mu)/\mu}, if v\to 0+,</Math> in which <Math mode="inline" xml:id="C2.S3.SS3.p2.m2">v=p(t)-p(a)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C2.S3.SS3.p2.s2">
+For example, <Math equation-number="2.3.17" mode="display" xml:id="C2.S3.E17">b_{0}=\frac{q_{0}}{\mu p_{0}^{\lambda/\mu}},b_{1}=\left(\frac{q_{1}}{\mu}-\frac{(\lambda+1)p_{1}q_{0}}{\mu^{2}p_{0}}\right )\frac{1}{p_{0}^{(\lambda+1)/\mu}},b_{2}=\left(\frac{q_{2}}{\mu}-\frac{(\lambda+2)(p_{1}q_{1}+p_{2}q_{0})}{\mu^{2 }p_{0}}+\frac{(\lambda+2)(\lambda+\mu+2)p_{1}^{2}q_{0}}{2\mu^{3}p_{0}^{2}} \right)\frac{1}{p_{0}^{(\lambda+2)/\mu}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C2.S3.SS3.p2.s3">
+In general <Math equation-number="2.3.18" mode="display" xml:id="C2.S3.E18">b_{s}=\frac{1}{\mu}\Residue_{t=a}\left[\frac{q(t)}{(p(t)-p(a))^{(\lambda+s)/ \mu}}\right], if s=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S3.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C2.S3.SS3.p3.s1">
+Watson’s lemma can be regarded as a special case of this result.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C2.S3.SS3.p4.s1">
+For error bounds for Watson’s lemma and Laplace’s method seeBoyd (1993) and Olver (1997b, Chapter 3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C2.S3.SS3.p4.s2">
+These references and Wong (1989, Chapter 2) also contain examples.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C2.S3.SS4">
+<title>Method of Stationary Phase</title>           
+<para xml:id="C2.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C2.S3.SS4.p1.s1">
+When the parameter <Math mode="inline" xml:id="C2.S3.SS4.p1.m1">x</Math> is large the contributions from the real and imaginary parts of the integrand in <Math equation-number="2.3.19" mode="display" xml:id="C2.S3.E19">I(x)=\int_{a}^{b}e^{ixp(t)}q(t)\mathrm{d}t</Math> oscillate rapidly and cancel themselves over most of the range.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C2.S3.SS4.p1.s2">
+However, cancellation does not take place near the endpoints, owing to lack of symmetry,nor in the neighborhoods of zeros of <Math mode="inline" xml:id="C2.S3.SS4.p1.m2">p^{\prime}(t)</Math> because <Math mode="inline" xml:id="C2.S3.SS4.p1.m3">p(t)</Math> changes relatively slowly at these stationary points.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C2.S3.SS4.p2.s1">
+The first result is the analog of Watson’s lemma (§2.3(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C2.S3.SS4.p2.s2">
+Assume that <Math mode="inline" xml:id="C2.S3.SS4.p2.m1">q(t)</Math> again has the expansion (2.3.7) and this expansion is infinitely differentiable, <Math mode="inline" xml:id="C2.S3.SS4.p2.m2">q(t)</Math> is infinitely differentiable on <Math mode="inline" xml:id="C2.S3.SS4.p2.m3">(0,\infty)</Math> , and each of the integrals <Math mode="inline" xml:id="C2.S3.SS4.p2.m4">\int e^{ixt}q^{(s)}(t)\mathrm{d}t</Math> , <Math mode="inline" xml:id="C2.S3.SS4.p2.m5">s=0,1,2,\dots</Math> , converges at <Math mode="inline" xml:id="C2.S3.SS4.p2.m6">t=\infty</Math> , uniformly for all sufficiently large <Math mode="inline" xml:id="C2.S3.SS4.p2.m7">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C2.S3.SS4.p2.s3">
+Then <Math equation-number="2.3.20" mode="display" xml:id="C2.S3.E20">\int_{0}^{\infty}e^{ixt}q(t)\mathrm{d}t\sim\sum_{s=0}^{\infty}\exp\left(\frac{ (s+\lambda)\pi i}{2\mu}\right)\Gamma\left(\frac{s+\lambda}{\mu}\right)\frac{a_ {s}}{x^{(s+\lambda)/\mu}}, if x\to+\infty,</Math> where the coefficients <Math mode="inline" xml:id="C2.S3.SS4.p2.m8">a_{s}</Math> are given by (2.3.7).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C2.S3.SS4.p3.s1">
+For the more general integral (2.3.19)we assume, without loss ofgenerality, that the stationary point (if any) is at the left endpoint. Furthermore: On <Math mode="inline" xml:id="C2.S3.I2.ix4.p1.m1">(a,b)</Math> , <Math mode="inline" xml:id="C2.S3.I2.ix4.p1.m2">p(t)</Math> and <Math mode="inline" xml:id="C2.S3.I2.ix4.p1.m3">q(t)</Math> are infinitely differentiable and <Math mode="inline" xml:id="C2.S3.I2.ix4.p1.m4">p^{\prime}(t)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C2.S3.SS4.p3.s2">
+As <Math mode="inline" xml:id="C2.S3.I2.ix5.p1.m1">t\to a+</Math> the asymptotic expansions (2.3.14)apply, and each is infinitely differentiable.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="42" xml:id="C2.S3.SS4.p3.s3">
+Again <Math mode="inline" xml:id="C2.S3.I2.ix5.p1.m2">\lambda</Math> , <Math mode="inline" xml:id="C2.S3.I2.ix5.p1.m3">\mu</Math> , and <Math mode="inline" xml:id="C2.S3.I2.ix5.p1.m4">p_{0}</Math> are positive.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="43" xml:id="C2.S3.SS4.p3.s4">
+If the limit <Math mode="inline" xml:id="C2.S3.I2.ix6.p1.m1">p(b)</Math> of <Math mode="inline" xml:id="C2.S3.I2.ix6.p1.m2">p(t)</Math> as <Math mode="inline" xml:id="C2.S3.I2.ix6.p1.m3">t\to b-</Math> is finite, then each of the functions <Math equation-number="2.3.21" mode="display" xml:id="C2.S3.E21">P_{s}(t)=\left(\frac{1}{p^{\prime}(t)}\frac{\mathrm{d}}{\mathrm{d}t}\right)^{s }\frac{q(t)}{p^{\prime}(t)}, if s=0,1,2,\dots,</Math> tends to a finite limit <Math mode="inline" xml:id="C2.S3.I2.ix6.p1.m4">P_{s}(b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="44" xml:id="C2.S3.SS4.p3.s5">
+If <Math mode="inline" xml:id="C2.S3.I2.ix7.p1.m1">p(b)=\infty</Math> , then <Math mode="inline" xml:id="C2.S3.I2.ix7.p1.m2">P_{0}(b)=0</Math> and each of the integrals <Math equation-number="2.3.22" mode="display" xml:id="C2.S3.E22">\int e^{ixp(t)}P_{s}(t)p^{\prime}(t)\mathrm{d}t, if s=0,1,2,\dots,</Math> converges at <Math mode="inline" xml:id="C2.S3.I2.ix7.p1.m3">t=b</Math> uniformly for all sufficiently large <Math mode="inline" xml:id="C2.S3.I2.ix7.p1.m4">x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C2.S3.SS4.p4.s1">
+If <Math mode="inline" xml:id="C2.S3.SS4.p4.m1">p(b)</Math> is finite, then both endpoints contribute: <Math equation-number="2.3.23" mode="display" xml:id="C2.S3.E23">\int_{a}^{b}e^{ixp(t)}q(t)\mathrm{d}t\sim e^{ixp(a)}\sum_{s=0}^{\infty}\exp \left(\frac{(s+\lambda)\pi i}{2\mu}\right)\Gamma\left(\frac{s+\lambda}{\mu} \right)\frac{b_{s}}{x^{(s+\lambda)/\mu}}-e^{ixp(b)}\sum_{s=0}^{\infty}P_{s}(b) \left(\frac{i}{x}\right)^{s+1}, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C2.S3.SS4.p4.s2">
+But if (d) applies, then the second sum is absent.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="47" xml:id="C2.S3.SS4.p4.s3">
+The coefficients <Math mode="inline" xml:id="C2.S3.SS4.p4.m2">b_{s}</Math> are defined as in §2.3(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C2.S3.SS4.p5.s1">
+For proofs of the results of this subsection, error bounds, and an example, seeOlver (1974).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C2.S3.SS4.p5.s2">
+For other estimates of the error term seeLyness (1971).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C2.S3.SS4.p5.s3">
+For extensions to oscillatory integrals with logarithmic singularities see Wong and Lin (1978).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S3.SS5">
+<title>Coalescing Peak and Endpoint: Bleistein’s Method</title>           
+<para xml:id="C2.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C2.S3.SS5.p1.s1">
+In the integral <Math equation-number="2.3.24" mode="display" xml:id="C2.S3.E24">I(\alpha,x)=\int_{0}^{k}e^{-xp(\alpha,t)}q(\alpha,t)t^{\lambda-1}\mathrm{d}t</Math> <Math mode="inline" xml:id="C2.S3.SS5.p1.m1">k</Math> ( <Math mode="inline" xml:id="C2.S3.SS5.p1.m2">\leq\infty</Math> ) and <Math mode="inline" xml:id="C2.S3.SS5.p1.m3">\lambda</Math> are positive constants, <Math mode="inline" xml:id="C2.S3.SS5.p1.m4">\alpha</Math> is a variable parameter in an interval <Math mode="inline" xml:id="C2.S3.SS5.p1.m5">\alpha_{1}\leq\alpha\leq\alpha_{2}</Math> with <Math mode="inline" xml:id="C2.S3.SS5.p1.m6">\alpha_{1}\leq 0</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p1.m7">0&lt;\alpha_{2}\leq k</Math> , and <Math mode="inline" xml:id="C2.S3.SS5.p1.m8">x</Math> is a large positive parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C2.S3.SS5.p1.s2">
+Assume also that <Math mode="inline" xml:id="C2.S3.SS5.p1.m9">\ifrac{{\partial}^{2}p(\alpha,t)}{{\partial t}^{2}}</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p1.m10">q(\alpha,t)</Math> are continuous in <Math mode="inline" xml:id="C2.S3.SS5.p1.m11">\alpha</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p1.m12">t</Math> , and for each <Math mode="inline" xml:id="C2.S3.SS5.p1.m13">\alpha</Math> the minimum value of <Math mode="inline" xml:id="C2.S3.SS5.p1.m14">p(\alpha,t)</Math> in <Math mode="inline" xml:id="C2.S3.SS5.p1.m15">[0,k)</Math> is at <Math mode="inline" xml:id="C2.S3.SS5.p1.m16">t=\alpha</Math> , at which point <Math mode="inline" xml:id="C2.S3.SS5.p1.m17">\ifrac{\partial p(\alpha,t)}{\partial t}</Math> vanishes, but both <Math mode="inline" xml:id="C2.S3.SS5.p1.m18">\ifrac{{\partial}^{2}p(\alpha,t)}{{\partial t}^{2}}</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p1.m19">q(\alpha,t)</Math> are nonzero.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="53" xml:id="C2.S3.SS5.p1.s3">
+When <Math mode="inline" xml:id="C2.S3.SS5.p1.m20">x\to+\infty</Math> Laplace’s method (§2.3(iii)) applies, but the form of the resulting approximation is discontinuous at <Math mode="inline" xml:id="C2.S3.SS5.p1.m21">\alpha=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="54" xml:id="C2.S3.SS5.p1.s4">
+In consequence, the approximation is nonuniform with respect to <Math mode="inline" xml:id="C2.S3.SS5.p1.m22">\alpha</Math> and deteriorates severely as <Math mode="inline" xml:id="C2.S3.SS5.p1.m23">\alpha\to 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C2.S3.SS5.p2.s1">
+A uniform approximation can be constructed by quadratic change of integration variable: <Math equation-number="2.3.25" mode="display" xml:id="C2.S3.E25">p(\alpha,t)=\tfrac{1}{2}w^{2}-aw+b,</Math> where <Math mode="inline" xml:id="C2.S3.SS5.p2.m1">a</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p2.m2">b</Math> are functions of <Math mode="inline" xml:id="C2.S3.SS5.p2.m3">\alpha</Math> chosen in such a way that <Math mode="inline" xml:id="C2.S3.SS5.p2.m4">t=0</Math> corresponds to <Math mode="inline" xml:id="C2.S3.SS5.p2.m5">w=0</Math> , and the stationary points <Math mode="inline" xml:id="C2.S3.SS5.p2.m6">t=\alpha</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p2.m7">w=a</Math> correspond.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C2.S3.SS5.p2.s2">
+Thus <Math equation-number="2.3.26" mode="display" xml:id="C2.S3.E26">a=(2p(\alpha,0)-2p(\alpha,\alpha))^{1/2},b=p(\alpha,0),</Math> <Math equation-number="2.3.27" mode="display" xml:id="C2.S3.E27">w=(2p(\alpha,0)-2p(\alpha,\alpha))^{1/2}\pm(2p(\alpha,t)-2p(\alpha,\alpha))^{1 /2},</Math> the upper or lower sign being taken according as <Math mode="inline" xml:id="C2.S3.SS5.p2.m8">t\gtrless\alpha</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C2.S3.SS5.p2.s3">
+The relationship between <Math mode="inline" xml:id="C2.S3.SS5.p2.m9">t</Math> and <Math mode="inline" xml:id="C2.S3.SS5.p2.m10">w</Math> is one-to-one, and because <Math equation-number="2.3.28" mode="display" xml:id="C2.S3.E28">\frac{\mathrm{d}w}{\mathrm{d}t}=\pm\frac{1}{(2p(\alpha,t)-2p(\alpha,\alpha))^{ 1/2}}\frac{\partial p(\alpha,t)}{\partial t}</Math> it is free from singularity at <Math mode="inline" xml:id="C2.S3.SS5.p2.m11">t=\alpha</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S3.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C2.S3.SS5.p3.s1">
+The integral (2.3.24)transforms into <Math equation-number="2.3.29" mode="display" xml:id="C2.S3.E29">I(\alpha,x)=e^{-xp(\alpha,0)}\*\int_{0}^{\kappa}\exp\left(-x\left(\tfrac{1}{2} w^{2}-aw\right)\right)f(\alpha,w)w^{\lambda-1}\mathrm{d}w,</Math> where <Math equation-number="2.3.30" mode="display" xml:id="C2.S3.E30">f(\alpha,w)=q(\alpha,t)\left(\frac{t}{w}\right)^{\lambda-1}\frac{\mathrm{d}t}{ \mathrm{d}w},</Math> <Math mode="inline" xml:id="C2.S3.SS5.p3.m1">\kappa=\kappa(\alpha)</Math> being the value of <Math mode="inline" xml:id="C2.S3.SS5.p3.m2">w</Math> at <Math mode="inline" xml:id="C2.S3.SS5.p3.m3">t=k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C2.S3.SS5.p3.s2">
+We now expand <Math mode="inline" xml:id="C2.S3.SS5.p3.m4">f(\alpha,w)</Math> in a Taylor series centered at the peak value <Math mode="inline" xml:id="C2.S3.SS5.p3.m5">w=a</Math> of the exponential factor in the integrand: <Math equation-number="2.3.31" mode="display" xml:id="C2.S3.E31">f(\alpha,w)=\sum_{s=0}^{\infty}\phi_{s}(\alpha)(w-a)^{s},</Math> with the coefficients <Math mode="inline" xml:id="C2.S3.SS5.p3.m6">\phi_{s}(\alpha)</Math> continuous at <Math mode="inline" xml:id="C2.S3.SS5.p3.m7">\alpha=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C2.S3.SS5.p3.s3">
+The desired uniform expansion is then obtained formally as in Watson’s lemma and Laplace’s method.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="61" xml:id="C2.S3.SS5.p3.s4">
+We replace the limit <Math mode="inline" xml:id="C2.S3.SS5.p3.m8">\kappa</Math> by <Math mode="inline" xml:id="C2.S3.SS5.p3.m9">\infty</Math> and integrate term-by-term: <Math equation-number="2.3.32" mode="display" xml:id="C2.S3.E32">I(\alpha,x)\sim\frac{e^{-xp(\alpha,0)}}{x^{\lambda/2}}\sum_{s=0}^{\infty}\phi_ {s}(\alpha)\frac{F_{s}(a\sqrt{x})}{x^{s/2}}, if x\to\infty,</Math> where <Math equation-number="2.3.33" mode="display" xml:id="C2.S3.E33">F_{s}(y)=\int_{0}^{\infty}\exp\left(-\tfrac{1}{2}\tau^{2}+y\tau\right)(\tau-y) ^{s}\tau^{\lambda-1}\mathrm{d}\tau</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S3.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C2.S3.SS5.p4.s1">
+For examples and proofs see Olver (1997b, Chapter 9),Bleistein (1966), Bleistein and Handelsman (1975, Chapter 9), andWong (1989, Chapter 7).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S6">
+<title>Relations to Other Functions</title>         
+<subsection xml:id="C9.S6.SS1">
+<title>Airy Functions as Bessel Functions, Hankel Functions, and Modified Bessel Functions</title>        
+      
+<para xml:id="C9.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S6.SS1.p1.s1">
+For the notation see §§10.2(ii) and 10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S6.SS1.p1.s2">
+With <Math equation-number="9.6.1" mode="display" xml:id="C9.S6.E1">\zeta=\tfrac{2}{3}z^{3/2},</Math> <Math equation-number="9.6.2" mode="display" xml:id="C9.S6.E2">\mathrm{Ai}\left(z\right)=\pi^{-1}\sqrt{z/3}K_{\pm 1/3}\left(\zeta\right)= \tfrac{1}{3}\sqrt{z}\left(I_{-1/3}\left(\zeta\right)-I_{1/3}\left(\zeta\right) \right)=\tfrac{1}{2}\sqrt{z/3}e^{2\pi i/3}{H^{(1)}_{1/3}}\left(\zeta e^{\pi i/ 2}\right)=\tfrac{1}{2}\sqrt{z/3}e^{\pi i/3}{H^{(1)}_{-1/3}}\left(\zeta e^{\pi i /2}\right)=\tfrac{1}{2}\sqrt{z/3}e^{-2\pi i/3}{H^{(2)}_{1/3}}\left(\zeta e^{- \pi i/2}\right)=\tfrac{1}{2}\sqrt{z/3}e^{-\pi i/3}{H^{(2)}_{-1/3}}\left(\zeta e ^{-\pi i/2}\right),</Math> , <Math equation-number="9.6.3" mode="display" xml:id="C9.S6.E3">\mathrm{Ai}'\left(z\right)=-\pi^{-1}(z/\sqrt{3})K_{\pm 2/3}\left(\zeta\right)= (z/3)\left(I_{2/3}\left(\zeta\right)-I_{-2/3}\left(\zeta\right)\right)=\tfrac{ 1}{2}(z/\sqrt{3})e^{-\pi i/6}{H^{(1)}_{2/3}}\left(\zeta e^{\pi i/2}\right)= \tfrac{1}{2}(z/\sqrt{3})e^{-5\pi i/6}{H^{(1)}_{-2/3}}\left(\zeta e^{\pi i/2} \right)=\tfrac{1}{2}(z/\sqrt{3})e^{\pi i/6}{H^{(2)}_{2/3}}\left(\zeta e^{-\pi i /2}\right)=\tfrac{1}{2}(z/\sqrt{3})e^{5\pi i/6}{H^{(2)}_{-2/3}}\left(\zeta e^{ -\pi i/2}\right),</Math> , <Math equation-number="9.6.4" mode="display" xml:id="C9.S6.E4">\mathrm{Bi}\left(z\right)=\sqrt{z/3}\left(I_{1/3}\left(\zeta\right)+I_{-1/3} \left(\zeta\right)\right)=\tfrac{1}{2}\sqrt{z/3}\left(e^{\pi i/6}{H^{(1)}_{1/3 }}\left(\zeta e^{-\pi i/2}\right)+e^{-\pi i/6}{H^{(2)}_{1/3}}\left(\zeta e^{ \pi i/2}\right)\right)=\tfrac{1}{2}\sqrt{z/3}\left(e^{-\pi i/6}{H^{(1)}_{-1/3} }\left(\zeta e^{-\pi i/2}\right)+e^{\pi i/6}{H^{(2)}_{-1/3}}\left(\zeta e^{\pi i /2}\right)\right),</Math> , <Math equation-number="9.6.5" mode="display" xml:id="C9.S6.E5">\mathrm{Bi}'\left(z\right)=(z/\sqrt{3})\left(I_{2/3}\left(\zeta\right)+I_{-2/3 }\left(\zeta\right)\right)=\tfrac{1}{2}(z/\sqrt{3})\left(e^{\pi i/3}{H^{(1)}_{ 2/3}}\left(\zeta e^{-\pi i/2}\right)+e^{-\pi i/3}{H^{(2)}_{2/3}}\left(\zeta e^ {\pi i/2}\right)\right)=\tfrac{1}{2}(z/\sqrt{3})\left(e^{-\pi i/3}{H^{(1)}_{-2 /3}}\left(\zeta e^{-\pi i/2}\right)+e^{\pi i/3}{H^{(2)}_{-2/3}}\left(\zeta e^{ \pi i/2}\right)\right),</Math> <Math equation-number="9.6.6" mode="display" xml:id="C9.S6.E6">\mathrm{Ai}\left(-z\right)=(\sqrt{z}/3)\left(J_{1/3}\left(\zeta\right)+J_{-1/3 }\left(\zeta\right)\right)=\tfrac{1}{2}\sqrt{z/3}\left(e^{\pi i/6}{H^{(1)}_{1/ 3}}\left(\zeta\right)+e^{-\pi i/6}{H^{(2)}_{1/3}}\left(\zeta\right)\right)= \tfrac{1}{2}\sqrt{z/3}\left(e^{-\pi i/6}{H^{(1)}_{-1/3}}\left(\zeta\right)+e^{ \pi i/6}{H^{(2)}_{-1/3}}\left(\zeta\right)\right),</Math> <Math equation-number="9.6.7" mode="display" xml:id="C9.S6.E7">\mathrm{Ai}'\left(-z\right)=(z/3)\left(J_{2/3}\left(\zeta\right)-J_{-2/3}\left (\zeta\right)\right)=\tfrac{1}{2}(z/\sqrt{3})\left(e^{-\pi i/6}{H^{(1)}_{2/3}} \left(\zeta\right)+e^{\pi i/6}{H^{(2)}_{2/3}}\left(\zeta\right)\right)=\tfrac{ 1}{2}(z/\sqrt{3})\left(e^{-5\pi i/6}{H^{(1)}_{-2/3}}\left(\zeta\right)+e^{5\pi i /6}{H^{(2)}_{-2/3}}\left(\zeta\right)\right),</Math> <Math equation-number="9.6.8" mode="display" xml:id="C9.S6.E8">\mathrm{Bi}\left(-z\right)=\sqrt{z/3}\left(J_{-1/3}\left(\zeta\right)-J_{1/3} \left(\zeta\right)\right)=\tfrac{1}{2}\sqrt{z/3}\left(e^{2\pi i/3}{H^{(1)}_{1/ 3}}\left(\zeta\right)+e^{-2\pi i/3}{H^{(2)}_{1/3}}\left(\zeta\right)\right)= \tfrac{1}{2}\sqrt{z/3}\left(e^{\pi i/3}{H^{(1)}_{-1/3}}\left(\zeta\right)+e^{- \pi i/3}{H^{(2)}_{-1/3}}\left(\zeta\right)\right),</Math> <Math equation-number="9.6.9" mode="display" xml:id="C9.S6.E9">\mathrm{Bi}'\left(-z\right)=(z/\sqrt{3})\left(J_{-2/3}\left(\zeta\right)+J_{2/ 3}\left(\zeta\right)\right)=\tfrac{1}{2}(z/\sqrt{3})\left(e^{\pi i/3}{H^{(1)}_ {2/3}}\left(\zeta\right)+e^{-\pi i/3}{H^{(2)}_{2/3}}\left(\zeta\right)\right)= \tfrac{1}{2}(z/\sqrt{3})\left(e^{-\pi i/3}{H^{(1)}_{-2/3}}\left(\zeta\right)+e ^{\pi i/3}{H^{(2)}_{-2/3}}\left(\zeta\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S6.SS2">
+<title>Bessel Functions, Hankel Functions, and Modified Bessel Functions as Airy Functions</title>          
+<para xml:id="C9.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C9.S6.SS2.p1.s1">
+Again, for the notation see §§10.2(ii) and 10.25(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C9.S6.SS2.p1.s2">
+With <Math equation-number="9.6.10" mode="display" xml:id="C9.S6.E10">z=(\tfrac{3}{2}\zeta)^{2/3},</Math> <Math equation-number="9.6.11" mode="display" xml:id="C9.S6.E11">J_{\pm 1/3}\left(\zeta\right)=\tfrac{1}{2}\sqrt{3/z}\left(\sqrt{3}\mathrm{Ai} \left(-z\right)\mp\mathrm{Bi}\left(-z\right)\right),</Math> , <Math equation-number="9.6.12" mode="display" xml:id="C9.S6.E12">J_{\pm 2/3}\left(\zeta\right)=\tfrac{1}{2}(\sqrt{3}/z)\left(\pm\sqrt{3}\mathrm {Ai}'\left(-z\right)+\mathrm{Bi}'\left(-z\right)\right),</Math> <Math equation-number="9.6.13" mode="display" xml:id="C9.S6.E13">I_{\pm 1/3}\left(\zeta\right)=\tfrac{1}{2}\sqrt{3/z}\left(\mp\sqrt{3}\mathrm{ Ai}\left(z\right)+\mathrm{Bi}\left(z\right)\right),</Math> , <Math equation-number="9.6.14" mode="display" xml:id="C9.S6.E14">I_{\pm 2/3}\left(\zeta\right)=\tfrac{1}{2}(\sqrt{3}/z)\left(\pm\sqrt{3}\mathrm {Ai}'\left(z\right)+\mathrm{Bi}'\left(z\right)\right),</Math> <Math equation-number="9.6.15" mode="display" xml:id="C9.S6.E15">K_{\pm 1/3}\left(\zeta\right)=\pi\sqrt{3/z}\mathrm{Ai}\left(z\right),</Math> , <Math equation-number="9.6.16" mode="display" xml:id="C9.S6.E16">K_{\pm 2/3}\left(\zeta\right)=-\pi(\sqrt{3}/z)\mathrm{Ai}'\left(z\right),</Math> <Math equation-number="9.6.17" mode="display" xml:id="C9.S6.E17">{H^{(1)}_{1/3}}\left(\zeta\right)=e^{-\pi i/3}{H^{(1)}_{-1/3}}\left(\zeta \right)=e^{-\pi i/6}\sqrt{3/z}\left(\mathrm{Ai}\left(-z\right)-i\mathrm{Bi} \left(-z\right)\right),</Math> , <Math equation-number="9.6.18" mode="display" xml:id="C9.S6.E18">{H^{(1)}_{2/3}}\left(\zeta\right)=e^{-2\pi i/3}{H^{(1)}_{-2/3}}\left(\zeta \right)=e^{\pi i/6}(\sqrt{3}/z)\left(\mathrm{Ai}'\left(-z\right)-i\mathrm{Bi}' \left(-z\right)\right),</Math> <Math equation-number="9.6.19" mode="display" xml:id="C9.S6.E19">{H^{(2)}_{1/3}}\left(\zeta\right)=e^{\pi i/3}{H^{(2)}_{-1/3}}\left(\zeta\right )=e^{\pi i/6}\sqrt{3/z}\left(\mathrm{Ai}\left(-z\right)+i\mathrm{Bi}\left(-z \right)\right),</Math> , <Math equation-number="9.6.20" mode="display" xml:id="C9.S6.E20">{H^{(2)}_{2/3}}\left(\zeta\right)=e^{2\pi i/3}{H^{(2)}_{-2/3}}\left(\zeta \right)=e^{-\pi i/6}(\sqrt{3}/z)\left(\mathrm{Ai}'\left(-z\right)+i\mathrm{Bi} '\left(-z\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S6.SS3">
+<title>Airy Functions as Confluent Hypergeometric Functions</title>           
+<para xml:id="C9.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C9.S6.SS3.p1.s1">
+For the notation see §§13.1, 13.2, and 13.14(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C9.S6.SS3.p1.s2">
+With <Math mode="inline" xml:id="C9.S6.SS3.p1.m1">\zeta</Math> as in (9.6.1),
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C9.S6.SS3.p1.s3">
+<Math equation-number="9.6.21" mode="display" xml:id="C9.S6.E21">\mathrm{Ai}\left(z\right)=\tfrac{1}{2}\pi^{-1/2}z^{-1/4}W_{0,1/3}\left(2\zeta \right)=3^{-1/6}\pi^{-1/2}\zeta^{2/3}e^{-\zeta}U\left(\tfrac{5}{6},\tfrac{5}{3 },2\zeta\right),</Math> , <Math equation-number="9.6.22" mode="display" xml:id="C9.S6.E22">\mathrm{Ai}'\left(z\right)=-\tfrac{1}{2}\pi^{-1/2}z^{1/4}W_{0,2/3}\left(2\zeta \right)=-3^{1/6}\pi^{-1/2}\zeta^{4/3}e^{-\zeta}U\left(\tfrac{7}{6},\tfrac{7}{3 },2\zeta\right),</Math> <Math equation-number="9.6.23" mode="display" xml:id="C9.S6.E23">\mathrm{Bi}\left(z\right)=\frac{1}{2^{1/3}\Gamma\left(\tfrac{2}{3}\right)}z^{- 1/4}M_{0,-1/3}\left(2\zeta\right)+\frac{3}{2^{5/3}\Gamma\left(\tfrac{1}{3} \right)}z^{-1/4}M_{0,1/3}\left(2\zeta\right),</Math> , <Math equation-number="9.6.24" mode="display" xml:id="C9.S6.E24">\mathrm{Bi}'\left(z\right)=\frac{2^{1/3}}{\Gamma\left(\tfrac{1}{3}\right)}z^{1 /4}M_{0,-2/3}\left(2\zeta\right)+\frac{3}{2^{10/3}\Gamma\left(\tfrac{2}{3} \right)}z^{1/4}M_{0,2/3}\left(2\zeta\right),</Math> <Math equation-number="9.6.25" mode="display" xml:id="C9.S6.E25">\mathrm{Bi}\left(z\right)=\frac{1}{3^{1/6}\Gamma\left(\tfrac{2}{3}\right)}e^{- \zeta}{{}_{1}F_{1}}\left(\tfrac{1}{6};\tfrac{1}{3};2\zeta\right)+\frac{3^{5/6} }{2^{2/3}\Gamma\left(\tfrac{1}{3}\right)}\zeta^{2/3}e^{-\zeta}{{}_{1}F_{1}} \left(\tfrac{5}{6};\tfrac{5}{3};2\zeta\right),</Math> , <Math equation-number="9.6.26" mode="display" xml:id="C9.S6.E26">\mathrm{Bi}'\left(z\right)=\frac{3^{1/6}}{\Gamma\left(\tfrac{1}{3}\right)}e^{- \zeta}{{}_{1}F_{1}}\left(-\tfrac{1}{6};-\tfrac{1}{3};2\zeta\right)+\frac{3^{7/ 6}}{2^{7/3}\Gamma\left(\tfrac{2}{3}\right)}\zeta^{4/3}e^{-\zeta}{{}_{1}F_{1}} \left(\tfrac{7}{6};\tfrac{7}{3};2\zeta\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C9.S6.SS3.p2.s1">
+To express Airy functions in terms of hypergeometric functions combine §9.6(i) with (10.39.9).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

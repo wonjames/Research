@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C34.S2">
+<title>Definition: <Math mode="inline" xml:id="C34.S2.m1">\mathit{3j}</Math> Symbol</title>           
+<para xml:id="C34.S2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C34.S2.p1.s1">
+The quantities <Math mode="inline" xml:id="C34.S2.p1.m1">j_{1},j_{2},j_{3}</Math> in the <Math mode="inline" xml:id="C34.S2.p1.m2">\mathit{3j}</Math> symbol are calledangular momenta.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C34.S2.p1.s2">
+Either all of them are nonnegative integers, or one is a nonnegative integer and the other two are half-odd positive integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C34.S2.p1.s3">
+They must form the sides of a triangle (possibly degenerate).They therefore satisfy the triangle conditions <Math equation-number="34.2.1" mode="display" xml:id="C34.S2.E1">|j_{r}-j_{s}|\leq j_{t}\leq j_{r}+j_{s},</Math> where <Math mode="inline" xml:id="C34.S2.p1.m6">r,s,t</Math> is any permutation of <Math mode="inline" xml:id="C34.S2.p1.m7">1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C34.S2.p1.s4">
+The correspondingprojective quantum numbers <Math mode="inline" xml:id="C34.S2.p1.m8">m_{1},m_{2},m_{3}</Math> are given by <Math equation-number="34.2.2" mode="display" xml:id="C34.S2.E2">m_{r}=-j_{r},-j_{r}+1,\dots,j_{r}-1,j_{r}, if r=1,2,3,</Math> and satisfy <Math equation-number="34.2.3" mode="display" xml:id="C34.S2.E3">m_{1}+m_{2}+m_{3}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C34.S2.p1.s5">
+See Figure 34.2.1 for a schematic representation.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="6" xml:id="C34.S2.F1.s1">
+Figure 34.2.1: Angular momenta <Math mode="inline" xml:id="C34.S2.F1.m2">j_{r}</Math> and projective quantum numbers <Math mode="inline" xml:id="C34.S2.F1.m3">m_{r}</Math> , <Math mode="inline" xml:id="C34.S2.F1.m4">r=1,2,3</Math> .
+</sentence>   
+<para xml:id="C34.S2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C34.S2.p2.s1">
+If either of the conditions (34.2.1) or (34.2.3) is not satisfied, then the <Math mode="inline" xml:id="C34.S2.p2.m1">\mathit{3j}</Math> symbol is zero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C34.S2.p2.s2">
+When both conditions are satisfied the <Math mode="inline" xml:id="C34.S2.p2.m2">\mathit{3j}</Math> symbol can be expressed as the finite sum <Math equation-number="34.2.4" mode="display" xml:id="C34.S2.E4">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}={(-1)^{j_{1}-j_{2}-m_{3}}}\Delta(j_{1}j_{2}j_{3 })\left((j_{1}+m_{1})!(j_{1}-m_{1})!(j_{2}+m_{2})!(j_{2}-m_{2})!(j_{3}+m_{3})! (j_{3}-m_{3})!\right)^{\frac{1}{2}}\*\sum_{s}\frac{(-1)^{s}}{s!(j_{1}+j_{2}-j_ {3}-s)!(j_{1}-m_{1}-s)!(j_{2}+m_{2}-s)!(j_{3}-j_{2}+m_{1}+s)!(j_{3}-j_{1}-m_{2 }+s)!}</Math> , where <Math equation-number="34.2.5" mode="display" xml:id="C34.S2.E5">\Delta(j_{1}j_{2}j_{3})=\left(\frac{(j_{1}+j_{2}-j_{3})!(j_{1}-j_{2}+j_{3})!(- j_{1}+j_{2}+j_{3})!}{(j_{1}+j_{2}+j_{3}+1)!}\right)^{\frac{1}{2}}</Math> , and the summation is over all nonnegative integers <Math mode="inline" xml:id="C34.S2.p2.m3">s</Math> such that the arguments in the factorials are nonnegative.
+</sentence>
+
+</para>
+ 
+<para xml:id="C34.S2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C34.S2.p3.s1">
+Equivalently, <Math equation-number="34.2.6" mode="display" xml:id="C34.S2.E6">\begin{pmatrix}j_{1}&amp;j_{2}&amp;j_{3}\\ m_{1}&amp;m_{2}&amp;m_{3}\end{pmatrix}={(-1)^{j_{2}-m_{1}+m_{3}}}\frac{(j_{1}+j_{2}+m_ {3})!(j_{2}+j_{3}-m_{1})!}{\Delta(j_{1}j_{2}j_{3})(j_{1}+j_{2}+j_{3}+1)!}\left (\frac{(j_{1}+m_{1})!(j_{3}-m_{3})!}{(j_{1}-m_{1})!(j_{2}+m_{2})!(j_{2}-m_{2}) !(j_{3}+m_{3})!}\right)^{\frac{1}{2}}\*{{{}_{3}F_{2}}\left(-j_{1}-j_{2}-j_{3}- 1,-j_{1}+m_{1},-j_{3}-m_{3};-j_{1}-j_{2}-m_{3},-j_{2}-j_{3}+m_{1};1\right)},</Math> where <Math mode="inline" xml:id="C34.S2.p3.m1">{{}_{3}F_{2}}</Math> is defined as in §16.2.
+</sentence>
+
+</para>
+   
+<para xml:id="C34.S2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C34.S2.p4.s1">
+For alternative expressions for the <Math mode="inline" xml:id="C34.S2.p4.m1">\mathit{3j}</Math> symbol, written either as a finite sum or as other terminating generalized hypergeometric series <Math mode="inline" xml:id="C34.S2.p4.m2">{{}_{3}F_{2}}</Math> of unit argument, seeVarshalovich et al. (1988, §§8.21, 8.24–8.26).
+</sentence>
+
+</para>
+ 
+</section>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S16">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C30.S16.SS1">
+<title>Eigenvalues</title>        
+  
+<para xml:id="C30.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S16.SS1.p1.s1">
+For small <Math mode="inline" xml:id="C30.S16.SS1.p1.m1">|\gamma^{2}|</Math> we can use the power-series expansion (30.3.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S16.SS1.p1.s2">
+Schäfke and Groh (1962) gives corresponding error bounds.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C30.S16.SS1.p1.s3">
+If <Math mode="inline" xml:id="C30.S16.SS1.p1.m2">|\gamma^{2}|</Math> is large we can use the asymptotic expansions in §30.9.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C30.S16.SS1.p1.s4">
+Approximations to eigenvalues can be improved by using the continued-fraction equations from §30.3(iii) and §30.8; see Bouwkamp (1947) and Meixner and Schäfke (1954, §3.93).
+</sentence>
+
+</para>
+    
+<para xml:id="C30.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C30.S16.SS1.p2.s1">
+Another method is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C30.S16.SS1.p2.s2">
+Let <Math mode="inline" xml:id="C30.S16.SS1.p2.m1">n-m</Math> be even.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C30.S16.SS1.p2.s3">
+For <Math mode="inline" xml:id="C30.S16.SS1.p2.m2">d</Math> sufficiently large, construct the <Math mode="inline" xml:id="C30.S16.SS1.p2.m3">d\times d</Math> tridiagonal matrix <Math mode="inline" xml:id="C30.S16.SS1.p2.m4">\mathbf{A}=[A_{j,k}]</Math> with nonzero elements <Math equation-number="30.16.1" mode="display" xml:id="C30.S16.E1">A_{j,j}=(m+2j-2)(m+2j-1)-2\gamma^{2}\frac{(m+2j-2)(m+2j-1)-1+m^{2}}{(2m+4j-5)( 2m+4j-1)},A_{j,j+1}=-\gamma^{2}\frac{(2m+2j-1)(2m+2j)}{(2m+4j-1)(2m+4j+1)},A_{j,j-1}=-\gamma^{2}\frac{(2j-3)(2j-2)}{(2m+4j-7)(2m+4j-5)},</Math> and real eigenvalues <Math mode="inline" xml:id="C30.S16.SS1.p2.m5">\alpha_{1,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m6">\alpha_{2,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m7">\dots</Math> , <Math mode="inline" xml:id="C30.S16.SS1.p2.m8">\alpha_{d,d}</Math> ,arranged in ascending order of magnitude.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C30.S16.SS1.p2.s4">
+Then <Math equation-number="30.16.2" mode="display" xml:id="C30.S16.E2">\alpha_{j,d+1}\leq\alpha_{j,d},</Math> and <Math equation-number="30.16.3" mode="display" xml:id="C30.S16.E3">\lambda^{m}_{n}\left(\gamma^{2}\right)=\lim_{d\to\infty}\alpha_{p,d}, if p=\left\lfloor\frac{1}{2}(n-m)\right\rfloor+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C30.S16.SS1.p2.s5">
+The eigenvalues of <Math mode="inline" xml:id="C30.S16.SS1.p2.m9">\mathbf{A}</Math> can be computed by methods indicated in §§3.2(vi), 3.2(vii).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C30.S16.SS1.p2.s6">
+The error satisfies <Math equation-number="30.16.4" mode="display" xml:id="C30.S16.E4">\alpha_{p,d}-\lambda^{m}_{n}\left(\gamma^{2}\right)=O\left(\frac{\gamma^{4d}}{ 4^{2d+1}((m+2d-1)!(m+2d+1)!)^{2}}\right), if d\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C30.S16.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C30.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C30.S16.Px1.p1.s1">
+For <Math mode="inline" xml:id="C30.S16.Px1.p1.m1">m=2</Math> , <Math mode="inline" xml:id="C30.S16.Px1.p1.m2">n=4</Math> , <Math mode="inline" xml:id="C30.S16.Px1.p1.m3">\gamma^{2}=10</Math> , <Math equation-number="30.16.5" mode="display" xml:id="C30.S16.E5">\alpha_{2,2}=14.18833\;246,\alpha_{2,3}=13.98002\;013,\alpha_{2,4}=13.97907\;459,\alpha_{2,5}=13.97907\;345,\alpha_{2,6}=13.97907\;345</Math> , which yields <Math mode="inline" xml:id="C30.S16.Px1.p1.m4">\lambda^{2}_{4}\left(10\right)=13.97907\;34</Math> 5. If <Math mode="inline" xml:id="C30.S16.Px1.p1.m5">n-m</Math> is odd, then (30.16.1) is replaced by <Math equation-number="30.16.6" mode="display" xml:id="C30.S16.E6">A_{j,j}=(m+2j-1)(m+2j)-2\gamma^{2}\*\frac{(m+2j-1)(m+2j)-1+m^{2}}{(2m+4j-3)(2m +4j+1)},A_{j,j+1}=-\gamma^{2}\frac{(2m+2j)(2m+2j+1)}{(2m+4j+1)(2m+4j+3)},A_{j,j-1}=-\gamma^{2}\frac{(2j-2)(2j-1)}{(2m+4j-5)(2m+4j-3)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S16.SS2">
+<title>Spheroidal Wave Functions of the First Kind</title>          
+<para xml:id="C30.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C30.S16.SS2.p1.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p1.m1">|\gamma^{2}|</Math> is large, then we can use the asymptotic expansions referred to in §30.9 to approximate <Math mode="inline" xml:id="C30.S16.SS2.p1.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C30.S16.SS2.p2.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p2.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> is known, then we can compute <Math mode="inline" xml:id="C30.S16.SS2.p2.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> (not normalized) by solving the differential equation (30.2.1) numerically with initial conditions <Math mode="inline" xml:id="C30.S16.SS2.p2.m3">w(0)=1</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p2.m4">w^{\prime}(0)=0</Math> if <Math mode="inline" xml:id="C30.S16.SS2.p2.m5">n-m</Math> is even, or <Math mode="inline" xml:id="C30.S16.SS2.p2.m6">w(0)=0</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p2.m7">w^{\prime}(0)=1</Math> if <Math mode="inline" xml:id="C30.S16.SS2.p2.m8">n-m</Math> is odd.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C30.S16.SS2.p3.s1">
+If <Math mode="inline" xml:id="C30.S16.SS2.p3.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> is known, then <Math mode="inline" xml:id="C30.S16.SS2.p3.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> can be found by summing (30.8.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C30.S16.SS2.p3.s2">
+The coefficients <Math mode="inline" xml:id="C30.S16.SS2.p3.m3">a^{m}_{n,r}(\gamma^{2})</Math> are computed as the recessive solution of (30.8.4) (§3.6), and normalized via (30.8.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C30.S16.SS2.p4.s1">
+A fourth method, based on the expansion (30.8.1), is as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C30.S16.SS2.p4.s2">
+Let <Math mode="inline" xml:id="C30.S16.SS2.p4.m1">\mathbf{A}</Math> be the <Math mode="inline" xml:id="C30.S16.SS2.p4.m2">d\times d</Math> matrix given by (30.16.1) if <Math mode="inline" xml:id="C30.S16.SS2.p4.m3">n-m</Math> is even, or by (30.16.6) if <Math mode="inline" xml:id="C30.S16.SS2.p4.m4">n-m</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C30.S16.SS2.p4.s3">
+Form the eigenvector <Math mode="inline" xml:id="C30.S16.SS2.p4.m5">[e_{1,d},e_{2,d},\dots,e_{d,d}]^{\mathrm{T}}</Math> of <Math mode="inline" xml:id="C30.S16.SS2.p4.m6">\mathbf{A}</Math> associated with the eigenvalue <Math mode="inline" xml:id="C30.S16.SS2.p4.m7">\alpha_{p,d}</Math> , <Math mode="inline" xml:id="C30.S16.SS2.p4.m8">p=\left\lfloor\frac{1}{2}(n-m)\right\rfloor+1</Math> , normalized according to <Math equation-number="30.16.7" mode="display" xml:id="C30.S16.E7">\sum_{j=1}^{d}e_{j,d}^{2}\frac{(n+m+2j-2p)!}{(n-m+2j-2p)!}\frac{1}{2n+4j-4p+1} =\frac{(n+m)!}{(n-m)!}\frac{1}{2n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C30.S16.SS2.p4.s4">
+Then <Math equation-number="30.16.8" mode="display" xml:id="C30.S16.E8">a_{n,k}^{m}(\gamma^{2})=\lim_{d\to\infty}e_{k+p,d},</Math> <Math equation-number="30.16.9" mode="display" xml:id="C30.S16.E9">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=\lim_{d\to\infty}\sum_{j=1}^{d}(- 1)^{j-p}e_{j,d}\mathsf{P}^{m}_{n+2(j-p)}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="20" xml:id="C30.S16.SS2.p4.s5">
+For error estimates see Volkmer (2004a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S16.SS3">
+<title>Radial Spheroidal Wave Functions</title>        
+  
+<para xml:id="C30.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C30.S16.SS3.p1.s1">
+The coefficients <Math mode="inline" xml:id="C30.S16.SS3.p1.m1">a_{n,k}^{m}(\gamma^{2})</Math> calculated in §30.16(ii) can be used to compute <Math mode="inline" xml:id="C30.S16.SS3.p1.m2">S^{m(j)}_{n}\left(z,\gamma\right)</Math> , <Math mode="inline" xml:id="C30.S16.SS3.p1.m3">j=1,2,3,4</Math> from (30.11.3) as well as the connection coefficients <Math mode="inline" xml:id="C30.S16.SS3.p1.m4">K_{n}^{m}(\gamma)</Math> from (30.11.10) and (30.11.11).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S16.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C30.S16.SS3.p2.s1">
+For other methods see Van Buren and Boisvert (2002, 2004).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

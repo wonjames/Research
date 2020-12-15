@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C24.S7">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C24.S7.SS1">
+<title>Bernoulli and Euler Numbers</title>        
+  
+<para xml:id="C24.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C24.S7.SS1.p1.s1">
+The identities in this subsection hold for <Math mode="inline" xml:id="C24.S7.SS1.p1.m1">n=1,2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C24.S7.SS1.p1.s2">
+(24.7.6) also holds for <Math mode="inline" xml:id="C24.S7.SS1.p1.m2">n=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C24.S7.SS1.p1.s3">
+<Math equation-number="24.7.1" mode="display" xml:id="C24.S7.E1">B_{2n}=(-1)^{n+1}\frac{4n}{1-2^{1-2n}}\int_{0}^{\infty}\frac{t^{2n-1}}{e^{2\pi t }+1}\mathrm{d}t=(-1)^{n+1}\frac{2n}{1-2^{1-2n}}\int_{0}^{\infty}t^{2n-1}e^{- \pi t}\operatorname{sech}\left(\pi t\right)\mathrm{d}t,</Math> , <Math equation-number="24.7.2" mode="display" xml:id="C24.S7.E2">B_{2n}=(-1)^{n+1}4n\int_{0}^{\infty}\frac{t^{2n-1}}{e^{2\pi t}-1}\mathrm{d}t=( -1)^{n+1}2n\int_{0}^{\infty}t^{2n-1}e^{-\pi t}\operatorname{csch}\left(\pi t \right)\mathrm{d}t,</Math> , <Math equation-number="24.7.3" mode="display" xml:id="C24.S7.E3">B_{2n}=(-1)^{n+1}\frac{\pi}{1-2^{1-2n}}\int_{0}^{\infty}t^{2n}{\operatorname{ sech}^{2}}\left(\pi t\right)\mathrm{d}t,</Math> , <Math equation-number="24.7.4" mode="display" xml:id="C24.S7.E4">B_{2n}=(-1)^{n+1}\pi\int_{0}^{\infty}t^{2n}{\operatorname{csch}^{2}}\left(\pi t \right)\mathrm{d}t,</Math> , <Math equation-number="24.7.5" mode="display" xml:id="C24.S7.E5">B_{2n}=(-1)^{n}\frac{2n(2n-1)}{\pi}\*\int_{0}^{\infty}t^{2n-2}\ln\left(1-e^{-2 \pi t}\right)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C24.S7.SS1.p1.s4">
+<Math equation-number="24.7.6" mode="display" xml:id="C24.S7.E6">E_{2n}=(-1)^{n}2^{2n+1}\int_{0}^{\infty}t^{2n}\operatorname{sech}\left(\pi t \right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S7.SS2">
+<title>Bernoulli and Euler Polynomials</title>        
+   
+<para xml:id="C24.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C24.S7.SS2.p1.s1">
+The following four equations hold for <Math mode="inline" xml:id="C24.S7.SS2.p1.m1">0&lt;\Re x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C24.S7.SS2.p1.s2">
+<Math equation-number="24.7.7" mode="display" xml:id="C24.S7.E7">B_{2n}\left(x\right)=(-1)^{n+1}2n\*\int_{0}^{\infty}\frac{\cos\left(2\pi x \right)-e^{-2\pi t}}{\cosh\left(2\pi t\right)-\cos\left(2\pi x\right)}t^{2n-1} \mathrm{d}t, if n=1,2,\dots,</Math> , <Math equation-number="24.7.8" mode="display" xml:id="C24.S7.E8">B_{2n+1}\left(x\right)=(-1)^{n+1}(2n+1)\*\int_{0}^{\infty}\frac{\sin\left(2\pi x \right)}{\cosh\left(2\pi t\right)-\cos\left(2\pi x\right)}t^{2n}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C24.S7.SS2.p1.s3">
+<Math equation-number="24.7.9" mode="display" xml:id="C24.S7.E9">E_{2n}\left(x\right)=(-1)^{n}4\int_{0}^{\infty}\frac{\sin\left(\pi x\right) \cosh\left(\pi t\right)}{\cosh\left(2\pi t\right)-\cos\left(2\pi x\right)}t^{2 n}\mathrm{d}t,</Math> , <Math equation-number="24.7.10" mode="display" xml:id="C24.S7.E10">E_{2n+1}\left(x\right)=(-1)^{n+1}4\*\int_{0}^{\infty}\frac{\cos\left(\pi x \right)\sinh\left(\pi t\right)}{\cosh\left(2\pi t\right)-\cos\left(2\pi x \right)}t^{2n+1}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C24.S7.Px1">
+<title>Mellin–Barnes Integral</title>   
+<para xml:id="C24.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C24.S7.Px1.p1.s1">
+ <Math equation-number="24.7.11" mode="display" xml:id="C24.S7.E11">B_{n}\left(x\right)=\frac{1}{2\pi i}\int_{-c-i\infty}^{-c+i\infty}(x+t)^{n} \left(\frac{\pi}{\sin\left(\pi t\right)}\right)^{2}\mathrm{d}t, if 0&lt;c&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S7.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C24.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C24.S7.SS3.p1.s1">
+For further integral representations seePrudnikov et al. (1986a, §§2.3–2.6)andGradshteyn and Ryzhik (2000, Chapters 3 and 4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

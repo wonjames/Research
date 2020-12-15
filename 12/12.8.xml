@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C12.S8">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C12.S8.SS1">
+<title>Recurrence Relations</title>        
+ 
+ 
+<para xml:id="C12.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S8.SS1.p1.s1">
+ <Math equation-number="12.8.1" mode="display" xml:id="C12.S8.E1">zU\left(a,z\right)-U\left(a-1,z\right)+(a+\tfrac{1}{2})U\left(a+1,z\right)=0,</Math> , <Math equation-number="12.8.2" mode="display" xml:id="C12.S8.E2">U'\left(a,z\right)+\tfrac{1}{2}zU\left(a,z\right)+(a+\tfrac{1}{2})U\left(a+1,z \right)=0,</Math> , <Math equation-number="12.8.3" mode="display" xml:id="C12.S8.E3">U'\left(a,z\right)-\tfrac{1}{2}zU\left(a,z\right)+U\left(a-1,z\right)=0,</Math> , <Math equation-number="12.8.4" mode="display" xml:id="C12.S8.E4">2U'\left(a,z\right)+U\left(a-1,z\right)+(a+\tfrac{1}{2})U\left(a+1,z\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C12.S8.SS1.p1.s2">
+(12.8.1)–(12.8.4) are also satisfied by <Math mode="inline" xml:id="C12.S8.SS1.p1.m1">\overline{U}\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C12.S8.SS1.p1.s3">
+<Math equation-number="12.8.5" mode="display" xml:id="C12.S8.E5">zV\left(a,z\right)-V\left(a+1,z\right)+(a-\tfrac{1}{2})V\left(a-1,z\right)=0,</Math> , <Math equation-number="12.8.6" mode="display" xml:id="C12.S8.E6">V'\left(a,z\right)-\tfrac{1}{2}zV\left(a,z\right)-(a-\tfrac{1}{2})V\left(a-1,z \right)=0,</Math> , <Math equation-number="12.8.7" mode="display" xml:id="C12.S8.E7">V'\left(a,z\right)+\tfrac{1}{2}zV\left(a,z\right)-V\left(a+1,z\right)=0,</Math> , <Math equation-number="12.8.8" mode="display" xml:id="C12.S8.E8">2V'\left(a,z\right)-V\left(a+1,z\right)-(a-\tfrac{1}{2})V\left(a-1,z\right)=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S8.SS2">
+<title>Derivatives</title>        
+  
+<para xml:id="C12.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C12.S8.SS2.p1.s1">
+For <Math mode="inline" xml:id="C12.S8.SS2.p1.m1">m=0,1,2,\dots</Math> , <Math equation-number="12.8.9" mode="display" xml:id="C12.S8.E9">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{\frac{1}{4}z^{2}}U\left(a,z \right)\right)=(-1)^{m}{\left(\tfrac{1}{2}+a\right)_{m}}e^{\frac{1}{4}z^{2}}U \left(a+m,z\right),</Math> <Math equation-number="12.8.10" mode="display" xml:id="C12.S8.E10">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{-\frac{1}{4}z^{2}}U\left(a, z\right)\right)=(-1)^{m}e^{-\frac{1}{4}z^{2}}U\left(a-m,z\right),</Math> <Math equation-number="12.8.11" mode="display" xml:id="C12.S8.E11">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{\frac{1}{4}z^{2}}V\left(a,z \right)\right)=e^{\frac{1}{4}z^{2}}V\left(a+m,z\right),</Math> <Math equation-number="12.8.12" mode="display" xml:id="C12.S8.E12">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{-\frac{1}{4}z^{2}}V\left(a, z\right)\right)=(-1)^{m}{\left(\tfrac{1}{2}-a\right)_{m}}e^{-\frac{1}{4}z^{2}} V\left(a-m,z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

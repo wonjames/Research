@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S18">
+<title>Methods of Computation</title>        
+   
+ 
+<subsection xml:id="C6.S18.SS1">
+<title>Main Functions</title>        
+ 
+<para xml:id="C6.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S18.SS1.p1.s1">
+For small or moderate values of <Math mode="inline" xml:id="C6.S18.SS1.p1.m1">x</Math> and <Math mode="inline" xml:id="C6.S18.SS1.p1.m2">|z|</Math> , the expansion in power series (§6.6) or in series of spherical Bessel functions (§6.10(ii)) can be used. For large <Math mode="inline" xml:id="C6.S18.SS1.p1.m3">x</Math> or <Math mode="inline" xml:id="C6.S18.SS1.p1.m4">|z|</Math> these series suffer from slow convergence or cancellation (or both).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C6.S18.SS1.p1.s2">
+However, this problem is less severe for the series of spherical Bessel functions because of their more rapid rate of convergence, and also (except in the case of (6.10.6))absence of cancellation when <Math mode="inline" xml:id="C6.S18.SS1.p1.m5">z=x</Math> ( <Math mode="inline" xml:id="C6.S18.SS1.p1.m6">&gt;0</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C6.S18.SS1.p2.s1">
+For large <Math mode="inline" xml:id="C6.S18.SS1.p2.m1">x</Math> and <Math mode="inline" xml:id="C6.S18.SS1.p2.m2">\left|z\right|</Math> , expansions in inverse factorial series (§6.10(i)) or asymptotic expansions (§6.12) are available.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C6.S18.SS1.p2.s2">
+The attainable accuracy of the asymptotic expansions can be increased considerably by exponential improvement.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C6.S18.SS1.p2.s3">
+Also, other ranges of <Math mode="inline" xml:id="C6.S18.SS1.p2.m3">\operatorname{ph}z</Math> can be covered by use of the continuation formulas of §6.4.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S18.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C6.S18.SS1.p3.s1">
+Quadrature of the integral representations is another effective method.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C6.S18.SS1.p3.s2">
+For example, the Gauss-Laguerre formula (§3.5(v)) can be applied to (6.2.2); see Todd (1954) and Tseng and Lee (1998).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C6.S18.SS1.p3.s3">
+For an application of the Gauss-Legendre formula (§3.5(v)) seeTooper and Mark (1968).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C6.S18.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C6.S18.SS1.p4.s1">
+Lastly, the continued fraction (6.9.1) can be used if <Math mode="inline" xml:id="C6.S18.SS1.p4.m1">|z|</Math> is bounded away from the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C6.S18.SS1.p4.s2">
+Convergence becomes slow when <Math mode="inline" xml:id="C6.S18.SS1.p4.m2">z</Math> is near the negative real axis, however.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS2">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C6.S18.SS2.p1.s1">
+Power series, asymptotic expansions, and quadrature can also be used to compute the functions <Math mode="inline" xml:id="C6.S18.SS2.p1.m1">\mathrm{f}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S18.SS2.p1.m2">\mathrm{g}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C6.S18.SS2.p1.s2">
+In addition,Acton (1974) developed a recurrence procedure, as follows.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C6.S18.SS2.p1.s3">
+For <Math mode="inline" xml:id="C6.S18.SS2.p1.m3">n=0,1,2,\dots</Math> , define <Math equation-number="6.18.1" mode="display" xml:id="C6.S18.E1">A_{n}=\int_{0}^{\infty}\frac{te^{-zt}}{1+t^{2}}\left(\frac{t^{2}}{1+t^{2}} \right)^{n}\mathrm{d}t,B_{n}=\int_{0}^{\infty}\frac{e^{-zt}}{1+t^{2}}\left(\frac{t^{2}}{1+t^{2}} \right)^{n}\mathrm{d}t,C_{n}=\int_{0}^{\infty}e^{-zt}\left(\frac{t^{2}}{1+t^{2}}\right)^{n}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C6.S18.SS2.p1.s4">
+Then <Math mode="inline" xml:id="C6.S18.SS2.p1.m4">\mathrm{f}\left(z\right)=B_{0}</Math> , <Math mode="inline" xml:id="C6.S18.SS2.p1.m5">\mathrm{g}\left(z\right)=A_{0}</Math> , and <Math equation-number="6.18.2" mode="display" xml:id="C6.S18.E2">A_{n-1}=A_{n}+\frac{z}{2n}C_{n},B_{n-1}=\frac{2nB_{n}+zA_{n-1}}{2n-1},C_{n-1}=C_{n}+B_{n-1}, , if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" xml:id="C6.S18.SS2.p1.s5">
+<Math mode="inline" xml:id="C6.S18.SS2.p1.m6">A_{0}</Math> , <Math mode="inline" xml:id="C6.S18.SS2.p1.m7">B_{0}</Math> , and <Math mode="inline" xml:id="C6.S18.SS2.p1.m8">C_{0}</Math> can be computed by Miller’s algorithm (§3.6(iii)), starting with initial values <Math mode="inline" xml:id="C6.S18.SS2.p1.m9">(A_{N},B_{N},C_{N})=(1,0,0)</Math> , say, where <Math mode="inline" xml:id="C6.S18.SS2.p1.m10">N</Math> is an arbitrary large integer, and normalizing via <Math mode="inline" xml:id="C6.S18.SS2.p1.m11">C_{0}=1/z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS3">
+<title>Zeros</title>           
+<para xml:id="C6.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C6.S18.SS3.p1.s1">
+Zeros of <Math mode="inline" xml:id="C6.S18.SS3.p1.m1">\mathrm{Ci}\left(x\right)</Math> and <Math mode="inline" xml:id="C6.S18.SS3.p1.m2">\mathrm{si}\left(x\right)</Math> can be computed to high precision by Newton’s rule (§3.8(ii)), using values supplied by the asymptotic expansion (6.13.2) as initial approximations.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S18.SS4">
+<title>Other References</title>        
+ 
+<para xml:id="C6.S18.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C6.S18.SS4.p1.s1">
+For a comprehensive survey of computational methods for the functions treated in this chapter, see van der Laan and Temme (1984, Ch.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C6.S18.SS4.p1.s2">
+IV).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S20">
+<title>Expansions for Small <Math mode="inline" xml:id="C33.S20.m1">|\epsilon|</Math></title>        
+ 
+<subsection xml:id="C33.S20.SS1">
+<title>Case <Math mode="inline" xml:id="C33.S20.SS1.m1">\epsilon=0</Math></title>        
+    
+<para xml:id="C33.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S20.SS1.p1.s1">
+ <Math equation-number="33.20.1" mode="display" xml:id="C33.S20.E1">f\left(0,\ell;r\right)=(2r)^{1/2}J_{2\ell+1}\left(\sqrt{8r}\right),h\left(0,\ell;r\right)=-(2r)^{1/2}Y_{2\ell+1}\left(\sqrt{8r}\right), , if r&gt;0,</Math> <Math equation-number="33.20.2" mode="display" xml:id="C33.S20.E2">f\left(0,\ell;r\right)=(-1)^{\ell+1}(2|r|)^{1/2}I_{2\ell+1}\left(\sqrt{8|r|} \right),h\left(0,\ell;r\right)=(-1)^{\ell}(2/\pi)(2|r|)^{1/2}K_{2\ell+1}\left(\sqrt{8| r|}\right), , if r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C33.S20.SS1.p1.s2">
+For the functions <Math mode="inline" xml:id="C33.S20.SS1.p1.m1">J</Math> , <Math mode="inline" xml:id="C33.S20.SS1.p1.m2">Y</Math> , <Math mode="inline" xml:id="C33.S20.SS1.p1.m3">I</Math> , and <Math mode="inline" xml:id="C33.S20.SS1.p1.m4">K</Math> see §§10.2(ii), 10.25(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS2">
+<title>Power-Series in <Math mode="inline" xml:id="C33.S20.SS2.m1">\epsilon</Math> for the Regular Solution</title>          
+<para xml:id="C33.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C33.S20.SS2.p1.s1">
+ <Math equation-number="33.20.3" mode="display" xml:id="C33.S20.E3">f\left(\epsilon,\ell;r\right)=\sum_{k=0}^{\infty}\epsilon^{k}{\sf F}_{k}(\ell; r),</Math> where <Math equation-number="33.20.4" mode="display" xml:id="C33.S20.E4">{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}J_{2\ell+1+p}\left( \sqrt{8r}\right), if r&gt;0,</Math> <Math equation-number="33.20.5" mode="display" xml:id="C33.S20.E5">{\sf F}_{k}(\ell;r)=\sum_{p=2k}^{3k}(-1)^{\ell+1+p}(2|r|)^{(p+1)/2}C_{k,p}I_{2 \ell+1+p}\left(\sqrt{8|r|}\right), if r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C33.S20.SS2.p1.s2">
+The functions <Math mode="inline" xml:id="C33.S20.SS2.p1.m1">J</Math> and <Math mode="inline" xml:id="C33.S20.SS2.p1.m2">I</Math> are as in §§10.2(ii),10.25(ii),and the coefficients <Math mode="inline" xml:id="C33.S20.SS2.p1.m3">C_{k,p}</Math> are given by <Math mode="inline" xml:id="C33.S20.SS2.p1.m4">C_{0,0}=1</Math> , <Math mode="inline" xml:id="C33.S20.SS2.p1.m5">C_{1,0}=0</Math> , and <Math equation-number="33.20.6" mode="display" xml:id="C33.S20.E6">C_{k,p}=0, if p&lt;2k or p&gt;3k, //// C_{k,p}=\left(-(2\ell+p)C_{k-1,p-2}+C_{k-1,p-3}\right)/(4p), if k&gt;0, 2k\leq p\leq 3k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C33.S20.SS2.p1.s3">
+The series (33.20.3)converges for all <Math mode="inline" xml:id="C33.S20.SS2.p1.m6">r</Math> and <Math mode="inline" xml:id="C33.S20.SS2.p1.m7">\epsilon</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS3">
+<title>Asymptotic Expansion for the Irregular Solution</title>          
+<para xml:id="C33.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C33.S20.SS3.p1.s1">
+As <Math mode="inline" xml:id="C33.S20.SS3.p1.m1">\epsilon\to 0</Math> with <Math mode="inline" xml:id="C33.S20.SS3.p1.m2">\ell</Math> and <Math mode="inline" xml:id="C33.S20.SS3.p1.m3">r</Math> fixed, <Math equation-number="33.20.7" mode="display" xml:id="C33.S20.E7">h\left(\epsilon,\ell;r\right)\sim-A(\epsilon,\ell)\sum_{k=0}^{\infty}\epsilon^ {k}{\sf H}_{k}(\ell;r),</Math> where <Math mode="inline" xml:id="C33.S20.SS3.p1.m4">A(\epsilon,\ell)</Math> is given by (33.14.11), (33.14.12), and <Math equation-number="33.20.8" mode="display" xml:id="C33.S20.E8">{\sf H}_{k}(\ell;r)=\sum_{p=2k}^{3k}(2r)^{(p+1)/2}C_{k,p}Y_{2\ell+1+p}\left( \sqrt{8r}\right), if r&gt;0,</Math> <Math equation-number="33.20.9" mode="display" xml:id="C33.S20.E9">{\sf H}_{k}(\ell;r)=(-1)^{\ell+1}\frac{2}{\pi}\sum_{p=2k}^{3k}(2|r|)^{(p+1)/2} C_{k,p}K_{2\ell+1+p}\left(\sqrt{8|r|}\right), if r&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C33.S20.SS3.p1.s2">
+The functions <Math mode="inline" xml:id="C33.S20.SS3.p1.m7">Y</Math> and <Math mode="inline" xml:id="C33.S20.SS3.p1.m8">K</Math> are as in §§10.2(ii),10.25(ii),and the coefficients <Math mode="inline" xml:id="C33.S20.SS3.p1.m9">C_{k,p}</Math> are given by (33.20.6).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S20.SS4">
+<title>Uniform Asymptotic Expansions</title>           
+ 
+<para xml:id="C33.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S20.SS4.p1.s1">
+For a comprehensive collection of asymptotic expansions that cover <Math mode="inline" xml:id="C33.S20.SS4.p1.m1">f\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S20.SS4.p1.m2">h\left(\epsilon,\ell;r\right)</Math> as <Math mode="inline" xml:id="C33.S20.SS4.p1.m3">\epsilon\to 0\pm</Math> and are uniform in <Math mode="inline" xml:id="C33.S20.SS4.p1.m4">r</Math> , including unbounded values, seeCurtis (1964a, §7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C33.S20.SS4.p1.s2">
+These expansions are in terms of elementary functions, Airy functions, and Bessel functions of orders <Math mode="inline" xml:id="C33.S20.SS4.p1.m5">2\ell+1</Math> and <Math mode="inline" xml:id="C33.S20.SS4.p1.m6">2\ell+2</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

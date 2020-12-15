@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C11">
+<title>Struve and Related Functions</title>               
+          
+<section xml:id="C11.S1">
+<title>Special Notation</title>           
+<para xml:id="C11.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C11.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C11.S1.p1.t1.s2">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C11.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C11.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C11.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r3.m1">\nu</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C11.S1.p1.t1.s6">
+real or complex order.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C11.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r4.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C11.S1.p1.t1.s8">
+integer order.  
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C11.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r5.m1">k</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C11.S1.p1.t1.s10">
+nonnegative integer.  
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C11.S1.p1.t1.s11">
+<Math mode="inline" xml:id="C11.S1.p1.t1.r6.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C11.S1.p1.t1.s12">
+arbitrary small positive constant.  
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C11.S1.p2.s1">
+Unless indicated otherwise, primes denote derivatives with respect to the argument.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C11.S1.p2.s2">
+For the functions <Math mode="inline" xml:id="C11.S1.p2.m1">J_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S1.p2.m2">Y_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S1.p2.m3">{H^{(1)}_{\nu}}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S1.p2.m4">{H^{(2)}_{\nu}}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S1.p2.m5">I_{\nu}\left(z\right)</Math> , and <Math mode="inline" xml:id="C11.S1.p2.m6">K_{\nu}\left(z\right)</Math> see §§LABEL:sec:BS.DEF.SS, LABEL:sec:BS.MDEF.SS.
+</sentence>
+
+</para>
+
+    
+<para xml:id="C11.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C11.S1.p3.s1">
+The functions treated in this chapter are the Struve functions <Math mode="inline" xml:id="C11.S1.p3.m1">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S1.p3.m2">\mathbf{K}_{\nu}\left(z\right)</Math> , the modified Struve functions <Math mode="inline" xml:id="C11.S1.p3.m3">\mathbf{L}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S1.p3.m4">\mathbf{M}_{\nu}\left(z\right)</Math> , the Lommel functions <Math mode="inline" xml:id="C11.S1.p3.m5">s_{{\mu},{\nu}}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S1.p3.m6">S_{{\mu},{\nu}}\left(z\right)</Math> , the Anger function <Math mode="inline" xml:id="C11.S1.p3.m7">\mathbf{J}_{\nu}\left(z\right)</Math> , the Weber function <Math mode="inline" xml:id="C11.S1.p3.m8">\mathbf{E}_{\nu}\left(z\right)</Math> , and the associated Anger–Weber function <Math mode="inline" xml:id="C11.S1.p3.m9">\mathbf{A}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+                
+<section xml:id="C11.S2">
+<title>Definitions</title>        
+  
+<subsection xml:id="C11.S2.SS1">
+<title>Power-Series Expansions</title>        
+   
+<para xml:id="C11.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C11.S2.SS1.p1.s1">
+ <Math equation-number="11.2.1" mode="display" xml:id="C11.S2.E1">\mathbf{H}_{\nu}\left(z\right)=(\tfrac{1}{2}z)^{\nu+1}\sum_{n=0}^{\infty}\frac {(-1)^{n}(\tfrac{1}{2}z)^{2n}}{\Gamma\left(n+\tfrac{3}{2}\right)\Gamma\left(n+ \nu+\tfrac{3}{2}\right)},</Math> , <Math equation-number="11.2.2" mode="display" xml:id="C11.S2.E2">\mathbf{L}_{\nu}\left(z\right)=-ie^{-\frac{1}{2}\pi i\nu}\mathbf{H}_{\nu}\left (iz\right)=(\tfrac{1}{2}z)^{\nu+1}\sum_{n=0}^{\infty}\frac{(\tfrac{1}{2}z)^{2n }}{\Gamma\left(n+\tfrac{3}{2}\right)\Gamma\left(n+\nu+\tfrac{3}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C11.S2.SS1.p1.s2">
+Principal values correspond to principal values of <Math mode="inline" xml:id="C11.S2.SS1.p1.m1">(\tfrac{1}{2}z)^{\nu+1}</Math> ; compare §LABEL:sec:EF.FN.LOG.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C11.S2.SS1.p2.s1">
+The expansions (LABEL:eq:ST.SE.1) and (LABEL:eq:ST.SE.2) are absolutely convergent for all finite values of <Math mode="inline" xml:id="C11.S2.SS1.p2.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C11.S2.SS1.p2.s2">
+The functions <Math mode="inline" xml:id="C11.S2.SS1.p2.m2">z^{-\nu-1}\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m3">z^{-\nu-1}\mathbf{L}_{\nu}\left(z\right)</Math> are entire functions of <Math mode="inline" xml:id="C11.S2.SS1.p2.m4">z</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m5">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C11.S2.SS1.p2.s3">
+<Math equation-number="11.2.3" mode="display" xml:id="C11.S2.E3">\mathbf{H}_{0}\left(z\right)=\frac{2}{\pi}\left(z-\frac{z^{3}}{1^{2}\cdot 3^{2 }}+\frac{z^{5}}{1^{2}\cdot 3^{2}\cdot 5^{2}}-\cdots\right),</Math> , <Math equation-number="11.2.4" mode="display" xml:id="C11.S2.E4">\mathbf{L}_{0}\left(z\right)=\frac{2}{\pi}\left(z+\frac{z^{3}}{1^{2}\cdot 3^{2 }}+\frac{z^{5}}{1^{2}\cdot 3^{2}\cdot 5^{2}}+\cdots\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C11.S2.SS1.p2.s4">
+<Math equation-number="11.2.5" mode="display" xml:id="C11.S2.E5">\mathbf{K}_{\nu}\left(z\right)=\mathbf{H}_{\nu}\left(z\right)-Y_{\nu}\left(z \right),</Math> , <Math equation-number="11.2.6" mode="display" xml:id="C11.S2.E6">\mathbf{M}_{\nu}\left(z\right)=\mathbf{L}_{\nu}\left(z\right)-I_{\nu}\left(z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="23" xml:id="C11.S2.SS1.p2.s5">
+Principal values of <Math mode="inline" xml:id="C11.S2.SS1.p2.m6">\mathbf{K}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S2.SS1.p2.m7">\mathbf{M}_{\nu}\left(z\right)</Math> correspond to principal values of the functions on the right-hand sides of (LABEL:eq:ST.DE.3) and (LABEL:eq:ST.DE.6).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C11.S2.SS1.p3.s1">
+Unless indicated otherwise, <Math mode="inline" xml:id="C11.S2.SS1.p3.m1">\mathbf{H}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S2.SS1.p3.m2">\mathbf{K}_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C11.S2.SS1.p3.m3">\mathbf{L}_{\nu}\left(z\right)</Math> , and <Math mode="inline" xml:id="C11.S2.SS1.p3.m4">\mathbf{M}_{\nu}\left(z\right)</Math> assume their principal values throughout the DLMF.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S2.SS2">
+<title>Differential Equations</title>        
+   
+<paragraph xml:id="C11.S2.Px1">
+<title>Struve’s Equation</title>   
+<para xml:id="C11.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C11.S2.Px1.p1.s1">
+ <Math equation-number="11.2.7" mode="display" xml:id="C11.S2.E7">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}+\left(1-\frac{\nu^{2}}{z^{2}}\right)w=\frac{(\tfrac{1}{2}z)^{\nu- 1}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C11.S2.Px1.p1.s2">
+Particular solutions: <Math equation-number="11.2.8" mode="display" xml:id="C11.S2.E8">w=\mathbf{H}_{\nu}\left(z\right),\mathbf{K}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C11.S2.Px2">
+<title>Modified Struve’s Equation</title>   
+ 
+<para xml:id="C11.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C11.S2.Px2.p1.s1">
+ <Math equation-number="11.2.9" mode="display" xml:id="C11.S2.E9">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}-\left(1+\frac{\nu^{2}}{z^{2}}\right)w=\frac{(\tfrac{1}{2}z)^{\nu- 1}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C11.S2.Px2.p1.s2">
+Particular solutions: <Math equation-number="11.2.10" mode="display" xml:id="C11.S2.E10">w=\mathbf{L}_{\nu}\left(z\right),\mathbf{M}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S2.SS3">
+<title>Numerically Satisfactory Solutions</title>        
+ 
+ 
+<para xml:id="C11.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C11.S2.SS3.p1.s1">
+In this subsection <Math mode="inline" xml:id="C11.S2.SS3.p1.m1">A</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p1.m2">B</Math> are arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C11.S2.SS3.p2.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p2.m1">z=x</Math> , <Math mode="inline" xml:id="C11.S2.SS3.p2.m2">0&lt;x&lt;\infty</Math> , and <Math mode="inline" xml:id="C11.S2.SS3.p2.m3">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (LABEL:eq:ST.DE.1) are given by <Math equation-number="11.2.11" mode="display" xml:id="C11.S2.E11">w=\mathbf{H}_{\nu}\left(x\right)+AJ_{\nu}\left(x\right)+BY_{\nu}\left(x\right),</Math> , <Math equation-number="11.2.12" mode="display" xml:id="C11.S2.E12">w=\mathbf{K}_{\nu}\left(x\right)+AJ_{\nu}\left(x\right)+BY_{\nu}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C11.S2.SS3.p2.s2">
+(LABEL:eq:ST.DE.7) applies when <Math mode="inline" xml:id="C11.S2.SS3.p2.m4">x</Math> is bounded, and (LABEL:eq:ST.DE.9) applies when <Math mode="inline" xml:id="C11.S2.SS3.p2.m5">x</Math> is bounded away from the origin.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C11.S2.SS3.p3.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p3.m1">z\in\mathbb{C}</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m2">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (LABEL:eq:ST.DE.1) are given by <Math equation-number="11.2.13" mode="display" xml:id="C11.S2.E13">w=\mathbf{H}_{\nu}\left(z\right)+AJ_{\nu}\left(z\right)+B{H^{(1)}_{\nu}}\left( z\right),</Math> , <Math equation-number="11.2.14" mode="display" xml:id="C11.S2.E14">w=\mathbf{H}_{\nu}\left(z\right)+AJ_{\nu}\left(z\right)+B{H^{(2)}_{\nu}}\left( z\right),</Math> , <Math equation-number="11.2.15" mode="display" xml:id="C11.S2.E15">w=\mathbf{K}_{\nu}\left(z\right)+A{H^{(1)}_{\nu}}\left(z\right)+B{H^{(2)}_{\nu }}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C11.S2.SS3.p3.s2">
+(LABEL:eq:ST.DE.7a) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m3">0\leq\operatorname{ph}z\leq\pi</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m4">|z|</Math> is bounded. (LABEL:eq:ST.DE.8a) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m5">-\pi\leq\operatorname{ph}z\leq 0</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m6">|z|</Math> is bounded. (LABEL:eq:ST.DE.9a) applies when <Math mode="inline" xml:id="C11.S2.SS3.p3.m7">\left|\operatorname{ph}z\right|\leq\pi</Math> and <Math mode="inline" xml:id="C11.S2.SS3.p3.m8">z</Math> is bounded away from the origin.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C11.S2.SS3.p4.s1">
+When <Math mode="inline" xml:id="C11.S2.SS3.p4.m1">\Re\nu\geq 0</Math> , numerically satisfactory general solutions of (LABEL:eq:ST.DE.4) are given by <Math equation-number="11.2.16" mode="display" xml:id="C11.S2.E16">w=\mathbf{L}_{\nu}\left(z\right)+AK_{\nu}\left(z\right)+BI_{\nu}\left(z\right),</Math> , <Math equation-number="11.2.17" mode="display" xml:id="C11.S2.E17">w=\mathbf{M}_{\nu}\left(z\right)+AK_{\nu}\left(z\right)+BI_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C11.S2.SS3.p4.s2">
+(LABEL:eq:ST.DE.10) applies when <Math mode="inline" xml:id="C11.S2.SS3.p4.m2">|\operatorname{ph}z|\leq\tfrac{1}{2}\pi</Math> with <Math mode="inline" xml:id="C11.S2.SS3.p4.m3">|z|</Math> bounded. (LABEL:eq:ST.DE.11) applies when <Math mode="inline" xml:id="C11.S2.SS3.p4.m4">|\operatorname{ph}z|\leq\tfrac{1}{2}\pi</Math> with <Math mode="inline" xml:id="C11.S2.SS3.p4.m5">z</Math> bounded away from the origin.
+</sentence>
+
+</para>
+  
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S3">
+<title>Graphics</title>        
+ 
+<subsection xml:id="C11.S3.SS1">
+<title>Struve Functions</title>                
+     
+<sentence sentence-num-in-section="36" xml:id="C11.S3.F1.s1">
+Figure 11.3.1: <Math mode="inline" xml:id="C11.S3.F1.m4">\mathbf{H}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F1.m5">0\leq x\leq 12</Math> and <Math mode="inline" xml:id="C11.S3.F1.m6">\nu=0,\frac{1}{2},1,\frac{3}{2},2,3</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="37" xml:id="C11.S3.F2.s1">
+Figure 11.3.2: <Math mode="inline" xml:id="C11.S3.F2.m4">\mathbf{K}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F2.m5">0&amp;lt;x\leq 16</Math> and <Math mode="inline" xml:id="C11.S3.F2.m6">\nu=0,\frac{1}{2},1,\frac{3}{2},2,3</Math> .
+</sentence>          
+     
+<sentence sentence-num-in-section="38" xml:id="C11.S3.F3.s1">
+Figure 11.3.3: <Math mode="inline" xml:id="C11.S3.F3.m4">\mathbf{H}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F3.m5">0\leq x\leq 12</Math> and <Math mode="inline" xml:id="C11.S3.F3.m6">\nu=-3,-2,-\frac{3}{2},-1,-\frac{1}{2}</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="39" xml:id="C11.S3.F4.s1">
+Figure 11.3.4: <Math mode="inline" xml:id="C11.S3.F4.m4">\mathbf{K}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F4.m5">0&amp;lt;x\leq 16</Math> and <Math mode="inline" xml:id="C11.S3.F4.m6">\nu=-4,-3,-2,-1,0</Math> . If <Math mode="inline" xml:id="C11.S3.F4.m7">\nu=-\frac{1}{2},-\frac{3}{2}</Math> , …, then <Math mode="inline" xml:id="C11.S3.F4.m8">\mathbf{K}_{\nu}\left(x\right)</Math> is identically zero.
+</sentence>  
+        
+    
+<sentence sentence-num-in-section="40" xml:id="C11.S3.F5.s1">
+Figure 11.3.5: <Math mode="inline" xml:id="C11.S3.F5.m4">\mathbf{H}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F5.m5">0\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F5.m6">-4\leq\nu\leq 4</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="41" xml:id="C11.S3.F6.s1">
+Figure 11.3.6: <Math mode="inline" xml:id="C11.S3.F6.m4">\mathbf{K}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F6.m5">0\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F6.m6">-4\leq\nu\leq 4</Math> .
+</sentence>  
+            
+<sentence sentence-num-in-section="42" xml:id="C11.S3.F7.s1">
+Figure 11.3.7: <Math mode="inline" xml:id="C11.S3.F7.m4">\left|\mathbf{H}_{0}\left(x+iy\right)\right|</Math> for <Math mode="inline" xml:id="C11.S3.F7.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F7.m6">-3\leq y\leq 3</Math> .
+</sentence>            
+<sentence sentence-num-in-section="43" xml:id="C11.S3.F8.s1">
+Figure 11.3.8: <Math mode="inline" xml:id="C11.S3.F8.m4">\left|\mathbf{K}_{0}\left(x+iy\right)\right|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F8.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F8.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence>   
+<para xml:id="C11.S3.SS1.p1">
+
+</para>
+            
+<sentence sentence-num-in-section="44" xml:id="C11.S3.F9.s1">
+Figure 11.3.9: <Math mode="inline" xml:id="C11.S3.F9.m4">|\mathbf{H}_{\frac{1}{2}}\left(x+iy\right)|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F9.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F9.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence>            
+<sentence sentence-num-in-section="45" xml:id="C11.S3.F10.s1">
+Figure 11.3.10: <Math mode="inline" xml:id="C11.S3.F10.m4">|\mathbf{K}_{\frac{1}{2}}\left(x+iy\right)|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F10.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F10.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence>              
+<sentence sentence-num-in-section="46" xml:id="C11.S3.F11.s1">
+Figure 11.3.11: <Math mode="inline" xml:id="C11.S3.F11.m4">\left|\mathbf{H}_{1}\left(x+iy\right)\right|</Math> for <Math mode="inline" xml:id="C11.S3.F11.m5">-8.5\leq x\leq 8.5</Math> and <Math mode="inline" xml:id="C11.S3.F11.m6">-3\leq y\leq 3</Math> .
+</sentence> 
+           
+<sentence sentence-num-in-section="47" xml:id="C11.S3.F12.s1">
+Figure 11.3.12: <Math mode="inline" xml:id="C11.S3.F12.m4">\left|\mathbf{K}_{1}\left(x+iy\right)\right|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F12.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F12.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C11.S3.SS2">
+<title>Modified Struve Functions</title>        
+        
+    
+<sentence sentence-num-in-section="48" xml:id="C11.S3.F13.s1">
+Figure 11.3.13: <Math mode="inline" xml:id="C11.S3.F13.m4">\mathbf{L}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F13.m5">0\leq x&amp;lt;4.3</Math>8 and <Math mode="inline" xml:id="C11.S3.F13.m6">\nu=0,\frac{1}{2},1,\frac{3}{2},2,3</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="49" xml:id="C11.S3.F14.s1">
+Figure 11.3.14: <Math mode="inline" xml:id="C11.S3.F14.m4">\mathbf{M}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F14.m5">0\leq x\leq 16</Math> and <Math mode="inline" xml:id="C11.S3.F14.m6">\nu=0,\frac{1}{2},1,\frac{3}{2},2,3</Math> .
+</sentence>          
+    
+<sentence sentence-num-in-section="50" xml:id="C11.S3.F15.s1">
+Figure 11.3.15: <Math mode="inline" xml:id="C11.S3.F15.m4">\mathbf{L}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F15.m5">0\leq x&amp;lt;4.2</Math>5 and <Math mode="inline" xml:id="C11.S3.F15.m6">\nu=-3,-2,-\frac{3}{2},-1,-\frac{1}{2}</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="51" xml:id="C11.S3.F16.s1">
+Figure 11.3.16: <Math mode="inline" xml:id="C11.S3.F16.m4">\mathbf{M}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F16.m5">0&amp;lt;x\leq 16</Math> and <Math mode="inline" xml:id="C11.S3.F16.m6">\nu=-3,-2,-\frac{3}{2},-1,-\frac{1}{2}</Math> .
+</sentence>  
+        
+    
+<sentence sentence-num-in-section="52" xml:id="C11.S3.F17.s1">
+Figure 11.3.17: <Math mode="inline" xml:id="C11.S3.F17.m4">\mathbf{L}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F17.m5">0\leq x\leq 5.6</Math> and <Math mode="inline" xml:id="C11.S3.F17.m6">-4\leq\nu\leq 4</Math> .
+</sentence>        
+    
+<sentence sentence-num-in-section="53" xml:id="C11.S3.F18.s1">
+Figure 11.3.18: <Math mode="inline" xml:id="C11.S3.F18.m4">\mathbf{M}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S3.F18.m5">0\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S3.F18.m6">-4\leq\nu\leq 4</Math> .
+</sentence>   
+<para xml:id="C11.S3.SS2.p1">
+
+</para>
+            
+<sentence sentence-num-in-section="54" xml:id="C11.S3.F19.s1">
+Figure 11.3.19: <Math mode="inline" xml:id="C11.S3.F19.m4">|\mathbf{M}_{-\frac{1}{2}}\left(x+iy\right)|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F19.m5">-3\leq x\leq 3</Math> and <Math mode="inline" xml:id="C11.S3.F19.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence>            
+<sentence sentence-num-in-section="55" xml:id="C11.S3.F20.s1">
+Figure 11.3.20: <Math mode="inline" xml:id="C11.S3.F20.m4">|\mathbf{M}_{\frac{1}{2}}\left(x+iy\right)|</Math> (principal value) for <Math mode="inline" xml:id="C11.S3.F20.m5">-3\leq x\leq 3</Math> and <Math mode="inline" xml:id="C11.S3.F20.m6">-3\leq y\leq 3</Math> . There is a cut along the negative real axis.
+</sentence> 
+ 
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S4">
+<title>Basic Properties</title>        
+ 
+<subsection xml:id="C11.S4.SS1">
+<title>Half-Integer Orders</title>        
+  
+<para xml:id="C11.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C11.S4.SS1.p1.s1">
+For <Math mode="inline" xml:id="C11.S4.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="11.4.1" mode="display" xml:id="C11.S4.E1">\mathbf{K}_{n+\frac{1}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1 }{2}}\sum_{m=0}^{n}\frac{(2m)!\,2^{-2m}}{m!\,(n-m)!}\,(\tfrac{1}{2}z)^{n-2m}</Math> , <Math equation-number="11.4.2" mode="display" xml:id="C11.S4.E2">\mathbf{L}_{n+\frac{1}{2}}\left(z\right)=I_{-n-\frac{1}{2}}\left(z\right)- \left(\frac{2}{\pi z}\right)^{\frac{1}{2}}\sum_{m=0}^{n}\frac{(-1)^{m}(2m)!\,2 ^{-2m}}{m!\,(n-m)!}\,(\tfrac{1}{2}z)^{n-2m}</Math> , <Math equation-number="11.4.3" mode="display" xml:id="C11.S4.E3">\mathbf{H}_{-n-\frac{1}{2}}\left(z\right)=(-1)^{n}J_{n+\frac{1}{2}}\left(z \right),</Math> , <Math equation-number="11.4.4" mode="display" xml:id="C11.S4.E4">\mathbf{L}_{-n-\frac{1}{2}}\left(z\right)=I_{n+\frac{1}{2}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C11.S4.SS1.p1.s2">
+<Math equation-number="11.4.5" mode="display" xml:id="C11.S4.E5">\mathbf{H}_{\frac{1}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1}{ 2}}(1-\cos z),</Math> , <Math equation-number="11.4.6" mode="display" xml:id="C11.S4.E6">\mathbf{H}_{-\frac{1}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1} {2}}\sin z,</Math> <Math equation-number="11.4.7" mode="display" xml:id="C11.S4.E7">\mathbf{L}_{\frac{1}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1}{ 2}}(\cosh z-1),</Math> , <Math equation-number="11.4.8" mode="display" xml:id="C11.S4.E8">\mathbf{L}_{-\frac{1}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1} {2}}\sinh z,</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C11.S4.SS1.p2.s1">
+ <Math equation-number="11.4.9" mode="display" xml:id="C11.S4.E9">\mathbf{H}_{\frac{3}{2}}\left(z\right)=\left(\frac{z}{2\pi}\right)^{\frac{1}{2 }}\left(1+\frac{2}{z^{2}}\right)-\left(\frac{2}{\pi z}\right)^{\frac{1}{2}} \left(\sin z+\frac{\cos z}{z}\right),</Math> <Math equation-number="11.4.10" mode="display" xml:id="C11.S4.E10">\mathbf{H}_{-\frac{3}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1} {2}}\left(\cos z-\frac{\sin z}{z}\right),</Math> <Math equation-number="11.4.11" mode="display" xml:id="C11.S4.E11">\mathbf{L}_{\frac{3}{2}}\left(z\right)=-\left(\frac{z}{2\pi}\right)^{\frac{1}{ 2}}\left(1-\frac{2}{z^{2}}\right)+\left(\frac{2}{\pi z}\right)^{\frac{1}{2}} \left(\sinh z-\frac{\cosh z}{z}\right),</Math> <Math equation-number="11.4.12" mode="display" xml:id="C11.S4.E12">\mathbf{L}_{-\frac{3}{2}}\left(z\right)=\left(\frac{2}{\pi z}\right)^{\frac{1} {2}}\left(\cosh z-\frac{\sinh z}{z}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS2">
+<title>Inequalities</title>        
+  
+<para xml:id="C11.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C11.S4.SS2.p1.s1">
+ <Math equation-number="11.4.13" mode="display" xml:id="C11.S4.E13">\mathbf{H}_{\nu}\left(x\right)\geq 0, subject to x&gt;0, \nu\geq\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="60" xml:id="C11.S4.SS2.p1.s2">
+<Math equation-number="11.4.14" mode="display" xml:id="C11.S4.E14">\mathbf{H}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu+1}}{\sqrt{\pi} \Gamma\left(\nu+\tfrac{3}{2}\right)}(1+\vartheta), subject to \nu\neq-\tfrac{3}{2},-\tfrac{5}{2},-\tfrac{7}{2},\dots,</Math> where <Math equation-number="11.4.15" mode="display" xml:id="C11.S4.E15">|\vartheta|&lt;\frac{2}{3}\exp\left(\frac{\tfrac{1}{4}|z|^{2}}{|\nu_{0}+\tfrac{3} {2}|}-1\right),</Math> and <Math mode="inline" xml:id="C11.S4.SS2.p1.m1">|\nu_{0}+\tfrac{3}{2}|</Math> is the smallest of the numbers <Math mode="inline" xml:id="C11.S4.SS2.p1.m2">|\nu+\tfrac{3}{2}|</Math> , <Math mode="inline" xml:id="C11.S4.SS2.p1.m3">|\nu+\tfrac{5}{2}|</Math> , <Math mode="inline" xml:id="C11.S4.SS2.p1.m4">|\nu+\tfrac{9}{2}|,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS3">
+<title>Analytic Continuation</title>        
+ 
+ 
+<para xml:id="C11.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C11.S4.SS3.p1.s1">
+ <Math equation-number="11.4.16" mode="display" xml:id="C11.S4.E16">\mathbf{H}_{\nu}\left(ze^{m\pi i}\right)=e^{m\pi i(\nu+1)}\mathbf{H}_{\nu} \left(z\right), subject to m\in\mathbb{Z},</Math> <Math equation-number="11.4.17" mode="display" xml:id="C11.S4.E17">\mathbf{L}_{\nu}\left(ze^{m\pi i}\right)=e^{m\pi i(\nu+1)}\mathbf{L}_{\nu} \left(z\right), subject to m\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS4">
+<title>Expansions in Series of Bessel Functions</title>        
+ 
+ 
+<para xml:id="C11.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C11.S4.SS4.p1.s1">
+ <Math equation-number="11.4.18" mode="display" xml:id="C11.S4.E18">\mathbf{H}_{\nu}\left(z\right)=\frac{4}{\pi^{1/2}\Gamma\left(\nu+\tfrac{1}{2} \right)}\*\sum_{k=0}^{\infty}\frac{(2k+\nu+1)\Gamma\left(k+\nu+1\right)}{k!(2k +1)(2k+2\nu+1)}J_{2k+\nu+1}\left(z\right), subject to \nu\neq-1,-2,-3,\dots,</Math> <Math equation-number="11.4.19" mode="display" xml:id="C11.S4.E19">\mathbf{H}_{\nu}\left(z\right)=\left(\frac{z}{2\pi}\right)^{1/2}\sum_{k=0}^{ \infty}\frac{(\tfrac{1}{2}z)^{k}}{k!(k+\tfrac{1}{2})}J_{k+\nu+\frac{1}{2}} \left(z\right),</Math> <Math equation-number="11.4.20" mode="display" xml:id="C11.S4.E20">\mathbf{H}_{\nu}\left(z\right)=\frac{(\tfrac{1}{2}z)^{\nu+\frac{1}{2}}}{\Gamma \left(\nu+\tfrac{1}{2}\right)}\sum_{k=0}^{\infty}\frac{(\tfrac{1}{2}z)^{k}}{k! (k+\nu+\tfrac{1}{2})}J_{k+\frac{1}{2}}\left(z\right),</Math> <Math equation-number="11.4.21" mode="display" xml:id="C11.S4.E21">\mathbf{H}_{0}\left(z\right)=\frac{4}{\pi}\sum_{k=0}^{\infty}\frac{J_{2k+1} \left(z\right)}{2k+1}=2\sum_{k=0}^{\infty}(-1)^{k}{J_{k+\frac{1}{2}}^{2}}\left (\tfrac{1}{2}z\right),</Math> <Math equation-number="11.4.22" mode="display" xml:id="C11.S4.E22">\mathbf{H}_{1}\left(z\right)=\frac{2}{\pi}(1-J_{0}\left(z\right))+\frac{4}{\pi }\sum_{k=1}^{\infty}\frac{J_{2k}\left(z\right)}{4k^{2}-1}=4\sum_{k=0}^{\infty} J_{2k+\frac{1}{2}}\left(\tfrac{1}{2}z\right)J_{2k+\frac{3}{2}}\left(\tfrac{1}{ 2}z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C11.S4.SS4.p1.s2">
+For these and further results see ( , §9.4.5) , and §LABEL:sec:BS.SU.AF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS5">
+<title>Recurrence Relations and Derivatives</title>        
+   
+<para xml:id="C11.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C11.S4.SS5.p1.s1">
+ <Math equation-number="11.4.23" mode="display" xml:id="C11.S4.E23">\mathbf{H}_{\nu-1}\left(z\right)+\mathbf{H}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{H}_{\nu}\left(z\right)+\frac{(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{3}{2}\right)},</Math> , <Math equation-number="11.4.24" mode="display" xml:id="C11.S4.E24">\mathbf{H}_{\nu-1}\left(z\right)-\mathbf{H}_{\nu+1}\left(z\right)=2\!\mathbf{H }_{\nu}'\left(z\right)-\frac{(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma\left(\nu+ \tfrac{3}{2}\right)},</Math> , <Math equation-number="11.4.25" mode="display" xml:id="C11.S4.E25">\mathbf{L}_{\nu-1}\left(z\right)-\mathbf{L}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{L}_{\nu}\left(z\right)+\frac{(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{3}{2}\right)},</Math> , <Math equation-number="11.4.26" mode="display" xml:id="C11.S4.E26">\mathbf{L}_{\nu-1}\left(z\right)+\mathbf{L}_{\nu+1}\left(z\right)=2\!\mathbf{L }_{\nu}'\left(z\right)-\frac{(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma\left(\nu+ \tfrac{3}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C11.S4.SS5.p1.s2">
+<Math equation-number="11.4.27" mode="display" xml:id="C11.S4.E27">\frac{\mathrm{d}}{\mathrm{d}z}\left(z^{\nu}\mathbf{H}_{\nu}\left(z\right) \right)=z^{\nu}\mathbf{H}_{\nu-1}\left(z\right),</Math> <Math equation-number="11.4.28" mode="display" xml:id="C11.S4.E28">\frac{\mathrm{d}}{\mathrm{d}z}\left(z^{-\nu}\mathbf{H}_{\nu}\left(z\right) \right)=\frac{2^{-\nu}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{3}{2}\right)}-z^{-\nu }\mathbf{H}_{\nu+1}\left(z\right),</Math> <Math equation-number="11.4.29" mode="display" xml:id="C11.S4.E29">\frac{\mathrm{d}}{\mathrm{d}z}\left(z^{\nu}\mathbf{L}_{\nu}\left(z\right) \right)=z^{\nu}\mathbf{L}_{\nu-1}\left(z\right),</Math> <Math equation-number="11.4.30" mode="display" xml:id="C11.S4.E30">\frac{\mathrm{d}}{\mathrm{d}z}\left(z^{-\nu}\mathbf{L}_{\nu}\left(z\right) \right)=\frac{2^{-\nu}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{3}{2}\right)}+z^{-\nu }\mathbf{L}_{\nu+1}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C11.S4.SS5.p1.s3">
+<Math equation-number="11.4.31" mode="display" xml:id="C11.S4.E31">{\cal H}_{\nu-m}(z)=z^{m-\nu}\left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z} \right)^{m}(z^{\nu}{\cal H}_{\nu}(z)), subject to m=1,2,3,\dots,</Math> where <Math mode="inline" xml:id="C11.S4.SS5.p1.m1">{\cal H}_{\nu}(z)</Math> denotes either <Math mode="inline" xml:id="C11.S4.SS5.p1.m2">\mathbf{H}_{\nu}\left(z\right)</Math> or <Math mode="inline" xml:id="C11.S4.SS5.p1.m3">\mathbf{L}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="67" xml:id="C11.S4.SS5.p1.s4">
+<Math equation-number="11.4.32" mode="display" xml:id="C11.S4.E32">\mathbf{H}_{0}'\left(z\right)=\frac{2}{\pi}-\mathbf{H}_{1}\left(z\right), \frac{\mathrm{d}}{\mathrm{d}z}(z\mathbf{H}_{1}\left(z\right))=z\mathbf{H}_{0} \left(z\right),</Math> <Math equation-number="11.4.33" mode="display" xml:id="C11.S4.E33">\mathbf{L}_{0}'\left(z\right)=\frac{2}{\pi}+\mathbf{L}_{1}\left(z\right), \frac{\mathrm{d}}{\mathrm{d}z}(z\mathbf{L}_{1}\left(z\right))=z\mathbf{L}_{0} \left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS6">
+<title>Derivatives with Respect to Order</title>          
+<para xml:id="C11.S4.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C11.S4.SS6.p1.s1">
+For derivatives with respect to the order <Math mode="inline" xml:id="C11.S4.SS6.p1.m1">\nu</Math> , see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S4.SS7">
+<title>Zeros</title>        
+  
+<para xml:id="C11.S4.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C11.S4.SS7.p1.s1">
+For properties of zeros of <Math mode="inline" xml:id="C11.S4.SS7.p1.m1">\mathbf{H}_{\nu}\left(x\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S4.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C11.S4.SS7.p2.s1">
+For asymptotic expansions of zeros of <Math mode="inline" xml:id="C11.S4.SS7.p2.m1">\mathbf{H}_{0}\left(x\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S5">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C11.S5.SS1">
+<title>Integrals Along the Real Line</title>        
+ 
+ 
+<para xml:id="C11.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C11.S5.SS1.p1.s1">
+ <Math equation-number="11.5.1" mode="display" xml:id="C11.S5.E1">\mathbf{H}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{1}(1-t^{2})^{\nu-\frac{1}{2}}\sin\left (zt\right)\mathrm{d}t=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma\left(\nu+ \tfrac{1}{2}\right)}\int_{0}^{\pi/2}\sin\left(z\cos\theta\right)(\sin\theta)^{ 2\nu}\mathrm{d}\theta, subject to \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.2" mode="display" xml:id="C11.S5.E2">\mathbf{K}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\infty}e^{-zt}(1+t^{2})^{\nu-\frac{1}{ 2}}\mathrm{d}t, subject to \Re z&gt;0,</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C11.S5.SS1.p2.s1">
+ <Math equation-number="11.5.3" mode="display" xml:id="C11.S5.E3">\mathbf{K}_{0}\left(z\right)=\frac{2}{\pi}\int_{0}^{\infty}e^{-z\sinh t} \mathrm{d}t, subject to \Re z&gt;0,</Math> <Math equation-number="11.5.4" mode="display" xml:id="C11.S5.E4">\mathbf{M}_{\nu}\left(z\right)=-\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{1}e^{-zt}(1-t^{2})^{\nu-\frac{1}{2}} \mathrm{d}t, subject to \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.5" mode="display" xml:id="C11.S5.E5">\mathbf{M}_{0}\left(z\right)=-\frac{2}{\pi}\int_{0}^{\pi/2}e^{-z\cos\theta} \mathrm{d}\theta,</Math> <Math equation-number="11.5.6" mode="display" xml:id="C11.S5.E6">\mathbf{L}_{\nu}\left(z\right)=\frac{2(\tfrac{1}{2}z)^{\nu}}{\sqrt{\pi}\Gamma \left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\pi/2}\sinh\left(z\cos\theta\right)( \sin\theta)^{2\nu}\mathrm{d}\theta, subject to \Re\nu&gt;-\tfrac{1}{2},</Math> <Math equation-number="11.5.7" mode="display" xml:id="C11.S5.E7">I_{-\nu}\left(x\right)-\mathbf{L}_{\nu}\left(x\right)=\frac{2(\tfrac{1}{2}x)^{ \nu}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}\int_{0}^{\infty}(1+t^{2}) ^{\nu-\frac{1}{2}}\sin\left(xt\right)\mathrm{d}t, subject to x&gt;0, \Re\nu&lt;\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S5.SS2">
+<title>Contour Integrals</title>          
+<para xml:id="C11.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C11.S5.SS2.p1.s1">
+For loop-integral versions of (LABEL:eq:ST.IR.1), (LABEL:eq:ST.IR.3), (LABEL:eq:ST.IR.6), and (LABEL:eq:ST.IR.9) see ( , §§3.3 and 3.14) .
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C11.S5.Px1">
+<title>Mellin–Barnes Integrals</title>    
+<para xml:id="C11.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C11.S5.Px1.p1.s1">
+ <Math equation-number="11.5.8" mode="display" xml:id="C11.S5.E8">(\tfrac{1}{2}x)^{-\nu-1}\mathbf{H}_{\nu}\left(x\right)=-\frac{1}{2\pi i}\int_{ -i\infty}^{i\infty}\frac{\pi\csc\left(\pi s\right)}{\Gamma\left(\tfrac{3}{2}+s \right)\Gamma\left(\tfrac{3}{2}+\nu+s\right)}(\tfrac{1}{4}x^{2})^{s}\mathrm{d}s, subject to x&gt;0, \Re\nu&gt;-1,</Math> <Math equation-number="11.5.9" mode="display" xml:id="C11.S5.E9">(\tfrac{1}{2}z)^{-\nu-1}\mathbf{L}_{\nu}\left(z\right)=\frac{1}{2\pi i}\int_{ \infty}^{(0+)}\frac{\pi\csc\left(\pi s\right)}{\Gamma\left(\tfrac{3}{2}+s \right)\Gamma\left(\tfrac{3}{2}+\nu+s\right)}(-\tfrac{1}{4}z^{2})^{s}\mathrm{d }s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="75" xml:id="C11.S5.Px1.p1.s2">
+In (LABEL:eq:ST.IR.11) and (LABEL:eq:ST.IR.12) the path of integration separates the poles of the integrand at <Math mode="inline" xml:id="C11.S5.Px1.p1.m1">s=0,1,2,\dots</Math> from those at <Math mode="inline" xml:id="C11.S5.Px1.p1.m2">s=-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S5.SS3">
+<title>Compendia</title>        
+  
+<para xml:id="C11.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C11.S5.SS3.p1.s1">
+For further integral representations see ( , §§3.3, 3.14) , ( , §§5.17, 15.3) , ( , p. 114) , ( ) , ( , §2.7) , ( , §2.14) , and ( , pp. 330, 374, and 426) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S6">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C11.S6.SS1">
+<title>Large <Math mode="inline" xml:id="C11.S6.SS1.m1">|z|</Math>, Fixed <Math mode="inline" xml:id="C11.S6.SS1.m2">\nu</Math></title>          
+ 
+<para xml:id="C11.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C11.S6.SS1.p1.s1">
+ <Math equation-number="11.6.1" mode="display" xml:id="C11.S6.E1">\mathbf{K}_{\nu}\left(z\right)\sim\frac{1}{\pi}\sum_{k=0}^{\infty}\frac{\Gamma \left(k+\tfrac{1}{2}\right)(\tfrac{1}{2}z)^{\nu-2k-1}}{\Gamma\left(\nu+\tfrac{ 1}{2}-k\right)}, subject to |\operatorname{ph}z|\leq\pi-\delta,</Math> where <Math mode="inline" xml:id="C11.S6.SS1.p1.m1">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="78" xml:id="C11.S6.SS1.p1.s2">
+If the series on the right-hand side of (LABEL:eq:ST.AE.1) is truncated after <Math mode="inline" xml:id="C11.S6.SS1.p1.m2">m(\geq 0)</Math> terms, then the remainder term <Math mode="inline" xml:id="C11.S6.SS1.p1.m3">R_{m}(z)</Math> is <Math mode="inline" xml:id="C11.S6.SS1.p1.m4">O\left(z^{\nu-2m-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="79" xml:id="C11.S6.SS1.p1.s3">
+If <Math mode="inline" xml:id="C11.S6.SS1.p1.m5">\nu</Math> is real, <Math mode="inline" xml:id="C11.S6.SS1.p1.m6">z</Math> is positive, and <Math mode="inline" xml:id="C11.S6.SS1.p1.m7">m+\tfrac{1}{2}-\nu\geq 0</Math> , then <Math mode="inline" xml:id="C11.S6.SS1.p1.m8">R_{m}(z)</Math> is of the same sign and numerically less than the first neglected term.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C11.S6.SS1.p2.s1">
+ <Math equation-number="11.6.2" mode="display" xml:id="C11.S6.E2">\mathbf{M}_{\nu}\left(z\right)\sim\frac{1}{\pi}\sum_{k=0}^{\infty}(-1)^{k+1} \frac{\Gamma\left(k+\tfrac{1}{2}\right)(\tfrac{1}{2}z)^{\nu-2k-1}}{\Gamma\left (\nu+\tfrac{1}{2}-k\right)}, subject to |\operatorname{ph}z|\leq\tfrac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C11.S6.SS1.p3.s1">
+For re-expansions of the remainder terms in (LABEL:eq:ST.AE.1) and (LABEL:eq:ST.AE.2), see ( , p. 445) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C11.S6.SS1.p4.s1">
+For the corresponding expansions for <Math mode="inline" xml:id="C11.S6.SS1.p4.m1">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S6.SS1.p4.m2">\mathbf{L}_{\nu}\left(z\right)</Math> combine (LABEL:eq:ST.AE.1), (LABEL:eq:ST.AE.2) with (LABEL:eq:ST.DE.3), (LABEL:eq:ST.DE.6), (LABEL:eq:BS.AEA.HE.4), and (LABEL:eq:BS.MAE.HE.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="83" xml:id="C11.S6.SS1.p4.s2">
+<Math equation-number="11.6.3" mode="display" xml:id="C11.S6.E3">\int_{0}^{z}\mathbf{K}_{0}\left(t\right)\mathrm{d}t-\frac{2}{\pi}(\ln\left(2z \right)+\gamma)\sim\frac{2}{\pi}\sum_{k=1}^{\infty}(-1)^{k+1}\frac{(2k)!(2k-1) !}{(k!)^{2}(2z)^{2k}}, subject to |\operatorname{ph}z|\leq\pi-\delta,</Math> <Math equation-number="11.6.4" mode="display" xml:id="C11.S6.E4">\int_{0}^{z}\mathbf{M}_{0}\left(t\right)\mathrm{d}t+\frac{2}{\pi}(\ln\left(2z \right)+\gamma)\sim\frac{2}{\pi}\sum_{k=1}^{\infty}\frac{(2k)!(2k-1)!}{(k!)^{2 }(2z)^{2k}}, subject to |\operatorname{ph}z|\leq\tfrac{1}{2}\pi-\delta,</Math> where <Math mode="inline" xml:id="C11.S6.SS1.p4.m3">\gamma</Math> is Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S6.SS2">
+<title>Large <Math mode="inline" xml:id="C11.S6.SS2.m1">|\nu|</Math>, Fixed <Math mode="inline" xml:id="C11.S6.SS2.m2">z</Math></title>          
+<para xml:id="C11.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C11.S6.SS2.p1.s1">
+ <Math equation-number="11.6.5" mode="display" xml:id="C11.S6.E5">\mathbf{H}_{\nu}\left(z\right),\mathbf{L}_{\nu}\left(z\right)\sim\frac{z}{\pi \nu\sqrt{2}}\left(\frac{ez}{2\nu}\right)^{\nu}, subject to |\operatorname{ph}\nu|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C11.S6.SS2.p2.s1">
+More fully, the series (LABEL:eq:ST.SE.1) and (LABEL:eq:ST.SE.2) can be regarded as generalized asymptotic expansions (§LABEL:sec:AS.DEP.GAE).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S6.SS3">
+<title>Large <Math mode="inline" xml:id="C11.S6.SS3.m1">|\nu|</Math>, Fixed <Math mode="inline" xml:id="C11.S6.SS3.m2">z/\nu</Math></title>        
+ 
+<para xml:id="C11.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C11.S6.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C11.S6.SS3.p1.m1">\lambda(&gt;1)</Math> <Math equation-number="11.6.6" mode="display" xml:id="C11.S6.E6">\mathbf{K}_{\nu}\left(\lambda\nu\right)\sim\frac{(\tfrac{1}{2}\lambda\nu)^{\nu -1}}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{1}{2}\right)}\sum_{k=0}^{\infty}\frac{k! c_{k}(\lambda)}{\nu^{k}}, subject to |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta,</Math> and for fixed <Math mode="inline" xml:id="C11.S6.SS3.p1.m2">\lambda</Math> <Math mode="inline" xml:id="C11.S6.SS3.p1.m3">(&gt;0)</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C11.S6.SS3.p2.s1">
+ <Math equation-number="11.6.7" mode="display" xml:id="C11.S6.E7">\mathbf{M}_{\nu}\left(\lambda\nu\right)\sim-\frac{(\frac{1}{2}\lambda\nu)^{\nu -1}}{\sqrt{\pi}\Gamma\left(\nu+\frac{1}{2}\right)}\sum_{k=0}^{\infty}\frac{k!c _{k}(i\lambda)}{\nu^{k}}, subject to |\operatorname{ph}\nu|\leq\frac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C11.S6.SS3.p2.s2">
+Here <Math equation-number="11.6.8" mode="display" xml:id="C11.S6.E8">c_{0}(\lambda)=1, c_{1}(\lambda)=2\lambda^{-2}, c_{2}(\lambda)=6\lambda^{-4}-\tfrac{1}{2}\lambda^{-2}, c_{3}(\lambda)=20\lambda^{-6}-4\lambda^{-4}, c_{4}(\lambda)=70\lambda^{-8}-\tfrac{45}{2}\lambda^{-6}+\tfrac{3}{8}\lambda^{- 4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="89" xml:id="C11.S6.SS3.p2.s3">
+These and higher coefficients <Math mode="inline" xml:id="C11.S6.SS3.p2.m1">c_{k}(\lambda)</Math> can be computed via the representations in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C11.S6.SS3.p3.s1">
+For the corresponding result for <Math mode="inline" xml:id="C11.S6.SS3.p3.m1">\mathbf{H}_{\nu}\left(\lambda\nu\right)</Math> use (LABEL:eq:ST.DE.3) and (LABEL:eq:BS.AEO.DE.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C11.S6.SS3.p3.s2">
+See also ( , p. 336) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S6.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C11.S6.SS3.p4.s1">
+For fixed <Math mode="inline" xml:id="C11.S6.SS3.p4.m1">\lambda</Math> <Math mode="inline" xml:id="C11.S6.SS3.p4.m2">(&gt;0)</Math> <Math equation-number="11.6.9" mode="display" xml:id="C11.S6.E9">\mathbf{L}_{\nu}\left(\lambda\nu\right)\sim I_{\nu}\left(\lambda\nu\right), subject to |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta,</Math> and for an estimate of the relative error in this approximation see ( , p. 336) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S7">
+<title>Integrals and Sums</title>        
+ 
+<subsection xml:id="C11.S7.SS1">
+<title>Indefinite Integrals</title>        
+ 
+ 
+<para xml:id="C11.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C11.S7.SS1.p1.s1">
+ <Math equation-number="11.7.1" mode="display" xml:id="C11.S7.E1">\int z^{\nu}\mathbf{H}_{\nu-1}\left(z\right)\mathrm{d}z=z^{\nu}\mathbf{H}_{\nu }\left(z\right),</Math> <Math equation-number="11.7.2" mode="display" xml:id="C11.S7.E2">\int z^{-\nu}\mathbf{H}_{\nu+1}\left(z\right)\mathrm{d}z=-z^{-\nu}\mathbf{H}_{ \nu}\left(z\right)+\frac{2^{-\nu}z}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{3}{2} \right)},</Math> <Math equation-number="11.7.3" mode="display" xml:id="C11.S7.E3">\int z^{\nu}\mathbf{L}_{\nu-1}\left(z\right)\mathrm{d}z=z^{\nu}\mathbf{L}_{\nu }\left(z\right),</Math> <Math equation-number="11.7.4" mode="display" xml:id="C11.S7.E4">\int z^{-\nu}\mathbf{L}_{\nu+1}\left(z\right)\mathrm{d}z=z^{-\nu}\mathbf{L}_{ \nu}\left(z\right)-\frac{2^{-\nu}z}{\sqrt{\pi}\Gamma\left(\nu+\tfrac{3}{2} \right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C11.S7.SS1.p2.s1">
+If <Math equation-number="11.7.5" mode="display" xml:id="C11.S7.E5">f_{\nu}(z)=\int_{0}^{z}t^{\nu}\mathbf{H}_{\nu}\left(t\right)\mathrm{d}t,</Math> then <Math equation-number="11.7.6" mode="display" xml:id="C11.S7.E6">f_{\nu+1}(z)=(2\nu+1)f_{\nu}(z)-z^{\nu+1}\mathbf{H}_{\nu}\left(z\right)+\frac{ (\tfrac{1}{2}z^{2})^{\nu+1}}{(\nu+1)\sqrt{\pi}\Gamma\left(\nu+\tfrac{3}{2} \right)}, subject to \Re\nu&gt;-1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S7.SS2">
+<title>Definite Integrals</title>        
+ 
+ 
+<para xml:id="C11.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C11.S7.SS2.p1.s1">
+ <Math equation-number="11.7.7" mode="display" xml:id="C11.S7.E7">\int_{0}^{\pi/2}\mathbf{H}_{\nu}\left(z\sin\theta\right)\frac{(\sin\theta)^{ \nu+1}}{(\cos\theta)^{2\nu}}\mathrm{d}\theta=\frac{2^{-\nu}}{\sqrt{\pi}}\Gamma \left(\tfrac{1}{2}-\nu\right)z^{\nu-1}(1-\cos z), subject to -\tfrac{3}{2}&lt;\Re\nu&lt;\tfrac{1}{2},</Math> <Math equation-number="11.7.8" mode="display" xml:id="C11.S7.E8">\int_{0}^{\infty}\mathbf{H}_{0}\left(t\right)\,\frac{\mathrm{d}t}{t}=\tfrac{1} {2}\pi, \int_{0}^{\infty}\mathbf{H}_{1}\left(t\right)\,\frac{\mathrm{d}t}{t^{2}}= \tfrac{1}{4}\pi,</Math> <Math equation-number="11.7.9" mode="display" xml:id="C11.S7.E9">\int_{0}^{\infty}\mathbf{H}_{\nu}\left(t\right)\mathrm{d}t=-\cot\left(\tfrac{1 }{2}\pi\nu\right), subject to -2&lt;\Re\nu&lt;0,</Math> <Math equation-number="11.7.10" mode="display" xml:id="C11.S7.E10">\int_{0}^{\infty}t^{-\nu-1}\mathbf{H}_{\nu}\left(t\right)\mathrm{d}t=\frac{\pi }{2^{\nu+1}\Gamma\left(\nu+1\right)}, subject to \Re\nu&gt;-\tfrac{3}{2},</Math> <Math equation-number="11.7.11" mode="display" xml:id="C11.S7.E11">\int_{0}^{\infty}t^{\mu-\nu-1}\mathbf{H}_{\nu}\left(t\right)\mathrm{d}t=\frac{ \Gamma\left(\tfrac{1}{2}\mu\right)2^{\mu-\nu-1}\tan\left(\tfrac{1}{2}\pi\mu \right)}{\Gamma\left(\nu-\tfrac{1}{2}\mu+1\right)}, subject to |\Re\mu|&lt;1, \Re\nu&gt;\Re\mu-\tfrac{3}{2},</Math> <Math equation-number="11.7.12" mode="display" xml:id="C11.S7.E12">\int_{0}^{\infty}t^{-\mu-\nu}\mathbf{H}_{\mu}\left(t\right)\mathbf{H}_{\nu} \left(t\right)\mathrm{d}t=\frac{\sqrt{\pi}\Gamma\left(\mu+\nu\right)}{2^{\mu+ \nu}\Gamma\left(\mu+\nu+\tfrac{1}{2}\right)\Gamma\left(\mu+\tfrac{1}{2}\right) \Gamma\left(\nu+\tfrac{1}{2}\right)}, subject to \Re(\mu+\nu)&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C11.S7.SS2.p2.s1">
+For other integrals involving products of Struve functions see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C11.S7.SS2.p2.s2">
+For integrals involving products of <Math mode="inline" xml:id="C11.S7.SS2.p2.m1">\mathbf{M}_{\nu}\left(t\right)</Math> functions, see ( , Appendix) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S7.SS3">
+<title>Laplace Transforms</title>        
+     
+<para xml:id="C11.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C11.S7.SS3.p1.s1">
+The following Laplace transforms of <Math mode="inline" xml:id="C11.S7.SS3.p1.m1">\mathbf{H}_{\nu}\left(t\right)</Math> require <Math mode="inline" xml:id="C11.S7.SS3.p1.m2">\Re a&gt;0</Math> for convergence, while those of <Math mode="inline" xml:id="C11.S7.SS3.p1.m3">\mathbf{L}_{\nu}\left(t\right)</Math> require <Math mode="inline" xml:id="C11.S7.SS3.p1.m4">\Re a&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C11.S7.SS3.p2.s1">
+ <Math equation-number="11.7.13" mode="display" xml:id="C11.S7.E13">\int_{0}^{\infty}e^{-at}\mathbf{H}_{0}\left(t\right)\mathrm{d}t=\frac{2}{\pi \sqrt{1+a^{2}}}\ln\left(\frac{1+\sqrt{1+a^{2}}}{a}\right),</Math> <Math equation-number="11.7.14" mode="display" xml:id="C11.S7.E14">\int_{0}^{\infty}e^{-at}\mathbf{H}_{1}\left(t\right)\mathrm{d}t=\frac{2}{\pi a }-\frac{2a}{\pi\sqrt{1+a^{2}}}\ln\left(\frac{1+\sqrt{1+a^{2}}}{a}\right),</Math> <Math equation-number="11.7.15" mode="display" xml:id="C11.S7.E15">\int_{0}^{\infty}e^{-at}\mathbf{L}_{0}\left(t\right)\mathrm{d}t=\frac{2}{\pi \sqrt{a^{2}\!-\!1}}\operatorname{arcsin}\left(\frac{1}{a}\right)</Math> , <Math equation-number="11.7.16" mode="display" xml:id="C11.S7.E16">\int_{0}^{\infty}e^{-at}\mathbf{L}_{1}\left(t\right)\mathrm{d}t, =\frac{2a}{\pi\sqrt{a^{2}\!-\!1}}\operatorname{arctan}\left(\frac{1}{\sqrt{a^{ 2}\!-\!1}}\right)-\frac{2}{\pi a}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S7.SS4">
+<title>Integrals with Respect to Order</title>        
+ 
+ 
+<para xml:id="C11.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C11.S7.SS4.p1.s1">
+For integrals of <Math mode="inline" xml:id="C11.S7.SS4.p1.m1">\mathbf{H}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S7.SS4.p1.m2">\mathbf{L}_{\nu}\left(x\right)</Math> with respect to the order <Math mode="inline" xml:id="C11.S7.SS4.p1.m3">\nu</Math> , see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S7.SS5">
+<title>Compendia</title>        
+  
+<para xml:id="C11.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C11.S7.SS5.p1.s1">
+For further integrals see ( , §12.16) , ( , Chapter 3) , ( , §§4.19, 6.8, 8.15, 9.4, 10.3, 11.3, and 15.3) , ( , Chapters 9, 11) , ( , §6.8) , ( , pp. 192–193 and 215–216) , ( ) , ( , §1.12) , ( , §§1.21 and 2.21) , ( , §1.16) , ( , §§1.4 and 2.7) , ( , §3.17) , and ( , §3.17) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S7.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C11.S7.SS5.p2.s1">
+For sums of Struve functions see ( , p. 456) and ( , §6.4.1) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="103" xml:id="C11.S7.SS5.p2.s2">
+See also ( )
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S8">
+<title>Analogs to Kelvin Functions</title>        
+   
+<para xml:id="C11.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C11.S8.p1.s1">
+For properties of Struve functions of argument <Math mode="inline" xml:id="C11.S8.p1.m1">xe^{\pm 3\pi i/4}</Math> see ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+              
+<section xml:id="C11.S9">
+<title>Lommel Functions</title>        
+   
+<subsection xml:id="C11.S9.SS1">
+<title>Definitions</title>        
+ 
+<para xml:id="C11.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C11.S9.SS1.p1.s1">
+The inhomogeneous Bessel differential equation <Math equation-number="11.9.1" mode="display" xml:id="C11.S9.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}+\left(1-\frac{\nu^{2}}{z^{2}}\right)w=z^{\mu-1}</Math> can be regarded as a generalization of (LABEL:eq:ST.DE.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C11.S9.SS1.p1.s2">
+Provided that <Math mode="inline" xml:id="C11.S9.SS1.p1.m1">\mu\pm\nu\neq-1,-3,-5,\dots</Math> , (LABEL:eq:ST.LF.1) has the general solution <Math equation-number="11.9.2" mode="display" xml:id="C11.S9.E2">w=s_{{\mu},{\nu}}\left(z\right)+AJ_{\nu}\left(z\right)+BY_{\nu}\left(z\right),</Math> where <Math mode="inline" xml:id="C11.S9.SS1.p1.m2">A</Math> , <Math mode="inline" xml:id="C11.S9.SS1.p1.m3">B</Math> are arbitrary constants, <Math mode="inline" xml:id="C11.S9.SS1.p1.m4">s_{{\mu},{\nu}}\left(z\right)</Math> is theLommel function defined by <Math equation-number="11.9.3" mode="display" xml:id="C11.S9.E3">s_{{\mu},{\nu}}\left(z\right)=z^{\mu+1}\sum_{k=0}^{\infty}(-1)^{k}\frac{z^{2k} }{a_{k+1}(\mu,\nu)},</Math> and <Math equation-number="11.9.4" mode="display" xml:id="C11.S9.E4">a_{k}(\mu,\nu)=\prod_{m=1}^{k}\left((\mu+2m-1)^{2}-\nu^{2}\right), subject to k=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C11.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C11.S9.SS1.p2.s1">
+Another solution of (LABEL:eq:ST.LF.1) that is defined for all values of <Math mode="inline" xml:id="C11.S9.SS1.p2.m1">\mu</Math> and <Math mode="inline" xml:id="C11.S9.SS1.p2.m2">\nu</Math> is <Math mode="inline" xml:id="C11.S9.SS1.p2.m3">S_{{\mu},{\nu}}\left(z\right)</Math> , where <Math equation-number="11.9.5" mode="display" xml:id="C11.S9.E5">S_{{\mu},{\nu}}\left(z\right)=s_{{\mu},{\nu}}\left(z\right)+2^{\mu-1}\Gamma \left(\tfrac{1}{2}\mu+\tfrac{1}{2}\nu+\tfrac{1}{2}\right)\Gamma\left(\tfrac{1} {2}\mu-\tfrac{1}{2}\nu+\tfrac{1}{2}\right)\*\left(\sin\left(\tfrac{1}{2}(\mu- \nu)\pi\right)\,J_{\nu}\left(z\right)-\cos\left(\tfrac{1}{2}(\mu-\nu)\pi\right )\,Y_{\nu}\left(z\right)\right),</Math> the right-hand side being replaced by its limiting form when <Math mode="inline" xml:id="C11.S9.SS1.p2.m4">\mu\pm\nu</Math> is an odd negative integer.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C11.S9.Px1">
+<title>Reflection Formulas</title>    
+<para xml:id="C11.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C11.S9.Px1.p1.s1">
+ <Math equation-number="11.9.6" mode="display" xml:id="C11.S9.E6">s_{{\mu},{-\nu}}\left(z\right)=s_{{\mu},{\nu}}\left(z\right), S_{{\mu},{-\nu}}\left(z\right)=S_{{\mu},{\nu}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S9.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C11.S9.Px1.p2.s1">
+For the foregoing results and further information see ( , §§10.7–10.73)and ( , §3.16) .
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S9.SS2">
+<title>Expansions in Series of Bessel Functions</title>        
+  
+<para xml:id="C11.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C11.S9.SS2.p1.s1">
+When <Math mode="inline" xml:id="C11.S9.SS2.p1.m1">\mu\pm\nu\neq-1,-2,-3,\dots</Math> , <Math equation-number="11.9.7" mode="display" xml:id="C11.S9.E7">s_{{\mu},{\nu}}\left(z\right)=2^{\mu+1}\sum_{k=0}^{\infty}\*\frac{(2k+\mu+1) \Gamma\left(k+\mu+1\right)}{k!(2k+\mu-\nu+1)(2k+\mu+\nu+1)}J_{2k+\mu+1}\left(z \right),</Math> <Math equation-number="11.9.8" mode="display" xml:id="C11.S9.E8">s_{{\mu},{\nu}}\left(z\right)=2^{(\mu+\nu-1)/2}\Gamma\left(\tfrac{1}{2}\mu+ \tfrac{1}{2}\nu+\tfrac{1}{2}\right)z^{(\mu+1-\nu)/2}\*\sum_{k=0}^{\infty}\frac {(\tfrac{1}{2}z)^{k}}{k!(2k+\mu-\nu+1)}J_{k+\frac{1}{2}(\mu+\nu+1)}\left(z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="111" xml:id="C11.S9.SS2.p1.s2">
+For these and further results see ( , §9.4.5) .
+</sentence>
+
+</para>
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S9.SS3">
+<title>Asymptotic Expansion</title>        
+  
+<para xml:id="C11.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C11.S9.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C11.S9.SS3.p1.m1">\mu</Math> and <Math mode="inline" xml:id="C11.S9.SS3.p1.m2">\nu</Math> , <Math equation-number="11.9.9" mode="display" xml:id="C11.S9.E9">S_{{\mu},{\nu}}\left(z\right)\sim z^{\mu-1}\sum_{k=0}^{\infty}(-1)^{k}a_{k}(- \mu,\nu)z^{-2k}, subject to z\to\infty, |\operatorname{ph}z|\leq\pi-\delta(&lt;\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="113" xml:id="C11.S9.SS3.p1.s2">
+For <Math mode="inline" xml:id="C11.S9.SS3.p1.m3">a_{k}(\mu,\nu)</Math> see (LABEL:eq:ST.LF.6).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="114" xml:id="C11.S9.SS3.p1.s3">
+If either of <Math mode="inline" xml:id="C11.S9.SS3.p1.m4">\mu\pm\nu</Math> equals an odd positive integer, then the right-hand side of (LABEL:eq:ST.LF.10) terminates and represents <Math mode="inline" xml:id="C11.S9.SS3.p1.m5">S_{{\mu},{\nu}}\left(z\right)</Math> exactly.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S9.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C11.S9.SS3.p2.s1">
+For uniform asymptotic expansions, for large <Math mode="inline" xml:id="C11.S9.SS3.p2.m1">\nu</Math> and fixed <Math mode="inline" xml:id="C11.S9.SS3.p2.m2">\mu=-1,0,1,2,\dots</Math> , of solutions of the inhomogeneous modified Bessel differential equation that corresponds to (LABEL:eq:ST.LF.1) see ( , pp. 388–390) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C11.S9.SS3.p2.s2">
+For an error bound for (LABEL:eq:ST.LF.10) and an exponentially-improved extension see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S9.SS4">
+<title>References</title>        
+ 
+<para xml:id="C11.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C11.S9.SS4.p1.s1">
+For further information on Lommel functions see ( , §§10.7–10.75)and ( , Chapter 3) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="118" xml:id="C11.S9.SS4.p1.s2">
+For descriptive properties of <Math mode="inline" xml:id="C11.S9.SS4.p1.m1">s_{{\mu},{\nu}}\left(x\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S9.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C11.S9.SS4.p2.s1">
+For collections of integral representations and integrals see ( , §12.17) , ( , p. 85) , ( , §§4.19 and 5.17) , ( , §6.86) , ( , p. 193) , ( , pp. 127–128, 168–169, and 188–189) , ( , §§1.12 and 2.7) , ( , pp. 105–106 and 191–192) , ( , §2.14) , ( , §§1.6 and 2.9) , ( , §3.34) , and ( , §3.32) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S10">
+<title>Anger–Weber Functions</title>        
+  
+<subsection xml:id="C11.S10.SS1">
+<title>Definitions</title>        
+  
+ 
+<para xml:id="C11.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C11.S10.SS1.p1.s1">
+The Anger function <Math mode="inline" xml:id="C11.S10.SS1.p1.m1">\mathbf{J}_{\nu}\left(z\right)</Math> and Weber function <Math mode="inline" xml:id="C11.S10.SS1.p1.m2">\mathbf{E}_{\nu}\left(z\right)</Math> are defined by <Math equation-number="11.10.1" mode="display" xml:id="C11.S10.E1">\mathbf{J}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(\nu\theta- z\sin\theta\right)\mathrm{d}\theta,</Math> <Math equation-number="11.10.2" mode="display" xml:id="C11.S10.E2">\mathbf{E}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\sin\left(\nu\theta- z\sin\theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="121" xml:id="C11.S10.SS1.p1.s2">
+Each is an entire function of <Math mode="inline" xml:id="C11.S10.SS1.p1.m3">z</Math> and <Math mode="inline" xml:id="C11.S10.SS1.p1.m4">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="122" xml:id="C11.S10.SS1.p1.s3">
+Also, <Math equation-number="11.10.3" mode="display" xml:id="C11.S10.E3">\frac{1}{\pi}\int_{0}^{2\pi}\cos\left(\nu\theta-z\sin\theta\right)\mathrm{d} \theta=(1+\cos\left(2\pi\nu\right))\,\mathbf{J}_{\nu}\left(z\right)+\sin\left( 2\pi\nu\right)\mathbf{E}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C11.S10.SS1.p2.s1">
+The associated Anger–Weber function <Math mode="inline" xml:id="C11.S10.SS1.p2.m1">\mathbf{A}_{\nu}\left(z\right)</Math> is defined by <Math equation-number="11.10.4" mode="display" xml:id="C11.S10.E4">\mathbf{A}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\infty}e^{-\nu t-z\sinh t }\mathrm{d}t, subject to \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C11.S10.SS1.p2.s2">
+(LABEL:eq:ST.AWF.3) also applies when <Math mode="inline" xml:id="C11.S10.SS1.p2.m2">\Re z=0</Math> and <Math mode="inline" xml:id="C11.S10.SS1.p2.m3">\Re\nu&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS2">
+<title>Differential Equations</title>        
+  
+<para xml:id="C11.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C11.S10.SS2.p1.s1">
+The Anger and Weber functions satisfy the inhomogeneous Bessel differential equation <Math equation-number="11.10.5" mode="display" xml:id="C11.S10.E5">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}+\left(1-\frac{\nu^{2}}{z^{2}}\right)w=f(\nu,z),</Math> where <Math equation-number="11.10.6" mode="display" xml:id="C11.S10.E6">f(\nu,z)=\frac{(z-\nu)}{\pi z^{2}}\sin\left(\pi\nu\right), subject to w=\mathbf{J}_{\nu}\left(z\right),</Math> or <Math equation-number="11.10.7" mode="display" xml:id="C11.S10.E7">f(\nu,z)=-\frac{1}{\pi z^{2}}(z+\nu+(z-\nu)\cos\left(\pi\nu\right)), subject to w=\mathbf{E}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS3">
+<title>Maclaurin Series</title>        
+  
+ 
+<para xml:id="C11.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C11.S10.SS3.p1.s1">
+ <Math equation-number="11.10.8" mode="display" xml:id="C11.S10.E8">\mathbf{J}_{\nu}\left(z\right)=\cos\left(\tfrac{1}{2}\pi\nu\right)\,S_{1}(\nu, z)+\sin\left(\tfrac{1}{2}\pi\nu\right)\,S_{2}(\nu,z),</Math> <Math equation-number="11.10.9" mode="display" xml:id="C11.S10.E9">\mathbf{E}_{\nu}\left(z\right)=\sin\left(\tfrac{1}{2}\pi\nu\right)\,S_{1}(\nu, z)-\cos\left(\tfrac{1}{2}\pi\nu\right)\,S_{2}(\nu,z),</Math> where <Math equation-number="11.10.10" mode="display" xml:id="C11.S10.E10">S_{1}(\nu,z)=\sum_{k=0}^{\infty}\frac{(-1)^{k}(\tfrac{1}{2}z)^{2k}}{\Gamma \left(k\!+\!\tfrac{1}{2}\nu+1\right)\Gamma\left(k\!-\!\tfrac{1}{2}\nu\!+\!1 \right)},</Math> <Math equation-number="11.10.11" mode="display" xml:id="C11.S10.E11">S_{2}(\nu,z)=\sum_{k=0}^{\infty}\frac{(-1)^{k}(\tfrac{1}{2}z)^{2k+1}}{\Gamma \left(k\!+\!\tfrac{1}{2}\nu\!+\!\tfrac{3}{2}\right)\Gamma\left(k\!-\!\tfrac{1} {2}\nu\!+\!\tfrac{3}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="127" xml:id="C11.S10.SS3.p1.s2">
+These expansions converge absolutely for all finite values of <Math mode="inline" xml:id="C11.S10.SS3.p1.m1">z</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS4">
+<title>Graphics</title>        
+            
+<sentence sentence-num-in-section="128" xml:id="C11.S10.F1.s1">
+Figure 11.10.1: Anger function <Math mode="inline" xml:id="C11.S10.F1.m4">\mathbf{J}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F1.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S10.F1.m6">\nu=0,\frac{1}{2},1,\frac{3}{2}</Math> .
+</sentence>            
+<sentence sentence-num-in-section="129" xml:id="C11.S10.F2.s1">
+Figure 11.10.2: Weber function <Math mode="inline" xml:id="C11.S10.F2.m4">\mathbf{E}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F2.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S10.F2.m6">\nu=0,\frac{1}{2},1,\frac{3}{2}</Math> .
+</sentence>  
+            
+<sentence sentence-num-in-section="130" xml:id="C11.S10.F3.s1">
+Figure 11.10.3: Anger function <Math mode="inline" xml:id="C11.S10.F3.m4">\mathbf{J}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F3.m5">-10\leq x\leq 10</Math> and <Math mode="inline" xml:id="C11.S10.F3.m6">0\leq\nu\leq 5</Math> .
+</sentence>            
+<sentence sentence-num-in-section="131" xml:id="C11.S10.F4.s1">
+Figure 11.10.4: Weber function <Math mode="inline" xml:id="C11.S10.F4.m4">\mathbf{E}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F4.m5">-10\leq x\leq 10</Math> and <Math mode="inline" xml:id="C11.S10.F4.m6">0\leq\nu\leq 5</Math> .
+</sentence>  
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS5">
+<title>Interrelations</title>        
+  
+<para xml:id="C11.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C11.S10.SS5.p1.s1">
+ <Math equation-number="11.10.12" mode="display" xml:id="C11.S10.E12">\mathbf{J}_{\nu}\left(-z\right)=\mathbf{J}_{-\nu}\left(z\right), \mathbf{E}_{\nu}\left(-z\right)=-\mathbf{E}_{-\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C11.S10.SS5.p1.s2">
+<Math equation-number="11.10.13" mode="display" xml:id="C11.S10.E13">\sin\left(\pi\nu\right)\,\mathbf{J}_{\nu}\left(z\right)=\cos\left(\pi\nu\right )\,\mathbf{E}_{\nu}\left(z\right)-\mathbf{E}_{-\nu}\left(z\right),</Math> , <Math equation-number="11.10.14" mode="display" xml:id="C11.S10.E14">\sin\left(\pi\nu\right)\,\mathbf{E}_{\nu}\left(z\right)=\mathbf{J}_{-\nu}\left (z\right)-\cos\left(\pi\nu\right)\,\mathbf{J}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="134" xml:id="C11.S10.SS5.p1.s3">
+<Math equation-number="11.10.15" mode="display" xml:id="C11.S10.E15">\mathbf{J}_{\nu}\left(z\right)=J_{\nu}\left(z\right)+\sin\left(\pi\nu\right)\, \mathbf{A}_{\nu}\left(z\right),</Math> <Math equation-number="11.10.16" mode="display" xml:id="C11.S10.E16">\mathbf{E}_{\nu}\left(z\right)=-Y_{\nu}\left(z\right)-\cos\left(\pi\nu\right) \,\mathbf{A}_{\nu}\left(z\right)-\mathbf{A}_{-\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS6">
+<title>Relations to Other Functions</title>        
+  
+ 
+<para xml:id="C11.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C11.S10.SS6.p1.s1">
+ <Math equation-number="11.10.17" mode="display" xml:id="C11.S10.E17">\mathbf{J}_{\nu}\left(z\right)=\frac{\sin\left(\pi\nu\right)}{\pi}(s_{{0},{\nu }}\left(z\right)-\nu s_{{-1},{\nu}}\left(z\right)),</Math> , <Math equation-number="11.10.18" mode="display" xml:id="C11.S10.E18">\mathbf{E}_{\nu}\left(z\right)=-\frac{1}{\pi}(1+\cos\left(\pi\nu\right))s_{{0} ,{\nu}}\left(z\right)\\ -\frac{\nu}{\pi}(1-\cos\left(\pi\nu\right))s_{{-1},{\nu}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="136" xml:id="C11.S10.SS6.p1.s2">
+<Math equation-number="11.10.19" mode="display" xml:id="C11.S10.E19">\mathbf{J}_{-\frac{1}{2}}\left(z\right)=\mathbf{E}_{\frac{1}{2}}\left(z\right) \\ =(\tfrac{1}{2}\pi z)^{-\frac{1}{2}}(A_{+}(\chi)\cos z-A_{-}(\chi)\sin z),</Math> , <Math equation-number="11.10.20" mode="display" xml:id="C11.S10.E20">\mathbf{J}_{\frac{1}{2}}\left(z\right)=-\mathbf{E}_{-\frac{1}{2}}\left(z\right )\\ =(\tfrac{1}{2}\pi z)^{-\frac{1}{2}}(A_{+}(\chi)\sin z+A_{-}(\chi)\cos z),</Math> where <Math equation-number="11.10.21" mode="display" xml:id="C11.S10.E21">A_{\pm}(\chi)=C\left(\chi\right)\pm S\left(\chi\right), \chi=(2z/\pi)^{\frac{1}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="137" xml:id="C11.S10.SS6.p1.s3">
+For the Fresnel integrals <Math mode="inline" xml:id="C11.S10.SS6.p1.m1">C</Math> and <Math mode="inline" xml:id="C11.S10.SS6.p1.m2">S</Math> see §LABEL:sec:ER.DF.FI.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C11.S10.SS6.p2.s1">
+For <Math mode="inline" xml:id="C11.S10.SS6.p2.m1">n=1,2,3,\dots</Math> , <Math equation-number="11.10.22" mode="display" xml:id="C11.S10.E22">\mathbf{E}_{n}\left(z\right)=-\mathbf{H}_{n}\left(z\right)+\frac{1}{\pi}\sum_{ k=0}^{m_{1}}\frac{\Gamma\left(k+\tfrac{1}{2}\right)}{\Gamma\left(n\!+\!\tfrac{ 1}{2}\!-\!k\right)}(\tfrac{1}{2}z)^{n-2k-1}</Math> , and <Math equation-number="11.10.23" mode="display" xml:id="C11.S10.E23">\mathbf{E}_{-n}\left(z\right)=-\mathbf{H}_{-n}\left(z\right)+\frac{(-1)^{n+1}} {\pi}\sum_{k=0}^{m_{2}}\frac{\Gamma\left(n\!-\!k\!-\!\tfrac{1}{2}\right)}{ \Gamma\left(k+\tfrac{3}{2}\right)}(\tfrac{1}{2}z)^{-n+2k+1},</Math> where <Math equation-number="11.10.24" mode="display" xml:id="C11.S10.E24">m_{1}=\left\lfloor\tfrac{1}{2}n-\tfrac{1}{2}\right\rfloor, m_{2}=\left\lceil\tfrac{1}{2}n-\tfrac{3}{2}\right\rceil</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS7">
+<title>Special Values</title>        
+ 
+ 
+<para xml:id="C11.S10.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="139" xml:id="C11.S10.SS7.p1.s1">
+ <Math equation-number="11.10.25" mode="display" xml:id="C11.S10.E25">\displaystyle\mathbf{J}_{\nu}\left(0\right)=\frac{\sin\left(\pi\nu\right)}{\pi \nu}, \displaystyle\mathbf{E}_{\nu}\left(0\right)=\frac{1-\cos\left(\pi\nu\right)}{ \pi\nu}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="140" xml:id="C11.S10.SS7.p1.s2">
+, <Math equation-number="11.10.26" mode="display" xml:id="C11.S10.E26">\displaystyle\mathbf{E}_{0}\left(z\right)=-\mathbf{H}_{0}\left(z\right), \displaystyle\mathbf{E}_{1}\left(z\right)=\frac{2}{\pi}-\mathbf{H}_{1}\left(z \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C11.S10.SS7.p2.s1">
+ <Math equation-number="11.10.27" mode="display" xml:id="C11.S10.E27">\left.\frac{\partial}{\partial\nu}\mathbf{J}_{\nu}\left(z\right)\right|_{\nu=0 }=\tfrac{1}{2}\pi\mathbf{H}_{0}\left(z\right),</Math> , <Math equation-number="11.10.28" mode="display" xml:id="C11.S10.E28">\left.\frac{\partial}{\partial\nu}\mathbf{E}_{\nu}\left(z\right)\right|_{\nu=0 }=\tfrac{1}{2}\pi J_{0}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C11.S10.SS7.p3.s1">
+ <Math equation-number="11.10.29" mode="display" xml:id="C11.S10.E29">\mathbf{J}_{n}\left(z\right)=J_{n}\left(z\right), subject to n\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS8">
+<title>Expansions in Series of Products of Bessel Functions</title>        
+  
+<para xml:id="C11.S10.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C11.S10.SS8.p1.s1">
+ <Math equation-number="11.10.30" mode="display" xml:id="C11.S10.E30">{\mathbf{J}_{\nu}\left(z\right)=}\\ {2\sin\left(\tfrac{1}{2}\nu\pi\right)\sum_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{ 2}\nu+\frac{1}{2}}\left(\tfrac{1}{2}z\right)J_{k+\frac{1}{2}\nu+\frac{1}{2}} \left(\tfrac{1}{2}z\right)}+{2\cos\left(\tfrac{1}{2}\nu\pi\right)\sideset{}{{} ^{\prime}}{\sum}_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{2}\nu}\left(\tfrac{1}{2}z \right)J_{k+\frac{1}{2}\nu}\left(\tfrac{1}{2}z\right)},</Math> <Math equation-number="11.10.31" mode="display" xml:id="C11.S10.E31">{\mathbf{E}_{\nu}\left(z\right)=}\\ {-2\cos\left(\tfrac{1}{2}\nu\pi\right)\sum_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1} {2}\nu+\frac{1}{2}}\left(\tfrac{1}{2}z\right)J_{k+\frac{1}{2}\nu+\frac{1}{2}} \left(\tfrac{1}{2}z\right)}+{2\sin\left(\tfrac{1}{2}\nu\pi\right)\sideset{}{{} ^{\prime}}{\sum}_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{2}\nu}\left(\tfrac{1}{2}z \right)J_{k+\frac{1}{2}\nu}\left(\tfrac{1}{2}z\right)},</Math> where the prime on the second summation symbols means that the first term is to be halved.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS9">
+<title>Recurrence Relations and Derivatives</title>        
+  
+ 
+<para xml:id="C11.S10.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C11.S10.SS9.p1.s1">
+ <Math equation-number="11.10.32" mode="display" xml:id="C11.S10.E32">\mathbf{J}_{\nu-1}\left(z\right)+\mathbf{J}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{J}_{\nu}\left(z\right)-\frac{2}{\pi z}\sin\left(\pi\nu\right),</Math> <Math equation-number="11.10.33" mode="display" xml:id="C11.S10.E33">\mathbf{E}_{\nu-1}\left(z\right)+\mathbf{E}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{E}_{\nu}\left(z\right)-\frac{2}{\pi z}(1-\cos\left(\pi\nu\right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="145" xml:id="C11.S10.SS9.p1.s2">
+<Math equation-number="11.10.34" mode="display" xml:id="C11.S10.E34">2\mathbf{J}_{\nu}'\left(z\right)=\mathbf{J}_{\nu-1}\left(z\right)-\mathbf{J}_{ \nu+1}\left(z\right),</Math> , <Math equation-number="11.10.35" mode="display" xml:id="C11.S10.E35">2\mathbf{E}_{\nu}'\left(z\right)=\mathbf{E}_{\nu-1}\left(z\right)-\mathbf{E}_{ \nu+1}\left(z\right),</Math> <Math equation-number="11.10.36" mode="display" xml:id="C11.S10.E36">z\mathbf{J}_{\nu}'\left(z\right)\pm\nu\mathbf{J}_{\nu}\left(z\right)=\pm z \mathbf{J}_{\nu\mp 1}\left(z\right)\pm\frac{\sin\left(\pi\nu\right)}{\pi},</Math> <Math equation-number="11.10.37" mode="display" xml:id="C11.S10.E37">z\mathbf{E}_{\nu}'\left(z\right)\pm\nu\mathbf{E}_{\nu}\left(z\right)=\pm z \mathbf{E}_{\nu\mp 1}\left(z\right)\pm\frac{(1-\cos\left(\pi\nu\right))}{\pi}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS10">
+<title>Integrals and Sums</title>        
+   
+<para xml:id="C11.S10.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C11.S10.SS10.p1.s1">
+For collections of integral representations and integrals see ( , §§4.19 and 5.17) , ( , pp. 194–195 and 214–215) , ( , p. 128) , ( , §§1.12 and 2.7) , ( , pp. 105 and 189–190) , ( , §§1.5 and 2.8) , ( , §3.18) , ( , §3.18) , and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C11.S10.SS10.p2.s1">
+For sums see ( , pp. 456–457) and ( , §§6.4.2–6.4.3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S11">
+<title>Asymptotic Expansions of Anger–Weber Functions</title>        
+ 
+<subsection xml:id="C11.S11.SS1">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS1.m1">|z|</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS1.m2">\nu</Math></title>         
+ 
+<para xml:id="C11.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C11.S11.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C11.S11.SS1.p1.m1">F_{0}(\nu)=G_{0}(\nu)=1</Math> , and for <Math mode="inline" xml:id="C11.S11.SS1.p1.m2">k=1,2,3,\dots</Math> , <Math equation-number="11.11.1" mode="display" xml:id="C11.S11.E1">\displaystyle F_{k}(\nu)=(\nu^{2}-1^{2})(\nu^{2}-3^{2})\cdots(\nu^{2}-(2k-1)^{ 2}), \displaystyle G_{k}(\nu)=(\nu^{2}-2^{2})(\nu^{2}-4^{2})\cdots(\nu^{2}-(2k)^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="149" xml:id="C11.S11.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C11.S11.SS1.p1.m3">z\to\infty</Math> in <Math mode="inline" xml:id="C11.S11.SS1.p1.m4">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C11.S11.SS1.p1.m5">&lt;\pi</Math> ) <Math equation-number="11.11.2" mode="display" xml:id="C11.S11.E2">\mathbf{J}_{\nu}\left(z\right)\sim J_{\nu}\left(z\right)\\ +\frac{\sin\left(\pi\nu\right)}{\pi z}\left(\sum_{k=0}^{\infty}\frac{F_{k}(\nu )}{z^{2k}}-\frac{\nu}{z}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2k}}\right),</Math> <Math equation-number="11.11.3" mode="display" xml:id="C11.S11.E3">\mathbf{E}_{\nu}\left(z\right)\sim-Y_{\nu}\left(z\right)-\frac{1+\cos\left(\pi \nu\right)}{\pi z}\sum_{k=0}^{\infty}\frac{F_{k}(\nu)}{z^{2k}}-\frac{\nu(1- \cos\left(\pi\nu\right))}{\pi z^{2}}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2k }},</Math> <Math equation-number="11.11.4" mode="display" xml:id="C11.S11.E4">\mathbf{A}_{\nu}\left(z\right)\sim\frac{1}{\pi z}\sum_{k=0}^{\infty}\frac{F_{k }(\nu)}{z^{2k}}-\frac{\nu}{\pi z^{2}}\sum_{k=0}^{\infty}\frac{G_{k}(\nu)}{z^{2 k}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S11.SS2">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS2.m1">|\nu|</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS2.m2">z</Math></title>          
+<para xml:id="C11.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C11.S11.SS2.p1.s1">
+If <Math mode="inline" xml:id="C11.S11.SS2.p1.m1">z</Math> is fixed, and <Math mode="inline" xml:id="C11.S11.SS2.p1.m2">\nu\to\infty</Math> in <Math mode="inline" xml:id="C11.S11.SS2.p1.m3">|\operatorname{ph}\nu|\leq\pi</Math> in such a way that <Math mode="inline" xml:id="C11.S11.SS2.p1.m4">\nu</Math> is bounded away from the set of all integers, then <Math equation-number="11.11.5" mode="display" xml:id="C11.S11.E5">\mathbf{J}_{\nu}\left(z\right)=\frac{\sin\left(\pi\nu\right)}{\pi\nu}\left(1- \frac{\nu z}{\nu^{2}-1}+O\left(\frac{1}{\nu^{2}}\right)\right),</Math> <Math equation-number="11.11.6" mode="display" xml:id="C11.S11.E6">\mathbf{E}_{\nu}\left(z\right)=\frac{2}{\pi\nu}\left({\sin^{2}}\left(\tfrac{1} {2}\pi\nu\right)+\frac{\nu z}{\nu^{2}-1}{\cos^{2}}\left(\tfrac{1}{2}\pi\nu \right)+O\left(\frac{1}{\nu^{2}}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C11.S11.SS2.p2.s1">
+If <Math mode="inline" xml:id="C11.S11.SS2.p2.m1">\nu=n(\in\mathbb{Z})</Math> , then (LABEL:eq:ST.PVA.2) applies for <Math mode="inline" xml:id="C11.S11.SS2.p2.m2">\mathbf{J}_{n}\left(z\right)</Math> , and
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C11.S11.SS2.p3.s1">
+ <Math equation-number="11.11.7" mode="display" xml:id="C11.S11.E7">\displaystyle\mathbf{E}_{2n}\left(z\right)\sim\frac{2z}{(4n^{2}-1)\pi}, \displaystyle\mathbf{E}_{2n+1}\left(z\right)\sim\frac{2}{(2n+1)\pi}, subject to n\to\pm\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S11.SS3">
+<title>Large <Math mode="inline" xml:id="C11.S11.SS3.m1">\nu</Math>, Fixed <Math mode="inline" xml:id="C11.S11.SS3.m2">z/\nu</Math></title>        
+ 
+<para xml:id="C11.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C11.S11.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p1.m1">\lambda</Math> <Math mode="inline" xml:id="C11.S11.SS3.p1.m2">(&gt;0)</Math> , <Math equation-number="11.11.8" mode="display" xml:id="C11.S11.E8">\mathbf{A}_{\nu}\left(\lambda\nu\right)\sim\frac{1}{\pi}\sum_{k=0}^{\infty} \frac{(2k)!\,a_{k}(\lambda)}{\nu^{2k+1}}, subject to \nu\to\infty, |\operatorname{ph}\nu|\leq\pi-\delta (&lt;\pi),</Math> where <Math equation-number="11.11.9" mode="display" xml:id="C11.S11.E9">a_{0}(\lambda)=\frac{1}{1+\lambda}, a_{1}(\lambda)=-\frac{\lambda}{2(1+\lambda)^{4}}, a_{2}(\lambda)=\frac{9\lambda^{2}-\lambda}{24(1+\lambda)^{7}}, a_{3}(\lambda)=-\frac{225\lambda^{3}-54\lambda^{2}+\lambda}{720(1+\lambda)^{10 }}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C11.S11.SS3.p2.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p2.m1">\lambda(&gt;1)</Math> ,
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="155" xml:id="C11.S11.SS3.p3.s1">
+ <Math equation-number="11.11.10" mode="display" xml:id="C11.S11.E10">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim-\frac{1}{\pi}\sum_{k=0}^{\infty} \frac{(2k)!\,a_{k}(-\lambda)}{\nu^{2k+1}}, subject to \nu\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C11.S11.SS3.p4.s1">
+For fixed <Math mode="inline" xml:id="C11.S11.SS3.p4.m1">\lambda</Math> , <Math mode="inline" xml:id="C11.S11.SS3.p4.m2">0&lt;\lambda&lt;1</Math> , <Math equation-number="11.11.11" mode="display" xml:id="C11.S11.E11">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\left(\frac{2}{\pi\nu}\right)^{1/2 }e^{-\nu\mu}\sum_{k=0}^{\infty}\frac{(\tfrac{1}{2})_{k}b_{k}(\lambda)}{\nu^{k}}, subject to \nu\to+\infty,</Math> where <Math equation-number="11.11.12" mode="display" xml:id="C11.S11.E12">\mu=\sqrt{1-\lambda^{2}}-\ln\left(\frac{1+\sqrt{1-\lambda^{2}}}{\lambda}\right),</Math> and <Math equation-number="11.11.13" mode="display" xml:id="C11.S11.E13">b_{0}(\lambda)=\frac{1}{(1-\lambda^{2})^{1/4}}, b_{1}(\lambda)=\frac{2+3\lambda^{2}}{12(1-\lambda^{2})^{7/4}}, b_{2}(\lambda)=\frac{4+300\lambda^{2}+81\lambda^{4}}{864(1-\lambda^{2})^{13/4}}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C11.S11.SS3.p5.s1">
+In particular, as <Math mode="inline" xml:id="C11.S11.SS3.p5.m1">\nu\to+\infty</Math> , <Math equation-number="11.11.14" mode="display" xml:id="C11.S11.E14">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\frac{1}{\pi\nu(\lambda-1)}, subject to \lambda&gt;1,</Math> <Math equation-number="11.11.15" mode="display" xml:id="C11.S11.E15">\mathbf{A}_{-\nu}\left(\lambda\nu\right)\sim\left(\frac{2}{\pi\nu}\right)^{1/2 }\left(\frac{1+\sqrt{1-\lambda^{2}}}{\lambda}\right)^{\nu}\frac{e^{-\nu\sqrt{1 -\lambda^{2}}}}{(1-\lambda^{2})^{1/4}}, subject to 0&lt;\lambda&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C11.S11.SS3.p6.s1">
+Also, as <Math mode="inline" xml:id="C11.S11.SS3.p6.m1">\nu\to+\infty</Math> , <Math equation-number="11.11.16" mode="display" xml:id="C11.S11.E16">\mathbf{A}_{-\nu}\left(\nu\right)\sim\frac{2^{4/3}}{3^{7/6}\Gamma\left(\tfrac{ 2}{3}\right)\nu^{1/3}},</Math> and <Math equation-number="11.11.17" mode="display" xml:id="C11.S11.E17">\mathbf{A}_{-\nu}\left(\nu+a\nu^{1/3}\right)=2^{1/3}\nu^{-1/3}\mathrm{Hi}\left (-2^{1/3}a\right)+O\left(\nu^{-1}\right),</Math> uniformly for bounded real values of <Math mode="inline" xml:id="C11.S11.SS3.p6.m2">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C11.S11.SS3.p6.s2">
+For the Scorer function <Math mode="inline" xml:id="C11.S11.SS3.p6.m3">\mathrm{Hi}</Math> see §LABEL:sec:AI.SC.DE.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C11.S11.SS3.p7.s1">
+All of (LABEL:eq:ST.AEA.11)–(LABEL:eq:ST.AEA.17a)can be regarded as special cases of two asymptotic expansions given in ( , pp. 352–357) for <Math mode="inline" xml:id="C11.S11.SS3.p7.m1">\mathbf{A}_{-\nu}\left(\lambda\nu\right)</Math> as <Math mode="inline" xml:id="C11.S11.SS3.p7.m2">\nu\to+\infty</Math> , one being uniform for <Math mode="inline" xml:id="C11.S11.SS3.p7.m3">\delta\leq\lambda\leq 1</Math> , where <Math mode="inline" xml:id="C11.S11.SS3.p7.m4">\delta</Math> again denotes an arbitrary small positive constant, and the other being uniform for <Math mode="inline" xml:id="C11.S11.SS3.p7.m5">1\leq\lambda&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="161" xml:id="C11.S11.SS3.p7.s2">
+(Note that Olver’s definition of <Math mode="inline" xml:id="C11.S11.SS3.p7.m6">\mathbf{A}_{\nu}\left(z\right)</Math> omits the factor <Math mode="inline" xml:id="C11.S11.SS3.p7.m7">1/\pi</Math> in (LABEL:eq:ST.AWF.3).)See also ( , §10.15) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S11.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C11.S11.SS3.p8.s1">
+Lastly, corresponding asymptotic approximations and expansions for <Math mode="inline" xml:id="C11.S11.SS3.p8.m1">\mathbf{J}_{\nu}\left(\lambda\nu\right)</Math> and <Math mode="inline" xml:id="C11.S11.SS3.p8.m2">\mathbf{E}_{\nu}\left(\lambda\nu\right)</Math> follow from (LABEL:eq:ST.RFA.3) and (LABEL:eq:ST.RFA.4) and the corresponding asymptotic expansions for the Bessel functions <Math mode="inline" xml:id="C11.S11.SS3.p8.m3">J_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S11.SS3.p8.m4">Y_{\nu}\left(z\right)</Math> ; see §LABEL:sec:BS.AEO.DE. In particular,
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C11.S11.SS3.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C11.S11.SS3.p9.s1">
+ <Math equation-number="11.11.18" mode="display" xml:id="C11.S11.E18">\mathbf{J}_{\nu}\left(\nu\right)\sim\frac{2^{1/3}}{3^{2/3}\Gamma\left(\tfrac{2 }{3}\right)\nu^{1/3}}, subject to \nu\to+\infty,</Math> <Math equation-number="11.11.19" mode="display" xml:id="C11.S11.E19">\mathbf{E}_{\nu}\left(\nu\right)\sim\frac{2^{1/3}}{3^{7/6}\Gamma\left(\tfrac{2 }{3}\right)\nu^{1/3}}, subject to \nu\to+\infty</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C11.S12">
+<title>Physical Applications</title>        
+ 
+     
+<para xml:id="C11.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C11.S12.p1.s1">
+Applications of Struve functions occur in water-wave and surface-wave problems ( ( ) and ( ) ), unsteady aerodynamics ( ( ) and ( ) ), distribution of fluid pressure over a vibrating disk ( ( ) ), resistive MHD instability theory ( ( ) ), and optical diffraction ( ( ) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C11.S12.p1.s2">
+More recently Struve functions have appeared in many particle quantum dynamical studies of spin decoherence ( ( ) ) and nanotubes ( ( ) ).
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C11.S13">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C11.S13.SS1">
+<title>Introduction</title>        
+    
+<para xml:id="C11.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C11.S13.SS1.p1.s1">
+Subsequent subsections treat the computation of Struve functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C11.S13.SS1.p1.s2">
+The treatment of Lommel and Anger–Weber functions is similar.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="168" xml:id="C11.S13.SS1.p1.s3">
+For a review of methods for the computation of <Math mode="inline" xml:id="C11.S13.SS1.p1.m1">\mathbf{H}_{\nu}\left(z\right)</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="169" xml:id="C11.S13.SS1.p1.s4">
+For simple and effective approximations to <Math mode="inline" xml:id="C11.S13.SS1.p1.m2">\mathbf{H}_{0}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS1.p1.m3">\mathbf{H}_{1}\left(z\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS2">
+<title>Series Expansions</title>        
+ 
+<para xml:id="C11.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C11.S13.SS2.p1.s1">
+Although the power-series expansions (LABEL:eq:ST.SE.1) and (LABEL:eq:ST.SE.2), and the Bessel-function expansions of §LABEL:sec:ST.PPT.SB converge for all finite values of <Math mode="inline" xml:id="C11.S13.SS2.p1.m1">z</Math> , they are cumbersome to use when <Math mode="inline" xml:id="C11.S13.SS2.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="171" xml:id="C11.S13.SS2.p1.s2">
+For large <Math mode="inline" xml:id="C11.S13.SS2.p1.m3">|z|</Math> and/or <Math mode="inline" xml:id="C11.S13.SS2.p1.m4">|\nu|</Math> the asymptotic expansions given in §LABEL:sec:ST.AE should be used instead.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS3">
+<title>Quadrature</title>        
+ 
+<para xml:id="C11.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C11.S13.SS3.p1.s1">
+For numerical purposes the most convenient of the representations given in §LABEL:sec:ST.IR, at least for real variables, include the integrals (LABEL:eq:ST.IR.3)–(LABEL:eq:ST.IR.7) for <Math mode="inline" xml:id="C11.S13.SS3.p1.m1">\mathbf{K}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS3.p1.m2">\mathbf{M}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="173" xml:id="C11.S13.SS3.p1.s2">
+Subsequently <Math mode="inline" xml:id="C11.S13.SS3.p1.m3">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS3.p1.m4">\mathbf{L}_{\nu}\left(z\right)</Math> are obtainable via (LABEL:eq:ST.DE.3) and (LABEL:eq:ST.DE.6).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="174" xml:id="C11.S13.SS3.p1.s3">
+Other integrals that appear in §LABEL:sec:ST.IRA have highly oscillatory integrands unless <Math mode="inline" xml:id="C11.S13.SS3.p1.m5">z</Math> is small.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S13.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C11.S13.SS3.p2.s1">
+For complex variables the methods described in §§LABEL:sec:NM.QUA.CGAUSS andLABEL:sec:NM.QUA.RRAF are available.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS4">
+<title>Differential Equations</title>        
+ 
+<para xml:id="C11.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C11.S13.SS4.p1.s1">
+A comprehensive approach is to integrate the defining inhomogeneous differential equations (LABEL:eq:ST.DE.1) and (LABEL:eq:ST.DE.4) numerically, using methods described in §LABEL:sec:NM.ODE. To insure stability the integration path must be chosen so that as we proceed along it the wanted solution grows in magnitude at least as rapidly as the complementary solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C11.S13.SS4.p2.s1">
+Suppose <Math mode="inline" xml:id="C11.S13.SS4.p2.m1">\nu\geq 0</Math> and <Math mode="inline" xml:id="C11.S13.SS4.p2.m2">x</Math> is real and positive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C11.S13.SS4.p2.s2">
+Then from the limiting forms for small argument (§§LABEL:sec:ST.SE, LABEL:sec:BS.LF.ZE,LABEL:sec:BS.MLF.a),limiting forms for large argument (§§LABEL:sec:ST.AE.LA, LABEL:sec:BS.LF.ZI, LABEL:sec:BS.MLF.b), and the connection formulas (LABEL:eq:ST.DE.3) and (LABEL:eq:ST.DE.6), it is seen that <Math mode="inline" xml:id="C11.S13.SS4.p2.m3">\mathbf{H}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS4.p2.m4">\mathbf{L}_{\nu}\left(x\right)</Math> can be computed in a stable manner by integrating forwards, that is, from the origin toward infinity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="179" xml:id="C11.S13.SS4.p2.s3">
+The solution <Math mode="inline" xml:id="C11.S13.SS4.p2.m5">\mathbf{K}_{\nu}\left(x\right)</Math> needs to be integrated backwards for small <Math mode="inline" xml:id="C11.S13.SS4.p2.m6">x</Math> , and either forwards or backwards for large <Math mode="inline" xml:id="C11.S13.SS4.p2.m7">x</Math> depending whether or not <Math mode="inline" xml:id="C11.S13.SS4.p2.m8">\nu</Math> exceeds <Math mode="inline" xml:id="C11.S13.SS4.p2.m9">\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="180" xml:id="C11.S13.SS4.p2.s4">
+For <Math mode="inline" xml:id="C11.S13.SS4.p2.m10">\mathbf{M}_{\nu}\left(x\right)</Math> both forward and backward integration are unstable, and boundary-value methods are required (§LABEL:sec:NM.ODE.BVP).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S13.SS5">
+<title>Difference Equations</title>        
+ 
+<para xml:id="C11.S13.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C11.S13.SS5.p1.s1">
+Sequences of values of <Math mode="inline" xml:id="C11.S13.SS5.p1.m1">\mathbf{H}_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C11.S13.SS5.p1.m2">\mathbf{L}_{\nu}\left(z\right)</Math> , with <Math mode="inline" xml:id="C11.S13.SS5.p1.m3">z</Math> fixed, can be computed by application of the inhomogeneous difference equations (LABEL:eq:ST.RR.1) and (LABEL:eq:ST.RR.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="182" xml:id="C11.S13.SS5.p1.s2">
+There are similar problems to thosedescribed in §LABEL:sec:ST.COM.DE2 concerning stability.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="183" xml:id="C11.S13.SS5.p1.s3">
+In consequence forward recurrence, backward recurrence, or boundary-value methods may be necessary.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="184" xml:id="C11.S13.SS5.p1.s4">
+See §LABEL:sec:NM.LDE for implementation of these methods, and with the Weber function <Math mode="inline" xml:id="C11.S13.SS5.p1.m4">\mathbf{E}_{n}\left(x\right)</Math> as an example.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S14">
+<title>Tables</title>        
+ 
+<subsection xml:id="C11.S14.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C11.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C11.S14.SS1.p1.s1">
+For tables before 1961 see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="186" xml:id="C11.S14.SS1.p1.s2">
+Tables listed in these Indices are omitted from the subsections that follow.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S14.SS2">
+<title>Struve Functions</title>        
+  
+<para xml:id="C11.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C11.S14.SS2.p1.s1">
+( , Chapter 12) tabulates <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m2">\mathbf{H}_{n}\left(x\right)-Y_{n}\left(x\right)</Math> , and <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m3">I_{n}\left(x\right)-\mathbf{L}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m4">n=0,1</Math> and <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m5">x=0(.1)</Math> 5, <Math mode="inline" xml:id="C11.S14.I1.i1.p1.m6">x^{-1}=0(.01)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="188" xml:id="C11.S14.SS2.p1.s2">
+2 to 6D or 7D.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="189" xml:id="C11.S14.SS2.p1.s3">
+( ) tabulates <Math mode="inline" xml:id="C11.S14.I1.i2.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S14.I1.i2.p1.m2">e^{-x}\mathbf{L}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I1.i2.p1.m3">n=0,1</Math> and <Math mode="inline" xml:id="C11.S14.I1.i2.p1.m4">x=0(.001)5(.005)15(.01)10</Math> 0 to 11D. ( ) tabulates <Math mode="inline" xml:id="C11.S14.I1.i3.p1.m1">\mathbf{L}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I1.i3.p1.m2">n=0,1</Math> and <Math mode="inline" xml:id="C11.S14.I1.i3.p1.m3">x=0.2(.005)4(.05)10(.1)19.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="190" xml:id="C11.S14.SS2.p1.s4">
+2 to 5 or 6S, <Math mode="inline" xml:id="C11.S14.I1.i3.p1.m4">x=6(.25)59.5(.5)10</Math> 0 to 2S. ( ) tabulates <Math mode="inline" xml:id="C11.S14.I1.i4.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I1.i4.p1.m2">n=-4(1)15</Math> and <Math mode="inline" xml:id="C11.S14.I1.i4.p1.m3">x=0.5(.5)2</Math> 6 to 8D or 9S. ( ) tabulates <Math mode="inline" xml:id="C11.S14.I1.i5.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S14.I1.i5.p1.m2">\mathbf{L}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I1.i5.p1.m3">n=-4(1)3</Math> and <Math mode="inline" xml:id="C11.S14.I1.i5.p1.m4">x=0(1)20</Math> to 8D or 7S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S14.SS3">
+<title>Integrals</title>        
+ 
+ 
+<para xml:id="C11.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="191" xml:id="C11.S14.SS3.p1.s1">
+( , Chapter 12) tabulates <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m1">\int_{0}^{x}(I_{0}\left(t\right)-\mathbf{L}_{0}\left(t\right))\mathrm{d}t</Math> and <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m2">(2/\pi)\int_{x}^{\infty}t^{-1}\mathbf{H}_{0}\left(t\right)\mathrm{d}t</Math> for <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m3">x=0(.1)</Math> 5 to 5D or7D; <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m4">\int_{0}^{x}(\mathbf{H}_{0}\left(t\right)-Y_{0}\left(t\right))\mathrm{d}t-(2/ \pi)\ln x</Math> , <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m5">\int_{0}^{x}(I_{0}\left(t\right)-\mathbf{L}_{0}\left(t\right))\mathrm{d}t-(2/ \pi)\ln x</Math> , and <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m6">\int_{x}^{\infty}t^{-1}(\mathbf{H}_{0}\left(t\right)-Y_{0}\left(t\right)) \mathrm{d}t</Math> for <Math mode="inline" xml:id="C11.S14.I2.i1.p1.m7">x^{-1}=0(.01)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="192" xml:id="C11.S14.SS3.p1.s2">
+2 to 6D. ( ) tabulates <Math mode="inline" xml:id="C11.S14.I2.i2.p1.m1">\int_{0}^{x}\mathbf{H}_{0}\left(t\right)\mathrm{d}t</Math> and <Math mode="inline" xml:id="C11.S14.I2.i2.p1.m2">e^{-x}\int_{0}^{x}\mathbf{L}_{0}\left(t\right)\mathrm{d}t</Math> for <Math mode="inline" xml:id="C11.S14.I2.i2.p1.m3">x=0(.001)5(.005)15(.01)10</Math> 0 to 11D.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S14.SS4">
+<title>Anger–Weber Functions</title>        
+  
+<para xml:id="C11.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="193" xml:id="C11.S14.SS4.p1.s1">
+( ) tabulates <Math mode="inline" xml:id="C11.S14.I3.i1.p1.m1">\mathbf{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C11.S14.I3.i1.p1.m2">\mathbf{E}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I3.i1.p1.m3">\nu=-10(.1)1</Math> 0 and <Math mode="inline" xml:id="C11.S14.I3.i1.p1.m4">x=0(.1)1</Math> 0 to 5D. ( ) tabulates <Math mode="inline" xml:id="C11.S14.I3.i2.p1.m1">\mathbf{E}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S14.I3.i2.p1.m2">n=1,2</Math> and <Math mode="inline" xml:id="C11.S14.I3.i2.p1.m3">x=0(.01)14.9</Math> 9 to 4D.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S14.SS5">
+<title>Incomplete Functions</title>        
+   
+<para xml:id="C11.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="194" xml:id="C11.S14.SS5.p1.s1">
+( , Chapter 11) defines incomplete Struve, Anger, and Weber functions and includes tables of an incomplete Struve function <Math mode="inline" xml:id="C11.S14.I4.i1.p1.m1">\mathbf{H}_{n}\left(x,\alpha\right)</Math> for <Math mode="inline" xml:id="C11.S14.I4.i1.p1.m2">n=0,1</Math> , <Math mode="inline" xml:id="C11.S14.I4.i1.p1.m3">x=0(.2)1</Math> 0, and <Math mode="inline" xml:id="C11.S14.I4.i1.p1.m4">\alpha=0(.2)1.4,\tfrac{1}{2}\p</Math> i, together with surface plots.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S15">
+<title>Approximations</title>        
+ 
+<subsection xml:id="C11.S15.SS1">
+<title>Expansions in Chebyshev Series</title>        
+   
+<para xml:id="C11.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C11.S15.SS1.p1.s1">
+( , pp. 416–421) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m2">\mathbf{L}_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m3">0\leq\left|x\right|\leq 8</Math> , and <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m4">\mathbf{H}_{n}\left(x\right)-Y_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m5">x\geq 8</Math> , for <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m6">n=0,1</Math> ; <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m7">\int_{0}^{x}t^{-m}\mathbf{H}_{0}\left(t\right)\mathrm{d}t</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m8">\int_{0}^{x}t^{-m}\mathbf{L}_{0}\left(t\right)\mathrm{d}t</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m9">0\leq\left|x\right|\leq 8</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m10">m=0,1</Math> and <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m11">\int_{0}^{x}(\mathbf{H}_{0}\left(t\right)-Y_{0}\left(t\right))\mathrm{d}t</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m12">\int_{x}^{\infty}t^{-1}(\mathbf{H}_{0}\left(t\right)-Y_{0}\left(t\right)) \mathrm{d}t</Math> , <Math mode="inline" xml:id="C11.S15.I1.i1.p1.m13">x\geq 8</Math> ; the coefficients are to 20D. ( ) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m1">\mathbf{L}_{0}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m2">\mathbf{L}_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m3">0\leq x\leq 16</Math> , and <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m4">I_{0}\left(x\right)-\mathbf{L}_{0}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m5">I_{1}\left(x\right)-\mathbf{L}_{1}\left(x\right)</Math> , <Math mode="inline" xml:id="C11.S15.I1.i2.p1.m6">x\geq 16</Math> ; the coefficients are to 20D.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S15.SS2">
+<title>Rational and Polynomial Approximations</title>        
+ 
+<para xml:id="C11.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C11.S15.SS2.p1.s1">
+( ) gives polynomial approximations for <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m1">\mathbf{H}_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m2">n=0,1</Math> , <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m3">0\leq x\leq 3</Math> , and rational-fraction approximations for <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m4">\mathbf{H}_{n}\left(x\right)-Y_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m5">n=0,1</Math> , <Math mode="inline" xml:id="C11.S15.I2.i1.p1.m6">x\geq 3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="197" xml:id="C11.S15.SS2.p1.s2">
+The maximum errors do not exceed 1.2×10⁻⁸ for the former and 2.5×10⁻⁸ for the latter.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C11.S16">
+<title>Software</title>        
+ 
+<para xml:id="C11.S16.p1">
+
+</para>
+ 
+<subsection xml:id="C11.S16.SS1">
+<title>Introduction</title>         
+<para xml:id="C11.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="198" xml:id="C11.S16.SS1.p1.s1">
+In this section we provide links to the research literature describingthe implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="199" xml:id="C11.S16.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="200" xml:id="C11.S16.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S16.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C11.S16.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="202" xml:id="C11.S16.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S16.SS2">
+<title>Struve Functions</title>        
+ 
+<para xml:id="C11.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C11.S16.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="204" xml:id="C11.S16.SS2.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S16.SS3">
+<title>Integrals of Struve Functions</title>        
+ 
+<para xml:id="C11.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C11.S16.SS3.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="206" xml:id="C11.S16.SS3.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S16.SS4">
+<title>Lommel Functions</title>        
+ 
+<para xml:id="C11.S16.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C11.S16.SS4.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="208" xml:id="C11.S16.SS4.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S16.SS5">
+<title>Anger and Weber Functions</title>        
+ 
+<para xml:id="C11.S16.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="209" xml:id="C11.S16.SS5.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="210" xml:id="C11.S16.SS5.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S16.SS6">
+<title>Integrals of Anger and Weber Functions</title>        
+ 
+<para xml:id="C11.S16.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="211" xml:id="C11.S16.SS6.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="212" xml:id="C11.S16.SS6.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

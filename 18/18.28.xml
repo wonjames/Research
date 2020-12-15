@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S28">
+<title>Askey–Wilson Class</title>        
+  
+<subsection xml:id="C18.S28.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C18.S28.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S28.SS1.p1.s1">
+The Askey–Wilson class OP’s comprise the four-parameter families of Askey–Wilson polynomials and of <Math mode="inline" xml:id="C18.S28.SS1.p1.m1">q</Math> -Racah polynomials, and cases of these families obtained by specialization of parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S28.SS1.p1.s2">
+The Askey–Wilson polynomials form a system of OP’s <Math mode="inline" xml:id="C18.S28.SS1.p1.m2">\{p_{n}(x)\}</Math> , <Math mode="inline" xml:id="C18.S28.SS1.p1.m3">n=0,1,2,\dots</Math> , that are orthogonal with respect to a weight function on a bounded interval, possibly supplemented with discrete weights on a finite set.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S28.SS1.p1.s3">
+The <Math mode="inline" xml:id="C18.S28.SS1.p1.m4">q</Math> -Racah polynomials form a system of OP’s <Math mode="inline" xml:id="C18.S28.SS1.p1.m5">\{p_{n}(x)\}</Math> , <Math mode="inline" xml:id="C18.S28.SS1.p1.m6">n=0,1,2,\dots,N</Math> , that are orthogonal with respect to a weight function on a sequence <Math mode="inline" xml:id="C18.S28.SS1.p1.m7">\{q^{-y}+cq^{y+1}\}</Math> , <Math mode="inline" xml:id="C18.S28.SS1.p1.m8">y=0,1,\dots,N</Math> , with <Math mode="inline" xml:id="C18.S28.SS1.p1.m9">c</Math> a constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C18.S28.SS1.p1.s4">
+Both the Askey–Wilson polynomials and the <Math mode="inline" xml:id="C18.S28.SS1.p1.m10">q</Math> -Racah polynomials can best be described as functions of <Math mode="inline" xml:id="C18.S28.SS1.p1.m11">z</Math> (resp. <Math mode="inline" xml:id="C18.S28.SS1.p1.m12">y</Math> ) such that <Math mode="inline" xml:id="C18.S28.SS1.p1.m13">P_{n}(z)=p_{n}(\tfrac{1}{2}(z+z^{-1}))</Math> in the Askey–Wilson case, and <Math mode="inline" xml:id="C18.S28.SS1.p1.m14">P_{n}(y)=p_{n}(q^{-y}+cq^{y+1})</Math> in the <Math mode="inline" xml:id="C18.S28.SS1.p1.m15">q</Math> -Racah case, and both are eigenfunctions of a second-order <Math mode="inline" xml:id="C18.S28.SS1.p1.m16">q</Math> -difference operator similar to (18.27.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S28.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S28.SS1.p2.s1">
+In the remainder of this section the Askey–Wilson class OP’s are defined by their <Math mode="inline" xml:id="C18.S28.SS1.p2.m1">q</Math> -hypergeometric representations, followed by their orthogonal properties.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C18.S28.SS1.p2.s2">
+For further properties see Koekoek et al. (2010, Chapter 14).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C18.S28.SS1.p2.s3">
+See also Gasper and Rahman (2004, pp. 180–199),Ismail (2005, Chapter 15), and Koornwinder (2012).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C18.S28.SS1.p2.s4">
+For the notation of <Math mode="inline" xml:id="C18.S28.SS1.p2.m2">q</Math> -hypergeometric functions see §§17.2 and 17.4(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS2">
+<title>Askey–Wilson Polynomials</title>        
+   
+ 
+<para xml:id="C18.S28.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S28.SS2.p1.s1">
+ <Math equation-number="18.28.1" mode="display" xml:id="C18.S28.E1">p_{n}(\cos\theta)=p_{n}\left(\cos\theta;a,b,c,d\,|\,q\right)=a^{-n}\sum_{\ell= 0}^{n}q^{\ell}\left(abq^{\ell},acq^{\ell},adq^{\ell};q\right)_{n-\ell}\*\frac{ \left(q^{-n},abcdq^{n-1};q\right)_{\ell}}{\left(q;q\right)_{\ell}}\prod_{j=0}^ {\ell-1}{(1-2aq^{j}\cos\theta+a^{2}q^{2j})}=a^{-n}\left(ab,ac,ad;q\right)_{n} \*{{}_{4}\phi_{3}}\left({q^{-n},abcdq^{n-1},ae^{\mathrm{i}\theta},ae^{-\mathrm {i}\theta}\atop ab,ac,ad};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S28.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S28.SS2.p2.s1">
+Assume <Math mode="inline" xml:id="C18.S28.SS2.p2.m1">a,b,c,d</Math> are all real, or two of them are real and two form a conjugate pair, or none of them are real but they form two conjugate pairs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C18.S28.SS2.p2.s2">
+Furthermore, <Math mode="inline" xml:id="C18.S28.SS2.p2.m2">|ab|</Math> , <Math mode="inline" xml:id="C18.S28.SS2.p2.m3">|ac|</Math> , <Math mode="inline" xml:id="C18.S28.SS2.p2.m4">|ad|</Math> , <Math mode="inline" xml:id="C18.S28.SS2.p2.m5">|bc|</Math> , <Math mode="inline" xml:id="C18.S28.SS2.p2.m6">|bd|</Math> , <Math mode="inline" xml:id="C18.S28.SS2.p2.m7">|cd|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C18.S28.SS2.p2.s3">
+Then <Math equation-number="18.28.2" mode="display" xml:id="C18.S28.E2">\int_{-1}^{1}p_{n}(x)p_{m}(x)w(x)\mathrm{d}x=h_{n}\delta_{n,m}, if |a|,|b|,|c|,|d|\leq 1,</Math> where <Math equation-number="18.28.3" mode="display" xml:id="C18.S28.E3">2\pi\sin\theta\,w(\cos\theta)={\left|\frac{\left(e^{2i\theta};q\right)_{\infty }}{\left(ae^{i\theta},be^{i\theta},ce^{i\theta},de^{i\theta};q\right)_{\infty} }\right|^{2}},</Math> <Math equation-number="18.28.4" mode="display" xml:id="C18.S28.E4">h_{0}=\frac{\left(abcd;q\right)_{\infty}}{\left(q,ab,ac,ad,bc,bd,cd;q\right)_{ \infty}},</Math> <Math equation-number="18.28.5" mode="display" xml:id="C18.S28.E5">h_{n}=h_{0}\frac{(1-abcdq^{n-1})\left(q,ab,ac,ad,bc,bd,cd;q\right)_{n}}{(1- abcdq^{2n-1})\left(abcd;q\right)_{n}}, if n=1,2,\ldots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S28.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S28.SS2.p3.s1">
+More generally, without the constraints in (18.28.2),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C18.S28.SS2.p3.s2">
+<Math equation-number="18.28.6" mode="display" xml:id="C18.S28.E6">\int_{-1}^{1}p_{n}(x)p_{m}(x)w(x)\mathrm{d}x+\sum_{\ell}p_{n}(x_{\ell})p_{m}(x _{\ell})\omega_{\ell}=h_{n}\delta_{n,m},</Math> with <Math mode="inline" xml:id="C18.S28.SS2.p3.m1">w(x)</Math> and <Math mode="inline" xml:id="C18.S28.SS2.p3.m2">h_{n}</Math> as above.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C18.S28.SS2.p3.s3">
+Also, <Math mode="inline" xml:id="C18.S28.SS2.p3.m3">x_{\ell}</Math> are the points <Math mode="inline" xml:id="C18.S28.SS2.p3.m4">\tfrac{1}{2}(\alpha q^{\ell}+\alpha^{-1}q^{-\ell})</Math> with <Math mode="inline" xml:id="C18.S28.SS2.p3.m5">\alpha</Math> any of the <Math mode="inline" xml:id="C18.S28.SS2.p3.m6">a,b,c,d</Math> whose absolute value exceeds <Math mode="inline" xml:id="C18.S28.SS2.p3.m7">1</Math> , and the sum is over the <Math mode="inline" xml:id="C18.S28.SS2.p3.m8">\ell=0,1,2,\dots</Math> with <Math mode="inline" xml:id="C18.S28.SS2.p3.m9">|\alpha q^{\ell}|&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C18.S28.SS2.p3.s4">
+SeeKoekoek et al. (2010, Eq. (14.1.3))for the value of <Math mode="inline" xml:id="C18.S28.SS2.p3.m10">\omega_{\ell}</Math> when <Math mode="inline" xml:id="C18.S28.SS2.p3.m11">\alpha=a</Math>.
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS3">
+<title>Al-Salam–Chihara Polynomials</title>        
+ 
+<para xml:id="C18.S28.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S28.SS3.p1.s1">
+ <Math equation-number="18.28.7" mode="display" xml:id="C18.S28.E7">Q_{n}\left(\cos\theta;a,b\,|\,q\right)=p_{n}\left(\cos\theta;a,b,0,0\,|\,q \right)=a^{-n}\sum_{\ell=0}^{n}q^{\ell}\frac{\left(abq^{\ell};q\right)_{n-\ell }\left(q^{-n};q\right)_{\ell}}{\left(q;q\right)_{\ell}}\*\prod_{j=0}^{\ell-1}( 1-2aq^{j}\cos\theta+a^{2}q^{2j})=\frac{\left(ab;q\right)_{n}}{a^{n}}{{}_{3} \phi_{2}}\left({q^{-n},ae^{\mathrm{i}\theta},ae^{-\mathrm{i}\theta}\atop ab,0} ;q,q\right)=\left(be^{-\mathrm{i}\theta};q\right)_{n}e^{\mathrm{i}n\theta}{{}_ {2}\phi_{1}}\left({q^{-n},ae^{\mathrm{i}\theta}\atop b^{-1}q^{1-n}e^{\mathrm{i }\theta}};q,b^{-1}qe^{-\mathrm{i}\theta}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S28.SS3.p1.s2">
+<Math equation-number="18.28.8" mode="display" xml:id="C18.S28.E8">\frac{1}{2\pi}\int_{0}^{\pi}Q_{n}\left(\cos\theta;a,b\,|\,q\right)Q_{m}\left( \cos\theta;a,b\,|\,q\right)\*{\left|\frac{\left(e^{2i\theta};q\right)_{\infty} }{\left(ae^{i\theta},be^{i\theta};q\right)_{\infty}}\right|^{2}}\mathrm{d} \theta=\frac{\delta_{n,m}}{\left(q^{n+1},abq^{n};q\right)_{\infty}}, if a,b\in\mathbb{R} or a=\overline{b}; |ab|&lt;1; |a|,|b|\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C18.S28.SS3.p1.s3">
+More generally, without the constraints <Math mode="inline" xml:id="C18.S28.SS3.p1.m1">|a|,|b|\leq 1</Math> discrete terms need to be added to the right-hand side of (18.28.8); seeKoekoek et al. (2010, Eq. (14.8.3)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS4">
+<title><Math mode="inline" xml:id="C18.S28.SS4.m1">q^{-1}</Math>-Al-Salam–Chihara Polynomials</title>        
+   
+<para xml:id="C18.S28.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C18.S28.SS4.p1.s1">
+ <Math equation-number="18.28.9" mode="display" xml:id="C18.S28.E9">Q_{n}\left(\tfrac{1}{2}(aq^{-y}+a^{-1}q^{y});a,b\,|\,q^{-1}\right)=(-1)^{n}b^{ n}q^{-\frac{1}{2}n(n-1)}\*\left((ab)^{-1};q\right)_{n}{{}_{3}\phi_{1}}\left({q ^{-n},q^{-y},a^{-2}q^{y}\atop(ab)^{-1}};q,q^{n}ab^{-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C18.S28.SS4.p1.s2">
+<Math equation-number="18.28.10" mode="display" xml:id="C18.S28.E10">\sum_{y=0}^{\infty}\frac{(1-q^{2y}a^{-2})\left(a^{-2},(ab)^{-1};q\right)_{y}}{ (1-a^{-2})\left(q,bqa^{-1};q\right)_{y}}(ba^{-1})^{y}q^{y^{2}}\*Q_{n}\left( \tfrac{1}{2}(aq^{-y}+a^{-1}q^{y});a,b\,|\,q^{-1}\right)\*Q_{m}\left(\tfrac{1}{ 2}(aq^{-y}+a^{-1}q^{y});a,b\,|\,q^{-1}\right)=\frac{\left(qa^{-2};q\right)_{ \infty}}{\left(ba^{-1}q;q\right)_{\infty}}\left(q,(ab)^{-1};q\right)_{n}(ab)^{ n}q^{-n^{2}}\delta_{n,m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C18.S28.SS4.p1.s3">
+Eq. (18.28.10) is valid when either <Math equation-number="18.28.11" mode="display" xml:id="C18.S28.E11">0&lt;q&lt;1,a,b\in\mathbb{R},ab&gt;1,a^{-1}b&lt;q^{-1},</Math> or <Math equation-number="18.28.12" mode="display" xml:id="C18.S28.E12">0&lt;q&lt;1,\ifrac{a}{\mathrm{i}},\ifrac{b}{\mathrm{i}}\in\mathbb{R},(\Im a)(\Im b)&gt; 0,a^{-1}b&lt;q^{-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="23" xml:id="C18.S28.SS4.p1.s4">
+If, in addition to (18.28.11) or (18.28.12), we have <Math mode="inline" xml:id="C18.S28.SS4.p1.m1">a^{-1}b\leq q</Math> , then the measure in (18.28.10) is uniquely determined. Also, if <Math mode="inline" xml:id="C18.S28.SS4.p1.m2">q&lt;a^{-1}b&lt;q^{-1}</Math> , then (18.28.10) holds with <Math mode="inline" xml:id="C18.S28.SS4.p1.m3">a,b</Math> interchanged. For further nondegenerate cases seeChihara and Ismail (1993) and Christiansen and Ismail (2006).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS5">
+<title>Continuous <Math mode="inline" xml:id="C18.S28.SS5.m1">q</Math>-Ultraspherical Polynomials</title>        
+  
+<para xml:id="C18.S28.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C18.S28.SS5.p1.s1">
+ <Math equation-number="18.28.13" mode="display" xml:id="C18.S28.E13">C_{n}\left(\cos\theta;\beta\,|\,q\right)=\sum_{\ell=0}^{n}\frac{\left(\beta;q \right)_{\ell}\left(\beta;q\right)_{n-\ell}}{\left(q;q\right)_{\ell}\left(q;q \right)_{n-\ell}}e^{\mathrm{i}(n-2\ell)\theta}=\frac{\left(\beta;q\right)_{n}} {\left(q;q\right)_{n}}e^{\mathrm{i}n\theta}{{}_{2}\phi_{1}}\left({q^{-n},\beta \atop\beta^{-1}q^{1-n}};q,\beta^{-1}qe^{-2\mathrm{i}\theta}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C18.S28.SS5.p1.s2">
+<Math equation-number="18.28.14" mode="display" xml:id="C18.S28.E14">C_{n}\left(\cos\theta;\beta\,|\,q\right)=\frac{\left(\beta^{2};q\right)_{n}}{ \left(q;q\right)_{n}\beta^{\frac{1}{2}n}}{{}_{4}\phi_{3}}\left({q^{-n},\beta^{ 2}q^{n},\beta^{\frac{1}{2}}e^{\mathrm{i}\theta},\beta^{\frac{1}{2}}e^{-\mathrm {i}\theta}\atop\beta q^{\frac{1}{2}},-\beta,-\beta q^{\frac{1}{2}}};q,q\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C18.S28.SS5.p1.s3">
+<Math equation-number="18.28.15" mode="display" xml:id="C18.S28.E15">\frac{1}{2\pi}\int_{0}^{\pi}C_{n}\left(\cos\theta;\beta\,|\,q\right)C_{m}\left (\cos\theta;\beta\,|\,q\right)\*{\left|\frac{\left(e^{2\mathrm{i}\theta};q \right)_{\infty}}{\left(\beta e^{2\mathrm{i}\theta};q\right)_{\infty}}\right|^ {2}}\mathrm{d}\theta=\frac{\left(\beta,\beta q;q\right)_{\infty}}{\left(\beta^ {2},q;q\right)_{\infty}}\frac{(1-\beta)\left(\beta^{2};q\right)_{n}}{(1-\beta q ^{n})\left(q;q\right)_{n}}\delta_{n,m}, if -1&lt;\beta&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S28.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C18.S28.SS5.p2.s1">
+These polynomials are also called Rogers polynomials.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS6">
+<title>Continuous <Math mode="inline" xml:id="C18.S28.SS6.m1">q</Math>-Hermite Polynomials</title>        
+ 
+ 
+<para xml:id="C18.S28.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C18.S28.SS6.p1.s1">
+ <Math equation-number="18.28.16" mode="display" xml:id="C18.S28.E16">H_{n}\left(\cos\theta\,|\,q\right)=\sum_{\ell=0}^{n}\frac{\left(q;q\right)_{n} e^{\mathrm{i}(n-2\ell)\theta}}{\left(q;q\right)_{\ell}\left(q;q\right)_{n-\ell }}=e^{\mathrm{i}n\theta}{{}_{2}\phi_{0}}\left({q^{-n},0\atop-};q,q^{n}e^{-2 \mathrm{i}\theta}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C18.S28.SS6.p1.s2">
+<Math equation-number="18.28.17" mode="display" xml:id="C18.S28.E17">\frac{1}{2\pi}\int_{0}^{\pi}H_{n}\left(\cos\theta\,|\,q\right)H_{m}\left(\cos \theta\,|\,q\right){\left|\left(e^{2\mathrm{i}\theta};q\right)_{\infty}\right| ^{2}}\mathrm{d}\theta=\frac{\delta_{n,m}}{\left(q^{n+1};q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS7">
+<title>Continuous <Math mode="inline" xml:id="C18.S28.SS7.m1">q^{-1}</Math>-Hermite Polynomials</title>        
+ 
+ 
+<para xml:id="C18.S28.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C18.S28.SS7.p1.s1">
+ <Math equation-number="18.28.18" mode="display" xml:id="C18.S28.E18">h_{n}\left(\sinh t\,|\,q\right)=\sum_{\ell=0}^{n}q^{\frac{1}{2}\ell(\ell+1)} \frac{\left(q^{-n};q\right)_{\ell}}{\left(q;q\right)_{\ell}}e^{(n-2\ell)t}=e^{ nt}{{}_{1}\phi_{1}}\left({q^{-n}\atop 0};q,-qe^{-2t}\right)={\mathrm{i}^{-n}}H _{n}\left(\mathrm{i}\sinh t\,|\,q^{-1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S28.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C18.S28.SS7.p2.s1">
+For continuous <Math mode="inline" xml:id="C18.S28.SS7.p2.m1">q^{-1}</Math> -Hermite polynomials the orthogonality measure is not unique.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C18.S28.SS7.p2.s2">
+See Askey (1989) and Ismail and Masson (1994) for examples.
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+<subsection xml:id="C18.S28.SS8">
+<title><Math mode="inline" xml:id="C18.S28.SS8.m1">q</Math>-Racah Polynomials</title>        
+  
+ 
+<para xml:id="C18.S28.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C18.S28.SS8.p1.s1">
+With <Math mode="inline" xml:id="C18.S28.SS8.p1.m1">x=q^{-y}+\gamma\delta q^{y+1}</Math> , <Math equation-number="18.28.19" mode="display" xml:id="C18.S28.E19">R_{n}(x)=R_{n}\left(x;\alpha,\beta,\gamma,\delta\,|\,q\right)=\sum_{\ell=0}^{n }\frac{q^{\ell}\left(q^{-n},\alpha\beta q^{n+1};q\right)_{\ell}}{\left(\alpha q ,\beta\delta q,\gamma q,q;q\right)_{\ell}}\*\prod_{j=0}^{\ell-1}(1-q^{j}x+ \gamma\delta q^{2j+1})={{}_{4}\phi_{3}}\left({q^{-n},\alpha\beta q^{n+1},q^{-y },\gamma\delta q^{y+1}\atop\alpha q,\beta\delta q,\gamma q};q,q\right), if \alpha q, \beta\delta q, or \gamma q=q^{-N}; n=0,1,\dots,N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C18.S28.SS8.p1.s2">
+<Math equation-number="18.28.20" mode="display" xml:id="C18.S28.E20">\sum_{y=0}^{N}R_{n}(q^{-y}+\gamma\delta q^{y+1})R_{m}(q^{-y}+\gamma\delta q^{y +1})\omega_{y}=h_{n}\delta_{n,m}, if n,m=0,1,\dots,N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C18.S28.SS8.p1.s3">
+For <Math mode="inline" xml:id="C18.S28.SS8.p1.m2">\omega_{y}</Math> and <Math mode="inline" xml:id="C18.S28.SS8.p1.m3">h_{n}</Math> see Koekoek et al. (2010, Eq. (14.2.2)).
+</sentence>
+
+</para>
+     
+</subsection>
+ 
+</section>

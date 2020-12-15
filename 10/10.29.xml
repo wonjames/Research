@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S29">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C10.S29.SS1">
+<title>Recurrence Relations</title>        
+  
+<para xml:id="C10.S29.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S29.SS1.p1.s1">
+With <Math mode="inline" xml:id="C10.S29.SS1.p1.m1">\mathscr{Z}_{\nu}\left(z\right)</Math> defined as in §10.25(ii),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S29.SS1.p1.s2">
+<Math equation-number="10.29.1" mode="display" xml:id="C10.S29.E1">\mathscr{Z}_{\nu-1}\left(z\right)-\mathscr{Z}_{\nu+1}\left(z\right)=(2\nu/z) \mathscr{Z}_{\nu}\left(z\right),\mathscr{Z}_{\nu-1}\left(z\right)+\mathscr{Z}_{\nu+1}\left(z\right)=2\! \mathscr{Z}_{\nu}'\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S29.SS1.p1.s3">
+<Math equation-number="10.29.2" mode="display" xml:id="C10.S29.E2">\mathscr{Z}_{\nu}'\left(z\right)=\mathscr{Z}_{\nu-1}\left(z\right)-(\nu/z) \mathscr{Z}_{\nu}\left(z\right),\mathscr{Z}_{\nu}'\left(z\right)=\mathscr{Z}_{\nu+1}\left(z\right)+(\nu/z) \mathscr{Z}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S29.SS1.p1.s4">
+<Math equation-number="10.29.3" mode="display" xml:id="C10.S29.E3">I_{0}'\left(z\right)=I_{1}\left(z\right),K_{0}'\left(z\right)=-K_{1}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S29.SS2">
+<title>Derivatives</title>        
+  
+<para xml:id="C10.S29.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S29.SS2.p1.s1">
+For <Math mode="inline" xml:id="C10.S29.SS2.p1.m1">k=0,1,2,\ldots</Math> , <Math equation-number="10.29.4" mode="display" xml:id="C10.S29.E4">\left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{k}(z^{\nu}\mathscr{Z}_ {\nu}\left(z\right))=z^{\nu-k}\mathscr{Z}_{\nu-k}\left(z\right),\left(\frac{1}{z}\frac{\mathrm{d}}{\mathrm{d}z}\right)^{k}(z^{-\nu}\mathscr{Z} _{\nu}\left(z\right))=z^{-\nu-k}\mathscr{Z}_{\nu+k}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C10.S29.SS2.p1.s2">
+<Math equation-number="10.29.5" mode="display" xml:id="C10.S29.E5">{\mathscr{Z}_{\nu}^{(k)}}\left(z\right)=\frac{1}{2^{k}}\left(\mathscr{Z}_{\nu- k}\left(z\right)+\genfrac{(}{)}{0.0pt}{}{k}{1}\mathscr{Z}_{\nu-k+2}\left(z \right)+\genfrac{(}{)}{0.0pt}{}{k}{2}\mathscr{Z}_{\nu-k+4}\left(z\right)+ \cdots+\mathscr{Z}_{\nu+k}\left(z\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

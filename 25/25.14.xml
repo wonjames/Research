@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S14">
+<title>Lerch’s Transcendent</title>        
+ 
+<subsection xml:id="C25.S14.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C25.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S14.SS1.p1.s1">
+ <Math equation-number="25.14.1" mode="display" xml:id="C25.S14.E1">{\Phi\left(z,s,a\right)=\sum_{n=0}^{\infty}\frac{z^{n}}{(a+n)^{s}}}, if a\neq 0,-1,-2,\dots,|z|&lt;1; \Re s&gt;1,|z|=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S14.SS1.p1.s2">
+For other values of <Math mode="inline" xml:id="C25.S14.SS1.p1.m1">z</Math> , <Math mode="inline" xml:id="C25.S14.SS1.p1.m2">\Phi\left(z,s,a\right)</Math> is defined by analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S14.SS1.p1.s3">
+This is the notation used in Erdélyi et al. (1953a, p. 27).Lerch (1887) used <Math mode="inline" xml:id="C25.S14.SS1.p1.m4">\mathfrak{K}(a,x,s)=\Phi\left(e^{2\pi ix},s,a\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C25.S14.SS1.p2.s1">
+The Hurwitz zeta function <Math mode="inline" xml:id="C25.S14.SS1.p2.m1">\zeta\left(s,a\right)</Math> (§25.11) and the polylogarithm <Math mode="inline" xml:id="C25.S14.SS1.p2.m2">\mathrm{Li}_{s}\left(z\right)</Math> (§25.12(ii)) are special cases: <Math equation-number="25.14.2" mode="display" xml:id="C25.S14.E2">\zeta\left(s,a\right)=\Phi\left(1,s,a\right), if \Re s&gt;1, a\neq 0,-1,-2,\dots,</Math> <Math equation-number="25.14.3" mode="display" xml:id="C25.S14.E3">\mathrm{Li}_{s}\left(z\right)=z\Phi\left(z,s,1\right), if \Re s&gt;1, |z|\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S14.SS2">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C25.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C25.S14.SS2.p1.s1">
+With the conditions of (25.14.1) and <Math mode="inline" xml:id="C25.S14.SS2.p1.m1">m=1,2,3,\dots</Math> , <Math equation-number="25.14.4" mode="display" xml:id="C25.S14.E4">\Phi\left(z,s,a\right)=z^{m}\Phi\left(z,s,a+m\right)+\sum_{n=0}^{m-1}\frac{z^{ n}}{(a+n)^{s}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C25.S14.SS2.p1.s2">
+<Math equation-number="25.14.5" mode="display" xml:id="C25.S14.E5">\Phi\left(z,s,a\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^ {s-1}e^{-ax}}{1-ze^{-x}}\mathrm{d}x, if \Re s&gt;0, \Re a&gt;0, z\in\mathbb{C}\setminus[1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C25.S14.SS2.p1.s3">
+<Math equation-number="25.14.6" mode="display" xml:id="C25.S14.E6">\Phi\left(z,s,a\right)=\frac{1}{2}a^{-s}+\int_{0}^{\infty}\frac{z^{x}}{(a+x)^{ s}}\mathrm{d}x-2\int_{0}^{\infty}\frac{\sin\left(x\ln z-s\operatorname{arctan} \left(x/a\right)\right)}{(a^{2}+x^{2})^{s/2}(e^{2\pi x}-1)}\mathrm{d}x, if \Re s&gt;0 if |z|&lt;1; \Re s&gt;1 if |z|=1,\Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C25.S14.SS2.p1.s4">
+For these and further properties see Erdélyi et al. (1953a, pp. 27–31).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

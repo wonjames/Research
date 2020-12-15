@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S4">
+<title>Functions of the First Kind</title>        
+  
+<subsection xml:id="C30.S4.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C30.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S4.SS1.p1.s1">
+The eigenfunctions of (30.2.1) that correspond to the eigenvalues <Math mode="inline" xml:id="C30.S4.SS1.p1.m1">\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> are denoted by <Math mode="inline" xml:id="C30.S4.SS1.p1.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> , <Math mode="inline" xml:id="C30.S4.SS1.p1.m3">n=m,m+1,m+2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S4.SS1.p1.s2">
+They are normalized by the condition <Math equation-number="30.4.1" mode="display" xml:id="C30.S4.E1">\int_{-1}^{1}\left(\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)\right)^{2} \mathrm{d}x=\frac{2}{2n+1}\frac{(n+m)!}{(n-m)!}</Math> , the sign of <Math mode="inline" xml:id="C30.S4.SS1.p1.m4">\mathsf{Ps}^{m}_{n}\left(0,\gamma^{2}\right)</Math> being <Math mode="inline" xml:id="C30.S4.SS1.p1.m5">(-1)^{(n+m)/2}</Math> when <Math mode="inline" xml:id="C30.S4.SS1.p1.m6">n-m</Math> is even, and the sign of <Math mode="inline" xml:id="C30.S4.SS1.p1.m7">\ifrac{\mathrm{d}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)}{\mathrm{d}x}|_{ x=0}</Math> being <Math mode="inline" xml:id="C30.S4.SS1.p1.m8">(-1)^{(n+m-1)/2}</Math> when <Math mode="inline" xml:id="C30.S4.SS1.p1.m9">n-m</Math> is odd.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C30.S4.SS1.p2.s1">
+When <Math mode="inline" xml:id="C30.S4.SS1.p2.m1">\gamma^{2}&gt;0</Math> <Math mode="inline" xml:id="C30.S4.SS1.p2.m2">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> is theprolate angular spheroidal wave function, and when <Math mode="inline" xml:id="C30.S4.SS1.p2.m3">\gamma^{2}&lt;0</Math> <Math mode="inline" xml:id="C30.S4.SS1.p2.m4">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> is theoblate angular spheroidal wave function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C30.S4.SS1.p2.s2">
+If <Math mode="inline" xml:id="C30.S4.SS1.p2.m5">\gamma=0</Math> , <Math mode="inline" xml:id="C30.S4.SS1.p2.m6">\mathsf{Ps}^{m}_{n}\left(x,0\right)</Math> reduces to the Ferrers function <Math mode="inline" xml:id="C30.S4.SS1.p2.m7">\mathsf{P}^{m}_{n}\left(x\right)</Math> : <Math equation-number="30.4.2" mode="display" xml:id="C30.S4.E2">\mathsf{Ps}^{m}_{n}\left(x,0\right)=\mathsf{P}^{m}_{n}\left(x\right);</Math> compare §14.3(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS2">
+<title>Elementary Properties</title>        
+   
+<para xml:id="C30.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C30.S4.SS2.p1.s1">
+ <Math equation-number="30.4.3" mode="display" xml:id="C30.S4.E3">\mathsf{Ps}^{m}_{n}\left(-x,\gamma^{2}\right)=(-1)^{n-m}\mathsf{Ps}^{m}_{n} \left(x,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C30.S4.SS2.p1.s2">
+<Math mode="inline" xml:id="C30.S4.SS2.p1.m1">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)</Math> has exactly <Math mode="inline" xml:id="C30.S4.SS2.p1.m2">n-m</Math> zeros in the interval <Math mode="inline" xml:id="C30.S4.SS2.p1.m3">-1&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS3">
+<title>Power-Series Expansion</title>        
+ 
+<para xml:id="C30.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C30.S4.SS3.p1.s1">
+ <Math equation-number="30.4.4" mode="display" xml:id="C30.S4.E4">\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right)=(1-x^{2})^{\frac{1}{2}m}\sum_{k=0 }^{\infty}g_{k}x^{k}, if -1\leq x\leq 1,</Math> where <Math equation-number="30.4.5" mode="display" xml:id="C30.S4.E5">\alpha_{k}g_{k+2}+(\beta_{k}-\lambda^{m}_{n}\left(\gamma^{2}\right))g_{k}+ \gamma_{k}g_{k-2}=0</Math> with <Math mode="inline" xml:id="C30.S4.SS3.p1.m1">\alpha_{k}</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m2">\beta_{k}</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m3">\gamma_{k}</Math> from (30.3.6), and <Math mode="inline" xml:id="C30.S4.SS3.p1.m4">g_{-1}=g_{-2}=0</Math> , <Math mode="inline" xml:id="C30.S4.SS3.p1.m5">g_{k}=0</Math> for even <Math mode="inline" xml:id="C30.S4.SS3.p1.m6">k</Math> if <Math mode="inline" xml:id="C30.S4.SS3.p1.m7">n-m</Math> is odd and <Math mode="inline" xml:id="C30.S4.SS3.p1.m8">g_{k}=0</Math> for odd <Math mode="inline" xml:id="C30.S4.SS3.p1.m9">k</Math> if <Math mode="inline" xml:id="C30.S4.SS3.p1.m10">n-m</Math> is even.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C30.S4.SS3.p1.s2">
+Normalization of the coefficients <Math mode="inline" xml:id="C30.S4.SS3.p1.m11">g_{k}</Math> is effected by application of (30.4.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S4.SS4">
+<title>Orthogonality</title>        
+ 
+ 
+<para xml:id="C30.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C30.S4.SS4.p1.s1">
+ <Math equation-number="30.4.6" mode="display" xml:id="C30.S4.E6">\int_{-1}^{1}\mathsf{Ps}^{m}_{k}\left(x,\gamma^{2}\right)\mathsf{Ps}^{m}_{n} \left(x,\gamma^{2}\right)\mathrm{d}x=\frac{2}{2n+1}\frac{(n+m)!}{(n-m)!}\delta _{k,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C30.S4.SS4.p1.s2">
+If <Math mode="inline" xml:id="C30.S4.SS4.p1.m1">f(x)</Math> is mean-square integrable on <Math mode="inline" xml:id="C30.S4.SS4.p1.m2">[-1,1]</Math> , then formally <Math equation-number="30.4.7" mode="display" xml:id="C30.S4.E7">f(x)=\sum_{n=m}^{\infty}c_{n}\mathsf{Ps}^{m}_{n}\left(x,\gamma^{2}\right),</Math> where <Math equation-number="30.4.8" mode="display" xml:id="C30.S4.E8">c_{n}=(n+\tfrac{1}{2})\frac{(n-m)!}{(n+m)!}\int_{-1}^{1}f(t)\mathsf{Ps}^{m}_{n }\left(t,\gamma^{2}\right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C30.S4.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C30.S4.SS4.p2.s1">
+The expansion (30.4.7) converges in the norm of <Math mode="inline" xml:id="C30.S4.SS4.p2.m1">L^{2}(-1,1)</Math> , that is, <Math equation-number="30.4.9" mode="display" xml:id="C30.S4.E9">\lim_{N\to\infty}\int_{-1}^{1}{\left|f(x)-\sum_{n=m}^{N}c_{n}\mathsf{Ps}^{m}_{ n}\left(x,\gamma^{2}\right)\right|^{2}}\mathrm{d}x=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C30.S4.SS4.p2.s2">
+It is also equiconvergent with its expansion in Ferrers functions (as in (30.4.2)), that is, the difference of corresponding partial sums converges to 0 uniformly for <Math mode="inline" xml:id="C30.S4.SS4.p2.m2">-1\leq x\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

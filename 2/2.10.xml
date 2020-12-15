@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S10">
+<title>Sums and Sequences</title>          
+<subsection xml:id="C2.S10.SS1">
+<title>Euler–Maclaurin Formula</title>           
+<para xml:id="C2.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S10.SS1.p1.s1">
+As in §24.2, let <Math mode="inline" xml:id="C2.S10.SS1.p1.m1">B_{n}</Math> and <Math mode="inline" xml:id="C2.S10.SS1.p1.m2">B_{n}\left(x\right)</Math> denote the <Math mode="inline" xml:id="C2.S10.SS1.p1.m3">n</Math> th Bernoulli number and polynomial, respectively, and <Math mode="inline" xml:id="C2.S10.SS1.p1.m4">\widetilde{B}_{n}\left(x\right)</Math> the <Math mode="inline" xml:id="C2.S10.SS1.p1.m5">n</Math> th Bernoulli periodic function <Math mode="inline" xml:id="C2.S10.SS1.p1.m6">B_{n}\left(x-\left\lfloor x\right\rfloor\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C2.S10.SS1.p2.s1">
+Assume that <Math mode="inline" xml:id="C2.S10.SS1.p2.m1">a,m</Math> , and <Math mode="inline" xml:id="C2.S10.SS1.p2.m2">n</Math> are integers such that <Math mode="inline" xml:id="C2.S10.SS1.p2.m3">n&gt;a</Math> , <Math mode="inline" xml:id="C2.S10.SS1.p2.m4">m&gt;0</Math> , and <Math mode="inline" xml:id="C2.S10.SS1.p2.m5">f^{(2m)}(x)</Math> is absolutely integrable over <Math mode="inline" xml:id="C2.S10.SS1.p2.m6">[a,n]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C2.S10.SS1.p2.s2">
+Then <Math equation-number="2.10.1" mode="display" xml:id="C2.S10.E1">\sum_{j=a}^{n}f(j)=\int_{a}^{n}f(x)\mathrm{d}x+\tfrac{1}{2}f(a)+\tfrac{1}{2}f( n)+\sum_{s=1}^{m-1}\frac{B_{2s}}{(2s)!}\left(f^{(2s-1)}(n)-f^{(2s-1)}(a)\right )+\int_{a}^{n}\frac{B_{2m}-\widetilde{B}_{2m}\left(x\right)}{(2m)!}f^{(2m)}(x) \mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C2.S10.SS1.p2.s3">
+This is the Euler–Maclaurin formula.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C2.S10.SS1.p2.s4">
+Another version is theAbel–Plana formula: <Math equation-number="2.10.2" mode="display" xml:id="C2.S10.E2">\sum_{j=a}^{n}f(j)=\int_{a}^{n}f(x)\mathrm{d}x+\tfrac{1}{2}f(a)+\tfrac{1}{2}f( n)-2\int_{0}^{\infty}\frac{\Im(f(a+iy))}{e^{2\pi y}-1}\mathrm{d}y+\sum_{s=1}^{ m}\frac{B_{2s}}{(2s)!}f^{(2s-1)}(n)+2\frac{(-1)^{m}}{(2m)!}\int_{0}^{\infty} \Im(f^{(2m)}(n+i\vartheta_{n}y))\frac{y^{2m}\mathrm{d}y}{e^{2\pi y}-1},</Math> <Math mode="inline" xml:id="C2.S10.SS1.p2.m7">\vartheta_{n}</Math> being some number in the interval <Math mode="inline" xml:id="C2.S10.SS1.p2.m8">(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C2.S10.SS1.p2.s5">
+Sufficient conditions for the validity of this second result are: On the strip <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m1">a\leq\Re z\leq n</Math> , <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m2">f(z)</Math> is analytic in its interior, <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m3">f^{(2m)}(z)</Math> is continuous on its closure, and <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m4">f(z)=o\left(e^{2\pi|\Im z|}\right)</Math> as <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m5">\Im z\to\pm\infty</Math> , uniformly with respect to <Math mode="inline" xml:id="C2.S10.I1.ix11.p1.m6">\Re z\in[a,n]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C2.S10.SS1.p2.s6">
+<Math mode="inline" xml:id="C2.S10.I1.ix12.p1.m1">f(z)</Math> is real when <Math mode="inline" xml:id="C2.S10.I1.ix12.p1.m2">a\leq z\leq n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" xml:id="C2.S10.SS1.p2.s7">
+The first infinite integral in (2.10.2) converges.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S10.Px1">
+<title>Example</title>      
+<para xml:id="C2.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S10.Px1.p1.s1">
+ <Math equation-number="2.10.3" mode="display" xml:id="C2.S10.E3">S(n)=\sum_{j=1}^{n}j\ln j</Math> for large <Math mode="inline" xml:id="C2.S10.Px1.p1.m1">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S10.Px1.p1.s2">
+From (2.10.1)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S10.Px1.p1.s3">
+<Math equation-number="2.10.4" mode="display" xml:id="C2.S10.E4">S(n)=\tfrac{1}{2}n^{2}\ln n-\tfrac{1}{4}n^{2}+\tfrac{1}{2}n\ln n+\tfrac{1}{12} \ln n+C+\sum_{s=2}^{m-1}\frac{(-B_{2s})}{2s(2s-1)(2s-2)}\frac{1}{n^{2s-2}}+R_{ m}(n),</Math> where <Math mode="inline" xml:id="C2.S10.Px1.p1.m2">m</Math> ( <Math mode="inline" xml:id="C2.S10.Px1.p1.m3">\geq 2</Math> ) is arbitrary, <Math mode="inline" xml:id="C2.S10.Px1.p1.m4">C</Math> is a constant, and <Math equation-number="2.10.5" mode="display" xml:id="C2.S10.E5">R_{m}(n)=\int_{n}^{\infty}\frac{\widetilde{B}_{2m}\left(x\right)-B_{2m}}{2m(2m -1)x^{2m-1}}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C2.S10.Px1.p1.s4">
+From §24.12(i), (24.2.2), and (24.4.27),
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C2.S10.Px1.p1.s5">
+<Math mode="inline" xml:id="C2.S10.Px1.p1.m5">\widetilde{B}_{2m}\left(x\right)-B_{2m}</Math> isof constant sign <Math mode="inline" xml:id="C2.S10.Px1.p1.m6">(-1)^{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="14" xml:id="C2.S10.Px1.p1.s6">
+Thus <Math mode="inline" xml:id="C2.S10.Px1.p1.m7">R_{m}(n)</Math> and <Math mode="inline" xml:id="C2.S10.Px1.p1.m8">R_{m+1}(n)</Math> are of opposite signs, and since their difference is the term corresponding to <Math mode="inline" xml:id="C2.S10.Px1.p1.m9">s=m</Math> in (2.10.4),
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="15" xml:id="C2.S10.Px1.p1.s7">
+<Math mode="inline" xml:id="C2.S10.Px1.p1.m10">R_{m}(n)</Math> is bounded in absolute value by this term and has the same sign.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C2.S10.Px1.p2.s1">
+Formula (2.10.2) is useful for evaluating the constant term in expansions obtained from (2.10.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C2.S10.Px1.p2.s2">
+In the present example it leads to <Math equation-number="2.10.6" mode="display" xml:id="C2.S10.E6">C=\frac{\gamma+\ln\left(2\pi\right)}{12}-\frac{\zeta'\left(2\right)}{2\pi^{2}} =\frac{1}{12}-\zeta'\left(-1\right),</Math> where <Math mode="inline" xml:id="C2.S10.Px1.p2.m1">\gamma</Math> is Euler’s constant (§5.2(ii)) and <Math mode="inline" xml:id="C2.S10.Px1.p2.m2">\zeta'</Math> is the derivative of the Riemann zeta function (§25.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C2.S10.Px1.p2.s3">
+<Math mode="inline" xml:id="C2.S10.Px1.p2.m3">e^{C}</Math> is sometimes called Glaisher’s constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C2.S10.Px1.p2.s4">
+For further information on <Math mode="inline" xml:id="C2.S10.Px1.p2.m4">C</Math> see §5.17.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C2.S10.Px1.p3.s1">
+Other examples that can be verified in a similar way are: <Math equation-number="2.10.7" mode="display" xml:id="C2.S10.E7">\sum_{j=1}^{n-1}j^{\alpha}\sim\zeta\left(-\alpha\right)+\frac{n^{\alpha+1}}{ \alpha+1}\sum_{s=0}^{\infty}\genfrac{(}{)}{0.0pt}{}{\alpha+1}{s}\frac{B_{s}}{n ^{s}}, if n\to\infty,</Math> where <Math mode="inline" xml:id="C2.S10.Px1.p3.m1">\alpha</Math> ( <Math mode="inline" xml:id="C2.S10.Px1.p3.m2">\neq-1</Math> ) is a real constant, and <Math equation-number="2.10.8" mode="display" xml:id="C2.S10.E8">\sum_{j=1}^{n-1}\frac{1}{j}\sim\ln n+\gamma-\frac{1}{2n}-\sum_{s=1}^{\infty} \frac{B_{2s}}{2s}\frac{1}{n^{2s}}, if n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C2.S10.Px1.p3.s2">
+In both expansions the remainder term is bounded in absolute value by the first neglected term in the sum, and has the same sign, provided that in the case of (2.10.7),truncation takes place at <Math mode="inline" xml:id="C2.S10.Px1.p3.m3">s=2m-1</Math> , where <Math mode="inline" xml:id="C2.S10.Px1.p3.m4">m</Math> is any positive integer satisfying <Math mode="inline" xml:id="C2.S10.Px1.p3.m5">m\geq\frac{1}{2}(\alpha+1)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S10.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C2.S10.Px1.p4.s1">
+For extensions of the Euler–Maclaurin formula to functions <Math mode="inline" xml:id="C2.S10.Px1.p4.m1">f(x)</Math> with singularities at <Math mode="inline" xml:id="C2.S10.Px1.p4.m2">x=a</Math> or <Math mode="inline" xml:id="C2.S10.Px1.p4.m3">x=n</Math> (or both) see Sidi (2004).See also Weniger (2007).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S10.Px1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C2.S10.Px1.p5.s1">
+For an extension to integrals with Cauchy principal values see Elliott (1998).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S10.SS2">
+<title>Summation by Parts</title>           
+<para xml:id="C2.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C2.S10.SS2.p1.s1">
+The formula for summation by parts is <Math equation-number="2.10.9" mode="display" xml:id="C2.S10.E9">\sum_{j=1}^{n-1}u_{j}v_{j}=U_{n-1}v_{n}+\sum_{j=1}^{n-1}U_{j}(v_{j}-v_{j+1}),</Math> where <Math equation-number="2.10.10" mode="display" xml:id="C2.S10.E10">U_{j}=u_{1}+u_{2}+\dots+u_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C2.S10.SS2.p1.s2">
+This identity can be used to find asymptotic approximations for large <Math mode="inline" xml:id="C2.S10.SS2.p1.m1">n</Math> when the factor <Math mode="inline" xml:id="C2.S10.SS2.p1.m2">v_{j}</Math> changes slowly with <Math mode="inline" xml:id="C2.S10.SS2.p1.m3">j</Math> , and <Math mode="inline" xml:id="C2.S10.SS2.p1.m4">u_{j}</Math> is oscillatory; compare the approximation of Fourier integrals by integration by parts in §2.3(i).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S10.Px2">
+<title>Example</title>      
+<para xml:id="C2.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C2.S10.Px2.p1.s1">
+ <Math equation-number="2.10.11" mode="display" xml:id="C2.S10.E11">S(\alpha,\beta,n)=\sum_{j=1}^{n-1}e^{ij\beta}j^{\alpha},</Math> where <Math mode="inline" xml:id="C2.S10.Px2.p1.m1">\alpha</Math> and <Math mode="inline" xml:id="C2.S10.Px2.p1.m2">\beta</Math> are real constants with <Math mode="inline" xml:id="C2.S10.Px2.p1.m3">e^{i\beta}\neq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C2.S10.Px2.p2.s1">
+As a first estimate for large <Math mode="inline" xml:id="C2.S10.Px2.p2.m1">n</Math> <Math equation-number="2.10.12" mode="display" xml:id="C2.S10.E12">|S(\alpha,\beta,n)|\leq\sum_{j=1}^{n-1}j^{\alpha}=O\left(1\right),\;O\left(\ln n \right),\text{ or }O\left(n^{\alpha+1}\right),</Math> according as <Math mode="inline" xml:id="C2.S10.Px2.p2.m2">\alpha&lt;-1</Math> , <Math mode="inline" xml:id="C2.S10.Px2.p2.m3">\alpha=-1</Math> , or <Math mode="inline" xml:id="C2.S10.Px2.p2.m4">\alpha&gt;-1;</Math> see (2.10.7),(2.10.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C2.S10.Px2.p2.s2">
+With <Math mode="inline" xml:id="C2.S10.Px2.p2.m5">u_{j}=e^{ij\beta}</Math> , <Math mode="inline" xml:id="C2.S10.Px2.p2.m6">v_{j}=j^{\alpha}</Math> , <Math equation-number="2.10.13" mode="display" xml:id="C2.S10.E13">U_{j}=e^{i\beta}(e^{ij\beta}-1)/(e^{i\beta}-1),</Math> and <Math equation-number="2.10.14" mode="display" xml:id="C2.S10.E14">S(\alpha,\beta,n)=\frac{e^{i\beta}}{e^{i\beta}-1}\left(e^{i(n-1)\beta}n^{ \alpha}-1+\sum_{j=1}^{n-1}e^{ij\beta}\left(j^{\alpha}-(j+1)^{\alpha}\right) \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C2.S10.Px2.p2.s3">
+Since <Math equation-number="2.10.15" mode="display" xml:id="C2.S10.E15">j^{\alpha}-(j+1)^{\alpha}=-\alpha j^{\alpha-1}+\alpha(\alpha-1)O\left(j^{ \alpha-2}\right)</Math> for any real constant <Math mode="inline" xml:id="C2.S10.Px2.p2.m7">\alpha</Math> and the set of all positive integers <Math mode="inline" xml:id="C2.S10.Px2.p2.m8">j</Math> , we derive <Math equation-number="2.10.16" mode="display" xml:id="C2.S10.E16">S(\alpha,\beta,n)=\frac{e^{i\beta}}{e^{i\beta}-1}\left(e^{i(n-1)\beta}n^{ \alpha}-\alpha S(\alpha-1,\beta,n)+O\left(n^{\alpha-1}\right)+O\left(1\right) \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="30" xml:id="C2.S10.Px2.p2.s4">
+From this result and (2.10.12)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="31" xml:id="C2.S10.Px2.p2.s5">
+<Math equation-number="2.10.17" mode="display" xml:id="C2.S10.E17">S(\alpha,\beta,n)=O\left(n^{\alpha}\right)+O\left(1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="32" xml:id="C2.S10.Px2.p2.s6">
+Then replacing <Math mode="inline" xml:id="C2.S10.Px2.p2.m9">\alpha</Math> by <Math mode="inline" xml:id="C2.S10.Px2.p2.m10">\alpha-1</Math> and resubstituting in (2.10.16),we have <Math equation-number="2.10.18" mode="display" xml:id="C2.S10.E18">S(\alpha,\beta,n)=\frac{e^{in\beta}}{e^{i\beta}-1}n^{\alpha}+O\left(n^{\alpha- 1}\right)+O\left(1\right), if n\to\infty,</Math> which is a useful approximation when <Math mode="inline" xml:id="C2.S10.Px2.p2.m11">\alpha&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C2.S10.Px2.p3.s1">
+For extensions to <Math mode="inline" xml:id="C2.S10.Px2.p3.m1">\alpha\leq 0</Math> , higher terms, and other examples, seeOlver (1997b, Chapter 8).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S10.SS3">
+<title>Asymptotic Expansions of Entire Functions</title>           
+<para xml:id="C2.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C2.S10.SS3.p1.s1">
+The asymptotic behavior of entire functions defined by Maclaurin series can be approached by converting the sum into a contour integral by use of the residue theorem and applying the methods of §§2.4 and 2.5.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S10.Px3">
+<title>Example</title>   
+<para xml:id="C2.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C2.S10.Px3.p1.s1">
+From §§16.2(i)–16.2(ii)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C2.S10.Px3.p1.s2">
+<Math equation-number="2.10.19" mode="display" xml:id="C2.S10.E19">{{}_{0}F_{2}}\left(-;1,1;x\right)=\sum_{j=0}^{\infty}\frac{x^{j}}{(j!)^{3}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C2.S10.Px3.p1.s3">
+We seek the behavior as <Math mode="inline" xml:id="C2.S10.Px3.p1.m1">x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="38" xml:id="C2.S10.Px3.p1.s4">
+From (1.10.8)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="39" xml:id="C2.S10.Px3.p1.s5">
+<Math equation-number="2.10.20" mode="display" xml:id="C2.S10.E20">\sum_{j=0}^{n-1}\frac{x^{j}}{(j!)^{3}}=\frac{1}{2i}\int_{\mathscr{C}}\frac{x^{ t}}{(\Gamma\left(t+1\right))^{3}}\cot\left(\pi t\right)\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C2.S10.Px3.p1.m2">\mathscr{C}</Math> comprises the two semicircles and two parts of the imaginary axis depicted in Figure 2.10.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="40" xml:id="C2.S10.F1.s1">
+Figure 2.10.1: <Math mode="inline" xml:id="C2.S10.F1.m2">t</Math> -plane. Contour <Math mode="inline" xml:id="C2.S10.F1.m3">\mathscr{C}</Math> .
+</sentence>  
+<para xml:id="C2.S10.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C2.S10.Px3.p2.s1">
+From the identities <Math equation-number="2.10.21" mode="display" xml:id="C2.S10.E21">\frac{\cot\left(\pi t\right)}{2i}=-\frac{1}{2}-\frac{1}{e^{-2\pi it}-1}=\frac{ 1}{2}+\frac{1}{e^{2\pi it}-1},</Math> and Cauchy’s theorem, we have <Math equation-number="2.10.22" mode="display" xml:id="C2.S10.E22">\sum_{j=0}^{n-1}\frac{x^{j}}{(j!)^{3}}=\int_{-1/2}^{n-(1/2)}\frac{x^{t}}{( \Gamma\left(t+1\right))^{3}}\mathrm{d}t-\int_{\mathscr{C}_{1}}\frac{x^{t}}{( \Gamma\left(t+1\right))^{3}}\frac{\mathrm{d}t}{e^{-2\pi it}-1}+\int_{\mathscr{ C}_{2}}\frac{x^{t}}{(\Gamma\left(t+1\right))^{3}}\frac{\mathrm{d}t}{e^{2\pi it }-1},</Math> where <Math mode="inline" xml:id="C2.S10.Px3.p2.m1">\mathscr{C}_{1},\mathscr{C}_{2}</Math> denote respectively the upper and lower halves of <Math mode="inline" xml:id="C2.S10.Px3.p2.m2">\mathscr{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C2.S10.Px3.p2.s2">
+(5.11.7) shows that the integrals around the large quarter circles vanish as <Math mode="inline" xml:id="C2.S10.Px3.p2.m3">n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="43" xml:id="C2.S10.Px3.p2.s3">
+Hence <Math equation-number="2.10.23" mode="display" xml:id="C2.S10.E23">{{}_{0}F_{2}}\left(-;1,1;x\right)=\int_{-1/2}^{\infty}\frac{x^{t}}{(\Gamma \left(t+1\right))^{3}}\mathrm{d}t+2\Re\int_{-1/2}^{i\infty}\frac{x^{t}}{( \Gamma\left(t+1\right))^{3}}\frac{\mathrm{d}t}{e^{-2\pi it}-1}=\int_{0}^{ \infty}\frac{x^{t}}{(\Gamma\left(t+1\right))^{3}}\mathrm{d}t+O\left(1\right), if x\to+\infty,</Math> the last step following from <Math mode="inline" xml:id="C2.S10.Px3.p2.m5">|x^{t}|\leq 1</Math> when <Math mode="inline" xml:id="C2.S10.Px3.p2.m6">t</Math> is on the interval <Math mode="inline" xml:id="C2.S10.Px3.p2.m7">[-\frac{1}{2},0]</Math> , the imaginary axis, or the small semicircle.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="44" xml:id="C2.S10.Px3.p2.s4">
+By application of Laplace’s method (§2.3(iii)) and use again of (5.11.7), we obtain <Math equation-number="2.10.24" mode="display" xml:id="C2.S10.E24">{{}_{0}F_{2}}\left(-;1,1;x\right)\sim\frac{\exp\left(3x^{1/3}\right)}{2\pi 3^{ 1/2}x^{1/3}}, if x\to+\infty</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S10.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C2.S10.Px3.p3.s1">
+For generalizations and other examples see Olver (1997b, Chapter 8),Ford (1960), and Berndt and Evans (1984).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C2.S10.Px3.p3.s2">
+See alsoParis and Kaminski (2001, Chapter 5) and §§16.11(i)–16.11(ii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S10.SS4">
+<title>Taylor and Laurent Coefficients: Darboux’s Method</title>           
+<para xml:id="C2.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C2.S10.SS4.p1.s1">
+Let <Math mode="inline" xml:id="C2.S10.SS4.p1.m1">f(z)</Math> be analytic on the annulus <Math mode="inline" xml:id="C2.S10.SS4.p1.m2">0&lt;|z|&lt;r</Math> , with Laurent expansion <Math equation-number="2.10.25" mode="display" xml:id="C2.S10.E25">f(z)=\sum_{n=-\infty}^{\infty}f_{n}z^{n}, if 0&lt;|z|&lt;r</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C2.S10.SS4.p1.s2">
+What is the asymptotic behavior of <Math mode="inline" xml:id="C2.S10.SS4.p1.m3">f_{n}</Math> as <Math mode="inline" xml:id="C2.S10.SS4.p1.m4">n\to\infty</Math> or <Math mode="inline" xml:id="C2.S10.SS4.p1.m5">n\to-\infty</Math>?
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C2.S10.SS4.p1.s3">
+More specially, what is the behavior of the higher coefficients in a Taylor-series expansion?
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C2.S10.SS4.p2.s1">
+These problems can be brought within the scope of §2.4 by means of Cauchy’s integral formula <Math equation-number="2.10.26" mode="display" xml:id="C2.S10.E26">f_{n}=\frac{1}{2\pi i}\int_{\mathscr{C}}\frac{f(z)}{z^{n+1}}\mathrm{d}z,</Math> where <Math mode="inline" xml:id="C2.S10.SS4.p2.m1">\mathscr{C}</Math> is a simple closed contour in the annulus that encloses <Math mode="inline" xml:id="C2.S10.SS4.p2.m2">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C2.S10.SS4.p2.s2">
+For examples see Olver (1997b, Chapters 8, 9).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C2.S10.SS4.p3.s1">
+However, if <Math mode="inline" xml:id="C2.S10.SS4.p3.m1">r</Math> is finite and <Math mode="inline" xml:id="C2.S10.SS4.p3.m2">f(z)</Math> has algebraic or logarithmic singularities on <Math mode="inline" xml:id="C2.S10.SS4.p3.m3">|z|=r</Math> , then Darboux’s method is usually easier to apply.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C2.S10.SS4.p3.s2">
+We need a “comparison function” <Math mode="inline" xml:id="C2.S10.SS4.p3.m4">g(z)</Math> with the properties: <Math mode="inline" xml:id="C2.S10.I2.ix14.p1.m1">g(z)</Math> is analytic on <Math mode="inline" xml:id="C2.S10.I2.ix14.p1.m2">0&lt;|z|&lt;r</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="54" xml:id="C2.S10.SS4.p3.s3">
+<Math mode="inline" xml:id="C2.S10.I2.ix15.p1.m1">f(z)-g(z)</Math> is continuous on <Math mode="inline" xml:id="C2.S10.I2.ix15.p1.m2">0&lt;|z|\leq r</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="55" xml:id="C2.S10.SS4.p3.s4">
+The coefficients in the Laurent expansion <Math equation-number="2.10.27" mode="display" xml:id="C2.S10.E27">g(z)=\sum_{n=-\infty}^{\infty}g_{n}z^{n}, if 0&lt;|z|&lt;r,</Math> have known asymptotic behavior as <Math mode="inline" xml:id="C2.S10.I2.ix16.p1.m1">n\to\pm\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C2.S10.SS4.p4.s1">
+By allowing the contour in Cauchy’s formula to expand, we find that <Math equation-number="2.10.28" mode="display" xml:id="C2.S10.E28">f_{n}-g_{n}=\frac{1}{2\pi i}\int_{|z|=r}\frac{f(z)-g(z)}{z^{n+1}}\mathrm{d}z= \frac{1}{2\pi r^{n}}\int_{0}^{2\pi}\left(f\left(re^{i\theta}\right)-g\left(re^ {i\theta}\right)\right)e^{-ni\theta}\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C2.S10.SS4.p4.s2">
+Hence by the Riemann–Lebesgue lemma (§1.8(i))
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="58" xml:id="C2.S10.SS4.p4.s3">
+<Math equation-number="2.10.29" mode="display" xml:id="C2.S10.E29">f_{n}=g_{n}+o\left(r^{-n}\right), if n\to\pm\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C2.S10.SS4.p5.s1">
+This result is refinable in two important ways.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="60" xml:id="C2.S10.SS4.p5.s2">
+First, the conditions can be weakened. It is unnecessary for <Math mode="inline" xml:id="C2.S10.SS4.p5.m1">f(z)-g(z)</Math> to be continuous on <Math mode="inline" xml:id="C2.S10.SS4.p5.m2">|z|=r</Math> : it suffices that the integrals in (2.10.28)converge uniformly.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="61" xml:id="C2.S10.SS4.p5.s3">
+For example, Condition (b) can be replaced by: On the circle <Math mode="inline" xml:id="C2.S10.I3.ix17.p1.m1">|z|=r</Math> , the function <Math mode="inline" xml:id="C2.S10.I3.ix17.p1.m2">f(z)-g(z)</Math> has a finite number of singularities, and at each singularity <Math mode="inline" xml:id="C2.S10.I3.ix17.p1.m3">z_{j}</Math> , say, <Math equation-number="2.10.30" mode="display" xml:id="C2.S10.E30">f(z)-g(z)=O\left((z-z_{j})^{\sigma_{j}-1}\right), if z\to z_{j},</Math> where <Math mode="inline" xml:id="C2.S10.I3.ix17.p1.m4">\sigma_{j}</Math> is a positive constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.SS4.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C2.S10.SS4.p6.s1">
+Secondly, when <Math mode="inline" xml:id="C2.S10.SS4.p6.m1">f(z)-g(z)</Math> is <Math mode="inline" xml:id="C2.S10.SS4.p6.m2">m</Math> times continuously differentiable on <Math mode="inline" xml:id="C2.S10.SS4.p6.m3">|z|=r</Math> the result (2.10.29) can be strengthened. In these circumstances the integrals in (2.10.28) are integrable by parts <Math mode="inline" xml:id="C2.S10.SS4.p6.m4">m</Math> times, yielding <Math equation-number="2.10.31" mode="display" xml:id="C2.S10.E31">f_{n}=g_{n}+o\left(r^{-n}|n|^{-m}\right), if n\to\pm\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C2.S10.SS4.p6.s2">
+Furthermore, (2.10.31)remains valid with the weaker condition <Math equation-number="2.10.32" mode="display" xml:id="C2.S10.E32">f^{(m)}(z)-g^{(m)}(z)=O\left((z-z_{j})^{\sigma_{j}-1}\right),</Math> in the neighborhood of each singularity <Math mode="inline" xml:id="C2.S10.SS4.p6.m5">z_{j}</Math> , again with <Math mode="inline" xml:id="C2.S10.SS4.p6.m6">\sigma_{j}&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S10.Px4">
+<title>Example</title>    
+<para xml:id="C2.S10.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C2.S10.Px4.p1.s1">
+Let <Math mode="inline" xml:id="C2.S10.Px4.p1.m1">\alpha</Math> be a constant in <Math mode="inline" xml:id="C2.S10.Px4.p1.m2">(0,2\pi)</Math> and <Math mode="inline" xml:id="C2.S10.Px4.p1.m3">P_{n}</Math> denote the Legendre polynomial of degree <Math mode="inline" xml:id="C2.S10.Px4.p1.m4">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C2.S10.Px4.p1.s2">
+From §14.7(iv)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C2.S10.Px4.p1.s3">
+<Math equation-number="2.10.33" mode="display" xml:id="C2.S10.E33">f(z)=\frac{1}{(1-2z\cos\alpha+z^{2})^{1/2}}=\sum_{n=0}^{\infty}P_{n}\left(\cos \alpha\right)z^{n}, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="67" xml:id="C2.S10.Px4.p1.s4">
+The singularities of <Math mode="inline" xml:id="C2.S10.Px4.p1.m5">f(z)</Math> on the unit circle are branch points at <Math mode="inline" xml:id="C2.S10.Px4.p1.m6">z=e^{\pm i\alpha}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="68" xml:id="C2.S10.Px4.p1.s5">
+To match the limiting behavior of <Math mode="inline" xml:id="C2.S10.Px4.p1.m7">f(z)</Math> at these points we set <Math equation-number="2.10.34" mode="display" xml:id="C2.S10.E34">g(z)=e^{-\pi i/4}(2\sin\alpha)^{-1/2}\left(e^{-i\alpha}-z\right)^{-1/2}+e^{\pi i /4}(2\sin\alpha)^{-1/2}\left(e^{i\alpha}-z\right)^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="69" xml:id="C2.S10.Px4.p1.s6">
+Here the branch of <Math mode="inline" xml:id="C2.S10.Px4.p1.m8">\left(e^{-i\alpha}-z\right)^{-1/2}</Math> is continuous in the <Math mode="inline" xml:id="C2.S10.Px4.p1.m9">z</Math> -plane cut along the outward-drawn ray through <Math mode="inline" xml:id="C2.S10.Px4.p1.m10">z=e^{-i\alpha}</Math> and equals <Math mode="inline" xml:id="C2.S10.Px4.p1.m11">e^{i\alpha/2}</Math> at <Math mode="inline" xml:id="C2.S10.Px4.p1.m12">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="70" xml:id="C2.S10.Px4.p1.s7">
+Similarly for <Math mode="inline" xml:id="C2.S10.Px4.p1.m13">\left(e^{i\alpha}-z\right)^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="71" xml:id="C2.S10.Px4.p1.s8">
+In Condition (c) we have <Math equation-number="2.10.35" mode="display" xml:id="C2.S10.E35">g_{n}=\left(\frac{2}{\pi\sin\alpha}\right)^{1/2}\frac{\Gamma\left(n+\frac{1}{2 }\right)}{n!}\cos\left(n\alpha+\tfrac{1}{2}\alpha-\tfrac{1}{4}\pi\right)</Math> , and in the supplementary conditions we may set <Math mode="inline" xml:id="C2.S10.Px4.p1.m14">m=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="72" xml:id="C2.S10.Px4.p1.s9">
+Then from (2.10.31) and (5.11.7)
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="73" xml:id="C2.S10.Px4.p1.s10">
+<Math equation-number="2.10.36" mode="display" xml:id="C2.S10.E36">P_{n}\left(\cos\alpha\right)=\left(\frac{2}{\pi n\sin\alpha}\right)^{1/2}\cos \left(n\alpha+\tfrac{1}{2}\alpha-\tfrac{1}{4}\pi\right)+o\left(n^{-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="74" xml:id="C2.S10.Px4.p1.s11">
+For higher terms see §18.15(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C2.S10.Px4.p2.s1">
+For uniform expansions when two singularities coalesce on the circle of convergence see Wong and Zhao (2005).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S10.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C2.S10.Px4.p3.s1">
+For other examples and extensions see Olver (1997b, Chapter 8),Olver (1970), Wong (1989, Chapter 2), andWong and Wyman (1974).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C2.S10.Px4.p3.s2">
+See also Flajolet and Odlyzko (1990).
+</sentence>
+
+</para>
+    
+</paragraph>
+ 
+</subsection>
+ 
+</section>

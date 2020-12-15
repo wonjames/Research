@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S15">
+<title>Integral Representations and Integrals</title>          
+ 
+<para xml:id="C16.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S15.p1.s1">
+ <Math equation-number="16.15.1" mode="display" xml:id="C16.S15.E1">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=\frac{\Gamma\left( \gamma\right)}{\Gamma\left(\alpha\right)\Gamma\left(\gamma-\alpha\right)}\int_ {0}^{1}\frac{u^{\alpha-1}(1-u)^{\gamma-\alpha-1}}{(1-ux)^{\beta}(1-uy)^{\beta^ {\prime}}}\mathrm{d}u, if \Re\alpha&gt;0, \Re(\gamma-\alpha)&gt;0,</Math> <Math equation-number="16.15.2" mode="display" xml:id="C16.S15.E2">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)= \frac{\Gamma\left(\gamma\right)\Gamma\left(\gamma^{\prime}\right)}{\Gamma\left (\beta\right)\Gamma\left(\beta^{\prime}\right)\Gamma\left(\gamma-\beta\right) \Gamma\left(\gamma^{\prime}-\beta^{\prime}\right)}\int_{0}^{1}\!\!\!\int_{0}^{ 1}\frac{u^{\beta-1}v^{\beta^{\prime}-1}(1-u)^{\gamma-\beta-1}(1-v)^{\gamma^{ \prime}-\beta^{\prime}-1}}{(1-ux-vy)^{\alpha}}\mathrm{d}u\mathrm{d}v, if \Re\gamma&gt;\Re\beta&gt;0, \Re\gamma^{\prime}&gt;\Re\beta^{\prime}&gt;0,</Math> <Math equation-number="16.15.3" mode="display" xml:id="C16.S15.E3">{F_{3}}\left(\alpha,\alpha^{\prime};\beta,\beta^{\prime};\gamma;x,y\right)= \frac{\Gamma\left(\gamma\right)}{\Gamma\left(\beta\right)\Gamma\left(\beta^{ \prime}\right)\Gamma\left(\gamma-\beta-\beta^{\prime}\right)}\iint_{\Delta} \frac{u^{\beta-1}v^{\beta^{\prime}-1}(1-u-v)^{\gamma-\beta-\beta^{\prime}-1}}{ (1-ux)^{\alpha}(1-vy)^{\alpha^{\prime}}}\mathrm{d}u\mathrm{d}v, if \Re(\gamma-\beta-\beta^{\prime})&gt;0, \Re\beta&gt;0, \Re\beta^{\prime}&gt;0,</Math> where <Math mode="inline" xml:id="C16.S15.p1.m1">\Delta</Math> is the triangle defined by <Math mode="inline" xml:id="C16.S15.p1.m2">u\geq 0</Math> , <Math mode="inline" xml:id="C16.S15.p1.m3">v\geq 0</Math> , <Math mode="inline" xml:id="C16.S15.p1.m4">u+v\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S15.p1.s2">
+<Math equation-number="16.15.4" mode="display" xml:id="C16.S15.E4">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x(1-y),y(1-x)\right)=\frac{ \Gamma\left(\gamma\right)\Gamma\left(\gamma^{\prime}\right)}{\Gamma\left( \alpha\right)\Gamma\left(\beta\right)\Gamma\left(\gamma-\alpha\right)\Gamma \left(\gamma^{\prime}-\beta\right)}\int_{0}^{1}\!\!\!\int_{0}^{1}\frac{u^{ \alpha-1}v^{\beta-1}(1-u)^{\gamma-\alpha-1}(1-v)^{\gamma^{\prime}-\beta-1}}{(1 -ux)^{\gamma+\gamma^{\prime}-\alpha-1}(1-vy)^{\gamma+\gamma^{\prime}-\beta-1}( 1-ux-vy)^{\alpha+\beta-\gamma-\gamma^{\prime}+1}}\mathrm{d}u\mathrm{d}v, if \Re\gamma&gt;\Re\alpha&gt;0, \Re\gamma^{\prime}&gt;\Re\beta&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S15.p1.s3">
+For these and other formulas, including double Mellin–Barnes integrals, seeErdélyi et al. (1953a, §5.8).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C16.S15.p1.s4">
+These representations can be used to derive analytic continuations of the Appell functions, including convergent series expansions for large <Math mode="inline" xml:id="C16.S15.p1.m5">x</Math> , large <Math mode="inline" xml:id="C16.S15.p1.m6">y</Math> , or both.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C16.S15.p1.s5">
+For inverse Laplace transforms of Appell functions see Prudnikov et al. (1992b, §3.40).
+</sentence>
+
+</para>
+ 
+</section>

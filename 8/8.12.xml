@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S12">
+<title>Uniform Asymptotic Expansions for Large Parameter</title>          
+<para xml:id="C8.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S12.p1.s1">
+Define <Math equation-number="8.12.1" mode="display" xml:id="C8.S12.E1">\lambda=z/a,\eta=\left(2(\lambda-1-\ln\lambda)\right)^{1/2},</Math> where the branch of the square root is continuous and satisfies <Math mode="inline" xml:id="C8.S12.p1.m1">\eta(\lambda)\sim\lambda-1</Math> as <Math mode="inline" xml:id="C8.S12.p1.m2">\lambda\to 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S12.p1.s2">
+Then <Math equation-number="8.12.2" mode="display" xml:id="C8.S12.E2">\tfrac{1}{2}\eta^{2}=\lambda-1-\ln\lambda,\frac{\mathrm{d}\eta}{\mathrm{d}\lambda}=\frac{\lambda-1}{\lambda\eta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C8.S12.p1.s3">
+Also, denote <Math equation-number="8.12.3" mode="display" xml:id="C8.S12.E3">P\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(-\eta\sqrt{a/2}\right)- S(a,\eta),</Math> <Math equation-number="8.12.4" mode="display" xml:id="C8.S12.E4">Q\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(\eta\sqrt{a/2}\right)+S (a,\eta),</Math> <Math equation-number="8.12.5" mode="display" xml:id="C8.S12.E5">\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ze^{\pm\pi i}\right)= \pm\tfrac{1}{2}\operatorname{erfc}\left(\pm i\eta\sqrt{a/2}\right)-iT(a,\eta),</Math> and <Math equation-number="8.12.6" mode="display" xml:id="C8.S12.E6">z^{-a}\gamma^{*}\left(-a,-z\right)=\cos\left(\pi a\right)-2\sin\left(\pi a \right)\left(\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{\pi}}F\left(\eta\sqrt{a/2} \right)+T(a,\eta)\right),</Math> where <Math mode="inline" xml:id="C8.S12.p1.m3">F\left(x\right)</Math> is Dawson’s integral; see §7.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C8.S12.p1.s4">
+Then as <Math mode="inline" xml:id="C8.S12.p1.m4">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C8.S12.p1.m5">|\operatorname{ph}a|\leq\pi-\delta(&lt;\pi)</Math> , <Math equation-number="8.12.7" mode="display" xml:id="C8.S12.E7">S(a,\eta)\sim\frac{e^{-\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty }c_{k}(\eta)a^{-k},</Math> <Math equation-number="8.12.8" mode="display" xml:id="C8.S12.E8">T(a,\eta)\sim\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty} c_{k}(\eta)(-a)^{-k},</Math> in each case uniformly with respect to <Math mode="inline" xml:id="C8.S12.p1.m6">\lambda</Math> in the sector <Math mode="inline" xml:id="C8.S12.p1.m7">|\operatorname{ph}\lambda|\leq 2\pi-\delta</Math> ( <Math mode="inline" xml:id="C8.S12.p1.m8">&lt;2\pi</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C8.S12.p2.s1">
+With <Math mode="inline" xml:id="C8.S12.p2.m1">\mu=\lambda-1</Math> , the coefficients <Math mode="inline" xml:id="C8.S12.p2.m2">c_{k}(\eta)</Math> are given by <Math equation-number="8.12.9" mode="display" xml:id="C8.S12.E9">c_{0}(\eta)=\frac{1}{\mu}-\frac{1}{\eta},c_{1}(\eta)=\frac{1}{\eta^{3}}-\frac{1}{\mu^{3}}-\frac{1}{\mu^{2}}-\frac{1}{12 \mu},</Math> <Math equation-number="8.12.10" mode="display" xml:id="C8.S12.E10">c_{k}(\eta)=\frac{1}{\eta}\frac{\mathrm{d}}{\mathrm{d}\eta}c_{k-1}(\eta)+(-1)^ {k}\frac{g_{k}}{\mu}, if k=1,2,\dots,</Math> where <Math mode="inline" xml:id="C8.S12.p2.m3">g_{k}</Math> , <Math mode="inline" xml:id="C8.S12.p2.m4">k=0,1,2,\dots</Math> , are the coefficients that appear in the asymptotic expansion ( 5.11.3) of <Math mode="inline" xml:id="C8.S12.p2.m5">\Gamma\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C8.S12.p2.s2">
+The right-hand sides of equations (8.12.9), (8.12.10) have removable singularities at <Math mode="inline" xml:id="C8.S12.p2.m6">\eta=0</Math> , and the Maclaurin series expansion of <Math mode="inline" xml:id="C8.S12.p2.m7">c_{k}(\eta)</Math> is given by <Math equation-number="8.12.11" mode="display" xml:id="C8.S12.E11">c_{k}(\eta)=\sum_{n=0}^{\infty}d_{k,n}\eta^{n}, if |\eta|&lt;2\sqrt{\pi},</Math> where <Math mode="inline" xml:id="C8.S12.p2.m8">d_{0,0}=-\tfrac{1}{3}</Math> , <Math equation-number="8.12.12" mode="display" xml:id="C8.S12.E12">d_{0,n}=(n+2)\alpha_{n+2}, if n\geq 1, //// d_{k,n}=(-1)^{k}g_{k}d_{0,n}+(n+2)d_{k-1,n+2}, if n\geq 0, k\geq 1,</Math> and <Math mode="inline" xml:id="C8.S12.p2.m9">\alpha_{3},\alpha_{4},\dots</Math> are defined by <Math equation-number="8.12.13" mode="display" xml:id="C8.S12.E13">\lambda-1=\eta+\tfrac{1}{3}\eta^{2}+\sum_{n=3}^{\infty}\alpha_{n}\eta^{n}, if |\eta|&lt;2\sqrt{\pi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C8.S12.p2.s3">
+In particular, <Math equation-number="8.12.14" mode="display" xml:id="C8.S12.E14">\alpha_{3}=\tfrac{1}{36},\alpha_{4}=-\tfrac{1}{270},\alpha_{5}=\tfrac{1}{4320},\alpha_{6}=\tfrac{1}{17010},\alpha_{7}=-\tfrac{139}{54\;43200},\alpha_{8}=\tfrac{1}{2\;04120}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C8.S12.p2.s4">
+For numerical values of <Math mode="inline" xml:id="C8.S12.p2.m10">d_{k,n}</Math> to 30D for <Math mode="inline" xml:id="C8.S12.p2.m11">k=0(1)9</Math> and <Math mode="inline" xml:id="C8.S12.p2.m12">n=0(1)N_{k}</Math> , where <Math mode="inline" xml:id="C8.S12.p2.m13">N_{k}=28-4\left\lfloor k/2\right\rfloor</Math> , see DiDonato and Morris (1986).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S12.p3.s1">
+Special cases are given by <Math equation-number="8.12.15" mode="display" xml:id="C8.S12.E15">Q\left(a,a\right)\sim\frac{1}{2}+\frac{1}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{ k}(0)a^{-k}, if |\operatorname{ph}a|\leq\pi-\delta,</Math> <Math equation-number="8.12.16" mode="display" xml:id="C8.S12.E16">\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ae^{\pm\pi i}\right) \sim\pm\frac{1}{2}-\frac{i}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{k}(0)(-a)^{-k}, if |\operatorname{ph}a|\leq\pi-\delta,</Math> where <Math equation-number="8.12.17" mode="display" xml:id="C8.S12.E17">c_{0}(0)=-\tfrac{1}{3},c_{1}(0)=-\tfrac{1}{540},c_{2}(0)=\tfrac{25}{6048},c_{3}(0)=\tfrac{101}{1\;55520},c_{4}(0)=-\tfrac{31\;84811}{36951\;55200},c_{5}(0)=-\tfrac{27\;45493}{81517\;36320}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C8.S12.p4.s1">
+For error bounds for (8.12.7) see Paris (2002a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C8.S12.p4.s2">
+For the asymptotic behavior of <Math mode="inline" xml:id="C8.S12.p4.m1">c_{k}(\eta)</Math> as <Math mode="inline" xml:id="C8.S12.p4.m2">k\to\infty</Math> seeDunster et al. (1998) and Olde Daalhuis (1998c).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C8.S12.p4.s3">
+The last reference also includes an exponentially-improved version (§2.11(iii)) of the expansions (8.12.4) and (8.12.7) for <Math mode="inline" xml:id="C8.S12.p4.m3">Q\left(a,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C8.S12.p5.s1">
+A different type of uniform expansion with coefficients that do not possess a removable singularity at <Math mode="inline" xml:id="C8.S12.p5.m1">z=a</Math> is given by <Math equation-number="8.12.18" mode="display" xml:id="C8.S12.E18">\rselection{Q\left(a,z\right)\\ P\left(a,z\right)}\sim\frac{z^{a-\frac{1}{2}}e^{-z}}{\Gamma\left(a\right)}{ \left(d(\pm\chi)\sum_{k=0}^{\infty}\frac{A_{k}(\chi)}{z^{k/2}}\mp\sum_{k=1}^{ \infty}\frac{B_{k}(\chi)}{z^{k/2}}\right)},</Math> for <Math mode="inline" xml:id="C8.S12.p5.m2">z\to\infty</Math> in <Math mode="inline" xml:id="C8.S12.p5.m3">\left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi</Math> , with <Math mode="inline" xml:id="C8.S12.p5.m4">\Re(z-a)\leq 0</Math> for <Math mode="inline" xml:id="C8.S12.p5.m5">P\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S12.p5.m6">\Re(z-a)\geq 0</Math> for <Math mode="inline" xml:id="C8.S12.p5.m7">Q\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C8.S12.p5.s2">
+Here <Math equation-number="8.12.19" mode="display" xml:id="C8.S12.E19">\chi=(z-a)/\sqrt{z},d(\pm\chi)=\sqrt{\tfrac{1}{2}\pi}e^{\chi^{2}/2}\operatorname{erfc}\left(\pm \chi/\sqrt{2}\right),</Math> and <Math equation-number="8.12.20" mode="display" xml:id="C8.S12.E20">A_{0}(\chi)=1,A_{1}(\chi)=\tfrac{1}{2}\chi+\tfrac{1}{6}\chi^{3},B_{1}(\chi)=\tfrac{1}{3}+\tfrac{1}{6}\chi^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C8.S12.p5.s3">
+Higher coefficients <Math mode="inline" xml:id="C8.S12.p5.m8">A_{k}(\chi)</Math> , <Math mode="inline" xml:id="C8.S12.p5.m9">B_{k}(\chi)</Math> , up to <Math mode="inline" xml:id="C8.S12.p5.m10">k=8</Math> , are given inParis (2002b).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S12.p6.s1">
+Lastly, a uniform approximation for <Math mode="inline" xml:id="C8.S12.p6.m1">\Gamma\left(a,ax\right)</Math> for large <Math mode="inline" xml:id="C8.S12.p6.m2">a</Math> , with error bounds, can be found in Dunster (1996a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C8.S12.p7.s1">
+For other uniform asymptotic approximations of the incomplete gamma functionsin terms of the function <Math mode="inline" xml:id="C8.S12.p7.m1">\operatorname{erfc}</Math> see Paris (2002b) andDunster (1996a).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S12.Px1">
+<title>Inverse Function</title>       
+<para xml:id="C8.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C8.S12.Px1.p1.s1">
+For asymptotic expansions, as <Math mode="inline" xml:id="C8.S12.Px1.p1.m1">a\to\infty</Math> , of the inverse function <Math mode="inline" xml:id="C8.S12.Px1.p1.m2">x=x(a,q)</Math> that satisfies the equation <Math equation-number="8.12.21" mode="display" xml:id="C8.S12.E21">Q\left(a,x\right)=q</Math> see Temme (1992a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C8.S12.Px1.p1.s2">
+These expansions involve the inverse error function <Math mode="inline" xml:id="C8.S12.Px1.p1.m3">\operatorname{inverfc}\left(x\right)</Math> (§7.17), and are uniform with respect to <Math mode="inline" xml:id="C8.S12.Px1.p1.m4">q\in[0,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C8.S12.Px1.p1.s3">
+As a special case, <Math equation-number="8.12.22" mode="display" xml:id="C8.S12.E22">x(a,\tfrac{1}{2})\sim a-\tfrac{1}{3}+\tfrac{8}{405}a^{-1}+\tfrac{184}{25515}a^ {-2}+\tfrac{2248}{34\;44525}a^{-3}+\cdots, if a\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C12">
+<title>Parabolic Cylinder Functions</title>               
+          
+<section xml:id="C12.S1">
+<title>Special Notation</title>         
+<para xml:id="C12.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C12.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C12.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C12.S1.p1.t1.r1.m1">x,y</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C12.S1.p1.t1.s2">
+real variables.    
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C12.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C12.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C12.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C12.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C12.S1.p1.t1.r3.m1">n,s</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C12.S1.p1.t1.s6">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C12.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C12.S1.p1.t1.r4.m1">a,\nu</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C12.S1.p1.t1.s8">
+real or complex parameters.    
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C12.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C12.S1.p1.t1.r5.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C12.S1.p1.t1.s10">
+arbitrary small positive constant.  
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C12.S1.p2.s1">
+Unless otherwise noted, primes indicate derivatives with respect to the variable, and fractional powers take their principal values.
+</sentence>
+
+</para>
+     
+ 
+<para xml:id="C12.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C12.S1.p3.s1">
+The main functions treated in this chapter are the parabolic cylinder functions (PCFs), also known as Weber parabolic cylinder functions: <Math mode="inline" xml:id="C12.S1.p3.m1">U\left(a,z\right)</Math> , <Math mode="inline" xml:id="C12.S1.p3.m2">V\left(a,z\right)</Math> , <Math mode="inline" xml:id="C12.S1.p3.m3">\overline{U}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C12.S1.p3.m4">W\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C12.S1.p3.s2">
+These notations are due to ( , 1955) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C12.S1.p3.s3">
+An older notation, due to ( ) , for <Math mode="inline" xml:id="C12.S1.p3.m5">U\left(a,z\right)</Math> is <Math mode="inline" xml:id="C12.S1.p3.m7">D_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C12.S1.p3.s4">
+The notations are related by <Math mode="inline" xml:id="C12.S1.p3.m8">U\left(a,z\right)=D_{-a-\frac{1}{2}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C12.S1.p3.s5">
+Whittaker’s notation <Math mode="inline" xml:id="C12.S1.p3.m9">D_{\nu}\left(z\right)</Math> is useful when <Math mode="inline" xml:id="C12.S1.p3.m10">\nu</Math> is a nonnegative integer (Hermite polynomial case).
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C12.S2">
+<title>Differential Equations</title>           
+<subsection xml:id="C12.S2.SS1">
+<title>Introduction</title>          
+<para xml:id="C12.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C12.S2.SS1.p1.s1">
+PCFs are solutions of the differential equation <Math equation-number="12.2.1" mode="display" xml:id="C12.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(az^{2}+bz+c\right)w=0,</Math> with three distinct standard forms <Math equation-number="12.2.2" mode="display" xml:id="C12.S2.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-\left(\tfrac{1}{4}z^{2}+a\right)w=0,</Math> <Math equation-number="12.2.3" mode="display" xml:id="C12.S2.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\tfrac{1}{4}z^{2}-a\right)w=0,</Math> <Math equation-number="12.2.4" mode="display" xml:id="C12.S2.E4">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\nu+\tfrac{1}{2}-\tfrac{1}{4 }z^{2}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C12.S2.SS1.p1.s2">
+Each of these equations is transformable into the others.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C12.S2.SS1.p1.s3">
+Standard solutions are <Math mode="inline" xml:id="C12.S2.SS1.p1.m3">U\left(a,\pm z\right)</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p1.m4">V\left(a,\pm z\right)</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p1.m5">\overline{U}\left(a,\pm x\right)</Math> (not complex conjugate), <Math mode="inline" xml:id="C12.S2.SS1.p1.m6">U\left(-a,\pm iz\right)</Math> for (LABEL:eq:PC.DE.D2); <Math mode="inline" xml:id="C12.S2.SS1.p1.m7">W\left(a,\pm x\right)</Math> for (LABEL:eq:PC.DE.D3); <Math mode="inline" xml:id="C12.S2.SS1.p1.m8">D_{\nu}\left(\pm z\right)</Math> for (LABEL:eq:PC.DE.D4), where <Math equation-number="12.2.5" mode="display" xml:id="C12.S2.E5">D_{\nu}\left(z\right)=U\left(-\tfrac{1}{2}-\nu,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C12.S2.SS1.p2.s1">
+All solutions are entire functions of <Math mode="inline" xml:id="C12.S2.SS1.p2.m1">z</Math> and entire functions of <Math mode="inline" xml:id="C12.S2.SS1.p2.m2">a</Math> or <Math mode="inline" xml:id="C12.S2.SS1.p2.m3">\nu</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C12.S2.SS1.p3.s1">
+For real values of <Math mode="inline" xml:id="C12.S2.SS1.p3.m1">z</Math> <Math mode="inline" xml:id="C12.S2.SS1.p3.m2">(=x)</Math> , numerically satisfactory pairs of solutions (§LABEL:sec:AS.DE.NSS) of (LABEL:eq:PC.DE.D2) are <Math mode="inline" xml:id="C12.S2.SS1.p3.m3">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m4">V\left(a,x\right)</Math> when <Math mode="inline" xml:id="C12.S2.SS1.p3.m5">x</Math> is positive, or <Math mode="inline" xml:id="C12.S2.SS1.p3.m6">U\left(a,-x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m7">V\left(a,-x\right)</Math> when <Math mode="inline" xml:id="C12.S2.SS1.p3.m8">x</Math> is negative.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C12.S2.SS1.p3.s2">
+For (LABEL:eq:PC.DE.D3) <Math mode="inline" xml:id="C12.S2.SS1.p3.m9">W\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p3.m10">W\left(a,-x\right)</Math> comprise a numericallysatisfactory pair, for all <Math mode="inline" xml:id="C12.S2.SS1.p3.m11">x\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C12.S2.SS1.p3.s3">
+The solutions <Math mode="inline" xml:id="C12.S2.SS1.p3.m12">W\left(a,\pm x\right)</Math> are treated in §LABEL:sec:PC.EW.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C12.S2.SS1.p4.s1">
+In <Math mode="inline" xml:id="C12.S2.SS1.p4.m1">\mathbb{C}</Math> , for <Math mode="inline" xml:id="C12.S2.SS1.p4.m2">j=0,1,2,3</Math> , <Math mode="inline" xml:id="C12.S2.SS1.p4.m3">U\left((-1)^{j-1}a,(-i)^{j-1}z\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS1.p4.m4">U\left((-1)^{j}a,(-i)^{j}z\right)</Math> comprise a numerically satisfactory pair of solutions in the half-plane <Math mode="inline" xml:id="C12.S2.SS1.p4.m5">\tfrac{1}{4}(2j-3)\pi\leq\operatorname{ph}z\leq\tfrac{1}{4}(2j+1)\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS2">
+<title>Values at <Math mode="inline" xml:id="C12.S2.SS2.m1">z=0</Math></title>          
+<para xml:id="C12.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C12.S2.SS2.p1.s1">
+ <Math equation-number="12.2.6" mode="display" xml:id="C12.S2.E6">U\left(a,0\right)=\frac{\sqrt{\pi}}{2^{\frac{1}{2}a+\frac{1}{4}}\Gamma\left( \frac{3}{4}+\frac{1}{2}a\right)},</Math> , <Math equation-number="12.2.7" mode="display" xml:id="C12.S2.E7">U'\left(a,0\right)=-\frac{\sqrt{\pi}}{2^{\frac{1}{2}a-\frac{1}{4}}\Gamma\left( \frac{1}{4}+\frac{1}{2}a\right)},</Math> , <Math equation-number="12.2.8" mode="display" xml:id="C12.S2.E8">V\left(a,0\right)=\frac{\pi 2^{\frac{1}{2}a+\frac{1}{4}}}{\left(\Gamma\left( \frac{3}{4}-\frac{1}{2}a\right)\right)^{2}\Gamma\left(\frac{1}{4}+\frac{1}{2}a \right)},</Math> , <Math equation-number="12.2.9" mode="display" xml:id="C12.S2.E9">V'\left(a,0\right)=\frac{\pi 2^{\frac{1}{2}a+\frac{3}{4}}}{\left(\Gamma\left( \frac{1}{4}-\frac{1}{2}a\right)\right)^{2}\Gamma\left(\frac{3}{4}+\frac{1}{2}a \right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS3">
+<title>Wronskians</title>          
+<para xml:id="C12.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C12.S2.SS3.p1.s1">
+ <Math equation-number="12.2.10" mode="display" xml:id="C12.S2.E10">\mathscr{W}\left\{U\left(a,z\right),V\left(a,z\right)\right\}=\sqrt{2/\pi},</Math> <Math equation-number="12.2.11" mode="display" xml:id="C12.S2.E11">\mathscr{W}\left\{U\left(a,z\right),U\left(a,-z\right)\right\}=\frac{\sqrt{2 \pi}}{\Gamma\left(\frac{1}{2}+a\right)},</Math> <Math equation-number="12.2.12" mode="display" xml:id="C12.S2.E12">\mathscr{W}\left\{U\left(a,z\right),U\left(-a,\pm iz\right)\right\}=\mp ie^{ \pm i\pi(\frac{1}{2}a+\frac{1}{4})}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS4">
+<title>Reflection Formulas</title>        
+ 
+ 
+<para xml:id="C12.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C12.S2.SS4.p1.s1">
+For <Math mode="inline" xml:id="C12.S2.SS4.p1.m1">n=0,1,\dots</Math> , <Math equation-number="12.2.13" mode="display" xml:id="C12.S2.E13">U\left(-n-\tfrac{1}{2},-z\right)=(-1)^{n}U\left(-n-\tfrac{1}{2},z\right),</Math> <Math equation-number="12.2.14" mode="display" xml:id="C12.S2.E14">V\left(n+\tfrac{1}{2},-z\right)=(-1)^{n}V\left(n+\tfrac{1}{2},z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS5">
+<title>Connection Formulas</title>        
+  
+<para xml:id="C12.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C12.S2.SS5.p1.s1">
+ <Math equation-number="12.2.15" mode="display" xml:id="C12.S2.E15">U\left(a,-z\right)=-\sin\left(\pi a\right)U\left(a,z\right)+\frac{\pi}{\Gamma \left(\frac{1}{2}+a\right)}V\left(a,z\right),</Math> <Math equation-number="12.2.16" mode="display" xml:id="C12.S2.E16">V\left(a,-z\right)=\frac{\cos\left(\pi a\right)}{\Gamma\left(\frac{1}{2}-a \right)}U\left(a,z\right)+\sin\left(\pi a\right)V\left(a,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C12.S2.SS5.p2.s1">
+ <Math equation-number="12.2.17" mode="display" xml:id="C12.S2.E17">\sqrt{2\pi}U\left(-a,\pm iz\right)=\Gamma\left(\tfrac{1}{2}+a\right)\left(e^{ \mp i\pi(\frac{1}{2}a-\frac{1}{4})}U\left(a,z\right)+e^{\pm i\pi(\frac{1}{2}a- \frac{1}{4})}U\left(a,-z\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C12.S2.SS5.p2.s2">
+<Math equation-number="12.2.18" mode="display" xml:id="C12.S2.E18">\sqrt{2\pi}U\left(a,z\right)=\Gamma\left(\tfrac{1}{2}-a\right)\left(e^{\mp i \pi(\frac{1}{2}a+\frac{1}{4})}U\left(-a,\pm iz\right)+e^{\pm i\pi(\frac{1}{2}a +\frac{1}{4})}U\left(-a,\mp iz\right)\right),</Math> <Math equation-number="12.2.19" mode="display" xml:id="C12.S2.E19">U\left(a,z\right)=\pm ie^{\pm i\pi a}U\left(a,-z\right)+\frac{\sqrt{2\pi}}{ \Gamma\left(\tfrac{1}{2}+a\right)}e^{\pm i\pi(\frac{1}{2}a-\frac{1}{4})}U\left (-a,\pm iz\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S2.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C12.S2.SS5.p3.s1">
+ <Math equation-number="12.2.20" mode="display" xml:id="C12.S2.E20">V\left(a,z\right)=\frac{\mp i}{\Gamma\left(\frac{1}{2}-a\right)}U\left(a,z \right)+\sqrt{\frac{2}{\pi}}e^{\mp i\pi(\frac{1}{2}a-\frac{1}{4})}U\left(-a, \pm iz\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S2.SS6">
+<title>Solution <Math content-tex="\paraUbar@{a}{x}" mode="inline" xml:id="C12.S2.SS6.m1">\overline{U}\left(a,x\right)</Math>; Modulus and Phase Functions</title>        
+   
+<para xml:id="C12.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C12.S2.SS6.p1.s1">
+When <Math mode="inline" xml:id="C12.S2.SS6.p1.m1">z</Math> <Math mode="inline" xml:id="C12.S2.SS6.p1.m2">(=x)</Math> is real the solution <Math mode="inline" xml:id="C12.S2.SS6.p1.m3">\overline{U}\left(a,x\right)</Math> is defined by <Math equation-number="12.2.21" mode="display" xml:id="C12.S2.E21">\overline{U}\left(a,x\right)=\Gamma\left(\tfrac{1}{2}-a\right)V\left(a,x\right),</Math> unless <Math mode="inline" xml:id="C12.S2.SS6.p1.m5">a=\tfrac{1}{2},\tfrac{3}{2},\dots</Math> , in which case <Math mode="inline" xml:id="C12.S2.SS6.p1.m6">\overline{U}\left(a,x\right)</Math> is undefined. Its importance is that when <Math mode="inline" xml:id="C12.S2.SS6.p1.m7">a</Math> is negative and <Math mode="inline" xml:id="C12.S2.SS6.p1.m8">|a|</Math> is large, <Math mode="inline" xml:id="C12.S2.SS6.p1.m9">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S2.SS6.p1.m10">\overline{U}\left(a,x\right)</Math> asymptotically have the same envelope (modulus) and are <Math mode="inline" xml:id="C12.S2.SS6.p1.m11">\tfrac{1}{2}\pi</Math> out of phase in the oscillatory interval <Math mode="inline" xml:id="C12.S2.SS6.p1.m12">-2\sqrt{-a}&lt;x&lt;2\sqrt{-a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C12.S2.SS6.p1.s2">
+Properties of <Math mode="inline" xml:id="C12.S2.SS6.p1.m13">\overline{U}\left(a,x\right)</Math> follow immediately from those of <Math mode="inline" xml:id="C12.S2.SS6.p1.m14">V\left(a,x\right)</Math> via (LABEL:eq:PC.2.17).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C12.S2.SS6.p2.s1">
+In the oscillatory interval we define <Math equation-number="12.2.22" mode="display" xml:id="C12.S2.E22">U\left(a,x\right)+i\overline{U}\left(a,x\right)=F(a,x)e^{i\theta(a,x)},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C12.S2.SS6.p3.s1">
+ <Math equation-number="12.2.23" mode="display" xml:id="C12.S2.E23">U'\left(a,x\right)+i\overline{U}'\left(a,x\right)=-G(a,x)e^{i\psi(a,x)},</Math> where <Math mode="inline" xml:id="C12.S2.SS6.p3.m1">F(a,x)</Math> ( <Math mode="inline" xml:id="C12.S2.SS6.p3.m2">&gt;</Math> 0), <Math mode="inline" xml:id="C12.S2.SS6.p3.m3">\theta(a,x)</Math> , <Math mode="inline" xml:id="C12.S2.SS6.p3.m4">G(a,x)</Math> ( <Math mode="inline" xml:id="C12.S2.SS6.p3.m5">&gt;</Math> 0), and <Math mode="inline" xml:id="C12.S2.SS6.p3.m6">\psi(a,x)</Math> are real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C12.S2.SS6.p3.s2">
+<Math mode="inline" xml:id="C12.S2.SS6.p3.m7">F</Math> or <Math mode="inline" xml:id="C12.S2.SS6.p3.m8">G</Math> is the modulus and <Math mode="inline" xml:id="C12.S2.SS6.p3.m9">\theta</Math> or <Math mode="inline" xml:id="C12.S2.SS6.p3.m10">\psi</Math> is the correspondingphase.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S2.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C12.S2.SS6.p4.s1">
+For properties of the modulus and phase functions, including differentialequations, see ( , pp. 72–73) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C12.S2.SS6.p4.s2">
+For graphs of the modulus functions see §LABEL:sec:PC.GR.RV.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S3">
+<title>Graphics</title>         
+<subsection xml:id="C12.S3.SS1">
+<title>Real Variables</title>        
+ 
+            
+<sentence sentence-num-in-section="40" xml:id="C12.S3.F1.s1">
+Figure 12.3.1: <Math mode="inline" xml:id="C12.S3.F1.m3">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F1.m4">a</Math> = 0.5, 2, 3.5, 5, 8.
+</sentence> 
+          
+<sentence sentence-num-in-section="41" xml:id="C12.S3.F2.s1">
+Figure 12.3.2: <Math mode="inline" xml:id="C12.S3.F2.m3">V\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F2.m4">a</Math> = 0.5, 2, 3.5, 5, 8.
+</sentence>             
+<sentence sentence-num-in-section="42" xml:id="C12.S3.F3.s1">
+Figure 12.3.3: <Math mode="inline" xml:id="C12.S3.F3.m7">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F3.m8">a</Math> = <Math mode="inline" xml:id="C12.S3.F3.m9">-0.5</Math> , <Math mode="inline" xml:id="C12.S3.F3.m10">-2</Math> , <Math mode="inline" xml:id="C12.S3.F3.m11">-3.5</Math> , <Math mode="inline" xml:id="C12.S3.F3.m12">-5</Math> .
+</sentence>           
+<sentence sentence-num-in-section="43" xml:id="C12.S3.F4.s1">
+Figure 12.3.4: <Math mode="inline" xml:id="C12.S3.F4.m7">V\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F4.m8">a</Math> = <Math mode="inline" xml:id="C12.S3.F4.m9">-0.5</Math> , <Math mode="inline" xml:id="C12.S3.F4.m10">-2</Math> , <Math mode="inline" xml:id="C12.S3.F4.m11">-3.5</Math> , <Math mode="inline" xml:id="C12.S3.F4.m12">-5</Math> .
+</sentence>           
+  
+<sentence sentence-num-in-section="44" xml:id="C12.S3.F5.s1">
+Figure 12.3.5: <Math mode="inline" xml:id="C12.S3.F5.m5">U\left(-8,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F5.m6">\overline{U}\left(-8,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F5.m7">F(-8,x)</Math> , <Math mode="inline" xml:id="C12.S3.F5.m8">-4\sqrt{2}\leq x\leq 4\sqrt{2}</Math> .
+</sentence>           
+<sentence sentence-num-in-section="45" xml:id="C12.S3.F6.s1">
+Figure 12.3.6: <Math mode="inline" xml:id="C12.S3.F6.m5">U'\left(-8,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F6.m6">\overline{U}'\left(-8,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F6.m7">G(-8,x)</Math> , <Math mode="inline" xml:id="C12.S3.F6.m8">-4\sqrt{2}\leq x\leq 4\sqrt{2}</Math> .
+</sentence>             
+<sentence sentence-num-in-section="46" xml:id="C12.S3.F7.s1">
+Figure 12.3.7: <Math mode="inline" xml:id="C12.S3.F7.m4">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F7.m5">-2.5\leq a\leq 2.5</Math> , <Math mode="inline" xml:id="C12.S3.F7.m6">-2.5\leq x\leq 2.5</Math> .
+</sentence>           
+<sentence sentence-num-in-section="47" xml:id="C12.S3.F8.s1">
+Figure 12.3.8: <Math mode="inline" xml:id="C12.S3.F8.m4">V\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S3.F8.m5">-2.5\leq a\leq 2.5</Math> , <Math mode="inline" xml:id="C12.S3.F8.m6">-2.5\leq x\leq 2.5</Math> .
+</sentence>  
+  
+</subsection>
+ 
+<subsection xml:id="C12.S3.SS2">
+<title>Complex Variables</title>        
+  
+<para xml:id="C12.S3.SS2.p1">
+
+</para>
+ 
+ 
+<para xml:id="C12.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C12.S3.SS2.p2.s1">
+In the graphics shown in this subsection, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C12.S3.SS2.p2.s2">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="50" xml:id="C12.S3.F9.s1">
+Figure 12.3.9: <Math mode="inline" xml:id="C12.S3.F9.m4">U\left(3.5,x+iy\right</Math>) , <Math mode="inline" xml:id="C12.S3.F9.m5">-3.6\leq x\leq 5</Math> , <Math mode="inline" xml:id="C12.S3.F9.m6">-5\leq y\leq 5</Math> .
+</sentence>           
+<sentence sentence-num-in-section="51" xml:id="C12.S3.F10.s1">
+Figure 12.3.10: <Math mode="inline" xml:id="C12.S3.F10.m4">U\left(-3.5,x+iy\right</Math>) , <Math mode="inline" xml:id="C12.S3.F10.m5">-5\leq x\leq 5</Math> , <Math mode="inline" xml:id="C12.S3.F10.m6">-3.5\leq y\leq 3.5</Math> .
+</sentence>    
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S4">
+<title>Power-Series Expansions</title>          
+<para xml:id="C12.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C12.S4.p1.s1">
+ <Math equation-number="12.4.1" mode="display" xml:id="C12.S4.E1">U\left(a,z\right)=U\left(a,0\right)u_{1}(a,z)+U'\left(a,0\right)u_{2}(a,z),</Math> <Math equation-number="12.4.2" mode="display" xml:id="C12.S4.E2">V\left(a,z\right)=V\left(a,0\right)u_{1}(a,z)+V'\left(a,0\right)u_{2}(a,z),</Math> where the initial values are given by (LABEL:eq:PC.DE.I1)–(LABEL:eq:PC.DE.I4), and <Math mode="inline" xml:id="C12.S4.p1.m1">u_{1}(a,z)</Math> and <Math mode="inline" xml:id="C12.S4.p1.m2">u_{2}(a,z)</Math> are the even and odd solutions of (LABEL:eq:PC.DE.D2) given by <Math equation-number="12.4.3" mode="display" xml:id="C12.S4.E3">u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}}\left(1+(a+\tfrac{1}{2})\frac{z^{2}}{2!}+(a+ \tfrac{1}{2})(a+\tfrac{5}{2})\frac{z^{4}}{4!}+\cdots\right)</Math> , <Math equation-number="12.4.4" mode="display" xml:id="C12.S4.E4">u_{2}(a,z)=e^{-\tfrac{1}{4}z^{2}}\left(z+(a+\tfrac{3}{2})\frac{z^{3}}{3!}+(a+ \tfrac{3}{2})(a+\tfrac{7}{2})\frac{z^{5}}{5!}+\cdots\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="53" xml:id="C12.S4.p1.s2">
+Equivalently, <Math equation-number="12.4.5" mode="display" xml:id="C12.S4.E5">u_{1}(a,z)=e^{\tfrac{1}{4}z^{2}}\left(1+(a-\tfrac{1}{2})\frac{z^{2}}{2!}+(a- \tfrac{1}{2})(a-\tfrac{5}{2})\frac{z^{4}}{4!}+\cdots\right)</Math> ,
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C12.S4.p2.s1">
+ <Math equation-number="12.4.6" mode="display" xml:id="C12.S4.E6">u_{2}(a,z)=e^{\tfrac{1}{4}z^{2}}\left(z+(a-\tfrac{3}{2})\frac{z^{3}}{3!}+(a- \tfrac{3}{2})(a-\tfrac{7}{2})\frac{z^{5}}{5!}+\cdots\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C12.S4.p2.s2">
+These series converge for all values of <Math mode="inline" xml:id="C12.S4.p2.m1">z</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C12.S5">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C12.S5.SS1">
+<title>Integrals Along the Real Line</title>        
+ 
+ 
+<para xml:id="C12.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C12.S5.SS1.p1.s1">
+ <Math equation-number="12.5.1" mode="display" xml:id="C12.S5.E1">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{1}{2}+a\right )}\int_{0}^{\infty}t^{a-\frac{1}{2}}e^{-\frac{1}{2}t^{2}-zt}\mathrm{d}t, subject to \Re a&gt;-\tfrac{1}{2} ,</Math> <Math equation-number="12.5.2" mode="display" xml:id="C12.S5.E2">U\left(a,z\right)=\frac{ze^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{1}{4}+\frac{ 1}{2}a\right)}\*\int_{0}^{\infty}t^{\frac{1}{2}a-\frac{3}{4}}e^{-t}\left(z^{2} +2t\right)^{-\frac{1}{2}a-\frac{3}{4}}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re a&gt;-\tfrac{1}{2} ,</Math> <Math equation-number="12.5.3" mode="display" xml:id="C12.S5.E3">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{\Gamma\left(\frac{3}{4}+\frac{1 }{2}a\right)}\*\int_{0}^{\infty}t^{\frac{1}{2}a-\frac{1}{4}}e^{-t}\left(z^{2}+ 2t\right)^{-\frac{1}{2}a-\frac{1}{4}}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re a&gt;-\tfrac{3}{2} ,</Math> <Math equation-number="12.5.4" mode="display" xml:id="C12.S5.E4">U\left(a,z\right)=\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}\*\int_{0}^{\infty}t ^{-a-\frac{1}{2}}e^{-\frac{1}{2}t^{2}}\cos\left(zt+\left(\tfrac{1}{2}a+\tfrac{ 1}{4}\right)\pi\right)\mathrm{d}t, subject to \Re a&lt;\tfrac{1}{2} </Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS2">
+<title>Contour Integrals</title>        
+  
+<para xml:id="C12.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C12.S5.SS2.p1.s1">
+The following integrals correspond to those of §LABEL:sec:PC.IR.RI.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C12.S5.SS2.p1.s2">
+<Math equation-number="12.5.5" mode="display" xml:id="C12.S5.E5">U\left(a,z\right)=\frac{\Gamma\left(\frac{1}{2}-a\right)}{2\pi i}e^{-\frac{1}{ 4}z^{2}}\int_{-\infty}^{(0+)}e^{zt-\frac{1}{2}t^{2}}t^{a-\frac{1}{2}}\mathrm{d }t, subject to a\neq\frac{1}{2},\frac{3}{2},\frac{5}{2},\dots, -\pi&lt;\operatorname{ph}t&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C12.S5.SS2.p1.s3">
+Restrictions on <Math mode="inline" xml:id="C12.S5.SS2.p1.m1">a</Math> are not needed in the following two representations: <Math equation-number="12.5.6" mode="display" xml:id="C12.S5.E6">U\left(a,z\right)=\frac{e^{\frac{1}{4}z^{2}}}{i\sqrt{2\pi}}\int_{c-i\infty}^{c +i\infty}e^{-zt+\frac{1}{2}t^{2}}t^{-a-\frac{1}{2}}\mathrm{d}t, subject to -\tfrac{1}{2}\pi&lt;\operatorname{ph}t&lt;\tfrac{1}{2}\pi, c&gt;0 ,</Math> <Math equation-number="12.5.7" mode="display" xml:id="C12.S5.E7">V\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}}{2\pi}\*\left(\int_{-ic-\infty}^ {-ic+\infty}+\int_{ic-\infty}^{ic+\infty}\right)e^{zt-\frac{1}{2}t^{2}}t^{a- \frac{1}{2}}\mathrm{d}t, subject to -\pi&lt;\operatorname{ph}{t}&lt;\pi, c&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C12.S5.SS2.p2.s1">
+For proofs and further results see ( , §4) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS3">
+<title>Mellin–Barnes Integrals</title>        
+  
+<para xml:id="C12.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C12.S5.SS3.p1.s1">
+ <Math equation-number="12.5.8" mode="display" xml:id="C12.S5.E8">U\left(a,z\right)=\frac{e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}}{2\pi i\Gamma \left(\frac{1}{2}+a\right)}\*\int_{-i\infty}^{i\infty}\Gamma\left(t\right) \Gamma\left(\tfrac{1}{2}+a-2t\right)2^{t}z^{2t}\mathrm{d}t, subject to a\neq-\frac{1}{2},-\frac{3}{2},-\frac{5}{2},\dots, |\operatorname{ph}z|&lt;\tfrac{3}{4}\pi,</Math> , <Math equation-number="12.5.9" mode="display" xml:id="C12.S5.E9">V\left(a,z\right)=\sqrt{\frac{2}{\pi}}\frac{e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{ 2}}}{2\pi i\Gamma\left(\frac{1}{2}-a\right)}\*\int_{-i\infty}^{i\infty}\Gamma \left(t\right)\Gamma\left(\tfrac{1}{2}-a-2t\right)2^{t}z^{2t}\cos\left(\pi t \right)\mathrm{d}t, subject to a\neq\frac{1}{2},\frac{3}{2},\frac{5}{2},\dots, |\operatorname{ph}z|&lt;\tfrac{1}{4}\pi,</Math> where the contour separates the poles of <Math mode="inline" xml:id="C12.S5.SS3.p1.m1">\Gamma\left(t\right)</Math> from those of <Math mode="inline" xml:id="C12.S5.SS3.p1.m2">\Gamma\left(\tfrac{1}{2}-a-2t\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S5.SS4">
+<title>Compendia</title>        
+  
+<para xml:id="C12.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C12.S5.SS4.p1.s1">
+For further collections of integral representations see ( , pp. 427-436) , ( , v. 2, pp. 119–120) , ( , pp. 289–291 and 362) , ( , §§9.24–9.25), ( , pp. 328–330) , ( , pp. 251–252) , and ( , pp. 378–384) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S6">
+<title>Continued Fraction</title>          
+<para xml:id="C12.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C12.S6.p1.s1">
+For a continued-fraction expansion of the ratio <Math mode="inline" xml:id="C12.S6.p1.m1">\ifrac{U\left(a,x\right)}{U\left(a-1,x\right)}</Math> see ( , pp. 340–341) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C12.S7">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C12.S7.SS1">
+<title>Hermite Polynomials</title>        
+    
+<para xml:id="C12.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C12.S7.SS1.p1.s1">
+For the notation see §LABEL:sec:OP.CP.OR.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C12.S7.SS1.p1.s2">
+<Math equation-number="12.7.1" mode="display" xml:id="C12.S7.E1">U\left(-\tfrac{1}{2},z\right)=D_{0}\left(z\right)=e^{-\frac{1}{4}z^{2}},</Math> <Math equation-number="12.7.2" mode="display" xml:id="C12.S7.E2">U\left(-n-\tfrac{1}{2},z\right)=D_{n}\left(z\right)=e^{-\frac{1}{4}z^{2}} \mathit{He}_{n}\left(z\right)=2^{-n/2}e^{-\frac{1}{4}z^{2}}H_{n}\left(z/\sqrt{ 2}\right), subject to n=0,1,2,\dots ,</Math> <Math equation-number="12.7.3" mode="display" xml:id="C12.S7.E3">V\left(n+\tfrac{1}{2},z\right)=\sqrt{2/\pi}e^{\frac{1}{4}z^{2}}(-i)^{n}\mathit {He}_{n}\left(iz\right)=\sqrt{2/\pi}e^{\frac{1}{4}z^{2}}(-i)^{n}2^{-\frac{1}{2 }n}H_{n}\left(iz/\sqrt{2}\right), subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS2">
+<title>Error Functions, Dawson’s Integral, and Probability Function</title>        
+    
+    
+ 
+ 
+<para xml:id="C12.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C12.S7.SS2.p1.s1">
+For the notation see §§LABEL:sec:ER.DF and LABEL:sec:ER.RI.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="67" xml:id="C12.S7.SS2.p1.s2">
+<Math equation-number="12.7.4" mode="display" xml:id="C12.S7.E4">V\left(-\tfrac{1}{2},z\right)=(\ifrac{2}{\sqrt{\pi}}\,)e^{\frac{1}{4}z^{2}}F \left(z/\sqrt{2}\right),</Math> <Math equation-number="12.7.5" mode="display" xml:id="C12.S7.E5">U\left(\tfrac{1}{2},z\right)=D_{-1}\left(z\right)=\sqrt{\tfrac{1}{2}\pi}\,e^{ \frac{1}{4}z^{2}}\operatorname{erfc}\left(z/\sqrt{2}\right),</Math> <Math equation-number="12.7.6" mode="display" xml:id="C12.S7.E6">U\left(n+\tfrac{1}{2},z\right)=D_{-n-1}\left(z\right)=\sqrt{\frac{\pi}{2}} \frac{(-1)^{n}}{n!}e^{-\frac{1}{4}z^{2}}\frac{{\mathrm{d}}^{n}\left(e^{\frac{1 }{2}z^{2}}\operatorname{erfc}\left(z/\sqrt{2}\right)\right)}{{\mathrm{d}z}^{n}}, subject to n=0,1,2,\dots,</Math> <Math equation-number="12.7.7" mode="display" xml:id="C12.S7.E7">U\left(n+\tfrac{1}{2},z\right)=e^{\frac{1}{4}z^{2}}\mathit{Hh}_{n}\left(z \right)=\sqrt{\pi}\,2^{\frac{1}{2}(n-1)}e^{\frac{1}{4}z^{2}}\mathop{\mathrm{i} ^{n}\mathrm{erfc}}\left(z/\sqrt{2}\right), subject to n=-1,0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS3">
+<title>Modified Bessel Functions</title>        
+  
+ 
+<para xml:id="C12.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C12.S7.SS3.p1.s1">
+For the notation see §LABEL:sec:BS.MDEF.SS. <Math equation-number="12.7.8" mode="display" xml:id="C12.S7.E8">U\left(-2,z\right)=\frac{z^{5/2}}{4\sqrt{2\pi}}\left(2\!K_{\frac{1}{4}}\left( \tfrac{1}{4}z^{2}\right)+3\!K_{\frac{3}{4}}\left(\tfrac{1}{4}z^{2}\right)-K_{ \frac{5}{4}}\left(\tfrac{1}{4}z^{2}\right)\right),</Math> <Math equation-number="12.7.9" mode="display" xml:id="C12.S7.E9">U\left(-1,z\right)=\frac{z^{3/2}}{2\sqrt{2\pi}}\left(K_{\frac{1}{4}}\left( \tfrac{1}{4}z^{2}\right)+K_{\frac{3}{4}}\left(\tfrac{1}{4}z^{2}\right)\right),</Math> , <Math equation-number="12.7.10" mode="display" xml:id="C12.S7.E10">U\left(0,z\right)=\sqrt{\frac{z}{2\pi}}K_{\frac{1}{4}}\left(\tfrac{1}{4}z^{2} \right),</Math> , <Math equation-number="12.7.11" mode="display" xml:id="C12.S7.E11">U\left(1,z\right)=\frac{z^{3/2}}{\sqrt{2\pi}}\left(K_{\frac{3}{4}}\left(\tfrac {1}{4}z^{2}\right)-K_{\frac{1}{4}}\left(\tfrac{1}{4}z^{2}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C12.S7.SS3.p1.s2">
+For these, the corresponding results for <Math mode="inline" xml:id="C12.S7.SS3.p1.m1">U\left(a,z\right)</Math> with <Math mode="inline" xml:id="C12.S7.SS3.p1.m2">a=2</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m3">\pm 3</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m4">-\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m5">-\tfrac{3}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m6">-\tfrac{5}{2}</Math> , and the corresponding results for <Math mode="inline" xml:id="C12.S7.SS3.p1.m7">V\left(a,z\right)</Math> with <Math mode="inline" xml:id="C12.S7.SS3.p1.m8">a=0</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m9">\pm 1</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m10">\pm 2</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m11">\pm 3</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m12">\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m13">\tfrac{3}{2}</Math> , <Math mode="inline" xml:id="C12.S7.SS3.p1.m14">\tfrac{5}{2}</Math> , see ( , pp. 42–43 and 77–79) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S7.SS4">
+<title>Confluent Hypergeometric Functions</title>        
+   
+<para xml:id="C12.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C12.S7.SS4.p1.s1">
+For the notation see §§LABEL:sec:CH.MU.DE.KU and LABEL:sec:CH.KM.DE.WH.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C12.S7.SS4.p2.s1">
+The even and odd solutions of (LABEL:eq:PC.DE.D2) (see (LABEL:eq:PC.SM.M3)–(LABEL:eq:PC.SM.M6)) are given by <Math equation-number="12.7.12" mode="display" xml:id="C12.S7.E12">u_{1}(a,z)=e^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2 },\tfrac{1}{2}z^{2}\right)=e^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac{1 }{4},\tfrac{1}{2},-\tfrac{1}{2}z^{2}\right),</Math> <Math equation-number="12.7.13" mode="display" xml:id="C12.S7.E13">u_{2}(a,z)=ze^{-\tfrac{1}{4}z^{2}}M\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac{3}{ 2},\tfrac{1}{2}z^{2}\right)=ze^{\tfrac{1}{4}z^{2}}M\left(-\tfrac{1}{2}a+\tfrac {3}{4},\tfrac{3}{2},-\tfrac{1}{2}z^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C12.S7.SS4.p2.s2">
+Also, <Math equation-number="12.7.14" mode="display" xml:id="C12.S7.E14">U\left(a,z\right)=2^{-\frac{1}{4}-\frac{1}{2}a}e^{-\frac{1}{4}z^{2}}U\left( \tfrac{1}{2}a+\tfrac{1}{4},\tfrac{1}{2},\tfrac{1}{2}z^{2}\right)=2^{-\frac{3}{ 4}-\frac{1}{2}a}ze^{-\frac{1}{4}z^{2}}U\left(\tfrac{1}{2}a+\tfrac{3}{4},\tfrac {3}{2},\tfrac{1}{2}z^{2}\right)=2^{-\frac{1}{2}a}z^{-\frac{1}{2}}W_{-\frac{1}{ 2}a,\pm\frac{1}{4}}\left(\tfrac{1}{2}z^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="73" xml:id="C12.S7.SS4.p2.s3">
+(It should be observed that the functions on the right-hand sides of (LABEL:eq:PC.RO.K3) are multivalued; hence, for example, <Math mode="inline" xml:id="C12.S7.SS4.p2.m1">z</Math> cannot be replaced simply by <Math mode="inline" xml:id="C12.S7.SS4.p2.m2">-z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="74" xml:id="C12.S7.SS4.p2.s4">
+)
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S8">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C12.S8.SS1">
+<title>Recurrence Relations</title>        
+ 
+ 
+<para xml:id="C12.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C12.S8.SS1.p1.s1">
+ <Math equation-number="12.8.1" mode="display" xml:id="C12.S8.E1">zU\left(a,z\right)-U\left(a-1,z\right)+(a+\tfrac{1}{2})U\left(a+1,z\right)=0,</Math> , <Math equation-number="12.8.2" mode="display" xml:id="C12.S8.E2">U'\left(a,z\right)+\tfrac{1}{2}zU\left(a,z\right)+(a+\tfrac{1}{2})U\left(a+1,z \right)=0,</Math> , <Math equation-number="12.8.3" mode="display" xml:id="C12.S8.E3">U'\left(a,z\right)-\tfrac{1}{2}zU\left(a,z\right)+U\left(a-1,z\right)=0,</Math> , <Math equation-number="12.8.4" mode="display" xml:id="C12.S8.E4">2U'\left(a,z\right)+U\left(a-1,z\right)+(a+\tfrac{1}{2})U\left(a+1,z\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="76" xml:id="C12.S8.SS1.p1.s2">
+(LABEL:eq:PC.RD.R1)–(LABEL:eq:PC.RD.R4) are also satisfied by <Math mode="inline" xml:id="C12.S8.SS1.p1.m1">\overline{U}\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="77" xml:id="C12.S8.SS1.p1.s3">
+<Math equation-number="12.8.5" mode="display" xml:id="C12.S8.E5">zV\left(a,z\right)-V\left(a+1,z\right)+(a-\tfrac{1}{2})V\left(a-1,z\right)=0,</Math> , <Math equation-number="12.8.6" mode="display" xml:id="C12.S8.E6">V'\left(a,z\right)-\tfrac{1}{2}zV\left(a,z\right)-(a-\tfrac{1}{2})V\left(a-1,z \right)=0,</Math> , <Math equation-number="12.8.7" mode="display" xml:id="C12.S8.E7">V'\left(a,z\right)+\tfrac{1}{2}zV\left(a,z\right)-V\left(a+1,z\right)=0,</Math> , <Math equation-number="12.8.8" mode="display" xml:id="C12.S8.E8">2V'\left(a,z\right)-V\left(a+1,z\right)-(a-\tfrac{1}{2})V\left(a-1,z\right)=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S8.SS2">
+<title>Derivatives</title>        
+  
+<para xml:id="C12.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C12.S8.SS2.p1.s1">
+For <Math mode="inline" xml:id="C12.S8.SS2.p1.m1">m=0,1,2,\dots</Math> , <Math equation-number="12.8.9" mode="display" xml:id="C12.S8.E9">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{\frac{1}{4}z^{2}}U\left(a,z \right)\right)=(-1)^{m}{\left(\tfrac{1}{2}+a\right)_{m}}e^{\frac{1}{4}z^{2}}U \left(a+m,z\right),</Math> <Math equation-number="12.8.10" mode="display" xml:id="C12.S8.E10">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{-\frac{1}{4}z^{2}}U\left(a, z\right)\right)=(-1)^{m}e^{-\frac{1}{4}z^{2}}U\left(a-m,z\right),</Math> <Math equation-number="12.8.11" mode="display" xml:id="C12.S8.E11">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{\frac{1}{4}z^{2}}V\left(a,z \right)\right)=e^{\frac{1}{4}z^{2}}V\left(a+m,z\right),</Math> <Math equation-number="12.8.12" mode="display" xml:id="C12.S8.E12">\frac{{\mathrm{d}}^{m}}{{\mathrm{d}z}^{m}}\left(e^{-\frac{1}{4}z^{2}}V\left(a, z\right)\right)=(-1)^{m}{\left(\tfrac{1}{2}-a\right)_{m}}e^{-\frac{1}{4}z^{2}} V\left(a-m,z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S9">
+<title>Asymptotic Expansions for Large Variable</title>        
+  
+<subsection xml:id="C12.S9.SS1">
+<title>Poincaré-Type Expansions</title>        
+ 
+<para xml:id="C12.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C12.S9.SS1.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C12.S9.SS1.p1.m1">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C12.S9.SS1.p2.s1">
+As <Math mode="inline" xml:id="C12.S9.SS1.p2.m1">z\to\infty</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C12.S9.SS1.p3.s1">
+ <Math equation-number="12.9.1" mode="display" xml:id="C12.S9.E1">U\left(a,z\right)\sim e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\left(\frac{1}{2}+a\right)_{2s}}}{s!(2z^{2})^{s}}, subject to |\operatorname{ph}z|\leq\tfrac{3}{4}\pi-\delta(&lt;\tfrac{3}{4}\pi) ,</Math> <Math equation-number="12.9.2" mode="display" xml:id="C12.S9.E2">V\left(a,z\right)\sim\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{2}} \sum_{s=0}^{\infty}\frac{{\left(\frac{1}{2}-a\right)_{2s}}}{s!(2z^{2})^{s}}, subject to |\operatorname{ph}z|\leq\tfrac{1}{4}\pi-\delta(&lt;\tfrac{1}{4}\pi) </Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="82" xml:id="C12.S9.SS1.p3.s2">
+<Math equation-number="12.9.3" mode="display" xml:id="C12.S9.E3">U\left(a,z\right)\sim e^{-\frac{1}{4}z^{2}}z^{-a-\frac{1}{2}}\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\left(\frac{1}{2}+a\right)_{2s}}}{s!(2z^{2})^{s}}\pm i \frac{\sqrt{2\pi}}{\Gamma\left(\tfrac{1}{2}+a\right)}e^{\mp i\pi a}e^{\frac{1} {4}z^{2}}z^{a-\frac{1}{2}}\sum_{s=0}^{\infty}\frac{{\left(\tfrac{1}{2}-a\right )_{2s}}}{s!(2z^{2})^{s}}, subject to \tfrac{1}{4}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{5}{4}\pi-\delta ,</Math> <Math equation-number="12.9.4" mode="display" xml:id="C12.S9.E4">V\left(a,z\right)\sim\sqrt{\frac{2}{\pi}}e^{\frac{1}{4}z^{2}}z^{a-\frac{1}{2}} \sum_{s=0}^{\infty}\frac{{\left(\tfrac{1}{2}-a\right)_{2s}}}{s!(2z^{2})^{s}} \pm\frac{i}{\Gamma\left(\tfrac{1}{2}-a\right)}e^{-\frac{1}{4}z^{2}}z^{-a-\frac {1}{2}}\sum_{s=0}^{\infty}(-1)^{s}\frac{{\left(\tfrac{1}{2}+a\right)_{2s}}}{s! (2z^{2})^{s}}, subject to -\tfrac{1}{4}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{3}{4}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="83" xml:id="C12.S9.SS1.p3.s3">
+To obtain approximations for <Math mode="inline" xml:id="C12.S9.SS1.p3.m1">U\left(a,-z\right)</Math> and <Math mode="inline" xml:id="C12.S9.SS1.p3.m2">V\left(a,-z\right)</Math> as <Math mode="inline" xml:id="C12.S9.SS1.p3.m3">z\to\infty</Math> combine the results above with (LABEL:eq:PC.RF.11) and (LABEL:eq:PC.RF.12).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="84" xml:id="C12.S9.SS1.p3.s4">
+See also ( , Chapter 11) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S9.SS2">
+<title>Bounds and Re-Expansions for the Remainder Terms</title>          
+<para xml:id="C12.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C12.S9.SS2.p1.s1">
+Bounds and re-expansions for the error term in (LABEL:eq:PC.AS.E1) can be obtained by use of (LABEL:eq:PC.RO.K3) and §§LABEL:sec:CH.MU.ASZ.EB,LABEL:sec:CH.MU.ASZ.EXP.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="86" xml:id="C12.S9.SS2.p1.s2">
+Corresponding results for (LABEL:eq:PC.AS.E2) can be obtained via (LABEL:eq:PC.2.16).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S10">
+<title>Uniform Asymptotic Expansions for Large Parameter</title>          
+ 
+<subsection xml:id="C12.S10.SS1">
+<title>Introduction</title>         
+<para xml:id="C12.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C12.S10.SS1.p1.s1">
+In this section we give asymptotic expansions of PCFs for large values of the parameter <Math mode="inline" xml:id="C12.S10.SS1.p1.m1">a</Math> that are uniform with respect to the variable <Math mode="inline" xml:id="C12.S10.SS1.p1.m2">z</Math> , when both <Math mode="inline" xml:id="C12.S10.SS1.p1.m3">a</Math> and <Math mode="inline" xml:id="C12.S10.SS1.p1.m4">z</Math> <Math mode="inline" xml:id="C12.S10.SS1.p1.m5">(=x)</Math> are real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C12.S10.SS1.p1.s2">
+These expansions follow from ( ) , where detailed information is also given for complex variables.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C12.S10.SS1.p2.s1">
+With the transformations <Math equation-number="12.10.1" mode="display" xml:id="C12.S10.E1">a=\pm\tfrac{1}{2}\mu^{2}, x=\mu t\sqrt{2},</Math> (LABEL:eq:PC.DE.D2) becomes <Math equation-number="12.10.2" mode="display" xml:id="C12.S10.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}t}^{2}}=\mu^{4}(t^{2}\pm 1)w</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S10.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C12.S10.SS1.p3.s1">
+With the upper sign in (LABEL:eq:PC.UA.U2), expansions can be constructed for large <Math mode="inline" xml:id="C12.S10.SS1.p3.m1">\mu</Math> in terms of elementary functions that are uniform for <Math mode="inline" xml:id="C12.S10.SS1.p3.m2">t\in(-\infty,\infty)</Math> (§LABEL:sec:AS.DEWP.CI).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C12.S10.SS1.p3.s2">
+With the lower sign there are turning points at <Math mode="inline" xml:id="C12.S10.SS1.p3.m3">t=\pm 1</Math> , which need to be excluded from the regions of validity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="92" xml:id="C12.S10.SS1.p3.s3">
+These cases are treated in §§LABEL:sec:PC.UA.L2–LABEL:sec:PC.UA.L6.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C12.S10.SS1.p4.s1">
+The turning points can be included if expansions in terms of Airy functions are used instead of elementary functions (§LABEL:sec:AS.DEWP.CII).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C12.S10.SS1.p4.s2">
+These cases are treated in §§LABEL:sec:PC.UA.L7–LABEL:sec:PC.UA.L8.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C12.S10.SS1.p5.s1">
+Throughout this section the symbol <Math mode="inline" xml:id="C12.S10.SS1.p5.m1">\delta</Math> again denotes an arbitrary small positive constant.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS2">
+<title>Negative <Math mode="inline" xml:id="C12.S10.SS2.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS2.m2">2\sqrt{-a}&lt;x&lt;\infty</Math></title>        
+  
+<para xml:id="C12.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C12.S10.SS2.p1.s1">
+As <Math mode="inline" xml:id="C12.S10.SS2.p1.m1">a\to-\infty</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C12.S10.SS2.p2.s1">
+ <Math equation-number="12.10.3" mode="display" xml:id="C12.S10.E3">U\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{g(\mu)e^{-\mu^{2}\xi }}{(t^{2}-1)^{\frac{1}{4}}}\sum_{s=0}^{\infty}\frac{{\cal A}_{s}(t)}{\mu^{2s}},</Math> <Math equation-number="12.10.4" mode="display" xml:id="C12.S10.E4">U'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim-\frac{\mu}{\sqrt{2}}g( \mu)(t^{2}-1)^{\frac{1}{4}}\*e^{-\mu^{2}\xi}\sum_{s=0}^{\infty}\frac{{\cal B}_ {s}(t)}{\mu^{2s}},</Math> <Math equation-number="12.10.5" mode="display" xml:id="C12.S10.E5">V\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{2g(\mu)}{\Gamma\left (\frac{1}{2}+\frac{1}{2}\mu^{2}\right)}\frac{e^{\mu^{2}\xi}}{(t^{2}-1)^{\frac{ 1}{4}}}\*\sum_{s=0}^{\infty}(-1)^{s}\frac{{\cal A}_{s}(t)}{\mu^{2s}},</Math> <Math equation-number="12.10.6" mode="display" xml:id="C12.S10.E6">V'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{\sqrt{2}\mu g(\mu)} {\Gamma\left(\frac{1}{2}+\frac{1}{2}\mu^{2}\right)}(t^{2}-1)^{\frac{1}{4}}\*e^ {\mu^{2}\xi}\sum_{s=0}^{\infty}(-1)^{s}\frac{{\cal B}_{s}(t)}{\mu^{2s}},</Math> uniformly for <Math mode="inline" xml:id="C12.S10.SS2.p2.m1">t\in[1+\delta,\infty)</Math> , where <Math equation-number="12.10.7" mode="display" xml:id="C12.S10.E7">\xi=\tfrac{1}{2}t\sqrt{t^{2}-1}-\tfrac{1}{2}\ln\left(t+\sqrt{t^{2}-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="98" xml:id="C12.S10.SS2.p2.s2">
+The coefficients are given by <Math equation-number="12.10.8" mode="display" xml:id="C12.S10.E8">{\cal A}_{s}(t)=\frac{u_{s}(t)}{(t^{2}-1)^{\frac{3}{2}s}},~{}{\cal B}_{s}(t)= \frac{v_{s}(t)}{(t^{2}-1)^{\frac{3}{2}s}},</Math> where <Math mode="inline" xml:id="C12.S10.SS2.p2.m2">u_{s}(t)</Math> and <Math mode="inline" xml:id="C12.S10.SS2.p2.m3">v_{s}(t)</Math> are polynomials in <Math mode="inline" xml:id="C12.S10.SS2.p2.m4">t</Math> of degree <Math mode="inline" xml:id="C12.S10.SS2.p2.m5">3s</Math> , ( <Math mode="inline" xml:id="C12.S10.SS2.p2.m6">s</Math> odd), <Math mode="inline" xml:id="C12.S10.SS2.p2.m7">3s-2</Math> ( <Math mode="inline" xml:id="C12.S10.SS2.p2.m8">s</Math> even, <Math mode="inline" xml:id="C12.S10.SS2.p2.m9">s\geq 2</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="99" xml:id="C12.S10.SS2.p2.s3">
+For <Math mode="inline" xml:id="C12.S10.SS2.p2.m10">s=0,1,2</Math> , <Math equation-number="12.10.9" mode="display" xml:id="C12.S10.E9">u_{0}(t)=1, u_{1}(t)=\frac{t(t^{2}-6)}{24}, u_{2}(t)=\frac{-9t^{4}+249t^{2}+145}{1152},</Math> <Math equation-number="12.10.10" mode="display" xml:id="C12.S10.E10">v_{0}(t)=1, v_{1}(t)=\frac{t(t^{2}+6)}{24}, v_{2}(t)=\frac{15t^{4}-327t^{2}-143}{1152}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="100" xml:id="C12.S10.SS2.p2.s4">
+Higher polynomials <Math mode="inline" xml:id="C12.S10.SS2.p2.m11">u_{s}(t)</Math> can be calculated from the recurrence relation <Math equation-number="12.10.11" mode="display" xml:id="C12.S10.E11">(t^{2}-1)u^{\prime}_{s}(t)-3stu_{s}(t)=r_{s-1}(t),</Math> where <Math equation-number="12.10.12" mode="display" xml:id="C12.S10.E12">8r_{s}(t)=(3t^{2}+2)u_{s}(t)-12(s+1)tr_{s-1}(t)+4(t^{2}-1)r^{\prime}_{s-1}(t),</Math> and the <Math mode="inline" xml:id="C12.S10.SS2.p2.m12">v_{s}(t)</Math> then follow from <Math equation-number="12.10.13" mode="display" xml:id="C12.S10.E13">v_{s}(t)=u_{s}(t)+\tfrac{1}{2}tu_{s-1}(t)-r_{s-2}(t)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C12.S10.SS2.p3.s1">
+Lastly, the function <Math mode="inline" xml:id="C12.S10.SS2.p3.m1">g(\mu)</Math> in (LABEL:eq:PC.UA.U3) and (LABEL:eq:PC.UA.U4) has the asymptotic expansion: <Math equation-number="12.10.14" mode="display" xml:id="C12.S10.E14">g(\mu)\sim h(\mu)\left(1+\frac{1}{2}\sum_{s=1}^{\infty}\frac{\gamma_{s}}{( \frac{1}{2}\mu^{2})^{s}}\right),</Math> where <Math equation-number="12.10.15" mode="display" xml:id="C12.S10.E15">h(\mu)=2^{-\frac{1}{4}\mu^{2}-\frac{1}{4}}e^{-\frac{1}{4}\mu^{2}}\mu^{\frac{1} {2}\mu^{2}-\frac{1}{2}},</Math> and the coefficients <Math mode="inline" xml:id="C12.S10.SS2.p3.m2">\gamma_{s}</Math> are defined by <Math equation-number="12.10.16" mode="display" xml:id="C12.S10.E16">\Gamma\left(\tfrac{1}{2}+z\right)\sim\sqrt{2\pi}e^{-z}z^{z}\sum_{s=0}^{\infty} \frac{\gamma_{s}}{z^{s}};</Math> compare (LABEL:eq:GA.AE.PE.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C12.S10.SS2.p3.s2">
+For <Math mode="inline" xml:id="C12.S10.SS2.p3.m3">s\leq 4</Math> <Math equation-number="12.10.17" mode="display" xml:id="C12.S10.E17">\gamma_{0}=1, \gamma_{1}=-\tfrac{1}{24}, \gamma_{2}=\tfrac{1}{1152}, \gamma_{3}=\tfrac{1003}{4\;14720}, \gamma_{4}=-\tfrac{4027}{398\;13120}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS3">
+<title>Negative <Math mode="inline" xml:id="C12.S10.SS3.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS3.m2">-\infty&lt;x&lt;-2\sqrt{-a}</Math></title>        
+ 
+<para xml:id="C12.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C12.S10.SS3.p1.s1">
+When <Math mode="inline" xml:id="C12.S10.SS3.p1.m1">\mu\to\infty</Math> , asymptotic expansions for the functions <Math mode="inline" xml:id="C12.S10.SS3.p1.m2">U\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> and <Math mode="inline" xml:id="C12.S10.SS3.p1.m3">V\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> that are uniform for <Math mode="inline" xml:id="C12.S10.SS3.p1.m4">t\in[1+\delta,\infty)</Math> are obtainable by substitution into (LABEL:eq:PC.RF.11) and (LABEL:eq:PC.RF.12) by means of (LABEL:eq:PC.UA.U3) and (LABEL:eq:PC.UA.95).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C12.S10.SS3.p1.s2">
+Similarly for <Math mode="inline" xml:id="C12.S10.SS3.p1.m5">U'\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> and <Math mode="inline" xml:id="C12.S10.SS3.p1.m6">V'\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS4">
+<title>Negative <Math mode="inline" xml:id="C12.S10.SS4.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS4.m2">-2\sqrt{-a}&lt;x&lt;2\sqrt{-a}</Math></title>        
+ 
+<para xml:id="C12.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C12.S10.SS4.p1.s1">
+As <Math mode="inline" xml:id="C12.S10.SS4.p1.m1">a\to-\infty</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C12.S10.SS4.p2.s1">
+ <Math equation-number="12.10.18" mode="display" xml:id="C12.S10.E18">U\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{2g(\mu)}{(1-t^{2})^{ \frac{1}{4}}}\*\left(\cos\kappa\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{ \cal{A}}_{2s}(t)}{\mu^{4s}}-\sin\kappa\sum_{s=0}^{\infty}(-1)^{s}\frac{ \widetilde{\cal{A}}_{2s+1}(t)}{\mu^{4s+2}}\right),</Math> , <Math equation-number="12.10.19" mode="display" xml:id="C12.S10.E19">U'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\mu\sqrt{2}g(\mu)(1-t^{2} )^{\frac{1}{4}}\*\left(\sin\kappa\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{ \cal{B}}_{2s}(t)}{\mu^{4s}}+\cos\kappa\sum_{s=0}^{\infty}(-1)^{s}\frac{ \widetilde{\cal{B}}_{2s+1}(t)}{\mu^{4s+2}}\right),</Math> , <Math equation-number="12.10.20" mode="display" xml:id="C12.S10.E20">V\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{2g(\mu)}{\Gamma\left (\tfrac{1}{2}+\tfrac{1}{2}\mu^{2}\right)(1-t^{2})^{\frac{1}{4}}}\*\left(\cos \chi\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{\cal{A}}_{2s}(t)}{\mu^{4s}}- \sin\chi\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{\cal{A}}_{2s+1}(t)}{\mu^{4 s+2}}\right),</Math> , <Math equation-number="12.10.21" mode="display" xml:id="C12.S10.E21">V'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{\mu\sqrt{2}g(\mu)(1 -t^{2})^{\frac{1}{4}}}{\Gamma\left(\tfrac{1}{2}+\tfrac{1}{2}\mu^{2}\right)}\* \left(\sin\chi\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{\cal{B}}_{2s}(t)}{ \mu^{4s}}+\cos\chi\sum_{s=0}^{\infty}(-1)^{s}\frac{\widetilde{\cal{B}}_{2s+1}( t)}{\mu^{4s+2}}\right),</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C12.S10.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C12.S10.SS4.p3.s1">
+uniformly for <Math mode="inline" xml:id="C12.S10.SS4.p3.m1">t\in[-1+\delta,1-\delta]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C12.S10.SS4.p3.s2">
+The quantities <Math mode="inline" xml:id="C12.S10.SS4.p3.m2">\kappa</Math> and <Math mode="inline" xml:id="C12.S10.SS4.p3.m3">\chi</Math> are defined by <Math equation-number="12.10.22" mode="display" xml:id="C12.S10.E22">\kappa=\mu^{2}\eta-\tfrac{1}{4}\pi, \chi=\mu^{2}\eta+\tfrac{1}{4}\pi,</Math> where <Math equation-number="12.10.23" mode="display" xml:id="C12.S10.E23">\eta=\tfrac{1}{2}\operatorname{arccos}t-\tfrac{1}{2}t\sqrt{1-t^{2}},</Math> and the coefficients <Math mode="inline" xml:id="C12.S10.SS4.p3.m4">\widetilde{\cal{A}}_{s}(t)</Math> and <Math mode="inline" xml:id="C12.S10.SS4.p3.m5">\widetilde{\cal{B}}_{s}(t)</Math> are given by <Math equation-number="12.10.24" mode="display" xml:id="C12.S10.E24">\widetilde{\cal{A}}_{s}(t)=\frac{u_{s}(t)}{(1-t^{2})^{\frac{3}{2}s}}, \widetilde{\cal{B}}_{s}(t)=\frac{v_{s}(t)}{(1-t^{2})^{\frac{3}{2}s}};</Math> compare (LABEL:eq:PC.UA.U6).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS5">
+<title>Positive <Math mode="inline" xml:id="C12.S10.SS5.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS5.m2">-\infty&lt;x&lt;\infty</Math></title>        
+ 
+<para xml:id="C12.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C12.S10.SS5.p1.s1">
+As <Math mode="inline" xml:id="C12.S10.SS5.p1.m1">a\to\infty</Math> <Math equation-number="12.10.25" mode="display" xml:id="C12.S10.E25">U\left(\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{\overline{g}(\mu)e^{- \mu^{2}{\overline{\xi}}}}{(t^{2}+1)^{\frac{1}{4}}}\sum_{s=0}^{\infty}\frac{ \overline{u}_{s}(t)}{(t^{2}+1)^{\frac{3}{2}s}}\frac{1}{\mu^{2s}},</Math> uniformly for <Math mode="inline" xml:id="C12.S10.SS5.p1.m2">t\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C12.S10.SS5.p1.s2">
+Here bars do not denote complex conjugates; instead <Math equation-number="12.10.26" mode="display" xml:id="C12.S10.E26">\overline{\xi}=\tfrac{1}{2}t\sqrt{t^{2}+1}+\tfrac{1}{2}\ln\left(t+\sqrt{t^{2}+ 1}\right),</Math> <Math equation-number="12.10.27" mode="display" xml:id="C12.S10.E27">\overline{u}_{s}(t)=i^{s}u_{s}(-it),</Math> and the function <Math mode="inline" xml:id="C12.S10.SS5.p1.m3">\overline{g}(\mu)</Math> has the asymptotic expansion <Math equation-number="12.10.28" mode="display" xml:id="C12.S10.E28">\overline{g}(\mu)\sim\frac{1}{\mu\sqrt{2}h(\mu)}\left(1+\frac{1}{2}\sum_{s=1}^ {\infty}(-1)^{s}\frac{\gamma_{s}}{(\frac{1}{2}\mu^{2})^{s}}\right),</Math> where <Math mode="inline" xml:id="C12.S10.SS5.p1.m4">h(\mu)</Math> and <Math mode="inline" xml:id="C12.S10.SS5.p1.m5">\gamma_{s}</Math> are as in §LABEL:sec:PC.UA.L2.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C12.S10.SS5.p2.s1">
+With the same conditions <Math equation-number="12.10.29" mode="display" xml:id="C12.S10.E29">U'\left(\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim{-\frac{\mu}{\sqrt{2}} \overline{g}(\mu)(t^{2}+1)^{\frac{1}{4}}e^{-\mu^{2}{\overline{\xi}}}\sum_{s=0} ^{\infty}\frac{\overline{v}_{s}(t)}{(t^{2}+1)^{\frac{3}{2}s}}\frac{1}{\mu^{2s} }},</Math> where <Math equation-number="12.10.30" mode="display" xml:id="C12.S10.E30">\overline{v}_{s}(t)=i^{s}v_{s}(-it)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS6">
+<title>Modifications of Expansions in Elementary Functions</title>        
+  
+<para xml:id="C12.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C12.S10.SS6.p1.s1">
+In ( ) modifications are given of Olver’s expansions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="113" xml:id="C12.S10.SS6.p1.s2">
+An example is the following modification of (LABEL:eq:PC.UA.U3) <Math equation-number="12.10.31" mode="display" xml:id="C12.S10.E31">U\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{h(\mu)e^{-\mu^{2}\xi }}{(t^{2}-1)^{\frac{1}{4}}}\sum_{s=0}^{\infty}\frac{\mathsf{A}_{s}(\tau)}{\mu^ {2s}},</Math> where <Math mode="inline" xml:id="C12.S10.SS6.p1.m1">\xi</Math> and <Math mode="inline" xml:id="C12.S10.SS6.p1.m2">h(\mu)</Math> are as in (LABEL:eq:PC.UA.U5) and (LABEL:eq:PC.UA.U14) , <Math equation-number="12.10.32" mode="display" xml:id="C12.S10.E32">\tau=\frac{1}{2}\left(\frac{t}{\sqrt{t^{2}-1}}-1\right),</Math> and the coefficients <Math mode="inline" xml:id="C12.S10.SS6.p1.m3">\mathsf{A}_{s}(\tau)</Math> are the product of <Math mode="inline" xml:id="C12.S10.SS6.p1.m4">\tau^{s}</Math> and a polynomial in <Math mode="inline" xml:id="C12.S10.SS6.p1.m5">\tau</Math> of degree <Math mode="inline" xml:id="C12.S10.SS6.p1.m6">2s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="114" xml:id="C12.S10.SS6.p1.s3">
+They satisfy the recursion <Math equation-number="12.10.33" mode="display" xml:id="C12.S10.E33">\mathsf{A}_{s+1}(\tau)=-4\tau^{2}(\tau+1)^{2}\frac{\mathrm{d}}{\mathrm{d}\tau} \mathsf{A}_{s}(\tau)-\frac{1}{4}\int_{0}^{\tau}\left(20u^{2}+20u+3\right) \mathsf{A}_{s}(u)\mathrm{d}u, subject to s=0,1,2,\dots,</Math> starting with <Math mode="inline" xml:id="C12.S10.SS6.p1.m7">\mathsf{A}_{o}(\tau)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="115" xml:id="C12.S10.SS6.p1.s4">
+Explicitly, <Math equation-number="12.10.34" mode="display" xml:id="C12.S10.E34">\mathsf{A}_{1}(\tau)=-\tfrac{1}{12}\tau(20\tau^{2}+30\tau+9), \mathsf{A}_{2}(\tau)=\tfrac{1}{288}\tau^{2}(6160\tau^{4}+18480\tau^{3}+19404 \tau^{2}+8028\tau+945)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S10.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C12.S10.SS6.p2.s1">
+The modified expansion (LABEL:eq:PC.UA.U31) shares the property of (LABEL:eq:PC.UA.U3) that it applies when <Math mode="inline" xml:id="C12.S10.SS6.p2.m1">\mu\to\infty</Math> uniformly with respect to <Math mode="inline" xml:id="C12.S10.SS6.p2.m2">t\in[1+\delta,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="117" xml:id="C12.S10.SS6.p2.s2">
+In addition, it enjoys a double asymptotic property: it holds if either or both <Math mode="inline" xml:id="C12.S10.SS6.p2.m3">\mu</Math> and <Math mode="inline" xml:id="C12.S10.SS6.p2.m4">t</Math> tend to infinity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="118" xml:id="C12.S10.SS6.p2.s3">
+Observe that if <Math mode="inline" xml:id="C12.S10.SS6.p2.m5">t\to\infty</Math> , then <Math mode="inline" xml:id="C12.S10.SS6.p2.m6">\mathsf{A}_{s}(\tau)=O\left(t^{-2s}\right)</Math> , whereas <Math mode="inline" xml:id="C12.S10.SS6.p2.m7">{\cal A}_{s}(t)=O(1)</Math> or <Math mode="inline" xml:id="C12.S10.SS6.p2.m8">O\left(t^{-2}\right)</Math> according as <Math mode="inline" xml:id="C12.S10.SS6.p2.m9">s</Math> is even or odd.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="119" xml:id="C12.S10.SS6.p2.s4">
+The proof of the double asymptotic property then follows with the aid of error bounds; compare §LABEL:sec:BS.MAEO.DA.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S10.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C12.S10.SS6.p3.s1">
+For additional information see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="121" xml:id="C12.S10.SS6.p3.s2">
+See also ( , pp. 206–208) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS7">
+<title>Negative <Math mode="inline" xml:id="C12.S10.SS7.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS7.m2">-2\sqrt{-a}&lt;x&lt;\infty</Math>. Expansions in Terms of Airy Functions</title>        
+  
+<para xml:id="C12.S10.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C12.S10.SS7.p1.s1">
+The following expansions hold for large positive real values of <Math mode="inline" xml:id="C12.S10.SS7.p1.m1">\mu</Math> , uniformly for <Math mode="inline" xml:id="C12.S10.SS7.p1.m2">t\in[-1+\delta,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="123" xml:id="C12.S10.SS7.p1.s2">
+(For complex values of <Math mode="inline" xml:id="C12.S10.SS7.p1.m3">\mu</Math> and <Math mode="inline" xml:id="C12.S10.SS7.p1.m4">t</Math> see ( ) .)
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S10.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C12.S10.SS7.p2.s1">
+ <Math equation-number="12.10.35" mode="display" xml:id="C12.S10.E35">U\left(-\frac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim 2\pi^{\frac{1}{2}}\mu^{ \frac{1}{3}}g(\mu)\phi(\zeta)\*\left(\mathrm{Ai}\left(\mu^{\frac{4}{3}}\zeta \right)\sum_{s=0}^{\infty}\frac{A_{s}(\zeta)}{\mu^{4s}}+\frac{\mathrm{Ai}' \left(\mu^{\frac{4}{3}}\zeta\right)}{\mu^{\frac{8}{3}}}\sum_{s=0}^{\infty} \frac{B_{s}(\zeta)}{\mu^{4s}}\right),</Math> , <Math equation-number="12.10.36" mode="display" xml:id="C12.S10.E36">U'\left(-\frac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{(2\pi)^{\frac{1}{2}} \mu^{\frac{2}{3}}g(\mu)}{\phi(\zeta)}\*\left(\frac{\mathrm{Ai}\left(\mu^{\frac {4}{3}}\zeta\right)}{\mu^{\frac{4}{3}}}\sum_{s=0}^{\infty}\frac{C_{s}(\zeta)}{ \mu^{4s}}+\mathrm{Ai}'\left(\mu^{\frac{4}{3}}\zeta\right)\sum_{s=0}^{\infty} \frac{D_{s}(\zeta)}{\mu^{4s}}\right),</Math> , <Math equation-number="12.10.37" mode="display" xml:id="C12.S10.E37">V\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{2\pi^{\frac{1}{2}} \mu^{\frac{1}{3}}g(\mu)\phi(\zeta)}{\Gamma\left(\tfrac{1}{2}+\tfrac{1}{2}\mu^{ 2}\right)}\*\left(\mathrm{Bi}\left(\mu^{\frac{4}{3}}\zeta\right)\sum_{s=0}^{ \infty}\frac{A_{s}(\zeta)}{\mu^{4s}}+\frac{\mathrm{Bi}'\left(\mu^{\frac{4}{3}} \zeta\right)}{\mu^{\frac{8}{3}}}\sum_{s=0}^{\infty}\frac{B_{s}(\zeta)}{\mu^{4s }}\right),</Math> , <Math equation-number="12.10.38" mode="display" xml:id="C12.S10.E38">V'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{(2\pi)^{\frac{1}{2} }\mu^{\frac{2}{3}}g(\mu)}{\phi(\zeta)\Gamma\left(\tfrac{1}{2}+\tfrac{1}{2}\mu^ {2}\right)}\*\left(\frac{\mathrm{Bi}\left(\mu^{\frac{4}{3}}\zeta\right)}{\mu^{ \frac{4}{3}}}\sum_{s=0}^{\infty}\frac{C_{s}(\zeta)}{\mu^{4s}}+\mathrm{Bi}' \left(\mu^{\frac{4}{3}}\zeta\right)\sum_{s=0}^{\infty}\frac{D_{s}(\zeta)}{\mu^ {4s}}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S10.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C12.S10.SS7.p3.s1">
+The variable <Math mode="inline" xml:id="C12.S10.SS7.p3.m1">\zeta</Math> is defined by <Math equation-number="12.10.39" mode="display" xml:id="C12.S10.E39">\tfrac{2}{3}\zeta^{\frac{3}{2}}=\xi,\quad\text{$1\leq t$},\text{($\zeta\geq 0$ )};, \tfrac{2}{3}(-\zeta)^{\frac{3}{2}}=\eta,\quad\text{$-1&lt;t\leq 1$},\text{($\zeta \leq 0$)},</Math> where <Math mode="inline" xml:id="C12.S10.SS7.p3.m2">\xi,\eta</Math> are given by (LABEL:eq:PC.UA.U5), (LABEL:eq:PC.UA.U24), respectively, and <Math equation-number="12.10.40" mode="display" xml:id="C12.S10.E40">\phi(\zeta)=\left(\frac{\zeta}{t^{2}-1}\right)^{\frac{1}{4}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="126" xml:id="C12.S10.SS7.p3.s2">
+The function <Math mode="inline" xml:id="C12.S10.SS7.p3.m3">\zeta=\zeta(t)</Math> is real for <Math mode="inline" xml:id="C12.S10.SS7.p3.m4">t&gt;-1</Math> and analytic at <Math mode="inline" xml:id="C12.S10.SS7.p3.m5">t=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="127" xml:id="C12.S10.SS7.p3.s3">
+Inversely, with <Math mode="inline" xml:id="C12.S10.SS7.p3.m6">w=2^{-\frac{1}{3}}\zeta</Math> , <Math equation-number="12.10.41" mode="display" xml:id="C12.S10.E41">t=1+w-\tfrac{1}{10}w^{2}+\tfrac{11}{350}w^{3}-\tfrac{823}{63000}w^{4}+\tfrac{1 \;50653}{242\;55000}w^{5}+\cdots, subject to |\zeta|&lt;\left(\tfrac{3}{4}\pi\right)^{\frac{2}{3}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="128" xml:id="C12.S10.SS7.p3.s4">
+For <Math mode="inline" xml:id="C12.S10.SS7.p3.m7">g(\mu)</Math> see (LABEL:eq:PC.UA.U13).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="129" xml:id="C12.S10.SS7.p3.s5">
+The coefficients <Math mode="inline" xml:id="C12.S10.SS7.p3.m8">A_{s}(\zeta)</Math> and <Math mode="inline" xml:id="C12.S10.SS7.p3.m9">B_{s}(\zeta)</Math> are given by <Math equation-number="12.10.42" mode="display" xml:id="C12.S10.E42">A_{s}(\zeta)=\zeta^{-3s}\sum_{m=0}^{2s}\beta_{m}(\phi(\zeta))^{6(2s-m)}u_{2s-m }(t), \zeta^{2}B_{s}(\zeta)=-\zeta^{-3s}\sum_{m=0}^{2s+1}\alpha_{m}(\phi(\zeta))^{6( 2s-m+1)}u_{2s-m+1}(t),</Math> where <Math mode="inline" xml:id="C12.S10.SS7.p3.m10">\phi(\zeta)</Math> is as in (LABEL:eq:PC.UA.A6), <Math mode="inline" xml:id="C12.S10.SS7.p3.m11">u_{k}(t)</Math> is as in §LABEL:sec:PC.UA.L2, <Math mode="inline" xml:id="C12.S10.SS7.p3.m12">\alpha_{0}=1</Math> , and <Math equation-number="12.10.43" mode="display" xml:id="C12.S10.E43">\alpha_{m}=\frac{(2m+1)(2m+3)\cdots(6m-1)}{m!(144)^{m}}, \beta_{m}=-\frac{6m+1}{6m-1}\alpha_{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="130" xml:id="C12.S10.SS7.p3.s6">
+The coefficients <Math mode="inline" xml:id="C12.S10.SS7.p3.m13">C_{s}(\zeta)</Math> and <Math mode="inline" xml:id="C12.S10.SS7.p3.m14">D_{s}(\zeta)</Math> in (LABEL:eq:PC.UA.A2) and (LABEL:eq:PC.UA.A4) are given by <Math equation-number="12.10.44" mode="display" xml:id="C12.S10.E44">C_{s}(\zeta)=\chi(\zeta)A_{s}(\zeta)+A^{\prime}_{s}(\zeta)+\zeta B_{s}(\zeta), D_{s}(\zeta)=A_{s}(\zeta)+\chi(\zeta)B_{s-1}(\zeta)+B^{\prime}_{s-1}(\zeta),</Math> where <Math equation-number="12.10.45" mode="display" xml:id="C12.S10.E45">\chi(\zeta)=\frac{\phi^{\prime}(\zeta)}{\phi(\zeta)}=\frac{1-2t(\phi(\zeta))^{ 6}}{4\zeta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="131" xml:id="C12.S10.SS7.p3.s7">
+Explicitly, <Math equation-number="12.10.46" mode="display" xml:id="C12.S10.E46">\zeta C_{s}(\zeta)=-\zeta^{-3s}\sum_{m=0}^{2s+1}\beta_{m}(\phi(\zeta))^{6(2s-m +1)}v_{2s-m+1}(t), D_{s}(\zeta)=\zeta^{-3s}\sum_{m=0}^{2s}\alpha_{m}(\phi(\zeta))^{6(2s-m)}v_{2s- m}(t),</Math> where <Math mode="inline" xml:id="C12.S10.SS7.p3.m15">v_{k}(t)</Math> is as in §LABEL:sec:PC.UA.L2.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C12.S10.Px1">
+<title>Modified Expansions</title>    
+<para xml:id="C12.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C12.S10.Px1.p1.s1">
+The expansions (LABEL:eq:PC.UA.A1)–(LABEL:eq:PC.UA.A4) can be modified, again see ( ) , and the new expansions hold if either or both <Math mode="inline" xml:id="C12.S10.Px1.p1.m1">\mu</Math> and <Math mode="inline" xml:id="C12.S10.Px1.p1.m2">t</Math> tend to infinity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C12.S10.Px1.p1.s2">
+This is provable by the methods used in §LABEL:sec:BS.MAEO.DAP.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S10.SS8">
+<title>Negative <Math mode="inline" xml:id="C12.S10.SS8.m1">a</Math>, <Math mode="inline" xml:id="C12.S10.SS8.m2">-\infty&lt;x&lt;2\sqrt{-a}</Math>. Expansions in Terms of Airy Functions</title>        
+ 
+<para xml:id="C12.S10.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C12.S10.SS8.p1.s1">
+When <Math mode="inline" xml:id="C12.S10.SS8.p1.m1">\mu\to\infty</Math> , asymptotic expansions for <Math mode="inline" xml:id="C12.S10.SS8.p1.m2">U\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> and <Math mode="inline" xml:id="C12.S10.SS8.p1.m3">V\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> that are uniform for <Math mode="inline" xml:id="C12.S10.SS8.p1.m4">t\in[-1+\delta,\infty)</Math> are obtained by substitution into (LABEL:eq:PC.RF.11) and (LABEL:eq:PC.RF.12) by means of (LABEL:eq:PC.UA.A1) and (LABEL:eq:PC.UA.A3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="135" xml:id="C12.S10.SS8.p1.s2">
+Similarly for <Math mode="inline" xml:id="C12.S10.SS8.p1.m5">U'\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math> and <Math mode="inline" xml:id="C12.S10.SS8.p1.m6">V'\left(-\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S11">
+<title>Zeros</title>        
+ 
+<subsection xml:id="C12.S11.SS1">
+<title>Distribution of Real Zeros</title>        
+  
+<para xml:id="C12.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C12.S11.SS1.p1.s1">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m1">a\geq-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m2">U\left(a,x\right)</Math> has no real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="137" xml:id="C12.S11.SS1.p1.s2">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m3">-\tfrac{3}{2}&lt;a&lt;-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m4">U\left(a,x\right)</Math> has no positive real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="138" xml:id="C12.S11.SS1.p1.s3">
+If <Math mode="inline" xml:id="C12.S11.SS1.p1.m5">-2n-\tfrac{3}{2}&lt;a&lt;-2n+\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p1.m6">n=1,2,\dots</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p1.m7">U\left(a,x\right)</Math> has <Math mode="inline" xml:id="C12.S11.SS1.p1.m8">n</Math> positive real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="139" xml:id="C12.S11.SS1.p1.s4">
+Lastly, when <Math mode="inline" xml:id="C12.S11.SS1.p1.m9">a=-n-\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p1.m10">n=1,2,\dots</Math> (Hermite polynomial case) <Math mode="inline" xml:id="C12.S11.SS1.p1.m11">U\left(a,x\right)</Math> has <Math mode="inline" xml:id="C12.S11.SS1.p1.m12">n</Math> zeros and they lie in the interval <Math mode="inline" xml:id="C12.S11.SS1.p1.m13">[-2\sqrt{-a},2\sqrt{-a}\,]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="140" xml:id="C12.S11.SS1.p1.s5">
+For further information on these cases see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C12.S11.SS1.p2.s1">
+If <Math mode="inline" xml:id="C12.S11.SS1.p2.m1">a&gt;-\tfrac{1}{2}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p2.m2">V\left(a,x\right)</Math> has no positive real zeros, and if <Math mode="inline" xml:id="C12.S11.SS1.p2.m3">a=\tfrac{3}{2}-2n</Math> , <Math mode="inline" xml:id="C12.S11.SS1.p2.m4">n\in\mathbb{Z}</Math> , then <Math mode="inline" xml:id="C12.S11.SS1.p2.m5">V\left(a,x\right)</Math> has a zero at <Math mode="inline" xml:id="C12.S11.SS1.p2.m6">x=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S11.SS2">
+<title>Asymptotic Expansions of Large Zeros</title>        
+  
+<para xml:id="C12.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C12.S11.SS2.p1.s1">
+When <Math mode="inline" xml:id="C12.S11.SS2.p1.m1">a&gt;-\frac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S11.SS2.p1.m2">U\left(a,z\right)</Math> has a string of complex zeros that approaches the ray <Math mode="inline" xml:id="C12.S11.SS2.p1.m3">\operatorname{ph}z=\frac{3}{4}\pi</Math> as <Math mode="inline" xml:id="C12.S11.SS2.p1.m4">z\to\infty</Math> , and a conjugate string.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="143" xml:id="C12.S11.SS2.p1.s2">
+When <Math mode="inline" xml:id="C12.S11.SS2.p1.m5">a&gt;-\frac{1}{2}</Math> the zeros are asymptotically given by <Math mode="inline" xml:id="C12.S11.SS2.p1.m6">z_{a,s}</Math> and <Math mode="inline" xml:id="C12.S11.SS2.p1.m7">\overline{z_{a,s}}</Math> , where <Math mode="inline" xml:id="C12.S11.SS2.p1.m8">s</Math> is a large positive integer and <Math equation-number="12.11.1" mode="display" xml:id="C12.S11.E1">z_{a,s}=e^{\frac{3}{4}\pi i}\sqrt{2\tau_{s}}\left(1-\frac{ia\lambda_{s}}{2\tau _{s}}+\frac{2a^{2}\lambda_{s}^{2}-8a^{2}\lambda_{s}+4a^{2}+3}{16\tau_{s}^{2}}+ O\left(\lambda_{s}^{3}\tau_{s}^{-3}\right)\right),</Math> with <Math equation-number="12.11.2" mode="display" xml:id="C12.S11.E2">\tau_{s}=\left(2s+\tfrac{1}{2}-a\right)\pi+i\ln\left(\pi^{-\frac{1}{2}}2^{-a- \frac{1}{2}}\Gamma\left(\tfrac{1}{2}+a\right)\right),</Math> and <Math equation-number="12.11.3" mode="display" xml:id="C12.S11.E3">\lambda_{s}=\ln\tau_{s}-\tfrac{1}{2}\pi i</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C12.S11.SS2.p2.s1">
+When <Math mode="inline" xml:id="C12.S11.SS2.p2.m1">a=\tfrac{1}{2}</Math> these zeros are the same as the zeros of the complementary error function <Math mode="inline" xml:id="C12.S11.SS2.p2.m2">\operatorname{erfc}(z/\sqrt{2})</Math> ; compare (LABEL:eq:PC.SV.S5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="145" xml:id="C12.S11.SS2.p2.s2">
+Numerical calculations in this case show that <Math mode="inline" xml:id="C12.S11.SS2.p2.m3">z_{\frac{1}{2},s}</Math> corresponds to the <Math mode="inline" xml:id="C12.S11.SS2.p2.m4">s</Math> th zero on the string; compare §LABEL:sec:ER.ZE.EC.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S11.SS3">
+<title>Asymptotic Expansions for Large Parameter</title>          
+<para xml:id="C12.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C12.S11.SS3.p1.s1">
+For large negative values of <Math mode="inline" xml:id="C12.S11.SS3.p1.m1">a</Math> the real zeros of <Math mode="inline" xml:id="C12.S11.SS3.p1.m2">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m3">U'\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m4">V\left(a,x\right)</Math> , and <Math mode="inline" xml:id="C12.S11.SS3.p1.m5">V'\left(a,x\right)</Math> can be approximated by reversion of the Airy-type asymptotic expansions of §§LABEL:sec:PC.UA.L7 and LABEL:sec:PC.UA.L8.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="147" xml:id="C12.S11.SS3.p1.s2">
+For example, let the <Math mode="inline" xml:id="C12.S11.SS3.p1.m6">s</Math> th real zeros of <Math mode="inline" xml:id="C12.S11.SS3.p1.m7">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S11.SS3.p1.m8">U'\left(a,x\right)</Math> , counted in descending order away from the point <Math mode="inline" xml:id="C12.S11.SS3.p1.m9">z=2\sqrt{-a}</Math> , be denoted by <Math mode="inline" xml:id="C12.S11.SS3.p1.m10">u_{a,s}</Math> and <Math mode="inline" xml:id="C12.S11.SS3.p1.m11">u^{\prime}_{a,s}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="148" xml:id="C12.S11.SS3.p1.s3">
+Then <Math equation-number="12.11.4" mode="display" xml:id="C12.S11.E4">u_{a,s}\sim 2^{\frac{1}{2}}\mu\left(p_{0}(\alpha)+\frac{p_{1}(\alpha)}{\mu^{4} }+\frac{p_{2}(\alpha)}{\mu^{8}}+\cdots\right),</Math> as <Math mode="inline" xml:id="C12.S11.SS3.p1.m12">\mu</Math> ( <Math mode="inline" xml:id="C12.S11.SS3.p1.m13">=\sqrt{-2a}</Math> ) <Math mode="inline" xml:id="C12.S11.SS3.p1.m14">\to\infty</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m15">s</Math> fixed. Here <Math mode="inline" xml:id="C12.S11.SS3.p1.m16">\alpha=\mu^{-\frac{4}{3}}a_{s}</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p1.m17">a_{s}</Math> denoting the <Math mode="inline" xml:id="C12.S11.SS3.p1.m18">s</Math> th negative zero of the function <Math mode="inline" xml:id="C12.S11.SS3.p1.m19">\mathrm{Ai}</Math> (see §LABEL:sec:AI.ZE.ID).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="149" xml:id="C12.S11.SS3.p1.s4">
+The first two coefficients are given by <Math equation-number="12.11.5" mode="display" xml:id="C12.S11.E5">p_{0}(\zeta)=t(\zeta),</Math> where <Math mode="inline" xml:id="C12.S11.SS3.p1.m20">t(\zeta)</Math> is the function inverse to <Math mode="inline" xml:id="C12.S11.SS3.p1.m21">\zeta(t)</Math> , defined by (LABEL:eq:PC.UA.A5) (see also (LABEL:eq:PC.UA.A7)), and <Math equation-number="12.11.6" mode="display" xml:id="C12.S11.E6">p_{1}(\zeta)=\frac{t^{3}-6t}{24(t^{2}-1)^{2}}+\frac{5}{48((t^{2}-1)\zeta^{3})^ {\frac{1}{2}}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C12.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C12.S11.SS3.p2.s1">
+Similarly, for the zeros of <Math mode="inline" xml:id="C12.S11.SS3.p2.m1">U'\left(a,x\right)</Math> we have <Math equation-number="12.11.7" mode="display" xml:id="C12.S11.E7">u^{\prime}_{a,s}\sim 2^{\frac{1}{2}}\mu\left(q_{0}(\beta)+\frac{q_{1}(\beta)}{ \mu^{4}}+\frac{q_{2}(\beta)}{\mu^{8}}+\cdots\right),</Math> where <Math mode="inline" xml:id="C12.S11.SS3.p2.m2">\beta=\mu^{-\frac{4}{3}}a^{\prime}_{s}</Math> , <Math mode="inline" xml:id="C12.S11.SS3.p2.m3">a^{\prime}_{s}</Math> denoting the <Math mode="inline" xml:id="C12.S11.SS3.p2.m4">s</Math> th negative zero of the function <Math mode="inline" xml:id="C12.S11.SS3.p2.m5">\mathrm{Ai}'</Math> and <Math equation-number="12.11.8" mode="display" xml:id="C12.S11.E8">q_{0}(\zeta)=t(\zeta)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C12.S11.SS3.p3.s1">
+For the first zero of <Math mode="inline" xml:id="C12.S11.SS3.p3.m1">U\left(a,x\right)</Math> we also have <Math equation-number="12.11.9" mode="display" xml:id="C12.S11.E9">u_{a,1}\sim 2^{\frac{1}{2}}\mu\left(1-1.85575\;708\mu^{-4/3}-0.34438\;34\mu^{- 8/3}-0.16871\;5\mu^{-4}-0.11414\mu^{-16/3}-0.0808\mu^{-20/3}-\cdots\right)</Math> , where the numerical coefficients have been rounded off.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C12.S11.SS3.p4.s1">
+For further information, including associated functions, see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S12">
+<title>Integrals</title>        
+ 
+ 
+<para xml:id="C12.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C12.S12.p1.s1">
+ <Math equation-number="12.12.1" mode="display" xml:id="C12.S12.E1">\int_{0}^{\infty}e^{-\frac{1}{4}t^{2}}t^{\mu-1}U\left(a,t\right)\mathrm{d}t= \frac{\sqrt{\pi}2^{-\frac{1}{2}(\mu+a+\frac{1}{2})}\Gamma\left(\mu\right)}{ \Gamma\left(\frac{1}{2}(\mu+a+\frac{3}{2})\right)}, subject to \Re\mu&gt;0 ,</Math> <Math equation-number="12.12.2" mode="display" xml:id="C12.S12.E2">\int_{0}^{\infty}e^{-\frac{3}{4}t^{2}}t^{-a-\frac{3}{2}}U\left(a,t\right) \mathrm{d}t=2^{\frac{1}{4}+\frac{1}{2}a}\Gamma\left(-a-\tfrac{1}{2}\right)\cos \left((\tfrac{1}{4}a+\tfrac{1}{8})\pi\right), subject to \Re a&lt;-\tfrac{1}{2},</Math> <Math equation-number="12.12.3" mode="display" xml:id="C12.S12.E3">\int_{0}^{\infty}e^{-\frac{1}{4}t^{2}}t^{-a-\frac{1}{2}}(x^{2}+t^{2})^{-1}U \left(a,t\right)\mathrm{d}t=\sqrt{\pi/2}\Gamma\left(\tfrac{1}{2}-a\right)x^{-a -\frac{3}{2}}e^{\frac{1}{4}x^{2}}U\left(-a,x\right), subject to \Re a&lt;\tfrac{1}{2},x&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C12.S12.Px1">
+<title>Nicholson-type Integral</title>     
+<para xml:id="C12.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C12.S12.Px1.p1.s1">
+ <Math equation-number="12.12.4" mode="display" xml:id="C12.S12.E4">(U\left(a,z\right))^{2}+(\overline{U}\left(a,z\right))^{2}=\frac{2^{\frac{3}{2 }}}{\pi}\Gamma\left(\tfrac{1}{2}-a\right)\int_{0}^{\infty}\frac{e^{2at+\frac{1 }{2}z^{2}\tanh t}}{\sqrt{\sinh\left(2t\right)}}\mathrm{d}t, subject to \Re a&lt;\tfrac{1}{2} .</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C12.S12.Px1.p1.s2">
+When <Math mode="inline" xml:id="C12.S12.Px1.p1.m1">z</Math> <Math mode="inline" xml:id="C12.S12.Px1.p1.m2">(=x)</Math> is real the left-hand side equals <Math mode="inline" xml:id="C12.S12.Px1.p1.m3">(F(a,x))^{2}</Math> ; compare (LABEL:eq:PC.2.18).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C12.S12.Px1.p2.s1">
+For further integrals see §§LABEL:sec:CH.MU.IN, LABEL:sec:CH.KM.IN, and use (LABEL:eq:PC.RO.K3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S12.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C12.S12.Px1.p3.s1">
+For compendia of integrals see ( , v. 2, pp. 121–122) , ( , v. 1, pp. 60–61, 115, 210–211, and 336; v. 2, pp. 76–80, 115, 151, 171, and 395–398) , ( , §7.7) , ( , pp. 330–331) , ( , pp. 190–191) , ( , pp. 144–145) , ( , pp. 106–108 and 192) , ( , pp. 181–185) , ( , pp. 36–37, 155–168, 243–246, 289–290, 327–328, 419–420, and 619) , ( , §3.11) , and ( , §3.11) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S12.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C12.S12.Px1.p4.s1">
+See also ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C12.S13">
+<title>Sums</title>        
+  
+<subsection xml:id="C12.S13.SS1">
+<title>Addition Theorems</title>        
+ 
+ 
+<para xml:id="C12.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="159" xml:id="C12.S13.SS1.p1.s1">
+ <Math equation-number="12.13.1" mode="display" xml:id="C12.S13.E1">U\left(a,x+y\right)=e^{\frac{1}{2}xy+\frac{1}{4}y^{2}}\sum_{m=0}^{\infty}\frac {(-y)^{m}}{m!}U\left(a-m,x\right)</Math> , <Math equation-number="12.13.2" mode="display" xml:id="C12.S13.E2">U\left(a,x+y\right)=e^{-\frac{1}{2}xy-\frac{1}{4}y^{2}}\sum_{m=0}^{\infty} \genfrac{(}{)}{0.0pt}{}{-a-\tfrac{1}{2}}{m}y^{m}U\left(a+m,x\right)</Math> , <Math equation-number="12.13.3" mode="display" xml:id="C12.S13.E3">V\left(a,x+y\right)=e^{\frac{1}{2}xy+\frac{1}{4}y^{2}}\sum_{m=0}^{\infty} \genfrac{(}{)}{0.0pt}{}{a-\tfrac{1}{2}}{m}y^{m}V\left(a-m,x\right)</Math> , <Math equation-number="12.13.4" mode="display" xml:id="C12.S13.E4">V\left(a,x+y\right)=e^{-\frac{1}{2}xy-\frac{1}{4}y^{2}}\sum_{m=0}^{\infty} \frac{y^{m}}{m!}V\left(a+m,x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="160" xml:id="C12.S13.SS1.p1.s2">
+<Math equation-number="12.13.5" mode="display" xml:id="C12.S13.E5">U\left(a,x\cos t+y\sin t\right)\\ =e^{\frac{1}{4}(x\sin t-y\cos t)^{2}}\*\sum_{m=0}^{\infty}\genfrac{(}{)}{0.0pt }{}{-a-\tfrac{1}{2}}{m}(\tan t)^{m}U\left(m+a,x\right)U\left(-m-\tfrac{1}{2},y \right), subject to \Re a\leq-\tfrac{1}{2},0\leq t\leq\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="161" xml:id="C12.S13.SS1.p1.s3">
+<Math equation-number="12.13.6" mode="display" xml:id="C12.S13.E6">n!U\left(n+\tfrac{1}{2},z\right)=i^{n}e^{-\frac{1}{2}z^{2}}\operatorname{erfc} (z/\sqrt{2})U\left(-n-\tfrac{1}{2},iz\right)+\sum_{m=1}^{\left\lfloor\frac{1}{ 2}n+\frac{1}{2}\right\rfloor}U\left(2m-n-\tfrac{1}{2},z\right), subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="162" xml:id="C12.S13.SS1.p1.s4">
+For <Math mode="inline" xml:id="C12.S13.SS1.p1.m1">\operatorname{erfc}</Math> see §LABEL:sec:ER.DF.ER.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S13.SS2">
+<title>Other Series</title>         
+<para xml:id="C12.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C12.S13.SS2.p1.s1">
+For other series see ( ) , ( , pp. 421–422) , ( ) , ( ) , ( , p. 651) , ( ) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S14">
+<title>The Function <Math content-tex="\paraW@{a}{x}" mode="inline" xml:id="C12.S14.m1">W\left(a,x\right)</Math></title>        
+  
+ 
+<subsection xml:id="C12.S14.SS1">
+<title>Introduction</title>        
+  
+<para xml:id="C12.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C12.S14.SS1.p1.s1">
+In this section solutions of equation (LABEL:eq:PC.DE.D3) are considered. This equation is important when <Math mode="inline" xml:id="C12.S14.SS1.p1.m2">a</Math> and <Math mode="inline" xml:id="C12.S14.SS1.p1.m3">z</Math> <Math mode="inline" xml:id="C12.S14.SS1.p1.m4">(=x)</Math> are real, and we shall assume this to be the case.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C12.S14.SS1.p1.s2">
+In other cases the general theory of (LABEL:eq:PC.DE.D2) is available.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="166" xml:id="C12.S14.SS1.p1.s3">
+<Math mode="inline" xml:id="C12.S14.SS1.p1.m5">W\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S14.SS1.p1.m6">W\left(a,-x\right)</Math> form a numerically satisfactory pair of solutions when <Math mode="inline" xml:id="C12.S14.SS1.p1.m7">-\infty&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS2">
+<title>Values at <Math mode="inline" xml:id="C12.S14.SS2.m1">z=0</Math> and Wronskian</title>        
+   
+<para xml:id="C12.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C12.S14.SS2.p1.s1">
+ <Math equation-number="12.14.1" mode="display" xml:id="C12.S14.E1">W\left(a,0\right)=2^{-\frac{3}{4}}\left|\frac{\Gamma\left(\tfrac{1}{4}+\tfrac{ 1}{2}ia\right)}{\Gamma\left(\tfrac{3}{4}+\tfrac{1}{2}ia\right)}\right|^{\frac{ 1}{2}},</Math> <Math equation-number="12.14.2" mode="display" xml:id="C12.S14.E2">W'\left(a,0\right)=-2^{-\frac{1}{4}}\left|\frac{\Gamma\left(\tfrac{3}{4}+ \tfrac{1}{2}ia\right)}{\Gamma\left(\tfrac{1}{4}+\tfrac{1}{2}ia\right)}\right|^ {\frac{1}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="168" xml:id="C12.S14.SS2.p1.s2">
+<Math equation-number="12.14.3" mode="display" xml:id="C12.S14.E3">\mathscr{W}\left\{W\left(a,x\right),W\left(a,-x\right)\right\}=1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS3">
+<title>Graphs</title>        
+  
+<para xml:id="C12.S14.SS3.p1">
+
+</para>
+ 
+<para xml:id="C12.S14.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C12.S14.SS3.p2.s1">
+For the modulus functions <Math mode="inline" xml:id="C12.S14.SS3.p2.m1">\widetilde{F}(a,x)</Math> and <Math mode="inline" xml:id="C12.S14.SS3.p2.m2">\widetilde{G}(a,x)</Math> see §LABEL:sec:PC.EW.MP.
+</sentence>
+
+</para>
+            
+<sentence sentence-num-in-section="170" xml:id="C12.S14.F1.s1">
+Figure 12.14.1: <Math mode="inline" xml:id="C12.S14.F1.m5">k^{-\ifrac{1}{2}}W\left(3,x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F1.m6">k^{\ifrac{1}{2}}W\left(3,-x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F1.m7">\widetilde{F}(3,x)</Math> , <Math mode="inline" xml:id="C12.S14.F1.m8">0\leq x\leq 8</Math> .
+</sentence>           
+<sentence sentence-num-in-section="171" xml:id="C12.S14.F2.s1">
+Figure 12.14.2: <Math mode="inline" xml:id="C12.S14.F2.m5">k^{-\ifrac{1}{2}}W'\left(3,x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F2.m6">k^{\ifrac{1}{2}}W'\left(3,-x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F2.m7">\widetilde{G}(3,x)</Math> , <Math mode="inline" xml:id="C12.S14.F2.m8">0\leq x\leq 8</Math> .
+</sentence>  
+           
+<sentence sentence-num-in-section="172" xml:id="C12.S14.F3.s1">
+Figure 12.14.3: <Math mode="inline" xml:id="C12.S14.F3.m5">k^{-\ifrac{1}{2}}W\left(-3,x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F3.m6">k^{\ifrac{1}{2}}W\left(-3,-x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F3.m7">\widetilde{F}(-3,x)</Math> , <Math mode="inline" xml:id="C12.S14.F3.m8">0\leq x\leq 8</Math> .
+</sentence>           
+<sentence sentence-num-in-section="173" xml:id="C12.S14.F4.s1">
+Figure 12.14.4: <Math mode="inline" xml:id="C12.S14.F4.m4">k^{-\ifrac{1}{2}}W'\left(-3,x\right),k^{\ifrac{1}{2}}W'\left(-3,-x\right)</Math> , <Math mode="inline" xml:id="C12.S14.F4.m5">\widetilde{G}(-3,x)</Math> , <Math mode="inline" xml:id="C12.S14.F4.m6">0\leq x\leq 8</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS4">
+<title>Connection Formula</title>        
+  
+<para xml:id="C12.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C12.S14.SS4.p1.s1">
+ <Math equation-number="12.14.4" mode="display" xml:id="C12.S14.E4">W\left(a,x\right)=\sqrt{k/2}\,e^{\frac{1}{4}\pi a}\left(e^{i\rho}U\left(ia,xe^ {-\pi i/4}\right)+e^{-i\rho}U\left(-ia,xe^{\pi i/4}\right)\right),</Math> where <Math equation-number="12.14.5" mode="display" xml:id="C12.S14.E5">k=\sqrt{1+e^{2\pi a}}-e^{\pi a}, 1/k=\sqrt{1+e^{2\pi a}}+e^{\pi a},</Math> <Math equation-number="12.14.6" mode="display" xml:id="C12.S14.E6">\rho=\tfrac{1}{8}\pi+\tfrac{1}{2}\phi_{2},</Math> <Math equation-number="12.14.7" mode="display" xml:id="C12.S14.E7">\phi_{2}=\operatorname{ph}\Gamma\left(\tfrac{1}{2}+ia\right),</Math> the branch of <Math mode="inline" xml:id="C12.S14.SS4.p1.m1">\operatorname{ph}</Math> being zero when <Math mode="inline" xml:id="C12.S14.SS4.p1.m2">a=0</Math> and defined by continuity elsewhere.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS5">
+<title>Power-Series Expansions</title>        
+  
+<para xml:id="C12.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C12.S14.SS5.p1.s1">
+ <Math equation-number="12.14.8" mode="display" xml:id="C12.S14.E8">W\left(a,x\right)=W\left(a,0\right)w_{1}(a,x)+W'\left(a,0\right)w_{2}(a,x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="176" xml:id="C12.S14.SS5.p1.s2">
+Here <Math mode="inline" xml:id="C12.S14.SS5.p1.m1">w_{1}(a,x)</Math> and <Math mode="inline" xml:id="C12.S14.SS5.p1.m2">w_{2}(a,x)</Math> are the even and odd solutions of (LABEL:eq:PC.DE.D3): <Math equation-number="12.14.9" mode="display" xml:id="C12.S14.E9">w_{1}(a,x)=\sum_{n=0}^{\infty}\alpha_{n}(a)\frac{x^{2n}}{(2n)!}</Math> , <Math equation-number="12.14.10" mode="display" xml:id="C12.S14.E10">w_{2}(a,x)=\sum_{n=0}^{\infty}\beta_{n}(a)\frac{x^{2n+1}}{(2n+1)!}</Math> , where <Math mode="inline" xml:id="C12.S14.SS5.p1.m3">\alpha_{n}(a)</Math> and <Math mode="inline" xml:id="C12.S14.SS5.p1.m4">\beta_{n}(a)</Math> satisfy the recursion relations <Math equation-number="12.14.11" mode="display" xml:id="C12.S14.E11">\alpha_{n+2}=a\alpha_{n+1}-\tfrac{1}{2}(n+1)(2n+1)\alpha_{n}, \beta_{n+2}=a\beta_{n+1}-\tfrac{1}{2}(n+1)(2n+3)\beta_{n},</Math> with <Math equation-number="12.14.12" mode="display" xml:id="C12.S14.E12">\alpha_{0}(a)=1, \alpha_{1}(a)=a, \beta_{0}(a)=1, \beta_{1}(a)=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S14.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C12.S14.SS5.p2.s1">
+Other expansions, involving <Math mode="inline" xml:id="C12.S14.SS5.p2.m1">\cos\left(\tfrac{1}{4}x^{2}\right)</Math> and <Math mode="inline" xml:id="C12.S14.SS5.p2.m2">\sin\left(\tfrac{1}{4}x^{2}\right)</Math> , can be obtained from (LABEL:eq:PC.SM.M3) to (LABEL:eq:PC.SM.M6) by replacing <Math mode="inline" xml:id="C12.S14.SS5.p2.m3">a</Math> by <Math mode="inline" xml:id="C12.S14.SS5.p2.m4">-ia</Math> and <Math mode="inline" xml:id="C12.S14.SS5.p2.m5">z</Math> by <Math mode="inline" xml:id="C12.S14.SS5.p2.m6">xe^{\ifrac{\pi i}{4}}</Math> ; see ( , p. 80) , and also (LABEL:eq:PC.EW.W12) and (LABEL:eq:PC.EW.W13).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS6">
+<title>Integral Representations</title>        
+  
+<para xml:id="C12.S14.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C12.S14.SS6.p1.s1">
+These follow from the contour integrals of §LABEL:sec:PC.IR.CI, which arevalid for general complex values of the argument <Math mode="inline" xml:id="C12.S14.SS6.p1.m1">z</Math> and parameter <Math mode="inline" xml:id="C12.S14.SS6.p1.m2">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="179" xml:id="C12.S14.SS6.p1.s2">
+See ( , p. 26) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS7">
+<title>Relations to Other Functions</title>        
+ 
+<paragraph xml:id="C12.S14.Px1">
+<title>Bessel Functions</title>     
+<para xml:id="C12.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C12.S14.Px1.p1.s1">
+For the notation see §LABEL:sec:BS.DEF.SS. When <Math mode="inline" xml:id="C12.S14.Px1.p1.m1">x&gt;0</Math> <Math equation-number="12.14.13" mode="display" xml:id="C12.S14.E13">W\left(0,\pm x\right)=2^{-\frac{5}{4}}\sqrt{\pi x}\left(J_{-\frac{1}{4}}\left( \tfrac{1}{4}x^{2}\right)\mp J_{\frac{1}{4}}\left(\tfrac{1}{4}x^{2}\right) \right),</Math> <Math equation-number="12.14.14" mode="display" xml:id="C12.S14.E14">\frac{\mathrm{d}}{\mathrm{d}x}W\left(0,\pm x\right)=-2^{-\frac{9}{4}}x\sqrt{ \pi x}\left(J_{\frac{3}{4}}\left(\tfrac{1}{4}x^{2}\right)\pm J_{-\frac{3}{4}} \left(\tfrac{1}{4}x^{2}\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C12.S14.Px2">
+<title>Confluent Hypergeometric Functions</title>     
+<para xml:id="C12.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C12.S14.Px2.p1.s1">
+For the notation see §LABEL:sec:CH.MU.DE.KU.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S14.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C12.S14.Px2.p2.s1">
+The even and odd solutions of (LABEL:eq:PC.DE.D3) (see §LABEL:sec:PC.EW.MS) are given by
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S14.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C12.S14.Px2.p3.s1">
+ <Math equation-number="12.14.15" mode="display" xml:id="C12.S14.E15">w_{1}(a,x)=e^{-\frac{1}{4}ix^{2}}M\left(\tfrac{1}{4}-\tfrac{1}{2}ia,\tfrac{1}{ 2},\tfrac{1}{2}ix^{2}\right)=e^{\frac{1}{4}ix^{2}}M\left(\tfrac{1}{4}+\tfrac{1 }{2}ia,\tfrac{1}{2},-\tfrac{1}{2}ix^{2}\right),</Math> <Math equation-number="12.14.16" mode="display" xml:id="C12.S14.E16">w_{2}(a,x)=xe^{-\frac{1}{4}ix^{2}}M\left(\tfrac{3}{4}-\tfrac{1}{2}ia,\tfrac{3} {2},\tfrac{1}{2}ix^{2}\right)=xe^{\frac{1}{4}ix^{2}}M\left(\tfrac{3}{4}+\tfrac {1}{2}ia,\tfrac{3}{2},-\tfrac{1}{2}ix^{2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS8">
+<title>Asymptotic Expansions for Large Variable</title>        
+  
+<para xml:id="C12.S14.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C12.S14.SS8.p1.s1">
+Write <Math equation-number="12.14.17" mode="display" xml:id="C12.S14.E17">W\left(a,x\right)=\sqrt{\frac{2k}{x}}\left(s_{1}(a,x)\cos\omega-s_{2}(a,x)\sin \omega\right),</Math> <Math equation-number="12.14.18" mode="display" xml:id="C12.S14.E18">W\left(a,-x\right)=\sqrt{\frac{2}{kx}}\left(s_{1}(a,x)\sin\omega+s_{2}(a,x) \cos\omega\right),</Math> where <Math equation-number="12.14.19" mode="display" xml:id="C12.S14.E19">\omega=\tfrac{1}{4}x^{2}-a\ln x+\tfrac{1}{4}\pi+\tfrac{1}{2}\phi_{2},</Math> with <Math mode="inline" xml:id="C12.S14.SS8.p1.m1">\phi_{2}</Math> given by (LABEL:eq:PC.EW.W7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="185" xml:id="C12.S14.SS8.p1.s2">
+Then as <Math mode="inline" xml:id="C12.S14.SS8.p1.m2">x\to\infty</Math> <Math equation-number="12.14.20" mode="display" xml:id="C12.S14.E20">s_{1}(a,x)\sim 1+\frac{d_{2}}{1!2x^{2}}-\frac{c_{4}}{2!2^{2}x^{4}}-\frac{d_{6} }{3!2^{3}x^{6}}+\frac{c_{8}}{4!2^{4}x^{8}}+\cdots</Math> , <Math equation-number="12.14.21" mode="display" xml:id="C12.S14.E21">s_{2}(a,x)\sim-\frac{c_{2}}{1!2x^{2}}-\frac{d_{4}}{2!2^{2}x^{4}}+\frac{c_{6}}{ 3!2^{3}x^{6}}+\frac{d_{8}}{4!2^{4}x^{8}}-\cdots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="186" xml:id="C12.S14.SS8.p1.s3">
+The coefficients <Math mode="inline" xml:id="C12.S14.SS8.p1.m3">c_{2r}</Math> and <Math mode="inline" xml:id="C12.S14.SS8.p1.m4">d_{2r}</Math> are obtainable by equating real and imaginary parts in <Math equation-number="12.14.22" mode="display" xml:id="C12.S14.E22">c_{2r}+id_{2r}=\frac{\Gamma\left(2r+\tfrac{1}{2}+ia\right)}{\Gamma\left(\tfrac {1}{2}+ia\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="187" xml:id="C12.S14.SS8.p1.s4">
+Equivalently, <Math equation-number="12.14.23" mode="display" xml:id="C12.S14.E23">s_{1}(a,x)+is_{2}(a,x)\sim\sum_{r=0}^{\infty}(-i)^{r}\frac{{\left(\tfrac{1}{2} +ia\right)_{2r}}}{2^{r}r!x^{2r}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS9">
+<title>Uniform Asymptotic Expansions for Large Parameter</title>        
+  
+<para xml:id="C12.S14.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C12.S14.SS9.p1.s1">
+The differential equation <Math equation-number="12.14.24" mode="display" xml:id="C12.S14.E24">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}t}^{2}}=\mu^{4}(1-t^{2})w</Math> follows from (LABEL:eq:PC.DE.D3), and has solutions <Math mode="inline" xml:id="C12.S14.SS9.p1.m1">W\left(\tfrac{1}{2}\mu^{2},\pm\mu t\sqrt{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="189" xml:id="C12.S14.SS9.p1.s2">
+For real <Math mode="inline" xml:id="C12.S14.SS9.p1.m2">\mu</Math> and <Math mode="inline" xml:id="C12.S14.SS9.p1.m3">t</Math> oscillations occur outside the <Math mode="inline" xml:id="C12.S14.SS9.p1.m4">t</Math> -interval <Math mode="inline" xml:id="C12.S14.SS9.p1.m5">[-1,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="190" xml:id="C12.S14.SS9.p1.s3">
+Airy-type uniform asymptotic expansions can be used to include either one of the turning points <Math mode="inline" xml:id="C12.S14.SS9.p1.m6">\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="191" xml:id="C12.S14.SS9.p1.s4">
+In the following expansions, obtained from ( ) , <Math mode="inline" xml:id="C12.S14.SS9.p1.m7">\mu</Math> is large and positive, and <Math mode="inline" xml:id="C12.S14.SS9.p1.m8">\delta</Math> is again an arbitrary small positive constant.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C12.S14.Px3">
+<title>Positive <Math mode="inline" xml:id="C12.S14.Px3.m1">a</Math>, <Math mode="inline" xml:id="C12.S14.Px3.m2">2\sqrt{a}&lt;x&lt;\infty</Math></title>   
+ 
+<para xml:id="C12.S14.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="192" xml:id="C12.S14.Px3.p1.s1">
+ <Math equation-number="12.14.25" mode="display" xml:id="C12.S14.E25">W\left(\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{2^{-\frac{1}{2}}e^{- \frac{1}{4}\pi\mu^{2}}l(\mu)}{(t^{2}-1)^{\frac{1}{4}}}\left(\cos\sigma\sum_{s= 0}^{\infty}(-1)^{s}\frac{{\cal{A}}_{2s}(t)}{\mu^{4s}}-\sin\sigma\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\cal{A}}_{2s+1}(t)}{\mu^{4s+2}}\right),</Math> <Math equation-number="12.14.26" mode="display" xml:id="C12.S14.E26">W\left(\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)\sim\frac{2^{\frac{1}{2}}e^{ \frac{1}{4}\pi\mu^{2}}l(\mu)}{(t^{2}-1)^{\frac{1}{4}}}\left(\sin\sigma\sum_{s= 0}^{\infty}(-1)^{s}\frac{{\cal{A}}_{2s}(t)}{\mu^{4s}}+\cos\sigma\sum_{s=0}^{ \infty}(-1)^{s}\frac{{\cal{A}}_{2s+1}(t)}{\mu^{4s+2}}\right),</Math> uniformly for <Math mode="inline" xml:id="C12.S14.Px3.p1.m1">t\in[1+\delta,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="193" xml:id="C12.S14.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C12.S14.Px3.p1.m2">{\cal{A}}_{s}(t)</Math> is as in §LABEL:sec:PC.UA.L2, <Math mode="inline" xml:id="C12.S14.Px3.p1.m3">\sigma</Math> is defined by <Math equation-number="12.14.27" mode="display" xml:id="C12.S14.E27">\sigma=\mu^{2}\xi+\tfrac{1}{4}\pi,</Math> with <Math mode="inline" xml:id="C12.S14.Px3.p1.m4">\xi</Math> given by (LABEL:eq:PC.UA.U5), and <Math equation-number="12.14.28" mode="display" xml:id="C12.S14.E28">l(\mu)=\sqrt{2}e^{\frac{1}{8}\pi\mu^{2}}e^{i(\frac{1}{2}\phi_{2}-\frac{1}{8} \pi)}g(\mu e^{-\frac{1}{4}\pi i}),</Math> with <Math mode="inline" xml:id="C12.S14.Px3.p1.m5">g(\mu)</Math> as in §LABEL:sec:PC.UA.L2.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="194" xml:id="C12.S14.Px3.p1.s3">
+The function <Math mode="inline" xml:id="C12.S14.Px3.p1.m6">l(\mu)</Math> has the asymptotic expansion <Math equation-number="12.14.29" mode="display" xml:id="C12.S14.E29">l(\mu)\sim\frac{2^{\frac{1}{4}}}{\mu^{\frac{1}{2}}}\sum_{s=0}^{\infty}\frac{l_ {s}}{\mu^{4s}},</Math> with <Math equation-number="12.14.30" mode="display" xml:id="C12.S14.E30">l_{0}=1, l_{1}=-\tfrac{1}{1152}, l_{2}=-\tfrac{16123}{398\;13120}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C12.S14.Px4">
+<title>Positive <Math mode="inline" xml:id="C12.S14.Px4.m1">a</Math>, <Math mode="inline" xml:id="C12.S14.Px4.m2">-2\sqrt{a}&lt;x&lt;2\sqrt{a}</Math></title>  
+ 
+<para xml:id="C12.S14.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C12.S14.Px4.p1.s1">
+ <Math equation-number="12.14.31" mode="display" xml:id="C12.S14.E31">W\left(\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{l(\mu)e^{\mu^{2}\eta} }{2^{\frac{1}{2}}e^{\frac{1}{4}\pi\mu^{2}}(1-t^{2})^{\frac{1}{4}}}\*\sum_{s=0} ^{\infty}(-1)^{s}\frac{\widetilde{\cal{A}}_{s}(t)}{\mu^{2s}},</Math> uniformly for <Math mode="inline" xml:id="C12.S14.Px4.p1.m1">t\in[-1+\delta,1-\delta]</Math> , with <Math mode="inline" xml:id="C12.S14.Px4.p1.m2">\eta</Math> given by (LABEL:eq:PC.UA.U24) and <Math mode="inline" xml:id="C12.S14.Px4.p1.m3">{\widetilde{\cal A}}_{s}(t)</Math> given by (LABEL:eq:PC.UA.U24a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S14.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C12.S14.Px4.p2.s1">
+The expansions for the derivatives corresponding to (LABEL:eq:PC.EW.W24), (LABEL:eq:PC.EW.W25), and (LABEL:eq:PC.EW.W29) may be obtained by formal term-by-term differentiation with respect to <Math mode="inline" xml:id="C12.S14.Px4.p2.m1">t</Math> ; compare the analogous results in §§LABEL:sec:PC.UA.L2–LABEL:sec:PC.UA.L5.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C12.S14.Px5">
+<title>Airy-type Uniform Expansions</title>   
+ 
+<para xml:id="C12.S14.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="197" xml:id="C12.S14.Px5.p1.s1">
+ <Math equation-number="12.14.32" mode="display" xml:id="C12.S14.E32">W\left(\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{\pi^{\frac{1}{2}}\mu^ {\frac{1}{3}}l(\mu)}{2^{\frac{1}{2}}e^{\frac{1}{4}\pi\mu^{2}}}\phi(\zeta)\left (\mathrm{Bi}\left(-\mu^{\frac{4}{3}}\zeta\right)\sum_{s=0}^{\infty}(-1)^{s} \frac{A_{s}(\zeta)}{\mu^{4s}}+\frac{\mathrm{Bi}'\left(-\mu^{\frac{4}{3}}\zeta \right)}{\mu^{\frac{8}{3}}}\sum_{s=0}^{\infty}(-1)^{s}\frac{B_{s}(\zeta)}{\mu^ {4s}}\right),</Math> , <Math equation-number="12.14.33" mode="display" xml:id="C12.S14.E33">W\left(\tfrac{1}{2}\mu^{2},-\mu t\sqrt{2}\right)\sim\frac{\pi^{\frac{1}{2}}\mu ^{\frac{1}{3}}l(\mu)}{2^{-\frac{1}{2}}e^{-\frac{1}{4}\pi\mu^{2}}}\phi(\zeta) \left(\mathrm{Ai}\left(-\mu^{\frac{4}{3}}\zeta\right)\sum_{s=0}^{\infty}(-1)^{ s}\frac{A_{s}(\zeta)}{\mu^{4s}}+\frac{\mathrm{Ai}'\left(-\mu^{\frac{4}{3}} \zeta\right)}{\mu^{\frac{8}{3}}}\sum_{s=0}^{\infty}(-1)^{s}\frac{B_{s}(\zeta)} {\mu^{4s}}\right),</Math> uniformly for <Math mode="inline" xml:id="C12.S14.Px5.p1.m1">t\in[-1+\delta,\infty)</Math> , with <Math mode="inline" xml:id="C12.S14.Px5.p1.m2">\zeta</Math> , <Math mode="inline" xml:id="C12.S14.Px5.p1.m3">\phi(\zeta)</Math> , <Math mode="inline" xml:id="C12.S14.Px5.p1.m4">A_{s}(\zeta)</Math> , and <Math mode="inline" xml:id="C12.S14.Px5.p1.m5">B_{s}(\zeta)</Math> as in §LABEL:sec:PC.UA.L7.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="198" xml:id="C12.S14.Px5.p1.s2">
+For the corresponding expansions for the derivatives see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C12.S14.Px6">
+<title>Negative <Math mode="inline" xml:id="C12.S14.Px6.m1">a</Math>, <Math mode="inline" xml:id="C12.S14.Px6.m2">-\infty&lt;x&lt;\infty</Math></title>   
+<para xml:id="C12.S14.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="199" xml:id="C12.S14.Px6.p1.s1">
+In this case there are no real turning points, and the solutions of (LABEL:eq:PC.DE.D3), with <Math mode="inline" xml:id="C12.S14.Px6.p1.m1">z</Math> replaced by <Math mode="inline" xml:id="C12.S14.Px6.p1.m2">x</Math> , oscillate on the entire real <Math mode="inline" xml:id="C12.S14.Px6.p1.m3">x</Math> -axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="200" xml:id="C12.S14.Px6.p1.s2">
+<Math equation-number="12.14.34" mode="display" xml:id="C12.S14.E34">W\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim\frac{l(\mu)}{(t^{2}+1)^{ \frac{1}{4}}}\left(\cos\overline{\sigma}\sum_{s=0}^{\infty}\frac{(-1)^{s} \overline{u}_{2s}(t)}{(t^{2}+1)^{3s}\mu^{4s}}-\sin\overline{\sigma}\sum_{s=0}^ {\infty}\frac{(-1)^{s}\overline{u}_{2s+1}(t)}{(t^{2}+1)^{3s+\frac{3}{2}}\mu^{4 s+2}}\right),</Math> , <Math equation-number="12.14.35" mode="display" xml:id="C12.S14.E35">W'\left(-\tfrac{1}{2}\mu^{2},\mu t\sqrt{2}\right)\sim-\frac{\mu}{\sqrt{2}}l( \mu)(t^{2}+1)^{\frac{1}{4}}\left(\sin\overline{\sigma}\sum_{s=0}^{\infty}\frac {(-1)^{s}\overline{v}_{2s}(t)}{(t^{2}+1)^{3s}\mu^{4s}}+\cos\overline{\sigma} \sum_{s=0}^{\infty}\frac{(-1)^{s}\overline{v}_{2s+1}(t)}{(t^{2}+1)^{3s+\frac{3 }{2}}\mu^{4s+2}}\right),</Math> uniformly for <Math mode="inline" xml:id="C12.S14.Px6.p1.m4">t\in\mathbb{R}</Math> , where <Math equation-number="12.14.36" mode="display" xml:id="C12.S14.E36">{\overline{\sigma}}=\mu^{2}{\overline{\xi}}+\tfrac{1}{4}\pi,</Math> and <Math mode="inline" xml:id="C12.S14.Px6.p1.m5">{\overline{\xi}}</Math> and the coefficients <Math mode="inline" xml:id="C12.S14.Px6.p1.m6">\overline{u}_{s}(t)</Math> and <Math mode="inline" xml:id="C12.S14.Px6.p1.m7">\overline{v}_{s}(t)</Math> as in §LABEL:sec:PC.UA.L5.
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS10">
+<title>Modulus and Phase Functions</title>        
+  
+<para xml:id="C12.S14.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C12.S14.SS10.p1.s1">
+As noted in §LABEL:sec:PC.EW.UA, when <Math mode="inline" xml:id="C12.S14.SS10.p1.m1">a</Math> is negative the solutions of (LABEL:eq:PC.DE.D3), with <Math mode="inline" xml:id="C12.S14.SS10.p1.m2">z</Math> replaced by <Math mode="inline" xml:id="C12.S14.SS10.p1.m3">x</Math> , are oscillatory on the whole real line; also, when <Math mode="inline" xml:id="C12.S14.SS10.p1.m4">a</Math> is positive there is a central interval <Math mode="inline" xml:id="C12.S14.SS10.p1.m5">-2\sqrt{a}&lt;x&lt;2\sqrt{a}</Math> in which the solutions are exponential in character.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="202" xml:id="C12.S14.SS10.p1.s2">
+In the oscillatory intervals we write
+</sentence>
+
+</para>
+            
+ 
+<para xml:id="C12.S14.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C12.S14.SS10.p2.s1">
+ <Math equation-number="12.14.37" mode="display" xml:id="C12.S14.E37">k^{-\ifrac{1}{2}}W\left(a,x\right)+ik^{\ifrac{1}{2}}W\left(a,-x\right)= \widetilde{F}(a,x)e^{i\widetilde{\theta}(a,x)},</Math> <Math equation-number="12.14.38" mode="display" xml:id="C12.S14.E38">k^{-\ifrac{1}{2}}W'\left(a,x\right)+ik^{\ifrac{1}{2}}W'\left(a,-x\right)=- \widetilde{G}(a,x)e^{i\widetilde{\psi}(a,x)},</Math> where <Math mode="inline" xml:id="C12.S14.SS10.p2.m1">k</Math> is defined in (LABEL:eq:PC.EW.W5), and <Math mode="inline" xml:id="C12.S14.SS10.p2.m2">\widetilde{F}(a,x)</Math> ( <Math mode="inline" xml:id="C12.S14.SS10.p2.m3">&gt;</Math> 0), <Math mode="inline" xml:id="C12.S14.SS10.p2.m4">\widetilde{\theta}(a,x)</Math> , <Math mode="inline" xml:id="C12.S14.SS10.p2.m5">\widetilde{G}(a,x)</Math> ( <Math mode="inline" xml:id="C12.S14.SS10.p2.m6">&gt;</Math> 0), and <Math mode="inline" xml:id="C12.S14.SS10.p2.m7">\widetilde{\psi}(a,x)</Math> are real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="204" xml:id="C12.S14.SS10.p2.s2">
+<Math mode="inline" xml:id="C12.S14.SS10.p2.m8">\widetilde{F}</Math> or <Math mode="inline" xml:id="C12.S14.SS10.p2.m9">\widetilde{G}</Math> is the modulus and <Math mode="inline" xml:id="C12.S14.SS10.p2.m10">\widetilde{\theta}</Math> or <Math mode="inline" xml:id="C12.S14.SS10.p2.m11">\widetilde{\psi}</Math> is the corresponding phase.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="205" xml:id="C12.S14.SS10.p2.s3">
+Compare §LABEL:sec:PC.SMP.2vi.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S14.SS10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="206" xml:id="C12.S14.SS10.p3.s1">
+For properties of the modulus and phase functions, including differential equations and asymptotic expansions for large <Math mode="inline" xml:id="C12.S14.SS10.p3.m1">x</Math> , see ( , pp. 87–88) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="207" xml:id="C12.S14.SS10.p3.s2">
+For graphs of the modulus functions see §LABEL:sec:PC.EW.WR.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S14.SS11">
+<title>Zeros of <Math content-tex="\paraW@{a}{x}" mode="inline" xml:id="C12.S14.SS11.m1">W\left(a,x\right)</Math>, <Math content-tex="\paraW'@{a}{x}" mode="inline" xml:id="C12.S14.SS11.m2">W'\left(a,x\right)</Math></title>        
+  
+<para xml:id="C12.S14.SS11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C12.S14.SS11.p1.s1">
+For asymptotic expansions of the zeros of <Math mode="inline" xml:id="C12.S14.SS11.p1.m1">W\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S14.SS11.p1.m2">W'\left(a,x\right)</Math> , see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C12.S15">
+<title>Generalized Parabolic Cylinder Functions</title>          
+<para xml:id="C12.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="209" xml:id="C12.S15.p1.s1">
+The equation <Math equation-number="12.15.1" mode="display" xml:id="C12.S15.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\nu+\lambda^{-1}-\lambda^{-2 }z^{\lambda}\right)w=0</Math> can be viewed as a generalization of (LABEL:eq:PC.DE.D4).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="210" xml:id="C12.S15.p1.s2">
+This equation arises in the study of non-self-adjoint elliptic boundary-value problems involving an indefinite weight function.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="211" xml:id="C12.S15.p1.s3">
+See ( ) for power series and asymptotic expansions of a solution of (LABEL:eq:PC.GP.G1).
+</sentence>
+
+</para>
+
+ 
+</section>
+          
+ 
+<section xml:id="C12.S16">
+<title>Mathematical Applications</title>        
+  
+<para xml:id="C12.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C12.S16.p1.s1">
+PCFs are used as basic approximating functions in the theory of contour integrals with a coalescing saddle point and an algebraic singularity, and in the theory of differential equations with two coalescing turning points; see §§LABEL:sec:AS.CI.OCCP and LABEL:sec:AS.DEWP.CTP.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C12.S16.p1.s2">
+For examples see §§LABEL:sec:CH.KM.AS.MU.PC, LABEL:sec:CH.KM.AS.MU.PC2, LABEL:sec:LE.UAA.LDO, andLABEL:sec:LE.UAE.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C12.S16.p2.s1">
+( ) considers certain orthogonality properties of the PCFsand corresponding eigenvalues.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="215" xml:id="C12.S16.p2.s2">
+In ( ) exponential asymptotics are considered in connection with an eigenvalue problem involving PCFs.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S16.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C12.S16.p3.s1">
+PCFs are also used in integral transforms with respect to the parameter, and inversion formulas exist for kernels containing PCFs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="217" xml:id="C12.S16.p3.s2">
+See ( ) , ( ) ,and ( ) .Integral transforms and sampling expansions are considered in ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C12.S17">
+<title>Physical Applications</title>        
+     
+<para xml:id="C12.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C12.S17.p1.s1">
+The main applications of PCFs in mathematical physics arise when solving the Helmholtz equation <Math equation-number="12.17.1" mode="display" xml:id="C12.S17.E1">\nabla^{2}w+k^{2}w=0,</Math> where <Math mode="inline" xml:id="C12.S17.p1.m1">k</Math> is a constant, and <Math mode="inline" xml:id="C12.S17.p1.m2">\nabla^{2}</Math> is the Laplacian <Math equation-number="12.17.2" mode="display" xml:id="C12.S17.E2">\nabla^{2}=\frac{{\partial}^{2}}{{\partial x}^{2}}+\frac{{\partial}^{2}}{{ \partial y}^{2}}+\frac{{\partial}^{2}}{{\partial z}^{2}}</Math> in Cartesian coordinates <Math mode="inline" xml:id="C12.S17.p1.m3">x,y,z</Math> of three-dimensional space (§LABEL:sec:AL.FOT.la).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="219" xml:id="C12.S17.p1.s2">
+By using instead coordinates of the parabolic cylinder <Math mode="inline" xml:id="C12.S17.p1.m4">\xi,\eta,\zeta</Math> , defined by <Math equation-number="12.17.3" mode="display" xml:id="C12.S17.E3">x=\xi\eta, y=\tfrac{1}{2}\xi^{2}-\tfrac{1}{2}\eta^{2}, z=\zeta,</Math> (LABEL:eq:PC.PA.P1) becomes <Math equation-number="12.17.4" mode="display" xml:id="C12.S17.E4">\frac{1}{\xi^{2}+\eta^{2}}\left(\frac{{\partial}^{2}w}{{\partial\xi}^{2}}+ \frac{{\partial}^{2}w}{{\partial\eta}^{2}}\right)+\frac{{\partial}^{2}w}{{ \partial\zeta}^{2}}+k^{2}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="220" xml:id="C12.S17.p1.s3">
+Setting <Math mode="inline" xml:id="C12.S17.p1.m5">w=U(\xi)V(\eta)W(\zeta)</Math> and separating variables, we obtain <Math equation-number="12.17.5" mode="display" xml:id="C12.S17.E5">\frac{{\mathrm{d}}^{2}U}{{\mathrm{d}\xi}^{2}}+\left(\sigma\xi^{2}+\lambda \right)U=0, \frac{{\mathrm{d}}^{2}V}{{\mathrm{d}\eta}^{2}}+\left(\sigma\eta^{2}-\lambda \right)V=0, \frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\zeta}^{2}}+\left(k^{2}-\sigma\right)W=0,</Math> with arbitrary constants <Math mode="inline" xml:id="C12.S17.p1.m6">\sigma,\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="221" xml:id="C12.S17.p1.s4">
+The first two equations can be transformed into (LABEL:eq:PC.DE.D2) or (LABEL:eq:PC.DE.D3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="222" xml:id="C12.S17.p2.s1">
+In a similar manner coordinates of the paraboloid of revolution transform theHelmholtz equation into equations related to the differential equations considered in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="223" xml:id="C12.S17.p2.s2">
+See ( , §4) and ( , pp. 515 and 553) .
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="224" xml:id="C12.S17.p3.s1">
+( ) collects many results on boundary-value problems involving PCFs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="225" xml:id="C12.S17.p3.s2">
+( ) treats separation of variables by group theoretic methods.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="226" xml:id="C12.S17.p3.s3">
+( ) describes the role of PCFs in quantum mechanical systems closely related to the one-dimensional harmonic oscillator.
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S17.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C12.S17.p4.s1">
+Problems on high-frequency scattering in homogeneous media by parabolic cylinders lead to asymptotic methods for integrals involving PCFs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="228" xml:id="C12.S17.p4.s2">
+For this topic and other boundary-value problems see ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+  
+<para xml:id="C12.S17.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C12.S17.p5.s1">
+Lastly, parabolic cylinder functions arise in the description of ultra cold atoms in harmonic trapping potentials; see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C12.S18">
+<title>Methods of Computation</title>         
+ 
+<para xml:id="C12.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C12.S18.p1.s1">
+Because PCFs are special cases of confluent hypergeometric functions, the methods of computation described in §LABEL:sec:CH.CO are applicable to PCFs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="231" xml:id="C12.S18.p1.s2">
+These include the use of power-series expansions, recursion, integral representations, differential equations, asymptotic expansions, and expansions in series of Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="232" xml:id="C12.S18.p1.s3">
+See, especially, ( ) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C12.S19">
+<title>Tables</title>         
+ 
+<para xml:id="C12.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="233" xml:id="C12.S19.p1.s1">
+( , Chapter 19) includes <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m1">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m2">V\left(a,x\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m3">\pm a=0(.1)1(.5)</Math> 5, <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m4">x=0(.1)</Math> 5, 5S; <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m5">W\left(a,\pm x\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m6">\pm a=0(.1)1(1)</Math> 5, <Math mode="inline" xml:id="C12.S19.I1.i1.p1.m7">x=0(.1)</Math> 5, 4-5D or 4-5S. ( ) includes <Math mode="inline" xml:id="C12.S19.I1.i2.p1.m1">W\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i2.p1.m2">W\left(a,-x\right)</Math> , and reduced derivatives for <Math mode="inline" xml:id="C12.S19.I1.i2.p1.m3">a=-10(1)10</Math> , <Math mode="inline" xml:id="C12.S19.I1.i2.p1.m4">x=0(.1)1</Math> 0, 8D or 8S. Modulus and phase functions, and also other auxiliary functions are tabulated. ( ) includes modulus and phase functions for <Math mode="inline" xml:id="C12.S19.I1.i3.p1.m1">W\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S19.I1.i3.p1.m2">W\left(a,-x\right)</Math> , and several auxiliary functions for <Math mode="inline" xml:id="C12.S19.I1.i3.p1.m3">x^{-1}=0(.005)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="234" xml:id="C12.S19.p1.s2">
+1, <Math mode="inline" xml:id="C12.S19.I1.i3.p1.m4">a=-10(1)10</Math> , 8S. ( ) includes <Math mode="inline" xml:id="C12.S19.I1.i4.p1.m1">D_{p}\left(x(1+i)\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i4.p1.m2">\pm x=0(.1)</Math> 5, <Math mode="inline" xml:id="C12.S19.I1.i4.p1.m3">p=0(.1)</Math> 2, and <Math mode="inline" xml:id="C12.S19.I1.i4.p1.m4">\pm x=5(.01)1</Math> 0, <Math mode="inline" xml:id="C12.S19.I1.i4.p1.m5">p=0(.5)</Math> 2, 7D.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="235" xml:id="C12.S19.p1.s3">
+( ) includes <Math mode="inline" xml:id="C12.S19.I1.i5.p1.m1">D_{p}\left(x\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i5.p1.m2">p=-2(.1)</Math> 0, <Math mode="inline" xml:id="C12.S19.I1.i5.p1.m3">\pm x=0(.01)</Math> 5; <Math mode="inline" xml:id="C12.S19.I1.i5.p1.m4">p=-2(.05)</Math> 0, <Math mode="inline" xml:id="C12.S19.I1.i5.p1.m5">\pm x=5(.01)1</Math> 0, 6D. ( ) includes <Math mode="inline" xml:id="C12.S19.I1.i6.p1.m1">e^{-\frac{1}{4}x^{2}}D_{p}\left(-x\right)</Math> and <Math mode="inline" xml:id="C12.S19.I1.i6.p1.m2">e^{-\frac{1}{4}x^{2}}D_{p}\left(ix\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i6.p1.m3">x=0(.01)</Math> 5 and <Math mode="inline" xml:id="C12.S19.I1.i6.p1.m4">x^{-1}</Math> = 0(.001or .0001)5,
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="236" xml:id="C12.S19.p1.s4">
+<Math mode="inline" xml:id="C12.S19.I1.i6.p1.m5">p=-1(.1)</Math> 1, 7D or 8S. ( ) includes <Math mode="inline" xml:id="C12.S19.I1.i7.p1.m1">D_{-n}\left(x\right)</Math> <Math mode="inline" xml:id="C12.S19.I1.i7.p1.m2">\left(=U\left(n-\tfrac{1}{2},x\right)\right)</Math> for <Math mode="inline" xml:id="C12.S19.I1.i7.p1.m3">n=1(1)20</Math> , <Math mode="inline" xml:id="C12.S19.I1.i7.p1.m4">x=0(.05)</Math> 3, 7S. ( , pp. 455–473) includes <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m1">U\left(\pm n-\frac{1}{2},x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m2">V\left(\pm n-\frac{1}{2},x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m3">U\left(\pm\nu-\frac{1}{2},x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m4">V\left(\pm\nu-\frac{1}{2},x\right)</Math> , and derivatives, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m5">\nu=n+\frac{1}{2}</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m6">n=0(1)10(10)30</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m7">x=0.5,1,5,10,30,5</Math> 0, 8S; <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m8">W\left(a,\pm x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m9">W\left(-a,\pm x\right)</Math> , and derivatives, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m10">a=h(1)5+h</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m11">x=0.5,</Math> 1 and <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m12">a=h(1)5+h</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m13">x=5</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m14">h=0,0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="237" xml:id="C12.S19.p1.s5">
+5, 8S. Also, first zeros of <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m15">U\left(a,x\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m16">V\left(a,x\right)</Math> , and of derivatives, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m17">a=-6(.5){-1</Math> }, 6D; first three zeros of <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m18">W\left(a,-x\right)</Math> and of derivative, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m19">a=0(.5)</Math> 4, 6D; first three zeros of <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m20">W\left(-a,\pm x\right)</Math> and of derivative, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m21">a=0.5(.5)5.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="238" xml:id="C12.S19.p1.s6">
+5, 6D; real and imaginary parts of <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m22">U\left(a,z\right)</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m23">a=-1.5(1)1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="239" xml:id="C12.S19.p1.s7">
+5, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m24">z=x+iy</Math> , <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m25">x=0.5,1,5,1</Math> 0, <Math mode="inline" xml:id="C12.S19.I1.i8.p1.m26">y=0(.5)1</Math> 0, 8S.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C12.S19.p2.s1">
+For other tables prior to 1961 see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C12.S20">
+<title>Approximations</title>           
+<para xml:id="C12.S20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="241" xml:id="C12.S20.p1.s1">
+( , pp. 25 and 35) gives Chebyshev-series expansions for the confluent hypergeometric functions <Math mode="inline" xml:id="C12.S20.p1.m1">U\left(a,b,x\right)</Math> and <Math mode="inline" xml:id="C12.S20.p1.m2">M\left(a,b,x\right)</Math> (§LABEL:sec:CH.MU.DE.KU) whose regions of validity include intervals with endpoints <Math mode="inline" xml:id="C12.S20.p1.m3">x=\infty</Math> and <Math mode="inline" xml:id="C12.S20.p1.m4">x=0</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="242" xml:id="C12.S20.p1.s2">
+As special cases of these results a Chebyshev-series expansion for <Math mode="inline" xml:id="C12.S20.p1.m5">U\left(a,x\right)</Math> valid when <Math mode="inline" xml:id="C12.S20.p1.m6">\lambda\leq x&lt;\infty</Math> follows from (LABEL:eq:PC.RO.K3), and Chebyshev-series expansions for <Math mode="inline" xml:id="C12.S20.p1.m7">U\left(a,x\right)</Math> and <Math mode="inline" xml:id="C12.S20.p1.m8">V\left(a,x\right)</Math> valid when <Math mode="inline" xml:id="C12.S20.p1.m9">0\leq x\leq\lambda</Math> follow from (LABEL:eq:PC.SM.M1), (LABEL:eq:PC.SM.M2), (LABEL:eq:PC.RO.K1), and (LABEL:eq:PC.RO.K2).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="243" xml:id="C12.S20.p1.s3">
+Here <Math mode="inline" xml:id="C12.S20.p1.m10">\lambda</Math> denotes an arbitrary positive constant.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C12.S21">
+<title>Software</title>         
+<para xml:id="C12.S21.p1">
+
+</para>
+ 
+<subsection xml:id="C12.S21.SS1">
+<title>Introduction</title>         
+<para xml:id="C12.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="244" xml:id="C12.S21.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="245" xml:id="C12.S21.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="246" xml:id="C12.S21.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C12.S21.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="247" xml:id="C12.S21.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S21.SS2">
+<title>Real Arguments and Parameters</title>         
+<para xml:id="C12.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C12.S21.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="249" xml:id="C12.S21.SS2.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="250" xml:id="C12.S21.SS2.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="251" xml:id="C12.S21.SS2.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="252" xml:id="C12.S21.SS2.p1.s5">
+Fortran.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="253" xml:id="C12.S21.SS2.p1.s6">
+See also ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C12.S21.SS3">
+<title>Complex Arguments and Parameters</title>         
+<para xml:id="C12.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="254" xml:id="C12.S21.SS3.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="255" xml:id="C12.S21.SS3.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

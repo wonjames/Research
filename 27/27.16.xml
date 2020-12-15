@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S16">
+<title>Cryptography</title>        
+ 
+   
+<para xml:id="C27.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S16.p1.s1">
+Applications to cryptography rely on the disparity in computer time required to find large primes and to factor large integers.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S16.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C27.S16.p2.s1">
+For example, a code maker chooses two large primes <Math mode="inline" xml:id="C27.S16.p2.m1">p</Math> and <Math mode="inline" xml:id="C27.S16.p2.m2">q</Math> of about 400 decimal digits each.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C27.S16.p2.s2">
+Procedures for finding such primes require very little computer time.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C27.S16.p2.s3">
+The primes are kept secret but their product <Math mode="inline" xml:id="C27.S16.p2.m3">n=pq</Math> , an 800-digit number, is made public.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C27.S16.p2.s4">
+For this reason, these are often called public key codes.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C27.S16.p2.s5">
+Messages are coded by a method (described below) that requires only the knowledge of <Math mode="inline" xml:id="C27.S16.p2.m4">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C27.S16.p2.s6">
+But to decode, both factors <Math mode="inline" xml:id="C27.S16.p2.m5">p</Math> and <Math mode="inline" xml:id="C27.S16.p2.m6">q</Math> must be known.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" xml:id="C27.S16.p2.s7">
+With the most efficient computer techniques devised to date (2010), factoring an 800-digit number may require billions of years on a single computer.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" xml:id="C27.S16.p2.s8">
+For this reason, the codes are considered unbreakable, at least with the current state of knowledge on factoring large numbers.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S16.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C27.S16.p3.s1">
+To code a message by this method, we replace each letter by two digits, say <Math mode="inline" xml:id="C27.S16.p3.m1">A=01</Math> , <Math mode="inline" xml:id="C27.S16.p3.m2">B=02</Math> , <Math mode="inline" xml:id="C27.S16.p3.m3">\dots</Math> , <Math mode="inline" xml:id="C27.S16.p3.m4">Z=26</Math> , and divide the message into pieces of convenient length smaller than the public value <Math mode="inline" xml:id="C27.S16.p3.m5">n=pq</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C27.S16.p3.s2">
+Choose a prime <Math mode="inline" xml:id="C27.S16.p3.m6">r</Math> that does not divide either <Math mode="inline" xml:id="C27.S16.p3.m7">p-1</Math> or <Math mode="inline" xml:id="C27.S16.p3.m8">q-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C27.S16.p3.s3">
+Like <Math mode="inline" xml:id="C27.S16.p3.m9">n</Math> , the prime <Math mode="inline" xml:id="C27.S16.p3.m10">r</Math> is made public.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C27.S16.p3.s4">
+To code a piece <Math mode="inline" xml:id="C27.S16.p3.m11">x</Math> , raise <Math mode="inline" xml:id="C27.S16.p3.m12">x</Math> to the power <Math mode="inline" xml:id="C27.S16.p3.m13">r</Math> and reduce <Math mode="inline" xml:id="C27.S16.p3.m14">x^{r}</Math> modulo <Math mode="inline" xml:id="C27.S16.p3.m15">n</Math> to obtain an integer <Math mode="inline" xml:id="C27.S16.p3.m16">y</Math> (the coded form of <Math mode="inline" xml:id="C27.S16.p3.m17">x</Math> ) between <Math mode="inline" xml:id="C27.S16.p3.m18">1</Math> and <Math mode="inline" xml:id="C27.S16.p3.m19">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C27.S16.p3.s5">
+Thus, <Math mode="inline" xml:id="C27.S16.p3.m20">y\equiv x^{r}\pmod{n}</Math> and <Math mode="inline" xml:id="C27.S16.p3.m21">1\leq y&lt;n</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S16.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C27.S16.p4.s1">
+To decode, we must recover <Math mode="inline" xml:id="C27.S16.p4.m1">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m2">y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C27.S16.p4.s2">
+To do this, let <Math mode="inline" xml:id="C27.S16.p4.m3">s</Math> denote the reciprocal of <Math mode="inline" xml:id="C27.S16.p4.m4">r</Math> modulo <Math mode="inline" xml:id="C27.S16.p4.m5">\phi\left(n\right)</Math> , so that <Math mode="inline" xml:id="C27.S16.p4.m6">rs=1+t\phi\left(n\right)</Math> for some integer <Math mode="inline" xml:id="C27.S16.p4.m7">t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C27.S16.p4.s3">
+(Here <Math mode="inline" xml:id="C27.S16.p4.m8">\phi\left(n\right)</Math> is Euler’s totient (§27.2).)By the Euler–Fermat theorem (27.2.8),
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C27.S16.p4.s4">
+<Math mode="inline" xml:id="C27.S16.p4.m9">x^{\phi\left(n\right)}\equiv 1\pmod{n}</Math> ; hence <Math mode="inline" xml:id="C27.S16.p4.m10">x^{t\phi\left(n\right)}\equiv 1\pmod{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C27.S16.p4.s5">
+But <Math mode="inline" xml:id="C27.S16.p4.m11">y^{s}\equiv x^{rs}\equiv x^{1+t\phi\left(n\right)}\equiv x\pmod{n}</Math> , so <Math mode="inline" xml:id="C27.S16.p4.m12">y^{s}</Math> is the same as <Math mode="inline" xml:id="C27.S16.p4.m13">x</Math> modulo <Math mode="inline" xml:id="C27.S16.p4.m14">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="20" xml:id="C27.S16.p4.s6">
+In other words, to recover <Math mode="inline" xml:id="C27.S16.p4.m15">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m16">y</Math> we simply raise <Math mode="inline" xml:id="C27.S16.p4.m17">y</Math> to the power <Math mode="inline" xml:id="C27.S16.p4.m18">s</Math> and reduce modulo <Math mode="inline" xml:id="C27.S16.p4.m19">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="21" xml:id="C27.S16.p4.s7">
+If <Math mode="inline" xml:id="C27.S16.p4.m20">p</Math> and <Math mode="inline" xml:id="C27.S16.p4.m21">q</Math> are known, <Math mode="inline" xml:id="C27.S16.p4.m22">s</Math> and <Math mode="inline" xml:id="C27.S16.p4.m23">y^{s}</Math> can be determined (mod <Math mode="inline" xml:id="C27.S16.p4.m24">n</Math> ) by straightforward calculations that require only a few minutes of machine time.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="22" xml:id="C27.S16.p4.s8">
+But if <Math mode="inline" xml:id="C27.S16.p4.m25">p</Math> and <Math mode="inline" xml:id="C27.S16.p4.m26">q</Math> are not known, the problem of recovering <Math mode="inline" xml:id="C27.S16.p4.m27">x</Math> from <Math mode="inline" xml:id="C27.S16.p4.m28">y</Math> seems insurmountable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S16.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C27.S16.p5.s1">
+For further information see Apostol and Niven (1994, p. 24), and for other applications to cryptography see Menezes et al. (1997) andSchroeder (2006).
+</sentence>
+
+</para>
+ 
+</section>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S2">
+<title>Differential Equations</title>         
+<subsection xml:id="C32.S2.SS1">
+<title>Introduction</title>          
+<para xml:id="C32.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S2.SS1.p1.s1">
+The six Painlevé equations <Math mode="inline" xml:id="C32.S2.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are as follows: <Math equation-number="32.2.1" mode="display" xml:id="C32.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=6w^{2}+z,</Math> <Math equation-number="32.2.2" mode="display" xml:id="C32.S2.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=2w^{3}+zw+\alpha,</Math> <Math equation-number="32.2.3" mode="display" xml:id="C32.S2.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{w}\left(\frac{\mathrm{d}w }{\mathrm{d}z}\right)^{2}-\frac{1}{z}\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{ \alpha w^{2}+\beta}{z}+\gamma w^{3}+\frac{\delta}{w},</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C32.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C32.S2.SS1.p2.s1">
+ <Math equation-number="32.2.4" mode="display" xml:id="C32.S2.E4">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{2w}\left(\frac{\mathrm{d} w}{\mathrm{d}z}\right)^{2}+\frac{3}{2}w^{3}+4zw^{2}+2(z^{2}-\alpha)w+\frac{ \beta}{w},</Math> <Math equation-number="32.2.5" mode="display" xml:id="C32.S2.E5">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\left(\frac{1}{2w}+\frac{1}{w-1} \right)\left(\frac{\mathrm{d}w}{\mathrm{d}z}\right)^{2}-\frac{1}{z}\frac{ \mathrm{d}w}{\mathrm{d}z}+\frac{(w-1)^{2}}{z^{2}}\left(\alpha w+\frac{\beta}{w }\right)+\frac{\gamma w}{z}+\frac{\delta w(w+1)}{w-1},</Math> <Math equation-number="32.2.6" mode="display" xml:id="C32.S2.E6">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{2}\left(\frac{1}{w}+\frac {1}{w-1}+\frac{1}{w-z}\right)\left(\frac{\mathrm{d}w}{\mathrm{d}z}\right)^{2}- \left(\frac{1}{z}+\frac{1}{z-1}+\frac{1}{w-z}\right)\frac{\mathrm{d}w}{\mathrm {d}z}+\frac{w(w-1)(w-z)}{z^{2}(z-1)^{2}}\left(\alpha+\frac{\beta z}{w^{2}}+ \frac{\gamma(z-1)}{(w-1)^{2}}+\frac{\delta z(z-1)}{(w-z)^{2}}\right),</Math> 
+</sentence>
+
+</para>
+              
+<para xml:id="C32.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C32.S2.SS1.p3.s1">
+with <Math mode="inline" xml:id="C32.S2.SS1.p3.m1">\alpha</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p3.m2">\beta</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p3.m3">\gamma</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p3.m4">\delta</Math> arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C32.S2.SS1.p3.s2">
+The solutions of <Math mode="inline" xml:id="C32.S2.SS1.p3.m12">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p3.m13">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are called the Painlevé transcendents.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C32.S2.SS1.p3.s3">
+The six equations are sometimes referred to as the Painlevé transcendents, but in this chapter this term will be used only for their solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C32.S2.SS1.p4.s1">
+Let <Math equation-number="32.2.7" mode="display" xml:id="C32.S2.E7">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=F\left(z,w,\frac{\mathrm{d}w}{ \mathrm{d}z}\right),</Math> be a nonlinear second-order differential equation in which <Math mode="inline" xml:id="C32.S2.SS1.p4.m1">F</Math> is a rational function of <Math mode="inline" xml:id="C32.S2.SS1.p4.m2">w</Math> and <Math mode="inline" xml:id="C32.S2.SS1.p4.m3">\ifrac{\mathrm{d}w}{\mathrm{d}z}</Math> , and is locally analytic in <Math mode="inline" xml:id="C32.S2.SS1.p4.m4">z</Math> , that is, analytic except for isolated singularities in <Math mode="inline" xml:id="C32.S2.SS1.p4.m5">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C32.S2.SS1.p4.s2">
+In general the singularities of the solutions are movable in the sense that their location depends on the constants of integration associated with the initial orboundary conditions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C32.S2.SS1.p4.s3">
+An equation is said to have the Painlevé property if all its solutions are free from movable branch points; the solutions may have movable poles or movable isolated essential singularities (§1.10(iii)), however.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C32.S2.SS1.p5.s1">
+There are fifty equations with the Painlevé property.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C32.S2.SS1.p5.s2">
+They are distinct modulo Möbius (bilinear) transformations <Math equation-number="32.2.8" mode="display" xml:id="C32.S2.E8">W(\zeta)=\frac{a(z)w+b(z)}{c(z)w+d(z)},\zeta=\phi(z),</Math> in which <Math mode="inline" xml:id="C32.S2.SS1.p5.m1">a(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m2">b(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m3">c(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m4">d(z)</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p5.m5">\phi(z)</Math> are locally analytic functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C32.S2.SS1.p5.s3">
+The fifty equations can be reduced to linear equations, solved in terms of elliptic functions (Chapters 22 and 23), or reduced to one of <Math mode="inline" xml:id="C32.S2.SS1.p5.m6">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p5.m7">\mbox{P}_{\mbox{\scriptsize VI}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C32.S2.SS1.p6.s1">
+For arbitrary values of the parameters <Math mode="inline" xml:id="C32.S2.SS1.p6.m1">\alpha</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p6.m2">\beta</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p6.m3">\gamma</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p6.m4">\delta</Math> , the general solutions of <Math mode="inline" xml:id="C32.S2.SS1.p6.m5">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p6.m6">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are transcendental, that is, they cannot be expressed in closed-form elementary functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C32.S2.SS1.p6.s2">
+However, for special values of the parameters, equations <Math mode="inline" xml:id="C32.S2.SS1.p6.m7">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p6.m8">\mbox{P}_{\mbox{\scriptsize VI}}</Math> have special solutions in terms of elementary functions, or special functions defined elsewhere in the DLMF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS2">
+<title>Renormalizations</title>          
+<para xml:id="C32.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C32.S2.SS2.p1.s1">
+If <Math mode="inline" xml:id="C32.S2.SS2.p1.m1">\gamma\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p1.m2">\mbox{P}_{\mbox{\scriptsize III}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m3">\gamma=1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m4">\delta=-1</Math> , without loss of generality, by rescaling <Math mode="inline" xml:id="C32.S2.SS2.p1.m5">w</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m6">z</Math> if necessary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C32.S2.SS2.p1.s2">
+If <Math mode="inline" xml:id="C32.S2.SS2.p1.m7">\gamma=0</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m8">\alpha\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p1.m9">\mbox{P}_{\mbox{\scriptsize III}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m10">\alpha=1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m11">\delta=-1</Math> , without loss of generality.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C32.S2.SS2.p1.s3">
+Lastly, if <Math mode="inline" xml:id="C32.S2.SS2.p1.m12">\delta=0</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m13">\beta\gamma\neq 0</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m14">\beta=-1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m15">\gamma=1</Math> , without loss ofgenerality.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C32.S2.SS2.p2.s1">
+If <Math mode="inline" xml:id="C32.S2.SS2.p2.m1">\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p2.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p2.m3">\delta=-\tfrac{1}{2}</Math> , without loss of generality.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS3">
+<title>Alternative Forms</title>          
+<para xml:id="C32.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C32.S2.SS3.p1.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p1.m2">w(z)=\zeta^{-1/2}u(\zeta)</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p1.m3">\zeta=z^{2}</Math> , then <Math equation-number="32.2.9" mode="display" xml:id="C32.S2.E9">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=\frac{1}{u}\left(\frac{\mathrm {d}u}{\mathrm{d}\zeta}\right)^{2}-\frac{1}{\zeta}\frac{\mathrm{d}u}{\mathrm{d} \zeta}+\frac{u^{2}(\alpha+\gamma u)}{4\zeta^{2}}+\frac{\beta}{4\zeta}+\frac{ \delta}{4u},</Math> which is known as <Math mode="inline" xml:id="C32.S2.SS3.p1.m4">\mbox{P}^{\prime}_{\mbox{\scriptsize III}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C32.S2.SS3.p2.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p2.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p2.m2">w(z)=\exp\left(-iu(z)\right)</Math> , <Math mode="inline" xml:id="C32.S2.SS3.p2.m3">\beta=-\alpha</Math> , and <Math mode="inline" xml:id="C32.S2.SS3.p2.m4">\delta=-\gamma</Math> , then <Math equation-number="32.2.10" mode="display" xml:id="C32.S2.E10">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}u}{ \mathrm{d}z}=\frac{2\alpha}{z}\sin u+2\gamma\sin\left(2u\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C32.S2.SS3.p3.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p3.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p3.m2">w(z)=2\sqrt{2}(u(\zeta))^{2}</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p3.m3">\zeta=\sqrt{2}z</Math> and <Math mode="inline" xml:id="C32.S2.SS3.p3.m4">\alpha=2\nu+1</Math> , then <Math equation-number="32.2.11" mode="display" xml:id="C32.S2.E11">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=3u^{5}+2\zeta u^{3}+\left( \tfrac{1}{4}\zeta^{2}-\nu-\tfrac{1}{2}\right)u+\frac{\beta}{32u^{3}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C32.S2.SS3.p3.s2">
+When <Math mode="inline" xml:id="C32.S2.SS3.p3.m5">\beta=0</Math> this is a nonlinear harmonic oscillator.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C32.S2.SS3.p4.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p4.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p4.m2">w(z)=(\coth u(\zeta))^{2}</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p4.m3">\zeta=\ln z</Math> , then <Math equation-number="32.2.12" mode="display" xml:id="C32.S2.E12">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=-\frac{\alpha\cosh u}{2(\sinh u )^{3}}-\frac{\beta\sinh u}{2(\cosh u)^{3}}-\tfrac{1}{4}\gamma e^{\zeta}\sinh \left(2u\right)-\tfrac{1}{8}\delta e^{2\zeta}\sinh\left(4u\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C32.S2.SS3.p5.s1">
+See also Okamoto (1987c), McCoy et al. (1977),Bassom et al. (1992), Bassom et al. (1995), andTakasaki (2001).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS4">
+<title>Elliptic Form</title>          
+<para xml:id="C32.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C32.S2.SS4.p1.s1">
+ <Math mode="inline" xml:id="C32.S2.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> can be written in the form <Math equation-number="32.2.13" mode="display" xml:id="C32.S2.E13">z(1-z)I\left(\int_{\infty}^{w}\frac{\mathrm{d}t}{\sqrt{t(t-1)(t-z)}}\right)= \sqrt{w(w-1)(w-z)}\*\left(\alpha+\frac{\beta z}{w^{2}}+\frac{\gamma(z-1)}{(w-1 )^{2}}+(\delta-\tfrac{1}{2})\frac{z(z-1)}{(w-z)^{2}}\right),</Math> where <Math equation-number="32.2.14" mode="display" xml:id="C32.S2.E14">I=z(1-z)\frac{{\mathrm{d}}^{2}}{{\mathrm{d}z}^{2}}+(1-2z)\frac{\mathrm{d}}{ \mathrm{d}z}-\frac{1}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C32.S2.SS4.p1.s2">
+See Fuchs (1907), Painlevé (1906),Gromak et al. (2002, §42); also Manin (1998).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS5">
+<title>Symmetric Forms</title>          
+<para xml:id="C32.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C32.S2.SS5.p1.s1">
+Let <Math equation-number="32.2.15" mode="display" xml:id="C32.S2.E15">\frac{\mathrm{d}f_{1}}{\mathrm{d}z}+f_{1}(f_{2}-f_{3})+2\mu_{1}=0,\frac{\mathrm{d}f_{2}}{\mathrm{d}z}+f_{2}(f_{3}-f_{1})+2\mu_{2}=0,\frac{\mathrm{d}f_{3}}{\mathrm{d}z}+f_{3}(f_{1}-f_{2})+2\mu_{3}=0,</Math> where <Math mode="inline" xml:id="C32.S2.SS5.p1.m1">\mu_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m2">\mu_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m3">\mu_{3}</Math> are constants, <Math mode="inline" xml:id="C32.S2.SS5.p1.m4">f_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m5">f_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m6">f_{3}</Math> are functions of <Math mode="inline" xml:id="C32.S2.SS5.p1.m7">z</Math> , with <Math equation-number="32.2.16" mode="display" xml:id="C32.S2.E16">\mu_{1}+\mu_{2}+\mu_{3}=1,</Math> <Math equation-number="32.2.17" mode="display" xml:id="C32.S2.E17">f_{1}(z)+f_{2}(z)+f_{3}(z)+2z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C32.S2.SS5.p1.s2">
+Then <Math mode="inline" xml:id="C32.S2.SS5.p1.m8">w(z)=f_{1}(z)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS5.p1.m9">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math equation-number="32.2.18" mode="display" xml:id="C32.S2.E18">(\alpha,\beta)=(\mu_{3}-\mu_{2},-2\mu_{1}^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C32.S2.SS5.p1.s3">
+See Noumi and Yamada (1998).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C32.S2.SS5.p2.s1">
+Next, let <Math equation-number="32.2.19" mode="display" xml:id="C32.S2.E19">z\frac{\mathrm{d}f_{1}}{\mathrm{d}z}=f_{1}f_{3}(f_{2}-f_{4})+(\tfrac{1}{2}-\mu _{3})f_{1}+\mu_{1}f_{3},z\frac{\mathrm{d}f_{2}}{\mathrm{d}z}=f_{2}f_{4}(f_{3}-f_{1})+(\tfrac{1}{2}-\mu _{4})f_{2}+\mu_{2}f_{4},z\frac{\mathrm{d}f_{3}}{\mathrm{d}z}=f_{3}f_{1}(f_{4}-f_{2})+(\tfrac{1}{2}-\mu _{1})f_{3}+\mu_{3}f_{1},z\frac{\mathrm{d}f_{4}}{\mathrm{d}z}=f_{4}f_{2}(f_{1}-f_{3})+(\tfrac{1}{2}-\mu _{2})f_{4}+\mu_{4}f_{2},</Math> where <Math mode="inline" xml:id="C32.S2.SS5.p2.m1">\mu_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m2">\mu_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m3">\mu_{3}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m4">\mu_{4}</Math> are constants, <Math mode="inline" xml:id="C32.S2.SS5.p2.m5">f_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m6">f_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m7">f_{3}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m8">f_{4}</Math> are functions of <Math mode="inline" xml:id="C32.S2.SS5.p2.m9">z</Math> , with <Math equation-number="32.2.20" mode="display" xml:id="C32.S2.E20">\mu_{1}+\mu_{2}+\mu_{3}+\mu_{4}=1,</Math> <Math equation-number="32.2.21" mode="display" xml:id="C32.S2.E21">f_{1}(z)+f_{3}(z)=\sqrt{z},</Math> <Math equation-number="32.2.22" mode="display" xml:id="C32.S2.E22">f_{2}(z)+f_{4}(z)=\sqrt{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C32.S2.SS5.p2.s2">
+Then <Math mode="inline" xml:id="C32.S2.SS5.p2.m10">w(z)=1-(\sqrt{z}/f_{1}(z))</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS5.p2.m11">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math equation-number="32.2.23" mode="display" xml:id="C32.S2.E23">(\alpha,\beta,\gamma,\delta)=(\tfrac{1}{2}\mu_{1}^{2},-\tfrac{1}{2}\mu_{3}^{2} ,\mu_{4}-\mu_{2},-\tfrac{1}{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS6">
+<title>Coalescence Cascade</title>        
+  
+<para xml:id="C32.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C32.S2.SS6.p1.s1">
+ <Math mode="inline" xml:id="C32.S2.SS6.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS6.p1.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> are obtained from <Math mode="inline" xml:id="C32.S2.SS6.p1.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> by a coalescence cascade: <Math equation-number="32.2.24" mode="display" xml:id="C32.S2.E24">\begin{array}[]{ccccccc}\mbox{$\mbox{P}_{\mbox{\scriptsize VI}}$}&amp; \longrightarrow&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize V}}$}&amp;\longrightarrow&amp;\mbox {$\mbox{P}_{\mbox{\scriptsize IV}}$}\\ &amp;&amp;\big{\downarrow}&amp;&amp;\big{\downarrow}\\ &amp;&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize III}}$}&amp;\longrightarrow&amp;\mbox{$\mbox{P}_{ \mbox{\scriptsize II}}$}&amp;\longrightarrow&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize I} }$}\end{array}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C32.S2.SS6.p2.s1">
+For example, if in <Math mode="inline" xml:id="C32.S2.SS6.p2.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> <Math equation-number="32.2.25" mode="display" xml:id="C32.S2.E25">w(z;\alpha)=\epsilon W(\zeta)+\frac{1}{\epsilon^{5}},</Math> <Math equation-number="32.2.26" mode="display" xml:id="C32.S2.E26">z=\epsilon^{2}\zeta-\frac{6}{\epsilon^{10}},\alpha=\frac{4}{\epsilon^{15}},</Math> then <Math equation-number="32.2.27" mode="display" xml:id="C32.S2.E27">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\zeta}^{2}}=6W^{2}+\zeta+\epsilon^{6}(2W^{ 3}+\zeta W);</Math> thus in the limit as <Math mode="inline" xml:id="C32.S2.SS6.p2.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p2.m3">W(\zeta)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p2.m4">\mbox{P}_{\mbox{\scriptsize I}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p2.m5">z=\zeta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C32.S2.SS6.p3.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p3.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> <Math equation-number="32.2.28" mode="display" xml:id="C32.S2.E28">w(z;\alpha,\beta,\gamma,\delta)=1+2\epsilon W(\zeta;a),</Math> <Math equation-number="32.2.29" mode="display" xml:id="C32.S2.E29">z=1+\epsilon^{2}\zeta,\alpha=-\tfrac{1}{2}\epsilon^{-6},\beta=\tfrac{1}{2}\epsilon^{-6}+2a\epsilon^{-3},\gamma=-\delta=\tfrac{1}{4}\epsilon^{-6},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p3.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p3.m3">W(\zeta;a)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p3.m4">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p3.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p3.m6">\alpha=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C32.S2.SS6.p4.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p4.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> <Math equation-number="32.2.30" mode="display" xml:id="C32.S2.E30">w(z;\alpha,\beta)=2^{2/3}\epsilon^{-1}W(\zeta;a)+\epsilon^{-3},</Math> <Math equation-number="32.2.31" mode="display" xml:id="C32.S2.E31">z=2^{-2/3}\epsilon\zeta-\epsilon^{-3},\alpha=-2a-\tfrac{1}{2}\epsilon^{-6},\beta=-\tfrac{1}{2}\epsilon^{-12},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p4.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p4.m3">W(\zeta;a)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p4.m4">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p4.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p4.m6">\alpha=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C32.S2.SS6.p5.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p5.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> <Math equation-number="32.2.32" mode="display" xml:id="C32.S2.E32">w(z;\alpha,\beta,\gamma,\delta)=1+\epsilon\zeta W(\zeta;a,b,c,d),</Math> <Math equation-number="32.2.33" mode="display" xml:id="C32.S2.E33">z=\zeta^{2},\alpha=\tfrac{1}{4}a\epsilon^{-1}+\tfrac{1}{8}c\epsilon^{-2},\beta=-\tfrac{1}{8}c\epsilon^{-2},\gamma=\tfrac{1}{4}\epsilon b,\delta=\tfrac{1}{8}\epsilon^{2}d,</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p5.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m3">W(\zeta;a,b,c,d)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p5.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p5.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m7">\beta=b</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m8">\gamma=c</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m9">\delta=d</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C32.S2.SS6.p6.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p6.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> <Math equation-number="32.2.34" mode="display" xml:id="C32.S2.E34">w(z;\alpha,\beta,\gamma,\delta)=\tfrac{1}{2}\sqrt{2}\epsilon W(\zeta;a,b),</Math> <Math equation-number="32.2.35" mode="display" xml:id="C32.S2.E35">z=1+\sqrt{2}\epsilon\zeta,\alpha=\tfrac{1}{2}\epsilon^{-4},\beta=\tfrac{1}{4}b,\gamma=-\epsilon^{-4},\delta=a\epsilon^{-2}-\tfrac{1}{2}\epsilon^{-4},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p6.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m3">W(\zeta;a,b)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p6.m4">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p6.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m7">\beta=b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C32.S2.SS6.p7.s1">
+Lastly, if in <Math mode="inline" xml:id="C32.S2.SS6.p7.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> <Math equation-number="32.2.36" mode="display" xml:id="C32.S2.E36">w(z;\alpha,\beta,\gamma,\delta)=W(\zeta;a,b,c,d),</Math> <Math equation-number="32.2.37" mode="display" xml:id="C32.S2.E37">z=1+\epsilon\zeta,\gamma=c\epsilon^{-1}-d\epsilon^{-2},\delta=d\epsilon^{-2},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p7.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m3">W(\zeta;a,b,c,d)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p7.m4">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p7.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m7">\beta=b</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m8">\gamma=c</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m9">\delta=d</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

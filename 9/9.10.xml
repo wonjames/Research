@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S10">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C9.S10.SS1">
+<title>Indefinite Integrals</title>        
+ 
+ 
+<para xml:id="C9.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S10.SS1.p1.s1">
+ <Math equation-number="9.10.1" mode="display" xml:id="C9.S10.E1">\int_{z}^{\infty}\mathrm{Ai}\left(t\right)\mathrm{d}t=\pi\left(\mathrm{Ai} \left(z\right)\mathrm{Gi}'\left(z\right)-\mathrm{Ai}'\left(z\right)\mathrm{Gi} \left(z\right)\right),</Math> <Math equation-number="9.10.2" mode="display" xml:id="C9.S10.E2">\int_{-\infty}^{z}\mathrm{Ai}\left(t\right)\mathrm{d}t=\pi\left(\mathrm{Ai} \left(z\right)\mathrm{Hi}'\left(z\right)-\mathrm{Ai}'\left(z\right)\mathrm{Hi} \left(z\right)\right),</Math> <Math equation-number="9.10.3" mode="display" xml:id="C9.S10.E3">\int_{-\infty}^{z}\mathrm{Bi}\left(t\right)\mathrm{d}t=\int_{0}^{z}\mathrm{Bi} \left(t\right)\mathrm{d}t=\pi\left(\mathrm{Bi}'\left(z\right)\mathrm{Gi}\left( z\right)-\mathrm{Bi}\left(z\right)\mathrm{Gi}'\left(z\right)\right)\\ =\pi\left(\mathrm{Bi}\left(z\right)\mathrm{Hi}'\left(z\right)-\mathrm{Bi}' \left(z\right)\mathrm{Hi}\left(z\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S10.SS1.p1.s2">
+For the functions <Math mode="inline" xml:id="C9.S10.SS1.p1.m1">\mathrm{Gi}</Math> and <Math mode="inline" xml:id="C9.S10.SS1.p1.m2">\mathrm{Hi}</Math> see §9.12.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS2">
+<title>Asymptotic Approximations</title>        
+ 
+ 
+<para xml:id="C9.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C9.S10.SS2.p1.s1">
+ <Math equation-number="9.10.4" mode="display" xml:id="C9.S10.E4">\int_{x}^{\infty}\mathrm{Ai}\left(t\right)\mathrm{d}t\sim\tfrac{1}{2}\pi^{-1/2 }x^{-3/4}\exp\left({-}\tfrac{2}{3}x^{3/2}\right), if x\rightarrow\infty,</Math> , <Math equation-number="9.10.5" mode="display" xml:id="C9.S10.E5">\int_{0}^{x}\mathrm{Bi}\left(t\right)\mathrm{d}t\sim\pi^{-1/2}x^{-3/4}\exp \left(\tfrac{2}{3}x^{3/2}\right), if x\rightarrow\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C9.S10.SS2.p1.s2">
+<Math equation-number="9.10.6" mode="display" xml:id="C9.S10.E6">\int_{-\infty}^{x}\mathrm{Ai}\left(t\right)\mathrm{d}t=\pi^{-1/2}(-x)^{-3/4}\* \cos\left(\tfrac{2}{3}(-x)^{3/2}+\tfrac{1}{4}\pi\right)+O\left(|x|^{-9/4} \right), if x\rightarrow-\infty,</Math> <Math equation-number="9.10.7" mode="display" xml:id="C9.S10.E7">\int_{-\infty}^{x}\mathrm{Bi}\left(t\right)\mathrm{d}t=\pi^{-1/2}(-x)^{-3/4}\* \sin\left(\tfrac{2}{3}(-x)^{3/2}+\tfrac{1}{4}\pi\right)+O\left(|x|^{-9/4} \right), if x\rightarrow-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C9.S10.SS2.p1.s3">
+For higher terms in (9.10.4)–(9.10.7)seeVallée and Soares (2010, §3.1.3).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C9.S10.SS2.p1.s4">
+For error bounds see Boyd (1993).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C9.S10.SS2.p2.s1">
+See also Muldoon (1970).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS3">
+<title>Other Indefinite Integrals</title>        
+ 
+<para xml:id="C9.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C9.S10.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C9.S10.SS3.p1.m1">w(z)</Math> be any solution of Airy’s equation (9.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C9.S10.SS3.p1.s2">
+Then <Math equation-number="9.10.8" mode="display" xml:id="C9.S10.E8">\int zw(z)\mathrm{d}z=w^{\prime}(z),</Math> , <Math equation-number="9.10.9" mode="display" xml:id="C9.S10.E9">\int z^{2}w(z)\mathrm{d}z=zw^{\prime}(z)-w(z),</Math> <Math equation-number="9.10.10" mode="display" xml:id="C9.S10.E10">\int z^{n+3}w(z)\mathrm{d}z=z^{n+2}w^{\prime}(z)-(n+2)z^{n+1}w(z)+(n+1)(n+2) \int z^{n}w(z)\mathrm{d}z, if n=0,1,2,\ldots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C9.S10.SS3.p2.s1">
+See also §9.11(iv).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS4">
+<title>Definite Integrals</title>        
+  
+<para xml:id="C9.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C9.S10.SS4.p1.s1">
+ <Math equation-number="9.10.11" mode="display" xml:id="C9.S10.E11">\int_{0}^{\infty}\mathrm{Ai}\left(t\right)\mathrm{d}t=\tfrac{1}{3}, ,\int_{-\infty}^{0}\mathrm{Ai}\left(t\right)\mathrm{d}t=\tfrac{2}{3}, ,</Math> <Math equation-number="9.10.12" mode="display" xml:id="C9.S10.E12">\int_{-\infty}^{0}\mathrm{Bi}\left(t\right)\mathrm{d}t=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS5">
+<title>Laplace Transforms</title>        
+     
+<para xml:id="C9.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C9.S10.SS5.p1.s1">
+ <Math equation-number="9.10.13" mode="display" xml:id="C9.S10.E13">\int_{-\infty}^{\infty}e^{pt}\mathrm{Ai}\left(t\right)\mathrm{d}t=e^{p^{3}/3}, if \Re p&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C9.S10.SS5.p1.s2">
+<Math equation-number="9.10.14" mode="display" xml:id="C9.S10.E14">\int_{0}^{\infty}e^{-pt}\mathrm{Ai}\left(t\right)\mathrm{d}t=e^{-p^{3}/3}\left (\frac{1}{3}-\frac{p{{}_{1}F_{1}}\left(\tfrac{1}{3};\tfrac{4}{3};\tfrac{1}{3}p ^{3}\right)}{3^{4/3}\Gamma\left(\tfrac{4}{3}\right)}+\frac{p^{2}{{}_{1}F_{1}} \left(\tfrac{2}{3};\tfrac{5}{3};\tfrac{1}{3}p^{3}\right)}{3^{5/3}\Gamma\left( \tfrac{5}{3}\right)}\right), if p\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C9.S10.SS5.p1.s3">
+<Math equation-number="9.10.15" mode="display" xml:id="C9.S10.E15">\int_{0}^{\infty}e^{-pt}\mathrm{Ai}\left(-t\right)\mathrm{d}t={\frac{1}{3}e^{p ^{3}/3}\left(\frac{\Gamma\left(\tfrac{1}{3},\tfrac{1}{3}p^{3}\right)}{\Gamma \left(\tfrac{1}{3}\right)}+\frac{\Gamma\left(\tfrac{2}{3},\tfrac{1}{3}p^{3} \right)}{\Gamma\left(\tfrac{2}{3}\right)}\right)}, if \Re p&gt;0,</Math> <Math equation-number="9.10.16" mode="display" xml:id="C9.S10.E16">\int_{0}^{\infty}e^{-pt}\mathrm{Bi}\left(-t\right)\mathrm{d}t={\frac{1}{\sqrt{ 3}}e^{p^{3}/3}\left(\frac{\Gamma\left(\tfrac{2}{3},\tfrac{1}{3}p^{3}\right)}{ \Gamma\left(\tfrac{2}{3}\right)}-\frac{\Gamma\left(\tfrac{1}{3},\tfrac{1}{3}p^ {3}\right)}{\Gamma\left(\tfrac{1}{3}\right)}\right)}, if \Re p&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C9.S10.SS5.p1.s4">
+For the confluent hypergeometric function <Math mode="inline" xml:id="C9.S10.SS5.p1.m1">{{}_{1}F_{1}}</Math> and the incomplete gamma function <Math mode="inline" xml:id="C9.S10.SS5.p1.m2">\Gamma</Math> see §§13.1, 13.2, and 8.2(i).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C9.S10.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C9.S10.SS5.p2.s1">
+For Laplace transforms of products of Airy functions seeShawagfeh (1992).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS6">
+<title>Mellin Transform</title>        
+  
+<para xml:id="C9.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C9.S10.SS6.p1.s1">
+ <Math equation-number="9.10.17" mode="display" xml:id="C9.S10.E17">\int_{0}^{\infty}t^{\alpha-1}\mathrm{Ai}\left(t\right)\mathrm{d}t=\frac{\Gamma \left(\alpha\right)}{3^{(\alpha+2)/3}\Gamma\left(\tfrac{1}{3}\alpha+\tfrac{2}{ 3}\right)}, if \Re\alpha&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS7">
+<title>Stieltjes Transforms</title>        
+  
+<para xml:id="C9.S10.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C9.S10.SS7.p1.s1">
+ <Math equation-number="9.10.18" mode="display" xml:id="C9.S10.E18">\mathrm{Ai}\left(z\right)=\frac{3z^{5/4}e^{-(2/3)z^{3/2}}}{4\pi}\*\int_{0}^{ \infty}\frac{t^{-3/4}e^{-(2/3)t^{3/2}}\mathrm{Ai}\left(t\right)}{z^{3/2}+t^{3/ 2}}\mathrm{d}t, if |\operatorname{ph}z|&lt;\tfrac{2}{3}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C9.S10.SS7.p1.s2">
+<Math equation-number="9.10.19" mode="display" xml:id="C9.S10.E19">\mathrm{Bi}\left(x\right)=\frac{3x^{5/4}e^{(2/3)x^{3/2}}}{2\pi}\*\pvint_{0}^{ \infty}\frac{t^{-3/4}e^{-(2/3)t^{3/2}}\mathrm{Ai}\left(t\right)}{x^{3/2}-t^{3/ 2}}\mathrm{d}t, if x&gt;0,</Math> where the last integral is a Cauchy principal value (§1.4(v)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS8">
+<title>Repeated Integrals</title>        
+     
+<para xml:id="C9.S10.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C9.S10.SS8.p1.s1">
+ <Math equation-number="9.10.20" mode="display" xml:id="C9.S10.E20">\int_{0}^{x}\!\!\int_{0}^{v}\mathrm{Ai}\left(t\right)\mathrm{d}t\mathrm{d}v=x \int_{0}^{x}\mathrm{Ai}\left(t\right)\mathrm{d}t-\mathrm{Ai}'\left(x\right)+ \mathrm{Ai}'\left(0\right),</Math> <Math equation-number="9.10.21" mode="display" xml:id="C9.S10.E21">\int_{0}^{x}\!\!\int_{0}^{v}\mathrm{Bi}\left(t\right)\mathrm{d}t\mathrm{d}v=x \int_{0}^{x}\mathrm{Bi}\left(t\right)\mathrm{d}t-\mathrm{Bi}'\left(x\right)+ \mathrm{Bi}'\left(0\right),</Math> <Math equation-number="9.10.22" mode="display" xml:id="C9.S10.E22">\int_{0}^{\infty}\!\!\int_{t}^{\infty}\!\!\!\!\cdots\int_{t}^{\infty}\mathrm{ Ai}\left({-}t\right)(\mathrm{d}t)^{n}=\frac{2\cos\left(\tfrac{1}{3}(n-1)\pi \right)}{3^{(n+2)/3}\Gamma\left(\tfrac{1}{3}n+\tfrac{2}{3}\right)}, if n=1,2,\ldots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S10.SS9">
+<title>Compendia</title>        
+  
+<para xml:id="C9.S10.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C9.S10.SS9.p1.s1">
+For further integrals, including the Airy transform, see §9.11(iv),Widder (1979), Prudnikov et al. (1990, §1.8.1),Prudnikov et al. (1992a, pp. 405–413), Prudnikov et al. (1992b, §4.3.25),Vallée and Soares (2010, Chapters 3, 4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

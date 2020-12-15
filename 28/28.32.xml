@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S32">
+<title>Mathematical Applications</title>        
+ 
+ 
+<subsection xml:id="C28.S32.SS1">
+<title>Elliptical Coordinates and an Integral Relationship</title>        
+   
+<para xml:id="C28.S32.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S32.SS1.p1.s1">
+If the boundary conditions in a physical problem relate to the perimeter of an ellipse, then elliptical coordinates are convenient.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S32.SS1.p1.s2">
+These are given by <Math equation-number="28.32.1" mode="display" xml:id="C28.S32.E1">x=c\cosh\xi\cos\eta,y=c\sinh\xi\sin\eta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S32.SS1.p1.s3">
+The two-dimensional wave equation <Math equation-number="28.32.2" mode="display" xml:id="C28.S32.E2">\frac{{\partial}^{2}V}{{\partial x}^{2}}+\frac{{\partial}^{2}V}{{\partial y}^{ 2}}+k^{2}V=0</Math> then becomes <Math equation-number="28.32.3" mode="display" xml:id="C28.S32.E3">\frac{{\partial}^{2}V}{{\partial\xi}^{2}}+\frac{{\partial}^{2}V}{{\partial\eta }^{2}}+\frac{1}{2}c^{2}k^{2}(\cosh\left(2\xi\right)-\cos\left(2\eta\right))V=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C28.S32.SS1.p1.s4">
+The separated solutions <Math mode="inline" xml:id="C28.S32.SS1.p1.m1">V(\xi,\eta)=v(\xi)w(\eta)</Math> can be obtained from the modified Mathieu’s equation (28.20.1) for <Math mode="inline" xml:id="C28.S32.SS1.p1.m2">v</Math> and from Mathieu’s equation (28.2.1) for <Math mode="inline" xml:id="C28.S32.SS1.p1.m3">w</Math> , where <Math mode="inline" xml:id="C28.S32.SS1.p1.m4">a</Math> is the separation constant and <Math mode="inline" xml:id="C28.S32.SS1.p1.m5">q=\tfrac{1}{4}c^{2}k^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S32.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S32.SS1.p2.s1">
+This leads to integral equations and an integral relation between the solutions of Mathieu’s equation (setting <Math mode="inline" xml:id="C28.S32.SS1.p2.m1">\zeta=\mathrm{i}\xi</Math> , <Math mode="inline" xml:id="C28.S32.SS1.p2.m2">z=\eta</Math> in(28.32.3)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S32.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C28.S32.SS1.p3.s1">
+Let <Math mode="inline" xml:id="C28.S32.SS1.p3.m1">u(\zeta)</Math> be a solution of Mathieu’s equation (28.2.1) and <Math mode="inline" xml:id="C28.S32.SS1.p3.m2">K(z,\zeta)</Math> be a solution of <Math equation-number="28.32.4" mode="display" xml:id="C28.S32.E4">\frac{{\partial}^{2}K}{{\partial z}^{2}}-\frac{{\partial}^{2}K}{{\partial\zeta }^{2}}=2q\left(\cos\left(2z\right)-\cos\left(2\zeta\right)\right)K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C28.S32.SS1.p3.s2">
+Also let <Math mode="inline" xml:id="C28.S32.SS1.p3.m3">\mathcal{L}</Math> be a curve (possibly improper) such that the quantity <Math equation-number="28.32.5" mode="display" xml:id="C28.S32.E5">K(z,\zeta)\frac{\mathrm{d}u(\zeta)}{\mathrm{d}\zeta}-u(\zeta)\frac{\partial K( z,\zeta)}{\partial\zeta}</Math> approaches the same value when <Math mode="inline" xml:id="C28.S32.SS1.p3.m4">\zeta</Math> tends to the endpoints of <Math mode="inline" xml:id="C28.S32.SS1.p3.m5">\mathcal{L}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C28.S32.SS1.p3.s3">
+Then <Math equation-number="28.32.6" mode="display" xml:id="C28.S32.E6">w(z)=\int_{\mathcal{L}}K(z,\zeta)u(\zeta)\mathrm{d}\zeta</Math> defines a solution of Mathieu’s equation, provided that (in the case of an improper curve) the integral converges with respect to <Math mode="inline" xml:id="C28.S32.SS1.p3.m6">z</Math> uniformly on compact subsets of <Math mode="inline" xml:id="C28.S32.SS1.p3.m7">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S32.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C28.S32.SS1.p4.s1">
+Kernels <Math mode="inline" xml:id="C28.S32.SS1.p4.m1">K</Math> can be found, for example, by separating solutions of the wave equation in other systems of orthogonal coordinates.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C28.S32.SS1.p4.s2">
+SeeSchmidt and Wolf (1979).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S32.SS2">
+<title>Paraboloidal Coordinates</title>        
+    
+<para xml:id="C28.S32.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C28.S32.SS2.p1.s1">
+The general paraboloidal coordinate system is linked with Cartesian coordinates via <Math equation-number="28.32.7" mode="display" xml:id="C28.S32.E7">x_{1}=\tfrac{1}{2}c\left(\cosh\left(2\alpha\right)+\cos\left(2\beta\right)- \cosh\left(2\gamma\right)\right),x_{2}=2c\cosh\alpha\cos\beta\sinh\gamma,x_{3}=2c\sinh\alpha\sin\beta\cosh\gamma,</Math> where <Math mode="inline" xml:id="C28.S32.SS2.p1.m1">c</Math> is a parameter, <Math mode="inline" xml:id="C28.S32.SS2.p1.m2">0\leq\alpha&lt;\infty</Math> , <Math mode="inline" xml:id="C28.S32.SS2.p1.m3">-\pi&lt;\beta\leq\pi</Math> , and <Math mode="inline" xml:id="C28.S32.SS2.p1.m4">0\leq\gamma&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C28.S32.SS2.p1.s2">
+When the Helmholtz equation <Math equation-number="28.32.8" mode="display" xml:id="C28.S32.E8">\nabla^{2}V+k^{2}V=0</Math> is separated in this system, each of the separated equations can be reduced to the Whittaker–Hill equation (28.31.1), in which <Math mode="inline" xml:id="C28.S32.SS2.p1.m5">A,B</Math> areseparation constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C28.S32.SS2.p1.s3">
+Two conditions are used to determine <Math mode="inline" xml:id="C28.S32.SS2.p1.m6">A,B</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C28.S32.SS2.p1.s4">
+The first is the <Math mode="inline" xml:id="C28.S32.SS2.p1.m7">2\pi</Math> -periodicity of the solutions; the second can be their asymptotic form.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" xml:id="C28.S32.SS2.p1.s5">
+For further information see Arscott (1967) for <Math mode="inline" xml:id="C28.S32.SS2.p1.m8">k^{2}&lt;0</Math> , and Urwin and Arscott (1970) for <Math mode="inline" xml:id="C28.S32.SS2.p1.m9">k^{2}&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

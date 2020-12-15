@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C24.S16">
+<title>Generalizations</title>        
+     
+<subsection xml:id="C24.S16.SS1">
+<title>Higher-Order Analogs</title>        
+ 
+<paragraph xml:id="C24.S16.Px1">
+<title>Polynomials and Numbers of Integer Order</title>   
+<para xml:id="C24.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C24.S16.Px1.p1.s1">
+For <Math mode="inline" xml:id="C24.S16.Px1.p1.m1">\ell=0,1,2,\ldots</Math> , Bernoulli and Euler polynomials of order <Math mode="inline" xml:id="C24.S16.Px1.p1.m2">\ell</Math> are defined respectively by <Math equation-number="24.16.1" mode="display" xml:id="C24.S16.E1">\left(\frac{t}{e^{t}-1}\right)^{\ell}e^{xt}=\sum_{n=0}^{\infty}B^{(\ell)}_{n} \left(x\right)\frac{t^{n}}{n!}, if |t|&lt;2\pi,</Math> , <Math equation-number="24.16.2" mode="display" xml:id="C24.S16.E2">\left(\frac{2}{e^{t}+1}\right)^{\ell}e^{xt}=\sum_{n=0}^{\infty}E^{(\ell)}_{n} \left(x\right)\frac{t^{n}}{n!}, if |t|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C24.S16.Px1.p1.s2">
+When <Math mode="inline" xml:id="C24.S16.Px1.p1.m5">x=0</Math> they reduce to the Bernoulli and Euler numbers of order <Math mode="inline" xml:id="C24.S16.Px1.p1.m6">\ell</Math> : <Math equation-number="24.16.3" mode="display" xml:id="C24.S16.E3">B^{(\ell)}_{n}=B^{(\ell)}_{n}\left(0\right),E^{(\ell)}_{n}=E^{(\ell)}_{n}\left(0\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C24.S16.Px1.p1.s3">
+Also for <Math mode="inline" xml:id="C24.S16.Px1.p1.m9">\ell=1,2,3,\ldots</Math> , <Math equation-number="24.16.4" mode="display" xml:id="C24.S16.E4">\left(\frac{\ln\left(1+t\right)}{t}\right)^{\ell}=\ell\sum_{n=0}^{\infty}\frac {B^{(\ell+n)}_{n}}{\ell+n}\frac{t^{n}}{n!}, if |t|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C24.S16.Px1.p1.s4">
+For this and other properties see Milne-Thomson (1933, pp. 126–153) or Nörlund (1924, pp. 144–162).
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S16.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C24.S16.Px1.p2.s1">
+For extensions of <Math mode="inline" xml:id="C24.S16.Px1.p2.m1">B^{(\ell)}_{n}\left(x\right)</Math> to complex values of <Math mode="inline" xml:id="C24.S16.Px1.p2.m2">x</Math> , <Math mode="inline" xml:id="C24.S16.Px1.p2.m3">n</Math> , and <Math mode="inline" xml:id="C24.S16.Px1.p2.m4">\ell</Math> , and also for uniform asymptotic expansions for large <Math mode="inline" xml:id="C24.S16.Px1.p2.m5">x</Math> and large <Math mode="inline" xml:id="C24.S16.Px1.p2.m6">n</Math> , see Temme (1995b) and López and Temme (1999b, 2010b).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C24.S16.Px2">
+<title>Bernoulli Numbers of the Second Kind</title>   
+ 
+<para xml:id="C24.S16.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C24.S16.Px2.p1.s1">
+ <Math equation-number="24.16.5" mode="display" xml:id="C24.S16.E5">\frac{t}{\ln\left(1+t\right)}=\sum_{n=0}^{\infty}b_{n}t^{n}, if |t|&lt;1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S16.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C24.S16.Px2.p2.s1">
+ <Math equation-number="24.16.6" mode="display" xml:id="C24.S16.E6">n!b_{n}=-\frac{1}{n-1}B^{(n-1)}_{n}, if n=2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C24.S16.Px3">
+<title>Degenerate Bernoulli Numbers</title>    
+<para xml:id="C24.S16.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C24.S16.Px3.p1.s1">
+For sufficiently small <Math mode="inline" xml:id="C24.S16.Px3.p1.m1">|t|</Math> , <Math equation-number="24.16.7" mode="display" xml:id="C24.S16.E7">\frac{t}{(1+\lambda t)^{\ifrac{1}{\lambda}}-1}=\sum_{n=0}^{\infty}\beta_{n}( \lambda)\frac{t^{n}}{n!},</Math> <Math equation-number="24.16.8" mode="display" xml:id="C24.S16.E8">\beta_{n}(\lambda)=n!b_{n}\lambda^{n}+\sum_{k=1}^{\left\lfloor\ifrac{n}{2} \right\rfloor}\frac{n}{2k}B_{2k}s\left(n-1,2k-1\right)\lambda^{n-2k}, if n=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C24.S16.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C24.S16.Px3.p1.m2">s\left(n,m\right)</Math> again denotes the Stirling number of the first kind.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C24.S16.Px4">
+<title>Nörlund Polynomials</title>    
+ 
+<para xml:id="C24.S16.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C24.S16.Px4.p1.s1">
+ <Math equation-number="24.16.9" mode="display" xml:id="C24.S16.E9">\left(\frac{t}{e^{t}-1}\right)^{x}=\sum_{n=0}^{\infty}B^{(x)}_{n}\frac{t^{n}}{ n!}, if |t|&lt;2\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C24.S16.Px4.p1.s2">
+<Math mode="inline" xml:id="C24.S16.Px4.p1.m1">B^{(x)}_{n}</Math> is a polynomial in <Math mode="inline" xml:id="C24.S16.Px4.p1.m2">x</Math> of degree <Math mode="inline" xml:id="C24.S16.Px4.p1.m3">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C24.S16.Px4.p1.s3">
+(This notation is consistent with (24.16.3) when <Math mode="inline" xml:id="C24.S16.Px4.p1.m4">x=\ell</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C24.S16.Px4.p1.s4">
+)
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S16.SS2">
+<title>Character Analogs</title>        
+   
+<para xml:id="C24.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C24.S16.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C24.S16.SS2.p1.m1">\chi</Math> be a primitive Dirichlet character <Math mode="inline" xml:id="C24.S16.SS2.p1.m2">\mod f</Math> (see §27.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C24.S16.SS2.p1.s2">
+Then <Math mode="inline" xml:id="C24.S16.SS2.p1.m3">f</Math> is called the conductor of <Math mode="inline" xml:id="C24.S16.SS2.p1.m4">\chi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C24.S16.SS2.p1.s3">
+Generalized Bernoulli numbers and polynomials belonging to <Math mode="inline" xml:id="C24.S16.SS2.p1.m5">\chi</Math> are defined by <Math equation-number="24.16.10" mode="display" xml:id="C24.S16.E10">\sum_{a=1}^{f}\frac{\chi(a)te^{at}}{e^{ft}-1}=\sum_{n=0}^{\infty}B_{n,\chi} \frac{t^{n}}{n!}</Math> , <Math equation-number="24.16.11" mode="display" xml:id="C24.S16.E11">B_{n,\chi}(x)=\sum_{k=0}^{n}{n\choose k}B_{k,\chi}x^{n-k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C24.S16.SS2.p1.s4">
+Let <Math mode="inline" xml:id="C24.S16.SS2.p1.m6">\chi_{0}</Math> be the trivial character and <Math mode="inline" xml:id="C24.S16.SS2.p1.m7">\chi_{4}</Math> the unique (nontrivial) character with <Math mode="inline" xml:id="C24.S16.SS2.p1.m8">f=4</Math> ; that is, <Math mode="inline" xml:id="C24.S16.SS2.p1.m9">\chi_{4}(1)=1</Math> , <Math mode="inline" xml:id="C24.S16.SS2.p1.m10">\chi_{4}(3)=-1</Math> , <Math mode="inline" xml:id="C24.S16.SS2.p1.m11">\chi_{4}(2)=\chi_{4}(4)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C24.S16.SS2.p1.s5">
+Then <Math equation-number="24.16.12" mode="display" xml:id="C24.S16.E12">B_{n}\left(x\right)=B_{n,\chi_{0}}(x-1),</Math> <Math equation-number="24.16.13" mode="display" xml:id="C24.S16.E13">E_{n}\left(x\right)=-\frac{2^{1-n}}{n+1}B_{n+1,\chi_{4}}(2x-1)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C24.S16.SS2.p2.s1">
+For further properties see Berndt (1975a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S16.SS3">
+<title>Other Generalizations</title>        
+     
+<para xml:id="C24.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C24.S16.SS3.p1.s1">
+In no particular order, other generalizations include: Bernoulli numbers and polynomials with arbitrary complex index (Butzer et al. (1992)); Euler numbers and polynomials with arbitrary complex index (Butzer et al. (1994)); q-analogs (Carlitz (1954a), Andrews and Foata (1980)); conjugateBernoulli and Euler polynomials (Hauss (1997, 1998)); Bernoulli–Hurwitz numbers (Katz (1975)); poly-Bernoulli numbers (Kaneko (1997)); Universal Bernoulli numbers (Clarke (1989)); <Math mode="inline" xml:id="C24.S16.SS3.p1.m1">p</Math> -adic integer order Bernoulli numbers (Adelberg (1996)); <Math mode="inline" xml:id="C24.S16.SS3.p1.m2">p</Math> -adic <Math mode="inline" xml:id="C24.S16.SS3.p1.m3">q</Math> -Bernoulli numbers (Kim and Kim (1999)); periodic Bernoulli numbers (Berndt (1975b)); cotangent numbers (Girstmair (1990b)); Bernoulli–Carlitz numbers (Goss (1978)); Bernoulli-Padé numbers (Dilcher (2002)); Bernoulli numbers belonging to periodic functions (Urbanowicz (1988)); cyclotomic Bernoulli numbers (Girstmair (1990a)); modified Bernoulli numbers (Zagier (1998)); higher-order Bernoulli and Euler polynomials with multiple parameters (Erdélyi et al. (1953a, §§1.13.1, 1.14.1)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

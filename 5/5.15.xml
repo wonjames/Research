@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S15">
+<title>Polygamma Functions</title>           
+  
+<para xml:id="C5.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S15.p1.s1">
+The functions <Math mode="inline" xml:id="C5.S15.p1.m1">\psi^{(n)}\left(z\right)</Math> , <Math mode="inline" xml:id="C5.S15.p1.m2">n=1,2,\dots</Math> , are called thepolygamma functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S15.p1.s2">
+In particular, <Math mode="inline" xml:id="C5.S15.p1.m3">\psi'\left(z\right)</Math> is thetrigamma function; <Math mode="inline" xml:id="C5.S15.p1.m4">\psi''</Math> , <Math mode="inline" xml:id="C5.S15.p1.m5">\psi^{(3)}</Math> , <Math mode="inline" xml:id="C5.S15.p1.m6">\psi^{(4)}</Math> are the tetra-, penta-, and hexagamma functions respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C5.S15.p1.s3">
+Most properties of these functions follow straightforwardly by differentiation of properties of the psi function.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C5.S15.p1.s4">
+This includes asymptotic expansions: compare §§2.1(ii)–2.1(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C5.S15.p2.s1">
+In (5.15.2)–(5.15.7)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C5.S15.p2.s2">
+<Math mode="inline" xml:id="C5.S15.p2.m1">n,m=1,2,3,\dots</Math> , and for <Math mode="inline" xml:id="C5.S15.p2.m2">\zeta\left(n+1\right)</Math> see §25.6(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C5.S15.p2.s3">
+<Math equation-number="5.15.1" mode="display" xml:id="C5.S15.E1">\psi'\left(z\right)=\sum_{k=0}^{\infty}\frac{1}{(k+z)^{2}}, if z\neq 0,-1,-2,\dots,</Math> <Math equation-number="5.15.2" mode="display" xml:id="C5.S15.E2">\psi^{(n)}\left(1\right)=(-1)^{n+1}n!\zeta\left(n+1\right)</Math> , <Math equation-number="5.15.3" mode="display" xml:id="C5.S15.E3">\psi^{(n)}\left(\tfrac{1}{2}\right)=(-1)^{n+1}n!(2^{n+1}-1)\zeta\left(n+1 \right),</Math> <Math equation-number="5.15.4" mode="display" xml:id="C5.S15.E4">\psi'\left(n-\tfrac{1}{2}\right)=\tfrac{1}{2}\pi^{2}-4\sum_{k=1}^{n-1}\frac{1} {(2k-1)^{2}},</Math> <Math equation-number="5.15.5" mode="display" xml:id="C5.S15.E5">{\psi^{(n)}}\left(z+1\right)={\psi^{(n)}}\left(z\right)+(-1)^{n}n!z^{-n-1}</Math> , <Math equation-number="5.15.6" mode="display" xml:id="C5.S15.E6">{\psi^{(n)}}\left(1-z\right)+(-1)^{n-1}{\psi^{(n)}}\left(z\right)=(-1)^{n}\pi \frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\cot\left(\pi z\right),</Math> <Math equation-number="5.15.7" mode="display" xml:id="C5.S15.E7">{\psi^{(n)}}\left(mz\right)=\frac{1}{m^{n+1}}\sum_{k=0}^{m-1}{\psi^{(n)}}\left (z+\frac{k}{m}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C5.S15.p3.s1">
+As <Math mode="inline" xml:id="C5.S15.p3.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C5.S15.p3.m2">|\operatorname{ph}z|\leq\pi-\delta\;(&lt;\pi)</Math> <Math equation-number="5.15.8" mode="display" xml:id="C5.S15.E8">\psi'\left(z\right)\sim\frac{1}{z}+\frac{1}{2z^{2}}+\sum_{k=1}^{\infty}\frac{B _{2k}}{z^{2k+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C5.S15.p3.s2">
+For <Math mode="inline" xml:id="C5.S15.p3.m3">B_{2k}</Math> see §24.2(i).
+</sentence>
+
+</para>
+  
+<para xml:id="C5.S15.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C5.S15.p4.s1">
+For continued fractions for <Math mode="inline" xml:id="C5.S15.p4.m1">\psi'\left(z\right)</Math> and <Math mode="inline" xml:id="C5.S15.p4.m2">\psi''\left(z\right)</Math> see Cuyt et al. (2008, pp. 231–238).
+</sentence>
+
+</para>
+ 
+</section>

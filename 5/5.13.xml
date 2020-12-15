@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S13">
+<title>Integrals</title>           
+<para xml:id="C5.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S13.p1.s1">
+In (5.13.1) the integration path is a straight line parallel to the imaginary axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S13.p1.s2">
+<Math equation-number="5.13.1" mode="display" xml:id="C5.S13.E1">{\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\Gamma\left(s+a\right)\Gamma\left (b-s\right)z^{-s}\mathrm{d}s=\frac{\Gamma\left(a+b\right)z^{a}}{(1+z)^{a+b}}}, if \Re(a+b)&gt;0, -\Re a&lt;c&lt;\Re b, |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C5.S13.p1.s3">
+<Math equation-number="5.13.2" mode="display" xml:id="C5.S13.E2">{\frac{1}{2\pi}\int_{-\infty}^{\infty}|\Gamma\left(a+it\right)|^{2}e^{(2b-\pi) t}\mathrm{d}t=\frac{\Gamma\left(2a\right)}{(2\sin b)^{2a}}}, if a&gt;0, 0&lt;b&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C5.S13.Px1">
+<title>Barnes’ Beta Integral</title>    
+<para xml:id="C5.S13.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C5.S13.Px1.p1.s1">
+ <Math equation-number="5.13.3" mode="display" xml:id="C5.S13.E3">\frac{1}{2\pi}\int_{-\infty}^{\infty}\Gamma\left(a+it\right)\Gamma\left(b+it \right)\Gamma\left(c-it\right)\Gamma\left(d-it\right)\mathrm{d}t=\frac{\Gamma \left(a+c\right)\Gamma\left(a+d\right)\Gamma\left(b+c\right)\Gamma\left(b+d \right)}{\Gamma\left(a+b+c+d\right)}, if \Re a,\Re b,\Re c,\Re d&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C5.S13.Px2">
+<title>Ramanujan’s Beta Integral</title>    
+<para xml:id="C5.S13.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C5.S13.Px2.p1.s1">
+ <Math equation-number="5.13.4" mode="display" xml:id="C5.S13.E4">\int_{-\infty}^{\infty}\frac{\mathrm{d}t}{\Gamma\left(a+t\right)\Gamma\left(b+ t\right)\Gamma\left(c-t\right)\Gamma\left(d-t\right)}=\frac{\Gamma\left(a+b+c+ d-3\right)}{\Gamma\left(a+c-1\right)\Gamma\left(a+d-1\right)\Gamma\left(b+c-1 \right)\Gamma\left(b+d-1\right)}, if \Re(a+b+c+d)&gt;3</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C5.S13.Px3">
+<title>de Branges–Wilson Beta Integral</title>    
+<para xml:id="C5.S13.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C5.S13.Px3.p1.s1">
+ <Math equation-number="5.13.5" mode="display" xml:id="C5.S13.E5">\frac{1}{4\pi}\int_{-\infty}^{\infty}\frac{\prod_{k=1}^{4}\Gamma\left(a_{k}+it \right)\Gamma\left(a_{k}-it\right)}{\Gamma\left(2it\right)\Gamma\left(-2it \right)}\mathrm{d}t=\frac{\prod_{1\leq j&lt;k\leq 4}\Gamma\left(a_{j}+a_{k}\right )}{\Gamma\left(a_{1}+a_{2}+a_{3}+a_{4}\right)}, if \Re(a_{k})&gt;0, k=1,2,3,4</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S13.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C5.S13.Px3.p2.s1">
+For compendia of integrals of gamma functions seeApelblat (1983, pp. 124–127 and 129–130),Erdélyi et al. (1954a, b),Gradshteyn and Ryzhik (2000, pp. 644–652),Oberhettinger (1974, pp. 191–204),Oberhettinger and Badii (1973, pp. 307–316),Prudnikov et al. (1986b, pp. 57–64),Prudnikov et al. (1992a, pp. 127–130), andPrudnikov et al. (1992b, pp. 113–123).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

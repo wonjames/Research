@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S5">
+<title>Bessel Functions of Matrix Argument</title>          
+<subsection xml:id="C35.S5.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S5.SS1.p1.s1">
+ <Math equation-number="35.5.1" mode="display" xml:id="C35.S5.E1">A_{\nu}\left(\boldsymbol{{0}}\right)=\frac{1}{\Gamma_{m}\left(\nu+\frac{1}{2}( m+1)\right)}, if \nu\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C35.S5.SS1.p1.s2">
+<Math equation-number="35.5.2" mode="display" xml:id="C35.S5.E2">A_{\nu}\left(\mathbf{T}\right)=A_{\nu}\left(\boldsymbol{{0}}\right)\sum_{k=0}^ {\infty}\frac{(-1)^{k}}{k!}\sum_{|\kappa|=k}\frac{1}{{\left[\nu+\frac{1}{2}(m+ 1)\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right), if \nu\in\mathbb{C}, \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C35.S5.SS1.p1.s3">
+<Math equation-number="35.5.3" mode="display" xml:id="C35.S5.E3">B_{\nu}\left(\mathbf{T}\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-( \mathbf{T}\mathbf{X}+\mathbf{X}^{-1})\right)|\mathbf{X}|^{\nu-\frac{1}{2}(m+1) }\mathrm{d}\mathbf{X}, if \nu\in\mathbb{C}, \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S5.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S5.SS2.p1.s1">
+ <Math equation-number="35.5.4" mode="display" xml:id="C35.S5.E4">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{\nu}A_{\nu}\left(\mathbf{S}\mathbf{X}\right)\mathrm{d}\mathbf{X}= \mathrm{etr}\left(-\mathbf{S}\mathbf{T}^{-1}\right)|\mathbf{T}|^{-\nu-\frac{1} {2}(m+1)}, if \mathbf{S}\in\boldsymbol{\mathcal{S}}, \mathbf{T}\in{\boldsymbol{\Omega}}; \Re(\nu)&gt;-1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C35.S5.SS2.p2.s1">
+ <Math equation-number="35.5.5" mode="display" xml:id="C35.S5.E5">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}A_{\nu_{1}}\left(\mathbf{S }_{1}\mathbf{X}\right)|\mathbf{X}|^{\nu_{1}}\*A_{\nu_{2}}\left(\mathbf{S}_{2}( \mathbf{T}-\mathbf{X})\right)|\mathbf{T}-\mathbf{X}|^{\nu_{2}}\mathrm{d} \mathbf{X}=|\mathbf{T}|^{\nu_{1}+\nu_{2}+\frac{1}{2}(m+1)}A_{\nu_{1}+\nu_{2}+ \frac{1}{2}(m+1)}\left((\mathbf{S}_{1}+\mathbf{S}_{2})\mathbf{T}\right), if \nu_{j}\in\mathbb{C}, \Re(\nu_{j})&gt;-1, j=1,2; \mathbf{S}_{1},\mathbf{S}_{2}\in\boldsymbol{\mathcal{S}}; \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C35.S5.SS2.p2.s2">
+<Math equation-number="35.5.6" mode="display" xml:id="C35.S5.E6">B_{\nu}\left(\mathbf{T}\right)=|\mathbf{T}|^{-\nu}B_{-\nu}\left(\mathbf{T} \right), if \nu\in\mathbb{C}, \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C35.S5.SS2.p2.s3">
+<Math equation-number="35.5.7" mode="display" xml:id="C35.S5.E7">\int_{\boldsymbol{\Omega}}A_{\nu_{1}}\left(\mathbf{T}\mathbf{X}\right)B_{-\nu_ {2}}\left(\mathbf{S}\mathbf{X}\right)|\mathbf{X}|^{\nu_{1}}\mathrm{d}\mathbf{X }=\frac{1}{A_{\nu_{1}+\nu_{2}}\left(\boldsymbol{{0}}\right)}|\mathbf{S}|^{\nu_ {2}}|\mathbf{T}+\mathbf{S}|^{-(\nu_{1}+\nu_{2}+\frac{1}{2}(m+1))}, if \Re(\nu_{1}+\nu_{2})&gt;-1; \mathbf{S},\mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C35.S5.SS2.p2.s4">
+<Math equation-number="35.5.8" mode="display" xml:id="C35.S5.E8">\int_{\mathbf{O}(m)}\mathrm{etr}\left(\mathbf{S}\mathbf{H}\right)\mathrm{d} \mathbf{H}=\frac{A_{-1/2}\left(-\frac{1}{4}\mathbf{S}\mathbf{S}^{\mathrm{T}} \right)}{A_{-1/2}\left(\boldsymbol{{0}}\right)}, if \mathbf{S} arbitrary</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S5.SS3">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C35.S5.SS3.p1.s1">
+For asymptotic approximations for Bessel functions of matrix argument, seeHerz (1955) and Butler and Wood (2003).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

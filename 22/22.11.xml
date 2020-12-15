@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S11">
+<title>Fourier and Hyperbolic Series</title>        
+   
+<para xml:id="C22.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S11.p1.s1">
+Throughout this section <Math mode="inline" xml:id="C22.S11.p1.m1">q</Math> and <Math mode="inline" xml:id="C22.S11.p1.m2">\zeta</Math> are defined as in §22.2.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C22.S11.p2.s1">
+If <Math mode="inline" xml:id="C22.S11.p2.m1">q\exp\left(2|\Im\zeta|\right)&lt;1</Math> , then <Math equation-number="22.11.1" mode="display" xml:id="C22.S11.E1">\operatorname{sn}\left(z,k\right)=\frac{2\pi}{Kk}\sum_{n=0}^{\infty}\frac{q^{n +\frac{1}{2}}\sin\left((2n+1)\zeta\right)}{1-q^{2n+1}},</Math> , <Math equation-number="22.11.2" mode="display" xml:id="C22.S11.E2">\operatorname{cn}\left(z,k\right)=\frac{2\pi}{Kk}\sum_{n=0}^{\infty}\frac{q^{n +\frac{1}{2}}\cos\left((2n+1)\zeta\right)}{1+q^{2n+1}},</Math> , <Math equation-number="22.11.3" mode="display" xml:id="C22.S11.E3">\operatorname{dn}\left(z,k\right)=\frac{\pi}{2K}+\frac{2\pi}{K}\sum_{n=1}^{ \infty}\frac{q^{n}\cos\left(2n\zeta\right)}{1+q^{2n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C22.S11.p2.s2">
+<Math equation-number="22.11.4" mode="display" xml:id="C22.S11.E4">\operatorname{cd}\left(z,k\right)=\frac{2\pi}{Kk}\sum_{n=0}^{\infty}\frac{(-1) ^{n}q^{n+\frac{1}{2}}\cos\left((2n+1)\zeta\right)}{1-q^{2n+1}},</Math> , <Math equation-number="22.11.5" mode="display" xml:id="C22.S11.E5">\operatorname{sd}\left(z,k\right)=\frac{2\pi}{Kkk^{\prime}}\sum_{n=0}^{\infty} \frac{(-1)^{n}q^{n+\frac{1}{2}}\sin\left((2n+1)\zeta\right)}{1+q^{2n+1}},</Math> , <Math equation-number="22.11.6" mode="display" xml:id="C22.S11.E6">\operatorname{nd}\left(z,k\right)=\frac{\pi}{2Kk^{\prime}}+\frac{2\pi}{Kk^{ \prime}}\sum_{n=1}^{\infty}\frac{(-1)^{n}q^{n}\cos\left(2n\zeta\right)}{1+q^{2 n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C22.S11.p3.s1">
+Next, if <Math mode="inline" xml:id="C22.S11.p3.m1">q\exp\left(|\Im\zeta|\right)&lt;1</Math> , then <Math equation-number="22.11.7" mode="display" xml:id="C22.S11.E7">\operatorname{ns}\left(z,k\right)-\frac{\pi}{2K}\csc\zeta=\frac{2\pi}{K}\sum_{ n=0}^{\infty}\frac{q^{2n+1}\sin\left((2n+1)\zeta\right)}{1-q^{2n+1}},</Math> , <Math equation-number="22.11.8" mode="display" xml:id="C22.S11.E8">\operatorname{ds}\left(z,k\right)-\frac{\pi}{2K}\csc\zeta=-\frac{2\pi}{K}\sum_ {n=0}^{\infty}\frac{q^{2n+1}\sin\left((2n+1)\zeta\right)}{1+q^{2n+1}},</Math> , <Math equation-number="22.11.9" mode="display" xml:id="C22.S11.E9">\operatorname{cs}\left(z,k\right)-\frac{\pi}{2K}\cot\zeta=-\frac{2\pi}{K}\sum_ {n=1}^{\infty}\frac{q^{2n}\sin\left(2n\zeta\right)}{1+q^{2n}},</Math> <Math equation-number="22.11.10" mode="display" xml:id="C22.S11.E10">\operatorname{dc}\left(z,k\right)-\frac{\pi}{2K}\sec\zeta=\frac{2\pi}{K}\sum_{ n=0}^{\infty}\frac{(-1)^{n}q^{2n+1}\cos\left((2n+1)\zeta\right)}{1-q^{2n+1}},</Math> <Math equation-number="22.11.11" mode="display" xml:id="C22.S11.E11">\operatorname{nc}\left(z,k\right)-\frac{\pi}{2Kk^{\prime}}\sec\zeta=-\frac{2 \pi}{Kk^{\prime}}\sum_{n=0}^{\infty}\frac{(-1)^{n}q^{2n+1}\cos\left((2n+1) \zeta\right)}{1+q^{2n+1}},</Math> <Math equation-number="22.11.12" mode="display" xml:id="C22.S11.E12">\operatorname{sc}\left(z,k\right)-\frac{\pi}{2Kk^{\prime}}\tan\zeta=\frac{2\pi }{Kk^{\prime}}\sum_{n=1}^{\infty}\frac{(-1)^{n}q^{2n}\sin\left(2n\zeta\right)} {1+q^{2n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C22.S11.p3.s2">
+In (22.11.7)–(22.11.12) the left-hand sides are replaced by their limiting values at the poles of the Jacobian functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S11.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C22.S11.p4.s1">
+Next, with <Math mode="inline" xml:id="C22.S11.p4.m1">E=E\left(k\right)</Math> denoting the complete elliptic integral of the second kind (§19.2(ii)) and <Math mode="inline" xml:id="C22.S11.p4.m2">q\exp\left(2|\Im\zeta|\right)&lt;1</Math> , <Math equation-number="22.11.13" mode="display" xml:id="C22.S11.E13">{\operatorname{sn}^{2}}\left(z,k\right)=\frac{1}{k^{2}}\left(1-\frac{E}{K} \right)-\frac{2\pi^{2}}{k^{2}K^{2}}\sum_{n=1}^{\infty}\frac{nq^{n}}{1-q^{2n}} \cos\left(2n\zeta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C22.S11.p4.s2">
+Similar expansions for <Math mode="inline" xml:id="C22.S11.p4.m3">{\operatorname{cn}^{2}}\left(z,k\right)</Math> and <Math mode="inline" xml:id="C22.S11.p4.m4">{\operatorname{dn}^{2}}\left(z,k\right)</Math> follow immediately from (22.6.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S11.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C22.S11.p5.s1">
+For further Fourier series see Oberhettinger (1973, pp. 23–27).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S11.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C22.S11.p6.s1">
+A related hyperbolic series is <Math equation-number="22.11.14" mode="display" xml:id="C22.S11.E14">k^{2}{\operatorname{sn}^{2}}\left(z,k\right)=\frac{{E^{\prime}}}{{K^{\prime}}} -\left(\frac{\pi}{2\!{K^{\prime}}}\right)^{2}\sum_{n=-\infty}^{\infty}\left({ \operatorname{sech}^{2}}\left(\frac{\pi}{2\!{K^{\prime}}}(z-2n\!K)\right) \right),</Math> where <Math mode="inline" xml:id="C22.S11.p6.m1">{E^{\prime}}={E^{\prime}}\left(k\right)</Math> is defined by §19.2.9.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C22.S11.p6.s2">
+Again,similar expansions for <Math mode="inline" xml:id="C22.S11.p6.m2">{\operatorname{cn}^{2}}\left(z,k\right)</Math> and <Math mode="inline" xml:id="C22.S11.p6.m3">{\operatorname{dn}^{2}}\left(z,k\right)</Math> may be derived via (22.6.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C22.S11.p6.s3">
+See Dunne and Rao (2000).
+</sentence>
+
+</para>
+ 
+</section>

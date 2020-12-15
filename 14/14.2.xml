@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S2">
+<title>Differential Equations</title>         
+<subsection xml:id="C14.S2.SS1">
+<title>Legendre’s Equation</title>          
+ 
+<para xml:id="C14.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S2.SS1.p1.s1">
+ <Math equation-number="14.2.1" mode="display" xml:id="C14.S2.E1">\left(1-x^{2}\right)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}-2x\frac{ \mathrm{d}w}{\mathrm{d}x}+\nu(\nu+1)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S2.SS1.p1.s2">
+Standard solutions: <Math mode="inline" xml:id="C14.S2.SS1.p1.m1">\mathsf{P}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS1.p1.m2">\mathsf{Q}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS1.p1.m3">\mathsf{Q}_{-\nu-1}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS1.p1.m4">P_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS1.p1.m5">Q_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS1.p1.m6">Q_{-\nu-1}\left(\pm x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S2.SS1.p1.s3">
+<Math mode="inline" xml:id="C14.S2.SS1.p1.m7">\mathsf{P}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS1.p1.m8">\mathsf{Q}_{\nu}\left(x\right)</Math> are real when <Math mode="inline" xml:id="C14.S2.SS1.p1.m9">\nu\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C14.S2.SS1.p1.m10">x\in(-1,1)</Math> , and <Math mode="inline" xml:id="C14.S2.SS1.p1.m11">P_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS1.p1.m12">Q_{\nu}\left(x\right)</Math> are real when <Math mode="inline" xml:id="C14.S2.SS1.p1.m13">\nu\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C14.S2.SS1.p1.m14">x\in(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S2.SS2">
+<title>Associated Legendre Equation</title>             
+<para xml:id="C14.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C14.S2.SS2.p1.s1">
+ <Math equation-number="14.2.2" mode="display" xml:id="C14.S2.E2">\left(1-x^{2}\right)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}-2x\frac{ \mathrm{d}w}{\mathrm{d}x}+\left(\nu(\nu+1)-\frac{\mu^{2}}{1-x^{2}}\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C14.S2.SS2.p1.s2">
+Standard solutions: <Math mode="inline" xml:id="C14.S2.SS2.p1.m1">\mathsf{P}^{\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m2">\mathsf{P}^{-\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m3">\mathsf{Q}^{\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m4">\mathsf{Q}^{\mu}_{-\nu-1}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m5">P^{\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m6">P^{-\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m7">\boldsymbol{Q}^{\mu}_{\nu}\left(\pm x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p1.m8">\boldsymbol{Q}^{\mu}_{-\nu-1}\left(\pm x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C14.S2.SS2.p2.s1">
+(14.2.2) reduces to (14.2.1) when <Math mode="inline" xml:id="C14.S2.SS2.p2.m1">\mu=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C14.S2.SS2.p2.s2">
+Ferrers functions and the associated Legendre functions are related to the Legendre functions by the equations <Math mode="inline" xml:id="C14.S2.SS2.p2.m7">\mathsf{P}^{0}_{\nu}\left(x\right)=\mathsf{P}_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p2.m8">\mathsf{Q}^{0}_{\nu}\left(x\right)=\mathsf{Q}_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p2.m9">P^{0}_{\nu}\left(x\right)=P_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p2.m10">Q^{0}_{\nu}\left(x\right)=Q_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p2.m11">\boldsymbol{Q}^{0}_{\nu}\left(x\right)=\boldsymbol{Q}_{\nu}\left(x\right)=Q_{ \nu}\left(x\right)/\Gamma\left(\nu+1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C14.S2.SS2.p3.s1">
+ <Math mode="inline" xml:id="C14.S2.SS2.p3.m1">\mathsf{P}^{\mu}_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p3.m2">\mathsf{P}^{\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , and <Math mode="inline" xml:id="C14.S2.SS2.p3.m3">\mathsf{Q}^{\mu}_{\nu}\left(x\right)</Math> are real when <Math mode="inline" xml:id="C14.S2.SS2.p3.m4">\nu</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p3.m5">\mu</Math> , and <Math mode="inline" xml:id="C14.S2.SS2.p3.m6">\tau\in\mathbb{R}</Math> , and <Math mode="inline" xml:id="C14.S2.SS2.p3.m7">x\in(-1,1)</Math> ; <Math mode="inline" xml:id="C14.S2.SS2.p3.m8">P^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS2.p3.m9">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)</Math> are real when <Math mode="inline" xml:id="C14.S2.SS2.p3.m10">\nu</Math> and <Math mode="inline" xml:id="C14.S2.SS2.p3.m11">\mu\in\mathbb{R}</Math> , and <Math mode="inline" xml:id="C14.S2.SS2.p3.m12">x\in(1,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S2.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C14.S2.SS2.p4.s1">
+Unless stated otherwise in §§14.2–14.20 it is assumed that the arguments of the functions <Math mode="inline" xml:id="C14.S2.SS2.p4.m1">\mathsf{P}^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS2.p4.m2">\mathsf{Q}^{\mu}_{\nu}\left(x\right)</Math> lie in the interval <Math mode="inline" xml:id="C14.S2.SS2.p4.m3">(-1,1)</Math> , and the arguments of the functions <Math mode="inline" xml:id="C14.S2.SS2.p4.m4">P^{\mu}_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S2.SS2.p4.m5">Q^{\mu}_{\nu}\left(x\right)</Math> , and <Math mode="inline" xml:id="C14.S2.SS2.p4.m6">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)</Math> lie in the interval <Math mode="inline" xml:id="C14.S2.SS2.p4.m7">(1,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C14.S2.SS2.p4.s2">
+For extensions to complex arguments see §§14.21–14.28.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S2.SS3">
+<title>Numerically Satisfactory Solutions</title>         
+   
+<para xml:id="C14.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C14.S2.SS3.p1.s1">
+Equation (14.2.2) has regular singularities at <Math mode="inline" xml:id="C14.S2.SS3.p1.m1">x=1</Math> , <Math mode="inline" xml:id="C14.S2.SS3.p1.m2">-1</Math> , and <Math mode="inline" xml:id="C14.S2.SS3.p1.m3">\infty</Math> , with exponent pairs <Math mode="inline" xml:id="C14.S2.SS3.p1.m4">\left\{-\frac{1}{2}\mu,\frac{1}{2}\mu\right\}</Math> , <Math mode="inline" xml:id="C14.S2.SS3.p1.m5">\left\{-\frac{1}{2}\mu,\frac{1}{2}\mu\right\}</Math> , and <Math mode="inline" xml:id="C14.S2.SS3.p1.m6">\left\{-\nu-1,\nu\right\}</Math> , respectively; compare §2.7(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C14.S2.SS3.p2.s1">
+When <Math mode="inline" xml:id="C14.S2.SS3.p2.m1">\mu-\nu\neq 0,-1,-2,\dots</Math> , and <Math mode="inline" xml:id="C14.S2.SS3.p2.m2">\mu+\nu\neq-1,-2,-3,\dots</Math> , <Math mode="inline" xml:id="C14.S2.SS3.p2.m3">\mathsf{P}^{-\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p2.m4">\mathsf{P}^{-\mu}_{\nu}\left(-x\right)</Math> are linearly independent, and when <Math mode="inline" xml:id="C14.S2.SS3.p2.m5">\Re\mu\geq 0</Math> they are recessive at <Math mode="inline" xml:id="C14.S2.SS3.p2.m6">x=1</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p2.m7">x=-1</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C14.S2.SS3.p2.s2">
+Hence they comprise a numerically satisfactory pair of solutions (§2.7(iv)) of (14.2.2) in the interval <Math mode="inline" xml:id="C14.S2.SS3.p2.m8">-1&lt;x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C14.S2.SS3.p2.s3">
+When <Math mode="inline" xml:id="C14.S2.SS3.p2.m9">\mu-\nu=0,-1,-2,\dots</Math> , or <Math mode="inline" xml:id="C14.S2.SS3.p2.m10">\mu+\nu=-1,-2,-3,\dots</Math> , <Math mode="inline" xml:id="C14.S2.SS3.p2.m11">\mathsf{P}^{-\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p2.m12">\mathsf{P}^{-\mu}_{\nu}\left(-x\right)</Math> are linearly dependent, and in these cases eithermay be paired with almost any linearly independent solution to form a numerically satisfactory pair.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C14.S2.SS3.p3.s1">
+When <Math mode="inline" xml:id="C14.S2.SS3.p3.m1">\Re\mu\geq 0</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p3.m2">\Re\nu\geq-\frac{1}{2}</Math> , <Math mode="inline" xml:id="C14.S2.SS3.p3.m3">P^{-\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p3.m4">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)</Math> are linearly independent, and recessive at <Math mode="inline" xml:id="C14.S2.SS3.p3.m5">x=1</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p3.m6">x=\infty</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C14.S2.SS3.p3.s2">
+Hence they comprise a numerically satisfactory pair of solutions of (14.2.2) in the interval <Math mode="inline" xml:id="C14.S2.SS3.p3.m7">1&lt;x&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C14.S2.SS3.p3.s3">
+With the same conditions, <Math mode="inline" xml:id="C14.S2.SS3.p3.m8">P^{-\mu}_{\nu}\left(-x\right)</Math> and <Math mode="inline" xml:id="C14.S2.SS3.p3.m9">\boldsymbol{Q}^{\mu}_{\nu}\left(-x\right)</Math> comprise a numerically satisfactory pair of solutions in the interval <Math mode="inline" xml:id="C14.S2.SS3.p3.m10">-\infty&lt;x&lt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S2.SS4">
+<title>Wronskians and Cross-Products</title>          
+<para xml:id="C14.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C14.S2.SS4.p1.s1">
+ <Math equation-number="14.2.3" mode="display" xml:id="C14.S2.E3">\mathscr{W}\left\{\mathsf{P}^{-\mu}_{\nu}\left(x\right),\mathsf{P}^{-\mu}_{\nu }\left(-x\right)\right\}=\frac{2}{\Gamma\left(\mu-\nu\right)\Gamma\left(\nu+ \mu+1\right)\left(1-x^{2}\right)},</Math> <Math equation-number="14.2.4" mode="display" xml:id="C14.S2.E4">\mathscr{W}\left\{\mathsf{P}^{\mu}_{\nu}\left(x\right),\mathsf{Q}^{\mu}_{\nu} \left(x\right)\right\}=\frac{\Gamma\left(\nu+\mu+1\right)}{\Gamma\left(\nu-\mu +1\right)\left(1-x^{2}\right)},</Math> <Math equation-number="14.2.5" mode="display" xml:id="C14.S2.E5">\mathsf{P}^{\mu}_{\nu+1}\left(x\right)\mathsf{Q}^{\mu}_{\nu}\left(x\right)- \mathsf{P}^{\mu}_{\nu}\left(x\right)\mathsf{Q}^{\mu}_{\nu+1}\left(x\right)= \frac{\Gamma\left(\nu+\mu+1\right)}{\Gamma\left(\nu-\mu+2\right)},</Math> <Math equation-number="14.2.6" mode="display" xml:id="C14.S2.E6">\mathscr{W}\left\{\mathsf{P}^{-\mu}_{\nu}\left(x\right),\mathsf{Q}^{\mu}_{\nu} \left(x\right)\right\}=\frac{\cos\left(\mu\pi\right)}{1-x^{2}},</Math> , <Math equation-number="14.2.7" mode="display" xml:id="C14.S2.E7">\mathscr{W}\left\{P^{-\mu}_{\nu}\left(x\right),P^{\mu}_{\nu}\left(x\right) \right\}=\mathscr{W}\left\{\mathsf{P}^{-\mu}_{\nu}\left(x\right),\mathsf{P}^{ \mu}_{\nu}\left(x\right)\right\}=\frac{2\sin\left(\mu\pi\right)}{\pi\left(1-x^ {2}\right)},</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C14.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C14.S2.SS4.p2.s1">
+ <Math equation-number="14.2.8" mode="display" xml:id="C14.S2.E8">\mathscr{W}\left\{P^{-\mu}_{\nu}\left(x\right),\boldsymbol{Q}^{\mu}_{\nu}\left (x\right)\right\}=-\frac{1}{\Gamma\left(\nu+\mu+1\right)\left(x^{2}-1\right)},</Math> <Math equation-number="14.2.9" mode="display" xml:id="C14.S2.E9">\mathscr{W}\left\{\boldsymbol{Q}^{\mu}_{\nu}\left(x\right),\boldsymbol{Q}^{\mu }_{-\nu-1}\left(x\right)\right\}=\frac{\cos\left(\nu\pi\right)}{x^{2}-1},</Math> <Math equation-number="14.2.10" mode="display" xml:id="C14.S2.E10">\mathscr{W}\left\{P^{\mu}_{\nu}\left(x\right),Q^{\mu}_{\nu}\left(x\right) \right\}=-e^{\mu\pi i}\frac{\Gamma\left(\nu+\mu+1\right)}{\Gamma\left(\nu-\mu+ 1\right)\left(x^{2}-1\right)},</Math> <Math equation-number="14.2.11" mode="display" xml:id="C14.S2.E11">P^{\mu}_{\nu+1}\left(x\right)Q^{\mu}_{\nu}\left(x\right)-P^{\mu}_{\nu}\left(x \right)Q^{\mu}_{\nu+1}\left(x\right)=e^{\mu\pi i}\frac{\Gamma\left(\nu+\mu+1 \right)}{\Gamma\left(\nu-\mu+2\right)}</Math>.
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+</section>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S7">
+<title>Series Expansions</title>         
+<subsection xml:id="C5.S7.SS1">
+<title>Maclaurin and Taylor Series</title>        
+  
+<para xml:id="C5.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S7.SS1.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C5.S7.SS1.p1.m1">\zeta\left(k\right)</Math> is as in Chapter 25.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S7.SS1.p1.s2">
+<Math equation-number="5.7.1" mode="display" xml:id="C5.S7.E1">\frac{1}{\Gamma\left(z\right)}=\sum_{k=1}^{\infty}c_{k}z^{k},</Math> where <Math mode="inline" xml:id="C5.S7.SS1.p1.m2">c_{1}=1</Math> , <Math mode="inline" xml:id="C5.S7.SS1.p1.m3">c_{2}=\gamma</Math> , and <Math equation-number="5.7.2" mode="display" xml:id="C5.S7.E2">(k-1)c_{k}=\gamma c_{k-1}-\zeta\left(2\right)c_{k-2}+\zeta\left(3\right)c_{k-3 }-\dots+(-1)^{k}\zeta\left(k-1\right)c_{1}, if k\geq 3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C5.S7.SS1.p1.s3">
+For 15D numerical values of <Math mode="inline" xml:id="C5.S7.SS1.p1.m4">c_{k}</Math> see Abramowitz and Stegun (1964, p. 256), and for 31D values see Wrench (1968).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C5.S7.SS1.p1.s4">
+<Math equation-number="5.7.3" mode="display" xml:id="C5.S7.E3">\ln\Gamma\left(1+z\right)=-\ln\left(1+z\right)+z(1-\gamma)+\sum_{k=2}^{\infty} (-1)^{k}(\zeta\left(k\right)-1)\frac{z^{k}}{k}, if |z|&lt;2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C5.S7.SS1.p1.s5">
+<Math equation-number="5.7.4" mode="display" xml:id="C5.S7.E4">\psi\left(1+z\right)=-\gamma+\sum_{k=2}^{\infty}(-1)^{k}\zeta\left(k\right)z^{ k-1}, if |z|&lt;1,</Math> , <Math equation-number="5.7.5" mode="display" xml:id="C5.S7.E5">\psi\left(1+z\right)=\frac{1}{2z}-\frac{\pi}{2}\cot\left(\pi z\right)+\frac{1} {z^{2}-1}+1-\gamma-\sum_{k=1}^{\infty}(\zeta\left(2k+1\right)-1)z^{2k}, if |z|&lt;2, z\neq 0,\pm 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C5.S7.SS1.p2.s1">
+For 20D numerical values of the coefficients of the Maclaurin series for <Math mode="inline" xml:id="C5.S7.SS1.p2.m1">\Gamma\left(z+3\right)</Math> see Luke (1969b, p. 299).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S7.SS2">
+<title>Other Series</title>         
+ 
+<para xml:id="C5.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C5.S7.SS2.p1.s1">
+When <Math mode="inline" xml:id="C5.S7.SS2.p1.m1">z\neq 0,-1,-2,\dots</Math> , <Math equation-number="5.7.6" mode="display" xml:id="C5.S7.E6">\psi\left(z\right)=-\gamma-\frac{1}{z}+\sum_{k=1}^{\infty}\frac{z}{k(k+z)}=- \gamma+\sum_{k=0}^{\infty}\left(\frac{1}{k+1}-\frac{1}{k+z}\right),</Math> and <Math equation-number="5.7.7" mode="display" xml:id="C5.S7.E7">\psi\left(\frac{z+1}{2}\right)-\psi\left(\frac{z}{2}\right)=2\sum_{k=0}^{ \infty}\frac{(-1)^{k}}{k+z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C5.S7.SS2.p1.s2">
+Also, <Math equation-number="5.7.8" mode="display" xml:id="C5.S7.E8">\Im\psi\left(1+\mathrm{i}y\right)=\sum_{k=1}^{\infty}\frac{y}{k^{2}+y^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

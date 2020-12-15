@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S11">
+<title>Riemann’s Differential Equation</title>        
+ 
+ 
+<subsection xml:id="C15.S11.SS1">
+<title>Equations with Three Singularities</title>          
+<para xml:id="C15.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S11.SS1.p1.s1">
+The importance of (15.10.1) is that any homogeneous linear differential equation of the second order with at most three distinct singularities, all regular, in the extended plane can be transformed into (15.10.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S11.SS1.p1.s2">
+The most general form is given by <Math equation-number="15.11.1" mode="display" xml:id="C15.S11.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{1-a_{1}-a_{2}}{z- \alpha}+\frac{1-b_{1}-b_{2}}{z-\beta}+\frac{1-c_{1}-c_{2}}{z-\gamma}\right) \frac{\mathrm{d}w}{\mathrm{d}z}+{\left(\frac{(\alpha-\beta)(\alpha-\gamma)a_{1 }a_{2}}{z-\alpha}+\frac{(\beta-\alpha)(\beta-\gamma)b_{1}b_{2}}{z-\beta}+\frac {(\gamma-\alpha)(\gamma-\beta)c_{1}c_{2}}{z-\gamma}\right)\frac{w}{(z-\alpha)( z-\beta)(z-\gamma)}=0},</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C15.S11.SS1.p2.s1">
+with <Math equation-number="15.11.2" mode="display" xml:id="C15.S11.E2">a_{1}+a_{2}+b_{1}+b_{2}+c_{1}+c_{2}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C15.S11.SS1.p2.s2">
+Here <Math mode="inline" xml:id="C15.S11.SS1.p2.m1">\{a_{1},a_{2}\}</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m2">\{b_{1},b_{2}\}</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m3">\{c_{1},c_{2}\}</Math> are the exponent pairs at the points <Math mode="inline" xml:id="C15.S11.SS1.p2.m4">\alpha</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m5">\beta</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m6">\gamma</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C15.S11.SS1.p2.s3">
+Cases in which there arefewer than three singularities are included automatically by allowing the choice <Math mode="inline" xml:id="C15.S11.SS1.p2.m7">\{0,1\}</Math> for exponent pairs.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C15.S11.SS1.p2.s4">
+Also, if any of <Math mode="inline" xml:id="C15.S11.SS1.p2.m8">\alpha</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m9">\beta</Math> , <Math mode="inline" xml:id="C15.S11.SS1.p2.m10">\gamma</Math> , is at infinity, then we take the corresponding limit in (15.11.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C15.S11.SS1.p3.s1">
+The complete set of solutions of (15.11.1) is denoted byRiemann’s <Math mode="inline" xml:id="C15.S11.SS1.p3.m1">P</Math> -symbol: <Math equation-number="15.11.3" mode="display" xml:id="C15.S11.E3">w=P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C15.S11.SS1.p3.s2">
+In particular, <Math equation-number="15.11.4" mode="display" xml:id="C15.S11.E4">w=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a&amp;z\\ 1-c&amp;c-a-b&amp;b&amp;\end{Bmatrix}</Math> denotes the set of solutions of (15.10.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S11.SS2">
+<title>Transformation Formulas</title>          
+<para xml:id="C15.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C15.S11.SS2.p1.s1">
+A conformal mapping of the extended complex plane onto itself has the form <Math equation-number="15.11.5" mode="display" xml:id="C15.S11.E5">t=\ifrac{(\kappa z+\lambda)}{(\mu z+\nu)},</Math> where <Math mode="inline" xml:id="C15.S11.SS2.p1.m1">\kappa</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m2">\lambda</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m3">\mu</Math> , <Math mode="inline" xml:id="C15.S11.SS2.p1.m4">\nu</Math> are real or complex constants such that <Math mode="inline" xml:id="C15.S11.SS2.p1.m5">\kappa\nu-\lambda\mu=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C15.S11.SS2.p1.s2">
+These constants can be chosen to map any two sets of three distinct points <Math mode="inline" xml:id="C15.S11.SS2.p1.m6">\{\alpha,\beta,\gamma\}</Math> and <Math mode="inline" xml:id="C15.S11.SS2.p1.m7">\{\widetilde{\alpha},\widetilde{\beta},\widetilde{\gamma}\}</Math> onto each other.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C15.S11.SS2.p1.s3">
+Symbolically: <Math equation-number="15.11.6" mode="display" xml:id="C15.S11.E6">P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=P\begin{Bmatrix}\widetilde{\alpha}&amp;\widetilde{ \beta}&amp;\widetilde{\gamma}&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;t\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C15.S11.SS2.p1.s4">
+The reduction of a general homogeneous linear differential equation of thesecond order with at most three regular singularities to the hypergeometric differential equation is given by
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S11.SS2.p2.s1">
+ <Math equation-number="15.11.7" mode="display" xml:id="C15.S11.E7">P\begin{Bmatrix}\alpha&amp;\beta&amp;\gamma&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=\left(\frac{z-\alpha}{z-\gamma}\right)^{a_{1}} \left(\frac{z-\beta}{z-\gamma}\right)^{b_{1}}P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a_{1}+b_{1}+c_{1}&amp;\dfrac{(z-\alpha)(\beta-\gamma)}{(z-\gamma)(\beta-\alpha )}\\ a_{2}-a_{1}&amp;b_{2}-b_{1}&amp;a_{1}+b_{1}+c_{2}&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C15.S11.SS2.p2.s2">
+We also have <Math equation-number="15.11.8" mode="display" xml:id="C15.S11.E8">z^{\lambda}(1-z)^{\mu}P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ a_{1}&amp;b_{1}&amp;c_{1}&amp;z\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;\end{Bmatrix}=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ a_{1}+\lambda&amp;b_{1}+\mu&amp;c_{1}-\lambda-\mu&amp;z\\ a_{2}+\lambda&amp;b_{2}+\mu&amp;c_{2}-\lambda-\mu&amp;\end{Bmatrix},</Math> for arbitrary <Math mode="inline" xml:id="C15.S11.SS2.p2.m1">\lambda</Math> and <Math mode="inline" xml:id="C15.S11.SS2.p2.m2">\mu</Math>.
+</sentence>
+
+</para>
+  
+ 
+</subsection>
+ 
+</section>

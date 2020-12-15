@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S10">
+<title>Hypergeometric Differential Equation</title>        
+ 
+<subsection xml:id="C15.S10.SS1">
+<title>Fundamental Solutions</title>          
+<para xml:id="C15.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S10.SS1.p1.s1">
+ <Math equation-number="15.10.1" mode="display" xml:id="C15.S10.E1">z(1-z)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(c-(a+b+1)z\right)\frac {\mathrm{d}w}{\mathrm{d}z}-abw=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S10.SS1.p1.s2">
+This is the hypergeometric differential equation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C15.S10.SS1.p1.s3">
+It has regularsingularities at <Math mode="inline" xml:id="C15.S10.SS1.p1.m1">z=0,1,\infty</Math> , with corresponding exponent pairs <Math mode="inline" xml:id="C15.S10.SS1.p1.m2">\{0,1-c\}</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m3">\{0,c-a-b\}</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m4">\{a,b\}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C15.S10.SS1.p1.s4">
+When none of the exponent pairs differ by an integer, that is, when none of <Math mode="inline" xml:id="C15.S10.SS1.p1.m5">c</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m6">c-a-b</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m7">a-b</Math> is an integer, we have the following pairs <Math mode="inline" xml:id="C15.S10.SS1.p1.m8">f_{1}(z)</Math> , <Math mode="inline" xml:id="C15.S10.SS1.p1.m9">f_{2}(z)</Math> of fundamental solutions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C15.S10.SS1.p1.s5">
+They are also numerically satisfactory (§ 2.7(iv)) in the neighborhood of the corresponding singularity.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C15.S10.Px1">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px1.m1">z=0</Math></title>     
+<para xml:id="C15.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C15.S10.Px1.p1.s1">
+ <Math equation-number="15.10.2" mode="display" xml:id="C15.S10.E2">f_{1}(z)=F\left({a,b\atop c};z\right),f_{2}(z)=z^{1-c}F\left({a-c+1,b-c+1\atop 2-c};z\right),</Math> <Math equation-number="15.10.3" mode="display" xml:id="C15.S10.E3">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(1-c)z^{-c}(1-z)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S10.Px2">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px2.m1">z=1</Math></title>     
+<para xml:id="C15.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C15.S10.Px2.p1.s1">
+ <Math equation-number="15.10.4" mode="display" xml:id="C15.S10.E4">f_{1}(z)=F\left({a,b\atop a+b+1-c};1-z\right),f_{2}(z)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c-a-b+1};1-z\right),</Math> <Math equation-number="15.10.5" mode="display" xml:id="C15.S10.E5">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(a+b-c)z^{-c}(1-z)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S10.Px3">
+<title>Singularity <Math mode="inline" xml:id="C15.S10.Px3.m1">z=\infty</Math></title>     
+<para xml:id="C15.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C15.S10.Px3.p1.s1">
+ <Math equation-number="15.10.6" mode="display" xml:id="C15.S10.E6">f_{1}(z)=z^{-a}F\left({a,a-c+1\atop a-b+1};\frac{1}{z}\right),f_{2}(z)=z^{-b}F\left({b,b-c+1\atop b-a+1};\frac{1}{z}\right),</Math> <Math equation-number="15.10.7" mode="display" xml:id="C15.S10.E7">\mathscr{W}\left\{f_{1}(z),f_{2}(z)\right\}=(a-b)z^{-c}(z-1)^{c-a-b-1}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C15.S10.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C15.S10.Px3.p2.s1">
+(a) If <Math mode="inline" xml:id="C15.S10.Px3.p2.m1">c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p2.m2">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C15.S10.Px3.p2.m3">a=1,2,\dots,n-1</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p2.m4">z=0</Math> are given by (15.10.2) with the interpretation (15.2.5) for <Math mode="inline" xml:id="C15.S10.Px3.p2.m5">f_{2}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C15.S10.Px3.p3.s1">
+(b) If <Math mode="inline" xml:id="C15.S10.Px3.p3.m1">c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p3.m2">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C15.S10.Px3.p3.m3">a\neq 1,2,\dots,n-1</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p3.m4">z=0</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p3.m5">F\left(a,b;n;z\right)</Math> and
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C15.S10.Px3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C15.S10.Px3.p4.s1">
+ <Math equation-number="15.10.8" mode="display" xml:id="C15.S10.E8">F\left({a,b\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n-k-1)! {\left(1-a\right)_{k}}{\left(1-b\right)_{k}}}(-z)^{-k}\\ +\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k}}{\left(b\right)_{k}}}{{\left(n \right)_{k}}k!}z^{k}\left(\psi\left(a+k\right)+\psi\left(b+k\right)-\psi\left( 1+k\right)-\psi\left(n+k\right)\right), if a,b\neq n-1,n-2,\dots,0,-1,-2,\dots,</Math> or <Math equation-number="15.10.9" mode="display" xml:id="C15.S10.E9">F\left({-m,b\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n-k-1) !{\left(m+1\right)_{k}}{\left(1-b\right)_{k}}}(-z)^{-k}+\sum_{k=0}^{m}\frac{{ \left(-m\right)_{k}}{\left(b\right)_{k}}}{{\left(n\right)_{k}}k!}z^{k}\left( \psi\left(1+m-k\right)+\psi\left(b+k\right)-\psi\left(1+k\right)-\psi\left(n+k \right)\right)+(-1)^{m}m!\sum_{k=m+1}^{\infty}\frac{(k-1-m)!{\left(b\right)_{k }}}{{\left(n\right)_{k}}k!}z^{k}, if a=-m, m=0,1,2,\dots; b\neq n-1,n-2,\dots,0,-1,-2,\dots,</Math> or <Math equation-number="15.10.10" mode="display" xml:id="C15.S10.E10">F\left({-m,-\ell\atop n};z\right)\ln z-\sum_{k=1}^{n-1}\frac{(n-1)!(k-1)!}{(n- k-1)!{\left(m+1\right)_{k}}{\left(\ell+1\right)_{k}}}(-z)^{-k}+\sum_{k=0}^{ \ell}\frac{{\left(-m\right)_{k}}{\left(-\ell\right)_{k}}}{{\left(n\right)_{k}} k!}z^{k}\left(\psi\left(1+m-k\right)+\psi\left(1+\ell-k\right)-\psi\left(1+k \right)-\psi\left(n+k\right)\right)+(-1)^{\ell}\ell\,!\sum_{k=\ell+1}^{m}\frac {(k-1-\ell)!{\left(-m\right)_{k}}}{{\left(n\right)_{k}}k!}z^{k}, if a=-m, m=0,1,2,\dots; b=-\ell, \ell=0,1,2,\dots,m</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C15.S10.Px3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C15.S10.Px3.p5.s1">
+Moreover, in (15.10.9) and (15.10.10) the symbols <Math mode="inline" xml:id="C15.S10.Px3.p5.m1">a</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p5.m2">b</Math> are interchangeable.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S10.Px3.p6.s1">
+(c) If the parameter <Math mode="inline" xml:id="C15.S10.Px3.p6.m1">c</Math> in the differential equation equals <Math mode="inline" xml:id="C15.S10.Px3.p6.m2">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p6.m3">z=0</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p6.m4">z^{n-1}</Math> times those in (a) and (b), with <Math mode="inline" xml:id="C15.S10.Px3.p6.m5">a</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p6.m6">b</Math> replaced throughout by <Math mode="inline" xml:id="C15.S10.Px3.p6.m7">a+n-1</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p6.m8">b+n-1</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C15.S10.Px3.p7.s1">
+(d) If <Math mode="inline" xml:id="C15.S10.Px3.p7.m1">a+b+1-c</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p7.m2">n=1,2,3,\dots</Math> , or <Math mode="inline" xml:id="C15.S10.Px3.p7.m3">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p7.m4">z=1</Math> are given by those in (a), (b), and (c) with <Math mode="inline" xml:id="C15.S10.Px3.p7.m5">z</Math> replaced by <Math mode="inline" xml:id="C15.S10.Px3.p7.m6">1-z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.Px3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S10.Px3.p8.s1">
+(e) Finally, if <Math mode="inline" xml:id="C15.S10.Px3.p8.m1">a-b+1</Math> equals <Math mode="inline" xml:id="C15.S10.Px3.p8.m2">n=1,2,3,\dots</Math> , or <Math mode="inline" xml:id="C15.S10.Px3.p8.m3">2-n=0,-1,-2,\dots</Math> , then fundamental solutions in the neighborhood of <Math mode="inline" xml:id="C15.S10.Px3.p8.m4">z=\infty</Math> are given by <Math mode="inline" xml:id="C15.S10.Px3.p8.m5">z^{-a}</Math> times those in (a), (b), and (c) with <Math mode="inline" xml:id="C15.S10.Px3.p8.m6">b</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p8.m7">z</Math> replaced by <Math mode="inline" xml:id="C15.S10.Px3.p8.m8">a-c+1</Math> and <Math mode="inline" xml:id="C15.S10.Px3.p8.m9">\ifrac{1}{z}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S10.SS2">
+<title>Kummer’s 24 Solutions and Connection Formulas</title>         
+ 
+<para xml:id="C15.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C15.S10.SS2.p1.s1">
+The three pairs of fundamental solutions given by (15.10.2),(15.10.4), and (15.10.6) can be transformed into 18 other solutions by means of (15.8.1), leading to a total of 24 solutions known as Kummer’s solutions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C15.S10.SS2.p1.s2">
+<Math equation-number="15.10.11" mode="display" xml:id="C15.S10.E11">w_{1}(z)=F\left({a,b\atop c};z\right)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c};z \right)=(1-z)^{-a}F\left({a,c-b\atop c};\frac{z}{z-1}\right)=(1-z)^{-b}F\left( {c-a,b\atop c};\frac{z}{z-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C15.S10.SS2.p1.s3">
+<Math equation-number="15.10.12" mode="display" xml:id="C15.S10.E12">w_{2}(z)={z^{1-c}}F\left({a-c+1,b-c+1\atop 2-c};z\right)={z^{1-c}(1-z)^{c-a-b} }\*F\left({1-a,1-b\atop 2-c};z\right)={z^{1-c}(1-z)^{c-a-1}}\*F\left({a-c+1,1- b\atop 2-c};\frac{z}{z-1}\right)={z^{1-c}(1-z)^{c-b-1}}\*F\left({1-a,b-c+1 \atop 2-c};\frac{z}{z-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C15.S10.SS2.p1.s4">
+<Math equation-number="15.10.13" mode="display" xml:id="C15.S10.E13">w_{3}(z)=F\left({a,b\atop a+b-c+1};1-z\right)=z^{1-c}F\left({a-c+1,b-c+1\atop a +b-c+1};1-z\right)=z^{-a}F\left({a,a-c+1\atop a+b-c+1};1-\frac{1}{z}\right)=z^ {-b}F\left({b,b-c+1\atop a+b-c+1};1-\frac{1}{z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="20" xml:id="C15.S10.SS2.p1.s5">
+<Math equation-number="15.10.14" mode="display" xml:id="C15.S10.E14">w_{4}(z)=(1-z)^{c-a-b}F\left({c-a,c-b\atop c-a-b+1};1-z\right)=z^{1-c}(1-z)^{c -a-b}F\left({1-a,1-b\atop c-a-b+1};1-z\right)=z^{a-c}(1-z)^{c-a-b}F\left({1-a, c-a\atop c-a-b+1};1-\frac{1}{z}\right)=z^{b-c}(1-z)^{c-a-b}F\left({1-b,c-b \atop c-a-b+1};1-\frac{1}{z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="21" xml:id="C15.S10.SS2.p1.s6">
+<Math equation-number="15.10.15" mode="display" xml:id="C15.S10.E15">w_{5}(z)=e^{a\pi\mathrm{i}}z^{-a}\*F\left({a,a-c+1\atop a-b+1};\frac{1}{z} \right)=e^{(c-b)\pi\mathrm{i}}z^{b-c}(1-z)^{c-a-b}\*F\left({1-b,c-b\atop a-b+1 };\frac{1}{z}\right)=(1-z)^{-a}F\left({a,c-b\atop a-b+1};\frac{1}{1-z}\right)= e^{(c-1)\pi\mathrm{i}}z^{1-c}(1-z)^{c-a-1}\*F\left({1-b,a-c+1\atop a-b+1}; \frac{1}{1-z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="22" xml:id="C15.S10.SS2.p1.s7">
+<Math equation-number="15.10.16" mode="display" xml:id="C15.S10.E16">w_{6}(z)=e^{b\pi\mathrm{i}}z^{-b}F\left({b,b-c+1\atop b-a+1};\frac{1}{z}\right )=e^{(c-a)\pi\mathrm{i}}z^{a-c}(1-z)^{c-a-b}\*F\left({1-a,c-a\atop b-a+1}; \frac{1}{z}\right)=(1-z)^{-b}F\left({b,c-a\atop b-a+1};\frac{1}{1-z}\right)=e^ {(c-1)\pi\mathrm{i}}z^{1-c}(1-z)^{c-b-1}\*F\left({1-a,b-c+1\atop b-a+1};\frac{ 1}{1-z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C15.S10.SS2.p2.s1">
+The <Math mode="inline" xml:id="C15.S10.SS2.p2.m1">\genfrac{(}{)}{0.0pt}{}{6}{3}=2</Math> 0 connection formulas for the principal branches of Kummer’s solutions are: <Math equation-number="15.10.17" mode="display" xml:id="C15.S10.E17">w_{3}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(a+b-c+1\right)}{\Gamma\left(a -c+1\right)\Gamma\left(b-c+1\right)}w_{1}(z)+\frac{\Gamma\left(c-1\right) \Gamma\left(a+b-c+1\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}w_{2}(z),</Math> , <Math equation-number="15.10.18" mode="display" xml:id="C15.S10.E18">w_{4}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(c-a-b+1\right)}{\Gamma\left(1 -a\right)\Gamma\left(1-b\right)}w_{1}(z)+\frac{\Gamma\left(c-1\right)\Gamma \left(c-a-b+1\right)}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)}w_{2}(z),</Math> , <Math equation-number="15.10.19" mode="display" xml:id="C15.S10.E19">w_{5}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(a-b+1\right)}{\Gamma\left(a-c +1\right)\Gamma\left(1-b\right)}w_{1}(z)+e^{(c-1)\pi\mathrm{i}}\frac{\Gamma \left(c-1\right)\Gamma\left(a-b+1\right)}{\Gamma\left(a\right)\Gamma\left(c-b \right)}w_{2}(z),</Math> , <Math equation-number="15.10.20" mode="display" xml:id="C15.S10.E20">w_{6}(z)=\frac{\Gamma\left(1-c\right)\Gamma\left(b-a+1\right)}{\Gamma\left(b-c +1\right)\Gamma\left(1-a\right)}w_{1}(z)+e^{(c-1)\pi\mathrm{i}}\frac{\Gamma \left(c-1\right)\Gamma\left(b-a+1\right)}{\Gamma\left(b\right)\Gamma\left(c-a \right)}w_{2}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C15.S10.SS2.p2.s2">
+<Math equation-number="15.10.21" mode="display" xml:id="C15.S10.E21">w_{1}(z)=\frac{\Gamma\left(c\right)\Gamma\left(c-a-b\right)}{\Gamma\left(c-a \right)\Gamma\left(c-b\right)}w_{3}(z)+\frac{\Gamma\left(c\right)\Gamma\left(a +b-c\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}w_{4}(z),</Math> , <Math equation-number="15.10.22" mode="display" xml:id="C15.S10.E22">w_{2}(z)=\frac{\Gamma\left(2-c\right)\Gamma\left(c-a-b\right)}{\Gamma\left(1-a \right)\Gamma\left(1-b\right)}w_{3}(z)+\frac{\Gamma\left(2-c\right)\Gamma\left (a+b-c\right)}{\Gamma\left(a-c+1\right)\Gamma\left(b-c+1\right)}w_{4}(z),</Math> , <Math equation-number="15.10.23" mode="display" xml:id="C15.S10.E23">w_{5}(z)=e^{a\pi\mathrm{i}}\frac{\Gamma\left(a-b+1\right)\Gamma\left(c-a-b \right)}{\Gamma\left(1-b\right)\Gamma\left(c-b\right)}w_{3}(z)+e^{(c-b)\pi \mathrm{i}}\frac{\Gamma\left(a-b+1\right)\Gamma\left(a+b-c\right)}{\Gamma\left (a\right)\Gamma\left(a-c+1\right)}w_{4}(z),</Math> , <Math equation-number="15.10.24" mode="display" xml:id="C15.S10.E24">w_{6}(z)=e^{b\pi\mathrm{i}}\frac{\Gamma\left(b-a+1\right)\Gamma\left(c-a-b \right)}{\Gamma\left(1-a\right)\Gamma\left(c-a\right)}w_{3}(z)+e^{(c-a)\pi \mathrm{i}}\frac{\Gamma\left(b-a+1\right)\Gamma\left(a+b-c\right)}{\Gamma\left (b\right)\Gamma\left(b-c+1\right)}w_{4}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C15.S10.SS2.p2.s3">
+<Math equation-number="15.10.25" mode="display" xml:id="C15.S10.E25">w_{1}(z)=\frac{\Gamma\left(c\right)\Gamma\left(b-a\right)}{\Gamma\left(b\right )\Gamma\left(c-a\right)}w_{5}(z)+\frac{\Gamma\left(c\right)\Gamma\left(a-b \right)}{\Gamma\left(a\right)\Gamma\left(c-b\right)}w_{6}(z),</Math> , <Math equation-number="15.10.26" mode="display" xml:id="C15.S10.E26">w_{2}(z)=e^{(1-c)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b-a \right)}{\Gamma\left(1-a\right)\Gamma\left(b-c+1\right)}w_{5}(z)+e^{(1-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a-b\right)}{\Gamma\left(1-b \right)\Gamma\left(a-c+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.27" mode="display" xml:id="C15.S10.E27">w_{3}(z)=e^{-a\pi\mathrm{i}}\frac{\Gamma\left(a+b-c+1\right)\Gamma\left(b-a \right)}{\Gamma\left(b\right)\Gamma\left(b-c+1\right)}w_{5}(z)+e^{-b\pi\mathrm {i}}\frac{\Gamma\left(a+b-c+1\right)\Gamma\left(a-b\right)}{\Gamma\left(a \right)\Gamma\left(a-c+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.28" mode="display" xml:id="C15.S10.E28">w_{4}(z)=e^{(b-c)\pi\mathrm{i}}\frac{\Gamma\left(c-a-b+1\right)\Gamma\left(b-a \right)}{\Gamma\left(1-a\right)\Gamma\left(c-a\right)}w_{5}(z)+e^{(a-c)\pi \mathrm{i}}\frac{\Gamma\left(c-a-b+1\right)\Gamma\left(a-b\right)}{\Gamma\left (1-b\right)\Gamma\left(c-b\right)}w_{6}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="26" xml:id="C15.S10.SS2.p2.s4">
+<Math equation-number="15.10.29" mode="display" xml:id="C15.S10.E29">w_{1}(z)=e^{b\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(a-c+1\right)} {\Gamma\left(a+b-c+1\right)\Gamma\left(c-b\right)}w_{3}(z)+e^{(b-c)\pi\mathrm{ i}}\frac{\Gamma\left(c\right)\Gamma\left(a-c+1\right)}{\Gamma\left(b\right) \Gamma\left(a-b+1\right)}w_{5}(z),</Math> , <Math equation-number="15.10.30" mode="display" xml:id="C15.S10.E30">w_{1}(z)=e^{a\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(b-c+1\right)} {\Gamma\left(a+b-c+1\right)\Gamma\left(c-a\right)}w_{3}(z)+e^{(a-c)\pi\mathrm{ i}}\frac{\Gamma\left(c\right)\Gamma\left(b-c+1\right)}{\Gamma\left(a\right) \Gamma\left(b-a+1\right)}w_{6}(z),</Math> , <Math equation-number="15.10.31" mode="display" xml:id="C15.S10.E31">w_{2}(z)=e^{(b-c+1)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a \right)}{\Gamma\left(a+b-c+1\right)\Gamma\left(1-b\right)}w_{3}(z)+e^{(b-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(a\right)}{\Gamma\left(a-b+1 \right)\Gamma\left(b-c+1\right)}w_{5}(z),</Math> , <Math equation-number="15.10.32" mode="display" xml:id="C15.S10.E32">w_{2}(z)=e^{(a-c+1)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b \right)}{\Gamma\left(a+b-c+1\right)\Gamma\left(1-a\right)}w_{3}(z)+e^{(a-c)\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(b\right)}{\Gamma\left(b-a+1 \right)\Gamma\left(a-c+1\right)}w_{6}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="27" xml:id="C15.S10.SS2.p2.s5">
+<Math equation-number="15.10.33" mode="display" xml:id="C15.S10.E33">w_{1}(z)=e^{(c-a)\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(1-b\right )}{\Gamma\left(a\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-a\pi\mathrm{i}} \frac{\Gamma\left(c\right)\Gamma\left(1-b\right)}{\Gamma\left(a-b+1\right) \Gamma\left(c-a\right)}w_{5}(z),</Math> , <Math equation-number="15.10.34" mode="display" xml:id="C15.S10.E34">w_{1}(z)=e^{(c-b)\pi\mathrm{i}}\frac{\Gamma\left(c\right)\Gamma\left(1-a\right )}{\Gamma\left(b\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-b\pi\mathrm{i}} \frac{\Gamma\left(c\right)\Gamma\left(1-a\right)}{\Gamma\left(b-a+1\right) \Gamma\left(c-b\right)}w_{6}(z),</Math> , <Math equation-number="15.10.35" mode="display" xml:id="C15.S10.E35">w_{2}(z)=e^{(1-a)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-b \right)}{\Gamma\left(a-c+1\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-a\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-b\right)}{\Gamma\left(a-b +1\right)\Gamma\left(1-a\right)}w_{5}(z),</Math> , <Math equation-number="15.10.36" mode="display" xml:id="C15.S10.E36">w_{2}(z)=e^{(1-b)\pi\mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-a \right)}{\Gamma\left(b-c+1\right)\Gamma\left(c-a-b+1\right)}w_{4}(z)+e^{-b\pi \mathrm{i}}\frac{\Gamma\left(2-c\right)\Gamma\left(c-a\right)}{\Gamma\left(b-a +1\right)\Gamma\left(1-b\right)}w_{6}(z)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

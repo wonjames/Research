@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C32.S11">
+<title>Asymptotic Approximations for Real Variables</title>           
+<subsection xml:id="C32.S11.SS1">
+<title>First Painlevé Equation</title>        
+ 
+<para xml:id="C32.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S11.SS1.p1.s1">
+There are solutions of (32.2.1) such that <Math equation-number="32.11.1" mode="display" xml:id="C32.S11.E1">w(x)=-\sqrt{\tfrac{1}{6}|x|}+d|x|^{-1/8}\sin\left(\phi(x)-\theta_{0}\right)+o \left(|x|^{-1/8}\right), if x\to-\infty,</Math> where <Math equation-number="32.11.2" mode="display" xml:id="C32.S11.E2">\phi(x)=(24)^{1/4}\left(\tfrac{4}{5}|x|^{5/4}-\tfrac{5}{8}d^{2}\ln|x|\right),</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p1.m1">d</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p1.m2">\theta_{0}</Math> are constants.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C32.S11.SS1.p2.s1">
+There are also solutions of (32.2.1) such that <Math equation-number="32.11.3" mode="display" xml:id="C32.S11.E3">w(x)\sim\sqrt{\tfrac{1}{6}|x|}, if x\to-\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C32.S11.SS1.p3.s1">
+Next, for given initial conditions <Math mode="inline" xml:id="C32.S11.SS1.p3.m1">w(0)=0</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p3.m2">w^{\prime}(0)=k</Math> , with <Math mode="inline" xml:id="C32.S11.SS1.p3.m3">k</Math> real, <Math mode="inline" xml:id="C32.S11.SS1.p3.m4">w(x)</Math> has at least one pole on the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C32.S11.SS1.p3.s2">
+There are two special values of <Math mode="inline" xml:id="C32.S11.SS1.p3.m5">k</Math> , <Math mode="inline" xml:id="C32.S11.SS1.p3.m6">k_{1}</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p3.m7">k_{2}</Math> , with the properties <Math mode="inline" xml:id="C32.S11.SS1.p3.m8">-0.45142\;8&lt;k_{1}&lt;-0.45142\;</Math> 7, <Math mode="inline" xml:id="C32.S11.SS1.p3.m9">1.85185\;3&lt;k_{2}&lt;1.85185\;</Math> 5, and such that: If <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m1">k&lt;k_{1}</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m2">w(x)&gt;0</Math> for <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m3">x_{0}&lt;x&lt;0</Math> , where <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m4">x_{0}</Math> is the first pole on the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C32.S11.SS1.p3.s3">
+If <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m1">k_{1}&lt;k&lt;k_{2}</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m2">w(x)</Math> oscillates about, and is asymptotic to, <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m3">-\sqrt{\tfrac{1}{6}|x|}</Math> as <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m4">x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C32.S11.SS1.p3.s4">
+If <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m1">k_{2}&lt;k</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m2">w(x)</Math> changes sign once, from positive to negative, as <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m3">x</Math> passes from <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m4">x_{0}</Math> to <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m5">0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C32.S11.SS1.p4.s1">
+For illustration see Figures 32.3.1 to32.3.4,and for further information seeJoshi and Kitaev (2005),Joshi and Kruskal (1992), Kapaev (1988), Kapaev and Kitaev (1993), andKitaev (1994).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS2">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C32.S11.SS2.p1.s1">
+Consider the special case of <Math mode="inline" xml:id="C32.S11.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S11.SS2.p1.m2">\alpha=0</Math> : <Math equation-number="32.11.4" mode="display" xml:id="C32.S11.E4">w^{\prime\prime}=2w^{3}+xw,</Math> with boundary condition <Math equation-number="32.11.5" mode="display" xml:id="C32.S11.E5">w(x)\to 0, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C32.S11.SS2.p1.s2">
+Any nontrivial real solution of (32.11.4) that satisfies (32.11.5) is asymptotic to <Math mode="inline" xml:id="C32.S11.SS2.p1.m3">k\mathrm{Ai}\left(x\right)</Math> , for some nonzero real <Math mode="inline" xml:id="C32.S11.SS2.p1.m4">k</Math> , where <Math mode="inline" xml:id="C32.S11.SS2.p1.m5">\mathrm{Ai}</Math> denotes the Airy function (§9.2).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C32.S11.SS2.p1.s3">
+Conversely, for any nonzero real <Math mode="inline" xml:id="C32.S11.SS2.p1.m6">k</Math> , there is a unique solution <Math mode="inline" xml:id="C32.S11.SS2.p1.m7">w_{k}(x)</Math> of (32.11.4) that is asymptotic to <Math mode="inline" xml:id="C32.S11.SS2.p1.m8">k\mathrm{Ai}\left(x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS2.p1.m9">x\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C32.S11.SS2.p2.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p2.m1">|k|&lt;1</Math> , then <Math mode="inline" xml:id="C32.S11.SS2.p2.m2">w_{k}(x)</Math> exists for all sufficiently large <Math mode="inline" xml:id="C32.S11.SS2.p2.m3">|x|</Math> as <Math mode="inline" xml:id="C32.S11.SS2.p2.m4">x\to-\infty</Math> , and <Math equation-number="32.11.6" mode="display" xml:id="C32.S11.E6">w_{k}(x)=d|x|^{-1/4}\sin\left(\phi(x)-\theta_{0}\right)+o\left(|x|^{-1/4} \right),</Math> where <Math equation-number="32.11.7" mode="display" xml:id="C32.S11.E7">\phi(x)=\tfrac{2}{3}|x|^{3/2}-\tfrac{3}{4}d^{2}\ln|x|,</Math> and <Math mode="inline" xml:id="C32.S11.SS2.p2.m5">d</Math> <Math mode="inline" xml:id="C32.S11.SS2.p2.m6">(\neq 0)</Math> , <Math mode="inline" xml:id="C32.S11.SS2.p2.m7">\theta_{0}</Math> are real constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C32.S11.SS2.p2.s2">
+Connection formulas for <Math mode="inline" xml:id="C32.S11.SS2.p2.m8">d</Math> and <Math mode="inline" xml:id="C32.S11.SS2.p2.m9">\theta_{0}</Math> are given by <Math equation-number="32.11.8" mode="display" xml:id="C32.S11.E8">d^{2}=-\pi^{-1}\ln\left(1-k^{2}\right),</Math> <Math equation-number="32.11.9" mode="display" xml:id="C32.S11.E9">\theta_{0}=\tfrac{3}{2}d^{2}\ln 2+\operatorname{ph}\Gamma\left(1-\tfrac{1}{2} id^{2}\right)+\tfrac{1}{4}\pi(1-2\operatorname{sign}\left(k\right)),</Math> where <Math mode="inline" xml:id="C32.S11.SS2.p2.m10">\Gamma</Math> is the gamma function (§5.2(i)), and the branch of the <Math mode="inline" xml:id="C32.S11.SS2.p2.m11">\operatorname{ph}</Math> function is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C32.S11.SS2.p3.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p3.m1">|k|=1</Math> , then <Math equation-number="32.11.10" mode="display" xml:id="C32.S11.E10">w_{k}(x)\sim\operatorname{sign}\left(k\right)\sqrt{\tfrac{1}{2}|x|}, if x\to-\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C32.S11.SS2.p4.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p4.m1">|k|&gt;1</Math> , then <Math mode="inline" xml:id="C32.S11.SS2.p4.m2">w_{k}(x)</Math> has a pole at a finite point <Math mode="inline" xml:id="C32.S11.SS2.p4.m3">x=c_{0}</Math> , dependent on <Math mode="inline" xml:id="C32.S11.SS2.p4.m4">k</Math> , and <Math equation-number="32.11.11" mode="display" xml:id="C32.S11.E11">w_{k}(x)\sim\operatorname{sign}\left(k\right)(x-c_{0})^{-1}, if x\to c_{0}+</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C32.S11.SS2.p5.s1">
+For illustration see Figures 32.3.5 and32.3.6, and for further information seeAblowitz and Clarkson (1991), Bassom et al. (1998), Clarkson and McLeod (1988),Deift and Zhou (1995), Segur and Ablowitz (1981), andSuleĭmanov (1987).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C32.S11.SS2.p5.s2">
+For numerical studies see Miles (1978, 1980) and Rosales (1978).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS3">
+<title>Modified Second Painlevé Equation</title>         
+<para xml:id="C32.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C32.S11.SS3.p1.s1">
+Replacement of <Math mode="inline" xml:id="C32.S11.SS3.p1.m1">w</Math> by <Math mode="inline" xml:id="C32.S11.SS3.p1.m2">iw</Math> in (32.11.4) gives <Math equation-number="32.11.12" mode="display" xml:id="C32.S11.E12">w^{\prime\prime}=-2w^{3}+xw</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C32.S11.SS3.p1.s2">
+Any nontrivial real solution of (32.11.12) satisfies <Math equation-number="32.11.13" mode="display" xml:id="C32.S11.E13">w(x)=d|x|^{-1/4}\sin\left(\phi(x)-\chi\right)+O\left(|x|^{-5/4}\ln|x|\right), if x\to-\infty,</Math> where <Math equation-number="32.11.14" mode="display" xml:id="C32.S11.E14">\phi(x)=\tfrac{2}{3}|x|^{3/2}+\tfrac{3}{4}d^{2}\ln|x|,</Math> with <Math mode="inline" xml:id="C32.S11.SS3.p1.m3">d</Math> <Math mode="inline" xml:id="C32.S11.SS3.p1.m4">(\neq 0)</Math> and <Math mode="inline" xml:id="C32.S11.SS3.p1.m5">\chi</Math> arbitrary real constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C32.S11.SS3.p2.s1">
+In the case when <Math equation-number="32.11.15" mode="display" xml:id="C32.S11.E15">\chi+\tfrac{3}{2}d^{2}\ln 2-\tfrac{1}{4}\pi-\operatorname{ph}\Gamma\left( \tfrac{1}{2}id^{2}\right)=n\pi,</Math> with <Math mode="inline" xml:id="C32.S11.SS3.p2.m1">n\in\mathbb{Z}</Math> , we have <Math equation-number="32.11.16" mode="display" xml:id="C32.S11.E16">w(x)\sim k\mathrm{Ai}\left(x\right), if x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS3.p2.m2">k</Math> is a nonzero real constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C32.S11.SS3.p2.s2">
+The connection formulas for <Math mode="inline" xml:id="C32.S11.SS3.p2.m3">k</Math> are <Math equation-number="32.11.17" mode="display" xml:id="C32.S11.E17">d^{2}=\pi^{-1}\ln\left(1+k^{2}\right), if \operatorname{sign}\left(k\right)=(-1)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C32.S11.SS3.p3.s1">
+In the generic case <Math equation-number="32.11.18" mode="display" xml:id="C32.S11.E18">\chi+\tfrac{3}{2}d^{2}\ln 2-\tfrac{1}{4}\pi-\operatorname{ph}\Gamma\left( \tfrac{1}{2}id^{2}\right)\neq n\pi,</Math> we have <Math equation-number="32.11.19" mode="display" xml:id="C32.S11.E19">w(x)=\sigma\sqrt{\tfrac{1}{2}x}+\sigma\rho(2x)^{-1/4}\cos\left(\psi(x)+\theta \right)+O\left(x^{-1}\right), if x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS3.p3.m1">\sigma</Math> , <Math mode="inline" xml:id="C32.S11.SS3.p3.m2">\rho</Math> <Math mode="inline" xml:id="C32.S11.SS3.p3.m3">(&gt;0)</Math> , and <Math mode="inline" xml:id="C32.S11.SS3.p3.m4">\theta</Math> are real constants, and <Math equation-number="32.11.20" mode="display" xml:id="C32.S11.E20">\psi(x)=\tfrac{2}{3}\sqrt{2}x^{3/2}-\tfrac{3}{2}\rho^{2}\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C32.S11.SS3.p3.s2">
+The connection formulas for <Math mode="inline" xml:id="C32.S11.SS3.p3.m5">\sigma</Math> , <Math mode="inline" xml:id="C32.S11.SS3.p3.m6">\rho</Math> , and <Math mode="inline" xml:id="C32.S11.SS3.p3.m7">\theta</Math> are <Math equation-number="32.11.21" mode="display" xml:id="C32.S11.E21">\sigma=-\operatorname{sign}\left(\Im s\right),</Math> <Math equation-number="32.11.22" mode="display" xml:id="C32.S11.E22">\rho^{2}=\pi^{-1}\ln\left((1+|s|^{2})/|2\Im s|\right),</Math> <Math equation-number="32.11.23" mode="display" xml:id="C32.S11.E23">\theta=-\tfrac{3}{4}\pi-\tfrac{7}{2}\rho^{2}\ln{2}+\operatorname{ph}\left(1+s^ {2}\right)+\operatorname{ph}\Gamma\left(i\rho^{2}\right),</Math> where <Math equation-number="32.11.24" mode="display" xml:id="C32.S11.E24">s=\left(\exp\left(\pi d^{2}\right)-1\right)^{1/2}\*\exp\left(i\left(\tfrac{3}{ 2}d^{2}\ln 2-\tfrac{1}{4}\pi+\chi-\operatorname{ph}\Gamma\left(\tfrac{1}{2}id^ {2}\right)\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS4">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C32.S11.SS4.p1.s1">
+For <Math mode="inline" xml:id="C32.S11.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , with <Math mode="inline" xml:id="C32.S11.SS4.p1.m2">\alpha=-\beta=2\nu</Math> <Math mode="inline" xml:id="C32.S11.SS4.p1.m3">(\in\mathbb{R})</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m4">\gamma=-\delta=1</Math> , <Math equation-number="32.11.25" mode="display" xml:id="C32.S11.E25">w(x)-1\sim-\lambda\Gamma\left(\nu+\tfrac{1}{2}\right)2^{-2\nu}x^{-\nu-(1/2)}e^ {-2x}, if x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS4.p1.m5">\lambda</Math> is an arbitrary constant such that <Math mode="inline" xml:id="C32.S11.SS4.p1.m6">-1/\pi&lt;\lambda&lt;1/\pi</Math> , and <Math equation-number="32.11.26" mode="display" xml:id="C32.S11.E26">w(x)\sim Bx^{\sigma}, if x\to 0,</Math> where <Math mode="inline" xml:id="C32.S11.SS4.p1.m7">B</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m8">\sigma</Math> are arbitrary constants such that <Math mode="inline" xml:id="C32.S11.SS4.p1.m9">B\neq 0</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m10">|\Re\sigma|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C32.S11.SS4.p1.s2">
+The connection formulas relating (32.11.25) and (32.11.26) are <Math equation-number="32.11.27" mode="display" xml:id="C32.S11.E27">\sigma=(2/\pi)\operatorname{arcsin}\left(\pi\lambda\right),</Math> <Math equation-number="32.11.28" mode="display" xml:id="C32.S11.E28">B=2^{-2\sigma}\frac{{\Gamma^{2}}\left(\tfrac{1}{2}(1-\sigma)\right)\Gamma\left (\tfrac{1}{2}(1+\sigma)+\nu\right)}{{\Gamma^{2}}\left(\tfrac{1}{2}(1+\sigma) \right)\Gamma\left(\tfrac{1}{2}(1-\sigma)+\nu\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C32.S11.SS4.p2.s1">
+See also Abdullaev (1985), Novokshënov (1985),Its and Novokshënov (1986), Kitaev (1987), Bobenko (1991),Bobenko and Its (1995), Tracy and Widom (1997), and Kitaev and Vartanian (2004).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS5">
+<title>Fourth Painlevé Equation</title>        
+ 
+<para xml:id="C32.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C32.S11.SS5.p1.s1">
+Consider <Math mode="inline" xml:id="C32.S11.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math mode="inline" xml:id="C32.S11.SS5.p1.m2">\alpha=2\nu+1</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m3">(\in\mathbb{R})</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p1.m4">\beta=0</Math> , that is, <Math equation-number="32.11.29" mode="display" xml:id="C32.S11.E29">w^{\prime\prime}=\frac{(w^{\prime})^{2}}{2w}+\frac{3}{2}w^{3}+4xw^{2}+2(x^{2}- 2\nu-1)w,</Math> and with boundary condition <Math equation-number="32.11.30" mode="display" xml:id="C32.S11.E30">w(x)\to 0, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C32.S11.SS5.p1.s2">
+Any nontrivial solution of (32.11.29) that satisfies (32.11.30) is asymptotic to <Math mode="inline" xml:id="C32.S11.SS5.p1.m5">h{U^{2}}\left(-\nu-\frac{1}{2},\sqrt{2}x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS5.p1.m6">x\to+\infty</Math> , where <Math mode="inline" xml:id="C32.S11.SS5.p1.m7">h</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m8">(\neq 0)</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C32.S11.SS5.p1.s3">
+Conversely, for any <Math mode="inline" xml:id="C32.S11.SS5.p1.m9">h</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m10">(\neq 0)</Math> there is a unique solution <Math mode="inline" xml:id="C32.S11.SS5.p1.m11">w_{h}(x)</Math> of (32.11.29) that is asymptotic to <Math mode="inline" xml:id="C32.S11.SS5.p1.m12">h{U^{2}}\left(-\nu-\frac{1}{2},\sqrt{2}x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS5.p1.m13">x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C32.S11.SS5.p1.s4">
+Here <Math mode="inline" xml:id="C32.S11.SS5.p1.m14">U</Math> denotes the parabolic cylinder function (§12.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C32.S11.SS5.p2.s1">
+Now suppose <Math mode="inline" xml:id="C32.S11.SS5.p2.m1">x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C32.S11.SS5.p2.s2">
+If <Math mode="inline" xml:id="C32.S11.SS5.p2.m2">0\leq h&lt;h^{*}</Math> , where <Math equation-number="32.11.31" mode="display" xml:id="C32.S11.E31">h^{*}=\ifrac{1}{\left(\pi^{1/2}\Gamma\left(\nu+1\right)\right)},</Math> then <Math mode="inline" xml:id="C32.S11.SS5.p2.m3">w_{h}(x)</Math> has no poles on the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C32.S11.SS5.p2.s3">
+Furthermore, if <Math mode="inline" xml:id="C32.S11.SS5.p2.m4">\nu=n=0,1,2,\dots</Math> , then <Math equation-number="32.11.32" mode="display" xml:id="C32.S11.E32">w_{h}(x)\sim h2^{n}x^{2n}\exp\left(-x^{2}\right), if x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="33" xml:id="C32.S11.SS5.p2.s4">
+Alternatively, if <Math mode="inline" xml:id="C32.S11.SS5.p2.m5">\nu</Math> is not zero or a positive integer, then <Math equation-number="32.11.33" mode="display" xml:id="C32.S11.E33">w_{h}(x)=-\tfrac{2}{3}x+\tfrac{4}{3}d\sqrt{3}\sin\left(\phi(x)-\theta_{0} \right)+O\left(x^{-1}\right), if x\to-\infty,</Math> where <Math equation-number="32.11.34" mode="display" xml:id="C32.S11.E34">\phi(x)=\tfrac{1}{3}\sqrt{3}x^{2}-\tfrac{4}{3}d^{2}\sqrt{3}\ln\left(\sqrt{2}|x |\right),</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m6">d</Math> <Math mode="inline" xml:id="C32.S11.SS5.p2.m7">(&gt;0)</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m8">\theta_{0}</Math> are real constants.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="34" xml:id="C32.S11.SS5.p2.s5">
+Connection formulas for <Math mode="inline" xml:id="C32.S11.SS5.p2.m9">d</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m10">\theta_{0}</Math> are given by <Math equation-number="32.11.35" mode="display" xml:id="C32.S11.E35">d^{2}=-\tfrac{1}{4}\sqrt{3}\pi^{-1}\ln\left(1-|\mu|^{2}\right),</Math> , <Math equation-number="32.11.36" mode="display" xml:id="C32.S11.E36">\theta_{0}=\tfrac{1}{3}d^{2}\sqrt{3}\ln 3+\tfrac{2}{3}\pi\nu+\tfrac{7}{12}\pi+ \operatorname{ph}\mu+\operatorname{ph}\Gamma\left(-\tfrac{2}{3}i\sqrt{3}d^{2} \right),</Math> where <Math equation-number="32.11.37" mode="display" xml:id="C32.S11.E37">\mu=1+\left(\ifrac{2ih\pi^{3/2}\exp\left(-i\pi\nu\right)}{\Gamma\left(-\nu \right)}\right),</Math> and the branch of the <Math mode="inline" xml:id="C32.S11.SS5.p2.m11">\operatorname{ph}</Math> function is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C32.S11.SS5.p3.s1">
+Next if <Math mode="inline" xml:id="C32.S11.SS5.p3.m1">h=h^{*}</Math> , then <Math equation-number="32.11.38" mode="display" xml:id="C32.S11.E38">w_{h^{*}}(x)\sim-2x, if x\to-\infty,</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p3.m2">w_{h^{*}}(x)</Math> has no poles on the real axis.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C32.S11.SS5.p4.s1">
+Lastly if <Math mode="inline" xml:id="C32.S11.SS5.p4.m1">h&gt;h^{*}</Math> , then <Math mode="inline" xml:id="C32.S11.SS5.p4.m2">w_{h}(x)</Math> has a simple pole on the real axis, whose location is dependent on <Math mode="inline" xml:id="C32.S11.SS5.p4.m3">h</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S11.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C32.S11.SS5.p5.s1">
+For illustration see Figures 32.3.7–32.3.10.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C32.S11.SS5.p5.s2">
+In terms of the parameter <Math mode="inline" xml:id="C32.S11.SS5.p5.m1">k</Math> that is used in these figures <Math mode="inline" xml:id="C32.S11.SS5.p5.m2">h=2^{3/2}k^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C32.S11.SS5.p6.s1">
+See also Wong and Zhang (2009a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

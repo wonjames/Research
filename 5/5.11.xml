@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S11">
+<title>Asymptotic Expansions</title>          
+<subsection xml:id="C5.S11.SS1">
+<title>Poincaré-Type Expansions</title>        
+ 
+<para xml:id="C5.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S11.SS1.p1.s1">
+As <Math mode="inline" xml:id="C5.S11.SS1.p1.m1">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C5.S11.SS1.p1.m2">|\operatorname{ph}z|\leq\pi-\delta\;(&lt;\pi)</Math> , <Math equation-number="5.11.1" mode="display" xml:id="C5.S11.E1">\operatorname{Ln}\Gamma\left(z\right)\sim\left(z-\tfrac{1}{2}\right)\ln z-z+ \tfrac{1}{2}\ln\left(2\pi\right)+\sum_{k=1}^{\infty}\frac{B_{2k}}{2k(2k-1)z^{2 k-1}}</Math> and <Math equation-number="5.11.2" mode="display" xml:id="C5.S11.E2">\psi\left(z\right)\sim\ln z-\frac{1}{2z}-\sum_{k=1}^{\infty}\frac{B_{2k}}{2kz^ {2k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S11.SS1.p1.s2">
+For the Bernoulli numbers <Math mode="inline" xml:id="C5.S11.SS1.p1.m3">B_{2k}</Math> , see §24.2(i).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C5.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C5.S11.SS1.p2.s1">
+With the same conditions, <Math equation-number="5.11.3" mode="display" xml:id="C5.S11.E3">\Gamma\left(z\right)\sim{\mathrm{e}^{-z}}z^{z}\left(\frac{2\pi}{z}\right)^{1/2 }\sum_{k=0}^{\infty}\frac{g_{k}}{z^{k}},</Math> where <Math equation-number="5.11.4" mode="display" xml:id="C5.S11.E4">g_{0}=1,g_{1}=\tfrac{1}{12},g_{2}=\tfrac{1}{288},g_{3}=-\tfrac{139}{51840},g_{4}=-\tfrac{571}{24\;88320},g_{5}=\tfrac{1\;63879}{2090\;18880},g_{6}=\tfrac{52\;46819}{7\;52467\;96800}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C5.S11.SS1.p2.s2">
+Also, <Math equation-number="5.11.5" mode="display" xml:id="C5.S11.E5">g_{k}=\sqrt{2}{\left(\tfrac{1}{2}\right)_{k}}a_{2k},</Math> where <Math mode="inline" xml:id="C5.S11.SS1.p2.m1">a_{0}=\tfrac{1}{2}\sqrt{2}</Math> and <Math equation-number="5.11.6" mode="display" xml:id="C5.S11.E6">a_{0}a_{k}+\frac{1}{2}a_{1}a_{k-1}+\frac{1}{3}a_{2}a_{k-2}+\dots+\frac{1}{k+1} a_{k}a_{0}=\frac{1}{k}a_{k-1}, if k\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C5.S11.SS1.p2.s3">
+Wrench (1968) gives exact values of <Math mode="inline" xml:id="C5.S11.SS1.p2.m2">g_{k}</Math> up to <Math mode="inline" xml:id="C5.S11.SS1.p2.m3">g_{20}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C5.S11.SS1.p2.s4">
+Spira (1971) corrects errors in Wrench’s results and also supplies exact and 45D values of <Math mode="inline" xml:id="C5.S11.SS1.p2.m4">g_{k}</Math> for <Math mode="inline" xml:id="C5.S11.SS1.p2.m5">k=21,22,\dots,30</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C5.S11.SS1.p2.s5">
+For explicit formulas for <Math mode="inline" xml:id="C5.S11.SS1.p2.m6">g_{k}</Math> in terms of Stirling numbers see Nemes (2013a), and for asymptotic expansions of <Math mode="inline" xml:id="C5.S11.SS1.p2.m7">g_{k}</Math> as <Math mode="inline" xml:id="C5.S11.SS1.p2.m8">k\to\infty</Math> see Boyd (1994) and Nemes (2015a).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C5.S11.Px1">
+<title>Terminology</title>     
+<para xml:id="C5.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C5.S11.Px1.p1.s1">
+The expansion (5.11.1) is called Stirling’s series (Whittaker and Watson (1927, §12.33)), whereas the expansion (5.11.3), or sometimes just its leading term, is known asStirling’s formula (Abramowitz and Stegun (1964, §6.1),Olver (1997b, p. 88)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C5.S11.Px1.p2.s1">
+Next, and again with the same conditions, <Math equation-number="5.11.7" mode="display" xml:id="C5.S11.E7">\Gamma\left(az+b\right)\sim\sqrt{2\pi}e^{-az}(az)^{az+b-(1/2)},</Math> where <Math mode="inline" xml:id="C5.S11.Px1.p2.m1">a\;(&gt;0)</Math> and <Math mode="inline" xml:id="C5.S11.Px1.p2.m2">b\;(\in\mathbb{C})</Math> are both fixed, and <Math equation-number="5.11.8" mode="display" xml:id="C5.S11.E8">\operatorname{Ln}\Gamma\left(z+h\right)\sim\left(z+h-\tfrac{1}{2}\right)\ln z- z+\tfrac{1}{2}\ln\left(2\pi\right)+\sum_{k=2}^{\infty}\frac{(-1)^{k}B_{k}\left (h\right)}{k(k-1)z^{k-1}},</Math> where <Math mode="inline" xml:id="C5.S11.Px1.p2.m3">h\;(\in\mathbb{C})</Math> is fixed, and <Math mode="inline" xml:id="C5.S11.Px1.p2.m4">B_{k}\left(h\right)</Math> is the Bernoulli polynomial defined in §24.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C5.S11.Px1.p2.s2">
+For similar results including a convergent factorial series see, Nemes (2013c).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C5.S11.Px1.p3.s1">
+Lastly, as <Math mode="inline" xml:id="C5.S11.Px1.p3.m1">y\to\pm\infty</Math> , <Math equation-number="5.11.9" mode="display" xml:id="C5.S11.E9">|\Gamma\left(x+iy\right)|\sim\sqrt{2\pi}|y|^{x-(1/2)}e^{-\pi|y|/2},</Math> uniformly for bounded real values of <Math mode="inline" xml:id="C5.S11.Px1.p3.m2">x</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S11.SS2">
+<title>Error Bounds and Exponential Improvement</title>           
+<para xml:id="C5.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C5.S11.SS2.p1.s1">
+If the sums in the expansions (5.11.1) and (5.11.2) are terminated at <Math mode="inline" xml:id="C5.S11.SS2.p1.m1">k=n-1</Math> ( <Math mode="inline" xml:id="C5.S11.SS2.p1.m2">k\geq 0</Math> ) and <Math mode="inline" xml:id="C5.S11.SS2.p1.m3">z</Math> is real and positive, then the remainder terms are bounded in magnitude by the first neglected terms and have the same sign.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C5.S11.SS2.p1.s2">
+If <Math mode="inline" xml:id="C5.S11.SS2.p1.m4">z</Math> is complex, then the remainder terms are bounded in magnitude by <Math mode="inline" xml:id="C5.S11.SS2.p1.m5">{\sec^{2n}}\left(\tfrac{1}{2}\operatorname{ph}z\right)</Math> for (5.11.1), and <Math mode="inline" xml:id="C5.S11.SS2.p1.m6">{\sec^{2n+1}}\left(\tfrac{1}{2}\operatorname{ph}z\right)</Math> for (5.11.2), times the first neglected terms.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C5.S11.SS2.p1.s3">
+For error bounds for (5.11.8) and an exponentially-improved extension, see Nemes (2013b).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C5.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C5.S11.SS2.p2.s1">
+For the remainder term in (5.11.3) write <Math equation-number="5.11.10" mode="display" xml:id="C5.S11.E10">\Gamma\left(z\right)=e^{-z}z^{z}\left(\frac{2\pi}{z}\right)^{1/2}\left(\sum_{k =0}^{K-1}\frac{g_{k}}{z^{k}}+R_{K}(z)\right), if K=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C5.S11.SS2.p2.s2">
+Then <Math equation-number="5.11.11" mode="display" xml:id="C5.S11.E11">\left|R_{K}(z)\right|\leq\frac{(1+\zeta\left(K\right))\Gamma\left(K\right)}{2( 2\pi)^{K+1}{\left|z\right|^{K}}}\*\left(1+\min(\sec\left(\operatorname{ph}z \right),2K^{\frac{1}{2}})\right), if \left|\operatorname{ph}z\right|\leq\frac{1}{2}\pi,</Math> where <Math mode="inline" xml:id="C5.S11.SS2.p2.m1">\zeta\left(K\right)</Math> is as in Chapter 25.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C5.S11.SS2.p2.s3">
+In the case <Math mode="inline" xml:id="C5.S11.SS2.p2.m2">K=1</Math> the factor <Math mode="inline" xml:id="C5.S11.SS2.p2.m3">1+\zeta\left(K\right)</Math> is replaced with 4. For this result and asimilar bound for the sector <Math mode="inline" xml:id="C5.S11.SS2.p2.m4">\frac{1}{2}\pi\leq\operatorname{ph}z\leq\pi</Math> seeBoyd (1994).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C5.S11.SS2.p3.s1">
+For further information see Olver (1997b, pp. 293–295), and for other error bounds see Whittaker and Watson (1927, §12.33),Spira (1971), and Schäfke and Finsterer (1990).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C5.S11.SS2.p4.s1">
+For re-expansions of the remainder terms in (5.11.1) and (5.11.3) in series of incomplete gamma functions with exponential improvement (§2.11(iii)) in the asymptotic expansions, seeBerry (1991), Boyd (1994), andParis and Kaminski (2001, §6.4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S11.SS3">
+<title>Ratios</title>        
+  
+<para xml:id="C5.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C5.S11.SS3.p1.s1">
+In this subsection <Math mode="inline" xml:id="C5.S11.SS3.p1.m1">a</Math> , <Math mode="inline" xml:id="C5.S11.SS3.p1.m2">b</Math> , and <Math mode="inline" xml:id="C5.S11.SS3.p1.m3">c</Math> are real or complex constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C5.S11.SS3.p2.s1">
+If <Math mode="inline" xml:id="C5.S11.SS3.p2.m1">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C5.S11.SS3.p2.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C5.S11.SS3.p2.m3">&lt;\pi</Math> ), then <Math equation-number="5.11.12" mode="display" xml:id="C5.S11.E12">\frac{\Gamma\left(z+a\right)}{\Gamma\left(z+b\right)}\sim z^{a-b},</Math> , <Math equation-number="5.11.13" mode="display" xml:id="C5.S11.E13">\frac{\Gamma\left(z+a\right)}{\Gamma\left(z+b\right)}\sim z^{a-b}\sum_{k=0}^{ \infty}\frac{G_{k}(a,b)}{z^{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C5.S11.SS3.p2.s2">
+Also, with the added condition <Math mode="inline" xml:id="C5.S11.SS3.p2.m4">\Re(b-a)&gt;0</Math> , <Math equation-number="5.11.14" mode="display" xml:id="C5.S11.E14">\frac{\Gamma\left(z+a\right)}{\Gamma\left(z+b\right)}\sim\left(z+\frac{a+b-1}{ 2}\right)^{a-b}\sum_{k=0}^{\infty}\frac{H_{k}(a,b)}{\left(z+\tfrac{1}{2}(a+b-1 )\right)^{2k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C5.S11.SS3.p2.s3">
+Here <Math equation-number="5.11.15" mode="display" xml:id="C5.S11.E15">G_{0}(a,b)=1,G_{1}(a,b)=\tfrac{1}{2}(a-b)(a+b-1),G_{2}(a,b)=\frac{1}{12}\genfrac{(}{)}{0.0pt}{}{a-b}{2}(3(a+b-1)^{2}-(a-b+1))</Math> , <Math equation-number="5.11.16" mode="display" xml:id="C5.S11.E16">H_{0}(a,b)=1,H_{1}(a,b)=-\frac{1}{12}\genfrac{(}{)}{0.0pt}{}{a-b}{2}(a-b+1),H_{2}(a,b)=\frac{1}{240}\genfrac{(}{)}{0.0pt}{}{a-b}{4}(2(a-b+1)+5(a-b+1)^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="24" xml:id="C5.S11.SS3.p2.s4">
+In terms of generalized Bernoulli polynomials <Math mode="inline" xml:id="C5.S11.SS3.p2.m5">B^{(\ell)}_{n}\left(x\right)</Math> (§24.16(i)), we have for <Math mode="inline" xml:id="C5.S11.SS3.p2.m6">k=0,1,\ldots</Math> , <Math equation-number="5.11.17" mode="display" xml:id="C5.S11.E17">G_{k}(a,b)=\genfrac{(}{)}{0.0pt}{}{a-b}{k}B^{(a-b+1)}_{k}\left(a\right)</Math> ,, <Math equation-number="5.11.18" mode="display" xml:id="C5.S11.E18">H_{k}(a,b)=\genfrac{(}{)}{0.0pt}{}{a-b}{2k}B^{(a-b+1)}_{2k}\left(\frac{a-b+1}{ 2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="25" xml:id="C5.S11.SS3.p2.s5">
+For realistic error bounds in (5.11.14) seeFrenzen (1987, 1992).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="26" xml:id="C5.S11.SS3.p2.s6">
+See also Burić and Elezović (2011).
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C5.S11.SS3.p3.s1">
+Lastly, and again if <Math mode="inline" xml:id="C5.S11.SS3.p3.m1">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C5.S11.SS3.p3.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C5.S11.SS3.p3.m3">&lt;\pi</Math> ), then <Math equation-number="5.11.19" mode="display" xml:id="C5.S11.E19">\frac{\Gamma\left(z+a\right)\Gamma\left(z+b\right)}{\Gamma\left(z+c\right)} \sim\sum_{k=0}^{\infty}(-1)^{k}\frac{{\left(c-a\right)_{k}}{\left(c-b\right)_{ k}}}{k!}\Gamma\left(a+b-c+z-k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C5.S11.SS3.p3.s2">
+For the error term in (5.11.19) in the case <Math mode="inline" xml:id="C5.S11.SS3.p3.m4">z=x\;(&gt;0)</Math> and <Math mode="inline" xml:id="C5.S11.SS3.p3.m5">c=1</Math> , see Olver (1995).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

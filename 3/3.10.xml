@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S10">
+<title>Continued Fractions</title>         
+<subsection xml:id="C3.S10.SS1">
+<title>Introduction</title>         
+<para xml:id="C3.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S10.SS1.p1.s1">
+See §1.12 for relevant properties of continued fractions, including the following definitions: <Math equation-number="3.10.1" mode="display" xml:id="C3.S10.E1">C=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}, if a_{n}\neq 0,</Math> <Math equation-number="3.10.2" mode="display" xml:id="C3.S10.E2">C_{n}=b_{0}+\cfrac{a_{1}}{b_{1}+\cfrac{a_{2}}{b_{2}+\cdots}}\frac{a_{n}}{b_{n} }=\frac{A_{n}}{B_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S10.SS1.p1.s2">
+<Math mode="inline" xml:id="C3.S10.SS1.p1.m1">C_{n}</Math> is the <Math mode="inline" xml:id="C3.S10.SS1.p1.m2">n</Math> th approximant or convergent to <Math mode="inline" xml:id="C3.S10.SS1.p1.m3">C</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S10.SS2">
+<title>Relations to Power Series</title>          
+<para xml:id="C3.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S10.SS2.p1.s1">
+Every convergent, asymptotic, or formal series <Math equation-number="3.10.3" mode="display" xml:id="C3.S10.E3">u_{0}+u_{1}+u_{2}+\cdots</Math> can be converted into a continued fraction <Math mode="inline" xml:id="C3.S10.SS2.p1.m1">C</Math> of type (3.10.1), and with the property that the <Math mode="inline" xml:id="C3.S10.SS2.p1.m2">n</Math> th convergent <Math mode="inline" xml:id="C3.S10.SS2.p1.m3">C_{n}=A_{n}/B_{n}</Math> to <Math mode="inline" xml:id="C3.S10.SS2.p1.m4">C</Math> is equal to the <Math mode="inline" xml:id="C3.S10.SS2.p1.m5">n</Math> th partial sum of the series in (3.10.3), that is, <Math equation-number="3.10.4" mode="display" xml:id="C3.S10.E4">\frac{A_{n}}{B_{n}}=u_{0}+u_{1}+\dots+u_{n}, if n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C3.S10.SS2.p1.s2">
+For instance, if none of the <Math mode="inline" xml:id="C3.S10.SS2.p1.m6">u_{n}</Math> vanish, then we can define <Math equation-number="3.10.5" mode="display" xml:id="C3.S10.E5">b_{0}=u_{0},b_{1}=1,a_{1}=u_{1},b_{n}=1+\frac{u_{n}}{u_{n-1}},a_{n}=-\frac{u_{n}}{u_{n-1}}, , if n\geq 2.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C3.S10.SS2.p2.s1">
+However, other continued fractions with the same limit may converge in a much larger domain of the complex plane than the fraction given by (3.10.4) and (3.10.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C3.S10.SS2.p2.s2">
+For example, by converting the Maclaurin expansion of <Math mode="inline" xml:id="C3.S10.SS2.p2.m1">\operatorname{arctan}z</Math> (4.24.3), we obtain a continued fraction with the same region of convergence ( <Math mode="inline" xml:id="C3.S10.SS2.p2.m2">\left|z\right|\leq 1</Math> , <Math mode="inline" xml:id="C3.S10.SS2.p2.m3">z\neq\pm\mathrm{i}</Math> ), whereas the continued fraction (4.25.4) converges for all <Math mode="inline" xml:id="C3.S10.SS2.p2.m4">z\in\mathbb{C}</Math> except on the branch cuts from <Math mode="inline" xml:id="C3.S10.SS2.p2.m5">i</Math> to <Math mode="inline" xml:id="C3.S10.SS2.p2.m6">i\infty</Math> and <Math mode="inline" xml:id="C3.S10.SS2.p2.m7">-i</Math> to <Math mode="inline" xml:id="C3.S10.SS2.p2.m8">-i\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S10.Px1">
+<title>Stieltjes Fractions</title>  
+     
+<para xml:id="C3.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C3.S10.Px1.p1.s1">
+A continued fraction of the form <Math equation-number="3.10.6" mode="display" xml:id="C3.S10.E6">C=\cfrac{a_{0}}{1-\cfrac{a_{1}z}{1-\cfrac{a_{2}z}{1-\cdots}}}</Math> is called a Stieltjes fraction ( <Math mode="inline" xml:id="C3.S10.Px1.p1.m1">S</Math> -fraction).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C3.S10.Px1.p1.s2">
+We say that itcorresponds to the formal power series <Math equation-number="3.10.7" mode="display" xml:id="C3.S10.E7">f(z)=c_{0}+c_{1}z+c_{2}z^{2}+\cdots</Math> if the expansion of its <Math mode="inline" xml:id="C3.S10.Px1.p1.m2">n</Math> th convergent <Math mode="inline" xml:id="C3.S10.Px1.p1.m3">C_{n}</Math> in ascending powers of <Math mode="inline" xml:id="C3.S10.Px1.p1.m4">z</Math> agrees with (3.10.7) up to and including the term in <Math mode="inline" xml:id="C3.S10.Px1.p1.m5">z^{n-1}</Math> , <Math mode="inline" xml:id="C3.S10.Px1.p1.m6">n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px2">
+<title>Quotient-Difference Algorithm</title>  
+  
+<para xml:id="C3.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C3.S10.Px2.p1.s1">
+For several special functions the <Math mode="inline" xml:id="C3.S10.Px2.p1.m1">S</Math> -fractions are known explicitly, but in any case the coefficients <Math mode="inline" xml:id="C3.S10.Px2.p1.m2">a_{n}</Math> can always be calculated from the power-series coefficients by means of the quotient-difference algorithm; see Table 3.10.1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="10" xml:id="C3.S10.T1.s1">
+Table 3.10.1: Quotient-difference scheme.
+</sentence> 
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="1" xml:id="C3.S10.T1.t1.s1">
+  <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m1">e_{0}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m2">e_{0}^{2}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m3">e_{0}^{3}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m4">e_{0}^{4}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m5">q_{1}^{0}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m6">q_{1}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m7">q_{1}^{2}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m8">q_{1}^{3}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m9">\ddots</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m10">e_{1}^{0}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m11">e_{1}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m12">e_{1}^{2}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m13">e_{1}^{3}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m14">q_{2}^{0}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m15">q_{2}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m16">q_{2}^{2}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m17">\ddots</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m18">e_{2}^{0}</Math> 
+  <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m19">e_{2}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m20">e_{2}^{2}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m21">q_{3}^{0}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m22">q_{3}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m23">\ddots</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m24">e_{3}^{0}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m25">e_{3}^{1}</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m26">\ddots</Math>   <Math mode="inline" xml:id="C3.S10.T1.t1.r1.pic1.m27">\ddots</Math>  
+</sentence>
+  
+<para xml:id="C3.S10.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S10.Px2.p2.s1">
+The first two columns in this table are defined by <Math equation-number="3.10.8" mode="display" xml:id="C3.S10.E8">e_{0}^{n}=0, if n=1,2,\dots, //// q_{1}^{n}=c_{n+1}/c_{n}, if n=0,1,\dots,</Math> where the <Math mode="inline" xml:id="C3.S10.Px2.p2.m1">c_{n}</Math> ( <Math mode="inline" xml:id="C3.S10.Px2.p2.m2">\neq 0</Math> ) appear in (3.10.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C3.S10.Px2.p2.s2">
+We continue by means of the rhombus rule <Math equation-number="3.10.9" mode="display" xml:id="C3.S10.E9">e_{j}^{k}=e_{j-1}^{k+1}+q_{j}^{k+1}-q_{j}^{k}, if j\geq 1, k\geq 0, //// q_{j+1}^{k}=q_{j}^{k+1}e_{j}^{k+1}/e_{j}^{k}, if j\geq 1, k\geq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C3.S10.Px2.p2.s3">
+Then the coefficients <Math mode="inline" xml:id="C3.S10.Px2.p2.m3">a_{n}</Math> of the <Math mode="inline" xml:id="C3.S10.Px2.p2.m4">S</Math> -fraction (3.10.6) are given by <Math equation-number="3.10.10" mode="display" xml:id="C3.S10.E10">a_{0}=c_{0},a_{1}=q_{1}^{0},a_{2}=e_{1}^{0},a_{3}=q_{2}^{0},a_{4}=e_{2}^{0},\ldots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S10.Px2.p3.s1">
+The quotient-difference algorithm is frequently unstable and may require high-precision arithmetic or exact arithmetic.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C3.S10.Px2.p3.s2">
+A more stable version of the algorithm is discussed in Stokes (1980).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C3.S10.Px2.p3.s3">
+For applications to Bessel functions and Whittaker functions (Chapters 10 and 13), seeGargantini and Henrici (1967).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px3">
+<title>Jacobi Fractions</title>  
+     
+<para xml:id="C3.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C3.S10.Px3.p1.s1">
+A continued fraction of the form <Math equation-number="3.10.11" mode="display" xml:id="C3.S10.E11">C=\cfrac{\beta_{0}}{1-\alpha_{0}z-\cfrac{\beta_{1}z^{2}}{1-\alpha_{1}z-\cfrac{ \beta_{2}z^{2}}{1-\alpha_{2}z-\cdots}}}</Math> is called a Jacobi fraction ( <Math mode="inline" xml:id="C3.S10.Px3.p1.m1">J</Math> -fraction).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C3.S10.Px3.p1.s2">
+We say that it isassociated with the formal power series <Math mode="inline" xml:id="C3.S10.Px3.p1.m2">f(z)</Math> in (3.10.7) if the expansion of its <Math mode="inline" xml:id="C3.S10.Px3.p1.m3">n</Math> th convergent <Math mode="inline" xml:id="C3.S10.Px3.p1.m4">C_{n}</Math> in ascending powers of <Math mode="inline" xml:id="C3.S10.Px3.p1.m5">z</Math> , agrees with (3.10.7) up to and including the term in <Math mode="inline" xml:id="C3.S10.Px3.p1.m6">z^{2n-1}</Math> , <Math mode="inline" xml:id="C3.S10.Px3.p1.m7">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C3.S10.Px3.p1.s3">
+For the same function <Math mode="inline" xml:id="C3.S10.Px3.p1.m8">f(z)</Math> , the convergent <Math mode="inline" xml:id="C3.S10.Px3.p1.m9">C_{n}</Math> of the Jacobi fraction (3.10.11)equals the convergent <Math mode="inline" xml:id="C3.S10.Px3.p1.m10">C_{2n}</Math> of the Stieltjes fraction (3.10.6).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px4">
+<title>Examples of <Math mode="inline" xml:id="C3.S10.Px4.m1">S</Math>- and <Math mode="inline" xml:id="C3.S10.Px4.m2">J</Math>-Fractions</title>  
+ 
+<para xml:id="C3.S10.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C3.S10.Px4.p1.s1">
+For elementary functions, see §§ 4.9 and 4.35.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C3.S10.Px4.p2.s1">
+For special functions see §5.10 (gamma function), §7.9 (error function), §8.9 (incomplete gamma functions), §8.17(v) (incomplete beta function), §8.19(vii) (generalized exponential integral), §§10.10 and 10.33 (quotients of Bessel functions), §13.6 (quotients of confluent hypergeometric functions), §13.19 (quotients of Whittaker functions), and §15.7 (quotients of hypergeometric functions).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C3.S10.Px4.p3.s1">
+For further information and examples seeLorentzen and Waadeland (1992, pp. 292–330, 560–599) and Cuyt et al. (2008).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S10.SS3">
+<title>Numerical Evaluation of Continued Fractions</title>        
+ 
+<paragraph xml:id="C3.S10.Px5">
+<title>Forward Recurrence Algorithm</title>  
+  
+<para xml:id="C3.S10.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C3.S10.Px5.p1.s1">
+The <Math mode="inline" xml:id="C3.S10.Px5.p1.m1">A_{n}</Math> and <Math mode="inline" xml:id="C3.S10.Px5.p1.m2">B_{n}</Math> of (3.10.2) can be computed by means of three-term recurrence relations (1.12.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C3.S10.Px5.p1.s2">
+However, this may be unstable; also overflow and underflow may occur when evaluating <Math mode="inline" xml:id="C3.S10.Px5.p1.m3">A_{n}</Math> and <Math mode="inline" xml:id="C3.S10.Px5.p1.m4">B_{n}</Math> (making it necessary to re-scale from time to time).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px6">
+<title>Backward Recurrence Algorithm</title>  
+  
+<para xml:id="C3.S10.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C3.S10.Px6.p1.s1">
+To compute the <Math mode="inline" xml:id="C3.S10.Px6.p1.m1">C_{n}</Math> of (3.10.2) we perform the iterated divisions <Math equation-number="3.10.12" mode="display" xml:id="C3.S10.E12">u_{n}=b_{n},u_{k}=b_{k}+\frac{a_{k+1}}{u_{k+1}}, , if k=n-1,n-2,\dots,0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C3.S10.Px6.p1.s2">
+Then <Math mode="inline" xml:id="C3.S10.Px6.p1.m2">u_{0}=C_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C3.S10.Px6.p1.s3">
+To achieve a prescribed accuracy, either a priori knowledge is needed of the value of <Math mode="inline" xml:id="C3.S10.Px6.p1.m3">n</Math> , or <Math mode="inline" xml:id="C3.S10.Px6.p1.m4">n</Math> is determined by trial anderror.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C3.S10.Px6.p1.s4">
+In general this algorithm is more stable than the forward algorithm; seeJones and Thron (1974).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px7">
+<title>Forward Series Recurrence Algorithm</title>  
+  
+<para xml:id="C3.S10.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C3.S10.Px7.p1.s1">
+The continued fraction <Math equation-number="3.10.13" mode="display" xml:id="C3.S10.E13">C=\cfrac{a_{0}}{1-\cfrac{a_{1}}{1-\cfrac{a_{2}}{1-\cdots}}}</Math> can be written in the form <Math equation-number="3.10.14" mode="display" xml:id="C3.S10.E14">C=\sum_{k=0}^{\infty}t_{k},</Math> where <Math equation-number="3.10.15" mode="display" xml:id="C3.S10.E15">t_{0}=a_{0},t_{k}=\rho_{k}t_{k-1},\rho_{0}=0,\rho_{k}=\frac{a_{k}(1+\rho_{k-1})}{1-a_{k}(1+\rho_{k-1})}, , if k=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C3.S10.Px7.p1.s2">
+The <Math mode="inline" xml:id="C3.S10.Px7.p1.m1">n</Math> th partial sum <Math mode="inline" xml:id="C3.S10.Px7.p1.m2">t_{0}+t_{1}+\dots+t_{n-1}</Math> equals the <Math mode="inline" xml:id="C3.S10.Px7.p1.m3">n</Math> th convergent of (3.10.13),
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C3.S10.Px7.p1.s3">
+<Math mode="inline" xml:id="C3.S10.Px7.p1.m4">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="33" xml:id="C3.S10.Px7.p1.s4">
+In contrast to the preceding algorithms in this subsection no scaling problems arise and no a priori information is needed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C3.S10.Px7.p2.s1">
+In Gautschi (1979c) the forward series algorithm is used for the evaluation of a continued fraction of an incomplete gamma function (see §8.9).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S10.Px8">
+<title>Steed’s Algorithm</title>  
+  
+<para xml:id="C3.S10.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C3.S10.Px8.p1.s1">
+This forward algorithm achieves efficiency and stability in the computation ofthe convergents <Math mode="inline" xml:id="C3.S10.Px8.p1.m1">C_{n}=A_{n}/B_{n}</Math> , and is related to the forward series recurrence algorithm.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C3.S10.Px8.p1.s2">
+Again, no scaling problems arise and no a priori information is needed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S10.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C3.S10.Px8.p2.s1">
+Let <Math equation-number="3.10.16" mode="display" xml:id="C3.S10.E16">C_{0}=b_{0},D_{1}=1/b_{1},\nabla C_{1}=a_{1}D_{1},C_{1}=C_{0}+\nabla C_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C3.S10.Px8.p2.s2">
+( <Math mode="inline" xml:id="C3.S10.Px8.p2.m2">\nabla</Math> is the backward difference operator.)Then for <Math mode="inline" xml:id="C3.S10.Px8.p2.m3">n\geq 2</Math> , <Math equation-number="3.10.17" mode="display" xml:id="C3.S10.E17">D_{n}=\frac{1}{D_{n-1}a_{n}+b_{n}},\nabla C_{n}=(b_{n}D_{n}-1)\nabla C_{n-1},C_{n}=C_{n-1}+\nabla C_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C3.S10.Px8.p2.s3">
+The recurrences are continued until <Math mode="inline" xml:id="C3.S10.Px8.p2.m4">(\nabla C_{n})/C_{n}</Math> is within a prescribed relative precision.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S10.Px8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C3.S10.Px8.p3.s1">
+For further information on the preceding algorithms, including convergence in the complex plane and methods for accelerating convergence, seeBlanch (1964) and Lorentzen and Waadeland (1992, Chapter 3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C3.S10.Px8.p3.s2">
+For the evaluation of special functions by using continued fractions seeCuyt et al. (2008), Gautschi (1967, §1),Gil et al. (2007a, Chapter 6), and Wimp (1984, Chapter 4, §5).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="42" xml:id="C3.S10.Px8.p3.s3">
+See also §§6.18(i), 7.22(i), 8.25(iv),10.74(v),14.32, 28.34(ii), 29.20(i),30.16(i),33.23(v).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,1563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C31">
+<title>Heun Functions</title>                
+          
+<section xml:id="C31.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C31.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C31.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C31.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C31.S1.p2.t1.r1.m1">x</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r1.m2">y</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C31.S1.p2.t1.s2">
+real variables.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C31.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C31.S1.p2.t1.r2.m1">z</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r2.m2">\zeta</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r2.m3">w</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r2.m4">W</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C31.S1.p2.t1.s4">
+complex variables.  
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C31.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C31.S1.p2.t1.r3.m1">j</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r3.m2">k</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r3.m3">\ell</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r3.m4">m</Math>, <Math mode="inline" xml:id="C31.S1.p2.t1.r3.m5">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C31.S1.p2.t1.s6">
+nonnegative integers.        
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C31.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C31.S1.p2.t1.r4.m1">a</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C31.S1.p2.t1.s8">
+complex parameter, <Math mode="inline" xml:id="C31.S1.p2.t1.r4.m2">|a|\geq 1,a\neq 1</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C31.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C31.S1.p2.t1.r5.m1">q,\alpha,\beta,\gamma,\delta,\epsilon,\nu</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C31.S1.p2.t1.s10">
+complex parameters.              
+</sentence>
+
+</para>
+
+   
+<para xml:id="C31.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C31.S1.p3.s1">
+The main functions treated in this chapter are <Math mode="inline" xml:id="C31.S1.p3.m1">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right</Math> ), <Math mode="inline" xml:id="C31.S1.p3.m2">(s_{1},s_{2})\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> , <Math mode="inline" xml:id="C31.S1.p3.m3">(s_{1},s_{2})\mathit{Hf}_{m}^{\nu}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> , and the polynomial <Math mode="inline" xml:id="C31.S1.p3.m4">\mathit{Hp}_{n,m}\left(a,q_{n,m};-n,\beta,\gamma,\delta;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C31.S1.p3.s2">
+These notations were introduced by Arscott in ( , pp. 34–44) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C31.S1.p3.s3">
+Sometimes the parameters are suppressed.
+</sentence>
+
+</para>
+   
+ 
+</section>
+           
+<section xml:id="C31.S2">
+<title>Differential Equations</title>        
+ 
+<subsection xml:id="C31.S2.SS1">
+<title>Heun’s Equation</title>        
+  
+<para xml:id="C31.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C31.S2.SS1.p1.s1">
+ <Math equation-number="31.2.1" mode="display" xml:id="C31.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{\gamma}{z}+\frac{ \delta}{z-1}+\frac{\epsilon}{z-a}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{ \alpha\beta z-q}{z(z-1)(z-a)}w=0, subject to \alpha+\beta+1=\gamma+\delta+\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C31.S2.SS1.p1.s2">
+This equation has regular singularities at <Math mode="inline" xml:id="C31.S2.SS1.p1.m1">0,1,a,\infty</Math> , with correspondingexponents <Math mode="inline" xml:id="C31.S2.SS1.p1.m2">\{0,1-\gamma\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m3">\{0,1-\delta\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m4">\{0,1-\epsilon\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m5">\{\alpha,\beta\}</Math> , respectively (§LABEL:sec:AS.DE.RS).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C31.S2.SS1.p1.s3">
+All other homogeneous linear differential equations of the second order having four regular singularities in the extended complex plane, <Math mode="inline" xml:id="C31.S2.SS1.p1.m6">\mathbb{C}\cup\{\infty\}</Math> , can be transformed into (LABEL:eq:HE.DE.DE).
+</sentence>
+
+</para>
+      
+<para xml:id="C31.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C31.S2.SS1.p2.s1">
+The parameters play different roles: <Math mode="inline" xml:id="C31.S2.SS1.p2.m1">a</Math> is the singularity parameter; <Math mode="inline" xml:id="C31.S2.SS1.p2.m2">\alpha,\beta,\gamma,\delta,\epsilon</Math> are exponent parameters; <Math mode="inline" xml:id="C31.S2.SS1.p2.m3">q</Math> is theaccessory parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C31.S2.SS1.p2.s2">
+The total number of free parameters is six.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS2">
+<title>Normal Form of Heun’s Equation</title>        
+  
+<para xml:id="C31.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C31.S2.SS2.p1.s1">
+ <Math equation-number="31.2.2" mode="display" xml:id="C31.S2.E2">w(z)=z^{-\gamma/2}(z-1)^{-\delta/2}(z-a)^{-\epsilon/2}W(z),</Math> <Math equation-number="31.2.3" mode="display" xml:id="C31.S2.E3">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}=\left(\frac{A}{z}+\frac{B}{z-1}+ \frac{C}{z-a}+\frac{D}{z^{2}}+\frac{E}{(z-1)^{2}}+\frac{F}{(z-a)^{2}}\right)W, subject to A+B+C=0,</Math> <Math equation-number="31.2.4" mode="display" xml:id="C31.S2.E4">A=-\frac{\gamma\delta}{2}-\frac{\gamma\epsilon}{2a}+\frac{q}{a}, B=\frac{\gamma\delta}{2}-\frac{\delta\epsilon}{2(a-1)}-\frac{q-\alpha\beta}{a- 1}, C=\frac{\gamma\epsilon}{2a}+\frac{\delta\epsilon}{2(a-1)}-\frac{a\alpha\beta-q }{a(a-1)}, D=\tfrac{1}{2}\gamma\left(\tfrac{1}{2}\gamma-1\right), E=\tfrac{1}{2}\delta\left(\tfrac{1}{2}\delta-1\right), F=\tfrac{1}{2}\epsilon\left(\tfrac{1}{2}\epsilon-1\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS3">
+<title>Trigonometric Form</title>          
+<para xml:id="C31.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C31.S2.SS3.p1.s1">
+ <Math equation-number="31.2.5" mode="display" xml:id="C31.S2.E5">z={\sin^{2}}\theta,</Math> <Math equation-number="31.2.6" mode="display" xml:id="C31.S2.E6">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\theta}^{2}}+\left({(2\gamma-1)\cot\theta- (2\delta-1)\tan\theta}-\frac{\epsilon\sin\left(2\theta\right)}{a-{\sin^{2}} \theta}\right)\frac{\mathrm{d}w}{\mathrm{d}\theta}+4\frac{\alpha\beta{\sin^{2} }\theta-q}{a-{\sin^{2}}\theta}w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS4">
+<title>Doubly-Periodic Forms</title>        
+ 
+<paragraph xml:id="C31.S2.Px1">
+<title>Jacobi’s Elliptic Form</title>     
+<para xml:id="C31.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C31.S2.Px1.p1.s1">
+With the notation of §LABEL:sec:JA.ndlet
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C31.S2.Px1.p1.s2">
+<Math equation-number="31.2.7" mode="display" xml:id="C31.S2.E7">a=k^{-2}, z={\operatorname{sn}^{2}}\left(\zeta,k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C31.S2.Px1.p1.s3">
+Then (suppressing the parameter <Math mode="inline" xml:id="C31.S2.Px1.p1.m1">k</Math> ) <Math equation-number="31.2.8" mode="display" xml:id="C31.S2.E8">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\zeta}^{2}}+\left((2\gamma-1)\frac{ \operatorname{cn}\zeta\operatorname{dn}\zeta}{\operatorname{sn}\zeta}-(2\delta -1)\frac{\operatorname{sn}\zeta\operatorname{dn}\zeta}{\operatorname{cn}\zeta} -(2\epsilon-1)k^{2}\frac{\operatorname{sn}\zeta\operatorname{cn}\zeta}{ \operatorname{dn}\zeta}\right)\frac{\mathrm{d}w}{\mathrm{d}\zeta}+4k^{2}( \alpha\beta{\operatorname{sn}^{2}}\zeta-q)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px2">
+<title>Weierstrass’s Form</title>     
+<para xml:id="C31.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C31.S2.Px2.p1.s1">
+With the notation of §§LABEL:sec:EL.LD.LL and LABEL:sec:WE.2let
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C31.S2.Px2.p1.s2">
+<Math equation-number="31.2.9" mode="display" xml:id="C31.S2.E9">k^{2}=(e_{2}-e_{3})/(e_{1}-e_{3}), \zeta=\mathrm{i}{K^{\prime}}+\xi(e_{1}-e_{3})^{1/2}, e_{1}=\wp\left(\omega_{1}\right), e_{2}=\wp\left(\omega_{2}\right), e_{3}=\wp\left(\omega_{3}\right), e_{1}+e_{2}+e_{3}=0,</Math> where <Math mode="inline" xml:id="C31.S2.Px2.p1.m1">2\omega_{1}</Math> and <Math mode="inline" xml:id="C31.S2.Px2.p1.m2">2\omega_{3}</Math> with <Math mode="inline" xml:id="C31.S2.Px2.p1.m3">\Im(\omega_{3}/\omega_{1})&gt;0</Math> are generators of the lattice <Math mode="inline" xml:id="C31.S2.Px2.p1.m4">\mathbb{L}</Math> for <Math mode="inline" xml:id="C31.S2.Px2.p1.m5">\wp\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C31.S2.Px2.p1.s3">
+Then <Math equation-number="31.2.10" mode="display" xml:id="C31.S2.E10">w(\xi)=\left(\wp\left(\xi\right)-e_{3}\right)^{(1-2\gamma)/4}\left(\wp\left( \xi\right)-e_{2}\right)^{(1-2\delta)/4}\*\left(\wp\left(\xi\right)-e_{1}\right )^{(1-2\epsilon)/4}W(\xi),</Math> where <Math mode="inline" xml:id="C31.S2.Px2.p1.m6">W(\xi)</Math> satisfies <Math equation-number="31.2.11" mode="display" xml:id="C31.S2.E11">\ifrac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}+\left(H+b_{0}\wp\left(\xi\right )+b_{1}\wp\left(\xi+\omega_{1}\right)+b_{2}\wp\left(\xi+\omega_{2}\right)+b_{3 }\wp\left(\xi+\omega_{3}\right)\right)W=0,</Math> with <Math equation-number="31.2.12" mode="display" xml:id="C31.S2.E12">b_{0}=4\alpha\beta-(\gamma+\delta+\epsilon-\tfrac{1}{2})(\gamma+\delta+ \epsilon-\tfrac{3}{2}), b_{1}=-(\epsilon-\tfrac{1}{2})(\epsilon-\tfrac{3}{2}), b_{2}=-(\delta-\tfrac{1}{2})(\delta-\tfrac{3}{2}), b_{3}=-(\gamma-\tfrac{1}{2})(\gamma-\tfrac{3}{2}), H=e_{1}(\gamma+\delta-1)^{2}+e_{2}(\gamma+\epsilon-1)^{2}+e_{3}(\delta+ \epsilon-1)^{2}-4\alpha\beta e_{3}-4q(e_{2}-e_{3})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS5">
+<title>Heun’s Equation Automorphisms</title>        
+  
+<paragraph xml:id="C31.S2.Px3">
+<title><Math mode="inline" xml:id="C31.S2.Px3.m1">F</Math>-Homotopic Transformations</title>    
+<para xml:id="C31.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C31.S2.Px3.p1.s1">
+ <Math mode="inline" xml:id="C31.S2.Px3.p1.m1">w(z)=z^{1-\gamma}w_{1}(z)</Math> satisfies (LABEL:eq:HE.DE.DE) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m2">w_{1}</Math> is a solution of (LABEL:eq:HE.DE.DE) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m3">q_{1}=q+(a\delta+\epsilon)(1-\gamma)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m4">\alpha_{1}=\alpha+1-\gamma</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m5">\beta_{1}=\beta+1-\gamma</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m6">\gamma_{1}=2-\gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C31.S2.Px3.p1.s2">
+Next, <Math mode="inline" xml:id="C31.S2.Px3.p1.m7">w(z)=(z-1)^{1-\delta}w_{2}(z)</Math> satisfies (LABEL:eq:HE.DE.DE) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m8">w_{2}</Math> is a solution of (LABEL:eq:HE.DE.DE) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m9">q_{2}=q+a\gamma(1-\delta)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m10">\alpha_{2}=\alpha+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m11">\beta_{2}=\beta+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m12">\delta_{2}=2-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C31.S2.Px3.p1.s3">
+Lastly, <Math mode="inline" xml:id="C31.S2.Px3.p1.m13">w(z)=(z-a)^{1-\epsilon}w_{3}(z)</Math> satisfies(LABEL:eq:HE.DE.DE) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m14">w_{3}</Math> is a solution of (LABEL:eq:HE.DE.DE) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m15">q_{3}=q+\gamma(1-\epsilon)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m16">\alpha_{3}=\alpha+1-\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m17">\beta_{3}=\beta+1-\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m18">\epsilon_{3}=2-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="31" xml:id="C31.S2.Px3.p1.s4">
+By composing these three steps, there result <Math mode="inline" xml:id="C31.S2.Px3.p1.m19">2^{3}=8</Math> possible transformations of the dependent variable (including the identity transformation) that preserve the form of (LABEL:eq:HE.DE.DE).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px4">
+<title>Homographic Transformations</title>    
+<para xml:id="C31.S2.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C31.S2.Px4.p1.s1">
+There are <Math mode="inline" xml:id="C31.S2.Px4.p1.m1">4!=24</Math> homographies <Math mode="inline" xml:id="C31.S2.Px4.p1.m2">\tilde{z}(z)=(Az+B)/(Cz+D)</Math> that take <Math mode="inline" xml:id="C31.S2.Px4.p1.m3">0,1,a,\infty</Math> to some permutation of <Math mode="inline" xml:id="C31.S2.Px4.p1.m4">0,1,a^{\prime},\infty</Math> , where <Math mode="inline" xml:id="C31.S2.Px4.p1.m5">a^{\prime}</Math> may differ from <Math mode="inline" xml:id="C31.S2.Px4.p1.m6">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C31.S2.Px4.p1.s2">
+If <Math mode="inline" xml:id="C31.S2.Px4.p1.m7">\tilde{z}=\tilde{z}(z)</Math> is one of the <Math mode="inline" xml:id="C31.S2.Px4.p1.m8">3!=6</Math> homographies that map <Math mode="inline" xml:id="C31.S2.Px4.p1.m9">\infty</Math> to <Math mode="inline" xml:id="C31.S2.Px4.p1.m10">\infty</Math> , then <Math mode="inline" xml:id="C31.S2.Px4.p1.m11">w(z)=\tilde{w}(\tilde{z})</Math> satisfies (LABEL:eq:HE.DE.DE) if <Math mode="inline" xml:id="C31.S2.Px4.p1.m12">\tilde{w}(\tilde{z})</Math> is a solution of (LABEL:eq:HE.DE.DE) with <Math mode="inline" xml:id="C31.S2.Px4.p1.m13">z</Math> replaced by <Math mode="inline" xml:id="C31.S2.Px4.p1.m14">\tilde{z}</Math> and appropriately transformed parameters.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C31.S2.Px4.p1.s3">
+For example, if <Math mode="inline" xml:id="C31.S2.Px4.p1.m15">\tilde{z}=z/a</Math> , then the parameters are <Math mode="inline" xml:id="C31.S2.Px4.p1.m16">\tilde{a}=1/a</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m17">\tilde{q}=q/a</Math> ; <Math mode="inline" xml:id="C31.S2.Px4.p1.m18">\tilde{\delta}=\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m19">\tilde{\epsilon}=\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="35" xml:id="C31.S2.Px4.p1.s4">
+If <Math mode="inline" xml:id="C31.S2.Px4.p1.m20">\tilde{z}=\tilde{z}(z)</Math> is one of the <Math mode="inline" xml:id="C31.S2.Px4.p1.m21">4!-3!=1</Math> 8 homographies that do not map <Math mode="inline" xml:id="C31.S2.Px4.p1.m22">\infty</Math> to <Math mode="inline" xml:id="C31.S2.Px4.p1.m23">\infty</Math> , then an appropriate prefactor must be included on the right-hand side.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="36" xml:id="C31.S2.Px4.p1.s5">
+For example, <Math mode="inline" xml:id="C31.S2.Px4.p1.m24">w(z)=(1-z)^{-\alpha}\tilde{w}(z/(z-1))</Math> , which arises from <Math mode="inline" xml:id="C31.S2.Px4.p1.m25">\tilde{z}=z/(z-1)</Math> , satisfies (LABEL:eq:HE.DE.DE) if <Math mode="inline" xml:id="C31.S2.Px4.p1.m26">\tilde{w}(\tilde{z})</Math> is a solution of (LABEL:eq:HE.DE.DE) with <Math mode="inline" xml:id="C31.S2.Px4.p1.m27">z</Math> replaced by <Math mode="inline" xml:id="C31.S2.Px4.p1.m28">\tilde{z}</Math> and transformed parameters <Math mode="inline" xml:id="C31.S2.Px4.p1.m29">\tilde{a}=a/(a-1)</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m30">\tilde{q}=-(q-a\alpha\gamma)/(a-1)</Math> ; <Math mode="inline" xml:id="C31.S2.Px4.p1.m31">\tilde{\beta}=\alpha+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m32">\tilde{\delta}=\alpha+1-\beta</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px5">
+<title>Composite Transformations</title>    
+<para xml:id="C31.S2.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C31.S2.Px5.p1.s1">
+There are <Math mode="inline" xml:id="C31.S2.Px5.p1.m1">8\cdot 24=192</Math> automorphisms of equation (LABEL:eq:HE.DE.DE) by compositions of <Math mode="inline" xml:id="C31.S2.Px5.p1.m2">F</Math> -homotopic and homographic transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C31.S2.Px5.p1.s2">
+Each is a substitution of dependent and/or independent variables that preserves the form of (LABEL:eq:HE.DE.DE).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C31.S2.Px5.p1.s3">
+Except for the identity automorphism, each alters the parameters.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S3">
+<title>Basic Solutions</title>        
+ 
+<subsection xml:id="C31.S3.SS1">
+<title>Fuchs–Frobenius Solutions at <Math mode="inline" xml:id="C31.S3.SS1.m1">z=0</Math></title>        
+  
+<para xml:id="C31.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C31.S3.SS1.p1.s1">
+ <Math mode="inline" xml:id="C31.S3.SS1.p1.m1">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right</Math> ) denotes the solution of (LABEL:eq:HE.DE.DE) that corresponds to the exponent <Math mode="inline" xml:id="C31.S3.SS1.p1.m2">0</Math> at <Math mode="inline" xml:id="C31.S3.SS1.p1.m3">z=0</Math> and assumes the value <Math mode="inline" xml:id="C31.S3.SS1.p1.m4">1</Math> there.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C31.S3.SS1.p1.s2">
+If the other exponent is not a positive integer, that is, if <Math mode="inline" xml:id="C31.S3.SS1.p1.m5">\gamma\neq 0,-1,-2,\dots</Math> , then from §LABEL:sec:AS.DE.RS it follows that <Math mode="inline" xml:id="C31.S3.SS1.p1.m6">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right</Math> ) exists, is analytic in the disk <Math mode="inline" xml:id="C31.S3.SS1.p1.m7">|z|&lt;1</Math> , and has the Maclaurin expansion <Math equation-number="31.3.1" mode="display" xml:id="C31.S3.E1">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right)=\sum_{j=0}^{ \infty}c_{j}z^{j}, subject to |z|&lt;1,</Math> where <Math mode="inline" xml:id="C31.S3.SS1.p1.m8">c_{0}=1</Math> , <Math equation-number="31.3.2" mode="display" xml:id="C31.S3.E2">a\gamma c_{1}-qc_{0}=0,</Math> <Math equation-number="31.3.3" mode="display" xml:id="C31.S3.E3">R_{j}c_{j+1}-(Q_{j}+q)c_{j}+P_{j}c_{j-1}=0, subject to j\geq 1,</Math> with <Math equation-number="31.3.4" mode="display" xml:id="C31.S3.E4">P_{j}=(j-1+\alpha)(j-1+\beta), Q_{j}=j\left((j-1+\gamma)(1+a)+a\delta+\epsilon\right), R_{j}=a(j+1)(j+\gamma)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C31.S3.SS1.p2.s1">
+Similarly, if <Math mode="inline" xml:id="C31.S3.SS1.p2.m1">\gamma\neq 1,2,3,\dots</Math> , then the solution of (LABEL:eq:HE.DE.DE) that corresponds to the exponent <Math mode="inline" xml:id="C31.S3.SS1.p2.m2">1-\gamma</Math> at <Math mode="inline" xml:id="C31.S3.SS1.p2.m3">z=0</Math> is <Math equation-number="31.3.5" mode="display" xml:id="C31.S3.E5">z^{1-\gamma}\mathit{H\!\ell}\left(a,(a\delta+\epsilon)(1-\gamma)+q;\alpha+1- \gamma,\beta+1-\gamma,2-\gamma,\delta;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C31.S3.SS1.p3.s1">
+When <Math mode="inline" xml:id="C31.S3.SS1.p3.m1">\gamma\in\mathbb{Z}</Math> , linearly independent solutions can be constructed as in §LABEL:sec:AS.DE.RS. In general, one of them has a logarithmic singularity at <Math mode="inline" xml:id="C31.S3.SS1.p3.m2">z=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S3.SS2">
+<title>Fuchs–Frobenius Solutions at Other Singularities</title>        
+  
+<para xml:id="C31.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C31.S3.SS2.p1.s1">
+With similar restrictions to those given in §LABEL:sec:HE.SS.HL, the following results apply.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C31.S3.SS2.p1.s2">
+Solutions of (LABEL:eq:HE.DE.DE) corresponding to the exponents <Math mode="inline" xml:id="C31.S3.SS2.p1.m1">0</Math> and <Math mode="inline" xml:id="C31.S3.SS2.p1.m2">1-\delta</Math> at <Math mode="inline" xml:id="C31.S3.SS2.p1.m3">z=1</Math> are respectively, <Math equation-number="31.3.6" mode="display" xml:id="C31.S3.E6">\mathit{H\!\ell}\left(1-a,\alpha\beta-q;\alpha,\beta,\delta,\gamma;1-z\right)</Math> , <Math equation-number="31.3.7" mode="display" xml:id="C31.S3.E7">(1-z)^{1-\delta}\*\mathit{H\!\ell}\left(1-a,((1-a)\gamma+\epsilon)(1-\delta)+ \alpha\beta-q;\alpha+1-\delta,\beta+1-\delta,2-\delta,\gamma;1-z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C31.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C31.S3.SS2.p2.s1">
+Solutions of (LABEL:eq:HE.DE.DE) corresponding to the exponents <Math mode="inline" xml:id="C31.S3.SS2.p2.m1">0</Math> and <Math mode="inline" xml:id="C31.S3.SS2.p2.m2">1-\epsilon</Math> at <Math mode="inline" xml:id="C31.S3.SS2.p2.m3">z=a</Math> are respectively, <Math equation-number="31.3.8" mode="display" xml:id="C31.S3.E8">\mathit{H\!\ell}\left(\frac{a}{a-1},\frac{\alpha\beta a-q}{a-1};\alpha,\beta, \epsilon,\delta;\frac{a-z}{a-1}\right),</Math> <Math equation-number="31.3.9" mode="display" xml:id="C31.S3.E9">\left(\frac{a-z}{a-1}\right)^{1-\epsilon}\mathit{H\!\ell}\left(\frac{a}{a-1}, \frac{(a(\delta+\gamma)-\gamma)(1-\epsilon)}{a-1}+\frac{\alpha\beta a-q}{a-1}; \alpha+1-\epsilon,\beta+1-\epsilon,2-\epsilon,\delta;\frac{a-z}{a-1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S3.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C31.S3.SS2.p3.s1">
+Solutions of (LABEL:eq:HE.DE.DE) corresponding to the exponents <Math mode="inline" xml:id="C31.S3.SS2.p3.m1">\alpha</Math> and <Math mode="inline" xml:id="C31.S3.SS2.p3.m2">\beta</Math> at <Math mode="inline" xml:id="C31.S3.SS2.p3.m3">z=\infty</Math> are respectively, <Math equation-number="31.3.10" mode="display" xml:id="C31.S3.E10">z^{-\alpha}\mathit{H\!\ell}\left(\frac{1}{a},\alpha\left(\beta-\epsilon\right) +\frac{\alpha}{a}\left(\beta-\delta\right)-\frac{q}{a};\alpha,\alpha-\gamma+1, \alpha-\beta+1,\delta;\frac{1}{z}\right),</Math> <Math equation-number="31.3.11" mode="display" xml:id="C31.S3.E11">z^{-\beta}\mathit{H\!\ell}\left(\frac{1}{a},\beta\left(\alpha-\epsilon\right)+ \frac{\beta}{a}\left(\alpha-\delta\right)-\frac{q}{a};\beta,\beta-\gamma+1, \beta-\alpha+1,\delta;\frac{1}{z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S3.SS3">
+<title>Equivalent Expressions</title>        
+   
+<para xml:id="C31.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C31.S3.SS3.p1.s1">
+Solutions (LABEL:eq:HE.SS.SS1) and (LABEL:eq:HE.SS.SS7)–(LABEL:eq:HE.SS.SS76)comprise a set of 8 local solutions of (LABEL:eq:HE.DE.DE): 2 per singular point. Each is related to the solution (LABEL:eq:HE.SS.SS1) by one of the automorphisms of §LABEL:sec:HE.DE.HA.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C31.S3.SS3.p1.s2">
+There are 192 automorphisms in all, so there are <Math mode="inline" xml:id="C31.S3.SS3.p1.m1">192/8=24</Math> equivalent expressions for each of the 8.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C31.S3.SS3.p1.s3">
+For example, <Math mode="inline" xml:id="C31.S3.SS3.p1.m2">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right</Math> ) is equal to <Math equation-number="31.3.12" mode="display" xml:id="C31.S3.E12">\mathit{H\!\ell}\left(1/a,q/a;\alpha,\beta,\gamma,\alpha+\beta+1-\gamma-\delta ;z/a\right),</Math> which arises from the homography <Math mode="inline" xml:id="C31.S3.SS3.p1.m3">\tilde{z}=z/a</Math> , and to <Math equation-number="31.3.13" mode="display" xml:id="C31.S3.E13">(1-z)^{-\alpha}\*\mathit{H\!\ell}\left(\frac{a}{a-1},-\frac{q-a\alpha\gamma}{a -1};\alpha,\alpha+1-\delta,\gamma,\alpha+1-\beta;\frac{z}{z-1}\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S3.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C31.S3.SS3.p2.s1">
+which arises from <Math mode="inline" xml:id="C31.S3.SS3.p2.m1">\tilde{z}=z/(z-1)</Math> , and also to 21 further expressions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C31.S3.SS3.p2.s2">
+The full set of 192 local solutions of (LABEL:eq:HE.DE.DE), equivalent in 8sets of 24, resembles Kummer’s set of 24 local solutions of the hypergeometric equation, which are equivalent in 4 sets of 6 solutions (§LABEL:sec:HY.DE.KU); see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S4">
+<title>Solutions Analytic at Two Singularities: Heun Functions</title>        
+ 
+<para xml:id="C31.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C31.S4.p1.s1">
+For an infinite set of discrete values <Math mode="inline" xml:id="C31.S4.p1.m1">q_{m}</Math> , <Math mode="inline" xml:id="C31.S4.p1.m2">m=0,1,2,\dots</Math> , of the accessory parameter <Math mode="inline" xml:id="C31.S4.p1.m3">q</Math> , the function <Math mode="inline" xml:id="C31.S4.p1.m4">\mathit{H\!\ell}\left(a,q;\alpha,\beta,\gamma,\delta;z\right</Math> ) is analytic at <Math mode="inline" xml:id="C31.S4.p1.m5">z=1</Math> , and hence also throughout the disk <Math mode="inline" xml:id="C31.S4.p1.m6">|z|&lt;a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C31.S4.p1.s2">
+To emphasize this property this set of functions is denoted by <Math equation-number="31.4.1" mode="display" xml:id="C31.S4.E1">(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right), subject to m=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C31.S4.p2.s1">
+The eigenvalues <Math mode="inline" xml:id="C31.S4.p2.m1">q_{m}</Math> satisfy the continued-fraction equation <Math equation-number="31.4.2" mode="display" xml:id="C31.S4.E2">q=\cfrac{a\gamma P_{1}}{Q_{1}+q-\cfrac{R_{1}P_{2}}{Q_{2}+q-\cfrac{R_{2}P_{3}}{ Q_{3}+q-\cdots}}},</Math> in which <Math mode="inline" xml:id="C31.S4.p2.m2">P_{j},Q_{j},R_{j}</Math> are as in §LABEL:sec:HE.SS.HL.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C31.S4.p3.s1">
+More generally, <Math equation-number="31.4.3" mode="display" xml:id="C31.S4.E3">(s_{1},s_{2})\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right), subject to m=0,1,2,\dots,</Math> with <Math mode="inline" xml:id="C31.S4.p3.m1">(s_{1},s_{2})\in\{0,1,a,\infty\}</Math> , denotes a set of solutions of (LABEL:eq:HE.DE.DE), each of which is analytic at <Math mode="inline" xml:id="C31.S4.p3.m2">s_{1}</Math> and <Math mode="inline" xml:id="C31.S4.p3.m3">s_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C31.S4.p3.s2">
+The set <Math mode="inline" xml:id="C31.S4.p3.m4">q_{m}</Math> depends on the choice of <Math mode="inline" xml:id="C31.S4.p3.m5">s_{1}</Math> and <Math mode="inline" xml:id="C31.S4.p3.m6">s_{2}</Math>.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C31.S4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C31.S4.p4.s1">
+The solutions (LABEL:eq:HE.HF.SS91) are called the Heun functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C31.S4.p4.s2">
+See ( , pp. 39–41) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C31.S5">
+<title>Solutions Analytic at Three Singularities: Heun Polynomials</title>        
+ 
+<para xml:id="C31.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C31.S5.p1.s1">
+Let <Math mode="inline" xml:id="C31.S5.p1.m1">\alpha=-n</Math> , <Math mode="inline" xml:id="C31.S5.p1.m2">n=0,1,2,\dots</Math> , and <Math mode="inline" xml:id="C31.S5.p1.m3">q_{n,m}</Math> , <Math mode="inline" xml:id="C31.S5.p1.m4">m=0,1,\dots,n</Math> , be the eigenvalues of the tridiagonal matrix <Math equation-number="31.5.1" mode="display" xml:id="C31.S5.E1">\begin{bmatrix}0&amp;a\gamma&amp;0&amp;\dots&amp;0\\ P_{1}&amp;-Q_{1}&amp;R_{1}&amp;\dots&amp;0\\ 0&amp;P_{2}&amp;-Q_{2}&amp;&amp;\vdots\\ \vdots&amp;\vdots&amp;&amp;\ddots&amp;R_{n-1}\\ 0&amp;0&amp;\dots&amp;P_{n}&amp;-Q_{n}\end{bmatrix},</Math> where <Math mode="inline" xml:id="C31.S5.p1.m5">P_{j},Q_{j},R_{j}</Math> are again defined as in §LABEL:sec:HE.SS.HL.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C31.S5.p1.s2">
+Then <Math equation-number="31.5.2" mode="display" xml:id="C31.S5.E2">\mathit{Hp}_{n,m}\left(a,q_{n,m};-n,\beta,\gamma,\delta;z\right)=\mathit{H\! \ell}\left(a,q_{n,m};-n,\beta,\gamma,\delta;z\right)</Math> is a polynomial of degree <Math mode="inline" xml:id="C31.S5.p1.m6">n</Math> , and hence a solution of (LABEL:eq:HE.DE.DE) that is analytic at all three finite singularities <Math mode="inline" xml:id="C31.S5.p1.m7">0,1,a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="62" xml:id="C31.S5.p1.s3">
+These solutions are theHeun polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="63" xml:id="C31.S5.p1.s4">
+Some properties are included as special cases of properties given in §LABEL:sec:HE.ST below.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C31.S6">
+<title>Path-Multiplicative Solutions</title>        
+  
+<para xml:id="C31.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C31.S6.p1.s1">
+A further extension of the notation (LABEL:eq:HE.HF.SS8) and (LABEL:eq:HE.HF.SS91) is given by <Math equation-number="31.6.1" mode="display" xml:id="C31.S6.E1">(s_{1},s_{2})\mathit{Hf}_{m}^{\nu}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z \right), subject to m=0,1,2,\dots,</Math> with <Math mode="inline" xml:id="C31.S6.p1.m2">(s_{1},s_{2})\in\{0,1,a\}</Math> , but with another set of <Math mode="inline" xml:id="C31.S6.p1.m3">\{q_{m}\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C31.S6.p1.s2">
+This denotes a set of solutions of (LABEL:eq:HE.DE.DE) with the property that if we pass around a simple closed contour in the <Math mode="inline" xml:id="C31.S6.p1.m4">z</Math> -plane that encircles <Math mode="inline" xml:id="C31.S6.p1.m5">s_{1}</Math> and <Math mode="inline" xml:id="C31.S6.p1.m6">s_{2}</Math> once in the positive sense, but not the remaining finite singularity, then the solution is multiplied by a constant factor <Math mode="inline" xml:id="C31.S6.p1.m7">{\mathrm{e}^{2\nu\pi i}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C31.S6.p1.s3">
+These solutions are called path-multiplicative. See ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C31.S7">
+<title>Relations to Other Functions</title>        
+ 
+<subsection xml:id="C31.S7.SS1">
+<title>Reductions to the Gauss Hypergeometric Function</title>        
+   
+<para xml:id="C31.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C31.S7.SS1.p1.s1">
+ <Math equation-number="31.7.1" mode="display" xml:id="C31.S7.E1">{{}_{2}F_{1}}\left(\alpha,\beta;\gamma;z\right)=\mathit{H\!\ell}\left(1,\alpha \beta;\alpha,\beta,\gamma,\delta;z\right)=\mathit{H\!\ell}\left(0,0;\alpha, \beta,\gamma,\alpha+\beta+1-\gamma;z\right)=\mathit{H\!\ell}\left(a,a\alpha \beta;\alpha,\beta,\gamma,\alpha+\beta+1-\gamma;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="68" xml:id="C31.S7.SS1.p1.s2">
+Other reductions of <Math mode="inline" xml:id="C31.S7.SS1.p1.m1">\mathit{H\!\ell</Math> } to a <Math mode="inline" xml:id="C31.S7.SS1.p1.m2">{{}_{2}F_{1}}</Math> , with at least one free parameter, exist iff the pair <Math mode="inline" xml:id="C31.S7.SS1.p1.m3">(a,p)</Math> takes one of a finite number of values, where <Math mode="inline" xml:id="C31.S7.SS1.p1.m4">q=\alpha\beta p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="69" xml:id="C31.S7.SS1.p1.s3">
+Below are three such reductions with three and two parameters.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="70" xml:id="C31.S7.SS1.p1.s4">
+They are analogous to quadratic and cubic hypergeometric transformations (§§LABEL:sec:HY.TF.QT–LABEL:sec:HY.TF.CT).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="71" xml:id="C31.S7.SS1.p1.s5">
+<Math equation-number="31.7.2" mode="display" xml:id="C31.S7.E2">\mathit{H\!\ell}\left(2,\alpha\beta;\alpha,\beta,\gamma,\alpha+\beta-2\gamma+1 ;z\right)={{}_{2}F_{1}}\left(\tfrac{1}{2}\alpha,\tfrac{1}{2}\beta;\gamma;1-(1- z)^{2}\right),</Math> <Math equation-number="31.7.3" mode="display" xml:id="C31.S7.E3">\mathit{H\!\ell}\left(4,\alpha\beta;\alpha,\beta,\tfrac{1}{2},\tfrac{2}{3}( \alpha+\beta);z\right)={{}_{2}F_{1}}\left(\tfrac{1}{3}\alpha,\tfrac{1}{3}\beta ;\tfrac{1}{2};1-(1-z)^{2}(1-\tfrac{1}{4}z)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C31.S7.SS1.p2.s1">
+ <Math equation-number="31.7.4" mode="display" xml:id="C31.S7.E4">\mathit{H\!\ell}\left(\tfrac{1}{2}+i\tfrac{\sqrt{3}}{2},\alpha\beta(\tfrac{1}{ 2}+i\tfrac{\sqrt{3}}{6});\alpha,\beta,\tfrac{1}{3}(\alpha+\beta+1),\tfrac{1}{3 }(\alpha+\beta+1);z\right)={{}_{2}F_{1}}\left(\tfrac{1}{3}\alpha,\tfrac{1}{3} \beta;\tfrac{1}{3}(\alpha+\beta+1);1-\left(1-\left(\tfrac{3}{2}-i\tfrac{\sqrt{ 3}}{2}\right)z\right)^{3}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C31.S7.SS1.p3.s1">
+For additional reductions, see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="74" xml:id="C31.S7.SS1.p3.s2">
+( ) gives a reduction in which the independent variable is transformed notpolynomially or rationally, but algebraically.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S7.SS2">
+<title>Relations to Lamé Functions</title>        
+   
+<para xml:id="C31.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C31.S7.SS2.p1.s1">
+With <Math mode="inline" xml:id="C31.S7.SS2.p1.m1">z={\operatorname{sn}^{2}}\left(\zeta,k\right)</Math> and <Math equation-number="31.7.5" mode="display" xml:id="C31.S7.E5">a=k^{-2}, q=-\tfrac{1}{4}ah, \alpha=-\tfrac{1}{2}\nu, \beta=\tfrac{1}{2}(\nu+1), \gamma=\delta=\epsilon=\tfrac{1}{2},</Math> equation (LABEL:eq:HE.DE.DE) becomes Lamé’s equation with independent variable <Math mode="inline" xml:id="C31.S7.SS2.p1.m2">\zeta</Math> ; compare (LABEL:fig:LA.DE.SI)and (LABEL:eq:HE.DE.JF2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="76" xml:id="C31.S7.SS2.p1.s2">
+The solutions (LABEL:eq:HE.SS.SS1) and (LABEL:eq:HE.SS.SS7) transform into even and odd solutions of Lamé’s equation, respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="77" xml:id="C31.S7.SS2.p1.s3">
+Similar specializations of formulas in §LABEL:sec:HE.SS.OT yield solutions in the neighborhoods of the singularities <Math mode="inline" xml:id="C31.S7.SS2.p1.m3">\zeta=K</Math> , <Math mode="inline" xml:id="C31.S7.SS2.p1.m4">K+i{K^{\prime}}</Math> , and <Math mode="inline" xml:id="C31.S7.SS2.p1.m5">i{K^{\prime}}</Math> , where <Math mode="inline" xml:id="C31.S7.SS2.p1.m6">K</Math> and <Math mode="inline" xml:id="C31.S7.SS2.p1.m7">{K^{\prime}}</Math> are related to <Math mode="inline" xml:id="C31.S7.SS2.p1.m8">k</Math> as in §LABEL:sec:EL.LD.LL.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S8">
+<title>Solutions via Quadratures</title>        
+  
+<para xml:id="C31.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C31.S8.p1.s1">
+For half-odd-integer values of the exponent parameters: <Math equation-number="31.8.1" mode="display" xml:id="C31.S8.E1">\beta-\alpha=m_{0}+\tfrac{1}{2}, \gamma=-m_{1}+\tfrac{1}{2}, \delta=-m_{2}+\tfrac{1}{2}, \epsilon=-m_{3}+\tfrac{1}{2} subject to m_{0},m_{1},m_{2},m_{3}=0,1,2,\dots,</Math> the Hermite–Darboux method (see ( , pp. 570–572) ) can be applied to construct solutions of (LABEL:eq:HE.DE.DE) expressed in quadratures, as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C31.S8.p2.s1">
+Denote <Math mode="inline" xml:id="C31.S8.p2.m1">\mathbf{m}=(m_{0},m_{1},m_{2},m_{3})</Math> and <Math mode="inline" xml:id="C31.S8.p2.m2">\lambda=-4q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C31.S8.p2.s2">
+Then <Math equation-number="31.8.2" mode="display" xml:id="C31.S8.E2">w_{\pm}(\mathbf{m};\lambda;z)=\sqrt{\Psi_{g,N}(\lambda,z)}\*\exp\left(\pm\frac {i\nu(\lambda)}{2}\int_{z_{0}}^{z}\frac{t^{m_{1}}(t-1)^{m_{2}}(t-a)^{m_{3}} \mathrm{d}t}{\Psi_{g,N}(\lambda,t)\sqrt{t(t-1)(t-a)}}\right)</Math> are two independent solutions of (LABEL:eq:HE.DE.DE).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="81" xml:id="C31.S8.p2.s3">
+Here <Math mode="inline" xml:id="C31.S8.p2.m3">\Psi_{g,N}(\lambda,z)</Math> is a polynomial of degree <Math mode="inline" xml:id="C31.S8.p2.m4">g</Math> in <Math mode="inline" xml:id="C31.S8.p2.m5">\lambda</Math> and of degree <Math mode="inline" xml:id="C31.S8.p2.m6">N=m_{0}+m_{1}+m_{2}+m_{3}</Math> in <Math mode="inline" xml:id="C31.S8.p2.m7">z</Math> , that is a solution of the third-order differential equation satisfied by a product of any two solutions of Heun’s equation.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="82" xml:id="C31.S8.p2.s4">
+The degree <Math mode="inline" xml:id="C31.S8.p2.m8">g</Math> is given by <Math equation-number="31.8.3" mode="display" xml:id="C31.S8.E3">g=\tfrac{1}{2}\max\left(2\max_{0\leq k\leq 3}m_{k},1+N-(1+(-1)^{N})\left( \tfrac{1}{2}+\min_{0\leq k\leq 3}m_{k}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="83" xml:id="C31.S8.p2.s5">
+The variables <Math mode="inline" xml:id="C31.S8.p2.m9">\lambda</Math> and <Math mode="inline" xml:id="C31.S8.p2.m10">\nu</Math> are two coordinates of the associated hyperelliptic (spectral) curve <Math mode="inline" xml:id="C31.S8.p2.m11">\Gamma:\nu^{2}=\prod_{j=1}^{2g+1}(\lambda-\lambda_{j})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="84" xml:id="C31.S8.p2.s6">
+(This <Math mode="inline" xml:id="C31.S8.p2.m12">\nu</Math> is unrelated to the <Math mode="inline" xml:id="C31.S8.p2.m13">\nu</Math> in §LABEL:sec:HE.PM.)Lastly,
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="85" xml:id="C31.S8.p2.s7">
+<Math mode="inline" xml:id="C31.S8.p2.m14">\lambda_{j}</Math> , <Math mode="inline" xml:id="C31.S8.p2.m15">j=1,2,\ldots,2g+1</Math> , are the zeros of the Wronskian of <Math mode="inline" xml:id="C31.S8.p2.m16">w_{+}(\mathbf{m};\lambda;z)</Math> and <Math mode="inline" xml:id="C31.S8.p2.m17">w_{-}(\mathbf{m};\lambda;z)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C31.S8.p3.s1">
+By automorphisms from §LABEL:sec:HE.DE.HA, similar solutions also exist for <Math mode="inline" xml:id="C31.S8.p3.m1">m_{0},m_{1},m_{2},m_{3}\in\mathbb{Z}</Math> , and <Math mode="inline" xml:id="C31.S8.p3.m2">\Psi_{g,N}(\lambda,z)</Math> may become a rational function in <Math mode="inline" xml:id="C31.S8.p3.m3">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C31.S8.p3.s2">
+For instance, <Math equation-number="31.8.4" mode="display" xml:id="C31.S8.E4">\Psi_{1,2}=z^{2}+\lambda z+a, \nu^{2}=(\lambda+a+1)(\lambda^{2}-4a) subject to \mathbf{m}=(1,1,0,0),</Math> and <Math equation-number="31.8.5" mode="display" xml:id="C31.S8.E5">\Psi_{1,-1}=\left(z^{2}+(\lambda+3a+3)z+a\right)/z^{3}, \nu^{2}=(\lambda+4a+4)\left((\lambda+3a+3)^{2}-4a\right) subject to \mathbf{m}=(1,-2,0,0)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="88" xml:id="C31.S8.p3.s3">
+For <Math mode="inline" xml:id="C31.S8.p3.m4">\mathbf{m}=(m_{0},0,0,0)</Math> , these solutions reduce to Hermite’s solutions ( ( , §23.7) ) of the Lamé equation in its algebraic form.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="89" xml:id="C31.S8.p3.s4">
+The curve <Math mode="inline" xml:id="C31.S8.p3.m5">\Gamma</Math> reflects the finite-gap property of Equation (LABEL:eq:HE.DE.DE) when the exponent parameters satisfy (LABEL:eq:HE.SC.FG1) for <Math mode="inline" xml:id="C31.S8.p3.m6">m_{j}\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="90" xml:id="C31.S8.p3.s5">
+When <Math mode="inline" xml:id="C31.S8.p3.m7">\lambda=-4q</Math> approaches the ends of the gaps, the solution (LABEL:eq:HE.SC.FG2) becomes the corresponding Heun polynomial.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="91" xml:id="C31.S8.p3.s6">
+For more details see ( ) .
+</sentence>
+
+</para>
+   
+<para xml:id="C31.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C31.S8.p4.s1">
+The solutions in this section are finite-term Liouvillean solutions which can be constructed via Kovacic’s algorithm; see §LABEL:sec:HE.FU.KA.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C31.S9">
+<title>Orthogonality</title>        
+ 
+<subsection xml:id="C31.S9.SS1">
+<title>Single Orthogonality</title>        
+  
+<para xml:id="C31.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C31.S9.SS1.p1.s1">
+With <Math equation-number="31.9.1" mode="display" xml:id="C31.S9.E1">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right),</Math> we have <Math equation-number="31.9.2" mode="display" xml:id="C31.S9.E2">\int_{\zeta}^{(1+,0+,1-,0-)}t^{\gamma-1}(1-t)^{\delta-1}(t-a)^{\epsilon-1}\*w_ {m}(t)w_{k}(t)\mathrm{d}t=\delta_{m,k}\theta_{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C31.S9.SS1.p1.s2">
+Here <Math mode="inline" xml:id="C31.S9.SS1.p1.m1">\zeta</Math> is an arbitrary point in the interval <Math mode="inline" xml:id="C31.S9.SS1.p1.m2">(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="95" xml:id="C31.S9.SS1.p1.s3">
+The integration path begins at <Math mode="inline" xml:id="C31.S9.SS1.p1.m3">z=\zeta</Math> , encircles <Math mode="inline" xml:id="C31.S9.SS1.p1.m4">z=1</Math> once in the positive sense, followed by <Math mode="inline" xml:id="C31.S9.SS1.p1.m5">z=0</Math> once in the positive sense, and so on, returning finally to <Math mode="inline" xml:id="C31.S9.SS1.p1.m6">z=\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="96" xml:id="C31.S9.SS1.p1.s4">
+The integration path is called a Pochhammer double-loop contour (compare Figure LABEL:fig:GA.BF.3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="97" xml:id="C31.S9.SS1.p1.s5">
+The branches of the many-valued functions are continuous on the path, and assume their principal values at the beginning.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C31.S9.SS1.p2.s1">
+The normalization constant <Math mode="inline" xml:id="C31.S9.SS1.p2.m1">\theta_{m}</Math> is given by <Math equation-number="31.9.3" mode="display" xml:id="C31.S9.E3">\theta_{m}=(1-{\mathrm{e}^{2\pi i\gamma}})(1-{\mathrm{e}^{2\pi i\delta}})\zeta ^{\gamma}(1-\zeta)^{\delta}(\zeta-a)^{\epsilon}\*\frac{f_{0}(q,\zeta)}{f_{1}(q ,\zeta)}\left.\frac{\partial}{\partial q}\mathscr{W}\left\{f_{0}(q,\zeta),f_{1 }(q,\zeta)\right\}\right|_{q=q_{m}},</Math> where <Math equation-number="31.9.4" mode="display" xml:id="C31.S9.E4">f_{0}(q_{m},z)=\mathit{H\!\ell}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z \right), f_{1}(q_{m},z)=\mathit{H\!\ell}\left(1-a,\alpha\beta-q_{m};\alpha,\beta,\delta ,\gamma;1-z\right),</Math> and <Math mode="inline" xml:id="C31.S9.SS1.p2.m2">\mathscr{W}</Math> denotes the Wronskian (§LABEL:sec:AL.DE.es).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C31.S9.SS1.p2.s2">
+The right-hand side may be evaluated at any convenient value, or limiting value, of <Math mode="inline" xml:id="C31.S9.SS1.p2.m3">\zeta</Math> in <Math mode="inline" xml:id="C31.S9.SS1.p2.m4">(0,1)</Math> since it is independent of <Math mode="inline" xml:id="C31.S9.SS1.p2.m5">\zeta</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C31.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C31.S9.SS1.p3.s1">
+For corresponding orthogonality relations for Heun functions (§LABEL:sec:HE.HF) and Heun polynomials (§LABEL:sec:HE.HP), see ( ) , ( ) , ( ) , and ( , Part A, pp. 59–64) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S9.SS2">
+<title>Double Orthogonality</title>        
+   
+<para xml:id="C31.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C31.S9.SS2.p1.s1">
+Heun polynomials <Math mode="inline" xml:id="C31.S9.SS2.p1.m1">w_{j}=\mathit{Hp}_{n_{j},m_{j}}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m2">j=1,2</Math> , satisfy <Math equation-number="31.9.5" mode="display" xml:id="C31.S9.E5">\int_{\mathcal{L}_{1}}\int_{\mathcal{L}_{2}}\rho(s,t)w_{1}(s)w_{1}(t)w_{2}(s)w _{2}(t)\mathrm{d}s\mathrm{d}t=0, subject to |n_{1}-n_{2}|+|m_{1}-m_{2}|\neq 0,</Math> where <Math equation-number="31.9.6" mode="display" xml:id="C31.S9.E6">\rho(s,t)=(s-t)(st)^{\gamma-1}\left((s-1)(t-1)\right)^{\delta-1}\*\left((s-a)( t-a)\right)^{\epsilon-1},</Math> and the integration paths <Math mode="inline" xml:id="C31.S9.SS2.p1.m3">\mathcal{L}_{1}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m4">\mathcal{L}_{2}</Math> are Pochhammer double-loop contours encircling distinct pairs of singularities <Math mode="inline" xml:id="C31.S9.SS2.p1.m5">\{0,1\}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m6">\{0,a\}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m7">\{1,a\}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C31.S9.SS2.p2.s1">
+For further information, including normalization constants, see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="103" xml:id="C31.S9.SS2.p2.s2">
+For bi-orthogonal relations for path-multiplicative solutions see ( , §2.2) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="104" xml:id="C31.S9.SS2.p2.s3">
+For other generalizations see ( , pp. 206–207 and 241) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S10">
+<title>Integral Equations and Representations</title>        
+    
+<subsection xml:id="C31.S10.SS1">
+<title>Type I</title>        
+ 
+<para xml:id="C31.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C31.S10.SS1.p1.s1">
+If <Math mode="inline" xml:id="C31.S10.SS1.p1.m1">w(z)</Math> is a solution of Heun’s equation, then another solution <Math mode="inline" xml:id="C31.S10.SS1.p1.m2">W(z)</Math> (possibly a multiple of <Math mode="inline" xml:id="C31.S10.SS1.p1.m3">w(z)</Math> ) can be represented as <Math equation-number="31.10.1" mode="display" xml:id="C31.S10.E1">W(z)=\int_{C}\mathcal{K}(z,t)w(t)\rho(t)\mathrm{d}t</Math> for a suitable contour <Math mode="inline" xml:id="C31.S10.SS1.p1.m4">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="106" xml:id="C31.S10.SS1.p1.s2">
+The weight function is given by <Math equation-number="31.10.2" mode="display" xml:id="C31.S10.E2">\rho(t)=t^{\gamma-1}(t-1)^{\delta-1}(t-a)^{\epsilon-1},</Math> and the kernel <Math mode="inline" xml:id="C31.S10.SS1.p1.m5">\mathcal{K}(z,t)</Math> is a solution of the partial differential equation <Math equation-number="31.10.3" mode="display" xml:id="C31.S10.E3">(\mathcal{D}_{z}-\mathcal{D}_{t})\mathcal{K}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS1.p1.m6">\mathcal{D}_{z}</Math> is Heun’s operator in the variable <Math mode="inline" xml:id="C31.S10.SS1.p1.m7">z</Math> : <Math equation-number="31.10.4" mode="display" xml:id="C31.S10.E4">\mathcal{D}_{z}=z(z-1)(z-a)(\ifrac{{\partial}^{2}}{{\partial z}^{2}})+\left( \gamma(z-1)(z-a)+\delta z(z-a)+\epsilon z(z-1)\right)(\ifrac{\partial}{ \partial z})+\alpha\beta z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="107" xml:id="C31.S10.SS1.p1.s3">
+The contour <Math mode="inline" xml:id="C31.S10.SS1.p1.m8">C</Math> must be such that <Math equation-number="31.10.5" mode="display" xml:id="C31.S10.E5">\left.p(t)\left(\frac{\partial\mathcal{K}}{\partial t}w(t)-\mathcal{K}\frac{ \mathrm{d}w(t)}{\mathrm{d}t}\right)\right|_{C}=0,</Math> where <Math equation-number="31.10.6" mode="display" xml:id="C31.S10.E6">p(t)=t^{\gamma}(t-1)^{\delta}(t-a)^{\epsilon}</Math>.
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C31.S10.Px1">
+<title>Kernel Functions</title>     
+<para xml:id="C31.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C31.S10.Px1.p1.s1">
+Set <Math equation-number="31.10.7" mode="display" xml:id="C31.S10.E7">\cos\theta=\left(\frac{zt}{a}\right)^{1/2}, \sin\theta\cos\phi=\mathrm{i}\left(\frac{(z-a)(t-a)}{a(1-a)}\right)^{1/2}, \sin\theta\sin\phi=\left(\frac{(z-1)(t-1)}{1-a}\right)^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="109" xml:id="C31.S10.Px1.p1.s2">
+The kernel <Math mode="inline" xml:id="C31.S10.Px1.p1.m1">\mathcal{K}</Math> must satisfy <Math equation-number="31.10.8" mode="display" xml:id="C31.S10.E8">{\sin^{2}}\theta\left(\frac{{\partial}^{2}\mathcal{K}}{{\partial\theta}^{2}}+ \left((1-2\gamma)\tan\theta+2(\delta+\epsilon-\tfrac{1}{2})\cot\theta\right) \frac{\partial\mathcal{K}}{\partial\theta}-4\alpha\beta\mathcal{K}\right)+ \frac{{\partial}^{2}\mathcal{K}}{{\partial\phi}^{2}}+\left((1-2\delta)\cot\phi -(1-2\epsilon)\tan\phi\right)\frac{\partial\mathcal{K}}{\partial\phi}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="110" xml:id="C31.S10.Px1.p1.s3">
+The solutions of (LABEL:eq:HE.IE.IE9) are given in terms of the Riemann <Math mode="inline" xml:id="C31.S10.Px1.p1.m2">P</Math> -symbol (see §LABEL:sec:HY.RDE.3S) as <Math equation-number="31.10.9" mode="display" xml:id="C31.S10.E9">\mathcal{K}(\theta,\phi)=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;\frac{1}{2}-\delta-\sigma&amp;\alpha&amp;{\cos^{2}}\theta\\ 1-\gamma&amp;\frac{1}{2}-\epsilon+\sigma&amp;\beta&amp;\end{Bmatrix}\*P\begin{Bmatrix}0&amp;1&amp; \infty&amp;\\ 0&amp;0&amp;-\frac{1}{2}+\delta+\sigma&amp;{\cos^{2}}\phi\\ 1-\epsilon&amp;1-\delta&amp;-\frac{1}{2}+\epsilon-\sigma&amp;\end{Bmatrix},</Math> where <Math mode="inline" xml:id="C31.S10.Px1.p1.m3">\sigma</Math> is a separation constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="111" xml:id="C31.S10.Px1.p1.s4">
+For integral equations satisfied by the Heun polynomial <Math mode="inline" xml:id="C31.S10.Px1.p1.m4">\mathit{Hp}_{n,m}\left(z\right)</Math> we have <Math mode="inline" xml:id="C31.S10.Px1.p1.m5">\sigma=\frac{1}{2}-\delta-j</Math> , <Math mode="inline" xml:id="C31.S10.Px1.p1.m6">j=0,1,\dots,n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C31.S10.Px1.p2.s1">
+For suitable choices of the branches of the <Math mode="inline" xml:id="C31.S10.Px1.p2.m1">P</Math> -symbols in (LABEL:eq:HE.IE.IE10) and the contour <Math mode="inline" xml:id="C31.S10.Px1.p2.m2">C</Math> , we can obtain both integral equations satisfied by Heun functions, as well as the integral representations of a distinct solution of Heun’s equation in terms of a Heun function (polynomial, path-multiplicative solution).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px2">
+<title>Example 1</title>   
+<para xml:id="C31.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C31.S10.Px2.p1.s1">
+Let <Math equation-number="31.10.10" mode="display" xml:id="C31.S10.E10">\mathcal{K}(z,t)=(zt-a)^{\frac{1}{2}-\delta-\sigma}\*{{}_{2}F_{1}}\left({\frac {1}{2}-\delta-\sigma+\alpha,\frac{1}{2}-\delta-\sigma+\beta\atop\gamma};\frac{ zt}{a}\right)\*{{}_{2}F_{1}}\left({-\frac{1}{2}+\delta+\sigma,-\frac{1}{2}+ \epsilon-\sigma\atop\delta};\frac{a(z-1)(t-1)}{(a-1)(zt-a)}\right),</Math> where <Math mode="inline" xml:id="C31.S10.Px2.p1.m1">\Re\gamma&gt;0</Math> , <Math mode="inline" xml:id="C31.S10.Px2.p1.m2">\Re\delta&gt;0</Math> , and <Math mode="inline" xml:id="C31.S10.Px2.p1.m3">C</Math> be the Pochhammer double-loop contour about 0 and 1 (as in §LABEL:sec:HE.OP.SO).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C31.S10.Px2.p1.s2">
+Then the integral equation (LABEL:eq:HE.IE.IE1) is satisfied by <Math mode="inline" xml:id="C31.S10.Px2.p1.m4">w(z)=w_{m}(z)</Math> and <Math mode="inline" xml:id="C31.S10.Px2.p1.m5">W(z)=\kappa_{m}w_{m}(z)</Math> , where <Math mode="inline" xml:id="C31.S10.Px2.p1.m6">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> and <Math mode="inline" xml:id="C31.S10.Px2.p1.m7">\kappa_{m}</Math> is the corresponding eigenvalue.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px3">
+<title>Example 2</title>   
+<para xml:id="C31.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C31.S10.Px3.p1.s1">
+Fuchs–Frobenius solutions <Math mode="inline" xml:id="C31.S10.Px3.p1.m1">W_{m}(z)=\tilde{\kappa}_{m}z^{-\alpha}\mathit{H\!\ell}\left(1/a,q_{m};\alpha, \alpha-\gamma+1,\alpha-\beta+1,\delta;1/z\right)</Math> are represented in terms of Heun functions <Math mode="inline" xml:id="C31.S10.Px3.p1.m2">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> by (LABEL:eq:HE.IE.IE1) with <Math mode="inline" xml:id="C31.S10.Px3.p1.m3">W(z)=W_{m}(z)</Math> , <Math mode="inline" xml:id="C31.S10.Px3.p1.m4">w(z)=w_{m}(z)</Math> , and with kernel chosen from <Math equation-number="31.10.11" mode="display" xml:id="C31.S10.E11">\mathcal{K}(z,t)=(zt-a)^{\frac{1}{2}-\delta-\sigma}\left(\ifrac{zt}{a}\right)^ {-\frac{1}{2}+\delta+\sigma-\alpha}\*{{}_{2}F_{1}}\left({\frac{1}{2}-\delta- \sigma+\alpha,\frac{3}{2}-\delta-\sigma+\alpha-\gamma\atop\alpha-\beta+1}; \frac{a}{zt}\right)\*P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;-\frac{1}{2}+\delta+\sigma&amp;\dfrac{(z-a)(t-a)}{(1-a)(zt-a)}\\ 1-\epsilon&amp;1-\delta&amp;-\frac{1}{2}+\epsilon-\sigma&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C31.S10.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C31.S10.Px3.p1.m5">\tilde{\kappa}_{m}</Math> is a normalization constant and <Math mode="inline" xml:id="C31.S10.Px3.p1.m6">C</Math> is the contour of Example 1.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S10.SS2">
+<title>Type II</title>        
+ 
+<para xml:id="C31.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C31.S10.SS2.p1.s1">
+If <Math mode="inline" xml:id="C31.S10.SS2.p1.m1">w(z)</Math> is a solution of Heun’s equation, then another solution <Math mode="inline" xml:id="C31.S10.SS2.p1.m2">W(z)</Math> (possibly a multiple of <Math mode="inline" xml:id="C31.S10.SS2.p1.m3">w(z)</Math> ) can be represented as <Math equation-number="31.10.12" mode="display" xml:id="C31.S10.E12">W(z)=\int_{C_{1}}\int_{C_{2}}\mathcal{K}(z;s,t)w(s)w(t)\rho(s,t)\mathrm{d}s \mathrm{d}t</Math> for suitable contours <Math mode="inline" xml:id="C31.S10.SS2.p1.m4">C_{1}</Math> , <Math mode="inline" xml:id="C31.S10.SS2.p1.m5">C_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="118" xml:id="C31.S10.SS2.p1.s2">
+The weight function is <Math equation-number="31.10.13" mode="display" xml:id="C31.S10.E13">\rho(s,t)=(s-t)(st)^{\gamma-1}\left((1-s)(1-t)\right)^{\delta-1}\*\left((1-(s/ a))(1-(t/a))\right)^{\epsilon-1},</Math> and the kernel <Math mode="inline" xml:id="C31.S10.SS2.p1.m6">\mathcal{K}(z;s,t)</Math> is a solution of the partial differential equation <Math equation-number="31.10.14" mode="display" xml:id="C31.S10.E14">\left((t-z)\mathcal{D}_{s}+(z-s)\mathcal{D}_{t}+(s-t)\mathcal{D}_{z}\right) \mathcal{K}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS2.p1.m7">\mathcal{D}_{z}</Math> is given by (LABEL:eq:HE.IE.IE4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="119" xml:id="C31.S10.SS2.p1.s3">
+The contours <Math mode="inline" xml:id="C31.S10.SS2.p1.m8">C_{1}</Math> , <Math mode="inline" xml:id="C31.S10.SS2.p1.m9">C_{2}</Math> must be chosen so that <Math equation-number="31.10.15" mode="display" xml:id="C31.S10.E15">\left.p(t)\left(\frac{\partial\mathcal{K}}{\partial t}w(t)-\mathcal{K}\frac{ \mathrm{d}w(t)}{\mathrm{d}t}\right)\right|_{C_{1}}=0,</Math> , <Math equation-number="31.10.16" mode="display" xml:id="C31.S10.E16">\left.p(s)\left(\frac{\partial\mathcal{K}}{\partial s}w(s)-\mathcal{K}\frac{ \mathrm{d}w(s)}{\mathrm{d}s}\right)\right|_{C_{2}}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS2.p1.m10">p(t)</Math> is given by (LABEL:eq:HE.IE.IE5a).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C31.S10.Px4">
+<title>Kernel Functions</title>    
+<para xml:id="C31.S10.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C31.S10.Px4.p1.s1">
+Set <Math equation-number="31.10.17" mode="display" xml:id="C31.S10.E17">u=\frac{(stz)^{1/2}}{a}, v=\left(\frac{(s-1)(t-1)(z-1)}{1-a}\right)^{1/2}, w=i\left(\frac{(s-a)(t-a)(z-a)}{a(1-a)}\right)^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="121" xml:id="C31.S10.Px4.p1.s2">
+The kernel <Math mode="inline" xml:id="C31.S10.Px4.p1.m1">\mathcal{K}</Math> must satisfy <Math equation-number="31.10.18" mode="display" xml:id="C31.S10.E18">\frac{{\partial}^{2}\mathcal{K}}{{\partial u}^{2}}+\frac{{\partial}^{2} \mathcal{K}}{{\partial v}^{2}}+\frac{{\partial}^{2}\mathcal{K}}{{\partial w}^{ 2}}+\frac{2\gamma-1}{u}\frac{\partial\mathcal{K}}{\partial u}+\frac{2\delta-1} {v}\frac{\partial\mathcal{K}}{\partial v}+\frac{2\epsilon-1}{w}\frac{\partial \mathcal{K}}{\partial w}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="122" xml:id="C31.S10.Px4.p1.s3">
+This equation can be solved in terms of cylinder functions <Math mode="inline" xml:id="C31.S10.Px4.p1.m2">\mathscr{C}_{\nu}\left(z\right)</Math> (§LABEL:sec:BS.DEF.SS): <Math equation-number="31.10.19" mode="display" xml:id="C31.S10.E19">\mathcal{K}(u,v,w)=u^{1-\gamma}v^{1-\delta}w^{1-\epsilon}\mathscr{C}_{1-\gamma }\left(u\sqrt{\sigma_{1}}\right)\*\mathscr{C}_{1-\delta}\left(v\sqrt{\sigma_{2 }}\right)\mathscr{C}_{1-\epsilon}\left(\mathrm{i}w\sqrt{\sigma_{1}+\sigma_{2}} \right),</Math> where <Math mode="inline" xml:id="C31.S10.Px4.p1.m3">\sigma_{1}</Math> and <Math mode="inline" xml:id="C31.S10.Px4.p1.m4">\sigma_{2}</Math> are separation constants.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px5">
+<title>Transformation of Independent Variable</title>   
+<para xml:id="C31.S10.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C31.S10.Px5.p1.s1">
+A further change of variables, to spherical coordinates, <Math equation-number="31.10.20" mode="display" xml:id="C31.S10.E20">u=r\cos\theta, v=r\sin\theta\sin\phi, w=r\sin\theta\cos\phi,</Math> leads to the kernel equation <Math equation-number="31.10.21" mode="display" xml:id="C31.S10.E21">\frac{{\partial}^{2}\mathcal{K}}{{\partial r}^{2}}+\frac{2(\gamma+\delta+ \epsilon)-1}{r}\frac{\partial\mathcal{K}}{\partial r}+\frac{1}{r^{2}}\frac{{ \partial}^{2}\mathcal{K}}{{\partial\theta}^{2}}+\frac{(2(\delta+\epsilon)-1) \cot\theta-(2\gamma-1)\tan\theta}{r^{2}}\frac{\partial\mathcal{K}}{\partial \theta}+\frac{1}{r^{2}{\sin^{2}}\theta}\frac{{\partial}^{2}\mathcal{K}}{{ \partial\phi}^{2}}+\frac{(2\delta-1)\cot\phi-(2\epsilon-1)\tan\phi}{r^{2}{\sin ^{2}}\theta}\frac{\partial\mathcal{K}}{\partial\phi}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C31.S10.Px5.p1.s2">
+This equation can be solved in terms of hypergeometric functions (§LABEL:sec:HY.RDE.3S):
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="125" xml:id="C31.S10.Px5.p1.s3">
+<Math equation-number="31.10.22" mode="display" xml:id="C31.S10.E22">\mathcal{K}(r,\theta,\phi)=r^{m}{\sin^{2p}}\theta P\begin{Bmatrix}0&amp;1&amp;\infty&amp; \\ 0&amp;0&amp;a&amp;{\cos^{2}}\theta\\ \tfrac{1}{2}(3-\gamma)&amp;c&amp;b&amp;\end{Bmatrix}\*P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a^{\prime}&amp;{\cos^{2}}\phi\\ 1-\epsilon&amp;1-\delta&amp;b^{\prime}&amp;\end{Bmatrix},</Math> with <Math equation-number="31.10.23" mode="display" xml:id="C31.S10.E23">m^{2}+2(\alpha+\beta)m-\sigma_{1}=0, p^{2}+(\alpha+\beta-\gamma-\tfrac{1}{2})p-\tfrac{1}{4}\sigma_{2}=0, a+b=2(\alpha+\beta+p)-1, ab=p^{2}-p(1-\alpha-\beta)-\tfrac{1}{4}\sigma_{1}, c=\gamma-\tfrac{1}{2}-2(\alpha+\beta+p), a^{\prime}+b^{\prime}=\delta+\epsilon-1, a^{\prime}b^{\prime}=-\tfrac{1}{4}\sigma_{2},</Math> and <Math mode="inline" xml:id="C31.S10.Px5.p1.m1">\sigma_{1}</Math> and <Math mode="inline" xml:id="C31.S10.Px5.p1.m2">\sigma_{2}</Math> are separation constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S10.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C31.S10.Px5.p2.s1">
+For integral equations for special confluent Heun functions (§LABEL:sec:HE.CH) see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S11">
+<title>Expansions in Series of Hypergeometric Functions</title>          
+ 
+<subsection xml:id="C31.S11.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C31.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C31.S11.SS1.p1.s1">
+The formulas in this section are given in ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C31.S11.SS1.p2.s1">
+The series of Type I (§LABEL:sec:HE.EH.T1) are useful since they represent the functions in large domains.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="129" xml:id="C31.S11.SS1.p2.s2">
+Series of Type II (§LABEL:sec:HE.EH.T2) are expansions in orthogonal polynomials, which are useful in calculations of normalization integrals for Heun functions; see ( ) and §LABEL:sec:HE.OP.SO.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C31.S11.SS1.p3.s1">
+For other expansions see §LABEL:sec:HE.MA.HP.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS2">
+<title>General Form</title>        
+ 
+<para xml:id="C31.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C31.S11.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C31.S11.SS2.p1.m1">w(z)</Math> be any Fuchs–Frobenius solution of Heun’s equation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="132" xml:id="C31.S11.SS2.p1.s2">
+Expand <Math equation-number="31.11.1" mode="display" xml:id="C31.S11.E1">w(z)=\sum_{j=0}^{\infty}c_{j}P_{j},</Math> where (§LABEL:sec:HY.RDE.3S)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="133" xml:id="C31.S11.SS2.p1.s3">
+<Math equation-number="31.11.2" mode="display" xml:id="C31.S11.E2">P_{j}=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;\lambda+j&amp;z\\ 1-\gamma&amp;1-\delta&amp;\mu-j&amp;\end{Bmatrix},</Math> with <Math equation-number="31.11.3" mode="display" xml:id="C31.S11.E3">\lambda+\mu=\gamma+\delta-1=\alpha+\beta-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="134" xml:id="C31.S11.SS2.p1.s4">
+The coefficients <Math mode="inline" xml:id="C31.S11.SS2.p1.m2">c_{j}</Math> satisfy the equations <Math equation-number="31.11.4" mode="display" xml:id="C31.S11.E4">L_{0}c_{0}+M_{0}c_{1}=0,</Math> <Math equation-number="31.11.5" mode="display" xml:id="C31.S11.E5">K_{j}c_{j-1}+L_{j}c_{j}+M_{j}c_{j+1}=0, subject to j=1,2,\dots,</Math> where
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C31.S11.SS2.p2.s1">
+ <Math equation-number="31.11.6" mode="display" xml:id="C31.S11.E6">K_{j}=-\frac{(j+\alpha-\mu-1)(j+\beta-\mu-1)(j+\gamma-\mu-1)(j+\lambda-1)}{(2j +\lambda-\mu-1)(2j+\lambda-\mu-2)},</Math> , <Math equation-number="31.11.7" mode="display" xml:id="C31.S11.E7">L_{j}=a(\lambda+j)(\mu-j)-q+\frac{(j+\alpha-\mu)(j+\beta-\mu)(j+\gamma-\mu)(j+ \lambda)}{(2j+\lambda-\mu)(2j+\lambda-\mu+1)}+\frac{(j-\alpha+\lambda)(j-\beta +\lambda)(j-\gamma+\lambda)(j-\mu)}{(2j+\lambda-\mu)(2j+\lambda-\mu-1)},</Math> , <Math equation-number="31.11.8" mode="display" xml:id="C31.S11.E8">M_{j}=-\frac{(j-\alpha+\lambda+1)(j-\beta+\lambda+1)(j-\gamma+\lambda+1)(j-\mu +1)}{(2j+\lambda-\mu+1)(2j+\lambda-\mu+2)}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C31.S11.SS2.p3.s1">
+ <Math mode="inline" xml:id="C31.S11.SS2.p3.m1">\lambda</Math> , <Math mode="inline" xml:id="C31.S11.SS2.p3.m2">\mu</Math> must also satisfy the condition <Math equation-number="31.11.9" mode="display" xml:id="C31.S11.E9">M_{-1}P_{-1}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS3">
+<title>Type I</title>        
+ 
+<para xml:id="C31.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C31.S11.SS3.p1.s1">
+Here <Math equation-number="31.11.10" mode="display" xml:id="C31.S11.E10">\lambda=\alpha, \mu=\beta-\epsilon,</Math> or <Math equation-number="31.11.11" mode="display" xml:id="C31.S11.E11">\lambda=\beta, \mu=\alpha-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="138" xml:id="C31.S11.SS3.p1.s2">
+Then condition (LABEL:eq:HE.EH.EH8) is satisfied.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="139" xml:id="C31.S11.SS3.p2.s1">
+Every Fuchs–Frobenius solution of Heun’s equation (LABEL:eq:HE.DE.DE) can berepresented by a series of Type I.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="140" xml:id="C31.S11.SS3.p2.s2">
+For instance, choose (LABEL:eq:HE.EH.EH9).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="141" xml:id="C31.S11.SS3.p2.s3">
+Then the Fuchs–Frobenius solution at <Math mode="inline" xml:id="C31.S11.SS3.p2.m1">\infty</Math> belonging to the exponent <Math mode="inline" xml:id="C31.S11.SS3.p2.m2">\alpha</Math> has the expansion (LABEL:eq:HE.EH.EH1) with <Math equation-number="31.11.12" mode="display" xml:id="C31.S11.E12">P_{j}=\frac{\Gamma\left(\alpha+j\right)\Gamma\left(1-\gamma+\alpha+j\right)}{ \Gamma\left(1+\alpha-\beta+\epsilon+2j\right)}z^{-\alpha-j}\*{{}_{2}F_{1}} \left({\alpha+j,1-\gamma+\alpha+j\atop 1+\alpha-\beta+\epsilon+2j};\frac{1}{z} \right),</Math> and (LABEL:eq:HE.EH.EH1) converges outside the ellipse <Math mode="inline" xml:id="C31.S11.SS3.p2.m3">\mathcal{E}</Math> in the <Math mode="inline" xml:id="C31.S11.SS3.p2.m4">z</Math> -plane with foci at 0, 1, and passing through the third finite singularity at <Math mode="inline" xml:id="C31.S11.SS3.p2.m5">z=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C31.S11.SS3.p3.s1">
+Every Heun function (§LABEL:sec:HE.HF) can be represented by a series of Type I convergent in the whole plane cut along a line joining the two singularities of the Heun function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C31.S11.SS3.p4.s1">
+For example, consider the Heun function which is analytic at <Math mode="inline" xml:id="C31.S11.SS3.p4.m1">z=a</Math> and has exponent <Math mode="inline" xml:id="C31.S11.SS3.p4.m2">\alpha</Math> at <Math mode="inline" xml:id="C31.S11.SS3.p4.m3">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C31.S11.SS3.p4.s2">
+The expansion (LABEL:eq:HE.EH.EH1) with (LABEL:eq:HE.EH.EH12) is convergent in the plane cut along the line joining the two singularities <Math mode="inline" xml:id="C31.S11.SS3.p4.m4">z=0</Math> and <Math mode="inline" xml:id="C31.S11.SS3.p4.m5">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="145" xml:id="C31.S11.SS3.p4.s3">
+In this case the accessory parameter <Math mode="inline" xml:id="C31.S11.SS3.p4.m6">q</Math> is a root of the continued-fraction equation <Math equation-number="31.11.13" mode="display" xml:id="C31.S11.E13">\left(L_{0}/M_{0}\right)-\cfrac{K_{1}/M_{1}}{L_{1}/M_{1}-\cfrac{K_{2}/M_{2}}{L _{2}/M_{2}-\cdots}}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="146" xml:id="C31.S11.SS3.p4.s4">
+The case <Math mode="inline" xml:id="C31.S11.SS3.p4.m7">\alpha=-n</Math> for nonnegative integer <Math mode="inline" xml:id="C31.S11.SS3.p4.m8">n</Math> corresponds to the Heun polynomial <Math mode="inline" xml:id="C31.S11.SS3.p4.m9">\mathit{Hp}_{n,m}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C31.S11.SS3.p5.s1">
+The expansion (LABEL:eq:HE.EH.EH1) for a Heun function that is associated with any branch of (LABEL:eq:HE.EH.EH2)—other than a multiple of the right-hand side of (LABEL:eq:HE.EH.EH12)—is convergent inside the ellipse <Math mode="inline" xml:id="C31.S11.SS3.p5.m1">\mathcal{E}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS4">
+<title>Type II</title>        
+ 
+<para xml:id="C31.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C31.S11.SS4.p1.s1">
+Here one of the following four pairs of conditions is satisfied: <Math equation-number="31.11.14" mode="display" xml:id="C31.S11.E14">\lambda=\gamma+\delta-1, \mu=0,</Math> , <Math equation-number="31.11.15" mode="display" xml:id="C31.S11.E15">\lambda=\gamma, \mu=\delta-1,</Math> , <Math equation-number="31.11.16" mode="display" xml:id="C31.S11.E16">\lambda=\delta, \mu=\gamma-1,</Math> , <Math equation-number="31.11.17" mode="display" xml:id="C31.S11.E17">\lambda=1, \mu=\gamma+\delta-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="149" xml:id="C31.S11.SS4.p1.s2">
+In each case <Math mode="inline" xml:id="C31.S11.SS4.p1.m1">P_{j}</Math> can be expressed in terms of a Jacobi polynomial (§LABEL:sec:OP.CP.OR).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="150" xml:id="C31.S11.SS4.p1.s3">
+Such series diverge for Fuchs–Frobenius solutions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="151" xml:id="C31.S11.SS4.p1.s4">
+ForHeun functions they are convergent inside the ellipse <Math mode="inline" xml:id="C31.S11.SS4.p1.m2">\mathcal{E}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="152" xml:id="C31.S11.SS4.p1.s5">
+Every Heun function can be represented by a series of Type II.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS5">
+<title>Doubly-Infinite Series</title>        
+  
+<para xml:id="C31.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C31.S11.SS5.p1.s1">
+( ) gives expansions of path-multiplicative solutions (§LABEL:sec:HE.PM) in terms of doubly-infinite series of hypergeometric functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S12">
+<title>Confluent Forms of Heun’s Equation</title>        
+  
+<para xml:id="C31.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C31.S12.p1.s1">
+Confluent forms of Heun’s differential equation (LABEL:eq:HE.DE.DE) arise when two or more of the regular singularities merge to form an irregular singularity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C31.S12.p1.s2">
+This is analogous to the derivation of the confluenthypergeometric equation from the hypergeometric equation in §LABEL:sec:CH.MU.DE.KU.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="156" xml:id="C31.S12.p1.s3">
+There are four standard forms, as follows:
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C31.S12.Px1">
+<title>Confluent Heun Equation</title>    
+<para xml:id="C31.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C31.S12.Px1.p1.s1">
+ <Math equation-number="31.12.1" mode="display" xml:id="C31.S12.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{\gamma}{z}+\frac{ \delta}{z-1}+\epsilon\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{\alpha z-q}{ z(z-1)}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="158" xml:id="C31.S12.Px1.p1.s2">
+This has regular singularities at <Math mode="inline" xml:id="C31.S12.Px1.p1.m1">z=0</Math> and <Math mode="inline" xml:id="C31.S12.Px1.p1.m2">1</Math> , and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C31.S12.Px1.p1.m3">z=\infty</Math>.
+</sentence>
+
+</para>
+      
+<para xml:id="C31.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="159" xml:id="C31.S12.Px1.p2.s1">
+Mathieu functions (Chapter LABEL:ch:MA), spheroidal wave functions (Chapter LABEL:ch:SW), and Coulomb spheroidal functions (§LABEL:sec:SW.GS) are special cases of solutions of the confluent Heun equation.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S12.Px2">
+<title>Doubly-Confluent Heun Equation</title>     
+<para xml:id="C31.S12.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C31.S12.Px2.p1.s1">
+ <Math equation-number="31.12.2" mode="display" xml:id="C31.S12.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{\delta}{z^{2}}+\frac{ \gamma}{z}+1\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{\alpha z-q}{z^{2}}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="161" xml:id="C31.S12.Px2.p1.s2">
+This has irregular singularities at <Math mode="inline" xml:id="C31.S12.Px2.p1.m1">z=0</Math> and <Math mode="inline" xml:id="C31.S12.Px2.p1.m2">\infty</Math> , each of rank <Math mode="inline" xml:id="C31.S12.Px2.p1.m3">1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S12.Px3">
+<title>Biconfluent Heun Equation</title>     
+<para xml:id="C31.S12.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C31.S12.Px3.p1.s1">
+ <Math equation-number="31.12.3" mode="display" xml:id="C31.S12.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-\left(\frac{\gamma}{z}+\delta+z \right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{\alpha z-q}{z}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="163" xml:id="C31.S12.Px3.p1.s2">
+This has a regular singularity at <Math mode="inline" xml:id="C31.S12.Px3.p1.m1">z=0</Math> , and an irregular singularity at <Math mode="inline" xml:id="C31.S12.Px3.p1.m2">\infty</Math> of rank <Math mode="inline" xml:id="C31.S12.Px3.p1.m3">2</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S12.Px4">
+<title>Triconfluent Heun Equation</title>     
+<para xml:id="C31.S12.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C31.S12.Px4.p1.s1">
+ <Math equation-number="31.12.4" mode="display" xml:id="C31.S12.E4">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\gamma+z\right)z\frac{ \mathrm{d}w}{\mathrm{d}z}+\left(\alpha z-q\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C31.S12.Px4.p1.s2">
+This has one singularity, an irregular singularity of rank <Math mode="inline" xml:id="C31.S12.Px4.p1.m1">3</Math> at <Math mode="inline" xml:id="C31.S12.Px4.p1.m2">z=\infty</Math>.
+</sentence>
+
+</para>
+   
+<para xml:id="C31.S12.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C31.S12.Px4.p2.s1">
+For properties of the solutions of (LABEL:eq:HE.CH.CHE1)–(LABEL:eq:HE.CH.THE1), including connection formulas, see ( ) , ( , Parts B,C,D,E) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C31.S13">
+<title>Asymptotic Approximations</title>        
+    
+<para xml:id="C31.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C31.S13.p1.s1">
+For asymptotic approximations for the accessory parameter eigenvalues <Math mode="inline" xml:id="C31.S13.p1.m1">q_{m}</Math> , see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="168" xml:id="C31.S13.p2.s1">
+For asymptotic approximations of the solutions of Heun’s equation (LABEL:eq:HE.DE.DE) when two singularities are close together, see ( ) .
+</sentence>
+
+</para>
+     
+<para xml:id="C31.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C31.S13.p3.s1">
+For asymptotic approximations of the solutions of confluent forms of Heun’s equation in the neighborhood of irregular singularities, see ( ) , ( , Parts B,C,D,E) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C31.S14">
+<title>General Fuchsian Equation</title>        
+ 
+<subsection xml:id="C31.S14.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C31.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="170" xml:id="C31.S14.SS1.p1.s1">
+The general second-order Fuchsian equation with <Math mode="inline" xml:id="C31.S14.SS1.p1.m1">N+1</Math> regular singularities at <Math mode="inline" xml:id="C31.S14.SS1.p1.m2">z=a_{j}</Math> , <Math mode="inline" xml:id="C31.S14.SS1.p1.m3">j=1,2,\dots,N</Math> , and at <Math mode="inline" xml:id="C31.S14.SS1.p1.m4">\infty</Math> , is given by <Math equation-number="31.14.1" mode="display" xml:id="C31.S14.E1">{\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\sum_{j=1}^{N}\frac{\gamma_ {j}}{z-a_{j}}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\left(\sum_{j=1}^{N}\frac{ q_{j}}{z-a_{j}}\right)w=0}, subject to \sum_{j=1}^{N}q_{j}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="171" xml:id="C31.S14.SS1.p1.s2">
+The exponents at the finite singularities <Math mode="inline" xml:id="C31.S14.SS1.p1.m5">a_{j}</Math> are <Math mode="inline" xml:id="C31.S14.SS1.p1.m6">\{0,{1-\gamma_{j}}\}</Math> and those at <Math mode="inline" xml:id="C31.S14.SS1.p1.m7">\infty</Math> are <Math mode="inline" xml:id="C31.S14.SS1.p1.m8">\{\alpha,\beta\}</Math> , where <Math equation-number="31.14.2" mode="display" xml:id="C31.S14.E2">\alpha+\beta+1=\sum_{j=1}^{N}\gamma_{j}, \alpha\beta=\sum_{j=1}^{N}a_{j}q_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="172" xml:id="C31.S14.SS1.p1.s3">
+The three sets of parameters comprise the singularity parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m9">a_{j}</Math> , the exponent parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m10">\alpha,\beta,\gamma_{j}</Math> , and the <Math mode="inline" xml:id="C31.S14.SS1.p1.m11">N-2</Math> freeaccessory parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m12">q_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="173" xml:id="C31.S14.SS1.p1.s4">
+With <Math mode="inline" xml:id="C31.S14.SS1.p1.m13">a_{1}=0</Math> and <Math mode="inline" xml:id="C31.S14.SS1.p1.m14">a_{2}=1</Math> the total number of free parameters is <Math mode="inline" xml:id="C31.S14.SS1.p1.m15">3N-3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="174" xml:id="C31.S14.SS1.p1.s5">
+Heun’s equation (LABEL:eq:HE.DE.DE) corresponds to <Math mode="inline" xml:id="C31.S14.SS1.p1.m16">N=3</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C31.S14.Px1">
+<title>Normal Form</title>     
+ 
+<para xml:id="C31.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C31.S14.Px1.p1.s1">
+ <Math equation-number="31.14.3" mode="display" xml:id="C31.S14.E3">w(z)=\left(\prod_{j=1}^{N}(z-a_{j})^{-\gamma_{j}/2}\right)W(z),</Math> <Math equation-number="31.14.4" mode="display" xml:id="C31.S14.E4">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}=\sum_{j=1}^{N}\left(\frac{\tilde{ \gamma}_{j}}{(z-a_{j})^{2}}+\frac{\tilde{q}_{j}}{z-a_{j}}\right)W, subject to \sum_{j=1}^{N}\tilde{q}_{j}=0,</Math> <Math equation-number="31.14.5" mode="display" xml:id="C31.S14.E5">\tilde{q}_{j}=\frac{1}{2}\sum_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{N}\frac{\gamma_{j}\gamma_{k}}{a_{j}-a_{k}}-q_{j}, \tilde{\gamma}_{j}=\frac{\gamma_{j}}{2}\left(\frac{\gamma_{j}}{2}-1\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S14.SS2">
+<title>Kovacic’s Algorithm</title>        
+  
+<para xml:id="C31.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C31.S14.SS2.p1.s1">
+An algorithm given in ( ) determines if a given (not necessarily Fuchsian) second-order homogeneous linear differential equation with rational coefficients has solutions expressible in finite terms (Liouvillean solutions).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="177" xml:id="C31.S14.SS2.p1.s2">
+The algorithm returns a list of solutions if they exist.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C31.S14.SS2.p2.s1">
+For applications of Kovacic’s algorithm in spatio-temporal dynamics see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S15">
+<title>Stieltjes Polynomials</title>        
+ 
+<subsection xml:id="C31.S15.SS1">
+<title>Definitions</title>        
+  
+ 
+<para xml:id="C31.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C31.S15.SS1.p1.s1">
+Stieltjes polynomials are polynomial solutions of the Fuchsian equation (LABEL:eq:HE.FU.FU1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="180" xml:id="C31.S15.SS1.p1.s2">
+Rewrite (LABEL:eq:HE.FU.FU1) in the form <Math equation-number="31.15.1" mode="display" xml:id="C31.S15.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\sum_{j=1}^{N}\frac{\gamma_{ j}}{z-a_{j}}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{\Phi(z)}{\prod_{j=1}^ {N}(z-a_{j})}w=0,</Math> where <Math mode="inline" xml:id="C31.S15.SS1.p1.m1">\Phi(z)</Math> is a polynomial of degree not exceeding <Math mode="inline" xml:id="C31.S15.SS1.p1.m2">N-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="181" xml:id="C31.S15.SS1.p1.s3">
+There exist at most <Math mode="inline" xml:id="C31.S15.SS1.p1.m3">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } polynomials <Math mode="inline" xml:id="C31.S15.SS1.p1.m4">V(z)</Math> of degree not exceeding <Math mode="inline" xml:id="C31.S15.SS1.p1.m5">N-2</Math> such that for <Math mode="inline" xml:id="C31.S15.SS1.p1.m6">\Phi(z)=V(z)</Math> , (LABEL:eq:HE.ST.ST1) has a polynomial solution <Math mode="inline" xml:id="C31.S15.SS1.p1.m7">w=S(z)</Math> of degree <Math mode="inline" xml:id="C31.S15.SS1.p1.m8">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="182" xml:id="C31.S15.SS1.p1.s4">
+The <Math mode="inline" xml:id="C31.S15.SS1.p1.m9">V(z)</Math> are called Van Vleck polynomials and the corresponding <Math mode="inline" xml:id="C31.S15.SS1.p1.m10">S(z)</Math> Stieltjes polynomials.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S15.SS2">
+<title>Zeros</title>        
+ 
+ 
+<para xml:id="C31.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C31.S15.SS2.p1.s1">
+If <Math mode="inline" xml:id="C31.S15.SS2.p1.m1">z_{1},z_{2},\dots,z_{n}</Math> are the zeros of an <Math mode="inline" xml:id="C31.S15.SS2.p1.m2">n</Math> th degree Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p1.m3">S(z)</Math> , then every zero <Math mode="inline" xml:id="C31.S15.SS2.p1.m4">z_{k}</Math> is either one of the parameters <Math mode="inline" xml:id="C31.S15.SS2.p1.m5">a_{j}</Math> or a solution of the system of equations <Math equation-number="31.15.2" mode="display" xml:id="C31.S15.E2">\sum_{j=1}^{N}\frac{\gamma_{j}/2}{z_{k}-a_{j}}+\sum_{\begin{subarray}{c}j=1\\ j\neq k\end{subarray}}^{n}\frac{1}{z_{k}-z_{j}}=0, subject to k=1,2,\dots,n</Math>.
+</sentence>
+
+</para>
+     
+<para xml:id="C31.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C31.S15.SS2.p2.s1">
+If <Math mode="inline" xml:id="C31.S15.SS2.p2.m1">t_{k}</Math> is a zero of the Van Vleck polynomial <Math mode="inline" xml:id="C31.S15.SS2.p2.m2">V(z)</Math> , corresponding to an <Math mode="inline" xml:id="C31.S15.SS2.p2.m3">n</Math> th degree Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p2.m4">S(z)</Math> , and <Math mode="inline" xml:id="C31.S15.SS2.p2.m5">z_{1}^{\prime},z_{2}^{\prime},\dots,z_{n-1}^{\prime}</Math> are the zeros of <Math mode="inline" xml:id="C31.S15.SS2.p2.m6">S^{\prime}(z)</Math> (the derivative of <Math mode="inline" xml:id="C31.S15.SS2.p2.m7">S(z)</Math> ), then <Math mode="inline" xml:id="C31.S15.SS2.p2.m8">t_{k}</Math> is either a zero of <Math mode="inline" xml:id="C31.S15.SS2.p2.m9">S^{\prime}(z)</Math> or a solution of the equation <Math equation-number="31.15.3" mode="display" xml:id="C31.S15.E3">\sum_{j=1}^{N}\frac{\gamma_{j}}{t_{k}-a_{j}}+\sum_{j=1}^{n-1}\frac{1}{t_{k}-z_ {j}^{\prime}}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C31.S15.SS2.p3.s1">
+The system (LABEL:eq:HE.ST.ST2) determines the <Math mode="inline" xml:id="C31.S15.SS2.p3.m1">z_{k}</Math> as the points of equilibrium of <Math mode="inline" xml:id="C31.S15.SS2.p3.m2">n</Math> movable (interacting) particles with unit charges in a field of <Math mode="inline" xml:id="C31.S15.SS2.p3.m3">N</Math> particles with the charges <Math mode="inline" xml:id="C31.S15.SS2.p3.m4">\gamma_{j}/2</Math> fixed at <Math mode="inline" xml:id="C31.S15.SS2.p3.m5">a_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="186" xml:id="C31.S15.SS2.p3.s2">
+This is theStieltjes electrostatic interpretation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C31.S15.SS2.p4.s1">
+The zeros <Math mode="inline" xml:id="C31.S15.SS2.p4.m1">z_{k}</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p4.m2">k=1,2,\ldots,n</Math> , of the Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p4.m3">S(z)</Math> are the critical points of the function <Math mode="inline" xml:id="C31.S15.SS2.p4.m4">G</Math> , that is, points at which <Math mode="inline" xml:id="C31.S15.SS2.p4.m5">\ifrac{\partial G}{\partial\zeta_{k}=0}</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p4.m6">k=1,2,\ldots,n</Math> , where
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C31.S15.SS2.p5.s1">
+ <Math equation-number="31.15.4" mode="display" xml:id="C31.S15.E4">G(\zeta_{1},\zeta_{2},\dots,\zeta_{n})=\prod_{k=1}^{n}\prod_{\ell=1}^{N}(\zeta _{k}-a_{\ell})^{\ifrac{\gamma_{\ell}}{2}}\prod_{j=k+1}^{n}(\zeta_{k}-\zeta_{j})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C31.S15.SS2.p6.s1">
+If the following conditions are satisfied: <Math equation-number="31.15.5" mode="display" xml:id="C31.S15.E5">\gamma_{j}&gt;0, a_{j}\in\mathbb{R} subject to j=1,2,\dots,N,</Math> and <Math equation-number="31.15.6" mode="display" xml:id="C31.S15.E6">a_{j}&lt;a_{j+1}, subject to j=1,2,\dots,N-1,</Math> then there are exactly <Math mode="inline" xml:id="C31.S15.SS2.p6.m1">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } polynomials <Math mode="inline" xml:id="C31.S15.SS2.p6.m2">S(z)</Math> , each of which corresponds to each of the <Math mode="inline" xml:id="C31.S15.SS2.p6.m3">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } ways of distributing its <Math mode="inline" xml:id="C31.S15.SS2.p6.m4">n</Math> zeros among <Math mode="inline" xml:id="C31.S15.SS2.p6.m5">N-1</Math> intervals <Math mode="inline" xml:id="C31.S15.SS2.p6.m6">(a_{j},a_{j+1})</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p6.m7">j=1,2,\dots,N-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="190" xml:id="C31.S15.SS2.p6.s2">
+In this case the accessory parameters <Math mode="inline" xml:id="C31.S15.SS2.p6.m8">q_{j}</Math> are given by <Math equation-number="31.15.7" mode="display" xml:id="C31.S15.E7">q_{j}=\gamma_{j}\sum_{k=1}^{n}\frac{1}{z_{k}-a_{j}}, subject to j=1,2,\dots,N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="191" xml:id="C31.S15.SS2.p7.s1">
+See ( ) , ( ) , and ( ) for further results on the location of the zeros of Stieltjes and Van Vleck polynomials.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S15.SS3">
+<title>Products of Stieltjes Polynomials</title>        
+  
+<para xml:id="C31.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="192" xml:id="C31.S15.SS3.p1.s1">
+If the exponent and singularity parameters satisfy (LABEL:eq:HE.ST.ST5)–(LABEL:eq:HE.ST.ST6), then for every multi-index <Math mode="inline" xml:id="C31.S15.SS3.p1.m1">\mathbf{m}=(m_{1},m_{2},\dots,m_{N-1})</Math> , where each <Math mode="inline" xml:id="C31.S15.SS3.p1.m2">m_{j}</Math> is a nonnegative integer, there is a unique Stieltjes polynomial with <Math mode="inline" xml:id="C31.S15.SS3.p1.m3">m_{j}</Math> zeros in the open interval <Math mode="inline" xml:id="C31.S15.SS3.p1.m4">(a_{j},a_{j+1})</Math> for each <Math mode="inline" xml:id="C31.S15.SS3.p1.m5">j=1,2,\dots,N-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="193" xml:id="C31.S15.SS3.p1.s2">
+We denote this Stieltjes polynomial by <Math mode="inline" xml:id="C31.S15.SS3.p1.m6">S_{\mathbf{m}}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="194" xml:id="C31.S15.SS3.p2.s1">
+Let <Math mode="inline" xml:id="C31.S15.SS3.p2.m1">S_{\mathbf{m}}(z)</Math> and <Math mode="inline" xml:id="C31.S15.SS3.p2.m2">S_{\mathbf{l}}(z)</Math> be Stieltjes polynomials corresponding to two distinct multi-indices <Math mode="inline" xml:id="C31.S15.SS3.p2.m3">\mathbf{m}=(m_{1},m_{2},\dots,m_{N-1})</Math> and <Math mode="inline" xml:id="C31.S15.SS3.p2.m4">\mathbf{l}=(\ell_{1},\ell_{2},\dots,\ell_{N-1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="195" xml:id="C31.S15.SS3.p2.s2">
+The products <Math equation-number="31.15.8" mode="display" xml:id="C31.S15.E8">S_{\mathbf{m}}(z_{1})S_{\mathbf{m}}(z_{2})\cdots S_{\mathbf{m}}(z_{N-1}), subject to z_{j}\in(a_{j},a_{j+1}),</Math> <Math equation-number="31.15.9" mode="display" xml:id="C31.S15.E9">S_{\mathbf{l}}(z_{1})S_{\mathbf{l}}(z_{2})\cdots S_{\mathbf{l}}(z_{N-1}), subject to z_{j}\in(a_{j},a_{j+1}),</Math> are mutually orthogonal over the set <Math mode="inline" xml:id="C31.S15.SS3.p2.m5">Q</Math> : <Math equation-number="31.15.10" mode="display" xml:id="C31.S15.E10">Q=(a_{1},a_{2})\times(a_{2},a_{3})\times\cdots\times(a_{N-1},a_{N}),</Math> with respect to the inner product <Math equation-number="31.15.11" mode="display" xml:id="C31.S15.E11">(f,g)_{\rho}=\int_{Q}f(z)\overline{g(z)}\rho(z)\mathrm{d}z,</Math> with weight function <Math equation-number="31.15.12" mode="display" xml:id="C31.S15.E12">\rho(z)=\left(\prod_{j=1}^{N-1}\prod_{k=1}^{N}|z_{j}-a_{k}|^{\gamma_{k}-1} \right)\left(\prod_{j&lt;k}^{N-1}(z_{k}-z_{j})\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="196" xml:id="C31.S15.SS3.p2.s3">
+The normalized system of products (LABEL:eq:HE.ST.ST8) forms an orthonormal basis in the Hilbert space <Math mode="inline" xml:id="C31.S15.SS3.p2.m7">L_{\rho}^{2}(Q)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="197" xml:id="C31.S15.SS3.p2.s4">
+For further details and for the expansions of analytic functions in this basis see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C31.S16">
+<title>Mathematical Applications</title>        
+   
+<subsection xml:id="C31.S16.SS1">
+<title>Uniformization Problem for Heun’s Equation</title>             
+<para xml:id="C31.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="198" xml:id="C31.S16.SS1.p1.s1">
+The main part of ( ) consists of V. I.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="199" xml:id="C31.S16.SS1.p1.s2">
+Smirnov’s 1918 M. Sc. thesis “Inversion problem for a second-order linear differential equation with four singular points”.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="200" xml:id="C31.S16.SS1.p1.s3">
+It describes the monodromy group of Heun’s equation for specific values of the accessory parameter.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S16.SS2">
+<title>Heun Polynomial Products</title>        
+  
+ 
+<para xml:id="C31.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C31.S16.SS2.p1.s1">
+Expansions of Heun polynomial products in terms of Jacobi polynomial (§LABEL:sec:OP.CP.OR) products are derived in ( ) from the viewpoint of interrelation between two bases in a Hilbert space: <Math equation-number="31.16.1" mode="display" xml:id="C31.S16.E1">\mathit{Hp}_{n,m}\left(x\right)\mathit{Hp}_{n,m}\left(y\right)=\sum_{j=0}^{n}A _{j}{\sin^{2j}}\theta\*P_{n-j}^{(\gamma+\delta+2j-1,\epsilon-1)}(\cos 2\theta) P_{j}^{(\delta-1,\gamma-1)}(\cos 2\phi),</Math> where <Math mode="inline" xml:id="C31.S16.SS2.p1.m1">n=0,1,\dots</Math> , <Math mode="inline" xml:id="C31.S16.SS2.p1.m2">m=0,1,\dots,n</Math> , and <Math equation-number="31.16.2" mode="display" xml:id="C31.S16.E2">x={\sin^{2}}\theta{\cos^{2}}\phi, y={\sin^{2}}\theta{\sin^{2}}\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="202" xml:id="C31.S16.SS2.p1.s2">
+The coefficients <Math mode="inline" xml:id="C31.S16.SS2.p1.m3">A_{j}</Math> satisfy the relations: <Math equation-number="31.16.3" mode="display" xml:id="C31.S16.E3">Q_{0}A_{0}+R_{0}A_{1}=0,</Math> <Math equation-number="31.16.4" mode="display" xml:id="C31.S16.E4">P_{j}A_{j-1}+Q_{j}A_{j}+R_{j}A_{j+1}=0, subject to j=1,2,\dots,n,</Math> where
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C31.S16.SS2.p2.s1">
+ <Math equation-number="31.16.5" mode="display" xml:id="C31.S16.E5">P_{j}=\frac{(\epsilon-j+n)j(\beta+j-1)(\gamma+\delta+j-2)}{(\gamma+\delta+2j-3 )(\gamma+\delta+2j-2)},</Math> , <Math equation-number="31.16.6" mode="display" xml:id="C31.S16.E6">Q_{j}=-aj(j+\gamma+\delta-1)-q+\frac{(j-n)(j+\beta)(j+\gamma)(j+\gamma+\delta- 1)}{(2j+\gamma+\delta)(2j+\gamma+\delta-1)}+\frac{(j+n+\gamma+\delta-1)j(j+ \delta-1)(j-\beta+\gamma+\delta-1)}{(2j+\gamma+\delta-1)(2j+\gamma+\delta-2)},</Math> , <Math equation-number="31.16.7" mode="display" xml:id="C31.S16.E7">R_{j}=\frac{(n-j)(j+n+\gamma+\delta)(j+\gamma)(j+\delta)}{(\gamma+\delta+2j)( \gamma+\delta+2j+1)}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S16.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="204" xml:id="C31.S16.SS2.p3.s1">
+By specifying either <Math mode="inline" xml:id="C31.S16.SS2.p3.m1">\theta</Math> or <Math mode="inline" xml:id="C31.S16.SS2.p3.m2">\phi</Math> in (LABEL:eq:HE.MA.EH20) and (LABEL:eq:HE.MA.EH21) we obtain expansions in terms of one variable.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C31.S17">
+<title>Physical Applications</title>        
+   
+<subsection xml:id="C31.S17.SS1">
+<title>Addition of Three Quantum Spins</title>        
+    
+<para xml:id="C31.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C31.S17.SS1.p1.s1">
+The problem of adding three quantum spins <Math mode="inline" xml:id="C31.S17.SS1.p1.m1">\mathbf{s}</Math> , <Math mode="inline" xml:id="C31.S17.SS1.p1.m2">\mathbf{t}</Math> , and <Math mode="inline" xml:id="C31.S17.SS1.p1.m3">\mathbf{u}</Math> can be solved by the method of separation of variables, andthe solution is given in terms of a product of two Heun functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="206" xml:id="C31.S17.SS1.p1.s2">
+We use vector notation <Math mode="inline" xml:id="C31.S17.SS1.p1.m4">[\mathbf{s},\mathbf{t},\mathbf{u}]</Math> (respective scalar <Math mode="inline" xml:id="C31.S17.SS1.p1.m5">(s,t,u)</Math> ) for any one of the three spin operators (respective spin values).
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C31.S17.SS1.p2.s1">
+Consider the following spectral problem on the sphere <Math mode="inline" xml:id="C31.S17.SS1.p2.m1">S_{2}</Math> : <Math mode="inline" xml:id="C31.S17.SS1.p2.m2">\mathbf{x}^{2}=x_{s}^{2}+x_{t}^{2}+x_{u}^{2}=R^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="208" xml:id="C31.S17.SS1.p2.s2">
+<Math equation-number="31.17.1" mode="display" xml:id="C31.S17.E1">\mathbf{J}^{2}\Psi(\mathbf{x})=(\mathbf{s}+\mathbf{t}+\mathbf{u})^{2}\Psi( \mathbf{x})=j(j+1)\Psi(\mathbf{x}), H_{s}\Psi(\mathbf{x})=(-2\mathbf{s}\cdot\mathbf{t}-(\ifrac{2}{a})\mathbf{s} \cdot\mathbf{u})\Psi(\mathbf{x})=h_{s}\Psi(\mathbf{x}),</Math> for the common eigenfunction <Math mode="inline" xml:id="C31.S17.SS1.p2.m3">\Psi(\mathbf{x})=\Psi(x_{s},x_{t},x_{u})</Math> , where <Math mode="inline" xml:id="C31.S17.SS1.p2.m4">a</Math> is the coupling parameter of interacting spins.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="209" xml:id="C31.S17.SS1.p2.s3">
+Introduce elliptic coordinates <Math mode="inline" xml:id="C31.S17.SS1.p2.m5">z_{1}</Math> and <Math mode="inline" xml:id="C31.S17.SS1.p2.m6">z_{2}</Math> on <Math mode="inline" xml:id="C31.S17.SS1.p2.m7">S_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="210" xml:id="C31.S17.SS1.p2.s4">
+Then <Math equation-number="31.17.2" mode="display" xml:id="C31.S17.E2">\frac{x_{s}^{2}}{z_{k}}+\frac{x_{t}^{2}}{z_{k}-1}+\frac{x_{u}^{2}}{z_{k}-a}=0, subject to k=1,2,</Math> with <Math equation-number="31.17.3" mode="display" xml:id="C31.S17.E3">x_{s}^{2}=R^{2}\frac{z_{1}z_{2}}{a}, x_{t}^{2}=R^{2}\frac{(z_{1}-1)(z_{2}-1)}{1-a}, x_{u}^{2}=R^{2}\frac{(z_{1}-a)(z_{2}-a)}{a(a-1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="211" xml:id="C31.S17.SS1.p2.s5">
+The operators <Math mode="inline" xml:id="C31.S17.SS1.p2.m8">\mathbf{J}^{2}</Math> and <Math mode="inline" xml:id="C31.S17.SS1.p2.m9">H_{s}</Math> admit separation of variables in <Math mode="inline" xml:id="C31.S17.SS1.p2.m10">z_{1},z_{2}</Math> , leading to the following factorization of the eigenfunction <Math mode="inline" xml:id="C31.S17.SS1.p2.m11">\Psi(\mathbf{x})</Math> : <Math equation-number="31.17.4" mode="display" xml:id="C31.S17.E4">\Psi(\mathbf{x})=(z_{1}z_{2})^{-s-\frac{1}{4}}((z_{1}-1)(z_{2}-1))^{-t-\frac{1 }{4}}\*((z_{1}-a)(z_{2}-a))^{-u-\frac{1}{4}}w(z_{1})w(z_{2}),</Math> where <Math mode="inline" xml:id="C31.S17.SS1.p2.m12">w(z)</Math> satisfies Heun’s equation (LABEL:eq:HE.DE.DE) with <Math mode="inline" xml:id="C31.S17.SS1.p2.m13">a</Math> as in (LABEL:eq:HE.PA.SP19) and the other parameters given by <Math equation-number="31.17.5" mode="display" xml:id="C31.S17.E5">\alpha=-s-t-u-j-1, \beta=j-s-t-u, \gamma=-2s, \delta=-2t, \epsilon=-2u;, q=ah_{s}+2s(at+u)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S17.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C31.S17.SS1.p3.s1">
+For more details about the method of separation of variables and relation to special functions see ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S17.SS2">
+<title>Other Applications</title>        
+     
+<para xml:id="C31.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="213" xml:id="C31.S17.SS2.p1.s1">
+Heun functions appear in the theory of black holes ( ( ) , ( ) , ( ) , ( ) , ( ) ), lattice systems in statistical mechanics ( ( ) ), dislocation theory ( ( ) ), and solution of the Schrödinger equation of quantum mechanics ( ( ) , ( ) , and ( ) ).
+</sentence>
+
+</para>
+    
+<para xml:id="C31.S17.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C31.S17.SS2.p2.s1">
+For applications of Heun’s equation and functions in astrophysics see ( ) where different spectral problems for Heun’sequation are also considered. More applications—including those of generalized spheroidal wave functions and confluent Heun functions in mathematical physics, astrophysics, and the two-center problem in molecular quantum mechanics—can be found in ( ) and ( , Chapter 4) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="215" xml:id="C31.S17.SS2.p2.s2">
+For application of biconfluent Heun functions in a model of an equatorially trapped Rossby wave in a shear flow in the ocean or atmosphere see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C31.S18">
+<title>Methods of Computation</title>        
+   
+<para xml:id="C31.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C31.S18.p1.s1">
+Independent solutions of (LABEL:eq:HE.DE.DE) can be computed in the neighborhoods of singularities from their Fuchs–Frobenius expansions (§LABEL:sec:HE.SS), and elsewhere by numerical integration of (LABEL:eq:HE.DE.DE).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="217" xml:id="C31.S18.p1.s2">
+Subsequently, the coefficients in the necessary connection formulas can be calculated numerically by matching the values of solutions and their derivatives at suitably chosen values of <Math mode="inline" xml:id="C31.S18.p1.m1">z</Math> ; see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="218" xml:id="C31.S18.p1.s3">
+Care needs to be taken to choose integration paths in such a way that the wanted solution is growing in magnitude along the path at least as rapidly as all other solutions (§LABEL:sec:NM.ODE.IVP).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="219" xml:id="C31.S18.p1.s4">
+The computation of the accessory parameter for the Heun functions is carried out via the continued-fraction equations (LABEL:eq:HE.HF.SS9) and (LABEL:eq:HE.EH.EH14) in the same way as for the Mathieu, Lamé, and spheroidal wave functions in Chapters LABEL:ch:MA–LABEL:ch:SW.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

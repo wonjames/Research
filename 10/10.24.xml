@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S24">
+<title>Functions of Imaginary Order</title>        
+  
+<para xml:id="C10.S24.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S24.p1.s1">
+With <Math mode="inline" xml:id="C10.S24.p1.m1">z=x</Math> and <Math mode="inline" xml:id="C10.S24.p1.m2">\nu</Math> replaced by <Math mode="inline" xml:id="C10.S24.p1.m3">i\nu</Math> , Bessel’s equation (10.2.1) becomes <Math equation-number="10.24.1" mode="display" xml:id="C10.S24.E1">x^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}+x\frac{\mathrm{d}w}{\mathrm{d }x}+(x^{2}+\nu^{2})w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S24.p1.s2">
+For <Math mode="inline" xml:id="C10.S24.p1.m4">\nu\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C10.S24.p1.m5">x</Math> <Math mode="inline" xml:id="C10.S24.p1.m6">\in(0,\infty)</Math> define <Math equation-number="10.24.2" mode="display" xml:id="C10.S24.E2">\widetilde{J}_{\nu}\left(x\right)=\operatorname{sech}\left(\tfrac{1}{2}\pi\nu \right)\Re(J_{i\nu}\left(x\right)),\widetilde{Y}_{\nu}\left(x\right)=\operatorname{sech}\left(\tfrac{1}{2}\pi\nu \right)\Re(Y_{i\nu}\left(x\right)),</Math> and <Math equation-number="10.24.3" mode="display" xml:id="C10.S24.E3">\Gamma\left(1+i\nu\right)=\left(\frac{\pi\nu}{\sinh\left(\pi\nu\right)}\right) ^{\frac{1}{2}}e^{i\gamma_{\nu}},</Math> where <Math mode="inline" xml:id="C10.S24.p1.m7">\gamma_{\nu}</Math> is real and continuous with <Math mode="inline" xml:id="C10.S24.p1.m8">\gamma_{0}=0</Math> ; compare (5.4.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S24.p1.s3">
+Then <Math equation-number="10.24.4" mode="display" xml:id="C10.S24.E4">\widetilde{J}_{-\nu}\left(x\right)=\widetilde{J}_{\nu}\left(x\right),\widetilde{Y}_{-\nu}\left(x\right)=\widetilde{Y}_{\nu}\left(x\right),</Math> and <Math mode="inline" xml:id="C10.S24.p1.m9">\widetilde{J}_{\nu}\left(x\right)</Math> , <Math mode="inline" xml:id="C10.S24.p1.m10">\widetilde{Y}_{\nu}\left(x\right)</Math> are linearly independent solutions of (10.24.1):
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S24.p1.s4">
+<Math equation-number="10.24.5" mode="display" xml:id="C10.S24.E5">\mathscr{W}\{\widetilde{J}_{\nu}\left(x\right),\widetilde{Y}_{\nu}\left(x \right)\}=2/(\pi x)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S24.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S24.p2.s1">
+As <Math mode="inline" xml:id="C10.S24.p2.m1">x\to+\infty</Math> , with <Math mode="inline" xml:id="C10.S24.p2.m2">\nu</Math> fixed, <Math equation-number="10.24.6" mode="display" xml:id="C10.S24.E6">\widetilde{J}_{\nu}\left(x\right)=\sqrt{2/(\pi x)}\cos\left(x-\tfrac{1}{4}\pi \right)+O\left(x^{-\frac{3}{2}}\right),\widetilde{Y}_{\nu}\left(x\right)=\sqrt{2/(\pi x)}\sin\left(x-\tfrac{1}{4}\pi \right)+O\left(x^{-\frac{3}{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S24.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S24.p3.s1">
+As <Math mode="inline" xml:id="C10.S24.p3.m1">x\to 0+</Math> , with <Math mode="inline" xml:id="C10.S24.p3.m2">\nu</Math> fixed, <Math equation-number="10.24.7" mode="display" xml:id="C10.S24.E7">\widetilde{J}_{\nu}\left(x\right)=\left(\frac{2\tanh\left(\frac{1}{2}\pi\nu \right)}{\pi\nu}\right)^{\frac{1}{2}}\cos\left(\nu\ln\left(\tfrac{1}{2}x\right )-\gamma_{\nu}\right)+O\left(x^{2}\right),</Math> , <Math equation-number="10.24.8" mode="display" xml:id="C10.S24.E8">\widetilde{Y}_{\nu}\left(x\right)=\left(\frac{2\coth\left(\frac{1}{2}\pi\nu \right)}{\pi\nu}\right)^{\frac{1}{2}}\*\sin\left(\nu\ln\left(\tfrac{1}{2}x \right)-\gamma_{\nu}\right)+O\left(x^{2}\right), if \nu&gt;0,</Math> and <Math equation-number="10.24.9" mode="display" xml:id="C10.S24.E9">\widetilde{Y}_{0}\left(x\right)=Y_{0}\left(x\right)=\frac{2}{\pi}\left(\ln \left(\tfrac{1}{2}x\right)+\gamma\right)+O\left(x^{2}\ln x\right),</Math> where <Math mode="inline" xml:id="C10.S24.p3.m3">\gamma</Math> denotes Euler’s constant §5.2(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S24.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S24.p4.s1">
+In consequence of (10.24.6), when <Math mode="inline" xml:id="C10.S24.p4.m1">x</Math> is large <Math mode="inline" xml:id="C10.S24.p4.m2">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p4.m3">\widetilde{Y}_{\nu}\left(x\right)</Math> comprise a numerically satisfactory pair of solutions of (10.24.1); compare §2.7(iv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S24.p4.s2">
+Also, in consequence of (10.24.7)–(10.24.9), when <Math mode="inline" xml:id="C10.S24.p4.m4">x</Math> is small either <Math mode="inline" xml:id="C10.S24.p4.m5">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p4.m6">\tanh\left(\tfrac{1}{2}\pi\nu\right)\widetilde{Y}_{\nu}\left(x\right)</Math> or <Math mode="inline" xml:id="C10.S24.p4.m7">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p4.m8">\widetilde{Y}_{\nu}\left(x\right)</Math> comprise a numerically satisfactory pair depending whether <Math mode="inline" xml:id="C10.S24.p4.m9">\nu\neq 0</Math> or <Math mode="inline" xml:id="C10.S24.p4.m10">\nu=0</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S24.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C10.S24.p5.s1">
+For graphs of <Math mode="inline" xml:id="C10.S24.p5.m1">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p5.m2">\widetilde{Y}_{\nu}\left(x\right)</Math> see §10.3(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S24.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C10.S24.p6.s1">
+For mathematical properties and applications of <Math mode="inline" xml:id="C10.S24.p6.m1">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p6.m2">\widetilde{Y}_{\nu}\left(x\right)</Math> , including zeros and uniform asymptotic expansions for large <Math mode="inline" xml:id="C10.S24.p6.m3">\nu</Math> , see Dunster (1990a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C10.S24.p6.s2">
+In this reference <Math mode="inline" xml:id="C10.S24.p6.m4">\widetilde{J}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S24.p6.m5">\widetilde{Y}_{\nu}\left(x\right)</Math> are denoted respectively by <Math mode="inline" xml:id="C10.S24.p6.m6">F_{i\nu}{(x)}</Math> and <Math mode="inline" xml:id="C10.S24.p6.m7">G_{i\nu}{(x)}</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>

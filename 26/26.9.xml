@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S9">
+<title>Integer Partitions: Restricted Number and Part Size</title>        
+ 
+ 
+<subsection xml:id="C26.S9.SS1">
+<title>Definitions</title>        
+ 
+ 
+<para xml:id="C26.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S9.SS1.p1.s1">
+ <Math mode="inline" xml:id="C26.S9.SS1.p1.m1">p_{k}\left(n\right)</Math> denotes the number of partitions of <Math mode="inline" xml:id="C26.S9.SS1.p1.m2">n</Math> into at most <Math mode="inline" xml:id="C26.S9.SS1.p1.m3">k</Math> parts.See Table 26.9.1.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S9.SS1.p1.s2">
+<Math equation-number="26.9.1" mode="display" xml:id="C26.S9.E1">p_{k}\left(n\right)=p\left(n\right), if k\geq n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C26.S9.SS1.p2.s1">
+Unrestricted partitions are covered in §27.14.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="4" xml:id="C26.S9.T1.s1">
+Table 26.9.1: Partitions <Math mode="inline" xml:id="C26.S9.T1.m2">p_{k}\left(n\right)</Math> .
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="5" sentence-num-in-table="1" xml:id="C26.S9.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S9.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="6" sentence-num-in-table="2" xml:id="C26.S9.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S9.T1.t1.r1.m2">k</Math>
+</sentence>
+
+<sentence sentence-num-in-section="7" sentence-num-in-table="3" xml:id="C26.S9.T1.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="4" xml:id="C26.S9.T1.t1.s4">
+1
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="5" xml:id="C26.S9.T1.t1.s5">
+2
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="6" xml:id="C26.S9.T1.t1.s6">
+3
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="7" xml:id="C26.S9.T1.t1.s7">
+4
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="8" xml:id="C26.S9.T1.t1.s8">
+5
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="9" xml:id="C26.S9.T1.t1.s9">
+6
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="10" xml:id="C26.S9.T1.t1.s10">
+7
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="11" xml:id="C26.S9.T1.t1.s11">
+8
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="12" xml:id="C26.S9.T1.t1.s12">
+9
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="13" xml:id="C26.S9.T1.t1.s13">
+10
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="14" xml:id="C26.S9.T1.t1.s14">
+0
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="15" xml:id="C26.S9.T1.t1.s15">
+1
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="16" xml:id="C26.S9.T1.t1.s16">
+1
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="17" xml:id="C26.S9.T1.t1.s17">
+1
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="18" xml:id="C26.S9.T1.t1.s18">
+1
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="19" xml:id="C26.S9.T1.t1.s19">
+1
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="20" xml:id="C26.S9.T1.t1.s20">
+1
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="21" xml:id="C26.S9.T1.t1.s21">
+1
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="22" xml:id="C26.S9.T1.t1.s22">
+1
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="23" xml:id="C26.S9.T1.t1.s23">
+1
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="24" xml:id="C26.S9.T1.t1.s24">
+1
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="25" xml:id="C26.S9.T1.t1.s25">
+1
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="26" xml:id="C26.S9.T1.t1.s26">
+1
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="27" xml:id="C26.S9.T1.t1.s27">
+0
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="28" xml:id="C26.S9.T1.t1.s28">
+1
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="29" xml:id="C26.S9.T1.t1.s29">
+1
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="30" xml:id="C26.S9.T1.t1.s30">
+1
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="31" xml:id="C26.S9.T1.t1.s31">
+1
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="32" xml:id="C26.S9.T1.t1.s32">
+1
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="33" xml:id="C26.S9.T1.t1.s33">
+1
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="34" xml:id="C26.S9.T1.t1.s34">
+1
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="35" xml:id="C26.S9.T1.t1.s35">
+1
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="36" xml:id="C26.S9.T1.t1.s36">
+1
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="37" xml:id="C26.S9.T1.t1.s37">
+1
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="38" xml:id="C26.S9.T1.t1.s38">
+2
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="39" xml:id="C26.S9.T1.t1.s39">
+0
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="40" xml:id="C26.S9.T1.t1.s40">
+1
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="41" xml:id="C26.S9.T1.t1.s41">
+2
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="42" xml:id="C26.S9.T1.t1.s42">
+2
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="43" xml:id="C26.S9.T1.t1.s43">
+2
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="44" xml:id="C26.S9.T1.t1.s44">
+2
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="45" xml:id="C26.S9.T1.t1.s45">
+2
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="46" xml:id="C26.S9.T1.t1.s46">
+2
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="47" xml:id="C26.S9.T1.t1.s47">
+2
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="48" xml:id="C26.S9.T1.t1.s48">
+2
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="49" xml:id="C26.S9.T1.t1.s49">
+2
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="50" xml:id="C26.S9.T1.t1.s50">
+3
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="51" xml:id="C26.S9.T1.t1.s51">
+0
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="52" xml:id="C26.S9.T1.t1.s52">
+1
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="53" xml:id="C26.S9.T1.t1.s53">
+2
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="54" xml:id="C26.S9.T1.t1.s54">
+3
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="55" xml:id="C26.S9.T1.t1.s55">
+3
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="56" xml:id="C26.S9.T1.t1.s56">
+3
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="57" xml:id="C26.S9.T1.t1.s57">
+3
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="58" xml:id="C26.S9.T1.t1.s58">
+3
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="59" xml:id="C26.S9.T1.t1.s59">
+3
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="60" xml:id="C26.S9.T1.t1.s60">
+3
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="61" xml:id="C26.S9.T1.t1.s61">
+3
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="62" xml:id="C26.S9.T1.t1.s62">
+4
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="63" xml:id="C26.S9.T1.t1.s63">
+0
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="64" xml:id="C26.S9.T1.t1.s64">
+1
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="65" xml:id="C26.S9.T1.t1.s65">
+3
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="66" xml:id="C26.S9.T1.t1.s66">
+4
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="67" xml:id="C26.S9.T1.t1.s67">
+5
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="68" xml:id="C26.S9.T1.t1.s68">
+5
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="69" xml:id="C26.S9.T1.t1.s69">
+5
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="70" xml:id="C26.S9.T1.t1.s70">
+5
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="71" xml:id="C26.S9.T1.t1.s71">
+5
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="72" xml:id="C26.S9.T1.t1.s72">
+5
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="73" xml:id="C26.S9.T1.t1.s73">
+5
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="74" xml:id="C26.S9.T1.t1.s74">
+5
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="75" xml:id="C26.S9.T1.t1.s75">
+0
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="76" xml:id="C26.S9.T1.t1.s76">
+1
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="77" xml:id="C26.S9.T1.t1.s77">
+3
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="78" xml:id="C26.S9.T1.t1.s78">
+5
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="79" xml:id="C26.S9.T1.t1.s79">
+6
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="80" xml:id="C26.S9.T1.t1.s80">
+7
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="81" xml:id="C26.S9.T1.t1.s81">
+7
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="82" xml:id="C26.S9.T1.t1.s82">
+7
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="83" xml:id="C26.S9.T1.t1.s83">
+7
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="84" xml:id="C26.S9.T1.t1.s84">
+7
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="85" xml:id="C26.S9.T1.t1.s85">
+7
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="86" xml:id="C26.S9.T1.t1.s86">
+6
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="87" xml:id="C26.S9.T1.t1.s87">
+0
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="88" xml:id="C26.S9.T1.t1.s88">
+1
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="89" xml:id="C26.S9.T1.t1.s89">
+4
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="90" xml:id="C26.S9.T1.t1.s90">
+7
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="91" xml:id="C26.S9.T1.t1.s91">
+9
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="92" xml:id="C26.S9.T1.t1.s92">
+10
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="93" xml:id="C26.S9.T1.t1.s93">
+11
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="94" xml:id="C26.S9.T1.t1.s94">
+11
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="95" xml:id="C26.S9.T1.t1.s95">
+11
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="96" xml:id="C26.S9.T1.t1.s96">
+11
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="97" xml:id="C26.S9.T1.t1.s97">
+11
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="98" xml:id="C26.S9.T1.t1.s98">
+7
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="99" xml:id="C26.S9.T1.t1.s99">
+0
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="100" xml:id="C26.S9.T1.t1.s100">
+1
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="101" xml:id="C26.S9.T1.t1.s101">
+4
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="102" xml:id="C26.S9.T1.t1.s102">
+8
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="103" xml:id="C26.S9.T1.t1.s103">
+11
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="104" xml:id="C26.S9.T1.t1.s104">
+13
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="105" xml:id="C26.S9.T1.t1.s105">
+14
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="106" xml:id="C26.S9.T1.t1.s106">
+15
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="107" xml:id="C26.S9.T1.t1.s107">
+15
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="108" xml:id="C26.S9.T1.t1.s108">
+15
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="109" xml:id="C26.S9.T1.t1.s109">
+15
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="110" xml:id="C26.S9.T1.t1.s110">
+8
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="111" xml:id="C26.S9.T1.t1.s111">
+0
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="112" xml:id="C26.S9.T1.t1.s112">
+1
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="113" xml:id="C26.S9.T1.t1.s113">
+5
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="114" xml:id="C26.S9.T1.t1.s114">
+10
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="115" xml:id="C26.S9.T1.t1.s115">
+15
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="116" xml:id="C26.S9.T1.t1.s116">
+18
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="117" xml:id="C26.S9.T1.t1.s117">
+20
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="118" xml:id="C26.S9.T1.t1.s118">
+21
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="119" xml:id="C26.S9.T1.t1.s119">
+22
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="120" xml:id="C26.S9.T1.t1.s120">
+22
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="121" xml:id="C26.S9.T1.t1.s121">
+22
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="122" xml:id="C26.S9.T1.t1.s122">
+9
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="123" xml:id="C26.S9.T1.t1.s123">
+0
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="124" xml:id="C26.S9.T1.t1.s124">
+1
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="125" xml:id="C26.S9.T1.t1.s125">
+5
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="126" xml:id="C26.S9.T1.t1.s126">
+12
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="127" xml:id="C26.S9.T1.t1.s127">
+18
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="128" xml:id="C26.S9.T1.t1.s128">
+23
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="129" xml:id="C26.S9.T1.t1.s129">
+26
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="130" xml:id="C26.S9.T1.t1.s130">
+28
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="131" xml:id="C26.S9.T1.t1.s131">
+29
+</sentence>
+
+<sentence sentence-num-in-section="136" sentence-num-in-table="132" xml:id="C26.S9.T1.t1.s132">
+30
+</sentence>
+
+<sentence sentence-num-in-section="137" sentence-num-in-table="133" xml:id="C26.S9.T1.t1.s133">
+30
+</sentence>
+
+<sentence sentence-num-in-section="138" sentence-num-in-table="134" xml:id="C26.S9.T1.t1.s134">
+10
+</sentence>
+
+<sentence sentence-num-in-section="139" sentence-num-in-table="135" xml:id="C26.S9.T1.t1.s135">
+0
+</sentence>
+
+<sentence sentence-num-in-section="140" sentence-num-in-table="136" xml:id="C26.S9.T1.t1.s136">
+1
+</sentence>
+
+<sentence sentence-num-in-section="141" sentence-num-in-table="137" xml:id="C26.S9.T1.t1.s137">
+6
+</sentence>
+
+<sentence sentence-num-in-section="142" sentence-num-in-table="138" xml:id="C26.S9.T1.t1.s138">
+14
+</sentence>
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="139" xml:id="C26.S9.T1.t1.s139">
+23
+</sentence>
+
+<sentence sentence-num-in-section="144" sentence-num-in-table="140" xml:id="C26.S9.T1.t1.s140">
+30
+</sentence>
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="141" xml:id="C26.S9.T1.t1.s141">
+35
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="142" xml:id="C26.S9.T1.t1.s142">
+38
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="143" xml:id="C26.S9.T1.t1.s143">
+40
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="144" xml:id="C26.S9.T1.t1.s144">
+41
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="145" xml:id="C26.S9.T1.t1.s145">
+42
+</sentence>
+ 
+  
+<para xml:id="C26.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C26.S9.SS1.p3.s1">
+A useful representation for a partition is the Ferrers graph in which the integers in the partition are each represented by a row of dots.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="151" xml:id="C26.S9.SS1.p3.s2">
+An example is provided in Figure 26.9.1.
+</sentence>
+
+</para>
+       
+ 
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="1" xml:id="C26.S9.F1.t1.s1">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m1">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="2" xml:id="C26.S9.F1.t1.s2">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m2">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="3" xml:id="C26.S9.F1.t1.s3">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m3">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="4" xml:id="C26.S9.F1.t1.s4">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m4">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="5" xml:id="C26.S9.F1.t1.s5">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m5">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="6" xml:id="C26.S9.F1.t1.s6">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m6">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="7" xml:id="C26.S9.F1.t1.s7">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r1.m7">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="8" xml:id="C26.S9.F1.t1.s8">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r2.m1">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="9" xml:id="C26.S9.F1.t1.s9">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r2.m2">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="161" sentence-num-in-table="10" xml:id="C26.S9.F1.t1.s10">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r2.m3">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="162" sentence-num-in-table="11" xml:id="C26.S9.F1.t1.s11">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r2.m4">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="163" sentence-num-in-table="12" xml:id="C26.S9.F1.t1.s12">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r3.m1">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="164" sentence-num-in-table="13" xml:id="C26.S9.F1.t1.s13">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r3.m2">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="165" sentence-num-in-table="14" xml:id="C26.S9.F1.t1.s14">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r3.m3">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="166" sentence-num-in-table="15" xml:id="C26.S9.F1.t1.s15">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r4.m1">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="167" sentence-num-in-table="16" xml:id="C26.S9.F1.t1.s16">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r4.m2">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="168" sentence-num-in-table="17" xml:id="C26.S9.F1.t1.s17">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r4.m3">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="169" sentence-num-in-table="18" xml:id="C26.S9.F1.t1.s18">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r5.m1">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="170" sentence-num-in-table="19" xml:id="C26.S9.F1.t1.s19">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r5.m2">\bullet</Math>
+</sentence>
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="20" xml:id="C26.S9.F1.t1.s20">
+<Math mode="inline" xml:id="C26.S9.F1.t1.r6.m1">\bullet</Math>
+</sentence>
+  
+<sentence sentence-num-in-section="172" xml:id="C26.S9.F1.s1">
+Figure 26.9.1: Ferrers graph of the partition <Math mode="inline" xml:id="C26.S9.F1.m2">7+4+3+3+2+1</Math> .
+</sentence>    
+<para xml:id="C26.S9.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="173" xml:id="C26.S9.SS1.p4.s1">
+The conjugate partition is obtained by reflecting the Ferrers graph across the main diagonal or, equivalently, by representing each integer by a column of dots.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="174" xml:id="C26.S9.SS1.p4.s2">
+The conjugate to the example in Figure 26.9.1 is <Math mode="inline" xml:id="C26.S9.SS1.p4.m1">6+5+4+2+1+1+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="175" xml:id="C26.S9.SS1.p4.s3">
+Conjugation establishes a one-to-one correspondence between partitions of <Math mode="inline" xml:id="C26.S9.SS1.p4.m2">n</Math> into at most <Math mode="inline" xml:id="C26.S9.SS1.p4.m3">k</Math> parts and partitions of <Math mode="inline" xml:id="C26.S9.SS1.p4.m4">n</Math> into parts with largest part less than or equal to <Math mode="inline" xml:id="C26.S9.SS1.p4.m5">k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="176" xml:id="C26.S9.SS1.p4.s4">
+It follows that <Math mode="inline" xml:id="C26.S9.SS1.p4.m6">p_{k}\left(n\right)</Math> also equals the number of partitions of <Math mode="inline" xml:id="C26.S9.SS1.p4.m7">n</Math> into parts that are less than or equal to <Math mode="inline" xml:id="C26.S9.SS1.p4.m8">k</Math>.
+</sentence>
+
+</para>
+
+   
+<para xml:id="C26.S9.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C26.S9.SS1.p5.s1">
+ <Math mode="inline" xml:id="C26.S9.SS1.p5.m1">p_{k}\left(\leq m,n\right)</Math> is the number of partitions of <Math mode="inline" xml:id="C26.S9.SS1.p5.m2">n</Math> into at most <Math mode="inline" xml:id="C26.S9.SS1.p5.m3">k</Math> parts, each less than or equal to <Math mode="inline" xml:id="C26.S9.SS1.p5.m4">m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C26.S9.SS1.p5.s2">
+It is also equal to the number of lattice paths from <Math mode="inline" xml:id="C26.S9.SS1.p5.m5">(0,0)</Math> to <Math mode="inline" xml:id="C26.S9.SS1.p5.m6">(m,k)</Math> that have exactly <Math mode="inline" xml:id="C26.S9.SS1.p5.m7">n</Math> vertices <Math mode="inline" xml:id="C26.S9.SS1.p5.m8">(h,j)</Math> , <Math mode="inline" xml:id="C26.S9.SS1.p5.m9">1\leq h\leq m</Math> , <Math mode="inline" xml:id="C26.S9.SS1.p5.m10">1\leq j\leq k</Math> , above and to the left of the lattice path.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="179" xml:id="C26.S9.SS1.p5.s3">
+See Figure 26.9.2.
+</sentence>
+
+</para>
+       
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                            <Math mode="inline" xml:id="C26.S9.F2.pic1.m1">(0,0)</Math>   <Math mode="inline" xml:id="C26.S9.F2.pic1.m2">(6,5)</Math>                                                                          
+<sentence sentence-num-in-section="180" xml:id="C26.S9.F2.s1">
+Figure 26.9.2: The partition <Math mode="inline" xml:id="C26.S9.F2.m2">5+5+3+2</Math> represented as a lattice path.
+</sentence>  
+<para xml:id="C26.S9.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C26.S9.SS1.p6.s1">
+Equations (26.9.2)–(26.9.3) are examples of closed forms that can be computed explicitly for any positive integer <Math mode="inline" xml:id="C26.S9.SS1.p6.m1">k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="182" xml:id="C26.S9.SS1.p6.s2">
+SeeAndrews (1976, p. 81).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C26.S9.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C26.S9.SS1.p7.s1">
+ <Math equation-number="26.9.2" mode="display" xml:id="C26.S9.E2">p_{0}\left(n\right)=0, if n&gt;0,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S9.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C26.S9.SS1.p8.s1">
+ <Math equation-number="26.9.3" mode="display" xml:id="C26.S9.E3">p_{1}\left(n\right)=1,p_{2}\left(n\right)=1+\left\lfloor n/2\right\rfloor,p_{3}\left(n\right)=1+\left\lfloor\frac{n^{2}+6n}{12}\right\rfloor</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S9.SS2">
+<title>Generating Functions</title>        
+  
+<para xml:id="C26.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C26.S9.SS2.p1.s1">
+In what follows <Math equation-number="26.9.4" mode="display" xml:id="C26.S9.E4">\genfrac{[}{]}{0.0pt}{}{m}{n}_{q}=\prod_{j=1}^{n}\frac{1-q^{m-n+j}}{1-q^{j}}, if n\geq 0,</Math> is the Gaussian polynomial (or <Math mode="inline" xml:id="C26.S9.SS2.p1.m2">q</Math> -binomial coefficient); see also §§17.2(i)–17.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="186" xml:id="C26.S9.SS2.p1.s2">
+In the present chapter <Math mode="inline" xml:id="C26.S9.SS2.p1.m3">m\geq n\geq 0</Math> in all cases.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="187" xml:id="C26.S9.SS2.p1.s3">
+It is also assumed everywhere that <Math mode="inline" xml:id="C26.S9.SS2.p1.m4">|q|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C26.S9.SS2.p2.s1">
+ <Math equation-number="26.9.5" mode="display" xml:id="C26.S9.E5">\sum_{n=0}^{\infty}p_{k}\left(n\right)q^{n}=\prod_{j=1}^{k}\frac{1}{1-q^{j}}=1 +\sum_{m=1}^{\infty}\genfrac{[}{]}{0.0pt}{}{k+m-1}{m}_{q}q^{m}</Math> ,
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C26.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C26.S9.SS2.p3.s1">
+ <Math equation-number="26.9.6" mode="display" xml:id="C26.S9.E6">\sum_{n=0}^{\infty}p_{k}\left(\leq m,n\right)q^{n}=\genfrac{[}{]}{0.0pt}{}{m+k }{k}_{q}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="190" xml:id="C26.S9.SS2.p3.s2">
+Also, when <Math mode="inline" xml:id="C26.S9.SS2.p3.m1">|xq|&lt;1</Math> <Math equation-number="26.9.7" mode="display" xml:id="C26.S9.E7">\sum_{m,n=0}^{\infty}p_{k}\left(\leq m,n\right)x^{k}q^{n}=1+\sum_{k=1}^{\infty }\genfrac{[}{]}{0.0pt}{}{m+k}{k}_{q}x^{k}=\prod_{j=0}^{m}\frac{1}{1-x\,q^{j}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S9.SS3">
+<title>Recurrence Relations</title>        
+  
+<para xml:id="C26.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="191" xml:id="C26.S9.SS3.p1.s1">
+ <Math equation-number="26.9.8" mode="display" xml:id="C26.S9.E8">p_{k}\left(n\right)=p_{k}\left(n-k\right)+p_{k-1}\left(n\right);</Math> equivalently, partitions into at most <Math mode="inline" xml:id="C26.S9.SS3.p1.m1">k</Math> parts either have exactly <Math mode="inline" xml:id="C26.S9.SS3.p1.m2">k</Math> parts, in which case we can subtract one from each part, or they have strictly fewer than <Math mode="inline" xml:id="C26.S9.SS3.p1.m3">k</Math> parts.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S9.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="192" xml:id="C26.S9.SS3.p2.s1">
+ <Math equation-number="26.9.9" mode="display" xml:id="C26.S9.E9">p_{k}\left(n\right)=\frac{1}{n}\sum_{t=1}^{n}p_{k}\left(n-t\right)\sum_{ \begin{subarray}{c}j\mathbin{|}t\\ j\leq k\end{subarray}}j,</Math> where the inner sum is taken over all positive divisors of <Math mode="inline" xml:id="C26.S9.SS3.p2.m1">t</Math> that are less than or equal to <Math mode="inline" xml:id="C26.S9.SS3.p2.m2">k</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S9.SS4">
+<title>Limiting Form</title>        
+  
+<para xml:id="C26.S9.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="193" xml:id="C26.S9.SS4.p1.s1">
+As <Math mode="inline" xml:id="C26.S9.SS4.p1.m1">n\to\infty</Math> with <Math mode="inline" xml:id="C26.S9.SS4.p1.m2">k</Math> fixed, <Math equation-number="26.9.10" mode="display" xml:id="C26.S9.E10">p_{k}\left(n\right)\sim\frac{n^{k-1}}{k!(k-1)!}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

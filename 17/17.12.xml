@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C17.S12">
+<title>Bailey Pairs</title>        
+ 
+<paragraph xml:id="C17.S12.Px1">
+<title>Bailey Transform</title>    
+<para xml:id="C17.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C17.S12.Px1.p1.s1">
+ <Math equation-number="17.12.1" mode="display" xml:id="C17.S12.E1">\sum_{n=0}^{\infty}\alpha_{n}\gamma_{n}=\sum_{n=0}^{\infty}\beta_{n}\delta_{n},</Math> where <Math equation-number="17.12.2" mode="display" xml:id="C17.S12.E2">\beta_{n}=\sum_{j=0}^{n}\alpha_{j}u_{n-j}v_{n+j},\gamma_{n}=\sum_{j=n}^{\infty}\delta_{j}u_{j-n}v_{j+n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px2">
+<title>Bailey Pairs</title>          
+<para xml:id="C17.S12.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C17.S12.Px2.p1.s1">
+A sequence of pairs of rational functions of several variables <Math mode="inline" xml:id="C17.S12.Px2.p1.m1">(\alpha_{n},\beta_{n})</Math> , <Math mode="inline" xml:id="C17.S12.Px2.p1.m2">n=0,1,2,\dots</Math> , is called a Bailey pair provided that for each <Math mode="inline" xml:id="C17.S12.Px2.p1.m3">n\geqq 0</Math> <Math equation-number="17.12.3" mode="display" xml:id="C17.S12.E3">\beta_{n}=\sum_{j=0}^{n}\frac{\alpha_{j}}{\left(q;q\right)_{n-j}\left(aq;q \right)_{n+j}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px3">
+<title>Weak Bailey Lemma</title>    
+<para xml:id="C17.S12.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C17.S12.Px3.p1.s1">
+If <Math mode="inline" xml:id="C17.S12.Px3.p1.m1">(\alpha_{n},\beta_{n})</Math> is a Bailey pair, then <Math equation-number="17.12.4" mode="display" xml:id="C17.S12.E4">\sum_{n=0}^{\infty}q^{n^{2}}a^{n}\beta_{n}=\frac{1}{\left(aq;q\right)_{\infty} }\sum_{n=0}^{\infty}q^{n^{2}}a^{n}\alpha_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px4">
+<title>Strong Bailey Lemma</title>    
+<para xml:id="C17.S12.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C17.S12.Px4.p1.s1">
+If <Math mode="inline" xml:id="C17.S12.Px4.p1.m1">(\alpha_{n},\beta_{n})</Math> is a Bailey pair, then so is <Math mode="inline" xml:id="C17.S12.Px4.p1.m2">(\alpha_{n}^{\prime},\beta_{n}^{\prime})</Math> , where <Math equation-number="17.12.5" mode="display" xml:id="C17.S12.E5">\left(\frac{aq}{\rho_{1}},\frac{aq}{\rho_{2}};q\right)_{n}\alpha_{n}^{\prime}= \left(\rho_{1},\rho_{2};q\right)_{n}\left(\frac{aq}{\rho_{1}\rho_{2}}\right)^{ n}\alpha_{n}\left(\frac{aq}{\rho_{1}},\frac{aq}{\rho_{2}};q\right)_{n}\beta_{n}^{\prime}= \sum_{j=0}^{n}\left(\rho_{1},\rho_{2};q\right)_{j}\left(\frac{aq}{\rho_{1}\rho _{2}};q\right)_{n-j}\left(\frac{aq}{\rho_{1}\rho_{2}}\right)^{j}\frac{\beta_{j }}{\left(q;q\right)_{n-j}}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C17.S12.Px4.p2.s1">
+When (17.12.5) is iterated the resulting infinite sequence of Bailey pairs is called a Bailey Chain.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C17.S12.Px4.p3.s1">
+The Bailey pair that implies the Rogers–Ramanujan identities §17.2(vi) is: <Math equation-number="17.12.6" mode="display" xml:id="C17.S12.E6">\alpha_{n}=\frac{\left(a;q\right)_{n}(1-aq^{2n})(-1)^{n}q^{n(3n-1)/2}a^{n}}{ \left(q;q\right)_{n}(1-a)},\beta_{n}=\frac{1}{\left(q;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C17.S12.Px4.p4.s1">
+The Bailey pair and Bailey chain concepts have been extended considerably.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C17.S12.Px4.p4.s2">
+SeeAndrews (2000, 2001), Andrews and Berkovich (1998),Andrews et al. (1999), Milne and Lilly (1992), Spiridonov (2002), and Warnaar (1998).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

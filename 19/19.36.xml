@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S36">
+<title>Methods of Computation</title>        
+  
+<subsection xml:id="C19.S36.SS1">
+<title>Duplication Method</title>         
+<para xml:id="C19.S36.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S36.SS1.p1.s1">
+Numerical differences between the variables of a symmetric integral can be reduced in magnitude by successive factors of 4 by repeated applications of the duplication theorem, as shown by (19.26.18).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S36.SS1.p1.s2">
+When the differences are moderately small, the iteration is stopped, the elementary symmetric functions of certain differences are calculated, and a polynomial consisting of a fixed number of terms of the sum in (19.19.7) is evaluated. For <Math mode="inline" xml:id="C19.S36.SS1.p1.m1">R_{F}</Math> the polynomial of degree 7, for example, is <Math equation-number="19.36.1" mode="display" xml:id="C19.S36.E1">1-\tfrac{1}{10}E_{2}+\tfrac{1}{14}E_{3}+\tfrac{1}{24}E_{2}^{2}-\tfrac{3}{44}E_ {2}E_{3}-\tfrac{5}{208}E_{2}^{3}+\tfrac{3}{104}E_{3}^{2}+\tfrac{1}{16}E_{2}^{2 }E_{3},</Math> where the elementary symmetric functions <Math mode="inline" xml:id="C19.S36.SS1.p1.m2">E_{s}</Math> are defined by (19.19.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S36.SS1.p1.s3">
+If (19.36.1) is used instead of its first five terms, then the factor <Math mode="inline" xml:id="C19.S36.SS1.p1.m3">(3r)^{-1/6}</Math> in Carlson (1995, (2.2)) is changed to <Math mode="inline" xml:id="C19.S36.SS1.p1.m4">(3r)^{-1/8}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS1.p2">
+
+</para>
+ 
+<para xml:id="C19.S36.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C19.S36.SS1.p3.s1">
+For both <Math mode="inline" xml:id="C19.S36.SS1.p3.m1">R_{D}</Math> and <Math mode="inline" xml:id="C19.S36.SS1.p3.m2">R_{J}</Math> the factor <Math mode="inline" xml:id="C19.S36.SS1.p3.m3">(r/4)^{-1/6}</Math> inCarlson (1995, (2.18)) is changed to <Math mode="inline" xml:id="C19.S36.SS1.p3.m4">(r/5)^{-1/8}</Math> when the following polynomial of degree 7 (the same for both) is used instead of its first seven terms: <Math equation-number="19.36.2" mode="display" xml:id="C19.S36.E2">1-\tfrac{3}{14}E_{2}+\tfrac{1}{6}E_{3}+\tfrac{9}{88}E_{2}^{2}-\tfrac{3}{22}E_{ 4}-\tfrac{9}{52}E_{2}E_{3}+\tfrac{3}{26}E_{5}-\tfrac{1}{16}E_{2}^{3}+\tfrac{3} {40}E_{3}^{2}+\tfrac{3}{20}E_{2}E_{4}+\tfrac{45}{272}E_{2}^{2}E_{3}-\tfrac{9}{ 68}(E_{3}E_{4}+E_{2}E_{5})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C19.S36.SS1.p3.s2">
+Polynomials of still higher degree can be obtained from (19.19.5) and (19.19.7).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S36.SS1.p4.s1">
+The duplication method starts with computation of <Math mode="inline" xml:id="C19.S36.SS1.p4.m1">\lambda_{0}=\sqrt{x}\sqrt{y}+\sqrt{y}\sqrt{z}+\sqrt{z}\sqrt{x}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C19.S36.SS1.p4.s2">
+The reductions in §19.29(i) represent <Math mode="inline" xml:id="C19.S36.SS1.p4.m2">x,y,z</Math> as squares, for example <Math mode="inline" xml:id="C19.S36.SS1.p4.m3">x=U_{12}^{2}</Math> in (19.29.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C19.S36.SS1.p4.s3">
+Because <Math mode="inline" xml:id="C19.S36.SS1.p4.m4">U_{12}</Math> may be real and negative, or even complex, care is needed to ensure <Math mode="inline" xml:id="C19.S36.SS1.p4.m5">\sqrt{x}=U_{12}</Math> , and similarly for <Math mode="inline" xml:id="C19.S36.SS1.p4.m6">y</Math> and <Math mode="inline" xml:id="C19.S36.SS1.p4.m7">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C19.S36.SS1.p4.s4">
+This precaution is needed only for <Math mode="inline" xml:id="C19.S36.SS1.p4.m8">\lambda_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C19.S36.SS1.p4.s5">
+Alternatively, the first duplication is done analytically as inCarlson and FitzSimons (2000), where further information can be found.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C19.S36.Px1">
+<title>Example</title>   
+<para xml:id="C19.S36.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C19.S36.Px1.p1.s1">
+Three applications of (19.26.18) yield <Math equation-number="19.36.3" mode="display" xml:id="C19.S36.E3">R_{F}\left(1,2,4\right)=R_{F}\left(z_{1},z_{2},z_{3}\right),</Math> where, in the notation of (19.19.7) with <Math mode="inline" xml:id="C19.S36.Px1.p1.m1">a=-\frac{1}{2}</Math> and <Math mode="inline" xml:id="C19.S36.Px1.p1.m2">n=3</Math> , <Math equation-number="19.36.4" mode="display" xml:id="C19.S36.E4">\begin{aligned} \displaystyle z_{1}&amp;\displaystyle=2.10985\;99098\;8,\\ \displaystyle z_{3}&amp;\displaystyle=2.15673\;49098\;8,\\ \displaystyle Z_{1}&amp;\displaystyle=0.00977\;77253\;5,\end{aligned}\quad\begin{ aligned} \displaystyle z_{2}&amp;\displaystyle=2.12548\;49098\;8,\\ \displaystyle A&amp;\displaystyle=2.13069\;32432\;1,\\ \displaystyle Z_{2}&amp;\displaystyle=0.00244\;44313\;4,\end{aligned}\\ {Z_{3}=-Z_{1}-Z_{2}=-0.01222\;21566\;9,}\\ {E_{2}=\Sci{-1.25480\;14}{-4},\quad E_{3}=\Sci{-2.9212}{-7}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C19.S36.Px1.p1.s2">
+} The first five terms of (19.36.1) suffice for <Math equation-number="19.36.5" mode="display" xml:id="C19.S36.E5">R_{F}\left(1,2,4\right)=0.68508\;58166\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S36.Px1.p2.s1">
+All cases of <Math mode="inline" xml:id="C19.S36.Px1.p2.m1">R_{F}</Math> , <Math mode="inline" xml:id="C19.S36.Px1.p2.m2">R_{C}</Math> , <Math mode="inline" xml:id="C19.S36.Px1.p2.m3">R_{J}</Math> , and <Math mode="inline" xml:id="C19.S36.Px1.p2.m4">R_{D}</Math> are computed by essentially the same procedure (after transforming Cauchy principal values by means of (19.20.14) and (19.2.20)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C19.S36.Px1.p2.s2">
+Complex values of the variables are allowed, with some restrictions in the case of <Math mode="inline" xml:id="C19.S36.Px1.p2.m5">R_{J}</Math> that are sufficient but not always necessary.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C19.S36.Px1.p2.s3">
+The computation is slowest for complete cases.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C19.S36.Px1.p2.s4">
+For details see Carlson (1995, 2002) and Carlson and FitzSimons (2000).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C19.S36.Px1.p2.s5">
+In the Appendix of the last reference it is shown how to compute <Math mode="inline" xml:id="C19.S36.Px1.p2.m6">R_{J}</Math> without computing <Math mode="inline" xml:id="C19.S36.Px1.p2.m7">R_{C}</Math> more than once.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="18" xml:id="C19.S36.Px1.p2.s6">
+Because of cancellations in (19.26.21) it is advisable to compute <Math mode="inline" xml:id="C19.S36.Px1.p2.m8">R_{G}</Math> from <Math mode="inline" xml:id="C19.S36.Px1.p2.m9">R_{F}</Math> and <Math mode="inline" xml:id="C19.S36.Px1.p2.m10">R_{D}</Math> by (19.21.10) or else to use §19.36(ii).
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S36.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C19.S36.Px1.p3.s1">
+Legendre’s integrals can be computed from symmetric integrals by using the relations in §19.25(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C19.S36.Px1.p3.s2">
+Note the remark following (19.25.11).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C19.S36.Px1.p3.s3">
+If (19.25.9) is used when <Math mode="inline" xml:id="C19.S36.Px1.p3.m1">0\leq k^{2}\leq 1</Math> , cancellations may lead to loss of significant figures when <Math mode="inline" xml:id="C19.S36.Px1.p3.m2">k^{2}</Math> is close to 1 and <Math mode="inline" xml:id="C19.S36.Px1.p3.m3">\phi&gt;\pi/4</Math> , as shown by Reinsch and Raab (2000).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C19.S36.Px1.p3.s4">
+The cancellations can be eliminated, however, by using (19.25.10).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C19.S36.Px1.p4.s1">
+Accurate values of <Math mode="inline" xml:id="C19.S36.Px1.p4.m1">F\left(\phi,k\right)-E\left(\phi,k\right)</Math> for <Math mode="inline" xml:id="C19.S36.Px1.p4.m2">k^{2}</Math> near 0 can be obtained from <Math mode="inline" xml:id="C19.S36.Px1.p4.m3">R_{D}</Math> by (19.2.6) and(19.25.13).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S36.SS2">
+<title>Quadratic Transformations</title>         
+<para xml:id="C19.S36.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C19.S36.SS2.p1.s1">
+Complete cases of Legendre’s integrals and symmetric integrals can be computed with quadratic convergence by the AGM method (including Bartky transformations), using the equations in §19.8(i) and §19.22(ii), respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C19.S36.SS2.p2.s1">
+The incomplete integrals <Math mode="inline" xml:id="C19.S36.SS2.p2.m1">R_{F}\left(x,y,z\right)</Math> and <Math mode="inline" xml:id="C19.S36.SS2.p2.m2">R_{G}\left(x,y,z\right)</Math> can be computed by successive transformations in which two of the three variables converge quadratically to a common value and the integrals reduce to <Math mode="inline" xml:id="C19.S36.SS2.p2.m3">R_{C}</Math> , accompanied by two quadratically convergent series in the case of <Math mode="inline" xml:id="C19.S36.SS2.p2.m4">R_{G}</Math> ; compare Carlson (1965, §§5,6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C19.S36.SS2.p2.s2">
+(In Legendre’s notation the modulus <Math mode="inline" xml:id="C19.S36.SS2.p2.m5">k</Math> approaches 0 or 1.) Let <Math equation-number="19.36.6" mode="display" xml:id="C19.S36.E6">2a_{n+1}=a_{n}+\sqrt{a_{n}^{2}-c_{n}^{2}},2c_{n+1}=a_{n}-\sqrt{a_{n}^{2}-c_{n}^{2}}=c_{n}^{2}/(2a_{n+1}),2t_{n+1}=t_{n}+\sqrt{t_{n}^{2}+\theta c_{n}^{2}},</Math> where <Math mode="inline" xml:id="C19.S36.SS2.p2.m6">n=0,1,2,\dots</Math> , and <Math equation-number="19.36.7" mode="display" xml:id="C19.S36.E7">0&lt;c_{0}&lt;a_{0},t_{0}\geq 0,t_{0}^{2}+\theta a_{0}^{2}\geq 0,\theta=\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C19.S36.SS2.p2.s3">
+Then (19.22.18)implies that <Math equation-number="19.36.8" mode="display" xml:id="C19.S36.E8">R_{F}\left(t_{n}^{2},t_{n}^{2}+\theta c_{n}^{2},t_{n}^{2}+\theta a_{n}^{2}\right)</Math> is independent of <Math mode="inline" xml:id="C19.S36.SS2.p2.m7">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C19.S36.SS2.p2.s4">
+As <Math mode="inline" xml:id="C19.S36.SS2.p2.m8">n\to\infty</Math> , <Math mode="inline" xml:id="C19.S36.SS2.p2.m9">c_{n}</Math> , <Math mode="inline" xml:id="C19.S36.SS2.p2.m10">a_{n}</Math> , and <Math mode="inline" xml:id="C19.S36.SS2.p2.m11">t_{n}</Math> converge quadratically to limits <Math mode="inline" xml:id="C19.S36.SS2.p2.m12">0</Math> , <Math mode="inline" xml:id="C19.S36.SS2.p2.m13">M</Math> , and <Math mode="inline" xml:id="C19.S36.SS2.p2.m14">T</Math> , respectively; hence <Math equation-number="19.36.9" mode="display" xml:id="C19.S36.E9">R_{F}\left(t_{0}^{2},t_{0}^{2}+\theta c_{0}^{2},t_{0}^{2}+\theta a_{0}^{2} \right)=R_{F}\left(T^{2},T^{2},T^{2}+\theta M^{2}\right)=R_{C}\left(T^{2}+ \theta M^{2},T^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C19.S36.SS2.p2.s5">
+If <Math mode="inline" xml:id="C19.S36.SS2.p2.m15">t_{0}=a_{0}</Math> and <Math mode="inline" xml:id="C19.S36.SS2.p2.m16">\theta=-1</Math> , so that <Math mode="inline" xml:id="C19.S36.SS2.p2.m17">t_{n}=a_{n}</Math> , then this procedure reduces to the AGM method for the complete integral.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C19.S36.SS2.p3.s1">
+The step from <Math mode="inline" xml:id="C19.S36.SS2.p3.m1">n</Math> to <Math mode="inline" xml:id="C19.S36.SS2.p3.m2">n+1</Math> is an ascending Landen transformation if <Math mode="inline" xml:id="C19.S36.SS2.p3.m3">\theta=1</Math> (leading ultimately to a hyperbolic case of <Math mode="inline" xml:id="C19.S36.SS2.p3.m4">R_{C}</Math> ) or a descending Gauss transformation if <Math mode="inline" xml:id="C19.S36.SS2.p3.m5">\theta=-1</Math> (leading to a circular case of <Math mode="inline" xml:id="C19.S36.SS2.p3.m6">R_{C}</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C19.S36.SS2.p3.s2">
+If <Math mode="inline" xml:id="C19.S36.SS2.p3.m7">x</Math> , <Math mode="inline" xml:id="C19.S36.SS2.p3.m8">y</Math> , and <Math mode="inline" xml:id="C19.S36.SS2.p3.m9">z</Math> are permuted so that <Math mode="inline" xml:id="C19.S36.SS2.p3.m10">0\leq x&lt;y&lt;z</Math> , then the computation of <Math mode="inline" xml:id="C19.S36.SS2.p3.m11">R_{F}\left(x,y,z\right)</Math> is fastest if we make <Math mode="inline" xml:id="C19.S36.SS2.p3.m12">c_{0}^{2}\leq a_{0}^{2}/2</Math> by choosing <Math mode="inline" xml:id="C19.S36.SS2.p3.m13">\theta=1</Math> when <Math mode="inline" xml:id="C19.S36.SS2.p3.m14">y&lt;(x+z)/2</Math> or <Math mode="inline" xml:id="C19.S36.SS2.p3.m15">\theta=-1</Math> when <Math mode="inline" xml:id="C19.S36.SS2.p3.m16">y\geq(x+z)/2</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C19.S36.Px2">
+<title>Example</title>   
+<para xml:id="C19.S36.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C19.S36.Px2.p1.s1">
+We compute <Math mode="inline" xml:id="C19.S36.Px2.p1.m1">R_{F}\left(1,2,4\right)</Math> by setting <Math mode="inline" xml:id="C19.S36.Px2.p1.m2">\theta=1</Math> , <Math mode="inline" xml:id="C19.S36.Px2.p1.m3">t_{0}=c_{0}=1</Math> , and <Math mode="inline" xml:id="C19.S36.Px2.p1.m4">a_{0}=\sqrt{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C19.S36.Px2.p1.s2">
+Then <Math equation-number="19.36.10" mode="display" xml:id="C19.S36.E10">c_{3}^{2}=\Sci{6.65}{-12},a_{3}^{2}=2.46209\;30206\;0=M^{2},t_{3}^{2}=1.46971\;53173\;1=T^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C19.S36.Px2.p1.s3">
+Hence <Math equation-number="19.36.11" mode="display" xml:id="C19.S36.E11">R_{F}\left(1,2,4\right)=R_{C}\left(T^{2}+M^{2},T^{2}\right)=0.68508\;58166</Math> , in agreement with (19.36.5).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="35" xml:id="C19.S36.Px2.p1.s4">
+Here <Math mode="inline" xml:id="C19.S36.Px2.p1.m5">R_{C}</Math> is computed either by the duplication algorithm in Carlson (1995) or via (19.2.19).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p2">
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C19.S36.Px2.p3.s1">
+To (19.36.6) add <Math equation-number="19.36.12" mode="display" xml:id="C19.S36.E12">h_{n}=\sqrt{t_{n}^{2}+\theta a_{n}^{2}}, if n=0,1,2,\dots, //// h_{n}=h_{n-1}\frac{t_{n}}{\sqrt{t_{n}^{2}+\theta c_{n}^{2}}}, if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C19.S36.Px2.p3.s2">
+Then <Math equation-number="19.36.13" mode="display" xml:id="C19.S36.E13">2\!R_{G}\left(t_{0}^{2},t_{0}^{2}+\theta c_{0}^{2},t_{0}^{2}+\theta a_{0}^{2} \right)=\left(t_{0}^{2}+\theta\sum_{m=0}^{\infty}2^{m-1}c_{m}^{2}\right)R_{C} \left(T^{2}+\theta M^{2},T^{2}\right)+h_{0}+\sum_{m=1}^{\infty}2^{m}(h_{m}-h_{ m-1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C19.S36.Px2.p3.s3">
+If the iteration of (19.36.6) and (19.36.12) is stopped when <Math mode="inline" xml:id="C19.S36.Px2.p3.m1">c_{s}&lt;\sqrt{r}t_{s}</Math> ( <Math mode="inline" xml:id="C19.S36.Px2.p3.m2">M</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p3.m3">T</Math> being approximated by <Math mode="inline" xml:id="C19.S36.Px2.p3.m4">a_{s}</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p3.m5">t_{s}</Math> , and the infinite series being truncated), then the relative error in <Math mode="inline" xml:id="C19.S36.Px2.p3.m6">R_{F}</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p3.m7">R_{G}</Math> is less than <Math mode="inline" xml:id="C19.S36.Px2.p3.m8">r</Math> if we neglect terms of order <Math mode="inline" xml:id="C19.S36.Px2.p3.m9">r^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C19.S36.Px2.p4.s1">
+ <Math mode="inline" xml:id="C19.S36.Px2.p4.m1">F\left(\phi,k\right)</Math> can be evaluated by using (19.25.5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C19.S36.Px2.p4.s2">
+<Math mode="inline" xml:id="C19.S36.Px2.p4.m2">E\left(\phi,k\right)</Math> can be evaluated by using (19.25.7), and <Math mode="inline" xml:id="C19.S36.Px2.p4.m3">R_{D}</Math> by using (19.21.10), but cancellations may become significant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C19.S36.Px2.p4.s3">
+Thompson (1997, pp. 499, 504) uses descending Landen transformations for both <Math mode="inline" xml:id="C19.S36.Px2.p4.m4">F\left(\phi,k\right)</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p4.m5">E\left(\phi,k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="42" xml:id="C19.S36.Px2.p4.s4">
+A summary for <Math mode="inline" xml:id="C19.S36.Px2.p4.m6">F\left(\phi,k\right)</Math> is given in Gautschi (1975, §3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="43" xml:id="C19.S36.Px2.p4.s5">
+For computation of <Math mode="inline" xml:id="C19.S36.Px2.p4.m7">K\left(k\right)</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p4.m8">E\left(k\right)</Math> with complex <Math mode="inline" xml:id="C19.S36.Px2.p4.m9">k</Math> see Fettis and Caslin (1969) and Morita (1978).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C19.S36.Px2.p5.s1">
+(19.22.20)reduces to <Math mode="inline" xml:id="C19.S36.Px2.p5.m1">0=0</Math> if <Math mode="inline" xml:id="C19.S36.Px2.p5.m2">p=x</Math> or <Math mode="inline" xml:id="C19.S36.Px2.p5.m3">p=y</Math> , and (19.22.19)reduces to <Math mode="inline" xml:id="C19.S36.Px2.p5.m4">0=0</Math> if <Math mode="inline" xml:id="C19.S36.Px2.p5.m5">z=x</Math> or <Math mode="inline" xml:id="C19.S36.Px2.p5.m6">z=y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C19.S36.Px2.p5.s2">
+Near these points there will be loss of significant figures in the computation of <Math mode="inline" xml:id="C19.S36.Px2.p5.m7">R_{J}</Math> or <Math mode="inline" xml:id="C19.S36.Px2.p5.m8">R_{D}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C19.S36.Px2.p6.s1">
+Descending Gauss transformations of <Math mode="inline" xml:id="C19.S36.Px2.p6.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math> (see (19.8.20)) are used in Fettis (1965) to compute a large table (see §19.37(iii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C19.S36.Px2.p6.s2">
+This method loses significant figures in <Math mode="inline" xml:id="C19.S36.Px2.p6.m2">\rho</Math> if <Math mode="inline" xml:id="C19.S36.Px2.p6.m3">\alpha^{2}</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p6.m4">k^{2}</Math> are nearly equal unless they are given exact values—as they can be for tables.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C19.S36.Px2.p6.s3">
+If <Math mode="inline" xml:id="C19.S36.Px2.p6.m5">\alpha^{2}=k^{2}</Math> , then the method fails, but the function can be expressed by (19.6.13) in terms of <Math mode="inline" xml:id="C19.S36.Px2.p6.m6">E\left(\phi,k\right)</Math> , for which Neuman (1969b) uses ascending Landen transformations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C19.S36.Px2.p7.s1">
+Computation of Legendre’s integrals of all three kinds by quadratic transformation is described byCazenave (1969, pp. 128–159, 208–230).
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S36.Px2.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C19.S36.Px2.p8.s1">
+Quadratic transformations can be applied to compute Bulirsch’s integrals (§19.2(iii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C19.S36.Px2.p8.s2">
+The function <Math mode="inline" xml:id="C19.S36.Px2.p8.m1">\mathrm{cel}\left(k_{c},p,a,b\right)</Math> is computed by successive Bartky transformations (Bulirsch and Stoer (1968),Bulirsch (1969b)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C19.S36.Px2.p8.s3">
+The function <Math mode="inline" xml:id="C19.S36.Px2.p8.m2">\mathrm{el2}\left(x,k_{c},a,b\right)</Math> is computed by descending Landen transformations if <Math mode="inline" xml:id="C19.S36.Px2.p8.m3">x</Math> is real, or by descending Gauss transformations if <Math mode="inline" xml:id="C19.S36.Px2.p8.m4">x</Math> is complex (Bulirsch (1965b)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="53" xml:id="C19.S36.Px2.p8.s4">
+Remedies for cancellation when <Math mode="inline" xml:id="C19.S36.Px2.p8.m5">x</Math> is real and near 0 are supplied inMidy (1975).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="54" xml:id="C19.S36.Px2.p8.s5">
+See also Bulirsch (1969a) andReinsch and Raab (2000).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.Px2.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C19.S36.Px2.p9.s1">
+Bulirsch (1969a, b) extend Bartky’s transformation to <Math mode="inline" xml:id="C19.S36.Px2.p9.m1">\mathrm{el3}\left(x,k_{c},p\right)</Math> by expressing it in terms of the first incomplete integral, a complete integral of the third kind, and a more complicated integral to which Bartky’s method can be applied. The cases <Math mode="inline" xml:id="C19.S36.Px2.p9.m2">k_{c}^{2}/2\leq p&lt;\infty</Math> and <Math mode="inline" xml:id="C19.S36.Px2.p9.m3">-\infty&lt;p&lt;k_{c}^{2}/2</Math> require different treatment for numerical purposes, and again precautions are needed to avoid cancellations.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S36.SS3">
+<title>Via Theta Functions</title>        
+ 
+<para xml:id="C19.S36.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C19.S36.SS3.p1.s1">
+Lee (1990) compares the use of theta functions for computation of <Math mode="inline" xml:id="C19.S36.SS3.p1.m1">K\left(k\right)</Math> , <Math mode="inline" xml:id="C19.S36.SS3.p1.m2">E\left(k\right)</Math> , and <Math mode="inline" xml:id="C19.S36.SS3.p1.m3">K\left(k\right)-E\left(k\right)</Math> , <Math mode="inline" xml:id="C19.S36.SS3.p1.m4">0\leq k^{2}\leq 1</Math> , with four other methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C19.S36.SS3.p1.s2">
+Also, see Todd (1975) for a special case of <Math mode="inline" xml:id="C19.S36.SS3.p1.m5">K\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="58" xml:id="C19.S36.SS3.p1.s3">
+For computation of Legendre’s integral of the third kind, seeAbramowitz and Stegun (1964, §§17.7 and 17.8, Examples 15, 17, 19, and 20).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="59" xml:id="C19.S36.SS3.p1.s4">
+For integrals of the second and third kinds seeLawden (1989, §§3.4–3.7).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S36.SS4">
+<title>Other Methods</title>         
+<para xml:id="C19.S36.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C19.S36.SS4.p1.s1">
+Numerical quadrature is slower than most methods for the standard integrals but can be useful for elliptic integrals that have complicated representations in terms of standard integrals.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C19.S36.SS4.p1.s2">
+See §3.5.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C19.S36.SS4.p2.s1">
+For series expansions of Legendre’s integrals see §19.5.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C19.S36.SS4.p2.s2">
+Faster convergence of power series for <Math mode="inline" xml:id="C19.S36.SS4.p2.m1">K\left(k\right)</Math> and <Math mode="inline" xml:id="C19.S36.SS4.p2.m2">E\left(k\right)</Math> can be achieved by using (19.5.1) and (19.5.2) in the right-hand sides of (19.8.12).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="64" xml:id="C19.S36.SS4.p2.s3">
+A three-part computational procedurefor <Math mode="inline" xml:id="C19.S36.SS4.p2.m3">\Pi\left(\phi,\alpha^{2},k\right)</Math> is described by Franke (1965) for <Math mode="inline" xml:id="C19.S36.SS4.p2.m4">\alpha^{2}&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C19.S36.SS4.p3.s1">
+When the values of complete integrals are known, addition theorems with <Math mode="inline" xml:id="C19.S36.SS4.p3.m1">\psi=\pi/2</Math> (§19.11(ii)) ease the computation of functions such as <Math mode="inline" xml:id="C19.S36.SS4.p3.m2">F\left(\phi,k\right)</Math> when <Math mode="inline" xml:id="C19.S36.SS4.p3.m3">\frac{1}{2}\pi-\phi</Math> is small and positive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C19.S36.SS4.p3.s2">
+Similarly, §19.26(ii) eases the computation of functions such as <Math mode="inline" xml:id="C19.S36.SS4.p3.m4">R_{F}\left(x,y,z\right)</Math> when <Math mode="inline" xml:id="C19.S36.SS4.p3.m5">x</Math> ( <Math mode="inline" xml:id="C19.S36.SS4.p3.m6">&gt;0</Math> ) is small compared with <Math mode="inline" xml:id="C19.S36.SS4.p3.m7">\min(y,z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C19.S36.SS4.p3.s3">
+These special theorems are also useful for checking computer codes.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S36.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C19.S36.SS4.p4.s1">
+For fast methods for computing the incomplete elliptic integral of the first kind see Karp and Sitnik (2007) and Fukushima (2010).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

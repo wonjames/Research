@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S10">
+<title>Other Series Expansions</title>         
+<subsection xml:id="C6.S10.SS1">
+<title>Inverse Factorial Series</title>        
+  
+<para xml:id="C6.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S10.SS1.p1.s1">
+ <Math equation-number="6.10.1" mode="display" xml:id="C6.S10.E1">E_{1}\left(z\right)=e^{-z}\left(\frac{c_{0}}{z}+\frac{c_{1}}{z(z+1)}+\frac{2!c _{2}}{z(z+1)(z+2)}+\frac{3!c_{3}}{z(z+1)(z+2)(z+3)}+\cdots\right), if \Re z&gt;0,</Math> where <Math equation-number="6.10.2" mode="display" xml:id="C6.S10.E2">c_{0}=1,c_{1}=-1,c_{2}=\tfrac{1}{2},c_{3}=-\tfrac{1}{3},c_{4}=\tfrac{1}{6},</Math> and <Math equation-number="6.10.3" mode="display" xml:id="C6.S10.E3">c_{k}=-\sum_{j=0}^{k-1}\frac{c_{j}}{k-j}, if k\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C6.S10.SS1.p2.s1">
+For a more general result (incomplete gamma function), and also for a result for the logarithmic integral, seeNielsen (1906a, p. 283: Formula (3) is incorrect).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S10.SS2">
+<title>Expansions in Series of Spherical Bessel Functions</title>            
+<para xml:id="C6.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C6.S10.SS2.p1.s1">
+For the notation see §10.47(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C6.S10.SS2.p1.s2">
+<Math equation-number="6.10.4" mode="display" xml:id="C6.S10.E4">\mathrm{Si}\left(z\right)=z\sum_{n=0}^{\infty}\left(\mathsf{j}_{n}\left(\tfrac {1}{2}z\right)\right)^{2},</Math> , <Math equation-number="6.10.5" mode="display" xml:id="C6.S10.E5">\mathrm{Cin}\left(z\right)=\sum_{n=1}^{\infty}a_{n}\left(\mathsf{j}_{n}\left( \tfrac{1}{2}z\right)\right)^{2},</Math> <Math equation-number="6.10.6" mode="display" xml:id="C6.S10.E6">\mathrm{Ei}\left(x\right)=\gamma+\ln\left|x\right|+\sum_{n=0}^{\infty}(-1)^{n} (x-a_{n})\left({\mathsf{i}^{(1)}_{n}}\left(\tfrac{1}{2}x\right)\right)^{2}, if x\neq 0,</Math> where <Math equation-number="6.10.7" mode="display" xml:id="C6.S10.E7">a_{n}=(2n+1)\left(1-(-1)^{n}+\psi\left(n+1\right)-\psi\left(1\right)\right),</Math> and <Math mode="inline" xml:id="C6.S10.SS2.p1.m1">\psi</Math> denotes the logarithmic derivative of the gamma function (§5.2(i)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C6.S10.SS2.p1.s3">
+<Math equation-number="6.10.8" mode="display" xml:id="C6.S10.E8">\mathrm{Ein}\left(z\right)=ze^{-z/2}\left({\mathsf{i}^{(1)}_{0}}\left(\tfrac{1 }{2}z\right)+\sum_{n=1}^{\infty}\dfrac{2n+1}{n(n+1)}{\mathsf{i}^{(1)}_{n}} \left(\tfrac{1}{2}z\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C6.S10.SS2.p2.s1">
+For (6.10.4)–(6.10.8) and further results seeHarris (2000) and Luke (1969b, pp. 56–57).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C6.S10.SS2.p2.s2">
+An expansion for <Math mode="inline" xml:id="C6.S10.SS2.p2.m1">E_{1}\left(z\right)</Math> can be obtained by combining (6.2.4) and (6.10.8).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

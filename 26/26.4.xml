@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S4">
+<title>Lattice Paths: Multinomial Coefficients and Set Partitions</title>        
+ 
+<subsection xml:id="C26.S4.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C26.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S4.SS1.p1.s1">
+ <Math mode="inline" xml:id="C26.S4.SS1.p1.m1">\genfrac{(}{)}{0.0pt}{}{n}{n_{1},n_{2},\ldots,n_{k}</Math> } is the number of ways of placing <Math mode="inline" xml:id="C26.S4.SS1.p1.m3">n=n_{1}+n_{2}+\cdots+n_{k}</Math> distinct objects into <Math mode="inline" xml:id="C26.S4.SS1.p1.m4">k</Math> labeled boxes so that there are <Math mode="inline" xml:id="C26.S4.SS1.p1.m5">n_{j}</Math> objects in the <Math mode="inline" xml:id="C26.S4.SS1.p1.m6">j</Math> th box.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S4.SS1.p1.s2">
+It is also the number of <Math mode="inline" xml:id="C26.S4.SS1.p1.m7">k</Math> -dimensional lattice paths from <Math mode="inline" xml:id="C26.S4.SS1.p1.m8">(0,0,\ldots,0)</Math> to <Math mode="inline" xml:id="C26.S4.SS1.p1.m9">(n_{1},n_{2},\ldots,n_{k})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S4.SS1.p1.s3">
+For <Math mode="inline" xml:id="C26.S4.SS1.p1.m10">k=0,1</Math> , the multinomial coefficient is defined to be <Math mode="inline" xml:id="C26.S4.SS1.p1.m11">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C26.S4.SS1.p1.s4">
+For <Math mode="inline" xml:id="C26.S4.SS1.p1.m12">k=2</Math> <Math equation-number="26.4.1" mode="display" xml:id="C26.S4.E1">\genfrac{(}{)}{0.0pt}{}{n_{1}+n_{2}}{n_{1},n_{2}}=\genfrac{(}{)}{0.0pt}{}{n_{1 }+n_{2}}{n_{1}}=\genfrac{(}{)}{0.0pt}{}{n_{1}+n_{2}}{n_{2}}</Math> , and in general, <Math equation-number="26.4.2" mode="display" xml:id="C26.S4.E2">\genfrac{(}{)}{0.0pt}{}{n_{1}+n_{2}+\cdots+n_{k}}{n_{1},n_{2},\ldots,n_{k}}= \frac{(n_{1}+n_{2}+\cdots+n_{k})!}{n_{1}!\,n_{2}!\,\cdots\,n_{k}!}=\prod_{j=1} ^{k-1}\genfrac{(}{)}{0.0pt}{}{n_{j}+n_{j+1}+\cdots+n_{k}}{n_{j}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C26.S4.SS1.p2.s1">
+Table 26.4.1 gives numerical values of multinomials and partitions <Math mode="inline" xml:id="C26.S4.SS1.p2.m1">\lambda,M_{1},M_{2},M_{3}</Math> for <Math mode="inline" xml:id="C26.S4.SS1.p2.m2">1\leq m\leq n\leq 5</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C26.S4.SS1.p2.s2">
+These are given by the following equations in which <Math mode="inline" xml:id="C26.S4.SS1.p2.m3">a_{1},a_{2},\ldots,a_{n}</Math> are nonnegative integers such that <Math equation-number="26.4.3" mode="display" xml:id="C26.S4.E3">n=a_{1}+2a_{2}+\cdots+na_{n},</Math> <Math equation-number="26.4.4" mode="display" xml:id="C26.S4.E4">m=a_{1}+a_{2}+\cdots+a_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C26.S4.SS1.p2.s3">
+<Math mode="inline" xml:id="C26.S4.SS1.p2.m4">\lambda</Math> is a partition of <Math mode="inline" xml:id="C26.S4.SS1.p2.m5">n</Math> : <Math equation-number="26.4.5" mode="display" xml:id="C26.S4.E5">\lambda=1^{a_{1}},2^{a_{2}},\dots,n^{a_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C26.S4.SS1.p2.s4">
+<Math mode="inline" xml:id="C26.S4.SS1.p2.m6">M_{1}</Math> is the multinominal coefficient (26.4.2):
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C26.S4.SS1.p2.s5">
+<Math equation-number="26.4.6" mode="display" xml:id="C26.S4.E6">M_{1}=\begin{pmatrix}n\\ \overbrace{1,\ldots,1}^{a_{1}},\ldots,\overbrace{n,\ldots,n}^{a_{n}}\end{ pmatrix}=\frac{n!}{(1!)^{a_{1}}(2!)^{a_{2}}\cdots(n!)^{a_{n}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C26.S4.SS1.p2.s6">
+<Math mode="inline" xml:id="C26.S4.SS1.p2.m7">M_{2}</Math> is the number of permutations of <Math mode="inline" xml:id="C26.S4.SS1.p2.m8">\{1,2,\ldots,n\}</Math> with <Math mode="inline" xml:id="C26.S4.SS1.p2.m9">a_{1}</Math> cycles of length 1, <Math mode="inline" xml:id="C26.S4.SS1.p2.m10">a_{2}</Math> cycles of length 2, <Math mode="inline" xml:id="C26.S4.SS1.p2.m11">\ldots</Math> , and <Math mode="inline" xml:id="C26.S4.SS1.p2.m12">a_{n}</Math> cycles of length <Math mode="inline" xml:id="C26.S4.SS1.p2.m13">n</Math> : <Math equation-number="26.4.7" mode="display" xml:id="C26.S4.E7">M_{2}=\frac{n!}{1^{a_{1}}(a_{1}!)\,2^{a_{2}}(a_{2}!)\,\cdots\,n^{a_{n}}(a_{n}! )}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C26.S4.SS1.p2.s7">
+(The empty set is considered to have one permutation consisting of no cycles.)
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" xml:id="C26.S4.SS1.p2.s8">
+<Math mode="inline" xml:id="C26.S4.SS1.p2.m14">M_{3}</Math> is the number of set partitions of <Math mode="inline" xml:id="C26.S4.SS1.p2.m15">\{1,2,\ldots,n\}</Math> with <Math mode="inline" xml:id="C26.S4.SS1.p2.m16">a_{1}</Math> subsets of size 1, <Math mode="inline" xml:id="C26.S4.SS1.p2.m17">a_{2}</Math> subsets of size 2, <Math mode="inline" xml:id="C26.S4.SS1.p2.m18">\ldots</Math> , and <Math mode="inline" xml:id="C26.S4.SS1.p2.m19">a_{n}</Math> subsets of size <Math mode="inline" xml:id="C26.S4.SS1.p2.m20">n</Math> : <Math equation-number="26.4.8" mode="display" xml:id="C26.S4.E8">M_{3}=\frac{n!}{(1!)^{a_{1}}(a_{1}!)\,(2!)^{a_{2}}(a_{2}!)\,\cdots\,(n!)^{a_{n }}(a_{n}!)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="13" xml:id="C26.S4.SS1.p2.s9">
+For each <Math mode="inline" xml:id="C26.S4.SS1.p2.m21">n</Math> all possible values of <Math mode="inline" xml:id="C26.S4.SS1.p2.m22">a_{1},a_{2},\ldots,a_{n}</Math> are covered.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="14" xml:id="C26.S4.T1.s1">
+Table 26.4.1: Multinomials and partitions.
+</sentence> 
+ 
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="1" xml:id="C26.S4.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="2" xml:id="C26.S4.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m2">m</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="3" xml:id="C26.S4.T1.t1.s3">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m3">\lambda</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="4" xml:id="C26.S4.T1.t1.s4">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m4">M_{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="5" xml:id="C26.S4.T1.t1.s5">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m5">M_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="6" xml:id="C26.S4.T1.t1.s6">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r1.m6">M_{3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="7" xml:id="C26.S4.T1.t1.s7">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m1">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="8" xml:id="C26.S4.T1.t1.s8">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="9" xml:id="C26.S4.T1.t1.s9">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m3">1^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="10" xml:id="C26.S4.T1.t1.s10">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="11" xml:id="C26.S4.T1.t1.s11">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="12" xml:id="C26.S4.T1.t1.s12">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r2.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="13" xml:id="C26.S4.T1.t1.s13">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="14" xml:id="C26.S4.T1.t1.s14">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="15" xml:id="C26.S4.T1.t1.s15">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m3">2^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="16" xml:id="C26.S4.T1.t1.s16">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="17" xml:id="C26.S4.T1.t1.s17">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="18" xml:id="C26.S4.T1.t1.s18">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r3.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="19" xml:id="C26.S4.T1.t1.s19">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="20" xml:id="C26.S4.T1.t1.s20">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="21" xml:id="C26.S4.T1.t1.s21">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m3">1^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="22" xml:id="C26.S4.T1.t1.s22">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m4">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="23" xml:id="C26.S4.T1.t1.s23">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="24" xml:id="C26.S4.T1.t1.s24">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r4.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="25" xml:id="C26.S4.T1.t1.s25">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="26" xml:id="C26.S4.T1.t1.s26">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="27" xml:id="C26.S4.T1.t1.s27">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m3">3^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="28" xml:id="C26.S4.T1.t1.s28">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="29" xml:id="C26.S4.T1.t1.s29">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m5">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="30" xml:id="C26.S4.T1.t1.s30">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r5.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="31" xml:id="C26.S4.T1.t1.s31">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="32" xml:id="C26.S4.T1.t1.s32">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="33" xml:id="C26.S4.T1.t1.s33">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m3">1^{1},2^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="34" xml:id="C26.S4.T1.t1.s34">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m4">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="35" xml:id="C26.S4.T1.t1.s35">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m5">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="36" xml:id="C26.S4.T1.t1.s36">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r6.m6">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="37" xml:id="C26.S4.T1.t1.s37">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="38" xml:id="C26.S4.T1.t1.s38">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m2">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="39" xml:id="C26.S4.T1.t1.s39">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m3">1^{3}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="40" xml:id="C26.S4.T1.t1.s40">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m4">6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="41" xml:id="C26.S4.T1.t1.s41">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="42" xml:id="C26.S4.T1.t1.s42">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r7.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="43" xml:id="C26.S4.T1.t1.s43">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="44" xml:id="C26.S4.T1.t1.s44">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="45" xml:id="C26.S4.T1.t1.s45">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m3">4^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="46" xml:id="C26.S4.T1.t1.s46">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="47" xml:id="C26.S4.T1.t1.s47">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m5">6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="48" xml:id="C26.S4.T1.t1.s48">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r8.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="49" xml:id="C26.S4.T1.t1.s49">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="50" xml:id="C26.S4.T1.t1.s50">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="51" xml:id="C26.S4.T1.t1.s51">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m3">1^{1},3^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="52" xml:id="C26.S4.T1.t1.s52">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m4">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="53" xml:id="C26.S4.T1.t1.s53">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m5">8</Math>
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="54" xml:id="C26.S4.T1.t1.s54">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r9.m6">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="55" xml:id="C26.S4.T1.t1.s55">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="56" xml:id="C26.S4.T1.t1.s56">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="57" xml:id="C26.S4.T1.t1.s57">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m3">2^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="58" xml:id="C26.S4.T1.t1.s58">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m4">6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="59" xml:id="C26.S4.T1.t1.s59">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m5">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="60" xml:id="C26.S4.T1.t1.s60">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r10.m6">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="61" xml:id="C26.S4.T1.t1.s61">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="62" xml:id="C26.S4.T1.t1.s62">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m2">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="63" xml:id="C26.S4.T1.t1.s63">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m3">1^{2},2^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="64" xml:id="C26.S4.T1.t1.s64">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m4">12</Math>
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="65" xml:id="C26.S4.T1.t1.s65">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m5">6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="66" xml:id="C26.S4.T1.t1.s66">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r11.m6">6</Math>
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="67" xml:id="C26.S4.T1.t1.s67">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="68" xml:id="C26.S4.T1.t1.s68">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m2">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="69" xml:id="C26.S4.T1.t1.s69">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m3">1^{4}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="70" xml:id="C26.S4.T1.t1.s70">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m4">24</Math>
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="71" xml:id="C26.S4.T1.t1.s71">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="72" xml:id="C26.S4.T1.t1.s72">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r12.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="73" xml:id="C26.S4.T1.t1.s73">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="74" xml:id="C26.S4.T1.t1.s74">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="75" xml:id="C26.S4.T1.t1.s75">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m3">5^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="76" xml:id="C26.S4.T1.t1.s76">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="77" xml:id="C26.S4.T1.t1.s77">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m5">24</Math>
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="78" xml:id="C26.S4.T1.t1.s78">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r13.m6">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="79" xml:id="C26.S4.T1.t1.s79">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="80" xml:id="C26.S4.T1.t1.s80">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="81" xml:id="C26.S4.T1.t1.s81">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m3">1^{1},4^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="96" sentence-num-in-table="82" xml:id="C26.S4.T1.t1.s82">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m4">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="97" sentence-num-in-table="83" xml:id="C26.S4.T1.t1.s83">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m5">30</Math>
+</sentence>
+
+<sentence sentence-num-in-section="98" sentence-num-in-table="84" xml:id="C26.S4.T1.t1.s84">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r14.m6">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="99" sentence-num-in-table="85" xml:id="C26.S4.T1.t1.s85">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="100" sentence-num-in-table="86" xml:id="C26.S4.T1.t1.s86">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="101" sentence-num-in-table="87" xml:id="C26.S4.T1.t1.s87">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m3">2^{1},3^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="88" xml:id="C26.S4.T1.t1.s88">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m4">10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="89" xml:id="C26.S4.T1.t1.s89">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m5">20</Math>
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="90" xml:id="C26.S4.T1.t1.s90">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r15.m6">10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="91" xml:id="C26.S4.T1.t1.s91">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="92" xml:id="C26.S4.T1.t1.s92">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m2">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="93" xml:id="C26.S4.T1.t1.s93">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m3">1^{2},3^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="94" xml:id="C26.S4.T1.t1.s94">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m4">20</Math>
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="95" xml:id="C26.S4.T1.t1.s95">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m5">20</Math>
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="96" xml:id="C26.S4.T1.t1.s96">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r16.m6">10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="97" xml:id="C26.S4.T1.t1.s97">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="98" xml:id="C26.S4.T1.t1.s98">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m2">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="99" xml:id="C26.S4.T1.t1.s99">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m3">1^{1},2^{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="100" xml:id="C26.S4.T1.t1.s100">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m4">30</Math>
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="101" xml:id="C26.S4.T1.t1.s101">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m5">15</Math>
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="102" xml:id="C26.S4.T1.t1.s102">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r17.m6">15</Math>
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="103" xml:id="C26.S4.T1.t1.s103">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="104" xml:id="C26.S4.T1.t1.s104">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m2">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="105" xml:id="C26.S4.T1.t1.s105">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m3">1^{3},2^{1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="106" xml:id="C26.S4.T1.t1.s106">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m4">60</Math>
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="107" xml:id="C26.S4.T1.t1.s107">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m5">10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="108" xml:id="C26.S4.T1.t1.s108">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r18.m6">10</Math>
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="109" xml:id="C26.S4.T1.t1.s109">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="110" xml:id="C26.S4.T1.t1.s110">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m2">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="111" xml:id="C26.S4.T1.t1.s111">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m3">1^{5}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="112" xml:id="C26.S4.T1.t1.s112">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m4">120</Math>
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="113" xml:id="C26.S4.T1.t1.s113">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m5">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="114" xml:id="C26.S4.T1.t1.s114">
+<Math mode="inline" xml:id="C26.S4.T1.t1.r19.m6">1</Math>
+</sentence>
+    
+</subsection>
+ 
+<subsection xml:id="C26.S4.SS2">
+<title>Generating Function</title>        
+  
+<para xml:id="C26.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C26.S4.SS2.p1.s1">
+ <Math equation-number="26.4.9" mode="display" xml:id="C26.S4.E9">(x_{1}+x_{2}+\cdots+x_{k})^{n}=\sum\genfrac{(}{)}{0.0pt}{}{n}{n_{1},n_{2}, \ldots,n_{k}}x_{1}^{n_{1}}x_{2}^{n_{2}}\cdots x_{k}^{n_{k}},</Math> where the summation is over all nonnegative integers <Math mode="inline" xml:id="C26.S4.SS2.p1.m1">n_{1},n_{2},\ldots,n_{k}</Math> such that <Math mode="inline" xml:id="C26.S4.SS2.p1.m2">n_{1}+n_{2}+\cdots+n_{k}=n</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S4.SS3">
+<title>Recurrence Relation</title>        
+  
+<para xml:id="C26.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C26.S4.SS3.p1.s1">
+ <Math equation-number="26.4.10" mode="display" xml:id="C26.S4.E10">\genfrac{(}{)}{0.0pt}{}{n_{1}+n_{2}+\cdots+n_{m}}{n_{1},n_{2},\ldots,n_{m}}= \sum_{k=1}^{m}\genfrac{(}{)}{0.0pt}{}{n_{1}+n_{2}+\cdots+n_{m}-1}{n_{1},n_{2}, \ldots,n_{k-1},n_{k}-1,n_{k+1},\ldots,n_{m}}, if n_{1},n_{2},\ldots,n_{m}\geq 1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

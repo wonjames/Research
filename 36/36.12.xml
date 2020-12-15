@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C36.S12">
+<title>Uniform Approximation of Integrals</title>        
+    
+<subsection xml:id="C36.S12.SS1">
+<title>General Theory for Cuspoids</title>        
+  
+<para xml:id="C36.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C36.S12.SS1.p1.s1">
+The canonical integrals (36.2.4) provide a basis for uniform asymptotic approximations of oscillatory integrals.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C36.S12.SS1.p1.s2">
+In the cuspoid case (one integration variable) <Math equation-number="36.12.1" mode="display" xml:id="C36.S12.E1">I(\mathbf{y},k)=\int_{-\infty}^{\infty}\exp\left(ikf(u;\mathbf{y})\right)g(u, \mathbf{y})\mathrm{d}u,</Math> where <Math mode="inline" xml:id="C36.S12.SS1.p1.m1">k</Math> is a large real parameter and <Math mode="inline" xml:id="C36.S12.SS1.p1.m2">\mathbf{y}=\{y_{1},y_{2},\dots\}</Math> is a set of additional (nonasymptotic) parameters.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C36.S12.SS1.p1.s3">
+As <Math mode="inline" xml:id="C36.S12.SS1.p1.m3">\mathbf{y}</Math> varies as many as <Math mode="inline" xml:id="C36.S12.SS1.p1.m4">K+1</Math> (real or complex) critical points of the smooth phase function <Math mode="inline" xml:id="C36.S12.SS1.p1.m5">f</Math> can coalesce in clusters of two or more.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C36.S12.SS1.p1.s4">
+The function <Math mode="inline" xml:id="C36.S12.SS1.p1.m6">g</Math> has a smooth amplitude.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C36.S12.SS1.p1.s5">
+Also, <Math mode="inline" xml:id="C36.S12.SS1.p1.m7">f</Math> is real analytic, and <Math mode="inline" xml:id="C36.S12.SS1.p1.m8">\ifrac{{\partial}^{K+2}f}{{\partial u}^{K+2}}&gt;0</Math> for all <Math mode="inline" xml:id="C36.S12.SS1.p1.m9">\mathbf{y}</Math> such that all <Math mode="inline" xml:id="C36.S12.SS1.p1.m10">K+1</Math> critical points coincide.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C36.S12.SS1.p1.s6">
+If <Math mode="inline" xml:id="C36.S12.SS1.p1.m11">\ifrac{{\partial}^{K+2}f}{{\partial u}^{K+2}}&lt;0</Math> , then we may evaluate the complex conjugate of <Math mode="inline" xml:id="C36.S12.SS1.p1.m12">I</Math> for real values of <Math mode="inline" xml:id="C36.S12.SS1.p1.m13">\mathbf{y}</Math> and <Math mode="inline" xml:id="C36.S12.SS1.p1.m14">g</Math> , and obtain <Math mode="inline" xml:id="C36.S12.SS1.p1.m15">I</Math> by conjugation and analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C36.S12.SS1.p1.s7">
+The critical points <Math mode="inline" xml:id="C36.S12.SS1.p1.m16">u_{j}(\mathbf{y})</Math> , <Math mode="inline" xml:id="C36.S12.SS1.p1.m17">1\leq j\leq K+1</Math> , are defined by <Math equation-number="36.12.2" mode="display" xml:id="C36.S12.E2">\frac{\partial}{\partial u}f(u_{j}(\mathbf{y});\mathbf{y})=0</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C36.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C36.S12.SS1.p2.s1">
+The leading-order uniform asymptotic approximation is given by
+</sentence>
+
+</para>
+  
+<para xml:id="C36.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C36.S12.SS1.p3.s1">
+ <Math equation-number="36.12.3" mode="display" xml:id="C36.S12.E3">I(\mathbf{y},k)=\frac{\exp\left(ikA(\mathbf{y})\right)}{k^{1/(K+2)}}\sum \limits_{m=0}^{K}\frac{a_{m}(\mathbf{y})}{k^{m/(K+2)}}\left(\delta_{m,0}-\left (1-\delta_{m,0}\right)i\frac{\partial}{\partial z_{m}}\right)\Psi_{K}\left( \mathbf{z}(\mathbf{y};k)\right)\left(1+O\left(\frac{1}{k}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C36.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C36.S12.SS1.p4.s1">
+where <Math mode="inline" xml:id="C36.S12.SS1.p4.m1">A(\mathbf{y})</Math> , <Math mode="inline" xml:id="C36.S12.SS1.p4.m2">\mathbf{z}(\mathbf{y},k)</Math> , <Math mode="inline" xml:id="C36.S12.SS1.p4.m3">a_{m}(\mathbf{y})</Math> are as follows.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C36.S12.SS1.p4.s2">
+Define a mapping <Math mode="inline" xml:id="C36.S12.SS1.p4.m4">u(t;\mathbf{y})</Math> by relating <Math mode="inline" xml:id="C36.S12.SS1.p4.m5">f(u;\mathbf{y})</Math> to the normal form (36.2.1) of <Math mode="inline" xml:id="C36.S12.SS1.p4.m6">\Phi_{K}\left(t;\mathbf{x}\right)</Math> in the following way: <Math equation-number="36.12.4" mode="display" xml:id="C36.S12.E4">f(u(t,\mathbf{y});\mathbf{y})=A(\mathbf{y})+\Phi_{K}\left(t;\mathbf{x}(\mathbf {y})\right),</Math> with the <Math mode="inline" xml:id="C36.S12.SS1.p4.m7">K+1</Math> functions <Math mode="inline" xml:id="C36.S12.SS1.p4.m8">A(\mathbf{y})</Math> and <Math mode="inline" xml:id="C36.S12.SS1.p4.m9">\mathbf{x}(\mathbf{y})</Math> determined by correspondence of the <Math mode="inline" xml:id="C36.S12.SS1.p4.m10">K+1</Math> critical points of <Math mode="inline" xml:id="C36.S12.SS1.p4.m11">f</Math> and <Math mode="inline" xml:id="C36.S12.SS1.p4.m12">\Phi_{K}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C36.S12.SS1.p4.s3">
+Then <Math equation-number="36.12.5" mode="display" xml:id="C36.S12.E5">f(u_{j}(\mathbf{y});\mathbf{y})=A(\mathbf{y})+\Phi_{K}\left(t_{j}(\mathbf{x}( \mathbf{y}));\mathbf{x}(\mathbf{y})\right),</Math> where <Math mode="inline" xml:id="C36.S12.SS1.p4.m13">t_{j}(\mathbf{x})</Math> , <Math mode="inline" xml:id="C36.S12.SS1.p4.m14">1\leq j\leq K+1</Math> , are the critical points of <Math mode="inline" xml:id="C36.S12.SS1.p4.m15">\Phi_{K}</Math> , that is, the solutions (real and complex) of (36.4.1).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C36.S12.SS1.p4.s4">
+Correspondence between the <Math mode="inline" xml:id="C36.S12.SS1.p4.m16">u_{j}(\mathbf{y})</Math> and the <Math mode="inline" xml:id="C36.S12.SS1.p4.m17">t_{j}(\mathbf{x})</Math> is established by the order of critical points along the real axis when <Math mode="inline" xml:id="C36.S12.SS1.p4.m18">\mathbf{y}</Math> and <Math mode="inline" xml:id="C36.S12.SS1.p4.m19">\mathbf{x}</Math> are such that these critical points are all real, and by continuation when some or all of the critical points are complex.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C36.S12.SS1.p4.s5">
+The branch for <Math mode="inline" xml:id="C36.S12.SS1.p4.m20">\mathbf{x}(\mathbf{y})</Math> is such that <Math mode="inline" xml:id="C36.S12.SS1.p4.m21">\mathbf{x}</Math> is real when <Math mode="inline" xml:id="C36.S12.SS1.p4.m22">\mathbf{y}</Math> is real.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="15" xml:id="C36.S12.SS1.p4.s6">
+In consequence, <Math equation-number="36.12.6" mode="display" xml:id="C36.S12.E6">A(\mathbf{y})=f(u(0,\mathbf{y});\mathbf{y}),</Math> <Math equation-number="36.12.7" mode="display" xml:id="C36.S12.E7">\mathbf{z}(\mathbf{y};k)=\{z_{1}(\mathbf{y};k),z_{2}(\mathbf{y};k),\dots,z_{K} (\mathbf{y};k)\},z_{m}(\mathbf{y};k)=x_{m}(\mathbf{y})k^{1-(m/(K+2))},</Math> <Math equation-number="36.12.8" mode="display" xml:id="C36.S12.E8">a_{m}(\mathbf{y})=\sum_{n=1}^{K+1}\frac{P_{mn}(\mathbf{y})G_{n}(\mathbf{y})}{( t_{n}(\mathbf{x}(\mathbf{y})))^{m+1}\prod\limits_{\begin{subarray}{c}l=1\\ l\neq n\end{subarray}}^{K+1}(t_{n}(\mathbf{x}(\mathbf{y}))-t_{l}(\mathbf{x}( \mathbf{y})))},</Math> where <Math equation-number="36.12.9" mode="display" xml:id="C36.S12.E9">P_{mn}(\mathbf{y})={(t_{n}(\mathbf{x}(\mathbf{y})))^{K+1}}+\sum_{l=m+2}^{K} \frac{l}{K+2}x_{l}(\mathbf{y}){(t_{n}(\mathbf{x}(\mathbf{y})))^{l-1}},</Math> and <Math equation-number="36.12.10" mode="display" xml:id="C36.S12.E10">G_{n}(\mathbf{y})=g(t_{n}(\mathbf{y}),\mathbf{y})\sqrt{\frac{\ifrac{{\partial} ^{2}\Phi_{K}\left(t_{n}(\mathbf{x}(\mathbf{y}));\mathbf{x}(\mathbf{y})\right)} {{\partial t}^{2}}}{\ifrac{{\partial}^{2}f(u_{n}(\mathbf{y}))}{{\partial u}^{2 }}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="16" xml:id="C36.S12.SS1.p4.s7">
+In (36.12.10), both second derivatives vanish when critical points coalesce, but their ratio remains finite.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="17" xml:id="C36.S12.SS1.p4.s8">
+The square roots are real and positive when <Math mode="inline" xml:id="C36.S12.SS1.p4.m23">\mathbf{y}</Math> is such that all the critical points are real, and are defined by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="18" xml:id="C36.S12.SS1.p4.s9">
+The quantities <Math mode="inline" xml:id="C36.S12.SS1.p4.m24">a_{m}(\mathbf{y})</Math> are real for real <Math mode="inline" xml:id="C36.S12.SS1.p4.m25">\mathbf{y}</Math> when <Math mode="inline" xml:id="C36.S12.SS1.p4.m26">g</Math> is real analytic.
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S12.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C36.S12.SS1.p5.s1">
+This technique can be applied to generate a hierarchy of approximations for the diffraction catastrophes <Math mode="inline" xml:id="C36.S12.SS1.p5.m1">\Psi_{K}(\mathbf{x};k)</Math> in (36.2.10) away from <Math mode="inline" xml:id="C36.S12.SS1.p5.m2">\mathbf{x}=0</Math> , in terms of canonical integrals <Math mode="inline" xml:id="C36.S12.SS1.p5.m3">\Psi_{J}\left(\xi(\mathbf{x};k)\right)</Math> for <Math mode="inline" xml:id="C36.S12.SS1.p5.m4">J&lt;K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C36.S12.SS1.p5.s2">
+For example, the diffraction catastrophe <Math mode="inline" xml:id="C36.S12.SS1.p5.m5">\Psi_{2}(x,y;k)</Math> defined by (36.2.10), and corresponding to the Pearcey integral (36.2.14), can be approximated by the Airy function <Math mode="inline" xml:id="C36.S12.SS1.p5.m6">\Psi_{1}\left(\xi(x,y;k)\right)</Math> when <Math mode="inline" xml:id="C36.S12.SS1.p5.m7">k</Math> is large, provided that <Math mode="inline" xml:id="C36.S12.SS1.p5.m8">x</Math> and <Math mode="inline" xml:id="C36.S12.SS1.p5.m9">y</Math> are not small.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C36.S12.SS1.p5.s3">
+For details of this example, see Paris (1991).
+</sentence>
+
+</para>
+ 
+<para xml:id="C36.S12.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C36.S12.SS1.p6.s1">
+For further information see Berry and Howls (1993).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C36.S12.SS2">
+<title>Special Case</title>        
+ 
+<para xml:id="C36.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C36.S12.SS2.p1.s1">
+For <Math mode="inline" xml:id="C36.S12.SS2.p1.m1">K=1</Math> , with a single parameter <Math mode="inline" xml:id="C36.S12.SS2.p1.m2">y</Math> , let the two critical points of <Math mode="inline" xml:id="C36.S12.SS2.p1.m3">f(u;y)</Math> be denoted by <Math mode="inline" xml:id="C36.S12.SS2.p1.m4">u_{\pm}(y)</Math> , with <Math mode="inline" xml:id="C36.S12.SS2.p1.m5">u_{+}&gt;u_{-}</Math> for those values of <Math mode="inline" xml:id="C36.S12.SS2.p1.m6">y</Math> for which these critical points are real.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C36.S12.SS2.p1.s2">
+Then
+</sentence>
+
+</para>
+  
+<para xml:id="C36.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C36.S12.SS2.p2.s1">
+ <Math equation-number="36.12.11" mode="display" xml:id="C36.S12.E11">I(y,k)=\frac{\Delta^{1/4}\pi\sqrt{2}}{k^{1/3}}\exp\left(ik\widetilde{f}\right) \left(\left(\frac{g_{+}}{\sqrt{f_{+}^{\prime\prime}}}+\frac{g_{-}}{\sqrt{-f_{- }^{\prime\prime}}}\right)\mathrm{Ai}\left(-k^{2/3}\Delta\right)\left(1+O\left( \frac{1}{k}\right)\right)-i\left(\frac{g_{+}}{\sqrt{f_{+}^{\prime\prime}}}- \frac{g_{-}}{\sqrt{-f_{-}^{\prime\prime}}}\right)\frac{\mathrm{Ai}'\left(-k^{2 /3}\Delta\right)}{k^{1/3}\Delta^{1/2}}\left(1+O\left(\frac{1}{k}\right)\right) \right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C36.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C36.S12.SS2.p3.s1">
+where <Math equation-number="36.12.12" mode="display" xml:id="C36.S12.E12">\widetilde{f}=\tfrac{1}{2}(f(u_{+}(y),y)+f(u_{-}(y),y)),g_{\pm}=g(u_{\pm}(y),y),f_{\pm}^{\prime\prime}=\frac{{\partial}^{2}}{{\partial u}^{2}}f(u_{\pm}(y),y),\Delta=\left(\tfrac{3}{4}(f(u_{-}(y),y)-f(u_{+}(y),y))\right)^{2/3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C36.S12.SS2.p3.s2">
+For <Math mode="inline" xml:id="C36.S12.SS2.p3.m1">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C36.S12.SS2.p3.m2">\mathrm{Ai}'</Math> see §9.2.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C36.S12.SS2.p3.s3">
+Branches are chosen so that <Math mode="inline" xml:id="C36.S12.SS2.p3.m3">\Delta</Math> is real and positive if the critical points are real, or real and negative if they are complex.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C36.S12.SS2.p3.s4">
+The coefficients of <Math mode="inline" xml:id="C36.S12.SS2.p3.m4">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C36.S12.SS2.p3.m5">\mathrm{Ai}'</Math> are real if <Math mode="inline" xml:id="C36.S12.SS2.p3.m6">y</Math> is real and <Math mode="inline" xml:id="C36.S12.SS2.p3.m7">g</Math> is real analytic.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="30" xml:id="C36.S12.SS2.p3.s5">
+Also, <Math mode="inline" xml:id="C36.S12.SS2.p3.m8">\Delta^{1/4}/\sqrt{f_{+}^{\prime\prime}}</Math> and <Math mode="inline" xml:id="C36.S12.SS2.p3.m9">\Delta^{1/4}/\sqrt{-f_{-}^{\prime\prime}}</Math> are chosen to be positive real when <Math mode="inline" xml:id="C36.S12.SS2.p3.m10">y</Math> is such that both critical points are real, and by analytic continuation otherwise.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C36.S12.SS3">
+<title>Additional References</title>        
+ 
+<para xml:id="C36.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C36.S12.SS3.p1.s1">
+For further information concerning integrals with several coalescing saddle points see Arnol’d et al. (1988), Berry and Howls (1993, 1994),Bleistein (1967), Duistermaat (1974), Ludwig (1966),Olde Daalhuis (2000), and Ursell (1972, 1980).
+</sentence>
+
+</para>
+       
+    
+</subsection>
+ 
+</section>

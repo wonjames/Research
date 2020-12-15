@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C24.S8">
+<title>Series Expansions</title>        
+ 
+<subsection xml:id="C24.S8.SS1">
+<title>Fourier Series</title>        
+  
+<para xml:id="C24.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C24.S8.SS1.p1.s1">
+If <Math mode="inline" xml:id="C24.S8.SS1.p1.m1">n=1,2,\dots</Math> and <Math mode="inline" xml:id="C24.S8.SS1.p1.m2">0\leq x\leq 1</Math> , then <Math equation-number="24.8.1" mode="display" xml:id="C24.S8.E1">B_{2n}\left(x\right)=(-1)^{n+1}\frac{2(2n)!}{(2\pi)^{2n}}\sum_{k=1}^{\infty} \frac{\cos\left(2\pi kx\right)}{k^{2n}},</Math> , <Math equation-number="24.8.2" mode="display" xml:id="C24.S8.E2">B_{2n+1}\left(x\right)=(-1)^{n+1}\frac{2(2n+1)!}{(2\pi)^{2n+1}}\sum_{k=1}^{ \infty}\frac{\sin\left(2\pi kx\right)}{k^{2n+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C24.S8.SS1.p1.s2">
+The second expansion holds also for <Math mode="inline" xml:id="C24.S8.SS1.p1.m3">n=0</Math> and <Math mode="inline" xml:id="C24.S8.SS1.p1.m4">0&lt;x&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C24.S8.SS1.p2.s1">
+If <Math mode="inline" xml:id="C24.S8.SS1.p2.m1">n=1</Math> with <Math mode="inline" xml:id="C24.S8.SS1.p2.m2">0&lt;x&lt;1</Math> , or <Math mode="inline" xml:id="C24.S8.SS1.p2.m3">n=2,3,\dots</Math> with <Math mode="inline" xml:id="C24.S8.SS1.p2.m4">0\leq x\leq 1</Math> , then <Math equation-number="24.8.3" mode="display" xml:id="C24.S8.E3">B_{n}\left(x\right)=-\frac{n!}{(2\pi i)^{n}}\sum_{\begin{subarray}{c}k=-\infty \\ k\neq 0\end{subarray}}^{\infty}\frac{e^{2\pi ikx}}{k^{n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C24.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C24.S8.SS1.p3.s1">
+If <Math mode="inline" xml:id="C24.S8.SS1.p3.m1">n=1,2,\dots</Math> and <Math mode="inline" xml:id="C24.S8.SS1.p3.m2">0\leq x\leq 1</Math> , then <Math equation-number="24.8.4" mode="display" xml:id="C24.S8.E4">E_{2n}\left(x\right)=(-1)^{n}\frac{4(2n)!}{\pi^{2n+1}}\sum_{k=0}^{\infty}\frac {\sin\left((2k+1)\pi x\right)}{(2k+1)^{2n+1}},</Math> , <Math equation-number="24.8.5" mode="display" xml:id="C24.S8.E5">E_{2n-1}\left(x\right)=(-1)^{n}\frac{4(2n-1)!}{\pi^{2n}}\sum_{k=0}^{\infty} \frac{\cos\left((2k+1)\pi x\right)}{(2k+1)^{2n}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C24.S8.SS2">
+<title>Other Series</title>          
+<para xml:id="C24.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C24.S8.SS2.p1.s1">
+ <Math equation-number="24.8.6" mode="display" xml:id="C24.S8.E6">B_{4n+2}=(8n+4)\sum_{k=1}^{\infty}\frac{k^{4n+1}}{e^{2\pi k}-1}, if n=1,2,\dots,</Math> , <Math equation-number="24.8.7" mode="display" xml:id="C24.S8.E7">B_{2n}=\frac{(-1)^{n+1}4n}{2^{2n}-1}\sum_{k=1}^{\infty}\frac{k^{2n-1}}{e^{\pi k }+(-1)^{k+n}}, if n=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C24.S8.SS2.p1.s2">
+Let <Math mode="inline" xml:id="C24.S8.SS2.p1.m1">\alpha\beta=\pi^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C24.S8.SS2.p1.s3">
+Then <Math equation-number="24.8.8" mode="display" xml:id="C24.S8.E8">\frac{B_{2n}}{4n}\left(\alpha^{n}-(-\beta)^{n}\right)=\alpha^{n}\sum_{k=1}^{ \infty}\frac{k^{2n-1}}{e^{2\alpha k}-1}-(-\beta)^{n}\sum_{k=1}^{\infty}\frac{k ^{2n-1}}{e^{2\beta k}-1}, if n=2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C24.S8.SS2.p1.s4">
+<Math equation-number="24.8.9" mode="display" xml:id="C24.S8.E9">E_{2n}=(-1)^{n}\sum_{k=1}^{\infty}\frac{k^{2n}}{\cosh\left(\tfrac{1}{2}\pi k \right)}-4\sum_{k=0}^{\infty}\frac{(-1)^{k}(2k+1)^{2n}}{e^{2\pi(2k+1)}-1}, if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C35">
+<title>Functions of Matrix Argument</title>               
+          
+<section xml:id="C35.S1">
+<title>Special Notation</title>         
+<para xml:id="C35.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C35.S1.p2.s1">
+All matrices are of order <Math mode="inline" xml:id="C35.S1.p2.m1">m\times m</Math> , unless specified otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C35.S1.p2.s2">
+All fractional or complex powers are principal values.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C35.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" sentence-num-in-table="1" xml:id="C35.S1.p3.t1.s1">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r1.m1">a,b</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" sentence-num-in-table="2" xml:id="C35.S1.p3.t1.s2">
+complex variables.      
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" sentence-num-in-table="3" xml:id="C35.S1.p3.t1.s3">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r2.m1">j,k</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" sentence-num-in-table="4" xml:id="C35.S1.p3.t1.s4">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" sentence-num-in-table="5" xml:id="C35.S1.p3.t1.s5">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r3.m1">m</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="9" sentence-num-in-table="6" xml:id="C35.S1.p3.t1.s6">
+positive integer.      
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="10" sentence-num-in-table="7" xml:id="C35.S1.p3.t1.s7">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r4.m1">{\left[a\right]_{\kappa}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="11" sentence-num-in-table="8" xml:id="C35.S1.p3.t1.s8">
+partitional shifted factorial (§LABEL:sec:FM.ZP.DEF).
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="12" sentence-num-in-table="9" xml:id="C35.S1.p3.t1.s9">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r5.m1">\boldsymbol{{0}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="13" sentence-num-in-table="10" xml:id="C35.S1.p3.t1.s10">
+zero matrix.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="14" sentence-num-in-table="11" xml:id="C35.S1.p3.t1.s11">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r6.m1">\mathbf{I}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="15" sentence-num-in-table="12" xml:id="C35.S1.p3.t1.s12">
+identity matrix.
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="16" sentence-num-in-table="13" xml:id="C35.S1.p3.t1.s13">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r7.m1">\boldsymbol{\mathcal{S}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="17" sentence-num-in-table="14" xml:id="C35.S1.p3.t1.s14">
+space of all real symmetric matrices.  
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="18" sentence-num-in-table="15" xml:id="C35.S1.p3.t1.s15">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r8.m1">\mathbf{S},\mathbf{T},\mathbf{X}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="19" sentence-num-in-table="16" xml:id="C35.S1.p3.t1.s16">
+real symmetric matrices.
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="20" sentence-num-in-table="17" xml:id="C35.S1.p3.t1.s17">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r9.m1">\operatorname{tr}{\mathbf{X}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="21" sentence-num-in-table="18" xml:id="C35.S1.p3.t1.s18">
+trace of <Math mode="inline" xml:id="C35.S1.p3.t1.r9.m2">\mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="22" sentence-num-in-table="19" xml:id="C35.S1.p3.t1.s19">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r10.m1">\mathrm{etr}\left(\mathbf{X}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="23" sentence-num-in-table="20" xml:id="C35.S1.p3.t1.s20">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r10.m2">\exp\left(\operatorname{tr}{\mathbf{X}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="24" sentence-num-in-table="21" xml:id="C35.S1.p3.t1.s21">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r11.m1">|\mathbf{X}|</Math>
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="25" sentence-num-in-table="22" xml:id="C35.S1.p3.t1.s22">
+determinant of <Math mode="inline" xml:id="C35.S1.p3.t1.r11.m2">\mathbf{X}</Math> (except when<Math mode="inline" xml:id="C35.S1.p3.t1.r11.m3">m=1</Math> where it means either determinant or absolute value, depending on the context).
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="26" sentence-num-in-table="23" xml:id="C35.S1.p3.t1.s23">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r12.m1">|(\mathbf{X})_{j}|</Math>
+</sentence>
+
+<sentence sentence-num-in-para="24" sentence-num-in-section="27" sentence-num-in-table="24" xml:id="C35.S1.p3.t1.s24">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r12.m2">j</Math>th principal minor of <Math mode="inline" xml:id="C35.S1.p3.t1.r12.m3">\mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="25" sentence-num-in-section="28" sentence-num-in-table="25" xml:id="C35.S1.p3.t1.s25">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r13.m1">x_{j,k}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="26" sentence-num-in-section="29" sentence-num-in-table="26" xml:id="C35.S1.p3.t1.s26">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r13.m2">(j,k)</Math>th element of <Math mode="inline" xml:id="C35.S1.p3.t1.r13.m3">\mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="27" sentence-num-in-section="30" sentence-num-in-table="27" xml:id="C35.S1.p3.t1.s27">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r14.m1">\mathrm{d}\mathbf{X}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="28" sentence-num-in-section="31" sentence-num-in-table="28" xml:id="C35.S1.p3.t1.s28">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r14.m2">\prod_{1\leq j\leq k\leq m}\mathrm{d}x_{j,k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="29" sentence-num-in-section="32" sentence-num-in-table="29" xml:id="C35.S1.p3.t1.s29">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r15.m1">{\boldsymbol{\Omega}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="30" sentence-num-in-section="33" sentence-num-in-table="30" xml:id="C35.S1.p3.t1.s30">
+space of positive-definite real symmetric matrices.  
+</sentence>
+
+<sentence sentence-num-in-para="31" sentence-num-in-section="34" sentence-num-in-table="31" xml:id="C35.S1.p3.t1.s31">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r16.m1">t_{1},\dots,t_{m}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="32" sentence-num-in-section="35" sentence-num-in-table="32" xml:id="C35.S1.p3.t1.s32">
+eigenvalues of <Math mode="inline" xml:id="C35.S1.p3.t1.r16.m2">\mathbf{T}</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="33" sentence-num-in-section="36" sentence-num-in-table="33" xml:id="C35.S1.p3.t1.s33">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r17.m1">||\mathbf{T}||</Math>
+</sentence>
+
+<sentence sentence-num-in-para="34" sentence-num-in-section="37" sentence-num-in-table="34" xml:id="C35.S1.p3.t1.s34">
+spectral norm of <Math mode="inline" xml:id="C35.S1.p3.t1.r17.m2">\mathbf{T}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="35" sentence-num-in-section="38" sentence-num-in-table="35" xml:id="C35.S1.p3.t1.s35">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r18.m1">\mathbf{X}&gt;\mathbf{T}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="36" sentence-num-in-section="39" sentence-num-in-table="36" xml:id="C35.S1.p3.t1.s36">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r18.m2">\mathbf{X}-\mathbf{T}</Math> is positive definite.
+</sentence>
+
+<sentence sentence-num-in-para="37" sentence-num-in-section="40" sentence-num-in-table="37" xml:id="C35.S1.p3.t1.s37">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r19.m1">\mathbf{Z}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="38" sentence-num-in-section="41" sentence-num-in-table="38" xml:id="C35.S1.p3.t1.s38">
+complex symmetric matrix.
+</sentence>
+
+<sentence sentence-num-in-para="39" sentence-num-in-section="42" sentence-num-in-table="39" xml:id="C35.S1.p3.t1.s39">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r20.m1">\mathbf{U},\mathbf{V}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="40" sentence-num-in-section="43" sentence-num-in-table="40" xml:id="C35.S1.p3.t1.s40">
+real and complex parts of <Math mode="inline" xml:id="C35.S1.p3.t1.r20.m2">\mathbf{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="41" sentence-num-in-section="44" sentence-num-in-table="41" xml:id="C35.S1.p3.t1.s41">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r21.m1">f(\mathbf{X})</Math>
+</sentence>
+
+<sentence sentence-num-in-para="42" sentence-num-in-section="45" sentence-num-in-table="42" xml:id="C35.S1.p3.t1.s42">
+complex-valued function with<Math mode="inline" xml:id="C35.S1.p3.t1.r21.m2">\mathbf{X}\in{\boldsymbol{\Omega}}</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="43" sentence-num-in-section="46" sentence-num-in-table="43" xml:id="C35.S1.p3.t1.s43">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r22.m1">\mathbf{O}(m)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="44" sentence-num-in-section="47" sentence-num-in-table="44" xml:id="C35.S1.p3.t1.s44">
+space of orthogonal matrices.  
+</sentence>
+
+<sentence sentence-num-in-para="45" sentence-num-in-section="48" sentence-num-in-table="45" xml:id="C35.S1.p3.t1.s45">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r23.m1">\mathbf{H}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="46" sentence-num-in-section="49" sentence-num-in-table="46" xml:id="C35.S1.p3.t1.s46">
+orthogonal matrix.
+</sentence>
+
+<sentence sentence-num-in-para="47" sentence-num-in-section="50" sentence-num-in-table="47" xml:id="C35.S1.p3.t1.s47">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r24.m1">\mathrm{d}\mathbf{H}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="48" sentence-num-in-section="51" sentence-num-in-table="48" xml:id="C35.S1.p3.t1.s48">
+normalized Haar measure on <Math mode="inline" xml:id="C35.S1.p3.t1.r24.m2">\mathbf{O}(m)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="49" sentence-num-in-section="52" sentence-num-in-table="49" xml:id="C35.S1.p3.t1.s49">
+<Math mode="inline" xml:id="C35.S1.p3.t1.r25.m1">Z_{\kappa}\left(\mathbf{T}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="50" sentence-num-in-section="53" sentence-num-in-table="50" xml:id="C35.S1.p3.t1.s50">
+zonal polynomials.
+</sentence>
+
+</para>
+
+            
+<para xml:id="C35.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C35.S1.p4.s1">
+The main functions treated in this chapter are the multivariate gamma and betafunctions, respectively <Math mode="inline" xml:id="C35.S1.p4.m1">\Gamma_{m}\left(a\right)</Math> and <Math mode="inline" xml:id="C35.S1.p4.m2">\mathrm{B}_{m}\left(a,b\right)</Math> , and the special functions of matrix argument: Bessel (of the first kind) <Math mode="inline" xml:id="C35.S1.p4.m3">A_{\nu}\left(\mathbf{T}\right)</Math> and (of the second kind) <Math mode="inline" xml:id="C35.S1.p4.m4">B_{\nu}\left(\mathbf{T}\right)</Math> ; confluent hypergeometric (of the first kind) <Math mode="inline" xml:id="C35.S1.p4.m5">{{}_{1}F_{1}}\left(a;b;\mathbf{T}\right)</Math> or <Math mode="inline" xml:id="C35.S1.p4.m6">\displaystyle{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)</Math> and (of the second kind) <Math mode="inline" xml:id="C35.S1.p4.m7">\Psi\left(a;b;\mathbf{T}\right)</Math> ; Gaussian hypergeometric <Math mode="inline" xml:id="C35.S1.p4.m8">{{}_{2}F_{1}}\left(a_{1},a_{2};b;\mathbf{T}\right)</Math> or <Math mode="inline" xml:id="C35.S1.p4.m9">\displaystyle{{}_{2}F_{1}}\left({a_{1},a_{2}\atop b};\mathbf{T}\right)</Math> ; generalized hypergeometric <Math mode="inline" xml:id="C35.S1.p4.m10">{{}_{p}F_{q}}\left(a_{1},\dots,a_{p};b_{1},\dots,b_{q};\mathbf{T}\right)</Math> or <Math mode="inline" xml:id="C35.S1.p4.m11">\displaystyle{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}; \mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C35.S1.p5.s1">
+An alternative notation for the multivariate gamma function is <Math mode="inline" xml:id="C35.S1.p5.m2">\Pi_{m}(a)=\Gamma_{m}\left(a+\tfrac{1}{2}(m+1)\right)</Math> ( ( , p. 480) ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C35.S1.p5.s2">
+Related notations for the Bessel functions are <Math mode="inline" xml:id="C35.S1.p5.m4">\mathcal{J}_{\nu+\frac{1}{2}(m+1)}(\mathbf{T})=A_{\nu}\left(\mathbf{T}\right)/ A_{\nu}\left(\boldsymbol{{0}}\right)</Math> ( ( , pp. 320–329) ), <Math mode="inline" xml:id="C35.S1.p5.m6">K_{m}(0,\dots,0,\nu\mathpunct{|}\mathbf{S},\mathbf{T})=|\mathbf{T}|^{\nu}B_{ \nu}\left(\mathbf{S}\mathbf{T}\right)</Math> ( ( , pp. 49–64) ), and <Math mode="inline" xml:id="C35.S1.p5.m8">\mathcal{K}_{\nu}(\mathbf{T})=|\mathbf{T}|^{\nu}B_{\nu}\left(\mathbf{S}\mathbf {T}\right)</Math> ( ( , pp. 357–358) ).
+</sentence>
+
+</para>
+      
+</section>
+          
+ 
+<section xml:id="C35.S2">
+<title>Laplace Transform</title>           
+<paragraph xml:id="C35.S2.Px1">
+<title>Definition</title>  
+  
+<para xml:id="C35.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C35.S2.Px1.p1.s1">
+For any complex symmetric matrix <Math mode="inline" xml:id="C35.S2.Px1.p1.m1">\mathbf{Z}</Math> , <Math equation-number="35.2.1" mode="display" xml:id="C35.S2.E1">g(\mathbf{Z})=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{Z}\mathbf{X }\right)f(\mathbf{X})\mathrm{d}\mathbf{X},</Math> where the integration variable <Math mode="inline" xml:id="C35.S2.Px1.p1.m2">\mathbf{X}</Math> ranges over the space <Math mode="inline" xml:id="C35.S2.Px1.p1.m3">{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C35.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C35.S2.Px1.p2.s1">
+Suppose there exists a constant <Math mode="inline" xml:id="C35.S2.Px1.p2.m1">\mathbf{X}_{0}\in{\boldsymbol{\Omega}}</Math> such that <Math mode="inline" xml:id="C35.S2.Px1.p2.m2">|f(\mathbf{X})|&lt;\mathrm{etr}\left(-\mathbf{X}_{0}\mathbf{X}\right)</Math> for all <Math mode="inline" xml:id="C35.S2.Px1.p2.m3">\mathbf{X}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C35.S2.Px1.p2.s2">
+Then (LABEL:eq:FM.LT.integral) converges absolutely on the region <Math mode="inline" xml:id="C35.S2.Px1.p2.m4">\Re(\mathbf{Z})&gt;\mathbf{X}_{0}</Math> , and <Math mode="inline" xml:id="C35.S2.Px1.p2.m5">g(\mathbf{Z})</Math> is a complex analytic function of all elements <Math mode="inline" xml:id="C35.S2.Px1.p2.m6">z_{j,k}</Math> of <Math mode="inline" xml:id="C35.S2.Px1.p2.m7">\mathbf{Z}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S2.Px2">
+<title>Inversion Formula</title>    
+<para xml:id="C35.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C35.S2.Px2.p1.s1">
+Assume that <Math mode="inline" xml:id="C35.S2.Px2.p1.m1">\int_{\boldsymbol{\mathcal{S}}}\left|g(\mathbf{Z})\right|\mathrm{d}\mathbf{V}</Math> converges, and also that <Math mode="inline" xml:id="C35.S2.Px2.p1.m2">\lim_{\mathbf{U}\to\infty}\int_{\boldsymbol{\mathcal{S}}}\left|g(\mathbf{Z}) \right|\mathrm{d}\mathbf{V}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C35.S2.Px2.p1.s2">
+Then <Math equation-number="35.2.2" mode="display" xml:id="C35.S2.E2">f(\mathbf{X})=\dfrac{1}{(2\pi\mathrm{i})^{m(m+1)/2}}\int\mathrm{etr}\left( \mathbf{Z}\mathbf{X}\right)g(\mathbf{Z})\mathrm{d}\mathbf{Z},</Math> where the integral is taken over all <Math mode="inline" xml:id="C35.S2.Px2.p1.m3">\mathbf{Z}=\mathbf{U}+\mathrm{i}\mathbf{V}</Math> such that <Math mode="inline" xml:id="C35.S2.Px2.p1.m4">\mathbf{U}&gt;\mathbf{X}_{0}</Math> and <Math mode="inline" xml:id="C35.S2.Px2.p1.m5">\mathbf{V}</Math> ranges over <Math mode="inline" xml:id="C35.S2.Px2.p1.m6">\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S2.Px3">
+<title>Convolution Theorem</title>  
+  
+<para xml:id="C35.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C35.S2.Px3.p1.s1">
+If <Math mode="inline" xml:id="C35.S2.Px3.p1.m1">g_{j}</Math> is the Laplace transform of <Math mode="inline" xml:id="C35.S2.Px3.p1.m2">f_{j}</Math> , <Math mode="inline" xml:id="C35.S2.Px3.p1.m3">j=1,2</Math> , then <Math mode="inline" xml:id="C35.S2.Px3.p1.m4">g_{1}g_{2}</Math> is the Laplace transform of the convolution <Math mode="inline" xml:id="C35.S2.Px3.p1.m5">f_{1}*f_{2}</Math> , where <Math equation-number="35.2.3" mode="display" xml:id="C35.S2.E3">f_{1}*f_{2}(\mathbf{T})=\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}f_ {1}(\mathbf{T}-\mathbf{X})f_{2}(\mathbf{X})\mathrm{d}\mathbf{X}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C35.S3">
+<title>Multivariate Gamma and Beta Functions</title>         
+<subsection xml:id="C35.S3.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C35.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C35.S3.SS1.p1.s1">
+ <Math equation-number="35.3.1" mode="display" xml:id="C35.S3.E1">\Gamma_{m}\left(a\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{ X}\right)|\mathbf{X}|^{a-\frac{1}{2}(m+1)}\mathrm{d}\mathbf{X}, subject to \Re(a)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C35.S3.SS1.p1.s2">
+<Math equation-number="35.3.2" mode="display" xml:id="C35.S3.E2">\Gamma_{m}\left(s_{1},\dots,s_{m}\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr }\left(-\mathbf{X}\right)|\mathbf{X}|^{s_{m}-\frac{1}{2}(m+1)}\prod_{j=1}^{m-1 }|(\mathbf{X})_{j}|^{s_{j}-s_{j+1}}\mathrm{d}\mathbf{X}, subject to s_{j}\in\mathbb{C}, \Re(s_{j})&gt;\frac{1}{2}(j-1), j=1,\dots,m</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C35.S3.SS1.p2.s1">
+ <Math equation-number="35.3.3" mode="display" xml:id="C35.S3.E3">\mathrm{B}_{m}\left(a,b\right)=\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt; \mathbf{I}}|\mathbf{X}|^{a-\frac{1}{2}(m+1)}|\mathbf{I}-\mathbf{X}|^{b-\frac{1 }{2}(m+1)}\mathrm{d}\mathbf{X}, subject to \Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S3.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C35.S3.SS2.p1.s1">
+ <Math equation-number="35.3.4" mode="display" xml:id="C35.S3.E4">\Gamma_{m}\left(a\right)=\pi^{m(m-1)/4}\prod_{j=1}^{m}\Gamma\left(a-\tfrac{1}{ 2}(j-1)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="67" xml:id="C35.S3.SS2.p1.s2">
+<Math equation-number="35.3.5" mode="display" xml:id="C35.S3.E5">\Gamma_{m}\left(s_{1},\dots,s_{m}\right)=\pi^{m(m-1)/4}\prod_{j=1}^{m}\Gamma \left(s_{j}-\tfrac{1}{2}(j-1)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="68" xml:id="C35.S3.SS2.p1.s3">
+<Math equation-number="35.3.6" mode="display" xml:id="C35.S3.E6">\Gamma_{m}\left(a,\dots,a\right)=\Gamma_{m}\left(a\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="69" xml:id="C35.S3.SS2.p1.s4">
+<Math equation-number="35.3.7" mode="display" xml:id="C35.S3.E7">\mathrm{B}_{m}\left(a,b\right)=\frac{\Gamma_{m}\left(a\right)\Gamma_{m}\left(b \right)}{\Gamma_{m}\left(a+b\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="70" xml:id="C35.S3.SS2.p1.s5">
+<Math equation-number="35.3.8" mode="display" xml:id="C35.S3.E8">\mathrm{B}_{m}\left(a,b\right)=\int_{\boldsymbol{\Omega}}|\mathbf{X}|^{a-\frac {1}{2}(m+1)}|\mathbf{I}+\mathbf{X}|^{-(a+b)}\mathrm{d}\mathbf{X}, subject to \Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C35.S4">
+<title>Partitions and Zonal Polynomials</title>          
+<subsection xml:id="C35.S4.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C35.S4.SS1.p1.s1">
+A partition <Math mode="inline" xml:id="C35.S4.SS1.p1.m1">\kappa=(k_{1},\dots,k_{m})</Math> is a vector of nonnegative integers, listed in nonincreasing order.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C35.S4.SS1.p1.s2">
+Also, <Math mode="inline" xml:id="C35.S4.SS1.p1.m2">|\kappa|</Math> denotes <Math mode="inline" xml:id="C35.S4.SS1.p1.m3">k_{1}+\dots+k_{m}</Math> , the weight of <Math mode="inline" xml:id="C35.S4.SS1.p1.m4">\kappa</Math> ; <Math mode="inline" xml:id="C35.S4.SS1.p1.m5">\ell(\kappa)</Math> denotes the number of nonzero <Math mode="inline" xml:id="C35.S4.SS1.p1.m6">k_{j}</Math> ; <Math mode="inline" xml:id="C35.S4.SS1.p1.m7">a+\kappa</Math> denotes the vector <Math mode="inline" xml:id="C35.S4.SS1.p1.m8">(a+k_{1},\dots,a+k_{m})</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C35.S4.SS1.p2.s1">
+The partitional shifted factorial is given by <Math equation-number="35.4.1" mode="display" xml:id="C35.S4.E1">{\left[a\right]_{\kappa}}=\frac{\Gamma_{m}\left(a+\kappa\right)}{\Gamma_{m} \left(a\right)}=\prod_{j=1}^{m}{\left(a-\tfrac{1}{2}(j-1)\right)_{k_{j}}},</Math> where <Math mode="inline" xml:id="C35.S4.SS1.p2.m1">{\left(a\right)_{k}}=a(a+1)\cdots(a+k-1)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S4.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C35.S4.SS1.p3.s1">
+For any partition <Math mode="inline" xml:id="C35.S4.SS1.p3.m1">\kappa</Math> , the zonal polynomial <Math mode="inline" xml:id="C35.S4.SS1.p3.m2">Z_{\kappa}:\boldsymbol{\mathcal{S}}\to\mathbb{R}</Math> is defined by the properties <Math equation-number="35.4.2" mode="display" xml:id="C35.S4.E2">Z_{\kappa}\left(\mathbf{I}\right)=|\kappa|!\,2^{2|\kappa|}\,{\left[m/2\right]_ {\kappa}}\frac{\prod\limits_{1\leq j&lt;l\leq\ell(\kappa)}(2k_{j}-2k_{l}-j+l)}{ \prod\limits_{j=1}^{\ell(\kappa)}(2k_{j}+\ell(\kappa)-j)!</Math> } and <Math equation-number="35.4.3" mode="display" xml:id="C35.S4.E3">Z_{\kappa}\left(\mathbf{T}\right)=Z_{\kappa}\left(\mathbf{I}\right)\,|\mathbf{ T}|^{k_{m}}\*\int\limits_{\mathbf{O}(m)}\prod_{j=1}^{m-1}|(\mathbf{H}\mathbf{T }\mathbf{H}^{-1})_{j}|^{k_{j}-k_{j+1}}\mathrm{d}\mathbf{H}, subject to \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S4.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C35.S4.SS1.p4.s1">
+See ( , pp. 68–72) for the definition and properties of the Haar measure <Math mode="inline" xml:id="C35.S4.SS1.p4.m1">\mathrm{d}\mathbf{H}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="76" xml:id="C35.S4.SS1.p4.s2">
+See ( , p. 30) , ( ) , ( ) , and ( , pp. 425–431) for further information on (LABEL:eq:FM.ZP.ZP.zkapofidentity) and (LABEL:eq:FM.ZP.ZP.zmintegral).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="77" xml:id="C35.S4.SS1.p4.s3">
+Alternative notations for the zonal polynomials are <Math mode="inline" xml:id="C35.S4.SS1.p4.m2">C_{\kappa}(\mathbf{T})</Math> ( ( , pp. 227–239) ), <Math mode="inline" xml:id="C35.S4.SS1.p4.m3">\mathcal{Y}_{\kappa}(\mathbf{T})</Math> ( ( , p. 22) ), and <Math mode="inline" xml:id="C35.S4.SS1.p4.m4">\Phi_{\kappa}(\mathbf{T})</Math> ( ( , pp. 228–236) ).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S4.SS2">
+<title>Properties</title>         
+<paragraph xml:id="C35.S4.Px1">
+<title>Normalization</title>    
+<para xml:id="C35.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C35.S4.Px1.p1.s1">
+ <Math equation-number="35.4.4" mode="display" xml:id="C35.S4.E4">Z_{\kappa}\left(\boldsymbol{{0}}\right)=\begin{cases}1,&amp;\kappa=(0,\dots,0),\\ 0,&amp;\kappa\neq(0,\dots,0).\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px2">
+<title>Orthogonal Invariance</title>    
+<para xml:id="C35.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C35.S4.Px2.p1.s1">
+ <Math equation-number="35.4.5" mode="display" xml:id="C35.S4.E5">Z_{\kappa}\left(\mathbf{H}\mathbf{T}\mathbf{H}^{-1}\right)=Z_{\kappa}\left( \mathbf{T}\right), subject to \mathbf{H}\in\mathbf{O}(m)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C35.S4.Px2.p1.s2">
+Therefore <Math mode="inline" xml:id="C35.S4.Px2.p1.m1">Z_{\kappa}\left(\mathbf{T}\right)</Math> is a symmetric polynomial in the eigenvalues of <Math mode="inline" xml:id="C35.S4.Px2.p1.m2">\mathbf{T}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px3">
+<title>Summation</title>    
+<para xml:id="C35.S4.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C35.S4.Px3.p1.s1">
+For <Math mode="inline" xml:id="C35.S4.Px3.p1.m1">k=0,1,2,\dots</Math> , <Math equation-number="35.4.6" mode="display" xml:id="C35.S4.E6">\sum_{|\kappa|=k}Z_{\kappa}\left(\mathbf{T}\right)=(\operatorname{tr}{\mathbf{ T}})^{k}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px4">
+<title>Mean-Value</title>    
+<para xml:id="C35.S4.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C35.S4.Px4.p1.s1">
+ <Math equation-number="35.4.7" mode="display" xml:id="C35.S4.E7">\int_{\mathbf{O}(m)}Z_{\kappa}\left(\mathbf{S}\mathbf{H}\mathbf{T}\mathbf{H}^{ -1}\right)\mathrm{d}\mathbf{H}=\frac{Z_{\kappa}\left(\mathbf{S}\right)Z_{ \kappa}\left(\mathbf{T}\right)}{Z_{\kappa}\left(\mathbf{I}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S4.Px5">
+<title>Laplace and Beta Integrals</title>     
+<para xml:id="C35.S4.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C35.S4.Px5.p1.s1">
+For <Math mode="inline" xml:id="C35.S4.Px5.p1.m1">\mathbf{T}\in{\boldsymbol{\Omega}}</Math> and <Math mode="inline" xml:id="C35.S4.Px5.p1.m2">\Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math> , <Math equation-number="35.4.8" mode="display" xml:id="C35.S4.E8">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)\,| \mathbf{X}|^{a-\frac{1}{2}(m+1)}Z_{\kappa}\left(\mathbf{X}\right)\mathrm{d} \mathbf{X}=\Gamma_{m}\left(a+\kappa\right)\,|\mathbf{T}|^{-a}Z_{\kappa}\left( \mathbf{T}^{-1}\right),</Math> <Math equation-number="35.4.9" mode="display" xml:id="C35.S4.E9">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}|^{a-\frac{1}{2 }(m+1)}\*|\mathbf{I}-\mathbf{X}|^{b-\frac{1}{2}(m+1)}Z_{\kappa}\left(\mathbf{T }\mathbf{X}\right)\mathrm{d}\mathbf{X}=\frac{{\left[a\right]_{\kappa}}}{{\left [a+b\right]_{\kappa}}}\mathrm{B}_{m}\left(a,b\right)Z_{\kappa}\left(\mathbf{T} \right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C35.S5">
+<title>Bessel Functions of Matrix Argument</title>          
+<subsection xml:id="C35.S5.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C35.S5.SS1.p1.s1">
+ <Math equation-number="35.5.1" mode="display" xml:id="C35.S5.E1">A_{\nu}\left(\boldsymbol{{0}}\right)=\frac{1}{\Gamma_{m}\left(\nu+\frac{1}{2}( m+1)\right)}, subject to \nu\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C35.S5.SS1.p1.s2">
+<Math equation-number="35.5.2" mode="display" xml:id="C35.S5.E2">A_{\nu}\left(\mathbf{T}\right)=A_{\nu}\left(\boldsymbol{{0}}\right)\sum_{k=0}^ {\infty}\frac{(-1)^{k}}{k!}\sum_{|\kappa|=k}\frac{1}{{\left[\nu+\frac{1}{2}(m+ 1)\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right), subject to \nu\in\mathbb{C}, \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="86" xml:id="C35.S5.SS1.p1.s3">
+<Math equation-number="35.5.3" mode="display" xml:id="C35.S5.E3">B_{\nu}\left(\mathbf{T}\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-( \mathbf{T}\mathbf{X}+\mathbf{X}^{-1})\right)|\mathbf{X}|^{\nu-\frac{1}{2}(m+1) }\mathrm{d}\mathbf{X}, subject to \nu\in\mathbb{C}, \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S5.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C35.S5.SS2.p1.s1">
+ <Math equation-number="35.5.4" mode="display" xml:id="C35.S5.E4">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{\nu}A_{\nu}\left(\mathbf{S}\mathbf{X}\right)\mathrm{d}\mathbf{X}= \mathrm{etr}\left(-\mathbf{S}\mathbf{T}^{-1}\right)|\mathbf{T}|^{-\nu-\frac{1} {2}(m+1)}, subject to \mathbf{S}\in\boldsymbol{\mathcal{S}}, \mathbf{T}\in{\boldsymbol{\Omega}}; \Re(\nu)&gt;-1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C35.S5.SS2.p2.s1">
+ <Math equation-number="35.5.5" mode="display" xml:id="C35.S5.E5">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}A_{\nu_{1}}\left(\mathbf{S }_{1}\mathbf{X}\right)|\mathbf{X}|^{\nu_{1}}\*A_{\nu_{2}}\left(\mathbf{S}_{2}( \mathbf{T}-\mathbf{X})\right)|\mathbf{T}-\mathbf{X}|^{\nu_{2}}\mathrm{d} \mathbf{X}=|\mathbf{T}|^{\nu_{1}+\nu_{2}+\frac{1}{2}(m+1)}A_{\nu_{1}+\nu_{2}+ \frac{1}{2}(m+1)}\left((\mathbf{S}_{1}+\mathbf{S}_{2})\mathbf{T}\right), subject to \nu_{j}\in\mathbb{C}, \Re(\nu_{j})&gt;-1, j=1,2; \mathbf{S}_{1},\mathbf{S}_{2}\in\boldsymbol{\mathcal{S}}; \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="89" xml:id="C35.S5.SS2.p2.s2">
+<Math equation-number="35.5.6" mode="display" xml:id="C35.S5.E6">B_{\nu}\left(\mathbf{T}\right)=|\mathbf{T}|^{-\nu}B_{-\nu}\left(\mathbf{T} \right), subject to \nu\in\mathbb{C}, \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="90" xml:id="C35.S5.SS2.p2.s3">
+<Math equation-number="35.5.7" mode="display" xml:id="C35.S5.E7">\int_{\boldsymbol{\Omega}}A_{\nu_{1}}\left(\mathbf{T}\mathbf{X}\right)B_{-\nu_ {2}}\left(\mathbf{S}\mathbf{X}\right)|\mathbf{X}|^{\nu_{1}}\mathrm{d}\mathbf{X }=\frac{1}{A_{\nu_{1}+\nu_{2}}\left(\boldsymbol{{0}}\right)}|\mathbf{S}|^{\nu_ {2}}|\mathbf{T}+\mathbf{S}|^{-(\nu_{1}+\nu_{2}+\frac{1}{2}(m+1))}, subject to \Re(\nu_{1}+\nu_{2})&gt;-1; \mathbf{S},\mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="91" xml:id="C35.S5.SS2.p2.s4">
+<Math equation-number="35.5.8" mode="display" xml:id="C35.S5.E8">\int_{\mathbf{O}(m)}\mathrm{etr}\left(\mathbf{S}\mathbf{H}\right)\mathrm{d} \mathbf{H}=\frac{A_{-1/2}\left(-\frac{1}{4}\mathbf{S}\mathbf{S}^{\mathrm{T}} \right)}{A_{-1/2}\left(\boldsymbol{{0}}\right)}, subject to \mathbf{S} arbitrary</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S5.SS3">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C35.S5.SS3.p1.s1">
+For asymptotic approximations for Bessel functions of matrix argument, see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C35.S6">
+<title>Confluent Hypergeometric Functions of Matrix Argument</title>        
+  
+<subsection xml:id="C35.S6.SS1">
+<title>Definitions</title>           
+<para xml:id="C35.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C35.S6.SS1.p1.s1">
+ <Math equation-number="35.6.1" mode="display" xml:id="C35.S6.E1">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\sum_{k=0}^{\infty}\frac{1}{k! }\sum_{|\kappa|=k}\frac{{\left[a\right]_{\kappa}}}{{\left[b\right]_{\kappa}}}Z _{\kappa}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C35.S6.SS1.p1.s2">
+<Math equation-number="35.6.2" mode="display" xml:id="C35.S6.E2">\Psi\left(a;b;\mathbf{T}\right)=\frac{1}{\Gamma_{m}\left(a\right)}\int_{ \boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)|\mathbf{X}| ^{a-\frac{1}{2}(m+1)}\*{|\mathbf{I}+\mathbf{X}|}^{b-a-\frac{1}{2}(m+1)}\mathrm {d}\mathbf{X}, subject to \Re(a)&gt;\frac{1}{2}(m-1), \mathbf{T}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S6.Px1">
+<title>Laguerre Form</title>    
+<para xml:id="C35.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C35.S6.Px1.p1.s1">
+ <Math equation-number="35.6.3" mode="display" xml:id="C35.S6.E3">L^{(\gamma)}_{\nu}\left(\mathbf{T}\right)=\frac{\Gamma_{m}\left(\gamma+\nu+ \frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(\gamma+\frac{1}{2}(m+1)\right)}\*{{}_ {1}F_{1}}\left({-\nu\atop\gamma+\frac{1}{2}(m+1)};\mathbf{T}\right), subject to \Re(\gamma),\Re(\gamma+\nu)&gt;-1</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C35.S6.SS2.p1.s1">
+ <Math equation-number="35.6.4" mode="display" xml:id="C35.S6.E4">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\frac{1}{\mathrm{B}_{m}\left(a ,b-a\right)}\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}\mathrm{etr} \left(\mathbf{T}\mathbf{X}\right)|\mathbf{X}|^{a-\frac{1}{2}(m+1)}|\mathbf{I}- \mathbf{X}|^{b-a-\frac{1}{2}(m+1)}\mathrm{d}\mathbf{X}, subject to \Re(a),\Re(b-a)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C35.S6.SS2.p1.s2">
+<Math equation-number="35.6.5" mode="display" xml:id="C35.S6.E5">\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{b-\frac{1}{2}(m+1)}{{}_{1}F_{1}}\left({a\atop b};\mathbf{S} \mathbf{X}\right)\mathrm{d}\mathbf{X}=\Gamma_{m}\left(b\right)|\mathbf{I}- \mathbf{S}\mathbf{T}^{-1}|^{-a}|\mathbf{T}|^{-b}, subject to \mathbf{T}&gt;\mathbf{S}, \Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="98" xml:id="C35.S6.SS2.p1.s3">
+<Math equation-number="35.6.6" mode="display" xml:id="C35.S6.E6">\mathrm{B}_{m}\left(b_{1},b_{2}\right)|\mathbf{T}|^{b_{1}+b_{2}-\frac{1}{2}(m+ 1)}{{}_{1}F_{1}}\left({a_{1}+a_{2}\atop b_{1}+b_{2}};\mathbf{T}\right)=\int_{ \boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}|\mathbf{X}|^{b_{1}-\frac{1}{2}(m+1)}{{ }_{1}F_{1}}\left({a_{1}\atop b_{1}};\mathbf{X}\right){|\mathbf{T}-\mathbf{X}|} ^{b_{2}-\frac{1}{2}(m+1)}{{}_{1}F_{1}}\left({a_{2}\atop b_{2}};\mathbf{T}- \mathbf{X}\right)\mathrm{d}\mathbf{X}, subject to \Re(b_{1}),\Re(b_{2})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="99" xml:id="C35.S6.SS2.p1.s4">
+<Math equation-number="35.6.7" mode="display" xml:id="C35.S6.E7">{{}_{1}F_{1}}\left({a\atop b};\mathbf{T}\right)=\mathrm{etr}\left(\mathbf{T} \right){{}_{1}F_{1}}\left({b-a\atop b};-\mathbf{T}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="100" xml:id="C35.S6.SS2.p1.s5">
+<Math equation-number="35.6.8" mode="display" xml:id="C35.S6.E8">\int_{\boldsymbol{\Omega}}|\mathbf{T}|^{c-\frac{1}{2}(m+1)}\Psi\left(a;b; \mathbf{T}\right)\mathrm{d}\mathbf{T}=\frac{\Gamma_{m}\left(c\right)\Gamma_{m} \left(a-c\right)\Gamma_{m}\left(c-b+\frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(a \right)\Gamma_{m}\left(a-b+\frac{1}{2}(m+1)\right)}, subject to \Re(a)&gt;\Re(c)+\frac{1}{2}(m-1)&gt;m-1, \Re(c-b)&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS3">
+<title>Relations to Bessel Functions of Matrix Argument</title>           
+<para xml:id="C35.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C35.S6.SS3.p1.s1">
+ <Math equation-number="35.6.9" mode="display" xml:id="C35.S6.E9">\lim_{a\to\infty}{{}_{1}F_{1}}\left({a\atop\nu+\frac{1}{2}(m+1)};-a^{-1} \mathbf{T}\right)=\frac{A_{\nu}\left(\mathbf{T}\right)}{A_{\nu}\left( \boldsymbol{{0}}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C35.S6.SS3.p1.s2">
+<Math equation-number="35.6.10" mode="display" xml:id="C35.S6.E10">\lim_{a\to\infty}\Gamma_{m}\left(a\right)\Psi\left(a+\nu;\nu+\tfrac{1}{2}(m+1) ;a^{-1}\mathbf{T}\right)=B_{\nu}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S6.SS4">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C35.S6.SS4.p1.s1">
+For asymptotic approximations for confluent hypergeometric functions of matrix argument, see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C35.S7">
+<title>Gaussian Hypergeometric Function of Matrix Argument</title>          
+ 
+<subsection xml:id="C35.S7.SS1">
+<title>Definition</title>           
+<para xml:id="C35.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C35.S7.SS1.p1.s1">
+ <Math equation-number="35.7.1" mode="display" xml:id="C35.S7.E1">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\sum_{k=0}^{\infty}\frac{1} {k!}\sum_{|\kappa|=k}\frac{{\left[a\right]_{\kappa}}{\left[b\right]_{\kappa}}} {{\left[c\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right)}, subject to -c+\frac{1}{2}(j+1)\notin\mathbb{N}, 1\leq j\leq m; ||\mathbf{T}||&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S7.Px1">
+<title>Jacobi Form</title>    
+<para xml:id="C35.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C35.S7.Px1.p1.s1">
+ <Math equation-number="35.7.2" mode="display" xml:id="C35.S7.E2">P^{(\gamma,\delta)}_{\nu}\left(\mathbf{T}\right)=\frac{\Gamma_{m}\left(\gamma+ \nu+\frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(\gamma+\frac{1}{2}(m+1)\right)}\* {{}_{2}F_{1}}\left({-\nu,\gamma+\delta+\nu+\frac{1}{2}(m+1)\atop\gamma+\frac{1 }{2}(m+1)};\mathbf{T}\right), subject to \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}; \gamma,\delta,\nu\in\mathbb{C}; \Re(\gamma)&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS2">
+<title>Basic Properties</title>          
+<paragraph xml:id="C35.S7.Px2">
+<title>Case <Math mode="inline" xml:id="C35.S7.Px2.m1">m=2</Math></title>  
+  
+<para xml:id="C35.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C35.S7.Px2.p1.s1">
+ <Math equation-number="35.7.3" mode="display" xml:id="C35.S7.E3">{{}_{2}F_{1}}\left({a,b\atop c};\left(\begin{matrix}t_{1}&amp;0\\ 0&amp;t_{2}\end{matrix}\right)\right)=\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k} }{\left(c-a\right)_{k}}{\left(b\right)_{k}}{\left(c-b\right)_{k}}}{k!\,{\left( c\right)_{2k}}{\left(c-\tfrac{1}{2}\right)_{k}}}\*(t_{1}t_{2})^{k}{{}_{2}F_{1} }\left({a+k,b+k\atop c+2k};t_{1}+t_{2}-t_{1}t_{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px3">
+<title>Confluent Form</title>    
+<para xml:id="C35.S7.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C35.S7.Px3.p1.s1">
+ <Math equation-number="35.7.4" mode="display" xml:id="C35.S7.E4">\lim_{c\to\infty}{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}-c\mathbf{T}^{-1} \right)=|\mathbf{T}|^{b}\Psi\left(b;b-a+\tfrac{1}{2}(m+1);\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px4">
+<title>Integral Representation</title>    
+<para xml:id="C35.S7.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C35.S7.Px4.p1.s1">
+ <Math equation-number="35.7.5" mode="display" xml:id="C35.S7.E5">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\frac{1}{\mathrm{B}_{m}\left (a,c-a\right)}\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}| ^{a-\frac{1}{2}(m+1)}\*{|\mathbf{I}-\mathbf{X}|}^{c-a-\frac{1}{2}(m+1)}{| \mathbf{I}-\mathbf{T}\mathbf{X}|}^{-b}\mathrm{d}\mathbf{X}, subject to \Re(a),\Re(c-a)&gt;\frac{1}{2}(m-1), \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px5">
+<title>Transformations of Parameters</title>    
+<para xml:id="C35.S7.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C35.S7.Px5.p1.s1">
+ <Math equation-number="35.7.6" mode="display" xml:id="C35.S7.E6">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=|\mathbf{I}-\mathbf{T}|^{c-a -b}{{}_{2}F_{1}}\left({c-a,c-b\atop c};\mathbf{T}\right)=|\mathbf{I}-\mathbf{T }|^{-a}{{}_{2}F_{1}}\left({a,c-b\atop c};-\mathbf{T}(\mathbf{I}-\mathbf{T})^{- 1}\right)=|\mathbf{I}-\mathbf{T}|^{-b}{{}_{2}F_{1}}\left({c-a,b\atop c};- \mathbf{T}(\mathbf{I}-\mathbf{T})^{-1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px6">
+<title>Gauss Formula</title>    
+<para xml:id="C35.S7.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C35.S7.Px6.p1.s1">
+ <Math equation-number="35.7.7" mode="display" xml:id="C35.S7.E7">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}\right)=\frac{\Gamma_{m}\left(c \right)\Gamma_{m}\left(c-a-b\right)}{\Gamma_{m}\left(c-a\right)\Gamma_{m}\left (c-b\right)}}, subject to \Re(c),\Re(c-a-b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px7">
+<title>Reflection Formula</title>    
+<para xml:id="C35.S7.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C35.S7.Px7.p1.s1">
+ <Math equation-number="35.7.8" mode="display" xml:id="C35.S7.E8">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\frac{\Gamma_{m}\left(c \right)\Gamma_{m}\left(c-a-b\right)}{\Gamma_{m}\left(c-a\right)\Gamma_{m}\left (c-b\right)}}\*{{}_{2}F_{1}}\left({a,b\atop a+b-c+\frac{1}{2}(m+1)};\mathbf{I} -\mathbf{T}\right), subject to \Re(c),\Re(c-a-b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS3">
+<title>Partial Differential Equations</title>           
+<para xml:id="C35.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C35.S7.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C35.S7.SS3.p1.m1">f:{\boldsymbol{\Omega}}\to\mathbb{C}</Math> (a) be orthogonally invariant, so that <Math mode="inline" xml:id="C35.S7.SS3.p1.m2">f(\mathbf{T})</Math> is a symmetric function of <Math mode="inline" xml:id="C35.S7.SS3.p1.m3">t_{1},\dots,t_{m}</Math> , the eigenvalues of the matrix argument <Math mode="inline" xml:id="C35.S7.SS3.p1.m4">\mathbf{T}\in{\boldsymbol{\Omega}}</Math> ; (b) be analytic in <Math mode="inline" xml:id="C35.S7.SS3.p1.m5">t_{1},\dots,t_{m}</Math> in a neighborhood of <Math mode="inline" xml:id="C35.S7.SS3.p1.m6">\mathbf{T}=\boldsymbol{{0}}</Math> ; (c) satisfy <Math mode="inline" xml:id="C35.S7.SS3.p1.m7">f(\boldsymbol{{0}})=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="113" xml:id="C35.S7.SS3.p1.s2">
+Subject to the conditions (a)–(c), the function <Math mode="inline" xml:id="C35.S7.SS3.p1.m8">f(\mathbf{T})={{}_{2}F_{1}}\left(a,b;c;\mathbf{T}\right)</Math> is the unique solution of each partial differential equation <Math equation-number="35.7.9" mode="display" xml:id="C35.S7.E9">t_{j}(1-t_{j})\frac{{\partial}^{2}F}{{\partial t_{j}}^{2}}-\frac{1}{2}\sum_{ \begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{m}\frac{t_{k}(1-t_{k})}{t_{j}-t_{k}}\frac{\partial F}{ \partial t_{k}}+\left({c-\tfrac{1}{2}(m-1)-\left(a+b-\tfrac{1}{2}(m-3)\right)t _{j}}+\frac{1}{2}\sum_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{m}\frac{t_{j}(1-t_{j})}{t_{j}-t_{k}}\right)\frac{ \partial F}{\partial t_{j}}=abF,</Math> for <Math mode="inline" xml:id="C35.S7.SS3.p1.m9">j=1,\dots,m</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C35.S7.SS3.p2.s1">
+Systems of partial differential equations for the <Math mode="inline" xml:id="C35.S7.SS3.p2.m1">{{}_{0}F_{1}}</Math> (defined in §LABEL:sec:FM.GHF) and <Math mode="inline" xml:id="C35.S7.SS3.p2.m2">{{}_{1}F_{1}}</Math> functions of matrix argument can be obtained by applying (LABEL:eq:FM.GHF.DEF.confluence1) and (LABEL:eq:FM.GHF.DEF.confluence2) to (LABEL:eq:FM.PDE.2f1pde).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS4">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C35.S7.SS4.p1.s1">
+( ) applies Laplace’s method (§LABEL:sec:AS.IRV.LM) to (LABEL:eq:FM.GHF.BP.2f1integral) to derive uniform asymptotic approximations for the functions <Math equation-number="35.7.10" mode="display" xml:id="C35.S7.E10">{{}_{2}F_{1}}\left({\alpha a,\alpha b\atop\alpha c};\mathbf{T}\right)</Math> and <Math equation-number="35.7.11" mode="display" xml:id="C35.S7.E11">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}-\alpha^{-1}\mathbf{T}\right)</Math> as <Math mode="inline" xml:id="C35.S7.SS4.p1.m1">\alpha\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C35.S7.SS4.p1.s2">
+These approximations are in terms of elementary functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C35.S7.SS4.p2.s1">
+For other asymptotic approximations for Gaussian hypergeometric functions of matrix argument, see ( ) , ( , pp. 264–281, 290, 472, 563) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C35.S8">
+<title>Generalized Hypergeometric Functions of Matrix Argument</title>          
+<subsection xml:id="C35.S8.SS1">
+<title>Definition</title>          
+<para xml:id="C35.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C35.S8.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.SS1.p1.m1">p</Math> and <Math mode="inline" xml:id="C35.S8.SS1.p1.m2">q</Math> be nonnegative integers; <Math mode="inline" xml:id="C35.S8.SS1.p1.m3">a_{1},\dots,a_{p}\in\mathbb{C}</Math> ; <Math mode="inline" xml:id="C35.S8.SS1.p1.m4">b_{1},\dots,b_{q}\in\mathbb{C}</Math> ; <Math mode="inline" xml:id="C35.S8.SS1.p1.m5">-b_{j}+\tfrac{1}{2}(k+1)\notin\mathbb{N}</Math> , <Math mode="inline" xml:id="C35.S8.SS1.p1.m6">1\leq j\leq q</Math> , <Math mode="inline" xml:id="C35.S8.SS1.p1.m7">1\leq k\leq m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C35.S8.SS1.p1.s2">
+The generalized hypergeometric function <Math mode="inline" xml:id="C35.S8.SS1.p1.m8">{{}_{p}F_{q}}</Math> with matrix argument <Math mode="inline" xml:id="C35.S8.SS1.p1.m9">\mathbf{T}\in\boldsymbol{\mathcal{S}}</Math> , numerator parameters <Math mode="inline" xml:id="C35.S8.SS1.p1.m10">a_{1},\dots,a_{p}</Math> , and denominator parameters <Math mode="inline" xml:id="C35.S8.SS1.p1.m11">b_{1},\dots,b_{q}</Math> is <Math equation-number="35.8.1" mode="display" xml:id="C35.S8.E1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\mathbf{T}\right )=\sum_{k=0}^{\infty}\frac{1}{k!}\sum_{|\kappa|=k}\frac{{\left[a_{1}\right]_{ \kappa}}\cdots{\left[a_{p}\right]_{\kappa}}}{{\left[b_{1}\right]_{\kappa}} \cdots{\left[b_{q}\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S8.Px1">
+<title>Convergence Properties</title>    
+<para xml:id="C35.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C35.S8.Px1.p1.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p1.m1">-a_{j}+\tfrac{1}{2}(k+1)\in\mathbb{N}</Math> for some <Math mode="inline" xml:id="C35.S8.Px1.p1.m2">j,k</Math> satisfying <Math mode="inline" xml:id="C35.S8.Px1.p1.m3">1\leq j\leq p</Math> , <Math mode="inline" xml:id="C35.S8.Px1.p1.m4">1\leq k\leq m</Math> , then the series expansion (LABEL:eq:FM.GHF.DEF.pfq)terminates.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C35.S8.Px1.p2.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p2.m1">p\leq q</Math> , then (LABEL:eq:FM.GHF.DEF.pfq)converges for all <Math mode="inline" xml:id="C35.S8.Px1.p2.m2">\mathbf{T}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C35.S8.Px1.p3.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p3.m1">p=q+1</Math> , then (LABEL:eq:FM.GHF.DEF.pfq)converges absolutely for <Math mode="inline" xml:id="C35.S8.Px1.p3.m2">||\mathbf{T}||&lt;1</Math> and diverges for <Math mode="inline" xml:id="C35.S8.Px1.p3.m3">||\mathbf{T}||&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C35.S8.Px1.p4.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p4.m1">p&gt;q+1</Math> , then (LABEL:eq:FM.GHF.DEF.pfq)diverges unless it terminates.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS2">
+<title>Relations to Other Functions</title>          
+<para xml:id="C35.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C35.S8.SS2.p1.s1">
+ <Math equation-number="35.8.2" mode="display" xml:id="C35.S8.E2">{{}_{0}F_{0}}\left({-\atop-};\mathbf{T}\right)=\mathrm{etr}\left(\mathbf{T} \right), subject to \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="125" xml:id="C35.S8.SS2.p1.s2">
+<Math equation-number="35.8.3" mode="display" xml:id="C35.S8.E3">{{}_{2}F_{1}}\left({a,b\atop b};\mathbf{T}\right)={{}_{1}F_{0}}\left({a\atop-} ;\mathbf{T}\right)=|\mathbf{I}-\mathbf{T}|^{-a}, subject to \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="126" xml:id="C35.S8.SS2.p1.s3">
+<Math equation-number="35.8.4" mode="display" xml:id="C35.S8.E4">A_{\nu}\left(\mathbf{T}\right)=\dfrac{1}{\Gamma_{m}\left(\nu+\frac{1}{2}(m+1) \right)}{{}_{0}F_{1}}\left({-\atop\nu+\frac{1}{2}(m+1)};-\mathbf{T}\right), subject to \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS3">
+<title><Math content-tex="\genhyperFmat{3}{2}" mode="inline" xml:id="C35.S8.SS3.m1">{{}_{3}F_{2}}</Math> Case</title>          
+<paragraph xml:id="C35.S8.Px2">
+<title>Kummer Transformation</title>     
+<para xml:id="C35.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C35.S8.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.Px2.p1.m1">c=b_{1}+b_{2}-a_{1}-a_{2}-a_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="128" xml:id="C35.S8.Px2.p1.s2">
+Then <Math equation-number="35.8.5" mode="display" xml:id="C35.S8.E5">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{2}\right)\Gamma_{m}\left(c\right)}{\Gamma_{m}\left(b_ {2}-a_{3}\right)\Gamma_{m}\left(c+a_{3}\right)}\*{{}_{3}F_{2}}\left({b_{1}-a_{ 1},b_{1}-a_{2},a_{3}\atop b_{1},c+a_{3}};\mathbf{I}\right), subject to \Re(b_{2}),\Re(c)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px3">
+<title>Pfaff–Saalschutz Formula</title>     
+<para xml:id="C35.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C35.S8.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.Px3.p1.m1">a_{1}+a_{2}+a_{3}+\frac{1}{2}(m+1)=b_{1}+b_{2}</Math> ; one of the <Math mode="inline" xml:id="C35.S8.Px3.p1.m2">a_{j}</Math> be a negative integer; <Math mode="inline" xml:id="C35.S8.Px3.p1.m3">\Re(b_{1}-a_{1})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m4">\Re(b_{1}-a_{2})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m5">\Re(b_{1}-a_{3})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m6">\Re(b_{1}-a_{1}-a_{2}-a_{3})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="130" xml:id="C35.S8.Px3.p1.s2">
+Then <Math equation-number="35.8.6" mode="display" xml:id="C35.S8.E6">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{1}-a_{1}\right)\Gamma_{m}\left(b_{1}-a_{2}\right)}{ \Gamma_{m}\left(b_{1}\right)\Gamma_{m}\left(b_{1}-a_{1}-a_{2}\right)}\*\frac{ \Gamma_{m}\left(b_{1}-a_{3}\right)\Gamma_{m}\left(b_{1}-a_{1}-a_{2}-a_{3} \right)}{\Gamma_{m}\left(b_{1}-a_{1}-a_{3}\right)\Gamma_{m}\left(b_{1}-a_{2}-a _{3}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px4">
+<title>Thomae Transformation</title>    
+ 
+<para xml:id="C35.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C35.S8.Px4.p1.s1">
+Again, let <Math mode="inline" xml:id="C35.S8.Px4.p1.m1">c=b_{1}+b_{2}-a_{1}-a_{2}-a_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="132" xml:id="C35.S8.Px4.p1.s2">
+Then <Math equation-number="35.8.7" mode="display" xml:id="C35.S8.E7">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{1}\right)\Gamma_{m}\left(b_{2}\right)\Gamma\left(c \right)}{\Gamma_{m}\left(a_{1}\right)\Gamma_{m}\left(c+a_{2}\right)\Gamma\left (c+a_{3}\right)}\*{{}_{3}F_{2}}\left({b_{1}-a_{1},b_{2}-a_{2},c\atop c+a_{2},c +a_{3}};\mathbf{I}\right), subject to \Re(b_{1}), \Re(b_{2}), \Re(c)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS4">
+<title>General Properties</title>          
+<paragraph xml:id="C35.S8.Px5">
+<title>Value at <Math mode="inline" xml:id="C35.S8.Px5.m1">\mathbf{T}=\boldsymbol{{0}}</Math></title>   
+ 
+<para xml:id="C35.S8.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C35.S8.Px5.p1.s1">
+ <Math equation-number="35.8.8" mode="display" xml:id="C35.S8.E8">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\boldsymbol{{0}} \right)=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px6">
+<title>Confluence</title>   
+ 
+<para xml:id="C35.S8.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C35.S8.Px6.p1.s1">
+ <Math equation-number="35.8.9" mode="display" xml:id="C35.S8.E9">\lim_{\gamma\to\infty}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{p},\gamma\atop b_{1 },\dots,b_{q}};\gamma^{-1}\mathbf{T}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_ {p}\atop b_{1},\dots,b_{q}};\mathbf{T}\right),</Math> <Math equation-number="35.8.10" mode="display" xml:id="C35.S8.E10">\lim_{\gamma\to\infty}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots ,b_{q},\gamma};\gamma\mathbf{T}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px7">
+<title>Invariance</title>    
+<para xml:id="C35.S8.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C35.S8.Px7.p1.s1">
+ <Math equation-number="35.8.11" mode="display" xml:id="C35.S8.E11">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\mathbf{H} \mathbf{T}\mathbf{H}^{-1}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_ {1},\dots,b_{q}};\mathbf{T}\right), subject to \mathbf{H}\in\mathbf{O}(m)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px8">
+<title>Laplace Transform</title>    
+<para xml:id="C35.S8.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C35.S8.Px8.p1.s1">
+ <Math equation-number="35.8.12" mode="display" xml:id="C35.S8.E12">{\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{\gamma-\frac{1}{2}(m+1)}\*{{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};-\mathbf{X}\right)\mathrm{d}\mathbf{X}}=\Gamma_{m} \left(\gamma\right)|\mathbf{T}|^{-\gamma}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{ p},\gamma\atop b_{1},\dots,b_{q}};-\mathbf{T}^{-1}\right), subject to \Re(\gamma)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px9">
+<title>Euler Integral</title>    
+<para xml:id="C35.S8.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C35.S8.Px9.p1.s1">
+ <Math equation-number="35.8.13" mode="display" xml:id="C35.S8.E13">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}|^{a_{1}-\frac{ 1}{2}(m+1)}{|\mathbf{I}-\mathbf{X}|}^{b_{1}-a_{1}-\frac{1}{2}(m+1)}\*{{}_{p}F_ {q}}\left({a_{2},\dots,a_{p+1}\atop b_{2},\dots,b_{q+1}};\mathbf{T}\mathbf{X} \right)\mathrm{d}\mathbf{X}=\frac{1}{\mathrm{B}_{m}\left(b_{1}-a_{1},a_{1} \right)}{{}_{p+1}F_{q+1}}\left({a_{1},\dots,a_{p+1}\atop b_{1},\dots,b_{q+1}}; \mathbf{T}\right), subject to \Re(b_{1}-a_{1}),\Re(a_{1})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS5">
+<title>Mellin–Barnes Integrals</title>        
+  
+<para xml:id="C35.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C35.S8.SS5.p1.s1">
+Multidimensional Mellin–Barnes integrals are established in ( ) for the functions <Math mode="inline" xml:id="C35.S8.SS5.p1.m1">{{}_{p}F_{q}}</Math> and <Math mode="inline" xml:id="C35.S8.SS5.p1.m2">{{}_{p+1}F_{p}}</Math> of matrix argument.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C35.S8.SS5.p1.s2">
+A similar result for the <Math mode="inline" xml:id="C35.S8.SS5.p1.m3">{{}_{0}F_{1}}</Math> function of matrix argument is given in ( , p. 346) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C35.S8.SS5.p1.s3">
+These multidimensional integrals reduce to the classical Mellin–Barnes integrals (§LABEL:sec:GA.MA.MBI) in the special case <Math mode="inline" xml:id="C35.S8.SS5.p1.m4">m=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C35.S8.SS5.p2.s1">
+See also ( , pp. 318–340) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C35.S9">
+<title>Applications</title>         
+   
+<para xml:id="C35.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C35.S9.p1.s1">
+In multivariate statistical analysis based on the multivariate normal distribution, the probability density functions of many random matrices are expressible in terms of generalized hypergeometric functions of matrix argument <Math mode="inline" xml:id="C35.S9.p1.m1">{{}_{p}F_{q}}</Math> , with <Math mode="inline" xml:id="C35.S9.p1.m2">p\leq 2</Math> and <Math mode="inline" xml:id="C35.S9.p1.m3">q\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="143" xml:id="C35.S9.p1.s2">
+See ( ) , ( ) , ( ) , ( ) , and ( ) for extensive treatments.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C35.S9.p2.s1">
+For other statistical applications of <Math mode="inline" xml:id="C35.S9.p2.m1">{{}_{p}F_{q}}</Math> functions of matrix argument see ( ) , ( ) , ( ) , ( ) (monotonicity of power functions of multivariate statistical test criteria), ( ) (Procrustes analysis), and ( ) (exact distributions of statistical test criteria).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="145" xml:id="C35.S9.p2.s2">
+These references all use results related to the integral formulas (LABEL:eq:FM.ZP.ZP.meanvalue) and (LABEL:eq:FM.BF.0f1integral).
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C35.S9.p3.s1">
+For applications of the integral representation (LABEL:eq:FM.BF.bbessel) see ( ) (statistical estimation of misclassification probabilities for discriminating between multivariate normal populations).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="147" xml:id="C35.S9.p3.s2">
+The asymptotic approximations of §LABEL:sec:FM.LA are applied in numerous statistical contexts in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C35.S9.p4.s1">
+In chemistry, ( ) expresses the probability density functions of macromolecules in terms of generalized hypergeometric functions of matrix argument, and develop asymptotic approximations for these density functions.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S9.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C35.S9.p5.s1">
+In the nascent area of applications of zonal polynomials to the limiting probability distributions of symmetric random matrices, one of the most comprehensive accounts is ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C35.S10">
+<title>Methods of Computation</title>          
+<para xml:id="C35.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C35.S10.p1.s1">
+For small values of <Math mode="inline" xml:id="C35.S10.p1.m1">||\mathbf{T}||</Math> the zonal polynomial expansion given by (LABEL:eq:FM.GHF.DEF.pfq)can be summed numerically.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="151" xml:id="C35.S10.p1.s2">
+For large <Math mode="inline" xml:id="C35.S10.p1.m2">||\mathbf{T}||</Math> the asymptotic approximations referred to in §LABEL:sec:FM.LA are available.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C35.S10.p2.s1">
+Other methods include numerical quadrature applied to double and multiple integral representations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="153" xml:id="C35.S10.p2.s2">
+See ( ) for the <Math mode="inline" xml:id="C35.S10.p2.m1">{{}_{1}F_{1}}</Math> and <Math mode="inline" xml:id="C35.S10.p2.m2">{{}_{2}F_{1}}</Math> functions of matrix argument in the case <Math mode="inline" xml:id="C35.S10.p2.m3">m=2</Math> , and ( ) for Monte Carlo simulation on <Math mode="inline" xml:id="C35.S10.p2.m4">\mathbf{O}(m)</Math> applied to a generalization of the integral (LABEL:eq:FM.BF.0f1integral).
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C35.S10.p3.s1">
+( ) utilizes combinatorial identities for the zonal polynomials to develop computational algorithms for approximating the series expansion (LABEL:eq:FM.GHF.DEF.pfq).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C35.S10.p3.s2">
+These algorithms are extremely efficient, converge rapidly even for large values of <Math mode="inline" xml:id="C35.S10.p3.m1">m</Math> , and have complexity linear in <Math mode="inline" xml:id="C35.S10.p3.m2">m</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C35.S11">
+<title>Tables</title>          
+<para xml:id="C35.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C35.S11.p1.s1">
+Tables of zonal polynomials are given in ( ) for <Math mode="inline" xml:id="C35.S11.p1.m1">|\kappa|\leq 6</Math> , ( ) for <Math mode="inline" xml:id="C35.S11.p1.m2">|\kappa|\leq 12</Math> , and ( , p. 238) for <Math mode="inline" xml:id="C35.S11.p1.m3">|\kappa|\leq 5</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="157" xml:id="C35.S11.p1.s2">
+Each table expresses the zonal polynomials as linear combinations of monomial symmetric functions.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C35.S12">
+<title>Software</title>        
+ 
+<para xml:id="C35.S12.p1">
+
+</para>
+
+ 
+<para xml:id="C35.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C35.S12.p2.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C35.S12.p2.s2">
+Citations in the bulleted list refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="160" xml:id="C35.S12.p2.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="161" xml:id="C35.S12.p2.s4">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="162" xml:id="C35.S12.p2.s5">
+Computation of zonal polynomials in MATLAB.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="163" xml:id="C35.S12.p2.s6">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="164" xml:id="C35.S12.p2.s7">
+Computation of hypergeometric functions of matrix argument in MATLAB.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="165" xml:id="C35.S12.p2.s8">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="166" xml:id="C35.S12.p2.s9">
+Maple software for zonal polynomials.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C35.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C35.S12.p3.s1">
+For an algorithm to evaluate zonal polynomials, and an implementation of the algorithm in Maple by Zeilberger, see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

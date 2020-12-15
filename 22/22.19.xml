@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S19">
+<title>Physical Applications</title>        
+ 
+<subsection xml:id="C22.S19.SS1">
+<title>Classical Dynamics: The Pendulum</title>        
+     
+<para xml:id="C22.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S19.SS1.p1.s1">
+With appropriate scalings, Newton’s equation of motion for a pendulum with a mass in a gravitational field constrained to move in a vertical plane at a fixed distance from a fulcrum is <Math equation-number="22.19.1" mode="display" xml:id="C22.S19.E1">\frac{{\mathrm{d}}^{2}\theta(t)}{{\mathrm{d}t}^{2}}=-\sin\theta(t),</Math> <Math mode="inline" xml:id="C22.S19.SS1.p1.m1">\theta</Math> being the angular displacement from the point of stable equilibrium, <Math mode="inline" xml:id="C22.S19.SS1.p1.m2">\theta=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C22.S19.SS1.p1.s2">
+The bounded <Math mode="inline" xml:id="C22.S19.SS1.p1.m3">(-\pi\leq\theta\leq\pi)</Math> oscillatory solution of (22.19.1) is traditionally written <Math equation-number="22.19.2" mode="display" xml:id="C22.S19.E2">\sin\left(\tfrac{1}{2}\theta(t)\right)=\sin\left(\frac{1}{2}\alpha\right) \operatorname{sn}\left(t+K,\sin\left(\tfrac{1}{2}\alpha\right)\right),</Math> for an initial angular displacement <Math mode="inline" xml:id="C22.S19.SS1.p1.m4">\alpha</Math> , with <Math mode="inline" xml:id="C22.S19.SS1.p1.m5">\ifrac{\mathrm{d}\theta}{\mathrm{d}t}=0</Math> at time <Math mode="inline" xml:id="C22.S19.SS1.p1.m6">0</Math> ; see Lawden (1989, pp. 114–117).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C22.S19.SS1.p1.s3">
+The period is <Math mode="inline" xml:id="C22.S19.SS1.p1.m7">4\!K\left(\sin\left(\frac{1}{2}\alpha\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C22.S19.SS1.p1.s4">
+The periodicity and symmetry of the pendulum imply that the motion in each four intervals <Math mode="inline" xml:id="C22.S19.SS1.p1.m8">\theta\in(0,\pm\alpha)</Math> and <Math mode="inline" xml:id="C22.S19.SS1.p1.m9">\theta\in(\pm\alpha,0)</Math> have the same “quarter periods” <Math mode="inline" xml:id="C22.S19.SS1.p1.m10">K=K\left(\sin\left(\frac{1}{2}\alpha\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C22.S19.SS1.p1.s5">
+Thus the offset <Math mode="inline" xml:id="C22.S19.SS1.p1.m11">t+K</Math> in 22.19.2 as the motion starts <Math mode="inline" xml:id="C22.S19.SS1.p1.m12">\theta(0)=\alpha</Math> , rather than <Math mode="inline" xml:id="C22.S19.SS1.p1.m13">\theta(0)=0</Math> as in 22.19.3, which follows.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C22.S19.SS1.p1.s6">
+The angle <Math mode="inline" xml:id="C22.S19.SS1.p1.m14">\alpha=\pi</Math> is aseparatrix, separating oscillatory and unbounded motion.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C22.S19.SS1.p1.s7">
+With the same initial conditions, if the sign of gravity is reversed then the new period is <Math mode="inline" xml:id="C22.S19.SS1.p1.m15">4\!{K^{\prime}}\left(\sin\left(\frac{1}{2}\alpha\right)\right)</Math> ; see Whittaker (1964, §44).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S19.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C22.S19.SS1.p2.s1">
+Alternatively, Sala (1989) writes: <Math equation-number="22.19.3" mode="display" xml:id="C22.S19.E3">\theta(t)=2\operatorname{am}\left(t\sqrt{E/2},\sqrt{2/E}\right),</Math> for the initial conditions <Math mode="inline" xml:id="C22.S19.SS1.p2.m1">\theta(0)=0</Math> , the point of stable equilibrium for <Math mode="inline" xml:id="C22.S19.SS1.p2.m2">E=0</Math> , and <Math mode="inline" xml:id="C22.S19.SS1.p2.m3">\ifrac{\mathrm{d}\theta(t)}{\mathrm{d}t}=\sqrt{2E}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C22.S19.SS1.p2.s2">
+Here <Math mode="inline" xml:id="C22.S19.SS1.p2.m4">E=\frac{1}{2}(\ifrac{\mathrm{d}\theta(t)}{\mathrm{d}t})^{2}+1-\cos\theta(t)</Math> is theenergy, which is a first integral of the motion.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C22.S19.SS1.p2.s3">
+This formulation gives the bounded and unbounded solutions from the same formula (22.19.3), for <Math mode="inline" xml:id="C22.S19.SS1.p2.m5">k\geq 1</Math> and <Math mode="inline" xml:id="C22.S19.SS1.p2.m6">k\leq 1</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C22.S19.SS1.p2.s4">
+Also, <Math mode="inline" xml:id="C22.S19.SS1.p2.m7">\theta(t)</Math> is not restricted to the principal range <Math mode="inline" xml:id="C22.S19.SS1.p2.m8">-\pi\leq\theta\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C22.S19.SS1.p2.s5">
+Figure 22.19.1 shows the nature of the solutions <Math mode="inline" xml:id="C22.S19.SS1.p2.m9">\theta(t)</Math> of (22.19.3) by graphing <Math mode="inline" xml:id="C22.S19.SS1.p2.m10">\operatorname{am}\left(x,k\right)</Math> for both <Math mode="inline" xml:id="C22.S19.SS1.p2.m11">0\leq k\leq 1</Math> , as in Figure 22.16.1, and <Math mode="inline" xml:id="C22.S19.SS1.p2.m12">k\geq 1</Math> , where it is periodic.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="13" xml:id="C22.S19.F1.s1">
+Figure 22.19.1: Jacobi’s amplitude function <Math mode="inline" xml:id="C22.S19.F1.m4">\operatorname{am}\left(x,k\right)</Math> for <Math mode="inline" xml:id="C22.S19.F1.m5">0\leq x\leq 10\pi</Math> and <Math mode="inline" xml:id="C22.S19.F1.m6">k=0.5,0.9999,1.0001,</Math>2 . When <Math mode="inline" xml:id="C22.S19.F1.m7">k&amp;lt;1</Math> , <Math mode="inline" xml:id="C22.S19.F1.m8">\operatorname{am}\left(x,k\right)</Math> increases monotonically indicating that the motion of the pendulum is unbounded in <Math mode="inline" xml:id="C22.S19.F1.m9">\theta</Math> , corresponding to free rotation about the fulcrum; compare Figure . As <Math mode="inline" xml:id="C22.S19.F1.m10">k\to 1-</Math> , plateaus are seen as the motion approaches the separatrix where <Math mode="inline" xml:id="C22.S19.F1.m11">\theta=n\pi</Math> , <Math mode="inline" xml:id="C22.S19.F1.m12">n=\pm 1,\pm 2,\ldots</Math> , at which points the motion is time independent for <Math mode="inline" xml:id="C22.S19.F1.m13">k=1</Math> . This corresponds to the pendulum being “upside down” at a point of unstable equilibrium. For <Math mode="inline" xml:id="C22.S19.F1.m14">k&amp;gt;1</Math> , the motion is periodic in <Math mode="inline" xml:id="C22.S19.F1.m15">x</Math> , corresponding to bounded oscillatory motion.
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C22.S19.SS2">
+<title>Classical Dynamics: The Quartic Oscillator</title>          
+<para xml:id="C22.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C22.S19.SS2.p1.s1">
+Classical motion in one dimension is described by Newton’s equation <Math equation-number="22.19.4" mode="display" xml:id="C22.S19.E4">\frac{{\mathrm{d}}^{2}x(t)}{{\mathrm{d}t}^{2}}=-\frac{\mathrm{d}V(x)}{\mathrm{ d}x},</Math> where <Math mode="inline" xml:id="C22.S19.SS2.p1.m1">V(x)</Math> is the potential energy, and <Math mode="inline" xml:id="C22.S19.SS2.p1.m2">x(t)</Math> is the coordinate as a function of time <Math mode="inline" xml:id="C22.S19.SS2.p1.m3">t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C22.S19.SS2.p1.s2">
+The potential <Math equation-number="22.19.5" mode="display" xml:id="C22.S19.E5">V(x)=\pm\tfrac{1}{2}x^{2}\pm\tfrac{1}{4}\beta x^{4}</Math> plays a prototypal role in classical mechanics (Lawden (1989, §5.2)), quantum mechanics (Schulman (1981, Chapter 29)), and quantum field theory (Pokorski (1987, p. 203), Parisi (1988, §14.6)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C22.S19.SS2.p1.s3">
+Its dynamics for purely imaginary time is connected to the theory of instantons (Itzykson and Zuber (1980, p. 572), Schäfer and Shuryak (1998)), to WKB theory, and to large-order perturbation theory (Bender and Wu (1973),Simon (1982)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S19.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C22.S19.SS2.p2.s1">
+For <Math mode="inline" xml:id="C22.S19.SS2.p2.m1">\beta</Math> real and positive, three of the four possible combinations of signs give rise to bounded oscillatory motions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C22.S19.SS2.p2.s2">
+We consider the case of a particle of mass 1, initially held at rest at displacement <Math mode="inline" xml:id="C22.S19.SS2.p2.m2">a</Math> from the origin and then released at time <Math mode="inline" xml:id="C22.S19.SS2.p2.m3">t=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C22.S19.SS2.p2.s3">
+The subsequent position as a function of time, <Math mode="inline" xml:id="C22.S19.SS2.p2.m4">x(t)</Math> , for the three cases is given with results expressed in terms of <Math mode="inline" xml:id="C22.S19.SS2.p2.m5">a</Math> and the dimensionless parameter <Math mode="inline" xml:id="C22.S19.SS2.p2.m6">\eta=\frac{1}{2}\beta a^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C22.S19.Px1">
+<title>Case I: <Math mode="inline" xml:id="C22.S19.Px1.m1">V(x)=\frac{1}{2}x^{2}+\frac{1}{4}\beta x^{4}</Math></title>    
+<para xml:id="C22.S19.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C22.S19.Px1.p1.s1">
+This is an example of Duffing’s equation; seeAblowitz and Clarkson (1991, pp. 150–152) andLawden (1989, pp. 117–119).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C22.S19.Px1.p1.s2">
+The subsequent time evolution is always oscillatory with period <Math mode="inline" xml:id="C22.S19.Px1.p1.m1">4\!K\left(k\right)/\sqrt{1+2\eta}</Math> and modulus <Math mode="inline" xml:id="C22.S19.Px1.p1.m2">k=1/\sqrt{2+\eta^{-1}}</Math> : <Math equation-number="22.19.6" mode="display" xml:id="C22.S19.E6">x(t)=a\operatorname{cn}\left(t\sqrt{1+2\eta},k\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S19.Px2">
+<title>Case II: <Math mode="inline" xml:id="C22.S19.Px2.m1">V(x)=\frac{1}{2}x^{2}-\frac{1}{4}\beta x^{4}</Math></title>   
+<para xml:id="C22.S19.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C22.S19.Px2.p1.s1">
+There is bounded oscillatory motion near <Math mode="inline" xml:id="C22.S19.Px2.p1.m1">x=0</Math> , with period <Math mode="inline" xml:id="C22.S19.Px2.p1.m2">4\!K\left(k\right)/\sqrt{1-\eta}</Math> , and modulus <Math mode="inline" xml:id="C22.S19.Px2.p1.m3">k=1/\sqrt{\eta^{-1}-1}</Math> , for initial displacements with <Math mode="inline" xml:id="C22.S19.Px2.p1.m4">|a|\leq\sqrt{1/\beta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C22.S19.Px2.p1.s2">
+<Math equation-number="22.19.7" mode="display" xml:id="C22.S19.E7">x(t)=a\operatorname{sn}\left(t\sqrt{1-\eta},k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C22.S19.Px2.p1.s3">
+As <Math mode="inline" xml:id="C22.S19.Px2.p1.m5">a\to\sqrt{1/\beta}</Math> from below the period diverges since <Math mode="inline" xml:id="C22.S19.Px2.p1.m6">a=\pm\sqrt{1/\beta}</Math> are points of unstable equilibrium.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C22.S19.Px3">
+<title>Case III: <Math mode="inline" xml:id="C22.S19.Px3.m1">V(x)=-\frac{1}{2}x^{2}+\frac{1}{4}\beta x^{4}</Math></title>   
+<para xml:id="C22.S19.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C22.S19.Px3.p1.s1">
+Two types of oscillatory motion are possible.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C22.S19.Px3.p1.s2">
+For an initial displacement with <Math mode="inline" xml:id="C22.S19.Px3.p1.m1">\sqrt{1/\beta}\leq|a|&lt;\sqrt{2/\beta}</Math> , bounded oscillations take place near one of the two points of stable equilibrium <Math mode="inline" xml:id="C22.S19.Px3.p1.m2">x=\pm\sqrt{1/\beta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C22.S19.Px3.p1.s3">
+Such oscillations, of period <Math mode="inline" xml:id="C22.S19.Px3.p1.m3">2\!K\left(k\right)/\sqrt{\eta}</Math> , with modulus <Math mode="inline" xml:id="C22.S19.Px3.p1.m4">k=1/\sqrt{2-\eta^{-1}}</Math> are given by: <Math equation-number="22.19.8" mode="display" xml:id="C22.S19.E8">x(t)=a\operatorname{dn}\left(t\sqrt{\eta},k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="28" xml:id="C22.S19.Px3.p1.s4">
+As <Math mode="inline" xml:id="C22.S19.Px3.p1.m5">a\to\sqrt{2/\beta}</Math> from below the period diverges since <Math mode="inline" xml:id="C22.S19.Px3.p1.m6">x=0</Math> is a point of unstable equlilibrium.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="29" xml:id="C22.S19.Px3.p1.s5">
+For initial displacement with <Math mode="inline" xml:id="C22.S19.Px3.p1.m7">|a|\geq\sqrt{2/\beta}</Math> the motion extends over the full range <Math mode="inline" xml:id="C22.S19.Px3.p1.m8">-a\leq x\leq a</Math> : <Math equation-number="22.19.9" mode="display" xml:id="C22.S19.E9">x(t)=a\operatorname{cn}\left(t\sqrt{2\eta-1},k\right),</Math> with period <Math mode="inline" xml:id="C22.S19.Px3.p1.m9">4\!K\left(k\right)/\sqrt{2\eta-1}</Math> and modulus <Math mode="inline" xml:id="C22.S19.Px3.p1.m10">k=1/\sqrt{2-\eta^{-1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="30" xml:id="C22.S19.Px3.p1.s6">
+As <Math mode="inline" xml:id="C22.S19.Px3.p1.m11">\left|a\right|\to\sqrt{1/\beta}</Math> from above the period again diverges.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="31" xml:id="C22.S19.Px3.p1.s7">
+Both the <Math mode="inline" xml:id="C22.S19.Px3.p1.m12">\operatorname{dn}</Math> and <Math mode="inline" xml:id="C22.S19.Px3.p1.m13">\operatorname{cn}</Math> solutions approach <Math mode="inline" xml:id="C22.S19.Px3.p1.m14">a\operatorname{sech}t</Math> as <Math mode="inline" xml:id="C22.S19.Px3.p1.m15">a\to\sqrt{2/\beta}</Math> from the appropriate directions.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S19.SS3">
+<title>Nonlinear ODEs and PDEs</title>        
+   
+   
+<para xml:id="C22.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C22.S19.SS3.p1.s1">
+Many nonlinear ordinary and partial differential equations have solutions that may be expressed in terms of Jacobian elliptic functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C22.S19.SS3.p1.s2">
+These include the time dependent, and time independent, nonlinear Schrödinger equations (NLSE) (Drazin and Johnson (1993, Chapter 2), Ablowitz and Clarkson (1991, pp. 42, 99)), the Korteweg–de Vries (KdV) equation (Kruskal (1974),Li and Olver (2000)), the sine-Gordon equation, and others; seeDrazin and Johnson (1993, Chapter 2) for an overview.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="34" xml:id="C22.S19.SS3.p1.s3">
+Such solutions includestanding or stationary waves, periodic cnoidal waves, and single and multi-solitons occurring in diverse physical situations such as water waves, optical pulses, quantum fluids, and electrical impulses (Hasegawa (1989), Carr et al. (2000), Kivshar and Luther-Davies (1998), andBoyd (1998, Appendix D2.2)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S19.SS4">
+<title>Tops</title>        
+   
+<para xml:id="C22.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C22.S19.SS4.p1.s1">
+The classical rotation of rigid bodies in free space or about a fixed point may be described in terms of elliptic, or hyperelliptic, functions if the motion is integrable (Audin (1999, Chapter 1)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C22.S19.SS4.p1.s2">
+Hyperelliptic functions <Math mode="inline" xml:id="C22.S19.SS4.p1.m1">u(z)</Math> are solutions of the equation <Math mode="inline" xml:id="C22.S19.SS4.p1.m2">z=\int_{0}^{u}(f(x))^{-1/2}\mathrm{d}x</Math> , where <Math mode="inline" xml:id="C22.S19.SS4.p1.m3">f(x)</Math> is a polynomial of degree higher than 4. Elementary discussions of this topic appear in Lawden (1989, §5.7),Greenhill (1959, pp. 101–103), andWhittaker (1964, Chapter VI).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="37" xml:id="C22.S19.SS4.p1.s3">
+A more abstract overview isAudin (1999, Chapters III and IV), and a complete discussion of analytical solutions in the elliptic and hyperelliptic cases appears inGolubev (1960, Chapters V and VII), the original hyperelliptic investigation being due to Kowalevski (1889).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S19.SS5">
+<title>Other Applications</title>        
+    
+<para xml:id="C22.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C22.S19.SS5.p1.s1">
+Numerous other physical or engineering applications involving Jacobian elliptic functions, and their inverses, to problems of classical dynamics, electrostatics, and hydrodynamics appear inBowman (1953, Chapters VII and VIII) andLawden (1989, Chapter 5).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C22.S19.SS5.p1.s2">
+Whittaker (1964, Chapter IV) enumerates the complete class of one-body classical mechanical problems that are solvable this way.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

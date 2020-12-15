@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S7">
+<title>Asymptotic Expansions for Large Argument</title>          
+<subsection xml:id="C13.S7.SS1">
+<title>Poincaré-Type Expansions</title>         
+<para xml:id="C13.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S7.SS1.p1.s1">
+As <Math mode="inline" xml:id="C13.S7.SS1.p1.m1">x\to\infty</Math> <Math equation-number="13.7.1" mode="display" xml:id="C13.S7.E1">{\mathbf{M}}\left(a,b,x\right)\sim\frac{e^{x}x^{a-b}}{\Gamma\left(a\right)} \sum_{s=0}^{\infty}\frac{{\left(1-a\right)_{s}}{\left(b-a\right)_{s}}}{s!}x^{- s},</Math> provided that <Math mode="inline" xml:id="C13.S7.SS1.p1.m2">a\neq 0,-1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C13.S7.SS1.p2.s1">
+As <Math mode="inline" xml:id="C13.S7.SS1.p2.m1">z\to\infty</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C13.S7.SS1.p3.s1">
+ <Math equation-number="13.7.2" mode="display" xml:id="C13.S7.E2">{\mathbf{M}}\left(a,b,z\right)\sim\frac{e^{z}z^{a-b}}{\Gamma\left(a\right)} \sum_{s=0}^{\infty}\frac{{\left(1-a\right)_{s}}{\left(b-a\right)_{s}}}{s!}z^{- s}+\frac{e^{\pm\pi\mathrm{i}a}z^{-a}}{\Gamma\left(b-a\right)}\sum_{s=0}^{ \infty}\frac{{\left(a\right)_{s}}{\left(a-b+1\right)_{s}}}{s!}(-z)^{-s}, if -\frac{1}{2}\pi+\delta\leq\pm\operatorname{ph}z\leq\frac{3}{2}\pi-\delta,</Math> unless <Math mode="inline" xml:id="C13.S7.SS1.p3.m1">a=0,-1,\dots</Math> and <Math mode="inline" xml:id="C13.S7.SS1.p3.m2">b-a=0,-1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C13.S7.SS1.p3.s2">
+Here <Math mode="inline" xml:id="C13.S7.SS1.p3.m3">\delta</Math> denotes an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C13.S7.SS1.p3.s3">
+Also, <Math equation-number="13.7.3" mode="display" xml:id="C13.S7.E3">U\left(a,b,z\right)\sim z^{-a}\sum_{s=0}^{\infty}\frac{{\left(a\right)_{s}}{ \left(a-b+1\right)_{s}}}{s!}(-z)^{-s}, if |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C13.S7.SS2">
+<title>Error Bounds</title>                   
+<sentence sentence-num-in-section="6" xml:id="C13.S7.F1.s1">
+Figure 13.7.1: Regions <Math mode="inline" xml:id="C13.S7.F1.m2">{\textbf{R}}_{1}</Math> , <Math mode="inline" xml:id="C13.S7.F1.m3">{\textbf{R}}_{2}</Math> , <Math mode="inline" xml:id="C13.S7.F1.m4">\overline{\textbf{R}}_{2}</Math> , <Math mode="inline" xml:id="C13.S7.F1.m5">{\textbf{R}}_{3}</Math> , and <Math mode="inline" xml:id="C13.S7.F1.m6">\overline{\textbf{R}}_{3}</Math> are the closures of the indicated unshaded regions bounded by the straight lines and circular arcs centered at the origin, with <Math mode="inline" xml:id="C13.S7.F1.m7">r=|b-2a|</Math> .
+</sentence>  
+<para xml:id="C13.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S7.SS2.p1.s1">
+ <Math equation-number="13.7.4" mode="display" xml:id="C13.S7.E4">U\left(a,b,z\right)=z^{-a}\sum_{s=0}^{n-1}\frac{{\left(a\right)_{s}}{\left(a-b +1\right)_{s}}}{s!}(-z)^{-s}+\varepsilon_{n}(z)</Math> , where <Math equation-number="13.7.5" mode="display" xml:id="C13.S7.E5">\left|\varepsilon_{n}(z)\right|,~{}\beta^{-1}\left|\varepsilon_{n}^{\prime}(z) \right|\leq 2\alpha C_{n}\left|\frac{{\left(a\right)_{n}}{\left(a-b+1\right)_{ n}}}{n!z^{a+n}}\right|\exp\left(\frac{2\alpha\rho C_{1}}{|z|}\right),</Math> and with the notation of Figure 13.7.1
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C13.S7.SS2.p1.s2">
+<Math equation-number="13.7.6" mode="display" xml:id="C13.S7.E6">C_{n}=1,\quad\chi(n),\quad\left(\chi(n)+\sigma\nu^{2}n\right)\nu^{n},</Math> according as <Math equation-number="13.7.7" mode="display" xml:id="C13.S7.E7">z\in\textbf{R}_{1},\quad z\in\textbf{R}_{2}\cup\overline{\textbf{R}}_{2},\quad z \in\textbf{R}_{3}\cup\overline{\textbf{R}}_{3},</Math> respectively, with <Math equation-number="13.7.8" mode="display" xml:id="C13.S7.E8">\sigma=\left|\ifrac{(b-2a)}{z}\right|, ,\nu=\left(\tfrac{1}{2}+\tfrac{1}{2}\sqrt{1-4\sigma^{2}}\right)^{-\ifrac{1}{2}}, ,\chi(n)=\sqrt{\pi}\Gamma\left(\tfrac{1}{2}n+1\right)/\Gamma\left(\tfrac{1}{2}n +\tfrac{1}{2}\right), </Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C13.S7.SS2.p1.s3">
+Also, when <Math mode="inline" xml:id="C13.S7.SS2.p1.m1">z\in\textbf{R}_{1}\cup\textbf{R}_{2}\cup\overline{\textbf{R}}_{2}</Math> <Math equation-number="13.7.9" mode="display" xml:id="C13.S7.E9">\alpha=\frac{1}{1-\sigma}, ,\beta=\frac{1-\sigma^{2}+\sigma|z|^{-1}}{2(1-\sigma)}, ,\rho=\tfrac{1}{2}\left|2a^{2}-2ab+b\right|+\frac{\sigma(1+\frac{1}{4}\sigma)}{ (1-\sigma)^{2}}, ,</Math> and when <Math mode="inline" xml:id="C13.S7.SS2.p1.m2">z\in\textbf{R}_{3}\cup\overline{\textbf{R}}_{3}</Math> <Math mode="inline" xml:id="C13.S7.SS2.p1.m3">\sigma</Math> is replaced by <Math mode="inline" xml:id="C13.S7.SS2.p1.m4">\nu\sigma</Math> and <Math mode="inline" xml:id="C13.S7.SS2.p1.m5">|z|^{-1}</Math> is replaced by <Math mode="inline" xml:id="C13.S7.SS2.p1.m6">\nu|z|^{-1}</Math> everywhere in (13.7.9).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C13.S7.SS2.p2.s1">
+For numerical values of <Math mode="inline" xml:id="C13.S7.SS2.p2.m1">\chi(n)</Math> see Table 9.7.1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S7.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C13.S7.SS2.p3.s1">
+Corresponding error bounds for (13.7.2) can be constructed by combining (13.2.41) with (13.7.4)–(13.7.9).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C13.S7.SS3">
+<title>Exponentially-Improved Expansion</title>          
+<para xml:id="C13.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C13.S7.SS3.p1.s1">
+Let <Math equation-number="13.7.10" mode="display" xml:id="C13.S7.E10">U\left(a,b,z\right)=z^{-a}\sum_{s=0}^{n-1}\frac{{\left(a\right)_{s}}{\left(a-b +1\right)_{s}}}{s!}(-z)^{-s}+R_{n}(a,b,z)</Math> , and <Math equation-number="13.7.11" mode="display" xml:id="C13.S7.E11">R_{n}(a,b,z)=\frac{(-1)^{n}2\pi z^{a-b}}{\Gamma\left(a\right)\Gamma\left(a-b+1 \right)}\left(\sum_{s=0}^{m-1}\frac{{\left(1-a\right)_{s}}{\left(b-a\right)_{s }}}{s!}(-z)^{-s}G_{n+2a-b-s}(z)+{\left(1-a\right)_{m}}{\left(b-a\right)_{m}}R_ {m,n}(a,b,z)\right),</Math> where <Math mode="inline" xml:id="C13.S7.SS3.p1.m1">m</Math> is an arbitrary nonnegative integer, and <Math equation-number="13.7.12" mode="display" xml:id="C13.S7.E12">G_{p}(z)=\frac{e^{z}}{2\pi}\Gamma\left(p\right)\Gamma\left(1-p,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C13.S7.SS3.p1.s2">
+(For the notation see §8.2(i).)Then as <Math mode="inline" xml:id="C13.S7.SS3.p1.m2">z\to\infty</Math> with <Math mode="inline" xml:id="C13.S7.SS3.p1.m3">\left|\left|z\right|-n\right|</Math> bounded and <Math mode="inline" xml:id="C13.S7.SS3.p1.m4">a,b,m</Math> fixed <Math equation-number="13.7.13" mode="display" xml:id="C13.S7.E13">R_{m,n}(a,b,z)=\begin{cases}O\left(e^{-|z|}z^{-m}\right),&amp;|\operatorname{ph}z| \leq\pi,\\ O\left(e^{z}z^{-m}\right),&amp;\pi\leq|\operatorname{ph}z|\leq\tfrac{5}{2}\pi- \delta.\\ \end{cases}</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C13.S7.SS3.p2.s1">
+For proofs see Olver (1991b, 1993a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C13.S7.SS3.p2.s2">
+For the special case <Math mode="inline" xml:id="C13.S7.SS3.p2.m1">\operatorname{ph}z=\pm\pi</Math> see Paris (2013).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C13.S7.SS3.p2.s3">
+For extensions to hyperasymptotic expansions see Olde Daalhuis and Olver (1995a).
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>

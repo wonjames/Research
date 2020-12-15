@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S2">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C33.S2.SS1">
+<title>Coulomb Wave Equation</title>        
+      
+<para xml:id="C33.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S2.SS1.p1.s1">
+ <Math equation-number="33.2.1" mode="display" xml:id="C33.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\rho}^{2}}+\left(1-\frac{2\eta}{\rho}- \frac{\ell(\ell+1)}{\rho^{2}}\right)w=0, if \ell=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C33.S2.SS1.p1.s2">
+This differential equation has a regular singularity at <Math mode="inline" xml:id="C33.S2.SS1.p1.m1">\rho=0</Math> with indices <Math mode="inline" xml:id="C33.S2.SS1.p1.m2">\ell+1</Math> and <Math mode="inline" xml:id="C33.S2.SS1.p1.m3">-\ell</Math> , and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C33.S2.SS1.p1.m4">\rho=\infty</Math> (§§2.7(i), 2.7(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C33.S2.SS1.p1.s3">
+There are two turning points, that is, points at which <Math mode="inline" xml:id="C33.S2.SS1.p1.m5">\ifrac{{\mathrm{d}}^{2}w}{{\mathrm{d}\rho}^{2}}=0</Math> (§2.8(i)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C33.S2.SS1.p1.s4">
+The outer one is given by <Math equation-number="33.2.2" mode="display" xml:id="C33.S2.E2">\rho_{\mathrm{tp}}\left(\eta,\ell\right)=\eta+(\eta^{2}+\ell(\ell+1))^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS2">
+<title>Regular Solution <Math mode="inline" xml:id="C33.S2.SS2.m1">F_{\ell}\left(\eta,\rho\right)</Math></title>            
+<para xml:id="C33.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S2.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C33.S2.SS2.p1.m1">F_{\ell}\left(\eta,\rho\right)</Math> is recessive (§2.7(iii)) at <Math mode="inline" xml:id="C33.S2.SS2.p1.m2">\rho=0</Math> , and is defined by <Math equation-number="33.2.3" mode="display" xml:id="C33.S2.E3">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)2^{-\ell-1}(\mp\mathrm {i})^{\ell+1}M_{\pm\mathrm{i}\eta,\ell+\frac{1}{2}}\left(\pm 2\mathrm{i}\rho \right),</Math> or equivalently <Math equation-number="33.2.4" mode="display" xml:id="C33.S2.E4">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\rho^{\ell+1}e^{\mp \mathrm{i}\rho}M\left(\ell+1\mp\mathrm{i}\eta,2\ell+2,\pm 2\mathrm{i}\rho \right),</Math> where <Math mode="inline" xml:id="C33.S2.SS2.p1.m5">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS2.p1.m6">M\left(a,b,z\right)</Math> are defined in §§13.14(i) and 13.2(i), and <Math equation-number="33.2.5" mode="display" xml:id="C33.S2.E5">C_{\ell}\left(\eta\right)=\frac{2^{\ell}e^{-\pi\eta/2}|\Gamma\left(\ell+1+ \mathrm{i}\eta\right)|}{(2\ell+1)!}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C33.S2.SS2.p1.s2">
+The choice of ambiguous signs in (33.2.3) and (33.2.4) is immaterial, provided that either all upper signs are taken, or all lower signs are taken.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C33.S2.SS2.p1.s3">
+This is a consequence of Kummer’s transformation (§13.2(vii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S2.SS2.p2.s1">
+ <Math mode="inline" xml:id="C33.S2.SS2.p2.m1">F_{\ell}\left(\eta,\rho\right)</Math> is a real and analytic function of <Math mode="inline" xml:id="C33.S2.SS2.p2.m2">\rho</Math> on the open interval <Math mode="inline" xml:id="C33.S2.SS2.p2.m3">0&lt;\rho&lt;\infty</Math> , and also an analytic function of <Math mode="inline" xml:id="C33.S2.SS2.p2.m4">\eta</Math> when <Math mode="inline" xml:id="C33.S2.SS2.p2.m5">-\infty&lt;\eta&lt;\infty</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C33.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C33.S2.SS2.p3.s1">
+The normalizing constant <Math mode="inline" xml:id="C33.S2.SS2.p3.m1">C_{\ell}\left(\eta\right)</Math> is always positive, and has the alternative form <Math equation-number="33.2.6" mode="display" xml:id="C33.S2.E6">C_{\ell}\left(\eta\right)=\dfrac{2^{\ell}\left((2\pi\eta/(e^{2\pi\eta}-1)) \prod_{k=1}^{\ell}(\eta^{2}+k^{2})\right)^{\ifrac{1}{2}}}{(2\ell+1)!}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS3">
+<title>Irregular Solutions <Math mode="inline" xml:id="C33.S2.SS3.m1">G_{\ell}\left(\eta,\rho\right),{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math></title>            
+<para xml:id="C33.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C33.S2.SS3.p1.s1">
+The functions <Math mode="inline" xml:id="C33.S2.SS3.p1.m1">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> are defined by <Math equation-number="33.2.7" mode="display" xml:id="C33.S2.E7">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=(\mp\mathrm{i})^{\ell}e^{(\pi\eta/2)\pm \mathrm{i}{\sigma_{\ell}}\left(\eta\right)}W_{\mp\mathrm{i}\eta,\ell+\frac{1}{ 2}}\left(\mp 2\mathrm{i}\rho\right),</Math> or equivalently <Math equation-number="33.2.8" mode="display" xml:id="C33.S2.E8">{H^{\pm}_{\ell}}\left(\eta,\rho\right)=e^{\pm\mathrm{i}{\theta_{\ell}}\left( \eta,\rho\right)}(\mp 2\mathrm{i}\rho)^{\ell+1\pm\mathrm{i}\eta}U\left(\ell+1 \pm\mathrm{i}\eta,2\ell+2,\mp 2\mathrm{i}\rho\right),</Math> where <Math mode="inline" xml:id="C33.S2.SS3.p1.m4">W_{\kappa,\mu}\left(z\right)</Math> , <Math mode="inline" xml:id="C33.S2.SS3.p1.m5">U\left(a,b,z\right)</Math> are defined in §§13.14(i) and 13.2(i),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C33.S2.SS3.p1.s2">
+<Math equation-number="33.2.9" mode="display" xml:id="C33.S2.E9">{\theta_{\ell}}\left(\eta,\rho\right)=\rho-\eta\ln\left(2\rho\right)-\tfrac{1} {2}\ell\pi+{\sigma_{\ell}}\left(\eta\right),</Math> and <Math equation-number="33.2.10" mode="display" xml:id="C33.S2.E10">{\sigma_{\ell}}\left(\eta\right)=\operatorname{ph}\Gamma\left(\ell+1+\mathrm{i }\eta\right),</Math> the branch of the phase in (33.2.10) being zero when <Math mode="inline" xml:id="C33.S2.SS3.p1.m6">\eta=0</Math> and continuous elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C33.S2.SS3.p1.s3">
+<Math mode="inline" xml:id="C33.S2.SS3.p1.m7">{\sigma_{\ell}}\left(\eta\right)</Math> is the Coulomb phase shift.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C33.S2.SS3.p2.s1">
+ <Math mode="inline" xml:id="C33.S2.SS3.p2.m1">{H^{+}_{\ell}}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS3.p2.m2">{H^{-}_{\ell}}\left(\eta,\rho\right)</Math> are complex conjugates, and their real and imaginary parts are given by <Math equation-number="33.2.11" mode="display" xml:id="C33.S2.E11">{H^{+}_{\ell}}\left(\eta,\rho\right)=G_{\ell}\left(\eta,\rho\right)+\mathrm{i} F_{\ell}\left(\eta,\rho\right),{H^{-}_{\ell}}\left(\eta,\rho\right)=G_{\ell}\left(\eta,\rho\right)-\mathrm{i} F_{\ell}\left(\eta,\rho\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C33.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C33.S2.SS3.p3.s1">
+As in the case of <Math mode="inline" xml:id="C33.S2.SS3.p3.m1">F_{\ell}\left(\eta,\rho\right)</Math> , the solutions <Math mode="inline" xml:id="C33.S2.SS3.p3.m2">{H^{\pm}_{\ell}}\left(\eta,\rho\right)</Math> and <Math mode="inline" xml:id="C33.S2.SS3.p3.m3">G_{\ell}\left(\eta,\rho\right)</Math> are analytic functions of <Math mode="inline" xml:id="C33.S2.SS3.p3.m4">\rho</Math> when <Math mode="inline" xml:id="C33.S2.SS3.p3.m5">0&lt;\rho&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C33.S2.SS3.p3.s2">
+Also, <Math mode="inline" xml:id="C33.S2.SS3.p3.m6">e^{\mp\mathrm{i}{\sigma_{\ell}}\left(\eta\right)}{H^{\pm}_{\ell}}\left(\eta, \rho\right)</Math> are analytic functions of <Math mode="inline" xml:id="C33.S2.SS3.p3.m7">\eta</Math> when <Math mode="inline" xml:id="C33.S2.SS3.p3.m8">-\infty&lt;\eta&lt;\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S2.SS4">
+<title>Wronskians and Cross-Product</title>           
+<para xml:id="C33.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C33.S2.SS4.p1.s1">
+With arguments <Math mode="inline" xml:id="C33.S2.SS4.p1.m1">\eta,\rho</Math> suppressed, <Math equation-number="33.2.12" mode="display" xml:id="C33.S2.E12">\mathscr{W}\left\{G_{\ell},F_{\ell}\right\}=\mathscr{W}\left\{{H^{\pm}_{\ell}} ,F_{\ell}\right\}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C33.S2.SS4.p1.s2">
+<Math equation-number="33.2.13" mode="display" xml:id="C33.S2.E13">F_{\ell-1}G_{\ell}-F_{\ell}G_{\ell-1}=\ell/(\ell^{2}+\eta^{2})^{1/2}, if \ell\geq 1</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>

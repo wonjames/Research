@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S23">
+<title>Hahn Class: Generating Functions</title>        
+  
+<para xml:id="C18.S23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S23.p1.s1">
+For the definition of generalized hypergeometric functions see §16.2.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S23.Px1">
+<title>Hahn</title>   
+ 
+<para xml:id="C18.S23.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S23.Px1.p1.s1">
+ <Math equation-number="18.23.1" mode="display" xml:id="C18.S23.E1">{{}_{1}F_{1}}\left({-x\atop\alpha+1};-z\right){{}_{1}F_{1}}\left({x-N\atop \beta+1};z\right)=\sum_{n=0}^{N}\frac{{\left(-N\right)_{n}}}{{\left(\beta+1 \right)_{n}}n!}Q_{n}\left(x;\alpha,\beta,N\right)z^{n}, if x=0,1,\dots,N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S23.Px1.p1.s2">
+<Math equation-number="18.23.2" mode="display" xml:id="C18.S23.E2">{{}_{2}F_{0}}\left({-x,-x+\beta+N+1\atop-};-z\right)\*{{}_{2}F_{0}}\left({x-N, x+\alpha+1\atop-};z\right)=\sum_{n=0}^{N}\frac{{\left(-N\right)_{n}}{\left( \alpha+1\right)_{n}}}{n!}Q_{n}\left(x;\alpha,\beta,N\right)z^{n}, if x=0,1,\dots,N</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S23.Px2">
+<title>Krawtchouk</title>   
+<para xml:id="C18.S23.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S23.Px2.p1.s1">
+ <Math equation-number="18.23.3" mode="display" xml:id="C18.S23.E3">\left(1-\frac{1-p}{p}z\right)^{x}(1+z)^{N-x}=\sum_{n=0}^{N}\genfrac{(}{)}{0.0 pt}{}{N}{n}K_{n}\left(x;p,N\right)z^{n}, if x=0,1,\dots,N</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S23.Px3">
+<title>Meixner</title>   
+<para xml:id="C18.S23.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S23.Px3.p1.s1">
+ <Math equation-number="18.23.4" mode="display" xml:id="C18.S23.E4">\left(1-\frac{z}{c}\right)^{x}(1-z)^{-x-\beta}=\sum_{n=0}^{\infty}\frac{{\left (\beta\right)_{n}}}{n!}M_{n}\left(x;\beta,c\right)z^{n}, if x=0,1,2,\dots, |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S23.Px4">
+<title>Charlier</title>   
+<para xml:id="C18.S23.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S23.Px4.p1.s1">
+ <Math equation-number="18.23.5" mode="display" xml:id="C18.S23.E5">e^{z}\left(1-\frac{z}{a}\right)^{x}=\sum_{n=0}^{\infty}\frac{C_{n}\left(x;a \right)}{n!}z^{n}, if x=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S23.Px5">
+<title>Continuous Hahn</title>  
+ 
+<para xml:id="C18.S23.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S23.Px5.p1.s1">
+ <Math equation-number="18.23.6" mode="display" xml:id="C18.S23.E6">{{}_{1}F_{1}}\left({a+\mathrm{i}x\atop 2\Re a};-\mathrm{i}z\right){{}_{1}F_{1} }\left({\overline{b}-\mathrm{i}x\atop 2\Re b};\mathrm{i}z\right)=\sum_{n=0}^{ \infty}\frac{p_{n}\left(x;a,b,\overline{a},\overline{b}\right)}{{\left(2\Re a \right)_{n}}{\left(2\Re b\right)_{n}}}z^{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S23.Px6">
+<title>Meixner–Pollaczek</title>   
+<para xml:id="C18.S23.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S23.Px6.p1.s1">
+ <Math equation-number="18.23.7" mode="display" xml:id="C18.S23.E7">(1-e^{\mathrm{i}\phi}z)^{-\lambda+\mathrm{i}x}(1-e^{-\mathrm{i}\phi}z)^{- \lambda-\mathrm{i}x}=\sum_{n=0}^{\infty}P^{(\lambda)}_{n}\left(x;\phi\right)z^ {n}, if |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

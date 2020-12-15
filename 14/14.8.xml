@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S8">
+<title>Behavior at Singularities</title>          
+<subsection xml:id="C14.S8.SS1">
+<title><Math mode="inline" xml:id="C14.S8.SS1.m1">x\to 1-</Math> or <Math mode="inline" xml:id="C14.S8.SS1.m2">x\to-1+</Math></title>        
+ 
+<para xml:id="C14.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S8.SS1.p1.s1">
+As <Math mode="inline" xml:id="C14.S8.SS1.p1.m1">x\to 1-</Math> , <Math equation-number="14.8.1" mode="display" xml:id="C14.S8.E1">\mathsf{P}^{\mu}_{\nu}\left(x\right)\sim\frac{1}{\Gamma\left(1-\mu\right)} \left(\frac{2}{1-x}\right)^{\mu/2}, if \mu\neq 1,2,3,\dots,</Math> , <Math equation-number="14.8.2" mode="display" xml:id="C14.S8.E2">\mathsf{P}^{m}_{\nu}\left(x\right)\sim(-1)^{m}\frac{{\left(\nu-m+1\right)_{2m} }}{m!}\left(\frac{1-x}{2}\right)^{m/2}, if m=1,2,3,\dots, \nu\neq m-1,m-2,\dots,-m,</Math> , <Math equation-number="14.8.3" mode="display" xml:id="C14.S8.E3">\mathsf{Q}_{\nu}\left(x\right)=\frac{1}{2}\ln\left(\frac{2}{1-x}\right)-\gamma -\psi\left(\nu+1\right)+O\left(1-x\right), if \nu\neq-1,-2,-3,\dots,</Math> where <Math mode="inline" xml:id="C14.S8.SS1.p1.m2">\gamma</Math> is Euler’s constant (§5.2(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S8.SS1.p1.s2">
+In the nextthree relations <Math mode="inline" xml:id="C14.S8.SS1.p1.m3">\Re\mu&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S8.SS1.p1.s3">
+<Math equation-number="14.8.4" mode="display" xml:id="C14.S8.E4">\mathsf{Q}^{\mu}_{\nu}\left(x\right)\sim\frac{1}{2}\cos\left(\mu\pi\right) \Gamma\left(\mu\right)\left(\frac{2}{1-x}\right)^{\mu/2}, if \mu\neq\tfrac{1}{2},\tfrac{3}{2},\tfrac{5}{2},\dots,</Math> <Math equation-number="14.8.5" mode="display" xml:id="C14.S8.E5">\mathsf{Q}^{\mu}_{\nu}\left(x\right)\sim(-1)^{\mu+(1/2)}\frac{\pi\Gamma\left( \nu+\mu+1\right)}{2\Gamma\left(\mu+1\right)\Gamma\left(\nu-\mu+1\right)}\left( \frac{1-x}{2}\right)^{\mu/2}, if \mu=\tfrac{1}{2},\tfrac{3}{2},\tfrac{5}{2},\dots, \nu\pm\mu\neq-1,-2,-3,\dots,</Math> <Math equation-number="14.8.6" mode="display" xml:id="C14.S8.E6">\mathsf{Q}^{-\mu}_{\nu}\left(x\right)\sim\frac{\Gamma\left(\mu\right)\Gamma \left(\nu-\mu+1\right)}{2\Gamma\left(\nu+\mu+1\right)}\left(\frac{2}{1-x} \right)^{\mu/2}, if \nu\pm\mu\neq-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C14.S8.SS1.p2.s1">
+The behavior of <Math mode="inline" xml:id="C14.S8.SS1.p2.m1">\mathsf{P}^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S8.SS1.p2.m2">\mathsf{Q}^{\mu}_{\nu}\left(x\right)</Math> as <Math mode="inline" xml:id="C14.S8.SS1.p2.m3">x\to-1+</Math> follows from the above results and the connection formulas (14.9.8) and (14.9.10).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S8.SS2">
+<title><Math mode="inline" xml:id="C14.S8.SS2.m1">x\to 1+</Math></title>         
+<para xml:id="C14.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S8.SS2.p1.s1">
+ <Math equation-number="14.8.7" mode="display" xml:id="C14.S8.E7">P^{\mu}_{\nu}\left(x\right)\sim\frac{1}{\Gamma\left(1-\mu\right)}\left(\frac{2 }{x-1}\right)^{\mu/2}, if \mu\neq 1,2,3,\dots,</Math> , <Math equation-number="14.8.8" mode="display" xml:id="C14.S8.E8">P^{m}_{\nu}\left(x\right)\sim\frac{\Gamma\left(\nu+m+1\right)}{m!\Gamma\left( \nu-m+1\right)}\left(\frac{x-1}{2}\right)^{m/2}, if m=1,2,3,\dots, \nu\pm m\neq-1,-2,-3,\dots,</Math> , <Math equation-number="14.8.9" mode="display" xml:id="C14.S8.E9">\boldsymbol{Q}_{\nu}\left(x\right)=-\frac{\ln\left(x-1\right)}{2\Gamma\left( \nu+1\right)}+\frac{\frac{1}{2}\ln 2-\gamma-\psi\left(\nu+1\right)}{\Gamma \left(\nu+1\right)}+O\left(x-1\right), if \nu\neq-1,-2,-3,\dots,</Math> <Math equation-number="14.8.10" mode="display" xml:id="C14.S8.E10">\boldsymbol{Q}_{-n}\left(x\right)\to(-1)^{n+1}(n-1)!, if n=1,2,3,\dots,</Math> <Math equation-number="14.8.11" mode="display" xml:id="C14.S8.E11">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)\sim\frac{\Gamma\left(\mu\right)}{2 \Gamma\left(\nu+\mu+1\right)}\left(\frac{2}{x-1}\right)^{\mu/2}, if \Re\mu&gt;0, \nu+\mu\neq-1,-2,-3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S8.SS3">
+<title><Math mode="inline" xml:id="C14.S8.SS3.m1">x\to\infty</Math></title>         
+<para xml:id="C14.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C14.S8.SS3.p1.s1">
+ <Math equation-number="14.8.12" mode="display" xml:id="C14.S8.E12">P^{\mu}_{\nu}\left(x\right)\sim\frac{\Gamma\left(\nu+\frac{1}{2}\right)}{\pi^{ 1/2}\Gamma\left(\nu-\mu+1\right)}(2x)^{\nu}, if \Re\nu&gt;-\tfrac{1}{2}, \mu-\nu\neq 1,2,3,\dots,</Math> , <Math equation-number="14.8.13" mode="display" xml:id="C14.S8.E13">P^{\mu}_{\nu}\left(x\right)\sim\frac{\Gamma\left(-\nu-\frac{1}{2}\right)}{\pi^ {1/2}\Gamma\left(-\mu-\nu\right)(2x)^{\nu+1}}, if \Re\nu&lt;-\tfrac{1}{2}, \nu+\mu\neq 0,1,2,\dots,</Math> , <Math equation-number="14.8.14" mode="display" xml:id="C14.S8.E14">P^{\mu}_{-1/2}\left(x\right)\sim\frac{1}{\Gamma\left(\frac{1}{2}-\mu\right)} \left(\frac{2}{\pi x}\right)^{1/2}\ln x, if \mu\neq\tfrac{1}{2},\tfrac{3}{2},\tfrac{5}{2},\dots,</Math> <Math equation-number="14.8.15" mode="display" xml:id="C14.S8.E15">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)\sim\frac{\pi^{1/2}}{\Gamma\left(\nu+ \frac{3}{2}\right)(2x)^{\nu+1}}, if \nu\neq-\tfrac{3}{2},-\tfrac{5}{2},-\tfrac{7}{2},\dots,</Math> <Math equation-number="14.8.16" mode="display" xml:id="C14.S8.E16">{\boldsymbol{Q}^{\mu}_{-n-(1/2)}\left(x\right)\sim\frac{\pi^{1/2}\Gamma\left( \mu+n+\frac{1}{2}\right)}{n!\Gamma\left(\mu-n+\frac{1}{2}\right)(2x)^{n+(1/2)} }}, if n=1,2,3,\dots, \mu-n+\frac{1}{2}\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

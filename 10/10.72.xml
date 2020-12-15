@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S72">
+<title>Mathematical Applications</title>        
+ 
+<subsection xml:id="C10.S72.SS1">
+<title>Differential Equations with Turning Points</title>        
+  
+ 
+<para xml:id="C10.S72.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S72.SS1.p1.s1">
+Bessel functions and modified Bessel functions are often used as approximants in the construction of uniform asymptotic approximations and expansions for solutions of linear second-order differential equations containing a parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S72.SS1.p1.s2">
+The canonical form of differential equation for these problems is given by <Math equation-number="10.72.1" mode="display" xml:id="C10.S72.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\left(u^{2}f(z)+g(z)\right)w,</Math> where <Math mode="inline" xml:id="C10.S72.SS1.p1.m1">z</Math> is a real or complex variable and <Math mode="inline" xml:id="C10.S72.SS1.p1.m2">u</Math> is a large real or complex parameter.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S72.Px1">
+<title>Simple Turning Points</title>   
+<para xml:id="C10.S72.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S72.Px1.p1.s1">
+In regions in which (10.72.1) has a simple turning point <Math mode="inline" xml:id="C10.S72.Px1.p1.m1">z_{0}</Math> , that is, <Math mode="inline" xml:id="C10.S72.Px1.p1.m2">f(z)</Math> and <Math mode="inline" xml:id="C10.S72.Px1.p1.m3">g(z)</Math> are analytic (or with weaker conditions if <Math mode="inline" xml:id="C10.S72.Px1.p1.m4">z=x</Math> is a real variable) and <Math mode="inline" xml:id="C10.S72.Px1.p1.m5">z_{0}</Math> is a simple zero of <Math mode="inline" xml:id="C10.S72.Px1.p1.m6">f(z)</Math> , asymptotic expansions of the solutions <Math mode="inline" xml:id="C10.S72.Px1.p1.m7">w</Math> for large <Math mode="inline" xml:id="C10.S72.Px1.p1.m8">u</Math> can be constructed in terms of Airy functions or equivalently Bessel functions or modified Bessel functions of order <Math mode="inline" xml:id="C10.S72.Px1.p1.m9">\tfrac{1}{3}</Math> (§9.6(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C10.S72.Px1.p1.s2">
+These expansions are uniform withrespect to <Math mode="inline" xml:id="C10.S72.Px1.p1.m10">z</Math> , including the turning point <Math mode="inline" xml:id="C10.S72.Px1.p1.m11">z_{0}</Math> and its neighborhood, and the region of validity often includes cut neighborhoods (§1.10(vi)) of other singularities of the differential equation, especially irregular singularities.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S72.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S72.Px1.p2.s1">
+For further information and references see §§2.8(i) and2.8(iii).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S72.Px2">
+<title>Multiple or Fractional Turning Points</title>   
+<para xml:id="C10.S72.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S72.Px2.p1.s1">
+If <Math mode="inline" xml:id="C10.S72.Px2.p1.m1">f(z)</Math> has a double zero <Math mode="inline" xml:id="C10.S72.Px2.p1.m2">z_{0}</Math> , or more generally <Math mode="inline" xml:id="C10.S72.Px2.p1.m3">z_{0}</Math> is a zero of order <Math mode="inline" xml:id="C10.S72.Px2.p1.m4">m</Math> , <Math mode="inline" xml:id="C10.S72.Px2.p1.m5">m=2,3,4,\ldots</Math> , then uniform asymptotic approximations (butnot expansions) can be constructed in terms of Bessel functions, or modified Bessel functions, of order <Math mode="inline" xml:id="C10.S72.Px2.p1.m6">1/(m+2)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S72.Px2.p1.s2">
+The number <Math mode="inline" xml:id="C10.S72.Px2.p1.m7">m</Math> can also be replaced by any real constant <Math mode="inline" xml:id="C10.S72.Px2.p1.m8">\lambda</Math> <Math mode="inline" xml:id="C10.S72.Px2.p1.m9">(&gt;-2)</Math> in the sense that <Math mode="inline" xml:id="C10.S72.Px2.p1.m10">(z-z_{0})^{-\lambda}</Math> <Math mode="inline" xml:id="C10.S72.Px2.p1.m11">f(z)</Math> is analytic and nonvanishing at <Math mode="inline" xml:id="C10.S72.Px2.p1.m12">z_{0}</Math> ; moreover, <Math mode="inline" xml:id="C10.S72.Px2.p1.m13">g(z)</Math> is permitted to have a single or double pole at <Math mode="inline" xml:id="C10.S72.Px2.p1.m14">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S72.Px2.p1.s3">
+The order of the approximating Bessel functions, or modified Bessel functions, is <Math mode="inline" xml:id="C10.S72.Px2.p1.m15">1/(\lambda+2)</Math> , except in the case when <Math mode="inline" xml:id="C10.S72.Px2.p1.m16">g(z)</Math> has a double pole at <Math mode="inline" xml:id="C10.S72.Px2.p1.m17">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C10.S72.Px2.p1.s4">
+See §2.8(v) for references.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S72.SS2">
+<title>Differential Equations with Poles</title>        
+ 
+<para xml:id="C10.S72.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C10.S72.SS2.p1.s1">
+In regions in which the function <Math mode="inline" xml:id="C10.S72.SS2.p1.m1">f(z)</Math> has a simple pole at <Math mode="inline" xml:id="C10.S72.SS2.p1.m2">z=z_{0}</Math> and <Math mode="inline" xml:id="C10.S72.SS2.p1.m3">(z-z_{0})^{2}g(z)</Math> is analytic at <Math mode="inline" xml:id="C10.S72.SS2.p1.m4">z=z_{0}</Math> (the case <Math mode="inline" xml:id="C10.S72.SS2.p1.m5">\lambda=-1</Math> in §10.72(i)), asymptotic expansions of the solutions <Math mode="inline" xml:id="C10.S72.SS2.p1.m6">w</Math> of (10.72.1) for large <Math mode="inline" xml:id="C10.S72.SS2.p1.m7">u</Math> can be constructed in terms of Bessel functions and modified Bessel functions of order <Math mode="inline" xml:id="C10.S72.SS2.p1.m8">\pm\sqrt{1+4\rho}</Math> , where <Math mode="inline" xml:id="C10.S72.SS2.p1.m9">\rho</Math> is the limiting value of <Math mode="inline" xml:id="C10.S72.SS2.p1.m10">(z-z_{0})^{2}g(z)</Math> as <Math mode="inline" xml:id="C10.S72.SS2.p1.m11">z\to z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C10.S72.SS2.p1.s2">
+These asymptotic expansions are uniform with respect to <Math mode="inline" xml:id="C10.S72.SS2.p1.m12">z</Math> , including cut neighborhoods of <Math mode="inline" xml:id="C10.S72.SS2.p1.m13">z_{0}</Math> , and again the region of uniformity often includes cut neighborhoods of other singularities of the differential equation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S72.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S72.SS2.p2.s1">
+For further information and references see §§2.8(i) and2.8(iv).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S72.SS3">
+<title>Differential Equations with a Double Pole and a Movable Turning Point</title>        
+ 
+<para xml:id="C10.S72.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S72.SS3.p1.s1">
+In (10.72.1) assume <Math mode="inline" xml:id="C10.S72.SS3.p1.m1">f(z)=f(z,\alpha)</Math> and <Math mode="inline" xml:id="C10.S72.SS3.p1.m2">g(z)=g(z,\alpha)</Math> depend continuously on a real parameter <Math mode="inline" xml:id="C10.S72.SS3.p1.m3">\alpha</Math> , <Math mode="inline" xml:id="C10.S72.SS3.p1.m4">f(z,\alpha)</Math> has a simple zero <Math mode="inline" xml:id="C10.S72.SS3.p1.m5">z=z_{0}(\alpha)</Math> and a double pole <Math mode="inline" xml:id="C10.S72.SS3.p1.m6">z=0</Math> , except for a critical value <Math mode="inline" xml:id="C10.S72.SS3.p1.m7">\alpha=a</Math> , where <Math mode="inline" xml:id="C10.S72.SS3.p1.m8">z_{0}(a)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S72.SS3.p1.s2">
+Assume that whether or not <Math mode="inline" xml:id="C10.S72.SS3.p1.m9">\alpha=a</Math> , <Math mode="inline" xml:id="C10.S72.SS3.p1.m10">z^{2}g(z,\alpha)</Math> is analytic at <Math mode="inline" xml:id="C10.S72.SS3.p1.m11">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C10.S72.SS3.p1.s3">
+Then for large <Math mode="inline" xml:id="C10.S72.SS3.p1.m12">u</Math> asymptotic approximations of the solutions <Math mode="inline" xml:id="C10.S72.SS3.p1.m13">w</Math> can be constructed in terms of Bessel functions, or modified Bessel functions, of variable order (in fact the order depends on <Math mode="inline" xml:id="C10.S72.SS3.p1.m14">u</Math> and <Math mode="inline" xml:id="C10.S72.SS3.p1.m15">\alpha</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C10.S72.SS3.p1.s4">
+These approximations are uniform with respect to both <Math mode="inline" xml:id="C10.S72.SS3.p1.m16">z</Math> and <Math mode="inline" xml:id="C10.S72.SS3.p1.m17">\alpha</Math> , including <Math mode="inline" xml:id="C10.S72.SS3.p1.m18">z=z_{0}(a)</Math> , the cut neighborhood of <Math mode="inline" xml:id="C10.S72.SS3.p1.m19">z=0</Math> , and <Math mode="inline" xml:id="C10.S72.SS3.p1.m20">\alpha=a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="17" xml:id="C10.S72.SS3.p1.s5">
+See §2.8(vi) for references.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

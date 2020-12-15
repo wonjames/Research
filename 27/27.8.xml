@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S8">
+<title>Dirichlet Characters</title>        
+   
+  
+<para xml:id="C27.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S8.p1.s1">
+If <Math mode="inline" xml:id="C27.S8.p1.m1">k</Math> <Math mode="inline" xml:id="C27.S8.p1.m2">(&gt;1)</Math> is a given integer, then a function <Math mode="inline" xml:id="C27.S8.p1.m3">\chi\left(n\right)</Math> is called a Dirichlet character (mod <Math mode="inline" xml:id="C27.S8.p1.m4">k</Math> ) if it is completely multiplicative, periodic with period <Math mode="inline" xml:id="C27.S8.p1.m5">k</Math> , and vanishes when <Math mode="inline" xml:id="C27.S8.p1.m6">\left(n,k\right)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S8.p1.s2">
+In other words, Dirichlet characters (mod <Math mode="inline" xml:id="C27.S8.p1.m7">k</Math> ) satisfy the four conditions: <Math equation-number="27.8.1" mode="display" xml:id="C27.S8.E1">\chi\left(1\right)=1,</Math> , <Math equation-number="27.8.2" mode="display" xml:id="C27.S8.E2">\chi\left(mn\right)=\chi\left(m\right)\chi\left(n\right), if m,n=1,2,\dots,</Math> , <Math equation-number="27.8.3" mode="display" xml:id="C27.S8.E3">\chi\left(n+k\right)=\chi\left(n\right), if n=1,2,\dots,</Math> , <Math equation-number="27.8.4" mode="display" xml:id="C27.S8.E4">\chi\left(n\right)=0, if \left(n,k\right)&gt;1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C27.S8.p2.s1">
+An example is the principal character (mod <Math mode="inline" xml:id="C27.S8.p2.m1">k</Math> ): <Math equation-number="27.8.5" mode="display" xml:id="C27.S8.E5">\chi_{1}\left(n\right)=\begin{cases}1,&amp;\left(n,k\right)=1,\\ 0,&amp;\left(n,k\right)&gt;1.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C27.S8.p3.s1">
+For any character <Math mode="inline" xml:id="C27.S8.p3.m1">\chi\pmod{k}</Math> , <Math mode="inline" xml:id="C27.S8.p3.m2">\chi\left(n\right)\neq 0</Math> if and only if <Math mode="inline" xml:id="C27.S8.p3.m3">\left(n,k\right)=1</Math> , in which case the Euler–Fermat theorem (27.2.8)implies
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C27.S8.p3.s2">
+<Math mode="inline" xml:id="C27.S8.p3.m4">\left(\chi\left(n\right)\right)^{\phi\left(k\right)}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C27.S8.p3.s3">
+There are exactly <Math mode="inline" xml:id="C27.S8.p3.m5">\phi\left(k\right)</Math> different characters (mod <Math mode="inline" xml:id="C27.S8.p3.m6">k</Math> ), which can be labeled as <Math mode="inline" xml:id="C27.S8.p3.m7">\chi_{1},\dots,\chi_{\phi\left(k\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C27.S8.p3.s4">
+If <Math mode="inline" xml:id="C27.S8.p3.m8">\chi</Math> is a character (mod <Math mode="inline" xml:id="C27.S8.p3.m9">k</Math> ), so is its complex conjugate <Math mode="inline" xml:id="C27.S8.p3.m10">\overline{\chi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C27.S8.p3.s5">
+If <Math mode="inline" xml:id="C27.S8.p3.m11">\left(n,k\right)=1</Math> , then the characters satisfy the orthogonality relation <Math equation-number="27.8.6" mode="display" xml:id="C27.S8.E6">\sum_{r=1}^{\phi\left(k\right)}\chi_{r}\left(m\right)\overline{\chi}_{r}(n)= \begin{cases}\phi\left(k\right),&amp;m\equiv n\pmod{k},\\ 0,&amp;\mbox{otherwise}.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C27.S8.p4.s1">
+A Dirichlet character <Math mode="inline" xml:id="C27.S8.p4.m1">\chi\pmod{k}</Math> is called primitive (mod <Math mode="inline" xml:id="C27.S8.p4.m2">k</Math> ) if for every proper divisor <Math mode="inline" xml:id="C27.S8.p4.m3">d</Math> of <Math mode="inline" xml:id="C27.S8.p4.m4">k</Math> (that is, a divisor <Math mode="inline" xml:id="C27.S8.p4.m5">d&lt;k</Math> ), there exists an integer <Math mode="inline" xml:id="C27.S8.p4.m6">a\equiv 1\pmod{d}</Math> , with <Math mode="inline" xml:id="C27.S8.p4.m7">\left(a,k\right)=1</Math> and <Math mode="inline" xml:id="C27.S8.p4.m8">\chi\left(a\right)\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C27.S8.p4.s2">
+If <Math mode="inline" xml:id="C27.S8.p4.m9">k</Math> is prime, then every nonprincipal character <Math mode="inline" xml:id="C27.S8.p4.m10">\chi\pmod{k}</Math> is primitive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C27.S8.p4.s3">
+A divisor <Math mode="inline" xml:id="C27.S8.p4.m11">d</Math> of <Math mode="inline" xml:id="C27.S8.p4.m12">k</Math> is called an induced modulus for <Math mode="inline" xml:id="C27.S8.p4.m13">\chi</Math> if <Math equation-number="27.8.7" mode="display" xml:id="C27.S8.E7">\chi\left(a\right)=1\text{ for all $a\equiv 1$ (mod $d$)},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S8.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C27.S8.p5.s1">
+Every Dirichlet character <Math mode="inline" xml:id="C27.S8.p5.m1">\chi</Math> (mod <Math mode="inline" xml:id="C27.S8.p5.m2">k</Math> ) is a product <Math equation-number="27.8.8" mode="display" xml:id="C27.S8.E8">\chi\left(n\right)=\chi_{0}\left(n\right)\chi_{1}\left(n\right),</Math> where <Math mode="inline" xml:id="C27.S8.p5.m3">\chi_{0}</Math> is a character (mod <Math mode="inline" xml:id="C27.S8.p5.m4">d</Math> ) for some induced modulus <Math mode="inline" xml:id="C27.S8.p5.m5">d</Math> for <Math mode="inline" xml:id="C27.S8.p5.m6">\chi</Math> , and <Math mode="inline" xml:id="C27.S8.p5.m7">\chi_{1}</Math> is the principal character (mod <Math mode="inline" xml:id="C27.S8.p5.m8">k</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C27.S8.p5.s2">
+A character isreal if all its values are real.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C27.S8.p5.s3">
+If <Math mode="inline" xml:id="C27.S8.p5.m9">k</Math> is odd, then the real characters (mod <Math mode="inline" xml:id="C27.S8.p5.m10">k</Math> ) are the principal characterand the quadratic characters described in the next section.
+</sentence>
+
+</para>
+ 
+</section>

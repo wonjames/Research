@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S68">
+<title>Modulus and Phase Functions</title>        
+ 
+<subsection xml:id="C10.S68.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C10.S68.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S68.SS1.p1.s1">
+ <Math equation-number="10.68.1" mode="display" xml:id="C10.S68.E1">M_{\nu}\left(x\right)e^{i\!\theta_{\nu}\left(x\right)}=\operatorname{ber}_{\nu }x+i\operatorname{bei}_{\nu}x,</Math> <Math equation-number="10.68.2" mode="display" xml:id="C10.S68.E2">N_{\nu}\left(x\right)e^{i\!\phi_{\nu}\left(x\right)}=\operatorname{ker}_{\nu}x +i\operatorname{kei}_{\nu}x,</Math> where <Math mode="inline" xml:id="C10.S68.SS1.p1.m1">M_{\nu}\left(x\right)\,(&gt;0)</Math> , <Math mode="inline" xml:id="C10.S68.SS1.p1.m2">N_{\nu}\left(x\right)\,(&gt;0)</Math> , <Math mode="inline" xml:id="C10.S68.SS1.p1.m3">\theta_{\nu}\left(x\right)</Math> , and <Math mode="inline" xml:id="C10.S68.SS1.p1.m4">\phi_{\nu}\left(x\right)</Math> are continuous real functions of <Math mode="inline" xml:id="C10.S68.SS1.p1.m5">x</Math> and <Math mode="inline" xml:id="C10.S68.SS1.p1.m6">\nu</Math> , with the branches of <Math mode="inline" xml:id="C10.S68.SS1.p1.m7">\theta_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C10.S68.SS1.p1.m8">\phi_{\nu}\left(x\right)</Math> chosen to satisfy (10.68.18) and(10.68.21) as <Math mode="inline" xml:id="C10.S68.SS1.p1.m9">x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S68.SS1.p1.s2">
+(See also §10.68(iv).)
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S68.SS2">
+<title>Basic Properties</title>        
+  
+<para xml:id="C10.S68.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S68.SS2.p1.s1">
+ <Math equation-number="10.68.3" mode="display" xml:id="C10.S68.E3">\operatorname{ber}_{\nu}x=M_{\nu}\left(x\right)\cos\theta_{\nu}\left(x\right),\operatorname{bei}_{\nu}x=M_{\nu}\left(x\right)\sin\theta_{\nu}\left(x\right),</Math> <Math equation-number="10.68.4" mode="display" xml:id="C10.S68.E4">\operatorname{ker}_{\nu}x=N_{\nu}\left(x\right)\cos\phi_{\nu}\left(x\right),\operatorname{kei}_{\nu}x=N_{\nu}\left(x\right)\sin\phi_{\nu}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C10.S68.SS2.p1.s2">
+<Math equation-number="10.68.5" mode="display" xml:id="C10.S68.E5">M_{\nu}\left(x\right)=({\operatorname{ber}_{\nu}^{2}}x+{\operatorname{bei}_{ \nu}^{2}}x)^{\ifrac{1}{2}},N_{\nu}\left(x\right)=({\operatorname{ker}_{\nu}^{2}}x+{\operatorname{kei}_{ \nu}^{2}}x)^{\ifrac{1}{2}},</Math> <Math equation-number="10.68.6" mode="display" xml:id="C10.S68.E6">\theta_{\nu}\left(x\right)=\operatorname{Arctan}\left(\operatorname{bei}_{\nu} x/\operatorname{ber}_{\nu}x\right),\phi_{\nu}\left(x\right)=\operatorname{Arctan}\left(\operatorname{kei}_{\nu}x/ \operatorname{ker}_{\nu}x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C10.S68.SS2.p1.s3">
+<Math equation-number="10.68.7" mode="display" xml:id="C10.S68.E7">M_{-n}\left(x\right)=M_{n}\left(x\right),\theta_{-n}\left(x\right)=\theta_{n}\left(x\right)-n\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S68.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S68.SS2.p2.s1">
+With arguments <Math mode="inline" xml:id="C10.S68.SS2.p2.m1">(x)</Math> suppressed, <Math equation-number="10.68.8" mode="display" xml:id="C10.S68.E8">\operatorname{ber}_{\nu}'x=\tfrac{1}{2}M_{\nu+1}\cos\left(\theta_{\nu+1}- \tfrac{1}{4}\pi\right)-\tfrac{1}{2}M_{\nu-1}\cos\left(\theta_{\nu-1}-\tfrac{1} {4}\pi\right)=(\nu/x)M_{\nu}\cos\theta_{\nu}+M_{\nu+1}\cos\left(\theta_{\nu+1} -\tfrac{1}{4}\pi\right)=-(\nu/x)M_{\nu}\cos\theta_{\nu}-M_{\nu-1}\cos\left( \theta_{\nu-1}-\tfrac{1}{4}\pi\right),</Math> <Math equation-number="10.68.9" mode="display" xml:id="C10.S68.E9">\operatorname{bei}_{\nu}'x=\tfrac{1}{2}M_{\nu+1}\sin\left(\theta_{\nu+1}- \tfrac{1}{4}\pi\right)-\tfrac{1}{2}M_{\nu-1}\sin\left(\theta_{\nu-1}-\tfrac{1} {4}\pi\right)=(\nu/x)M_{\nu}\sin\theta_{\nu}+M_{\nu+1}\sin\left(\theta_{\nu+1} -\tfrac{1}{4}\pi\right)=-(\nu/x)M_{\nu}\sin\theta_{\nu}-M_{\nu-1}\sin\left( \theta_{\nu-1}-\tfrac{1}{4}\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S68.SS2.p2.s2">
+<Math equation-number="10.68.10" mode="display" xml:id="C10.S68.E10">\operatorname{ber}'x=M_{1}\cos\left(\theta_{1}-\tfrac{1}{4}\pi\right),\operatorname{bei}'x=M_{1}\sin\left(\theta_{1}-\tfrac{1}{4}\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S68.SS2.p2.s3">
+<Math equation-number="10.68.11" mode="display" xml:id="C10.S68.E11">M_{\nu}'=(\nu/x)M_{\nu}+M_{\nu+1}\cos\left(\theta_{\nu+1}-\theta_{\nu}-\tfrac{ 1}{4}\pi\right)=-(\nu/x)M_{\nu}-M_{\nu-1}\cos\left(\theta_{\nu-1}-\theta_{\nu} -\tfrac{1}{4}\pi\right),</Math> <Math equation-number="10.68.12" mode="display" xml:id="C10.S68.E12">\theta_{\nu}'=(M_{\nu+1}/M_{\nu})\sin\left(\theta_{\nu+1}-\theta_{\nu}-\tfrac{ 1}{4}\pi\right)=-(M_{\nu-1}/M_{\nu})\sin\left(\theta_{\nu-1}-\theta_{\nu}- \tfrac{1}{4}\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C10.S68.SS2.p2.s4">
+<Math equation-number="10.68.13" mode="display" xml:id="C10.S68.E13">M_{0}'=M_{1}\cos\left(\theta_{1}-\theta_{0}-\tfrac{1}{4}\pi\right),\theta_{0}'=(M_{1}/M_{0})\sin\left(\theta_{1}-\theta_{0}-\tfrac{1}{4}\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C10.S68.SS2.p2.s5">
+<Math equation-number="10.68.14" mode="display" xml:id="C10.S68.E14">\ifrac{\mathrm{d}(x{M_{\nu}^{2}}\theta_{\nu}')}{\mathrm{d}x}=x{M_{\nu}^{2}},x^{2}M_{\nu}''+xM_{\nu}'-\nu^{2}M_{\nu}=x^{2}M_{\nu}{\theta_{\nu}'^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S68.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S68.SS2.p3.s1">
+Equations (10.68.8)–(10.68.14) also hold with the symbols <Math mode="inline" xml:id="C10.S68.SS2.p3.m1">\operatorname{ber}</Math> , <Math mode="inline" xml:id="C10.S68.SS2.p3.m2">\operatorname{bei}</Math> , <Math mode="inline" xml:id="C10.S68.SS2.p3.m3">M</Math> , and <Math mode="inline" xml:id="C10.S68.SS2.p3.m4">\theta</Math> replaced throughout by <Math mode="inline" xml:id="C10.S68.SS2.p3.m5">\operatorname{ker}</Math> , <Math mode="inline" xml:id="C10.S68.SS2.p3.m6">\operatorname{kei}</Math> , <Math mode="inline" xml:id="C10.S68.SS2.p3.m7">N</Math> , and <Math mode="inline" xml:id="C10.S68.SS2.p3.m8">\phi</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C10.S68.SS2.p3.s2">
+In place of (10.68.7),
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C10.S68.SS2.p3.s3">
+<Math equation-number="10.68.15" mode="display" xml:id="C10.S68.E15">N_{-\nu}\left(x\right)=N_{\nu}\left(x\right),\phi_{-\nu}\left(x\right)=\phi_{\nu}\left(x\right)+\nu\pi</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S68.SS3">
+<title>Asymptotic Expansions for Large Argument</title>        
+  
+<para xml:id="C10.S68.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S68.SS3.p1.s1">
+When <Math mode="inline" xml:id="C10.S68.SS3.p1.m1">\nu</Math> is fixed, <Math mode="inline" xml:id="C10.S68.SS3.p1.m2">\mu=4\nu^{2}</Math> , and <Math mode="inline" xml:id="C10.S68.SS3.p1.m3">x\to\infty</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S68.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S68.SS3.p2.s1">
+ <Math equation-number="10.68.16" mode="display" xml:id="C10.S68.E16">M_{\nu}\left(x\right)=\frac{e^{x/\sqrt{2}}}{(2\pi x)^{\frac{1}{2}}}\left(1- \frac{\mu-1}{8\sqrt{2}}\frac{1}{x}+\frac{(\mu-1)^{2}}{256}\frac{1}{x^{2}}- \frac{(\mu-1)(\mu^{2}+14\mu-399)}{6144\sqrt{2}}\frac{1}{x^{3}}+O\left(\frac{1} {x^{4}}\right)\right),</Math> , <Math equation-number="10.68.17" mode="display" xml:id="C10.S68.E17">\ln M_{\nu}\left(x\right)=\frac{x}{\sqrt{2}}-\frac{1}{2}\ln\left(2\pi x\right) -\frac{\mu-1}{8\sqrt{2}}\frac{1}{x}-\frac{(\mu-1)(\mu-25)}{384\sqrt{2}}\frac{1 }{x^{3}}-\frac{(\mu-1)(\mu-13)}{128}\frac{1}{x^{4}}+O\left(\frac{1}{x^{5}} \right),</Math> , <Math equation-number="10.68.18" mode="display" xml:id="C10.S68.E18">\theta_{\nu}\left(x\right)=\frac{x}{\sqrt{2}}+\left(\frac{1}{2}\nu-\frac{1}{8} \right)\pi+\frac{\mu-1}{8\sqrt{2}}\frac{1}{x}+\frac{\mu-1}{16}\frac{1}{x^{2}}- \frac{(\mu-1)(\mu-25)}{384\sqrt{2}}\frac{1}{x^{3}}+O\left(\frac{1}{x^{5}} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C10.S68.SS3.p2.s2">
+<Math equation-number="10.68.19" mode="display" xml:id="C10.S68.E19">N_{\nu}\left(x\right)=e^{-x/\sqrt{2}}\left(\frac{\pi}{2x}\right)^{\frac{1}{2}} \left(1+\frac{\mu-1}{8\sqrt{2}}\frac{1}{x}+\frac{(\mu-1)^{2}}{256}\frac{1}{x^{ 2}}+\frac{(\mu-1)(\mu^{2}+14\mu-399)}{6144\sqrt{2}}\frac{1}{x^{3}}+O\left( \frac{1}{x^{4}}\right)\right),</Math> , <Math equation-number="10.68.20" mode="display" xml:id="C10.S68.E20">\ln N_{\nu}\left(x\right)=-\frac{x}{\sqrt{2}}+\frac{1}{2}\ln\left(\frac{\pi}{2 x}\right)+\frac{\mu-1}{8\sqrt{2}}\frac{1}{x}+\frac{(\mu-1)(\mu-25)}{384\sqrt{2 }}\frac{1}{x^{3}}-\frac{(\mu-1)(\mu-13)}{128}\frac{1}{x^{4}}+O\left(\frac{1}{x ^{5}}\right),</Math> , <Math equation-number="10.68.21" mode="display" xml:id="C10.S68.E21">\phi_{\nu}\left(x\right)=-\frac{x}{\sqrt{2}}-\left(\frac{1}{2}\nu+\frac{1}{8} \right)\pi-\frac{\mu-1}{8\sqrt{2}}\frac{1}{x}+\frac{\mu-1}{16}\frac{1}{x^{2}}+ \frac{(\mu-1)(\mu-25)}{384\sqrt{2}}\frac{1}{x^{3}}+O\left(\frac{1}{x^{5}} \right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S68.SS4">
+<title>Further Properties</title>        
+ 
+<para xml:id="C10.S68.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C10.S68.SS4.p1.s1">
+Additional properties of the modulus and phase functions are given inYoung and Kirk (1964, pp. xi–xv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C10.S68.SS4.p1.s2">
+However, care needs to be exercised with the branches of the phases.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C10.S68.SS4.p1.s3">
+Thus this reference gives <Math mode="inline" xml:id="C10.S68.SS4.p1.m1">\phi_{1}\left(0\right)=\tfrac{5}{4}\pi</Math> (Eq. (6.10)), and <Math mode="inline" xml:id="C10.S68.SS4.p1.m2">\lim_{x\to\infty}(\phi_{1}\left(x\right)+(x/\sqrt{2}))=-\tfrac{5}{8}\pi</Math> (Eqs.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C10.S68.SS4.p1.s4">
+(10.20) and (Eqs.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C10.S68.SS4.p1.s5">
+(10.26b)).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="22" xml:id="C10.S68.SS4.p1.s6">
+However, numerical tabulations show that if the second of these equations applies and <Math mode="inline" xml:id="C10.S68.SS4.p1.m3">\phi_{1}\left(x\right)</Math> is continuous, then <Math mode="inline" xml:id="C10.S68.SS4.p1.m4">\phi_{1}\left(0\right)=-\tfrac{3}{4}\pi</Math> ; compareAbramowitz and Stegun (1964, p. 433).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

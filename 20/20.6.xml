@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C20.S6">
+<title>Power Series</title>          
+<para xml:id="C20.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C20.S6.p1.s1">
+Assume <Math equation-number="20.6.1" mode="display" xml:id="C20.S6.E1">\left|\pi z\right|&lt;\min\left|z_{m,n}\right|,</Math> where <Math mode="inline" xml:id="C20.S6.p1.m1">z_{m,n}</Math> is given by (20.2.5) and the minimum is for <Math mode="inline" xml:id="C20.S6.p1.m2">m,n\in\mathbb{Z}</Math> , except <Math mode="inline" xml:id="C20.S6.p1.m3">m=n=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C20.S6.p1.s2">
+Then <Math equation-number="20.6.2" mode="display" xml:id="C20.S6.E2">\theta_{1}\left(\pi z\middle|\tau\right)=\pi z\theta_{1}'\left(0\middle|\tau \right)\exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\delta_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.3" mode="display" xml:id="C20.S6.E3">\theta_{2}\left(\pi z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\alpha_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.4" mode="display" xml:id="C20.S6.E4">\theta_{3}\left(\pi z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\beta_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.5" mode="display" xml:id="C20.S6.E5">\theta_{4}\left(\pi z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\gamma_{2j}(\tau)z^{2j}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C20.S6.p1.s3">
+Here the coefficients are given by <Math equation-number="20.6.6" mode="display" xml:id="C20.S6.E6">\delta_{2j}(\tau)=\left.\sum_{n=-\infty}^{\infty}\sum_{\begin{subarray}{c}m=- \infty\\ \left|m\right|+\left|n\right|\neq 0\end{subarray}}^{\infty}\right.(m+n\tau)^{- 2j},</Math> , <Math equation-number="20.6.7" mode="display" xml:id="C20.S6.E7">\alpha_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m-\tfrac{ 1}{2}+n\tau)^{-2j},</Math> , <Math equation-number="20.6.8" mode="display" xml:id="C20.S6.E8">\beta_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m-\tfrac{1 }{2}+(n-\tfrac{1}{2})\tau)^{-2j},</Math> , <Math equation-number="20.6.9" mode="display" xml:id="C20.S6.E9">\gamma_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m+(n- \tfrac{1}{2})\tau)^{-2j},</Math> and satisfy <Math equation-number="20.6.10" mode="display" xml:id="C20.S6.E10">\alpha_{2j}(\tau)=2^{2j}\delta_{2j}(2\tau)-\delta_{2j}(\tau),\beta_{2j}(\tau)=2^{2j}\gamma_{2j}(2\tau)-\gamma_{2j}(\tau)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C20.S6.p1.s4">
+In the double series the order of summation is important only when <Math mode="inline" xml:id="C20.S6.p1.m4">j=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C20.S6.p1.s5">
+For further information on <Math mode="inline" xml:id="C20.S6.p1.m5">\delta_{2j}</Math> see §23.9: since the double sums in (20.6.6) and (23.9.1) are the same, we have <Math mode="inline" xml:id="C20.S6.p1.m6">\delta_{2n}=c_{n}/(2n-1)</Math> when <Math mode="inline" xml:id="C20.S6.p1.m7">n\geq 2</Math>.
+</sentence>
+
+</para>
+ 
+</section>

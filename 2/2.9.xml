@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S9">
+<title>Difference Equations</title>          
+<subsection xml:id="C2.S9.SS1">
+<title>Distinct Characteristic Values</title>         
+<para xml:id="C2.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S9.SS1.p1.s1">
+Many special functions that depend on parameters satisfy a three-term linear recurrence relation <Math equation-number="2.9.1" mode="display" xml:id="C2.S9.E1">{w(n+2)+f(n)w(n+1)+g(n)w(n)=0}, if n=0,1,2,\dots,</Math> or equivalently the second-order homogeneous linear difference equation <Math equation-number="2.9.2" mode="display" xml:id="C2.S9.E2">\Delta^{2}w(n)+(2+f(n))\Delta w(n)+(1+f(n)+g(n))w(n)=0, if n=0,1,2,\dots,</Math> in which <Math mode="inline" xml:id="C2.S9.SS1.p1.m1">\Delta</Math> is the forward difference operator (§3.6(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C2.S9.SS1.p2.s1">
+Often <Math mode="inline" xml:id="C2.S9.SS1.p2.m1">f(n)</Math> and <Math mode="inline" xml:id="C2.S9.SS1.p2.m2">g(n)</Math> can be expanded in series <Math equation-number="2.9.3" mode="display" xml:id="C2.S9.E3">f(n)\sim\sum_{s=0}^{\infty}\frac{f_{s}}{n^{s}},g(n)\sim\sum_{s=0}^{\infty}\frac{g_{s}}{n^{s}}, , if n\to\infty,</Math> with <Math mode="inline" xml:id="C2.S9.SS1.p2.m3">g_{0}\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C2.S9.SS1.p2.s2">
+(For the case <Math mode="inline" xml:id="C2.S9.SS1.p2.m4">g_{0}=0</Math> see the final paragraph of §2.9(ii) with <Math mode="inline" xml:id="C2.S9.SS1.p2.m5">Q</Math> negative.)This situation is analogous to second-order homogeneous linear differential equations with an irregular singularity of rank 1 at infinity (§2.7(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C2.S9.SS1.p2.s3">
+Formal solutions are <Math equation-number="2.9.4" mode="display" xml:id="C2.S9.E4">\rho_{j}^{n}n^{\alpha_{j}}\sum_{s=0}^{\infty}\frac{a_{s,j}}{n^{s}}, if j=1,2,</Math> where <Math mode="inline" xml:id="C2.S9.SS1.p2.m6">\rho_{1},\rho_{2}</Math> are the roots of the characteristic equation <Math equation-number="2.9.5" mode="display" xml:id="C2.S9.E5">\rho^{2}+f_{0}\rho+g_{0}=0,</Math> <Math equation-number="2.9.6" mode="display" xml:id="C2.S9.E6">\alpha_{j}=(f_{1}\rho_{j}+g_{1})/(f_{0}\rho_{j}+2g_{0}),</Math> <Math mode="inline" xml:id="C2.S9.SS1.p2.m7">a_{0,j}=1</Math> , and
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C2.S9.SS1.p3.s1">
+ <Math equation-number="2.9.7" mode="display" xml:id="C2.S9.E7">\rho_{j}(f_{0}+2\rho_{j})sa_{s,j}=\sum_{r=1}^{s}\left(\rho_{j}^{2}2^{r+1} \genfrac{(}{)}{0.0pt}{}{\alpha_{j}+r-s}{r+1}+\rho_{j}\sum_{q=0}^{r+1}\genfrac{ (}{)}{0.0pt}{}{\alpha_{j}+r-s}{r+1-q}f_{q}+g_{r+1}\right)a_{s-r,j}</Math> ,
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S9.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C2.S9.SS1.p4.s1">
+ <Math mode="inline" xml:id="C2.S9.SS1.p4.m1">s=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C2.S9.SS1.p4.s2">
+The construction fails if <Math mode="inline" xml:id="C2.S9.SS1.p4.m2">\rho_{1}=\rho_{2}</Math> , that is, when <Math mode="inline" xml:id="C2.S9.SS1.p4.m3">f_{0}^{2}=4g_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C2.S9.SS1.p5.s1">
+When <Math mode="inline" xml:id="C2.S9.SS1.p5.m1">f_{0}^{2}\neq 4g_{0}</Math> , there are linearly independent solutions <Math mode="inline" xml:id="C2.S9.SS1.p5.m2">w_{j}(n)</Math> , <Math mode="inline" xml:id="C2.S9.SS1.p5.m3">j=1,2</Math> , such that <Math equation-number="2.9.8" mode="display" xml:id="C2.S9.E8">w_{j}(n)\sim\rho_{j}^{n}n^{\alpha_{j}}\sum_{s=0}^{\infty}\frac{a_{s,j}}{n^{s}}, if n\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S9.SS1.p6.s1">
+If <Math mode="inline" xml:id="C2.S9.SS1.p6.m1">|\rho_{2}|&gt;|\rho_{1}|</Math> , or if <Math mode="inline" xml:id="C2.S9.SS1.p6.m2">|\rho_{2}|=|\rho_{1}|</Math> and <Math mode="inline" xml:id="C2.S9.SS1.p6.m3">\Re\alpha_{2}&gt;\Re\alpha_{1}</Math> , then <Math mode="inline" xml:id="C2.S9.SS1.p6.m4">w_{1}(n)</Math> is recessive and <Math mode="inline" xml:id="C2.S9.SS1.p6.m5">w_{2}(n)</Math> is dominant as <Math mode="inline" xml:id="C2.S9.SS1.p6.m6">n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S9.SS1.p6.s2">
+As in the case of differential equations (§§2.7(iii),2.7(iv)) recessive solutions are unique and dominant solutions are not; furthermore, one member of a numerically satisfactory pair has to be recessive.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S9.SS1.p6.s3">
+When <Math mode="inline" xml:id="C2.S9.SS1.p6.m7">|\rho_{2}|=|\rho_{1}|</Math> and <Math mode="inline" xml:id="C2.S9.SS1.p6.m8">\Re\alpha_{2}=\Re\alpha_{1}</Math> neither solution is dominant and both are unique.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S9.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C2.S9.SS1.p7.s1">
+For proofs see Wong and Li (1992b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C2.S9.SS1.p7.s2">
+For error bounds seeZhang et al. (1996).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C2.S9.SS1.p7.s3">
+See also Olver (1967b).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C2.S9.SS1.p8.s1">
+For asymptotic expansions in inverse factorial series seeOlde Daalhuis (2004a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S9.SS2">
+<title>Coincident Characteristic Values</title>          
+<para xml:id="C2.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C2.S9.SS2.p1.s1">
+When the roots of (2.9.5) are equal we denote them both by <Math mode="inline" xml:id="C2.S9.SS2.p1.m1">\rho</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C2.S9.SS2.p1.s2">
+Assume first <Math mode="inline" xml:id="C2.S9.SS2.p1.m2">2g_{1}\neq f_{0}f_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C2.S9.SS2.p1.s3">
+Then (2.9.1) has independent solutions <Math mode="inline" xml:id="C2.S9.SS2.p1.m3">w_{j}(n)</Math> , <Math mode="inline" xml:id="C2.S9.SS2.p1.m4">j=1,2</Math> , such that <Math equation-number="2.9.9" mode="display" xml:id="C2.S9.E9">w_{j}(n)\sim\rho^{n}\exp\left((-1)^{j}\kappa\sqrt{n}\right)n^{\alpha}\sum_{s=0 }^{\infty}(-1)^{js}\frac{c_{s}}{n^{s/2}},</Math> where <Math equation-number="2.9.10" mode="display" xml:id="C2.S9.E10">\sqrt{g_{0}}\kappa=\sqrt{2f_{0}f_{1}-4g_{1}}, if 4g_{0}\alpha=g_{0}+2g_{1},</Math> <Math mode="inline" xml:id="C2.S9.SS2.p1.m5">c_{0}=1</Math> , and higher coefficients are determined by formal substitution.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C2.S9.SS2.p2.s1">
+Alternatively, suppose that <Math mode="inline" xml:id="C2.S9.SS2.p2.m1">2g_{1}=f_{0}f_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C2.S9.SS2.p2.s2">
+Then the indices <Math mode="inline" xml:id="C2.S9.SS2.p2.m2">\alpha_{1},\alpha_{2}</Math> are the roots of <Math equation-number="2.9.11" mode="display" xml:id="C2.S9.E11">2g_{0}\alpha^{2}-(f_{0}f_{1}+2g_{0})\alpha+2g_{2}-f_{0}f_{2}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C2.S9.SS2.p2.s3">
+Provided that <Math mode="inline" xml:id="C2.S9.SS2.p2.m3">\alpha_{2}-\alpha_{1}</Math> is not zero or an integer, (2.9.1) has independent solutions <Math mode="inline" xml:id="C2.S9.SS2.p2.m4">w_{j}(n)</Math> , <Math mode="inline" xml:id="C2.S9.SS2.p2.m5">j=1,2</Math> , of the form <Math equation-number="2.9.12" mode="display" xml:id="C2.S9.E12">w_{j}(n)\sim\rho^{n}n^{\alpha_{j}}\sum_{s=0}^{\infty}\frac{a_{s,j}}{n^{s}}, if n\to\infty,</Math> with <Math mode="inline" xml:id="C2.S9.SS2.p2.m6">a_{0,j}=1</Math> and higher coefficients given by (2.9.7) (in the present case the coefficients of <Math mode="inline" xml:id="C2.S9.SS2.p2.m7">a_{s,j}</Math> and <Math mode="inline" xml:id="C2.S9.SS2.p2.m8">a_{s-1,j}</Math> are zero).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C2.S9.SS2.p3.s1">
+If <Math mode="inline" xml:id="C2.S9.SS2.p3.m1">\alpha_{2}-\alpha_{1}=0,1,2,\dots</Math> , then (2.9.12) applies only in the case <Math mode="inline" xml:id="C2.S9.SS2.p3.m2">j=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C2.S9.SS2.p3.s2">
+But there is an independent solution <Math equation-number="2.9.13" mode="display" xml:id="C2.S9.E13">w_{2}(n)\sim\rho^{n}n^{\alpha_{2}}\sum_{\begin{subarray}{c}s=0\\ s\neq\alpha_{2}-\alpha_{1}\end{subarray}}^{\infty}\frac{b_{s}}{n^{s}}+cw_{1}(n )\ln n, if n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C2.S9.SS2.p3.s3">
+The coefficients <Math mode="inline" xml:id="C2.S9.SS2.p3.m3">b_{s}</Math> and constant <Math mode="inline" xml:id="C2.S9.SS2.p3.m4">c</Math> are again determined by formal substitution, beginning with <Math mode="inline" xml:id="C2.S9.SS2.p3.m5">c=1</Math> when <Math mode="inline" xml:id="C2.S9.SS2.p3.m6">\alpha_{2}-\alpha_{1}=0</Math> , or with <Math mode="inline" xml:id="C2.S9.SS2.p3.m7">b_{0}=1</Math> when <Math mode="inline" xml:id="C2.S9.SS2.p3.m8">\alpha_{2}-\alpha_{1}=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C2.S9.SS2.p3.s4">
+(Compare (2.7.6).)
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C2.S9.SS2.p4.s1">
+For proofs and examples, see Wong and Li (1992b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C2.S9.SS2.p4.s2">
+For error bounds seeZhang et al. (1996).
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C2.S9.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C2.S9.SS2.p5.s1">
+For analogous results for difference equations of the form <Math equation-number="2.9.14" mode="display" xml:id="C2.S9.E14">w(n+2)+n^{P}f(n)w(n+1)+n^{Q}g(n)w(n)=0,</Math> in which <Math mode="inline" xml:id="C2.S9.SS2.p5.m1">P</Math> and <Math mode="inline" xml:id="C2.S9.SS2.p5.m2">Q</Math> are any integers see Wong and Li (1992a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S9.SS3">
+<title>Other Approximations</title>         
+ 
+<para xml:id="C2.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C2.S9.SS3.p1.s1">
+For asymptotic approximations to solutions of second-order difference equations analogous to the Liouville–Green (WKBJ) approximation for differential equations (§2.7(iii)) see Spigler and Vianello (1992, 1997) and Spigler et al. (1999).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C2.S9.SS3.p1.s2">
+Error bounds and applicationsare included.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C2.S9.SS3.p2.s1">
+For discussions of turning points, transition points, and uniform asymptotic expansions for solutions of linear difference equations of the second order seeWang and Wong (2003, 2005).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C2.S9.SS3.p3.s1">
+For an introduction to, and references for, the general asymptotic theory of linear difference equations of arbitrary order, see Wimp (1984, Appendix B).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S9.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C2.S9.SS3.p4.s1">
+For applications of asymptotic methods for difference equations to orthogonal polynomials, see, e.g. Wang and Wong (2012) and Wong (2014).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C2.S9.SS3.p4.s2">
+These methods are particularly useful when the weight function associated with the orthogonal polynomials is not unique or not even known; see, e.g. Dai et al. (2014).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

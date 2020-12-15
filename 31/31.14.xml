@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S14">
+<title>General Fuchsian Equation</title>        
+ 
+<subsection xml:id="C31.S14.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C31.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S14.SS1.p1.s1">
+The general second-order Fuchsian equation with <Math mode="inline" xml:id="C31.S14.SS1.p1.m1">N+1</Math> regular singularities at <Math mode="inline" xml:id="C31.S14.SS1.p1.m2">z=a_{j}</Math> , <Math mode="inline" xml:id="C31.S14.SS1.p1.m3">j=1,2,\dots,N</Math> , and at <Math mode="inline" xml:id="C31.S14.SS1.p1.m4">\infty</Math> , is given by <Math equation-number="31.14.1" mode="display" xml:id="C31.S14.E1">{\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\sum_{j=1}^{N}\frac{\gamma_ {j}}{z-a_{j}}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\left(\sum_{j=1}^{N}\frac{ q_{j}}{z-a_{j}}\right)w=0}, if \sum_{j=1}^{N}q_{j}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C31.S14.SS1.p1.s2">
+The exponents at the finite singularities <Math mode="inline" xml:id="C31.S14.SS1.p1.m5">a_{j}</Math> are <Math mode="inline" xml:id="C31.S14.SS1.p1.m6">\{0,{1-\gamma_{j}}\}</Math> and those at <Math mode="inline" xml:id="C31.S14.SS1.p1.m7">\infty</Math> are <Math mode="inline" xml:id="C31.S14.SS1.p1.m8">\{\alpha,\beta\}</Math> , where <Math equation-number="31.14.2" mode="display" xml:id="C31.S14.E2">\alpha+\beta+1=\sum_{j=1}^{N}\gamma_{j},\alpha\beta=\sum_{j=1}^{N}a_{j}q_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C31.S14.SS1.p1.s3">
+The three sets of parameters comprise the singularity parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m9">a_{j}</Math> , the exponent parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m10">\alpha,\beta,\gamma_{j}</Math> , and the <Math mode="inline" xml:id="C31.S14.SS1.p1.m11">N-2</Math> freeaccessory parameters <Math mode="inline" xml:id="C31.S14.SS1.p1.m12">q_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C31.S14.SS1.p1.s4">
+With <Math mode="inline" xml:id="C31.S14.SS1.p1.m13">a_{1}=0</Math> and <Math mode="inline" xml:id="C31.S14.SS1.p1.m14">a_{2}=1</Math> the total number of free parameters is <Math mode="inline" xml:id="C31.S14.SS1.p1.m15">3N-3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C31.S14.SS1.p1.s5">
+Heun’s equation (31.2.1) corresponds to <Math mode="inline" xml:id="C31.S14.SS1.p1.m16">N=3</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C31.S14.Px1">
+<title>Normal Form</title>     
+ 
+<para xml:id="C31.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C31.S14.Px1.p1.s1">
+ <Math equation-number="31.14.3" mode="display" xml:id="C31.S14.E3">w(z)=\left(\prod_{j=1}^{N}(z-a_{j})^{-\gamma_{j}/2}\right)W(z),</Math> <Math equation-number="31.14.4" mode="display" xml:id="C31.S14.E4">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}=\sum_{j=1}^{N}\left(\frac{\tilde{ \gamma}_{j}}{(z-a_{j})^{2}}+\frac{\tilde{q}_{j}}{z-a_{j}}\right)W, if \sum_{j=1}^{N}\tilde{q}_{j}=0,</Math> <Math equation-number="31.14.5" mode="display" xml:id="C31.S14.E5">\tilde{q}_{j}=\frac{1}{2}\sum_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{N}\frac{\gamma_{j}\gamma_{k}}{a_{j}-a_{k}}-q_{j},\tilde{\gamma}_{j}=\frac{\gamma_{j}}{2}\left(\frac{\gamma_{j}}{2}-1\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S14.SS2">
+<title>Kovacic’s Algorithm</title>        
+  
+<para xml:id="C31.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C31.S14.SS2.p1.s1">
+An algorithm given in Kovacic (1986) determines if a given (not necessarily Fuchsian) second-order homogeneous linear differential equation with rational coefficients has solutions expressible in finite terms (Liouvillean solutions).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C31.S14.SS2.p1.s2">
+The algorithm returns a list of solutions if they exist.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S14.SS2.p2.s1">
+For applications of Kovacic’s algorithm in spatio-temporal dynamics seeRod and Sleeman (1995).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

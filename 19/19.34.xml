@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S34">
+<title>Mutual Inductance of Coaxial Circles</title>        
+    
+<para xml:id="C19.S34.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S34.p1.s1">
+The mutual inductance <Math mode="inline" xml:id="C19.S34.p1.m1">M</Math> of two coaxial circles of radius <Math mode="inline" xml:id="C19.S34.p1.m2">a</Math> and <Math mode="inline" xml:id="C19.S34.p1.m3">b</Math> with centers at a distance <Math mode="inline" xml:id="C19.S34.p1.m4">h</Math> apart is given in cgs units by <Math equation-number="19.34.1" mode="display" xml:id="C19.S34.E1">\frac{{c^{2}}M}{2\pi}=ab\int_{0}^{2\pi}(h^{2}+a^{2}+b^{2}-2ab\cos\theta)^{-1/2 }\cos\theta\mathrm{d}\theta=2ab\int_{-1}^{1}\frac{t\mathrm{d}t}{\sqrt{(1+t)(1- t)(a_{3}-2abt)}}=2abI(\mathbf{e}_{5}),</Math> where <Math mode="inline" xml:id="C19.S34.p1.m5">c</Math> is the speed of light, and in (19.29.11),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S34.p1.s2">
+<Math equation-number="19.34.2" mode="display" xml:id="C19.S34.E2">a_{3}=h^{2}+a^{2}+b^{2},a_{5}=0,b_{5}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S34.p1.s3">
+The method of §19.29(ii) uses (19.29.18), (19.29.16), and (19.29.15) to produce <Math equation-number="19.34.3" mode="display" xml:id="C19.S34.E3">2abI(\mathbf{e}_{5})=a_{3}I(\boldsymbol{{0}})-I(\mathbf{e}_{3})=a_{3}I( \boldsymbol{{0}})-r_{+}^{2}r_{-}^{2}I(-\mathbf{e}_{3})=2ab(I(\boldsymbol{{0}}) -r_{-}^{2}I(\mathbf{e}_{1}-\mathbf{e}_{3})),</Math> where <Math mode="inline" xml:id="C19.S34.p1.m6">a_{1}+b_{1}t=1+t</Math> and <Math equation-number="19.34.4" mode="display" xml:id="C19.S34.E4">r_{\pm}^{2}=a_{3}\pm 2ab=h^{2}+(a\pm b)^{2}</Math> is the square of the maximum (upper signs) or minimum (lower signs) distance between the circles.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S34.p1.s4">
+Application of (19.29.4) and (19.29.7) with <Math mode="inline" xml:id="C19.S34.p1.m7">\alpha=1</Math> , <Math mode="inline" xml:id="C19.S34.p1.m8">a_{\beta}+b_{\beta}t=1-t</Math> , <Math mode="inline" xml:id="C19.S34.p1.m9">\delta=3</Math> , and <Math mode="inline" xml:id="C19.S34.p1.m10">a_{\gamma}+b_{\gamma}t=1</Math> yields <Math equation-number="19.34.5" mode="display" xml:id="C19.S34.E5">\frac{3{c^{2}}}{8\pi ab}M=3\!R_{F}\left(0,r_{+}^{2},r_{-}^{2}\right)-2r_{-}^{2 }R_{D}\left(0,r_{+}^{2},r_{-}^{2}\right),</Math> or, by (19.21.3),
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C19.S34.p1.s5">
+<Math equation-number="19.34.6" mode="display" xml:id="C19.S34.E6">\frac{{c^{2}}}{2\pi}M=(r_{+}^{2}+r_{-}^{2})R_{F}\left(0,r_{+}^{2},r_{-}^{2} \right)-4\!R_{G}\left(0,r_{+}^{2},r_{-}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C19.S34.p1.s6">
+A simpler form of the result is <Math equation-number="19.34.7" mode="display" xml:id="C19.S34.E7">M=(2/{c^{2}})(\pi a^{2})(\pi b^{2})R_{-\frac{3}{2}}\left(\tfrac{3}{2},\tfrac{3 }{2};r_{+}^{2},r_{-}^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S34.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S34.p2.s1">
+References for other inductance problems solvable in terms of elliptic integrals are given in Grover (1946, pp. 8 and 283).
+</sentence>
+
+</para>
+ 
+</section>

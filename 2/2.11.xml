@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S11">
+<title>Remainder Terms; Stokes Phenomenon</title>         
+<subsection xml:id="C2.S11.SS1">
+<title>Numerical Use of Asymptotic Expansions</title>          
+<para xml:id="C2.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S11.SS1.p1.s1">
+When a rigorous bound or reliable estimate for the remainder term is unavailable, it is unsafe to judge the accuracy of an asymptotic expansion merely from the numerical rate of decrease of the terms at the point of truncation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S11.SS1.p1.s2">
+Even when the series converges this is unwise: the tail needs to be majorized rigorously before the result can be guaranteed. For divergent expansions the situation is even more difficult.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C2.S11.SS1.p1.s3">
+First, it is impossible to bound the tail by majorizing its terms.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C2.S11.SS1.p1.s4">
+Secondly, the asymptotic series represents an infinite class of functions, and the remainder depends on which member we have in mind.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C2.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C2.S11.SS1.p2.s1">
+As an example consider <Math equation-number="2.11.1" mode="display" xml:id="C2.S11.E1">I(m)=\int_{0}^{\pi}\frac{\cos\left(mt\right)}{t^{2}+1}\mathrm{d}t,</Math> with <Math mode="inline" xml:id="C2.S11.SS1.p2.m1">m</Math> a large integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C2.S11.SS1.p2.s2">
+By integration by parts (§2.3(i))
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C2.S11.SS1.p2.s3">
+<Math equation-number="2.11.2" mode="display" xml:id="C2.S11.E2">I(m)\sim(-1)^{m}\sum_{s=1}^{\infty}\frac{q_{s}(\pi)}{m^{2s}}, if m\to\infty,</Math> with <Math equation-number="2.11.3" mode="display" xml:id="C2.S11.E3">q_{1}(t)=-\frac{2t}{(t^{2}+1)^{2}},q_{2}(t)=\frac{24(t^{3}-t)}{(t^{2}+1)^{4}},q_{3}(t)=-\frac{240(3t^{5}-10t^{3}+3t)}{(t^{2}+1)^{6}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C2.S11.SS1.p2.s4">
+On rounding to 5D, we have <Math mode="inline" xml:id="C2.S11.SS1.p2.m2">q_{1}(\pi)=-0.0531</Math> 8, <Math mode="inline" xml:id="C2.S11.SS1.p2.m3">q_{2}(\pi)=0.0479</Math> 1, <Math mode="inline" xml:id="C2.S11.SS1.p2.m4">q_{3}(\pi)=-0.0898</Math> 5. Taking <Math mode="inline" xml:id="C2.S11.SS1.p2.m5">m=10</Math> in (2.11.2), the first three terms give us the approximation <Math equation-number="2.11.4" mode="display" xml:id="C2.S11.E4">I(10)\approx-0.00053\;18+0.00000\;48-0.00000\;01=-0.00052\;71</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C2.S11.SS1.p2.s5">
+But this answer is incorrect: to 7D <Math mode="inline" xml:id="C2.S11.SS1.p2.m6">I(10)=-0.00045\;5</Math> 8. The error term is, in fact, approximately 700 times the last term obtained in (2.11.4).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C2.S11.SS1.p2.s6">
+The explanation is that (2.11.2) is a more accurate expansion for the function <Math mode="inline" xml:id="C2.S11.SS1.p2.m7">I(m)-\frac{1}{2}\pi e^{-m}</Math> than it is for <Math mode="inline" xml:id="C2.S11.SS1.p2.m8">I(m)</Math> ; seeOlver (1997b, pp. 76–78).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C2.S11.SS1.p3.s1">
+In order to guard against this kind of error remaining undetected, the wanted function may need to be computed by another method (preferably nonasymptotic) for the smallest value of the (large) asymptotic variable <Math mode="inline" xml:id="C2.S11.SS1.p3.m1">x</Math> that is intended to be used. If the results agree within <Math mode="inline" xml:id="C2.S11.SS1.p3.m2">S</Math> significant figures, then it is likely—but not certain—that the truncated asymptotic series will yield at least <Math mode="inline" xml:id="C2.S11.SS1.p3.m3">S</Math> correct significant figures for larger values of <Math mode="inline" xml:id="C2.S11.SS1.p3.m4">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C2.S11.SS1.p3.s2">
+For further discussion see Bosley (1996).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S11.SS1.p4.s1">
+In <Math mode="inline" xml:id="C2.S11.SS1.p4.m1">\mathbb{C}</Math> both the modulus and phase of the asymptotic variable <Math mode="inline" xml:id="C2.S11.SS1.p4.m2">z</Math> need to be taken into account.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C2.S11.SS1.p4.s2">
+Suppose an asymptotic expansion holds as <Math mode="inline" xml:id="C2.S11.SS1.p4.m3">z\to\infty</Math> in any closed sector within <Math mode="inline" xml:id="C2.S11.SS1.p4.m4">\alpha&lt;\operatorname{ph}z&lt;\beta</Math> , say, but not in <Math mode="inline" xml:id="C2.S11.SS1.p4.m5">\alpha\leq\operatorname{ph}z\leq\beta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C2.S11.SS1.p4.s3">
+Then numerical accuracy will disintegrate as the boundary rays <Math mode="inline" xml:id="C2.S11.SS1.p4.m6">\operatorname{ph}z=\alpha</Math> , <Math mode="inline" xml:id="C2.S11.SS1.p4.m7">\operatorname{ph}z=\beta</Math> are approached. In consequence, practical application needs to be confined to a sector <Math mode="inline" xml:id="C2.S11.SS1.p4.m8">\alpha^{\prime}\leq\operatorname{ph}z\leq\beta^{\prime}</Math> well within the sector of validity, and independent evaluations carried out on the boundaries for the smallest value of <Math mode="inline" xml:id="C2.S11.SS1.p4.m9">|z|</Math> intended to be used. The choice of <Math mode="inline" xml:id="C2.S11.SS1.p4.m10">\alpha^{\prime}</Math> and <Math mode="inline" xml:id="C2.S11.SS1.p4.m11">\beta^{\prime}</Math> is facilitated by a knowledge of the relevant Stokes lines; see §2.11(iv) below.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C2.S11.SS1.p5.s1">
+However, regardless whether we can bound the remainder, the accuracy achievable by direct numerical summation of a divergent asymptotic series is always limited. The rest of this section is devoted to general methods for increasing this accuracy.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+<subsection xml:id="C2.S11.SS2">
+<title>Connection Formulas</title>          
+<para xml:id="C2.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C2.S11.SS2.p1.s1">
+From §8.19(i) the generalized exponential integral is given by <Math equation-number="2.11.5" mode="display" xml:id="C2.S11.E5">E_{p}\left(z\right)=\frac{e^{-z}z^{p-1}}{\Gamma\left(p\right)}\int_{0}^{\infty }\frac{e^{-zt}t^{p-1}}{1+t}\mathrm{d}t</Math> when <Math mode="inline" xml:id="C2.S11.SS2.p1.m1">\Re p&gt;0</Math> and <Math mode="inline" xml:id="C2.S11.SS2.p1.m2">|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> , and by analytic continuation for other values of <Math mode="inline" xml:id="C2.S11.SS2.p1.m3">p</Math> and <Math mode="inline" xml:id="C2.S11.SS2.p1.m4">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C2.S11.SS2.p1.s2">
+Application of Watson’s lemma (§2.4(i)) yields <Math equation-number="2.11.6" mode="display" xml:id="C2.S11.E6">E_{p}\left(z\right)\sim\frac{e^{-z}}{z}\sum_{s=0}^{\infty}(-1)^{s}\frac{{\left (p\right)_{s}}}{z^{s}}</Math> when <Math mode="inline" xml:id="C2.S11.SS2.p1.m5">p</Math> is fixed and <Math mode="inline" xml:id="C2.S11.SS2.p1.m6">z\to\infty</Math> in any closed sector within <Math mode="inline" xml:id="C2.S11.SS2.p1.m7">|\operatorname{ph}z|&lt;\frac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C2.S11.SS2.p1.s3">
+As noted in §2.11(i), poor accuracy is yielded by this expansion as <Math mode="inline" xml:id="C2.S11.SS2.p1.m8">\operatorname{ph}z</Math> approaches <Math mode="inline" xml:id="C2.S11.SS2.p1.m9">\frac{3}{2}\pi</Math> or <Math mode="inline" xml:id="C2.S11.SS2.p1.m10">-\frac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C2.S11.SS2.p1.s4">
+However, on combining (2.11.6) with the connection formula (8.19.18), with <Math mode="inline" xml:id="C2.S11.SS2.p1.m11">m=1</Math> , we derive <Math equation-number="2.11.7" mode="display" xml:id="C2.S11.E7">E_{p}\left(z\right)\sim\frac{2\pi ie^{-p\pi i}}{\Gamma\left(p\right)}z^{p-1}+ \frac{e^{-z}}{z}\sum_{s=0}^{\infty}(-1)^{s}\frac{{\left(p\right)_{s}}}{z^{s}},</Math> valid as <Math mode="inline" xml:id="C2.S11.SS2.p1.m12">z\to\infty</Math> in any closed sector within <Math mode="inline" xml:id="C2.S11.SS2.p1.m13">\frac{1}{2}\pi&lt;\operatorname{ph}z&lt;\frac{7}{2}\pi</Math> ; compare (8.20.3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C2.S11.SS2.p1.s5">
+Since the ray <Math mode="inline" xml:id="C2.S11.SS2.p1.m14">\operatorname{ph}z=\frac{3}{2}\pi</Math> is well away from the new boundaries, the compound expansion (2.11.7) yields much more accurate results when <Math mode="inline" xml:id="C2.S11.SS2.p1.m15">\operatorname{ph}z\to\frac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="22" xml:id="C2.S11.SS2.p1.s6">
+In effect, (2.11.7) “corrects” (2.11.6) by introducing a term that is relatively exponentially small in the neighborhood of <Math mode="inline" xml:id="C2.S11.SS2.p1.m16">\operatorname{ph}z=\pi</Math> , is increasingly significant as <Math mode="inline" xml:id="C2.S11.SS2.p1.m17">\operatorname{ph}z</Math> passes from <Math mode="inline" xml:id="C2.S11.SS2.p1.m18">\pi</Math> to <Math mode="inline" xml:id="C2.S11.SS2.p1.m19">\frac{3}{2}\pi</Math> , and becomes the dominant contribution after <Math mode="inline" xml:id="C2.S11.SS2.p1.m20">\operatorname{ph}z</Math> passes <Math mode="inline" xml:id="C2.S11.SS2.p1.m21">\frac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="23" xml:id="C2.S11.SS2.p1.s7">
+See also §2.11(iv).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S11.SS3">
+<title>Exponentially-Improved Expansions</title>           
+<para xml:id="C2.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C2.S11.SS3.p1.s1">
+The procedure followed in §2.11(ii) enabled <Math mode="inline" xml:id="C2.S11.SS3.p1.m1">E_{p}\left(z\right)</Math> to be computed with as much accuracy in the sector <Math mode="inline" xml:id="C2.S11.SS3.p1.m2">\pi\leq\operatorname{ph}z\leq 3\pi</Math> as the original expansion (2.11.6) in <Math mode="inline" xml:id="C2.S11.SS3.p1.m3">|\operatorname{ph}z|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C2.S11.SS3.p1.s2">
+We now increase substantially the accuracy of (2.11.6) in <Math mode="inline" xml:id="C2.S11.SS3.p1.m4">|\operatorname{ph}z|\leq\pi</Math> by re-expanding the remainder term.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C2.S11.SS3.p2.s1">
+Optimum truncation in (2.11.6) takes place at <Math mode="inline" xml:id="C2.S11.SS3.p2.m1">s=n-1</Math> , with <Math mode="inline" xml:id="C2.S11.SS3.p2.m2">|p+n-1|=|z|</Math> , approximately.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C2.S11.SS3.p2.s2">
+Thus <Math equation-number="2.11.8" mode="display" xml:id="C2.S11.E8">n=\rho-p+\alpha,</Math> where <Math mode="inline" xml:id="C2.S11.SS3.p2.m3">z=\rho e^{i\theta}</Math> , and <Math mode="inline" xml:id="C2.S11.SS3.p2.m4">|\alpha|</Math> is bounded as <Math mode="inline" xml:id="C2.S11.SS3.p2.m5">n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C2.S11.SS3.p2.s3">
+From (2.11.5) and the identity <Math equation-number="2.11.9" mode="display" xml:id="C2.S11.E9">\frac{1}{1+t}=\sum_{s=0}^{n-1}(-1)^{s}t^{s}+(-1)^{n}\frac{t^{n}}{1+t}, if t\neq-1,</Math> we have <Math equation-number="2.11.10" mode="display" xml:id="C2.S11.E10">E_{p}\left(z\right)=\frac{e^{-z}}{z}\sum_{s=0}^{n-1}(-1)^{s}\frac{{\left(p \right)_{s}}}{z^{s}}+(-1)^{n}\frac{2\pi}{\Gamma\left(p\right)}z^{p-1}F_{n+p} \left(z\right),</Math> where <Math equation-number="2.11.11" mode="display" xml:id="C2.S11.E11">F_{n+p}\left(z\right)=\frac{e^{-z}}{2\pi}\int_{0}^{\infty}\frac{e^{-zt}t^{n+p- 1}}{1+t}\mathrm{d}t=\frac{\Gamma\left(n+p\right)}{2\pi}\frac{E_{n+p}\left(z \right)}{z^{n+p-1}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C2.S11.SS3.p3.s1">
+With <Math mode="inline" xml:id="C2.S11.SS3.p3.m1">n</Math> given by (2.11.8), we have <Math equation-number="2.11.12" mode="display" xml:id="C2.S11.E12">F_{n+p}\left(z\right)=\frac{e^{-z}}{2\pi}\int_{0}^{\infty}\exp\left(-\rho\left (te^{i\theta}-\ln t\right)\right)\frac{t^{\alpha-1}}{1+t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C2.S11.SS3.p3.s2">
+For large <Math mode="inline" xml:id="C2.S11.SS3.p3.m2">\rho</Math> the integrand has a saddle point at <Math mode="inline" xml:id="C2.S11.SS3.p3.m3">t=e^{-i\theta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C2.S11.SS3.p3.s3">
+Following §2.4(iv), we rotate the integration path through an angle <Math mode="inline" xml:id="C2.S11.SS3.p3.m4">-\theta</Math> , which is valid by analytic continuation when <Math mode="inline" xml:id="C2.S11.SS3.p3.m5">-\pi&lt;\theta&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="32" xml:id="C2.S11.SS3.p3.s4">
+Then by application of Laplace’s method (§§2.4(iii) and 2.4(iv)), we have <Math equation-number="2.11.13" mode="display" xml:id="C2.S11.E13">F_{n+p}\left(z\right)\sim\frac{e^{-i(\rho+\alpha)\theta}}{1+e^{-i\theta}}\frac {e^{-\rho-z}}{(2\pi\rho)^{1/2}}\sum_{s=0}^{\infty}\frac{a_{2s}(\theta,\alpha)} {\rho^{s}}, if \rho\to\infty,</Math> uniformly when <Math mode="inline" xml:id="C2.S11.SS3.p3.m6">\theta\in[-\pi+\delta,\pi-\delta]</Math> ( <Math mode="inline" xml:id="C2.S11.SS3.p3.m7">\delta&gt;0</Math> ) and <Math mode="inline" xml:id="C2.S11.SS3.p3.m8">|\alpha|</Math> is bounded. The coefficients are rational functions of <Math mode="inline" xml:id="C2.S11.SS3.p3.m9">\alpha</Math> and <Math mode="inline" xml:id="C2.S11.SS3.p3.m10">1+e^{i\theta}</Math> , for example, <Math mode="inline" xml:id="C2.S11.SS3.p3.m11">a_{0}(\theta,\alpha)=1</Math> , and <Math equation-number="2.11.14" mode="display" xml:id="C2.S11.E14">a_{2}(\theta,\alpha)=\frac{1}{12}(6\alpha^{2}-6\alpha+1)-\frac{\alpha}{1+e^{i \theta}}+\frac{1}{(1+e^{i\theta})^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C2.S11.SS3.p4.s1">
+Owing to the factor <Math mode="inline" xml:id="C2.S11.SS3.p4.m1">e^{-\rho}</Math> , that is, <Math mode="inline" xml:id="C2.S11.SS3.p4.m2">e^{-|z|}</Math> in (2.11.13),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C2.S11.SS3.p4.s2">
+<Math mode="inline" xml:id="C2.S11.SS3.p4.m3">F_{n+p}\left(z\right)</Math> is uniformly exponentially small compared with <Math mode="inline" xml:id="C2.S11.SS3.p4.m4">E_{p}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C2.S11.SS3.p4.s3">
+For this reason the expansion of <Math mode="inline" xml:id="C2.S11.SS3.p4.m5">E_{p}\left(z\right)</Math> in <Math mode="inline" xml:id="C2.S11.SS3.p4.m6">|\operatorname{ph}z|\leq\pi-\delta</Math> supplied by (2.11.8), (2.11.10), and (2.11.13) is said to be exponentially improved.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C2.S11.SS3.p5.s1">
+If we permit the use of nonelementary functions as approximants, then even more powerful re-expansions become available.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C2.S11.SS3.p5.s2">
+One is uniformly valid for <Math mode="inline" xml:id="C2.S11.SS3.p5.m1">-\pi+\delta\leq\operatorname{ph}z\leq 3\pi-\delta</Math> with bounded <Math mode="inline" xml:id="C2.S11.SS3.p5.m2">|\alpha|</Math> , and achieves uniform exponential improvement throughout <Math mode="inline" xml:id="C2.S11.SS3.p5.m3">0\leq\operatorname{ph}z\leq\pi</Math> : <Math equation-number="2.11.15" mode="display" xml:id="C2.S11.E15">F_{n+p}\left(z\right)\sim(-1)^{n}ie^{-p\pi i}\left(\tfrac{1}{2}\operatorname{ erfc}\left(\sqrt{\tfrac{1}{2}\rho}\,c(\theta)\right)-i\frac{e^{i\rho(\pi- \theta)}e^{-\rho-z}}{(2\pi\rho)^{1/2}}\sum_{s=0}^{\infty}\frac{h_{2s}(\theta, \alpha)}{\rho^{s}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C2.S11.SS3.p5.s3">
+Here <Math mode="inline" xml:id="C2.S11.SS3.p5.m4">\operatorname{erfc}</Math> is the complementary error function (§7.2(i)), and <Math equation-number="2.11.16" mode="display" xml:id="C2.S11.E16">c(\theta)=\sqrt{2(1+e^{i\theta}+i(\theta-\pi))},</Math> the branch being continuous with <Math mode="inline" xml:id="C2.S11.SS3.p5.m5">c(\theta)\sim\pi-\theta</Math> as <Math mode="inline" xml:id="C2.S11.SS3.p5.m6">\theta\to\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C2.S11.SS3.p5.s4">
+Also, <Math equation-number="2.11.17" mode="display" xml:id="C2.S11.E17">h_{2s}(\theta,\alpha)=\frac{e^{i\alpha(\pi-\theta)}}{1+e^{-i\theta}}a_{2s}( \theta,\alpha)+(-1)^{s-1}i\frac{1\cdot 3\cdot 5\cdot\cdot\cdot(2s-1)}{(c( \theta))^{2s+1}},</Math> with <Math mode="inline" xml:id="C2.S11.SS3.p5.m7">a_{2s}(\theta,\alpha)</Math> as in (2.11.13), (2.11.14).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C2.S11.SS3.p5.s5">
+In particular, <Math equation-number="2.11.18" mode="display" xml:id="C2.S11.E18">h_{0}(\theta,\alpha)=\frac{e^{i\alpha(\pi-\theta)}}{1+e^{-i\theta}}-\frac{i}{c (\theta)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C2.S11.SS3.p6.s1">
+For the sector <Math mode="inline" xml:id="C2.S11.SS3.p6.m1">-3\pi+\delta\leq\operatorname{ph}z\leq\pi-\delta</Math> the conjugate result applies.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C2.S11.SS3.p7.s1">
+Further details for this example are supplied in Olver (1991a, 1994b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C2.S11.SS3.p7.s2">
+See also Paris and Kaminski (2001, Chapter 6), andDunster (1996b, 1997).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S11.SS4">
+<title>Stokes Phenomenon</title>           
+<para xml:id="C2.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C2.S11.SS4.p1.s1">
+Two different asymptotic expansions in terms of elementary functions, (2.11.6) and (2.11.7), are available for thegeneralized exponential integral in the sector <Math mode="inline" xml:id="C2.S11.SS4.p1.m1">\frac{1}{2}\pi&lt;\operatorname{ph}z&lt;\frac{3}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C2.S11.SS4.p1.s2">
+That the change in their forms is discontinuous, even though the function being approximated is analytic, is an example of the Stokes phenomenon.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="46" xml:id="C2.S11.SS4.p1.s3">
+Where should the change-over take place?
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="47" xml:id="C2.S11.SS4.p1.s4">
+Can it be accomplished smoothly?
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C2.S11.SS4.p2.s1">
+Satisfactory answers to these questions were found by Berry (1989); see also the survey by Paris and Wood (1995).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C2.S11.SS4.p2.s2">
+These answers are linked to the terms involving the complementary error function in the more powerful expansions typified by the combination of (2.11.10) and (2.11.15).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="50" xml:id="C2.S11.SS4.p2.s3">
+Thus if <Math mode="inline" xml:id="C2.S11.SS4.p2.m1">0\leq\theta\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C2.S11.SS4.p2.m2">&lt;\pi</Math> ), then <Math mode="inline" xml:id="C2.S11.SS4.p2.m3">c(\theta)</Math> lies in the right half-plane.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="51" xml:id="C2.S11.SS4.p2.s4">
+Hence from §7.12(i)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="52" xml:id="C2.S11.SS4.p2.s5">
+<Math mode="inline" xml:id="C2.S11.SS4.p2.m4">\operatorname{erfc}\left(\sqrt{\frac{1}{2}\rho}\;c(\theta)\right)</Math> is of the same exponentially-small order of magnitude as the contribution from the other terms in (2.11.15) when <Math mode="inline" xml:id="C2.S11.SS4.p2.m5">\rho</Math> is large.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="53" xml:id="C2.S11.SS4.p2.s6">
+On the other hand, when <Math mode="inline" xml:id="C2.S11.SS4.p2.m6">\pi+\delta\leq\theta\leq 3\pi-\delta</Math> , <Math mode="inline" xml:id="C2.S11.SS4.p2.m7">c(\theta)</Math> is in the left half-plane and <Math mode="inline" xml:id="C2.S11.SS4.p2.m8">\operatorname{erfc}\left(\sqrt{\frac{1}{2}\rho}\;c(\theta)\right)</Math> differs from 2 by an exponentially-small quantity.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="54" xml:id="C2.S11.SS4.p2.s7">
+In the transition through <Math mode="inline" xml:id="C2.S11.SS4.p2.m9">\theta=\pi</Math> , <Math mode="inline" xml:id="C2.S11.SS4.p2.m10">\operatorname{erfc}\left(\sqrt{\frac{1}{2}\rho}\;c(\theta)\right)</Math> changes very rapidly, but smoothly, from one form to the other; compare the graph of its modulus in Figure 2.11.1 in the case <Math mode="inline" xml:id="C2.S11.SS4.p2.m11">\rho=100</Math>.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="55" xml:id="C2.S11.F1.s1">
+Figure 2.11.1: Graph of <Math mode="inline" xml:id="C2.S11.F1.m2">|\operatorname{erfc}\left(\sqrt{50}\,c(\theta)\right)|</Math> .
+</sentence>  
+<para xml:id="C2.S11.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C2.S11.SS4.p3.s1">
+In particular, on the ray <Math mode="inline" xml:id="C2.S11.SS4.p3.m1">\theta=\pi</Math> greatest accuracy is achieved by (a) taking the average of the expansions (2.11.6) and (2.11.7), followed by (b) taking account of the exponentially-small contributions arising from the terms involving <Math mode="inline" xml:id="C2.S11.SS4.p3.m2">h_{2s}(\theta,\alpha)</Math> in (2.11.15).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C2.S11.SS4.p4.s1">
+Rays (or curves) on which one contribution in a compound asymptotic expansion achieves maximum dominance over another are called Stokes lines ( <Math mode="inline" xml:id="C2.S11.SS4.p4.m1">\theta=\pi</Math> in the present example).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C2.S11.SS4.p4.s2">
+As these lines are crossed exponentially-small contributions, such as that in (2.11.7), are “switched on” smoothly, in the manner of the graph in Figure2.11.1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C2.S11.SS4.p5.s1">
+For higher-order Stokes phenomena see Olde Daalhuis (2004b) andHowls et al. (2004).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S11.SS5">
+<title>Exponentially-Improved Expansions (continued)</title>        
+  
+<para xml:id="C2.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C2.S11.SS5.p1.s1">
+Expansions similar to (2.11.15) can be constructed for many other special functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C2.S11.SS5.p1.s2">
+However, to enjoy the resurgence property (§2.7(ii)) we often seek instead expansions in terms of the <Math mode="inline" xml:id="C2.S11.SS5.p1.m1">F</Math> -functions introduced in §2.11(iii), leaving the connection of the error-function type behavior as an implicit consequence of this property of the <Math mode="inline" xml:id="C2.S11.SS5.p1.m2">F</Math> -functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="62" xml:id="C2.S11.SS5.p1.s3">
+In this context the <Math mode="inline" xml:id="C2.S11.SS5.p1.m3">F</Math> -functions are calledterminants, a name introduced by Dingle (1973).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C2.S11.SS5.p2.s1">
+For illustration, we give re-expansions of the remainder terms in the expansions (2.7.8) arising in differential-equation theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C2.S11.SS5.p2.s2">
+For notational convenience assume that the original differential equation (2.7.1) is normalized so that <Math mode="inline" xml:id="C2.S11.SS5.p2.m1">\lambda_{2}-\lambda_{1}=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C2.S11.SS5.p2.s3">
+(This means that, if necessary, <Math mode="inline" xml:id="C2.S11.SS5.p2.m2">z</Math> is replaced by <Math mode="inline" xml:id="C2.S11.SS5.p2.m3">z/(\lambda_{2}-\lambda_{1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="66" xml:id="C2.S11.SS5.p2.s4">
+) From (2.7.12), (2.7.13) it is then seen that the optimum number of terms, <Math mode="inline" xml:id="C2.S11.SS5.p2.m4">n</Math> , in (2.7.14) is approximately <Math mode="inline" xml:id="C2.S11.SS5.p2.m5">|z|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="67" xml:id="C2.S11.SS5.p2.s5">
+We set <Math equation-number="2.11.19" mode="display" xml:id="C2.S11.E19">w_{j}(z)=e^{\lambda_{j}z}z^{\mu_{j}}\sum_{s=0}^{n-1}\frac{a_{s,j}}{z^{s}}+R_{n }^{(j)}(z), if j=1,2,</Math> and expand
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C2.S11.SS5.p3.s1">
+ <Math equation-number="2.11.20" mode="display" xml:id="C2.S11.E20">R_{n}^{(1)}(z)=(-1)^{n-1}ie^{(\mu_{2}-\mu_{1})\pi i}e^{\lambda_{2}z}z^{\mu_{2} }\left(C_{1}\sum_{s=0}^{m-1}(-1)^{s}a_{s,2}\frac{F_{n+\mu_{2}-\mu_{1}-s}\left( z\right)}{z^{s}}+R_{m,n}^{(1)}(z)\right),</Math> , <Math equation-number="2.11.21" mode="display" xml:id="C2.S11.E21">R_{n}^{(2)}(z)=(-1)^{n}ie^{(\mu_{2}-\mu_{1})\pi i}e^{\lambda_{1}z}z^{\mu_{1}} \left(C_{2}\sum_{s=0}^{m-1}(-1)^{s}a_{s,1}\frac{F_{n+\mu_{1}-\mu_{2}-s}\left( ze^{-\pi i}\right)}{z^{s}}+R_{m,n}^{(2)}(z)\right),</Math> with <Math mode="inline" xml:id="C2.S11.SS5.p3.m1">m=0,1,2,\dots</Math> , and <Math mode="inline" xml:id="C2.S11.SS5.p3.m2">C_{1},C_{2}</Math> as in (2.7.17).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C2.S11.SS5.p3.s2">
+Then as <Math mode="inline" xml:id="C2.S11.SS5.p3.m3">z\to\infty</Math> , with <Math mode="inline" xml:id="C2.S11.SS5.p3.m4">|n-|z||</Math> bounded and <Math mode="inline" xml:id="C2.S11.SS5.p3.m5">m</Math> fixed, <Math equation-number="2.11.22" mode="display" xml:id="C2.S11.E22">R_{m,n}^{(1)}(z)=\begin{cases}O\left(e^{-|z|-z}z^{-m}\right),&amp;|\operatorname{ ph}z|\leq\pi,\\ O\left(z^{-m}\right),&amp;\pi\leq|\operatorname{ph}z|\leq\frac{5}{2}\pi-\delta, \end{cases}</Math> , <Math equation-number="2.11.23" mode="display" xml:id="C2.S11.E23">R_{m,n}^{(2)}(z)=\begin{cases}O\left(e^{-|z|+z}z^{-m}\right),&amp;0\leq \operatorname{ph}z\leq 2\pi,\\ O\left(z^{-m}\right),&amp;-\frac{3}{2}\pi+\delta\leq\operatorname{ph}z\leq 0\text{ and }2\pi\leq\operatorname{ph}z\leq\frac{7}{2}\pi-\delta,\end{cases}</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C2.S11.SS5.p4.s1">
+uniformly with respect to <Math mode="inline" xml:id="C2.S11.SS5.p4.m1">\operatorname{ph}z</Math> in each case.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C2.S11.SS5.p5.s1">
+The relevant Stokes lines are <Math mode="inline" xml:id="C2.S11.SS5.p5.m1">\operatorname{ph}z=\pm\pi</Math> for <Math mode="inline" xml:id="C2.S11.SS5.p5.m2">w_{1}(z)</Math> , and <Math mode="inline" xml:id="C2.S11.SS5.p5.m3">\operatorname{ph}z=0,2\pi</Math> for <Math mode="inline" xml:id="C2.S11.SS5.p5.m4">w_{2}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C2.S11.SS5.p5.s2">
+In addition to achieving uniform exponential improvement, particularly in <Math mode="inline" xml:id="C2.S11.SS5.p5.m5">|\operatorname{ph}z|\leq\pi</Math> for <Math mode="inline" xml:id="C2.S11.SS5.p5.m6">w_{1}(z)</Math> , and <Math mode="inline" xml:id="C2.S11.SS5.p5.m7">0\leq\operatorname{ph}z\leq 2\pi</Math> for <Math mode="inline" xml:id="C2.S11.SS5.p5.m8">w_{2}(z)</Math> , the re-expansions (2.11.20), (2.11.21) are resurgent.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C2.S11.SS5.p6.s1">
+For further details see Olde Daalhuis and Olver (1994).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="74" xml:id="C2.S11.SS5.p6.s2">
+For error bounds seeDunster (1996c).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="75" xml:id="C2.S11.SS5.p6.s3">
+For other examples see Boyd (1990b),Paris (1992a, b), and Wong and Zhao (2002b).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S11.SS5.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C2.S11.SS5.p7.s1">
+Often the process of re-expansion can be repeated any number of times.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C2.S11.SS5.p7.s2">
+In this way we arrive at hyperasymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="78" xml:id="C2.S11.SS5.p7.s3">
+For integrals, seeBerry and Howls (1991), Howls (1992), andParis and Kaminski (2001, Chapter 6).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="79" xml:id="C2.S11.SS5.p7.s4">
+For second-order differential equations, see Olde Daalhuis and Olver (1995a),Olde Daalhuis (1995, 1996), andMurphy and Wood (1997).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S11.SS5.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C2.S11.SS5.p8.s1">
+For higher-order differential equations, see Olde Daalhuis (1998a, b).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="81" xml:id="C2.S11.SS5.p8.s2">
+The first of these two references also provides an introduction to the powerful Borel transform theory.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="82" xml:id="C2.S11.SS5.p8.s3">
+In this connection see also Byatt-Smith (2000).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS5.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C2.S11.SS5.p9.s1">
+For nonlinear differential equations seeOlde Daalhuis (2005a, b).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS5.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C2.S11.SS5.p10.s1">
+For another approach seeParis (2001a, b).
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+<subsection xml:id="C2.S11.SS6">
+<title>Direct Numerical Transformations</title>           
+<para xml:id="C2.S11.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C2.S11.SS6.p1.s1">
+The transformations in §3.9 for summing slowly convergent series can also be very effective when applied to divergent asymptotic series.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S11.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C2.S11.SS6.p2.s1">
+A simple example is provided by Euler’s transformation (§3.9(ii)) applied to the asymptotic expansion for the exponential integral (§6.12(i)):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C2.S11.SS6.p2.s2">
+<Math equation-number="2.11.24" mode="display" xml:id="C2.S11.E24">e^{x}E_{1}\left(x\right)\sim\sum_{s=0}^{\infty}(-1)^{s}\frac{s!}{x^{s+1}}, if x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="88" xml:id="C2.S11.SS6.p2.s3">
+Taking <Math mode="inline" xml:id="C2.S11.SS6.p2.m1">x=5</Math> and rounding to 5D, we obtain <Math equation-number="2.11.25" mode="display" xml:id="C2.S11.E25">e^{5}E_{1}\left(5\right)=0.20000-0.04000+0.01600-0.00960+0.00768-0.00768+0.009 22-0.01290+0.02064-0.03716+0.07432-\cdots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="89" xml:id="C2.S11.SS6.p2.s4">
+The numerically smallest terms are the 5th and 6th.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="90" xml:id="C2.S11.SS6.p2.s5">
+Truncation after 5 terms yields 0.17408, compared with the correct value <Math equation-number="2.11.26" mode="display" xml:id="C2.S11.E26">e^{5}E_{1}\left(5\right)=0.17042\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C2.S11.SS6.p3.s1">
+We now compute the forward differences <Math mode="inline" xml:id="C2.S11.SS6.p3.m1">\Delta^{j}</Math> , <Math mode="inline" xml:id="C2.S11.SS6.p3.m2">j=0,1,2,\dots</Math> , of the moduli of the rounded values of the first 6 neglected terms: <Math equation-number="2.11.27" mode="display" xml:id="C2.S11.E27">\Delta^{0}=0.00768, ,\Delta^{1}=0.00154, ,\Delta^{2}=0.00214, ,\Delta^{3}=0.00192, ,\Delta^{4}=0.00280, ,\Delta^{5}=0.00434, </Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="92" xml:id="C2.S11.SS6.p3.s2">
+Multiplying these differences by <Math mode="inline" xml:id="C2.S11.SS6.p3.m3">(-1)^{j}2^{-j-1}</Math> and summing, we obtain <Math equation-number="2.11.28" mode="display" xml:id="C2.S11.E28">0.00384-0.00038+0.00027-0.00012+0.00009-0.00007=0.00363</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="93" xml:id="C2.S11.SS6.p3.s3">
+Subtraction of this result from the sum of the first 5 terms in (2.11.25) yields 0.17045, which is much closer to the true value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C2.S11.SS6.p4.s1">
+The process just used is equivalent to re-expanding the remainder term of the original asymptotic series (2.11.24) in powers of <Math mode="inline" xml:id="C2.S11.SS6.p4.m1">1/(x+5)</Math> and truncating the new series optimally.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="95" xml:id="C2.S11.SS6.p4.s2">
+Further improvements in accuracy can be realized by making a second application of the Euler transformation; seeOlver (1997b, pp. 540–543).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C2.S11.SS6.p5.s1">
+Similar improvements are achievable by Aitken’s <Math mode="inline" xml:id="C2.S11.SS6.p5.m1">\Delta^{2}</Math> -process, Wynn’s <Math mode="inline" xml:id="C2.S11.SS6.p5.m2">\epsilon</Math> -algorithm, and other acceleration transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C2.S11.SS6.p5.s2">
+For a comprehensive survey see Weniger (1989).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C2.S11.SS6.p6.s1">
+The following example, based on Weniger (1996), illustrates theirpower.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C2.S11.SS6.p7.s1">
+For large <Math mode="inline" xml:id="C2.S11.SS6.p7.m1">|z|</Math> , with <Math mode="inline" xml:id="C2.S11.SS6.p7.m2">|\operatorname{ph}z|\leq\frac{3}{2}\pi-\delta</Math> ( <Math mode="inline" xml:id="C2.S11.SS6.p7.m3">&lt;\frac{3}{2}\pi</Math> ), the Whittaker function of the second kind has the asymptotic expansion (§13.19)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="100" xml:id="C2.S11.SS6.p7.s2">
+<Math equation-number="2.11.29" mode="display" xml:id="C2.S11.E29">W_{\kappa,\mu}\left(z\right)\sim\sum_{n=0}^{\infty}a_{n},</Math> in which <Math equation-number="2.11.30" mode="display" xml:id="C2.S11.E30">a_{n}=\frac{e^{-z/2}}{z^{n-\kappa}n!}\left(\mu^{2}-(\kappa-\tfrac{1}{2})^{2} \right)\*\left(\mu^{2}-(\kappa-\tfrac{3}{2})^{2}\right)\*\cdot\cdot\cdot\left( \mu^{2}-(\kappa-n+\tfrac{1}{2})^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="101" xml:id="C2.S11.SS6.p7.s3">
+With <Math mode="inline" xml:id="C2.S11.SS6.p7.m4">z=1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="102" xml:id="C2.S11.SS6.p7.s4">
+0, <Math mode="inline" xml:id="C2.S11.SS6.p7.m5">\kappa=2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="103" xml:id="C2.S11.SS6.p7.s5">
+3, <Math mode="inline" xml:id="C2.S11.SS6.p7.m6">\mu=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="104" xml:id="C2.S11.SS6.p7.s6">
+5, the values of <Math mode="inline" xml:id="C2.S11.SS6.p7.m7">a_{n}</Math> to 8D are supplied in the second column of Table 2.11.1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="105" xml:id="C2.S11.T1.s1">
+Table 2.11.1: Whittaker functions with Levin’s transformation.
+</sentence> 
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="1" xml:id="C2.S11.T1.t1.s1">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="2" xml:id="C2.S11.T1.t1.s2">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r1.m2">a_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="3" xml:id="C2.S11.T1.t1.s3">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r1.m3">s_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="4" xml:id="C2.S11.T1.t1.s4">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r1.m4">d_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="5" xml:id="C2.S11.T1.t1.s5">
+0
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="6" xml:id="C2.S11.T1.t1.s6">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r2.m1">0.60653\;066</Math>
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="7" xml:id="C2.S11.T1.t1.s7">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r2.m2">0.60653\;066</Math>
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="8" xml:id="C2.S11.T1.t1.s8">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r2.m3">0.60653\;066</Math>
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="9" xml:id="C2.S11.T1.t1.s9">
+1
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="10" xml:id="C2.S11.T1.t1.s10">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r3.m1">-1.81352\;66</Math>7
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="11" xml:id="C2.S11.T1.t1.s11">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r3.m2">-1.20699\;60</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="12" xml:id="C2.S11.T1.t1.s12">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r3.m3">-0.91106\;48</Math>8
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="13" xml:id="C2.S11.T1.t1.s13">
+2
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="14" xml:id="C2.S11.T1.t1.s14">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r4.m1">0.35363\;770</Math>
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="15" xml:id="C2.S11.T1.t1.s15">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r4.m2">-0.85335\;83</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="16" xml:id="C2.S11.T1.t1.s16">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r4.m3">-0.82413\;40</Math>5
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="17" xml:id="C2.S11.T1.t1.s17">
+3
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="18" xml:id="C2.S11.T1.t1.s18">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r5.m1">0.02475\;464</Math>
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="19" xml:id="C2.S11.T1.t1.s19">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r5.m2">-0.82860\;36</Math>7
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="20" xml:id="C2.S11.T1.t1.s20">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r5.m3">-0.83323\;42</Math>9
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="21" xml:id="C2.S11.T1.t1.s21">
+4
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="22" xml:id="C2.S11.T1.t1.s22">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r6.m1">-0.00736\;45</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="23" xml:id="C2.S11.T1.t1.s23">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r6.m2">-0.83596\;81</Math>8
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="24" xml:id="C2.S11.T1.t1.s24">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r6.m3">-0.83303\;75</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="25" xml:id="C2.S11.T1.t1.s25">
+5
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="26" xml:id="C2.S11.T1.t1.s26">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r7.m1">0.00676\;062</Math>
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="27" xml:id="C2.S11.T1.t1.s27">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r7.m2">-0.82920\;75</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="28" xml:id="C2.S11.T1.t1.s28">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r7.m3">-0.83298\;90</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="29" xml:id="C2.S11.T1.t1.s29">
+6
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="30" xml:id="C2.S11.T1.t1.s30">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r8.m1">-0.01125\;64</Math>3
+</sentence>
+
+<sentence sentence-num-in-section="136" sentence-num-in-table="31" xml:id="C2.S11.T1.t1.s31">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r8.m2">-0.84046\;39</Math>9
+</sentence>
+
+<sentence sentence-num-in-section="137" sentence-num-in-table="32" xml:id="C2.S11.T1.t1.s32">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r8.m3">-0.83299\;42</Math>9
+</sentence>
+
+<sentence sentence-num-in-section="138" sentence-num-in-table="33" xml:id="C2.S11.T1.t1.s33">
+7
+</sentence>
+
+<sentence sentence-num-in-section="139" sentence-num-in-table="34" xml:id="C2.S11.T1.t1.s34">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r9.m1">0.02796\;418</Math>
+</sentence>
+
+<sentence sentence-num-in-section="140" sentence-num-in-table="35" xml:id="C2.S11.T1.t1.s35">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r9.m2">-0.81249\;98</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="141" sentence-num-in-table="36" xml:id="C2.S11.T1.t1.s36">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r9.m3">-0.83299\;53</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="142" sentence-num-in-table="37" xml:id="C2.S11.T1.t1.s37">
+8
+</sentence>
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="38" xml:id="C2.S11.T1.t1.s38">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r10.m1">-0.09364\;50</Math>4
+</sentence>
+
+<sentence sentence-num-in-section="144" sentence-num-in-table="39" xml:id="C2.S11.T1.t1.s39">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r10.m2">-0.90614\;48</Math>5
+</sentence>
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="40" xml:id="C2.S11.T1.t1.s40">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r10.m3">-0.83299\;50</Math>4
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="41" xml:id="C2.S11.T1.t1.s41">
+9
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="42" xml:id="C2.S11.T1.t1.s42">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r11.m1">0.39736\;710</Math>
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="43" xml:id="C2.S11.T1.t1.s43">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r11.m2">-0.50877\;77</Math>5
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="44" xml:id="C2.S11.T1.t1.s44">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r11.m3">-0.83299\;50</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="45" xml:id="C2.S11.T1.t1.s45">
+10
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="46" xml:id="C2.S11.T1.t1.s46">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r12.m1">-2.05001\;68</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="47" xml:id="C2.S11.T1.t1.s47">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r12.m2">-2.55879\;46</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="48" xml:id="C2.S11.T1.t1.s48">
+<Math mode="inline" xml:id="C2.S11.T1.t1.r12.m3">-0.83299\;50</Math>3
+</sentence>
+  
+<para xml:id="C2.S11.SS6.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C2.S11.SS6.p8.s1">
+The next column lists the partial sums <Math mode="inline" xml:id="C2.S11.SS6.p8.m1">s_{n}=a_{0}+a_{1}+\dots+a_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C2.S11.SS6.p8.s2">
+Optimum truncation occurs just prior to the numerically smallest term, that is, at <Math mode="inline" xml:id="C2.S11.SS6.p8.m2">s_{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="156" xml:id="C2.S11.SS6.p8.s3">
+Comparison with the true value <Math equation-number="2.11.31" mode="display" xml:id="C2.S11.E31">W_{2.3,0.5}\left(1.0\right)=-0.83299\;50268\;27526\;\cdot</Math> s shows that this direct estimate is correct to almost 3D.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C2.S11.SS6.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C2.S11.SS6.p9.s1">
+The fourth column of Table 2.11.1 gives the results of applying the following variant of Levin’s transformation: <Math equation-number="2.11.32" mode="display" xml:id="C2.S11.E32">d_{n}=\frac{\sum_{j=0}^{n}(-1)^{j}\genfrac{(}{)}{0.0pt}{}{n}{j}(j+1)^{n-1} \frac{s_{j}}{a_{j+1}}}{\sum_{j=0}^{n}(-1)^{j}\genfrac{(}{)}{0.0pt}{}{n}{j}(j+1 )^{n-1}\frac{1}{a_{j+1}}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="158" xml:id="C2.S11.SS6.p9.s2">
+By <Math mode="inline" xml:id="C2.S11.SS6.p9.m1">n=10</Math> we already have 8 correct decimals.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="159" xml:id="C2.S11.SS6.p9.s3">
+Furthermore, on proceeding to higher values of <Math mode="inline" xml:id="C2.S11.SS6.p9.m2">n</Math> with higher precision, much more accuracy is achievable.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="160" xml:id="C2.S11.SS6.p9.s4">
+For example, using double precision <Math mode="inline" xml:id="C2.S11.SS6.p9.m3">d_{20}</Math> is found to agree with (2.11.31) to 13D.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S11.SS6.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="161" xml:id="C2.S11.SS6.p10.s1">
+However, direct numerical transformations need to be used with care.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="162" xml:id="C2.S11.SS6.p10.s2">
+Their extrapolation is based on assumed forms of remainder terms that may not always be appropriate for asymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="163" xml:id="C2.S11.SS6.p10.s3">
+For example, extrapolated values mayconverge to an accurate value on one side of a Stokes line (§2.11(iv)), and converge to a quite inaccurate value on the other.
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S61">
+<title>Definitions and Basic Properties</title>        
+ 
+<subsection xml:id="C10.S61.SS1">
+<title>Definitions</title>        
+  
+<para xml:id="C10.S61.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S61.SS1.p1.s1">
+Throughout §§10.61–§10.71 it is assumed that <Math mode="inline" xml:id="C10.S61.SS1.p1.m1">x\geq 0</Math> , <Math mode="inline" xml:id="C10.S61.SS1.p1.m2">\nu\in\mathbb{R}</Math> , and <Math mode="inline" xml:id="C10.S61.SS1.p1.m3">n</Math> is a nonnegative integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S61.SS1.p1.s2">
+<Math equation-number="10.61.1" mode="display" xml:id="C10.S61.E1">\operatorname{ber}_{\nu}x+i\operatorname{bei}_{\nu}x=J_{\nu}\left(xe^{3\pi i/4 }\right)=e^{\nu\pi i}J_{\nu}\left(xe^{-\pi i/4}\right)=e^{\nu\pi i/2}I_{\nu} \left(xe^{\pi i/4}\right)=e^{3\nu\pi i/2}I_{\nu}\left(xe^{-3\pi i/4}\right),</Math> <Math equation-number="10.61.2" mode="display" xml:id="C10.S61.E2">\operatorname{ker}_{\nu}x+i\operatorname{kei}_{\nu}x=e^{-\nu\pi i/2}K_{\nu} \left(xe^{\pi i/4}\right)=\tfrac{1}{2}\pi i{H^{(1)}_{\nu}}\left(xe^{3\pi i/4} \right)=-\tfrac{1}{2}\pi ie^{-\nu\pi i}{H^{(2)}_{\nu}}\left(xe^{-\pi i/4} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S61.SS1.p1.s3">
+When <Math mode="inline" xml:id="C10.S61.SS1.p1.m4">\nu=0</Math> suffices on <Math mode="inline" xml:id="C10.S61.SS1.p1.m5">\operatorname{ber}</Math> , <Math mode="inline" xml:id="C10.S61.SS1.p1.m6">\operatorname{bei}</Math> , <Math mode="inline" xml:id="C10.S61.SS1.p1.m7">\operatorname{ker}</Math> , and <Math mode="inline" xml:id="C10.S61.SS1.p1.m8">\operatorname{kei}</Math> are usually suppressed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S61.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S61.SS1.p2.s1">
+Most properties of <Math mode="inline" xml:id="C10.S61.SS1.p2.m1">\operatorname{ber}_{\nu}x</Math> , <Math mode="inline" xml:id="C10.S61.SS1.p2.m2">\operatorname{bei}_{\nu}x</Math> , <Math mode="inline" xml:id="C10.S61.SS1.p2.m3">\operatorname{ker}_{\nu}x</Math> , and <Math mode="inline" xml:id="C10.S61.SS1.p2.m4">\operatorname{kei}_{\nu}x</Math> follow straightforwardly from theabove definitions and results given in preceding sections of this chapter.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S61.SS2">
+<title>Differential Equations</title>        
+  
+<para xml:id="C10.S61.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S61.SS2.p1.s1">
+ <Math equation-number="10.61.3" mode="display" xml:id="C10.S61.E3">x^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}+x\frac{\mathrm{d}w}{\mathrm{d }x}-(ix^{2}+\nu^{2})w=0, if w=\begin{array}[t]{cc}\operatorname{ber}_{\nu}x+i\operatorname{bei}_{\nu}x,&amp; \operatorname{ber}_{-\nu}x+i\operatorname{bei}_{-\nu}x\\ \operatorname{ker}_{\nu}x+i\operatorname{kei}_{\nu}x,&amp;\operatorname{ker}_{-\nu }x+i\operatorname{kei}_{-\nu}x.\end{array</Math> } <Math equation-number="10.61.4" mode="display" xml:id="C10.S61.E4">x^{4}\frac{{\mathrm{d}}^{4}w}{{\mathrm{d}x}^{4}}+2x^{3}\frac{{\mathrm{d}}^{3}w }{{\mathrm{d}x}^{3}}-(1+2\nu^{2})\left(x^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{ d}x}^{2}}-x\frac{\mathrm{d}w}{\mathrm{d}x}\right)+(\nu^{4}-4\nu^{2}+x^{4})w=0, if w=\operatorname{ber}_{\pm\nu}x,\operatorname{bei}_{\pm\nu}x,\operatorname{ker} _{\pm\nu}x,\operatorname{kei}_{\pm\nu}x</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S61.SS3">
+<title>Reflection Formulas for Arguments</title>        
+  
+<para xml:id="C10.S61.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S61.SS3.p1.s1">
+In general, Kelvin functions have a branch point at <Math mode="inline" xml:id="C10.S61.SS3.p1.m1">x=0</Math> and functions with arguments <Math mode="inline" xml:id="C10.S61.SS3.p1.m2">xe^{\pm\pi i}</Math> are complex.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C10.S61.SS3.p1.s2">
+The branch point is absent, however, in the case of <Math mode="inline" xml:id="C10.S61.SS3.p1.m3">\operatorname{ber}_{\nu}</Math> and <Math mode="inline" xml:id="C10.S61.SS3.p1.m4">\operatorname{bei}_{\nu}</Math> when <Math mode="inline" xml:id="C10.S61.SS3.p1.m5">\nu</Math> is an integer.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C10.S61.SS3.p1.s3">
+In particular, <Math equation-number="10.61.5" mode="display" xml:id="C10.S61.E5">\operatorname{ber}_{n}\left(-x\right)=(-1)^{n}\operatorname{ber}_{n}x,\operatorname{bei}_{n}\left(-x\right)=(-1)^{n}\operatorname{bei}_{n}x</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S61.SS4">
+<title>Reflection Formulas for Orders</title>        
+  
+<para xml:id="C10.S61.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C10.S61.SS4.p1.s1">
+ <Math equation-number="10.61.6" mode="display" xml:id="C10.S61.E6">\operatorname{ber}_{-\nu}x=\cos\left(\nu\pi\right)\operatorname{ber}_{\nu}x+ \sin\left(\nu\pi\right)\operatorname{bei}_{\nu}x+(2/\pi)\sin\left(\nu\pi\right )\operatorname{ker}_{\nu}x,\operatorname{bei}_{-\nu}x=-\sin\left(\nu\pi\right)\operatorname{ber}_{\nu}x+ \cos\left(\nu\pi\right)\operatorname{bei}_{\nu}x+(2/\pi)\sin\left(\nu\pi\right )\operatorname{kei}_{\nu}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C10.S61.SS4.p1.s2">
+<Math equation-number="10.61.7" mode="display" xml:id="C10.S61.E7">\operatorname{ker}_{-\nu}x=\cos\left(\nu\pi\right)\operatorname{ker}_{\nu}x- \sin\left(\nu\pi\right)\operatorname{kei}_{\nu}x,\operatorname{kei}_{-\nu}x=\sin\left(\nu\pi\right)\operatorname{ker}_{\nu}x+ \cos\left(\nu\pi\right)\operatorname{kei}_{\nu}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C10.S61.SS4.p1.s3">
+<Math equation-number="10.61.8" mode="display" xml:id="C10.S61.E8">\operatorname{ber}_{-n}x=(-1)^{n}\operatorname{ber}_{n}x,~{}\operatorname{bei} _{-n}x=(-1)^{n}\operatorname{bei}_{n}x,\operatorname{ker}_{-n}x=(-1)^{n}\operatorname{ker}_{n}x,~{}\operatorname{kei} _{-n}x=(-1)^{n}\operatorname{kei}_{n}x</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S61.SS5">
+<title>Orders <Math mode="inline" xml:id="C10.S61.SS5.m1">\pm\frac{1}{2}</Math></title>          
+<para xml:id="C10.S61.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S61.SS5.p1.s1">
+ <Math equation-number="10.61.9" mode="display" xml:id="C10.S61.E9">\operatorname{ber}_{\frac{1}{2}}\left(x\sqrt{2}\right)=\frac{2^{-\frac{3}{4}}} {\sqrt{\pi x}}\left(e^{x}\cos\left(x+\frac{\pi}{8}\right)-e^{-x}\cos\left(x- \frac{\pi}{8}\right)\right),\operatorname{bei}_{\frac{1}{2}}\left(x\sqrt{2}\right)=\frac{2^{-\frac{3}{4}}} {\sqrt{\pi x}}\left(e^{x}\sin\left(x+\frac{\pi}{8}\right)+\,e^{-x}\sin\left(x- \frac{\pi}{8}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C10.S61.SS5.p1.s2">
+<Math equation-number="10.61.10" mode="display" xml:id="C10.S61.E10">\operatorname{ber}_{-\frac{1}{2}}\left(x\sqrt{2}\right)=\frac{2^{-\frac{3}{4}} }{\sqrt{\pi x}}\left(e^{x}\sin\left(x+\frac{\pi}{8}\right)-e^{-x}\sin\left(x- \frac{\pi}{8}\right)\right),\operatorname{bei}_{-\frac{1}{2}}\left(x\sqrt{2}\right)=-\frac{2^{-\frac{3}{4} }}{\sqrt{\pi x}}\left(e^{x}\cos\left(x+\frac{\pi}{8}\right)+e^{-x}\cos\left(x- \frac{\pi}{8}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S61.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S61.SS5.p2.s1">
+ <Math equation-number="10.61.11" mode="display" xml:id="C10.S61.E11">\operatorname{ker}_{\frac{1}{2}}\left(x\sqrt{2}\right)=\operatorname{kei}_{- \frac{1}{2}}\left(x\sqrt{2}\right)=-2^{-\frac{3}{4}}\sqrt{\frac{\pi}{x}}e^{-x} \sin\left(x-\frac{\pi}{8}\right),</Math> , <Math equation-number="10.61.12" mode="display" xml:id="C10.S61.E12">\operatorname{kei}_{\frac{1}{2}}\left(x\sqrt{2}\right)=-\operatorname{ker}_{- \frac{1}{2}}\left(x\sqrt{2}\right)=-2^{-\frac{3}{4}}\sqrt{\frac{\pi}{x}}e^{-x} \cos\left(x-\frac{\pi}{8}\right)</Math>.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+</section>

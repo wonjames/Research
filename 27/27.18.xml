@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S18">
+<title>Methods of Computation: Primes</title>        
+  
+<para xml:id="C27.S18.p1">
+
+</para>
+ 
+<para xml:id="C27.S18.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S18.p2.s1">
+An overview of methods for precise counting of the number of primes not exceeding an arbitrary integer <Math mode="inline" xml:id="C27.S18.p2.m1">x</Math> is given in Crandall and Pomerance (2005, §3.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S18.p2.s2">
+T. Oliveira e Silva has calculated <Math mode="inline" xml:id="C27.S18.p2.m2">\pi\left(x\right)</Math> for <Math mode="inline" xml:id="C27.S18.p2.m3">x=10^{23}</Math> , using the combinatorial methods of Lagarias et al. (1985) andDeléglise and Rivat (1996); see Oliveira e Silva (2006).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C27.S18.p2.s3">
+An analytic approach using a contour integral of the Riemann zeta function (§25.2(i)) is discussed in Borwein et al. (2000).
+</sentence>
+
+</para>
+
+   
+<para xml:id="C27.S18.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C27.S18.p3.s1">
+The Sieve of Eratosthenes (Crandall and Pomerance (2005, §3.2)) generates a list of all primes below a given bound.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C27.S18.p3.s2">
+An alternative procedure is thebinary quadratic sieve of Atkin and Bernstein (Crandall and Pomerance (2005, p. 170)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C27.S18.p4.s1">
+For small values of <Math mode="inline" xml:id="C27.S18.p4.m1">n</Math> , primality is proven by showing that <Math mode="inline" xml:id="C27.S18.p4.m2">n</Math> is not divisible by any prime not exceeding <Math mode="inline" xml:id="C27.S18.p4.m3">\sqrt{n}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S18.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C27.S18.p5.s1">
+Two simple algorithms for proving primality require a knowledge of all or part of the factorization of <Math mode="inline" xml:id="C27.S18.p5.m1">n-1,n+1</Math> , or both; seeCrandall and Pomerance (2005, §§4.1–4.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C27.S18.p5.s2">
+These algorithms are used for testing primality of Mersenne numbers, <Math mode="inline" xml:id="C27.S18.p5.m2">2^{n}-1</Math> , and Fermat numbers, <Math mode="inline" xml:id="C27.S18.p5.m3">2^{2^{n}}+1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C27.S18.p6.s1">
+The APR (Adleman–Pomerance–Rumely) algorithm for primality testing is based on Jacobi sums.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C27.S18.p6.s2">
+It runs in time <Math mode="inline" xml:id="C27.S18.p6.m1">O\left((\ln n)^{c\ln\ln\ln n}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C27.S18.p6.s3">
+Explanations are given in Cohen (1993, §9.1) andCrandall and Pomerance (2005, §4.4).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C27.S18.p6.s4">
+A practical version is described inBosma and van der Hulst (1990).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C27.S18.p7.s1">
+The AKS (Agrawal–Kayal–Saxena) algorithm is the first deterministic, polynomial-time, primality test.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C27.S18.p7.s2">
+That is to say, it runs in time <Math mode="inline" xml:id="C27.S18.p7.m1">O\left((\ln n)^{c}\right)</Math> for some constant <Math mode="inline" xml:id="C27.S18.p7.m2">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C27.S18.p7.s3">
+An explanation is given inCrandall and Pomerance (2005, §4.5).
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S18.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C27.S18.p8.s1">
+The ECPP (Elliptic Curve Primality Proving) algorithm handles primes with over 20,000 digits.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C27.S18.p8.s2">
+Explanations are given in Cohen (1993, §9.2) and Crandall and Pomerance (2005, §7.6).
+</sentence>
+
+</para>
+ 
+</section>

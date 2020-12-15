@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S4">
+<title>Special Cases</title>         
+<subsection xml:id="C15.S4.SS1">
+<title>Elementary Functions</title>          
+ 
+<para xml:id="C15.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S4.SS1.p1.s1">
+The following results hold for principal branches when <Math mode="inline" xml:id="C15.S4.SS1.p1.m1">|z|&lt;1</Math> , and by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S4.SS1.p1.s2">
+Exceptions are (15.4.8) and (15.4.10), that hold for <Math mode="inline" xml:id="C15.S4.SS1.p1.m2">|z|&lt;\ifrac{\pi}{4}</Math> , and (15.4.12), (15.4.14), and (15.4.16), that hold for <Math mode="inline" xml:id="C15.S4.SS1.p1.m3">|z|&lt;\ifrac{\pi}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C15.S4.SS1.p1.s3">
+<Math equation-number="15.4.1" mode="display" xml:id="C15.S4.E1">F\left(1,1;2;z\right)=-z^{-1}\ln\left(1-z\right),</Math> , <Math equation-number="15.4.2" mode="display" xml:id="C15.S4.E2">F\left(\tfrac{1}{2},1;\tfrac{3}{2};z^{2}\right)=\frac{1}{2z}\ln\left(\frac{1+z }{1-z}\right),</Math> , <Math equation-number="15.4.3" mode="display" xml:id="C15.S4.E3">F\left(\tfrac{1}{2},1;\tfrac{3}{2};-z^{2}\right)=z^{-1}\operatorname{arctan}z,</Math> , <Math equation-number="15.4.4" mode="display" xml:id="C15.S4.E4">F\left(\tfrac{1}{2},\tfrac{1}{2};\tfrac{3}{2};z^{2}\right)=z^{-1}\operatorname {arcsin}z,</Math> , <Math equation-number="15.4.5" mode="display" xml:id="C15.S4.E5">F\left(\tfrac{1}{2},\tfrac{1}{2};\tfrac{3}{2};-z^{2}\right)=z^{-1}\ln\left(z+ \sqrt{1+z^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C15.S4.SS1.p1.s4">
+<Math equation-number="15.4.6" mode="display" xml:id="C15.S4.E6">F\left(a,b;a;z\right)=(1-z)^{-b},F\left(a,b;b;z\right)=(1-z)^{-a},</Math> where the limit interpretation (15.2.6), rather than (15.2.5), has to be taken when the third parameter is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C15.S4.SS1.p1.s5">
+See the final paragraph in §15.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C15.S4.SS1.p1.s6">
+<Math equation-number="15.4.7" mode="display" xml:id="C15.S4.E7">F\left(a,\tfrac{1}{2}+a;\tfrac{1}{2};z^{2}\right)=\tfrac{1}{2}\left((1+z)^{-2a }+(1-z)^{-2a}\right),</Math> <Math equation-number="15.4.8" mode="display" xml:id="C15.S4.E8">F\left(a,\tfrac{1}{2}+a;\tfrac{1}{2};-{\tan^{2}}z\right)=(\cos z)^{2a}\cos \left(2az\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C15.S4.SS1.p1.s7">
+<Math equation-number="15.4.9" mode="display" xml:id="C15.S4.E9">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2};z^{2}\right)=\frac{1}{(2-4a)z}\left((1+z) ^{1-2a}-(1-z)^{1-2a}\right),</Math> <Math equation-number="15.4.10" mode="display" xml:id="C15.S4.E10">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2};-{\tan^{2}}z\right)=(\cos z)^{2a}\frac{ \sin\left((1-2a)z\right)}{(1-2a)\sin z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C15.S4.SS1.p1.s8">
+<Math equation-number="15.4.11" mode="display" xml:id="C15.S4.E11">F\left(-a,a;\tfrac{1}{2};-z^{2}\right)=\tfrac{1}{2}\left(\left(\sqrt{1+z^{2}}+ z\right)^{2a}+\left(\sqrt{1+z^{2}}-z\right)^{2a}\right),</Math> <Math equation-number="15.4.12" mode="display" xml:id="C15.S4.E12">F\left(-a,a;\tfrac{1}{2};{\sin^{2}}z\right)=\cos\left(2az\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" xml:id="C15.S4.SS1.p1.s9">
+<Math equation-number="15.4.13" mode="display" xml:id="C15.S4.E13">F\left(a,1-a;\tfrac{1}{2};-z^{2}\right)=\frac{1}{2\sqrt{1+z^{2}}}\left(\left( \sqrt{1+z^{2}}+z\right)^{2a-1}+\left(\sqrt{1+z^{2}}-z\right)^{2a-1}\right),</Math> <Math equation-number="15.4.14" mode="display" xml:id="C15.S4.E14">F\left(a,1-a;\tfrac{1}{2};{\sin^{2}}z\right)=\frac{\cos\left((2a-1)z\right)}{ \cos z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" xml:id="C15.S4.SS1.p1.s10">
+<Math equation-number="15.4.15" mode="display" xml:id="C15.S4.E15">F\left(a,1-a;\tfrac{3}{2};-z^{2}\right)=\frac{1}{(2-4a)z}\left(\left(\sqrt{1+z ^{2}}+z\right)^{1-2a}-\left(\sqrt{1+z^{2}}-z\right)^{1-2a}\right),</Math> <Math equation-number="15.4.16" mode="display" xml:id="C15.S4.E16">F\left(a,1-a;\tfrac{3}{2};{\sin^{2}}z\right)=\frac{\sin\left((2a-1)z\right)}{( 2a-1)\sin z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" xml:id="C15.S4.SS1.p1.s11">
+<Math equation-number="15.4.17" mode="display" xml:id="C15.S4.E17">F\left(a,\tfrac{1}{2}+a;1+2a;z\right)=\left(\tfrac{1}{2}+\tfrac{1}{2}\sqrt{1-z }\right)^{-2a},</Math> <Math equation-number="15.4.18" mode="display" xml:id="C15.S4.E18">F\left(a,\tfrac{1}{2}+a;2a;z\right)=\frac{1}{\sqrt{1-z}}\left(\tfrac{1}{2}+ \tfrac{1}{2}\sqrt{1-z}\right)^{1-2a},</Math> <Math equation-number="15.4.19" mode="display" xml:id="C15.S4.E19">F\left(a+1,b;a;z\right)=\left(1-(1-(\ifrac{b}{a}))z\right)(1-z)^{-1-b}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" xml:id="C15.S4.SS1.p1.s12">
+In (15.4.17), (15.4.18) and (15.4.19) when the third entry is a nonpositive integer one has to use the limit interpretation (15.2.6), rather than (15.2.5).
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" xml:id="C15.S4.SS1.p1.s13">
+Compare the final paragraph in §15.2(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C15.S4.SS1.p2.s1">
+For an extensive list of elementary representations seePrudnikov et al. (1990, pp. 468–488).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S4.SS2">
+<title>Argument Unity</title>        
+    
+<para xml:id="C15.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C15.S4.SS2.p1.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p1.m1">\Re(c-a-b)&gt;0</Math> , then <Math equation-number="15.4.20" mode="display" xml:id="C15.S4.E20">F\left(a,b;c;1\right)=\frac{\Gamma\left(c\right)\Gamma\left(c-a-b\right)}{ \Gamma\left(c-a\right)\Gamma\left(c-b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C15.S4.SS2.p2.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p2.m1">c=a+b</Math> , then <Math equation-number="15.4.21" mode="display" xml:id="C15.S4.E21">\lim_{z\to 1-}\frac{F\left(a,b;a+b;z\right)}{-\ln\left(1-z\right)}=\frac{ \Gamma\left(a+b\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C15.S4.SS2.p3.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p3.m1">\Re(c-a-b)=0</Math> and <Math mode="inline" xml:id="C15.S4.SS2.p3.m2">c\neq a+b</Math> , then <Math equation-number="15.4.22" mode="display" xml:id="C15.S4.E22">\lim_{z\to 1-}(1-z)^{a+b-c}\left(F\left(a,b;c;z\right)-\frac{\Gamma\left(c \right)\Gamma\left(c-a-b\right)}{\Gamma\left(c-a\right)\Gamma\left(c-b\right)} \right)=\frac{\Gamma\left(c\right)\Gamma\left(a+b-c\right)}{\Gamma\left(a \right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S4.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C15.S4.SS2.p4.s1">
+If <Math mode="inline" xml:id="C15.S4.SS2.p4.m1">\Re(c-a-b)&lt;0</Math> , then <Math equation-number="15.4.23" mode="display" xml:id="C15.S4.E23">\lim_{z\to 1-}\frac{F\left(a,b;c;z\right)}{(1-z)^{c-a-b}}=\frac{\Gamma\left(c \right)\Gamma\left(a+b-c\right)}{\Gamma\left(a\right)\Gamma\left(b\right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C15.S4.Px1">
+<title>Chu–Vandermonde Identity</title>    
+<para xml:id="C15.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C15.S4.Px1.p1.s1">
+ <Math equation-number="15.4.24" mode="display" xml:id="C15.S4.E24">F\left(-n,b;c;1\right)=\frac{{\left(c-b\right)_{n}}}{{\left(c\right)_{n}}}, if n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C15.S4.Px2">
+<title>Dougall’s Bilateral Sum</title>    
+<para xml:id="C15.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C15.S4.Px2.p1.s1">
+This is a generalization of (15.4.20).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C15.S4.Px2.p1.s2">
+If <Math mode="inline" xml:id="C15.S4.Px2.p1.m1">a,b</Math> are not integers and <Math mode="inline" xml:id="C15.S4.Px2.p1.m2">\Re(c+d-a-b)&gt;1</Math> , then <Math equation-number="15.4.25" mode="display" xml:id="C15.S4.E25">\sum_{n=-\infty}^{\infty}\frac{\Gamma\left(a+n\right)\Gamma\left(b+n\right)}{ \Gamma\left(c+n\right)\Gamma\left(d+n\right)}=\frac{\pi^{2}}{\sin\left(\pi a \right)\sin\left(\pi b\right)}\*\frac{\Gamma\left(c+d-a-b-1\right)}{\Gamma \left(c-a\right)\Gamma\left(d-a\right)\Gamma\left(c-b\right)\Gamma\left(d-b \right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S4.SS3">
+<title>Other Arguments</title>               
+<para xml:id="C15.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C15.S4.SS3.p1.s1">
+ <Math equation-number="15.4.26" mode="display" xml:id="C15.S4.E26">F\left(a,b;a-b+1;-1\right)=\frac{\Gamma\left(a-b+1\right)\Gamma\left(\tfrac{1} {2}a+1\right)}{\Gamma\left(a+1\right)\Gamma\left(\tfrac{1}{2}a-b+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C15.S4.SS3.p1.s2">
+<Math equation-number="15.4.27" mode="display" xml:id="C15.S4.E27">F\left(1,a;a+1;-1\right)=\tfrac{1}{2}a\left(\psi\left(\tfrac{1}{2}a+\tfrac{1}{ 2}\right)-\psi\left(\tfrac{1}{2}a\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C15.S4.SS3.p1.s3">
+<Math equation-number="15.4.28" mode="display" xml:id="C15.S4.E28">F\left(a,b;\tfrac{1}{2}a+\tfrac{1}{2}b+\tfrac{1}{2};\tfrac{1}{2}\right)=\sqrt{ \pi}\frac{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b+\tfrac{1}{2}\right)}{\Gamma \left(\tfrac{1}{2}a+\tfrac{1}{2}\right)\Gamma\left(\tfrac{1}{2}b+\tfrac{1}{2} \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C15.S4.SS3.p1.s4">
+<Math equation-number="15.4.29" mode="display" xml:id="C15.S4.E29">F\left(a,b;\tfrac{1}{2}a+\tfrac{1}{2}b+1;\tfrac{1}{2}\right)=\frac{2\sqrt{\pi} }{a-b}\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b+1\right)\*\left(\frac{1}{\Gamma \left(\tfrac{1}{2}a\right)\Gamma\left(\tfrac{1}{2}b+\tfrac{1}{2}\right)}-\frac {1}{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}\right)\Gamma\left(\tfrac{1}{2}b \right)}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C15.S4.SS3.p1.s5">
+<Math equation-number="15.4.30" mode="display" xml:id="C15.S4.E30">F\left(a,1-a;b;\tfrac{1}{2}\right)=\frac{2^{1-b}\sqrt{\pi}\Gamma\left(b\right) }{\Gamma\left(\tfrac{1}{2}a+\tfrac{1}{2}b\right)\Gamma\left(\tfrac{1}{2}b- \tfrac{1}{2}a+\tfrac{1}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="27" xml:id="C15.S4.SS3.p1.s6">
+<Math equation-number="15.4.31" mode="display" xml:id="C15.S4.E31">F\left(a,\tfrac{1}{2}+a;\tfrac{3}{2}-2a;-\tfrac{1}{3}\right)=\left(\frac{8}{9} \right)^{-2a}\frac{\Gamma\left(\tfrac{4}{3}\right)\Gamma\left(\tfrac{3}{2}-2a \right)}{\Gamma\left(\tfrac{3}{2}\right)\Gamma\left(\tfrac{4}{3}-2a\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="28" xml:id="C15.S4.SS3.p1.s7">
+<Math equation-number="15.4.32" mode="display" xml:id="C15.S4.E32">F\left(a,\tfrac{1}{2}+a;\tfrac{5}{6}+\tfrac{2}{3}a;\tfrac{1}{9}\right)=\sqrt{ \pi}\left(\frac{3}{4}\right)^{a}\frac{\Gamma\left(\tfrac{5}{6}+\tfrac{2}{3}a \right)}{\Gamma\left(\tfrac{1}{2}+\tfrac{1}{3}a\right)\Gamma\left(\tfrac{5}{6} +\tfrac{1}{3}a\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="29" xml:id="C15.S4.SS3.p1.s8">
+<Math equation-number="15.4.33" mode="display" xml:id="C15.S4.E33">F\left(3a,\tfrac{1}{3}+a;\tfrac{2}{3}+2a;e^{\ifrac{\mathrm{i}\pi}{3}}\right)= \sqrt{\pi}e^{\ifrac{\mathrm{i}\pi a}{2}}\left(\frac{16}{27}\right)^{(3a+1)/6} \frac{\Gamma\left(\frac{5}{6}+a\right)}{\Gamma\left(\frac{2}{3}+a\right)\Gamma \left(\frac{2}{3}\right)},</Math> where the limit interpretation (15.2.6), rather than (15.2.5), has to be taken when <Math mode="inline" xml:id="C15.S4.SS3.p1.m1">a=-\frac{1}{3},-\frac{4}{3},-\frac{7}{3},\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="30" xml:id="C15.S4.SS3.p1.s9">
+Compare the final paragraph in §15.2(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S5">
+<title>Integral Representations</title>          
+<subsection xml:id="C25.S5.SS1">
+<title>In Terms of Elementary Functions</title>        
+ 
+<para xml:id="C25.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S5.SS1.p1.s1">
+Throughout this subsection <Math mode="inline" xml:id="C25.S5.SS1.p1.m1">s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S5.SS1.p1.s2">
+<Math equation-number="25.5.1" mode="display" xml:id="C25.S5.E1">\zeta\left(s\right)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\frac{x^{s- 1}}{e^{x}-1}\mathrm{d}x, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S5.SS1.p1.s3">
+<Math equation-number="25.5.2" mode="display" xml:id="C25.S5.E2">\zeta\left(s\right)=\frac{1}{\Gamma\left(s+1\right)}\int_{0}^{\infty}\frac{e^{ x}x^{s}}{(e^{x}-1)^{2}}\mathrm{d}x, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C25.S5.SS1.p1.s4">
+<Math equation-number="25.5.3" mode="display" xml:id="C25.S5.E3">\zeta\left(s\right)=\frac{1}{(1-2^{1-s})\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{e^{x}+1}\mathrm{d}x, if \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C25.S5.SS1.p1.s5">
+<Math equation-number="25.5.4" mode="display" xml:id="C25.S5.E4">\zeta\left(s\right)=\frac{1}{(1-2^{1-s})\Gamma\left(s+1\right)}\int_{0}^{ \infty}\frac{e^{x}x^{s}}{(e^{x}+1)^{2}}\mathrm{d}x, if \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C25.S5.SS1.p1.s6">
+<Math equation-number="25.5.5" mode="display" xml:id="C25.S5.E5">\zeta\left(s\right)=-s\int_{0}^{\infty}\frac{x-\left\lfloor x\right\rfloor- \frac{1}{2}}{x^{s+1}}\mathrm{d}x, if -1&lt;\Re s&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C25.S5.SS1.p1.s7">
+<Math equation-number="25.5.6" mode="display" xml:id="C25.S5.E6">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+\frac{1}{\Gamma\left(s\right)} \int_{0}^{\infty}\left(\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}\right)\frac{x ^{s-1}}{e^{x}}\mathrm{d}x, if \Re s&gt;-1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C25.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C25.S5.SS1.p2.s1">
+ <Math equation-number="25.5.7" mode="display" xml:id="C25.S5.E7">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+\sum_{m=1}^{n}\frac{B_{2m}}{(2m) !}{\left(s\right)_{2m-1}}+\frac{1}{\Gamma\left(s\right)}\int_{0}^{\infty}\left (\frac{1}{e^{x}-1}-\frac{1}{x}+\frac{1}{2}-\sum_{m=1}^{n}\frac{B_{2m}}{(2m)!}x ^{2m-1}\right)\frac{x^{s-1}}{e^{x}}\mathrm{d}x, if \Re s&gt;-(2n+1), n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C25.S5.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C25.S5.SS1.p3.s1">
+ <Math equation-number="25.5.8" mode="display" xml:id="C25.S5.E8">\zeta\left(s\right)=\frac{1}{2(1-2^{-s})\Gamma\left(s\right)}\int_{0}^{\infty} \frac{x^{s-1}}{\sinh x}\mathrm{d}x, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C25.S5.SS1.p3.s2">
+<Math equation-number="25.5.9" mode="display" xml:id="C25.S5.E9">\zeta\left(s\right)=\frac{2^{s-1}}{\Gamma\left(s+1\right)}\int_{0}^{\infty} \frac{x^{s}}{(\sinh x)^{2}}\mathrm{d}x, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C25.S5.SS1.p3.s3">
+<Math equation-number="25.5.10" mode="display" xml:id="C25.S5.E10">\zeta\left(s\right)=\frac{2^{s-1}}{1-2^{1-s}}\int_{0}^{\infty}\frac{\cos\left( s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}\cosh\left(\frac{1}{2}\pi x \right)}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C25.S5.SS1.p3.s4">
+<Math equation-number="25.5.11" mode="display" xml:id="C25.S5.E11">\zeta\left(s\right)=\frac{1}{2}+\frac{1}{s-1}+2\int_{0}^{\infty}\frac{\sin \left(s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}(e^{2\pi x}-1)}\mathrm{d}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C25.S5.SS1.p3.s5">
+<Math equation-number="25.5.12" mode="display" xml:id="C25.S5.E12">\zeta\left(s\right)=\frac{2^{s-1}}{s-1}-2^{s}\int_{0}^{\infty}\frac{\sin\left( s\operatorname{arctan}x\right)}{(1+x^{2})^{s/2}(e^{\pi x}+1)}\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S5.SS2">
+<title>In Terms of Other Functions</title>        
+ 
+<para xml:id="C25.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C25.S5.SS2.p1.s1">
+ <Math equation-number="25.5.13" mode="display" xml:id="C25.S5.E13">\zeta\left(s\right)=\frac{\pi^{s/2}}{s(s-1)\Gamma\left(\frac{1}{2}s\right)}+ \frac{\pi^{s/2}}{\Gamma\left(\frac{1}{2}s\right)}\*\int_{1}^{\infty}\left(x^{s /2}+x^{(1-s)/2}\right)\frac{\omega(x)}{x}\mathrm{d}x, if s\neq 1,</Math> where <Math equation-number="25.5.14" mode="display" xml:id="C25.S5.E14">\omega(x)=\sum_{n=1}^{\infty}e^{-n^{2}\pi x}=\frac{1}{2}\left(\theta_{3}\left( 0\middle|ix\right)-1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C25.S5.SS2.p1.s2">
+For <Math mode="inline" xml:id="C25.S5.SS2.p1.m1">\theta_{3}</Math> see §20.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C25.S5.SS2.p1.s3">
+For similar representations involving other theta functions see Erdélyi et al. (1954a, p. 339).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C25.S5.SS2.p2.s1">
+In (25.5.15)–(25.5.19),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C25.S5.SS2.p2.s2">
+<Math mode="inline" xml:id="C25.S5.SS2.p2.m1">0&lt;\Re s&lt;1</Math> , <Math mode="inline" xml:id="C25.S5.SS2.p2.m2">\psi\left(x\right)</Math> is the digamma function, and <Math mode="inline" xml:id="C25.S5.SS2.p2.m3">\gamma</Math> is Euler’s constant (§5.2). (25.5.16) is also valid for <Math mode="inline" xml:id="C25.S5.SS2.p2.m4">0&lt;\Re s&lt;2</Math> , <Math mode="inline" xml:id="C25.S5.SS2.p2.m5">s\neq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C25.S5.SS2.p2.s3">
+<Math equation-number="25.5.15" mode="display" xml:id="C25.S5.E15">\zeta\left(s\right)=\frac{1}{s-1}+\frac{\sin\left(\pi s\right)}{\pi}\*\int_{0} ^{\infty}(\ln\left(1+x\right)-\psi\left(1+x\right))x^{-s}\mathrm{d}x,</Math> <Math equation-number="25.5.16" mode="display" xml:id="C25.S5.E16">\zeta\left(s\right)=\frac{1}{s-1}+\frac{\sin\left(\pi s\right)}{\pi(s-1)}\* \int_{0}^{\infty}\left(\frac{1}{1+x}-\psi'\left(1+x\right)\right)x^{1-s} \mathrm{d}x,</Math> , <Math equation-number="25.5.17" mode="display" xml:id="C25.S5.E17">\zeta\left(1+s\right)=\frac{\sin\left(\pi s\right)}{\pi}\int_{0}^{\infty}\left (\gamma+\psi\left(1+x\right)\right)x^{-s-1}\mathrm{d}x,</Math> <Math equation-number="25.5.18" mode="display" xml:id="C25.S5.E18">\zeta\left(1+s\right)=\frac{\sin\left(\pi s\right)}{\pi s}\int_{0}^{\infty} \psi'\left(1+x\right)x^{-s}\mathrm{d}x,</Math> , <Math equation-number="25.5.19" mode="display" xml:id="C25.S5.E19">\zeta\left(m+s\right)=(-1)^{m-1}\frac{\Gamma\left(s\right)\sin\left(\pi s \right)}{\pi\Gamma\left(m+s\right)}\*\int_{0}^{\infty}{\psi^{(m)}}\left(1+x \right)x^{-s}\mathrm{d}x, if m=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S5.SS3">
+<title>Contour Integrals</title>          
+<para xml:id="C25.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C25.S5.SS3.p1.s1">
+ <Math equation-number="25.5.20" mode="display" xml:id="C25.S5.E20">\zeta\left(s\right)=\frac{\Gamma\left(1-s\right)}{2\pi i}\int_{-\infty}^{(0+)} \frac{z^{s-1}}{e^{-z}-1}\mathrm{d}z, if s\neq 1,2,\dots,</Math> where the integration contour is a loop around the negative real axis; it starts at <Math mode="inline" xml:id="C25.S5.SS3.p1.m1">-\infty</Math> , encircles the origin once in the positive direction withoutenclosing any of the points <Math mode="inline" xml:id="C25.S5.SS3.p1.m2">z=\pm 2\pi\mathrm{i}</Math> , <Math mode="inline" xml:id="C25.S5.SS3.p1.m3">\pm 4\pi\mathrm{i}</Math> , …, and returns to <Math mode="inline" xml:id="C25.S5.SS3.p1.m4">-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C25.S5.SS3.p1.s2">
+Equivalently, <Math equation-number="25.5.21" mode="display" xml:id="C25.S5.E21">\zeta\left(s\right)=\frac{\Gamma\left(1-s\right)}{2\pi i(1-2^{1-s})}\*\int_{- \infty}^{(0+)}\frac{z^{s-1}}{e^{-z}+1}\mathrm{d}z, if s\neq 1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C25.S5.SS3.p1.s3">
+The contour here is any loop that encircles the origin in the positive direction not enclosing any of the points <Math mode="inline" xml:id="C25.S5.SS3.p1.m5">\pm\pi\mathrm{i}</Math> , <Math mode="inline" xml:id="C25.S5.SS3.p1.m6">\pm 3\pi\mathrm{i}</Math> , ….
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

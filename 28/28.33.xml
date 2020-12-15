@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S33">
+<title>Physical Applications</title>        
+   
+<subsection xml:id="C28.S33.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C28.S33.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S33.SS1.p1.s1">
+Mathieu functions occur in practical applications in two main categories: Boundary-values problems arising from solution of the two-dimensional wave equation in elliptical coordinates.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S33.SS1.p1.s2">
+This yields a pair of equations of the form (28.2.1) and (28.20.1), and the appropriate solution of (28.2.1) is usually a periodic solution of integer order.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S33.SS1.p1.s3">
+See §28.33(ii).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C28.S33.SS1.p1.s4">
+Initial-value problems, in which only one equation (28.2.1) or (28.20.1) is involved. See §28.33(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S33.SS2">
+<title>Boundary-Value Problems</title>        
+  
+<para xml:id="C28.S33.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S33.SS2.p1.s1">
+Physical problems involving Mathieu functions include vibrational problems in elliptical coordinates; see (28.32.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C28.S33.SS2.p1.s2">
+We shall derive solutions tothe uniform, homogeneous, loss-free, and stretched elliptical ring membrane with mass <Math mode="inline" xml:id="C28.S33.SS2.p1.m1">\rho</Math> per unit area, and radial tension <Math mode="inline" xml:id="C28.S33.SS2.p1.m2">\tau</Math> per unit arc length.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C28.S33.SS2.p1.s3">
+The wave equation <Math equation-number="28.33.1" mode="display" xml:id="C28.S33.E1">\frac{{\partial}^{2}W}{{\partial x}^{2}}+\frac{{\partial}^{2}W}{{\partial y}^{ 2}}-\frac{\rho}{\tau}\frac{{\partial}^{2}W}{{\partial t}^{2}}=0,</Math> with <Math mode="inline" xml:id="C28.S33.SS2.p1.m3">W(x,y,t)=e^{\mathrm{i}\omega t}V(x,y)</Math> , reduces to (28.32.2) with <Math mode="inline" xml:id="C28.S33.SS2.p1.m4">k^{2}=\omega^{2}\rho/{\tau}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C28.S33.SS2.p1.s4">
+In elliptical coordinates (28.32.2) becomes (28.32.3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C28.S33.SS2.p1.s5">
+The separated solutions <Math mode="inline" xml:id="C28.S33.SS2.p1.m5">V_{n}(\xi,\eta)</Math> must be <Math mode="inline" xml:id="C28.S33.SS2.p1.m6">2\pi</Math> -periodic in <Math mode="inline" xml:id="C28.S33.SS2.p1.m7">\eta</Math> , and have the form <Math equation-number="28.33.2" mode="display" xml:id="C28.S33.E2">V_{n}(\xi,\eta)=\left(c_{n}{\mathrm{M}^{(1)}_{n}}\left(\xi,\sqrt{q}\right)+d_{ n}{\mathrm{M}^{(2)}_{n}}\left(\xi,\sqrt{q}\right)\right)\mathrm{me}_{n}\left( \eta,q\right),</Math> where <Math mode="inline" xml:id="C28.S33.SS2.p1.m8">q=\tfrac{1}{4}c^{2}k^{2}</Math> and <Math mode="inline" xml:id="C28.S33.SS2.p1.m9">a_{n}(q)</Math> or <Math mode="inline" xml:id="C28.S33.SS2.p1.m10">b_{n}(q)</Math> is the separation constant; compare ( 28.12.11),(28.20.11), and (28.20.12).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C28.S33.SS2.p1.s6">
+Here <Math mode="inline" xml:id="C28.S33.SS2.p1.m11">c_{n}</Math> and <Math mode="inline" xml:id="C28.S33.SS2.p1.m12">d_{n}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C28.S33.SS2.p1.s7">
+The boundary conditions for <Math mode="inline" xml:id="C28.S33.SS2.p1.m13">\xi=\xi_{0}</Math> (outer clamp) and <Math mode="inline" xml:id="C28.S33.SS2.p1.m14">\xi=\xi_{1}</Math> (inner clamp) yield the following equation for <Math mode="inline" xml:id="C28.S33.SS2.p1.m15">q</Math> : <Math equation-number="28.33.3" mode="display" xml:id="C28.S33.E3">{\mathrm{M}^{(1)}_{n}}\left(\xi_{0},\sqrt{q}\right){\mathrm{M}^{(2)}_{n}}\left (\xi_{1},\sqrt{q}\right)-{\mathrm{M}^{(1)}_{n}}\left(\xi_{1},\sqrt{q}\right){ \mathrm{M}^{(2)}_{n}}\left(\xi_{0},\sqrt{q}\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" xml:id="C28.S33.SS2.p1.s8">
+If we denote the positive solutions <Math mode="inline" xml:id="C28.S33.SS2.p1.m16">q</Math> of (28.33.3) by <Math mode="inline" xml:id="C28.S33.SS2.p1.m17">q_{n,m}</Math> , then the vibration of the membrane is given by <Math mode="inline" xml:id="C28.S33.SS2.p1.m18">\omega^{2}_{n,m}=\ifrac{4q_{n,m}\tau}{(c^{2}\rho)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="13" xml:id="C28.S33.SS2.p1.s9">
+The general solution of the problem is a superposition of the separated solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S33.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C28.S33.SS2.p2.s1">
+For a visualization see Gutiérrez-Vega et al. (2003), and for references to other boundary-value problems see: McLachlan (1947, Chapters XVI–XIX) for applications of the wave equation to vibrational systems, electrical and thermal diffusion, electromagnetic wave guides, elliptical cylinders in viscous fluids, and diffraction of sound and electromagnetic waves.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C28.S33.SS2.p2.s2">
+Meixner and Schäfke (1954, §§4.3, 4.4) for elliptic membranes and electromagnetic waves.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C28.S33.SS2.p2.s3">
+Daymond (1955) for vibrating systems.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="17" xml:id="C28.S33.SS2.p2.s4">
+Troesch and Troesch (1973) for elliptic membranes.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="18" xml:id="C28.S33.SS2.p2.s5">
+Alhargan and Judah (1995), Bhattacharyya and Shafai (1988), andShen (1981) for ring antennas.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="19" xml:id="C28.S33.SS2.p2.s6">
+Alhargan and Judah (1992), Germey (1964), Ragheb et al. (1991), andSips (1967) for electromagnetic waves.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S33.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C28.S33.SS2.p3.s1">
+More complete bibliographies will be found in McLachlan (1947) andMeixner and Schäfke (1954).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S33.SS3">
+<title>Stability and Initial-Value Problems</title>        
+   
+ 
+<para xml:id="C28.S33.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C28.S33.SS3.p1.s1">
+If the parameters of a physical system vary periodically with time, then the question of stability arises, for example, a mathematical pendulum whose length varies as <Math mode="inline" xml:id="C28.S33.SS3.p1.m1">\cos\left(2\omega t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C28.S33.SS3.p1.s2">
+The equation of motion is given by <Math equation-number="28.33.4" mode="display" xml:id="C28.S33.E4">w^{\prime\prime}(t)+\left(b-f\cos\left(2\omega t\right)\right)w(t)=0,</Math> with <Math mode="inline" xml:id="C28.S33.SS3.p1.m2">b</Math> , <Math mode="inline" xml:id="C28.S33.SS3.p1.m3">f</Math> , and <Math mode="inline" xml:id="C28.S33.SS3.p1.m4">\omega</Math> positive constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C28.S33.SS3.p1.s3">
+Substituting <Math mode="inline" xml:id="C28.S33.SS3.p1.m5">z=\omega t</Math> , <Math mode="inline" xml:id="C28.S33.SS3.p1.m6">a=\ifrac{b}{\omega^{2}}</Math> , and <Math mode="inline" xml:id="C28.S33.SS3.p1.m7">2q=\ifrac{f}{\omega^{2}}</Math> , we obtain Mathieu’s standard form (28.2.1).
+</sentence>
+
+</para>
+   
+ 
+<para xml:id="C28.S33.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C28.S33.SS3.p2.s1">
+As <Math mode="inline" xml:id="C28.S33.SS3.p2.m1">\omega</Math> runs from <Math mode="inline" xml:id="C28.S33.SS3.p2.m2">0</Math> to <Math mode="inline" xml:id="C28.S33.SS3.p2.m3">+\infty</Math> , with <Math mode="inline" xml:id="C28.S33.SS3.p2.m4">b</Math> and <Math mode="inline" xml:id="C28.S33.SS3.p2.m5">f</Math> fixed, the point <Math mode="inline" xml:id="C28.S33.SS3.p2.m6">(q,a)</Math> moves from <Math mode="inline" xml:id="C28.S33.SS3.p2.m7">\infty</Math> to <Math mode="inline" xml:id="C28.S33.SS3.p2.m8">0</Math> along the ray <Math mode="inline" xml:id="C28.S33.SS3.p2.m9">\mathcal{L}</Math> given by the part of the line <Math mode="inline" xml:id="C28.S33.SS3.p2.m10">a=(2b/f)q</Math> that lies in the first quadrant of the <Math mode="inline" xml:id="C28.S33.SS3.p2.m11">(q,a)</Math> -plane.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C28.S33.SS3.p2.s2">
+Hence from §28.17 the corresponding Mathieu equation is stable or unstable according as <Math mode="inline" xml:id="C28.S33.SS3.p2.m12">(q,a)</Math> is in the intersection of <Math mode="inline" xml:id="C28.S33.SS3.p2.m13">\mathcal{L}</Math> with the colored or the uncolored open regions depicted in Figure 28.17.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C28.S33.SS3.p2.s3">
+In particular, the equation is stable for all sufficiently large values of <Math mode="inline" xml:id="C28.S33.SS3.p2.m14">\omega</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S33.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C28.S33.SS3.p3.s1">
+For points <Math mode="inline" xml:id="C28.S33.SS3.p3.m1">(q,a)</Math> that are at intersections of <Math mode="inline" xml:id="C28.S33.SS3.p3.m2">\mathcal{L}</Math> with the characteristic curves <Math mode="inline" xml:id="C28.S33.SS3.p3.m3">a=a_{n}\left(q\right)</Math> or <Math mode="inline" xml:id="C28.S33.SS3.p3.m4">a=b_{n}\left(q\right)</Math> , a periodic solution is possible.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C28.S33.SS3.p3.s2">
+However, in response to a small perturbation at least one solution may become unbounded.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S33.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C28.S33.SS3.p4.s1">
+References for other initial-value problems include: McLachlan (1947, Chapter XV) for amplitude distortion in moving-coil loud-speakers, frequency modulation, dynamical systems, and vibration of stretched strings.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C28.S33.SS3.p4.s2">
+Vedeler (1950) for ships rolling among waves.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C28.S33.SS3.p4.s3">
+Meixner and Schäfke (1954, §§4.1, 4.2, and 4.7) for quantum mechanical problems and rotation of molecules.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="32" xml:id="C28.S33.SS3.p4.s4">
+Aly et al. (1975) for scattering theory.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="33" xml:id="C28.S33.SS3.p4.s5">
+Hunter and Kuriyan (1976) and Rushchitsky and Rushchitska (2000) for wave mechanics.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="34" xml:id="C28.S33.SS3.p4.s6">
+Fukui and Horiguchi (1992) for quantum theory.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="35" xml:id="C28.S33.SS3.p4.s7">
+Jager (1997, 1998) for relativistic oscillators.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="36" xml:id="C28.S33.SS3.p4.s8">
+Torres-Vega et al. (1998) for Mathieu functions in phase space.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

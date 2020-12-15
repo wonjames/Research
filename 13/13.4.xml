@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S4">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C13.S4.SS1">
+<title>Integrals Along the Real Line</title>          
+ 
+<para xml:id="C13.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S4.SS1.p1.s1">
+ <Math equation-number="13.4.1" mode="display" xml:id="C13.S4.E1">{\mathbf{M}}\left(a,b,z\right)=\frac{1}{\Gamma\left(a\right)\Gamma\left(b-a \right)}\int_{0}^{1}e^{zt}t^{a-1}(1-t)^{b-a-1}\mathrm{d}t, if \Re b&gt;\Re a&gt;0,</Math> <Math equation-number="13.4.2" mode="display" xml:id="C13.S4.E2">{\mathbf{M}}\left(a,b,z\right)=\frac{1}{\Gamma\left(b-c\right)}\int_{0}^{1}{ \mathbf{M}}\left(a,c,zt\right)t^{c-1}(1-t)^{b-c-1}\mathrm{d}t, if \Re b&gt;\Re c&gt;0,</Math> <Math equation-number="13.4.3" mode="display" xml:id="C13.S4.E3">{\mathbf{M}}\left(a,b,-z\right)=\frac{z^{\frac{1}{2}-\frac{1}{2}b}}{\Gamma \left(a\right)}\int_{0}^{\infty}e^{-t}t^{a-\frac{1}{2}b-\frac{1}{2}}J_{b-1} \left(2\sqrt{zt}\right)\mathrm{d}t, if \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S4.SS1.p1.s2">
+For the function <Math mode="inline" xml:id="C13.S4.SS1.p1.m1">J_{b-1}</Math> see §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S4.SS1.p1.s3">
+<Math equation-number="13.4.4" mode="display" xml:id="C13.S4.E4">U\left(a,b,z\right)=\frac{1}{\Gamma\left(a\right)}\int_{0}^{\infty}e^{-zt}t^{a -1}(1+t)^{b-a-1}\mathrm{d}t, if \Re a&gt;0, |\operatorname{ph}{z}|&lt;\frac{1}{2}\pi,</Math> <Math equation-number="13.4.5" mode="display" xml:id="C13.S4.E5">U\left(a,b,z\right)=\frac{z^{1-a}}{\Gamma\left(a\right)\Gamma\left(1+a-b\right )}\int_{0}^{\infty}\frac{U\left(b-a,b,t\right)e^{-t}t^{a-1}}{t+z}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\pi, \Re a&gt;\max\left(\Re b-1,0\right),</Math> <Math equation-number="13.4.6" mode="display" xml:id="C13.S4.E6">U\left(a,b,z\right)=\frac{(-1)^{n}z^{1-b-n}}{\Gamma\left(1+a-b\right)}\int_{0} ^{\infty}\frac{{\mathbf{M}}\left(b-a,b,t\right)e^{-t}t^{b+n-1}}{t+z}\mathrm{d}t, if \left|\operatorname{ph}z\right|&lt;\pi, n=0,1,2,\dots, -\Re b&lt;n&lt;1+\Re(a-b),</Math> <Math equation-number="13.4.7" mode="display" xml:id="C13.S4.E7">U\left(a,b,z\right)=\frac{2z^{\frac{1}{2}-\frac{1}{2}b}}{\Gamma\left(a\right) \Gamma\left(a-b+1\right)}\*\int_{0}^{\infty}e^{-t}t^{a-\frac{1}{2}b-\frac{1}{2 }}K_{b-1}\left(2\sqrt{zt}\right)\mathrm{d}t, if \Re a&gt;\max\left(\Re b-1,0\right),</Math> <Math equation-number="13.4.8" mode="display" xml:id="C13.S4.E8">U\left(a,b,z\right)=z^{c-a}\*\int_{0}^{\infty}e^{-zt}t^{c-1}{{}_{2}{\mathbf{F} }_{1}}\left(a,a-b+1;c;-t\right)\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\frac{1}{2}\pi,</Math> where <Math mode="inline" xml:id="C13.S4.SS1.p1.m2">c</Math> is arbitrary, <Math mode="inline" xml:id="C13.S4.SS1.p1.m3">\Re c&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C13.S4.SS1.p1.s4">
+For the functions <Math mode="inline" xml:id="C13.S4.SS1.p1.m4">K_{b-1}</Math> and <Math mode="inline" xml:id="C13.S4.SS1.p1.m5">{{}_{2}{\mathbf{F}}_{1}}</Math> see §10.25(ii) and §§15.1, 15.2(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S4.SS2">
+<title>Contour Integrals</title>          
+<para xml:id="C13.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C13.S4.SS2.p1.s1">
+ <Math equation-number="13.4.9" mode="display" xml:id="C13.S4.E9">{\mathbf{M}}\left(a,b,z\right)=\frac{\Gamma\left(1+a-b\right)}{2\pi\mathrm{i} \Gamma\left(a\right)}\int_{0}^{(1+)}e^{zt}t^{a-1}{(t-1)^{b-a-1}}\mathrm{d}t, if b-a\neq 1,2,3,\dots, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C13.S4.SS2.p1.s2">
+<Math equation-number="13.4.10" mode="display" xml:id="C13.S4.E10">{\mathbf{M}}\left(a,b,z\right)=e^{-a\pi\mathrm{i}}\frac{\Gamma\left(1-a\right) }{2\pi\mathrm{i}\Gamma\left(b-a\right)}\int_{1}^{(0+)}e^{zt}t^{a-1}{(1-t)^{b-a -1}}\mathrm{d}t, if a\neq 1,2,3,\dots, \Re(b-a)&gt;0</Math>.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="7" xml:id="C13.S4.F1.s1">
+Figure 13.4.1: Contour of integration in ( ). (Compare Figure .)
+</sentence> 
+ 
+<para xml:id="C13.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C13.S4.SS2.p2.s1">
+ <Math equation-number="13.4.11" mode="display" xml:id="C13.S4.E11">{\mathbf{M}}\left(a,b,z\right)=e^{-b\pi\mathrm{i}}\Gamma\left(1-a\right)\Gamma \left(1+a-b\right)\*\frac{1}{4\pi^{2}}\int_{\alpha}^{(0+,1+,0-,1-)}e^{zt}t^{a- 1}{(1-t)^{b-a-1}}\mathrm{d}t, if a,b-a\neq 1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C13.S4.SS2.p2.s2">
+The contour of integration starts and terminates at a point <Math mode="inline" xml:id="C13.S4.SS2.p2.m1">\alpha</Math> on the real axis between <Math mode="inline" xml:id="C13.S4.SS2.p2.m2">0</Math> and <Math mode="inline" xml:id="C13.S4.SS2.p2.m3">1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C13.S4.SS2.p2.s3">
+It encircles <Math mode="inline" xml:id="C13.S4.SS2.p2.m4">t=0</Math> and <Math mode="inline" xml:id="C13.S4.SS2.p2.m5">t=1</Math> once in the positive sense, and then once in the negative sense.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C13.S4.SS2.p2.s4">
+See Figure 13.4.1.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C13.S4.SS2.p2.s5">
+The fractional powers are continuous and assume their principal values at <Math mode="inline" xml:id="C13.S4.SS2.p2.m6">t=\alpha</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="13" xml:id="C13.S4.SS2.p2.s6">
+Similar conventions also apply to the remaining integrals in this subsection.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="14" xml:id="C13.S4.SS2.p2.s7">
+<Math equation-number="13.4.12" mode="display" xml:id="C13.S4.E12">{\mathbf{M}}\left(a,c,z\right)=\frac{\Gamma\left(b\right)}{2\pi\mathrm{i}}z^{1 -b}\int_{-\infty}^{(0+,1+)}e^{zt}t^{-b}{{}_{2}{\mathbf{F}}_{1}}\left(a,b;c; \ifrac{1}{t}\right)\mathrm{d}t, if b\neq 0,-1,-2,\dots, \left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="15" xml:id="C13.S4.SS2.p2.s8">
+At the point where the contour crosses the interval <Math mode="inline" xml:id="C13.S4.SS2.p2.m7">(1,\infty)</Math> , <Math mode="inline" xml:id="C13.S4.SS2.p2.m8">t^{-b}</Math> and the <Math mode="inline" xml:id="C13.S4.SS2.p2.m9">{{}_{2}{\mathbf{F}}_{1}}</Math> function assume their principal values; compare §§15.1 and 15.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="16" xml:id="C13.S4.SS2.p2.s9">
+A special case is <Math equation-number="13.4.13" mode="display" xml:id="C13.S4.E13">{\mathbf{M}}\left(a,b,z\right)=\frac{z^{1-b}}{2\pi\mathrm{i}}\int_{-\infty}^{( 0+,1+)}e^{zt}t^{-b}\!\left(1-\frac{1}{t}\right)^{-a}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="17" xml:id="C13.S4.SS2.p2.s10">
+<Math equation-number="13.4.14" mode="display" xml:id="C13.S4.E14">U\left(a,b,z\right)=e^{-a\pi\mathrm{i}}\frac{\Gamma\left(1-a\right)}{2\pi \mathrm{i}}\int_{\infty}^{(0+)}e^{-zt}t^{a-1}{(1+t)^{b-a-1}}\mathrm{d}t, if a\neq 1,2,3,\dots, \left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="18" xml:id="C13.S4.SS2.p2.s11">
+The contour cuts the real axis between <Math mode="inline" xml:id="C13.S4.SS2.p2.m10">-1</Math> and <Math mode="inline" xml:id="C13.S4.SS2.p2.m11">0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="19" xml:id="C13.S4.SS2.p2.s12">
+At this point the fractional powers are determined by <Math mode="inline" xml:id="C13.S4.SS2.p2.m12">\operatorname{ph}{t}=\pi</Math> and <Math mode="inline" xml:id="C13.S4.SS2.p2.m13">\operatorname{ph}\left(1+t\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C13.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C13.S4.SS2.p3.s1">
+ <Math equation-number="13.4.15" mode="display" xml:id="C13.S4.E15">\frac{U\left(a,b,z\right)}{\Gamma\left(c\right)\Gamma\left(c-b+1\right)}=\frac {z^{1-c}}{2\pi\mathrm{i}}\int_{-\infty}^{(0+)}e^{zt}t^{-c}{{}_{2}{\mathbf{F}}_ {1}}\left(a,c;a+c-b+1;1-\frac{1}{t}\right)\mathrm{d}t, if \left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C13.S4.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C13.S4.SS2.p4.s1">
+Again, <Math mode="inline" xml:id="C13.S4.SS2.p4.m1">t^{-c}</Math> and the <Math mode="inline" xml:id="C13.S4.SS2.p4.m2">{{}_{2}{\mathbf{F}}_{1}}</Math> function assume their principal values where the contour intersects the positive real axis.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S4.SS3">
+<title>Mellin–Barnes Integrals</title>          
+<para xml:id="C13.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C13.S4.SS3.p1.s1">
+If <Math mode="inline" xml:id="C13.S4.SS3.p1.m1">a\neq 0,-1,-2,\dots</Math> , then <Math equation-number="13.4.16" mode="display" xml:id="C13.S4.E16">{\mathbf{M}}\left(a,b,-z\right)=\frac{1}{2\pi\mathrm{i}\Gamma\left(a\right)} \int_{-\mathrm{i}\infty}^{\mathrm{i}\infty}\frac{\Gamma\left(a+t\right)\Gamma \left(-t\right)}{\Gamma\left(b+t\right)}z^{t}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{1}{2}\pi,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C13.S4.SS3.p1.m2">\Gamma\left(a+t\right)</Math> from those of <Math mode="inline" xml:id="C13.S4.SS3.p1.m3">\Gamma\left(-t\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S4.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C13.S4.SS3.p2.s1">
+If <Math mode="inline" xml:id="C13.S4.SS3.p2.m1">a</Math> and <Math mode="inline" xml:id="C13.S4.SS3.p2.m2">a-b+1\neq 0,-1,-2,\dots</Math> , then <Math equation-number="13.4.17" mode="display" xml:id="C13.S4.E17">U\left(a,b,z\right)=\frac{z^{-a}}{2\pi\mathrm{i}}\int_{-\mathrm{i}\infty}^{ \mathrm{i}\infty}\frac{\Gamma\left(a+t\right)\Gamma\left(1+a-b+t\right)\Gamma \left(-t\right)}{\Gamma\left(a\right)\Gamma\left(1+a-b\right)}z^{-t}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{3}{2}\pi,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C13.S4.SS3.p2.m3">\Gamma\left(a+t\right)\Gamma\left(1+a-b+t\right)</Math> from those of <Math mode="inline" xml:id="C13.S4.SS3.p2.m4">\Gamma\left(-t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C13.S4.SS3.p2.s2">
+<Math equation-number="13.4.18" mode="display" xml:id="C13.S4.E18">U\left(a,b,z\right)=\frac{z^{1-b}e^{z}}{2\pi\mathrm{i}}\int_{-\mathrm{i}\infty }^{\mathrm{i}\infty}\frac{\Gamma\left(b-1+t\right)\Gamma\left(t\right)}{\Gamma \left(a+t\right)}z^{-t}\mathrm{d}t, if |\operatorname{ph}{z}|&lt;\tfrac{1}{2}\pi,</Math> where the contour of integration passes all the poles of <Math mode="inline" xml:id="C13.S4.SS3.p2.m5">\Gamma\left(b-1+t\right)\Gamma\left(t\right)</Math> on the right-hand side.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

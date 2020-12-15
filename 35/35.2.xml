@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S2">
+<title>Laplace Transform</title>           
+<paragraph xml:id="C35.S2.Px1">
+<title>Definition</title>  
+  
+<para xml:id="C35.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S2.Px1.p1.s1">
+For any complex symmetric matrix <Math mode="inline" xml:id="C35.S2.Px1.p1.m1">\mathbf{Z}</Math> , <Math equation-number="35.2.1" mode="display" xml:id="C35.S2.E1">g(\mathbf{Z})=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{Z}\mathbf{X }\right)f(\mathbf{X})\mathrm{d}\mathbf{X},</Math> where the integration variable <Math mode="inline" xml:id="C35.S2.Px1.p1.m2">\mathbf{X}</Math> ranges over the space <Math mode="inline" xml:id="C35.S2.Px1.p1.m3">{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C35.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C35.S2.Px1.p2.s1">
+Suppose there exists a constant <Math mode="inline" xml:id="C35.S2.Px1.p2.m1">\mathbf{X}_{0}\in{\boldsymbol{\Omega}}</Math> such that <Math mode="inline" xml:id="C35.S2.Px1.p2.m2">|f(\mathbf{X})|&lt;\mathrm{etr}\left(-\mathbf{X}_{0}\mathbf{X}\right)</Math> for all <Math mode="inline" xml:id="C35.S2.Px1.p2.m3">\mathbf{X}\in{\boldsymbol{\Omega}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C35.S2.Px1.p2.s2">
+Then (35.2.1) converges absolutely on the region <Math mode="inline" xml:id="C35.S2.Px1.p2.m4">\Re(\mathbf{Z})&gt;\mathbf{X}_{0}</Math> , and <Math mode="inline" xml:id="C35.S2.Px1.p2.m5">g(\mathbf{Z})</Math> is a complex analytic function of all elements <Math mode="inline" xml:id="C35.S2.Px1.p2.m6">z_{j,k}</Math> of <Math mode="inline" xml:id="C35.S2.Px1.p2.m7">\mathbf{Z}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S2.Px2">
+<title>Inversion Formula</title>    
+<para xml:id="C35.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S2.Px2.p1.s1">
+Assume that <Math mode="inline" xml:id="C35.S2.Px2.p1.m1">\int_{\boldsymbol{\mathcal{S}}}\left|g(\mathbf{Z})\right|\mathrm{d}\mathbf{V}</Math> converges, and also that <Math mode="inline" xml:id="C35.S2.Px2.p1.m2">\lim_{\mathbf{U}\to\infty}\int_{\boldsymbol{\mathcal{S}}}\left|g(\mathbf{Z}) \right|\mathrm{d}\mathbf{V}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C35.S2.Px2.p1.s2">
+Then <Math equation-number="35.2.2" mode="display" xml:id="C35.S2.E2">f(\mathbf{X})=\dfrac{1}{(2\pi\mathrm{i})^{m(m+1)/2}}\int\mathrm{etr}\left( \mathbf{Z}\mathbf{X}\right)g(\mathbf{Z})\mathrm{d}\mathbf{Z},</Math> where the integral is taken over all <Math mode="inline" xml:id="C35.S2.Px2.p1.m3">\mathbf{Z}=\mathbf{U}+\mathrm{i}\mathbf{V}</Math> such that <Math mode="inline" xml:id="C35.S2.Px2.p1.m4">\mathbf{U}&gt;\mathbf{X}_{0}</Math> and <Math mode="inline" xml:id="C35.S2.Px2.p1.m5">\mathbf{V}</Math> ranges over <Math mode="inline" xml:id="C35.S2.Px2.p1.m6">\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S2.Px3">
+<title>Convolution Theorem</title>  
+  
+<para xml:id="C35.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C35.S2.Px3.p1.s1">
+If <Math mode="inline" xml:id="C35.S2.Px3.p1.m1">g_{j}</Math> is the Laplace transform of <Math mode="inline" xml:id="C35.S2.Px3.p1.m2">f_{j}</Math> , <Math mode="inline" xml:id="C35.S2.Px3.p1.m3">j=1,2</Math> , then <Math mode="inline" xml:id="C35.S2.Px3.p1.m4">g_{1}g_{2}</Math> is the Laplace transform of the convolution <Math mode="inline" xml:id="C35.S2.Px3.p1.m5">f_{1}*f_{2}</Math> , where <Math equation-number="35.2.3" mode="display" xml:id="C35.S2.E3">f_{1}*f_{2}(\mathbf{T})=\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{T}}f_ {1}(\mathbf{T}-\mathbf{X})f_{2}(\mathbf{X})\mathrm{d}\mathbf{X}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

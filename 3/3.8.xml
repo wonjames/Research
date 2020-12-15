@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S8">
+<title>Nonlinear Equations</title>          
+    
+<subsection xml:id="C3.S8.SS1">
+<title>Introduction</title>         
+<para xml:id="C3.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S8.SS1.p1.s1">
+The equation to be solved is <Math equation-number="3.8.1" mode="display" xml:id="C3.S8.E1">f(z)=0,</Math> where <Math mode="inline" xml:id="C3.S8.SS1.p1.m1">z</Math> is a real or complex variable and the function <Math mode="inline" xml:id="C3.S8.SS1.p1.m2">f</Math> is nonlinear.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C3.S8.SS1.p1.s2">
+Solutions are called roots of the equation, or zeros of <Math mode="inline" xml:id="C3.S8.SS1.p1.m3">f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C3.S8.SS1.p1.s3">
+If <Math mode="inline" xml:id="C3.S8.SS1.p1.m4">f(z_{0})=0</Math> and <Math mode="inline" xml:id="C3.S8.SS1.p1.m5">f^{\prime}(z_{0})\neq 0</Math> , then <Math mode="inline" xml:id="C3.S8.SS1.p1.m6">z_{0}</Math> is a simple zero of <Math mode="inline" xml:id="C3.S8.SS1.p1.m7">f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C3.S8.SS1.p1.s4">
+If <Math mode="inline" xml:id="C3.S8.SS1.p1.m8">f(z_{0})=f^{\prime}(z_{0})=\cdots=f^{(m-1)}(z_{0})=0</Math> and <Math mode="inline" xml:id="C3.S8.SS1.p1.m9">f^{(m)}(z_{0})\neq 0</Math> , then <Math mode="inline" xml:id="C3.S8.SS1.p1.m10">z_{0}</Math> is a zero of <Math mode="inline" xml:id="C3.S8.SS1.p1.m11">f</Math> of multiplicity <Math mode="inline" xml:id="C3.S8.SS1.p1.m12">m</Math> ; compare §1.10(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C3.S8.SS1.p2.s1">
+Sometimes the equation takes the form <Math equation-number="3.8.2" mode="display" xml:id="C3.S8.E2">z=\phi(z),</Math> and the solutions are called fixed points of <Math mode="inline" xml:id="C3.S8.SS1.p2.m1">\phi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C3.S8.SS1.p3.s1">
+Equations (3.8.1) and (3.8.2) are usually solved by iterative methods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C3.S8.SS1.p3.s2">
+Let <Math mode="inline" xml:id="C3.S8.SS1.p3.m1">z_{1},z_{2},\dots</Math> be a sequence of approximations to a root, or fixed point, <Math mode="inline" xml:id="C3.S8.SS1.p3.m2">\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C3.S8.SS1.p3.s3">
+If <Math equation-number="3.8.3" mode="display" xml:id="C3.S8.E3">\left|z_{n+1}-\zeta\right|&lt;A{\left|z_{n}-\zeta\right|^{p}}</Math> for all <Math mode="inline" xml:id="C3.S8.SS1.p3.m4">n</Math> sufficiently large, where <Math mode="inline" xml:id="C3.S8.SS1.p3.m5">A</Math> and <Math mode="inline" xml:id="C3.S8.SS1.p3.m6">p</Math> are independent of <Math mode="inline" xml:id="C3.S8.SS1.p3.m7">n</Math> , then the sequence is said to have convergence of the <Math mode="inline" xml:id="C3.S8.SS1.p3.m8">p</Math> th order.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C3.S8.SS1.p3.s4">
+(More precisely, <Math mode="inline" xml:id="C3.S8.SS1.p3.m9">p</Math> is the largest of the possible set of indices for (3.8.3).)If
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C3.S8.SS1.p3.s5">
+<Math mode="inline" xml:id="C3.S8.SS1.p3.m10">p=1</Math> and <Math mode="inline" xml:id="C3.S8.SS1.p3.m11">A&lt;1</Math> , then the convergence is said to be linear or geometric.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="11" xml:id="C3.S8.SS1.p3.s6">
+If <Math mode="inline" xml:id="C3.S8.SS1.p3.m12">p=2</Math> , then the convergence isquadratic; if <Math mode="inline" xml:id="C3.S8.SS1.p3.m13">p=3</Math> , then the convergence is cubic, and so on.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C3.S8.SS1.p4.s1">
+An iterative method converges locally to a solution <Math mode="inline" xml:id="C3.S8.SS1.p4.m1">\zeta</Math> if there exists a neighborhood <Math mode="inline" xml:id="C3.S8.SS1.p4.m2">N</Math> of <Math mode="inline" xml:id="C3.S8.SS1.p4.m3">\zeta</Math> such that <Math mode="inline" xml:id="C3.S8.SS1.p4.m4">z_{n}\to\zeta</Math> whenever the initial approximation <Math mode="inline" xml:id="C3.S8.SS1.p4.m5">z_{0}</Math> lies within <Math mode="inline" xml:id="C3.S8.SS1.p4.m6">N</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS2">
+<title>Newton’s Rule</title>          
+ 
+<para xml:id="C3.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C3.S8.SS2.p1.s1">
+This is an iterative method for real twice-continuously differentiable, or complex analytic, functions: <Math equation-number="3.8.4" mode="display" xml:id="C3.S8.E4">z_{n+1}=z_{n}-\frac{f(z_{n})}{f^{\prime}(z_{n})}, if n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C3.S8.SS2.p2.s1">
+If <Math mode="inline" xml:id="C3.S8.SS2.p2.m1">\zeta</Math> is a simple zero, then the iteration converges locally and quadratically.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C3.S8.SS2.p2.s2">
+For multiple zeros the convergence is linear, but if the multiplicity <Math mode="inline" xml:id="C3.S8.SS2.p2.m2">m</Math> is known then quadratic convergence can be restored by multiplying the ratio <Math mode="inline" xml:id="C3.S8.SS2.p2.m3">f(z_{n})/f^{\prime}(z_{n})</Math> in (3.8.4) by <Math mode="inline" xml:id="C3.S8.SS2.p2.m4">m</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C3.S8.SS2.p3.s1">
+For real functions <Math mode="inline" xml:id="C3.S8.SS2.p3.m1">f(x)</Math> the sequence of approximations to a real zero <Math mode="inline" xml:id="C3.S8.SS2.p3.m2">\xi</Math> will always converge (and converge quadratically) if either: <Math mode="inline" xml:id="C3.S8.I1.ix1.p1.m1">f(x_{0})f^{\prime\prime}(x_{0})&gt;0</Math> and <Math mode="inline" xml:id="C3.S8.I1.ix1.p1.m2">f^{\prime}(x)</Math> , <Math mode="inline" xml:id="C3.S8.I1.ix1.p1.m3">f^{\prime\prime}(x)</Math> do not change signbetween <Math mode="inline" xml:id="C3.S8.I1.ix1.p1.m4">x_{0}</Math> and <Math mode="inline" xml:id="C3.S8.I1.ix1.p1.m5">\xi</Math> (monotonic convergence).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C3.S8.SS2.p3.s2">
+<Math mode="inline" xml:id="C3.S8.I1.ix2.p1.m1">f(x_{0})f^{\prime\prime}(x_{0})&lt;0</Math> , <Math mode="inline" xml:id="C3.S8.I1.ix2.p1.m2">f^{\prime}(x)</Math> , <Math mode="inline" xml:id="C3.S8.I1.ix2.p1.m3">f^{\prime\prime}(x)</Math> do not change sign in the interval <Math mode="inline" xml:id="C3.S8.I1.ix2.p1.m4">(x_{0},x_{1})</Math> , and <Math mode="inline" xml:id="C3.S8.I1.ix2.p1.m5">\xi\in[x_{0},x_{1}]</Math> (monotonic convergence after the first iteration).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S8.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C3.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C3.S8.Px1.p1.s1">
+ <Math mode="inline" xml:id="C3.S8.Px1.p1.m1">f(x)=x-\tan x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C3.S8.Px1.p1.s2">
+The first positive zero of <Math mode="inline" xml:id="C3.S8.Px1.p1.m2">f(x)</Math> lies in the interval <Math mode="inline" xml:id="C3.S8.Px1.p1.m3">(\pi,\frac{3}{2}\pi)</Math> ; see Figure 4.15.3.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C3.S8.Px1.p1.s3">
+From this graph we estimate an initial value <Math mode="inline" xml:id="C3.S8.Px1.p1.m4">x_{0}=4.6</Math> 5. Newton’s rule is given by <Math equation-number="3.8.5" mode="display" xml:id="C3.S8.E5">x_{n+1}=\phi(x_{n}),\phi(x)=x+x{\cot^{2}}x-\cot x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C3.S8.Px1.p1.s4">
+Results appear in Table 3.8.1.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C3.S8.Px1.p1.s5">
+The choice of <Math mode="inline" xml:id="C3.S8.Px1.p1.m5">x_{0}</Math> here is critical.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="23" xml:id="C3.S8.Px1.p1.s6">
+When <Math mode="inline" xml:id="C3.S8.Px1.p1.m6">x_{0}\leq 4.2875</Math> or <Math mode="inline" xml:id="C3.S8.Px1.p1.m7">x_{0}\geq 4.7125</Math> , Newton’s rule does not converge to the required zero.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="24" xml:id="C3.S8.Px1.p1.s7">
+The convergence is faster when we use instead the function <Math mode="inline" xml:id="C3.S8.Px1.p1.m8">f(x)=x\cos x-\sin x</Math> ; in addition, the successful interval for the starting value <Math mode="inline" xml:id="C3.S8.Px1.p1.m9">x_{0}</Math> is larger.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="25" xml:id="C3.S8.T1.s1">
+Table 3.8.1: Newton’s rule for <Math mode="inline" xml:id="C3.S8.T1.m2">x-\tan x=0</Math> .
+</sentence>
+ 
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="1" xml:id="C3.S8.T1.t1.s1">
+<Math mode="inline" xml:id="C3.S8.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="2" xml:id="C3.S8.T1.t1.s2">
+<Math mode="inline" xml:id="C3.S8.T1.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="3" xml:id="C3.S8.T1.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="4" xml:id="C3.S8.T1.t1.s4">
+4.65000 00000 000
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="5" xml:id="C3.S8.T1.t1.s5">
+1
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="6" xml:id="C3.S8.T1.t1.s6">
+4.60567 66065 900
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="7" xml:id="C3.S8.T1.t1.s7">
+2
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="8" xml:id="C3.S8.T1.t1.s8">
+4.55140 53475 751
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="9" xml:id="C3.S8.T1.t1.s9">
+3
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="10" xml:id="C3.S8.T1.t1.s10">
+4.50903 76975 617
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="11" xml:id="C3.S8.T1.t1.s11">
+4
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="12" xml:id="C3.S8.T1.t1.s12">
+4.49455 61600 185
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="13" xml:id="C3.S8.T1.t1.s13">
+5
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="14" xml:id="C3.S8.T1.t1.s14">
+4.49341 56569 391
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="15" xml:id="C3.S8.T1.t1.s15">
+6
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="16" xml:id="C3.S8.T1.t1.s16">
+4.49340 94580 903
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="17" xml:id="C3.S8.T1.t1.s17">
+7
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="18" xml:id="C3.S8.T1.t1.s18">
+4.49340 94579 091
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="19" xml:id="C3.S8.T1.t1.s19">
+8
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="20" xml:id="C3.S8.T1.t1.s20">
+4.49340 94579 091
+</sentence>
+ 
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS3">
+<title>Other Methods</title>         
+<paragraph xml:id="C3.S8.Px2">
+<title>Bisection Method</title>  
+  
+<para xml:id="C3.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C3.S8.Px2.p1.s1">
+If <Math mode="inline" xml:id="C3.S8.Px2.p1.m1">f(a)f(b)&lt;0</Math> with <Math mode="inline" xml:id="C3.S8.Px2.p1.m2">a&lt;b</Math> , then the interval <Math mode="inline" xml:id="C3.S8.Px2.p1.m3">[a,b]</Math> contains one or more zeros of <Math mode="inline" xml:id="C3.S8.Px2.p1.m4">f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C3.S8.Px2.p1.s2">
+Bisection of this interval is used to decide where at least one zero is located. All zeros of <Math mode="inline" xml:id="C3.S8.Px2.p1.m5">f</Math> in the original interval <Math mode="inline" xml:id="C3.S8.Px2.p1.m6">[a,b]</Math> can be computed to any predetermined accuracy.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C3.S8.Px2.p1.s3">
+Convergence is slow however; seeKaufman and Lenker (1986) and Nievergelt (1995).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px3">
+<title>Regula Falsi</title>  
+    
+<para xml:id="C3.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C3.S8.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C3.S8.Px3.p1.m1">x_{0}</Math> and <Math mode="inline" xml:id="C3.S8.Px3.p1.m2">x_{1}</Math> be such that <Math mode="inline" xml:id="C3.S8.Px3.p1.m3">f_{0}=f(x_{0})</Math> and <Math mode="inline" xml:id="C3.S8.Px3.p1.m4">f_{1}=f(x_{1})</Math> have opposite signs.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C3.S8.Px3.p1.s2">
+Inverse linear interpolation (§3.3(v)) is used to obtain the first approximation: <Math equation-number="3.8.6" mode="display" xml:id="C3.S8.E6">x_{2}=x_{1}-\frac{x_{1}-x_{0}}{f_{1}-f_{0}}f_{1}=\frac{f_{1}x_{0}-f_{0}x_{1}}{ f_{1}-f_{0}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="51" xml:id="C3.S8.Px3.p1.s3">
+We continue with <Math mode="inline" xml:id="C3.S8.Px3.p1.m5">x_{2}</Math> and either <Math mode="inline" xml:id="C3.S8.Px3.p1.m6">x_{0}</Math> or <Math mode="inline" xml:id="C3.S8.Px3.p1.m7">x_{1}</Math> , depending which of <Math mode="inline" xml:id="C3.S8.Px3.p1.m8">f_{0}</Math> and <Math mode="inline" xml:id="C3.S8.Px3.p1.m9">f_{1}</Math> is of opposite sign to <Math mode="inline" xml:id="C3.S8.Px3.p1.m10">f(x_{2})</Math> , and so on.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="52" xml:id="C3.S8.Px3.p1.s4">
+The convergence is linear, and again more than one zero may occur in the original interval <Math mode="inline" xml:id="C3.S8.Px3.p1.m11">[x_{0},x_{1}]</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px4">
+<title>Secant Method</title>  
+  
+<para xml:id="C3.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C3.S8.Px4.p1.s1">
+Whether or not <Math mode="inline" xml:id="C3.S8.Px4.p1.m1">f_{0}</Math> and <Math mode="inline" xml:id="C3.S8.Px4.p1.m2">f_{1}</Math> have opposite signs, <Math mode="inline" xml:id="C3.S8.Px4.p1.m3">x_{2}</Math> is computed as in (3.8.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C3.S8.Px4.p1.s2">
+If the wanted zero <Math mode="inline" xml:id="C3.S8.Px4.p1.m4">\xi</Math> is simple, then the method converges locally with order of convergence <Math mode="inline" xml:id="C3.S8.Px4.p1.m5">p=\frac{1}{2}(1+\sqrt{5})=1.618\ldots\</Math> ,.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C3.S8.Px4.p1.s3">
+Because the method requires only one function evaluation per iteration, its numerical efficiency is ultimately higher than that of Newton’s method.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="56" xml:id="C3.S8.Px4.p1.s4">
+There is no guaranteed convergence: the first approximation <Math mode="inline" xml:id="C3.S8.Px4.p1.m6">x_{2}</Math> may be outside <Math mode="inline" xml:id="C3.S8.Px4.p1.m7">[x_{0},x_{1}]</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px5">
+<title>Steffensen’s Method</title>  
+  
+<para xml:id="C3.S8.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C3.S8.Px5.p1.s1">
+This iterative method for solving <Math mode="inline" xml:id="C3.S8.Px5.p1.m1">z=\phi(z)</Math> is given by <Math equation-number="3.8.7" mode="display" xml:id="C3.S8.E7">z_{n+1}=z_{n}-\frac{(\phi(z_{n})-z_{n})^{2}}{\phi(\phi(z_{n}))-2\phi(z_{n})+z_ {n}}, if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C3.S8.Px5.p1.s2">
+It converges locally and quadratically for both <Math mode="inline" xml:id="C3.S8.Px5.p1.m2">\mathbb{R}</Math> and <Math mode="inline" xml:id="C3.S8.Px5.p1.m3">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C3.S8.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C3.S8.Px5.p2.s1">
+For other efficient derivative-free methods, see Le (1985).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px6">
+<title>Eigenvalue Methods</title>    
+<para xml:id="C3.S8.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C3.S8.Px6.p1.s1">
+For the computation of zeros of orthogonal polynomials as eigenvalues of finite tridiagonal matrices (§3.5(vi)), seeGil et al. (2007a, pp. 205–207).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="61" xml:id="C3.S8.Px6.p1.s2">
+For the computation of zeros of Bessel functions, Coulomb functions, and conical functions as eigenvalues of finiteparts of infinite tridiagonal matrices, see Grad and Zakrajšek (1973),Ikebe (1975), Ikebe et al. (1991), Ball (2000), andGil et al. (2007a, pp. 205–213).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS4">
+<title>Zeros of Polynomials</title>        
+   
+<para xml:id="C3.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C3.S8.SS4.p1.s1">
+The polynomial <Math equation-number="3.8.8" mode="display" xml:id="C3.S8.E8">p(z)=a_{n}z^{n}+a_{n-1}z^{n-1}+\dots+a_{0}, if a_{n}\neq 0,</Math> has <Math mode="inline" xml:id="C3.S8.SS4.p1.m1">n</Math> zeros in <Math mode="inline" xml:id="C3.S8.SS4.p1.m2">\mathbb{C}</Math> , counting each zero according to its multiplicity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C3.S8.SS4.p1.s2">
+Explicit formulas for the zeros are available if <Math mode="inline" xml:id="C3.S8.SS4.p1.m3">n\leq 4</Math> ; see §§1.11(iii) and 4.43.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="64" xml:id="C3.S8.SS4.p1.s3">
+No explicit general formulas exist when <Math mode="inline" xml:id="C3.S8.SS4.p1.m4">n\geq 5</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C3.S8.SS4.p2.s1">
+After a zero <Math mode="inline" xml:id="C3.S8.SS4.p2.m1">\zeta</Math> has been computed, the factor <Math mode="inline" xml:id="C3.S8.SS4.p2.m2">z-\zeta</Math> is factored out of <Math mode="inline" xml:id="C3.S8.SS4.p2.m3">p(z)</Math> as a by-product of Horner’s scheme (§1.11(i)) for the computation of <Math mode="inline" xml:id="C3.S8.SS4.p2.m4">p(\zeta)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C3.S8.SS4.p2.s2">
+In this way polynomials of successively lower degree can be used to find the remaining zeros.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C3.S8.SS4.p2.s3">
+(This process is calleddeflation.)However, to guard against the accumulation of rounding errors, a final iteration for each zero should also be performed on the original polynomial <Math mode="inline" xml:id="C3.S8.SS4.p2.m5">p(z)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S8.Px7">
+<title>Example</title>  
+ 
+<para xml:id="C3.S8.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C3.S8.Px7.p1.s1">
+ <Math mode="inline" xml:id="C3.S8.Px7.p1.m1">p(z)=z^{4}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C3.S8.Px7.p1.s2">
+The zeros are <Math mode="inline" xml:id="C3.S8.Px7.p1.m2">\pm 1</Math> and <Math mode="inline" xml:id="C3.S8.Px7.p1.m3">\pm\mathrm{i}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="70" xml:id="C3.S8.Px7.p1.s3">
+Newton’s method is given by <Math equation-number="3.8.9" mode="display" xml:id="C3.S8.E9">z_{n+1}=\phi(z_{n}),\phi(z)=\frac{3z^{4}+1}{4z^{3}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.Px7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C3.S8.Px7.p2.s1">
+The results for <Math mode="inline" xml:id="C3.S8.Px7.p2.m1">z_{0}=1.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C3.S8.Px7.p2.s2">
+5 are given in Table 3.8.2.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="73" xml:id="C3.S8.T2.s1">
+Table 3.8.2: Newton’s rule for <Math mode="inline" xml:id="C3.S8.T2.m2">z^{4}-1=0</Math> .
+</sentence>
+ 
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="1" xml:id="C3.S8.T2.t1.s1">
+<Math mode="inline" xml:id="C3.S8.T2.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="2" xml:id="C3.S8.T2.t1.s2">
+<Math mode="inline" xml:id="C3.S8.T2.t1.r1.m2">z_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="3" xml:id="C3.S8.T2.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="4" xml:id="C3.S8.T2.t1.s4">
+1.50000 00000 000
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="5" xml:id="C3.S8.T2.t1.s5">
+1
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="6" xml:id="C3.S8.T2.t1.s6">
+1.19907 40740 741
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="7" xml:id="C3.S8.T2.t1.s7">
+2
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="8" xml:id="C3.S8.T2.t1.s8">
+1.04431 68969 414
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="9" xml:id="C3.S8.T2.t1.s9">
+3
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="10" xml:id="C3.S8.T2.t1.s10">
+1.00274 20038 676
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="11" xml:id="C3.S8.T2.t1.s11">
+4
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="12" xml:id="C3.S8.T2.t1.s12">
+1.00001 12265 490
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="13" xml:id="C3.S8.T2.t1.s13">
+5
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="14" xml:id="C3.S8.T2.t1.s14">
+1.00000 00001 891
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="15" xml:id="C3.S8.T2.t1.s15">
+6
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="16" xml:id="C3.S8.T2.t1.s16">
+1.00000 00000 000
+</sentence>
+  
+<para xml:id="C3.S8.Px7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C3.S8.Px7.p3.s1">
+As in the case of Table 3.8.1 the quadratic nature of convergence is clearly evident: as the zero is approached, the number of correct decimal places doubles at each iteration.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.Px7.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C3.S8.Px7.p4.s1">
+Newton’s rule can also be used for complex zeros of <Math mode="inline" xml:id="C3.S8.Px7.p4.m1">p(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="92" xml:id="C3.S8.Px7.p4.s2">
+However, when the coefficients are all real, complex arithmetic can be avoided by the following iterative process.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px8">
+<title>Bairstow’s Method</title>  
+  
+<para xml:id="C3.S8.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C3.S8.Px8.p1.s1">
+Let <Math mode="inline" xml:id="C3.S8.Px8.p1.m1">z^{2}-sz-t</Math> be an approximation to the real quadratic factor of <Math mode="inline" xml:id="C3.S8.Px8.p1.m2">p(z)</Math> that corresponds to a pair of conjugate complex zeros or to a pair of real zeros.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C3.S8.Px8.p1.s2">
+We construct sequences <Math mode="inline" xml:id="C3.S8.Px8.p1.m3">q_{j}</Math> and <Math mode="inline" xml:id="C3.S8.Px8.p1.m4">r_{j}</Math> , <Math mode="inline" xml:id="C3.S8.Px8.p1.m5">j=n+1,n,\dots,0</Math> , from <Math mode="inline" xml:id="C3.S8.Px8.p1.m6">q_{n+1}=r_{n+1}=0</Math> , <Math mode="inline" xml:id="C3.S8.Px8.p1.m7">q_{n}=r_{n}=a_{n}</Math> , and for <Math mode="inline" xml:id="C3.S8.Px8.p1.m8">j\leq n-1</Math> , <Math equation-number="3.8.10" mode="display" xml:id="C3.S8.E10">q_{j}=a_{j}+sq_{j+1}+tq_{j+2},r_{j}=q_{j}+sr_{j+1}+tr_{j+2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="95" xml:id="C3.S8.Px8.p1.s3">
+Then the next approximation to the quadratic factor is <Math mode="inline" xml:id="C3.S8.Px8.p1.m9">z^{2}-(s+\Delta s)z-(t+\Delta t)</Math> , where <Math equation-number="3.8.11" mode="display" xml:id="C3.S8.E11">\Delta s=\frac{r_{3}q_{0}-r_{2}q_{1}}{r_{2}^{2}-\ell r_{3}},\Delta t=\frac{\ell q_{1}-r_{2}q_{0}}{r_{2}^{2}-\ell r_{3}},\ell=sr_{2}+tr_{3}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.Px8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C3.S8.Px8.p2.s1">
+The method converges locally and quadratically, except when the wanted quadratic factor is a multiple factor of <Math mode="inline" xml:id="C3.S8.Px8.p2.m1">q(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C3.S8.Px8.p2.s2">
+On the last iteration <Math mode="inline" xml:id="C3.S8.Px8.p2.m2">q_{n}z^{n-2}+q_{n-1}z^{n-3}+\dots+q_{2}</Math> is the quotient on dividing <Math mode="inline" xml:id="C3.S8.Px8.p2.m3">p(z)</Math> by <Math mode="inline" xml:id="C3.S8.Px8.p2.m4">z^{2}-sz-t</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S8.Px9">
+<title>Example</title>  
+ 
+<para xml:id="C3.S8.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C3.S8.Px9.p1.s1">
+ <Math mode="inline" xml:id="C3.S8.Px9.p1.m1">p(z)=z^{4}-2z^{2}+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="99" xml:id="C3.S8.Px9.p1.s2">
+With the starting values <Math mode="inline" xml:id="C3.S8.Px9.p1.m2">s_{0}=\frac{7}{4}</Math> , <Math mode="inline" xml:id="C3.S8.Px9.p1.m3">t_{0}=-\frac{1}{2}</Math> , an approximation to the quadratic factor <Math mode="inline" xml:id="C3.S8.Px9.p1.m4">z^{2}-2z+1=(z-1)^{2}</Math> is computed ( <Math mode="inline" xml:id="C3.S8.Px9.p1.m5">s=2</Math> , <Math mode="inline" xml:id="C3.S8.Px9.p1.m6">t=-1</Math> ). Table3.8.3 gives the successive values of <Math mode="inline" xml:id="C3.S8.Px9.p1.m7">s</Math> and <Math mode="inline" xml:id="C3.S8.Px9.p1.m8">t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="100" xml:id="C3.S8.Px9.p1.s3">
+The quadratic nature of the convergence is evident.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="101" xml:id="C3.S8.T3.s1">
+Table 3.8.3: Bairstow’s method for factoring <Math mode="inline" xml:id="C3.S8.T3.m2">z^{4}-2z^{2}+1</Math> .
+</sentence>
+ 
+
+<sentence sentence-num-in-section="102" sentence-num-in-table="1" xml:id="C3.S8.T3.t1.s1">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="103" sentence-num-in-table="2" xml:id="C3.S8.T3.t1.s2">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r1.m2">s_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="104" sentence-num-in-table="3" xml:id="C3.S8.T3.t1.s3">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r1.m3">t_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="105" sentence-num-in-table="4" xml:id="C3.S8.T3.t1.s4">
+0
+</sentence>
+
+<sentence sentence-num-in-section="106" sentence-num-in-table="5" xml:id="C3.S8.T3.t1.s5">
+1.75000 00000 000
+</sentence>
+
+<sentence sentence-num-in-section="107" sentence-num-in-table="6" xml:id="C3.S8.T3.t1.s6">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r2.m1">-</Math>0.50000 00000 000
+</sentence>
+
+<sentence sentence-num-in-section="108" sentence-num-in-table="7" xml:id="C3.S8.T3.t1.s7">
+1
+</sentence>
+
+<sentence sentence-num-in-section="109" sentence-num-in-table="8" xml:id="C3.S8.T3.t1.s8">
+2.13527 29454 109
+</sentence>
+
+<sentence sentence-num-in-section="110" sentence-num-in-table="9" xml:id="C3.S8.T3.t1.s9">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r3.m1">-</Math>1.21235 75284 943
+</sentence>
+
+<sentence sentence-num-in-section="111" sentence-num-in-table="10" xml:id="C3.S8.T3.t1.s10">
+2
+</sentence>
+
+<sentence sentence-num-in-section="112" sentence-num-in-table="11" xml:id="C3.S8.T3.t1.s11">
+2.01786 10488 956
+</sentence>
+
+<sentence sentence-num-in-section="113" sentence-num-in-table="12" xml:id="C3.S8.T3.t1.s12">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r4.m1">-</Math>1.02528 61401 539
+</sentence>
+
+<sentence sentence-num-in-section="114" sentence-num-in-table="13" xml:id="C3.S8.T3.t1.s13">
+3
+</sentence>
+
+<sentence sentence-num-in-section="115" sentence-num-in-table="14" xml:id="C3.S8.T3.t1.s14">
+2.00036 06329 466
+</sentence>
+
+<sentence sentence-num-in-section="116" sentence-num-in-table="15" xml:id="C3.S8.T3.t1.s15">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r5.m1">-</Math>1.00047 63067 522
+</sentence>
+
+<sentence sentence-num-in-section="117" sentence-num-in-table="16" xml:id="C3.S8.T3.t1.s16">
+4
+</sentence>
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="17" xml:id="C3.S8.T3.t1.s17">
+2.00000 01474 803
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="18" xml:id="C3.S8.T3.t1.s18">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r6.m1">-</Math>1.00000 01858 298
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="19" xml:id="C3.S8.T3.t1.s19">
+5
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="20" xml:id="C3.S8.T3.t1.s20">
+2.00000 00000 000
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="21" xml:id="C3.S8.T3.t1.s21">
+<Math mode="inline" xml:id="C3.S8.T3.t1.r7.m1">-</Math>1.00000 00000 000
+</sentence>
+  
+<para xml:id="C3.S8.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C3.S8.Px9.p2.s1">
+This example illustrates the fact that the method succeeds even if the two zerosof the wanted quadratic factor are real and the same.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C3.S8.Px9.p3.s1">
+For further information on the computation of zeros of polynomials seeMcNamee (2007).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS5">
+<title>Zeros of Analytic Functions</title>        
+ 
+<para xml:id="C3.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C3.S8.SS5.p1.s1">
+Newton’s rule is the most frequently used iterative process for accurate computation of real or complex zeros of analytic functions <Math mode="inline" xml:id="C3.S8.SS5.p1.m1">f(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="126" xml:id="C3.S8.SS5.p1.s2">
+Another iterative method is Halley’s rule: <Math equation-number="3.8.12" mode="display" xml:id="C3.S8.E12">z_{n+1}=z_{n}-\frac{f(z_{n})}{f^{\prime}(z_{n})-(f^{\prime\prime}(z_{n})f(z_{n })/(2f^{\prime}(z_{n})))}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="127" xml:id="C3.S8.SS5.p1.s3">
+This is useful when <Math mode="inline" xml:id="C3.S8.SS5.p1.m2">f(z)</Math> satisfies a second-order linear differential equation because of the ease of computing <Math mode="inline" xml:id="C3.S8.SS5.p1.m3">f^{\prime\prime}(z_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="128" xml:id="C3.S8.SS5.p1.s4">
+The rule convergeslocally and is cubically convergent.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C3.S8.SS5.p2.s1">
+Initial approximations to the zeros can often be found from asymptotic or other approximations to <Math mode="inline" xml:id="C3.S8.SS5.p2.m1">f(z)</Math> , or by application of the phase principle or Rouché’s theorem; see §1.10(iv).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="130" xml:id="C3.S8.SS5.p2.s2">
+These results are also useful in ensuring that no zeros are overlooked when the complex plane is being searched.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C3.S8.SS5.p3.s1">
+For an example involving the Airy functions, see Fabijonas and Olver (1999).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C3.S8.SS5.p4.s1">
+For fixed-point methods for computing zeros of special functions, seeSegura (2002), Gil and Segura (2003), and Gil et al. (2007a, Chapter 7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C3.S8.SS5.p4.s2">
+For describing the distribution of complex zeros of solutions of linear homogeneous second-order differential equations by methods based on the Liouville-Green (WKB) approximation, see Segura (2013).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS6">
+<title>Conditioning of Zeros</title>        
+   
+<para xml:id="C3.S8.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C3.S8.SS6.p1.s1">
+Suppose <Math mode="inline" xml:id="C3.S8.SS6.p1.m1">f(z)</Math> also depends on a parameter <Math mode="inline" xml:id="C3.S8.SS6.p1.m2">\alpha</Math> , denoted by <Math mode="inline" xml:id="C3.S8.SS6.p1.m3">f(z,\alpha)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="135" xml:id="C3.S8.SS6.p1.s2">
+Then the sensitivity of a simple zero <Math mode="inline" xml:id="C3.S8.SS6.p1.m4">z</Math> to changes in <Math mode="inline" xml:id="C3.S8.SS6.p1.m5">\alpha</Math> is given by <Math equation-number="3.8.13" mode="display" xml:id="C3.S8.E13">\frac{\mathrm{d}z}{\mathrm{d}\alpha}=-\ifrac{\frac{\partial f}{\partial\alpha} }{\frac{\partial f}{\partial z}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C3.S8.SS6.p2.s1">
+Thus if <Math mode="inline" xml:id="C3.S8.SS6.p2.m1">f</Math> is the polynomial (3.8.8) and <Math mode="inline" xml:id="C3.S8.SS6.p2.m2">\alpha</Math> is the coefficient <Math mode="inline" xml:id="C3.S8.SS6.p2.m3">a_{j}</Math> , say, then <Math equation-number="3.8.14" mode="display" xml:id="C3.S8.E14">\frac{\mathrm{d}z}{\mathrm{d}a_{j}}=-\frac{z^{j}}{f^{\prime}(z)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="137" xml:id="C3.S8.SS6.p2.s2">
+For moderate or large values of <Math mode="inline" xml:id="C3.S8.SS6.p2.m4">n</Math> it is not uncommon for the magnitude of the right-hand side of (3.8.14) to be very large compared with unity, signifying that the computation of zeros of polynomials is often an ill-posed problem.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S8.Px10">
+<title>Example. Wilkinson’s Polynomial</title>  
+   
+<para xml:id="C3.S8.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C3.S8.Px10.p1.s1">
+The zeros of <Math equation-number="3.8.15" mode="display" xml:id="C3.S8.E15">p(x)=(x-1)(x-2)\cdots(x-20)</Math> are well separated but extremely ill-conditioned. Consider <Math mode="inline" xml:id="C3.S8.Px10.p1.m1">x=20</Math> and <Math mode="inline" xml:id="C3.S8.Px10.p1.m2">j=19</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C3.S8.Px10.p1.s2">
+We have <Math mode="inline" xml:id="C3.S8.Px10.p1.m3">p^{\mspace{1.0mu }\prime}(20)=19</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C3.S8.Px10.p1.s3">
+and <Math mode="inline" xml:id="C3.S8.Px10.p1.m4">a_{19}=1+2+\dots+20=210</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="141" xml:id="C3.S8.Px10.p1.s4">
+The perturbation factor (3.8.14) is given by <Math equation-number="3.8.16" mode="display" xml:id="C3.S8.E16">\frac{\mathrm{d}x}{\mathrm{d}a_{19}}=-\frac{20^{19}}{19!}=(-4.30\dots)\times 1 0^{7}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.Px10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C3.S8.Px10.p2.s1">
+Corresponding numerical factors in this example for other zeros and other values of <Math mode="inline" xml:id="C3.S8.Px10.p2.m1">j</Math> are obtained in Gautschi (1984, §4).
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS7">
+<title>Systems of Nonlinear Equations</title>           
+<para xml:id="C3.S8.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C3.S8.SS7.p1.s1">
+For fixed-point iterations and Newton’s method for solving systems of nonlinear equations, see Gautschi (1997a, Chapter 4, §9) andOrtega and Rheinboldt (1970).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S8.SS8">
+<title>Fixed-Point Iterations: Fractals</title>           
+<para xml:id="C3.S8.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C3.S8.SS8.p1.s1">
+The convergence of iterative methods <Math equation-number="3.8.17" mode="display" xml:id="C3.S8.E17">z_{n+1}=\phi(z_{n}), if n=0,1,\dots,</Math> for solving fixed-point problems (3.8.2) cannot always bepredicted, especially in the complex plane.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S8.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C3.S8.SS8.p2.s1">
+Consider, for example, (3.8.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="146" xml:id="C3.S8.SS8.p2.s2">
+Starting this iteration in the neighborhood of one of the four zeros <Math mode="inline" xml:id="C3.S8.SS8.p2.m1">\pm 1,\pm\mathrm{i}</Math> , sequences <Math mode="inline" xml:id="C3.S8.SS8.p2.m2">\{z_{n}\}</Math> are generated that converge to these zeros.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="147" xml:id="C3.S8.SS8.p2.s3">
+For an arbitrary starting point <Math mode="inline" xml:id="C3.S8.SS8.p2.m3">z_{0}\in\mathbb{C}</Math> , convergence cannot be predicted, and the boundary of the set of points <Math mode="inline" xml:id="C3.S8.SS8.p2.m4">z_{0}</Math> that generate a sequence converging to a particular zero has a very complicated structure.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="148" xml:id="C3.S8.SS8.p2.s4">
+It is called a Julia set.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="149" xml:id="C3.S8.SS8.p2.s5">
+In general the Julia set of an analytic function <Math mode="inline" xml:id="C3.S8.SS8.p2.m5">f(z)</Math> is a fractal, that is, a set that is self-similar.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="150" xml:id="C3.S8.SS8.p2.s6">
+See Julia (1918) andDevaney (1986).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

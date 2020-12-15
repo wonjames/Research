@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S10">
+<title>Zeros</title>         
+<subsection xml:id="C25.S10.SS1">
+<title>Distribution</title>             
+ 
+<para xml:id="C25.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S10.SS1.p1.s1">
+The product representation (25.2.11) implies <Math mode="inline" xml:id="C25.S10.SS1.p1.m1">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m2">\Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S10.SS1.p1.s2">
+Also, <Math mode="inline" xml:id="C25.S10.SS1.p1.m3">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m4">\Re s=1</Math> , a property first established in Hadamard (1896) and de la Vallée Poussin (1896a, b) in the proof of the prime number theorem (25.16.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S10.SS1.p1.s3">
+The functional equation (25.4.1) implies <Math mode="inline" xml:id="C25.S10.SS1.p1.m5">\zeta\left(-2n\right)=0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m6">n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C25.S10.SS1.p1.s4">
+These are called thetrivial zeros.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C25.S10.SS1.p1.s5">
+Except for the trivial zeros, <Math mode="inline" xml:id="C25.S10.SS1.p1.m7">\zeta\left(s\right)\neq 0</Math> for <Math mode="inline" xml:id="C25.S10.SS1.p1.m8">\Re s\leq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C25.S10.SS1.p1.s6">
+In the region <Math mode="inline" xml:id="C25.S10.SS1.p1.m9">0&lt;\Re s&lt;1</Math> , called thecritical strip, <Math mode="inline" xml:id="C25.S10.SS1.p1.m10">\zeta\left(s\right)</Math> has infinitely many zeros, distributed symmetrically about the real axis and about the critical line <Math mode="inline" xml:id="C25.S10.SS1.p1.m11">\Re s=\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C25.S10.SS1.p1.s7">
+The Riemann hypothesis states that all nontrivial zeros lie on this line.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C25.S10.SS1.p2.s1">
+Calculations relating to the zeros on the critical line make use of the real-valued function <Math equation-number="25.10.1" mode="display" xml:id="C25.S10.E1">Z(t)=\exp\left(i\vartheta(t)\right)\zeta\left(\tfrac{1}{2}+it\right),</Math> where <Math equation-number="25.10.2" mode="display" xml:id="C25.S10.E2">\vartheta(t)=\operatorname{ph}\Gamma\left(\tfrac{1}{4}+\tfrac{1}{2}it\right)- \tfrac{1}{2}t\ln\pi</Math> is chosen to make <Math mode="inline" xml:id="C25.S10.SS1.p2.m1">Z(t)</Math> real, and <Math mode="inline" xml:id="C25.S10.SS1.p2.m2">\operatorname{ph}\Gamma\left(\frac{1}{4}+\frac{1}{2}it\right)</Math> assumes its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C25.S10.SS1.p2.s2">
+Because <Math mode="inline" xml:id="C25.S10.SS1.p2.m3">|Z(t)|=|\zeta\left(\frac{1}{2}+it\right)|</Math> , <Math mode="inline" xml:id="C25.S10.SS1.p2.m4">Z(t)</Math> vanishes at the zeros of <Math mode="inline" xml:id="C25.S10.SS1.p2.m5">\zeta\left(\frac{1}{2}+it\right)</Math> , which can be separated by observing sign changes of <Math mode="inline" xml:id="C25.S10.SS1.p2.m6">Z(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C25.S10.SS1.p2.s3">
+Because <Math mode="inline" xml:id="C25.S10.SS1.p2.m7">Z(t)</Math> changes sign infinitely often, <Math mode="inline" xml:id="C25.S10.SS1.p2.m8">\zeta\left(\frac{1}{2}+it\right)</Math> has infinitely many zeros with <Math mode="inline" xml:id="C25.S10.SS1.p2.m9">t</Math> real.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S10.SS2">
+<title>Riemann–Siegel Formula</title>          
+ 
+<para xml:id="C25.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C25.S10.SS2.p1.s1">
+Riemann developed a method for counting the total number <Math mode="inline" xml:id="C25.S10.SS2.p1.m1">N(T)</Math> of zeros of <Math mode="inline" xml:id="C25.S10.SS2.p1.m2">\zeta\left(s\right)</Math> in that portion of the critical strip with <Math mode="inline" xml:id="C25.S10.SS2.p1.m3">0&lt;t&lt;T</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C25.S10.SS2.p1.s2">
+By comparing <Math mode="inline" xml:id="C25.S10.SS2.p1.m4">N(T)</Math> with the number of sign changes of <Math mode="inline" xml:id="C25.S10.SS2.p1.m5">Z(t)</Math> we can decide whether <Math mode="inline" xml:id="C25.S10.SS2.p1.m6">\zeta\left(s\right)</Math> has any zeros off the line in this region.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C25.S10.SS2.p1.s3">
+Sign changes of <Math mode="inline" xml:id="C25.S10.SS2.p1.m7">Z(t)</Math> are determined by multiplying (25.9.3) by <Math mode="inline" xml:id="C25.S10.SS2.p1.m8">\exp\left(i\vartheta(t)\right)</Math> to obtain theRiemann–Siegel formula: <Math equation-number="25.10.3" mode="display" xml:id="C25.S10.E3">Z(t)=2\sum_{n=1}^{m}\frac{\cos\left(\vartheta(t)-t\ln n\right)}{n^{1/2}}+R(t),</Math> where <Math mode="inline" xml:id="C25.S10.SS2.p1.m9">R(t)=O\left(t^{-1/4}\right)</Math> as <Math mode="inline" xml:id="C25.S10.SS2.p1.m10">t\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C25.S10.SS2.p2.s1">
+The error term <Math mode="inline" xml:id="C25.S10.SS2.p2.m1">R(t)</Math> can be expressed as an asymptotic series that begins <Math equation-number="25.10.4" mode="display" xml:id="C25.S10.E4">R(t)=(-1)^{m-1}\left(\frac{2\pi}{t}\right)^{1/4}\frac{\cos\left(t-(2m+1)\sqrt{ 2\pi t}-\frac{1}{8}\pi\right)}{\cos\left(\sqrt{2\pi t}\right)}+O\left(t^{-3/4} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C25.S10.SS2.p3.s1">
+Riemann also developed a technique for determining further terms.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C25.S10.SS2.p3.s2">
+Calculations based on the Riemann–Siegel formula reveal that the first ten billion zeros of <Math mode="inline" xml:id="C25.S10.SS2.p3.m1">\zeta\left(s\right)</Math> in the critical strip are on the critical line (van de Lune et al. (1986)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C25.S10.SS2.p3.s3">
+More than one-third of all the zeros in the critical strip lie on the critical line (Levinson (1974)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S10.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C25.S10.SS2.p4.s1">
+For further information on the Riemann–Siegel expansion seeBerry (1995).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

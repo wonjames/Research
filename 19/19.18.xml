@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S18">
+<title>Derivatives and Differential Equations</title>         
+<subsection xml:id="C19.S18.SS1">
+<title>Derivatives</title>           
+<para xml:id="C19.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S18.SS1.p1.s1">
+ <Math equation-number="19.18.1" mode="display" xml:id="C19.S18.E1">\frac{\partial R_{F}\left(x,y,z\right)}{\partial z}=-\tfrac{1}{6}R_{D}\left(x, y,z\right),</Math> <Math equation-number="19.18.2" mode="display" xml:id="C19.S18.E2">\frac{\mathrm{d}}{\mathrm{d}x}R_{G}\left(x+a,x+b,x+c\right)=\tfrac{1}{2}R_{F} \left(x+a,x+b,x+c\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S18.SS1.p1.s2">
+Let <Math mode="inline" xml:id="C19.S18.SS1.p1.m1">\partial_{j}=\ifrac{\partial}{\partial z_{j}}</Math> , and <Math mode="inline" xml:id="C19.S18.SS1.p1.m2">\mathbf{e}_{j}</Math> be an <Math mode="inline" xml:id="C19.S18.SS1.p1.m3">n</Math> -tuple with 1 in the <Math mode="inline" xml:id="C19.S18.SS1.p1.m4">j</Math> th place and 0’s elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S18.SS1.p1.s3">
+Also define <Math equation-number="19.18.3" mode="display" xml:id="C19.S18.E3">w_{j}=b_{j}\biggm{/}\sum_{j=1}^{n}b_{j},a^{\prime}=-a+\sum_{j=1}^{n}b_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S18.SS1.p1.s4">
+The next two equations apply to (19.16.14)–(19.16.18) and (19.16.20)–(19.16.23).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C19.S18.SS1.p1.s5">
+<Math equation-number="19.18.4" mode="display" xml:id="C19.S18.E4">\partial_{j}R_{-a}\left(\mathbf{b};\mathbf{z}\right)=-aw_{j}R_{-a-1}\left( \mathbf{b}+\mathbf{e}_{j};\mathbf{z}\right),</Math> <Math equation-number="19.18.5" mode="display" xml:id="C19.S18.E5">(z_{j}\partial_{j}+b_{j})R_{-a}\left(\mathbf{b};\mathbf{z}\right)=w_{j}a^{ \prime}R_{-a}\left(\mathbf{b}+\mathbf{e}_{j};\mathbf{z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S18.SS2">
+<title>Differential Equations</title>           
+<para xml:id="C19.S18.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C19.S18.SS2.p1.s1">
+ <Math equation-number="19.18.6" mode="display" xml:id="C19.S18.E6">\left(\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{ \partial z}\right)R_{F}\left(x,y,z\right)=\frac{-1}{2\sqrt{xyz}},</Math> <Math equation-number="19.18.7" mode="display" xml:id="C19.S18.E7">\left(\frac{\partial}{\partial x}+\frac{\partial}{\partial y}+\frac{\partial}{ \partial z}\right)R_{G}\left(x,y,z\right)=\tfrac{1}{2}R_{F}\left(x,y,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C19.S18.SS2.p1.s2">
+<Math equation-number="19.18.8" mode="display" xml:id="C19.S18.E8">\sum_{j=1}^{n}\partial_{j}R_{-a}\left(\mathbf{b};\mathbf{z}\right)=-aR_{-a-1} \left(\mathbf{b};\mathbf{z}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C19.S18.SS2.p1.s3">
+<Math equation-number="19.18.9" mode="display" xml:id="C19.S18.E9">\left(x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}+z\frac{ \partial}{\partial z}\right)R_{F}\left(x,y,z\right)=-\tfrac{1}{2}R_{F}\left(x, y,z\right),</Math> <Math equation-number="19.18.10" mode="display" xml:id="C19.S18.E10">\left((x-y)\frac{{\partial}^{2}}{\partial x\partial y}+\frac{1}{2}\left(\frac{ \partial}{\partial y}-\frac{\partial}{\partial x}\right)\right)R_{F}\left(x,y, z\right)=0,</Math> and two similar equations obtained by permuting <Math mode="inline" xml:id="C19.S18.SS2.p1.m1">x,y,z</Math> in (19.18.10).
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S18.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C19.S18.SS2.p2.s1">
+More concisely, if <Math mode="inline" xml:id="C19.S18.SS2.p2.m1">v=R_{-a}\left(\mathbf{b};\mathbf{z}\right)</Math> , then each of (19.16.14)–(19.16.18) and (19.16.20)–(19.16.23) satisfies Euler’s homogeneity relation: <Math equation-number="19.18.11" mode="display" xml:id="C19.S18.E11">\sum_{j=1}^{n}z_{j}\partial_{j}v=-av,</Math> and also a system of <Math mode="inline" xml:id="C19.S18.SS2.p2.m2">n(n-1)/2</Math> Euler–Poisson differential equations (of which only <Math mode="inline" xml:id="C19.S18.SS2.p2.m3">n-1</Math> are independent): <Math equation-number="19.18.12" mode="display" xml:id="C19.S18.E12">(z_{j}\partial_{j}+b_{j})\partial_{l}v=(z_{l}\partial_{l}+b_{l})\partial_{j}v,</Math> or equivalently, <Math equation-number="19.18.13" mode="display" xml:id="C19.S18.E13">((z_{j}-z_{l})\partial_{j}\partial_{l}+b_{j}\partial_{l}-b_{l}\partial_{j})v=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C19.S18.SS2.p2.s2">
+Here <Math mode="inline" xml:id="C19.S18.SS2.p2.m4">j,l=1,2,\dots,n</Math> and <Math mode="inline" xml:id="C19.S18.SS2.p2.m5">j\neq l</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C19.S18.SS2.p2.s3">
+For group-theoretical aspects of this system see Carlson (1963, §VI).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C19.S18.SS2.p2.s4">
+If <Math mode="inline" xml:id="C19.S18.SS2.p2.m6">n=2</Math> , then elimination of <Math mode="inline" xml:id="C19.S18.SS2.p2.m7">\partial_{2}v</Math> between (19.18.11) and (19.18.12), followed by the substitution <Math mode="inline" xml:id="C19.S18.SS2.p2.m8">(b_{1},b_{2},z_{1},z_{2})=(b,c-b,1-z,1)</Math> , produces the Gauss hypergeometric equation (15.10.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S18.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S18.SS2.p3.s1">
+The next four differential equations apply to the complete case of <Math mode="inline" xml:id="C19.S18.SS2.p3.m1">R_{F}</Math> and <Math mode="inline" xml:id="C19.S18.SS2.p3.m2">R_{G}</Math> in the form <Math mode="inline" xml:id="C19.S18.SS2.p3.m3">R_{-a}\left(\tfrac{1}{2},\tfrac{1}{2};z_{1},z_{2}\right)</Math> (see (19.16.20) and (19.16.23)).
+</sentence>
+
+</para>
+     
+<para xml:id="C19.S18.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C19.S18.SS2.p4.s1">
+The function <Math mode="inline" xml:id="C19.S18.SS2.p4.m1">w=R_{-a}\left(\tfrac{1}{2},\tfrac{1}{2};x+y,x-y\right)</Math> satisfies an Euler–Poisson–Darboux equation: <Math equation-number="19.18.14" mode="display" xml:id="C19.S18.E14">\frac{{\partial}^{2}w}{{\partial x}^{2}}=\frac{{\partial}^{2}w}{{\partial y}^{ 2}}+\frac{1}{y}\frac{\partial w}{\partial y}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C19.S18.SS2.p4.s2">
+Also <Math mode="inline" xml:id="C19.S18.SS2.p4.m2">W=R_{-a}\left(\tfrac{1}{2},\tfrac{1}{2};t+r,t-r\right)</Math> , with <Math mode="inline" xml:id="C19.S18.SS2.p4.m3">r=\sqrt{x^{2}+y^{2}}</Math> , satisfies a wave equation: <Math equation-number="19.18.15" mode="display" xml:id="C19.S18.E15">\frac{{\partial}^{2}W}{{\partial t}^{2}}=\frac{{\partial}^{2}W}{{\partial x}^{ 2}}+\frac{{\partial}^{2}W}{{\partial y}^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C19.S18.SS2.p4.s3">
+Similarly, the function <Math mode="inline" xml:id="C19.S18.SS2.p4.m4">u=R_{-a}\left(\tfrac{1}{2},\tfrac{1}{2};x+iy,x-iy\right)</Math> satisfies an equation of axially symmetric potential theory: <Math equation-number="19.18.16" mode="display" xml:id="C19.S18.E16">\frac{{\partial}^{2}u}{{\partial x}^{2}}+\frac{{\partial}^{2}u}{{\partial y}^{ 2}}+\frac{1}{y}\frac{\partial u}{\partial y}=0,</Math> and <Math mode="inline" xml:id="C19.S18.SS2.p4.m5">U=R_{-a}\left(\tfrac{1}{2},\tfrac{1}{2};z+i\rho,z-i\rho\right)</Math> , with <Math mode="inline" xml:id="C19.S18.SS2.p4.m6">\rho=\sqrt{x^{2}+y^{2}}</Math> , satisfies Laplace’s equation: <Math equation-number="19.18.17" mode="display" xml:id="C19.S18.E17">\frac{{\partial}^{2}U}{{\partial x}^{2}}+\frac{{\partial}^{2}U}{{\partial y}^{ 2}}+\frac{{\partial}^{2}U}{{\partial z}^{2}}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

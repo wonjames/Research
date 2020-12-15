@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C7.S18">
+<title>Repeated Integrals of the Complementary Error Function</title>        
+   
+<subsection xml:id="C7.S18.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C7.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.S18.SS1.p1.s1">
+ <Math equation-number="7.18.1" mode="display" xml:id="C7.S18.E1">\mathop{\mathrm{i}^{-1}\mathrm{erfc}}\left(z\right)=\frac{2}{\sqrt{\pi}}e^{-z^ {2}},\mathop{\mathrm{i}^{0}\mathrm{erfc}}\left(z\right)=\operatorname{erfc}z,</Math> and for <Math mode="inline" xml:id="C7.S18.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="7.18.2" mode="display" xml:id="C7.S18.E2">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\int_{z}^{\infty}\mathop{ \mathrm{i}^{n-1}\mathrm{erfc}}\left(t\right)\mathrm{d}t=\frac{2}{\sqrt{\pi}} \int_{z}^{\infty}\frac{(t-z)^{n}}{n!}e^{-t^{2}}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS2">
+<title>Graphics</title>        
+          
+<sentence sentence-num-in-section="2" xml:id="C7.S18.F1.s1">
+Figure 7.18.1: Repeated integrals of the scaled complementary error function <Math mode="inline" xml:id="C7.S18.F1.m1">2^{n}\Gamma\left(\tfrac{1}{2}n+1\right)\mathop{\mathrm{i}^{n}\mathrm{erfc}} \left(x\right)</Math> , <Math mode="inline" xml:id="C7.S18.F1.m2">n=0,1,2,4,8,16</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS3">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C7.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C7.S18.SS3.p1.s1">
+ <Math equation-number="7.18.3" mode="display" xml:id="C7.S18.E3">\frac{\mathrm{d}}{\mathrm{d}z}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z \right)=-\mathop{\mathrm{i}^{n-1}\mathrm{erfc}}\left(z\right), if n=0,1,2,\dots,</Math> <Math equation-number="7.18.4" mode="display" xml:id="C7.S18.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(e^{z^{2}}\operatorname{erfc}z \right)=(-1)^{n}2^{n}n!e^{z^{2}}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z \right), if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C7.S18.SS3.p1.s2">
+<Math equation-number="7.18.5" mode="display" xml:id="C7.S18.E5">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}+2z\frac{\mathrm{d}W}{\mathrm{d}z}- 2nW=0, if W(z)=A\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)+B\mathop{\mathrm{i}^{ n}\mathrm{erfc}}\left(-z\right),</Math> where <Math mode="inline" xml:id="C7.S18.SS3.p1.m1">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C7.S18.SS3.p1.m2">A</Math> , <Math mode="inline" xml:id="C7.S18.SS3.p1.m3">B</Math> are arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C7.S18.SS3.p1.s3">
+<Math equation-number="7.18.6" mode="display" xml:id="C7.S18.E6">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\sum_{k=0}^{\infty}\frac{(- 1)^{k}z^{k}}{2^{n-k}k!\Gamma\left(1+\frac{1}{2}(n-k)\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C7.S18.SS3.p1.s4">
+<Math equation-number="7.18.7" mode="display" xml:id="C7.S18.E7">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=-\frac{z}{n}\mathop{\mathrm {i}^{n-1}\mathrm{erfc}}\left(z\right)+\frac{1}{2n}\mathop{\mathrm{i}^{n-2} \mathrm{erfc}}\left(z\right), if n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS4">
+<title>Relations to Other Functions</title>        
+ 
+<para xml:id="C7.S18.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C7.S18.SS4.p1.s1">
+For the notation see §§18.3, 13.2(i), and12.2.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C7.S18.Px1">
+<title>Hermite Polynomials</title>     
+<para xml:id="C7.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C7.S18.Px1.p1.s1">
+ <Math equation-number="7.18.8" mode="display" xml:id="C7.S18.E8">(-1)^{n}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)+\mathop{\mathrm{i}^ {n}\mathrm{erfc}}\left(-z\right)=\frac{i^{-n}}{2^{n-1}n!}H_{n}\left(iz\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px2">
+<title>Confluent Hypergeometric Functions</title>     
+<para xml:id="C7.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C7.S18.Px2.p1.s1">
+ <Math equation-number="7.18.9" mode="display" xml:id="C7.S18.E9">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=e^{-z^{2}}\left(\frac{1}{2^ {n}\Gamma\left(\tfrac{1}{2}n+1\right)}M\left(\tfrac{1}{2}n+\tfrac{1}{2},\tfrac {1}{2},z^{2}\right)-\frac{z}{2^{n-1}\Gamma\left(\tfrac{1}{2}n+\tfrac{1}{2} \right)}M\left(\tfrac{1}{2}n+1,\tfrac{3}{2},z^{2}\right)\right),</Math> <Math equation-number="7.18.10" mode="display" xml:id="C7.S18.E10">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{e^{-z^{2}}}{2^{n} \sqrt{\pi}}U\left(\tfrac{1}{2}n+\tfrac{1}{2},\tfrac{1}{2},z^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px3">
+<title>Parabolic Cylinder Functions</title>  
+  
+<para xml:id="C7.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C7.S18.Px3.p1.s1">
+ <Math equation-number="7.18.11" mode="display" xml:id="C7.S18.E11">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{e^{-z^{2}/2}}{\sqrt{2 ^{n-1}\pi}}U\left(n+\tfrac{1}{2},z\sqrt{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px4">
+<title>Probability Functions</title>       
+<para xml:id="C7.S18.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C7.S18.Px4.p1.s1">
+ <Math equation-number="7.18.12" mode="display" xml:id="C7.S18.E12">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{1}{\sqrt{2^{n-1}\pi}} \mathit{Hh}_{n}\left(\sqrt{2}z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C7.S18.Px4.p1.s2">
+See Jeffreys and Jeffreys (1956, §§23.081–23.09).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS5">
+<title>Continued Fraction</title>        
+  
+<para xml:id="C7.S18.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C7.S18.SS5.p1.s1">
+ <Math equation-number="7.18.13" mode="display" xml:id="C7.S18.E13">\frac{\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)}{\mathop{\mathrm{i}^{ n-1}\mathrm{erfc}}\left(z\right)}=\cfrac{1/2}{z+\cfrac{(n+1)/2}{z+\cfrac{(n+2) /2}{z+}}}\cdots, if \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S18.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C7.S18.SS5.p2.s1">
+See also Cuyt et al. (2008, p. 269).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS6">
+<title>Asymptotic Expansion</title>        
+  
+<para xml:id="C7.S18.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C7.S18.SS6.p1.s1">
+ <Math equation-number="7.18.14" mode="display" xml:id="C7.S18.E14">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)\sim\frac{2}{\sqrt{\pi}} \frac{e^{-z^{2}}}{(2z)^{n+1}}\sum_{m=0}^{\infty}\frac{(-1)^{m}(2m+n)!}{n!m!(2z )^{2m}}, if z\to\infty, |\operatorname{ph}z|\leq\tfrac{3}{4}\pi-\delta(&lt;\tfrac{3}{4}\pi)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S2">
+<title>Definitions</title>        
+ 
+<subsection xml:id="C19.S2.SS1">
+<title>General Elliptic Integrals</title>          
+<para xml:id="C19.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S2.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C19.S2.SS1.p1.m1">s^{2}(t)</Math> be a cubic or quartic polynomial in <Math mode="inline" xml:id="C19.S2.SS1.p1.m2">t</Math> with simple zeros, and let <Math mode="inline" xml:id="C19.S2.SS1.p1.m3">r(s,t)</Math> be a rational function of <Math mode="inline" xml:id="C19.S2.SS1.p1.m4">s</Math> and <Math mode="inline" xml:id="C19.S2.SS1.p1.m5">t</Math> containing at least one odd power of <Math mode="inline" xml:id="C19.S2.SS1.p1.m6">s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S2.SS1.p1.s2">
+Then <Math equation-number="19.2.1" mode="display" xml:id="C19.S2.E1">\int r(s,t)\mathrm{d}t</Math> is called an elliptic integral.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S2.SS1.p1.s3">
+Because <Math mode="inline" xml:id="C19.S2.SS1.p1.m7">s^{2}</Math> is a polynomial, we have <Math equation-number="19.2.2" mode="display" xml:id="C19.S2.E2">r(s,t)=\frac{(p_{1}+p_{2}s)(p_{3}-p_{4}s)s}{(p_{3}+p_{4}s)(p_{3}-p_{4}s)s}= \frac{\rho}{s}+\sigma,</Math> where <Math mode="inline" xml:id="C19.S2.SS1.p1.m8">p_{j}</Math> is a polynomial in <Math mode="inline" xml:id="C19.S2.SS1.p1.m9">t</Math> while <Math mode="inline" xml:id="C19.S2.SS1.p1.m10">\rho</Math> and <Math mode="inline" xml:id="C19.S2.SS1.p1.m11">\sigma</Math> are rational functions of <Math mode="inline" xml:id="C19.S2.SS1.p1.m12">t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S2.SS1.p1.s4">
+Thus the elliptic part of (19.2.1) is <Math equation-number="19.2.3" mode="display" xml:id="C19.S2.E3">\int\frac{\rho(t)}{s(t)}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S2.SS2">
+<title>Legendre’s Integrals</title>        
+ 
+ 
+<para xml:id="C19.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S2.SS2.p1.s1">
+Assume <Math mode="inline" xml:id="C19.S2.SS2.p1.m1">1-{\sin^{2}}\phi\in\mathbb{C}\setminus(-\infty,0]</Math> and <Math mode="inline" xml:id="C19.S2.SS2.p1.m2">1-k^{2}{\sin^{2}}\phi\in\mathbb{C}\setminus(-\infty,0]</Math> , except that one of them may be 0, and <Math mode="inline" xml:id="C19.S2.SS2.p1.m3">1-\alpha^{2}{\sin^{2}}\phi\in\mathbb{C}\setminus\{0\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C19.S2.SS2.p1.s2">
+Then <Math equation-number="19.2.4" mode="display" xml:id="C19.S2.E4">F\left(\phi,k\right)=\int_{0}^{\phi}\frac{\mathrm{d}\theta}{\sqrt{1-k^{2}{\sin ^{2}}\theta}}=\int_{0}^{\sin\phi}\frac{\mathrm{d}t}{\sqrt{1-t^{2}}\sqrt{1-k^{2 }t^{2}}},</Math> , <Math equation-number="19.2.5" mode="display" xml:id="C19.S2.E5">E\left(\phi,k\right)=\int_{0}^{\phi}\sqrt{1-k^{2}{\sin^{2}}\theta}\mathrm{d} \theta\\ =\int_{0}^{\sin\phi}\frac{\sqrt{1-k^{2}t^{2}}}{\sqrt{1-t^{2}}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C19.S2.SS2.p1.s3">
+<Math equation-number="19.2.6" mode="display" xml:id="C19.S2.E6">D\left(\phi,k\right)=\int_{0}^{\phi}\frac{{\sin^{2}}\theta\mathrm{d}\theta}{ \sqrt{1-k^{2}{\sin^{2}}\theta}}=\int_{0}^{\sin\phi}\frac{t^{2}\mathrm{d}t}{ \sqrt{1-t^{2}}\sqrt{1-k^{2}t^{2}}}=(F\left(\phi,k\right)-E\left(\phi,k\right)) /k^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C19.S2.SS2.p1.s4">
+<Math equation-number="19.2.7" mode="display" xml:id="C19.S2.E7">\Pi\left(\phi,\alpha^{2},k\right)=\int_{0}^{\phi}\frac{\mathrm{d}\theta}{\sqrt {1-k^{2}{\sin^{2}}\theta}(1-\alpha^{2}{\sin^{2}}\theta)}=\int_{0}^{\sin\phi} \frac{\mathrm{d}t}{\sqrt{1-t^{2}}\sqrt{1-k^{2}t^{2}}(1-\alpha^{2}t^{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C19.S2.SS2.p1.s5">
+The paths of integration are the line segments connecting the limits of integration.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C19.S2.SS2.p1.s6">
+The integral for <Math mode="inline" xml:id="C19.S2.SS2.p1.m4">E\left(\phi,k\right)</Math> is well defined if <Math mode="inline" xml:id="C19.S2.SS2.p1.m5">k^{2}={\sin^{2}}\phi=1</Math> , and the Cauchy principal value (§1.4(v)) of <Math mode="inline" xml:id="C19.S2.SS2.p1.m6">\Pi\left(\phi,\alpha^{2},k\right)</Math> is taken if <Math mode="inline" xml:id="C19.S2.SS2.p1.m7">1-\alpha^{2}{\sin^{2}}\phi</Math> vanishes at an interior point of the integration path.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C19.S2.SS2.p1.s7">
+Also, if <Math mode="inline" xml:id="C19.S2.SS2.p1.m8">k^{2}</Math> and <Math mode="inline" xml:id="C19.S2.SS2.p1.m9">\alpha^{2}</Math> are real, then <Math mode="inline" xml:id="C19.S2.SS2.p1.m10">\Pi\left(\phi,\alpha^{2},k\right)</Math> is called a circular orhyperbolic case according as <Math mode="inline" xml:id="C19.S2.SS2.p1.m11">\alpha^{2}(\alpha^{2}-k^{2})(\alpha^{2}-1)</Math> is negative or positive.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" xml:id="C19.S2.SS2.p1.s8">
+The circular and hyperbolic cases alternate in the four intervals of the real line separated by the points <Math mode="inline" xml:id="C19.S2.SS2.p1.m12">\alpha^{2}=0,k^{2},1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S2.SS2.p2.s1">
+The cases with <Math mode="inline" xml:id="C19.S2.SS2.p2.m1">\phi=\pi/2</Math> are the complete integrals: <Math equation-number="19.2.8" mode="display" xml:id="C19.S2.E8">K\left(k\right)=F\left(\pi/2,k\right),E\left(k\right)=E\left(\pi/2,k\right),D\left(k\right)=D\left(\pi/2,k\right)=(K\left(k\right)-E\left(k\right))/k^{2},\Pi\left(\alpha^{2},k\right)=\Pi\left(\pi/2,\alpha^{2},k\right),</Math> <Math equation-number="19.2.9" mode="display" xml:id="C19.S2.E9">{K^{\prime}}\left(k\right)=K\left(k^{\prime}\right),{E^{\prime}}\left(k\right)=E\left(k^{\prime}\right),k^{\prime}=\sqrt{1-k^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C19.S2.SS2.p3.s1">
+If <Math mode="inline" xml:id="C19.S2.SS2.p3.m1">m</Math> is an integer, then <Math equation-number="19.2.10" mode="display" xml:id="C19.S2.E10">F\left(m\pi\pm\phi,k\right)=2mK\left(k\right)\pm F\left(\phi,k\right),E\left(m\pi\pm\phi,k\right)=2mE\left(k\right)\pm E\left(\phi,k\right),D\left(m\pi\pm\phi,k\right)=2mD\left(k\right)\pm D\left(\phi,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S2.SS3">
+<title>Bulirsch’s Integrals</title>           
+<para xml:id="C19.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C19.S2.SS3.p1.s1">
+Bulirsch’s integrals are linear combinations of Legendre’s integrals that arechosen to facilitate computational application of Bartky’s transformation (Bartky (1938)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C19.S2.SS3.p1.s2">
+Two are defined by <Math equation-number="19.2.11" mode="display" xml:id="C19.S2.E11">\mathrm{cel}\left(k_{c},p,a,b\right)=\int_{0}^{\pi/2}\frac{a{\cos^{2}}\theta+b {\sin^{2}}\theta}{{\cos^{2}}\theta+p{\sin^{2}}\theta}\frac{\mathrm{d}\theta}{ \sqrt{{\cos^{2}}\theta+k_{c}^{2}{\sin^{2}}\theta}},</Math> <Math equation-number="19.2.12" mode="display" xml:id="C19.S2.E12">\mathrm{el2}\left(x,k_{c},a,b\right)=\int_{0}^{\operatorname{arctan}x}\frac{a+ b{\tan^{2}}\theta}{\sqrt{(1+{\tan^{2}}\theta)(1+k_{c}^{2}{\tan^{2}}\theta)}} \mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C19.S2.SS3.p1.s3">
+Here <Math mode="inline" xml:id="C19.S2.SS3.p1.m1">a,b,p</Math> are real parameters, and <Math mode="inline" xml:id="C19.S2.SS3.p1.m2">k_{c}</Math> and <Math mode="inline" xml:id="C19.S2.SS3.p1.m3">x</Math> are real orcomplex variables, with <Math mode="inline" xml:id="C19.S2.SS3.p1.m4">p\neq 0</Math> , <Math mode="inline" xml:id="C19.S2.SS3.p1.m5">k_{c}\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C19.S2.SS3.p1.s4">
+If <Math mode="inline" xml:id="C19.S2.SS3.p1.m6">-\infty&lt;p&lt;0</Math> , then the integral in (19.2.11) is a Cauchy principal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C19.S2.SS3.p2.s1">
+With <Math equation-number="19.2.13" mode="display" xml:id="C19.S2.E13">k_{c}=k^{\prime},p=1-\alpha^{2},x=\tan\phi,</Math> special cases include <Math equation-number="19.2.14" mode="display" xml:id="C19.S2.E14">K\left(k\right)=\mathrm{cel}\left(k_{c},1,1,1\right),E\left(k\right)=\mathrm{cel}\left(k_{c},1,1,k_{c}^{2}\right),D\left(k\right)=\mathrm{cel}\left(k_{c},1,0,1\right),(E\left(k\right)-{k^{\prime}}^{2}K\left(k\right))/k^{2}=\mathrm{cel}\left(k_{c },1,1,0\right),\Pi\left(\alpha^{2},k\right)=\mathrm{cel}\left(k_{c},p,1,1\right),</Math> and <Math equation-number="19.2.15" mode="display" xml:id="C19.S2.E15">F\left(\phi,k\right)=\mathrm{el1}\left(x,k_{c}\right)=\mathrm{el2}\left(x,k_{c },1,1\right),E\left(\phi,k\right)=\mathrm{el2}\left(x,k_{c},1,k_{c}^{2}\right),D\left(\phi,k\right)=\mathrm{el2}\left(x,k_{c},0,1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C19.S2.SS3.p2.s2">
+The integrals are complete if <Math mode="inline" xml:id="C19.S2.SS3.p2.m1">x=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C19.S2.SS3.p2.s3">
+If <Math mode="inline" xml:id="C19.S2.SS3.p2.m2">1&lt;k\leq 1/\sin\phi</Math> , then <Math mode="inline" xml:id="C19.S2.SS3.p2.m3">k_{c}</Math> is pure imaginary.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C19.S2.SS3.p3.s1">
+Lastly, corresponding to Legendre’s incomplete integral of the third kind we have <Math equation-number="19.2.16" mode="display" xml:id="C19.S2.E16">\mathrm{el3}\left(x,k_{c},p\right)=\int_{0}^{\operatorname{arctan}x}\frac{ \mathrm{d}\theta}{({\cos^{2}}\theta+p{\sin^{2}}\theta)\sqrt{{\cos^{2}}\theta+k _{c}^{2}{\sin^{2}}\theta}}=\Pi\left(\operatorname{arctan}x,1-p,k\right), if x^{2}\neq-1/p</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S2.SS4">
+<title>A Related Function: <Math mode="inline" xml:id="C19.S2.SS4.m1">R_{C}\left(x,y\right)</Math></title>          
+<para xml:id="C19.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C19.S2.SS4.p1.s1">
+Let <Math mode="inline" xml:id="C19.S2.SS4.p1.m1">x\in\mathbb{C}\setminus(-\infty,0)</Math> and <Math mode="inline" xml:id="C19.S2.SS4.p1.m2">y\in\mathbb{C}\setminus\{0\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C19.S2.SS4.p1.s2">
+We define <Math equation-number="19.2.17" mode="display" xml:id="C19.S2.E17">R_{C}\left(x,y\right)=\frac{1}{2}\int_{0}^{\infty}\frac{\mathrm{d}t}{\sqrt{t+x }(t+y)},</Math> where the Cauchy principal value is taken if <Math mode="inline" xml:id="C19.S2.SS4.p1.m3">y&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="25" xml:id="C19.S2.SS4.p1.s3">
+Formulas involving <Math mode="inline" xml:id="C19.S2.SS4.p1.m4">\Pi\left(\phi,\alpha^{2},k\right)</Math> that are customarily different for circular cases, ordinary hyperbolic cases, and (hyperbolic) Cauchy principal values, are united in a single formula by using <Math mode="inline" xml:id="C19.S2.SS4.p1.m5">R_{C}\left(x,y\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C19.S2.SS4.p2.s1">
+In (19.2.18)–(19.2.22) the inverse trigonometric and hyperbolic functions assume their principal values (§§4.23(ii)and4.37(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C19.S2.SS4.p2.s2">
+When <Math mode="inline" xml:id="C19.S2.SS4.p2.m1">x</Math> and <Math mode="inline" xml:id="C19.S2.SS4.p2.m2">y</Math> are positive, <Math mode="inline" xml:id="C19.S2.SS4.p2.m3">R_{C}\left(x,y\right)</Math> is an inverse circular function if <Math mode="inline" xml:id="C19.S2.SS4.p2.m4">x&lt;y</Math> and an inverse hyperbolic function (or logarithm) if <Math mode="inline" xml:id="C19.S2.SS4.p2.m5">x&gt;y</Math> : <Math equation-number="19.2.18" mode="display" xml:id="C19.S2.E18">R_{C}\left(x,y\right)=\frac{1}{\sqrt{y-x}}\operatorname{arctan}\sqrt{\frac{y-x }{x}}=\frac{1}{\sqrt{y-x}}\operatorname{arccos}\sqrt{x/y}, if 0\leq x&lt;y,</Math> <Math equation-number="19.2.19" mode="display" xml:id="C19.S2.E19">R_{C}\left(x,y\right)=\frac{1}{\sqrt{x-y}}\operatorname{arctanh}\sqrt{\frac{x- y}{x}}=\frac{1}{\sqrt{x-y}}\ln\frac{\sqrt{x}+\sqrt{x-y}}{\sqrt{y}}, if 0&lt;y&lt;x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C19.S2.SS4.p2.s3">
+The Cauchy principal value is hyperbolic: <Math equation-number="19.2.20" mode="display" xml:id="C19.S2.E20">R_{C}\left(x,y\right)=\sqrt{\frac{x}{x-y}}R_{C}\left(x-y,-y\right)=\frac{1}{ \sqrt{x-y}}\operatorname{arctanh}\sqrt{\frac{x}{x-y}}=\frac{1}{\sqrt{x-y}}\ln \frac{\sqrt{x}+\sqrt{x-y}}{\sqrt{-y}}, if y&lt;0\leq x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C19.S2.SS4.p2.s4">
+For the special cases of <Math mode="inline" xml:id="C19.S2.SS4.p2.m6">R_{C}\left(x,x\right)</Math> and <Math mode="inline" xml:id="C19.S2.SS4.p2.m7">R_{C}\left(0,y\right)</Math> see (19.6.15).
+</sentence>
+
+</para>
+   
+ 
+<para xml:id="C19.S2.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C19.S2.SS4.p3.s1">
+If the line segment with endpoints <Math mode="inline" xml:id="C19.S2.SS4.p3.m1">x</Math> and <Math mode="inline" xml:id="C19.S2.SS4.p3.m2">y</Math> lies in <Math mode="inline" xml:id="C19.S2.SS4.p3.m3">\mathbb{C}\setminus(-\infty,0]</Math> , then <Math equation-number="19.2.21" mode="display" xml:id="C19.S2.E21">R_{C}\left(x,y\right)=\int_{0}^{1}(v^{2}x+(1-v^{2})y)^{-1/2}\mathrm{d}v,</Math> <Math equation-number="19.2.22" mode="display" xml:id="C19.S2.E22">R_{C}\left(x,y\right)=\frac{2}{\pi}\int_{0}^{\pi/2}R_{C}\left(y,x{\cos^{2}} \theta+y{\sin^{2}}\theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

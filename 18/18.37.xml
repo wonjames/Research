@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S37">
+<title>Classical OP’s in Two or More Variables</title>        
+  
+<subsection xml:id="C18.S37.SS1">
+<title>Disk Polynomials</title>        
+  
+<paragraph xml:id="C18.S37.Px1">
+<title>Definition in Terms of Jacobi Polynomials</title>   
+<para xml:id="C18.S37.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S37.Px1.p1.s1">
+ <Math equation-number="18.37.1" mode="display" xml:id="C18.S37.E1">R^{(\alpha)}_{m,n}\left(re^{\mathrm{i}\theta}\right)=e^{\mathrm{i}(m-n)\theta} r^{|m-n|}\frac{P^{(\alpha,|m-n|)}_{\min(m,n)}\left(2r^{2}-1\right)}{P^{(\alpha ,|m-n|)}_{\min(m,n)}\left(1\right)}, if r\geq 0, \theta\in\mathbb{R}, \alpha&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S37.Px2">
+<title>Orthogonality</title>  
+ 
+<para xml:id="C18.S37.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S37.Px2.p1.s1">
+ <Math equation-number="18.37.2" mode="display" xml:id="C18.S37.E2">\iint\limits_{x^{2}+y^{2}&lt;1}R^{(\alpha)}_{m,n}\left(x+\mathrm{i}y\right)R^{( \alpha)}_{j,\ell}\left(x-\mathrm{i}y\right)\*(1-x^{2}-y^{2})^{\alpha}\mathrm{d }x\mathrm{d}y=0, if m\neq j and/or n\neq\ell</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S37.Px3">
+<title>Equivalent Definition</title>   
+<para xml:id="C18.S37.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C18.S37.Px3.p1.s1">
+The following three conditions, taken together, determine <Math mode="inline" xml:id="C18.S37.Px3.p1.m1">R^{(\alpha)}_{m,n}\left(z\right)</Math> uniquely: <Math equation-number="18.37.3" mode="display" xml:id="C18.S37.E3">R^{(\alpha)}_{m,n}\left(z\right)=\sum_{j=0}^{\min(m,n)}c_{j}z^{m-j}{\overline{ z}^{n-j}},</Math> where <Math mode="inline" xml:id="C18.S37.Px3.p1.m2">c_{j}</Math> are real or complex constants, with <Math mode="inline" xml:id="C18.S37.Px3.p1.m3">c_{0}\neq 0</Math> ; <Math equation-number="18.37.4" mode="display" xml:id="C18.S37.E4">\iint\limits_{x^{2}+y^{2}&lt;1}R^{(\alpha)}_{m,n}\left(x+\mathrm{i}y\right)(x-iy) ^{m-j}(x+iy)^{n-j}\*(1-x^{2}-y^{2})^{\alpha}\mathrm{d}x\mathrm{d}y=0, if j=1,2,\dots,\min(m,n);</Math> <Math equation-number="18.37.5" mode="display" xml:id="C18.S37.E5">R^{(\alpha)}_{m,n}\left(1\right)=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S37.Px4">
+<title>Explicit Representation</title>   
+<para xml:id="C18.S37.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S37.Px4.p1.s1">
+ <Math equation-number="18.37.6" mode="display" xml:id="C18.S37.E6">R^{(\alpha)}_{m,n}\left(z\right)=\sum_{j=0}^{\min(m,n)}\frac{(-1)^{j}{\left( \alpha+1\right)_{m+n-j}}{\left(-m\right)_{j}}{\left(-n\right)_{j}}}{{\left( \alpha+1\right)_{m}}{\left(\alpha+1\right)_{n}}j!}\*z^{m-j}\*{\overline{z}^{n- j}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S37.SS2">
+<title>OP’s on the Triangle</title>        
+  
+<paragraph xml:id="C18.S37.Px5">
+<title>Definition in Terms of Jacobi Polynomials</title>   
+ 
+<para xml:id="C18.S37.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C18.S37.Px5.p1.s1">
+ <Math equation-number="18.37.7" mode="display" xml:id="C18.S37.E7">P^{\alpha,\beta,\gamma}_{m,n}\left(x,y\right)=P^{(\alpha,\beta+\gamma+2n+1)}_{ m-n}\left(2x-1\right)\*x^{n}P^{(\beta,\gamma)}_{n}\left(2x^{-1}y-1\right), if m\geq n\geq 0, \alpha,\beta,\gamma&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S37.Px6">
+<title>Orthogonality</title>   
+<para xml:id="C18.S37.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S37.Px6.p1.s1">
+ <Math equation-number="18.37.8" mode="display" xml:id="C18.S37.E8">\iint\limits_{0&lt;y&lt;x&lt;1}P^{\alpha,\beta,\gamma}_{m,n}\left(x,y\right)P^{\alpha, \beta,\gamma}_{j,\ell}\left(x,y\right)\*(1-x)^{\alpha}(x-y)^{\beta}y^{\gamma} \mathrm{d}x\mathrm{d}y=0, if m\neq j and/or n\neq\ell</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S37.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S37.Px6.p2.s1">
+See Dunkl and Xu (2001, §2.3.3) for analogs of (18.37.1) and (18.37.7) on a <Math mode="inline" xml:id="C18.S37.Px6.p2.m1">d</Math> -dimensional simplex.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S37.SS3">
+<title>OP’s Associated with Root Systems</title>          
+<para xml:id="C18.S37.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S37.SS3.p1.s1">
+Orthogonal polynomials associated with root systems are certain systems of trigonometric polynomials in several variables, symmetric under a certain finite group (Weyl group), and orthogonal on a torus.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C18.S37.SS3.p1.s2">
+In one variable they are essentially ultraspherical, Jacobi, continuous <Math mode="inline" xml:id="C18.S37.SS3.p1.m1">q</Math> -ultraspherical, or Askey–Wilson polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C18.S37.SS3.p1.s3">
+In several variables they occur, for <Math mode="inline" xml:id="C18.S37.SS3.p1.m2">q=1</Math> , asJack polynomials and also as Jacobi polynomials associated with root systems; see Macdonald (1995, Chapter VI, §10),Stanley (1989), Kuznetsov and Sahi (2006, Part 1),Heckman (1991).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C18.S37.SS3.p1.s4">
+For general <Math mode="inline" xml:id="C18.S37.SS3.p1.m3">q</Math> they occur as Macdonald polynomials for root system <Math mode="inline" xml:id="C18.S37.SS3.p1.m4">A_{n}</Math> , as Macdonald polynomials for general root systems, and as Macdonald-Koornwinder polynomials; seeMacdonald (1995, Chapter VI), Macdonald (2000, 2003), Koornwinder (1992).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

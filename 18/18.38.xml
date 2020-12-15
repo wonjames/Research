@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S38">
+<title>Mathematical Applications</title>        
+ 
+<subsection xml:id="C18.S38.SS1">
+<title>Classical OP’s: Numerical Analysis</title>          
+ 
+<paragraph xml:id="C18.S38.Px1">
+<title>Approximation Theory</title>    
+<para xml:id="C18.S38.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S38.Px1.p1.s1">
+The scaled Chebyshev polynomial <Math mode="inline" xml:id="C18.S38.Px1.p1.m1">2^{1-n}T_{n}\left(x\right)</Math> , <Math mode="inline" xml:id="C18.S38.Px1.p1.m2">n\geq 1</Math> , enjoys the “minimax” property on the interval <Math mode="inline" xml:id="C18.S38.Px1.p1.m3">[-1,1]</Math> , that is, <Math mode="inline" xml:id="C18.S38.Px1.p1.m4">|2^{1-n}T_{n}\left(x\right)|</Math> has the least maximum value among all monic polynomials of degree <Math mode="inline" xml:id="C18.S38.Px1.p1.m5">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S38.Px1.p1.s2">
+In consequence, expansions of functions that areinfinitely differentiable on <Math mode="inline" xml:id="C18.S38.Px1.p1.m6">[-1,1]</Math> in series of Chebyshev polynomials usually converge extremely rapidly.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C18.S38.Px1.p1.s3">
+For these results and applications in approximation theory see §3.11(ii) andMason and Handscomb (2003, Chapter 3), Cheney (1982, p. 108), andRivlin (1969, p. 31).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px2">
+<title>Quadrature</title>     
+<para xml:id="C18.S38.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S38.Px2.p1.s1">
+Classical OP’s play a fundamental role in Gaussian quadrature.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C18.S38.Px2.p1.s2">
+If the nodes in a quadrature formula with a positive weight function are chosen to be the zeros of the <Math mode="inline" xml:id="C18.S38.Px2.p1.m1">n</Math> th degree OP with the same weight function, and the interval of orthogonality is the same as the integration range, then the weights in the quadrature formula can be chosen in such a way that the formula is exact for all polynomials of degree not exceeding <Math mode="inline" xml:id="C18.S38.Px2.p1.m2">2n-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C18.S38.Px2.p1.s3">
+See §3.5(v).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px3">
+<title>Differential Equations</title>      
+<para xml:id="C18.S38.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S38.Px3.p1.s1">
+Linear ordinary differential equations can be solved directly in series of Chebyshev polynomials (or other OP’s) by a method originated byClenshaw (1957).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C18.S38.Px3.p1.s2">
+This process has been generalized to spectralmethods for solving partial differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C18.S38.Px3.p1.s3">
+For further information see Mason and Handscomb (2003, Chapters 10 and 11),Gottlieb and Orszag (1977, pp. 7–19), and Guo (1998, pp. 120–151).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S38.SS2">
+<title>Classical OP’s: Other Applications</title>        
+ 
+<paragraph xml:id="C18.S38.Px4">
+<title>Integrable Systems</title>        
+<para xml:id="C18.S38.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S38.Px4.p1.s1">
+The Toda equation provides an important model of a completely integrable system.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C18.S38.Px4.p1.s2">
+It has elegant structures, including <Math mode="inline" xml:id="C18.S38.Px4.p1.m1">N</Math> -soliton solutions, Lax pairs, and Bäcklund transformations.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C18.S38.Px4.p1.s3">
+While the Toda equation is an important model of nonlinear systems, the special functions of mathematical physics are usually regarded as solutions to linear equations.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C18.S38.Px4.p1.s4">
+However, by using Hirota’s technique of bilinear formalism of soliton theory, Nakamura (1996) shows that a wide class of exact solutions of the Toda equation can be expressed in terms of various special functions, and in particular classical OP’s.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C18.S38.Px4.p1.s5">
+For instance, <Math equation-number="18.38.1" mode="display" xml:id="C18.S38.E1">V_{n}(x)=\ifrac{2nH_{n+1}\left(x\right)H_{n-1}\left(x\right)}{(H_{n}\left(x \right))^{2}},</Math> with <Math mode="inline" xml:id="C18.S38.Px4.p1.m2">H_{n}\left(x\right)</Math> as in §18.3, satisfies the Toda equation <Math equation-number="18.38.2" mode="display" xml:id="C18.S38.E2">(\ifrac{{\mathrm{d}}^{2}}{{\mathrm{d}x}^{2}})\ln V_{n}(x)=V_{n+1}(x)+V_{n-1}(x )-2V_{n}(x), if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px5">
+<title>Complex Function Theory</title>  
+ 
+<para xml:id="C18.S38.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C18.S38.Px5.p1.s1">
+The Askey–Gasper inequality <Math equation-number="18.38.3" mode="display" xml:id="C18.S38.E3">\sum_{m=0}^{n}P^{(\alpha,0)}_{m}\left(x\right)\geq 0, if -1\leq x\leq 1, \alpha&gt;-1, n=0,1,\dots,</Math> was used in de Branges’ proof of the long-standing Bieberbach conjecture concerning univalent functions on the unit disk in the complex plane.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C18.S38.Px5.p1.s2">
+Seede Branges (1985).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px6">
+<title>Zonal Spherical Harmonics</title>      
+<para xml:id="C18.S38.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S38.Px6.p1.s1">
+Ultraspherical polynomials are zonal spherical harmonics.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S38.Px6.p1.s2">
+As such they have many applications.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C18.S38.Px6.p1.s3">
+See, for example, Andrews et al. (1999, Chapter 9).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C18.S38.Px6.p1.s4">
+See also §14.30.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px7">
+<title>Random Matrix Theory</title>     
+ 
+<para xml:id="C18.S38.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C18.S38.Px7.p1.s1">
+Hermite polynomials (and their Freud-weight analogs (§18.32))play an important role in random matrix theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C18.S38.Px7.p1.s2">
+See Fyodorov (2005) andDeift (1998, Chapter 5).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px8">
+<title>Riemann–Hilbert Problems</title>     
+<para xml:id="C18.S38.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C18.S38.Px8.p1.s1">
+See Deift (1998, Chapter 7) and Ismail (2005, Chapter 22).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px9">
+<title>Radon Transform</title>     
+<para xml:id="C18.S38.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C18.S38.Px9.p1.s1">
+See Deans (1983, Chapters 4, 7).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S38.SS3">
+<title>Other OP’s</title>        
+ 
+<paragraph xml:id="C18.S38.Px10">
+<title>Group Representations</title>    
+<para xml:id="C18.S38.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C18.S38.Px10.p1.s1">
+For group-theoretic interpretations of OP’s seeVilenkin and Klimyk (1991, 1992, 1993).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S38.Px11">
+<title>Coding Theory</title>  
+    
+<para xml:id="C18.S38.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C18.S38.Px11.p1.s1">
+For applications of Krawtchouk polynomials <Math mode="inline" xml:id="C18.S38.Px11.p1.m1">K_{n}\left(x;p,N\right)</Math> and <Math mode="inline" xml:id="C18.S38.Px11.p1.m2">q</Math> -Racah polynomials <Math mode="inline" xml:id="C18.S38.Px11.p1.m3">R_{n}\left(x;\alpha,\beta,\gamma,\delta\,|\,q\right)</Math> to coding theory see Bannai (1990, pp. 38–43),Leonard (1982), and Chihara (1987).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

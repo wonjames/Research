@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S16">
+<title>Connection Formulas</title>        
+ 
+<subsection xml:id="C33.S16.SS1">
+<title><Math mode="inline" xml:id="C33.S16.SS1.m1">F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S16.SS1.m2">G_{\ell}</Math> in Terms of <Math mode="inline" xml:id="C33.S16.SS1.m3">f</Math> and <Math mode="inline" xml:id="C33.S16.SS1.m4">h</Math></title>          
+<para xml:id="C33.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S16.SS1.p1.s1">
+ <Math equation-number="33.16.1" mode="display" xml:id="C33.S16.E1">F_{\ell}\left(\eta,\rho\right)=\dfrac{(2\ell+1)!C_{\ell}\left(\eta\right)}{(-2 \eta)^{\ell+1}}f\left(1/\eta^{2},\ell;-\eta\rho\right),</Math> <Math equation-number="33.16.2" mode="display" xml:id="C33.S16.E2">G_{\ell}\left(\eta,\rho\right)=\dfrac{\pi(-2\eta)^{\ell}}{(2\ell+1)!C_{\ell} \left(\eta\right)}h\left(1/\eta^{2},\ell;-\eta\rho\right),</Math> where <Math mode="inline" xml:id="C33.S16.SS1.p1.m1">C_{\ell}\left(\eta\right)</Math> is given by (33.2.5) or (33.2.6).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS2">
+<title><Math mode="inline" xml:id="C33.S16.SS2.m1">f</Math> and <Math mode="inline" xml:id="C33.S16.SS2.m2">h</Math> in Terms of<Math mode="inline" xml:id="C33.S16.SS2.m3">F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S16.SS2.m4">G_{\ell}</Math> when <Math mode="inline" xml:id="C33.S16.SS2.m5">\epsilon&amp;gt;0</Math></title>          
+<para xml:id="C33.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C33.S16.SS2.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS2.p1.m1">\epsilon&gt;0</Math> denote <Math equation-number="33.16.3" mode="display" xml:id="C33.S16.E3">\tau=\epsilon^{1/2}(&gt;0),</Math> and again define <Math mode="inline" xml:id="C33.S16.SS2.p1.m2">A(\epsilon,\ell)</Math> by (33.14.11) or (33.14.12).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C33.S16.SS2.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS2.p1.m3">r&gt;0</Math> <Math equation-number="33.16.4" mode="display" xml:id="C33.S16.E4">f\left(\epsilon,\ell;r\right)=\left(\frac{2}{\pi\tau}\frac{1-e^{-2\pi/\tau}}{A (\epsilon,\ell)}\right)^{\ifrac{1}{2}}F_{\ell}\left(-1/\tau,\tau r\right),</Math> <Math equation-number="33.16.5" mode="display" xml:id="C33.S16.E5">h\left(\epsilon,\ell;r\right)=\left(\frac{2}{\pi\tau}\frac{A(\epsilon,\ell)}{1 -e^{-2\pi/\tau}}\right)^{\ifrac{1}{2}}G_{\ell}\left(-1/\tau,\tau r\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C33.S16.SS2.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS2.p1.m4">r&lt;0</Math> <Math equation-number="33.16.6" mode="display" xml:id="C33.S16.E6">f\left(\epsilon,\ell;r\right)=(-1)^{\ell+1}\left(\frac{2}{\pi\tau}\frac{e^{2 \pi/\tau}-1}{A(\epsilon,\ell)}\right)^{\ifrac{1}{2}}F_{\ell}\left(1/\tau,-\tau r \right),</Math> , <Math equation-number="33.16.7" mode="display" xml:id="C33.S16.E7">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\left(\frac{2}{\pi\tau}\frac{A( \epsilon,\ell)}{e^{2\pi/\tau}-1}\right)^{\ifrac{1}{2}}G_{\ell}\left(1/\tau,- \tau r\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS3">
+<title><Math mode="inline" xml:id="C33.S16.SS3.m1">f</Math> and <Math mode="inline" xml:id="C33.S16.SS3.m2">h</Math> in Terms of<Math mode="inline" xml:id="C33.S16.SS3.m3">W_{\kappa,\mu}\left(z\right)</Math> when <Math mode="inline" xml:id="C33.S16.SS3.m4">\epsilon&amp;lt;0</Math></title>           
+<para xml:id="C33.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S16.SS3.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS3.p1.m1">\epsilon&lt;0</Math> denote <Math equation-number="33.16.8" mode="display" xml:id="C33.S16.E8">\nu=1/(-\epsilon)^{1/2}(&gt;0),</Math> <Math equation-number="33.16.9" mode="display" xml:id="C33.S16.E9">\zeta_{\ell}(\nu,r)=W_{\nu,\ell+\frac{1}{2}}\left(2r/\nu\right),\xi_{\ell}(\nu,r)=\Re\left(e^{\mathrm{i}\pi\nu}W_{-\nu,\ell+\frac{1}{2}}\left( e^{\mathrm{i}\pi}2r/\nu\right)\right),</Math> and again define <Math mode="inline" xml:id="C33.S16.SS3.p1.m2">A(\epsilon,\ell)</Math> by (33.14.11) or (33.14.12).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C33.S16.SS3.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS3.p1.m3">r&gt;0</Math> <Math equation-number="33.16.10" mode="display" xml:id="C33.S16.E10">f\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}\left(-\frac{\cos\left( \pi\nu\right)\zeta_{\ell}(\nu,r)}{\Gamma\left(\ell+1+\nu\right)}+\frac{\sin \left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\xi_{\ell}(\nu,r)}{\pi}\right),</Math> , <Math equation-number="33.16.11" mode="display" xml:id="C33.S16.E11">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}A(\epsilon,\ell)\left( \frac{\sin\left(\pi\nu\right)\zeta_{\ell}(\nu,r)}{\Gamma\left(\ell+1+\nu\right )}+\frac{\cos\left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\xi_{\ell}(\nu,r)}{ \pi}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C33.S16.SS3.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS3.p1.m4">r&lt;0</Math> <Math equation-number="33.16.12" mode="display" xml:id="C33.S16.E12">f\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}\nu^{\ell+1}}{\pi}\left(-\frac{ \pi\xi_{\ell}(-\nu,r)}{\Gamma\left(\ell+1+\nu\right)}+\sin\left(\pi\nu\right) \cos\left(\pi\nu\right)\Gamma\left(\nu-\ell\right)\zeta_{\ell}(-\nu,r)\right),</Math> <Math equation-number="33.16.13" mode="display" xml:id="C33.S16.E13">h\left(\epsilon,\ell;r\right)=(-1)^{\ell}\nu^{\ell+1}A(\epsilon,\ell)\Gamma \left(\nu-\ell\right)\zeta_{\ell}(-\nu,r)/\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS4">
+<title><Math mode="inline" xml:id="C33.S16.SS4.m1">s</Math> and <Math mode="inline" xml:id="C33.S16.SS4.m2">c</Math> in Terms of<Math mode="inline" xml:id="C33.S16.SS4.m3">F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S16.SS4.m4">G_{\ell}</Math> when <Math mode="inline" xml:id="C33.S16.SS4.m5">\epsilon&amp;gt;0</Math></title>        
+  
+<para xml:id="C33.S16.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S16.SS4.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS4.p1.m1">\epsilon&gt;0</Math> , again denote <Math mode="inline" xml:id="C33.S16.SS4.p1.m2">\tau</Math> by (33.16.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C33.S16.SS4.p1.s2">
+Then for <Math mode="inline" xml:id="C33.S16.SS4.p1.m3">r&gt;0</Math> <Math equation-number="33.16.14" mode="display" xml:id="C33.S16.E14">s\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}F_{\ell}\left(-1/\tau,\tau r \right),c\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}G_{\ell}\left(-1/\tau,\tau r \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C33.S16.SS4.p1.s3">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS4.p1.m4">r&lt;0</Math> <Math equation-number="33.16.15" mode="display" xml:id="C33.S16.E15">s\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}F_{\ell}\left(1/\tau,-\tau r \right),c\left(\epsilon,\ell;r\right)=(\pi\tau)^{-1/2}G_{\ell}\left(1/\tau,-\tau r \right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S16.SS5">
+<title><Math mode="inline" xml:id="C33.S16.SS5.m1">s</Math> and <Math mode="inline" xml:id="C33.S16.SS5.m2">c</Math> in Terms of<Math mode="inline" xml:id="C33.S16.SS5.m3">W_{\kappa,\mu}\left(z\right)</Math> when <Math mode="inline" xml:id="C33.S16.SS5.m4">\epsilon&amp;lt;0</Math></title>           
+<para xml:id="C33.S16.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C33.S16.SS5.p1.s1">
+When <Math mode="inline" xml:id="C33.S16.SS5.p1.m1">\epsilon&lt;0</Math> denote <Math mode="inline" xml:id="C33.S16.SS5.p1.m2">\nu</Math> , <Math mode="inline" xml:id="C33.S16.SS5.p1.m3">\zeta_{\ell}(\nu,r)</Math> , and <Math mode="inline" xml:id="C33.S16.SS5.p1.m4">\xi_{\ell}(\nu,r)</Math> by (33.16.8) and (33.16.9).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C33.S16.SS5.p1.s2">
+Also denote <Math equation-number="33.16.16" mode="display" xml:id="C33.S16.E16">K(\nu,\ell)=\left(\nu^{2}\Gamma\left(\nu+\ell+1\right)\Gamma\left(\nu-\ell \right)\right)^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C33.S16.SS5.p1.s3">
+Then for <Math mode="inline" xml:id="C33.S16.SS5.p1.m5">r&gt;0</Math> <Math equation-number="33.16.17" mode="display" xml:id="C33.S16.E17">s\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{2\nu^{1/2}}\left(\frac{\sin \left(\pi\nu\right)}{\pi K(\nu,\ell)}\xi_{\ell}(\nu,r)-\cos\left(\pi\nu\right) \nu^{2}K(\nu,\ell)\zeta_{\ell}(\nu,r)\right),c\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{2\nu^{1/2}}\left(\frac{\cos \left(\pi\nu\right)}{\pi K(\nu,\ell)}\xi_{\ell}(\nu,r)+\sin\left(\pi\nu\right) \nu^{2}K(\nu,\ell)\zeta_{\ell}(\nu,r)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C33.S16.SS5.p1.s4">
+Alternatively, for <Math mode="inline" xml:id="C33.S16.SS5.p1.m6">r&lt;0</Math> <Math equation-number="33.16.18" mode="display" xml:id="C33.S16.E18">s\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell+1}}{2^{1/2}}\left(\frac{\nu^{3/ 2}}{K(\nu,\ell)}\xi_{\ell}(-\nu,r)-\frac{\sin\left(\pi\nu\right)\cos\left(\pi \nu\right)}{\pi\nu^{1/2}}K(\nu,\ell)\zeta_{\ell}(-\nu,r)\right),c\left(\epsilon,\ell;r\right)=\frac{(-1)^{\ell}}{\pi(2\nu)^{1/2}}K(\nu,\ell) \zeta_{\ell}(-\nu,r)</Math>.
+</sentence>
+
+</para>
+    
+</subsection>
+ 
+</section>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S19">
+<title>Asymptotic Expansions for Large Order</title>        
+  
+ 
+<subsection xml:id="C10.S19.SS1">
+<title>Asymptotic Forms</title>        
+    
+<para xml:id="C10.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S19.SS1.p1.s1">
+If <Math mode="inline" xml:id="C10.S19.SS1.p1.m1">\nu\to\infty</Math> through positive real values, with <Math mode="inline" xml:id="C10.S19.SS1.p1.m2">z</Math> <Math mode="inline" xml:id="C10.S19.SS1.p1.m3">(\neq 0)</Math> fixed, then <Math equation-number="10.19.1" mode="display" xml:id="C10.S19.E1">J_{\nu}\left(z\right)\sim\frac{1}{\sqrt{2\pi\nu}}\left(\frac{ez}{2\nu}\right)^ {\nu},</Math> <Math equation-number="10.19.2" mode="display" xml:id="C10.S19.E2">Y_{\nu}\left(z\right)\sim-i{H^{(1)}_{\nu}}\left(z\right)\sim i{H^{(2)}_{\nu}} \left(z\right)\sim-\sqrt{\frac{2}{\pi\nu}}\left(\frac{ez}{2\nu}\right)^{-\nu}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S19.SS2">
+<title>Debye’s Expansions</title>        
+  
+ 
+<para xml:id="C10.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C10.S19.SS2.p1.s1">
+If <Math mode="inline" xml:id="C10.S19.SS2.p1.m1">\nu\to\infty</Math> through positive real values with <Math mode="inline" xml:id="C10.S19.SS2.p1.m2">\alpha</Math> <Math mode="inline" xml:id="C10.S19.SS2.p1.m3">(&gt;0)</Math> fixed, then <Math equation-number="10.19.3" mode="display" xml:id="C10.S19.E3">J_{\nu}\left(\nu\operatorname{sech}\alpha\right)\sim\frac{e^{\nu(\tanh\alpha- \alpha)}}{(2\pi\nu\tanh\alpha)^{\frac{1}{2}}}\sum_{k=0}^{\infty}\frac{U_{k}( \coth\alpha)}{\nu^{k}},Y_{\nu}\left(\nu\operatorname{sech}\alpha\right)\sim-\frac{e^{\nu(\alpha-\tanh \alpha)}}{(\tfrac{1}{2}\pi\nu\tanh\alpha)^{\frac{1}{2}}}\*\sum_{k=0}^{\infty}( -1)^{k}\frac{U_{k}(\coth\alpha)}{\nu^{k}},</Math> <Math equation-number="10.19.4" mode="display" xml:id="C10.S19.E4">J_{\nu}'\left(\nu\operatorname{sech}\alpha\right)\sim\left(\frac{\sinh\left(2 \alpha\right)}{4\pi\nu}\right)^{\frac{1}{2}}e^{\nu(\tanh\alpha-\alpha)}\sum_{k =0}^{\infty}\frac{V_{k}(\coth\alpha)}{\nu^{k}},Y_{\nu}'\left(\nu\operatorname{sech}\alpha\right)\sim\left(\frac{\sinh\left(2 \alpha\right)}{\pi\nu}\right)^{\frac{1}{2}}e^{\nu(\alpha-\tanh\alpha)}\sum_{k= 0}^{\infty}(-1)^{k}\frac{V_{k}(\coth\alpha)}{\nu^{k}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S19.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S19.SS2.p2.s1">
+If <Math mode="inline" xml:id="C10.S19.SS2.p2.m1">\nu\to\infty</Math> through positive real values with <Math mode="inline" xml:id="C10.S19.SS2.p2.m2">\beta</Math> <Math mode="inline" xml:id="C10.S19.SS2.p2.m3">\left(\in\left(0,\tfrac{1}{2}\pi\right)\right)</Math> fixed, and <Math equation-number="10.19.5" mode="display" xml:id="C10.S19.E5">\xi=\nu(\tan\beta-\beta)-\tfrac{1}{4}\pi,</Math> then <Math equation-number="10.19.6" mode="display" xml:id="C10.S19.E6">J_{\nu}\left(\nu\sec\beta\right)\sim\left(\frac{2}{\pi\nu\tan\beta}\right)^{ \frac{1}{2}}\*\left(\cos\xi\sum_{k=0}^{\infty}\frac{U_{2k}(i\cot\beta)}{\nu^{2 k}}-i\sin\xi\sum_{k=0}^{\infty}\frac{U_{2k+1}(i\cot\beta)}{\nu^{2k+1}}\right),Y_{\nu}\left(\nu\sec\beta\right)\sim\left(\frac{2}{\pi\nu\tan\beta}\right)^{ \frac{1}{2}}\*\left(\sin\xi\sum_{k=0}^{\infty}\frac{U_{2k}(i\cot\beta)}{\nu^{2 k}}+i\cos\xi\sum_{k=0}^{\infty}\frac{U_{2k+1}(i\cot\beta)}{\nu^{2k+1}}\right),</Math> <Math equation-number="10.19.7" mode="display" xml:id="C10.S19.E7">J_{\nu}'\left(\nu\sec\beta\right)\sim\left(\frac{\sin\left(2\beta\right)}{\pi \nu}\right)^{\frac{1}{2}}\*\left(-\sin\xi\sum_{k=0}^{\infty}\frac{V_{2k}(i\cot \beta)}{\nu^{2k}}-i\cos\xi\sum_{k=0}^{\infty}\frac{V_{2k+1}(i\cot\beta)}{\nu^{ 2k+1}}\right),Y_{\nu}'\left(\nu\sec\beta\right)\sim\left(\frac{\sin\left(2\beta\right)}{\pi \nu}\right)^{\frac{1}{2}}\*\left(\cos\xi\sum_{k=0}^{\infty}\frac{V_{2k}(i\cot \beta)}{\nu^{2k}}-i\sin\xi\sum_{k=0}^{\infty}\frac{V_{2k+1}(i\cot\beta)}{\nu^{ 2k+1}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C10.S19.SS2.p2.s2">
+In these expansions <Math mode="inline" xml:id="C10.S19.SS2.p2.m4">U_{k}(p)</Math> and <Math mode="inline" xml:id="C10.S19.SS2.p2.m5">V_{k}(p)</Math> are the polynomials in <Math mode="inline" xml:id="C10.S19.SS2.p2.m6">p</Math> of degree <Math mode="inline" xml:id="C10.S19.SS2.p2.m7">3k</Math> defined in §10.41(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S19.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S19.SS2.p3.s1">
+For error bounds for the first of (10.19.6) seeOlver (1997b, p. 382).
+</sentence>
+
+</para>
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S19.SS3">
+<title>Transition Region</title>        
+   
+<para xml:id="C10.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S19.SS3.p1.s1">
+As <Math mode="inline" xml:id="C10.S19.SS3.p1.m1">\nu\to\infty</Math> , with <Math mode="inline" xml:id="C10.S19.SS3.p1.m2">a(\in\mathbb{C})</Math> fixed,
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S19.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S19.SS3.p2.s1">
+ <Math equation-number="10.19.8" mode="display" xml:id="C10.S19.E8">J_{\nu}\left(\nu+a\nu^{\frac{1}{3}}\right)\sim\frac{2^{\frac{1}{3}}}{\nu^{ \frac{1}{3}}}\mathrm{Ai}\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac {P_{k}\left(a\right)}{\nu^{2k/3}}+\frac{2^{\frac{2}{3}}}{\nu}\mathrm{Ai}'\left (-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac{Q_{k}\left(a\right)}{\nu^{2k /3}}, if |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta, //// Y_{\nu}\left(\nu+a\nu^{\frac{1}{3}}\right)\sim-\frac{2^{\frac{1}{3}}}{\nu^{ \frac{1}{3}}}\mathrm{Bi}\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac {P_{k}\left(a\right)}{\nu^{2k/3}}-\frac{2^{\frac{2}{3}}}{\nu}\mathrm{Bi}'\left (-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac{Q_{k}\left(a\right)}{\nu^{2k /3}}, if |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S19.SS3.p2.s2">
+Also, <Math equation-number="10.19.9" mode="display" xml:id="C10.S19.E9">\rselection{{H^{(1)}_{\nu}}\left(\nu+a\nu^{\frac{1}{3}}\right)\\ {H^{(2)}_{\nu}}\left(\nu+a\nu^{\frac{1}{3}}\right)}\sim\frac{2^{\frac{4}{3}}}{ \nu^{\frac{1}{3}}}e^{\mp\pi i/3}\mathrm{Ai}\left(e^{\mp\pi i/3}2^{\frac{1}{3}} a\right)\sum_{k=0}^{\infty}\frac{P_{k}\left(a\right)}{\nu^{2k/3}}+\frac{2^{ \frac{5}{3}}}{\nu}e^{\pm\pi i/3}\mathrm{Ai}'\left(e^{\mp\pi i/3}2^{\frac{1}{3} }a\right)\sum_{k=0}^{\infty}\frac{Q_{k}\left(a\right)}{\nu^{2k/3}},</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S19.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C10.S19.SS3.p3.s1">
+with sectors of validity <Math mode="inline" xml:id="C10.S19.SS3.p3.m1">-\tfrac{1}{2}\pi+\delta\leq\pm\operatorname{ph}\nu\leq\tfrac{3}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C10.S19.SS3.p3.s2">
+Here <Math mode="inline" xml:id="C10.S19.SS3.p3.m2">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C10.S19.SS3.p3.m3">\mathrm{Bi}</Math> are the Airy functions (§9.2), and <Math equation-number="10.19.10" mode="display" xml:id="C10.S19.E10">P_{0}\left(a\right)=1,P_{1}\left(a\right)=-\tfrac{1}{5}a,P_{2}\left(a\right)=-\tfrac{9}{100}a^{5}+\tfrac{3}{35}a^{2},P_{3}\left(a\right)=\tfrac{957}{7000}a^{6}-\tfrac{173}{3150}a^{3}-\tfrac{1}{22 5},P_{4}\left(a\right)=\tfrac{27}{20000}a^{10}-\tfrac{23573}{1\;47000}a^{7}+ \tfrac{5903}{1\;38600}a^{4}+\tfrac{947}{3\;46500}a,</Math> <Math equation-number="10.19.11" mode="display" xml:id="C10.S19.E11">Q_{0}\left(a\right)=\tfrac{3}{10}a^{2},Q_{1}\left(a\right)=-\tfrac{17}{70}a^{3}+\tfrac{1}{70},Q_{2}\left(a\right)=-\tfrac{9}{1000}a^{7}+\tfrac{611}{3150}a^{4}-\tfrac{37}{31 50}a,Q_{3}\left(a\right)=\tfrac{549}{28000}a^{8}-\tfrac{1\;10767}{6\;93000}a^{5}+ \tfrac{79}{12375}a^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S19.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S19.SS3.p4.s1">
+ <Math equation-number="10.19.12" mode="display" xml:id="C10.S19.E12">J_{\nu}'\left(\nu+a\nu^{\frac{1}{3}}\right)\sim-\frac{2^{\frac{2}{3}}}{\nu^{ \frac{2}{3}}}\mathrm{Ai}'\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty} \frac{R_{k}(a)}{\nu^{2k/3}}+\frac{2^{\frac{1}{3}}}{\nu^{\frac{4}{3}}}\mathrm{ Ai}\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac{S_{k}(a)}{\nu^{2k/3}}, if |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta, //// Y_{\nu}'\left(\nu+a\nu^{\frac{1}{3}}\right)\sim\frac{2^{\frac{2}{3}}}{\nu^{ \frac{2}{3}}}\mathrm{Bi}'\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty} \frac{R_{k}(a)}{\nu^{2k/3}}-\frac{2^{\frac{1}{3}}}{\nu^{\frac{4}{3}}}\mathrm{ Bi}\left(-2^{\frac{1}{3}}a\right)\sum_{k=0}^{\infty}\frac{S_{k}(a)}{\nu^{2k/3}}, if |\operatorname{ph}\nu|\leq\tfrac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C10.S19.SS3.p4.s2">
+<Math equation-number="10.19.13" mode="display" xml:id="C10.S19.E13">\rselection{{H^{(1)}_{\nu}}'\left(\nu+a\nu^{\frac{1}{3}}\right)\\ {H^{(2)}_{\nu}}'\left(\nu+a\nu^{\frac{1}{3}}\right)}\sim-\frac{2^{\frac{5}{3}} }{\nu^{\frac{2}{3}}}e^{\pm\pi i/3}\mathrm{Ai}'\left(e^{\mp\pi i/3}2^{\frac{1}{ 3}}a\right)\sum_{k=0}^{\infty}\frac{R_{k}(a)}{\nu^{2k/3}}+\frac{2^{\frac{4}{3} }}{\nu^{\frac{4}{3}}}e^{\mp\pi i/3}\mathrm{Ai}\left(e^{\mp\pi i/3}2^{\frac{1}{ 3}}a\right)\sum_{k=0}^{\infty}\frac{S_{k}(a)}{\nu^{2k/3}},</Math> with sectors of validity <Math mode="inline" xml:id="C10.S19.SS3.p4.m1">-\tfrac{1}{2}\pi+\delta\leq\operatorname{ph}\nu\leq\tfrac{3}{2}\pi-\delta</Math> and <Math mode="inline" xml:id="C10.S19.SS3.p4.m2">-\tfrac{3}{2}\pi+\delta\leq\operatorname{ph}\nu\leq\tfrac{1}{2}\pi-\delta</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C10.S19.SS3.p4.s3">
+Here <Math equation-number="10.19.14" mode="display" xml:id="C10.S19.E14">R_{0}(a)=1,R_{1}(a)=-\tfrac{4}{5}a,R_{2}(a)=-\tfrac{9}{100}a^{5}+\tfrac{57}{70}a^{2},R_{3}(a)=\tfrac{699}{3500}a^{6}-\tfrac{2617}{3150}a^{3}+\tfrac{23}{3150},R_{4}(a)=\tfrac{27}{20000}a^{10}-\tfrac{46631}{1\;47000}a^{7}+\tfrac{3889}{462 0}a^{4}-\tfrac{1159}{1\;15500}a,</Math> <Math equation-number="10.19.15" mode="display" xml:id="C10.S19.E15">S_{0}(a)=\tfrac{3}{5}a^{3}-\tfrac{1}{5},S_{1}(a)=-\tfrac{131}{140}a^{4}+\tfrac{1}{5}a,S_{2}(a)=-\tfrac{9}{500}a^{8}+\tfrac{5437}{4500}a^{5}-\tfrac{593}{3150}a^{2},S_{3}(a)=\tfrac{369}{7000}a^{9}-\tfrac{9\;99443}{6\;93000}a^{6}+\tfrac{31727}{ 1\;73250}a^{3}+\tfrac{947}{3\;46500}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S19.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S19.SS3.p5.s1">
+For proofs and also for the corresponding expansions for second derivatives seeOlver (1952).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S19.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S19.SS3.p6.s1">
+For higher coefficients in (10.19.8) in the case <Math mode="inline" xml:id="C10.S19.SS3.p6.m1">a=0</Math> (that is, in the expansions of <Math mode="inline" xml:id="C10.S19.SS3.p6.m2">J_{\nu}\left(\nu\right)</Math> and <Math mode="inline" xml:id="C10.S19.SS3.p6.m3">Y_{\nu}\left(\nu\right)</Math> ), seeWatson (1944, §8.21), Temme (1997), and Jentschura and Lötstedt (2012).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C10.S19.SS3.p6.s2">
+The last reference also includes the corresponding expansions for <Math mode="inline" xml:id="C10.S19.SS3.p6.m4">J_{\nu}'\left(\nu\right)</Math> and <Math mode="inline" xml:id="C10.S19.SS3.p6.m5">Y_{\nu}'\left(\nu\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S19.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C10.S19.SS3.p7.s1">
+See also §10.20(i).
+</sentence>
+
+</para>
+  
+ 
+</subsection>
+ 
+</section>

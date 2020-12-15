@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S4">
+<title>Contour Integrals</title>         
+<subsection xml:id="C2.S4.SS1">
+<title>Watson’s Lemma</title>           
+<para xml:id="C2.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S4.SS1.p1.s1">
+The result in §2.3(ii) carries over to a complex parameter <Math mode="inline" xml:id="C2.S4.SS1.p1.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S4.SS1.p1.s2">
+Except that <Math mode="inline" xml:id="C2.S4.SS1.p1.m2">\lambda</Math> is now permitted to be complex, with <Math mode="inline" xml:id="C2.S4.SS1.p1.m3">\Re\lambda&gt;0</Math> , we assume the same conditions on <Math mode="inline" xml:id="C2.S4.SS1.p1.m4">q(t)</Math> and also that the Laplace transform in (2.3.8)converges for all sufficiently large values of <Math mode="inline" xml:id="C2.S4.SS1.p1.m5">\Re z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C2.S4.SS1.p1.s3">
+Then <Math equation-number="2.4.1" mode="display" xml:id="C2.S4.E1">\int_{0}^{\infty}e^{-zt}q(t)\mathrm{d}t\sim\sum_{s=0}^{\infty}\Gamma\left( \frac{s+\lambda}{\mu}\right)\frac{a_{s}}{z^{(s+\lambda)/\mu}}</Math> as <Math mode="inline" xml:id="C2.S4.SS1.p1.m6">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C2.S4.SS1.p1.m7">|\operatorname{ph}z|\leq\frac{1}{2}\pi-\delta</Math> ( <Math mode="inline" xml:id="C2.S4.SS1.p1.m8">&lt;\frac{1}{2}\pi</Math> ), with <Math mode="inline" xml:id="C2.S4.SS1.p1.m9">z^{(s+\lambda)/\mu}</Math> assigned its principal value.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C2.S4.SS1.p2.s1">
+If <Math mode="inline" xml:id="C2.S4.SS1.p2.m1">q(t)</Math> is analytic in a sector <Math mode="inline" xml:id="C2.S4.SS1.p2.m2">\alpha_{1}&lt;\operatorname{ph}t&lt;\alpha_{2}</Math> containing <Math mode="inline" xml:id="C2.S4.SS1.p2.m3">\operatorname{ph}t=0</Math> , then the region of validity may be increased by rotation of the integration paths.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C2.S4.SS1.p2.s2">
+We assume that in any closed sector with vertex <Math mode="inline" xml:id="C2.S4.SS1.p2.m4">t=0</Math> and properly interior to <Math mode="inline" xml:id="C2.S4.SS1.p2.m5">\alpha_{1}&lt;\operatorname{ph}t&lt;\alpha_{2}</Math> , the expansion (2.3.7)holds as <Math mode="inline" xml:id="C2.S4.SS1.p2.m6">t\to 0</Math> , and <Math mode="inline" xml:id="C2.S4.SS1.p2.m7">q(t)=O\left(e^{\sigma|t|}\right)</Math> as <Math mode="inline" xml:id="C2.S4.SS1.p2.m8">t\to\infty</Math> , where <Math mode="inline" xml:id="C2.S4.SS1.p2.m9">\sigma</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C2.S4.SS1.p2.s3">
+Then ( 2.4.1) is valid in any closed sector with vertex <Math mode="inline" xml:id="C2.S4.SS1.p2.m10">z=0</Math> and properly interior to <Math mode="inline" xml:id="C2.S4.SS1.p2.m11">-\alpha_{2}-\frac{1}{2}\pi&lt;\operatorname{ph}z&lt;-\alpha_{1}+\frac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C2.S4.SS1.p2.s4">
+(The branches of <Math mode="inline" xml:id="C2.S4.SS1.p2.m12">t^{(s+\lambda-\mu)/\mu}</Math> and <Math mode="inline" xml:id="C2.S4.SS1.p2.m13">z^{(s+\lambda)/\mu}</Math> are extended by continuity.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S4.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C2.S4.SS1.p3.s1">
+For examples and extensions (including uniformity and loop integrals) seeOlver (1997b, Chapter 4), Wong (1989, Chapter 1), andTemme (1985).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+<subsection xml:id="C2.S4.SS2">
+<title>Inverse Laplace Transforms</title>         
+<para xml:id="C2.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S4.SS2.p1.s1">
+On the interval <Math mode="inline" xml:id="C2.S4.SS2.p1.m1">0&lt;t&lt;\infty</Math> let <Math mode="inline" xml:id="C2.S4.SS2.p1.m2">q(t)</Math> be differentiable and <Math mode="inline" xml:id="C2.S4.SS2.p1.m3">e^{-ct}q(t)</Math> be absolutely integrable, where <Math mode="inline" xml:id="C2.S4.SS2.p1.m4">c</Math> is a real constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S4.SS2.p1.s2">
+Then the Laplace transform <Math equation-number="2.4.2" mode="display" xml:id="C2.S4.E2">Q(z)=\int_{0}^{\infty}e^{-zt}q(t)\mathrm{d}t</Math> is continuous in <Math mode="inline" xml:id="C2.S4.SS2.p1.m5">\Re z\geq c</Math> and analytic in <Math mode="inline" xml:id="C2.S4.SS2.p1.m6">\Re z&gt;c</Math> , and by inversion (§1.14(iii))
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S4.SS2.p1.s3">
+<Math equation-number="2.4.3" mode="display" xml:id="C2.S4.E3">q(t)=\frac{1}{2\pi i}\lim\limits_{\eta\to\infty}\int_{\sigma-i\eta}^{\sigma+i \eta}e^{tz}Q(z)\mathrm{d}z, if 0&lt;t&lt;\infty,</Math> where <Math mode="inline" xml:id="C2.S4.SS2.p1.m7">\sigma</Math> ( <Math mode="inline" xml:id="C2.S4.SS2.p1.m8">\geq c</Math> ) is a constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C2.S4.SS2.p2.s1">
+Now assume that <Math mode="inline" xml:id="C2.S4.SS2.p2.m1">c&gt;0</Math> and we are given a function <Math mode="inline" xml:id="C2.S4.SS2.p2.m2">Q(z)</Math> that is both analytic and has the expansion <Math equation-number="2.4.4" mode="display" xml:id="C2.S4.E4">Q(z)\sim\sum_{s=0}^{\infty}\Gamma\left(\frac{s+\lambda}{\mu}\right)\frac{a_{s} }{z^{(s+\lambda)/\mu}}, if z\to\infty,</Math> in the half-plane <Math mode="inline" xml:id="C2.S4.SS2.p2.m3">\Re z\geq c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C2.S4.SS2.p2.s2">
+Here <Math mode="inline" xml:id="C2.S4.SS2.p2.m4">\Re\lambda&gt;0</Math> , <Math mode="inline" xml:id="C2.S4.SS2.p2.m5">\mu&gt;0</Math> , and <Math mode="inline" xml:id="C2.S4.SS2.p2.m6">z^{(s+\lambda)/\mu}</Math> has its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C2.S4.SS2.p2.s3">
+Assume also(2.4.4) is differentiable.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C2.S4.SS2.p2.s4">
+Then by integration by parts the integral <Math equation-number="2.4.5" mode="display" xml:id="C2.S4.E5">q(t)=\frac{1}{2\pi i}\int_{\sigma-i\infty}^{\sigma+i\infty}e^{tz}Q(z)\mathrm{d }z, if 0&lt;t&lt;\infty,</Math> is seen to converge absolutely at each limit, and be independent of <Math mode="inline" xml:id="C2.S4.SS2.p2.m7">\sigma\in[c,\infty)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="16" xml:id="C2.S4.SS2.p2.s5">
+Furthermore, as <Math mode="inline" xml:id="C2.S4.SS2.p2.m8">t\to 0+</Math> , <Math mode="inline" xml:id="C2.S4.SS2.p2.m9">q(t)</Math> has the expansion (2.3.7).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C2.S4.SS2.p3.s1">
+For large <Math mode="inline" xml:id="C2.S4.SS2.p3.m1">t</Math> , the asymptotic expansion of <Math mode="inline" xml:id="C2.S4.SS2.p3.m2">q(t)</Math> may be obtained from (2.4.3) by Haar’s method.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C2.S4.SS2.p3.s2">
+This depends on the availability of a comparison function <Math mode="inline" xml:id="C2.S4.SS2.p3.m3">F(z)</Math> for <Math mode="inline" xml:id="C2.S4.SS2.p3.m4">Q(z)</Math> that has an inverse transform <Math equation-number="2.4.6" mode="display" xml:id="C2.S4.E6">f(t)=\frac{1}{2\pi i}\lim\limits_{\eta\to\infty}\int_{\sigma-i\eta}^{\sigma+i \eta}e^{tz}F(z)\mathrm{d}z</Math> with known asymptotic behavior as <Math mode="inline" xml:id="C2.S4.SS2.p3.m5">t\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C2.S4.SS2.p3.s3">
+By subtraction from (2.4.3)
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C2.S4.SS2.p3.s4">
+<Math equation-number="2.4.7" mode="display" xml:id="C2.S4.E7">q(t)-f(t)=\frac{e^{\sigma t}}{2\pi}\lim\limits_{\eta\to\infty}\int_{-\eta}^{ \eta}e^{it\tau}(Q(\sigma+i\tau)-F(\sigma+i\tau))\mathrm{d}\tau</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C2.S4.SS2.p3.s5">
+If this integral converges uniformly at each limit for all sufficiently large <Math mode="inline" xml:id="C2.S4.SS2.p3.m6">t</Math> , then by the Riemann–Lebesgue lemma (§1.8(i))
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="22" xml:id="C2.S4.SS2.p3.s6">
+<Math equation-number="2.4.8" mode="display" xml:id="C2.S4.E8">q(t)=f(t)+o\left(e^{ct}\right), if t\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="23" xml:id="C2.S4.SS2.p3.s7">
+If, in addition, the corresponding integrals with <Math mode="inline" xml:id="C2.S4.SS2.p3.m7">Q</Math> and <Math mode="inline" xml:id="C2.S4.SS2.p3.m8">F</Math> replaced by their derivatives <Math mode="inline" xml:id="C2.S4.SS2.p3.m9">Q^{(j)}</Math> and <Math mode="inline" xml:id="C2.S4.SS2.p3.m10">F^{(j)}</Math> , <Math mode="inline" xml:id="C2.S4.SS2.p3.m11">j=1,2,\dots,m</Math> , converge uniformly, then by repeated integrations by parts <Math equation-number="2.4.9" mode="display" xml:id="C2.S4.E9">q(t)=f(t)+o\left(t^{-m}e^{ct}\right), if t\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="24" xml:id="C2.S4.SS2.p3.s8">
+The most successful results are obtained on moving the integration contour as far to the left as possible.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="25" xml:id="C2.S4.SS2.p3.s9">
+For examples seeOlver (1997b, pp. 315–320).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+<subsection xml:id="C2.S4.SS3">
+<title>Laplace’s Method</title>           
+<para xml:id="C2.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C2.S4.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C2.S4.SS3.p1.m1">\mathscr{P}</Math> denote the path for the contour integral <Math equation-number="2.4.10" mode="display" xml:id="C2.S4.E10">I(z)=\int_{a}^{b}e^{-zp(t)}q(t)\mathrm{d}t,</Math> in which <Math mode="inline" xml:id="C2.S4.SS3.p1.m2">a</Math> is finite, <Math mode="inline" xml:id="C2.S4.SS3.p1.m3">b</Math> is finite or infinite, and <Math mode="inline" xml:id="C2.S4.SS3.p1.m4">\omega</Math> is the angle of slope of <Math mode="inline" xml:id="C2.S4.SS3.p1.m5">\mathscr{P}</Math> at <Math mode="inline" xml:id="C2.S4.SS3.p1.m6">a</Math> , that is, <Math mode="inline" xml:id="C2.S4.SS3.p1.m7">\lim(\operatorname{ph}\left(t-a\right))</Math> as <Math mode="inline" xml:id="C2.S4.SS3.p1.m8">t\to a</Math> along <Math mode="inline" xml:id="C2.S4.SS3.p1.m9">\mathscr{P}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C2.S4.SS3.p1.s2">
+Assume that <Math mode="inline" xml:id="C2.S4.SS3.p1.m10">p(t)</Math> and <Math mode="inline" xml:id="C2.S4.SS3.p1.m11">q(t)</Math> are analytic on an open domain <Math mode="inline" xml:id="C2.S4.SS3.p1.m12">\mathbf{T}</Math> that contains <Math mode="inline" xml:id="C2.S4.SS3.p1.m13">\mathscr{P}</Math> , with the possible exceptions of <Math mode="inline" xml:id="C2.S4.SS3.p1.m14">t=a</Math> and <Math mode="inline" xml:id="C2.S4.SS3.p1.m15">t=b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C2.S4.SS3.p1.s3">
+Other assumptions are: In a neighborhood of <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m1">a</Math> <Math equation-number="2.4.11" mode="display" xml:id="C2.S4.E11">p(t)=p(a)+\sum_{s=0}^{\infty}p_{s}(t-a)^{s+\mu},q(t)=\sum_{s=0}^{\infty}q_{s}(t-a)^{s+\lambda-1},</Math> with <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m2">\Re\lambda&gt;0</Math> , <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m3">\mu&gt;0</Math> , <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m4">p_{0}\neq 0</Math> , and the branches of <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m5">(t-a)^{\lambda}</Math> and <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m6">(t-a)^{\mu}</Math> continuous and constructed with <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m7">\operatorname{ph}\left(t-a\right)\to\omega</Math> as <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m8">t\to a</Math> along <Math mode="inline" xml:id="C2.S4.I1.ix8.p1.m9">\mathscr{P}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C2.S4.SS3.p1.s4">
+<Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m1">z</Math> ranges along a ray or over an annular sector <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m2">\theta_{1}\leq\theta\leq\theta_{2}</Math> , <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m3">|z|\geq Z</Math> , where <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m4">\theta=\operatorname{ph}z</Math> , <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m5">\theta_{2}-\theta_{1}&lt;\pi</Math> , and <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m6">Z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="30" xml:id="C2.S4.SS3.p1.s5">
+<Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m7">I(z)</Math> converges at <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m8">b</Math> absolutely and uniformly with respect to <Math mode="inline" xml:id="C2.S4.I1.ix9.p1.m9">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="31" xml:id="C2.S4.SS3.p1.s6">
+Excluding <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m1">t=a</Math> , <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m2">\Re\left(e^{i\theta}p(t)-e^{i\theta}p(a)\right)</Math> is positive when <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m3">t\in\mathscr{P}</Math> , and is bounded away from zero uniformly with respect to <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m4">\theta\in[\theta_{1},\theta_{2}]</Math> as <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m5">t\to b</Math> along <Math mode="inline" xml:id="C2.S4.I1.ix10.p1.m6">\mathscr{P}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C2.S4.SS3.p2.s1">
+Then <Math equation-number="2.4.12" mode="display" xml:id="C2.S4.E12">I(z)\sim e^{-zp(a)}\sum_{s=0}^{\infty}\Gamma\left(\frac{s+\lambda}{\mu}\right) \frac{b_{s}}{z^{(s+\lambda)/\mu}}</Math> as <Math mode="inline" xml:id="C2.S4.SS3.p2.m1">z\to\infty</Math> in the sector <Math mode="inline" xml:id="C2.S4.SS3.p2.m2">\theta_{1}\leq\operatorname{ph}z\leq\theta_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="33" xml:id="C2.S4.SS3.p2.s2">
+The coefficients <Math mode="inline" xml:id="C2.S4.SS3.p2.m3">b_{s}</Math> are determined as in §2.3(iii), the branch of <Math mode="inline" xml:id="C2.S4.SS3.p2.m4">\operatorname{ph}p_{0}</Math> being chosen to satisfy <Math equation-number="2.4.13" mode="display" xml:id="C2.S4.E13">|\theta+\mu\omega+\operatorname{ph}p_{0}|\leq\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C2.S4.SS3.p3.s1">
+For examples see Olver (1997b, Chapter 4).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C2.S4.SS3.p3.s2">
+For error bounds seeBoyd (1993).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S4.SS4">
+<title>Saddle Points</title>        
+  
+<para xml:id="C2.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C2.S4.SS4.p1.s1">
+Now suppose that in (2.4.10) the minimum of <Math mode="inline" xml:id="C2.S4.SS4.p1.m1">\Re(zp(t))</Math> on <Math mode="inline" xml:id="C2.S4.SS4.p1.m2">\mathscr{P}</Math> occurs at an interior point <Math mode="inline" xml:id="C2.S4.SS4.p1.m3">t_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C2.S4.SS4.p1.s2">
+Temporarily assume that <Math mode="inline" xml:id="C2.S4.SS4.p1.m4">\theta</Math> <Math mode="inline" xml:id="C2.S4.SS4.p1.m5">(=\operatorname{ph}z)</Math> is fixed, so that <Math mode="inline" xml:id="C2.S4.SS4.p1.m6">t_{0}</Math> is independent of <Math mode="inline" xml:id="C2.S4.SS4.p1.m7">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C2.S4.SS4.p1.s3">
+We may subdivide <Math equation-number="2.4.14" mode="display" xml:id="C2.S4.E14">I(z)=\int_{t_{0}}^{b}e^{-zp(t)}q(t)\mathrm{d}t-\int_{t_{0}}^{a}e^{-zp(t)}q(t) \mathrm{d}t,</Math> and apply the result of §2.4(iii) to each integral on the right-hand side, the role of the series (2.4.11) being played by the Taylor series of <Math mode="inline" xml:id="C2.S4.SS4.p1.m8">p(t)</Math> and <Math mode="inline" xml:id="C2.S4.SS4.p1.m9">q(t)</Math> at <Math mode="inline" xml:id="C2.S4.SS4.p1.m10">t=t_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C2.S4.SS4.p1.s4">
+If <Math mode="inline" xml:id="C2.S4.SS4.p1.m11">p^{\prime}(t_{0})\neq 0</Math> , then <Math mode="inline" xml:id="C2.S4.SS4.p1.m12">\mu=1</Math> , <Math mode="inline" xml:id="C2.S4.SS4.p1.m13">\lambda</Math> is a positive integer, and the two resulting asymptotic expansions are identical.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C2.S4.SS4.p1.s5">
+Thus the right-hand side of (2.4.14) reduces to the error terms.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="41" xml:id="C2.S4.SS4.p1.s6">
+However, if <Math mode="inline" xml:id="C2.S4.SS4.p1.m14">p^{\prime}(t_{0})=0</Math> , then <Math mode="inline" xml:id="C2.S4.SS4.p1.m15">\mu\geq 2</Math> and different branches of some of the fractional powers of <Math mode="inline" xml:id="C2.S4.SS4.p1.m16">p_{0}</Math> are used for the coefficients <Math mode="inline" xml:id="C2.S4.SS4.p1.m17">b_{s}</Math> ; again see §2.3(iii).
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="42" xml:id="C2.S4.SS4.p1.s7">
+In consequence, theasymptotic expansion obtained from (2.4.14) is no longer null.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C2.S4.SS4.p2.s1">
+Zeros of <Math mode="inline" xml:id="C2.S4.SS4.p2.m1">p^{\prime}(t)</Math> are called saddle points (or cols) owing to the shape of the surface <Math mode="inline" xml:id="C2.S4.SS4.p2.m2">|p(t)|</Math> , <Math mode="inline" xml:id="C2.S4.SS4.p2.m3">t\in\mathbb{C}</Math> , in their vicinity.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C2.S4.SS4.p2.s2">
+Cases in which <Math mode="inline" xml:id="C2.S4.SS4.p2.m4">p^{\prime}(t_{0})\neq 0</Math> are usually handled by deforming the integration path in such a way that the minimum of <Math mode="inline" xml:id="C2.S4.SS4.p2.m5">\Re(zp(t))</Math> is attained at a saddle point or at an endpoint. Additionally, it may be advantageous to arrange that <Math mode="inline" xml:id="C2.S4.SS4.p2.m6">\Im(zp(t))</Math> is constant on the path: this will usually lead to greater regions of validity and sharper error bounds.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="45" xml:id="C2.S4.SS4.p2.s3">
+Paths on which <Math mode="inline" xml:id="C2.S4.SS4.p2.m7">\Im(zp(t))</Math> is constant are also the ones on which <Math mode="inline" xml:id="C2.S4.SS4.p2.m8">|\exp\left(-zp(t)\right)|</Math> decreases most rapidly.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="46" xml:id="C2.S4.SS4.p2.s4">
+For this reason the name method of steepest descents is often used. However, for the purpose of simply deriving the asymptotic expansions the use of steepest descent paths is not essential.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C2.S4.SS4.p3.s1">
+In the commonest case the interior minimum <Math mode="inline" xml:id="C2.S4.SS4.p3.m1">t_{0}</Math> of <Math mode="inline" xml:id="C2.S4.SS4.p3.m2">\Re(zp(t))</Math> is a simple zero of <Math mode="inline" xml:id="C2.S4.SS4.p3.m3">p^{\prime}(t)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C2.S4.SS4.p3.s2">
+The final expansion then has the form <Math equation-number="2.4.15" mode="display" xml:id="C2.S4.E15">\int_{a}^{b}e^{-zp(t)}q(t)\mathrm{d}t\sim 2e^{-zp(t_{0})}\sum_{s=0}^{\infty} \Gamma\left(s+\tfrac{1}{2}\right)\frac{b_{2s}}{z^{s+(1/2)}},</Math> in which <Math equation-number="2.4.16" mode="display" xml:id="C2.S4.E16">b_{0}=\dfrac{q}{(2p^{\prime\prime})^{1/2}},b_{2}=\left(2q^{\prime\prime}-\frac{2p^{\prime\prime\prime}q^{\prime}}{p^{ \prime\prime}}+\left(\frac{5(p^{\prime\prime\prime})^{2}}{6(p^{\prime\prime})^ {2}}-\frac{p^{\mathrm{iv}}}{2p^{\prime\prime}}\right)q\right)\frac{1}{(2p^{ \prime\prime})^{3/2}},</Math> with <Math mode="inline" xml:id="C2.S4.SS4.p3.m4">p,q</Math> and their derivatives evaluated at <Math mode="inline" xml:id="C2.S4.SS4.p3.m5">t_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C2.S4.SS4.p3.s3">
+The branch of <Math mode="inline" xml:id="C2.S4.SS4.p3.m6">\omega_{0}=\operatorname{ph}\left(p^{\prime\prime}(t_{0})\right)</Math> is the one satisfying <Math mode="inline" xml:id="C2.S4.SS4.p3.m7">|\theta+2\omega+\omega_{0}|\leq\frac{1}{2}\pi</Math> , where <Math mode="inline" xml:id="C2.S4.SS4.p3.m8">\omega</Math> is the limiting value of <Math mode="inline" xml:id="C2.S4.SS4.p3.m9">\operatorname{ph}\left(t-t_{0}\right)</Math> as <Math mode="inline" xml:id="C2.S4.SS4.p3.m10">t\to t_{0}</Math> from <Math mode="inline" xml:id="C2.S4.SS4.p3.m11">b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C2.S4.SS4.p4.s1">
+Higher coefficients <Math mode="inline" xml:id="C2.S4.SS4.p4.m1">b_{2s}</Math> in (2.4.15) can be found from(2.3.18) with <Math mode="inline" xml:id="C2.S4.SS4.p4.m2">\lambda=1</Math> , <Math mode="inline" xml:id="C2.S4.SS4.p4.m3">\mu=2</Math> , and <Math mode="inline" xml:id="C2.S4.SS4.p4.m4">s</Math> replaced by <Math mode="inline" xml:id="C2.S4.SS4.p4.m5">2s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C2.S4.SS4.p4.s2">
+For integral representations of the <Math mode="inline" xml:id="C2.S4.SS4.p4.m6">b_{2s}</Math> and their asymptotic behavior as <Math mode="inline" xml:id="C2.S4.SS4.p4.m7">s\to\infty</Math> see Boyd (1995).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C2.S4.SS4.p4.s3">
+The last reference also includes examples, as do Olver (1997b, Chapter 4),Wong (1989, Chapter 2), and Bleistein and Handelsman (1975, Chapter 7).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S4.SS5">
+<title>Coalescing Saddle Points: Chester, Friedman, and Ursell’s Method</title>             
+<para xml:id="C2.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C2.S4.SS5.p1.s1">
+Consider the integral <Math equation-number="2.4.17" mode="display" xml:id="C2.S4.E17">I(\alpha,z)=\int_{\mathscr{P}}e^{-zp(\alpha,t)}q(\alpha,t)\mathrm{d}t</Math> in which <Math mode="inline" xml:id="C2.S4.SS5.p1.m1">z</Math> is a large real or complex parameter, <Math mode="inline" xml:id="C2.S4.SS5.p1.m2">p(\alpha,t)</Math> and <Math mode="inline" xml:id="C2.S4.SS5.p1.m3">q(\alpha,t)</Math> are analytic functions of <Math mode="inline" xml:id="C2.S4.SS5.p1.m4">t</Math> and continuous in <Math mode="inline" xml:id="C2.S4.SS5.p1.m5">t</Math> and a second parameter <Math mode="inline" xml:id="C2.S4.SS5.p1.m6">\alpha</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C2.S4.SS5.p1.s2">
+Suppose that on the integration path <Math mode="inline" xml:id="C2.S4.SS5.p1.m7">\mathscr{P}</Math> there are two simple zeros of <Math mode="inline" xml:id="C2.S4.SS5.p1.m8">\ifrac{\partial p(\alpha,t)}{\partial t}</Math> that coincide for a certain value <Math mode="inline" xml:id="C2.S4.SS5.p1.m9">\widehat{\alpha}</Math> of <Math mode="inline" xml:id="C2.S4.SS5.p1.m10">\alpha</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C2.S4.SS5.p1.s3">
+The problem of obtaining an asymptotic approximation to <Math mode="inline" xml:id="C2.S4.SS5.p1.m11">I(\alpha,z)</Math> that is uniform with respect to <Math mode="inline" xml:id="C2.S4.SS5.p1.m12">\alpha</Math> in a region containing <Math mode="inline" xml:id="C2.S4.SS5.p1.m13">\widehat{\alpha}</Math> is similar to the problem of a coalescing endpoint and saddle point outlined in §2.3(v).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C2.S4.SS5.p2.s1">
+The change of integration variable is given by <Math equation-number="2.4.18" mode="display" xml:id="C2.S4.E18">p(\alpha,t)=\tfrac{1}{3}w^{3}+aw^{2}+bw+c,</Math> with <Math mode="inline" xml:id="C2.S4.SS5.p2.m1">a</Math> and <Math mode="inline" xml:id="C2.S4.SS5.p2.m2">b</Math> chosen so that the zeros of <Math mode="inline" xml:id="C2.S4.SS5.p2.m3">\ifrac{\partial p(\alpha,t)}{\partial t}</Math> correspond to the zeros <Math mode="inline" xml:id="C2.S4.SS5.p2.m4">w_{1}(\alpha),w_{2}(\alpha)</Math> , say, of the quadratic <Math mode="inline" xml:id="C2.S4.SS5.p2.m5">w^{2}+2aw+b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C2.S4.SS5.p2.s2">
+Then <Math equation-number="2.4.19" mode="display" xml:id="C2.S4.E19">I(\alpha,z)=e^{-cz}\int_{\mathscr{Q}}\exp\left(-z\left(\tfrac{1}{3}w^{3}+aw^{2 }+bw\right)\right)f(\alpha,w)\mathrm{d}w,</Math> where <Math mode="inline" xml:id="C2.S4.SS5.p2.m6">\mathscr{Q}</Math> is the <Math mode="inline" xml:id="C2.S4.SS5.p2.m7">w</Math> -map of <Math mode="inline" xml:id="C2.S4.SS5.p2.m8">\mathscr{P}</Math> , and <Math equation-number="2.4.20" mode="display" xml:id="C2.S4.E20">f(\alpha,w)=q(\alpha,t)\frac{\mathrm{d}t}{\mathrm{d}w}=q(\alpha,t)\frac{w^{2}+ 2aw+b}{\ifrac{\partial p(\alpha,t)}{\partial t}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="58" xml:id="C2.S4.SS5.p2.s3">
+The function <Math mode="inline" xml:id="C2.S4.SS5.p2.m9">f(\alpha,w)</Math> is analytic at <Math mode="inline" xml:id="C2.S4.SS5.p2.m10">w=w_{1}(\alpha)</Math> and <Math mode="inline" xml:id="C2.S4.SS5.p2.m11">w=w_{2}(\alpha)</Math> when <Math mode="inline" xml:id="C2.S4.SS5.p2.m12">\alpha\neq\widehat{\alpha}</Math> , and at the confluence of these points when <Math mode="inline" xml:id="C2.S4.SS5.p2.m13">\alpha=\widehat{\alpha}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="59" xml:id="C2.S4.SS5.p2.s4">
+For large <Math mode="inline" xml:id="C2.S4.SS5.p2.m14">|z|</Math> , <Math mode="inline" xml:id="C2.S4.SS5.p2.m15">I(\alpha,z)</Math> is approximated uniformly by the integral that corresponds to (2.4.19) when <Math mode="inline" xml:id="C2.S4.SS5.p2.m16">f(\alpha,w)</Math> is replaced by a constant.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="60" xml:id="C2.S4.SS5.p2.s5">
+By making a further change of variable <Math equation-number="2.4.21" mode="display" xml:id="C2.S4.E21">w=z^{-1/3}v-a,</Math> and assigning an appropriate value to <Math mode="inline" xml:id="C2.S4.SS5.p2.m17">c</Math> to modify the contour, the approximating integral is reducible to an Airy function or a Scorer function (§§9.2, 9.12).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S4.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C2.S4.SS5.p3.s1">
+For examples, proofs, and extensions see Olver (1997b, Chapter 9),Wong (1989, Chapter 7), Olde Daalhuis and Temme (1994),Chester et al. (1957), Bleistein and Handelsman (1975, Chapter 9), and Temme (2015).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S4.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C2.S4.SS5.p4.s1">
+For a symbolic method for evaluating the coefficients in the asymptotic expansions see Vidūnas and Temme (2002).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S4.SS6">
+<title>Other Coalescing Critical Points</title>          
+<para xml:id="C2.S4.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C2.S4.SS6.p1.s1">
+The problems sketched in §§2.3(v) and 2.4(v) involve only two of many possibilities for the coalescence of endpoints, saddle points, and singularities in integrals associated with the special functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C2.S4.SS6.p1.s2">
+For a coalescing saddle point and a pole seeWong (1989, Chapter 7) and van der Waerden (1951); in this case the uniform approximants are complementary error functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C2.S4.SS6.p1.s3">
+For a coalescing saddle point and endpoint see Olver (1997b, Chapter 9) andWong (1989, Chapter 7); if the endpoint is an algebraic singularity then the uniform approximants are parabolic cylinder functions with fixed parameter, and if the endpoint is not a singularity then the uniform approximants are complementary error functions.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C2.S4.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="66" xml:id="C2.S4.SS6.p2.s1">
+For two coalescing saddle points and an endpoint see Leubner and Ritsch (1986).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="67" xml:id="C2.S4.SS6.p2.s2">
+For two coalescing saddle points and an algebraic singularity seeTemme (1986), Jin and Wong (1998).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="68" xml:id="C2.S4.SS6.p2.s3">
+For a coalescing saddle point, a pole, and a branch point see Ciarkowski (1989).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="69" xml:id="C2.S4.SS6.p2.s4">
+For many coalescing saddle points see §36.12.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="70" xml:id="C2.S4.SS6.p2.s5">
+For double integrals with two coalescing stationary points see Qiu and Wong (2000).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="71" xml:id="C2.S4.SS6.p2.s6">
+See also Khwaja and Olde Daalhuis (2013) andTemme (2015).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

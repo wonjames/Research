@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S8">
+<title>Quadratic Transformations</title>         
+ 
+<subsection xml:id="C19.S8.SS1">
+<title>Gauss’s Arithmetic-Geometric Mean (AGM)</title>          
+<para xml:id="C19.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S8.SS1.p1.s1">
+When <Math mode="inline" xml:id="C19.S8.SS1.p1.m1">a_{0}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p1.m2">g_{0}</Math> are positive numbers, define <Math equation-number="19.8.1" mode="display" xml:id="C19.S8.E1">a_{n+1}=\frac{a_{n}+g_{n}}{2},g_{n+1}=\sqrt{a_{n}g_{n}}, , if n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S8.SS1.p1.s2">
+As <Math mode="inline" xml:id="C19.S8.SS1.p1.m3">n\to\infty</Math> , <Math mode="inline" xml:id="C19.S8.SS1.p1.m4">a_{n}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p1.m5">g_{n}</Math> converge to a common limit <Math mode="inline" xml:id="C19.S8.SS1.p1.m6">M\left(a_{0},g_{0}\right)</Math> called the AGM (Arithmetic-Geometric Mean) of <Math mode="inline" xml:id="C19.S8.SS1.p1.m8">a_{0}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p1.m9">g_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S8.SS1.p1.s3">
+By symmetry in <Math mode="inline" xml:id="C19.S8.SS1.p1.m10">a_{0}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p1.m11">g_{0}</Math> we may assume <Math mode="inline" xml:id="C19.S8.SS1.p1.m12">a_{0}\geq g_{0}</Math> and define <Math equation-number="19.8.2" mode="display" xml:id="C19.S8.E2">c_{n}=\sqrt{a_{n}^{2}-g_{n}^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S8.SS1.p1.s4">
+Then <Math equation-number="19.8.3" mode="display" xml:id="C19.S8.E3">c_{n+1}=\frac{a_{n}-g_{n}}{2}=\frac{c_{n}^{2}}{4a_{n+1}},</Math> showing that the convergence of <Math mode="inline" xml:id="C19.S8.SS1.p1.m13">c_{n}</Math> to 0 and of <Math mode="inline" xml:id="C19.S8.SS1.p1.m14">a_{n}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p1.m15">g_{n}</Math> to <Math mode="inline" xml:id="C19.S8.SS1.p1.m16">M\left(a_{0},g_{0}\right)</Math> is quadratic in each case.
+</sentence>
+
+</para>
+   
+<para xml:id="C19.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S8.SS1.p2.s1">
+The AGM has the integral representations <Math equation-number="19.8.4" mode="display" xml:id="C19.S8.E4">\frac{1}{M\left(a_{0},g_{0}\right)}=\frac{2}{\pi}\int_{0}^{\pi/2}\frac{\mathrm {d}\theta}{\sqrt{a_{0}^{2}{\cos^{2}}\theta+g_{0}^{2}{\sin^{2}}\theta}}=\frac{1 }{\pi}\int_{0}^{\infty}\frac{\mathrm{d}t}{\sqrt{t(t+a_{0}^{2})(t+g_{0}^{2})}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C19.S8.SS1.p2.s2">
+The first of these shows that <Math equation-number="19.8.5" mode="display" xml:id="C19.S8.E5">K\left(k\right)=\frac{\pi}{2\!M\left(1,k^{\prime}\right)}, if -\infty&lt;k^{2}&lt;1</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S8.SS1.p3.s1">
+The AGM appears in <Math equation-number="19.8.6" mode="display" xml:id="C19.S8.E6">E\left(k\right)=\frac{\pi}{2\!M\left(1,k^{\prime}\right)}\left(a_{0}^{2}-\sum_ {n=0}^{\infty}2^{n-1}c_{n}^{2}\right)=K\left(k\right)\left(a_{1}^{2}-\sum_{n=2 }^{\infty}2^{n-1}c_{n}^{2}\right), if -\infty&lt;k^{2}&lt;1, a_{0}=1, g_{0}=k^{\prime},</Math> and in <Math equation-number="19.8.7" mode="display" xml:id="C19.S8.E7">\Pi\left(\alpha^{2},k\right)=\frac{\pi}{4\!M\left(1,k^{\prime}\right)}\left(2+ \frac{\alpha^{2}}{1-\alpha^{2}}\sum_{n=0}^{\infty}Q_{n}\right), if -\infty&lt;k^{2}&lt;1, -\infty&lt;\alpha^{2}&lt;1,</Math> where <Math mode="inline" xml:id="C19.S8.SS1.p3.m1">a_{0}=1</Math> , <Math mode="inline" xml:id="C19.S8.SS1.p3.m2">g_{0}=k^{\prime}</Math> , <Math mode="inline" xml:id="C19.S8.SS1.p3.m3">p_{0}^{2}=1-\alpha^{2}</Math> , <Math mode="inline" xml:id="C19.S8.SS1.p3.m4">Q_{0}=1</Math> , and <Math equation-number="19.8.8" mode="display" xml:id="C19.S8.E8">p_{n+1}=\frac{p_{n}^{2}+a_{n}g_{n}}{2p_{n}},\varepsilon_{n}=\frac{p_{n}^{2}-a_{n}g_{n}}{p_{n}^{2}+a_{n}g_{n}},Q_{n+1}=\tfrac{1}{2}Q_{n}\varepsilon_{n}, , if n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C19.S8.SS1.p3.s2">
+Again, <Math mode="inline" xml:id="C19.S8.SS1.p3.m5">p_{n}</Math> and <Math mode="inline" xml:id="C19.S8.SS1.p3.m6">\varepsilon_{n}</Math> converge quadratically to <Math mode="inline" xml:id="C19.S8.SS1.p3.m7">M\left(a_{0},g_{0}\right)</Math> and 0, respectively, and <Math mode="inline" xml:id="C19.S8.SS1.p3.m8">Q_{n}</Math> converges to 0 faster than quadratically.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C19.S8.SS1.p3.s3">
+If <Math mode="inline" xml:id="C19.S8.SS1.p3.m9">\alpha^{2}&gt;1</Math> , then the Cauchy principal value is <Math equation-number="19.8.9" mode="display" xml:id="C19.S8.E9">\Pi\left(\alpha^{2},k\right)=\frac{\pi}{4\!M\left(1,k^{\prime}\right)}\frac{k^ {2}}{k^{2}-\alpha^{2}}\sum_{n=0}^{\infty}Q_{n}, if -\infty&lt;k^{2}&lt;1, 1&lt;\alpha^{2}&lt;\infty,</Math> where (19.8.8) still applies, but with <Math equation-number="19.8.10" mode="display" xml:id="C19.S8.E10">p_{0}^{2}=1-(k^{2}/\alpha^{2})</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S8.SS2">
+<title>Landen Transformations</title>        
+ 
+<paragraph xml:id="C19.S8.Px1">
+<title>Descending Landen Transformation</title>    
+<para xml:id="C19.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C19.S8.Px1.p1.s1">
+Let <Math equation-number="19.8.11" mode="display" xml:id="C19.S8.E11">k_{1}=\frac{1-k^{\prime}}{1+k^{\prime}},\phi_{1}=\phi+\operatorname{arctan}\left(k^{\prime}\tan\phi\right)= \operatorname{arcsin}\left((1+k^{\prime})\frac{\sin\phi\cos\phi}{\sqrt{1-k^{2} {\sin^{2}}\phi}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C19.S8.Px1.p1.s2">
+(Note that <Math mode="inline" xml:id="C19.S8.Px1.p1.m1">0&lt;k&lt;1</Math> and <Math mode="inline" xml:id="C19.S8.Px1.p1.m2">0&lt;\phi&lt;\pi/2</Math> imply <Math mode="inline" xml:id="C19.S8.Px1.p1.m3">k_{1}&lt;k</Math> and <Math mode="inline" xml:id="C19.S8.Px1.p1.m4">\phi&lt;\phi_{1}&lt;2\phi</Math> , and also that <Math mode="inline" xml:id="C19.S8.Px1.p1.m5">\phi=\pi/2</Math> implies <Math mode="inline" xml:id="C19.S8.Px1.p1.m6">\phi_{1}=\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C19.S8.Px1.p1.s3">
+) Then <Math equation-number="19.8.12" mode="display" xml:id="C19.S8.E12">K\left(k\right)=(1+k_{1})K\left(k_{1}\right),E\left(k\right)=(1+k^{\prime})E\left(k_{1}\right)-k^{\prime}K\left(k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C19.S8.Px1.p1.s4">
+<Math equation-number="19.8.13" mode="display" xml:id="C19.S8.E13">F\left(\phi,k\right)=\tfrac{1}{2}(1+k_{1})F\left(\phi_{1},k_{1}\right),E\left(\phi,k\right)=\tfrac{1}{2}(1+k^{\prime})E\left(\phi_{1},k_{1}\right)-k^ {\prime}F\left(\phi,k\right)+\tfrac{1}{2}(1-k^{\prime})\sin\phi_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C19.S8.Px1.p1.s5">
+<Math equation-number="19.8.14" mode="display" xml:id="C19.S8.E14">2(k^{2}-\alpha^{2})\Pi\left(\phi,\alpha^{2},k\right)=\frac{\omega^{2}-\alpha^{ 2}}{1+k^{\prime}}\Pi\left(\phi_{1},\alpha_{1}^{2},k_{1}\right)+k^{2}F\left( \phi,k\right)-{(1+k^{\prime})\alpha_{1}^{2}R_{C}\left(c_{1},c_{1}-\alpha_{1}^{ 2}\right)},</Math> where <Math equation-number="19.8.15" mode="display" xml:id="C19.S8.E15">\omega^{2}=\frac{k^{2}-\alpha^{2}}{1-\alpha^{2}},\alpha_{1}^{2}=\frac{\alpha^{2}\omega^{2}}{(1+k^{\prime})^{2}},c_{1}={\csc^{2}}\phi_{1}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C19.S8.Px2">
+<title>Ascending Landen Transformation</title>   
+ 
+<para xml:id="C19.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C19.S8.Px2.p1.s1">
+Let <Math equation-number="19.8.16" mode="display" xml:id="C19.S8.E16">k_{2}=2\sqrt{k}/(1+k),2\phi_{2}=\phi+\operatorname{arcsin}\left(k\sin\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C19.S8.Px2.p1.s2">
+(Note that <Math mode="inline" xml:id="C19.S8.Px2.p1.m1">0&lt;k&lt;1</Math> and <Math mode="inline" xml:id="C19.S8.Px2.p1.m2">0&lt;\phi\leq\pi/2</Math> imply <Math mode="inline" xml:id="C19.S8.Px2.p1.m3">k&lt;k_{2}&lt;1</Math> and <Math mode="inline" xml:id="C19.S8.Px2.p1.m4">\phi_{2}&lt;\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C19.S8.Px2.p1.s3">
+) Then <Math equation-number="19.8.17" mode="display" xml:id="C19.S8.E17">F\left(\phi,k\right)=\frac{2}{1+k}F\left(\phi_{2},k_{2}\right),E\left(\phi,k\right)=(1+k)E\left(\phi_{2},k_{2}\right)+(1-k)F\left(\phi_{2},k_ {2}\right)-k\sin\phi</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S8.SS3">
+<title>Gauss Transformation</title>        
+ 
+ 
+<para xml:id="C19.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C19.S8.SS3.p1.s1">
+We consider only the descending Gauss transformation because its (ascending) inverse moves <Math mode="inline" xml:id="C19.S8.SS3.p1.m1">F\left(\phi,k\right)</Math> closer to the singularity at <Math mode="inline" xml:id="C19.S8.SS3.p1.m2">k=\sin\phi=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C19.S8.SS3.p1.s2">
+Let <Math equation-number="19.8.18" mode="display" xml:id="C19.S8.E18">k_{1}=(1-k^{\prime})/(1+k^{\prime}),\sin\psi_{1}=\frac{(1+k^{\prime})\sin\phi}{1+\Delta},\Delta=\sqrt{1-k^{2}{\sin^{2}}\phi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C19.S8.SS3.p1.s3">
+(Note that <Math mode="inline" xml:id="C19.S8.SS3.p1.m3">0&lt;k&lt;1</Math> and <Math mode="inline" xml:id="C19.S8.SS3.p1.m4">0&lt;\phi&lt;\pi/2</Math> imply <Math mode="inline" xml:id="C19.S8.SS3.p1.m5">k_{1}&lt;k</Math> and <Math mode="inline" xml:id="C19.S8.SS3.p1.m6">\psi_{1}&lt;\phi</Math> , and also that <Math mode="inline" xml:id="C19.S8.SS3.p1.m7">\phi=\pi/2</Math> implies <Math mode="inline" xml:id="C19.S8.SS3.p1.m8">\psi_{1}=\pi/2</Math> , thus preserving completeness.)Then
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C19.S8.SS3.p1.s4">
+<Math equation-number="19.8.19" mode="display" xml:id="C19.S8.E19">F\left(\phi,k\right)=(1+k_{1})F\left(\psi_{1},k_{1}\right),E\left(\phi,k\right)=(1+k^{\prime})E\left(\psi_{1},k_{1}\right)-k^{\prime}F \left(\phi,k\right)+(1-\Delta)\cot\phi,</Math> <Math equation-number="19.8.20" mode="display" xml:id="C19.S8.E20">\rho\Pi\left(\phi,\alpha^{2},k\right)=\frac{4}{1+k^{\prime}}\Pi\left(\psi_{1}, \alpha^{2}_{1},k_{1}\right)+(\rho-1)F\left(\phi,k\right)-R_{C}\left(c-1,c- \alpha^{2}\right),</Math> where <Math equation-number="19.8.21" mode="display" xml:id="C19.S8.E21">\rho=\sqrt{1-(k^{2}/\alpha^{2})},\alpha_{1}^{2}=\alpha^{2}(1+\rho)^{2}/(1+k^{\prime})^{2},c={\csc^{2}}\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C19.S8.SS3.p1.s5">
+If <Math mode="inline" xml:id="C19.S8.SS3.p1.m9">0&lt;\alpha^{2}&lt;k^{2}</Math> , then <Math mode="inline" xml:id="C19.S8.SS3.p1.m10">\rho</Math> is pure imaginary.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

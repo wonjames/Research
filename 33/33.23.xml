@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S23">
+<title>Methods of Computation</title>           
+ 
+<subsection xml:id="C33.S23.SS1">
+<title>Methods for the Confluent Hypergeometric Functions</title>         
+<para xml:id="C33.S23.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S23.SS1.p1.s1">
+The methods used for computing the Coulomb functions described below are similar to those in §13.29.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS2">
+<title>Series Solutions</title>         
+<para xml:id="C33.S23.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C33.S23.SS2.p1.s1">
+The power-series expansions of §§33.6 and 33.19 converge for all finite values of the radii <Math mode="inline" xml:id="C33.S23.SS2.p1.m1">\rho</Math> and <Math mode="inline" xml:id="C33.S23.SS2.p1.m2">r</Math> , respectively, and may be used to compute the regular and irregular solutions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C33.S23.SS2.p1.s2">
+Cancellation errors increase with increases in <Math mode="inline" xml:id="C33.S23.SS2.p1.m3">\rho</Math> and <Math mode="inline" xml:id="C33.S23.SS2.p1.m4">|r|</Math> , and may be estimated by comparing the final sum of the series with the largest partial sum.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C33.S23.SS2.p1.s3">
+Use of extended-precision arithmetic increases the radial range that yields accurate results, but eventually other methods must be employed, for example, the asymptotic expansions of §§33.11 and 33.21.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS3">
+<title>Integration of Defining Differential Equations</title>        
+ 
+<para xml:id="C33.S23.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S23.SS3.p1.s1">
+When numerical values of the Coulomb functions are available for some radii, their values for other radii may be obtained by direct numerical integration of equations (33.2.1) or (33.14.1), provided that the integration is carried out in a stable direction (§3.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C33.S23.SS3.p1.s2">
+Thus the regular solutions can be computed from the power-series expansions (§§33.6,33.19) for small values of the radii and then integrated in the direction of increasing values of the radii.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C33.S23.SS3.p1.s3">
+On the other hand, the irregular solutions of §§33.2(iii)and33.14(iii)need to be integrated in the direction of decreasing radii beginning, for example, with values obtained from asymptotic expansions (§§33.11and 33.21).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS4">
+<title>Recurrence Relations</title>         
+<para xml:id="C33.S23.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S23.SS4.p1.s1">
+In a similar manner to §33.23(iii) the recurrence relations of §§33.4 or 33.17 can be used for a range of values of the integer <Math mode="inline" xml:id="C33.S23.SS4.p1.m1">\ell</Math> , provided that the recurrence is carried out in a stable direction (§3.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C33.S23.SS4.p1.s2">
+This implies decreasing <Math mode="inline" xml:id="C33.S23.SS4.p1.m2">\ell</Math> for the regular solutions and increasing <Math mode="inline" xml:id="C33.S23.SS4.p1.m3">\ell</Math> for the irregular solutions of §§33.2(iii) and 33.14(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS5">
+<title>Continued Fractions</title>         
+<para xml:id="C33.S23.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C33.S23.SS5.p1.s1">
+§33.8 supplies continued fractions for <Math mode="inline" xml:id="C33.S23.SS5.p1.m1">F_{\ell}'/F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S23.SS5.p1.m2">{H^{\pm}_{\ell}}'/{H^{\pm}_{\ell}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C33.S23.SS5.p1.s2">
+Combined with the Wronskians (33.2.12), the values of <Math mode="inline" xml:id="C33.S23.SS5.p1.m3">F_{\ell}</Math> , <Math mode="inline" xml:id="C33.S23.SS5.p1.m4">G_{\ell}</Math> , and their derivatives can be extracted. Inside the turning points, that is, when <Math mode="inline" xml:id="C33.S23.SS5.p1.m5">\rho&lt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math> , there can be a loss of precision by a factor of approximately <Math mode="inline" xml:id="C33.S23.SS5.p1.m6">|G_{\ell}|^{2}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS6">
+<title>Other Numerical Methods</title>         
+<para xml:id="C33.S23.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C33.S23.SS6.p1.s1">
+Curtis (1964a, §10) describes the use of series, radial integration, and other methods to generate the tables listed in §33.24.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C33.S23.SS6.p2.s1">
+Bardin et al. (1972) describes ten different methods for the calculation of <Math mode="inline" xml:id="C33.S23.SS6.p2.m1">F_{\ell}</Math> and <Math mode="inline" xml:id="C33.S23.SS6.p2.m2">G_{\ell}</Math> , valid in different regions of the ( <Math mode="inline" xml:id="C33.S23.SS6.p2.m3">\eta,\rho</Math> )-plane.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C33.S23.SS6.p3.s1">
+Thompson and Barnett (1985, 1986) andThompson (2004) use combinations of series, continued fractions, and Padé-accelerated asymptotic expansions (§3.11(iv)) for the analytic continuations of Coulomb functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C33.S23.SS6.p4.s1">
+Noble (2004) obtains double-precision accuracy for <Math mode="inline" xml:id="C33.S23.SS6.p4.m1">W_{-\eta,\mu}\left(2\rho\right)</Math> for a wide range of parameters using a combination of recurrence techniques, power-series expansions, and numerical quadrature; compare (33.2.7).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S23.SS7">
+<title>WKBJ Approximations</title>         
+ 
+<para xml:id="C33.S23.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C33.S23.SS7.p1.s1">
+WKBJ approximations (§2.7(iii)) for <Math mode="inline" xml:id="C33.S23.SS7.p1.m1">\rho&gt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math> are presented inHull and Breit (1959) andSeaton and Peach (1962: in Eq. (12) <Math mode="inline" xml:id="C33.S23.SS7.p1.m2">(\rho-c)/c</Math> should be <Math mode="inline" xml:id="C33.S23.SS7.p1.m3">(\rho-c)/\rho</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C33.S23.SS7.p1.s2">
+A set of consistent second-order WKBJ formulas is given byBurgess (1963: in Eq. (16) <Math mode="inline" xml:id="C33.S23.SS7.p1.m4">3\kappa^{2}+2</Math> should be <Math mode="inline" xml:id="C33.S23.SS7.p1.m5">3\kappa^{2}c+2</Math> ).Seaton (1984) estimates the accuracies of these approximations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S23.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C33.S23.SS7.p2.s1">
+Hull and Breit (1959) and Barnett (1981b) give WKBJ approximations for <Math mode="inline" xml:id="C33.S23.SS7.p2.m1">F_{0}</Math> and <Math mode="inline" xml:id="C33.S23.SS7.p2.m2">G_{0}</Math> in the region inside the turning point: <Math mode="inline" xml:id="C33.S23.SS7.p2.m3">\rho&lt;\rho_{\mathrm{tp}}\left(\eta,\ell\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

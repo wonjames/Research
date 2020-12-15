@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S11">
+<title>Products</title>        
+ 
+<subsection xml:id="C9.S11.SS1">
+<title>Differential Equation</title>        
+  
+ 
+<para xml:id="C9.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S11.SS1.p1.s1">
+ <Math equation-number="9.11.1" mode="display" xml:id="C9.S11.E1">\frac{{\mathrm{d}}^{3}w}{{\mathrm{d}z}^{3}}-4z\frac{\mathrm{d}w}{\mathrm{d}z}- 2w=0, if w=w_{1}w_{2},</Math> where <Math mode="inline" xml:id="C9.S11.SS1.p1.m1">w_{1}</Math> and <Math mode="inline" xml:id="C9.S11.SS1.p1.m2">w_{2}</Math> are any solutions of (9.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S11.SS1.p1.s2">
+For example, <Math mode="inline" xml:id="C9.S11.SS1.p1.m3">w={\mathrm{Ai}^{2}}\left(z\right)</Math> , <Math mode="inline" xml:id="C9.S11.SS1.p1.m4">\mathrm{Ai}\left(z\right)\mathrm{Bi}\left(z\right)</Math> , <Math mode="inline" xml:id="C9.S11.SS1.p1.m5">\mathrm{Ai}\left(z\right)\mathrm{Ai}\left(ze^{\mp 2\pi i/3}\right)</Math> , <Math mode="inline" xml:id="C9.S11.SS1.p1.m6">{M^{2}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C9.S11.SS1.p1.s3">
+Numerically satisfactory triads of solutions can be constructed where needed on <Math mode="inline" xml:id="C9.S11.SS1.p1.m7">\mathbb{R}</Math> or <Math mode="inline" xml:id="C9.S11.SS1.p1.m8">\mathbb{C}</Math> by inspection of the asymptotic expansions supplied in §9.7.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S11.SS2">
+<title>Wronskian</title>        
+  
+<para xml:id="C9.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C9.S11.SS2.p1.s1">
+ <Math equation-number="9.11.2" mode="display" xml:id="C9.S11.E2">\mathscr{W}\left\{{\mathrm{Ai}^{2}}\left(z\right),\mathrm{Ai}\left(z\right) \mathrm{Bi}\left(z\right),{\mathrm{Bi}^{2}}\left(z\right)\right\}=2\pi^{-3}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S11.SS3">
+<title>Integral Representations</title>        
+  
+  
+<para xml:id="C9.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C9.S11.SS3.p1.s1">
+ <Math equation-number="9.11.3" mode="display" xml:id="C9.S11.E3">{\mathrm{Ai}^{2}}\left(x\right)=\frac{1}{4\pi\sqrt{3}}\int_{0}^{\infty}J_{0} \left(\tfrac{1}{12}t^{3}+xt\right)t\mathrm{d}t, if x\geq 0,</Math> where <Math mode="inline" xml:id="C9.S11.SS3.p1.m1">J_{0}</Math> is the Bessel function (§10.2(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C9.S11.SS3.p1.s2">
+<Math equation-number="9.11.4" mode="display" xml:id="C9.S11.E4">{\mathrm{Ai}^{2}}\left(z\right)+{\mathrm{Bi}^{2}}\left(z\right)=\frac{1}{\pi^{ 3/2}}\int_{0}^{\infty}\exp\left(zt-\tfrac{1}{12}t^{3}\right)t^{-1/2}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C9.S11.SS3.p2.s1">
+For an integral representation of the Dirac delta involving a product of two <Math mode="inline" xml:id="C9.S11.SS3.p2.m1">\mathrm{Ai}</Math> functions see §1.17(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C9.S11.SS3.p3.s1">
+For further integral representations see Reid (1995, 1997a, 1997b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S11.SS4">
+<title>Indefinite Integrals</title>        
+   
+   
+<para xml:id="C9.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C9.S11.SS4.p1.s1">
+Let <Math mode="inline" xml:id="C9.S11.SS4.p1.m1">w_{1},w_{2}</Math> be any solutions of (9.2.1), not necessarily distinct.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C9.S11.SS4.p1.s2">
+Then <Math equation-number="9.11.5" mode="display" xml:id="C9.S11.E5">\int w_{1}w_{2}\mathrm{d}z=-w^{\prime}_{1}w^{\prime}_{2}+zw_{1}w_{2},</Math> <Math equation-number="9.11.6" mode="display" xml:id="C9.S11.E6">\int w_{1}w^{\prime}_{2}\mathrm{d}z=\tfrac{1}{2}\left(w_{1}w_{2}+z\mathscr{W} \left\{w_{1},w_{2}\right\}\right),</Math> <Math equation-number="9.11.7" mode="display" xml:id="C9.S11.E7">\int w^{\prime}_{1}w^{\prime}_{2}\mathrm{d}z=\tfrac{1}{3}(w_{1}w^{\prime}_{2}+ w^{\prime}_{1}w_{2}+zw^{\prime}_{1}w^{\prime}_{2}-z^{2}w_{1}w_{2}),</Math> <Math equation-number="9.11.8" mode="display" xml:id="C9.S11.E8">\int zw_{1}w_{2}\mathrm{d}z=\tfrac{1}{6}(w_{1}w^{\prime}_{2}+w^{\prime}_{1}w_{ 2})-\tfrac{1}{3}(zw^{\prime}_{1}w^{\prime}_{2}-z^{2}w_{1}w_{2}),</Math> <Math equation-number="9.11.9" mode="display" xml:id="C9.S11.E9">\int zw_{1}w^{\prime}_{2}\mathrm{d}z=\tfrac{1}{2}w^{\prime}_{1}w^{\prime}_{2}+ \tfrac{1}{4}z^{2}\mathscr{W}\left\{w_{1},w_{2}\right\},</Math> <Math equation-number="9.11.10" mode="display" xml:id="C9.S11.E10">\int zw^{\prime}_{1}w^{\prime}_{2}\mathrm{d}z=\tfrac{3}{10}(-w_{1}w_{2}+zw_{1} w^{\prime}_{2}+zw^{\prime}_{1}w_{2})+\tfrac{1}{5}(z^{2}w^{\prime}_{1}w^{\prime }_{2}-z^{3}w_{1}w_{2})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C9.S11.SS4.p2.s1">
+For <Math mode="inline" xml:id="C9.S11.SS4.p2.m1">\int z^{n}w_{1}w_{2}\mathrm{d}z</Math> , <Math mode="inline" xml:id="C9.S11.SS4.p2.m2">\int z^{n}w_{1}w^{\prime}_{2}\mathrm{d}z</Math> , <Math mode="inline" xml:id="C9.S11.SS4.p2.m3">\int z^{n}w^{\prime}_{1}w^{\prime}_{2}\mathrm{d}z</Math> , where <Math mode="inline" xml:id="C9.S11.SS4.p2.m4">n</Math> is any positive integer, see Albright (1977).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C9.S11.SS4.p2.s2">
+For related integrals see Gordon (1969, Appendix B).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S11.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C9.S11.SS4.p3.s1">
+For any continuously-differentiable function <Math mode="inline" xml:id="C9.S11.SS4.p3.m1">f</Math> <Math equation-number="9.11.11" mode="display" xml:id="C9.S11.E11">\int\frac{1}{w_{1}^{2}}f^{\prime}\!\left(\frac{w_{2}}{w_{1}}\right)\mathrm{d}z =\frac{1}{\mathscr{W}\left\{w_{1},w_{2}\right\}}f\!\left(\frac{w_{2}}{w_{1}} \right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C9.S11.Px1">
+<title>Examples</title>   
+<para xml:id="C9.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C9.S11.Px1.p1.s1">
+ <Math equation-number="9.11.12" mode="display" xml:id="C9.S11.E12">\int\frac{\mathrm{d}z}{{\mathrm{Ai}^{2}}\left(z\right)}=\pi\frac{\mathrm{Bi} \left(z\right)}{\mathrm{Ai}\left(z\right)},</Math> , <Math equation-number="9.11.13" mode="display" xml:id="C9.S11.E13">\int\frac{\mathrm{d}z}{\mathrm{Ai}\left(z\right)\mathrm{Bi}\left(z\right)}=\pi \ln\left(\frac{\mathrm{Bi}\left(z\right)}{\mathrm{Ai}\left(z\right)}\right),</Math> , <Math equation-number="9.11.14" mode="display" xml:id="C9.S11.E14">\int\frac{\mathrm{Ai}\left(z\right)\mathrm{Bi}\left(z\right)}{\left({\mathrm{ Ai}^{2}}\left(z\right)+{\mathrm{Bi}^{2}}\left(z\right)\right)^{2}}\mathrm{d}z= \frac{\pi}{2}\frac{{\mathrm{Bi}^{2}}\left(z\right)}{{\mathrm{Ai}^{2}}\left(z \right)+{\mathrm{Bi}^{2}}\left(z\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S11.SS5">
+<title>Definite Integrals</title>        
+   
+<para xml:id="C9.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C9.S11.SS5.p1.s1">
+ <Math equation-number="9.11.15" mode="display" xml:id="C9.S11.E15">\int_{0}^{\infty}t^{\alpha-1}{\mathrm{Ai}^{2}}\left(t\right)\mathrm{d}t=\frac{ 2\Gamma\left(\alpha\right)}{\pi^{1/2}12^{(2\alpha+5)/6}\Gamma\left(\frac{1}{3} \alpha+\frac{5}{6}\right)}, if \Re\alpha&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C9.S11.SS5.p1.s2">
+<Math equation-number="9.11.16" mode="display" xml:id="C9.S11.E16">\int_{-\infty}^{\infty}{\mathrm{Ai}^{3}}\left(t\right)\mathrm{d}t=\frac{{ \Gamma^{2}}\left(\frac{1}{3}\right)}{4\pi^{2}},</Math> , <Math equation-number="9.11.17" mode="display" xml:id="C9.S11.E17">\int_{-\infty}^{\infty}{\mathrm{Ai}^{2}}\left(t\right)\mathrm{Bi}\left(t\right )\mathrm{d}t=\frac{{\Gamma^{2}}\left(\frac{1}{3}\right)}{4\sqrt{3}\pi^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C9.S11.SS5.p1.s3">
+<Math equation-number="9.11.18" mode="display" xml:id="C9.S11.E18">\int_{0}^{\infty}{\mathrm{Ai}^{4}}\left(t\right)\mathrm{d}t=\frac{\ln 3}{24\pi ^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C9.S11.SS5.p1.s4">
+<Math equation-number="9.11.19" mode="display" xml:id="C9.S11.E19">\int_{0}^{\infty}\frac{\mathrm{d}t}{{\mathrm{Ai}^{2}}\left(t\right)+{\mathrm{ Bi}^{2}}\left(t\right)}=\int_{0}^{\infty}\frac{t\mathrm{d}t}{{\mathrm{Ai}'^{2} }\left(t\right)+{\mathrm{Bi}'^{2}}\left(t\right)}=\frac{\pi^{2}}{6}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C9.S11.SS5.p2.s1">
+For further definite integrals see Prudnikov et al. (1990, §1.8.2),Laurenzi (1993), Reid (1995, 1997a, 1997b), and Vallée and Soares (2010, Chapters 3, 4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

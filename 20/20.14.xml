@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C20.S14">
+<title>Methods of Computation</title>         
+ 
+<para xml:id="C20.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C20.S14.p1.s1">
+The Fourier series of §20.2(i) usually converge rapidly because of the factors <Math mode="inline" xml:id="C20.S14.p1.m1">q^{(n+\frac{1}{2})^{2}}</Math> or <Math mode="inline" xml:id="C20.S14.p1.m2">q^{n^{2}}</Math> , and provide a convenient way of calculating values of <Math mode="inline" xml:id="C20.S14.p1.m3">\theta_{j}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C20.S14.p1.s2">
+Similarly, their <Math mode="inline" xml:id="C20.S14.p1.m4">z</Math> -differentiated forms provide a convenient way of calculating the corresponding derivatives.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C20.S14.p1.s3">
+For instance, the first three terms of (20.2.1) give the value of <Math mode="inline" xml:id="C20.S14.p1.m5">\theta_{1}\left(2-i\middle|i\right)</Math> ( <Math mode="inline" xml:id="C20.S14.p1.m6">=\theta_{1}\left(2-i,e^{-\pi}\right)</Math> ) to 12 decimal places.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C20.S14.p2.s1">
+For values of <Math mode="inline" xml:id="C20.S14.p2.m1">\left|q\right|</Math> near <Math mode="inline" xml:id="C20.S14.p2.m2">1</Math> the transformations of §20.7(viii) can be used to replace <Math mode="inline" xml:id="C20.S14.p2.m3">\tau</Math> with a value that has a larger imaginary part and hence a smaller value of <Math mode="inline" xml:id="C20.S14.p2.m4">\left|q\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C20.S14.p2.s2">
+For instance, to find <Math mode="inline" xml:id="C20.S14.p2.m5">\theta_{3}\left(z,0.9\right</Math> ) we use (20.7.32) with <Math mode="inline" xml:id="C20.S14.p2.m6">q=0.9=e^{i\pi\tau</Math> }, <Math mode="inline" xml:id="C20.S14.p2.m7">\tau=-i\ln\left(0.9\right)/\p</Math> i. Then <Math mode="inline" xml:id="C20.S14.p2.m8">\tau^{\prime}=-1/\tau=-i\pi/\ln\left(0.9\right</Math> ) and <Math mode="inline" xml:id="C20.S14.p2.m9">q^{\prime}=e^{i\pi\tau^{\prime}}=\exp\left(\pi^{2}/\ln\left(0.9\right)\right)= (2.07\dots)\times 10^{-41}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C20.S14.p2.s3">
+Hence the first term of the series (20.2.3) for <Math mode="inline" xml:id="C20.S14.p2.m10">\theta_{3}\left(z\tau^{\prime}\middle|\tau^{\prime}\right)</Math> suffices for most purposes.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C20.S14.p2.s4">
+In theory, starting from any value of <Math mode="inline" xml:id="C20.S14.p2.m11">\tau</Math> , a finite number of applications of the transformations <Math mode="inline" xml:id="C20.S14.p2.m12">\tau\to\tau+1</Math> and <Math mode="inline" xml:id="C20.S14.p2.m13">\tau\to-1/\tau</Math> will result in a value of <Math mode="inline" xml:id="C20.S14.p2.m14">\tau</Math> with <Math mode="inline" xml:id="C20.S14.p2.m15">\Im\tau\geq\sqrt{3}/2</Math> ; see §23.18.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C20.S14.p2.s5">
+In practice a value with, say, <Math mode="inline" xml:id="C20.S14.p2.m16">\Im\tau\geq 1/2</Math> , <Math mode="inline" xml:id="C20.S14.p2.m17">\left|q\right|\leq 0.2</Math> , is found quickly and is satisfactory for numerical evaluation.
+</sentence>
+
+</para>
+
+ 
+</section>

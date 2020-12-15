@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C8.S18">
+<title>Asymptotic Expansions of <Math mode="inline" xml:id="C8.S18.m1">I_{x}\left(a,b\right)</Math></title>         
+<subsection xml:id="C8.S18.SS1">
+<title>Large Parameters, Fixed <Math mode="inline" xml:id="C8.S18.SS1.m1">x</Math></title>         
+<para xml:id="C8.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S18.SS1.p1.s1">
+If <Math mode="inline" xml:id="C8.S18.SS1.p1.m1">b</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m2">x</Math> are fixed, with <Math mode="inline" xml:id="C8.S18.SS1.p1.m3">b&gt;0</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m4">0&lt;x&lt;1</Math> , then as <Math mode="inline" xml:id="C8.S18.SS1.p1.m5">a\to\infty</Math> <Math equation-number="8.18.1" mode="display" xml:id="C8.S18.E1">I_{x}\left(a,b\right)={\Gamma\left(a+b\right)x^{a}(1-x)^{b-1}}\*\left(\sum_{k= 0}^{n-1}\frac{1}{\Gamma\left(a+k+1\right)\Gamma\left(b-k\right)}\left(\frac{x} {1-x}\right)^{k}+O\left(\frac{1}{\Gamma\left(a+n+1\right)}\right)\right),</Math> for each <Math mode="inline" xml:id="C8.S18.SS1.p1.m6">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C8.S18.SS1.p1.s2">
+If <Math mode="inline" xml:id="C8.S18.SS1.p1.m7">b=1,2,3,\dots</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m8">n\geq b</Math> , then the <Math mode="inline" xml:id="C8.S18.SS1.p1.m9">O</Math> -term can be omitted and the result is exact.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C8.S18.SS1.p2.s1">
+If <Math mode="inline" xml:id="C8.S18.SS1.p2.m1">b\to\infty</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m2">a</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m3">x</Math> are fixed, with <Math mode="inline" xml:id="C8.S18.SS1.p2.m4">a&gt;0</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m5">0&lt;x&lt;1</Math> , then (8.18.1), with <Math mode="inline" xml:id="C8.S18.SS1.p2.m6">a</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m7">b</Math> interchanged and <Math mode="inline" xml:id="C8.S18.SS1.p2.m8">x</Math> replaced by <Math mode="inline" xml:id="C8.S18.SS1.p2.m9">1-x</Math> , can be combined with (8.17.4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S18.SS2">
+<title>Large Parameters: Uniform Asymptotic Expansions</title>         
+<paragraph xml:id="C8.S18.Px1">
+<title>Large <Math mode="inline" xml:id="C8.S18.Px1.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S18.Px1.m2">b</Math></title>  
+ 
+<para xml:id="C8.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C8.S18.Px1.p1.s1">
+Let <Math equation-number="8.18.2" mode="display" xml:id="C8.S18.E2">\xi=-\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C8.S18.Px1.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px1.p1.m1">a\to\infty</Math> , with <Math mode="inline" xml:id="C8.S18.Px1.p1.m2">b</Math> ( <Math mode="inline" xml:id="C8.S18.Px1.p1.m3">&gt;0</Math> ) fixed, <Math equation-number="8.18.3" mode="display" xml:id="C8.S18.E3">I_{x}\left(a,b\right)=\frac{\Gamma\left(a+b\right)}{\Gamma\left(a\right)}\left (\sum_{k=0}^{n-1}d_{k}F_{k}+O\left(a^{-n}\right)F_{0}\right),</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px1.p1.m4">x\in(0,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C8.S18.Px1.p1.s3">
+The functions <Math mode="inline" xml:id="C8.S18.Px1.p1.m5">F_{k}</Math> are defined by <Math equation-number="8.18.4" mode="display" xml:id="C8.S18.E4">aF_{k+1}=(k+b-a\xi)F_{k}+k\xi F_{k-1},</Math> with <Math equation-number="8.18.5" mode="display" xml:id="C8.S18.E5">F_{0}=a^{-b}Q\left(b,a\xi\right),F_{1}=\frac{b-a\xi}{a}F_{0}+\frac{\xi^{b}e^{-a\xi}}{a\Gamma\left(b\right)},</Math> and <Math mode="inline" xml:id="C8.S18.Px1.p1.m6">Q\left(a,z\right)</Math> as in §8.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C8.S18.Px1.p1.s4">
+The coefficients <Math mode="inline" xml:id="C8.S18.Px1.p1.m7">d_{k}</Math> are defined by the generating function <Math equation-number="8.18.6" mode="display" xml:id="C8.S18.E6">\left(\frac{1-e^{-t}}{t}\right)^{b-1}=\sum_{k=0}^{\infty}d_{k}(t-\xi)^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C8.S18.Px1.p1.s5">
+In particular, <Math equation-number="8.18.7" mode="display" xml:id="C8.S18.E7">d_{0}=\left(\frac{1-x}{\xi}\right)^{b-1},d_{1}=\frac{x\xi+x-1}{(1-x)\xi}(b-1)d_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C8.S18.Px1.p2.s1">
+Compare also §24.16(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C8.S18.Px1.p2.s2">
+A recurrence relation for the <Math mode="inline" xml:id="C8.S18.Px1.p2.m1">d_{k}</Math> can be found in Nemes and Olde Daalhuis (2016).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px2">
+<title>Symmetric Case</title>    
+<para xml:id="C8.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C8.S18.Px2.p1.s1">
+Let <Math equation-number="8.18.8" mode="display" xml:id="C8.S18.E8">x_{0}=a/(a+b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C8.S18.Px2.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px2.p1.m1">a+b\to\infty</Math> , <Math equation-number="8.18.9" mode="display" xml:id="C8.S18.E9">I_{x}\left(a,b\right)\sim\tfrac{1}{2}\operatorname{erfc}\left(-\eta\sqrt{b/2} \right)+\frac{1}{\sqrt{2\pi(a+b)}}\*\left(\frac{x}{x_{0}}\right)^{a}\left( \frac{1-x}{1-x_{0}}\right)^{b}\sum_{k=0}^{\infty}\frac{(-1)^{k}c_{k}(\eta)}{(a +b)^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px2.p1.m2">x\in(0,1)</Math> and <Math mode="inline" xml:id="C8.S18.Px2.p1.m3">a/(a+b)</Math> , <Math mode="inline" xml:id="C8.S18.Px2.p1.m4">b/(a+b)\in[\delta,1-\delta]</Math> , where <Math mode="inline" xml:id="C8.S18.Px2.p1.m5">\delta</Math> again denotes an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C8.S18.Px2.p1.s3">
+For <Math mode="inline" xml:id="C8.S18.Px2.p1.m6">\operatorname{erfc}</Math> see §7.2(i).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C8.S18.Px2.p1.s4">
+Also, <Math equation-number="8.18.10" mode="display" xml:id="C8.S18.E10">-\tfrac{1}{2}\eta^{2}=x_{0}\ln\left(\frac{x}{x_{0}}\right)+(1-x_{0})\ln\left( \frac{1-x}{1-x_{0}}\right),</Math> with <Math mode="inline" xml:id="C8.S18.Px2.p1.m7">\eta/(x-x_{0})&gt;0</Math> , and <Math equation-number="8.18.11" mode="display" xml:id="C8.S18.E11">c_{0}(\eta)=\frac{1}{\eta}-\frac{\sqrt{x_{0}(1-x_{0})}}{x-x_{0}},</Math> with limiting value <Math equation-number="8.18.12" mode="display" xml:id="C8.S18.E12">c_{0}(0)=\frac{1-2x_{0}}{3\sqrt{x_{0}(1-x_{0})}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C8.S18.Px2.p2.s1">
+For this result, and for higher coefficients <Math mode="inline" xml:id="C8.S18.Px2.p2.m1">c_{k}(\eta)</Math> seeTemme (1996b, §11.3.3.2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C8.S18.Px2.p2.s2">
+All of the <Math mode="inline" xml:id="C8.S18.Px2.p2.m2">c_{k}(\eta)</Math> are analytic at <Math mode="inline" xml:id="C8.S18.Px2.p2.m3">\eta=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px3">
+<title>General Case</title>      
+<para xml:id="C8.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C8.S18.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C8.S18.Px3.p1.m1">\widetilde{\Gamma}(z)</Math> denote the scaled gamma function <Math equation-number="8.18.13" mode="display" xml:id="C8.S18.E13">\widetilde{\Gamma}(z)=(2\pi)^{-1/2}e^{z}z^{(1/2)-z}\Gamma\left(z\right),</Math> <Math mode="inline" xml:id="C8.S18.Px3.p1.m2">\mu=b/a</Math> , and <Math mode="inline" xml:id="C8.S18.Px3.p1.m3">x_{0}</Math> again be as in (8.18.8).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C8.S18.Px3.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px3.p1.m4">a\to\infty</Math> <Math equation-number="8.18.14" mode="display" xml:id="C8.S18.E14">I_{x}\left(a,b\right)\sim Q\left(b,a\zeta\right)-\frac{(2\pi b)^{-1/2}}{ \widetilde{\Gamma}(b)}\left(\frac{x}{x_{0}}\right)^{a}\left(\frac{1-x}{1-x_{0} }\right)^{b}\sum_{k=0}^{\infty}\frac{h_{k}(\zeta,\mu)}{a^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px3.p1.m5">b\in(0,\infty)</Math> and <Math mode="inline" xml:id="C8.S18.Px3.p1.m6">x\in(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C8.S18.Px3.p1.s3">
+Here <Math equation-number="8.18.15" mode="display" xml:id="C8.S18.E15">\mu\ln\zeta-\zeta=\ln x+\mu\ln\left(1-x\right)+(1+\mu)\ln\left(1+\mu\right)-\mu,</Math> with <Math mode="inline" xml:id="C8.S18.Px3.p1.m7">(\zeta-\mu)/(x_{0}-x)&gt;0</Math> , and <Math equation-number="8.18.16" mode="display" xml:id="C8.S18.E16">h_{0}(\zeta,\mu)=\mu\left(\frac{1}{\zeta-\mu}-\frac{(1+\mu)^{-3/2}}{x_{0}-x} \right),</Math> with limiting value <Math equation-number="8.18.17" mode="display" xml:id="C8.S18.E17">h_{0}(\mu,\mu)=\frac{1}{3}\left(\frac{1-\mu}{\sqrt{1+\mu}}-1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C8.S18.Px3.p2.s1">
+For this result and higher coefficients <Math mode="inline" xml:id="C8.S18.Px3.p2.m1">h_{k}(\zeta,\mu)</Math> seeTemme (1996b, §11.3.3.3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C8.S18.Px3.p2.s2">
+All of the <Math mode="inline" xml:id="C8.S18.Px3.p2.m2">h_{k}(\zeta,\mu)</Math> are analytic at <Math mode="inline" xml:id="C8.S18.Px3.p2.m3">\zeta=\mu</Math> (corresponding to <Math mode="inline" xml:id="C8.S18.Px3.p2.m4">x=x_{0}</Math> ).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px4">
+<title>Inverse Function</title>      
+<para xml:id="C8.S18.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C8.S18.Px4.p1.s1">
+For asymptotic expansions for large values of <Math mode="inline" xml:id="C8.S18.Px4.p1.m1">a</Math> and/or <Math mode="inline" xml:id="C8.S18.Px4.p1.m2">b</Math> of the <Math mode="inline" xml:id="C8.S18.Px4.p1.m3">x</Math> -solution of the equation <Math equation-number="8.18.18" mode="display" xml:id="C8.S18.E18">I_{x}\left(a,b\right)=p, if 0\leq p\leq 1,</Math> see Temme (1992b).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

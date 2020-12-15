@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S20">
+<title>Conical (or Mehler) Functions</title>         
+<subsection xml:id="C14.S20.SS1">
+<title>Definitions and Wronskians</title>          
+ 
+<para xml:id="C14.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S20.SS1.p1.s1">
+Throughout §14.20 we assume that <Math mode="inline" xml:id="C14.S20.SS1.p1.m1">\nu=-\frac{1}{2}+i\tau</Math> ,with <Math mode="inline" xml:id="C14.S20.SS1.p1.m2">\mu\geq 0</Math> and <Math mode="inline" xml:id="C14.S20.SS1.p1.m3">\tau\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S20.SS1.p1.s2">
+(14.2.2) takes the form <Math equation-number="14.20.1" mode="display" xml:id="C14.S20.E1">\left(1-x^{2}\right)\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}-2x\frac{ \mathrm{d}w}{\mathrm{d}x}-\left(\tau^{2}+\frac{1}{4}+\frac{\mu^{2}}{1-x^{2}} \right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S20.SS1.p1.s3">
+Solutions are known as conical or Mehler functions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C14.S20.SS1.p1.s4">
+For <Math mode="inline" xml:id="C14.S20.SS1.p1.m5">-1&lt;x&lt;1</Math> and <Math mode="inline" xml:id="C14.S20.SS1.p1.m6">\tau&gt;0</Math> , a numerically satisfactory pair of real conical functions is <Math mode="inline" xml:id="C14.S20.SS1.p1.m7">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S20.SS1.p1.m8">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(-x\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S20.SS1.p2.s1">
+Another real-valued solution <Math mode="inline" xml:id="C14.S20.SS1.p2.m1">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right)</Math> of (14.20.1) was introduced in Dunster (1991).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C14.S20.SS1.p2.s2">
+This is defined by <Math equation-number="14.20.2" mode="display" xml:id="C14.S20.E2">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)=\Re\left(e^{\mu \pi i}\mathsf{Q}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)\right)-\tfrac{1}{2} \pi\sin\left(\mu\pi\right)\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C14.S20.SS1.p2.s3">
+Equivalently, <Math equation-number="14.20.3" mode="display" xml:id="C14.S20.E3">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right)=\frac{ \pi e^{-\tau\pi}\sin\left(\mu\pi\right)\sinh\left(\tau\pi\right)}{2({\cosh^{2} }\left(\tau\pi\right)-{\sin^{2}}\left(\mu\pi\right))}\mathsf{P}^{-\mu}_{-\frac {1}{2}+\mathrm{i}\tau}\left(x\right)+\frac{\pi(e^{-\tau\pi}{\cos^{2}}\left(\mu \pi\right)+\sinh\left(\tau\pi\right))}{2({\cosh^{2}}\left(\tau\pi\right)-{\sin ^{2}}\left(\mu\pi\right))}\mathsf{P}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left (-x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C14.S20.SS1.p2.s4">
+<Math mode="inline" xml:id="C14.S20.SS1.p2.m2">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right)</Math> existsexcept when <Math mode="inline" xml:id="C14.S20.SS1.p2.m3">\mu=\frac{1}{2},\frac{3}{2},\dots</Math> and <Math mode="inline" xml:id="C14.S20.SS1.p2.m4">\tau=0</Math> ; compare §14.3(i).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C14.S20.SS1.p2.s5">
+It is an important companion solution to <Math mode="inline" xml:id="C14.S20.SS1.p2.m5">\mathsf{P}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right)</Math> when <Math mode="inline" xml:id="C14.S20.SS1.p2.m6">\tau</Math> is large; compare §§14.20(vii),14.20(viii), and10.25(iii).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C14.S20.SS1.p2.s6">
+<Math equation-number="14.20.4" mode="display" xml:id="C14.S20.E4">\mathscr{W}\left\{\mathsf{P}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right ),\mathsf{P}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(-x\right)\right\}=\frac {2}{|\Gamma\left(\mu+\frac{1}{2}+\mathrm{i}\tau\right)|^{2}(1-x^{2})}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C14.S20.SS1.p2.s7">
+<Math equation-number="14.20.5" mode="display" xml:id="C14.S20.E5">\mathscr{W}\left\{\mathsf{P}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right ),\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right) \right\}=\frac{\pi(e^{-\tau\pi}{\cos^{2}}\left(\mu\pi\right)+\sinh\left(\tau \pi\right))}{|\Gamma\left(\mu+\frac{1}{2}+\mathrm{i}\tau\right)|^{2}({\cosh^{2 }}\left(\tau\pi\right)-{\sin^{2}}\left(\mu\pi\right))(1-x^{2})},</Math> provided that <Math mode="inline" xml:id="C14.S20.SS1.p2.m7">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+\mathrm{i}\tau}\left(x\right)</Math> exists.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C14.S20.SS1.p3.s1">
+Lastly, for the range <Math mode="inline" xml:id="C14.S20.SS1.p3.m1">1&lt;x&lt;\infty</Math> , <Math mode="inline" xml:id="C14.S20.SS1.p3.m2">P^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> is a real-valued solution of (14.20.1); in terms of <Math mode="inline" xml:id="C14.S20.SS1.p3.m3">Q^{\mu}_{-\frac{1}{2}\pm\mathrm{i}\tau}\left(x\right)</Math> (which are complex-valued in general): <Math equation-number="14.20.6" mode="display" xml:id="C14.S20.E6">P^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)=\frac{ie^{-\mu\pi i}}{\sinh\left( \tau\pi\right)\left|\Gamma\left(\mu+\frac{1}{2}+i\tau\right)\right|^{2}}\* \left(Q^{\mu}_{-\frac{1}{2}+i\tau}\left(x\right)-Q^{\mu}_{-\frac{1}{2}-i\tau} \left(x\right)\right), if \tau\neq 0.</Math>
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS2">
+<title>Graphics</title>         
+         
+  
+<sentence sentence-num-in-section="13" xml:id="C14.S20.F1.s1">
+Figure 14.20.1: <Math mode="inline" xml:id="C14.S20.F1.m3">\mathsf{P}^{0}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F1.m4">\tau=0,1,2,4,8</Math> .
+</sentence>           
+<sentence sentence-num-in-section="14" xml:id="C14.S20.F2.s1">
+Figure 14.20.2: <Math mode="inline" xml:id="C14.S20.F2.m3">\widehat{\mathsf{Q}}^{0}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F2.m4">\tau=0,\tfrac{1}{2},1,2,4</Math> .
+</sentence>           
+  
+<sentence sentence-num-in-section="15" xml:id="C14.S20.F3.s1">
+Figure 14.20.3: <Math mode="inline" xml:id="C14.S20.F3.m3">\mathsf{P}^{-1/2}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F3.m4">\tau=0,1,2,4,8</Math> .
+</sentence> 
+          
+<sentence sentence-num-in-section="16" xml:id="C14.S20.F4.s1">
+Figure 14.20.4: <Math mode="inline" xml:id="C14.S20.F4.m3">\widehat{\mathsf{Q}}^{-1/2}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F4.m4">\tau=\tfrac{1}{2},1,2,4</Math> . (This function does not exist when <Math mode="inline" xml:id="C14.S20.F4.m5">\tau=0</Math> .)
+</sentence>   
+<para xml:id="C14.S20.SS2.p1">
+
+</para>
+         
+  
+<sentence sentence-num-in-section="17" xml:id="C14.S20.F5.s1">
+Figure 14.20.5: <Math mode="inline" xml:id="C14.S20.F5.m3">\mathsf{P}^{-1}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F5.m4">\tau=0,1,2,4,8</Math> .
+</sentence> 
+          
+<sentence sentence-num-in-section="18" xml:id="C14.S20.F6.s1">
+Figure 14.20.6: <Math mode="inline" xml:id="C14.S20.F6.m3">\widehat{\mathsf{Q}}^{-1}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F6.m4">\tau=0,\tfrac{1}{2},1,2,4</Math> .
+</sentence>           
+  
+<sentence sentence-num-in-section="19" xml:id="C14.S20.F7.s1">
+Figure 14.20.7: <Math mode="inline" xml:id="C14.S20.F7.m2">\mathsf{P}^{-2}_{-\frac{1}{2}+i\tau}\left(x\right),\tau=0,1,2,4,8</Math> .
+</sentence>           
+<sentence sentence-num-in-section="20" xml:id="C14.S20.F8.s1">
+Figure 14.20.8: <Math mode="inline" xml:id="C14.S20.F8.m3">\widehat{\mathsf{Q}}^{-2}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , <Math mode="inline" xml:id="C14.S20.F8.m4">\tau=0,\tfrac{1}{2},1,2,4</Math> .
+</sentence>  
+   
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS3">
+<title>Behavior as <Math mode="inline" xml:id="C14.S20.SS3.m1">x\to 1</Math></title>          
+<para xml:id="C14.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C14.S20.SS3.p1.s1">
+The behavior of <Math mode="inline" xml:id="C14.S20.SS3.p1.m1">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(\pm x\right)</Math> as <Math mode="inline" xml:id="C14.S20.SS3.p1.m2">x\to 1-</Math> is given in §14.8(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C14.S20.SS3.p1.s2">
+For <Math mode="inline" xml:id="C14.S20.SS3.p1.m3">\mu&gt;0</Math> and <Math mode="inline" xml:id="C14.S20.SS3.p1.m4">x\to 1-</Math> , <Math equation-number="14.20.7" mode="display" xml:id="C14.S20.E7">\widehat{\mathsf{Q}}^{\mu}_{-\frac{1}{2}+i\tau}\left(x\right)\sim\tfrac{1}{2} \Gamma\left(\mu\right)\left(\frac{2}{1-x}\right)^{\mu/2},</Math> <Math equation-number="14.20.8" mode="display" xml:id="C14.S20.E8">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)\sim\frac{\pi \Gamma\left(\mu\right)(e^{-\tau\pi}{\cos^{2}}\left(\mu\pi\right)+\sinh\left( \tau\pi\right))}{2({\cosh^{2}}\left(\tau\pi\right)-{\sin^{2}}\left(\mu\pi \right)){\left|\Gamma\left(\mu+\frac{1}{2}+\mathrm{i}\tau\right)\right|^{2}}} \*\left(\frac{2}{1-x}\right)^{\mu/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS4">
+<title>Integral Representation</title>          
+<para xml:id="C14.S20.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C14.S20.SS4.p1.s1">
+When <Math mode="inline" xml:id="C14.S20.SS4.p1.m1">0&lt;\theta&lt;\pi</Math> , <Math equation-number="14.20.9" mode="display" xml:id="C14.S20.E9">\mathsf{P}_{-\frac{1}{2}+i\tau}\left(\cos\theta\right)=\frac{2}{\pi}\int_{0}^{ \theta}\frac{\cosh\left(\tau\phi\right)}{\sqrt{2(\cos\phi-\cos\theta)}}\mathrm {d}\phi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS5">
+<title>Trigonometric Expansion</title>          
+<para xml:id="C14.S20.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C14.S20.SS5.p1.s1">
+ <Math equation-number="14.20.10" mode="display" xml:id="C14.S20.E10">\mathsf{P}_{-\frac{1}{2}+i\tau}\left(\cos\theta\right)=1+\frac{4\tau^{2}+1^{2} }{2^{2}}{\sin^{2}}\left(\tfrac{1}{2}\theta\right)+\frac{\left(4\tau^{2}+1^{2} \right)\left(4\tau^{2}+3^{2}\right)}{2^{2}\cdot 4^{2}}{\sin^{4}}\left(\tfrac{1 }{2}\theta\right)+\cdots, if 0\leq\theta\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C14.S20.SS5.p1.s2">
+From (14.20.9) or (14.20.10) it is evident that <Math mode="inline" xml:id="C14.S20.SS5.p1.m1">\mathsf{P}_{-\frac{1}{2}+i\tau}\left(\cos\theta\right)</Math> is positive for real <Math mode="inline" xml:id="C14.S20.SS5.p1.m2">\theta</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS6">
+<title>Generalized Mehler–Fock Transformation</title>            
+<para xml:id="C14.S20.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C14.S20.SS6.p1.s1">
+ <Math equation-number="14.20.11" mode="display" xml:id="C14.S20.E11">f(\tau)=\frac{\tau}{\pi}\sinh\left(\tau\pi\right)\Gamma\left(\tfrac{1}{2}-\mu+ i\tau\right)\*\Gamma\left(\tfrac{1}{2}-\mu-i\tau\right)\int_{1}^{\infty}P^{\mu }_{-\frac{1}{2}+i\tau}\left(x\right)g(x)\mathrm{d}x,</Math> where <Math equation-number="14.20.12" mode="display" xml:id="C14.S20.E12">g(x)=\int_{0}^{\infty}P^{\mu}_{-\frac{1}{2}+i\tau}\left(x\right)f(\tau)\mathrm {d}\tau</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C14.S20.SS6.p1.s2">
+Special cases: <Math equation-number="14.20.13" mode="display" xml:id="C14.S20.E13">P_{-\frac{1}{2}+i\tau}\left(x\right)=\frac{\cosh\left(\tau\pi\right)}{\pi}\int _{1}^{\infty}\frac{P_{-\frac{1}{2}+i\tau}\left(t\right)}{x+t}\mathrm{d}t,</Math> <Math equation-number="14.20.14" mode="display" xml:id="C14.S20.E14">\pi\int_{0}^{\infty}\frac{\tau\tanh\left(\tau\pi\right)}{\cosh\left(\tau\pi \right)}P_{-\frac{1}{2}+i\tau}\left(x\right)P_{-\frac{1}{2}+i\tau}\left(y \right)\mathrm{d}\tau=\frac{1}{y+x}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS7">
+<title>Asymptotic Approximations: Large <Math mode="inline" xml:id="C14.S20.SS7.m1">\tau</Math>, Fixed<Math mode="inline" xml:id="C14.S20.SS7.m2">\mu</Math></title>          
+<para xml:id="C14.S20.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C14.S20.SS7.p1.s1">
+For <Math mode="inline" xml:id="C14.S20.SS7.p1.m1">\tau\to\infty</Math> and fixed <Math mode="inline" xml:id="C14.S20.SS7.p1.m2">\mu</Math> , <Math equation-number="14.20.15" mode="display" xml:id="C14.S20.E15">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(\cos\theta\right)=\frac{1}{\tau^{ \mu}}\left(\frac{\theta}{\sin\theta}\right)^{1/2}I_{\mu}\left(\tau\theta\right )\*\left(1+O\left(\ifrac{1}{\tau}\right)\right),</Math> , <Math equation-number="14.20.16" mode="display" xml:id="C14.S20.E16">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+i\tau}\left(\cos\theta\right)=\frac{ 1}{\tau^{\mu}}\left(\frac{\theta}{\sin\theta}\right)^{1/2}K_{\mu}\left(\tau \theta\right)\*\left(1+O\left(\ifrac{1}{\tau}\right)\right),</Math> uniformly for <Math mode="inline" xml:id="C14.S20.SS7.p1.m3">\theta\in(0,\pi-\delta]</Math> , where <Math mode="inline" xml:id="C14.S20.SS7.p1.m4">I</Math> and <Math mode="inline" xml:id="C14.S20.SS7.p1.m5">K</Math> are the modified Bessel functions (§10.25(ii)) and <Math mode="inline" xml:id="C14.S20.SS7.p1.m6">\delta</Math> is an arbitrary constant such that <Math mode="inline" xml:id="C14.S20.SS7.p1.m7">0&lt;\delta&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C14.S20.SS7.p1.s2">
+For asymptotic expansions and explicit error bounds, see Olver (1997b, pp. 473–474).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C14.S20.SS7.p1.s3">
+See alsoŽurina and Karmazina (1966).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS8">
+<title>Asymptotic Approximations: Large <Math mode="inline" xml:id="C14.S20.SS8.m1">\tau</Math>,<Math mode="inline" xml:id="C14.S20.SS8.m2">0\leq\mu\leq A\tau</Math></title>         
+ 
+<para xml:id="C14.S20.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C14.S20.SS8.p1.s1">
+In this subsection and §14.20(ix),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C14.S20.SS8.p1.s2">
+<Math mode="inline" xml:id="C14.S20.SS8.p1.m1">A</Math> and <Math mode="inline" xml:id="C14.S20.SS8.p1.m2">\delta</Math> denote arbitrary constants such that <Math mode="inline" xml:id="C14.S20.SS8.p1.m3">A&gt;0</Math> and <Math mode="inline" xml:id="C14.S20.SS8.p1.m4">0&lt;\delta&lt;2</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C14.S20.SS8.p2.s1">
+As <Math mode="inline" xml:id="C14.S20.SS8.p2.m1">\tau\to\infty</Math> , <Math equation-number="14.20.17" mode="display" xml:id="C14.S20.E17">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)=\sigma(\mu,\tau)\left( \frac{\alpha^{2}+\eta}{1+\alpha^{2}-x^{2}}\right)^{1/4}I_{\mu}\left(\tau\eta^{ 1/2}\right)\*\left(1+O\left(\ifrac{1}{\tau}\right)\right),</Math> <Math equation-number="14.20.18" mode="display" xml:id="C14.S20.E18">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)=\sigma(\mu,\tau )\left(\frac{\alpha^{2}+\eta}{1+\alpha^{2}-x^{2}}\right)^{1/4}K_{\mu}\left( \tau\eta^{1/2}\right)\*\left(1+O\left(\ifrac{1}{\tau}\right)\right),</Math> uniformly for <Math mode="inline" xml:id="C14.S20.SS8.p2.m2">x\in[-1+\delta,1)</Math> and <Math mode="inline" xml:id="C14.S20.SS8.p2.m3">\mu\in[0,A\tau]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C14.S20.SS8.p2.s2">
+Here <Math equation-number="14.20.19" mode="display" xml:id="C14.S20.E19">\alpha=\mu/\tau,</Math> <Math equation-number="14.20.20" mode="display" xml:id="C14.S20.E20">\sigma(\mu,\tau)=\frac{\exp\left(\mu-\tau\operatorname{arctan}\alpha\right)}{ \left(\mu^{2}+\tau^{2}\right)^{\mu/2}}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C14.S20.SS8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C14.S20.SS8.p3.s1">
+The variable <Math mode="inline" xml:id="C14.S20.SS8.p3.m1">\eta</Math> is defined implicitly by <Math equation-number="14.20.21" mode="display" xml:id="C14.S20.E21">{\left(\alpha^{2}+\eta\right)^{1/2}+\tfrac{1}{2}\alpha\ln\eta-\alpha\ln\left( \left(\alpha^{2}+\eta\right)^{1/2}+\alpha\right)}={\operatorname{arccos}\left( \frac{x}{\left(1+\alpha^{2}\right)^{1/2}}\right)+\frac{\alpha}{2}\ln\left( \frac{1+\alpha^{2}+\left(\alpha^{2}-1\right)x^{2}-2\alpha x\left(1+\alpha^{2}- x^{2}\right)^{1/2}}{\left(1+\alpha^{2}\right)\left(1-x^{2}\right)}\right)},</Math> where the inverse trigonometric functions take their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C14.S20.SS8.p3.s2">
+The interval <Math mode="inline" xml:id="C14.S20.SS8.p3.m2">-1&lt;x&lt;1</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S20.SS8.p3.m3">0&lt;\eta&lt;\infty</Math> , with the points <Math mode="inline" xml:id="C14.S20.SS8.p3.m4">x=-1</Math> and <Math mode="inline" xml:id="C14.S20.SS8.p3.m5">x=1</Math> corresponding to <Math mode="inline" xml:id="C14.S20.SS8.p3.m6">\eta=\infty</Math> and <Math mode="inline" xml:id="C14.S20.SS8.p3.m7">\eta=0</Math> , respectively.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS9">
+<title>Asymptotic Approximations: Large <Math mode="inline" xml:id="C14.S20.SS9.m1">\mu</Math>,<Math mode="inline" xml:id="C14.S20.SS9.m2">0\leq\tau\leq A\mu</Math></title>          
+<para xml:id="C14.S20.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C14.S20.SS9.p1.s1">
+As <Math mode="inline" xml:id="C14.S20.SS9.p1.m1">\mu\to\infty</Math> , <Math equation-number="14.20.22" mode="display" xml:id="C14.S20.E22">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)=\frac{\beta\exp\left(\mu \beta\operatorname{arctan}\beta\right)}{\Gamma\left(\mu+1\right)\left(1+\beta^ {2}\right)^{\mu/2}}\frac{e^{-\mu\rho}}{\left(1+\beta^{2}-x^{2}\beta^{2}\right) ^{1/4}}\left(1+O\left(\frac{1}{\mu}\right)\right),</Math> uniformly for <Math mode="inline" xml:id="C14.S20.SS9.p1.m2">x\in(-1,1)</Math> and <Math mode="inline" xml:id="C14.S20.SS9.p1.m3">\tau\in[0,A\mu]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C14.S20.SS9.p1.s2">
+Here <Math equation-number="14.20.23" mode="display" xml:id="C14.S20.E23">\beta=\tau/\mu,</Math> and the variable <Math mode="inline" xml:id="C14.S20.SS9.p1.m4">\rho</Math> is defined by <Math equation-number="14.20.24" mode="display" xml:id="C14.S20.E24">\rho=\frac{1}{2}\ln\left(\frac{\left(1-\beta^{2}\right)x^{2}+1+\beta^{2}+2x \left(1+\beta^{2}-\beta^{2}x^{2}\right)^{1/2}}{1-x^{2}}\right)+\beta \operatorname{arctan}\left(\frac{\beta x}{\sqrt{1+\beta^{2}-\beta^{2}x^{2}}} \right)-\frac{1}{2}\ln\left(1+\beta^{2}\right),</Math>
+</sentence>
+
+</para>
+  
+<para xml:id="C14.S20.SS9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C14.S20.SS9.p2.s1">
+with the inverse tangent taking its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C14.S20.SS9.p2.s2">
+The interval <Math mode="inline" xml:id="C14.S20.SS9.p2.m1">-1&lt;x&lt;1</Math> is mapped one-to-one to the interval <Math mode="inline" xml:id="C14.S20.SS9.p2.m2">-\infty&lt;\rho&lt;\infty</Math> , with the points <Math mode="inline" xml:id="C14.S20.SS9.p2.m3">x=-1</Math> , <Math mode="inline" xml:id="C14.S20.SS9.p2.m4">x=0</Math> , and <Math mode="inline" xml:id="C14.S20.SS9.p2.m5">x=1</Math> corresponding to <Math mode="inline" xml:id="C14.S20.SS9.p2.m6">\rho=-\infty</Math> , <Math mode="inline" xml:id="C14.S20.SS9.p2.m7">\rho=0</Math> , and <Math mode="inline" xml:id="C14.S20.SS9.p2.m8">\rho=\infty</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C14.S20.SS9.p3.s1">
+With the same conditions, the corresponding approximation for <Math mode="inline" xml:id="C14.S20.SS9.p3.m1">\mathsf{P}^{-\mu}_{-\frac{1}{2}+i\tau}\left(-x\right)</Math> is obtainable by replacing <Math mode="inline" xml:id="C14.S20.SS9.p3.m2">e^{-\mu\rho}</Math> by <Math mode="inline" xml:id="C14.S20.SS9.p3.m3">e^{\mu\rho}</Math> on the right-hand side of (14.20.22).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C14.S20.SS9.p3.s2">
+Approximations for <Math mode="inline" xml:id="C14.S20.SS9.p3.m4">\mathsf{P}^{\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S20.SS9.p3.m5">\widehat{\mathsf{Q}}^{-\mu}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> can then be achieved via (14.9.7) and (14.20.3).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C14.S20.SS9.p4.s1">
+For extensions to complex arguments (including the range <Math mode="inline" xml:id="C14.S20.SS9.p4.m1">1&lt;x&lt;\infty</Math> ), asymptotic expansions, and explicit error bounds, see Dunster (1991).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C14.S20.SS9.p4.s2">
+For the case of purely imaginary order and argument see Dunster (2013).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S20.SS10">
+<title>Zeros and Integrals</title>        
+   
+<para xml:id="C14.S20.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C14.S20.SS10.p1.s1">
+For zeros of <Math mode="inline" xml:id="C14.S20.SS10.p1.m1">\mathsf{P}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> seeHobson (1931, §237).
+</sentence>
+
+</para>
+ 
+<para xml:id="C14.S20.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C14.S20.SS10.p2.s1">
+For integrals with respect to <Math mode="inline" xml:id="C14.S20.SS10.p2.m1">\tau</Math> involving <Math mode="inline" xml:id="C14.S20.SS10.p2.m2">\mathsf{P}_{-\frac{1}{2}+i\tau}\left(x\right)</Math> , seePrudnikov et al. (1990, pp. 218–228).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

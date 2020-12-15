@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C14.S19">
+<title>Toroidal (or Ring) Functions</title>         
+<subsection xml:id="C14.S19.SS1">
+<title>Introduction</title>        
+   
+<para xml:id="C14.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C14.S19.SS1.p1.s1">
+When <Math mode="inline" xml:id="C14.S19.SS1.p1.m1">\nu=n-\frac{1}{2}</Math> , <Math mode="inline" xml:id="C14.S19.SS1.p1.m2">n=0,1,2,\dots</Math> , <Math mode="inline" xml:id="C14.S19.SS1.p1.m3">\mu\in\mathbb{R}</Math> , and <Math mode="inline" xml:id="C14.S19.SS1.p1.m4">x\in(1,\infty)</Math> solutions of (14.2.2) are known astoroidal or ring functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C14.S19.SS1.p1.s2">
+This form of the differential equation arises when Laplace’s equation is transformed into toroidal coordinates <Math mode="inline" xml:id="C14.S19.SS1.p1.m5">(\eta,\theta,\phi)</Math> , which are related to Cartesian coordinates <Math mode="inline" xml:id="C14.S19.SS1.p1.m6">(x,y,z)</Math> by <Math equation-number="14.19.1" mode="display" xml:id="C14.S19.E1">x=\frac{c\sinh\eta\cos\phi}{\cosh\eta-\cos\theta},y=\frac{c\sinh\eta\sin\phi}{\cosh\eta-\cos\theta},z=\frac{c\sin\theta}{\cosh\eta-\cos\theta},</Math> where the constant <Math mode="inline" xml:id="C14.S19.SS1.p1.m7">c</Math> is a scaling factor.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C14.S19.SS1.p1.s3">
+Most required properties of toroidal functions come directly from the results for <Math mode="inline" xml:id="C14.S19.SS1.p1.m8">P^{\mu}_{\nu}\left(x\right)</Math> and <Math mode="inline" xml:id="C14.S19.SS1.p1.m9">\boldsymbol{Q}^{\mu}_{\nu}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C14.S19.SS1.p1.s4">
+In particular, for <Math mode="inline" xml:id="C14.S19.SS1.p1.m10">\mu=0</Math> and <Math mode="inline" xml:id="C14.S19.SS1.p1.m11">\nu=\pm\frac{1}{2}</Math> see §14.5(v).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S19.SS2">
+<title>Hypergeometric Representations</title>          
+<para xml:id="C14.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C14.S19.SS2.p1.s1">
+With <Math mode="inline" xml:id="C14.S19.SS2.p1.m1">\mathbf{F}</Math> as in §14.3 and <Math mode="inline" xml:id="C14.S19.SS2.p1.m2">\xi&gt;0</Math> , <Math equation-number="14.19.2" mode="display" xml:id="C14.S19.E2">P^{\mu}_{\nu-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\Gamma\left(\frac{1}{2}- \mu\right)}{\pi^{1/2}\left(1-e^{-2\xi}\right)^{\mu}e^{(\nu+(1/2))\xi}}\* \mathbf{F}\left(\tfrac{1}{2}-\mu,\tfrac{1}{2}+\nu-\mu;1-2\mu;1-e^{-2\xi}\right), if \mu\neq\frac{1}{2},\frac{3}{2},\frac{5}{2},\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C14.S19.SS2.p1.s2">
+<Math equation-number="14.19.3" mode="display" xml:id="C14.S19.E3">\boldsymbol{Q}^{\mu}_{\nu-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\pi^{1/2} \left(1-e^{-2\xi}\right)^{\mu}}{e^{(\nu+(1/2))\xi}}\*\mathbf{F}\left(\mu+ \tfrac{1}{2},\nu+\mu+\tfrac{1}{2};\nu+1;e^{-2\xi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S19.SS3">
+<title>Integral Representations</title>          
+<para xml:id="C14.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C14.S19.SS3.p1.s1">
+With <Math mode="inline" xml:id="C14.S19.SS3.p1.m1">\xi&gt;0</Math> , <Math equation-number="14.19.4" mode="display" xml:id="C14.S19.E4">P^{m}_{n-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\Gamma\left(n+m+\frac{1}{2} \right)(\sinh\xi)^{m}}{2^{m}\pi^{1/2}\Gamma\left(n-m+\frac{1}{2}\right)\Gamma \left(m+\frac{1}{2}\right)}\*\int_{0}^{\pi}\frac{(\sin\phi)^{2m}}{(\cosh\xi+ \cos\phi\sinh\xi)^{n+m+(1/2)}}\mathrm{d}\phi,</Math> , <Math equation-number="14.19.5" mode="display" xml:id="C14.S19.E5">\boldsymbol{Q}^{m}_{n-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\Gamma\left(n+ \frac{1}{2}\right)}{\Gamma\left(n+m+\tfrac{1}{2}\right)\Gamma\left(n-m+\frac{1 }{2}\right)}\*\int_{0}^{\infty}\frac{\cosh\left(mt\right)}{(\cosh\xi+\cosh t \sinh\xi)^{n+(1/2)}}\mathrm{d}t, if m&lt;n+\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S19.SS4">
+<title>Sums</title>          
+<para xml:id="C14.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C14.S19.SS4.p1.s1">
+With <Math mode="inline" xml:id="C14.S19.SS4.p1.m1">\xi&gt;0</Math> , <Math equation-number="14.19.6" mode="display" xml:id="C14.S19.E6">\boldsymbol{Q}^{\mu}_{-\frac{1}{2}}\left(\cosh\xi\right)+2\sum_{n=1}^{\infty} \frac{\Gamma\left(\mu+n+\tfrac{1}{2}\right)}{\Gamma\left(\mu+\tfrac{1}{2} \right)}\boldsymbol{Q}^{\mu}_{n-\frac{1}{2}}\left(\cosh\xi\right)\cos\left(n \phi\right)=\dfrac{\left(\frac{1}{2}\pi\right)^{1/2}\left(\sinh\xi\right)^{\mu }}{\left(\cosh\xi-\cos\phi\right)^{\mu+(1/2)}}, if \Re\mu&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C14.S19.SS5">
+<title>Whipple’s Formula for Toroidal Functions</title>           
+<para xml:id="C14.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C14.S19.SS5.p1.s1">
+With <Math mode="inline" xml:id="C14.S19.SS5.p1.m1">\xi&gt;0</Math> , <Math equation-number="14.19.7" mode="display" xml:id="C14.S19.E7">P^{m}_{n-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\Gamma\left(n+m+\tfrac{1}{2} \right)}{\Gamma\left(n-m+\tfrac{1}{2}\right)}\*\left(\frac{2}{\pi\sinh\xi} \right)^{1/2}\boldsymbol{Q}^{n}_{m-\frac{1}{2}}\left(\coth\xi\right),</Math> <Math equation-number="14.19.8" mode="display" xml:id="C14.S19.E8">\boldsymbol{Q}^{m}_{n-\frac{1}{2}}\left(\cosh\xi\right)=\frac{\Gamma\left(m-n+ \tfrac{1}{2}\right)}{\Gamma\left(m+n+\tfrac{1}{2}\right)}\*\left(\frac{\pi}{2 \sinh\xi}\right)^{1/2}P^{n}_{m-\frac{1}{2}}\left(\coth\xi\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

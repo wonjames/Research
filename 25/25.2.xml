@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C25.S2">
+<title>Definition and Expansions</title>          
+<subsection xml:id="C25.S2.SS1">
+<title>Definition</title>         
+<para xml:id="C25.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C25.S2.SS1.p1.s1">
+When <Math mode="inline" xml:id="C25.S2.SS1.p1.m1">\Re s&gt;1</Math> , <Math equation-number="25.2.1" mode="display" xml:id="C25.S2.E1">\zeta\left(s\right)=\sum_{n=1}^{\infty}\frac{1}{n^{s}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C25.S2.SS1.p1.s2">
+Elsewhere <Math mode="inline" xml:id="C25.S2.SS1.p1.m2">\zeta\left(s\right)</Math> is defined by analytic continuation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C25.S2.SS1.p1.s3">
+It is a meromorphic function whose only singularity in <Math mode="inline" xml:id="C25.S2.SS1.p1.m3">\mathbb{C}</Math> is a simple pole at <Math mode="inline" xml:id="C25.S2.SS1.p1.m4">s=1</Math> , with residue 1.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS2">
+<title>Other Infinite Series</title>          
+<para xml:id="C25.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C25.S2.SS2.p1.s1">
+ <Math equation-number="25.2.2" mode="display" xml:id="C25.S2.E2">\zeta\left(s\right)=\frac{1}{1-2^{-s}}\sum_{n=0}^{\infty}\frac{1}{(2n+1)^{s}}, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C25.S2.SS2.p1.s2">
+<Math equation-number="25.2.3" mode="display" xml:id="C25.S2.E3">\zeta\left(s\right)=\frac{1}{1-2^{1-s}}\sum_{n=1}^{\infty}\frac{(-1)^{n-1}}{n^ {s}}, if \Re s&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C25.S2.SS2.p1.s3">
+<Math equation-number="25.2.4" mode="display" xml:id="C25.S2.E4">\zeta\left(s\right)=\frac{1}{s-1}+\sum_{n=0}^{\infty}\frac{(-1)^{n}}{n!}\gamma _{n}(s-1)^{n},</Math> where <Math equation-number="25.2.5" mode="display" xml:id="C25.S2.E5">\gamma_{n}=\lim_{m\to\infty}\left(\sum_{k=1}^{m}\frac{(\ln k)^{n}}{k}-\frac{( \ln m)^{n+1}}{n+1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C25.S2.SS2.p1.s4">
+<Math equation-number="25.2.6" mode="display" xml:id="C25.S2.E6">\zeta'\left(s\right)=-\sum_{n=2}^{\infty}(\ln n)n^{-s}, if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C25.S2.SS2.p1.s5">
+<Math equation-number="25.2.7" mode="display" xml:id="C25.S2.E7">{\zeta^{(k)}}\left(s\right)=(-1)^{k}\sum_{n=2}^{\infty}(\ln n)^{k}n^{-s}, if \Re s&gt;1, k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C25.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C25.S2.SS2.p2.s1">
+For further expansions of functions similar to (25.2.1) (Dirichlet series) see §27.4.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C25.S2.SS2.p2.s2">
+This includes, for example, <Math mode="inline" xml:id="C25.S2.SS2.p2.m1">1/\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS3">
+<title>Representations by the Euler–Maclaurin Formula</title>         
+ 
+<para xml:id="C25.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C25.S2.SS3.p1.s1">
+ <Math equation-number="25.2.8" mode="display" xml:id="C25.S2.E8">\zeta\left(s\right)=\sum_{k=1}^{N}\frac{1}{k^{s}}+\frac{N^{1-s}}{s-1}-s\int_{N }^{\infty}\frac{x-\left\lfloor x\right\rfloor}{x^{s+1}}\mathrm{d}x, if \Re s&gt;0, N=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C25.S2.SS3.p1.s2">
+<Math equation-number="25.2.9" mode="display" xml:id="C25.S2.E9">\zeta\left(s\right)=\sum_{k=1}^{N}\frac{1}{k^{s}}+\frac{N^{1-s}}{s-1}-\frac{1} {2}N^{-s}+\sum_{k=1}^{n}\genfrac{(}{)}{0.0pt}{}{s+2k-2}{2k-1}\frac{B_{2k}}{2k} N^{1-s-2k}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1}\int_{N}^{\infty}\frac{ \widetilde{B}_{2n+1}\left(x\right)}{x^{s+2n+1}}\mathrm{d}x, if \Re s&gt;-2n; n,N=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C25.S2.SS3.p1.s3">
+<Math equation-number="25.2.10" mode="display" xml:id="C25.S2.E10">\zeta\left(s\right)=\frac{1}{s-1}+\frac{1}{2}+\sum_{k=1}^{n}\genfrac{(}{)}{0.0 pt}{}{s+2k-2}{2k-1}\frac{B_{2k}}{2k}-\genfrac{(}{)}{0.0pt}{}{s+2n}{2n+1}\int_{ 1}^{\infty}\frac{\widetilde{B}_{2n+1}\left(x\right)}{x^{s+2n+1}}\mathrm{d}x, if \Re s&gt;-2n, n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C25.S2.SS3.p1.s4">
+For <Math mode="inline" xml:id="C25.S2.SS3.p1.m1">B_{2k}</Math> see §24.2(i), and for <Math mode="inline" xml:id="C25.S2.SS3.p1.m2">\widetilde{B}_{n}\left(x\right)</Math> see §24.2(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C25.S2.SS4">
+<title>Infinite Products</title>         
+ 
+<para xml:id="C25.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C25.S2.SS4.p1.s1">
+ <Math equation-number="25.2.11" mode="display" xml:id="C25.S2.E11">\zeta\left(s\right)=\prod_{p}(1-p^{-s})^{-1}, if \Re s&gt;1,</Math> product over all primes <Math mode="inline" xml:id="C25.S2.SS4.p1.m1">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C25.S2.SS4.p1.s2">
+<Math equation-number="25.2.12" mode="display" xml:id="C25.S2.E12">\zeta\left(s\right)=\frac{(2\pi)^{s}e^{-s-(\gamma s/2)}}{2(s-1)\Gamma\left( \tfrac{1}{2}s+1\right)}\prod_{\rho}\left(1-\frac{s}{\rho}\right)e^{s/\rho},</Math> product over zeros <Math mode="inline" xml:id="C25.S2.SS4.p1.m2">\rho</Math> of <Math mode="inline" xml:id="C25.S2.SS4.p1.m3">\zeta</Math> with <Math mode="inline" xml:id="C25.S2.SS4.p1.m4">\Re\rho&gt;0</Math> (see §25.10(i));
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C25.S2.SS4.p1.s3">
+<Math mode="inline" xml:id="C25.S2.SS4.p1.m5">\gamma</Math> is Euler’s constant (§5.2(ii)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

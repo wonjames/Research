@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S3">
+<title>Differential Equations</title>         
+<subsection xml:id="C23.S3.SS1">
+<title>Invariants, Roots, and Discriminant</title>        
+  
+<para xml:id="C23.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S3.SS1.p1.s1">
+The lattice invariants are defined by <Math equation-number="23.3.1" mode="display" xml:id="C23.S3.E1">g_{2}=60\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-4},</Math> , <Math equation-number="23.3.2" mode="display" xml:id="C23.S3.E2">g_{3}=140\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-6}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C23.S3.SS1.p2.s1">
+The lattice roots satisfy the cubic equation <Math equation-number="23.3.3" mode="display" xml:id="C23.S3.E3">4z^{3}-g_{2}z-g_{3}=0,</Math> and are denoted by <Math mode="inline" xml:id="C23.S3.SS1.p2.m1">e_{1},e_{2},e_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C23.S3.SS1.p2.s2">
+The discriminant (§1.11(ii)) is given by <Math equation-number="23.3.4" mode="display" xml:id="C23.S3.E4">\Delta={g_{2}^{3}}-27{g_{3}^{2}}=16(e_{2}-e_{3})^{2}(e_{3}-e_{1})^{2}(e_{1}-e_ {2})^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C23.S3.SS1.p2.s3">
+In consequence, <Math equation-number="23.3.5" mode="display" xml:id="C23.S3.E5">e_{1}+e_{2}+e_{3}=0,</Math> <Math equation-number="23.3.6" mode="display" xml:id="C23.S3.E6">g_{2}=2({e_{1}^{2}}+{e_{2}^{2}}+{e_{3}^{2}})=-4(e_{2}e_{3}+e_{3}e_{1}+e_{1}e_{ 2}),</Math> <Math equation-number="23.3.7" mode="display" xml:id="C23.S3.E7">g_{3}=4e_{1}e_{2}e_{3}=\tfrac{4}{3}({e_{1}^{3}}+{e_{2}^{3}}+{e_{3}^{3}})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C23.S3.SS1.p3.s1">
+Let <Math mode="inline" xml:id="C23.S3.SS1.p3.m1">{g_{2}^{3}}\neq 27{g_{3}^{2}}</Math> , or equivalently <Math mode="inline" xml:id="C23.S3.SS1.p3.m2">\Delta</Math> be nonzero, or <Math mode="inline" xml:id="C23.S3.SS1.p3.m3">e_{1},e_{2},e_{3}</Math> be distinct.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C23.S3.SS1.p3.s2">
+Given <Math mode="inline" xml:id="C23.S3.SS1.p3.m4">g_{2}</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m5">g_{3}</Math> there is a unique lattice <Math mode="inline" xml:id="C23.S3.SS1.p3.m6">\mathbb{L}</Math> such that (23.3.1) and (23.3.2) are satisfied. We may therefore define <Math equation-number="23.3.8" mode="display" xml:id="C23.S3.E8">\wp\left(z;g_{2},g_{3}\right)=\wp\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C23.S3.SS1.p3.s3">
+Similarly for <Math mode="inline" xml:id="C23.S3.SS1.p3.m9">\zeta\left(z;g_{2},g_{3}\right)</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m10">\sigma\left(z;g_{2},g_{3}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C23.S3.SS1.p3.s4">
+As functions of <Math mode="inline" xml:id="C23.S3.SS1.p3.m11">g_{2}</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m12">g_{3}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p3.m13">\wp\left(z;g_{2},g_{3}\right)</Math> and <Math mode="inline" xml:id="C23.S3.SS1.p3.m14">\zeta\left(z;g_{2},g_{3}\right)</Math> are meromorphic and <Math mode="inline" xml:id="C23.S3.SS1.p3.m15">\sigma\left(z;g_{2},g_{3}\right)</Math> is entire.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C23.S3.SS1.p4.s1">
+Conversely, <Math mode="inline" xml:id="C23.S3.SS1.p4.m1">g_{2}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p4.m2">g_{3}</Math> , and the set <Math mode="inline" xml:id="C23.S3.SS1.p4.m3">\{e_{1},e_{2},e_{3}\}</Math> are determined uniquely by the lattice <Math mode="inline" xml:id="C23.S3.SS1.p4.m4">\mathbb{L}</Math> independently of the choice of generators.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C23.S3.SS1.p4.s2">
+However, given any pair of generators <Math mode="inline" xml:id="C23.S3.SS1.p4.m5">2\omega_{1}</Math> , <Math mode="inline" xml:id="C23.S3.SS1.p4.m6">2\omega_{3}</Math> of <Math mode="inline" xml:id="C23.S3.SS1.p4.m7">\mathbb{L}</Math> , and with <Math mode="inline" xml:id="C23.S3.SS1.p4.m8">\omega_{2}</Math> defined by (23.2.1), we can identify the <Math mode="inline" xml:id="C23.S3.SS1.p4.m9">e_{j}</Math> individually, via <Math equation-number="23.3.9" mode="display" xml:id="C23.S3.E9">e_{j}=\wp\left(\omega_{j}|\mathbb{L}\right), if j=1,2,3</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S3.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C23.S3.SS1.p5.s1">
+In what follows, it will be assumed that (23.3.9)always applies.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S3.SS2">
+<title>Differential Equations and Derivatives</title>         
+  
+<para xml:id="C23.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C23.S3.SS2.p1.s1">
+ <Math equation-number="23.3.10" mode="display" xml:id="C23.S3.E10">{\wp'}^{2}(z)=4\!{\wp^{3}}\left(z\right)-g_{2}\wp\left(z\right)-g_{3}</Math> , <Math equation-number="23.3.11" mode="display" xml:id="C23.S3.E11">{\wp'}^{2}(z)=4(\wp\left(z\right)-e_{1})(\wp\left(z\right)-e_{2})(\wp\left(z \right)-e_{3}),</Math> <Math equation-number="23.3.12" mode="display" xml:id="C23.S3.E12">\wp''\left(z\right)=6\!{\wp^{2}}\left(z\right)-\tfrac{1}{2}g_{2},</Math> <Math equation-number="23.3.13" mode="display" xml:id="C23.S3.E13">\wp'''\left(z\right)=12\wp\left(z\right)\wp'\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C23.S3.SS2.p1.s2">
+See also (23.2.7) and (23.2.8).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

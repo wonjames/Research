@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S14">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C22.S14.SS1">
+<title>Indefinite Integrals of Jacobian Elliptic Functions</title>          
+<para xml:id="C22.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S14.SS1.p1.s1">
+With <Math mode="inline" xml:id="C22.S14.SS1.p1.m1">x\in\mathbb{R}</Math> , <Math equation-number="22.14.1" mode="display" xml:id="C22.S14.E1">\int\operatorname{sn}\left(x,k\right)\mathrm{d}x=k^{-1}\ln\left(\operatorname{ dn}\left(x,k\right)-k\operatorname{cn}\left(x,k\right)\right),</Math> , <Math equation-number="22.14.2" mode="display" xml:id="C22.S14.E2">\int\operatorname{cn}\left(x,k\right)\mathrm{d}x=k^{-1}\operatorname{Arccos} \left(\operatorname{dn}\left(x,k\right)\right),</Math> , <Math equation-number="22.14.3" mode="display" xml:id="C22.S14.E3">\int\operatorname{dn}\left(x,k\right)\mathrm{d}x=\operatorname{Arcsin}\left( \operatorname{sn}\left(x,k\right)\right)=\operatorname{am}\left(x,k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C22.S14.SS1.p1.s2">
+The branches of the inverse trigonometric functions are chosen so that they are continuous.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C22.S14.SS1.p1.s3">
+See §22.16(i) for <Math mode="inline" xml:id="C22.S14.SS1.p1.m2">\operatorname{am}\left(z,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS1.p2">
+
+</para>
+ 
+<para xml:id="C22.S14.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C22.S14.SS1.p3.s1">
+Secondly, <Math equation-number="22.14.4" mode="display" xml:id="C22.S14.E4">\int\operatorname{cd}\left(x,k\right)\mathrm{d}x=k^{-1}\ln\left(\operatorname{ nd}\left(x,k\right)+k\operatorname{sd}\left(x,k\right)\right),</Math> <Math equation-number="22.14.5" mode="display" xml:id="C22.S14.E5">\int\operatorname{sd}\left(x,k\right)\mathrm{d}x=(kk^{\prime})^{-1} \operatorname{Arcsin}\left(-k\operatorname{cd}\left(x,k\right)\right),</Math> <Math equation-number="22.14.6" mode="display" xml:id="C22.S14.E6">\int\operatorname{nd}\left(x,k\right)\mathrm{d}x={k^{\prime}}^{-1} \operatorname{Arccos}\left(\operatorname{cd}\left(x,k\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C22.S14.SS1.p3.s2">
+Again, the branches of the inverse trigonometric functions must be continuous.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C22.S14.SS1.p4.s1">
+Thirdly, with <Math mode="inline" xml:id="C22.S14.SS1.p4.m1">-K&lt;x&lt;K</Math> , <Math equation-number="22.14.7" mode="display" xml:id="C22.S14.E7">\int\operatorname{dc}\left(x,k\right)\mathrm{d}x=\ln\left(\operatorname{nc} \left(x,k\right)+\operatorname{sc}\left(x,k\right)\right),</Math> <Math equation-number="22.14.8" mode="display" xml:id="C22.S14.E8">\int\operatorname{nc}\left(x,k\right)\mathrm{d}x={k^{\prime}}^{-1}\ln\left( \operatorname{dc}\left(x,k\right)+k^{\prime}\operatorname{sc}\left(x,k\right) \right),</Math> <Math equation-number="22.14.9" mode="display" xml:id="C22.S14.E9">\int\operatorname{sc}\left(x,k\right)\mathrm{d}x={k^{\prime}}^{-1}\ln\left( \operatorname{dc}\left(x,k\right)+k^{\prime}\operatorname{nc}\left(x,k\right) \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C22.S14.SS1.p5.s1">
+Lastly, with <Math mode="inline" xml:id="C22.S14.SS1.p5.m1">0&lt;x&lt;2K</Math> ,
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C22.S14.SS1.p6.s1">
+ <Math equation-number="22.14.10" mode="display" xml:id="C22.S14.E10">\int\operatorname{ns}\left(x,k\right)\mathrm{d}x=\ln\left(\operatorname{ds} \left(x,k\right)-\operatorname{cs}\left(x,k\right)\right),</Math> <Math equation-number="22.14.11" mode="display" xml:id="C22.S14.E11">\int\operatorname{ds}\left(x,k\right)\mathrm{d}x=\ln\left(\operatorname{ns} \left(x,k\right)-\operatorname{cs}\left(x,k\right)\right),</Math> <Math equation-number="22.14.12" mode="display" xml:id="C22.S14.E12">\int\operatorname{cs}\left(x,k\right)\mathrm{d}x=\ln\left(\operatorname{ns} \left(x,k\right)-\operatorname{ds}\left(x,k\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C22.S14.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C22.S14.SS1.p7.s1">
+For alternative, and symmetric, formulations of the results in this subsection seeCarlson (2006a).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S14.SS2">
+<title>Indefinite Integrals of Powers of Jacobian Elliptic Functions</title>         
+<para xml:id="C22.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C22.S14.SS2.p1.s1">
+See §22.16(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C22.S14.SS2.p1.s2">
+The indefinite integral of the 3rd power of a Jacobian function can be expressed as an elementary function of Jacobian functions and a product of Jacobian functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C22.S14.SS2.p1.s3">
+The indefinite integral of a 4th power can be expressed as a complete elliptic integral, a polynomial in Jacobian functions, and the integration variable.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C22.S14.SS2.p1.s4">
+SeeLawden (1989, pp. 87–88).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C22.S14.SS2.p1.s5">
+See alsoGradshteyn and Ryzhik (2000, pp. 618–619) and Carlson (2006a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C22.S14.SS2.p2.s1">
+For indefinite integrals of squares and products of even powers of Jacobian functions in terms of symmetric elliptic integrals, seeCarlson (2006b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S14.SS3">
+<title>Other Indefinite Integrals</title>        
+ 
+<para xml:id="C22.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C22.S14.SS3.p1.s1">
+In (22.14.13)–(22.14.15),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C22.S14.SS3.p1.s2">
+<Math mode="inline" xml:id="C22.S14.SS3.p1.m1">0&lt;x&lt;2K</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C22.S14.SS3.p1.s3">
+<Math equation-number="22.14.13" mode="display" xml:id="C22.S14.E13">\int\frac{\mathrm{d}x}{\operatorname{sn}\left(x,k\right)}=\ln\left(\frac{ \operatorname{sn}\left(x,k\right)}{\operatorname{cn}\left(x,k\right)+ \operatorname{dn}\left(x,k\right)}\right),</Math> <Math equation-number="22.14.14" mode="display" xml:id="C22.S14.E14">\int\frac{\operatorname{cn}\left(x,k\right)\mathrm{d}x}{\operatorname{sn}\left (x,k\right)}=\frac{1}{2}\ln\left(\frac{1-\operatorname{dn}\left(x,k\right)}{1+ \operatorname{dn}\left(x,k\right)}\right),</Math> <Math equation-number="22.14.15" mode="display" xml:id="C22.S14.E15">\int\frac{\operatorname{cn}\left(x,k\right)\mathrm{d}x}{{\operatorname{sn}^{2} }\left(x,k\right)}=-\frac{\operatorname{dn}\left(x,k\right)}{\operatorname{sn} \left(x,k\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C22.S14.SS3.p1.s4">
+For additional results see Gradshteyn and Ryzhik (2000, pp. 619–622) andLawden (1989, Chapter 3).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S14.SS4">
+<title>Definite Integrals</title>        
+ 
+ 
+<para xml:id="C22.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C22.S14.SS4.p1.s1">
+ <Math equation-number="22.14.16" mode="display" xml:id="C22.S14.E16">\int_{0}^{K\left(k\right)}\ln\left(\operatorname{sn}\left(t,k\right)\right) \mathrm{d}t=-\tfrac{1}{4}\!{K^{\prime}}\left(k\right)-\tfrac{1}{2}\!K\left(k \right)\ln k,</Math> <Math equation-number="22.14.17" mode="display" xml:id="C22.S14.E17">\int_{0}^{K\left(k\right)}\ln\left(\operatorname{cn}\left(t,k\right)\right) \mathrm{d}t=-\tfrac{1}{4}\!{K^{\prime}}\left(k\right)+\tfrac{1}{2}\!K\left(k \right)\ln\left(k^{\prime}/k\right),</Math> <Math equation-number="22.14.18" mode="display" xml:id="C22.S14.E18">\int_{0}^{K\left(k\right)}\ln\left(\operatorname{dn}\left(t,k\right)\right) \mathrm{d}t=\tfrac{1}{2}\!K\left(k\right)\ln k^{\prime}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C22.S14.SS4.p2.s1">
+Corresponding results for the subsidiary functions follow by subtraction; compare (22.2.10).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S9">
+<title>Laurent and Other Power Series</title>           
+<para xml:id="C23.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S9.p1.s1">
+Let <Math mode="inline" xml:id="C23.S9.p1.m1">z_{0}(\neq 0)</Math> be the nearest lattice point to the origin, and define <Math equation-number="23.9.1" mode="display" xml:id="C23.S9.E1">c_{n}=(2n-1)\sum_{w\in\mathbb{L}\setminus\{0\}}w^{-2n}, if n=2,3,4,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C23.S9.p1.s2">
+Then <Math equation-number="23.9.2" mode="display" xml:id="C23.S9.E2">\wp\left(z\right)=\frac{1}{z^{2}}+\sum_{n=2}^{\infty}c_{n}z^{2n-2}, if 0&lt;|z|&lt;|z_{0}|,</Math> <Math equation-number="23.9.3" mode="display" xml:id="C23.S9.E3">\zeta\left(z\right)=\frac{1}{z}-\sum_{n=2}^{\infty}\frac{c_{n}}{2n-1}z^{2n-1}, if 0&lt;|z|&lt;|z_{0}|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C23.S9.p1.s3">
+Here <Math equation-number="23.9.4" mode="display" xml:id="C23.S9.E4">c_{2}=\frac{1}{20}g_{2},c_{3}=\frac{1}{28}g_{3},</Math> <Math equation-number="23.9.5" mode="display" xml:id="C23.S9.E5">c_{n}=\frac{3}{(2n+1)(n-3)}\sum_{m=2}^{n-2}c_{m}c_{n-m}, if n\geq 4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C23.S9.p1.s4">
+Explicit coefficients <Math mode="inline" xml:id="C23.S9.p1.m2">c_{n}</Math> in terms of <Math mode="inline" xml:id="C23.S9.p1.m3">c_{2}</Math> and <Math mode="inline" xml:id="C23.S9.p1.m4">c_{3}</Math> are given up to <Math mode="inline" xml:id="C23.S9.p1.m5">c_{19}</Math> in Abramowitz and Stegun (1964, p. 636).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C23.S9.p2.s1">
+For <Math mode="inline" xml:id="C23.S9.p2.m1">j=1,2,3</Math> , and with <Math mode="inline" xml:id="C23.S9.p2.m2">e_{j}</Math> as in §23.3(i),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C23.S9.p2.s2">
+<Math equation-number="23.9.6" mode="display" xml:id="C23.S9.E6">\wp\left(\omega_{j}+t\right)=e_{j}+(3e_{j}^{2}-5c_{2})t^{2}+(10c_{2}e_{j}+21c_ {3})t^{4}+(7c_{2}e_{j}^{2}+21c_{3}e_{j}+5c_{2}^{2})t^{6}+O\left(t^{8}\right),</Math> as <Math mode="inline" xml:id="C23.S9.p2.m3">t\to 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C23.S9.p2.s3">
+For the next four terms seeAbramowitz and Stegun (1964, (18.5.56)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C23.S9.p2.s4">
+Also,Abramowitz and Stegun (1964, (18.5.25)) supplies the first 22 terms in the reverted form of (23.9.2) as <Math mode="inline" xml:id="C23.S9.p2.m4">1/\wp\left(z\right)\to 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C23.S9.p3.s1">
+For <Math mode="inline" xml:id="C23.S9.p3.m1">z\in\mathbb{C}</Math> <Math equation-number="23.9.7" mode="display" xml:id="C23.S9.E7">\sigma\left(z\right)=\sum_{m,n=0}^{\infty}a_{m,n}(10c_{2})^{m}(56c_{3})^{n} \frac{z^{4m+6n+1}}{(4m+6n+1)!}</Math> , where <Math mode="inline" xml:id="C23.S9.p3.m2">a_{0,0}=1</Math> , <Math mode="inline" xml:id="C23.S9.p3.m3">a_{m,n}=0</Math> if either <Math mode="inline" xml:id="C23.S9.p3.m4">m</Math> or <Math mode="inline" xml:id="C23.S9.p3.m5">n&lt;0</Math> , and <Math equation-number="23.9.8" mode="display" xml:id="C23.S9.E8">a_{m,n}=3(m+1)a_{m+1,n-1}+\tfrac{16}{3}(n+1)a_{m-2,n+1}-\tfrac{1}{3}(2m+3n-1)( 4m+6n-1)a_{m-1,n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C23.S9.p3.s2">
+For <Math mode="inline" xml:id="C23.S9.p3.m6">a_{m,n}</Math> with <Math mode="inline" xml:id="C23.S9.p3.m7">m=0,1,\dots,12</Math> and <Math mode="inline" xml:id="C23.S9.p3.m8">n=0,1,\dots,8</Math> , seeAbramowitz and Stegun (1964, p. 637).
+</sentence>
+
+</para>
+ 
+</section>

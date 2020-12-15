@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C6.S2">
+<title>Definitions and Interrelations</title>        
+ 
+<subsection xml:id="C6.S2.SS1">
+<title>Exponential and Logarithmic Integrals</title>        
+      
+<para xml:id="C6.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C6.S2.SS1.p1.s1">
+The principal value of the exponential integral <Math mode="inline" xml:id="C6.S2.SS1.p1.m1">E_{1}\left(z\right)</Math> is defined by <Math equation-number="6.2.1" mode="display" xml:id="C6.S2.E1">E_{1}\left(z\right)=\int_{z}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t, if z\neq 0,</Math> where the path does not cross the negative real axis or pass through the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C6.S2.SS1.p1.s2">
+As in the case of the logarithm (§4.2(i)) there is a cutalong the interval <Math mode="inline" xml:id="C6.S2.SS1.p1.m2">(-\infty,0]</Math> and the principal value is two-valued on <Math mode="inline" xml:id="C6.S2.SS1.p1.m3">(-\infty,0)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C6.S2.SS1.p2.s1">
+Unless indicated otherwise, it is assumed throughout the DLMF that <Math mode="inline" xml:id="C6.S2.SS1.p2.m1">E_{1}\left(z\right)</Math> assumes its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C6.S2.SS1.p2.s2">
+This is also true of the functions <Math mode="inline" xml:id="C6.S2.SS1.p2.m2">\mathrm{Ci}\left(z\right)</Math> and <Math mode="inline" xml:id="C6.S2.SS1.p2.m3">\mathrm{Chi}\left(z\right)</Math> defined in §6.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C6.S2.SS1.p2.s3">
+<Math equation-number="6.2.2" mode="display" xml:id="C6.S2.E2">E_{1}\left(z\right)=e^{-z}\int_{0}^{\infty}\frac{e^{-t}}{t+z}\mathrm{d}t, if |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C6.S2.SS1.p2.s4">
+<Math equation-number="6.2.3" mode="display" xml:id="C6.S2.E3">\mathrm{Ein}\left(z\right)=\int_{0}^{z}\frac{1-e^{-t}}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C6.S2.SS1.p2.s5">
+<Math mode="inline" xml:id="C6.S2.SS1.p2.m4">\mathrm{Ein}\left(z\right)</Math> is sometimes called the complementary exponential integral.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="8" xml:id="C6.S2.SS1.p2.s6">
+It is entire.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="9" xml:id="C6.S2.SS1.p2.s7">
+<Math equation-number="6.2.4" mode="display" xml:id="C6.S2.E4">E_{1}\left(z\right)=\mathrm{Ein}\left(z\right)-\ln z-\gamma</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C6.S2.SS1.p3.s1">
+In the next three equations <Math mode="inline" xml:id="C6.S2.SS1.p3.m1">x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C6.S2.SS1.p3.s2">
+<Math equation-number="6.2.5" mode="display" xml:id="C6.S2.E5">\mathrm{Ei}\left(x\right)=-\,\pvint_{-x}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t= \pvint_{-\infty}^{x}\frac{e^{t}}{t}\mathrm{d}t,</Math> <Math equation-number="6.2.6" mode="display" xml:id="C6.S2.E6">\mathrm{Ei}\left(-x\right)=-\int_{x}^{\infty}\frac{e^{-t}}{t}\mathrm{d}t=-E_{1 }\left(x\right),</Math> <Math equation-number="6.2.7" mode="display" xml:id="C6.S2.E7">\mathrm{Ei}\left(\pm x\right)=-\mathrm{Ein}\left(\mp x\right)+\ln x+\gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C6.S2.SS1.p3.s3">
+( <Math mode="inline" xml:id="C6.S2.SS1.p3.m3">\mathrm{Ei}\left(x\right)</Math> is undefined when <Math mode="inline" xml:id="C6.S2.SS1.p3.m4">x=0</Math> , or when <Math mode="inline" xml:id="C6.S2.SS1.p3.m5">x</Math> is not real.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C6.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C6.S2.SS1.p4.s1">
+The logarithmic integral is defined by <Math equation-number="6.2.8" mode="display" xml:id="C6.S2.E8">\mathrm{li}\left(x\right)=\pvint_{0}^{x}\frac{\mathrm{d}t}{\ln t}=\mathrm{Ei} \left(\ln x\right), if x&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C6.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C6.S2.SS1.p5.s1">
+The generalized exponential integral <Math mode="inline" xml:id="C6.S2.SS1.p5.m1">E_{p}\left(z\right)</Math> , <Math mode="inline" xml:id="C6.S2.SS1.p5.m2">p\in\mathbb{C}</Math> , is treated in Chapter 8.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S2.SS2">
+<title>Sine and Cosine Integrals</title>        
+    
+ 
+<para xml:id="C6.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C6.S2.SS2.p1.s1">
+ <Math equation-number="6.2.9" mode="display" xml:id="C6.S2.E9">\mathrm{Si}\left(z\right)=\int_{0}^{z}\frac{\sin t}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C6.S2.SS2.p1.s2">
+<Math mode="inline" xml:id="C6.S2.SS2.p1.m1">\mathrm{Si}\left(z\right)</Math> is an odd entire function.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C6.S2.SS2.p1.s3">
+<Math equation-number="6.2.10" mode="display" xml:id="C6.S2.E10">\mathrm{si}\left(z\right)=-\int_{z}^{\infty}\frac{\sin t}{t}\mathrm{d}t= \mathrm{Si}\left(z\right)-\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C6.S2.SS2.p1.s4">
+<Math equation-number="6.2.11" mode="display" xml:id="C6.S2.E11">\mathrm{Ci}(z)=-\int_{z}^{\infty}\frac{\cos t}{t}\mathrm{d}t,</Math> where the path does not cross the negative real axis or pass through theorigin.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C6.S2.SS2.p1.s5">
+This is the principal value; compare (6.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="20" xml:id="C6.S2.SS2.p1.s6">
+<Math equation-number="6.2.12" mode="display" xml:id="C6.S2.E12">\mathrm{Cin}\left(z\right)=\int_{0}^{z}\frac{1-\cos t}{t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="21" xml:id="C6.S2.SS2.p1.s7">
+<Math mode="inline" xml:id="C6.S2.SS2.p1.m2">\mathrm{Cin}\left(z\right)</Math> is an even entire function.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="22" xml:id="C6.S2.SS2.p1.s8">
+<Math equation-number="6.2.13" mode="display" xml:id="C6.S2.E13">\mathrm{Ci}\left(z\right)=-\mathrm{Cin}\left(z\right)+\ln z+\gamma</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C6.S2.Px1">
+<title>Values at Infinity</title>     
+<para xml:id="C6.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C6.S2.Px1.p1.s1">
+ <Math equation-number="6.2.14" mode="display" xml:id="C6.S2.E14">\lim_{x\to\infty}\mathrm{Si}\left(x\right)=\tfrac{1}{2}\pi,\lim_{x\to\infty}\mathrm{Ci}\left(x\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C6.S2.Px2">
+<title>Hyperbolic Analogs of the Sine and Cosine Integrals</title>     
+<para xml:id="C6.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C6.S2.Px2.p1.s1">
+ <Math equation-number="6.2.15" mode="display" xml:id="C6.S2.E15">\mathrm{Shi}\left(z\right)=\int_{0}^{z}\frac{\sinh t}{t}\mathrm{d}t,</Math> , <Math equation-number="6.2.16" mode="display" xml:id="C6.S2.E16">\mathrm{Chi}\left(z\right)=\gamma+\ln z+\int_{0}^{z}\frac{\cosh t-1}{t}\mathrm {d}t</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C6.S2.SS3">
+<title>Auxiliary Functions</title>        
+  
+<para xml:id="C6.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C6.S2.SS3.p1.s1">
+ <Math equation-number="6.2.17" mode="display" xml:id="C6.S2.E17">\mathrm{f}\left(z\right)=\phantom{+}\mathrm{Ci}\left(z\right)\sin z-\mathrm{si }\left(z\right)\cos z,</Math> , <Math equation-number="6.2.18" mode="display" xml:id="C6.S2.E18">\mathrm{g}\left(z\right)=-\mathrm{Ci}\left(z\right)\cos z-\mathrm{si}\left(z \right)\sin z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C6.S2.SS3.p1.s2">
+<Math equation-number="6.2.19" mode="display" xml:id="C6.S2.E19">\mathrm{Si}\left(z\right)=\tfrac{1}{2}\pi-\mathrm{f}\left(z\right)\cos z- \mathrm{g}\left(z\right)\sin z,</Math> , <Math equation-number="6.2.20" mode="display" xml:id="C6.S2.E20">\mathrm{Ci}\left(z\right)=\mathrm{f}\left(z\right)\sin z-\mathrm{g}\left(z \right)\cos z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C6.S2.SS3.p1.s3">
+<Math equation-number="6.2.21" mode="display" xml:id="C6.S2.E21">\frac{\mathrm{d}\mathrm{f}\left(z\right)}{\mathrm{d}z}=-\mathrm{g}\left(z \right),\frac{\mathrm{d}\mathrm{g}\left(z\right)}{\mathrm{d}z}=\mathrm{f}\left(z\right )-\frac{1}{z}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

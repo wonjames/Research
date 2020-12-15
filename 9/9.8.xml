@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S8">
+<title>Modulus and Phase</title>         
+<subsection xml:id="C9.S8.SS1">
+<title>Definitions</title>          
+<para xml:id="C9.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S8.SS1.p1.s1">
+Throughout this section <Math mode="inline" xml:id="C9.S8.SS1.p1.m1">x</Math> is real and nonpositive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S8.SS1.p1.s2">
+<Math equation-number="9.8.1" mode="display" xml:id="C9.S8.E1">\mathrm{Ai}\left(x\right)=M\left(x\right)\sin\theta\left(x\right),</Math> , <Math equation-number="9.8.2" mode="display" xml:id="C9.S8.E2">\mathrm{Bi}\left(x\right)=M\left(x\right)\cos\theta\left(x\right),</Math> <Math equation-number="9.8.3" mode="display" xml:id="C9.S8.E3">M\left(x\right)=\sqrt{{\mathrm{Ai}^{2}}\left(x\right)+{\mathrm{Bi}^{2}}\left(x \right)},</Math> , <Math equation-number="9.8.4" mode="display" xml:id="C9.S8.E4">\theta\left(x\right)=\operatorname{arctan}\left(\mathrm{Ai}\left(x\right)/ \mathrm{Bi}\left(x\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C9.S8.SS1.p1.s3">
+<Math equation-number="9.8.5" mode="display" xml:id="C9.S8.E5">\mathrm{Ai}'\left(x\right)=N\left(x\right)\sin\phi\left(x\right),</Math> , <Math equation-number="9.8.6" mode="display" xml:id="C9.S8.E6">\mathrm{Bi}'\left(x\right)=N\left(x\right)\cos\phi\left(x\right),</Math> <Math equation-number="9.8.7" mode="display" xml:id="C9.S8.E7">N\left(x\right)=\sqrt{{\mathrm{Ai}'^{2}}\left(x\right)+{\mathrm{Bi}'^{2}}\left (x\right)},</Math> , <Math equation-number="9.8.8" mode="display" xml:id="C9.S8.E8">\phi\left(x\right)=\operatorname{arctan}\left(\mathrm{Ai}'\left(x\right)/ \mathrm{Bi}'\left(x\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C9.S8.SS1.p2.s1">
+Graphs of <Math mode="inline" xml:id="C9.S8.SS1.p2.m1">M\left(x\right)</Math> and <Math mode="inline" xml:id="C9.S8.SS1.p2.m2">N\left(x\right)</Math> are included in §9.3(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C9.S8.SS1.p2.s2">
+The branches of <Math mode="inline" xml:id="C9.S8.SS1.p2.m3">\theta\left(x\right)</Math> and <Math mode="inline" xml:id="C9.S8.SS1.p2.m4">\phi\left(x\right)</Math> are continuous and fixed by <Math mode="inline" xml:id="C9.S8.SS1.p2.m5">\theta\left(0\right)=-\phi\left(0\right)=\tfrac{1}{6}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C9.S8.SS1.p2.s3">
+(These definitions of <Math mode="inline" xml:id="C9.S8.SS1.p2.m6">\theta\left(x\right)</Math> and <Math mode="inline" xml:id="C9.S8.SS1.p2.m7">\phi\left(x\right)</Math> differ fromAbramowitz and Stegun (1964, Chapter 10), and agree more closely with those used in Miller (1946) and Olver (1997b, Chapter 11).)
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S8.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C9.S8.SS1.p3.s1">
+In terms of Bessel functions, and with <Math mode="inline" xml:id="C9.S8.SS1.p3.m1">\xi=\tfrac{2}{3}|x|^{3/2}</Math> , <Math equation-number="9.8.9" mode="display" xml:id="C9.S8.E9">|x|^{1/2}{M^{2}}\left(x\right)=\tfrac{1}{2}\xi\left({J_{1/3}^{2}}\left(\xi \right)+{Y_{1/3}^{2}}\left(\xi\right)\right),</Math> , <Math equation-number="9.8.10" mode="display" xml:id="C9.S8.E10">|x|^{-1/2}{N^{2}}\left(x\right)=\tfrac{1}{2}\xi\left({J_{2/3}^{2}}\left(\xi \right)+{Y_{2/3}^{2}}\left(\xi\right)\right),</Math> <Math equation-number="9.8.11" mode="display" xml:id="C9.S8.E11">\theta\left(x\right)=\tfrac{2}{3}\pi+\operatorname{arctan}\left(Y_{1/3}\left( \xi\right)/J_{1/3}\left(\xi\right)\right),</Math> , <Math equation-number="9.8.12" mode="display" xml:id="C9.S8.E12">\phi\left(x\right)=\tfrac{1}{3}\pi+\operatorname{arctan}\left(Y_{2/3}\left(\xi \right)/J_{2/3}\left(\xi\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S8.SS2">
+<title>Identities</title>        
+  
+<para xml:id="C9.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C9.S8.SS2.p1.s1">
+Primes denote differentiations with respect to <Math mode="inline" xml:id="C9.S8.SS2.p1.m1">x</Math> , which is continued to be assumed real and nonpositive.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C9.S8.SS2.p1.s2">
+<Math equation-number="9.8.13" mode="display" xml:id="C9.S8.E13">M\left(x\right)N\left(x\right)\sin\left(\theta\left(x\right)-\phi\left(x\right )\right)=\pi^{-1},</Math> <Math equation-number="9.8.14" mode="display" xml:id="C9.S8.E14">{M^{2}}\left(x\right)\theta'\left(x\right)=-\pi^{-1}, ,{N^{2}}\left(x\right)\phi'\left(x\right)=\pi^{-1}x, ,N\left(x\right)N'\left(x\right)=xM\left(x\right)M'\left(x\right), ,</Math> <Math equation-number="9.8.15" mode="display" xml:id="C9.S8.E15">{N^{2}}\left(x\right)={M'^{2}}\left(x\right)+{M^{2}}\left(x\right){\theta'^{2} }\left(x\right)={M'^{2}}(x)+\pi^{-2}{M^{-2}}\left(x\right),</Math> , <Math equation-number="9.8.16" mode="display" xml:id="C9.S8.E16">x^{2}{M^{2}}\left(x\right)={N'^{2}}\left(x\right)+{N^{2}}\left(x\right){\phi'^ {2}}\left(x\right)={N'^{2}}\left(x\right)+\pi^{-2}x^{2}{N^{-2}}\left(x\right),</Math> <Math equation-number="9.8.17" mode="display" xml:id="C9.S8.E17">\tan\left(\theta\left(x\right)-\phi\left(x\right)\right)=1/(\pi M\left(x\right )M'\left(x\right))=-M\left(x\right)\theta'\left(x\right)/M'\left(x\right),</Math> <Math equation-number="9.8.18" mode="display" xml:id="C9.S8.E18">M''\left(x\right)=xM\left(x\right)+\pi^{-2}{M^{-3}}\left(x\right), ,{M^{2}}'''\left(x\right)-4x{M^{2}}'\left(x\right)-2{M^{2}}\left(x\right)=0,</Math> <Math equation-number="9.8.19" mode="display" xml:id="C9.S8.E19">{\theta'^{2}}\left(x\right)+\tfrac{1}{2}(\theta'''\left(x\right)/\theta'\left( x\right))-\tfrac{3}{4}(\theta''\left(x\right)/\theta'\left(x\right))^{2}=-x</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S8.SS3">
+<title>Monotonicity</title>        
+  
+<para xml:id="C9.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C9.S8.SS3.p1.s1">
+As <Math mode="inline" xml:id="C9.S8.SS3.p1.m1">x</Math> increases from <Math mode="inline" xml:id="C9.S8.SS3.p1.m2">-\infty</Math> to <Math mode="inline" xml:id="C9.S8.SS3.p1.m3">0</Math> each of the functions <Math mode="inline" xml:id="C9.S8.SS3.p1.m4">M\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m5">M'\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m6">|x|^{-1/4}N\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m7">M\left(x\right)N\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m8">\theta'\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m9">\phi'\left(x\right)</Math> is increasing, and each of the functions <Math mode="inline" xml:id="C9.S8.SS3.p1.m10">|x|^{1/4}M\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m11">\theta\left(x\right)</Math> , <Math mode="inline" xml:id="C9.S8.SS3.p1.m12">\phi\left(x\right)</Math> is decreasing.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S8.SS4">
+<title>Asymptotic Expansions</title>        
+  
+<para xml:id="C9.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C9.S8.SS4.p1.s1">
+As <Math mode="inline" xml:id="C9.S8.SS4.p1.m1">x\rightarrow-\infty</Math> <Math equation-number="9.8.20" mode="display" xml:id="C9.S8.E20">{M^{2}}\left(x\right)\sim\frac{1}{\pi(-x)^{1/2}}\sum_{k=0}^{\infty}\frac{1 \cdot 3\cdot 5\cdots(6k-1)}{k!(96)^{k}}\frac{1}{x^{3k}}</Math> , <Math equation-number="9.8.21" mode="display" xml:id="C9.S8.E21">{N^{2}}\left(x\right)\sim\frac{(-x)^{1/2}}{\pi}\sum_{k=0}^{\infty}\frac{1\cdot 3 \cdot 5\cdots(6k-1)}{k!(96)^{k}}\frac{1+6k}{1-6k}\frac{1}{x^{3k}}</Math> ,, <Math equation-number="9.8.22" mode="display" xml:id="C9.S8.E22">\theta\left(x\right)\sim\frac{\pi}{4}+\frac{2}{3}(-x)^{3/2}\left(1+\frac{5}{32 }\frac{1}{x^{3}}+\frac{1105}{6144}\frac{1}{x^{6}}+\frac{82825}{65536}\frac{1}{ x^{9}}+\frac{12820\;31525}{587\;20256}\frac{1}{x^{12}}+\cdots\right),</Math> , <Math equation-number="9.8.23" mode="display" xml:id="C9.S8.E23">\phi\left(x\right)\sim-\frac{\pi}{4}+\frac{2}{3}(-x)^{3/2}\left(1-\frac{7}{32} \frac{1}{x^{3}}-\frac{1463}{6144}\frac{1}{x^{6}}-\frac{4\;95271}{3\;27680} \frac{1}{x^{9}}-\frac{2065\;30429}{83\;88608}\frac{1}{x^{12}}-\cdots\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S8.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C9.S8.SS4.p2.s1">
+In (9.8.20) and (9.8.21) the remainder after <Math mode="inline" xml:id="C9.S8.SS4.p2.m1">n</Math> terms does not exceed the <Math mode="inline" xml:id="C9.S8.SS4.p2.m2">(n+1)</Math> th term in absolute value and is of the same sign, provided that <Math mode="inline" xml:id="C9.S8.SS4.p2.m3">n\geq 0</Math> for (9.8.20) and <Math mode="inline" xml:id="C9.S8.SS4.p2.m4">n\geq 1</Math> for (9.8.21).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S8.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C9.S8.SS4.p3.s1">
+For higher terms in (9.8.22) and (9.8.23) seeFabijonas et al. (2004).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C9.S8.SS4.p3.s2">
+Also, approximate values (25S) of the coefficients of the powers <Math mode="inline" xml:id="C9.S8.SS4.p3.m1">{x^{-15}}</Math> , <Math mode="inline" xml:id="C9.S8.SS4.p3.m2">{x^{-18}}</Math> , <Math mode="inline" xml:id="C9.S8.SS4.p3.m3">\ldots</Math> , <Math mode="inline" xml:id="C9.S8.SS4.p3.m4">{x^{-56}}</Math> are available inSherry (1959).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

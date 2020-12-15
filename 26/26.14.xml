@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S14">
+<title>Permutations: Order Notation</title>        
+  
+<subsection xml:id="C26.S14.SS1">
+<title>Definitions</title>        
+ 
+<para xml:id="C26.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S14.SS1.p1.s1">
+The set <Math mode="inline" xml:id="C26.S14.SS1.p1.m1">\mathfrak{S}_{n}</Math> (§26.13) can be viewed as the collection of all ordered lists of elements of <Math mode="inline" xml:id="C26.S14.SS1.p1.m2">\{1,2,\ldots,n\}</Math> : <Math mode="inline" xml:id="C26.S14.SS1.p1.m3">\{\sigma(1)\sigma(2)\cdots\sigma(n)\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S14.SS1.p1.s2">
+As an example, <Math mode="inline" xml:id="C26.S14.SS1.p1.m4">35247816</Math> is an element of <Math mode="inline" xml:id="C26.S14.SS1.p1.m5">\mathfrak{S}_{8}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S14.SS1.p1.s3">
+The inversion number is the number of pairs of elements for which the larger element precedes the smaller: <Math equation-number="26.14.1" mode="display" xml:id="C26.S14.E1">\mathop{\mathrm{inv}}(\sigma)=\sum_{\begin{subarray}{c}1\leq j&lt;k\leq n\\ \sigma(j)&gt;\sigma(k)\end{subarray}}1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C26.S14.SS1.p1.s4">
+Equivalently, this is the sum over <Math mode="inline" xml:id="C26.S14.SS1.p1.m7">1\leq j&lt;n</Math> of the number of integers less than <Math mode="inline" xml:id="C26.S14.SS1.p1.m8">\sigma(j)</Math> that lie in positions to the right of the <Math mode="inline" xml:id="C26.S14.SS1.p1.m9">j</Math> th position: <Math mode="inline" xml:id="C26.S14.SS1.p1.m10">\mathop{\mathrm{inv}}(35247816)=2+3+1+1+2+2+0=11</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C26.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C26.S14.SS1.p2.s1">
+A descent of a permutation is a pair of adjacent elements for which the first is larger than the second.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C26.S14.SS1.p2.s2">
+The permutation <Math mode="inline" xml:id="C26.S14.SS1.p2.m1">35247816</Math> has two descents: <Math mode="inline" xml:id="C26.S14.SS1.p2.m2">52</Math> and <Math mode="inline" xml:id="C26.S14.SS1.p2.m3">81</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C26.S14.SS1.p2.s3">
+The major index is the sum of all positions that mark the first element of a descent: <Math equation-number="26.14.2" mode="display" xml:id="C26.S14.E2">\mathop{\mathrm{maj}}(\sigma)=\sum_{\begin{subarray}{c}1\leq j&lt;n\\ \sigma(j)&gt;\sigma(j+1)\end{subarray}}j</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C26.S14.SS1.p2.s4">
+For example, <Math mode="inline" xml:id="C26.S14.SS1.p2.m5">\mathop{\mathrm{maj}}(35247816)=2+6=8</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C26.S14.SS1.p2.s5">
+The major index is also called the greater index of the permutation.
+</sentence>
+
+</para>
+      
+<para xml:id="C26.S14.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C26.S14.SS1.p3.s1">
+The Eulerian number, denoted <Math mode="inline" xml:id="C26.S14.SS1.p3.m1">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k</Math> }, is the number of permutations in <Math mode="inline" xml:id="C26.S14.SS1.p3.m3">\mathfrak{S}_{n}</Math> with exactly <Math mode="inline" xml:id="C26.S14.SS1.p3.m4">k</Math> descents.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C26.S14.SS1.p3.s2">
+An excedance in <Math mode="inline" xml:id="C26.S14.SS1.p3.m5">\sigma\in\mathfrak{S}_{n}</Math> is a position <Math mode="inline" xml:id="C26.S14.SS1.p3.m6">j</Math> for which <Math mode="inline" xml:id="C26.S14.SS1.p3.m7">\sigma(j)&gt;j</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C26.S14.SS1.p3.s3">
+Aweak excedance is a position <Math mode="inline" xml:id="C26.S14.SS1.p3.m8">j</Math> for which <Math mode="inline" xml:id="C26.S14.SS1.p3.m9">\sigma(j)\geq j</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C26.S14.SS1.p3.s4">
+The Eulerian number <Math mode="inline" xml:id="C26.S14.SS1.p3.m10">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k</Math> } is equal to the number of permutations in <Math mode="inline" xml:id="C26.S14.SS1.p3.m11">\mathfrak{S}_{n}</Math> with exactly <Math mode="inline" xml:id="C26.S14.SS1.p3.m12">k</Math> excedances.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="14" xml:id="C26.S14.SS1.p3.s5">
+It is also equal to the number of permutations in <Math mode="inline" xml:id="C26.S14.SS1.p3.m13">\mathfrak{S}_{n}</Math> with exactly <Math mode="inline" xml:id="C26.S14.SS1.p3.m14">k+1</Math> weak excedances.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="15" xml:id="C26.S14.SS1.p3.s6">
+See Table 26.14.1.
+</sentence>
+
+</para>
+ 
+         
+<sentence sentence-num-in-section="16" xml:id="C26.S14.T1.s1">
+Table 26.14.1: Eulerian numbers <Math mode="inline" xml:id="C26.S14.T1.m2">\genfrac{&amp;lt;}{&amp;gt;}{0.0pt}{}{n}{k</Math>} .
+</sentence>
+ 
+ 
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="1" xml:id="C26.S14.T1.t1.s1">
+<Math mode="inline" xml:id="C26.S14.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="2" xml:id="C26.S14.T1.t1.s2">
+<Math mode="inline" xml:id="C26.S14.T1.t1.r1.m2">k</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="3" xml:id="C26.S14.T1.t1.s3">
+0
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="4" xml:id="C26.S14.T1.t1.s4">
+1
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="5" xml:id="C26.S14.T1.t1.s5">
+2
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="6" xml:id="C26.S14.T1.t1.s6">
+3
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="7" xml:id="C26.S14.T1.t1.s7">
+4
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="8" xml:id="C26.S14.T1.t1.s8">
+5
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="9" xml:id="C26.S14.T1.t1.s9">
+6
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="10" xml:id="C26.S14.T1.t1.s10">
+7
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="11" xml:id="C26.S14.T1.t1.s11">
+8
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="12" xml:id="C26.S14.T1.t1.s12">
+9
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="13" xml:id="C26.S14.T1.t1.s13">
+0
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="14" xml:id="C26.S14.T1.t1.s14">
+1
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="15" xml:id="C26.S14.T1.t1.s15">
+1
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="16" xml:id="C26.S14.T1.t1.s16">
+1
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="17" xml:id="C26.S14.T1.t1.s17">
+2
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="18" xml:id="C26.S14.T1.t1.s18">
+1
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="19" xml:id="C26.S14.T1.t1.s19">
+1
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="20" xml:id="C26.S14.T1.t1.s20">
+3
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="21" xml:id="C26.S14.T1.t1.s21">
+1
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="22" xml:id="C26.S14.T1.t1.s22">
+4
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="23" xml:id="C26.S14.T1.t1.s23">
+1
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="24" xml:id="C26.S14.T1.t1.s24">
+4
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="25" xml:id="C26.S14.T1.t1.s25">
+1
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="26" xml:id="C26.S14.T1.t1.s26">
+11
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="27" xml:id="C26.S14.T1.t1.s27">
+11
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="28" xml:id="C26.S14.T1.t1.s28">
+1
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="29" xml:id="C26.S14.T1.t1.s29">
+5
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="30" xml:id="C26.S14.T1.t1.s30">
+1
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="31" xml:id="C26.S14.T1.t1.s31">
+26
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="32" xml:id="C26.S14.T1.t1.s32">
+66
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="33" xml:id="C26.S14.T1.t1.s33">
+26
+</sentence>
+
+<sentence sentence-num-in-section="50" sentence-num-in-table="34" xml:id="C26.S14.T1.t1.s34">
+1
+</sentence>
+
+<sentence sentence-num-in-section="51" sentence-num-in-table="35" xml:id="C26.S14.T1.t1.s35">
+6
+</sentence>
+
+<sentence sentence-num-in-section="52" sentence-num-in-table="36" xml:id="C26.S14.T1.t1.s36">
+1
+</sentence>
+
+<sentence sentence-num-in-section="53" sentence-num-in-table="37" xml:id="C26.S14.T1.t1.s37">
+57
+</sentence>
+
+<sentence sentence-num-in-section="54" sentence-num-in-table="38" xml:id="C26.S14.T1.t1.s38">
+302
+</sentence>
+
+<sentence sentence-num-in-section="55" sentence-num-in-table="39" xml:id="C26.S14.T1.t1.s39">
+302
+</sentence>
+
+<sentence sentence-num-in-section="56" sentence-num-in-table="40" xml:id="C26.S14.T1.t1.s40">
+57
+</sentence>
+
+<sentence sentence-num-in-section="57" sentence-num-in-table="41" xml:id="C26.S14.T1.t1.s41">
+1
+</sentence>
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="42" xml:id="C26.S14.T1.t1.s42">
+7
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="43" xml:id="C26.S14.T1.t1.s43">
+1
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="44" xml:id="C26.S14.T1.t1.s44">
+120
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="45" xml:id="C26.S14.T1.t1.s45">
+1191
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="46" xml:id="C26.S14.T1.t1.s46">
+2416
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="47" xml:id="C26.S14.T1.t1.s47">
+1191
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="48" xml:id="C26.S14.T1.t1.s48">
+120
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="49" xml:id="C26.S14.T1.t1.s49">
+1
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="50" xml:id="C26.S14.T1.t1.s50">
+8
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="51" xml:id="C26.S14.T1.t1.s51">
+1
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="52" xml:id="C26.S14.T1.t1.s52">
+247
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="53" xml:id="C26.S14.T1.t1.s53">
+4293
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="54" xml:id="C26.S14.T1.t1.s54">
+15619
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="55" xml:id="C26.S14.T1.t1.s55">
+15619
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="56" xml:id="C26.S14.T1.t1.s56">
+4293
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="57" xml:id="C26.S14.T1.t1.s57">
+247
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="58" xml:id="C26.S14.T1.t1.s58">
+1
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="59" xml:id="C26.S14.T1.t1.s59">
+9
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="60" xml:id="C26.S14.T1.t1.s60">
+1
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="61" xml:id="C26.S14.T1.t1.s61">
+502
+</sentence>
+
+<sentence sentence-num-in-section="78" sentence-num-in-table="62" xml:id="C26.S14.T1.t1.s62">
+14608
+</sentence>
+
+<sentence sentence-num-in-section="79" sentence-num-in-table="63" xml:id="C26.S14.T1.t1.s63">
+88234
+</sentence>
+
+<sentence sentence-num-in-section="80" sentence-num-in-table="64" xml:id="C26.S14.T1.t1.s64">
+1 56190
+</sentence>
+
+<sentence sentence-num-in-section="81" sentence-num-in-table="65" xml:id="C26.S14.T1.t1.s65">
+88234
+</sentence>
+
+<sentence sentence-num-in-section="82" sentence-num-in-table="66" xml:id="C26.S14.T1.t1.s66">
+14608
+</sentence>
+
+<sentence sentence-num-in-section="83" sentence-num-in-table="67" xml:id="C26.S14.T1.t1.s67">
+502
+</sentence>
+
+<sentence sentence-num-in-section="84" sentence-num-in-table="68" xml:id="C26.S14.T1.t1.s68">
+1
+</sentence>
+
+<sentence sentence-num-in-section="85" sentence-num-in-table="69" xml:id="C26.S14.T1.t1.s69">
+10
+</sentence>
+
+<sentence sentence-num-in-section="86" sentence-num-in-table="70" xml:id="C26.S14.T1.t1.s70">
+1
+</sentence>
+
+<sentence sentence-num-in-section="87" sentence-num-in-table="71" xml:id="C26.S14.T1.t1.s71">
+1013
+</sentence>
+
+<sentence sentence-num-in-section="88" sentence-num-in-table="72" xml:id="C26.S14.T1.t1.s72">
+47840
+</sentence>
+
+<sentence sentence-num-in-section="89" sentence-num-in-table="73" xml:id="C26.S14.T1.t1.s73">
+4 55192
+</sentence>
+
+<sentence sentence-num-in-section="90" sentence-num-in-table="74" xml:id="C26.S14.T1.t1.s74">
+13 10354
+</sentence>
+
+<sentence sentence-num-in-section="91" sentence-num-in-table="75" xml:id="C26.S14.T1.t1.s75">
+13 10354
+</sentence>
+
+<sentence sentence-num-in-section="92" sentence-num-in-table="76" xml:id="C26.S14.T1.t1.s76">
+4 55192
+</sentence>
+
+<sentence sentence-num-in-section="93" sentence-num-in-table="77" xml:id="C26.S14.T1.t1.s77">
+47840
+</sentence>
+
+<sentence sentence-num-in-section="94" sentence-num-in-table="78" xml:id="C26.S14.T1.t1.s78">
+1013
+</sentence>
+
+<sentence sentence-num-in-section="95" sentence-num-in-table="79" xml:id="C26.S14.T1.t1.s79">
+1
+</sentence>
+ 
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S14.SS2">
+<title>Generating Functions</title>        
+   
+<para xml:id="C26.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C26.S14.SS2.p1.s1">
+ <Math equation-number="26.14.3" mode="display" xml:id="C26.S14.E3">\sum_{\sigma\in\mathfrak{S}_{n}}q^{\mathop{\mathrm{inv}}(\sigma)}=\sum_{\sigma \in\mathfrak{S}_{n}}q^{\mathop{\mathrm{maj}}(\sigma)}=\prod_{j=1}^{n}\frac{1-q ^{j}}{1-q}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C26.S14.SS2.p2.s1">
+ <Math equation-number="26.14.4" mode="display" xml:id="C26.S14.E4">\sum_{n,k=0}^{\infty}\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}x^{k}\,\frac{t^{n}}{n!}= \frac{1-x}{\exp((x-1)t)-x}, if |x|&lt;1,|t|&lt;1</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C26.S14.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C26.S14.SS2.p3.s1">
+ <Math equation-number="26.14.5" mode="display" xml:id="C26.S14.E5">\sum_{k=0}^{n-1}\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}\genfrac{(}{)}{0.0pt}{}{x+k}{n}=x ^{n}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S14.SS3">
+<title>Identities</title>        
+   
+<para xml:id="C26.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C26.S14.SS3.p1.s1">
+In this subsection <Math mode="inline" xml:id="C26.S14.SS3.p1.m1">S\left(n,k\right)</Math> is again the Stirling number of the second kind (§26.8), and <Math mode="inline" xml:id="C26.S14.SS3.p1.m2">B_{m}</Math> is the <Math mode="inline" xml:id="C26.S14.SS3.p1.m3">m</Math> th Bernoulli number (§24.2(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C26.S14.SS3.p2.s1">
+ <Math equation-number="26.14.6" mode="display" xml:id="C26.S14.E6">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}=\sum_{j=0}^{k}(-1)^{j}\genfrac{(}{)}{0.0pt}{}{n+ 1}{j}(k+1-j)^{n}, if n\geq 1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C26.S14.SS3.p3.s1">
+ <Math equation-number="26.14.7" mode="display" xml:id="C26.S14.E7">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}=\sum_{j=0}^{n-k}(-1)^{n-k-j}j!\genfrac{(}{)}{0.0 pt}{}{n-j}{k}S\left(n,j\right),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C26.S14.SS3.p4.s1">
+ <Math equation-number="26.14.8" mode="display" xml:id="C26.S14.E8">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}=(k+1)\genfrac{&lt;}{&gt;}{0.0pt}{}{n-1}{k}+(n-k) \genfrac{&lt;}{&gt;}{0.0pt}{}{n-1}{k-1}, if n\geq 2,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C26.S14.SS3.p5.s1">
+ <Math equation-number="26.14.9" mode="display" xml:id="C26.S14.E9">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}=\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{n-1-k}, if n\geq 1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C26.S14.SS3.p6.s1">
+ <Math equation-number="26.14.10" mode="display" xml:id="C26.S14.E10">\sum_{k=0}^{n-1}\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k}=n!, if n\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C26.S14.SS3.p7.s1">
+ <Math equation-number="26.14.11" mode="display" xml:id="C26.S14.E11">B_{m}=\frac{m}{2^{m}(2^{m}-1)}\sum_{k=0}^{m-2}(-1)^{k}\genfrac{&lt;}{&gt;}{0.0pt}{}{ m-1}{k}, if m\geq 2.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C26.S14.SS3.p8.s1">
+ <Math equation-number="26.14.12" mode="display" xml:id="C26.S14.E12">S\left(n,m\right)=\frac{1}{m!}\sum_{k=0}^{n-1}\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{k} \genfrac{(}{)}{0.0pt}{}{k}{n-m}, if n\geq m, n\geq 1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C26.S14.SS4">
+<title>Special Values</title>        
+   
+<para xml:id="C26.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C26.S14.SS4.p1.s1">
+ <Math equation-number="26.14.13" mode="display" xml:id="C26.S14.E13">\genfrac{&lt;}{&gt;}{0.0pt}{}{0}{k}=\delta_{0,k}</Math> , <Math equation-number="26.14.14" mode="display" xml:id="C26.S14.E14">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{0}=1</Math> ,, <Math equation-number="26.14.15" mode="display" xml:id="C26.S14.E15">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{1}=2^{n}-n-1, if n\geq 1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C26.S14.SS4.p2.s1">
+ <Math equation-number="26.14.16" mode="display" xml:id="C26.S14.E16">\genfrac{&lt;}{&gt;}{0.0pt}{}{n}{2}=3^{n}-(n+1)2^{n}+\genfrac{(}{)}{0.0pt}{}{n+1}{2}, if n\geq 1</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

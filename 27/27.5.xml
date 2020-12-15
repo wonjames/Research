@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S5">
+<title>Inversion Formulas</title>        
+          
+   
+   
+ 
+<para xml:id="C27.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S5.p1.s1">
+If a Dirichlet series <Math mode="inline" xml:id="C27.S5.p1.m1">F(s)</Math> generates <Math mode="inline" xml:id="C27.S5.p1.m2">f(n)</Math> , and <Math mode="inline" xml:id="C27.S5.p1.m3">G(s)</Math> generates <Math mode="inline" xml:id="C27.S5.p1.m4">g(n)</Math> , then the product <Math mode="inline" xml:id="C27.S5.p1.m5">F(s)G(s)</Math> generates <Math equation-number="27.5.1" mode="display" xml:id="C27.S5.E1">h(n)=\sum_{d\mathbin{|}n}f(d)g\left(\frac{n}{d}\right),</Math> called the Dirichlet product (or convolution) of <Math mode="inline" xml:id="C27.S5.p1.m6">f</Math> and <Math mode="inline" xml:id="C27.S5.p1.m7">g</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S5.p1.s2">
+The set of all number-theoretic functions <Math mode="inline" xml:id="C27.S5.p1.m8">f</Math> with <Math mode="inline" xml:id="C27.S5.p1.m9">f(1)\neq 0</Math> forms an abelian group under Dirichlet multiplication, with the function <Math mode="inline" xml:id="C27.S5.p1.m10">\left\lfloor 1/n\right\rfloor</Math> in (27.2.5) as identity element; see Apostol (1976, p. 129).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C27.S5.p1.s3">
+The multiplicative functions are a subgroup of this group.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C27.S5.p1.s4">
+Generating functions yield many relations connecting number-theoretic functions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C27.S5.p1.s5">
+For example, the equation <Math mode="inline" xml:id="C27.S5.p1.m11">\zeta\left(s\right)\cdot(\ifrac{1}{\zeta\left(s\right)})=1</Math> is equivalent to the identity <Math equation-number="27.5.2" mode="display" xml:id="C27.S5.E2">\sum_{d\mathbin{|}n}\mu\left(d\right)=\left\lfloor\frac{1}{n}\right\rfloor,</Math> which, in turn, is the basis for the Möbius inversion formula relating sums over divisors: <Math equation-number="27.5.3" mode="display" xml:id="C27.S5.E3">g(n)=\sum_{d\mathbin{|}n}f(d)\Longleftrightarrow f(n)=\sum_{d\mathbin{|}n}g(d) \mu\left(\frac{n}{d}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C27.S5.p2.s1">
+Special cases of Möbius inversion pairs are: <Math equation-number="27.5.4" mode="display" xml:id="C27.S5.E4">n=\sum_{d\mathbin{|}n}\phi\left(d\right)\Longleftrightarrow\phi\left(n\right)= \sum_{d\mathbin{|}n}d\mu\left(\frac{n}{d}\right),</Math> <Math equation-number="27.5.5" mode="display" xml:id="C27.S5.E5">\ln n=\sum_{d\mathbin{|}n}\Lambda\left(d\right)\Longleftrightarrow\Lambda\left (n\right)=\sum_{d\mathbin{|}n}(\ln d)\mu\left(\frac{n}{d}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C27.S5.p3.s1">
+Other types of Möbius inversion formulas include: <Math equation-number="27.5.6" mode="display" xml:id="C27.S5.E6">G(x)=\sum_{n\leq x}F\left(\frac{x}{n}\right)\Longleftrightarrow F(x)=\sum_{n \leq x}\mu\left(n\right)G\left(\frac{x}{n}\right),</Math> <Math equation-number="27.5.7" mode="display" xml:id="C27.S5.E7">G(x)=\sum_{m=1}^{\infty}\frac{F(mx)}{m^{s}}\Longleftrightarrow F(x)=\sum_{m=1} ^{\infty}\mu\left(m\right)\frac{G(mx)}{m^{s}},</Math> <Math equation-number="27.5.8" mode="display" xml:id="C27.S5.E8">g(n)=\prod_{d\mathbin{|}n}f(d)\Longleftrightarrow f(n)=\prod_{d\mathbin{|}n} \left(g\left(\frac{n}{d}\right)\right)^{\mu\left(d\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C27.S5.p4.s1">
+For a general theory of Möbius inversion with applications to combinatorial theory see Rota (1964).
+</sentence>
+
+</para>
+ 
+</section>

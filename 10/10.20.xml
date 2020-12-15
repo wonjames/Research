@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S20">
+<title>Uniform Asymptotic Expansions for Large Order</title>        
+  
+ 
+<subsection xml:id="C10.S20.SS1">
+<title>Real Variables</title>        
+ 
+<para xml:id="C10.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S20.SS1.p1.s1">
+Define <Math mode="inline" xml:id="C10.S20.SS1.p1.m1">\zeta=\zeta(z)</Math> to be the solution of the differential equation <Math equation-number="10.20.1" mode="display" xml:id="C10.S20.E1">\left(\frac{\mathrm{d}\zeta}{\mathrm{d}z}\right)^{2}=\frac{1-z^{2}}{\zeta z^{2}}</Math> that is infinitely differentiable on the interval <Math mode="inline" xml:id="C10.S20.SS1.p1.m2">0&lt;z&lt;\infty</Math> , including <Math mode="inline" xml:id="C10.S20.SS1.p1.m3">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S20.SS1.p1.s2">
+Then <Math equation-number="10.20.2" mode="display" xml:id="C10.S20.E2">\frac{2}{3}\zeta^{\frac{3}{2}}=\int_{z}^{1}\frac{\sqrt{1-t^{2}}}{t}\mathrm{d}t =\ln\left(\frac{1+\sqrt{1-z^{2}}}{z}\right)-\sqrt{1-z^{2}}, if 0&lt;z\leq 1,</Math> <Math equation-number="10.20.3" mode="display" xml:id="C10.S20.E3">\frac{2}{3}(-\zeta)^{\frac{3}{2}}=\int_{1}^{z}\frac{\sqrt{t^{2}-1}}{t}\mathrm{ d}t=\sqrt{z^{2}-1}-\operatorname{arcsec}z, if 1\leq z&lt;\infty,</Math> all functions taking their principal values, with <Math mode="inline" xml:id="C10.S20.SS1.p1.m4">\zeta=\infty,0,-\infty</Math> , corresponding to <Math mode="inline" xml:id="C10.S20.SS1.p1.m5">z=0,1,\infty</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S20.SS1.p2.s1">
+As <Math mode="inline" xml:id="C10.S20.SS1.p2.m1">\nu\to\infty</Math> through positive real values <Math equation-number="10.20.4" mode="display" xml:id="C10.S20.E4">J_{\nu}\left(\nu z\right)\sim\left(\frac{4\zeta}{1-z^{2}}\right)^{\frac{1}{4}} \*\left(\frac{\mathrm{Ai}\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{1}{3} }}\sum_{k=0}^{\infty}\frac{A_{k}(\zeta)}{\nu^{2k}}+\frac{\mathrm{Ai}'\left(\nu ^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{5}{3}}}\sum_{k=0}^{\infty}\frac{B_{k}( \zeta)}{\nu^{2k}}\right),</Math> , <Math equation-number="10.20.5" mode="display" xml:id="C10.S20.E5">Y_{\nu}\left(\nu z\right)\sim-\left(\frac{4\zeta}{1-z^{2}}\right)^{\frac{1}{4} }\left(\frac{\mathrm{Bi}\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{1}{3}} }\sum_{k=0}^{\infty}\frac{A_{k}(\zeta)}{\nu^{2k}}+\frac{\mathrm{Bi}'\left(\nu^ {\frac{2}{3}}\zeta\right)}{\nu^{\frac{5}{3}}}\sum_{k=0}^{\infty}\frac{B_{k}( \zeta)}{\nu^{2k}}\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C10.S20.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S20.SS1.p3.s1">
+ <Math equation-number="10.20.6" mode="display" xml:id="C10.S20.E6">\rselection{{H^{(1)}_{\nu}}\left(\nu z\right)\\ {H^{(2)}_{\nu}}\left(\nu z\right)}\sim 2e^{\mp\pi i/3}\left(\frac{4\zeta}{1-z^ {2}}\right)^{\frac{1}{4}}\left(\frac{\mathrm{Ai}\left(e^{\pm 2\pi i/3}\nu^{ \frac{2}{3}}\zeta\right)}{\nu^{\frac{1}{3}}}\sum_{k=0}^{\infty}\frac{A_{k}( \zeta)}{\nu^{2k}}+\frac{e^{\pm 2\pi i/3}\mathrm{Ai}'\left(e^{\pm 2\pi i/3}\nu^ {\frac{2}{3}}\zeta\right)}{\nu^{\frac{5}{3}}}\sum_{k=0}^{\infty}\frac{B_{k}( \zeta)}{\nu^{2k}}\right),</Math> <Math equation-number="10.20.7" mode="display" xml:id="C10.S20.E7">J_{\nu}'\left(\nu z\right)\sim-\frac{2}{z}\left(\frac{1-z^{2}}{4\zeta}\right)^ {\frac{1}{4}}\*\left(\frac{\mathrm{Ai}\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu ^{\frac{4}{3}}}\sum_{k=0}^{\infty}\frac{C_{k}(\zeta)}{\nu^{2k}}+\frac{\mathrm{ Ai}'\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{2}{3}}}\sum_{k=0}^{\infty} \frac{D_{k}(\zeta)}{\nu^{2k}}\right),</Math> , <Math equation-number="10.20.8" mode="display" xml:id="C10.S20.E8">Y_{\nu}'\left(\nu z\right)\sim\frac{2}{z}\left(\frac{1-z^{2}}{4\zeta}\right)^{ \frac{1}{4}}\*\left(\frac{\mathrm{Bi}\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^ {\frac{4}{3}}}\sum_{k=0}^{\infty}\frac{C_{k}(\zeta)}{\nu^{2k}}+\frac{\mathrm{ Bi}'\left(\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{2}{3}}}\sum_{k=0}^{\infty} \frac{D_{k}(\zeta)}{\nu^{2k}}\right),</Math> <Math equation-number="10.20.9" mode="display" xml:id="C10.S20.E9">\rselection{{H^{(1)}_{\nu}}'\left(\nu z\right)\\ {H^{(2)}_{\nu}}'\left(\nu z\right)}\sim\frac{4e^{\mp 2\pi i/3}}{z}\left(\frac{ 1-z^{2}}{4\zeta}\right)^{\frac{1}{4}}\*\left(\frac{e^{\mp 2\pi i/3}\mathrm{Ai} \left(e^{\pm 2\pi i/3}\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{4}{3}}}\sum_{k =0}^{\infty}\frac{C_{k}(\zeta)}{\nu^{2k}}+\frac{\mathrm{Ai}'\left(e^{\pm 2\pi i /3}\nu^{\frac{2}{3}}\zeta\right)}{\nu^{\frac{2}{3}}}\sum_{k=0}^{\infty}\frac{D _{k}(\zeta)}{\nu^{2k}}\right),</Math> 
+</sentence>
+
+</para>
+  
+ 
+<para xml:id="C10.S20.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S20.SS1.p4.s1">
+uniformly for <Math mode="inline" xml:id="C10.S20.SS1.p4.m1">z</Math> <Math mode="inline" xml:id="C10.S20.SS1.p4.m2">\in(0,\infty)</Math> in all cases, where <Math mode="inline" xml:id="C10.S20.SS1.p4.m3">\mathrm{Ai}</Math> and <Math mode="inline" xml:id="C10.S20.SS1.p4.m4">\mathrm{Bi}</Math> are the Airy functions (§9.2).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C10.S20.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S20.SS1.p5.s1">
+In the following formulas for the coefficients <Math mode="inline" xml:id="C10.S20.SS1.p5.m1">A_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.SS1.p5.m2">B_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.SS1.p5.m3">C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S20.SS1.p5.m4">D_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.SS1.p5.m5">u_{k}</Math> , <Math mode="inline" xml:id="C10.S20.SS1.p5.m6">v_{k}</Math> are the constants defined in § 9.7(i), and <Math mode="inline" xml:id="C10.S20.SS1.p5.m7">U_{k}(p)</Math> , <Math mode="inline" xml:id="C10.S20.SS1.p5.m8">V_{k}(p)</Math> are the polynomials in <Math mode="inline" xml:id="C10.S20.SS1.p5.m9">p</Math> of degree <Math mode="inline" xml:id="C10.S20.SS1.p5.m10">3k</Math> defined in §10.41(ii).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S20.Px1">
+<title>Interval <Math mode="inline" xml:id="C10.S20.Px1.m1">0&amp;lt;z&amp;lt;1</Math></title>   
+<para xml:id="C10.S20.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S20.Px1.p1.s1">
+ <Math equation-number="10.20.10" mode="display" xml:id="C10.S20.E10">A_{k}(\zeta)=\sum_{j=0}^{2k}(\tfrac{3}{2})^{j}v_{j}\zeta^{-3j/2}U_{2k-j}\left( (1-z^{2})^{-\frac{1}{2}}\right),</Math> <Math equation-number="10.20.11" mode="display" xml:id="C10.S20.E11">B_{k}(\zeta)=-\zeta^{-\frac{1}{2}}\sum_{j=0}^{2k+1}(\tfrac{3}{2})^{j}u_{j} \zeta^{-3j/2}U_{2k-j+1}\left((1-z^{2})^{-\frac{1}{2}}\right),</Math> <Math equation-number="10.20.12" mode="display" xml:id="C10.S20.E12">C_{k}(\zeta)=-\zeta^{\frac{1}{2}}\sum_{j=0}^{2k+1}(\tfrac{3}{2})^{j}v_{j}\zeta ^{-3j/2}V_{2k-j+1}\left((1-z^{2})^{-\frac{1}{2}}\right),</Math> <Math equation-number="10.20.13" mode="display" xml:id="C10.S20.E13">D_{k}(\zeta)=\sum_{j=0}^{2k}(\tfrac{3}{2})^{j}u_{j}\zeta^{-3j/2}V_{2k-j}\left( (1-z^{2})^{-\frac{1}{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S20.Px2">
+<title>Interval <Math mode="inline" xml:id="C10.S20.Px2.m1">1&amp;lt;z&amp;lt;\infty</Math></title>   
+<para xml:id="C10.S20.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S20.Px2.p1.s1">
+In formulas (10.20.10)–(10.20.13)replace
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C10.S20.Px2.p1.s2">
+<Math mode="inline" xml:id="C10.S20.Px2.p1.m1">\zeta^{\frac{1}{2}}</Math> , <Math mode="inline" xml:id="C10.S20.Px2.p1.m2">\zeta^{-\frac{1}{2}}</Math> , <Math mode="inline" xml:id="C10.S20.Px2.p1.m3">\zeta^{-3j/2}</Math> , and <Math mode="inline" xml:id="C10.S20.Px2.p1.m4">(1-z^{2})^{-\frac{1}{2}}</Math> by <Math mode="inline" xml:id="C10.S20.Px2.p1.m5">-i(-\zeta)^{\frac{1}{2}}</Math> , <Math mode="inline" xml:id="C10.S20.Px2.p1.m6">i(-\zeta)^{-\frac{1}{2}}</Math> , <Math mode="inline" xml:id="C10.S20.Px2.p1.m7">i^{3j}(-\zeta)^{-3j/2}</Math> , and <Math mode="inline" xml:id="C10.S20.Px2.p1.m8">i(z^{2}-1)^{-\frac{1}{2}}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C10.S20.Px2.p2.s1">
+Note: Another way of arranging the above formulas for the coefficients <Math mode="inline" xml:id="C10.S20.Px2.p2.m1">A_{k}(\zeta),B_{k}(\zeta),C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S20.Px2.p2.m2">D_{k}(\zeta)</Math> would be by analogy with (12.10.42) and (12.10.46).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C10.S20.Px2.p2.s2">
+In this way there is less usage of many-valued functions.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S20.Px3">
+<title>Values at <Math mode="inline" xml:id="C10.S20.Px3.m1">\zeta=0</Math></title>   
+<para xml:id="C10.S20.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S20.Px3.p1.s1">
+ <Math equation-number="10.20.14" mode="display" xml:id="C10.S20.E14">A_{0}(0)=1,A_{1}(0)=-\tfrac{1}{225},A_{2}(0)=\tfrac{1\;51439}{2182\;95000},A_{3}(0)=-\tfrac{8872\;78009}{250\;49351\;25000},\\B_{0}(0)=\tfrac{1}{70}2^{\frac{1}{3}},B_{1}(0)=-\tfrac{1213}{10\;23750}2^{\frac{1}{3}},B_{2}(0)=\tfrac{1\;65425\;37833}{3774\;32055\;00000}2^{\frac{1}{3}},B_{3}(0)=-\tfrac{959\;71711\;84603}{25\;47666\;37125\;00000}2^{\frac{1}{3}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S20.Px3.p2.s1">
+Each of the coefficients <Math mode="inline" xml:id="C10.S20.Px3.p2.m1">A_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p2.m2">B_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p2.m3">C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S20.Px3.p2.m4">D_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p2.m5">k=0,1,2,\ldots</Math> , is real and infinitely differentiable on the interval <Math mode="inline" xml:id="C10.S20.Px3.p2.m6">-\infty&lt;\zeta&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C10.S20.Px3.p2.s2">
+For (10.20.14) and further information on the coefficients see Temme (1997).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S20.Px3.p3.s1">
+For numerical tables of <Math mode="inline" xml:id="C10.S20.Px3.p3.m1">\zeta=\zeta(z)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p3.m2">(4\zeta/(1-z^{2}))^{\frac{1}{4}}</Math> and <Math mode="inline" xml:id="C10.S20.Px3.p3.m3">A_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p3.m4">B_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.Px3.p3.m5">C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S20.Px3.p3.m6">D_{k}(\zeta)</Math> seeOlver (1962, pp. 28–42).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S20.SS2">
+<title>Complex Variables</title>        
+ 
+<para xml:id="C10.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C10.S20.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C10.S20.SS2.p1.m1">\zeta=\zeta(z)</Math> given by (10.20.2) and (10.20.3) can be continued analytically to the <Math mode="inline" xml:id="C10.S20.SS2.p1.m2">z</Math> -plane cut along the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C10.S20.SS2.p1.s2">
+Corresponding points of the mapping are shown in Figures 10.20.1 and 10.20.2.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C10.S20.SS2.p2.s1">
+The equations of the curved boundaries <Math mode="inline" xml:id="C10.S20.SS2.p2.m1">D_{1}E_{1}</Math> and <Math mode="inline" xml:id="C10.S20.SS2.p2.m2">D_{2}E_{2}</Math> in the <Math mode="inline" xml:id="C10.S20.SS2.p2.m3">\zeta</Math> -plane are given parametrically by <Math equation-number="10.20.15" mode="display" xml:id="C10.S20.E15">\zeta=(\tfrac{3}{2})^{\frac{2}{3}}(\tau\mp i\pi)^{\frac{2}{3}}, if 0\leq\tau&lt;\infty,</Math> respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C10.S20.SS2.p3.s1">
+The curves <Math mode="inline" xml:id="C10.S20.SS2.p3.m1">BP_{1}E_{1}</Math> and <Math mode="inline" xml:id="C10.S20.SS2.p3.m2">BP_{2}E_{2}</Math> in the <Math mode="inline" xml:id="C10.S20.SS2.p3.m3">z</Math> -plane are the inverse maps of the line segments <Math equation-number="10.20.16" mode="display" xml:id="C10.S20.E16">\zeta=e^{\mp i\pi/3}\tau, if 0\leq\tau\leq(\tfrac{3}{2}\pi)^{\frac{2}{3}},</Math> respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C10.S20.SS2.p3.s2">
+They are given parametrically by <Math equation-number="10.20.17" mode="display" xml:id="C10.S20.E17">z=\pm(\tau\coth\tau-\tau^{2})^{\frac{1}{2}}\pm\mathrm{i}(\tau^{2}-\tau\tanh \tau)^{\frac{1}{2}}, if 0\leq\tau\leq\tau_{0},</Math> where <Math mode="inline" xml:id="C10.S20.SS2.p3.m4">\tau_{0}=1.19968\ldot</Math> s is the positive root of the equation <Math mode="inline" xml:id="C10.S20.SS2.p3.m5">\tau=\coth\tau</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C10.S20.SS2.p3.s3">
+The points <Math mode="inline" xml:id="C10.S20.SS2.p3.m6">P_{1},P_{2}</Math> where these curves intersect the imaginary axis are <Math mode="inline" xml:id="C10.S20.SS2.p3.m7">\pm ic</Math> , where <Math equation-number="10.20.18" mode="display" xml:id="C10.S20.E18">c=(\tau_{0}^{2}-1)^{\frac{1}{2}}=0.66274\ldots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C10.S20.SS2.p4.s1">
+The eye-shaped closed domain in the uncut <Math mode="inline" xml:id="C10.S20.SS2.p4.m1">z</Math> -plane that is bounded by <Math mode="inline" xml:id="C10.S20.SS2.p4.m2">BP_{1}E_{1}</Math> and <Math mode="inline" xml:id="C10.S20.SS2.p4.m3">BP_{2}E_{2}</Math> is denoted by <Math mode="inline" xml:id="C10.S20.SS2.p4.m4">\mathbf{K}</Math> ; see Figure10.20.3.
+</sentence>
+
+</para>
+
+ 
+       
+                           
+<sentence sentence-num-in-section="23" xml:id="C10.S20.F1.s1">
+Figure 10.20.1: <Math mode="inline" xml:id="C10.S20.F1.m2">z</Math> -plane. <Math mode="inline" xml:id="C10.S20.F1.m3">P_{1}</Math> and <Math mode="inline" xml:id="C10.S20.F1.m4">P_{2}</Math> are the points <Math mode="inline" xml:id="C10.S20.F1.m5">\pm ic</Math> . <Math mode="inline" xml:id="C10.S20.F1.m6">c=0.66274\ldot</Math>s .
+</sentence>           
+<sentence sentence-num-in-section="24" xml:id="C10.S20.F2.s1">
+Figure 10.20.2: <Math mode="inline" xml:id="C10.S20.F2.m2">\zeta</Math> -plane. <Math mode="inline" xml:id="C10.S20.F2.m3">E_{1}</Math> and <Math mode="inline" xml:id="C10.S20.F2.m4">E_{2}</Math> are the points <Math mode="inline" xml:id="C10.S20.F2.m5">e^{\mp\pi i/3}(3\pi/2)^{2/3}</Math>.
+</sentence>         
+   
+<sentence sentence-num-in-section="25" xml:id="C10.S20.F3.s1">
+Figure 10.20.3: <Math mode="inline" xml:id="C10.S20.F3.m2">z</Math> -plane. Domain <Math mode="inline" xml:id="C10.S20.F3.m3">\mathbf{K}</Math> (unshaded). <Math mode="inline" xml:id="C10.S20.F3.m4">c=0.66274\dot</Math>s .
+</sentence>    
+ 
+<para xml:id="C10.S20.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C10.S20.SS2.p5.s1">
+As <Math mode="inline" xml:id="C10.S20.SS2.p5.m1">\nu\to\infty</Math> through positive real values the expansions (10.20.4)–(10.20.9)apply uniformly for <Math mode="inline" xml:id="C10.S20.SS2.p5.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> , the coefficients <Math mode="inline" xml:id="C10.S20.SS2.p5.m3">A_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.SS2.p5.m4">B_{k}(\zeta)</Math> , <Math mode="inline" xml:id="C10.S20.SS2.p5.m5">C_{k}(\zeta)</Math> , and <Math mode="inline" xml:id="C10.S20.SS2.p5.m6">D_{k}(\zeta)</Math> , being the analytic continuations of the functions defined in §10.20(i) when <Math mode="inline" xml:id="C10.S20.SS2.p5.m7">\zeta</Math> is real.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S20.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C10.S20.SS2.p6.s1">
+For proofs of the above results and for error bounds and extensions of the regions of validity see Olver (1997b, pp. 419–425).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C10.S20.SS2.p6.s2">
+For extensions to complex <Math mode="inline" xml:id="C10.S20.SS2.p6.m1">\nu</Math> see Olver (1954).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C10.S20.SS2.p6.s3">
+For resurgence properties of the coefficients (§2.7(ii)) see Howls and Olde Daalhuis (1999).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="30" xml:id="C10.S20.SS2.p6.s4">
+For further results see Dunster (2001a), Wang and Wong (2002), and Paris (2004).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S20.SS3">
+<title>Double Asymptotic Properties</title>        
+   
+<para xml:id="C10.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C10.S20.SS3.p1.s1">
+For asymptotic properties of the expansions (10.20.4)–(10.20.6) with respect to large values of <Math mode="inline" xml:id="C10.S20.SS3.p1.m1">z</Math> see §10.41(v).
+</sentence>
+
+</para>
+    
+ 
+</subsection>
+ 
+</section>

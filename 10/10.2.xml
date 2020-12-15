@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S2">
+<title>Definitions</title>        
+ 
+ 
+<subsection xml:id="C10.S2.SS1">
+<title>Bessel’s Equation</title>        
+      
+<para xml:id="C10.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S2.SS1.p1.s1">
+ <Math equation-number="10.2.1" mode="display" xml:id="C10.S2.E1">z^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+z\frac{\mathrm{d}w}{\mathrm{d }z}+(z^{2}-\nu^{2})w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S2.SS1.p1.s2">
+This differential equation has a regular singularity at <Math mode="inline" xml:id="C10.S2.SS1.p1.m1">z=0</Math> with indices <Math mode="inline" xml:id="C10.S2.SS1.p1.m2">\pm\nu</Math> , and an irregular singularity at <Math mode="inline" xml:id="C10.S2.SS1.p1.m3">z=\infty</Math> of rank <Math mode="inline" xml:id="C10.S2.SS1.p1.m4">1</Math> ; compare §§2.7(i) and 2.7(ii).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S2.SS2">
+<title>Standard Solutions</title>        
+    
+<paragraph xml:id="C10.S2.Px1">
+<title>Bessel Function of the First Kind</title>   
+<para xml:id="C10.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S2.Px1.p1.s1">
+ <Math equation-number="10.2.2" mode="display" xml:id="C10.S2.E2">J_{\nu}\left(z\right)=(\tfrac{1}{2}z)^{\nu}\sum_{k=0}^{\infty}(-1)^{k}\frac{( \tfrac{1}{4}z^{2})^{k}}{k!\Gamma\left(\nu+k+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C10.S2.Px1.p1.s2">
+This solution of (10.2.1) is an analytic function of <Math mode="inline" xml:id="C10.S2.Px1.p1.m1">z\in\mathbb{C}</Math> , except for a branch point at <Math mode="inline" xml:id="C10.S2.Px1.p1.m2">z=0</Math> when <Math mode="inline" xml:id="C10.S2.Px1.p1.m3">\nu</Math> is not an integer.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C10.S2.Px1.p1.s3">
+The principal branch of <Math mode="inline" xml:id="C10.S2.Px1.p1.m4">J_{\nu}\left(z\right)</Math> corresponds to the principal value of <Math mode="inline" xml:id="C10.S2.Px1.p1.m5">(\tfrac{1}{2}z)^{\nu}</Math> (§4.2(iv)) and is analytic in the <Math mode="inline" xml:id="C10.S2.Px1.p1.m6">z</Math> -plane cut along the interval <Math mode="inline" xml:id="C10.S2.Px1.p1.m7">(-\infty,0]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S2.Px1.p2.s1">
+When <Math mode="inline" xml:id="C10.S2.Px1.p2.m1">\nu=n</Math> <Math mode="inline" xml:id="C10.S2.Px1.p2.m2">(\in\mathbb{Z})</Math> , <Math mode="inline" xml:id="C10.S2.Px1.p2.m3">J_{\nu}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C10.S2.Px1.p2.m4">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S2.Px1.p3.s1">
+For fixed <Math mode="inline" xml:id="C10.S2.Px1.p3.m1">z</Math> <Math mode="inline" xml:id="C10.S2.Px1.p3.m2">(\neq 0)</Math> each branch of <Math mode="inline" xml:id="C10.S2.Px1.p3.m3">J_{\nu}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C10.S2.Px1.p3.m4">\nu</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S2.Px2">
+<title>Bessel Function of the Second Kind (Weber’s Function)</title>   
+<para xml:id="C10.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C10.S2.Px2.p1.s1">
+ <Math equation-number="10.2.3" mode="display" xml:id="C10.S2.E3">Y_{\nu}\left(z\right)=\frac{J_{\nu}\left(z\right)\cos\left(\nu\pi\right)-J_{- \nu}\left(z\right)}{\sin\left(\nu\pi\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C10.S2.Px2.p1.s2">
+When <Math mode="inline" xml:id="C10.S2.Px2.p1.m1">\nu</Math> is an integer the right-hand side is replaced by its limiting value: <Math equation-number="10.2.4" mode="display" xml:id="C10.S2.E4">Y_{n}\left(z\right)=\frac{1}{\pi}\left.\frac{\partial J_{\nu}\left(z\right)}{ \partial\nu}\right|_{\nu=n}+\left.\frac{(-1)^{n}}{\pi}\frac{\partial J_{\nu} \left(z\right)}{\partial\nu}\right|_{\nu=-n}, if n=0,\pm 1,\pm 2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C10.S2.Px2.p1.s3">
+Whether or not <Math mode="inline" xml:id="C10.S2.Px2.p1.m2">\nu</Math> is an integer <Math mode="inline" xml:id="C10.S2.Px2.p1.m3">Y_{\nu}\left(z\right)</Math> has a branch point at <Math mode="inline" xml:id="C10.S2.Px2.p1.m4">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C10.S2.Px2.p1.s4">
+The principal branch corresponds to the principal branches of <Math mode="inline" xml:id="C10.S2.Px2.p1.m5">J_{\pm\nu}\left(z\right)</Math> in (10.2.3) and (10.2.4), with a cut in the <Math mode="inline" xml:id="C10.S2.Px2.p1.m6">z</Math> -plane along the interval <Math mode="inline" xml:id="C10.S2.Px2.p1.m7">(-\infty,0]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S2.Px2.p2.s1">
+Except in the case of <Math mode="inline" xml:id="C10.S2.Px2.p2.m1">J_{\pm n}\left(z\right)</Math> , the principal branches of <Math mode="inline" xml:id="C10.S2.Px2.p2.m2">J_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S2.Px2.p2.m3">Y_{\nu}\left(z\right)</Math> are two-valued and discontinuous on the cut <Math mode="inline" xml:id="C10.S2.Px2.p2.m4">\operatorname{ph}z=\pm\pi</Math> ; compare §4.2(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S2.Px2.p3.s1">
+Both <Math mode="inline" xml:id="C10.S2.Px2.p3.m1">J_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S2.Px2.p3.m2">Y_{\nu}\left(z\right)</Math> are real when <Math mode="inline" xml:id="C10.S2.Px2.p3.m3">\nu</Math> is real and <Math mode="inline" xml:id="C10.S2.Px2.p3.m4">\operatorname{ph}z=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S2.Px2.p4.s1">
+For fixed <Math mode="inline" xml:id="C10.S2.Px2.p4.m1">z</Math> <Math mode="inline" xml:id="C10.S2.Px2.p4.m2">(\neq 0)</Math> each branch of <Math mode="inline" xml:id="C10.S2.Px2.p4.m3">Y_{\nu}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C10.S2.Px2.p4.m4">\nu</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S2.Px3">
+<title>Bessel Functions of the Third Kind (Hankel Functions)</title>     
+<para xml:id="C10.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C10.S2.Px3.p1.s1">
+These solutions of (10.2.1) are denoted by <Math mode="inline" xml:id="C10.S2.Px3.p1.m1">{H^{(1)}_{\nu}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S2.Px3.p1.m2">{H^{(2)}_{\nu}}\left(z\right)</Math> , and their defining properties are given by <Math equation-number="10.2.5" mode="display" xml:id="C10.S2.E5">{H^{(1)}_{\nu}}\left(z\right)\sim\sqrt{2/(\pi z)}e^{i(z-\frac{1}{2}\nu\pi- \frac{1}{4}\pi)}</Math> as <Math mode="inline" xml:id="C10.S2.Px3.p1.m3">z\to\infty</Math> in <Math mode="inline" xml:id="C10.S2.Px3.p1.m4">-\pi+\delta\leq\operatorname{ph}z\leq 2\pi-\delta</Math> , and <Math equation-number="10.2.6" mode="display" xml:id="C10.S2.E6">{H^{(2)}_{\nu}}\left(z\right)\sim\sqrt{2/(\pi z)}e^{-i\left(z-\frac{1}{2}\nu \pi-\frac{1}{4}\pi\right)}</Math> as <Math mode="inline" xml:id="C10.S2.Px3.p1.m5">z\to\infty</Math> in <Math mode="inline" xml:id="C10.S2.Px3.p1.m6">-2\pi+\delta\leq\operatorname{ph}z\leq\pi-\delta</Math> , where <Math mode="inline" xml:id="C10.S2.Px3.p1.m7">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C10.S2.Px3.p1.s2">
+Each solution has a branch point at <Math mode="inline" xml:id="C10.S2.Px3.p1.m8">z=0</Math> for all <Math mode="inline" xml:id="C10.S2.Px3.p1.m9">\nu\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C10.S2.Px3.p1.s3">
+The principal branches correspond to principal values of the square roots in (10.2.5) and (10.2.6), again with a cut in the <Math mode="inline" xml:id="C10.S2.Px3.p1.m10">z</Math> -plane along the interval <Math mode="inline" xml:id="C10.S2.Px3.p1.m11">(-\infty,0]</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C10.S2.Px3.p2.s1">
+The principal branches of <Math mode="inline" xml:id="C10.S2.Px3.p2.m1">{H^{(1)}_{\nu}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S2.Px3.p2.m2">{H^{(2)}_{\nu}}\left(z\right)</Math> are two-valued and discontinuous on the cut <Math mode="inline" xml:id="C10.S2.Px3.p2.m3">\operatorname{ph}z=\pm\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S2.Px3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C10.S2.Px3.p3.s1">
+For fixed <Math mode="inline" xml:id="C10.S2.Px3.p3.m1">z</Math> <Math mode="inline" xml:id="C10.S2.Px3.p3.m2">(\neq 0)</Math> each branch of <Math mode="inline" xml:id="C10.S2.Px3.p3.m3">{H^{(1)}_{\nu}}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S2.Px3.p3.m4">{H^{(2)}_{\nu}}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C10.S2.Px3.p3.m5">\nu</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S2.Px4">
+<title>Branch Conventions</title>     
+<para xml:id="C10.S2.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C10.S2.Px4.p1.s1">
+Except where indicated otherwise, it is assumed throughout the DLMF that the symbols <Math mode="inline" xml:id="C10.S2.Px4.p1.m1">J_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S2.Px4.p1.m2">Y_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S2.Px4.p1.m3">{H^{(1)}_{\nu}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C10.S2.Px4.p1.m4">{H^{(2)}_{\nu}}\left(z\right)</Math> denote the principal values of these functions.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S2.Px5">
+<title>Cylinder Functions</title>       
+<para xml:id="C10.S2.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C10.S2.Px5.p1.s1">
+The notation <Math mode="inline" xml:id="C10.S2.Px5.p1.m1">\mathscr{C}_{\nu}\left(z\right)</Math> denotes <Math mode="inline" xml:id="C10.S2.Px5.p1.m2">J_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S2.Px5.p1.m4">Y_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S2.Px5.p1.m5">{H^{(1)}_{\nu}}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S2.Px5.p1.m6">{H^{(2)}_{\nu}}\left(z\right)</Math> , or any nontrivial linear combination of these functions, the coefficients in which are independent of <Math mode="inline" xml:id="C10.S2.Px5.p1.m7">z</Math> and <Math mode="inline" xml:id="C10.S2.Px5.p1.m8">\nu</Math>.
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S2.SS3">
+<title>Numerically Satisfactory Pairs of Solutions</title>        
+  
+<para xml:id="C10.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C10.S2.SS3.p1.s1">
+Table 10.2.1 lists numerically satisfactory pairs of solutions (§2.7(iv)) of (10.2.1) for the stated intervals or regions in the case <Math mode="inline" xml:id="C10.S2.SS3.p1.m1">\Re\nu\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C10.S2.SS3.p1.s2">
+When <Math mode="inline" xml:id="C10.S2.SS3.p1.m2">\Re\nu&lt;0</Math> , <Math mode="inline" xml:id="C10.S2.SS3.p1.m3">\nu</Math> is replaced by <Math mode="inline" xml:id="C10.S2.SS3.p1.m4">-\nu</Math> throughout.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="24" xml:id="C10.S2.T1.s1">
+Table 10.2.1: Numerically satisfactory pairs of solutions of Bessel’s equation.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="1" xml:id="C10.S2.T1.t1.s1">
+Pair
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="2" xml:id="C10.S2.T1.t1.s2">
+Interval or Region
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="3" xml:id="C10.S2.T1.t1.s3">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r2.m1">J_{\nu}\left(x\right),Y_{\nu}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="4" xml:id="C10.S2.T1.t1.s4">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r2.m2">0&amp;lt;x&amp;lt;\infty</Math>
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="5" xml:id="C10.S2.T1.t1.s5">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r3.m1">J_{\nu}\left(z\right),Y_{\nu}\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="6" xml:id="C10.S2.T1.t1.s6">
+neighborhood of 0 in <Math mode="inline" xml:id="C10.S2.T1.t1.r3.m2">|\operatorname{ph}z|\leq\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="7" xml:id="C10.S2.T1.t1.s7">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r4.m1">J_{\nu}\left(z\right),{H^{(1)}_{\nu}}\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="8" xml:id="C10.S2.T1.t1.s8">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r4.m2">0\leq\operatorname{ph}z\leq\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="9" xml:id="C10.S2.T1.t1.s9">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r5.m1">J_{\nu}\left(z\right),{H^{(2)}_{\nu}}\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="10" xml:id="C10.S2.T1.t1.s10">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r5.m2">-\pi\leq\operatorname{ph}z\leq 0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="11" xml:id="C10.S2.T1.t1.s11">
+<Math mode="inline" xml:id="C10.S2.T1.t1.r6.m1">{H^{(1)}_{\nu}}\left(z\right),{H^{(2)}_{\nu}}\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="12" xml:id="C10.S2.T1.t1.s12">
+neighborhood of <Math mode="inline" xml:id="C10.S2.T1.t1.r6.m2">\infty</Math> in <Math mode="inline" xml:id="C10.S2.T1.t1.r6.m3">|\operatorname{ph}z|\leq\pi</Math>
+</sentence>
+   
+  
+</subsection>
+ 
+</section>

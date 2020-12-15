@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S14">
+<title>Inequalities</title>        
+ 
+<subsection xml:id="C18.S14.SS1">
+<title>Upper Bounds</title>        
+   
+<paragraph xml:id="C18.S14.Px1">
+<title>Jacobi</title>     
+<para xml:id="C18.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S14.Px1.p1.s1">
+ <Math equation-number="18.14.1" mode="display" xml:id="C18.S14.E1">|P^{(\alpha,\beta)}_{n}\left(x\right)|\leq P^{(\alpha,\beta)}_{n}\left(1\right )=\frac{{\left(\alpha+1\right)_{n}}}{n!}, if -1\leq x\leq 1, \alpha\geq\beta&gt;-1, \alpha\geq-\tfrac{1}{2},</Math> <Math equation-number="18.14.2" mode="display" xml:id="C18.S14.E2">|P^{(\alpha,\beta)}_{n}\left(x\right)|\leq|P^{(\alpha,\beta)}_{n}\left(-1 \right)|=\frac{{\left(\beta+1\right)_{n}}}{n!}, if -1\leq x\leq 1, \beta\geq\alpha&gt;-1, \beta\geq-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C18.S14.Px1.p1.s2">
+<Math equation-number="18.14.3" mode="display" xml:id="C18.S14.E3">\left(\tfrac{1}{2}(1-x)\right)^{\frac{1}{2}\alpha+\frac{1}{4}}\left(\tfrac{1}{ 2}(1+x)\right)^{\frac{1}{2}\beta+\frac{1}{4}}|P^{(\alpha,\beta)}_{n}\left(x \right)|\leq\frac{\Gamma\left(\max(\alpha,\beta)+n+1\right)}{\pi^{\frac{1}{2}} n!\left(n+\tfrac{1}{2}(\alpha+\beta+1)\right)^{\max(\alpha,\beta)+\frac{1}{2}}}, if -1\leq x\leq 1, -\tfrac{1}{2}\leq\alpha\leq\tfrac{1}{2}, -\tfrac{1}{2}\leq\beta\leq\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px2">
+<title>Ultraspherical</title>     
+<para xml:id="C18.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C18.S14.Px2.p1.s1">
+ <Math equation-number="18.14.4" mode="display" xml:id="C18.S14.E4">|C^{(\lambda)}_{n}\left(x\right)|\leq C^{(\lambda)}_{n}\left(1\right)=\frac{{ \left(2\lambda\right)_{n}}}{n!}, if -1\leq x\leq 1, \lambda&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C18.S14.Px2.p1.s2">
+<Math equation-number="18.14.5" mode="display" xml:id="C18.S14.E5">|C^{(\lambda)}_{2m}\left(x\right)|\leq|C^{(\lambda)}_{2m}\left(0\right)|=\left |\frac{{\left(\lambda\right)_{m}}}{m!}\right|, if -1\leq x\leq 1, -\tfrac{1}{2}&lt;\lambda&lt;0,</Math> <Math equation-number="18.14.6" mode="display" xml:id="C18.S14.E6">|C^{(\lambda)}_{2m+1}\left(x\right)|&lt;\frac{-2{\left(\lambda\right)_{m+1}}}{ \left((2m+1)(2\lambda+2m+1)\right)^{\frac{1}{2}}m!}, if -1\leq x\leq 1, -\tfrac{1}{2}&lt;\lambda&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C18.S14.Px2.p1.s3">
+<Math equation-number="18.14.7" mode="display" xml:id="C18.S14.E7">{(n+\lambda)^{1-\lambda}(1-x^{2})^{\frac{1}{2}\lambda}|C^{(\lambda)}_{n}\left( x\right)|&lt;\frac{2^{1-\lambda}}{\Gamma\left(\lambda\right)}}, if -1\leq x\leq 1, 0&lt;\lambda&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px3">
+<title>Laguerre</title>   
+  
+<para xml:id="C18.S14.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C18.S14.Px3.p1.s1">
+ <Math equation-number="18.14.8" mode="display" xml:id="C18.S14.E8">e^{-\frac{1}{2}x}\left|L^{(\alpha)}_{n}\left(x\right)\right|\leq L^{(\alpha)}_ {n}\left(0\right)=\frac{{\left(\alpha+1\right)_{n}}}{n!}, if 0\leq x&lt;\infty, \alpha\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px4">
+<title>Hermite</title>     
+<para xml:id="C18.S14.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C18.S14.Px4.p1.s1">
+ <Math equation-number="18.14.9" mode="display" xml:id="C18.S14.E9">\frac{1}{(2^{n}n!)^{\frac{1}{2}}}e^{-\frac{1}{2}x^{2}}|H_{n}\left(x\right)| \leq 1, if -\infty&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C18.S14.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C18.S14.Px4.p2.s1">
+For further inequalities see Abramowitz and Stegun (1964, §22.14).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S14.SS2">
+<title>Turán-Type Inequalities</title>        
+  
+<paragraph xml:id="C18.S14.Px5">
+<title>Legendre</title>     
+<para xml:id="C18.S14.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C18.S14.Px5.p1.s1">
+ <Math equation-number="18.14.10" mode="display" xml:id="C18.S14.E10">(P_{n}\left(x\right))^{2}\geq P_{n-1}\left(x\right)P_{n+1}\left(x\right), if -1\leq x\leq 1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px6">
+<title>Jacobi</title>    
+ 
+<para xml:id="C18.S14.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C18.S14.Px6.p1.s1">
+Let <Math mode="inline" xml:id="C18.S14.Px6.p1.m1">R_{n}(x)=P^{(\alpha,\beta)}_{n}\left(x\right)/P^{(\alpha,\beta)}_{n}\left(1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C18.S14.Px6.p1.s2">
+Then <Math equation-number="18.14.11" mode="display" xml:id="C18.S14.E11">(R_{n}(x))^{2}\geq R_{n-1}(x)R_{n+1}(x), if -1\leq x\leq 1, \beta\geq\alpha&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px7">
+<title>Laguerre</title>     
+<para xml:id="C18.S14.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C18.S14.Px7.p1.s1">
+ <Math equation-number="18.14.12" mode="display" xml:id="C18.S14.E12">(L^{(\alpha)}_{n}\left(x\right))^{2}\geq L^{(\alpha)}_{n-1}\left(x\right)L^{( \alpha)}_{n+1}\left(x\right), if 0\leq x&lt;\infty, \alpha\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px8">
+<title>Hermite</title>  
+   
+<para xml:id="C18.S14.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C18.S14.Px8.p1.s1">
+ <Math equation-number="18.14.13" mode="display" xml:id="C18.S14.E13">(H_{n}\left(x\right))^{2}\geq H_{n-1}\left(x\right)H_{n+1}\left(x\right), if -\infty&lt;x&lt;\infty</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S14.SS3">
+<title>Local Maxima and Minima</title>        
+   
+ 
+<paragraph xml:id="C18.S14.Px9">
+<title>Jacobi</title>     
+<para xml:id="C18.S14.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C18.S14.Px9.p1.s1">
+Let the maxima <Math mode="inline" xml:id="C18.S14.Px9.p1.m1">x_{n,m}</Math> , <Math mode="inline" xml:id="C18.S14.Px9.p1.m2">m=0,1,\dots,n</Math> , of <Math mode="inline" xml:id="C18.S14.Px9.p1.m3">|P^{(\alpha,\beta)}_{n}\left(x\right)|</Math> in <Math mode="inline" xml:id="C18.S14.Px9.p1.m4">[-1,1]</Math> be arranged so that <Math equation-number="18.14.14" mode="display" xml:id="C18.S14.E14">-1=x_{n,0}&lt;x_{n,1}&lt;\cdots&lt;x_{n,n-1}&lt;x_{n,n}=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S14.Px9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C18.S14.Px9.p2.s1">
+When <Math mode="inline" xml:id="C18.S14.Px9.p2.m1">(\alpha+\tfrac{1}{2})(\beta+\tfrac{1}{2})&gt;0</Math> choose <Math mode="inline" xml:id="C18.S14.Px9.p2.m2">m</Math> so that <Math equation-number="18.14.15" mode="display" xml:id="C18.S14.E15">x_{n,m}\leq(\beta-\alpha)/(\alpha+\beta+1)\leq x_{n,m+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C18.S14.Px9.p2.s2">
+Then
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C18.S14.Px9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C18.S14.Px9.p3.s1">
+ <Math equation-number="18.14.16" mode="display" xml:id="C18.S14.E16">|P^{(\alpha,\beta)}_{n}\left(x_{n,0}\right)|&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,1}\right)|&gt;\cdots&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n,m}\right)|,|P^{(\alpha,\beta)}_{n}\left(x_{n,n}\right)|&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,n-1}\right)|&gt;\cdots&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n,m+1}\right)|, if \alpha&gt;-\tfrac{1}{2},\beta&gt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C18.S14.Px9.p3.s2">
+<Math equation-number="18.14.17" mode="display" xml:id="C18.S14.E17">|P^{(\alpha,\beta)}_{n}\left(x_{n,0}\right)|&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,1}\right)|&lt;\cdots&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n,m}\right)|,|P^{(\alpha,\beta)}_{n}\left(x_{n,n}\right)|&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,n-1}\right)|&lt;\cdots&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n,m+1}\right)|, if -1&lt;\alpha&lt;-\tfrac{1}{2},-1&lt;\beta&lt;-\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C18.S14.Px9.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C18.S14.Px9.p4.s1">
+Also, <Math equation-number="18.14.18" mode="display" xml:id="C18.S14.E18">|P^{(\alpha,\beta)}_{n}\left(x_{n,0}\right)|&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,1}\right)|&lt;\cdots&lt;|P^{(\alpha,\beta)}_{n}\left(x_{n,n}\right)|, if \alpha\geq-\tfrac{1}{2}, -1&lt;\beta\leq-\tfrac{1}{2},</Math> <Math equation-number="18.14.19" mode="display" xml:id="C18.S14.E19">|P^{(\alpha,\beta)}_{n}\left(x_{n,0}\right)|&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n ,1}\right)|&gt;\cdots&gt;|P^{(\alpha,\beta)}_{n}\left(x_{n,n}\right)|, if \beta\geq-\frac{1}{2}, -1&lt;\alpha\leq-\tfrac{1}{2},</Math> except that when <Math mode="inline" xml:id="C18.S14.Px9.p4.m1">\alpha=\beta=-\tfrac{1}{2}</Math> (Chebyshev case) <Math mode="inline" xml:id="C18.S14.Px9.p4.m2">|P^{(\alpha,\beta)}_{n}\left(x_{n,m}\right)|</Math> is constant.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px10">
+<title>Szegő–Szász Inequality</title>      
+<para xml:id="C18.S14.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C18.S14.Px10.p1.s1">
+ <Math equation-number="18.14.20" mode="display" xml:id="C18.S14.E20">\left|\frac{P^{(\alpha,\beta)}_{n}\left(x_{n,n-m}\right)}{P^{(\alpha,\beta)}_{ n}\left(1\right)}\right|&gt;\left|\frac{P^{(\alpha,\beta)}_{n+1}\left(x_{n+1,n-m+ 1}\right)}{P^{(\alpha,\beta)}_{n+1}\left(1\right)}\right|, if \alpha=\beta&gt;-\tfrac{1}{2}, m=1,2,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C18.S14.Px10.p1.s2">
+For extensions of (18.14.20) see Askey (1990) andWong and Zhang (1994a, b).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px11">
+<title>Laguerre</title>     
+<para xml:id="C18.S14.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C18.S14.Px11.p1.s1">
+Let the maxima <Math mode="inline" xml:id="C18.S14.Px11.p1.m1">x_{n,m}</Math> , <Math mode="inline" xml:id="C18.S14.Px11.p1.m2">m=0,1,\dots,n-1</Math> , of <Math mode="inline" xml:id="C18.S14.Px11.p1.m3">|L^{(\alpha)}_{n}\left(x\right)|</Math> in <Math mode="inline" xml:id="C18.S14.Px11.p1.m4">[0,\infty)</Math> be arranged so that <Math equation-number="18.14.21" mode="display" xml:id="C18.S14.E21">0=x_{n,0}&lt;x_{n,1}&lt;\cdots&lt;x_{n,n-1}&lt;x_{n,n}=\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S14.Px11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C18.S14.Px11.p2.s1">
+When <Math mode="inline" xml:id="C18.S14.Px11.p2.m1">\alpha&gt;-\tfrac{1}{2}</Math> choose <Math mode="inline" xml:id="C18.S14.Px11.p2.m2">m</Math> so that <Math equation-number="18.14.22" mode="display" xml:id="C18.S14.E22">x_{n,m}\leq\alpha+\tfrac{1}{2}\leq x_{n,m+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C18.S14.Px11.p2.s2">
+Then <Math equation-number="18.14.23" mode="display" xml:id="C18.S14.E23">|L^{(\alpha)}_{n}\left(x_{n,0}\right)|&gt;|L^{(\alpha)}_{n}\left(x_{n,1}\right)|&gt; \cdots&gt;|L^{(\alpha)}_{n}\left(x_{n,m}\right)|,|L^{(\alpha)}_{n}\left(x_{n,n-1}\right)|&gt;|L^{(\alpha)}_{n}\left(x_{n,n-2} \right)|&gt;\cdots&gt;|L^{(\alpha)}_{n}\left(x_{n,m+1}\right)|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S14.Px11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C18.S14.Px11.p3.s1">
+Also, when <Math mode="inline" xml:id="C18.S14.Px11.p3.m1">\alpha\leq-\tfrac{1}{2}</Math> <Math equation-number="18.14.24" mode="display" xml:id="C18.S14.E24">|L^{(\alpha)}_{n}\left(x_{n,0}\right)|&lt;|L^{(\alpha)}_{n}\left(x_{n,1}\right)|&lt; \cdots&lt;|L^{(\alpha)}_{n}\left(x_{n,n-1}\right)|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S14.Px12">
+<title>Hermite</title>     
+<para xml:id="C18.S14.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C18.S14.Px12.p1.s1">
+The successive maxima of <Math mode="inline" xml:id="C18.S14.Px12.p1.m1">|H_{n}\left(x\right)|</Math> form a decreasing sequence for <Math mode="inline" xml:id="C18.S14.Px12.p1.m2">x\leq 0</Math> , and an increasing sequence for <Math mode="inline" xml:id="C18.S14.Px12.p1.m3">x\geq 0</Math>.
+</sentence>
+
+</para>
+  
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

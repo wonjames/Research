@@ -1,0 +1,1858 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C17">
+<title><Math mode="inline" xml:id="C17.m1">q</Math>-Hypergeometric and Related Functions</title>               
+          
+<section xml:id="C17.S1">
+<title>Special Notation</title>          
+<para xml:id="C17.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C17.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C17.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r1.m1">k,j,m,n,r,s</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C17.S1.p1.t1.s2">
+nonnegative integers.            
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C17.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C17.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C17.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r3.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C17.S1.p1.t1.s6">
+real variable.    
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C17.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r4.m1">q</Math> <Math mode="inline" xml:id="C17.S1.p1.t1.r4.m2">(\in\mathbb{C})</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C17.S1.p1.t1.s8">
+base: unless stated otherwise <Math mode="inline" xml:id="C17.S1.p1.t1.r4.m3">|q|&lt;1</Math>.  
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C17.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r5.m1">\left(a;q\right)_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C17.S1.p1.t1.s10">
+<Math mode="inline" xml:id="C17.S1.p1.t1.r5.m2">q</Math>-shifted factorial:<Math mode="inline" xml:id="C17.S1.p1.t1.r5.m3">(1-a)(1-aq)\cdots\left(1-aq^{n-1}\right)</Math>.
+</sentence>
+
+</para>
+
+   
+<para xml:id="C17.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C17.S1.p2.s1">
+The main functions treated in this chapter are the basic hypergeometric (or <Math mode="inline" xml:id="C17.S1.p2.m1">q</Math> -hypergeometric) function <Math mode="inline" xml:id="C17.S1.p2.m2">{{}_{r}\phi_{s}}\left(a_{1},a_{2},\dots,a_{r};b_{1},b_{2},\dots,b_{s};q,z\right)</Math> , the bilateral basic hypergeometric (or bilateral <Math mode="inline" xml:id="C17.S1.p2.m3">q</Math> -hypergeometric) function <Math mode="inline" xml:id="C17.S1.p2.m4">{{}_{r}\psi_{s}}\left(a_{1},a_{2},\dots,a_{r};b_{1},b_{2},\dots,b_{s};q,z\right)</Math> , and the <Math mode="inline" xml:id="C17.S1.p2.m5">q</Math> -analogs of the Appell functions <Math mode="inline" xml:id="C17.S1.p2.m6">\Phi^{(1)}\left(a;b,b^{\prime};c;q;x,y\right)</Math> , <Math mode="inline" xml:id="C17.S1.p2.m7">\Phi^{(2)}\left(a;b,b^{\prime};c,c^{\prime};q;x,y\right)</Math> , <Math mode="inline" xml:id="C17.S1.p2.m8">\Phi^{(3)}\left(a,a^{\prime};b,b^{\prime};c;q;x,y\right)</Math> , and <Math mode="inline" xml:id="C17.S1.p2.m9">\Phi^{(4)}\left(a,b;c,c^{\prime};q;x,y\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C17.S1.p3.s1">
+Another function notation used is the “idem” function: <Math mode="display" xml:id="C17.S1.Ex1">f(\chi_{1};\chi_{2},\dots,\chi_{n})+\mathrm{idem}\left(\chi_{1};\chi_{2},\dots ,\chi_{n}\right)=\sum_{j=1}^{n}f(\chi_{j};\chi_{1},\chi_{2},\dots,\chi_{j-1}, \chi_{j+1},\dots,\chi_{n})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C17.S1.p4.s1">
+These notations agree with ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C17.S1.p4.s2">
+A slightly different notation is that in ( ) and ( ) ; see §LABEL:sec:QH.4(i).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C17.S1.p4.s3">
+( ) uses <Math mode="inline" xml:id="C17.S1.p4.m3">F(a,b;t:q)</Math> for a particular specialization of a <Math mode="inline" xml:id="C17.S1.p4.m4">{{}_{2}\phi_{1}}</Math> function.
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C17.S2">
+<title>Calculus</title>          
+<subsection xml:id="C17.S2.SS1">
+<title><Math mode="inline" xml:id="C17.S2.SS1.m1">q</Math>-Calculus</title>         
+<para xml:id="C17.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C17.S2.SS1.p1.s1">
+For <Math mode="inline" xml:id="C17.S2.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="17.2.1" mode="display" xml:id="C17.S2.E1">\left(a;q\right)_{n}=(1-a)(1-aq)\cdots(1-aq^{n-1}),</Math> <Math equation-number="17.2.2" mode="display" xml:id="C17.S2.E2">\left(a;q\right)_{-n}=\frac{1}{\left(aq^{-n};q\right)_{n}}=\frac{(-q/a)^{n}q^{ \genfrac{(}{)}{0.0pt}{}{n}{2}}}{\left(q/a;q\right)_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C17.S2.SS1.p1.s2">
+For <Math mode="inline" xml:id="C17.S2.SS1.p1.m5">\nu\in\mathbb{C}</Math> <Math equation-number="17.2.3" mode="display" xml:id="C17.S2.E3">\left(a;q\right)_{\nu}=\prod_{j=0}^{\infty}\left(\frac{1-aq^{j}}{1-aq^{\nu+j}} \right),</Math> when this product converges.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C17.S2.SS1.p1.s3">
+<Math equation-number="17.2.4" mode="display" xml:id="C17.S2.E4">\left(a;q\right)_{\infty}=\prod_{j=0}^{\infty}(1-aq^{j}),</Math> , <Math equation-number="17.2.5" mode="display" xml:id="C17.S2.E5">\left(a_{1},a_{2},\dots,a_{r};q\right)_{n}=\prod_{j=1}^{r}\left(a_{j};q\right) _{n},</Math> , <Math equation-number="17.2.6" mode="display" xml:id="C17.S2.E6">\left(a_{1},a_{2},\dots,a_{r};q\right)_{\infty}=\prod_{j=1}^{r}\left(a_{j};q \right)_{\infty}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C17.S2.SS1.p1.s4">
+<Math equation-number="17.2.7" mode="display" xml:id="C17.S2.E7">\left(a;q^{-1}\right)_{n}=\left(a^{-1};q\right)_{n}(-a)^{n}q^{-\genfrac{(}{)}{ 0.0pt}{}{n}{2}},</Math> <Math equation-number="17.2.8" mode="display" xml:id="C17.S2.E8">\frac{\left(a;q^{-1}\right)_{n}}{\left(b;q^{-1}\right)_{n}}=\frac{\left(a^{-1} ;q\right)_{n}}{\left(b^{-1};q\right)_{n}}\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.9" mode="display" xml:id="C17.S2.E9">\left(a;q\right)_{n}=\left(q^{1-n}/a;q\right)_{n}(-a)^{n}q^{\genfrac{(}{)}{0.0 pt}{}{n}{2}},</Math> <Math equation-number="17.2.10" mode="display" xml:id="C17.S2.E10">\frac{\left(a;q\right)_{n}}{\left(b;q\right)_{n}}=\frac{\left(q^{1-n}/a;q \right)_{n}}{\left(q^{1-n}/b;q\right)_{n}}\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.11" mode="display" xml:id="C17.S2.E11">\left(aq^{-n};q\right)_{n}=\left(q/a;q\right)_{n}\left(-\frac{a}{q}\right)^{n} q^{-\genfrac{(}{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.12" mode="display" xml:id="C17.S2.E12">\frac{\left(aq^{-n};q\right)_{n}}{\left(bq^{-n};q\right)_{n}}=\frac{\left(q/a; q\right)_{n}}{\left(q/b;q\right)_{n}}\left(\frac{a}{b}\right)^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="21" xml:id="C17.S2.SS1.p1.s5">
+<Math equation-number="17.2.13" mode="display" xml:id="C17.S2.E13">\left(a;q\right)_{n-k}=\frac{\left(a;q\right)_{n}}{\left(q^{1-n}/a;q\right)_{k }}\left(-\frac{q}{a}\right)^{k}q^{\genfrac{(}{)}{0.0pt}{}{k}{2}-nk}</Math> , <Math equation-number="17.2.14" mode="display" xml:id="C17.S2.E14">\frac{\left(a;q\right)_{n-k}}{\left(b;q\right)_{n-k}}=\frac{\left(a;q\right)_{ n}}{\left(b;q\right)_{n}}\frac{\left(q^{1-n}/b;q\right)_{k}}{\left(q^{1-n}/a;q \right)_{k}}\left(\frac{b}{a}\right)^{k},</Math> <Math equation-number="17.2.15" mode="display" xml:id="C17.S2.E15">\left(aq^{-n};q\right)_{k}=\frac{\left(a;q\right)_{k}\left(q/a;q\right)_{n}}{ \left(q^{1-k}/a;q\right)_{n}}q^{-nk},</Math> <Math equation-number="17.2.16" mode="display" xml:id="C17.S2.E16">\left(aq^{-n};q\right)_{n-k}=\frac{\left(q/a;q\right)_{n}}{\left(q/a;q\right)_ {k}}\left(-\frac{a}{q}\right)^{n-k}q^{\genfrac{(}{)}{0.0pt}{}{k}{2}-\genfrac{( }{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.17" mode="display" xml:id="C17.S2.E17">\left(aq^{n};q\right)_{k}=\frac{\left(a;q\right)_{k}\left(aq^{k};q\right)_{n}} {\left(a;q\right)_{n}},</Math> , <Math equation-number="17.2.18" mode="display" xml:id="C17.S2.E18">\left(aq^{k};q\right)_{n-k}=\frac{\left(a;q\right)_{n}}{\left(a;q\right)_{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="22" xml:id="C17.S2.SS1.p1.s6">
+<Math equation-number="17.2.19" mode="display" xml:id="C17.S2.E19">\left(a;q\right)_{2n}=\left(a,aq;q^{2}\right)_{n},</Math> more generally, <Math equation-number="17.2.20" mode="display" xml:id="C17.S2.E20">\left(a;q\right)_{kn}=\left(a,aq,\dots,aq^{k-1};q^{k}\right)_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="23" xml:id="C17.S2.SS1.p1.s7">
+<Math equation-number="17.2.21" mode="display" xml:id="C17.S2.E21">\left(a^{2};q^{2}\right)_{n}=\left(a;q\right)_{n}\left(-a;q\right)_{n},</Math> <Math equation-number="17.2.22" mode="display" xml:id="C17.S2.E22">\frac{\left(qa^{\frac{1}{2}},-qa^{\frac{1}{2}};q\right)_{n}}{\left(a^{\frac{1} {2}},-a^{\frac{1}{2}};q\right)_{n}}=\frac{\left(aq^{2};q^{2}\right)_{n}}{\left (a;q^{2}\right)_{n}}=\frac{1-aq^{2n}}{1-a},</Math> more generally, <Math equation-number="17.2.23" mode="display" xml:id="C17.S2.E23">\frac{\left(qa^{\frac{1}{k}},q\omega_{k}a^{\frac{1}{k}},\dots,q\omega_{k}^{k-1 }a^{\frac{1}{k}};q\right)_{n}}{\left(a^{\frac{1}{k}},\omega_{k}a^{\frac{1}{k}} ,\dots,\omega_{k}^{k-1}a^{\frac{1}{k}};q\right)_{n}}=\frac{\left(aq^{k};q^{k} \right)_{n}}{\left(a;q^{k}\right)_{n}}=\frac{1-aq^{kn}}{1-a},</Math> where <Math mode="inline" xml:id="C17.S2.SS1.p1.m8">\omega_{k}={\mathrm{e}^{2\pi i/k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="24" xml:id="C17.S2.SS1.p1.s8">
+<Math equation-number="17.2.24" mode="display" xml:id="C17.S2.E24">\lim_{\tau\to 0}\left(a/\tau;q\right)_{n}\tau^{n}=\lim_{\sigma\to\infty}\left( a\sigma;q\right)_{n}\sigma^{-n}=(-a)^{n}q^{\genfrac{(}{)}{0.0pt}{}{n}{2}}</Math> , <Math equation-number="17.2.25" mode="display" xml:id="C17.S2.E25">\lim_{\tau\to 0}\frac{\left(a/\tau;q\right)_{n}}{\left(b/\tau;q\right)_{n}}= \lim_{\sigma\to\infty}\frac{\left(a\sigma;q\right)_{n}}{\left(b\sigma;q\right) _{n}}=\left(\frac{a}{b}\right)^{n},</Math> <Math equation-number="17.2.26" mode="display" xml:id="C17.S2.E26">\lim_{\tau\to 0}\frac{\left(a/\tau;q\right)_{n}\left(b/\tau;q\right)_{n}}{ \left(c/\tau^{2};q\right)_{n}}=(-1)^{n}\left(\frac{ab}{c}\right)^{n}q^{ \genfrac{(}{)}{0.0pt}{}{n}{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS2">
+<title>Binomial Coefficients</title>          
+<para xml:id="C17.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C17.S2.SS2.p1.s1">
+ <Math equation-number="17.2.27" mode="display" xml:id="C17.S2.E27">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\frac{\left(q;q\right)_{n}}{\left(q;q\right) _{m}\left(q;q\right)_{n-m}}\\ =\frac{\left(q^{-n};q\right)_{m}(-1)^{m}q^{nm-\genfrac{(}{)}{0.0pt}{}{m}{2}}}{ \left(q;q\right)_{m}},</Math> <Math equation-number="17.2.28" mode="display" xml:id="C17.S2.E28">\lim_{q\to 1}\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{(}{)}{0.0pt}{}{n}{m}= \frac{n!}{m!(n-m)!}</Math> , <Math equation-number="17.2.29" mode="display" xml:id="C17.S2.E29">\genfrac{[}{]}{0.0pt}{}{m+n}{m}_{q}=\frac{\left(q^{n+1};q\right)_{m}}{\left(q; q\right)_{m}},</Math> <Math equation-number="17.2.30" mode="display" xml:id="C17.S2.E30">\genfrac{[}{]}{0.0pt}{}{-n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{m+n-1}{m}_{q}(-1)^{ m}q^{-mn-\genfrac{(}{)}{0.0pt}{}{m}{2}},</Math> <Math equation-number="17.2.31" mode="display" xml:id="C17.S2.E31">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{n-1}{m-1}_{q}+q^{m} \genfrac{[}{]}{0.0pt}{}{n-1}{m}_{q}</Math> , <Math equation-number="17.2.32" mode="display" xml:id="C17.S2.E32">\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\genfrac{[}{]}{0.0pt}{}{n-1}{m}_{q}+q^{n-m} \genfrac{[}{]}{0.0pt}{}{n-1}{m-1}_{q}</Math> , <Math equation-number="17.2.33" mode="display" xml:id="C17.S2.E33">\lim_{n\to\infty}\genfrac{[}{]}{0.0pt}{}{n}{m}_{q}=\frac{1}{\left(q;q\right)_{ m}}=\frac{1}{(1-q)(1-q^{2})\cdots(1-q^{m})},</Math> <Math equation-number="17.2.34" mode="display" xml:id="C17.S2.E34">\lim_{n\to\infty}\genfrac{[}{]}{0.0pt}{}{rn+u}{sn+t}_{q}=\frac{1}{\left(q;q \right)_{\infty}}=\prod_{j=1}^{\infty}\frac{1}{(1-q^{j})},</Math> provided that <Math mode="inline" xml:id="C17.S2.SS2.p1.m1">r&gt;s</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS3">
+<title>Binomial Theorem</title>          
+<para xml:id="C17.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C17.S2.SS3.p1.s1">
+ <Math equation-number="17.2.35" mode="display" xml:id="C17.S2.E35">\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q}(-z)^{j}q^{\genfrac{(}{)}{0.0pt }{}{j}{2}}=\left(z;q\right)_{n}={(1-z)(1-zq)\cdots(1-zq^{n-1})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C17.S2.SS3.p2.s1">
+In the limit as <Math mode="inline" xml:id="C17.S2.SS3.p2.m1">q\to 1</Math> , (LABEL:eq:QH.2.35) reduces to the standard binomial theorem <Math equation-number="17.2.36" mode="display" xml:id="C17.S2.E36">\sum_{j=0}^{n}\genfrac{(}{)}{0.0pt}{}{n}{j}(-z)^{j}=(1-z)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C17.S2.SS3.p3.s1">
+Also, <Math equation-number="17.2.37" mode="display" xml:id="C17.S2.E37">\sum_{n=0}^{\infty}\frac{\left(a;q\right)_{n}}{\left(q;q\right)_{n}}z^{n}= \frac{\left(az;q\right)_{\infty}}{\left(z;q\right)_{\infty}},</Math> provided that <Math mode="inline" xml:id="C17.S2.SS3.p3.m1">|z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C17.S2.SS3.p3.s2">
+When <Math mode="inline" xml:id="C17.S2.SS3.p3.m2">a=q^{m+1}</Math> , where <Math mode="inline" xml:id="C17.S2.SS3.p3.m3">m</Math> is a nonnegative integer, (LABEL:eq:QH.2.37) reduces to the <Math mode="inline" xml:id="C17.S2.SS3.p3.m4">q</Math> -binomial series <Math equation-number="17.2.38" mode="display" xml:id="C17.S2.E38">\sum_{n=0}^{\infty}\genfrac{[}{]}{0.0pt}{}{n+m}{n}_{q}z^{n}=\frac{1}{\left(z;q \right)_{m+1}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C17.S2.SS3.p3.s3">
+<Math equation-number="17.2.39" mode="display" xml:id="C17.S2.E39">\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q^{2}}q^{j}=\left(-q;q\right)_{n}</Math> ,, <Math equation-number="17.2.40" mode="display" xml:id="C17.S2.E40">\sum_{j=0}^{2n}(-1)^{j}\genfrac{[}{]}{0.0pt}{}{2n}{j}_{q}=\left(q;q^{2}\right) _{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C17.S2.SS3.p4.s1">
+When <Math mode="inline" xml:id="C17.S2.SS3.p4.m1">n\to\infty</Math> in (LABEL:eq:QH.2.35), and when <Math mode="inline" xml:id="C17.S2.SS3.p4.m2">m\to\infty</Math> in (LABEL:eq:QH.2.38), the results become convergent infinite series and infiniteproducts (see (LABEL:eq:QH.5.4) and (LABEL:eq:QH.5.3)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C17.S2.SS3.p5.s1">
+See also §LABEL:sec:CM.RNP.gf.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS4">
+<title>Derivatives</title>          
+<para xml:id="C17.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C17.S2.SS4.p1.s1">
+The <Math mode="inline" xml:id="C17.S2.SS4.p1.m1">q</Math> -derivatives of <Math mode="inline" xml:id="C17.S2.SS4.p1.m2">f(z)</Math> are defined by <Math equation-number="17.2.41" mode="display" xml:id="C17.S2.E41">\mathcal{D}_{q}f(z)=\begin{cases}\dfrac{f(z)-f(zq)}{(1-q)z},&amp;z\neq 0,\\ f^{\prime}(0),&amp;z=0,\end{cases}</Math> and
+</sentence>
+
+</para>
+   
+<para xml:id="C17.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C17.S2.SS4.p2.s1">
+ <Math equation-number="17.2.42" mode="display" xml:id="C17.S2.E42">f^{[n]}(z)=\mathcal{D}_{q}^{n}f(z)=\begin{cases}z^{-n}(1-q)^{-n}\sum_{j=0}^{n} q^{-nj+\genfrac{(}{)}{0.0pt}{}{j+1}{2}}(-1)^{j}\genfrac{[}{]}{0.0pt}{}{n}{j}_{ q}f(zq^{j}),&amp;z\neq 0,\\ \dfrac{f^{(n)}(0)\left(q;q\right)_{n}}{n!(1-q)^{n}},&amp;z=0.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C17.S2.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C17.S2.SS4.p3.s1">
+When <Math mode="inline" xml:id="C17.S2.SS4.p3.m1">q\to 1</Math> the <Math mode="inline" xml:id="C17.S2.SS4.p3.m2">q</Math> -derivatives converge to the corresponding ordinary derivatives.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C17.S2.Px1">
+<title>Product Rule</title>   
+<para xml:id="C17.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C17.S2.Px1.p1.s1">
+ <Math equation-number="17.2.43" mode="display" xml:id="C17.S2.E43">\mathcal{D}_{q}(f(z)g(z))=g(z)f^{[1]}(z)+f(zq)g^{[1]}(z)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S2.Px2">
+<title>Leibniz Rule</title>    
+<para xml:id="C17.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C17.S2.Px2.p1.s1">
+ <Math equation-number="17.2.44" mode="display" xml:id="C17.S2.E44">\mathcal{D}_{q}^{n}(f(z)g(z))=\sum_{j=0}^{n}\genfrac{[}{]}{0.0pt}{}{n}{j}_{q}f ^{[n-j]}(zq^{j})g^{[j]}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C17.S2.Px2.p2.s1">
+ <Math mode="inline" xml:id="C17.S2.Px2.p2.m1">q</Math> -differential equations are considered in §LABEL:sec:QH.6(iv).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS5">
+<title>Integrals</title>          
+<para xml:id="C17.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C17.S2.SS5.p1.s1">
+If <Math mode="inline" xml:id="C17.S2.SS5.p1.m1">f(x)</Math> is continuous at <Math mode="inline" xml:id="C17.S2.SS5.p1.m2">x=0</Math> , then <Math equation-number="17.2.45" mode="display" xml:id="C17.S2.E45">\int_{0}^{1}f(x){\mathrm{d}}_{q}x=(1-q)\sum_{j=0}^{\infty}f(q^{j})q^{j},</Math> and more generally, <Math equation-number="17.2.46" mode="display" xml:id="C17.S2.E46">\int_{0}^{a}f(x){\mathrm{d}}_{q}x=a(1-q)\sum_{j=0}^{\infty}f(aq^{j})q^{j}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C17.S2.SS5.p2.s1">
+If <Math mode="inline" xml:id="C17.S2.SS5.p2.m1">f(x)</Math> is continuous on <Math mode="inline" xml:id="C17.S2.SS5.p2.m2">[0,a]</Math> , then <Math equation-number="17.2.47" mode="display" xml:id="C17.S2.E47">\lim_{q\to 1-}\int_{0}^{a}f(x){\mathrm{d}}_{q}x=\int_{0}^{a}f(x)\mathrm{d}x</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C17.S2.Px3">
+<title>Infinite Range</title>   
+<para xml:id="C17.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C17.S2.Px3.p1.s1">
+ <Math equation-number="17.2.48" mode="display" xml:id="C17.S2.E48">\int_{0}^{\infty}f(x){\mathrm{d}}_{q}x=\lim_{n\to\infty}\int_{0}^{q^{-n}}f(x){ \mathrm{d}}_{q}x=(1-q)\sum_{j=-\infty}^{\infty}f(q^{j})q^{j},</Math> provided that <Math mode="inline" xml:id="C17.S2.Px3.p1.m1">\sum_{j=-\infty}^{\infty}f(q^{j})q^{j}</Math> converges.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S2.SS6">
+<title>Rogers–Ramanujan Identities</title>          
+<para xml:id="C17.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C17.S2.SS6.p1.s1">
+ <Math equation-number="17.2.49" mode="display" xml:id="C17.S2.E49">1+\sum_{n=1}^{\infty}\frac{q^{n^{2}}}{(1-q)(1-q^{2})\cdots(1-q^{n})}=\prod_{n= 0}^{\infty}\frac{1}{(1-q^{5n+1})(1-q^{5n+4})},</Math> <Math equation-number="17.2.50" mode="display" xml:id="C17.S2.E50">1+\sum_{n=1}^{\infty}\frac{q^{n^{2}+n}}{(1-q)(1-q^{2})\cdots(1-q^{n})}=\prod_{ n=0}^{\infty}\frac{1}{(1-q^{5n+2})(1-q^{5n+3})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C17.S2.SS6.p2.s1">
+These identities are the first in a large collection of similar results.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="44" xml:id="C17.S2.SS6.p2.s2">
+See §LABEL:sec:QH.15.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S3">
+<title><Math mode="inline" xml:id="C17.S3.m1">q</Math>-Elementary and <Math mode="inline" xml:id="C17.S3.m2">q</Math>-Special Functions</title>         
+<subsection xml:id="C17.S3.SS1">
+<title>Elementary Functions</title>          
+<paragraph xml:id="C17.S3.Px1">
+<title><Math mode="inline" xml:id="C17.S3.Px1.m1">q</Math>-Exponential Functions</title>    
+<para xml:id="C17.S3.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C17.S3.Px1.p1.s1">
+ <Math equation-number="17.3.1" mode="display" xml:id="C17.S3.E1">e_{q}\left(x\right)=\sum_{n=0}^{\infty}\frac{(1-q)^{n}x^{n}}{\left(q;q\right)_ {n}}=\frac{1}{\left((1-q)x;q\right)_{\infty}},</Math> <Math equation-number="17.3.2" mode="display" xml:id="C17.S3.E2">E_{q}\left(x\right)=\sum_{n=0}^{\infty}\frac{(1-q)^{n}q^{\genfrac{(}{)}{0.0pt} {}{n}{2}}x^{n}}{\left(q;q\right)_{n}}=\left(-(1-q)x;q\right)_{\infty}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px2">
+<title><Math mode="inline" xml:id="C17.S3.Px2.m1">q</Math>-Sine Functions</title>    
+<para xml:id="C17.S3.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C17.S3.Px2.p1.s1">
+ <Math equation-number="17.3.3" mode="display" xml:id="C17.S3.E3">\mathrm{sin}_{q}\left(x\right)=\frac{1}{2i}(e_{q}\left(ix\right)-e_{q}\left(- ix\right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n+1}(-1)^{n}x^{2n+1}}{\left(q;q \right)_{2n+1}},</Math> <Math equation-number="17.3.4" mode="display" xml:id="C17.S3.E4">\mathrm{Sin}_{q}\left(x\right)=\frac{1}{2i}(E_{q}\left(ix\right)-E_{q}\left(- ix\right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n+1}q^{n(2n+1)}(-1)^{n}x^{2n+1}}{ \left(q;q\right)_{2n+1}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px3">
+<title><Math mode="inline" xml:id="C17.S3.Px3.m1">q</Math>-Cosine Functions</title>    
+<para xml:id="C17.S3.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C17.S3.Px3.p1.s1">
+ <Math equation-number="17.3.5" mode="display" xml:id="C17.S3.E5">\mathrm{cos}_{q}\left(x\right)=\frac{1}{2}(e_{q}\left(ix\right)+e_{q}\left(-ix \right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n}(-1)^{n}x^{2n}}{\left(q;q\right)_{ 2n}},</Math> <Math equation-number="17.3.6" mode="display" xml:id="C17.S3.E6">\mathrm{Cos}_{q}\left(x\right)=\frac{1}{2}(E_{q}\left(ix\right)+E_{q}\left(-ix \right))=\sum_{n=0}^{\infty}\frac{(1-q)^{2n}q^{n(2n-1)}(-1)^{n}x^{2n}}{\left(q ;q\right)_{2n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S3.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C17.S3.Px3.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS2">
+<title>Gamma and Beta Functions</title>         
+<para xml:id="C17.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C17.S3.SS2.p1.s1">
+See §LABEL:sec:GA.GF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS3">
+<title>Bernoulli Polynomials; Euler and Stirling Numbers</title>        
+ 
+<paragraph xml:id="C17.S3.Px4">
+<title><Math mode="inline" xml:id="C17.S3.Px4.m1">q</Math>-Bernoulli Polynomials</title>    
+<para xml:id="C17.S3.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C17.S3.Px4.p1.s1">
+ <Math equation-number="17.3.7" mode="display" xml:id="C17.S3.E7">\beta_{n}\left(x,q\right)=(1-q)^{1-n}\sum_{r=0}^{n}(-1)^{r}\genfrac{(}{)}{0.0 pt}{}{n}{r}\frac{r+1}{(1-q^{r+1})}q^{rx}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px5">
+<title><Math mode="inline" xml:id="C17.S3.Px5.m1">q</Math>-Euler Numbers</title>    
+<para xml:id="C17.S3.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C17.S3.Px5.p1.s1">
+ <Math equation-number="17.3.8" mode="display" xml:id="C17.S3.E8">A_{m,s}\left(q\right)=q^{\genfrac{(}{)}{0.0pt}{}{s-m}{2}+\genfrac{(}{)}{0.0pt} {}{s}{2}}\sum_{j=0}^{s}(-1)^{j}q^{\genfrac{(}{)}{0.0pt}{}{j}{2}}\genfrac{[}{]} {0.0pt}{}{m+1}{j}_{q}\frac{(1-q^{s-j})^{m}}{(1-q)^{m}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S3.Px6">
+<title><Math mode="inline" xml:id="C17.S3.Px6.m1">q</Math>-Stirling Numbers</title>    
+<para xml:id="C17.S3.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C17.S3.Px6.p1.s1">
+ <Math equation-number="17.3.9" mode="display" xml:id="C17.S3.E9">a_{m,s}\left(q\right)=\frac{q^{-\genfrac{(}{)}{0.0pt}{}{s}{2}}(1-q)^{s}}{\left (q;q\right)_{s}}\sum_{j=0}^{s}(-1)^{j}q^{\genfrac{(}{)}{0.0pt}{}{j}{2}} \genfrac{[}{]}{0.0pt}{}{s}{j}_{q}\frac{(1-q^{s-j})^{m}}{(1-q)^{m}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S3.Px6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C17.S3.Px6.p2.s1">
+These were introduced in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C17.S3.Px6.p2.s2">
+The <Math mode="inline" xml:id="C17.S3.Px6.p2.m1">\beta_{n}\left(x,q\right)</Math> are, in fact, rational functions of <Math mode="inline" xml:id="C17.S3.Px6.p2.m2">q</Math> , and not necessarily polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="55" xml:id="C17.S3.Px6.p2.s3">
+The <Math mode="inline" xml:id="C17.S3.Px6.p2.m3">A_{m,s}\left(q\right)</Math> are always polynomials in <Math mode="inline" xml:id="C17.S3.Px6.p2.m4">q</Math> , and the <Math mode="inline" xml:id="C17.S3.Px6.p2.m5">a_{m,s}\left(q\right)</Math> are polynomials in <Math mode="inline" xml:id="C17.S3.Px6.p2.m6">q</Math> for <Math mode="inline" xml:id="C17.S3.Px6.p2.m7">0\leq s\leq m</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS4">
+<title>Theta Functions</title>         
+<para xml:id="C17.S3.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C17.S3.SS4.p1.s1">
+See §§LABEL:sec:QH.9and LABEL:sec:TH.or.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S3.SS5">
+<title>Orthogonal Polynomials</title>         
+<para xml:id="C17.S3.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C17.S3.SS5.p1.s1">
+See §§LABEL:sec:OP.QP.HC–LABEL:sec:OP.HCAC.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S4">
+<title>Basic Hypergeometric Functions</title>           
+<subsection xml:id="C17.S4.SS1">
+<title><Math content-tex="\qgenhyperphi{r}{s}" mode="inline" xml:id="C17.S4.SS1.m1">{{}_{r}\phi_{s}}</Math> Functions</title>         
+<para xml:id="C17.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C17.S4.SS1.p1.s1">
+ <Math equation-number="17.4.1" mode="display" xml:id="C17.S4.E1">{{}_{r+1}\phi_{s}}\left({a_{0},a_{1},a_{2},\dots,a_{r}\atop b_{1},b_{2},\dots, b_{s}};q,z\right)={{}_{r+1}\phi_{s}}\left(a_{0},a_{1},\dots,a_{r};b_{1},b_{2}, \dots,b_{s};q,z\right)=\sum_{n=0}^{\infty}\frac{\left(a_{0};q\right)_{n}\left( a_{1};q\right)_{n}\cdots\left(a_{r};q\right)_{n}}{\left(q;q\right)_{n}\left(b_ {1};q\right)_{n}\cdots\left(b_{s};q\right)_{n}}\*\left((-1)^{n}q^{\genfrac{(}{ )}{0.0pt}{}{n}{2}}\right)^{s-r}z^{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C17.S4.SS1.p1.s2">
+Here and elsewhere it is assumed that the <Math mode="inline" xml:id="C17.S4.SS1.p1.m1">b_{j}</Math> do not take any of the values <Math mode="inline" xml:id="C17.S4.SS1.p1.m2">q^{-n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C17.S4.SS1.p1.s3">
+The infinite series converges for all <Math mode="inline" xml:id="C17.S4.SS1.p1.m3">z</Math> when <Math mode="inline" xml:id="C17.S4.SS1.p1.m4">s&gt;r</Math> , and for <Math mode="inline" xml:id="C17.S4.SS1.p1.m5">|z|&lt;1</Math> when <Math mode="inline" xml:id="C17.S4.SS1.p1.m6">s=r</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="61" xml:id="C17.S4.SS1.p1.s4">
+<Math equation-number="17.4.2" mode="display" xml:id="C17.S4.E2">\lim_{q\to 1-}{{}_{r+1}\phi_{r}}\left({q^{a_{0}},q^{a_{1}},\dots,q^{a_{r}} \atop q^{b_{1}},\dots,q^{b_{r}}};q,z\right)={{}_{r+1}F_{r}}\left({a_{0},a_{1}, \dots,a_{r}\atop b_{1},\dots,b_{r}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="62" xml:id="C17.S4.SS1.p1.s5">
+For the function on the right-hand side see §LABEL:sec:GH.DF.GHS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C17.S4.SS1.p2.s1">
+This notation is from ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="64" xml:id="C17.S4.SS1.p2.s2">
+It is slightly at variance with the notation in ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="65" xml:id="C17.S4.SS1.p2.s3">
+In these references the factor <Math mode="inline" xml:id="C17.S4.SS1.p2.m1">\left((-1)^{n}q^{\genfrac{(}{)}{0.0pt}{}{n}{2}}\right)^{s-r</Math> } is not included in the sum.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="66" xml:id="C17.S4.SS1.p2.s4">
+In practice this discrepancy does not usually cause serious problems because the case most often considered is <Math mode="inline" xml:id="C17.S4.SS1.p2.m2">r=s</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS2">
+<title><Math content-tex="\qgenhyperpsi{r}{s}" mode="inline" xml:id="C17.S4.SS2.m1">{{}_{r}\psi_{s}}</Math> Functions</title>         
+  
+<para xml:id="C17.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C17.S4.SS2.p1.s1">
+ <Math equation-number="17.4.3" mode="display" xml:id="C17.S4.E3">{{}_{r}\psi_{s}}\left({a_{1},a_{2},\dots,a_{r}\atop b_{1},b_{2},\dots,b_{s}};q ,z\right)={{}_{r}\psi_{s}}\left(a_{1},a_{2},\dots,a_{r};b_{1},b_{2},\dots,b_{s };q,z\right)=\sum_{n=-\infty}^{\infty}\frac{\left(a_{1},a_{2},\dots,a_{r};q \right)_{n}(-1)^{(s-r)n}q^{(s-r)\genfrac{(}{)}{0.0pt}{}{n}{2}}z^{n}}{\left(b_{ 1},b_{2},\dots,b_{s};q\right)_{n}}=\sum_{n=0}^{\infty}\frac{\left(a_{1},a_{2}, \dots,a_{r};q\right)_{n}(-1)^{(s-r)n}q^{(s-r)\genfrac{(}{)}{0.0pt}{}{n}{2}}z^{ n}}{\left(b_{1},b_{2},\dots,b_{s};q\right)_{n}}+\sum_{n=1}^{\infty}\frac{\left (q/b_{1},q/b_{2},\dots,q/b_{s};q\right)_{n}}{\left(q/a_{1},q/a_{2},\dots,q/a_{ r};q\right)_{n}}\left(\frac{b_{1}b_{2}\cdots b_{s}}{a_{1}a_{2}\cdots a_{r}z} \right)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C17.S4.SS2.p2.s1">
+Here and elsewhere the <Math mode="inline" xml:id="C17.S4.SS2.p2.m1">b_{j}</Math> must not take any of the values <Math mode="inline" xml:id="C17.S4.SS2.p2.m2">q^{-n}</Math> , and the <Math mode="inline" xml:id="C17.S4.SS2.p2.m3">a_{j}</Math> must not take any of the values <Math mode="inline" xml:id="C17.S4.SS2.p2.m4">q^{n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C17.S4.SS2.p2.s2">
+The infinite series converge when <Math mode="inline" xml:id="C17.S4.SS2.p2.m5">s\geq r</Math> provided that <Math mode="inline" xml:id="C17.S4.SS2.p2.m6">|(b_{1}\cdots b_{s})/(a_{1}\cdots a_{r}z)|&lt;1</Math> and also, in the case <Math mode="inline" xml:id="C17.S4.SS2.p2.m7">s=r</Math> , <Math mode="inline" xml:id="C17.S4.SS2.p2.m8">|z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C17.S4.SS2.p3.s1">
+ <Math equation-number="17.4.4" mode="display" xml:id="C17.S4.E4">\lim_{q\to 1-}{{}_{r}\psi_{r}}\left({q^{a_{1}},q^{a_{2}},\dots,q^{a_{r}}\atop q ^{b_{1}},q^{b_{2}},\dots,q^{b_{r}}};q,z\right)={{}_{r}H_{r}}\left({a_{1},a_{2} ,\dots,a_{r}\atop b_{1},b_{2},\dots,b_{r}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="71" xml:id="C17.S4.SS2.p3.s2">
+For the function <Math mode="inline" xml:id="C17.S4.SS2.p3.m1">{{}_{r}H_{r}}</Math> see §LABEL:sec:GH.SPz.BI.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS3">
+<title><Math mode="inline" xml:id="C17.S4.SS3.m1">q</Math>-Appell Functions</title>          
+<para xml:id="C17.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C17.S4.SS3.p1.s1">
+The following definitions apply when <Math mode="inline" xml:id="C17.S4.SS3.p1.m1">|x|&lt;1</Math> and <Math mode="inline" xml:id="C17.S4.SS3.p1.m2">|y|&lt;1</Math> : <Math equation-number="17.4.5" mode="display" xml:id="C17.S4.E5">\Phi^{(1)}\left(a;b,b^{\prime};c;q;x,y\right)=\sum_{m,n\geq 0}\frac{\left(a;q \right)_{m+n}\left(b;q\right)_{m}\left(b^{\prime};q\right)_{n}x^{m}y^{n}}{ \left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m+n}},</Math> , <Math equation-number="17.4.6" mode="display" xml:id="C17.S4.E6">\Phi^{(2)}\left(a;b,b^{\prime};c,c^{\prime};q;x,y\right)=\sum_{m,n\geq 0}\frac {\left(a;q\right)_{m+n}\left(b;q\right)_{m}\left(b^{\prime};q\right)_{n}x^{m}y ^{n}}{\left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m}\left(c^{ \prime};q\right)_{n}},</Math> , <Math equation-number="17.4.7" mode="display" xml:id="C17.S4.E7">\Phi^{(3)}\left(a,a^{\prime};b,b^{\prime};c;q;x,y\right)=\sum_{m,n\geq 0}\frac {\left(a,b;q\right)_{m}\left(a^{\prime},b^{\prime};q\right)_{n}x^{m}y^{n}}{ \left(q;q\right)_{m}\left(q;q\right)_{n}\left(c;q\right)_{m+n}},</Math> , <Math equation-number="17.4.8" mode="display" xml:id="C17.S4.E8">\Phi^{(4)}\left(a,b;c,c^{\prime};q;x,y\right)=\sum_{m,n\geq 0}\frac{\left(a,b; q\right)_{m+n}x^{m}y^{n}}{\left(q,c;q\right)_{m}\left(q,c^{\prime};q\right)_{n }}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S4.SS4">
+<title>Classification</title>          
+<para xml:id="C17.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C17.S4.SS4.p1.s1">
+The series (LABEL:eq:QH.4.1) is said to be balanced orSaalschützian when it terminates, <Math mode="inline" xml:id="C17.S4.SS4.p1.m1">r=s</Math> , <Math mode="inline" xml:id="C17.S4.SS4.p1.m2">z=q</Math> , and <Math equation-number="17.4.9" mode="display" xml:id="C17.S4.E9">qa_{0}a_{1}\cdots a_{s}=b_{1}b_{2}\cdots b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C17.S4.SS4.p2.s1">
+The series (LABEL:eq:QH.4.1) is said to be k-balanced when <Math mode="inline" xml:id="C17.S4.SS4.p2.m1">r=s</Math> and <Math equation-number="17.4.10" mode="display" xml:id="C17.S4.E10">q^{k}a_{0}a_{1}\cdots a_{s}=b_{1}b_{2}\cdots b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C17.S4.SS4.p3.s1">
+The series (LABEL:eq:QH.4.1) is said to be well-poised when <Math mode="inline" xml:id="C17.S4.SS4.p3.m1">r=s</Math> and <Math equation-number="17.4.11" mode="display" xml:id="C17.S4.E11">a_{0}q=a_{1}b_{1}=a_{2}b_{2}=\dots=a_{s}b_{s}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C17.S4.SS4.p4.s1">
+The series (LABEL:eq:QH.4.1) is said to be very-well-poised when <Math mode="inline" xml:id="C17.S4.SS4.p4.m1">r=s</Math> , (LABEL:eq:QH.4.11) is satisfied, and <Math equation-number="17.4.12" mode="display" xml:id="C17.S4.E12">b_{1}=-b_{2}=\sqrt{a_{0}}.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S4.SS4.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C17.S4.SS4.p5.s1">
+The series (LABEL:eq:QH.4.1) is said to be nearly-poised when <Math mode="inline" xml:id="C17.S4.SS4.p5.m1">r=s</Math> and <Math equation-number="17.4.13" mode="display" xml:id="C17.S4.E13">a_{0}q=a_{1}b_{1}=a_{2}b_{2}=\dots=a_{s-1}b_{s-1}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S5">
+<title><Math content-tex="\qgenhyperphi{0}{0},\qgenhyperphi{1}{0},\qgenhyperphi{1}{1}" mode="inline" xml:id="C17.S5.m1">{{}_{0}\phi_{0}},{{}_{1}\phi_{0}},{{}_{1}\phi_{1}}</Math> Functions</title>        
+ 
+<paragraph xml:id="C17.S5.Px1">
+<title>Euler’s Second Sum</title>     
+<para xml:id="C17.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C17.S5.Px1.p1.s1">
+ <Math equation-number="17.5.1" mode="display" xml:id="C17.S5.E1">{{}_{0}\phi_{0}}\left(-;-;q,z\right)=\sum_{n=0}^{\infty}\frac{(-1)^{n}q^{ \genfrac{(}{)}{0.0pt}{}{n}{2}}z^{n}}{\left(q;q\right)_{n}}=\left(z;q\right)_{ \infty}, subject to |z|&lt;1;</Math> compare (LABEL:eq:QH.3.2).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S5.Px2">
+<title><Math mode="inline" xml:id="C17.S5.Px2.m1">q</Math>-Binomial Series</title>    
+<para xml:id="C17.S5.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C17.S5.Px2.p1.s1">
+ <Math equation-number="17.5.2" mode="display" xml:id="C17.S5.E2">{{}_{1}\phi_{0}}\left(a;-;q,z\right)=\frac{\left(az;q\right)_{\infty}}{\left(z ;q\right)_{\infty}}, subject to |z|&lt;1;</Math> compare (LABEL:eq:QH.2.37).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S5.Px3">
+<title><Math mode="inline" xml:id="C17.S5.Px3.m1">q</Math>-Binomial Theorem</title>    
+<para xml:id="C17.S5.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C17.S5.Px3.p1.s1">
+ <Math equation-number="17.5.3" mode="display" xml:id="C17.S5.E3">{{}_{1}\phi_{0}}\left(q^{-n};-;q,z\right)=\left(zq^{-n};q\right)_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="81" xml:id="C17.S5.Px3.p1.s2">
+This is (LABEL:eq:QH.2.35) reformulated.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S5.Px4">
+<title>Euler’s First Sum</title>     
+<para xml:id="C17.S5.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C17.S5.Px4.p1.s1">
+ <Math equation-number="17.5.4" mode="display" xml:id="C17.S5.E4">{{}_{1}\phi_{0}}\left(0;-;q,z\right)=\sum_{n=0}^{\infty}\frac{z^{n}}{\left(q;q \right)_{n}}=\frac{1}{\left(z;q\right)_{\infty}}, subject to |z|&lt;1;</Math> compare (LABEL:eq:QH.3.1).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S5.Px5">
+<title>Cauchy’s Sum</title>  
+  
+<para xml:id="C17.S5.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C17.S5.Px5.p1.s1">
+ <Math equation-number="17.5.5" mode="display" xml:id="C17.S5.E5">{{}_{1}\phi_{1}}\left({a\atop c};q,c/a\right)=\frac{\left(c/a;q\right)_{\infty }}{\left(c;q\right)_{\infty}}, subject to |c|&lt;|a|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S6">
+<title><Math content-tex="\qgenhyperphi{2}{1}" mode="inline" xml:id="C17.S6.m1">{{}_{2}\phi_{1}}</Math> Function</title>         
+<subsection xml:id="C17.S6.SS1">
+<title>Special Values</title>        
+ 
+<paragraph xml:id="C17.S6.Px1">
+<title><Math mode="inline" xml:id="C17.S6.Px1.m1">q</Math>-Gauss Sum</title>   
+<para xml:id="C17.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C17.S6.Px1.p1.s1">
+ <Math equation-number="17.6.1" mode="display" xml:id="C17.S6.E1">{{}_{2}\phi_{1}}\left({a,b\atop c};q,\ifrac{c}{(ab)}\right)=\frac{\left(c/a,c/ b;q\right)_{\infty}}{\left(c,c/(ab);q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px2">
+<title>First <Math mode="inline" xml:id="C17.S6.Px2.m1">q</Math>-Chu–Vandermonde Sum</title>  
+  
+<para xml:id="C17.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C17.S6.Px2.p1.s1">
+ <Math equation-number="17.6.2" mode="display" xml:id="C17.S6.E2">{{}_{2}\phi_{1}}\left({a,q^{-n}\atop c};q,\ifrac{cq^{n}}{a}\right)=\frac{\left (c/a;q\right)_{n}}{\left(c;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px3">
+<title>Second <Math mode="inline" xml:id="C17.S6.Px3.m1">q</Math>-Chu–Vandermonde Sum</title>   
+<para xml:id="C17.S6.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C17.S6.Px3.p1.s1">
+This reverses the order of summation in (LABEL:eq:QH.6.2):
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C17.S6.Px3.p1.s2">
+<Math equation-number="17.6.3" mode="display" xml:id="C17.S6.E3">{{}_{2}\phi_{1}}\left({a,q^{-n}\atop c};q,q\right)=\frac{a^{n}\left(c/a;q \right)_{n}}{\left(c;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px4">
+<title>Andrews–Askey Sum</title>    
+<para xml:id="C17.S6.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C17.S6.Px4.p1.s1">
+ <Math equation-number="17.6.4" mode="display" xml:id="C17.S6.E4">{{}_{2}\phi_{1}}\left({b^{2},\ifrac{b^{2}}{c}\atop c};q^{2},\ifrac{cq}{b^{2}} \right)=\frac{1}{2}\frac{\left(b^{2},q;q^{2}\right)_{\infty}}{\left(c,cq/b^{2} ;q^{2}\right)_{\infty}}\left(\frac{\left(c/b;q\right)_{\infty}}{\left(b;q \right)_{\infty}}+\frac{\left(-c/b;q\right)_{\infty}}{\left(-b;q\right)_{ \infty}}\right), subject to |cq|&lt;|b^{2}|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px5">
+<title>Bailey–Daum <Math mode="inline" xml:id="C17.S6.Px5.m1">q</Math>-Kummer Sum</title>    
+<para xml:id="C17.S6.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C17.S6.Px5.p1.s1">
+ <Math equation-number="17.6.5" mode="display" xml:id="C17.S6.E5">{{}_{2}\phi_{1}}\left({a,b\atop aq/b};q,-q/b\right)=\frac{\left(-q;q\right)_{ \infty}\left(aq,\ifrac{aq^{2}}{b^{2}};q^{2}\right)_{\infty}}{\left(-q/b,aq/b;q \right)_{\infty}}, subject to |b|&gt;|q|</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S6.SS2">
+<title><Math content-tex="\qgenhyperphi{2}{1}" mode="inline" xml:id="C17.S6.SS2.m1">{{}_{2}\phi_{1}}</Math> Transformations</title>        
+ 
+<paragraph xml:id="C17.S6.Px6">
+<title>Heine’s First Transformation</title>    
+<para xml:id="C17.S6.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C17.S6.Px6.p1.s1">
+ <Math equation-number="17.6.6" mode="display" xml:id="C17.S6.E6">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(b,az;q\right)_{ \infty}}{\left(c,z;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({c/b,z\atop az};q,b \right), subject to |z|&lt;1,|b|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px7">
+<title>Heine’s Second Tranformation</title>   
+<para xml:id="C17.S6.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C17.S6.Px7.p1.s1">
+ <Math equation-number="17.6.7" mode="display" xml:id="C17.S6.E7">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(c/b,bz;q\right)_{ \infty}}{\left(c,z;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({\ifrac{abz}{c},b \atop bz};q,c/b\right), subject to |z|&lt;1,|c|&lt;|b|</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px8">
+<title>Heine’s Third Transformation</title>   
+<para xml:id="C17.S6.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C17.S6.Px8.p1.s1">
+ <Math equation-number="17.6.8" mode="display" xml:id="C17.S6.E8">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(\ifrac{abz}{c};q \right)_{\infty}}{\left(z;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({c/a,c/b \atop c};q,\ifrac{abz}{c}\right), subject to |z|&lt;1,|abz|&lt;|c|</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px9">
+<title>Fine’s First Transformation</title>    
+<para xml:id="C17.S6.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C17.S6.Px9.p1.s1">
+ <Math equation-number="17.6.9" mode="display" xml:id="C17.S6.E9">{{}_{2}\phi_{1}}\left({q,aq\atop bq};q,z\right)=-\frac{(1-b)(aq/b)}{(1-(\ifrac {aq}{b}))}\sum_{n=0}^{\infty}\frac{\left(aq,azq/b;q\right)_{n}q^{n}}{\left(azq ^{2}/b;q\right)_{n}}+\frac{\left(aq,azq/b;q\right)_{\infty}}{\left(aq/b;q \right)_{\infty}}{{}_{2}\phi_{1}}\left({q,0\atop bq};q,z\right), subject to |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px10">
+<title>Fine’s Second Transformation</title>   
+<para xml:id="C17.S6.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C17.S6.Px10.p1.s1">
+ <Math equation-number="17.6.10" mode="display" xml:id="C17.S6.E10">(1-z){{}_{2}\phi_{1}}\left({q,aq\atop bq};q,z\right)=\sum_{n=0}^{\infty}\frac{ \left(b/a;q\right)_{n}(-az)^{n}q^{(n^{2}+n)/2}}{\left(bq,zq;q\right)_{n}}, subject to |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px11">
+<title>Fine’s Third Transformation</title>   
+<para xml:id="C17.S6.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C17.S6.Px11.p1.s1">
+ <Math equation-number="17.6.11" mode="display" xml:id="C17.S6.E11">\frac{1-z}{1-b}{{}_{2}\phi_{1}}\left({q,aq\atop bq};q,z\right)=\sum_{n=0}^{ \infty}\frac{\left(aq;q\right)_{n}\left(azq/b;q\right)_{2n}b^{n}}{\left(zq,aq/ b;q\right)_{n}}-aq\sum_{n=0}^{\infty}\frac{\left(aq;q\right)_{n}\left(azq/b;q \right)_{2n+1}(bq)^{n}}{\left(zq;q\right)_{n}\left(aq/b;q\right)_{n+1}}, subject to |z|&lt;1,|b|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px12">
+<title>Rogers–Fine Identity</title>    
+<para xml:id="C17.S6.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C17.S6.Px12.p1.s1">
+ <Math equation-number="17.6.12" mode="display" xml:id="C17.S6.E12">(1-z){{}_{2}\phi_{1}}\left({q,aq\atop bq};q,z\right)=\sum_{n=0}^{\infty}\frac{ \left(aq,azq/b;q\right)_{n}}{\left(bq,zq;q\right)_{n}}(1-azq^{2n+1})(bz)^{n}q^ {n^{2}}, subject to |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px13">
+<title>Nonterminating Form of the <Math mode="inline" xml:id="C17.S6.Px13.m1">q</Math>-Vandermonde Sum</title>    
+<para xml:id="C17.S6.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C17.S6.Px13.p1.s1">
+ <Math equation-number="17.6.13" mode="display" xml:id="C17.S6.E13">{{}_{2}\phi_{1}}\left(a,b;c;q,q\right)+\frac{\left(q/c,a,b;q\right)_{\infty}}{ \left(c/q,aq/c,bq/c;q\right)_{\infty}}{{}_{2}\phi_{1}}\left(aq/c,bq/c;q^{2}/c; q,q\right)=\frac{\left(q/c,abq/c;q\right)_{\infty}}{\left(aq/c,bq/c;q\right)_{ \infty}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S6.Px13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C17.S6.Px13.p2.s1">
+ <Math equation-number="17.6.14" mode="display" xml:id="C17.S6.E14">\sum_{n=0}^{\infty}\frac{\left(a;q\right)_{n}\left(b;q^{2}\right)_{n}z^{n}}{ \left(q;q\right)_{n}\left(azb;q^{2}\right)_{n}}=\frac{\left(az,bz;q^{2}\right) _{\infty}}{\left(z,azb;q^{2}\right)_{\infty}}{{}_{2}\phi_{1}}\left({a,b\atop bz };q^{2},zq\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px14">
+<title>Three-Term <Math content-tex="\qgenhyperphi{2}{1}" mode="inline" xml:id="C17.S6.Px14.m1">{{}_{2}\phi_{1}}</Math> Transformations</title>    
+<para xml:id="C17.S6.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C17.S6.Px14.p1.s1">
+ <Math equation-number="17.6.15" mode="display" xml:id="C17.S6.E15">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(abz/c,q/c;q\right)_{ \infty}}{\left(az/c,q/a;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({c/a,cq/(abz) \atop cq/(az)};q,bq/c\right)-\frac{\left(b,q/c,c/a,az/q,q^{2}/(az);q\right)_{ \infty}}{\left(c/q,bq/c,q/a,az/c,cq/(az);q\right)_{\infty}}{{}_{2}\phi_{1}} \left({aq/c,bq/c\atop q^{2}/c};q,z\right), subject to |z|&lt;1,|bq|&lt;|c|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S6.Px14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C17.S6.Px14.p2.s1">
+ <Math equation-number="17.6.16" mode="display" xml:id="C17.S6.E16">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(b,c/a,az,q/(az);q \right)_{\infty}}{\left(c,b/a,z,q/z;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({a ,aq/c\atop aq/b};q,cq/(abz)\right)+\frac{\left(a,c/b,bz,q/(bz);q\right)_{ \infty}}{\left(c,a/b,z,q/z;q\right)_{\infty}}{{}_{2}\phi_{1}}\left({b,bq/c \atop bq/a};q,cq/(abz)\right), subject to |z|&lt;1, |abz|&lt;|cq|</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S6.Px14.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C17.S6.Px14.p3.s1">
+For a similar result for <Math mode="inline" xml:id="C17.S6.Px14.p3.m1">q</Math> -confluent hypergeometric functions see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S6.SS3">
+<title>Contiguous Relations</title>         
+<paragraph xml:id="C17.S6.Px15">
+<title>Heine’s Contiguous Relations</title>    
+<para xml:id="C17.S6.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C17.S6.Px15.p1.s1">
+ <Math equation-number="17.6.17" mode="display" xml:id="C17.S6.E17">{{}_{2}\phi_{1}}\left({a,b\atop c/q};q,z\right)-{{}_{2}\phi_{1}}\left({a,b \atop c};q,z\right)=cz\frac{(1-a)(1-b)}{(q-c)(1-c)}{{}_{2}\phi_{1}}\left({aq, bq\atop cq};q,z\right),</Math> , <Math equation-number="17.6.18" mode="display" xml:id="C17.S6.E18">{{}_{2}\phi_{1}}\left({aq,b\atop c};q,z\right)-{{}_{2}\phi_{1}}\left({a,b\atop c };q,z\right)=az\frac{1-b}{1-c}{{}_{2}\phi_{1}}\left({aq,bq\atop cq};q,z\right),</Math> , <Math equation-number="17.6.19" mode="display" xml:id="C17.S6.E19">{{}_{2}\phi_{1}}\left({aq,b\atop cq};q,z\right)-{{}_{2}\phi_{1}}\left({a,b \atop c};q,z\right)=az\frac{(1-b)(1-(c/a))}{(1-c)(1-cq)}{{}_{2}\phi_{1}}\left( {aq,bq\atop cq^{2}};q,z\right),</Math> , <Math equation-number="17.6.20" mode="display" xml:id="C17.S6.E20">{{}_{2}\phi_{1}}\left({aq,b/q\atop c};q,z\right)-{{}_{2}\phi_{1}}\left({a,b \atop c};q,z\right)=az\frac{(1-b/(aq))}{1-c}{{}_{2}\phi_{1}}\left({aq,b\atop cq };q,z\right),</Math> <Math equation-number="17.6.21" mode="display" xml:id="C17.S6.E21">b(1-a){{}_{2}\phi_{1}}\left({aq,b\atop c};q,z\right)-a(1-b){{}_{2}\phi_{1}} \left({a,bq\atop c};q,z\right)=(b-a){{}_{2}\phi_{1}}\left({a,b\atop c};q,z \right),</Math> , <Math equation-number="17.6.22" mode="display" xml:id="C17.S6.E22">a\left(1-\frac{b}{c}\right){{}_{2}\phi_{1}}\left({a,b/q\atop c};q,z\right)-b \left(1-\frac{a}{c}\right){{}_{2}\phi_{1}}\left({a/q,b\atop c};q,z\right)=(a-b )\left(1-\frac{abz}{cq}\right){{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right),</Math> <Math equation-number="17.6.23" mode="display" xml:id="C17.S6.E23">q\left(1-\frac{a}{c}\right){{}_{2}\phi_{1}}\left({a/q,b\atop c};q,z\right)+(1- a)\left(1-\frac{abz}{c}\right){{}_{2}\phi_{1}}\left({aq,b\atop c};q,z\right)= \left(1+q-a-\frac{aq}{c}+\frac{a^{2}z}{c}-\frac{abz}{c}\right){{}_{2}\phi_{1}} \left({a,b\atop c};q,z\right),</Math> <Math equation-number="17.6.24" mode="display" xml:id="C17.S6.E24">(1-c)(q-c)(abz-c){{}_{2}\phi_{1}}\left({a,b\atop c/q};q,z\right)+z(c-a)(c-b){{ }_{2}\phi_{1}}\left({a,b\atop cq};q,z\right)=(c-1)(c(q-c)+z(ca+cb-ab-abq)){{}_ {2}\phi_{1}}\left({a,b\atop c};q,z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S6.SS4">
+<title>Differential Equations</title>        
+   
+<paragraph xml:id="C17.S6.Px16">
+<title>Iterations of <Math mode="inline" xml:id="C17.S6.Px16.m1">\mathcal{D}</Math></title>   
+<para xml:id="C17.S6.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C17.S6.Px16.p1.s1">
+ <Math equation-number="17.6.25" mode="display" xml:id="C17.S6.E25">\mathcal{D}_{q}^{n}{{}_{2}\phi_{1}}\left({a,b\atop c};q,zd\right)=\frac{\left( a,b;q\right)_{n}d^{n}}{\left(c;q\right)_{n}(1-q)^{n}}{{}_{2}\phi_{1}}\left({aq ^{n},bq^{n}\atop cq^{n}};q,dz\right),</Math> , <Math equation-number="17.6.26" mode="display" xml:id="C17.S6.E26">\mathcal{D}_{q}^{n}\left(\frac{\left(z;q\right)_{\infty}}{\left(abz/c;q\right) _{\infty}}{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)\right)=\frac{\left(c/a ,c/b;q\right)_{n}}{\left(c;q\right)_{n}(1-q)^{n}}\left(\frac{ab}{c}\right)^{n} \frac{\left(zq^{n};q\right)_{\infty}}{\left(abz/c;q\right)_{\infty}}{{}_{2} \phi_{1}}\left({a,b\atop cq^{n}};q,zq^{n}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S6.Px17">
+<title><Math mode="inline" xml:id="C17.S6.Px17.m1">q</Math>-Differential Equation</title>   
+<para xml:id="C17.S6.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C17.S6.Px17.p1.s1">
+ <Math equation-number="17.6.27" mode="display" xml:id="C17.S6.E27">z(c-abqz)\mathcal{D}_{q}^{2}{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)+ \left(\frac{1-c}{1-q}+\frac{(1-a)(1-b)-(1-abq)}{1-q}z\right)\mathcal{D}_{q}{{} _{2}\phi_{1}}\left({a,b\atop c};q,z\right)-\frac{(1-a)(1-b)}{(1-q)^{2}}{{}_{2} \phi_{1}}\left({a,b\atop c};q,z\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S6.Px17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="105" xml:id="C17.S6.Px17.p2.s1">
+(LABEL:eq:QH.6.27)reduces to the hypergeometric equation (LABEL:eq:HY.DE.DE) with the substitutions <Math mode="inline" xml:id="C17.S6.Px17.p2.m1">a\to q^{a}</Math> , <Math mode="inline" xml:id="C17.S6.Px17.p2.m2">b\to q^{b}</Math> , <Math mode="inline" xml:id="C17.S6.Px17.p2.m3">c\to q^{c}</Math> , followed by <Math mode="inline" xml:id="C17.S6.Px17.p2.m4">\lim_{q\to 1-}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S6.SS5">
+<title>Integral Representations</title>        
+ 
+ 
+<para xml:id="C17.S6.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C17.S6.SS5.p1.s1">
+ <Math equation-number="17.6.28" mode="display" xml:id="C17.S6.E28">{{}_{2}\phi_{1}}\left({q^{\alpha},q^{\beta}\atop q^{\gamma}};q,z\right)=\frac{ \Gamma_{q}\left(\gamma\right)}{\Gamma_{q}\left(\beta\right)\Gamma_{q}\left( \gamma-\beta\right)}\int_{0}^{1}\frac{t^{\beta-1}\left(tq;q\right)_{\gamma- \beta-1}}{\left(xt;q\right)_{\alpha}}{\mathrm{d}}_{q}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="107" xml:id="C17.S6.SS5.p1.s2">
+, <Math equation-number="17.6.29" mode="display" xml:id="C17.S6.E29">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\left(\frac{-1}{2\pi i}\right) \frac{\left(a,b;q\right)_{\infty}}{\left(q,c;q\right)_{\infty}}\int_{-i\infty} ^{i\infty}\frac{\left(q^{1+\zeta},cq^{\zeta};q\right)_{\infty}}{\left(aq^{ \zeta},bq^{\zeta};q\right)_{\infty}}\frac{\pi(-z)^{\zeta}}{\sin\left(\pi\zeta \right)}\mathrm{d}\zeta,</Math> where <Math mode="inline" xml:id="C17.S6.SS5.p1.m1">|z|&lt;1</Math> , <Math mode="inline" xml:id="C17.S6.SS5.p1.m2">|\operatorname{ph}\left(-z\right)|&lt;\pi</Math> , and the contour of integration separates the poles of <Math mode="inline" xml:id="C17.S6.SS5.p1.m3">\left(q^{1+\zeta},cq^{\zeta};q\right)_{\infty}/\sin\left(\pi\zeta\right)</Math> from those of <Math mode="inline" xml:id="C17.S6.SS5.p1.m4">1/\left(aq^{\zeta},bq^{\zeta};q\right)_{\infty}</Math> , and the infimum of the distances of the poles from the contour is positive.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C17.S6.SS6">
+<title>Continued Fractions</title>          
+<para xml:id="C17.S6.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C17.S6.SS6.p1.s1">
+For continued-fraction representations of the <Math mode="inline" xml:id="C17.S6.SS6.p1.m1">{{}_{2}\phi_{1}}</Math> function, see ( , pp. 395–399) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S7">
+<title>Special Cases of Higher <Math content-tex="\qgenhyperphi{r}{s}" mode="inline" xml:id="C17.S7.m1">{{}_{r}\phi_{s}}</Math> Functions</title>         
+ 
+<subsection xml:id="C17.S7.SS1">
+<title><Math content-tex="\qgenhyperphi{2}{2}" mode="inline" xml:id="C17.S7.SS1.m1">{{}_{2}\phi_{2}}</Math> Functions</title>         
+<paragraph xml:id="C17.S7.Px1">
+<title><Math mode="inline" xml:id="C17.S7.Px1.m1">q</Math>-Analog of Bailey’s <Math content-tex="\genhyperF{2}{1}@@@{-1}" mode="inline" xml:id="C17.S7.Px1.m2">{{}_{2}F_{1}}\left(-1\right)</Math> Sum</title>     
+<para xml:id="C17.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C17.S7.Px1.p1.s1">
+ <Math equation-number="17.7.1" mode="display" xml:id="C17.S7.E1">{{}_{2}\phi_{2}}\left({a,q/a\atop-q,b};q,-b\right)=\frac{\left(ab,bq/a;q^{2} \right)_{\infty}}{\left(b;q\right)_{\infty}}, subject to |b|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px2">
+<title><Math mode="inline" xml:id="C17.S7.Px2.m1">q</Math>-Analog of Gauss’s <Math content-tex="\genhyperF{2}{1}@@@{-1}" mode="inline" xml:id="C17.S7.Px2.m2">{{}_{2}F_{1}}\left(-1\right)</Math> Sum</title>     
+<para xml:id="C17.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C17.S7.Px2.p1.s1">
+ <Math equation-number="17.7.2" mode="display" xml:id="C17.S7.E2">{{}_{2}\phi_{2}}\left({a^{2},b^{2}\atop abq^{\frac{1}{2}},-abq^{\frac{1}{2}}}; q,-q\right)=\frac{\left(a^{2}q,b^{2}q;q^{2}\right)_{\infty}}{\left(q,a^{2}b^{2 }q;q^{2}\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px3">
+<title>Sum Related to ()</title>    
+<para xml:id="C17.S7.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="111" xml:id="C17.S7.Px3.p1.s1">
+ <Math equation-number="17.7.3" mode="display" xml:id="C17.S7.E3">{{}_{2}\phi_{2}}\left({\ifrac{c^{2}}{b^{2}},b^{2}\atop c,cq};q^{2},q\right)= \frac{1}{2}\frac{\left(b^{2},q;q^{2}\right)_{\infty}}{\left(c,cq;q^{2}\right)_ {\infty}}{\left(\frac{\left(c/b;q\right)_{\infty}}{\left(b;q\right)_{\infty}}+ \frac{\left(-c/b;q\right)_{\infty}}{\left(-b;q\right)_{\infty}}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S7.SS2">
+<title><Math content-tex="\qgenhyperphi{3}{2}" mode="inline" xml:id="C17.S7.SS2.m1">{{}_{3}\phi_{2}}</Math> Functions</title>         
+<paragraph xml:id="C17.S7.Px4">
+<title><Math mode="inline" xml:id="C17.S7.Px4.m1">q</Math>-Pfaff–Saalschütz Sum</title>   
+ 
+<para xml:id="C17.S7.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C17.S7.Px4.p1.s1">
+ <Math equation-number="17.7.4" mode="display" xml:id="C17.S7.E4">{{}_{3}\phi_{2}}\left({a,b,q^{-n}\atop c,abq^{1-n}/c};q,q\right)=\frac{\left(c /a,c/b;q\right)_{n}}{\left(c,c/(ab);q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px5">
+<title>Nonterminating Form of the <Math mode="inline" xml:id="C17.S7.Px5.m1">q</Math>-Saalschütz Sum</title>    
+<para xml:id="C17.S7.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C17.S7.Px5.p1.s1">
+ <Math equation-number="17.7.5" mode="display" xml:id="C17.S7.E5">{{}_{3}\phi_{2}}\left({a,b,c\atop e,f};q,q\right)+\frac{\left(q/e,a,b,c,qf/e;q \right)_{\infty}}{\left(e/q,aq/e,bq/e,cq/e,f;q\right)_{\infty}}\*{{}_{3}\phi_{ 2}}\left({aq/e,bq/e,cq/e\atop q^{2}/e,qf/e};q,q\right)=\frac{\left(q/e,f/a,f/b ,f/c;q\right)_{\infty}}{\left(aq/e,bq/e,cq/e,f;q\right)_{\infty}},</Math> where <Math mode="inline" xml:id="C17.S7.Px5.p1.m1">ef=abcq</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px6">
+<title>F. H. Jackson’s Terminating <Math mode="inline" xml:id="C17.S7.Px6.m1">q</Math>-Analog of Dixon’s Sum</title>   
+  
+<para xml:id="C17.S7.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C17.S7.Px6.p1.s1">
+ <Math equation-number="17.7.6" mode="display" xml:id="C17.S7.E6">{{}_{3}\phi_{2}}\left({q^{-2n},b,c\atop q^{1-2n}/b,q^{1-2n}/c};q,\frac{q^{2-n} }{bc}\right)=\frac{\left(b,c;q\right)_{n}\left(q,bc;q\right)_{2n}}{\left(q,bc; q\right)_{n}\left(b,c;q\right)_{2n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px7">
+<title>Continued Fractions</title>    
+<para xml:id="C17.S7.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C17.S7.Px7.p1.s1">
+For continued-fraction representations of a ratio of <Math mode="inline" xml:id="C17.S7.Px7.p1.m1">{{}_{3}\phi_{2}}</Math> functions, see ( , pp. 399–400) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S7.SS3">
+<title>Other <Math content-tex="\qgenhyperphi{r}{s}" mode="inline" xml:id="C17.S7.SS3.m1">{{}_{r}\phi_{s}}</Math> Functions</title>         
+<paragraph xml:id="C17.S7.Px8">
+<title><Math mode="inline" xml:id="C17.S7.Px8.m1">q</Math>-Analog of Dixon’s <Math content-tex="\genhyperF{3}{2}@@@{1}" mode="inline" xml:id="C17.S7.Px8.m2">{{}_{3}F_{2}}\left(1\right)</Math> Sum</title>  
+   
+<para xml:id="C17.S7.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C17.S7.Px8.p1.s1">
+ <Math equation-number="17.7.7" mode="display" xml:id="C17.S7.E7">{{}_{4}\phi_{3}}\left({a,-qa^{\frac{1}{2}},b,c\atop-a^{\frac{1}{2}},aq/b,aq/c} ;q,\frac{qa^{\frac{1}{2}}}{bc}\right)=\frac{\left(aq,qa^{\frac{1}{2}}/b,qa^{ \frac{1}{2}}/c,aq/(bc);q\right)_{\infty}}{\left(aq/b,aq/c,qa^{\frac{1}{2}},qa^ {\frac{1}{2}}/(bc);q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px9">
+<title>Gasper–Rahman <Math mode="inline" xml:id="C17.S7.Px9.m1">q</Math>-Analog of Watson’s <Math content-tex="\genhyperF{3}{2}" mode="inline" xml:id="C17.S7.Px9.m2">{{}_{3}F_{2}}</Math> Sum</title>   
+ 
+<para xml:id="C17.S7.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C17.S7.Px9.p1.s1">
+ <Math equation-number="17.7.8" mode="display" xml:id="C17.S7.E8">{{}_{8}\phi_{7}}\left({\lambda,q\lambda^{\frac{1}{2}},-q\lambda^{\frac{1}{2}}, a,b,c,-c,\lambda q/c^{2}\atop\lambda^{\frac{1}{2}},-\lambda^{\frac{1}{2}}, \lambda q/a,\lambda q/b,\lambda q/c,-\lambda q/c,c^{2}};q,-\frac{\lambda q}{ab }\right)=\frac{\left(\lambda q,c^{2}/\lambda;q\right)_{\infty}\left(aq,bq,c^{2 }q/a,c^{2}q/b;q^{2}\right)_{\infty}}{\left(\lambda q/a,\lambda q/b;q\right)_{ \infty}\left(q,abq,c^{2}q,c^{2}q/(ab);q^{2}\right)_{\infty}},</Math> where <Math mode="inline" xml:id="C17.S7.Px9.p1.m1">\lambda=-c(ab/q)^{\frac{1}{2}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px10">
+<title>Andrews’ Terminating <Math mode="inline" xml:id="C17.S7.Px10.m1">q</Math>-Analog of ()</title>    
+<para xml:id="C17.S7.Px10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C17.S7.Px10.p1.s1">
+ <Math equation-number="17.7.9" mode="display" xml:id="C17.S7.E9">{{}_{4}\phi_{3}}\left({q^{-n},aq^{n},c,-c\atop(aq)^{\frac{1}{2}},-(aq)^{\frac{ 1}{2}},c^{2}};q,q\right)=\begin{cases}0,&amp;\mbox{$n$ odd,}\\ \dfrac{c^{n}\left(q,aq/c^{2};q^{2}\right)_{n/2}}{\left(aq,c^{2}q;q^{2}\right)_ {n/2}},&amp;\mbox{$n$ even.}\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px11">
+<title>Gasper–Rahman <Math mode="inline" xml:id="C17.S7.Px11.m1">q</Math>-Analog of Whipple’s <Math content-tex="\genhyperF{3}{2}" mode="inline" xml:id="C17.S7.Px11.m2">{{}_{3}F_{2}}</Math> Sum</title>    
+<para xml:id="C17.S7.Px11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C17.S7.Px11.p1.s1">
+ <Math equation-number="17.7.10" mode="display" xml:id="C17.S7.E10">{{}_{8}\phi_{7}}\left({-c,q(-c)^{\frac{1}{2}},-q(-c)^{\frac{1}{2}},a,q/a,c,-d, -q/d\atop(-c)^{\frac{1}{2}},-(-c)^{\frac{1}{2}},-cq/a,-ac,-q,cq/d,cd};q,c \right)=\frac{\left(-c,-cq;q\right)_{\infty}\left(acd,acq/d,cdq/a,cq^{2}/(ad); q^{2}\right)_{\infty}}{\left(cd,cq/d,-ac,-cq/a;q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px12">
+<title>Andrews’ Terminating <Math mode="inline" xml:id="C17.S7.Px12.m1">q</Math>-Analog</title>   
+<para xml:id="C17.S7.Px12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C17.S7.Px12.p1.s1">
+ <Math equation-number="17.7.11" mode="display" xml:id="C17.S7.E11">{{}_{4}\phi_{3}}\left({q^{-n},q^{n+1},c,-c\atop e,c^{2}q/e,-q};q,q\right)= \frac{\left(eq^{-n},eq^{n+1},c^{2}q^{1-n}/e,c^{2}q^{n+2}/e;q^{2}\right)_{ \infty}}{\left(e,c^{2}q/e;q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px13">
+<title>First <Math mode="inline" xml:id="C17.S7.Px13.m1">q</Math>-Analog of Bailey’s <Math content-tex="\genhyperF{4}{3}@@@{1}" mode="inline" xml:id="C17.S7.Px13.m2">{{}_{4}F_{3}}\left(1\right)</Math> Sum</title>     
+<para xml:id="C17.S7.Px13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C17.S7.Px13.p1.s1">
+ <Math equation-number="17.7.12" mode="display" xml:id="C17.S7.E12">{{}_{4}\phi_{3}}\left({a,aq,b^{2}q^{2n},q^{-2n}\atop b,bq,a^{2}q^{2}};q^{2},q^ {2}\right)=\frac{a^{n}\left(-q,b/a;q\right)_{n}}{\left(-aq,b;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px14">
+<title>Second <Math mode="inline" xml:id="C17.S7.Px14.m1">q</Math>-Analog of Bailey’s <Math content-tex="\genhyperF{4}{3}@@@{1}" mode="inline" xml:id="C17.S7.Px14.m2">{{}_{4}F_{3}}\left(1\right)</Math> Sum</title>   
+<para xml:id="C17.S7.Px14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C17.S7.Px14.p1.s1">
+ <Math equation-number="17.7.13" mode="display" xml:id="C17.S7.E13">{{}_{4}\phi_{3}}\left({a,aq,b^{2}q^{2n-2},q^{-2n}\atop b,bq,a^{2}};q^{2},q^{2} \right)=\frac{a^{n}\left(-q,b/a;q\right)_{n}(1-bq^{n-1})}{\left(-a,b;q\right)_ {n}(1-bq^{2n-1})}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px15">
+<title>F. H. Jackson’s <Math mode="inline" xml:id="C17.S7.Px15.m1">q</Math>-Analog of Dougall’s <Math content-tex="\genhyperF{7}{6}@@@{1}" mode="inline" xml:id="C17.S7.Px15.m2">{{}_{7}F_{6}}\left(1\right)</Math> Sum</title>     
+<para xml:id="C17.S7.Px15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C17.S7.Px15.p1.s1">
+ <Math equation-number="17.7.14" mode="display" xml:id="C17.S7.E14">{{}_{8}\phi_{7}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d,e,q^{-n} \atop a^{\frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d,aq/e,aq^{n+1}};q,q\right )=\frac{\left(aq,aq/(bc),aq/(bd),aq/(cd);q\right)_{n}}{\left(aq/b,aq/c,aq/d,aq /(bcd);q\right)_{n}},</Math> where <Math mode="inline" xml:id="C17.S7.Px15.p1.m1">a^{2}q=bcdeq^{-n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px16">
+<title>Limiting Cases of ()</title>   
+<para xml:id="C17.S7.Px16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C17.S7.Px16.p1.s1">
+ <Math equation-number="17.7.15" mode="display" xml:id="C17.S7.E15">{{}_{6}\phi_{5}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d\atop a^{ \frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d};q,\frac{aq}{bcd}\right)=\frac{ \left(aq,aq/(bc),aq/(bd),aq/(cd);q\right)_{\infty}}{\left(aq/b,aq/c,aq/d,aq/( bcd);q\right)_{\infty}},</Math> and when <Math mode="inline" xml:id="C17.S7.Px16.p1.m1">d=q^{-n}</Math> , <Math equation-number="17.7.16" mode="display" xml:id="C17.S7.E16">{{}_{6}\phi_{5}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,q^{-n}\atop a^ {\frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq^{n+1}};q,\frac{aq^{n+1}}{bc}\right )=\frac{\left(aq,aq/(bc);q\right)_{n}}{\left(aq/b,aq/c;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px17">
+<title>Bailey’s Nonterminating Extension of Jackson’s <Math content-tex="\qgenhyperphi{8}{7}" mode="inline" xml:id="C17.S7.Px17.m1">{{}_{8}\phi_{7}}</Math> Sum</title>   
+<para xml:id="C17.S7.Px17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C17.S7.Px17.p1.s1">
+ <Math equation-number="17.7.17" mode="display" xml:id="C17.S7.E17">{{}_{8}\phi_{7}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d,e,f\atop a^{ \frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d,aq/e,aq/f};q,q\right)-\frac{b}{a} \frac{\left(aq,c,d,e,f,bq/a,bq/c,bq/d,bq/e,bq/f;q\right)_{\infty}}{\left(aq/b, aq/c,aq/d,aq/e,aq/f,bc/a,bd/a,be/a,bf/a,b^{2}q/a;q\right)_{\infty}}\*{{}_{8} \phi_{7}}\left({b^{2}/a,qba^{-\frac{1}{2}},-qba^{-\frac{1}{2}},b,bc/a,bd/a,be/ a,bf/a\atop ba^{-\frac{1}{2}},-ba^{-\frac{1}{2}},bq/a,bq/c,bq/d,bq/e,bq/f};q,q \right)=\frac{\left(aq,b/a,aq/(cd),aq/(ce),aq/(cf),aq/(de),aq/(df),aq/(ef);q \right)_{\infty}}{\left(aq/c,aq/d,aq/e,aq/f,bc/a,bd/a,be/a,bf/a;q\right)_{ \infty}},</Math> where <Math mode="inline" xml:id="C17.S7.Px17.p1.m1">qa^{2}=bcdef</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px18">
+<title>Gasper–Rahman <Math mode="inline" xml:id="C17.S7.Px18.m1">q</Math>-Analogs of the Karlsson–Minton Sums</title>   
+<para xml:id="C17.S7.Px18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C17.S7.Px18.p1.s1">
+ <Math equation-number="17.7.18" mode="display" xml:id="C17.S7.E18">{{}_{r+2}\phi_{r+1}}\left({a,b,b_{1}q^{m_{1}},\dots,b_{r}q^{m_{r}}\atop bq,b_{ 1},\dots,b_{r}};q,a^{-1}q^{1-(m_{1}+\cdots+m_{r})}\right)=\frac{\left(q,bq/a;q \right)_{\infty}\left(b_{1}/b;q\right)_{m_{1}}\cdots\left(b_{r}/b;q\right)_{m_ {r}}}{\left(bq,q/a;q\right)_{\infty}\left(b_{1};q\right)_{m_{1}}\cdots\left(b_ {r};q\right)_{m_{r}}}b^{m_{1}+\cdots+m_{r}},</Math> and <Math equation-number="17.7.19" mode="display" xml:id="C17.S7.E19">{{}_{r+1}\phi_{r}}\left({a,b_{1}q^{m_{1}},\dots,b_{r}q^{m_{r}}\atop b_{1}, \dots,b_{r}};q,a^{-1}q^{1-(m_{1}+\cdots+m_{r})}\right)=0,</Math> where <Math mode="inline" xml:id="C17.S7.Px18.p1.m1">m_{1},m_{2},\dots,m_{r}</Math> are arbitrary nonnegative integers.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px19">
+<title>Gosper’s Bibasic Sum</title>    
+<para xml:id="C17.S7.Px19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C17.S7.Px19.p1.s1">
+ <Math equation-number="17.7.20" mode="display" xml:id="C17.S7.E20">\sum_{k=0}^{n}\frac{1-ap^{k}q^{k}}{1-a}\frac{\left(a;p\right)_{k}\left(c;q \right)_{k}}{\left(q;q\right)_{k}\left(ap/c;p\right)_{k}}c^{-k}=\frac{\left(ap ;p\right)_{n}\left(cq;q\right)_{n}}{\left(q;q\right)_{n}\left(ap/c;p\right)_{n }}c^{-n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S7.Px20">
+<title>Gasper’s Extensions of Gosper’s Bibasic Sum</title>  
+ 
+<para xml:id="C17.S7.Px20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C17.S7.Px20.p1.s1">
+ <Math equation-number="17.7.21" mode="display" xml:id="C17.S7.E21">\sum_{k=0}^{n}\frac{(1-ap^{k}q^{k})(1-bp^{k}q^{-k})}{(1-a)(1-b)}\frac{\left(a, b;p\right)_{k}\left(c,a/(bc);q\right)_{k}}{\left(q,aq/b;q\right)_{k}\left(ap/c ,bcp;p\right)_{k}}q^{k}=\frac{\left(ap,bp;p\right)_{n}\left(cq,aq/(bc);q\right )_{n}}{\left(q,aq/b;q\right)_{n}\left(ap/c,bcp;p\right)_{n}},</Math> <Math equation-number="17.7.22" mode="display" xml:id="C17.S7.E22">\sum_{k=-m}^{n}\frac{(1-adp^{k}q^{k})(1-bp^{k}/(dq^{k}))}{(1-ad)(1-(b/d))} \frac{\left(a,b;p\right)_{k}\left(c,ad^{2}/(bc);q\right)_{k}}{\left(dq,adq/b;q \right)_{k}\left(adp/c,bcp/d;p\right)_{k}}q^{k}=\frac{(1-a)(1-b)(1-c)(1-(ad^{2 }/(bc)))}{d(1-ad)(1-(b/d))(1-(c/d))(1-(ad/(bc)))}\left(\frac{\left(ap,bp;p \right)_{n}\left(cq,ad^{2}q/(bc);q\right)_{n}}{\left(dq,adq/b;q\right)_{n} \left(adp/c,bcp/d;p\right)_{n}}-\frac{\left(c/(ad),d/(bc);p\right)_{m+1}\left( 1/d,b/(ad);q\right)_{m+1}}{\left(1/c,bc/(ad^{2});q\right)_{m+1}\left(1/a,1/b;p \right)_{m+1}}\right),</Math> and <Math mode="inline" xml:id="C17.S7.Px20.p1.m1">n</Math> -th difference generalization: <Math equation-number="17.7.23" mode="display" xml:id="C17.S7.E23">\left(1-\frac{a}{q}\right)\left(1-\frac{b}{q}\right)\sum_{k=0}^{n}\frac{\left( ap^{k},bp^{-k};q\right)_{n-1}(1-(ap^{2k}/b))}{\left(p;p\right)_{n}\left(p;p \right)_{n-k}\left(ap^{k}/b;q\right)_{n+1}}(-1)^{k}p^{\genfrac{(}{)}{0.0pt}{}{ k}{2}}=\delta_{n,0}</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S8">
+<title>Special Cases of <Math content-tex="\qgenhyperpsi{r}{r}" mode="inline" xml:id="C17.S8.m1">{{}_{r}\psi_{r}}</Math> Functions</title>        
+  
+<paragraph xml:id="C17.S8.Px1">
+<title>Jacobi’s Triple Product</title>    
+<para xml:id="C17.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C17.S8.Px1.p1.s1">
+ <Math equation-number="17.8.1" mode="display" xml:id="C17.S8.E1">\sum_{n=-\infty}^{\infty}(-z)^{n}q^{n(n-1)/2}=\left(q,z,q/z;q\right)_{\infty};</Math> compare (LABEL:eq:TH.or.new).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S8.Px2">
+<title>Ramanujan’s <Math content-tex="\qgenhyperpsi{1}{1}" mode="inline" xml:id="C17.S8.Px2.m1">{{}_{1}\psi_{1}}</Math> Summation</title>     
+<para xml:id="C17.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="130" xml:id="C17.S8.Px2.p1.s1">
+ <Math equation-number="17.8.2" mode="display" xml:id="C17.S8.E2">{{}_{1}\psi_{1}}\left({a\atop b};q,z\right)=\frac{\left(q,b/a,az,q/(az);q \right)_{\infty}}{\left(b,q/a,z,b/(az);q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S8.Px3">
+<title>Quintuple Product Identity</title>    
+<para xml:id="C17.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C17.S8.Px3.p1.s1">
+ <Math equation-number="17.8.3" mode="display" xml:id="C17.S8.E3">\sum_{n=-\infty}^{\infty}(-1)^{n}q^{n(3n-1)/2}z^{3n}(1+zq^{n})=\left(q,-z,-q/z ;q\right)_{\infty}\left(qz^{2},q/{z^{2}};q^{2}\right)_{\infty}</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+<paragraph xml:id="C17.S8.Px4">
+<title>Bailey’s Bilateral Summations</title>   
+  
+<para xml:id="C17.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C17.S8.Px4.p1.s1">
+ <Math equation-number="17.8.4" mode="display" xml:id="C17.S8.E4">{{}_{2}\psi_{2}}\left(b,c;aq/b,aq/c;q,-aq/(bc)\right)=\frac{\left(aq/(bc);q \right)_{\infty}\left(aq^{2}/b^{2},aq^{2}/c^{2},q^{2},aq,q/a;q^{2}\right)_{ \infty}}{\left(aq/b,aq/c,q/b,q/c,-aq/(bc);q\right)_{\infty}},</Math> , <Math equation-number="17.8.5" mode="display" xml:id="C17.S8.E5">{{}_{3}\psi_{3}}\left({b,c,d\atop q/b,q/c,q/d};q,\frac{q}{bcd}\right)=\frac{ \left(q,q/(bc),q/(bd),q/(cd);q\right)_{\infty}}{\left(q/b,q/c,q/d,q/(bcd);q \right)_{\infty}},</Math> <Math equation-number="17.8.6" mode="display" xml:id="C17.S8.E6">{{}_{4}\psi_{4}}\left({-qa^{\frac{1}{2}},b,c,d\atop-a^{\frac{1}{2}},aq/b,aq/c, aq/d};q,\frac{qa^{\frac{3}{2}}}{bcd}\right)=\frac{\left(aq,aq/(bc),aq/(bd),aq/ (cd),qa^{\frac{1}{2}}/b,qa^{\frac{1}{2}}/c,qa^{\frac{1}{2}}/d,q,q/a;q\right)_{ \infty}}{\left(aq/b,aq/c,aq/d,q/b,q/c,q/d,qa^{\frac{1}{2}},qa^{-\frac{1}{2}}, qa^{\frac{3}{2}}/(bcd);q\right)_{\infty}},</Math> <Math equation-number="17.8.7" mode="display" xml:id="C17.S8.E7">{{}_{6}\psi_{6}}\left({qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d,e\atop a^{ \frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d,aq/e};q,\frac{qa^{2}}{bcde}\right )=\frac{\left(aq,aq/(bc),aq/(bd),aq/(be),aq/(cd),aq/(ce),aq/(de),q,q/a;q\right )_{\infty}}{\left(aq/b,aq/c,aq/d,aq/e,q/b,q/c,q/d,q/e,qa^{2}/(bcde);q\right)_{ \infty}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S9">
+<title>Further Transformations of <Math content-tex="\qgenhyperphi{r+1}{r}" mode="inline" xml:id="C17.S9.m1">{{}_{r+1}\phi_{r}}</Math> Functions</title>          
+<subsection xml:id="C17.S9.SS1">
+<title><Math content-tex="\qgenhyperphi{2}{1}\to\qgenhyperphi{2}{2}" mode="inline" xml:id="C17.S9.SS1.m1">{{}_{2}\phi_{1}}\to{{}_{2}\phi_{2}}</Math>, <Math content-tex="\qgenhyperphi{3}{1}" mode="inline" xml:id="C17.S9.SS1.m2">{{}_{3}\phi_{1}}</Math>, or <Math content-tex="\qgenhyperphi{3}{2}" mode="inline" xml:id="C17.S9.SS1.m3">{{}_{3}\phi_{2}}</Math></title>         
+<paragraph xml:id="C17.S9.Px1">
+<title>F. H. Jackson’s Transformations</title>    
+<para xml:id="C17.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C17.S9.Px1.p1.s1">
+ <Math equation-number="17.9.1" mode="display" xml:id="C17.S9.E1">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(za;q\right)_{\infty} }{\left(z;q\right)_{\infty}}{{}_{2}\phi_{2}}\left({a,c/b\atop c,az};q,bz\right),</Math> , <Math equation-number="17.9.2" mode="display" xml:id="C17.S9.E2">{{}_{2}\phi_{1}}\left({q^{-n},b\atop c};q,z\right)=\frac{\left(c/b;q\right)_{n }}{\left(c;q\right)_{n}}b^{n}{{}_{3}\phi_{1}}\left({q^{-n},b,q/z\atop bq^{1-n} /c};q,z/c\right),</Math> , <Math equation-number="17.9.3" mode="display" xml:id="C17.S9.E3">{{}_{2}\phi_{1}}\left({a,b\atop c};q,z\right)=\frac{\left(abz/c;q\right)_{ \infty}}{\left(bz/c;q\right)_{\infty}}{{}_{3}\phi_{2}}\left({a,c/b,0\atop c,cq /bz};q,q\right),</Math> , <Math equation-number="17.9.4" mode="display" xml:id="C17.S9.E4">{{}_{2}\phi_{1}}\left({q^{-n},b\atop c};q,z\right)=\frac{\left(c/b;q\right)_{n }}{\left(c;q\right)_{n}}\left(\frac{bz}{q}\right)^{n}{{}_{3}\phi_{2}}\left({q^ {-n},q/z,q^{1-n}/c\atop bq^{1-n}/c,0};q,q\right),</Math> , <Math equation-number="17.9.5" mode="display" xml:id="C17.S9.E5">{{}_{2}\phi_{1}}\left({q^{-n},b\atop c};q,z\right)=\frac{\left(c/b;q\right)_{n }}{\left(c;q\right)_{n}}{{}_{3}\phi_{2}}\left({q^{-n},b,bzq^{-n}/c\atop bq^{1- n}/c,0};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S9.SS2">
+<title><Math content-tex="\qgenhyperphi{3}{2}\to\qgenhyperphi{3}{2}" mode="inline" xml:id="C17.S9.SS2.m1">{{}_{3}\phi_{2}}\to{{}_{3}\phi_{2}}</Math></title>         
+<paragraph xml:id="C17.S9.Px2">
+<title>Transformations of <Math content-tex="\qgenhyperphi{3}{2}" mode="inline" xml:id="C17.S9.Px2.m1">{{}_{3}\phi_{2}}</Math>-Series</title>   
+<para xml:id="C17.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C17.S9.Px2.p1.s1">
+ <Math equation-number="17.9.6" mode="display" xml:id="C17.S9.E6">{{}_{3}\phi_{2}}\left({a,b,c\atop d,e};q,de/(abc)\right)=\frac{\left(e/a,de/( bc);q\right)_{\infty}}{\left(e,de/(abc);q\right)_{\infty}}{{}_{3}\phi_{2}} \left({a,d/b,d/c\atop d,de/(bc)};q,e/a\right),</Math> , <Math equation-number="17.9.7" mode="display" xml:id="C17.S9.E7">{{}_{3}\phi_{2}}\left({a,b,c\atop d,e};q,de/(abc)\right)=\frac{\left(b,de/(ab) ,de/(bc);q\right)_{\infty}}{\left(d,e,de/(abc);q\right)_{\infty}}\*{{}_{3}\phi _{2}}\left({d/b,e/b,de/(abc)\atop de/(ab),de/(bc)};q,b\right),</Math> , <Math equation-number="17.9.8" mode="display" xml:id="C17.S9.E8">{{}_{3}\phi_{2}}\left({q^{-n},b,c\atop d,e};q,q\right)=\frac{\left(de/(bc);q \right)_{n}}{\left(e;q\right)_{n}}\left(\frac{bc}{d}\right)^{n}{{}_{3}\phi_{2} }\left({q^{-n},d/b,d/c\atop d,de/(bc)};q,q\right),</Math> , <Math equation-number="17.9.9" mode="display" xml:id="C17.S9.E9">{{}_{3}\phi_{2}}\left({q^{-n},b,c\atop d,e};q,q\right)=\frac{\left(e/c;q\right )_{n}}{\left(e;q\right)_{n}}c^{n}{{}_{3}\phi_{2}}\left({q^{-n},c,d/b\atop d,cq ^{1-n}/e};q,\frac{bq}{e}\right),</Math> , <Math equation-number="17.9.10" mode="display" xml:id="C17.S9.E10">{{}_{3}\phi_{2}}\left({q^{-n},b,c\atop d,e};q,\frac{deq^{n}}{bc}\right)=\frac{ \left(e/c;q\right)_{n}}{\left(e;q\right)_{n}}{{}_{3}\phi_{2}}\left({q^{-n},c,d /b\atop d,cq^{1-n}/e};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S9.Px3">
+<title><Math mode="inline" xml:id="C17.S9.Px3.m1">q</Math>-Sheppard Identity</title>    
+<para xml:id="C17.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C17.S9.Px3.p1.s1">
+ <Math equation-number="17.9.11" mode="display" xml:id="C17.S9.E11">{{}_{3}\phi_{2}}\left({q^{-n},b,c\atop d,e};q,q\right)=\frac{\left(e/c,d/c;q \right)_{n}}{\left(e,d;q\right)_{n}}c^{n}{{}_{3}\phi_{2}}\left({q^{-n},c, \ifrac{cbq^{1-n}}{(de)}\atop\ifrac{cq^{1-n}}{e},\ifrac{cq^{1-n}}{d}};q,q\right),</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C17.S9.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C17.S9.Px3.p2.s1">
+ <Math equation-number="17.9.12" mode="display" xml:id="C17.S9.E12">{{}_{3}\phi_{2}}\left({a,b,c\atop d,e};q,\frac{de}{abc}\right)=\frac{\left(e/b ,e/c,cq/a,q/d;q\right)_{\infty}}{\left(e,cq/d,q/a,e/(bc);q\right)_{\infty}}{{} _{3}\phi_{2}}\left({c,d/a,cq/e\atop cq/a,bcq/e};q,\frac{bq}{d}\right)-\frac{ \left(q/d,eq/d,b,c,d/a,de/(bcq),bcq^{2}/(de);q\right)_{\infty}}{\left(d/q,e,bq /d,cq/d,q/a,e/(bc),bcq/e;q\right)_{\infty}}{{}_{3}\phi_{2}}\left({aq/d,bq/d,cq /d\atop q^{2}/d,eq/d};q,\frac{de}{abc}\right),</Math> <Math equation-number="17.9.13" mode="display" xml:id="C17.S9.E13">{{}_{3}\phi_{2}}\left({a,b,c\atop d,e};q,\frac{de}{abc}\right)=\frac{\left(e/b ,e/c;q\right)_{\infty}}{\left(e,e/(bc);q\right)_{\infty}}{{}_{3}\phi_{2}}\left ({d/a,b,c\atop d,bcq/e};q,q\right)+\frac{\left(d/a,b,c,de/(bc);q\right)_{ \infty}}{\left(d,e,bc/e,de/(abc);q\right)_{\infty}}{{}_{3}\phi_{2}}\left({e/b, e/c,de/(abc)\atop de/(bc),eq/(bc)};q,q\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S9.SS3">
+<title>Further <Math content-tex="\qgenhyperphi{r}{s}" mode="inline" xml:id="C17.S9.SS3.m1">{{}_{r}\phi_{s}}</Math> Functions</title>         
+<paragraph xml:id="C17.S9.Px4">
+<title>Sears’ Balanced <Math content-tex="\qgenhyperphi{4}{3}" mode="inline" xml:id="C17.S9.Px4.m1">{{}_{4}\phi_{3}}</Math> Transformations</title>    
+<para xml:id="C17.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C17.S9.Px4.p1.s1">
+With <Math mode="inline" xml:id="C17.S9.Px4.p1.m1">def=abcq^{1-n}</Math> <Math equation-number="17.9.14" mode="display" xml:id="C17.S9.E14">{{}_{4}\phi_{3}}\left({q^{-n},a,b,c\atop d,e,f};q,q\right)=\frac{\left(e/a,f/a ;q\right)_{n}}{\left(e,f;q\right)_{n}}a^{n}{{}_{4}\phi_{3}}\left({q^{-n},a,d/b ,d/c\atop d,aq^{1-n}/e,aq^{1-n}/f};q,q\right)=\frac{\left(a,ef/(ab),ef/(ac);q \right)_{n}}{\left(e,f,ef/(abc);q\right)_{n}}{{}_{4}\phi_{3}}\left({q^{-n},e/a ,f/a,ef/(abc)\atop ef/(ab),ef/(ac),q^{1-n}/a};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S9.Px5">
+<title>Watson’s <Math mode="inline" xml:id="C17.S9.Px5.m1">q</Math>-Analog of Whipple’s Theorem</title>   
+ 
+<para xml:id="C17.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C17.S9.Px5.p1.s1">
+With <Math mode="inline" xml:id="C17.S9.Px5.p1.m1">n</Math> a nonnegative integer
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S9.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="139" xml:id="C17.S9.Px5.p2.s1">
+ <Math equation-number="17.9.15" mode="display" xml:id="C17.S9.E15">\frac{\left(aq,aq/(de);q\right)_{n}}{\left(aq/d,aq/e;q\right)_{n}}{{}_{4}\phi_ {3}}\left({aq/(bc),d,e,q^{-n}\atop aq/b,aq/c,deq^{-n}/a};q,q\right)={{}_{8} \phi_{7}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d,e,q^{-n}\atop a^{ \frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d,aq/e,aq^{n+1}};q,\frac{a^{2}q^{2+ n}}{bcde}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S9.Px6">
+<title>Bailey’s Transformation of Very-Well-Poised <Math content-tex="\qgenhyperphi{8}{7}" mode="inline" xml:id="C17.S9.Px6.m1">{{}_{8}\phi_{7}}</Math></title>    
+<para xml:id="C17.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C17.S9.Px6.p1.s1">
+ <Math equation-number="17.9.16" mode="display" xml:id="C17.S9.E16">{{}_{8}\phi_{7}}\left({a,qa^{\frac{1}{2}},-qa^{\frac{1}{2}},b,c,d,e,f\atop a^{ \frac{1}{2}},-a^{\frac{1}{2}},aq/b,aq/c,aq/d,aq/e,aq/f};q,\frac{a^{2}q^{2}}{ bcdef}\right)=\frac{\left(aq,aq/(de),aq/(df),aq/(ef);q\right)_{\infty}}{\left( aq/d,aq/e,aq/f,aq/(def);q\right)_{\infty}}{{}_{4}\phi_{3}}\left({aq/(bc),d,e,f \atop aq/b,aq/c,def/a};q,q\right)+\frac{\left(aq,aq/(bc),d,e,f,a^{2}q^{2}/( bdef),a^{2}q^{2}/(cdef);q\right)_{\infty}}{\left(aq/b,aq/c,aq/d,aq/e,aq/f,a^{2 }q^{2}/(bcdef),def/(aq);q\right)_{\infty}}\*{{}_{4}\phi_{3}}\left({aq/(de),aq/ (df),aq/(ef),a^{2}q^{2}/(bcdef)\atop a^{2}q^{2}/(bdef),a^{2}q^{2}/(cdef),aq^{2 }/(def)};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S9.Px7">
+<title>Sears–Carlitz Transformation</title>   
+<para xml:id="C17.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C17.S9.Px7.p1.s1">
+With <Math mode="inline" xml:id="C17.S9.Px7.p1.m1">a=q^{-n}</Math> and <Math mode="inline" xml:id="C17.S9.Px7.p1.m2">n</Math> a nonnegative integer, <Math equation-number="17.9.17" mode="display" xml:id="C17.S9.E17">{{}_{3}\phi_{2}}\left({a,b,c\atop aq/b,aq/c};q,\frac{aqz}{bc}\right)=\frac{ \left(az;q\right)_{\infty}}{\left(z;q\right)_{\infty}}\*{{}_{5}\phi_{4}}\left( {a^{\frac{1}{2}},-a^{\frac{1}{2}},(aq)^{\frac{1}{2}},-(aq)^{\frac{1}{2}},aq/( bc)\atop aq/b,aq/c,az,q/z};q,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S9.Px8">
+<title>Gasper’s <Math mode="inline" xml:id="C17.S9.Px8.m1">q</Math>-Analog of Clausen’s Formula</title>   
+<para xml:id="C17.S9.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C17.S9.Px8.p1.s1">
+ <Math equation-number="17.9.18" mode="display" xml:id="C17.S9.E18">\left({{}_{4}\phi_{3}}\left({a,b,abz,ab/z\atop abq^{\frac{1}{2}},-abq^{\frac{1 }{2}},-ab};q,q\right)\right)^{2}={{}_{5}\phi_{4}}\left({a^{2},b^{2},ab,abz,ab/ z\atop abq^{\frac{1}{2}},-abq^{\frac{1}{2}},-ab,a^{2}b^{2}};q,q\right),</Math> provided that the series expansions of both <Math mode="inline" xml:id="C17.S9.Px8.p1.m1">\phi</Math> ’s terminate.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C17.S9.SS4">
+<title>Bibasic Series</title>        
+  
+<paragraph xml:id="C17.S9.Px9">
+<title>Mixed-Base Heine-Type Transformations</title>    
+<para xml:id="C17.S9.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C17.S9.Px9.p1.s1">
+ <Math equation-number="17.9.19" mode="display" xml:id="C17.S9.E19">\sum_{n=0}^{\infty}\frac{\left(a;q^{2}\right)_{n}\left(b;q\right)_{n}}{\left(q ^{2};q^{2}\right)_{n}\left(c;q\right)_{n}}z^{n}=\frac{\left(b;q\right)_{\infty }\left(az;q^{2}\right)_{\infty}}{\left(c;q\right)_{\infty}\left(z;q^{2}\right) _{\infty}}\sum_{n=0}^{\infty}\frac{\left(c/b;q\right)_{2n}\left(z;q^{2}\right) _{n}b^{2n}}{\left(q;q\right)_{2n}\left(az;q^{2}\right)_{n}}+\frac{\left(b;q \right)_{\infty}\left(azq;q^{2}\right)_{\infty}}{\left(c;q\right)_{\infty} \left(zq;q^{2}\right)_{\infty}}\sum_{n=0}^{\infty}\frac{\left(c/b;q\right)_{2n +1}\left(zq;q^{2}\right)_{n}b^{2n+1}}{\left(q;q\right)_{2n+1}\left(azq;q^{2} \right)_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C17.S9.Px9.p1.s2">
+<Math equation-number="17.9.20" mode="display" xml:id="C17.S9.E20">\sum_{n=0}^{\infty}\frac{\left(a;q^{k}\right)_{n}\left(b;q\right)_{kn}z^{n}}{ \left(q^{k};q^{k}\right)_{n}\left(c;q\right)_{kn}}=\frac{\left(b;q\right)_{ \infty}\left(az;q^{k}\right)_{\infty}}{\left(c;q\right)_{\infty}\left(z;q^{k} \right)_{\infty}}\sum_{n=0}^{\infty}\frac{\left(c/b;q\right)_{n}\left(z;q^{k} \right)_{n}b^{n}}{\left(q;q\right)_{n}\left(az;q^{k}\right)_{n}}, subject to k=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C17.S10">
+<title>Transformations of <Math content-tex="\qgenhyperpsi{r}{r}" mode="inline" xml:id="C17.S10.m1">{{}_{r}\psi_{r}}</Math> Functions</title>          
+ 
+<paragraph xml:id="C17.S10.Px1">
+<title>Bailey’s <Math content-tex="\qgenhyperpsi{2}{2}" mode="inline" xml:id="C17.S10.Px1.m1">{{}_{2}\psi_{2}}</Math> Transformations</title>   
+<para xml:id="C17.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C17.S10.Px1.p1.s1">
+ <Math equation-number="17.10.1" mode="display" xml:id="C17.S10.E1">{{}_{2}\psi_{2}}\left({a,b\atop c,d};q,z\right)=\frac{\left(az,d/a,c/b,dq/(abz );q\right)_{\infty}}{\left(z,d,q/b,cd/(abz);q\right)_{\infty}}{{}_{2}\psi_{2}} \left({a,abz/d\atop az,c};q,\frac{d}{a}\right),</Math> <Math equation-number="17.10.2" mode="display" xml:id="C17.S10.E2">{{}_{2}\psi_{2}}\left({a,b\atop c,d};q,z\right)=\frac{\left(az,bz,cq/(abz),dq/ (abz);q\right)_{\infty}}{\left(q/a,q/b,c,d;q\right)_{\infty}}{{}_{2}\psi_{2}} \left({abz/c,abz/d\atop az,bz};q,\frac{cd}{abz}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S10.Px2">
+<title>Other Transformations</title>   
+<para xml:id="C17.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C17.S10.Px2.p1.s1">
+ <Math equation-number="17.10.3" mode="display" xml:id="C17.S10.E3">{{}_{8}\psi_{8}}\left({qa^{\frac{1}{2}},-qa^{\frac{1}{2}},c,d,e,f,aq^{-n},q^{- n}\atop a^{\frac{1}{2}},-a^{\frac{1}{2}},aq/c,aq/d,aq/e,aq/f,q^{n+1},aq^{n+1}} ;q,\frac{a^{2}q^{2n+2}}{cdef}\right)=\frac{\left(aq,q/a,aq/(cd),aq/(ef);q \right)_{n}}{\left(q/c,q/d,aq/e,aq/f;q\right)_{n}}\*{{}_{4}\psi_{4}}\left({e,f ,aq^{n+1}/(cd),q^{-n}\atop aq/c,aq/d,q^{n+1},ef/(aq^{n})};q,q\right),</Math> <Math equation-number="17.10.4" mode="display" xml:id="C17.S10.E4">{{}_{2}\psi_{2}}\left({e,f\atop aq/c,aq/d};q,\frac{aq}{ef}\right)=\frac{\left( q/c,q/d,aq/e,aq/f;q\right)_{\infty}}{\left(aq,q/a,aq/(cd),aq/(ef);q\right)_{ \infty}}\*\sum_{n=-\infty}^{\infty}\frac{(1-aq^{2n})\left(c,d,e,f;q\right)_{n} }{(1-a)\left(aq/c,aq/d,aq/e,aq/f;q\right)_{n}}\left(\frac{qa^{3}}{cdef}\right) ^{n}q^{n^{2}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C17.S10.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C17.S10.Px2.p2.s1">
+ <Math equation-number="17.10.5" mode="display" xml:id="C17.S10.E5">\frac{\left(aq/b,aq/c,aq/d,aq/e,q/(ab),q/(ac),q/(ad),q/(ae);q\right)_{\infty}} {\left(fa,ga,f/a,g/a,qa^{2},q/a^{2};q\right)_{\infty}}\*{{}_{8}\psi_{8}}\left( {qa,-qa,ba,ca,da,ea,fa,ga\atop a,-a,aq/b,aq/c,aq/d,aq/e,aq/f,aq/g};q,\frac{q^{ 2}}{bcdefg}\right)=\frac{\left(q,q/(bf),q/(cf),q/(df),q/(ef),qf/b,qf/c,qf/d,qf /e;q\right)_{\infty}}{\left(fa,q/(fa),aq/f,f/a,g/f,fg,qf^{2};q\right)_{\infty} }\*{{}_{8}\phi_{7}}\left({f^{2},qf,-qf,fb,fc,fd,fe,fg\atop f,-f,fq/b,fq/c,fq/d ,fq/e,fq/g};q,\frac{q^{2}}{bcdefg}\right)+\mathrm{idem}\left(f;g\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C17.S10.Px2.p2.s2">
+<Math equation-number="17.10.6" mode="display" xml:id="C17.S10.E6">\frac{\left(aq/b,aq/c,aq/d,aq/e,aq/f,q/(ab),q/(ac),q/(ad),q/(ae),q/(af);q \right)_{\infty}}{\left(ag,ah,ak,g/a,h/a,k/a,qa^{2},q/a^{2};q\right)_{\infty}} \*{{}_{10}\psi_{10}}\left({qa,-qa,ba,ca,da,ea,fa,ga,ha,ka\atop a,-a,aq/b,aq/c, aq/d,aq/e,aq/f,aq/g,aq/h,aq/k};q,\frac{q^{2}}{bcdefghk}\right)=\frac{\left(q,q /(bg),q/(cg),q/(dg),q/(eg),q/(fg),qg/b,qg/c,qg/d,qg/e,qg/f;q\right)_{\infty}}{ \left(gh,gk,h/g,ag,q/(ag),g/a,aq/g,qg^{2};q\right)_{\infty}}\*{{}_{10}\phi_{9} }\left({g^{2},qg,-qg,gb,gc,gd,ge,gf,gh,gk\atop g,-g,qg/b,qg/c,qg/d,qg/e,qg/f, qg/h,qg/k};q,\frac{q^{2}}{bcdefghk}\right)+\mathrm{idem}\left(g;h,k\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S11">
+<title>Transformations of <Math mode="inline" xml:id="C17.S11.m1">q</Math>-Appell Functions</title>        
+  
+<para xml:id="C17.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C17.S11.p1.s1">
+ <Math equation-number="17.11.1" mode="display" xml:id="C17.S11.E1">\Phi^{(1)}\left(a;b,b^{\prime};c;q;x,y\right)=\frac{\left(a,bx,b^{\prime}y;q \right)_{\infty}}{\left(c,x,y;q\right)_{\infty}}{{}_{3}\phi_{2}}\left({c/a,x,y \atop bx,b^{\prime}y};q,a\right),</Math> <Math equation-number="17.11.2" mode="display" xml:id="C17.S11.E2">\Phi^{(2)}\left(a;b,b^{\prime};c,c^{\prime};q;x,y\right)=\frac{\left(b,ax;q \right)_{\infty}}{\left(c,x;q\right)_{\infty}}\sum_{n,r\geqq 0}\frac{\left(a,b ^{\prime};q\right)_{n}\left(c/b,x;q\right)_{r}b^{r}y^{n}}{\left(q,c^{\prime};q \right)_{n}{\left(q\right)_{r}}\left(ax;q\right)_{n+r}},</Math> <Math equation-number="17.11.3" mode="display" xml:id="C17.S11.E3">\Phi^{(3)}\left(a,a^{\prime};b,b^{\prime};c;q;x,y\right)=\frac{\left(a,bx;q \right)_{\infty}}{\left(c,x;q\right)_{\infty}}\sum_{n,r\geqq 0}\frac{\left(a^{ \prime},b^{\prime};q\right)_{n}\left(x;q\right)_{r}\left(c/a;q\right)_{n+r}a^{ r}y^{n}}{\left(q,c/a;q\right)_{n}\left(q,bx;q\right)_{r}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C17.S11.p2.s1">
+Of (LABEL:eq:QH.12.1)–(LABEL:eq:QH.12.3)only (LABEL:eq:QH.12.1) has a natural generalization: the following sum reduces to (LABEL:eq:QH.12.1) when <Math mode="inline" xml:id="C17.S11.p2.m1">n=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="151" xml:id="C17.S11.p2.s2">
+<Math equation-number="17.11.4" mode="display" xml:id="C17.S11.E4">\sum_{m_{1},\dots,m_{n}\geqq 0}\frac{\left(a;q\right)_{m_{1}+m_{2}+\cdots+m_{n }}\left(b_{1};q\right)_{m_{1}}\left(b_{2};q\right)_{m_{2}}\cdots\left(b_{n};q \right)_{m_{n}}x_{1}^{m_{1}}x_{2}^{m_{2}}\cdots x_{n}^{m_{n}}}{\left(q;q\right )_{m_{1}}\left(q;q\right)_{m_{2}}\cdots\left(q;q\right)_{m_{n}}\left(c;q\right )_{m_{1}+m_{2}+\cdots+m_{n}}}=\frac{\left(a,b_{1}x_{1},b_{2}x_{2},\dots,b_{n}x _{n};q\right)_{\infty}}{\left(c,x_{1},x_{2},\dots,x_{n};q\right)_{\infty}}{{}_ {n+1}\phi_{n}}\left({c/a,x_{1},x_{2},\dots,x_{n}\atop b_{1}x_{1},b_{2}x_{2}, \dots,b_{n}x_{n}};q,a\right)</Math>.
+</sentence>
+
+</para>
+  
+</section>
+ 
+<section xml:id="C17.S12">
+<title>Bailey Pairs</title>        
+ 
+<paragraph xml:id="C17.S12.Px1">
+<title>Bailey Transform</title>    
+<para xml:id="C17.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C17.S12.Px1.p1.s1">
+ <Math equation-number="17.12.1" mode="display" xml:id="C17.S12.E1">\sum_{n=0}^{\infty}\alpha_{n}\gamma_{n}=\sum_{n=0}^{\infty}\beta_{n}\delta_{n},</Math> where <Math equation-number="17.12.2" mode="display" xml:id="C17.S12.E2">\beta_{n}=\sum_{j=0}^{n}\alpha_{j}u_{n-j}v_{n+j}, \gamma_{n}=\sum_{j=n}^{\infty}\delta_{j}u_{j-n}v_{j+n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px2">
+<title>Bailey Pairs</title>          
+<para xml:id="C17.S12.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C17.S12.Px2.p1.s1">
+A sequence of pairs of rational functions of several variables <Math mode="inline" xml:id="C17.S12.Px2.p1.m1">(\alpha_{n},\beta_{n})</Math> , <Math mode="inline" xml:id="C17.S12.Px2.p1.m2">n=0,1,2,\dots</Math> , is called a Bailey pair provided that for each <Math mode="inline" xml:id="C17.S12.Px2.p1.m3">n\geqq 0</Math> <Math equation-number="17.12.3" mode="display" xml:id="C17.S12.E3">\beta_{n}=\sum_{j=0}^{n}\frac{\alpha_{j}}{\left(q;q\right)_{n-j}\left(aq;q \right)_{n+j}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px3">
+<title>Weak Bailey Lemma</title>    
+<para xml:id="C17.S12.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C17.S12.Px3.p1.s1">
+If <Math mode="inline" xml:id="C17.S12.Px3.p1.m1">(\alpha_{n},\beta_{n})</Math> is a Bailey pair, then <Math equation-number="17.12.4" mode="display" xml:id="C17.S12.E4">\sum_{n=0}^{\infty}q^{n^{2}}a^{n}\beta_{n}=\frac{1}{\left(aq;q\right)_{\infty} }\sum_{n=0}^{\infty}q^{n^{2}}a^{n}\alpha_{n}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S12.Px4">
+<title>Strong Bailey Lemma</title>    
+<para xml:id="C17.S12.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="155" xml:id="C17.S12.Px4.p1.s1">
+If <Math mode="inline" xml:id="C17.S12.Px4.p1.m1">(\alpha_{n},\beta_{n})</Math> is a Bailey pair, then so is <Math mode="inline" xml:id="C17.S12.Px4.p1.m2">(\alpha_{n}^{\prime},\beta_{n}^{\prime})</Math> , where <Math equation-number="17.12.5" mode="display" xml:id="C17.S12.E5">\left(\frac{aq}{\rho_{1}},\frac{aq}{\rho_{2}};q\right)_{n}\alpha_{n}^{\prime}= \left(\rho_{1},\rho_{2};q\right)_{n}\left(\frac{aq}{\rho_{1}\rho_{2}}\right)^{ n}\alpha_{n}, \left(\frac{aq}{\rho_{1}},\frac{aq}{\rho_{2}};q\right)_{n}\beta_{n}^{\prime}= \sum_{j=0}^{n}\left(\rho_{1},\rho_{2};q\right)_{j}\left(\frac{aq}{\rho_{1}\rho _{2}};q\right)_{n-j}\left(\frac{aq}{\rho_{1}\rho_{2}}\right)^{j}\frac{\beta_{j }}{\left(q;q\right)_{n-j}}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C17.S12.Px4.p2.s1">
+When (LABEL:eq:QH.13.5) is iterated the resulting infinite sequence of Bailey pairs is called a Bailey Chain.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C17.S12.Px4.p3.s1">
+The Bailey pair that implies the Rogers–Ramanujan identities §LABEL:sec:QH.2.(vi) is: <Math equation-number="17.12.6" mode="display" xml:id="C17.S12.E6">\alpha_{n}=\frac{\left(a;q\right)_{n}(1-aq^{2n})(-1)^{n}q^{n(3n-1)/2}a^{n}}{ \left(q;q\right)_{n}(1-a)}, \beta_{n}=\frac{1}{\left(q;q\right)_{n}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S12.Px4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C17.S12.Px4.p4.s1">
+The Bailey pair and Bailey chain concepts have been extended considerably.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C17.S12.Px4.p4.s2">
+See ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S13">
+<title>Integrals</title>        
+  
+<para xml:id="C17.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C17.S13.p1.s1">
+In this section, for the function <Math mode="inline" xml:id="C17.S13.p1.m1">\Gamma_{q}</Math> see §LABEL:sec:GA.GF.QG.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="161" xml:id="C17.S13.p1.s2">
+<Math equation-number="17.13.1" mode="display" xml:id="C17.S13.E1">\int_{-c}^{d}\frac{\left(-qx/c;q\right)_{\infty}\left(qx/d;q\right)_{\infty}}{ \left(-ax/c;q\right)_{\infty}\left(bx/d;q\right)_{\infty}}{\mathrm{d}}_{q}x= \frac{(1-q)\left(q;q\right)_{\infty}\left(ab;q\right)_{\infty}cd\left(-c/d;q \right)_{\infty}\left(-d/c;q\right)_{\infty}}{\left(a;q\right)_{\infty}\left(b ;q\right)_{\infty}(c+d)\left(-bc/d;q\right)_{\infty}\left(-ad/c;q\right)_{ \infty}},</Math> or, when <Math mode="inline" xml:id="C17.S13.p1.m2">0&lt;q&lt;1</Math> , <Math equation-number="17.13.2" mode="display" xml:id="C17.S13.E2">\int_{-c}^{d}\frac{\left(-qx/c;q\right)_{\infty}\left(qx/d;q\right)_{\infty}}{ \left(-xq^{\alpha}/c;q\right)_{\infty}\left(xq^{\beta}/d;q\right)_{\infty}}{ \mathrm{d}}_{q}x=\frac{\Gamma_{q}\left(\alpha\right)\Gamma_{q}\left(\beta \right)}{\Gamma_{q}\left(\alpha+\beta\right)}\frac{cd}{c+d}\frac{\left(-c/d;q \right)_{\infty}\left(-d/c;q\right)_{\infty}}{\left(-q^{\beta}c/d;q\right)_{ \infty}\left(-q^{\alpha}d/c;q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C17.S13.Px1">
+<title>Ramanujan’s Integrals</title>    
+<para xml:id="C17.S13.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C17.S13.Px1.p1.s1">
+ <Math equation-number="17.13.3" mode="display" xml:id="C17.S13.E3">\int_{0}^{\infty}t^{\alpha-1}\frac{\left(-tq^{\alpha+\beta};q\right)_{\infty}} {\left(-t;q\right)_{\infty}}\mathrm{d}t=\frac{\Gamma\left(\alpha\right)\Gamma \left(1-\alpha\right)\Gamma_{q}\left(\beta\right)}{\Gamma_{q}\left(1-\alpha \right)\Gamma_{q}\left(\alpha+\beta\right)},</Math> <Math equation-number="17.13.4" mode="display" xml:id="C17.S13.E4">\int_{0}^{\infty}t^{\alpha-1}\frac{\left(-ctq^{\alpha+\beta};q\right)_{\infty} }{\left(-ct;q\right)_{\infty}}{\mathrm{d}}_{q}t=\frac{\Gamma_{q}\left(\alpha \right)\Gamma_{q}\left(\beta\right)\left(-cq^{\alpha};q\right)_{\infty}\left(- q^{1-\alpha}/c;q\right)_{\infty}}{\Gamma_{q}\left(\alpha+\beta\right)\left(-c; q\right)_{\infty}\left(-q/c;q\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S13.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C17.S13.Px1.p2.s1">
+( ) conjectured extensions of the foregoing integrals that are closely related to ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="164" xml:id="C17.S13.Px1.p2.s2">
+These conjectures are proved independently in ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S14">
+<title>Constant Term Identities</title>        
+  
+<paragraph xml:id="C17.S14.Px1">
+<title>Zeilberger–Bressoud Theorem (Andrews’ <Math mode="inline" xml:id="C17.S14.Px1.m1">q</Math>-Dyson Conjecture)</title>      
+<para xml:id="C17.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="165" xml:id="C17.S14.Px1.p1.s1">
+ <Math equation-number="17.14.1" mode="display" xml:id="C17.S14.E1">\frac{\left(q;q\right)_{a_{1}+a_{2}+\cdots+a_{n}}}{\left(q;q\right)_{a_{1}} \left(q;q\right)_{a_{2}}\cdots\left(q;q\right)_{a_{n}}}=\mbox{ coeff. of }x_{1 }^{0}x_{2}^{0}\cdots x_{n}^{0}\mbox{ in }\prod_{1\leq j&lt;k\leq n}\left(\frac{x_ {j}}{x_{k}};q\right)_{a_{j}}\left(\frac{qx_{k}}{x_{j}};q\right)_{a_{k}}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C17.S14.Px2">
+<title>Rogers–Ramanujan Constant Term Identities</title>    
+<para xml:id="C17.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C17.S14.Px2.p1.s1">
+In the following, <Math mode="inline" xml:id="C17.S14.Px2.p1.m1">G(q)</Math> and <Math mode="inline" xml:id="C17.S14.Px2.p1.m2">H(q)</Math> denote the left-hand sides of(LABEL:eq:QH.2.49) and (LABEL:eq:QH.2.50), respectively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="167" xml:id="C17.S14.Px2.p1.s2">
+<Math equation-number="17.14.2" mode="display" xml:id="C17.S14.E2">\sum_{n=0}^{\infty}\frac{q^{n(n+1)}}{\left(q^{2};q^{2}\right)_{n}\left(-q;q^{2 }\right)_{n+1}}=\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right) _{\infty}\left(-z^{-1}q;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty} }{\left(z^{-1}q^{2};q^{2}\right)_{\infty}\left(-q;q^{2}\right)_{\infty}\left(z ^{-1}q;q^{2}\right)_{\infty}}=\frac{1}{\left(-q;q^{2}\right)_{\infty}}\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right)_{\infty}\left(-z^{-1}q ;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty}}{\left(z^{-1}q;q\right )_{\infty}}=\frac{H(q)}{\left(-q;q^{2}\right)_{\infty}},</Math> <Math equation-number="17.14.3" mode="display" xml:id="C17.S14.E3">\sum_{n=0}^{\infty}\frac{q^{n(n+1)}}{\left(q^{2};q^{2}\right)_{n}\left(-q;q^{2 }\right)_{n+1}}=\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right) _{\infty}\left(-z^{-1}q;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty} }{\left(z^{-1};q^{2}\right)_{\infty}\left(-q;q^{2}\right)_{\infty}\left(z^{-1} q;q^{2}\right)_{\infty}}=\frac{1}{\left(-q;q^{2}\right)_{\infty}}\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right)_{\infty}\left(-z^{-1}q;q^{2} \right)_{\infty}\left(q^{2};q^{2}\right)_{\infty}}{\left(z^{-1};q\right)_{ \infty}}=\frac{G(q)}{\left(-q;q^{2}\right)_{\infty}},</Math> <Math equation-number="17.14.4" mode="display" xml:id="C17.S14.E4">\sum_{n=0}^{\infty}\frac{q^{n^{2}}}{\left(q^{2};q^{2}\right)_{n}\left(q;q^{2} \right)_{n}}=\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right)_{ \infty}\left(-z^{-1}q;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty}}{ \left(-z^{-1};q^{2}\right)_{\infty}\left(q;q^{2}\right)_{\infty}\left(z^{-1};q ^{2}\right)_{\infty}}=\frac{1}{\left(q;q^{2}\right)_{\infty}}\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right)_{\infty}\left(-z^{-1}q;q^{2} \right)_{\infty}\left(q^{2};q^{2}\right)_{\infty}}{\left(z^{-2};q^{4}\right)_{ \infty}}=\frac{G(q^{4})}{\left(q;q^{2}\right)_{\infty}},</Math> <Math equation-number="17.14.5" mode="display" xml:id="C17.S14.E5">\sum_{n=0}^{\infty}\frac{q^{n^{2}+2n}}{\left(q^{2};q^{2}\right)_{n}\left(q;q^{ 2}\right)_{n+1}}=\mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right )_{\infty}\left(-z^{-1}q;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty }}{\left(-q^{2}z^{-1};q^{2}\right)_{\infty}\left(q;q^{2}\right)_{\infty}\left( z^{-1}q^{2};q^{2}\right)_{\infty}}=\frac{1}{\left(q;q^{2}\right)_{\infty}} \mbox{ coeff. of }z^{0}\mbox{ in }\frac{\left(-zq;q^{2}\right)_{\infty}\left(- z^{-1}q;q^{2}\right)_{\infty}\left(q^{2};q^{2}\right)_{\infty}}{\left(q^{4}z^{ -2};q^{4}\right)_{\infty}}=\frac{H(q^{4})}{\left(q;q^{2}\right)_{\infty}}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C17.S14.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="168" xml:id="C17.S14.Px2.p2.s1">
+( ) includes extensive conjectures on generalizations of (LABEL:eq:QH.15.1) to root systems.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="169" xml:id="C17.S14.Px2.p2.s2">
+These conjectures were proved in ( ) , ( ) , and ( ) ; see also ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="170" xml:id="C17.S14.Px2.p2.s3">
+For additional results of the type (LABEL:eq:QH.15.5)–(LABEL:eq:QH.15.8) see ( , Chapter 4) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C17.S15">
+<title>Generalizations</title>        
+  
+<para xml:id="C17.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="171" xml:id="C17.S15.p1.s1">
+For higher-dimensional basic hypergometric functions, see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C17.S16">
+<title>Mathematical Applications</title>        
+   
+<para xml:id="C17.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C17.S16.p1.s1">
+Many special cases of <Math mode="inline" xml:id="C17.S16.p1.m1">q</Math> -series arise in the theory of partitions, a topic treated in §§LABEL:sec:NT.FNS.PTa and LABEL:sec:CM.RNP.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="173" xml:id="C17.S16.p1.s2">
+In Lie algebras ( ) and ( ) laid foundations for extensive interaction with <Math mode="inline" xml:id="C17.S16.p1.m2">q</Math> -series.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="174" xml:id="C17.S16.p1.s3">
+These and other applications are described in the surveys ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="175" xml:id="C17.S16.p1.s4">
+More recent applications are given in ( , Chapter 8) and ( , Chapters 1 and 2) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C17.S17">
+<title>Physical Applications</title>        
+  
+ 
+<para xml:id="C17.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="176" xml:id="C17.S17.p1.s1">
+In exactly solved models in statistical mechanics ( ( ) ) the methods and identities of §LABEL:sec:QH.13 play a substantial role.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="177" xml:id="C17.S17.p1.s2">
+See ( ) and ( ) for recent surveys.
+</sentence>
+
+</para>
+  
+<para xml:id="C17.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C17.S17.p2.s1">
+Quantum groups also apply <Math mode="inline" xml:id="C17.S17.p2.m1">q</Math> -series extensively.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="179" xml:id="C17.S17.p2.s2">
+Quantum groups are really not groups at all but certain Hopf algebras.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="180" xml:id="C17.S17.p2.s3">
+They were given this name because they play a role in quantum physics analogous to the role of Lie groups and special functions in classical mechanics.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="181" xml:id="C17.S17.p2.s4">
+See ( ) .
+</sentence>
+
+</para>
+       
+<para xml:id="C17.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C17.S17.p3.s1">
+A substantial literature on <Math mode="inline" xml:id="C17.S17.p3.m1">q</Math> -deformed quantum-mechanical Schrödinger equations has developed recently.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="183" xml:id="C17.S17.p3.s2">
+It involves <Math mode="inline" xml:id="C17.S17.p3.m2">q</Math> -generalizations of exponentials and Laguerre polynomials, and has been applied to the problems of the harmonic oscillator and Coulomb potentials.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="184" xml:id="C17.S17.p3.s3">
+See ( ) , where many earlier references are cited.
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C17.S18">
+<title>Methods of Computation</title>        
+    
+<para xml:id="C17.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="185" xml:id="C17.S18.p1.s1">
+For computation of the <Math mode="inline" xml:id="C17.S18.p1.m1">q</Math> -exponential function see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S18.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C17.S18.p2.s1">
+The two main methods for computing basic hypergeometric functions are: (1) numerical summation of the defining series given in §§LABEL:sec:QH.4(i)and LABEL:sec:QH.4(ii);(2) modular transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="187" xml:id="C17.S18.p2.s2">
+Method (1) is applicable within the circles of convergence of the defining series, although it is often cumbersome owing to slowness of convergence and/or severe cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="188" xml:id="C17.S18.p2.s3">
+Method (2) is very powerful when applicable ( ( , Chapter 5) ); however, it is applicable only rarely.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="189" xml:id="C17.S18.p2.s4">
+( ) uses Method (2) in connection with the Rogers–Ramanujan identities.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S18.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="190" xml:id="C17.S18.p3.s1">
+Method (1) can sometimes be improved by application of convergence accelerationprocedures; see §LABEL:sec:NM.AOC.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="191" xml:id="C17.S18.p3.s2">
+( ) applies such methods in several <Math mode="inline" xml:id="C17.S18.p3.m1">q</Math> -series problems; see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C17.S19">
+<title>Software</title>        
+ 
+<para xml:id="C17.S19.p1">
+
+</para>
+ 
+<para xml:id="C17.S19.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="192" xml:id="C17.S19.p2.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="193" xml:id="C17.S19.p2.s2">
+Citations in the bulleted list refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+</para>
+ 
+<para xml:id="C17.S19.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="194" xml:id="C17.S19.p3.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="195" xml:id="C17.S19.p3.s2">
+Mathematica.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

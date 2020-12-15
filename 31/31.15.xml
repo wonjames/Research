@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S15">
+<title>Stieltjes Polynomials</title>        
+ 
+<subsection xml:id="C31.S15.SS1">
+<title>Definitions</title>        
+  
+ 
+<para xml:id="C31.S15.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S15.SS1.p1.s1">
+Stieltjes polynomials are polynomial solutions of the Fuchsian equation (31.14.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C31.S15.SS1.p1.s2">
+Rewrite (31.14.1) in the form <Math equation-number="31.15.1" mode="display" xml:id="C31.S15.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\sum_{j=1}^{N}\frac{\gamma_{ j}}{z-a_{j}}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{\Phi(z)}{\prod_{j=1}^ {N}(z-a_{j})}w=0,</Math> where <Math mode="inline" xml:id="C31.S15.SS1.p1.m1">\Phi(z)</Math> is a polynomial of degree not exceeding <Math mode="inline" xml:id="C31.S15.SS1.p1.m2">N-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C31.S15.SS1.p1.s3">
+There exist at most <Math mode="inline" xml:id="C31.S15.SS1.p1.m3">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } polynomials <Math mode="inline" xml:id="C31.S15.SS1.p1.m4">V(z)</Math> of degree not exceeding <Math mode="inline" xml:id="C31.S15.SS1.p1.m5">N-2</Math> such that for <Math mode="inline" xml:id="C31.S15.SS1.p1.m6">\Phi(z)=V(z)</Math> , (31.15.1) has a polynomial solution <Math mode="inline" xml:id="C31.S15.SS1.p1.m7">w=S(z)</Math> of degree <Math mode="inline" xml:id="C31.S15.SS1.p1.m8">n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C31.S15.SS1.p1.s4">
+The <Math mode="inline" xml:id="C31.S15.SS1.p1.m9">V(z)</Math> are called Van Vleck polynomials and the corresponding <Math mode="inline" xml:id="C31.S15.SS1.p1.m10">S(z)</Math> Stieltjes polynomials.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S15.SS2">
+<title>Zeros</title>        
+ 
+ 
+<para xml:id="C31.S15.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C31.S15.SS2.p1.s1">
+If <Math mode="inline" xml:id="C31.S15.SS2.p1.m1">z_{1},z_{2},\dots,z_{n}</Math> are the zeros of an <Math mode="inline" xml:id="C31.S15.SS2.p1.m2">n</Math> th degree Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p1.m3">S(z)</Math> , then every zero <Math mode="inline" xml:id="C31.S15.SS2.p1.m4">z_{k}</Math> is either one of the parameters <Math mode="inline" xml:id="C31.S15.SS2.p1.m5">a_{j}</Math> or a solution of the system of equations <Math equation-number="31.15.2" mode="display" xml:id="C31.S15.E2">\sum_{j=1}^{N}\frac{\gamma_{j}/2}{z_{k}-a_{j}}+\sum_{\begin{subarray}{c}j=1\\ j\neq k\end{subarray}}^{n}\frac{1}{z_{k}-z_{j}}=0, if k=1,2,\dots,n</Math>.
+</sentence>
+
+</para>
+     
+<para xml:id="C31.S15.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C31.S15.SS2.p2.s1">
+If <Math mode="inline" xml:id="C31.S15.SS2.p2.m1">t_{k}</Math> is a zero of the Van Vleck polynomial <Math mode="inline" xml:id="C31.S15.SS2.p2.m2">V(z)</Math> , corresponding to an <Math mode="inline" xml:id="C31.S15.SS2.p2.m3">n</Math> th degree Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p2.m4">S(z)</Math> , and <Math mode="inline" xml:id="C31.S15.SS2.p2.m5">z_{1}^{\prime},z_{2}^{\prime},\dots,z_{n-1}^{\prime}</Math> are the zeros of <Math mode="inline" xml:id="C31.S15.SS2.p2.m6">S^{\prime}(z)</Math> (the derivative of <Math mode="inline" xml:id="C31.S15.SS2.p2.m7">S(z)</Math> ), then <Math mode="inline" xml:id="C31.S15.SS2.p2.m8">t_{k}</Math> is either a zero of <Math mode="inline" xml:id="C31.S15.SS2.p2.m9">S^{\prime}(z)</Math> or a solution of the equation <Math equation-number="31.15.3" mode="display" xml:id="C31.S15.E3">\sum_{j=1}^{N}\frac{\gamma_{j}}{t_{k}-a_{j}}+\sum_{j=1}^{n-1}\frac{1}{t_{k}-z_ {j}^{\prime}}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C31.S15.SS2.p3.s1">
+The system (31.15.2) determines the <Math mode="inline" xml:id="C31.S15.SS2.p3.m1">z_{k}</Math> as the points of equilibrium of <Math mode="inline" xml:id="C31.S15.SS2.p3.m2">n</Math> movable (interacting) particles with unit charges in a field of <Math mode="inline" xml:id="C31.S15.SS2.p3.m3">N</Math> particles with the charges <Math mode="inline" xml:id="C31.S15.SS2.p3.m4">\gamma_{j}/2</Math> fixed at <Math mode="inline" xml:id="C31.S15.SS2.p3.m5">a_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C31.S15.SS2.p3.s2">
+This is theStieltjes electrostatic interpretation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S15.SS2.p4.s1">
+The zeros <Math mode="inline" xml:id="C31.S15.SS2.p4.m1">z_{k}</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p4.m2">k=1,2,\ldots,n</Math> , of the Stieltjes polynomial <Math mode="inline" xml:id="C31.S15.SS2.p4.m3">S(z)</Math> are the critical points of the function <Math mode="inline" xml:id="C31.S15.SS2.p4.m4">G</Math> , that is, points at which <Math mode="inline" xml:id="C31.S15.SS2.p4.m5">\ifrac{\partial G}{\partial\zeta_{k}=0}</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p4.m6">k=1,2,\ldots,n</Math> , where
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C31.S15.SS2.p5.s1">
+ <Math equation-number="31.15.4" mode="display" xml:id="C31.S15.E4">G(\zeta_{1},\zeta_{2},\dots,\zeta_{n})=\prod_{k=1}^{n}\prod_{\ell=1}^{N}(\zeta _{k}-a_{\ell})^{\ifrac{\gamma_{\ell}}{2}}\prod_{j=k+1}^{n}(\zeta_{k}-\zeta_{j})</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C31.S15.SS2.p6.s1">
+If the following conditions are satisfied: <Math equation-number="31.15.5" mode="display" xml:id="C31.S15.E5">\gamma_{j}&gt;0,a_{j}\in\mathbb{R}, , if j=1,2,\dots,N,</Math> and <Math equation-number="31.15.6" mode="display" xml:id="C31.S15.E6">a_{j}&lt;a_{j+1}, if j=1,2,\dots,N-1,</Math> then there are exactly <Math mode="inline" xml:id="C31.S15.SS2.p6.m1">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } polynomials <Math mode="inline" xml:id="C31.S15.SS2.p6.m2">S(z)</Math> , each of which corresponds to each of the <Math mode="inline" xml:id="C31.S15.SS2.p6.m3">\genfrac{(}{)}{0.0pt}{}{n+N-2}{N-2</Math> } ways of distributing its <Math mode="inline" xml:id="C31.S15.SS2.p6.m4">n</Math> zeros among <Math mode="inline" xml:id="C31.S15.SS2.p6.m5">N-1</Math> intervals <Math mode="inline" xml:id="C31.S15.SS2.p6.m6">(a_{j},a_{j+1})</Math> , <Math mode="inline" xml:id="C31.S15.SS2.p6.m7">j=1,2,\dots,N-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C31.S15.SS2.p6.s2">
+In this case the accessory parameters <Math mode="inline" xml:id="C31.S15.SS2.p6.m8">q_{j}</Math> are given by <Math equation-number="31.15.7" mode="display" xml:id="C31.S15.E7">q_{j}=\gamma_{j}\sum_{k=1}^{n}\frac{1}{z_{k}-a_{j}}, if j=1,2,\dots,N</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS2.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C31.S15.SS2.p7.s1">
+See Marden (1966), Alam (1979), andAl-Rashed and Zaheer (1985) for further results on the location of the zeros of Stieltjes and Van Vleck polynomials.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S15.SS3">
+<title>Products of Stieltjes Polynomials</title>        
+  
+<para xml:id="C31.S15.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C31.S15.SS3.p1.s1">
+If the exponent and singularity parameters satisfy (31.15.5)–(31.15.6), then for every multi-index <Math mode="inline" xml:id="C31.S15.SS3.p1.m1">\mathbf{m}=(m_{1},m_{2},\dots,m_{N-1})</Math> , where each <Math mode="inline" xml:id="C31.S15.SS3.p1.m2">m_{j}</Math> is a nonnegative integer, there is a unique Stieltjes polynomial with <Math mode="inline" xml:id="C31.S15.SS3.p1.m3">m_{j}</Math> zeros in the open interval <Math mode="inline" xml:id="C31.S15.SS3.p1.m4">(a_{j},a_{j+1})</Math> for each <Math mode="inline" xml:id="C31.S15.SS3.p1.m5">j=1,2,\dots,N-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C31.S15.SS3.p1.s2">
+We denote this Stieltjes polynomial by <Math mode="inline" xml:id="C31.S15.SS3.p1.m6">S_{\mathbf{m}}(z)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S15.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C31.S15.SS3.p2.s1">
+Let <Math mode="inline" xml:id="C31.S15.SS3.p2.m1">S_{\mathbf{m}}(z)</Math> and <Math mode="inline" xml:id="C31.S15.SS3.p2.m2">S_{\mathbf{l}}(z)</Math> be Stieltjes polynomials corresponding to two distinct multi-indices <Math mode="inline" xml:id="C31.S15.SS3.p2.m3">\mathbf{m}=(m_{1},m_{2},\dots,m_{N-1})</Math> and <Math mode="inline" xml:id="C31.S15.SS3.p2.m4">\mathbf{l}=(\ell_{1},\ell_{2},\dots,\ell_{N-1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C31.S15.SS3.p2.s2">
+The products <Math equation-number="31.15.8" mode="display" xml:id="C31.S15.E8">S_{\mathbf{m}}(z_{1})S_{\mathbf{m}}(z_{2})\cdots S_{\mathbf{m}}(z_{N-1}), if z_{j}\in(a_{j},a_{j+1}),</Math> <Math equation-number="31.15.9" mode="display" xml:id="C31.S15.E9">S_{\mathbf{l}}(z_{1})S_{\mathbf{l}}(z_{2})\cdots S_{\mathbf{l}}(z_{N-1}), if z_{j}\in(a_{j},a_{j+1}),</Math> are mutually orthogonal over the set <Math mode="inline" xml:id="C31.S15.SS3.p2.m5">Q</Math> : <Math equation-number="31.15.10" mode="display" xml:id="C31.S15.E10">Q=(a_{1},a_{2})\times(a_{2},a_{3})\times\cdots\times(a_{N-1},a_{N}),</Math> with respect to the inner product <Math equation-number="31.15.11" mode="display" xml:id="C31.S15.E11">(f,g)_{\rho}=\int_{Q}f(z)\overline{g(z)}\rho(z)\mathrm{d}z,</Math> with weight function <Math equation-number="31.15.12" mode="display" xml:id="C31.S15.E12">\rho(z)=\left(\prod_{j=1}^{N-1}\prod_{k=1}^{N}|z_{j}-a_{k}|^{\gamma_{k}-1} \right)\left(\prod_{j&lt;k}^{N-1}(z_{k}-z_{j})\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C31.S15.SS3.p2.s3">
+The normalized system of products (31.15.8) forms an orthonormal basis in the Hilbert space <Math mode="inline" xml:id="C31.S15.SS3.p2.m7">L_{\rho}^{2}(Q)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C31.S15.SS3.p2.s4">
+For further details and for the expansions of analytic functions in this basis see Volkmer (1999).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

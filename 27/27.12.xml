@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S12">
+<title>Asymptotic Formulas: Primes</title>        
+  
+<para xml:id="C27.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S12.p1.s1">
+ <Math mode="inline" xml:id="C27.S12.p1.m1">p_{n}</Math> is the <Math mode="inline" xml:id="C27.S12.p1.m2">n</Math> th prime, beginning with <Math mode="inline" xml:id="C27.S12.p1.m3">p_{1}=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S12.p1.s2">
+<Math mode="inline" xml:id="C27.S12.p1.m4">\pi\left(x\right)</Math> is the number of primes less than or equal to <Math mode="inline" xml:id="C27.S12.p1.m5">x</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C27.S12.p2.s1">
+ <Math equation-number="27.12.1" mode="display" xml:id="C27.S12.E1">\lim_{n\to\infty}\frac{p_{n}}{n\ln n}=1,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C27.S12.p3.s1">
+ <Math equation-number="27.12.2" mode="display" xml:id="C27.S12.E2">p_{n}&gt;n\ln n, if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C27.S12.p4.s1">
+ <Math equation-number="27.12.3" mode="display" xml:id="C27.S12.E3">\pi\left(x\right)=\left\lfloor x\right\rfloor-1-\sum_{p_{j}\leq\sqrt{x}}\left \lfloor\frac{x}{p_{j}}\right\rfloor+\sum_{r\geq 2}(-1)^{r}\*\sum_{p_{j_{1}}&lt;p_ {j_{2}}&lt;\cdots&lt;p_{j_{r}}\leq\sqrt{x}}\left\lfloor\frac{x}{p_{j_{1}}p_{j_{2}} \cdots p_{j_{r}}}\right\rfloor, if x\geq 1,</Math> where the series terminates when the product of the first <Math mode="inline" xml:id="C27.S12.p4.m1">r</Math> primes exceeds <Math mode="inline" xml:id="C27.S12.p4.m2">x</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C27.S12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C27.S12.p5.s1">
+As <Math mode="inline" xml:id="C27.S12.p5.m1">x\to\infty</Math> <Math equation-number="27.12.4" mode="display" xml:id="C27.S12.E4">\pi\left(x\right)\sim\sum_{k=1}^{\infty}\frac{(k-1)!\,x}{(\ln x)^{k}}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C27.S12.Px1">
+<title>Prime Number Theorem</title>     
+<para xml:id="C27.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C27.S12.Px1.p1.s1">
+There exists a positive constant <Math mode="inline" xml:id="C27.S12.Px1.p1.m1">c</Math> such that <Math equation-number="27.12.5" mode="display" xml:id="C27.S12.E5">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|=O\left(x\exp\left(-c( \ln x)^{1/2}\right)\right), if x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C27.S12.Px1.p1.s2">
+For the logarithmic integral <Math mode="inline" xml:id="C27.S12.Px1.p1.m2">\mathrm{li}\left(x\right)</Math> see (6.2.8).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C27.S12.Px1.p1.s3">
+The best available asymptotic error estimate (2009) appears in Korobov (1958) and Vinogradov (1958): there exists a positive constant <Math mode="inline" xml:id="C27.S12.Px1.p1.m3">d</Math> such that <Math equation-number="27.12.6" mode="display" xml:id="C27.S12.E6">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|=O\left(x\exp\left(-d( \ln x)^{3/5}\,(\ln\ln x)^{-1/5}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C27.S12.Px1.p2.s1">
+ <Math mode="inline" xml:id="C27.S12.Px1.p2.m1">\pi\left(x\right)-\mathrm{li}\left(x\right)</Math> changes sign infinitely often as <Math mode="inline" xml:id="C27.S12.Px1.p2.m2">x\to\infty</Math> ; seeLittlewood (1914), Bays and Hudson (2000).
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C27.S12.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C27.S12.Px1.p3.s1">
+The Riemann hypothesis (§25.10(i)) is equivalent to the statement that for every <Math mode="inline" xml:id="C27.S12.Px1.p3.m1">x\geq 2657</Math> , <Math equation-number="27.12.7" mode="display" xml:id="C27.S12.E7">\left|\pi\left(x\right)-\mathrm{li}\left(x\right)\right|&lt;\frac{1}{8\pi}\sqrt{x }\,\ln x</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C27.S12.Px1.p4.s1">
+If <Math mode="inline" xml:id="C27.S12.Px1.p4.m1">a</Math> is relatively prime to the modulus <Math mode="inline" xml:id="C27.S12.Px1.p4.m2">m</Math> , then there are infinitely many primes congruent to <Math mode="inline" xml:id="C27.S12.Px1.p4.m3">a\pmod{m}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S12.Px1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C27.S12.Px1.p5.s1">
+The number of such primes not exceeding <Math mode="inline" xml:id="C27.S12.Px1.p5.m1">x</Math> is <Math equation-number="27.12.8" mode="display" xml:id="C27.S12.E8">\frac{\mathrm{li}\left(x\right)}{\phi\left(m\right)}+O\left(x\exp\left(- \lambda(\alpha)(\ln x)^{1/2}\right)\right), if m\leq(\ln x)^{\alpha}, \alpha&gt;0,</Math> where <Math mode="inline" xml:id="C27.S12.Px1.p5.m2">\lambda(\alpha)</Math> depends only on <Math mode="inline" xml:id="C27.S12.Px1.p5.m3">\alpha</Math> , and <Math mode="inline" xml:id="C27.S12.Px1.p5.m4">\phi\left(m\right)</Math> is the Euler totient function (§27.2).
+</sentence>
+
+</para>
+   
+<para xml:id="C27.S12.Px1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C27.S12.Px1.p6.s1">
+A Mersenne prime is a prime of the form <Math mode="inline" xml:id="C27.S12.Px1.p6.m1">2^{p}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C27.S12.Px1.p6.s2">
+The largest known prime (2009) is the Mersenne prime <Math mode="inline" xml:id="C27.S12.Px1.p6.m2">2^{43,112,609}-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C27.S12.Px1.p6.s3">
+For current records seeThe Great Internet Mersenne Prime Search.
+</sentence>
+
+</para>
+  
+<para xml:id="C27.S12.Px1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C27.S12.Px1.p7.s1">
+A pseudoprime test is a test that correctly identifies most composite numbers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C27.S12.Px1.p7.s2">
+For example, if <Math mode="inline" xml:id="C27.S12.Px1.p7.m1">2^{n}\not\equiv 2\pmod{n}</Math> , then <Math mode="inline" xml:id="C27.S12.Px1.p7.m2">n</Math> is composite.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C27.S12.Px1.p7.s3">
+Descriptions and comparisons of pseudoprime tests are given inBressoud and Wagon (2000, §§2.4,4.2, and 8.2) andCrandall and Pomerance (2005, §§3.4–3.6).
+</sentence>
+
+</para>
+
+  
+<para xml:id="C27.S12.Px1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C27.S12.Px1.p8.s1">
+A Carmichael number is a composite number <Math mode="inline" xml:id="C27.S12.Px1.p8.m1">n</Math> for which <Math mode="inline" xml:id="C27.S12.Px1.p8.m2">b^{n}\equiv b\pmod{n}</Math> for all <Math mode="inline" xml:id="C27.S12.Px1.p8.m3">b\in\mathbb{N}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C27.S12.Px1.p8.s2">
+There are infinitely many Carmichael numbers.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>

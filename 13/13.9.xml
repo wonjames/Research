@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S9">
+<title>Zeros</title>         
+<subsection xml:id="C13.S9.SS1">
+<title>Zeros of <Math mode="inline" xml:id="C13.S9.SS1.m1">M\left(a,b,z\right)</Math></title>           
+<para xml:id="C13.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S9.SS1.p1.s1">
+If <Math mode="inline" xml:id="C13.S9.SS1.p1.m1">a</Math> and <Math mode="inline" xml:id="C13.S9.SS1.p1.m2">b-a\neq 0,-1,-2,\dots</Math> , then <Math mode="inline" xml:id="C13.S9.SS1.p1.m3">M\left(a,b,z\right)</Math> has infinitelymany <Math mode="inline" xml:id="C13.S9.SS1.p1.m4">z</Math> -zeros in <Math mode="inline" xml:id="C13.S9.SS1.p1.m5">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S9.SS1.p1.s2">
+When <Math mode="inline" xml:id="C13.S9.SS1.p1.m6">a,b\in\mathbb{R}</Math> the number of real zeros is finite.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S9.SS1.p1.s3">
+Let <Math mode="inline" xml:id="C13.S9.SS1.p1.m7">p(a,b)</Math> be the number of positive zeros.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C13.S9.SS1.p1.s4">
+Then <Math equation-number="13.9.1" mode="display" xml:id="C13.S9.E1">p(a,b)=\left\lceil-a\right\rceil, if a&lt;0, b\geq 0,</Math> , <Math equation-number="13.9.2" mode="display" xml:id="C13.S9.E2">p(a,b)=0, if a\geq 0, b\geq 0,</Math> , <Math equation-number="13.9.3" mode="display" xml:id="C13.S9.E3">p(a,b)=1, if a\geq 0, -1&lt;b&lt;0,</Math> <Math equation-number="13.9.4" mode="display" xml:id="C13.S9.E4">p(a,b)=\left\lfloor-\tfrac{1}{2}b\right\rfloor-\left\lfloor-\tfrac{1}{2}(b+1) \right\rfloor, if a\geq 0, b\leq-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C13.S9.SS1.p1.s5">
+<Math equation-number="13.9.5" mode="display" xml:id="C13.S9.E5">p(a,b)=\left\lceil-a\right\rceil-\left\lceil-b\right\rceil, if \left\lceil-a\right\rceil\geq\left\lceil-b\right\rceil, a&lt;0, b&lt;0,</Math> <Math equation-number="13.9.6" mode="display" xml:id="C13.S9.E6">p(a,b)=\left\lfloor\tfrac{1}{2}\left(\left\lceil-b\right\rceil-\left\lceil-a \right\rceil+1\right)\right\rfloor-\left\lfloor\tfrac{1}{2}\left(\left\lceil-b \right\rceil-\left\lceil-a\right\rceil\right)\right\rfloor, if \left\lceil-b\right\rceil&gt;\left\lceil-a\right\rceil&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C13.S9.SS1.p1.s6">
+The number of negative real zeros <Math mode="inline" xml:id="C13.S9.SS1.p1.m8">n(a,b)</Math> is given by <Math equation-number="13.9.7" mode="display" xml:id="C13.S9.E7">n(a,b)=p(b-a,b)</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C13.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S9.SS1.p2.s1">
+When <Math mode="inline" xml:id="C13.S9.SS1.p2.m1">a&lt;0</Math> and <Math mode="inline" xml:id="C13.S9.SS1.p2.m2">b&gt;0</Math> let <Math mode="inline" xml:id="C13.S9.SS1.p2.m3">\phi_{r}</Math> , <Math mode="inline" xml:id="C13.S9.SS1.p2.m4">r=1,2,3,\dots</Math> , be the positive zeros of <Math mode="inline" xml:id="C13.S9.SS1.p2.m5">M\left(a,b,x\right)</Math> arranged in increasing order of magnitude, and let <Math mode="inline" xml:id="C13.S9.SS1.p2.m6">j_{b-1,r}</Math> be the <Math mode="inline" xml:id="C13.S9.SS1.p2.m7">r</Math> th positive zero of the Bessel function <Math mode="inline" xml:id="C13.S9.SS1.p2.m8">J_{b-1}\left(x\right)</Math> (§10.21(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C13.S9.SS1.p2.s2">
+Then <Math equation-number="13.9.8" mode="display" xml:id="C13.S9.E8">\phi_{r}=\frac{j_{b-1,r}^{2}}{2b-4a}\left(1+\frac{2b(b-2)+j_{b-1,r}^{2}}{3(2b- 4a)^{2}}\right)+O\left(\frac{1}{a^{5}}\right),</Math> as <Math mode="inline" xml:id="C13.S9.SS1.p2.m9">a\to-\infty</Math> with <Math mode="inline" xml:id="C13.S9.SS1.p2.m10">r</Math> fixed.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S9.SS1.p3.s1">
+Inequalities for <Math mode="inline" xml:id="C13.S9.SS1.p3.m1">\phi_{r}</Math> are given in Gatteschi (1990), and identities involving infinite series of all of the complex zeros of <Math mode="inline" xml:id="C13.S9.SS1.p3.m2">M\left(a,b,x\right)</Math> are given in Ahmed and Muldoon (1980).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C13.S9.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C13.S9.SS1.p4.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS1.p4.m1">a,b\in\mathbb{C}</Math> the large <Math mode="inline" xml:id="C13.S9.SS1.p4.m2">z</Math> -zeros of <Math mode="inline" xml:id="C13.S9.SS1.p4.m3">M\left(a,b,z\right)</Math> satisfy <Math equation-number="13.9.9" mode="display" xml:id="C13.S9.E9">z=\pm(2n+a)\pi\mathrm{i}+\ln\left(-\frac{\Gamma\left(a\right)}{\Gamma\left(b-a \right)}\left(\pm 2n\pi\mathrm{i}\right)^{b-2a}\right)+O\left(n^{-1}\ln n \right),</Math> where <Math mode="inline" xml:id="C13.S9.SS1.p4.m4">n</Math> is a large positive integer, and the logarithm takes its principal value (§4.2(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C13.S9.SS1.p5.s1">
+Let <Math mode="inline" xml:id="C13.S9.SS1.p5.m1">P_{\alpha}</Math> denote the closure of the domain that is bounded by the parabola <Math mode="inline" xml:id="C13.S9.SS1.p5.m2">y^{2}=4\alpha(x+\alpha)</Math> and contains the origin.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C13.S9.SS1.p5.s2">
+Then <Math mode="inline" xml:id="C13.S9.SS1.p5.m3">M\left(a,b,z\right)</Math> has no zeros in the regions <Math mode="inline" xml:id="C13.S9.SS1.p5.m4">P_{\ifrac{b}{a}}</Math> , if <Math mode="inline" xml:id="C13.S9.SS1.p5.m5">0&lt;b\leq a</Math> ; <Math mode="inline" xml:id="C13.S9.SS1.p5.m6">P_{1}</Math> , if <Math mode="inline" xml:id="C13.S9.SS1.p5.m7">1\leq a\leq b</Math> ; <Math mode="inline" xml:id="C13.S9.SS1.p5.m8">P_{\alpha}</Math> , where <Math mode="inline" xml:id="C13.S9.SS1.p5.m9">\alpha=\ifrac{(2a-b+ab)}{(a(a+1))}</Math> , if <Math mode="inline" xml:id="C13.S9.SS1.p5.m10">0&lt;a&lt;1</Math> and <Math mode="inline" xml:id="C13.S9.SS1.p5.m11">a\leq b&lt;\ifrac{2a}{(1-a)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C13.S9.SS1.p5.s3">
+The same results apply for the <Math mode="inline" xml:id="C13.S9.SS1.p5.m12">n</Math> th partial sums of the Maclaurin series (13.2.2) of <Math mode="inline" xml:id="C13.S9.SS1.p5.m13">M\left(a,b,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C13.S9.SS1.p6.s1">
+More information on the location of real zeros can be found inZarzo et al. (1995) and Segura (2008).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C13.S9.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C13.S9.SS1.p7.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS1.p7.m1">b</Math> and <Math mode="inline" xml:id="C13.S9.SS1.p7.m2">z</Math> in <Math mode="inline" xml:id="C13.S9.SS1.p7.m3">\mathbb{C}</Math> the large <Math mode="inline" xml:id="C13.S9.SS1.p7.m4">a</Math> -zeros of <Math mode="inline" xml:id="C13.S9.SS1.p7.m5">M\left(a,b,z\right)</Math> are given by <Math equation-number="13.9.10" mode="display" xml:id="C13.S9.E10">a=-\frac{\pi^{2}}{4z}\left(n^{2}+(b-\tfrac{3}{2})n\right)-\frac{1}{16z}\left(( b-\tfrac{3}{2})^{2}\pi^{2}+\tfrac{4}{3}z^{2}-8b(z-1)-4b^{2}-3\right)+O\left(n^ {-1}\right),</Math> where <Math mode="inline" xml:id="C13.S9.SS1.p7.m6">n</Math> is a large positive integer.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C13.S9.SS1.p8.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS1.p8.m1">a</Math> and <Math mode="inline" xml:id="C13.S9.SS1.p8.m2">z</Math> in <Math mode="inline" xml:id="C13.S9.SS1.p8.m3">\mathbb{C}</Math> the function <Math mode="inline" xml:id="C13.S9.SS1.p8.m4">M\left(a,b,z\right)</Math> has only a finite number of <Math mode="inline" xml:id="C13.S9.SS1.p8.m5">b</Math> -zeros.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S9.SS2">
+<title>Zeros of <Math mode="inline" xml:id="C13.S9.SS2.m1">U\left(a,b,z\right)</Math></title>         
+ 
+<para xml:id="C13.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C13.S9.SS2.p1.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS2.p1.m1">a</Math> and <Math mode="inline" xml:id="C13.S9.SS2.p1.m2">b</Math> in <Math mode="inline" xml:id="C13.S9.SS2.p1.m3">\mathbb{C}</Math> , <Math mode="inline" xml:id="C13.S9.SS2.p1.m4">U\left(a,b,z\right)</Math> has a finite number of <Math mode="inline" xml:id="C13.S9.SS2.p1.m5">z</Math> -zeros in the sector <Math mode="inline" xml:id="C13.S9.SS2.p1.m6">|\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta(&lt;\tfrac{3}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C13.S9.SS2.p1.s2">
+Let <Math mode="inline" xml:id="C13.S9.SS2.p1.m7">T(a,b)</Math> be the total number of zeros in the sector <Math mode="inline" xml:id="C13.S9.SS2.p1.m8">|\operatorname{ph}z|&lt;\pi</Math> , <Math mode="inline" xml:id="C13.S9.SS2.p1.m9">P(a,b)</Math> be the corresponding number of positive zeros, and <Math mode="inline" xml:id="C13.S9.SS2.p1.m10">a</Math> , <Math mode="inline" xml:id="C13.S9.SS2.p1.m11">b</Math> , and <Math mode="inline" xml:id="C13.S9.SS2.p1.m12">a-b+1</Math> be nonintegers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C13.S9.SS2.p1.s3">
+For the case <Math mode="inline" xml:id="C13.S9.SS2.p1.m13">b\leq 1</Math> <Math equation-number="13.9.11" mode="display" xml:id="C13.S9.E11">T(a,b)=\left\lfloor-a\right\rfloor+1, if a&lt;0, \Gamma\left(a\right)\Gamma\left(a-b+1\right)&gt;0,</Math> <Math equation-number="13.9.12" mode="display" xml:id="C13.S9.E12">T(a,b)=\left\lfloor-a\right\rfloor, if a&lt;0, \Gamma\left(a\right)\Gamma\left(a-b+1\right)&lt;0,</Math> <Math equation-number="13.9.13" mode="display" xml:id="C13.S9.E13">T(a,b)=0, if a&gt;0,</Math> and <Math equation-number="13.9.14" mode="display" xml:id="C13.S9.E14">P(a,b)=\left\lceil b-a-1\right\rceil, if a+1&lt;b,</Math> <Math equation-number="13.9.15" mode="display" xml:id="C13.S9.E15">P(a,b)=0, if a+1\geq b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C13.S9.SS2.p1.s4">
+For the case <Math mode="inline" xml:id="C13.S9.SS2.p1.m14">b\geq 1</Math> we can use <Math mode="inline" xml:id="C13.S9.SS2.p1.m15">T(a,b)=T(a-b+1,2-b)</Math> and <Math mode="inline" xml:id="C13.S9.SS2.p1.m16">P(a,b)=P(a-b+1,2-b)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C13.S9.SS2.p2.s1">
+In Wimp (1965) it is shown that if <Math mode="inline" xml:id="C13.S9.SS2.p2.m1">a,b\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C13.S9.SS2.p2.m2">2a-b&gt;-1</Math> , then <Math mode="inline" xml:id="C13.S9.SS2.p2.m3">U\left(a,b,z\right)</Math> has no zeros in the sector <Math mode="inline" xml:id="C13.S9.SS2.p2.m4">|\operatorname{ph}{z}|\leq\frac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C13.S9.SS2.p3.s1">
+Inequalities for the zeros of <Math mode="inline" xml:id="C13.S9.SS2.p3.m1">U\left(a,b,x\right)</Math> are given inGatteschi (1990).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C13.S9.SS2.p3.s2">
+See also Segura (2008).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C13.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C13.S9.SS2.p4.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS2.p4.m1">b</Math> and <Math mode="inline" xml:id="C13.S9.SS2.p4.m2">z</Math> in <Math mode="inline" xml:id="C13.S9.SS2.p4.m3">\mathbb{C}</Math> the large <Math mode="inline" xml:id="C13.S9.SS2.p4.m4">a</Math> -zeros of <Math mode="inline" xml:id="C13.S9.SS2.p4.m5">U\left(a,b,z\right)</Math> are given by <Math equation-number="13.9.16" mode="display" xml:id="C13.S9.E16">a=-n-\frac{2}{\pi}\sqrt{zn}-\frac{2z}{\pi^{2}}+\tfrac{1}{2}b+\tfrac{1}{4}+ \frac{z^{2}\left(\frac{1}{3}-4\pi^{-2}\right)+z-(b-1)^{2}+\frac{1}{4}}{4\pi \sqrt{zn}}+O\left(\frac{1}{n}\right),</Math> where <Math mode="inline" xml:id="C13.S9.SS2.p4.m6">n</Math> is a large positive integer.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S9.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C13.S9.SS2.p5.s1">
+For fixed <Math mode="inline" xml:id="C13.S9.SS2.p5.m1">a</Math> and <Math mode="inline" xml:id="C13.S9.SS2.p5.m2">z</Math> in <Math mode="inline" xml:id="C13.S9.SS2.p5.m3">\mathbb{C}</Math> , <Math mode="inline" xml:id="C13.S9.SS2.p5.m4">U\left(a,b,z\right)</Math> has two infinite strings of <Math mode="inline" xml:id="C13.S9.SS2.p5.m5">b</Math> -zeros that are asymptotic to the imaginary axis as <Math mode="inline" xml:id="C13.S9.SS2.p5.m6">|b|\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

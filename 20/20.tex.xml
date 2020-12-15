@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C20">
+<title>Theta Functions</title>                
+          
+<section xml:id="C20.S1">
+<title>Special Notation</title>         
+<para xml:id="C20.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C20.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C20.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C20.S1.p2.t1.r1.m1">m</Math>, <Math mode="inline" xml:id="C20.S1.p2.t1.r1.m2">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C20.S1.p2.t1.s2">
+integers.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C20.S1.p2.t1.s3">
+    <Math mode="inline" xml:id="C20.S1.p2.t1.r2.m1">z</Math> <Math mode="inline" xml:id="C20.S1.p2.t1.r2.m2">(\in\mathbb{C})</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C20.S1.p2.t1.s4">
+the argument.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C20.S1.p2.t1.s5">
+  <Math mode="inline" xml:id="C20.S1.p2.t1.r3.m1">\tau</Math> <Math mode="inline" xml:id="C20.S1.p2.t1.r3.m2">(\in\mathbb{C})</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C20.S1.p2.t1.s6">
+the lattice parameter, <Math mode="inline" xml:id="C20.S1.p2.t1.r3.m3">\Im\tau&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C20.S1.p2.t1.s7">
+  <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m1">q</Math> <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m2">(\in\mathbb{C})</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C20.S1.p2.t1.s8">
+the nome,  <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m3">q=e^{i\pi\tau}</Math>, <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m4">0&lt;\left|q\right|&lt;1</Math>. Since <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m5">\tau</Math> is not a single-valued function of <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m6">q</Math>, it is assumed that <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m7">\tau</Math> is known, even when <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m8">q</Math> is specified. Most applications concern the rectangular case<Math mode="inline" xml:id="C20.S1.p2.t1.r4.m9">\Re\tau=0</Math>, <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m10">\Im\tau&gt;0</Math>, so that <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m11">0&lt;q&lt;1</Math> and<Math mode="inline" xml:id="C20.S1.p2.t1.r4.m12">\tau</Math> and <Math mode="inline" xml:id="C20.S1.p2.t1.r4.m13">q</Math> are uniquely related.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C20.S1.p2.t1.s9">
+<Math mode="inline" xml:id="C20.S1.p2.t1.r5.m1">q^{\alpha}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C20.S1.p2.t1.s10">
+<Math mode="inline" xml:id="C20.S1.p2.t1.r5.m2">e^{i\alpha\pi\tau}</Math> for <Math mode="inline" xml:id="C20.S1.p2.t1.r5.m3">\alpha\in\mathbb{R}</Math> (resolvingissues of choice of branch).
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C20.S1.p2.t1.s11">
+<Math mode="inline" xml:id="C20.S1.p2.t1.r6.m1">S_{1}/S_{2}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C20.S1.p2.t1.s12">
+set of all elements of <Math mode="inline" xml:id="C20.S1.p2.t1.r6.m2">S_{1}</Math>, modulo elements of <Math mode="inline" xml:id="C20.S1.p2.t1.r6.m3">S_{2}</Math>. Thus two elements of <Math mode="inline" xml:id="C20.S1.p2.t1.r6.m4">S_{1}/S_{2}</Math> are equivalent if they are both in <Math mode="inline" xml:id="C20.S1.p2.t1.r6.m5">S_{1}</Math> and their difference is in <Math mode="inline" xml:id="C20.S1.p2.t1.r6.m6">S_{2}</Math>. (For an example see §LABEL:sec:TH.of.et.)
+</sentence>
+
+</para>
+
+  
+<para xml:id="C20.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C20.S1.p3.s1">
+The main functions treated in this chapter are the theta functions <Math mode="inline" xml:id="C20.S1.p3.m1">\theta_{j}\left(z\middle|\tau\right)=\theta_{j}\left(z,q\right)</Math> where <Math mode="inline" xml:id="C20.S1.p3.m2">j=1,2,3,4</Math> and <Math mode="inline" xml:id="C20.S1.p3.m3">q=e^{i\pi\tau}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C20.S1.p3.s2">
+When <Math mode="inline" xml:id="C20.S1.p3.m4">\tau</Math> is fixed the notation is often abbreviated in the literature as <Math mode="inline" xml:id="C20.S1.p3.m5">\theta_{j}(z)</Math> , or even as simply <Math mode="inline" xml:id="C20.S1.p3.m6">\theta_{j}</Math> , it being then understood that the argument is the primary variable.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C20.S1.p3.s3">
+Sometimes the theta functions are called the Jacobian or classical theta functions to distinguish them from generalizations; compare Chapter LABEL:ch:MT.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C20.S1.p4.s1">
+Primes on the <Math mode="inline" xml:id="C20.S1.p4.m1">\theta</Math> symbols indicate derivatives with respect to the argument of the <Math mode="inline" xml:id="C20.S1.p4.m2">\theta</Math> function.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C20.S1.Px1">
+<title>Other Notations</title>   
+<para xml:id="C20.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C20.S1.Px1.p1.s1">
+Jacobi’s original notation: <Math mode="inline" xml:id="C20.S1.Px1.p1.m5">\Theta(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m6">\Theta_{1}(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m7">\mathrm{H}(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m8">\mathrm{H}_{1}(z|\tau)</Math> , respectively, for <Math mode="inline" xml:id="C20.S1.Px1.p1.m9">\theta_{4}\left(u\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m10">\theta_{3}\left(u\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m11">\theta_{1}\left(u\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p1.m12">\theta_{2}\left(u\middle|\tau\right)</Math> , where <Math mode="inline" xml:id="C20.S1.Px1.p1.m13">u=z/{\theta_{3}^{2}}\left(0\middle|\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C20.S1.Px1.p1.s2">
+Here the symbol <Math mode="inline" xml:id="C20.S1.Px1.p1.m14">\mathrm{H}</Math> denotes capital eta.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C20.S1.Px1.p1.s3">
+See, for example, ( , p. 479) and ( , pp. 405, 411) .
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S1.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C20.S1.Px1.p2.s1">
+Neville’s notation: <Math mode="inline" xml:id="C20.S1.Px1.p2.m2">\theta_{s}(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m3">\theta_{c}(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m4">\theta_{d}(z|\tau)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m5">\theta_{n}(z|\tau)</Math> , respectively, for <Math mode="inline" xml:id="C20.S1.Px1.p2.m6">{\theta_{3}^{2}}\left(0\middle|\tau\right)\ifrac{\theta_{1}\left(u\middle|\tau \right)}{\theta_{1}'\left(0\middle|\tau\right)}</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m7">\ifrac{\theta_{2}\left(u\middle|\tau\right)}{\theta_{2}\left(0\middle|\tau \right)}</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m8">\ifrac{\theta_{3}\left(u\middle|\tau\right)}{\theta_{3}\left(0\middle|\tau \right)}</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p2.m9">\ifrac{\theta_{4}\left(u\middle|\tau\right)}{\theta_{4}\left(0\middle|\tau \right)}</Math> , where again <Math mode="inline" xml:id="C20.S1.Px1.p2.m10">u=z/{\theta_{3}^{2}}\left(0\middle|\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C20.S1.Px1.p2.s2">
+This notation simplifies the relationship of the theta functions to Jacobian elliptic functions (§LABEL:sec:JA.nd);see ( ) .
+</sentence>
+
+</para>
+
+ 
+ 
+ 
+ 
+<para xml:id="C20.S1.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C20.S1.Px1.p3.s1">
+McKean and Moll’s notation: <Math mode="inline" xml:id="C20.S1.Px1.p3.m2">\vartheta_{j}(z|\tau)=\theta_{j}\left(\pi z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S1.Px1.p3.m3">j=1,2,3,4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C20.S1.Px1.p3.s2">
+See ( , p. 125) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S1.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C20.S1.Px1.p4.s1">
+Additional notations that have been used in the literature are summarized in ( , p. 487) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+<section xml:id="C20.S2">
+<title>Definitions and Periodic Properties</title>         
+<subsection xml:id="C20.S2.SS1">
+<title>Fourier Series</title>                
+<para xml:id="C20.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C20.S2.SS1.p1.s1">
+ <Math equation-number="20.2.1" mode="display" xml:id="C20.S2.E1">\theta_{1}\left(z\middle|\tau\right)=\theta_{1}\left(z,q\right)=2\sum\limits_{ n=0}^{\infty}(-1)^{n}q^{(n+\frac{1}{2})^{2}}\sin\left((2n+1)z\right),</Math> , <Math equation-number="20.2.2" mode="display" xml:id="C20.S2.E2">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(z,q\right)=2\sum\limits_{ n=0}^{\infty}q^{(n+\frac{1}{2})^{2}}\cos\left((2n+1)z\right),</Math> , <Math equation-number="20.2.3" mode="display" xml:id="C20.S2.E3">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(z,q\right)=1+2\sum\limits _{n=1}^{\infty}q^{n^{2}}\cos\left(2nz\right),</Math> , <Math equation-number="20.2.4" mode="display" xml:id="C20.S2.E4">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(z,q\right)=1+2\sum\limits _{n=1}^{\infty}(-1)^{n}q^{n^{2}}\cos\left(2nz\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C20.S2.SS1.p2.s1">
+Corresponding expansions for <Math mode="inline" xml:id="C20.S2.SS1.p2.m1">\theta_{j}'\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.SS1.p2.m2">j=1,2,3,4</Math> , can be found by differentiating (LABEL:eq:TH.def.a)–(LABEL:eq:TH.def.d) with respect to <Math mode="inline" xml:id="C20.S2.SS1.p2.m3">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS2">
+<title>Periodicity and Quasi-Periodicity</title>           
+<para xml:id="C20.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C20.S2.SS2.p1.s1">
+For fixed <Math mode="inline" xml:id="C20.S2.SS2.p1.m1">\tau</Math> , each <Math mode="inline" xml:id="C20.S2.SS2.p1.m2">\theta_{j}\left(z\middle|\tau\right)</Math> is an entire function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m3">z</Math> with period <Math mode="inline" xml:id="C20.S2.SS2.p1.m4">2\pi</Math> ; <Math mode="inline" xml:id="C20.S2.SS2.p1.m5">\theta_{1}\left(z\middle|\tau\right)</Math> is odd in <Math mode="inline" xml:id="C20.S2.SS2.p1.m6">z</Math> and the others are even.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C20.S2.SS2.p1.s2">
+For fixed <Math mode="inline" xml:id="C20.S2.SS2.p1.m7">z</Math> , each of <Math mode="inline" xml:id="C20.S2.SS2.p1.m8">\ifrac{\theta_{1}\left(z\middle|\tau\right)}{\sin z}</Math> , <Math mode="inline" xml:id="C20.S2.SS2.p1.m9">\ifrac{\theta_{2}\left(z\middle|\tau\right)}{\cos z}</Math> , <Math mode="inline" xml:id="C20.S2.SS2.p1.m10">\theta_{3}\left(z\middle|\tau\right)</Math> , and <Math mode="inline" xml:id="C20.S2.SS2.p1.m11">\theta_{4}\left(z\middle|\tau\right)</Math> is an analytic function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m12">\tau</Math> for <Math mode="inline" xml:id="C20.S2.SS2.p1.m13">\Im\tau&gt;0</Math> , with a natural boundary <Math mode="inline" xml:id="C20.S2.SS2.p1.m14">\Im\tau=0</Math> , and correspondingly, an analytic function of <Math mode="inline" xml:id="C20.S2.SS2.p1.m15">q</Math> for <Math mode="inline" xml:id="C20.S2.SS2.p1.m16">\left|q\right|&lt;1</Math> with a natural boundary <Math mode="inline" xml:id="C20.S2.SS2.p1.m17">\left|q\right|=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C20.S2.SS2.p2.s1">
+The four points <Math mode="inline" xml:id="C20.S2.SS2.p2.m1">(0,\pi,\pi+\tau\pi,\tau\pi)</Math> are the vertices of thefundamental parallelogram in the <Math mode="inline" xml:id="C20.S2.SS2.p2.m2">z</Math> -plane; see Figure LABEL:fig:TH.def.pgram.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C20.S2.SS2.p2.s2">
+The points <Math equation-number="20.2.5" mode="display" xml:id="C20.S2.E5">z_{m,n}=(m+n\tau)\pi, subject to m,n\in\mathbb{Z},</Math> are the lattice points.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C20.S2.SS2.p2.s3">
+The theta functions are quasi-periodic on the lattice: <Math equation-number="20.2.6" mode="display" xml:id="C20.S2.E6">\theta_{1}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{m+n}q^{-n^{2}}e^{-2inz }\theta_{1}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.7" mode="display" xml:id="C20.S2.E7">\theta_{2}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{m}q^{-n^{2}}e^{-2inz} \theta_{2}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.8" mode="display" xml:id="C20.S2.E8">\theta_{3}\left(z+(m+n\tau)\pi\middle|\tau\right)=q^{-n^{2}}e^{-2inz}\theta_{3 }\left(z\middle|\tau\right),</Math> , <Math equation-number="20.2.9" mode="display" xml:id="C20.S2.E9">\theta_{4}\left(z+(m+n\tau)\pi\middle|\tau\right)=(-1)^{n}q^{-n^{2}}e^{-2inz} \theta_{4}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+
+         
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="1" xml:id="C20.S2.F1.t1.s1">
+
+
+</sentence>
+  
+<sentence sentence-num-in-section="34" xml:id="C20.S2.F1.s1">
+Figure 20.2.1: <Math mode="inline" xml:id="C20.S2.F1.m1">z</Math> -plane. Fundamental parallelogram. Left-hand diagram is the rectangular case (<Math mode="inline" xml:id="C20.S2.F1.m2">\tau</Math> purely imaginary); right-hand diagram is the general case. zeros of <Math mode="inline" xml:id="C20.S2.F1.m4">\theta_{1}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m5">\blacksquare</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m6">\theta_{2}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m7">\blacktriangle</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m8">\theta_{3}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.F1.m9">\blacklozenge</Math> zeros of <Math mode="inline" xml:id="C20.S2.F1.m10">\theta_{4}\left(z\middle|\tau\right)</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS3">
+<title>Translation of the Argument by Half-Periods</title>        
+  
+<para xml:id="C20.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C20.S2.SS3.p1.s1">
+With <Math equation-number="20.2.10" mode="display" xml:id="C20.S2.E10">M=M(z|\tau)=e^{iz+(i\pi\tau/4)},</Math> <Math equation-number="20.2.11" mode="display" xml:id="C20.S2.E11">\theta_{1}\left(z\middle|\tau\right)=-\theta_{2}\left(z+\tfrac{1}{2}\pi\middle |\tau\right)=-iM\theta_{4}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=-iM \theta_{3}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.12" mode="display" xml:id="C20.S2.E12">\theta_{2}\left(z\middle|\tau\right)=\theta_{1}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=M\theta_{3}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=M\theta_ {4}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.13" mode="display" xml:id="C20.S2.E13">\theta_{3}\left(z\middle|\tau\right)=\theta_{4}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=M\theta_{2}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=M\theta_ {1}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right),</Math> , <Math equation-number="20.2.14" mode="display" xml:id="C20.S2.E14">\theta_{4}\left(z\middle|\tau\right)=\theta_{3}\left(z+\tfrac{1}{2}\pi\middle| \tau\right)=-iM\theta_{1}\left(z+\tfrac{1}{2}\pi\tau\middle|\tau\right)=iM \theta_{2}\left(z+\tfrac{1}{2}\pi+\tfrac{1}{2}\pi\tau\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S2.SS4">
+<title><Math mode="inline" xml:id="C20.S2.SS4.m1">z</Math>-Zeros</title>        
+  
+<para xml:id="C20.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C20.S2.SS4.p1.s1">
+For <Math mode="inline" xml:id="C20.S2.SS4.p1.m1">m,n\in\mathbb{Z}</Math> , the <Math mode="inline" xml:id="C20.S2.SS4.p1.m2">z</Math> -zeros of <Math mode="inline" xml:id="C20.S2.SS4.p1.m3">\theta_{j}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m4">j=1,2,3,4</Math> , are <Math mode="inline" xml:id="C20.S2.SS4.p1.m5">(m+n\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m6">(m+\tfrac{1}{2}+n\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m7">(m+\tfrac{1}{2}+(n+\tfrac{1}{2})\tau)\pi</Math> , <Math mode="inline" xml:id="C20.S2.SS4.p1.m8">(m+(n+\tfrac{1}{2})\tau)\pi</Math> respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S3">
+<title>Graphics</title>         
+<subsection xml:id="C20.S3.SS1">
+<title><Math mode="inline" xml:id="C20.S3.SS1.m1">\theta</Math>-Functions: Real Variable and Real Nome</title>         
+ 
+<para xml:id="C20.S3.SS1.p1">
+
+</para>
+          
+<sentence sentence-num-in-section="37" xml:id="C20.S3.F1.s1">
+Figure 20.3.1: <Math mode="inline" xml:id="C20.S3.F1.m4">\theta_{j}\left(\pi x,0.15\right</Math>) , <Math mode="inline" xml:id="C20.S3.F1.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F1.m6">j=1,2,3,4</Math> .
+</sentence>             
+<sentence sentence-num-in-section="38" xml:id="C20.S3.F2.s1">
+Figure 20.3.2: <Math mode="inline" xml:id="C20.S3.F2.m4">\theta_{1}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F2.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F2.m6">q</Math> = 0.05, 0.5, 0.7, 0.9. For <Math mode="inline" xml:id="C20.S3.F2.m7">q\leq q^{\text{Dedekind}}</Math> , <Math mode="inline" xml:id="C20.S3.F2.m8">\theta_{1}\left(\pi x,q\right)</Math> is convex in <Math mode="inline" xml:id="C20.S3.F2.m9">x</Math> for <Math mode="inline" xml:id="C20.S3.F2.m10">0&amp;lt;x&amp;lt;1</Math> . Here <Math mode="inline" xml:id="C20.S3.F2.m11">q^{\text{Dedekind}}=e^{-\pi y_{0}}=0.1</Math>9 approximately, where <Math mode="inline" xml:id="C20.S3.F2.m12">y=y_{0}</Math> corresponds to the maximum value of Dedekind’s eta function <Math mode="inline" xml:id="C20.S3.F2.m13">\eta\left(iy\right)</Math> as depicted in Figure  .
+</sentence>             
+<sentence sentence-num-in-section="39" xml:id="C20.S3.F3.s1">
+Figure 20.3.3: <Math mode="inline" xml:id="C20.S3.F3.m4">\theta_{2}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F3.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F3.m6">q</Math> = 0.05, 0.5, 0.7, 0.9.
+</sentence>           
+  
+<sentence sentence-num-in-section="40" xml:id="C20.S3.F4.s1">
+Figure 20.3.4: <Math mode="inline" xml:id="C20.S3.F4.m4">\theta_{3}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F4.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F4.m6">q</Math> = 0.05, 0.5, 0.7, 0.9.
+</sentence>           
+<sentence sentence-num-in-section="41" xml:id="C20.S3.F5.s1">
+Figure 20.3.5: <Math mode="inline" xml:id="C20.S3.F5.m4">\theta_{4}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F5.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F5.m6">q</Math> = 0.05, 0.5, 0.7, 0.9.
+</sentence>             
+<sentence sentence-num-in-section="42" xml:id="C20.S3.F6.s1">
+Figure 20.3.6: <Math mode="inline" xml:id="C20.S3.F6.m4">\theta_{1}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F6.m5">0\leq q\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F6.m6">x</Math> = 0, 0.4, 5, 10, 40.
+</sentence>           
+<sentence sentence-num-in-section="43" xml:id="C20.S3.F7.s1">
+Figure 20.3.7: <Math mode="inline" xml:id="C20.S3.F7.m4">\theta_{2}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F7.m5">0\leq q\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F7.m6">x</Math> = 0, 0.4, 5, 10, 40.
+</sentence>             
+<sentence sentence-num-in-section="44" xml:id="C20.S3.F8.s1">
+Figure 20.3.8: <Math mode="inline" xml:id="C20.S3.F8.m4">\theta_{3}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F8.m5">0\leq q\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F8.m6">x</Math> = 0, 0.4, 5, 10, 40.
+</sentence>           
+<sentence sentence-num-in-section="45" xml:id="C20.S3.F9.s1">
+Figure 20.3.9: <Math mode="inline" xml:id="C20.S3.F9.m4">\theta_{4}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F9.m5">0\leq q\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F9.m6">x</Math> = 0, 0.4, 5, 10, 40.
+</sentence>          
+   
+<sentence sentence-num-in-section="46" xml:id="C20.S3.F10.s1">
+Figure 20.3.10: <Math mode="inline" xml:id="C20.S3.F10.m4">\theta_{1}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F10.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F10.m6">0\leq q\leq 0.99</Math> .
+</sentence>           
+<sentence sentence-num-in-section="47" xml:id="C20.S3.F11.s1">
+Figure 20.3.11: <Math mode="inline" xml:id="C20.S3.F11.m4">\theta_{2}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F11.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F11.m6">0\leq q\leq 0.99</Math> .
+</sentence>             
+<sentence sentence-num-in-section="48" xml:id="C20.S3.F12.s1">
+Figure 20.3.12: <Math mode="inline" xml:id="C20.S3.F12.m4">\theta_{3}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F12.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F12.m6">0\leq q\leq 0.99</Math> .
+</sentence>           
+<sentence sentence-num-in-section="49" xml:id="C20.S3.F13.s1">
+Figure 20.3.13: <Math mode="inline" xml:id="C20.S3.F13.m4">\theta_{4}\left(\pi x,q\right)</Math> , <Math mode="inline" xml:id="C20.S3.F13.m5">0\leq x\leq 2</Math> , <Math mode="inline" xml:id="C20.S3.F13.m6">0\leq q\leq 0.99</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C20.S3.SS2">
+<title><Math mode="inline" xml:id="C20.S3.SS2.m1">\theta</Math>-Functions: Complex Variable and Real Nome</title>          
+<para xml:id="C20.S3.SS2.p1">
+
+</para>
+ 
+<para xml:id="C20.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C20.S3.SS2.p2.s1">
+In the graphics shown in this subsection, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C20.S3.SS2.p2.s2">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="52" xml:id="C20.S3.F14.s1">
+Figure 20.3.14: <Math mode="inline" xml:id="C20.S3.F14.m4">\theta_{1}\left(\pi x+iy,0.12\right</Math>) , <Math mode="inline" xml:id="C20.S3.F14.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F14.m6">-1\leq y\leq 2.3</Math> .
+</sentence>           
+<sentence sentence-num-in-section="53" xml:id="C20.S3.F15.s1">
+Figure 20.3.15: <Math mode="inline" xml:id="C20.S3.F15.m4">\theta_{2}\left(\pi x+iy,0.12\right</Math>) , <Math mode="inline" xml:id="C20.S3.F15.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F15.m6">-1\leq y\leq 2.3</Math> .
+</sentence> 
+            
+<sentence sentence-num-in-section="54" xml:id="C20.S3.F16.s1">
+Figure 20.3.16: <Math mode="inline" xml:id="C20.S3.F16.m4">\theta_{3}\left(\pi x+iy,0.12\right</Math>) , <Math mode="inline" xml:id="C20.S3.F16.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F16.m6">-1\leq y\leq 1.5</Math> .
+</sentence>           
+<sentence sentence-num-in-section="55" xml:id="C20.S3.F17.s1">
+Figure 20.3.17: <Math mode="inline" xml:id="C20.S3.F17.m4">\theta_{4}\left(\pi x+iy,0.12\right</Math>) , <Math mode="inline" xml:id="C20.S3.F17.m5">-1\leq x\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F17.m6">-1\leq y\leq 1.5</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C20.S3.SS3">
+<title><Math mode="inline" xml:id="C20.S3.SS3.m1">\theta</Math>-Functions: Real Variable and Complex Lattice Parameter</title>        
+ 
+<para xml:id="C20.S3.SS3.p1">
+
+</para>
+ 
+<para xml:id="C20.S3.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C20.S3.SS3.p2.s1">
+In the graphics shown in this subsection, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C20.S3.SS3.p2.s2">
+See also LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="58" xml:id="C20.S3.F18.s1">
+Figure 20.3.18: <Math mode="inline" xml:id="C20.S3.F18.m4">\theta_{1}\left(0.1\middle|u+iv\right</Math>) , <Math mode="inline" xml:id="C20.S3.F18.m5">-1\leq u\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F18.m6">0.005\leq v\leq 0.5</Math> . The value 0.1 of <Math mode="inline" xml:id="C20.S3.F18.m7">z</Math> is chosen arbitrarily since <Math mode="inline" xml:id="C20.S3.F18.m8">\theta_{1}</Math> vanishes identically when <Math mode="inline" xml:id="C20.S3.F18.m9">z=0</Math> .
+</sentence>           
+<sentence sentence-num-in-section="59" xml:id="C20.S3.F19.s1">
+Figure 20.3.19: <Math mode="inline" xml:id="C20.S3.F19.m4">\theta_{2}\left(0\middle|u+iv\right)</Math> , <Math mode="inline" xml:id="C20.S3.F19.m5">-1\leq u\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F19.m6">0.005\leq v\leq 0.1</Math> .
+</sentence>             
+<sentence sentence-num-in-section="60" xml:id="C20.S3.F20.s1">
+Figure 20.3.20: <Math mode="inline" xml:id="C20.S3.F20.m4">\theta_{3}\left(0\middle|u+iv\right)</Math> , <Math mode="inline" xml:id="C20.S3.F20.m5">-1\leq u\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F20.m6">0.005\leq v\leq 0.1</Math> .
+</sentence>           
+<sentence sentence-num-in-section="61" xml:id="C20.S3.F21.s1">
+Figure 20.3.21: <Math mode="inline" xml:id="C20.S3.F21.m4">\theta_{4}\left(0\middle|u+iv\right)</Math> , <Math mode="inline" xml:id="C20.S3.F21.m5">-1\leq u\leq 1</Math> , <Math mode="inline" xml:id="C20.S3.F21.m6">0.005\leq v\leq 0.1</Math> .
+</sentence>     
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S4">
+<title>Values at <Math mode="inline" xml:id="C20.S4.m1">z</Math> = 0</title>           
+<subsection xml:id="C20.S4.SS1">
+<title>Functions and First Derivatives</title>         
+<para xml:id="C20.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C20.S4.SS1.p1.s1">
+ <Math equation-number="20.4.1" mode="display" xml:id="C20.S4.E1">\theta_{1}\left(0,q\right)=\theta_{2}'\left(0,q\right)=\theta_{3}'\left(0,q \right)=\theta_{4}'\left(0,q\right)=0,</Math> <Math equation-number="20.4.2" mode="display" xml:id="C20.S4.E2">\theta_{1}'\left(0,q\right)=2q^{1/4}\prod\limits_{n=1}^{\infty}\left(1-q^{2n} \right)^{3},</Math> , <Math equation-number="20.4.3" mode="display" xml:id="C20.S4.E3">\theta_{2}\left(0,q\right)=2q^{1/4}\prod\limits_{n=1}^{\infty}\left(1-q^{2n} \right)\left(1+q^{2n}\right)^{2},</Math> , <Math equation-number="20.4.4" mode="display" xml:id="C20.S4.E4">\theta_{3}\left(0,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1+q^{2n-1}\right)^{2},</Math> , <Math equation-number="20.4.5" mode="display" xml:id="C20.S4.E5">\theta_{4}\left(0,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1-q^{2n-1}\right)^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C20.S4.Px1">
+<title>Jacobi’s Identity</title>     
+<para xml:id="C20.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C20.S4.Px1.p1.s1">
+ <Math equation-number="20.4.6" mode="display" xml:id="C20.S4.E6">\theta_{1}'\left(0,q\right)=\theta_{2}\left(0,q\right)\theta_{3}\left(0,q \right)\theta_{4}\left(0,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S4.SS2">
+<title>Higher Derivatives</title>         
+<para xml:id="C20.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C20.S4.SS2.p1.s1">
+ <Math equation-number="20.4.7" mode="display" xml:id="C20.S4.E7">\theta_{1}''(0,q)=\theta_{2}'''\left(0,q\right)=\theta_{3}'''\left(0,q\right)= \theta_{4}'''\left(0,q\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="65" xml:id="C20.S4.SS2.p1.s2">
+<Math equation-number="20.4.8" mode="display" xml:id="C20.S4.E8">\frac{\theta_{1}'''\left(0,q\right)}{\theta_{1}'\left(0,q\right)}=-1+24\sum_{n =1}^{\infty}\frac{q^{2n}}{(1-q^{2n})^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="66" xml:id="C20.S4.SS2.p1.s3">
+, <Math equation-number="20.4.9" mode="display" xml:id="C20.S4.E9">\frac{\theta_{2}''\left(0,q\right)}{\theta_{2}\left(0,q\right)}=-1-8\sum_{n=1} ^{\infty}\frac{q^{2n}}{(1+q^{2n})^{2}},</Math> , <Math equation-number="20.4.10" mode="display" xml:id="C20.S4.E10">\frac{\theta_{3}''\left(0,q\right)}{\theta_{3}\left(0,q\right)}=-8\sum_{n=1}^{ \infty}\frac{q^{2n-1}}{(1+q^{2n-1})^{2}},</Math> , <Math equation-number="20.4.11" mode="display" xml:id="C20.S4.E11">\frac{\theta_{4}''\left(0,q\right)}{\theta_{4}\left(0,q\right)}=8\sum_{n=1}^{ \infty}\frac{q^{2n-1}}{(1-q^{2n-1})^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="67" xml:id="C20.S4.SS2.p1.s4">
+<Math equation-number="20.4.12" mode="display" xml:id="C20.S4.E12">\frac{\theta_{1}'''\left(0,q\right)}{\theta_{1}'\left(0,q\right)}=\frac{\theta _{2}''\left(0,q\right)}{\theta_{2}\left(0,q\right)}+\frac{\theta_{3}''\left(0, q\right)}{\theta_{3}\left(0,q\right)}+\frac{\theta_{4}''\left(0,q\right)}{ \theta_{4}\left(0,q\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S5">
+<title>Infinite Products and Related Results</title>          
+<subsection xml:id="C20.S5.SS1">
+<title>Single Products</title>        
+ 
+<para xml:id="C20.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C20.S5.SS1.p1.s1">
+ <Math equation-number="20.5.1" mode="display" xml:id="C20.S5.E1">\theta_{1}\left(z,q\right)=2q^{1/4}\sin z\prod\limits_{n=1}^{\infty}{\left(1-q ^{2n}\right)}{\left(1-2q^{2n}\cos\left(2z\right)+q^{4n}\right)},</Math> <Math equation-number="20.5.2" mode="display" xml:id="C20.S5.E2">\theta_{2}\left(z,q\right)=2q^{1/4}\cos z\prod\limits_{n=1}^{\infty}{\left(1-q ^{2n}\right)}{\left(1+2q^{2n}\cos\left(2z\right)+q^{4n}\right)},</Math> <Math equation-number="20.5.3" mode="display" xml:id="C20.S5.E3">\theta_{3}\left(z,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1+2q^{2n-1}\cos\left(2z\right)+q^{4n-2}\right),</Math> <Math equation-number="20.5.4" mode="display" xml:id="C20.S5.E4">\theta_{4}\left(z,q\right)=\prod\limits_{n=1}^{\infty}\left(1-q^{2n}\right) \left(1-2q^{2n-1}\cos\left(2z\right)+q^{4n-2}\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="69" xml:id="C20.S5.SS1.p2.s1">
+ <Math equation-number="20.5.5" mode="display" xml:id="C20.S5.E5">\theta_{1}\left(z\middle|\tau\right)=\theta_{1}'\left(0\middle|\tau\right)\sin z \prod_{n=1}^{\infty}\frac{\sin\left(n\pi\tau+z\right)\sin\left(n\pi\tau-z \right)}{{\sin^{2}}\left(n\pi\tau\right)},</Math> <Math equation-number="20.5.6" mode="display" xml:id="C20.S5.E6">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right)\cos z \prod_{n=1}^{\infty}\frac{\cos\left(n\pi\tau+z\right)\cos\left(n\pi\tau-z \right)}{{\cos^{2}}\left(n\pi\tau\right)},</Math> <Math equation-number="20.5.7" mode="display" xml:id="C20.S5.E7">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right)\prod _{n=1}^{\infty}\frac{\cos\left((n-\tfrac{1}{2})\pi\tau+z\right)\cos\left((n- \tfrac{1}{2})\pi\tau-z\right)}{{\cos^{2}}\left((n-\tfrac{1}{2})\pi\tau\right)},</Math> <Math equation-number="20.5.8" mode="display" xml:id="C20.S5.E8">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right)\prod _{n=1}^{\infty}\frac{\sin\left((n-\tfrac{1}{2})\pi\tau+z\right)\sin\left((n- \tfrac{1}{2})\pi\tau-z\right)}{{\sin^{2}}\left((n-\tfrac{1}{2})\pi\tau\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C20.S5.Px1">
+<title>Jacobi’s Triple Product</title>    
+<para xml:id="C20.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C20.S5.Px1.p1.s1">
+ <Math equation-number="20.5.9" mode="display" xml:id="C20.S5.E9">\theta_{3}\left(\pi z\middle|\tau\right)=\sum_{n=-\infty}^{\infty}p^{2n}q^{n^{ 2}}\\ =\prod_{n=1}^{\infty}\left(1-q^{2n}\right)\left(1+q^{2n-1}p^{2}\right)\left(1+ q^{2n-1}p^{-2}\right),</Math> where <Math mode="inline" xml:id="C20.S5.Px1.p1.m1">p=e^{i\pi z}</Math> , <Math mode="inline" xml:id="C20.S5.Px1.p1.m2">q=e^{i\pi\tau}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S5.SS2">
+<title>Logarithmic Derivatives</title>         
+<para xml:id="C20.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C20.S5.SS2.p1.s1">
+When <Math mode="inline" xml:id="C20.S5.SS2.p1.m1">\left|\Im z\right|&lt;\pi\Im\tau</Math> , <Math equation-number="20.5.10" mode="display" xml:id="C20.S5.E10">\frac{\theta_{1}'\left(z,q\right)}{\theta_{1}\left(z,q\right)}-\cot z=4\sin \left(2z\right)\sum_{n=1}^{\infty}\frac{q^{2n}}{1-2q^{2n}\cos\left(2z\right)+q ^{4n}}=4\sum_{n=1}^{\infty}\frac{q^{2n}}{1-q^{2n}}\sin\left(2nz\right),</Math> <Math equation-number="20.5.11" mode="display" xml:id="C20.S5.E11">\frac{\theta_{2}'\left(z,q\right)}{\theta_{2}\left(z,q\right)}+\tan z=-4\sin \left(2z\right)\sum_{n=1}^{\infty}\frac{q^{2n}}{1+2q^{2n}\cos\left(2z\right)+q ^{4n}}=4\sum_{n=1}^{\infty}(-1)^{n}\frac{q^{2n}}{1-q^{2n}}\sin\left(2nz\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C20.S5.SS2.p1.s2">
+The left-hand sides of (LABEL:eq:TH.or.aa) and (LABEL:eq:TH.or.bb) are replaced by their limiting values when <Math mode="inline" xml:id="C20.S5.SS2.p1.m2">\cot z</Math> or <Math mode="inline" xml:id="C20.S5.SS2.p1.m3">\tan z</Math> are undefined.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C20.S5.SS2.p2.s1">
+When <Math mode="inline" xml:id="C20.S5.SS2.p2.m1">\left|\Im z\right|&lt;\tfrac{1}{2}\pi\Im\tau</Math> , <Math equation-number="20.5.12" mode="display" xml:id="C20.S5.E12">\frac{\theta_{3}'\left(z,q\right)}{\theta_{3}\left(z,q\right)}=-4\sin\left(2z \right)\sum_{n=1}^{\infty}\frac{q^{2n-1}}{1+2q^{2n-1}\cos\left(2z\right)+q^{4n -2}}=4\sum_{n=1}^{\infty}(-1)^{n}\frac{q^{n}}{1-q^{2n}}\sin\left(2nz\right),</Math> <Math equation-number="20.5.13" mode="display" xml:id="C20.S5.E13">\frac{\theta_{4}'\left(z,q\right)}{\theta_{4}\left(z,q\right)}=4\sin\left(2z \right)\sum_{n=1}^{\infty}\frac{q^{2n-1}}{1-2q^{2n-1}\cos\left(2z\right)+q^{4n -2}}=4\sum_{n=1}^{\infty}\frac{q^{n}}{1-q^{2n}}\sin\left(2nz\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="74" xml:id="C20.S5.SS2.p3.s1">
+With the given conditions the infinite series in (LABEL:eq:TH.or.aa)–(LABEL:eq:TH.or.dd) converge absolutely and uniformly in compact sets in the <Math mode="inline" xml:id="C20.S5.SS2.p3.m1">z</Math> -plane.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S5.SS3">
+<title>Double Products</title>           
+<para xml:id="C20.S5.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C20.S5.SS3.p1.s1">
+ <Math equation-number="20.5.14" mode="display" xml:id="C20.S5.E14">\theta_{1}\left(z\middle|\tau\right)=z\theta_{1}'\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=-N}^{N}\lim_{M\to\infty}\prod_{\begin{subarray}{c}m= -M\\ \left|m\right|+\left|n\right|\neq 0\end{subarray}}^{M}\left(1+\frac{z}{(m+n \tau)\pi}\right),</Math> , <Math equation-number="20.5.15" mode="display" xml:id="C20.S5.E15">\theta_{2}\left(z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=-N}^{N}\lim_{M\to\infty}\prod_{m=1-M}^{M}\left(1+ \frac{z}{(m-\tfrac{1}{2}+n\tau)\pi}\right),</Math> , <Math equation-number="20.5.16" mode="display" xml:id="C20.S5.E16">\theta_{3}\left(z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=1-N}^{N}\lim_{M\to\infty}\prod_{m=1-M}^{M}\left(1+ \frac{z}{(m-\tfrac{1}{2}+(n-\tfrac{1}{2})\tau)\pi}\right),</Math> , <Math equation-number="20.5.17" mode="display" xml:id="C20.S5.E17">\theta_{4}\left(z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right)\* \lim_{N\to\infty}\prod_{n=1-N}^{N}\lim_{M\to\infty}\prod_{m=-M}^{M}\left(1+ \frac{z}{(m+(n-\tfrac{1}{2})\tau)\pi}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C20.S5.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C20.S5.SS3.p2.s1">
+These double products are not absolutely convergent; hence the order of the limits is important.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C20.S5.SS3.p2.s2">
+The order shown is in accordance with the Eisenstein convention ( ( , §0.3) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S6">
+<title>Power Series</title>          
+<para xml:id="C20.S6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C20.S6.p1.s1">
+Assume <Math equation-number="20.6.1" mode="display" xml:id="C20.S6.E1">\left|\pi z\right|&lt;\min\left|z_{m,n}\right|,</Math> where <Math mode="inline" xml:id="C20.S6.p1.m1">z_{m,n}</Math> is given by (LABEL:eq:TH.def.new) and the minimum is for <Math mode="inline" xml:id="C20.S6.p1.m2">m,n\in\mathbb{Z}</Math> , except <Math mode="inline" xml:id="C20.S6.p1.m3">m=n=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="79" xml:id="C20.S6.p1.s2">
+Then <Math equation-number="20.6.2" mode="display" xml:id="C20.S6.E2">\theta_{1}\left(\pi z\middle|\tau\right)=\pi z\theta_{1}'\left(0\middle|\tau \right)\exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\delta_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.3" mode="display" xml:id="C20.S6.E3">\theta_{2}\left(\pi z\middle|\tau\right)=\theta_{2}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\alpha_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.4" mode="display" xml:id="C20.S6.E4">\theta_{3}\left(\pi z\middle|\tau\right)=\theta_{3}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\beta_{2j}(\tau)z^{2j}\right),</Math> , <Math equation-number="20.6.5" mode="display" xml:id="C20.S6.E5">\theta_{4}\left(\pi z\middle|\tau\right)=\theta_{4}\left(0\middle|\tau\right) \exp\left(-\sum_{j=1}^{\infty}\frac{1}{2j}\gamma_{2j}(\tau)z^{2j}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="80" xml:id="C20.S6.p1.s3">
+Here the coefficients are given by <Math equation-number="20.6.6" mode="display" xml:id="C20.S6.E6">\delta_{2j}(\tau)=\left.\sum_{n=-\infty}^{\infty}\sum_{\begin{subarray}{c}m=- \infty\\ \left|m\right|+\left|n\right|\neq 0\end{subarray}}^{\infty}\right.(m+n\tau)^{- 2j},</Math> , <Math equation-number="20.6.7" mode="display" xml:id="C20.S6.E7">\alpha_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m-\tfrac{ 1}{2}+n\tau)^{-2j},</Math> , <Math equation-number="20.6.8" mode="display" xml:id="C20.S6.E8">\beta_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m-\tfrac{1 }{2}+(n-\tfrac{1}{2})\tau)^{-2j},</Math> , <Math equation-number="20.6.9" mode="display" xml:id="C20.S6.E9">\gamma_{2j}(\tau)=\sum_{n=-\infty}^{\infty}\sum_{m=-\infty}^{\infty}(m+(n- \tfrac{1}{2})\tau)^{-2j},</Math> and satisfy <Math equation-number="20.6.10" mode="display" xml:id="C20.S6.E10">\alpha_{2j}(\tau)=2^{2j}\delta_{2j}(2\tau)-\delta_{2j}(\tau), \beta_{2j}(\tau)=2^{2j}\gamma_{2j}(2\tau)-\gamma_{2j}(\tau)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="81" xml:id="C20.S6.p1.s4">
+In the double series the order of summation is important only when <Math mode="inline" xml:id="C20.S6.p1.m4">j=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="82" xml:id="C20.S6.p1.s5">
+For further information on <Math mode="inline" xml:id="C20.S6.p1.m5">\delta_{2j}</Math> see §LABEL:sec:WE.9: since the double sums in (LABEL:eq:TH.or.ua) and (LABEL:eq:WE.9.1) are the same, we have <Math mode="inline" xml:id="C20.S6.p1.m6">\delta_{2n}=c_{n}/(2n-1)</Math> when <Math mode="inline" xml:id="C20.S6.p1.m7">n\geq 2</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C20.S7">
+<title>Identities</title>         
+<subsection xml:id="C20.S7.SS1">
+<title>Sums of Squares</title>         
+ 
+<para xml:id="C20.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C20.S7.SS1.p1.s1">
+ <Math equation-number="20.7.1" mode="display" xml:id="C20.S7.E1">{\theta_{3}^{2}}\left(0,q\right){\theta_{3}^{2}}\left(z,q\right)={\theta_{4}^{ 2}}\left(0,q\right){\theta_{4}^{2}}\left(z,q\right)+{\theta_{2}^{2}}\left(0,q \right){\theta_{2}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.2" mode="display" xml:id="C20.S7.E2">{\theta_{3}^{2}}\left(0,q\right){\theta_{4}^{2}}\left(z,q\right)={\theta_{2}^{ 2}}\left(0,q\right){\theta_{1}^{2}}\left(z,q\right)+{\theta_{4}^{2}}\left(0,q \right){\theta_{3}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.3" mode="display" xml:id="C20.S7.E3">{\theta_{2}^{2}}\left(0,q\right){\theta_{4}^{2}}\left(z,q\right)={\theta_{3}^{ 2}}\left(0,q\right){\theta_{1}^{2}}\left(z,q\right)+{\theta_{4}^{2}}\left(0,q \right){\theta_{2}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.4" mode="display" xml:id="C20.S7.E4">{\theta_{2}^{2}}\left(0,q\right){\theta_{3}^{2}}\left(z,q\right)={\theta_{4}^{ 2}}\left(0,q\right){\theta_{1}^{2}}\left(z,q\right)+{\theta_{3}^{2}}\left(0,q \right){\theta_{2}^{2}}\left(z,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C20.S7.SS1.p2.s1">
+Also <Math equation-number="20.7.5" mode="display" xml:id="C20.S7.E5">{\theta_{3}^{4}}\left(0,q\right)={\theta_{2}^{4}}\left(0,q\right)+{\theta_{4}^ {4}}\left(0,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C20.S7.SS1.p3.s1">
+See also ( , §2) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS2">
+<title>Addition Formulas</title>          
+<para xml:id="C20.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C20.S7.SS2.p1.s1">
+ <Math equation-number="20.7.6" mode="display" xml:id="C20.S7.E6">{\theta_{4}^{2}}\left(0,q\right)\theta_{1}\left(w+z,q\right)\theta_{1}\left(w- z,q\right)={\theta_{3}^{2}}\left(w,q\right){\theta_{2}^{2}}\left(z,q\right)-{ \theta_{2}^{2}}\left(w,q\right){\theta_{3}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.7" mode="display" xml:id="C20.S7.E7">{\theta_{4}^{2}}\left(0,q\right)\theta_{2}\left(w+z,q\right)\theta_{2}\left(w- z,q\right)={\theta_{4}^{2}}\left(w,q\right){\theta_{2}^{2}}\left(z,q\right)-{ \theta_{1}^{2}}\left(w,q\right){\theta_{3}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.8" mode="display" xml:id="C20.S7.E8">{\theta_{4}^{2}}\left(0,q\right)\theta_{3}\left(w+z,q\right)\theta_{3}\left(w- z,q\right)={\theta_{4}^{2}}\left(w,q\right){\theta_{3}^{2}}\left(z,q\right)-{ \theta_{1}^{2}}\left(w,q\right){\theta_{2}^{2}}\left(z,q\right),</Math> <Math equation-number="20.7.9" mode="display" xml:id="C20.S7.E9">{\theta_{4}^{2}}\left(0,q\right)\theta_{4}\left(w+z,q\right)\theta_{4}\left(w- z,q\right)={\theta_{3}^{2}}\left(w,q\right){\theta_{3}^{2}}\left(z,q\right)-{ \theta_{2}^{2}}\left(w,q\right){\theta_{2}^{2}}\left(z,q\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C20.S7.SS2.p1.s2">
+For these and similar formulas see ( , §1.4) , ( , pp. 487–488) , and ( , §5) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C20.S7.SS2.p2.s1">
+Also, in further development along the lines of the notations of Neville (§LABEL:sec:TH.not)and of Glaisher (§LABEL:sec:JA.nd),the identities (LABEL:eq:TH.id.f1)–(LABEL:eq:TH.id.i) have been recast in a more symmetric manner with respect to suffices <Math mode="inline" xml:id="C20.S7.SS2.p2.m1">2,3,4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="89" xml:id="C20.S7.SS2.p2.s2">
+The symmetry, applicable also to §§LABEL:sec:TH.id.df and LABEL:sec:TH.id.dr, is obtained by modifying traditional theta functions in the manner recommended by ( ) and used for further purposes by ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS3">
+<title>Duplication Formula</title>          
+<para xml:id="C20.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C20.S7.SS3.p1.s1">
+ <Math equation-number="20.7.10" mode="display" xml:id="C20.S7.E10">\theta_{1}\left(2z,q\right)=2\frac{\theta_{1}\left(z,q\right)\theta_{2}\left(z ,q\right)\theta_{3}\left(z,q\right)\theta_{4}\left(z,q\right)}{\theta_{2}\left (0,q\right)\theta_{3}\left(0,q\right)\theta_{4}\left(0,q\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C20.S7.SS3.p2.s1">
+See also ( , §§1 and 4) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS4">
+<title>Reduction Formulas for Products</title>          
+<para xml:id="C20.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C20.S7.SS4.p1.s1">
+ <Math equation-number="20.7.11" mode="display" xml:id="C20.S7.E11">\frac{\theta_{1}\left(z,q\right)\theta_{2}\left(z,q\right)}{\theta_{1}\left(2z ,q^{2}\right)}=\frac{\theta_{3}\left(z,q\right)\theta_{4}\left(z,q\right)}{ \theta_{4}\left(2z,q^{2}\right)}=\theta_{4}\left(0,q^{2}\right),</Math> <Math equation-number="20.7.12" mode="display" xml:id="C20.S7.E12">\frac{\theta_{1}\left(z,q^{2}\right)\theta_{4}\left(z,q^{2}\right)}{\theta_{1} \left(z,q\right)}=\frac{\theta_{2}\left(z,q^{2}\right)\theta_{3}\left(z,q^{2} \right)}{\theta_{2}\left(z,q\right)}=\tfrac{1}{2}\theta_{2}\left(0,q\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="93" xml:id="C20.S7.SS4.p1.s2">
+Addendum: For a companion equation see (LABEL:eq:TH.id.lla).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS5">
+<title>Watson’s Identities</title>          
+ 
+<para xml:id="C20.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C20.S7.SS5.p1.s1">
+ <Math equation-number="20.7.13" mode="display" xml:id="C20.S7.E13">\theta_{1}\left(z,q\right)\theta_{1}\left(w,q\right)=\theta_{3}\left(z+w,q^{2} \right)\theta_{2}\left(z-w,q^{2}\right)-\theta_{2}\left(z+w,q^{2}\right)\theta _{3}\left(z-w,q^{2}\right),</Math> <Math equation-number="20.7.14" mode="display" xml:id="C20.S7.E14">\theta_{3}\left(z,q\right)\theta_{3}\left(w,q\right)=\theta_{3}\left(z+w,q^{2} \right)\theta_{3}\left(z-w,q^{2}\right)+\theta_{2}\left(z+w,q^{2}\right)\theta _{2}\left(z-w,q^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS6">
+<title>Landen Transformations</title>            
+<para xml:id="C20.S7.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C20.S7.SS6.p1.s1">
+With <Math equation-number="20.7.15" mode="display" xml:id="C20.S7.E15">A=A(\tau)=\ifrac{1}{\theta_{4}\left(0\middle|2\tau\right)},</Math> 
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S7.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C20.S7.SS6.p2.s1">
+ <Math equation-number="20.7.16" mode="display" xml:id="C20.S7.E16">\theta_{1}\left(2z\middle|2\tau\right)=A\theta_{1}\left(z\middle|\tau\right) \theta_{2}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.7.17" mode="display" xml:id="C20.S7.E17">\theta_{2}\left(2z\middle|2\tau\right)=A\theta_{1}\left(\tfrac{1}{4}\pi-z \middle|\tau\right)\theta_{1}\left(\tfrac{1}{4}\pi+z\middle|\tau\right),</Math> , <Math equation-number="20.7.18" mode="display" xml:id="C20.S7.E18">\theta_{3}\left(2z\middle|2\tau\right)=A\theta_{3}\left(\tfrac{1}{4}\pi-z \middle|\tau\right)\theta_{3}\left(\tfrac{1}{4}\pi+z\middle|\tau\right),</Math> , <Math equation-number="20.7.19" mode="display" xml:id="C20.S7.E19">\theta_{4}\left(2z\middle|2\tau\right)=A\theta_{3}\left(z\middle|\tau\right) \theta_{4}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C20.S7.SS6.p3.s1">
+Next, with <Math equation-number="20.7.20" mode="display" xml:id="C20.S7.E20">B=B(\tau)=\ifrac{1}{\left(\theta_{3}\left(0\middle|\tau\right)\theta_{4}\left( 0\middle|\tau\right)\theta_{3}\left(\tfrac{1}{4}\pi\middle|\tau\right)\right)},</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C20.S7.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C20.S7.SS6.p4.s1">
+ <Math equation-number="20.7.21" mode="display" xml:id="C20.S7.E21">\theta_{1}\left(4z\middle|4\tau\right)=B\theta_{1}\left(z\middle|\tau\right) \theta_{1}\left(\tfrac{1}{4}\pi-z\middle|\tau\right)\*\theta_{1}\left(\tfrac{1 }{4}\pi+z\middle|\tau\right)\theta_{2}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.7.22" mode="display" xml:id="C20.S7.E22">\theta_{2}\left(4z\middle|4\tau\right)=B\theta_{2}\left(\tfrac{1}{8}\pi-z \middle|\tau\right)\theta_{2}\left(\tfrac{1}{8}\pi+z\middle|\tau\right)\* \theta_{2}\left(\tfrac{3}{8}\pi-z\middle|\tau\right)\theta_{2}\left(\tfrac{3}{ 8}\pi+z\middle|\tau\right),</Math> , <Math equation-number="20.7.23" mode="display" xml:id="C20.S7.E23">\theta_{3}\left(4z\middle|4\tau\right)=B\theta_{3}\left(\tfrac{1}{8}\pi-z \middle|\tau\right)\theta_{3}\left(\tfrac{1}{8}\pi+z\middle|\tau\right)\* \theta_{3}\left(\tfrac{3}{8}\pi-z\middle|\tau\right)\theta_{3}\left(\tfrac{3}{ 8}\pi+z\middle|\tau\right),</Math> , <Math equation-number="20.7.24" mode="display" xml:id="C20.S7.E24">\theta_{4}\left(4z\middle|4\tau\right)=B\theta_{4}\left(z\middle|\tau\right) \theta_{4}\left(\tfrac{1}{4}\pi-z\middle|\tau\right)\*\theta_{4}\left(\tfrac{1 }{4}\pi+z\middle|\tau\right)\theta_{3}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS7">
+<title>Derivatives of Ratios of Theta Functions</title>          
+<para xml:id="C20.S7.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C20.S7.SS7.p1.s1">
+ <Math equation-number="20.7.25" mode="display" xml:id="C20.S7.E25">\frac{\mathrm{d}}{\mathrm{d}z}\left(\frac{\theta_{2}\left(z\middle|\tau\right) }{\theta_{4}\left(z\middle|\tau\right)}\right)=-\frac{{\theta_{3}^{2}}\left(0 \middle|\tau\right)\theta_{1}\left(z\middle|\tau\right)\theta_{3}\left(z \middle|\tau\right)}{{\theta_{4}^{2}}\left(z\middle|\tau\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="100" xml:id="C20.S7.SS7.p1.s2">
+See ( , pp. 19–20) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="101" xml:id="C20.S7.SS7.p1.s3">
+This reference also gives the eleven additional identities for the permutations of the four theta functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C20.S7.SS7.p2.s1">
+See also ( , §3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS8">
+<title>Transformations of Lattice Parameter</title>          
+<para xml:id="C20.S7.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C20.S7.SS8.p1.s1">
+ <Math equation-number="20.7.26" mode="display" xml:id="C20.S7.E26">\theta_{1}\left(z\middle|\tau+1\right)=e^{i\pi/4}\theta_{1}\left(z\middle|\tau \right),</Math> , <Math equation-number="20.7.27" mode="display" xml:id="C20.S7.E27">\theta_{2}\left(z\middle|\tau+1\right)=e^{i\pi/4}\theta_{2}\left(z\middle|\tau \right),</Math> , <Math equation-number="20.7.28" mode="display" xml:id="C20.S7.E28">\theta_{3}\left(z\middle|\tau+1\right)=\theta_{4}\left(z\middle|\tau\right),</Math> , <Math equation-number="20.7.29" mode="display" xml:id="C20.S7.E29">\theta_{4}\left(z\middle|\tau+1\right)=\theta_{3}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S7.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C20.S7.SS8.p2.s1">
+In the following equations <Math mode="inline" xml:id="C20.S7.SS8.p2.m1">\tau^{\prime}=-1/\tau</Math> , and all square roots assume their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="105" xml:id="C20.S7.SS8.p2.s2">
+<Math equation-number="20.7.30" mode="display" xml:id="C20.S7.E30">(-i\tau)^{1/2}\theta_{1}\left(z\middle|\tau\right)=-i\exp\left(i\tau^{\prime}z ^{2}/\pi\right)\theta_{1}\left(z\tau^{\prime}\middle|\tau^{\prime}\right),</Math> , <Math equation-number="20.7.31" mode="display" xml:id="C20.S7.E31">(-i\tau)^{1/2}\theta_{2}\left(z\middle|\tau\right)=\exp\left(i\tau^{\prime}z^{ 2}/\pi\right)\theta_{4}\left(z\tau^{\prime}\middle|\tau^{\prime}\right),</Math> , <Math equation-number="20.7.32" mode="display" xml:id="C20.S7.E32">(-i\tau)^{1/2}\theta_{3}\left(z\middle|\tau\right)=\exp\left(i\tau^{\prime}z^{ 2}/\pi\right)\theta_{3}\left(z\tau^{\prime}\middle|\tau^{\prime}\right),</Math> , <Math equation-number="20.7.33" mode="display" xml:id="C20.S7.E33">(-i\tau)^{1/2}\theta_{4}\left(z\middle|\tau\right)=\exp\left(i\tau^{\prime}z^{ 2}/\pi\right)\theta_{2}\left(z\tau^{\prime}\middle|\tau^{\prime}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="106" xml:id="C20.S7.SS8.p2.s3">
+These are specific examples of modular transformations as discussed in §LABEL:sec:WE.15; the corresponding results for the general case are given by ( , pp. 181–183) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S7.SS9">
+<title>Addendum to </title>         
+ 
+<para xml:id="C20.S7.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C20.S7.SS9.p1.s1">
+ <Math equation-number="20.7.34" mode="display" xml:id="C20.S7.E34">\frac{\theta_{1}\left(z,q^{2}\right)\theta_{3}\left(z,q^{2}\right)}{\theta_{1} \left(z,iq\right)}=\frac{\theta_{2}\left(z,q^{2}\right)\theta_{4}\left(z,q^{2} \right)}{\theta_{2}\left(z,iq\right)}=i^{-1/4}\sqrt{\frac{\theta_{2}\left(0,q^ {2}\right)\theta_{4}\left(0,q^{2}\right)}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C20.S7.SS9.p1.s2">
+See also (LABEL:eq:TH.ed.l) and (LABEL:eq:TH.id.ll).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S8">
+<title>Watson’s Expansions</title>           
+<para xml:id="C20.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C20.S8.p1.s1">
+ <Math equation-number="20.8.1" mode="display" xml:id="C20.S8.E1">\frac{\theta_{2}\left(0,q\right)\theta_{3}\left(z,q\right)\theta_{4}\left(z,q \right)}{\theta_{2}\left(z,q\right)}=2\sum_{n=-\infty}^{\infty}\frac{(-1)^{n}q ^{n^{2}}e^{i2nz}}{q^{-n}e^{-iz}+q^{n}e^{iz}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C20.S8.p1.s2">
+See ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C20.S8.p1.s3">
+This reference and ( , pp. 46–47) include other expansions of this type.
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C20.S9">
+<title>Relations to Other Functions</title>         
+<subsection xml:id="C20.S9.SS1">
+<title>Elliptic Integrals</title>          
+<para xml:id="C20.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C20.S9.SS1.p1.s1">
+With <Math mode="inline" xml:id="C20.S9.SS1.p1.m1">k</Math> defined by <Math equation-number="20.9.1" mode="display" xml:id="C20.S9.E1">k={\theta_{2}^{2}}\left(0\middle|\tau\right)/{\theta_{3}^{2}}\left(0\middle| \tau\right)</Math> and the notation of §LABEL:sec:EL.LD.LL, the complete Legendre integrals of the first kind may be expressed as theta functions: <Math equation-number="20.9.2" mode="display" xml:id="C20.S9.E2">K\left(k\right)=\tfrac{1}{2}\pi{\theta_{3}^{2}}\left(0\middle|\tau\right), K'\left(k\right)=-i\tau K\left(k\right),</Math> together with (LABEL:eq:JA.nd.a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C20.S9.SS1.p2.s1">
+In the case of the symmetric integrals, with the notation of §LABEL:sec:EL.SI.DI we have <Math equation-number="20.9.3" mode="display" xml:id="C20.S9.E3">R_{F}\left(\frac{{\theta_{2}^{2}}\left(z,q\right)}{{\theta_{2}^{2}}\left(0,q \right)},\frac{{\theta_{3}^{2}}\left(z,q\right)}{{\theta_{3}^{2}}\left(0,q \right)},\frac{{\theta_{4}^{2}}\left(z,q\right)}{{\theta_{4}^{2}}\left(0,q \right)}\right)=\frac{\theta_{1}'\left(0,q\right)}{\theta_{1}\left(z,q\right)}z,</Math> <Math equation-number="20.9.4" mode="display" xml:id="C20.S9.E4">R_{F}\left(0,{\theta_{3}^{4}}\left(0,q\right),{\theta_{4}^{4}}\left(0,q\right) \right)=\tfrac{1}{2}\pi,</Math> <Math equation-number="20.9.5" mode="display" xml:id="C20.S9.E5">\exp\left(-\frac{\pi R_{F}\left(0,k^{2},1\right)}{R_{F}\left(0,{k^{\prime}}^{2 },1\right)}\right)=q</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S9.SS2">
+<title>Elliptic Functions and Modular Functions</title>            
+<para xml:id="C20.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C20.S9.SS2.p1.s1">
+See §§LABEL:sec:JA.ndand LABEL:sec:WE.5(i)for the relations of Jacobian and Weierstrass elliptic functions to theta functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C20.S9.SS2.p2.s1">
+The relations (LABEL:eq:TH.of.c) and (LABEL:eq:TH.of.a) between <Math mode="inline" xml:id="C20.S9.SS2.p2.m1">k</Math> and <Math mode="inline" xml:id="C20.S9.SS2.p2.m2">\tau</Math> (or <Math mode="inline" xml:id="C20.S9.SS2.p2.m3">q</Math> ) are solutions of Jacobi’s inversion problem; see ( ) and ( , pp. 480–485) .
+</sentence>
+
+</para>
+
+  
+<para xml:id="C20.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C20.S9.SS2.p3.s1">
+As a function of <Math mode="inline" xml:id="C20.S9.SS2.p3.m1">\tau</Math> , <Math mode="inline" xml:id="C20.S9.SS2.p3.m2">k^{2}</Math> is the elliptic modular function; see ( , Chapter 7) and (LABEL:eq:WE.15.2), (LABEL:eq:WE.15.6).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S9.SS3">
+<title>Riemann Zeta Function</title>          
+<para xml:id="C20.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C20.S9.SS3.p1.s1">
+See ( , Ch. 2, §4) and ( , pp. 21–22) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="118" xml:id="C20.S9.SS3.p1.s2">
+See also §§LABEL:sec:TH.int.melandLABEL:sec:ZE.Def.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S10">
+<title>Integrals</title>        
+  
+<subsection xml:id="C20.S10.SS1">
+<title>Mellin Transforms with respect to the Lattice Parameter</title>          
+<para xml:id="C20.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="119" xml:id="C20.S10.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C20.S10.SS1.p1.m1">s</Math> be a constant such that <Math mode="inline" xml:id="C20.S10.SS1.p1.m2">\Re s&gt;2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="120" xml:id="C20.S10.SS1.p1.s2">
+Then <Math equation-number="20.10.1" mode="display" xml:id="C20.S10.E1">\int_{0}^{\infty}x^{s-1}\theta_{2}\left(0\middle|ix^{2}\right)\mathrm{d}x=2^{s }(1-2^{-s})\pi^{-s/2}\Gamma\left(\tfrac{1}{2}s\right)\zeta\left(s\right),</Math> <Math equation-number="20.10.2" mode="display" xml:id="C20.S10.E2">\int_{0}^{\infty}x^{s-1}(\theta_{3}\left(0\middle|ix^{2}\right)-1)\mathrm{d}x= \pi^{-s/2}\Gamma\left(\tfrac{1}{2}s\right)\zeta\left(s\right),</Math> <Math equation-number="20.10.3" mode="display" xml:id="C20.S10.E3">\int_{0}^{\infty}x^{s-1}(1-\theta_{4}\left(0\middle|ix^{2}\right))\mathrm{d}x= (1-2^{1-s})\pi^{-s/2}\Gamma\left(\tfrac{1}{2}s\right)\zeta\left(s\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="121" xml:id="C20.S10.SS1.p1.s3">
+Here <Math mode="inline" xml:id="C20.S10.SS1.p1.m3">\zeta\left(s\right)</Math> again denotes the Riemann zeta function (§LABEL:sec:ZE.Def).
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C20.S10.SS1.p2.s1">
+For further results see ( , pp. 157–159) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S10.SS2">
+<title>Laplace Transforms with respect to the Lattice Parameter</title>          
+<para xml:id="C20.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C20.S10.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C20.S10.SS2.p1.m1">s</Math> , <Math mode="inline" xml:id="C20.S10.SS2.p1.m2">\ell</Math> , and <Math mode="inline" xml:id="C20.S10.SS2.p1.m3">\beta</Math> be constants such that <Math mode="inline" xml:id="C20.S10.SS2.p1.m4">\Re s&gt;0</Math> , <Math mode="inline" xml:id="C20.S10.SS2.p1.m5">\ell&gt;0</Math> , and <Math mode="inline" xml:id="C20.S10.SS2.p1.m6">\sinh\left|\beta\right|\leq\ell</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C20.S10.SS2.p1.s2">
+Then <Math equation-number="20.10.4" mode="display" xml:id="C20.S10.E4">\int_{0}^{\infty}e^{-st}\theta_{1}\left(\frac{\beta\pi}{2\ell}\middle|\frac{i \pi t}{\ell^{2}}\right)\mathrm{d}t=\int_{0}^{\infty}e^{-st}\theta_{2}\left( \frac{(1+\beta)\pi}{2\ell}\middle|\frac{i\pi t}{\ell^{2}}\right)\mathrm{d}t=- \frac{\ell}{\sqrt{s}}\sinh\left(\beta\sqrt{s}\right)\operatorname{sech}\left( \ell\sqrt{s}\right),</Math> <Math equation-number="20.10.5" mode="display" xml:id="C20.S10.E5">\int_{0}^{\infty}e^{-st}\theta_{3}\left(\frac{(1+\beta)\pi}{2\ell}\middle| \frac{i\pi t}{\ell^{2}}\right)\mathrm{d}t=\int_{0}^{\infty}e^{-st}\theta_{4} \left(\frac{\beta\pi}{2\ell}\middle|\frac{i\pi t}{\ell^{2}}\right)\mathrm{d}t= \frac{\ell}{\sqrt{s}}\cosh\left(\beta\sqrt{s}\right)\operatorname{csch}\left( \ell\sqrt{s}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C20.S10.SS2.p2.s1">
+For corresponding results for argument derivatives of the theta functions see ( , pp. 224–225) or ( , p. 193) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S10.SS3">
+<title>Compendia</title>         
+<para xml:id="C20.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C20.S10.SS3.p1.s1">
+For further integrals of theta functions see ( , pp. 61–62 and 339) , ( , pp. 356–358) , ( , §3.41) , and ( , pp. 627–628) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S11">
+<title>Generalizations and Analogs</title>         
+ 
+<subsection xml:id="C20.S11.SS1">
+<title>Gauss Sum</title>         
+<para xml:id="C20.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C20.S11.SS1.p1.s1">
+For relatively prime integers <Math mode="inline" xml:id="C20.S11.SS1.p1.m1">m,n</Math> with <Math mode="inline" xml:id="C20.S11.SS1.p1.m2">n&gt;0</Math> and <Math mode="inline" xml:id="C20.S11.SS1.p1.m3">mn</Math> even, theGauss sum <Math mode="inline" xml:id="C20.S11.SS1.p1.m4">G(m,n)</Math> is defined by <Math equation-number="20.11.1" mode="display" xml:id="C20.S11.E1">G(m,n)=\sum\limits_{k=0}^{n-1}e^{-\pi ik^{2}m/n};</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="128" xml:id="C20.S11.SS1.p1.s2">
+It is a discrete analog of theta functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="129" xml:id="C20.S11.SS1.p1.s3">
+If both <Math mode="inline" xml:id="C20.S11.SS1.p1.m5">m,n</Math> are positive, then <Math mode="inline" xml:id="C20.S11.SS1.p1.m6">G(m,n)</Math> allows inversion of its arguments as amodular transformation (compare (LABEL:eq:WE.15.3) and (LABEL:eq:WE.15.4)):
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="130" xml:id="C20.S11.SS1.p1.s4">
+<Math equation-number="20.11.2" mode="display" xml:id="C20.S11.E2">\frac{1}{\sqrt{n}}G(m,n)=\frac{1}{\sqrt{n}}\sum\limits_{k=0}^{n-1}e^{-\pi ik^{ 2}m/n}=\frac{e^{-\pi i/4}}{\sqrt{m}}\sum\limits_{j=0}^{m-1}e^{\pi ij^{2}n/m}= \frac{e^{-\pi i/4}}{\sqrt{m}}G(-n,m)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="131" xml:id="C20.S11.SS1.p1.s5">
+This is the discrete analog of the Poisson identity (§LABEL:sec:AL.FS.fff).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S11.SS2">
+<title>Ramanujan’s Theta Function and <Math mode="inline" xml:id="C20.S11.SS2.m1">q</Math>-Series</title>          
+<para xml:id="C20.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C20.S11.SS2.p1.s1">
+Ramanujan’s theta function <Math mode="inline" xml:id="C20.S11.SS2.p1.m1">f(a,b)</Math> is defined by <Math equation-number="20.11.3" mode="display" xml:id="C20.S11.E3">f(a,b)=\sum_{n=-\infty}^{\infty}a^{n(n+1)/2}b^{n(n-1)/2},</Math> where <Math mode="inline" xml:id="C20.S11.SS2.p1.m2">a,b\in\mathbb{C}</Math> and <Math mode="inline" xml:id="C20.S11.SS2.p1.m3">\left|ab\right|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C20.S11.SS2.p1.s2">
+With the substitutions <Math mode="inline" xml:id="C20.S11.SS2.p1.m4">a=qe^{2iz}</Math> , <Math mode="inline" xml:id="C20.S11.SS2.p1.m5">b=qe^{-2iz}</Math> , with <Math mode="inline" xml:id="C20.S11.SS2.p1.m6">q=e^{i\pi\tau}</Math> , we have <Math equation-number="20.11.4" mode="display" xml:id="C20.S11.E4">f(a,b)=\theta_{3}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C20.S11.SS2.p2.s1">
+In the case <Math mode="inline" xml:id="C20.S11.SS2.p2.m1">z=0</Math> identities for theta functions become identities in the complex variable <Math mode="inline" xml:id="C20.S11.SS2.p2.m2">q</Math> , with <Math mode="inline" xml:id="C20.S11.SS2.p2.m3">\left|q\right|&lt;1</Math> , that involve rational functions, power series, and continued fractions; see ( ) , ( , pp. 156–158) , and ( , §10.7) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S11.SS3">
+<title>Ramanujan’s Change of Base</title>          
+<para xml:id="C20.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C20.S11.SS3.p1.s1">
+As in §LABEL:sec:TH.Ram, the modulus <Math mode="inline" xml:id="C20.S11.SS3.p1.m1">k</Math> of elliptic integrals (§LABEL:sec:EL.LD.LL), Jacobian elliptic functions (§LABEL:sec:JA.nd),and Weierstrass elliptic functions (§LABEL:sec:WE.5(ii))can be expanded in <Math mode="inline" xml:id="C20.S11.SS3.p1.m2">q</Math> -series via (LABEL:eq:TH.of.c).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="136" xml:id="C20.S11.SS3.p1.s2">
+However, in this case <Math mode="inline" xml:id="C20.S11.SS3.p1.m3">q</Math> is no longer regarded as an independent complex variable within the unit circle, because <Math mode="inline" xml:id="C20.S11.SS3.p1.m4">k</Math> is related to the variable <Math mode="inline" xml:id="C20.S11.SS3.p1.m5">\tau=\tau(k)</Math> of the theta functions via(LABEL:eq:TH.of.a).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="137" xml:id="C20.S11.SS3.p1.s3">
+This is Jacobi’s inversion problem of §LABEL:sec:TH.of.we.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C20.S11.SS3.p2.s1">
+The first of equations (LABEL:eq:TH.of.a) can also be written <Math equation-number="20.11.5" mode="display" xml:id="C20.S11.E5">{{}_{2}F_{1}}\left(\tfrac{1}{2},\tfrac{1}{2};1;k^{2}\right)={\theta_{3}^{2}} \left(0\middle|\tau\right);</Math> see §LABEL:sec:EL.LS. Similar identities can be constructed for <Math mode="inline" xml:id="C20.S11.SS3.p2.m1">{{}_{2}F_{1}}\left(\tfrac{1}{3},\tfrac{2}{3};1;k^{2}\right)</Math> , <Math mode="inline" xml:id="C20.S11.SS3.p2.m2">{{}_{2}F_{1}}\left(\tfrac{1}{4},\tfrac{3}{4};1;k^{2}\right)</Math> , and <Math mode="inline" xml:id="C20.S11.SS3.p2.m3">{{}_{2}F_{1}}\left(\tfrac{1}{6},\tfrac{5}{6};1;k^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C20.S11.SS3.p2.s2">
+These results are calledRamanujan’s changes of base.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C20.S11.SS3.p2.s3">
+Each provides an extension of Jacobi’s inversion problem.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="141" xml:id="C20.S11.SS3.p2.s4">
+See ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="142" xml:id="C20.S11.SS3.p2.s5">
+For applications to rapidly convergent expansions for <Math mode="inline" xml:id="C20.S11.SS3.p2.m4">\pi</Math> see ( ) , and for applications in the construction ofelliptic-hypergeometric series see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S11.SS4">
+<title>Theta Functions with Characteristics</title>         
+ 
+<para xml:id="C20.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C20.S11.SS4.p1.s1">
+Multidimensional theta functions with characteristics are defined in §LABEL:sec:MT.thetachardef and their properties are described in §§LABEL:sec:MT.3.sym2,LABEL:sec:MT.modular2,and LABEL:sec:MT.products.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C20.S11.SS4.p1.s2">
+For specialization to the one-dimensional theta functions treated in the present chapter, see ( ) and §LABEL:sec:MT.frobenius.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S11.SS5">
+<title>Permutation Symmetry</title>           
+<para xml:id="C20.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C20.S11.SS5.p1.s1">
+A further development on the lines of Neville’s notation (§LABEL:sec:TH.not) is as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C20.S11.SS5.p2.s1">
+For <Math mode="inline" xml:id="C20.S11.SS5.p2.m1">m=1,2,3,4</Math> , <Math mode="inline" xml:id="C20.S11.SS5.p2.m2">n=1,2,3,4</Math> , and <Math mode="inline" xml:id="C20.S11.SS5.p2.m3">m\neq n</Math> , define twelve combined theta functions <Math mode="inline" xml:id="C20.S11.SS5.p2.m4">\varphi_{m,n}\left(z,q\right)</Math> by <Math equation-number="20.11.6" mode="display" xml:id="C20.S11.E6">\varphi_{m,1}\left(z,q\right)=\frac{\theta_{1}'\left(0,q\right)\theta_{m}\left (z,q\right)}{\theta_{m}\left(0,q\right)\theta_{1}\left(z,q\right)}, subject to m=2,3,4,</Math> , <Math equation-number="20.11.7" mode="display" xml:id="C20.S11.E7">\varphi_{1,n}\left(z,q\right)=\frac{\theta_{n}\left(0,q\right)\theta_{1}\left( z,q\right)}{\theta_{1}'\left(0,q\right)\theta_{n}\left(z,q\right)}, subject to n=2,3,4,</Math> , <Math equation-number="20.11.8" mode="display" xml:id="C20.S11.E8">\varphi_{m,n}\left(z,q\right)=\frac{\theta_{n}\left(0,q\right)\theta_{m}\left( z,q\right)}{\theta_{m}\left(0,q\right)\theta_{n}\left(z,q\right)}, subject to m,n=2,3,4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="147" xml:id="C20.S11.SS5.p2.s2">
+Then <Math equation-number="20.11.9" mode="display" xml:id="C20.S11.E9">\varphi_{m,n}\left(z,q\right)=\varphi_{m,1}\left(z,q\right)\varphi_{1,n}\left( z,q\right)=\frac{1}{\varphi_{n,m}\left(z,q\right)}=\frac{\varphi_{m,1}\left(z, q\right)}{\varphi_{n,1}\left(z,q\right)}=\frac{\varphi_{1,n}\left(z,q\right)}{ \varphi_{1,m}\left(z,q\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="148" xml:id="C20.S11.SS5.p3.s1">
+The importance of these combined theta functions is that sets of twelve equations for the theta functions often can be replaced by corresponding sets of three equations of the combined theta functions, plus permutation symmetry.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="149" xml:id="C20.S11.SS5.p3.s2">
+Such sets of twelve equations include derivatives, differential equations, bisection relations, duplication relations, addition formulas (including new ones for theta functions), and pseudo-addition formulas.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C20.S11.SS5.p4.s1">
+For further information, see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C20.S12">
+<title>Mathematical Applications</title>          
+<subsection xml:id="C20.S12.SS1">
+<title>Number Theory</title>          
+<para xml:id="C20.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C20.S12.SS1.p1.s1">
+For applications of <Math mode="inline" xml:id="C20.S12.SS1.p1.m1">\theta_{3}\left(0,q\right)</Math> to problems involving sums ofsquares of integers see §LABEL:sec:NT.FNS.SQ, and for extensions see ( ) , ( , pp. 106–109) , ( , pp. 176–177) , and ( , pp. 142–143) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="152" xml:id="C20.S12.SS1.p2.s1">
+For applications of Jacobi’s triple product (LABEL:eq:TH.or.new) to Ramanujan’s <Math mode="inline" xml:id="C20.S12.SS1.p2.m1">\tau\left(n\right)</Math> function and Euler’s pentagonal numbers see ( , pp. 132–160) and ( , pp. 143–145) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="153" xml:id="C20.S12.SS1.p2.s2">
+For an application of a generalization in affine root systems see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S12.SS2">
+<title>Uniformization and Embedding of Complex Tori</title>          
+<para xml:id="C20.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C20.S12.SS2.p1.s1">
+For the terminology and notation see ( , pp. 48–53) .
+</sentence>
+
+</para>
+  
+<para xml:id="C20.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="155" xml:id="C20.S12.SS2.p2.s1">
+The space of complex tori <Math mode="inline" xml:id="C20.S12.SS2.p2.m1">\mathbb{C}/(\mathbb{Z}+\tau\mathbb{Z})</Math> (that is, the set of complex numbers <Math mode="inline" xml:id="C20.S12.SS2.p2.m2">z</Math> in which two of these numbers <Math mode="inline" xml:id="C20.S12.SS2.p2.m3">z_{1}</Math> and <Math mode="inline" xml:id="C20.S12.SS2.p2.m4">z_{2}</Math> are regarded as equivalent if there exist integers <Math mode="inline" xml:id="C20.S12.SS2.p2.m5">m,n</Math> such that <Math mode="inline" xml:id="C20.S12.SS2.p2.m6">z_{1}-z_{2}=m+\tau n</Math> ) is mapped into the projective space <Math mode="inline" xml:id="C20.S12.SS2.p2.m7">P^{3}</Math> via the identification <Math mode="inline" xml:id="C20.S12.SS2.p2.m8">z\to(\theta_{1}\left(2z\middle|\tau\right),\theta_{2}\left(2z\middle|\tau \right),\theta_{3}\left(2z\middle|\tau\right),\theta_{4}\left(2z\middle|\tau \right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="156" xml:id="C20.S12.SS2.p2.s2">
+Thus theta functions “uniformize” the complex torus.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="157" xml:id="C20.S12.SS2.p2.s3">
+This ability to uniformize multiply-connected spaces (manifolds), or multi-sheeted functions of a complex variable ( ( ) , ( ) , ( ) ) has led to applications in string theory ( ( ) , ( ) ), and also in statistical mechanics ( ( ) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C20.S13">
+<title>Physical Applications</title>        
+  
+<para xml:id="C20.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C20.S13.p1.s1">
+The functions <Math mode="inline" xml:id="C20.S13.p1.m1">\theta_{j}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S13.p1.m2">j=1,2,3,4</Math> , provide periodicsolutions of the partial differential equation <Math equation-number="20.13.1" mode="display" xml:id="C20.S13.E1">\ifrac{\partial\theta(z|\tau)}{\partial\tau}=\kappa\ifrac{{\partial}^{2}\theta (z|\tau)}{{\partial z}^{2}},</Math> with <Math mode="inline" xml:id="C20.S13.p1.m3">\kappa=-i\pi/4</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C20.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="159" xml:id="C20.S13.p2.s1">
+For <Math mode="inline" xml:id="C20.S13.p2.m1">\tau=it</Math> , with <Math mode="inline" xml:id="C20.S13.p2.m2">\alpha,t,z</Math> real, (LABEL:eq:TH.de.a) takes the form of a real-time <Math mode="inline" xml:id="C20.S13.p2.m3">t</Math> diffusion equation <Math equation-number="20.13.2" mode="display" xml:id="C20.S13.E2">\ifrac{\partial\theta}{\partial t}=\alpha\ifrac{{\partial}^{2}\theta}{{ \partial z}^{2}},</Math> with diffusion constant <Math mode="inline" xml:id="C20.S13.p2.m4">\alpha=\pi/4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="160" xml:id="C20.S13.p2.s2">
+Let <Math mode="inline" xml:id="C20.S13.p2.m5">z,\alpha,t\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="161" xml:id="C20.S13.p2.s3">
+Then the nonperiodic Gaussian <Math equation-number="20.13.3" mode="display" xml:id="C20.S13.E3">g(z,t)=\sqrt{\frac{\pi}{4\alpha t}}\exp\left(-\frac{z^{2}}{4\alpha t}\right)</Math> is also a solution of (LABEL:eq:TH.de.aa), and it approaches a Dirac delta (§LABEL:sec:AL.RDF) at <Math mode="inline" xml:id="C20.S13.p2.m6">t=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="162" xml:id="C20.S13.p2.s4">
+These two apparently different solutions differ only in their normalization and boundary conditions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="163" xml:id="C20.S13.p2.s5">
+From (LABEL:eq:TH.def.c),(LABEL:eq:TH.def.d),(LABEL:eq:TH.id.ee), and (LABEL:eq:TH.id.ff),
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="164" xml:id="C20.S13.p2.s6">
+<Math equation-number="20.13.4" mode="display" xml:id="C20.S13.E4">\sqrt{\frac{\pi}{4\alpha t}}\sum\limits_{n=-\infty}^{\infty}e^{-(n\pi+z)^{2}/( 4\alpha t)}=\theta_{3}\left(z\middle|i4\alpha t/\pi\right),</Math> and <Math equation-number="20.13.5" mode="display" xml:id="C20.S13.E5">\sqrt{\frac{\pi}{4\alpha t}}\sum\limits_{n=-\infty}^{\infty}(-1)^{n}e^{-(n\pi+ z)^{2}/(4\alpha t)}=\theta_{4}\left(z\middle|i4\alpha t/\pi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="165" xml:id="C20.S13.p2.s7">
+Thus the classical theta functions are “periodized”, or “anti-periodized”, Gaussians; see ( , pp. 18, 19) .
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="166" xml:id="C20.S13.p2.s8">
+Theta-function solutions to the heat diffusion equation with simple boundary conditions are discussed in ( , pp. 1–3) , and with more general boundary conditions in ( , pp. 274–281) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S13.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C20.S13.p3.s1">
+In the singular limit <Math mode="inline" xml:id="C20.S13.p3.m1">\Im\tau\rightarrow 0+</Math> , the functions <Math mode="inline" xml:id="C20.S13.p3.m2">\theta_{j}\left(z\middle|\tau\right)</Math> , <Math mode="inline" xml:id="C20.S13.p3.m4">j=1,2,3,4</Math> , become integral kernels of Feynman path integrals (distribution-valued Green’s functions); see ( , pp. 194–195) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="168" xml:id="C20.S13.p3.s2">
+This allows analytic time propagation of quantum wave-packets in a box, or on a ring, as closed-form solutions of the time-dependent Schrödinger equation.
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C20.S14">
+<title>Methods of Computation</title>         
+ 
+<para xml:id="C20.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C20.S14.p1.s1">
+The Fourier series of §LABEL:sec:TH.def.feusually converge rapidly because of the factors <Math mode="inline" xml:id="C20.S14.p1.m1">q^{(n+\frac{1}{2})^{2}}</Math> or <Math mode="inline" xml:id="C20.S14.p1.m2">q^{n^{2}}</Math> , and provide a convenient way of calculating values of <Math mode="inline" xml:id="C20.S14.p1.m3">\theta_{j}\left(z\middle|\tau\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="170" xml:id="C20.S14.p1.s2">
+Similarly, their <Math mode="inline" xml:id="C20.S14.p1.m4">z</Math> -differentiated forms provide a convenient way of calculating the corresponding derivatives.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="171" xml:id="C20.S14.p1.s3">
+For instance, the first three terms of (LABEL:eq:TH.def.a)give the value of <Math mode="inline" xml:id="C20.S14.p1.m5">\theta_{1}\left(2-i\middle|i\right)</Math> ( <Math mode="inline" xml:id="C20.S14.p1.m6">=\theta_{1}\left(2-i,e^{-\pi}\right)</Math> ) to 12 decimal places.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="172" xml:id="C20.S14.p2.s1">
+For values of <Math mode="inline" xml:id="C20.S14.p2.m1">\left|q\right|</Math> near <Math mode="inline" xml:id="C20.S14.p2.m2">1</Math> the transformations of §LABEL:sec:TH.id.mt can be used to replace <Math mode="inline" xml:id="C20.S14.p2.m3">\tau</Math> with a value that has a larger imaginary part and hence a smaller value of <Math mode="inline" xml:id="C20.S14.p2.m4">\left|q\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="173" xml:id="C20.S14.p2.s2">
+For instance, to find <Math mode="inline" xml:id="C20.S14.p2.m5">\theta_{3}\left(z,0.9\right</Math> ) we use (LABEL:eq:TH.id.ee) with <Math mode="inline" xml:id="C20.S14.p2.m6">q=0.9=e^{i\pi\tau</Math> }, <Math mode="inline" xml:id="C20.S14.p2.m7">\tau=-i\ln\left(0.9\right)/\p</Math> i. Then <Math mode="inline" xml:id="C20.S14.p2.m8">\tau^{\prime}=-1/\tau=-i\pi/\ln\left(0.9\right</Math> ) and <Math mode="inline" xml:id="C20.S14.p2.m9">q^{\prime}=e^{i\pi\tau^{\prime}}=\exp\left(\pi^{2}/\ln\left(0.9\right)\right)= (2.07\dots)\times 10^{-41}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="174" xml:id="C20.S14.p2.s3">
+Hence the first term of the series (LABEL:eq:TH.def.c) for <Math mode="inline" xml:id="C20.S14.p2.m10">\theta_{3}\left(z\tau^{\prime}\middle|\tau^{\prime}\right)</Math> suffices for most purposes.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="175" xml:id="C20.S14.p2.s4">
+In theory, starting from any value of <Math mode="inline" xml:id="C20.S14.p2.m11">\tau</Math> , a finite number of applications of the transformations <Math mode="inline" xml:id="C20.S14.p2.m12">\tau\to\tau+1</Math> and <Math mode="inline" xml:id="C20.S14.p2.m13">\tau\to-1/\tau</Math> will result in a value of <Math mode="inline" xml:id="C20.S14.p2.m14">\tau</Math> with <Math mode="inline" xml:id="C20.S14.p2.m15">\Im\tau\geq\sqrt{3}/2</Math> ; see §LABEL:sec:WE.18.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="176" xml:id="C20.S14.p2.s5">
+In practice a value with, say, <Math mode="inline" xml:id="C20.S14.p2.m16">\Im\tau\geq 1/2</Math> , <Math mode="inline" xml:id="C20.S14.p2.m17">\left|q\right|\leq 0.2</Math> , is found quickly and is satisfactory for numerical evaluation.
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C20.S15">
+<title>Tables</title>         
+ 
+<para xml:id="C20.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C20.S15.p1.s1">
+Theta functions are tabulated in ( , p. 45) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="178" xml:id="C20.S15.p1.s2">
+This reference gives <Math mode="inline" xml:id="C20.S15.p1.m1">\theta_{j}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p1.m2">j=1,2,3,4</Math> , and their logarithmic <Math mode="inline" xml:id="C20.S15.p1.m3">x</Math> -derivatives to 4D for <Math mode="inline" xml:id="C20.S15.p1.m4">x/\pi=0(.1)</Math> 1, <Math mode="inline" xml:id="C20.S15.p1.m5">\alpha=0(9^{\circ})90^{\circ}</Math> , where <Math mode="inline" xml:id="C20.S15.p1.m6">\alpha</Math> is the modular angle given by <Math equation-number="20.15.1" mode="display" xml:id="C20.S15.E1">\sin\alpha={\theta_{2}^{2}}\left(0,q\right)/{\theta_{3}^{2}}\left(0,q\right)=k</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C20.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C20.S15.p2.s1">
+( ) tabulates <Math mode="inline" xml:id="C20.S15.p2.m1">\theta_{1}\left(x,q\right)/\theta_{2}\left(0,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p2.m2">\theta_{2}\left(x,q\right)/\theta_{2}\left(0,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p2.m3">\theta_{3}\left(x,q\right)/\theta_{4}\left(0,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p2.m4">\theta_{4}\left(x,q\right)/\theta_{4}\left(0,q\right)</Math> to 12D for <Math mode="inline" xml:id="C20.S15.p2.m5">u=0(1^{\circ})90^{\circ}</Math> , <Math mode="inline" xml:id="C20.S15.p2.m6">\alpha=0(1^{\circ})89^{\circ}</Math> , where <Math mode="inline" xml:id="C20.S15.p2.m7">u=2x/(\pi{\theta_{3}^{2}}\left(0,q\right))</Math> and <Math mode="inline" xml:id="C20.S15.p2.m8">\alpha</Math> is defined by (LABEL:eq:TH.ta.a), together with the corresponding values of <Math mode="inline" xml:id="C20.S15.p2.m9">\theta_{2}\left(0,q\right)</Math> and <Math mode="inline" xml:id="C20.S15.p2.m10">\theta_{4}\left(0,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S15.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="180" xml:id="C20.S15.p3.s1">
+( , pp. 270–279) tabulates <Math mode="inline" xml:id="C20.S15.p3.m1">\theta_{j}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p3.m2">j=1,2,3,4</Math> , to 5D for <Math mode="inline" xml:id="C20.S15.p3.m3">x=0(1^{\circ})90^{\circ}</Math> , <Math mode="inline" xml:id="C20.S15.p3.m4">q=0.1(.1)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="181" xml:id="C20.S15.p3.s2">
+9, and also <Math mode="inline" xml:id="C20.S15.p3.m5">q</Math> to 5D for <Math mode="inline" xml:id="C20.S15.p3.m6">k^{2}=0(.01)</Math> 1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S15.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C20.S15.p4.s1">
+Tables of Neville’s theta functions <Math mode="inline" xml:id="C20.S15.p4.m1">\theta_{s}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p4.m2">\theta_{c}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p4.m3">\theta_{d}\left(x,q\right)</Math> , <Math mode="inline" xml:id="C20.S15.p4.m4">\theta_{n}\left(x,q\right)</Math> (see §LABEL:sec:TH.not) and their logarithmic <Math mode="inline" xml:id="C20.S15.p4.m5">x</Math> -derivatives are given in ( , pp. 582–585) to 9D for <Math mode="inline" xml:id="C20.S15.p4.m6">\varepsilon,\alpha=0(5^{\circ})90^{\circ}</Math> , where (in radian measure) <Math mode="inline" xml:id="C20.S15.p4.m7">\varepsilon=x/{\theta_{3}^{2}}\left(0,q\right)=\pi x/(2\!K\left(k\right))</Math> , and <Math mode="inline" xml:id="C20.S15.p4.m8">\alpha</Math> is defined by (LABEL:eq:TH.ta.a).
+</sentence>
+
+</para>
+ 
+<para xml:id="C20.S15.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C20.S15.p5.s1">
+For other tables prior to 1961 see ( , pp. 508–514) and ( , pp. 227–230) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C20.S16">
+<title>Software</title>         
+<para xml:id="C20.S16.p1">
+
+</para>
+ 
+<subsection xml:id="C20.S16.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C20.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="184" xml:id="C20.S16.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="185" xml:id="C20.S16.SS1.p1.s2">
+However, no research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="186" xml:id="C20.S16.SS1.p1.s3">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S16.SS2">
+<title>Real Argument and Parameter</title>        
+ 
+<para xml:id="C20.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C20.S16.SS2.p1.s1">
+See the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C20.S16.SS3">
+<title>Complex Argument and/or Parameter</title>        
+ 
+<para xml:id="C20.S16.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="188" xml:id="C20.S16.SS3.p1.s1">
+See the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C16">
+<title>Generalized Hypergeometric Functions and Meijer <Math mode="inline" xml:id="C16.m1">G</Math>-Function</title>                
+         
+ 
+<section xml:id="C16.S1">
+<title>Special Notation</title>        
+ 
+<para xml:id="C16.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C16.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r1.m1">p,q</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C16.S1.p2.t1.s2">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C16.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r2.m1">k,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C16.S1.p2.t1.s4">
+nonnegative integers, unless
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C16.S1.p2.t1.s5">
+stated otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C16.S1.p2.t1.s6">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r4.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C16.S1.p2.t1.s7">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C16.S1.p2.t1.s8">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r5.m1">\rselection{a_{1},a_{2},\dots,a_{p}\\ b_{1},b_{2},\dots,b_{q}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C16.S1.p2.t1.s9">
+real or complex parameters.    
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C16.S1.p2.t1.s10">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r6.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C16.S1.p2.t1.s11">
+arbitrary small positive constant.  
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C16.S1.p2.t1.s12">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r7.m1">\mathbf{a}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C16.S1.p2.t1.s13">
+vector <Math mode="inline" xml:id="C16.S1.p2.t1.r7.m2">(a_{1},a_{2},\dots,a_{p})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C16.S1.p2.t1.s14">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r8.m1">\mathbf{b}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="16" sentence-num-in-table="15" xml:id="C16.S1.p2.t1.s15">
+vector <Math mode="inline" xml:id="C16.S1.p2.t1.r8.m2">(b_{1},b_{2},\dots,b_{q})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="16" sentence-num-in-section="17" sentence-num-in-table="16" xml:id="C16.S1.p2.t1.s16">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r9.m1">{\left(\mathbf{a}\right)_{k}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="17" sentence-num-in-section="18" sentence-num-in-table="17" xml:id="C16.S1.p2.t1.s17">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r9.m2">{\left(a_{1}\right)_{k}}{\left(a_{2}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="18" sentence-num-in-section="19" sentence-num-in-table="18" xml:id="C16.S1.p2.t1.s18">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r10.m1">{\left(\mathbf{b}\right)_{k}}</Math>
+</sentence>
+
+<sentence sentence-num-in-para="19" sentence-num-in-section="20" sentence-num-in-table="19" xml:id="C16.S1.p2.t1.s19">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r10.m2">{\left(b_{1}\right)_{k}}{\left(b_{2}\right)_{k}}\cdots{\left(b_{q}\right)_{k}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="20" sentence-num-in-section="21" sentence-num-in-table="20" xml:id="C16.S1.p2.t1.s20">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r11.m1">D</Math>
+</sentence>
+
+<sentence sentence-num-in-para="21" sentence-num-in-section="22" sentence-num-in-table="21" xml:id="C16.S1.p2.t1.s21">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r11.m2">\ifrac{\mathrm{d}}{\mathrm{d}z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="22" sentence-num-in-section="23" sentence-num-in-table="22" xml:id="C16.S1.p2.t1.s22">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r12.m1">\vartheta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="23" sentence-num-in-section="24" sentence-num-in-table="23" xml:id="C16.S1.p2.t1.s23">
+<Math mode="inline" xml:id="C16.S1.p2.t1.r12.m2">z\ifrac{\mathrm{d}}{\mathrm{d}z}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C16.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C16.S1.p3.s1">
+The main functions treated in this chapter are the generalized hypergeometric function <Math mode="inline" xml:id="C16.S1.p3.m1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)</Math> , the Appell (two-variable hypergeometric) functions <Math mode="inline" xml:id="C16.S1.p3.m2">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m3">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m4">{F_{3}}\left(\alpha,\alpha^{\prime};\beta,\beta^{\prime};\gamma;x,y\right)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m5">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x,y\right)</Math> , and the Meijer <Math mode="inline" xml:id="C16.S1.p3.m6">G</Math> -function <Math mode="inline" xml:id="C16.S1.p3.m7">{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C16.S1.p3.s2">
+Alternative notations are <Math mode="inline" xml:id="C16.S1.p3.m8">{{}_{p}F_{q}}\left({\mathbf{a}\atop\mathbf{b}};z\right)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m9">{{}_{p}F_{q}}\left(a_{1},\dots,a_{p};b_{1},\dots,b_{q};z\right)</Math> , and <Math mode="inline" xml:id="C16.S1.p3.m10">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> for the generalized hypergeometric function, <Math mode="inline" xml:id="C16.S1.p3.m11">F_{1}(\alpha,\beta,\beta^{\prime};\gamma;x,y)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m12">F_{2}(\alpha,\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m13">F_{3}(\alpha,\alpha^{\prime},\beta,\beta^{\prime};\gamma;x,y)</Math> , <Math mode="inline" xml:id="C16.S1.p3.m14">F_{4}(\alpha,\beta;\gamma,\gamma^{\prime};x,y)</Math> , for the Appell functions, and <Math mode="inline" xml:id="C16.S1.p3.m15">{G^{m,n}_{p,q}}\left(z;\mathbf{a};\mathbf{b}\right)</Math> for the Meijer <Math mode="inline" xml:id="C16.S1.p3.m16">G</Math> -function.
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C16.S2">
+<title>Definition and Analytic Properties</title>        
+    
+<subsection xml:id="C16.S2.SS1">
+<title>Generalized Hypergeometric Series</title>             
+ 
+<para xml:id="C16.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C16.S2.SS1.p1.s1">
+Throughout this chapter it is assumed that none of the bottom parameters <Math mode="inline" xml:id="C16.S2.SS1.p1.m1">b_{1}</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m2">b_{2}</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m3">\dots</Math> , <Math mode="inline" xml:id="C16.S2.SS1.p1.m4">b_{q}</Math> is a nonpositive integer, unless stated otherwise.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="28" xml:id="C16.S2.SS1.p1.s2">
+Then formally <Math equation-number="16.2.1" mode="display" xml:id="C16.S2.E1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\sum_{k =0}^{\infty}\frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{{ \left(b_{1}\right)_{k}}\cdots{\left(b_{q}\right)_{k}}}\frac{z^{k}}{k!}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="29" xml:id="C16.S2.SS1.p1.s3">
+Equivalently, the function is denoted by <Math mode="inline" xml:id="C16.S2.SS1.p1.m5">{{}_{p}F_{q}}\left({\mathbf{a}\atop\mathbf{b}};z\right)</Math> or <Math mode="inline" xml:id="C16.S2.SS1.p1.m6">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> , and sometimes, for brevity, by <Math mode="inline" xml:id="C16.S2.SS1.p1.m7">{{}_{p}F_{q}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS2">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS2.m1">p\leq q</Math></title>          
+<para xml:id="C16.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C16.S2.SS2.p1.s1">
+When <Math mode="inline" xml:id="C16.S2.SS2.p1.m1">p\leq q</Math> the series (LABEL:eq:GH.DF.PFQ) converges for all finite values of <Math mode="inline" xml:id="C16.S2.SS2.p1.m2">z</Math> and defines an entire function.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS3">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS3.m1">p=q+1</Math></title>          
+<para xml:id="C16.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C16.S2.SS3.p1.s1">
+Suppose first one or more of the top parameters <Math mode="inline" xml:id="C16.S2.SS3.p1.m1">a_{j}</Math> is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C16.S2.SS3.p1.s2">
+Then the series (LABEL:eq:GH.DF.PFQ) terminates and the generalized hypergeometric function is a polynomial in <Math mode="inline" xml:id="C16.S2.SS3.p1.m2">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C16.S2.SS3.p2.s1">
+If none of the <Math mode="inline" xml:id="C16.S2.SS3.p2.m1">a_{j}</Math> is a nonpositive integer, then the radius of convergence of the series (LABEL:eq:GH.DF.PFQ) is <Math mode="inline" xml:id="C16.S2.SS3.p2.m2">1</Math> , and outside the open disk <Math mode="inline" xml:id="C16.S2.SS3.p2.m3">|z|&lt;1</Math> the generalized hypergeometric function is defined by analytic continuation with respect to <Math mode="inline" xml:id="C16.S2.SS3.p2.m4">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C16.S2.SS3.p2.s2">
+The branch obtained by introducing a cut from <Math mode="inline" xml:id="C16.S2.SS3.p2.m5">1</Math> to <Math mode="inline" xml:id="C16.S2.SS3.p2.m6">+\infty</Math> on the real axis, that is, the branch in the sector <Math mode="inline" xml:id="C16.S2.SS3.p2.m7">|\operatorname{ph}\left(1-z\right)|\leq\pi</Math> , is the principal branch (or principal value) of <Math mode="inline" xml:id="C16.S2.SS3.p2.m8">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> ; compare §LABEL:sec:EF.FN.LOG.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="35" xml:id="C16.S2.SS3.p2.s3">
+Elsewhere the generalized hypergeometric function is a multivalued function that is analytic except for possible branch points at <Math mode="inline" xml:id="C16.S2.SS3.p2.m9">z=0,1</Math> , and <Math mode="inline" xml:id="C16.S2.SS3.p2.m10">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="36" xml:id="C16.S2.SS3.p2.s4">
+Unless indicated otherwise it is assumed that in the DLMF generalized hypergeometric functions assume their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C16.S2.SS3.p3.s1">
+On the circle <Math mode="inline" xml:id="C16.S2.SS3.p3.m1">|z|=1</Math> the series (LABEL:eq:GH.DF.PFQ) is absolutely convergent if <Math mode="inline" xml:id="C16.S2.SS3.p3.m2">\Re\gamma_{q}&gt;0</Math> , convergent except at <Math mode="inline" xml:id="C16.S2.SS3.p3.m3">z=1</Math> if <Math mode="inline" xml:id="C16.S2.SS3.p3.m4">-1&lt;\Re\gamma_{q}\leq 0</Math> , and divergent if <Math mode="inline" xml:id="C16.S2.SS3.p3.m5">\Re\gamma_{q}\leq-1</Math> , where <Math equation-number="16.2.2" mode="display" xml:id="C16.S2.E2">\gamma_{q}=(b_{1}+\dots+b_{q})-(a_{1}+\dots+a_{q+1})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS4">
+<title>Case <Math mode="inline" xml:id="C16.S2.SS4.m1">p&gt;q+1</Math></title>          
+<paragraph xml:id="C16.S2.Px1">
+<title>Polynomials</title>    
+<para xml:id="C16.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C16.S2.Px1.p1.s1">
+In general the series (LABEL:eq:GH.DF.PFQ) diverges for all nonzero values of <Math mode="inline" xml:id="C16.S2.Px1.p1.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C16.S2.Px1.p1.s2">
+However, when one or more of the top parameters <Math mode="inline" xml:id="C16.S2.Px1.p1.m2">a_{j}</Math> is a nonpositive integer the series terminates and the generalized hypergeometric function is a polynomial in <Math mode="inline" xml:id="C16.S2.Px1.p1.m3">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="40" xml:id="C16.S2.Px1.p1.s3">
+Note that if <Math mode="inline" xml:id="C16.S2.Px1.p1.m4">-m</Math> is the value of the numerically largest <Math mode="inline" xml:id="C16.S2.Px1.p1.m5">a_{j}</Math> that is a nonpositive integer, then the identity <Math equation-number="16.2.3" mode="display" xml:id="C16.S2.E3">{{}_{p+1}F_{q}}\left({-m,\mathbf{a}\atop\mathbf{b}};z\right)=\frac{{\left( \mathbf{a}\right)_{m}}(-z)^{m}}{{\left(\mathbf{b}\right)_{m}}}{{}_{q+1}F_{p}} \left({-m,1-m-\mathbf{b}\atop 1-m-\mathbf{a}};\frac{(-1)^{p+q}}{z}\right)</Math> can be used to interchange <Math mode="inline" xml:id="C16.S2.Px1.p1.m6">p</Math> and <Math mode="inline" xml:id="C16.S2.Px1.p1.m7">q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C16.S2.Px1.p2.s1">
+Note also that any partial sum of the generalized hypergeometric series can be represented as a generalized hypergeometric function via <Math equation-number="16.2.4" mode="display" xml:id="C16.S2.E4">\sum_{k=0}^{m}\frac{{\left(\mathbf{a}\right)_{k}}}{{\left(\mathbf{b}\right)_{k }}}\frac{z^{k}}{k!}=\frac{{\left(\mathbf{a}\right)_{m}}z^{m}}{{\left(\mathbf{b }\right)_{m}}m!}{{}_{q+2}F_{p}}\left({-m,1,1-m-\mathbf{b}\atop 1-m-\mathbf{a}} ;\frac{(-1)^{p+q+1}}{z}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S2.Px2">
+<title>Non-Polynomials</title>   
+<para xml:id="C16.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C16.S2.Px2.p1.s1">
+See §LABEL:sec:GH.IR for the definition of <Math mode="inline" xml:id="C16.S2.Px2.p1.m1">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> as a contour integral when <Math mode="inline" xml:id="C16.S2.Px2.p1.m2">p&gt;q+1</Math> and none of the <Math mode="inline" xml:id="C16.S2.Px2.p1.m3">a_{k}</Math> is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C16.S2.Px2.p1.s2">
+(However, except where indicated otherwise in the DLMF we assume that when <Math mode="inline" xml:id="C16.S2.Px2.p1.m4">p&gt;q+1</Math> at least one of the <Math mode="inline" xml:id="C16.S2.Px2.p1.m5">a_{k}</Math> is a nonpositive integer.)
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S2.SS5">
+<title>Behavior with Respect to Parameters</title>           
+<para xml:id="C16.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C16.S2.SS5.p1.s1">
+Let <Math equation-number="16.2.5" mode="display" xml:id="C16.S2.E5">{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)=\ifrac{{{}_{p}F_{ q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)}{\left(\Gamma \left(b_{1}\right)\cdots\Gamma\left(b_{q}\right)\right)}=\sum_{k=0}^{\infty} \frac{{\left(a_{1}\right)_{k}}\cdots{\left(a_{p}\right)_{k}}}{\Gamma\left(b_{1 }+k\right)\cdots\Gamma\left(b_{q}+k\right)}\frac{z^{k}}{k!}</Math> ; compare (LABEL:eq:HY.GA.new) in the case <Math mode="inline" xml:id="C16.S2.SS5.p1.m1">p=2</Math> , <Math mode="inline" xml:id="C16.S2.SS5.p1.m2">q=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C16.S2.SS5.p1.s2">
+When <Math mode="inline" xml:id="C16.S2.SS5.p1.m3">p\leq q+1</Math> and <Math mode="inline" xml:id="C16.S2.SS5.p1.m4">z</Math> is fixed and not a branch point, any branch of <Math mode="inline" xml:id="C16.S2.SS5.p1.m5">{{}_{p}{\mathbf{F}}_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> is an entire function of each of the parameters <Math mode="inline" xml:id="C16.S2.SS5.p1.m6">a_{1},\dots,a_{p},b_{1},\dots,b_{q}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S3">
+<title>Derivatives and Contiguous Functions</title>         
+<subsection xml:id="C16.S3.SS1">
+<title>Differentiation Formulas</title>        
+ 
+ 
+<para xml:id="C16.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C16.S3.SS1.p1.s1">
+ <Math equation-number="16.3.1" mode="display" xml:id="C16.S3.E1">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}{{}_{p}F_{q}}\left({a_{1},\dots,a_{p }\atop b_{1},\dots,b_{q}};z\right)=\frac{{\left(\mathbf{a}\right)_{n}}}{{\left (\mathbf{b}\right)_{n}}}{{}_{p}F_{q}}\left({a_{1}+n,\dots,a_{p}+n\atop b_{1}+n ,\dots,b_{q}+n};z\right),</Math> <Math equation-number="16.3.2" mode="display" xml:id="C16.S3.E2">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{\gamma}{{}_{p}F_{q}}\left({ a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)\right)={\left(\gamma-n+1 \right)_{n}}z^{\gamma-n}{{}_{p+1}F_{q+1}}\left({\gamma+1,a_{1},\dots,a_{p} \atop\gamma+1-n,b_{1},\dots,b_{q}};z\right),</Math> <Math equation-number="16.3.3" mode="display" xml:id="C16.S3.E3">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{\gamma-1}{{}_{p+1}F_ {q}}\left({\gamma,a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)\right)={ \left(\gamma\right)_{n}}z^{\gamma+n-1}{{}_{p+1}F_{q}}\left({\gamma+n,a_{1}, \dots,a_{p}\atop b_{1},\dots,b_{q}};z\right),</Math> <Math equation-number="16.3.4" mode="display" xml:id="C16.S3.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{\gamma-1}{{}_{p}F_{q+1}} \left({a_{1},\dots,a_{p}\atop\gamma,b_{1},\dots,b_{q}};z\right)\right)={\left( \gamma-n\right)_{n}}z^{\gamma-n-1}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop \gamma-n,b_{1},\dots,b_{q}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C16.S3.SS1.p1.s2">
+Other versions of these identities can be constructed with the aid of the operator identity <Math equation-number="16.3.5" mode="display" xml:id="C16.S3.E5">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}=z^{n}\frac{{\mathrm{d}}^{n}} {{\mathrm{d}z}^{n}}z^{n}, subject to n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S3.SS2">
+<title>Contiguous Functions</title>          
+<para xml:id="C16.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C16.S3.SS2.p1.s1">
+Two generalized hypergeometric functions <Math mode="inline" xml:id="C16.S3.SS2.p1.m1">{{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> are (generalized) contiguous if they have the same pair of values of <Math mode="inline" xml:id="C16.S3.SS2.p1.m2">p</Math> and <Math mode="inline" xml:id="C16.S3.SS2.p1.m3">q</Math> , and corresponding parameters differ by integers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="49" xml:id="C16.S3.SS2.p1.s2">
+If <Math mode="inline" xml:id="C16.S3.SS2.p1.m4">p\leq q+1</Math> , then any <Math mode="inline" xml:id="C16.S3.SS2.p1.m5">q+2</Math> distinct contiguous functions are linearly related. Examples are provided by the following recurrence relations: <Math equation-number="16.3.6" mode="display" xml:id="C16.S3.E6">z{{}_{0}F_{1}}\left(-;b+1;z\right)+b(b-1){{}_{0}F_{1}}\left(-;b;z\right)-b(b-1 ){{}_{0}F_{1}}\left(-;b-1;z\right)=0,</Math> <Math equation-number="16.3.7" mode="display" xml:id="C16.S3.E7">{{}_{3}F_{2}}\left({a_{1}+2,a_{2},a_{3}\atop b_{1},b_{2}};z\right)a_{1}(a_{1}+ 1)(1-z)+{{}_{3}F_{2}}\left({a_{1}+1,a_{2},a_{3}\atop b_{1},b_{2}};z\right)a_{1 }\left(b_{1}+b_{2}-3a_{1}-2+z(2a_{1}-a_{2}-a_{3}+1)\right)+{{}_{3}F_{2}}\left( {a_{1},a_{2},a_{3}\atop b_{1},b_{2}};z\right)\left((2a_{1}-b_{1})(2a_{1}-b_{2} )+a_{1}-a_{1}^{2}-z(a_{1}-a_{2})(a_{1}-a_{3})\right)-{{}_{3}F_{2}}\left({a_{1} -1,a_{2},a_{3}\atop b_{1},b_{2}};z\right)(a_{1}-b_{1})(a_{1}-b_{2})=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S3.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C16.S3.SS2.p2.s1">
+For further examples see §§LABEL:sec:CH.MU.RC.RC, LABEL:sec:HY.DC.CR, and the following references: ( , §48) , ( ) , and ( , §5.13) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S4">
+<title>Argument Unity</title>         
+ 
+<subsection xml:id="C16.S4.SS1">
+<title>Classification</title>         
+<para xml:id="C16.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C16.S4.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C16.S4.SS1.p1.m1">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> iswell-poised if <Math equation-number="16.4.1" mode="display" xml:id="C16.S4.E1">a_{1}+b_{1}=\dots=a_{q}+b_{q}=a_{q+1}+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="52" xml:id="C16.S4.SS1.p1.s2">
+It is very well-poised if it is well-poised and <Math mode="inline" xml:id="C16.S4.SS1.p1.m2">a_{1}=b_{1}+1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C16.S4.SS1.p2.s1">
+The special case <Math mode="inline" xml:id="C16.S4.SS1.p2.m1">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};1\right)</Math> is <Math mode="inline" xml:id="C16.S4.SS1.p2.m2">k</Math> -balanced if <Math mode="inline" xml:id="C16.S4.SS1.p2.m3">a_{q+1}</Math> is a nonpositive integer and <Math equation-number="16.4.2" mode="display" xml:id="C16.S4.E2">a_{1}+\dots+a_{q+1}+k=b_{1}+\dots+b_{q}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C16.S4.SS1.p2.s2">
+When <Math mode="inline" xml:id="C16.S4.SS1.p2.m5">k=1</Math> the function is said to be balanced orSaalschützian.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS2">
+<title>Examples</title>        
+ 
+<para xml:id="C16.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C16.S4.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C16.S4.SS2.p1.m1">{{}_{q+1}F_{q}}</Math> with argument unity and general values of the parameters is discussed in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C16.S4.SS2.p1.s2">
+Special cases are as follows:
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C16.S4.Px1">
+<title>Pfaff–Saalschütz Balanced Sum</title>    
+<para xml:id="C16.S4.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C16.S4.Px1.p1.s1">
+ <Math equation-number="16.4.3" mode="display" xml:id="C16.S4.E3">{{}_{3}F_{2}}\left({-n,a,b\atop c,d};1\right)=\frac{{\left(c-a\right)_{n}}{ \left(c-b\right)_{n}}}{{\left(c\right)_{n}}{\left(c-a-b\right)_{n}}},</Math> when <Math mode="inline" xml:id="C16.S4.Px1.p1.m1">c+d=a+b+1-n</Math> , <Math mode="inline" xml:id="C16.S4.Px1.p1.m2">n=0,1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C16.S4.Px1.p1.s2">
+See ( , §4.4(4)) for a non-terminating balanced identity.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C16.S4.Px1.p2.s1">
+For generalizations involving <Math mode="inline" xml:id="C16.S4.Px1.p2.m1">{{}_{r+3}F_{r+2}}</Math> functions see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px2">
+<title>Dixon’s Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C16.S4.Px2.p1.s1">
+ <Math equation-number="16.4.4" mode="display" xml:id="C16.S4.E4">{{}_{3}F_{2}}\left({a,b,c\atop a-b+1,a-c+1};1\right)=\frac{\Gamma\left(\frac{1 }{2}a+1\right)\Gamma\left(a-b+1\right)\Gamma\left(a-c+1\right)\Gamma\left( \frac{1}{2}a-b-c+1\right)}{\Gamma\left(a+1\right)\Gamma\left(\frac{1}{2}a-b+1 \right)\Gamma\left(\frac{1}{2}a-c+1\right)\Gamma\left(a-b-c+1\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px2.p1.m1">\Re(a-2b-2c)&gt;-2</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px2.p1.m2">a=-n</Math> : <Math equation-number="16.4.5" mode="display" xml:id="C16.S4.E5">{{}_{3}F_{2}}\left({-n,b,c\atop 1-b-n,1-c-n};1\right)=\begin{cases}0,&amp;n=2k+1, \\ \dfrac{(2k)!\Gamma\left(b+k\right)\Gamma\left(c+k\right)\Gamma\left(b+c+2k \right)}{k!\Gamma\left(b+2k\right)\Gamma\left(c+2k\right)\Gamma\left(b+c+k \right)},&amp;n=2k,\\ \end{cases}</Math> where <Math mode="inline" xml:id="C16.S4.Px2.p1.m3">k=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px3">
+<title>Watson’s Sum</title>     
+<para xml:id="C16.S4.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C16.S4.Px3.p1.s1">
+ <Math equation-number="16.4.6" mode="display" xml:id="C16.S4.E6">{{}_{3}F_{2}}\left({a,b,c\atop\frac{1}{2}(a+b+1),2c};1\right)=\frac{\Gamma \left(\frac{1}{2}\right)\Gamma\left(c+\frac{1}{2}\right)\Gamma\left(\frac{1}{2 }(a+b+1)\right)\Gamma\left(c+\frac{1}{2}(1-a-b)\right)}{\Gamma\left(\frac{1}{2 }(a+1)\right)\Gamma\left(\frac{1}{2}(b+1)\right)\Gamma\left(c+\frac{1}{2}(1-a) \right)\Gamma\left(c+\frac{1}{2}(1-b)\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px3.p1.m1">\Re(2c-a-b)&gt;-1</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px3.p1.m2">a=-n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px4">
+<title>Whipple’s Sum</title>     
+<para xml:id="C16.S4.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C16.S4.Px4.p1.s1">
+ <Math equation-number="16.4.7" mode="display" xml:id="C16.S4.E7">{{}_{3}F_{2}}\left({a,1-a,c\atop d,2c-d+1};1\right)=\frac{\pi\Gamma\left(d \right)\Gamma\left(2c-d+1\right)2^{1-2c}}{\Gamma\left(c+\frac{1}{2}(a-d+1) \right)\Gamma\left(c+1-\frac{1}{2}(a+d)\right)\Gamma\left(\frac{1}{2}(a+d) \right)\Gamma\left(\frac{1}{2}(d-a+1)\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px4.p1.m1">\Re c&gt;0</Math> or when <Math mode="inline" xml:id="C16.S4.Px4.p1.m2">a</Math> is an integer.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px5">
+<title>Džrbasjan’s Sum</title>    
+<para xml:id="C16.S4.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="63" xml:id="C16.S4.Px5.p1.s1">
+This is (LABEL:eq:GH.SPz.5) in the case <Math mode="inline" xml:id="C16.S4.Px5.p1.m1">c=-n</Math> : <Math equation-number="16.4.8" mode="display" xml:id="C16.S4.E8">{{}_{3}F_{2}}\left({-n,a,1-a\atop d,1-d-2n};1\right)=\frac{{\left(\frac{1}{2}( a+d)\right)_{n}}{\left(\frac{1}{2}(d-a+1)\right)_{n}}}{{\left(\frac{1}{2}d \right)_{n}}{\left(\frac{1}{2}(d+1)\right)_{n}}}, subject to n=0,1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px6">
+<title>Rogers–Dougall Very Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="64" xml:id="C16.S4.Px6.p1.s1">
+ <Math equation-number="16.4.9" mode="display" xml:id="C16.S4.E9">{{}_{5}F_{4}}\left({a,\frac{1}{2}a+1,b,c,d\atop\frac{1}{2}a,a-b+1,a-c+1,a-d+1} ;1\right)=\frac{\Gamma\left(a-b+1\right)\Gamma\left(a-c+1\right)\Gamma\left(a- d+1\right)\Gamma\left(a-b-c-d+1\right)}{\Gamma\left(a+1\right)\Gamma\left(a-b- c+1\right)\Gamma\left(a-b-d+1\right)\Gamma\left(a-c-d+1\right)},</Math> when <Math mode="inline" xml:id="C16.S4.Px6.p1.m1">\Re(b+c+d-a)&lt;1</Math> , or when the series terminates with <Math mode="inline" xml:id="C16.S4.Px6.p1.m2">d=-n</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S4.Px7">
+<title>Dougall’s Very Well-Poised Sum</title>    
+<para xml:id="C16.S4.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C16.S4.Px7.p1.s1">
+ <Math equation-number="16.4.10" mode="display" xml:id="C16.S4.E10">{{}_{7}F_{6}}\left({a,\frac{1}{2}a+1,b,c,d,f,-n\atop\frac{1}{2}a,a-b+1,a-c+1,a -d+1,a-f+1,a+n+1};1\right)=\frac{{\left(a+1\right)_{n}}{\left(a-b-c+1\right)_{ n}}{\left(a-b-d+1\right)_{n}}{\left(a-c-d+1\right)_{n}}}{{\left(a-b+1\right)_{ n}}{\left(a-c+1\right)_{n}}{\left(a-d+1\right)_{n}}{\left(a-b-c-d+1\right)_{n} }}, subject to n=0,1,\dots,</Math> when <Math mode="inline" xml:id="C16.S4.Px7.p1.m1">2a+1=b+c+d+f-n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C16.S4.Px7.p1.s2">
+The last condition is equivalent to the sum of the top parameters plus <Math mode="inline" xml:id="C16.S4.Px7.p1.m2">2</Math> equals the sum of the bottom parameters, that is, the series is 2-balanced.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS3">
+<title>Identities</title>        
+   
+<para xml:id="C16.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C16.S4.SS3.p1.s1">
+ <Math equation-number="16.4.11" mode="display" xml:id="C16.S4.E11">{{}_{3}F_{2}}\left({a,b,c\atop d,e};1\right)=\frac{\Gamma\left(e\right)\Gamma \left(d+e-a-b-c\right)}{\Gamma\left(e-a\right)\Gamma\left(d+e-b-c\right)}{{}_{ 3}F_{2}}\left({a,d-b,d-c\atop d,d+e-b-c};1\right),</Math> when <Math mode="inline" xml:id="C16.S4.SS3.p1.m1">\Re(d+e-a-b-c)&gt;0</Math> and <Math mode="inline" xml:id="C16.S4.SS3.p1.m2">\Re(e-a)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="68" xml:id="C16.S4.SS3.p1.s2">
+The function <Math mode="inline" xml:id="C16.S4.SS3.p1.m3">{{}_{3}F_{2}}\left(a,b,c;d,e;1\right)</Math> is analytic in the parameters <Math mode="inline" xml:id="C16.S4.SS3.p1.m4">a,b,c,d,e</Math> when its series expansion converges and the bottom parameters are not negative integers or zero.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="69" xml:id="C16.S4.SS3.p1.s3">
+(LABEL:eq:GH.SPz.9)provides a partial analytic continuation to the region when the only restrictions on the parameters are <Math mode="inline" xml:id="C16.S4.SS3.p1.m5">\Re(e-a)&gt;0</Math> , and <Math mode="inline" xml:id="C16.S4.SS3.p1.m6">d,e</Math> , and <Math mode="inline" xml:id="C16.S4.SS3.p1.m7">d+e-b-c\neq 0,-1,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="70" xml:id="C16.S4.SS3.p1.s4">
+A detailedtreatment of analytic continuation in (LABEL:eq:GH.SPz.9) and asymptotic approximations as the variables <Math mode="inline" xml:id="C16.S4.SS3.p1.m8">a,b,c,d,e</Math> approach infinity is given by ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C16.S4.SS3.p2.s1">
+There are two types of three-term identities for <Math mode="inline" xml:id="C16.S4.SS3.p2.m1">{{}_{3}F_{2}}</Math> ’s.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C16.S4.SS3.p2.s2">
+The first are recurrence relations that extend those for <Math mode="inline" xml:id="C16.S4.SS3.p2.m2">{{}_{2}F_{1}}</Math> ’s; see §LABEL:sec:HY.DC.CR.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="73" xml:id="C16.S4.SS3.p2.s3">
+Examples are (LABEL:eq:GH.DC.12) with <Math mode="inline" xml:id="C16.S4.SS3.p2.m3">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="74" xml:id="C16.S4.SS3.p2.s4">
+Also, <Math equation-number="16.4.12" mode="display" xml:id="C16.S4.E12">(a-d)(b-d)(c-d)\left({{}_{3}F_{2}}\left({a,b,c\atop d+1,e};1\right)-{{}_{3}F_{ 2}}\left({a,b,c\atop d,e};1\right)\right)+abc{{}_{3}F_{2}}\left({a,b,c\atop d, e};1\right)=d(d-1)(a+b+c-d-e+1)\left({{}_{3}F_{2}}\left({a,b,c\atop d,e};1 \right)-{{}_{3}F_{2}}\left({a,b,c\atop d-1,e};1\right)\right),</Math> and <Math equation-number="16.4.13" mode="display" xml:id="C16.S4.E13">{{}_{3}F_{2}}\left({a,b,c\atop d,e};1\right)=\dfrac{c(e-a)}{de}{{}_{3}F_{2}} \left({a,b+1,c+1\atop d+1,e+1};1\right)+\dfrac{d-c}{d}{{}_{3}F_{2}}\left({a,b+ 1,c\atop d+1,e};1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="75" xml:id="C16.S4.SS3.p2.s5">
+Methods of deriving such identities are given by ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="76" xml:id="C16.S4.SS3.p2.s6">
+Lists are given by ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="77" xml:id="C16.S4.SS3.p2.s7">
+See ( ) for a statement in terms of <Math mode="inline" xml:id="C16.S4.SS3.p2.m6">\mathit{3j}</Math> symbols (Chapter LABEL:ch:TJ).
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="78" xml:id="C16.S4.SS3.p2.s8">
+Also see ( ) for information on the Wilf–Zeilberger algorithm which can be used to find such relations.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C16.S4.SS3.p3.s1">
+The other three-term relations are extensions of Kummer’s relations for <Math mode="inline" xml:id="C16.S4.SS3.p3.m1">{{}_{2}F_{1}}</Math> ’s given in §LABEL:sec:HY.DE.KU.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C16.S4.SS3.p3.s2">
+See ( , pp. 19–22) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C16.S4.SS3.p4.s1">
+Balanced <Math mode="inline" xml:id="C16.S4.SS3.p4.m1">{{}_{4}F_{3}}\left(1\right)</Math> series have transformation formulas and three-term relations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="82" xml:id="C16.S4.SS3.p4.s2">
+The basic transformation is given by <Math equation-number="16.4.14" mode="display" xml:id="C16.S4.E14">{{}_{4}F_{3}}\left({-n,a,b,c\atop d,e,f};1\right)=\frac{{\left(e-a\right)_{n}} {\left(f-a\right)_{n}}}{{\left(e\right)_{n}}{\left(f\right)_{n}}}{{}_{4}F_{3}} \left({-n,a,d-b,d-c\atop d,a-e-n+1,a-f-n+1};1\right),</Math> when <Math mode="inline" xml:id="C16.S4.SS3.p4.m2">a+b+c-n+1=d+e+f</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="83" xml:id="C16.S4.SS3.p4.s3">
+These series contain <Math mode="inline" xml:id="C16.S4.SS3.p4.m3">\mathit{6j}</Math> symbols as special cases when the parameters are integers; compare §LABEL:sec:TJ6.DEF.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C16.S4.SS3.p5.s1">
+The characterizing properties (LABEL:eq:OP.AS.RR.RR.5b), (LABEL:eq:OP.AS.RR.DE.5), (LABEL:eq:OP.HC.DR1), (LABEL:eq:OP.HC.DR2), and (LABEL:eq:OP.AS.WC.DR.1a) of the Hahn and Wilson class polynomials are examples of the contiguous relations mentioned in the previous three paragraphs.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C16.S4.SS3.p6.s1">
+Contiguous balanced series have parameters shifted by an integer but still balanced. One example of such a three-term relation is the recurrence relation (LABEL:eq:OP.AS.WC.DR.3a) for Racah polynomials.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="86" xml:id="C16.S4.SS3.p6.s2">
+See ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C16.S4.SS3.p7.s1">
+A different type of transformation is that of Whipple: <Math equation-number="16.4.15" mode="display" xml:id="C16.S4.E15">{{}_{7}F_{6}}\left({a,\frac{1}{2}a+1,b,c,d,e,f\atop\frac{1}{2}a,a-b+1,a-c+1,a- d+1,a-e+1,a-f+1};1\right)=\frac{\Gamma\left(a-d+1\right)\Gamma\left(a-e+1 \right)\Gamma\left(a-f+1\right)\Gamma\left(a-d-e-f+1\right)}{\Gamma\left(a+1 \right)\Gamma\left(a-d-e+1\right)\Gamma\left(a-d-f+1\right)\Gamma\left(a-e-f+1 \right)}{{}_{4}F_{3}}\left({a-b-c+1,d,e,f\atop a-b+1,a-c+1,d+e+f-a};1\right),</Math> when the series on the right terminates and the series on the left converges.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C16.S4.SS3.p7.s2">
+When the series on the right does not terminate, a second term appears.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="89" xml:id="C16.S4.SS3.p7.s3">
+See ( , §4.4(4)) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S4.SS3.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C16.S4.SS3.p8.s1">
+Transformations for both balanced <Math mode="inline" xml:id="C16.S4.SS3.p8.m1">{{}_{4}F_{3}}\left(1\right)</Math> and very well-poised <Math mode="inline" xml:id="C16.S4.SS3.p8.m2">{{}_{7}F_{6}}\left(1\right)</Math> are included in ( , pp. 56–63) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C16.S4.SS3.p8.s2">
+A similar theory is available for very well-poised <Math mode="inline" xml:id="C16.S4.SS3.p8.m3">{{}_{9}F_{8}}\left(1\right)</Math> ’s which are 2-balanced. See ( , §§4.3(7) and 7.6(1)) for the transformation formulas and ( ) for contiguous relations.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C16.S4.SS3.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C16.S4.SS3.p9.s1">
+Relations between three solutions of three-term recurrence relations are given by ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="93" xml:id="C16.S4.SS3.p9.s2">
+See also ( ) (with corrections in ( ) ) for further examples of recurrence relations.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS4">
+<title>Continued Fractions</title>          
+<para xml:id="C16.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C16.S4.SS4.p1.s1">
+For continued fractions for ratios of <Math mode="inline" xml:id="C16.S4.SS4.p1.m1">{{}_{3}F_{2}}</Math> functions with argument unity, see ( , pp. 315–317) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S4.SS5">
+<title>Bilateral Series</title>           
+<para xml:id="C16.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C16.S4.SS5.p1.s1">
+Denote, formally, thebilateral hypergeometric function <Math equation-number="16.4.16" mode="display" xml:id="C16.S4.E16">{{}_{p}H_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\sum_{k =-\infty}^{\infty}\frac{{\left(a_{1}\right)_{k}}\dots{\left(a_{p}\right)_{k}}} {{\left(b_{1}\right)_{k}}\dots{\left(b_{q}\right)_{k}}}z^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C16.S4.SS5.p1.s2">
+Then <Math equation-number="16.4.17" mode="display" xml:id="C16.S4.E17">{{}_{2}H_{2}}\left({a,b\atop c,d};1\right)=\frac{\Gamma\left(c\right)\Gamma \left(d\right)\Gamma\left(1-a\right)\Gamma\left(1-b\right)\Gamma\left(c+d-a-b- 1\right)}{\Gamma\left(c-a\right)\Gamma\left(d-a\right)\Gamma\left(c-b\right) \Gamma\left(d-b\right)}, subject to \Re(c+d-a-b)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="97" xml:id="C16.S4.SS5.p1.s3">
+This is Dougall’s bilateral sum; see ( , §2.8) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S5">
+<title>Integral Representations and Integrals</title>            
+<para xml:id="C16.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="98" xml:id="C16.S5.p1.s1">
+When <Math mode="inline" xml:id="C16.S5.p1.m1">z\neq 0</Math> and <Math mode="inline" xml:id="C16.S5.p1.m2">a_{k}\neq 0,-1,-2,\dots</Math> , <Math mode="inline" xml:id="C16.S5.p1.m3">k=1,2,\dots,p</Math> , <Math equation-number="16.5.1" mode="display" xml:id="C16.S5.E1">\left({\textstyle\ifrac{\prod\limits_{k=1}^{p}\Gamma\left(a_{k}\right)}{\prod \limits_{k=1}^{q}\Gamma\left(b_{k}\right)}}\right){{}_{p}F_{q}}\left({a_{1}, \dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\frac{1}{2\pi\mathrm{i}}\int_{L} \left({\textstyle\ifrac{\prod\limits_{k=1}^{p}\Gamma\left(a_{k}+s\right)}{ \prod\limits_{k=1}^{q}\Gamma\left(b_{k}+s\right)}}\right)\Gamma\left(-s\right) (-z)^{s}\mathrm{d}s,</Math> where the contour of integration separates the poles of <Math mode="inline" xml:id="C16.S5.p1.m4">\Gamma\left(a_{k}+s\right)</Math> , <Math mode="inline" xml:id="C16.S5.p1.m5">k=1,\dots,p</Math> , from those of <Math mode="inline" xml:id="C16.S5.p1.m6">\Gamma\left(-s\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C16.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C16.S5.p2.s1">
+Suppose first that <Math mode="inline" xml:id="C16.S5.p2.m1">L</Math> is a contour that starts at infinity on a line parallel to the positive real axis, encircles the nonnegative integers in the negative sense, and ends at infinity on another line parallel to the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="100" xml:id="C16.S5.p2.s2">
+Then the integral converges when <Math mode="inline" xml:id="C16.S5.p2.m2">p&lt;q+1</Math> provided that <Math mode="inline" xml:id="C16.S5.p2.m3">z\neq 0</Math> , or when <Math mode="inline" xml:id="C16.S5.p2.m4">p=q+1</Math> provided that <Math mode="inline" xml:id="C16.S5.p2.m5">0&lt;|z|&lt;1</Math> , and provides an integral representation of the left-hand side with these conditions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C16.S5.p3.s1">
+Secondly, suppose that <Math mode="inline" xml:id="C16.S5.p3.m1">L</Math> is a contour from <Math mode="inline" xml:id="C16.S5.p3.m2">-\mathrm{i}\infty</Math> to <Math mode="inline" xml:id="C16.S5.p3.m3">\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="102" xml:id="C16.S5.p3.s2">
+Then the integral converges when <Math mode="inline" xml:id="C16.S5.p3.m4">q&lt;p+1</Math> and <Math mode="inline" xml:id="C16.S5.p3.m5">|\operatorname{ph}\left(-z\right)|&lt;(p+1-q)\pi/2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="103" xml:id="C16.S5.p3.s3">
+In the case <Math mode="inline" xml:id="C16.S5.p3.m6">p=q</Math> the left-hand side of(LABEL:eq:GH.IR.M1) is an entire function, and the right-hand side supplies an integral representation valid when <Math mode="inline" xml:id="C16.S5.p3.m7">|\operatorname{ph}\left(-z\right)|&lt;\pi/2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="104" xml:id="C16.S5.p3.s4">
+In the case <Math mode="inline" xml:id="C16.S5.p3.m8">p=q+1</Math> the right-hand side of (LABEL:eq:GH.IR.M1) supplies the analytic continuation of the left-hand side from the open unit disk to the sector <Math mode="inline" xml:id="C16.S5.p3.m9">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> ; compare §LABEL:sec:GH.DF.PEQQ1.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="105" xml:id="C16.S5.p3.s5">
+Lastly, when <Math mode="inline" xml:id="C16.S5.p3.m10">p&gt;q+1</Math> the right-hand side of (LABEL:eq:GH.IR.M1) can be regarded as the definition of the (customarily undefined) left-hand side.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="106" xml:id="C16.S5.p3.s6">
+In this event, the formal power-series expansion of the left-hand side (obtained from (LABEL:eq:GH.DF.PFQ)) is the asymptotic expansion of the right-hand side as <Math mode="inline" xml:id="C16.S5.p3.m11">z\to 0</Math> in the sector <Math mode="inline" xml:id="C16.S5.p3.m12">|\operatorname{ph}\left(-z\right)|\leq(p+1-q-\delta)\pi/2</Math> , where <Math mode="inline" xml:id="C16.S5.p3.m13">\delta</Math> is an arbitrary small positive constant.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C16.S5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C16.S5.p4.s1">
+Next, when <Math mode="inline" xml:id="C16.S5.p4.m1">p\leq q</Math> , <Math equation-number="16.5.2" mode="display" xml:id="C16.S5.E2">{{}_{p+1}F_{q+1}}\left({a_{0},\dots,a_{p}\atop b_{0},\dots,b_{q}};z\right)= \frac{\Gamma\left(b_{0}\right)}{\Gamma\left(a_{0}\right)\Gamma\left(b_{0}-a_{0 }\right)}\int_{0}^{1}t^{a_{0}-1}(1-t)^{b_{0}-a_{0}-1}{{}_{p}F_{q}}\left({a_{1} ,\dots,a_{p}\atop b_{1},\dots,b_{q}};zt\right)\mathrm{d}t, subject to \Re b_{0}&gt;\Re a_{0}&gt;0,</Math> <Math equation-number="16.5.3" mode="display" xml:id="C16.S5.E3">{{}_{p+1}F_{q}}\left({a_{0},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\frac {1}{\Gamma\left(a_{0}\right)}\int_{0}^{\infty}{\mathrm{e}^{-t}}t^{a_{0}-1}{{}_ {p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\cdots,b_{q}};zt\right)\mathrm{d}t, subject to \Re z&lt;1, \Re a_{0}&gt;0,</Math> <Math equation-number="16.5.4" mode="display" xml:id="C16.S5.E4">{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{0},\dots,b_{q}};z\right)=\frac {\Gamma\left(b_{0}\right)}{2\pi\mathrm{i}}\int_{c-\mathrm{i}\infty}^{c+\mathrm {i}\infty}{\mathrm{e}^{t}}t^{-b_{0}}{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b _{1},\dots,b_{q}};\frac{z}{t}\right)\mathrm{d}t, subject to c&gt;0, \Re b_{0}&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C16.S5.p4.s2">
+In (LABEL:eq:GH.IR.1)–(LABEL:eq:GH.IR.3) all many-valued functions in the integrands assume their principal values, and all integration paths are straight lines.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C16.S5.p5.s1">
+(LABEL:eq:GH.IR.1) also holds when <Math mode="inline" xml:id="C16.S5.p5.m1">p=q+1</Math> , provided that <Math mode="inline" xml:id="C16.S5.p5.m2">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C16.S5.p5.s2">
+In (LABEL:eq:GH.IR.2) the restriction <Math mode="inline" xml:id="C16.S5.p5.m3">\Re z&lt;1</Math> can be removed when <Math mode="inline" xml:id="C16.S5.p5.m4">p&lt;q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C16.S5.p5.s3">
+(LABEL:eq:GH.IR.3) also holds when <Math mode="inline" xml:id="C16.S5.p5.m5">p=q+1</Math> , provided that <Math mode="inline" xml:id="C16.S5.p5.m6">\max(0,\Re z)&lt;c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="112" xml:id="C16.S5.p5.s4">
+Lastly, the restrictions on the parameters can be eased by replacing the integration paths with loop contours; see ( , §3.6) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C16.S5.p6.s1">
+Laplace transforms and inverse Laplace transforms of generalized hypergeometric functions are given in ( , §3.38) and ( , §3.36) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C16.S5.p6.s2">
+For further integral representations and integrals see ( , §16) , ( , §4.6) , ( , §§6.9 and 7.5) , ( , §3.6) , and ( , §§2.22, 4.2.4,and 4.3.1) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S6">
+<title>Transformations of Variable</title>        
+  
+<paragraph xml:id="C16.S6.Px1">
+<title>Quadratic</title>    
+<para xml:id="C16.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C16.S6.Px1.p1.s1">
+ <Math equation-number="16.6.1" mode="display" xml:id="C16.S6.E1">{{}_{3}F_{2}}\left({a,b,c\atop a-b+1,a-c+1};z\right)=(1-z)^{-a}{{}_{3}F_{2}} \left({a-b-c+1,\frac{1}{2}a,\frac{1}{2}(a+1)\atop a-b+1,a-c+1};\frac{-4z}{(1-z )^{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S6.Px2">
+<title>Cubic</title>   
+ 
+<para xml:id="C16.S6.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="116" xml:id="C16.S6.Px2.p1.s1">
+ <Math equation-number="16.6.2" mode="display" xml:id="C16.S6.E2">{{}_{3}F_{2}}\left({a,2b-a-1,2-2b+a\atop b,a-b+\frac{3}{2}};\frac{z}{4}\right) =(1-z)^{-a}{{}_{3}F_{2}}\left({\frac{1}{3}a,\frac{1}{3}a+\frac{1}{3},\frac{1}{ 3}a+\frac{2}{3}\atop b,a-b+\frac{3}{2}};\frac{-27z}{4(1-z)^{3}}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C16.S6.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C16.S6.Px2.p2.s1">
+For Kummer-type transformations of <Math mode="inline" xml:id="C16.S6.Px2.p2.m1">{{}_{2}F_{2}}</Math> functions see ( ) and ( ) , and for further transformations see ( , §4.5) , ( ) , ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C16.S7">
+<title>Relations to Other Functions</title>        
+  
+<para xml:id="C16.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C16.S7.p1.s1">
+For orthogonal polynomials see Chapter LABEL:ch:OP.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C16.S7.p1.s2">
+For <Math mode="inline" xml:id="C16.S7.p1.m1">\mathit{3j}</Math> , <Math mode="inline" xml:id="C16.S7.p1.m2">\mathit{6j}</Math> , <Math mode="inline" xml:id="C16.S7.p1.m3">\mathit{9j}</Math> symbols see Chapter LABEL:ch:TJ. Further representations of special functions in terms of <Math mode="inline" xml:id="C16.S7.p1.m4">{{}_{p}F_{q}}</Math> functions are given in ( , §§6.2–6.3), and an extensive list of <Math mode="inline" xml:id="C16.S7.p1.m5">{{}_{q+1}F_{q}}</Math> functions with rational numbers as parameters is given in ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S8">
+<title>Differential Equations</title>         
+ 
+<subsection xml:id="C16.S8.SS1">
+<title>Classification of Singularities</title>           
+ 
+<para xml:id="C16.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C16.S8.SS1.p1.s1">
+An ordinary point of the differential equation <Math equation-number="16.8.1" mode="display" xml:id="C16.S8.E1">\frac{{\mathrm{d}}^{n}w}{{\mathrm{d}z}^{n}}+f_{n-1}(z)\frac{{\mathrm{d}}^{n-1} w}{{\mathrm{d}z}^{n-1}}+f_{n-2}(z)\frac{{\mathrm{d}}^{n-2}w}{{\mathrm{d}z}^{n- 2}}+\dots+f_{1}(z)\frac{\mathrm{d}w}{\mathrm{d}z}+f_{0}(z)w=0</Math> is a value <Math mode="inline" xml:id="C16.S8.SS1.p1.m1">z_{0}</Math> of <Math mode="inline" xml:id="C16.S8.SS1.p1.m2">z</Math> at which all the coefficients <Math mode="inline" xml:id="C16.S8.SS1.p1.m3">f_{j}(z)</Math> , <Math mode="inline" xml:id="C16.S8.SS1.p1.m4">j=0,1,\dots,n-1</Math> , are analytic.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="121" xml:id="C16.S8.SS1.p1.s2">
+If <Math mode="inline" xml:id="C16.S8.SS1.p1.m5">z_{0}</Math> is not an ordinary point but <Math mode="inline" xml:id="C16.S8.SS1.p1.m6">(z-z_{0})^{n-j}f_{j}(z)</Math> , <Math mode="inline" xml:id="C16.S8.SS1.p1.m7">j=0,1,\dots,n-1</Math> , are analytic at <Math mode="inline" xml:id="C16.S8.SS1.p1.m8">z=z_{0}</Math> , then <Math mode="inline" xml:id="C16.S8.SS1.p1.m9">z_{0}</Math> is a regular singularity.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="122" xml:id="C16.S8.SS1.p1.s3">
+All other singularities areirregular.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="123" xml:id="C16.S8.SS1.p1.s4">
+Compare §LABEL:sec:AS.DE.RS in the case <Math mode="inline" xml:id="C16.S8.SS1.p1.m10">n=2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="124" xml:id="C16.S8.SS1.p1.s5">
+Similar definitions apply in the case <Math mode="inline" xml:id="C16.S8.SS1.p1.m11">z_{0}=\infty</Math> : we transform <Math mode="inline" xml:id="C16.S8.SS1.p1.m12">\infty</Math> into the origin by replacing <Math mode="inline" xml:id="C16.S8.SS1.p1.m13">z</Math> in (LABEL:eq:GH.DE.GE) by <Math mode="inline" xml:id="C16.S8.SS1.p1.m14">1/z</Math> ; again compare §LABEL:sec:AS.DE.RS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="125" xml:id="C16.S8.SS1.p2.s1">
+For further information see ( , pp. 360–370) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S8.SS2">
+<title>The Generalized Hypergeometric Differential Equation</title>           
+<para xml:id="C16.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="126" xml:id="C16.S8.SS2.p1.s1">
+With the notation <Math equation-number="16.8.2" mode="display" xml:id="C16.S8.E2">D=\frac{\mathrm{d}}{\mathrm{d}z}, \vartheta=z\frac{\mathrm{d}}{\mathrm{d}z},</Math> the function <Math mode="inline" xml:id="C16.S8.SS2.p1.m1">w={{}_{p}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> satisfies the differential equation <Math equation-number="16.8.3" mode="display" xml:id="C16.S8.E3">\left(\vartheta(\vartheta+b_{1}-1)\cdots(\vartheta+b_{q}-1)-z(\vartheta+a_{1}) \cdots(\vartheta+a_{p})\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="127" xml:id="C16.S8.SS2.p1.s2">
+Equivalently, <Math equation-number="16.8.4" mode="display" xml:id="C16.S8.E4">z^{q}D^{q+1}w+\sum_{j=1}^{q}z^{j-1}(\alpha_{j}z+\beta_{j})D^{j}w+\alpha_{0}w=0, subject to p\leq q,</Math> or <Math equation-number="16.8.5" mode="display" xml:id="C16.S8.E5">z^{q}(1-z)D^{q+1}w+\sum_{j=1}^{q}z^{j-1}(\alpha_{j}z+\beta_{j})D^{j}w+\alpha_{ 0}w=0, subject to p=q+1,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p1.m2">\alpha_{j}</Math> and <Math mode="inline" xml:id="C16.S8.SS2.p1.m3">\beta_{j}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="128" xml:id="C16.S8.SS2.p1.s3">
+Equation (LABEL:eq:GH.DE.DEpq) has a regular singularity at <Math mode="inline" xml:id="C16.S8.SS2.p1.m4">z=0</Math> , and an irregular singularity at <Math mode="inline" xml:id="C16.S8.SS2.p1.m5">z=\infty</Math> , whereas (LABEL:eq:GH.DE.DEpp) has regular singularities at <Math mode="inline" xml:id="C16.S8.SS2.p1.m6">z=0</Math> , <Math mode="inline" xml:id="C16.S8.SS2.p1.m7">1</Math> , and <Math mode="inline" xml:id="C16.S8.SS2.p1.m8">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="129" xml:id="C16.S8.SS2.p1.s4">
+In each case there are no other singularities.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="130" xml:id="C16.S8.SS2.p1.s5">
+Equation (LABEL:eq:GH.DE.DE) is of order <Math mode="inline" xml:id="C16.S8.SS2.p1.m9">\max(p,q+1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="131" xml:id="C16.S8.SS2.p1.s6">
+In ( ) examples are discussed in which the generalized hypergeometric function satisfies a differential equation that is of order 1 or even 2 less than might be expected.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="132" xml:id="C16.S8.SS2.p2.s1">
+When no <Math mode="inline" xml:id="C16.S8.SS2.p2.m1">b_{j}</Math> is an integer, and no two <Math mode="inline" xml:id="C16.S8.SS2.p2.m2">b_{j}</Math> differ by an integer, a fundamental set of solutions of (LABEL:eq:GH.DE.DE) is given by <Math equation-number="16.8.6" mode="display" xml:id="C16.S8.E6">w_{0}(z)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right), {w_{j}(z)=z^{1-b_{j}}{{}_{p}F_{q}}\left({1+a_{1}-b_{j},\dots,1+a_{p}-b_{j} \atop 2-b_{j},1+b_{1}-b_{j},\ldots*\dots,1+b_{q}-b_{j}};z\right),} subject to j=1,\dots,q,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p2.m3">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S8.SS2.p2.m4">1+b_{j}-b_{j}</Math> is omitted. For other values of the <Math mode="inline" xml:id="C16.S8.SS2.p2.m5">b_{j}</Math> , series solutions in powers of <Math mode="inline" xml:id="C16.S8.SS2.p2.m6">z</Math> (possibly involving also <Math mode="inline" xml:id="C16.S8.SS2.p2.m7">\ln z</Math> ) can be constructed via a limiting process; compare §LABEL:sec:AS.DE.RS in the case of second-order differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="133" xml:id="C16.S8.SS2.p2.s2">
+For details see ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="134" xml:id="C16.S8.SS2.p3.s1">
+When <Math mode="inline" xml:id="C16.S8.SS2.p3.m1">p=q+1</Math> , and no two <Math mode="inline" xml:id="C16.S8.SS2.p3.m2">a_{j}</Math> differ by an integer, another fundamental set of solutions of (LABEL:eq:GH.DE.DE) is given by <Math equation-number="16.8.7" mode="display" xml:id="C16.S8.E7">\widetilde{w}_{j}(z)=(-z)^{-a_{j}}{{}_{q+1}F_{q}}\left({a_{j},1-b_{1}+a_{j}, \dots,1-b_{q}+a_{j}\atop 1-a_{1}+a_{j},\ldots*\dots,1-a_{q+1}+a_{j}};\frac{1}{ z}\right), subject to j=1,\dots,q+1,</Math> where <Math mode="inline" xml:id="C16.S8.SS2.p3.m3">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S8.SS2.p3.m4">1-a_{j}+a_{j}</Math> is omitted. We have the connection formula <Math equation-number="16.8.8" mode="display" xml:id="C16.S8.E8">{{}_{q+1}F_{q}}\left({a_{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)= \sum_{j=1}^{q+1}\left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{q+1}\frac{\Gamma\left(a_{k}-a_{j}\right)}{\Gamma\left( a_{k}\right)}}{\prod\limits_{k=1}^{q}\frac{\Gamma\left(b_{k}-a_{j}\right)}{ \Gamma\left(b_{k}\right)}}}\right)\widetilde{w}_{j}(z), subject to |\operatorname{ph}\left(-z\right)|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="135" xml:id="C16.S8.SS2.p3.s2">
+More generally if <Math mode="inline" xml:id="C16.S8.SS2.p3.m5">z_{0}</Math> ( <Math mode="inline" xml:id="C16.S8.SS2.p3.m6">\in\mathbb{C}</Math> ) is an arbitrary constant, <Math mode="inline" xml:id="C16.S8.SS2.p3.m7">|z-z_{0}|&gt;\max{(|z_{0}|,|z_{0}-1|)}</Math> , and <Math mode="inline" xml:id="C16.S8.SS2.p3.m8">|\operatorname{ph}\left(z_{0}-z\right)|&lt;\pi</Math> , then <Math equation-number="16.8.9" mode="display" xml:id="C16.S8.E9">\left({\textstyle\ifrac{\prod\limits_{k=1}^{q+1}\Gamma\left(a_{k}\right)}{ \prod\limits_{k=1}^{q}\Gamma\left(b_{k}\right)}}\right){{}_{q+1}F_{q}}\left({a _{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)=\sum_{j=1}^{q+1}\left(z_{0 }-z\right)^{-a_{j}}\sum_{n=0}^{\infty}\frac{\Gamma\left(a_{j}+n\right)}{n!}\* \left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{q+1}\Gamma\left(a_{k}-a_{j}-n\right)}{\prod\limits_{k= 1}^{q}\Gamma\left(b_{k}-a_{j}-n\right)}}\right)\*{{}_{q+1}F_{q}}\left({a_{1}-a _{j}-n,\dots,a_{q+1}-a_{j}-n\atop b_{1}-a_{j}-n,\dots,b_{q}-a_{j}-n};z_{0} \right)\left(z-z_{0}\right)^{-n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="136" xml:id="C16.S8.SS2.p3.s3">
+(Note that the generalized hypergeometric functions on the right-hand side are polynomials in <Math mode="inline" xml:id="C16.S8.SS2.p3.m9">z_{0}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="137" xml:id="C16.S8.SS2.p3.s4">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C16.S8.SS2.p4.s1">
+When <Math mode="inline" xml:id="C16.S8.SS2.p4.m1">p=q+1</Math> and some of the <Math mode="inline" xml:id="C16.S8.SS2.p4.m2">a_{j}</Math> differ by an integer a limiting process can again be applied. For details see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C16.S8.SS2.p4.s2">
+In this reference it is also explained that in general when <Math mode="inline" xml:id="C16.S8.SS2.p4.m3">q&gt;1</Math> no simplerepresentations in terms of generalized hypergeometric functions are available for the fundamental solutions near <Math mode="inline" xml:id="C16.S8.SS2.p4.m4">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C16.S8.SS2.p4.s3">
+Analytical continuation formulas for <Math mode="inline" xml:id="C16.S8.SS2.p4.m5">{{}_{q+1}F_{q}}\left(\mathbf{a};\mathbf{b};z\right)</Math> near <Math mode="inline" xml:id="C16.S8.SS2.p4.m6">z=1</Math> are given in ( ) for the case <Math mode="inline" xml:id="C16.S8.SS2.p4.m7">q=2</Math> , and in ( ) for the general case.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S8.SS3">
+<title>Confluence of Singularities</title>          
+<para xml:id="C16.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C16.S8.SS3.p1.s1">
+If <Math mode="inline" xml:id="C16.S8.SS3.p1.m1">p\leq q</Math> , then <Math equation-number="16.8.10" mode="display" xml:id="C16.S8.E10">\lim_{|\alpha|\to\infty}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{p},\alpha\atop b_ {1},\dots,b_{q}};\frac{z}{\alpha}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="142" xml:id="C16.S8.SS3.p1.s2">
+Thus in the case <Math mode="inline" xml:id="C16.S8.SS3.p1.m2">p=q</Math> the regular singularities of the function on theleft-hand side at <Math mode="inline" xml:id="C16.S8.SS3.p1.m3">\alpha</Math> and <Math mode="inline" xml:id="C16.S8.SS3.p1.m4">\infty</Math> coalesce into an irregular singularity at <Math mode="inline" xml:id="C16.S8.SS3.p1.m5">\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C16.S8.SS3.p2.s1">
+Next, if <Math mode="inline" xml:id="C16.S8.SS3.p2.m1">p\leq q+1</Math> and <Math mode="inline" xml:id="C16.S8.SS3.p2.m2">|\operatorname{ph}\beta|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C16.S8.SS3.p2.m3">&lt;\pi</Math> ), then <Math equation-number="16.8.11" mode="display" xml:id="C16.S8.E11">\lim_{|\beta|\to\infty}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{1}, \dots,b_{q},\beta};\beta z\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b _{1},\dots,b_{q}};z\right),</Math> provided that in the case <Math mode="inline" xml:id="C16.S8.SS3.p2.m4">p=q+1</Math> we have <Math mode="inline" xml:id="C16.S8.SS3.p2.m5">|z|&lt;1</Math> when <Math mode="inline" xml:id="C16.S8.SS3.p2.m6">|\operatorname{ph}\beta|\leq\frac{1}{2}\pi</Math> , and <Math mode="inline" xml:id="C16.S8.SS3.p2.m7">|z|&lt;|\sin\left(\operatorname{ph}\beta\right)|</Math> when <Math mode="inline" xml:id="C16.S8.SS3.p2.m8">\frac{1}{2}\pi\leq|\operatorname{ph}\beta|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C16.S8.SS3.p2.m9">&lt;\pi</Math> ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S9">
+<title>Zeros</title>         
+ 
+<para xml:id="C16.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="144" xml:id="C16.S9.p1.s1">
+Assume that <Math mode="inline" xml:id="C16.S9.p1.m1">p=q</Math> and none of the <Math mode="inline" xml:id="C16.S9.p1.m2">a_{j}</Math> is a nonpositive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="145" xml:id="C16.S9.p1.s2">
+Then <Math mode="inline" xml:id="C16.S9.p1.m3">{{}_{p}F_{p}}\left(\mathbf{a};\mathbf{b};z\right)</Math> has at most finitely many zeros if and only if the <Math mode="inline" xml:id="C16.S9.p1.m4">a_{j}</Math> can be re-indexed for <Math mode="inline" xml:id="C16.S9.p1.m5">j=1,\dots,p</Math> in such a way that <Math mode="inline" xml:id="C16.S9.p1.m6">a_{j}-b_{j}</Math> is a nonnegative integer.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C16.S9.p2.s1">
+Next, assume that <Math mode="inline" xml:id="C16.S9.p2.m1">p=q</Math> and that the <Math mode="inline" xml:id="C16.S9.p2.m2">a_{j}</Math> and the quotients <Math mode="inline" xml:id="C16.S9.p2.m3">{\left(\mathbf{a}\right)_{j}}/{\left(\mathbf{b}\right)_{j}}</Math> are all real.Then <Math mode="inline" xml:id="C16.S9.p2.m4">{{}_{p}F_{p}}\left(\mathbf{a};\mathbf{b};z\right)</Math> has at most finitely many real zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S9.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C16.S9.p3.s1">
+These results are proved in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C16.S9.p3.s2">
+For further information on zeros see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S10">
+<title>Expansions in Series of <Math content-tex="\genhyperF{p}{q}" mode="inline" xml:id="C16.S10.m1">{{}_{p}F_{q}}</Math> Functions</title>         
+ 
+<para xml:id="C16.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C16.S10.p1.s1">
+The following expansion, with appropriate conditions and together with similar results, is given in ( ) : <Math equation-number="16.10.1" mode="display" xml:id="C16.S10.E1">{{}_{p+r}F_{q+s}}\left({a_{1},\dots,a_{p},c_{1},\dots,c_{r}\atop b_{1},\dots,b _{q},d_{1},\dots,d_{s}};z\zeta\right)=\sum_{k=0}^{\infty}\frac{{\left(\mathbf{ a}\right)_{k}}{\left(\alpha\right)_{k}}{\left(\beta\right)_{k}}(-z)^{k}}{{ \left(\mathbf{b}\right)_{k}}{\left(\gamma+k\right)_{k}}k!}{{}_{p+2}F_{q+1}} \left({\alpha+k,\beta+k,a_{1}+k,\dots,a_{p}+k\atop\gamma+2k+1,b_{1}+k,\dots,b_ {q}+k};z\right){{}_{r+2}F_{s+2}}\left({-k,\gamma+k,c_{1},\dots,c_{r}\atop \alpha,\beta,d_{1},\dots,d_{s}};\zeta\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="150" xml:id="C16.S10.p1.s2">
+Here <Math mode="inline" xml:id="C16.S10.p1.m1">\alpha</Math> , <Math mode="inline" xml:id="C16.S10.p1.m2">\beta</Math> , and <Math mode="inline" xml:id="C16.S10.p1.m3">\gamma</Math> are free real or complex parameters.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C16.S10.p2.s1">
+The next expansion is given in ( , equation (1.21)) : <Math equation-number="16.10.2" mode="display" xml:id="C16.S10.E2">{{}_{p+1}F_{p}}\left({a_{1},\dots,a_{p+1}\atop b_{1},\dots,b_{p}};z\zeta\right )=(1-z)^{-a_{1}}\sum_{k=0}^{\infty}\frac{{\left(a_{1}\right)_{k}}}{k!}{{}_{p+1 }F_{p}}\left({-k,a_{2},\dots,a_{p+1}\atop b_{1},\dots,b_{p}};\zeta\right)\left (\frac{z}{z-1}\right)^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="152" xml:id="C16.S10.p2.s2">
+When <Math mode="inline" xml:id="C16.S10.p2.m1">|\zeta-1|&lt;1</Math> the series on the right-hand side converges in the half-plane <Math mode="inline" xml:id="C16.S10.p2.m2">\Re z&lt;\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S10.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C16.S10.p3.s1">
+Expansions of the form <Math mode="inline" xml:id="C16.S10.p3.m1">\sum_{n=1}^{\infty}(\pm 1)^{n}{{}_{p}F_{p+1}}\left(\mathbf{a};\mathbf{b};-n^{2 }z^{2}\right)</Math> are discussed in ( ) , and further series of generalized hypergeometric functions are given in ( , Chapter 9) , ( , §§5.10.2 and 5.11) , and ( , §§5.3, 6.8–6.9) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S11">
+<title>Asymptotic Expansions</title>         
+<subsection xml:id="C16.S11.SS1">
+<title>Formal Series</title>         
+ 
+<para xml:id="C16.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C16.S11.SS1.p1.s1">
+For subsequent use we define two formal infinite series, <Math mode="inline" xml:id="C16.S11.SS1.p1.m1">E_{p,q}(z)</Math> and <Math mode="inline" xml:id="C16.S11.SS1.p1.m2">H_{p,q}(z)</Math> , as follows: <Math equation-number="16.11.1" mode="display" xml:id="C16.S11.E1">E_{p,q}(z)=(2\pi)^{\ifrac{(p-q)}{2}}\kappa^{-\nu-(\ifrac{1}{2})}{\mathrm{e}^{ \kappa z^{\ifrac{1}{\kappa}}}}\sum_{k=0}^{\infty}c_{k}\left(\kappa z^{\ifrac{1 }{\kappa}}\right)^{\nu-k}, subject to p&lt;q+1,</Math> <Math equation-number="16.11.2" mode="display" xml:id="C16.S11.E2">H_{p,q}(z)=\sum_{m=1}^{p}\sum_{k=0}^{\infty}\frac{(-1)^{k}}{k!}\Gamma\left(a_{ m}+k\right)\left({\textstyle\ifrac{\prod\limits_{\begin{subarray}{c}\ell=1\\ \ell\neq m\end{subarray}}^{p}\Gamma\left(a_{\ell}-a_{m}-k\right)}{\prod\limits _{\ell=1}^{q}\Gamma\left(b_{\ell}-a_{m}-k\right)}}\right)z^{-a_{m}-k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C16.S11.SS1.p1.s2">
+In (LABEL:eq:GH.AS.Z.DFE) <Math equation-number="16.11.3" mode="display" xml:id="C16.S11.E3">\kappa=q-p+1, \nu=a_{1}+\dots+a_{p}-b_{1}-\dots-b_{q}+\tfrac{1}{2}(q-p),</Math> and <Math equation-number="16.11.4" mode="display" xml:id="C16.S11.E4">c_{0}=1, c_{k}=-\frac{1}{k\kappa^{\kappa}}\sum_{m=0}^{k-1}c_{m}e_{k,m}, subject to k\geq 1,</Math> where <Math equation-number="16.11.5" mode="display" xml:id="C16.S11.E5">e_{k,m}=\sum_{j=1}^{q+1}{\left(1-\nu-\kappa b_{j}+m\right)_{\kappa+k-m}}\left( {\textstyle\ifrac{\prod\limits_{\ell=1}^{p}(a_{\ell}-b_{j})}{\prod\limits_{ \begin{subarray}{c}\ell=1\\ \ell\neq j\end{subarray}}^{q+1}(b_{\ell}-b_{j})}}\right),</Math> and <Math mode="inline" xml:id="C16.S11.SS1.p1.m3">b_{q+1}=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C16.S11.SS1.p2.s1">
+It may be observed that <Math mode="inline" xml:id="C16.S11.SS1.p2.m1">H_{p,q}(z)</Math> represents the sum of the residues of the poles of the integrand in (LABEL:eq:GH.IR.M1) at <Math mode="inline" xml:id="C16.S11.SS1.p2.m2">s=-a_{j},-a_{j}-1,\dots</Math> , <Math mode="inline" xml:id="C16.S11.SS1.p2.m3">j=1,\dots,p</Math> , provided that these poles are all simple, that is, no two of the <Math mode="inline" xml:id="C16.S11.SS1.p2.m4">a_{j}</Math> differ by an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="157" xml:id="C16.S11.SS1.p2.s2">
+(Ifthis condition is violated, then the definition of <Math mode="inline" xml:id="C16.S11.SS1.p2.m5">H_{p,q}(z)</Math> has to be modified so that the residues are those associated with the multiple poles.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="158" xml:id="C16.S11.SS1.p2.s3">
+In consequence, logarithmic terms may appear.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="159" xml:id="C16.S11.SS1.p2.s4">
+See (LABEL:eq:HY.LTLC.8)for an example.)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S11.SS2">
+<title>Expansions for Large Variable</title>         
+ 
+<para xml:id="C16.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C16.S11.SS2.p1.s1">
+In this subsection we assume that none of <Math mode="inline" xml:id="C16.S11.SS2.p1.m1">a_{1},a_{2},\dots,a_{p}</Math> is a nonpositive integer.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C16.S11.Px1">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px1.m1">p=q+1</Math></title>   
+<para xml:id="C16.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="161" xml:id="C16.S11.Px1.p1.s1">
+The formal series (LABEL:eq:GH.AS.Z.DFH) for <Math mode="inline" xml:id="C16.S11.Px1.p1.m1">H_{q+1,q}(z)</Math> converges if <Math mode="inline" xml:id="C16.S11.Px1.p1.m2">\left|z\right|&gt;1</Math> , and <Math equation-number="16.11.6" mode="display" xml:id="C16.S11.E6">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q+1}\Gamma\left(a_{\ell}\right) }{\prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q+1}F_{q}} \left({a_{1},\dots,a_{q+1}\atop b_{1},\dots,b_{q}};z\right)=H_{q+1,q}(-z), subject to |\operatorname{ph}\left(-z\right)|\leq\pi;</Math> compare (LABEL:eq:GH.DE.CON).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px2">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px2.m1">p=q</Math></title>   
+<para xml:id="C16.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C16.S11.Px2.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px2.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px2.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.7" mode="display" xml:id="C16.S11.E7">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q}\Gamma\left(a_{\ell}\right)}{ \prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q}F_{q}} \left({a_{1},\dots,a_{q}\atop b_{1},\dots,b_{q}};z\right)\sim H_{q,q}(z{ \mathrm{e}^{\mp\pi\mathrm{i}}})+E_{q,q}(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="163" xml:id="C16.S11.Px2.p1.s2">
+Here the upper or lower signs are chosen according as <Math mode="inline" xml:id="C16.S11.Px2.p1.m3">z</Math> lies in the upper or lower half-plane; in consequence, in the fractional powers (§LABEL:sec:EF.EXP.POW) of <Math mode="inline" xml:id="C16.S11.Px2.p1.m4">ze^{\mp\pi i}</Math> its phases are <Math mode="inline" xml:id="C16.S11.Px2.p1.m5">\operatorname{ph}z\mp\pi</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="164" xml:id="C16.S11.Px2.p1.s3">
+(Either sign may be used when <Math mode="inline" xml:id="C16.S11.Px2.p1.m6">\operatorname{ph}z=0</Math> since the first term on the right-hand side becomes exponentially small compared with the second term.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="165" xml:id="C16.S11.Px2.p2.s1">
+Explicit representations for the coefficients <Math mode="inline" xml:id="C16.S11.Px2.p2.m1">c_{k}</Math> are given in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="166" xml:id="C16.S11.Px2.p2.s2">
+The special case <Math mode="inline" xml:id="C16.S11.Px2.p2.m2">a_{1}=1</Math> , <Math mode="inline" xml:id="C16.S11.Px2.p2.m3">p=q=2</Math> is discussed in ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px3">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px3.m1">p=q-1</Math></title>   
+<para xml:id="C16.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C16.S11.Px3.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px3.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px3.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.8" mode="display" xml:id="C16.S11.E8">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{q-1}\Gamma\left(a_{\ell}\right) }{\prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{q-1}F_{q}} \left({a_{1},\dots,a_{q-1}\atop b_{1},\dots,b_{q}};-z\right)\sim H_{q-1,q}(z)+ E_{q-1,q}(ze^{-\pi\mathrm{i}})+E_{q-1,q}(ze^{\pi\mathrm{i}}),</Math> with the same conventions on the phases of <Math mode="inline" xml:id="C16.S11.Px3.p1.m3">ze^{\mp\pi i}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C16.S11.Px4">
+<title>Case <Math mode="inline" xml:id="C16.S11.Px4.m1">p\leq q-2</Math></title>   
+<para xml:id="C16.S11.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="168" xml:id="C16.S11.Px4.p1.s1">
+As <Math mode="inline" xml:id="C16.S11.Px4.p1.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C16.S11.Px4.p1.m2">|\operatorname{ph}z|\leq\pi</Math> , <Math equation-number="16.11.9" mode="display" xml:id="C16.S11.E9">\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{p}\Gamma\left(a_{\ell}\right)}{ \prod\limits_{\ell=1}^{q}\Gamma\left(b_{\ell}\right)}}\right){{}_{p}F_{q}} \left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};-z\right)\sim E_{p,q}(ze^{- \pi\mathrm{i}})+E_{p,q}(ze^{\pi\mathrm{i}}),</Math> with the same conventions on the phases of <Math mode="inline" xml:id="C16.S11.Px4.p1.m3">ze^{\mp\pi i}</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S11.SS3">
+<title>Expansions for Large Parameters</title>          
+<para xml:id="C16.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="169" xml:id="C16.S11.SS3.p1.s1">
+If <Math mode="inline" xml:id="C16.S11.SS3.p1.m1">z</Math> is fixed and <Math mode="inline" xml:id="C16.S11.SS3.p1.m2">|\operatorname{ph}\left(1-z\right)|&lt;\pi</Math> , then for each nonnegative integer <Math mode="inline" xml:id="C16.S11.SS3.p1.m3">m</Math> <Math equation-number="16.11.10" mode="display" xml:id="C16.S11.E10">{{}_{p+1}F_{p}}\left({a_{1}+r,\dots,a_{k-1}+r,a_{k},\dots,a_{p+1}\atop b_{1}+r ,\dots,b_{k}+r,b_{k+1},\dots,b_{p}};z\right)=\sum_{n=0}^{m-1}\frac{{\left(a_{1 }+r\right)_{n}}\cdots{\left(a_{k-1}+r\right)_{n}}{\left(a_{k}\right)_{n}} \cdots{\left(a_{p+1}\right)_{n}}}{{\left(b_{1}+r\right)_{n}}\cdots{\left(b_{k} +r\right)_{n}}{\left(b_{k+1}\right)_{n}}\cdots{\left(b_{p}\right)_{n}}}\frac{z ^{n}}{n!}+O\left(\frac{1}{r^{m}}\right)</Math> , as <Math mode="inline" xml:id="C16.S11.SS3.p1.m4">r\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="170" xml:id="C16.S11.SS3.p1.s2">
+Here <Math mode="inline" xml:id="C16.S11.SS3.p1.m5">k</Math> can have any integer value from <Math mode="inline" xml:id="C16.S11.SS3.p1.m6">1</Math> to <Math mode="inline" xml:id="C16.S11.SS3.p1.m7">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="171" xml:id="C16.S11.SS3.p1.s3">
+Also if <Math mode="inline" xml:id="C16.S11.SS3.p1.m8">p&lt;q</Math> , then <Math equation-number="16.11.11" mode="display" xml:id="C16.S11.E11">{{}_{p}F_{q}}\left({a_{1}+r,\dots,a_{p}+r\atop b_{1}+r,\dots,b_{q}+r};z\right) =\sum_{n=0}^{m-1}\frac{{\left(a_{1}+r\right)_{n}}\cdots{\left(a_{p}+r\right)_{ n}}}{{\left(b_{1}+r\right)_{n}}\cdots{\left(b_{q}+r\right)_{n}}}\frac{z^{n}}{n !}+O\left(\frac{1}{r^{(q-p)m}}\right)</Math> , again as <Math mode="inline" xml:id="C16.S11.SS3.p1.m9">r\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="172" xml:id="C16.S11.SS3.p1.s4">
+For these and other results see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="173" xml:id="C16.S11.SS3.p1.s5">
+See also ( , §7.3) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C16.S11.SS3.p2.s1">
+Asymptotic expansions for the polynomials <Math mode="inline" xml:id="C16.S11.SS3.p2.m1">{{}_{p+2}F_{q}}\left(-r,r+a_{0},\mathbf{a};\mathbf{b};z\right)</Math> as <Math mode="inline" xml:id="C16.S11.SS3.p2.m2">r\to\infty</Math> through integer values are given in ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S12">
+<title>Products</title>          
+<para xml:id="C16.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C16.S12.p1.s1">
+ <Math equation-number="16.12.1" mode="display" xml:id="C16.S12.E1">{{}_{0}F_{1}}\left(-;a;z\right){{}_{0}F_{1}}\left(-;b;z\right)={{}_{2}F_{3}} \left({\frac{1}{2}(a+b),\frac{1}{2}(a+b-1)\atop a,b,a+b-1};4z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="176" xml:id="C16.S12.p1.s2">
+<Math equation-number="16.12.2" mode="display" xml:id="C16.S12.E2">\left({{}_{2}F_{1}}\left({a,b\atop a+b+\frac{1}{2}};z\right)\right)^{2}={{}_{3 }F_{2}}\left({2a,2b,a+b\atop a+b+\frac{1}{2},2a+2b};z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="177" xml:id="C16.S12.p1.s3">
+More generally, <Math equation-number="16.12.3" mode="display" xml:id="C16.S12.E3">\left({{}_{2}F_{1}}\left({a,b\atop c};z\right)\right)^{2}=\sum_{k=0}^{\infty} \frac{{\left(2a\right)_{k}}{\left(2b\right)_{k}}{\left(c-\frac{1}{2}\right)_{k }}}{{\left(c\right)_{k}}{\left(2c-1\right)_{k}}k!}{{}_{4}F_{3}}\left({-\frac{1 }{2}k,\frac{1}{2}(1-k),a+b-c+\frac{1}{2},\frac{1}{2}\atop a+\frac{1}{2},b+ \frac{1}{2},\frac{3}{2}-k-c};1\right)z^{k}, subject to |z|&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C16.S12.p2.s1">
+For further identities see ( ) and ( , §4.3) .
+</sentence>
+
+</para>
+ 
+</section>
+            
+<section xml:id="C16.S13">
+<title>Appell Functions</title>            
+ 
+<para xml:id="C16.S13.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="179" xml:id="C16.S13.p1.s1">
+The following four functions of two real or complex variables <Math mode="inline" xml:id="C16.S13.p1.m1">x</Math> and <Math mode="inline" xml:id="C16.S13.p1.m2">y</Math> cannot be expressed as a product of two <Math mode="inline" xml:id="C16.S13.p1.m3">{{}_{2}F_{1}}</Math> functions, in general, but they satisfy partial differential equations that resemble the hypergeometric differential equation (LABEL:eq:HY.DE.DE): <Math equation-number="16.13.1" mode="display" xml:id="C16.S13.E1">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=\sum_{m,n=0}^{ \infty}\frac{{\left(\alpha\right)_{m+n}}{\left(\beta\right)_{m}}{\left(\beta^{ \prime}\right)_{n}}}{{\left(\gamma\right)_{m+n}}m!n!}x^{m}y^{n}, subject to \max\left(|x|,|y|\right)&lt;1,</Math> , <Math equation-number="16.13.2" mode="display" xml:id="C16.S13.E2">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)= \sum_{m,n=0}^{\infty}\frac{{\left(\alpha\right)_{m+n}}{\left(\beta\right)_{m}} {\left(\beta^{\prime}\right)_{n}}}{{\left(\gamma\right)_{m}}{\left(\gamma^{ \prime}\right)_{n}}m!n!}x^{m}y^{n}, subject to |x|+|y|&lt;1,</Math> , <Math equation-number="16.13.3" mode="display" xml:id="C16.S13.E3">{F_{3}}\left(\alpha,\alpha^{\prime};\beta,\beta^{\prime};\gamma;x,y\right)= \sum_{m,n=0}^{\infty}\frac{{\left(\alpha\right)_{m}}{\left(\alpha^{\prime} \right)_{n}}{\left(\beta\right)_{m}}{\left(\beta^{\prime}\right)_{n}}}{{\left( \gamma\right)_{m+n}}m!n!}x^{m}y^{n}, subject to \max\left(|x|,|y|\right)&lt;1,</Math> , <Math equation-number="16.13.4" mode="display" xml:id="C16.S13.E4">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x,y\right)=\sum_{m,n=0}^{ \infty}\frac{{\left(\alpha\right)_{m+n}}{\left(\beta\right)_{m+n}}}{{\left( \gamma\right)_{m}}{\left(\gamma^{\prime}\right)_{n}}m!n!}x^{m}y^{n}, subject to \sqrt{|x|}+\sqrt{|y|}&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="180" xml:id="C16.S13.p1.s2">
+Here and elsewhere it is assumed that neither of the bottom parameters <Math mode="inline" xml:id="C16.S13.p1.m4">\gamma</Math> and <Math mode="inline" xml:id="C16.S13.p1.m5">\gamma^{\prime}</Math> is a nonpositive integer.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S13.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="181" xml:id="C16.S13.p2.s1">
+For large parameter asymptotics see ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S14">
+<title>Partial Differential Equations</title>         
+<subsection xml:id="C16.S14.SS1">
+<title>Appell Functions</title>         
+ 
+<para xml:id="C16.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="182" xml:id="C16.S14.SS1.p1.s1">
+ <Math equation-number="16.14.1" mode="display" xml:id="C16.S14.E1">x(1-x)\frac{{\partial}^{2}{F_{1}}}{{\partial x}^{2}}+y(1-x)\frac{{\partial}^{2 }{F_{1}}}{\partial x\partial y}+\left(\gamma-(\alpha+\beta+1)x\right)\frac{ \partial{F_{1}}}{\partial x}-\beta y\frac{\partial{F_{1}}}{\partial y}-\alpha \beta{F_{1}}=0, y(1-y)\frac{{\partial}^{2}{F_{1}}}{{\partial y}^{2}}+x(1-y)\frac{{\partial}^{2 }{F_{1}}}{\partial x\partial y}+\left(\gamma-(\alpha+\beta^{\prime}+1)y\right) \frac{\partial{F_{1}}}{\partial y}-\beta^{\prime}x\frac{\partial{F_{1}}}{ \partial x}-\alpha\beta^{\prime}{F_{1}}=0,</Math> <Math equation-number="16.14.2" mode="display" xml:id="C16.S14.E2">x(1-x)\frac{{\partial}^{2}{F_{2}}}{{\partial x}^{2}}-xy\frac{{\partial}^{2}{F_ {2}}}{\partial x\partial y}+\left(\gamma-(\alpha+\beta+1)x\right)\frac{ \partial{F_{2}}}{\partial x}-\beta y\frac{\partial{F_{2}}}{\partial y}-\alpha \beta{F_{2}}=0, y(1-y)\frac{{\partial}^{2}{F_{2}}}{{\partial y}^{2}}-xy\frac{{\partial}^{2}{F_ {2}}}{\partial x\partial y}+\left(\gamma^{\prime}-(\alpha+\beta^{\prime}+1)y \right)\frac{\partial{F_{2}}}{\partial y}-\beta^{\prime}x\frac{\partial{F_{2}} }{\partial x}-\alpha\beta^{\prime}{F_{2}}=0,</Math> <Math equation-number="16.14.3" mode="display" xml:id="C16.S14.E3">x(1-x)\frac{{\partial}^{2}{F_{3}}}{{\partial x}^{2}}+y\frac{{\partial}^{2}{F_{ 3}}}{\partial x\partial y}+\left(\gamma-(\alpha+\beta+1)x\right)\frac{\partial {F_{3}}}{\partial x}-\alpha\beta{F_{3}}=0, y(1-y)\frac{{\partial}^{2}{F_{3}}}{{\partial y}^{2}}+x\frac{{\partial}^{2}{F_{ 3}}}{\partial x\partial y}+\left(\gamma-(\alpha^{\prime}+\beta^{\prime}+1)y \right)\frac{\partial{F_{3}}}{\partial y}-\alpha^{\prime}\beta^{\prime}{F_{3}} =0,</Math> <Math equation-number="16.14.4" mode="display" xml:id="C16.S14.E4">x(1-x)\frac{{\partial}^{2}{F_{4}}}{{\partial x}^{2}}-2xy\frac{{\partial}^{2}{F _{4}}}{\partial x\partial y}-y^{2}\frac{{\partial}^{2}{F_{4}}}{{\partial y}^{2 }}+\left(\gamma-(\alpha+\beta+1)x\right)\frac{\partial{F_{4}}}{\partial x}-( \alpha+\beta+1)y\frac{\partial{F_{4}}}{\partial y}-\alpha\beta{F_{4}}=0, y(1-y)\frac{{\partial}^{2}{F_{4}}}{{\partial y}^{2}}-2xy\frac{{\partial}^{2}{F _{4}}}{\partial x\partial y}-x^{2}\frac{{\partial}^{2}{F_{4}}}{{\partial x}^{2 }}+\left(\gamma^{\prime}-(\alpha+\beta+1)y\right)\frac{\partial{F_{4}}}{ \partial y}-(\alpha+\beta+1)x\frac{\partial{F_{4}}}{\partial x}-\alpha\beta{F_ {4}}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S14.SS2">
+<title>Other Functions</title>        
+ 
+<para xml:id="C16.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C16.S14.SS2.p1.s1">
+In addition to the four Appell functions there are <Math mode="inline" xml:id="C16.S14.SS2.p1.m1">24</Math> other sums of double series that cannot be expressed as a product of two <Math mode="inline" xml:id="C16.S14.SS2.p1.m2">{{}_{2}F_{1}}</Math> functions, and which satisfy pairs of linear partial differential equations of the second order.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="184" xml:id="C16.S14.SS2.p1.s2">
+Two examples are provided by <Math equation-number="16.14.5" mode="display" xml:id="C16.S14.E5">G_{2}(\alpha,\alpha^{\prime};\beta,\beta^{\prime};x,y)=\sum_{m,n=0}^{\infty} \frac{\Gamma\left(\alpha+m\right)\Gamma\left(\alpha^{\prime}+n\right)\Gamma \left(\beta+n-m\right)\Gamma\left(\beta^{\prime}+m-n\right)}{\Gamma\left( \alpha\right)\Gamma\left(\alpha^{\prime}\right)\Gamma\left(\beta\right)\Gamma \left(\beta^{\prime}\right)}\frac{x^{m}y^{n}}{m!n!}, subject to |x|&lt;1, |y|&lt;1,</Math> , <Math equation-number="16.14.6" mode="display" xml:id="C16.S14.E6">G_{3}(\alpha,\alpha^{\prime};x,y)=\sum_{m,n=0}^{\infty}\frac{\Gamma\left( \alpha+2n-m\right)\Gamma\left(\alpha^{\prime}+2m-n\right)}{\Gamma\left(\alpha \right)\Gamma\left(\alpha^{\prime}\right)}\frac{x^{m}y^{n}}{m!n!}, subject to |x|+|y|&lt;\frac{1}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="185" xml:id="C16.S14.SS2.p1.s3">
+(The region of convergence <Math mode="inline" xml:id="C16.S14.SS2.p1.m3">|x|+|y|&lt;\frac{1}{4}</Math> is not quite maximal.)See ( , §§5.7.1–5.7.2) for further information.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S15">
+<title>Integral Representations and Integrals</title>          
+ 
+<para xml:id="C16.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C16.S15.p1.s1">
+ <Math equation-number="16.15.1" mode="display" xml:id="C16.S15.E1">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=\frac{\Gamma\left( \gamma\right)}{\Gamma\left(\alpha\right)\Gamma\left(\gamma-\alpha\right)}\int_ {0}^{1}\frac{u^{\alpha-1}(1-u)^{\gamma-\alpha-1}}{(1-ux)^{\beta}(1-uy)^{\beta^ {\prime}}}\mathrm{d}u, subject to \Re\alpha&gt;0, \Re(\gamma-\alpha)&gt;0,</Math> <Math equation-number="16.15.2" mode="display" xml:id="C16.S15.E2">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)= \frac{\Gamma\left(\gamma\right)\Gamma\left(\gamma^{\prime}\right)}{\Gamma\left (\beta\right)\Gamma\left(\beta^{\prime}\right)\Gamma\left(\gamma-\beta\right) \Gamma\left(\gamma^{\prime}-\beta^{\prime}\right)}\int_{0}^{1}\!\!\!\int_{0}^{ 1}\frac{u^{\beta-1}v^{\beta^{\prime}-1}(1-u)^{\gamma-\beta-1}(1-v)^{\gamma^{ \prime}-\beta^{\prime}-1}}{(1-ux-vy)^{\alpha}}\mathrm{d}u\mathrm{d}v, subject to \Re\gamma&gt;\Re\beta&gt;0, \Re\gamma^{\prime}&gt;\Re\beta^{\prime}&gt;0,</Math> <Math equation-number="16.15.3" mode="display" xml:id="C16.S15.E3">{F_{3}}\left(\alpha,\alpha^{\prime};\beta,\beta^{\prime};\gamma;x,y\right)= \frac{\Gamma\left(\gamma\right)}{\Gamma\left(\beta\right)\Gamma\left(\beta^{ \prime}\right)\Gamma\left(\gamma-\beta-\beta^{\prime}\right)}\iint_{\Delta} \frac{u^{\beta-1}v^{\beta^{\prime}-1}(1-u-v)^{\gamma-\beta-\beta^{\prime}-1}}{ (1-ux)^{\alpha}(1-vy)^{\alpha^{\prime}}}\mathrm{d}u\mathrm{d}v, subject to \Re(\gamma-\beta-\beta^{\prime})&gt;0, \Re\beta&gt;0, \Re\beta^{\prime}&gt;0,</Math> where <Math mode="inline" xml:id="C16.S15.p1.m1">\Delta</Math> is the triangle defined by <Math mode="inline" xml:id="C16.S15.p1.m2">u\geq 0</Math> , <Math mode="inline" xml:id="C16.S15.p1.m3">v\geq 0</Math> , <Math mode="inline" xml:id="C16.S15.p1.m4">u+v\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="187" xml:id="C16.S15.p1.s2">
+<Math equation-number="16.15.4" mode="display" xml:id="C16.S15.E4">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x(1-y),y(1-x)\right)=\frac{ \Gamma\left(\gamma\right)\Gamma\left(\gamma^{\prime}\right)}{\Gamma\left( \alpha\right)\Gamma\left(\beta\right)\Gamma\left(\gamma-\alpha\right)\Gamma \left(\gamma^{\prime}-\beta\right)}\int_{0}^{1}\!\!\!\int_{0}^{1}\frac{u^{ \alpha-1}v^{\beta-1}(1-u)^{\gamma-\alpha-1}(1-v)^{\gamma^{\prime}-\beta-1}}{(1 -ux)^{\gamma+\gamma^{\prime}-\alpha-1}(1-vy)^{\gamma+\gamma^{\prime}-\beta-1}( 1-ux-vy)^{\alpha+\beta-\gamma-\gamma^{\prime}+1}}\mathrm{d}u\mathrm{d}v, subject to \Re\gamma&gt;\Re\alpha&gt;0, \Re\gamma^{\prime}&gt;\Re\beta&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="188" xml:id="C16.S15.p1.s3">
+For these and other formulas, including double Mellin–Barnes integrals, see ( , §5.8) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="189" xml:id="C16.S15.p1.s4">
+These representations can be used to derive analytic continuations of the Appell functions, including convergent series expansions for large <Math mode="inline" xml:id="C16.S15.p1.m5">x</Math> , large <Math mode="inline" xml:id="C16.S15.p1.m6">y</Math> , or both.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="190" xml:id="C16.S15.p1.s5">
+For inverse Laplace transforms of Appell functions see ( , §3.40) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S16">
+<title>Transformations of Variables</title>          
+<subsection xml:id="C16.S16.SS1">
+<title>Reduction Formulas</title>          
+ 
+<para xml:id="C16.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="191" xml:id="C16.S16.SS1.p1.s1">
+ <Math equation-number="16.16.1" mode="display" xml:id="C16.S16.E1">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\beta+\beta^{\prime};x,y\right)=(1-y) ^{-\alpha}{{}_{2}F_{1}}\left({\alpha,\beta\atop\beta+\beta^{\prime}};\frac{x-y }{1-y}\right),</Math> , <Math equation-number="16.16.2" mode="display" xml:id="C16.S16.E2">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\beta^{\prime};x,y\right)=(1-y )^{-\alpha}{{}_{2}F_{1}}\left({\alpha,\beta\atop\gamma};\frac{x}{1-y}\right),</Math> , <Math equation-number="16.16.3" mode="display" xml:id="C16.S16.E3">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\alpha;x,y\right)=(1-y)^{- \beta^{\prime}}{F_{1}}\left(\beta;\alpha-\beta^{\prime},\beta^{\prime};\gamma; x,\frac{x}{1-y}\right),</Math> , <Math equation-number="16.16.4" mode="display" xml:id="C16.S16.E4">{F_{3}}\left(\alpha,\gamma-\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=(1-y) ^{-\beta^{\prime}}{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,\frac{y}{y -1}\right),</Math> , <Math equation-number="16.16.5" mode="display" xml:id="C16.S16.E5">{F_{3}}\left(\alpha,\gamma-\alpha;\beta,\gamma-\beta;\gamma;x,y\right)=(1-y)^{ \alpha+\beta-\gamma}{{}_{2}F_{1}}\left({\alpha,\beta\atop\gamma};x+y-xy\right),</Math> , <Math equation-number="16.16.6" mode="display" xml:id="C16.S16.E6">{F_{4}}\left(\alpha,\beta;\gamma,\alpha+\beta-\gamma+1;x(1-y),y(1-x)\right)={{ }_{2}F_{1}}\left({\alpha,\beta\atop\gamma};x\right){{}_{2}F_{1}}\left({\alpha, \beta\atop\alpha+\beta-\gamma+1};y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="192" xml:id="C16.S16.SS1.p1.s2">
+See ( , §5.10) for these and further reduction formulas.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="193" xml:id="C16.S16.SS1.p1.s3">
+An extension of (LABEL:eq:GH.TV.RF4) is given by <Math equation-number="16.16.7" mode="display" xml:id="C16.S16.E7">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x(1-y),y(1-x)\right)=\sum_{k= 0}^{\infty}\frac{{\left(\alpha\right)_{k}}{\left(\beta\right)_{k}}{\left( \alpha+\beta-\gamma-\gamma^{\prime}+1\right)_{k}}}{{\left(\gamma\right)_{k}}{ \left(\gamma^{\prime}\right)_{k}}k!}x^{k}y^{k}{{}_{2}F_{1}}\left({\alpha+k, \beta+k\atop\gamma+k};x\right){{}_{2}F_{1}}\left({\alpha+k,\beta+k\atop\gamma^ {\prime}+k};y\right);</Math> see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S16.SS2">
+<title>Other Transformations</title>        
+ 
+<para xml:id="C16.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="194" xml:id="C16.S16.SS2.p1.s1">
+ <Math equation-number="16.16.8" mode="display" xml:id="C16.S16.E8">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=(1-x)^{-\beta}(1-y) ^{-\beta^{\prime}}{F_{1}}\left(\gamma-\alpha;\beta,\beta^{\prime};\gamma;\frac {x}{x-1},\frac{y}{y-1}\right)=(1-x)^{-\alpha}{F_{1}}\left(\alpha;\gamma-\beta- \beta^{\prime},\beta^{\prime};\gamma;\frac{x}{x-1},\frac{y-x}{1-x}\right),</Math> <Math equation-number="16.16.9" mode="display" xml:id="C16.S16.E9">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)=(1- x)^{-\alpha}{F_{2}}\left(\alpha;\gamma-\beta,\beta^{\prime};\gamma,\gamma^{ \prime};\frac{x}{x-1},\frac{y}{1-x}\right),</Math> <Math equation-number="16.16.10" mode="display" xml:id="C16.S16.E10">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x,y\right)=\frac{\Gamma\left( \gamma^{\prime}\right)\Gamma\left(\beta-\alpha\right)}{\Gamma\left(\gamma^{ \prime}-\alpha\right)\Gamma\left(\beta\right)}(-y)^{-\alpha}{F_{4}}\left( \alpha,\alpha-\gamma^{\prime}+1;\gamma,\alpha-\beta+1;\frac{x}{y},\frac{1}{y} \right)+\frac{\Gamma\left(\gamma^{\prime}\right)\Gamma\left(\alpha-\beta\right )}{\Gamma\left(\gamma^{\prime}-\beta\right)\Gamma\left(\alpha\right)}(-y)^{- \beta}{F_{4}}\left(\beta,\beta-\gamma^{\prime}+1;\gamma,\beta-\alpha+1;\frac{x }{y},\frac{1}{y}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C16.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C16.S16.SS2.p2.s1">
+For quadratic transformations of Appell functions see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C16.S17">
+<title>Definition</title>         
+  
+<para xml:id="C16.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C16.S17.p1.s1">
+Again assume <Math mode="inline" xml:id="C16.S17.p1.m1">a_{1},a_{2},\dots,a_{p}</Math> and <Math mode="inline" xml:id="C16.S17.p1.m2">b_{1},b_{2},\dots,b_{q}</Math> are real or complex parameters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="197" xml:id="C16.S17.p1.s2">
+Assume also that <Math mode="inline" xml:id="C16.S17.p1.m3">m</Math> and <Math mode="inline" xml:id="C16.S17.p1.m4">n</Math> are integers such that <Math mode="inline" xml:id="C16.S17.p1.m5">0\leq m\leq q</Math> and <Math mode="inline" xml:id="C16.S17.p1.m6">0\leq n\leq p</Math> , and none of <Math mode="inline" xml:id="C16.S17.p1.m7">a_{k}-b_{j}</Math> is a positive integer when <Math mode="inline" xml:id="C16.S17.p1.m8">1\leq k\leq n</Math> and <Math mode="inline" xml:id="C16.S17.p1.m9">1\leq j\leq m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="198" xml:id="C16.S17.p1.s3">
+Then the Meijer <Math mode="inline" xml:id="C16.S17.p1.m10">G</Math> -function is defined via the Mellin–Barnes integral representation: <Math equation-number="16.17.1" mode="display" xml:id="C16.S17.E1">{G^{m,n}_{p,q}}\left(z;\mathbf{a};\mathbf{b}\right)={G^{m,n}_{p,q}}\left(z;{a_ {1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)=\frac{1}{2\pi\mathrm{i}}\int_{L }\left({\textstyle\ifrac{\prod\limits_{\ell=1}^{m}\Gamma\left(b_{\ell}-s\right )\prod\limits_{\ell=1}^{n}\Gamma\left(1-a_{\ell}+s\right)}{\left(\prod\limits_ {\ell=m}^{q-1}\Gamma\left(1-b_{\ell+1}+s\right)\prod\limits_{\ell=n}^{p-1} \Gamma\left(a_{\ell+1}-s\right)\right)}}\right)z^{s}\mathrm{d}s,</Math> where the integration path <Math mode="inline" xml:id="C16.S17.p1.m12">L</Math> separates the poles of the factors <Math mode="inline" xml:id="C16.S17.p1.m13">\Gamma\left(b_{\ell}-s\right)</Math> from those of the factors <Math mode="inline" xml:id="C16.S17.p1.m14">\Gamma\left(1-a_{\ell}+s\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="199" xml:id="C16.S17.p1.s4">
+There are three possible choices for <Math mode="inline" xml:id="C16.S17.p1.m15">L</Math> , illustrated in Figure LABEL:fig:GH.MG.CON in the case <Math mode="inline" xml:id="C16.S17.p1.m16">m=1</Math> , <Math mode="inline" xml:id="C16.S17.p1.m17">n=2</Math> : <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m1">L</Math> goes from <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m2">-\mathrm{i}\infty</Math> to <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m3">\mathrm{i}\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="200" xml:id="C16.S17.p1.s5">
+The integral converges if <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m4">p+q&lt;2(m+n)</Math> and <Math mode="inline" xml:id="C16.S17.I1.ix1.p1.m5">|\operatorname{ph}z|&lt;(m+n-\frac{1}{2}(p+q))\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="201" xml:id="C16.S17.p1.s6">
+<Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m1">L</Math> is a loop that starts at infinity on a line parallel to the positive real axis, encircles the poles of the <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m2">\Gamma\left(b_{\ell}-s\right)</Math> once in the negative sense and returns to infinity on another line parallel to the positive real axis.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="202" xml:id="C16.S17.p1.s7">
+The integral converges for all <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m3">z</Math> ( <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m4">\neq 0</Math> ) if <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m5">p&lt;q</Math> , and for <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m6">0&lt;|z|&lt;1</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix2.p1.m7">p=q\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="203" xml:id="C16.S17.p1.s8">
+<Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m1">L</Math> is a loop that starts at infinity on a line parallel to the negative real axis, encircles the poles of the <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m2">\Gamma\left(1-a_{\ell}+s\right)</Math> once in the positive sense and returns to infinity on another line parallel to the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="204" xml:id="C16.S17.p1.s9">
+The integral converges for all <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m3">z</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m4">p&gt;q</Math> , and for <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m5">|z|&gt;1</Math> if <Math mode="inline" xml:id="C16.S17.I1.ix3.p1.m6">p=q\geq 1</Math>.
+</sentence>
+
+</para>
+        
+
+<sentence sentence-num-in-section="205" sentence-num-in-table="1" xml:id="C16.S17.F1.t1.s1">
+Case (i)
+</sentence>
+
+<sentence sentence-num-in-section="206" sentence-num-in-table="2" xml:id="C16.S17.F1.t1.s2">
+Case (ii)
+</sentence>
+
+<sentence sentence-num-in-section="207" sentence-num-in-table="3" xml:id="C16.S17.F1.t1.s3">
+Case (iii)
+</sentence>
+  
+<sentence sentence-num-in-section="208" xml:id="C16.S17.F1.s1">
+Figure 16.17.1: -plane. Path <Math mode="inline" xml:id="C16.S17.F1.m3">L</Math> for the integral representation ( ) of the Meijer <Math mode="inline" xml:id="C16.S17.F1.m4">G</Math> -function.
+</sentence>  
+<para xml:id="C16.S17.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="209" xml:id="C16.S17.p2.s1">
+When more than one of Cases (i), (ii), and (iii) is applicable the same value is obtained for the Meijer <Math mode="inline" xml:id="C16.S17.p2.m1">G</Math> -function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S17.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C16.S17.p3.s1">
+Assume <Math mode="inline" xml:id="C16.S17.p3.m1">p\leq q</Math> , no two of the bottom parameters <Math mode="inline" xml:id="C16.S17.p3.m2">b_{j}</Math> , <Math mode="inline" xml:id="C16.S17.p3.m3">j=1,\dots,m</Math> , differ by an integer, and <Math mode="inline" xml:id="C16.S17.p3.m4">a_{j}-b_{k}</Math> is not a positive integer when <Math mode="inline" xml:id="C16.S17.p3.m5">j=1,2,\dots,n</Math> and <Math mode="inline" xml:id="C16.S17.p3.m6">k=1,2,\dots,m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="211" xml:id="C16.S17.p3.s2">
+Then <Math equation-number="16.17.2" mode="display" xml:id="C16.S17.E2">{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)=\sum_ {k=1}^{m}A_{p,q,k}^{m,n}(z){{}_{p}F_{q-1}}\left({1+b_{k}-a_{1},\dots,1+b_{k}-a _{p}\atop 1+b_{k}-b_{1},\ldots*\dots,1+b_{k}-b_{q}};(-1)^{p-m-n}z\right),</Math> where <Math mode="inline" xml:id="C16.S17.p3.m8">*</Math> indicates that the entry <Math mode="inline" xml:id="C16.S17.p3.m9">1+b_{k}-b_{k}</Math> is omitted. Also, <Math equation-number="16.17.3" mode="display" xml:id="C16.S17.E3">A_{p,q,k}^{m,n}(z)=\ifrac{\prod\limits_{\begin{subarray}{c}\ell=1\\ \ell\neq k\end{subarray}}^{m}\Gamma\left(b_{\ell}-b_{k}\right)\prod\limits_{ \ell=1}^{n}\Gamma\left(1+b_{k}-a_{\ell}\right)z^{b_{k}}}{\left(\prod\limits_{ \ell=m}^{q-1}\Gamma\left(1+b_{k}-b_{\ell+1}\right)\prod\limits_{\ell=n}^{p-1} \Gamma\left(a_{\ell+1}-b_{k}\right)\right)}</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C16.S18">
+<title>Special Cases</title>        
+   
+<para xml:id="C16.S18.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C16.S18.p1.s1">
+The <Math mode="inline" xml:id="C16.S18.p1.m1">{{}_{1}F_{1}}</Math> and <Math mode="inline" xml:id="C16.S18.p1.m2">{{}_{2}F_{1}}</Math> functions introduced in ChaptersLABEL:ch:CH and LABEL:ch:HY, as well as the more general <Math mode="inline" xml:id="C16.S18.p1.m3">{{}_{p}F_{q}}</Math> functions introduced in the present chapter, are all special cases of the Meijer <Math mode="inline" xml:id="C16.S18.p1.m4">G</Math> -function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C16.S18.p1.s2">
+This is a consequence of the following relations: <Math equation-number="16.18.1" mode="display" xml:id="C16.S18.E1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};z\right)=\left({ \textstyle\ifrac{\prod\limits_{k=1}^{q}\Gamma\left(b_{k}\right)}{\prod\limits_ {k=1}^{p}\Gamma\left(a_{k}\right)}}\right){G^{1,p}_{p,q+1}}\left(-z;{1-a_{1}, \dots,1-a_{p}\atop 0,1-b_{1},\dots,1-b_{q}}\right)=\left({\textstyle\ifrac{ \prod\limits_{k=1}^{q}\Gamma\left(b_{k}\right)}{\prod\limits_{k=1}^{p}\Gamma \left(a_{k}\right)}}\right){G^{p,1}_{q+1,p}}\left(-\frac{1}{z};{1,b_{1},\dots, b_{q}\atop a_{1},\dots,a_{p}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="214" xml:id="C16.S18.p1.s3">
+As a corollary, special cases of the <Math mode="inline" xml:id="C16.S18.p1.m5">{{}_{1}F_{1}}</Math> and <Math mode="inline" xml:id="C16.S18.p1.m6">{{}_{2}F_{1}}</Math> functions, including Airy functions, Bessel functions, parabolic cylinderfunctions, Ferrers functions, associated Legendre functions, and many orthogonal polynomials, are all special cases of the Meijer <Math mode="inline" xml:id="C16.S18.p1.m7">G</Math> -function.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="215" xml:id="C16.S18.p1.s4">
+Representations of special functions in terms of the Meijer <Math mode="inline" xml:id="C16.S18.p1.m8">G</Math> -function are given in ( , §5.6) , ( , §§6.4–6.5), and ( , §3.10) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S19">
+<title>Identities</title>          
+<para xml:id="C16.S19.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C16.S19.p1.s1">
+ <Math equation-number="16.19.1" mode="display" xml:id="C16.S19.E1">{G^{m,n}_{p,q}}\left(\frac{1}{z};{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}} \right)={G^{n,m}_{q,p}}\left(z;{1-b_{1},\dots,1-b_{q}\atop 1-a_{1},\dots,1-a_{ p}}\right),</Math> , <Math equation-number="16.19.2" mode="display" xml:id="C16.S19.E2">z^{\mu}{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right )={G^{m,n}_{p,q}}\left(z;{a_{1}+\mu,\dots,a_{p}+\mu\atop b_{1}+\mu,\dots,b_{q} +\mu}\right),</Math> , <Math equation-number="16.19.3" mode="display" xml:id="C16.S19.E3">{G^{m,n+1}_{p+1,q+1}}\left(z;{a_{0},\dots,a_{p}\atop b_{1},\dots,b_{q},a_{0}} \right)={G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}} \right),</Math> <Math equation-number="16.19.4" mode="display" xml:id="C16.S19.E4">{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}}\right)=\frac {2^{p+1+b_{1}+\dots+b_{q}-m-n-a_{1}-\dots-a_{p}}}{\pi^{m+n-\frac{1}{2}(p+q)}}{ G^{2m,2n}_{2p,2q}}\left(2^{2p-2q}z^{2};{\frac{1}{2}a_{1},\frac{1}{2}a_{1}+ \frac{1}{2},\dots,\frac{1}{2}a_{p},\frac{1}{2}a_{p}+\frac{1}{2}\atop\frac{1}{2 }b_{1},\frac{1}{2}b_{1}+\frac{1}{2},\dots,\frac{1}{2}b_{q},\frac{1}{2}b_{q}+ \frac{1}{2}}\right),</Math> <Math equation-number="16.19.5" mode="display" xml:id="C16.S19.E5">\vartheta{G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}} \right)={G^{m,n}_{p,q}}\left(z;{a_{1}-1,a_{2},\dots,a_{p}\atop b_{1},\dots,b_{ q}}\right)+(a_{1}-1){G^{m,n}_{p,q}}\left(z;{a_{1},\dots,a_{p}\atop b_{1},\dots ,b_{q}}\right),</Math> <Math equation-number="16.19.6" mode="display" xml:id="C16.S19.E6">\int_{0}^{1}t^{-a_{0}}(1-t)^{a_{0}-b_{q+1}-1}{G^{m,n}_{p,q}}\left(zt;{a_{1}, \dots,a_{p}\atop b_{1},\dots,b_{q}}\right)\mathrm{d}t=\Gamma\left(a_{0}-b_{q+1 }\right){G^{m,n+1}_{p+1,q+1}}\left(z;{a_{0},\dots,a_{p}\atop b_{1},\dots,b_{q+ 1}}\right),</Math> where again <Math mode="inline" xml:id="C16.S19.p1.m1">\vartheta=z\ifrac{\mathrm{d}}{\mathrm{d}z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="217" xml:id="C16.S19.p1.s2">
+For conditions for (LABEL:eq:GH.MG.SI.6) see ( , Chapter 5) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="218" xml:id="C16.S19.p1.s3">
+This reference and ( , §§2.2 and 2.4) also supply additional identities.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S20">
+<title>Integrals and Series</title>          
+<para xml:id="C16.S20.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="219" xml:id="C16.S20.p1.s1">
+Integrals of the Meijer <Math mode="inline" xml:id="C16.S20.p1.m1">G</Math> -function are given in ( , §19) , ( , §5.5.2) , ( , §§6.9 and 7.5) , ( , §3.6) , ( , §5.6) , ( , §3.10) , and ( , §2.24) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="220" xml:id="C16.S20.p1.s2">
+Extensive lists of Laplace transforms and inverse Laplace transforms of the Meijer <Math mode="inline" xml:id="C16.S20.p1.m2">G</Math> -function are given in ( , §3.40) and ( , §3.38) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S20.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="221" xml:id="C16.S20.p2.s1">
+Series of the Meijer <Math mode="inline" xml:id="C16.S20.p2.m1">G</Math> -function are given in ( , §5.5.1) , ( , §5.8) , and ( , §6.11) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S21">
+<title>Differential Equation</title>             
+<para xml:id="C16.S21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="222" xml:id="C16.S21.p1.s1">
+ <Math mode="inline" xml:id="C16.S21.p1.m1">w={G^{m,n}_{p,q}}\left(z;\mathbf{a};\mathbf{b}\right)</Math> satisfies the differential equation <Math equation-number="16.21.1" mode="display" xml:id="C16.S21.E1">\left((-1)^{p-m-n}z(\vartheta-a_{1}+1)\cdots(\vartheta-a_{p}+1)-(\vartheta-b_{ 1})\cdots(\vartheta-b_{q})\right)w=0,</Math> where again <Math mode="inline" xml:id="C16.S21.p1.m2">\vartheta=z\ifrac{\mathrm{d}}{\mathrm{d}z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="223" xml:id="C16.S21.p1.s2">
+This equation is of order <Math mode="inline" xml:id="C16.S21.p1.m3">\max(p,q)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="224" xml:id="C16.S21.p1.s3">
+In consequence of (LABEL:eq:GH.MG.SI.1) we may assume, without loss of generality, that <Math mode="inline" xml:id="C16.S21.p1.m4">p\leq q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="225" xml:id="C16.S21.p1.s4">
+With the classification of §LABEL:sec:GH.DE.CL, when <Math mode="inline" xml:id="C16.S21.p1.m5">p&lt;q</Math> the only singularities of (LABEL:eq:GH.MG.DEQ) are a regular singularity at <Math mode="inline" xml:id="C16.S21.p1.m6">z=0</Math> and an irregular singularity at <Math mode="inline" xml:id="C16.S21.p1.m7">z=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="226" xml:id="C16.S21.p1.s5">
+When <Math mode="inline" xml:id="C16.S21.p1.m8">p=q</Math> the only singularities of (LABEL:eq:GH.MG.DEQ) are regular singularities at <Math mode="inline" xml:id="C16.S21.p1.m9">z=0</Math> , <Math mode="inline" xml:id="C16.S21.p1.m10">(-1)^{p-m-n}</Math> , and <Math mode="inline" xml:id="C16.S21.p1.m11">\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S21.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C16.S21.p2.s1">
+A fundamental set of solutions of (LABEL:eq:GH.MG.DEQ) is given by <Math equation-number="16.21.2" mode="display" xml:id="C16.S21.E2">{G^{1,p}_{p,q}}\left(z{\mathrm{e}^{(p-m-n-1)\pi\mathrm{i}}};{a_{1},\dots,a_{p} \atop b_{j},b_{1},\dots,b_{j-1},b_{j+1},\dots,b_{q}}\right), subject to j=1,\dots,q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="228" xml:id="C16.S21.p2.s2">
+For other fundamental sets see ( , §5.4) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S22">
+<title>Asymptotic Expansions</title>        
+  
+<para xml:id="C16.S22.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C16.S22.p1.s1">
+Asymptotic expansions of <Math mode="inline" xml:id="C16.S22.p1.m1">{G^{m,n}_{p,q}}\left(z;\mathbf{a};\mathbf{b}\right)</Math> for large <Math mode="inline" xml:id="C16.S22.p1.m2">z</Math> are given in ( , §§5.7 and 5.10) and ( , §5.9) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="230" xml:id="C16.S22.p1.s2">
+For asymptotic expansions of Meijer <Math mode="inline" xml:id="C16.S22.p1.m3">G</Math> -functions with large parameters see ( ) .
+</sentence>
+
+</para>
+  
+</section>
+           
+<section xml:id="C16.S23">
+<title>Mathematical Applications</title>          
+<subsection xml:id="C16.S23.SS1">
+<title>Differential Equations</title>        
+ 
+<para xml:id="C16.S23.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="231" xml:id="C16.S23.SS1.p1.s1">
+A variety of problems in classical mechanics and mathematical physics lead to Picard–Fuchs equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="232" xml:id="C16.S23.SS1.p1.s2">
+These equations are frequently solvable in terms of generalized hypergeometric functions, and the monodromy of generalized hypergeometric functions plays an important role in describing properties of the solutions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="233" xml:id="C16.S23.SS1.p1.s3">
+See, for example, ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S23.SS2">
+<title>Random Graphs</title>           
+<para xml:id="C16.S23.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="234" xml:id="C16.S23.SS2.p1.s1">
+A substantial transition occurs in a random graph of <Math mode="inline" xml:id="C16.S23.SS2.p1.m1">n</Math> vertices when the number of edges becomes approximately <Math mode="inline" xml:id="C16.S23.SS2.p1.m2">\frac{1}{2}n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="235" xml:id="C16.S23.SS2.p1.s2">
+In ( ) limiting distributions are discussed for the sparse connected components of these graphs, and the asymptotics of three <Math mode="inline" xml:id="C16.S23.SS2.p1.m3">{{}_{2}F_{2}}</Math> functions are applied to compute the expected value of the excess.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S23.SS3">
+<title>Conformal Mapping</title>        
+   
+<para xml:id="C16.S23.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C16.S23.SS3.p1.s1">
+The Bieberbach conjecture states that if <Math mode="inline" xml:id="C16.S23.SS3.p1.m1">\sum_{n=0}^{\infty}a_{n}z^{n}</Math> is a conformal map of the unit disk to any complex domain, then <Math mode="inline" xml:id="C16.S23.SS3.p1.m2">|a_{n}|\leq n|a_{1}|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C16.S23.SS3.p1.s2">
+In the proof of this conjecture ( ) uses the inequality <Math equation-number="16.23.1" mode="display" xml:id="C16.S23.E1">{{}_{3}F_{2}}\left({-n,n+\alpha+2,\frac{1}{2}(\alpha+1)\atop\alpha+1,\frac{1}{ 2}(\alpha+3)};x\right)&gt;0,</Math> when <Math mode="inline" xml:id="C16.S23.SS3.p1.m3">0\leq x&lt;1</Math> , <Math mode="inline" xml:id="C16.S23.SS3.p1.m4">\alpha&gt;-2</Math> , and <Math mode="inline" xml:id="C16.S23.SS3.p1.m5">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="238" xml:id="C16.S23.SS3.p1.s3">
+The proof of this inequality is given in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="239" xml:id="C16.S23.SS3.p1.s4">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S23.SS4">
+<title>Combinatorics and Number Theory</title>          
+ 
+<para xml:id="C16.S23.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C16.S23.SS4.p1.s1">
+Many combinatorial identities, especially ones involving binomial and related coefficients, are special cases of hypergeometric identities.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="241" xml:id="C16.S23.SS4.p1.s2">
+In ( ) tools are given for automated proofs of these identities.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C16.S24">
+<title>Physical Applications</title>           
+<subsection xml:id="C16.S24.SS1">
+<title>Random Walks</title>               
+<para xml:id="C16.S24.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="242" xml:id="C16.S24.SS1.p1.s1">
+Generalized hypergeometric functions and Appell functions appear in the evaluation of the so-called Watson integrals which characterize the simplest possible lattice walks.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="243" xml:id="C16.S24.SS1.p1.s2">
+They are also potentially useful for the solution of more complicated restricted lattice walk problems, and the 3D Ising model; see ( , pp. 147–148) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S24.SS2">
+<title>Loop Integrals in Feynman Diagrams</title>         
+ 
+<para xml:id="C16.S24.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="244" xml:id="C16.S24.SS2.p1.s1">
+Appell functions are used for the evaluation of one-loop integrals in Feynman diagrams.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="245" xml:id="C16.S24.SS2.p1.s2">
+See ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S24.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="246" xml:id="C16.S24.SS2.p2.s1">
+For an extension to two-loop integrals see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S24.SS3">
+<title><Math content-tex="3j" mode="inline" xml:id="C16.S24.SS3.m1">\mathit{3j}</Math>, <Math content-tex="6j" mode="inline" xml:id="C16.S24.SS3.m2">\mathit{6j}</Math>, and <Math content-tex="9j" mode="inline" xml:id="C16.S24.SS3.m3">\mathit{9j}</Math> Symbols</title>             
+<para xml:id="C16.S24.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="247" xml:id="C16.S24.SS3.p1.s1">
+The <Math mode="inline" xml:id="C16.S24.SS3.p1.m1">\mathit{3j}</Math> symbols, or Clebsch–Gordan coefficients, play an important role in the decomposition of reducible representations of the rotation group into irreducible representations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="248" xml:id="C16.S24.SS3.p1.s2">
+They can be expressed as <Math mode="inline" xml:id="C16.S24.SS3.p1.m2">{{}_{3}F_{2}}</Math> functions with unit argument.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="249" xml:id="C16.S24.SS3.p1.s3">
+The coefficients of transformations between different coupling schemes of three angular momenta are related to the Wigner <Math mode="inline" xml:id="C16.S24.SS3.p1.m3">\mathit{6j}</Math> symbols.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="250" xml:id="C16.S24.SS3.p1.s4">
+These are balanced <Math mode="inline" xml:id="C16.S24.SS3.p1.m4">{{}_{4}F_{3}}</Math> functions with unit argument.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="251" xml:id="C16.S24.SS3.p1.s5">
+Lastly, special cases of the <Math mode="inline" xml:id="C16.S24.SS3.p1.m5">\mathit{9j}</Math> symbols are <Math mode="inline" xml:id="C16.S24.SS3.p1.m6">{{}_{5}F_{4}}</Math> functionswith unit argument.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="252" xml:id="C16.S24.SS3.p1.s6">
+For further information see Chapter LABEL:ch:TJ and ( , §§8.2.5, 8.8, and 9.2.3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+            
+<section xml:id="C16.S25">
+<title>Methods of Computation</title>          
+<para xml:id="C16.S25.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="253" xml:id="C16.S25.p1.s1">
+Methods for computing the functions of the present chapter include power series, asymptotic expansions, integral representations, differential equations, and recurrence relations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="254" xml:id="C16.S25.p1.s2">
+They are similar to those described for confluent hypergeometric functions, and hypergeometric functions in §§LABEL:sec:CH.CO and LABEL:sec:HY.CO.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="255" xml:id="C16.S25.p1.s3">
+There is, however, an added feature in the numerical solution of differential equations and difference equations (recurrence relations).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="256" xml:id="C16.S25.p1.s4">
+This occurs when the wanted solution is intermediate in asymptotic growth compared with other solutions.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="257" xml:id="C16.S25.p1.s5">
+In these cases integration, or recurrence, in either a forward or a backward direction is unstable.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="258" xml:id="C16.S25.p1.s6">
+Instead a boundary-value problem needs to be formulated and solved. See §§LABEL:sec:NM.LDE.LDEOO, LABEL:sec:NM.ODE.BVP, ( ) , ( ) , and ( , Chapters 7, 8) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C16.S26">
+<title>Approximations</title>           
+<para xml:id="C16.S26.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="259" xml:id="C16.S26.p1.s1">
+For discussions of the approximation of generalized hypergeometric functions and the Meijer <Math mode="inline" xml:id="C16.S26.p1.m1">G</Math> -function in terms of polynomials, rational functions, and Chebyshev polynomials see ( , §§5.12 - 5.13) and ( , Chapters 1 and 9) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C16.S27">
+<title>Software</title>         
+<para xml:id="C16.S27.p1">
+
+</para>
+ 
+<subsection xml:id="C16.S27.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C16.S27.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="260" xml:id="C16.S27.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="261" xml:id="C16.S27.SS1.p1.s2">
+Citations in bulleted lists referto papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="262" xml:id="C16.S27.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C16.S27.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="263" xml:id="C16.S27.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="264" xml:id="C16.S27.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S27.SS2">
+<title>Real Argument and Parameters</title>        
+ 
+<para xml:id="C16.S27.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="265" xml:id="C16.S27.SS2.p1.s1">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S27.SS3">
+<title>Complex Argument and/or Parameters</title>        
+ 
+<para xml:id="C16.S27.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="266" xml:id="C16.S27.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="267" xml:id="C16.S27.SS3.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

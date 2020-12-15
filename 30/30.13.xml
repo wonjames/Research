@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C30.S13">
+<title>Wave Equation in Prolate Spheroidal Coordinates</title>        
+   
+<subsection xml:id="C30.S13.SS1">
+<title>Prolate Spheroidal Coordinates</title>        
+  
+ 
+<para xml:id="C30.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C30.S13.SS1.p1.s1">
+Prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S13.SS1.p1.m1">\xi,\eta,\phi</Math> are related to Cartesian coordinates <Math mode="inline" xml:id="C30.S13.SS1.p1.m2">x,y,z</Math> by <Math equation-number="30.13.1" mode="display" xml:id="C30.S13.E1">x=c\sqrt{(\xi^{2}-1)(1-\eta^{2})}\cos\phi,y=c\sqrt{(\xi^{2}-1)(1-\eta^{2})}\sin\phi,z=c\xi\eta,</Math> where <Math mode="inline" xml:id="C30.S13.SS1.p1.m3">c</Math> is a positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C30.S13.SS1.p1.s2">
+(On the use of the symbol <Math mode="inline" xml:id="C30.S13.SS1.p1.m4">\theta</Math> in placeof <Math mode="inline" xml:id="C30.S13.SS1.p1.m5">\phi</Math> see §1.5(ii).)The
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C30.S13.SS1.p1.s3">
+<Math mode="inline" xml:id="C30.S13.SS1.p1.m6">(x,y,z)</Math> -space without the <Math mode="inline" xml:id="C30.S13.SS1.p1.m7">z</Math> -axis corresponds to <Math equation-number="30.13.2" mode="display" xml:id="C30.S13.E2">1&lt;\xi&lt;\infty,-1&lt;\eta&lt;1,0\leq\phi&lt;2\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C30.S13.SS1.p1.s4">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S13.SS1.p1.m8">\xi=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C30.S13.SS1.p1.s5">
+are prolate ellipsoids of revolution with foci at <Math mode="inline" xml:id="C30.S13.SS1.p1.m9">x=y=0</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m10">z=\pm c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C30.S13.SS1.p1.s6">
+The coordinate surfaces <Math mode="inline" xml:id="C30.S13.SS1.p1.m11">\eta=\mbox{const}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C30.S13.SS1.p1.s7">
+are sheets of two-sheeted hyperboloids of revolution with the same foci.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C30.S13.SS1.p1.s8">
+The focal line is given by <Math mode="inline" xml:id="C30.S13.SS1.p1.m12">\xi=1</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m13">-1\leq\eta\leq 1</Math> , and the rays <Math mode="inline" xml:id="C30.S13.SS1.p1.m14">\pm z\geq c</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m15">x=y=0</Math> are given by <Math mode="inline" xml:id="C30.S13.SS1.p1.m16">\eta=\pm 1</Math> , <Math mode="inline" xml:id="C30.S13.SS1.p1.m17">\xi\geq 1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS2">
+<title>Metric Coefficients</title>        
+ 
+  
+<para xml:id="C30.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C30.S13.SS2.p1.s1">
+ <Math equation-number="30.13.3" mode="display" xml:id="C30.S13.E3">h_{\xi}^{2}=\left(\frac{\partial x}{\partial\xi}\right)^{2}+\left(\frac{ \partial y}{\partial\xi}\right)^{2}+\left(\frac{\partial z}{\partial\xi}\right )^{2}=\frac{c^{2}(\xi^{2}-\eta^{2})}{\xi^{2}-1},</Math> , <Math equation-number="30.13.4" mode="display" xml:id="C30.S13.E4">h_{\eta}^{2}=\left(\frac{\partial x}{\partial\eta}\right)^{2}+\left(\frac{ \partial y}{\partial\eta}\right)^{2}+\left(\frac{\partial z}{\partial\eta} \right)^{2}=\frac{c^{2}(\xi^{2}-\eta^{2})}{1-\eta^{2}},</Math> , <Math equation-number="30.13.5" mode="display" xml:id="C30.S13.E5">h_{\phi}^{2}=\left(\frac{\partial x}{\partial\phi}\right)^{2}+\left(\frac{ \partial y}{\partial\phi}\right)^{2}+\left(\frac{\partial z}{\partial\phi} \right)^{2}=c^{2}(\xi^{2}-1)(1-\eta^{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS3">
+<title>Laplacian</title>        
+  
+ 
+<para xml:id="C30.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C30.S13.SS3.p1.s1">
+ <Math equation-number="30.13.6" mode="display" xml:id="C30.S13.E6">\nabla^{2}=\frac{1}{h_{\xi}h_{\eta}h_{\phi}}\left(\frac{\partial}{\partial\xi} \left(\frac{h_{\eta}h_{\phi}}{h_{\xi}}\frac{\partial}{\partial\xi}\right)+ \frac{\partial}{\partial\eta}\left(\frac{h_{\xi}h_{\phi}}{h_{\eta}}\frac{ \partial}{\partial\eta}\right)+\frac{\partial}{\partial\phi}\left(\frac{h_{\xi }h_{\eta}}{h_{\phi}}\frac{\partial}{\partial\phi}\right)\right)=\frac{1}{c^{2} (\xi^{2}-\eta^{2})}\left(\frac{\partial}{\partial\xi}\left((\xi^{2}-1)\frac{ \partial}{\partial\xi}\right)+\frac{\partial}{\partial\eta}\left((1-\eta^{2}) \frac{\partial}{\partial\eta}\right)+\frac{\xi^{2}-\eta^{2}}{(\xi^{2}-1)(1- \eta^{2})}\frac{{\partial}^{2}}{{\partial\phi}^{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS4">
+<title>Separation of Variables</title>        
+ 
+<para xml:id="C30.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C30.S13.SS4.p1.s1">
+The wave equation <Math equation-number="30.13.7" mode="display" xml:id="C30.S13.E7">\nabla^{2}w+\kappa^{2}w=0,</Math> transformed to prolate spheroidal coordinates <Math mode="inline" xml:id="C30.S13.SS4.p1.m1">(\xi,\eta,\phi)</Math> , admits solutions <Math equation-number="30.13.8" mode="display" xml:id="C30.S13.E8">w(\xi,\eta,\phi)=w_{1}(\xi)w_{2}(\eta)w_{3}(\phi),</Math> where <Math mode="inline" xml:id="C30.S13.SS4.p1.m2">w_{1}</Math> , <Math mode="inline" xml:id="C30.S13.SS4.p1.m3">w_{2}</Math> , <Math mode="inline" xml:id="C30.S13.SS4.p1.m4">w_{3}</Math> satisfy the differential equations <Math equation-number="30.13.9" mode="display" xml:id="C30.S13.E9">\frac{\mathrm{d}}{\mathrm{d}\xi}\left((1-\xi^{2})\frac{\mathrm{d}w_{1}}{ \mathrm{d}\xi}\right)+\left(\lambda+\gamma^{2}(1-\xi^{2})-\frac{\mu^{2}}{1-\xi ^{2}}\right)w_{1}=0,</Math> <Math equation-number="30.13.10" mode="display" xml:id="C30.S13.E10">\frac{\mathrm{d}}{\mathrm{d}\eta}\left((1-\eta^{2})\frac{\mathrm{d}w_{2}}{ \mathrm{d}\eta}\right)+\left(\lambda+\gamma^{2}(1-\eta^{2})-\frac{\mu^{2}}{1- \eta^{2}}\right)w_{2}=0,</Math> <Math equation-number="30.13.11" mode="display" xml:id="C30.S13.E11">\frac{{\mathrm{d}}^{2}w_{3}}{{\mathrm{d}\phi}^{2}}+\mu^{2}w_{3}=0,</Math> with <Math mode="inline" xml:id="C30.S13.SS4.p1.m5">\gamma^{2}=\kappa^{2}c^{2}\geq 0</Math> and separation constants <Math mode="inline" xml:id="C30.S13.SS4.p1.m6">\lambda</Math> and <Math mode="inline" xml:id="C30.S13.SS4.p1.m7">\mu^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C30.S13.SS4.p1.s2">
+Equations (30.13.9) and (30.13.10) agree with (30.2.1).
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C30.S13.SS4.p2.s1">
+In most applications the solution <Math mode="inline" xml:id="C30.S13.SS4.p2.m1">w</Math> has to be a single-valued function of <Math mode="inline" xml:id="C30.S13.SS4.p2.m2">(x,y,z)</Math> , which requires <Math mode="inline" xml:id="C30.S13.SS4.p2.m3">\mu=m</Math> (a nonnegative integer) and <Math equation-number="30.13.12" mode="display" xml:id="C30.S13.E12">w_{3}(\phi)=a_{3}\cos\left(m\phi\right)+b_{3}\sin\left(m\phi\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C30.S13.SS4.p2.s2">
+Moreover, <Math mode="inline" xml:id="C30.S13.SS4.p2.m4">w</Math> has to be bounded along the <Math mode="inline" xml:id="C30.S13.SS4.p2.m5">z</Math> -axis away from the focal line: this requires <Math mode="inline" xml:id="C30.S13.SS4.p2.m6">w_{2}(\eta)</Math> to be bounded when <Math mode="inline" xml:id="C30.S13.SS4.p2.m7">-1&lt;\eta&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C30.S13.SS4.p2.s3">
+Then <Math mode="inline" xml:id="C30.S13.SS4.p2.m8">\lambda=\lambda^{m}_{n}\left(\gamma^{2}\right)</Math> for some <Math mode="inline" xml:id="C30.S13.SS4.p2.m9">n=m,m+1,m+2,\dots</Math> , and the general solution of (30.13.10) is <Math equation-number="30.13.13" mode="display" xml:id="C30.S13.E13">w_{2}(\eta)=a_{2}\mathsf{Ps}^{m}_{n}\left(\eta,\gamma^{2}\right)+b_{2}\mathsf{ Qs}^{m}_{n}\left(\eta,\gamma^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="16" xml:id="C30.S13.SS4.p2.s4">
+The solution of (30.13.9) with <Math mode="inline" xml:id="C30.S13.SS4.p2.m10">\mu=m</Math> is <Math equation-number="30.13.14" mode="display" xml:id="C30.S13.E14">w_{1}(\xi)=a_{1}S^{m(1)}_{n}\left(\xi,\gamma\right)+b_{1}S^{m(2)}_{n}\left(\xi ,\gamma\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C30.S13.SS4.p3.s1">
+If <Math mode="inline" xml:id="C30.S13.SS4.p3.m1">b_{1}=b_{2}=0</Math> , then the function (30.13.8) is a twice-continuously differentiable solutionof (30.13.7) in the entire <Math mode="inline" xml:id="C30.S13.SS4.p3.m2">(x,y,z)</Math> -space.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C30.S13.SS4.p3.s2">
+If <Math mode="inline" xml:id="C30.S13.SS4.p3.m3">b_{2}=0</Math> , then this property holds outside the focal line.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C30.S13.SS5">
+<title>The Interior Dirichlet Problem for Prolate Ellipsoids</title>        
+  
+<para xml:id="C30.S13.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C30.S13.SS5.p1.s1">
+Equation (30.13.7) for <Math mode="inline" xml:id="C30.S13.SS5.p1.m1">\xi\leq\xi_{0}</Math> , and subject to the boundary condition <Math mode="inline" xml:id="C30.S13.SS5.p1.m2">w=0</Math> on the ellipsoid given by <Math mode="inline" xml:id="C30.S13.SS5.p1.m3">\xi=\xi_{0}</Math> , poses an eigenvalue problem with <Math mode="inline" xml:id="C30.S13.SS5.p1.m4">\kappa^{2}</Math> as spectral parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C30.S13.SS5.p1.s2">
+The eigenvalues are given by <Math mode="inline" xml:id="C30.S13.SS5.p1.m5">c^{2}\kappa^{2}=\gamma^{2}</Math> , where <Math mode="inline" xml:id="C30.S13.SS5.p1.m6">\gamma</Math> is determined from the condition <Math equation-number="30.13.15" mode="display" xml:id="C30.S13.E15">S^{m(1)}_{n}\left(\xi_{0},\gamma\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C30.S13.SS5.p1.s3">
+The corresponding eigenfunctions are given by (30.13.8), (30.13.14), (30.13.13), (30.13.12), with <Math mode="inline" xml:id="C30.S13.SS5.p1.m7">b_{1}=b_{2}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="22" xml:id="C30.S13.SS5.p1.s4">
+For the Dirichlet boundary-value problem of the region <Math mode="inline" xml:id="C30.S13.SS5.p1.m8">\xi_{1}\leq\xi\leq\xi_{2}</Math> between two ellipsoids, the eigenvalues aredetermined from <Math equation-number="30.13.16" mode="display" xml:id="C30.S13.E16">w_{1}(\xi_{1})=w_{1}(\xi_{2})=0,</Math> with <Math mode="inline" xml:id="C30.S13.SS5.p1.m9">w_{1}</Math> as in (30.13.14).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="23" xml:id="C30.S13.SS5.p1.s5">
+The corresponding eigenfunctions are given as before with <Math mode="inline" xml:id="C30.S13.SS5.p1.m10">b_{2}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C30.S13.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C30.S13.SS5.p2.s1">
+For further applications see Meixner and Schäfke (1954), Meixner et al. (1980) and the references cited therein; also Ong (1986),Müller et al. (1994), and Xiao et al. (2001).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

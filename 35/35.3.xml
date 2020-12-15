@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S3">
+<title>Multivariate Gamma and Beta Functions</title>         
+<subsection xml:id="C35.S3.SS1">
+<title>Definitions</title>        
+   
+<para xml:id="C35.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S3.SS1.p1.s1">
+ <Math equation-number="35.3.1" mode="display" xml:id="C35.S3.E1">\Gamma_{m}\left(a\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{ X}\right)|\mathbf{X}|^{a-\frac{1}{2}(m+1)}\mathrm{d}\mathbf{X}, if \Re(a)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C35.S3.SS1.p1.s2">
+<Math equation-number="35.3.2" mode="display" xml:id="C35.S3.E2">\Gamma_{m}\left(s_{1},\dots,s_{m}\right)=\int_{\boldsymbol{\Omega}}\mathrm{etr }\left(-\mathbf{X}\right)|\mathbf{X}|^{s_{m}-\frac{1}{2}(m+1)}\prod_{j=1}^{m-1 }|(\mathbf{X})_{j}|^{s_{j}-s_{j+1}}\mathrm{d}\mathbf{X}, if s_{j}\in\mathbb{C}, \Re(s_{j})&gt;\frac{1}{2}(j-1), j=1,\dots,m</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S3.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C35.S3.SS1.p2.s1">
+ <Math equation-number="35.3.3" mode="display" xml:id="C35.S3.E3">\mathrm{B}_{m}\left(a,b\right)=\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt; \mathbf{I}}|\mathbf{X}|^{a-\frac{1}{2}(m+1)}|\mathbf{I}-\mathbf{X}|^{b-\frac{1 }{2}(m+1)}\mathrm{d}\mathbf{X}, if \Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S3.SS2">
+<title>Properties</title>        
+  
+<para xml:id="C35.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S3.SS2.p1.s1">
+ <Math equation-number="35.3.4" mode="display" xml:id="C35.S3.E4">\Gamma_{m}\left(a\right)=\pi^{m(m-1)/4}\prod_{j=1}^{m}\Gamma\left(a-\tfrac{1}{ 2}(j-1)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C35.S3.SS2.p1.s2">
+<Math equation-number="35.3.5" mode="display" xml:id="C35.S3.E5">\Gamma_{m}\left(s_{1},\dots,s_{m}\right)=\pi^{m(m-1)/4}\prod_{j=1}^{m}\Gamma \left(s_{j}-\tfrac{1}{2}(j-1)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C35.S3.SS2.p1.s3">
+<Math equation-number="35.3.6" mode="display" xml:id="C35.S3.E6">\Gamma_{m}\left(a,\dots,a\right)=\Gamma_{m}\left(a\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C35.S3.SS2.p1.s4">
+<Math equation-number="35.3.7" mode="display" xml:id="C35.S3.E7">\mathrm{B}_{m}\left(a,b\right)=\frac{\Gamma_{m}\left(a\right)\Gamma_{m}\left(b \right)}{\Gamma_{m}\left(a+b\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="8" xml:id="C35.S3.SS2.p1.s5">
+<Math equation-number="35.3.8" mode="display" xml:id="C35.S3.E8">\mathrm{B}_{m}\left(a,b\right)=\int_{\boldsymbol{\Omega}}|\mathbf{X}|^{a-\frac {1}{2}(m+1)}|\mathbf{I}+\mathbf{X}|^{-(a+b)}\mathrm{d}\mathbf{X}, if \Re(a),\Re(b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

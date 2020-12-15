@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S3">
+<title>Multiplicative Properties</title>        
+    
+<para xml:id="C27.S3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S3.p1.s1">
+Except for <Math mode="inline" xml:id="C27.S3.p1.m1">\nu\left(n\right)</Math> , <Math mode="inline" xml:id="C27.S3.p1.m2">\Lambda\left(n\right)</Math> , <Math mode="inline" xml:id="C27.S3.p1.m3">p_{n}</Math> , and <Math mode="inline" xml:id="C27.S3.p1.m4">\pi\left(x\right)</Math> , the functions in §27.2 aremultiplicative, which means <Math mode="inline" xml:id="C27.S3.p1.m5">f(1)=1</Math> and <Math equation-number="27.3.1" mode="display" xml:id="C27.S3.E1">f(mn)=f(m)f(n), if \left(m,n\right)=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C27.S3.p2.s1">
+If <Math mode="inline" xml:id="C27.S3.p2.m1">f</Math> is multiplicative, then the values <Math mode="inline" xml:id="C27.S3.p2.m2">f(n)</Math> for <Math mode="inline" xml:id="C27.S3.p2.m3">n&gt;1</Math> are determined by the values at the prime powers.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C27.S3.p2.s2">
+Specifically, if <Math mode="inline" xml:id="C27.S3.p2.m4">n</Math> is factored as in (27.2.1), then <Math equation-number="27.3.2" mode="display" xml:id="C27.S3.E2">f(n)=\prod_{r=1}^{\nu\left(n\right)}f(p^{a_{r}}_{r})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C27.S3.p2.s3">
+In particular, <Math equation-number="27.3.3" mode="display" xml:id="C27.S3.E3">\phi\left(n\right)=n\prod_{p\mathbin{|}n}(1-p^{-1}),</Math> , <Math equation-number="27.3.4" mode="display" xml:id="C27.S3.E4">J_{k}\left(n\right)=n^{k}\prod_{p\mathbin{|}n}(1-p^{-k}),</Math> , <Math equation-number="27.3.5" mode="display" xml:id="C27.S3.E5">d\left(n\right)=\prod_{r=1}^{\nu\left(n\right)}(1+a_{r}),</Math> , <Math equation-number="27.3.6" mode="display" xml:id="C27.S3.E6">\sigma_{\alpha}\left(n\right)=\prod_{r=1}^{\nu\left(n\right)}\frac{p^{\alpha(1 +a_{r})}_{r}-1}{p^{\alpha}_{r}-1}, if \alpha\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C27.S3.p2.s4">
+Related multiplicative properties are <Math equation-number="27.3.7" mode="display" xml:id="C27.S3.E7">\sigma_{\alpha}\left(m\right)\sigma_{\alpha}\left(n\right)=\sum_{d\mathbin{|} \left(m,n\right)}d^{\alpha}\sigma_{\alpha}\left(\frac{mn}{d^{2}}\right),</Math> <Math equation-number="27.3.8" mode="display" xml:id="C27.S3.E8">\phi\left(m\right)\phi\left(n\right)=\phi\left(mn\right)\phi\left(\left(m,n \right)\right)/\left(m,n\right)</Math>.
+</sentence>
+
+</para>
+    
+<para xml:id="C27.S3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C27.S3.p3.s1">
+A function <Math mode="inline" xml:id="C27.S3.p3.m1">f</Math> is completely multiplicative if <Math mode="inline" xml:id="C27.S3.p3.m2">f(1)=1</Math> and <Math equation-number="27.3.9" mode="display" xml:id="C27.S3.E9">f(mn)=f(m)f(n), if m,n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C27.S3.p3.s2">
+Examples are <Math mode="inline" xml:id="C27.S3.p3.m3">\left\lfloor 1/n\right\rfloor</Math> and <Math mode="inline" xml:id="C27.S3.p3.m4">\lambda\left(n\right)</Math> , and the Dirichletcharacters, defined in §27.8.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C27.S3.p4.s1">
+If <Math mode="inline" xml:id="C27.S3.p4.m1">f</Math> is completely multiplicative, then (27.3.2) becomes <Math equation-number="27.3.10" mode="display" xml:id="C27.S3.E10">f(n)=\prod_{r=1}^{\nu\left(n\right)}\left(f(p_{r})\right)^{a_{r}}</Math>.
+</sentence>
+
+</para>
+ 
+</section>

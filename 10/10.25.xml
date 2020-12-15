@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S25">
+<title>Definitions</title>        
+ 
+<subsection xml:id="C10.S25.SS1">
+<title>Modified Bessel’s Equation</title>        
+  
+<para xml:id="C10.S25.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S25.SS1.p1.s1">
+ <Math equation-number="10.25.1" mode="display" xml:id="C10.S25.E1">z^{2}\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+z\frac{\mathrm{d}w}{\mathrm{d }z}-(z^{2}+\nu^{2})w=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S25.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C10.S25.SS1.p2.s1">
+This equation is obtained from Bessel’s equation (10.2.1) on replacing <Math mode="inline" xml:id="C10.S25.SS1.p2.m1">z</Math> by <Math mode="inline" xml:id="C10.S25.SS1.p2.m2">\pm iz</Math> , and it has the same kinds of singularities.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C10.S25.SS1.p2.s2">
+Its solutions are called modified Bessel functions or Bessel functions of imaginary argument.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S25.SS2">
+<title>Standard Solutions</title>        
+   
+<para xml:id="C10.S25.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S25.SS2.p1.s1">
+ <Math equation-number="10.25.2" mode="display" xml:id="C10.S25.E2">I_{\nu}\left(z\right)=(\tfrac{1}{2}z)^{\nu}\sum_{k=0}^{\infty}\frac{(\tfrac{1} {4}z^{2})^{k}}{k!\Gamma\left(\nu+k+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S25.SS2.p1.s2">
+This solution has properties analogous to those of <Math mode="inline" xml:id="C10.S25.SS2.p1.m1">J_{\nu}\left(z\right)</Math> , defined in §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C10.S25.SS2.p1.s3">
+In particular, the principal branch of <Math mode="inline" xml:id="C10.S25.SS2.p1.m2">I_{\nu}\left(z\right)</Math> is defined in a similar way: it corresponds to the principal value of <Math mode="inline" xml:id="C10.S25.SS2.p1.m3">(\tfrac{1}{2}z)^{\nu}</Math> , is analytic in <Math mode="inline" xml:id="C10.S25.SS2.p1.m4">\mathbb{C}\setminus(-\infty,0]</Math> , and two-valued and discontinuous on the cut <Math mode="inline" xml:id="C10.S25.SS2.p1.m5">\operatorname{ph}z=\pm\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S25.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S25.SS2.p2.s1">
+The defining property of the second standard solution <Math mode="inline" xml:id="C10.S25.SS2.p2.m1">K_{\nu}\left(z\right)</Math> of (10.25.1) is <Math equation-number="10.25.3" mode="display" xml:id="C10.S25.E3">K_{\nu}\left(z\right)\sim\sqrt{\pi/(2z)}e^{-z},</Math> as <Math mode="inline" xml:id="C10.S25.SS2.p2.m2">z\to\infty</Math> in <Math mode="inline" xml:id="C10.S25.SS2.p2.m3">|\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta</Math> <Math mode="inline" xml:id="C10.S25.SS2.p2.m4">(&lt;\tfrac{3}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S25.SS2.p2.s2">
+It has a branch point at <Math mode="inline" xml:id="C10.S25.SS2.p2.m5">z=0</Math> for all <Math mode="inline" xml:id="C10.S25.SS2.p2.m6">\nu\in\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C10.S25.SS2.p2.s3">
+Theprincipal branch corresponds to the principal value of the square root in (10.25.3), is analytic in <Math mode="inline" xml:id="C10.S25.SS2.p2.m7">\mathbb{C}\setminus(-\infty,0]</Math> , and two-valued and discontinuous on the cut <Math mode="inline" xml:id="C10.S25.SS2.p2.m8">\operatorname{ph}z=\pm\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S25.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C10.S25.SS2.p3.s1">
+Both <Math mode="inline" xml:id="C10.S25.SS2.p3.m1">I_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S25.SS2.p3.m2">K_{\nu}\left(z\right)</Math> are real when <Math mode="inline" xml:id="C10.S25.SS2.p3.m3">\nu</Math> is real and <Math mode="inline" xml:id="C10.S25.SS2.p3.m4">\operatorname{ph}z=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S25.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C10.S25.SS2.p4.s1">
+For fixed <Math mode="inline" xml:id="C10.S25.SS2.p4.m1">z</Math> <Math mode="inline" xml:id="C10.S25.SS2.p4.m2">(\neq 0)</Math> each branch of <Math mode="inline" xml:id="C10.S25.SS2.p4.m3">I_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S25.SS2.p4.m4">K_{\nu}\left(z\right)</Math> is entire in <Math mode="inline" xml:id="C10.S25.SS2.p4.m5">\nu</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S25.Px1">
+<title>Branch Conventions</title>    
+<para xml:id="C10.S25.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C10.S25.Px1.p1.s1">
+Except where indicated otherwise it is assumed throughout the DLMF that the symbols <Math mode="inline" xml:id="C10.S25.Px1.p1.m1">I_{\nu}\left(z\right)</Math> and <Math mode="inline" xml:id="C10.S25.Px1.p1.m2">K_{\nu}\left(z\right)</Math> denote the principal values of these functions.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S25.Px2">
+<title>Symbol <Math mode="inline" xml:id="C10.S25.Px2.m1">\mathscr{Z}_{\nu}\left(z\right)</Math></title>   
+<para xml:id="C10.S25.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C10.S25.Px2.p1.s1">
+Corresponding to the symbol <Math mode="inline" xml:id="C10.S25.Px2.p1.m1">\mathscr{C}_{\nu}</Math> introduced in §10.2(ii), we sometimes use <Math mode="inline" xml:id="C10.S25.Px2.p1.m2">\mathscr{Z}_{\nu}\left(z\right)</Math> to denote <Math mode="inline" xml:id="C10.S25.Px2.p1.m4">I_{\nu}\left(z\right)</Math> , <Math mode="inline" xml:id="C10.S25.Px2.p1.m5">e^{\nu\pi i}K_{\nu}\left(z\right)</Math> , or any nontrivial linear combination of these functions, the coefficients in which are independent of <Math mode="inline" xml:id="C10.S25.Px2.p1.m6">z</Math> and <Math mode="inline" xml:id="C10.S25.Px2.p1.m7">\nu</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S25.SS3">
+<title>Numerically Satisfactory Pairs of Solutions</title>          
+<para xml:id="C10.S25.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C10.S25.SS3.p1.s1">
+Table 10.25.1 lists numerically satisfactory pairs of solutions (§2.7(iv)) of (10.25.1).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C10.S25.SS3.p1.s2">
+It is assumed that <Math mode="inline" xml:id="C10.S25.SS3.p1.m1">\Re\nu\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C10.S25.SS3.p1.s3">
+When <Math mode="inline" xml:id="C10.S25.SS3.p1.m2">\Re\nu&lt;0</Math> , <Math mode="inline" xml:id="C10.S25.SS3.p1.m3">I_{\nu}\left(z\right)</Math> is replaced by <Math mode="inline" xml:id="C10.S25.SS3.p1.m4">I_{-\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="17" xml:id="C10.S25.T1.s1">
+Table 10.25.1: Numerically satisfactory pairs of solutions of the modified Bessel’s equation.
+</sentence>
+ 
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="1" xml:id="C10.S25.T1.t1.s1">
+Pair
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="2" xml:id="C10.S25.T1.t1.s2">
+Region
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="3" xml:id="C10.S25.T1.t1.s3">
+<Math mode="inline" xml:id="C10.S25.T1.t1.r2.m1">I_{\nu}\left(z\right),K_{\nu}\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="4" xml:id="C10.S25.T1.t1.s4">
+<Math mode="inline" xml:id="C10.S25.T1.t1.r2.m2">|\operatorname{ph}z|\leq\tfrac{1}{2}\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="5" xml:id="C10.S25.T1.t1.s5">
+<Math mode="inline" xml:id="C10.S25.T1.t1.r3.m1">I_{\nu}\left(z\right),K_{\nu}\left(ze^{\mp\pi i}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="6" xml:id="C10.S25.T1.t1.s6">
+<Math mode="inline" xml:id="C10.S25.T1.t1.r3.m2">\tfrac{1}{2}\pi\leq\pm\operatorname{ph}z\leq\tfrac{3}{2}\pi</Math>
+</sentence>
+ 
+  
+</subsection>
+ 
+</section>

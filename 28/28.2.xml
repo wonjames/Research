@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S2">
+<title>Definitions and Basic Properties</title>        
+ 
+<subsection xml:id="C28.S2.SS1">
+<title>Mathieu’s Equation</title>        
+ 
+<para xml:id="C28.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S2.SS1.p1.s1">
+The standard form of Mathieu’s equation with parameters <Math mode="inline" xml:id="C28.S2.SS1.p1.m1">(a,q)</Math> is <Math equation-number="28.2.1" mode="display" xml:id="C28.S2.E1">w^{\prime\prime}+(a-2q\cos\left(2z\right))w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S2.SS1.p1.s2">
+With <Math mode="inline" xml:id="C28.S2.SS1.p1.m2">\zeta={\sin^{2}}z</Math> we obtain the algebraic form of Mathieu’s equation <Math equation-number="28.2.2" mode="display" xml:id="C28.S2.E2">\zeta(1-\zeta)w^{\prime\prime}+\tfrac{1}{2}\left(1-2\zeta)w^{\prime}+\tfrac{1} {4}(a-2q(1-2\zeta)\right)w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S2.SS1.p1.s3">
+This equation has regular singularities at 0 and 1, both with exponents 0 and <Math mode="inline" xml:id="C28.S2.SS1.p1.m3">\frac{1}{2}</Math> , and an irregular singular point at <Math mode="inline" xml:id="C28.S2.SS1.p1.m4">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C28.S2.SS1.p1.s4">
+With <Math mode="inline" xml:id="C28.S2.SS1.p1.m5">\zeta=\cos z</Math> we obtain another algebraic form: <Math equation-number="28.2.3" mode="display" xml:id="C28.S2.E3">(1-\zeta^{2})w^{\prime\prime}-\zeta w^{\prime}+\left(a+2q-4q\zeta^{2}\right)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S2.SS2">
+<title>Basic Solutions <Math mode="inline" xml:id="C28.S2.SS2.m1">w_{\mbox{\rm\tiny I}}</Math>,<Math mode="inline" xml:id="C28.S2.SS2.m2">w_{\mbox{\rm\tiny II}}</Math></title>        
+   
+<para xml:id="C28.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C28.S2.SS2.p1.s1">
+Since (28.2.1) has no finite singularities its solutions are entire functions of <Math mode="inline" xml:id="C28.S2.SS2.p1.m1">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C28.S2.SS2.p1.s2">
+Furthermore, a solution <Math mode="inline" xml:id="C28.S2.SS2.p1.m2">w</Math> with given initial constant values of <Math mode="inline" xml:id="C28.S2.SS2.p1.m3">w</Math> and <Math mode="inline" xml:id="C28.S2.SS2.p1.m4">w^{\prime}</Math> at a point <Math mode="inline" xml:id="C28.S2.SS2.p1.m5">z_{0}</Math> is an entire function of the three variables <Math mode="inline" xml:id="C28.S2.SS2.p1.m6">z</Math> , <Math mode="inline" xml:id="C28.S2.SS2.p1.m7">a</Math> , and <Math mode="inline" xml:id="C28.S2.SS2.p1.m8">q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C28.S2.SS2.p2.s1">
+The following three transformations <Math equation-number="28.2.4" mode="display" xml:id="C28.S2.E4">z\to-z;z\to z\pm\pi;z\to z\pm\tfrac{1}{2}\pi,q\to-q;</Math> each leave (28.2.1) unchanged. (28.2.1) possesses a fundamental pair of solutions <Math mode="inline" xml:id="C28.S2.SS2.p2.m1">w_{\mbox{\tiny I}}(z;a,q),w_{\mbox{\tiny II}}(z;a,q)</Math> called basic solutions with <Math equation-number="28.2.5" mode="display" xml:id="C28.S2.E5">\begin{bmatrix}w_{\mbox{\tiny I}}(0;a,q)&amp;w_{\mbox{\tiny II}}(0;a,q)\\ w^{\prime}_{\mbox{\tiny I}}(0;a,q)&amp;w^{\prime}_{\mbox{\tiny II}}(0;a,q)\end{ bmatrix}=\begin{bmatrix}1&amp;0\\ 0&amp;1\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C28.S2.SS2.p2.s2">
+<Math mode="inline" xml:id="C28.S2.SS2.p2.m4">w_{\mbox{\tiny I}}(z;a,q)</Math> is even and <Math mode="inline" xml:id="C28.S2.SS2.p2.m5">w_{\mbox{\tiny II}}(z;a,q)</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C28.S2.SS2.p2.s3">
+Other properties are as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C28.S2.SS2.p3.s1">
+ <Math equation-number="28.2.6" mode="display" xml:id="C28.S2.E6">\mathscr{W}\left\{w_{\mbox{\tiny I}},w_{\mbox{\tiny II}}\right\}=1,</Math> <Math equation-number="28.2.7" mode="display" xml:id="C28.S2.E7">w_{\mbox{\tiny I}}(z\pm\pi;a,q)=w_{\mbox{\tiny I}}(\pi;a,q)w_{\mbox{\tiny I}}( z;a,q)\pm w^{\prime}_{\mbox{\tiny I}}(\pi;a,q)w_{\mbox{\tiny II}}(z;a,q),</Math> , <Math equation-number="28.2.8" mode="display" xml:id="C28.S2.E8">w_{\mbox{\tiny II}}(z\pm\pi;a,q)=\pm w_{\mbox{\tiny II}}(\pi;a,q)w_{\mbox{ \tiny I}}(z;a,q)+w^{\prime}_{\mbox{\tiny II}}(\pi;a,q)w_{\mbox{\tiny II}}(z;a, q),</Math> , <Math equation-number="28.2.9" mode="display" xml:id="C28.S2.E9">w_{\mbox{\tiny I}}(\pi;a,q)=w^{\prime}_{\mbox{\tiny II}}(\pi;a,q),</Math> , <Math equation-number="28.2.10" mode="display" xml:id="C28.S2.E10">w_{\mbox{\tiny I}}(\pi;a,q)-1=2w^{\prime}_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q )w_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q),</Math> , <Math equation-number="28.2.11" mode="display" xml:id="C28.S2.E11">w_{\mbox{\tiny I}}(\pi;a,q)+1=2w_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q)w^{ \prime}_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q),</Math> , <Math equation-number="28.2.12" mode="display" xml:id="C28.S2.E12">w^{\prime}_{\mbox{\tiny I}}(\pi;a,q)=2w_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q)w ^{\prime}_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q),</Math> , <Math equation-number="28.2.13" mode="display" xml:id="C28.S2.E13">w_{\mbox{\tiny II}}(\pi;a,q)=2w_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q)w^{ \prime}_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q).</Math>
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S2.SS3">
+<title>Floquet’s Theorem and the Characteristic Exponents</title>        
+   
+<para xml:id="C28.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C28.S2.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C28.S2.SS3.p1.m1">\nu</Math> be any real or complex constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C28.S2.SS3.p1.s2">
+Then Mathieu’s equation (28.2.1) has a nontrivial solution <Math mode="inline" xml:id="C28.S2.SS3.p1.m2">w(z)</Math> such that <Math equation-number="28.2.14" mode="display" xml:id="C28.S2.E14">w(z+\pi)=e^{\pi\mathrm{i}\nu}w(z),</Math> iff <Math mode="inline" xml:id="C28.S2.SS3.p1.m3">e^{\pi\mathrm{i}\nu}</Math> is an eigenvalue of the matrix <Math equation-number="28.2.15" mode="display" xml:id="C28.S2.E15">\begin{bmatrix}w_{\mbox{\tiny I}}(\pi;a,q)&amp;w_{\mbox{\tiny II}}(\pi;a,q)\\ w^{\prime}_{\mbox{\tiny I}}(\pi;a,q)&amp;w^{\prime}_{\mbox{\tiny II}}(\pi;a,q)\end {bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C28.S2.SS3.p1.s3">
+Equivalently, <Math equation-number="28.2.16" mode="display" xml:id="C28.S2.E16">\cos\left(\pi\nu\right)=w_{\mbox{\tiny I}}(\pi;a,q)=w_{\mbox{\tiny I}}(\pi;a,- q)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C28.S2.SS3.p1.s4">
+This is the characteristic equation of Mathieu’s equation (28.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" xml:id="C28.S2.SS3.p1.s5">
+<Math mode="inline" xml:id="C28.S2.SS3.p1.m4">\cos\left(\pi\nu\right)</Math> is an entire function of <Math mode="inline" xml:id="C28.S2.SS3.p1.m5">a,q^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="16" xml:id="C28.S2.SS3.p1.s6">
+The solutions of (28.2.16) are given by <Math mode="inline" xml:id="C28.S2.SS3.p1.m6">\nu=\pi^{-1}\operatorname{arccos}\left(w_{\mbox{\tiny I}}(\pi;a,q)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="17" xml:id="C28.S2.SS3.p1.s7">
+If the inverse cosine takes its principal value (§4.23(ii)), then <Math mode="inline" xml:id="C28.S2.SS3.p1.m7">\nu=\widehat{\nu}</Math> , where <Math mode="inline" xml:id="C28.S2.SS3.p1.m8">0\leq\Re\widehat{\nu}\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="18" xml:id="C28.S2.SS3.p1.s8">
+The general solution of (28.2.16) is <Math mode="inline" xml:id="C28.S2.SS3.p1.m9">\nu=\pm\widehat{\nu}+2n</Math> , where <Math mode="inline" xml:id="C28.S2.SS3.p1.m10">n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="19" xml:id="C28.S2.SS3.p1.s9">
+Either <Math mode="inline" xml:id="C28.S2.SS3.p1.m11">\widehat{\nu}</Math> or <Math mode="inline" xml:id="C28.S2.SS3.p1.m12">\nu</Math> is called a characteristic exponent of (28.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="20" xml:id="C28.S2.SS3.p1.s10">
+If <Math mode="inline" xml:id="C28.S2.SS3.p1.m13">\widehat{\nu}=0</Math> or <Math mode="inline" xml:id="C28.S2.SS3.p1.m14">1</Math> , or equivalently, <Math mode="inline" xml:id="C28.S2.SS3.p1.m15">\nu=n</Math> , then <Math mode="inline" xml:id="C28.S2.SS3.p1.m16">\nu</Math> is a double root of the characteristic equation, otherwise it is a simple root.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S2.SS4">
+<title>Floquet Solutions</title>        
+     
+<para xml:id="C28.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C28.S2.SS4.p1.s1">
+A solution with the pseudoperiodic property (28.2.14) is called a Floquet solution with respect to <Math mode="inline" xml:id="C28.S2.SS4.p1.m1">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C28.S2.SS4.p1.s2">
+(28.2.9), (28.2.16), and (28.2.7) give for each solution <Math mode="inline" xml:id="C28.S2.SS4.p1.m2">w(z)</Math> of (28.2.1) the connection formula <Math equation-number="28.2.17" mode="display" xml:id="C28.S2.E17">w(z+\pi)+w(z-\pi)=2\cos\left(\pi\nu\right)w(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C28.S2.SS4.p1.s3">
+Therefore a nontrivial solution <Math mode="inline" xml:id="C28.S2.SS4.p1.m3">w(z)</Math> is either a Floquet solution with respect to <Math mode="inline" xml:id="C28.S2.SS4.p1.m4">\nu</Math> , or <Math mode="inline" xml:id="C28.S2.SS4.p1.m5">w(z+\pi)-e^{\mathrm{i}\nu\pi}w(z)</Math> is a Floquet solution with respect to <Math mode="inline" xml:id="C28.S2.SS4.p1.m6">-\nu</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C28.S2.SS4.p2.s1">
+If <Math mode="inline" xml:id="C28.S2.SS4.p2.m1">q\neq 0</Math> , then for a given value of <Math mode="inline" xml:id="C28.S2.SS4.p2.m2">\nu</Math> the corresponding Floquet solution is unique, except for an arbitrary constant factor (Theorem of Ince; see also 28.5(i)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C28.S2.SS4.p3.s1">
+The Fourier series of a Floquet solution <Math equation-number="28.2.18" mode="display" xml:id="C28.S2.E18">w(z)=\sum_{n=-\infty}^{\infty}c_{2n}e^{\mathrm{i}(\nu+2n)z}</Math> converges absolutely and uniformly in compact subsets of <Math mode="inline" xml:id="C28.S2.SS4.p3.m1">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C28.S2.SS4.p3.s2">
+The coefficients <Math mode="inline" xml:id="C28.S2.SS4.p3.m2">c_{2n}</Math> satisfy <Math equation-number="28.2.19" mode="display" xml:id="C28.S2.E19">{qc_{2n+2}-\left(a-(\nu+2n)^{2}\right)c_{2n}+qc_{2n-2}=0,} if n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C28.S2.SS4.p3.s3">
+Conversely, a nontrivial solution <Math mode="inline" xml:id="C28.S2.SS4.p3.m3">c_{2n}</Math> of (28.2.19) that satisfies <Math equation-number="28.2.20" mode="display" xml:id="C28.S2.E20">\lim_{n\to\pm\infty}|c_{2n}|^{1/|n|}=0</Math> leads to a Floquet solution.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S2.SS5">
+<title>Eigenvalues <Math mode="inline" xml:id="C28.S2.SS5.m1">a_{n}</Math>,<Math mode="inline" xml:id="C28.S2.SS5.m2">b_{n}</Math></title>        
+   
+<para xml:id="C28.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C28.S2.SS5.p1.s1">
+For given <Math mode="inline" xml:id="C28.S2.SS5.p1.m1">\nu</Math> and <Math mode="inline" xml:id="C28.S2.SS5.p1.m2">q</Math> , equation (28.2.16) determines an infinite discrete set of values of <Math mode="inline" xml:id="C28.S2.SS5.p1.m5">a</Math> , the eigenvalues or characteristic values, of Mathieu’s equation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C28.S2.SS5.p1.s2">
+When <Math mode="inline" xml:id="C28.S2.SS5.p1.m6">\widehat{\nu}=0</Math> or <Math mode="inline" xml:id="C28.S2.SS5.p1.m7">1</Math> , the notation for the two sets of eigenvalues corresponding to each <Math mode="inline" xml:id="C28.S2.SS5.p1.m8">\widehat{\nu}</Math> is shown in Table28.2.1, together with the boundary conditions of the associated eigenvalue problem.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C28.S2.SS5.p1.s3">
+In Table 28.2.1 <Math mode="inline" xml:id="C28.S2.SS5.p1.m9">n=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="31" xml:id="C28.S2.T1.s1">
+Table 28.2.1: Eigenvalues of Mathieu’s equation.
+</sentence> 
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="1" xml:id="C28.S2.T1.t1.s1">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r1.m1">\widehat{\nu}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="2" xml:id="C28.S2.T1.t1.s2">
+Boundary Conditions
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="3" xml:id="C28.S2.T1.t1.s3">
+Eigenvalues
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="4" xml:id="C28.S2.T1.t1.s4">
+0
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="5" xml:id="C28.S2.T1.t1.s5">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r2.m1">w^{\prime}(0)=w^{\prime}(\tfrac{1}{2}\pi)=0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="6" xml:id="C28.S2.T1.t1.s6">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r2.m2">a_{2n}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="7" xml:id="C28.S2.T1.t1.s7">
+1
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="8" xml:id="C28.S2.T1.t1.s8">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r3.m1">w^{\prime}(0)=w(\tfrac{1}{2}\pi)=0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="9" xml:id="C28.S2.T1.t1.s9">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r3.m2">a_{2n+1}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="10" xml:id="C28.S2.T1.t1.s10">
+1
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="11" xml:id="C28.S2.T1.t1.s11">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r4.m1">w(0)=w^{\prime}(\tfrac{1}{2}\pi)=0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="12" xml:id="C28.S2.T1.t1.s12">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r4.m2">b_{2n+1}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="13" xml:id="C28.S2.T1.t1.s13">
+0
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="14" xml:id="C28.S2.T1.t1.s14">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r5.m1">w(0)=w(\tfrac{1}{2}\pi)=0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="15" xml:id="C28.S2.T1.t1.s15">
+<Math mode="inline" xml:id="C28.S2.T1.t1.r5.m2">b_{2n+2}\left(q\right)</Math>
+</sentence>
+  
+<para xml:id="C28.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C28.S2.SS5.p2.s1">
+An equivalent formulation is given by <Math equation-number="28.2.21" mode="display" xml:id="C28.S2.E21">\begin{array}[]{ll}w^{\prime}_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q)=0,&amp;a=a_{2n }\left(q\right),\\ w_{\mbox{\tiny I}}(\tfrac{1}{2}\pi;a,q)=0,&amp;a=a_{2n+1}\left(q\right),\end{array}</Math> and <Math equation-number="28.2.22" mode="display" xml:id="C28.S2.E22">\begin{array}[]{ll}w^{\prime}_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q)=0,&amp;a=b_{2 n+1}\left(q\right),\\ w_{\mbox{\tiny II}}(\tfrac{1}{2}\pi;a,q)=0,&amp;a=b_{2n+2}\left(q\right),\end{array}</Math> where <Math mode="inline" xml:id="C28.S2.SS5.p2.m1">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="48" xml:id="C28.S2.SS5.p2.s2">
+When <Math mode="inline" xml:id="C28.S2.SS5.p2.m2">q=0</Math> , <Math equation-number="28.2.23" mode="display" xml:id="C28.S2.E23">a_{n}\left(0\right)=n^{2}, if n=0,1,2,\dots,</Math> , <Math equation-number="28.2.24" mode="display" xml:id="C28.S2.E24">b_{n}\left(0\right)=n^{2}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="49" xml:id="C28.S2.SS5.p2.s3">
+Near <Math mode="inline" xml:id="C28.S2.SS5.p2.m3">q=0</Math> , <Math mode="inline" xml:id="C28.S2.SS5.p2.m4">a_{n}\left(q\right)</Math> and <Math mode="inline" xml:id="C28.S2.SS5.p2.m5">b_{n}\left(q\right)</Math> can be expanded in power series in <Math mode="inline" xml:id="C28.S2.SS5.p2.m6">q</Math> (see §28.6(i)); elsewhere they are determined by analytic continuation (see §28.7).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="50" xml:id="C28.S2.SS5.p2.s4">
+For nonnegative real values of <Math mode="inline" xml:id="C28.S2.SS5.p2.m7">q</Math> , see Figure 28.2.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="51" xml:id="C28.S2.F1.s1">
+Figure 28.2.1: Eigenvalues <Math mode="inline" xml:id="C28.S2.F1.m3">a_{n}\left(q\right)</Math> , <Math mode="inline" xml:id="C28.S2.F1.m4">b_{n}\left(q\right)</Math> of Mathieu’s equation as functions of <Math mode="inline" xml:id="C28.S2.F1.m5">q</Math> for <Math mode="inline" xml:id="C28.S2.F1.m6">0\leq q\leq 10</Math> , <Math mode="inline" xml:id="C28.S2.F1.m7">n=0,1,2,3,4</Math> (<Math mode="inline" xml:id="C28.S2.F1.m8">a</Math> ’s), <Math mode="inline" xml:id="C28.S2.F1.m9">n=1,2,3,4</Math> (<Math mode="inline" xml:id="C28.S2.F1.m10">b</Math> ’s).
+</sentence>   
+<paragraph xml:id="C28.S2.Px1">
+<title>Distribution</title>    
+<para xml:id="C28.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C28.S2.Px1.p1.s1">
+ <Math equation-number="28.2.25" mode="display" xml:id="C28.S2.E25">\begin{array}[]{rl}\mbox{for $q&gt;0$:}&amp;a_{0}&lt;b_{1}&lt;a_{1}&lt;b_{2}&lt;a_{2}&lt;b_{3}&lt; \cdots,\\ \mbox{for $q&lt;0$:}&amp;a_{0}&lt;a_{1}&lt;b_{1}&lt;b_{2}&lt;a_{2}&lt;a_{3}&lt;\cdots.\end{array</Math> }
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C28.S2.Px2">
+<title>Change of Sign of <Math mode="inline" xml:id="C28.S2.Px2.m1">q</Math></title>   
+ 
+<para xml:id="C28.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C28.S2.Px2.p1.s1">
+ <Math equation-number="28.2.26" mode="display" xml:id="C28.S2.E26">a_{2n}\left(-q\right)=a_{2n}\left(q\right),</Math> , <Math equation-number="28.2.27" mode="display" xml:id="C28.S2.E27">a_{2n+1}\left(-q\right)=b_{2n+1}\left(q\right),</Math> , <Math equation-number="28.2.28" mode="display" xml:id="C28.S2.E28">b_{2n+2}\left(-q\right)=b_{2n+2}\left(q\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C28.S2.SS6">
+<title>Eigenfunctions</title>        
+       
+<para xml:id="C28.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C28.S2.SS6.p1.s1">
+Table 28.2.2 gives the notation for the eigenfunctions corresponding to the eigenvalues in Table 28.2.1.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C28.S2.SS6.p1.s2">
+Period <Math mode="inline" xml:id="C28.S2.SS6.p1.m1">\pi</Math> means that the eigenfunction has the property <Math mode="inline" xml:id="C28.S2.SS6.p1.m2">w(z+\pi)=w(z)</Math> , whereas antiperiod <Math mode="inline" xml:id="C28.S2.SS6.p1.m3">\pi</Math> means that <Math mode="inline" xml:id="C28.S2.SS6.p1.m4">w(z+\pi)=-w(z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="56" xml:id="C28.S2.SS6.p1.s3">
+Even parity means <Math mode="inline" xml:id="C28.S2.SS6.p1.m5">w(-z)=w(z)</Math> , and odd parity means <Math mode="inline" xml:id="C28.S2.SS6.p1.m6">w(-z)=-w(z)</Math>.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="57" xml:id="C28.S2.T2.s1">
+Table 28.2.2: Eigenfunctions of Mathieu’s equation.
+</sentence> 
+
+<sentence sentence-num-in-section="58" sentence-num-in-table="1" xml:id="C28.S2.T2.t1.s1">
+Eigenvalues
+</sentence>
+
+<sentence sentence-num-in-section="59" sentence-num-in-table="2" xml:id="C28.S2.T2.t1.s2">
+Eigenfunctions
+</sentence>
+
+<sentence sentence-num-in-section="60" sentence-num-in-table="3" xml:id="C28.S2.T2.t1.s3">
+Periodicity
+</sentence>
+
+<sentence sentence-num-in-section="61" sentence-num-in-table="4" xml:id="C28.S2.T2.t1.s4">
+Parity
+</sentence>
+
+<sentence sentence-num-in-section="62" sentence-num-in-table="5" xml:id="C28.S2.T2.t1.s5">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r2.m1">a_{2n}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="63" sentence-num-in-table="6" xml:id="C28.S2.T2.t1.s6">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r2.m2">\mathrm{ce}_{2n}\left(z,q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="64" sentence-num-in-table="7" xml:id="C28.S2.T2.t1.s7">
+Period <Math mode="inline" xml:id="C28.S2.T2.t1.r2.m3">\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="65" sentence-num-in-table="8" xml:id="C28.S2.T2.t1.s8">
+Even
+</sentence>
+
+<sentence sentence-num-in-section="66" sentence-num-in-table="9" xml:id="C28.S2.T2.t1.s9">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r3.m1">a_{2n+1}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="67" sentence-num-in-table="10" xml:id="C28.S2.T2.t1.s10">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r3.m2">\mathrm{ce}_{2n+1}\left(z,q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="68" sentence-num-in-table="11" xml:id="C28.S2.T2.t1.s11">
+Antiperiod <Math mode="inline" xml:id="C28.S2.T2.t1.r3.m3">\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="69" sentence-num-in-table="12" xml:id="C28.S2.T2.t1.s12">
+Even
+</sentence>
+
+<sentence sentence-num-in-section="70" sentence-num-in-table="13" xml:id="C28.S2.T2.t1.s13">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r4.m1">b_{2n+1}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="71" sentence-num-in-table="14" xml:id="C28.S2.T2.t1.s14">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r4.m2">\mathrm{se}_{2n+1}\left(z,q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="72" sentence-num-in-table="15" xml:id="C28.S2.T2.t1.s15">
+Antiperiod <Math mode="inline" xml:id="C28.S2.T2.t1.r4.m3">\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="73" sentence-num-in-table="16" xml:id="C28.S2.T2.t1.s16">
+Odd
+</sentence>
+
+<sentence sentence-num-in-section="74" sentence-num-in-table="17" xml:id="C28.S2.T2.t1.s17">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r5.m1">b_{2n+2}\left(q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="75" sentence-num-in-table="18" xml:id="C28.S2.T2.t1.s18">
+<Math mode="inline" xml:id="C28.S2.T2.t1.r5.m2">\mathrm{se}_{2n+2}\left(z,q\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="76" sentence-num-in-table="19" xml:id="C28.S2.T2.t1.s19">
+Period <Math mode="inline" xml:id="C28.S2.T2.t1.r5.m3">\pi</Math>
+</sentence>
+
+<sentence sentence-num-in-section="77" sentence-num-in-table="20" xml:id="C28.S2.T2.t1.s20">
+Odd
+</sentence>
+ 
+ 
+<para xml:id="C28.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C28.S2.SS6.p2.s1">
+When <Math mode="inline" xml:id="C28.S2.SS6.p2.m1">q=0</Math> , <Math equation-number="28.2.29" mode="display" xml:id="C28.S2.E29">\mathrm{ce}_{0}\left(z,0\right)=1/\sqrt{2},\mathrm{ce}_{n}\left(z,0\right)=\cos\left(nz\right),\mathrm{se}_{n}\left(z,0\right)=\sin\left(nz\right), , if n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C28.S2.SS6.p3.s1">
+For simple roots <Math mode="inline" xml:id="C28.S2.SS6.p3.m1">q</Math> of the corresponding equations (28.2.21) and (28.2.22), the functions are made unique by the normalizations <Math equation-number="28.2.30" mode="display" xml:id="C28.S2.E30">\int_{0}^{2\pi}\left(\mathrm{ce}_{n}\left(x,q\right)\right)^{2}\mathrm{d}x=\pi,\int_{0}^{2\pi}\left(\mathrm{se}_{n}\left(x,q\right)\right)^{2}\mathrm{d}x=\pi,</Math> the ambiguity of sign being resolved by (28.2.29) when <Math mode="inline" xml:id="C28.S2.SS6.p3.m2">q=0</Math> and by continuity for the other values of <Math mode="inline" xml:id="C28.S2.SS6.p3.m3">q</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="80" xml:id="C28.S2.SS6.p4.s1">
+The functions are orthogonal, that is, <Math equation-number="28.2.31" mode="display" xml:id="C28.S2.E31">\int_{0}^{2\pi}\mathrm{ce}_{m}\left(x,q\right)\mathrm{ce}_{n}\left(x,q\right) \mathrm{d}x=0, if n\neq m,</Math> , <Math equation-number="28.2.32" mode="display" xml:id="C28.S2.E32">\int_{0}^{2\pi}\mathrm{se}_{m}\left(x,q\right)\mathrm{se}_{n}\left(x,q\right) \mathrm{d}x=0, if n\neq m,</Math> , <Math equation-number="28.2.33" mode="display" xml:id="C28.S2.E33">\int_{0}^{2\pi}\mathrm{ce}_{m}\left(x,q\right)\mathrm{se}_{n}\left(x,q\right) \mathrm{d}x=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="81" xml:id="C28.S2.SS6.p5.s1">
+For change of sign of <Math mode="inline" xml:id="C28.S2.SS6.p5.m1">q</Math> (compare (28.2.4))
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="82" xml:id="C28.S2.SS6.p5.s2">
+<Math equation-number="28.2.34" mode="display" xml:id="C28.S2.E34">\mathrm{ce}_{2n}\left(z,-q\right)=(-1)^{n}\mathrm{ce}_{2n}\left(\tfrac{1}{2} \pi-z,q\right),</Math> , <Math equation-number="28.2.35" mode="display" xml:id="C28.S2.E35">\mathrm{ce}_{2n+1}\left(z,-q\right)=(-1)^{n}\mathrm{se}_{2n+1}\left(\tfrac{1}{ 2}\pi-z,q\right),</Math> , <Math equation-number="28.2.36" mode="display" xml:id="C28.S2.E36">\mathrm{se}_{2n+1}\left(z,-q\right)=(-1)^{n}\mathrm{ce}_{2n+1}\left(\tfrac{1}{ 2}\pi-z,q\right),</Math> , <Math equation-number="28.2.37" mode="display" xml:id="C28.S2.E37">\mathrm{se}_{2n+2}\left(z,-q\right)=(-1)^{n}\mathrm{se}_{2n+2}\left(\tfrac{1}{ 2}\pi-z,q\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S2.SS6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C28.S2.SS6.p6.s1">
+For the connection with the basic solutions in §28.2(ii),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="84" xml:id="C28.S2.SS6.p6.s2">
+<Math equation-number="28.2.38" mode="display" xml:id="C28.S2.E38">\frac{\mathrm{ce}_{n}\left(z,q\right)}{\mathrm{ce}_{n}\left(0,q\right)}=w_{ \mbox{\tiny I}}(z;a_{n}\left(q\right),q), if n=0,1,\dots,</Math> , <Math equation-number="28.2.39" mode="display" xml:id="C28.S2.E39">\frac{\mathrm{se}_{n}\left(z,q\right)}{\mathrm{se}_{n}'\left(0,q\right)}=w_{ \mbox{\tiny II}}(z;b_{n}\left(q\right),q), if n=1,2,\dots</Math>.
+</sentence>
+
+</para>
+
+  
+</subsection>
+ 
+</section>

@@ -1,0 +1,2693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C8">
+<title>Incomplete Gamma and Related Functions</title>               
+          
+<section xml:id="C8.S1">
+<title>Special Notation</title>         
+<para xml:id="C8.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C8.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C8.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C8.S1.p1.t1.s2">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C8.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C8.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C8.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r3.m1">a,p</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C8.S1.p1.t1.s6">
+real or complex parameters.    
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C8.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r4.m1">k,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C8.S1.p1.t1.s8">
+nonnegative integers.    
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="10" sentence-num-in-table="9" xml:id="C8.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r5.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="11" sentence-num-in-table="10" xml:id="C8.S1.p1.t1.s10">
+arbitrary small positive constant.  
+</sentence>
+
+<sentence sentence-num-in-para="12" sentence-num-in-section="12" sentence-num-in-table="11" xml:id="C8.S1.p1.t1.s11">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r6.m1">\Gamma\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="13" sentence-num-in-section="13" sentence-num-in-table="12" xml:id="C8.S1.p1.t1.s12">
+gamma function (§LABEL:sec:GA.Def.GP).
+</sentence>
+
+<sentence sentence-num-in-para="14" sentence-num-in-section="14" sentence-num-in-table="13" xml:id="C8.S1.p1.t1.s13">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r7.m1">\psi\left(z\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-para="15" sentence-num-in-section="15" sentence-num-in-table="14" xml:id="C8.S1.p1.t1.s14">
+<Math mode="inline" xml:id="C8.S1.p1.t1.r7.m2">\Gamma'\left(z\right)/\Gamma\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C8.S1.p2.s1">
+Unless otherwise indicated, primes denote derivatives with respect to the argument.
+</sentence>
+
+</para>
+
+     
+<para xml:id="C8.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C8.S1.p3.s1">
+The functions treated in this chapter are the incomplete gamma functions <Math mode="inline" xml:id="C8.S1.p3.m1">\gamma\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p3.m2">\Gamma\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p3.m3">\gamma^{*}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p3.m4">P\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S1.p3.m5">Q\left(a,z\right)</Math> ; the incomplete beta functions <Math mode="inline" xml:id="C8.S1.p3.m6">\mathrm{B}_{x}\left(a,b\right)</Math> and <Math mode="inline" xml:id="C8.S1.p3.m7">I_{x}\left(a,b\right)</Math> ; the generalized exponential integral <Math mode="inline" xml:id="C8.S1.p3.m8">E_{p}\left(z\right)</Math> ; the generalized sine and cosine integrals <Math mode="inline" xml:id="C8.S1.p3.m9">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p3.m10">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p3.m11">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S1.p3.m12">\mathrm{Ci}\left(a,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C8.S1.p4.s1">
+Alternative notations include:Prym’s functions <Math mode="inline" xml:id="C8.S1.p4.m3">P_{z}(a)=\gamma\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S1.p4.m4">Q_{z}(a)=\Gamma\left(a,z\right)</Math> , ( , pp. 25–26) , ( , p. 63) ; <Math mode="inline" xml:id="C8.S1.p4.m7">(a,z)!=\gamma\left(a+1,z\right</Math> ), <Math mode="inline" xml:id="C8.S1.p4.m8">[a,z]!=\Gamma\left(a+1,z\right</Math> ), ( ) ; <Math mode="inline" xml:id="C8.S1.p4.m11">B(a,b,x)=\mathrm{B}_{x}\left(a,b\right)</Math> , <Math mode="inline" xml:id="C8.S1.p4.m12">I(a,b,x)=I_{x}\left(a,b\right)</Math> , ( ) ; <Math mode="inline" xml:id="C8.S1.p4.m13">\mathrm{Si}\left(a,x\right)\to\mathrm{Si}\left(1-a,x\right)</Math> , <Math mode="inline" xml:id="C8.S1.p4.m14">\mathrm{Ci}\left(a,x\right)\to\mathrm{Ci}\left(1-a,x\right)</Math> , ( ) .
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+   
+<section xml:id="C8.S2">
+<title>Definitions and Basic Properties</title>          
+<subsection xml:id="C8.S2.SS1">
+<title>Definitions</title>         
+<para xml:id="C8.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C8.S2.SS1.p1.s1">
+The general values of the incomplete gamma functions <Math mode="inline" xml:id="C8.S2.SS1.p1.m1">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S2.SS1.p1.m2">\Gamma\left(a,z\right)</Math> are defined by <Math equation-number="8.2.1" mode="display" xml:id="C8.S2.E1">\gamma\left(a,z\right)=\int_{0}^{z}t^{a-1}e^{-t}\mathrm{d}t, subject to \Re a&gt;0,</Math> , <Math equation-number="8.2.2" mode="display" xml:id="C8.S2.E2">\Gamma\left(a,z\right)=\int_{z}^{\infty}t^{a-1}e^{-t}\mathrm{d}t,</Math> without restrictions on the integration paths.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C8.S2.SS1.p1.s2">
+However, when the integration paths do not cross the negative real axis, and in the case of (LABEL:eq:IG.DEF.2) exclude the origin, <Math mode="inline" xml:id="C8.S2.SS1.p1.m3">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S2.SS1.p1.m4">\Gamma\left(a,z\right)</Math> take their principal values; compare §LABEL:sec:EF.FN.LOG.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C8.S2.SS1.p1.s3">
+Except where indicated otherwise in the DLMF these principal values are assumed. For example, <Math equation-number="8.2.3" mode="display" xml:id="C8.S2.E3">\gamma\left(a,z\right)+\Gamma\left(a,z\right)=\Gamma\left(a\right), subject to a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C8.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C8.S2.SS1.p2.s1">
+Normalized functions are: <Math equation-number="8.2.4" mode="display" xml:id="C8.S2.E4">P\left(a,z\right)=\frac{\gamma\left(a,z\right)}{\Gamma\left(a\right)}, Q\left(a,z\right)=\frac{\Gamma\left(a,z\right)}{\Gamma\left(a\right)},</Math> <Math equation-number="8.2.5" mode="display" xml:id="C8.S2.E5">P\left(a,z\right)+Q\left(a,z\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C8.S2.SS1.p2.s2">
+In addition, <Math equation-number="8.2.6" mode="display" xml:id="C8.S2.E6">\gamma^{*}\left(a,z\right)=z^{-a}P\left(a,z\right)=\frac{z^{-a}}{\Gamma\left(a \right)}\gamma\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C8.S2.SS1.p2.s3">
+<Math equation-number="8.2.7" mode="display" xml:id="C8.S2.E7">\gamma^{*}\left(a,z\right)=\frac{1}{\Gamma\left(a\right)}\int_{0}^{1}t^{a-1}e^ {-zt}\mathrm{d}t, subject to \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S2.SS2">
+<title>Analytic Continuation</title>          
+<para xml:id="C8.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C8.S2.SS2.p1.s1">
+In this subsection the functions <Math mode="inline" xml:id="C8.S2.SS2.p1.m1">\gamma</Math> and <Math mode="inline" xml:id="C8.S2.SS2.p1.m2">\Gamma</Math> have their general values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C8.S2.SS2.p2.s1">
+The function <Math mode="inline" xml:id="C8.S2.SS2.p2.m1">\gamma^{*}\left(a,z\right)</Math> is entire in <Math mode="inline" xml:id="C8.S2.SS2.p2.m2">z</Math> and <Math mode="inline" xml:id="C8.S2.SS2.p2.m3">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C8.S2.SS2.p2.s2">
+When <Math mode="inline" xml:id="C8.S2.SS2.p2.m4">z\neq 0</Math> , <Math mode="inline" xml:id="C8.S2.SS2.p2.m5">\Gamma\left(a,z\right)</Math> is an entire function of <Math mode="inline" xml:id="C8.S2.SS2.p2.m6">a</Math> , and <Math mode="inline" xml:id="C8.S2.SS2.p2.m7">\gamma\left(a,z\right)</Math> is meromorphic with simple poles at <Math mode="inline" xml:id="C8.S2.SS2.p2.m8">a=-n</Math> , <Math mode="inline" xml:id="C8.S2.SS2.p2.m9">n=0,1,2,\dots</Math> , with residue <Math mode="inline" xml:id="C8.S2.SS2.p2.m10">(-1)^{n}/n</Math>!
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C8.S2.SS2.p2.s3">
+.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C8.S2.SS2.p3.s1">
+For <Math mode="inline" xml:id="C8.S2.SS2.p3.m1">m\in\mathbb{Z}</Math> , <Math equation-number="8.2.8" mode="display" xml:id="C8.S2.E8">\gamma\left(a,ze^{2\pi mi}\right)=e^{2\pi mia}\gamma\left(a,z\right), subject to a\neq 0,-1,-2,\dots,</Math> , <Math equation-number="8.2.9" mode="display" xml:id="C8.S2.E9">\Gamma\left(a,ze^{2\pi mi}\right)=e^{2\pi mia}\Gamma\left(a,z\right)+(1-e^{2 \pi mia})\Gamma\left(a\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C8.S2.SS2.p3.s2">
+(LABEL:eq:IG.DEF.10) also holds when <Math mode="inline" xml:id="C8.S2.SS2.p3.m2">a</Math> is zero or a negative integer, provided that the right-hand side is replaced by its limiting value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="31" xml:id="C8.S2.SS2.p3.s3">
+For example, in the case <Math mode="inline" xml:id="C8.S2.SS2.p3.m3">m=-1</Math> we have <Math equation-number="8.2.10" mode="display" xml:id="C8.S2.E10">e^{-\pi ia}\Gamma\left(a,ze^{\pi i}\right)-e^{\pi ia}\Gamma\left(a,ze^{-\pi i} \right)=-\frac{2\pi i}{\Gamma\left(1-a\right)},</Math> without restriction on <Math mode="inline" xml:id="C8.S2.SS2.p3.m4">a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="32" xml:id="C8.S2.SS2.p4.s1">
+Lastly, <Math equation-number="8.2.11" mode="display" xml:id="C8.S2.E11">\Gamma\left(a,ze^{\pm\pi i}\right)=\Gamma\left(a\right)(1-z^{a}e^{\pm\pi ia} \gamma^{*}\left(a,-z\right))</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S2.SS3">
+<title>Differential Equations</title>          
+<para xml:id="C8.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C8.S2.SS3.p1.s1">
+If <Math mode="inline" xml:id="C8.S2.SS3.p1.m1">w=\gamma\left(a,z\right)</Math> or <Math mode="inline" xml:id="C8.S2.SS3.p1.m2">\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.2.12" mode="display" xml:id="C8.S2.E12">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(1+\frac{1-a}{z}\right)\frac{ \mathrm{d}w}{\mathrm{d}z}=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C8.S2.SS3.p2.s1">
+If <Math mode="inline" xml:id="C8.S2.SS3.p2.m1">w=e^{z}z^{1-a}\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.2.13" mode="display" xml:id="C8.S2.E13">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}-\left(1+\frac{1-a}{z}\right)\frac{ \mathrm{d}w}{\mathrm{d}z}+\frac{1-a}{z^{2}}w=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C8.S2.SS3.p2.s2">
+Also, <Math equation-number="8.2.14" mode="display" xml:id="C8.S2.E14">z\frac{{\mathrm{d}}^{2}\gamma^{*}}{{\mathrm{d}z}^{2}}+(a+1+z)\frac{\mathrm{d} \gamma^{*}}{\mathrm{d}z}+a\gamma^{*}=0</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S3">
+<title>Graphics</title>         
+<subsection xml:id="C8.S3.SS1">
+<title>Real Variables</title>         
+           
+<sentence sentence-num-in-section="36" xml:id="C8.S3.F1.s1">
+Figure 8.3.1: <Math mode="inline" xml:id="C8.S3.F1.m3">\Gamma\left(a,x\right)</Math> , <Math mode="inline" xml:id="C8.S3.F1.m4">a</Math> = 0.25, 1, 2, 2.5, 3.
+</sentence>           
+<sentence sentence-num-in-section="37" xml:id="C8.S3.F2.s1">
+Figure 8.3.2: <Math mode="inline" xml:id="C8.S3.F2.m3">\gamma\left(a,x\right)</Math> , <Math mode="inline" xml:id="C8.S3.F2.m4">a</Math> = 0.25, 0.5, 0.75, 1.
+</sentence>             
+<sentence sentence-num-in-section="38" xml:id="C8.S3.F3.s1">
+Figure 8.3.3: <Math mode="inline" xml:id="C8.S3.F3.m3">\gamma\left(a,x\right)</Math> , <Math mode="inline" xml:id="C8.S3.F3.m4">a</Math> = 1, 2, 2.5, 3.
+</sentence>           
+<sentence sentence-num-in-section="39" xml:id="C8.S3.F4.s1">
+Figure 8.3.4: <Math mode="inline" xml:id="C8.S3.F4.m4">\gamma^{*}\left(a,x\right)</Math> (= <Math mode="inline" xml:id="C8.S3.F4.m5">x^{-a}P\left(a,x\right)</Math> ), <Math mode="inline" xml:id="C8.S3.F4.m6">a</Math> = 0.25, 0.5, 0.75, 1, 2.
+</sentence>             
+<sentence sentence-num-in-section="40" xml:id="C8.S3.F5.s1">
+Figure 8.3.5: <Math mode="inline" xml:id="C8.S3.F5.m4">x^{-a}-\gamma^{*}\left(a,x\right)</Math> (= <Math mode="inline" xml:id="C8.S3.F5.m5">x^{-a}Q\left(a,x\right)</Math> ), <Math mode="inline" xml:id="C8.S3.F5.m6">a</Math> = 0.25, 0.5, 1, 2.
+</sentence> 
+          
+<sentence sentence-num-in-section="41" xml:id="C8.S3.F6.s1">
+Figure 8.3.6: <Math mode="inline" xml:id="C8.S3.F6.m5">\gamma^{*}\left(a,x\right)</Math> (= <Math mode="inline" xml:id="C8.S3.F6.m6">x^{-a}P\left(a,x\right)</Math> ), <Math mode="inline" xml:id="C8.S3.F6.m7">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S3.F6.m8">-5\leq a\leq 4</Math> .
+</sentence>   
+ 
+<para xml:id="C8.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C8.S3.SS1.p1.s1">
+Some monotonicity properties of <Math mode="inline" xml:id="C8.S3.SS1.p1.m1">\gamma^{*}\left(a,x\right)</Math> and <Math mode="inline" xml:id="C8.S3.SS1.p1.m2">\Gamma\left(a,x\right)</Math> in the four quadrants of the ( <Math mode="inline" xml:id="C8.S3.SS1.p1.m3">a,x</Math> )-plane in Figure LABEL:fig:IG.GV.RV.7 are given in ( , §9.6) .
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="43" xml:id="C8.S3.F7.s1">
+Figure 8.3.7: <Math mode="inline" xml:id="C8.S3.F7.m5">x^{-a}-\gamma^{*}\left(a,x\right)</Math> (= <Math mode="inline" xml:id="C8.S3.F7.m6">x^{-a}Q\left(a,x\right)</Math> ), <Math mode="inline" xml:id="C8.S3.F7.m7">0\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S3.F7.m8">-5\leq a\leq 5</Math> .
+</sentence> 
+  
+</subsection>
+ 
+<subsection xml:id="C8.S3.SS2">
+<title>Complex Argument</title>         
+ 
+<para xml:id="C8.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C8.S3.SS2.p1.s1">
+In the graphics shown in this subsection, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C8.S3.SS2.p1.s2">
+See LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="46" xml:id="C8.S3.F8.s1">
+Figure 8.3.8: <Math mode="inline" xml:id="C8.S3.F8.m4">\Gamma\left(0.25,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F8.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F8.m6">-3\leq y\leq 3</Math> . Principal value. There is a cut along the negative real axis. When <Math mode="inline" xml:id="C8.S3.F8.m7">x=y=0</Math> , <Math mode="inline" xml:id="C8.S3.F8.m8">\Gamma\left(0.25,0\right)=\Gamma\left(0.25\right)=3.625\ldot</Math>s .
+</sentence>             
+<sentence sentence-num-in-section="47" xml:id="C8.S3.F9.s1">
+Figure 8.3.9: <Math mode="inline" xml:id="C8.S3.F9.m4">\gamma\left(0.25,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F9.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F9.m6">-3\leq y\leq 3</Math> . Principal value. There is a cut along the negative real axis.
+</sentence>           
+<sentence sentence-num-in-section="48" xml:id="C8.S3.F10.s1">
+Figure 8.3.10: <Math mode="inline" xml:id="C8.S3.F10.m4">\gamma^{*}\left(0.25,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F10.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F10.m6">-3\leq y\leq 3</Math> .
+</sentence>    
+<para xml:id="C8.S3.SS2.p2">
+
+</para>
+          
+  
+<sentence sentence-num-in-section="49" xml:id="C8.S3.F11.s1">
+Figure 8.3.11: <Math mode="inline" xml:id="C8.S3.F11.m4">\Gamma\left(1,x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S3.F11.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F11.m6">-3\leq y\leq 3</Math> .
+</sentence>           
+<sentence sentence-num-in-section="50" xml:id="C8.S3.F12.s1">
+Figure 8.3.12: <Math mode="inline" xml:id="C8.S3.F12.m4">\gamma\left(1,x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S3.F12.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F12.m6">-3\leq y\leq 3</Math> .
+</sentence>             
+<sentence sentence-num-in-section="51" xml:id="C8.S3.F13.s1">
+Figure 8.3.13: <Math mode="inline" xml:id="C8.S3.F13.m4">\gamma^{*}\left(1,x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S3.F13.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F13.m6">-3\leq y\leq 3</Math> .
+</sentence>           
+<sentence sentence-num-in-section="52" xml:id="C8.S3.F14.s1">
+Figure 8.3.14: <Math mode="inline" xml:id="C8.S3.F14.m4">\Gamma\left(2.5,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F14.m5">-2.2\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F14.m6">-3\leq y\leq 3</Math> . Principal value. There is a cut along the negative real axis. When <Math mode="inline" xml:id="C8.S3.F14.m7">x=y=0</Math> , <Math mode="inline" xml:id="C8.S3.F14.m8">\Gamma\left(2.5,0\right)=\Gamma\left(2.5\right)=1.329\ldot</Math>s .
+</sentence>             
+<sentence sentence-num-in-section="53" xml:id="C8.S3.F15.s1">
+Figure 8.3.15: <Math mode="inline" xml:id="C8.S3.F15.m4">\gamma\left(2.5,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F15.m5">-2.2\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F15.m6">-3\leq y\leq 3</Math> . Principal value. There is a cut along the negative real axis.
+</sentence>           
+<sentence sentence-num-in-section="54" xml:id="C8.S3.F16.s1">
+Figure 8.3.16: <Math mode="inline" xml:id="C8.S3.F16.m4">\gamma^{*}\left(2.5,x+iy\right</Math>) , <Math mode="inline" xml:id="C8.S3.F16.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S3.F16.m6">-3\leq y\leq 3</Math> .
+</sentence>     
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S4">
+<title>Special Values</title>          
+<para xml:id="C8.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C8.S4.p1.s1">
+For <Math mode="inline" xml:id="C8.S4.p1.m1">\operatorname{erf}\left(z\right)</Math> , <Math mode="inline" xml:id="C8.S4.p1.m2">\operatorname{erfc}\left(z\right)</Math> , and <Math mode="inline" xml:id="C8.S4.p1.m3">F\left(z\right)</Math> , see §§LABEL:sec:ER.DF.ER,LABEL:sec:ER.DF.DA.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="56" xml:id="C8.S4.p1.s2">
+For <Math mode="inline" xml:id="C8.S4.p1.m4">E_{n}\left(z\right)</Math> see §LABEL:sec:IG.GEI.DEF.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="57" xml:id="C8.S4.p1.s3">
+<Math equation-number="8.4.1" mode="display" xml:id="C8.S4.E1">\gamma\left(\tfrac{1}{2},z^{2}\right)=2\int_{0}^{z}e^{-t^{2}}\mathrm{d}t=\sqrt {\pi}\operatorname{erf}\left(z\right),</Math> <Math equation-number="8.4.2" mode="display" xml:id="C8.S4.E2">\gamma^{*}\left(a,0\right)=\frac{1}{\Gamma\left(a+1\right)},</Math> , <Math equation-number="8.4.3" mode="display" xml:id="C8.S4.E3">\gamma^{*}\left(\tfrac{1}{2},-z^{2}\right)=\frac{2e^{z^{2}}}{z\sqrt{\pi}}F \left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="58" xml:id="C8.S4.p1.s4">
+<Math equation-number="8.4.4" mode="display" xml:id="C8.S4.E4">\Gamma\left(0,z\right)=\int_{z}^{\infty}t^{-1}e^{-t}\mathrm{d}t=E_{1}\left(z \right),</Math> <Math equation-number="8.4.5" mode="display" xml:id="C8.S4.E5">\Gamma\left(1,z\right)=e^{-z},</Math> <Math equation-number="8.4.6" mode="display" xml:id="C8.S4.E6">\Gamma\left(\tfrac{1}{2},z^{2}\right)=2\int_{z}^{\infty}e^{-t^{2}}\mathrm{d}t= \sqrt{\pi}\operatorname{erfc}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C8.S4.p2.s1">
+For <Math mode="inline" xml:id="C8.S4.p2.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.4.7" mode="display" xml:id="C8.S4.E7">\gamma\left(n+1,z\right)=n!(1-e^{-z}e_{n}(z))</Math> , <Math equation-number="8.4.8" mode="display" xml:id="C8.S4.E8">\Gamma\left(n+1,z\right)=n!e^{-z}e_{n}(z)</Math> ,, <Math equation-number="8.4.9" mode="display" xml:id="C8.S4.E9">P\left(n+1,z\right)=1-e^{-z}e_{n}(z),</Math> , <Math equation-number="8.4.10" mode="display" xml:id="C8.S4.E10">Q\left(n+1,z\right)=e^{-z}e_{n}(z),</Math> where <Math equation-number="8.4.11" mode="display" xml:id="C8.S4.E11">e_{n}(z)=\sum_{k=0}^{n}\frac{z^{k}}{k!}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C8.S4.p3.s1">
+Also <Math equation-number="8.4.12" mode="display" xml:id="C8.S4.E12">\gamma^{*}\left(-n,z\right)=z^{n},</Math> <Math equation-number="8.4.13" mode="display" xml:id="C8.S4.E13">\Gamma\left(1-n,z\right)=z^{1-n}E_{n}\left(z\right),</Math> <Math equation-number="8.4.14" mode="display" xml:id="C8.S4.E14">Q\left(n+\tfrac{1}{2},z^{2}\right)=\operatorname{erfc}\left(z\right)+\frac{e^{ -z^{2}}}{\sqrt{\pi}}\sum_{k=1}^{n}\frac{z^{2k-1}}{{\left(\tfrac{1}{2}\right)_{ k}}},</Math> <Math equation-number="8.4.15" mode="display" xml:id="C8.S4.E15">\Gamma\left(-n,z\right)=\frac{(-1)^{n}}{n!}\left(E_{1}\left(z\right)-e^{-z} \sum_{k=0}^{n-1}\frac{(-1)^{k}k!}{z^{k+1}}\right)=\frac{(-1)^{n}}{n!}\left( \psi\left(n+1\right)-\ln z\right)-z^{-n}\sum_{\begin{subarray}{c}k=0\\ k\neq n\end{subarray}}^{\infty}\frac{(-z)^{k}}{k!(k-n)}</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S5">
+<title>Confluent Hypergeometric Representations</title>         
+ 
+<para xml:id="C8.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C8.S5.p1.s1">
+For the confluent hypergeometric functions <Math mode="inline" xml:id="C8.S5.p1.m1">M</Math> , <Math mode="inline" xml:id="C8.S5.p1.m2">{\mathbf{M}}</Math> , <Math mode="inline" xml:id="C8.S5.p1.m3">U</Math> , and the Whittaker functions <Math mode="inline" xml:id="C8.S5.p1.m4">M_{\kappa,\mu}</Math> and <Math mode="inline" xml:id="C8.S5.p1.m5">W_{\kappa,\mu}</Math> , see §§LABEL:sec:CH.MU.DE.KU and LABEL:sec:CH.KM.DE.WH.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="62" xml:id="C8.S5.p1.s2">
+<Math equation-number="8.5.1" mode="display" xml:id="C8.S5.E1">\gamma\left(a,z\right)=a^{-1}z^{a}e^{-z}M\left(1,1+a,z\right)=a^{-1}z^{a}M \left(a,1+a,-z\right), subject to a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="63" xml:id="C8.S5.p1.s3">
+<Math equation-number="8.5.2" mode="display" xml:id="C8.S5.E2">\gamma^{*}\left(a,z\right)=e^{-z}{\mathbf{M}}\left(1,1+a,z\right)={\mathbf{M}} \left(a,1+a,-z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="64" xml:id="C8.S5.p1.s4">
+<Math equation-number="8.5.3" mode="display" xml:id="C8.S5.E3">\Gamma\left(a,z\right)=e^{-z}U\left(1-a,1-a,z\right)=z^{a}e^{-z}U\left(1,1+a,z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="65" xml:id="C8.S5.p1.s5">
+<Math equation-number="8.5.4" mode="display" xml:id="C8.S5.E4">\gamma\left(a,z\right)=a^{-1}z^{\frac{1}{2}a-\frac{1}{2}}e^{-\frac{1}{2}z}M_{ \frac{1}{2}a-\frac{1}{2},\frac{1}{2}a}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="66" xml:id="C8.S5.p1.s6">
+<Math equation-number="8.5.5" mode="display" xml:id="C8.S5.E5">\Gamma\left(a,z\right)=e^{-\frac{1}{2}z}z^{\frac{1}{2}a-\frac{1}{2}}W_{\frac{1 }{2}a-\frac{1}{2},\frac{1}{2}a}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S6">
+<title>Integral Representations</title>         
+<subsection xml:id="C8.S6.SS1">
+<title>Integrals Along the Real Line</title>          
+<para xml:id="C8.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="67" xml:id="C8.S6.SS1.p1.s1">
+For the Bessel function <Math mode="inline" xml:id="C8.S6.SS1.p1.m1">J_{\nu}\left(z\right)</Math> and modified Bessel function <Math mode="inline" xml:id="C8.S6.SS1.p1.m2">K_{\nu}\left(z\right)</Math> , see §§LABEL:sec:BS.DEF.SS and LABEL:sec:BS.MDEF.SS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S6.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="68" xml:id="C8.S6.SS1.p2.s1">
+ <Math equation-number="8.6.1" mode="display" xml:id="C8.S6.E1">\gamma\left(a,z\right)=\frac{z^{a}}{\sin\left(\pi a\right)}\int_{0}^{\pi}e^{z \cos t}\cos\left(at+z\sin t\right)\mathrm{d}t, subject to a\notin\mathbb{Z},</Math> , <Math equation-number="8.6.2" mode="display" xml:id="C8.S6.E2">\gamma\left(a,z\right)=z^{\frac{1}{2}a}\int_{0}^{\infty}e^{-t}t^{\frac{1}{2}a- 1}J_{a}\left(2\sqrt{zt}\right)\mathrm{d}t, subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="69" xml:id="C8.S6.SS1.p2.s2">
+, <Math equation-number="8.6.3" mode="display" xml:id="C8.S6.E3">\gamma\left(a,z\right)=z^{a}\int_{0}^{\infty}\exp\left(-at-ze^{-t}\right) \mathrm{d}t, subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="70" xml:id="C8.S6.SS1.p2.s3">
+<Math equation-number="8.6.4" mode="display" xml:id="C8.S6.E4">\Gamma\left(a,z\right)=\frac{z^{a}e^{-z}}{\Gamma\left(1-a\right)}\int_{0}^{ \infty}\frac{t^{-a}e^{-t}}{z+t}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\pi, \Re a&lt;1,</Math> , <Math equation-number="8.6.5" mode="display" xml:id="C8.S6.E5">\Gamma\left(a,z\right)=z^{a}e^{-z}\int_{0}^{\infty}\frac{e^{-zt}}{(1+t)^{1-a}} \mathrm{d}t, subject to \Re z&gt;0,</Math> , <Math equation-number="8.6.6" mode="display" xml:id="C8.S6.E6">\Gamma\left(a,z\right)=\frac{2z^{\frac{1}{2}a}e^{-z}}{\Gamma\left(1-a\right)} \int_{0}^{\infty}e^{-t}t^{-\frac{1}{2}a}K_{a}\left(2\sqrt{zt}\right)\mathrm{d}t, subject to \Re a&lt;1,</Math> , <Math equation-number="8.6.7" mode="display" xml:id="C8.S6.E7">\Gamma\left(a,z\right)=z^{a}\int_{0}^{\infty}\exp\left(at-ze^{t}\right)\mathrm {d}t, subject to \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S6.SS2">
+<title>Contour Integrals</title>          
+<para xml:id="C8.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C8.S6.SS2.p1.s1">
+ <Math equation-number="8.6.8" mode="display" xml:id="C8.S6.E8">\gamma\left(a,z\right)=\frac{-\mathrm{i}z^{a}}{2\sin\left(\pi a\right)}\int_{- 1}^{(0+)}t^{a-1}e^{zt}\mathrm{d}t, subject to z\neq 0, a\notin\mathbb{Z};</Math> <Math mode="inline" xml:id="C8.S6.SS2.p1.m1">t^{a-1}</Math> takes its principal value where the path intersects the positive real axis, and is continuous elsewhere on the path.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C8.S6.SS2.p1.s2">
+<Math equation-number="8.6.9" mode="display" xml:id="C8.S6.E9">\Gamma\left(-a,ze^{\pm\pi i}\right)=\frac{e^{z}e^{\mp\pi\mathrm{i}a}}{\Gamma \left(1+a\right)}\int_{0}^{\infty}\frac{t^{a}e^{-zt}}{t-1}\mathrm{d}t, subject to \Re z&gt;0, \Re a&gt;-1,</Math> where the integration path passes above or below the pole at <Math mode="inline" xml:id="C8.S6.SS2.p1.m2">t=1</Math> , according as upper or lower signs are taken.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S6.Px1">
+<title>Mellin–Barnes Integrals</title>       
+<para xml:id="C8.S6.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C8.S6.Px1.p1.s1">
+In (LABEL:eq:IG.IR.12)–(LABEL:eq:IG.IR.14),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="74" xml:id="C8.S6.Px1.p1.s2">
+<Math mode="inline" xml:id="C8.S6.Px1.p1.m1">c</Math> is a real constant and the path of integration is indented (if necessary) so that in the case of (LABEL:eq:IG.IR.12) it separates the poles of the gamma function from the pole at <Math mode="inline" xml:id="C8.S6.Px1.p1.m2">s=a</Math> , in the case of (LABEL:eq:IG.IR.13) it is to the right of all poles, and in the case of (LABEL:eq:IG.IR.14) it separates the poles of the gamma function from the poles at <Math mode="inline" xml:id="C8.S6.Px1.p1.m3">s=0,1,2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="75" xml:id="C8.S6.Px1.p1.s3">
+<Math equation-number="8.6.10" mode="display" xml:id="C8.S6.E10">\gamma\left(a,z\right)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{ \Gamma\left(s\right)}{a-s}z^{a-s}\mathrm{d}s, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, a\neq 0,-1,-2,\dots,</Math> <Math equation-number="8.6.11" mode="display" xml:id="C8.S6.E11">\Gamma\left(a,z\right)=\frac{1}{2\pi i}\int_{c-i\infty}^{c+i\infty}\Gamma\left (s+a\right)\frac{z^{-s}}{s}\mathrm{d}s, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi,</Math> , <Math equation-number="8.6.12" mode="display" xml:id="C8.S6.E12">\Gamma\left(a,z\right)=-\frac{z^{a-1}e^{-z}}{\Gamma\left(1-a\right)}\*\frac{1} {2\pi i}\int_{c-i\infty}^{c+i\infty}\Gamma\left(s+1-a\right)\frac{\pi z^{-s}}{ \sin\left(\pi s\right)}\mathrm{d}s, subject to |\operatorname{ph}z|&lt;\tfrac{3}{2}\pi, a\neq 1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S6.SS3">
+<title>Compendia</title>         
+ 
+<para xml:id="C8.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C8.S6.SS3.p1.s1">
+For collections of integral representations of <Math mode="inline" xml:id="C8.S6.SS3.p1.m1">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S6.SS3.p1.m2">\Gamma\left(a,z\right)</Math> see ( , §9.3) , ( , pp. 68–69) , ( , pp. 309–312) , ( , §3.10) , and ( , pp. 282–283) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S7">
+<title>Series Expansions</title>             
+<para xml:id="C8.S7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C8.S7.p1.s1">
+For the functions <Math mode="inline" xml:id="C8.S7.p1.m1">e_{n}(z)</Math> , <Math mode="inline" xml:id="C8.S7.p1.m2">{\mathsf{i}^{(1)}_{n}}\left(z\right)</Math> , and <Math mode="inline" xml:id="C8.S7.p1.m3">L^{(\alpha)}_{n}\left(x\right)</Math> see (LABEL:eq:IG.SV.10), §§LABEL:sec:BS.DBP.SS,and LABEL:sec:OP.CP.OR, respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C8.S7.p2.s1">
+ <Math equation-number="8.7.1" mode="display" xml:id="C8.S7.E1">\gamma^{*}\left(a,z\right)=e^{-z}\sum_{k=0}^{\infty}\frac{z^{k}}{\Gamma\left(a +k+1\right)}=\frac{1}{\Gamma\left(a\right)}\sum_{k=0}^{\infty}\frac{(-z)^{k}}{ k!(a+k)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="79" xml:id="C8.S7.p2.s2">
+<Math equation-number="8.7.2" mode="display" xml:id="C8.S7.E2">\gamma\left(a,x+y\right)-\gamma\left(a,x\right)=\Gamma\left(a,x\right)-\Gamma \left(a,x+y\right)=e^{-x}x^{a-1}\sum_{n=0}^{\infty}\frac{{\left(1-a\right)_{n} }}{(-x)^{n}}(1-e^{-y}e_{n}(y)), subject to |y|&lt;|x|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="80" xml:id="C8.S7.p2.s3">
+<Math equation-number="8.7.3" mode="display" xml:id="C8.S7.E3">\Gamma\left(a,z\right)=\Gamma\left(a\right)-\sum_{k=0}^{\infty}\frac{(-1)^{k}z ^{a+k}}{k!(a+k)}=\Gamma\left(a\right)\left(1-z^{a}e^{-z}\sum_{k=0}^{\infty} \frac{z^{k}}{\Gamma\left(a+k+1\right)}\right), subject to a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="81" xml:id="C8.S7.p2.s4">
+<Math equation-number="8.7.4" mode="display" xml:id="C8.S7.E4">\gamma\left(a,x\right)=\Gamma\left(a\right)x^{\frac{1}{2}a}e^{-x}\sum_{n=0}^{ \infty}e_{n}(-1)x^{\frac{1}{2}n}I_{n+a}\left(\textstyle 2x^{1/2}\right), subject to a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="82" xml:id="C8.S7.p2.s5">
+<Math equation-number="8.7.5" mode="display" xml:id="C8.S7.E5">\gamma^{*}\left(a,z\right)=e^{-\frac{1}{2}z}\sum_{n=0}^{\infty}\frac{{\left(1- a\right)_{n}}}{\Gamma\left(n+a+1\right)}{\left(2n+1\right)}{\mathsf{i}^{(1)}_{ n}}\left(\tfrac{1}{2}z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="83" xml:id="C8.S7.p2.s6">
+<Math equation-number="8.7.6" mode="display" xml:id="C8.S7.E6">\Gamma\left(a,x\right)=x^{a}e^{-x}\sum_{n=0}^{\infty}\frac{L^{(a)}_{n}\left(x \right)}{n+1}, subject to x&gt;0</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C8.S7.p3.s1">
+For an expansion for <Math mode="inline" xml:id="C8.S7.p3.m1">\gamma\left(a,ix\right)</Math> in series of Bessel functions <Math mode="inline" xml:id="C8.S7.p3.m2">J_{n}\left(x\right)</Math> that converges rapidly when <Math mode="inline" xml:id="C8.S7.p3.m3">a&gt;0</Math> and <Math mode="inline" xml:id="C8.S7.p3.m4">x</Math> ( <Math mode="inline" xml:id="C8.S7.p3.m5">\geq 0</Math> ) is small or moderate in magnitude see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S8">
+<title>Recurrence Relations and Derivatives</title>          
+<para xml:id="C8.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="85" xml:id="C8.S8.p1.s1">
+ <Math equation-number="8.8.1" mode="display" xml:id="C8.S8.E1">\gamma\left(a+1,z\right)=a\gamma\left(a,z\right)-z^{a}e^{-z},</Math> <Math equation-number="8.8.2" mode="display" xml:id="C8.S8.E2">\Gamma\left(a+1,z\right)=a\Gamma\left(a,z\right)+z^{a}e^{-z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C8.S8.p2.s1">
+If <Math mode="inline" xml:id="C8.S8.p2.m1">w(a,z)=\gamma\left(a,z\right)</Math> or <Math mode="inline" xml:id="C8.S8.p2.m2">\Gamma\left(a,z\right)</Math> , then <Math equation-number="8.8.3" mode="display" xml:id="C8.S8.E3">w(a+2,z)-(a+1+z)w(a+1,z)+azw(a,z)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="87" xml:id="C8.S8.p2.s2">
+<Math equation-number="8.8.4" mode="display" xml:id="C8.S8.E4">z\gamma^{*}\left(a+1,z\right)=\gamma^{*}\left(a,z\right)-\frac{e^{-z}}{\Gamma \left(a+1\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="88" xml:id="C8.S8.p2.s3">
+<Math equation-number="8.8.5" mode="display" xml:id="C8.S8.E5">P\left(a+1,z\right)=P\left(a,z\right)-\frac{z^{a}e^{-z}}{\Gamma\left(a+1\right )},</Math> <Math equation-number="8.8.6" mode="display" xml:id="C8.S8.E6">Q\left(a+1,z\right)=Q\left(a,z\right)+\frac{z^{a}e^{-z}}{\Gamma\left(a+1\right )}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="89" xml:id="C8.S8.p3.s1">
+For <Math mode="inline" xml:id="C8.S8.p3.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.8.7" mode="display" xml:id="C8.S8.E7">\gamma\left(a+n,z\right)={\left(a\right)_{n}}\gamma\left(a,z\right)-z^{a}e^{-z }\sum_{k=0}^{n-1}\frac{\Gamma\left(a+n\right)}{\Gamma\left(a+k+1\right)}z^{k},</Math> <Math equation-number="8.8.8" mode="display" xml:id="C8.S8.E8">\gamma\left(a,z\right)=\frac{\Gamma\left(a\right)}{\Gamma\left(a-n\right)} \gamma\left(a-n,z\right)-z^{a-1}e^{-z}\sum_{k=0}^{n-1}\frac{\Gamma\left(a \right)}{\Gamma\left(a-k\right)}z^{-k},</Math> <Math equation-number="8.8.9" mode="display" xml:id="C8.S8.E9">\Gamma\left(a+n,z\right)={\left(a\right)_{n}}\Gamma\left(a,z\right)+z^{a}e^{-z }\sum_{k=0}^{n-1}\frac{\Gamma\left(a+n\right)}{\Gamma\left(a+k+1\right)}z^{k},</Math> <Math equation-number="8.8.10" mode="display" xml:id="C8.S8.E10">\Gamma\left(a,z\right)=\frac{\Gamma\left(a\right)}{\Gamma\left(a-n\right)} \Gamma\left(a-n,z\right)+z^{a-1}e^{-z}\sum_{k=0}^{n-1}\frac{\Gamma\left(a \right)}{\Gamma\left(a-k\right)}z^{-k},</Math> <Math equation-number="8.8.11" mode="display" xml:id="C8.S8.E11">P\left(a+n,z\right)=P\left(a,z\right)-z^{a}e^{-z}\sum_{k=0}^{n-1}\frac{z^{k}}{ \Gamma\left(a+k+1\right)},</Math> <Math equation-number="8.8.12" mode="display" xml:id="C8.S8.E12">Q\left(a+n,z\right)=Q\left(a,z\right)+z^{a}e^{-z}\sum_{k=0}^{n-1}\frac{z^{k}}{ \Gamma\left(a+k+1\right)}.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="90" xml:id="C8.S8.p3.s2">
+ <Math equation-number="8.8.13" mode="display" xml:id="C8.S8.E13">\frac{\mathrm{d}}{\mathrm{d}z}\gamma\left(a,z\right)=-\frac{\mathrm{d}}{ \mathrm{d}z}\Gamma\left(a,z\right)=z^{a-1}e^{-z},</Math> <Math equation-number="8.8.14" mode="display" xml:id="C8.S8.E14">\left.\frac{\partial}{\partial a}\gamma^{*}\left(a,z\right)\right|_{a=0}=-E_{1 }\left(z\right)-\ln z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="91" xml:id="C8.S8.p3.s3">
+For <Math mode="inline" xml:id="C8.S8.p3.m2">E_{1}\left(z\right)</Math> see §LABEL:sec:IG.GEI.DEF.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="92" xml:id="C8.S8.p4.s1">
+For <Math mode="inline" xml:id="C8.S8.p4.m1">n=0,1,2,\dots</Math> , <Math equation-number="8.8.15" mode="display" xml:id="C8.S8.E15">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{-a}\gamma\left(a,z\right))=(-1)^ {n}z^{-a-n}\gamma\left(a+n,z\right),</Math> <Math equation-number="8.8.16" mode="display" xml:id="C8.S8.E16">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{-a}\Gamma\left(a,z\right))=(-1)^ {n}z^{-a-n}\Gamma\left(a+n,z\right),</Math> <Math equation-number="8.8.17" mode="display" xml:id="C8.S8.E17">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(e^{z}\gamma\left(a,z\right))=(-1)^{ n}{\left(1-a\right)_{n}}e^{z}\gamma\left(a-n,z\right),</Math> <Math equation-number="8.8.18" mode="display" xml:id="C8.S8.E18">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(z^{a}e^{z}\gamma^{*}\left(a,z\right ))=z^{a-n}e^{z}\gamma^{*}\left(a-n,z\right),</Math> <Math equation-number="8.8.19" mode="display" xml:id="C8.S8.E19">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}(e^{z}\Gamma\left(a,z\right))=(-1)^{ n}{\left(1-a\right)_{n}}e^{z}\Gamma\left(a-n,z\right)</Math>.
+</sentence>
+
+</para>
+  
+</section>
+ 
+<section xml:id="C8.S9">
+<title>Continued Fractions</title>         
+ 
+<para xml:id="C8.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C8.S9.p1.s1">
+ <Math equation-number="8.9.1" mode="display" xml:id="C8.S9.E1">\Gamma\left(a+1\right)e^{z}\gamma^{*}\left(a,z\right)=\cfrac{1}{1-\cfrac{z}{a+ 1+\cfrac{z}{a+2-\cfrac{(a+1)z}{a+3+\cfrac{2z}{a+4-\cfrac{(a+2)z}{a+5+\cfrac{3z }{a+6-\cdots}}}}}}}, subject to a\neq-1,-2,\dots,</Math> , <Math equation-number="8.9.2" mode="display" xml:id="C8.S9.E2">z^{-a}e^{z}\Gamma\left(a,z\right)=\cfrac{z^{-1}}{1+\cfrac{(1-a)z^{-1}}{1+ \cfrac{z^{-1}}{1+\cfrac{(2-a)z^{-1}}{1+\cfrac{2z^{-1}}{1+\cfrac{(3-a)z^{-1}}{1 +\cfrac{3z^{-1}}{1+\cdots}}}}}}}, subject to |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C8.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="94" xml:id="C8.S9.p2.s1">
+For these expansions and further information see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="95" xml:id="C8.S9.p2.s2">
+See also ( , pp. 240–251) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C8.S10">
+<title>Inequalities</title>         
+ 
+<para xml:id="C8.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C8.S10.p1.s1">
+ <Math equation-number="8.10.1" mode="display" xml:id="C8.S10.E1">x^{1-a}e^{x}\Gamma\left(a,x\right)\leq 1, subject to x&gt;0, 0&lt;a\leq 1,</Math> <Math equation-number="8.10.2" mode="display" xml:id="C8.S10.E2">\gamma\left(a,x\right)\geq\frac{x^{a-1}}{a}(1-e^{-x}), subject to x&gt;0, 0&lt;a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="97" xml:id="C8.S10.p1.s2">
+The inequalities in (LABEL:eq:IG.IQ.1) and (LABEL:eq:IG.IQ.2) are reversed when <Math mode="inline" xml:id="C8.S10.p1.m1">a\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="98" xml:id="C8.S10.p1.s3">
+If <Math mode="inline" xml:id="C8.S10.p1.m2">\vartheta</Math> is defined by <Math equation-number="8.10.3" mode="display" xml:id="C8.S10.E3">x^{1-a}e^{x}\Gamma\left(a,x\right)=1+\frac{a-1}{x}\vartheta,</Math> then <Math mode="inline" xml:id="C8.S10.p1.m3">\vartheta\to 1</Math> as <Math mode="inline" xml:id="C8.S10.p1.m4">x\to\infty</Math> , and <Math equation-number="8.10.4" mode="display" xml:id="C8.S10.E4">0&lt;\vartheta\leq 1, subject to x&gt;0, a\leq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="99" xml:id="C8.S10.p1.s4">
+For further inequalities of these types see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S10.Px1">
+<title>Padé Approximants</title>    
+<para xml:id="C8.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C8.S10.Px1.p1.s1">
+For <Math mode="inline" xml:id="C8.S10.Px1.p1.m1">n=1,2,\dots</Math> , <Math equation-number="8.10.5" mode="display" xml:id="C8.S10.E5">A_{n}&lt;x^{1-a}e^{x}\Gamma\left(a,x\right)&lt;B_{n}, subject to x&gt;0, a&lt;1,</Math> where <Math equation-number="8.10.6" mode="display" xml:id="C8.S10.E6">A_{1}=\frac{x}{x+1-a}, B_{1}=\frac{x+1}{x+2-a}, A_{2}=\frac{x(x+3-a)}{x^{2}+2(2-a)x+(1-a)(2-a)}, B_{2}=\frac{x^{2}+(5-a)x+2}{x^{2}+2(3-a)x+(2-a)(3-a)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="101" xml:id="C8.S10.Px1.p1.s2">
+For hypergeometric polynomial representations of <Math mode="inline" xml:id="C8.S10.Px1.p1.m2">A_{n}</Math> and <Math mode="inline" xml:id="C8.S10.Px1.p1.m3">B_{n}</Math> , see ( , §14.6) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C8.S10.Px1.p2.s1">
+Next, define <Math equation-number="8.10.7" mode="display" xml:id="C8.S10.E7">I=\int_{0}^{x}t^{a-1}e^{t}\mathrm{d}t=\Gamma\left(a\right)x^{a}\gamma^{*}\left (a,-x\right), subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="103" xml:id="C8.S10.Px1.p2.s2">
+Then <Math equation-number="8.10.8" mode="display" xml:id="C8.S10.E8">\frac{(a+1)(a+2)-x}{(a+1)(a+2+x)}&lt;ax^{-a}e^{-x}I&lt;\frac{a+1}{a+1+x}, subject to x&gt;0, a\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C8.S10.Px1.p3.s1">
+Also, define <Math equation-number="8.10.9" mode="display" xml:id="C8.S10.E9">c_{a}=(\Gamma\left(1+a\right))^{1/(a-1)}, d_{a}=(\Gamma\left(1+a\right))^{-1/a}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="105" xml:id="C8.S10.Px1.p3.s2">
+Then <Math equation-number="8.10.10" mode="display" xml:id="C8.S10.E10">\frac{x}{2a}\left(\left(1+\frac{2}{x}\right)^{a}-1\right)&lt;x^{1-a}e^{x}\Gamma \left(a,x\right)\leq\frac{x}{ac_{a}}\left(\left(1+\frac{c_{a}}{x}\right)^{a}-1 \right), subject to x\geq 0, 0&lt;a&lt;1,</Math> and <Math equation-number="8.10.11" mode="display" xml:id="C8.S10.E11">(1-e^{-\alpha_{a}x})^{a}\leq P\left(a,x\right)\leq(1-e^{-\beta_{a}x})^{a}, subject to x\geq 0, a&gt;0,</Math> where <Math equation-number="8.10.12" mode="display" xml:id="C8.S10.E12">\alpha_{a}=\begin{cases}1,&amp;0&lt;a&lt;1,\\ d_{a},&amp;a&gt;1,\end{cases}, \beta_{a}=\begin{cases}d_{a},&amp;0&lt;a&lt;1,\\ 1,&amp;a&gt;1.\end{cases</Math> } Equalities in (LABEL:eq:IG.IQ.10) apply only when <Math mode="inline" xml:id="C8.S10.Px1.p3.m1">a=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S10.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C8.S10.Px1.p4.s1">
+Lastly, <Math equation-number="8.10.13" mode="display" xml:id="C8.S10.E13">\frac{\Gamma\left(n,n\right)}{\Gamma\left(n\right)}&lt;\frac{1}{2}&lt;\frac{\Gamma \left(n,n-1\right)}{\Gamma\left(n\right)}, subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C8.S11">
+<title>Asymptotic Approximations and Expansions</title>          
+<subsection xml:id="C8.S11.SS1">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS1.m1">z</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS1.m2">a</Math></title>         
+<para xml:id="C8.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C8.S11.SS1.p1.s1">
+Define <Math equation-number="8.11.1" mode="display" xml:id="C8.S11.E1">u_{k}=(-1)^{k}{\left(1-a\right)_{k}}=(a-1)(a-2)\cdots(a-k),</Math> <Math equation-number="8.11.2" mode="display" xml:id="C8.S11.E2">\Gamma\left(a,z\right)=z^{a-1}e^{-z}\left(\sum_{k=0}^{n-1}\frac{u_{k}}{z^{k}}+ R_{n}(a,z)\right), subject to n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C8.S11.SS1.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S11.SS1.p1.m1">z\to\infty</Math> with <Math mode="inline" xml:id="C8.S11.SS1.p1.m2">a</Math> and <Math mode="inline" xml:id="C8.S11.SS1.p1.m3">n</Math> fixed <Math equation-number="8.11.3" mode="display" xml:id="C8.S11.E3">R_{n}(a,z)=O\left(z^{-n}\right), subject to |\operatorname{ph}z|\leq\tfrac{3}{2}\pi-\delta,</Math> where <Math mode="inline" xml:id="C8.S11.SS1.p1.m4">\delta</Math> denotes an arbitrary small positive constant.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="109" xml:id="C8.S11.SS1.p2.s1">
+If <Math mode="inline" xml:id="C8.S11.SS1.p2.m1">a</Math> is real and <Math mode="inline" xml:id="C8.S11.SS1.p2.m2">z</Math> ( <Math mode="inline" xml:id="C8.S11.SS1.p2.m3">=x</Math> ) is positive, then <Math mode="inline" xml:id="C8.S11.SS1.p2.m4">R_{n}(a,x)</Math> is bounded in absolute value by the first neglected term <Math mode="inline" xml:id="C8.S11.SS1.p2.m5">u_{n}/x^{n}</Math> and has the same sign provided that <Math mode="inline" xml:id="C8.S11.SS1.p2.m6">n\geq a-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="110" xml:id="C8.S11.SS1.p2.s2">
+For bounds on <Math mode="inline" xml:id="C8.S11.SS1.p2.m7">R_{n}(a,z)</Math> when <Math mode="inline" xml:id="C8.S11.SS1.p2.m8">a</Math> is real and <Math mode="inline" xml:id="C8.S11.SS1.p2.m9">z</Math> is complex see ( , pp. 109–112) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="111" xml:id="C8.S11.SS1.p2.s3">
+For an exponentially-improved asymptotic expansion (§LABEL:sec:AS.RTSP.EIE) see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS2">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS2.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS2.m2">z</Math></title>         
+<para xml:id="C8.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C8.S11.SS2.p1.s1">
+ <Math equation-number="8.11.4" mode="display" xml:id="C8.S11.E4">\gamma\left(a,z\right)=z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{z^{k}}{{\left(a \right)_{k+1}}}, subject to a\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="113" xml:id="C8.S11.SS2.p1.s2">
+This expansion is absolutely convergent for all finite <Math mode="inline" xml:id="C8.S11.SS2.p1.m1">z</Math> , and it can also be regarded as a generalized asymptotic expansion (§LABEL:sec:AS.DEP.GAE) of <Math mode="inline" xml:id="C8.S11.SS2.p1.m2">\gamma\left(a,z\right)</Math> as <Math mode="inline" xml:id="C8.S11.SS2.p1.m3">a\to\infty</Math> in <Math mode="inline" xml:id="C8.S11.SS2.p1.m4">|\operatorname{ph}a|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="114" xml:id="C8.S11.SS2.p2.s1">
+Also, <Math equation-number="8.11.5" mode="display" xml:id="C8.S11.E5">P\left(a,z\right)\sim\frac{z^{a}e^{-z}}{\Gamma\left(1+a\right)}\sim(2\pi a)^{- \frac{1}{2}}e^{a-z}(z/a)^{a}, subject to a\to\infty, |\operatorname{ph}a|\leq\pi-\delta</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS3">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS3.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S11.SS3.m2">z/a</Math></title>        
+ 
+<para xml:id="C8.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C8.S11.SS3.p1.s1">
+If <Math mode="inline" xml:id="C8.S11.SS3.p1.m1">z=\lambda a</Math> , with <Math mode="inline" xml:id="C8.S11.SS3.p1.m2">\lambda</Math> fixed, then as <Math mode="inline" xml:id="C8.S11.SS3.p1.m3">a\to\infty</Math> <Math equation-number="8.11.6" mode="display" xml:id="C8.S11.E6">\gamma\left(a,z\right)\sim-z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{(-a)^{k}b_{k}( \lambda)}{(z-a)^{2k+1}}, subject to 0&lt;\lambda&lt;1, |\operatorname{ph}a|\leq\frac{\pi}{2}-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C8.S11.SS3.p1.s2">
+<Math equation-number="8.11.7" mode="display" xml:id="C8.S11.E7">\Gamma\left(a,z\right)\sim z^{a}e^{-z}\sum_{k=0}^{\infty}\frac{(-a)^{k}b_{k}( \lambda)}{(z-a)^{2k+1}}, subject to \lambda&gt;1, |\operatorname{ph}a|\leq\frac{3\pi}{2}-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="117" xml:id="C8.S11.SS3.p1.s3">
+where <Math equation-number="8.11.8" mode="display" xml:id="C8.S11.E8">b_{0}(\lambda)=1, b_{1}(\lambda)=\lambda, b_{2}(\lambda)=\lambda(2\lambda+1),</Math> and for <Math mode="inline" xml:id="C8.S11.SS3.p1.m4">k=1,2,\dots</Math> , <Math equation-number="8.11.9" mode="display" xml:id="C8.S11.E9">b_{k}(\lambda)=\lambda(1-\lambda)b_{k-1}^{\prime}(\lambda)+(2k-1)\lambda b_{k- 1}(\lambda)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C8.S11.SS3.p2.s1">
+Sharp error bounds and an exponentially-improved extension for (LABEL:eq:IG.AE.7) can be found in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C8.S11.SS3.p2.s2">
+This reference also contains explicit formulas for <Math mode="inline" xml:id="C8.S11.SS3.p2.m1">b_{k}(\lambda)</Math> in terms of Stirling numbers and for the case <Math mode="inline" xml:id="C8.S11.SS3.p2.m2">\lambda&gt;1</Math> an asymptotic expansion for <Math mode="inline" xml:id="C8.S11.SS3.p2.m3">b_{k}(\lambda)</Math> as <Math mode="inline" xml:id="C8.S11.SS3.p2.m4">k\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="120" xml:id="C8.S11.SS3.p3.s1">
+The expansion (LABEL:eq:IG.AE.7) also applies when <Math mode="inline" xml:id="C8.S11.SS3.p3.m1">a</Math> is replaced by <Math mode="inline" xml:id="C8.S11.SS3.p3.m2">-a</Math> , <Math mode="inline" xml:id="C8.S11.SS3.p3.m3">\lambda&lt;0</Math> and <Math mode="inline" xml:id="C8.S11.SS3.p3.m4">|{\rm ph}\,a|\leq\frac{3\pi}{2}-\omega-\delta</Math> with <Math mode="inline" xml:id="C8.S11.SS3.p3.m5">\omega={\rm ph}(-\lambda+\ln\left(-\lambda\right)+\pi i)</Math> , <Math mode="inline" xml:id="C8.S11.SS3.p3.m6">0&lt;\omega&lt;\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="121" xml:id="C8.S11.SS3.p3.s2">
+For error bounds and an exponentially-improved extension for this later expansion, see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS4">
+<title>Large <Math mode="inline" xml:id="C8.S11.SS4.m1">a</Math>, Bounded <Math mode="inline" xml:id="C8.S11.SS4.m2">(x-a)/(2a)^{\frac{1}{2}}</Math></title>        
+ 
+<para xml:id="C8.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="122" xml:id="C8.S11.SS4.p1.s1">
+If <Math mode="inline" xml:id="C8.S11.SS4.p1.m1">x=a+(2a)^{\frac{1}{2}}y</Math> and <Math mode="inline" xml:id="C8.S11.SS4.p1.m2">a\to+\infty</Math> , then <Math equation-number="8.11.10" mode="display" xml:id="C8.S11.E10">P\left(a+1,x\right)=\tfrac{1}{2}\operatorname{erfc}\left(-y\right)-\frac{1}{3} \sqrt{\frac{2}{\pi a}}(1+y^{2})e^{-y^{2}}+O\left(a^{-1}\right),</Math> 
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C8.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C8.S11.SS4.p2.s1">
+ <Math equation-number="8.11.11" mode="display" xml:id="C8.S11.E11">\gamma^{*}\left(1-a,-x\right)=x^{a-1}\left(-\cos\left(\pi a\right)+\frac{\sin \left(\pi a\right)}{\pi}\left(2\sqrt{\pi}F\left(y\right)+\frac{2}{3}\sqrt{ \frac{2\pi}{a}}\left(1-y^{2}\right)\right)e^{y^{2}}+O\left(a^{-1}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="124" xml:id="C8.S11.SS4.p3.s1">
+in both cases uniformly with respect to bounded real values of <Math mode="inline" xml:id="C8.S11.SS4.p3.m1">y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="125" xml:id="C8.S11.SS4.p3.s2">
+For Dawson’s integral <Math mode="inline" xml:id="C8.S11.SS4.p3.m2">F\left(y\right)</Math> see §LABEL:sec:ER.DF.DA.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="126" xml:id="C8.S11.SS4.p3.s3">
+See ( ) for these approximations, together with higher terms and extensions to complex variables.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="127" xml:id="C8.S11.SS4.p3.s4">
+For related expansions involving Hermite polynomials see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S11.SS5">
+<title>Other Approximations</title>         
+<para xml:id="C8.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="128" xml:id="C8.S11.SS5.p1.s1">
+As <Math mode="inline" xml:id="C8.S11.SS5.p1.m1">z\to\infty</Math> , <Math equation-number="8.11.12" mode="display" xml:id="C8.S11.E12">\Gamma\left(z,z\right)\sim z^{z-1}e^{-z}\left(\sqrt{\frac{\pi}{2}}z^{\frac{1}{ 2}}-\frac{1}{3}+\frac{\sqrt{2\pi}}{24z^{\frac{1}{2}}}-\frac{4}{135z}+\frac{ \sqrt{2\pi}}{576z^{\frac{3}{2}}}+\frac{8}{2835z^{2}}+\dots\right), subject to |\operatorname{ph}z|\leq 2\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="129" xml:id="C8.S11.SS5.p1.s2">
+For sharp error bounds and an exponentially-improved extension, see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="130" xml:id="C8.S11.SS5.p1.s3">
+This reference also contains explicit formulas for the coefficients in terms of Stirling numbers.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="131" xml:id="C8.S11.SS5.p2.s1">
+For the function <Math mode="inline" xml:id="C8.S11.SS5.p2.m1">e_{n}(z)</Math> defined by (LABEL:eq:IG.SV.10),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="132" xml:id="C8.S11.SS5.p2.s2">
+<Math equation-number="8.11.13" mode="display" xml:id="C8.S11.E13">\lim_{n\to\infty}\frac{e_{n}(nx)}{e^{nx}}=\begin{cases}0,&amp;x&gt;1,\\ \tfrac{1}{2},&amp;x=1,\\ 1,&amp;0\leq x&lt;1.\end{cases</Math> } With <Math mode="inline" xml:id="C8.S11.SS5.p2.m2">x=1</Math> , an asymptotic expansion of <Math mode="inline" xml:id="C8.S11.SS5.p2.m3">e_{n}(nx)/e^{nx}</Math> follows from (LABEL:eq:IG.AE.26) and (LABEL:eq:IG.AE.35).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C8.S11.SS5.p3.s1">
+If <Math mode="inline" xml:id="C8.S11.SS5.p3.m1">S_{n}(x)</Math> is defined by <Math equation-number="8.11.14" mode="display" xml:id="C8.S11.E14">e^{nx}=e_{n}(nx)+\frac{(nx)^{n}}{n!}S_{n}(x)</Math> , then <Math equation-number="8.11.15" mode="display" xml:id="C8.S11.E15">S_{n}(x)=\frac{\gamma\left(n+1,nx\right)}{(nx)^{n}e^{-nx}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="134" xml:id="C8.S11.SS5.p3.s2">
+As <Math mode="inline" xml:id="C8.S11.SS5.p3.m2">n\to\infty</Math> <Math equation-number="8.11.16" mode="display" xml:id="C8.S11.E16">S_{n}(1)-\frac{1}{2}\frac{n!e^{n}}{n^{n}}\sim-\tfrac{2}{3}+\tfrac{4}{135}n^{-1 }-\tfrac{8}{2835}n^{-2}-\tfrac{16}{8505}n^{-3}+\dots,</Math> <Math equation-number="8.11.17" mode="display" xml:id="C8.S11.E17">S_{n}(-1)\sim-\tfrac{1}{2}+\tfrac{1}{8}n^{-1}+\tfrac{1}{32}n^{-2}-\tfrac{1}{12 8}n^{-3}-\tfrac{13}{512}n^{-4}+\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="135" xml:id="C8.S11.SS5.p3.s3">
+Also, <Math equation-number="8.11.18" mode="display" xml:id="C8.S11.E18">S_{n}(x)\sim\sum_{k=0}^{\infty}d_{k}(x)n^{-k}, subject to n\to\infty,</Math> uniformly for <Math mode="inline" xml:id="C8.S11.SS5.p3.m3">x\in(-\infty,1-\delta]</Math> , with <Math equation-number="8.11.19" mode="display" xml:id="C8.S11.E19">d_{k}(x)=\frac{(-1)^{k}b_{k}(x)}{(1-x)^{2k+1}}, subject to k=0,1,2,\dots,</Math> and <Math mode="inline" xml:id="C8.S11.SS5.p3.m4">b_{k}(x)</Math> as in §LABEL:sec:IG.AE.LAZ.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C8.S11.SS5.p4.s1">
+For (LABEL:eq:IG.AE.29) and extensions to complex values of <Math mode="inline" xml:id="C8.S11.SS5.p4.m1">x</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="137" xml:id="C8.S11.SS5.p4.s2">
+For a uniformly valid expansion for <Math mode="inline" xml:id="C8.S11.SS5.p4.m2">n\to\infty</Math> and <Math mode="inline" xml:id="C8.S11.SS5.p4.m3">x\in[\delta,1]</Math> , see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S12">
+<title>Uniform Asymptotic Expansions for Large Parameter</title>          
+<para xml:id="C8.S12.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="138" xml:id="C8.S12.p1.s1">
+Define <Math equation-number="8.12.1" mode="display" xml:id="C8.S12.E1">\lambda=z/a, \eta=\left(2(\lambda-1-\ln\lambda)\right)^{1/2},</Math> where the branch of the square root is continuous and satisfies <Math mode="inline" xml:id="C8.S12.p1.m1">\eta(\lambda)\sim\lambda-1</Math> as <Math mode="inline" xml:id="C8.S12.p1.m2">\lambda\to 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="139" xml:id="C8.S12.p1.s2">
+Then <Math equation-number="8.12.2" mode="display" xml:id="C8.S12.E2">\tfrac{1}{2}\eta^{2}=\lambda-1-\ln\lambda, \frac{\mathrm{d}\eta}{\mathrm{d}\lambda}=\frac{\lambda-1}{\lambda\eta}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="140" xml:id="C8.S12.p1.s3">
+Also, denote <Math equation-number="8.12.3" mode="display" xml:id="C8.S12.E3">P\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(-\eta\sqrt{a/2}\right)- S(a,\eta),</Math> <Math equation-number="8.12.4" mode="display" xml:id="C8.S12.E4">Q\left(a,z\right)=\tfrac{1}{2}\operatorname{erfc}\left(\eta\sqrt{a/2}\right)+S (a,\eta),</Math> <Math equation-number="8.12.5" mode="display" xml:id="C8.S12.E5">\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ze^{\pm\pi i}\right)= \pm\tfrac{1}{2}\operatorname{erfc}\left(\pm i\eta\sqrt{a/2}\right)-iT(a,\eta),</Math> and <Math equation-number="8.12.6" mode="display" xml:id="C8.S12.E6">z^{-a}\gamma^{*}\left(-a,-z\right)=\cos\left(\pi a\right)-2\sin\left(\pi a \right)\left(\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{\pi}}F\left(\eta\sqrt{a/2} \right)+T(a,\eta)\right),</Math> where <Math mode="inline" xml:id="C8.S12.p1.m3">F\left(x\right)</Math> is Dawson’s integral; see §LABEL:sec:ER.DF.DA.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="141" xml:id="C8.S12.p1.s4">
+Then as <Math mode="inline" xml:id="C8.S12.p1.m4">a\to\infty</Math> in the sector <Math mode="inline" xml:id="C8.S12.p1.m5">|\operatorname{ph}a|\leq\pi-\delta(&lt;\pi)</Math> , <Math equation-number="8.12.7" mode="display" xml:id="C8.S12.E7">S(a,\eta)\sim\frac{e^{-\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty }c_{k}(\eta)a^{-k},</Math> <Math equation-number="8.12.8" mode="display" xml:id="C8.S12.E8">T(a,\eta)\sim\frac{e^{\frac{1}{2}a\eta^{2}}}{\sqrt{2\pi a}}\sum_{k=0}^{\infty} c_{k}(\eta)(-a)^{-k},</Math> in each case uniformly with respect to <Math mode="inline" xml:id="C8.S12.p1.m6">\lambda</Math> in the sector <Math mode="inline" xml:id="C8.S12.p1.m7">|\operatorname{ph}\lambda|\leq 2\pi-\delta</Math> ( <Math mode="inline" xml:id="C8.S12.p1.m8">&lt;2\pi</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="142" xml:id="C8.S12.p2.s1">
+With <Math mode="inline" xml:id="C8.S12.p2.m1">\mu=\lambda-1</Math> , the coefficients <Math mode="inline" xml:id="C8.S12.p2.m2">c_{k}(\eta)</Math> are given by <Math equation-number="8.12.9" mode="display" xml:id="C8.S12.E9">c_{0}(\eta)=\frac{1}{\mu}-\frac{1}{\eta}, c_{1}(\eta)=\frac{1}{\eta^{3}}-\frac{1}{\mu^{3}}-\frac{1}{\mu^{2}}-\frac{1}{12 \mu},</Math> <Math equation-number="8.12.10" mode="display" xml:id="C8.S12.E10">c_{k}(\eta)=\frac{1}{\eta}\frac{\mathrm{d}}{\mathrm{d}\eta}c_{k-1}(\eta)+(-1)^ {k}\frac{g_{k}}{\mu}, subject to k=1,2,\dots,</Math> where <Math mode="inline" xml:id="C8.S12.p2.m3">g_{k}</Math> , <Math mode="inline" xml:id="C8.S12.p2.m4">k=0,1,2,\dots</Math> , are the coefficients that appear in the asymptotic expansion ( LABEL:eq:GA.AE.PE.3) of <Math mode="inline" xml:id="C8.S12.p2.m5">\Gamma\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="143" xml:id="C8.S12.p2.s2">
+The right-hand sides of equations (LABEL:eq:IG.AE.43), (LABEL:eq:IG.AE.43a) have removable singularities at <Math mode="inline" xml:id="C8.S12.p2.m6">\eta=0</Math> , and the Maclaurin series expansion of <Math mode="inline" xml:id="C8.S12.p2.m7">c_{k}(\eta)</Math> is given by <Math equation-number="8.12.11" mode="display" xml:id="C8.S12.E11">c_{k}(\eta)=\sum_{n=0}^{\infty}d_{k,n}\eta^{n}, subject to |\eta|&lt;2\sqrt{\pi},</Math> where <Math mode="inline" xml:id="C8.S12.p2.m8">d_{0,0}=-\tfrac{1}{3}</Math> , <Math equation-number="8.12.12" mode="display" xml:id="C8.S12.E12">d_{0,n}=(n+2)\alpha_{n+2}, d_{k,n}=(-1)^{k}g_{k}d_{0,n}+(n+2)d_{k-1,n+2},</Math> and <Math mode="inline" xml:id="C8.S12.p2.m9">\alpha_{3},\alpha_{4},\dots</Math> are defined by <Math equation-number="8.12.13" mode="display" xml:id="C8.S12.E13">\lambda-1=\eta+\tfrac{1}{3}\eta^{2}+\sum_{n=3}^{\infty}\alpha_{n}\eta^{n}, subject to |\eta|&lt;2\sqrt{\pi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="144" xml:id="C8.S12.p2.s3">
+In particular, <Math equation-number="8.12.14" mode="display" xml:id="C8.S12.E14">\alpha_{3}=\tfrac{1}{36}, \alpha_{4}=-\tfrac{1}{270}, \alpha_{5}=\tfrac{1}{4320}, \alpha_{6}=\tfrac{1}{17010}, \alpha_{7}=-\tfrac{139}{54\;43200}, \alpha_{8}=\tfrac{1}{2\;04120}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="145" xml:id="C8.S12.p2.s4">
+For numerical values of <Math mode="inline" xml:id="C8.S12.p2.m10">d_{k,n}</Math> to 30D for <Math mode="inline" xml:id="C8.S12.p2.m11">k=0(1)9</Math> and <Math mode="inline" xml:id="C8.S12.p2.m12">n=0(1)N_{k}</Math> , where <Math mode="inline" xml:id="C8.S12.p2.m13">N_{k}=28-4\left\lfloor k/2\right\rfloor</Math> , see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="146" xml:id="C8.S12.p3.s1">
+Special cases are given by <Math equation-number="8.12.15" mode="display" xml:id="C8.S12.E15">Q\left(a,a\right)\sim\frac{1}{2}+\frac{1}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{ k}(0)a^{-k}, subject to |\operatorname{ph}a|\leq\pi-\delta,</Math> <Math equation-number="8.12.16" mode="display" xml:id="C8.S12.E16">\frac{e^{\pm\pi ia}}{2i\sin\left(\pi a\right)}Q\left(-a,ae^{\pm\pi i}\right) \sim\pm\frac{1}{2}-\frac{i}{\sqrt{2\pi a}}\sum_{k=0}^{\infty}c_{k}(0)(-a)^{-k}, subject to |\operatorname{ph}a|\leq\pi-\delta,</Math> where <Math equation-number="8.12.17" mode="display" xml:id="C8.S12.E17">c_{0}(0)=-\tfrac{1}{3}, c_{1}(0)=-\tfrac{1}{540}, c_{2}(0)=\tfrac{25}{6048}, c_{3}(0)=\tfrac{101}{1\;55520}, c_{4}(0)=-\tfrac{31\;84811}{36951\;55200}, c_{5}(0)=-\tfrac{27\;45493}{81517\;36320}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S12.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C8.S12.p4.s1">
+For error bounds for (LABEL:eq:IG.AE.39) see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C8.S12.p4.s2">
+For the asymptotic behavior of <Math mode="inline" xml:id="C8.S12.p4.m1">c_{k}(\eta)</Math> as <Math mode="inline" xml:id="C8.S12.p4.m2">k\to\infty</Math> see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="149" xml:id="C8.S12.p4.s3">
+The last reference also includes an exponentially-improved version (§LABEL:sec:AS.RTSP.EIE) of the expansions (LABEL:eq:IG.AE.38b) and (LABEL:eq:IG.AE.39) for <Math mode="inline" xml:id="C8.S12.p4.m3">Q\left(a,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C8.S12.p5.s1">
+A different type of uniform expansion with coefficients that do not possess a removable singularity at <Math mode="inline" xml:id="C8.S12.p5.m1">z=a</Math> is given by <Math equation-number="8.12.18" mode="display" xml:id="C8.S12.E18">\rselection{Q\left(a,z\right)\\ P\left(a,z\right)}\sim\frac{z^{a-\frac{1}{2}}e^{-z}}{\Gamma\left(a\right)}{ \left(d(\pm\chi)\sum_{k=0}^{\infty}\frac{A_{k}(\chi)}{z^{k/2}}\mp\sum_{k=1}^{ \infty}\frac{B_{k}(\chi)}{z^{k/2}}\right)},</Math> for <Math mode="inline" xml:id="C8.S12.p5.m2">z\to\infty</Math> in <Math mode="inline" xml:id="C8.S12.p5.m3">\left|\operatorname{ph}z\right|&lt;\frac{1}{2}\pi</Math> , with <Math mode="inline" xml:id="C8.S12.p5.m4">\Re(z-a)\leq 0</Math> for <Math mode="inline" xml:id="C8.S12.p5.m5">P\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S12.p5.m6">\Re(z-a)\geq 0</Math> for <Math mode="inline" xml:id="C8.S12.p5.m7">Q\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="151" xml:id="C8.S12.p5.s2">
+Here <Math equation-number="8.12.19" mode="display" xml:id="C8.S12.E19">\chi=(z-a)/\sqrt{z}, d(\pm\chi)=\sqrt{\tfrac{1}{2}\pi}e^{\chi^{2}/2}\operatorname{erfc}\left(\pm \chi/\sqrt{2}\right),</Math> and <Math equation-number="8.12.20" mode="display" xml:id="C8.S12.E20">A_{0}(\chi)=1, A_{1}(\chi)=\tfrac{1}{2}\chi+\tfrac{1}{6}\chi^{3}, B_{1}(\chi)=\tfrac{1}{3}+\tfrac{1}{6}\chi^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="152" xml:id="C8.S12.p5.s3">
+Higher coefficients <Math mode="inline" xml:id="C8.S12.p5.m8">A_{k}(\chi)</Math> , <Math mode="inline" xml:id="C8.S12.p5.m9">B_{k}(\chi)</Math> , up to <Math mode="inline" xml:id="C8.S12.p5.m10">k=8</Math> , are given in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="153" xml:id="C8.S12.p6.s1">
+Lastly, a uniform approximation for <Math mode="inline" xml:id="C8.S12.p6.m1">\Gamma\left(a,ax\right)</Math> for large <Math mode="inline" xml:id="C8.S12.p6.m2">a</Math> , with error bounds, can be found in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S12.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C8.S12.p7.s1">
+For other uniform asymptotic approximations of the incomplete gamma functionsin terms of the function <Math mode="inline" xml:id="C8.S12.p7.m1">\operatorname{erfc}</Math> see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S12.Px1">
+<title>Inverse Function</title>       
+<para xml:id="C8.S12.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="155" xml:id="C8.S12.Px1.p1.s1">
+For asymptotic expansions, as <Math mode="inline" xml:id="C8.S12.Px1.p1.m1">a\to\infty</Math> , of the inverse function <Math mode="inline" xml:id="C8.S12.Px1.p1.m2">x=x(a,q)</Math> that satisfies the equation <Math equation-number="8.12.21" mode="display" xml:id="C8.S12.E21">Q\left(a,x\right)=q</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="156" xml:id="C8.S12.Px1.p1.s2">
+These expansions involve the inverse error function <Math mode="inline" xml:id="C8.S12.Px1.p1.m3">\operatorname{inverfc}\left(x\right)</Math> (§LABEL:sec:ER.IF), and are uniform with respect to <Math mode="inline" xml:id="C8.S12.Px1.p1.m4">q\in[0,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="157" xml:id="C8.S12.Px1.p1.s3">
+As a special case, <Math equation-number="8.12.22" mode="display" xml:id="C8.S12.E22">x(a,\tfrac{1}{2})\sim a-\tfrac{1}{3}+\tfrac{8}{405}a^{-1}+\tfrac{184}{25515}a^ {-2}+\tfrac{2248}{34\;44525}a^{-3}+\cdots, subject to a\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C8.S13">
+<title>Zeros</title>          
+<subsection xml:id="C8.S13.SS1">
+<title><Math mode="inline" xml:id="C8.S13.SS1.m1">x</Math>-Zeros of <Math content-tex="\scincgamma@{a}{x}" mode="inline" xml:id="C8.S13.SS1.m2">\gamma^{*}\left(a,x\right)</Math></title>         
+<para xml:id="C8.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C8.S13.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C8.S13.SS1.p1.m1">\gamma^{*}\left(a,x\right)</Math> has no real zeros for <Math mode="inline" xml:id="C8.S13.SS1.p1.m2">a\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C8.S13.SS1.p1.s2">
+For <Math mode="inline" xml:id="C8.S13.SS1.p1.m3">a&lt;0</Math> and <Math mode="inline" xml:id="C8.S13.SS1.p1.m4">n=1,2,3,\dots</Math> , there exist: one negative zero <Math mode="inline" xml:id="C8.S13.I1.ix1.p1.m1">x_{-}(a)</Math> and no positive zeros when <Math mode="inline" xml:id="C8.S13.I1.ix1.p1.m2">1-2n&lt;a&lt;2-2n</Math> ; one negative zero <Math mode="inline" xml:id="C8.S13.I1.ix2.p1.m1">x_{-}(a)</Math> and one positive zero <Math mode="inline" xml:id="C8.S13.I1.ix2.p1.m2">x_{+}(a)</Math> when <Math mode="inline" xml:id="C8.S13.I1.ix2.p1.m3">-2n&lt;a&lt;1-2n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C8.S13.SS1.p2.s1">
+The negative zero <Math mode="inline" xml:id="C8.S13.SS1.p2.m1">x_{-}(a)</Math> decreases monotonically in the interval <Math mode="inline" xml:id="C8.S13.SS1.p2.m2">-1&lt;a&lt;0</Math> , and satisfies <Math equation-number="8.13.1" mode="display" xml:id="C8.S13.E1">1+a^{-1}&lt;x_{-}(a)&lt;\ln|a|, subject to -1&lt;a&lt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S13.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="161" xml:id="C8.S13.SS1.p3.s1">
+When <Math mode="inline" xml:id="C8.S13.SS1.p3.m1">-5\leq a\leq 4</Math> the behavior of the <Math mode="inline" xml:id="C8.S13.SS1.p3.m2">x</Math> -zeros as functions of <Math mode="inline" xml:id="C8.S13.SS1.p3.m3">a</Math> can be seen by taking the slice <Math mode="inline" xml:id="C8.S13.SS1.p3.m4">\gamma^{*}\left(a,x\right)=0</Math> of the surface depicted in Figure LABEL:fig:IG.GV.RV.7.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="162" xml:id="C8.S13.SS1.p3.s2">
+Note that from (LABEL:eq:IG.SV.11)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="163" xml:id="C8.S13.SS1.p3.s3">
+<Math mode="inline" xml:id="C8.S13.SS1.p3.m5">\gamma^{*}\left(-n,0\right)=0</Math> , <Math mode="inline" xml:id="C8.S13.SS1.p3.m6">n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S13.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="164" xml:id="C8.S13.SS1.p4.s1">
+For asymptotic approximations for <Math mode="inline" xml:id="C8.S13.SS1.p4.m1">x_{+}(a)</Math> and <Math mode="inline" xml:id="C8.S13.SS1.p4.m2">x_{-}(a)</Math> as <Math mode="inline" xml:id="C8.S13.SS1.p4.m3">a\to-\infty</Math> see ( ) , with corrections by ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="165" xml:id="C8.S13.SS1.p4.s2">
+For more accurate asymptotic approximations see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S13.SS2">
+<title><Math mode="inline" xml:id="C8.S13.SS2.m1">\lambda</Math>-Zeros of <Math content-tex="\incgamma@{a}{\lambda a}" mode="inline" xml:id="C8.S13.SS2.m2">\gamma\left(a,\lambda a\right)</Math> and <Math content-tex="\incGamma@{a}{\lambda a}" mode="inline" xml:id="C8.S13.SS2.m3">\Gamma\left(a,\lambda a\right)</Math></title>         
+<para xml:id="C8.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="166" xml:id="C8.S13.SS2.p1.s1">
+For information on the distribution and computation of zeros of <Math mode="inline" xml:id="C8.S13.SS2.p1.m1">\gamma\left(a,\lambda a\right)</Math> and <Math mode="inline" xml:id="C8.S13.SS2.p1.m2">\Gamma\left(a,\lambda a\right)</Math> in the complex <Math mode="inline" xml:id="C8.S13.SS2.p1.m3">\lambda</Math> -plane for large values of the positive real parameter <Math mode="inline" xml:id="C8.S13.SS2.p1.m4">a</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S13.SS3">
+<title><Math mode="inline" xml:id="C8.S13.SS3.m1">a</Math>-Zeros of <Math content-tex="\scincgamma@{a}{x}" mode="inline" xml:id="C8.S13.SS3.m2">\gamma^{*}\left(a,x\right)</Math></title>         
+<para xml:id="C8.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C8.S13.SS3.p1.s1">
+For fixed <Math mode="inline" xml:id="C8.S13.SS3.p1.m1">x</Math> and <Math mode="inline" xml:id="C8.S13.SS3.p1.m2">n=1,2,3,\dots</Math> , <Math mode="inline" xml:id="C8.S13.SS3.p1.m3">\gamma^{*}\left(a,x\right)</Math> has: two zeros in each of the intervals <Math mode="inline" xml:id="C8.S13.I2.ix3.p1.m1">-2n&lt;a&lt;2-2n</Math> when <Math mode="inline" xml:id="C8.S13.I2.ix3.p1.m2">x&lt;0</Math> ; two zeros in each of the intervals <Math mode="inline" xml:id="C8.S13.I2.ix4.p1.m1">-2n&lt;a&lt;1-2n</Math> when <Math mode="inline" xml:id="C8.S13.I2.ix4.p1.m2">0&lt;x\leq x_{n}^{*}</Math> ; zeros at <Math mode="inline" xml:id="C8.S13.I2.ix5.p1.m1">a=-n</Math> when <Math mode="inline" xml:id="C8.S13.I2.ix5.p1.m2">x=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="168" xml:id="C8.S13.SS3.p1.s2">
+As <Math mode="inline" xml:id="C8.S13.SS3.p1.m4">x</Math> increases the positive zeros coalesce to form a double zero at ( <Math mode="inline" xml:id="C8.S13.SS3.p1.m5">a_{n}^{*},x_{n}^{*}</Math> ).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="169" xml:id="C8.S13.SS3.p1.s3">
+The values of the first six double zeros are given to 5D in Table LABEL:tab:IG.ZE.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="170" xml:id="C8.S13.SS3.p1.s4">
+For values up to <Math mode="inline" xml:id="C8.S13.SS3.p1.m6">n=10</Math> see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="171" xml:id="C8.S13.SS3.p1.s5">
+Approximations to <Math mode="inline" xml:id="C8.S13.SS3.p1.m7">a_{n}^{*}</Math> , <Math mode="inline" xml:id="C8.S13.SS3.p1.m8">x_{n}^{*}</Math> for large <Math mode="inline" xml:id="C8.S13.SS3.p1.m9">n</Math> can be found in ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="172" xml:id="C8.S13.SS3.p1.s6">
+When <Math mode="inline" xml:id="C8.S13.SS3.p1.m10">x&gt;x_{n}^{*}</Math> a pair of conjugate trajectories emanate from the point <Math mode="inline" xml:id="C8.S13.SS3.p1.m11">a=a_{n}^{*}</Math> in the complex <Math mode="inline" xml:id="C8.S13.SS3.p1.m12">a</Math> -plane.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="173" xml:id="C8.S13.SS3.p1.s7">
+See ( ) for further information.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="174" xml:id="C8.S13.T1.s1">
+Table 8.13.1: Double zeros <Math mode="inline" xml:id="C8.S13.T1.m3">(a_{n}^{*},x_{n}^{*})</Math> of <Math mode="inline" xml:id="C8.S13.T1.m4">\gamma^{*}\left(a,x\right)</Math> .
+</sentence> 
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="1" xml:id="C8.S13.T1.t1.s1">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="2" xml:id="C8.S13.T1.t1.s2">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r1.m2">a_{n}^{*}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="177" sentence-num-in-table="3" xml:id="C8.S13.T1.t1.s3">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r1.m3">x_{n}^{*}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="178" sentence-num-in-table="4" xml:id="C8.S13.T1.t1.s4">
+1
+</sentence>
+
+<sentence sentence-num-in-section="179" sentence-num-in-table="5" xml:id="C8.S13.T1.t1.s5">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r2.m1">-1.6442</Math>5
+</sentence>
+
+<sentence sentence-num-in-section="180" sentence-num-in-table="6" xml:id="C8.S13.T1.t1.s6">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r2.m3">0.30809</Math>
+</sentence>
+
+<sentence sentence-num-in-section="181" sentence-num-in-table="7" xml:id="C8.S13.T1.t1.s7">
+2
+</sentence>
+
+<sentence sentence-num-in-section="182" sentence-num-in-table="8" xml:id="C8.S13.T1.t1.s8">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r3.m1">-3.6388</Math>7
+</sentence>
+
+<sentence sentence-num-in-section="183" sentence-num-in-table="9" xml:id="C8.S13.T1.t1.s9">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r3.m3">0.77997</Math>
+</sentence>
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="10" xml:id="C8.S13.T1.t1.s10">
+3
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="11" xml:id="C8.S13.T1.t1.s11">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r4.m1">-5.6357</Math>3
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="12" xml:id="C8.S13.T1.t1.s12">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r4.m3">1.28634</Math>
+</sentence>
+
+<sentence sentence-num-in-section="187" sentence-num-in-table="13" xml:id="C8.S13.T1.t1.s13">
+4
+</sentence>
+
+<sentence sentence-num-in-section="188" sentence-num-in-table="14" xml:id="C8.S13.T1.t1.s14">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r5.m1">-7.6337</Math>2
+</sentence>
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="15" xml:id="C8.S13.T1.t1.s15">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r5.m3">1.80754</Math>
+</sentence>
+
+<sentence sentence-num-in-section="190" sentence-num-in-table="16" xml:id="C8.S13.T1.t1.s16">
+5
+</sentence>
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="17" xml:id="C8.S13.T1.t1.s17">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r6.m1">-9.6323</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="18" xml:id="C8.S13.T1.t1.s18">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r6.m3">2.33692</Math>
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="19" xml:id="C8.S13.T1.t1.s19">
+6
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="20" xml:id="C8.S13.T1.t1.s20">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r7.m1">-11.6312</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="21" xml:id="C8.S13.T1.t1.s21">
+<Math mode="inline" xml:id="C8.S13.T1.t1.r7.m3">2.87150</Math>
+</sentence>
+ 
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S14">
+<title>Integrals</title>         
+ 
+<para xml:id="C8.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="196" xml:id="C8.S14.p1.s1">
+ <Math equation-number="8.14.1" mode="display" xml:id="C8.S14.E1">\int_{0}^{\infty}e^{-ax}\frac{\gamma\left(b,x\right)}{\Gamma\left(b\right)} \mathrm{d}x=\frac{(1+a)^{-b}}{a}, subject to \Re a&gt;0, \Re b&gt;-1,</Math> <Math equation-number="8.14.2" mode="display" xml:id="C8.S14.E2">\int_{0}^{\infty}e^{-ax}\Gamma\left(b,x\right)\mathrm{d}x=\Gamma\left(b\right) \frac{1-(1+a)^{-b}}{a}, subject to \Re a&gt;-1, \Re b&gt;-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="197" xml:id="C8.S14.p1.s2">
+In (LABEL:eq:IG.DI.1) and (LABEL:eq:IG.DI.2) limiting values are used when <Math mode="inline" xml:id="C8.S14.p1.m1">b=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="198" xml:id="C8.S14.p1.s3">
+<Math equation-number="8.14.3" mode="display" xml:id="C8.S14.E3">\int_{0}^{\infty}x^{a-1}\gamma\left(b,x\right)\mathrm{d}x=-\frac{\Gamma\left(a +b\right)}{a}, subject to \Re a&lt;0, \Re(a+b)&gt;0,</Math> <Math equation-number="8.14.4" mode="display" xml:id="C8.S14.E4">\int_{0}^{\infty}x^{a-1}\Gamma\left(b,x\right)\mathrm{d}x=\frac{\Gamma\left(a+ b\right)}{a}, subject to \Re a&gt;0, \Re(a+b)&gt;0,</Math> <Math equation-number="8.14.5" mode="display" xml:id="C8.S14.E5">\int_{0}^{\infty}x^{a-1}e^{-sx}\gamma\left(b,x\right)\mathrm{d}x=\frac{\Gamma \left(a+b\right)}{b(1+s)^{a+b}}\*F\left(1,a+b;1+b;1/(1+s)\right), subject to \Re s&gt;0, \Re(a+b)&gt;0,</Math> <Math equation-number="8.14.6" mode="display" xml:id="C8.S14.E6">\int_{0}^{\infty}x^{a-1}e^{-sx}\Gamma\left(b,x\right)\mathrm{d}x=\frac{\Gamma \left(a+b\right)}{a(1+s)^{a+b}}\*F\left(1,a+b;1+a;s/(1+s)\right), subject to \Re s&gt;-1, \Re(a+b)&gt;0, \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="199" xml:id="C8.S14.p1.s4">
+For the hypergeometric function <Math mode="inline" xml:id="C8.S14.p1.m2">F\left(a,b;c;z\right)</Math> see §LABEL:sec:HY.GA.GS.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="200" xml:id="C8.S14.p2.s1">
+For additional integrals see ( , §8.2) , ( , §9.3) , ( ) , ( , §6.45) , ( , pp.189–190) , ( , pp. 68–69) , ( , §§1.2, 2.10) , and ( , §3.10) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S15">
+<title>Sums</title>          
+<para xml:id="C8.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C8.S15.p1.s1">
+ <Math equation-number="8.15.1" mode="display" xml:id="C8.S15.E1">\gamma\left(a,\lambda x\right)=\lambda^{a}\sum_{k=0}^{\infty}\gamma\left(a+k,x \right)\frac{(1-\lambda)^{k}}{k!}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="202" xml:id="C8.S15.p2.s1">
+For sums of infinite series whose terms include incomplete gamma functions, see ( , §5.2) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S16">
+<title>Generalizations</title>        
+  
+<para xml:id="C8.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="203" xml:id="C8.S16.p1.s1">
+For a generalization of the incomplete gamma function, including asymptotic approximations, see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="204" xml:id="C8.S16.p1.s2">
+Other generalizations are considered in ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C8.S17">
+<title>Incomplete Beta Functions</title>          
+<subsection xml:id="C8.S17.SS1">
+<title>Definitions and Basic Properties</title>         
+ 
+<para xml:id="C8.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="205" xml:id="C8.S17.SS1.p1.s1">
+Throughout §§LABEL:sec:IG.IBF and LABEL:sec:IG.AEB we assume that <Math mode="inline" xml:id="C8.S17.SS1.p1.m1">a&gt;0</Math> , <Math mode="inline" xml:id="C8.S17.SS1.p1.m2">b&gt;0</Math> , and <Math mode="inline" xml:id="C8.S17.SS1.p1.m3">0\leq x\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="206" xml:id="C8.S17.SS1.p1.s2">
+However, in the case of §LABEL:sec:IG.IBF it is straightforward to continue most results analytically to other real values of <Math mode="inline" xml:id="C8.S17.SS1.p1.m4">a</Math> , <Math mode="inline" xml:id="C8.S17.SS1.p1.m5">b</Math> , and <Math mode="inline" xml:id="C8.S17.SS1.p1.m6">x</Math> , and also to complex values.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="207" xml:id="C8.S17.SS1.p1.s3">
+<Math equation-number="8.17.1" mode="display" xml:id="C8.S17.E1">\mathrm{B}_{x}\left(a,b\right)=\int_{0}^{x}t^{a-1}(1-t)^{b-1}\mathrm{d}t,</Math> <Math equation-number="8.17.2" mode="display" xml:id="C8.S17.E2">I_{x}\left(a,b\right)=\mathrm{B}_{x}\left(a,b\right)/\mathrm{B}\left(a,b\right),</Math> where, as in §LABEL:sec:GA.BF, <Math mode="inline" xml:id="C8.S17.SS1.p1.m7">\mathrm{B}\left(a,b\right)</Math> denotes the Beta function: <Math equation-number="8.17.3" mode="display" xml:id="C8.S17.E3">\mathrm{B}\left(a,b\right)=\frac{\Gamma\left(a\right)\Gamma\left(b\right)}{ \Gamma\left(a+b\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="208" xml:id="C8.S17.SS1.p1.s4">
+<Math equation-number="8.17.4" mode="display" xml:id="C8.S17.E4">I_{x}\left(a,b\right)=1-I_{1-x}\left(b,a\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C8.S17.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="209" xml:id="C8.S17.SS1.p2.s1">
+ <Math equation-number="8.17.5" mode="display" xml:id="C8.S17.E5">I_{x}\left(m,n-m+1\right)=\sum_{j=m}^{n}\genfrac{(}{)}{0.0pt}{}{n}{j}x^{j}(1-x )^{n-j}, subject to m,n positive integers; 0\leq x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="210" xml:id="C8.S17.SS1.p2.s2">
+Addendum: For a companion equation see (LABEL:eq:IG.DEB.5a).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="211" xml:id="C8.S17.SS1.p2.s3">
+<Math equation-number="8.17.6" mode="display" xml:id="C8.S17.E6">I_{x}\left(a,a\right)=\tfrac{1}{2}I_{4x(1-x)}\left(a,\tfrac{1}{2}\right), subject to 0\leq x\leq\frac{1}{2}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S17.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C8.S17.SS1.p3.s1">
+For a historical profile of <Math mode="inline" xml:id="C8.S17.SS1.p3.m1">\mathrm{B}_{x}\left(a,b\right)</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS2">
+<title>Hypergeometric Representations</title>           
+<para xml:id="C8.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="213" xml:id="C8.S17.SS2.p1.s1">
+ <Math equation-number="8.17.7" mode="display" xml:id="C8.S17.E7">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}}{a}F\left(a,1-b;a+1;x\right),</Math> , <Math equation-number="8.17.8" mode="display" xml:id="C8.S17.E8">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{a}F\left(a+b,1;a+1;x \right),</Math> , <Math equation-number="8.17.9" mode="display" xml:id="C8.S17.E9">\mathrm{B}_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b-1}}{a}F\left({1,1-b\atop a+ 1};\frac{x}{x-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="214" xml:id="C8.S17.SS2.p1.s2">
+For the hypergeometric function <Math mode="inline" xml:id="C8.S17.SS2.p1.m1">F\left(a,b;c;z\right)</Math> see §LABEL:sec:HY.GA.GS.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS3">
+<title>Integral Representation</title>          
+<para xml:id="C8.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="215" xml:id="C8.S17.SS3.p1.s1">
+With <Math mode="inline" xml:id="C8.S17.SS3.p1.m1">a&gt;0</Math> , <Math mode="inline" xml:id="C8.S17.SS3.p1.m2">b&gt;0</Math> , and <Math mode="inline" xml:id="C8.S17.SS3.p1.m3">0&lt;x&lt;1</Math> , <Math equation-number="8.17.10" mode="display" xml:id="C8.S17.E10">I_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{2\pi i}\int_{c-i\infty}^{c+i\infty }s^{-a}(1-s)^{-b}\frac{\mathrm{d}s}{s-x},</Math> where <Math mode="inline" xml:id="C8.S17.SS3.p1.m4">x&lt;c&lt;1</Math> and the branches of <Math mode="inline" xml:id="C8.S17.SS3.p1.m5">s^{-a}</Math> and <Math mode="inline" xml:id="C8.S17.SS3.p1.m6">(1-s)^{-b}</Math> are continuous on the path and assume their principal values when <Math mode="inline" xml:id="C8.S17.SS3.p1.m7">s=c</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="216" xml:id="C8.S17.SS3.p2.s1">
+Further integral representations can be obtained by combining the results given in §LABEL:sec:IG.REB.RHF with §LABEL:sec:HY.IR.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS4">
+<title>Recurrence Relations</title>          
+<para xml:id="C8.S17.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="217" xml:id="C8.S17.SS4.p1.s1">
+With <Math equation-number="8.17.11" mode="display" xml:id="C8.S17.E11">x^{\prime}=1-x, c=a+b-1,</Math> <Math equation-number="8.17.12" mode="display" xml:id="C8.S17.E12">I_{x}\left(a,b\right)=xI_{x}\left(a-1,b\right)+x^{\prime}I_{x}\left(a,b-1 \right),</Math> , <Math equation-number="8.17.13" mode="display" xml:id="C8.S17.E13">(a+b)I_{x}\left(a,b\right)=aI_{x}\left(a+1,b\right)+bI_{x}\left(a,b+1\right),</Math> <Math equation-number="8.17.14" mode="display" xml:id="C8.S17.E14">(a+bx)I_{x}\left(a,b\right)=xbI_{x}\left(a-1,b+1\right)+aI_{x}\left(a+1,b \right),</Math> <Math equation-number="8.17.15" mode="display" xml:id="C8.S17.E15">(b+ax^{\prime})I_{x}\left(a,b\right)=ax^{\prime}I_{x}\left(a+1,b-1\right)+bI_{ x}\left(a,b+1\right),</Math> <Math equation-number="8.17.16" mode="display" xml:id="C8.S17.E16">aI_{x}\left(a+1,b\right)=(a+cx)I_{x}\left(a,b\right)-cxI_{x}\left(a-1,b\right),</Math> , <Math equation-number="8.17.17" mode="display" xml:id="C8.S17.E17">bI_{x}\left(a,b+1\right)=(b+cx^{\prime})I_{x}\left(a,b\right)-cx^{\prime}I_{x} \left(a,b-1\right),</Math> <Math equation-number="8.17.18" mode="display" xml:id="C8.S17.E18">I_{x}\left(a,b\right)=I_{x}\left(a+1,b-1\right)+\frac{x^{a}(x^{\prime})^{b-1}} {a\mathrm{B}\left(a,b\right)},</Math> <Math equation-number="8.17.19" mode="display" xml:id="C8.S17.E19">I_{x}\left(a,b\right)=I_{x}\left(a-1,b+1\right)-\frac{x^{a-1}(x^{\prime})^{b}} {b\mathrm{B}\left(a,b\right)},</Math> <Math equation-number="8.17.20" mode="display" xml:id="C8.S17.E20">I_{x}\left(a,b\right)=I_{x}\left(a+1,b\right)+\frac{x^{a}(x^{\prime})^{b}}{a \mathrm{B}\left(a,b\right)},</Math> , <Math equation-number="8.17.21" mode="display" xml:id="C8.S17.E21">I_{x}\left(a,b\right)=I_{x}\left(a,b+1\right)-\frac{x^{a}(x^{\prime})^{b}}{b \mathrm{B}\left(a,b\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS5">
+<title>Continued Fraction</title>         
+ 
+<para xml:id="C8.S17.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C8.S17.SS5.p1.s1">
+ <Math equation-number="8.17.22" mode="display" xml:id="C8.S17.E22">I_{x}\left(a,b\right)=\frac{x^{a}(1-x)^{b}}{a\mathrm{B}\left(a,b\right)}\left( \cfrac{1}{1+\cfrac{d_{1}}{1+\cfrac{d_{2}}{1+\cfrac{d_{3}}{1+}}}}\cdots\right),</Math> where <Math equation-number="8.17.23" mode="display" xml:id="C8.S17.E23">d_{2m}=\frac{m(b-m)x}{(a+2m-1)(a+2m)}, d_{2m+1}=-\frac{(a+m)(a+b+m)x}{(a+2m)(a+2m+1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="219" xml:id="C8.S17.SS5.p1.s2">
+The <Math mode="inline" xml:id="C8.S17.SS5.p1.m1">4m</Math> and <Math mode="inline" xml:id="C8.S17.SS5.p1.m2">4m+1</Math> convergents are less than <Math mode="inline" xml:id="C8.S17.SS5.p1.m3">I_{x}\left(a,b\right)</Math> , and the <Math mode="inline" xml:id="C8.S17.SS5.p1.m4">4m+2</Math> and <Math mode="inline" xml:id="C8.S17.SS5.p1.m5">4m+3</Math> convergents are greater than <Math mode="inline" xml:id="C8.S17.SS5.p1.m6">I_{x}\left(a,b\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="220" xml:id="C8.S17.SS5.p2.s1">
+See also ( , pp. 385–389) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S17.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="221" xml:id="C8.S17.SS5.p3.s1">
+The expansion (LABEL:eq:IG.REB.7)converges rapidly for <Math mode="inline" xml:id="C8.S17.SS5.p3.m1">x&lt;(a+1)/(a+b+2)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="222" xml:id="C8.S17.SS5.p3.s2">
+For <Math mode="inline" xml:id="C8.S17.SS5.p3.m2">x&gt;(a+1)/(a+b+2)</Math> or <Math mode="inline" xml:id="C8.S17.SS5.p3.m3">1-x&lt;(b+1)/(a+b+2)</Math> , more rapid convergence is obtained by computing <Math mode="inline" xml:id="C8.S17.SS5.p3.m4">I_{1-x}\left(b,a\right)</Math> and using (LABEL:eq:IG.DEB.4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS6">
+<title>Sums</title>          
+<para xml:id="C8.S17.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="223" xml:id="C8.S17.SS6.p1.s1">
+For sums of infinite series whose terms involve the incomplete Beta function see ( , §62) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S17.SS7">
+<title>Addendum to </title>          
+<para xml:id="C8.S17.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="224" xml:id="C8.S17.SS7.p1.s1">
+ <Math equation-number="8.17.24" mode="display" xml:id="C8.S17.E24">I_{x}\left(m,n\right)=(1-x)^{n}\sum_{j=m}^{\infty}\genfrac{(}{)}{0.0pt}{}{n+j- 1}{j}x^{j}, subject to m,n positive integers; 0\leq x&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="225" xml:id="C8.S17.SS7.p1.s2">
+Compare (LABEL:eq:IG.DEB.5).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S18">
+<title>Asymptotic Expansions of <Math content-tex="\normincBetaI{x}@{a}{b}" mode="inline" xml:id="C8.S18.m1">I_{x}\left(a,b\right)</Math></title>         
+<subsection xml:id="C8.S18.SS1">
+<title>Large Parameters, Fixed <Math mode="inline" xml:id="C8.S18.SS1.m1">x</Math></title>         
+<para xml:id="C8.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="226" xml:id="C8.S18.SS1.p1.s1">
+If <Math mode="inline" xml:id="C8.S18.SS1.p1.m1">b</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m2">x</Math> are fixed, with <Math mode="inline" xml:id="C8.S18.SS1.p1.m3">b&gt;0</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m4">0&lt;x&lt;1</Math> , then as <Math mode="inline" xml:id="C8.S18.SS1.p1.m5">a\to\infty</Math> <Math equation-number="8.18.1" mode="display" xml:id="C8.S18.E1">I_{x}\left(a,b\right)={\Gamma\left(a+b\right)x^{a}(1-x)^{b-1}}\*\left(\sum_{k= 0}^{n-1}\frac{1}{\Gamma\left(a+k+1\right)\Gamma\left(b-k\right)}\left(\frac{x} {1-x}\right)^{k}+O\left(\frac{1}{\Gamma\left(a+n+1\right)}\right)\right),</Math> for each <Math mode="inline" xml:id="C8.S18.SS1.p1.m6">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="227" xml:id="C8.S18.SS1.p1.s2">
+If <Math mode="inline" xml:id="C8.S18.SS1.p1.m7">b=1,2,3,\dots</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p1.m8">n\geq b</Math> , then the <Math mode="inline" xml:id="C8.S18.SS1.p1.m9">O</Math> -term can be omitted and the result is exact.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="228" xml:id="C8.S18.SS1.p2.s1">
+If <Math mode="inline" xml:id="C8.S18.SS1.p2.m1">b\to\infty</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m2">a</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m3">x</Math> are fixed, with <Math mode="inline" xml:id="C8.S18.SS1.p2.m4">a&gt;0</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m5">0&lt;x&lt;1</Math> , then (LABEL:eq:IG.AEB.LPFX1), with <Math mode="inline" xml:id="C8.S18.SS1.p2.m6">a</Math> and <Math mode="inline" xml:id="C8.S18.SS1.p2.m7">b</Math> interchanged and <Math mode="inline" xml:id="C8.S18.SS1.p2.m8">x</Math> replaced by <Math mode="inline" xml:id="C8.S18.SS1.p2.m9">1-x</Math> , can be combined with (LABEL:eq:IG.DEB.4).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S18.SS2">
+<title>Large Parameters: Uniform Asymptotic Expansions</title>         
+<paragraph xml:id="C8.S18.Px1">
+<title>Large <Math mode="inline" xml:id="C8.S18.Px1.m1">a</Math>, Fixed <Math mode="inline" xml:id="C8.S18.Px1.m2">b</Math></title>  
+ 
+<para xml:id="C8.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="229" xml:id="C8.S18.Px1.p1.s1">
+Let <Math equation-number="8.18.2" mode="display" xml:id="C8.S18.E2">\xi=-\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="230" xml:id="C8.S18.Px1.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px1.p1.m1">a\to\infty</Math> , with <Math mode="inline" xml:id="C8.S18.Px1.p1.m2">b</Math> ( <Math mode="inline" xml:id="C8.S18.Px1.p1.m3">&gt;0</Math> ) fixed, <Math equation-number="8.18.3" mode="display" xml:id="C8.S18.E3">I_{x}\left(a,b\right)=\frac{\Gamma\left(a+b\right)}{\Gamma\left(a\right)}\left (\sum_{k=0}^{n-1}d_{k}F_{k}+O\left(a^{-n}\right)F_{0}\right),</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px1.p1.m4">x\in(0,1]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="231" xml:id="C8.S18.Px1.p1.s3">
+The functions <Math mode="inline" xml:id="C8.S18.Px1.p1.m5">F_{k}</Math> are defined by <Math equation-number="8.18.4" mode="display" xml:id="C8.S18.E4">aF_{k+1}=(k+b-a\xi)F_{k}+k\xi F_{k-1},</Math> with <Math equation-number="8.18.5" mode="display" xml:id="C8.S18.E5">F_{0}=a^{-b}Q\left(b,a\xi\right), F_{1}=\frac{b-a\xi}{a}F_{0}+\frac{\xi^{b}e^{-a\xi}}{a\Gamma\left(b\right)},</Math> and <Math mode="inline" xml:id="C8.S18.Px1.p1.m6">Q\left(a,z\right)</Math> as in §LABEL:sec:IG.PV.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="232" xml:id="C8.S18.Px1.p1.s4">
+The coefficients <Math mode="inline" xml:id="C8.S18.Px1.p1.m7">d_{k}</Math> are defined by the generating function <Math equation-number="8.18.6" mode="display" xml:id="C8.S18.E6">\left(\frac{1-e^{-t}}{t}\right)^{b-1}=\sum_{k=0}^{\infty}d_{k}(t-\xi)^{k}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="233" xml:id="C8.S18.Px1.p1.s5">
+In particular, <Math equation-number="8.18.7" mode="display" xml:id="C8.S18.E7">d_{0}=\left(\frac{1-x}{\xi}\right)^{b-1}, d_{1}=\frac{x\xi+x-1}{(1-x)\xi}(b-1)d_{0}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="234" xml:id="C8.S18.Px1.p2.s1">
+Compare also §LABEL:sec:BP.HOA.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="235" xml:id="C8.S18.Px1.p2.s2">
+A recurrence relation for the <Math mode="inline" xml:id="C8.S18.Px1.p2.m1">d_{k}</Math> can be found in ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px2">
+<title>Symmetric Case</title>    
+<para xml:id="C8.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C8.S18.Px2.p1.s1">
+Let <Math equation-number="8.18.8" mode="display" xml:id="C8.S18.E8">x_{0}=a/(a+b)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C8.S18.Px2.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px2.p1.m1">a+b\to\infty</Math> , <Math equation-number="8.18.9" mode="display" xml:id="C8.S18.E9">I_{x}\left(a,b\right)\sim\tfrac{1}{2}\operatorname{erfc}\left(-\eta\sqrt{b/2} \right)+\frac{1}{\sqrt{2\pi(a+b)}}\*\left(\frac{x}{x_{0}}\right)^{a}\left( \frac{1-x}{1-x_{0}}\right)^{b}\sum_{k=0}^{\infty}\frac{(-1)^{k}c_{k}(\eta)}{(a +b)^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px2.p1.m2">x\in(0,1)</Math> and <Math mode="inline" xml:id="C8.S18.Px2.p1.m3">a/(a+b)</Math> , <Math mode="inline" xml:id="C8.S18.Px2.p1.m4">b/(a+b)\in[\delta,1-\delta]</Math> , where <Math mode="inline" xml:id="C8.S18.Px2.p1.m5">\delta</Math> again denotes an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="238" xml:id="C8.S18.Px2.p1.s3">
+For <Math mode="inline" xml:id="C8.S18.Px2.p1.m6">\operatorname{erfc}</Math> see §LABEL:sec:ER.DF.ER.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="239" xml:id="C8.S18.Px2.p1.s4">
+Also, <Math equation-number="8.18.10" mode="display" xml:id="C8.S18.E10">-\tfrac{1}{2}\eta^{2}=x_{0}\ln\left(\frac{x}{x_{0}}\right)+(1-x_{0})\ln\left( \frac{1-x}{1-x_{0}}\right),</Math> with <Math mode="inline" xml:id="C8.S18.Px2.p1.m7">\eta/(x-x_{0})&gt;0</Math> , and <Math equation-number="8.18.11" mode="display" xml:id="C8.S18.E11">c_{0}(\eta)=\frac{1}{\eta}-\frac{\sqrt{x_{0}(1-x_{0})}}{x-x_{0}},</Math> with limiting value <Math equation-number="8.18.12" mode="display" xml:id="C8.S18.E12">c_{0}(0)=\frac{1-2x_{0}}{3\sqrt{x_{0}(1-x_{0})}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C8.S18.Px2.p2.s1">
+For this result, and for higher coefficients <Math mode="inline" xml:id="C8.S18.Px2.p2.m1">c_{k}(\eta)</Math> see ( , §11.3.3.2) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="241" xml:id="C8.S18.Px2.p2.s2">
+All of the <Math mode="inline" xml:id="C8.S18.Px2.p2.m2">c_{k}(\eta)</Math> are analytic at <Math mode="inline" xml:id="C8.S18.Px2.p2.m3">\eta=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px3">
+<title>General Case</title>      
+<para xml:id="C8.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="242" xml:id="C8.S18.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C8.S18.Px3.p1.m1">\widetilde{\Gamma}(z)</Math> denote the scaled gamma function <Math equation-number="8.18.13" mode="display" xml:id="C8.S18.E13">\widetilde{\Gamma}(z)=(2\pi)^{-1/2}e^{z}z^{(1/2)-z}\Gamma\left(z\right),</Math> <Math mode="inline" xml:id="C8.S18.Px3.p1.m2">\mu=b/a</Math> , and <Math mode="inline" xml:id="C8.S18.Px3.p1.m3">x_{0}</Math> again be as in (LABEL:eq:IG.AEB.LPUAE2).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="243" xml:id="C8.S18.Px3.p1.s2">
+Then as <Math mode="inline" xml:id="C8.S18.Px3.p1.m4">a\to\infty</Math> <Math equation-number="8.18.14" mode="display" xml:id="C8.S18.E14">I_{x}\left(a,b\right)\sim Q\left(b,a\zeta\right)-\frac{(2\pi b)^{-1/2}}{ \widetilde{\Gamma}(b)}\left(\frac{x}{x_{0}}\right)^{a}\left(\frac{1-x}{1-x_{0} }\right)^{b}\sum_{k=0}^{\infty}\frac{h_{k}(\zeta,\mu)}{a^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S18.Px3.p1.m5">b\in(0,\infty)</Math> and <Math mode="inline" xml:id="C8.S18.Px3.p1.m6">x\in(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="244" xml:id="C8.S18.Px3.p1.s3">
+Here <Math equation-number="8.18.15" mode="display" xml:id="C8.S18.E15">\mu\ln\zeta-\zeta=\ln x+\mu\ln\left(1-x\right)+(1+\mu)\ln\left(1+\mu\right)-\mu,</Math> with <Math mode="inline" xml:id="C8.S18.Px3.p1.m7">(\zeta-\mu)/(x_{0}-x)&gt;0</Math> , and <Math equation-number="8.18.16" mode="display" xml:id="C8.S18.E16">h_{0}(\zeta,\mu)=\mu\left(\frac{1}{\zeta-\mu}-\frac{(1+\mu)^{-3/2}}{x_{0}-x} \right),</Math> with limiting value <Math equation-number="8.18.17" mode="display" xml:id="C8.S18.E17">h_{0}(\mu,\mu)=\frac{1}{3}\left(\frac{1-\mu}{\sqrt{1+\mu}}-1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S18.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="245" xml:id="C8.S18.Px3.p2.s1">
+For this result and higher coefficients <Math mode="inline" xml:id="C8.S18.Px3.p2.m1">h_{k}(\zeta,\mu)</Math> see ( , §11.3.3.3) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="246" xml:id="C8.S18.Px3.p2.s2">
+All of the <Math mode="inline" xml:id="C8.S18.Px3.p2.m2">h_{k}(\zeta,\mu)</Math> are analytic at <Math mode="inline" xml:id="C8.S18.Px3.p2.m3">\zeta=\mu</Math> (corresponding to <Math mode="inline" xml:id="C8.S18.Px3.p2.m4">x=x_{0}</Math> ).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S18.Px4">
+<title>Inverse Function</title>      
+<para xml:id="C8.S18.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="247" xml:id="C8.S18.Px4.p1.s1">
+For asymptotic expansions for large values of <Math mode="inline" xml:id="C8.S18.Px4.p1.m1">a</Math> and/or <Math mode="inline" xml:id="C8.S18.Px4.p1.m2">b</Math> of the <Math mode="inline" xml:id="C8.S18.Px4.p1.m3">x</Math> -solution of the equation <Math equation-number="8.18.18" mode="display" xml:id="C8.S18.E18">I_{x}\left(a,b\right)=p, subject to 0\leq p\leq 1,</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S19">
+<title>Generalized Exponential Integral</title>          
+ 
+<subsection xml:id="C8.S19.SS1">
+<title>Definition and Integral Representations</title>        
+     
+<para xml:id="C8.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C8.S19.SS1.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS1.p1.m1">p,z\in\mathbb{C}</Math> <Math equation-number="8.19.1" mode="display" xml:id="C8.S19.E1">E_{p}\left(z\right)=z^{p-1}\Gamma\left(1-p,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="249" xml:id="C8.S19.SS1.p1.s2">
+Most properties of <Math mode="inline" xml:id="C8.S19.SS1.p1.m2">E_{p}\left(z\right)</Math> follow straightforwardly from those of <Math mode="inline" xml:id="C8.S19.SS1.p1.m3">\Gamma\left(a,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="250" xml:id="C8.S19.SS1.p1.s3">
+For an extensive treatment of <Math mode="inline" xml:id="C8.S19.SS1.p1.m4">E_{1}\left(z\right)</Math> see Chapter LABEL:ch:EX.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="251" xml:id="C8.S19.SS1.p1.s4">
+<Math equation-number="8.19.2" mode="display" xml:id="C8.S19.E2">E_{p}\left(z\right)=z^{p-1}\int_{z}^{\infty}\frac{e^{-t}}{t^{p}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="252" xml:id="C8.S19.SS1.p1.s5">
+When the path of integration excludes the origin and does not cross thenegative real axis (LABEL:eq:IG.EID.1)defines the principal value of <Math mode="inline" xml:id="C8.S19.SS1.p1.m5">E_{p}\left(z\right)</Math> , and unless indicated otherwise in the DLMF principal values are assumed.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S19.Px1">
+<title>Other Integral Representations</title>   
+<para xml:id="C8.S19.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="253" xml:id="C8.S19.Px1.p1.s1">
+ <Math equation-number="8.19.3" mode="display" xml:id="C8.S19.E3">E_{p}\left(z\right)=\int_{1}^{\infty}\frac{e^{-zt}}{t^{p}}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi,</Math> , <Math equation-number="8.19.4" mode="display" xml:id="C8.S19.E4">E_{p}\left(z\right)=\frac{z^{p-1}e^{-z}}{\Gamma\left(p\right)}\int_{0}^{\infty }\frac{t^{p-1}e^{-zt}}{1+t}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\tfrac{1}{2}\pi, \Re p&gt;0</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S19.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="254" xml:id="C8.S19.Px1.p2.s1">
+Integral representations of Mellin–Barnes type for <Math mode="inline" xml:id="C8.S19.Px1.p2.m1">E_{p}\left(z\right)</Math> follow immediately from (LABEL:eq:IG.IR.13), (LABEL:eq:IG.IR.14), and (LABEL:eq:IG.EID.7).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS2">
+<title>Graphics</title>                
+   
+<sentence sentence-num-in-section="255" xml:id="C8.S19.F1.s1">
+Figure 8.19.1: <Math mode="inline" xml:id="C8.S19.F1.m4">E_{p}\left(x\right)</Math> , <Math mode="inline" xml:id="C8.S19.F1.m5">0\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F1.m6">0\leq p\leq 8</Math> .
+</sentence>  
+<para xml:id="C8.S19.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="256" xml:id="C8.S19.SS2.p1.s1">
+In Figures LABEL:fig:IG.GV.7–LABEL:fig:IG.GV.10, height corresponds to the absolute value of the function and color to the phase.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="257" xml:id="C8.S19.SS2.p1.s2">
+See LABEL:doc.help.vrml.aboutcolor.
+</sentence>
+
+</para>
+            
+<sentence sentence-num-in-section="258" xml:id="C8.S19.F2.s1">
+Figure 8.19.2: <Math mode="inline" xml:id="C8.S19.F2.m4">E_{\frac{1}{2}}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F2.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S19.F2.m6">-4\leq y\leq 4</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>        
+   
+<sentence sentence-num-in-section="259" xml:id="C8.S19.F3.s1">
+Figure 8.19.3: <Math mode="inline" xml:id="C8.S19.F3.m4">E_{1}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F3.m5">-4\leq x\leq 4</Math> , <Math mode="inline" xml:id="C8.S19.F3.m6">-4\leq y\leq 4</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>   
+<para xml:id="C8.S19.SS2.p2">
+
+</para>
+
+           
+<sentence sentence-num-in-section="260" xml:id="C8.S19.F4.s1">
+Figure 8.19.4: <Math mode="inline" xml:id="C8.S19.F4.m4">E_{\frac{3}{2}}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F4.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F4.m6">-3\leq y\leq 3</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>           
+<sentence sentence-num-in-section="261" xml:id="C8.S19.F5.s1">
+Figure 8.19.5: <Math mode="inline" xml:id="C8.S19.F5.m4">E_{2}\left(x+iy\right)</Math> , <Math mode="inline" xml:id="C8.S19.F5.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C8.S19.F5.m6">-3\leq y\leq 3</Math> . Principal value. There is a branch cut along the negative real axis.
+</sentence>  
+   
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS3">
+<title>Special Values</title>          
+<para xml:id="C8.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C8.S19.SS3.p1.s1">
+ <Math equation-number="8.19.5" mode="display" xml:id="C8.S19.E5">E_{0}\left(z\right)=z^{-1}e^{-z}, subject to z\neq 0,</Math> <Math equation-number="8.19.6" mode="display" xml:id="C8.S19.E6">E_{p}\left(0\right)=\frac{1}{p-1}, subject to \Re p&gt;1,</Math> <Math equation-number="8.19.7" mode="display" xml:id="C8.S19.E7">E_{n}\left(z\right)=\frac{(-z)^{n-1}}{(n-1)!}E_{1}\left(z\right)+\frac{e^{-z}} {(n-1)!}\sum_{k=0}^{n-2}(n-k-2)!(-z)^{k}, subject to n=2,3,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS4">
+<title>Series Expansions</title>          
+<para xml:id="C8.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="263" xml:id="C8.S19.SS4.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS4.p1.m1">n=1,2,3,\dots</Math> , <Math equation-number="8.19.8" mode="display" xml:id="C8.S19.E8">E_{n}\left(z\right)=\frac{(-z)^{n-1}}{(n-1)!}(\psi\left(n\right)-\ln z)-\sum_{ \begin{subarray}{c}k=0\\ k\neq n-1\end{subarray}}^{\infty}\frac{(-z)^{k}}{k!(1-n+k)}</Math> , and <Math equation-number="8.19.9" mode="display" xml:id="C8.S19.E9">E_{n}\left(z\right)=\frac{(-1)^{n}z^{n-1}}{(n-1)!}\ln z+\frac{e^{-z}}{(n-1)!} \sum_{k=1}^{n-1}(-z)^{k-1}\Gamma\left(n-k\right)+\frac{e^{-z}(-z)^{n-1}}{(n-1) !}\sum_{k=0}^{\infty}\frac{z^{k}}{k!}\psi\left(k+1\right)</Math> , with <Math mode="inline" xml:id="C8.S19.SS4.p1.m2">|\operatorname{ph}z|\leq\pi</Math> in both equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="264" xml:id="C8.S19.SS4.p1.s2">
+For <Math mode="inline" xml:id="C8.S19.SS4.p1.m3">\psi\left(x\right)</Math> see §LABEL:sec:GA.Def.GP.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="265" xml:id="C8.S19.SS4.p2.s1">
+When <Math mode="inline" xml:id="C8.S19.SS4.p2.m1">p\in\mathbb{C}</Math> <Math equation-number="8.19.10" mode="display" xml:id="C8.S19.E10">E_{p}\left(z\right)=z^{p-1}\Gamma\left(1-p\right)-\sum_{k=0}^{\infty}\frac{(-z )^{k}}{k!(1-p+k)}</Math> , <Math equation-number="8.19.11" mode="display" xml:id="C8.S19.E11">E_{p}\left(z\right)=\Gamma\left(1-p\right)\left(z^{p-1}-e^{-z}\sum_{k=0}^{ \infty}\frac{z^{k}}{\Gamma\left(2-p+k\right)}\right),</Math> again with <Math mode="inline" xml:id="C8.S19.SS4.p2.m2">|\operatorname{ph}z|\leq\pi</Math> in both equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="266" xml:id="C8.S19.SS4.p2.s2">
+The right-hand sides are replaced by their limiting forms when <Math mode="inline" xml:id="C8.S19.SS4.p2.m3">p=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS5">
+<title>Recurrence Relation and Derivatives</title>        
+   
+<para xml:id="C8.S19.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="267" xml:id="C8.S19.SS5.p1.s1">
+ <Math equation-number="8.19.12" mode="display" xml:id="C8.S19.E12">pE_{p+1}\left(z\right)+zE_{p}\left(z\right)=e^{-z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="268" xml:id="C8.S19.SS5.p1.s2">
+<Math equation-number="8.19.13" mode="display" xml:id="C8.S19.E13">\frac{\mathrm{d}}{\mathrm{d}z}E_{p}\left(z\right)=-E_{p-1}\left(z\right),</Math> , <Math equation-number="8.19.14" mode="display" xml:id="C8.S19.E14">\frac{\mathrm{d}}{\mathrm{d}z}(e^{z}E_{p}\left(z\right))=e^{z}E_{p}\left(z \right)\left(1+\frac{p-1}{z}\right)-\frac{1}{z}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C8.S19.Px2">
+<title><Math mode="inline" xml:id="C8.S19.Px2.m1">p</Math>-Derivatives</title>   
+<para xml:id="C8.S19.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C8.S19.Px2.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.Px2.p1.m1">j=1,2,3,\dots</Math> , <Math equation-number="8.19.15" mode="display" xml:id="C8.S19.E15">\frac{{\partial}^{j}E_{p}\left(z\right)}{{\partial p}^{j}}=(-1)^{j}\int_{1}^{ \infty}(\ln t)^{j}t^{-p}e^{-zt}\mathrm{d}t, subject to \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="270" xml:id="C8.S19.Px2.p1.s2">
+For properties and numerical tables see ( ) , and also(when <Math mode="inline" xml:id="C8.S19.Px2.p1.m2">p=1</Math> ) ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS6">
+<title>Relation to Confluent Hypergeometric Function</title>           
+<para xml:id="C8.S19.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="271" xml:id="C8.S19.SS6.p1.s1">
+ <Math equation-number="8.19.16" mode="display" xml:id="C8.S19.E16">E_{p}\left(z\right)=z^{p-1}e^{-z}U\left(p,p,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="272" xml:id="C8.S19.SS6.p1.s2">
+For <Math mode="inline" xml:id="C8.S19.SS6.p1.m1">U\left(a,b,z\right)</Math> see §LABEL:sec:CH.MU.DE.KU.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS7">
+<title>Continued Fraction</title>         
+ 
+<para xml:id="C8.S19.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="273" xml:id="C8.S19.SS7.p1.s1">
+ <Math equation-number="8.19.17" mode="display" xml:id="C8.S19.E17">E_{p}\left(z\right)=e^{-z}\left(\cfrac{1}{z+\cfrac{p}{1+\cfrac{1}{z+\cfrac{p+1 }{1+\cfrac{2}{z+\cdots}}}}}\right), subject to |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="274" xml:id="C8.S19.SS7.p2.s1">
+See also ( , pp. 277–285) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS8">
+<title>Analytic Continuation</title>          
+<para xml:id="C8.S19.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="275" xml:id="C8.S19.SS8.p1.s1">
+The general function <Math mode="inline" xml:id="C8.S19.SS8.p1.m1">E_{p}\left(z\right)</Math> is attained by extending the path in (LABEL:eq:IG.EID.1)across the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="276" xml:id="C8.S19.SS8.p1.s2">
+Unless <Math mode="inline" xml:id="C8.S19.SS8.p1.m2">p</Math> is a nonpositive integer, <Math mode="inline" xml:id="C8.S19.SS8.p1.m3">E_{p}\left(z\right)</Math> has a branch point at <Math mode="inline" xml:id="C8.S19.SS8.p1.m4">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="277" xml:id="C8.S19.SS8.p1.s3">
+For <Math mode="inline" xml:id="C8.S19.SS8.p1.m5">z\neq 0</Math> eachbranch of <Math mode="inline" xml:id="C8.S19.SS8.p1.m6">E_{p}\left(z\right)</Math> is an entire function of <Math mode="inline" xml:id="C8.S19.SS8.p1.m7">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="278" xml:id="C8.S19.SS8.p1.s4">
+<Math equation-number="8.19.18" mode="display" xml:id="C8.S19.E18">E_{p}\left(ze^{2m\pi i}\right)=\frac{2\pi ie^{mp\pi i}}{\Gamma\left(p\right)} \frac{\sin\left(mp\pi\right)}{\sin\left(p\pi\right)}z^{p-1}+E_{p}\left(z\right), subject to m\in\mathbb{Z}, z\neq 0.</Math>
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS9">
+<title>Inequalities</title>          
+<para xml:id="C8.S19.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="279" xml:id="C8.S19.SS9.p1.s1">
+For <Math mode="inline" xml:id="C8.S19.SS9.p1.m1">n=1,2,3,\dots</Math> and <Math mode="inline" xml:id="C8.S19.SS9.p1.m2">x&gt;0</Math> , <Math equation-number="8.19.19" mode="display" xml:id="C8.S19.E19">\frac{n-1}{n}E_{n}\left(x\right)&lt;E_{n+1}\left(x\right)&lt;E_{n}\left(x\right),</Math> <Math equation-number="8.19.20" mode="display" xml:id="C8.S19.E20">\left(E_{n}\left(x\right)\right)^{2}&lt;E_{n-1}\left(x\right)E_{n+1}\left(x\right),</Math> <Math equation-number="8.19.21" mode="display" xml:id="C8.S19.E21">\frac{1}{x+n}&lt;e^{x}E_{n}\left(x\right)\leq\frac{1}{x+n-1},</Math> <Math equation-number="8.19.22" mode="display" xml:id="C8.S19.E22">\frac{\mathrm{d}}{\mathrm{d}x}\frac{E_{n}\left(x\right)}{E_{n-1}\left(x\right) }&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS10">
+<title>Integrals</title>          
+<para xml:id="C8.S19.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="280" xml:id="C8.S19.SS10.p1.s1">
+ <Math equation-number="8.19.23" mode="display" xml:id="C8.S19.E23">\int_{z}^{\infty}E_{p-1}\left(t\right)\mathrm{d}t=E_{p}\left(z\right), subject to |\operatorname{ph}z|&lt;\pi,</Math> <Math equation-number="8.19.24" mode="display" xml:id="C8.S19.E24">\int_{0}^{\infty}e^{-at}E_{n}\left(t\right)\mathrm{d}t=\frac{(-1)^{n-1}}{a^{n} }\left(\ln\left(1+a\right)+\sum_{k=1}^{n-1}\frac{(-1)^{k}a^{k}}{k}\right), subject to n=1,2,\dots, \Re a&gt;-1,</Math> <Math equation-number="8.19.25" mode="display" xml:id="C8.S19.E25">\int_{0}^{\infty}e^{-at}t^{b-1}E_{p}\left(t\right)\mathrm{d}t=\frac{\Gamma \left(b\right)(1+a)^{-b}}{p+b-1}\*F\left(1,b;p+b;a/(1+a)\right), subject to \Re a&gt;-1, \Re(p+b)&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="281" xml:id="C8.S19.SS10.p1.s2">
+<Math equation-number="8.19.26" mode="display" xml:id="C8.S19.E26">\int_{0}^{\infty}E_{p}\left(t\right)E_{q}\left(t\right)\mathrm{d}t=\frac{L(p)+ L(q)}{p+q-1}, subject to p&gt;0, q&gt;0, p+q&gt;1,</Math> where <Math equation-number="8.19.27" mode="display" xml:id="C8.S19.E27">L(p)=\int_{0}^{\infty}e^{-t}E_{p}\left(t\right)\mathrm{d}t=\frac{1}{2p}F\left( 1,1;1+p;\tfrac{1}{2}\right), subject to p&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="282" xml:id="C8.S19.SS10.p1.s3">
+For the hypergeometric function <Math mode="inline" xml:id="C8.S19.SS10.p1.m1">F\left(a,b;c;z\right)</Math> see §LABEL:sec:HY.GA.GS. When <Math mode="inline" xml:id="C8.S19.SS10.p1.m2">p=1,2,3,\dots</Math> , <Math mode="inline" xml:id="C8.S19.SS10.p1.m3">L(p)</Math> can also be evaluated via (LABEL:eq:IG.INE.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S19.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="283" xml:id="C8.S19.SS10.p2.s1">
+For collections of integrals involving <Math mode="inline" xml:id="C8.S19.SS10.p2.m1">E_{p}\left(z\right)</Math> , especially for integer <Math mode="inline" xml:id="C8.S19.SS10.p2.m2">p</Math> , see ( , §§7.1–7.2) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S19.SS11">
+<title>Further Generalizations</title>          
+<para xml:id="C8.S19.SS11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="284" xml:id="C8.S19.SS11.p1.s1">
+For higher-order generalized exponential integrals see ( ) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S20">
+<title>Asymptotic Expansions of <Math content-tex="\genexpintE{p}@{z}" mode="inline" xml:id="C8.S20.m1">E_{p}\left(z\right)</Math></title>         
+<subsection xml:id="C8.S20.SS1">
+<title>Large <Math mode="inline" xml:id="C8.S20.SS1.m1">z</Math></title>          
+<para xml:id="C8.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="285" xml:id="C8.S20.SS1.p1.s1">
+ <Math equation-number="8.20.1" mode="display" xml:id="C8.S20.E1">E_{p}\left(z\right)=\frac{e^{-z}}{z}\left(\sum_{k=0}^{n-1}(-1)^{k}\frac{{\left (p\right)_{k}}}{z^{k}}+(-1)^{n}\frac{{\left(p\right)_{n}}e^{z}}{z^{n-1}}E_{n+p }\left(z\right)\right), subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="286" xml:id="C8.S20.SS1.p1.s2">
+As <Math mode="inline" xml:id="C8.S20.SS1.p1.m1">z\to\infty</Math> <Math equation-number="8.20.2" mode="display" xml:id="C8.S20.E2">E_{p}\left(z\right)\sim\frac{e^{-z}}{z}\sum_{k=0}^{\infty}(-1)^{k}\frac{{\left (p\right)_{k}}}{z^{k}}, subject to |\operatorname{ph}z|\leq\frac{3}{2}\pi-\delta,</Math> and <Math equation-number="8.20.3" mode="display" xml:id="C8.S20.E3">E_{p}\left(z\right)\sim\pm\frac{2\pi i}{\Gamma\left(p\right)}e^{\mp p\pi i}z^{ p-1}+\frac{e^{-z}}{z}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(p\right)_{k}}}{z^ {k}}, subject to \tfrac{1}{2}\pi+\delta\leq\pm\operatorname{ph}z\leq\tfrac{7}{2}\pi-\delta,</Math> <Math mode="inline" xml:id="C8.S20.SS1.p1.m2">\delta</Math> again denoting an arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="287" xml:id="C8.S20.SS1.p1.s3">
+Where the sectors of validity of (LABEL:eq:IG.AEE.1a) and (LABEL:eq:IG.AEE.4)overlap the contribution of the first term on the right-hand side of (LABEL:eq:IG.AEE.4) is exponentially small compared to the other contribution; compare §LABEL:sec:AS.RTSP.CF.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="288" xml:id="C8.S20.SS1.p2.s1">
+For an exponentially-improved asymptotic expansion of <Math mode="inline" xml:id="C8.S20.SS1.p2.m1">E_{p}\left(z\right)</Math> see §LABEL:sec:AS.RTSP.EIE.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S20.SS2">
+<title>Large <Math mode="inline" xml:id="C8.S20.SS2.m1">p</Math></title>          
+<para xml:id="C8.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="289" xml:id="C8.S20.SS2.p1.s1">
+For <Math mode="inline" xml:id="C8.S20.SS2.p1.m1">x\geq 0</Math> and <Math mode="inline" xml:id="C8.S20.SS2.p1.m2">p&gt;1</Math> let <Math mode="inline" xml:id="C8.S20.SS2.p1.m3">x=\lambda p</Math> and define <Math mode="inline" xml:id="C8.S20.SS2.p1.m4">A_{0}(\lambda)=1</Math> , <Math equation-number="8.20.4" mode="display" xml:id="C8.S20.E4">A_{k+1}(\lambda)=(1-2k\lambda)A_{k}(\lambda)+\lambda(\lambda+1)\frac{\mathrm{d }A_{k}(\lambda)}{\mathrm{d}\lambda}, subject to k=0,1,2,\dots,</Math> so that <Math mode="inline" xml:id="C8.S20.SS2.p1.m5">A_{k}(\lambda)</Math> is a polynomial in <Math mode="inline" xml:id="C8.S20.SS2.p1.m6">\lambda</Math> of degree <Math mode="inline" xml:id="C8.S20.SS2.p1.m7">k-1</Math> when <Math mode="inline" xml:id="C8.S20.SS2.p1.m8">k\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="290" xml:id="C8.S20.SS2.p1.s2">
+In particular, <Math equation-number="8.20.5" mode="display" xml:id="C8.S20.E5">A_{1}(\lambda)=1, A_{2}(\lambda)=1-2\lambda, A_{3}(\lambda)=1-8\lambda+6\lambda^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="291" xml:id="C8.S20.SS2.p1.s3">
+Then as <Math mode="inline" xml:id="C8.S20.SS2.p1.m9">p\to\infty</Math> <Math equation-number="8.20.6" mode="display" xml:id="C8.S20.E6">E_{p}\left(\lambda p\right)\sim\frac{e^{-\lambda p}}{(\lambda+1)p}\sum_{k=0}^{ \infty}\frac{A_{k}(\lambda)}{(\lambda+1)^{2k}}\frac{1}{p^{k}},</Math> uniformly for <Math mode="inline" xml:id="C8.S20.SS2.p1.m10">\lambda\in[0,\infty)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S20.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="292" xml:id="C8.S20.SS2.p2.s1">
+For further information, including extensions to complex values of <Math mode="inline" xml:id="C8.S20.SS2.p2.m1">x</Math> and <Math mode="inline" xml:id="C8.S20.SS2.p2.m2">p</Math> , see ( , §4) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S21">
+<title>Generalized Sine and Cosine Integrals</title>           
+ 
+<subsection xml:id="C8.S21.SS1">
+<title>Definitions: General Values</title>          
+<para xml:id="C8.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="293" xml:id="C8.S21.SS1.p1.s1">
+With <Math mode="inline" xml:id="C8.S21.SS1.p1.m1">\gamma</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m2">\Gamma</Math> denoting here the general values of the incomplete gamma functions (§LABEL:sec:IG.PV), we define <Math equation-number="8.21.1" mode="display" xml:id="C8.S21.E1">\mathrm{ci}\left(a,z\right)\pm i\mathrm{si}\left(a,z\right)=e^{\pm\frac{1}{2} \pi ia}\Gamma\left(a,ze^{\mp\frac{1}{2}\pi i}\right),</Math> , <Math equation-number="8.21.2" mode="display" xml:id="C8.S21.E2">\mathrm{Ci}\left(a,z\right)\pm i\mathrm{Si}\left(a,z\right)=e^{\pm\frac{1}{2} \pi ia}\gamma\left(a,ze^{\mp\frac{1}{2}\pi i}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="294" xml:id="C8.S21.SS1.p1.s2">
+From §§LABEL:sec:IG.PV and LABEL:sec:IG.IGF.AC it follows that each of the four functions <Math mode="inline" xml:id="C8.S21.SS1.p1.m3">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS1.p1.m4">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS1.p1.m5">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS1.p1.m6">\mathrm{Ci}\left(a,z\right)</Math> is a multivalued function of <Math mode="inline" xml:id="C8.S21.SS1.p1.m7">z</Math> with branch point at <Math mode="inline" xml:id="C8.S21.SS1.p1.m8">z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="295" xml:id="C8.S21.SS1.p1.s3">
+Furthermore, <Math mode="inline" xml:id="C8.S21.SS1.p1.m9">\mathrm{si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m10">\mathrm{ci}\left(a,z\right)</Math> are entire functions of <Math mode="inline" xml:id="C8.S21.SS1.p1.m11">a</Math> , and <Math mode="inline" xml:id="C8.S21.SS1.p1.m12">\mathrm{Si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m13">\mathrm{Ci}\left(a,z\right)</Math> are meromorphic functions of <Math mode="inline" xml:id="C8.S21.SS1.p1.m14">a</Math> with simple poles at <Math mode="inline" xml:id="C8.S21.SS1.p1.m15">a=-1,-3,-5,\dots</Math> and <Math mode="inline" xml:id="C8.S21.SS1.p1.m16">a=0,-2,-4,\dots</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS2">
+<title>Definitions: Principal Values</title>          
+<para xml:id="C8.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="296" xml:id="C8.S21.SS2.p1.s1">
+When <Math mode="inline" xml:id="C8.S21.SS2.p1.m1">\operatorname{ph}z=0</Math> (and when <Math mode="inline" xml:id="C8.S21.SS2.p1.m2">a\neq-1,-3,-5,\dots</Math> , in the case of <Math mode="inline" xml:id="C8.S21.SS2.p1.m3">\mathrm{Si}\left(a,z\right)</Math> , or <Math mode="inline" xml:id="C8.S21.SS2.p1.m4">a\neq 0,-2,-4,\dots</Math> , in the case of <Math mode="inline" xml:id="C8.S21.SS2.p1.m5">\mathrm{Ci}\left(a,z\right)</Math> ) the principal values of <Math mode="inline" xml:id="C8.S21.SS2.p1.m6">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p1.m7">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p1.m8">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS2.p1.m9">\mathrm{Ci}\left(a,z\right)</Math> are defined by (LABEL:eq:IG.DGC.10) and (LABEL:eq:IG.DGC.3) with the incomplete gamma functions assuming theirprincipal values (§LABEL:sec:IG.PV).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="297" xml:id="C8.S21.SS2.p1.s2">
+Elsewhere in the sector <Math mode="inline" xml:id="C8.S21.SS2.p1.m10">|\operatorname{ph}z|\leq\pi</Math> the principal values are defined by analytic continuation from <Math mode="inline" xml:id="C8.S21.SS2.p1.m11">\operatorname{ph}z=0</Math> ; compare §LABEL:sec:EF.FN.LOG.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="298" xml:id="C8.S21.SS2.p2.s1">
+From here on it is assumed that unless indicated otherwise the functions <Math mode="inline" xml:id="C8.S21.SS2.p2.m1">\mathrm{si}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p2.m2">\mathrm{ci}\left(a,z\right)</Math> , <Math mode="inline" xml:id="C8.S21.SS2.p2.m3">\mathrm{Si}\left(a,z\right)</Math> , and <Math mode="inline" xml:id="C8.S21.SS2.p2.m4">\mathrm{Ci}\left(a,z\right)</Math> have their principal values.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="299" xml:id="C8.S21.SS2.p3.s1">
+Properties of the four functions that are stated below in §§LABEL:sec:IG.GCI.IR and LABEL:sec:IG.GCI.INTER follow directly from the definitions given above, together with properties of the incomplete gamma functions given earlier in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="300" xml:id="C8.S21.SS2.p3.s2">
+In the case of §LABEL:sec:IG.GCI.INTER the equation <Math equation-number="8.21.3" mode="display" xml:id="C8.S21.E3">\int_{0}^{\infty}t^{a-1}e^{\pm\mathrm{i}t}\mathrm{d}t=e^{\pm\frac{1}{2}\pi \mathrm{i}a}\Gamma\left(a\right), subject to 0&lt;\Re a&lt;1,</Math> (obtained from (LABEL:eq:GA.Def.GP.1) by rotation of the integration path) is also needed.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS3">
+<title>Integral Representations</title>        
+   
+<para xml:id="C8.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="301" xml:id="C8.S21.SS3.p1.s1">
+ <Math equation-number="8.21.4" mode="display" xml:id="C8.S21.E4">\mathrm{si}\left(a,z\right)=\int_{z}^{\infty}t^{a-1}\sin t\mathrm{d}t, subject to \Re a&lt;1,</Math> , <Math equation-number="8.21.5" mode="display" xml:id="C8.S21.E5">\mathrm{ci}\left(a,z\right)=\int_{z}^{\infty}t^{a-1}\cos t\mathrm{d}t, subject to \Re a&lt;1,</Math> , <Math equation-number="8.21.6" mode="display" xml:id="C8.S21.E6">\mathrm{Si}\left(a,z\right)=\int_{0}^{z}t^{a-1}\sin t\mathrm{d}t, subject to \Re a&gt;-1,</Math> , <Math equation-number="8.21.7" mode="display" xml:id="C8.S21.E7">\mathrm{Ci}\left(a,z\right)=\int_{0}^{z}t^{a-1}\cos t\mathrm{d}t, subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="302" xml:id="C8.S21.SS3.p1.s2">
+In these representations the integration paths do not cross the negative real axis, and in the case of (LABEL:eq:IG.DGC.8) and (LABEL:eq:IG.DGC.6) the paths also exclude the origin.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS4">
+<title>Interrelations</title>          
+<para xml:id="C8.S21.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="303" xml:id="C8.S21.SS4.p1.s1">
+ <Math equation-number="8.21.8" mode="display" xml:id="C8.S21.E8">\mathrm{Si}\left(a,z\right)=\Gamma\left(a\right)\sin\left(\tfrac{1}{2}\pi a \right)-\mathrm{si}\left(a,z\right), subject to a\neq-1,-3,-5,\dots,</Math> <Math equation-number="8.21.9" mode="display" xml:id="C8.S21.E9">\mathrm{Ci}\left(a,z\right)=\Gamma\left(a\right)\cos\left(\tfrac{1}{2}\pi a \right)-\mathrm{ci}\left(a,z\right), subject to a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS5">
+<title>Special Values</title>           
+<para xml:id="C8.S21.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="304" xml:id="C8.S21.SS5.p1.s1">
+ <Math equation-number="8.21.10" mode="display" xml:id="C8.S21.E10">\mathrm{si}\left(0,z\right)=-\mathrm{si}\left(z\right), \mathrm{ci}\left(0,z\right)=-\mathrm{Ci}\left(z\right),</Math> <Math equation-number="8.21.11" mode="display" xml:id="C8.S21.E11">\mathrm{Si}\left(0,z\right)=\mathrm{Si}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="305" xml:id="C8.S21.SS5.p1.s2">
+For the functions on the right-hand sides of (LABEL:eq:IG.GCI.SV1) and (LABEL:eq:IG.PCS.8)see §LABEL:sec:EX.DF.SC.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="306" xml:id="C8.S21.SS5.p1.s3">
+<Math equation-number="8.21.12" mode="display" xml:id="C8.S21.E12">\mathrm{Si}\left(a,\infty\right)=\Gamma\left(a\right)\sin\left(\tfrac{1}{2}\pi a \right), subject to a\neq-1,-3,-5,\dots,</Math> , <Math equation-number="8.21.13" mode="display" xml:id="C8.S21.E13">\mathrm{Ci}\left(a,\infty\right)=\Gamma\left(a\right)\cos\left(\tfrac{1}{2}\pi a \right), subject to a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS6">
+<title>Series Expansions</title>         
+<paragraph xml:id="C8.S21.Px1">
+<title>Power-Series Expansions</title>    
+<para xml:id="C8.S21.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="307" xml:id="C8.S21.Px1.p1.s1">
+ <Math equation-number="8.21.14" mode="display" xml:id="C8.S21.E14">\mathrm{Si}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{(-1)^{k}z^{2k+1}}{(2 k+a+1)(2k+1)!}, subject to a\neq-1,-3,-5,\dots,</Math> <Math equation-number="8.21.15" mode="display" xml:id="C8.S21.E15">\mathrm{Ci}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{(-1)^{k}z^{2k}}{(2k+ a)(2k)!}, subject to a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+<paragraph xml:id="C8.S21.Px2">
+<title>Spherical-Bessel-Function Expansions</title>    
+<para xml:id="C8.S21.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="308" xml:id="C8.S21.Px2.p1.s1">
+ <Math equation-number="8.21.16" mode="display" xml:id="C8.S21.E16">\mathrm{Si}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{\left(2k+\frac{3}{2} \right){\left(1-\frac{1}{2}a\right)_{k}}}{{\left(\frac{1}{2}+\frac{1}{2}a \right)_{k+1}}}\mathsf{j}_{2k+1}\left(z\right), subject to a\neq-1,-3,-5,\dots,</Math> , <Math equation-number="8.21.17" mode="display" xml:id="C8.S21.E17">\mathrm{Ci}\left(a,z\right)=z^{a}\sum_{k=0}^{\infty}\frac{\left(2k+\frac{1}{2} \right){\left(\frac{1}{2}-\frac{1}{2}a\right)_{k}}}{{\left(\frac{1}{2}a\right) _{k+1}}}\mathsf{j}_{2k}\left(z\right), subject to a\neq 0,-2,-4,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="309" xml:id="C8.S21.Px2.p1.s2">
+For <Math mode="inline" xml:id="C8.S21.Px2.p1.m1">\mathsf{j}_{n}\left(z\right)</Math> see §LABEL:sec:BS.DBP.SS. For (LABEL:eq:IG.GCI.BES1), (LABEL:eq:IG.GCI.BES2), and further expansions in series of Bessel functions see ( , pp. 56–57) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS7">
+<title>Auxiliary Functions</title>         
+ 
+<para xml:id="C8.S21.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="310" xml:id="C8.S21.SS7.p1.s1">
+ <Math equation-number="8.21.18" mode="display" xml:id="C8.S21.E18">f(a,z)=\mathrm{si}\left(a,z\right)\cos z-\mathrm{ci}\left(a,z\right)\sin z,</Math> , <Math equation-number="8.21.19" mode="display" xml:id="C8.S21.E19">g(a,z)=\mathrm{si}\left(a,z\right)\sin z+\mathrm{ci}\left(a,z\right)\cos z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="311" xml:id="C8.S21.SS7.p1.s2">
+, <Math equation-number="8.21.20" mode="display" xml:id="C8.S21.E20">\mathrm{si}\left(a,z\right)=f(a,z)\cos z+g(a,z)\sin z,</Math> , <Math equation-number="8.21.21" mode="display" xml:id="C8.S21.E21">\mathrm{ci}\left(a,z\right)=-f(a,z)\sin z+g(a,z)\cos z</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C8.S21.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="312" xml:id="C8.S21.SS7.p2.s1">
+When <Math mode="inline" xml:id="C8.S21.SS7.p2.m1">|\operatorname{ph}z|&lt;\pi</Math> and <Math mode="inline" xml:id="C8.S21.SS7.p2.m2">\Re a&lt;1</Math> , <Math equation-number="8.21.22" mode="display" xml:id="C8.S21.E22">f(a,z)=\int_{0}^{\infty}\frac{\sin t}{(t+z)^{1-a}}\mathrm{d}t,</Math> <Math equation-number="8.21.23" mode="display" xml:id="C8.S21.E23">g(a,z)=\int_{0}^{\infty}\frac{\cos t}{(t+z)^{1-a}}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="313" xml:id="C8.S21.SS7.p3.s1">
+When <Math mode="inline" xml:id="C8.S21.SS7.p3.m1">|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> , <Math equation-number="8.21.24" mode="display" xml:id="C8.S21.E24">f(a,z)=\frac{z^{a}}{2}\int_{0}^{\infty}\left((1+it)^{a-1}+(1-it)^{a-1}\right)e ^{-zt}\mathrm{d}t,</Math> <Math equation-number="8.21.25" mode="display" xml:id="C8.S21.E25">g(a,z)=\frac{z^{a}}{2i}\int_{0}^{\infty}\left((1-it)^{a-1}-(1+it)^{a-1}\right) e^{-zt}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S21.SS8">
+<title>Asymptotic Expansions</title>           
+<para xml:id="C8.S21.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="314" xml:id="C8.S21.SS8.p1.s1">
+When <Math mode="inline" xml:id="C8.S21.SS8.p1.m1">z\to\infty</Math> with <Math mode="inline" xml:id="C8.S21.SS8.p1.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C8.S21.SS8.p1.m3">&lt;\pi</Math> ), <Math equation-number="8.21.26" mode="display" xml:id="C8.S21.E26">f(a,z)\sim z^{a-1}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(1-a\right)_{2k}}}{z^ {2k}},</Math> , <Math equation-number="8.21.27" mode="display" xml:id="C8.S21.E27">g(a,z)\sim z^{a-1}\sum_{k=0}^{\infty}\frac{(-1)^{k}{\left(1-a\right)_{2k+1}}}{ z^{2k+1}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S21.SS8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="315" xml:id="C8.S21.SS8.p2.s1">
+For the corresponding expansions for <Math mode="inline" xml:id="C8.S21.SS8.p2.m1">\mathrm{si}\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S21.SS8.p2.m2">\mathrm{ci}\left(a,z\right)</Math> apply (LABEL:eq:IG.AUX.4) and (LABEL:eq:IG.AUX.3).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C8.S22">
+<title>Mathematical Applications</title>           
+<subsection xml:id="C8.S22.SS1">
+<title>Terminant Function</title>          
+<para xml:id="C8.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="316" xml:id="C8.S22.SS1.p1.s1">
+The so-called terminant function <Math mode="inline" xml:id="C8.S22.SS1.p1.m1">F_{p}\left(z\right)</Math> , defined by <Math equation-number="8.22.1" mode="display" xml:id="C8.S22.E1">F_{p}\left(z\right)=\frac{\Gamma\left(p\right)}{2\pi}z^{1-p}E_{p}\left(z\right )=\frac{\Gamma\left(p\right)}{2\pi}\Gamma\left(1-p,z\right),</Math> plays a fundamental role in re-expansions of remainder terms in asymptotic expansions, including exponentially-improved expansions and a smooth interpretation of the Stokes phenomenon.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="317" xml:id="C8.S22.SS1.p1.s2">
+See §§LABEL:sec:AS.RTSP.CF–LABEL:sec:AS.RTSP.EIE2 and the references supplied in these subsections.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S22.SS2">
+<title>Riemann Zeta Function and Incomplete Riemann Zeta Function</title>            
+<para xml:id="C8.S22.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="318" xml:id="C8.S22.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C8.S22.SS2.p1.m1">\Gamma\left(a,z\right)</Math> , with <Math mode="inline" xml:id="C8.S22.SS2.p1.m2">|\operatorname{ph}a|\leq\tfrac{1}{2}\pi</Math> and <Math mode="inline" xml:id="C8.S22.SS2.p1.m3">\operatorname{ph}z=\tfrac{1}{2}\pi</Math> , has an intimate connection with the Riemann zeta function <Math mode="inline" xml:id="C8.S22.SS2.p1.m4">\zeta\left(s\right)</Math> (§LABEL:sec:ZE.Def.Def) on the critical line <Math mode="inline" xml:id="C8.S22.SS2.p1.m5">\Re s=\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="319" xml:id="C8.S22.SS2.p1.s2">
+See ( ) .
+</sentence>
+
+</para>
+
+   
+<para xml:id="C8.S22.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="320" xml:id="C8.S22.SS2.p2.s1">
+If <Math mode="inline" xml:id="C8.S22.SS2.p2.m1">\zeta_{x}(s)</Math> denotes the incomplete Riemann zeta function defined by <Math equation-number="8.22.2" mode="display" xml:id="C8.S22.E2">\zeta_{x}(s)=\frac{1}{\Gamma\left(s\right)}\int_{0}^{x}\frac{t^{s-1}}{e^{t}-1} \mathrm{d}t, subject to \Re s&gt;1,</Math> so that <Math mode="inline" xml:id="C8.S22.SS2.p2.m2">\lim_{x\to\infty}\zeta_{x}(s)=\zeta\left(s\right)</Math> , then <Math equation-number="8.22.3" mode="display" xml:id="C8.S22.E3">\zeta_{x}(s)=\sum_{k=1}^{\infty}k^{-s}P\left(s,kx\right), subject to \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="321" xml:id="C8.S22.SS2.p2.s2">
+For further information on <Math mode="inline" xml:id="C8.S22.SS2.p2.m3">\zeta_{x}(s)</Math> , including zeros and uniform asymptotic approximations, see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S22.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="322" xml:id="C8.S22.SS2.p3.s1">
+The Debye functions <Math mode="inline" xml:id="C8.S22.SS2.p3.m1">\int_{0}^{x}t^{n}\left(e^{t}-1\right)^{-1}\mathrm{d}t</Math> and <Math mode="inline" xml:id="C8.S22.SS2.p3.m2">\int_{x}^{\infty}t^{n}\left(e^{t}-1\right)^{-1}\mathrm{d}t</Math> are closely related to the incomplete Riemann zeta function and the Riemann zeta function.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="323" xml:id="C8.S22.SS2.p3.s2">
+See ( , p. 998) and ( , Chapter 23) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S23">
+<title>Statistical Applications</title>             
+     
+<para xml:id="C8.S23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="324" xml:id="C8.S23.p1.s1">
+The functions <Math mode="inline" xml:id="C8.S23.p1.m1">P\left(a,x\right)</Math> and <Math mode="inline" xml:id="C8.S23.p1.m2">Q\left(a,x\right)</Math> are used extensively in statistics as the probability integrals of the gamma distribution; see ( , pp. 337–414) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="325" xml:id="C8.S23.p1.s2">
+Particular forms are the chi-square distribution functions; see ( , pp. 415–493) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="326" xml:id="C8.S23.p1.s3">
+The function <Math mode="inline" xml:id="C8.S23.p1.m3">\mathrm{B}_{x}\left(a,b\right)</Math> and its normalization <Math mode="inline" xml:id="C8.S23.p1.m4">I_{x}\left(a,b\right)</Math> play a similar role in statistics in connection with the beta distribution; see ( , pp. 210–275) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="327" xml:id="C8.S23.p1.s4">
+In queueing theory the Erlang loss function is used, which can be expressed in terms of the reciprocal of <Math mode="inline" xml:id="C8.S23.p1.m5">Q\left(a,x\right)</Math> ; see ( ) and ( , pp. 80, 316–319) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C8.S24">
+<title>Physical Applications</title>           
+ 
+<subsection xml:id="C8.S24.SS1">
+<title>Incomplete Gamma Functions</title>             
+<para xml:id="C8.S24.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="328" xml:id="C8.S24.SS1.p1.s1">
+The function <Math mode="inline" xml:id="C8.S24.SS1.p1.m1">\gamma\left(a,x\right)</Math> appears in: discussions of power-law relaxation times in complex physical systems ( ( ) ); logarithmic oscillations in relaxation times for proteins ( ( ) ); Gaussian orbitals and exponential (Slater) orbitals in quantum chemistry ( ( ) , ( ) ); population biology and ecological systems ( ( ) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S24.SS2">
+<title>Incomplete Beta Functions</title>             
+<para xml:id="C8.S24.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="329" xml:id="C8.S24.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C8.S24.SS2.p1.m1">I_{x}\left(a,b\right)</Math> appears in: Monte Carlo sampling instatistical mechanics ( ( ) ); analysis of packings of soft or granular objects ( ( ) ); growth formulas in cosmology ( ( ) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S24.SS3">
+<title>Generalized Exponential Integral</title>             
+<para xml:id="C8.S24.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="330" xml:id="C8.S24.SS3.p1.s1">
+The function <Math mode="inline" xml:id="C8.S24.SS3.p1.m1">E_{p}\left(x\right)</Math> , with <Math mode="inline" xml:id="C8.S24.SS3.p1.m2">p&gt;0</Math> , appears in theories of transport and radiative equilibrium ( ( ) , ( ) , ( ) ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S24.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="331" xml:id="C8.S24.SS3.p2.s1">
+With more general values of <Math mode="inline" xml:id="C8.S24.SS3.p2.m1">p</Math> , <Math mode="inline" xml:id="C8.S24.SS3.p2.m2">E_{p}\left(x\right)</Math> supplies fundamental auxiliary functions that are used in the computation of molecular electronic integrals in quantum chemistry ( ( ) , ( ) ), and also wave acoustics of overlapping sound beams ( ( ) ).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+   
+<section xml:id="C8.S25">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C8.S25.SS1">
+<title>Series Expansions</title>         
+<para xml:id="C8.S25.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="332" xml:id="C8.S25.SS1.p1.s1">
+Although the series expansions in §§LABEL:sec:IG.SE, LABEL:sec:IG.GEI.SEE, and LABEL:sec:IG.GCI.SE converge for all finite values of <Math mode="inline" xml:id="C8.S25.SS1.p1.m1">z</Math> , they are cumbersome to use when <Math mode="inline" xml:id="C8.S25.SS1.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="333" xml:id="C8.S25.SS1.p1.s2">
+For large <Math mode="inline" xml:id="C8.S25.SS1.p1.m3">|z|</Math> the corresponding asymptotic expansions (generally divergent) are used instead.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="334" xml:id="C8.S25.SS1.p1.s3">
+See also ( , pp. 101–102) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS2">
+<title>Quadrature</title>         
+<para xml:id="C8.S25.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="335" xml:id="C8.S25.SS2.p1.s1">
+See ( ) for the numerical computation of <Math mode="inline" xml:id="C8.S25.SS2.p1.m1">\Gamma\left(a,z\right)</Math> from (LABEL:eq:IG.IR.5) by means of the trapezoidal rule.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS3">
+<title>Asymptotic Expansions</title>         
+<para xml:id="C8.S25.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="336" xml:id="C8.S25.SS3.p1.s1">
+( ) describes an algorithm for computing <Math mode="inline" xml:id="C8.S25.SS3.p1.m1">P\left(a,x\right)</Math> and <Math mode="inline" xml:id="C8.S25.SS3.p1.m2">Q\left(a,x\right)</Math> for <Math mode="inline" xml:id="C8.S25.SS3.p1.m3">a\geq 0</Math> , <Math mode="inline" xml:id="C8.S25.SS3.p1.m4">x\geq 0</Math> , and <Math mode="inline" xml:id="C8.S25.SS3.p1.m5">a+x\neq 0</Math> from the uniform expansions in §LABEL:sec:IG.UAE. The algorithm supplies 14S accuracy.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="337" xml:id="C8.S25.SS3.p1.s2">
+A numerical inversion procedure is also given for calculating the value of <Math mode="inline" xml:id="C8.S25.SS3.p1.m6">x</Math> (with 10S accuracy), when <Math mode="inline" xml:id="C8.S25.SS3.p1.m7">a</Math> and <Math mode="inline" xml:id="C8.S25.SS3.p1.m8">P\left(a,x\right)</Math> are specified, based on Newton’s rule (§LABEL:sec:NM.NLE.NEWTON).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="338" xml:id="C8.S25.SS3.p1.s3">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS4">
+<title>Continued Fractions</title>         
+<para xml:id="C8.S25.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="339" xml:id="C8.S25.SS4.p1.s1">
+The computation of <Math mode="inline" xml:id="C8.S25.SS4.p1.m1">\gamma\left(a,z\right)</Math> and <Math mode="inline" xml:id="C8.S25.SS4.p1.m2">\Gamma\left(a,z\right)</Math> by means of continued fractions is described in ( ) and ( , §§4.3, 5) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="340" xml:id="C8.S25.SS4.p1.s2">
+See also ( ) and ( , p. 280) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S25.SS5">
+<title>Recurrence Relations</title>         
+<para xml:id="C8.S25.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="341" xml:id="C8.S25.SS5.p1.s1">
+Expansions involving incomplete gamma functions often require the generation of sequences <Math mode="inline" xml:id="C8.S25.SS5.p1.m1">P\left(a+n,x\right)</Math> , <Math mode="inline" xml:id="C8.S25.SS5.p1.m2">Q\left(a+n,x\right)</Math> , or <Math mode="inline" xml:id="C8.S25.SS5.p1.m3">\gamma^{*}\left(a+n,x\right)</Math> for fixed <Math mode="inline" xml:id="C8.S25.SS5.p1.m4">a</Math> and <Math mode="inline" xml:id="C8.S25.SS5.p1.m5">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="342" xml:id="C8.S25.SS5.p1.s2">
+An efficient procedure, based partly on the recurrence relations (LABEL:eq:IG.RF.4) and (LABEL:eq:IG.RF.5), is described in ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S25.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="343" xml:id="C8.S25.SS5.p2.s1">
+Stable recursive schemes for the computation of <Math mode="inline" xml:id="C8.S25.SS5.p2.m1">E_{p}\left(x\right)</Math> are described in ( ) for <Math mode="inline" xml:id="C8.S25.SS5.p2.m2">x&gt;0</Math> and integer <Math mode="inline" xml:id="C8.S25.SS5.p2.m3">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="344" xml:id="C8.S25.SS5.p2.s2">
+For <Math mode="inline" xml:id="C8.S25.SS5.p2.m4">x&gt;0</Math> and real <Math mode="inline" xml:id="C8.S25.SS5.p2.m5">p</Math> see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="345" xml:id="C8.S25.SS5.p2.s3">
+See also ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S26">
+<title>Tables</title>        
+ 
+<subsection xml:id="C8.S26.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C8.S26.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="346" xml:id="C8.S26.SS1.p1.s1">
+For tables published before 1961 see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S26.SS2">
+<title>Incomplete Gamma Functions</title>          
+<para xml:id="C8.S26.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="347" xml:id="C8.S26.SS2.p1.s1">
+( ) tabulates <Math mode="inline" xml:id="C8.S26.I1.i1.p1.m1">P\left(a,x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I1.i1.p1.m2">a=0.05(.05)10(.1)20(.25)7</Math> 0, <Math mode="inline" xml:id="C8.S26.I1.i1.p1.m3">0.0001\leq x\leq 250</Math> to 10D. ( ) tabulates <Math mode="inline" xml:id="C8.S26.I1.i2.p1.m1">P\left(a,x\right)</Math> and <Math mode="inline" xml:id="C8.S26.I1.i2.p1.m2">Q\left(a,x\right)</Math> (with different notation) for <Math mode="inline" xml:id="C8.S26.I1.i2.p1.m3">a=0(.05)</Math> 3, <Math mode="inline" xml:id="C8.S26.I1.i2.p1.m4">x=0(.05)</Math> 1 to 7D. ( ) tabulates the function <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m1">I(u,p)</Math> ( <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m2">=P\left(p+1,u\right)</Math> ) for <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m3">p=-1(.05)0(.1)5(.2)5</Math> 0, <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m4">u=0(.1)u_{p</Math> } to 7D, where <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m5">I(u,u_{p})</Math> rounds off to 1 to 7D; also <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m6">I(u,p)</Math> for <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m7">p=-0.75(.01)-</Math> 1, <Math mode="inline" xml:id="C8.S26.I1.i3.p1.m8">u=0(.1)</Math> 6 to 5D. ( , Table 3.8) tabulates <Math mode="inline" xml:id="C8.S26.I1.i4.p1.m1">\gamma\left(a,x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I1.i4.p1.m2">a=0.5,1,3,5,10,25,50,10</Math> 0, <Math mode="inline" xml:id="C8.S26.I1.i4.p1.m3">x=0(.1)1(1)3,5(5)30,50,10</Math> 0 to 8D or 8S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S26.SS3">
+<title>Incomplete Beta Functions</title>          
+<para xml:id="C8.S26.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="348" xml:id="C8.S26.SS3.p1.s1">
+( ) tabulates <Math mode="inline" xml:id="C8.S26.I2.i1.p1.m1">I_{x}\left(a,b\right)</Math> for <Math mode="inline" xml:id="C8.S26.I2.i1.p1.m2">x=0.01(.01)</Math> 1, <Math mode="inline" xml:id="C8.S26.I2.i1.p1.m3">a,b=0.5(.5)11(1)5</Math> 0, with <Math mode="inline" xml:id="C8.S26.I2.i1.p1.m4">b\leq a</Math> , to 7D. ( , Table 3.9) tabulates <Math mode="inline" xml:id="C8.S26.I2.i2.p1.m1">I_{x}\left(a,b\right)</Math> for <Math mode="inline" xml:id="C8.S26.I2.i2.p1.m2">x=0(.05)</Math> 1, <Math mode="inline" xml:id="C8.S26.I2.i2.p1.m3">a=0.5,1,3,5,1</Math> 0, <Math mode="inline" xml:id="C8.S26.I2.i2.p1.m4">b=1,10</Math> to 8D.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S26.SS4">
+<title>Generalized Exponential Integral</title>          
+<para xml:id="C8.S26.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="349" xml:id="C8.S26.SS4.p1.s1">
+( , pp. 245–248) tabulates <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m1">E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m2">n=2,3,4,10,20</Math> , <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m3">x=0(.01)</Math> 2 to 7D; also <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m4">(x+n)e^{x}E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m5">n=2,3,4,10,20</Math> , <Math mode="inline" xml:id="C8.S26.I3.i1.p1.m6">x^{-1}=0(.01)0.1(.05)0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="350" xml:id="C8.S26.SS4.p1.s2">
+5 to 6S. ( ) presents a short table of <Math mode="inline" xml:id="C8.S26.I3.i2.p1.m1">E_{p}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i2.p1.m2">p=-\tfrac{9}{2}(1)-\tfrac{1}{2}</Math> , <Math mode="inline" xml:id="C8.S26.I3.i2.p1.m3">0\leq x\leq 200</Math> to 14S. ( ) tabulates <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m1">E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m2">n=0(1)20</Math> , <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m3">x=0(.01)2(.1)1</Math> 0 to 4-9S; <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m4">e^{x}E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m5">n=2(1)10</Math> , <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m6">x=10(.1)2</Math> 0 to 7D; <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m7">e^{x}E_{p}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m8">p=0(.1)</Math> 1, <Math mode="inline" xml:id="C8.S26.I3.i3.p1.m9">x=0.01(.01)7(.05)12(.1)2</Math> 0 to 7S or 7D.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="351" xml:id="C8.S26.SS4.p1.s3">
+( ) tabulates <Math mode="inline" xml:id="C8.S26.I3.i4.p1.m1">E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i4.p1.m2">n=1(1)10</Math> , <Math mode="inline" xml:id="C8.S26.I3.i4.p1.m3">x=0.01(.01)</Math> 5 to 7D. ( , Table 19.1)tabulates
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="352" xml:id="C8.S26.SS4.p1.s4">
+<Math mode="inline" xml:id="C8.S26.I3.i5.p1.m1">E_{n}\left(x\right)</Math> for <Math mode="inline" xml:id="C8.S26.I3.i5.p1.m2">n=1,2,3,5,10,15,20</Math> , <Math mode="inline" xml:id="C8.S26.I3.i5.p1.m3">x=0(.1)1,1.5,2,3,5,10,20,30,50,10</Math> 0 to 7D or 8S.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S27">
+<title>Approximations</title>         
+<subsection xml:id="C8.S27.SS1">
+<title>Incomplete Gamma Functions</title>          
+<para xml:id="C8.S27.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="353" xml:id="C8.S27.SS1.p1.s1">
+( ) gives a simple approximation for the function <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m1">F(p,x)=x^{-p}e^{x^{2}/2}\int_{x}^{\infty}e^{-t^{2}/2}t^{p}\mathrm{d}t</Math> (which is related to the incomplete gamma function by a change of variables) for real <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m2">p</Math> and large positive <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m3">x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="354" xml:id="C8.S27.SS1.p1.s2">
+This takes the form <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m4">F(p,x)=4x/h(p,x)</Math> , approximately, where <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m5">h(p,x)=3(x^{2}-p)+\sqrt{(x^{2}-p)^{2}+8(x^{2}+p)}</Math> and is shown to produce an absolute error <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m6">O\left(x^{-7}\right)</Math> as <Math mode="inline" xml:id="C8.S27.I1.i1.p1.m7">x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="355" xml:id="C8.S27.SS1.p1.s3">
+( , §4.3) gives Padé approximation methods, combined with a detailed analysis of the error terms, valid for real and complex variables except on the negative real <Math mode="inline" xml:id="C8.S27.I1.i2.p1.m1">z</Math> -axis.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="356" xml:id="C8.S27.SS1.p1.s4">
+See also ( , §3) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="357" xml:id="C8.S27.SS1.p1.s5">
+( , pp. 25, 40–41) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m1">\Gamma\left(a,\omega z\right)</Math> (by specifying parameters) with <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m2">1\leq\omega&lt;\infty</Math> , and <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m3">\gamma\left(a,\omega z\right)</Math> with <Math mode="inline" xml:id="C8.S27.I1.i3.p1.m4">0\leq\omega\leq 1</Math> ; see also ( , §3) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="358" xml:id="C8.S27.SS1.p1.s6">
+( , p. 186) gives hypergeometric polynomial representations that converge uniformly on compact subsets of the <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m1">z</Math> -plane that exclude <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m2">z=0</Math> and are valid for <Math mode="inline" xml:id="C8.S27.I1.i4.p1.m3">\left|\operatorname{ph}z\right|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S27.SS2">
+<title>Generalized Exponential Integral</title>          
+<para xml:id="C8.S27.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="359" xml:id="C8.S27.SS2.p1.s1">
+( , p. 103) gives Chebyshev-series expansions for <Math mode="inline" xml:id="C8.S27.I2.i1.p1.m1">E_{1}\left(x\right)</Math> and related functions for <Math mode="inline" xml:id="C8.S27.I2.i1.p1.m2">x\geq 5</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="360" xml:id="C8.S27.SS2.p1.s2">
+( , p. 106) gives rational and Padé approximations, with remainders, for <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m1">E_{1}\left(z\right)</Math> and <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m2">z^{-1}\int_{0}^{z}t^{-1}(1-e^{-t})\mathrm{d}t</Math> for complex <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m3">z</Math> with <Math mode="inline" xml:id="C8.S27.I2.i2.p1.m4">\left|\operatorname{ph}z\right|\leq\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="361" xml:id="C8.S27.SS2.p1.s3">
+( ) gives polynomial and rational approximations for <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m1">E_{p}\left(x\right)=(e^{-x}/x)P(z)</Math> , approximately, where <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m2">P(z)</Math> denotes a quotient of polynomials of equal degree in <Math mode="inline" xml:id="C8.S27.I2.i3.p1.m3">z=x^{-1}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C8.S28">
+<title>Software</title>        
+ 
+<para xml:id="C8.S28.p1">
+
+</para>
+ 
+<subsection xml:id="C8.S28.SS1">
+<title>Introduction</title>         
+<para xml:id="C8.S28.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="362" xml:id="C8.S28.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="363" xml:id="C8.S28.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="364" xml:id="C8.S28.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S28.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="365" xml:id="C8.S28.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="366" xml:id="C8.S28.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS2">
+<title>Incomplete Gamma Functions for Real Argument and Parameter</title>         
+<para xml:id="C8.S28.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="367" xml:id="C8.S28.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="368" xml:id="C8.S28.SS2.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="369" xml:id="C8.S28.SS2.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="370" xml:id="C8.S28.SS2.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="371" xml:id="C8.S28.SS2.p1.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="372" xml:id="C8.S28.SS2.p1.s6">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="373" xml:id="C8.S28.SS2.p1.s7">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S28.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="374" xml:id="C8.S28.SS2.p2.s1">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS3">
+<title>Incomplete Gamma Functions for Complex Argument and Parameter</title>        
+ 
+<para xml:id="C8.S28.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="375" xml:id="C8.S28.SS3.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="376" xml:id="C8.S28.SS3.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS4">
+<title>Incomplete Beta Functions for Real Argument and Parameters</title>        
+ 
+<para xml:id="C8.S28.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="377" xml:id="C8.S28.SS4.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="378" xml:id="C8.S28.SS4.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="379" xml:id="C8.S28.SS4.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="380" xml:id="C8.S28.SS4.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="381" xml:id="C8.S28.SS4.p1.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="382" xml:id="C8.S28.SS4.p1.s6">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S28.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="383" xml:id="C8.S28.SS4.p2.s1">
+See also ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS5">
+<title>Incomplete Beta Functions for Complex Argument and Parameters</title>         
+<para xml:id="C8.S28.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="384" xml:id="C8.S28.SS5.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="385" xml:id="C8.S28.SS5.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS6">
+<title>Generalized Exponential Integral for Real Argument and Integer Parameter</title>         
+<para xml:id="C8.S28.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="386" xml:id="C8.S28.SS6.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="387" xml:id="C8.S28.SS6.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S28.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="388" xml:id="C8.S28.SS6.p2.s1">
+See also ( ) , ( ) ,and ( ) ,
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C8.S28.SS7">
+<title>Generalized Exponential Integral for Complex Argument and/or Parameter</title>        
+ 
+<para xml:id="C8.S28.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="389" xml:id="C8.S28.SS7.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="390" xml:id="C8.S28.SS7.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C8.S28.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="391" xml:id="C8.S28.SS7.p2.s1">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

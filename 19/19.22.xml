@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S22">
+<title>Quadratic Transformations</title>         
+<subsection xml:id="C19.S22.SS1">
+<title>Complete Integrals</title>         
+<para xml:id="C19.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S22.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C19.S22.SS1.p1.m1">\Re x&gt;0</Math> , <Math mode="inline" xml:id="C19.S22.SS1.p1.m2">\Re y&gt;0</Math> , <Math mode="inline" xml:id="C19.S22.SS1.p1.m3">a=(x+y)/2</Math> , and <Math mode="inline" xml:id="C19.S22.SS1.p1.m4">p\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S22.SS1.p1.s2">
+Then <Math equation-number="19.22.1" mode="display" xml:id="C19.S22.E1">R_{F}\left(0,x^{2},y^{2}\right)=R_{F}\left(0,xy,a^{2}\right),</Math> , <Math equation-number="19.22.2" mode="display" xml:id="C19.S22.E2">2\!R_{G}\left(0,x^{2},y^{2}\right)=4\!R_{G}\left(0,xy,a^{2}\right)-xyR_{F} \left(0,xy,a^{2}\right),</Math> , <Math equation-number="19.22.3" mode="display" xml:id="C19.S22.E3">2y^{2}R_{D}\left(0,x^{2},y^{2}\right)=\tfrac{1}{4}(y^{2}-x^{2})R_{D}\left(0,xy ,a^{2}\right)+3\!R_{F}\left(0,xy,a^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S22.SS1.p1.s3">
+<Math equation-number="19.22.4" mode="display" xml:id="C19.S22.E4">(p_{\pm}^{2}-p_{\mp}^{2})R_{J}\left(0,x^{2},y^{2},p^{2}\right)=2(p_{\pm}^{2}-a ^{2})R_{J}\left(0,xy,a^{2},p_{\pm}^{2}\right)-3\!R_{F}\left(0,xy,a^{2}\right)+ 3\pi/(2p),</Math> where <Math equation-number="19.22.5" mode="display" xml:id="C19.S22.E5">2p_{\pm}=\sqrt{(p+x)(p+y)}\pm\sqrt{(p-x)(p-y)},</Math> and hence <Math equation-number="19.22.6" mode="display" xml:id="C19.S22.E6">p_{+}p_{-}=pa,p_{+}^{2}+p_{-}^{2}=p^{2}+xy,p_{+}^{2}-p_{-}^{2}=\sqrt{(p^{2}-x^{2})(p^{2}-y^{2})},4(p_{\pm}^{2}-a^{2})=(\sqrt{p^{2}-x^{2}}\pm\sqrt{p^{2}-y^{2}})^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C19.S22.Px1">
+<title>Bartky’s Transformation</title>    
+ 
+<para xml:id="C19.S22.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C19.S22.Px1.p1.s1">
+ <Math equation-number="19.22.7" mode="display" xml:id="C19.S22.E7">2p^{2}R_{J}\left(0,x^{2},y^{2},p^{2}\right)=v_{+}v_{-}R_{J}\left(0,xy,a^{2},v^ {2}_{+}\right)+3\!R_{F}\left(0,xy,a^{2}\right), if v_{\pm}=(p^{2}\pm xy)/(2p)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C19.S22.Px1.p1.s2">
+If <Math mode="inline" xml:id="C19.S22.Px1.p1.m1">p=y</Math> , then (19.22.7)reduces to (19.22.3), but if <Math mode="inline" xml:id="C19.S22.Px1.p1.m2">p=x</Math> or <Math mode="inline" xml:id="C19.S22.Px1.p1.m3">p=y</Math> , then both sides of (19.22.4) are 0 by (19.20.9).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C19.S22.Px1.p1.s3">
+If <Math mode="inline" xml:id="C19.S22.Px1.p1.m4">x&lt;p&lt;y</Math> or <Math mode="inline" xml:id="C19.S22.Px1.p1.m5">y&lt;p&lt;x</Math> , then <Math mode="inline" xml:id="C19.S22.Px1.p1.m6">p_{+}</Math> and <Math mode="inline" xml:id="C19.S22.Px1.p1.m7">p_{-}</Math> are complex conjugates.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S22.SS2">
+<title>Gauss’s Arithmetic-Geometric Mean (AGM)</title>        
+   
+<para xml:id="C19.S22.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S22.SS2.p1.s1">
+The AGM, <Math mode="inline" xml:id="C19.S22.SS2.p1.m1">M\left(a_{0},g_{0}\right)</Math> , of two positive numbers <Math mode="inline" xml:id="C19.S22.SS2.p1.m2">a_{0}</Math> and <Math mode="inline" xml:id="C19.S22.SS2.p1.m3">g_{0}</Math> is defined in §19.8(i).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C19.S22.SS2.p1.s2">
+Again, we assume that <Math mode="inline" xml:id="C19.S22.SS2.p1.m4">a_{0}\geq g_{0}</Math> (except in (19.22.10)), and define <Math mode="inline" xml:id="C19.S22.SS2.p1.m5">c_{n}=\sqrt{a_{n}^{2}-g_{n}^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C19.S22.SS2.p1.s3">
+Then <Math equation-number="19.22.8" mode="display" xml:id="C19.S22.E8">\frac{2}{\pi}R_{F}\left(0,a_{0}^{2},g_{0}^{2}\right)=\frac{1}{M\left(a_{0},g_{ 0}\right)},</Math> <Math equation-number="19.22.9" mode="display" xml:id="C19.S22.E9">\frac{4}{\pi}R_{G}\left(0,a_{0}^{2},g_{0}^{2}\right)=\frac{1}{M\left(a_{0},g_{ 0}\right)}\left(a_{0}^{2}-\sum_{n=0}^{\infty}2^{n-1}c_{n}^{2}\right)=\frac{1}{ M\left(a_{0},g_{0}\right)}\left(a_{1}^{2}-\sum_{n=2}^{\infty}2^{n-1}c_{n}^{2} \right),</Math> and <Math equation-number="19.22.10" mode="display" xml:id="C19.S22.E10">R_{D}\left(0,g_{0}^{2},a_{0}^{2}\right)=\frac{3\pi}{4\!M\left(a_{0},g_{0} \right)a_{0}^{2}}\sum_{n=0}^{\infty}Q_{n},</Math> where <Math equation-number="19.22.11" mode="display" xml:id="C19.S22.E11">Q_{0}=1,Q_{n+1}=\tfrac{1}{2}Q_{n}\frac{a_{n}-g_{n}}{a_{n}+g_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C19.S22.SS2.p1.s4">
+<Math mode="inline" xml:id="C19.S22.SS2.p1.m6">Q_{n}</Math> has the same sign as <Math mode="inline" xml:id="C19.S22.SS2.p1.m7">a_{0}-g_{0}</Math> for <Math mode="inline" xml:id="C19.S22.SS2.p1.m8">n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C19.S22.SS2.p1.s5">
+<Math equation-number="19.22.12" mode="display" xml:id="C19.S22.E12">R_{J}\left(0,g_{0}^{2},a_{0}^{2},p_{0}^{2}\right)=\frac{3\pi}{4\!M\left(a_{0}, g_{0}\right)p_{0}^{2}}\sum_{n=0}^{\infty}Q_{n},</Math> where <Math mode="inline" xml:id="C19.S22.SS2.p1.m9">p_{0}&gt;0</Math> and <Math equation-number="19.22.13" mode="display" xml:id="C19.S22.E13">p_{n+1}=\frac{p_{n}^{2}+a_{n}g_{n}}{2p_{n}},\varepsilon_{n}=\frac{p_{n}^{2}-a_{n}g_{n}}{p_{n}^{2}+a_{n}g_{n}},Q_{0}=1,Q_{n+1}=\tfrac{1}{2}Q_{n}\varepsilon_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C19.S22.SS2.p1.s6">
+(If <Math mode="inline" xml:id="C19.S22.SS2.p1.m10">p_{0}=a_{0}</Math> , then <Math mode="inline" xml:id="C19.S22.SS2.p1.m11">p_{n}=a_{n}</Math> and (19.22.13)reduces to (19.22.11).)As
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="13" xml:id="C19.S22.SS2.p1.s7">
+<Math mode="inline" xml:id="C19.S22.SS2.p1.m12">n\to\infty</Math> , <Math mode="inline" xml:id="C19.S22.SS2.p1.m13">p_{n}</Math> and <Math mode="inline" xml:id="C19.S22.SS2.p1.m14">\varepsilon_{n}</Math> converge quadratically to <Math mode="inline" xml:id="C19.S22.SS2.p1.m15">M\left(a_{0},g_{0}\right)</Math> and 0, respectively, and <Math mode="inline" xml:id="C19.S22.SS2.p1.m16">Q_{n}</Math> converges to 0 faster than quadratically.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="14" xml:id="C19.S22.SS2.p1.s8">
+If the last variable of <Math mode="inline" xml:id="C19.S22.SS2.p1.m17">R_{J}</Math> is negative, then the Cauchy principal value is <Math equation-number="19.22.14" mode="display" xml:id="C19.S22.E14">R_{J}\left(0,g_{0}^{2},a_{0}^{2},-q_{0}^{2}\right)=\frac{-3\pi}{4\!M\left(a_{0 },g_{0}\right)(q_{0}^{2}+a_{0}^{2})}\*\left(2+\frac{a_{0}^{2}-g_{0}^{2}}{q_{0} ^{2}+g_{0}^{2}}\sum_{n=0}^{\infty}Q_{n}\right),</Math> and (19.22.13)still applies, provided that <Math equation-number="19.22.15" mode="display" xml:id="C19.S22.E15">p_{0}^{2}=a_{0}^{2}(q_{0}^{2}+g_{0}^{2})/(q_{0}^{2}+a_{0}^{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S22.SS3">
+<title>Incomplete Integrals</title>         
+<para xml:id="C19.S22.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C19.S22.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C19.S22.SS3.p1.m1">x</Math> , <Math mode="inline" xml:id="C19.S22.SS3.p1.m2">y</Math> , and <Math mode="inline" xml:id="C19.S22.SS3.p1.m3">z</Math> have positive real parts, assume <Math mode="inline" xml:id="C19.S22.SS3.p1.m4">p\neq 0</Math> , and retain (19.22.5) and (19.22.6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C19.S22.SS3.p1.s2">
+Define <Math equation-number="19.22.16" mode="display" xml:id="C19.S22.E16">a=(x+y)/2,2z_{\pm}=\sqrt{(z+x)(z+y)}\pm\sqrt{(z-x)(z-y)},</Math> so that <Math equation-number="19.22.17" mode="display" xml:id="C19.S22.E17">z_{+}z_{-}=za,z_{+}^{2}+z_{-}^{2}=z^{2}+xy,z_{+}^{2}-z_{-}^{2}=\sqrt{(z^{2}-x^{2})(z^{2}-y^{2})},4(z_{\pm}^{2}-a^{2})=(\sqrt{z^{2}-x^{2}}\pm\sqrt{z^{2}-y^{2}})^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C19.S22.SS3.p1.s3">
+Then <Math equation-number="19.22.18" mode="display" xml:id="C19.S22.E18">R_{F}\left(x^{2},y^{2},z^{2}\right)=R_{F}\left(a^{2},z_{-}^{2},z_{+}^{2}\right),</Math> <Math equation-number="19.22.19" mode="display" xml:id="C19.S22.E19">(z_{\pm}^{2}-z_{\mp}^{2})R_{D}\left(x^{2},y^{2},z^{2}\right)={2(z_{\pm}^{2}-a^ {2})}R_{D}\left(a^{2},z_{\mp}^{2},z_{\pm}^{2}\right)-3\!R_{F}\left(x^{2},y^{2} ,z^{2}\right)+(3/z),</Math> <Math equation-number="19.22.20" mode="display" xml:id="C19.S22.E20">(p_{\pm}^{2}-p_{\mp}^{2})R_{J}\left(x^{2},y^{2},z^{2},p^{2}\right)=2(p_{\pm}^{ 2}-a^{2})R_{J}\left(a^{2},z_{+}^{2},z_{-}^{2},p_{\pm}^{2}\right)-3\!R_{F}\left (x^{2},y^{2},z^{2}\right)+3\!R_{C}\left(z^{2},p^{2}\right),</Math> <Math equation-number="19.22.21" mode="display" xml:id="C19.S22.E21">2\!R_{G}\left(x^{2},y^{2},z^{2}\right)=4\!R_{G}\left(a^{2},z_{+}^{2},z_{-}^{2} \right)-xyR_{F}\left(x^{2},y^{2},z^{2}\right)-z,</Math> <Math equation-number="19.22.22" mode="display" xml:id="C19.S22.E22">R_{C}\left(x^{2},y^{2}\right)=R_{C}\left(a^{2},ay\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S22.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C19.S22.SS3.p2.s1">
+If <Math mode="inline" xml:id="C19.S22.SS3.p2.m1">x,y,z</Math> are real and positive, then (19.22.18)–(19.22.21) are ascending Landen transformations when <Math mode="inline" xml:id="C19.S22.SS3.p2.m2">x,y&lt;z</Math> (implying <Math mode="inline" xml:id="C19.S22.SS3.p2.m3">a&lt;z_{-}&lt;z_{+}</Math> ), and descending Gauss transformations when <Math mode="inline" xml:id="C19.S22.SS3.p2.m4">z&lt;x,y</Math> (implying <Math mode="inline" xml:id="C19.S22.SS3.p2.m5">z_{+}&lt;z_{-}&lt;a</Math> ). Ascent and descent correspond respectively to increase and decrease of <Math mode="inline" xml:id="C19.S22.SS3.p2.m6">k</Math> in Legendre’s notation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C19.S22.SS3.p2.s2">
+Descending Gauss transformations include, as special cases, transformations of complete integrals into complete integrals; ascending Landen transformations do not.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S22.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C19.S22.SS3.p3.s1">
+If <Math mode="inline" xml:id="C19.S22.SS3.p3.m1">p=x</Math> or <Math mode="inline" xml:id="C19.S22.SS3.p3.m2">p=y</Math> , then (19.22.20)reduces to <Math mode="inline" xml:id="C19.S22.SS3.p3.m3">0=0</Math> by (19.20.13), and if <Math mode="inline" xml:id="C19.S22.SS3.p3.m4">z=x</Math> or <Math mode="inline" xml:id="C19.S22.SS3.p3.m5">z=y</Math> then (19.22.19)reduces to <Math mode="inline" xml:id="C19.S22.SS3.p3.m6">0=0</Math> by (19.20.20) and (19.22.22).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C19.S22.SS3.p3.s2">
+If <Math mode="inline" xml:id="C19.S22.SS3.p3.m7">x&lt;z&lt;y</Math> or <Math mode="inline" xml:id="C19.S22.SS3.p3.m8">y&lt;z&lt;x</Math> , then <Math mode="inline" xml:id="C19.S22.SS3.p3.m9">z_{+}</Math> and <Math mode="inline" xml:id="C19.S22.SS3.p3.m10">z_{-}</Math> are complex conjugates.However, if <Math mode="inline" xml:id="C19.S22.SS3.p3.m11">x</Math> and <Math mode="inline" xml:id="C19.S22.SS3.p3.m12">y</Math> are complex conjugates and <Math mode="inline" xml:id="C19.S22.SS3.p3.m13">z</Math> and <Math mode="inline" xml:id="C19.S22.SS3.p3.m14">p</Math> are real, then the right-hand sides of all transformations in §§19.22(i)and19.22(iii)—except(19.22.3) and (19.22.22)—arefree of complex numbers and <Math mode="inline" xml:id="C19.S22.SS3.p3.m15">p_{\pm}^{2}-p_{\mp}^{2}=\pm|p^{2}-x^{2}|\neq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S22.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C19.S22.SS3.p4.s1">
+The transformations inverse to the ones just described are the descending Landen transformations and the ascending Gauss transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C19.S22.SS3.p4.s2">
+The equations inverse to (19.22.5) and (19.22.16) are given by <Math equation-number="19.22.23" mode="display" xml:id="C19.S22.E23">x+y=2a,x-y=(\ifrac{2}{a})\sqrt{(a^{2}-z_{+}^{2})(a^{2}-z_{-}^{2})},z=\ifrac{z_{+}z_{-}}{a},</Math> and the corresponding equations with <Math mode="inline" xml:id="C19.S22.SS3.p4.m1">z</Math> , <Math mode="inline" xml:id="C19.S22.SS3.p4.m2">z_{+}</Math> , and <Math mode="inline" xml:id="C19.S22.SS3.p4.m3">z_{-}</Math> replaced by <Math mode="inline" xml:id="C19.S22.SS3.p4.m4">p</Math> , <Math mode="inline" xml:id="C19.S22.SS3.p4.m5">p_{+}</Math> , and <Math mode="inline" xml:id="C19.S22.SS3.p4.m6">p_{-}</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C19.S22.SS3.p4.s3">
+These relations need to be used with caution because <Math mode="inline" xml:id="C19.S22.SS3.p4.m7">y</Math> is negative when <Math mode="inline" xml:id="C19.S22.SS3.p4.m8">0&lt;a&lt;z_{+}z_{-}\left(z_{+}^{2}+z_{-}^{2}\right)^{-1/2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

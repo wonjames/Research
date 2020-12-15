@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S20">
+<title>Hahn Class: Explicit Representations</title>        
+ 
+<subsection xml:id="C18.S20.SS1">
+<title>Rodrigues Formulas</title>        
+ 
+  
+<para xml:id="C18.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S20.SS1.p1.s1">
+For comments on the use of the forward-difference operator <Math mode="inline" xml:id="C18.S20.SS1.p1.m1">\Delta_{x}</Math> , the backward-difference operator <Math mode="inline" xml:id="C18.S20.SS1.p1.m2">\nabla_{x}</Math> , and the central-difference operator <Math mode="inline" xml:id="C18.S20.SS1.p1.m3">\delta_{x}</Math> , see §18.2(ii).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C18.S20.Px1">
+<title>Hahn, Krawtchouk, Meixner, and Charlier</title>   
+<para xml:id="C18.S20.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S20.Px1.p1.s1">
+ <Math equation-number="18.20.1" mode="display" xml:id="C18.S20.E1">p_{n}(x)=\frac{1}{\kappa_{n}w_{x}}\nabla_{x}^{n}\left(w_{x}\prod_{\ell=0}^{n-1 }F(x+\ell)\right), if x\in X</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S20.Px1.p1.s2">
+In (18.20.1)
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C18.S20.Px1.p1.s3">
+<Math mode="inline" xml:id="C18.S20.Px1.p1.m1">X</Math> and <Math mode="inline" xml:id="C18.S20.Px1.p1.m2">w_{x}</Math> are as in Table 18.19.1.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C18.S20.Px1.p1.s4">
+For the Hahn polynomials <Math mode="inline" xml:id="C18.S20.Px1.p1.m3">p_{n}(x)=Q_{n}\left(x;\alpha,\beta,N\right)</Math> and <Math equation-number="18.20.2" mode="display" xml:id="C18.S20.E2">F(x)=(x+\alpha+1)(x-N),\kappa_{n}={\left(-N\right)_{n}}{\left(\alpha+1\right)_{n}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C18.S20.Px1.p1.s5">
+For the Krawtchouk, Meixner, and Charlier polynomials, <Math mode="inline" xml:id="C18.S20.Px1.p1.m4">F(x)</Math> and <Math mode="inline" xml:id="C18.S20.Px1.p1.m5">\kappa_{n}</Math> are as in Table 18.20.1.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="7" xml:id="C18.S20.T1.s1">
+Table 18.20.1: Krawtchouk, Meixner, and Charlier OP’s: Rodrigues formulas ( ).
+</sentence>
+ 
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="1" xml:id="C18.S20.T1.t1.s1">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r1.m1">p_{n}(x)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="2" xml:id="C18.S20.T1.t1.s2">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r1.m2">F(x)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="3" xml:id="C18.S20.T1.t1.s3">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r1.m3">\kappa_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="4" xml:id="C18.S20.T1.t1.s4">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r2.m1">K_{n}\left(x;p,N\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="5" xml:id="C18.S20.T1.t1.s5">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r2.m2">x-N</Math>
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="6" xml:id="C18.S20.T1.t1.s6">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r2.m3">{\left(-N\right)_{n}}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="7" xml:id="C18.S20.T1.t1.s7">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r3.m1">M_{n}\left(x;\beta,c\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="8" xml:id="C18.S20.T1.t1.s8">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r3.m2">x+\beta</Math>
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="9" xml:id="C18.S20.T1.t1.s9">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r3.m3">{\left(\beta\right)_{n}}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="10" xml:id="C18.S20.T1.t1.s10">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r4.m1">C_{n}\left(x;a\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="11" xml:id="C18.S20.T1.t1.s11">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r4.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="12" xml:id="C18.S20.T1.t1.s12">
+<Math mode="inline" xml:id="C18.S20.T1.t1.r4.m3">1</Math>
+</sentence>
+ 
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S20.Px2">
+<title>Continuous Hahn</title>   
+<para xml:id="C18.S20.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C18.S20.Px2.p1.s1">
+ <Math equation-number="18.20.3" mode="display" xml:id="C18.S20.E3">w(x;a,b,\overline{a},\overline{b})p_{n}\left(x;a,b,\overline{a},\overline{b} \right)=\frac{1}{n!}\delta_{x}^{n}\left(w(x;a+\tfrac{1}{2}n,b+\tfrac{1}{2}n, \overline{a}+\tfrac{1}{2}n,\overline{b}+\tfrac{1}{2}n)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S20.Px3">
+<title>Meixner–Pollaczek</title>   
+<para xml:id="C18.S20.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C18.S20.Px3.p1.s1">
+ <Math equation-number="18.20.4" mode="display" xml:id="C18.S20.E4">w^{(\lambda)}(x;\phi)P^{(\lambda)}_{n}\left(x;\phi\right)=\frac{1}{n!}\delta_{ x}^{n}\left(w^{(\lambda+\frac{1}{2}n)}(x;\phi)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S20.SS2">
+<title>Hypergeometric Function and Generalized Hypergeometric Functions</title>        
+     
+<para xml:id="C18.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C18.S20.SS2.p1.s1">
+For the definition of hypergeometric and generalized hypergeometric functions see §16.2.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C18.S20.SS2.p1.s2">
+<Math equation-number="18.20.5" mode="display" xml:id="C18.S20.E5">Q_{n}\left(x;\alpha,\beta,N\right)={{}_{3}F_{2}}\left({-n,n+\alpha+\beta+1,-x \atop\alpha+1,-N};1\right), if n=0,1,\dots,N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C18.S20.SS2.p1.s3">
+<Math equation-number="18.20.6" mode="display" xml:id="C18.S20.E6">K_{n}\left(x;p,N\right)={{}_{2}F_{1}}\left({-n,-x\atop-N};p^{-1}\right), if n=0,1,\dots,N</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C18.S20.SS2.p1.s4">
+<Math equation-number="18.20.7" mode="display" xml:id="C18.S20.E7">M_{n}\left(x;\beta,c\right)={{}_{2}F_{1}}\left({-n,-x\atop\beta};1-c^{-1} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C18.S20.SS2.p1.s5">
+<Math equation-number="18.20.8" mode="display" xml:id="C18.S20.E8">C_{n}\left(x;a\right)={{}_{2}F_{0}}\left({-n,-x\atop-};-a^{-1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="27" xml:id="C18.S20.SS2.p1.s6">
+<Math equation-number="18.20.9" mode="display" xml:id="C18.S20.E9">p_{n}\left(x;a,b,\overline{a},\overline{b}\right)=\frac{{\mathrm{i}^{n}}{\left (a+\overline{a}\right)_{n}}{\left(a+\overline{b}\right)_{n}}}{n!}\*{{}_{3}F_{2 }}\left({-n,n+2\Re(a+b)-1,a+\mathrm{i}x\atop a+\overline{a},a+\overline{b}};1 \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="28" xml:id="C18.S20.SS2.p1.s7">
+(For symmetry properties of <Math mode="inline" xml:id="C18.S20.SS2.p1.m1">p_{n}\left(x;a,b,\overline{a},\overline{b}\right)</Math> with respect to <Math mode="inline" xml:id="C18.S20.SS2.p1.m2">a</Math> , <Math mode="inline" xml:id="C18.S20.SS2.p1.m3">b</Math> , <Math mode="inline" xml:id="C18.S20.SS2.p1.m4">\overline{a}</Math> , <Math mode="inline" xml:id="C18.S20.SS2.p1.m5">\overline{b}</Math> seeAndrews et al. (1999, Corollary 3.3.4).)
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="29" xml:id="C18.S20.SS2.p1.s8">
+<Math equation-number="18.20.10" mode="display" xml:id="C18.S20.E10">P^{(\lambda)}_{n}\left(x;\phi\right)=\frac{{\left(2\lambda\right)_{n}}}{n!}e^{ \mathrm{i}n\phi}\*{{}_{2}F_{1}}\left({-n,\lambda+\mathrm{i}x\atop 2\lambda};1- e^{-2\mathrm{i}\phi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

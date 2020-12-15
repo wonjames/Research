@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S10">
+<title>Addition Theorems and Other Identities</title>         
+<subsection xml:id="C23.S10.SS1">
+<title>Addition Theorems</title>         
+ 
+<para xml:id="C23.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S10.SS1.p1.s1">
+ <Math equation-number="23.10.1" mode="display" xml:id="C23.S10.E1">\wp\left(u+v\right)=\frac{1}{4}\left(\frac{\wp'\left(u\right)-\wp'\left(v \right)}{\wp\left(u\right)-\wp\left(v\right)}\right)^{2}-\wp\left(u\right)-\wp \left(v\right),</Math> <Math equation-number="23.10.2" mode="display" xml:id="C23.S10.E2">\zeta\left(u+v\right)=\zeta\left(u\right)+\zeta\left(v\right)+\frac{1}{2}\frac {\zeta''\left(u\right)-\zeta''\left(v\right)}{\zeta'\left(u\right)-\zeta'\left (v\right)},</Math> <Math equation-number="23.10.3" mode="display" xml:id="C23.S10.E3">\frac{\sigma\left(u+v\right)\sigma\left(u-v\right)}{{\sigma^{2}}\left(u\right) {\sigma^{2}}\left(v\right)}=\wp\left(v\right)-\wp\left(u\right),</Math> <Math equation-number="23.10.4" mode="display" xml:id="C23.S10.E4">\sigma\left(u+v\right)\sigma\left(u-v\right)\sigma\left(x+y\right)\sigma\left( x-y\right)+\sigma\left(v+x\right)\sigma\left(v-x\right)\sigma\left(u+y\right) \sigma\left(u-y\right)+{\sigma\left(x+u\right)\sigma\left(x-u\right)\sigma \left(v+y\right)\sigma\left(v-y\right)=0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C23.S10.SS1.p1.s2">
+} For further addition-type identities for the <Math mode="inline" xml:id="C23.S10.SS1.p1.m1">\sigma</Math> -function seeLawden (1989, §6.4).
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C23.S10.SS1.p2.s1">
+If <Math mode="inline" xml:id="C23.S10.SS1.p2.m1">u+v+w=0</Math> , then <Math equation-number="23.10.5" mode="display" xml:id="C23.S10.E5">\begin{vmatrix}1&amp;\wp\left(u\right)&amp;\wp'\left(u\right)\\ 1&amp;\wp\left(v\right)&amp;\wp'\left(v\right)\\ 1&amp;\wp\left(w\right)&amp;\wp'\left(w\right)\end{vmatrix}=0,</Math> and <Math equation-number="23.10.6" mode="display" xml:id="C23.S10.E6">\left(\zeta\left(u\right)+\zeta\left(v\right)+\zeta\left(w\right)\right)^{2}+ \zeta'\left(u\right)+\zeta'\left(v\right)+\zeta'\left(w\right)=0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS2">
+<title>Duplication Formulas</title>        
+  
+<para xml:id="C23.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C23.S10.SS2.p1.s1">
+ <Math equation-number="23.10.7" mode="display" xml:id="C23.S10.E7">\wp\left(2z\right)=-2\wp\left(z\right)+\frac{1}{4}\left(\frac{\wp''\left(z \right)}{\wp'\left(z\right)}\right)^{2},</Math> <Math equation-number="23.10.8" mode="display" xml:id="C23.S10.E8">(\wp\left(2z\right)-e_{1}){\wp'}^{2}(z)=\left((\wp\left(z\right)-e_{1})^{2}-(e _{1}-e_{2})(e_{1}-e_{3})\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C23.S10.SS2.p1.s2">
+(23.10.8)continues to hold when <Math mode="inline" xml:id="C23.S10.SS2.p1.m1">e_{1}</Math> , <Math mode="inline" xml:id="C23.S10.SS2.p1.m2">e_{2}</Math> , <Math mode="inline" xml:id="C23.S10.SS2.p1.m3">e_{3}</Math> are permuted cyclically.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C23.S10.SS2.p1.s3">
+<Math equation-number="23.10.9" mode="display" xml:id="C23.S10.E9">\zeta\left(2z\right)=2\zeta\left(z\right)+\frac{1}{2}\frac{\zeta'''\left(z \right)}{\zeta''\left(z\right)},</Math> <Math equation-number="23.10.10" mode="display" xml:id="C23.S10.E10">\sigma\left(2z\right)=-\wp'\left(z\right){\sigma^{4}}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS3">
+<title><Math mode="inline" xml:id="C23.S10.SS3.m1">n</Math>-Tuple Formulas</title>         
+ 
+<para xml:id="C23.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C23.S10.SS3.p1.s1">
+For <Math mode="inline" xml:id="C23.S10.SS3.p1.m1">n=2,3,\dots</Math> , <Math equation-number="23.10.11" mode="display" xml:id="C23.S10.E11">n^{2}\wp\left(nz\right)=\sum_{j=0}^{n-1}\sum_{\ell=0}^{n-1}\wp\left(z+\frac{2j }{n}\omega_{1}+\frac{2\ell}{n}\omega_{3}\right),</Math> <Math equation-number="23.10.12" mode="display" xml:id="C23.S10.E12">n\zeta\left(nz\right)=-n(n-1)(\eta_{1}+\eta_{3})+\sum_{j=0}^{n-1}\sum_{\ell=0} ^{n-1}\zeta\left(z+\frac{2j}{n}\omega_{1}+\frac{2\ell}{n}\omega_{3}\right),</Math> <Math equation-number="23.10.13" mode="display" xml:id="C23.S10.E13">\sigma\left(nz\right)=A_{n}e^{-n(n-1)(\eta_{1}+\eta_{3})z}\prod_{j=0}^{n-1} \prod_{\ell=0}^{n-1}\sigma\left(z+\frac{2j}{n}\omega_{1}+\frac{2\ell}{n}\omega _{3}\right),</Math> where <Math equation-number="23.10.14" mode="display" xml:id="C23.S10.E14">A_{n}=n\prod_{j=0}^{n-1}\prod_{\begin{subarray}{c}\ell=0\\ \ell\neq j\end{subarray}}^{n-1}\frac{1}{\sigma\left((2j\omega_{1}+2\ell\omega_ {3})/n\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C23.S10.SS3.p1.s2">
+Equivalently,
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C23.S10.SS3.p2.s1">
+ <Math equation-number="23.10.15" mode="display" xml:id="C23.S10.E15">A_{n}=\left(\frac{\pi^{2}G^{2}}{\omega_{1}}\right)^{n^{2}-1}\frac{q^{n(n-1)/2} }{i^{n-1}}\exp\left(-\frac{(n-1)\eta_{1}}{3\omega_{1}}\left((2n-1)(\omega_{1}^ {2}+\omega_{3}^{2})+3(n-1)\omega_{1}\omega_{3}\right)\right),</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C23.S10.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C23.S10.SS3.p3.s1">
+where <Math equation-number="23.10.16" mode="display" xml:id="C23.S10.E16">q=e^{\pi i\omega_{3}/\omega_{1}},G=\prod_{n=1}^{\infty}(1-q^{2n})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S10.SS4">
+<title>Homogeneity</title>        
+  
+<para xml:id="C23.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C23.S10.SS4.p1.s1">
+For any nonzero real or complex constant <Math mode="inline" xml:id="C23.S10.SS4.p1.m1">c</Math> <Math equation-number="23.10.17" mode="display" xml:id="C23.S10.E17">\wp\left(cz|c\mathbb{L}\right)=c^{-2}\wp\left(z|\mathbb{L}\right),</Math> , <Math equation-number="23.10.18" mode="display" xml:id="C23.S10.E18">\zeta\left(cz|c\mathbb{L}\right)=c^{-1}\zeta\left(z|\mathbb{L}\right),</Math> , <Math equation-number="23.10.19" mode="display" xml:id="C23.S10.E19">\sigma\left(cz|c\mathbb{L}\right)=c\sigma\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C23.S10.SS4.p1.s2">
+Also, when <Math mode="inline" xml:id="C23.S10.SS4.p1.m2">\mathbb{L}</Math> is replaced by <Math mode="inline" xml:id="C23.S10.SS4.p1.m3">c\mathbb{L}</Math> the lattice invariants <Math mode="inline" xml:id="C23.S10.SS4.p1.m4">g_{2}</Math> and <Math mode="inline" xml:id="C23.S10.SS4.p1.m5">g_{3}</Math> are divided by <Math mode="inline" xml:id="C23.S10.SS4.p1.m6">c^{4}</Math> and <Math mode="inline" xml:id="C23.S10.SS4.p1.m7">c^{6}</Math> , respectively.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C23.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C23.S10.SS4.p2.s1">
+For these results and further identities see Lawden (1989, §6.6) andApostol (1990, p. 14).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

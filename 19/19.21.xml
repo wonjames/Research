@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S21">
+<title>Connection Formulas</title>          
+<subsection xml:id="C19.S21.SS1">
+<title>Complete Integrals</title>        
+ 
+<para xml:id="C19.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S21.SS1.p1.s1">
+Legendre’s relation (19.7.1) can be written <Math equation-number="19.21.1" mode="display" xml:id="C19.S21.E1">R_{F}\left(0,z+1,z\right)R_{D}\left(0,z+1,1\right)+R_{D}\left(0,z+1,z\right)R_ {F}\left(0,z+1,1\right)=3\pi/(2z), if z\in\mathbb{C}\setminus(-\infty,0]</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S21.SS1.p1.s2">
+The case <Math mode="inline" xml:id="C19.S21.SS1.p1.m1">z=1</Math> shows that the product of the two lemniscate constants, (19.20.2) and (19.20.22), is <Math mode="inline" xml:id="C19.S21.SS1.p1.m2">\pi/4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S21.SS1.p1.s3">
+<Math equation-number="19.21.2" mode="display" xml:id="C19.S21.E2">3\!R_{F}\left(0,y,z\right)=zR_{D}\left(0,y,z\right)+yR_{D}\left(0,z,y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S21.SS1.p1.s4">
+<Math equation-number="19.21.3" mode="display" xml:id="C19.S21.E3">6\!R_{G}\left(0,y,z\right)=yz(R_{D}\left(0,y,z\right)+R_{D}\left(0,z,y\right)) =3zR_{F}\left(0,y,z\right)+z(y-z)R_{D}\left(0,y,z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S21.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C19.S21.SS1.p2.s1">
+The complete cases of <Math mode="inline" xml:id="C19.S21.SS1.p2.m1">R_{F}</Math> and <Math mode="inline" xml:id="C19.S21.SS1.p2.m2">R_{G}</Math> have connection formulas resulting from those for the Gauss hypergeometric function (Erdélyi et al. (1953a, §2.9)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C19.S21.SS1.p2.s2">
+Upper signs apply if <Math mode="inline" xml:id="C19.S21.SS1.p2.m3">0&lt;\operatorname{ph}z&lt;\pi</Math> , and lower signs if <Math mode="inline" xml:id="C19.S21.SS1.p2.m4">-\pi&lt;\operatorname{ph}z&lt;0</Math> : <Math equation-number="19.21.4" mode="display" xml:id="C19.S21.E4">R_{F}\left(0,z-1,z\right)=R_{F}\left(0,1-z,1\right)\mp\mathrm{i}\!R_{F}\left(0 ,z,1\right),</Math> <Math equation-number="19.21.5" mode="display" xml:id="C19.S21.E5">2\!R_{G}\left(0,z-1,z\right)=2\!R_{G}\left(0,1-z,1\right)\pm\mathrm{i}2\!R_{G} \left(0,z,1\right)+(z-1)R_{F}\left(0,1-z,1\right)\mp\mathrm{i}z\!R_{F}\left(0, z,1\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S21.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S21.SS1.p3.s1">
+Let <Math mode="inline" xml:id="C19.S21.SS1.p3.m1">y</Math> , <Math mode="inline" xml:id="C19.S21.SS1.p3.m2">z</Math> , and <Math mode="inline" xml:id="C19.S21.SS1.p3.m3">p</Math> be positive and distinct, and permute <Math mode="inline" xml:id="C19.S21.SS1.p3.m4">y</Math> and <Math mode="inline" xml:id="C19.S21.SS1.p3.m5">z</Math> to ensure that <Math mode="inline" xml:id="C19.S21.SS1.p3.m6">y</Math> does not lie between <Math mode="inline" xml:id="C19.S21.SS1.p3.m7">z</Math> and <Math mode="inline" xml:id="C19.S21.SS1.p3.m8">p</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C19.S21.SS1.p3.s2">
+The complete case of <Math mode="inline" xml:id="C19.S21.SS1.p3.m9">R_{J}</Math> can be expressed in terms of <Math mode="inline" xml:id="C19.S21.SS1.p3.m10">R_{F}</Math> and <Math mode="inline" xml:id="C19.S21.SS1.p3.m11">R_{D}</Math> : <Math equation-number="19.21.6" mode="display" xml:id="C19.S21.E6">(\sqrt{rp}/z)R_{J}\left(0,y,z,p\right)={(r-1)}R_{F}\left(0,y,z\right)R_{D} \left(p,rz,z\right)+R_{D}\left(0,y,z\right)R_{F}\left(p,rz,z\right), if r=(y-p)/(y-z)&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C19.S21.SS1.p3.s3">
+If <Math mode="inline" xml:id="C19.S21.SS1.p3.m12">0&lt;p&lt;z</Math> and <Math mode="inline" xml:id="C19.S21.SS1.p3.m13">y=z+1</Math> , then as <Math mode="inline" xml:id="C19.S21.SS1.p3.m14">p\to 0</Math> (19.21.6) reduces to Legendre’s relation (19.21.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S21.SS2">
+<title>Incomplete Integrals</title>         
+<para xml:id="C19.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C19.S21.SS2.p1.s1">
+ <Math mode="inline" xml:id="C19.S21.SS2.p1.m1">R_{D}\left(x,y,z\right)</Math> is symmetric only in <Math mode="inline" xml:id="C19.S21.SS2.p1.m2">x</Math> and <Math mode="inline" xml:id="C19.S21.SS2.p1.m3">y</Math> , but either (nonzero) <Math mode="inline" xml:id="C19.S21.SS2.p1.m4">x</Math> or (nonzero) <Math mode="inline" xml:id="C19.S21.SS2.p1.m5">y</Math> can be moved to the third position by using <Math equation-number="19.21.7" mode="display" xml:id="C19.S21.E7">(x-y)R_{D}\left(y,z,x\right)+(z-y)R_{D}\left(x,y,z\right)=3\!R_{F}\left(x,y,z \right)-3\sqrt{y/(xz)},</Math> or the corresponding equation with <Math mode="inline" xml:id="C19.S21.SS2.p1.m6">x</Math> and <Math mode="inline" xml:id="C19.S21.SS2.p1.m7">y</Math> interchanged. <Math equation-number="19.21.8" mode="display" xml:id="C19.S21.E8">R_{D}\left(y,z,x\right)+R_{D}\left(z,x,y\right)+R_{D}\left(x,y,z\right)=3(xyz) ^{-1/2},</Math> , <Math equation-number="19.21.9" mode="display" xml:id="C19.S21.E9">xR_{D}\left(y,z,x\right)+yR_{D}\left(z,x,y\right)+zR_{D}\left(x,y,z\right)=3\! R_{F}\left(x,y,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C19.S21.SS2.p1.s2">
+<Math equation-number="19.21.10" mode="display" xml:id="C19.S21.E10">2\!R_{G}\left(x,y,z\right)=zR_{F}\left(x,y,z\right)-\tfrac{1}{3}(x-z)(y-z)R_{D }\left(x,y,z\right)+\sqrt{xy/z}, if z\neq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C19.S21.SS2.p1.s3">
+Because <Math mode="inline" xml:id="C19.S21.SS2.p1.m8">R_{G}</Math> is completely symmetric, <Math mode="inline" xml:id="C19.S21.SS2.p1.m9">x,y,z</Math> can be permuted on the right-hand side of (19.21.10) so that <Math mode="inline" xml:id="C19.S21.SS2.p1.m10">(x-z)(y-z)\leq 0</Math> if the variables are real, thereby avoiding cancellations when <Math mode="inline" xml:id="C19.S21.SS2.p1.m11">R_{G}</Math> is calculated from <Math mode="inline" xml:id="C19.S21.SS2.p1.m12">R_{F}</Math> and <Math mode="inline" xml:id="C19.S21.SS2.p1.m13">R_{D}</Math> (see §19.36(i)).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C19.S21.SS2.p1.s4">
+<Math equation-number="19.21.11" mode="display" xml:id="C19.S21.E11">6\!R_{G}\left(x,y,z\right)=3(x+y+z)R_{F}\left(x,y,z\right)-\sum x^{2}R_{D} \left(y,z,x\right)=\sum x(y+z)R_{D}\left(y,z,x\right),</Math> where both summations extend over the three cyclic permutations of <Math mode="inline" xml:id="C19.S21.SS2.p1.m14">x,y,z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S21.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C19.S21.SS2.p2.s1">
+Connection formulas for <Math mode="inline" xml:id="C19.S21.SS2.p2.m1">R_{-a}\left(\mathbf{b};\mathbf{z}\right)</Math> are given inCarlson (1977b, pp. 99, 101, and 123–124).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S21.SS3">
+<title>Change of Parameter of <Math mode="inline" xml:id="C19.S21.SS3.m1">R_{J}</Math></title>          
+<para xml:id="C19.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C19.S21.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C19.S21.SS3.p1.m1">x,y,z</Math> be real and nonnegative, with at most one of them 0. Change-of-parameter relations can be used to shift the parameter <Math mode="inline" xml:id="C19.S21.SS3.p1.m2">p</Math> of <Math mode="inline" xml:id="C19.S21.SS3.p1.m3">R_{J}</Math> from either circular region to the other, or from either hyperbolic region to the other (§19.20(iii)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C19.S21.SS3.p1.s2">
+The latter case allows evaluation of Cauchy principal values (see (19.20.14)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C19.S21.SS3.p1.s3">
+<Math equation-number="19.21.12" mode="display" xml:id="C19.S21.E12">(p-x)R_{J}\left(x,y,z,p\right)+(q-x)R_{J}\left(x,y,z,q\right)=3\!R_{F}\left(x, y,z\right)-3\!R_{C}\left(\xi,\eta\right),</Math> where <Math equation-number="19.21.13" mode="display" xml:id="C19.S21.E13">(p-x)(q-x)=(y-x)(z-x),\xi=yz/x,\eta=pq/x,</Math> and <Math mode="inline" xml:id="C19.S21.SS3.p1.m4">x,y,z</Math> may be permuted. Also, <Math equation-number="19.21.14" mode="display" xml:id="C19.S21.E14">\eta-\xi=p+q-y-z=\frac{(p-y)(p-z)}{p-x}=\frac{(q-y)(q-z)}{q-x}=\frac{(p-y)(q-y )}{x-y}=\frac{(p-z)(q-z)}{x-z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S21.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C19.S21.SS3.p2.s1">
+For each value of <Math mode="inline" xml:id="C19.S21.SS3.p2.m1">p</Math> , permutation of <Math mode="inline" xml:id="C19.S21.SS3.p2.m2">x,y,z</Math> produces three values of <Math mode="inline" xml:id="C19.S21.SS3.p2.m3">q</Math> , one of which lies in the same region as <Math mode="inline" xml:id="C19.S21.SS3.p2.m4">p</Math> and two lie in the other region of the same type.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C19.S21.SS3.p2.s2">
+In (19.21.12), if <Math mode="inline" xml:id="C19.S21.SS3.p2.m5">x</Math> is the largest (smallest) of <Math mode="inline" xml:id="C19.S21.SS3.p2.m6">x,y</Math> , and <Math mode="inline" xml:id="C19.S21.SS3.p2.m7">z</Math> , then <Math mode="inline" xml:id="C19.S21.SS3.p2.m8">p</Math> and <Math mode="inline" xml:id="C19.S21.SS3.p2.m9">q</Math> lie in the same region if it is circular (hyperbolic); otherwise <Math mode="inline" xml:id="C19.S21.SS3.p2.m10">p</Math> and <Math mode="inline" xml:id="C19.S21.SS3.p2.m11">q</Math> lie in different regions, both circular or both hyperbolic.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C19.S21.SS3.p2.s3">
+If <Math mode="inline" xml:id="C19.S21.SS3.p2.m12">x=0</Math> , then <Math mode="inline" xml:id="C19.S21.SS3.p2.m13">\xi=\eta=\infty</Math> and <Math mode="inline" xml:id="C19.S21.SS3.p2.m14">R_{C}\left(\xi,\eta\right)=0</Math> ; hence <Math equation-number="19.21.15" mode="display" xml:id="C19.S21.E15">pR_{J}\left(0,y,z,p\right)+qR_{J}\left(0,y,z,q\right)=3\!R_{F}\left(0,y,z \right), if pq=yz</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

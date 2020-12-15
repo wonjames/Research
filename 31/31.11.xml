@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S11">
+<title>Expansions in Series of Hypergeometric Functions</title>          
+ 
+<subsection xml:id="C31.S11.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C31.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S11.SS1.p1.s1">
+The formulas in this section are given in Svartholm (1939) andErdélyi (1942b, 1944).
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C31.S11.SS1.p2.s1">
+The series of Type I (§31.11(iii))are useful since they represent the functions in large domains.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C31.S11.SS1.p2.s2">
+Series of Type II (§31.11(iv)) are expansions in orthogonal polynomials, which are useful in calculations of normalization integrals for Heun functions; see Erdélyi (1944) and §31.9(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C31.S11.SS1.p3.s1">
+For other expansions see §31.16(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS2">
+<title>General Form</title>        
+ 
+<para xml:id="C31.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C31.S11.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C31.S11.SS2.p1.m1">w(z)</Math> be any Fuchs–Frobenius solution of Heun’s equation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C31.S11.SS2.p1.s2">
+Expand <Math equation-number="31.11.1" mode="display" xml:id="C31.S11.E1">w(z)=\sum_{j=0}^{\infty}c_{j}P_{j},</Math> where (§15.11(i))
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C31.S11.SS2.p1.s3">
+<Math equation-number="31.11.2" mode="display" xml:id="C31.S11.E2">P_{j}=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;\lambda+j&amp;z\\ 1-\gamma&amp;1-\delta&amp;\mu-j&amp;\end{Bmatrix},</Math> with <Math equation-number="31.11.3" mode="display" xml:id="C31.S11.E3">\lambda+\mu=\gamma+\delta-1=\alpha+\beta-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C31.S11.SS2.p1.s4">
+The coefficients <Math mode="inline" xml:id="C31.S11.SS2.p1.m2">c_{j}</Math> satisfy the equations <Math equation-number="31.11.4" mode="display" xml:id="C31.S11.E4">L_{0}c_{0}+M_{0}c_{1}=0,</Math> <Math equation-number="31.11.5" mode="display" xml:id="C31.S11.E5">K_{j}c_{j-1}+L_{j}c_{j}+M_{j}c_{j+1}=0, if j=1,2,\dots,</Math> where
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S11.SS2.p2.s1">
+ <Math equation-number="31.11.6" mode="display" xml:id="C31.S11.E6">K_{j}=-\frac{(j+\alpha-\mu-1)(j+\beta-\mu-1)(j+\gamma-\mu-1)(j+\lambda-1)}{(2j +\lambda-\mu-1)(2j+\lambda-\mu-2)},</Math> , <Math equation-number="31.11.7" mode="display" xml:id="C31.S11.E7">L_{j}=a(\lambda+j)(\mu-j)-q+\frac{(j+\alpha-\mu)(j+\beta-\mu)(j+\gamma-\mu)(j+ \lambda)}{(2j+\lambda-\mu)(2j+\lambda-\mu+1)}+\frac{(j-\alpha+\lambda)(j-\beta +\lambda)(j-\gamma+\lambda)(j-\mu)}{(2j+\lambda-\mu)(2j+\lambda-\mu-1)},</Math> , <Math equation-number="31.11.8" mode="display" xml:id="C31.S11.E8">M_{j}=-\frac{(j-\alpha+\lambda+1)(j-\beta+\lambda+1)(j-\gamma+\lambda+1)(j-\mu +1)}{(2j+\lambda-\mu+1)(2j+\lambda-\mu+2)}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C31.S11.SS2.p3.s1">
+ <Math mode="inline" xml:id="C31.S11.SS2.p3.m1">\lambda</Math> , <Math mode="inline" xml:id="C31.S11.SS2.p3.m2">\mu</Math> must also satisfy the condition <Math equation-number="31.11.9" mode="display" xml:id="C31.S11.E9">M_{-1}P_{-1}=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS3">
+<title>Type I</title>        
+ 
+<para xml:id="C31.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C31.S11.SS3.p1.s1">
+Here <Math equation-number="31.11.10" mode="display" xml:id="C31.S11.E10">\lambda=\alpha,\mu=\beta-\epsilon,</Math> or <Math equation-number="31.11.11" mode="display" xml:id="C31.S11.E11">\lambda=\beta,\mu=\alpha-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C31.S11.SS3.p1.s2">
+Then condition (31.11.9) is satisfied.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C31.S11.SS3.p2.s1">
+Every Fuchs–Frobenius solution of Heun’s equation (31.2.1) can berepresented by a series of Type I.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C31.S11.SS3.p2.s2">
+For instance, choose (31.11.10).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C31.S11.SS3.p2.s3">
+Then the Fuchs–Frobenius solution at <Math mode="inline" xml:id="C31.S11.SS3.p2.m1">\infty</Math> belonging to the exponent <Math mode="inline" xml:id="C31.S11.SS3.p2.m2">\alpha</Math> has the expansion (31.11.1) with <Math equation-number="31.11.12" mode="display" xml:id="C31.S11.E12">P_{j}=\frac{\Gamma\left(\alpha+j\right)\Gamma\left(1-\gamma+\alpha+j\right)}{ \Gamma\left(1+\alpha-\beta+\epsilon+2j\right)}z^{-\alpha-j}\*{{}_{2}F_{1}} \left({\alpha+j,1-\gamma+\alpha+j\atop 1+\alpha-\beta+\epsilon+2j};\frac{1}{z} \right),</Math> and (31.11.1) converges outside the ellipse <Math mode="inline" xml:id="C31.S11.SS3.p2.m3">\mathcal{E}</Math> in the <Math mode="inline" xml:id="C31.S11.SS3.p2.m4">z</Math> -plane with foci at 0, 1, and passing through the third finite singularity at <Math mode="inline" xml:id="C31.S11.SS3.p2.m5">z=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C31.S11.SS3.p3.s1">
+Every Heun function (§31.4) can be represented by a series of Type I convergent in the whole plane cut along a line joining the two singularities of the Heun function.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C31.S11.SS3.p4.s1">
+For example, consider the Heun function which is analytic at <Math mode="inline" xml:id="C31.S11.SS3.p4.m1">z=a</Math> and has exponent <Math mode="inline" xml:id="C31.S11.SS3.p4.m2">\alpha</Math> at <Math mode="inline" xml:id="C31.S11.SS3.p4.m3">\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C31.S11.SS3.p4.s2">
+The expansion (31.11.1) with (31.11.12) is convergent in the plane cut along the line joining the two singularities <Math mode="inline" xml:id="C31.S11.SS3.p4.m4">z=0</Math> and <Math mode="inline" xml:id="C31.S11.SS3.p4.m5">z=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C31.S11.SS3.p4.s3">
+In this case the accessory parameter <Math mode="inline" xml:id="C31.S11.SS3.p4.m6">q</Math> is a root of the continued-fraction equation <Math equation-number="31.11.13" mode="display" xml:id="C31.S11.E13">\left(L_{0}/M_{0}\right)-\cfrac{K_{1}/M_{1}}{L_{1}/M_{1}-\cfrac{K_{2}/M_{2}}{L _{2}/M_{2}-\cdots}}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="20" xml:id="C31.S11.SS3.p4.s4">
+The case <Math mode="inline" xml:id="C31.S11.SS3.p4.m7">\alpha=-n</Math> for nonnegative integer <Math mode="inline" xml:id="C31.S11.SS3.p4.m8">n</Math> corresponds to the Heun polynomial <Math mode="inline" xml:id="C31.S11.SS3.p4.m9">\mathit{Hp}_{n,m}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S11.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C31.S11.SS3.p5.s1">
+The expansion (31.11.1) for a Heun function that is associated with any branch of (31.11.2)—other than a multiple of the right-hand side of (31.11.12)—is convergent inside the ellipse <Math mode="inline" xml:id="C31.S11.SS3.p5.m1">\mathcal{E}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS4">
+<title>Type II</title>        
+ 
+<para xml:id="C31.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C31.S11.SS4.p1.s1">
+Here one of the following four pairs of conditions is satisfied: <Math equation-number="31.11.14" mode="display" xml:id="C31.S11.E14">\lambda=\gamma+\delta-1,\mu=0,</Math> , <Math equation-number="31.11.15" mode="display" xml:id="C31.S11.E15">\lambda=\gamma,\mu=\delta-1,</Math> , <Math equation-number="31.11.16" mode="display" xml:id="C31.S11.E16">\lambda=\delta,\mu=\gamma-1,</Math> , <Math equation-number="31.11.17" mode="display" xml:id="C31.S11.E17">\lambda=1,\mu=\gamma+\delta-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C31.S11.SS4.p1.s2">
+In each case <Math mode="inline" xml:id="C31.S11.SS4.p1.m1">P_{j}</Math> can be expressed in terms of a Jacobi polynomial (§18.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C31.S11.SS4.p1.s3">
+Such series diverge for Fuchs–Frobenius solutions.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="25" xml:id="C31.S11.SS4.p1.s4">
+ForHeun functions they are convergent inside the ellipse <Math mode="inline" xml:id="C31.S11.SS4.p1.m2">\mathcal{E}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="26" xml:id="C31.S11.SS4.p1.s5">
+Every Heun function can be represented by a series of Type II.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S11.SS5">
+<title>Doubly-Infinite Series</title>        
+  
+<para xml:id="C31.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C31.S11.SS5.p1.s1">
+Schmidt (1979) gives expansions of path-multiplicative solutions (§31.6) in terms of doubly-infinite series of hypergeometric functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

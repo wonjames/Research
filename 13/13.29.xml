@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C13.S29">
+<title>Methods of Computation</title>         
+<subsection xml:id="C13.S29.SS1">
+<title>Series Expansions</title>         
+<para xml:id="C13.S29.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C13.S29.SS1.p1.s1">
+Although the Maclaurin series expansion (13.2.2) converges for all finite values of <Math mode="inline" xml:id="C13.S29.SS1.p1.m1">z</Math> , it is cumbersome to use when <Math mode="inline" xml:id="C13.S29.SS1.p1.m2">|z|</Math> is large owing to slowness of convergence and cancellation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C13.S29.SS1.p1.s2">
+For large <Math mode="inline" xml:id="C13.S29.SS1.p1.m3">|z|</Math> the asymptotic expansions of §13.7 should be used instead.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C13.S29.SS1.p1.s3">
+Accuracy is limited by the magnitude of <Math mode="inline" xml:id="C13.S29.SS1.p1.m4">|z|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C13.S29.SS1.p1.s4">
+However, this accuracy can be increased considerably by use of the exponentially-improved forms of expansion supplied by the combination of (13.7.10) and (13.7.11), or by use of the hyperasymptotic expansions given in Olde Daalhuis and Olver (1995a).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C13.S29.SS1.p1.s5">
+For large values of the parameters <Math mode="inline" xml:id="C13.S29.SS1.p1.m5">a</Math> and <Math mode="inline" xml:id="C13.S29.SS1.p1.m6">b</Math> the approximations in §13.8 are available.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S29.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C13.S29.SS1.p2.s1">
+Similarly for the Whittaker functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S29.SS2">
+<title>Differential Equations</title>         
+<para xml:id="C13.S29.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C13.S29.SS2.p1.s1">
+A comprehensive and powerful approach is to integrate the differential equations (13.2.1) and (13.14.1) by direct numericalmethods.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C13.S29.SS2.p1.s2">
+As described in §3.7(ii), to insure stability the integration path must be chosen in such a way that as we proceed along it the wanted solution grows in magnitude at least as fast as all other solutions of the differential equation.
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S29.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C13.S29.SS2.p2.s1">
+For <Math mode="inline" xml:id="C13.S29.SS2.p2.m1">M\left(a,b,z\right)</Math> and <Math mode="inline" xml:id="C13.S29.SS2.p2.m2">M_{\kappa,\mu}\left(z\right)</Math> this means that in the sector <Math mode="inline" xml:id="C13.S29.SS2.p2.m3">|\operatorname{ph}z|\leq\pi</Math> we may integrate along outward rays from the origin with initial values obtained from (13.2.2) and (13.14.2).
+</sentence>
+
+</para>
+ 
+<para xml:id="C13.S29.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C13.S29.SS2.p3.s1">
+For <Math mode="inline" xml:id="C13.S29.SS2.p3.m1">U\left(a,b,z\right)</Math> and <Math mode="inline" xml:id="C13.S29.SS2.p3.m2">W_{\kappa,\mu}\left(z\right)</Math> we may integrate along outward rays from the origin in the sectors <Math mode="inline" xml:id="C13.S29.SS2.p3.m3">\tfrac{1}{2}\pi&lt;|\operatorname{ph}z|&lt;\tfrac{3}{2}\pi</Math> , with initial values obtained from connection formulas in §13.2(vii), §13.14(vii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C13.S29.SS2.p3.s2">
+In the sector <Math mode="inline" xml:id="C13.S29.SS2.p3.m4">|\operatorname{ph}z|&lt;\tfrac{1}{2}\pi</Math> the integration has to be towards the origin, with starting values computed from asymptotic expansions (§§13.7 and 13.19).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C13.S29.SS2.p3.s3">
+On the rays <Math mode="inline" xml:id="C13.S29.SS2.p3.m5">\operatorname{ph}z=\pm\tfrac{1}{2}\pi</Math> , integration can proceed in either direction.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S29.SS3">
+<title>Integral Representations</title>         
+<para xml:id="C13.S29.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C13.S29.SS3.p1.s1">
+The integral representations (13.4.1) and (13.4.4) can be used to compute the Kummer functions, and (13.16.1) and (13.16.5) for the Whittaker functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C13.S29.SS3.p1.s2">
+In Allasia and Besenghi (1991) andAllasia and Besenghi (1987a) the high accuracy of the trapezoidalrule for the computation of Kummer functions is described. Gauss quadrature methods are discussed in Gautschi (2002b).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S29.SS4">
+<title>Recurrence Relations</title>         
+<para xml:id="C13.S29.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C13.S29.SS4.p1.s1">
+The recurrence relations in §§13.3(i) and 13.15(i) can be used to compute the confluent hypergeometric functions in an efficient way.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C13.S29.SS4.p1.s2">
+In the following two examples Olver’s algorithm (§3.6(v)) can be used.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C13.S29.Px1">
+<title>Example 1</title>   
+<para xml:id="C13.S29.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C13.S29.Px1.p1.s1">
+We assume <Math mode="inline" xml:id="C13.S29.Px1.p1.m1">2\mu\neq-1,-2,-3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C13.S29.Px1.p1.s2">
+Then we have <Math equation-number="13.29.1" mode="display" xml:id="C13.S29.E1">\frac{z^{2}(n+\mu-\tfrac{1}{2})\left((n+\mu+\tfrac{1}{2})^{2}-\kappa^{2}\right )}{(n+\mu)(n+\mu+\tfrac{1}{2})(n+\mu+1)}{y(n+1)}+16\left((n+\mu)^{2}-\tfrac{1} {2}\kappa z-\tfrac{1}{4}\right)y(n)\\ -16\left((n+\mu)^{2}-\tfrac{1}{4}\right)y(n-1)=0,</Math> with recessive solution <Math equation-number="13.29.2" mode="display" xml:id="C13.S29.E2">y(n)=z^{-n-\mu-\frac{1}{2}}M_{\kappa,n+\mu}\left(z\right),</Math> normalizing relation <Math equation-number="13.29.3" mode="display" xml:id="C13.S29.E3">e^{-\frac{1}{2}z}=\sum_{s=0}^{\infty}\frac{{\left(2\mu\right)_{s}}{\left(\frac {1}{2}+\mu-\kappa\right)_{s}}}{{\left(2\mu\right)_{2s}}s!}(-z)^{s}y(s)</Math> , and estimate <Math equation-number="13.29.4" mode="display" xml:id="C13.S29.E4">y(n)=1+O\left(n^{-1}\right), if n\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C13.S29.Px2">
+<title>Example 2</title>   
+<para xml:id="C13.S29.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C13.S29.Px2.p1.s1">
+We assume <Math mode="inline" xml:id="C13.S29.Px2.p1.m1">a,a+1-b\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C13.S29.Px2.p1.s2">
+Then we have <Math equation-number="13.29.5" mode="display" xml:id="C13.S29.E5">(n+a)w(n)-\left(2(n+a+1)+z-b\right)w(n+1)+(n+a-b+2)w(n+2)=0,</Math> with recessive solution <Math equation-number="13.29.6" mode="display" xml:id="C13.S29.E6">w(n)={\left(a\right)_{n}}U\left(n+a,b,z\right),</Math> normalizing relation <Math equation-number="13.29.7" mode="display" xml:id="C13.S29.E7">z^{-a}=\sum_{s=0}^{\infty}\frac{{\left(a-b+1\right)_{s}}}{s!}w(s)</Math> , and estimate <Math equation-number="13.29.8" mode="display" xml:id="C13.S29.E8">w(n)\sim\frac{\sqrt{\pi}e^{\frac{1}{2}z}z^{\frac{1}{4}(4a-2b+1)}}{\Gamma\left( a\right)\Gamma\left(a+1-b\right)}n^{\frac{1}{4}(4a-2b-3)}e^{-2\sqrt{nz}},</Math> as <Math mode="inline" xml:id="C13.S29.Px2.p1.m2">n\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C13.S29.Px2.p1.s3">
+SeeTemme (1983), and also Wimp (1984, Chapter 5) and Deaño et al. (2010).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C13.S29.SS5">
+<title>Continued Fractions</title>        
+ 
+<para xml:id="C13.S29.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C13.S29.SS5.p1.s1">
+In Colman et al. (2011) an algorithm is described that uses expansions in continued fractions for high-precision computation of <Math mode="inline" xml:id="C13.S29.SS5.p1.m1">M\left(n,b,x\right)</Math> , when <Math mode="inline" xml:id="C13.S29.SS5.p1.m2">b</Math> and <Math mode="inline" xml:id="C13.S29.SS5.p1.m3">x</Math> are real and <Math mode="inline" xml:id="C13.S29.SS5.p1.m4">n</Math> is a positive integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C13.S29.SS5.p1.s2">
+The accuracy is controlled and validated by a running error analysis coupled with interval arithmetic.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C28.S23">
+<title>Expansions in Series of Bessel Functions</title>        
+   
+<para xml:id="C28.S23.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C28.S23.p1.s1">
+We use the following notations: <Math equation-number="28.23.1" mode="display" xml:id="C28.S23.E1">{\cal C}_{\mu}^{(1)}=J_{\mu},{\cal C}_{\mu}^{(2)}=Y_{\mu},{\cal C}_{\mu}^{(3)}={H^{(1)}_{\mu}},{\cal C}_{\mu}^{(4)}={H^{(2)}_{\mu}};</Math> compare §10.2(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C28.S23.p1.s2">
+For the coefficients <Math mode="inline" xml:id="C28.S23.p1.m1">c^{\nu}_{n}(q)</Math> see §28.14.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C28.S23.p1.s3">
+For <Math mode="inline" xml:id="C28.S23.p1.m2">A_{n}^{m}(q)</Math> and <Math mode="inline" xml:id="C28.S23.p1.m3">B_{n}^{m}(q)</Math> see §28.4.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C28.S23.p1.s4">
+<Math equation-number="28.23.2" mode="display" xml:id="C28.S23.E2">\mathrm{me}_{\nu}\left(0,h^{2}\right){\mathrm{M}^{(j)}_{\nu}}\left(z,h\right)= \sum_{n=-\infty}^{\infty}(-1)^{n}c_{2n}^{\nu}(h^{2}){\cal C}_{\nu+2n}^{(j)}(2h \cosh z),</Math> , <Math equation-number="28.23.3" mode="display" xml:id="C28.S23.E3">\mathrm{me}_{\nu}'\left(0,h^{2}\right){\mathrm{M}^{(j)}_{\nu}}\left(z,h\right) =\mathrm{i}\tanh z\sum_{n=-\infty}^{\infty}(-1)^{n}(\nu+2n)c_{2n}^{\nu}(h^{2}) {\cal C}_{\nu+2n}^{(j)}(2h\cosh z),</Math> valid for all <Math mode="inline" xml:id="C28.S23.p1.m4">z</Math> when <Math mode="inline" xml:id="C28.S23.p1.m5">j=1</Math> , and for <Math mode="inline" xml:id="C28.S23.p1.m6">\Re z&gt;0</Math> and <Math mode="inline" xml:id="C28.S23.p1.m7">|\cosh z|&gt;1</Math> when <Math mode="inline" xml:id="C28.S23.p1.m8">j=2,3,4</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C28.S23.p1.s5">
+<Math equation-number="28.23.4" mode="display" xml:id="C28.S23.E4">\mathrm{me}_{\nu}\left(\tfrac{1}{2}\pi,h^{2}\right){\mathrm{M}^{(j)}_{\nu}} \left(z,h\right)=e^{\mathrm{i}\nu\ifrac{\pi}{2}}\sum_{n=-\infty}^{\infty}c_{2n }^{\nu}(h^{2}){\cal C}_{\nu+2n}^{(j)}(2h\sinh z),</Math> , <Math equation-number="28.23.5" mode="display" xml:id="C28.S23.E5">\mathrm{me}_{\nu}'\left(\tfrac{1}{2}\pi,h^{2}\right){\mathrm{M}^{(j)}_{\nu}} \left(z,h\right)=\mathrm{i}e^{\mathrm{i}\nu\ifrac{\pi}{2}}\coth z\sum_{n=- \infty}^{\infty}(\nu+2n)c_{2n}^{\nu}(h^{2}){\cal C}_{\nu+2n}^{(j)}(2h\sinh z),</Math> valid for all <Math mode="inline" xml:id="C28.S23.p1.m9">z</Math> when <Math mode="inline" xml:id="C28.S23.p1.m10">j=1</Math> , and for <Math mode="inline" xml:id="C28.S23.p1.m11">\Re z&gt;0</Math> and <Math mode="inline" xml:id="C28.S23.p1.m12">|\sinh z|&gt;1</Math> when <Math mode="inline" xml:id="C28.S23.p1.m13">j=2,3,4</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S23.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C28.S23.p2.s1">
+In the case when <Math mode="inline" xml:id="C28.S23.p2.m1">\nu</Math> is an integer <Math equation-number="28.23.6" mode="display" xml:id="C28.S23.E6">{\mathrm{Mc}^{(j)}_{2m}}\left(z,h\right)=(-1)^{m}\left(\mathrm{ce}_{2m}\left(0 ,h^{2}\right)\right)^{-1}\sum_{\ell=0}^{\infty}(-1)^{\ell}A_{2\ell}^{2m}(h^{2} ){\cal C}_{2\ell}^{(j)}(2h\cosh z),</Math> , <Math equation-number="28.23.7" mode="display" xml:id="C28.S23.E7">{\mathrm{Mc}^{(j)}_{2m}}\left(z,h\right)=(-1)^{m}\left(\mathrm{ce}_{2m}\left( \tfrac{1}{2}\pi,h^{2}\right)\right)^{-1}\sum_{\ell=0}^{\infty}A_{2\ell}^{2m}(h ^{2}){\cal C}_{2\ell}^{(j)}(2h\sinh z),</Math> <Math equation-number="28.23.8" mode="display" xml:id="C28.S23.E8">{\mathrm{Mc}^{(j)}_{2m+1}}\left(z,h\right)=(-1)^{m}\left(\mathrm{ce}_{2m+1} \left(0,h^{2}\right)\right)^{-1}\sum_{\ell=0}^{\infty}(-1)^{\ell}A_{2\ell+1}^{ 2m+1}(h^{2}){\cal C}_{2\ell+1}^{(j)}(2h\cosh z),</Math> , <Math equation-number="28.23.9" mode="display" xml:id="C28.S23.E9">{\mathrm{Mc}^{(j)}_{2m+1}}\left(z,h\right)=(-1)^{m+1}\left(\mathrm{ce}_{2m+1}' \left(\tfrac{1}{2}\pi,h^{2}\right)\right)^{-1}\coth z\sum_{\ell=0}^{\infty}(2 \ell+1)A_{2\ell+1}^{2m+1}(h^{2}){\cal C}_{2\ell+1}^{(j)}(2h\sinh z),</Math> , <Math equation-number="28.23.10" mode="display" xml:id="C28.S23.E10">{\mathrm{Ms}^{(j)}_{2m+1}}\left(z,h\right)=(-1)^{m}\left(\mathrm{se}_{2m+1}' \left(0,h^{2}\right)\right)^{-1}\tanh z\sum_{\ell=0}^{\infty}(-1)^{\ell}(2\ell +1)B_{2\ell+1}^{2m+1}(h^{2}){\cal C}_{2\ell+1}^{(j)}(2h\cosh z),</Math> , <Math equation-number="28.23.11" mode="display" xml:id="C28.S23.E11">{\mathrm{Ms}^{(j)}_{2m+1}}\left(z,h\right)=(-1)^{m}\left(\mathrm{se}_{2m+1} \left(\tfrac{1}{2}\pi,h^{2}\right)\right)^{-1}\sum_{\ell=0}^{\infty}B_{2\ell+1 }^{2m+1}(h^{2}){\cal C}_{2\ell+1}^{(j)}(2h\sinh z),</Math> , <Math equation-number="28.23.12" mode="display" xml:id="C28.S23.E12">{\mathrm{Ms}^{(j)}_{2m+2}}\left(z,h\right)=(-1)^{m}\left(\mathrm{se}_{2m+2}' \left(0,h^{2}\right)\right)^{-1}\tanh z\sum_{\ell=0}^{\infty}(-1)^{\ell}(2\ell +2)B_{2\ell+2}^{2m+2}(h^{2}){\cal C}_{2\ell+2}^{(j)}(2h\cosh z),</Math> , <Math equation-number="28.23.13" mode="display" xml:id="C28.S23.E13">{\mathrm{Ms}^{(j)}_{2m+2}}\left(z,h\right)=(-1)^{m+1}\left(\mathrm{se}_{2m+2}' \left(\tfrac{1}{2}\pi,h^{2}\right)\right)^{-1}\coth z\sum_{\ell=0}^{\infty}(2 \ell+2)B_{2\ell+2}^{2m+2}(h^{2}){\cal C}_{2\ell+2}^{(j)}(2h\sinh z)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C28.S23.p2.s2">
+When <Math mode="inline" xml:id="C28.S23.p2.m2">j=1</Math> , each of the series (28.23.6)–(28.23.13) converges for all <Math mode="inline" xml:id="C28.S23.p2.m3">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C28.S23.p2.s3">
+When <Math mode="inline" xml:id="C28.S23.p2.m4">j=2,3,4</Math> the series in the even-numberedequations converge for <Math mode="inline" xml:id="C28.S23.p2.m5">\Re z&gt;0</Math> and <Math mode="inline" xml:id="C28.S23.p2.m6">|\cosh z|&gt;1</Math> , and the series in the odd-numbered equations converge for <Math mode="inline" xml:id="C28.S23.p2.m7">\Re z&gt;0</Math> and <Math mode="inline" xml:id="C28.S23.p2.m8">|\sinh z|&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C28.S23.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C28.S23.p3.s1">
+For proofs and generalizations, seeMeixner and Schäfke (1954, §§2.62 and 2.64).
+</sentence>
+
+</para>
+ 
+</section>

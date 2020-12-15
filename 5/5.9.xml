@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S9">
+<title>Integral Representations</title>          
+<subsection xml:id="C5.S9.SS1">
+<title>Gamma Function</title>         
+<para xml:id="C5.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S9.SS1.p1.s1">
+ <Math equation-number="5.9.1" mode="display" xml:id="C5.S9.E1">\frac{1}{\mu}\Gamma\left(\frac{\nu}{\mu}\right)\frac{1}{z^{\nu/\mu}}=\int_{0}^ {\infty}\exp\left(-zt^{\mu}\right)t^{\nu-1}\mathrm{d}t,</Math> <Math mode="inline" xml:id="C5.S9.SS1.p1.m1">\Re\nu&gt;0</Math> , <Math mode="inline" xml:id="C5.S9.SS1.p1.m2">\mu&gt;0</Math> , and <Math mode="inline" xml:id="C5.S9.SS1.p1.m3">\Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S9.SS1.p1.s2">
+(The fractional powers have their principal values.)
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C5.S9.Px1">
+<title>Hankel’s Loop Integral</title>    
+<para xml:id="C5.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C5.S9.Px1.p1.s1">
+ <Math equation-number="5.9.2" mode="display" xml:id="C5.S9.E2">\frac{1}{\Gamma\left(z\right)}=\frac{1}{2\pi i}\int_{-\infty}^{(0+)}e^{t}t^{-z }\mathrm{d}t,</Math> where the contour begins at <Math mode="inline" xml:id="C5.S9.Px1.p1.m6">-\infty</Math> , circles the origin once in the positive direction, and returns to <Math mode="inline" xml:id="C5.S9.Px1.p1.m7">-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C5.S9.Px1.p1.s2">
+<Math mode="inline" xml:id="C5.S9.Px1.p1.m8">t^{-z}</Math> has its principal value where <Math mode="inline" xml:id="C5.S9.Px1.p1.m9">t</Math> crosses the positive real axis, and is continuous.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C5.S9.Px1.p1.s3">
+See Figure5.9.1.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="6" xml:id="C5.S9.F1.s1">
+Figure 5.9.1: <Math mode="inline" xml:id="C5.S9.F1.m1">t</Math> -plane. Contour for Hankel’s loop integral.
+</sentence>  
+<para xml:id="C5.S9.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C5.S9.Px1.p2.s1">
+ <Math equation-number="5.9.3" mode="display" xml:id="C5.S9.E3">c^{-z}\Gamma\left(z\right)=\int_{-\infty}^{\infty}|t|^{2z-1}e^{-ct^{2}}\mathrm {d}t, if c&gt;0, \Re z&gt;0,</Math> where the path is the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C5.S9.Px1.p2.s2">
+<Math equation-number="5.9.4" mode="display" xml:id="C5.S9.E4">\Gamma\left(z\right)=\int_{1}^{\infty}t^{z-1}e^{-t}\mathrm{d}t+\sum_{k=0}^{ \infty}\frac{(-1)^{k}}{(z+k)k!}, if z\neq 0,-1,-2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C5.S9.Px1.p2.s3">
+<Math equation-number="5.9.5" mode="display" xml:id="C5.S9.E5">\Gamma\left(z\right)=\int_{0}^{\infty}t^{z-1}\left(e^{-t}-\sum_{k=0}^{n}\frac{ (-1)^{k}t^{k}}{k!}\right)\mathrm{d}t, if -n-1&lt;\Re z&lt;-n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C5.S9.Px1.p2.s4">
+<Math equation-number="5.9.6" mode="display" xml:id="C5.S9.E6">\Gamma\left(z\right)\cos\left(\tfrac{1}{2}\pi z\right)=\int_{0}^{\infty}t^{z-1 }\cos t\mathrm{d}t, if 0&lt;\Re z&lt;1,</Math> , <Math equation-number="5.9.7" mode="display" xml:id="C5.S9.E7">\Gamma\left(z\right)\sin\left(\tfrac{1}{2}\pi z\right)=\int_{0}^{\infty}t^{z-1 }\sin t\mathrm{d}t, if -1&lt;\Re z&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C5.S9.Px1.p2.s5">
+<Math equation-number="5.9.8" mode="display" xml:id="C5.S9.E8">\Gamma\left(1+\frac{1}{n}\right)\cos\left(\frac{\pi}{2n}\right)=\int_{0}^{ \infty}\cos\left(t^{n}\right)\mathrm{d}t, if n=2,3,4,\dots,</Math> <Math equation-number="5.9.9" mode="display" xml:id="C5.S9.E9">\Gamma\left(1+\frac{1}{n}\right)\sin\left(\frac{\pi}{2n}\right)=\int_{0}^{ \infty}\sin\left(t^{n}\right)\mathrm{d}t, if n=2,3,4,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C5.S9.Px2">
+<title>Binet’s Formula</title>    
+ 
+<para xml:id="C5.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C5.S9.Px2.p1.s1">
+ <Math equation-number="5.9.10" mode="display" xml:id="C5.S9.E10">\operatorname{Ln}\Gamma\left(z\right)=\left(z-\tfrac{1}{2}\right)\ln z-z+ \tfrac{1}{2}\ln\left(2\pi\right)+2\int_{0}^{\infty}\frac{\operatorname{arctan} \left(t/z\right)}{e^{2\pi t}-1}\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C5.S9.Px2.p1.m1">|\operatorname{ph}z|&lt;\pi/2</Math> and the inverse tangent has its principal value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C5.S9.Px2.p1.s2">
+<Math equation-number="5.9.11" mode="display" xml:id="C5.S9.E11">\operatorname{Ln}\Gamma\left(z+1\right)=-\gamma z-\frac{1}{2\pi i}\int_{-c- \infty i}^{-c+\infty i}\frac{\pi z^{-s}}{s\sin\left(\pi s\right)}\zeta\left(-s \right)\mathrm{d}s,</Math> where <Math mode="inline" xml:id="C5.S9.Px2.p1.m2">|\operatorname{ph}z|\leq\pi-\delta</Math> ( <Math mode="inline" xml:id="C5.S9.Px2.p1.m3">&lt;\pi</Math> ), <Math mode="inline" xml:id="C5.S9.Px2.p1.m4">1&lt;c&lt;2</Math> , and <Math mode="inline" xml:id="C5.S9.Px2.p1.m5">\zeta\left(s\right)</Math> is as in Chapter 25.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S9.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C5.S9.Px2.p2.s1">
+For additional representations seeWhittaker and Watson (1927, §§12.31–12.32).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S9.SS2">
+<title>Psi Function, Euler’s Constant, and Derivatives</title>          
+<para xml:id="C5.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C5.S9.SS2.p1.s1">
+For <Math mode="inline" xml:id="C5.S9.SS2.p1.m1">\Re z&gt;0</Math> , <Math equation-number="5.9.12" mode="display" xml:id="C5.S9.E12">\psi\left(z\right)=\int_{0}^{\infty}\left(\frac{e^{-t}}{t}-\frac{e^{-zt}}{1-e^ {-t}}\right)\mathrm{d}t,</Math> <Math equation-number="5.9.13" mode="display" xml:id="C5.S9.E13">\psi\left(z\right)=\ln z+\int_{0}^{\infty}\left(\frac{1}{t}-\frac{1}{1-e^{-t}} \right)e^{-tz}\mathrm{d}t,</Math> <Math equation-number="5.9.14" mode="display" xml:id="C5.S9.E14">\psi\left(z\right)=\int_{0}^{\infty}\left(e^{-t}-\frac{1}{(1+t)^{z}}\right) \frac{\mathrm{d}t}{t},</Math> <Math equation-number="5.9.15" mode="display" xml:id="C5.S9.E15">\psi\left(z\right)=\ln z-\frac{1}{2z}-2\int_{0}^{\infty}\frac{t\mathrm{d}t}{(t ^{2}+z^{2})(e^{2\pi t}-1)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C5.S9.SS2.p1.s2">
+<Math equation-number="5.9.16" mode="display" xml:id="C5.S9.E16">\psi\left(z\right)+\gamma=\int_{0}^{\infty}\frac{e^{-t}-e^{-zt}}{1-e^{-t}} \mathrm{d}t=\int_{0}^{1}\frac{1-t^{z-1}}{1-t}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C5.S9.SS2.p1.s3">
+<Math equation-number="5.9.17" mode="display" xml:id="C5.S9.E17">\psi\left(z+1\right)=-\gamma+\frac{1}{2\pi i}\int_{-c-\infty i}^{-c+\infty i} \frac{\pi z^{-s-1}}{\sin\left(\pi s\right)}\zeta\left(-s\right)\mathrm{d}s,</Math> where <Math mode="inline" xml:id="C5.S9.SS2.p1.m2">|\operatorname{ph}z|\leq\pi-\delta(&lt;\pi)</Math> and <Math mode="inline" xml:id="C5.S9.SS2.p1.m3">1&lt;c&lt;2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C5.S9.SS2.p1.s4">
+<Math equation-number="5.9.18" mode="display" xml:id="C5.S9.E18">\gamma=-\int_{0}^{\infty}e^{-t}\ln t\mathrm{d}t=\int_{0}^{\infty}\left(\frac{1 }{1+t}-e^{-t}\right)\frac{\mathrm{d}t}{t}=\int_{0}^{1}(1-e^{-t})\frac{\mathrm{ d}t}{t}-\int_{1}^{\infty}e^{-t}\frac{\mathrm{d}t}{t}=\int_{0}^{\infty}\left( \frac{e^{-t}}{1-e^{-t}}-\frac{e^{-t}}{t}\right)\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="19" xml:id="C5.S9.SS2.p1.s5">
+<Math equation-number="5.9.19" mode="display" xml:id="C5.S9.E19">{\Gamma^{(n)}}\left(z\right)=\int_{0}^{\infty}(\ln t)^{n}e^{-t}t^{z-1}\mathrm{ d}t, if n\geq 0, \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

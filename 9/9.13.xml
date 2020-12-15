@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C9.S13">
+<title>Generalized Airy Functions</title>        
+ 
+ 
+<subsection xml:id="C9.S13.SS1">
+<title>Generalizations from the Differential Equation</title>          
+<para xml:id="C9.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C9.S13.SS1.p1.s1">
+Equations of the form <Math equation-number="9.13.1" mode="display" xml:id="C9.S13.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=z^{n}w, if n=1,2,3,\ldots,</Math> are used in approximating solutions to differential equations with multiple turning points; see §2.8(v).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C9.S13.SS1.p1.s2">
+The general solution of (9.13.1) is given by <Math equation-number="9.13.2" mode="display" xml:id="C9.S13.E2">w=z^{1/2}\mathscr{Z}_{p}\left(\zeta\right),</Math> where <Math equation-number="9.13.3" mode="display" xml:id="C9.S13.E3">p=\frac{1}{n+2}, ,\zeta=\frac{2}{n+2}z^{(n+2)/2}=2pz^{1/(2p)}, ,</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p1.m1">\mathscr{Z}_{p}</Math> is any linear combination of the modified Bessel functions <Math mode="inline" xml:id="C9.S13.SS1.p1.m2">I_{p}</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p1.m3">e^{p\pi\mathrm{i}}K_{p}</Math> (§10.25(ii)).
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C9.S13.SS1.p2.s1">
+Swanson and Headley (1967) define independent solutions <Math mode="inline" xml:id="C9.S13.SS1.p2.m1">A_{n}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p2.m2">B_{n}\left(z\right)</Math> of (9.13.1) by <Math equation-number="9.13.4" mode="display" xml:id="C9.S13.E4">A_{n}\left(z\right)=(2p/\pi)\sin\left(p\pi\right)z^{1/2}K_{p}\left(\zeta\right), ,B_{n}\left(z\right)=(pz)^{1/2}\left(I_{-p}\left(\zeta\right)+I_{p}\left(\zeta \right)\right), ,</Math> when <Math mode="inline" xml:id="C9.S13.SS1.p2.m5">z</Math> is real and positive, and by analytic continuation elsewhere.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C9.S13.SS1.p2.s2">
+(All solutions of (9.13.1) are entire functions of <Math mode="inline" xml:id="C9.S13.SS1.p2.m6">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C9.S13.SS1.p2.s3">
+) When <Math mode="inline" xml:id="C9.S13.SS1.p2.m7">n=1</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p2.m8">A_{n}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p2.m9">B_{n}\left(z\right)</Math> become <Math mode="inline" xml:id="C9.S13.SS1.p2.m10">\mathrm{Ai}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p2.m11">\mathrm{Bi}\left(z\right)</Math> , respectively.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C9.S13.SS1.p3.s1">
+Properties of <Math mode="inline" xml:id="C9.S13.SS1.p3.m1">A_{n}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p3.m2">B_{n}\left(z\right)</Math> follow from the corresponding properties of the modified Bessel functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C9.S13.SS1.p3.s2">
+They include: <Math equation-number="9.13.5" mode="display" xml:id="C9.S13.E5">A_{n}\left(0\right)=p^{1/2}B_{n}\left(0\right)=\frac{p^{1-p}}{\Gamma\left(1-p \right)},-A_{n}'\left(0\right)=p^{1/2}B_{n}'\left(0\right)=\frac{p^{p}}{\Gamma\left(p \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C9.S13.SS1.p3.s3">
+<Math equation-number="9.13.6" mode="display" xml:id="C9.S13.E6">A_{n}\left(-z\right)=\begin{cases}pz^{1/2}\left(J_{-p}\left(\zeta\right)+J_{p} \left(\zeta\right)\right),&amp;n\text{ odd},\\ p^{1/2}B_{n}\left(z\right),&amp;n\text{ even},\end{cases}</Math> , <Math equation-number="9.13.7" mode="display" xml:id="C9.S13.E7">B_{n}\left(-z\right)=\begin{cases}(pz)^{1/2}\left(J_{-p}\left(\zeta\right)-J_{ p}\left(\zeta\right)\right),&amp;n\text{ odd},\\ p^{-1/2}A_{n}\left(z\right),&amp;n\text{ even}.\end{cases</Math> } <Math equation-number="9.13.8" mode="display" xml:id="C9.S13.E8">\mathscr{W}\left\{A_{n}\left(z\right),B_{n}\left(z\right)\right\}=\frac{2}{\pi }p^{1/2}\sin\left(p\pi\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S13.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C9.S13.SS1.p4.s1">
+As <Math mode="inline" xml:id="C9.S13.SS1.p4.m1">z\to\infty</Math> <Math equation-number="9.13.9" mode="display" xml:id="C9.S13.E9">A_{n}\left(z\right)=\sqrt{\ifrac{p}{\pi}}\sin\left(p\pi\right)z^{-n/4}e^{- \zeta}\left(1+O\left(\zeta^{-1}\right)\right), if |\operatorname{ph}z|\leq 3p\pi-\delta,</Math> , <Math equation-number="9.13.10" mode="display" xml:id="C9.S13.E10">A_{n}\left(-z\right)=\begin{cases}2\sqrt{p/\pi}\cos\left(\tfrac{1}{2}p\pi \right)z^{-n/4}\left(\cos\left(\zeta-\tfrac{1}{4}\pi\right)+e^{|\Im\zeta|}O \left(\zeta^{-1}\right)\right),&amp;\text{$|\operatorname{ph}z|\leq 2p\pi-\delta$, $n$ odd},\\ \sqrt{p/\pi}z^{-n/4}e^{\zeta}\left(1+O\left(\zeta^{-1}\right)\right),&amp;\text{$| \operatorname{ph}z|\leq p\pi-\delta$, $n$ even},\end{cases}</Math> , <Math equation-number="9.13.11" mode="display" xml:id="C9.S13.E11">B_{n}\left(z\right)={\pi}^{-1/2}z^{-n/4}e^{\zeta}\left(1+O\left(\zeta^{-1} \right)\right), if |\operatorname{ph}z|\leq p\pi-\delta,</Math> , <Math equation-number="9.13.12" mode="display" xml:id="C9.S13.E12">B_{n}\left(-z\right)=\begin{cases}-(\ifrac{2}{\sqrt{\pi}})\sin\left(\tfrac{1}{ 2}p\pi\right)z^{-n/4}\left(\sin\left(\zeta-\tfrac{1}{4}\pi\right)+e^{\left|\Im \zeta\right|}O\left(\zeta^{-1}\right)\right),&amp;\left|\operatorname{ph}z\right| \leq 2p\pi-\delta,n\text{ odd},\\ (\ifrac{1}{\sqrt{\pi}})\sin\left(p\pi\right)z^{-n/4}e^{-\zeta}\left(1+O\left( \zeta^{-1}\right)\right),&amp;\left|\operatorname{ph}z\right|\leq 3p\pi-\delta,n \text{ even}.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S13.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C9.S13.SS1.p5.s1">
+The distribution in <Math mode="inline" xml:id="C9.S13.SS1.p5.m1">\mathbb{C}</Math> and asymptotic properties of the zeros of <Math mode="inline" xml:id="C9.S13.SS1.p5.m2">A_{n}\left(z\right)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p5.m3">A_{n}'\left(z\right)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p5.m4">B_{n}\left(z\right)</Math> , and <Math mode="inline" xml:id="C9.S13.SS1.p5.m5">B_{n}'\left(z\right)</Math> are investigated inSwanson and Headley (1967) and Headley and Barwell (1975).
+</sentence>
+
+</para>
+  
+<para xml:id="C9.S13.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C9.S13.SS1.p6.s1">
+In Olver (1977a, 1978) a different normalization is used. In place of (9.13.1) we have <Math equation-number="9.13.13" mode="display" xml:id="C9.S13.E13">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}t}^{2}}=\tfrac{1}{4}m^{2}t^{m-2}w,</Math> where <Math mode="inline" xml:id="C9.S13.SS1.p6.m1">m=3,4,5,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C9.S13.SS1.p6.s2">
+For realvariables the solutions of (9.13.13) are denoted by <Math mode="inline" xml:id="C9.S13.SS1.p6.m5">U_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p6.m6">U_{m}(-t)</Math> when <Math mode="inline" xml:id="C9.S13.SS1.p6.m7">m</Math> is even, and by <Math mode="inline" xml:id="C9.S13.SS1.p6.m8">V_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p6.m9">\overline{V}_{m}(t)</Math> when <Math mode="inline" xml:id="C9.S13.SS1.p6.m10">m</Math> is odd.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C9.S13.SS1.p6.s3">
+(The overbar has nothing to do with complex conjugates.)Their relations to the functions <Math mode="inline" xml:id="C9.S13.SS1.p6.m11">A_{n}\left(z\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p6.m12">B_{n}\left(z\right)</Math> are given by <Math equation-number="9.13.14" mode="display" xml:id="C9.S13.E14">m=n+2=1/p, ,t=(\tfrac{1}{2}m)^{-2/m}z=\zeta^{2/m}, ,</Math> <Math equation-number="9.13.15" mode="display" xml:id="C9.S13.E15">\sqrt{2\pi}\left(\tfrac{1}{2}m\right)^{(m-1)/m}\csc\left(\ifrac{\pi}{m}\right) A_{n}\left(z\right)=\begin{cases}U_{m}(t),&amp;m\text{ even},\\ V_{m}(t),&amp;m\text{ odd},\end{cases}</Math> <Math equation-number="9.13.16" mode="display" xml:id="C9.S13.E16">\sqrt{\pi}\left(\tfrac{1}{2}m\right)^{(m-2)/(2m)}\csc\left(\ifrac{\pi}{m} \right)B_{n}\left(z\right)=\begin{cases}U_{m}(-t),&amp;m\text{ even},\\ \overline{V}_{m}(t),&amp;m\text{ odd}.\end{cases</Math> }
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C9.S13.SS1.p7.s1">
+Properties and graphs of <Math mode="inline" xml:id="C9.S13.SS1.p7.m1">U_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p7.m2">V_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p7.m3">\overline{V}_{m}(t)</Math> are included inOlver (1977a) together with properties and graphs of real solutions of the equation <Math equation-number="9.13.17" mode="display" xml:id="C9.S13.E17">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}t}^{2}}=-\tfrac{1}{4}m^{2}t^{m-2}w, if m even,</Math> which are denoted by <Math mode="inline" xml:id="C9.S13.SS1.p7.m4">W_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p7.m5">W_{m}(-t)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p8">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C9.S13.SS1.p8.s1">
+In <Math mode="inline" xml:id="C9.S13.SS1.p8.m1">\mathbb{C}</Math> , the solutions of (9.13.13) used in Olver (1978) are <Math equation-number="9.13.18" mode="display" xml:id="C9.S13.E18">w=U_{m}(te^{-2j\pi i/m}), if j=0,\pm 1,\pm 2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C9.S13.SS1.p8.s2">
+The function on the right-hand side is recessive in the sector <Math mode="inline" xml:id="C9.S13.SS1.p8.m2">-(2j-1)\pi/m\leq\operatorname{ph}z\leq(2j+1)\pi/m</Math> , and is therefore an essential member of any numerically satisfactory pair of solutions in this region.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p9">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C9.S13.SS1.p9.s1">
+Another normalization of (9.13.17) is used inSmirnov (1960), given by <Math equation-number="9.13.19" mode="display" xml:id="C9.S13.E19">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}x}^{2}}+x^{\alpha}w=0,</Math> where <Math mode="inline" xml:id="C9.S13.SS1.p9.m1">\alpha&gt;-2</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p9.m2">x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C9.S13.SS1.p9.s2">
+Solutions are <Math mode="inline" xml:id="C9.S13.SS1.p9.m3">w=U_{1}(x,\alpha)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p9.m4">U_{2}(x,\alpha)</Math> , where <Math equation-number="9.13.20" mode="display" xml:id="C9.S13.E20">U_{1}(x,\alpha)=\frac{1}{(\alpha+2)^{1/(\alpha+2)}}\*\Gamma\left(\frac{\alpha+ 1}{\alpha+2}\right)x^{1/2}J_{-1/(\alpha+2)}\left(\frac{2}{\alpha+2}x^{(\alpha+ 2)/2}\right),</Math> <Math equation-number="9.13.21" mode="display" xml:id="C9.S13.E21">U_{2}(x,\alpha)=(\alpha+2)^{1/(\alpha+2)}\*\Gamma\left(\frac{\alpha+3}{\alpha+ 2}\right)x^{1/2}J_{1/(\alpha+2)}\left(\frac{2}{\alpha+2}x^{(\alpha+2)/2}\right),</Math> and <Math mode="inline" xml:id="C9.S13.SS1.p9.m5">J</Math> denotes the Bessel function (§10.2(ii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p10">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C9.S13.SS1.p10.s1">
+When <Math mode="inline" xml:id="C9.S13.SS1.p10.m1">\alpha</Math> is a positive integer the relation of these functions to <Math mode="inline" xml:id="C9.S13.SS1.p10.m2">W_{m}(t)</Math> , <Math mode="inline" xml:id="C9.S13.SS1.p10.m3">W_{m}(-t)</Math> is as follows: <Math equation-number="9.13.22" mode="display" xml:id="C9.S13.E22">\alpha=m-2, ,x=(m/2)^{2/m}t, ,</Math> <Math equation-number="9.13.23" mode="display" xml:id="C9.S13.E23">U_{1}(x,\alpha)=\frac{\pi^{1/2}}{2^{(m+2)/(2m)}\Gamma\left(1/m\right)}\left(W_ {m}(t)+W_{m}(-t)\right),</Math> <Math equation-number="9.13.24" mode="display" xml:id="C9.S13.E24">U_{2}(x,\alpha)=\frac{\pi^{1/2}m^{2/m}}{2^{(m+2)/(2m)}\Gamma\left(-1/m\right)} \left(W_{m}(t){-}W_{m}(-t)\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS1.p11">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C9.S13.SS1.p11.s1">
+For properties of the zeros of the functions defined in this subsection seeLaforgia and Muldoon (1988) and references given therein.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C9.S13.SS2">
+<title>Generalizations from Integral Representations</title>          
+<para xml:id="C9.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C9.S13.SS2.p1.s1">
+Reid (1972) and Drazin and Reid (1981, Appendix) introduce the following contour integrals in constructing approximate solutions to theOrr–Sommerfeld equation for fluid flow: <Math equation-number="9.13.25" mode="display" xml:id="C9.S13.E25">A_{k}\left(z,p\right)=\frac{1}{2\pi i}\int_{\mathscr{L}_{k}}t^{-p}\exp\left(zt -\tfrac{1}{3}t^{3}\right)\mathrm{d}t, if k=1,2,3, p\in\mathbb{C},</Math> <Math equation-number="9.13.26" mode="display" xml:id="C9.S13.E26">B_{0}\left(z,p\right)=\frac{1}{2\pi i}\int_{\mathscr{L}_{0}}t^{-p}\exp\left(zt -\tfrac{1}{3}t^{3}\right)\mathrm{d}t, if p=0,\pm 1,\pm 2,\ldots,</Math> <Math equation-number="9.13.27" mode="display" xml:id="C9.S13.E27">B_{k}\left(z,p\right)=\int_{\mathscr{I}_{k}}t^{-p}\exp\left(zt-\tfrac{1}{3}t^{ 3}\right)\mathrm{d}t, if k=1,2,3, p=0,\pm 1,\pm 2,\ldots,</Math> with <Math mode="inline" xml:id="C9.S13.SS2.p1.m3">z\in\mathbb{C}</Math> in all cases.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C9.S13.SS2.p1.s2">
+The integration paths <Math mode="inline" xml:id="C9.S13.SS2.p1.m4">\mathscr{L}_{0}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p1.m5">\mathscr{L}_{1}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p1.m6">\mathscr{L}_{2}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p1.m7">\mathscr{L}_{3}</Math> are depicted in Figure 9.13.1.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C9.S13.SS2.p1.s3">
+<Math mode="inline" xml:id="C9.S13.SS2.p1.m8">\mathscr{I}_{1}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p1.m9">\mathscr{I}_{2}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p1.m10">\mathscr{I}_{3}</Math> are depicted in Figure 9.13.2.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="24" xml:id="C9.S13.SS2.p1.s4">
+When <Math mode="inline" xml:id="C9.S13.SS2.p1.m11">p</Math> is not an integer the branch of <Math mode="inline" xml:id="C9.S13.SS2.p1.m12">t^{-p}</Math> in (9.13.25) is usually chosen to be <Math mode="inline" xml:id="C9.S13.SS2.p1.m13">\exp\left(-p(\ln|t|+i\operatorname{ph}t)\right)</Math> with <Math mode="inline" xml:id="C9.S13.SS2.p1.m14">0\leq\operatorname{ph}t&lt;2\pi</Math>.
+</sentence>
+
+</para>
+            
+<sentence sentence-num-in-section="25" xml:id="C9.S13.F1.s1">
+Figure 9.13.1: <Math mode="inline" xml:id="C9.S13.F1.m5">t</Math> -plane. Paths <Math mode="inline" xml:id="C9.S13.F1.m6">\mathscr{L}_{0}</Math> , <Math mode="inline" xml:id="C9.S13.F1.m7">\mathscr{L}_{1}</Math> , <Math mode="inline" xml:id="C9.S13.F1.m8">\mathscr{L}_{2}</Math> , <Math mode="inline" xml:id="C9.S13.F1.m9">\mathscr{L}_{3}</Math> .
+</sentence>            
+  
+<sentence sentence-num-in-section="26" xml:id="C9.S13.F2.s1">
+Figure 9.13.2: <Math mode="inline" xml:id="C9.S13.F2.m4">t</Math> -plane. Paths <Math mode="inline" xml:id="C9.S13.F2.m5">\mathscr{I}_{1}</Math> , <Math mode="inline" xml:id="C9.S13.F2.m6">\mathscr{I}_{2}</Math> , <Math mode="inline" xml:id="C9.S13.F2.m7">\mathscr{I}_{3}</Math> .
+</sentence>       
+<para xml:id="C9.S13.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C9.S13.SS2.p2.s1">
+When <Math mode="inline" xml:id="C9.S13.SS2.p2.m1">p=0</Math> <Math equation-number="9.13.28" mode="display" xml:id="C9.S13.E28">A_{1}\left(z,0\right)=\mathrm{Ai}\left(z\right),</Math> <Math equation-number="9.13.29" mode="display" xml:id="C9.S13.E29">A_{2}\left(z,0\right)=e^{2\pi i/3}\mathrm{Ai}\left(ze^{2\pi i/3}\right), ,A_{3}\left(z,0\right)=e^{-2\pi i/3}\mathrm{Ai}\left(ze^{-2\pi i/3}\right), ,</Math> and <Math equation-number="9.13.30" mode="display" xml:id="C9.S13.E30">B_{0}\left(z,0\right)=0, ,B_{1}\left(z,0\right)=\pi\mathrm{Hi}\left(z\right), </Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C9.S13.SS2.p3.s1">
+Each of the functions <Math mode="inline" xml:id="C9.S13.SS2.p3.m1">A_{k}\left(z,p\right)</Math> and <Math mode="inline" xml:id="C9.S13.SS2.p3.m2">B_{k}\left(z,p\right)</Math> satisfies the differential equation <Math equation-number="9.13.31" mode="display" xml:id="C9.S13.E31">\frac{{\mathrm{d}}^{3}w}{{\mathrm{d}z}^{3}}-z\frac{\mathrm{d}w}{\mathrm{d}z}+( p-1)w=0,</Math> and the difference equation <Math equation-number="9.13.32" mode="display" xml:id="C9.S13.E32">f(p-3)-zf(p-1)+(p-1)f(p)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C9.S13.SS2.p4.s1">
+The <Math mode="inline" xml:id="C9.S13.SS2.p4.m1">A_{k}\left(z,p\right)</Math> are related by <Math equation-number="9.13.33" mode="display" xml:id="C9.S13.E33">A_{2}\left(z,p\right)=e^{-2(p-1)\pi i/3}A_{1}\left(ze^{2\pi i/3},p\right), ,A_{3}\left(z,p\right)=e^{2(p-1)\pi i/3}A_{1}\left(ze^{-2\pi i/3},p\right), </Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="30" xml:id="C9.S13.SS2.p4.s2">
+Connection formulas for the solutions of (9.13.31) include <Math equation-number="9.13.34" mode="display" xml:id="C9.S13.E34">A_{1}\left(z,p\right)+A_{2}\left(z,p\right)+A_{3}\left(z,p\right)+B_{0}\left(z ,p\right)=0,</Math> <Math equation-number="9.13.35" mode="display" xml:id="C9.S13.E35">B_{2}\left(z,p\right)-B_{3}\left(z,p\right)=2\pi iA_{1}\left(z,p\right),</Math> <Math equation-number="9.13.36" mode="display" xml:id="C9.S13.E36">B_{3}\left(z,p\right)-B_{1}\left(z,p\right)=2\pi iA_{2}\left(z,p\right),</Math> <Math equation-number="9.13.37" mode="display" xml:id="C9.S13.E37">B_{1}\left(z,p\right)-B_{2}\left(z,p\right)=2\pi iA_{3}\left(z,p\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C9.S13.SS2.p5.s1">
+Further properties of these functions, and also of similar contour integrals containing an additional factor <Math mode="inline" xml:id="C9.S13.SS2.p5.m1">(\ln t)^{q}</Math> , <Math mode="inline" xml:id="C9.S13.SS2.p5.m2">q=1,2,\ldots</Math> , in the integrand, are derived in Reid (1972),Drazin and Reid (1981, Appendix), and Baldwin (1985).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C9.S13.SS2.p5.s2">
+These properties include Wronskians, asymptotic expansions, and information on zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C9.S13.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C9.S13.SS2.p6.s1">
+For further generalizations via integral representations seeChin and Hedstrom (1978), Janson et al. (1993, §10), andKamimoto (1998).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

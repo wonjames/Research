@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C32">
+<title>Painlevé Transcendents</title>               
+          
+<section xml:id="C32.S1">
+<title>Special Notation</title>         
+<para xml:id="C32.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C32.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" sentence-num-in-table="1" xml:id="C32.S1.p2.t1.s1">
+<Math mode="inline" xml:id="C32.S1.p2.t1.r1.m1">m,n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" sentence-num-in-table="2" xml:id="C32.S1.p2.t1.s2">
+integers.    
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" sentence-num-in-table="3" xml:id="C32.S1.p2.t1.s3">
+<Math mode="inline" xml:id="C32.S1.p2.t1.r2.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" sentence-num-in-table="4" xml:id="C32.S1.p2.t1.s4">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" sentence-num-in-table="5" xml:id="C32.S1.p2.t1.s5">
+<Math mode="inline" xml:id="C32.S1.p2.t1.r3.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" sentence-num-in-table="6" xml:id="C32.S1.p2.t1.s6">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" sentence-num-in-table="7" xml:id="C32.S1.p2.t1.s7">
+<Math mode="inline" xml:id="C32.S1.p2.t1.r4.m1">k</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="9" sentence-num-in-table="8" xml:id="C32.S1.p2.t1.s8">
+real parameter.  
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C32.S1.p3.s1">
+Unless otherwise noted, primes indicate derivatives with respect to the argument.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C32.S1.p4.s1">
+The functions treated in this chapter are the solutions of the Painlevé equations <Math mode="inline" xml:id="C32.S1.p4.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S1.p4.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math>.
+</sentence>
+
+</para>
+
+ 
+</section>
+           
+<section xml:id="C32.S2">
+<title>Differential Equations</title>         
+<subsection xml:id="C32.S2.SS1">
+<title>Introduction</title>          
+<para xml:id="C32.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C32.S2.SS1.p1.s1">
+The six Painlevé equations <Math mode="inline" xml:id="C32.S2.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are as follows: <Math equation-number="32.2.1" mode="display" xml:id="C32.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=6w^{2}+z,</Math> <Math equation-number="32.2.2" mode="display" xml:id="C32.S2.E2">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=2w^{3}+zw+\alpha,</Math> <Math equation-number="32.2.3" mode="display" xml:id="C32.S2.E3">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{w}\left(\frac{\mathrm{d}w }{\mathrm{d}z}\right)^{2}-\frac{1}{z}\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{ \alpha w^{2}+\beta}{z}+\gamma w^{3}+\frac{\delta}{w},</Math> 
+</sentence>
+
+</para>
+  
+<para xml:id="C32.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C32.S2.SS1.p2.s1">
+ <Math equation-number="32.2.4" mode="display" xml:id="C32.S2.E4">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{2w}\left(\frac{\mathrm{d} w}{\mathrm{d}z}\right)^{2}+\frac{3}{2}w^{3}+4zw^{2}+2(z^{2}-\alpha)w+\frac{ \beta}{w},</Math> <Math equation-number="32.2.5" mode="display" xml:id="C32.S2.E5">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\left(\frac{1}{2w}+\frac{1}{w-1} \right)\left(\frac{\mathrm{d}w}{\mathrm{d}z}\right)^{2}-\frac{1}{z}\frac{ \mathrm{d}w}{\mathrm{d}z}+\frac{(w-1)^{2}}{z^{2}}\left(\alpha w+\frac{\beta}{w }\right)+\frac{\gamma w}{z}+\frac{\delta w(w+1)}{w-1},</Math> <Math equation-number="32.2.6" mode="display" xml:id="C32.S2.E6">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=\frac{1}{2}\left(\frac{1}{w}+\frac {1}{w-1}+\frac{1}{w-z}\right)\left(\frac{\mathrm{d}w}{\mathrm{d}z}\right)^{2}- \left(\frac{1}{z}+\frac{1}{z-1}+\frac{1}{w-z}\right)\frac{\mathrm{d}w}{\mathrm {d}z}+\frac{w(w-1)(w-z)}{z^{2}(z-1)^{2}}\left(\alpha+\frac{\beta z}{w^{2}}+ \frac{\gamma(z-1)}{(w-1)^{2}}+\frac{\delta z(z-1)}{(w-z)^{2}}\right),</Math> 
+</sentence>
+
+</para>
+              
+<para xml:id="C32.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C32.S2.SS1.p3.s1">
+with <Math mode="inline" xml:id="C32.S2.SS1.p3.m1">\alpha</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p3.m2">\beta</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p3.m3">\gamma</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p3.m4">\delta</Math> arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C32.S2.SS1.p3.s2">
+The solutions of <Math mode="inline" xml:id="C32.S2.SS1.p3.m12">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p3.m13">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are called the Painlevé transcendents.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="16" xml:id="C32.S2.SS1.p3.s3">
+The six equations are sometimes referred to as the Painlevé transcendents, but in this chapter this term will be used only for their solutions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C32.S2.SS1.p4.s1">
+Let <Math equation-number="32.2.7" mode="display" xml:id="C32.S2.E7">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}=F\left(z,w,\frac{\mathrm{d}w}{ \mathrm{d}z}\right),</Math> be a nonlinear second-order differential equation in which <Math mode="inline" xml:id="C32.S2.SS1.p4.m1">F</Math> is a rational function of <Math mode="inline" xml:id="C32.S2.SS1.p4.m2">w</Math> and <Math mode="inline" xml:id="C32.S2.SS1.p4.m3">\ifrac{\mathrm{d}w}{\mathrm{d}z}</Math> , and is locally analytic in <Math mode="inline" xml:id="C32.S2.SS1.p4.m4">z</Math> , that is, analytic except for isolated singularities in <Math mode="inline" xml:id="C32.S2.SS1.p4.m5">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C32.S2.SS1.p4.s2">
+In general the singularities of the solutions are movable in the sense that their location depends on the constants of integration associated with the initial orboundary conditions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="19" xml:id="C32.S2.SS1.p4.s3">
+An equation is said to have the Painlevé property if all its solutions are free from movable branch points; the solutions may have movable poles or movable isolated essential singularities (§LABEL:sec:AL.FC.ls), however.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C32.S2.SS1.p5.s1">
+There are fifty equations with the Painlevé property.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C32.S2.SS1.p5.s2">
+They are distinct modulo Möbius (bilinear) transformations <Math equation-number="32.2.8" mode="display" xml:id="C32.S2.E8">W(\zeta)=\frac{a(z)w+b(z)}{c(z)w+d(z)}, \zeta=\phi(z),</Math> in which <Math mode="inline" xml:id="C32.S2.SS1.p5.m1">a(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m2">b(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m3">c(z)</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p5.m4">d(z)</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p5.m5">\phi(z)</Math> are locally analytic functions.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C32.S2.SS1.p5.s3">
+The fifty equations can be reduced to linear equations, solved in terms of elliptic functions (Chapters LABEL:ch:JA and LABEL:ch:WE), or reduced to one of <Math mode="inline" xml:id="C32.S2.SS1.p5.m6">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p5.m7">\mbox{P}_{\mbox{\scriptsize VI}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS1.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C32.S2.SS1.p6.s1">
+For arbitrary values of the parameters <Math mode="inline" xml:id="C32.S2.SS1.p6.m1">\alpha</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p6.m2">\beta</Math> , <Math mode="inline" xml:id="C32.S2.SS1.p6.m3">\gamma</Math> , and <Math mode="inline" xml:id="C32.S2.SS1.p6.m4">\delta</Math> , the general solutions of <Math mode="inline" xml:id="C32.S2.SS1.p6.m5">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p6.m6">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are transcendental, that is, they cannot be expressed in closed-form elementary functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="24" xml:id="C32.S2.SS1.p6.s2">
+However, for special values of the parameters, equations <Math mode="inline" xml:id="C32.S2.SS1.p6.m7">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S2.SS1.p6.m8">\mbox{P}_{\mbox{\scriptsize VI}}</Math> have special solutions in terms of elementary functions, or special functions defined elsewhere in the DLMF.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS2">
+<title>Renormalizations</title>          
+<para xml:id="C32.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C32.S2.SS2.p1.s1">
+If <Math mode="inline" xml:id="C32.S2.SS2.p1.m1">\gamma\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p1.m2">\mbox{P}_{\mbox{\scriptsize III}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m3">\gamma=1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m4">\delta=-1</Math> , without loss of generality, by rescaling <Math mode="inline" xml:id="C32.S2.SS2.p1.m5">w</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m6">z</Math> if necessary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C32.S2.SS2.p1.s2">
+If <Math mode="inline" xml:id="C32.S2.SS2.p1.m7">\gamma=0</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m8">\alpha\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p1.m9">\mbox{P}_{\mbox{\scriptsize III}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m10">\alpha=1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m11">\delta=-1</Math> , without loss of generality.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C32.S2.SS2.p1.s3">
+Lastly, if <Math mode="inline" xml:id="C32.S2.SS2.p1.m12">\delta=0</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m13">\beta\gamma\neq 0</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p1.m14">\beta=-1</Math> and <Math mode="inline" xml:id="C32.S2.SS2.p1.m15">\gamma=1</Math> , without loss ofgenerality.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C32.S2.SS2.p2.s1">
+If <Math mode="inline" xml:id="C32.S2.SS2.p2.m1">\delta\neq 0</Math> in <Math mode="inline" xml:id="C32.S2.SS2.p2.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> , then set <Math mode="inline" xml:id="C32.S2.SS2.p2.m3">\delta=-\tfrac{1}{2}</Math> , without loss of generality.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS3">
+<title>Alternative Forms</title>          
+<para xml:id="C32.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C32.S2.SS3.p1.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p1.m2">w(z)=\zeta^{-1/2}u(\zeta)</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p1.m3">\zeta=z^{2}</Math> , then <Math equation-number="32.2.9" mode="display" xml:id="C32.S2.E9">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=\frac{1}{u}\left(\frac{\mathrm {d}u}{\mathrm{d}\zeta}\right)^{2}-\frac{1}{\zeta}\frac{\mathrm{d}u}{\mathrm{d} \zeta}+\frac{u^{2}(\alpha+\gamma u)}{4\zeta^{2}}+\frac{\beta}{4\zeta}+\frac{ \delta}{4u},</Math> which is known as <Math mode="inline" xml:id="C32.S2.SS3.p1.m4">\mbox{P}^{\prime}_{\mbox{\scriptsize III}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C32.S2.SS3.p2.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p2.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p2.m2">w(z)=\exp\left(-iu(z)\right)</Math> , <Math mode="inline" xml:id="C32.S2.SS3.p2.m3">\beta=-\alpha</Math> , and <Math mode="inline" xml:id="C32.S2.SS3.p2.m4">\delta=-\gamma</Math> , then <Math equation-number="32.2.10" mode="display" xml:id="C32.S2.E10">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}u}{ \mathrm{d}z}=\frac{2\alpha}{z}\sin u+2\gamma\sin\left(2u\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C32.S2.SS3.p3.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p3.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p3.m2">w(z)=2\sqrt{2}(u(\zeta))^{2}</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p3.m3">\zeta=\sqrt{2}z</Math> and <Math mode="inline" xml:id="C32.S2.SS3.p3.m4">\alpha=2\nu+1</Math> , then <Math equation-number="32.2.11" mode="display" xml:id="C32.S2.E11">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=3u^{5}+2\zeta u^{3}+\left( \tfrac{1}{4}\zeta^{2}-\nu-\tfrac{1}{2}\right)u+\frac{\beta}{32u^{3}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C32.S2.SS3.p3.s2">
+When <Math mode="inline" xml:id="C32.S2.SS3.p3.m5">\beta=0</Math> this is a nonlinear harmonic oscillator.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C32.S2.SS3.p4.s1">
+In <Math mode="inline" xml:id="C32.S2.SS3.p4.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> , if <Math mode="inline" xml:id="C32.S2.SS3.p4.m2">w(z)=(\coth u(\zeta))^{2}</Math> with <Math mode="inline" xml:id="C32.S2.SS3.p4.m3">\zeta=\ln z</Math> , then <Math equation-number="32.2.12" mode="display" xml:id="C32.S2.E12">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}\zeta}^{2}}=-\frac{\alpha\cosh u}{2(\sinh u )^{3}}-\frac{\beta\sinh u}{2(\cosh u)^{3}}-\tfrac{1}{4}\gamma e^{\zeta}\sinh \left(2u\right)-\tfrac{1}{8}\delta e^{2\zeta}\sinh\left(4u\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C32.S2.SS3.p5.s1">
+See also ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS4">
+<title>Elliptic Form</title>          
+<para xml:id="C32.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C32.S2.SS4.p1.s1">
+ <Math mode="inline" xml:id="C32.S2.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> can be written in the form <Math equation-number="32.2.13" mode="display" xml:id="C32.S2.E13">z(1-z)I\left(\int_{\infty}^{w}\frac{\mathrm{d}t}{\sqrt{t(t-1)(t-z)}}\right)= \sqrt{w(w-1)(w-z)}\*\left(\alpha+\frac{\beta z}{w^{2}}+\frac{\gamma(z-1)}{(w-1 )^{2}}+(\delta-\tfrac{1}{2})\frac{z(z-1)}{(w-z)^{2}}\right),</Math> where <Math equation-number="32.2.14" mode="display" xml:id="C32.S2.E14">I=z(1-z)\frac{{\mathrm{d}}^{2}}{{\mathrm{d}z}^{2}}+(1-2z)\frac{\mathrm{d}}{ \mathrm{d}z}-\frac{1}{4}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="36" xml:id="C32.S2.SS4.p1.s2">
+See ( ) , ( ) , ( , §42) ; also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS5">
+<title>Symmetric Forms</title>          
+<para xml:id="C32.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="37" xml:id="C32.S2.SS5.p1.s1">
+Let <Math equation-number="32.2.15" mode="display" xml:id="C32.S2.E15">\frac{\mathrm{d}f_{1}}{\mathrm{d}z}+f_{1}(f_{2}-f_{3})+2\mu_{1}=0, \frac{\mathrm{d}f_{2}}{\mathrm{d}z}+f_{2}(f_{3}-f_{1})+2\mu_{2}=0, \frac{\mathrm{d}f_{3}}{\mathrm{d}z}+f_{3}(f_{1}-f_{2})+2\mu_{3}=0,</Math> where <Math mode="inline" xml:id="C32.S2.SS5.p1.m1">\mu_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m2">\mu_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m3">\mu_{3}</Math> are constants, <Math mode="inline" xml:id="C32.S2.SS5.p1.m4">f_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m5">f_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p1.m6">f_{3}</Math> are functions of <Math mode="inline" xml:id="C32.S2.SS5.p1.m7">z</Math> , with <Math equation-number="32.2.16" mode="display" xml:id="C32.S2.E16">\mu_{1}+\mu_{2}+\mu_{3}=1,</Math> <Math equation-number="32.2.17" mode="display" xml:id="C32.S2.E17">f_{1}(z)+f_{2}(z)+f_{3}(z)+2z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="38" xml:id="C32.S2.SS5.p1.s2">
+Then <Math mode="inline" xml:id="C32.S2.SS5.p1.m8">w(z)=f_{1}(z)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS5.p1.m9">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math equation-number="32.2.18" mode="display" xml:id="C32.S2.E18">(\alpha,\beta)=(\mu_{3}-\mu_{2},-2\mu_{1}^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="39" xml:id="C32.S2.SS5.p1.s3">
+See ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C32.S2.SS5.p2.s1">
+Next, let <Math equation-number="32.2.19" mode="display" xml:id="C32.S2.E19">z\frac{\mathrm{d}f_{1}}{\mathrm{d}z}=f_{1}f_{3}(f_{2}-f_{4})+(\tfrac{1}{2}-\mu _{3})f_{1}+\mu_{1}f_{3}, z\frac{\mathrm{d}f_{2}}{\mathrm{d}z}=f_{2}f_{4}(f_{3}-f_{1})+(\tfrac{1}{2}-\mu _{4})f_{2}+\mu_{2}f_{4}, z\frac{\mathrm{d}f_{3}}{\mathrm{d}z}=f_{3}f_{1}(f_{4}-f_{2})+(\tfrac{1}{2}-\mu _{1})f_{3}+\mu_{3}f_{1}, z\frac{\mathrm{d}f_{4}}{\mathrm{d}z}=f_{4}f_{2}(f_{1}-f_{3})+(\tfrac{1}{2}-\mu _{2})f_{4}+\mu_{4}f_{2},</Math> where <Math mode="inline" xml:id="C32.S2.SS5.p2.m1">\mu_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m2">\mu_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m3">\mu_{3}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m4">\mu_{4}</Math> are constants, <Math mode="inline" xml:id="C32.S2.SS5.p2.m5">f_{1}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m6">f_{2}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m7">f_{3}</Math> , <Math mode="inline" xml:id="C32.S2.SS5.p2.m8">f_{4}</Math> are functions of <Math mode="inline" xml:id="C32.S2.SS5.p2.m9">z</Math> , with <Math equation-number="32.2.20" mode="display" xml:id="C32.S2.E20">\mu_{1}+\mu_{2}+\mu_{3}+\mu_{4}=1,</Math> <Math equation-number="32.2.21" mode="display" xml:id="C32.S2.E21">f_{1}(z)+f_{3}(z)=\sqrt{z},</Math> <Math equation-number="32.2.22" mode="display" xml:id="C32.S2.E22">f_{2}(z)+f_{4}(z)=\sqrt{z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C32.S2.SS5.p2.s2">
+Then <Math mode="inline" xml:id="C32.S2.SS5.p2.m10">w(z)=1-(\sqrt{z}/f_{1}(z))</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS5.p2.m11">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math equation-number="32.2.23" mode="display" xml:id="C32.S2.E23">(\alpha,\beta,\gamma,\delta)=(\tfrac{1}{2}\mu_{1}^{2},-\tfrac{1}{2}\mu_{3}^{2} ,\mu_{4}-\mu_{2},-\tfrac{1}{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S2.SS6">
+<title>Coalescence Cascade</title>        
+  
+<para xml:id="C32.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C32.S2.SS6.p1.s1">
+ <Math mode="inline" xml:id="C32.S2.SS6.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S2.SS6.p1.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> are obtained from <Math mode="inline" xml:id="C32.S2.SS6.p1.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> by a coalescence cascade: <Math equation-number="32.2.24" mode="display" xml:id="C32.S2.E24">\begin{array}[]{ccccccc}\mbox{$\mbox{P}_{\mbox{\scriptsize VI}}$}&amp; \longrightarrow&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize V}}$}&amp;\longrightarrow&amp;\mbox {$\mbox{P}_{\mbox{\scriptsize IV}}$}\\ &amp;&amp;\big{\downarrow}&amp;&amp;\big{\downarrow}\\ &amp;&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize III}}$}&amp;\longrightarrow&amp;\mbox{$\mbox{P}_{ \mbox{\scriptsize II}}$}&amp;\longrightarrow&amp;\mbox{$\mbox{P}_{\mbox{\scriptsize I} }$}\end{array}</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="43" xml:id="C32.S2.SS6.p2.s1">
+For example, if in <Math mode="inline" xml:id="C32.S2.SS6.p2.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> <Math equation-number="32.2.25" mode="display" xml:id="C32.S2.E25">w(z;\alpha)=\epsilon W(\zeta)+\frac{1}{\epsilon^{5}},</Math> <Math equation-number="32.2.26" mode="display" xml:id="C32.S2.E26">z=\epsilon^{2}\zeta-\frac{6}{\epsilon^{10}}, \alpha=\frac{4}{\epsilon^{15}},</Math> then <Math equation-number="32.2.27" mode="display" xml:id="C32.S2.E27">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}\zeta}^{2}}=6W^{2}+\zeta+\epsilon^{6}(2W^{ 3}+\zeta W);</Math> thus in the limit as <Math mode="inline" xml:id="C32.S2.SS6.p2.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p2.m3">W(\zeta)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p2.m4">\mbox{P}_{\mbox{\scriptsize I}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p2.m5">z=\zeta</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C32.S2.SS6.p3.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p3.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> <Math equation-number="32.2.28" mode="display" xml:id="C32.S2.E28">w(z;\alpha,\beta,\gamma,\delta)=1+2\epsilon W(\zeta;a),</Math> <Math equation-number="32.2.29" mode="display" xml:id="C32.S2.E29">z=1+\epsilon^{2}\zeta, \alpha=-\tfrac{1}{2}\epsilon^{-6}, \beta=\tfrac{1}{2}\epsilon^{-6}+2a\epsilon^{-3}, \gamma=-\delta=\tfrac{1}{4}\epsilon^{-6},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p3.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p3.m3">W(\zeta;a)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p3.m4">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p3.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p3.m6">\alpha=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C32.S2.SS6.p4.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p4.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> <Math equation-number="32.2.30" mode="display" xml:id="C32.S2.E30">w(z;\alpha,\beta)=2^{2/3}\epsilon^{-1}W(\zeta;a)+\epsilon^{-3},</Math> <Math equation-number="32.2.31" mode="display" xml:id="C32.S2.E31">z=2^{-2/3}\epsilon\zeta-\epsilon^{-3}, \alpha=-2a-\tfrac{1}{2}\epsilon^{-6}, \beta=-\tfrac{1}{2}\epsilon^{-12},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p4.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p4.m3">W(\zeta;a)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p4.m4">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p4.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p4.m6">\alpha=a</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C32.S2.SS6.p5.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p5.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> <Math equation-number="32.2.32" mode="display" xml:id="C32.S2.E32">w(z;\alpha,\beta,\gamma,\delta)=1+\epsilon\zeta W(\zeta;a,b,c,d),</Math> <Math equation-number="32.2.33" mode="display" xml:id="C32.S2.E33">z=\zeta^{2}, \alpha=\tfrac{1}{4}a\epsilon^{-1}+\tfrac{1}{8}c\epsilon^{-2}, \beta=-\tfrac{1}{8}c\epsilon^{-2}, \gamma=\tfrac{1}{4}\epsilon b, \delta=\tfrac{1}{8}\epsilon^{2}d,</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p5.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m3">W(\zeta;a,b,c,d)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p5.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p5.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m7">\beta=b</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m8">\gamma=c</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p5.m9">\delta=d</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="47" xml:id="C32.S2.SS6.p6.s1">
+If in <Math mode="inline" xml:id="C32.S2.SS6.p6.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> <Math equation-number="32.2.34" mode="display" xml:id="C32.S2.E34">w(z;\alpha,\beta,\gamma,\delta)=\tfrac{1}{2}\sqrt{2}\epsilon W(\zeta;a,b),</Math> <Math equation-number="32.2.35" mode="display" xml:id="C32.S2.E35">z=1+\sqrt{2}\epsilon\zeta, \alpha=\tfrac{1}{2}\epsilon^{-4}, \beta=\tfrac{1}{4}b, \gamma=-\epsilon^{-4}, \delta=a\epsilon^{-2}-\tfrac{1}{2}\epsilon^{-4},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p6.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m3">W(\zeta;a,b)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p6.m4">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p6.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p6.m7">\beta=b</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S2.SS6.p7">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C32.S2.SS6.p7.s1">
+Lastly, if in <Math mode="inline" xml:id="C32.S2.SS6.p7.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> <Math equation-number="32.2.36" mode="display" xml:id="C32.S2.E36">w(z;\alpha,\beta,\gamma,\delta)=W(\zeta;a,b,c,d),</Math> <Math equation-number="32.2.37" mode="display" xml:id="C32.S2.E37">z=1+\epsilon\zeta, \gamma=c\epsilon^{-1}-d\epsilon^{-2}, \delta=d\epsilon^{-2},</Math> then as <Math mode="inline" xml:id="C32.S2.SS6.p7.m2">\epsilon\to 0</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m3">W(\zeta;a,b,c,d)</Math> satisfies <Math mode="inline" xml:id="C32.S2.SS6.p7.m4">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math mode="inline" xml:id="C32.S2.SS6.p7.m5">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m6">\alpha=a</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m7">\beta=b</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m8">\gamma=c</Math> , <Math mode="inline" xml:id="C32.S2.SS6.p7.m9">\delta=d</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S3">
+<title>Graphics</title>         
+  
+<subsection xml:id="C32.S3.SS1">
+<title>First Painlevé Equation</title>         
+<para xml:id="C32.S3.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C32.S3.SS1.p1.s1">
+Plots of solutions <Math mode="inline" xml:id="C32.S3.SS1.p1.m1">w_{k}(x)</Math> of <Math mode="inline" xml:id="C32.S3.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize I}}</Math> with <Math mode="inline" xml:id="C32.S3.SS1.p1.m3">w_{k}(0)=0</Math> and <Math mode="inline" xml:id="C32.S3.SS1.p1.m4">w_{k}^{\prime}(0)=k</Math> for various values of <Math mode="inline" xml:id="C32.S3.SS1.p1.m5">k</Math> , and the parabola <Math mode="inline" xml:id="C32.S3.SS1.p1.m6">6w^{2}+x=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="50" xml:id="C32.S3.SS1.p1.s2">
+For analytical explanation see §LABEL:sec:PT.AAr.PI.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="51" xml:id="C32.S3.F1.s1">
+Figure 32.3.1: <Math mode="inline" xml:id="C32.S3.F1.m7">w_{k}(x)</Math> for <Math mode="inline" xml:id="C32.S3.F1.m8">-12\leq x\leq 1.3</Math>3 and <Math mode="inline" xml:id="C32.S3.F1.m9">k=0.5</Math> , <Math mode="inline" xml:id="C32.S3.F1.m10">0.75</Math> , <Math mode="inline" xml:id="C32.S3.F1.m11">1</Math> , <Math mode="inline" xml:id="C32.S3.F1.m12">1.25</Math> , and the parabola <Math mode="inline" xml:id="C32.S3.F1.m13">6w^{2}+x=0</Math> , shown in black.
+</sentence>           
+<sentence sentence-num-in-section="52" xml:id="C32.S3.F2.s1">
+Figure 32.3.2: <Math mode="inline" xml:id="C32.S3.F2.m8">w_{k}(x)</Math> for <Math mode="inline" xml:id="C32.S3.F2.m9">-12\leq x\leq 2.43</Math> and <Math mode="inline" xml:id="C32.S3.F2.m10">k=-0.</Math>5 , <Math mode="inline" xml:id="C32.S3.F2.m11">-0.25</Math> , <Math mode="inline" xml:id="C32.S3.F2.m12">0</Math> , <Math mode="inline" xml:id="C32.S3.F2.m13">1</Math> , <Math mode="inline" xml:id="C32.S3.F2.m14">2</Math> , and the parabola <Math mode="inline" xml:id="C32.S3.F2.m15">6w^{2}+x=0</Math> , shown in black.
+</sentence>             
+<sentence sentence-num-in-section="53" xml:id="C32.S3.F3.s1">
+Figure 32.3.3: <Math mode="inline" xml:id="C32.S3.F3.m5">w_{k}(x)</Math> for <Math mode="inline" xml:id="C32.S3.F3.m6">-12\leq x\leq 0.73</Math> and <Math mode="inline" xml:id="C32.S3.F3.m7">k=1.85185\;</Math>3 , <Math mode="inline" xml:id="C32.S3.F3.m8">1.85185\;5</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F3.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F3.m10">-5.</Math>2 , approximately. The parabola <Math mode="inline" xml:id="C32.S3.F3.m11">6w^{2}+x=0</Math> is shown in black.
+</sentence>           
+<sentence sentence-num-in-section="54" xml:id="C32.S3.F4.s1">
+Figure 32.3.4: <Math mode="inline" xml:id="C32.S3.F4.m5">w_{k}(x)</Math> for <Math mode="inline" xml:id="C32.S3.F4.m6">-12\leq x\leq 2.3</Math> and <Math mode="inline" xml:id="C32.S3.F4.m7">k=-0.45142\;</Math>7 , <Math mode="inline" xml:id="C32.S3.F4.m8">-0.45142\;</Math>8 . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F4.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F4.m10">-4.</Math>8 , approximately. The parabola <Math mode="inline" xml:id="C32.S3.F4.m11">6w^{2}+x=0</Math> is shown in black.
+</sentence> 
+   
+</subsection>
+ 
+<subsection xml:id="C32.S3.SS2">
+<title>Second Painlevé Equation with <Math mode="inline" xml:id="C32.S3.SS2.m1">\alpha=0</Math></title>         
+<para xml:id="C32.S3.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C32.S3.SS2.p1.s1">
+Here <Math mode="inline" xml:id="C32.S3.SS2.p1.m1">w_{k}(x)</Math> is the solution of <Math mode="inline" xml:id="C32.S3.SS2.p1.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S3.SS2.p1.m3">\alpha=0</Math> and such that <Math equation-number="32.3.1" mode="display" xml:id="C32.S3.E1">w_{k}(x)\sim k\mathrm{Ai}\left(x\right), subject to x\to+\infty;</Math> compare §LABEL:sec:PT.AAr.PII.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="56" xml:id="C32.S3.F5.s1">
+Figure 32.3.5: <Math mode="inline" xml:id="C32.S3.F5.m5">w_{k}(x)</Math> and <Math mode="inline" xml:id="C32.S3.F5.m6">k\mathrm{Ai}\left(x\right)</Math> for <Math mode="inline" xml:id="C32.S3.F5.m7">-10\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F5.m8">k=0.5</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F5.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F5.m10">-0.</Math>4 , approximately.
+</sentence>           
+<sentence sentence-num-in-section="57" xml:id="C32.S3.F6.s1">
+Figure 32.3.6: <Math mode="inline" xml:id="C32.S3.F6.m5">w_{k}(x)</Math> for <Math mode="inline" xml:id="C32.S3.F6.m6">-10\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F6.m7">k=0.99</Math>9 , <Math mode="inline" xml:id="C32.S3.F6.m8">1.001</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F6.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F6.m10">-2.</Math>8 , approximately. The parabola <Math mode="inline" xml:id="C32.S3.F6.m11">2w^{2}+x=0</Math> is shown in black.
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C32.S3.SS3">
+<title>Fourth Painlevé Equation with <Math mode="inline" xml:id="C32.S3.SS3.m1">\beta=0</Math></title>        
+ 
+<para xml:id="C32.S3.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C32.S3.SS3.p1.s1">
+Here <Math mode="inline" xml:id="C32.S3.SS3.p1.m1">u=u_{k}(x;\nu)</Math> is the solution of <Math equation-number="32.3.2" mode="display" xml:id="C32.S3.E2">\frac{{\mathrm{d}}^{2}u}{{\mathrm{d}x}^{2}}=3u^{5}+2xu^{3}+\left(\tfrac{1}{4}x ^{2}-\nu-\tfrac{1}{2}\right)u,</Math> such that <Math equation-number="32.3.3" mode="display" xml:id="C32.S3.E3">u\sim kU\left(-\nu-\tfrac{1}{2},x\right), subject to x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C32.S3.SS3.p1.s2">
+The corresponding solution of <Math mode="inline" xml:id="C32.S3.SS3.p1.m2">\mbox{P}_{\mbox{\scriptsize IV}}</Math> is given by <Math equation-number="32.3.4" mode="display" xml:id="C32.S3.E4">w(x)=2\sqrt{2}u_{k}^{2}(\sqrt{2}x,\nu),</Math> with <Math mode="inline" xml:id="C32.S3.SS3.p1.m3">\beta=0</Math> , <Math mode="inline" xml:id="C32.S3.SS3.p1.m4">\alpha=2\nu+1</Math> , and <Math equation-number="32.3.5" mode="display" xml:id="C32.S3.E5">w(x)\sim 2\sqrt{2}k^{2}{U^{2}}\left(-\nu-\tfrac{1}{2},\sqrt{2}x\right), subject to x\to+\infty;</Math> compare (LABEL:eq:PT.DE.aPIV) and §LABEL:sec:PT.AAr.PIV.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C32.S3.SS3.p1.s3">
+If we set <Math mode="inline" xml:id="C32.S3.SS3.p1.m5">\ifrac{{\mathrm{d}}^{2}u}{{\mathrm{d}x}^{2}}=0</Math> in (LABEL:eq:PT.GR.aPIV) and solve for <Math mode="inline" xml:id="C32.S3.SS3.p1.m6">u</Math> , then <Math equation-number="32.3.6" mode="display" xml:id="C32.S3.E6">u^{2}=-\tfrac{1}{3}x\pm\tfrac{1}{6}\sqrt{x^{2}+12\nu+6}</Math>.
+</sentence>
+
+</para>
+           
+<sentence sentence-num-in-section="61" xml:id="C32.S3.F7.s1">
+Figure 32.3.7: <Math mode="inline" xml:id="C32.S3.F7.m5">u_{k}(x;-\tfrac{1}{2})</Math> for <Math mode="inline" xml:id="C32.S3.F7.m6">-12\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F7.m7">k=0.33554\;69</Math>1 , <Math mode="inline" xml:id="C32.S3.F7.m8">0.33554\;692</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F7.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F7.m10">-5.</Math>0 , approximately. The parabolas <Math mode="inline" xml:id="C32.S3.F7.m11">u^{2}+\tfrac{1}{2}x=0</Math> , <Math mode="inline" xml:id="C32.S3.F7.m12">u^{2}+\tfrac{1}{6}x=0</Math> are shown in black and green, respectively.
+</sentence> 
+          
+<sentence sentence-num-in-section="62" xml:id="C32.S3.F8.s1">
+Figure 32.3.8: <Math mode="inline" xml:id="C32.S3.F8.m4">u_{k}(x;\tfrac{1}{2})</Math> for <Math mode="inline" xml:id="C32.S3.F8.m5">-12\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F8.m6">k=0.4744</Math>2 , <Math mode="inline" xml:id="C32.S3.F8.m7">0.47443</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F8.m8">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F8.m9">-2.</Math>2 , approximately. The curves <Math mode="inline" xml:id="C32.S3.F8.m10">u^{2}+\tfrac{1}{3}x\pm\tfrac{1}{6}\sqrt{x^{2}+12}=0</Math> are shown in green and black, respectively.
+</sentence>             
+<sentence sentence-num-in-section="63" xml:id="C32.S3.F9.s1">
+Figure 32.3.9: <Math mode="inline" xml:id="C32.S3.F9.m5">u_{k}(x;\tfrac{3}{2})</Math> for <Math mode="inline" xml:id="C32.S3.F9.m6">-12\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F9.m7">k=0.3873</Math>6 , <Math mode="inline" xml:id="C32.S3.F9.m8">0.38737</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F9.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F9.m10">-1.</Math>0 , approximately. The curves <Math mode="inline" xml:id="C32.S3.F9.m11">u^{2}+\tfrac{1}{3}x\pm\tfrac{1}{6}\sqrt{x^{2}+24}=0</Math> are shown in green and black, respectively.
+</sentence>        
+   
+<sentence sentence-num-in-section="64" xml:id="C32.S3.F10.s1">
+Figure 32.3.10: <Math mode="inline" xml:id="C32.S3.F10.m5">u_{k}(x;\tfrac{5}{2})</Math> for <Math mode="inline" xml:id="C32.S3.F10.m6">-12\leq x\leq 4</Math> with <Math mode="inline" xml:id="C32.S3.F10.m7">k=0.24499\;</Math>2 , <Math mode="inline" xml:id="C32.S3.F10.m8">0.24499\;3</Math> . The two graphs are indistinguishable when <Math mode="inline" xml:id="C32.S3.F10.m9">x</Math> exceeds <Math mode="inline" xml:id="C32.S3.F10.m10">-0.6</Math> , approximately. The curves <Math mode="inline" xml:id="C32.S3.F10.m11">u^{2}+\tfrac{1}{3}x\pm\tfrac{1}{6}\sqrt{x^{2}+36}=0</Math> are shown in green and black, respectively.
+</sentence>  
+    
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S4">
+<title>Isomonodromy Problems</title>         
+<subsection xml:id="C32.S4.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C32.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="65" xml:id="C32.S4.SS1.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S4.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> can be expressed as the compatibility condition of a linear system, called an isomonodromy problem or Lax pair.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="66" xml:id="C32.S4.SS1.p1.s2">
+Suppose <Math equation-number="32.4.1" mode="display" xml:id="C32.S4.E1">\frac{\partial\boldsymbol{{\Psi}}}{\partial\lambda}=\mathbf{A}(z,\lambda) \boldsymbol{{\Psi}}, \frac{\partial\boldsymbol{{\Psi}}}{\partial z}=\mathbf{B}(z,\lambda) \boldsymbol{{\Psi}},</Math> is a linear system in which <Math mode="inline" xml:id="C32.S4.SS1.p1.m3">\mathbf{A}</Math> and <Math mode="inline" xml:id="C32.S4.SS1.p1.m4">\mathbf{B}</Math> are matrices and <Math mode="inline" xml:id="C32.S4.SS1.p1.m5">\lambda</Math> is independent of <Math mode="inline" xml:id="C32.S4.SS1.p1.m6">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="67" xml:id="C32.S4.SS1.p1.s3">
+Then the equation <Math equation-number="32.4.2" mode="display" xml:id="C32.S4.E2">\frac{{\partial}^{2}\boldsymbol{{\Psi}}}{\partial z\partial\lambda}=\frac{{ \partial}^{2}\boldsymbol{{\Psi}}}{\partial\lambda\partial z},</Math> is satisfied provided that <Math equation-number="32.4.3" mode="display" xml:id="C32.S4.E3">\frac{\partial\mathbf{A}}{\partial z}-\frac{\partial\mathbf{B}}{\partial \lambda}+\mathbf{A}\mathbf{B}-\mathbf{B}\mathbf{A}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="68" xml:id="C32.S4.SS1.p1.s4">
+(LABEL:eq:PT.IP.comcond) is the compatibility condition of (LABEL:eq:PT.IP.gen).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="69" xml:id="C32.S4.SS1.p1.s5">
+Isomonodromy problems for Painlevé equations are not unique.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS2">
+<title>First Painlevé Equation</title>         
+<para xml:id="C32.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="70" xml:id="C32.S4.SS2.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> is the compatibility condition of (LABEL:eq:PT.IP.gen) with <Math equation-number="32.4.4" mode="display" xml:id="C32.S4.E4">\mathbf{A}(z,\lambda)=(4\lambda^{4}+2w^{2}+z)\begin{bmatrix}1&amp;0\\ 0&amp;-1\end{bmatrix}-i(4\lambda^{2}w+2w^{2}+z)\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}-\left(2\lambda w^{\prime}+\frac{1}{2\lambda}\right)\begin{ bmatrix}0&amp;1\\ 1&amp;0\end{bmatrix},</Math> <Math equation-number="32.4.5" mode="display" xml:id="C32.S4.E5">\mathbf{B}(z,\lambda)=\left(\lambda+\dfrac{w}{\lambda}\right)\begin{bmatrix}1&amp; 0\\ 0&amp;-1\end{bmatrix}-\dfrac{iw}{\lambda}\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS3">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C32.S4.SS3.p1.s1">
+ <Math mode="inline" xml:id="C32.S4.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> is the compatibility condition of (LABEL:eq:PT.IP.gen) with <Math equation-number="32.4.6" mode="display" xml:id="C32.S4.E6">\mathbf{A}(z,\lambda)=-i(4\lambda^{2}+2w^{2}+z)\begin{bmatrix}1&amp;0\\ 0&amp;-1\end{bmatrix}-2w^{\prime}\begin{bmatrix}0&amp;-i\\ i&amp;0\end{bmatrix}+\left(4\lambda w-\frac{\alpha}{\lambda}\right)\begin{bmatrix} 0&amp;1\\ 1&amp;0\end{bmatrix},</Math> <Math equation-number="32.4.7" mode="display" xml:id="C32.S4.E7">\mathbf{B}(z,\lambda)=\begin{bmatrix}-i\lambda&amp;w\\ w&amp;i\lambda\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="72" xml:id="C32.S4.SS3.p1.s2">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS4">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S4.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="73" xml:id="C32.S4.SS4.p1.s1">
+The compatibility condition of (LABEL:eq:PT.IP.gen) with <Math equation-number="32.4.8" mode="display" xml:id="C32.S4.E8">\mathbf{A}(z,\lambda)=\begin{bmatrix}\tfrac{1}{4}z&amp;0\\ 0&amp;-\tfrac{1}{4}z\end{bmatrix}+\begin{bmatrix}-\tfrac{1}{2}\theta_{\infty}&amp;u_{0 }\\ u_{1}&amp;\tfrac{1}{2}\theta_{\infty}\end{bmatrix}\dfrac{1}{\lambda}+\begin{ bmatrix}v_{0}-\tfrac{1}{4}z&amp;-v_{1}v_{0}\\ \ifrac{(v_{0}-\tfrac{1}{2}z)}{v_{1}}&amp;\tfrac{1}{4}z-v_{0}\end{bmatrix}\frac{1}{ \lambda^{2}},</Math> <Math equation-number="32.4.9" mode="display" xml:id="C32.S4.E9">\mathbf{B}(z,\lambda)=\begin{bmatrix}\tfrac{1}{4}&amp;0\\ 0&amp;-\tfrac{1}{4}\end{bmatrix}\lambda+\begin{bmatrix}0&amp;u_{0}\\ u_{1}&amp;0\end{bmatrix}\dfrac{1}{z}-\begin{bmatrix}v_{0}-\tfrac{1}{4}z&amp;-v_{1}v_{0 }\\ \ifrac{(v_{0}-\tfrac{1}{2}z)}{v_{1}}&amp;\tfrac{1}{4}z-v_{0}\end{bmatrix}\frac{1}{ z\lambda},</Math> where <Math mode="inline" xml:id="C32.S4.SS4.p1.m1">\theta_{\infty}</Math> is an arbitrary constant, is <Math equation-number="32.4.10" mode="display" xml:id="C32.S4.E10">zu_{0}^{\prime}=\theta_{\infty}u_{0}-zv_{0}v_{1},</Math> <Math equation-number="32.4.11" mode="display" xml:id="C32.S4.E11">zu_{1}^{\prime}=-\theta_{\infty}u_{1}-(\ifrac{z(2v_{0}-z)}{(2v_{1})}),</Math> <Math equation-number="32.4.12" mode="display" xml:id="C32.S4.E12">zv_{0}^{\prime}=2v_{0}u_{1}v_{1}+v_{0}+(u_{0}(2v_{0}-z)/v_{1}),</Math> <Math equation-number="32.4.13" mode="display" xml:id="C32.S4.E13">zv_{1}^{\prime}=2u_{0}-2u_{1}v_{1}^{2}-\theta_{\infty}v_{1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="74" xml:id="C32.S4.SS4.p1.s2">
+If <Math mode="inline" xml:id="C32.S4.SS4.p1.m2">w=-u_{0}/(v_{0}v_{1})</Math> , then <Math equation-number="32.4.14" mode="display" xml:id="C32.S4.E14">zw^{\prime}=(4v_{0}-z)w^{2}+(2\theta_{\infty}-1)w+z,</Math> and <Math mode="inline" xml:id="C32.S4.SS4.p1.m3">w</Math> satisfies <Math mode="inline" xml:id="C32.S4.SS4.p1.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.4.15" mode="display" xml:id="C32.S4.E15">(\alpha,\beta,\gamma,\delta)=\left(2\theta_{0},2(1-\theta_{\infty}),1,-1\right),</Math> where <Math equation-number="32.4.16" mode="display" xml:id="C32.S4.E16">\theta_{0}=\frac{4v_{0}}{z}\left(\theta_{\infty}\left(1-\frac{z}{4v_{0}}\right )+\frac{z-2v_{0}}{2v_{0}v_{1}}u_{0}+u_{1}v_{1}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="75" xml:id="C32.S4.SS4.p1.s3">
+Note that the right-hand side of the last equation is a first integral of the system (LABEL:eq:PT.IP.MIIIc1)–(LABEL:eq:PT.IP.MIIIc4).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S4.SS5">
+<title>Other Painlevé Equations</title>         
+<para xml:id="C32.S4.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C32.S4.SS5.p1.s1">
+For isomonodromy problems for <Math mode="inline" xml:id="C32.S4.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> , <Math mode="inline" xml:id="C32.S4.SS5.p1.m2">\mbox{P}_{\mbox{\scriptsize V}}</Math> , and <Math mode="inline" xml:id="C32.S4.SS5.p1.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S5">
+<title>Integral Equations</title>           
+<para xml:id="C32.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="77" xml:id="C32.S5.p1.s1">
+Let <Math mode="inline" xml:id="C32.S5.p1.m1">K(z,\zeta)</Math> be the solution of <Math equation-number="32.5.1" mode="display" xml:id="C32.S5.E1">K(z,\zeta)=k\mathrm{Ai}\left(\frac{z+\zeta}{2}\right)+\frac{k^{2}}{4}\*\int_{z }^{\infty}\!\!\!\int_{z}^{\infty}K(z,s)\mathrm{Ai}\left(\frac{s+t}{2}\right) \mathrm{Ai}\left(\frac{t+\zeta}{2}\right)\mathrm{d}s\mathrm{d}t,</Math> where <Math mode="inline" xml:id="C32.S5.p1.m2">k</Math> is a real constant, and <Math mode="inline" xml:id="C32.S5.p1.m3">\mathrm{Ai}\left(z\right)</Math> is defined in §LABEL:sec:AI.DE. Then <Math equation-number="32.5.2" mode="display" xml:id="C32.S5.E2">w(z)=K(z,z),</Math> satisfies <Math mode="inline" xml:id="C32.S5.p1.m4">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S5.p1.m5">\alpha=0</Math> and the boundary condition <Math equation-number="32.5.3" mode="display" xml:id="C32.S5.E3">w(z)\sim k\mathrm{Ai}\left(z\right), subject to z\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C32.S6">
+<title>Hamiltonian Structure</title>          
+ 
+<subsection xml:id="C32.S6.SS1">
+<title>Introduction</title>         
+<para xml:id="C32.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="78" xml:id="C32.S6.SS1.p1.s1">
+ <Math mode="inline" xml:id="C32.S6.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> – <Math mode="inline" xml:id="C32.S6.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> can be written as a Hamiltonian system <Math equation-number="32.6.1" mode="display" xml:id="C32.S6.E1">\frac{\mathrm{d}q}{\mathrm{d}z}=\frac{\partial\mathrm{H}}{\partial p}, \frac{\mathrm{d}p}{\mathrm{d}z}=-\frac{\partial\mathrm{H}}{\partial q},</Math> for suitable (non-autonomous) Hamiltonian functions <Math mode="inline" xml:id="C32.S6.SS1.p1.m3">\mathrm{H}(q,p,z)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S6.SS2">
+<title>First Painlevé Equation</title>         
+<para xml:id="C32.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C32.S6.SS2.p1.s1">
+The Hamiltonian for <Math mode="inline" xml:id="C32.S6.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> is <Math equation-number="32.6.2" mode="display" xml:id="C32.S6.E2">\mathrm{H}_{\mbox{\scriptsize I}}(q,p,z)=\tfrac{1}{2}p^{2}-2q^{3}-zq,</Math> and so <Math equation-number="32.6.3" mode="display" xml:id="C32.S6.E3">q^{\prime}=p,</Math> <Math equation-number="32.6.4" mode="display" xml:id="C32.S6.E4">p^{\prime}=6q^{2}+z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C32.S6.SS2.p1.s2">
+Then <Math mode="inline" xml:id="C32.S6.SS2.p1.m2">q=w</Math> satisfies <Math mode="inline" xml:id="C32.S6.SS2.p1.m3">\mbox{P}_{\mbox{\scriptsize I}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="81" xml:id="C32.S6.SS2.p1.s3">
+The function <Math equation-number="32.6.5" mode="display" xml:id="C32.S6.E5">\sigma=\mathrm{H}_{\mbox{\scriptsize I}}(q,p,z),</Math> defined by (LABEL:eq:PT.HM.DE11) satisfies <Math equation-number="32.6.6" mode="display" xml:id="C32.S6.E6">\left(\sigma^{\prime\prime}\right)^{2}+4\left(\sigma^{\prime}\right)^{3}+2z \sigma^{\prime}-2\sigma=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="82" xml:id="C32.S6.SS2.p1.s4">
+Conversely, if <Math mode="inline" xml:id="C32.S6.SS2.p1.m4">\sigma</Math> is a solution of (LABEL:eq:PT.HM.DE14), then <Math equation-number="32.6.7" mode="display" xml:id="C32.S6.E7">q=-\sigma^{\prime},</Math> <Math equation-number="32.6.8" mode="display" xml:id="C32.S6.E8">p=-\sigma^{\prime\prime},</Math> are solutions of (LABEL:eq:PT.HM.DE12) and (LABEL:eq:PT.HM.DE13).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S6.SS3">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S6.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C32.S6.SS3.p1.s1">
+The Hamiltonian for <Math mode="inline" xml:id="C32.S6.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> is <Math equation-number="32.6.9" mode="display" xml:id="C32.S6.E9">\mathrm{H}_{\mbox{\scriptsize II}}(q,p,z)=\tfrac{1}{2}p^{2}-(q^{2}+\tfrac{1}{2 }z)p-(\alpha+\tfrac{1}{2})q,</Math> and so <Math equation-number="32.6.10" mode="display" xml:id="C32.S6.E10">q^{\prime}=p-q^{2}-\tfrac{1}{2}z,</Math> <Math equation-number="32.6.11" mode="display" xml:id="C32.S6.E11">p^{\prime}=2qp+\alpha+\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="84" xml:id="C32.S6.SS3.p1.s2">
+Then <Math mode="inline" xml:id="C32.S6.SS3.p1.m2">q=w</Math> satisfies <Math mode="inline" xml:id="C32.S6.SS3.p1.m3">\mbox{P}_{\mbox{\scriptsize II}}</Math> and <Math mode="inline" xml:id="C32.S6.SS3.p1.m4">p</Math> satisfies <Math equation-number="32.6.12" mode="display" xml:id="C32.S6.E12">pp^{\prime\prime}=\tfrac{1}{2}(p^{\prime})^{2}+2p^{3}-zp^{2}-\tfrac{1}{2}( \alpha+\tfrac{1}{2})^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="85" xml:id="C32.S6.SS3.p1.s3">
+The function <Math mode="inline" xml:id="C32.S6.SS3.p1.m5">\sigma(z)=\mathrm{H}_{\mbox{\scriptsize II}}(q,p,z)</Math> defined by ( LABEL:eq:PT.HM.DE21) satisfies <Math equation-number="32.6.13" mode="display" xml:id="C32.S6.E13">\left(\sigma^{\prime\prime}\right)^{2}+4\left(\sigma^{\prime}\right)^{3}+2 \sigma^{\prime}\left(z\sigma^{\prime}-\sigma\right)=\tfrac{1}{4}(\alpha+\tfrac {1}{2})^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S6.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="86" xml:id="C32.S6.SS3.p2.s1">
+Conversely, if <Math mode="inline" xml:id="C32.S6.SS3.p2.m1">\sigma(z)</Math> is a solution of (LABEL:eq:PT.HM.DE25), then <Math equation-number="32.6.14" mode="display" xml:id="C32.S6.E14">q=\ifrac{(4\sigma^{\prime\prime}+2\alpha+1)}{(8\sigma^{\prime})},</Math> <Math equation-number="32.6.15" mode="display" xml:id="C32.S6.E15">p=-2\sigma^{\prime},</Math> are solutions of (LABEL:eq:PT.HM.DE22) and (LABEL:eq:PT.HM.DE23).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S6.SS4">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S6.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="87" xml:id="C32.S6.SS4.p1.s1">
+The Hamiltonian for <Math mode="inline" xml:id="C32.S6.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> is <Math equation-number="32.6.16" mode="display" xml:id="C32.S6.E16">z\mathrm{H}_{\mbox{\scriptsize III}}(q,p,z)=q^{2}p^{2}-{\left(\kappa_{\infty} zq^{2}+(2\theta_{0}+1)q-\kappa_{0}z\right)p}+\kappa_{\infty}(\theta_{0}+\theta _{\infty})zq,</Math> and so <Math equation-number="32.6.17" mode="display" xml:id="C32.S6.E17">zq^{\prime}=2q^{2}p-\kappa_{\infty}zq^{2}-(2\theta_{0}+1)q+\kappa_{0}z,</Math> , <Math equation-number="32.6.18" mode="display" xml:id="C32.S6.E18">zp^{\prime}=-2qp^{2}+2\kappa_{\infty}zqp+(2\theta_{0}+1)p-\kappa_{\infty}( \theta_{0}+\theta_{\infty})z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="88" xml:id="C32.S6.SS4.p1.s2">
+Then <Math mode="inline" xml:id="C32.S6.SS4.p1.m2">q=w</Math> satisfies <Math mode="inline" xml:id="C32.S6.SS4.p1.m3">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.6.19" mode="display" xml:id="C32.S6.E19">(\alpha,\beta,\gamma,\delta)=\left(-2\kappa_{\infty}\theta_{\infty},2\kappa_{0 }(\theta_{0}+1),\kappa_{\infty}^{2},-\kappa_{0}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="89" xml:id="C32.S6.SS4.p1.s3">
+The function <Math equation-number="32.6.20" mode="display" xml:id="C32.S6.E20">\sigma=z\mathrm{H}_{\mbox{\scriptsize III}}(q,p,z)+pq+\theta_{0}^{2}-\tfrac{1} {2}\kappa_{0}\kappa_{\infty}z^{2}</Math> defined by (LABEL:eq:PT.HM3.DE31) satisfies <Math equation-number="32.6.21" mode="display" xml:id="C32.S6.E21">(z\sigma^{\prime\prime}-\sigma^{\prime})^{2}+2\left((\sigma^{\prime})^{2}- \kappa_{0}^{2}\kappa_{\infty}^{2}z^{2}\right)(z\sigma^{\prime}-2\sigma)+8 \kappa_{0}\kappa_{\infty}\theta_{0}\theta_{\infty}z\sigma^{\prime}=4\kappa_{0} ^{2}\kappa_{\infty}^{2}(\theta_{0}^{2}+\theta_{\infty}^{2})z^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="90" xml:id="C32.S6.SS4.p1.s4">
+Conversely, if <Math mode="inline" xml:id="C32.S6.SS4.p1.m4">\sigma</Math> is a solution of (LABEL:eq:PT.HM3.DE34), then <Math equation-number="32.6.22" mode="display" xml:id="C32.S6.E22">q=\frac{\kappa_{0}\left(z\sigma^{\prime\prime}-(2\theta_{0}+1)\sigma^{\prime}+ 2\kappa_{0}\kappa_{\infty}\theta_{\infty}z\right)}{\kappa_{0}^{2}\kappa_{ \infty}^{2}z^{2}-(\sigma^{\prime})^{2}},</Math> <Math equation-number="32.6.23" mode="display" xml:id="C32.S6.E23">p=\ifrac{(\sigma^{\prime}+\kappa_{0}\kappa_{\infty}z)}{(2\kappa_{0})},</Math> are solutions of (LABEL:eq:PT.HM3.DE32) and (LABEL:eq:PT.HM3.DE33).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S6.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="91" xml:id="C32.S6.SS4.p2.s1">
+The Hamiltonian for <Math mode="inline" xml:id="C32.S6.SS4.p2.m1">\mbox{P}^{\prime}_{\mbox{\scriptsize III}}</Math> (§LABEL:sec:PT.DE.APE) is <Math equation-number="32.6.24" mode="display" xml:id="C32.S6.E24">\zeta\mathrm{H}_{\mbox{\scriptsize III}}(q,p,\zeta)=q^{2}p^{2}-\left(\eta_{ \infty}q^{2}+\theta_{0}q-\eta_{0}\zeta\right)p+\tfrac{1}{2}\eta_{\infty}( \theta_{0}+\theta_{\infty})q,</Math> and so <Math equation-number="32.6.25" mode="display" xml:id="C32.S6.E25">\zeta q^{\prime}=2q^{2}p-\eta_{\infty}q^{2}-\theta_{0}q+\eta_{0}\zeta,</Math> <Math equation-number="32.6.26" mode="display" xml:id="C32.S6.E26">\zeta p^{\prime}=-2qp^{2}+2\eta_{\infty}qp+\theta_{0}p-\tfrac{1}{2}\eta_{ \infty}(\theta_{0}+\theta_{1})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="92" xml:id="C32.S6.SS4.p2.s2">
+Then <Math mode="inline" xml:id="C32.S6.SS4.p2.m2">q=u</Math> satisfies <Math mode="inline" xml:id="C32.S6.SS4.p2.m3">\mbox{P}^{\prime}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.6.27" mode="display" xml:id="C32.S6.E27">(\alpha,\beta,\gamma,\delta)=\left(-4\eta_{\infty}\theta_{\infty},4\eta_{0}( \theta_{0}+1),4\eta_{\infty}^{2},-4\eta_{0}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="93" xml:id="C32.S6.SS4.p2.s3">
+The function <Math equation-number="32.6.28" mode="display" xml:id="C32.S6.E28">\sigma=\zeta\mathrm{H}_{\mbox{\scriptsize III}}(q,p,\zeta)+\tfrac{1}{4}\theta_ {0}^{2}-\tfrac{1}{2}\eta_{0}\eta_{\infty}\zeta</Math> defined by (LABEL:eq:PT.HM3p.DE31) satisfies <Math equation-number="32.6.29" mode="display" xml:id="C32.S6.E29">\zeta^{2}(\sigma^{\prime\prime})^{2}+\left(4(\sigma^{\prime})^{2}-\eta_{0}^{2} \eta_{\infty}^{2}\right)(\zeta\sigma^{\prime}-\sigma)+\eta_{0}\eta_{\infty} \theta_{0}\theta_{\infty}\sigma^{\prime}=\tfrac{1}{4}\eta_{0}^{2}\eta_{\infty} ^{2}(\theta_{0}^{2}+\theta_{\infty}^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="94" xml:id="C32.S6.SS4.p2.s4">
+Conversely, if <Math mode="inline" xml:id="C32.S6.SS4.p2.m4">\sigma</Math> is a solution of (LABEL:eq:PT.HM3p.DE34), then <Math equation-number="32.6.30" mode="display" xml:id="C32.S6.E30">q=\frac{\eta_{0}\left(\zeta\sigma^{\prime\prime}-2\theta_{0}\sigma^{\prime}+ \eta_{0}\eta_{\infty}\theta_{\infty}\right)}{\eta_{0}^{2}\eta_{\infty}^{2}-4( \sigma^{\prime})^{2}},</Math> <Math equation-number="32.6.31" mode="display" xml:id="C32.S6.E31">p=\ifrac{(2\sigma^{\prime}+\eta_{0}\eta_{\infty}\zeta)}{(2\eta_{0})},</Math> are solutions of (LABEL:eq:PT.HM3p.DE32) and (LABEL:eq:PT.HM3p.DE33).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S6.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C32.S6.SS4.p3.s1">
+The Hamiltonian for <Math mode="inline" xml:id="C32.S6.SS4.p3.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S6.SS4.p3.m2">\gamma=0</Math> is <Math equation-number="32.6.32" mode="display" xml:id="C32.S6.E32">z\mathrm{H}_{\mbox{\scriptsize III}}(q,p,z)=q^{2}p^{2}+(\theta q-\kappa_{0}z)p -\kappa_{\infty}zq,</Math> and so <Math equation-number="32.6.33" mode="display" xml:id="C32.S6.E33">zq^{\prime}=2q^{2}p+\theta q-\kappa_{0}z,</Math> <Math equation-number="32.6.34" mode="display" xml:id="C32.S6.E34">zp^{\prime}=-2qp^{2}-\theta p+\kappa_{\infty}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="96" xml:id="C32.S6.SS4.p3.s2">
+Then <Math mode="inline" xml:id="C32.S6.SS4.p3.m3">q=w</Math> satisfies <Math mode="inline" xml:id="C32.S6.SS4.p3.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.6.35" mode="display" xml:id="C32.S6.E35">(\alpha,\beta,\gamma,\delta)=\left(2\kappa_{\infty},\kappa_{0}(\theta-1),0,- \kappa_{0}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="97" xml:id="C32.S6.SS4.p3.s3">
+The function <Math equation-number="32.6.36" mode="display" xml:id="C32.S6.E36">\sigma=z\mathrm{H}_{\mbox{\scriptsize III}}(q,p,z)+pq+\tfrac{1}{4}(\theta+1)^{2}</Math> defined by (LABEL:eq:PT.HM30.DE31) satisfies <Math equation-number="32.6.37" mode="display" xml:id="C32.S6.E37">(z\sigma^{\prime\prime}-\sigma^{\prime})^{2}+2(\sigma^{\prime})^{2}(z\sigma^{ \prime}-2\sigma)-4\kappa_{0}\kappa_{\infty}(\theta+1)\theta_{\infty}z\sigma^{ \prime}=4\kappa_{0}^{2}\kappa_{\infty}^{2}z^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="98" xml:id="C32.S6.SS4.p3.s4">
+Conversely, if <Math mode="inline" xml:id="C32.S6.SS4.p3.m5">\sigma</Math> is a solution of (LABEL:eq:PT.HM30.DE34), then <Math equation-number="32.6.38" mode="display" xml:id="C32.S6.E38">q=\ifrac{\kappa_{0}\left(z\sigma^{\prime\prime}-\theta\sigma^{\prime}+2\kappa_ {0}\kappa_{\infty}z\right)}{(\sigma^{\prime})^{2}},</Math> <Math equation-number="32.6.39" mode="display" xml:id="C32.S6.E39">p=\ifrac{\sigma^{\prime}}{(2\kappa_{0})},</Math> are solutions of (LABEL:eq:PT.HM30.DE32) and (LABEL:eq:PT.HM30.DE33).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S6.SS5">
+<title>Other Painlevé Equations</title>         
+<para xml:id="C32.S6.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="99" xml:id="C32.S6.SS5.p1.s1">
+For Hamiltonian structure for <Math mode="inline" xml:id="C32.S6.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> see ( ) , ( ) ; also ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S6.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C32.S6.SS5.p2.s1">
+For Hamiltonian structure for <Math mode="inline" xml:id="C32.S6.SS5.p2.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> see ( ) , ( ) ; also ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S6.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="101" xml:id="C32.S6.SS5.p3.s1">
+For Hamiltonian structure for <Math mode="inline" xml:id="C32.S6.SS5.p3.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> see ( ) and ( ) ; also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S7">
+<title>Bäcklund Transformations</title>            
+  
+<subsection xml:id="C32.S7.SS1">
+<title>Definition</title>         
+<para xml:id="C32.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C32.S7.SS1.p1.s1">
+With the exception of <Math mode="inline" xml:id="C32.S7.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> , a Bäcklund transformation relates a Painlevé transcendent of one type either to another of the same type but with different values of the parameters, or to another type.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS2">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C32.S7.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS2.p1.m1">w=w(z;\alpha)</Math> be a solution of <Math mode="inline" xml:id="C32.S7.SS2.p1.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="104" xml:id="C32.S7.SS2.p1.s2">
+Then the transformations <Math equation-number="32.7.1" mode="display" xml:id="C32.S7.E1">\mathcal{S}:\enskip w(z;-\alpha)=-w,</Math> and <Math equation-number="32.7.2" mode="display" xml:id="C32.S7.E2">\mathcal{T}^{\pm}:\enskip w(z;\alpha\pm 1)=-w-\frac{2\alpha\pm 1}{2w^{2}\pm 2w ^{\prime}+z},</Math> furnish solutions of <Math mode="inline" xml:id="C32.S7.SS2.p1.m3">\mbox{P}_{\mbox{\scriptsize II}}</Math> , provided that <Math mode="inline" xml:id="C32.S7.SS2.p1.m4">\alpha\neq\mp\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="105" xml:id="C32.S7.SS2.p1.s3">
+<Math mode="inline" xml:id="C32.S7.SS2.p1.m5">\mbox{P}_{\mbox{\scriptsize II}}</Math> also has the special transformation <Math equation-number="32.7.3" mode="display" xml:id="C32.S7.E3">W(\zeta;\tfrac{1}{2}\varepsilon)=\frac{2^{-1/3}\varepsilon}{w(z;0)}\frac{ \mathrm{d}}{\mathrm{d}z}w(z;0),</Math> or equivalently, <Math equation-number="32.7.4" mode="display" xml:id="C32.S7.E4">w^{2}(z;0)=2^{-1/3}\left(W^{2}(\zeta;\tfrac{1}{2}\varepsilon)-\varepsilon\frac {\mathrm{d}}{\mathrm{d}\zeta}W(\zeta;\tfrac{1}{2}\varepsilon)+\tfrac{1}{2} \zeta\right),</Math> with <Math mode="inline" xml:id="C32.S7.SS2.p1.m6">\zeta=-2^{1/3}z</Math> and <Math mode="inline" xml:id="C32.S7.SS2.p1.m7">\varepsilon=\pm 1</Math> , where <Math mode="inline" xml:id="C32.S7.SS2.p1.m8">W(\zeta;\tfrac{1}{2}\varepsilon)</Math> satisfies <Math mode="inline" xml:id="C32.S7.SS2.p1.m9">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S7.SS2.p1.m10">z=\zeta</Math> , <Math mode="inline" xml:id="C32.S7.SS2.p1.m11">\alpha=\tfrac{1}{2}\varepsilon</Math> , and <Math mode="inline" xml:id="C32.S7.SS2.p1.m12">w(z;0)</Math> satisfies <Math mode="inline" xml:id="C32.S7.SS2.p1.m13">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S7.SS2.p1.m14">\alpha=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C32.S7.SS2.p2.s1">
+The solutions <Math mode="inline" xml:id="C32.S7.SS2.p2.m1">w_{\alpha}=w(z;\alpha)</Math> , <Math mode="inline" xml:id="C32.S7.SS2.p2.m2">w_{\alpha\pm 1}=w(z;\alpha\pm 1)</Math> , satisfy the nonlinear recurrence relation <Math equation-number="32.7.5" mode="display" xml:id="C32.S7.E5">\frac{\alpha+\tfrac{1}{2}}{w_{\alpha+1}+w_{\alpha}}+\frac{\alpha-\tfrac{1}{2}} {w_{\alpha}+w_{\alpha-1}}+2w_{\alpha}^{2}+z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="107" xml:id="C32.S7.SS2.p2.s2">
+See ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS3">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="108" xml:id="C32.S7.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS3.p1.m1">w_{j}=w(z;\alpha_{j},\beta_{j},\gamma_{j},\delta_{j})</Math> , <Math mode="inline" xml:id="C32.S7.SS3.p1.m2">j=0,1,2</Math> , be solutions of <Math mode="inline" xml:id="C32.S7.SS3.p1.m3">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.7.6" mode="display" xml:id="C32.S7.E6">(\alpha_{1},\beta_{1},\gamma_{1},\delta_{1})=(-\alpha_{0},-\beta_{0},\gamma_{0 },\delta_{0}),</Math> <Math equation-number="32.7.7" mode="display" xml:id="C32.S7.E7">(\alpha_{2},\beta_{2},\gamma_{2},\delta_{2})=(-\beta_{0},-\alpha_{0},-\delta_{ 0},-\gamma_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="109" xml:id="C32.S7.SS3.p1.s2">
+Then <Math equation-number="32.7.8" mode="display" xml:id="C32.S7.E8">\mathcal{S}_{1}:\enskip w_{1}=-w_{0},</Math> , <Math equation-number="32.7.9" mode="display" xml:id="C32.S7.E9">\mathcal{S}_{2}:\enskip w_{2}=\ifrac{1}{w_{0}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C32.S7.SS3.p2.s1">
+Next, let <Math mode="inline" xml:id="C32.S7.SS3.p2.m1">W_{j}=W(z;\alpha_{j},\beta_{j},1,-1)</Math> , <Math mode="inline" xml:id="C32.S7.SS3.p2.m2">j=0,1,2,3,4</Math> , be solutions of <Math mode="inline" xml:id="C32.S7.SS3.p2.m3">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.7.10" mode="display" xml:id="C32.S7.E10">\alpha_{1}=\alpha_{3}=\alpha_{0}+2, \alpha_{2}=\alpha_{4}=\alpha_{0}-2, \beta_{1}=\beta_{2}=\beta_{0}+2, \beta_{3}=\beta_{4}=\beta_{0}-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="111" xml:id="C32.S7.SS3.p2.s2">
+Then <Math equation-number="32.7.11" mode="display" xml:id="C32.S7.E11">\mathcal{T}_{1}:\enskip W_{1}=\frac{zW_{0}^{\prime}+zW_{0}^{2}-\beta W_{0}-W_{ 0}+z}{W_{0}(zW_{0}^{\prime}+zW_{0}^{2}+\alpha W_{0}+W_{0}+z)},</Math> , <Math equation-number="32.7.12" mode="display" xml:id="C32.S7.E12">\mathcal{T}_{2}:\enskip W_{2}=-\frac{zW_{0}^{\prime}-zW_{0}^{2}-\beta W_{0}-W_ {0}+z}{W_{0}(zW_{0}^{\prime}-zW_{0}^{2}-\alpha W_{0}+W_{0}+z)},</Math> , <Math equation-number="32.7.13" mode="display" xml:id="C32.S7.E13">\mathcal{T}_{3}:\enskip W_{3}=-\frac{zW_{0}^{\prime}+zW_{0}^{2}+\beta W_{0}-W_ {0}-z}{W_{0}(zW_{0}^{\prime}+zW_{0}^{2}+\alpha W_{0}+W_{0}-z)},</Math> , <Math equation-number="32.7.14" mode="display" xml:id="C32.S7.E14">\mathcal{T}_{4}:\enskip W_{4}=\frac{zW_{0}^{\prime}-zW_{0}^{2}+\beta W_{0}-W_{ 0}-z}{W_{0}(zW_{0}^{\prime}-zW_{0}^{2}-\alpha W_{0}+W_{0}-z)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="112" xml:id="C32.S7.SS3.p2.s3">
+See ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C32.S7.SS3.p3.s1">
+If <Math mode="inline" xml:id="C32.S7.SS3.p3.m1">\gamma=0</Math> and <Math mode="inline" xml:id="C32.S7.SS3.p3.m2">\alpha\delta\neq 0</Math> , then set <Math mode="inline" xml:id="C32.S7.SS3.p3.m3">\alpha=1</Math> and <Math mode="inline" xml:id="C32.S7.SS3.p3.m4">\delta=-1</Math> , without loss of generality.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C32.S7.SS3.p3.s2">
+Let <Math mode="inline" xml:id="C32.S7.SS3.p3.m5">u_{j}=w(z;1,\beta_{j},0,-1)</Math> , <Math mode="inline" xml:id="C32.S7.SS3.p3.m6">j=0,5,6</Math> , be solutions of <Math mode="inline" xml:id="C32.S7.SS3.p3.m7">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math equation-number="32.7.15" mode="display" xml:id="C32.S7.E15">\beta_{5}=\beta_{0}+2, \beta_{6}=\beta_{0}-2</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="115" xml:id="C32.S7.SS3.p3.s3">
+Then <Math equation-number="32.7.16" mode="display" xml:id="C32.S7.E16">\mathcal{T}_{5}:\enskip u_{5}=\ifrac{(zu_{0}^{\prime}+z-(\beta_{0}+1)u_{0})}{u _{0}^{2}},</Math> , <Math equation-number="32.7.17" mode="display" xml:id="C32.S7.E17">\mathcal{T}_{6}:\enskip u_{6}=-\ifrac{(zu_{0}^{\prime}-z+(\beta_{0}-1)u_{0})}{ u_{0}^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="116" xml:id="C32.S7.SS3.p3.s4">
+Similar results hold for <Math mode="inline" xml:id="C32.S7.SS3.p3.m8">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S7.SS3.p3.m9">\delta=0</Math> and <Math mode="inline" xml:id="C32.S7.SS3.p3.m10">\beta\gamma\neq 0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="117" xml:id="C32.S7.SS3.p4.s1">
+Furthermore, <Math equation-number="32.7.18" mode="display" xml:id="C32.S7.E18">w(z;a,b,0,0)=W^{2}(\zeta;0,0,a,b), z=\tfrac{1}{2}\zeta^{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS4">
+<title>Fourth Painlevé Equation</title>         
+<para xml:id="C32.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="118" xml:id="C32.S7.SS4.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS4.p1.m1">w_{0}=w(z;\alpha_{0},\beta_{0})</Math> and <Math mode="inline" xml:id="C32.S7.SS4.p1.m2">w_{j}^{\pm}=w(z;\alpha_{j}^{\pm},\beta_{j}^{\pm})</Math> , <Math mode="inline" xml:id="C32.S7.SS4.p1.m3">j=1,2,3,4</Math> , be solutions of <Math mode="inline" xml:id="C32.S7.SS4.p1.m4">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math equation-number="32.7.19" mode="display" xml:id="C32.S7.E19">\alpha_{1}^{\pm}=\tfrac{1}{4}\left(2-2\alpha_{0}\pm 3\sqrt{-2\beta_{0}}\right), \beta_{1}^{\pm}=-\tfrac{1}{2}\left(1+\alpha_{0}\pm\tfrac{1}{2}\sqrt{-2\beta_{0 }}\right)^{2}, \alpha_{2}^{\pm}=-\tfrac{1}{4}\left(2+2\alpha_{0}\pm 3\sqrt{-2\beta_{0}}\right), \beta_{2}^{\pm}=-\tfrac{1}{2}\left(1-\alpha_{0}\pm\tfrac{1}{2}\sqrt{-2\beta_{0 }}\right)^{2}, \alpha_{3}^{\pm}=\tfrac{3}{2}-\tfrac{1}{2}\alpha_{0}\mp\tfrac{3}{4}\sqrt{-2 \beta_{0}}, \beta_{3}^{\pm}=-\tfrac{1}{2}\left(1-\alpha_{0}\pm\tfrac{1}{2}\sqrt{-2\beta_{0 }}\right)^{2}, \alpha_{4}^{\pm}=-\tfrac{3}{2}-\tfrac{1}{2}\alpha_{0}\mp\tfrac{3}{4}\sqrt{-2 \beta_{0}}, \beta_{4}^{\pm}=-\tfrac{1}{2}\left(-1-\alpha_{0}\pm\tfrac{1}{2}\sqrt{-2\beta_{ 0}}\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="119" xml:id="C32.S7.SS4.p1.s2">
+Then <Math equation-number="32.7.20" mode="display" xml:id="C32.S7.E20">\mathcal{T}_{1}^{\pm}:\enskip w_{1}^{\pm}=\frac{w_{0}^{\prime}-w_{0}^{2}-2zw_{ 0}\mp\sqrt{-2\beta_{0}}}{2w_{0}},</Math> , <Math equation-number="32.7.21" mode="display" xml:id="C32.S7.E21">\mathcal{T}_{2}^{\pm}:\enskip w_{2}^{\pm}=-\frac{w_{0}^{\prime}+w_{0}^{2}+2zw_ {0}\mp\sqrt{-2\beta_{0}}}{2w_{0}},</Math> , <Math equation-number="32.7.22" mode="display" xml:id="C32.S7.E22">\mathcal{T}_{3}^{\pm}:\enskip w_{3}^{\pm}=w_{0}+\frac{2\left(1-\alpha_{0}\mp \tfrac{1}{2}\sqrt{-2\beta_{0}}\right)w_{0}}{w_{0}^{\prime}\pm\sqrt{-2\beta_{0} }+2zw_{0}+w_{0}^{2}},</Math> , <Math equation-number="32.7.23" mode="display" xml:id="C32.S7.E23">\mathcal{T}_{4}^{\pm}:\enskip w_{4}^{\pm}=w_{0}+\frac{2\left(1+\alpha_{0}\pm \tfrac{1}{2}\sqrt{-2\beta_{0}}\right)w_{0}}{w_{0}^{\prime}\mp\sqrt{-2\beta_{0} }-2zw_{0}-w_{0}^{2}},</Math> valid when the denominators are nonzero, and where the upper signs or the lower signs are taken throughout each transformation.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="120" xml:id="C32.S7.SS4.p1.s3">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS5">
+<title>Fifth Painlevé Equation</title>         
+<para xml:id="C32.S7.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="121" xml:id="C32.S7.SS5.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS5.p1.m1">w_{j}(z_{j})=w(z_{j};\alpha_{j},\beta_{j},\gamma_{j},\delta_{j})</Math> , <Math mode="inline" xml:id="C32.S7.SS5.p1.m2">j=0,1,2</Math> , besolutions of <Math mode="inline" xml:id="C32.S7.SS5.p1.m3">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math equation-number="32.7.24" mode="display" xml:id="C32.S7.E24">z_{1}=-z_{0}, z_{2}=z_{0}, (\alpha_{1},\beta_{1},\gamma_{1},\delta_{1})=(\alpha_{0},\beta_{0},-\gamma_{0} ,\delta_{0}), (\alpha_{2},\beta_{2},\gamma_{2},\delta_{2})=(-\beta_{0},-\alpha_{0},-\gamma_{ 0},\delta_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="122" xml:id="C32.S7.SS5.p1.s2">
+Then <Math equation-number="32.7.25" mode="display" xml:id="C32.S7.E25">\mathcal{S}_{1}:\enskip w_{1}(z_{1})=w(z_{0}),</Math> , <Math equation-number="32.7.26" mode="display" xml:id="C32.S7.E26">\mathcal{S}_{2}:\enskip w_{2}(z_{2})=\ifrac{1}{w(z_{0})}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="123" xml:id="C32.S7.SS5.p2.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS5.p2.m1">W_{0}=W(z;\alpha_{0},\beta_{0},\gamma_{0},-\tfrac{1}{2})</Math> and <Math mode="inline" xml:id="C32.S7.SS5.p2.m2">W_{1}=W(z;\alpha_{1},\beta_{1},\gamma_{1},-\tfrac{1}{2})</Math> be solutions of <Math mode="inline" xml:id="C32.S7.SS5.p2.m3">\mbox{P}_{\mbox{\scriptsize V}}</Math> , where <Math equation-number="32.7.27" mode="display" xml:id="C32.S7.E27">\alpha_{1}=\tfrac{1}{8}\left(\gamma_{0}+\varepsilon_{1}\left(1-\varepsilon_{3} \sqrt{-2\beta_{0}}-\varepsilon_{2}\sqrt{2\alpha_{0}}\right)\right)^{2}, \beta_{1}=-\tfrac{1}{8}\left(\gamma_{0}-\varepsilon_{1}\left(1-\varepsilon_{3} \sqrt{-2\beta_{0}}-\varepsilon_{2}\sqrt{2\alpha_{0}}\right)\right)^{2}, \gamma_{1}=\varepsilon_{1}\left(\varepsilon_{3}\sqrt{-2\beta_{0}}-\varepsilon_ {2}\sqrt{2\alpha_{0}}\right),</Math> and <Math mode="inline" xml:id="C32.S7.SS5.p2.m4">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S7.SS5.p2.m5">j=1,2,3</Math> , independently.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="124" xml:id="C32.S7.SS5.p2.s2">
+Also let <Math equation-number="32.7.28" mode="display" xml:id="C32.S7.E28">\Phi=zW_{0}^{\prime}-\varepsilon_{2}\sqrt{2\alpha_{0}}W_{0}^{2}+\varepsilon_{3 }\sqrt{-2\beta_{0}}+\left(\varepsilon_{2}\sqrt{2\alpha_{0}}-\varepsilon_{3} \sqrt{-2\beta_{0}}+\varepsilon_{1}z\right)W_{0},</Math> and assume <Math mode="inline" xml:id="C32.S7.SS5.p2.m6">\Phi\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="125" xml:id="C32.S7.SS5.p2.s3">
+Then <Math equation-number="32.7.29" mode="display" xml:id="C32.S7.E29">\mathcal{T}_{\varepsilon_{1},\varepsilon_{2},\varepsilon_{3}}:\enskip W_{1}= \ifrac{(\Phi-2\varepsilon_{1}zW_{0})}{\Phi},</Math> provided that the numerator on the right-hand side does not vanish.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="126" xml:id="C32.S7.SS5.p2.s4">
+Again, since <Math mode="inline" xml:id="C32.S7.SS5.p2.m7">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S7.SS5.p2.m8">j=1,2,3</Math> , independently, there are eight distinct transformations of type <Math mode="inline" xml:id="C32.S7.SS5.p2.m9">\mathcal{T}_{\varepsilon_{1},\varepsilon_{2},\varepsilon_{3}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS6">
+<title>Relationship Between the Third and Fifth Painlevé Equations</title>        
+ 
+<para xml:id="C32.S7.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="127" xml:id="C32.S7.SS6.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS6.p1.m1">w=w(z;\alpha,\beta,1,-1)</Math> be a solution of <Math mode="inline" xml:id="C32.S7.SS6.p1.m2">\mbox{P}_{\mbox{\scriptsize III}}</Math> and <Math equation-number="32.7.30" mode="display" xml:id="C32.S7.E30">v=w^{\prime}-\varepsilon w^{2}+(\ifrac{(1-\varepsilon\alpha)w}{z}),</Math> with <Math mode="inline" xml:id="C32.S7.SS6.p1.m3">\varepsilon=\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="128" xml:id="C32.S7.SS6.p1.s2">
+Then <Math equation-number="32.7.31" mode="display" xml:id="C32.S7.E31">W(\zeta;\alpha_{0},\beta_{0},\gamma_{0},\delta_{0})=\frac{v-1}{v+1}, z=\sqrt{2\zeta},</Math> satisfies <Math mode="inline" xml:id="C32.S7.SS6.p1.m4">\mbox{P}_{\mbox{\scriptsize V}}</Math> with <Math equation-number="32.7.32" mode="display" xml:id="C32.S7.E32">(\alpha_{0},\beta_{0},\gamma_{0},\delta_{0})={\left((\beta-\varepsilon\alpha+2 )^{2}/32,-(\beta+\varepsilon\alpha-2)^{2}/32,-\varepsilon,0\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS7">
+<title>Sixth Painlevé Equation</title>         
+<para xml:id="C32.S7.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="129" xml:id="C32.S7.SS7.p1.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS7.p1.m1">w_{j}(z_{j})=w_{j}(z_{j};\alpha_{j},\beta_{j},\gamma_{j},\delta_{j})</Math> , <Math mode="inline" xml:id="C32.S7.SS7.p1.m2">j=0,1,2,3</Math> , be solutions of <Math mode="inline" xml:id="C32.S7.SS7.p1.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math equation-number="32.7.33" mode="display" xml:id="C32.S7.E33">z_{1}=1/z_{0},</Math> , <Math equation-number="32.7.34" mode="display" xml:id="C32.S7.E34">z_{2}=1-z_{0},</Math> , <Math equation-number="32.7.35" mode="display" xml:id="C32.S7.E35">z_{3}=1/z_{0},</Math> <Math equation-number="32.7.36" mode="display" xml:id="C32.S7.E36">(\alpha_{1},\beta_{1},\gamma_{1},\delta_{1})=(\alpha_{0},\beta_{0},-\delta_{0} +\tfrac{1}{2},-\gamma_{0}+\tfrac{1}{2}),</Math> <Math equation-number="32.7.37" mode="display" xml:id="C32.S7.E37">(\alpha_{2},\beta_{2},\gamma_{2},\delta_{2})=(\alpha_{0},-\gamma_{0},-\beta_{0 },\delta_{0}),</Math> <Math equation-number="32.7.38" mode="display" xml:id="C32.S7.E38">(\alpha_{3},\beta_{3},\gamma_{3},\delta_{3})=(-\beta_{0},-\alpha_{0},\gamma_{0 },\delta_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="130" xml:id="C32.S7.SS7.p1.s2">
+Then <Math equation-number="32.7.39" mode="display" xml:id="C32.S7.E39">\mathcal{S}_{1}:\enskip w_{1}(z_{1})=w_{0}(z_{0})/z_{0},</Math> , <Math equation-number="32.7.40" mode="display" xml:id="C32.S7.E40">\mathcal{S}_{2}:\enskip w_{2}(z_{2})=1-w_{0}(z_{0}),</Math> , <Math equation-number="32.7.41" mode="display" xml:id="C32.S7.E41">\mathcal{S}_{3}:\enskip w_{3}(z_{3})=1/w_{0}(z_{0})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="131" xml:id="C32.S7.SS7.p1.s3">
+The transformations <Math mode="inline" xml:id="C32.S7.SS7.p1.m4">\mathcal{S}_{j}</Math> , for <Math mode="inline" xml:id="C32.S7.SS7.p1.m5">j=1,2,3</Math> , generate a group of order 24.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="132" xml:id="C32.S7.SS7.p1.s4">
+See ( , p. 127) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="133" xml:id="C32.S7.SS7.p2.s1">
+Let <Math mode="inline" xml:id="C32.S7.SS7.p2.m1">w(z;\alpha,\beta,\gamma,\delta)</Math> and <Math mode="inline" xml:id="C32.S7.SS7.p2.m2">W(z;A,B,C,D)</Math> be solutions of <Math mode="inline" xml:id="C32.S7.SS7.p2.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math equation-number="32.7.42" mode="display" xml:id="C32.S7.E42">(\alpha,\beta,\gamma,\delta)=\left(\tfrac{1}{2}(\theta_{\infty}-1)^{2},-\tfrac {1}{2}\theta_{0}^{2},\tfrac{1}{2}\theta_{1}^{2},\tfrac{1}{2}(1-\theta_{2}^{2}) \right),</Math> <Math equation-number="32.7.43" mode="display" xml:id="C32.S7.E43">(A,B,C,D)=\left(\tfrac{1}{2}(\Theta_{\infty}-1)^{2},-\tfrac{1}{2}\Theta_{0}^{2 },\tfrac{1}{2}\Theta_{1}^{2},\tfrac{1}{2}(1-\Theta_{2}^{2})\right),</Math> and <Math equation-number="32.7.44" mode="display" xml:id="C32.S7.E44">\theta_{j}=\Theta_{j}+\tfrac{1}{2}\sigma,</Math> for <Math mode="inline" xml:id="C32.S7.SS7.p2.m4">j=0,1,2,\infty</Math> , where <Math equation-number="32.7.45" mode="display" xml:id="C32.S7.E45">\sigma=\theta_{0}+\theta_{1}+\theta_{2}+\theta_{\infty}-1=1-(\Theta_{0}+\Theta _{1}+\Theta_{2}+\Theta_{\infty})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="134" xml:id="C32.S7.SS7.p2.s2">
+Then <Math equation-number="32.7.46" mode="display" xml:id="C32.S7.E46">\frac{\sigma}{w-W}=\frac{z(z-1)W^{\prime}}{W(W-1)(W-z)}+\frac{\Theta_{0}}{W}+ \frac{\Theta_{1}}{W-1}+\frac{\Theta_{2}-1}{W-z}=\frac{z(z-1)w^{\prime}}{w(w-1) (w-z)}+\frac{\theta_{0}}{w}+\frac{\theta_{1}}{w-1}+\frac{\theta_{2}-1}{w-z}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S7.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="135" xml:id="C32.S7.SS7.p3.s1">
+ <Math mode="inline" xml:id="C32.S7.SS7.p3.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> also has quadratic and quartic transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="136" xml:id="C32.S7.SS7.p3.s2">
+Let <Math mode="inline" xml:id="C32.S7.SS7.p3.m2">w=w(z;\alpha,\beta,\gamma,\delta)</Math> be a solution of <Math mode="inline" xml:id="C32.S7.SS7.p3.m3">\mbox{P}_{\mbox{\scriptsize VI}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="137" xml:id="C32.S7.SS7.p3.s3">
+The quadratic transformation <Math equation-number="32.7.47" mode="display" xml:id="C32.S7.E47">u_{1}(\zeta_{1})=\frac{(1-w)(w-z)}{(1+\sqrt{z})^{2}w}, \zeta_{1}=\left(\frac{1-\sqrt{z}}{1+\sqrt{z}}\right)^{2},</Math> transforms <Math mode="inline" xml:id="C32.S7.SS7.p3.m4">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m5">\alpha=-\beta</Math> and <Math mode="inline" xml:id="C32.S7.SS7.p3.m6">\gamma=\tfrac{1}{2}-\delta</Math> to <Math mode="inline" xml:id="C32.S7.SS7.p3.m7">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m8">(\alpha_{1},\beta_{1},\gamma_{1},\delta_{1})=(4\alpha,-4\gamma,0,\tfrac{1}{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="138" xml:id="C32.S7.SS7.p3.s4">
+The quartic transformation <Math equation-number="32.7.48" mode="display" xml:id="C32.S7.E48">u_{2}(\zeta_{2})=\frac{(w^{2}-z)^{2}}{4w(w-1)(w-z)}, \zeta_{2}=z,</Math> transforms <Math mode="inline" xml:id="C32.S7.SS7.p3.m9">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m10">\alpha=-\beta=\gamma=\tfrac{1}{2}-\delta</Math> to <Math mode="inline" xml:id="C32.S7.SS7.p3.m11">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m12">(\alpha_{2},\beta_{2},\gamma_{2},\delta_{2})=(16\alpha,0,0,\tfrac{1}{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="139" xml:id="C32.S7.SS7.p3.s5">
+Also, <Math equation-number="32.7.49" mode="display" xml:id="C32.S7.E49">u_{3}(\zeta_{3})=\left(\frac{1-z^{1/4}}{1+z^{1/4}}\right)^{2}\left(\frac{\sqrt {w}+z^{1/4}}{\sqrt{w}-z^{1/4}}\right)^{2},</Math> <Math equation-number="32.7.50" mode="display" xml:id="C32.S7.E50">\zeta_{3}=\left(\frac{1-z^{1/4}}{1+z^{1/4}}\right)^{4},</Math> transforms <Math mode="inline" xml:id="C32.S7.SS7.p3.m13">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m14">\alpha=\beta=0</Math> and <Math mode="inline" xml:id="C32.S7.SS7.p3.m15">\gamma=\tfrac{1}{2}-\delta</Math> to <Math mode="inline" xml:id="C32.S7.SS7.p3.m16">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S7.SS7.p3.m17">\alpha_{3}=\beta_{3}</Math> and <Math mode="inline" xml:id="C32.S7.SS7.p3.m18">\gamma_{3}=\tfrac{1}{2}-\delta_{3}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S7.SS8">
+<title>Affine Weyl Groups</title>           
+<para xml:id="C32.S7.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C32.S7.SS8.p1.s1">
+See ( ) , ( ) , ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S8">
+<title>Rational Solutions</title>           
+<subsection xml:id="C32.S8.SS1">
+<title>Introduction</title>         
+<para xml:id="C32.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="141" xml:id="C32.S8.SS1.p1.s1">
+ <Math mode="inline" xml:id="C32.S8.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S8.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> possess hierarchies of rational solutions for special values of the parameters which are generated from “seed solutions” using the Bäcklundtransformations and often can be expressed in the form of determinants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="142" xml:id="C32.S8.SS1.p1.s2">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS2">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="143" xml:id="C32.S8.SS2.p1.s1">
+Rational solutions of <Math mode="inline" xml:id="C32.S8.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> exist for <Math mode="inline" xml:id="C32.S8.SS2.p1.m2">\alpha=n(\in\mathbb{Z})</Math> and are generated using the seed solution <Math mode="inline" xml:id="C32.S8.SS2.p1.m3">w(z;0)=0</Math> and the Bäcklund transformations (LABEL:eq:PT.BT.P21) and (LABEL:eq:PT.BT.P22).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="144" xml:id="C32.S8.SS2.p1.s2">
+The first four are <Math equation-number="32.8.1" mode="display" xml:id="C32.S8.E1">w(z;1)=-\ifrac{1}{z},</Math> <Math equation-number="32.8.2" mode="display" xml:id="C32.S8.E2">w(z;2)=\frac{1}{z}-\frac{3z^{2}}{z^{3}+4},</Math> <Math equation-number="32.8.3" mode="display" xml:id="C32.S8.E3">w(z;3)=\frac{3z^{2}}{z^{3}+4}-\frac{6z^{2}(z^{3}+10)}{z^{6}+20z^{3}-80},</Math> <Math equation-number="32.8.4" mode="display" xml:id="C32.S8.E4">w(z;4)=-\frac{1}{z}+\frac{6z^{2}(z^{3}+10)}{z^{6}+20z^{3}-80}-\frac{9z^{5}(z^{ 3}+40)}{z^{9}+60z^{6}+11200}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="145" xml:id="C32.S8.SS2.p2.s1">
+More generally, <Math equation-number="32.8.5" mode="display" xml:id="C32.S8.E5">w(z;n)=\frac{\mathrm{d}}{\mathrm{d}z}\left(\ln\left(\frac{Q_{n-1}(z)}{Q_{n}(z) }\right)\right),</Math> where the <Math mode="inline" xml:id="C32.S8.SS2.p2.m1">Q_{n}(z)</Math> are monic polynomials (coefficient of highest power of <Math mode="inline" xml:id="C32.S8.SS2.p2.m2">z</Math> is <Math mode="inline" xml:id="C32.S8.SS2.p2.m3">1</Math> ) satisfying <Math equation-number="32.8.6" mode="display" xml:id="C32.S8.E6">Q_{n+1}(z)Q_{n-1}(z)={zQ_{n}^{2}(z)+4\left(Q_{n}^{\prime}(z)\right)^{2}-4Q_{n} (z)Q_{n}^{\prime\prime}(z)},</Math> with <Math mode="inline" xml:id="C32.S8.SS2.p2.m4">Q_{0}(z)=1</Math> , <Math mode="inline" xml:id="C32.S8.SS2.p2.m5">Q_{1}(z)=z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="146" xml:id="C32.S8.SS2.p2.s2">
+Thus <Math equation-number="32.8.7" mode="display" xml:id="C32.S8.E7">Q_{2}(z)=z^{3}+4, Q_{3}(z)=z^{6}+20z^{3}-80, Q_{4}(z)=z^{10}+60z^{7}+11200z, Q_{5}(z)=z^{15}+140z^{12}+2800z^{9}+78400z^{6}-3\;13600z^{3}-62\;72000, Q_{6}(z)=z^{21}+280z^{18}+18480z^{15}+6\;27200z^{12}-172\;48000z^{9}+14488\;32 000z^{6}+1\;93177\;60000z^{3}-3\;86355\;20000</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="147" xml:id="C32.S8.SS2.p3.s1">
+Next, let <Math mode="inline" xml:id="C32.S8.SS2.p3.m1">p_{m}(z)</Math> be the polynomials defined by <Math mode="inline" xml:id="C32.S8.SS2.p3.m2">p_{m}(z)=0</Math> for <Math mode="inline" xml:id="C32.S8.SS2.p3.m3">m&lt;0</Math> , and <Math equation-number="32.8.8" mode="display" xml:id="C32.S8.E8">\sum_{m=0}^{\infty}p_{m}(z)\lambda^{m}=\exp\left(z\lambda-\tfrac{4}{3}\lambda^ {3}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="148" xml:id="C32.S8.SS2.p3.s2">
+Then for <Math mode="inline" xml:id="C32.S8.SS2.p3.m4">n\geq 2</Math> <Math equation-number="32.8.9" mode="display" xml:id="C32.S8.E9">w(z;n)=\frac{\mathrm{d}}{\mathrm{d}z}\left(\ln\left(\frac{\tau_{n-1}(z)}{\tau_ {n}(z)}\right)\right),</Math> where <Math mode="inline" xml:id="C32.S8.SS2.p3.m5">\tau_{n}(z)</Math> is the <Math mode="inline" xml:id="C32.S8.SS2.p3.m6">n\times n</Math> determinant <Math equation-number="32.8.10" mode="display" xml:id="C32.S8.E10">\tau_{n}(z)=\begin{vmatrix}p_{1}(z)&amp;p_{3}(z)&amp;\cdots&amp;p_{2n-1}(z)\\ p_{1}^{\prime}(z)&amp;p_{3}^{\prime}(z)&amp;\cdots&amp;p_{2n-1}^{\prime}(z)\\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ p_{1}^{(n-1)}(z)&amp;p_{3}^{(n-1)}(z)&amp;\cdots&amp;p_{2n-1}^{(n-1)}(z)\end{vmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="149" xml:id="C32.S8.SS2.p4.s1">
+For plots of the zeros of <Math mode="inline" xml:id="C32.S8.SS2.p4.m1">Q_{n}(z)</Math> see ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS3">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S8.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="150" xml:id="C32.S8.SS3.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> are <Math equation-number="32.8.11" mode="display" xml:id="C32.S8.E11">w(z;\mu,-\mu\kappa^{2},\lambda,-\lambda\kappa^{4})=\kappa,</Math> <Math equation-number="32.8.12" mode="display" xml:id="C32.S8.E12">w(z;0,-\mu,0,\mu\kappa)=\kappa z,</Math> <Math equation-number="32.8.13" mode="display" xml:id="C32.S8.E13">w(z;2\kappa+3,-2\kappa+1,1,-1)=\dfrac{z+\kappa}{z+\kappa+1},</Math> with <Math mode="inline" xml:id="C32.S8.SS3.p1.m2">\kappa</Math> , <Math mode="inline" xml:id="C32.S8.SS3.p1.m3">\lambda</Math> , and <Math mode="inline" xml:id="C32.S8.SS3.p1.m4">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="151" xml:id="C32.S8.SS3.p2.s1">
+In the general case assume <Math mode="inline" xml:id="C32.S8.SS3.p2.m1">\gamma\delta\neq 0</Math> , so that as in§LABEL:sec:PT.DE.REN we may set <Math mode="inline" xml:id="C32.S8.SS3.p2.m2">\gamma=1</Math> and <Math mode="inline" xml:id="C32.S8.SS3.p2.m3">\delta=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="152" xml:id="C32.S8.SS3.p2.s2">
+Then <Math mode="inline" xml:id="C32.S8.SS3.p2.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> has rational solutions iff <Math equation-number="32.8.14" mode="display" xml:id="C32.S8.E14">\alpha\pm\beta=4n,</Math> with <Math mode="inline" xml:id="C32.S8.SS3.p2.m5">n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="153" xml:id="C32.S8.SS3.p2.s3">
+These solutions have the form <Math equation-number="32.8.15" mode="display" xml:id="C32.S8.E15">w(z)=\ifrac{P_{m}(z)}{Q_{m}(z)},</Math> where <Math mode="inline" xml:id="C32.S8.SS3.p2.m6">P_{m}(z)</Math> and <Math mode="inline" xml:id="C32.S8.SS3.p2.m7">Q_{m}(z)</Math> are polynomials of degree <Math mode="inline" xml:id="C32.S8.SS3.p2.m8">m</Math> , with no common zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="154" xml:id="C32.S8.SS3.p3.s1">
+For examples and plots see ( ) ; also ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="155" xml:id="C32.S8.SS3.p3.s2">
+For determinantal representations see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS4">
+<title>Fourth Painlevé Equation</title>        
+ 
+<para xml:id="C32.S8.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="156" xml:id="C32.S8.SS4.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> are <Math equation-number="32.8.16" mode="display" xml:id="C32.S8.E16">w_{1}(z;\pm 2,-2)=\pm\ifrac{1}{z},</Math> , <Math equation-number="32.8.17" mode="display" xml:id="C32.S8.E17">w_{2}(z;0,-2)=-2z,</Math> , <Math equation-number="32.8.18" mode="display" xml:id="C32.S8.E18">w_{3}(z;0,-\tfrac{2}{9})=-\tfrac{2}{3}z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="157" xml:id="C32.S8.SS4.p2.s1">
+There are also three families of solutions of <Math mode="inline" xml:id="C32.S8.SS4.p2.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> of the form <Math equation-number="32.8.19" mode="display" xml:id="C32.S8.E19">w_{1}(z;\alpha_{1},\beta_{1})=\ifrac{P_{1,n-1}(z)}{Q_{1,n}(z)},</Math> <Math equation-number="32.8.20" mode="display" xml:id="C32.S8.E20">w_{2}(z;\alpha_{2},\beta_{2})=-2z+(\ifrac{P_{2,n-1}(z)}{Q_{2,n}(z)}),</Math> <Math equation-number="32.8.21" mode="display" xml:id="C32.S8.E21">w_{3}(z;\alpha_{3},\beta_{3})=-\tfrac{2}{3}z+(\ifrac{P_{3,n-1}(z)}{Q_{3,n}(z)}),</Math> where <Math mode="inline" xml:id="C32.S8.SS4.p2.m2">P_{j,n-1}(z)</Math> and <Math mode="inline" xml:id="C32.S8.SS4.p2.m3">Q_{j,n}(z)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S8.SS4.p2.m4">n-1</Math> and <Math mode="inline" xml:id="C32.S8.SS4.p2.m5">n</Math> , respectively, with no common zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="158" xml:id="C32.S8.SS4.p3.s1">
+In general, <Math mode="inline" xml:id="C32.S8.SS4.p3.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> has rational solutions iff either <Math equation-number="32.8.22" mode="display" xml:id="C32.S8.E22">\alpha=m, \beta=-2(1+2n-m)^{2},</Math> or <Math equation-number="32.8.23" mode="display" xml:id="C32.S8.E23">\mspace{12.0mu }\alpha=m, \beta=-2(\tfrac{1}{3}+2n-m)^{2},</Math> with <Math mode="inline" xml:id="C32.S8.SS4.p3.m2">m,n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="159" xml:id="C32.S8.SS4.p3.s2">
+The rational solutions when the parameters satisfy (LABEL:eq:PT.RS.P44a) are special cases of §LABEL:sec:PT.SF.P4.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS4.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="160" xml:id="C32.S8.SS4.p4.s1">
+For examples and plots see ( ) ; also ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="161" xml:id="C32.S8.SS4.p4.s2">
+For determinantal representations see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS5">
+<title>Fifth Painlevé Equation</title>         
+<para xml:id="C32.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C32.S8.SS5.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> are <Math equation-number="32.8.24" mode="display" xml:id="C32.S8.E24">w(z;\tfrac{1}{2},-\tfrac{1}{2}\mu^{2},\kappa(2-\mu),-\tfrac{1}{2}\kappa^{2})= \kappa z+\mu,</Math> <Math equation-number="32.8.25" mode="display" xml:id="C32.S8.E25">w(z;\tfrac{1}{2},\kappa^{2}\mu,2\kappa\mu,\mu)=\kappa/(z+\kappa),</Math> <Math equation-number="32.8.26" mode="display" xml:id="C32.S8.E26">w(z;\tfrac{1}{8},-\tfrac{1}{8},-\kappa\mu,\mu)=(\kappa+z)/(\kappa-z),</Math> with <Math mode="inline" xml:id="C32.S8.SS5.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="163" xml:id="C32.S8.SS5.p2.s1">
+In the general case assume <Math mode="inline" xml:id="C32.S8.SS5.p2.m1">\delta\neq 0</Math> , so that as in §LABEL:sec:PT.DE.REN we may set <Math mode="inline" xml:id="C32.S8.SS5.p2.m2">\delta=-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="164" xml:id="C32.S8.SS5.p2.s2">
+Then <Math mode="inline" xml:id="C32.S8.SS5.p2.m3">\mbox{P}_{\mbox{\scriptsize V}}</Math> has a rational solution iff one of the following holds with <Math mode="inline" xml:id="C32.S8.SS5.p2.m4">m,n\in\mathbb{Z}</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p2.m5">\varepsilon=\pm 1</Math> : <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m1">\alpha=\tfrac{1}{2}(m+\varepsilon\gamma)^{2}</Math> and <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m2">\beta=-\tfrac{1}{2}n^{2}</Math> , where <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m3">n&gt;0</Math> , <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m4">m+n</Math> is odd, and <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m5">\alpha\neq 0</Math> when <Math mode="inline" xml:id="C32.S8.I1.i1.p1.m6">|m|&lt;n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="165" xml:id="C32.S8.SS5.p2.s3">
+<Math mode="inline" xml:id="C32.S8.I1.i2.p1.m1">\alpha=\tfrac{1}{2}n^{2}</Math> and <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m2">\beta=-\tfrac{1}{2}(m+\varepsilon\gamma)^{2}</Math> , where <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m3">n&gt;0</Math> , <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m4">m+n</Math> is odd, and <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m5">\beta\neq 0</Math> when <Math mode="inline" xml:id="C32.S8.I1.i2.p1.m6">|m|&lt;n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="166" xml:id="C32.S8.SS5.p2.s4">
+<Math mode="inline" xml:id="C32.S8.I1.i3.p1.m1">\alpha=\tfrac{1}{2}a^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m2">\beta=-\tfrac{1}{2}(a+n)^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m3">\gamma=m</Math> , with <Math mode="inline" xml:id="C32.S8.I1.i3.p1.m4">m+n</Math> even.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="167" xml:id="C32.S8.SS5.p2.s5">
+<Math mode="inline" xml:id="C32.S8.I1.i4.p1.m1">\alpha=\tfrac{1}{2}(b+n)^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m2">\beta=-\tfrac{1}{2}b^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m3">\gamma=m</Math> , with <Math mode="inline" xml:id="C32.S8.I1.i4.p1.m4">m+n</Math> even.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="168" xml:id="C32.S8.SS5.p2.s6">
+<Math mode="inline" xml:id="C32.S8.I1.i5.p1.m1">\alpha=\tfrac{1}{8}(2m+1)^{2}</Math> , <Math mode="inline" xml:id="C32.S8.I1.i5.p1.m2">\beta=-\tfrac{1}{8}(2n+1)^{2}</Math> , and <Math mode="inline" xml:id="C32.S8.I1.i5.p1.m3">\gamma\notin\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="169" xml:id="C32.S8.SS5.p2.s7">
+These rational solutions have the form <Math equation-number="32.8.27" mode="display" xml:id="C32.S8.E27">w(z)=\lambda z+\mu+(\ifrac{P_{n-1}(z)}{Q_{n}(z)}),</Math> where <Math mode="inline" xml:id="C32.S8.SS5.p2.m6">\lambda</Math> , <Math mode="inline" xml:id="C32.S8.SS5.p2.m7">\mu</Math> are constants, and <Math mode="inline" xml:id="C32.S8.SS5.p2.m8">P_{n-1}(z)</Math> , <Math mode="inline" xml:id="C32.S8.SS5.p2.m9">Q_{n}(z)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S8.SS5.p2.m10">n-1</Math> and <Math mode="inline" xml:id="C32.S8.SS5.p2.m11">n</Math> , respectively, with no common zeros.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="170" xml:id="C32.S8.SS5.p2.s8">
+Cases (a) and (b) are special cases of §LABEL:sec:PT.SF.P5.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="171" xml:id="C32.S8.SS5.p3.s1">
+For examples and plots see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="172" xml:id="C32.S8.SS5.p3.s2">
+For determinantal representations see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="173" xml:id="C32.S8.SS5.p3.s3">
+For the case <Math mode="inline" xml:id="C32.S8.SS5.p3.m1">\delta=0</Math> see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S8.SS6">
+<title>Sixth Painlevé Equation</title>         
+<para xml:id="C32.S8.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="174" xml:id="C32.S8.SS6.p1.s1">
+Special rational solutions of <Math mode="inline" xml:id="C32.S8.SS6.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> are <Math equation-number="32.8.28" mode="display" xml:id="C32.S8.E28">w(z;\mu,-\mu\kappa^{2},\tfrac{1}{2},\tfrac{1}{2}-\mu(\kappa-1)^{2})=\kappa z,</Math> <Math equation-number="32.8.29" mode="display" xml:id="C32.S8.E29">w(z;0,0,2,0)=\kappa z^{2},</Math> , <Math equation-number="32.8.30" mode="display" xml:id="C32.S8.E30">w(z;0,0,\tfrac{1}{2},-\tfrac{3}{2})=\ifrac{\kappa}{z},</Math> , <Math equation-number="32.8.31" mode="display" xml:id="C32.S8.E31">w(z;0,0,2,-4)=\ifrac{\kappa}{z^{2}},</Math> <Math equation-number="32.8.32" mode="display" xml:id="C32.S8.E32">w(z;\tfrac{1}{2}(\kappa+\mu)^{2},-\tfrac{1}{2},\tfrac{1}{2}(\mu-1)^{2},\tfrac{ 1}{2}\kappa(2-\kappa))=\dfrac{z}{\kappa+\mu z},</Math> with <Math mode="inline" xml:id="C32.S8.SS6.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S8.SS6.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S8.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="175" xml:id="C32.S8.SS6.p2.s1">
+In the general case, <Math mode="inline" xml:id="C32.S8.SS6.p2.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> has rational solutions if <Math equation-number="32.8.33" mode="display" xml:id="C32.S8.E33">a+b+c+d=2n+1,</Math> where <Math mode="inline" xml:id="C32.S8.SS6.p2.m2">n\in\mathbb{Z}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m3">a=\varepsilon_{1}\sqrt{2\alpha}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m4">b=\varepsilon_{2}\sqrt{-2\beta}</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m5">c=\varepsilon_{3}\sqrt{2\gamma}</Math> , and <Math mode="inline" xml:id="C32.S8.SS6.p2.m6">d=\varepsilon_{4}\sqrt{1-2\delta}</Math> , with <Math mode="inline" xml:id="C32.S8.SS6.p2.m7">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m8">j=1,2,3,4</Math> , independently, and at least one of <Math mode="inline" xml:id="C32.S8.SS6.p2.m9">a</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m10">b</Math> , <Math mode="inline" xml:id="C32.S8.SS6.p2.m11">c</Math> or <Math mode="inline" xml:id="C32.S8.SS6.p2.m12">d</Math> is an integer.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="176" xml:id="C32.S8.SS6.p2.s2">
+These are special cases of §LABEL:sec:PT.SF.P6.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S9">
+<title>Other Elementary Solutions</title>        
+ 
+<subsection xml:id="C32.S9.SS1">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="177" xml:id="C32.S9.SS1.p1.s1">
+Elementary nonrational solutions of <Math mode="inline" xml:id="C32.S9.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> are <Math equation-number="32.9.1" mode="display" xml:id="C32.S9.E1">w(z;\mu,0,0,-\mu\kappa^{3})=\kappa z^{1/3},</Math> <Math equation-number="32.9.2" mode="display" xml:id="C32.S9.E2">w(z;0,-2\kappa,0,4\kappa\mu-\lambda^{2})=z(\kappa(\ln z)^{2}+\lambda\ln z+\mu),</Math> <Math equation-number="32.9.3" mode="display" xml:id="C32.S9.E3">w(z;-\nu^{2}\lambda,0,\nu^{2}(\lambda^{2}-4\kappa\mu),0)=\dfrac{z^{\nu-1}}{ \kappa z^{2\nu}+\lambda z^{\nu}+\mu},</Math> with <Math mode="inline" xml:id="C32.S9.SS1.p1.m2">\kappa</Math> , <Math mode="inline" xml:id="C32.S9.SS1.p1.m3">\lambda</Math> , <Math mode="inline" xml:id="C32.S9.SS1.p1.m4">\mu</Math> , and <Math mode="inline" xml:id="C32.S9.SS1.p1.m5">\nu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="178" xml:id="C32.S9.SS1.p2.s1">
+In the case <Math mode="inline" xml:id="C32.S9.SS1.p2.m1">\gamma=0</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p2.m2">\alpha\delta\neq 0</Math> we assume, as in §LABEL:sec:PT.DE.REN, <Math mode="inline" xml:id="C32.S9.SS1.p2.m3">\alpha=1</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p2.m4">\delta=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="179" xml:id="C32.S9.SS1.p2.s2">
+Then <Math mode="inline" xml:id="C32.S9.SS1.p2.m5">\mbox{P}_{\mbox{\scriptsize III}}</Math> has algebraic solutions iff <Math equation-number="32.9.4" mode="display" xml:id="C32.S9.E4">\beta=2n,</Math> with <Math mode="inline" xml:id="C32.S9.SS1.p2.m6">n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="180" xml:id="C32.S9.SS1.p2.s3">
+These are rational solutions in <Math mode="inline" xml:id="C32.S9.SS1.p2.m7">\zeta=z^{1/3}</Math> of the form <Math equation-number="32.9.5" mode="display" xml:id="C32.S9.E5">w(z)=\ifrac{P_{n^{2}+1}(\zeta)}{Q_{n^{2}}(\zeta)},</Math> where <Math mode="inline" xml:id="C32.S9.SS1.p2.m8">P_{n^{2}+1}(\zeta)</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p2.m9">Q_{n^{2}}(\zeta)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S9.SS1.p2.m10">n^{2}+1</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p2.m11">n^{2}</Math> , respectively, with no common zeros.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="181" xml:id="C32.S9.SS1.p2.s4">
+For examples and plots see ( ) and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="182" xml:id="C32.S9.SS1.p2.s5">
+Similar results hold when <Math mode="inline" xml:id="C32.S9.SS1.p2.m12">\delta=0</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p2.m13">\beta\gamma\neq 0</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="183" xml:id="C32.S9.SS1.p3.s1">
+ <Math mode="inline" xml:id="C32.S9.SS1.p3.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S9.SS1.p3.m2">\beta=\delta=0</Math> has a first integral <Math equation-number="32.9.6" mode="display" xml:id="C32.S9.E6">z^{2}(w^{\prime})^{2}+2zww^{\prime}=(C+2\alpha zw+\gamma z^{2}w^{2})w^{2},</Math> with <Math mode="inline" xml:id="C32.S9.SS1.p3.m3">C</Math> an arbitrary constant, which is solvable by quadrature.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="184" xml:id="C32.S9.SS1.p3.s2">
+A similar result holds when <Math mode="inline" xml:id="C32.S9.SS1.p3.m4">\alpha=\gamma=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="185" xml:id="C32.S9.SS1.p3.s3">
+<Math mode="inline" xml:id="C32.S9.SS1.p3.m5">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S9.SS1.p3.m6">\alpha=\beta=\gamma=\delta=0</Math> , has the general solution <Math mode="inline" xml:id="C32.S9.SS1.p3.m7">w(z)=Cz^{\mu}</Math> , with <Math mode="inline" xml:id="C32.S9.SS1.p3.m8">C</Math> and <Math mode="inline" xml:id="C32.S9.SS1.p3.m9">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S9.SS2">
+<title>Fifth Painlevé Equation</title>         
+<para xml:id="C32.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="186" xml:id="C32.S9.SS2.p1.s1">
+Elementary nonrational solutions of <Math mode="inline" xml:id="C32.S9.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> are <Math equation-number="32.9.7" mode="display" xml:id="C32.S9.E7">w(z;\mu,-\tfrac{1}{8},-\mu\kappa^{2},0)=1+\kappa z^{1/2},</Math> <Math equation-number="32.9.8" mode="display" xml:id="C32.S9.E8">w(z;0,0,\mu,-\tfrac{1}{2}\mu^{2})=\kappa\exp\left(\mu z\right),</Math> with <Math mode="inline" xml:id="C32.S9.SS2.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S9.SS2.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C32.S9.SS2.p2.s1">
+ <Math mode="inline" xml:id="C32.S9.SS2.p2.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> , with <Math mode="inline" xml:id="C32.S9.SS2.p2.m2">\delta=0</Math> , has algebraic solutions if either <Math equation-number="32.9.9" mode="display" xml:id="C32.S9.E9">\mspace{17.0mu }(\alpha,\beta,\gamma)=(\tfrac{1}{2}\mu^{2},-\tfrac{1}{8}(2n-1) ^{2},-1),</Math> or <Math equation-number="32.9.10" mode="display" xml:id="C32.S9.E10">\mspace{5.0mu }(\alpha,\beta,\gamma)=(\tfrac{1}{8}(2n-1)^{2},-\tfrac{1}{2}\mu^ {2},1),</Math> with <Math mode="inline" xml:id="C32.S9.SS2.p2.m3">n\in\mathbb{Z}</Math> and <Math mode="inline" xml:id="C32.S9.SS2.p2.m4">\mu</Math> arbitrary.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="188" xml:id="C32.S9.SS2.p2.s2">
+These are rational solutions in <Math mode="inline" xml:id="C32.S9.SS2.p2.m5">\zeta=z^{1/2}</Math> of the form <Math equation-number="32.9.11" mode="display" xml:id="C32.S9.E11">w(z)=\ifrac{P_{n^{2}-n+1}(\zeta)}{Q_{n^{2}-n}(\zeta)},</Math> where <Math mode="inline" xml:id="C32.S9.SS2.p2.m6">P_{n^{2}-n+1}(\zeta)</Math> and <Math mode="inline" xml:id="C32.S9.SS2.p2.m7">Q_{n^{2}-n}(\zeta)</Math> are polynomials of degrees <Math mode="inline" xml:id="C32.S9.SS2.p2.m8">n^{2}-n+1</Math> and <Math mode="inline" xml:id="C32.S9.SS2.p2.m9">n^{2}-n</Math> , respectively, with no common zeros.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="189" xml:id="C32.S9.SS2.p3.s1">
+ <Math mode="inline" xml:id="C32.S9.SS2.p3.m1">\mbox{P}_{\mbox{\scriptsize V}}</Math> , with <Math mode="inline" xml:id="C32.S9.SS2.p3.m2">\gamma=\delta=0</Math> , has a first integral <Math equation-number="32.9.12" mode="display" xml:id="C32.S9.E12">z^{2}(w^{\prime})^{2}=(w-1)^{2}(2\alpha w^{2}+Cw-2\beta),</Math> with <Math mode="inline" xml:id="C32.S9.SS2.p3.m3">C</Math> an arbitrary constant, which is solvable by quadrature.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="190" xml:id="C32.S9.SS2.p3.s2">
+For examples and plots see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="191" xml:id="C32.S9.SS2.p3.s3">
+<Math mode="inline" xml:id="C32.S9.SS2.p3.m4">\mbox{P}_{\mbox{\scriptsize V}}</Math> , with <Math mode="inline" xml:id="C32.S9.SS2.p3.m5">\alpha=\beta=0</Math> and <Math mode="inline" xml:id="C32.S9.SS2.p3.m6">\gamma^{2}+2\delta=0</Math> , has solutions <Math mode="inline" xml:id="C32.S9.SS2.p3.m7">w(z)=C\exp\left(\pm\sqrt{-2\delta}z\right)</Math> , with <Math mode="inline" xml:id="C32.S9.SS2.p3.m8">C</Math> an arbitrary constant.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S9.SS3">
+<title>Sixth Painlevé Equation</title>         
+<para xml:id="C32.S9.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="192" xml:id="C32.S9.SS3.p1.s1">
+An elementary algebraic solution of <Math mode="inline" xml:id="C32.S9.SS3.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> is <Math equation-number="32.9.13" mode="display" xml:id="C32.S9.E13">w(z;\tfrac{1}{2}\kappa^{2},-\tfrac{1}{2}\kappa^{2},\tfrac{1}{2}\mu^{2},\tfrac{ 1}{2}(1-\mu^{2}))=z^{1/2},</Math> with <Math mode="inline" xml:id="C32.S9.SS3.p1.m2">\kappa</Math> and <Math mode="inline" xml:id="C32.S9.SS3.p1.m3">\mu</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S9.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="193" xml:id="C32.S9.SS3.p2.s1">
+( ) classifies all algebraic solutions for the special case of <Math mode="inline" xml:id="C32.S9.SS3.p2.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S9.SS3.p2.m2">\beta=\gamma=0</Math> , <Math mode="inline" xml:id="C32.S9.SS3.p2.m3">\delta=\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="194" xml:id="C32.S9.SS3.p2.s2">
+For further examples of algebraic solutions see ( ) , ( ) , ( , §48) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S10">
+<title>Special Function Solutions</title>        
+  
+<subsection xml:id="C32.S10.SS1">
+<title>Introduction</title>         
+<para xml:id="C32.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="195" xml:id="C32.S10.SS1.p1.s1">
+For certain combinations of the parameters, <Math mode="inline" xml:id="C32.S10.SS1.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S10.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize VI}}</Math> have particular solutions expressible in terms of the solution of a Riccati differential equation, which can be solved in terms of special functions defined in other chapters.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="196" xml:id="C32.S10.SS1.p1.s2">
+All solutions of <Math mode="inline" xml:id="C32.S10.SS1.p1.m3">\mbox{P}_{\mbox{\scriptsize II}}</Math> – <Math mode="inline" xml:id="C32.S10.SS1.p1.m4">\mbox{P}_{\mbox{\scriptsize VI}}</Math> that are expressible in terms of special functions satisfy a first-order equation of the form <Math equation-number="32.10.1" mode="display" xml:id="C32.S10.E1">(w^{\prime})^{n}+\sum_{j=0}^{n-1}F_{j}(w,z)(w^{\prime})^{j}=0,</Math> where <Math mode="inline" xml:id="C32.S10.SS1.p1.m5">F_{j}(w,z)</Math> is polynomial in <Math mode="inline" xml:id="C32.S10.SS1.p1.m6">w</Math> with coefficients that are rational functions of <Math mode="inline" xml:id="C32.S10.SS1.p1.m7">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S10.SS2">
+<title>Second Painlevé Equation</title>        
+  
+<para xml:id="C32.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="197" xml:id="C32.S10.SS2.p1.s1">
+ <Math mode="inline" xml:id="C32.S10.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> has solutions expressible in terms of Airy functions (§LABEL:sec:AI.DE) iff <Math equation-number="32.10.2" mode="display" xml:id="C32.S10.E2">\alpha=n+\tfrac{1}{2},</Math> with <Math mode="inline" xml:id="C32.S10.SS2.p1.m2">n\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="198" xml:id="C32.S10.SS2.p1.s2">
+For example, if <Math mode="inline" xml:id="C32.S10.SS2.p1.m3">\alpha=\tfrac{1}{2}\varepsilon</Math> , with <Math mode="inline" xml:id="C32.S10.SS2.p1.m4">\varepsilon=\pm 1</Math> , then the Riccati equation is <Math equation-number="32.10.3" mode="display" xml:id="C32.S10.E3">\varepsilon w^{\prime}=w^{2}+\tfrac{1}{2}z,</Math> with solution <Math equation-number="32.10.4" mode="display" xml:id="C32.S10.E4">w(z;\tfrac{1}{2}\varepsilon)=-\varepsilon\phi^{\prime}(z)/\phi(z),</Math> where <Math equation-number="32.10.5" mode="display" xml:id="C32.S10.E5">\phi(z)=C_{1}\mathrm{Ai}\left(-2^{-1/3}z\right)+C_{2}\mathrm{Bi}\left(-2^{-1/3 }z\right),</Math> with <Math mode="inline" xml:id="C32.S10.SS2.p1.m5">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS2.p1.m6">C_{2}</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="199" xml:id="C32.S10.SS2.p2.s1">
+Solutions for other values of <Math mode="inline" xml:id="C32.S10.SS2.p2.m1">\alpha</Math> are derived from <Math mode="inline" xml:id="C32.S10.SS2.p2.m2">w(z;\pm\tfrac{1}{2})</Math> by application of the Bäcklund transformations (LABEL:eq:PT.BT.P21) and (LABEL:eq:PT.BT.P22).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="200" xml:id="C32.S10.SS2.p2.s2">
+For example, <Math equation-number="32.10.6" mode="display" xml:id="C32.S10.E6">w(z;\tfrac{3}{2})=\Phi-\dfrac{1}{2\Phi^{2}+z},</Math> <Math equation-number="32.10.7" mode="display" xml:id="C32.S10.E7">w(z;\tfrac{5}{2})=\dfrac{1}{2\Phi^{2}+z}+\dfrac{2z\Phi^{2}+\Phi+z^{2}}{4\Phi^{ 3}+2z\Phi-1},</Math> where <Math mode="inline" xml:id="C32.S10.SS2.p2.m3">\Phi=\phi^{\prime}(z)/\phi(z)</Math> , with <Math mode="inline" xml:id="C32.S10.SS2.p2.m4">\phi(z)</Math> given by (LABEL:eq:PT.SF.eq23).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="201" xml:id="C32.S10.SS2.p3.s1">
+More generally, if <Math mode="inline" xml:id="C32.S10.SS2.p3.m1">n=1,2,3,\dots</Math> , then <Math equation-number="32.10.8" mode="display" xml:id="C32.S10.E8">w(z;n+\tfrac{1}{2})=\frac{\mathrm{d}}{\mathrm{d}z}\left(\ln\left(\frac{\tau_{n }(z)}{\tau_{n+1}(z)}\right)\right),</Math> where <Math mode="inline" xml:id="C32.S10.SS2.p3.m2">\tau_{n}(z)</Math> is the <Math mode="inline" xml:id="C32.S10.SS2.p3.m3">n\times n</Math> determinant <Math equation-number="32.10.9" mode="display" xml:id="C32.S10.E9">\tau_{n}(z)=\begin{vmatrix}\phi(z)&amp;\phi^{\prime}(z)&amp;\cdots&amp;\phi^{(n-1)}(z)\\ \phi^{\prime}(z)&amp;\phi^{\prime\prime}(z)&amp;\cdots&amp;\phi^{(n)}(z)\\ \vdots&amp;\vdots&amp;\ddots&amp;\vdots\\ \phi^{(n-1)}(z)&amp;\phi^{(n)}(z)&amp;\cdots&amp;\phi^{(2n-2)}(z)\end{vmatrix},</Math> and <Math equation-number="32.10.10" mode="display" xml:id="C32.S10.E10">w(z;-n-\tfrac{1}{2})=-w(z;n+\tfrac{1}{2})</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S10.SS3">
+<title>Third Painlevé Equation</title>          
+<para xml:id="C32.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="202" xml:id="C32.S10.SS3.p1.s1">
+If <Math mode="inline" xml:id="C32.S10.SS3.p1.m1">\gamma\delta\neq 0</Math> , then as in §LABEL:sec:PT.DE.REN we may set <Math mode="inline" xml:id="C32.S10.SS3.p1.m2">\gamma=1</Math> and <Math mode="inline" xml:id="C32.S10.SS3.p1.m3">\delta=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="203" xml:id="C32.S10.SS3.p1.s2">
+<Math mode="inline" xml:id="C32.S10.SS3.p1.m4">\mbox{P}_{\mbox{\scriptsize III}}</Math> then has solutions expressible in terms of Bessel functions (§LABEL:sec:BS.DEF) iff <Math equation-number="32.10.11" mode="display" xml:id="C32.S10.E11">\varepsilon_{1}\alpha+\varepsilon_{2}\beta=4n+2,</Math> with <Math mode="inline" xml:id="C32.S10.SS3.p1.m5">n\in\mathbb{Z}</Math> , and <Math mode="inline" xml:id="C32.S10.SS3.p1.m6">\varepsilon_{1}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S10.SS3.p1.m7">\varepsilon_{2}=\pm 1</Math> , independently.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="204" xml:id="C32.S10.SS3.p1.s3">
+In the case <Math mode="inline" xml:id="C32.S10.SS3.p1.m8">\varepsilon_{1}\alpha+\varepsilon_{2}\beta=2</Math> , the Riccati equation is <Math equation-number="32.10.12" mode="display" xml:id="C32.S10.E12">zw^{\prime}=\varepsilon_{1}zw^{2}+(\alpha\varepsilon_{1}-1)w+\varepsilon_{2}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="205" xml:id="C32.S10.SS3.p1.s4">
+If <Math mode="inline" xml:id="C32.S10.SS3.p1.m9">\alpha\neq\varepsilon_{1}</Math> , then (LABEL:eq:PT.SF.eq31) has the solution <Math equation-number="32.10.13" mode="display" xml:id="C32.S10.E13">w(z)=-\varepsilon_{1}\phi^{\prime}(z)/\phi(z),</Math> where <Math equation-number="32.10.14" mode="display" xml:id="C32.S10.E14">\phi(z)=z^{\nu}\left(C_{1}J_{\nu}\left(\zeta\right)+C_{2}Y_{\nu}\left(\zeta \right)\right),</Math> with <Math mode="inline" xml:id="C32.S10.SS3.p1.m10">\zeta=\sqrt{\varepsilon_{1}\varepsilon_{2}}z</Math> , <Math mode="inline" xml:id="C32.S10.SS3.p1.m11">\nu=\tfrac{1}{2}\alpha\varepsilon_{1}</Math> , and <Math mode="inline" xml:id="C32.S10.SS3.p1.m12">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS3.p1.m13">C_{2}</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="206" xml:id="C32.S10.SS3.p2.s1">
+For examples and plots see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="207" xml:id="C32.S10.SS3.p2.s2">
+For determinantal representations see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S10.SS4">
+<title>Fourth Painlevé Equation</title>           
+<para xml:id="C32.S10.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C32.S10.SS4.p1.s1">
+ <Math mode="inline" xml:id="C32.S10.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> has solutions expressible in terms of parabolic cylinder functions (§LABEL:sec:PC.DE) iff either <Math equation-number="32.10.15" mode="display" xml:id="C32.S10.E15">\beta=-2(2n+1+\varepsilon\alpha)^{2},</Math> or <Math equation-number="32.10.16" mode="display" xml:id="C32.S10.E16">\beta=-2n^{2},</Math> with <Math mode="inline" xml:id="C32.S10.SS4.p1.m2">n\in\mathbb{Z}</Math> and <Math mode="inline" xml:id="C32.S10.SS4.p1.m3">\varepsilon=\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="209" xml:id="C32.S10.SS4.p1.s2">
+In the case when <Math mode="inline" xml:id="C32.S10.SS4.p1.m4">n=0</Math> in ( LABEL:eq:PT.SF.eq40a), the Riccati equation is <Math equation-number="32.10.17" mode="display" xml:id="C32.S10.E17">w^{\prime}=\varepsilon(w^{2}+2zw)-2(1+\varepsilon\alpha),</Math> which has the solution <Math equation-number="32.10.18" mode="display" xml:id="C32.S10.E18">w(z)=-\varepsilon\phi^{\prime}(z)/\phi(z),</Math> where <Math equation-number="32.10.19" mode="display" xml:id="C32.S10.E19">\phi(z)=\left(C_{1}U\left(a,\sqrt{2}z\right)+C_{2}V\left(a,\sqrt{2}z\right) \right)\exp\left(\tfrac{1}{2}\varepsilon z^{2}\right),</Math> with <Math mode="inline" xml:id="C32.S10.SS4.p1.m5">a=\alpha+\tfrac{1}{2}\varepsilon</Math> , and <Math mode="inline" xml:id="C32.S10.SS4.p1.m6">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS4.p1.m7">C_{2}</Math> arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="210" xml:id="C32.S10.SS4.p1.s3">
+When <Math mode="inline" xml:id="C32.S10.SS4.p1.m8">a+\tfrac{1}{2}</Math> is zero or a negative integer the <Math mode="inline" xml:id="C32.S10.SS4.p1.m9">U</Math> parabolic cylinder functions reduce to Hermite polynomials (§LABEL:sec:OP.CP.OR) times an exponential function; thus <Math equation-number="32.10.20" mode="display" xml:id="C32.S10.E20">w(z;-m,-2(m-1)^{2})=-\frac{H_{m-1}'\left(z\right)}{H_{m-1}\left(z\right)}, subject to m=1,2,3,\dots,</Math> and <Math equation-number="32.10.21" mode="display" xml:id="C32.S10.E21">w(z;-m,-2(m+1)^{2})=-2z+\frac{H_{m}'\left(z\right)}{H_{m}\left(z\right)}, subject to m=0,1,2,\dots</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="211" xml:id="C32.S10.SS4.p2.s1">
+If <Math mode="inline" xml:id="C32.S10.SS4.p2.m1">1+\varepsilon\alpha=0</Math> , then (LABEL:eq:PT.SF.eq41) has solutions <Math equation-number="32.10.22" mode="display" xml:id="C32.S10.E22">w(z)=\begin{cases}\dfrac{2\exp\left(z^{2}\right)}{\sqrt{\pi}\left(C-i \operatorname{erfc}\left(iz\right)\right)},&amp;\varepsilon=1,\\ \dfrac{2\exp\left(-z^{2}\right)}{\sqrt{\pi}\left(C-\operatorname{erfc}\left(z \right)\right)},&amp;\varepsilon=-1,\end{cases}</Math> where <Math mode="inline" xml:id="C32.S10.SS4.p2.m2">C</Math> is an arbitrary constant and <Math mode="inline" xml:id="C32.S10.SS4.p2.m3">\operatorname{erfc}</Math> is the complementary error function (§ LABEL:sec:ER.DF.ER).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="212" xml:id="C32.S10.SS4.p3.s1">
+For examples and plots see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="213" xml:id="C32.S10.SS4.p3.s2">
+For determinantal representations see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S10.SS5">
+<title>Fifth Painlevé Equation</title>         
+ 
+<para xml:id="C32.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C32.S10.SS5.p1.s1">
+If <Math mode="inline" xml:id="C32.S10.SS5.p1.m1">\delta\neq 0</Math> , then as in §LABEL:sec:PT.DE.REN we may set <Math mode="inline" xml:id="C32.S10.SS5.p1.m2">\delta=-\tfrac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="215" xml:id="C32.S10.SS5.p1.s2">
+<Math mode="inline" xml:id="C32.S10.SS5.p1.m3">\mbox{P}_{\mbox{\scriptsize V}}</Math> then has solutions expressible in terms of Whittaker functions (§LABEL:sec:CH.KM.DE.WH), iff <Math equation-number="32.10.23" mode="display" xml:id="C32.S10.E23">a+b+\varepsilon_{3}\gamma=2n+1,</Math> or <Math equation-number="32.10.24" mode="display" xml:id="C32.S10.E24">(a-n)(b-n)=0,</Math> where <Math mode="inline" xml:id="C32.S10.SS5.p1.m4">n\in\mathbb{Z}</Math> , <Math mode="inline" xml:id="C32.S10.SS5.p1.m5">a=\varepsilon_{1}\sqrt{2\alpha}</Math> , and <Math mode="inline" xml:id="C32.S10.SS5.p1.m6">b=\varepsilon_{2}\sqrt{-2\beta}</Math> , with <Math mode="inline" xml:id="C32.S10.SS5.p1.m7">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S10.SS5.p1.m8">j=1,2,3</Math> , independently.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="216" xml:id="C32.S10.SS5.p1.s3">
+In the case when <Math mode="inline" xml:id="C32.S10.SS5.p1.m9">n=0</Math> in (LABEL:eq:PT.SF.eq50a), the Riccati equation is <Math equation-number="32.10.25" mode="display" xml:id="C32.S10.E25">zw^{\prime}=aw^{2}+(b-a+\varepsilon_{3}z)w-b</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="217" xml:id="C32.S10.SS5.p1.s4">
+If <Math mode="inline" xml:id="C32.S10.SS5.p1.m10">a\neq 0</Math> , then (LABEL:eq:PT.SF.eq51) has the solution <Math equation-number="32.10.26" mode="display" xml:id="C32.S10.E26">w(z)=-z\phi^{\prime}(z)/(a\phi(z)),</Math> where <Math equation-number="32.10.27" mode="display" xml:id="C32.S10.E27">\phi(z)=\frac{C_{1}M_{\kappa,\mu}\left(\zeta\right)+C_{2}W_{\kappa,\mu}\left( \zeta\right)}{\zeta^{(a-b+1)/2}}\exp\left(\tfrac{1}{2}\zeta\right),</Math> with <Math mode="inline" xml:id="C32.S10.SS5.p1.m11">\zeta=\varepsilon_{3}z</Math> , <Math mode="inline" xml:id="C32.S10.SS5.p1.m12">\kappa=\tfrac{1}{2}(a-b+1)</Math> , <Math mode="inline" xml:id="C32.S10.SS5.p1.m13">\mu=\tfrac{1}{2}(a+b)</Math> , and <Math mode="inline" xml:id="C32.S10.SS5.p1.m14">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS5.p1.m15">C_{2}</Math> arbitrary constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C32.S10.SS5.p2.s1">
+For determinantal representations see ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S10.SS6">
+<title>Sixth Painlevé Equation</title>          
+<para xml:id="C32.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="219" xml:id="C32.S10.SS6.p1.s1">
+ <Math mode="inline" xml:id="C32.S10.SS6.p1.m1">\mbox{P}_{\mbox{\scriptsize VI}}</Math> has solutions expressible in terms of hypergeometric functions (§LABEL:sec:HY.GA.GS) iff <Math equation-number="32.10.28" mode="display" xml:id="C32.S10.E28">a+b+c+d=2n+1,</Math> where <Math mode="inline" xml:id="C32.S10.SS6.p1.m2">n\in\mathbb{Z}</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p1.m3">a=\varepsilon_{1}\sqrt{2\alpha}</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p1.m4">b=\varepsilon_{2}\sqrt{-2\beta}</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p1.m5">c=\varepsilon_{3}\sqrt{2\gamma}</Math> , and <Math mode="inline" xml:id="C32.S10.SS6.p1.m6">d=\varepsilon_{4}\sqrt{1-2\delta}</Math> , with <Math mode="inline" xml:id="C32.S10.SS6.p1.m7">\varepsilon_{j}=\pm 1</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p1.m8">j=1,2,3,4</Math> , independently.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="220" xml:id="C32.S10.SS6.p1.s2">
+If <Math mode="inline" xml:id="C32.S10.SS6.p1.m9">n=1</Math> , then the Riccati equation is <Math equation-number="32.10.29" mode="display" xml:id="C32.S10.E29">w^{\prime}=\frac{aw^{2}}{z(z-1)}+\frac{(b+c)z-a-c}{z(z-1)}w-\frac{b}{z-1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="221" xml:id="C32.S10.SS6.p1.s3">
+If <Math mode="inline" xml:id="C32.S10.SS6.p1.m10">a\neq 0</Math> , then (LABEL:eq:PT.SF.eq61) has the solution <Math equation-number="32.10.30" mode="display" xml:id="C32.S10.E30">w(z)=\frac{\zeta-1}{a\phi(\zeta)}\frac{\mathrm{d}\phi}{\mathrm{d}\zeta}, \zeta=\frac{1}{1-z},</Math> where <Math equation-number="32.10.31" mode="display" xml:id="C32.S10.E31">\phi(\zeta)=C_{1}F\left(b,-a;b+c;\zeta\right)+C_{2}\zeta^{-b+1-c}\*F\left(-a-b -c+1,-c+1;2-b-c;\zeta\right),</Math> with <Math mode="inline" xml:id="C32.S10.SS6.p1.m11">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p1.m12">C_{2}</Math> arbitrary constants.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S10.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="222" xml:id="C32.S10.SS6.p2.s1">
+Next, let <Math mode="inline" xml:id="C32.S10.SS6.p2.m1">\Lambda=\Lambda(u,z)</Math> be the elliptic function (§§LABEL:sec:JA.if.c,LABEL:sec:WE.2(iii))defined by <Math equation-number="32.10.32" mode="display" xml:id="C32.S10.E32">u=\int_{0}^{\Lambda}\frac{\mathrm{d}t}{\sqrt{t(t-1)(t-z)}},</Math> where the fundamental periods <Math mode="inline" xml:id="C32.S10.SS6.p2.m2">2\phi_{1}</Math> and <Math mode="inline" xml:id="C32.S10.SS6.p2.m3">2\phi_{2}</Math> are linearly independent functions satisfying the hypergeometric equation <Math equation-number="32.10.33" mode="display" xml:id="C32.S10.E33">z(1-z)\frac{{\mathrm{d}}^{2}\phi}{{\mathrm{d}z}^{2}}+(1-2z)\frac{\mathrm{d} \phi}{\mathrm{d}z}-\tfrac{1}{4}\phi=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="223" xml:id="C32.S10.SS6.p2.s2">
+Then <Math mode="inline" xml:id="C32.S10.SS6.p2.m4">\mbox{P}_{\mbox{\scriptsize VI}}</Math> , with <Math mode="inline" xml:id="C32.S10.SS6.p2.m5">\alpha=\beta=\gamma=0</Math> and <Math mode="inline" xml:id="C32.S10.SS6.p2.m6">\delta=\tfrac{1}{2}</Math> , has the general solution <Math equation-number="32.10.34" mode="display" xml:id="C32.S10.E34">w(z;0,0,0,\tfrac{1}{2})=\Lambda(C_{1}\phi_{1}+C_{2}\phi_{2},z),</Math> with <Math mode="inline" xml:id="C32.S10.SS6.p2.m7">C_{1}</Math> , <Math mode="inline" xml:id="C32.S10.SS6.p2.m8">C_{2}</Math> arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="224" xml:id="C32.S10.SS6.p2.s3">
+The solution (LABEL:eq:PT.DE.PVIc) is an essentially transcendental function of both constants of integration since <Math mode="inline" xml:id="C32.S10.SS6.p2.m9">\mbox{P}_{\mbox{\scriptsize VI}}</Math> with <Math mode="inline" xml:id="C32.S10.SS6.p2.m10">\alpha=\beta=\gamma=0</Math> and <Math mode="inline" xml:id="C32.S10.SS6.p2.m11">\delta=\tfrac{1}{2}</Math> does not admit an algebraic first integral of the form <Math mode="inline" xml:id="C32.S10.SS6.p2.m12">P(z,w,w^{\prime},C)=0</Math> , with <Math mode="inline" xml:id="C32.S10.SS6.p2.m13">C</Math> a constant.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S10.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="225" xml:id="C32.S10.SS6.p3.s1">
+For determinantal representations see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S11">
+<title>Asymptotic Approximations for Real Variables</title>           
+<subsection xml:id="C32.S11.SS1">
+<title>First Painlevé Equation</title>        
+ 
+<para xml:id="C32.S11.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="226" xml:id="C32.S11.SS1.p1.s1">
+There are solutions of (LABEL:eq:PT.DE.PI) such that <Math equation-number="32.11.1" mode="display" xml:id="C32.S11.E1">w(x)=-\sqrt{\tfrac{1}{6}|x|}+d|x|^{-1/8}\sin\left(\phi(x)-\theta_{0}\right)+o \left(|x|^{-1/8}\right), subject to x\to-\infty,</Math> where <Math equation-number="32.11.2" mode="display" xml:id="C32.S11.E2">\phi(x)=(24)^{1/4}\left(\tfrac{4}{5}|x|^{5/4}-\tfrac{5}{8}d^{2}\ln|x|\right),</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p1.m1">d</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p1.m2">\theta_{0}</Math> are constants.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S11.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="227" xml:id="C32.S11.SS1.p2.s1">
+There are also solutions of (LABEL:eq:PT.DE.PI) such that <Math equation-number="32.11.3" mode="display" xml:id="C32.S11.E3">w(x)\sim\sqrt{\tfrac{1}{6}|x|}, subject to x\to-\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="228" xml:id="C32.S11.SS1.p3.s1">
+Next, for given initial conditions <Math mode="inline" xml:id="C32.S11.SS1.p3.m1">w(0)=0</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p3.m2">w^{\prime}(0)=k</Math> , with <Math mode="inline" xml:id="C32.S11.SS1.p3.m3">k</Math> real, <Math mode="inline" xml:id="C32.S11.SS1.p3.m4">w(x)</Math> has at least one pole on the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="229" xml:id="C32.S11.SS1.p3.s2">
+There are two special values of <Math mode="inline" xml:id="C32.S11.SS1.p3.m5">k</Math> , <Math mode="inline" xml:id="C32.S11.SS1.p3.m6">k_{1}</Math> and <Math mode="inline" xml:id="C32.S11.SS1.p3.m7">k_{2}</Math> , with the properties <Math mode="inline" xml:id="C32.S11.SS1.p3.m8">-0.45142\;8&lt;k_{1}&lt;-0.45142\;</Math> 7, <Math mode="inline" xml:id="C32.S11.SS1.p3.m9">1.85185\;3&lt;k_{2}&lt;1.85185\;</Math> 5, and such that: If <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m1">k&lt;k_{1}</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m2">w(x)&gt;0</Math> for <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m3">x_{0}&lt;x&lt;0</Math> , where <Math mode="inline" xml:id="C32.S11.I1.i1.p1.m4">x_{0}</Math> is the first pole on the negative real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="230" xml:id="C32.S11.SS1.p3.s3">
+If <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m1">k_{1}&lt;k&lt;k_{2}</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m2">w(x)</Math> oscillates about, and is asymptotic to, <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m3">-\sqrt{\tfrac{1}{6}|x|}</Math> as <Math mode="inline" xml:id="C32.S11.I1.i2.p1.m4">x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="231" xml:id="C32.S11.SS1.p3.s4">
+If <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m1">k_{2}&lt;k</Math> , then <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m2">w(x)</Math> changes sign once, from positive to negative, as <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m3">x</Math> passes from <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m4">x_{0}</Math> to <Math mode="inline" xml:id="C32.S11.I1.i3.p1.m5">0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C32.S11.SS1.p4.s1">
+For illustration see Figures LABEL:fig:PT.GR.P1plot1 toLABEL:fig:PT.GR.P1plot4, and for further information see ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS2">
+<title>Second Painlevé Equation</title>         
+<para xml:id="C32.S11.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="233" xml:id="C32.S11.SS2.p1.s1">
+Consider the special case of <Math mode="inline" xml:id="C32.S11.SS2.p1.m1">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S11.SS2.p1.m2">\alpha=0</Math> : <Math equation-number="32.11.4" mode="display" xml:id="C32.S11.E4">w^{\prime\prime}=2w^{3}+xw,</Math> with boundary condition <Math equation-number="32.11.5" mode="display" xml:id="C32.S11.E5">w(x)\to 0, subject to x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="234" xml:id="C32.S11.SS2.p1.s2">
+Any nontrivial real solution of (LABEL:eq:PT.AAr.P2eq5) that satisfies (LABEL:eq:PT.AAr.P2eq6) is asymptotic to <Math mode="inline" xml:id="C32.S11.SS2.p1.m3">k\mathrm{Ai}\left(x\right)</Math> , for some nonzero real <Math mode="inline" xml:id="C32.S11.SS2.p1.m4">k</Math> , where <Math mode="inline" xml:id="C32.S11.SS2.p1.m5">\mathrm{Ai}</Math> denotes the Airy function (§LABEL:sec:AI.DE).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="235" xml:id="C32.S11.SS2.p1.s3">
+Conversely, for any nonzero real <Math mode="inline" xml:id="C32.S11.SS2.p1.m6">k</Math> , there is a unique solution <Math mode="inline" xml:id="C32.S11.SS2.p1.m7">w_{k}(x)</Math> of (LABEL:eq:PT.AAr.P2eq5) that is asymptotic to <Math mode="inline" xml:id="C32.S11.SS2.p1.m8">k\mathrm{Ai}\left(x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS2.p1.m9">x\to+\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C32.S11.SS2.p2.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p2.m1">|k|&lt;1</Math> , then <Math mode="inline" xml:id="C32.S11.SS2.p2.m2">w_{k}(x)</Math> exists for all sufficiently large <Math mode="inline" xml:id="C32.S11.SS2.p2.m3">|x|</Math> as <Math mode="inline" xml:id="C32.S11.SS2.p2.m4">x\to-\infty</Math> , and <Math equation-number="32.11.6" mode="display" xml:id="C32.S11.E6">w_{k}(x)=d|x|^{-1/4}\sin\left(\phi(x)-\theta_{0}\right)+o\left(|x|^{-1/4} \right),</Math> where <Math equation-number="32.11.7" mode="display" xml:id="C32.S11.E7">\phi(x)=\tfrac{2}{3}|x|^{3/2}-\tfrac{3}{4}d^{2}\ln|x|,</Math> and <Math mode="inline" xml:id="C32.S11.SS2.p2.m5">d</Math> <Math mode="inline" xml:id="C32.S11.SS2.p2.m6">(\neq 0)</Math> , <Math mode="inline" xml:id="C32.S11.SS2.p2.m7">\theta_{0}</Math> are real constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="237" xml:id="C32.S11.SS2.p2.s2">
+Connection formulas for <Math mode="inline" xml:id="C32.S11.SS2.p2.m8">d</Math> and <Math mode="inline" xml:id="C32.S11.SS2.p2.m9">\theta_{0}</Math> are given by <Math equation-number="32.11.8" mode="display" xml:id="C32.S11.E8">d^{2}=-\pi^{-1}\ln\left(1-k^{2}\right),</Math> <Math equation-number="32.11.9" mode="display" xml:id="C32.S11.E9">\theta_{0}=\tfrac{3}{2}d^{2}\ln 2+\operatorname{ph}\Gamma\left(1-\tfrac{1}{2} id^{2}\right)+\tfrac{1}{4}\pi(1-2\operatorname{sign}\left(k\right)),</Math> where <Math mode="inline" xml:id="C32.S11.SS2.p2.m10">\Gamma</Math> is the gamma function (§LABEL:sec:GA.Def.GP), and the branch of the <Math mode="inline" xml:id="C32.S11.SS2.p2.m11">\operatorname{ph}</Math> function is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="238" xml:id="C32.S11.SS2.p3.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p3.m1">|k|=1</Math> , then <Math equation-number="32.11.10" mode="display" xml:id="C32.S11.E10">w_{k}(x)\sim\operatorname{sign}\left(k\right)\sqrt{\tfrac{1}{2}|x|}, subject to x\to-\infty</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="239" xml:id="C32.S11.SS2.p4.s1">
+If <Math mode="inline" xml:id="C32.S11.SS2.p4.m1">|k|&gt;1</Math> , then <Math mode="inline" xml:id="C32.S11.SS2.p4.m2">w_{k}(x)</Math> has a pole at a finite point <Math mode="inline" xml:id="C32.S11.SS2.p4.m3">x=c_{0}</Math> , dependent on <Math mode="inline" xml:id="C32.S11.SS2.p4.m4">k</Math> , and <Math equation-number="32.11.11" mode="display" xml:id="C32.S11.E11">w_{k}(x)\sim\operatorname{sign}\left(k\right)(x-c_{0})^{-1}, subject to x\to c_{0}+</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="240" xml:id="C32.S11.SS2.p5.s1">
+For illustration see Figures LABEL:fig:PT.GR.P2plot1 andLABEL:fig:PT.GR.P2plot2, and for further information see ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="241" xml:id="C32.S11.SS2.p5.s2">
+For numerical studies see ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS3">
+<title>Modified Second Painlevé Equation</title>         
+<para xml:id="C32.S11.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="242" xml:id="C32.S11.SS3.p1.s1">
+Replacement of <Math mode="inline" xml:id="C32.S11.SS3.p1.m1">w</Math> by <Math mode="inline" xml:id="C32.S11.SS3.p1.m2">iw</Math> in (LABEL:eq:PT.AAr.P2eq5) gives <Math equation-number="32.11.12" mode="display" xml:id="C32.S11.E12">w^{\prime\prime}=-2w^{3}+xw</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="243" xml:id="C32.S11.SS3.p1.s2">
+Any nontrivial real solution of (LABEL:eq:PT.AE.21) satisfies <Math equation-number="32.11.13" mode="display" xml:id="C32.S11.E13">w(x)=d|x|^{-1/4}\sin\left(\phi(x)-\chi\right)+O\left(|x|^{-5/4}\ln|x|\right), subject to x\to-\infty,</Math> where <Math equation-number="32.11.14" mode="display" xml:id="C32.S11.E14">\phi(x)=\tfrac{2}{3}|x|^{3/2}+\tfrac{3}{4}d^{2}\ln|x|,</Math> with <Math mode="inline" xml:id="C32.S11.SS3.p1.m3">d</Math> <Math mode="inline" xml:id="C32.S11.SS3.p1.m4">(\neq 0)</Math> and <Math mode="inline" xml:id="C32.S11.SS3.p1.m5">\chi</Math> arbitrary real constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="244" xml:id="C32.S11.SS3.p2.s1">
+In the case when <Math equation-number="32.11.15" mode="display" xml:id="C32.S11.E15">\chi+\tfrac{3}{2}d^{2}\ln 2-\tfrac{1}{4}\pi-\operatorname{ph}\Gamma\left( \tfrac{1}{2}id^{2}\right)=n\pi,</Math> with <Math mode="inline" xml:id="C32.S11.SS3.p2.m1">n\in\mathbb{Z}</Math> , we have <Math equation-number="32.11.16" mode="display" xml:id="C32.S11.E16">w(x)\sim k\mathrm{Ai}\left(x\right), subject to x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS3.p2.m2">k</Math> is a nonzero real constant.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="245" xml:id="C32.S11.SS3.p2.s2">
+The connection formulas for <Math mode="inline" xml:id="C32.S11.SS3.p2.m3">k</Math> are <Math equation-number="32.11.17" mode="display" xml:id="C32.S11.E17">d^{2}=\pi^{-1}\ln\left(1+k^{2}\right), subject to \operatorname{sign}\left(k\right)=(-1)^{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="246" xml:id="C32.S11.SS3.p3.s1">
+In the generic case <Math equation-number="32.11.18" mode="display" xml:id="C32.S11.E18">\chi+\tfrac{3}{2}d^{2}\ln 2-\tfrac{1}{4}\pi-\operatorname{ph}\Gamma\left( \tfrac{1}{2}id^{2}\right)\neq n\pi,</Math> we have <Math equation-number="32.11.19" mode="display" xml:id="C32.S11.E19">w(x)=\sigma\sqrt{\tfrac{1}{2}x}+\sigma\rho(2x)^{-1/4}\cos\left(\psi(x)+\theta \right)+O\left(x^{-1}\right), subject to x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS3.p3.m1">\sigma</Math> , <Math mode="inline" xml:id="C32.S11.SS3.p3.m2">\rho</Math> <Math mode="inline" xml:id="C32.S11.SS3.p3.m3">(&gt;0)</Math> , and <Math mode="inline" xml:id="C32.S11.SS3.p3.m4">\theta</Math> are real constants, and <Math equation-number="32.11.20" mode="display" xml:id="C32.S11.E20">\psi(x)=\tfrac{2}{3}\sqrt{2}x^{3/2}-\tfrac{3}{2}\rho^{2}\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="247" xml:id="C32.S11.SS3.p3.s2">
+The connection formulas for <Math mode="inline" xml:id="C32.S11.SS3.p3.m5">\sigma</Math> , <Math mode="inline" xml:id="C32.S11.SS3.p3.m6">\rho</Math> , and <Math mode="inline" xml:id="C32.S11.SS3.p3.m7">\theta</Math> are <Math equation-number="32.11.21" mode="display" xml:id="C32.S11.E21">\sigma=-\operatorname{sign}\left(\Im s\right),</Math> <Math equation-number="32.11.22" mode="display" xml:id="C32.S11.E22">\rho^{2}=\pi^{-1}\ln\left((1+|s|^{2})/|2\Im s|\right),</Math> <Math equation-number="32.11.23" mode="display" xml:id="C32.S11.E23">\theta=-\tfrac{3}{4}\pi-\tfrac{7}{2}\rho^{2}\ln{2}+\operatorname{ph}\left(1+s^ {2}\right)+\operatorname{ph}\Gamma\left(i\rho^{2}\right),</Math> where <Math equation-number="32.11.24" mode="display" xml:id="C32.S11.E24">s=\left(\exp\left(\pi d^{2}\right)-1\right)^{1/2}\*\exp\left(i\left(\tfrac{3}{ 2}d^{2}\ln 2-\tfrac{1}{4}\pi+\chi-\operatorname{ph}\Gamma\left(\tfrac{1}{2}id^ {2}\right)\right)\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS4">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S11.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="248" xml:id="C32.S11.SS4.p1.s1">
+For <Math mode="inline" xml:id="C32.S11.SS4.p1.m1">\mbox{P}_{\mbox{\scriptsize III}}</Math> , with <Math mode="inline" xml:id="C32.S11.SS4.p1.m2">\alpha=-\beta=2\nu</Math> <Math mode="inline" xml:id="C32.S11.SS4.p1.m3">(\in\mathbb{R})</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m4">\gamma=-\delta=1</Math> , <Math equation-number="32.11.25" mode="display" xml:id="C32.S11.E25">w(x)-1\sim-\lambda\Gamma\left(\nu+\tfrac{1}{2}\right)2^{-2\nu}x^{-\nu-(1/2)}e^ {-2x}, subject to x\to+\infty,</Math> where <Math mode="inline" xml:id="C32.S11.SS4.p1.m5">\lambda</Math> is an arbitrary constant such that <Math mode="inline" xml:id="C32.S11.SS4.p1.m6">-1/\pi&lt;\lambda&lt;1/\pi</Math> , and <Math equation-number="32.11.26" mode="display" xml:id="C32.S11.E26">w(x)\sim Bx^{\sigma}, subject to x\to 0,</Math> where <Math mode="inline" xml:id="C32.S11.SS4.p1.m7">B</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m8">\sigma</Math> are arbitrary constants such that <Math mode="inline" xml:id="C32.S11.SS4.p1.m9">B\neq 0</Math> and <Math mode="inline" xml:id="C32.S11.SS4.p1.m10">|\Re\sigma|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="249" xml:id="C32.S11.SS4.p1.s2">
+The connection formulas relating (LABEL:eq:PT.AAr.P31) and (LABEL:eq:PT.AAr.P32) are <Math equation-number="32.11.27" mode="display" xml:id="C32.S11.E27">\sigma=(2/\pi)\operatorname{arcsin}\left(\pi\lambda\right),</Math> <Math equation-number="32.11.28" mode="display" xml:id="C32.S11.E28">B=2^{-2\sigma}\frac{{\Gamma^{2}}\left(\tfrac{1}{2}(1-\sigma)\right)\Gamma\left (\tfrac{1}{2}(1+\sigma)+\nu\right)}{{\Gamma^{2}}\left(\tfrac{1}{2}(1+\sigma) \right)\Gamma\left(\tfrac{1}{2}(1-\sigma)+\nu\right)}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="250" xml:id="C32.S11.SS4.p2.s1">
+See also ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S11.SS5">
+<title>Fourth Painlevé Equation</title>        
+ 
+<para xml:id="C32.S11.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="251" xml:id="C32.S11.SS5.p1.s1">
+Consider <Math mode="inline" xml:id="C32.S11.SS5.p1.m1">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math mode="inline" xml:id="C32.S11.SS5.p1.m2">\alpha=2\nu+1</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m3">(\in\mathbb{R})</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p1.m4">\beta=0</Math> , that is, <Math equation-number="32.11.29" mode="display" xml:id="C32.S11.E29">w^{\prime\prime}=\frac{(w^{\prime})^{2}}{2w}+\frac{3}{2}w^{3}+4xw^{2}+2(x^{2}- 2\nu-1)w,</Math> and with boundary condition <Math equation-number="32.11.30" mode="display" xml:id="C32.S11.E30">w(x)\to 0, subject to x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="252" xml:id="C32.S11.SS5.p1.s2">
+Any nontrivial solution of (LABEL:eq:PT.11.89) that satisfies (LABEL:eq:PT.11.90) is asymptotic to <Math mode="inline" xml:id="C32.S11.SS5.p1.m5">h{U^{2}}\left(-\nu-\frac{1}{2},\sqrt{2}x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS5.p1.m6">x\to+\infty</Math> , where <Math mode="inline" xml:id="C32.S11.SS5.p1.m7">h</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m8">(\neq 0)</Math> is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="253" xml:id="C32.S11.SS5.p1.s3">
+Conversely, for any <Math mode="inline" xml:id="C32.S11.SS5.p1.m9">h</Math> <Math mode="inline" xml:id="C32.S11.SS5.p1.m10">(\neq 0)</Math> there is a unique solution <Math mode="inline" xml:id="C32.S11.SS5.p1.m11">w_{h}(x)</Math> of (LABEL:eq:PT.11.89) that is asymptotic to <Math mode="inline" xml:id="C32.S11.SS5.p1.m12">h{U^{2}}\left(-\nu-\frac{1}{2},\sqrt{2}x\right)</Math> as <Math mode="inline" xml:id="C32.S11.SS5.p1.m13">x\to+\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="254" xml:id="C32.S11.SS5.p1.s4">
+Here <Math mode="inline" xml:id="C32.S11.SS5.p1.m14">U</Math> denotes the parabolic cylinder function (§LABEL:sec:PC.DE).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="255" xml:id="C32.S11.SS5.p2.s1">
+Now suppose <Math mode="inline" xml:id="C32.S11.SS5.p2.m1">x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="256" xml:id="C32.S11.SS5.p2.s2">
+If <Math mode="inline" xml:id="C32.S11.SS5.p2.m2">0\leq h&lt;h^{*}</Math> , where <Math equation-number="32.11.31" mode="display" xml:id="C32.S11.E31">h^{*}=\ifrac{1}{\left(\pi^{1/2}\Gamma\left(\nu+1\right)\right)},</Math> then <Math mode="inline" xml:id="C32.S11.SS5.p2.m3">w_{h}(x)</Math> has no poles on the real axis.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="257" xml:id="C32.S11.SS5.p2.s3">
+Furthermore, if <Math mode="inline" xml:id="C32.S11.SS5.p2.m4">\nu=n=0,1,2,\dots</Math> , then <Math equation-number="32.11.32" mode="display" xml:id="C32.S11.E32">w_{h}(x)\sim h2^{n}x^{2n}\exp\left(-x^{2}\right), subject to x\to-\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="258" xml:id="C32.S11.SS5.p2.s4">
+Alternatively, if <Math mode="inline" xml:id="C32.S11.SS5.p2.m5">\nu</Math> is not zero or a positive integer, then <Math equation-number="32.11.33" mode="display" xml:id="C32.S11.E33">w_{h}(x)=-\tfrac{2}{3}x+\tfrac{4}{3}d\sqrt{3}\sin\left(\phi(x)-\theta_{0} \right)+O\left(x^{-1}\right), subject to x\to-\infty,</Math> where <Math equation-number="32.11.34" mode="display" xml:id="C32.S11.E34">\phi(x)=\tfrac{1}{3}\sqrt{3}x^{2}-\tfrac{4}{3}d^{2}\sqrt{3}\ln\left(\sqrt{2}|x |\right),</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m6">d</Math> <Math mode="inline" xml:id="C32.S11.SS5.p2.m7">(&gt;0)</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m8">\theta_{0}</Math> are real constants.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="259" xml:id="C32.S11.SS5.p2.s5">
+Connection formulas for <Math mode="inline" xml:id="C32.S11.SS5.p2.m9">d</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p2.m10">\theta_{0}</Math> are given by <Math equation-number="32.11.35" mode="display" xml:id="C32.S11.E35">d^{2}=-\tfrac{1}{4}\sqrt{3}\pi^{-1}\ln\left(1-|\mu|^{2}\right),</Math> , <Math equation-number="32.11.36" mode="display" xml:id="C32.S11.E36">\theta_{0}=\tfrac{1}{3}d^{2}\sqrt{3}\ln 3+\tfrac{2}{3}\pi\nu+\tfrac{7}{12}\pi+ \operatorname{ph}\mu+\operatorname{ph}\Gamma\left(-\tfrac{2}{3}i\sqrt{3}d^{2} \right),</Math> where <Math equation-number="32.11.37" mode="display" xml:id="C32.S11.E37">\mu=1+\left(\ifrac{2ih\pi^{3/2}\exp\left(-i\pi\nu\right)}{\Gamma\left(-\nu \right)}\right),</Math> and the branch of the <Math mode="inline" xml:id="C32.S11.SS5.p2.m11">\operatorname{ph}</Math> function is immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="260" xml:id="C32.S11.SS5.p3.s1">
+Next if <Math mode="inline" xml:id="C32.S11.SS5.p3.m1">h=h^{*}</Math> , then <Math equation-number="32.11.38" mode="display" xml:id="C32.S11.E38">w_{h^{*}}(x)\sim-2x, subject to x\to-\infty,</Math> and <Math mode="inline" xml:id="C32.S11.SS5.p3.m2">w_{h^{*}}(x)</Math> has no poles on the real axis.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="261" xml:id="C32.S11.SS5.p4.s1">
+Lastly if <Math mode="inline" xml:id="C32.S11.SS5.p4.m1">h&gt;h^{*}</Math> , then <Math mode="inline" xml:id="C32.S11.SS5.p4.m2">w_{h}(x)</Math> has a simple pole on the real axis, whose location is dependent on <Math mode="inline" xml:id="C32.S11.SS5.p4.m3">h</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S11.SS5.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C32.S11.SS5.p5.s1">
+For illustration see Figures LABEL:fig:PT.GR.P4plot1–LABEL:fig:PT.GR.P4plot4.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="263" xml:id="C32.S11.SS5.p5.s2">
+In terms of the parameter <Math mode="inline" xml:id="C32.S11.SS5.p5.m1">k</Math> that is used in these figures <Math mode="inline" xml:id="C32.S11.SS5.p5.m2">h=2^{3/2}k^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S11.SS5.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="264" xml:id="C32.S11.SS5.p6.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S12">
+<title>Asymptotic Approximations for Complex Variables</title>          
+<subsection xml:id="C32.S12.SS1">
+<title>First Painlevé Equation</title>        
+ 
+<para xml:id="C32.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="265" xml:id="C32.S12.SS1.p1.s1">
+See ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S12.SS2">
+<title>Second Painlevé Equation</title>        
+ 
+<para xml:id="C32.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="266" xml:id="C32.S12.SS2.p1.s1">
+See ( ) , ( ) , ( ) , ( ) , ( ) , ( ) , and ( , Chapter 7) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S12.SS3">
+<title>Third Painlevé Equation</title>         
+<para xml:id="C32.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="267" xml:id="C32.S12.SS3.p1.s1">
+See ( , Chapter 16) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+            
+<section xml:id="C32.S13">
+<title>Reductions of Partial Differential Equations</title>           
+ 
+<subsection xml:id="C32.S13.SS1">
+<title>Korteweg–de Vries and Modified Korteweg–de Vries Equations</title>           
+<para xml:id="C32.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="268" xml:id="C32.S13.SS1.p1.s1">
+The modified Korteweg–de Vries (mKdV) equation <Math equation-number="32.13.1" mode="display" xml:id="C32.S13.E1">v_{t}-6v^{2}v_{x}+v_{xxx}=0,</Math> has the scaling reduction <Math equation-number="32.13.2" mode="display" xml:id="C32.S13.E2">z=x(3t)^{-1/3}, v(x,t)=(3t)^{-1/3}w(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p1.m1">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS1.p1.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S13.SS1.p1.m3">\alpha</Math> a constant of integration.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C32.S13.SS1.p2.s1">
+The Korteweg–de Vries (KdV) equation <Math equation-number="32.13.3" mode="display" xml:id="C32.S13.E3">u_{t}+6uu_{x}+u_{xxx}=0,</Math> has the scaling reduction <Math equation-number="32.13.4" mode="display" xml:id="C32.S13.E4">z=x(3t)^{-1/3}, u(x,t)=-(3t)^{-2/3}(w^{\prime}+w^{2}),</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p2.m1">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS1.p2.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C32.S13.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="270" xml:id="C32.S13.SS1.p3.s1">
+Equation (LABEL:eq:PT.App.kdv1) also has the similarity reduction <Math equation-number="32.13.5" mode="display" xml:id="C32.S13.E5">z=x+3\lambda t^{2}, u(x,t)=W(z)-\lambda t,</Math> where <Math mode="inline" xml:id="C32.S13.SS1.p3.m1">\lambda</Math> is an arbitrary constant and <Math mode="inline" xml:id="C32.S13.SS1.p3.m2">W(z)</Math> is expressible in terms of solutions of <Math mode="inline" xml:id="C32.S13.SS1.p3.m3">\mbox{P}_{\mbox{\scriptsize I}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="271" xml:id="C32.S13.SS1.p3.s2">
+See ( ) and P. J.  ( , p. 194) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S13.SS2">
+<title>Sine-Gordon Equation</title>          
+<para xml:id="C32.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="272" xml:id="C32.S13.SS2.p1.s1">
+The sine-Gordon equation <Math equation-number="32.13.6" mode="display" xml:id="C32.S13.E6">u_{xt}=\sin u,</Math> has the scaling reduction <Math equation-number="32.13.7" mode="display" xml:id="C32.S13.E7">z=xt, u(x,t)=v(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS2.p1.m1">v(z)</Math> satisfies (LABEL:eq:PT.DE.cPIII) with <Math mode="inline" xml:id="C32.S13.SS2.p1.m2">\alpha=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C32.S13.SS2.p1.m3">\gamma=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="273" xml:id="C32.S13.SS2.p1.s2">
+In consequence if <Math mode="inline" xml:id="C32.S13.SS2.p1.m4">w=\exp\left(-iv\right)</Math> , then <Math mode="inline" xml:id="C32.S13.SS2.p1.m5">w(z)</Math> satisfies <Math mode="inline" xml:id="C32.S13.SS2.p1.m6">\mbox{P}_{\mbox{\scriptsize III}}</Math> with <Math mode="inline" xml:id="C32.S13.SS2.p1.m7">\alpha=-\beta=\tfrac{1}{2}</Math> and <Math mode="inline" xml:id="C32.S13.SS2.p1.m8">\gamma=\delta=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S13.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="274" xml:id="C32.S13.SS2.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C32.S13.SS3">
+<title>Boussinesq Equation</title>          
+<para xml:id="C32.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="275" xml:id="C32.S13.SS3.p1.s1">
+The Boussinesq equation <Math equation-number="32.13.8" mode="display" xml:id="C32.S13.E8">u_{tt}=u_{xx}-6(u^{2})_{xx}+u_{xxxx},</Math> has the traveling wave solution <Math equation-number="32.13.9" mode="display" xml:id="C32.S13.E9">z=x-ct, u(x,t)=v(z),</Math> where <Math mode="inline" xml:id="C32.S13.SS3.p1.m1">c</Math> is an arbitrary constant and <Math mode="inline" xml:id="C32.S13.SS3.p1.m2">v(z)</Math> satisfies <Math equation-number="32.13.10" mode="display" xml:id="C32.S13.E10">v^{\prime\prime}=6v^{2}+(c^{2}-1)v+Az+B,</Math> with <Math mode="inline" xml:id="C32.S13.SS3.p1.m3">A</Math> and <Math mode="inline" xml:id="C32.S13.SS3.p1.m4">B</Math> constants of integration.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="276" xml:id="C32.S13.SS3.p1.s2">
+Depending whether <Math mode="inline" xml:id="C32.S13.SS3.p1.m5">A=0</Math> or <Math mode="inline" xml:id="C32.S13.SS3.p1.m6">A\neq 0</Math> , <Math mode="inline" xml:id="C32.S13.SS3.p1.m7">v(z)</Math> is expressible in terms of the Weierstrass elliptic function (§LABEL:sec:WE.2) or solutions of <Math mode="inline" xml:id="C32.S13.SS3.p1.m8">\mbox{P}_{\mbox{\scriptsize I}}</Math> , respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C32.S14">
+<title>Combinatorics</title>          
+ 
+<para xml:id="C32.S14.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="277" xml:id="C32.S14.p1.s1">
+Let <Math mode="inline" xml:id="C32.S14.p1.m1">S_{N}</Math> be the group of permutations <Math mode="inline" xml:id="C32.S14.p1.m2">\boldsymbol{\pi}</Math> of the numbers <Math mode="inline" xml:id="C32.S14.p1.m3">1,2,\dots,N</Math> (§ LABEL:sec:CM.BD).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="278" xml:id="C32.S14.p1.s2">
+With <Math mode="inline" xml:id="C32.S14.p1.m4">1\leq m_{1}&lt;\cdots&lt;m_{n}\leq N</Math> , <Math mode="inline" xml:id="C32.S14.p1.m5">\boldsymbol{\pi}(m_{1}),\boldsymbol{\pi}(m_{2}),\dots,\boldsymbol{\pi}(m_{n})</Math> is said to be an increasing subsequence of <Math mode="inline" xml:id="C32.S14.p1.m6">\boldsymbol{\pi}</Math> of length <Math mode="inline" xml:id="C32.S14.p1.m7">n</Math> when <Math mode="inline" xml:id="C32.S14.p1.m8">\boldsymbol{\pi}(m_{1})&lt;\boldsymbol{\pi}(m_{2})&lt;\cdots&lt;\boldsymbol{\pi}(m_{n})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="279" xml:id="C32.S14.p1.s3">
+Let <Math mode="inline" xml:id="C32.S14.p1.m9">\ell_{N}(\boldsymbol{\pi})</Math> be the length of the longest increasing subsequence of <Math mode="inline" xml:id="C32.S14.p1.m10">\boldsymbol{\pi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="280" xml:id="C32.S14.p1.s4">
+Then <Math equation-number="32.14.1" mode="display" xml:id="C32.S14.E1">\lim_{N\to\infty}\mathrm{Prob}\left(\frac{\ell_{N}(\boldsymbol{\pi})-2\sqrt{N} }{N^{1/6}}\leq s\right)=F(s),</Math> where the distribution function <Math mode="inline" xml:id="C32.S14.p1.m11">F(s)</Math> is defined here by <Math equation-number="32.14.2" mode="display" xml:id="C32.S14.E2">F(s)=\exp\left(-\int_{s}^{\infty}(x-s)w^{2}(x)\mathrm{d}x\right),</Math> and <Math mode="inline" xml:id="C32.S14.p1.m12">w(x)</Math> satisfies <Math mode="inline" xml:id="C32.S14.p1.m13">\mbox{P}_{\mbox{\scriptsize II}}</Math> with <Math mode="inline" xml:id="C32.S14.p1.m14">\alpha=0</Math> and boundary conditions <Math equation-number="32.14.3" mode="display" xml:id="C32.S14.E3">w(x)\sim\mathrm{Ai}\left(x\right), subject to x\to+\infty,</Math> , <Math equation-number="32.14.4" mode="display" xml:id="C32.S14.E4">w(x)\sim\sqrt{-\tfrac{1}{2}x}, subject to x\to-\infty,</Math> where <Math mode="inline" xml:id="C32.S14.p1.m15">\mathrm{Ai}</Math> denotes the Airy function (§LABEL:sec:AI.DE).
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S14.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="281" xml:id="C32.S14.p2.s1">
+The distribution function <Math mode="inline" xml:id="C32.S14.p2.m1">F(s)</Math> given by (LABEL:eq:PT.Com.eq3a)arises in random matrix theory where it gives the limiting distribution for thenormalized largest eigenvalue in the Gaussian Unitary Ensemble of <Math mode="inline" xml:id="C32.S14.p2.m2">n\times n</Math> Hermitian matrices; see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S14.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="282" xml:id="C32.S14.p3.s1">
+See ( ) for other instances of Painlevé equations in random matrix theory.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C32.S15">
+<title>Orthogonal Polynomials</title>          
+ 
+<para xml:id="C32.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="283" xml:id="C32.S15.p1.s1">
+Let <Math mode="inline" xml:id="C32.S15.p1.m1">p_{n}(\xi)</Math> , <Math mode="inline" xml:id="C32.S15.p1.m2">n=0,1,\dots</Math> , be the orthonormal set of polynomials defined by <Math equation-number="32.15.1" mode="display" xml:id="C32.S15.E1">\int_{-\infty}^{\infty}\exp\left(-\tfrac{1}{4}\xi^{4}-z\xi^{2}\right)p_{m}(\xi )p_{n}(\xi)\mathrm{d}\xi=\delta_{m,n},</Math> with recurrence relation <Math equation-number="32.15.2" mode="display" xml:id="C32.S15.E2">a_{n+1}(z)p_{n+1}(\xi)=\xi p_{n}(\xi)-a_{n}(z)p_{n-1}(\xi),</Math> for <Math mode="inline" xml:id="C32.S15.p1.m3">n=1,2,\dots</Math> ; compare §LABEL:sec:OP.GE. Then <Math mode="inline" xml:id="C32.S15.p1.m4">u_{n}(z)=(a_{n}(z))^{2}</Math> satisfies the nonlinear recurrence relation <Math equation-number="32.15.3" mode="display" xml:id="C32.S15.E3">(u_{n+1}+u_{n}+u_{n-1})u_{n}=n-2zu_{n},</Math> for <Math mode="inline" xml:id="C32.S15.p1.m5">n=1,2,\dots</Math> , and also <Math mode="inline" xml:id="C32.S15.p1.m6">\mbox{P}_{\mbox{\scriptsize IV}}</Math> with <Math mode="inline" xml:id="C32.S15.p1.m7">\alpha=-\tfrac{1}{2}n</Math> and <Math mode="inline" xml:id="C32.S15.p1.m8">\beta=-\tfrac{1}{2}n^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C32.S15.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="284" xml:id="C32.S15.p2.s1">
+For this result and applications see ( ) : in this reference, on the right-hand side of Eq. (1.10),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="285" xml:id="C32.S15.p2.s2">
+<Math mode="inline" xml:id="C32.S15.p2.m1">(n+\gamma)^{2}</Math> should be replaced by <Math mode="inline" xml:id="C32.S15.p2.m2">n+\gamma</Math> at its first appearance.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="286" xml:id="C32.S15.p2.s3">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C32.S16">
+<title>Physical Applications</title>           
+<paragraph xml:id="C32.S16.Px1">
+<title>Statistical Physics</title>      
+<para xml:id="C32.S16.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="287" xml:id="C32.S16.Px1.p1.s1">
+Statistical physics, especially classical and quantum spin models, has proved to be a major area for research problems in the modern theory of Painlevé transcendents.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="288" xml:id="C32.S16.Px1.p1.s2">
+For a survey see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="289" xml:id="C32.S16.Px1.p1.s3">
+See also ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C32.S16.Px2">
+<title>Integrable Continuous Dynamical Systems</title>  
+   
+<para xml:id="C32.S16.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="290" xml:id="C32.S16.Px2.p1.s1">
+See ( ) and ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C32.S16.Px3">
+<title>Other Applications</title>     
+<para xml:id="C32.S16.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="291" xml:id="C32.S16.Px3.p1.s1">
+For the Ising model see ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+       
+<para xml:id="C32.S16.Px3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="292" xml:id="C32.S16.Px3.p2.s1">
+For applications in 2D quantum gravity and related aspects of the enumerative topology see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="293" xml:id="C32.S16.Px3.p2.s2">
+For applications in string theory see ( ) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+           
+<section xml:id="C32.S17">
+<title>Methods of Computation</title>         
+ 
+<para xml:id="C32.S17.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="294" xml:id="C32.S17.p1.s1">
+The Painlevé equations can be integrated by Runge–Kutta methods for ordinary differential equations; see §LABEL:sec:NM.ODE.RUK, ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="295" xml:id="C32.S17.p1.s2">
+For numerical studies of <Math mode="inline" xml:id="C32.S17.p1.m1">\mbox{P}_{\mbox{\scriptsize I}}</Math> see ( ) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="296" xml:id="C32.S17.p1.s3">
+For numerical studies of <Math mode="inline" xml:id="C32.S17.p1.m2">\mbox{P}_{\mbox{\scriptsize II}}</Math> see ( ) , ( ) , ( ) , and S.  ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="297" xml:id="C32.S17.p1.s4">
+For numerical studies of <Math mode="inline" xml:id="C32.S17.p1.m3">\mbox{P}_{\mbox{\scriptsize IV}}</Math> see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+
+</chapter>

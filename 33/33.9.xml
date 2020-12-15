@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S9">
+<title>Expansions in Series of Bessel Functions</title>         
+<subsection xml:id="C33.S9.SS1">
+<title>Spherical Bessel Functions</title>        
+ 
+ 
+<para xml:id="C33.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S9.SS1.p1.s1">
+ <Math equation-number="33.9.1" mode="display" xml:id="C33.S9.E1">F_{\ell}\left(\eta,\rho\right)=\rho\sum_{k=0}^{\infty}a_{k}\mathsf{j}_{\ell+k} \left(\rho\right),</Math> where the function <Math mode="inline" xml:id="C33.S9.SS1.p1.m1">\mathsf{j}</Math> is as in §10.47(ii),
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C33.S9.SS1.p1.s2">
+<Math mode="inline" xml:id="C33.S9.SS1.p1.m2">a_{-1}=0</Math> , <Math mode="inline" xml:id="C33.S9.SS1.p1.m3">a_{0}=(2\ell+1)!!C_{\ell}\left(\eta\right)</Math> , and <Math equation-number="33.9.2" mode="display" xml:id="C33.S9.E2">\frac{k(k+2\ell+1)}{2k+2\ell+1}a_{k}-2\eta a_{k-1}+\frac{(k-2)(k+2\ell-1)}{2k+ 2\ell-3}a_{k-2}=0, if k=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C33.S9.SS1.p1.s3">
+The series (33.9.1) converges for all finite values of <Math mode="inline" xml:id="C33.S9.SS1.p1.m4">\eta</Math> and <Math mode="inline" xml:id="C33.S9.SS1.p1.m5">\rho</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S9.SS2">
+<title>Bessel Functions and Modified Bessel Functions</title>           
+<para xml:id="C33.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C33.S9.SS2.p1.s1">
+In this subsection the functions <Math mode="inline" xml:id="C33.S9.SS2.p1.m1">J</Math> , <Math mode="inline" xml:id="C33.S9.SS2.p1.m2">I</Math> , and <Math mode="inline" xml:id="C33.S9.SS2.p1.m3">K</Math> are as in §§10.2(ii) and 10.25(ii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S9.SS2.p2.s1">
+With <Math mode="inline" xml:id="C33.S9.SS2.p2.m1">t=2\left|\eta\right|\rho</Math> , <Math equation-number="33.9.3" mode="display" xml:id="C33.S9.E3">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\frac{(2\ell+1)!}{(2 \eta)^{2\ell+1}}\rho^{-\ell}\*\sum_{k=2\ell+1}^{\infty}b_{k}t^{k/2}I_{k}\left( \textstyle 2\sqrt{t}\right), if \eta&gt;0,</Math> <Math equation-number="33.9.4" mode="display" xml:id="C33.S9.E4">F_{\ell}\left(\eta,\rho\right)=C_{\ell}\left(\eta\right)\frac{(2\ell+1)!}{(2 \left|\eta\right|)^{2\ell+1}}\rho^{-\ell}\*\sum_{k=2\ell+1}^{\infty}\!\!b_{k}t ^{k/2}J_{k}\left(\textstyle 2\sqrt{t}\right), if \eta&lt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C33.S9.SS2.p2.s2">
+Here <Math mode="inline" xml:id="C33.S9.SS2.p2.m2">b_{2\ell}=b_{2\ell+2}=0</Math> , <Math mode="inline" xml:id="C33.S9.SS2.p2.m3">b_{2\ell+1}=1</Math> , and <Math equation-number="33.9.5" mode="display" xml:id="C33.S9.E5">{4\eta^{2}(k-2\ell)b_{k+1}+kb_{k-1}+b_{k-2}=0}, if k=2\ell+2,2\ell+3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C33.S9.SS2.p2.s3">
+The series (33.9.3) and (33.9.4) converge for allfinite positive values of <Math mode="inline" xml:id="C33.S9.SS2.p2.m4">\left|\eta\right|</Math> and <Math mode="inline" xml:id="C33.S9.SS2.p2.m5">\rho</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S9.SS2.p3.s1">
+Next, as <Math mode="inline" xml:id="C33.S9.SS2.p3.m1">\eta\to+\infty</Math> with <Math mode="inline" xml:id="C33.S9.SS2.p3.m2">\rho</Math> ( <Math mode="inline" xml:id="C33.S9.SS2.p3.m3">&gt;0</Math> ) fixed, <Math equation-number="33.9.6" mode="display" xml:id="C33.S9.E6">G_{\ell}\left(\eta,\rho\right)\sim\frac{\rho^{-\ell}}{(\ell+\frac{1}{2}) \lambda_{\ell}(\eta)C_{\ell}\left(\eta\right)}\*\sum_{k=2\ell+1}^{\infty}(-1)^ {k}b_{k}t^{k/2}K_{k}\left(\textstyle 2\sqrt{t}\right),</Math> where <Math equation-number="33.9.7" mode="display" xml:id="C33.S9.E7">\lambda_{\ell}(\eta)\sim\sum_{k=2\ell+1}^{\infty}(-1)^{k}(k-1)!b_{k}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S9.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C33.S9.SS2.p4.s1">
+For other asymptotic expansions of <Math mode="inline" xml:id="C33.S9.SS2.p4.m1">G_{\ell}\left(\eta,\rho\right)</Math> seeFröberg (1955, §8) and Humblet (1985).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

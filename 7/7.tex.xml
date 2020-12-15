@@ -1,0 +1,2231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xml:id="C7">
+<title>Error Functions, Dawson’s and Fresnel Integrals</title>               
+ 
+<sidebar xml:id="C7.SB1">
+<title>Diffraction from a Straightedge</title>           
+<para xml:id="C7.SB1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C7.SB1.p1.s1">
+Photograph of light diffracted by a straightedge.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C7.SB1.p1.s2">
+The intensity distribution follows <Math mode="inline" xml:id="C7.SB1.p1.m1">|\mathcal{F}\left(x\right)|^{2}</Math> , where <Math mode="inline" xml:id="C7.SB1.p1.m2">\mathcal{F}</Math> is the Fresnel integral (See LABEL:fig:ER.GR.E4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C7.SB1.p1.s3">
+Fresnel integrals have many applications in optics.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C7.SB1.p1.s4">
+The faint circular patterns are additional diffraction effects due to imperfections in the edge.
+</sentence>
+
+</para>
+ 
+</sidebar>
+          
+<section xml:id="C7.S1">
+<title>Special Notation</title>         
+<para xml:id="C7.S1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C7.S1.p1.s1">
+(For other notation see LABEL:about.notations.)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" sentence-num-in-table="1" xml:id="C7.S1.p1.t1.s1">
+<Math mode="inline" xml:id="C7.S1.p1.t1.r1.m1">x</Math>
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" sentence-num-in-table="2" xml:id="C7.S1.p1.t1.s2">
+real variable.  
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" sentence-num-in-table="3" xml:id="C7.S1.p1.t1.s3">
+<Math mode="inline" xml:id="C7.S1.p1.t1.r2.m1">z</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" sentence-num-in-table="4" xml:id="C7.S1.p1.t1.s4">
+complex variable.  
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" sentence-num-in-table="5" xml:id="C7.S1.p1.t1.s5">
+<Math mode="inline" xml:id="C7.S1.p1.t1.r3.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" sentence-num-in-table="6" xml:id="C7.S1.p1.t1.s6">
+nonnegative integer.  
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" sentence-num-in-table="7" xml:id="C7.S1.p1.t1.s7">
+<Math mode="inline" xml:id="C7.S1.p1.t1.r4.m1">\delta</Math>
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="13" sentence-num-in-table="8" xml:id="C7.S1.p1.t1.s8">
+arbitrary small positive constant.
+</sentence>
+
+<sentence sentence-num-in-para="10" sentence-num-in-section="14" sentence-num-in-table="9" xml:id="C7.S1.p1.t1.s9">
+<Math mode="inline" xml:id="C7.S1.p1.t1.r5.m1">\gamma</Math>
+</sentence>
+
+<sentence sentence-num-in-para="11" sentence-num-in-section="15" sentence-num-in-table="10" xml:id="C7.S1.p1.t1.s10">
+Euler’s constant (§LABEL:sec:GA.Def.EC).
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C7.S1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C7.S1.p2.s1">
+Unless otherwise noted, primes indicate derivatives with respect to the argument.
+</sentence>
+
+</para>
+    
+<para xml:id="C7.S1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C7.S1.p3.s1">
+The main functions treated in this chapter are the error function <Math mode="inline" xml:id="C7.S1.p3.m1">\operatorname{erf}z</Math> ;the complementary error functions <Math mode="inline" xml:id="C7.S1.p3.m2">\operatorname{erfc}z</Math> and <Math mode="inline" xml:id="C7.S1.p3.m3">w\left(z\right)</Math> ; Dawson’s integral <Math mode="inline" xml:id="C7.S1.p3.m4">F\left(z\right)</Math> ; the Fresnel integrals <Math mode="inline" xml:id="C7.S1.p3.m5">\mathcal{F}\left(z\right)</Math> , <Math mode="inline" xml:id="C7.S1.p3.m6">C\left(z\right)</Math> , and <Math mode="inline" xml:id="C7.S1.p3.m7">S\left(z\right)</Math> ; the Goodwin–Staton integral <Math mode="inline" xml:id="C7.S1.p3.m8">G\left(z\right)</Math> ; the repeated integrals of the complementary error function <Math mode="inline" xml:id="C7.S1.p3.m9">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)</Math> ; the Voigt functions <Math mode="inline" xml:id="C7.S1.p3.m10">\mathsf{U}\left(x,t\right)</Math> and <Math mode="inline" xml:id="C7.S1.p3.m11">\mathsf{V}\left(x,t\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C7.S1.p4.s1">
+Alternative notations are <Math mode="inline" xml:id="C7.S1.p4.m10">Q(z)=\tfrac{1}{2}\operatorname{erfc}\left(z/\sqrt{2}\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m11">P(z)=\Phi(z)=\tfrac{1}{2}\operatorname{erfc}\left(-z/\sqrt{2}\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m12">\operatorname{Erf}z=\tfrac{1}{2}\sqrt{\pi}\operatorname{erf}z</Math> , <Math mode="inline" xml:id="C7.S1.p4.m13">\operatorname{Erfi}z=e^{z^{2}}F\left(z\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m14">C_{1}(z)=C\left(\sqrt{2/\pi}z\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m15">S_{1}(z)=S\left(\sqrt{2/\pi}z\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m16">C_{2}(z)=C\left(\sqrt{2z/\pi}\right)</Math> , <Math mode="inline" xml:id="C7.S1.p4.m17">S_{2}(z)=S\left(\sqrt{2z/\pi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S1.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C7.S1.p5.s1">
+The notations <Math mode="inline" xml:id="C7.S1.p5.m1">P(z)</Math> , <Math mode="inline" xml:id="C7.S1.p5.m2">Q(z)</Math> , and <Math mode="inline" xml:id="C7.S1.p5.m3">\Phi(z)</Math> are used in mathematical statistics, where these functions are called the normal or Gaussian probability functions.
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C7.S2">
+<title>Definitions</title>        
+ 
+<subsection xml:id="C7.S2.SS1">
+<title>Error Functions</title>            
+<para xml:id="C7.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C7.S2.SS1.p1.s1">
+ <Math equation-number="7.2.1" mode="display" xml:id="C7.S2.E1">\operatorname{erf}z=\frac{2}{\sqrt{\pi}}\int_{0}^{z}e^{-t^{2}}\mathrm{d}t,</Math> <Math equation-number="7.2.2" mode="display" xml:id="C7.S2.E2">\operatorname{erfc}z=\frac{2}{\sqrt{\pi}}\int_{z}^{\infty}e^{-t^{2}}\mathrm{d} t=1-\operatorname{erf}z,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C7.S2.SS1.p2.s1">
+ <Math equation-number="7.2.3" mode="display" xml:id="C7.S2.E3">w\left(z\right)=e^{-z^{2}}\left(1+\frac{2i}{\sqrt{\pi}}\int_{0}^{z}e^{t^{2}} \mathrm{d}t\right)=e^{-z^{2}}\operatorname{erfc}\left(-iz\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C7.S2.SS1.p3.s1">
+ <Math mode="inline" xml:id="C7.S2.SS1.p3.m1">\operatorname{erf}z</Math> , <Math mode="inline" xml:id="C7.S2.SS1.p3.m2">\operatorname{erfc}z</Math> , and <Math mode="inline" xml:id="C7.S2.SS1.p3.m3">w\left(z\right)</Math> are entire functions of <Math mode="inline" xml:id="C7.S2.SS1.p3.m4">z</Math> , as is <Math mode="inline" xml:id="C7.S2.SS1.p3.m5">F\left(z\right)</Math> in the next subsection.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C7.S2.Px1">
+<title>Values at Infinity</title>    
+<para xml:id="C7.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C7.S2.Px1.p1.s1">
+ <Math equation-number="7.2.4" mode="display" xml:id="C7.S2.E4">\lim_{z\to\infty}\operatorname{erf}z=1, \lim_{z\to\infty}\operatorname{erfc}z=0 subject to |\operatorname{ph}z|\leq\tfrac{1}{4}\pi-\delta(&lt;\tfrac{1}{4}\pi)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S2.SS2">
+<title>Dawson’s Integral</title>        
+   
+<para xml:id="C7.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C7.S2.SS2.p1.s1">
+ <Math equation-number="7.2.5" mode="display" xml:id="C7.S2.E5">F\left(z\right)=e^{-z^{2}}\int_{0}^{z}e^{t^{2}}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S2.SS3">
+<title>Fresnel Integrals</title>          
+ 
+<para xml:id="C7.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C7.S2.SS3.p1.s1">
+ <Math equation-number="7.2.6" mode="display" xml:id="C7.S2.E6">\mathcal{F}\left(z\right)=\int_{z}^{\infty}e^{\tfrac{1}{2}\pi\mathrm{i}t^{2}} \mathrm{d}t,</Math> , <Math equation-number="7.2.7" mode="display" xml:id="C7.S2.E7">C\left(z\right)=\int_{0}^{z}\cos\left(\tfrac{1}{2}\pi t^{2}\right)\mathrm{d}t,</Math> , <Math equation-number="7.2.8" mode="display" xml:id="C7.S2.E8">S\left(z\right)=\int_{0}^{z}\sin\left(\tfrac{1}{2}\pi t^{2}\right)\mathrm{d}t,</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C7.S2.SS3.p2.s1">
+ <Math mode="inline" xml:id="C7.S2.SS3.p2.m1">\mathcal{F}\left(z\right)</Math> , <Math mode="inline" xml:id="C7.S2.SS3.p2.m2">C\left(z\right)</Math> , and <Math mode="inline" xml:id="C7.S2.SS3.p2.m3">S\left(z\right)</Math> are entire functions of <Math mode="inline" xml:id="C7.S2.SS3.p2.m4">z</Math> , as are <Math mode="inline" xml:id="C7.S2.SS3.p2.m5">\mathrm{f}\left(z\right)</Math> and <Math mode="inline" xml:id="C7.S2.SS3.p2.m6">\mathrm{g}\left(z\right)</Math> in the next subsection.
+</sentence>
+
+</para>
+
+ 
+<paragraph xml:id="C7.S2.Px2">
+<title>Values at Infinity</title>    
+<para xml:id="C7.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C7.S2.Px2.p1.s1">
+ <Math equation-number="7.2.9" mode="display" xml:id="C7.S2.E9">\lim_{x\to\infty}C\left(x\right)=\tfrac{1}{2}, \lim_{x\to\infty}S\left(x\right)=\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S2.SS4">
+<title>Auxiliary Functions</title>            
+<para xml:id="C7.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C7.S2.SS4.p1.s1">
+ <Math equation-number="7.2.10" mode="display" xml:id="C7.S2.E10">\mathrm{f}\left(z\right)=\left(\tfrac{1}{2}-S\left(z\right)\right)\cos\left( \tfrac{1}{2}\pi z^{2}\right)-\left(\tfrac{1}{2}-C\left(z\right)\right)\sin \left(\tfrac{1}{2}\pi z^{2}\right),</Math> <Math equation-number="7.2.11" mode="display" xml:id="C7.S2.E11">\mathrm{g}\left(z\right)=\left(\tfrac{1}{2}-C\left(z\right)\right)\cos\left( \tfrac{1}{2}\pi z^{2}\right)+\left(\tfrac{1}{2}-S\left(z\right)\right)\sin \left(\tfrac{1}{2}\pi z^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S2.SS5">
+<title>Goodwin–Staton Integral</title>          
+<para xml:id="C7.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="29" xml:id="C7.S2.SS5.p1.s1">
+ <Math equation-number="7.2.12" mode="display" xml:id="C7.S2.E12">G\left(z\right)=\int_{0}^{\infty}\frac{e^{-t^{2}}}{t+z}\mathrm{d}t, subject to |\operatorname{ph}z|&lt;\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S3">
+<title>Graphics</title>        
+ 
+<subsection xml:id="C7.S3.SS1">
+<title>Real Variable</title>                  
+<sentence sentence-num-in-section="30" xml:id="C7.S3.F1.s1">
+Figure 7.3.1: Complementary error functions <Math mode="inline" xml:id="C7.S3.F1.m4">\operatorname{erfc}x</Math> and <Math mode="inline" xml:id="C7.S3.F1.m5">\operatorname{erfc}\left(10x\right)</Math> , <Math mode="inline" xml:id="C7.S3.F1.m6">-3\leq x\leq 3</Math> .
+</sentence>            
+<sentence sentence-num-in-section="31" xml:id="C7.S3.F2.s1">
+Figure 7.3.2: Dawson’s integral <Math mode="inline" xml:id="C7.S3.F2.m3">F\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S3.F2.m4">-3.5\leq x\leq 3.5</Math> .
+</sentence>  
+          
+<sentence sentence-num-in-section="32" xml:id="C7.S3.F3.s1">
+Figure 7.3.3: Fresnel integrals <Math mode="inline" xml:id="C7.S3.F3.m4">C\left(x\right)</Math> and <Math mode="inline" xml:id="C7.S3.F3.m5">S\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S3.F3.m6">0\leq x\leq 4</Math> .
+</sentence>             
+<sentence sentence-num-in-section="33" xml:id="C7.S3.F4.s1">
+Figure 7.3.4: <Math mode="inline" xml:id="C7.S3.F4.m3">|\mathcal{F}\left(x\right)|^{2}</Math> , <Math mode="inline" xml:id="C7.S3.F4.m4">-8\leq x\leq 8</Math> . introduced the integral <Math mode="inline" xml:id="C7.S3.F4.m5">\mathcal{F}\left(x\right)</Math> in his study of the interference pattern at the edge of a shadow. He observed that the intensity distribution is given by <Math mode="inline" xml:id="C7.S3.F4.m6">{\left|\mathcal{F}\left(x\right)\right|^{2}}</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C7.S3.SS2">
+<title>Complex Variable</title>        
+          
+<sentence sentence-num-in-section="34" xml:id="C7.S3.F5.s1">
+Figure 7.3.5: <Math mode="inline" xml:id="C7.S3.F5.m4">|\operatorname{erf}\left(x+iy\right)|</Math> , <Math mode="inline" xml:id="C7.S3.F5.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C7.S3.F5.m6">-3\leq y\leq 3</Math> . Compare § .
+</sentence>            
+<sentence sentence-num-in-section="35" xml:id="C7.S3.F6.s1">
+Figure 7.3.6: <Math mode="inline" xml:id="C7.S3.F6.m4">|\operatorname{erfc}\left(x+iy\right)|</Math> , <Math mode="inline" xml:id="C7.S3.F6.m5">-3\leq x\leq 3</Math> , <Math mode="inline" xml:id="C7.S3.F6.m6">-3\leq y\leq 3</Math> . Compare §§ and .
+</sentence>  
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S4">
+<title>Symmetry</title>          
+<para xml:id="C7.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C7.S4.p1.s1">
+ <Math equation-number="7.4.1" mode="display" xml:id="C7.S4.E1">\operatorname{erf}\left(-z\right)=-\operatorname{erf}\left(z\right),</Math> , <Math equation-number="7.4.2" mode="display" xml:id="C7.S4.E2">\operatorname{erfc}\left(-z\right)=2-\operatorname{erfc}\left(z\right),</Math> , <Math equation-number="7.4.3" mode="display" xml:id="C7.S4.E3">w\left(-z\right)=2e^{-z^{2}}-w\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C7.S4.p1.s2">
+, <Math equation-number="7.4.4" mode="display" xml:id="C7.S4.E4">F\left(-z\right)=-F\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C7.S4.p1.s3">
+<Math equation-number="7.4.5" mode="display" xml:id="C7.S4.E5">C\left(-z\right)=-C\left(z\right), S\left(-z\right)=-S\left(z\right),</Math> <Math equation-number="7.4.6" mode="display" xml:id="C7.S4.E6">C\left(iz\right)=iC\left(z\right), S\left(iz\right)=-iS\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="39" xml:id="C7.S4.p1.s4">
+<Math equation-number="7.4.7" mode="display" xml:id="C7.S4.E7">\mathrm{f}\left(iz\right)=(1/\sqrt{2})e^{\frac{1}{4}\pi i-\frac{1}{2}\pi iz^{2 }}-i\mathrm{f}\left(z\right), \mathrm{g}\left(iz\right)=(1/\sqrt{2})e^{-\frac{1}{4}\pi i-\frac{1}{2}\pi iz^{ 2}}+i\mathrm{g}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="40" xml:id="C7.S4.p1.s5">
+<Math equation-number="7.4.8" mode="display" xml:id="C7.S4.E8">\mathrm{f}\left(-z\right)=\sqrt{2}\cos\left(\tfrac{1}{4}\pi+\tfrac{1}{2}\pi z^ {2}\right)-\mathrm{f}\left(z\right), \mathrm{g}\left(-z\right)=\sqrt{2}\sin\left(\tfrac{1}{4}\pi+\tfrac{1}{2}\pi z^ {2}\right)-\mathrm{g}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S5">
+<title>Interrelations</title>            
+   
+<para xml:id="C7.S5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="41" xml:id="C7.S5.p1.s1">
+ <Math equation-number="7.5.1" mode="display" xml:id="C7.S5.E1">F\left(z\right)=\tfrac{1}{2}i\sqrt{\pi}\left(e^{-z^{2}}-w\left(z\right)\right) =-\tfrac{1}{2}i\sqrt{\pi}e^{-z^{2}}\operatorname{erf}\left(iz\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="42" xml:id="C7.S5.p1.s2">
+<Math equation-number="7.5.2" mode="display" xml:id="C7.S5.E2">C\left(z\right)+iS\left(z\right)=\tfrac{1}{2}(1+i)-\mathcal{F}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="43" xml:id="C7.S5.p1.s3">
+<Math equation-number="7.5.3" mode="display" xml:id="C7.S5.E3">C\left(z\right)=\tfrac{1}{2}+\mathrm{f}\left(z\right)\sin\left(\tfrac{1}{2}\pi z ^{2}\right)-\mathrm{g}\left(z\right)\cos\left(\tfrac{1}{2}\pi z^{2}\right),</Math> <Math equation-number="7.5.4" mode="display" xml:id="C7.S5.E4">S\left(z\right)=\tfrac{1}{2}-\mathrm{f}\left(z\right)\cos\left(\tfrac{1}{2}\pi z ^{2}\right)-\mathrm{g}\left(z\right)\sin\left(\tfrac{1}{2}\pi z^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="44" xml:id="C7.S5.p1.s4">
+<Math equation-number="7.5.5" mode="display" xml:id="C7.S5.E5">e^{-\frac{1}{2}\pi iz^{2}}\mathcal{F}\left(z\right)=\mathrm{g}\left(z\right)+i \mathrm{f}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="45" xml:id="C7.S5.p1.s5">
+<Math equation-number="7.5.6" mode="display" xml:id="C7.S5.E6">e^{\pm\frac{1}{2}\pi iz^{2}}(\mathrm{g}\left(z\right)\pm i\mathrm{f}\left(z \right))=\tfrac{1}{2}(1\pm i)-(C\left(z\right)\pm iS\left(z\right))</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="46" xml:id="C7.S5.p2.s1">
+In (LABEL:eq:ER.IS.R7)–(LABEL:eq:ER.IS.R9) <Math equation-number="7.5.7" mode="display" xml:id="C7.S5.E7">\zeta=\tfrac{1}{2}\sqrt{\pi}(1\mp i)z,</Math> and either all upper signs or all lower signs are taken throughout.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="47" xml:id="C7.S5.p2.s2">
+<Math equation-number="7.5.8" mode="display" xml:id="C7.S5.E8">C\left(z\right)\pm iS\left(z\right)=\tfrac{1}{2}(1\pm i)\operatorname{erf}\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="48" xml:id="C7.S5.p2.s3">
+<Math equation-number="7.5.9" mode="display" xml:id="C7.S5.E9">C\left(z\right)\pm iS\left(z\right)=\tfrac{1}{2}(1\pm i)\left(1-e^{\pm\frac{1} {2}\pi iz^{2}}w\left(i\zeta\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="49" xml:id="C7.S5.p2.s4">
+<Math equation-number="7.5.10" mode="display" xml:id="C7.S5.E10">\mathrm{g}\left(z\right)\pm i\mathrm{f}\left(z\right)=\tfrac{1}{2}(1\pm i)e^{ \zeta^{2}}\operatorname{erfc}\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="50" xml:id="C7.S5.p2.s5">
+<Math equation-number="7.5.11" mode="display" xml:id="C7.S5.E11">|\mathcal{F}\left(x\right)|^{2}={\mathrm{f}^{2}}\left(x\right)+{\mathrm{g}^{2} }\left(x\right), subject to x\geq 0,</Math> <Math equation-number="7.5.12" mode="display" xml:id="C7.S5.E12">|\mathcal{F}\left(x\right)|^{2}=2+{\mathrm{f}^{2}}\left(-x\right)+{\mathrm{g}^ {2}}\left(-x\right)-2\sqrt{2}\cos\left(\tfrac{1}{4}\pi+\tfrac{1}{2}\pi x^{2} \right)\mathrm{f}\left(-x\right)-2\sqrt{2}\cos\left(\tfrac{1}{4}\pi-\tfrac{1}{ 2}\pi x^{2}\right)\mathrm{g}\left(-x\right), subject to x\leq 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="51" xml:id="C7.S5.p2.s6">
+See Figure LABEL:fig:ER.GR.E4.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="52" xml:id="C7.S5.p2.s7">
+<Math equation-number="7.5.13" mode="display" xml:id="C7.S5.E13">G\left(x\right)=\sqrt{\pi}F\left(x\right)-\tfrac{1}{2}e^{-x^{2}}\mathrm{Ei} \left(x^{2}\right), subject to x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="53" xml:id="C7.S5.p2.s8">
+For <Math mode="inline" xml:id="C7.S5.p2.m1">\mathrm{Ei}\left(x\right)</Math> see §LABEL:sec:EX.DF.EI.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S6">
+<title>Series Expansions</title>         
+<subsection xml:id="C7.S6.SS1">
+<title>Power Series</title>           
+<para xml:id="C7.S6.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="54" xml:id="C7.S6.SS1.p1.s1">
+ <Math equation-number="7.6.1" mode="display" xml:id="C7.S6.E1">\operatorname{erf}z=\frac{2}{\sqrt{\pi}}\sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n +1}}{n!(2n+1)}</Math> ,, <Math equation-number="7.6.2" mode="display" xml:id="C7.S6.E2">\operatorname{erf}z=\frac{2}{\sqrt{\pi}}e^{-z^{2}}\sum_{n=0}^{\infty}\frac{2^{ n}z^{2n+1}}{1\cdot 3\cdots(2n+1)},</Math> , <Math equation-number="7.6.3" mode="display" xml:id="C7.S6.E3">w\left(z\right)=\sum_{n=0}^{\infty}\frac{(iz)^{n}}{\Gamma\left(\frac{1}{2}n+1 \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="55" xml:id="C7.S6.SS1.p1.s2">
+, <Math equation-number="7.6.4" mode="display" xml:id="C7.S6.E4">C\left(z\right)=\sum_{n=0}^{\infty}\frac{(-1)^{n}(\frac{1}{2}\pi)^{2n}}{(2n)!( 4n+1)}z^{4n+1},</Math> <Math equation-number="7.6.5" mode="display" xml:id="C7.S6.E5">C\left(z\right)=\cos\left(\tfrac{1}{2}\pi z^{2}\right)\sum_{n=0}^{\infty}\frac {(-1)^{n}\pi^{2n}}{1\cdot 3\cdots(4n+1)}z^{4n+1}+\sin\left(\tfrac{1}{2}\pi z^{ 2}\right)\sum_{n=0}^{\infty}\frac{(-1)^{n}\pi^{2n+1}}{1\cdot 3\cdots(4n+3)}z^{ 4n+3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="56" xml:id="C7.S6.SS1.p1.s3">
+<Math equation-number="7.6.6" mode="display" xml:id="C7.S6.E6">S\left(z\right)=\sum_{n=0}^{\infty}\frac{(-1)^{n}(\frac{1}{2}\pi)^{2n+1}}{(2n+ 1)!(4n+3)}z^{4n+3}</Math> , <Math equation-number="7.6.7" mode="display" xml:id="C7.S6.E7">S\left(z\right)=-\cos\left(\tfrac{1}{2}\pi z^{2}\right)\sum_{n=0}^{\infty} \frac{(-1)^{n}\pi^{2n+1}}{1\cdot 3\cdots(4n+3)}z^{4n+3}+\sin\left(\tfrac{1}{2} \pi z^{2}\right)\sum_{n=0}^{\infty}\frac{(-1)^{n}\pi^{2n}}{1\cdot 3\cdots(4n+1 )}z^{4n+1}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="57" xml:id="C7.S6.SS1.p1.s4">
+The series in this subsection and in §LABEL:sec:ER.MS.SBF converge for all finite values of <Math mode="inline" xml:id="C7.S6.SS1.p1.m1">|z|</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S6.SS2">
+<title>Expansions in Series of Spherical Bessel Functions</title>           
+<para xml:id="C7.S6.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C7.S6.SS2.p1.s1">
+For the notation see §§LABEL:sec:BS.DBP.SS and LABEL:sec:OP.CP.OR.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="59" xml:id="C7.S6.SS2.p1.s2">
+<Math equation-number="7.6.8" mode="display" xml:id="C7.S6.E8">\operatorname{erf}z=\frac{2z}{\sqrt{\pi}}\sum_{n=0}^{\infty}(-1)^{n}\left({ \mathsf{i}^{(1)}_{2n}}\left(z^{2}\right)-{\mathsf{i}^{(1)}_{2n+1}}\left(z^{2} \right)\right),</Math> <Math equation-number="7.6.9" mode="display" xml:id="C7.S6.E9">\operatorname{erf}\left(az\right)=\frac{2z}{\sqrt{\pi}}e^{(\frac{1}{2}-a^{2})z ^{2}}\sum_{n=0}^{\infty}T_{2n+1}\left(a\right){\mathsf{i}^{(1)}_{n}}\left( \tfrac{1}{2}z^{2}\right), subject to -1\leq a\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="60" xml:id="C7.S6.SS2.p1.s3">
+<Math equation-number="7.6.10" mode="display" xml:id="C7.S6.E10">C\left(z\right)=z\sum_{n=0}^{\infty}\mathsf{j}_{2n}\left(\tfrac{1}{2}\pi z^{2} \right),</Math> <Math equation-number="7.6.11" mode="display" xml:id="C7.S6.E11">S\left(z\right)=z\sum_{n=0}^{\infty}\mathsf{j}_{2n+1}\left(\tfrac{1}{2}\pi z^{ 2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S6.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C7.S6.SS2.p2.s1">
+For further results see ( , pp. 57–58) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S7">
+<title>Integral Representations</title>        
+ 
+<subsection xml:id="C7.S7.SS1">
+<title>Error Functions and Dawson’s Integral</title>           
+<para xml:id="C7.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="62" xml:id="C7.S7.SS1.p1.s1">
+Integrals of the type <Math mode="inline" xml:id="C7.S7.SS1.p1.m1">\int e^{-z^{2}}R(z)\mathrm{d}z</Math> , where <Math mode="inline" xml:id="C7.S7.SS1.p1.m2">R(z)</Math> is an arbitrary rational function, can be written in closed form in terms of the error functions and elementary functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="63" xml:id="C7.S7.SS1.p1.s2">
+<Math equation-number="7.7.1" mode="display" xml:id="C7.S7.E1">\operatorname{erfc}z=\frac{2}{\pi}e^{-z^{2}}\int_{0}^{\infty}\frac{e^{-z^{2}t^ {2}}}{t^{2}+1}\mathrm{d}t, subject to |\operatorname{ph}z|\leq\frac{1}{4}\pi,</Math> <Math equation-number="7.7.2" mode="display" xml:id="C7.S7.E2">w\left(z\right)=\frac{1}{\pi i}\int_{-\infty}^{\infty}\frac{e^{-t^{2}}\mathrm{ d}t}{t-z}=\frac{2z}{\pi i}\int_{0}^{\infty}\frac{e^{-t^{2}}\mathrm{d}t}{t^{2}- z^{2}}, subject to \Im z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="64" xml:id="C7.S7.SS1.p1.s3">
+<Math equation-number="7.7.3" mode="display" xml:id="C7.S7.E3">\int_{0}^{\infty}e^{-at^{2}+2izt}\mathrm{d}t=\frac{1}{2}\sqrt{\frac{\pi}{a}}e^ {-z^{2}/a}+\frac{i}{\sqrt{a}}F\left(\frac{z}{\sqrt{a}}\right), subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="65" xml:id="C7.S7.SS1.p1.s4">
+<Math equation-number="7.7.4" mode="display" xml:id="C7.S7.E4">\int_{0}^{\infty}\frac{e^{-at}}{\sqrt{t+z^{2}}}\mathrm{d}t=\sqrt{\frac{\pi}{a} }e^{az^{2}}\operatorname{erfc}\left(\sqrt{a}z\right), subject to \Re a&gt;0, \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="66" xml:id="C7.S7.SS1.p1.s5">
+<Math equation-number="7.7.5" mode="display" xml:id="C7.S7.E5">\int_{0}^{1}\frac{e^{-at^{2}}}{t^{2}+1}\mathrm{d}t=\frac{\pi}{4}e^{a}\left(1-( \operatorname{erf}\sqrt{a})^{2}\right), subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="67" xml:id="C7.S7.SS1.p1.s6">
+<Math equation-number="7.7.6" mode="display" xml:id="C7.S7.E6">\int_{x}^{\infty}e^{-(at^{2}+2bt+c)}\mathrm{d}t=\frac{1}{2}\sqrt{\frac{\pi}{a} }e^{(b^{2}-ac)/a}\operatorname{erfc}\left(\sqrt{a}x+\frac{b}{\sqrt{a}}\right), subject to \Re a&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="68" xml:id="C7.S7.SS1.p1.s7">
+<Math equation-number="7.7.7" mode="display" xml:id="C7.S7.E7">\int_{x}^{\infty}e^{-a^{2}t^{2}-(b^{2}/t^{2})}\mathrm{d}t=\frac{\sqrt{\pi}}{4a }\left(e^{2ab}\operatorname{erfc}\left(ax+(b/x)\right)+e^{-2ab}\operatorname{ erfc}\left(ax-(b/x)\right)\right), subject to x&gt;0, |\operatorname{ph}a|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="69" xml:id="C7.S7.SS1.p1.s8">
+<Math equation-number="7.7.8" mode="display" xml:id="C7.S7.E8">\int_{0}^{\infty}e^{-a^{2}t^{2}-(b^{2}/t^{2})}\mathrm{d}t=\frac{\sqrt{\pi}}{2a }e^{-2ab}, subject to |\operatorname{ph}a|&lt;\tfrac{1}{4}\pi, |\operatorname{ph}b|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="9" sentence-num-in-section="70" xml:id="C7.S7.SS1.p1.s9">
+<Math equation-number="7.7.9" mode="display" xml:id="C7.S7.E9">\int_{0}^{x}\operatorname{erf}t\mathrm{d}t=x\operatorname{erf}x+\frac{1}{\sqrt {\pi}}\left(e^{-x^{2}}-1\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S7.SS2">
+<title>Auxiliary Functions</title>         
+ 
+<para xml:id="C7.S7.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="71" xml:id="C7.S7.SS2.p1.s1">
+ <Math equation-number="7.7.10" mode="display" xml:id="C7.S7.E10">\mathrm{f}\left(z\right)=\frac{1}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{e^{-\pi z ^{2}t/2}}{\sqrt{t}(t^{2}+1)}\mathrm{d}t, subject to |\operatorname{ph}z|\leq\frac{1}{4}\pi,</Math> , <Math equation-number="7.7.11" mode="display" xml:id="C7.S7.E11">\mathrm{g}\left(z\right)=\frac{1}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{\sqrt{t}e ^{-\pi z^{2}t/2}}{t^{2}+1}\mathrm{d}t, subject to |\operatorname{ph}z|\leq\frac{1}{4}\pi,</Math> <Math equation-number="7.7.12" mode="display" xml:id="C7.S7.E12">\mathrm{g}\left(z\right)+i\mathrm{f}\left(z\right)=e^{-\pi iz^{2}/2}\int_{z}^{ \infty}e^{\pi it^{2}/2}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C7.S7.Px1">
+<title>Mellin–Barnes Integrals</title>    
+<para xml:id="C7.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="72" xml:id="C7.S7.Px1.p1.s1">
+ <Math equation-number="7.7.13" mode="display" xml:id="C7.S7.E13">\mathrm{f}\left(z\right)=\frac{(2\pi)^{-3/2}}{2\pi i}\int_{c-i\infty}^{c+i \infty}\zeta^{-s}\Gamma\left(s\right)\Gamma\left(s+\tfrac{1}{2}\right)\*\Gamma \left(s+\tfrac{3}{4}\right)\Gamma\left(\tfrac{1}{4}-s\right)\mathrm{d}s,</Math> <Math equation-number="7.7.14" mode="display" xml:id="C7.S7.E14">\mathrm{g}\left(z\right)=\frac{(2\pi)^{-3/2}}{2\pi i}\int_{c-i\infty}^{c+i \infty}\zeta^{-s}\Gamma\left(s\right)\Gamma\left(s+\tfrac{1}{2}\right)\*\Gamma \left(s+\tfrac{1}{4}\right)\Gamma\left(\tfrac{3}{4}-s\right)\mathrm{d}s</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="73" xml:id="C7.S7.Px1.p1.s2">
+In (LABEL:eq:ER.IR.E15) and (LABEL:eq:ER.IR.E16) the integration paths are straight lines, <Math mode="inline" xml:id="C7.S7.Px1.p1.m1">\zeta=\frac{1}{16}\pi^{2}z^{4}</Math> , and <Math mode="inline" xml:id="C7.S7.Px1.p1.m2">c</Math> is a constant such that <Math mode="inline" xml:id="C7.S7.Px1.p1.m3">0&lt;c&lt;\frac{1}{4}</Math> in (LABEL:eq:ER.IR.E15), and <Math mode="inline" xml:id="C7.S7.Px1.p1.m4">0&lt;c&lt;\frac{3}{4}</Math> in (LABEL:eq:ER.IR.E16).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="74" xml:id="C7.S7.Px1.p1.s3">
+<Math equation-number="7.7.15" mode="display" xml:id="C7.S7.E15">\int_{0}^{\infty}e^{-at}\cos\left(t^{2}\right)\mathrm{d}t=\sqrt{\frac{\pi}{2}} \mathrm{f}\left(\frac{a}{\sqrt{2\pi}}\right), subject to \Re a&gt;0,</Math> <Math equation-number="7.7.16" mode="display" xml:id="C7.S7.E16">\int_{0}^{\infty}e^{-at}\sin\left(t^{2}\right)\mathrm{d}t=\sqrt{\frac{\pi}{2}} \mathrm{g}\left(\frac{a}{\sqrt{2\pi}}\right), subject to \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S7.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C7.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="75" xml:id="C7.S7.SS3.p1.s1">
+For other integral representations see ( , vol. 1, pp. 265–267, 270) , ( ) , ( , pp. 246–248) , and ( , pp. 371–377) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S8">
+<title>Inequalities</title>        
+   
+ 
+<para xml:id="C7.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="76" xml:id="C7.S8.p1.s1">
+Let <Math mode="inline" xml:id="C7.S8.p1.m1">\mathsf{M}\left(x\right)</Math> denote Mills’ ratio: <Math equation-number="7.8.1" mode="display" xml:id="C7.S8.E1">\mathsf{M}\left(x\right)=\frac{\int_{x}^{\infty}e^{-t^{2}}\mathrm{d}t}{e^{-x^{ 2}}}=e^{x^{2}}\int_{x}^{\infty}e^{-t^{2}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="77" xml:id="C7.S8.p1.s2">
+(Other notations are often used.)Then
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="78" xml:id="C7.S8.p1.s3">
+<Math equation-number="7.8.2" mode="display" xml:id="C7.S8.E2">\frac{1}{x+\sqrt{x^{2}+2}}&lt;\mathsf{M}\left(x\right)\leq\frac{1}{x+\sqrt{x^{2}+ (4/\pi)}}, subject to x\geq 0,</Math> <Math equation-number="7.8.3" mode="display" xml:id="C7.S8.E3">\frac{\sqrt{\pi}}{2\sqrt{\pi}x+2}\leq\mathsf{M}\left(x\right)&lt;\frac{1}{x+1}, subject to x\geq 0,</Math> <Math equation-number="7.8.4" mode="display" xml:id="C7.S8.E4">\mathsf{M}\left(x\right)&lt;\frac{2}{3x+\sqrt{x^{2}+4}}, subject to x&gt;-\tfrac{1}{2}\sqrt{2},</Math> <Math equation-number="7.8.5" mode="display" xml:id="C7.S8.E5">\frac{x^{2}}{2x^{2}+1}\leq\frac{x^{2}(2x^{2}+5)}{4x^{4}+12x^{2}+3}\leq x \mathsf{M}\left(x\right)&lt;\frac{2x^{4}+9x^{2}+4}{4x^{4}+20x^{2}+15}&lt;\frac{x^{2} +1}{2x^{2}+3}, subject to x\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="79" xml:id="C7.S8.p2.s1">
+Next, <Math equation-number="7.8.6" mode="display" xml:id="C7.S8.E6">\int_{0}^{x}e^{at^{2}}\mathrm{d}t&lt;\frac{1}{3ax}\left(2e^{ax^{2}}+ax^{2}-2 \right), subject to a,x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="80" xml:id="C7.S8.p2.s2">
+<Math equation-number="7.8.7" mode="display" xml:id="C7.S8.E7">\int_{0}^{x}e^{t^{2}}\mathrm{d}t&lt;\frac{e^{x^{2}}-1}{x}, subject to x&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="81" xml:id="C7.S8.p2.s3">
+<Math equation-number="7.8.8" mode="display" xml:id="C7.S8.E8">\operatorname{erf}x&lt;\sqrt{1-{\mathrm{e}^{-4x^{2}/\pi}}}, subject to x&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S9">
+<title>Continued Fractions</title>        
+ 
+ 
+<para xml:id="C7.S9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="82" xml:id="C7.S9.p1.s1">
+ <Math equation-number="7.9.1" mode="display" xml:id="C7.S9.E1">\sqrt{\pi}e^{z^{2}}\operatorname{erfc}z=\cfrac{z}{z^{2}+\cfrac{\frac{1}{2}}{1+ \cfrac{1}{z^{2}+\cfrac{\frac{3}{2}}{1+\cfrac{2}{z^{2}+\cdots}}}}}, subject to \Re z&gt;0,</Math> , <Math equation-number="7.9.2" mode="display" xml:id="C7.S9.E2">\sqrt{\pi}e^{z^{2}}\operatorname{erfc}z=\cfrac{2z}{2z^{2}+1-\cfrac{1\cdot 2}{2 z^{2}+5-\cfrac{3\cdot 4}{2z^{2}+9-\cdots}}}, subject to \Re z&gt;0,</Math> , <Math equation-number="7.9.3" mode="display" xml:id="C7.S9.E3">w\left(z\right)=\frac{i}{\sqrt{\pi}}\cfrac{1}{z-\cfrac{\frac{1}{2}}{z-\cfrac{1 }{z-\cfrac{\frac{3}{2}}{z-\cfrac{2}{z-\cdots}}}}}, subject to \Im z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S9.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="83" xml:id="C7.S9.p2.s1">
+See also ( , pp. 255–260, 263–267, 270–273) .
+</sentence>
+
+</para>
+
+ 
+</section>
+ 
+<section xml:id="C7.S10">
+<title>Derivatives</title>        
+   
+<para xml:id="C7.S10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="84" xml:id="C7.S10.p1.s1">
+ <Math equation-number="7.10.1" mode="display" xml:id="C7.S10.E1">\frac{{\mathrm{d}}^{n+1}\operatorname{erf}z}{{\mathrm{d}z}^{n+1}}=(-1)^{n} \frac{2}{\sqrt{\pi}}H_{n}\left(z\right)e^{-z^{2}}, subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="85" xml:id="C7.S10.p1.s2">
+For the Hermite polynomial <Math mode="inline" xml:id="C7.S10.p1.m1">H_{n}\left(z\right)</Math> see §LABEL:sec:OP.CP.OR.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="86" xml:id="C7.S10.p1.s3">
+<Math equation-number="7.10.2" mode="display" xml:id="C7.S10.E2">w'\left(z\right)=-2zw\left(z\right)+(2i/\sqrt{\pi}),</Math> <Math equation-number="7.10.3" mode="display" xml:id="C7.S10.E3">{{w^{(n+2)}}\left(z\right)+2z{w^{(n+1)}}\left(z\right)+2(n+1){w^{(n)}}\left(z \right)=0}, subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="87" xml:id="C7.S10.p1.s4">
+<Math equation-number="7.10.4" mode="display" xml:id="C7.S10.E4">\frac{\mathrm{d}\mathrm{f}\left(z\right)}{\mathrm{d}z}=-\pi z\mathrm{g}\left(z \right), \frac{\mathrm{d}\mathrm{g}\left(z\right)}{\mathrm{d}z}=\pi z\mathrm{f}\left(z \right)-1</Math>.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S11">
+<title>Relations to Other Functions</title>        
+ 
+<paragraph xml:id="C7.S11.Px1">
+<title>Incomplete Gamma Functions and Generalized Exponential Integral</title>    
+   
+<para xml:id="C7.S11.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="88" xml:id="C7.S11.Px1.p1.s1">
+For the notation see §§LABEL:sec:IG.PV and LABEL:sec:IG.GEI.DEF.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="89" xml:id="C7.S11.Px1.p1.s2">
+<Math equation-number="7.11.1" mode="display" xml:id="C7.S11.E1">\operatorname{erf}z=\frac{1}{\sqrt{\pi}}\gamma\left(\tfrac{1}{2},z^{2}\right),</Math> , <Math equation-number="7.11.2" mode="display" xml:id="C7.S11.E2">\operatorname{erfc}z=\frac{1}{\sqrt{\pi}}\Gamma\left(\tfrac{1}{2},z^{2}\right),</Math> , <Math equation-number="7.11.3" mode="display" xml:id="C7.S11.E3">\operatorname{erfc}z=\frac{z}{\sqrt{\pi}}E_{\frac{1}{2}}\left(z^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S11.Px2">
+<title>Confluent Hypergeometric Functions</title>   
+   
+<para xml:id="C7.S11.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="90" xml:id="C7.S11.Px2.p1.s1">
+For the notation see §LABEL:sec:CH.MU.DE.KU.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="91" xml:id="C7.S11.Px2.p1.s2">
+<Math equation-number="7.11.4" mode="display" xml:id="C7.S11.E4">\operatorname{erf}z=\frac{2z}{\sqrt{\pi}}M\left(\tfrac{1}{2},\tfrac{3}{2},-z^{ 2}\right)=\frac{2z}{\sqrt{\pi}}e^{-z^{2}}M\left(1,\tfrac{3}{2},z^{2}\right),</Math> <Math equation-number="7.11.5" mode="display" xml:id="C7.S11.E5">\operatorname{erfc}z=\frac{1}{\sqrt{\pi}}e^{-z^{2}}U\left(\tfrac{1}{2},\tfrac{ 1}{2},z^{2}\right)=\frac{z}{\sqrt{\pi}}e^{-z^{2}}U\left(1,\tfrac{3}{2},z^{2} \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="92" xml:id="C7.S11.Px2.p1.s3">
+<Math equation-number="7.11.6" mode="display" xml:id="C7.S11.E6">C\left(z\right)+iS\left(z\right)=zM\left(\tfrac{1}{2},\tfrac{3}{2},\tfrac{1}{2 }\pi iz^{2}\right)=ze^{\pi iz^{2}/2}M\left(1,\tfrac{3}{2},-\tfrac{1}{2}\pi iz^ {2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S11.Px3">
+<title>Generalized Hypergeometric Functions</title>     
+<para xml:id="C7.S11.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="93" xml:id="C7.S11.Px3.p1.s1">
+For the notation see §§LABEL:sec:GH.DF.GHS and LABEL:sec:GH.DF.PLEQ.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="94" xml:id="C7.S11.Px3.p1.s2">
+<Math equation-number="7.11.7" mode="display" xml:id="C7.S11.E7">C\left(z\right)=z{{}_{1}F_{2}}\left(\tfrac{1}{4};\tfrac{5}{4},\tfrac{1}{2};- \tfrac{1}{16}\pi^{2}z^{4}\right),</Math> , <Math equation-number="7.11.8" mode="display" xml:id="C7.S11.E8">S\left(z\right)=\tfrac{1}{6}\pi z^{3}{{}_{1}F_{2}}\left(\tfrac{3}{4};\tfrac{7} {4},\tfrac{3}{2};-\tfrac{1}{16}\pi^{2}z^{4}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</section>
+ 
+<section xml:id="C7.S12">
+<title>Asymptotic Expansions</title>        
+ 
+<subsection xml:id="C7.S12.SS1">
+<title>Complementary Error Function</title>        
+  
+<para xml:id="C7.S12.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="95" xml:id="C7.S12.SS1.p1.s1">
+As <Math mode="inline" xml:id="C7.S12.SS1.p1.m1">z\to\infty</Math> <Math equation-number="7.12.1" mode="display" xml:id="C7.S12.E1">\operatorname{erfc}z\sim\frac{e^{-z^{2}}}{\sqrt{\pi}}\sum_{m=0}^{\infty}(-1)^{ m}\frac{{\left(\tfrac{1}{2}\right)_{m}}}{z^{2m+1}}, \operatorname{erfc}\left(-z\right)\sim 2-\frac{e^{-z^{2}}}{\sqrt{\pi}}\sum_{m= 0}^{\infty}(-1)^{m}\frac{{\left(\tfrac{1}{2}\right)_{m}}}{z^{2m+1}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="96" xml:id="C7.S12.SS1.p2.s1">
+both expansions being valid when <Math mode="inline" xml:id="C7.S12.SS1.p2.m1">|\operatorname{ph}z|\leq\frac{3}{4}\pi-\delta</Math> ( <Math mode="inline" xml:id="C7.S12.SS1.p2.m2">&lt;\frac{3}{4}\pi</Math> ).
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="97" xml:id="C7.S12.SS1.p3.s1">
+When <Math mode="inline" xml:id="C7.S12.SS1.p3.m1">|\operatorname{ph}z|\leq\frac{1}{4}\pi</Math> the remainder terms are bounded in magnitude by the first neglected terms, and have the same sign as these termswhen <Math mode="inline" xml:id="C7.S12.SS1.p3.m2">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="98" xml:id="C7.S12.SS1.p3.s2">
+When <Math mode="inline" xml:id="C7.S12.SS1.p3.m3">\frac{1}{4}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{2}\pi</Math> the remainder terms are bounded in magnitude by <Math mode="inline" xml:id="C7.S12.SS1.p3.m4">\csc\left(2|\operatorname{ph}z|\right)</Math> times the first neglected terms.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="99" xml:id="C7.S12.SS1.p3.s3">
+For these and other error bounds see ( , pp. 109–112) , with <Math mode="inline" xml:id="C7.S12.SS1.p3.m5">\alpha=\frac{1}{2}</Math> and <Math mode="inline" xml:id="C7.S12.SS1.p3.m6">z</Math> replaced by <Math mode="inline" xml:id="C7.S12.SS1.p3.m7">z^{2}</Math> ; compare (LABEL:eq:ER.OF.O2).
+</sentence>
+
+</para>
+   
+<para xml:id="C7.S12.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="100" xml:id="C7.S12.SS1.p4.s1">
+For re-expansions of the remainder terms leading to larger sectors of validity, exponential improvement, and a smooth interpretation of the Stokes phenomenon, see §§LABEL:sec:AS.RTSP.CF–LABEL:sec:AS.RTSP.SP and use (LABEL:eq:ER.OF.O3).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="101" xml:id="C7.S12.SS1.p4.s2">
+(Note that some of these re-expansions themselves involve the complementary error function.)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S12.SS2">
+<title>Fresnel Integrals</title>        
+   
+<para xml:id="C7.S12.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="102" xml:id="C7.S12.SS2.p1.s1">
+The asymptotic expansions of <Math mode="inline" xml:id="C7.S12.SS2.p1.m1">C\left(z\right)</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p1.m2">S\left(z\right)</Math> are given by (LABEL:eq:ER.IS.R2), (LABEL:eq:ER.IS.R3), and <Math equation-number="7.12.2" mode="display" xml:id="C7.S12.E2">\mathrm{f}\left(z\right)\sim\frac{1}{\pi z}\sum_{m=0}^{\infty}(-1)^{m}\frac{{ \left(\tfrac{1}{2}\right)_{2m}}}{(\pi z^{2}/2)^{2m}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="103" xml:id="C7.S12.SS2.p2.s1">
+ <Math equation-number="7.12.3" mode="display" xml:id="C7.S12.E3">\mathrm{g}\left(z\right)\sim\frac{1}{\pi z}\sum_{m=0}^{\infty}(-1)^{m}\frac{{ \left(\tfrac{1}{2}\right)_{2m+1}}}{(\pi z^{2}/2)^{2m+1}},</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="104" xml:id="C7.S12.SS2.p3.s1">
+as <Math mode="inline" xml:id="C7.S12.SS2.p3.m1">z\to\infty</Math> in <Math mode="inline" xml:id="C7.S12.SS2.p3.m2">|\operatorname{ph}z|\leq\frac{1}{2}\pi-\delta(&lt;\frac{1}{2}\pi)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="105" xml:id="C7.S12.SS2.p3.s2">
+The remainder terms are given by <Math equation-number="7.12.4" mode="display" xml:id="C7.S12.E4">\mathrm{f}\left(z\right)=\frac{1}{\pi z}\sum_{m=0}^{n-1}(-1)^{m}\frac{{\left( \tfrac{1}{2}\right)_{2m}}}{(\pi z^{2}/2)^{2m}}+R_{n}^{(\mathrm{f})}(z),</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="106" xml:id="C7.S12.SS2.p4.s1">
+ <Math equation-number="7.12.5" mode="display" xml:id="C7.S12.E5">\mathrm{g}\left(z\right)=\frac{1}{\pi z}\sum_{m=0}^{n-1}(-1)^{m}\frac{{\left( \tfrac{1}{2}\right)_{2m+1}}}{(\pi z^{2}/2)^{2m+1}},+R_{n}^{(\mathrm{g})}(z),</Math> 
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S12.SS2.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="107" xml:id="C7.S12.SS2.p5.s1">
+where, for <Math mode="inline" xml:id="C7.S12.SS2.p5.m1">n=0,1,2,\dots</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p5.m2">|\operatorname{ph}z|&lt;\tfrac{1}{4}\pi</Math> , <Math equation-number="7.12.6" mode="display" xml:id="C7.S12.E6">R_{n}^{(\mathrm{f})}(z)=\frac{(-1)^{n}}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{e^{ -\pi z^{2}t/2}t^{2n-(1/2)}}{t^{2}+1}\mathrm{d}t,</Math> <Math equation-number="7.12.7" mode="display" xml:id="C7.S12.E7">R_{n}^{(\mathrm{g})}(z)=\frac{(-1)^{n}}{\pi\sqrt{2}}\int_{0}^{\infty}\frac{e^{ -\pi z^{2}t/2}t^{2n+(1/2)}}{t^{2}+1}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="108" xml:id="C7.S12.SS2.p5.s2">
+When <Math mode="inline" xml:id="C7.S12.SS2.p5.m3">|\operatorname{ph}z|\leq\frac{1}{8}\pi</Math> , <Math mode="inline" xml:id="C7.S12.SS2.p5.m4">R_{n}^{(\mathrm{f})}(z)</Math> and <Math mode="inline" xml:id="C7.S12.SS2.p5.m5">R_{n}^{(\mathrm{g})}(z)</Math> are bounded in magnitude by the first neglected terms in (LABEL:eq:ER.AE.L9) and (LABEL:eq:ER.AE.M1), respectively, and have the same signs as these terms when <Math mode="inline" xml:id="C7.S12.SS2.p5.m6">\operatorname{ph}z=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="109" xml:id="C7.S12.SS2.p5.s3">
+They are bounded by <Math mode="inline" xml:id="C7.S12.SS2.p5.m7">|\csc\left(4\operatorname{ph}z\right)|</Math> times the first neglected terms when <Math mode="inline" xml:id="C7.S12.SS2.p5.m8">\frac{1}{8}\pi\leq|\operatorname{ph}z|&lt;\frac{1}{4}\pi</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C7.S12.SS2.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="110" xml:id="C7.S12.SS2.p6.s1">
+For other phase ranges use (LABEL:eq:ER.SR.R5) and (LABEL:eq:ER.SR.R6).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="111" xml:id="C7.S12.SS2.p6.s2">
+For exponentially-improved expansions use (LABEL:eq:ER.IS.R6), (LABEL:eq:ER.IS.R9), and §LABEL:sec:ER.AE.CE.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S12.SS3">
+<title>Goodwin–Staton Integral</title>        
+  
+<para xml:id="C7.S12.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="112" xml:id="C7.S12.SS3.p1.s1">
+See ( , p. 115) for an expansion of <Math mode="inline" xml:id="C7.S12.SS3.p1.m1">G\left(z\right)</Math> with bounds for the remainder for real and complex values of <Math mode="inline" xml:id="C7.S12.SS3.p1.m2">z</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S13">
+<title>Zeros</title>        
+ 
+<subsection xml:id="C7.S13.SS1">
+<title>Zeros of <Math content-tex="\erf@@{z}" mode="inline" xml:id="C7.S13.SS1.m1">\operatorname{erf}z</Math></title>        
+  
+<para xml:id="C7.S13.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="113" xml:id="C7.S13.SS1.p1.s1">
+ <Math mode="inline" xml:id="C7.S13.SS1.p1.m1">\operatorname{erf}z</Math> has a simple zero at <Math mode="inline" xml:id="C7.S13.SS1.p1.m2">z=0</Math> , and in the first quadrant of <Math mode="inline" xml:id="C7.S13.SS1.p1.m3">\mathbb{C}</Math> there is an infinite set of zeros <Math mode="inline" xml:id="C7.S13.SS1.p1.m4">z_{n}=x_{n}+iy_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS1.p1.m5">n=1,2,3,\dots</Math> , arranged in order of increasing absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="114" xml:id="C7.S13.SS1.p1.s2">
+The other zeros of <Math mode="inline" xml:id="C7.S13.SS1.p1.m6">\operatorname{erf}z</Math> are <Math mode="inline" xml:id="C7.S13.SS1.p1.m7">-z_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS1.p1.m8">\overline{z}_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS1.p1.m9">-\overline{z}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S13.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="115" xml:id="C7.S13.SS1.p2.s1">
+Table LABEL:tab:ER.ZE.Z1 gives 10D values of the first five <Math mode="inline" xml:id="C7.S13.SS1.p2.m1">x_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS1.p2.m2">y_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="116" xml:id="C7.S13.SS1.p2.s2">
+For graphical illustration see Figure LABEL:fig:ER.GR.E5.
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="117" xml:id="C7.S13.T1.s1">
+Table 7.13.1: Zeros <Math mode="inline" xml:id="C7.S13.T1.m3">x_{n}+iy_{n}</Math> of <Math mode="inline" xml:id="C7.S13.T1.m4">\operatorname{erf}z</Math>.
+</sentence>  
+
+<sentence sentence-num-in-section="118" sentence-num-in-table="1" xml:id="C7.S13.T1.t1.s1">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="119" sentence-num-in-table="2" xml:id="C7.S13.T1.t1.s2">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="120" sentence-num-in-table="3" xml:id="C7.S13.T1.t1.s3">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r1.m3">y_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="121" sentence-num-in-table="4" xml:id="C7.S13.T1.t1.s4">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r2.m1">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="122" sentence-num-in-table="5" xml:id="C7.S13.T1.t1.s5">
+1.45061 61632
+</sentence>
+
+<sentence sentence-num-in-section="123" sentence-num-in-table="6" xml:id="C7.S13.T1.t1.s6">
+1.88094 30002
+</sentence>
+
+<sentence sentence-num-in-section="124" sentence-num-in-table="7" xml:id="C7.S13.T1.t1.s7">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r3.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="125" sentence-num-in-table="8" xml:id="C7.S13.T1.t1.s8">
+2.24465 92738
+</sentence>
+
+<sentence sentence-num-in-section="126" sentence-num-in-table="9" xml:id="C7.S13.T1.t1.s9">
+2.61657 51407
+</sentence>
+
+<sentence sentence-num-in-section="127" sentence-num-in-table="10" xml:id="C7.S13.T1.t1.s10">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r4.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="128" sentence-num-in-table="11" xml:id="C7.S13.T1.t1.s11">
+2.83974 10469
+</sentence>
+
+<sentence sentence-num-in-section="129" sentence-num-in-table="12" xml:id="C7.S13.T1.t1.s12">
+3.17562 80996
+</sentence>
+
+<sentence sentence-num-in-section="130" sentence-num-in-table="13" xml:id="C7.S13.T1.t1.s13">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r5.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="131" sentence-num-in-table="14" xml:id="C7.S13.T1.t1.s14">
+3.33546 07354
+</sentence>
+
+<sentence sentence-num-in-section="132" sentence-num-in-table="15" xml:id="C7.S13.T1.t1.s15">
+3.64617 43764
+</sentence>
+
+<sentence sentence-num-in-section="133" sentence-num-in-table="16" xml:id="C7.S13.T1.t1.s16">
+<Math mode="inline" xml:id="C7.S13.T1.t1.r6.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="134" sentence-num-in-table="17" xml:id="C7.S13.T1.t1.s17">
+3.76900 55670
+</sentence>
+
+<sentence sentence-num-in-section="135" sentence-num-in-table="18" xml:id="C7.S13.T1.t1.s18">
+4.06069 72339
+</sentence>
+  
+<para xml:id="C7.S13.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="136" xml:id="C7.S13.SS1.p3.s1">
+As <Math mode="inline" xml:id="C7.S13.SS1.p3.m1">n\to\infty</Math> <Math equation-number="7.13.1" mode="display" xml:id="C7.S13.E1">x_{n}\sim\lambda-\tfrac{1}{4}\mu\lambda^{-1}+\tfrac{1}{16}(1-\mu+\tfrac{1}{2} \mu^{2})\lambda^{-3}-\cdots, y_{n}\sim\lambda+\tfrac{1}{4}\mu\lambda^{-1}+\tfrac{1}{16}(1-\mu+\tfrac{1}{2} \mu^{2})\lambda^{-3}+\cdots,</Math> where <Math equation-number="7.13.2" mode="display" xml:id="C7.S13.E2">\lambda=\sqrt{(n-\tfrac{1}{8})\pi}, \mu=\ln\left(\lambda\sqrt{2\pi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S13.SS2">
+<title>Zeros of <Math content-tex="\erfc z" mode="inline" xml:id="C7.S13.SS2.m1">\operatorname{erfc}z</Math></title>                  
+<para xml:id="C7.S13.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="137" xml:id="C7.S13.SS2.p1.s1">
+In the sector <Math mode="inline" xml:id="C7.S13.SS2.p1.m1">\tfrac{1}{2}\pi&lt;\operatorname{ph}z&lt;\tfrac{3}{4}\pi</Math> , <Math mode="inline" xml:id="C7.S13.SS2.p1.m2">\operatorname{erfc}z</Math> has an infinite set of zeros <Math mode="inline" xml:id="C7.S13.SS2.p1.m3">z_{n}=x_{n}+iy_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS2.p1.m4">n=1,2,3,\dots</Math> , arranged in order of increasing absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="138" xml:id="C7.S13.SS2.p1.s2">
+The other zeros of <Math mode="inline" xml:id="C7.S13.SS2.p1.m5">\operatorname{erfc}z</Math> are <Math mode="inline" xml:id="C7.S13.SS2.p1.m6">\overline{z}_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="139" xml:id="C7.S13.SS2.p1.s3">
+The zeros of <Math mode="inline" xml:id="C7.S13.SS2.p1.m7">w\left(z\right)</Math> are <Math mode="inline" xml:id="C7.S13.SS2.p1.m8">iz_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS2.p1.m9">i\overline{z}_{n}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S13.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="140" xml:id="C7.S13.SS2.p2.s1">
+Table LABEL:tab:ER.ZE.Z2 gives 10D values of the first five <Math mode="inline" xml:id="C7.S13.SS2.p2.m1">x_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS2.p2.m2">y_{n}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="141" xml:id="C7.S13.SS2.p2.s2">
+For graphical illustration see Figure LABEL:fig:ER.GR.E4a.
+</sentence>
+
+</para>
+       
+  
+<sentence sentence-num-in-section="142" xml:id="C7.S13.T2.s1">
+Table 7.13.2: Zeros <Math mode="inline" xml:id="C7.S13.T2.m3">x_{n}+iy_{n}</Math> of <Math mode="inline" xml:id="C7.S13.T2.m4">\operatorname{erfc}z</Math>.
+</sentence>  
+
+<sentence sentence-num-in-section="143" sentence-num-in-table="1" xml:id="C7.S13.T2.t1.s1">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="144" sentence-num-in-table="2" xml:id="C7.S13.T2.t1.s2">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="145" sentence-num-in-table="3" xml:id="C7.S13.T2.t1.s3">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r1.m3">y_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="146" sentence-num-in-table="4" xml:id="C7.S13.T2.t1.s4">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r2.m1">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="147" sentence-num-in-table="5" xml:id="C7.S13.T2.t1.s5">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r2.m2">-1.3548</Math>1 01281
+</sentence>
+
+<sentence sentence-num-in-section="148" sentence-num-in-table="6" xml:id="C7.S13.T2.t1.s6">
+1.99146 68428
+</sentence>
+
+<sentence sentence-num-in-section="149" sentence-num-in-table="7" xml:id="C7.S13.T2.t1.s7">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r3.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="150" sentence-num-in-table="8" xml:id="C7.S13.T2.t1.s8">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r3.m2">-2.1770</Math>4 49061
+</sentence>
+
+<sentence sentence-num-in-section="151" sentence-num-in-table="9" xml:id="C7.S13.T2.t1.s9">
+2.69114 90243
+</sentence>
+
+<sentence sentence-num-in-section="152" sentence-num-in-table="10" xml:id="C7.S13.T2.t1.s10">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r4.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="153" sentence-num-in-table="11" xml:id="C7.S13.T2.t1.s11">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r4.m2">-2.7843</Math>8 76132
+</sentence>
+
+<sentence sentence-num-in-section="154" sentence-num-in-table="12" xml:id="C7.S13.T2.t1.s12">
+3.23533 08684
+</sentence>
+
+<sentence sentence-num-in-section="155" sentence-num-in-table="13" xml:id="C7.S13.T2.t1.s13">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r5.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="156" sentence-num-in-table="14" xml:id="C7.S13.T2.t1.s14">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r5.m2">-3.2874</Math>1 07894
+</sentence>
+
+<sentence sentence-num-in-section="157" sentence-num-in-table="15" xml:id="C7.S13.T2.t1.s15">
+3.69730 97025
+</sentence>
+
+<sentence sentence-num-in-section="158" sentence-num-in-table="16" xml:id="C7.S13.T2.t1.s16">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r6.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="159" sentence-num-in-table="17" xml:id="C7.S13.T2.t1.s17">
+<Math mode="inline" xml:id="C7.S13.T2.t1.r6.m2">-3.7259</Math>4 87194
+</sentence>
+
+<sentence sentence-num-in-section="160" sentence-num-in-table="18" xml:id="C7.S13.T2.t1.s18">
+4.10610 72847
+</sentence>
+  
+<para xml:id="C7.S13.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="161" xml:id="C7.S13.SS2.p3.s1">
+As <Math mode="inline" xml:id="C7.S13.SS2.p3.m1">n\to\infty</Math> <Math equation-number="7.13.3" mode="display" xml:id="C7.S13.E3">x_{n}\sim-\lambda+\tfrac{1}{4}\mu\lambda^{-1}-\tfrac{1}{16}(1-\mu+\tfrac{1}{2} \mu^{2})\lambda^{-3}+\cdots, y_{n}\sim\lambda+\tfrac{1}{4}\mu\lambda^{-1}+\tfrac{1}{16}(1-\mu+\tfrac{1}{2} \mu^{2})\lambda^{-3}+\cdots,</Math> where <Math equation-number="7.13.4" mode="display" xml:id="C7.S13.E4">\lambda=\sqrt{(n-\tfrac{1}{8})\pi}, \mu=\ln\left(2\lambda\sqrt{2\pi}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S13.SS3">
+<title>Zeros of the Fresnel Integrals</title>        
+  
+<para xml:id="C7.S13.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="162" xml:id="C7.S13.SS3.p1.s1">
+At <Math mode="inline" xml:id="C7.S13.SS3.p1.m1">z=0</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m2">C\left(z\right)</Math> has a simple zero and <Math mode="inline" xml:id="C7.S13.SS3.p1.m3">S\left(z\right)</Math> has a triple zero.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="163" xml:id="C7.S13.SS3.p1.s2">
+In the first quadrant of <Math mode="inline" xml:id="C7.S13.SS3.p1.m4">\mathbb{C}</Math> <Math mode="inline" xml:id="C7.S13.SS3.p1.m5">C\left(z\right)</Math> has an infinite set of zeros <Math mode="inline" xml:id="C7.S13.SS3.p1.m6">z_{n}=x_{n}+iy_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m7">n=1,2,3,\dots</Math> , arranged in order of increasing absolute value.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="164" xml:id="C7.S13.SS3.p1.s3">
+Similarly for <Math mode="inline" xml:id="C7.S13.SS3.p1.m8">S\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="165" xml:id="C7.S13.SS3.p1.s4">
+Let <Math mode="inline" xml:id="C7.S13.SS3.p1.m9">z_{n}</Math> be azero of one of the Fresnel integrals.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="166" xml:id="C7.S13.SS3.p1.s5">
+Then <Math mode="inline" xml:id="C7.S13.SS3.p1.m10">-z_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m11">\overline{z}_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m12">-\overline{z}_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m13">iz_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m14">-iz_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m15">i\overline{z}_{n}</Math> , <Math mode="inline" xml:id="C7.S13.SS3.p1.m16">-i\overline{z}_{n}</Math> are also zeros of the same integral.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S13.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="167" xml:id="C7.S13.SS3.p2.s1">
+Tables LABEL:tab:ER.ZE.Z3 and LABEL:tab:ER.ZE.Z4 give 10D values of the first five <Math mode="inline" xml:id="C7.S13.SS3.p2.m1">x_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS3.p2.m2">y_{n}</Math> of <Math mode="inline" xml:id="C7.S13.SS3.p2.m3">C\left(z\right)</Math> and <Math mode="inline" xml:id="C7.S13.SS3.p2.m4">S\left(z\right)</Math> , respectively.
+</sentence>
+
+</para>
+       
+  
+<sentence sentence-num-in-section="168" xml:id="C7.S13.T3.s1">
+Table 7.13.3: Complex zeros <Math mode="inline" xml:id="C7.S13.T3.m3">x_{n}+iy_{n}</Math> of <Math mode="inline" xml:id="C7.S13.T3.m4">C\left(z\right)</Math>. 
+</sentence>  
+
+<sentence sentence-num-in-section="169" sentence-num-in-table="1" xml:id="C7.S13.T3.t1.s1">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="170" sentence-num-in-table="2" xml:id="C7.S13.T3.t1.s2">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="171" sentence-num-in-table="3" xml:id="C7.S13.T3.t1.s3">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r1.m3">y_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="172" sentence-num-in-table="4" xml:id="C7.S13.T3.t1.s4">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r2.m1">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="173" sentence-num-in-table="5" xml:id="C7.S13.T3.t1.s5">
+1.74366 74862
+</sentence>
+
+<sentence sentence-num-in-section="174" sentence-num-in-table="6" xml:id="C7.S13.T3.t1.s6">
+0.30573 50636
+</sentence>
+
+<sentence sentence-num-in-section="175" sentence-num-in-table="7" xml:id="C7.S13.T3.t1.s7">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r3.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="176" sentence-num-in-table="8" xml:id="C7.S13.T3.t1.s8">
+2.65145 95973
+</sentence>
+
+<sentence sentence-num-in-section="177" sentence-num-in-table="9" xml:id="C7.S13.T3.t1.s9">
+0.25290 39555
+</sentence>
+
+<sentence sentence-num-in-section="178" sentence-num-in-table="10" xml:id="C7.S13.T3.t1.s10">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r4.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="179" sentence-num-in-table="11" xml:id="C7.S13.T3.t1.s11">
+3.32035 93363
+</sentence>
+
+<sentence sentence-num-in-section="180" sentence-num-in-table="12" xml:id="C7.S13.T3.t1.s12">
+0.22395 34581
+</sentence>
+
+<sentence sentence-num-in-section="181" sentence-num-in-table="13" xml:id="C7.S13.T3.t1.s13">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r5.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="182" sentence-num-in-table="14" xml:id="C7.S13.T3.t1.s14">
+3.87573 44884
+</sentence>
+
+<sentence sentence-num-in-section="183" sentence-num-in-table="15" xml:id="C7.S13.T3.t1.s15">
+0.20474 74706
+</sentence>
+
+<sentence sentence-num-in-section="184" sentence-num-in-table="16" xml:id="C7.S13.T3.t1.s16">
+<Math mode="inline" xml:id="C7.S13.T3.t1.r6.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="185" sentence-num-in-table="17" xml:id="C7.S13.T3.t1.s17">
+4.36106 35170
+</sentence>
+
+<sentence sentence-num-in-section="186" sentence-num-in-table="18" xml:id="C7.S13.T3.t1.s18">
+0.19066 97324
+</sentence>
+ 
+ 
+<para xml:id="C7.S13.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="187" xml:id="C7.S13.SS3.p3.s1">
+As <Math mode="inline" xml:id="C7.S13.SS3.p3.m1">n\to\infty</Math> the <Math mode="inline" xml:id="C7.S13.SS3.p3.m2">x_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS3.p3.m3">y_{n}</Math> corresponding to the zeros of <Math mode="inline" xml:id="C7.S13.SS3.p3.m4">C\left(z\right)</Math> satisfy <Math equation-number="7.13.5" mode="display" xml:id="C7.S13.E5">x_{n}\sim\lambda+\frac{\alpha(\alpha\pi-4)}{8\pi\lambda^{3}}+\cdots, y_{n}\sim\frac{\alpha}{2\lambda}+\cdots</Math> with <Math equation-number="7.13.6" mode="display" xml:id="C7.S13.E6">\lambda=\sqrt{4n-1}, \alpha=(2/\pi)\ln\left(\pi\lambda\right)</Math>.
+</sentence>
+
+</para>
+       
+  
+<sentence sentence-num-in-section="188" xml:id="C7.S13.T4.s1">
+Table 7.13.4: Complex zeros <Math mode="inline" xml:id="C7.S13.T4.m3">x_{n}+iy_{n}</Math> of <Math mode="inline" xml:id="C7.S13.T4.m4">S\left(z\right)</Math> .
+</sentence>  
+
+<sentence sentence-num-in-section="189" sentence-num-in-table="1" xml:id="C7.S13.T4.t1.s1">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="190" sentence-num-in-table="2" xml:id="C7.S13.T4.t1.s2">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="191" sentence-num-in-table="3" xml:id="C7.S13.T4.t1.s3">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r1.m3">y_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="192" sentence-num-in-table="4" xml:id="C7.S13.T4.t1.s4">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r2.m1">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="193" sentence-num-in-table="5" xml:id="C7.S13.T4.t1.s5">
+2.00925 70118
+</sentence>
+
+<sentence sentence-num-in-section="194" sentence-num-in-table="6" xml:id="C7.S13.T4.t1.s6">
+0.28854 78973
+</sentence>
+
+<sentence sentence-num-in-section="195" sentence-num-in-table="7" xml:id="C7.S13.T4.t1.s7">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r3.m1">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="196" sentence-num-in-table="8" xml:id="C7.S13.T4.t1.s8">
+2.83347 72325
+</sentence>
+
+<sentence sentence-num-in-section="197" sentence-num-in-table="9" xml:id="C7.S13.T4.t1.s9">
+0.24428 52408
+</sentence>
+
+<sentence sentence-num-in-section="198" sentence-num-in-table="10" xml:id="C7.S13.T4.t1.s10">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r4.m1">3</Math>
+</sentence>
+
+<sentence sentence-num-in-section="199" sentence-num-in-table="11" xml:id="C7.S13.T4.t1.s11">
+3.46753 30835
+</sentence>
+
+<sentence sentence-num-in-section="200" sentence-num-in-table="12" xml:id="C7.S13.T4.t1.s12">
+0.21849 26805
+</sentence>
+
+<sentence sentence-num-in-section="201" sentence-num-in-table="13" xml:id="C7.S13.T4.t1.s13">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r5.m1">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="202" sentence-num-in-table="14" xml:id="C7.S13.T4.t1.s14">
+4.00257 82433
+</sentence>
+
+<sentence sentence-num-in-section="203" sentence-num-in-table="15" xml:id="C7.S13.T4.t1.s15">
+0.20085 10251
+</sentence>
+
+<sentence sentence-num-in-section="204" sentence-num-in-table="16" xml:id="C7.S13.T4.t1.s16">
+<Math mode="inline" xml:id="C7.S13.T4.t1.r6.m1">5</Math>
+</sentence>
+
+<sentence sentence-num-in-section="205" sentence-num-in-table="17" xml:id="C7.S13.T4.t1.s17">
+4.47418 92952
+</sentence>
+
+<sentence sentence-num-in-section="206" sentence-num-in-table="18" xml:id="C7.S13.T4.t1.s18">
+0.18768 85891
+</sentence>
+ 
+ 
+<para xml:id="C7.S13.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="207" xml:id="C7.S13.SS3.p4.s1">
+As <Math mode="inline" xml:id="C7.S13.SS3.p4.m1">n\to\infty</Math> the <Math mode="inline" xml:id="C7.S13.SS3.p4.m2">x_{n}</Math> and <Math mode="inline" xml:id="C7.S13.SS3.p4.m3">y_{n}</Math> corresponding to the zeros of <Math mode="inline" xml:id="C7.S13.SS3.p4.m4">S\left(z\right)</Math> satisfy (LABEL:eq:ER.ZE.Z3) with <Math equation-number="7.13.7" mode="display" xml:id="C7.S13.E7">\lambda=2\sqrt{n}, \alpha=(2/\pi)\ln\left(\pi\lambda\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S13.SS4">
+<title>Zeros of <Math content-tex="\FresnelintF@{z}" mode="inline" xml:id="C7.S13.SS4.m1">\mathcal{F}\left(z\right)</Math></title>        
+  
+<para xml:id="C7.S13.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="208" xml:id="C7.S13.SS4.p1.s1">
+In consequence of (LABEL:eq:ER.IS.R4) and (LABEL:eq:ER.IS.R9), zeros of <Math mode="inline" xml:id="C7.S13.SS4.p1.m1">\mathcal{F}\left(z\right)</Math> are related to zeros of <Math mode="inline" xml:id="C7.S13.SS4.p1.m2">\operatorname{erfc}z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="209" xml:id="C7.S13.SS4.p1.s2">
+Thus if <Math mode="inline" xml:id="C7.S13.SS4.p1.m3">z_{n}</Math> is a zero of <Math mode="inline" xml:id="C7.S13.SS4.p1.m4">\operatorname{erfc}z</Math> (§LABEL:sec:ER.ZE.EC), then <Math mode="inline" xml:id="C7.S13.SS4.p1.m5">(1+i)z_{n}/\sqrt{\pi}</Math> is a zero of <Math mode="inline" xml:id="C7.S13.SS4.p1.m6">\mathcal{F}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S13.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="210" xml:id="C7.S13.SS4.p2.s1">
+For an asymptotic expansion of the zeros of <Math mode="inline" xml:id="C7.S13.SS4.p2.m1">\int_{0}^{z}\exp\left(\tfrac{1}{2}\pi it^{2}\right)\mathrm{d}t</Math> ( <Math mode="inline" xml:id="C7.S13.SS4.p2.m2">=\mathcal{F}\left(0\right)-\mathcal{F}\left(z\right)</Math> <Math mode="inline" xml:id="C7.S13.SS4.p2.m3">=C\left(z\right)+iS\left(z\right)</Math> ) see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S14">
+<title>Integrals</title>        
+ 
+<subsection xml:id="C7.S14.SS1">
+<title>Error Functions</title>        
+ 
+<paragraph xml:id="C7.S14.Px1">
+<title>Fourier Transform</title>    
+<para xml:id="C7.S14.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="211" xml:id="C7.S14.Px1.p1.s1">
+ <Math equation-number="7.14.1" mode="display" xml:id="C7.S14.E1">\int_{0}^{\infty}e^{2iat}\operatorname{erfc}\left(bt\right)\mathrm{d}t={\frac{ 1}{a\sqrt{\pi}}F\left(\frac{a}{b}\right)+\frac{i}{2a}\left(1-e^{-(a/b)^{2}} \right)}, subject to a\in\mathbb{C}, |\operatorname{ph}b|&lt;\tfrac{1}{4}\pi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="212" xml:id="C7.S14.Px1.p1.s2">
+When <Math mode="inline" xml:id="C7.S14.Px1.p1.m1">a=0</Math> the limit is taken.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S14.Px2">
+<title>Laplace Transforms</title>    
+<para xml:id="C7.S14.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="213" xml:id="C7.S14.Px2.p1.s1">
+ <Math equation-number="7.14.2" mode="display" xml:id="C7.S14.E2">\int_{0}^{\infty}e^{-at}\operatorname{erf}\left(bt\right)\mathrm{d}t=\frac{1}{ a}e^{a^{2}/(4b^{2})}\operatorname{erfc}\left(\frac{a}{2b}\right), subject to \Re a&gt;0, |\operatorname{ph}b|&lt;\tfrac{1}{4}\pi,</Math> <Math equation-number="7.14.3" mode="display" xml:id="C7.S14.E3">\int_{0}^{\infty}e^{-at}\operatorname{erf}\sqrt{bt}\mathrm{d}t=\frac{1}{a} \sqrt{\frac{b}{a+b}}, subject to \Re a&gt;0, \Re b&gt;0,</Math> <Math equation-number="7.14.4" mode="display" xml:id="C7.S14.E4">\int_{0}^{\infty}e^{(a-b)t}\operatorname{erfc}\left(\sqrt{at}+\sqrt{\frac{c}{t }}\right)\mathrm{d}t=\frac{e^{-2(\sqrt{ac}+\sqrt{bc})}}{\sqrt{b}(\sqrt{a}+ \sqrt{b})}, subject to |\operatorname{ph}a|&lt;\frac{1}{2}\pi, \Re b&gt;0, \Re c\geq 0.</Math>
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S14.SS2">
+<title>Fresnel Integrals</title>         
+<paragraph xml:id="C7.S14.Px3">
+<title>Laplace Transforms</title>   
+ 
+<para xml:id="C7.S14.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="214" xml:id="C7.S14.Px3.p1.s1">
+ <Math equation-number="7.14.5" mode="display" xml:id="C7.S14.E5">\int_{0}^{\infty}e^{-at}C\left(t\right)\mathrm{d}t=\frac{1}{a}\mathrm{f}\left( \frac{a}{\pi}\right), subject to \Re a&gt;0,</Math> <Math equation-number="7.14.6" mode="display" xml:id="C7.S14.E6">\int_{0}^{\infty}e^{-at}S\left(t\right)\mathrm{d}t=\frac{1}{a}\mathrm{g}\left( \frac{a}{\pi}\right), subject to \Re a&gt;0,</Math> <Math equation-number="7.14.7" mode="display" xml:id="C7.S14.E7">\int_{0}^{\infty}e^{-at}C\left(\sqrt{\frac{2t}{\pi}}\right)\mathrm{d}t=\frac{( \sqrt{a^{2}+1}+a)^{\frac{1}{2}}}{2a\sqrt{a^{2}+1}}, subject to \Re a&gt;0,</Math> <Math equation-number="7.14.8" mode="display" xml:id="C7.S14.E8">\int_{0}^{\infty}e^{-at}S\left(\sqrt{\frac{2t}{\pi}}\right)\mathrm{d}t=\frac{( \sqrt{a^{2}+1}-a)^{\frac{1}{2}}}{2a\sqrt{a^{2}+1}}, subject to \Re a&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S14.SS3">
+<title>Compendia</title>        
+ 
+<para xml:id="C7.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="215" xml:id="C7.S14.SS3.p1.s1">
+For collections of integrals see ( , pp. 131–146) , ( , vol. 1, pp. 40, 96, 176–177) , ( ) , ( , §§5.4 and 6.28–6.32), ( , pp. 184–189) , ( ) , ( , pp. 138–139, 142–143) , ( , pp. 48–52, 155–158) , ( , pp. 171–172, 179–181) , ( , vol. 2, pp. 30–36, 93–143) , ( , §§3.7–3.8), and ( , §§3.7–3.8) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="216" xml:id="C7.S14.SS3.p1.s2">
+In a series of ten papers ( ) gives many integrals containing error functions and Fresnel integrals, also in combination with the hypergeometric function, confluent hypergeometric functions, and generalized hypergeometric functions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S15">
+<title>Sums</title>        
+  
+<para xml:id="C7.S15.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="217" xml:id="C7.S15.p1.s1">
+For sums involving the error function see ( , p. 423) and ( , vol. 2, pp. 650–651) .
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S16">
+<title>Generalized Error Functions</title>        
+   
+<para xml:id="C7.S16.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="218" xml:id="C7.S16.p1.s1">
+Generalizations of the error function and Dawson’s integral are <Math mode="inline" xml:id="C7.S16.p1.m1">\int_{0}^{x}e^{-t^{p}}\mathrm{d}t</Math> and <Math mode="inline" xml:id="C7.S16.p1.m2">\int_{0}^{x}e^{t^{p}}\mathrm{d}t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="219" xml:id="C7.S16.p1.s2">
+These functions can be expressed in terms of the incomplete gamma function <Math mode="inline" xml:id="C7.S16.p1.m3">\gamma\left(a,z\right)</Math> (§LABEL:sec:IG.PV) by change of integration variable.
+</sentence>
+
+</para>
+ 
+</section>
+ 
+<section xml:id="C7.S17">
+<title>Inverse Error Functions</title>        
+ 
+<subsection xml:id="C7.S17.SS1">
+<title>Notation</title>        
+  
+<para xml:id="C7.S17.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="220" xml:id="C7.S17.SS1.p1.s1">
+The inverses of the functions <Math mode="inline" xml:id="C7.S17.SS1.p1.m1">x=\operatorname{erf}y</Math> , <Math mode="inline" xml:id="C7.S17.SS1.p1.m2">x=\operatorname{erfc}y</Math> , <Math mode="inline" xml:id="C7.S17.SS1.p1.m3">y\in\mathbb{R}</Math> , are denoted by <Math equation-number="7.17.1" mode="display" xml:id="C7.S17.E1">y=\operatorname{inverf}x, y=\operatorname{inverfc}x,</Math> respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S17.SS2">
+<title>Power Series</title>          
+<para xml:id="C7.S17.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="221" xml:id="C7.S17.SS2.p1.s1">
+With <Math mode="inline" xml:id="C7.S17.SS2.p1.m1">t=\frac{1}{2}\sqrt{\pi}x</Math> , <Math equation-number="7.17.2" mode="display" xml:id="C7.S17.E2">\operatorname{inverf}x=t+\tfrac{1}{3}t^{3}+\tfrac{7}{30}t^{5}+\tfrac{127}{630} t^{7}+\cdots, subject to |x|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="222" xml:id="C7.S17.SS2.p1.s2">
+For 25S values of the first 200 coefficients see ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S17.SS3">
+<title>Asymptotic Expansion of <Math content-tex="\inverfc@@{x}" mode="inline" xml:id="C7.S17.SS3.m1">\operatorname{inverfc}x</Math> for Small <Math mode="inline" xml:id="C7.S17.SS3.m2">x</Math></title>        
+  
+<para xml:id="C7.S17.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="223" xml:id="C7.S17.SS3.p1.s1">
+As <Math mode="inline" xml:id="C7.S17.SS3.p1.m1">x\to 0</Math> <Math equation-number="7.17.3" mode="display" xml:id="C7.S17.E3">\operatorname{inverfc}x\sim u^{-1/2}+a_{2}u^{3/2}+a_{3}u^{5/2}+a_{4}u^{7/2}+\cdots,</Math> where <Math equation-number="7.17.4" mode="display" xml:id="C7.S17.E4">a_{2}=\tfrac{1}{8}v, a_{3}=-\tfrac{1}{32}(v^{2}+6v-6), a_{4}=\tfrac{1}{384}(4v^{3}+27v^{2}+108v-300),</Math> <Math equation-number="7.17.5" mode="display" xml:id="C7.S17.E5">u=-2/\ln\left(\pi x^{2}\ln\left(1/x\right)\right),</Math> and <Math equation-number="7.17.6" mode="display" xml:id="C7.S17.E6">v=\ln\left(\ln\left(1/x\right)\right)-2+\ln\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S18">
+<title>Repeated Integrals of the Complementary Error Function</title>        
+   
+<subsection xml:id="C7.S18.SS1">
+<title>Definition</title>        
+  
+<para xml:id="C7.S18.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="224" xml:id="C7.S18.SS1.p1.s1">
+ <Math equation-number="7.18.1" mode="display" xml:id="C7.S18.E1">\mathop{\mathrm{i}^{-1}\mathrm{erfc}}\left(z\right)=\frac{2}{\sqrt{\pi}}e^{-z^ {2}}, \mathop{\mathrm{i}^{0}\mathrm{erfc}}\left(z\right)=\operatorname{erfc}z,</Math> and for <Math mode="inline" xml:id="C7.S18.SS1.p1.m1">n=0,1,2,\dots</Math> , <Math equation-number="7.18.2" mode="display" xml:id="C7.S18.E2">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\int_{z}^{\infty}\mathop{ \mathrm{i}^{n-1}\mathrm{erfc}}\left(t\right)\mathrm{d}t=\frac{2}{\sqrt{\pi}} \int_{z}^{\infty}\frac{(t-z)^{n}}{n!}e^{-t^{2}}\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS2">
+<title>Graphics</title>        
+          
+<sentence sentence-num-in-section="225" xml:id="C7.S18.F1.s1">
+Figure 7.18.1: Repeated integrals of the scaled complementary error function <Math mode="inline" xml:id="C7.S18.F1.m1">2^{n}\Gamma\left(\tfrac{1}{2}n+1\right)\mathop{\mathrm{i}^{n}\mathrm{erfc}} \left(x\right)</Math> , <Math mode="inline" xml:id="C7.S18.F1.m2">n=0,1,2,4,8,16</Math> .
+</sentence>    
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS3">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C7.S18.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="226" xml:id="C7.S18.SS3.p1.s1">
+ <Math equation-number="7.18.3" mode="display" xml:id="C7.S18.E3">\frac{\mathrm{d}}{\mathrm{d}z}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z \right)=-\mathop{\mathrm{i}^{n-1}\mathrm{erfc}}\left(z\right), subject to n=0,1,2,\dots,</Math> <Math equation-number="7.18.4" mode="display" xml:id="C7.S18.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(e^{z^{2}}\operatorname{erfc}z \right)=(-1)^{n}2^{n}n!e^{z^{2}}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z \right), subject to n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="227" xml:id="C7.S18.SS3.p1.s2">
+<Math equation-number="7.18.5" mode="display" xml:id="C7.S18.E5">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}+2z\frac{\mathrm{d}W}{\mathrm{d}z}- 2nW=0, subject to W(z)=A\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)+B\mathop{\mathrm{i}^{ n}\mathrm{erfc}}\left(-z\right),</Math> where <Math mode="inline" xml:id="C7.S18.SS3.p1.m1">n=1,2,3,\dots</Math> , and <Math mode="inline" xml:id="C7.S18.SS3.p1.m2">A</Math> , <Math mode="inline" xml:id="C7.S18.SS3.p1.m3">B</Math> are arbitrary constants.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="228" xml:id="C7.S18.SS3.p1.s3">
+<Math equation-number="7.18.6" mode="display" xml:id="C7.S18.E6">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\sum_{k=0}^{\infty}\frac{(- 1)^{k}z^{k}}{2^{n-k}k!\Gamma\left(1+\frac{1}{2}(n-k)\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="229" xml:id="C7.S18.SS3.p1.s4">
+<Math equation-number="7.18.7" mode="display" xml:id="C7.S18.E7">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=-\frac{z}{n}\mathop{\mathrm {i}^{n-1}\mathrm{erfc}}\left(z\right)+\frac{1}{2n}\mathop{\mathrm{i}^{n-2} \mathrm{erfc}}\left(z\right), subject to n=1,2,3,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS4">
+<title>Relations to Other Functions</title>        
+ 
+<para xml:id="C7.S18.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="230" xml:id="C7.S18.SS4.p1.s1">
+For the notation see §§LABEL:sec:OP.CP.OR, LABEL:sec:CH.MU.DE.KU, andLABEL:sec:PC.DE.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C7.S18.Px1">
+<title>Hermite Polynomials</title>     
+<para xml:id="C7.S18.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="231" xml:id="C7.S18.Px1.p1.s1">
+ <Math equation-number="7.18.8" mode="display" xml:id="C7.S18.E8">(-1)^{n}\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)+\mathop{\mathrm{i}^ {n}\mathrm{erfc}}\left(-z\right)=\frac{i^{-n}}{2^{n-1}n!}H_{n}\left(iz\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px2">
+<title>Confluent Hypergeometric Functions</title>     
+<para xml:id="C7.S18.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="232" xml:id="C7.S18.Px2.p1.s1">
+ <Math equation-number="7.18.9" mode="display" xml:id="C7.S18.E9">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=e^{-z^{2}}\left(\frac{1}{2^ {n}\Gamma\left(\tfrac{1}{2}n+1\right)}M\left(\tfrac{1}{2}n+\tfrac{1}{2},\tfrac {1}{2},z^{2}\right)-\frac{z}{2^{n-1}\Gamma\left(\tfrac{1}{2}n+\tfrac{1}{2} \right)}M\left(\tfrac{1}{2}n+1,\tfrac{3}{2},z^{2}\right)\right),</Math> <Math equation-number="7.18.10" mode="display" xml:id="C7.S18.E10">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{e^{-z^{2}}}{2^{n} \sqrt{\pi}}U\left(\tfrac{1}{2}n+\tfrac{1}{2},\tfrac{1}{2},z^{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px3">
+<title>Parabolic Cylinder Functions</title>  
+  
+<para xml:id="C7.S18.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="233" xml:id="C7.S18.Px3.p1.s1">
+ <Math equation-number="7.18.11" mode="display" xml:id="C7.S18.E11">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{e^{-z^{2}/2}}{\sqrt{2 ^{n-1}\pi}}U\left(n+\tfrac{1}{2},z\sqrt{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C7.S18.Px4">
+<title>Probability Functions</title>       
+<para xml:id="C7.S18.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="234" xml:id="C7.S18.Px4.p1.s1">
+ <Math equation-number="7.18.12" mode="display" xml:id="C7.S18.E12">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)=\frac{1}{\sqrt{2^{n-1}\pi}} \mathit{Hh}_{n}\left(\sqrt{2}z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="235" xml:id="C7.S18.Px4.p1.s2">
+See ( , §§23.081–23.09) .
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS5">
+<title>Continued Fraction</title>        
+  
+<para xml:id="C7.S18.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="236" xml:id="C7.S18.SS5.p1.s1">
+ <Math equation-number="7.18.13" mode="display" xml:id="C7.S18.E13">\frac{\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)}{\mathop{\mathrm{i}^{ n-1}\mathrm{erfc}}\left(z\right)}=\cfrac{1/2}{z+\cfrac{(n+1)/2}{z+\cfrac{(n+2) /2}{z+}}}\cdots, subject to \Re z&gt;0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S18.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="237" xml:id="C7.S18.SS5.p2.s1">
+See also ( , p. 269) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S18.SS6">
+<title>Asymptotic Expansion</title>        
+  
+<para xml:id="C7.S18.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="238" xml:id="C7.S18.SS6.p1.s1">
+ <Math equation-number="7.18.14" mode="display" xml:id="C7.S18.E14">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)\sim\frac{2}{\sqrt{\pi}} \frac{e^{-z^{2}}}{(2z)^{n+1}}\sum_{m=0}^{\infty}\frac{(-1)^{m}(2m+n)!}{n!m!(2z )^{2m}}, subject to z\to\infty, |\operatorname{ph}z|\leq\tfrac{3}{4}\pi-\delta(&lt;\tfrac{3}{4}\pi)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S19">
+<title>Voigt Functions</title>        
+ 
+<subsection xml:id="C7.S19.SS1">
+<title>Definitions</title>        
+ 
+ 
+<para xml:id="C7.S19.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="239" xml:id="C7.S19.SS1.p1.s1">
+For <Math mode="inline" xml:id="C7.S19.SS1.p1.m1">x\in\mathbb{R}</Math> and <Math mode="inline" xml:id="C7.S19.SS1.p1.m2">t&gt;0</Math> , <Math equation-number="7.19.1" mode="display" xml:id="C7.S19.E1">\mathsf{U}\left(x,t\right)=\frac{1}{\sqrt{4\pi t}}\int_{-\infty}^{\infty}\frac {e^{-(x-y)^{2}/(4t)}}{1+y^{2}}\mathrm{d}y,</Math> <Math equation-number="7.19.2" mode="display" xml:id="C7.S19.E2">\mathsf{V}\left(x,t\right)=\frac{1}{\sqrt{4\pi t}}\int_{-\infty}^{\infty}\frac {ye^{-(x-y)^{2}/(4t)}}{1+y^{2}}\mathrm{d}y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="240" xml:id="C7.S19.SS1.p1.s2">
+<Math equation-number="7.19.3" mode="display" xml:id="C7.S19.E3">\mathsf{U}\left(x,t\right)+i\mathsf{V}\left(x,t\right)=\sqrt{\frac{\pi}{4t}}e^ {z^{2}}\operatorname{erfc}z, subject to z=(1-ix)/(2\sqrt{t})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="241" xml:id="C7.S19.SS1.p1.s3">
+<Math equation-number="7.19.4" mode="display" xml:id="C7.S19.E4">H\left(a,u\right)=\frac{a}{\pi}\int_{-\infty}^{\infty}\frac{e^{-t^{2}}\mathrm{ d}t}{(u-t)^{2}+a^{2}}=\frac{1}{a\sqrt{\pi}}\mathsf{U}\left(\frac{u}{a},\frac{1 }{4a^{2}}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="242" xml:id="C7.S19.SS1.p1.s4">
+<Math mode="inline" xml:id="C7.S19.SS1.p1.m3">H\left(a,u\right)</Math> is sometimes called the line broadening function; see, for example, ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS2">
+<title>Graphics</title>        
+       
+   
+<sentence sentence-num-in-section="243" xml:id="C7.S19.F1.s1">
+Figure 7.19.1: Voigt function <Math mode="inline" xml:id="C7.S19.F1.m6">\mathsf{U}\left(x,t\right)</Math> , <Math mode="inline" xml:id="C7.S19.F1.m7">t=0.1</Math> , <Math mode="inline" xml:id="C7.S19.F1.m8">2.5</Math> , <Math mode="inline" xml:id="C7.S19.F1.m9">5</Math> , <Math mode="inline" xml:id="C7.S19.F1.m10">10</Math> .
+</sentence>         
+   
+<sentence sentence-num-in-section="244" xml:id="C7.S19.F2.s1">
+Figure 7.19.2: Voigt function <Math mode="inline" xml:id="C7.S19.F2.m6">\mathsf{V}\left(x,t\right)</Math> , <Math mode="inline" xml:id="C7.S19.F2.m7">t=0.1</Math> , <Math mode="inline" xml:id="C7.S19.F2.m8">2.5</Math> , <Math mode="inline" xml:id="C7.S19.F2.m9">5</Math> , <Math mode="inline" xml:id="C7.S19.F2.m10">10</Math> .
+</sentence>   
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS3">
+<title>Properties</title>        
+ 
+ 
+<para xml:id="C7.S19.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="245" xml:id="C7.S19.SS3.p1.s1">
+ <Math equation-number="7.19.5" mode="display" xml:id="C7.S19.E5">\lim_{t\to 0}\mathsf{U}\left(x,t\right)=\frac{1}{1+x^{2}}, \lim_{t\to 0}\mathsf{V}\left(x,t\right)=\frac{x}{1+x^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="246" xml:id="C7.S19.SS3.p1.s2">
+<Math equation-number="7.19.6" mode="display" xml:id="C7.S19.E6">\mathsf{U}\left(-x,t\right)=\mathsf{U}\left(x,t\right), \mathsf{V}\left(-x,t\right)=-\mathsf{V}\left(x,t\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="247" xml:id="C7.S19.SS3.p1.s3">
+<Math equation-number="7.19.7" mode="display" xml:id="C7.S19.E7">0&lt;\mathsf{U}\left(x,t\right)\leq 1, -1\leq\mathsf{V}\left(x,t\right)\leq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="248" xml:id="C7.S19.SS3.p1.s4">
+<Math equation-number="7.19.8" mode="display" xml:id="C7.S19.E8">\mathsf{V}\left(x,t\right)=x\mathsf{U}\left(x,t\right)+2t\frac{\partial\mathsf {U}\left(x,t\right)}{\partial x},</Math> , <Math equation-number="7.19.9" mode="display" xml:id="C7.S19.E9">\mathsf{U}\left(x,t\right)=1-x\mathsf{V}\left(x,t\right)-2t\frac{\partial \mathsf{V}\left(x,t\right)}{\partial x}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S19.SS4">
+<title>Other Integral Representations</title>        
+ 
+<para xml:id="C7.S19.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="249" xml:id="C7.S19.SS4.p1.s1">
+ <Math equation-number="7.19.10" mode="display" xml:id="C7.S19.E10">\mathsf{U}\left(\frac{u}{a},\frac{1}{4a^{2}}\right)=a\int_{0}^{\infty}e^{-at- \frac{1}{4}t^{2}}\cos\left(ut\right)\mathrm{d}t,</Math> <Math equation-number="7.19.11" mode="display" xml:id="C7.S19.E11">\mathsf{V}\left(\frac{u}{a},\frac{1}{4a^{2}}\right)=a\int_{0}^{\infty}e^{-at- \frac{1}{4}t^{2}}\sin\left(ut\right)\mathrm{d}t</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+           
+<section xml:id="C7.S20">
+<title>Mathematical Applications</title>        
+ 
+<subsection xml:id="C7.S20.SS1">
+<title>Asymptotics</title>        
+  
+<para xml:id="C7.S20.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="250" xml:id="C7.S20.SS1.p1.s1">
+For applications of the complementary error function in uniform asymptotic approximations of integrals—saddle point coalescing with a pole or saddle point coalescing with an endpoint—see ( , Chapter 7) , ( , Chapter 9) , and ( ) .
+</sentence>
+
+</para>
+  
+<para xml:id="C7.S20.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="251" xml:id="C7.S20.SS1.p2.s1">
+The complementary error function also plays a ubiquitous role in constructing exponentially-improved asymptotic expansions and providing a smooth interpretation of the Stokes phenomenon; see §§LABEL:sec:AS.RTSP.EIE andLABEL:sec:AS.RTSP.SP.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S20.SS2">
+<title>Cornu’s Spiral</title>        
+    
+<para xml:id="C7.S20.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="252" xml:id="C7.S20.SS2.p1.s1">
+Let the set <Math mode="inline" xml:id="C7.S20.SS2.p1.m1">\{x(t),y(t),t\}</Math> be defined by <Math mode="inline" xml:id="C7.S20.SS2.p1.m2">x(t)=C\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.SS2.p1.m3">y(t)=S\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.SS2.p1.m4">t\geq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="253" xml:id="C7.S20.SS2.p1.s2">
+Then the set <Math mode="inline" xml:id="C7.S20.SS2.p1.m5">\{x(t),y(t)\}</Math> is calledCornu’s spiral: it is the projection of the corkscrew on the <Math mode="inline" xml:id="C7.S20.SS2.p1.m6">\{x,y\}</Math> -plane.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="254" xml:id="C7.S20.SS2.p1.s3">
+See Figure LABEL:fig:ER.GR.E8.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="255" xml:id="C7.S20.SS2.p1.s4">
+The spiral has several special properties (see ( , p. 184) ).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="256" xml:id="C7.S20.SS2.p1.s5">
+Let <Math mode="inline" xml:id="C7.S20.SS2.p1.m7">P(t)=P(x(t),y(t))</Math> be any point on the projected spiral.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="257" xml:id="C7.S20.SS2.p1.s6">
+Then the arc length between the origin and <Math mode="inline" xml:id="C7.S20.SS2.p1.m8">P(t)</Math> equals <Math mode="inline" xml:id="C7.S20.SS2.p1.m9">t</Math> , and is directly proportional to the curvature at <Math mode="inline" xml:id="C7.S20.SS2.p1.m10">P(t)</Math> , which equals <Math mode="inline" xml:id="C7.S20.SS2.p1.m11">\pi t</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="258" xml:id="C7.S20.SS2.p1.s7">
+Furthermore, because <Math mode="inline" xml:id="C7.S20.SS2.p1.m12">\ifrac{\mathrm{d}y}{\mathrm{d}x}=\tan\left(\frac{1}{2}\pi t^{2}\right)</Math> , the angle between the <Math mode="inline" xml:id="C7.S20.SS2.p1.m13">x</Math> -axis and the tangent to the spiral at <Math mode="inline" xml:id="C7.S20.SS2.p1.m14">P(t)</Math> is given by <Math mode="inline" xml:id="C7.S20.SS2.p1.m15">\frac{1}{2}\pi t^{2}</Math>.
+</sentence>
+
+</para>
+          
+<sentence sentence-num-in-section="259" xml:id="C7.S20.F1.s1">
+Figure 7.20.1: Cornu’s spiral, formed from Fresnel integrals, is defined parametrically by <Math mode="inline" xml:id="C7.S20.F1.m1">x=C\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.F1.m2">y=S\left(t\right)</Math> , <Math mode="inline" xml:id="C7.S20.F1.m3">t\in[0,\infty)</Math> .
+</sentence>  
+</subsection>
+ 
+<subsection xml:id="C7.S20.SS3">
+<title>Statistics</title>        
+  
+<para xml:id="C7.S20.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="260" xml:id="C7.S20.SS3.p1.s1">
+The normal distribution function with mean <Math mode="inline" xml:id="C7.S20.SS3.p1.m1">m</Math> and standard deviation <Math mode="inline" xml:id="C7.S20.SS3.p1.m2">\sigma</Math> is given by <Math equation-number="7.20.1" mode="display" xml:id="C7.S20.E1">\frac{1}{\sigma\sqrt{2\pi}}\int_{-\infty}^{x}e^{-(t-m)^{2}/(2\sigma^{2})} \mathrm{d}t=\frac{1}{2}\operatorname{erfc}\left(\frac{m-x}{\sigma\sqrt{2}} \right)=Q\left(\frac{m-x}{\sigma}\right)=P\left(\frac{x-m}{\sigma}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="261" xml:id="C7.S20.SS3.p1.s2">
+For applications in statistics and probability theory, also for the role of the normal distribution functions (the error functions and probability integrals) in the asymptotics of arbitrary probability density functions, see ( , Chapter 13) and ( , Chapters 2 and 3) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S21">
+<title>Physical Applications</title>        
+           
+ 
+<para xml:id="C7.S21.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="262" xml:id="C7.S21.p1.s1">
+The error functions, Fresnel integrals, and related functions occur in a variety of physical applications.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="263" xml:id="C7.S21.p1.s2">
+Fresnel integrals and Cornu’s spiral occurred originally in the analysis of the diffraction of light; see ( , §8.7) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="264" xml:id="C7.S21.p1.s3">
+More recently, Cornu’s spiral appears in the design of highways and railroad tracks, robot trajectory planning, and computer-aided design; see ( ) .
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S21.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="265" xml:id="C7.S21.p2.s1">
+( ) gives many applications and points out the importance of the repeated integrals of the complementary error function <Math mode="inline" xml:id="C7.S21.p2.m1">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="266" xml:id="C7.S21.p2.s2">
+( ) mentions the role of <Math mode="inline" xml:id="C7.S21.p2.m2">w\left(z\right)</Math> in the theory of linearized waves or oscillations in a hot plasma; <Math mode="inline" xml:id="C7.S21.p2.m3">w\left(z\right)</Math> is called the plasma dispersion function or Faddeeva (or Faddeyeva) function; see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="267" xml:id="C7.S21.p2.s3">
+( ) cites work with applications from atomic physics and astrophysics.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="268" xml:id="C7.S21.p2.s4">
+Efficient algorithms for computing the Faddeeva (or Faddeyeva) function are discussed in ( ) , a paper frequently cited in the astrophysics literature.
+</sentence>
+
+</para>
+
+  
+<para xml:id="C7.S21.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="269" xml:id="C7.S21.p3.s1">
+Voigt functions <Math mode="inline" xml:id="C7.S21.p3.m1">\mathsf{U}\left(x,t\right)</Math> , <Math mode="inline" xml:id="C7.S21.p3.m2">\mathsf{V}\left(x,t\right)</Math> , can be regarded as the convolution of a Gaussian and a Lorentzian, and appear when the analysis of light (or particulate) absorption (or emission) involves thermal motion effects.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="270" xml:id="C7.S21.p3.s2">
+These applications include astrophysics, plasma diagnostics, neutron diffraction, laser spectroscopy, and surface scattering.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="271" xml:id="C7.S21.p3.s3">
+See ( , §IV.2) , ( ) , and ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="272" xml:id="C7.S21.p3.s4">
+Dawson’s integral appears in de-convolving even more complex motional effects; see ( ) .
+</sentence>
+
+</para>
+ 
+</section>
+           
+<section xml:id="C7.S22">
+<title>Methods of Computation</title>        
+ 
+<subsection xml:id="C7.S22.SS1">
+<title>Main Functions</title>        
+      
+<para xml:id="C7.S22.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="273" xml:id="C7.S22.SS1.p1.s1">
+The methods available for computing the main functions in this chapter are analogous to those described in §§LABEL:sec:EX.MC.MF–LABEL:sec:EX.MC.OR for the exponential integral and sine and cosine integrals, and similar comments apply.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="274" xml:id="C7.S22.SS1.p1.s2">
+Additional references are ( ) for the application of the trapezoidal rule, for example, to the first of (LABEL:eq:ER.IR.E2), and ( ) and ( ) for continued fractions.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S22.SS2">
+<title>Goodwin–Staton Integral</title>        
+  
+<para xml:id="C7.S22.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="275" xml:id="C7.S22.SS2.p1.s1">
+See ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S22.SS3">
+<title>Repeated Integrals of the Complementary Error Function</title>          
+<para xml:id="C7.S22.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="276" xml:id="C7.S22.SS3.p1.s1">
+The recursion scheme given by (LABEL:eq:ER.RI.R2) and (LABEL:eq:ER.RI.R7) can be used for computing <Math mode="inline" xml:id="C7.S22.SS3.p1.m1">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="277" xml:id="C7.S22.SS3.p1.s2">
+See ( ) , where forward and backward recursions are used; see also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S22.SS4">
+<title>Voigt Functions</title>        
+  
+<para xml:id="C7.S22.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="278" xml:id="C7.S22.SS4.p1.s1">
+The computation of these functions can be based on algorithms for the complementary error function with complex argument; compare (LABEL:eq:ER.VF.E1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S22.SS5">
+<title>Other References</title>        
+ 
+<para xml:id="C7.S22.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="279" xml:id="C7.S22.SS5.p1.s1">
+For a comprehensive survey of computational methods for the functions treatedin this chapter, see ( , Ch. V) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S23">
+<title>Tables</title>        
+ 
+<subsection xml:id="C7.S23.SS1">
+<title>Introduction</title>        
+ 
+<para xml:id="C7.S23.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="280" xml:id="C7.S23.SS1.p1.s1">
+( ) and ( ) give comprehensive indexes of mathematical tables.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="281" xml:id="C7.S23.SS1.p1.s2">
+This section lists relevant tables that appeared later.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S23.SS2">
+<title>Real Variables</title>        
+ 
+<para xml:id="C7.S23.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="282" xml:id="C7.S23.SS2.p1.s1">
+( , Chapter 7) includes <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m1">\operatorname{erf}x</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m2">(2/\sqrt{\pi})e^{-x^{2}}</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m3">x\in[0,2]</Math> , 10D; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m4">(2/\sqrt{\pi})e^{-x^{2}}</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m5">x\in[2,10]</Math> , 8S; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m6">xe^{x^{2}}\operatorname{erfc}x</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m7">x^{-2}\in[0,0.25</Math> ], 7D; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m8">2^{n}\Gamma\left(\frac{1}{2}n+1\right)\mathop{\mathrm{i}^{n}\mathrm{erfc}} \left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m9">n=1(1)6,10,11</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m10">x\in[0,5]</Math> , 6S; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m11">F\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m12">x\in[0,2]</Math> , 10D; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m13">xF\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m14">x^{-2}\in[0,0.25</Math> ], 9D; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m15">C\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m16">S\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m17">x\in[0,5]</Math> , 7D; <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m18">\mathrm{f}\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m19">\mathrm{g}\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m20">x\in[0,1]</Math> , <Math mode="inline" xml:id="C7.S23.I1.i1.p1.m21">x^{-1}\in[0,1]</Math> , 15D. ( , Table 27.6)includes the Goodwin–Staton integral <Math mode="inline" xml:id="C7.S23.I1.i2.p1.m1">G\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i2.p1.m2">x=1(.1)3(.5)</Math> 8, 4D; also <Math mode="inline" xml:id="C7.S23.I1.i2.p1.m3">G\left(x\right)+\ln x</Math> , <Math mode="inline" xml:id="C7.S23.I1.i2.p1.m4">x=0(.05)</Math> 1, 4D. ( ) includes the Voigt function <Math mode="inline" xml:id="C7.S23.I1.i3.p1.m1">H\left(a,u\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i3.p1.m2">u\in[0,22]</Math> , <Math mode="inline" xml:id="C7.S23.I1.i3.p1.m3">a\in[0,1]</Math> , 6S. ( , pp. 637, 639) includes <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m1">(2/\sqrt{\pi})e^{-x^{2}}</Math> , <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m2">\operatorname{erf}x</Math> , <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m3">x=0(.02)1(.04)</Math> 3, 8D; <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m4">C\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m5">S\left(x\right)</Math> , <Math mode="inline" xml:id="C7.S23.I1.i4.p1.m6">x=0(.2)10(2)100(100)50</Math> 0, 8D.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S23.SS3">
+<title>Complex Variables, <Math mode="inline" xml:id="C7.S23.SS3.m1">z=x+iy</Math></title>        
+ 
+<para xml:id="C7.S23.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="283" xml:id="C7.S23.SS3.p1.s1">
+( , Chapter 7) includes <Math mode="inline" xml:id="C7.S23.I2.i1.p1.m1">w\left(z\right)</Math> , <Math mode="inline" xml:id="C7.S23.I2.i1.p1.m2">x=0(.1)3.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="284" xml:id="C7.S23.SS3.p1.s2">
+9, <Math mode="inline" xml:id="C7.S23.I2.i1.p1.m3">y=0(.1)</Math> 3, 6D.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="285" xml:id="C7.S23.SS3.p1.s3">
+( , pp. 638, 640–641) includes the real and imaginary parts of <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m1">\operatorname{erf}z</Math> , <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m2">x\in[0,5]</Math> , <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m3">y=0.5(.5)</Math> 3, 7D and 8D, respectively; the real and imaginary parts of <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m4">\int_{x}^{\infty}e^{\pm\mathrm{i}t^{2}}\mathrm{d}t</Math> , <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m5">(1/\sqrt{\pi})e^{\mp\mathrm{i}(x^{2}+(\pi/4))}\int_{x}^{\infty}e^{\pm\mathrm{i }t^{2}}\mathrm{d}t</Math> , <Math mode="inline" xml:id="C7.S23.I2.i2.p1.m6">x=0(.5)20(1)2</Math> 5, 8D, together with the corresponding modulus and phase to 8Dand 6D (degrees), respectively.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S23.SS4">
+<title>Zeros</title>        
+ 
+<para xml:id="C7.S23.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="286" xml:id="C7.S23.SS4.p1.s1">
+( ) gives the first 100 zeros of <Math mode="inline" xml:id="C7.S23.I3.i1.p1.m1">\operatorname{erf}z</Math> and <Math mode="inline" xml:id="C7.S23.I3.i1.p1.m2">w\left(z\right)</Math> (the table on page 406 of this reference is for <Math mode="inline" xml:id="C7.S23.I3.i1.p1.m3">w\left(z\right)</Math> , not for <Math mode="inline" xml:id="C7.S23.I3.i1.p1.m4">\operatorname{erfc}z</Math> ), 11S. ( , p. 642) includes the first 10 zeros of <Math mode="inline" xml:id="C7.S23.I3.i2.p1.m1">\operatorname{erf}z</Math> , 9D; the first 25 distinct zeros of <Math mode="inline" xml:id="C7.S23.I3.i2.p1.m2">C\left(z\right)</Math> and <Math mode="inline" xml:id="C7.S23.I3.i2.p1.m3">S\left(z\right)</Math> , 8S.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S24">
+<title>Approximations</title>        
+ 
+<subsection xml:id="C7.S24.SS1">
+<title>Approximations in Terms of Elementary Functions</title>        
+  
+<para xml:id="C7.S24.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="287" xml:id="C7.S24.SS1.p1.s1">
+( ) gives several minimax polynomial and rational approximations for <Math mode="inline" xml:id="C7.S24.I1.i1.p1.m1">\operatorname{erf}x</Math> , <Math mode="inline" xml:id="C7.S24.I1.i1.p1.m2">\operatorname{erfc}x</Math> and the auxiliary functions <Math mode="inline" xml:id="C7.S24.I1.i1.p1.m3">\mathrm{f}\left(x\right)</Math> and <Math mode="inline" xml:id="C7.S24.I1.i1.p1.m4">\mathrm{g}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="288" xml:id="C7.S24.SS1.p1.s2">
+( ) provides minimax rational approximations for <Math mode="inline" xml:id="C7.S24.I1.i2.p1.m1">\operatorname{erf}x</Math> and <Math mode="inline" xml:id="C7.S24.I1.i2.p1.m2">\operatorname{erfc}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="289" xml:id="C7.S24.SS1.p1.s3">
+The maximum relative precision is about 20S. ( ) gives minimax rational approximations for the Fresnel integrals (maximum relative precision 19S); for a Fortran algorithm and comments see ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="290" xml:id="C7.S24.SS1.p1.s4">
+( ) gives minimax rational approximations to Dawson’s integral <Math mode="inline" xml:id="C7.S24.I1.i4.p1.m1">F\left(x\right)</Math> (maximum relative precision 20S–22S).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S24.SS2">
+<title>Expansions in Chebyshev Series</title>        
+ 
+<para xml:id="C7.S24.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="291" xml:id="C7.S24.SS2.p1.s1">
+( , pp. 323–324) covers <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m1">\frac{1}{2}\sqrt{\pi}\operatorname{erf}x</Math> and <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m2">e^{x^{2}}F\left(x\right)</Math> for <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m3">-3\leq x\leq 3</Math> (the Chebyshev coefficients are given to 20D); <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m4">\sqrt{\pi}xe^{x^{2}}\operatorname{erfc}x</Math> and <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m5">2xF\left(x\right)</Math> for <Math mode="inline" xml:id="C7.S24.I2.i1.p1.m6">x\geq 3</Math> (the Chebyshev coefficients are given to 20D and 15D, respectively).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="292" xml:id="C7.S24.SS2.p1.s2">
+Coefficients for the Fresnel integrals are given on pp. 328–330 (20D).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="293" xml:id="C7.S24.SS2.p1.s3">
+( ) provides Chebyshev coefficients for the auxiliary functions <Math mode="inline" xml:id="C7.S24.I2.i2.p1.m1">\mathrm{f}\left(x\right)</Math> and <Math mode="inline" xml:id="C7.S24.I2.i2.p1.m2">\mathrm{g}\left(x\right)</Math> for <Math mode="inline" xml:id="C7.S24.I2.i2.p1.m3">x\geq 3</Math> (15D).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="294" xml:id="C7.S24.SS2.p1.s4">
+( ) gives coefficients of Chebyshev expansions for <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m1">x^{-1}\operatorname{erf}x</Math> on <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m2">0\leq x\leq 2</Math> , for <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m3">xe^{x^{2}}\operatorname{erfc}x</Math> on <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m4">[2,\infty)</Math> , and for <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m5">e^{x^{2}}\operatorname{erfc}x</Math> on <Math mode="inline" xml:id="C7.S24.I2.i3.p1.m6">[0,\infty)</Math> (30D).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="295" xml:id="C7.S24.SS2.p1.s5">
+( ) gives coefficients of Chebyshev series for <Math mode="inline" xml:id="C7.S24.I2.i4.p1.m1">(1+2x)e^{x^{2}}\operatorname{erfc}x</Math> on <Math mode="inline" xml:id="C7.S24.I2.i4.p1.m2">(0,\infty)</Math> (22D).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S24.SS3">
+<title>Padé-Type Expansions</title>        
+ 
+<para xml:id="C7.S24.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="296" xml:id="C7.S24.SS3.p1.s1">
+( , vol. 2, pp. 422–435) gives main diagonal Padé approximations for <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m1">F\left(z\right)</Math> , <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m2">\operatorname{erf}z</Math> , <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m3">\operatorname{erfc}z</Math> , <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m4">C\left(z\right)</Math> , and <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m5">S\left(z\right)</Math> ; approximate errors are given for a selection of <Math mode="inline" xml:id="C7.S24.I3.i1.p1.m6">z</Math> -values.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
+ 
+<section xml:id="C7.S25">
+<title>Software</title>        
+ 
+<para xml:id="C7.S25.p1">
+
+</para>
+
+ 
+<subsection xml:id="C7.S25.SS1">
+<title>Introduction</title>         
+<para xml:id="C7.S25.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="297" xml:id="C7.S25.SS1.p1.s1">
+In this section we provide links to the research literature describing the implementation of algorithms in software for the evaluation of functions described in this chapter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="298" xml:id="C7.S25.SS1.p1.s2">
+Citations in bulleted lists refer to papers for which research software has been made available and can be downloaded via the Web.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="299" xml:id="C7.S25.SS1.p1.s3">
+References to research software that is available in other ways is listed separately.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S25.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="300" xml:id="C7.S25.SS1.p2.s1">
+A more complete list of available software for computing these functions is found in the LABEL:software.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="301" xml:id="C7.S25.SS1.p2.s2">
+For another listing of Web-accessible software for the functions in this chapter, see .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS2">
+<title><Math content-tex="\erf@@{x}" mode="inline" xml:id="C7.S25.SS2.m1">\operatorname{erf}x</Math>, <Math content-tex="\erfc@@{x}" mode="inline" xml:id="C7.S25.SS2.m2">\operatorname{erfc}x</Math>, <Math content-tex="\repinterfc{n}@{x}" mode="inline" xml:id="C7.S25.SS2.m3">\mathop{\mathrm{i}^{n}\mathrm{erfc}}\left(x\right)</Math>, <Math content-tex="x\in\Reals" mode="inline" xml:id="C7.S25.SS2.m4">x\in\mathbb{R}</Math></title>        
+ 
+<para xml:id="C7.S25.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="302" xml:id="C7.S25.SS2.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="303" xml:id="C7.S25.SS2.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="304" xml:id="C7.S25.SS2.p1.s3">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="305" xml:id="C7.S25.SS2.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="306" xml:id="C7.S25.SS2.p1.s5">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S25.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="307" xml:id="C7.S25.SS2.p2.s1">
+See also ( ) , ( ) , ( ) , ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS3">
+<title><Math content-tex="\erf@@{z}" mode="inline" xml:id="C7.S25.SS3.m1">\operatorname{erf}z</Math>, <Math content-tex="\erfc@@{z}" mode="inline" xml:id="C7.S25.SS3.m2">\operatorname{erfc}z</Math>, <Math content-tex="\Faddeevaw@{z}" mode="inline" xml:id="C7.S25.SS3.m3">w\left(z\right)</Math>, <Math content-tex="z\in\Complexes" mode="inline" xml:id="C7.S25.SS3.m4">z\in\mathbb{C}</Math></title>         
+<para xml:id="C7.S25.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="308" xml:id="C7.S25.SS3.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="309" xml:id="C7.S25.SS3.p1.s2">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="310" xml:id="C7.S25.SS3.p1.s3">
+MATLAB.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="311" xml:id="C7.S25.SS3.p1.s4">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="312" xml:id="C7.S25.SS3.p1.s5">
+Fortran and MATLAB.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S25.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="313" xml:id="C7.S25.SS3.p2.s1">
+See also ( ) , and ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS4">
+<title><Math content-tex="\Fresnelcosint@{x}" mode="inline" xml:id="C7.S25.SS4.m1">C\left(x\right)</Math>, <Math content-tex="\Fresnelsinint@{x}" mode="inline" xml:id="C7.S25.SS4.m2">S\left(x\right)</Math>, <Math content-tex="\auxFresnelf@{x}" mode="inline" xml:id="C7.S25.SS4.m3">\mathrm{f}\left(x\right)</Math>, <Math content-tex="\auxFresnelg@{x}" mode="inline" xml:id="C7.S25.SS4.m4">\mathrm{g}\left(x\right)</Math>, <Math content-tex="x\in\Reals" mode="inline" xml:id="C7.S25.SS4.m5">x\in\mathbb{R}</Math></title>        
+ 
+<para xml:id="C7.S25.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="314" xml:id="C7.S25.SS4.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="315" xml:id="C7.S25.SS4.p1.s2">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S25.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="316" xml:id="C7.S25.SS4.p2.s1">
+See also ( ) and ( ) .
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS5">
+<title><Math content-tex="\Fresnelcosint@{z}" mode="inline" xml:id="C7.S25.SS5.m1">C\left(z\right)</Math>, <Math content-tex="\Fresnelsinint@{z}" mode="inline" xml:id="C7.S25.SS5.m2">S\left(z\right)</Math>, <Math content-tex="z\in\Complexes" mode="inline" xml:id="C7.S25.SS5.m3">z\in\mathbb{C}</Math></title>        
+ 
+<para xml:id="C7.S25.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="317" xml:id="C7.S25.SS5.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="318" xml:id="C7.S25.SS5.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS6">
+<title><Math content-tex="\FresnelintF@{x}" mode="inline" xml:id="C7.S25.SS6.m1">\mathcal{F}\left(x\right)</Math>, <Math content-tex="\GoodwinStatonint@{x}" mode="inline" xml:id="C7.S25.SS6.m2">G\left(x\right)</Math>, <Math content-tex="\VoigtU@{x}{t}" mode="inline" xml:id="C7.S25.SS6.m3">\mathsf{U}\left(x,t\right)</Math>, <Math content-tex="\VoigtV@{x}{t}" mode="inline" xml:id="C7.S25.SS6.m4">\mathsf{V}\left(x,t\right)</Math>, <Math content-tex="x\in\Reals" mode="inline" xml:id="C7.S25.SS6.m5">x\in\mathbb{R}</Math></title>        
+ 
+<para xml:id="C7.S25.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="319" xml:id="C7.S25.SS6.p1.s1">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="320" xml:id="C7.S25.SS6.p1.s2">
+MATLAB.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="321" xml:id="C7.S25.SS6.p1.s3">
+( ) .
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="322" xml:id="C7.S25.SS6.p1.s4">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="323" xml:id="C7.S25.SS6.p1.s5">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="324" xml:id="C7.S25.SS6.p1.s6">
+Fortran. ( ) .
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="325" xml:id="C7.S25.SS6.p1.s7">
+Fortran.
+</sentence>
+
+</para>
+ 
+<para xml:id="C7.S25.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="326" xml:id="C7.S25.SS6.p2.s1">
+See also ( ) .
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C7.S25.SS7">
+<title><Math content-tex="\FresnelintF@{z}" mode="inline" xml:id="C7.S25.SS7.m1">\mathcal{F}\left(z\right)</Math>, <Math content-tex="\GoodwinStatonint@{z}" mode="inline" xml:id="C7.S25.SS7.m2">G\left(z\right)</Math>, <Math content-tex="z\in\Complexes" mode="inline" xml:id="C7.S25.SS7.m3">z\in\mathbb{C}</Math></title>        
+ 
+<para xml:id="C7.S25.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="327" xml:id="C7.S25.SS7.p1.s1">
+No research software has been found for these functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="328" xml:id="C7.S25.SS7.p1.s2">
+For other software see the LABEL:software.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>
+ 
+
+</chapter>

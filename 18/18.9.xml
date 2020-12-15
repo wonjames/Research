@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C18.S9">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C18.S9.SS1">
+<title>Recurrence Relations</title>        
+  
+<para xml:id="C18.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C18.S9.SS1.p1.s1">
+ <Math equation-number="18.9.1" mode="display" xml:id="C18.S9.E1">p_{n+1}(x)=(A_{n}x+B_{n})p_{n}(x)-C_{n}p_{n-1}(x),</Math> with initial values <Math mode="inline" xml:id="C18.S9.SS1.p1.m1">p_{0}(x)=1</Math> and <Math mode="inline" xml:id="C18.S9.SS1.p1.m2">p_{1}(x)=A_{0}x+B_{0}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C18.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C18.S9.SS1.p2.s1">
+For <Math mode="inline" xml:id="C18.S9.SS1.p2.m1">p_{n}(x)=P^{(\alpha,\beta)}_{n}\left(x\right)</Math> , <Math equation-number="18.9.2" mode="display" xml:id="C18.S9.E2">A_{n}=\dfrac{(2n+\alpha+\beta+1)(2n+\alpha+\beta+2)}{2(n+1)(n+\alpha+\beta+1)},B_{n}=\dfrac{(\alpha^{2}-\beta^{2})(2n+\alpha+\beta+1)}{2(n+1)(n+\alpha+\beta+ 1)(2n+\alpha+\beta)},C_{n}=\dfrac{(n+\alpha)(n+\beta)(2n+\alpha+\beta+2)}{(n+1)(n+\alpha+\beta+1)(2 n+\alpha+\beta)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C18.S9.SS1.p2.s2">
+<Math mode="inline" xml:id="C18.S9.SS1.p2.m2">A_{0}</Math> and <Math mode="inline" xml:id="C18.S9.SS1.p2.m3">B_{0}</Math> have to be understood for <Math mode="inline" xml:id="C18.S9.SS1.p2.m4">\alpha+\beta=0</Math> or <Math mode="inline" xml:id="C18.S9.SS1.p2.m5">-1</Math> bycontinuity in <Math mode="inline" xml:id="C18.S9.SS1.p2.m6">\alpha</Math> and <Math mode="inline" xml:id="C18.S9.SS1.p2.m7">\beta</Math> , that is, <Math mode="inline" xml:id="C18.S9.SS1.p2.m8">A_{0}=\tfrac{1}{2}(\alpha+\beta)+1</Math> and <Math mode="inline" xml:id="C18.S9.SS1.p2.m9">B_{0}=\tfrac{1}{2}(\alpha-\beta)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C18.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C18.S9.SS1.p3.s1">
+For the other classical OP’s see Table 18.9.1;compare also §18.2(iv).
+</sentence>
+
+</para>
+         
+<sentence sentence-num-in-section="5" xml:id="C18.S9.T1.s1">
+Table 18.9.1: Classical OP’s: recurrence relations ( ).
+</sentence>     
+ 
+
+<sentence sentence-num-in-section="6" sentence-num-in-table="1" xml:id="C18.S9.T1.t1.s1">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r1.m1">p_{n}(x)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="7" sentence-num-in-table="2" xml:id="C18.S9.T1.t1.s2">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r1.m2">A_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="8" sentence-num-in-table="3" xml:id="C18.S9.T1.t1.s3">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r1.m3">B_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="9" sentence-num-in-table="4" xml:id="C18.S9.T1.t1.s4">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r1.m4">C_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="10" sentence-num-in-table="5" xml:id="C18.S9.T1.t1.s5">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r2.m1">C^{(\lambda)}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="11" sentence-num-in-table="6" xml:id="C18.S9.T1.t1.s6">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r2.m2">\frac{2(n+\lambda)}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="7" xml:id="C18.S9.T1.t1.s7">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r2.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="8" xml:id="C18.S9.T1.t1.s8">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r2.m4">\frac{n+2\lambda-1}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="9" xml:id="C18.S9.T1.t1.s9">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r3.m1">T_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="10" xml:id="C18.S9.T1.t1.s10">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r3.m2">2-\delta_{n,0}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="11" xml:id="C18.S9.T1.t1.s11">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r3.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="12" xml:id="C18.S9.T1.t1.s12">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r3.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="13" xml:id="C18.S9.T1.t1.s13">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r4.m1">U_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="14" xml:id="C18.S9.T1.t1.s14">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r4.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="15" xml:id="C18.S9.T1.t1.s15">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r4.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="16" xml:id="C18.S9.T1.t1.s16">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r4.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="17" xml:id="C18.S9.T1.t1.s17">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r5.m1">T^{*}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="18" xml:id="C18.S9.T1.t1.s18">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r5.m2">4-2\delta_{n,0}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="19" xml:id="C18.S9.T1.t1.s19">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r5.m3">-2+\delta_{n,0}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="20" xml:id="C18.S9.T1.t1.s20">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r5.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="21" xml:id="C18.S9.T1.t1.s21">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r6.m1">U^{*}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="22" xml:id="C18.S9.T1.t1.s22">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r6.m2">4</Math>
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="23" xml:id="C18.S9.T1.t1.s23">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r6.m3">-2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="24" xml:id="C18.S9.T1.t1.s24">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r6.m4">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="25" xml:id="C18.S9.T1.t1.s25">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r7.m1">P_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="26" xml:id="C18.S9.T1.t1.s26">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r7.m2">\frac{2n+1}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="27" xml:id="C18.S9.T1.t1.s27">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r7.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="28" xml:id="C18.S9.T1.t1.s28">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r7.m4">\frac{n}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="29" xml:id="C18.S9.T1.t1.s29">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r8.m1">P^{*}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="30" xml:id="C18.S9.T1.t1.s30">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r8.m2">\frac{4n+2}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="31" xml:id="C18.S9.T1.t1.s31">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r8.m3">-\frac{2n+1}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="32" xml:id="C18.S9.T1.t1.s32">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r8.m4">\frac{n}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="33" xml:id="C18.S9.T1.t1.s33">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r9.m1">L^{(\alpha)}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="34" xml:id="C18.S9.T1.t1.s34">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r9.m2">-\frac{1}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="35" xml:id="C18.S9.T1.t1.s35">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r9.m3">\frac{2n+\alpha+1}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="36" xml:id="C18.S9.T1.t1.s36">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r9.m4">\frac{n+\alpha}{n+1}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="37" xml:id="C18.S9.T1.t1.s37">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r10.m1">H_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="38" xml:id="C18.S9.T1.t1.s38">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r10.m2">2</Math>
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="39" xml:id="C18.S9.T1.t1.s39">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r10.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="40" xml:id="C18.S9.T1.t1.s40">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r10.m4">2n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="41" xml:id="C18.S9.T1.t1.s41">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r11.m1">\mathit{He}_{n}\left(x\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="42" xml:id="C18.S9.T1.t1.s42">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r11.m2">1</Math>
+</sentence>
+
+<sentence sentence-num-in-section="48" sentence-num-in-table="43" xml:id="C18.S9.T1.t1.s43">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r11.m3">0</Math>
+</sentence>
+
+<sentence sentence-num-in-section="49" sentence-num-in-table="44" xml:id="C18.S9.T1.t1.s44">
+<Math mode="inline" xml:id="C18.S9.T1.t1.r11.m4">n</Math>
+</sentence>
+   
+</subsection>
+ 
+<subsection xml:id="C18.S9.SS2">
+<title>Contiguous Relations in the Parameters and the Degree</title>        
+ 
+ 
+<paragraph xml:id="C18.S9.Px1">
+<title>Jacobi</title>  
+ 
+<para xml:id="C18.S9.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C18.S9.Px1.p1.s1">
+ <Math equation-number="18.9.3" mode="display" xml:id="C18.S9.E3">P^{(\alpha,\beta-1)}_{n}\left(x\right)-P^{(\alpha-1,\beta)}_{n}\left(x\right)= P^{(\alpha,\beta)}_{n-1}\left(x\right),</Math> <Math equation-number="18.9.4" mode="display" xml:id="C18.S9.E4">(1-x)P^{(\alpha+1,\beta)}_{n}\left(x\right)+(1+x)P^{(\alpha,\beta+1)}_{n}\left (x\right)=2\!P^{(\alpha,\beta)}_{n}\left(x\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+<para xml:id="C18.S9.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="51" xml:id="C18.S9.Px1.p2.s1">
+ <Math equation-number="18.9.5" mode="display" xml:id="C18.S9.E5">(2n+\alpha+\beta+1)P^{(\alpha,\beta)}_{n}\left(x\right)=(n+\alpha+\beta+1)P^{( \alpha,\beta+1)}_{n}\left(x\right)+(n+\alpha)P^{(\alpha,\beta+1)}_{n-1}\left(x \right),</Math> <Math equation-number="18.9.6" mode="display" xml:id="C18.S9.E6">(n+\tfrac{1}{2}\alpha+\tfrac{1}{2}\beta+1)(1+x)P^{(\alpha,\beta+1)}_{n}\left(x \right)=(n+1)P^{(\alpha,\beta)}_{n+1}\left(x\right)+(n+\beta+1)P^{(\alpha, \beta)}_{n}\left(x\right),</Math> and a similar pair to (18.9.5) and (18.9.6)by symmetry; compare the second row in Table 18.6.1.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px2">
+<title>Ultraspherical</title>   
+<para xml:id="C18.S9.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="52" xml:id="C18.S9.Px2.p1.s1">
+ <Math equation-number="18.9.7" mode="display" xml:id="C18.S9.E7">(n+\lambda)C^{(\lambda)}_{n}\left(x\right)=\lambda\left(C^{(\lambda+1)}_{n} \left(x\right)-C^{(\lambda+1)}_{n-2}\left(x\right)\right),</Math> , <Math equation-number="18.9.8" mode="display" xml:id="C18.S9.E8">4\lambda(n+\lambda+1)(1-x^{2})C^{(\lambda+1)}_{n}\left(x\right)=-(n+1)(n+2)C^{ (\lambda)}_{n+2}\left(x\right)+(n+2\lambda)(n+2\lambda+1)C^{(\lambda)}_{n} \left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px3">
+<title>Chebyshev</title>   
+<para xml:id="C18.S9.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="53" xml:id="C18.S9.Px3.p1.s1">
+ <Math equation-number="18.9.9" mode="display" xml:id="C18.S9.E9">T_{n}\left(x\right)=\tfrac{1}{2}\left(U_{n}\left(x\right)-U_{n-2}\left(x\right )\right),</Math> , <Math equation-number="18.9.10" mode="display" xml:id="C18.S9.E10">(1-x^{2})U_{n}\left(x\right)=-\tfrac{1}{2}\left(T_{n+2}\left(x\right)-T_{n} \left(x\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="54" xml:id="C18.S9.Px3.p1.s2">
+<Math equation-number="18.9.11" mode="display" xml:id="C18.S9.E11">W_{n}\left(x\right)+W_{n-1}\left(x\right)=2T_{n}\left(x\right),</Math> , <Math equation-number="18.9.12" mode="display" xml:id="C18.S9.E12">T_{n+1}\left(x\right)+T_{n}\left(x\right)=(1+x)W_{n}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px4">
+<title>Laguerre</title>   
+<para xml:id="C18.S9.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="55" xml:id="C18.S9.Px4.p1.s1">
+ <Math equation-number="18.9.13" mode="display" xml:id="C18.S9.E13">L^{(\alpha)}_{n}\left(x\right)=L^{(\alpha+1)}_{n}\left(x\right)-L^{(\alpha+1)} _{n-1}\left(x\right),</Math> , <Math equation-number="18.9.14" mode="display" xml:id="C18.S9.E14">xL^{(\alpha+1)}_{n}\left(x\right)=-(n+1)L^{(\alpha)}_{n+1}\left(x\right)+(n+ \alpha+1)L^{(\alpha)}_{n}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C18.S9.SS3">
+<title>Derivatives</title>        
+ 
+ 
+<paragraph xml:id="C18.S9.Px5">
+<title>Jacobi</title>   
+ 
+<para xml:id="C18.S9.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="56" xml:id="C18.S9.Px5.p1.s1">
+ <Math equation-number="18.9.15" mode="display" xml:id="C18.S9.E15">\frac{\mathrm{d}}{\mathrm{d}x}P^{(\alpha,\beta)}_{n}\left(x\right)=\tfrac{1}{2 }(n+\alpha+\beta+1)P^{(\alpha+1,\beta+1)}_{n-1}\left(x\right),</Math> <Math equation-number="18.9.16" mode="display" xml:id="C18.S9.E16">\frac{\mathrm{d}}{\mathrm{d}x}\left((1-x)^{\alpha}(1+x)^{\beta}P^{(\alpha, \beta)}_{n}\left(x\right)\right)=-2(n+1)(1-x)^{\alpha-1}(1+x)^{\beta-1}P^{( \alpha-1,\beta-1)}_{n+1}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="57" xml:id="C18.S9.Px5.p1.s2">
+<Math equation-number="18.9.17" mode="display" xml:id="C18.S9.E17">(2n+\alpha+\beta)(1-x^{2})\frac{\mathrm{d}}{\mathrm{d}x}P^{(\alpha,\beta)}_{n} \left(x\right)=n\left(\alpha-\beta-(2n+\alpha+\beta)x\right)P^{(\alpha,\beta)} _{n}\left(x\right)+2(n+\alpha)(n+\beta)P^{(\alpha,\beta)}_{n-1}\left(x\right),</Math> <Math equation-number="18.9.18" mode="display" xml:id="C18.S9.E18">(2n+\alpha+\beta+2)(1-x^{2})\frac{\mathrm{d}}{\mathrm{d}x}P^{(\alpha,\beta)}_{ n}\left(x\right)=(n+\alpha+\beta+1)\left(\alpha-\beta+(2n+\alpha+\beta+2)x \right)P^{(\alpha,\beta)}_{n}\left(x\right)-2(n+1)(n+\alpha+\beta+1)P^{(\alpha ,\beta)}_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px6">
+<title>Ultraspherical</title>    
+<para xml:id="C18.S9.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="58" xml:id="C18.S9.Px6.p1.s1">
+ <Math equation-number="18.9.19" mode="display" xml:id="C18.S9.E19">\frac{\mathrm{d}}{\mathrm{d}x}C^{(\lambda)}_{n}\left(x\right)=2\lambda C^{( \lambda+1)}_{n-1}\left(x\right),</Math> <Math equation-number="18.9.20" mode="display" xml:id="C18.S9.E20">\frac{\mathrm{d}}{\mathrm{d}x}\left((1-x^{2})^{\lambda-\frac{1}{2}}C^{(\lambda )}_{n}\left(x\right)\right)=-\frac{(n+1)(n+2\lambda-1)}{2(\lambda-1)}{(1-x^{2} )^{\lambda-\frac{3}{2}}}C^{(\lambda-1)}_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px7">
+<title>Chebyshev</title>    
+<para xml:id="C18.S9.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="59" xml:id="C18.S9.Px7.p1.s1">
+ <Math equation-number="18.9.21" mode="display" xml:id="C18.S9.E21">\frac{\mathrm{d}}{\mathrm{d}x}T_{n}\left(x\right)=nU_{n-1}\left(x\right),</Math> <Math equation-number="18.9.22" mode="display" xml:id="C18.S9.E22">\frac{\mathrm{d}}{\mathrm{d}x}\left((1-x^{2})^{\frac{1}{2}}U_{n}\left(x\right) \right)=-(n+1){(1-x^{2})^{-\frac{1}{2}}}T_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px8">
+<title>Laguerre</title>    
+<para xml:id="C18.S9.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="60" xml:id="C18.S9.Px8.p1.s1">
+ <Math equation-number="18.9.23" mode="display" xml:id="C18.S9.E23">\frac{\mathrm{d}}{\mathrm{d}x}L^{(\alpha)}_{n}\left(x\right)=-L^{(\alpha+1)}_{ n-1}\left(x\right),</Math> , <Math equation-number="18.9.24" mode="display" xml:id="C18.S9.E24">\frac{\mathrm{d}}{\mathrm{d}x}\left(e^{-x}x^{\alpha}L^{(\alpha)}_{n}\left(x \right)\right)=(n+1)e^{-x}x^{\alpha-1}L^{(\alpha-1)}_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C18.S9.Px9">
+<title>Hermite</title>    
+<para xml:id="C18.S9.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="61" xml:id="C18.S9.Px9.p1.s1">
+ <Math equation-number="18.9.25" mode="display" xml:id="C18.S9.E25">\frac{\mathrm{d}}{\mathrm{d}x}H_{n}\left(x\right)=2nH_{n-1}\left(x\right),</Math> , <Math equation-number="18.9.26" mode="display" xml:id="C18.S9.E26">\frac{\mathrm{d}}{\mathrm{d}x}\left(e^{-x^{2}}H_{n}\left(x\right)\right)=-e^{- x^{2}}H_{n+1}\left(x\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="62" xml:id="C18.S9.Px9.p1.s2">
+<Math equation-number="18.9.27" mode="display" xml:id="C18.S9.E27">\frac{\mathrm{d}}{\mathrm{d}x}\mathit{He}_{n}\left(x\right)=n\mathit{He}_{n-1} \left(x\right),</Math> , <Math equation-number="18.9.28" mode="display" xml:id="C18.S9.E28">\frac{\mathrm{d}}{\mathrm{d}x}\left(e^{-\frac{1}{2}x^{2}}\mathit{He}_{n}\left( x\right)\right)=-e^{-\frac{1}{2}x^{2}}\mathit{He}_{n+1}\left(x\right)</Math>.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C3.S2">
+<title>Linear Algebra</title>         
+   
+<subsection xml:id="C3.S2.SS1">
+<title>Gaussian Elimination</title>          
+<para xml:id="C3.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C3.S2.SS1.p1.s1">
+To solve the system <Math equation-number="3.2.1" mode="display" xml:id="C3.S2.E1">\mathbf{A}\mathbf{x}=\mathbf{b},</Math> with Gaussian elimination, where <Math mode="inline" xml:id="C3.S2.SS1.p1.m1">\mathbf{A}</Math> is a nonsingular <Math mode="inline" xml:id="C3.S2.SS1.p1.m2">n\times n</Math> matrix and <Math mode="inline" xml:id="C3.S2.SS1.p1.m3">\mathbf{b}</Math> is an <Math mode="inline" xml:id="C3.S2.SS1.p1.m4">n\times 1</Math> vector, we start with theaugmented matrix <Math equation-number="3.2.2" mode="display" xml:id="C3.S2.E2">\begin{bmatrix}a_{11}&amp;\cdots&amp;a_{1n}&amp;b_{1}\\ \vdots&amp;\ddots&amp;\vdots&amp;\vdots\\ a_{n1}&amp;\cdots&amp;a_{nn}&amp;b_{n}\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C3.S2.SS1.p2.s1">
+By repeatedly subtracting multiples of each row from the subsequent rows we obtain a matrix of the form <Math equation-number="3.2.3" mode="display" xml:id="C3.S2.E3">\begin{bmatrix}u_{11}&amp;u_{12}&amp;\cdots&amp;u_{1n}&amp;y_{1}\\ 0&amp;u_{22}&amp;\cdots&amp;u_{2n}&amp;y_{2}\\ \vdots&amp;\ddots&amp;\ddots&amp;\vdots&amp;\vdots\\ 0&amp;\cdots&amp;0&amp;u_{nn}&amp;y_{n}\end{bmatrix}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C3.S2.SS1.p3.s1">
+During this reduction process we store the multipliers <Math mode="inline" xml:id="C3.S2.SS1.p3.m1">\ell_{jk}</Math> that are used in each column to eliminate other elements in that column.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C3.S2.SS1.p3.s2">
+This yields a lower triangular matrix of the form <Math equation-number="3.2.4" mode="display" xml:id="C3.S2.E4">\mathbf{L}=\begin{bmatrix}1&amp;0&amp;\cdots&amp;0\\ \ell_{21}&amp;1&amp;\cdots&amp;0\\ \vdots&amp;\ddots&amp;\ddots&amp;\vdots\\ \ell_{n1}&amp;\cdots&amp;\ell_{n,n-1}&amp;1\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C3.S2.SS1.p3.s3">
+If we denote by <Math mode="inline" xml:id="C3.S2.SS1.p3.m2">\mathbf{U}</Math> the upper triangular matrix comprising the elements <Math mode="inline" xml:id="C3.S2.SS1.p3.m3">u_{jk}</Math> in (3.2.3), then we have the factorization, ortriangular decomposition, <Math equation-number="3.2.5" mode="display" xml:id="C3.S2.E5">\mathbf{A}=\mathbf{L}\mathbf{U}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C3.S2.SS1.p3.s4">
+With <Math mode="inline" xml:id="C3.S2.SS1.p3.m4">\mathbf{y}=[y_{1},y_{2},\dots,y_{n}]^{\rm T}</Math> the process of solution can then be regarded as first solving the equation <Math mode="inline" xml:id="C3.S2.SS1.p3.m5">\mathbf{L}\mathbf{y}=\mathbf{b}</Math> for <Math mode="inline" xml:id="C3.S2.SS1.p3.m6">\mathbf{y}</Math> (forward elimination), followed by the solution of <Math mode="inline" xml:id="C3.S2.SS1.p3.m7">\mathbf{U}\mathbf{x}=\mathbf{y}</Math> for <Math mode="inline" xml:id="C3.S2.SS1.p3.m8">\mathbf{x}</Math> (back substitution).
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C3.S2.SS1.p4.s1">
+For more details see Golub and Van Loan (1996, pp. 87–100).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C3.S2.Px1">
+<title>Example</title>  
+ 
+<para xml:id="C3.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C3.S2.Px1.p1.s1">
+ <Math equation-number="3.2.6" mode="display" xml:id="C3.S2.E6">\begin{bmatrix}1&amp;2&amp;3\\ 2&amp;3&amp;1\\ 3&amp;1&amp;2\end{bmatrix}=\begin{bmatrix}1&amp;0&amp;0\\ 2&amp;1&amp;0\\ 3&amp;5&amp;1\end{bmatrix}\begin{bmatrix}1&amp;2&amp;3\\ 0&amp;-1&amp;-5\\ 0&amp;0&amp;18\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C3.S2.Px1.p1.s2">
+In solving <Math mode="inline" xml:id="C3.S2.Px1.p1.m1">\mathbf{A}\mathbf{x}=[1,1,1]^{\rm T}</Math> , we obtain by forward elimination <Math mode="inline" xml:id="C3.S2.Px1.p1.m2">\mathbf{y}=[1,-1,3]^{\rm T}</Math> , and by back substitution <Math mode="inline" xml:id="C3.S2.Px1.p1.m3">\mathbf{x}=[\frac{1}{6},\frac{1}{6},\frac{1}{6}]^{\rm T}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C3.S2.Px1.p2.s1">
+In practice, if any of the multipliers <Math mode="inline" xml:id="C3.S2.Px1.p2.m1">\ell_{jk}</Math> are unduly large in magnitude compared with unity, then Gaussian elimination is unstable.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C3.S2.Px1.p2.s2">
+To avoid instability the rows are interchanged at each elimination step in such a way that the absolute value of the element that is used as a divisor, thepivot element, is not less than that of the other available elements in its column.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C3.S2.Px1.p2.s3">
+Then <Math mode="inline" xml:id="C3.S2.Px1.p2.m2">\left|\ell_{jk}\right|\leq 1</Math> in all cases.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="13" xml:id="C3.S2.Px1.p2.s4">
+This modification is called Gaussian elimination with partial pivoting.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C3.S2.Px1.p3.s1">
+For more information on pivoting see Golub and Van Loan (1996, pp. 109–123).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C3.S2.Px2">
+<title>Iterative Refinement</title>  
+   
+<para xml:id="C3.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C3.S2.Px2.p1.s1">
+When the factorization (3.2.5) is available, the accuracy of the computed solution <Math mode="inline" xml:id="C3.S2.Px2.p1.m1">\mathbf{x}</Math> can be improved with little extra computation.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C3.S2.Px2.p1.s2">
+Because of rounding errors, the residual vector <Math mode="inline" xml:id="C3.S2.Px2.p1.m2">\mathbf{r}=\mathbf{b}-\mathbf{A}\mathbf{x}</Math> is nonzero as a rule.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C3.S2.Px2.p1.s3">
+We solve the system <Math mode="inline" xml:id="C3.S2.Px2.p1.m3">\mathbf{A}\delta\mathbf{x}=\mathbf{r}</Math> for <Math mode="inline" xml:id="C3.S2.Px2.p1.m4">\delta\mathbf{x}</Math> , taking advantage of the existing triangular decomposition of <Math mode="inline" xml:id="C3.S2.Px2.p1.m5">\mathbf{A}</Math> to obtain an improved solution <Math mode="inline" xml:id="C3.S2.Px2.p1.m6">\mathbf{x}+\delta\mathbf{x}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS2">
+<title>Gaussian Elimination for a Tridiagonal Matrix</title>           
+<para xml:id="C3.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C3.S2.SS2.p1.s1">
+Tridiagonal matrices are ones in which the only nonzero elements occur on the main diagonal and two adjacent diagonals.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="19" xml:id="C3.S2.SS2.p1.s2">
+Thus <Math equation-number="3.2.7" mode="display" xml:id="C3.S2.E7">\mathbf{A}=\begin{bmatrix}b_{1}&amp;c_{1}&amp;&amp;&amp;0\\ a_{2}&amp;b_{2}&amp;c_{2}&amp;&amp;\\ &amp;\ddots&amp;\ddots&amp;\ddots&amp;\\ &amp;&amp;a_{n-1}&amp;b_{n-1}&amp;c_{n-1}\\ 0&amp;&amp;&amp;a_{n}&amp;b_{n}\end{bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="20" xml:id="C3.S2.SS2.p1.s3">
+Assume that <Math mode="inline" xml:id="C3.S2.SS2.p1.m1">\mathbf{A}</Math> can be factored as in (3.2.5), but without partial pivoting.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="21" xml:id="C3.S2.SS2.p1.s4">
+Then <Math equation-number="3.2.8" mode="display" xml:id="C3.S2.E8">\mathbf{L}=\begin{bmatrix}1&amp;0&amp;&amp;&amp;0\\ \ell_{2}&amp;1&amp;0&amp;&amp;\\ &amp;\ddots&amp;\ddots&amp;\ddots&amp;\\ &amp;&amp;\ell_{n-1}&amp;1&amp;0\\ 0&amp;&amp;&amp;\ell_{n}&amp;1\end{bmatrix},</Math> <Math equation-number="3.2.9" mode="display" xml:id="C3.S2.E9">\mathbf{U}=\begin{bmatrix}d_{1}&amp;u_{1}&amp;&amp;&amp;0\\ 0&amp;d_{2}&amp;u_{2}&amp;&amp;\\ &amp;\ddots&amp;\ddots&amp;\ddots&amp;\\ &amp;&amp;0&amp;d_{n-1}&amp;u_{n-1}\\ 0&amp;&amp;&amp;0&amp;d_{n}\end{bmatrix},</Math> where <Math mode="inline" xml:id="C3.S2.SS2.p1.m2">u_{j}=c_{j}</Math> , <Math mode="inline" xml:id="C3.S2.SS2.p1.m3">j=1,2,\dots,n-1</Math> , <Math mode="inline" xml:id="C3.S2.SS2.p1.m4">d_{1}=b_{1}</Math> , and <Math equation-number="3.2.10" mode="display" xml:id="C3.S2.E10">\ell_{j}=a_{j}/d_{j-1},d_{j}=b_{j}-\ell_{j}c_{j-1}, , if j=2,\dots,n</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="22" xml:id="C3.S2.SS2.p1.s5">
+Forward elimination for solving <Math mode="inline" xml:id="C3.S2.SS2.p1.m5">\mathbf{A}\mathbf{x}=\mathbf{f}</Math> then becomes <Math mode="inline" xml:id="C3.S2.SS2.p1.m6">y_{1}=f_{1}</Math> , <Math equation-number="3.2.11" mode="display" xml:id="C3.S2.E11">y_{j}=f_{j}-\ell_{j}y_{j-1}, if j=2,\dots,n,</Math> and back substitution is <Math mode="inline" xml:id="C3.S2.SS2.p1.m7">x_{n}=y_{n}/d_{n}</Math> , followed by <Math equation-number="3.2.12" mode="display" xml:id="C3.S2.E12">x_{j}=(y_{j}-u_{j}x_{j+1})/d_{j}, if j=n-1,\dots,1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C3.S2.SS2.p2.s1">
+For more information on solving tridiagonal systems seeGolub and Van Loan (1996, pp. 152–160).
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS3">
+<title>Condition of Linear Systems</title>            
+<para xml:id="C3.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C3.S2.SS3.p1.s1">
+The <Math mode="inline" xml:id="C3.S2.SS3.p1.m1">p</Math> -norm of a vector <Math mode="inline" xml:id="C3.S2.SS3.p1.m2">\mathbf{x}=[x_{1},\dots,x_{n}]^{\rm T}</Math> is given by <Math equation-number="3.2.13" mode="display" xml:id="C3.S2.E13">\|\mathbf{x}\|_{p}=\left(\sum_{j=1}^{n}{\left|x_{j}\right|^{p}}\right)^{1/p}, if p=1,2,\dots, //// \|\mathbf{x}\|_{\infty}=\max_{1\leq j\leq n}\left|x_{j}\right|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C3.S2.SS3.p1.s2">
+The Euclidean norm is the case <Math mode="inline" xml:id="C3.S2.SS3.p1.m7">p=2</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="26" xml:id="C3.S2.SS3.p2.s1">
+The <Math mode="inline" xml:id="C3.S2.SS3.p2.m1">p</Math> -norm of a matrix <Math mode="inline" xml:id="C3.S2.SS3.p2.m2">\mathbf{A}=[a_{jk}]</Math> is <Math equation-number="3.2.14" mode="display" xml:id="C3.S2.E14">\|\mathbf{A}\|_{p}=\max_{\mathbf{x}\neq\boldsymbol{{0}}}\frac{\|\mathbf{A} \mathbf{x}\|_{p}}{\|\mathbf{x}\|_{p}}\,</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="27" xml:id="C3.S2.SS3.p2.s2">
+The cases <Math mode="inline" xml:id="C3.S2.SS3.p2.m3">p=1,2</Math> , and <Math mode="inline" xml:id="C3.S2.SS3.p2.m4">\infty</Math> are the most important: <Math equation-number="3.2.15" mode="display" xml:id="C3.S2.E15">\|\mathbf{A}\|_{1}=\max_{1\leq k\leq n}\sum_{j=1}^{n}\left|a_{jk}\right|,\|\mathbf{A}\|_{\infty}=\max_{1\leq j\leq n}\sum_{k=1}^{n}\left|a_{jk}\right|,\|\mathbf{A}\|_{2}=\sqrt{\rho(\mathbf{A}\mathbf{A}^{\rm T})},</Math> where <Math mode="inline" xml:id="C3.S2.SS3.p2.m7">\rho(\mathbf{A}\mathbf{A}^{\rm T})</Math> is the largest of the absolute values of the eigenvalues of the matrix <Math mode="inline" xml:id="C3.S2.SS3.p2.m8">\mathbf{A}\mathbf{A}^{\rm T}</Math> ; see §3.2(iv).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="28" xml:id="C3.S2.SS3.p2.s3">
+(We are assuming that the matrix <Math mode="inline" xml:id="C3.S2.SS3.p2.m9">\mathbf{A}</Math> is real; if not <Math mode="inline" xml:id="C3.S2.SS3.p2.m10">\mathbf{A}^{\rm T}</Math> is replaced by <Math mode="inline" xml:id="C3.S2.SS3.p2.m11">\mathbf{A}^{\rm H}</Math> , the transpose of the complex conjugate of <Math mode="inline" xml:id="C3.S2.SS3.p2.m12">\mathbf{A}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="29" xml:id="C3.S2.SS3.p2.s4">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C3.S2.SS3.p3.s1">
+The sensitivity of the solution vector <Math mode="inline" xml:id="C3.S2.SS3.p3.m1">\mathbf{x}</Math> in (3.2.1) to small perturbations in the matrix <Math mode="inline" xml:id="C3.S2.SS3.p3.m2">\mathbf{A}</Math> and the vector <Math mode="inline" xml:id="C3.S2.SS3.p3.m3">\mathbf{b}</Math> is measured by the condition number <Math equation-number="3.2.16" mode="display" xml:id="C3.S2.E16">\kappa(\mathbf{A})=\|\mathbf{A}\|_{p}\;\|\mathbf{A}^{-1}\|_{p},</Math> where <Math mode="inline" xml:id="C3.S2.SS3.p3.m4">\|\,\cdot\,\|_{p}</Math> is one of the matrix norms.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="31" xml:id="C3.S2.SS3.p3.s2">
+For any norm (3.2.14) we have <Math mode="inline" xml:id="C3.S2.SS3.p3.m5">\kappa(\mathbf{A})\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="32" xml:id="C3.S2.SS3.p3.s3">
+The larger the value <Math mode="inline" xml:id="C3.S2.SS3.p3.m6">\kappa(\mathbf{A})</Math> , the more ill-conditioned the system.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="33" xml:id="C3.S2.SS3.p4.s1">
+Let <Math mode="inline" xml:id="C3.S2.SS3.p4.m1">\mathbf{x}^{*}</Math> denote a computed solution of the system (3.2.1), with <Math mode="inline" xml:id="C3.S2.SS3.p4.m2">\mathbf{r}=\mathbf{b}-\mathbf{A}\mathbf{x}^{*}</Math> again denoting the residual.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="34" xml:id="C3.S2.SS3.p4.s2">
+Then we have the a posteriori error bound <Math equation-number="3.2.17" mode="display" xml:id="C3.S2.E17">\frac{\|\mathbf{x}^{*}-\mathbf{x}\|_{p}}{\|\mathbf{x}\|_{p}}\leq\kappa(\mathbf {A})\frac{\|\mathbf{r}\|_{p}}{\|\mathbf{b}\|_{p}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="35" xml:id="C3.S2.SS3.p5.s1">
+For further information see Brezinski (1999) andTrefethen and Bau (1997, Chapter 3).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS4">
+<title>Eigenvalues and Eigenvectors</title>           
+<para xml:id="C3.S2.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C3.S2.SS4.p1.s1">
+If <Math mode="inline" xml:id="C3.S2.SS4.p1.m1">\mathbf{A}</Math> is an <Math mode="inline" xml:id="C3.S2.SS4.p1.m2">n\times n</Math> matrix, then a real or complex number <Math mode="inline" xml:id="C3.S2.SS4.p1.m3">\lambda</Math> is called an eigenvalue of <Math mode="inline" xml:id="C3.S2.SS4.p1.m4">\mathbf{A}</Math> , and a nonzero vector <Math mode="inline" xml:id="C3.S2.SS4.p1.m5">\mathbf{x}</Math> a corresponding (right) eigenvector, if <Math equation-number="3.2.18" mode="display" xml:id="C3.S2.E18">\mathbf{A}\mathbf{x}=\lambda\mathbf{x}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C3.S2.SS4.p1.s2">
+A nonzero vector <Math mode="inline" xml:id="C3.S2.SS4.p1.m6">\mathbf{y}</Math> is called a left eigenvector of <Math mode="inline" xml:id="C3.S2.SS4.p1.m7">\mathbf{A}</Math> corresponding to the eigenvalue <Math mode="inline" xml:id="C3.S2.SS4.p1.m8">\lambda</Math> if <Math mode="inline" xml:id="C3.S2.SS4.p1.m9">\mathbf{y}^{\rm T}\mathbf{A}=\lambda\mathbf{y}^{\rm T}</Math> or, equivalently, <Math mode="inline" xml:id="C3.S2.SS4.p1.m10">\mathbf{A}^{\rm T}\mathbf{y}=\lambda\mathbf{y}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C3.S2.SS4.p1.s3">
+A normalized eigenvector has Euclidean norm 1; compare (3.2.13) with <Math mode="inline" xml:id="C3.S2.SS4.p1.m11">p=2</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C3.S2.SS4.p2.s1">
+The polynomial <Math equation-number="3.2.19" mode="display" xml:id="C3.S2.E19">p_{n}(\lambda)=\det[\lambda\mathbf{I}-\mathbf{A}]</Math> is called the characteristic polynomial of <Math mode="inline" xml:id="C3.S2.SS4.p2.m1">\mathbf{A}</Math> and its zeros are the eigenvalues of <Math mode="inline" xml:id="C3.S2.SS4.p2.m2">\mathbf{A}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C3.S2.SS4.p2.s2">
+The multiplicity of an eigenvalue is its multiplicity as a zero of the characteristic polynomial (§3.8(i)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C3.S2.SS4.p2.s3">
+To an eigenvalue of multiplicity <Math mode="inline" xml:id="C3.S2.SS4.p2.m3">m</Math> , there correspond <Math mode="inline" xml:id="C3.S2.SS4.p2.m4">m</Math> linearly independent eigenvectors provided that <Math mode="inline" xml:id="C3.S2.SS4.p2.m5">\mathbf{A}</Math> isnondefective, that is, <Math mode="inline" xml:id="C3.S2.SS4.p2.m6">\mathbf{A}</Math> has a complete set of <Math mode="inline" xml:id="C3.S2.SS4.p2.m7">n</Math> linearly independent eigenvectors.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS5">
+<title>Condition of Eigenvalues</title>          
+<para xml:id="C3.S2.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="42" xml:id="C3.S2.SS5.p1.s1">
+If <Math mode="inline" xml:id="C3.S2.SS5.p1.m1">\mathbf{A}</Math> is nondefective and <Math mode="inline" xml:id="C3.S2.SS5.p1.m2">\lambda</Math> is a simple zero of <Math mode="inline" xml:id="C3.S2.SS5.p1.m3">p_{n}(\lambda)</Math> , then the sensitivity of <Math mode="inline" xml:id="C3.S2.SS5.p1.m4">\lambda</Math> to small perturbations in the matrix <Math mode="inline" xml:id="C3.S2.SS5.p1.m5">\mathbf{A}</Math> is measured by the condition number <Math equation-number="3.2.20" mode="display" xml:id="C3.S2.E20">\kappa(\lambda)=\frac{1}{\left|\mathbf{y}^{\rm T}\mathbf{x}\right|},</Math> where <Math mode="inline" xml:id="C3.S2.SS5.p1.m7">\mathbf{x}</Math> and <Math mode="inline" xml:id="C3.S2.SS5.p1.m8">\mathbf{y}</Math> are the normalized right and lefteigenvectors of <Math mode="inline" xml:id="C3.S2.SS5.p1.m9">\mathbf{A}</Math> corresponding to the eigenvalue <Math mode="inline" xml:id="C3.S2.SS5.p1.m10">\lambda</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="43" xml:id="C3.S2.SS5.p1.s2">
+Because <Math mode="inline" xml:id="C3.S2.SS5.p1.m11">\left|\mathbf{y}^{\rm T}\mathbf{x}\right|=\left|\cos\theta\right|</Math> , where <Math mode="inline" xml:id="C3.S2.SS5.p1.m12">\theta</Math> is the angle between <Math mode="inline" xml:id="C3.S2.SS5.p1.m13">\mathbf{y}^{\rm T}</Math> and <Math mode="inline" xml:id="C3.S2.SS5.p1.m14">\mathbf{x}</Math> we always have <Math mode="inline" xml:id="C3.S2.SS5.p1.m15">\kappa(\lambda)\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="44" xml:id="C3.S2.SS5.p1.s3">
+When <Math mode="inline" xml:id="C3.S2.SS5.p1.m16">\mathbf{A}</Math> is a symmetric matrix, the left and right eigenvectors coincide, yielding <Math mode="inline" xml:id="C3.S2.SS5.p1.m17">\kappa(\lambda)=1</Math> , and the calculation of its eigenvalues is a well-conditioned problem.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS6">
+<title>Lanczos Tridiagonalization of a Symmetric Matrix</title>            
+<para xml:id="C3.S2.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="45" xml:id="C3.S2.SS6.p1.s1">
+Define the Lanczos vectors <Math mode="inline" xml:id="C3.S2.SS6.p1.m1">\mathbf{v}_{j}</Math> by <Math mode="inline" xml:id="C3.S2.SS6.p1.m2">\mathbf{v}_{0}=\boldsymbol{{0}}</Math> , a normalized vector <Math mode="inline" xml:id="C3.S2.SS6.p1.m3">\mathbf{v}_{1}</Math> (perhaps chosen randomly), and for <Math mode="inline" xml:id="C3.S2.SS6.p1.m4">j=1,2,\dots,n-1</Math> , <Math equation-number="3.2.21" mode="display" xml:id="C3.S2.E21">\beta_{j+1}\mathbf{v}_{j+1}=\mathbf{A}\mathbf{v}_{j}-\alpha_{j}\mathbf{v}_{j}- \beta_{j}\mathbf{v}_{j-1},\alpha_{j}=\mathbf{v}_{j}^{\rm T}\mathbf{A}\mathbf{v}_{j},\beta_{j+1}=\mathbf{v}_{j+1}^{\rm T}\mathbf{A}\mathbf{v}_{j}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="46" xml:id="C3.S2.SS6.p1.s2">
+Then all <Math mode="inline" xml:id="C3.S2.SS6.p1.m5">\mathbf{v}_{j}</Math> , <Math mode="inline" xml:id="C3.S2.SS6.p1.m6">1\leq j\leq n</Math> , are normalized and <Math mode="inline" xml:id="C3.S2.SS6.p1.m7">\mathbf{v}_{j}^{\rm T}\mathbf{v}_{k}=0</Math> for <Math mode="inline" xml:id="C3.S2.SS6.p1.m8">j,k=1,2,\dots,n</Math> , <Math mode="inline" xml:id="C3.S2.SS6.p1.m9">j\neq k</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="47" xml:id="C3.S2.SS6.p1.s3">
+The tridiagonal matrix <Math equation-number="3.2.22" mode="display" xml:id="C3.S2.E22">\mathbf{B}=\begin{bmatrix}\alpha_{1}&amp;\beta_{2}&amp;&amp;&amp;0\\ \beta_{2}&amp;\alpha_{2}&amp;\beta_{3}&amp;&amp;\\ &amp;\ddots&amp;\ddots&amp;\ddots&amp;\\ &amp;&amp;\beta_{n-1}&amp;\alpha_{n-1}&amp;\beta_{n}\\ 0&amp;&amp;&amp;\beta_{n}&amp;\alpha_{n}\end{bmatrix}</Math> has the same eigenvalues as <Math mode="inline" xml:id="C3.S2.SS6.p1.m10">\mathbf{A}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="48" xml:id="C3.S2.SS6.p1.s4">
+Its characteristic polynomial can be obtained from the recursion <Math equation-number="3.2.23" mode="display" xml:id="C3.S2.E23">p_{k+1}(\lambda)=(\lambda-\alpha_{k+1})p_{k}(\lambda)-\beta_{k+1}^{2}p_{k-1}( \lambda), if k=0,1,\dots,n-1,</Math> with <Math mode="inline" xml:id="C3.S2.SS6.p1.m11">p_{-1}(\lambda)=0</Math> , <Math mode="inline" xml:id="C3.S2.SS6.p1.m12">p_{0}(\lambda)=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C3.S2.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C3.S2.SS6.p2.s1">
+For numerical information see Stewart (2001, pp. 347–368).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C3.S2.SS7">
+<title>Computation of Eigenvalues</title>         
+ 
+<para xml:id="C3.S2.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C3.S2.SS7.p1.s1">
+Many methods are available for computing eigenvalues; seeGolub and Van Loan (1996, Chapters 7, 8),Trefethen and Bau (1997, Chapter 5), andWilkinson (1988, Chapters 8, 9).
+</sentence>
+
+</para>
+   
+</subsection>
+ 
+</section>

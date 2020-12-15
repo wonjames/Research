@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S2">
+<title>Differential Equations</title>        
+ 
+<subsection xml:id="C31.S2.SS1">
+<title>Heun’s Equation</title>        
+  
+<para xml:id="C31.S2.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S2.SS1.p1.s1">
+ <Math equation-number="31.2.1" mode="display" xml:id="C31.S2.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\left(\frac{\gamma}{z}+\frac{ \delta}{z-1}+\frac{\epsilon}{z-a}\right)\frac{\mathrm{d}w}{\mathrm{d}z}+\frac{ \alpha\beta z-q}{z(z-1)(z-a)}w=0, if \alpha+\beta+1=\gamma+\delta+\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C31.S2.SS1.p1.s2">
+This equation has regular singularities at <Math mode="inline" xml:id="C31.S2.SS1.p1.m1">0,1,a,\infty</Math> , with correspondingexponents <Math mode="inline" xml:id="C31.S2.SS1.p1.m2">\{0,1-\gamma\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m3">\{0,1-\delta\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m4">\{0,1-\epsilon\}</Math> , <Math mode="inline" xml:id="C31.S2.SS1.p1.m5">\{\alpha,\beta\}</Math> , respectively (§2.7(i)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C31.S2.SS1.p1.s3">
+All other homogeneous linear differential equations of the second order having four regular singularities in the extended complex plane, <Math mode="inline" xml:id="C31.S2.SS1.p1.m6">\mathbb{C}\cup\{\infty\}</Math> , can be transformed into (31.2.1).
+</sentence>
+
+</para>
+      
+<para xml:id="C31.S2.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C31.S2.SS1.p2.s1">
+The parameters play different roles: <Math mode="inline" xml:id="C31.S2.SS1.p2.m1">a</Math> is the singularity parameter; <Math mode="inline" xml:id="C31.S2.SS1.p2.m2">\alpha,\beta,\gamma,\delta,\epsilon</Math> are exponent parameters; <Math mode="inline" xml:id="C31.S2.SS1.p2.m3">q</Math> is theaccessory parameter.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C31.S2.SS1.p2.s2">
+The total number of free parameters is six.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS2">
+<title>Normal Form of Heun’s Equation</title>        
+  
+<para xml:id="C31.S2.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C31.S2.SS2.p1.s1">
+ <Math equation-number="31.2.2" mode="display" xml:id="C31.S2.E2">w(z)=z^{-\gamma/2}(z-1)^{-\delta/2}(z-a)^{-\epsilon/2}W(z),</Math> <Math equation-number="31.2.3" mode="display" xml:id="C31.S2.E3">\frac{{\mathrm{d}}^{2}W}{{\mathrm{d}z}^{2}}=\left(\frac{A}{z}+\frac{B}{z-1}+ \frac{C}{z-a}+\frac{D}{z^{2}}+\frac{E}{(z-1)^{2}}+\frac{F}{(z-a)^{2}}\right)W, if A+B+C=0,</Math> <Math equation-number="31.2.4" mode="display" xml:id="C31.S2.E4">A=-\frac{\gamma\delta}{2}-\frac{\gamma\epsilon}{2a}+\frac{q}{a},B=\frac{\gamma\delta}{2}-\frac{\delta\epsilon}{2(a-1)}-\frac{q-\alpha\beta}{a- 1},C=\frac{\gamma\epsilon}{2a}+\frac{\delta\epsilon}{2(a-1)}-\frac{a\alpha\beta-q }{a(a-1)},D=\tfrac{1}{2}\gamma\left(\tfrac{1}{2}\gamma-1\right),E=\tfrac{1}{2}\delta\left(\tfrac{1}{2}\delta-1\right),F=\tfrac{1}{2}\epsilon\left(\tfrac{1}{2}\epsilon-1\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS3">
+<title>Trigonometric Form</title>          
+<para xml:id="C31.S2.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C31.S2.SS3.p1.s1">
+ <Math equation-number="31.2.5" mode="display" xml:id="C31.S2.E5">z={\sin^{2}}\theta,</Math> <Math equation-number="31.2.6" mode="display" xml:id="C31.S2.E6">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\theta}^{2}}+\left({(2\gamma-1)\cot\theta- (2\delta-1)\tan\theta}-\frac{\epsilon\sin\left(2\theta\right)}{a-{\sin^{2}} \theta}\right)\frac{\mathrm{d}w}{\mathrm{d}\theta}+4\frac{\alpha\beta{\sin^{2} }\theta-q}{a-{\sin^{2}}\theta}w=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS4">
+<title>Doubly-Periodic Forms</title>        
+ 
+<paragraph xml:id="C31.S2.Px1">
+<title>Jacobi’s Elliptic Form</title>     
+<para xml:id="C31.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C31.S2.Px1.p1.s1">
+With the notation of §22.2 let <Math equation-number="31.2.7" mode="display" xml:id="C31.S2.E7">a=k^{-2},z={\operatorname{sn}^{2}}\left(\zeta,k\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C31.S2.Px1.p1.s2">
+Then (suppressing the parameter <Math mode="inline" xml:id="C31.S2.Px1.p1.m1">k</Math> ) <Math equation-number="31.2.8" mode="display" xml:id="C31.S2.E8">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}\zeta}^{2}}+\left((2\gamma-1)\frac{ \operatorname{cn}\zeta\operatorname{dn}\zeta}{\operatorname{sn}\zeta}-(2\delta -1)\frac{\operatorname{sn}\zeta\operatorname{dn}\zeta}{\operatorname{cn}\zeta} -(2\epsilon-1)k^{2}\frac{\operatorname{sn}\zeta\operatorname{cn}\zeta}{ \operatorname{dn}\zeta}\right)\frac{\mathrm{d}w}{\mathrm{d}\zeta}+4k^{2}( \alpha\beta{\operatorname{sn}^{2}}\zeta-q)w=0</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px2">
+<title>Weierstrass’s Form</title>     
+<para xml:id="C31.S2.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C31.S2.Px2.p1.s1">
+With the notation of §§19.2(ii) and 23.2 let <Math equation-number="31.2.9" mode="display" xml:id="C31.S2.E9">k^{2}=(e_{2}-e_{3})/(e_{1}-e_{3}),\zeta=\mathrm{i}{K^{\prime}}+\xi(e_{1}-e_{3})^{1/2},e_{1}=\wp\left(\omega_{1}\right),e_{2}=\wp\left(\omega_{2}\right),e_{3}=\wp\left(\omega_{3}\right),e_{1}+e_{2}+e_{3}=0,</Math> where <Math mode="inline" xml:id="C31.S2.Px2.p1.m1">2\omega_{1}</Math> and <Math mode="inline" xml:id="C31.S2.Px2.p1.m2">2\omega_{3}</Math> with <Math mode="inline" xml:id="C31.S2.Px2.p1.m3">\Im(\omega_{3}/\omega_{1})&gt;0</Math> are generators of the lattice <Math mode="inline" xml:id="C31.S2.Px2.p1.m4">\mathbb{L}</Math> for <Math mode="inline" xml:id="C31.S2.Px2.p1.m5">\wp\left(z|\mathbb{L}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C31.S2.Px2.p1.s2">
+Then <Math equation-number="31.2.10" mode="display" xml:id="C31.S2.E10">w(\xi)=\left(\wp\left(\xi\right)-e_{3}\right)^{(1-2\gamma)/4}\left(\wp\left( \xi\right)-e_{2}\right)^{(1-2\delta)/4}\*\left(\wp\left(\xi\right)-e_{1}\right )^{(1-2\epsilon)/4}W(\xi),</Math> where <Math mode="inline" xml:id="C31.S2.Px2.p1.m6">W(\xi)</Math> satisfies <Math equation-number="31.2.11" mode="display" xml:id="C31.S2.E11">\ifrac{{\mathrm{d}}^{2}W}{{\mathrm{d}\xi}^{2}}+\left(H+b_{0}\wp\left(\xi\right )+b_{1}\wp\left(\xi+\omega_{1}\right)+b_{2}\wp\left(\xi+\omega_{2}\right)+b_{3 }\wp\left(\xi+\omega_{3}\right)\right)W=0,</Math> with <Math equation-number="31.2.12" mode="display" xml:id="C31.S2.E12">b_{0}=4\alpha\beta-(\gamma+\delta+\epsilon-\tfrac{1}{2})(\gamma+\delta+ \epsilon-\tfrac{3}{2}),b_{1}=-(\epsilon-\tfrac{1}{2})(\epsilon-\tfrac{3}{2}),b_{2}=-(\delta-\tfrac{1}{2})(\delta-\tfrac{3}{2}),b_{3}=-(\gamma-\tfrac{1}{2})(\gamma-\tfrac{3}{2}),H=e_{1}(\gamma+\delta-1)^{2}+e_{2}(\gamma+\epsilon-1)^{2}+e_{3}(\delta+ \epsilon-1)^{2}-4\alpha\beta e_{3}-4q(e_{2}-e_{3})</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S2.SS5">
+<title>Heun’s Equation Automorphisms</title>        
+  
+<paragraph xml:id="C31.S2.Px3">
+<title><Math mode="inline" xml:id="C31.S2.Px3.m1">F</Math>-Homotopic Transformations</title>    
+<para xml:id="C31.S2.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C31.S2.Px3.p1.s1">
+ <Math mode="inline" xml:id="C31.S2.Px3.p1.m1">w(z)=z^{1-\gamma}w_{1}(z)</Math> satisfies (31.2.1) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m2">w_{1}</Math> is a solution of (31.2.1) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m3">q_{1}=q+(a\delta+\epsilon)(1-\gamma)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m4">\alpha_{1}=\alpha+1-\gamma</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m5">\beta_{1}=\beta+1-\gamma</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m6">\gamma_{1}=2-\gamma</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C31.S2.Px3.p1.s2">
+Next, <Math mode="inline" xml:id="C31.S2.Px3.p1.m7">w(z)=(z-1)^{1-\delta}w_{2}(z)</Math> satisfies (31.2.1) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m8">w_{2}</Math> is a solution of (31.2.1) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m9">q_{2}=q+a\gamma(1-\delta)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m10">\alpha_{2}=\alpha+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m11">\beta_{2}=\beta+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m12">\delta_{2}=2-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="14" xml:id="C31.S2.Px3.p1.s3">
+Lastly, <Math mode="inline" xml:id="C31.S2.Px3.p1.m13">w(z)=(z-a)^{1-\epsilon}w_{3}(z)</Math> satisfies(31.2.1) if <Math mode="inline" xml:id="C31.S2.Px3.p1.m14">w_{3}</Math> is a solution of (31.2.1) with transformed parameters <Math mode="inline" xml:id="C31.S2.Px3.p1.m15">q_{3}=q+\gamma(1-\epsilon)</Math> ; <Math mode="inline" xml:id="C31.S2.Px3.p1.m16">\alpha_{3}=\alpha+1-\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m17">\beta_{3}=\beta+1-\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px3.p1.m18">\epsilon_{3}=2-\epsilon</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="15" xml:id="C31.S2.Px3.p1.s4">
+By composing these three steps, there result <Math mode="inline" xml:id="C31.S2.Px3.p1.m19">2^{3}=8</Math> possible transformations of the dependent variable (including the identity transformation) that preserve the form of (31.2.1).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px4">
+<title>Homographic Transformations</title>    
+<para xml:id="C31.S2.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C31.S2.Px4.p1.s1">
+There are <Math mode="inline" xml:id="C31.S2.Px4.p1.m1">4!=24</Math> homographies <Math mode="inline" xml:id="C31.S2.Px4.p1.m2">\tilde{z}(z)=(Az+B)/(Cz+D)</Math> that take <Math mode="inline" xml:id="C31.S2.Px4.p1.m3">0,1,a,\infty</Math> to some permutation of <Math mode="inline" xml:id="C31.S2.Px4.p1.m4">0,1,a^{\prime},\infty</Math> , where <Math mode="inline" xml:id="C31.S2.Px4.p1.m5">a^{\prime}</Math> may differ from <Math mode="inline" xml:id="C31.S2.Px4.p1.m6">a</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C31.S2.Px4.p1.s2">
+If <Math mode="inline" xml:id="C31.S2.Px4.p1.m7">\tilde{z}=\tilde{z}(z)</Math> is one of the <Math mode="inline" xml:id="C31.S2.Px4.p1.m8">3!=6</Math> homographies that map <Math mode="inline" xml:id="C31.S2.Px4.p1.m9">\infty</Math> to <Math mode="inline" xml:id="C31.S2.Px4.p1.m10">\infty</Math> , then <Math mode="inline" xml:id="C31.S2.Px4.p1.m11">w(z)=\tilde{w}(\tilde{z})</Math> satisfies (31.2.1) if <Math mode="inline" xml:id="C31.S2.Px4.p1.m12">\tilde{w}(\tilde{z})</Math> is a solution of (31.2.1) with <Math mode="inline" xml:id="C31.S2.Px4.p1.m13">z</Math> replaced by <Math mode="inline" xml:id="C31.S2.Px4.p1.m14">\tilde{z}</Math> and appropriately transformed parameters.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C31.S2.Px4.p1.s3">
+For example, if <Math mode="inline" xml:id="C31.S2.Px4.p1.m15">\tilde{z}=z/a</Math> , then the parameters are <Math mode="inline" xml:id="C31.S2.Px4.p1.m16">\tilde{a}=1/a</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m17">\tilde{q}=q/a</Math> ; <Math mode="inline" xml:id="C31.S2.Px4.p1.m18">\tilde{\delta}=\epsilon</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m19">\tilde{\epsilon}=\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C31.S2.Px4.p1.s4">
+If <Math mode="inline" xml:id="C31.S2.Px4.p1.m20">\tilde{z}=\tilde{z}(z)</Math> is one of the <Math mode="inline" xml:id="C31.S2.Px4.p1.m21">4!-3!=1</Math> 8 homographies that do not map <Math mode="inline" xml:id="C31.S2.Px4.p1.m22">\infty</Math> to <Math mode="inline" xml:id="C31.S2.Px4.p1.m23">\infty</Math> , then an appropriate prefactor must be included on the right-hand side.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="20" xml:id="C31.S2.Px4.p1.s5">
+For example, <Math mode="inline" xml:id="C31.S2.Px4.p1.m24">w(z)=(1-z)^{-\alpha}\tilde{w}(z/(z-1))</Math> , which arises from <Math mode="inline" xml:id="C31.S2.Px4.p1.m25">\tilde{z}=z/(z-1)</Math> , satisfies (31.2.1) if <Math mode="inline" xml:id="C31.S2.Px4.p1.m26">\tilde{w}(\tilde{z})</Math> is a solution of (31.2.1) with <Math mode="inline" xml:id="C31.S2.Px4.p1.m27">z</Math> replaced by <Math mode="inline" xml:id="C31.S2.Px4.p1.m28">\tilde{z}</Math> and transformed parameters <Math mode="inline" xml:id="C31.S2.Px4.p1.m29">\tilde{a}=a/(a-1)</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m30">\tilde{q}=-(q-a\alpha\gamma)/(a-1)</Math> ; <Math mode="inline" xml:id="C31.S2.Px4.p1.m31">\tilde{\beta}=\alpha+1-\delta</Math> , <Math mode="inline" xml:id="C31.S2.Px4.p1.m32">\tilde{\delta}=\alpha+1-\beta</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S2.Px5">
+<title>Composite Transformations</title>    
+<para xml:id="C31.S2.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C31.S2.Px5.p1.s1">
+There are <Math mode="inline" xml:id="C31.S2.Px5.p1.m1">8\cdot 24=192</Math> automorphisms of equation (31.2.1) by compositions of <Math mode="inline" xml:id="C31.S2.Px5.p1.m2">F</Math> -homotopic and homographic transformations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C31.S2.Px5.p1.s2">
+Each is a substitution of dependent and/or independent variables that preserves the form of (31.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C31.S2.Px5.p1.s3">
+Except for the identity automorphism, each alters the parameters.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S63">
+<title>Recurrence Relations and Derivatives</title>        
+ 
+<subsection xml:id="C10.S63.SS1">
+<title><Math mode="inline" xml:id="C10.S63.SS1.m1">\operatorname{ber}_{\nu}x</Math>, <Math mode="inline" xml:id="C10.S63.SS1.m2">\operatorname{bei}_{\nu}x</Math>,<Math mode="inline" xml:id="C10.S63.SS1.m3">\operatorname{ker}_{\nu}x</Math>, <Math mode="inline" xml:id="C10.S63.SS1.m4">\operatorname{kei}_{\nu}x</Math></title>          
+<para xml:id="C10.S63.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S63.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C10.S63.SS1.p1.m1">f_{\nu}(x)</Math> , <Math mode="inline" xml:id="C10.S63.SS1.p1.m2">g_{\nu}(x)</Math> denote any one of the ordered pairs: <Math equation-number="10.63.1" mode="display" xml:id="C10.S63.E1">\operatorname{ber}_{\nu}x,\operatorname{bei}_{\nu}x;\operatorname{bei}_{\nu}x,-\operatorname{ber}_{\nu}x;\operatorname{ker}_{\nu}x,\operatorname{kei}_{\nu}x;\operatorname{kei}_{\nu}x,-\operatorname{ker}_{\nu}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S63.SS1.p1.s2">
+Then <Math equation-number="10.63.2" mode="display" xml:id="C10.S63.E2">f_{\nu-1}(x)+f_{\nu+1}(x)=-(\nu\sqrt{2}/x)\left(f_{\nu}(x)-g_{\nu}(x)\right),f_{\nu+1}(x)+g_{\nu+1}(x)-f_{\nu-1}(x)-g_{\nu-1}(x)=2\sqrt{2}f_{\nu}^{\prime}( x),f_{\nu}^{\prime}(x)=-(1/\sqrt{2})\left(f_{\nu-1}(x)+g_{\nu-1}(x)\right)-(\nu/x )f_{\nu}(x),f_{\nu}^{\prime}(x)=(1/\sqrt{2})\left(f_{\nu+1}(x)+g_{\nu+1}(x)\right)+(\nu/x) f_{\nu}(x)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C10.S63.SS1.p1.s3">
+<Math equation-number="10.63.3" mode="display" xml:id="C10.S63.E3">\sqrt{2}\operatorname{ber}'x=\operatorname{ber}_{1}x+\operatorname{bei}_{1}x,\sqrt{2}\operatorname{bei}'x=-\operatorname{ber}_{1}x+\operatorname{bei}_{1}x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C10.S63.SS1.p1.s4">
+<Math equation-number="10.63.4" mode="display" xml:id="C10.S63.E4">\sqrt{2}\operatorname{ker}'x=\operatorname{ker}_{1}x+\operatorname{kei}_{1}x,\sqrt{2}\operatorname{kei}'x=-\operatorname{ker}_{1}x+\operatorname{kei}_{1}x</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S63.SS2">
+<title>Cross-Products</title>        
+  
+<para xml:id="C10.S63.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C10.S63.SS2.p1.s1">
+Let <Math equation-number="10.63.5" mode="display" xml:id="C10.S63.E5">p_{\nu}={\operatorname{ber}_{\nu}^{2}}x+{\operatorname{bei}_{\nu}^{2}}x,q_{\nu}=\operatorname{ber}_{\nu}x\operatorname{bei}_{\nu}'x-\operatorname{ber} _{\nu}'x\operatorname{bei}_{\nu}x,r_{\nu}=\operatorname{ber}_{\nu}x\operatorname{ber}_{\nu}'x+\operatorname{bei} _{\nu}x\operatorname{bei}_{\nu}'x,s_{\nu}=\left(\operatorname{ber}_{\nu}'x\right)^{2}+\left(\operatorname{bei}_{ \nu}'x\right)^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C10.S63.SS2.p1.s2">
+Then <Math equation-number="10.63.6" mode="display" xml:id="C10.S63.E6">p_{\nu+1}=p_{\nu-1}-(4\nu/x)r_{\nu},q_{\nu+1}=-(\nu/x)p_{\nu}+r_{\nu}=-q_{\nu-1}+2r_{\nu},r_{\nu+1}=-((\nu+1)/x)p_{\nu+1}+q_{\nu},s_{\nu}=\tfrac{1}{2}p_{\nu+1}+\tfrac{1}{2}p_{\nu-1}-(\nu^{2}/x^{2})p_{\nu},</Math> and <Math equation-number="10.63.7" mode="display" xml:id="C10.S63.E7">p_{\nu}s_{\nu}=r_{\nu}^{2}+q_{\nu}^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C10.S63.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S63.SS2.p2.s1">
+Equations (10.63.6) and (10.63.7) also hold when the symbols <Math mode="inline" xml:id="C10.S63.SS2.p2.m1">\operatorname{ber}</Math> and <Math mode="inline" xml:id="C10.S63.SS2.p2.m2">\operatorname{bei}</Math> in (10.63.5) are replaced throughout by <Math mode="inline" xml:id="C10.S63.SS2.p2.m3">\operatorname{ker}</Math> and <Math mode="inline" xml:id="C10.S63.SS2.p2.m4">\operatorname{kei}</Math> , respectively.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

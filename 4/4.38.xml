@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C4.S38">
+<title>Inverse Hyperbolic Functions: Further Properties</title>         
+<subsection xml:id="C4.S38.SS1">
+<title>Power Series</title>          
+<para xml:id="C4.S38.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C4.S38.SS1.p1.s1">
+ <Math equation-number="4.38.1" mode="display" xml:id="C4.S38.E1">\operatorname{arcsinh}z=z-\frac{1}{2}\frac{z^{3}}{3}+\frac{1\cdot 3}{2\cdot 4} \frac{z^{5}}{5}-\frac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6}\frac{z^{7}}{7}+\cdots, if |z|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C4.S38.SS1.p1.s2">
+<Math equation-number="4.38.2" mode="display" xml:id="C4.S38.E2">\operatorname{arcsinh}z=\ln\left(2z\right)+\frac{1}{2}\frac{1}{2z^{2}}-\frac{1 \cdot 3}{2\cdot 4}\frac{1}{4z^{4}}+\frac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6} \frac{1}{6z^{6}}-\cdots, if \Re z&gt;0, |z|&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C4.S38.SS1.p1.s3">
+<Math equation-number="4.38.3" mode="display" xml:id="C4.S38.E3">\operatorname{arccosh}z=\ln\left(2z\right)-\frac{1}{2}\frac{1}{2z^{2}}-\frac{1 \cdot 3}{2\cdot 4}\frac{1}{4z^{4}}-\frac{1\cdot 3\cdot 5}{2\cdot 4\cdot 6} \frac{1}{6z^{6}}-\cdots, if |z|&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C4.S38.SS1.p1.s4">
+<Math equation-number="4.38.4" mode="display" xml:id="C4.S38.E4">\operatorname{arccosh}z=(2(z-1))^{1/2}\*{\left(1+\sum_{n=1}^{\infty}(-1)^{n} \frac{1\cdot 3\cdot 5\cdots(2n-1)}{2^{2n}n!(2n+1)}(z-1)^{n}\right)}, if \Re z&gt;0, |z-1|\leq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C4.S38.SS1.p1.s5">
+ <Math equation-number="4.38.5" mode="display" xml:id="C4.S38.E5">\operatorname{arctanh}z=z+\frac{z^{3}}{3}+\frac{z^{5}}{5}+\frac{z^{7}}{7}+\cdots, if \left|z\right|\leq 1, z\neq\pm 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C4.S38.SS1.p1.s6">
+<Math equation-number="4.38.6" mode="display" xml:id="C4.S38.E6">\operatorname{arctanh}z=\pm\mathrm{i}\frac{\pi}{2}+\frac{1}{z}+\frac{1}{3z^{3} }+\frac{1}{5z^{5}}+\cdots, if \Im z\gtrless 0, \left|z\right|\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C4.S38.SS1.p1.s7">
+<Math equation-number="4.38.7" mode="display" xml:id="C4.S38.E7">\operatorname{arctanh}z=\frac{z}{1-z^{2}}\*{\left(1+\frac{2}{3}\frac{z^{2}}{z^ {2}-1}+\frac{2\cdot 4}{3\cdot 5}\left(\frac{z^{2}}{z^{2}-1}\right)^{2}+\cdots \right)}, if \Re(z^{2})&lt;\tfrac{1}{2},</Math> which requires <Math mode="inline" xml:id="C4.S38.SS1.p1.m1">z</Math> <Math mode="inline" xml:id="C4.S38.SS1.p1.m2">(=x+iy)</Math> to lie between the two rectangular hyperbolas given by <Math equation-number="4.38.8" mode="display" xml:id="C4.S38.E8">x^{2}-y^{2}=\tfrac{1}{2}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S38.SS2">
+<title>Derivatives</title>          
+<para xml:id="C4.S38.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C4.S38.SS2.p1.s1">
+In the following equations square roots have their principal values.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C4.S38.SS2.p1.s2">
+<Math equation-number="4.38.9" mode="display" xml:id="C4.S38.E9">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arcsinh}z=(1+z^{2})^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C4.S38.SS2.p1.s3">
+<Math equation-number="4.38.10" mode="display" xml:id="C4.S38.E10">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arccosh}z=\pm(z^{2}-1)^{-1/2}, if \Re z\gtrless 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C4.S38.SS2.p1.s4">
+<Math equation-number="4.38.11" mode="display" xml:id="C4.S38.E11">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arctanh}z=\frac{1}{1-z^{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C4.S38.SS2.p1.s5">
+<Math equation-number="4.38.12" mode="display" xml:id="C4.S38.E12">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arccsch}z=\mp\frac{1}{z(1+z^{2})^{ 1/2}}, if \Re z\gtrless 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="13" xml:id="C4.S38.SS2.p1.s6">
+<Math equation-number="4.38.13" mode="display" xml:id="C4.S38.E13">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arcsech}z=-\frac{1}{z(1-z^{2})^{1/ 2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="14" xml:id="C4.S38.SS2.p1.s7">
+<Math equation-number="4.38.14" mode="display" xml:id="C4.S38.E14">\frac{\mathrm{d}}{\mathrm{d}z}\operatorname{arccoth}z=\frac{1}{1-z^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C4.S38.SS3">
+<title>Addition Formulas</title>          
+<para xml:id="C4.S38.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C4.S38.SS3.p1.s1">
+ <Math equation-number="4.38.15" mode="display" xml:id="C4.S38.E15">\operatorname{Arcsinh}u\pm\operatorname{Arcsinh}v=\operatorname{Arcsinh}\left( u(1+v^{2})^{1/2}\pm v(1+u^{2})^{1/2}\right),</Math> <Math equation-number="4.38.16" mode="display" xml:id="C4.S38.E16">\operatorname{Arccosh}u\pm\operatorname{Arccosh}v=\operatorname{Arccosh}\left( uv\pm((u^{2}-1)(v^{2}-1))^{1/2}\right),</Math> <Math equation-number="4.38.17" mode="display" xml:id="C4.S38.E17">\operatorname{Arctanh}u\pm\operatorname{Arctanh}v=\operatorname{Arctanh}\left( \frac{u\pm v}{1\pm uv}\right),</Math> <Math equation-number="4.38.18" mode="display" xml:id="C4.S38.E18">\operatorname{Arcsinh}u\pm\operatorname{Arccosh}v=\operatorname{Arcsinh}\left( uv\pm((1+u^{2})(v^{2}-1))^{1/2}\right)=\operatorname{Arccosh}\left(v(1+u^{2})^ {1/2}\pm u(v^{2}-1)^{1/2}\right),</Math> <Math equation-number="4.38.19" mode="display" xml:id="C4.S38.E19">\operatorname{Arctanh}u\pm\operatorname{Arccoth}v=\operatorname{Arctanh}\left( \frac{uv\pm 1}{v\pm u}\right)=\operatorname{Arccoth}\left(\frac{v\pm u}{uv\pm 1 }\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C4.S38.SS3.p1.s2">
+The above equations are interpreted in the sense that every value of the left-hand side is a value of the right-hand side and vice-versa.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C4.S38.SS3.p1.s3">
+All square roots have either possible value.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

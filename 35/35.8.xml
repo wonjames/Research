@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S8">
+<title>Generalized Hypergeometric Functions of Matrix Argument</title>          
+<subsection xml:id="C35.S8.SS1">
+<title>Definition</title>          
+<para xml:id="C35.S8.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S8.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.SS1.p1.m1">p</Math> and <Math mode="inline" xml:id="C35.S8.SS1.p1.m2">q</Math> be nonnegative integers; <Math mode="inline" xml:id="C35.S8.SS1.p1.m3">a_{1},\dots,a_{p}\in\mathbb{C}</Math> ; <Math mode="inline" xml:id="C35.S8.SS1.p1.m4">b_{1},\dots,b_{q}\in\mathbb{C}</Math> ; <Math mode="inline" xml:id="C35.S8.SS1.p1.m5">-b_{j}+\tfrac{1}{2}(k+1)\notin\mathbb{N}</Math> , <Math mode="inline" xml:id="C35.S8.SS1.p1.m6">1\leq j\leq q</Math> , <Math mode="inline" xml:id="C35.S8.SS1.p1.m7">1\leq k\leq m</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C35.S8.SS1.p1.s2">
+The generalized hypergeometric function <Math mode="inline" xml:id="C35.S8.SS1.p1.m8">{{}_{p}F_{q}}</Math> with matrix argument <Math mode="inline" xml:id="C35.S8.SS1.p1.m9">\mathbf{T}\in\boldsymbol{\mathcal{S}}</Math> , numerator parameters <Math mode="inline" xml:id="C35.S8.SS1.p1.m10">a_{1},\dots,a_{p}</Math> , and denominator parameters <Math mode="inline" xml:id="C35.S8.SS1.p1.m11">b_{1},\dots,b_{q}</Math> is <Math equation-number="35.8.1" mode="display" xml:id="C35.S8.E1">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\mathbf{T}\right )=\sum_{k=0}^{\infty}\frac{1}{k!}\sum_{|\kappa|=k}\frac{{\left[a_{1}\right]_{ \kappa}}\cdots{\left[a_{p}\right]_{\kappa}}}{{\left[b_{1}\right]_{\kappa}} \cdots{\left[b_{q}\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S8.Px1">
+<title>Convergence Properties</title>    
+<para xml:id="C35.S8.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C35.S8.Px1.p1.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p1.m1">-a_{j}+\tfrac{1}{2}(k+1)\in\mathbb{N}</Math> for some <Math mode="inline" xml:id="C35.S8.Px1.p1.m2">j,k</Math> satisfying <Math mode="inline" xml:id="C35.S8.Px1.p1.m3">1\leq j\leq p</Math> , <Math mode="inline" xml:id="C35.S8.Px1.p1.m4">1\leq k\leq m</Math> , then the series expansion (35.8.1) terminates.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S8.Px1.p2.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p2.m1">p\leq q</Math> , then (35.8.1) converges for all <Math mode="inline" xml:id="C35.S8.Px1.p2.m2">\mathbf{T}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C35.S8.Px1.p3.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p3.m1">p=q+1</Math> , then (35.8.1) converges absolutely for <Math mode="inline" xml:id="C35.S8.Px1.p3.m2">||\mathbf{T}||&lt;1</Math> and diverges for <Math mode="inline" xml:id="C35.S8.Px1.p3.m3">||\mathbf{T}||&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.Px1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C35.S8.Px1.p4.s1">
+If <Math mode="inline" xml:id="C35.S8.Px1.p4.m1">p&gt;q+1</Math> , then (35.8.1) diverges unless it terminates.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS2">
+<title>Relations to Other Functions</title>          
+<para xml:id="C35.S8.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C35.S8.SS2.p1.s1">
+ <Math equation-number="35.8.2" mode="display" xml:id="C35.S8.E2">{{}_{0}F_{0}}\left({-\atop-};\mathbf{T}\right)=\mathrm{etr}\left(\mathbf{T} \right), if \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C35.S8.SS2.p1.s2">
+<Math equation-number="35.8.3" mode="display" xml:id="C35.S8.E3">{{}_{2}F_{1}}\left({a,b\atop b};\mathbf{T}\right)={{}_{1}F_{0}}\left({a\atop-} ;\mathbf{T}\right)=|\mathbf{I}-\mathbf{T}|^{-a}, if \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C35.S8.SS2.p1.s3">
+<Math equation-number="35.8.4" mode="display" xml:id="C35.S8.E4">A_{\nu}\left(\mathbf{T}\right)=\dfrac{1}{\Gamma_{m}\left(\nu+\frac{1}{2}(m+1) \right)}{{}_{0}F_{1}}\left({-\atop\nu+\frac{1}{2}(m+1)};-\mathbf{T}\right), if \mathbf{T}\in\boldsymbol{\mathcal{S}}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS3">
+<title><Math mode="inline" xml:id="C35.S8.SS3.m1">{{}_{3}F_{2}}</Math> Case</title>          
+<paragraph xml:id="C35.S8.Px2">
+<title>Kummer Transformation</title>     
+<para xml:id="C35.S8.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C35.S8.Px2.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.Px2.p1.m1">c=b_{1}+b_{2}-a_{1}-a_{2}-a_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C35.S8.Px2.p1.s2">
+Then <Math equation-number="35.8.5" mode="display" xml:id="C35.S8.E5">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{2}\right)\Gamma_{m}\left(c\right)}{\Gamma_{m}\left(b_ {2}-a_{3}\right)\Gamma_{m}\left(c+a_{3}\right)}\*{{}_{3}F_{2}}\left({b_{1}-a_{ 1},b_{1}-a_{2},a_{3}\atop b_{1},c+a_{3}};\mathbf{I}\right), if \Re(b_{2}),\Re(c)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px3">
+<title>Pfaff–Saalschutz Formula</title>     
+<para xml:id="C35.S8.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C35.S8.Px3.p1.s1">
+Let <Math mode="inline" xml:id="C35.S8.Px3.p1.m1">a_{1}+a_{2}+a_{3}+\frac{1}{2}(m+1)=b_{1}+b_{2}</Math> ; one of the <Math mode="inline" xml:id="C35.S8.Px3.p1.m2">a_{j}</Math> be a negative integer; <Math mode="inline" xml:id="C35.S8.Px3.p1.m3">\Re(b_{1}-a_{1})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m4">\Re(b_{1}-a_{2})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m5">\Re(b_{1}-a_{3})</Math> , <Math mode="inline" xml:id="C35.S8.Px3.p1.m6">\Re(b_{1}-a_{1}-a_{2}-a_{3})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C35.S8.Px3.p1.s2">
+Then <Math equation-number="35.8.6" mode="display" xml:id="C35.S8.E6">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{1}-a_{1}\right)\Gamma_{m}\left(b_{1}-a_{2}\right)}{ \Gamma_{m}\left(b_{1}\right)\Gamma_{m}\left(b_{1}-a_{1}-a_{2}\right)}\*\frac{ \Gamma_{m}\left(b_{1}-a_{3}\right)\Gamma_{m}\left(b_{1}-a_{1}-a_{2}-a_{3} \right)}{\Gamma_{m}\left(b_{1}-a_{1}-a_{3}\right)\Gamma_{m}\left(b_{1}-a_{2}-a _{3}\right)}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px4">
+<title>Thomae Transformation</title>    
+ 
+<para xml:id="C35.S8.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C35.S8.Px4.p1.s1">
+Again, let <Math mode="inline" xml:id="C35.S8.Px4.p1.m1">c=b_{1}+b_{2}-a_{1}-a_{2}-a_{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C35.S8.Px4.p1.s2">
+Then <Math equation-number="35.8.7" mode="display" xml:id="C35.S8.E7">{{}_{3}F_{2}}\left({a_{1},a_{2},a_{3}\atop b_{1},b_{2}};\mathbf{I}\right)= \frac{\Gamma_{m}\left(b_{1}\right)\Gamma_{m}\left(b_{2}\right)\Gamma\left(c \right)}{\Gamma_{m}\left(a_{1}\right)\Gamma_{m}\left(c+a_{2}\right)\Gamma\left (c+a_{3}\right)}\*{{}_{3}F_{2}}\left({b_{1}-a_{1},b_{2}-a_{2},c\atop c+a_{2},c +a_{3}};\mathbf{I}\right), if \Re(b_{1}), \Re(b_{2}), \Re(c)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS4">
+<title>General Properties</title>          
+<paragraph xml:id="C35.S8.Px5">
+<title>Value at <Math mode="inline" xml:id="C35.S8.Px5.m1">\mathbf{T}=\boldsymbol{{0}}</Math></title>   
+ 
+<para xml:id="C35.S8.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C35.S8.Px5.p1.s1">
+ <Math equation-number="35.8.8" mode="display" xml:id="C35.S8.E8">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\boldsymbol{{0}} \right)=1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px6">
+<title>Confluence</title>   
+ 
+<para xml:id="C35.S8.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C35.S8.Px6.p1.s1">
+ <Math equation-number="35.8.9" mode="display" xml:id="C35.S8.E9">\lim_{\gamma\to\infty}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{p},\gamma\atop b_{1 },\dots,b_{q}};\gamma^{-1}\mathbf{T}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_ {p}\atop b_{1},\dots,b_{q}};\mathbf{T}\right),</Math> <Math equation-number="35.8.10" mode="display" xml:id="C35.S8.E10">\lim_{\gamma\to\infty}{{}_{p}F_{q+1}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots ,b_{q},\gamma};\gamma\mathbf{T}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px7">
+<title>Invariance</title>    
+<para xml:id="C35.S8.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="18" xml:id="C35.S8.Px7.p1.s1">
+ <Math equation-number="35.8.11" mode="display" xml:id="C35.S8.E11">{{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_{1},\dots,b_{q}};\mathbf{H} \mathbf{T}\mathbf{H}^{-1}\right)={{}_{p}F_{q}}\left({a_{1},\dots,a_{p}\atop b_ {1},\dots,b_{q}};\mathbf{T}\right), if \mathbf{H}\in\mathbf{O}(m)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px8">
+<title>Laplace Transform</title>    
+<para xml:id="C35.S8.Px8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C35.S8.Px8.p1.s1">
+ <Math equation-number="35.8.12" mode="display" xml:id="C35.S8.E12">{\int_{\boldsymbol{\Omega}}\mathrm{etr}\left(-\mathbf{T}\mathbf{X}\right)| \mathbf{X}|^{\gamma-\frac{1}{2}(m+1)}\*{{}_{p}F_{q}}\left({a_{1},\dots,a_{p} \atop b_{1},\dots,b_{q}};-\mathbf{X}\right)\mathrm{d}\mathbf{X}}=\Gamma_{m} \left(\gamma\right)|\mathbf{T}|^{-\gamma}{{}_{p+1}F_{q}}\left({a_{1},\dots,a_{ p},\gamma\atop b_{1},\dots,b_{q}};-\mathbf{T}^{-1}\right), if \Re(\gamma)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S8.Px9">
+<title>Euler Integral</title>    
+<para xml:id="C35.S8.Px9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C35.S8.Px9.p1.s1">
+ <Math equation-number="35.8.13" mode="display" xml:id="C35.S8.E13">\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}|^{a_{1}-\frac{ 1}{2}(m+1)}{|\mathbf{I}-\mathbf{X}|}^{b_{1}-a_{1}-\frac{1}{2}(m+1)}\*{{}_{p}F_ {q}}\left({a_{2},\dots,a_{p+1}\atop b_{2},\dots,b_{q+1}};\mathbf{T}\mathbf{X} \right)\mathrm{d}\mathbf{X}=\frac{1}{\mathrm{B}_{m}\left(b_{1}-a_{1},a_{1} \right)}{{}_{p+1}F_{q+1}}\left({a_{1},\dots,a_{p+1}\atop b_{1},\dots,b_{q+1}}; \mathbf{T}\right), if \Re(b_{1}-a_{1}),\Re(a_{1})&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S8.SS5">
+<title>Mellin–Barnes Integrals</title>        
+  
+<para xml:id="C35.S8.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="21" xml:id="C35.S8.SS5.p1.s1">
+Multidimensional Mellin–Barnes integrals are established inDing et al. (1996) for the functions <Math mode="inline" xml:id="C35.S8.SS5.p1.m1">{{}_{p}F_{q}}</Math> and <Math mode="inline" xml:id="C35.S8.SS5.p1.m2">{{}_{p+1}F_{p}}</Math> of matrix argument.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="22" xml:id="C35.S8.SS5.p1.s2">
+A similar result for the <Math mode="inline" xml:id="C35.S8.SS5.p1.m3">{{}_{0}F_{1}}</Math> function of matrix argument is given inFaraut and Korányi (1994, p. 346).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="23" xml:id="C35.S8.SS5.p1.s3">
+These multidimensional integrals reduce to the classical Mellin–Barnes integrals (§5.19(ii)) in the special case <Math mode="inline" xml:id="C35.S8.SS5.p1.m4">m=1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S8.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C35.S8.SS5.p2.s1">
+See also Faraut and Korányi (1994, pp. 318–340).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C35.S7">
+<title>Gaussian Hypergeometric Function of Matrix Argument</title>          
+ 
+<subsection xml:id="C35.S7.SS1">
+<title>Definition</title>           
+<para xml:id="C35.S7.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C35.S7.SS1.p1.s1">
+ <Math equation-number="35.7.1" mode="display" xml:id="C35.S7.E1">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\sum_{k=0}^{\infty}\frac{1} {k!}\sum_{|\kappa|=k}\frac{{\left[a\right]_{\kappa}}{\left[b\right]_{\kappa}}} {{\left[c\right]_{\kappa}}}Z_{\kappa}\left(\mathbf{T}\right)}, if -c+\frac{1}{2}(j+1)\notin\mathbb{N}, 1\leq j\leq m; ||\mathbf{T}||&lt;1</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C35.S7.Px1">
+<title>Jacobi Form</title>    
+<para xml:id="C35.S7.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C35.S7.Px1.p1.s1">
+ <Math equation-number="35.7.2" mode="display" xml:id="C35.S7.E2">P^{(\gamma,\delta)}_{\nu}\left(\mathbf{T}\right)=\frac{\Gamma_{m}\left(\gamma+ \nu+\frac{1}{2}(m+1)\right)}{\Gamma_{m}\left(\gamma+\frac{1}{2}(m+1)\right)}\* {{}_{2}F_{1}}\left({-\nu,\gamma+\delta+\nu+\frac{1}{2}(m+1)\atop\gamma+\frac{1 }{2}(m+1)};\mathbf{T}\right), if \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}; \gamma,\delta,\nu\in\mathbb{C}; \Re(\gamma)&gt;-1</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS2">
+<title>Basic Properties</title>          
+<paragraph xml:id="C35.S7.Px2">
+<title>Case <Math mode="inline" xml:id="C35.S7.Px2.m1">m=2</Math></title>  
+  
+<para xml:id="C35.S7.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C35.S7.Px2.p1.s1">
+ <Math equation-number="35.7.3" mode="display" xml:id="C35.S7.E3">{{}_{2}F_{1}}\left({a,b\atop c};\left(\begin{matrix}t_{1}&amp;0\\ 0&amp;t_{2}\end{matrix}\right)\right)=\sum_{k=0}^{\infty}\frac{{\left(a\right)_{k} }{\left(c-a\right)_{k}}{\left(b\right)_{k}}{\left(c-b\right)_{k}}}{k!\,{\left( c\right)_{2k}}{\left(c-\tfrac{1}{2}\right)_{k}}}\*(t_{1}t_{2})^{k}{{}_{2}F_{1} }\left({a+k,b+k\atop c+2k};t_{1}+t_{2}-t_{1}t_{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px3">
+<title>Confluent Form</title>    
+<para xml:id="C35.S7.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C35.S7.Px3.p1.s1">
+ <Math equation-number="35.7.4" mode="display" xml:id="C35.S7.E4">\lim_{c\to\infty}{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}-c\mathbf{T}^{-1} \right)=|\mathbf{T}|^{b}\Psi\left(b;b-a+\tfrac{1}{2}(m+1);\mathbf{T}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px4">
+<title>Integral Representation</title>    
+<para xml:id="C35.S7.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C35.S7.Px4.p1.s1">
+ <Math equation-number="35.7.5" mode="display" xml:id="C35.S7.E5">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\frac{1}{\mathrm{B}_{m}\left (a,c-a\right)}\int\limits_{\boldsymbol{{0}}&lt;\mathbf{X}&lt;\mathbf{I}}|\mathbf{X}| ^{a-\frac{1}{2}(m+1)}\*{|\mathbf{I}-\mathbf{X}|}^{c-a-\frac{1}{2}(m+1)}{| \mathbf{I}-\mathbf{T}\mathbf{X}|}^{-b}\mathrm{d}\mathbf{X}, if \Re(a),\Re(c-a)&gt;\frac{1}{2}(m-1), \boldsymbol{{0}}&lt;\mathbf{T}&lt;\mathbf{I}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px5">
+<title>Transformations of Parameters</title>    
+<para xml:id="C35.S7.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C35.S7.Px5.p1.s1">
+ <Math equation-number="35.7.6" mode="display" xml:id="C35.S7.E6">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=|\mathbf{I}-\mathbf{T}|^{c-a -b}{{}_{2}F_{1}}\left({c-a,c-b\atop c};\mathbf{T}\right)=|\mathbf{I}-\mathbf{T }|^{-a}{{}_{2}F_{1}}\left({a,c-b\atop c};-\mathbf{T}(\mathbf{I}-\mathbf{T})^{- 1}\right)=|\mathbf{I}-\mathbf{T}|^{-b}{{}_{2}F_{1}}\left({c-a,b\atop c};- \mathbf{T}(\mathbf{I}-\mathbf{T})^{-1}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px6">
+<title>Gauss Formula</title>    
+<para xml:id="C35.S7.Px6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C35.S7.Px6.p1.s1">
+ <Math equation-number="35.7.7" mode="display" xml:id="C35.S7.E7">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}\right)=\frac{\Gamma_{m}\left(c \right)\Gamma_{m}\left(c-a-b\right)}{\Gamma_{m}\left(c-a\right)\Gamma_{m}\left (c-b\right)}}, if \Re(c),\Re(c-a-b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C35.S7.Px7">
+<title>Reflection Formula</title>    
+<para xml:id="C35.S7.Px7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C35.S7.Px7.p1.s1">
+ <Math equation-number="35.7.8" mode="display" xml:id="C35.S7.E8">{{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{T}\right)=\frac{\Gamma_{m}\left(c \right)\Gamma_{m}\left(c-a-b\right)}{\Gamma_{m}\left(c-a\right)\Gamma_{m}\left (c-b\right)}}\*{{}_{2}F_{1}}\left({a,b\atop a+b-c+\frac{1}{2}(m+1)};\mathbf{I} -\mathbf{T}\right), if \Re(c),\Re(c-a-b)&gt;\frac{1}{2}(m-1)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS3">
+<title>Partial Differential Equations</title>           
+<para xml:id="C35.S7.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C35.S7.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C35.S7.SS3.p1.m1">f:{\boldsymbol{\Omega}}\to\mathbb{C}</Math> (a) be orthogonally invariant, so that <Math mode="inline" xml:id="C35.S7.SS3.p1.m2">f(\mathbf{T})</Math> is a symmetric function of <Math mode="inline" xml:id="C35.S7.SS3.p1.m3">t_{1},\dots,t_{m}</Math> , the eigenvalues of the matrix argument <Math mode="inline" xml:id="C35.S7.SS3.p1.m4">\mathbf{T}\in{\boldsymbol{\Omega}}</Math> ; (b) be analytic in <Math mode="inline" xml:id="C35.S7.SS3.p1.m5">t_{1},\dots,t_{m}</Math> in a neighborhood of <Math mode="inline" xml:id="C35.S7.SS3.p1.m6">\mathbf{T}=\boldsymbol{{0}}</Math> ; (c) satisfy <Math mode="inline" xml:id="C35.S7.SS3.p1.m7">f(\boldsymbol{{0}})=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C35.S7.SS3.p1.s2">
+Subject to the conditions (a)–(c), the function <Math mode="inline" xml:id="C35.S7.SS3.p1.m8">f(\mathbf{T})={{}_{2}F_{1}}\left(a,b;c;\mathbf{T}\right)</Math> is the unique solution of each partial differential equation <Math equation-number="35.7.9" mode="display" xml:id="C35.S7.E9">t_{j}(1-t_{j})\frac{{\partial}^{2}F}{{\partial t_{j}}^{2}}-\frac{1}{2}\sum_{ \begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{m}\frac{t_{k}(1-t_{k})}{t_{j}-t_{k}}\frac{\partial F}{ \partial t_{k}}+\left({c-\tfrac{1}{2}(m-1)-\left(a+b-\tfrac{1}{2}(m-3)\right)t _{j}}+\frac{1}{2}\sum_{\begin{subarray}{c}k=1\\ k\neq j\end{subarray}}^{m}\frac{t_{j}(1-t_{j})}{t_{j}-t_{k}}\right)\frac{ \partial F}{\partial t_{j}}=abF,</Math> for <Math mode="inline" xml:id="C35.S7.SS3.p1.m9">j=1,\dots,m</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C35.S7.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C35.S7.SS3.p2.s1">
+Systems of partial differential equations for the <Math mode="inline" xml:id="C35.S7.SS3.p2.m1">{{}_{0}F_{1}}</Math> (defined in §35.8) and <Math mode="inline" xml:id="C35.S7.SS3.p2.m2">{{}_{1}F_{1}}</Math> functions of matrix argument can be obtained by applying (35.8.9) and (35.8.10) to (35.7.9).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C35.S7.SS4">
+<title>Asymptotic Approximations</title>          
+<para xml:id="C35.S7.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C35.S7.SS4.p1.s1">
+Butler and Wood (2002) applies Laplace’s method (§2.3(iii)) to (35.7.5) to derive uniform asymptotic approximations for the functions <Math equation-number="35.7.10" mode="display" xml:id="C35.S7.E10">{{}_{2}F_{1}}\left({\alpha a,\alpha b\atop\alpha c};\mathbf{T}\right)</Math> and <Math equation-number="35.7.11" mode="display" xml:id="C35.S7.E11">{{}_{2}F_{1}}\left({a,b\atop c};\mathbf{I}-\alpha^{-1}\mathbf{T}\right)</Math> as <Math mode="inline" xml:id="C35.S7.SS4.p1.m1">\alpha\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C35.S7.SS4.p1.s2">
+These approximations are in terms of elementary functions.
+</sentence>
+
+</para>
+ 
+<para xml:id="C35.S7.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C35.S7.SS4.p2.s1">
+For other asymptotic approximations for Gaussian hypergeometric functions of matrix argument, see Herz (1955), Muirhead (1982, pp. 264–281, 290, 472, 563), and Butler and Wood (2002).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

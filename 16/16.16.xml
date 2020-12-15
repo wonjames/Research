@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C16.S16">
+<title>Transformations of Variables</title>          
+<subsection xml:id="C16.S16.SS1">
+<title>Reduction Formulas</title>          
+ 
+<para xml:id="C16.S16.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C16.S16.SS1.p1.s1">
+ <Math equation-number="16.16.1" mode="display" xml:id="C16.S16.E1">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\beta+\beta^{\prime};x,y\right)=(1-y) ^{-\alpha}{{}_{2}F_{1}}\left({\alpha,\beta\atop\beta+\beta^{\prime}};\frac{x-y }{1-y}\right),</Math> , <Math equation-number="16.16.2" mode="display" xml:id="C16.S16.E2">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\beta^{\prime};x,y\right)=(1-y )^{-\alpha}{{}_{2}F_{1}}\left({\alpha,\beta\atop\gamma};\frac{x}{1-y}\right),</Math> , <Math equation-number="16.16.3" mode="display" xml:id="C16.S16.E3">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\alpha;x,y\right)=(1-y)^{- \beta^{\prime}}{F_{1}}\left(\beta;\alpha-\beta^{\prime},\beta^{\prime};\gamma; x,\frac{x}{1-y}\right),</Math> , <Math equation-number="16.16.4" mode="display" xml:id="C16.S16.E4">{F_{3}}\left(\alpha,\gamma-\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=(1-y) ^{-\beta^{\prime}}{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,\frac{y}{y -1}\right),</Math> , <Math equation-number="16.16.5" mode="display" xml:id="C16.S16.E5">{F_{3}}\left(\alpha,\gamma-\alpha;\beta,\gamma-\beta;\gamma;x,y\right)=(1-y)^{ \alpha+\beta-\gamma}{{}_{2}F_{1}}\left({\alpha,\beta\atop\gamma};x+y-xy\right),</Math> , <Math equation-number="16.16.6" mode="display" xml:id="C16.S16.E6">{F_{4}}\left(\alpha,\beta;\gamma,\alpha+\beta-\gamma+1;x(1-y),y(1-x)\right)={{ }_{2}F_{1}}\left({\alpha,\beta\atop\gamma};x\right){{}_{2}F_{1}}\left({\alpha, \beta\atop\alpha+\beta-\gamma+1};y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C16.S16.SS1.p1.s2">
+See Erdélyi et al. (1953a, §5.10) for these and further reduction formulas.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C16.S16.SS1.p1.s3">
+An extension of (16.16.6) is given by <Math equation-number="16.16.7" mode="display" xml:id="C16.S16.E7">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x(1-y),y(1-x)\right)=\sum_{k= 0}^{\infty}\frac{{\left(\alpha\right)_{k}}{\left(\beta\right)_{k}}{\left( \alpha+\beta-\gamma-\gamma^{\prime}+1\right)_{k}}}{{\left(\gamma\right)_{k}}{ \left(\gamma^{\prime}\right)_{k}}k!}x^{k}y^{k}{{}_{2}F_{1}}\left({\alpha+k, \beta+k\atop\gamma+k};x\right){{}_{2}F_{1}}\left({\alpha+k,\beta+k\atop\gamma^ {\prime}+k};y\right);</Math> see Burchnall and Chaundy (1940, 1941).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C16.S16.SS2">
+<title>Other Transformations</title>        
+ 
+<para xml:id="C16.S16.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C16.S16.SS2.p1.s1">
+ <Math equation-number="16.16.8" mode="display" xml:id="C16.S16.E8">{F_{1}}\left(\alpha;\beta,\beta^{\prime};\gamma;x,y\right)=(1-x)^{-\beta}(1-y) ^{-\beta^{\prime}}{F_{1}}\left(\gamma-\alpha;\beta,\beta^{\prime};\gamma;\frac {x}{x-1},\frac{y}{y-1}\right)=(1-x)^{-\alpha}{F_{1}}\left(\alpha;\gamma-\beta- \beta^{\prime},\beta^{\prime};\gamma;\frac{x}{x-1},\frac{y-x}{1-x}\right),</Math> <Math equation-number="16.16.9" mode="display" xml:id="C16.S16.E9">{F_{2}}\left(\alpha;\beta,\beta^{\prime};\gamma,\gamma^{\prime};x,y\right)=(1- x)^{-\alpha}{F_{2}}\left(\alpha;\gamma-\beta,\beta^{\prime};\gamma,\gamma^{ \prime};\frac{x}{x-1},\frac{y}{1-x}\right),</Math> <Math equation-number="16.16.10" mode="display" xml:id="C16.S16.E10">{F_{4}}\left(\alpha,\beta;\gamma,\gamma^{\prime};x,y\right)=\frac{\Gamma\left( \gamma^{\prime}\right)\Gamma\left(\beta-\alpha\right)}{\Gamma\left(\gamma^{ \prime}-\alpha\right)\Gamma\left(\beta\right)}(-y)^{-\alpha}{F_{4}}\left( \alpha,\alpha-\gamma^{\prime}+1;\gamma,\alpha-\beta+1;\frac{x}{y},\frac{1}{y} \right)+\frac{\Gamma\left(\gamma^{\prime}\right)\Gamma\left(\alpha-\beta\right )}{\Gamma\left(\gamma^{\prime}-\beta\right)\Gamma\left(\alpha\right)}(-y)^{- \beta}{F_{4}}\left(\beta,\beta-\gamma^{\prime}+1;\gamma,\beta-\alpha+1;\frac{x }{y},\frac{1}{y}\right)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C16.S16.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C16.S16.SS2.p2.s1">
+For quadratic transformations of Appell functions see Carlson (1976).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

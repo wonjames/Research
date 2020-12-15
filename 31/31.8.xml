@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S8">
+<title>Solutions via Quadratures</title>        
+  
+<para xml:id="C31.S8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S8.p1.s1">
+For half-odd-integer values of the exponent parameters: <Math equation-number="31.8.1" mode="display" xml:id="C31.S8.E1">\beta-\alpha=m_{0}+\tfrac{1}{2},\gamma=-m_{1}+\tfrac{1}{2},\delta=-m_{2}+\tfrac{1}{2},\epsilon=-m_{3}+\tfrac{1}{2}, , if m_{0},m_{1},m_{2},m_{3}=0,1,2,\dots,</Math> the Hermite–Darboux method (see Whittaker and Watson (1927, pp. 570–572)) can be applied to construct solutions of (31.2.1) expressed in quadratures, as follows.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S8.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C31.S8.p2.s1">
+Denote <Math mode="inline" xml:id="C31.S8.p2.m1">\mathbf{m}=(m_{0},m_{1},m_{2},m_{3})</Math> and <Math mode="inline" xml:id="C31.S8.p2.m2">\lambda=-4q</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C31.S8.p2.s2">
+Then <Math equation-number="31.8.2" mode="display" xml:id="C31.S8.E2">w_{\pm}(\mathbf{m};\lambda;z)=\sqrt{\Psi_{g,N}(\lambda,z)}\*\exp\left(\pm\frac {i\nu(\lambda)}{2}\int_{z_{0}}^{z}\frac{t^{m_{1}}(t-1)^{m_{2}}(t-a)^{m_{3}} \mathrm{d}t}{\Psi_{g,N}(\lambda,t)\sqrt{t(t-1)(t-a)}}\right)</Math> are two independent solutions of (31.2.1).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="4" xml:id="C31.S8.p2.s3">
+Here <Math mode="inline" xml:id="C31.S8.p2.m3">\Psi_{g,N}(\lambda,z)</Math> is a polynomial of degree <Math mode="inline" xml:id="C31.S8.p2.m4">g</Math> in <Math mode="inline" xml:id="C31.S8.p2.m5">\lambda</Math> and of degree <Math mode="inline" xml:id="C31.S8.p2.m6">N=m_{0}+m_{1}+m_{2}+m_{3}</Math> in <Math mode="inline" xml:id="C31.S8.p2.m7">z</Math> , that is a solution of the third-order differential equation satisfied by a product of any two solutions of Heun’s equation.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="5" xml:id="C31.S8.p2.s4">
+The degree <Math mode="inline" xml:id="C31.S8.p2.m8">g</Math> is given by <Math equation-number="31.8.3" mode="display" xml:id="C31.S8.E3">g=\tfrac{1}{2}\max\left(2\max_{0\leq k\leq 3}m_{k},1+N-(1+(-1)^{N})\left( \tfrac{1}{2}+\min_{0\leq k\leq 3}m_{k}\right)\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="6" xml:id="C31.S8.p2.s5">
+The variables <Math mode="inline" xml:id="C31.S8.p2.m9">\lambda</Math> and <Math mode="inline" xml:id="C31.S8.p2.m10">\nu</Math> are two coordinates of the associated hyperelliptic (spectral) curve <Math mode="inline" xml:id="C31.S8.p2.m11">\Gamma:\nu^{2}=\prod_{j=1}^{2g+1}(\lambda-\lambda_{j})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="7" xml:id="C31.S8.p2.s6">
+(This <Math mode="inline" xml:id="C31.S8.p2.m12">\nu</Math> is unrelated to the <Math mode="inline" xml:id="C31.S8.p2.m13">\nu</Math> in §31.6.)Lastly,
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="8" xml:id="C31.S8.p2.s7">
+<Math mode="inline" xml:id="C31.S8.p2.m14">\lambda_{j}</Math> , <Math mode="inline" xml:id="C31.S8.p2.m15">j=1,2,\ldots,2g+1</Math> , are the zeros of the Wronskian of <Math mode="inline" xml:id="C31.S8.p2.m16">w_{+}(\mathbf{m};\lambda;z)</Math> and <Math mode="inline" xml:id="C31.S8.p2.m17">w_{-}(\mathbf{m};\lambda;z)</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S8.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S8.p3.s1">
+By automorphisms from §31.2(v), similar solutions also exist for <Math mode="inline" xml:id="C31.S8.p3.m1">m_{0},m_{1},m_{2},m_{3}\in\mathbb{Z}</Math> , and <Math mode="inline" xml:id="C31.S8.p3.m2">\Psi_{g,N}(\lambda,z)</Math> may become a rational function in <Math mode="inline" xml:id="C31.S8.p3.m3">z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C31.S8.p3.s2">
+For instance, <Math equation-number="31.8.4" mode="display" xml:id="C31.S8.E4">\Psi_{1,2}=z^{2}+\lambda z+a,\nu^{2}=(\lambda+a+1)(\lambda^{2}-4a), , if \mathbf{m}=(1,1,0,0),</Math> and <Math equation-number="31.8.5" mode="display" xml:id="C31.S8.E5">\Psi_{1,-1}=\left(z^{2}+(\lambda+3a+3)z+a\right)/z^{3},\nu^{2}=(\lambda+4a+4)\left((\lambda+3a+3)^{2}-4a\right), , if \mathbf{m}=(1,-2,0,0)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C31.S8.p3.s3">
+For <Math mode="inline" xml:id="C31.S8.p3.m4">\mathbf{m}=(m_{0},0,0,0)</Math> , these solutions reduce to Hermite’s solutions (Whittaker and Watson (1927, §23.7)) of the Lamé equation in its algebraic form.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C31.S8.p3.s4">
+The curve <Math mode="inline" xml:id="C31.S8.p3.m5">\Gamma</Math> reflects the finite-gap property of Equation (31.2.1) when the exponent parameters satisfy (31.8.1) for <Math mode="inline" xml:id="C31.S8.p3.m6">m_{j}\in\mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C31.S8.p3.s5">
+When <Math mode="inline" xml:id="C31.S8.p3.m7">\lambda=-4q</Math> approaches the ends of the gaps, the solution (31.8.2) becomes the corresponding Heun polynomial.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="14" xml:id="C31.S8.p3.s6">
+For more details see Smirnov (2002).
+</sentence>
+
+</para>
+   
+<para xml:id="C31.S8.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C31.S8.p4.s1">
+The solutions in this section are finite-term Liouvillean solutions which can be constructed via Kovacic’s algorithm; see §31.14(ii).
+</sentence>
+
+</para>
+ 
+</section>

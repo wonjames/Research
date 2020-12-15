@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C22.S10">
+<title>Maclaurin Series</title>        
+ 
+<subsection xml:id="C22.S10.SS1">
+<title>Maclaurin Series in <Math mode="inline" xml:id="C22.S10.SS1.m1">z</Math></title>        
+  
+<para xml:id="C22.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C22.S10.SS1.p1.s1">
+Initial terms are given by <Math equation-number="22.10.1" mode="display" xml:id="C22.S10.E1">\operatorname{sn}\left(z,k\right)=z-\left(1+k^{2}\right)\frac{z^{3}}{3!}+\left (1+14k^{2}+k^{4}\right)\frac{z^{5}}{5!}-\left(1+135k^{2}+135k^{4}+k^{6}\right) \frac{z^{7}}{7!}+O\left(z^{9}\right)</Math> , <Math equation-number="22.10.2" mode="display" xml:id="C22.S10.E2">\operatorname{cn}\left(z,k\right)=1-\frac{z^{2}}{2!}+\left(1+4k^{2}\right) \frac{z^{4}}{4!}-\left(1+44k^{2}+16k^{4}\right)\frac{z^{6}}{6!}+O\left(z^{8} \right),</Math> <Math equation-number="22.10.3" mode="display" xml:id="C22.S10.E3">\operatorname{dn}\left(z,k\right)=1-k^{2}\frac{z^{2}}{2!}+k^{2}\left(4+k^{2} \right)\frac{z^{4}}{4!}-k^{2}\left(16+44k^{2}+k^{4}\right)\frac{z^{6}}{6!}+O \left(z^{8}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C22.S10.SS1.p2.s1">
+Further terms may be derived by substituting in the differential equations (22.13.13), (22.13.14), (22.13.15).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C22.S10.SS1.p2.s2">
+The full expansions converge when <Math mode="inline" xml:id="C22.S10.SS1.p2.m1">|z|&lt;\min\left(K\left(k\right),{K^{\prime}}\left(k\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C22.S10.SS2">
+<title> Maclaurin Series in <Math mode="inline" xml:id="C22.S10.SS2.m1">k</Math> and <Math mode="inline" xml:id="C22.S10.SS2.m2">k^{\prime}</Math></title>        
+  
+<para xml:id="C22.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C22.S10.SS2.p1.s1">
+Initial terms are given by <Math equation-number="22.10.4" mode="display" xml:id="C22.S10.E4">\operatorname{sn}\left(z,k\right)=\sin z-\frac{k^{2}}{4}(z-\sin z\cos z)\cos z +O\left(k^{4}\right),</Math> <Math equation-number="22.10.5" mode="display" xml:id="C22.S10.E5">\operatorname{cn}\left(z,k\right)=\cos z+\frac{k^{2}}{4}(z-\sin z\cos z)\sin z +O\left(k^{4}\right),</Math> <Math equation-number="22.10.6" mode="display" xml:id="C22.S10.E6">\operatorname{dn}\left(z,k\right)=1-\frac{k^{2}}{2}{\sin^{2}}z+O\left(k^{4} \right),</Math> <Math equation-number="22.10.7" mode="display" xml:id="C22.S10.E7">\operatorname{sn}\left(z,k\right)=\tanh z-\frac{{k^{\prime}}^{2}}{4}(z-\sinh z \cosh z){\operatorname{sech}^{2}}z+O\left({k^{\prime}}^{4}\right),</Math> <Math equation-number="22.10.8" mode="display" xml:id="C22.S10.E8">\operatorname{cn}\left(z,k\right)=\operatorname{sech}z+\frac{{k^{\prime}}^{2}} {4}(z-\sinh z\cosh z)\tanh z\operatorname{sech}z+O\left({k^{\prime}}^{4}\right),</Math> <Math equation-number="22.10.9" mode="display" xml:id="C22.S10.E9">\operatorname{dn}\left(z,k\right)=\operatorname{sech}z+\frac{{k^{\prime}}^{2}} {4}(z+\sinh z\cosh z)\tanh z\operatorname{sech}z+O\left({k^{\prime}}^{4}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C22.S10.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C22.S10.SS2.p2.s1">
+Further terms may be derived from the differential equations (22.13.13), (22.13.14), (22.13.15), or from the integral representations of the inverse functions in §22.15(ii).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C22.S10.SS2.p2.s2">
+The radius of convergence is the distance to the origin from thenearest pole in the complex <Math mode="inline" xml:id="C22.S10.SS2.p2.m1">k</Math> -plane in the case of (22.10.4)–(22.10.6), or complex <Math mode="inline" xml:id="C22.S10.SS2.p2.m2">k^{\prime}</Math> -plane in the case of (22.10.7)–(22.10.9);see §22.17.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

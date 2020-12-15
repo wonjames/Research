@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C27.S4">
+<title>Euler Products and Dirichlet Series</title>        
+ 
+<para xml:id="C27.S4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C27.S4.p1.s1">
+The fundamental theorem of arithmetic is linked to analysis through the concept of the Euler product.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C27.S4.p1.s2">
+Every multiplicative <Math mode="inline" xml:id="C27.S4.p1.m1">f</Math> satisfies the identity <Math equation-number="27.4.1" mode="display" xml:id="C27.S4.E1">\sum_{n=1}^{\infty}f(n)=\prod_{p}\left(1+\sum_{r=1}^{\infty}f(p^{r})\right),</Math> if the series on the left is absolutely convergent.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C27.S4.p1.s3">
+In this case the infinite product on the right (extended over all primes <Math mode="inline" xml:id="C27.S4.p1.m2">p</Math> ) is also absolutely convergent and is called the Euler product of the series.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C27.S4.p1.s4">
+If <Math mode="inline" xml:id="C27.S4.p1.m3">f(n)</Math> is completely multiplicative, then each factor in the product is a geometric series and the Euler product becomes <Math equation-number="27.4.2" mode="display" xml:id="C27.S4.E2">\sum_{n=1}^{\infty}f(n)=\prod_{p}(1-f(p))^{-1}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C27.S4.p2.s1">
+Euler products are used to find series that generate many functions of multiplicative number theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C27.S4.p2.s2">
+The completely multiplicative function <Math mode="inline" xml:id="C27.S4.p2.m1">f(n)=n^{-s}</Math> gives the Euler product representation of theRiemann zeta function <Math mode="inline" xml:id="C27.S4.p2.m2">\zeta\left(s\right)</Math> (§25.2(i)):
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C27.S4.p2.s3">
+<Math equation-number="27.4.3" mode="display" xml:id="C27.S4.E3">\zeta\left(s\right)=\sum_{n=1}^{\infty}n^{-s}=\prod_{p}(1-p^{-s})^{-1}, if \Re s&gt;1</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C27.S4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C27.S4.p3.s1">
+The Riemann zeta function is the prototype of series of the form <Math equation-number="27.4.4" mode="display" xml:id="C27.S4.E4">F(s)=\sum_{n=1}^{\infty}f(n)n^{-s},</Math> called Dirichlet series with coefficients <Math mode="inline" xml:id="C27.S4.p3.m1">f(n)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C27.S4.p3.s2">
+The function <Math mode="inline" xml:id="C27.S4.p3.m2">F(s)</Math> is a generating function, or more precisely, a Dirichlet generating function, for the coefficients.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="10" xml:id="C27.S4.p3.s3">
+The following examples have generating functions related to the zeta function: <Math equation-number="27.4.5" mode="display" xml:id="C27.S4.E5">\sum_{n=1}^{\infty}\mu\left(n\right)n^{-s}=\frac{1}{\zeta\left(s\right)}, if \Re s&gt;1,</Math> , <Math equation-number="27.4.6" mode="display" xml:id="C27.S4.E6">\sum_{n=1}^{\infty}\phi\left(n\right)n^{-s}=\frac{\zeta\left(s-1\right)}{\zeta \left(s\right)}, if \Re s&gt;2,</Math> , <Math equation-number="27.4.7" mode="display" xml:id="C27.S4.E7">\sum_{n=1}^{\infty}\lambda\left(n\right)n^{-s}=\frac{\zeta\left(2s\right)}{ \zeta\left(s\right)}, if \Re s&gt;1,</Math> , <Math equation-number="27.4.8" mode="display" xml:id="C27.S4.E8">\sum_{n=1}^{\infty}|\mu\left(n\right)|n^{-s}=\frac{\zeta\left(s\right)}{\zeta \left(2s\right)}, if \Re s&gt;1,</Math> , <Math equation-number="27.4.9" mode="display" xml:id="C27.S4.E9">\sum_{n=1}^{\infty}2^{\nu\left(n\right)}n^{-s}=\frac{(\zeta\left(s\right))^{2} }{\zeta\left(2s\right)}, if \Re s&gt;1,</Math> , <Math equation-number="27.4.10" mode="display" xml:id="C27.S4.E10">\sum_{n=1}^{\infty}d_{k}\left(n\right)n^{-s}=(\zeta\left(s\right))^{k}, if \Re s&gt;1,</Math> <Math equation-number="27.4.11" mode="display" xml:id="C27.S4.E11">\sum_{n=1}^{\infty}\sigma_{\alpha}\left(n\right)n^{-s}=\zeta\left(s\right) \zeta\left(s-\alpha\right), if \Re s&gt;\max(1,1+\Re\alpha),</Math> <Math equation-number="27.4.12" mode="display" xml:id="C27.S4.E12">\sum_{n=1}^{\infty}\Lambda\left(n\right)n^{-s}=-\frac{\zeta'\left(s\right)}{ \zeta\left(s\right)}, if \Re s&gt;1,</Math> , <Math equation-number="27.4.13" mode="display" xml:id="C27.S4.E13">\sum_{n=2}^{\infty}(\ln n)n^{-s}=-\zeta'\left(s\right), if \Re s&gt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="11" xml:id="C27.S4.p3.s4">
+In (27.4.12) and (27.4.13)
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="12" xml:id="C27.S4.p3.s5">
+<Math mode="inline" xml:id="C27.S4.p3.m3">\zeta'\left(s\right)</Math> is the derivative of <Math mode="inline" xml:id="C27.S4.p3.m4">\zeta\left(s\right)</Math>.
+</sentence>
+
+</para>
+ 
+</section>

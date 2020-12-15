@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C19.S25">
+<title>Relations to Other Functions</title>         
+<subsection xml:id="C19.S25.SS1">
+<title>Legendre’s Integrals as Symmetric Integrals</title>          
+ 
+<para xml:id="C19.S25.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C19.S25.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C19.S25.SS1.p1.m1">{k^{\prime}}^{2}=1-k^{2}</Math> and <Math mode="inline" xml:id="C19.S25.SS1.p1.m2">c={\csc^{2}}\phi</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C19.S25.SS1.p1.s2">
+Then <Math equation-number="19.25.1" mode="display" xml:id="C19.S25.E1">K\left(k\right)=R_{F}\left(0,{k^{\prime}}^{2},1\right),E\left(k\right)=2\!R_{G}\left(0,{k^{\prime}}^{2},1\right),E\left(k\right)=\tfrac{1}{3}{k^{\prime}}^{2}\left(R_{D}\left(0,{k^{\prime}}^{2 },1\right)+R_{D}\left(0,1,{k^{\prime}}^{2}\right)\right),K\left(k\right)-E\left(k\right)=k^{2}D\left(k\right)=\tfrac{1}{3}k^{2}R_{D} \left(0,{k^{\prime}}^{2},1\right),E\left(k\right)-{k^{\prime}}^{2}K\left(k\right)=\tfrac{1}{3}k^{2}{k^{\prime}}^ {2}R_{D}\left(0,1,{k^{\prime}}^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C19.S25.SS1.p1.s3">
+<Math equation-number="19.25.2" mode="display" xml:id="C19.S25.E2">\Pi\left(\alpha^{2},k\right)-K\left(k\right)=\tfrac{1}{3}\alpha^{2}R_{J}\left( 0,{k^{\prime}}^{2},1,1-\alpha^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C19.S25.SS1.p1.s4">
+<Math equation-number="19.25.3" mode="display" xml:id="C19.S25.E3">\Pi\left(\alpha^{2},k\right)=\tfrac{1}{2}\pi R_{-\frac{1}{2}}\left(\tfrac{1}{2 },-\tfrac{1}{2},1;{k^{\prime}}^{2},1,1-\alpha^{2}\right),</Math> with Cauchy principal value <Math equation-number="19.25.4" mode="display" xml:id="C19.S25.E4">\Pi\left(\alpha^{2},k\right)=-\tfrac{1}{3}(k^{2}/\alpha^{2})R_{J}\left(0,1-k^{ 2},1,1-(k^{2}/\alpha^{2})\right), if -\infty&lt;k^{2}&lt;1&lt;\alpha^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C19.S25.SS1.p1.s5">
+<Math equation-number="19.25.5" mode="display" xml:id="C19.S25.E5">F\left(\phi,k\right)=R_{F}\left(c-1,c-k^{2},c\right),</Math> , <Math equation-number="19.25.6" mode="display" xml:id="C19.S25.E6">\frac{\partial F\left(\phi,k\right)}{\partial k}=\tfrac{1}{3}kR_{D}\left(c-1,c ,c-k^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C19.S25.SS1.p1.s6">
+<Math equation-number="19.25.7" mode="display" xml:id="C19.S25.E7">E\left(\phi,k\right)=2\!R_{G}\left(c-1,c-k^{2},c\right)-(c-1)R_{F}\left(c-1,c- k^{2},c\right)-\sqrt{(c-1)(c-k^{2})/c},</Math> <Math equation-number="19.25.8" mode="display" xml:id="C19.S25.E8">E\left(\phi,k\right)=R_{-\frac{1}{2}}\left(\tfrac{1}{2},-\tfrac{1}{2},\tfrac{3 }{2};c-1,c-k^{2},c\right),</Math> <Math equation-number="19.25.9" mode="display" xml:id="C19.S25.E9">E\left(\phi,k\right)=R_{F}\left(c-1,c-k^{2},c\right)-\tfrac{1}{3}k^{2}R_{D} \left(c-1,c-k^{2},c\right),</Math> <Math equation-number="19.25.10" mode="display" xml:id="C19.S25.E10">E\left(\phi,k\right)={k^{\prime}}^{2}R_{F}\left(c-1,c-k^{2},c\right)+\tfrac{1} {3}k^{2}{k^{\prime}}^{2}R_{D}\left(c-1,c,c-k^{2}\right)+k^{2}\sqrt{(c-1)/(c(c- k^{2}))}, if c&gt;k^{2},</Math> <Math equation-number="19.25.11" mode="display" xml:id="C19.S25.E11">E\left(\phi,k\right)=-\tfrac{1}{3}{k^{\prime}}^{2}R_{D}\left(c-k^{2},c,c-1 \right)+\sqrt{(c-k^{2})/(c(c-1))}, if \phi\neq\tfrac{1}{2}\pi</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C19.S25.SS1.p2.s1">
+Equations (19.25.9)–(19.25.11)correspond to three (nonzero) choices for the last variable of <Math mode="inline" xml:id="C19.S25.SS1.p2.m1">R_{D}</Math> ; see (19.21.7).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C19.S25.SS1.p2.s2">
+All terms on the right-hand sides are nonnegative when <Math mode="inline" xml:id="C19.S25.SS1.p2.m2">k^{2}\leq 0</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p2.m3">0\leq k^{2}\leq 1</Math> , or <Math mode="inline" xml:id="C19.S25.SS1.p2.m4">1\leq k^{2}\leq c</Math> , respectively.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="9" xml:id="C19.S25.SS1.p2.s3">
+<Math equation-number="19.25.12" mode="display" xml:id="C19.S25.E12">\frac{\partial E\left(\phi,k\right)}{\partial k}=-\tfrac{1}{3}kR_{D}\left(c-1, c-k^{2},c\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="10" xml:id="C19.S25.SS1.p2.s4">
+<Math equation-number="19.25.13" mode="display" xml:id="C19.S25.E13">D\left(\phi,k\right)=\tfrac{1}{3}R_{D}\left(c-1,c-k^{2},c\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="11" xml:id="C19.S25.SS1.p2.s5">
+<Math equation-number="19.25.14" mode="display" xml:id="C19.S25.E14">\Pi\left(\phi,\alpha^{2},k\right)-F\left(\phi,k\right)=\tfrac{1}{3}\alpha^{2}R _{J}\left(c-1,c-k^{2},c,c-\alpha^{2}\right),</Math> <Math equation-number="19.25.15" mode="display" xml:id="C19.S25.E15">\Pi\left(\phi,\alpha^{2},k\right)=R_{-\frac{1}{2}}\left(\tfrac{1}{2},\tfrac{1} {2},-\tfrac{1}{2},1;c-1,c-k^{2},c,c-\alpha^{2}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="12" xml:id="C19.S25.SS1.p2.s6">
+If <Math mode="inline" xml:id="C19.S25.SS1.p2.m5">\alpha^{2}&gt;c</Math> , then the Cauchy principal value is <Math equation-number="19.25.16" mode="display" xml:id="C19.S25.E16">\Pi\left(\phi,\alpha^{2},k\right)=-\tfrac{1}{3}\omega^{2}R_{J}\left(c-1,c-k^{2 },c,c-\omega^{2}\right)+\sqrt{\frac{(c-1)(c-k^{2})}{(\alpha^{2}-1)(1-\omega^{2 })}}\*R_{C}\left(c(\alpha^{2}-1)(1-\omega^{2}),(\alpha^{2}-c)(c-\omega^{2}) \right), if \omega^{2}=k^{2}/\alpha^{2}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C19.S25.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C19.S25.SS1.p3.s1">
+The transformations in §19.7(ii) result from the symmetry and homogeneity of functions on the right-hand sides of (19.25.5),(19.25.7), and (19.25.14).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C19.S25.SS1.p3.s2">
+For example, if we write (19.25.5) as <Math equation-number="19.25.17" mode="display" xml:id="C19.S25.E17">F\left(\phi,k\right)=R_{F}\left(x,y,z\right),</Math> with <Math equation-number="19.25.18" mode="display" xml:id="C19.S25.E18">(x,y,z)=(c-1,c-k^{2},c),</Math> then the five nontrivial permutations of <Math mode="inline" xml:id="C19.S25.SS1.p3.m1">x,y,z</Math> that leave <Math mode="inline" xml:id="C19.S25.SS1.p3.m2">R_{F}</Math> invariant change <Math mode="inline" xml:id="C19.S25.SS1.p3.m3">k^{2}</Math> ( <Math mode="inline" xml:id="C19.S25.SS1.p3.m4">=(z-y)/(z-x)</Math> ) into <Math mode="inline" xml:id="C19.S25.SS1.p3.m5">1/k^{2}</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m6">{k^{\prime}}^{2}</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m7">1/{k^{\prime}}^{2}</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m8">-k^{2}/{k^{\prime}}^{2}</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m9">-{k^{\prime}}^{2}/k^{2}</Math> , and <Math mode="inline" xml:id="C19.S25.SS1.p3.m10">\sin\phi</Math> ( <Math mode="inline" xml:id="C19.S25.SS1.p3.m11">=\sqrt{(z-x)/z}</Math> ) into <Math mode="inline" xml:id="C19.S25.SS1.p3.m12">k\sin\phi</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m13">-i\tan\phi</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m14">-ik^{\prime}\tan\phi</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m15">(k^{\prime}\sin\phi)/\sqrt{1-k^{2}{\sin^{2}}\phi}</Math> , <Math mode="inline" xml:id="C19.S25.SS1.p3.m16">-ik\sin\phi/\sqrt{1-k^{2}{\sin^{2}}\phi}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C19.S25.SS1.p3.s3">
+Thus the five permutations induce five transformations of Legendre’s integrals (and also of the Jacobian elliptic functions).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS1.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C19.S25.SS1.p4.s1">
+The three changes of parameter of <Math mode="inline" xml:id="C19.S25.SS1.p4.m1">\Pi\left(\phi,\alpha^{2},k\right)</Math> in §19.7(iii) are unified in (19.21.12) by way of (19.25.14).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS2">
+<title>Bulirsch’s Integrals as Symmetric Integrals</title>           
+<para xml:id="C19.S25.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="17" xml:id="C19.S25.SS2.p1.s1">
+Let <Math mode="inline" xml:id="C19.S25.SS2.p1.m1">r=1/x^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="18" xml:id="C19.S25.SS2.p1.s2">
+Then <Math equation-number="19.25.19" mode="display" xml:id="C19.S25.E19">\mathrm{cel}\left(k_{c},p,a,b\right)=aR_{F}\left(0,k_{c}^{2},1\right)+\tfrac{1 }{3}{(b-pa)}R_{J}\left(0,k_{c}^{2},1,p\right),</Math> , <Math equation-number="19.25.20" mode="display" xml:id="C19.S25.E20">\mathrm{el1}\left(x,k_{c}\right)=R_{F}\left(r,r+k_{c}^{2},r+1\right),</Math> , <Math equation-number="19.25.21" mode="display" xml:id="C19.S25.E21">\mathrm{el2}\left(x,k_{c},a,b\right)=a\mathrm{el1}\left(x,k_{c}\right)+\tfrac{ 1}{3}{(b-a)}R_{D}\left(r,r+k_{c}^{2},r+1\right),</Math> , <Math equation-number="19.25.22" mode="display" xml:id="C19.S25.E22">\mathrm{el3}\left(x,k_{c},p\right)=\mathrm{el1}\left(x,k_{c}\right)+\tfrac{1}{ 3}{(1-p)}R_{J}\left(r,r+k_{c}^{2},r+1,r+p\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS3">
+<title>Symmetric Integrals as Legendre’s Integrals</title>          
+ 
+<para xml:id="C19.S25.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C19.S25.SS3.p1.s1">
+Assume <Math mode="inline" xml:id="C19.S25.SS3.p1.m1">0\leq x\leq y\leq z</Math> , <Math mode="inline" xml:id="C19.S25.SS3.p1.m2">x&lt;z</Math> , and <Math mode="inline" xml:id="C19.S25.SS3.p1.m3">p&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C19.S25.SS3.p1.s2">
+Let <Math equation-number="19.25.23" mode="display" xml:id="C19.S25.E23">\phi=\operatorname{arccos}\sqrt{\ifrac{x}{z}}=\operatorname{arcsin}\sqrt{ \ifrac{(z-x)}{z}},k=\sqrt{\frac{z-y}{z-x}},\alpha^{2}=\frac{z-p}{z-x},</Math> with <Math mode="inline" xml:id="C19.S25.SS3.p1.m4">\alpha\neq 0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C19.S25.SS3.p1.s3">
+Then <Math equation-number="19.25.24" mode="display" xml:id="C19.S25.E24">(z-x)^{1/2}R_{F}\left(x,y,z\right)=F\left(\phi,k\right),</Math> <Math equation-number="19.25.25" mode="display" xml:id="C19.S25.E25">(z-x)^{3/2}R_{D}\left(x,y,z\right)=(3/k^{2})(F\left(\phi,k\right)-E\left(\phi, k\right)),</Math> <Math equation-number="19.25.26" mode="display" xml:id="C19.S25.E26">(z-x)^{3/2}R_{J}\left(x,y,z,p\right)=(3/\alpha^{2}){(\Pi\left(\phi,\alpha^{2}, k\right)-F\left(\phi,k\right))},</Math> <Math equation-number="19.25.27" mode="display" xml:id="C19.S25.E27">2(z-x)^{-1/2}R_{G}\left(x,y,z\right)=E\left(\phi,k\right)+(\cot\phi)^{2}F\left (\phi,k\right)+(\cot\phi)\sqrt{1-k^{2}{\sin^{2}}\phi}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS4">
+<title>Theta Functions</title>           
+<para xml:id="C19.S25.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C19.S25.SS4.p1.s1">
+For relations of symmetric integrals to theta functions, see §20.9(i).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS5">
+<title>Jacobian Elliptic Functions</title>          
+ 
+<para xml:id="C19.S25.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C19.S25.SS5.p1.s1">
+For the notation see §§22.2, 22.15, and22.16(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C19.S25.SS5.p2.s1">
+With <Math mode="inline" xml:id="C19.S25.SS5.p2.m1">0\leq k^{2}\leq 1</Math> and <Math mode="inline" xml:id="C19.S25.SS5.p2.m2">\mathrm{p,q,r}</Math> any permutation of the letters <Math mode="inline" xml:id="C19.S25.SS5.p2.m3">\mathrm{c,d,n}</Math> , define <Math equation-number="19.25.28" mode="display" xml:id="C19.S25.E28">\Delta(\mathrm{p,q})={\operatorname{ps}^{2}}\left(u,k\right)-{\operatorname{qs }^{2}}\left(u,k\right)=-\Delta(\mathrm{q,p}),</Math> which implies <Math equation-number="19.25.29" mode="display" xml:id="C19.S25.E29">\Delta(\mathrm{n,d})=k^{2},\Delta(\mathrm{d,c})={k^{\prime}}^{2},\Delta(\mathrm{n,c})=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="25" xml:id="C19.S25.SS5.p2.s2">
+If <Math mode="inline" xml:id="C19.S25.SS5.p2.m4">{\operatorname{cs}^{2}}\left(u,k\right)\geq 0</Math> , then <Math equation-number="19.25.30" mode="display" xml:id="C19.S25.E30">\operatorname{am}\left(u,k\right)=R_{C}\left({\operatorname{cs}^{2}}\left(u,k \right),{\operatorname{ns}^{2}}\left(u,k\right)\right),</Math> <Math equation-number="19.25.31" mode="display" xml:id="C19.S25.E31">u=R_{F}\left({\operatorname{ps}^{2}}\left(u,k\right),{\operatorname{qs}^{2}} \left(u,k\right),{\operatorname{rs}^{2}}\left(u,k\right)\right);</Math> compare (19.25.35) and (20.9.3).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="26" xml:id="C19.S25.SS5.p2.s3">
+<Math equation-number="19.25.32" mode="display" xml:id="C19.S25.E32">\operatorname{arcps}\left(x,k\right)=R_{F}\left(x^{2},x^{2}+\Delta(\mathrm{q,p }),x^{2}+\Delta(\mathrm{r,p})\right),</Math> <Math equation-number="19.25.33" mode="display" xml:id="C19.S25.E33">\operatorname{arcsp}\left(x,k\right)=xR_{F}\left(1,1+\Delta(\mathrm{q,p})x^{2} ,1+\Delta(\mathrm{r,p})x^{2}\right),</Math> <Math equation-number="19.25.34" mode="display" xml:id="C19.S25.E34">\operatorname{arcpq}\left(x,k\right)=\sqrt{w}R_{F}\left(x^{2},1,1+\Delta( \mathrm{r,q})w\right), if w=\ifrac{(1-x^{2})}{\Delta(\mathrm{q,p})},</Math> where we assume <Math mode="inline" xml:id="C19.S25.SS5.p2.m5">0\leq x^{2}\leq 1</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m6">x=\operatorname{sn}</Math> , <Math mode="inline" xml:id="C19.S25.SS5.p2.m7">\operatorname{cn}</Math> , or <Math mode="inline" xml:id="C19.S25.SS5.p2.m8">\operatorname{cd}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m9">x^{2}\geq 1</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m10">x=\operatorname{ns}</Math> , <Math mode="inline" xml:id="C19.S25.SS5.p2.m11">\operatorname{nc}</Math> , or <Math mode="inline" xml:id="C19.S25.SS5.p2.m12">\operatorname{dc}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m13">x</Math> real if <Math mode="inline" xml:id="C19.S25.SS5.p2.m14">x=\operatorname{cs}</Math> or <Math mode="inline" xml:id="C19.S25.SS5.p2.m15">\operatorname{sc}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m16">k^{\prime}\leq x\leq 1</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m17">x=\operatorname{dn}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m18">1\leq x\leq 1/k^{\prime}</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m19">x=\operatorname{nd}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m20">x^{2}\geq{k^{\prime}}^{2}</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m21">x=\operatorname{ds}</Math> ; <Math mode="inline" xml:id="C19.S25.SS5.p2.m22">0\leq x^{2}\leq 1/{k^{\prime}}^{2}</Math> if <Math mode="inline" xml:id="C19.S25.SS5.p2.m23">x=\operatorname{sd}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS5.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C19.S25.SS5.p3.s1">
+For the use of <Math mode="inline" xml:id="C19.S25.SS5.p3.m1">R</Math> -functions with <Math mode="inline" xml:id="C19.S25.SS5.p3.m2">\Delta(\mathrm{p,q})</Math> in unifying other properties of Jacobian elliptic functions, see Carlson (2004, 2006a, 2006b, 2008).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS5.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C19.S25.SS5.p4.s1">
+Inversions of 12 elliptic integrals of the first kind, producing the 12 Jacobian elliptic functions, are combined and simplified by using the properties of <Math mode="inline" xml:id="C19.S25.SS5.p4.m1">R_{F}\left(x,y,z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C19.S25.SS5.p4.s2">
+See (19.29.19),Carlson (2005), and (22.15.11), and compare withAbramowitz and Stegun (1964, (17.4.41)–(17.4.52)).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="30" xml:id="C19.S25.SS5.p4.s3">
+For analogous integrals of the second kind, which are not invertible in terms of single-valued functions, see (19.29.20) and (19.29.21) and compare withGradshteyn and Ryzhik (2000, §3.153,1–10 and §3.156,1–9).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS6">
+<title>Weierstrass Elliptic Functions</title>           
+<para xml:id="C19.S25.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C19.S25.SS6.p1.s1">
+For the notation see §23.2 and §23.3.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C19.S25.SS6.p1.s2">
+<Math equation-number="19.25.35" mode="display" xml:id="C19.S25.E35">z=R_{F}\left(\wp\left(z\right)-e_{1},\wp\left(z\right)-e_{2},\wp\left(z\right) -e_{3}\right),</Math> provided that <Math mode="inline" xml:id="C19.S25.SS6.p1.m1">z</Math> satisfies <Math equation-number="19.25.36" mode="display" xml:id="C19.S25.E36">\wp\left(z\right)-e_{j}\in\mathbb{C}\setminus(-\infty,0], if j=1,2,3,</Math> and the left-hand side does not vanish for more than one value of <Math mode="inline" xml:id="C19.S25.SS6.p1.m2">j</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C19.S25.SS6.p1.s3">
+Also, <Math equation-number="19.25.37" mode="display" xml:id="C19.S25.E37">\zeta\left(z\right)+z\wp\left(z\right)=2\!R_{G}\left(\wp\left(z\right)-e_{1}, \wp\left(z\right)-e_{2},\wp\left(z\right)-e_{3}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="34" xml:id="C19.S25.SS6.p2.s1">
+In (19.25.38) and (19.25.39)
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="35" xml:id="C19.S25.SS6.p2.s2">
+<Math mode="inline" xml:id="C19.S25.SS6.p2.m1">j,k,\ell</Math> is any permutation of the numbers <Math mode="inline" xml:id="C19.S25.SS6.p2.m2">1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="36" xml:id="C19.S25.SS6.p2.s3">
+<Math equation-number="19.25.38" mode="display" xml:id="C19.S25.E38">\omega_{j}=R_{F}\left(0,e_{j}-e_{k},e_{j}-e_{\ell}\right),</Math> <Math equation-number="19.25.39" mode="display" xml:id="C19.S25.E39">\eta_{j}+\omega_{j}e_{j}=2\!R_{G}\left(0,e_{j}-e_{k},e_{j}-e_{\ell}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="37" xml:id="C19.S25.SS6.p2.s4">
+For <Math mode="inline" xml:id="C19.S25.SS6.p2.m3">\eta_{j}</Math> see (23.2.12).
+</sentence>
+
+</para>
+ 
+<para xml:id="C19.S25.SS6.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="38" xml:id="C19.S25.SS6.p3.s1">
+Lastly, <Math equation-number="19.25.40" mode="display" xml:id="C19.S25.E40">z=\sigma\left(z\right)R_{F}\left(\sigma_{1}^{2}(z),\sigma_{2}^{2}(z),\sigma_{3 }^{2}(z)\right),</Math> where <Math equation-number="19.25.41" mode="display" xml:id="C19.S25.E41">\sigma_{j}(z)=\exp\left(-\eta_{j}z\right)\sigma\left(z+\omega_{j}\right)/ \sigma\left(\omega_{j}\right), if j=1,2,3</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="39" xml:id="C19.S25.SS6.p3.s2">
+For <Math mode="inline" xml:id="C19.S25.SS6.p3.m1">\eta_{j}</Math> see (23.2.12).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C19.S25.SS7">
+<title>Hypergeometric Function</title>             
+ 
+<para xml:id="C19.S25.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="40" xml:id="C19.S25.SS7.p1.s1">
+ <Math equation-number="19.25.42" mode="display" xml:id="C19.S25.E42">{{}_{2}F_{1}}\left(a,b;c;z\right)=R_{-a}\left(b,c-b;1-z,1\right),</Math> <Math equation-number="19.25.43" mode="display" xml:id="C19.S25.E43">R_{-a}\left(b_{1},b_{2};z_{1},z_{2}\right)=z_{2}^{-a}{{}_{2}F_{1}}\left(a,b_{1 };b_{1}+b_{2};1-(z_{1}/z_{2})\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="41" xml:id="C19.S25.SS7.p1.s2">
+For these results and extensions to the Appell function <Math mode="inline" xml:id="C19.S25.SS7.p1.m1">{F_{1}}</Math> (§16.13) and Lauricella’s function <Math mode="inline" xml:id="C19.S25.SS7.p1.m2">F_{D}</Math> seeCarlson (1963).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="42" xml:id="C19.S25.SS7.p1.s3">
+( <Math mode="inline" xml:id="C19.S25.SS7.p1.m3">{F_{1}}</Math> and <Math mode="inline" xml:id="C19.S25.SS7.p1.m4">F_{D}</Math> are equivalent to the <Math mode="inline" xml:id="C19.S25.SS7.p1.m5">R</Math> -function of 3 and <Math mode="inline" xml:id="C19.S25.SS7.p1.m6">n</Math> variables, respectively, but lack full symmetry.)
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

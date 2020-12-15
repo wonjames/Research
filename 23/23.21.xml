@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C23.S21">
+<title>Physical Applications</title>               
+<subsection xml:id="C23.S21.SS1">
+<title>Classical Dynamics</title>         
+<para xml:id="C23.S21.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C23.S21.SS1.p1.s1">
+In §22.19(ii) it is noted that Jacobian elliptic functions provide a natural basis of solutions for problems in Newtonian classical dynamics with quartic potentials in canonical form <Math mode="inline" xml:id="C23.S21.SS1.p1.m1">(1-x^{2})(1-k^{2}x^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C23.S21.SS1.p1.s2">
+The Weierstrass function <Math mode="inline" xml:id="C23.S21.SS1.p1.m2">\wp</Math> plays a similar role for cubic potentials in canonical form <Math mode="inline" xml:id="C23.S21.SS1.p1.m3">g_{3}+g_{2}x-4x^{3}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C23.S21.SS1.p1.s3">
+See, for example,Lawden (1989, Chapter 7) andWhittaker (1964, Chapters 4–6).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS2">
+<title>Nonlinear Evolution Equations</title>             
+<para xml:id="C23.S21.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C23.S21.SS2.p1.s1">
+Airault et al. (1977) applies the function <Math mode="inline" xml:id="C23.S21.SS2.p1.m1">\wp</Math> to an integrable classical many-body problem, and relates the solutions to nonlinear partial differential equations.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C23.S21.SS2.p1.s2">
+For applications to soliton solutions of the Korteweg–de Vries (KdV) equation see McKean and Moll (1999, p. 91),Deconinck and Segur (2000), and Walker (1996, §8.1).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS3">
+<title>Ellipsoidal Coordinates</title>          
+ 
+<para xml:id="C23.S21.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C23.S21.SS3.p1.s1">
+Ellipsoidal coordinates <Math mode="inline" xml:id="C23.S21.SS3.p1.m1">(\xi,\eta,\zeta)</Math> may be defined as the three roots <Math mode="inline" xml:id="C23.S21.SS3.p1.m2">\rho</Math> of the equation <Math equation-number="23.21.1" mode="display" xml:id="C23.S21.E1">\frac{x^{2}}{\rho-e_{1}}+\frac{y^{2}}{\rho-e_{2}}+\frac{z^{2}}{\rho-e_{3}}=1,</Math> where <Math mode="inline" xml:id="C23.S21.SS3.p1.m3">x,y,z</Math> are the corresponding Cartesian coordinates and <Math mode="inline" xml:id="C23.S21.SS3.p1.m4">e_{1}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p1.m5">e_{2}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p1.m6">e_{3}</Math> are constants.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C23.S21.SS3.p1.s2">
+The Laplacian operator <Math mode="inline" xml:id="C23.S21.SS3.p1.m7">\nabla^{2}</Math> (§1.5(ii)) is given by <Math equation-number="23.21.2" mode="display" xml:id="C23.S21.E2">(\eta-\zeta)(\zeta-\xi)(\xi-\eta)\nabla^{2}=(\zeta-\eta)f(\xi)f^{\prime}(\xi) \frac{\partial}{\partial\xi}+(\xi-\zeta)f(\eta)f^{\prime}(\eta)\frac{\partial} {\partial\eta}+(\eta-\xi)f(\zeta)f^{\prime}(\zeta)\frac{\partial}{\partial \zeta},</Math> where <Math equation-number="23.21.3" mode="display" xml:id="C23.S21.E3">f(\rho)=2\left((\rho-e_{1})(\rho-e_{2})(\rho-e_{3})\right)^{1/2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S21.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C23.S21.SS3.p2.s1">
+Another form is obtained by identifying <Math mode="inline" xml:id="C23.S21.SS3.p2.m1">e_{1}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p2.m2">e_{2}</Math> , <Math mode="inline" xml:id="C23.S21.SS3.p2.m3">e_{3}</Math> as lattice roots (§23.3(i)), and setting <Math equation-number="23.21.4" mode="display" xml:id="C23.S21.E4">\xi=\wp\left(u\right),\eta=\wp\left(v\right),\zeta=\wp\left(w\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="9" xml:id="C23.S21.SS3.p2.s2">
+Then <Math equation-number="23.21.5" mode="display" xml:id="C23.S21.E5">\left(\wp\left(v\right)-\wp\left(w\right)\right)\left(\wp\left(w\right)-\wp \left(u\right)\right)\left(\wp\left(u\right)-\wp\left(v\right)\right)\nabla^{2 }=\left(\wp\left(w\right)-\wp\left(v\right)\right)\frac{{\partial}^{2}}{{ \partial u}^{2}}+\left(\wp\left(u\right)-\wp\left(w\right)\right)\frac{{ \partial}^{2}}{{\partial v}^{2}}+\left(\wp\left(v\right)-\wp\left(u\right) \right)\frac{{\partial}^{2}}{{\partial w}^{2}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C23.S21.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C23.S21.SS3.p3.s1">
+See also §29.18(ii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C23.S21.SS4">
+<title>Modular Functions</title>         
+<para xml:id="C23.S21.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C23.S21.SS4.p1.s1">
+Physical applications of modular functions include: Quantum field theory.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C23.S21.SS4.p1.s2">
+See Witten (1987).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="13" xml:id="C23.S21.SS4.p1.s3">
+Statistical mechanics.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="14" xml:id="C23.S21.SS4.p1.s4">
+See Baxter (1982, p. 434) andItzykson and Drouffe (1989, §9.3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="15" xml:id="C23.S21.SS4.p1.s5">
+String theory.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="16" xml:id="C23.S21.SS4.p1.s6">
+See Green et al. (1988a, §8.2) andPolchinski (1998, §7.2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

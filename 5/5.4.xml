@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S4">
+<title>Special Values and Extrema</title>        
+  
+<subsection xml:id="C5.S4.SS1">
+<title>Gamma Function</title>        
+ 
+<para xml:id="C5.S4.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S4.SS1.p1.s1">
+ <Math equation-number="5.4.1" mode="display" xml:id="C5.S4.E1">\Gamma\left(1\right)=1,n!=\Gamma\left(n+1\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C5.S4.SS1.p1.s2">
+<Math equation-number="5.4.2" mode="display" xml:id="C5.S4.E2">n!!=\begin{cases}2^{\frac{1}{2}n}\Gamma\left(\frac{1}{2}n+1\right),&amp;n\text{ even},\\ \pi^{-\frac{1}{2}}2^{\frac{1}{2}n+\frac{1}{2}}\Gamma\left(\frac{1}{2}n+1\right ),&amp;n\text{ odd}.\end{cases</Math> } (The second line of Formula (5.4.2) also applies when <Math mode="inline" xml:id="C5.S4.SS1.p1.m1">n=-1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C5.S4.SS1.p1.s3">
+) <Math equation-number="5.4.3" mode="display" xml:id="C5.S4.E3">|\Gamma\left(iy\right)|=\left(\frac{\pi}{y\sinh\left(\pi y\right)}\right)^{1/2},</Math> <Math equation-number="5.4.4" mode="display" xml:id="C5.S4.E4">\Gamma\left(\tfrac{1}{2}+\mathrm{i}y\right)\Gamma\left(\tfrac{1}{2}-\mathrm{i} y\right)=\left|\Gamma\left(\tfrac{1}{2}+\mathrm{i}y\right)\right|^{2}=\frac{ \pi}{\cosh\left(\pi y\right)},</Math> <Math equation-number="5.4.5" mode="display" xml:id="C5.S4.E5">\Gamma\left(\tfrac{1}{4}+\mathrm{i}y\right)\Gamma\left(\tfrac{3}{4}-\mathrm{i} y\right)=\frac{\pi\sqrt{2}}{\cosh\left(\pi y\right)+\mathrm{i}\sinh\left(\pi y \right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C5.S4.SS1.p1.s4">
+<Math equation-number="5.4.6" mode="display" xml:id="C5.S4.E6">\Gamma\left(\tfrac{1}{2}\right)=\pi^{1/2}\\ =1.77245\;38509\;05516\;02729\;\dots</Math> , <Math equation-number="5.4.7" mode="display" xml:id="C5.S4.E7">\Gamma\left(\tfrac{1}{3}\right)=2.67893\;85347\;07747\;63365\;\dots</Math> , <Math equation-number="5.4.8" mode="display" xml:id="C5.S4.E8">\Gamma\left(\tfrac{2}{3}\right)=1.35411\;79394\;26400\;41694\;\dots</Math> , <Math equation-number="5.4.9" mode="display" xml:id="C5.S4.E9">\Gamma\left(\tfrac{1}{4}\right)=3.62560\;99082\;21908\;31193\;\dots</Math> ,, <Math equation-number="5.4.10" mode="display" xml:id="C5.S4.E10">\Gamma\left(\tfrac{3}{4}\right)=1.22541\;67024\;65177\;64512\;\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C5.S4.SS1.p1.s5">
+<Math equation-number="5.4.11" mode="display" xml:id="C5.S4.E11">\Gamma'\left(1\right)=-\gamma</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S4.SS2">
+<title>Psi Function</title>         
+ 
+<para xml:id="C5.S4.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C5.S4.SS2.p1.s1">
+ <Math equation-number="5.4.12" mode="display" xml:id="C5.S4.E12">\psi\left(1\right)=-\gamma,\psi'\left(1\right)=\tfrac{1}{6}\pi^{2},</Math> <Math equation-number="5.4.13" mode="display" xml:id="C5.S4.E13">\psi\left(\tfrac{1}{2}\right)=-\gamma-2\ln 2,\psi'\left(\tfrac{1}{2}\right)=\tfrac{1}{2}\pi^{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C5.S4.SS2.p1.s2">
+For higher derivatives of <Math mode="inline" xml:id="C5.S4.SS2.p1.m1">\psi\left(z\right)</Math> at <Math mode="inline" xml:id="C5.S4.SS2.p1.m2">z=1</Math> and <Math mode="inline" xml:id="C5.S4.SS2.p1.m3">z=\frac{1}{2}</Math> , see §5.15.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="8" xml:id="C5.S4.SS2.p1.s3">
+<Math equation-number="5.4.14" mode="display" xml:id="C5.S4.E14">\psi\left(n+1\right)=\sum_{k=1}^{n}\frac{1}{k}-\gamma,</Math> <Math equation-number="5.4.15" mode="display" xml:id="C5.S4.E15">\psi\left(n+\tfrac{1}{2}\right)=-\gamma-2\ln 2+2\left(1+\tfrac{1}{3}+\dots+ \tfrac{1}{2n-1}\right), if n=1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="9" xml:id="C5.S4.SS2.p1.s4">
+<Math equation-number="5.4.16" mode="display" xml:id="C5.S4.E16">\Im\psi\left(iy\right)=\frac{1}{2y}+\frac{\pi}{2}\coth\left(\pi y\right),</Math> <Math equation-number="5.4.17" mode="display" xml:id="C5.S4.E17">\Im\psi\left(\tfrac{1}{2}+iy\right)=\frac{\pi}{2}\tanh\left(\pi y\right),</Math> <Math equation-number="5.4.18" mode="display" xml:id="C5.S4.E18">\Im\psi\left(1+iy\right)=-\frac{1}{2y}+\frac{\pi}{2}\coth\left(\pi y\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="10" xml:id="C5.S4.SS2.p1.s5">
+If <Math mode="inline" xml:id="C5.S4.SS2.p1.m4">p,q</Math> are integers with <Math mode="inline" xml:id="C5.S4.SS2.p1.m5">0&lt;p&lt;q</Math> , then <Math equation-number="5.4.19" mode="display" xml:id="C5.S4.E19">\psi\left(\frac{p}{q}\right)=-\gamma-\ln q-\frac{\pi}{2}\cot\left(\frac{\pi p} {q}\right)+\frac{1}{2}\sum_{k=1}^{q-1}\cos\left(\frac{2\pi kp}{q}\right)\ln \left(2-2\cos\left(\frac{2\pi k}{q}\right)\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S4.SS3">
+<title>Extrema</title>        
+         
+  
+<sentence sentence-num-in-section="11" xml:id="C5.S4.T1.s1">
+Table 5.4.1: <Math mode="inline" xml:id="C5.S4.T1.m2">\Gamma'\left(x_{n}\right)=\psi\left(x_{n}\right)=0</Math> .
+</sentence> 
+
+<sentence sentence-num-in-section="12" sentence-num-in-table="1" xml:id="C5.S4.T1.t1.s1">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r1.m1">n</Math>
+</sentence>
+
+<sentence sentence-num-in-section="13" sentence-num-in-table="2" xml:id="C5.S4.T1.t1.s2">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r1.m2">x_{n}</Math>
+</sentence>
+
+<sentence sentence-num-in-section="14" sentence-num-in-table="3" xml:id="C5.S4.T1.t1.s3">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r1.m3">\Gamma\left(x_{n}\right)</Math>
+</sentence>
+
+<sentence sentence-num-in-section="15" sentence-num-in-table="4" xml:id="C5.S4.T1.t1.s4">
+0
+</sentence>
+
+<sentence sentence-num-in-section="16" sentence-num-in-table="5" xml:id="C5.S4.T1.t1.s5">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r2.m1">1.46163\;21449\;68362\;34126</Math>
+</sentence>
+
+<sentence sentence-num-in-section="17" sentence-num-in-table="6" xml:id="C5.S4.T1.t1.s6">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r2.m2">0.88560\;31944\;10888\;70028</Math>
+</sentence>
+
+<sentence sentence-num-in-section="18" sentence-num-in-table="7" xml:id="C5.S4.T1.t1.s7">
+1
+</sentence>
+
+<sentence sentence-num-in-section="19" sentence-num-in-table="8" xml:id="C5.S4.T1.t1.s8">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r3.m1">-0.50408\;30082\;64455\;4092</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="20" sentence-num-in-table="9" xml:id="C5.S4.T1.t1.s9">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r3.m2">-3.54464\;36111\;55005\;0891</Math>2
+</sentence>
+
+<sentence sentence-num-in-section="21" sentence-num-in-table="10" xml:id="C5.S4.T1.t1.s10">
+2
+</sentence>
+
+<sentence sentence-num-in-section="22" sentence-num-in-table="11" xml:id="C5.S4.T1.t1.s11">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r4.m1">-1.57349\;84731\;62390\;4587</Math>8
+</sentence>
+
+<sentence sentence-num-in-section="23" sentence-num-in-table="12" xml:id="C5.S4.T1.t1.s12">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r4.m2">2.30240\;72583\;39680\;13582</Math>
+</sentence>
+
+<sentence sentence-num-in-section="24" sentence-num-in-table="13" xml:id="C5.S4.T1.t1.s13">
+3
+</sentence>
+
+<sentence sentence-num-in-section="25" sentence-num-in-table="14" xml:id="C5.S4.T1.t1.s14">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r5.m1">-2.61072\;08684\;44144\;6500</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="26" sentence-num-in-table="15" xml:id="C5.S4.T1.t1.s15">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r5.m2">-0.88813\;63584\;01241\;9201</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="27" sentence-num-in-table="16" xml:id="C5.S4.T1.t1.s16">
+4
+</sentence>
+
+<sentence sentence-num-in-section="28" sentence-num-in-table="17" xml:id="C5.S4.T1.t1.s17">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r6.m1">-3.63529\;33664\;36901\;0978</Math>4
+</sentence>
+
+<sentence sentence-num-in-section="29" sentence-num-in-table="18" xml:id="C5.S4.T1.t1.s18">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r6.m2">0.24512\;75398\;34366\;25044</Math>
+</sentence>
+
+<sentence sentence-num-in-section="30" sentence-num-in-table="19" xml:id="C5.S4.T1.t1.s19">
+5
+</sentence>
+
+<sentence sentence-num-in-section="31" sentence-num-in-table="20" xml:id="C5.S4.T1.t1.s20">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r7.m1">-4.65323\;77617\;43142\;4417</Math>1
+</sentence>
+
+<sentence sentence-num-in-section="32" sentence-num-in-table="21" xml:id="C5.S4.T1.t1.s21">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r7.m2">-0.05277\;96395\;87319\;4007</Math>6
+</sentence>
+
+<sentence sentence-num-in-section="33" sentence-num-in-table="22" xml:id="C5.S4.T1.t1.s22">
+6
+</sentence>
+
+<sentence sentence-num-in-section="34" sentence-num-in-table="23" xml:id="C5.S4.T1.t1.s23">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r8.m1">-5.66716\;24415\;56885\;5358</Math>5
+</sentence>
+
+<sentence sentence-num-in-section="35" sentence-num-in-table="24" xml:id="C5.S4.T1.t1.s24">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r8.m2">0.00932\;45944\;82614\;85052</Math>
+</sentence>
+
+<sentence sentence-num-in-section="36" sentence-num-in-table="25" xml:id="C5.S4.T1.t1.s25">
+7
+</sentence>
+
+<sentence sentence-num-in-section="37" sentence-num-in-table="26" xml:id="C5.S4.T1.t1.s26">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r9.m1">-6.67841\;82130\;73426\;7428</Math>3
+</sentence>
+
+<sentence sentence-num-in-section="38" sentence-num-in-table="27" xml:id="C5.S4.T1.t1.s27">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r9.m2">-0.00139\;73966\;08949\;7673</Math>0
+</sentence>
+
+<sentence sentence-num-in-section="39" sentence-num-in-table="28" xml:id="C5.S4.T1.t1.s28">
+8
+</sentence>
+
+<sentence sentence-num-in-section="40" sentence-num-in-table="29" xml:id="C5.S4.T1.t1.s29">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r10.m1">-7.68778\;83250\;31626\;0374</Math>4
+</sentence>
+
+<sentence sentence-num-in-section="41" sentence-num-in-table="30" xml:id="C5.S4.T1.t1.s30">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r10.m2">0.00018\;18784\;44909\;40419</Math>
+</sentence>
+
+<sentence sentence-num-in-section="42" sentence-num-in-table="31" xml:id="C5.S4.T1.t1.s31">
+9
+</sentence>
+
+<sentence sentence-num-in-section="43" sentence-num-in-table="32" xml:id="C5.S4.T1.t1.s32">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r11.m1">-8.69576\;41638\;16401\;2664</Math>9
+</sentence>
+
+<sentence sentence-num-in-section="44" sentence-num-in-table="33" xml:id="C5.S4.T1.t1.s33">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r11.m2">-0.00002\;09252\;90446\;5266</Math>7
+</sentence>
+
+<sentence sentence-num-in-section="45" sentence-num-in-table="34" xml:id="C5.S4.T1.t1.s34">
+10
+</sentence>
+
+<sentence sentence-num-in-section="46" sentence-num-in-table="35" xml:id="C5.S4.T1.t1.s35">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r12.m1">-9.70267\;25400\;01863\;7360</Math>8
+</sentence>
+
+<sentence sentence-num-in-section="47" sentence-num-in-table="36" xml:id="C5.S4.T1.t1.s36">
+<Math mode="inline" xml:id="C5.S4.T1.t1.r12.m2">0.00000\;21574\;16104\;52285</Math>
+</sentence>
+
+  
+<para xml:id="C5.S4.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="48" xml:id="C5.S4.SS3.p1.s1">
+Compare Figure 5.3.1.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S4.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C5.S4.SS3.p2.s1">
+As <Math mode="inline" xml:id="C5.S4.SS3.p2.m1">n\to\infty</Math> , <Math equation-number="5.4.20" mode="display" xml:id="C5.S4.E20">x_{n}=-n+\frac{1}{\pi}\operatorname{arctan}\left(\frac{\pi}{\ln n}\right)+O \left(\frac{1}{n(\ln n)^{2}}\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S4.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C5.S4.SS3.p3.s1">
+For error bounds for this estimate see Walker (2007, Theorem 5).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

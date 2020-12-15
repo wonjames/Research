@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S2">
+<title>Transcendental Equations</title>           
+<para xml:id="C2.S2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S2.p1.s1">
+Let <Math mode="inline" xml:id="C2.S2.p1.m1">f(x)</Math> be continuous and strictly increasing when <Math mode="inline" xml:id="C2.S2.p1.m2">a&lt;x&lt;\infty</Math> and <Math equation-number="2.2.1" mode="display" xml:id="C2.S2.E1">f(x)\sim x, if x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S2.p1.s2">
+Then for <Math mode="inline" xml:id="C2.S2.p1.m3">y&gt;f(a)</Math> the equation <Math mode="inline" xml:id="C2.S2.p1.m4">f(x)=y</Math> has a unique root <Math mode="inline" xml:id="C2.S2.p1.m5">x=x(y)</Math> in <Math mode="inline" xml:id="C2.S2.p1.m6">(a,\infty)</Math> , and <Math equation-number="2.2.2" mode="display" xml:id="C2.S2.E2">x(y)\sim y, if y\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S2.Px1">
+<title>Example</title>   
+<para xml:id="C2.S2.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C2.S2.Px1.p1.s1">
+ <Math equation-number="2.2.3" mode="display" xml:id="C2.S2.E3">t^{2}-\ln t=y</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="4" xml:id="C2.S2.Px1.p1.s2">
+With <Math mode="inline" xml:id="C2.S2.Px1.p1.m1">x=t^{2}</Math> , <Math mode="inline" xml:id="C2.S2.Px1.p1.m2">f(x)=x-\frac{1}{2}\ln x</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="5" xml:id="C2.S2.Px1.p1.s3">
+We may take <Math mode="inline" xml:id="C2.S2.Px1.p1.m3">a=\frac{1}{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="6" xml:id="C2.S2.Px1.p1.s4">
+From (2.2.2) <Math equation-number="2.2.4" mode="display" xml:id="C2.S2.E4">t=y^{\frac{1}{2}}\left(1+o\left(1\right)\right), if y\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="7" xml:id="C2.S2.Px1.p1.s5">
+Higher approximations are obtainable by successive resubstitutions.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="8" xml:id="C2.S2.Px1.p1.s6">
+For example <Math equation-number="2.2.5" mode="display" xml:id="C2.S2.E5">t^{2}=y+\ln t=y+\tfrac{1}{2}\ln y+o\left(1\right),</Math> and hence <Math equation-number="2.2.6" mode="display" xml:id="C2.S2.E6">t=y^{\frac{1}{2}}\left(1+\tfrac{1}{4}y^{-1}\ln y+o\left(y^{-1}\right)\right), if y\to\infty</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S2.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C2.S2.Px1.p2.s1">
+An important case is the reversion of asymptotic expansions for zeros of special functions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C2.S2.Px1.p2.s2">
+In place of (2.2.1) assume that <Math equation-number="2.2.7" mode="display" xml:id="C2.S2.E7">f(x)\sim x+f_{0}+f_{1}x^{-1}+f_{2}x^{-2}+\cdots, if x\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C2.S2.Px1.p2.s3">
+Then <Math equation-number="2.2.8" mode="display" xml:id="C2.S2.E8">x\sim y-F_{0}-F_{1}y^{-1}-F_{2}y^{-2}-\cdots, if y\to\infty,</Math> where <Math mode="inline" xml:id="C2.S2.Px1.p2.m1">F_{0}=f_{0}</Math> and <Math mode="inline" xml:id="C2.S2.Px1.p2.m2">sF_{s}</Math> ( <Math mode="inline" xml:id="C2.S2.Px1.p2.m3">s\geq 1</Math> ) is the coefficient of <Math mode="inline" xml:id="C2.S2.Px1.p2.m4">x^{-1}</Math> in the asymptotic expansion of <Math mode="inline" xml:id="C2.S2.Px1.p2.m5">(f(x))^{s}</Math> (Lagrange’s formula for the reversion of series).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="12" xml:id="C2.S2.Px1.p2.s4">
+Conditions for the validity of the reversion process in <Math mode="inline" xml:id="C2.S2.Px1.p2.m6">\mathbb{C}</Math> are derived in Olver (1997b, pp. 14–16).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="13" xml:id="C2.S2.Px1.p2.s5">
+Applications to real and complex zeros of Airy functions are given in Fabijonas and Olver (1999).
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="14" xml:id="C2.S2.Px1.p2.s6">
+For other examples see de Bruijn (1961, Chapter 2).
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</section>

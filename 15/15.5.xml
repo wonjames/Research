@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C15.S5">
+<title>Derivatives and Contiguous Functions</title>         
+<subsection xml:id="C15.S5.SS1">
+<title>Differentiation Formulas</title>          
+<para xml:id="C15.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C15.S5.SS1.p1.s1">
+ <Math equation-number="15.5.1" mode="display" xml:id="C15.S5.E1">\frac{\mathrm{d}}{\mathrm{d}z}F\left(a,b;c;z\right)=\frac{ab}{c}F\left(a+1,b+1 ;c+1;z\right),</Math> <Math equation-number="15.5.2" mode="display" xml:id="C15.S5.E2">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}F\left(a,b;c;z\right)=\frac{{\left(a \right)_{n}}{\left(b\right)_{n}}}{{\left(c\right)_{n}}}\*F\left(a+n,b+n;c+n;z \right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C15.S5.SS1.p1.s2">
+<Math equation-number="15.5.3" mode="display" xml:id="C15.S5.E3">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{a-1}F\left(a,b;c;z \right)\right)={\left(a\right)_{n}}z^{a+n-1}F\left(a+n,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C15.S5.SS1.p1.s3">
+<Math equation-number="15.5.4" mode="display" xml:id="C15.S5.E4">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{c-1}F\left(a,b;c;z\right) \right)={\left(c-n\right)_{n}}z^{c-n-1}F\left(a,b;c-n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C15.S5.SS1.p1.s4">
+<Math equation-number="15.5.5" mode="display" xml:id="C15.S5.E5">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}\left(z^{c-a-1}(1-z)^{a+b-c}F \left(a,b;c;z\right)\right)={\left(c-a\right)_{n}}z^{c-a+n-1}(1-z)^{a-n+b-c}\* F\left(a-n,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C15.S5.SS1.p1.s5">
+<Math equation-number="15.5.6" mode="display" xml:id="C15.S5.E6">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left((1-z)^{a+b-c}F\left(a,b;c;z \right)\right)=\frac{{\left(c-a\right)_{n}}{\left(c-b\right)_{n}}}{{\left(c \right)_{n}}}(1-z)^{a+b-c-n}\*F\left(a,b;c+n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C15.S5.SS1.p1.s6">
+<Math equation-number="15.5.7" mode="display" xml:id="C15.S5.E7">\left((1-z)\frac{\mathrm{d}}{\mathrm{d}z}(1-z)\right)^{n}\left((1-z)^{a-1}F \left(a,b;c;z\right)\right)=(-1)^{n}\frac{{\left(a\right)_{n}}{\left(c-b\right )_{n}}}{{\left(c\right)_{n}}}(1-z)^{a+n-1}\*F\left(a+n,b;c+n;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="7" xml:id="C15.S5.SS1.p1.s7">
+<Math equation-number="15.5.8" mode="display" xml:id="C15.S5.E8">\left((1-z)\frac{\mathrm{d}}{\mathrm{d}z}(1-z)\right)^{n}\left(z^{c-1}(1-z)^{b -c}F\left(a,b;c;z\right)\right)={\left(c-n\right)_{n}}z^{c-n-1}(1-z)^{b-c+n}\* F\left(a-n,b;c-n;z\right).</Math>
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="8" xml:id="C15.S5.SS1.p1.s8">
+ <Math equation-number="15.5.9" mode="display" xml:id="C15.S5.E9">\frac{{\mathrm{d}}^{n}}{{\mathrm{d}z}^{n}}\left(z^{c-1}(1-z)^{a+b-c}F\left(a,b ;c;z\right)\right)={\left(c-n\right)_{n}}z^{c-n-1}(1-z)^{a+b-c-n}\*F\left(a-n, b-n;c-n;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C15.S5.SS1.p2.s1">
+Other versions of several of the identities in this subsection can be constructed with the aid of the operator identity <Math equation-number="15.5.10" mode="display" xml:id="C15.S5.E10">\left(z\frac{\mathrm{d}}{\mathrm{d}z}z\right)^{n}=z^{n}\frac{{\mathrm{d}}^{n}} {{\mathrm{d}z}^{n}}z^{n}, if n=1,2,3,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C15.S5.SS1.p2.s2">
+See Erdélyi et al. (1953a, pp. 102–103).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C15.S5.SS2">
+<title>Contiguous Functions</title>        
+   
+<para xml:id="C15.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C15.S5.SS2.p1.s1">
+The six functions <Math mode="inline" xml:id="C15.S5.SS2.p1.m1">F\left(a\pm 1,b;c;z\right)</Math> , <Math mode="inline" xml:id="C15.S5.SS2.p1.m2">F\left(a,b\pm 1;c;z\right)</Math> , <Math mode="inline" xml:id="C15.S5.SS2.p1.m3">F\left(a,b;c\pm 1;z\right)</Math> are said to be contiguous to <Math mode="inline" xml:id="C15.S5.SS2.p1.m4">F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C15.S5.SS2.p1.s2">
+<Math equation-number="15.5.11" mode="display" xml:id="C15.S5.E11">(c-a)F\left(a-1,b;c;z\right)+\left(2a-c+(b-a)z\right)F\left(a,b;c;z\right)+a(z -1)F\left(a+1,b;c;z\right)=0,</Math> , <Math equation-number="15.5.12" mode="display" xml:id="C15.S5.E12">(b-a)F\left(a,b;c;z\right)+aF\left(a+1,b;c;z\right)-bF\left(a,b+1;c;z\right)=0,</Math> , <Math equation-number="15.5.13" mode="display" xml:id="C15.S5.E13">(c-a-b)F\left(a,b;c;z\right)+a(1-z)F\left(a+1,b;c;z\right)-(c-b)F\left(a,b-1;c ;z\right)=0,</Math> , <Math equation-number="15.5.14" mode="display" xml:id="C15.S5.E14">c\left(a+(b-c)z\right)F\left(a,b;c;z\right)-ac(1-z)F\left(a+1,b;c;z\right)+(c- a)(c-b)zF\left(a,b;c+1;z\right)=0,</Math> , <Math equation-number="15.5.15" mode="display" xml:id="C15.S5.E15">(c-a-1)F\left(a,b;c;z\right)+aF\left(a+1,b;c;z\right)-(c-1)F\left(a,b;c-1;z \right)=0,</Math> , <Math equation-number="15.5.16" mode="display" xml:id="C15.S5.E16">c(1-z)F\left(a,b;c;z\right)-cF\left(a-1,b;c;z\right)+(c-b)zF\left(a,b;c+1;z \right)=0,</Math> , <Math equation-number="15.5.17" mode="display" xml:id="C15.S5.E17">\left(a-1+(b+1-c)z\right)F\left(a,b;c;z\right)+(c-a)F\left(a-1,b;c;z\right)-(c -1)(1-z)F\left(a,b;c-1;z\right)=0,</Math> , <Math equation-number="15.5.18" mode="display" xml:id="C15.S5.E18">c(c-1)(z-1)F\left(a,b;c-1;z\right)+{c\left(c-1-(2c-a-b-1)z\right)}F\left(a,b;c ;z\right)+(c-a)(c-b)zF\left(a,b;c+1;z\right)=0</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C15.S5.SS2.p2.s1">
+By repeated applications of (15.5.11)–(15.5.18) any function <Math mode="inline" xml:id="C15.S5.SS2.p2.m1">F\left(a+k,b+\ell;c+m;z\right)</Math> , in which <Math mode="inline" xml:id="C15.S5.SS2.p2.m2">k,\ell,m</Math> are integers, can be expressed as a linear combination of <Math mode="inline" xml:id="C15.S5.SS2.p2.m3">F\left(a,b;c;z\right)</Math> and any one of its contiguous functions, with coefficients that are rational functions of <Math mode="inline" xml:id="C15.S5.SS2.p2.m4">a,b,c</Math> , and <Math mode="inline" xml:id="C15.S5.SS2.p2.m5">z</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C15.S5.SS2.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C15.S5.SS2.p3.s1">
+An equivalent equation to the hypergeometric differential equation (15.10.1) is <Math equation-number="15.5.19" mode="display" xml:id="C15.S5.E19">{z(1-z)(a+1)(b+1)}F\left(a+2,b+2;c+2;z\right)+{(c-(a+b+1)z)(c+1)}F\left(a+1,b+ 1;c+1;z\right)-{c(c+1)}F\left(a,b;c;z\right)=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="15" xml:id="C15.S5.SS2.p3.s2">
+Further contiguous relations include: <Math equation-number="15.5.20" mode="display" xml:id="C15.S5.E20">z(1-z)\left(\ifrac{\mathrm{d}F\left(a,b;c;z\right)}{\mathrm{d}z}\right)=(c-a)F \left(a-1,b;c;z\right)+(a-c+bz)F\left(a,b;c;z\right)=(c-b)F\left(a,b-1;c;z \right)+(b-c+az)F\left(a,b;c;z\right),</Math> <Math equation-number="15.5.21" mode="display" xml:id="C15.S5.E21">c(1-z)\left(\ifrac{\mathrm{d}F\left(a,b;c;z\right)}{\mathrm{d}z}\right)=(c-a)( c-b)F\left(a,b;c+1;z\right)+c(a+b-c)F\left(a,b;c;z\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C11.S10">
+<title>Anger–Weber Functions</title>        
+  
+<subsection xml:id="C11.S10.SS1">
+<title>Definitions</title>        
+  
+ 
+<para xml:id="C11.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C11.S10.SS1.p1.s1">
+The Anger function <Math mode="inline" xml:id="C11.S10.SS1.p1.m1">\mathbf{J}_{\nu}\left(z\right)</Math> and Weber function <Math mode="inline" xml:id="C11.S10.SS1.p1.m2">\mathbf{E}_{\nu}\left(z\right)</Math> are defined by <Math equation-number="11.10.1" mode="display" xml:id="C11.S10.E1">\mathbf{J}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\cos\left(\nu\theta- z\sin\theta\right)\mathrm{d}\theta,</Math> <Math equation-number="11.10.2" mode="display" xml:id="C11.S10.E2">\mathbf{E}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\pi}\sin\left(\nu\theta- z\sin\theta\right)\mathrm{d}\theta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C11.S10.SS1.p1.s2">
+Each is an entire function of <Math mode="inline" xml:id="C11.S10.SS1.p1.m3">z</Math> and <Math mode="inline" xml:id="C11.S10.SS1.p1.m4">\nu</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C11.S10.SS1.p1.s3">
+Also, <Math equation-number="11.10.3" mode="display" xml:id="C11.S10.E3">\frac{1}{\pi}\int_{0}^{2\pi}\cos\left(\nu\theta-z\sin\theta\right)\mathrm{d} \theta=(1+\cos\left(2\pi\nu\right))\,\mathbf{J}_{\nu}\left(z\right)+\sin\left( 2\pi\nu\right)\mathbf{E}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C11.S10.SS1.p2.s1">
+The associated Anger–Weber function <Math mode="inline" xml:id="C11.S10.SS1.p2.m1">\mathbf{A}_{\nu}\left(z\right)</Math> is defined by <Math equation-number="11.10.4" mode="display" xml:id="C11.S10.E4">\mathbf{A}_{\nu}\left(z\right)=\frac{1}{\pi}\int_{0}^{\infty}e^{-\nu t-z\sinh t }\mathrm{d}t, if \Re z&gt;0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C11.S10.SS1.p2.s2">
+(11.10.4) also applies when <Math mode="inline" xml:id="C11.S10.SS1.p2.m2">\Re z=0</Math> and <Math mode="inline" xml:id="C11.S10.SS1.p2.m3">\Re\nu&gt;0</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS2">
+<title>Differential Equations</title>        
+  
+<para xml:id="C11.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C11.S10.SS2.p1.s1">
+The Anger and Weber functions satisfy the inhomogeneous Bessel differential equation <Math equation-number="11.10.5" mode="display" xml:id="C11.S10.E5">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}z}^{2}}+\frac{1}{z}\frac{\mathrm{d}w}{ \mathrm{d}z}+\left(1-\frac{\nu^{2}}{z^{2}}\right)w=f(\nu,z),</Math> where <Math equation-number="11.10.6" mode="display" xml:id="C11.S10.E6">f(\nu,z)=\frac{(z-\nu)}{\pi z^{2}}\sin\left(\pi\nu\right), if w=\mathbf{J}_{\nu}\left(z\right),</Math> or <Math equation-number="11.10.7" mode="display" xml:id="C11.S10.E7">f(\nu,z)=-\frac{1}{\pi z^{2}}(z+\nu+(z-\nu)\cos\left(\pi\nu\right)), if w=\mathbf{E}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS3">
+<title>Maclaurin Series</title>        
+  
+ 
+<para xml:id="C11.S10.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C11.S10.SS3.p1.s1">
+ <Math equation-number="11.10.8" mode="display" xml:id="C11.S10.E8">\mathbf{J}_{\nu}\left(z\right)=\cos\left(\tfrac{1}{2}\pi\nu\right)\,S_{1}(\nu, z)+\sin\left(\tfrac{1}{2}\pi\nu\right)\,S_{2}(\nu,z),</Math> <Math equation-number="11.10.9" mode="display" xml:id="C11.S10.E9">\mathbf{E}_{\nu}\left(z\right)=\sin\left(\tfrac{1}{2}\pi\nu\right)\,S_{1}(\nu, z)-\cos\left(\tfrac{1}{2}\pi\nu\right)\,S_{2}(\nu,z),</Math> where <Math equation-number="11.10.10" mode="display" xml:id="C11.S10.E10">S_{1}(\nu,z)=\sum_{k=0}^{\infty}\frac{(-1)^{k}(\tfrac{1}{2}z)^{2k}}{\Gamma \left(k\!+\!\tfrac{1}{2}\nu+1\right)\Gamma\left(k\!-\!\tfrac{1}{2}\nu\!+\!1 \right)},</Math> <Math equation-number="11.10.11" mode="display" xml:id="C11.S10.E11">S_{2}(\nu,z)=\sum_{k=0}^{\infty}\frac{(-1)^{k}(\tfrac{1}{2}z)^{2k+1}}{\Gamma \left(k\!+\!\tfrac{1}{2}\nu\!+\!\tfrac{3}{2}\right)\Gamma\left(k\!-\!\tfrac{1} {2}\nu\!+\!\tfrac{3}{2}\right)}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C11.S10.SS3.p1.s2">
+These expansions converge absolutely for all finite values of <Math mode="inline" xml:id="C11.S10.SS3.p1.m1">z</Math>.
+</sentence>
+
+</para>
+  
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS4">
+<title>Graphics</title>        
+            
+<sentence sentence-num-in-section="9" xml:id="C11.S10.F1.s1">
+Figure 11.10.1: Anger function <Math mode="inline" xml:id="C11.S10.F1.m4">\mathbf{J}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F1.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S10.F1.m6">\nu=0,\frac{1}{2},1,\frac{3}{2}</Math> .
+</sentence>            
+<sentence sentence-num-in-section="10" xml:id="C11.S10.F2.s1">
+Figure 11.10.2: Weber function <Math mode="inline" xml:id="C11.S10.F2.m4">\mathbf{E}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F2.m5">-8\leq x\leq 8</Math> and <Math mode="inline" xml:id="C11.S10.F2.m6">\nu=0,\frac{1}{2},1,\frac{3}{2}</Math> .
+</sentence>  
+            
+<sentence sentence-num-in-section="11" xml:id="C11.S10.F3.s1">
+Figure 11.10.3: Anger function <Math mode="inline" xml:id="C11.S10.F3.m4">\mathbf{J}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F3.m5">-10\leq x\leq 10</Math> and <Math mode="inline" xml:id="C11.S10.F3.m6">0\leq\nu\leq 5</Math> .
+</sentence>            
+<sentence sentence-num-in-section="12" xml:id="C11.S10.F4.s1">
+Figure 11.10.4: Weber function <Math mode="inline" xml:id="C11.S10.F4.m4">\mathbf{E}_{\nu}\left(x\right)</Math> for <Math mode="inline" xml:id="C11.S10.F4.m5">-10\leq x\leq 10</Math> and <Math mode="inline" xml:id="C11.S10.F4.m6">0\leq\nu\leq 5</Math> .
+</sentence>  
+ 
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS5">
+<title>Interrelations</title>        
+  
+<para xml:id="C11.S10.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C11.S10.SS5.p1.s1">
+ <Math equation-number="11.10.12" mode="display" xml:id="C11.S10.E12">\mathbf{J}_{\nu}\left(-z\right)=\mathbf{J}_{-\nu}\left(z\right),\mathbf{E}_{\nu}\left(-z\right)=-\mathbf{E}_{-\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C11.S10.SS5.p1.s2">
+<Math equation-number="11.10.13" mode="display" xml:id="C11.S10.E13">\sin\left(\pi\nu\right)\,\mathbf{J}_{\nu}\left(z\right)=\cos\left(\pi\nu\right )\,\mathbf{E}_{\nu}\left(z\right)-\mathbf{E}_{-\nu}\left(z\right),</Math> , <Math equation-number="11.10.14" mode="display" xml:id="C11.S10.E14">\sin\left(\pi\nu\right)\,\mathbf{E}_{\nu}\left(z\right)=\mathbf{J}_{-\nu}\left (z\right)-\cos\left(\pi\nu\right)\,\mathbf{J}_{\nu}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C11.S10.SS5.p1.s3">
+<Math equation-number="11.10.15" mode="display" xml:id="C11.S10.E15">\mathbf{J}_{\nu}\left(z\right)=J_{\nu}\left(z\right)+\sin\left(\pi\nu\right)\, \mathbf{A}_{\nu}\left(z\right),</Math> <Math equation-number="11.10.16" mode="display" xml:id="C11.S10.E16">\mathbf{E}_{\nu}\left(z\right)=-Y_{\nu}\left(z\right)-\cos\left(\pi\nu\right) \,\mathbf{A}_{\nu}\left(z\right)-\mathbf{A}_{-\nu}\left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS6">
+<title>Relations to Other Functions</title>        
+  
+ 
+<para xml:id="C11.S10.SS6.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C11.S10.SS6.p1.s1">
+ <Math equation-number="11.10.17" mode="display" xml:id="C11.S10.E17">\mathbf{J}_{\nu}\left(z\right)=\frac{\sin\left(\pi\nu\right)}{\pi}(s_{{0},{\nu }}\left(z\right)-\nu s_{{-1},{\nu}}\left(z\right)),</Math> , <Math equation-number="11.10.18" mode="display" xml:id="C11.S10.E18">\mathbf{E}_{\nu}\left(z\right)=-\frac{1}{\pi}(1+\cos\left(\pi\nu\right))s_{{0} ,{\nu}}\left(z\right)\\ -\frac{\nu}{\pi}(1-\cos\left(\pi\nu\right))s_{{-1},{\nu}}\left(z\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C11.S10.SS6.p1.s2">
+<Math equation-number="11.10.19" mode="display" xml:id="C11.S10.E19">\mathbf{J}_{-\frac{1}{2}}\left(z\right)=\mathbf{E}_{\frac{1}{2}}\left(z\right) \\ =(\tfrac{1}{2}\pi z)^{-\frac{1}{2}}(A_{+}(\chi)\cos z-A_{-}(\chi)\sin z),</Math> , <Math equation-number="11.10.20" mode="display" xml:id="C11.S10.E20">\mathbf{J}_{\frac{1}{2}}\left(z\right)=-\mathbf{E}_{-\frac{1}{2}}\left(z\right )\\ =(\tfrac{1}{2}\pi z)^{-\frac{1}{2}}(A_{+}(\chi)\sin z+A_{-}(\chi)\cos z),</Math> where <Math equation-number="11.10.21" mode="display" xml:id="C11.S10.E21">A_{\pm}(\chi)=C\left(\chi\right)\pm S\left(\chi\right),\chi=(2z/\pi)^{\frac{1}{2}}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C11.S10.SS6.p1.s3">
+For the Fresnel integrals <Math mode="inline" xml:id="C11.S10.SS6.p1.m1">C</Math> and <Math mode="inline" xml:id="C11.S10.SS6.p1.m2">S</Math> see §7.2(iii).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS6.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C11.S10.SS6.p2.s1">
+For <Math mode="inline" xml:id="C11.S10.SS6.p2.m1">n=1,2,3,\dots</Math> , <Math equation-number="11.10.22" mode="display" xml:id="C11.S10.E22">\mathbf{E}_{n}\left(z\right)=-\mathbf{H}_{n}\left(z\right)+\frac{1}{\pi}\sum_{ k=0}^{m_{1}}\frac{\Gamma\left(k+\tfrac{1}{2}\right)}{\Gamma\left(n\!+\!\tfrac{ 1}{2}\!-\!k\right)}(\tfrac{1}{2}z)^{n-2k-1}</Math> , and <Math equation-number="11.10.23" mode="display" xml:id="C11.S10.E23">\mathbf{E}_{-n}\left(z\right)=-\mathbf{H}_{-n}\left(z\right)+\frac{(-1)^{n+1}} {\pi}\sum_{k=0}^{m_{2}}\frac{\Gamma\left(n\!-\!k\!-\!\tfrac{1}{2}\right)}{ \Gamma\left(k+\tfrac{3}{2}\right)}(\tfrac{1}{2}z)^{-n+2k+1},</Math> where <Math equation-number="11.10.24" mode="display" xml:id="C11.S10.E24">m_{1}=\left\lfloor\tfrac{1}{2}n-\tfrac{1}{2}\right\rfloor,m_{2}=\left\lceil\tfrac{1}{2}n-\tfrac{3}{2}\right\rceil</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS7">
+<title>Special Values</title>        
+ 
+ 
+<para xml:id="C11.S10.SS7.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C11.S10.SS7.p1.s1">
+ <Math equation-number="11.10.25" mode="display" xml:id="C11.S10.E25">\displaystyle\mathbf{J}_{\nu}\left(0\right)=\frac{\sin\left(\pi\nu\right)}{\pi \nu}, \displaystyle\mathbf{E}_{\nu}\left(0\right)=\frac{1-\cos\left(\pi\nu\right)}{ \pi\nu}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C11.S10.SS7.p1.s2">
+<Math equation-number="11.10.26" mode="display" xml:id="C11.S10.E26">\displaystyle\mathbf{E}_{0}\left(z\right)=-\mathbf{H}_{0}\left(z\right), \displaystyle\mathbf{E}_{1}\left(z\right)=\frac{2}{\pi}-\mathbf{H}_{1}\left(z \right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS7.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C11.S10.SS7.p2.s1">
+ <Math equation-number="11.10.27" mode="display" xml:id="C11.S10.E27">\left.\frac{\partial}{\partial\nu}\mathbf{J}_{\nu}\left(z\right)\right|_{\nu=0 }=\tfrac{1}{2}\pi\mathbf{H}_{0}\left(z\right),</Math> , <Math equation-number="11.10.28" mode="display" xml:id="C11.S10.E28">\left.\frac{\partial}{\partial\nu}\mathbf{E}_{\nu}\left(z\right)\right|_{\nu=0 }=\tfrac{1}{2}\pi J_{0}\left(z\right)</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS7.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C11.S10.SS7.p3.s1">
+ <Math equation-number="11.10.29" mode="display" xml:id="C11.S10.E29">\mathbf{J}_{n}\left(z\right)=J_{n}\left(z\right), if n\in\mathbb{Z}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS8">
+<title>Expansions in Series of Products of Bessel Functions</title>        
+  
+<para xml:id="C11.S10.SS8.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="24" xml:id="C11.S10.SS8.p1.s1">
+ <Math equation-number="11.10.30" mode="display" xml:id="C11.S10.E30">{\mathbf{J}_{\nu}\left(z\right)=}\\ {2\sin\left(\tfrac{1}{2}\nu\pi\right)\sum_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{ 2}\nu+\frac{1}{2}}\left(\tfrac{1}{2}z\right)J_{k+\frac{1}{2}\nu+\frac{1}{2}} \left(\tfrac{1}{2}z\right)}+{2\cos\left(\tfrac{1}{2}\nu\pi\right)\sideset{}{{} ^{\prime}}{\sum}_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{2}\nu}\left(\tfrac{1}{2}z \right)J_{k+\frac{1}{2}\nu}\left(\tfrac{1}{2}z\right)},</Math> <Math equation-number="11.10.31" mode="display" xml:id="C11.S10.E31">{\mathbf{E}_{\nu}\left(z\right)=}\\ {-2\cos\left(\tfrac{1}{2}\nu\pi\right)\sum_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1} {2}\nu+\frac{1}{2}}\left(\tfrac{1}{2}z\right)J_{k+\frac{1}{2}\nu+\frac{1}{2}} \left(\tfrac{1}{2}z\right)}+{2\sin\left(\tfrac{1}{2}\nu\pi\right)\sideset{}{{} ^{\prime}}{\sum}_{k=0}^{\infty}(-1)^{k}J_{k-\frac{1}{2}\nu}\left(\tfrac{1}{2}z \right)J_{k+\frac{1}{2}\nu}\left(\tfrac{1}{2}z\right)},</Math> where the prime on the second summation symbols means that the first term is to be halved.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS9">
+<title>Recurrence Relations and Derivatives</title>        
+  
+ 
+<para xml:id="C11.S10.SS9.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C11.S10.SS9.p1.s1">
+ <Math equation-number="11.10.32" mode="display" xml:id="C11.S10.E32">\mathbf{J}_{\nu-1}\left(z\right)+\mathbf{J}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{J}_{\nu}\left(z\right)-\frac{2}{\pi z}\sin\left(\pi\nu\right),</Math> <Math equation-number="11.10.33" mode="display" xml:id="C11.S10.E33">\mathbf{E}_{\nu-1}\left(z\right)+\mathbf{E}_{\nu+1}\left(z\right)=\frac{2\nu}{ z}\mathbf{E}_{\nu}\left(z\right)-\frac{2}{\pi z}(1-\cos\left(\pi\nu\right))</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C11.S10.SS9.p1.s2">
+<Math equation-number="11.10.34" mode="display" xml:id="C11.S10.E34">2\mathbf{J}_{\nu}'\left(z\right)=\mathbf{J}_{\nu-1}\left(z\right)-\mathbf{J}_{ \nu+1}\left(z\right),</Math> , <Math equation-number="11.10.35" mode="display" xml:id="C11.S10.E35">2\mathbf{E}_{\nu}'\left(z\right)=\mathbf{E}_{\nu-1}\left(z\right)-\mathbf{E}_{ \nu+1}\left(z\right),</Math> <Math equation-number="11.10.36" mode="display" xml:id="C11.S10.E36">z\mathbf{J}_{\nu}'\left(z\right)\pm\nu\mathbf{J}_{\nu}\left(z\right)=\pm z \mathbf{J}_{\nu\mp 1}\left(z\right)\pm\frac{\sin\left(\pi\nu\right)}{\pi},</Math> <Math equation-number="11.10.37" mode="display" xml:id="C11.S10.E37">z\mathbf{E}_{\nu}'\left(z\right)\pm\nu\mathbf{E}_{\nu}\left(z\right)=\pm z \mathbf{E}_{\nu\mp 1}\left(z\right)\pm\frac{(1-\cos\left(\pi\nu\right))}{\pi}</Math>.
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C11.S10.SS10">
+<title>Integrals and Sums</title>        
+   
+<para xml:id="C11.S10.SS10.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="27" xml:id="C11.S10.SS10.p1.s1">
+For collections of integral representations and integrals seeErdélyi et al. (1954a, §§4.19 and 5.17),Marichev (1983, pp. 194–195 and 214–215),Oberhettinger (1972, p. 128),Oberhettinger (1974, §§1.12 and 2.7),Oberhettinger (1990, pp. 105 and 189–190),Prudnikov et al. (1990, §§1.5 and 2.8),Prudnikov et al. (1992a, §3.18),Prudnikov et al. (1992b, §3.18), andZanovello (1977).
+</sentence>
+
+</para>
+ 
+<para xml:id="C11.S10.SS10.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C11.S10.SS10.p2.s1">
+For sums see Hansen (1975, pp. 456–457) andPrudnikov et al. (1990, §§6.4.2–6.4.3).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

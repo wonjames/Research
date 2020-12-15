@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C10.S44">
+<title>Sums</title>        
+ 
+<subsection xml:id="C10.S44.SS1">
+<title>Multiplication Theorem</title>        
+  
+ 
+<para xml:id="C10.S44.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C10.S44.SS1.p1.s1">
+ <Math equation-number="10.44.1" mode="display" xml:id="C10.S44.E1">\mathscr{Z}_{\nu}\left(\lambda z\right)=\lambda^{\pm\nu}\sum_{k=0}^{\infty} \frac{(\lambda^{2}-1)^{k}(\frac{1}{2}z)^{k}}{k!}\mathscr{Z}_{\nu\pm k}\left(z \right), if |\lambda^{2}-1|&lt;1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C10.S44.SS1.p1.s2">
+If <Math mode="inline" xml:id="C10.S44.SS1.p1.m1">\mathscr{Z}=I</Math> and the upper signs are taken, then the restriction on <Math mode="inline" xml:id="C10.S44.SS1.p1.m2">\lambda</Math> is unnecessary.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C10.S44.Px1">
+<title>Examples</title>   
+<para xml:id="C10.S44.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C10.S44.Px1.p1.s1">
+ <Math equation-number="10.44.2" mode="display" xml:id="C10.S44.E2">I_{\nu}\left(z\right)=\sum_{k=0}^{\infty}\frac{z^{k}}{k!}J_{\nu+k}\left(z \right),\!J_{\nu}\left(z\right)=\sum_{k=0}^{\infty}(-1)^{k}\frac{z^{k}}{k!}I_{\nu+k} \left(z\right)</Math>.
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S44.SS2">
+<title>Addition Theorems</title>        
+   
+<paragraph xml:id="C10.S44.Px2">
+<title>Neumann’s Addition Theorem</title>    
+<para xml:id="C10.S44.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C10.S44.Px2.p1.s1">
+ <Math equation-number="10.44.3" mode="display" xml:id="C10.S44.E3">\mathscr{Z}_{\nu}\left(u\pm v\right)=\sum_{k=-\infty}^{\infty}(\pm 1)^{k} \mathscr{Z}_{\nu+k}\left(u\right)I_{k}\left(v\right), if |v|&lt;|u|</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C10.S44.Px2.p1.s2">
+The restriction <Math mode="inline" xml:id="C10.S44.Px2.p1.m1">|v|&lt;|u|</Math> is unnecessary when <Math mode="inline" xml:id="C10.S44.Px2.p1.m2">\mathscr{Z}=I</Math> and <Math mode="inline" xml:id="C10.S44.Px2.p1.m3">\nu</Math> is an integer.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C10.S44.Px3">
+<title>Graf’s and Gegenbauer’s Addition Theorems</title>    
+ 
+<para xml:id="C10.S44.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C10.S44.Px3.p1.s1">
+For results analogous to (10.23.7) and (10.23.8) seeWatson (1944, §§11.3 and 11.41).
+</sentence>
+
+</para>
+
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S44.SS3">
+<title>Neumann-Type Expansions</title>        
+   
+<para xml:id="C10.S44.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C10.S44.SS3.p1.s1">
+ <Math equation-number="10.44.4" mode="display" xml:id="C10.S44.E4">\left(\tfrac{1}{2}z\right)^{\nu}=\sum_{k=0}^{\infty}(-1)^{k}\frac{(\nu+2k) \Gamma\left(\nu+k\right)}{k!}I_{\nu+2k}\left(z\right), if \nu\neq 0,-1,-2,\ldots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="8" xml:id="C10.S44.SS3.p1.s2">
+<Math equation-number="10.44.5" mode="display" xml:id="C10.S44.E5">K_{0}\left(z\right)=-\left(\ln\left(\tfrac{1}{2}z\right)+\gamma\right)I_{0} \left(z\right)+2\sum_{k=1}^{\infty}\frac{I_{2k}\left(z\right)}{k},</Math> <Math equation-number="10.44.6" mode="display" xml:id="C10.S44.E6">K_{n}\left(z\right)=\frac{n!(\tfrac{1}{2}z)^{-n}}{2}\sum_{k=0}^{n-1}(-1)^{k} \frac{(\tfrac{1}{2}z)^{k}I_{k}\left(z\right)}{k!(n-k)}+(-1)^{n-1}\left(\ln \left(\tfrac{1}{2}z\right)-\psi\left(n+1\right)\right)I_{n}\left(z\right)+(-1) ^{n}\sum_{k=1}^{\infty}\frac{(n+2k)I_{n+2k}\left(z\right)}{k(n+k)},</Math> where <Math mode="inline" xml:id="C10.S44.SS3.p1.m1">\gamma</Math> is Euler’s constant and <Math mode="inline" xml:id="C10.S44.SS3.p1.m2">\psi=\ifrac{\Gamma'}{\Gamma}</Math> (§5.2).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+<subsection xml:id="C10.S44.SS4">
+<title>Compendia</title>        
+   
+<para xml:id="C10.S44.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C10.S44.SS4.p1.s1">
+For collections of sums and series involving modified Bessel functions seeErdélyi et al. (1953b, §7.15), Hansen (1975), andPrudnikov et al. (1986b, pp. 691–700).
+</sentence>
+
+</para>
+
+ 
+</subsection>
+ 
+</section>

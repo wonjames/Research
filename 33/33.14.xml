@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C33.S14">
+<title>Definitions and Basic Properties</title>         
+<subsection xml:id="C33.S14.SS1">
+<title>Coulomb Wave Equation</title>              
+<para xml:id="C33.S14.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C33.S14.SS1.p1.s1">
+Another parametrization of (33.2.1) is given by <Math equation-number="33.14.1" mode="display" xml:id="C33.S14.E1">\frac{{\mathrm{d}}^{2}w}{{\mathrm{d}r}^{2}}+\left(\epsilon+\frac{2}{r}-\frac{ \ell(\ell+1)}{r^{2}}\right)w=0,</Math> where <Math equation-number="33.14.2" mode="display" xml:id="C33.S14.E2">r=-\eta\rho,\epsilon=1/\eta^{2}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C33.S14.SS1.p2.s1">
+Again, there is a regular singularity at <Math mode="inline" xml:id="C33.S14.SS1.p2.m1">r=0</Math> with indices <Math mode="inline" xml:id="C33.S14.SS1.p2.m2">\ell+1</Math> and <Math mode="inline" xml:id="C33.S14.SS1.p2.m3">-\ell</Math> , and an irregular singularity of rank 1 at <Math mode="inline" xml:id="C33.S14.SS1.p2.m4">r=\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="3" xml:id="C33.S14.SS1.p2.s2">
+When <Math mode="inline" xml:id="C33.S14.SS1.p2.m5">\epsilon&gt;0</Math> the outer turning point is given by <Math equation-number="33.14.3" mode="display" xml:id="C33.S14.E3">r_{\mathrm{tp}}\left(\epsilon,\ell\right)=\left(\sqrt{1+\epsilon\ell(\ell+1)}- 1\right)\Bigm{/}\epsilon;</Math> compare (33.2.2).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS2">
+<title>Regular Solution <Math mode="inline" xml:id="C33.S14.SS2.m1">f\left(\epsilon,\ell;r\right)</Math></title>           
+    
+<para xml:id="C33.S14.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C33.S14.SS2.p1.s1">
+The function <Math mode="inline" xml:id="C33.S14.SS2.p1.m1">f\left(\epsilon,\ell;r\right)</Math> is recessive (§2.7(iii)) at <Math mode="inline" xml:id="C33.S14.SS2.p1.m2">r=0</Math> , and is defined by <Math equation-number="33.14.4" mode="display" xml:id="C33.S14.E4">f\left(\epsilon,\ell;r\right)=\kappa^{\ell+1}M_{\kappa,\ell+\frac{1}{2}}\left( 2r/\kappa\right)/(2\ell+1)!,</Math> or equivalently <Math equation-number="33.14.5" mode="display" xml:id="C33.S14.E5">f\left(\epsilon,\ell;r\right)=(2r)^{\ell+1}e^{-r/\kappa}M\left(\ell+1-\kappa,2 \ell+2,2r/\kappa\right)/{(2\ell+1)!}</Math> , where <Math mode="inline" xml:id="C33.S14.SS2.p1.m3">M_{\kappa,\mu}\left(z\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS2.p1.m4">M\left(a,b,z\right)</Math> are defined in§§13.14(i)and 13.2(i), and <Math equation-number="33.14.6" mode="display" xml:id="C33.S14.E6">\kappa=\begin{cases}(-\epsilon)^{-1/2},&amp;\epsilon&lt;0,r&gt;0,\\ -(-\epsilon)^{-1/2},&amp;\epsilon&lt;0,r&lt;0,\\ \pm\mathrm{i}\epsilon^{-1/2},&amp;\epsilon&gt;0.\end{cases</Math> } The choice of sign in the last line of (33.14.6) is immaterial: the same function <Math mode="inline" xml:id="C33.S14.SS2.p1.m5">f\left(\epsilon,\ell;r\right)</Math> is obtained. This is a consequence of Kummer’s transformation (§13.2(vii)).
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C33.S14.SS2.p2.s1">
+ <Math mode="inline" xml:id="C33.S14.SS2.p2.m1">f\left(\epsilon,\ell;r\right)</Math> is real and an analytic function of <Math mode="inline" xml:id="C33.S14.SS2.p2.m2">r</Math> in the interval <Math mode="inline" xml:id="C33.S14.SS2.p2.m3">-\infty&lt;r&lt;\infty</Math> , and it is also an analytic function of <Math mode="inline" xml:id="C33.S14.SS2.p2.m4">\epsilon</Math> when <Math mode="inline" xml:id="C33.S14.SS2.p2.m5">-\infty&lt;\epsilon&lt;\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C33.S14.SS2.p2.s2">
+This includes <Math mode="inline" xml:id="C33.S14.SS2.p2.m6">\epsilon=0</Math> , hence <Math mode="inline" xml:id="C33.S14.SS2.p2.m7">f\left(\epsilon,\ell;r\right)</Math> can be expanded in a convergent power series in <Math mode="inline" xml:id="C33.S14.SS2.p2.m8">\epsilon</Math> in a neighborhood of <Math mode="inline" xml:id="C33.S14.SS2.p2.m9">\epsilon=0</Math> (§33.20(ii)).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS3">
+<title>Irregular Solution <Math mode="inline" xml:id="C33.S14.SS3.m1">h\left(\epsilon,\ell;r\right)</Math></title>        
+      
+<para xml:id="C33.S14.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C33.S14.SS3.p1.s1">
+For nonzero values of <Math mode="inline" xml:id="C33.S14.SS3.p1.m1">\epsilon</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p1.m2">r</Math> the function <Math mode="inline" xml:id="C33.S14.SS3.p1.m3">h\left(\epsilon,\ell;r\right)</Math> is defined by <Math equation-number="33.14.7" mode="display" xml:id="C33.S14.E7">h\left(\epsilon,\ell;r\right)=\frac{\Gamma\left(\ell+1-\kappa\right)}{\pi \kappa^{\ell}}\left(W_{\kappa,\ell+\frac{1}{2}}\left(2r/\kappa\right)+(-1)^{ \ell}S(\epsilon,r)\frac{\Gamma\left(\ell+1+\kappa\right)}{2(2\ell+1)!}M_{ \kappa,\ell+\frac{1}{2}}\left(2r/\kappa\right)\right),</Math> where <Math mode="inline" xml:id="C33.S14.SS3.p1.m4">\kappa</Math> is given by (33.14.6) and <Math equation-number="33.14.8" mode="display" xml:id="C33.S14.E8">S(\epsilon,r)=\begin{cases}2\cos\left(\pi|\epsilon|^{-1/2}\right),&amp;\epsilon&lt;0, r&gt;0,\\ 0,&amp;\epsilon&lt;0,r&lt;0,\\ e^{\pi\epsilon^{-1/2}},&amp;\epsilon&gt;0,r&gt;0,\\ e^{-\pi\epsilon^{-1/2}},&amp;\epsilon&gt;0,r&lt;0.\end{cases</Math> } (Again, the choice of the ambiguous sign in the last line of (33.14.6) is immaterial.)
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C33.S14.SS3.p2.s1">
+ <Math mode="inline" xml:id="C33.S14.SS3.p2.m1">h\left(\epsilon,\ell;r\right)</Math> is real and an analytic function of each of <Math mode="inline" xml:id="C33.S14.SS3.p2.m2">r</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p2.m3">\epsilon</Math> in the intervals <Math mode="inline" xml:id="C33.S14.SS3.p2.m4">-\infty&lt;r&lt;\infty</Math> and <Math mode="inline" xml:id="C33.S14.SS3.p2.m5">-\infty&lt;\epsilon&lt;\infty</Math> , except when <Math mode="inline" xml:id="C33.S14.SS3.p2.m6">r=0</Math> or <Math mode="inline" xml:id="C33.S14.SS3.p2.m7">\epsilon=0</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS4">
+<title>Solutions <Math mode="inline" xml:id="C33.S14.SS4.m1">s\left(\epsilon,\ell;r\right)</Math> and<Math mode="inline" xml:id="C33.S14.SS4.m2">c\left(\epsilon,\ell;r\right)</Math></title>           
+<para xml:id="C33.S14.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C33.S14.SS4.p1.s1">
+The functions <Math mode="inline" xml:id="C33.S14.SS4.p1.m1">s\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p1.m2">c\left(\epsilon,\ell;r\right)</Math> are defined by <Math equation-number="33.14.9" mode="display" xml:id="C33.S14.E9">s\left(\epsilon,\ell;r\right)=(B(\epsilon,\ell)/2)^{1/2}f\left(\epsilon,\ell;r \right),c\left(\epsilon,\ell;r\right)=(2B(\epsilon,\ell))^{-1/2}h\left(\epsilon,\ell;r \right),</Math> provided that <Math mode="inline" xml:id="C33.S14.SS4.p1.m3">\ell&lt;(-\epsilon)^{-1/2}</Math> when <Math mode="inline" xml:id="C33.S14.SS4.p1.m4">\epsilon&lt;0</Math> , where <Math equation-number="33.14.10" mode="display" xml:id="C33.S14.E10">B(\epsilon,\ell)=\begin{cases}A(\epsilon,\ell)\left(1-\exp\left(-2\pi/\epsilon ^{1/2}\right)\right)^{-1},&amp;\epsilon&gt;0,\\ A(\epsilon,\ell),&amp;\epsilon\leq 0,\end{cases}</Math> and <Math equation-number="33.14.11" mode="display" xml:id="C33.S14.E11">A(\epsilon,\ell)=\prod_{k=0}^{\ell}(1+\epsilon k^{2})</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C33.S14.SS4.p1.s2">
+An alternative formula for <Math mode="inline" xml:id="C33.S14.SS4.p1.m5">A(\epsilon,\ell)</Math> is <Math equation-number="33.14.12" mode="display" xml:id="C33.S14.E12">A(\epsilon,\ell)=\frac{\Gamma\left(1+\ell+\kappa\right)}{\Gamma\left(\kappa- \ell\right)}\kappa^{-2\ell-1},</Math> the choice of sign in the last line of (33.14.6) again being immaterial.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C33.S14.SS4.p2.s1">
+When <Math mode="inline" xml:id="C33.S14.SS4.p2.m1">\epsilon&lt;0</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p2.m2">\ell&gt;(-\epsilon)^{-1/2}</Math> the quantity <Math mode="inline" xml:id="C33.S14.SS4.p2.m3">A(\epsilon,\ell)</Math> may be negative, causing <Math mode="inline" xml:id="C33.S14.SS4.p2.m4">s\left(\epsilon,\ell;r\right)</Math> and <Math mode="inline" xml:id="C33.S14.SS4.p2.m5">c\left(\epsilon,\ell;r\right)</Math> to become imaginary.
+</sentence>
+
+</para>
+ 
+<para xml:id="C33.S14.SS4.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C33.S14.SS4.p3.s1">
+The function <Math mode="inline" xml:id="C33.S14.SS4.p3.m1">s\left(\epsilon,\ell;r\right)</Math> has the following properties: <Math equation-number="33.14.13" mode="display" xml:id="C33.S14.E13">\int_{0}^{\infty}s\left(\epsilon_{1},\ell;r\right)s\left(\epsilon_{2},\ell;r \right)\mathrm{d}r=\delta\left(\epsilon_{1}-\epsilon_{2}\right),</Math> where the right-hand side is the Dirac delta (§1.17).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="13" xml:id="C33.S14.SS4.p3.s2">
+When <Math mode="inline" xml:id="C33.S14.SS4.p3.m3">\epsilon=-1/n^{2}</Math> , <Math mode="inline" xml:id="C33.S14.SS4.p3.m4">n=\ell+1,\ell+2,\dots</Math> , <Math mode="inline" xml:id="C33.S14.SS4.p3.m5">s\left(\epsilon,\ell;r\right)</Math> is <Math mode="inline" xml:id="C33.S14.SS4.p3.m6">\exp\left(-r/n\right)</Math> times a polynomial in <Math mode="inline" xml:id="C33.S14.SS4.p3.m7">r</Math> , and <Math equation-number="33.14.14" mode="display" xml:id="C33.S14.E14">\phi_{n,\ell}(r)=(-1)^{\ell+1+n}(2/n^{3})^{1/2}s\left(-1/n^{2},\ell;r\right)</Math> satisfies <Math equation-number="33.14.15" mode="display" xml:id="C33.S14.E15">\int_{0}^{\infty}\phi_{n,\ell}^{2}(r)\mathrm{d}r=1</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C33.S14.SS5">
+<title>Wronskians</title>          
+<para xml:id="C33.S14.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C33.S14.SS5.p1.s1">
+With arguments <Math mode="inline" xml:id="C33.S14.SS5.p1.m1">\epsilon,\ell,r</Math> suppressed, <Math equation-number="33.14.16" mode="display" xml:id="C33.S14.E16">\mathscr{W}\left\{h,f\right\}=2/\pi,\mathscr{W}\left\{c,s\right\}=1/\pi</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

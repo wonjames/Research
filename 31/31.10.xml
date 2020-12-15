@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S10">
+<title>Integral Equations and Representations</title>        
+    
+<subsection xml:id="C31.S10.SS1">
+<title>Type I</title>        
+ 
+<para xml:id="C31.S10.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S10.SS1.p1.s1">
+If <Math mode="inline" xml:id="C31.S10.SS1.p1.m1">w(z)</Math> is a solution of Heun’s equation, then another solution <Math mode="inline" xml:id="C31.S10.SS1.p1.m2">W(z)</Math> (possibly a multiple of <Math mode="inline" xml:id="C31.S10.SS1.p1.m3">w(z)</Math> ) can be represented as <Math equation-number="31.10.1" mode="display" xml:id="C31.S10.E1">W(z)=\int_{C}\mathcal{K}(z,t)w(t)\rho(t)\mathrm{d}t</Math> for a suitable contour <Math mode="inline" xml:id="C31.S10.SS1.p1.m4">C</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C31.S10.SS1.p1.s2">
+The weight function is given by <Math equation-number="31.10.2" mode="display" xml:id="C31.S10.E2">\rho(t)=t^{\gamma-1}(t-1)^{\delta-1}(t-a)^{\epsilon-1},</Math> and the kernel <Math mode="inline" xml:id="C31.S10.SS1.p1.m5">\mathcal{K}(z,t)</Math> is a solution of the partial differential equation <Math equation-number="31.10.3" mode="display" xml:id="C31.S10.E3">(\mathcal{D}_{z}-\mathcal{D}_{t})\mathcal{K}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS1.p1.m6">\mathcal{D}_{z}</Math> is Heun’s operator in the variable <Math mode="inline" xml:id="C31.S10.SS1.p1.m7">z</Math> : <Math equation-number="31.10.4" mode="display" xml:id="C31.S10.E4">\mathcal{D}_{z}=z(z-1)(z-a)(\ifrac{{\partial}^{2}}{{\partial z}^{2}})+\left( \gamma(z-1)(z-a)+\delta z(z-a)+\epsilon z(z-1)\right)(\ifrac{\partial}{ \partial z})+\alpha\beta z</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C31.S10.SS1.p1.s3">
+The contour <Math mode="inline" xml:id="C31.S10.SS1.p1.m8">C</Math> must be such that <Math equation-number="31.10.5" mode="display" xml:id="C31.S10.E5">\left.p(t)\left(\frac{\partial\mathcal{K}}{\partial t}w(t)-\mathcal{K}\frac{ \mathrm{d}w(t)}{\mathrm{d}t}\right)\right|_{C}=0,</Math> where <Math equation-number="31.10.6" mode="display" xml:id="C31.S10.E6">p(t)=t^{\gamma}(t-1)^{\delta}(t-a)^{\epsilon}</Math>.
+</sentence>
+
+</para>
+  
+<paragraph xml:id="C31.S10.Px1">
+<title>Kernel Functions</title>     
+<para xml:id="C31.S10.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C31.S10.Px1.p1.s1">
+Set <Math equation-number="31.10.7" mode="display" xml:id="C31.S10.E7">\cos\theta=\left(\frac{zt}{a}\right)^{1/2},\sin\theta\cos\phi=\mathrm{i}\left(\frac{(z-a)(t-a)}{a(1-a)}\right)^{1/2},\sin\theta\sin\phi=\left(\frac{(z-1)(t-1)}{1-a}\right)^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C31.S10.Px1.p1.s2">
+The kernel <Math mode="inline" xml:id="C31.S10.Px1.p1.m1">\mathcal{K}</Math> must satisfy <Math equation-number="31.10.8" mode="display" xml:id="C31.S10.E8">{\sin^{2}}\theta\left(\frac{{\partial}^{2}\mathcal{K}}{{\partial\theta}^{2}}+ \left((1-2\gamma)\tan\theta+2(\delta+\epsilon-\tfrac{1}{2})\cot\theta\right) \frac{\partial\mathcal{K}}{\partial\theta}-4\alpha\beta\mathcal{K}\right)+ \frac{{\partial}^{2}\mathcal{K}}{{\partial\phi}^{2}}+\left((1-2\delta)\cot\phi -(1-2\epsilon)\tan\phi\right)\frac{\partial\mathcal{K}}{\partial\phi}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C31.S10.Px1.p1.s3">
+The solutions of (31.10.8) are given in terms of the Riemann <Math mode="inline" xml:id="C31.S10.Px1.p1.m2">P</Math> -symbol (see §15.11(i)) as <Math equation-number="31.10.9" mode="display" xml:id="C31.S10.E9">\mathcal{K}(\theta,\phi)=P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;\frac{1}{2}-\delta-\sigma&amp;\alpha&amp;{\cos^{2}}\theta\\ 1-\gamma&amp;\frac{1}{2}-\epsilon+\sigma&amp;\beta&amp;\end{Bmatrix}\*P\begin{Bmatrix}0&amp;1&amp; \infty&amp;\\ 0&amp;0&amp;-\frac{1}{2}+\delta+\sigma&amp;{\cos^{2}}\phi\\ 1-\epsilon&amp;1-\delta&amp;-\frac{1}{2}+\epsilon-\sigma&amp;\end{Bmatrix},</Math> where <Math mode="inline" xml:id="C31.S10.Px1.p1.m3">\sigma</Math> is a separation constant.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="7" xml:id="C31.S10.Px1.p1.s4">
+For integral equations satisfied by the Heun polynomial <Math mode="inline" xml:id="C31.S10.Px1.p1.m4">\mathit{Hp}_{n,m}\left(z\right)</Math> we have <Math mode="inline" xml:id="C31.S10.Px1.p1.m5">\sigma=\frac{1}{2}-\delta-j</Math> , <Math mode="inline" xml:id="C31.S10.Px1.p1.m6">j=0,1,\dots,n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S10.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C31.S10.Px1.p2.s1">
+For suitable choices of the branches of the <Math mode="inline" xml:id="C31.S10.Px1.p2.m1">P</Math> -symbols in (31.10.9) and the contour <Math mode="inline" xml:id="C31.S10.Px1.p2.m2">C</Math> , we can obtain both integral equations satisfied by Heun functions, as well as the integral representations of a distinct solution of Heun’s equation in terms of a Heun function (polynomial, path-multiplicative solution).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px2">
+<title>Example 1</title>   
+<para xml:id="C31.S10.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S10.Px2.p1.s1">
+Let <Math equation-number="31.10.10" mode="display" xml:id="C31.S10.E10">\mathcal{K}(z,t)=(zt-a)^{\frac{1}{2}-\delta-\sigma}\*{{}_{2}F_{1}}\left({\frac {1}{2}-\delta-\sigma+\alpha,\frac{1}{2}-\delta-\sigma+\beta\atop\gamma};\frac{ zt}{a}\right)\*{{}_{2}F_{1}}\left({-\frac{1}{2}+\delta+\sigma,-\frac{1}{2}+ \epsilon-\sigma\atop\delta};\frac{a(z-1)(t-1)}{(a-1)(zt-a)}\right),</Math> where <Math mode="inline" xml:id="C31.S10.Px2.p1.m1">\Re\gamma&gt;0</Math> , <Math mode="inline" xml:id="C31.S10.Px2.p1.m2">\Re\delta&gt;0</Math> , and <Math mode="inline" xml:id="C31.S10.Px2.p1.m3">C</Math> be the Pochhammer double-loop contour about 0 and 1 (as in §31.9(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C31.S10.Px2.p1.s2">
+Then the integral equation (31.10.1) is satisfied by <Math mode="inline" xml:id="C31.S10.Px2.p1.m4">w(z)=w_{m}(z)</Math> and <Math mode="inline" xml:id="C31.S10.Px2.p1.m5">W(z)=\kappa_{m}w_{m}(z)</Math> , where <Math mode="inline" xml:id="C31.S10.Px2.p1.m6">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> and <Math mode="inline" xml:id="C31.S10.Px2.p1.m7">\kappa_{m}</Math> is the corresponding eigenvalue.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px3">
+<title>Example 2</title>   
+<para xml:id="C31.S10.Px3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="11" xml:id="C31.S10.Px3.p1.s1">
+Fuchs–Frobenius solutions <Math mode="inline" xml:id="C31.S10.Px3.p1.m1">W_{m}(z)=\tilde{\kappa}_{m}z^{-\alpha}\mathit{H\!\ell}\left(1/a,q_{m};\alpha, \alpha-\gamma+1,\alpha-\beta+1,\delta;1/z\right)</Math> are represented in terms of Heun functions <Math mode="inline" xml:id="C31.S10.Px3.p1.m2">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right)</Math> by (31.10.1) with <Math mode="inline" xml:id="C31.S10.Px3.p1.m3">W(z)=W_{m}(z)</Math> , <Math mode="inline" xml:id="C31.S10.Px3.p1.m4">w(z)=w_{m}(z)</Math> , and with kernel chosen from <Math equation-number="31.10.11" mode="display" xml:id="C31.S10.E11">\mathcal{K}(z,t)=(zt-a)^{\frac{1}{2}-\delta-\sigma}\left(\ifrac{zt}{a}\right)^ {-\frac{1}{2}+\delta+\sigma-\alpha}\*{{}_{2}F_{1}}\left({\frac{1}{2}-\delta- \sigma+\alpha,\frac{3}{2}-\delta-\sigma+\alpha-\gamma\atop\alpha-\beta+1}; \frac{a}{zt}\right)\*P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;-\frac{1}{2}+\delta+\sigma&amp;\dfrac{(z-a)(t-a)}{(1-a)(zt-a)}\\ 1-\epsilon&amp;1-\delta&amp;-\frac{1}{2}+\epsilon-\sigma&amp;\end{Bmatrix}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="12" xml:id="C31.S10.Px3.p1.s2">
+Here <Math mode="inline" xml:id="C31.S10.Px3.p1.m5">\tilde{\kappa}_{m}</Math> is a normalization constant and <Math mode="inline" xml:id="C31.S10.Px3.p1.m6">C</Math> is the contour of Example 1.
+</sentence>
+
+</para>
+  
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S10.SS2">
+<title>Type II</title>        
+ 
+<para xml:id="C31.S10.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C31.S10.SS2.p1.s1">
+If <Math mode="inline" xml:id="C31.S10.SS2.p1.m1">w(z)</Math> is a solution of Heun’s equation, then another solution <Math mode="inline" xml:id="C31.S10.SS2.p1.m2">W(z)</Math> (possibly a multiple of <Math mode="inline" xml:id="C31.S10.SS2.p1.m3">w(z)</Math> ) can be represented as <Math equation-number="31.10.12" mode="display" xml:id="C31.S10.E12">W(z)=\int_{C_{1}}\int_{C_{2}}\mathcal{K}(z;s,t)w(s)w(t)\rho(s,t)\mathrm{d}s \mathrm{d}t</Math> for suitable contours <Math mode="inline" xml:id="C31.S10.SS2.p1.m4">C_{1}</Math> , <Math mode="inline" xml:id="C31.S10.SS2.p1.m5">C_{2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="14" xml:id="C31.S10.SS2.p1.s2">
+The weight function is <Math equation-number="31.10.13" mode="display" xml:id="C31.S10.E13">\rho(s,t)=(s-t)(st)^{\gamma-1}\left((1-s)(1-t)\right)^{\delta-1}\*\left((1-(s/ a))(1-(t/a))\right)^{\epsilon-1},</Math> and the kernel <Math mode="inline" xml:id="C31.S10.SS2.p1.m6">\mathcal{K}(z;s,t)</Math> is a solution of the partial differential equation <Math equation-number="31.10.14" mode="display" xml:id="C31.S10.E14">\left((t-z)\mathcal{D}_{s}+(z-s)\mathcal{D}_{t}+(s-t)\mathcal{D}_{z}\right) \mathcal{K}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS2.p1.m7">\mathcal{D}_{z}</Math> is given by (31.10.4).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="15" xml:id="C31.S10.SS2.p1.s3">
+The contours <Math mode="inline" xml:id="C31.S10.SS2.p1.m8">C_{1}</Math> , <Math mode="inline" xml:id="C31.S10.SS2.p1.m9">C_{2}</Math> must be chosen so that <Math equation-number="31.10.15" mode="display" xml:id="C31.S10.E15">\left.p(t)\left(\frac{\partial\mathcal{K}}{\partial t}w(t)-\mathcal{K}\frac{ \mathrm{d}w(t)}{\mathrm{d}t}\right)\right|_{C_{1}}=0,</Math> , <Math equation-number="31.10.16" mode="display" xml:id="C31.S10.E16">\left.p(s)\left(\frac{\partial\mathcal{K}}{\partial s}w(s)-\mathcal{K}\frac{ \mathrm{d}w(s)}{\mathrm{d}s}\right)\right|_{C_{2}}=0,</Math> where <Math mode="inline" xml:id="C31.S10.SS2.p1.m10">p(t)</Math> is given by (31.10.6).
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C31.S10.Px4">
+<title>Kernel Functions</title>    
+<para xml:id="C31.S10.Px4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="16" xml:id="C31.S10.Px4.p1.s1">
+Set <Math equation-number="31.10.17" mode="display" xml:id="C31.S10.E17">u=\frac{(stz)^{1/2}}{a},v=\left(\frac{(s-1)(t-1)(z-1)}{1-a}\right)^{1/2},w=i\left(\frac{(s-a)(t-a)(z-a)}{a(1-a)}\right)^{1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="17" xml:id="C31.S10.Px4.p1.s2">
+The kernel <Math mode="inline" xml:id="C31.S10.Px4.p1.m1">\mathcal{K}</Math> must satisfy <Math equation-number="31.10.18" mode="display" xml:id="C31.S10.E18">\frac{{\partial}^{2}\mathcal{K}}{{\partial u}^{2}}+\frac{{\partial}^{2} \mathcal{K}}{{\partial v}^{2}}+\frac{{\partial}^{2}\mathcal{K}}{{\partial w}^{ 2}}+\frac{2\gamma-1}{u}\frac{\partial\mathcal{K}}{\partial u}+\frac{2\delta-1} {v}\frac{\partial\mathcal{K}}{\partial v}+\frac{2\epsilon-1}{w}\frac{\partial \mathcal{K}}{\partial w}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="18" xml:id="C31.S10.Px4.p1.s3">
+This equation can be solved in terms of cylinder functions <Math mode="inline" xml:id="C31.S10.Px4.p1.m2">\mathscr{C}_{\nu}\left(z\right)</Math> (§10.2(ii)):
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="19" xml:id="C31.S10.Px4.p1.s4">
+<Math equation-number="31.10.19" mode="display" xml:id="C31.S10.E19">\mathcal{K}(u,v,w)=u^{1-\gamma}v^{1-\delta}w^{1-\epsilon}\mathscr{C}_{1-\gamma }\left(u\sqrt{\sigma_{1}}\right)\*\mathscr{C}_{1-\delta}\left(v\sqrt{\sigma_{2 }}\right)\mathscr{C}_{1-\epsilon}\left(\mathrm{i}w\sqrt{\sigma_{1}+\sigma_{2}} \right),</Math> where <Math mode="inline" xml:id="C31.S10.Px4.p1.m3">\sigma_{1}</Math> and <Math mode="inline" xml:id="C31.S10.Px4.p1.m4">\sigma_{2}</Math> are separation constants.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C31.S10.Px5">
+<title>Transformation of Independent Variable</title>   
+<para xml:id="C31.S10.Px5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="20" xml:id="C31.S10.Px5.p1.s1">
+A further change of variables, to spherical coordinates, <Math equation-number="31.10.20" mode="display" xml:id="C31.S10.E20">u=r\cos\theta,v=r\sin\theta\sin\phi,w=r\sin\theta\cos\phi,</Math> leads to the kernel equation <Math equation-number="31.10.21" mode="display" xml:id="C31.S10.E21">\frac{{\partial}^{2}\mathcal{K}}{{\partial r}^{2}}+\frac{2(\gamma+\delta+ \epsilon)-1}{r}\frac{\partial\mathcal{K}}{\partial r}+\frac{1}{r^{2}}\frac{{ \partial}^{2}\mathcal{K}}{{\partial\theta}^{2}}+\frac{(2(\delta+\epsilon)-1) \cot\theta-(2\gamma-1)\tan\theta}{r^{2}}\frac{\partial\mathcal{K}}{\partial \theta}+\frac{1}{r^{2}{\sin^{2}}\theta}\frac{{\partial}^{2}\mathcal{K}}{{ \partial\phi}^{2}}+\frac{(2\delta-1)\cot\phi-(2\epsilon-1)\tan\phi}{r^{2}{\sin ^{2}}\theta}\frac{\partial\mathcal{K}}{\partial\phi}=0</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="21" xml:id="C31.S10.Px5.p1.s2">
+This equation can be solved in terms of hypergeometric functions (§15.11(i)):
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="22" xml:id="C31.S10.Px5.p1.s3">
+<Math equation-number="31.10.22" mode="display" xml:id="C31.S10.E22">\mathcal{K}(r,\theta,\phi)=r^{m}{\sin^{2p}}\theta P\begin{Bmatrix}0&amp;1&amp;\infty&amp; \\ 0&amp;0&amp;a&amp;{\cos^{2}}\theta\\ \tfrac{1}{2}(3-\gamma)&amp;c&amp;b&amp;\end{Bmatrix}\*P\begin{Bmatrix}0&amp;1&amp;\infty&amp;\\ 0&amp;0&amp;a^{\prime}&amp;{\cos^{2}}\phi\\ 1-\epsilon&amp;1-\delta&amp;b^{\prime}&amp;\end{Bmatrix},</Math> with <Math equation-number="31.10.23" mode="display" xml:id="C31.S10.E23">m^{2}+2(\alpha+\beta)m-\sigma_{1}=0,p^{2}+(\alpha+\beta-\gamma-\tfrac{1}{2})p-\tfrac{1}{4}\sigma_{2}=0,a+b=2(\alpha+\beta+p)-1,ab=p^{2}-p(1-\alpha-\beta)-\tfrac{1}{4}\sigma_{1},c=\gamma-\tfrac{1}{2}-2(\alpha+\beta+p),a^{\prime}+b^{\prime}=\delta+\epsilon-1,a^{\prime}b^{\prime}=-\tfrac{1}{4}\sigma_{2},</Math> and <Math mode="inline" xml:id="C31.S10.Px5.p1.m1">\sigma_{1}</Math> and <Math mode="inline" xml:id="C31.S10.Px5.p1.m2">\sigma_{2}</Math> are separation constants.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S10.Px5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="23" xml:id="C31.S10.Px5.p2.s1">
+For integral equations for special confluent Heun functions (§31.12)see Kazakov and Slavyanov (1996).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+</section>

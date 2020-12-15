@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C5.S5">
+<title>Functional Relations</title>        
+ 
+<subsection xml:id="C5.S5.SS1">
+<title>Recurrence</title>        
+  
+<para xml:id="C5.S5.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C5.S5.SS1.p1.s1">
+ <Math equation-number="5.5.1" mode="display" xml:id="C5.S5.E1">\Gamma\left(z+1\right)=z\Gamma\left(z\right),</Math> <Math equation-number="5.5.2" mode="display" xml:id="C5.S5.E2">\psi\left(z+1\right)=\psi\left(z\right)+\frac{1}{z}</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S5.SS2">
+<title>Reflection</title>        
+  
+<para xml:id="C5.S5.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="2" xml:id="C5.S5.SS2.p1.s1">
+ <Math equation-number="5.5.3" mode="display" xml:id="C5.S5.E3">\Gamma\left(z\right)\Gamma\left(1-z\right)=\pi/\sin\left(\pi z\right), if z\neq 0,\pm 1,\dots,</Math> <Math equation-number="5.5.4" mode="display" xml:id="C5.S5.E4">\psi\left(z\right)-\psi\left(1-z\right)=-\pi/\tan\left(\pi z\right), if z\neq 0,\pm 1,\dots</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S5.SS3">
+<title>Multiplication</title>          
+<paragraph xml:id="C5.S5.Px1">
+<title>Duplication Formula</title>    
+<para xml:id="C5.S5.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="3" xml:id="C5.S5.Px1.p1.s1">
+For <Math mode="inline" xml:id="C5.S5.Px1.p1.m1">2z\neq 0,-1,-2,\dots</Math> , <Math equation-number="5.5.5" mode="display" xml:id="C5.S5.E5">\Gamma\left(2z\right)=\pi^{-1/2}2^{2z-1}\Gamma\left(z\right)\Gamma\left(z+ \tfrac{1}{2}\right)</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C5.S5.Px2">
+<title>Gauss’s Multiplication Formula</title>    
+<para xml:id="C5.S5.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="4" xml:id="C5.S5.Px2.p1.s1">
+For <Math mode="inline" xml:id="C5.S5.Px2.p1.m1">nz\neq 0,-1,-2,\dots</Math> , <Math equation-number="5.5.6" mode="display" xml:id="C5.S5.E6">\Gamma\left(nz\right)=(2\pi)^{(1-n)/2}n^{nz-(1/2)}\prod_{k=0}^{n-1}\Gamma\left (z+\frac{k}{n}\right)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="5" xml:id="C5.S5.Px2.p1.s2">
+<Math equation-number="5.5.7" mode="display" xml:id="C5.S5.E7">\prod_{k=1}^{n-1}\Gamma\left(\frac{k}{n}\right)=(2\pi)^{(n-1)/2}n^{-1/2}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="6" xml:id="C5.S5.Px2.p1.s3">
+<Math equation-number="5.5.8" mode="display" xml:id="C5.S5.E8">\psi\left(2z\right)=\tfrac{1}{2}\left(\psi\left(z\right)+\psi\left(z+\tfrac{1} {2}\right)\right)+\ln 2,</Math> <Math equation-number="5.5.9" mode="display" xml:id="C5.S5.E9">\psi\left(nz\right)=\frac{1}{n}\sum_{k=0}^{n-1}\psi\left(z+\frac{k}{n}\right)+ \ln n</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C5.S5.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C5.S5.Px2.p2.s1">
+See also Sándor and Tóth (1989).
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C5.S5.SS4">
+<title>Bohr–Mollerup Theorem</title>           
+ 
+<para xml:id="C5.S5.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C5.S5.SS4.p1.s1">
+If a positive function <Math mode="inline" xml:id="C5.S5.SS4.p1.m1">f(x)</Math> on <Math mode="inline" xml:id="C5.S5.SS4.p1.m2">(0,\infty)</Math> satisfies <Math mode="inline" xml:id="C5.S5.SS4.p1.m3">f(x+1)=xf(x)</Math> , <Math mode="inline" xml:id="C5.S5.SS4.p1.m4">f(1)=1</Math> , and <Math mode="inline" xml:id="C5.S5.SS4.p1.m5">\ln f(x)</Math> is convex (see §1.4(viii)), then <Math mode="inline" xml:id="C5.S5.SS4.p1.m6">f(x)=\Gamma\left(x\right)</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

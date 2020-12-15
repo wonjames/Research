@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C31.S9">
+<title>Orthogonality</title>        
+ 
+<subsection xml:id="C31.S9.SS1">
+<title>Single Orthogonality</title>        
+  
+<para xml:id="C31.S9.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C31.S9.SS1.p1.s1">
+With <Math equation-number="31.9.1" mode="display" xml:id="C31.S9.E1">w_{m}(z)=(0,1)\mathit{Hf}_{m}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z\right),</Math> we have <Math equation-number="31.9.2" mode="display" xml:id="C31.S9.E2">\int_{\zeta}^{(1+,0+,1-,0-)}t^{\gamma-1}(1-t)^{\delta-1}(t-a)^{\epsilon-1}\*w_ {m}(t)w_{k}(t)\mathrm{d}t=\delta_{m,k}\theta_{m}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C31.S9.SS1.p1.s2">
+Here <Math mode="inline" xml:id="C31.S9.SS1.p1.m1">\zeta</Math> is an arbitrary point in the interval <Math mode="inline" xml:id="C31.S9.SS1.p1.m2">(0,1)</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C31.S9.SS1.p1.s3">
+The integration path begins at <Math mode="inline" xml:id="C31.S9.SS1.p1.m3">z=\zeta</Math> , encircles <Math mode="inline" xml:id="C31.S9.SS1.p1.m4">z=1</Math> once in the positive sense, followed by <Math mode="inline" xml:id="C31.S9.SS1.p1.m5">z=0</Math> once in the positive sense, and so on, returning finally to <Math mode="inline" xml:id="C31.S9.SS1.p1.m6">z=\zeta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C31.S9.SS1.p1.s4">
+The integration path is called a Pochhammer double-loop contour (compare Figure 5.12.3).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C31.S9.SS1.p1.s5">
+The branches of the many-valued functions are continuous on the path, and assume their principal values at the beginning.
+</sentence>
+
+</para>
+ 
+<para xml:id="C31.S9.SS1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="6" xml:id="C31.S9.SS1.p2.s1">
+The normalization constant <Math mode="inline" xml:id="C31.S9.SS1.p2.m1">\theta_{m}</Math> is given by <Math equation-number="31.9.3" mode="display" xml:id="C31.S9.E3">\theta_{m}=(1-{\mathrm{e}^{2\pi i\gamma}})(1-{\mathrm{e}^{2\pi i\delta}})\zeta ^{\gamma}(1-\zeta)^{\delta}(\zeta-a)^{\epsilon}\*\frac{f_{0}(q,\zeta)}{f_{1}(q ,\zeta)}\left.\frac{\partial}{\partial q}\mathscr{W}\left\{f_{0}(q,\zeta),f_{1 }(q,\zeta)\right\}\right|_{q=q_{m}},</Math> where <Math equation-number="31.9.4" mode="display" xml:id="C31.S9.E4">f_{0}(q_{m},z)=\mathit{H\!\ell}\left(a,q_{m};\alpha,\beta,\gamma,\delta;z \right),f_{1}(q_{m},z)=\mathit{H\!\ell}\left(1-a,\alpha\beta-q_{m};\alpha,\beta,\delta ,\gamma;1-z\right),</Math> and <Math mode="inline" xml:id="C31.S9.SS1.p2.m2">\mathscr{W}</Math> denotes the Wronskian (§1.13(i)).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="7" xml:id="C31.S9.SS1.p2.s2">
+The right-hand side may be evaluated at any convenient value, or limiting value, of <Math mode="inline" xml:id="C31.S9.SS1.p2.m3">\zeta</Math> in <Math mode="inline" xml:id="C31.S9.SS1.p2.m4">(0,1)</Math> since it is independent of <Math mode="inline" xml:id="C31.S9.SS1.p2.m5">\zeta</Math>.
+</sentence>
+
+</para>
+ 
+ 
+<para xml:id="C31.S9.SS1.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C31.S9.SS1.p3.s1">
+For corresponding orthogonality relations for Heun functions (§31.4) and Heun polynomials (§31.5),seeLambe and Ward (1934), Erdélyi (1944), Sleeman (1966a), and Ronveaux (1995, Part A, pp. 59–64).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C31.S9.SS2">
+<title>Double Orthogonality</title>        
+   
+<para xml:id="C31.S9.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C31.S9.SS2.p1.s1">
+Heun polynomials <Math mode="inline" xml:id="C31.S9.SS2.p1.m1">w_{j}=\mathit{Hp}_{n_{j},m_{j}}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m2">j=1,2</Math> , satisfy <Math equation-number="31.9.5" mode="display" xml:id="C31.S9.E5">\int_{\mathcal{L}_{1}}\int_{\mathcal{L}_{2}}\rho(s,t)w_{1}(s)w_{1}(t)w_{2}(s)w _{2}(t)\mathrm{d}s\mathrm{d}t=0, if |n_{1}-n_{2}|+|m_{1}-m_{2}|\neq 0,</Math> where <Math equation-number="31.9.6" mode="display" xml:id="C31.S9.E6">\rho(s,t)=(s-t)(st)^{\gamma-1}\left((s-1)(t-1)\right)^{\delta-1}\*\left((s-a)( t-a)\right)^{\epsilon-1},</Math> and the integration paths <Math mode="inline" xml:id="C31.S9.SS2.p1.m3">\mathcal{L}_{1}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m4">\mathcal{L}_{2}</Math> are Pochhammer double-loop contours encircling distinct pairs of singularities <Math mode="inline" xml:id="C31.S9.SS2.p1.m5">\{0,1\}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m6">\{0,a\}</Math> , <Math mode="inline" xml:id="C31.S9.SS2.p1.m7">\{1,a\}</Math>.
+</sentence>
+
+</para>
+  
+<para xml:id="C31.S9.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="10" xml:id="C31.S9.SS2.p2.s1">
+For further information, including normalization constants, seeSleeman (1966a).
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="11" xml:id="C31.S9.SS2.p2.s2">
+For bi-orthogonal relations for path-multiplicative solutions see Schmidt (1979, §2.2).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="12" xml:id="C31.S9.SS2.p2.s3">
+For other generalizations seeArscott (1964b, pp. 206–207 and 241).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C26.S11">
+<title>Integer Partitions: Compositions</title>        
+  
+<para xml:id="C26.S11.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C26.S11.p1.s1">
+A composition is an integer partition in which order is taken into account.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C26.S11.p1.s2">
+For example, there are eight compositions of 4: <Math mode="inline" xml:id="C26.S11.p1.m1">4,3+1,1+3,2+2,2+1+1,1+2+1,1+1+2</Math> , and <Math mode="inline" xml:id="C26.S11.p1.m2">1+1+1+1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C26.S11.p1.s3">
+<Math mode="inline" xml:id="C26.S11.p1.m10">c\left(n\right)</Math> denotes thenumber of compositions of <Math mode="inline" xml:id="C26.S11.p1.m11">n</Math> , and <Math mode="inline" xml:id="C26.S11.p1.m12">c_{m}\left(n\right)</Math> is the number of compositions intoexactly <Math mode="inline" xml:id="C26.S11.p1.m13">m</Math> parts.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C26.S11.p1.s4">
+<Math mode="inline" xml:id="C26.S11.p1.m14">c\left(\in\!T,n\right)</Math> is the number of compositions of <Math mode="inline" xml:id="C26.S11.p1.m15">n</Math> with no 1’s, where again <Math mode="inline" xml:id="C26.S11.p1.m16">T=\{2,3,4,\ldots\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="5" xml:id="C26.S11.p1.s5">
+The integer 0 is considered to have one composition consisting of no parts: <Math equation-number="26.11.1" mode="display" xml:id="C26.S11.E1">c\left(0\right)=c\left(\in\!T,0\right)=1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="6" xml:id="C26.S11.p1.s6">
+Also, <Math equation-number="26.11.2" mode="display" xml:id="C26.S11.E2">c_{m}\left(0\right)=\delta_{0,m},</Math>
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S11.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="7" xml:id="C26.S11.p2.s1">
+ <Math equation-number="26.11.3" mode="display" xml:id="C26.S11.E3">c_{m}\left(n\right)=\genfrac{(}{)}{0.0pt}{}{n-1}{m-1}</Math> ,
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S11.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="8" xml:id="C26.S11.p3.s1">
+ <Math equation-number="26.11.4" mode="display" xml:id="C26.S11.E4">\sum_{n=0}^{\infty}c_{m}\left(n\right)q^{n}=\frac{q^{m}}{(1-q)^{m}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S11.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="9" xml:id="C26.S11.p4.s1">
+The Fibonacci numbers are determined recursively by <Math equation-number="26.11.5" mode="display" xml:id="C26.S11.E5">F_{0}=0, ,F_{1}=1, ,F_{n}=F_{n-1}+F_{n-2}, , if n\geq 2.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="10" xml:id="C26.S11.p4.s2">
+ <Math equation-number="26.11.6" mode="display" xml:id="C26.S11.E6">c\left(\in\!T,n\right)=F_{n-1}, if n\geq 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="11" xml:id="C26.S11.p4.s3">
+Explicitly, <Math equation-number="26.11.7" mode="display" xml:id="C26.S11.E7">F_{n}=\frac{(1+\sqrt{5})^{n}-(1-\sqrt{5})^{n}}{2^{n}\,\sqrt{5}}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C26.S11.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="12" xml:id="C26.S11.p5.s1">
+Additional information on Fibonacci numbers can be found inRosen et al. (2000, pp. 140–145).
+</sentence>
+
+</para>
+
+ 
+</section>

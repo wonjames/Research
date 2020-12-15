@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="C2.S1">
+<title>Definitions and Elementary Properties</title>         
+<subsection xml:id="C2.S1.SS1">
+<title>Asymptotic and Order Symbols</title>          
+<para xml:id="C2.S1.SS1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="1" xml:id="C2.S1.SS1.p1.s1">
+Let <Math mode="inline" xml:id="C2.S1.SS1.p1.m1">\mathbf{X}</Math> be a point set with a limit point <Math mode="inline" xml:id="C2.S1.SS1.p1.m2">c</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="2" xml:id="C2.S1.SS1.p1.s2">
+As <Math mode="inline" xml:id="C2.S1.SS1.p1.m3">x\to c</Math> in <Math mode="inline" xml:id="C2.S1.SS1.p1.m4">\mathbf{X}</Math> <Math equation-number="2.1.1" mode="display" xml:id="C2.S1.E1">\displaystyle f(x)\sim\phi(x)\Longleftrightarrow f(x)/\phi(x)\to 1</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="3" xml:id="C2.S1.SS1.p1.s3">
+<Math equation-number="2.1.2" mode="display" xml:id="C2.S1.E2">\displaystyle f(x)=o\left(\phi(x)\right)\Longleftrightarrow f(x)/\phi(x)\to 0.</Math>
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="4" xml:id="C2.S1.SS1.p1.s4">
+<Math equation-number="2.1.3" mode="display" xml:id="C2.S1.E3">\displaystyle f(x)=O\left(\phi(x)\right)\Longleftrightarrow|f(x)/\phi(x)|\text { is bounded.</Math> } The symbol <Math mode="inline" xml:id="C2.S1.SS1.p1.m5">O</Math> can also apply to the whole set <Math mode="inline" xml:id="C2.S1.SS1.p1.m6">\mathbf{X}</Math> , and not just as <Math mode="inline" xml:id="C2.S1.SS1.p1.m7">x\to c</Math>.
+</sentence>
+
+</para>
+ 
+<paragraph xml:id="C2.S1.Px1">
+<title>Examples</title>   
+<para xml:id="C2.S1.Px1.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="5" xml:id="C2.S1.Px1.p1.s1">
+ <Math equation-number="2.1.4" mode="display" xml:id="C2.S1.E4">\tanh x\sim x, if x\to 0 in \mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="6" xml:id="C2.S1.Px1.p1.s2">
+<Math equation-number="2.1.5" mode="display" xml:id="C2.S1.E5">e^{-x}=o\left(1\right), if x\to+\infty in \mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="7" xml:id="C2.S1.Px1.p1.s3">
+<Math equation-number="2.1.6" mode="display" xml:id="C2.S1.E6">\sin\left(\pi x+x^{-1}\right)=O\left(x^{-1}\right), if x\to\pm\infty in \mathbb{Z}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="8" xml:id="C2.S1.Px1.p1.s4">
+<Math equation-number="2.1.7" mode="display" xml:id="C2.S1.E7">e^{ix}=O\left(1\right), if x\in\mathbb{R}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="9" xml:id="C2.S1.Px1.p1.s5">
+In (2.1.5)
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="10" xml:id="C2.S1.Px1.p1.s6">
+<Math mode="inline" xml:id="C2.S1.Px1.p1.m1">\mathbb{R}</Math> can be replaced by any fixed ray in the sector <Math mode="inline" xml:id="C2.S1.Px1.p1.m2">|\operatorname{ph}x|&lt;\frac{1}{2}\pi</Math> , or by the whole of the sector <Math mode="inline" xml:id="C2.S1.Px1.p1.m3">|\operatorname{ph}x|\leq\frac{1}{2}\pi-\delta</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="11" xml:id="C2.S1.Px1.p1.s7">
+(Here and elsewhere in this chapter <Math mode="inline" xml:id="C2.S1.Px1.p1.m4">\delta</Math> is an arbitrary small positive constant.)But ( 2.1.5)does not hold as <Math mode="inline" xml:id="C2.S1.Px1.p1.m5">x\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.Px1.p1.m6">|\operatorname{ph}x|&lt;\frac{1}{2}\pi</Math> (for example, set <Math mode="inline" xml:id="C2.S1.Px1.p1.m7">x=1+it</Math> and let <Math mode="inline" xml:id="C2.S1.Px1.p1.m8">t\to\pm\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="8" sentence-num-in-section="12" xml:id="C2.S1.Px1.p1.s8">
+)
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.Px1.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="13" xml:id="C2.S1.Px1.p2.s1">
+If <Math mode="inline" xml:id="C2.S1.Px1.p2.m1">\sum_{s=0}^{\infty}a_{s}z^{s}</Math> converges for all sufficiently small <Math mode="inline" xml:id="C2.S1.Px1.p2.m2">|z|</Math> , then for each nonnegative integer <Math mode="inline" xml:id="C2.S1.Px1.p2.m3">n</Math> <Math equation-number="2.1.8" mode="display" xml:id="C2.S1.E8">\sum_{s=n}^{\infty}a_{s}z^{s}=O\left(z^{n}\right), if z\to 0 in \mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+<paragraph xml:id="C2.S1.Px2">
+<title>Example</title>   
+<para xml:id="C2.S1.Px2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="14" xml:id="C2.S1.Px2.p1.s1">
+ <Math equation-number="2.1.9" mode="display" xml:id="C2.S1.E9">e^{z}=1+z+O\left(z^{2}\right), if z\to 0 in \mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.Px2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="15" xml:id="C2.S1.Px2.p2.s1">
+The symbols <Math mode="inline" xml:id="C2.S1.Px2.p2.m1">o</Math> and <Math mode="inline" xml:id="C2.S1.Px2.p2.m2">O</Math> can be used generically.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="16" xml:id="C2.S1.Px2.p2.s2">
+For example, <Math equation-number="2.1.10" mode="display" xml:id="C2.S1.E10">o\left(\phi\right)=O\left(\phi\right), ,o\left(\phi\right)+o\left(\phi\right)=o\left(\phi\right), ,</Math> it being understood that these equalities are not reversible.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="17" xml:id="C2.S1.Px2.p2.s3">
+(In other words <Math mode="inline" xml:id="C2.S1.Px2.p2.m3">=</Math> here really means <Math mode="inline" xml:id="C2.S1.Px2.p2.m4">\subseteq</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="18" xml:id="C2.S1.Px2.p2.s4">
+)
+</sentence>
+
+</para>
+ 
+</paragraph>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S1.SS2">
+<title>Integration and Differentiation</title>        
+  
+<para xml:id="C2.S1.SS2.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="19" xml:id="C2.S1.SS2.p1.s1">
+Integration of asymptotic and order relations is permissible, subject to obvious convergence conditions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="20" xml:id="C2.S1.SS2.p1.s2">
+For example, suppose <Math mode="inline" xml:id="C2.S1.SS2.p1.m1">f(x)</Math> is continuous and <Math mode="inline" xml:id="C2.S1.SS2.p1.m2">f(x)\sim x^{\nu}</Math> as <Math mode="inline" xml:id="C2.S1.SS2.p1.m3">x\to+\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS2.p1.m4">\mathbb{R}</Math> , where <Math mode="inline" xml:id="C2.S1.SS2.p1.m5">\nu</Math> ( <Math mode="inline" xml:id="C2.S1.SS2.p1.m6">\in\mathbb{C}</Math> ) is a constant.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="21" xml:id="C2.S1.SS2.p1.s3">
+Then <Math equation-number="2.1.11" mode="display" xml:id="C2.S1.E11">\int_{x}^{\infty}f(t)\mathrm{d}t\sim-\frac{x^{\nu+1}}{\nu+1}, if \Re\nu&lt;-1,</Math> , <Math equation-number="2.1.12" mode="display" xml:id="C2.S1.E12">\int f(x)\mathrm{d}x\sim\begin{cases}\text{a constant,}&amp;\Re\nu&lt;-1,\\ \ln x,&amp;\phantom{\Re}\nu=-1,\\ x^{\nu+1}/(\nu+1),&amp;\Re\nu&gt;-1.\end{cases</Math> }
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S1.SS2.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="22" xml:id="C2.S1.SS2.p2.s1">
+Differentiation requires extra conditions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="23" xml:id="C2.S1.SS2.p2.s2">
+For example, if <Math mode="inline" xml:id="C2.S1.SS2.p2.m1">f(z)</Math> is analytic for all sufficiently large <Math mode="inline" xml:id="C2.S1.SS2.p2.m2">|z|</Math> in a sector <Math mode="inline" xml:id="C2.S1.SS2.p2.m3">\mathbf{S}</Math> and <Math mode="inline" xml:id="C2.S1.SS2.p2.m4">f(z)=O\left(z^{\nu}\right)</Math> as <Math mode="inline" xml:id="C2.S1.SS2.p2.m5">z\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS2.p2.m6">\mathbf{S}</Math> , <Math mode="inline" xml:id="C2.S1.SS2.p2.m7">\nu</Math> being real, then <Math mode="inline" xml:id="C2.S1.SS2.p2.m8">f^{\prime}(z)=O\left(z^{\nu-1}\right)</Math> as <Math mode="inline" xml:id="C2.S1.SS2.p2.m9">z\to\infty</Math> in any closed sector properly interior to <Math mode="inline" xml:id="C2.S1.SS2.p2.m10">\mathbf{S}</Math> and with the same vertex (Ritt’s theorem).
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="24" xml:id="C2.S1.SS2.p2.s3">
+This result also holds with both <Math mode="inline" xml:id="C2.S1.SS2.p2.m11">O</Math> ’s replaced by <Math mode="inline" xml:id="C2.S1.SS2.p2.m12">o</Math> ’s.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S1.SS3">
+<title>Asymptotic Expansions</title>         
+<para xml:id="C2.S1.SS3.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="25" xml:id="C2.S1.SS3.p1.s1">
+Let <Math mode="inline" xml:id="C2.S1.SS3.p1.m1">\sum a_{s}x^{-s}</Math> be a formal power series (convergent or divergent) and for each positive integer <Math mode="inline" xml:id="C2.S1.SS3.p1.m2">n</Math> , <Math equation-number="2.1.13" mode="display" xml:id="C2.S1.E13">f(x)=\sum_{s=0}^{n-1}a_{s}x^{-s}+O\left(x^{-n}\right)</Math> as <Math mode="inline" xml:id="C2.S1.SS3.p1.m3">x\to\infty</Math> in an unbounded set <Math mode="inline" xml:id="C2.S1.SS3.p1.m4">\mathbf{X}</Math> in <Math mode="inline" xml:id="C2.S1.SS3.p1.m5">\mathbb{R}</Math> or <Math mode="inline" xml:id="C2.S1.SS3.p1.m6">\mathbb{C}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="26" xml:id="C2.S1.SS3.p1.s2">
+Then <Math mode="inline" xml:id="C2.S1.SS3.p1.m7">\sum a_{s}x^{-s}</Math> is a Poincaré asymptotic expansion, or simply asymptotic expansion, of <Math mode="inline" xml:id="C2.S1.SS3.p1.m8">f(x)</Math> as <Math mode="inline" xml:id="C2.S1.SS3.p1.m9">x\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS3.p1.m10">\mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="27" xml:id="C2.S1.SS3.p1.s3">
+Symbolically, <Math equation-number="2.1.14" mode="display" xml:id="C2.S1.E14">f(x)\sim a_{0}+a_{1}x^{-1}+a_{2}x^{-2}+\cdots, if x\to\infty in \mathbf{X}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.SS3.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="28" xml:id="C2.S1.SS3.p2.s1">
+Condition (2.1.13)is equivalent to <Math equation-number="2.1.15" mode="display" xml:id="C2.S1.E15">x^{n}\left(f(x)-\sum_{s=0}^{n-1}a_{s}x^{-s}\right)\to a_{n}, if x\to\infty in \mathbf{X},</Math> for each <Math mode="inline" xml:id="C2.S1.SS3.p2.m1">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="29" xml:id="C2.S1.SS3.p2.s2">
+If <Math mode="inline" xml:id="C2.S1.SS3.p2.m2">\sum a_{s}x^{-s}</Math> converges for all sufficiently large <Math mode="inline" xml:id="C2.S1.SS3.p2.m3">|x|</Math> , then it is automatically the asymptotic expansion of its sum as <Math mode="inline" xml:id="C2.S1.SS3.p2.m4">x\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS3.p2.m5">\mathbb{C}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.SS3.p3">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="30" xml:id="C2.S1.SS3.p3.s1">
+If <Math mode="inline" xml:id="C2.S1.SS3.p3.m1">c</Math> is a finite limit point of <Math mode="inline" xml:id="C2.S1.SS3.p3.m2">\mathbf{X}</Math> , then <Math equation-number="2.1.16" mode="display" xml:id="C2.S1.E16">f(x)\sim a_{0}+a_{1}(x-c)+a_{2}(x-c)^{2}+\cdots, if x\to c in \mathbf{X},</Math> means that for each <Math mode="inline" xml:id="C2.S1.SS3.p3.m3">n</Math> , the difference between <Math mode="inline" xml:id="C2.S1.SS3.p3.m4">f(x)</Math> and the <Math mode="inline" xml:id="C2.S1.SS3.p3.m5">n</Math> th partial sum on the right-hand side is <Math mode="inline" xml:id="C2.S1.SS3.p3.m6">O\left((x-c)^{n}\right)</Math> as <Math mode="inline" xml:id="C2.S1.SS3.p3.m7">x\to c</Math> in <Math mode="inline" xml:id="C2.S1.SS3.p3.m8">\mathbf{X}</Math>.
+</sentence>
+
+</para>
+       
+<para xml:id="C2.S1.SS3.p4">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="31" xml:id="C2.S1.SS3.p4.s1">
+Most operations on asymptotic expansions can be carried out in exactly thesame manner as for convergent power series.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="32" xml:id="C2.S1.SS3.p4.s2">
+These include addition, subtraction, multiplication, and division.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="33" xml:id="C2.S1.SS3.p4.s3">
+Substitution, logarithms, and powers are also permissible; compare Olver (1997b, pp. 19–22).
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="34" xml:id="C2.S1.SS3.p4.s4">
+Differentiation, however, requires the kind of extra conditions needed for the <Math mode="inline" xml:id="C2.S1.SS3.p4.m1">O</Math> symbol (§2.1(ii)).
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="35" xml:id="C2.S1.SS3.p4.s5">
+For reversion see §2.2.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.SS3.p5">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="36" xml:id="C2.S1.SS3.p5.s1">
+Some asymptotic approximations are expressed in terms of two or more Poincaré asymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="37" xml:id="C2.S1.SS3.p5.s2">
+In those cases it is usually necessary to interpret each infinite series separately in the manner described above; that is, it is not always possible to reinterpret the asymptotic approximation as a single asymptotic expansion.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="38" xml:id="C2.S1.SS3.p5.s3">
+For an example see (2.8.15).
+</sentence>
+
+</para>
+  
+<para xml:id="C2.S1.SS3.p6">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="39" xml:id="C2.S1.SS3.p6.s1">
+Asymptotic expansions of the forms (2.1.14),(2.1.16)are unique.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="40" xml:id="C2.S1.SS3.p6.s2">
+But for any given set of coefficients <Math mode="inline" xml:id="C2.S1.SS3.p6.m1">a_{0},a_{1},a_{2},\dots</Math> , and suitably restricted <Math mode="inline" xml:id="C2.S1.SS3.p6.m2">\mathbf{X}</Math> there is an infinity of analytic functions <Math mode="inline" xml:id="C2.S1.SS3.p6.m3">f(x)</Math> such that (2.1.14)and (2.1.16)apply.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="41" xml:id="C2.S1.SS3.p6.s3">
+For (2.1.14)
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="42" xml:id="C2.S1.SS3.p6.s4">
+<Math mode="inline" xml:id="C2.S1.SS3.p6.m4">\mathbf{X}</Math> can be the positive real axis or any unbounded sector in <Math mode="inline" xml:id="C2.S1.SS3.p6.m5">\mathbb{C}</Math> of finite angle.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="43" xml:id="C2.S1.SS3.p6.s5">
+As an example, in the sector <Math mode="inline" xml:id="C2.S1.SS3.p6.m6">|\operatorname{ph}z|\leq\frac{1}{2}\pi-\delta</Math> ( <Math mode="inline" xml:id="C2.S1.SS3.p6.m7">&lt;\frac{1}{2}\pi</Math> ) each of the functions <Math mode="inline" xml:id="C2.S1.SS3.p6.m8">0,e^{-z}</Math> , and <Math mode="inline" xml:id="C2.S1.SS3.p6.m9">e^{-\sqrt{z}}</Math> (principal value) has the null asymptotic expansion <Math equation-number="2.1.17" mode="display" xml:id="C2.S1.E17">0+0\cdot z^{-1}+0\cdot z^{-2}+\cdots, if z\to\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S1.SS4">
+<title>Uniform Asymptotic Expansions</title>        
+  
+<para xml:id="C2.S1.SS4.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="44" xml:id="C2.S1.SS4.p1.s1">
+If the set <Math mode="inline" xml:id="C2.S1.SS4.p1.m1">\mathbf{X}</Math> in §2.1(iii) is a closed sector <Math mode="inline" xml:id="C2.S1.SS4.p1.m2">\alpha\leq\operatorname{ph}x\leq\beta</Math> , then by definition the asymptotic property (2.1.13)holds uniformly with respect to <Math mode="inline" xml:id="C2.S1.SS4.p1.m3">\operatorname{ph}x\in[\alpha,\beta]</Math> as <Math mode="inline" xml:id="C2.S1.SS4.p1.m4">|x|\to\infty</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="45" xml:id="C2.S1.SS4.p1.s2">
+The asymptotic property may also hold uniformly with respect to parameters.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="46" xml:id="C2.S1.SS4.p1.s3">
+Suppose <Math mode="inline" xml:id="C2.S1.SS4.p1.m5">u</Math> is a parameter (or set of parameters) ranging over a point set (or sets) <Math mode="inline" xml:id="C2.S1.SS4.p1.m6">\mathbf{U}</Math> , and for each nonnegative integer <Math mode="inline" xml:id="C2.S1.SS4.p1.m7">n</Math> <Math mode="display" xml:id="C2.S1.Ex3">\left|x^{n}\left(f(u,x)-\sum_{s=0}^{n-1}a_{s}(u)x^{-s}\right)\right|</Math> is bounded as <Math mode="inline" xml:id="C2.S1.SS4.p1.m8">x\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS4.p1.m9">\mathbf{X}</Math> , uniformly for <Math mode="inline" xml:id="C2.S1.SS4.p1.m10">u\in\mathbf{U}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="47" xml:id="C2.S1.SS4.p1.s4">
+(The coefficients <Math mode="inline" xml:id="C2.S1.SS4.p1.m11">a_{s}(u)</Math> may now depend on <Math mode="inline" xml:id="C2.S1.SS4.p1.m12">u</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="48" xml:id="C2.S1.SS4.p1.s5">
+) Then <Math equation-number="2.1.18" mode="display" xml:id="C2.S1.E18">f(u,x)\sim\sum_{s=0}^{\infty}a_{s}(u)x^{-s}</Math> as <Math mode="inline" xml:id="C2.S1.SS4.p1.m13">x\to\infty</Math> in <Math mode="inline" xml:id="C2.S1.SS4.p1.m14">\mathbf{X}</Math> , uniformly with respect to <Math mode="inline" xml:id="C2.S1.SS4.p1.m15">u\in\mathbf{U}</Math>.
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.SS4.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="49" xml:id="C2.S1.SS4.p2.s1">
+Similarly for finite limit point <Math mode="inline" xml:id="C2.S1.SS4.p2.m1">c</Math> in place of <Math mode="inline" xml:id="C2.S1.SS4.p2.m2">\infty</Math>.
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+<subsection xml:id="C2.S1.SS5">
+<title>Generalized Asymptotic Expansions</title>          
+<para xml:id="C2.S1.SS5.p1">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="50" xml:id="C2.S1.SS5.p1.s1">
+Let <Math mode="inline" xml:id="C2.S1.SS5.p1.m1">\phi_{s}(x)</Math> , <Math mode="inline" xml:id="C2.S1.SS5.p1.m2">s=0,1,2,\dots</Math> , be a sequence of functions defined in <Math mode="inline" xml:id="C2.S1.SS5.p1.m3">\mathbf{X}</Math> such that for each <Math mode="inline" xml:id="C2.S1.SS5.p1.m4">s</Math> <Math equation-number="2.1.19" mode="display" xml:id="C2.S1.E19">\phi_{s+1}(x)=o\left(\phi_{s}(x)\right), if x\to c in \mathbf{X},</Math> where <Math mode="inline" xml:id="C2.S1.SS5.p1.m5">c</Math> is a finite, or infinite, limit point of <Math mode="inline" xml:id="C2.S1.SS5.p1.m6">\mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="51" xml:id="C2.S1.SS5.p1.s2">
+Then <Math mode="inline" xml:id="C2.S1.SS5.p1.m7">\{\phi_{s}(x)\}</Math> is an asymptotic sequence or scale.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="52" xml:id="C2.S1.SS5.p1.s3">
+Suppose also that <Math mode="inline" xml:id="C2.S1.SS5.p1.m9">f(x)</Math> and <Math mode="inline" xml:id="C2.S1.SS5.p1.m10">f_{s}(x)</Math> satisfy <Math equation-number="2.1.20" mode="display" xml:id="C2.S1.E20">f(x)=\sum_{s=0}^{n-1}f_{s}(x)+O\left(\phi_{n}(x)\right), if x\to c in \mathbf{X},</Math> for <Math mode="inline" xml:id="C2.S1.SS5.p1.m11">n=0,1,2,\dots</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="4" sentence-num-in-section="53" xml:id="C2.S1.SS5.p1.s4">
+Then <Math mode="inline" xml:id="C2.S1.SS5.p1.m12">\sum f_{s}(x)</Math> is a generalized asymptotic expansion of <Math mode="inline" xml:id="C2.S1.SS5.p1.m13">f(x)</Math> with respect to the scale <Math mode="inline" xml:id="C2.S1.SS5.p1.m14">\{\phi_{s}(x)\}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="5" sentence-num-in-section="54" xml:id="C2.S1.SS5.p1.s5">
+Symbolically, <Math equation-number="2.1.21" mode="display" xml:id="C2.S1.E21">f(x)\sim\sum_{s=0}^{\infty}f_{s}(x);\;\;\{\phi_{s}(x)\}, if x\to c in \mathbf{X}</Math>.
+</sentence>
+
+<sentence sentence-num-in-para="6" sentence-num-in-section="55" xml:id="C2.S1.SS5.p1.s6">
+As in §2.1(iv), generalized asymptotic expansions can also have uniformity properties with respect to parameters.
+</sentence>
+
+<sentence sentence-num-in-para="7" sentence-num-in-section="56" xml:id="C2.S1.SS5.p1.s7">
+For an example see §14.15(i).
+</sentence>
+
+</para>
+ 
+<para xml:id="C2.S1.SS5.p2">
+
+<sentence sentence-num-in-para="1" sentence-num-in-section="57" xml:id="C2.S1.SS5.p2.s1">
+Care is needed in understanding and manipulating generalized asymptotic expansions.
+</sentence>
+
+<sentence sentence-num-in-para="2" sentence-num-in-section="58" xml:id="C2.S1.SS5.p2.s2">
+Many properties enjoyed by Poincaré expansions (for example, multiplication) do not always carry over.
+</sentence>
+
+<sentence sentence-num-in-para="3" sentence-num-in-section="59" xml:id="C2.S1.SS5.p2.s3">
+It can even happen that a generalized asymptotic expansion converges, but its sum is not the function being represented asymptotically; for an example see §18.15(iii).
+</sentence>
+
+</para>
+ 
+</subsection>
+ 
+</section>
