@@ -5,6 +5,7 @@ nlp = spacy.load("en_core_web_sm")
 '''
 Gets the Defintion for phrases that contain the pattern Let 
 This is no longer used but was used in the beginning using REGEX
+Use files let_definition.py and let_be_definition.py
 '''
 
 def parseXML():

@@ -2,23 +2,22 @@ import xml.etree.ElementTree as ET
 import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
-
+'''
+Gets the basic defintion of is defined by; Doesn't use SpaCy
+This is the old verison of is_defined_by.py
+I honestly don't know what I do in this file you can ignore it, this was the old 
+functions I used to get started
+'''
 def parseXML():
     root = ET.parse('1/1.14.xml').getroot()
     count = 0
-    '''for tag in root.iter():
-        print(tag.text)
-    '''
     for i, tag in enumerate(root.iter('sentence')):
         if i >= 0:
             num = 0
             sentence = ''
             mathArr = []
-            #print(tag.text, end='')
             sentence += tag.text
             for num, math in enumerate(tag.iter('Math')):
-                #print("Math: ", math.text)
-                #print("Math Tail: ", math.tail)
                 sentence += math.text
                 mathArr.append(math.text)
                 sentence += math.tail
@@ -57,7 +56,6 @@ def compare_first_def(substring, full_string, tokens, index):
         new_tok = tokens[index]
         for n in range(index+1):
             if new_tok == full_string:
-                #print(full_string)
                 return [True, new_tok]
             else:
                 new_tok = tokens[index-(n+1)] + ' ' + new_tok
@@ -71,18 +69,15 @@ def compare_second_def(substring, full_string, tokens, index):
         new_tok = tokens[index]
         for n in range(remaining_length-1):
             if new_tok == full_string:
-                #print(full_string)
                 return [True, new_tok]
             else:
                 new_tok += ' ' + tokens[index+n+1]
                 if index+n+1 == total_length-1:
                     if new_tok[:-1] == full_string:
-                        #print(full_string)
                         return [True, new_tok[:-1]]
     return [False, '']
 
 def finddef2(sentence, mathArr):
-    #print(sentence)
     matcher = Matcher(nlp.vocab)
     pattern = [{'LOWER': 'if'}]
     pattern2 = [{"LEMMA": "then"}]
@@ -92,13 +87,6 @@ def finddef2(sentence, mathArr):
     for match_id, start, end in matcher(doc):
         matched_span = doc[start:end]
         print(doc[(end+2)].text)
-        '''print(doc[(start-2)].text)
-        for i, defintion in enumerate(mathArr):
-            if sentence.find(mathArr[i]) > matched_span.end_char:
-                count += 1
-        
-        if count >= 1:
-            print("Definition found")'''
         entities = [(matched_span.start_char, matched_span.end_char, "FUNC")]
         training_example = (doc.text, {"entities": entities})
         print(training_example)

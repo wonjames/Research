@@ -2,7 +2,10 @@ import xml.etree.ElementTree as ET
 import spacy
 from spacy.matcher import Matcher
 nlp = spacy.load("en_core_web_sm")
-
+'''
+Gets the Defintion for phrases that contain the pattern if * then * using REGEX
+This is an old verison, use the file if_then_definition.py instead
+'''
 def parseXML():
     root = ET.parse('1/1.14.xml').getroot()
     count = 0
