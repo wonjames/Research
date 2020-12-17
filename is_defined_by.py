@@ -102,6 +102,9 @@ sentence (Str): the sentence we are parsing
 """
 # statement before the is defined by phrase
 # finds the correct subject of the sentence
+# Ex Sentence: The ... of ... is defined by ...
+# the subject will be found inbetween 'the' and 'of'
+# definition is not found in this function but back in the find_complex_defintion function
 def the_of(sentence, start_id, end_id, mathArr):
     matcher = Matcher(nlp.vocab)
     pattern = [{"LOWER": "the"}, {"IS_ASCII": True, "OP": "*"}, {"LOWER": "of"}]
@@ -109,9 +112,11 @@ def the_of(sentence, start_id, end_id, mathArr):
     doc = nlp(sentence)
     count = len(doc)
     for match_id, start, end in matcher(doc):
+        # gets the subject of the sentence
         second_sub_string = find_Math_after(mathArr, doc, end, start_id)
         print("Subject: " + str(doc[start:end]) + ' ' + str(second_sub_string))
         return 1
+    # if the sentence does not contain the phrase the * of * then return 0 (false)
     return 0
 
 """ 
