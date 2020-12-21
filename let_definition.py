@@ -66,6 +66,7 @@ mathArr (Array): pass in the array of math functions
 end (Int): int value of the end of the pattern
 start (Int): int value of the start of the pattern
 doc (Array): tokenized sentence
+count (Int): number of Tokens
 """
 # gets the full string from the math tag after the phrase
 # we need this function because math functions can be longer than one token

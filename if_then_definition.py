@@ -9,13 +9,17 @@ Gets the Defintion for phrases that contain the pattern if ... then ...
 def parseXML():
     root = ET.parse('1/1.14.xml').getroot()
     count = 0
+    # Loops through the XML file and finds the defintions in the sentence
     for i, tag in enumerate(root.iter('sentence')):
         if i >= 0:
             sentence = ''
             mathArr = []
             sentence += tag.text
+            # Inside the sentence tags there are Math tags that hold math functions
+            # this grabs them and adds it to the sentence
             for num, math in enumerate(tag.iter('Math')):
                 sentence += math.text
+                # Array of math functions for the sentence used later to compare tokens to the math function
                 mathArr.append(math.text)
                 sentence += math.tail
             # total defintions found
@@ -31,7 +35,7 @@ sentence (Str): the sentence we are parsing
 # pattern matching on the phrase if * then *
 def find_definition(sentence, mathArr, sentence_id):
     matcher = Matcher(nlp.vocab)
-    # patterns we are searching for in the sentence
+    # pattern we are searching for in the sentence
     pattern = [{"LEMMA": "if"}, {"OP": '*'}, {"LEMMA": "then"}]
     matcher.add("FUNC", None, pattern)
     # SpaCy tokenizer

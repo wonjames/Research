@@ -93,6 +93,7 @@ def find_complex_definition(sentence, mathArr, sentence_id):
             print('**********************************************************************************')
         return 1
     return 0
+    
 """ 
 Parameters: 
 mathArr (Array): pass in the array of math functions
